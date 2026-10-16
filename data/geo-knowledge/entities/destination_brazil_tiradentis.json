@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_tiradentis",
+  "stableId": "destination_brazil_tiradentis",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/tiradentes/",
+  "sourceFingerprint": "f4992cfd5f10782ce5fb8effe51ecc008af61f71f088b9d1c28dcb026edd653a",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "town and municipal seat",
+  "alternateNames": [
+    "Tiradentes",
+    "Tiradentes, Minas Gerais",
+    "São José del-Rei"
+  ],
+  "external": {
+    "wikidataQid": "Q1003423",
+    "osm": {
+      "type": "node",
+      "id": 246670921
+    },
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Tiradentes_(Minas_Gerais)",
+      "en": "https://en.wikipedia.org/wiki/Tiradentes,_Minas_Gerais"
+    }
+  },
+  "location": {
+    "latitude": -21.1104688,
+    "longitude": -44.1742937,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/246670921.json"
+  },
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1003423",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Town and municipality in Minas Gerais, Brazil; P17=Brazil, P131=Minas Gerais. Not Q527112 (the person) or Q56641289 (only historic centre)."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/246670921.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Tiradentes settlement node with wikidata=Q1003423 and wikipedia=pt:Tiradentes (Minas Gerais). Distinct from the administrative boundary relation."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1003423",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Both exact enwiki and ptwiki sitelinks read from Wikidata EntityData; country and town identity agree with source content."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/246670921.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Settlement-center map label; OSM source=geominas. Does not assert a municipal-area centroid."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1003423",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent Wikidata P625 -21.11,-44.177777777778 is about 365 m from the OSM settlement point within the same town. Selected OSM center, without averaging. Municipal GeoNames 6321882 and OSM relation 314628 not added as settlement identities."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/tiradentes.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/tiradentes/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/tiradentes/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

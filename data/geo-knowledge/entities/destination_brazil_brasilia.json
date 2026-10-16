@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_brasilia",
+  "stableId": "destination_brazil_brasilia",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/brasilia/",
+  "sourceFingerprint": "dcd154b7cd5971fd242290d521f2b232e759d44b451d769d444195615886b721",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city; federal capital of Brazil",
+  "external": {
+    "wikidataQid": "Q2844",
+    "geonamesId": "3469058"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/brasilia/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Бразилиа; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob 769b4dc34bbf1f06286f38bc7f0c3f3d7a1292cf."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/brasilia/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2844",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Brasília; exact geographical identity in Federal District, Brazil. Class matches the published city's/settlement's scope; not a homonymous microregion, lighthouse or individual attraction."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3469058/brasilia.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Exact named populated place Brasília in Federal District, Brazil; selected populated-place record, not an administrative-area centroid."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3469058/brasilia.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "WGS84 named-settlement representative point copied from GeoNames exact populated-place record. Not asserted as geometric centroid, administrative boundary, hotel entrance or individual attraction. No averaged coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2844",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Independent-source comparison with Wikidata P625 -15.7938889, -47.8827778: separation approximately 5264 m. Both identify the same named city/settlement and administrative region. P625 used for identity/location cross-check only; retained GeoNames representative point unchanged, with different reference points recorded rather than averaged."
+    }
+  ],
+  "alternateNames": [
+    "Brasília"
+  ],
+  "location": {
+    "latitude": -15.77972,
+    "longitude": -47.92972,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3469058/brasilia.html"
+  },
+  "reviewNote": "Роль координат — representative, не единственный центр города. Разница с P625 5264 м зафиксирована в evidence; точки не усреднялись."
+}

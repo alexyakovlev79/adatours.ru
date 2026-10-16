@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_portu_zhofri",
+  "stableId": "destination_brazil_portu_zhofri",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/porto-jofre/",
+  "sourceFingerprint": "24a085d0012c326e7f049b374053b34841af8d4a05965208a4d03e4303a54f64",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "wikidataQid": "Q1637633",
+    "geonamesId": "3452746",
+    "osm": {
+      "type": "node",
+      "id": 4893348725
+    },
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Porto_Jofre"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/porto-jofre/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/porto-jofre.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/porto-jofre.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/4893348725.json",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "OSM place=village Porto Jofre содержит wikidata=Q1637633; тот же QID в ссылке Wikidata на точной статье Wikipedia."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3452746/porto-jofre.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "P PPL Pôrto Jofre; иерархия Brazil > Mato Grosso > Poconé."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/4893348725.json",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный поселковый node, name=Porto Jofre, версия 4, не аэродром/кемпинг/отель."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porto_Jofre",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Статья о поселении у Куябы и конце Transpantaneira."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.geonames.org/3452746/porto-jofre.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "GeoNames содержит варианты Pôrto Jofre и Porto Joffre."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/4893348725.json",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "WGS84 центр поселения OSM; не центр всего сафари-района."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3452746/porto-jofre.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Независимая сверка GeoNames: −17.36315, −56.77494, примерно 210 м от OSM. Более грубая Wikipedia −17.333, −56.800 отклонена как опорная координата; не усреднять."
+    }
+  ],
+  "alternateNames": [
+    "Porto Jofre",
+    "Pôrto Jofre",
+    "Porto Joffre"
+  ],
+  "location": {
+    "latitude": -17.3644346,
+    "longitude": -56.7734733,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/4893348725"
+  },
+  "reviewNote": "Туристический «район Порту-Жофри» привязан к одноимённому поселению как базе. Паспорт не объявляет геометрические границы сафари-района и не отождествляет его с национальным парком."
+}

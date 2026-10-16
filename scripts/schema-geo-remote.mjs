@@ -1,5 +1,9 @@
 // Portable GitHub CAS dispatcher for GEO jobs. Works with current and legacy connector names.
-// Status writes touch only staging/state.json; publishing content belongs to the publisher.
+// Status writes touch staging/state.json; dispatch writes must trigger GitHub Actions.
+export function geoRemoteCommitMessage(action, ownerId) {
+ const trigger=action==='beginPublication'||action==='dispatchPublication';
+ return 'geo: '+action+' '+(ownerId||'system')+(trigger?'':' [skip ci]');
+}
 export async function runSchemaGeo(tools, core, request) {
  const repo='alexyakovlev79/adatours.ru', branch='schema-geo/staging';
  const api='https://api.github.com/repos/'+repo;
@@ -89,7 +93,7 @@ export async function runSchemaGeo(tools, core, request) {
    let p=state.publication, run;
    if(request.action==='resumePublication'){
     if(!p||p.status==='PUBLISHED')return {status:'no_pending_deploy',head};
-    if(p.status!=='DEPLOYING'||!p.commit)return {status:'publication_requires_recovery',head,batchId:p.batchId,phase:p.status};
+    if(p.status!=='DEPLOYING'||!p.commit)return {status:'publication_requires_recovery',head,batchId:p.batchId,ownerId:p.ownerId,phase:p.status};
     const runs=await fetch(api+'/actions/runs?head_sha='+p.commit+'&per_page=15');
     const candidate=(runs.workflow_runs||[]).find(x=>x.head_sha===p.commit&&x.status==='completed'&&x.conclusion==='success'&&x.path==='.github/workflows/deploy.yml'&&x.head_branch==='main');
     if(!candidate)return {status:'awaiting_deploy',head,batchId:p.batchId,commit:p.commit};
@@ -108,7 +112,7 @@ export async function runSchemaGeo(tools, core, request) {
   if(output===null||Array.isArray(output)&&!output.length)return {status:'empty_or_gated',head};
   const elements=[{path:'data/geo-knowledge/state.json',mode:'100644',type:'blob',content:JSON.stringify(state,null,2)+'\n'},...extra];
   const tree=unwrap(await gh.tree({repository_full_name:repo,base_tree_sha:gitCommit.tree.sha,tree_elements:elements})).sha;
-  const next=unwrap(await gh.commit({repository_full_name:repo,parent_sha:head,tree_sha:tree,message:'geo: '+request.action+' '+(args.ownerId||'system')+' [skip ci]'})).sha;
+  const next=unwrap(await gh.commit({repository_full_name:repo,parent_sha:head,tree_sha:tree,message:geoRemoteCommitMessage(request.action,args.ownerId)})).sha;
   try{
    const updated=unwrap(await gh.update({repository_full_name:repo,branch_name:branch,sha:next,expected_sha:head,force:false}));
    if(updated.success===false)throw Error('CAS rejected');

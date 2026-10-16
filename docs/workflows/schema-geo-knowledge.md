@@ -1,6 +1,6 @@
 # Ada Tours — Schema.org / GEO: сбор данных и публикация
 
-Версия 2.2 · 16.10.2026 (ускоренный мастер, все READY одним релизом). Репозиторий `alexyakovlev79/adatours.ru`.
+Версия 2.3 · 16.10.2026 (автовосстановление и исправление dispatch). Репозиторий `alexyakovlev79/adatours.ru`.
 Команды: **«собирай данные»** (один сборщик) и **«публикуй данные»** (единственный мастер).
 
 ## 1. Что исправлено относительно стратегии 1.0
@@ -139,7 +139,7 @@ text(await publish(tools,core,remote));
 
 `publishSchemaGeoAll` выполняет только быстрые шаги: попытка восстановить ранее успешный `DEPLOYING` → единый атомарный `beginPublication`, захватывающий **все** `READY` на фиксированном SHA → запись `data/geo-knowledge/dispatch.json` в **том же** CAS-коммите staging. Это несколько служебных GitHub-запросов, независимо от числа готовых паспортов. Никакого цикла по паспортам в ChatGPT, локальных сборок, ожидания Actions или таблиц Sheets до запуска.
 
-Если `PUBLISHING` уже зарезервирован прежним мастер-чатом, его не захватывать второй раз. Для **того же** `batchId` и `ownerId` безопасно выполнить `action:'dispatchPublication'`: он создаст маркер для уже зафиксированной партии без нового claim и без потери доказательств. Чужую публикацию и чужие токены не перезаписывать. При неизвестном коммите сперва проверить существующий receipt в `main`, не повторять публикацию.
+Если `PUBLISHING` уже зарезервирован прежним мастер-чатом, не захватывать READY повторно. `resumePublication` возвращает первоначальные `batchId` и `ownerId`, и новый мастер автоматически делает `dispatchPublication` именно для этой партии без второго claim. Перед возобновлением проверять сохраненный main release receipt. **Важно:** коммиты `beginPublication` и `dispatchPublication` с измененным `dispatch.json` НЕ содержат `[skip ci]` и действительно запускают GitHub Actions; для worker-claims и status-commits `[skip ci]` остается.
 
 ### 4.2. Что делает Actions без участия чата
 
@@ -149,7 +149,7 @@ text(await publish(tools,core,remote));
 4. **Важно:** push от `github.token` сам по себе не запускает другой GitHub Actions workflow. Поэтому publisher явно вызывает `workflow_dispatch` существующего `.github/workflows/deploy.yml` на `main` с правом `actions:write`. Ровно один штатный `npm run build`/Pages deploy; отдельного local build и повторных тестовых релизов нет.
 5. После завершения **всего** Pages workflow с `conclusion: success` (событие `push` или `workflow_dispatch`) `.github/workflows/geo-finalize.yml` проверяет SHA, batchId, exact release receipt и hashes и выполняет `PUBLISHING`/`DEPLOYING` → `PUBLISHED` одним CAS staging. Если мастер потерял ответ `recordCommit`, успешный Pages deploy позволяет восстановить его автоматически. Ошибочный/чужой SHA никогда не подтверждать. Никакого второго Pages deploy ради изменения статуса.
 
-Мастер **не ждет** 10–20 минут GitHub Pages и не опрашивает работу циклом. Ответ `queued_for_github_actions` означает только созданный dispatch; успешная публикация подтверждается впоследствии. При технической ошибке CI исправлять конкретный сбой, а не собирать все данные заново. Для ручного восстановления точного успешного Actions run: `remote(tools,core,{action:'resumePublication'})`. Если `github.token` не может создать `workflow_dispatch`, не заявлять `PUBLISHED` и сообщить точную ошибку; понадобится адресный запуск Pages с сохраненным SHA.
+Мастер **не ждет** 10–20 минут GitHub Pages и не опрашивает работу циклом. Ответ `queued_for_github_actions` означает только созданный dispatch. `DEPLOYING` — готовый main-коммит, но не подтвержденная публикация. Независимый `geo-finalize.yml` после успешного Pages deploy устанавливает `PUBLISHED`, даже если чат мастера закрыт. Неуспешный или отмененный деплой не дает `PUBLISHED`; успешный последующий деплой потомка GEO-коммита может закрыть пакет, только если не изменялись GEO entities и release receipt. При технической ошибке CI исправлять конкретный сбой, а не собирать все данные заново. Для ручного восстановления точного успешного Actions run: `remote(tools,core,{action:'resumePublication'})`. Если `github.token` не может создать `workflow_dispatch`, не заявлять `PUBLISHED` и сообщить точную ошибку; понадобится адресный запуск Pages с сохраненным SHA.
 
 ### 4.3. Google Sheets — зеркало, не диспетчер
 

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_petropolis",
+  "stableId": "destination_brazil_petropolis",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/petropolis/",
+  "sourceFingerprint": "4a276267b166e7980c218e3df8d9cea9045daac702b15fdde77d871e59f4736d",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "geonamesId": "3454031"
+  },
+  "alternateNames": [
+    "Petrópolis",
+    "Петрополис"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/petropolis/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3454031/petropolis.html",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Petrópolis, P.PPL, BR/Rio de Janeiro, муниципальный код 3303906, точный населённый пункт."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3454031/petropolis.html",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "WGS84 -22.50500,-43.17861, representative населённого пункта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q189043",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "P625 муниципалитета 22°30′18″S 43°10′44″W (-22.505,-43.1788889) примерно в 29 м; независимая сверка городской области."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/petropolis.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "GeoNames 3454031 — населённый пункт Petrópolis (P.PPL), Rio de Janeiro. Q189043 описывает муниципалитет и использован только для сверки; Q16502144/Q56299345 перенаправляют к нему. Разница выбранной точки с P625 около 29 м; это не координаты Museu Imperial или Palácio de Cristal.",
+  "location": {
+    "latitude": -22.505,
+    "longitude": -43.17861,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3454031/petropolis.html"
+  }
+}

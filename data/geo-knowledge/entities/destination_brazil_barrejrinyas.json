@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_barrejrinyas",
+  "stableId": "destination_brazil_barrejrinyas",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/barreirinhas/",
+  "sourceFingerprint": "91c73a837767771f7651613bf24761820e12c4f3ccdaa07ec4c46cdfe12beaa0",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q22027330",
+    "geonamesId": "3406196"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/barreirinhas/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/barreirinhas.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q22027330.json",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямой JSON HTTP 200: P31 human settlement, P17 Brazil, P131 Q2040600, P1566=3406196."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3406196/barreirinhas.html",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "PPL Barreirinhas, Maranhão, within municipality 2101707; точный класс и страна совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3406196/barreirinhas.html",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Опорная точка населённого пункта -2.75556,-42.82591."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/415524149.json",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Картографическая сверка: place=city, -2.7541271,-42.8259693, около 160 м от GeoNames. Это admin_centre муниципалитета в OSM relation 332880. Тег wikidata муниципалитета не перенесён на город; точки не усреднялись."
+    }
+  ],
+  "entityClass": "settlement",
+  "alternateNames": [
+    "Barreirinhas"
+  ],
+  "location": {
+    "latitude": -2.75556,
+    "longitude": -42.82591,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3406196/barreirinhas.html"
+  },
+  "reviewNote": "Выбран город Q22027330; муниципалитет Q2040600 не присвоен. Не путать с Barreirinha в Amazonas и одноимёнными поселениями Bahia."
+}

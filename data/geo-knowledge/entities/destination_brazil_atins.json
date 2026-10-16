@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_atins",
+  "stableId": "destination_brazil_atins",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/atins/",
+  "sourceFingerprint": "5387ae273dde46b5e0bb1bba8f203cfdcac3de4da3a5a2ac2256d4da97e4d3ab",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q14209562",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Atins"
+    },
+    "geonamesId": "8617600",
+    "osm": {
+      "type": "node",
+      "id": 416653173
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/atins.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/atins/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14209562",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Atins, fishing village/locality, Barreirinhas, Maranhão, Brazil; правильная карточка поселения."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Atins",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная статья о рыбацкой деревне Barreirinhas на устье Rio Preguiças, Maranhão, Brazil; не одноимённый пляж отдельно."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/8617600/atins.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "P PPL Atins; иерархия Brazil > Maranhão > Barreirinhas. -2.57017,-42.74229. Обратная wkdt-ссылка Q22074324 не перенесена автоматически."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/416653173.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой API: node 416653173, name=Atins, place=village, source=IBGE, -2.5716659,-42.7427543."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Atins",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Поселение в município Barreirinhas, estado Maranhão, Brasil; совпадает с GN."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/8617600/atins.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Опорная точка поселения -2.57017,-42.74229; выбрана representative, без претензии на единственный центр/вход или конкретный пляж."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/416653173.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Независимый OSM village node с source=IBGE расположен примерно в 174 м от GN; имя и тип поселения совпадают. Не усреднялись."
+    },
+    {
+      "field": "identity.excluded",
+      "sourceUrl": "https://www.geonames.org/8617600/atins.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "В GN присутствует wkdt Q22074324, тогда как текущая точная pt-Wikipedia связана с Q14209562. Старый QID не переносился; это расхождение обратной ссылки, не доказательство другого поселения."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/atins/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "village",
+  "alternateNames": [
+    "Atins",
+    "Атинс"
+  ],
+  "reviewNote": "Q22074324 из обратной GN-ссылки исключён; принят Q14209562 по точной статье и карточке деревни. Координаты — представительная точка поселения GN, независимо сопоставленная с OSM/IBGE.",
+  "location": {
+    "latitude": -2.57017,
+    "longitude": -42.74229,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/8617600/atins.html"
+  }
+}

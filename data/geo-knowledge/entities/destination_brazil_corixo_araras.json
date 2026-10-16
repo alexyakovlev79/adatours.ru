@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_corixo_araras",
+  "stableId": "destination_brazil_corixo_araras",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/corixo-araras/",
+  "sourceFingerprint": "aed6c9e1477d8215852bf80d214674246447d4315dc5a2a89b84621f4f8a24fd",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "river_reach",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/corixo-araras.md",
+      "checkedAt": "2026-10-16T15:46:28.768Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Corixo River прямо назван лоджем как альтернатива в той же программе. Corixo может быть описательным словом для протоки; основной референт страницы установлен как конкретный локальный водный маршрут, без утверждения официального гидронима всей реки."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/corixo-araras/",
+      "checkedAt": "2026-10-16T15:40:17.108371+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T15:46:28.768Z",
+      "note": "Примечание ко дню2: при недоступности Sentinela каноэ переносится на Corixo River."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T15:46:28.768Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T15:46:28.768Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 89,
+      "selected": "Corixo — альтернативный водный маршрут Araras Eco Lodge при недоступности Sentinela",
+      "reason": "Corixo River прямо назван лоджем как альтернатива в той же программе. Corixo может быть описательным словом для протоки; основной референт страницы установлен как конкретный локальный водный маршрут, без утверждения официального гидронима всей реки."
+    },
+    {
+      "field": "entityClass",
+      "probability": 89,
+      "selected": "river_reach",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "Общность слова corixo не позволяет назначить одноимённую реку без точной карты."
+    },
+    {
+      "field": "location",
+      "probability": 35,
+      "reason": "Нет доказанной точки именно альтернативного участка."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/corixo-araras/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  }
+}

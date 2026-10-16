@@ -152,3 +152,44 @@ test('queue refresh preserves scoped coordinate amendments and fences source dri
   assert.equal(s.jobs[amendment.jobId].status,'STALE');assert.equal(s.jobs[amendment.jobId].resultHash,'kept');
  }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });
+
+import {descendantKeepsGeoRelease} from '../scripts/schema-geo-autoconfirm.mjs';
+test('successful descendant may finalize unchanged GEO release but not mutated entities or receipts',()=>{
+ const clean={status:'ahead',total_commits:1,files:[
+  {filename:'data/seo-geo/articles/multi-country/brazil_paraguay_uruguay/interests/beach-holidays/index.md',status:'modified'},
+  {filename:'data/seo-geo/articles/multi-country/brazil_paraguay_uruguay/interests/culture-and-history/index.md',status:'modified'}]};
+ assert.equal(descendantKeepsGeoRelease(clean),true);
+ assert.equal(descendantKeepsGeoRelease({...clean,status:'diverged'}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:[{filename:'data/geo-knowledge/entities/destination_brazil_bonito.json'}]}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:[{filename:'data/geo-knowledge/releases/geo-ready-20261016-all-80.json'}]}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:[{filename:'other',previous_filename:'data/geo-knowledge/entities/country_brazil.json'}]}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,files:Array(300).fill({filename:'safe'})}),false);
+ assert.equal(descendantKeepsGeoRelease({...clean,total_commits:251}),false);
+});
+
+
+import {geoRemoteCommitMessage} from '../scripts/schema-geo-remote.mjs';
+import {publishSchemaGeoAll} from '../scripts/schema-geo-publisher.mjs';
+test('GEO dispatch commits trigger Actions while worker updates keep skip-ci',()=>{
+ assert.equal(geoRemoteCommitMessage('beginPublication','owner'),'geo: beginPublication owner');
+ assert.equal(geoRemoteCommitMessage('dispatchPublication','owner'),'geo: dispatchPublication owner');
+ assert.ok(geoRemoteCommitMessage('complete','worker').includes('[skip ci]'));
+ assert.ok(geoRemoteCommitMessage('recordCommit','owner').includes('[skip ci]'));
+});
+test('master resumes frozen PUBLISHING batch across sessions without a second claim',async()=>{
+ const seen=[];
+ const fake=async(_t,_c,r)=>{
+  seen.push(r);
+  if(r.action==='resumePublication')return {status:'publication_requires_recovery',phase:'PUBLISHING',
+   batchId:'geo-ready-20261016-all-80',ownerId:'geo-master-fast-batch-20261016'};
+  if(r.action==='dispatchPublication')return {status:'saved',commit:'existing',output:{count:80}};
+  throw Error('Unexpected duplicate claim '+r.action);
+ };
+ const answer=await publishSchemaGeoAll({}, {},fake,{batchId:'unrelated-new-batch',ownerId:'different-owner'});
+ assert.deepEqual(seen.map(x=>x.action),['resumePublication','dispatchPublication']);
+ assert.equal(seen[1].batchId,'geo-ready-20261016-all-80');
+ assert.equal(seen[1].ownerId,'geo-master-fast-batch-20261016');
+ assert.equal(answer.batchId,'geo-ready-20261016-all-80');
+ assert.equal(answer.jobs,80);
+ assert.equal(answer.recoveredPriorClaim,true);
+});

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_tumbira",
+  "stableId": "destination_brazil_tumbira",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/tumbira/",
+  "sourceFingerprint": "263ee106eb3719f64115e3ff2f0b2fc219d0c3377d59fd535334ebbda9de95c7",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "riverside hamlet",
+  "alternateNames": [
+    "Tumbira",
+    "Comunidade do Tumbira"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4030868646
+    }
+  },
+  "location": {
+    "latitude": -2.9472389,
+    "longitude": -60.6752722,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4030868646.json"
+  },
+  "evidence": [
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4030868646.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "OSM Tumbira hamlet with is_in:municipality=Iranduba, is_in:state=Amazonas, source=IBGE. Not Tumbira in São Gabriel da Cachoeira, the island or the stream."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4030868646.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "WGS84 settlement-center map label of the community visited in the current Rio Negro cruise."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://periodicos.newsciencepubl.com/arace/article/download/6705/9149",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent research reports Tumbira in Iranduba at 02°56′47.87″S, 60°40′25.32″W, about 187 m from the selected OSM settlement point. Survey/reference locations differ; coordinates not averaged."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://fas-amazonia.org/curiosidade-e-internet-ingredientes-para-transformar-vidas-em-comunidades-isoladas-do-amazonas/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "FAS independently identifies the rural Tumbira community in Iranduba inside the Rio Negro Sustainable Development Reserve. Site destinationType=city is editorial; external evidence supports a small riverside community, not a city municipality."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/tumbira.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/tumbira/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/tumbira/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_porto_alegre",
+  "stableId": "destination_brazil_porto_alegre",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/porto-alegre/",
+  "sourceFingerprint": "125a2798f0099058e3f86812ea1b15719f2ddab00fa212c89dae764522125aee",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/porto-alegre.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob 6684ab2cead0956fbb011b4574c4d095aa23778b; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/porto-alegre/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40269",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q40269: Porto Alegre, город/муниципалитет Rio Grande do Sul, Brazil; совпадают страна и объект. Город/муниципалитет у Гуаибы. Не португальский Portalegre."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Porto_Alegre",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная статья о Porto Alegre в Rio Grande do Sul, Brazil. Проверена идентичность; координаты статьи не используются автоматически."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3452925/porto-alegre.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames 3452925: населенный пункт/городская административная резиденция Porto Alegre, Rio Grande do Sul, Brazil. Отделен от одноименного ADM2. SHA-256 прочитанного HTML 9a917f03b31b97a214391924fd7f45271f411826203d1c5c01d13fef01c7a37e."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3452925/porto-alegre.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84: latitude -30.03283, longitude -51.23019; городская опорная точка записи PPL/PPLA/PPLA2, не границы и не адрес входа. SHA-256 HTML 9a917f03b31b97a214391924fd7f45271f411826203d1c5c01d13fef01c7a37e."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40269",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимая сверка с P625 -30.032777777777778, -51.230000000000004: расстояние 19 м, тот же населенный пункт. Точки не усреднялись. Город/муниципалитет у Гуаибы. Не португальский Portalegre."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3452925/porto-alegre.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames hierarchy: Brazil > Rio Grande do Sul > одноименный муниципалитет > населенный пункт."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/porto-alegre/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "Город/муниципалитет у Гуаибы. Не португальский Portalegre.",
+      "GeoNames/Wikidata: 19 м между опорными точками."
+    ]
+  },
+  "entityClass": "city_and_municipality",
+  "external": {
+    "wikidataQid": "Q40269",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Porto_Alegre"
+    },
+    "geonamesId": "3452925"
+  },
+  "alternateNames": [
+    "Porto Alegre"
+  ],
+  "location": {
+    "latitude": -30.03283,
+    "longitude": -51.23019,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3452925/porto-alegre.html"
+  },
+  "reviewNote": "Город/муниципалитет у Гуаибы. Не португальский Portalegre. Координата обозначает городскую опорную точку из GeoNames, не вычисленный центроид муниципальных границ."
+}

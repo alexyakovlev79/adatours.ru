@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_bom_zhardim",
+  "stableId": "destination_brazil_bom_zhardim",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/bom-jardim/",
+  "sourceFingerprint": "969c0d045ec69e48e9cf91fd88cbd84bf5ec527038bdba6211e08988baf1357f",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "12969168",
+    "osm": {
+      "type": "node",
+      "id": 416763581
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/bom-jardim/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/bom-jardim.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/12969168/bom-jardim.html",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямой HTTP 200: PPL Bom Jardim, Nobres 5105903, Mato Grosso, Brazil."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/416763581.json",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямой OSM API HTTP 200: name Bom Jardim, alt_name Vila Bom Jardim, place village, source IBGE."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://araraslodge.com.br/pantanal-and-savannah-6-days-and-5-nights/?lang=en",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "День 4 прямо называет Bom Jardim Village in Nobres и связывает остановку с Enchanted Aquarium и Salobra river, как целевой MD."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://turismo.nobres.mt.gov.br/Atrativos-Turisticos/Aquario-encantado-3/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Муниципальный туристический портал подтверждает Vila Bom Jardim в муниципалитете Nobres как ориентир для Aquário Encantado."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/12969168/bom-jardim.html",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Точка населённого пункта -14.55021,-55.87220, а не координаты Aquário Encantado."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/416763581.json",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Отдельная картографическая сверка village point -14.5527154,-55.8726449: около 283 м. Координаты не усреднялись; точка GeoNames выбрана как опорная внутри населённого пункта."
+    }
+  ],
+  "entityClass": "settlement",
+  "alternateNames": [
+    "Bom Jardim",
+    "Vila Bom Jardim"
+  ],
+  "location": {
+    "latitude": -14.55021,
+    "longitude": -55.8722,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/12969168/bom-jardim.html"
+  },
+  "reviewNote": "По программе речь о Vila Bom Jardim в Nobres, Mato Grosso, а не одноимённых муниципалитетах других штатов. destinationType=region в MD не менялся; внешняя идентичность — деревня, которая служит базой района. Аквариум и река Салобра — отдельные объекты."
+}

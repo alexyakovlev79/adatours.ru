@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kanon_fortaleza",
+  "stableId": "destination_brazil_kanon_fortaleza",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/fortaleza-canyon/",
+  "sourceFingerprint": "cb69d2088adc0b772dc30bf32d48eedf9649ff67f736457d8614a2417e01169a",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/fortaleza-canyon.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob aff2eb70fc1e3261731580ce5fab724b6e89308a; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/fortaleza-canyon/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5472506",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q5472506: Cânion Fortaleza, instance of canyon, country Brazil. Это каньон, не парк и не город."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fortaleza_Canyon",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная самостоятельная статья о каньоне; проверено название и география."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5472506",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84 опорная точка -29.0627, -49.95648888888889. Выбрана опорная точка P625 каньона, не вход и не точный центр. SGB (-29.065,-49.96) отмечает точку геосайта примерно в 430 м от P625; протяженный каньон, точки не усреднялись. Не одноименный город Fortaleza в Ceará. UNESCO ID геопарка не является ID отдельного каньона."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.sgb.gov.br/documents/d/guest/caminhos_canions_sul",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимый первичный источник Serviço Geológico do Brasil, выпуск март 2024, стр. 12 PDF (P11), Quadro 3, Ponto 10: lon -49.96, lat -29.065 (SIRGAS2000). Различные точки одного протяженного каньона; преобразование datum не выполнялось, SIRGAS2000 использован только для сверки положения, не как источник WGS84."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://canionsdosul.org/geossitios/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Официальный сайт геопарка описывает оба каньона отдельно, в национальных парках Aparados da Serra/Serra Geral, Бразилия."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/fortaleza-canyon/",
+      "https://www.wikidata.org/wiki/Q5472506",
+      "https://www.sgb.gov.br/documents/d/guest/caminhos_canions_sul",
+      "https://canionsdosul.org/geossitios/",
+      "https://www.wikidata.org/wiki/Q5472506"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "Выбрана опорная точка P625 каньона, не вход и не точный центр. SGB (-29.065,-49.96) отмечает точку геосайта примерно в 430 м от P625; протяженный каньон, точки не усреднялись. Не одноименный город Fortaleza в Ceará. UNESCO ID геопарка не является ID отдельного каньона."
+    ]
+  },
+  "entityClass": "canyon",
+  "alternateNames": [
+    "Cânion Fortaleza"
+  ],
+  "external": {
+    "wikidataQid": "Q5472506",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Fortaleza_Canyon"
+    }
+  },
+  "location": {
+    "latitude": -29.0627,
+    "longitude": -49.95648888888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5472506"
+  },
+  "reviewNote": "Выбрана опорная точка P625 каньона, не вход и не точный центр. SGB (-29.065,-49.96) отмечает точку геосайта примерно в 430 м от P625; протяженный каньон, точки не усреднялись. Не одноименный город Fortaleza в Ceará. UNESCO ID геопарка не является ID отдельного каньона."
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_mayak_pergula",
+  "stableId": "destination_brazil_mayak_pergula",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/preguicas-lighthouse/",
+  "sourceFingerprint": "4622dfadd7cc5289892e9257b6fee62ed79e13d090b77de43671b0b2c12730dc",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "lighthouse",
+  "external": {
+    "wikidataQid": "Q3378348",
+    "osm": {
+      "type": "node",
+      "id": 1181491514
+    },
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Farol_de_Pregui%C3%A7as"
+    }
+  },
+  "alternateNames": [
+    "Farol de Preguiças",
+    "Farol de Mandacaru",
+    "Маяк Прегисас"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/preguicas-lighthouse/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3378348",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Preguiças Lighthouse: lighthouse in Mandacaru, Maranhão, Brazil; совпадают имя, сооружение и местность MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1181491514.json",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямое чтение version 8: man_made=lighthouse, Farol de Preguiças, wikidata=Q3378348, wikipedia=pt:Farol de Preguiças."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3378348",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Точный португальский sitelink Farol de Preguiças, не статья о реке или посёлке."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1181491514.json",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "WGS84 -2.5925938,-42.7074499, feature_point — сооружение маяка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Farol_de_Pregui%C3%A7as_3.jpg",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Независимый первичный фотоснимок с маяка: camera location -2.592525,-42.707436, около 8 м; согласуется с OSM лучше округлённого P625."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/preguicas-lighthouse.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "«Пергула» — название в программе; MD прямо сопоставляет его с Farol de Preguiças в Mandacaru. Тип natural_area в MD неточен: это маяк. Выбрана точка сооружения OSM; P625 Wikidata (-2.5916667,-42.7066667) смещён примерно на 135 м. Геотег первичного снимка с маяка (-2.592525,-42.707436) находится примерно в 8 м от OSM; координаты не усреднялись.",
+  "location": {
+    "latitude": -2.5925938,
+    "longitude": -42.7074499,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/1181491514.json"
+  }
+}

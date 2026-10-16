@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_gorod_shapada_dus_gimarajns",
+  "stableId": "destination_brazil_gorod_shapada_dus_gimarajns",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/chapada-dos-guimaraes/",
+  "sourceFingerprint": "51de11b08bd121d736b36da4e4e786e43a52d9fdfbccdd09115f9ec85038ceee",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "town",
+  "external": {
+    "wikidataQid": "Q22046029",
+    "geonamesId": "3466307"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/chapada-dos-guimaraes/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/chapada-dos-guimaraes.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22046029",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Карточка town/human settlement, country Brazil, capital of municipality Chapada dos Guimarães; точное соответствие city MD."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3466307/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "GeoNames 3466307: P PPL populated place, Brazil/Mato Grosso/Chapada dos Guimarães."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3466307/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Выбрана WGS84 representative −15.46056,−55.74972."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22046029",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Независимая сверка P625 15°27′39″S,55°45′0″W = −15.4608333,−55.75; около 43 м от GeoNames. Точки не усреднялись."
+    }
+  ],
+  "alternateNames": [
+    "Chapada dos Guimarães"
+  ],
+  "location": {
+    "latitude": -15.46056,
+    "longitude": -55.74972,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3466307/"
+  },
+  "reviewNote": "Назначен Q22046029 — именно город. Q986247 — муниципалитет, Q5072892 — национальный парк; они не sameAs этой страницы. GeoNames PPL — опорная точка населенного пункта, не центроид муниципалитета."
+}

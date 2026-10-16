@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_chapada_geodesic_viewpoint",
+  "stableId": "destination_brazil_chapada_geodesic_viewpoint",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/chapada-geodesic-viewpoint/",
+  "sourceFingerprint": "b09864ac9bfea56f9f434c5ef1582a3ef556ee332bbb75bae3036f166422bc65",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "viewpoint",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/chapada-geodesic-viewpoint.md",
+      "checkedAt": "2026-10-16T15:43:10.705Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Имя, обзор плато и контекст остановки в Chapada совпадают в MD и программе оператора. Это смотровая, а не геодезический монумент в Cuiabá."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/chapada-geodesic-viewpoint/",
+      "checkedAt": "2026-10-16T15:40:16.993676+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://araraslodge.com.br/amazonia-cerrado-e-pantanal-08-dias-e-07-noites/",
+      "checkedAt": "2026-10-16T15:43:10.705Z",
+      "note": "Оператор называет Mirante do Centro Geodésico da América do Sul у Chapada."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.sgb.gov.br/geossit/geossitios/ver/2204",
+      "checkedAt": "2026-10-16T15:43:10.705Z",
+      "note": "SGB подтверждает именованный геосайт, но его координата расходится с муниципальной/полевой привязкой на 26км."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://araraslodge.com.br/amazonia-cerrado-e-pantanal-08-dias-e-07-noites/",
+      "checkedAt": "2026-10-16T15:43:10.705Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/19/",
+      "checkedAt": "2026-10-16T15:43:10.705Z",
+      "note": "Муниципальная точка, ранее извлечённая из точной карточки, повторно сопоставлена с независимым геотегом фото автора -15.480167,-55.687944 в Commons и полевой публикацией 15°28′47″S55°41′15″W. SGB -15.6011,-55.4803 выглядит ошибочной дальней привязкой; точки не усреднялись."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://araraslodge.com.br/amazonia-cerrado-e-pantanal-08-dias-e-07-noites/",
+      "checkedAt": "2026-10-16T15:43:10.705Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C3%81rea_de_Prote%C3%A7%C3%A3o_Ambiental_da_Chapada_dos_Guimar%C3%A3es_Carlos_Souto_(04).jpg",
+      "checkedAt": "2026-10-16T15:43:23.643Z",
+      "note": "Новый поиск: авторский геотег -15.480167,-55.687944 у Mirante do Centro Geodésico, около93м от принятой муниципальной точки, а не около26км к SGB. Геотег не переносился как entrance."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Mirante do Centro Geodésico у Chapada dos Guimarães",
+      "reason": "Имя, обзор плато и контекст остановки в Chapada совпадают в MD и программе оператора. Это смотровая, а не геодезический монумент в Cuiabá."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "viewpoint",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "location",
+      "probability": 84,
+      "selected": "-15.479335096,-55.6878816473 (representative)",
+      "reason": "Муниципальная точка, ранее извлечённая из точной карточки, повторно сопоставлена с независимым геотегом фото автора -15.480167,-55.687944 в Commons и полевой публикацией 15°28′47″S55°41′15″W. SGB -15.6011,-55.4803 выглядит ошибочной дальней привязкой; точки не усреднялись."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "reviewNote": "Муниципальная карточка при повторном прямом открытии недоступна; её ранее сохранённая точка перепроверена по двум новым внешним географическим свидетельствам. Не объявлять её географическим центром материка.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/chapada-geodesic-viewpoint/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  },
+  "location": {
+    "latitude": -15.479335096,
+    "longitude": -55.6878816473,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/19/"
+  }
+}

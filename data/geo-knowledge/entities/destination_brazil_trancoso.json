@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_trancoso",
+  "stableId": "destination_brazil_trancoso",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/trancoso/",
+  "sourceFingerprint": "e18a6cbc507a1ce0426496acb6320874ef16903826fc1e5b1a36c348a07e41a0",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3446229",
+    "osm": {
+      "type": "node",
+      "id": 3411234828
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/trancoso.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/trancoso/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3446229/trancoso.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP 200: Trancoso P PPL, Brazil/Bahia/Porto Seguro, -16.59458,-39.10848; соответствует поселению из MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/3411234828.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой API: name=Trancoso, place=village, -16.5925971,-39.1030489. Узел поселения, а не одноимённый муниципалитет Португалии или Мексики."
+    },
+    {
+      "field": "identity.scope",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/5268363/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Relation 5268363 — административный district Trancoso (IBGE 292530320), Q938536. Не назначен внешней идентичностью поселения автоматически."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3446229/trancoso.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная GN-иерархия Brazil > Bahia > Porto Seguro > Trancoso."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3446229/trancoso.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Представительная точка поселения -16.59458,-39.10848, без утверждения о центре Квадрадо или конкретном пляже."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/5268363/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Независимая проверка: точка GN находится внутри замкнутой границы district Trancoso; OSM village node расположен примерно в 0.62 км, в том же поселении. Проверка территории не определяет единственный центр."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/trancoso/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "settlement",
+  "alternateNames": [
+    "Trancoso"
+  ],
+  "reviewNote": "Q938536 и Wikipedia о районе Trancoso не присвоены поселению автоматически. Подтверждены GeoNames PPL и OSM village node; сохранена представительная точка GN, не координаты церкви или района целиком.",
+  "location": {
+    "latitude": -16.59458,
+    "longitude": -39.10848,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3446229/trancoso.html"
+  }
+}

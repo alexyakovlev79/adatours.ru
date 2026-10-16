@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_transpantaneira",
+  "stableId": "destination_brazil_transpantaneira",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/transpantaneira/",
+  "sourceFingerprint": "08b95751671acb55cc8a4c235d0074816a2bc184fefad8aaf963bf75520938b1",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "road",
+  "alternateNames": [
+    "Transpantaneira",
+    "MT-060",
+    "Rodovia Transpantaneira"
+  ],
+  "external": {
+    "wikidataQid": "Q7834764",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Transpantaneira"
+    }
+  },
+  "location": {
+    "latitude": -16.817427130541084,
+    "longitude": -56.84539944232838,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q7834764.json"
+  },
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q7834764.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Transpantaneira highway in Mato Grosso, Brazil; P17 Q155 and P131 Q42824. Road identity, not Pantanal as a whole or a settlement."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Transpantaneira",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Exact article describes the Pantanal road linking Poconé and Porto Jofre, matching current source content."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q7834764.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "P625 is used as a representative point along the road. Not a centroid, start, lodging entrance, or full route geometry."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2329603/full.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent OSM full road geometry inspected: nearest node 8016593906 at -16.8169926,-56.8456274 lies about 54 m from chosen P625. The point is on the relevant Pantanal section. Relation 2329603 extends from Várzea Grande to Porto Jofre and is broader than the Poconé–Porto Jofre itinerary segment, so it is not assigned as an exact external identity."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/transpantaneira.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/transpantaneira/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/transpantaneira/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

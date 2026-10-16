@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_costa_do_sauipe",
+  "stableId": "destination_brazil_costa_do_sauipe",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/costa-do-sauipe/",
+  "sourceFingerprint": "d1d53220141626c8f4dab2651eb25d96ffaed9bc6a3cf5183b4d68593e93c312",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "resort",
+  "external": {
+    "officialUrl": "https://www.aviva.com.br/costadosauipe"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/costa-do-sauipe.md",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Пляжный отдых, набор гостиниц/спортивных занятий и близость Сальвадора указывают на курортный комплекс. Деревня OSM и ошибочный GeoNames Camaçari менее вероятны."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/costa-do-sauipe/",
+      "checkedAt": "2026-10-16T15:40:17.130859+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.aviva.com.br/costadosauipe",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Оператор Aviva представляет Costa do Sauípe как курортный комплекс на побережье Bahia с несколькими отелями."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.sauiperesorts.com.br/onde-fica-resorts-costa-do-sauipe",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Дополнительная карта/адрес комплекса: BA-099 km76, Mata de São João. Реселлер не выбран как официальный сайт владельца."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.aviva.com.br/costadosauipe",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.aviva.com.br/costadosauipe",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Собственный сайт оператора Aviva, точная страница Costa do Sauípe."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.aviva.com.br/costadosauipe",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 92,
+      "selected": "Курортный комплекс Costa do Sauípe в Mata de São João, Bahia",
+      "reason": "Пляжный отдых, набор гостиниц/спортивных занятий и близость Сальвадора указывают на курортный комплекс. Деревня OSM и ошибочный GeoNames Camaçari менее вероятны."
+    },
+    {
+      "field": "entityClass",
+      "probability": 92,
+      "selected": "resort",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.aviva.com.br/costadosauipe",
+      "reason": "Собственный сайт оператора Aviva, точная страница Costa do Sauípe."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 20,
+      "reason": "6941774 относится к другому месту у Camaçari."
+    },
+    {
+      "field": "external.osm",
+      "probability": 60,
+      "reason": "Node4456538471 обозначает village; соответствие всему курортному комплексу ниже 70%."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Не получена надёжная точка комплекса с определённой ролью; точку деревни не переносим."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/costa-do-sauipe/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  }
+}

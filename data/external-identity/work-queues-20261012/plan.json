@@ -133,7 +133,7 @@
       "unconfirmed_elsewhere": 36
     }
   ],
-  "updated_at": "2026-10-16T16:36:32.640Z",
+  "updated_at": "2026-10-16T19:47:58.943Z",
   "completed_reports_pending_sync": [
     {
       "batch_id": "adatours-com-identity-011",
@@ -149,6 +149,46 @@
       "reason": "Historical 011 bulk-sync blocker subsequently resolved; rows and frozen batch are included in current correspondence table and queue.",
       "next_after_sync": "adatours-com-identity-012",
       "resolved_by": "subsequent batches before identity-021"
+    },
+    {
+      "batch_id": "adatours-com-identity-045",
+      "report": "adatours-com-identity-045.json",
+      "research_status": "completed",
+      "queue_sync": "pending",
+      "correspondences_table_sync": "pending",
+      "note": "Do not re-verify existing checked URLs."
+    },
+    {
+      "batch_id": "adatours-com-identity-047",
+      "report": "adatours-com-identity-047.json",
+      "research_status": "completed",
+      "queue_sync": "pending",
+      "correspondences_table_sync": "pending",
+      "note": "Do not re-verify existing checked URLs."
+    },
+    {
+      "batch_id": "adatours-com-identity-048",
+      "report": "adatours-com-identity-048.json",
+      "research_status": "completed",
+      "queue_sync": "pending",
+      "correspondences_table_sync": "pending",
+      "note": "Do not re-verify existing checked URLs."
+    },
+    {
+      "batch_id": "adatours-com-identity-050",
+      "report": "adatours-com-identity-050.json",
+      "research_status": "completed",
+      "queue_sync": "pending",
+      "correspondences_table_sync": "pending",
+      "note": "Corrected frozen report: 17 missing records in current queue/crosswalk."
+    },
+    {
+      "batch_id": "adatours-com-identity-051",
+      "report": "adatours-com-identity-051.json",
+      "research_status": "completed",
+      "queue_sync": "pending",
+      "correspondences_table_sync": "pending",
+      "note": "Do not re-verify existing checked URLs."
     }
   ],
   "completed_ahead_of_cursor": [
@@ -196,6 +236,27 @@
       "integrated_queue": true,
       "integrated_correspondences": true,
       "saved_at": "2026-10-16T16:36:32.640Z"
+    },
+    {
+      "batch_id": "adatours-com-identity-051",
+      "report": "adatours-com-identity-051.json",
+      "positions": "2501–2550",
+      "checked": 50,
+      "confirmed": 0,
+      "integrated_queue": false,
+      "integrated_correspondences": false,
+      "saved_at": "2026-10-16T19:47:58.943Z",
+      "reason": "Research complete, multi-megabyte queue file write rejected; do not repeat checks."
     }
-  ]
+  ],
+  "latest_out_of_order_research": {
+    "batch_id": "adatours-com-identity-051",
+    "checked": 50,
+    "confirmed": 0,
+    "positions": "2501–2550",
+    "next_new_batch": "adatours-com-identity-052",
+    "next_new_first_key": "https://adatours.ru/colombia/place/el-penon-de-guatape/tour/",
+    "continuing_cursor": 2200,
+    "sync_pending": true
+  }
 }

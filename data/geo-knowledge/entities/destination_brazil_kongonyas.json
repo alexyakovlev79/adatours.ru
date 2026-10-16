@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kongonyas",
+  "stableId": "destination_brazil_kongonyas",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/congonhas/",
+  "sourceFingerprint": "82763acf691555797cce9e0cf8eddc3e811d0de6a1914742a5913fb15a4ce85e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/congonhas.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob 0b1e094a63f53007e9772bda94922b78b8f6f8b6; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/congonhas/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q275654",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q275654: Congonhas, город/муниципалитет Minas Gerais, Brazil; совпадают страна и объект. Город Конгоньяс; не аэропорт São Paulo–Congonhas, не Congonhas do Norte. UNESCO-святилище — отдельная сущность; его ID городу не присваивается."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Congonhas",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная статья о Congonhas в Minas Gerais, Brazil. Проверена идентичность; координаты статьи не используются автоматически."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3465671/congonhas.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames 3465671: населенный пункт/городская административная резиденция Congonhas, Minas Gerais, Brazil. Отделен от одноименного ADM2. SHA-256 прочитанного HTML 957b100e629554eed24b1ddcca7314e56d8de95a71a11e76f20da3cadb71b4b7."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3465671/congonhas.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84: latitude -20.50525, longitude -43.8588; городская опорная точка записи PPL/PPLA/PPLA2, не границы и не адрес входа. SHA-256 HTML 957b100e629554eed24b1ddcca7314e56d8de95a71a11e76f20da3cadb71b4b7."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q275654",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимая сверка с P625 -20.5, -43.85777777777778: расстояние 593 м, тот же населенный пункт. Точки не усреднялись. Город Конгоньяс; не аэропорт São Paulo–Congonhas, не Congonhas do Norte. UNESCO-святилище — отдельная сущность; его ID городу не присваивается."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3465671/congonhas.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames hierarchy: Brazil > Minas Gerais > одноименный муниципалитет > населенный пункт."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/congonhas/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "Город Конгоньяс; не аэропорт São Paulo–Congonhas, не Congonhas do Norte. UNESCO-святилище — отдельная сущность; его ID городу не присваивается.",
+      "GeoNames/Wikidata: 593 м между опорными точками."
+    ]
+  },
+  "entityClass": "city_and_municipality",
+  "external": {
+    "wikidataQid": "Q275654",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Congonhas"
+    },
+    "geonamesId": "3465671"
+  },
+  "alternateNames": [
+    "Congonhas"
+  ],
+  "location": {
+    "latitude": -20.50525,
+    "longitude": -43.8588,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3465671/congonhas.html"
+  },
+  "reviewNote": "Город Конгоньяс; не аэропорт São Paulo–Congonhas, не Congonhas do Norte. UNESCO-святилище — отдельная сущность; его ID городу не присваивается. Координата обозначает городскую опорную точку из GeoNames, не вычисленный центроид муниципальных границ."
+}

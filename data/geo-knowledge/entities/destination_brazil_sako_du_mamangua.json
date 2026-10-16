@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_sako_du_mamangua",
+  "stableId": "destination_brazil_sako_du_mamangua",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/saco-do-mamangua/",
+  "sourceFingerprint": "100cde9321f1d7c1d66de5be1c6eabb8697115f23e7520c3573e8731ab20714b",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "marine inlet",
+  "alternateNames": [
+    "Saco do Mamanguá",
+    "Saco de Mamanguá",
+    "Baía de Mamanguá"
+  ],
+  "external": {
+    "geonamesId": "3458085",
+    "osm": {
+      "type": "node",
+      "id": 2973836317
+    }
+  },
+  "location": {
+    "latitude": -23.2658356,
+    "longitude": -44.6299341,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/2973836317.json"
+  },
+  "evidence": [
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3458085",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Exact Saco do Mamanguá inlet record, Brazil/Rio de Janeiro; not the settlement Mamanguá or the broader environmental protection area."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/2973836317.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "OSM name=Saco do Mamanguá, natural=bay; exact bay near Paraty-Mirim."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/2973836317.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "WGS84 named-bay node is the representative map label point, not an entrance or a claimed geometric centroid."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3458085",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent gazetteer point -23.26729,-44.63069 lies about 180 m from the selected OSM point in the same inlet. Differences retained; coordinates not averaged."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://www.paraty.rj.gov.br/conteudo/downloads/ESTUDO-DE-CAPACIDADE-DE-SUPORTE.pdf",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Municipal carrying-capacity study section 6.5.10 explicitly distinguishes Saco do Mamanguá and Paraty-Mirim. Q27044295 is a broader environmental protection area and is deliberately not assigned."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/saco-do-mamangua.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/saco-do-mamangua/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/saco-do-mamangua/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

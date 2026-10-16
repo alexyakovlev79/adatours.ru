@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_reka_aruau",
+  "stableId": "destination_brazil_reka_aruau",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/aruau-river/",
+  "sourceFingerprint": "6dec0e207e07adc311c7452d5743bc97e9e92451d82c1b6a307c97e9fb594739",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/aruau-river.md",
+      "checkedAt": "2026-10-16T15:49:57.708Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Повторный поиск муниципальных SEMSA и Defesa Civil прямо подтверждает Rio Aruaú (Rio Negro), совпадающий с амазонским контекстом MD. Rio Ariaú, дальние Arauá/Aruaú-поселения не принимаются."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/aruau-river/",
+      "checkedAt": "2026-10-16T15:40:16.989149+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.manaus.am.gov.br/semsa/comunidades-atendidas/",
+      "checkedAt": "2026-10-16T15:49:57.708Z",
+      "note": "Новая проверка муниципального списка: Comunidade Nova Canaã/Rio Aruaú."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.manaus.am.gov.br/wp-content/uploads/2024/05/PLANO-DE-CONTINGENCIA-OFICIAL-2024-UNIFICADO.pdf",
+      "checkedAt": "2026-10-16T15:49:57.708Z",
+      "note": "Новая адресная выдача первичного плана: São Francisco do Aruaú и Nova Canaã do Aruaú на Rio Aruaú (Rio Negro)."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.manaus.am.gov.br/semsa/comunidades-atendidas/",
+      "checkedAt": "2026-10-16T15:49:57.708Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.manaus.am.gov.br/semsa/comunidades-atendidas/",
+      "checkedAt": "2026-10-16T15:49:57.708Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Rio Aruaú бассейна Rio Negro в районе Manaus",
+      "reason": "Повторный поиск муниципальных SEMSA и Defesa Civil прямо подтверждает Rio Aruaú (Rio Negro), совпадающий с амазонским контекстом MD. Rio Ariaú, дальние Arauá/Aruaú-поселения не принимаются."
+    },
+    {
+      "field": "entityClass",
+      "probability": 94,
+      "selected": "river",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "Самостоятельная точная внешняя карточка русла не установлена; варианты Ariaú не тождественны."
+    },
+    {
+      "field": "location",
+      "probability": 40,
+      "reason": "Нет точки выбранной реки с достаточной географической ролью; координаты поселения не переносились."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/aruau-river/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  }
+}

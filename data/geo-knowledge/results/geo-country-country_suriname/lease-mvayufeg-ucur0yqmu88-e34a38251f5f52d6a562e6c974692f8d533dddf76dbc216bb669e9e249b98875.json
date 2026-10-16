@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_suriname",
+  "stableId": "country_suriname",
+  "kind": "country",
+  "canonicalPath": "/suriname/",
+  "sourceFingerprint": "574a0db00236297f871ae9e877198458876ac9946adbd0bbbd007a295029e7e5",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "alternateNames": [
+    "Suriname",
+    "Republiek Suriname"
+  ],
+  "external": {
+    "wikidataQid": "Q730",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Suriname"
+    },
+    "geonamesId": "3382998"
+  },
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4cc87a3ce804507fd60bb0de42258363a3b77b75/src/content/countries/suriname.md",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Approved MD: stable ID, русское название и slug совпали с точной source-index entry; SHA MD совпал с claim."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/suriname/",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная публичная HTML-страница открыта 16.10.2026, заголовок соответствует стране; это активная страна."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q730",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта точная карточка государства; название и география совпали с MD и записью GeoNames PCLI."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.geonames.org/3382998/republic-of-suriname.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "GeoNames указывает A PCLI, Independent political entity, а не населенный пункт, реку или туристический объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3382998/republic-of-suriname.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта запись 3382998; название страны и код PCLI совпали. Тот же ID указан в Wikidata P1566."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Suriname",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта статья о государстве; не страница неоднозначностей и не одноименный город/река."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.geonames.org/3382998/republic-of-suriname.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Краткое и полное имена сопоставлены с формами в географических справочниках и статье страны."
+    },
+    {
+      "field": "location.review",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q730",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная независимая страна, не река Суринам и не Центральный Суринам — объект UNESCO. Координаты 4,-56 совпадают в GeoNames и Wikidata P625, но независимость происхождения и метод выбора точки не установлены; location исключен. Кандидат OSM relation 287082 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки. Не назначать UNESCO ID отдельного заповедника всей стране."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точная независимая страна, не река Суринам и не Центральный Суринам — объект UNESCO. Координаты 4,-56 совпадают в GeoNames и Wikidata P625, но независимость происхождения и метод выбора точки не установлены; location исключен. Кандидат OSM relation 287082 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки. Не назначать UNESCO ID отдельного заповедника всей стране."
+}

@@ -23,7 +23,7 @@ export async function autoConfirmGeoRelease({token,repository,runId,runSha,log=c
  }
  const run=await request('/actions/runs/'+runId);
  if(run.head_sha!==runSha||run.status!=='completed'||run.conclusion!=='success'||
-  run.head_branch!=='main'||run.path!=='.github/workflows/deploy.yml'||run.event!=='push')
+  run.head_branch!=='main'||run.path!=='.github/workflows/deploy.yml'||!['push','workflow_dispatch'].includes(run.event))
   return {status:'not_eligible_workflow_run'};
  const branch='schema-geo/staging',path='data/geo-knowledge/state.json';
  for(let tries=0;tries<5;tries++){

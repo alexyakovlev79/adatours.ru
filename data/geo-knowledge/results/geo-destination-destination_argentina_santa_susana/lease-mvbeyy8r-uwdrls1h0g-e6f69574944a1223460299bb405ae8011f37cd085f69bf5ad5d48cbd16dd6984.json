@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_santa_susana",
+  "stableId": "destination_argentina_santa_susana",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/santa-susana-ranch/",
+  "sourceFingerprint": "24dc4569c20094c21c9bb9f4494eabbd69594f2a9ba3d2de295d02e983e53b64",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "ranch",
+  "alternateNames": [
+    "Estancia Santa Susana"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4111599790
+    },
+    "officialUrl": "https://esantasusana.com.ar/english.htm"
+  },
+  "location": {
+    "latitude": -34.2907792,
+    "longitude": -58.9740096,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4111599790.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Координаты именованного узла farm из OSM API; адрес Ruta Provincial 6, Cardales и телефон согласуются с ранчо. Точка ранчо, не гарантированный въезд. Официальная english.htm открыта прямым HTTPS-запросом, HTTP 200; другой домен estanciasantasusana.com.ar вернул 500 и не принят.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://esantasusana.com.ar/english.htm",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/santa-susana-ranch/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://esantasusana.com.ar/english.htm",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://esantasusana.com.ar/english.htm",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4111599790.json",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://esantasusana.com.ar/english.htm",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Официальная страница самого объекта: Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4111599790.json",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Координаты именованного узла farm из OSM API; адрес Ruta Provincial 6, Cardales и телефон согласуются с ранчо. Точка ранчо, не гарантированный въезд. Официальная english.htm открыта прямым HTTPS-запросом, HTTP 200; другой домен estanciasantasusana.com.ar вернул 500 и не принят."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://esantasusana.com.ar/english.htm",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://esantasusana.com.ar/english.htm",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Ранчо Санта-Сусана",
+      "reason": "Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "ranch",
+      "reason": "Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Estancia Santa Susana",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/4111599790",
+      "reason": "Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://esantasusana.com.ar/english.htm",
+      "reason": "Официальная страница самого объекта: Туристическая эстансия у Los Cardales, Campana, Buenos Aires. Официальная история Kelly/Caffrey совпадает с MD; одноимённые ранчо Кордовы исключены."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "-34.2907792, -58.9740096",
+      "reason": "Координаты именованного узла farm из OSM API; адрес Ruta Provincial 6, Cardales и телефон согласуются с ранчо. Точка ранчо, не гарантированный въезд. Официальная english.htm открыта прямым HTTPS-запросом, HTTP 200; другой домен estanciasantasusana.com.ar вернул 500 и не принят."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    },
+    {
+      "field": "candidate.wikidataQid",
+      "probability": 30,
+      "reason": "Надёжная отдельная Wikidata-карточка именно эстансии у Los Cardales не найдена. Сохранена точная OSM identity."
+    }
+  ]
+}

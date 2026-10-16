@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_tiwanaku_kalasasaya",
+  "stableId": "destination_bolivia_tiwanaku_kalasasaya",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/tiwanaku-kalasasaya/",
+  "sourceFingerprint": "6b7844300658af62e0aa44bbbf841022c00dc613169b09a725e53f41808d67da",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "temple",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_bolivia_tiauanaku"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/tiwanaku-kalasasaya/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1722063",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс temple установлен по смыслу MD и исследованным источникам. MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1722063",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитан живой Special:EntityData JSON; имя, P31, P17 и смысл объекта совпадают. MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1722063",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точные Wikipedia sitelinks выбранного QID; не тематические статьи соседнего объекта."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/155719387",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитаны текущие OSM API tags/геометрия. MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу. P625 выбрана как representative-точка храмовой платформы, находится внутри проверенной геометрии OSM 155719387. Не вход, не Ворота Солнца и не весь археологический комплекс Tiwanaku Q61750; ID UNESCO всего комплекса не присваивается отдельному храму."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1722063",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "P625 выбрана как representative-точка храмовой платформы, находится внутри проверенной геометрии OSM 155719387. Не вход, не Ворота Солнца и не весь археологический комплекс Tiwanaku Q61750; ID UNESCO всего комплекса не присваивается отдельному храму."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/way/155719387",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Независимая сверка конкретного монумента/храмовой платформы и QID в текущей карте."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1722063",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_tiauanaku",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1722063",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Храм Каласасайя в Тиуанако",
+      "reason": "MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "temple",
+      "reason": "MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1722063",
+      "reason": "MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Kalasasaya\",\"es\":\"https://es.wikipedia.org/wiki/Kalasasaya\"}",
+      "reason": "Sitelinks из проверенной карточки конкретного объекта."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/155719387",
+      "reason": "P625 выбрана как representative-точка храмовой платформы, находится внутри проверенной геометрии OSM 155719387. Не вход, не Ворота Солнца и не весь археологический комплекс Tiwanaku Q61750; ID UNESCO всего комплекса не присваивается отдельному храму."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "-16.555, -68.67361111",
+      "reason": "P625 выбрана как representative-точка храмовой платформы, находится внутри проверенной геометрии OSM 155719387. Не вход, не Ворота Солнца и не весь археологический комплекс Tiwanaku Q61750; ID UNESCO всего комплекса не присваивается отдельному храму."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    },
+    {
+      "field": "relationships.destination_bolivia_tiauanaku",
+      "probability": 98,
+      "selected": "destination_bolivia_tiauanaku",
+      "reason": "MD описывает храмовую каменную платформу Каласасайя в Тиуанако; Q1722063 и OSM way 155719387 совпадают по имени, классу и принадлежности комплексу."
+    }
+  ],
+  "reviewNote": "P625 выбрана как representative-точка храмовой платформы, находится внутри проверенной геометрии OSM 155719387. Не вход, не Ворота Солнца и не весь археологический комплекс Tiwanaku Q61750; ID UNESCO всего комплекса не присваивается отдельному храму.",
+  "external": {
+    "wikidataQid": "Q1722063",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Kalasasaya",
+      "es": "https://es.wikipedia.org/wiki/Kalasasaya"
+    },
+    "osm": {
+      "type": "way",
+      "id": 155719387
+    }
+  },
+  "location": {
+    "latitude": -16.555,
+    "longitude": -68.67361111,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1722063"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_damoy_point",
+  "stableId": "destination_antarctica_damoy_point",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/damoy-point/",
+  "sourceFingerprint": "eb2b54ecd85ff1d93eb6ef4f816fc42e4cf17b4df9228502bc8246758b1ce329",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "headland",
+  "external": {
+    "wikidataQid": "Q882103",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Damoy_Point"
+    }
+  },
+  "location": {
+    "latitude": -64.81667,
+    "longitude": -63.53333,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124075"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/damoy-point/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «Мыс Дамой», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q882103",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Основной именованный референт — мыс Damoy Point на острове Винке. Исторический домик и авиаполоса являются объектами на мысе, не подменяют его идентичность. Выбрана точка самого мыса SCAR, не координата домика."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124075",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Основной именованный референт — мыс Damoy Point на острове Винке. Исторический домик и авиаполоса являются объектами на мысе, не подменяют его идентичность. Выбрана точка самого мыса SCAR, не координата домика. Роль точки: feature_point; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=124075",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: headland."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://adatours.ru/antarctica/place/damoy-point/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Географическое нахождение в country_antarctica подтверждено описанием и внешним источником; это не утверждение суверенитета."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Damoy_Point",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверена точная статья о соответствующем объекте, имя и география согласованы с Wikidata и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q882103",
+      "reason": "Основной именованный референт — мыс Damoy Point на острове Винке. Исторический домик и авиаполоса являются объектами на мысе, не подменяют его идентичность. Выбрана точка самого мыса SCAR, не координата домика."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q882103",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-64.81667,-63.53333",
+      "reason": "Основной именованный референт — мыс Damoy Point на острове Винке. Исторический домик и авиаполоса являются объектами на мысе, не подменяют его идентичность. Выбрана точка самого мыса SCAR, не координата домика."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "headland",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Согласованная географическая иерархия по MD и справочнику."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Damoy_Point",
+      "reason": "Точная статья соответствует выбранному референту."
+    }
+  ],
+  "reviewNote": null
+}

@@ -41,9 +41,13 @@ test('GEO publisher publishes all 80 READY in one content commit and one ref upd
   async mcp__GitHub__fetch_file({path,ref}){
    if(path==='data/geo-knowledge/state.json')return {result:{content:JSON.stringify({publication:null})}};
    assert.equal(ref,staging);
-   if(path==='data/geo-knowledge/queue.json')return {result:{content:JSON.stringify({jobs})}};
+   if(path==='data/geo-knowledge/queue.json')return {result:{content:'',sha:'large-queue-blob'}};
    if(results.has(path))return {result:{content:JSON.stringify(results.get(path))}};
    throw Error('Unexpected file path: '+path);
+  },
+  async mcp__GitHub__fetch_blob({blob_sha}){
+   assert.equal(blob_sha,'large-queue-blob');
+   return {result:{content:JSON.stringify({jobs})}};
   },
   async mcp__GitHub__create_tree({base_tree_sha,tree_elements}){
    assert.ok(base_tree_sha);assert.ok(tree_elements.length);

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_el_calafate",
+  "stableId": "destination_argentina_el_calafate",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/el-calafate/",
+  "sourceFingerprint": "7862f0b2ddb8333bb8484ff866dfc53ca6f16cab19874b66eba8e58af3bd9b2b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q81561",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/El_Calafate"
+    },
+    "geonamesId": "3858677",
+    "officialUrl": "https://www.elcalafate.tur.ar/",
+    "osm": {
+      "type": "relation",
+      "id": 3439478
+    }
+  },
+  "location": {
+    "latitude": -50.34075,
+    "longitude": -72.27682,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3858677/"
+  },
+  "alternateNames": [
+    "El Calafate"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/el-calafate/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен живой URL: HTTP 200, совпадающий canonical, название и доступность; MD approved, stable ID и countryId сверены с точной entry на main cdd8b523a809da44458be6d763aa2c89541d2141. Название и тип city определяют город Эль-Калафате как базу поездок к ледникам. Лос-Гласьярес и Перито-Морено — окружающие объекты; QID города выбран как основной референт по §3.2.1."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.elcalafate.tur.ar/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Название и тип city определяют город Эль-Калафате как базу поездок к ледникам. Лос-Гласьярес и Перито-Морено — окружающие объекты; QID города выбран как основной референт по §3.2.1."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81561",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверены название, страна и тип выбранного объекта. Название и тип city определяют город Эль-Калафате как базу поездок к ледникам. Лос-Гласьярес и Перито-Морено — окружающие объекты; QID города выбран как основной референт по §3.2.1."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/El_Calafate",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная статья о выбранной горе/городе; соответствует заголовку и географии страницы, не статья неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3858677/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка населенного пункта и его страна; ID сверяется с Wikidata P1566. Для Барилоче выбран PPLA3 7647007, а не ADM3."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.elcalafate.tur.ar/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен официальный муниципальный/туристический сайт выбранного направления. Это информационный officialUrl; не доказательство тождества домена и природного/городского объекта для sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81561",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверенные локальные и английские названия выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3858677/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata P625 (-50.33778,-72.26000) квалифицирован как city hall; выбрана общегородская точка GeoNames."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81561",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Страна выбранного объекта в Wikidata P17 совпадает с countryId точного MD/entry."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81561",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка Wikidata содержит OSM relation 3439478 для выбранного основного референта. Прямое чтение OSM не использовалось для дополнительных свойств."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Название и тип city определяют город Эль-Калафате как базу поездок к ледникам. Лос-Гласьярес и Перито-Морено — окружающие объекты; QID города выбран как основной референт по §3.2.1. Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata P625 (-50.33778,-72.26000) квалифицирован как city hall; выбрана общегородская точка GeoNames.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "El Calafate",
+      "reason": "Название и тип city определяют город Эль-Калафате как базу поездок к ледникам. Лос-Гласьярес и Перито-Морено — окружающие объекты; QID города выбран как основной референт по §3.2.1."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "selected": "Q81561",
+      "reason": "Название и тип city определяют город Эль-Калафате как базу поездок к ледникам. Лос-Гласьярес и Перито-Морено — окружающие объекты; QID города выбран как основной референт по §3.2.1."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "https://en.wikipedia.org/wiki/El_Calafate",
+      "reason": "Статья соответствует основному именованному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3858677",
+      "reason": "Совпадают имя, страна и основной референт; идентификатор приведен точной карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://www.elcalafate.tur.ar/",
+      "reason": "Портал прямо представляет выбранный объект или его официальный туризм."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "El Calafate",
+      "reason": "Названия совпадают в точной внешней карточке и/или на официальном портале."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-50.34075, -72.27682 (settlement_center)",
+      "reason": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata P625 (-50.33778,-72.26000) квалифицирован как city hall; выбрана общегородская точка GeoNames."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна подтверждена внешней карточкой и текущим сайтом."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "relation/3439478",
+      "reason": "Идентификатор картографического объекта из точной карточки Wikidata, без расширения географического объема."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_salta",
+  "stableId": "destination_argentina_salta",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/salta/",
+  "sourceFingerprint": "c52ed4da3ceec36593997ac650bb82a93e24faa8af2e9435b602f0ef2271608f",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q36307",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Salta"
+    },
+    "geonamesId": "3838233",
+    "officialUrl": "https://saltaciudad.travel/"
+  },
+  "location": {
+    "latitude": -24.7883333,
+    "longitude": -65.4105556,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q36307"
+  },
+  "alternateNames": [
+    "Salta",
+    "Ciudad de Salta"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/salta/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен живой URL: HTTP 200, совпадающий canonical, название и доступность; MD approved, stable ID и countryId сверены с точной entry на main cdd8b523a809da44458be6d763aa2c89541d2141. Тип city, городская колониальная архитектура и Сан-Франциско определяют город Сальта в долине Лерма; региональные выезды вторичны. Не вся провинция Сальта."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://saltaciudad.travel/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Тип city, городская колониальная архитектура и Сан-Франциско определяют город Сальта в долине Лерма; региональные выезды вторичны. Не вся провинция Сальта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q36307",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверены название, страна и тип выбранного объекта. Тип city, городская колониальная архитектура и Сан-Франциско определяют город Сальта в долине Лерма; региональные выезды вторичны. Не вся провинция Сальта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salta",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная статья о выбранной горе/городе; соответствует заголовку и географии страницы, не статья неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3838233/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка населенного пункта и его страна; ID сверяется с Wikidata P1566. Для Барилоче выбран PPLA3 7647007, а не ADM3."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://saltaciudad.travel/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен официальный муниципальный/туристический сайт выбранного направления. Это информационный officialUrl; не доказательство тождества домена и природного/городского объекта для sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q36307",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверенные локальные и английские названия выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q36307",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "P625: 24°47′18″S 65°24′38″W. Выбрана опорная точка города; GeoNames (-24.80645,-65.41999) расположен южнее центра. Точки не усредняются."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q36307",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Страна выбранного объекта в Wikidata P17 совпадает с countryId точного MD/entry."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Тип city, городская колониальная архитектура и Сан-Франциско определяют город Сальта в долине Лерма; региональные выезды вторичны. Не вся провинция Сальта. P625: 24°47′18″S 65°24′38″W. Выбрана опорная точка города; GeoNames (-24.80645,-65.41999) расположен южнее центра. Точки не усредняются.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Salta",
+      "reason": "Тип city, городская колониальная архитектура и Сан-Франциско определяют город Сальта в долине Лерма; региональные выезды вторичны. Не вся провинция Сальта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q36307",
+      "reason": "Тип city, городская колониальная архитектура и Сан-Франциско определяют город Сальта в долине Лерма; региональные выезды вторичны. Не вся провинция Сальта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Salta",
+      "reason": "Статья соответствует основному именованному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3838233",
+      "reason": "Совпадают имя, страна и основной референт; идентификатор приведен точной карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://saltaciudad.travel/",
+      "reason": "Портал прямо представляет выбранный объект или его официальный туризм."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Salta; Ciudad de Salta",
+      "reason": "Названия совпадают в точной внешней карточке и/или на официальном портале."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-24.788333333333334, -65.41055555555556 (settlement_center)",
+      "reason": "P625: 24°47′18″S 65°24′38″W. Выбрана опорная точка города; GeoNames (-24.80645,-65.41999) расположен южнее центра. Точки не усредняются."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна подтверждена внешней карточкой и текущим сайтом."
+    }
+  ]
+}

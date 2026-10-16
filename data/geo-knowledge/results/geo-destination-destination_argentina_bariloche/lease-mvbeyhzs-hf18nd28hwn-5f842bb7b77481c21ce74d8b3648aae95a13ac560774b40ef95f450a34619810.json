@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_bariloche",
+  "stableId": "destination_argentina_bariloche",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/bariloche/",
+  "sourceFingerprint": "4f910157904157ae8b7d8edbfa1f2e76589d020553a08b13ea66c22153894523",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q47772",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Bariloche"
+    },
+    "geonamesId": "7647007",
+    "officialUrl": "https://barilocheturismo.gob.ar/es/home"
+  },
+  "location": {
+    "latitude": -41.14557,
+    "longitude": -71.30822,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/7647007/"
+  },
+  "alternateNames": [
+    "San Carlos de Bariloche",
+    "Bariloche"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/bariloche/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен живой URL: HTTP 200, совпадающий canonical, название и доступность; MD approved, stable ID и countryId сверены с точной entry на main cdd8b523a809da44458be6d763aa2c89541d2141. Собственный текст прямо раскрывает полное название Сан-Карлос-де-Барилоче и положение на Науэль-Уапи. Не департамент Барилоче Q1190269. GeoNames 7647007 — населенный пункт, 3837856 в его иерархии — административная единица."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://barilocheturismo.gob.ar/es/home",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Собственный текст прямо раскрывает полное название Сан-Карлос-де-Барилоче и положение на Науэль-Уапи. Не департамент Барилоче Q1190269. GeoNames 7647007 — населенный пункт, 3837856 в его иерархии — административная единица."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q47772",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверены название, страна и тип выбранного объекта. Собственный текст прямо раскрывает полное название Сан-Карлос-де-Барилоче и положение на Науэль-Уапи. Не департамент Барилоче Q1190269. GeoNames 7647007 — населенный пункт, 3837856 в его иерархии — административная единица."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bariloche",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная статья о выбранной горе/городе; соответствует заголовку и географии страницы, не статья неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/7647007/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка населенного пункта и его страна; ID сверяется с Wikidata P1566. Для Барилоче выбран PPLA3 7647007, а не ADM3."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://barilocheturismo.gob.ar/es/home",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен официальный муниципальный/туристический сайт выбранного направления. Это информационный officialUrl; не доказательство тождества домена и природного/городского объекта для sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q47772",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверенные локальные и английские названия выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/7647007/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata (-41.15,-71.3) — более грубая опорная точка того же города; выбрана GeoNames."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q47772",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Страна выбранного объекта в Wikidata P17 совпадает с countryId точного MD/entry."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Собственный текст прямо раскрывает полное название Сан-Карлос-де-Барилоче и положение на Науэль-Уапи. Не департамент Барилоче Q1190269. GeoNames 7647007 — населенный пункт, 3837856 в его иерархии — административная единица. Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata (-41.15,-71.3) — более грубая опорная точка того же города; выбрана GeoNames.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "San Carlos de Bariloche",
+      "reason": "Собственный текст прямо раскрывает полное название Сан-Карлос-де-Барилоче и положение на Науэль-Уапи. Не департамент Барилоче Q1190269. GeoNames 7647007 — населенный пункт, 3837856 в его иерархии — административная единица."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q47772",
+      "reason": "Собственный текст прямо раскрывает полное название Сан-Карлос-де-Барилоче и положение на Науэль-Уапи. Не департамент Барилоче Q1190269. GeoNames 7647007 — населенный пункт, 3837856 в его иерархии — административная единица."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Bariloche",
+      "reason": "Статья соответствует основному именованному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "7647007",
+      "reason": "Совпадают имя, страна и основной референт; идентификатор приведен точной карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://barilocheturismo.gob.ar/es/home",
+      "reason": "Портал прямо представляет выбранный объект или его официальный туризм."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "San Carlos de Bariloche; Bariloche",
+      "reason": "Названия совпадают в точной внешней карточке и/или на официальном портале."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-41.14557, -71.30822 (settlement_center)",
+      "reason": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata (-41.15,-71.3) — более грубая опорная точка того же города; выбрана GeoNames."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна подтверждена внешней карточкой и текущим сайтом."
+    }
+  ]
+}

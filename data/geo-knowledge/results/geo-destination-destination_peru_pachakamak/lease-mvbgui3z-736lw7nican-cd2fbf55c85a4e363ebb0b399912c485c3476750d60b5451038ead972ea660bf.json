@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_pachakamak",
+  "stableId": "destination_peru_pachakamak",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/pachacamac/",
+  "sourceFingerprint": "ebee35c37180d478d8dbc9482c7239a71bb8cb331d321dfa959a2cca6a3d728c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Pachacámac",
+    "Pachacamac"
+  ],
+  "external": {
+    "wikidataQid": "Q430563",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pachacamac"
+    }
+  },
+  "location": {
+    "latitude": -12.256667,
+    "longitude": -76.900278,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.getty.edu/vow/TGNFullDisplay?find=&place=&nation=&english=Y&subjectid=7032402"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/pachacamac/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Пачакамак в MD — археологическое святилище долины Лурин юго-восточнее Лимы. Q430563 и Getty TGN 7032402 описывают древнее поселение/памятник; одноимённые современный город, район, божество и отдельный музей исключены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://pachacamac.cultura.pe/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Пачакамак в MD — археологическое святилище долины Лурин юго-восточнее Лимы. Q430563 и Getty TGN 7032402 описывают древнее поселение/памятник; одноимённые современный город, район, божество и отдельный музей исключены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430563",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Пачакамак в MD — археологическое святилище долины Лурин юго-восточнее Лимы. Q430563 и Getty TGN 7032402 описывают древнее поселение/памятник; одноимённые современный город, район, божество и отдельный музей исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pachacamac",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.getty.edu/vow/TGNFullDisplay?find=&place=&nation=&english=Y&subjectid=7032402",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Выбрана репрезентативная точка древнего Пачакамака по DMS Getty TGN 7032402: 12°15′24″S, 76°54′01″W, подтверждается статьёй памятника. Десятичные значения Getty округлены грубо; использована конверсия опубликованного DMS. Точка Wikidata смещена к северо-западу и не усреднялась."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430563",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pachacamac",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "destination_peru_pachakamak",
+      "reason": "Пачакамак в MD — археологическое святилище долины Лурин юго-восточнее Лимы. Q430563 и Getty TGN 7032402 описывают древнее поселение/памятник; одноимённые современный город, район, божество и отдельный музей исключены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q430563",
+      "reason": "Пачакамак в MD — археологическое святилище долины Лурин юго-восточнее Лимы. Q430563 и Getty TGN 7032402 описывают древнее поселение/памятник; одноимённые современный город, район, божество и отдельный музей исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Pachacamac\"}",
+      "reason": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "-12.256667,-76.900278",
+      "reason": "Выбрана репрезентативная точка древнего Пачакамака по DMS Getty TGN 7032402: 12°15′24″S, 76°54′01″W, подтверждается статьёй памятника. Десятичные значения Getty округлены грубо; использована конверсия опубликованного DMS. Точка Wikidata смещена к северо-западу и не усреднялась."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Pachacámac; Pachacamac",
+      "reason": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "reviewNote": null
+}

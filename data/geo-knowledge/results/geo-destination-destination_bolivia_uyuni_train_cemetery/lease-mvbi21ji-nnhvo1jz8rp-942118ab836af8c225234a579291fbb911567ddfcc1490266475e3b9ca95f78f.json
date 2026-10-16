@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_uyuni_train_cemetery",
+  "stableId": "destination_bolivia_uyuni_train_cemetery",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/uyuni-train-cemetery/",
+  "sourceFingerprint": "0ce37f0810b0476e14d7b93b8102fed73a17624fac50175f517cec53324d4638",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "train graveyard",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_bolivia_uyuni"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/uyuni-train-cemetery/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27491558",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс train graveyard установлен по смыслу MD и исследованным источникам. Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Cementerio_de_trenes",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точная статья описывает кладбище к юго-западу от Уюни и отличает его от меньшего железнодорожного кладбища Pulacayo."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27491558",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитан живой Special:EntityData JSON; имя, P31, P17 и смысл объекта совпадают. Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27491558",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точные Wikipedia sitelinks выбранного QID; не тематические статьи соседнего объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27491558",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Q27491558 — конкретное кладбище поездов. Координата P625 -20.4807,-66.837 принята как representative-точка площадки с брошенным подвижным составом, не административный центр Уюни. Внешняя Wikipedia только es: точной enwiki у карточки нет."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Cementerio_de_trenes",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Независимая сверка: кладбище к юго-западу от Уюни; не Pulacayo."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q27491558",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_uyuni",
+      "sourceUrl": "https://adatours.ru/bolivia/place/uyuni-train-cemetery/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кладбище поездов в Уюни",
+      "reason": "Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "train graveyard",
+      "reason": "Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q27491558",
+      "reason": "Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Cementerio_de_trenes\"}",
+      "reason": "Sitelinks из проверенной карточки конкретного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-20.4807, -66.837",
+      "reason": "Q27491558 — конкретное кладбище поездов. Координата P625 -20.4807,-66.837 принята как representative-точка площадки с брошенным подвижным составом, не административный центр Уюни. Внешняя Wikipedia только es: точной enwiki у карточки нет."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    },
+    {
+      "field": "relationships.destination_bolivia_uyuni",
+      "probability": 98,
+      "selected": "destination_bolivia_uyuni",
+      "reason": "Старые локомотивы и вагоны на окраине Уюни в MD соответствуют Uyuni Railway Scrap Yard / Cementerio de Trenes Q27491558, а не всему городу и не кладбищу в Pulacayo."
+    }
+  ],
+  "reviewNote": "Q27491558 — конкретное кладбище поездов. Координата P625 -20.4807,-66.837 принята как representative-точка площадки с брошенным подвижным составом, не административный центр Уюни. Внешняя Wikipedia только es: точной enwiki у карточки нет.",
+  "external": {
+    "wikidataQid": "Q27491558",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Cementerio_de_trenes"
+    }
+  },
+  "location": {
+    "latitude": -20.4807,
+    "longitude": -66.837,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q27491558"
+  }
+}

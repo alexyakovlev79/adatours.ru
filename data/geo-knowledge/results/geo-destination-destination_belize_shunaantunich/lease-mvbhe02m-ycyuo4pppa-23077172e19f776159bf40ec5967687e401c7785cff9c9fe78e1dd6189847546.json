@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_shunaantunich",
+  "stableId": "destination_belize_shunaantunich",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/xunantunich/",
+  "sourceFingerprint": "8a7b6135def10875584a2d5b2a3d1eb20e1c02733a1767e9f039dea0f2956796",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1646630",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Xunantunich"
+    },
+    "officialUrl": "https://ticketing.nichbelize.org/product/xunantunich/"
+  },
+  "location": {
+    "latitude": 17.090194,
+    "longitude": -89.142212,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q1646630.json"
+  },
+  "alternateNames": [
+    "Xunantunich",
+    "Шунантунич"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/xunantunich/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Археологический комплекс Xunantunich с El Castillo у San Jose Succotz в Cayo; совпадает с русским названием, MD и NICH. Не отдельная пирамида."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/xunantunich/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Прямой HTTP GET 200, конечный URL и canonical совпадают с очередью; H1 совпадает с названием, noindex отсутствует. Сверены текущие MD и source-index entry stableId/country/status."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1646630.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Археологический комплекс Xunantunich с El Castillo у San Jose Succotz в Cayo; совпадает с русским названием, MD и NICH. Не отдельная пирамида. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1646630.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/xunantunich/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Страница управляющего объекта государственного ведомства/организации; только officialUrl, не автоматический sameAs организации."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1646630.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Выбрана точка P625 археологической территории, не ferry/вход/вершина El Castillo. Wikipedia 17.089059,-89.141427 находится в том же комплексе (около 150 м); не усреднялась. NICH подтверждает географический контекст."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Xunantunich",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Адресная сверка географического контекста и назначения выбранной точки. Выбрана точка P625 археологической территории, не ferry/вход/вершина El Castillo. Wikipedia 17.089059,-89.141427 находится в том же комплексе (около 150 м); не усреднялась. NICH подтверждает географический контекст."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/xunantunich/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/xunantunich/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Шунаантуньич",
+      "reason": "Археологический комплекс Xunantunich с El Castillo у San Jose Succotz в Cayo; совпадает с русским названием, MD и NICH. Не отдельная пирамида."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1646630",
+      "reason": "Археологический комплекс Xunantunich с El Castillo у San Jose Succotz в Cayo; совпадает с русским названием, MD и NICH. Не отдельная пирамида. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Xunantunich",
+      "reason": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://ticketing.nichbelize.org/product/xunantunich/",
+      "reason": "Страница управляющего объекта государственного ведомства/организации; только officialUrl, не автоматический sameAs организации."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "17.090194, -89.142212; representative",
+      "reason": "Выбрана точка P625 археологической территории, не ferry/вход/вершина El Castillo. Wikipedia 17.089059,-89.141427 находится в том же комплексе (около 150 м); не усреднялась. NICH подтверждает географический контекст."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Xunantunich; Шунантунич",
+      "reason": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "reviewNote": "Основной объект — весь комплекс Xunantunich. Два GeoNames ID в Wikidata не перенесены без выбора точной карточки; координаты P625 оставлены как опорные."
+}

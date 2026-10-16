@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kambara_du_sul",
+  "stableId": "destination_brazil_kambara_du_sul",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/cambara-do-sul/",
+  "sourceFingerprint": "3511c26b04859ec324a3f35d6aa3338109cc3658d7bf9b7bd39cd71dc0123962",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/cambara-do-sul.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob ec042046aba2531a6639e82e63371add80992a82; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/cambara-do-sul/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q612092",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q612092: Cambará do Sul, город/муниципалитет Rio Grande do Sul, Brazil; совпадают страна и объект. GeoNames PPLA2 и Wikidata подтверждают городскую точку. Английская Wikipedia -29.367,-50.133 расходится примерно на 35.5 км и исключена как источник координат; не усреднять. Не Cambará в Paraná. Каньоны рядом — самостоятельные объекты, не containedInPlace города автоматически."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cambar%C3%A1_do_Sul",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная статья о Cambará do Sul в Rio Grande do Sul, Brazil. Проверена идентичность; координаты статьи не используются автоматически."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3467984/cambara-do-sul.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames 3467984: населенный пункт/городская административная резиденция Cambará do Sul, Rio Grande do Sul, Brazil. Отделен от одноименного ADM2. SHA-256 прочитанного HTML 28a597c33c9f15edc6e0fd4173f80b53c5e111fade144c8a1300b6fd7246dba5."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3467984/cambara-do-sul.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84: latitude -29.04758, longitude -50.14302; городская опорная точка записи PPL/PPLA/PPLA2, не границы и не адрес входа. SHA-256 HTML 28a597c33c9f15edc6e0fd4173f80b53c5e111fade144c8a1300b6fd7246dba5."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q612092",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимая сверка с P625 -29.047777777777778, -50.144999999999996: расстояние 194 м, тот же населенный пункт. Точки не усреднялись. GeoNames PPLA2 и Wikidata подтверждают городскую точку. Английская Wikipedia -29.367,-50.133 расходится примерно на 35.5 км и исключена как источник координат; не усреднять. Не Cambará в Paraná. Каньоны рядом — самостоятельные объекты, не containedInPlace города автоматически."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3467984/cambara-do-sul.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames hierarchy: Brazil > Rio Grande do Sul > одноименный муниципалитет > населенный пункт."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/cambara-do-sul/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "GeoNames PPLA2 и Wikidata подтверждают городскую точку. Английская Wikipedia -29.367,-50.133 расходится примерно на 35.5 км и исключена как источник координат; не усреднять. Не Cambará в Paraná. Каньоны рядом — самостоятельные объекты, не containedInPlace города автоматически.",
+      "GeoNames/Wikidata: 194 м между опорными точками."
+    ]
+  },
+  "entityClass": "city_and_municipality",
+  "external": {
+    "wikidataQid": "Q612092",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cambar%C3%A1_do_Sul"
+    },
+    "geonamesId": "3467984"
+  },
+  "alternateNames": [
+    "Cambará do Sul"
+  ],
+  "location": {
+    "latitude": -29.04758,
+    "longitude": -50.14302,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3467984/cambara-do-sul.html"
+  },
+  "reviewNote": "GeoNames PPLA2 и Wikidata подтверждают городскую точку. Английская Wikipedia -29.367,-50.133 расходится примерно на 35.5 км и исключена как источник координат; не усреднять. Не Cambará в Paraná. Каньоны рядом — самостоятельные объекты, не containedInPlace города автоматически. Координата обозначает городскую опорную точку из GeoNames, не вычисленный центроид муниципальных границ."
+}

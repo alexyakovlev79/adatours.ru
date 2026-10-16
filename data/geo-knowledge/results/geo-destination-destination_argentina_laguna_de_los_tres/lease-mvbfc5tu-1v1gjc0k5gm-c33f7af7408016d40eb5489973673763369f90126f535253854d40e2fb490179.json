@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_laguna_de_los_tres",
+  "stableId": "destination_argentina_laguna_de_los_tres",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/laguna-de-los-tres/",
+  "sourceFingerprint": "8cde9270426b50be0b10aece5dde0455d2b2b745d4579b4a6c87c9f2b1574941",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 1362578795
+    },
+    "geonamesId": "12089230"
+  },
+  "alternateNames": [
+    "Laguna de los Tres"
+  ],
+  "location": {
+    "latitude": -49.27925,
+    "longitude": -72.98885,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/12089230/laguna-de-los-tres.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/laguna-de-los-tres.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Ледниковое озеро у Фицроя в Лос-Гласьярес, близ Эль-Чалтена. Основной референт — озеро, а не одноименная тропа или лагуна в Торрес-дель-Пайне."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/actividades",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Ледниковое озеро у Фицроя в Лос-Гласьярес, близ Эль-Чалтена. Основной референт — озеро, а не одноименная тропа или лагуна в Торрес-дель-Пайне."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/laguna-de-los-tres/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/1362578795.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Ледниковое озеро у Фицроя в Лос-Гласьярес, близ Эль-Чалтена. Основной референт — озеро, а не одноименная тропа или лагуна в Торрес-дель-Пайне."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/1362578795.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/12089230/laguna-de-los-tres.html",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Опорная точка водоема GeoNames; контур OSM Lago de los Tres/alt_name Laguna de los Tres и APN подтверждают нужное озеро."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/actividades",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/12089230/laguna-de-los-tres.html",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "GeoNames ID точного объекта; не соседней достопримечательности."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/actividades",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Laguna de los Tres",
+      "reason": "Ледниковое озеро у Фицроя в Лос-Гласьярес, близ Эль-Чалтена. Основной референт — озеро, а не одноименная тропа или лагуна в Торрес-дель-Пайне."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/1362578795",
+      "reason": "Ледниковое озеро у Фицроя в Лос-Гласьярес, близ Эль-Чалтена. Основной референт — озеро, а не одноименная тропа или лагуна в Торрес-дель-Пайне."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Laguna de los Tres",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-49.27925, -72.98885; representative",
+      "reason": "Опорная точка водоема GeoNames; контур OSM Lago de los Tres/alt_name Laguna de los Tres и APN подтверждают нужное озеро."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "12089230",
+      "reason": "Ледниковое озеро у Фицроя в Лос-Гласьярес, близ Эль-Чалтена. Основной референт — озеро, а не одноименная тропа или лагуна в Торрес-дель-Пайне."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    }
+  ],
+  "reviewNote": "Q125565893 не присвоен: его единственный sitelink — Sentiero Laguna de los Tres (тропа), нет подтвержденной идентичности озера."
+}

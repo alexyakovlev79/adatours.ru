@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_akonkagua",
+  "stableId": "destination_argentina_akonkagua",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/aconcagua/",
+  "sourceFingerprint": "eb5d4efd113ba2b4de23afcdd52eacdb6002bf32949c3380ae2168927f991e12",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "mountain",
+  "alternateNames": [
+    "Aconcagua",
+    "Cerro Aconcagua"
+  ],
+  "external": {
+    "wikidataQid": "Q39739",
+    "geonamesId": "3866949",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Aconcagua",
+      "es": "https://es.wikipedia.org/wiki/Aconcagua"
+    }
+  },
+  "location": {
+    "latitude": -32.65305556,
+    "longitude": -70.01166667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q39739"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "P625 вершины; не вход в провинциальный парк, не лагерь и не река Аконкагуа в Чили.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.argentina.gob.ar/ciencia/conae/educacion-y-formacion-masiva/materiales-educativos/cerro-aconcagua-mendoza-sentinel-2a-msi-28-de-febrero-de-2017",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Вершина Аконкагуа в Las Heras, Mendoza. MD называет гору главным объектом, парк — её окружением; Q3031536 парка исключён."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/aconcagua/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.argentina.gob.ar/ciencia/conae/educacion-y-formacion-masiva/materiales-educativos/cerro-aconcagua-mendoza-sentinel-2a-msi-28-de-febrero-de-2017",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Вершина Аконкагуа в Las Heras, Mendoza. MD называет гору главным объектом, парк — её окружением; Q3031536 парка исключён."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39739",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39739",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Вершина Аконкагуа в Las Heras, Mendoza. MD называет гору главным объектом, парк — её окружением; Q3031536 парка исключён."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39739",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39739",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39739",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "P625 вершины; не вход в провинциальный парк, не лагерь и не река Аконкагуа в Чили."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.argentina.gob.ar/ciencia/conae/educacion-y-formacion-masiva/materiales-educativos/cerro-aconcagua-mendoza-sentinel-2a-msi-28-de-febrero-de-2017",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Вершина Аконкагуа в Las Heras, Mendoza. MD называет гору главным объектом, парк — её окружением; Q3031536 парка исключён."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.argentina.gob.ar/ciencia/conae/educacion-y-formacion-masiva/materiales-educativos/cerro-aconcagua-mendoza-sentinel-2a-msi-28-de-febrero-de-2017",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Аконкагуа",
+      "reason": "Вершина Аконкагуа в Las Heras, Mendoza. MD называет гору главным объектом, парк — её окружением; Q3031536 парка исключён."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "mountain",
+      "reason": "Вершина Аконкагуа в Las Heras, Mendoza. MD называет гору главным объектом, парк — её окружением; Q3031536 парка исключён."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Aconcagua; Cerro Aconcagua",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q39739",
+      "reason": "Вершина Аконкагуа в Las Heras, Mendoza. MD называет гору главным объектом, парк — её окружением; Q3031536 парка исключён."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3866949",
+      "reason": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Aconcagua; https://es.wikipedia.org/wiki/Aconcagua",
+      "reason": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "-32.65305556, -70.01166667",
+      "reason": "P625 вершины; не вход в провинциальный парк, не лагерь и не река Аконкагуа в Чили."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ]
+}

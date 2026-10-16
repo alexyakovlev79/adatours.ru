@@ -1,0 +1,23 @@
+name: Catalog development source snapshot
+on:
+  push:
+    branches: [feature/multi-country-interests-20261016]
+    paths: [.github/workflows/catalog-development-source.yml]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Package tracked source only (no credentials or media)
+        run: |
+          git archive --format=zip --output=catalog-source.zip HEAD src scripts tests docs/workflows data package.json package-lock.json astro.config.mjs tsconfig.json AGENTS.md .github
+          git rev-parse HEAD > source-commit.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: catalog-development-source
+          path: |
+            catalog-source.zip
+            source-commit.txt
+          retention-days: 2

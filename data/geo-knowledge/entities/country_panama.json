@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_panama",
+  "stableId": "country_panama",
+  "kind": "country",
+  "canonicalPath": "/panama/",
+  "sourceFingerprint": "cc01d84b36e0accf5b362143e16d5b198414cd7881440efd9a71f0fe9d891fda",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "alternateNames": [
+    "Panama",
+    "República de Panamá"
+  ],
+  "external": {
+    "wikidataQid": "Q804",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Panama"
+    },
+    "geonamesId": "3703430"
+  },
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4cc87a3ce804507fd60bb0de42258363a3b77b75/src/content/countries/panama.md",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Approved MD: stable ID, русское название и slug совпали с точной source-index entry; SHA MD совпал с claim."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/panama/",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная публичная HTML-страница открыта 16.10.2026, заголовок соответствует стране; это активная страна."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта точная карточка государства; название и география совпали с MD и записью GeoNames PCLI."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.geonames.org/3703430/republic-of-panama.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "GeoNames указывает A PCLI, Independent political entity, а не населенный пункт, реку или туристический объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3703430/republic-of-panama.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта запись 3703430; название страны и код PCLI совпали. Тот же ID указан в Wikidata P1566."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Panama",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта статья о государстве; не страница неоднозначностей и не одноименный город/река."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.geonames.org/3703430/republic-of-panama.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Краткое и полное имена сопоставлены с формами в географических справочниках и статье страны."
+    },
+    {
+      "field": "location.review",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная страна, не город Панама, провинция или Панамский канал. Координаты расходятся: Wikidata P625 8°37′N,80°22′W; GeoNames 9,-80. Location исключен, значения не усреднялись. Кандидат OSM relation 287668 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точная страна, не город Панама, провинция или Панамский канал. Координаты расходятся: Wikidata P625 8°37′N,80°22′W; GeoNames 9,-80. Location исключен, значения не усреднялись. Кандидат OSM relation 287668 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки."
+}

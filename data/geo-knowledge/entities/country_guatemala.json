@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_guatemala",
+  "stableId": "country_guatemala",
+  "kind": "country",
+  "canonicalPath": "/guatemala/",
+  "sourceFingerprint": "93aab10f10352c67dc5b1442786b26858180b5f4770f6a6152a859fe04e082c2",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "external": {
+    "wikidataQid": "Q774",
+    "wikipedia": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%93%D0%B2%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D0%BB%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Guatemala"
+    },
+    "geonamesId": "3595528",
+    "officialUrl": "https://guatemala.gob.gt/"
+  },
+  "alternateNames": [
+    "Guatemala",
+    "República de Guatemala",
+    "Republic of Guatemala"
+  ],
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Точное государство Гватемала, Q774; класс country/sovereign state и название сопоставлены с текущими MD/source-index и опубликованной страницей."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.geonames.org/3595528/republic-of-guatemala.html",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Самостоятельное государство: GeoNames feature class A, code PCLI; это не населенный пункт и не административный регион."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3595528/republic-of-guatemala.html",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Прямо открыта точная запись 3595528, совпадают название и класс PCLI; это идентификатор страны."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Свойство GeoNames ID/P1566 связывает Q774 с 3595528."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Ссылки на языковые статьи сверены по sitelinks точного Wikidata-объекта; страницы неоднозначностей не использованы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guatemala",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Прямо открыта англоязычная статья о стране; совпадают название и географический масштаб."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%93%D0%B2%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D0%BB%D0%B0",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Прямо открыта русскоязычная статья о стране; совпадает объект, это не город/департамент."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Современные английские/официальные названия взяты из labels, aliases и official name; исторические названия и более широкие регионы не переносились."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/guatemala/",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Точный публичный URL открылся как HTML страницы «Гватемала»; это действующая страница страны, не архив и не редирект на иной объект."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://guatemala.gob.gt/",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Портал прямо открыт: Gobierno de Guatemala, материалы министерств и Secretaría de Comunicación Social. Это правительственный портал, не автоматический sameAs географической сущности."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Сопоставлено государство Гватемала Q774 (GT), не город Гватемала Q1555 и не одноименный департамент. Координаты 15.5,−90.25 совпадают в Wikidata, GeoNames и English Wikipedia, но независимое происхождение и назначение точки не установлены; location отложен. OSM relation 1521463 из Wikidata — кандидат: relation/API недоступны, osm исключен до прямой сверки. Guatemala.gob.gt — официальный портал правительства, не автоматический sameAs страны."
+}

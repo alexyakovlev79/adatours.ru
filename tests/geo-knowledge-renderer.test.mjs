@@ -15,7 +15,7 @@ for(const r of records)test('verified GEO passport '+r.data.id,()=>{
  assert.equal(nodes.length,1);
  const n=nodes[0];
  assert.ok(n.sameAs.includes('https://www.wikidata.org/wiki/'+passport.external.wikidataQid));
- assert.ok(n.identifier.some(x=>x.propertyID==='Wikidata'));assert.equal(n.geo,undefined);
+ assert.ok(n.identifier.some(x=>x.propertyID==='Wikidata'));assert.deepEqual(n.geo,passport.location ? {'@type':'GeoCoordinates',latitude:passport.location.latitude,longitude:passport.location.longitude} : undefined);
  assert.equal(n.hasMap,passport.external.osm?'https://www.openstreetmap.org/'+passport.external.osm.type+'/'+passport.external.osm.id:undefined);
  assert.ok(n.subjectOf.length===2);assert.ok(!n.sameAs.some(x=>x.includes('gov.br')||x.includes('gob.ar')));
  if(r.data.id==='country_antarctica')assert.ok(n['@type'].includes('Place')&&!n['@type'].includes('Country'));

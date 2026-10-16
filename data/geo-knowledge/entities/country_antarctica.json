@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "jobId": "geo-country-country_antarctica",
+  "jobId": "geo-country-country_antarctica-coordinates",
   "stableId": "country_antarctica",
   "kind": "country",
   "canonicalPath": "/antarctica/",
@@ -71,25 +71,53 @@
     },
     {
       "field": "location",
-      "sourceUrl": "https://www.wikidata.org/wiki/Q51",
-      "checkedAt": "2026-10-16T12:41:07.338Z",
-      "note": "Location intentionally omitted; candidate values and validation limitations are recorded in reviewNote. No centroid, entrance or representative point is asserted."
+      "sourceUrl": "https://www.geonames.org/6255152/antarctica.html",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "Directly opened GeoNames record 6255152, feature L.CONT continent. Source coordinate pair latitude=-78.15856, longitude=16.40626. Used explicitly as the gazetteer's representative point for this area; not a computed centroid, capital, entrance, itinerary stop or landing location. No averaging of alternative coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/readme.txt",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "GeoNames primary data documentation specifies latitude/longitude as decimal degrees in WGS84. Numerical order and signs checked."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/9380cca83db5f9aef52d5e762765100745f84b27/geojson/ne_110m_admin_0_countries.geojson",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "Independent spatial validation against Natural Earth 1:110m polygon ATA: ray-casting point-in-polygon with holes and multipolygons, x=longitude, y=latitude; point lies within the expected feature and no other of the five checked features. Dataset blob 1e6ab74c7042f97013be69ceec798be8e1aff27d. This validates area membership at coarse map scale, not coordinate precision, sovereignty, centroid or tourist accessibility."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/6255152/antarctica.html",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "Direct feature card now read successfully: 6255152 is L.CONT Antarctica. This supersedes the original session's direct-access limitation; it is not territory record 6697173."
     }
   ],
   "confidence": "high",
-  "reviewNote": "Это континент Q51, не государство и не вся Антарктика. Source-index alias «Антарктика» не переносится в паспорт как точный синоним. Публичный тип при внедрении — Place; stableId и URL сохраняются. GeoNames 6255152 (континент) подтвержден свойством Wikidata; прямое открытие GeoNames недоступно. Не подменять его территориальной записью 6697173. OSM relation 2186646 — кандидат из Wikidata, но текущая доступность/границы не подтверждены, поэтому поле osm исключено. −90,0 в Wikidata/Wikipedia — Южный полюс, не автоматически центр континента или точка круизных высадок; GeoNames индекс дает −78.15856,16.40626. Location и officialUrl исключены.",
+  "reviewNote": "Координаты дополнены 2026-10-16T12:55:49.078Z: опорная точка GeoNames, WGS84, pointRole=representative. Независимая проверка попадания в полигон Natural Earth ATA пройдена. Это точка для обозначения страны/континента, без утверждения о точном центре, столице или туристическом объекте. Историческое примечание первой партии ДО этого дополнения (сохранено для прозрачности): Это континент Q51, не государство и не вся Антарктика. Source-index alias «Антарктика» не переносится в паспорт как точный синоним. Публичный тип при внедрении — Place; stableId и URL сохраняются. GeoNames 6255152 (континент) подтвержден свойством Wikidata; прямое открытие GeoNames недоступно. Не подменять его территориальной записью 6697173. OSM relation 2186646 — кандидат из Wikidata, но текущая доступность/границы не подтверждены, поэтому поле osm исключено. −90,0 в Wikidata/Wikipedia — Южный полюс, не автоматически центр континента или точка круизных высадок; GeoNames индекс дает −78.15856,16.40626. Location и officialUrl исключены.",
   "audit": {
     "checkedUrls": [
       "https://www.wikidata.org/wiki/Q51",
       "https://en.wikipedia.org/wiki/Antarctica",
       "https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B0%D1%80%D0%BA%D1%82%D0%B8%D0%B4%D0%B0",
-      "https://adatours.ru/antarctica/"
+      "https://adatours.ru/antarctica/",
+      "https://www.geonames.org/6255152/antarctica.html",
+      "https://download.geonames.org/export/dump/readme.txt",
+      "https://github.com/nvkelso/natural-earth-vector/blob/9380cca83db5f9aef52d5e762765100745f84b27/geojson/ne_110m_admin_0_countries.geojson"
     ],
     "findings": [
       "Stable ID, canonical URL, approved MD and source-index entry match.",
       "Exact external identities verified; READY applies only to the included assertions.",
-      "No coordinates are approved in this payload; limitations are explicit in reviewNote.",
-      "Это континент Q51, не государство и не вся Антарктика. Source-index alias «Антарктика» не переносится в паспорт как точный синоним. Публичный тип при внедрении — Place; stableId и URL сохраняются. GeoNames 6255152 (континент) подтвержден свойством Wikidata; прямое открытие GeoNames недоступно. Не подменять его территориальной записью 6697173. OSM relation 2186646 — кандидат из Wikidata, но текущая доступность/границы не подтверждены, поэтому поле osm исключено. −90,0 в Wikidata/Wikipedia — Южный полюс, не автоматически центр континента или точка круизных высадок; GeoNames индекс дает −78.15856,16.40626. Location и officialUrl исключены."
+      "Это континент Q51, не государство и не вся Антарктика. Source-index alias «Антарктика» не переносится в паспорт как точный синоним. Публичный тип при внедрении — Place; stableId и URL сохраняются. GeoNames 6255152 (континент) подтвержден свойством Wikidata; прямое открытие GeoNames недоступно. Не подменять его территориальной записью 6697173. OSM relation 2186646 — кандидат из Wikidata, но текущая доступность/границы не подтверждены, поэтому поле osm исключено. −90,0 в Wikidata/Wikipedia — Южный полюс, не автоматически центр континента или точка круизных высадок; GeoNames индекс дает −78.15856,16.40626. Location и officialUrl исключены.",
+      "Coordinate addition verified 2026-10-16T12:55:49.078Z: WGS84 (-78.15856, 16.40626), representative, GeoNames + independent Natural Earth containment.",
+      "Different country label/centre points across sources are kept as historical alternatives; representative point selection resolves scope, not by averaging or claiming a unique geographic centre."
     ]
+  },
+  "location": {
+    "latitude": -78.15856,
+    "longitude": 16.40626,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/6255152/antarctica.html"
   }
 }

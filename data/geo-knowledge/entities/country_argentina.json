@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "jobId": "geo-country-country_argentina",
+  "jobId": "geo-country-country_argentina-coordinates",
   "stableId": "country_argentina",
   "kind": "country",
   "canonicalPath": "/argentina/",
@@ -102,13 +102,25 @@
     },
     {
       "field": "location",
-      "sourceUrl": "https://www.wikidata.org/wiki/Q414",
-      "checkedAt": "2026-10-16T12:41:07.338Z",
-      "note": "Location intentionally omitted; candidate values and validation limitations are recorded in reviewNote. No centroid, entrance or representative point is asserted."
+      "sourceUrl": "https://www.geonames.org/3865483/argentine-republic.html",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "Directly opened GeoNames record 3865483, feature A.PCLI independent political entity. Source coordinate pair latitude=-34, longitude=-64. Used explicitly as the gazetteer's representative point for this area; not a computed centroid, capital, entrance, itinerary stop or landing location. No averaging of alternative coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/readme.txt",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "GeoNames primary data documentation specifies latitude/longitude as decimal degrees in WGS84. Numerical order and signs checked."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/9380cca83db5f9aef52d5e762765100745f84b27/geojson/ne_110m_admin_0_countries.geojson",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "Independent spatial validation against Natural Earth 1:110m polygon ARG: ray-casting point-in-polygon with holes and multipolygons, x=longitude, y=latitude; point lies within the expected feature and no other of the five checked features. Dataset blob 1e6ab74c7042f97013be69ceec798be8e1aff27d. This validates area membership at coarse map scale, not coordinate precision, sovereignty, centroid or tourist accessibility."
     }
   ],
   "confidence": "high",
-  "reviewNote": "Координаты −34, −64 совпадают в GeoNames, Wikidata и Wikipedia, но Wikidata прямо ссылается на GeoNames. В этой партии location опущен: независимость происхождения координат и роль точки не установлены. Правительственный портал — officialUrl, не автоматический sameAs страны.",
+  "reviewNote": "Координаты дополнены 2026-10-16T12:55:49.078Z: опорная точка GeoNames, WGS84, pointRole=representative. Независимая проверка попадания в полигон Natural Earth ARG пройдена. Это точка для обозначения страны/континента, без утверждения о точном центре, столице или туристическом объекте. Историческое примечание первой партии ДО этого дополнения (сохранено для прозрачности): Координаты −34, −64 совпадают в GeoNames, Wikidata и Wikipedia, но Wikidata прямо ссылается на GeoNames. В этой партии location опущен: независимость происхождения координат и роль точки не установлены. Правительственный портал — officialUrl, не автоматический sameAs страны.",
   "audit": {
     "checkedUrls": [
       "https://www.wikidata.org/wiki/Q414",
@@ -117,13 +129,22 @@
       "https://adatours.ru/argentina/",
       "https://www.geonames.org/3865483",
       "https://www.openstreetmap.org/relation/286393",
-      "https://www.argentina.gob.ar/"
+      "https://www.argentina.gob.ar/",
+      "https://www.geonames.org/3865483/argentine-republic.html",
+      "https://download.geonames.org/export/dump/readme.txt",
+      "https://github.com/nvkelso/natural-earth-vector/blob/9380cca83db5f9aef52d5e762765100745f84b27/geojson/ne_110m_admin_0_countries.geojson"
     ],
     "findings": [
       "Stable ID, canonical URL, approved MD and source-index entry match.",
       "Exact external identities verified; READY applies only to the included assertions.",
-      "No coordinates are approved in this payload; limitations are explicit in reviewNote.",
-      "Координаты −34, −64 совпадают в GeoNames, Wikidata и Wikipedia, но Wikidata прямо ссылается на GeoNames. В этой партии location опущен: независимость происхождения координат и роль точки не установлены. Правительственный портал — officialUrl, не автоматический sameAs страны."
+      "Coordinate addition verified 2026-10-16T12:55:49.078Z: WGS84 (-34, -64), representative, GeoNames + independent Natural Earth containment.",
+      "Different country label/centre points across sources are kept as historical alternatives; representative point selection resolves scope, not by averaging or claiming a unique geographic centre."
     ]
+  },
+  "location": {
+    "latitude": -34,
+    "longitude": -64,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3865483/argentine-republic.html"
   }
 }

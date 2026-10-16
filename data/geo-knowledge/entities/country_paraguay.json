@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_paraguay",
+  "stableId": "country_paraguay",
+  "kind": "country",
+  "canonicalPath": "/paraguay/",
+  "sourceFingerprint": "ee1e3325f45abbcac8c3bf992ddf3dd0b099e96eb2210b1792fa7dee05a22c76",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "alternateNames": [
+    "Paraguay",
+    "República del Paraguay"
+  ],
+  "external": {
+    "wikidataQid": "Q733",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Paraguay"
+    },
+    "geonamesId": "3437598"
+  },
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4cc87a3ce804507fd60bb0de42258363a3b77b75/src/content/countries/paraguay.md",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Approved MD: stable ID, русское название и slug совпали с точной source-index entry; SHA MD совпал с claim."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная публичная HTML-страница открыта 16.10.2026, заголовок соответствует стране; это активная страна."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q733",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта точная карточка государства; название и география совпали с MD и записью GeoNames PCLI."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.geonames.org/3437598/republic-of-paraguay.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "GeoNames указывает A PCLI, Independent political entity, а не населенный пункт, реку или туристический объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3437598/republic-of-paraguay.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта запись 3437598; название страны и код PCLI совпали. Тот же ID указан в Wikidata P1566."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paraguay",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Открыта статья о государстве; не страница неоднозначностей и не одноименный город/река."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.geonames.org/3437598/republic-of-paraguay.html",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Краткое и полное имена сопоставлены с формами в географических справочниках и статье страны."
+    },
+    {
+      "field": "location.review",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q733",
+      "checkedAt": "2026-10-16T12:53:30.127Z",
+      "note": "Точная страна, не река Парагвай. Координаты расходятся: Wikidata P625 -23.5,-58; GeoNames -23.33333,-58; P5140 — отдельный географический центр. Location исключен, значения не усреднялись. Кандидат OSM relation 287077 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точная страна, не река Парагвай. Координаты расходятся: Wikidata P625 -23.5,-58; GeoNames -23.33333,-58; P5140 — отдельный географический центр. Location исключен, значения не усреднялись. Кандидат OSM relation 287077 указан в Wikidata P402, но прямое открытие relation/API завершилось ошибкой; external.osm исключен до проверки."
+}

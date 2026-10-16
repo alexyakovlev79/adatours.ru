@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "repository": "alexyakovlev79/adatours.ru",
+  "branch": "schema-geo/staging",
+  "truth": "GitHub queue.json + state.json + immutable result files; Sheets is a mirror",
+  "leaseMinutes": 90,
+  "batchSize": 5,
+  "pilotBatchSize": 3,
+  "maxStage": 1,
+  "pilotGate": "Open stage 2 only after 3–5 country passports have a successful production deployment and a checked renderer adapter",
+  "snapshotCommit": "bb2f0956868fc102382d7ff2f55824bea325f016",
+  "createdAt": "2026-10-16",
+  "spreadsheet": {
+    "id": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+    "queueSheetId": 16001610,
+    "resultsSheetId": 16001611,
+    "publicationsSheetId": 16001612
+  },
+  "rendererIntegration": "pending_real_pilot_data",
+  "publicationCommand": "публикуй данные",
+  "collectionCommand": "собирай данные",
+  "states": [
+    "QUEUED",
+    "LEASED",
+    "READY",
+    "REVIEW",
+    "BLOCKED",
+    "STALE",
+    "UNAVAILABLE",
+    "PUBLISHING",
+    "DEPLOYING",
+    "PUBLISHED"
+  ]
+}

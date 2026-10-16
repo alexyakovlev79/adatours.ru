@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_ostrov_inka_huasi",
+  "stableId": "destination_bolivia_ostrov_inka_huasi",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/incahuasi-island/",
+  "sourceFingerprint": "75bab2818f6b535c593f5a2503230b1991797b8a04eeb65458579fa072668942",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "rocky_outcrop",
+  "external": {
+    "wikidataQid": "Q1438367",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Isla_Incahuasi"
+    }
+  },
+  "location": {
+    "latitude": -20.2427777778,
+    "longitude": -67.6252777778,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Isla_Incahuasi"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Скалистый остров с кактусами внутри Salar de Uyuni. Исключены одноименные горы и отдельный остров Isla del Pescado.",
+      "selected": "Q1438367"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Скалистый остров с кактусами внутри Salar de Uyuni. Исключены одноименные горы и отдельный остров Isla del Pescado.",
+      "selected": "rocky_outcrop"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Скалистый остров с кактусами внутри Salar de Uyuni. Исключены одноименные горы и отдельный остров Isla del Pescado.",
+      "selected": "Q1438367"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Скалистый остров с кактусами внутри Salar de Uyuni. Исключены одноименные горы и отдельный остров Isla del Pescado.",
+      "selected": "https://en.wikipedia.org/wiki/Isla_Incahuasi"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Точка 20°14′34″S 67°37′31″W совпадает в Wikipedia и P625 Q1438367; обозначает островную скалу.",
+      "selected": "-20.2427777778, -67.6252777778; feature_point"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/incahuasi-island/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Скалистый остров с кактусами внутри Salar de Uyuni. Исключены одноименные горы и отдельный остров Isla del Pescado."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/incahuasi-island.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1438367",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Скалистый остров с кактусами внутри Salar de Uyuni. Исключены одноименные горы и отдельный остров Isla del Pescado."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Isla_Incahuasi",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Isla_Incahuasi",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Скалистый остров с кактусами внутри Salar de Uyuni. Исключены одноименные горы и отдельный остров Isla del Pescado."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Isla_Incahuasi",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точка 20°14′34″S 67°37′31″W совпадает в Wikipedia и P625 Q1438367; обозначает островную скалу."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1438367",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Точка 20°14′34″S 67°37′31″W совпадает в Wikipedia и P625 Q1438367; обозначает островную скалу."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Isla_Incahuasi",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": null
+}

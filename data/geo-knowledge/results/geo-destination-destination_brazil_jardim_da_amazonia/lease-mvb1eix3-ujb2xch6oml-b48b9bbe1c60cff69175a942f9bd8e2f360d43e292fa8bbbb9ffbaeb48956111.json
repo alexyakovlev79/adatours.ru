@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_jardim_da_amazonia",
+  "stableId": "destination_brazil_jardim_da_amazonia",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/jardim-da-amazonia/",
+  "sourceFingerprint": "2fce84192a85016e602f8a1c34f4c5b0b5a77b16f744fc76ecb52b1a8762fdf8",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "forest_lodge",
+  "external": {
+    "officialUrl": "https://jardimdaamazonia.com/pt/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/jardim-da-amazonia/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/jardim-da-amazonia.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://jardimdaamazonia.com/pt/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Официальный сайт самого Jardim da Amazônia Lodge."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://jardimdaamazonia.com/pt/como-chegar",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Адрес Rodovia MT-010 km 88, São José do Rio Claro, Mato Grosso, Brazil, южная Амазония/Серрадо; совпадает с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://pantanalphototours.com/jardim-da-amazonia-lodge/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Независимый оператор описывает одноименный lodge на Rio Claro, переход Cerrado–Amazon Rainforest."
+    },
+    {
+      "field": "location.candidates",
+      "sourceUrl": "https://jardimdaamazonia.com/pt/como-chegar",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTML JSON-LD Hotel и LocalBusiness содержит geo −13.540250786829912,−56.632591924913555. Это кандидат от владельца; независимой координатной верификации нет."
+    },
+    {
+      "field": "location.candidates",
+      "sourceUrl": "https://www.ecoregistros.org/site_en/video.php?id=7265",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Полевое наблюдение, location accuracy Medium, Pousada Jardim da Amazonia, −13.506154,−56.614609. Не точная координата здания."
+    }
+  ],
+  "alternateNames": [
+    "Jardim da Amazônia Lodge",
+    "Jardim D’Amazônia"
+  ],
+  "reviewNote": "Лодж точно установлен по официальному сайту и São José do Rio Claro. Официальный HTML сообщает −13.540250786829912,−56.632591924913555, но независимой точной сверки здания нет. Полевое наблюдение ecoregistros рядом с Pousada Jardim da Amazonia указывает −13.506154,−56.614609 (средняя точность; может быть место наблюдения, а не здание), около 4.3 км. Не использовать полевую точку как лодж, не усреднять; location не назначено до сверки OSM/карты здания."
+}

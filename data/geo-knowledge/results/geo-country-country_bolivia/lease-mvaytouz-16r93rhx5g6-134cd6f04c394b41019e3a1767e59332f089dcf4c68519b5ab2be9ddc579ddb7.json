@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_bolivia",
+  "stableId": "country_bolivia",
+  "kind": "country",
+  "canonicalPath": "/bolivia/",
+  "sourceFingerprint": "45242fc0e45cf3bc19327c5a96c710cb8f6a9d3caf909c73ea3c6a957a782c25",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "external": {
+    "wikidataQid": "Q750",
+    "wikipedia": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D0%B8%D0%B2%D0%B8%D1%8F",
+      "en": "https://en.wikipedia.org/wiki/Bolivia"
+    },
+    "geonamesId": "3923057",
+    "officialUrl": "https://www.gob.bo/"
+  },
+  "alternateNames": [
+    "Bolivia",
+    "Estado Plurinacional de Bolivia",
+    "Plurinational State of Bolivia"
+  ],
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q750",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Точное государство Боливия, Q750; класс country/sovereign state и название сопоставлены с текущими MD/source-index и опубликованной страницей."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.geonames.org/3923057/plurinational-state-of-bolivia.html",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Самостоятельное государство: GeoNames feature class A, code PCLI; это не населенный пункт и не административный регион."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3923057/plurinational-state-of-bolivia.html",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Прямо открыта точная запись 3923057, совпадают название и класс PCLI; это идентификатор страны."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q750",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Свойство GeoNames ID/P1566 связывает Q750 с 3923057."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q750",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Ссылки на языковые статьи сверены по sitelinks точного Wikidata-объекта; страницы неоднозначностей не использованы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bolivia",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Прямо открыта англоязычная статья о стране; совпадают название и географический масштаб."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D0%B8%D0%B2%D0%B8%D1%8F",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Прямо открыта русскоязычная статья о стране; совпадает объект, это не город/департамент."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q750",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Современные английские/официальные названия взяты из labels, aliases и official name; исторические названия и более широкие регионы не переносились."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/bolivia/",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Точный публичный URL открылся как HTML страницы «Боливия»; это действующая страница страны, не архив и не редирект на иной объект."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.gob.bo/",
+      "checkedAt": "2026-10-16T12:53:29.580Z",
+      "note": "Портал прямо открыт: государственные услуги, AGETIC и Ministerio de la Presidencia — Estado Plurinacional de Bolivia. Это официальный портал государства, не автоматическое тождество sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Сопоставлено государство Боливия, не отдельный департамент или город. Координаты не включены: GeoNames −17,−65; Wikidata P625 −17.0568696,−64.9912286; English Wikipedia −16.712,−64.666. Назначение и независимая сверка одной точки не установлены; значения не усреднялись. OSM relation 252645 указан в Wikidata, но relation/API не открылись: osm отложен. Gob.bo — официальный государственный портал, не автоматический sameAs страны."
+}

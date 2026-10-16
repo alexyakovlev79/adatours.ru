@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_laguna_verde",
+  "stableId": "destination_bolivia_laguna_verde",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/laguna-verde/",
+  "sourceFingerprint": "3d8de9ed76bcf79bac464af2338ddc2c24af5925af11d40993cc15904f3ebff7",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "salt_lake",
+  "external": {
+    "wikidataQid": "Q1062100",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)"
+    }
+  },
+  "location": {
+    "latitude": -22.795,
+    "longitude": -67.825,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Озеро у Ликанкабура в Потоси, не озера Verde в Beni/Comarapa и не страница неоднозначности.",
+      "selected": "Q1062100"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Озеро у Ликанкабура в Потоси, не озера Verde в Beni/Comarapa и не страница неоднозначности.",
+      "selected": "salt_lake"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Озеро у Ликанкабура в Потоси, не озера Verde в Beni/Comarapa и не страница неоднозначности.",
+      "selected": "Q1062100"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Озеро у Ликанкабура в Потоси, не озера Verde в Beni/Comarapa и не страница неоднозначности.",
+      "selected": "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)"
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "reason": "Выбрана опорная точка Wikipedia (-22.795,-67.825); P625 (-22.795,-67.835) отличается примерно на 1 км в том же озере. Не усреднялось; не береговая остановка.",
+      "selected": "-22.795, -67.825; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/laguna-verde/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Озеро у Ликанкабура в Потоси, не озера Verde в Beni/Comarapa и не страница неоднозначности."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/laguna-verde.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1062100",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Озеро у Ликанкабура в Потоси, не озера Verde в Beni/Comarapa и не страница неоднозначности."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Озеро у Ликанкабура в Потоси, не озера Verde в Beni/Comarapa и не страница неоднозначности."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Выбрана опорная точка Wikipedia (-22.795,-67.825); P625 (-22.795,-67.835) отличается примерно на 1 км в том же озере. Не усреднялось; не береговая остановка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1062100",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Выбрана опорная точка Wikipedia (-22.795,-67.825); P625 (-22.795,-67.835) отличается примерно на 1 км в том же озере. Не усреднялось; не береговая остановка."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Verde_(Bolivia)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": "Выбрана опорная точка Wikipedia (-22.795,-67.825); P625 (-22.795,-67.835) отличается примерно на 1 км в том же озере. Не усреднялось; не береговая остановка."
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_crystal_sound",
+  "stableId": "destination_antarctica_crystal_sound",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/crystal-sound/",
+  "sourceFingerprint": "41cc4431e2e2a356cdfe3c847e7fb281836b59cb728470d979289f62b6088e9c",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q2739707",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Crystal_Sound"
+    },
+    "geonamesId": "6631695"
+  },
+  "location": {
+    "latitude": -66.3833,
+    "longitude": -66.5,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2739707"
+  },
+  "alternateNames": [
+    "Crystal Sound"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/crystal-sound/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.bas.ac.uk/full-record.php?id=GB%2FNERC%2FBAS%2FPDC%2F02085",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Именованная морская акватория между Биско и берегом Земли Грейама; подтверждена BAS и точной карточкой Wikidata."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2739707",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Crystal Sound."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2739707",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2739707",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 6631695; P1566 соответствует именованному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2739707",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Выбран P625 Wikidata −66.3833, −66.5 как representative акватории. В немецкой Wikipedia встречается −66.466, −66.65; это иная опорная точка, значения не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2739707",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.bas.ac.uk/full-record.php?id=GB%2FNERC%2FBAS%2FPDC%2F02085",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географически в Антарктиде; не утверждает суверенитет государства."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Именованная морская акватория между Биско и берегом Земли Грейама; подтверждена BAS и точной карточкой Wikidata. Выбран P625 Wikidata −66.3833, −66.5 как representative акватории. В немецкой Wikipedia встречается −66.466, −66.65; это иная опорная точка, значения не усреднялись.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Crystal Sound",
+      "reason": "Именованная морская акватория между Биско и берегом Земли Грейама; подтверждена BAS и точной карточкой Wikidata."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q2739707",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Crystal_Sound",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6631695",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-66.3833, -66.5",
+      "reason": "Выбран P625 Wikidata −66.3833, −66.5 как representative акватории. В немецкой Wikipedia встречается −66.466, −66.65; это иная опорная точка, значения не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Crystal Sound",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Географический регион Антарктида, без признания территориальных претензий."
+    }
+  ]
+}

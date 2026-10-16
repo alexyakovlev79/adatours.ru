@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_laguna_kolorada",
+  "stableId": "destination_bolivia_laguna_kolorada",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/laguna-colorada/",
+  "sourceFingerprint": "883956bb7652dee27b7a595281691b14f8afdb51c9b326e18483b4496a2760e9",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "salt_lake",
+  "external": {
+    "wikidataQid": "Q1327873",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Laguna_Colorada"
+    }
+  },
+  "location": {
+    "latitude": -22.1986111111,
+    "longitude": -67.7811111111,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Laguna_Colorada"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Красная лагуна боливийского Альтиплано с фламинго; тот же объект Q1327873.",
+      "selected": "Q1327873"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Красная лагуна боливийского Альтиплано с фламинго; тот же объект Q1327873.",
+      "selected": "salt_lake"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Красная лагуна боливийского Альтиплано с фламинго; тот же объект Q1327873.",
+      "selected": "Q1327873"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Красная лагуна боливийского Альтиплано с фламинго; тот же объект Q1327873.",
+      "selected": "https://en.wikipedia.org/wiki/Laguna_Colorada"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Точка 22°11′55″S 67°46′52″W совпадает в Wikipedia и Wikidata; опорная точка озера, не вход.",
+      "selected": "-22.1986111111, -67.7811111111; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/laguna-colorada/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Красная лагуна боливийского Альтиплано с фламинго; тот же объект Q1327873."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/laguna-colorada.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1327873",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Красная лагуна боливийского Альтиплано с фламинго; тот же объект Q1327873."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Colorada",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Colorada",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Красная лагуна боливийского Альтиплано с фламинго; тот же объект Q1327873."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Colorada",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точка 22°11′55″S 67°46′52″W совпадает в Wikipedia и Wikidata; опорная точка озера, не вход."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1327873",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Точка 22°11′55″S 67°46′52″W совпадает в Wikipedia и Wikidata; опорная точка озера, не вход."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Laguna_Colorada",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": null
+}

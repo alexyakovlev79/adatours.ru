@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_pleneau_island",
+  "stableId": "destination_antarctica_pleneau_island",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/pleneau-island/",
+  "sourceFingerprint": "3b4829a77564e084dd3e2b38c77635afc0f8d7eb6dc80cfa2c2489b7b12768d5",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "island",
+  "external": {
+    "wikidataQid": "Q3593180"
+  },
+  "location": {
+    "latitude": -65.1,
+    "longitude": -64.06667,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=130200"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/pleneau-island/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «Остров Плено», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3593180",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Основной референт — отдельный остров Pléneau к северо-востоку от Hovgaard; SCAR подтверждает отделение узким проливом. Wikipedia EN в проверенном ответе перенаправляет к Hovgaard, поэтому не включена. Координаты P625 65°S 64°W и 65°6′S 64°6′W менее согласованы; выбрана точка SCAR 65°06′S 64°04′W."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=130200",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Основной референт — отдельный остров Pléneau к северо-востоку от Hovgaard; SCAR подтверждает отделение узким проливом. Wikipedia EN в проверенном ответе перенаправляет к Hovgaard, поэтому не включена. Координаты P625 65°S 64°W и 65°6′S 64°6′W менее согласованы; выбрана точка SCAR 65°06′S 64°04′W. Роль точки: representative; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=130200",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: island."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://adatours.ru/antarctica/place/pleneau-island/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Географическое нахождение в country_antarctica подтверждено описанием и внешним источником; это не утверждение суверенитета."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q3593180",
+      "reason": "Основной референт — отдельный остров Pléneau к северо-востоку от Hovgaard; SCAR подтверждает отделение узким проливом. Wikipedia EN в проверенном ответе перенаправляет к Hovgaard, поэтому не включена. Координаты P625 65°S 64°W и 65°6′S 64°6′W менее согласованы; выбрана точка SCAR 65°06′S 64°04′W."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3593180",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-65.1,-64.06667",
+      "reason": "Основной референт — отдельный остров Pléneau к северо-востоку от Hovgaard; SCAR подтверждает отделение узким проливом. Wikipedia EN в проверенном ответе перенаправляет к Hovgaard, поэтому не включена. Координаты P625 65°S 64°W и 65°6′S 64°6′W менее согласованы; выбрана точка SCAR 65°06′S 64°04′W."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "island",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Согласованная географическая иерархия по MD и справочнику."
+    }
+  ],
+  "reviewNote": null
+}

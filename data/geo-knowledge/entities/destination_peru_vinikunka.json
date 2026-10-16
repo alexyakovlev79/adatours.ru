@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_vinikunka",
+  "stableId": "destination_peru_vinikunka",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/vinicunca/",
+  "sourceFingerprint": "d48c521c07a3784ea832fe3d5d22f0ef33fe478563b837c18e62fc87de9a3a94",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "mountain",
+  "external": {
+    "wikidataQid": "Q28025526",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Vinicunca",
+      "es": "https://es.wikipedia.org/wiki/Vinicunca"
+    }
+  },
+  "alternateNames": [
+    "Vinicunca",
+    "Rainbow Mountain",
+    "Montaña de Siete Colores"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/vinicunca-la-hermosa-montana-de-los-siete-colores",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Гора Vinicunca/Rainbow Mountain с цветными слоями в Cusco, а не город. destinationType: city в MD ошибочен; GEO entityClass принят по содержанию и внешним источникам, MD не изменялся."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/vinicunca/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28025526",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/vinicunca-la-hermosa-montana-de-los-siete-colores",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Содержание описывает гору; city в MD не принимается как географический факт."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28025526",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28025526",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28025526",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P625 горного объекта, не парковки, тропы или деревни."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/vinicunca-la-hermosa-montana-de-los-siete-colores",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/vinicunca-la-hermosa-montana-de-los-siete-colores",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Гора Vinicunca/Rainbow Mountain с цветными слоями в Cusco, а не город. destinationType: city в MD ошибочен; GEO entityClass принят по содержанию и внешним источникам, MD не изменялся.",
+      "selected": "Виникунка"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q28025526"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Содержание описывает гору; city в MD не принимается как географический факт.",
+      "selected": "mountain"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Vinicunca; Rainbow Mountain; Montaña de Siete Colores"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://en.wikipedia.org/wiki/Vinicunca; https://es.wikipedia.org/wiki/Vinicunca"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "P625 горного объекта, не парковки, тропы или деревни.",
+      "selected": "-13.869534, -71.30296"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    },
+    {
+      "field": "candidate.entityClass.city",
+      "probability": 0,
+      "reason": "Локальная метка city противоречит тексту и внешнему описанию горы."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Гора Vinicunca/Rainbow Mountain с цветными слоями в Cusco, а не город. destinationType: city в MD ошибочен; GEO entityClass принят по содержанию и внешним источникам, MD не изменялся.",
+  "location": {
+    "latitude": -13.869534,
+    "longitude": -71.30296,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q28025526"
+  }
+}

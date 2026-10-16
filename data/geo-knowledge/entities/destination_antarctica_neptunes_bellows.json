@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_neptunes_bellows",
+  "stableId": "destination_antarctica_neptunes_bellows",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/neptunes-bellows/",
+  "sourceFingerprint": "5665f60bd7182c6c45bc10891f96dc32fc805f86ca2b792f59de2ac6201251b9",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "strait",
+  "external": {
+    "wikidataQid": "Q2815378",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Neptune%27s_Bellows"
+    },
+    "geonamesId": "6622165"
+  },
+  "location": {
+    "latitude": -62.99428,
+    "longitude": -60.56375,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110329"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_deception_island"
+    }
+  ],
+  "reviewNote": "Точка UK gazetteer между Fildes Point и Entrance Point: 62°59′39.4″S 60°33′49.5″W; округленная P625/EN Wikipedia (-63,-60.5667) не усреднялась. Это отдельный проход к Порт-Фостеру, не вся кальдера и не весь остров.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/neptunes-bellows/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Пролив Нептунс-Беллоус, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/neptunes-bellows.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob 3548be5c06bd8e7f82c1f26968aaa992ef8075f6; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110329",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точка UK gazetteer между Fildes Point и Entrance Point: 62°59′39.4″S 60°33′49.5″W; округленная P625/EN Wikipedia (-63,-60.5667) не усреднялась. Это отдельный проход к Порт-Фостеру, не вся кальдера и не весь остров."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110329",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2815378",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q2815378 соответствует Пролив Нептунс-Беллоус; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Neptune%27s_Bellows",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110329",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точка UK gazetteer между Fildes Point и Entrance Point: 62°59′39.4″S 60°33′49.5″W; округленная P625/EN Wikipedia (-63,-60.5667) не усреднялась. Это отдельный проход к Порт-Фостеру, не вся кальдера и не весь остров."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.deceptionisland.aq/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: официальное описание соответствующего места. Точка UK gazetteer между Fildes Point и Entrance Point: 62°59′39.4″S 60°33′49.5″W; округленная P625/EN Wikipedia (-63,-60.5667) не усреднялась. Это отдельный проход к Порт-Фостеру, не вся кальдера и не весь остров."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=110329",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2815378",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "P1566 точной карточки Q2815378 = 6622165. Связь проверена через Wikidata; координаты GeoNames не импортировались автоматически."
+    },
+    {
+      "field": "relationships.destination_antarctica_deception_island",
+      "sourceUrl": "https://www.deceptionisland.aq/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Подтверждено положение объекта в выбранном месте: Точка UK gazetteer между Fildes Point и Entrance Point: 62°59′39.4″S 60°33′49.5″W; округленная P625/EN Wikipedia (-63,-60.5667) не усреднялась. Это отдельный проход к Порт-Фостеру, не вся кальдера и не весь остров."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пролив Нептунс-Беллоус",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Точка UK gazetteer между Fildes Point и Entrance Point: 62°59′39.4″S 60°33′49.5″W; округленная P625/EN Wikipedia (-63,-60.5667) не усреднялась. Это отдельный проход к Порт-Фостеру, не вся кальдера и не весь остров."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "strait",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2815378",
+      "reason": "Точная именованная сущность; Совпадают география и класс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Neptune%27s_Bellows",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-62.99428, -60.56375; feature_point",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Точка UK gazetteer между Fildes Point и Entrance Point: 62°59′39.4″S 60°33′49.5″W; округленная P625/EN Wikipedia (-63,-60.5667) не усреднялась. Это отдельный проход к Порт-Фостеру, не вся кальдера и не весь остров."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6622165",
+      "reason": "P1566 точного объекта с совпадающим контекстом; независимая проверка самой страницы GeoNames не заявляется."
+    },
+    {
+      "field": "relationships.destination_antarctica_deception_island",
+      "probability": 98,
+      "selected": "destination_antarctica_deception_island",
+      "reason": "Географическая связь следует из источника и совпадающих собственных MD."
+    }
+  ]
+}

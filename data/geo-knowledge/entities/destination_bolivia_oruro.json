@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_oruro",
+  "stableId": "destination_bolivia_oruro",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/oruro/",
+  "sourceFingerprint": "471f253abb39f1ca4e9533024ba684081a11e1114bba2751cc918bf9640d91eb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q35246",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Oruro"
+    },
+    "geonamesId": "3909234"
+  },
+  "location": {
+    "latitude": -17.966666666667,
+    "longitude": -67.116666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q35246"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/oruro/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP-проверка: 200; canonical совпадает; H1 и stable ID соответствуют approved MD и source-index. Город Оруро в Боливии, основанный в 1606 году; контекст карнавала в MD совпадает со справочником города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q35246",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Проверены живой Special:EntityData JSON, имя, P31 и P17. Город Оруро в Боливии, основанный в 1606 году; контекст карнавала в MD совпадает со справочником города."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q35246",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Точная enwiki sitelink этого QID: https://en.wikipedia.org/wiki/Oruro"
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q35246",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P31 и описание соответствуют классу city."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q35246",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P17: Q750 Bolivia; совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q35246",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Q35246 соответствует городу, не Oruro Department и не Oruro carnival Q1500828. Объект нематериального наследия UNESCO — карнавал, поэтому его идентификатор городу не присваивается. P625 — representative; GeoNames -17.97153,-67.09320 восточнее примерно на 2.6 км, без усреднения."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3909234/oruro.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP 200; имя, страна и feature class проверены. Город Оруро в Боливии, основанный в 1606 году; контекст карнавала в MD совпадает со справочником города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3909234/oruro.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Независимая сверка географического контекста и опубликованной точки; расхождение и выбранная роль отражены в reviewNote. Q35246 соответствует городу, не Oruro Department и не Oruro carnival Q1500828. Объект нематериального наследия UNESCO — карнавал, поэтому его идентификатор городу не присваивается. P625 — representative; GeoNames -17.97153,-67.09320 восточнее примерно на 2.6 км, без усреднения."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Oruro",
+      "reason": "Город Оруро в Боливии, основанный в 1606 году; контекст карнавала в MD совпадает со справочником города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q35246",
+      "reason": "Город Оруро в Боливии, основанный в 1606 году; контекст карнавала в MD совпадает со справочником города."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Oruro",
+      "reason": "Точная статья enwiki из проверенной карточки Wikidata выбранного объекта."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Класс объекта подтвержден MD и P31 выбранного QID."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Страна совпадает в текущем MD, entry и P17."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-17.966666666667, -67.116666666667",
+      "reason": "Q35246 соответствует городу, не Oruro Department и не Oruro carnival Q1500828. Объект нематериального наследия UNESCO — карнавал, поэтому его идентификатор городу не присваивается. P625 — representative; GeoNames -17.97153,-67.09320 восточнее примерно на 2.6 км, без усреднения."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3909234",
+      "reason": "Карточка GeoNames соответствует имени, стране и географическому типу; идентификатор не выбирался только по близости точки."
+    }
+  ],
+  "reviewNote": "Q35246 соответствует городу, не Oruro Department и не Oruro carnival Q1500828. Объект нематериального наследия UNESCO — карнавал, поэтому его идентификатор городу не присваивается. P625 — representative; GeoNames -17.97153,-67.09320 восточнее примерно на 2.6 км, без усреднения."
+}

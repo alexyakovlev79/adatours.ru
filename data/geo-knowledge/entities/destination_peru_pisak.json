@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_pisak",
+  "stableId": "destination_peru_pisak",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/pisac/",
+  "sourceFingerprint": "e835667fcb44e31bc60a5e910d6e5612015f11e754b47c9b8d1124cd4a2c8373",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "settlement",
+  "external": {
+    "wikidataQid": "Q950398",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/P%C3%ADsac",
+      "es": "https://es.wikipedia.org/wiki/P%C3%ADsac_(Per%C3%BA)"
+    },
+    "geonamesId": "3932166"
+  },
+  "alternateNames": [
+    "Písac",
+    "Pisac",
+    "Pisaq"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_peru_svyaschennaya_dolina_inkov"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Основной референт — поселение Писак с рынком; археологический парк на склонах — контекст посещения. Q950398 соответствует town, не округу Q3313050 и не отдельному Intihuatana."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/pisac/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q950398",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Тип выбран по фактическому объекту и контексту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q950398",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q950398",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q950398",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q950398",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P625 в выбранном поселении; не центр одноимённой административной территории."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/attractions/sacred-valley",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    },
+    {
+      "field": "relationships.destination_peru_svyaschennaya_dolina_inkov",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/que-lugares-conforman-el-valle-sagrado-de-los-inkas",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Поселение входит в Священную долину; stable ID закреплён в очереди."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "reason": "Основной референт — поселение Писак с рынком; археологический парк на склонах — контекст посещения. Q950398 соответствует town, не округу Q3313050 и не отдельному Intihuatana.",
+      "selected": "Писак"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q950398"
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "reason": "Тип выбран по фактическому объекту и контексту страницы.",
+      "selected": "settlement"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 95,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Písac; Pisac; Pisaq"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 95,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://en.wikipedia.org/wiki/P%C3%ADsac; https://es.wikipedia.org/wiki/P%C3%ADsac_(Per%C3%BA)"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "reason": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены.",
+      "selected": "3932166"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "P625 в выбранном поселении; не центр одноимённой административной территории.",
+      "selected": "-13.4213, -71.8505"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    },
+    {
+      "field": "relationships.destination_peru_svyaschennaya_dolina_inkov",
+      "probability": 97,
+      "reason": "Поселение входит в Священную долину; stable ID закреплён в очереди.",
+      "selected": "destination_peru_svyaschennaya_dolina_inkov"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Основной референт — поселение Писак с рынком; археологический парк на склонах — контекст посещения. Q950398 соответствует town, не округу Q3313050 и не отдельному Intihuatana.",
+  "location": {
+    "latitude": -13.4213,
+    "longitude": -71.8505,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q950398"
+  }
+}

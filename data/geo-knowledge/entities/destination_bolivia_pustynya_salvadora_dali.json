@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_pustynya_salvadora_dali",
+  "stableId": "destination_bolivia_pustynya_salvadora_dali",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/salvador-dali-desert/",
+  "sourceFingerprint": "6a1bbd50d8b5a98b34bcc8d9c8e46b9e49f57cffbb794f9447baf69918deef4e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "desert",
+  "external": {
+    "wikidataQid": "Q1382079",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD_Desert"
+    }
+  },
+  "location": {
+    "latitude": -22.614984,
+    "longitude": -67.6637768889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1382079"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Пустыня/долина Сальвадора Дали между южными лагунами Боливии; не отдельный скальный объект Árbol de Piedra в Силоли.",
+      "selected": "Q1382079"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Пустыня/долина Сальвадора Дали между южными лагунами Боливии; не отдельный скальный объект Árbol de Piedra в Силоли.",
+      "selected": "desert"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Пустыня/долина Сальвадора Дали между южными лагунами Боливии; не отдельный скальный объект Árbol de Piedra в Силоли.",
+      "selected": "Q1382079"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Пустыня/долина Сальвадора Дали между южными лагунами Боливии; не отдельный скальный объект Árbol de Piedra в Силоли.",
+      "selected": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD_Desert"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Точка P625 22°36′53.9424″S 67°39′49.5968″W; Wikipedia округляет ее до (-22.615,-67.66361). Выбрано P625 без усреднения.",
+      "selected": "-22.614984, -67.6637768889; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/salvador-dali-desert/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Пустыня/долина Сальвадора Дали между южными лагунами Боливии; не отдельный скальный объект Árbol de Piedra в Силоли."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/salvador-dali-desert.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1382079",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Пустыня/долина Сальвадора Дали между южными лагунами Боливии; не отдельный скальный объект Árbol de Piedra в Силоли."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD_Desert",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD_Desert",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Пустыня/долина Сальвадора Дали между южными лагунами Боливии; не отдельный скальный объект Árbol de Piedra в Силоли."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1382079",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точка P625 22°36′53.9424″S 67°39′49.5968″W; Wikipedia округляет ее до (-22.615,-67.66361). Выбрано P625 без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD_Desert",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Точка P625 22°36′53.9424″S 67°39′49.5968″W; Wikipedia округляет ее до (-22.615,-67.66361). Выбрано P625 без усреднения."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD_Desert",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": null
+}

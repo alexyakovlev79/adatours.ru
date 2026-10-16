@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_gejzery_sol_de_manyana",
+  "stableId": "destination_bolivia_gejzery_sol_de_manyana",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/sol-de-manana-geysers/",
+  "sourceFingerprint": "7cb6db4ece65daefc58947cea754a102a3747fd9ffaa6d9a8695549d7d4fbd53",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "geothermal_field",
+  "external": {
+    "wikidataQid": "Q2031701",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana"
+    }
+  },
+  "location": {
+    "latitude": -22.4305388889,
+    "longitude": -67.7574805556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2031701"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Именованное геотермальное поле Соль-де-Маньяна на Альтиплано, а не отдельный гейзер или соседняя электростанция.",
+      "selected": "Q2031701"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Именованное геотермальное поле Соль-де-Маньяна на Альтиплано, а не отдельный гейзер или соседняя электростанция.",
+      "selected": "geothermal_field"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Именованное геотермальное поле Соль-де-Маньяна на Альтиплано, а не отдельный гейзер или соседняя электростанция.",
+      "selected": "Q2031701"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Именованное геотермальное поле Соль-де-Маньяна на Альтиплано, а не отдельный гейзер или соседняя электростанция.",
+      "selected": "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana"
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "reason": "Точка P625 22°25′49.940″S 67°45′26.930″W для поля. Wikipedia использует (-22.42639,-67.75972), примерно 0.5 км севернее. Выбрана P625, не усреднена, не объявлена входом.",
+      "selected": "-22.4305388889, -67.7574805556; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/sol-de-manana-geysers/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Именованное геотермальное поле Соль-де-Маньяна на Альтиплано, а не отдельный гейзер или соседняя электростанция."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/sol-de-manana-geysers.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2031701",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Именованное геотермальное поле Соль-де-Маньяна на Альтиплано, а не отдельный гейзер или соседняя электростанция."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Именованное геотермальное поле Соль-де-Маньяна на Альтиплано, а не отдельный гейзер или соседняя электростанция."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2031701",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точка P625 22°25′49.940″S 67°45′26.930″W для поля. Wikipedia использует (-22.42639,-67.75972), примерно 0.5 км севернее. Выбрана P625, не усреднена, не объявлена входом."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Точка P625 22°25′49.940″S 67°45′26.930″W для поля. Wikipedia использует (-22.42639,-67.75972), примерно 0.5 км севернее. Выбрана P625, не усреднена, не объявлена входом."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sol_de_Ma%C3%B1ana",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": "Точка P625 22°25′49.940″S 67°45′26.930″W для поля. Wikipedia использует (-22.42639,-67.75972), примерно 0.5 км севернее. Выбрана P625, не усреднена, не объявлена входом."
+}

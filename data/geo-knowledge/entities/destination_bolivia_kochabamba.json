@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_kochabamba",
+  "stableId": "destination_bolivia_kochabamba",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/cochabamba/",
+  "sourceFingerprint": "37004734bbef7f6fde8f00d22f836889ddee40d8b2e9fdd13f219cccedfa27fb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q183124",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cochabamba"
+    },
+    "geonamesId": "3919968"
+  },
+  "location": {
+    "latitude": -17.3935419,
+    "longitude": -66.1570139,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q183124"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/cochabamba/",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP-проверка: 200; canonical совпадает; H1 и stable ID соответствуют approved MD и source-index. Город с La Cancha и Cristo de la Concordia в MD; не департамент Кочабамба и не одноименный муниципалитет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q183124",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Проверены живой Special:EntityData JSON, имя, P31 и P17. Город с La Cancha и Cristo de la Concordia в MD; не департамент Кочабамба и не одноименный муниципалитет."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q183124",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Точная enwiki sitelink этого QID: https://en.wikipedia.org/wiki/Cochabamba"
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q183124",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P31 и описание соответствуют классу city."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q183124",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "P17: Q750 Bolivia; совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q183124",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая проверка выявила ошибочное соответствие P1566 в Wikidata: 11494539 — A.ADM3, административная единица. Выбран GeoNames 3919968 — P.PPLA, город. Координата Wikidata P625 принята как representative-точка города; GeoNames -17.38195,-66.15995 севернее примерно на 1.3 км. Точки не усреднялись."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3919968/cochabamba.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Прямая HTTP 200; имя, страна и feature class проверены. 3919968 — город P.PPLA, тогда как 11494539 — муниципальная ADM3, поэтому отвергнут."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3919968/cochabamba.html",
+      "checkedAt": "2026-10-16T21:35:03.422Z",
+      "note": "Независимая сверка географического контекста и опубликованной точки; расхождение и выбранная роль отражены в reviewNote. Прямая проверка выявила ошибочное соответствие P1566 в Wikidata: 11494539 — A.ADM3, административная единица. Выбран GeoNames 3919968 — P.PPLA, город. Координата Wikidata P625 принята как representative-точка города; GeoNames -17.38195,-66.15995 севернее примерно на 1.3 км. Точки не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cochabamba",
+      "reason": "Город с La Cancha и Cristo de la Concordia в MD; не департамент Кочабамба и не одноименный муниципалитет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q183124",
+      "reason": "Город с La Cancha и Cristo de la Concordia в MD; не департамент Кочабамба и не одноименный муниципалитет."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Cochabamba",
+      "reason": "Точная статья enwiki из проверенной карточки Wikidata выбранного объекта."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Класс объекта подтвержден MD и P31 выбранного QID."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Страна совпадает в текущем MD, entry и P17."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-17.3935419, -66.1570139",
+      "reason": "Прямая проверка выявила ошибочное соответствие P1566 в Wikidata: 11494539 — A.ADM3, административная единица. Выбран GeoNames 3919968 — P.PPLA, город. Координата Wikidata P625 принята как representative-точка города; GeoNames -17.38195,-66.15995 севернее примерно на 1.3 км. Точки не усреднялись."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3919968",
+      "reason": "Карточка GeoNames соответствует имени, стране и географическому типу; идентификатор не выбирался только по близости точки."
+    }
+  ],
+  "reviewNote": "Прямая проверка выявила ошибочное соответствие P1566 в Wikidata: 11494539 — A.ADM3, административная единица. Выбран GeoNames 3919968 — P.PPLA, город. Координата Wikidata P625 принята как representative-точка города; GeoNames -17.38195,-66.15995 севернее примерно на 1.3 км. Точки не усреднялись."
+}

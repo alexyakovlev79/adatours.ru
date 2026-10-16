@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_hannah_point",
+  "stableId": "destination_antarctica_hannah_point",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/hannah-point/",
+  "sourceFingerprint": "d0029fed4b03b70fa38480f7e126fae015e78154cd96364b6eb6a412aa4a5cf3",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "headland",
+  "external": {
+    "wikidataQid": "Q707066",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Hannah_Point"
+    }
+  },
+  "location": {
+    "latitude": -62.65444,
+    "longitude": -60.61342,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109193"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_livingston_island"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/hannah-point/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «Мыс Ханна», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q707066",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Мыс южного берега Livingston Island между Walker Bay и South Bay. Выбрана точка британской записи SCAR; округленная координата рекомендаций ATS не усреднялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109193",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Мыс южного берега Livingston Island между Walker Bay и South Bay. Выбрана точка британской записи SCAR; округленная координата рекомендаций ATS не усреднялась. Роль точки: feature_point; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109193",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: headland."
+    },
+    {
+      "field": "relationships.destination_antarctica_livingston_island",
+      "sourceUrl": "https://adatours.ru/antarctica/place/hannah-point/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Географическое нахождение в destination_antarctica_livingston_island подтверждено описанием и внешним источником; это не утверждение суверенитета."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hannah_Point",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверена точная статья о соответствующем объекте, имя и география согласованы с Wikidata и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q707066",
+      "reason": "Мыс южного берега Livingston Island между Walker Bay и South Bay. Выбрана точка британской записи SCAR; округленная координата рекомендаций ATS не усреднялась."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q707066",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-62.65444,-60.61342",
+      "reason": "Мыс южного берега Livingston Island между Walker Bay и South Bay. Выбрана точка британской записи SCAR; округленная координата рекомендаций ATS не усреднялась."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "headland",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.destination_antarctica_livingston_island",
+      "probability": 99,
+      "selected": "destination_antarctica_livingston_island",
+      "reason": "Согласованная географическая иерархия по MD и справочнику."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Hannah_Point",
+      "reason": "Точная статья соответствует выбранному референту."
+    }
+  ],
+  "reviewNote": null
+}

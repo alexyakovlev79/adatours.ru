@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_larco_museum",
+  "stableId": "destination_peru_larco_museum",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/larco-museum/",
+  "sourceFingerprint": "98220d17141cba113442d2457cb31be63dfe4acadfa00a2caa323c6c86b889a1",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1954240",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Larco_Museum"
+    },
+    "officialUrl": "https://www.museolarco.org/en/",
+    "osm": {
+      "type": "node",
+      "id": 1932068201
+    }
+  },
+  "location": {
+    "latitude": -12.072497222222221,
+    "longitude": -77.07086111111111,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1954240"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_peru_lima"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Museo Arqueológico Rafael Larco Herrera в Pueblo Libre, Лима. QID музея, не коллекционера и не Museo Nacional de Arqueología. GN точного музея не найден; OSM выбран по прямому P11693 Wikidata, не по соседнему музею.",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1954240",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Museo Arqueológico Rafael Larco Herrera в Pueblo Libre, Лима. QID музея, не коллекционера и не Museo Nacional de Arqueología. GN точного музея не найден; OSM выбран по прямому P11693 Wikidata, не по соседнему музею."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1954240",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Larco_Museum",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.museolarco.org/en/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1954240",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Прямое внешнее соответствие OSM в Wikidata; тип и ID сохранены. Прямое открытие OSM ограничено, поэтому не используется для извлечения координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1954240",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Museo Arqueológico Rafael Larco Herrera в Pueblo Libre, Лима. QID музея, не коллекционера и не Museo Nacional de Arqueología. GN точного музея не найден; OSM выбран по прямому P11693 Wikidata, не по соседнему музею."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1954240",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "sourceUrl": "https://www.museolarco.org/en/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Расположен в городе Лима; stable ID города проверен в source-index."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/larco-museum/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Публичная страница HTTP 200, точный canonical совпадает. ID, approved, страна, тип и смысл проверены по текущим MD и source-index entry на фиксированном SHA main 829696675d32833cf18ebb696ee714747a28f04b."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Музей Ларко",
+      "reason": "Museo Arqueológico Rafael Larco Herrera в Pueblo Libre, Лима. QID музея, не коллекционера и не Museo Nacional de Arqueología. GN точного музея не найден; OSM выбран по прямому P11693 Wikidata, не по соседнему музею."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1954240",
+      "reason": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "Larco_Museum",
+      "reason": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.museolarco.org/en/",
+      "reason": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/1932068201",
+      "reason": "Прямое внешнее соответствие OSM в Wikidata; тип и ID сохранены. Прямое открытие OSM ограничено, поэтому не используется для извлечения координат."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-12.072497222222221,-77.07086111111111",
+      "reason": "Museo Arqueológico Rafael Larco Herrera в Pueblo Libre, Лима. QID музея, не коллекционера и не Museo Nacional de Arqueología. GN точного музея не найден; OSM выбран по прямому P11693 Wikidata, не по соседнему музею."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "probability": 99,
+      "selected": "destination_peru_lima",
+      "reason": "Расположен в городе Лима; stable ID города проверен в source-index."
+    }
+  ]
+}

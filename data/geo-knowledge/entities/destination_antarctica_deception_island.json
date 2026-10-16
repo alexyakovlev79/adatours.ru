@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_deception_island",
+  "stableId": "destination_antarctica_deception_island",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/deception-island/",
+  "sourceFingerprint": "f42cd06f38f79441aeee41568b118f13bf22efc3ab5007e7ac58e300c644f065",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "volcanic_island",
+  "external": {
+    "wikidataQid": "Q1045820",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Deception_Island"
+    },
+    "geonamesId": "6631955",
+    "osm": {
+      "type": "relation",
+      "id": 2986747
+    },
+    "officialUrl": "https://www.deceptionisland.aq/"
+  },
+  "location": {
+    "latitude": -62.95,
+    "longitude": -60.633,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=108460"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "reviewNote": "Выбрана опорная точка UK gazetteer, подтвержденная сайтом Deception Island Management Group (62°57′S 60°38′W) до округления. Иные P625 и точка EN Wikipedia не усреднялись. Точка представляет остров с затопленной кальдерой, не причал и не вершину.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/deception-island/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Остров Десепшен, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/deception-island.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob eead0378c903cd5fcf797465a672335b27605fee; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.deceptionisland.aq/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана опорная точка UK gazetteer, подтвержденная сайтом Deception Island Management Group (62°57′S 60°38′W) до округления. Иные P625 и точка EN Wikipedia не усреднялись. Точка представляет остров с затопленной кальдерой, не причал и не вершину."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=108460",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1045820",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q1045820 соответствует Остров Десепшен; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Deception_Island",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=108460",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана опорная точка UK gazetteer, подтвержденная сайтом Deception Island Management Group (62°57′S 60°38′W) до округления. Иные P625 и точка EN Wikipedia не усреднялись. Точка представляет остров с затопленной кальдерой, не причал и не вершину."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.deceptionisland.aq/introduction.php",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: официальное описание соответствующего места. Выбрана опорная точка UK gazetteer, подтвержденная сайтом Deception Island Management Group (62°57′S 60°38′W) до округления. Иные P625 и точка EN Wikipedia не усреднялись. Точка представляет остров с затопленной кальдерой, не причал и не вершину."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://www.deceptionisland.aq/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1045820",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "P1566 точной карточки Q1045820 = 6631955. Связь проверена через Wikidata; координаты GeoNames не импортировались автоматически."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/relation/2986747.json",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "API 200: name, тип и wikidata=Q1045820 совпадают. Русский тег названия не копировался; соответствие определено именем EN, QID и типом island."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.deceptionisland.aq/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Сайт управляющей организации о самом объекте; officialUrl не трактуется автоматически как sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Десепшен",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Выбрана опорная точка UK gazetteer, подтвержденная сайтом Deception Island Management Group (62°57′S 60°38′W) до округления. Иные P625 и точка EN Wikipedia не усреднялись. Точка представляет остров с затопленной кальдерой, не причал и не вершину."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "volcanic_island",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1045820",
+      "reason": "Точная именованная сущность; Совпадают география и класс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Deception_Island",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-62.95, -60.633; representative",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Выбрана опорная точка UK gazetteer, подтвержденная сайтом Deception Island Management Group (62°57′S 60°38′W) до округления. Иные P625 и точка EN Wikipedia не усреднялись. Точка представляет остров с затопленной кальдерой, не причал и не вершину."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6631955",
+      "reason": "P1566 точного объекта с совпадающим контекстом; независимая проверка самой страницы GeoNames не заявляется."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "relation/2986747",
+      "reason": "Прямая API-карточка и точный Wikidata cross-reference совпали."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.deceptionisland.aq/",
+      "reason": "Точная официальная страница оператора/управляющей группы выбранного места."
+    }
+  ]
+}

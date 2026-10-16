@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_auanakancha",
+  "stableId": "destination_peru_auanakancha",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/awanakancha/",
+  "sourceFingerprint": "ec17d8b7e4dfa9d39a45ab92e97288f9b9bf1c2f37df375d72c2a52a938a9318",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Museum",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4333101714
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/awanakancha.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD и PROMPERU совпадают по выставочному комплексу верблюдовых и традиционного ткачества на дороге Куско–Писак. OSM Museo Viviente del Ande указывает operator=Awana Kancha, tourism=museum, сайт awanakancha.com; точка совпадает с комплексом на 23 км."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/awanakancha/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/attractions/awanacancha",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD и PROMPERU совпадают по выставочному комплексу верблюдовых и традиционного ткачества на дороге Куско–Писак. OSM Museo Viviente del Ande указывает operator=Awana Kancha, tourism=museum, сайт awanakancha.com; точка совпадает с комплексом на 23 км."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/attractions/awanacancha",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD и PROMPERU совпадают по выставочному комплексу верблюдовых и традиционного ткачества на дороге Куско–Писак. OSM Museo Viviente del Ande указывает operator=Awana Kancha, tourism=museum, сайт awanakancha.com; точка совпадает с комплексом на 23 км."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/attractions/awanacancha",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/4333101714",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Прямое OSM API: name=Museo Viviente del Ande; operator=Awana Kancha; tourism=museum; website=awanakancha.com/es. Совпадает с живым музеем из MD и PROMPERU."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/4333101714",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Прямое OSM API node 4333101714: lat=-13.4662291, lon=-71.8906038; точка живого музея оператора Awana Kancha."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Awana Kancha / Museo Viviente del Ande",
+      "reason": "MD и PROMPERU совпадают по выставочному комплексу верблюдовых и традиционного ткачества на дороге Куско–Писак. OSM Museo Viviente del Ande указывает operator=Awana Kancha, tourism=museum, сайт awanakancha.com; точка совпадает с комплексом на 23 км."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "Museum",
+      "reason": "MD и PROMPERU совпадают по выставочному комплексу верблюдовых и традиционного ткачества на дороге Куско–Писак. OSM Museo Viviente del Ande указывает operator=Awana Kancha, tourism=museum, сайт awanakancha.com; точка совпадает с комплексом на 23 км."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "node/4333101714",
+      "reason": "Проверены тип, имя и перекрёстный идентификатор/оператор непосредственно в OSM API."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "-13.4662291,-71.8906038",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью feature_point."
+    }
+  ],
+  "reviewNote": "Основной комплекс Awana Kancha / Museo Viviente del Ande — OSM node 4333101714. OSM way 791207721 в 1,3 км севернее имеет shop=craft, building=yes: не выбран вместо музея. QID/GeoNames не установлены. Сайты awanakancha.com/.pe недоступны для проверки, поэтому officialUrl не добавлен.",
+  "location": {
+    "latitude": -13.4662291,
+    "longitude": -71.8906038,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/4333101714"
+  }
+}

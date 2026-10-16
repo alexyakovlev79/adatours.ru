@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_karakol",
+  "stableId": "destination_belize_karakol",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/caracol/",
+  "sourceFingerprint": "4680b5d16e9cea862770564271e39f5f83b0224d7fdde29f41c68b7641d5a567",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q1035336",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Caracol"
+    },
+    "geonamesId": "3582462",
+    "officialUrl": "https://nichbelize.org/ia-sites/caracol/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/caracol.md",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Археологический комплекс майя Caracol в западном Белизе, Chiquibul Forest Reserve, с комплексом Caana. Не одноименные города, компании или сооружения других памятников."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://nichbelize.org/ia-sites/caracol/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Археологический комплекс майя Caracol в западном Белизе, Chiquibul Forest Reserve, с комплексом Caana. Не одноименные города, компании или сооружения других памятников."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/belize/place/caracol/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прямой GET, HTTP 200; H1=Каракол; rel=canonical соответствует URL; stable ID найден в HTML."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://nichbelize.org/ia-sites/caracol/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают страна Белиз и географический контекст объекта; countryId=country_belize в текущем MD и entry."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1035336",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают имя, страна Белиз и тип/смысл объекта; P17=Q242. Археологический комплекс майя Caracol в западном Белизе, Chiquibul Forest Reserve, с комплексом Caana. Не одноименные города, компании или сооружения других памятников."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1035336",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Английский sitelink относится к выбранному референту; название/география проверены по статье и первоисточнику."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1035336",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "P1566=3582462; независимо прочитана запись Caracol в текущем BZ.zip GeoNames, country=BZ, класс S/ANS."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Запись 3582462: Caracol, 16.76324, -89.11778, страна BZ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3582462/caracol.html",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Точка записи GeoNames 3582462 (S/ANS) в WGS84, прочитана из текущего BZ.zip: 16.76324, -89.11778. Роль: feature_point."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прочитан исходный файл BZ.txt, точная строка 3582462. Координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1035336",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Сверка с P625: 16.763927777778, -89.117591666667. Точки совпадают или близки для выбранного объекта. Роль не означает единственный географический центр."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://nichbelize.org/ia-sites/caracol/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Точная страница объекта на официальном сайте управляющего National Institute of Culture and History; не общий туристический портал и не сайт туркомпании."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Археологический комплекс майя Caracol в западном Белизе, Chiquibul Forest Reserve, с комплексом Caana. Не одноименные города, компании или сооружения других памятников.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Каракол",
+      "reason": "Археологический комплекс майя Caracol в западном Белизе, Chiquibul Forest Reserve, с комплексом Caana. Не одноименные города, компании или сооружения других памятников."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна подтверждена MD, source-index и внешней карточкой/первоисточником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1035336",
+      "reason": "Археологический комплекс майя Caracol в западном Белизе, Chiquibul Forest Reserve, с комплексом Caana. Не одноименные города, компании или сооружения других памятников."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Caracol",
+      "reason": "Статья выбранного геообъекта; для составного редакционного места используется основной референт."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3582462",
+      "reason": "Совпадают точное имя, страна, тип и P1566 выбранной записи."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "16.76324, -89.11778",
+      "reason": "Выбрана одна именованная точка GeoNames с установленной ролью; проверена по P625 и географическому контексту."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://nichbelize.org/ia-sites/caracol/",
+      "reason": "Официальная карточка выбранного основного референта у управляющего органа."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/belize/place/caracol/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; конечный URL и rel=canonical совпадают с canonicalPath; H1 и stable ID подтверждены в HTML.",
+      "Проверены точные content MD и source-index entry из main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065."
+    ]
+  },
+  "location": {
+    "latitude": 16.76324,
+    "longitude": -89.11778,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.geonames.org/3582462/caracol.html"
+  }
+}

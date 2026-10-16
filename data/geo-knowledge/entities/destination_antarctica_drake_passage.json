@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_drake_passage",
+  "stableId": "destination_antarctica_drake_passage",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/drake-passage/",
+  "sourceFingerprint": "ff84c1c77685b33cc8c4796c7294db0b2d09f911e91f44fcd37ecb14dd28428e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "strait",
+  "external": {
+    "wikidataQid": "Q143650",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Drake_Passage"
+    }
+  },
+  "location": {
+    "latitude": -58.58027778,
+    "longitude": -62.90944444,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q143650"
+  },
+  "relationships": [
+    {
+      "type": "relatedPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/drake-passage/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «Пролив Дрейка», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q143650",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Океанский пролив между Южной Америкой и Антарктикой. Q12821682 перенаправляется на Q143650. Точка P625 — представительная точка акватории, не порт/высадка и не государственная принадлежность."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q143650",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Океанский пролив между Южной Америкой и Антарктикой. Q12821682 перенаправляется на Q143650. Точка P625 — представительная точка акватории, не порт/высадка и не государственная принадлежность. Роль точки: representative; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q143650",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: strait."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://adatours.ru/antarctica/place/drake-passage/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Связь с антарктическим направлением только тематико-географическая; пролив не объявляется содержащимся в стране/континенте."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Drake_Passage",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверена точная статья о соответствующем объекте, имя и география согласованы с Wikidata и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q143650",
+      "reason": "Океанский пролив между Южной Америкой и Антарктикой. Q12821682 перенаправляется на Q143650. Точка P625 — представительная точка акватории, не порт/высадка и не государственная принадлежность."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q143650",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-58.58027777777778,-62.909444444444446",
+      "reason": "Океанский пролив между Южной Америкой и Антарктикой. Q12821682 перенаправляется на Q143650. Точка P625 — представительная точка акватории, не порт/высадка и не государственная принадлежность."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "strait",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Связь направления без ложного географического вхождения."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Drake_Passage",
+      "reason": "Точная статья соответствует выбранному референту."
+    }
+  ],
+  "reviewNote": null
+}

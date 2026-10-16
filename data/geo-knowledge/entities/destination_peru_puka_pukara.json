@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_puka_pukara",
+  "stableId": "destination_peru_puka_pukara",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/puka-pukara/",
+  "sourceFingerprint": "89494ee690815039edbb6efbfc6b53462354d5bad901dc19c05b6c541c0ee090",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Puka Pukara",
+    "Puca Pucara"
+  ],
+  "external": {
+    "wikidataQid": "Q2390374",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puka_Pukara"
+    }
+  },
+  "location": {
+    "latitude": -13.483361,
+    "longitude": -71.961807,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2390374"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/puka-pukara/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Пукапукара — инкский археологический комплекс, Красная крепость возле Куско. Совпадают тип, география, имя и сочетание с Тамбомачаем в программе."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://cosituccusco.pe/destinos/3/detalle/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Пукапукара — инкский археологический комплекс, Красная крепость возле Куско. Совпадают тип, география, имя и сочетание с Тамбомачаем в программе."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2390374",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Пукапукара — инкский археологический комплекс, Красная крепость возле Куско. Совпадают тип, география, имя и сочетание с Тамбомачаем в программе."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puka_Pukara",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2390374",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "P625 Q2390374 задаёт точку выбранного археологического памятника в соответствующем районе Перу. Роль representative; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2390374",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puka_Pukara",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "destination_peru_puka_pukara",
+      "reason": "Пукапукара — инкский археологический комплекс, Красная крепость возле Куско. Совпадают тип, география, имя и сочетание с Тамбомачаем в программе."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2390374",
+      "reason": "Пукапукара — инкский археологический комплекс, Красная крепость возле Куско. Совпадают тип, география, имя и сочетание с Тамбомачаем в программе."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Puka_Pukara\"}",
+      "reason": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "-13.483361,-71.961807",
+      "reason": "P625 Q2390374 задаёт точку выбранного археологического памятника в соответствующем районе Перу. Роль representative; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Puka Pukara; Puca Pucara",
+      "reason": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "reviewNote": null
+}

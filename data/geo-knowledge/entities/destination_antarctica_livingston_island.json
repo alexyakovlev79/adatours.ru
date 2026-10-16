@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_livingston_island",
+  "stableId": "destination_antarctica_livingston_island",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/livingston-island/",
+  "sourceFingerprint": "ccf5a867968733d89dc55fd2a392b72c480d1d5aff10e4c69d5d1f4d159cf4be",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "island",
+  "external": {
+    "wikidataQid": "Q856906",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Livingston_Island"
+    }
+  },
+  "location": {
+    "latitude": -62.6,
+    "longitude": -60.5,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109867"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/livingston-island/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверен точный live URL: HTTP 200, H1 «Остров Ливингстон», canonical совпадает. Current main MD имеет ожидаемый stable ID, approved и соответствующую географию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q856906",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Остров Южных Шетландских островов между Snow и Greenwich; исключены одноименные острова других регионов. Представительная точка SCAR совпадает с P625."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109867",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Остров Южных Шетландских островов между Snow и Greenwich; исключены одноименные острова других регионов. Представительная точка SCAR совпадает с P625. Роль точки: representative; не навигационная координата."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109867",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Тип объекта сверяется с точной записью и собственным MD: island."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://adatours.ru/antarctica/place/livingston-island/",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Географическое нахождение в country_antarctica подтверждено описанием и внешним источником; это не утверждение суверенитета."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Livingston_Island",
+      "checkedAt": "2026-10-16T21:22:52.444Z",
+      "note": "Проверена точная статья о соответствующем объекте, имя и география согласованы с Wikidata и MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q856906",
+      "reason": "Остров Южных Шетландских островов между Snow и Greenwich; исключены одноименные острова других регионов. Представительная точка SCAR совпадает с P625."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q856906",
+      "reason": "Совпадают имя, тип и антарктическая география; исключены конкурирующие одноименные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-62.6,-60.5",
+      "reason": "Остров Южных Шетландских островов между Snow и Greenwich; исключены одноименные острова других регионов. Представительная точка SCAR совпадает с P625."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "island",
+      "reason": "Тип подтверждается географическим справочником/карточкой и смыслом страницы."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Согласованная географическая иерархия по MD и справочнику."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Livingston_Island",
+      "reason": "Точная статья соответствует выбранному референту."
+    }
+  ],
+  "reviewNote": null
+}

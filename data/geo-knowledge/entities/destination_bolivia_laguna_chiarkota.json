@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_laguna_chiarkota",
+  "stableId": "destination_bolivia_laguna_chiarkota",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/laguna-chiar-khota-potosi/",
+  "sourceFingerprint": "8bce948709a67b0bb523d1d1107a05998c1806a9b24980ea6d1e5c7aaf0fb6b4",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "salt_lake",
+  "external": {
+    "wikidataQid": "Q21805559",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ch%27iyar_Quta_(Nor_L%C3%ADpez)"
+    }
+  },
+  "location": {
+    "latitude": -21.58712,
+    "longitude": -68.06454,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Ch%27iyar_Quta_(Nor_L%C3%ADpez)"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "reason": "Лагуна Чиаркота/Charcota в Nor Lípez, Потоси, на цепочке с Каньяпой и Хедиондой. Озеро Q94803 у Ла-Паса исключено.",
+      "selected": "Q21805559"
+    },
+    {
+      "field": "entityClass",
+      "probability": 94,
+      "reason": "Лагуна Чиаркота/Charcota в Nor Lípez, Потоси, на цепочке с Каньяпой и Хедиондой. Озеро Q94803 у Ла-Паса исключено.",
+      "selected": "salt_lake"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "reason": "Лагуна Чиаркота/Charcota в Nor Lípez, Потоси, на цепочке с Каньяпой и Хедиондой. Озеро Q94803 у Ла-Паса исключено.",
+      "selected": "Q21805559"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "reason": "Лагуна Чиаркота/Charcota в Nor Lípez, Потоси, на цепочке с Каньяпой и Хедиондой. Озеро Q94803 у Ла-Паса исключено.",
+      "selected": "https://en.wikipedia.org/wiki/Ch%27iyar_Quta_(Nor_L%C3%ADpez)"
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "reason": "Выбрана точка Wikipedia (-21.58712,-68.06454), близкая GeoNames 3921110/P625 Q21805559 и OSM way 43069189 (-21.58698,-68.06458). Q339147 взаимно отмечен как постоянный дубль; его другая точка и GeoNames 3920956 не смешиваются.",
+      "selected": "-21.58712, -68.06454; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/laguna-chiar-khota-potosi/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Лагуна Чиаркота/Charcota в Nor Lípez, Потоси, на цепочке с Каньяпой и Хедиондой. Озеро Q94803 у Ла-Паса исключено."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/laguna-chiar-khota-potosi.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21805559",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Лагуна Чиаркота/Charcota в Nor Lípez, Потоси, на цепочке с Каньяпой и Хедиондой. Озеро Q94803 у Ла-Паса исключено."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ch%27iyar_Quta_(Nor_L%C3%ADpez)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ch%27iyar_Quta_(Nor_L%C3%ADpez)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Лагуна Чиаркота/Charcota в Nor Lípez, Потоси, на цепочке с Каньяпой и Хедиондой. Озеро Q94803 у Ла-Паса исключено."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ch%27iyar_Quta_(Nor_L%C3%ADpez)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Выбрана точка Wikipedia (-21.58712,-68.06454), близкая GeoNames 3921110/P625 Q21805559 и OSM way 43069189 (-21.58698,-68.06458). Q339147 взаимно отмечен как постоянный дубль; его другая точка и GeoNames 3920956 не смешиваются."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21805559",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Выбрана точка Wikipedia (-21.58712,-68.06454), близкая GeoNames 3921110/P625 Q21805559 и OSM way 43069189 (-21.58698,-68.06458). Q339147 взаимно отмечен как постоянный дубль; его другая точка и GeoNames 3920956 не смешиваются."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ch%27iyar_Quta_(Nor_L%C3%ADpez)",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": "Q21805559 выбран как подробно описанный объект с sitelinks en/de/es и точной геометрией OSM; Q339147 — взаимно помеченный дубль. GeoNames 3920956 не добавлен: дублирующая карточка отличается опорной точкой."
+}

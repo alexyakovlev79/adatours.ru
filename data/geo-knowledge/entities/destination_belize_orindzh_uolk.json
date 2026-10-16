@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_orindzh_uolk",
+  "stableId": "destination_belize_orindzh_uolk",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/orange-walk/",
+  "sourceFingerprint": "f211c6229ba0281050f38a0de9eec23fff987f22531c7e6fd6958bcca01e122a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q882964",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Orange_Walk_Town"
+    },
+    "geonamesId": "3581514"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/orindzh-uolk.md",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Основной референт — Orange Walk Town как город и база экскурсий. В MD ошибочно смешаны город и округ; entry.destinationType=city, исходный URL содержит «v-gorod», название Sugar City и поездки из города подтверждают выбор. Округ Q506036 и руины Холпатин не тождественны странице."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.travelbelize.org/destinations/northern-belize/orange-walk/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Основной референт — Orange Walk Town как город и база экскурсий. В MD ошибочно смешаны город и округ; entry.destinationType=city, исходный URL содержит «v-gorod», название Sugar City и поездки из города подтверждают выбор. Округ Q506036 и руины Холпатин не тождественны странице."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/belize/place/orange-walk/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прямой GET, HTTP 200; H1=Ориндж-Уолк; rel=canonical соответствует URL; stable ID найден в HTML."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.travelbelize.org/destinations/northern-belize/orange-walk/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают страна Белиз и географический контекст объекта; countryId=country_belize в текущем MD и entry."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q882964",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают имя, страна Белиз и тип/смысл объекта; P17=Q242. Основной референт — Orange Walk Town как город и база экскурсий. В MD ошибочно смешаны город и округ; entry.destinationType=city, исходный URL содержит «v-gorod», название Sugar City и поездки из города подтверждают выбор. Округ Q506036 и руины Холпатин не тождественны странице."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q882964",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Английский sitelink относится к выбранному референту; название/география проверены по статье и первоисточнику."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q882964",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "P1566=3581514; независимо прочитана запись Orange Walk в текущем BZ.zip GeoNames, country=BZ, класс P/PPLA."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Запись 3581514: Orange Walk, 18.08124, -88.56328, страна BZ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3581514/orange-walk.html",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Точка записи GeoNames 3581514 (P/PPLA) в WGS84, прочитана из текущего BZ.zip: 18.08124, -88.56328. Роль: settlement_center."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прочитан исходный файл BZ.txt, точная строка 3581514. Координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q882964",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Сверка с P625: 18.075, -88.558333333333. Разница городских опорных точек менее примерно 1,2 км; это разные допустимые точки внутри населенного пункта, не конфликт страны/объекта. Роль не означает единственный географический центр."
+    }
+  ],
+  "confidence": "medium",
+  "reviewNote": "Основной референт — Orange Walk Town как город и база экскурсий. В MD ошибочно смешаны город и округ; entry.destinationType=city, исходный URL содержит «v-gorod», название Sugar City и поездки из города подтверждают выбор. Округ Q506036 и руины Холпатин не тождественны странице.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 85,
+      "selected": "Ориндж-Уолк",
+      "reason": "Основной референт — Orange Walk Town как город и база экскурсий. В MD ошибочно смешаны город и округ; entry.destinationType=city, исходный URL содержит «v-gorod», название Sugar City и поездки из города подтверждают выбор. Округ Q506036 и руины Холпатин не тождественны странице."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна подтверждена MD, source-index и внешней карточкой/первоисточником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 85,
+      "selected": "Q882964",
+      "reason": "Основной референт — Orange Walk Town как город и база экскурсий. В MD ошибочно смешаны город и округ; entry.destinationType=city, исходный URL содержит «v-gorod», название Sugar City и поездки из города подтверждают выбор. Округ Q506036 и руины Холпатин не тождественны странице."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 85,
+      "selected": "https://en.wikipedia.org/wiki/Orange_Walk_Town",
+      "reason": "Статья выбранного геообъекта; для составного редакционного места используется основной референт."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 85,
+      "selected": "3581514",
+      "reason": "Совпадают точное имя, страна, тип и P1566 выбранной записи."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "18.08124, -88.56328",
+      "reason": "Выбрана одна именованная точка GeoNames с установленной ролью; проверена по P625 и географическому контексту."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/belize/place/orange-walk/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; конечный URL и rel=canonical совпадают с canonicalPath; H1 и stable ID подтверждены в HTML.",
+      "Проверены точные content MD и source-index entry из main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065."
+    ]
+  },
+  "location": {
+    "latitude": 18.08124,
+    "longitude": -88.56328,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3581514/orange-walk.html"
+  }
+}

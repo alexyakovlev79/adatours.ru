@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_chinchero",
+  "stableId": "destination_peru_chinchero",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/chinchero/",
+  "sourceFingerprint": "aba882aac5d478039e05cf3f8f6dbcaa877c775ee672947a6d4b2e881c12c568",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Chinchero"
+  ],
+  "external": {
+    "wikidataQid": "Q26764442",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Chinchero"
+    }
+  },
+  "location": {
+    "latitude": -13.396111,
+    "longitude": -72.059722,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q26764442"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/chinchero/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Чинчеро в MD — населённый пункт Священной долины с рынком, текстилем и памятниками. Q26764442 и испанская статья — town/localidad в Urubamba, Cusco. Исключены одноимённый район Q2143695, аэропорт и Chincheros в Apurímac."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/descubre-chinchero-el-pueblo-mas-pintoresco-del-valle-sagrado",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Чинчеро в MD — населённый пункт Священной долины с рынком, текстилем и памятниками. Q26764442 и испанская статья — town/localidad в Urubamba, Cusco. Исключены одноимённый район Q2143695, аэропорт и Chincheros в Apurímac."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26764442",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Чинчеро в MD — населённый пункт Священной долины с рынком, текстилем и памятниками. Q26764442 и испанская статья — town/localidad в Urubamba, Cusco. Исключены одноимённый район Q2143695, аэропорт и Chincheros в Apurímac."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Chinchero",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26764442",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "P625 Q26764442 задаёт точку выбранного населённого пункта в соответствующем районе Перу. Роль settlement_center; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26764442",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Chinchero",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "destination_peru_chinchero",
+      "reason": "Чинчеро в MD — населённый пункт Священной долины с рынком, текстилем и памятниками. Q26764442 и испанская статья — town/localidad в Urubamba, Cusco. Исключены одноимённый район Q2143695, аэропорт и Chincheros в Apurímac."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q26764442",
+      "reason": "Чинчеро в MD — населённый пункт Священной долины с рынком, текстилем и памятниками. Q26764442 и испанская статья — town/localidad в Urubamba, Cusco. Исключены одноимённый район Q2143695, аэропорт и Chincheros в Apurímac."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Chinchero\"}",
+      "reason": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-13.396111,-72.059722",
+      "reason": "P625 Q26764442 задаёт точку выбранного населённого пункта в соответствующем районе Перу. Роль settlement_center; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Chinchero",
+      "reason": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "reviewNote": null
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_prirodnye_bassejny_rio_on",
+  "stableId": "destination_belize_prirodnye_bassejny_rio_on",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/rio-on-pools/",
+  "sourceFingerprint": "12e5319398ec03b8267b271b0f5ddab2e370674c04301849a50316aecab835bc",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 1973888588
+    }
+  },
+  "location": {
+    "latitude": 16.9896147,
+    "longitude": -88.9781855,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/1973888588"
+  },
+  "alternateNames": [
+    "Rio On Pools"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_belize_zapovednik_mauntin_pajn_ridzh"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Речные бассейны Rio On Pools в Mountain Pine Ridge на притоке Macal; описаны отдельным разделом официального Forest Department, совпадают с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/rio-on-pools/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Прямой HTTP GET 200, конечный URL и canonical совпадают с очередью; H1 совпадает с названием, noindex отсутствует. Сверены текущие MD и source-index entry stableId/country/status."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/1973888588",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точное имя и тип объекта карты подтверждают соответствие основному референту страницы. Речные бассейны Rio On Pools в Mountain Pine Ridge на притоке Macal; описаны отдельным разделом официального Forest Department, совпадают с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1973888588",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "OSM tourism=attraction, name=Rio On Pools — опорный маркер комплекса бассейнов. Отличен от Rio On Pools Falls node 2171693603 южнее на 270 м и моста Rio On; Forest Department подтверждает речной комплекс. Это не заявленный центр и не конкретный бассейн для купания."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Адресная сверка географического контекста и назначения выбранной точки. OSM tourism=attraction, name=Rio On Pools — опорный маркер комплекса бассейнов. Отличен от Rio On Pools Falls node 2171693603 южнее на 270 м и моста Rio On; Forest Department подтверждает речной комплекс. Это не заявленный центр и не конкретный бассейн для купания."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    },
+    {
+      "field": "relationships.destination_belize_zapovednik_mauntin_pajn_ridzh",
+      "sourceUrl": "https://forest.gov.bz/recreation-in-the-mountain-pine-ridge/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Forest Department подтверждает расположение в Mountain Pine Ridge Forest Reserve; MD содержит ту же географию."
+    }
+  ],
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Природные бассейны Рио-Он",
+      "reason": "Речные бассейны Rio On Pools в Mountain Pine Ridge на притоке Macal; описаны отдельным разделом официального Forest Department, совпадают с MD."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/1973888588",
+      "reason": "Точное имя и тип объекта карты подтверждают соответствие основному референту страницы. Речные бассейны Rio On Pools в Mountain Pine Ridge на притоке Macal; описаны отдельным разделом официального Forest Department, совпадают с MD."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "16.9896147, -88.9781855; representative",
+      "reason": "OSM tourism=attraction, name=Rio On Pools — опорный маркер комплекса бассейнов. Отличен от Rio On Pools Falls node 2171693603 южнее на 270 м и моста Rio On; Forest Department подтверждает речной комплекс. Это не заявленный центр и не конкретный бассейн для купания."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Rio On Pools",
+      "reason": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    },
+    {
+      "field": "relationships.destination_belize_zapovednik_mauntin_pajn_ridzh",
+      "probability": 99,
+      "selected": "destination_belize_zapovednik_mauntin_pajn_ridzh",
+      "reason": "Forest Department подтверждает расположение в Mountain Pine Ridge Forest Reserve; MD содержит ту же географию."
+    }
+  ],
+  "reviewNote": "Не подменены соседним отдельным водопадом Rio On Pools Falls или мостом. QID не установлен уверенно; использована точная OSM-карточка бассейнов."
+}

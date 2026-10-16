@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_kaje_kolker",
+  "stableId": "destination_belize_kaje_kolker",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/caye-caulker/",
+  "sourceFingerprint": "6f6c62613f24f833ff99d23d443eec5fea3b14dd4a3085b1c4d65aa72cf59687",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q1051967",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Caye_Caulker"
+    },
+    "geonamesId": "3582310"
+  },
+  "location": {
+    "latitude": 17.74215,
+    "longitude": -88.02898,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3582310/"
+  },
+  "alternateNames": [
+    "Caye Caulker"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/caye-caulker/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.geonames.org/3582310/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Остров Caye Caulker, основной объект MD. Wikidata объединяет остров и поселение; точная GeoNames ISL 3582310 выбрана вместо PPL 3582431."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1051967",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Caye Caulker."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1051967",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3582310/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 3582310; выбрана ISL, исключена PPL 3582431."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3582310/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Координаты GeoNames острова, также одно из P625 Wikidata. Вторая точка P625 17.7425, −88.025 не усреднялась."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1051967",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.geonames.org/3582310/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географический объект Белиза, согласуется с countryId текущего MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Остров Caye Caulker, основной объект MD. Wikidata объединяет остров и поселение; точная GeoNames ISL 3582310 выбрана вместо PPL 3582431. Координаты GeoNames острова, также одно из P625 Wikidata. Вторая точка P625 17.7425, −88.025 не усреднялась.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Caye Caulker",
+      "reason": "Остров Caye Caulker, основной объект MD. Wikidata объединяет остров и поселение; точная GeoNames ISL 3582310 выбрана вместо PPL 3582431."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1051967",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Caye_Caulker",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3582310",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "17.74215, -88.02898",
+      "reason": "Координаты GeoNames острова, также одно из P625 Wikidata. Вторая точка P625 17.7425, −88.025 не усреднялась."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Caye Caulker",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна текущего MD и точного внешнего объекта совпадает."
+    }
+  ]
+}

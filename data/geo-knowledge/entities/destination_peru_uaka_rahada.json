@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_uaka_rahada",
+  "stableId": "destination_peru_uaka_rahada",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/huaca-rajada/",
+  "sourceFingerprint": "8c0ba977f944e1f1d0f34a9bca152fe571aa28bf3b53021ffdc0bc4896fc1423",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archaeological_site",
+  "external": {
+    "wikidataQid": "Q2716571",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Huaca_Rajada",
+      "en": "https://en.wikipedia.org/wiki/Huaca_Rajada"
+    }
+  },
+  "alternateNames": [
+    "Huaca Rajada",
+    "Huaca Rajada-Sipán"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=155",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Именованный археологический комплекс Huaca Rajada–Sipán в Saña/Lambayeque. Несмотря на route_cluster в MD, текст описывает один памятник. Не музей Huaca Rajada Q27051248 и не Museo Tumbas Reales в Ламбаеке."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/huaca-rajada/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2716571",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=155",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Тип выбран по фактическому объекту и контексту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2716571",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2716571",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2716571",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Опорная точка археологического места; не утверждается точное положение входа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=155",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=155",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Именованный археологический комплекс Huaca Rajada–Sipán в Saña/Lambayeque. Несмотря на route_cluster в MD, текст описывает один памятник. Не музей Huaca Rajada Q27051248 и не Museo Tumbas Reales в Ламбаеке.",
+      "selected": "Уака-Рахада"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q2716571"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Тип выбран по фактическому объекту и контексту страницы.",
+      "selected": "archaeological_site"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Huaca Rajada; Huaca Rajada-Sipán"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://es.wikipedia.org/wiki/Huaca_Rajada; https://en.wikipedia.org/wiki/Huaca_Rajada"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "Опорная точка археологического места; не утверждается точное положение входа.",
+      "selected": "-6.801305, -79.601904"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Именованный археологический комплекс Huaca Rajada–Sipán в Saña/Lambayeque. Несмотря на route_cluster в MD, текст описывает один памятник. Не музей Huaca Rajada Q27051248 и не Museo Tumbas Reales в Ламбаеке.",
+  "location": {
+    "latitude": -6.801305,
+    "longitude": -79.601904,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2716571"
+  }
+}

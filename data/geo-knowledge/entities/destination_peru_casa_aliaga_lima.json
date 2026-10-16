@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_casa_aliaga_lima",
+  "stableId": "destination_peru_casa_aliaga_lima",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/casa-aliaga-lima/",
+  "sourceFingerprint": "624a8fc38abab1e0018d63694dddf78ca1c2f9cbdd63213691e2d4f8ef792b70",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q42850047",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Casa_de_Aliaga"
+    },
+    "officialUrl": "https://casadealiaga.com/en/historia/"
+  },
+  "location": {
+    "latitude": -12.044416388888889,
+    "longitude": -77.0302591111111,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q42850047"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_peru_lima"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран QID исторического дома Casa Aliaga в Лиме, подтвержденного адресом и официальным доменом. Записи иных домов Aliaga/археологической Huaca Aliaga отклонены; отдельный музейный POI не подменяет здание.",
+  "decisionPolicy": "probability-70-v1",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42850047",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Выбран QID исторического дома Casa Aliaga в Лиме, подтвержденного адресом и официальным доменом. Записи иных домов Aliaga/археологической Huaca Aliaga отклонены; отдельный музейный POI не подменяет здание."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42850047",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Casa_de_Aliaga",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://casadealiaga.com/en/historia/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42850047",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Выбран QID исторического дома Casa Aliaga в Лиме, подтвержденного адресом и официальным доменом. Записи иных домов Aliaga/археологической Huaca Aliaga отклонены; отдельный музейный POI не подменяет здание."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42850047",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "sourceUrl": "https://casadealiaga.com/en/historia/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Расположен в городе Лима; stable ID города проверен в source-index."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/casa-aliaga-lima/",
+      "checkedAt": "2026-10-16T21:18:54.501Z",
+      "note": "Публичная страница HTTP 200, точный canonical совпадает. ID, approved, страна, тип и смысл проверены по текущим MD и source-index entry на фиксированном SHA main 829696675d32833cf18ebb696ee714747a28f04b."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Дом Каса-Алиага в Лиме",
+      "reason": "Выбран QID исторического дома Casa Aliaga в Лиме, подтвержденного адресом и официальным доменом. Записи иных домов Aliaga/археологической Huaca Aliaga отклонены; отдельный музейный POI не подменяет здание."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q42850047",
+      "reason": "Точное имя, тип и география совпадают с текущим MD; QID относится к самому объекту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "Casa_de_Aliaga",
+      "reason": "Статья о том же объекте в согласованной географии."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://casadealiaga.com/en/historia/",
+      "reason": "Официальный сайт/раздел самого учреждения, название и местонахождение совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-12.044416388888889,-77.0302591111111",
+      "reason": "Выбран QID исторического дома Casa Aliaga в Лиме, подтвержденного адресом и официальным доменом. Записи иных домов Aliaga/археологической Huaca Aliaga отклонены; отдельный музейный POI не подменяет здание."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Объект расположен в Перу."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "probability": 99,
+      "selected": "destination_peru_lima",
+      "reason": "Расположен в городе Лима; stable ID города проверен в source-index."
+    }
+  ]
+}

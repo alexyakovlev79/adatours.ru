@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_neko_harbour",
+  "stableId": "destination_antarctica_neko_harbour",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/neko-harbour/",
+  "sourceFingerprint": "7ed41b8a9cda7d98db9d83e5d6e8a92b6c9acf34559ed755bbf4d80bf10b96f7",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "bay",
+  "external": {
+    "wikidataQid": "Q3347017",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Neko_Harbour"
+    },
+    "geonamesId": "6622132"
+  },
+  "location": {
+    "latitude": -64.83333,
+    "longitude": -62.55,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=129308"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "reviewNote": "Номинальная точка бухты в US gazetteer; независимое руководство ATS дает те же 64°50′S 62°33′W. UK gazetteer 110314 дает иную долготу 62°31′W, Chile 105996 — 64°51′S 62°32′W. Не точка хижины и не гарантия высадки.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/neko-harbour/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Бухта Неко, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/neko-harbour.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob 226e686fe6958c7b2196bb5fdf6baa5a9565db01; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=129308",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Номинальная точка бухты в US gazetteer; независимое руководство ATS дает те же 64°50′S 62°33′W. UK gazetteer 110314 дает иную долготу 62°31′W, Chile 105996 — 64°51′S 62°32′W. Не точка хижины и не гарантия высадки."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=129308",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3347017",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q3347017 соответствует Бухта Неко; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Neko_Harbour",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=129308",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Номинальная точка бухты в US gazetteer; независимое руководство ATS дает те же 64°50′S 62°33′W. UK gazetteer 110314 дает иную долготу 62°31′W, Chile 105996 — 64°51′S 62°32′W. Не точка хижины и не гарантия высадки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.ats.aq/devAS/Ats/Guideline/39864605-7e82-4f8e-a171-49bdb8423e4f",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: официальное описание соответствующего места. Номинальная точка бухты в US gazetteer; независимое руководство ATS дает те же 64°50′S 62°33′W. UK gazetteer 110314 дает иную долготу 62°31′W, Chile 105996 — 64°51′S 62°32′W. Не точка хижины и не гарантия высадки."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=129308",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3347017",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "P1566 точной карточки Q3347017 = 6622132. Связь проверена через Wikidata; координаты GeoNames не импортировались автоматически."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Бухта Неко",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Номинальная точка бухты в US gazetteer; независимое руководство ATS дает те же 64°50′S 62°33′W. UK gazetteer 110314 дает иную долготу 62°31′W, Chile 105996 — 64°51′S 62°32′W. Не точка хижины и не гарантия высадки."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "bay",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3347017",
+      "reason": "Точная именованная сущность; Совпадают география и класс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Neko_Harbour",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-64.83333, -62.55; representative",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Номинальная точка бухты в US gazetteer; независимое руководство ATS дает те же 64°50′S 62°33′W. UK gazetteer 110314 дает иную долготу 62°31′W, Chile 105996 — 64°51′S 62°32′W. Не точка хижины и не гарантия высадки."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6622132",
+      "reason": "P1566 точного объекта с совпадающим контекстом; независимая проверка самой страницы GeoNames не заявляется."
+    }
+  ]
+}

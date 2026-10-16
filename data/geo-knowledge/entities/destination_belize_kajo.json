@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_kajo",
+  "stableId": "destination_belize_kajo",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/cayo/",
+  "sourceFingerprint": "c865c678b9f3757ee24dfe5c38da19719de06a8264842a1cdde7e4727c2a3ab8",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q508773",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cayo_District"
+    },
+    "geonamesId": "3582429",
+    "osm": {
+      "type": "relation",
+      "id": 962357
+    }
+  },
+  "location": {
+    "latitude": 17,
+    "longitude": -88.9,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3582429/"
+  },
+  "alternateNames": [
+    "Cayo District"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/cayo/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.travelbelize.org/destinations/cayo/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "По stable ID, countryId, destinationType=region, summary об округе и исходному URL с округом Кайо/Шунантунич основной объект — Cayo District. Официальный Belize Tourism Board подтверждает округ и его достопримечательности. Упоминания морского пляжа, яхт и барьерного рифа в основном тексте географически противоречивы и не используются как факты паспорта; нужна отдельная редактура MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q508773",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Cayo District."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q508773",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q508773",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 3582429; P1566 соответствует именованному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3582429/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Представительная точка GeoNames ADM1 17, −88.9 выбрана для округа. P625 Wikidata 16.833333, −88.916667 существенно отличается; не усреднялся и не называется центром округа."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q508773",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.travelbelize.org/destinations/cayo/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географический объект Белиза, согласуется с countryId текущего MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/relation/962357",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Проверены live relation tags name/place/boundary и точный wikidata=Q508773."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "По stable ID, countryId, destinationType=region, summary об округе и исходному URL с округом Кайо/Шунантунич основной объект — Cayo District. Официальный Belize Tourism Board подтверждает округ и его достопримечательности. Упоминания морского пляжа, яхт и барьерного рифа в основном тексте географически противоречивы и не используются как факты паспорта; нужна отдельная редактура MD. Представительная точка GeoNames ADM1 17, −88.9 выбрана для округа. P625 Wikidata 16.833333, −88.916667 существенно отличается; не усреднялся и не называется центром округа.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 93,
+      "selected": "Cayo District",
+      "reason": "По stable ID, countryId, destinationType=region, summary об округе и исходному URL с округом Кайо/Шунантунич основной объект — Cayo District. Официальный Belize Tourism Board подтверждает округ и его достопримечательности. Упоминания морского пляжа, яхт и барьерного рифа в основном тексте географически противоречивы и не используются как факты паспорта; нужна отдельная редактура MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 93,
+      "selected": "Q508773",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 93,
+      "selected": "https://en.wikipedia.org/wiki/Cayo_District",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3582429",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "17, -88.9",
+      "reason": "Представительная точка GeoNames ADM1 17, −88.9 выбрана для округа. P625 Wikidata 16.833333, −88.916667 существенно отличается; не усреднялся и не называется центром округа."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Cayo District",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна текущего MD и точного внешнего объекта совпадает."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/962357",
+      "reason": "Live OSM API подтверждает тот же QID, название и тип."
+    }
+  ]
+}

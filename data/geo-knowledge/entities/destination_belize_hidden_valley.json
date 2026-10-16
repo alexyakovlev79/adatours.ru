@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_hidden_valley",
+  "stableId": "destination_belize_hidden_valley",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/hidden-valley/",
+  "sourceFingerprint": "136916dc40cb6f9c043f32eebda5839b0ffff21d1606f88a5f7aed782de8b2e4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "officialUrl": "https://www.hiddenvalleyinn.com/reserve/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/hidden-valley.md",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Частный природный заповедник Hidden Valley Reserve в Mountain Pine Ridge, Cayo. Прямой первоисточник уже указан в entry и описывает тот же заповедник с единственным лоджем; не отдельный водопад Hidden Valley Falls и не весь Mountain Pine Ridge."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.hiddenvalleyinn.com/reserve/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Частный природный заповедник Hidden Valley Reserve в Mountain Pine Ridge, Cayo. Прямой первоисточник уже указан в entry и описывает тот же заповедник с единственным лоджем; не отдельный водопад Hidden Valley Falls и не весь Mountain Pine Ridge."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/belize/place/hidden-valley/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прямой GET, HTTP 200; H1=Хидден-Вэлли; rel=canonical соответствует URL; stable ID найден в HTML."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.hiddenvalleyinn.com/reserve/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают страна Белиз и географический контекст объекта; countryId=country_belize в текущем MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.hiddenvalleyinn.com/reserve/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Собственный сайт заповедника с разделом именно The Reserve; описывает частные 7200 акров в Mountain Pine Ridge."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.hiddenvalleyinn.com/getting-here/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Официальная страница направляет посетителей заповедника к единственному Hidden Valley Wilderness Lodge и содержит ссылку Google Maps L2YMkekMuj3XhHWM7."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://maps.app.goo.gl/L2YMkekMuj3XhHWM7",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Официальная ссылка раскрывается в Google Maps place Hidden Valley Wilderness Lodge, маркер !3d17.0493335!4d-88.8997116. Взяты координаты маркера, не центр камеры @17.0493386,-88.9022865."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Независимая сверка: Hidden Valley Inn, GeoNames 10232367, 17.04925,-88.89963 — около 13 м от маркера. Это опорная точка лоджа внутри заповедника, не центр или границы заповедника."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Частный природный заповедник Hidden Valley Reserve в Mountain Pine Ridge, Cayo. Прямой первоисточник уже указан в entry и описывает тот же заповедник с единственным лоджем; не отдельный водопад Hidden Valley Falls и не весь Mountain Pine Ridge.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Хидден-Вэлли",
+      "reason": "Частный природный заповедник Hidden Valley Reserve в Mountain Pine Ridge, Cayo. Прямой первоисточник уже указан в entry и описывает тот же заповедник с единственным лоджем; не отдельный водопад Hidden Valley Falls и не весь Mountain Pine Ridge."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна подтверждена MD, source-index и внешней карточкой/первоисточником."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.hiddenvalleyinn.com/reserve/",
+      "reason": "Официальный раздел именно заповедника, связанного с лоджем."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "17.0493335, -88.8997116",
+      "reason": "Представительная точка единственного лоджа в заповеднике, подтверждена официальной картой и GeoNames. Роль representative не означает центр территории."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "Точный QID заповедника не найден после адресного поиска; водопад Hidden Valley Falls и Mountain Pine Ridge не тождественны объекту. Поле пропущено."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 40,
+      "reason": "GeoNames 10232367 обозначает гостиницу, 3581946 — водопад, а не весь заповедник. Внешний ID заповедника пропущен; гостиничная точка используется только как representative."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/belize/place/hidden-valley/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; конечный URL и rel=canonical совпадают с canonicalPath; H1 и stable ID подтверждены в HTML.",
+      "Проверены точные content MD и source-index entry из main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065."
+    ]
+  },
+  "location": {
+    "latitude": 17.0493335,
+    "longitude": -88.8997116,
+    "pointRole": "representative",
+    "coordinateSource": "https://maps.app.goo.gl/L2YMkekMuj3XhHWM7"
+  }
+}

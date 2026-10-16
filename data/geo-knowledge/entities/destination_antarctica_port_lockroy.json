@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_port_lockroy",
+  "stableId": "destination_antarctica_port_lockroy",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/port-lockroy/",
+  "sourceFingerprint": "f493ceabfce3934f4346f48d482ee6b30af202e2e649f3345969a6895dca421d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "historic_research_station_and_museum",
+  "external": {
+    "wikidataQid": "Q2104764",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Port_Lockroy"
+    },
+    "officialUrl": "https://ukaht.org/places/port-lockroy/"
+  },
+  "location": {
+    "latitude": -64.82527778,
+    "longitude": -63.49444444,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2104764"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_goudier_island"
+    }
+  ],
+  "reviewNote": "Основной референт MD — Base A/музей на Гудье. Выбрана детальная P625 64°49′31″S 63°29′40″W, совпадающая с координатой EN Wikipedia и находящаяся у официальной точки Гудье (-64.825,-63.49333). Грубая P625 (-64.816667,-63.5) не использована. Q5588167 принадлежит острову, а не базе.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/port-lockroy/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Порт-Локрой, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/port-lockroy.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob e6fe5901e2d8c56e133a4eacc759be6f689080db; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://ukaht.org/places/port-lockroy/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Основной референт MD — Base A/музей на Гудье. Выбрана детальная P625 64°49′31″S 63°29′40″W, совпадающая с координатой EN Wikipedia и находящаяся у официальной точки Гудье (-64.825,-63.49333). Грубая P625 (-64.816667,-63.5) не использована. Q5588167 принадлежит острову, а не базе."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://ukaht.org/places/port-lockroy/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2104764",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q2104764 соответствует Порт-Локрой; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Port_Lockroy",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. Статья описывает гавань и историческую базу; основной референт паспорта — база."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2104764",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Основной референт MD — Base A/музей на Гудье. Выбрана детальная P625 64°49′31″S 63°29′40″W, совпадающая с координатой EN Wikipedia и находящаяся у официальной точки Гудье (-64.825,-63.49333). Грубая P625 (-64.816667,-63.5) не использована. Q5588167 принадлежит острову, а не базе."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.ats.aq/devAS/Ats/Guideline/3f501547-1981-40f2-b8ce-1d84ff31a76d",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: официальное описание соответствующего места. Основной референт MD — Base A/музей на Гудье. Выбрана детальная P625 64°49′31″S 63°29′40″W, совпадающая с координатой EN Wikipedia и находящаяся у официальной точки Гудье (-64.825,-63.49333). Грубая P625 (-64.816667,-63.5) не использована. Q5588167 принадлежит острову, а не базе."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://ukaht.org/places/port-lockroy/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://ukaht.org/places/port-lockroy/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Сайт управляющей организации о самом объекте; officialUrl не трактуется автоматически как sameAs."
+    },
+    {
+      "field": "relationships.destination_antarctica_goudier_island",
+      "sourceUrl": "https://ukaht.org/places/port-lockroy/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Подтверждено положение объекта в выбранном месте: Основной референт MD — Base A/музей на Гудье. Выбрана детальная P625 64°49′31″S 63°29′40″W, совпадающая с координатой EN Wikipedia и находящаяся у официальной точки Гудье (-64.825,-63.49333). Грубая P625 (-64.816667,-63.5) не использована. Q5588167 принадлежит острову, а не базе."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Порт-Локрой",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Основной референт MD — Base A/музей на Гудье. Выбрана детальная P625 64°49′31″S 63°29′40″W, совпадающая с координатой EN Wikipedia и находящаяся у официальной точки Гудье (-64.825,-63.49333). Грубая P625 (-64.816667,-63.5) не использована. Q5588167 принадлежит острову, а не базе."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "historic_research_station_and_museum",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q2104764",
+      "reason": "Точная именованная сущность; QID описывает бывшую станцию и музей, основной референт страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Port_Lockroy",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-64.82527778, -63.49444444; feature_point",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Основной референт MD — Base A/музей на Гудье. Выбрана детальная P625 64°49′31″S 63°29′40″W, совпадающая с координатой EN Wikipedia и находящаяся у официальной точки Гудье (-64.825,-63.49333). Грубая P625 (-64.816667,-63.5) не использована. Q5588167 принадлежит острову, а не базе."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 60,
+      "selected": "6638621",
+      "reason": "Идентификатор встречается в P1566, но не разрешено различие гавань/база при недоступной прямой карточке GeoNames. Поле пропущено."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://ukaht.org/places/port-lockroy/",
+      "reason": "Точная официальная страница оператора/управляющей группы выбранного места."
+    },
+    {
+      "field": "relationships.destination_antarctica_goudier_island",
+      "probability": 98,
+      "selected": "destination_antarctica_goudier_island",
+      "reason": "Географическая связь следует из источника и совпадающих собственных MD."
+    }
+  ]
+}

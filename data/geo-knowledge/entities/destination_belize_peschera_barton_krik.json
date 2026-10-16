@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_peschera_barton_krik",
+  "stableId": "destination_belize_peschera_barton_krik",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/barton-creek-cave/",
+  "sourceFingerprint": "61153659df241f5a3e414b5bd6d23d5e6370bf40243a96e21da85dcb992f7207",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q4865613",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Barton_Creek_Cave"
+    },
+    "officialUrl": "https://ticketing.nichbelize.org/product/barton-creek/"
+  },
+  "location": {
+    "latitude": 17.11277778,
+    "longitude": -88.92805556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q4865613.json"
+  },
+  "alternateNames": [
+    "Barton Creek Cave"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/barton-creek/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Водная пещера Barton Creek Cave в Cayo с каноэ и памятниками майя, не поселение/река Barton Creek; совпадает с MD и официальной карточкой NICH."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/barton-creek-cave/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Прямой HTTP GET 200, конечный URL и canonical совпадают с очередью; H1 совпадает с названием, noindex отсутствует. Сверены текущие MD и source-index entry stableId/country/status."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q4865613.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Водная пещера Barton Creek Cave в Cayo с каноэ и памятниками майя, не поселение/река Barton Creek; совпадает с MD и официальной карточкой NICH. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q4865613.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/barton-creek/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Страница управляющего объекта государственного ведомства/организации; только officialUrl, не автоматический sameAs организации."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q4865613.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Выбрана текущая P625 пещеры; совпадает с координатами точной статьи Wikipedia 17.11278,-88.92806. Официальный NICH подтверждает объект. Роль representative, так как P625 не доказывает точку туристического входа; старое 17°6'58N не усреднялось."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Barton_Creek_Cave",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Адресная сверка географического контекста и назначения выбранной точки. Выбрана текущая P625 пещеры; совпадает с координатами точной статьи Wikipedia 17.11278,-88.92806. Официальный NICH подтверждает объект. Роль representative, так как P625 не доказывает точку туристического входа; старое 17°6'58N не усреднялось."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/barton-creek/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://ticketing.nichbelize.org/product/barton-creek/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пещера Бартон-Крик",
+      "reason": "Водная пещера Barton Creek Cave в Cayo с каноэ и памятниками майя, не поселение/река Barton Creek; совпадает с MD и официальной карточкой NICH."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q4865613",
+      "reason": "Водная пещера Barton Creek Cave в Cayo с каноэ и памятниками майя, не поселение/река Barton Creek; совпадает с MD и официальной карточкой NICH. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Barton_Creek_Cave",
+      "reason": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://ticketing.nichbelize.org/product/barton-creek/",
+      "reason": "Страница управляющего объекта государственного ведомства/организации; только officialUrl, не автоматический sameAs организации."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "17.11277778, -88.92805556; representative",
+      "reason": "Выбрана текущая P625 пещеры; совпадает с координатами точной статьи Wikipedia 17.11278,-88.92806. Официальный NICH подтверждает объект. Роль representative, так как P625 не доказывает точку туристического входа; старое 17°6'58N не усреднялось."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Barton Creek Cave",
+      "reason": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "reviewNote": "Пещера, не одноименный водоток. P625 выбрана как опорная точка пещерной системы без утверждения о точности конкретного входа."
+}

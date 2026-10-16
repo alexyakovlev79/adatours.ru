@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_pukara",
+  "stableId": "destination_peru_pukara",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/pucara/",
+  "sourceFingerprint": "83ae55830490336161d1715d55a5721aa2d5c1943254c07663031c522abaaebf",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "settlement",
+  "external": {
+    "wikidataQid": "Q11286696",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Pucar%C3%A1_(Lampa)",
+      "en": "https://en.wikipedia.org/wiki/Pucar%C3%A1%2C_Puno"
+    },
+    "geonamesId": "3931659"
+  },
+  "alternateNames": [
+    "Pucará",
+    "Pukara"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/es/atractivos/pucara",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Поселение Pucará в провинции Lampa региона Puno, с керамическими быками и соседним комплексом Kalasaya; не культура Pukara, не музей и не одноимённое поселение в другом регионе."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/pucara/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q11286696",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/es/atractivos/pucara",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Тип выбран по фактическому объекту и контексту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q11286696",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q11286696",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q11286696",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q11286696",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Приблизительная опорная точка поселения; исходная precision P625 не означает точный центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/es/atractivos/pucara",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/es/atractivos/pucara",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "reason": "Поселение Pucará в провинции Lampa региона Puno, с керамическими быками и соседним комплексом Kalasaya; не культура Pukara, не музей и не одноимённое поселение в другом регионе.",
+      "selected": "Пукара"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q11286696"
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "reason": "Тип выбран по фактическому объекту и контексту страницы.",
+      "selected": "settlement"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 95,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Pucará; Pukara"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 95,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://es.wikipedia.org/wiki/Pucar%C3%A1_(Lampa); https://en.wikipedia.org/wiki/Pucar%C3%A1%2C_Puno"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "reason": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены.",
+      "selected": "3931659"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Приблизительная опорная точка поселения; исходная precision P625 не означает точный центр.",
+      "selected": "-15.0420042, -70.3680762"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Поселение Pucará в провинции Lampa региона Puno, с керамическими быками и соседним комплексом Kalasaya; не культура Pukara, не музей и не одноимённое поселение в другом регионе.",
+  "location": {
+    "latitude": -15.0420042,
+    "longitude": -70.3680762,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q11286696"
+  }
+}

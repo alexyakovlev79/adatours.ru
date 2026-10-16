@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_fish_islands",
+  "stableId": "destination_antarctica_fish_islands",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/fish-islands/",
+  "sourceFingerprint": "ee3a8349c121938321302c891abcef6ce02cdc5ccb6b6f7bb7eeac25f809becf",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q5454539",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Fish_Islands"
+    },
+    "geonamesId": "6633125"
+  },
+  "location": {
+    "latitude": -66.01667,
+    "longitude": -65.4,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=108809"
+  },
+  "alternateNames": [
+    "Fish Islands"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/fish-islands/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=108809",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Антарктическая группа Fish Islands у Prospect Point; исключены одноимённые острова Канады и США."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5454539",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Fish Islands."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5454539",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5454539",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 6633125; P1566 соответствует именованному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=108809",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Выбрана representative точка AADC для группы. P625 Wikidata −66.0333, −65.4167 относится к другой точке той же группы; не усредняли."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5454539",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=108809",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географически в Антарктиде; не утверждает суверенитет государства."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Антарктическая группа Fish Islands у Prospect Point; исключены одноимённые острова Канады и США. Выбрана representative точка AADC для группы. P625 Wikidata −66.0333, −65.4167 относится к другой точке той же группы; не усредняли.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Fish Islands",
+      "reason": "Антарктическая группа Fish Islands у Prospect Point; исключены одноимённые острова Канады и США."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5454539",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Fish_Islands",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6633125",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-66.01667, -65.4",
+      "reason": "Выбрана representative точка AADC для группы. P625 Wikidata −66.0333, −65.4167 относится к другой точке той же группы; не усредняли."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Fish Islands",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Географический регион Антарктида, без признания территориальных претензий."
+    }
+  ]
+}

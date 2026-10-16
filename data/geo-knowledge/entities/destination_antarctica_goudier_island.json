@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_goudier_island",
+  "stableId": "destination_antarctica_goudier_island",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/goudier-island/",
+  "sourceFingerprint": "769fce1ef5fe594ea0b7ed414a0d1506a1d8d273737e0d7923dd5b78568d4873",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "island",
+  "external": {
+    "wikidataQid": "Q5588167",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Goudier_Island"
+    },
+    "geonamesId": "6634063"
+  },
+  "location": {
+    "latitude": -64.825,
+    "longitude": -63.49333,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109072"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "reviewNote": "Выбрана точка UK gazetteer 64°49′30″S 63°29′36″W, близкая к детальной P625 (-64.82558,-63.49332). US gazetteer/EN Wikipedia дают грубую (-64.83333,-63.5); ATS — округление 64°49′S 63°29′W. Это отдельный остров, не база.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/goudier-island/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "HTTP 200, canonical совпадает, H1 Остров Гудье, noindex отсутствует. Текущие MD/entry approved; ID/страна/описание совпадают с определением очереди."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/goudier-island.md",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "MD blob b08bd89fdadd00d333f49f2d5791c58d57368137; stable ID и география сверены с точной source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109072",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана точка UK gazetteer 64°49′30″S 63°29′36″W, близкая к детальной P625 (-64.82558,-63.49332). US gazetteer/EN Wikipedia дают грубую (-64.83333,-63.5); ATS — округление 64°49′S 63°29′W. Это отдельный остров, не база."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109072",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Класс объекта установлен по географическому описанию; Антарктида — географическая область, без утверждения суверенной принадлежности."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5588167",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Карточка Q5588167 соответствует Остров Гудье; проверены label, описание, P31, P30/P131 и enwiki; спорные P17/территориальные притязания не импортировались."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Goudier_Island",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Точная EN-статья; связь enwiki проверена в карточке Wikidata. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109072",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Выбрана точка UK gazetteer 64°49′30″S 63°29′36″W, близкая к детальной P625 (-64.82558,-63.49332). US gazetteer/EN Wikipedia дают грубую (-64.83333,-63.5); ATS — округление 64°49′S 63°29′W. Это отдельный остров, не база."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://ukaht.org/places/port-lockroy/",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Независимо сверены положение и смысл точки: официальное описание соответствующего места. Выбрана точка UK gazetteer 64°49′30″S 63°29′36″W, близкая к детальной P625 (-64.82558,-63.49332). US gazetteer/EN Wikipedia дают грубую (-64.83333,-63.5); ATS — округление 64°49′S 63°29′W. Это отдельный остров, не база."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109072",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "Объект находится в антарктической географической области; country_antarctica используется как существующий stable ID области, а не суверенного государства."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5588167",
+      "checkedAt": "2026-10-16T21:23:28.819Z",
+      "note": "P1566 точной карточки Q5588167 = 6634063. Связь проверена через Wikidata; координаты GeoNames не импортировались автоматически."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Гудье",
+      "reason": "Совпали собственное название, класс, контекст MD и источников; Выбрана точка UK gazetteer 64°49′30″S 63°29′36″W, близкая к детальной P625 (-64.82558,-63.49332). US gazetteer/EN Wikipedia дают грубую (-64.83333,-63.5); ATS — округление 64°49′S 63°29′W. Это отдельный остров, не база."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "island",
+      "reason": "Именованный тип соответствует MD и внешним источникам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5588167",
+      "reason": "Точная именованная сущность; Совпадают география и класс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Goudier_Island",
+      "reason": "Sitelink, название и географическое описание совпали с выбранной сущностью."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-64.825, -63.49333; representative",
+      "reason": "Выбран один именованный источник, без усреднения; роль точки указана. Выбрана точка UK gazetteer 64°49′30″S 63°29′36″W, близкая к детальной P625 (-64.82558,-63.49332). US gazetteer/EN Wikipedia дают грубую (-64.83333,-63.5); ATS — округление 64°49′S 63°29′W. Это отдельный остров, не база."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Антарктическое положение подтверждено MD и географическим источником."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "6634063",
+      "reason": "P1566 точного объекта с совпадающим контекстом; независимая проверка самой страницы GeoNames не заявляется."
+    }
+  ]
+}

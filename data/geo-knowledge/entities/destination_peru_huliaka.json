@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_huliaka",
+  "stableId": "destination_peru_huliaka",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/juliaca/",
+  "sourceFingerprint": "a700d0f853982a7172e870224bb52d005834d9601cc5eb393db4b7ca13e103b1",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q696074",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Juliaca"
+    },
+    "geonamesId": "3937513"
+  },
+  "location": {
+    "latitude": -15.5,
+    "longitude": -70.13333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3937513/juliaca.html"
+  },
+  "alternateNames": [
+    "Juliaca"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/juliaca/",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "HTTP 200, точный canonical, approved MD и stable ID сверены на main 829696675d32833cf18ebb696ee714747a28f04b. Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Juliaca",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q696074",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac. Выбрана точка населенного пункта GeoNames. P625 (-15.483333,-70.133333) находится севернее примерно на 1,9 км. Не усреднять; точка города, а не терминала аэропорта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Juliaca",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q696074",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "GeoNames 3937513 указан для точного выбранного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3937513/juliaca.html",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Выбрана точка населенного пункта GeoNames. P625 (-15.483333,-70.133333) находится севернее примерно на 1,9 км. Не усреднять; точка города, а не терминала аэропорта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Juliaca",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac. Выбрана точка населенного пункта GeoNames. P625 (-15.483333,-70.133333) находится севернее примерно на 1,9 км. Не усреднять; точка города, а не терминала аэропорта."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Juliaca",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Местные/международные названия: Juliaca."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Juliaca",
+      "checkedAt": "2026-10-16T21:17:49.885Z",
+      "note": "Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Juliaca",
+      "reason": "Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q696074",
+      "reason": "Название, тип, география и главный референт MD совпадают. Город Хулиака в провинции San Román региона Puno, Перу; не одноименный район и не аэропорт Inca Manco Cápac."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Juliaca",
+      "reason": "Точная статья о принятом географическом объекте."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3937513",
+      "reason": "Согласованный внешний ID выбранной географической сущности."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-15.5, -70.13333; settlement_center",
+      "reason": "Выбрана точка населенного пункта GeoNames. P625 (-15.483333,-70.133333) находится севернее примерно на 1,9 км. Не усреднять; точка города, а не терминала аэропорта."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Juliaca",
+      "reason": "Названия из прочитанного точного источника."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Страна совпадает в MD и проверенном внешнем источнике."
+    }
+  ],
+  "reviewNote": "Выбрана точка населенного пункта GeoNames. P625 (-15.483333,-70.133333) находится севернее примерно на 1,9 км. Не усреднять; точка города, а не терминала аэропорта."
+}

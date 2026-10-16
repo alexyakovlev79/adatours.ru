@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_rakchi",
+  "stableId": "destination_peru_rakchi",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/raqchi/",
+  "sourceFingerprint": "9a42acc67087887b49a068eb1d32b97c13217e0c830399328011a64b75b4d59d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archaeological_site",
+  "external": {
+    "wikidataQid": "Q2876258",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Racchi",
+      "en": "https://en.wikipedia.org/wiki/Raqch'i"
+    }
+  },
+  "alternateNames": [
+    "Raqch'i",
+    "Raqchi",
+    "Ракчи"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.culturacusco.gob.pe/noticia/imagen/ministerio-de-cultura-invirtio-mas-de-10-millones-de-soles-en-la-recuperacion-del-sector-qolqas-del-parque-arqueologico-de-raqchi/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Ракчи — археологический комплекс с храмом Виракочи и круглыми qolqas. Q2876258 включает archaeological site, хотя краткое описание также называет поселение."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/raqchi/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2876258",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.culturacusco.gob.pe/noticia/imagen/ministerio-de-cultura-invirtio-mas-de-10-millones-de-soles-en-la-recuperacion-del-sector-qolqas-del-parque-arqueologico-de-raqchi/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Тип выбран по фактическому объекту и контексту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2876258",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2876258",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2876258",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Опорная точка археологического места; не утверждается точное положение входа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.culturacusco.gob.pe/noticia/imagen/ministerio-de-cultura-invirtio-mas-de-10-millones-de-soles-en-la-recuperacion-del-sector-qolqas-del-parque-arqueologico-de-raqchi/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.culturacusco.gob.pe/noticia/imagen/ministerio-de-cultura-invirtio-mas-de-10-millones-de-soles-en-la-recuperacion-del-sector-qolqas-del-parque-arqueologico-de-raqchi/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "reason": "Ракчи — археологический комплекс с храмом Виракочи и круглыми qolqas. Q2876258 включает archaeological site, хотя краткое описание также называет поселение.",
+      "selected": "Ракчи"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q2876258"
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "reason": "Тип выбран по фактическому объекту и контексту страницы.",
+      "selected": "archaeological_site"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 95,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Raqch'i; Raqchi; Ракчи"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 95,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://es.wikipedia.org/wiki/Racchi; https://en.wikipedia.org/wiki/Raqch'i"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "Опорная точка археологического места; не утверждается точное положение входа.",
+      "selected": "-14.175, -71.36666667"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Ракчи — археологический комплекс с храмом Виракочи и круглыми qolqas. Q2876258 включает archaeological site, хотя краткое описание также называет поселение.",
+  "location": {
+    "latitude": -14.175,
+    "longitude": -71.36666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2876258"
+  }
+}

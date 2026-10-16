@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_morskoj_zapovednik_hol_chan",
+  "stableId": "destination_belize_morskoj_zapovednik_hol_chan",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/hol-chan-marine-reserve/",
+  "sourceFingerprint": "c9a635f30d89e6acbce95a180fb1826158e41494558b685c9464e1944a2bf505",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5878464",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Hol_Chan_Marine_Reserve"
+    },
+    "officialUrl": "https://fisheries.gov.bz/hcmr/"
+  },
+  "location": {
+    "latitude": 17.869,
+    "longitude": -88.003,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q5878464.json"
+  },
+  "alternateNames": [
+    "Hol Chan Marine Reserve"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://fisheries.gov.bz/hcmr/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Морской заповедник южнее Ambergris Caye/San Pedro; MD, Fisheries Department и Q5878464 описывают один заповедник."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/hol-chan-marine-reserve/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Прямой HTTP GET 200, конечный URL и canonical совпадают с очередью; H1 совпадает с названием, noindex отсутствует. Сверены текущие MD и source-index entry stableId/country/status."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q5878464.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Морской заповедник южнее Ambergris Caye/San Pedro; MD, Fisheries Department и Q5878464 описывают один заповедник. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q5878464.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://fisheries.gov.bz/hcmr/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Страница управляющего объекта государственного ведомства/организации; только officialUrl, не автоматический sameAs организации."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q5878464.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "P625 — опорная точка морского заповедника в районе Hol Chan Channel. Fisheries Department подтверждает положение у рифа южнее San Pedro; это не офис в городе и не геометрический центр расширенных границ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://fisheries.gov.bz/hcmr/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Адресная сверка географического контекста и назначения выбранной точки. P625 — опорная точка морского заповедника в районе Hol Chan Channel. Fisheries Department подтверждает положение у рифа южнее San Pedro; это не офис в городе и не геометрический центр расширенных границ."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://fisheries.gov.bz/hcmr/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://fisheries.gov.bz/hcmr/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Морской заповедник Хол-Чан",
+      "reason": "Морской заповедник южнее Ambergris Caye/San Pedro; MD, Fisheries Department и Q5878464 описывают один заповедник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5878464",
+      "reason": "Морской заповедник южнее Ambergris Caye/San Pedro; MD, Fisheries Department и Q5878464 описывают один заповедник. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Hol_Chan_Marine_Reserve",
+      "reason": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://fisheries.gov.bz/hcmr/",
+      "reason": "Страница управляющего объекта государственного ведомства/организации; только officialUrl, не автоматический sameAs организации."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "17.869, -88.003; representative",
+      "reason": "P625 — опорная точка морского заповедника в районе Hol Chan Channel. Fisheries Department подтверждает положение у рифа южнее San Pedro; это не офис в городе и не геометрический центр расширенных границ."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Hol Chan Marine Reserve",
+      "reason": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "reviewNote": "Идентичность всего морского заповедника. Точка относится к исходной рифовой зоне, не заявлена как центр всех расширенных участков. Официальная страница ведомства хранится как officialUrl."
+}

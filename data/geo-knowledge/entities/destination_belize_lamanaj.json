@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_lamanaj",
+  "stableId": "destination_belize_lamanaj",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/lamanai/",
+  "sourceFingerprint": "995ee2fc54d2cf2c77e379b1767056889ad5be4b3bd46e1e69ec6627b4c79c24",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q968562",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lamanai"
+    }
+  },
+  "location": {
+    "latitude": 17.76431884,
+    "longitude": -88.65245773,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q968562.json"
+  },
+  "alternateNames": [
+    "Lamanai"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q968562",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Руины древнего города майя Lamanai в Orange Walk, Белиз; совпадают имя, страна, археологический смысл MD и entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/lamanai/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Прямой HTTP GET 200, конечный URL и canonical совпадают с очередью; H1 совпадает с названием, noindex отсутствует. Сверены текущие MD и source-index entry stableId/country/status."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q968562.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Руины древнего города майя Lamanai в Orange Walk, Белиз; совпадают имя, страна, археологический смысл MD и entry. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q968562.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q968562.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Выбрана текущая точка P625 комплекса, сверена с OSM way 27109432 (район 17.766, -88.6517). Wikipedia 17.75250,-88.65444 — другая точка территории; не усреднялась. Это опорная точка комплекса, не вход и не центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/Lamanai",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Адресная сверка географического контекста и назначения выбранной точки. Выбрана текущая точка P625 комплекса, сверена с OSM way 27109432 (район 17.766, -88.6517). Wikipedia 17.75250,-88.65444 — другая точка территории; не усреднялась. Это опорная точка комплекса, не вход и не центр."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q968562",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q968562",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Ламанай",
+      "reason": "Руины древнего города майя Lamanai в Orange Walk, Белиз; совпадают имя, страна, археологический смысл MD и entry."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q968562",
+      "reason": "Руины древнего города майя Lamanai в Orange Walk, Белиз; совпадают имя, страна, археологический смысл MD и entry. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Lamanai",
+      "reason": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "17.76431884, -88.65245773; representative",
+      "reason": "Выбрана текущая точка P625 комплекса, сверена с OSM way 27109432 (район 17.766, -88.6517). Wikipedia 17.75250,-88.65444 — другая точка территории; не усреднялась. Это опорная точка комплекса, не вход и не центр."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Lamanai",
+      "reason": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "reviewNote": "Основной объект — весь археологический комплекс, не отдельный храм. Выбрана опорная точка Wikidata после сверки с картографической областью OSM; отличающаяся точка Wikipedia сохранена в пояснении."
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_chiklajo",
+  "stableId": "destination_peru_chiklajo",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/chiclayo/",
+  "sourceFingerprint": "8ee9640ae632f2e86211ec495d620f96b71760482a6d329c4b7e3353d25f9e9b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q260911",
+    "geonamesId": "3698350",
+    "osm": {
+      "type": "node",
+      "id": 320100077
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Chiclayo"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/chiklajo.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает город Чиклайо на севере Перу, Ламбаеке. Внешние карточки относятся к городу, не административной провинции или району."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/chiclayo/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q260911",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает город Чиклайо на севере Перу, Ламбаеке. Внешние карточки относятся к городу, не административной провинции или району."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.geonames.org/3698350/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q260911",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает город Чиклайо на севере Перу, Ламбаеке. Внешние карточки относятся к городу, не административной провинции или району."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3698350/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Chiclayo (Seat of a first-order administrative division). Population 609,400. Located in South America, Peru, Lambayeque, Chiclayo Province, Chiclayo, Chiclayo. Coordinates -6.7701, -79.8550."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/320100077",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Прямое OSM API: place=city, name=Chiclayo, wikidata=Q260911; совпадает с выбранным городом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.openstreetmap.org/node/320100077",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная ссылка на статью о выбранном объекте, связанная из OSM/Wikidata; URL открыт, не страница неоднозначностей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3698350/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная WGS84-точка из JSON-LD выбранной GeoNames-карточки. Репрезентативная точка объекта, не утверждение о единственном центре."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q260911",
+      "reason": "MD описывает город Чиклайо на севере Перу, Ламбаеке. Внешние карточки относятся к городу, не административной провинции или району."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "City",
+      "reason": "MD описывает город Чиклайо на севере Перу, Ламбаеке. Внешние карточки относятся к городу, не административной провинции или району."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q260911",
+      "reason": "MD описывает город Чиклайо на севере Перу, Ламбаеке. Внешние карточки относятся к городу, не административной провинции или району."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3698350",
+      "reason": "Точная GeoNames-карточка совпадает по названию, типу объекта и административной географии. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/320100077",
+      "reason": "Проверены тип, имя и перекрёстный идентификатор/оператор непосредственно в OSM API."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Chiclayo",
+      "reason": "MD описывает город Чиклайо на севере Перу, Ламбаеке. Внешние карточки относятся к городу, не административной провинции или району."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-6.77008,-79.85495",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью representative."
+    }
+  ],
+  "reviewNote": "Выбран город, не одноимённая административная единица. Точка GeoNames репрезентативная; отличается от точки OSM города, не усреднялась и не заявлена единственным центром.",
+  "location": {
+    "latitude": -6.77008,
+    "longitude": -79.85495,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3698350/"
+  }
+}

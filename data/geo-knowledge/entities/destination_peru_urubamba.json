@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_urubamba",
+  "stableId": "destination_peru_urubamba",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/urubamba/",
+  "sourceFingerprint": "7b03a958cddbd26b06fbc6dd20e4aa2b502c08583b64081d51b4e3c58e33db8b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q2304483",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Urubamba%2C_Peru",
+      "es": "https://es.wikipedia.org/wiki/Urubamba_(ciudad)"
+    },
+    "geonamesId": "3926438"
+  },
+  "alternateNames": [
+    "Urubamba"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_peru_svyaschennaya_dolina_inkov"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/urubamba-que-hacer-y-conocer-en-una-de-las-ciudades-mas-hermosas-del-cusco",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Город Урубамба в Священной долине; не река, провинция или вся долина. Городская Plaza de Armas и рынок совпадают с основным смыслом MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/urubamba/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2304483",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/urubamba-que-hacer-y-conocer-en-una-de-las-ciudades-mas-hermosas-del-cusco",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Тип выбран по фактическому объекту и контексту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2304483",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2304483",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2304483",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2304483",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P625 в выбранном поселении; не центр одноимённой административной территории."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/urubamba-que-hacer-y-conocer-en-una-de-las-ciudades-mas-hermosas-del-cusco",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/urubamba-que-hacer-y-conocer-en-una-de-las-ciudades-mas-hermosas-del-cusco",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    },
+    {
+      "field": "relationships.destination_peru_svyaschennaya_dolina_inkov",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/que-lugares-conforman-el-valle-sagrado-de-los-inkas",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Поселение входит в Священную долину; stable ID закреплён в очереди."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Урубамба в Священной долине; не река, провинция или вся долина. Городская Plaza de Armas и рынок совпадают с основным смыслом MD.",
+      "selected": "Урубамба"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q2304483"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Тип выбран по фактическому объекту и контексту страницы.",
+      "selected": "city"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Urubamba"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://en.wikipedia.org/wiki/Urubamba%2C_Peru; https://es.wikipedia.org/wiki/Urubamba_(ciudad)"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "reason": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены.",
+      "selected": "3926438"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "P625 в выбранном поселении; не центр одноимённой административной территории.",
+      "selected": "-13.304166666667, -72.116666666667"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    },
+    {
+      "field": "relationships.destination_peru_svyaschennaya_dolina_inkov",
+      "probability": 97,
+      "reason": "Поселение входит в Священную долину; stable ID закреплён в очереди.",
+      "selected": "destination_peru_svyaschennaya_dolina_inkov"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город Урубамба в Священной долине; не река, провинция или вся долина. Городская Plaza de Armas и рынок совпадают с основным смыслом MD.",
+  "location": {
+    "latitude": -13.304166666667,
+    "longitude": -72.116666666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2304483"
+  }
+}

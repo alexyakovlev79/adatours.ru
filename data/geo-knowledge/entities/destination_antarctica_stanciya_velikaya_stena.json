@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_stanciya_velikaya_stena",
+  "stableId": "destination_antarctica_stanciya_velikaya_stena",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/great-wall-station/",
+  "sourceFingerprint": "570e30cedaf3b546f90c7f16058cde657f0d0725bcc2e10df67cc91e67f5559a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1548160",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Great_Wall_Station_(Antarctica)"
+    },
+    "geonamesId": "8521030",
+    "officialUrl": "https://en.pric.org.cn/index.php?c=category&id=50"
+  },
+  "location": {
+    "latitude": -62.21638888888889,
+    "longitude": -58.964444444444446,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.pric.org.cn/index.php?c=category&id=50"
+  },
+  "alternateNames": [
+    "Great Wall Station"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_antarctica_ostrov_king_dzhordzh"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/great-wall-station/",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Китайская исследовательская станция Great Wall/Чанчэн на полуострове Файлдс, а не Великая Китайская стена."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.pric.org.cn/index.php?c=category&id=50",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Китайская исследовательская станция Great Wall/Чанчэн на полуострове Файлдс, а не Великая Китайская стена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1548160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Точная карточка Q1548160: совпадают название, тип объекта и антарктическая география. Китайская исследовательская станция Great Wall/Чанчэн на полуострове Файлдс, а не Великая Китайская стена."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1548160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Sitelink enwiki ведет к статье именно выбранного объекта Great Wall Station (Antarctica)."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1548160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "GeoNames ID 8521030 явно указан в карточке Q1548160. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.pric.org.cn/index.php?c=category&id=50",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Выбраны координаты оператора PRIC 62°12′59″S 58°57′52″W. P625/COMNAP 62°13′3.068″S 58°57′43.171″W смещен примерно на 180 м. Сохранена одна точка оператора, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1548160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Независимая сверка идентичности точки и положения по P625. Выбраны координаты оператора PRIC 62°12′59″S 58°57′52″W. P625/COMNAP 62°13′3.068″S 58°57′43.171″W смещен примерно на 180 м. Сохранена одна точка оператора, без усреднения."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "sourceUrl": "https://en.pric.org.cn/index.php?c=category&id=50",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Расположение на острове Кинг-Джордж (King George Island); stable ID целевого места найден в GEO очереди."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1548160",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Английское название точной карточки выбранного объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://en.pric.org.cn/index.php?c=category&id=50",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Точная страница станции на сайте ее оператора, а не главная страница учреждения."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Great Wall Station",
+      "reason": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Китайская исследовательская станция Great Wall/Чанчэн на полуострове Файлдс, а не Великая Китайская стена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1548160",
+      "reason": "Точная карточка Q1548160: совпадают название, тип объекта и антарктическая география. Китайская исследовательская станция Great Wall/Чанчэн на полуострове Файлдс, а не Великая Китайская стена."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Great_Wall_Station_(Antarctica)",
+      "reason": "Sitelink enwiki ведет к статье именно выбранного объекта Great Wall Station (Antarctica)."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "8521030",
+      "reason": "GeoNames ID 8521030 явно указан в карточке Q1548160. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-62.21638888888889, -58.964444444444446 (feature_point)",
+      "reason": "Выбраны координаты оператора PRIC 62°12′59″S 58°57′52″W. P625/COMNAP 62°13′3.068″S 58°57′43.171″W смещен примерно на 180 м. Сохранена одна точка оператора, без усреднения."
+    },
+    {
+      "field": "relationships.destination_antarctica_ostrov_king_dzhordzh",
+      "probability": 99,
+      "selected": "destination_antarctica_ostrov_king_dzhordzh",
+      "reason": "Расположение на острове Кинг-Джордж (King George Island); stable ID целевого места найден в GEO очереди."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Great Wall Station",
+      "reason": "Английское название точной карточки выбранного объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://en.pric.org.cn/index.php?c=category&id=50",
+      "reason": "Точная страница станции на сайте ее оператора, а не главная страница учреждения."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Китайская исследовательская станция Great Wall/Чанчэн на полуострове Файлдс, а не Великая Китайская стена. Выбраны координаты оператора PRIC 62°12′59″S 58°57′52″W. P625/COMNAP 62°13′3.068″S 58°57′43.171″W смещен примерно на 180 м. Сохранена одна точка оператора, без усреднения."
+}

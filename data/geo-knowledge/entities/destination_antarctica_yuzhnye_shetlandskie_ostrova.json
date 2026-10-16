@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_yuzhnye_shetlandskie_ostrova",
+  "stableId": "destination_antarctica_yuzhnye_shetlandskie_ostrova",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/south-shetland-islands/",
+  "sourceFingerprint": "cfddd9399f77161c1cbefac713aabd3b4391fe8f70fa18d394ea490e2dbe22c0",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q140948",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/South_Shetland_Islands"
+    },
+    "geonamesId": "6625769"
+  },
+  "location": {
+    "latitude": -62,
+    "longitude": -58,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q140948"
+  },
+  "alternateNames": [
+    "South Shetland Islands"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/south-shetland-islands/",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Архипелаг Южные Шетландские острова у Антарктического полуострова, не Шетландские острова у Шотландии. Q31447873 перенаправляет на Q140948, выбран канонический QID."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q140948",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Архипелаг Южные Шетландские острова у Антарктического полуострова, не Шетландские острова у Шотландии. Q31447873 перенаправляет на Q140948, выбран канонический QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q140948",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Точная карточка Q140948: совпадают название, тип объекта и антарктическая география. Архипелаг Южные Шетландские острова у Антарктического полуострова, не Шетландские острова у Шотландии. Q31447873 перенаправляет на Q140948, выбран канонический QID."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q140948",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Sitelink enwiki ведет к статье именно выбранного объекта South Shetland Islands."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q140948",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "GeoNames ID 6625769 явно указан в карточке Q140948. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q140948",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "P625 и точная английская статья согласованы на 62°S 58°W. Грубая репрезентативная точка всего архипелага; не центроид, не отдельный остров и не место высадки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/South_Shetland_Islands",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Английская статья подтверждает 62°S 58°W как точку архипелага."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q140948",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Объект в антарктическом регионе; country_antarctica — географический узел проекта. Суверенитет отдельного государства не утверждается."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q140948",
+      "checkedAt": "2026-10-16T21:22:30.629Z",
+      "note": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "South Shetland Islands",
+      "reason": "Проверено напрямую HTTP 200, конечный URL и canonical совпадают с задачей, H1 совпадает с названием. MD approved и stable ID/source-index entry сверены на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Архипелаг Южные Шетландские острова у Антарктического полуострова, не Шетландские острова у Шотландии. Q31447873 перенаправляет на Q140948, выбран канонический QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q140948",
+      "reason": "Точная карточка Q140948: совпадают название, тип объекта и антарктическая география. Архипелаг Южные Шетландские острова у Антарктического полуострова, не Шетландские острова у Шотландии. Q31447873 перенаправляет на Q140948, выбран канонический QID."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/South_Shetland_Islands",
+      "reason": "Sitelink enwiki ведет к статье именно выбранного объекта South Shetland Islands."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6625769",
+      "reason": "GeoNames ID 6625769 явно указан в карточке Q140948. Связь подтверждена cross-reference Wikidata; чтение GeoNames не используется как источник координат."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-62, -58 (representative)",
+      "reason": "P625 и точная английская статья согласованы на 62°S 58°W. Грубая репрезентативная точка всего архипелага; не центроид, не отдельный остров и не место высадки."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Объект в антарктическом регионе; country_antarctica — географический узел проекта. Суверенитет отдельного государства не утверждается."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "South Shetland Islands",
+      "reason": "Английское название точной карточки выбранного объекта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Архипелаг Южные Шетландские острова у Антарктического полуострова, не Шетландские острова у Шотландии. Q31447873 перенаправляет на Q140948, выбран канонический QID. P625 и точная английская статья согласованы на 62°S 58°W. Грубая репрезентативная точка всего архипелага; не центроид, не отдельный остров и не место высадки."
+}

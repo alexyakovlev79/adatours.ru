@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_sikuani",
+  "stableId": "destination_peru_sikuani",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/sicuani/",
+  "sourceFingerprint": "6cc9b3ab392089b36ce45aa5e16eaf446b4aa3c9746c29d8222adfcfebd059b2",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q4419079",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Sicuani",
+      "en": "https://en.wikipedia.org/wiki/Sicuani"
+    },
+    "geonamesId": "3928679"
+  },
+  "alternateNames": [
+    "Sicuani"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://sigrid.cenepred.gob.pe/sigridv3/documento/4333",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Город Сикуани в Canchis/Cusco на дороге Куско — Пуно; не административный район Q2608412."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/sicuani/",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "HTTPS GET 200. H1/canonical совпадают с job. MD approved и entry проверены на main 829696675d32833cf18ebb696ee714747a28f04b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4419079",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Имя, страна, класс и фактический смысл QID согласованы с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://sigrid.cenepred.gob.pe/sigridv3/documento/4333",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Тип выбран по фактическому объекту и контексту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4419079",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Варианты имени подтверждены карточкой и предметным контекстом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4419079",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Sitelinks ведут к выбранному географическому референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4419079",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4419079",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Приблизительная опорная точка поселения; исходная precision P625 не означает точный центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://sigrid.cenepred.gob.pe/sigridv3/documento/4333",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Независимая сверка географического контекста выбранной точки."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://sigrid.cenepred.gob.pe/sigridv3/documento/4333",
+      "checkedAt": "2026-10-16T21:17:41.317Z",
+      "note": "Страна совпадает с MD/entry и P17 Wikidata."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Сикуани в Canchis/Cusco на дороге Куско — Пуно; не административный район Q2608412.",
+      "selected": "Сикуани"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Имя, страна, класс и фактический смысл QID согласованы с MD.",
+      "selected": "Q4419079"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Тип выбран по фактическому объекту и контексту страницы.",
+      "selected": "city"
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "reason": "Варианты имени подтверждены карточкой и предметным контекстом.",
+      "selected": "Sicuani"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Sitelinks ведут к выбранному географическому референту.",
+      "selected": "https://es.wikipedia.org/wiki/Sicuani; https://en.wikipedia.org/wiki/Sicuani"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "reason": "P1566 точной Wikidata-карточки; альтернативные одноимённые объекты исключены.",
+      "selected": "3928679"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Приблизительная опорная точка поселения; исходная precision P625 не означает точный центр.",
+      "selected": "-14.26944, -71.22611"
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "reason": "Страна совпадает с MD/entry и P17 Wikidata.",
+      "selected": "country_peru"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город Сикуани в Canchis/Cusco на дороге Куско — Пуно; не административный район Q2608412.",
+  "location": {
+    "latitude": -14.26944,
+    "longitude": -71.22611,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4419079"
+  }
+}

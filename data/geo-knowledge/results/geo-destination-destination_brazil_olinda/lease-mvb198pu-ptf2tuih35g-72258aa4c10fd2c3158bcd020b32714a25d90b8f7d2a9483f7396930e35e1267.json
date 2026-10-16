@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_olinda",
+  "stableId": "destination_brazil_olinda",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/olinda/",
+  "sourceFingerprint": "90bfdebf56ce542694a2e22c47a287a9501c45303062004427917a1173d6fcf0",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q28301",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Olinda"
+    },
+    "geonamesId": "3393536"
+  },
+  "location": {
+    "latitude": -8.00889,
+    "longitude": -34.85528,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3393536/olinda.html"
+  },
+  "alternateNames": [
+    "Olinda"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/olinda/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/olinda.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_olinda, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28301",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверены название, P31 и P17/P131: city, Brazil; Город Олинда в Pernambuco; GeoNames 3393536 — PPL, не муниципальный ADM2 6320550. Исторический центр UNESCO — самостоятельная территория Q8343764; его идентификатор не присвоен всему городу."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Olinda",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точная статья о выбранном именованном объекте, проверена содержательно и по sitelink Wikidata; охват и обнаруженные координатные расхождения отражены в reviewNote."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3393536/olinda.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверена точная карточка населённого пункта: GeoNameId 3393536; правильная страна и административная иерархия. Использован PPL/PPLA, а не одноимённый пляж или центроид ADM2."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3393536/olinda.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-8.00889, -34.85528), pointRole=settlement_center. Город Олинда в Pernambuco; GeoNames 3393536 — PPL, не муниципальный ADM2 6320550. Исторический центр UNESCO — самостоятельная территория Q8343764; его идентификатор не присвоен всему городу."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28301",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Wikidata P625 8°0′32″S 34°51′18″W согласуется с GeoNames PPL −8.00889, −34.85528; это городская точка, не центроид муниципального полигона."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q28301",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город Олинда в Pernambuco; GeoNames 3393536 — PPL, не муниципальный ADM2 6320550. Исторический центр UNESCO — самостоятельная территория Q8343764; его идентификатор не присвоен всему городу."
+}

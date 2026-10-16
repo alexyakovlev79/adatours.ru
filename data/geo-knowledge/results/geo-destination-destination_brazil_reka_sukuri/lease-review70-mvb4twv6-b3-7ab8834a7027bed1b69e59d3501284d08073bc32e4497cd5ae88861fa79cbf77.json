@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_reka_sukuri",
+  "stableId": "destination_brazil_reka_sukuri",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/sucuri-river/",
+  "sourceFingerprint": "ae0660e4b53b3e6e9aa05dd77ba7d7d6e152898630158967388caf542b25d0ba",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_bonito"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/sucuri-river.md",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Новые муниципальные карточки отдельно описывают Rio Sucuri и его устье в Formoso; научная таблица11 явно связывает полевую точку с Sucuri. Ошибочный охват OSM всей реки не блокирует паспорт."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/sucuri-river/",
+      "checkedAt": "2026-10-16T15:40:23.174541+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/rio-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Точная муниципальная карточка описывает прозрачную реку, истоки и маршрут~1800м."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/barra-do-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Муниципальная карточка подтверждает впадение Sucuri в Formoso."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://revista.fct.unesp.br/index.php/formacao/article/download/3151/3088",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Заново открыт первичный научный PDF: табл.11, Ponto1,21°15′59.9″S56°33′35.1″W, Rio=Sucuri."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/rio-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://revista.fct.unesp.br/index.php/formacao/article/download/3151/3088",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Повторно прочитанная полевая точка исследования на Nascente do Rio Sucuri. Роль feature_point, не обещание входа/центра всей реки."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/rio-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Bonito/MS, Brazil подтверждены муниципальным источником."
+    },
+    {
+      "field": "relationships.destination_brazil_bonito",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/rio-sucuri-em-bonito",
+      "checkedAt": "2026-10-16T15:49:57.710Z",
+      "note": "Река и туристический центр Bonito прямо связаны в муниципальном описании."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Rio Sucuri у Bonito, приток Rio Formoso",
+      "reason": "Новые муниципальные карточки отдельно описывают Rio Sucuri и его устье в Formoso; научная таблица11 явно связывает полевую точку с Sucuri. Ошибочный охват OSM всей реки не блокирует паспорт."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "river",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-21.266638888888888,-56.55975 (feature_point)",
+      "reason": "Повторно прочитанная полевая точка исследования на Nascente do Rio Sucuri. Роль feature_point, не обещание входа/центра всей реки."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Bonito/MS, Brazil подтверждены муниципальным источником."
+    },
+    {
+      "field": "relationships.destination_brazil_bonito",
+      "probability": 99,
+      "selected": "destination_brazil_bonito",
+      "reason": "Река и туристический центр Bonito прямо связаны в муниципальном описании."
+    },
+    {
+      "field": "external.osm",
+      "probability": 50,
+      "reason": "Way229638185 вероятно включает продолжение Formoso; весь way не принимается как ID короткой Sucuri."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 25,
+      "reason": "Q7633210 Sucuriú — другая река, не Rio Sucuri/Bonito."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/sucuri-river/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  },
+  "location": {
+    "latitude": -21.266638888888888,
+    "longitude": -56.55975,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://revista.fct.unesp.br/index.php/formacao/article/download/3151/3088"
+  }
+}

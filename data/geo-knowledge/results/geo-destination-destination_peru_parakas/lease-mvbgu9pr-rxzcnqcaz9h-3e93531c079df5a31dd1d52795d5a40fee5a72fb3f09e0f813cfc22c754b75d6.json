@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_parakas",
+  "stableId": "destination_peru_parakas",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/paracas/",
+  "sourceFingerprint": "d589add71c441ef35daa72e850f25a48e2aa3e0abed190c2e5e57f8f96a38f99",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Landform",
+  "external": {
+    "wikidataQid": "Q2735703",
+    "geonamesId": "3933053",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Paracas_Peninsula"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/parakas.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD summary и текст многократно называют полуостров Паракас. Выбран именно полуостров, не город Paracas и не весь национальный заповедник."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/paracas/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2735703",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD summary и текст многократно называют полуостров Паракас. Выбран именно полуостров, не город Paracas и не весь национальный заповедник."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.geonames.org/3933053/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2735703",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD summary и текст многократно называют полуостров Паракас. Выбран именно полуостров, не город Paracas и не весь национальный заповедник."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3933053/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Península de Paracas (Peninsula). Located in South America, Peru, Ica, Pisco Province, Paracas, Península de Paracas. Coordinates -13.8640, -76.3473."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2735703",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная ссылка на статью о выбранном объекте, связанная из OSM/Wikidata; URL открыт, не страница неоднозначностей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3933053/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная WGS84-точка из JSON-LD выбранной GeoNames-карточки. Репрезентативная точка объекта, не утверждение о единственном центре."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Q2735703",
+      "reason": "MD summary и текст многократно называют полуостров Паракас. Выбран именно полуостров, не город Paracas и не весь национальный заповедник."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "Landform",
+      "reason": "MD summary и текст многократно называют полуостров Паракас. Выбран именно полуостров, не город Paracas и не весь национальный заповедник."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q2735703",
+      "reason": "MD summary и текст многократно называют полуостров Паракас. Выбран именно полуостров, не город Paracas и не весь национальный заповедник."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3933053",
+      "reason": "Точная GeoNames-карточка совпадает по названию, типу объекта и административной географии. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Paracas_Peninsula",
+      "reason": "MD summary и текст многократно называют полуостров Паракас. Выбран именно полуостров, не город Paracas и не весь национальный заповедник."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-13.86401,-76.34734",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью representative."
+    }
+  ],
+  "reviewNote": "GN — репрезентативная точка полуострова. P625 Wikidata (-13.858889,-76.328889) отличается от GN; это разные опорные точки площадного объекта. Не усреднять, точка не заявлена географическим центром.",
+  "location": {
+    "latitude": -13.86401,
+    "longitude": -76.34734,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3933053/"
+  }
+}

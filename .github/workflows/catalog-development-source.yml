@@ -12,7 +12,14 @@ jobs:
       - uses: actions/checkout@v6
       - name: Package tracked source only (no credentials or media)
         run: |
-          git archive --format=zip --output=catalog-source.zip HEAD src scripts tests docs/workflows data package.json package-lock.json astro.config.mjs tsconfig.json AGENTS.md .github
+          python3 - <<'PY'
+          import subprocess, zipfile
+          paths = subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
+          with zipfile.ZipFile('catalog-source.zip','w',zipfile.ZIP_DEFLATED) as out:
+              for path in paths:
+                  if path and ('/' not in path or path.startswith(('src/','scripts/','tests/','docs/workflows/','data/','.github/'))):
+                      out.write(path)
+          PY
           git rev-parse HEAD > source-commit.txt
       - uses: actions/upload-artifact@v4
         with:

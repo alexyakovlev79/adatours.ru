@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_uyuni",
+  "stableId": "destination_bolivia_uyuni",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/uyuni/",
+  "sourceFingerprint": "e6158a337c7f2fa001f7271711ff6931a424590c045e1fd1c65a91649e305f9d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "salt_flat",
+  "external": {
+    "wikidataQid": "Q76122",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Salar_de_Uyuni"
+    }
+  },
+  "location": {
+    "latitude": -20.133775,
+    "longitude": -67.4891333,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Salar_de_Uyuni"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Основной референт MD — солончак с зеркальной водой, не город Уюни; соседние лагуны вторичны.",
+      "selected": "Q76122"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Основной референт MD — солончак с зеркальной водой, не город Уюни; соседние лагуны вторичны.",
+      "selected": "salt_flat"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Основной референт MD — солончак с зеркальной водой, не город Уюни; соседние лагуны вторичны.",
+      "selected": "Q76122"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Основной референт MD — солончак с зеркальной водой, не город Уюни; соседние лагуны вторичны.",
+      "selected": "https://en.wikipedia.org/wiki/Salar_de_Uyuni"
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "reason": "Опорная точка солончака из Wikipedia. P625 Q76122 (-20.33333,-67.7) — другая точка протяженного солончака; не смешана с выбранной и не названа центром.",
+      "selected": "-20.133775, -67.4891333; representative"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/uyuni/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Основной референт MD — солончак с зеркальной водой, не город Уюни; соседние лагуны вторичны."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/uyuni.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q76122",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Основной референт MD — солончак с зеркальной водой, не город Уюни; соседние лагуны вторичны."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salar_de_Uyuni",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salar_de_Uyuni",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Основной референт MD — солончак с зеркальной водой, не город Уюни; соседние лагуны вторичны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salar_de_Uyuni",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Опорная точка солончака из Wikipedia. P625 Q76122 (-20.33333,-67.7) — другая точка протяженного солончака; не смешана с выбранной и не названа центром."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q76122",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Опорная точка солончака из Wikipedia. P625 Q76122 (-20.33333,-67.7) — другая точка протяженного солончака; не смешана с выбранной и не названа центром."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salar_de_Uyuni",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": "Опорная точка солончака из Wikipedia. P625 Q76122 (-20.33333,-67.7) — другая точка протяженного солончака; не смешана с выбранной и не названа центром."
+}

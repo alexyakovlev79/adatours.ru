@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_nido_de_condores",
+  "stableId": "destination_argentina_nido_de_condores",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/nido-de-condores/",
+  "sourceFingerprint": "5cf0cf1f8b2a685a226867f2ce9b4cd413ffd9f5201933608f8e0c86a126c17c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 656097799
+    }
+  },
+  "alternateNames": [
+    "Nido de Cóndores (Aconcagua)"
+  ],
+  "location": {
+    "latitude": -32.6368481,
+    "longitude": -70.0292592,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/1504741399.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_argentina_plaza_de_mulas"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/20a7fd65b9538b8fefe6ab3881997fe22206a1ed/src/content/destinations/nido-de-condores.md",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Высотный лагерь нормального маршрута Аконкагуа над Пласа-де-Мулас. Не детский сад, гостиница или смотровая площадка в Чили."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.adventurealternative.com/argentina/climb-mount-aconcagua/horcones-route-trek/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Высотный лагерь нормального маршрута Аконкагуа над Пласа-де-Мулас. Не детский сад, гостиница или смотровая площадка в Чили."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/argentina/place/nido-de-condores/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Прямой HTTP GET 200; self-canonical и заголовок соответствуют объекту. Stable ID, текущий MD и точная source-index entry сверены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/656097799.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Первичный OSM API прочитан; имя, класс, контекст совпадают: Высотный лагерь нормального маршрута Аконкагуа над Пласа-де-Мулас. Не детский сад, гостиница или смотровая площадка в Чили."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/656097799.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Местное/английское название объекта подтверждено карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/1504741399.json",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Survey-точка местности OSM 1504741399 внутри контура лагеря 656097799. GPS экспедиции (-32.637333,-70.030167) подтверждает тот же лагерь; точки не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/es/W656097799",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Независимая сверка объекта и географического положения; не утверждается совпадение координат до последнего знака."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.adventurealternative.com/argentina/climb-mount-aconcagua/horcones-route-trek/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_plaza_de_mulas",
+      "sourceUrl": "https://www.adventurealternative.com/argentina/climb-mount-aconcagua/horcones-route-trek/",
+      "checkedAt": "2026-10-16T20:37:21.931Z",
+      "note": "Лагерь/вершина связаны с выходами из базового лагеря Plaza de Mulas."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Nido de Cóndores (Aconcagua)",
+      "reason": "Высотный лагерь нормального маршрута Аконкагуа над Пласа-де-Мулас. Не детский сад, гостиница или смотровая площадка в Чили."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/656097799",
+      "reason": "Высотный лагерь нормального маршрута Аконкагуа над Пласа-де-Мулас. Не детский сад, гостиница или смотровая площадка в Чили."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Nido de Cóndores (Aconcagua)",
+      "reason": "Название основного референта из точной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-32.6368481, -70.0292592; representative",
+      "reason": "Survey-точка местности OSM 1504741399 внутри контура лагеря 656097799. GPS экспедиции (-32.637333,-70.030167) подтверждает тот же лагерь; точки не усреднялись."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "containedInPlace country_argentina",
+      "reason": "Объект находится в Аргентине."
+    },
+    {
+      "field": "relationships.destination_argentina_plaza_de_mulas",
+      "probability": 99,
+      "selected": "relatedPlace destination_argentina_plaza_de_mulas",
+      "reason": "Лагерь/вершина связаны с выходами из базового лагеря Plaza de Mulas."
+    }
+  ],
+  "reviewNote": null
+}

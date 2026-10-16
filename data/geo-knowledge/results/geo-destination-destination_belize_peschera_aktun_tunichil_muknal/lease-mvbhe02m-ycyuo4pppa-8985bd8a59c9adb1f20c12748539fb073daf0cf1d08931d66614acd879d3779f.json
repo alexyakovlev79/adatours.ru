@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_peschera_aktun_tunichil_muknal",
+  "stableId": "destination_belize_peschera_aktun_tunichil_muknal",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/actun-tunichil-muknal-cave/",
+  "sourceFingerprint": "4331cb29ac2847c8a36319d7be684a7d8d85fbfc5f18fde8d321df0dbcb0adaf",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q344570",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Actun_Tunichil_Muknal"
+    },
+    "osm": {
+      "type": "node",
+      "id": 6716580386
+    }
+  },
+  "location": {
+    "latitude": 17.1136604,
+    "longitude": -88.8624213,
+    "pointRole": "entrance",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/6716580386"
+  },
+  "alternateNames": [
+    "Actun Tunichil Muknal",
+    "ATM",
+    "Cave of the Crystal Sepulchre"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.travelbelize.org/attraction/actun-tunichil-muknal-atm/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Пещера ATM / Actun Tunichil Muknal в Cayo у Tapir Mountain Nature Reserve, с археологическими находками майя; совпадает с MD/entry и Q344570."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/actun-tunichil-muknal-cave/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Прямой HTTP GET 200, конечный URL и canonical совпадают с очередью; H1 совпадает с названием, noindex отсутствует. Сверены текущие MD и source-index entry stableId/country/status."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q344570.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Пещера ATM / Actun Tunichil Muknal в Cayo у Tapir Mountain Nature Reserve, с археологическими находками майя; совпадает с MD/entry и Q344570. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q344570.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/6716580386",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точное имя и тип объекта карты подтверждают соответствие основному референту страницы. Пещера ATM / Actun Tunichil Muknal в Cayo у Tapir Mountain Nature Reserve, с археологическими находками майя; совпадает с MD/entry и Q344570."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/6716580386",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Точный natural=cave_entrance, name=Actun Tunichil Muknal Cave. Независимо сверено с текущим P625 Q344570 17.11412857,-88.86235254 (около 53 м). Отвергнуты устаревшая точка 17.1899,-88.4977 и вход на территорию 17.12872,-88.85067."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q344570.json",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Адресная сверка географического контекста и назначения выбранной точки. Точный natural=cave_entrance, name=Actun Tunichil Muknal Cave. Независимо сверено с текущим P625 Q344570 17.11412857,-88.86235254 (около 53 м). Отвергнуты устаревшая точка 17.1899,-88.4977 и вход на территорию 17.12872,-88.85067."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.travelbelize.org/attraction/actun-tunichil-muknal-atm/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.travelbelize.org/attraction/actun-tunichil-muknal-atm/",
+      "checkedAt": "2026-10-16T21:34:22.069Z",
+      "note": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пещера Актун-Туничиль-Мукналь",
+      "reason": "Пещера ATM / Actun Tunichil Muknal в Cayo у Tapir Mountain Nature Reserve, с археологическими находками майя; совпадает с MD/entry и Q344570."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q344570",
+      "reason": "Пещера ATM / Actun Tunichil Muknal в Cayo у Tapir Mountain Nature Reserve, с археологическими находками майя; совпадает с MD/entry и Q344570. Проверена текущая Wikidata JSON-карточка P17=Q242 и тип."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Actun_Tunichil_Muknal",
+      "reason": "Точная статья того же объекта; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "selected": "node/6716580386",
+      "reason": "Точное имя и тип объекта карты подтверждают соответствие основному референту страницы. Пещера ATM / Actun Tunichil Muknal в Cayo у Tapir Mountain Nature Reserve, с археологическими находками майя; совпадает с MD/entry и Q344570."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "17.1136604, -88.8624213; entrance",
+      "reason": "Точный natural=cave_entrance, name=Actun Tunichil Muknal Cave. Независимо сверено с текущим P625 Q344570 17.11412857,-88.86235254 (около 53 м). Отвергнуты устаревшая точка 17.1899,-88.4977 и вход на территорию 17.12872,-88.85067."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Actun Tunichil Muknal; ATM; Cave of the Crystal Sepulchre",
+      "reason": "Имена/варианты совпадают с основным объектом по источникам и MD/entry."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Расположение в Белизе подтверждено MD countryId, source-index и внешним источником."
+    }
+  ],
+  "reviewNote": "Сверена актуальная JSON-карточка Wikidata: устаревшие агрегаторы показывают неверную дальнюю точку. Выбрана точка входа непосредственно в пещеру по OSM, не парковка/вход в природный памятник."
+}

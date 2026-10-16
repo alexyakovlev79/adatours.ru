@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_kanajma_i_vodopad_anhel",
+  "stableId": "destination_venezuela_kanajma_i_vodopad_anhel",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/canaima-and-angel-falls/",
+  "sourceFingerprint": "a18ff66c8eba5d2a46f1bf789a3dc8a58be5cf1ca5a24e16c3051bc1f50fe500",
+  "status": "READY",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q1244337",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Canaima_National_Park"
+    },
+    "unescoSiteIds": [
+      "701"
+    ]
+  },
+  "alternateNames": [
+    "Canaima National Park",
+    "Parque Nacional Canaima"
+  ],
+  "location": {
+    "latitude": 5.337993888888889,
+    "longitude": -62.037883055555554,
+    "pointRole": "representative",
+    "coordinateSource": "https://whc.unesco.org/en/list/701/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://whc.unesco.org/en/list/701/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Основной референт составной страницы — национальный парк Канайма, включающий Анхель и другие водопады: так задано destinationType=national_park, summary и описание окружающей территории. Отдельный водопад Анхель — ключевая часть, не подмена всего объекта."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/canaima-and-angel-falls/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1244337.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Основной референт составной страницы — национальный парк Канайма, включающий Анхель и другие водопады: так задано destinationType=national_park, summary и описание окружающей территории. Отдельный водопад Анхель — ключевая часть, не подмена всего объекта. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1244337.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.unescoSiteIds",
+      "sourceUrl": "https://whc.unesco.org/en/list/701/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "UNESCO701 — национальный парк Канайма, выбранный основным референтом составной страницы; UNESCO прямо включает Анхель в его ландшафт."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://whc.unesco.org/en/list/701/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://whc.unesco.org/en/list/701/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Выбрана официальная опорная точка объекта UNESCO 701 (N5 20 16.778 W62 2 16.379), representative национального парка. P625 5.3193393,-61.7953505 — другая точка большого парка; не усреднялась. Это не положение/вершина/подножие Анхеля и не центр поселка Канайма."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1244337.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Выбрана официальная опорная точка объекта UNESCO 701 (N5 20 16.778 W62 2 16.379), representative национального парка. P625 5.3193393,-61.7953505 — другая точка большого парка; не усреднялась. Это не положение/вершина/подножие Анхеля и не центр поселка Канайма."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://whc.unesco.org/en/list/701/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "По правилу 70% составная страница связана с основным референтом Canaima National Park (90%), Q1244337/UNESCO701. Анхелю не выдан отдельный sameAs всей страницы. Координаты относятся к парку. Высота водопада и спорные утверждения MD не собирались.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 90,
+      "selected": "Канайма и водопад Анхель",
+      "reason": "Основной референт составной страницы — национальный парк Канайма, включающий Анхель и другие водопады: так задано destinationType=national_park, summary и описание окружающей территории. Отдельный водопад Анхель — ключевая часть, не подмена всего объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 90,
+      "selected": "Q1244337",
+      "reason": "Основной референт составной страницы — национальный парк Канайма, включающий Анхель и другие водопады: так задано destinationType=national_park, summary и описание окружающей территории. Отдельный водопад Анхель — ключевая часть, не подмена всего объекта. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 90,
+      "selected": "https://en.wikipedia.org/wiki/Canaima_National_Park",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "external.unescoSiteIds",
+      "probability": 90,
+      "selected": "701",
+      "reason": "UNESCO701 — национальный парк Канайма, выбранный основным референтом составной страницы; UNESCO прямо включает Анхель в его ландшафт."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 90,
+      "selected": "Canaima National Park; Parque Nacional Canaima",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "5.337993888888889, -62.037883055555554; representative",
+      "reason": "Выбрана официальная опорная точка объекта UNESCO 701 (N5 20 16.778 W62 2 16.379), representative национального парка. P625 5.3193393,-61.7953505 — другая точка большого парка; не усреднялась. Это не положение/вершина/подножие Анхеля и не центр поселка Канайма."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

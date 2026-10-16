@@ -80,7 +80,8 @@ const descriptions = ['Первая страна', 'Вторая страна', 
       options={interests} reset="Все интересы" resetHref={allInterestsHref} context="multi-country" />
   </div>
     <a class="mc-picker__reset" href={withBase('/multi-country/')} data-mc-reset hidden={!selected.length && !themeId}>
-      Сбросить и показать все мультистрановые туры
+      <span>Сбросить и показать</span>
+      <span>все мультистрановые туры</span>
     </a>
 
 </section>
@@ -208,6 +209,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   .mc-picker__remove:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
   .mc-picker__reset {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 48px;
@@ -225,6 +227,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     text-decoration: none;
     transition: background 180ms ease;
   }
+  .mc-picker__reset > span { white-space: nowrap; }
   .mc-picker__reset:hover { background: var(--color-gold); }
   .mc-picker__reset:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }
   @media (max-width: 600px) {

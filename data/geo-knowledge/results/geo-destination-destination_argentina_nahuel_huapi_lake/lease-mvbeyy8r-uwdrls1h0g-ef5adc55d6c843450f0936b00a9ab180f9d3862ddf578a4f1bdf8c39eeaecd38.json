@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_nahuel_huapi_lake",
+  "stableId": "destination_argentina_nahuel_huapi_lake",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/nahuel-huapi-lake/",
+  "sourceFingerprint": "20173acad6566b5ac2bf0f86731285ba3390a37c8da7ce5283d29e46b18a4009",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "lake",
+  "alternateNames": [
+    "Lago Nahuel Huapi",
+    "Nahuel Huapi Lake"
+  ],
+  "external": {
+    "wikidataQid": "Q498371",
+    "geonamesId": "3843472",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Nahuel_Huapi_Lake"
+    }
+  },
+  "location": {
+    "latitude": -40.91924,
+    "longitude": -71.52648,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3843472/lago-nahuel-huapi.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбрана опорная точка GeoNames в озере. P625 Wikidata (-41.090278,-71.335556) у юго-восточной части; точки не усреднялись.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Именно ледниковое озеро у Барилоче; не одноимённый национальный парк."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/nahuel-huapi-lake/",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Прямой HTTPS GET: 200; H1 совпадает с названием, canonical совпадает с job URL. Точный MD approved и source-index entry сверены на SHA cdd8b523a809da44458be6d763aa2c89541d2141."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Именно ледниковое озеро у Барилоче; не одноимённый национальный парк."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q498371",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q498371",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Именно ледниковое озеро у Барилоче; не одноимённый национальный парк."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q498371",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q498371",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3843472/lago-nahuel-huapi.html",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Выбрана опорная точка GeoNames в озере. P625 Wikidata (-41.090278,-71.335556) у юго-восточной части; точки не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Независимая сверка географического контекста и роли точки: Именно ледниковое озеро у Барилоче; не одноимённый национальный парк."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://barilocheturismo.gob.ar/en/lake-nahuel-huapi",
+      "checkedAt": "2026-10-16T20:26:36.298Z",
+      "note": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Озеро Науэль-Уапи",
+      "reason": "Именно ледниковое озеро у Барилоче; не одноимённый национальный парк."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "lake",
+      "reason": "Именно ледниковое озеро у Барилоче; не одноимённый национальный парк."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Lago Nahuel Huapi; Nahuel Huapi Lake",
+      "reason": "Имена точного референта сверены с MD и внешней карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q498371",
+      "reason": "Именно ледниковое озеро у Барилоче; не одноимённый национальный парк."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3843472",
+      "reason": "GeoNames ID точного географического объекта; класс и география согласуются с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Nahuel_Huapi_Lake",
+      "reason": "Sitelinks точного QID ведут к статьям об основном референте страницы."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "-40.91924, -71.52648",
+      "reason": "Выбрана опорная точка GeoNames в озере. P625 Wikidata (-41.090278,-71.335556) у юго-восточной части; точки не усреднялись."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Объект расположен в Аргентине; country_argentina подтверждён MD/entry. "
+    }
+  ]
+}

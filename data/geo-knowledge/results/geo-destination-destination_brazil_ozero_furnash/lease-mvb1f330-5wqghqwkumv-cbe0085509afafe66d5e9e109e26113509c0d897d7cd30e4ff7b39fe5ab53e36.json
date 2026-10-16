@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_ozero_furnash",
+  "stableId": "destination_brazil_ozero_furnash",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/lake-furnas/",
+  "sourceFingerprint": "7fde4a27d994818cb72e7e34c6952d2c33635d23376e8846c6a8a5955e4faf18",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "reservoir",
+  "external": {
+    "wikidataQid": "Q18624357",
+    "osm": {
+      "type": "relation",
+      "id": 2247210
+    }
+  },
+  "alternateNames": [
+    "Furnas Reservoir",
+    "Represa de Furnas",
+    "Lago de Furnas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/lake-furnas/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q18624357",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Furnas Reservoir, P31 reservoir, P17 Brazil, P131 Minas Gerais; dam Furnas Dam отдельная сущность."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2247210/full",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямое чтение: Furnas Reservoir, natural=water, water=reservoir, wikidata=Q18624357, source name IBGE."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q18624357",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "P625 20°40′59.999″S 46°15′0″W; представление с округлением до -20.683333333333334,-46.25, representative."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2247210/full",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Независимая проверка геометрии: 8 замкнутых внешних и 57 внутренних контуров; точка внутри внешнего и вне всех внутренних. Принадлежность true, не геометрический центр."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lake-furnas.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Объект — бразильское водохранилище Furnas, Minas Gerais; не озеро Furnas на Азорах, не плотина/электростанция и не отдельный Canyon de Furnas. P625 — опорная точка водоёма; принадлежность подтверждена OSM с учётом 57 внутренних контуров. Не точка причала экскурсии.",
+  "location": {
+    "latitude": -20.683333333333334,
+    "longitude": -46.25,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q18624357"
+  }
+}

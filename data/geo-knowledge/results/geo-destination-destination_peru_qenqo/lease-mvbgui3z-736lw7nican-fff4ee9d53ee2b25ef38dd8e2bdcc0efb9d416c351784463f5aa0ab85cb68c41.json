@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_qenqo",
+  "stableId": "destination_peru_qenqo",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/qenqo/",
+  "sourceFingerprint": "238130b78330e54f07bc845e46ec79b9cc3601387125a5105407934b689a53a1",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "alternateNames": [
+    "Q'enqo",
+    "Qenko",
+    "Kenko"
+  ],
+  "external": {
+    "wikidataQid": "Q2351926",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Qenko"
+    }
+  },
+  "location": {
+    "latitude": -13.510556,
+    "longitude": -71.971667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2351926"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/qenqo/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Кенко — отдельный инкский церемониальный комплекс Q’enqo возле Куско; название, скальные галереи и маршрут в MD совпадают с COSITUC и Q2351926. Исключён одноимённый объект региона Пуно."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://cosituccusco.pe/destinos/2/detalle/",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Кенко — отдельный инкский церемониальный комплекс Q’enqo возле Куско; название, скальные галереи и маршрут в MD совпадают с COSITUC и Q2351926. Исключён одноимённый объект региона Пуно."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2351926",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Кенко — отдельный инкский церемониальный комплекс Q’enqo возле Куско; название, скальные галереи и маршрут в MD совпадают с COSITUC и Q2351926. Исключён одноимённый объект региона Пуно."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Qenko",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2351926",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "P625 Q2351926 задаёт точку выбранного археологического памятника в соответствующем районе Перу. Роль representative; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2351926",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Qenko",
+      "checkedAt": "2026-10-16T21:20:01.754Z",
+      "note": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "destination_peru_qenqo",
+      "reason": "Кенко — отдельный инкский церемониальный комплекс Q’enqo возле Куско; название, скальные галереи и маршрут в MD совпадают с COSITUC и Q2351926. Исключён одноимённый объект региона Пуно."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2351926",
+      "reason": "Кенко — отдельный инкский церемониальный комплекс Q’enqo возле Куско; название, скальные галереи и маршрут в MD совпадают с COSITUC и Q2351926. Исключён одноимённый объект региона Пуно."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Qenko\"}",
+      "reason": "Проверена точная статья об этом памятнике/поселении; тип, страна и географический контекст совпадают с MD и соответствующей карточкой Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "-13.510556,-71.971667",
+      "reason": "P625 Q2351926 задаёт точку выбранного археологического памятника в соответствующем районе Перу. Роль representative; координата не является входом или центром административного района."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Проверены страна Peru в карточке выбранного объекта и перуанский контекст исходной страницы; связь с существующим stable ID country_peru."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Q'enqo; Qenko; Kenko",
+      "reason": "Местное латинское название и подтверждённые варианты именно выбранного объекта; название страны или соседнего объекта не добавлено."
+    }
+  ],
+  "reviewNote": null
+}

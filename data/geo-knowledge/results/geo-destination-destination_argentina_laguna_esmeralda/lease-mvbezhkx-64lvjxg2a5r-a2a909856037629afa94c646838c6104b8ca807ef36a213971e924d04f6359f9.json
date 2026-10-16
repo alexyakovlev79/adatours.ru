@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_laguna_esmeralda",
+  "stableId": "destination_argentina_laguna_esmeralda",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/laguna-esmeralda/",
+  "sourceFingerprint": "60725bff652aa89785f5236404d9d1026ec6a07c52dfbffc455344f2728455df",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "Lake",
+  "alternateNames": [
+    "Laguna Esmeralda"
+  ],
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 290281459
+    },
+    "officialUrl": "https://www.argentina.travel/actividades/laguna-esmeralda"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/laguna-esmeralda/",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "HTTP 200; H1 совпадает. Сверены stable ID, canonical URL, approved MD и точная source-index запись. Озеро близ Ушуайи на Огненной Земле совпадает по названию, типу и походному контексту с официальной карточкой Visit Argentina и OSM way 290281459; одноименные объекты Чили и Жужуя исключены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.argentina.travel/actividades/laguna-esmeralda",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Lake соответствует основному объекту страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.argentina.travel/actividades/laguna-esmeralda",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Местное имя основного объекта: Laguna Esmeralda."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.argentina.travel/actividades/laguna-esmeralda",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Страна объекта/выбранного аргентинского туристического референта — Аргентина; соответствует countryId в MD и source-index."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/290281459",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "OSM API full: name=Laguna Esmeralda, natural=water, water=lake; контур у Ушуайи."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W290281459",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "QID не установлен; сохранена подтвержденная OSM-геометрия озера. Точка Mapcarta сопоставлена с загруженным контуром OSM, без усреднения координат разных источников."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.argentina.travel/actividades/laguna-esmeralda",
+      "checkedAt": "2026-10-16T20:26:54.077Z",
+      "note": "Точная официальная карточка объекта, проверены заголовок и география."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Laguna Esmeralda",
+      "reason": "Озеро близ Ушуайи на Огненной Земле совпадает по названию, типу и походному контексту с официальной карточкой Visit Argentina и OSM way 290281459; одноименные объекты Чили и Жужуя исключены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "Lake",
+      "reason": "Тип установлен по MD и географической карточке."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Laguna Esmeralda",
+      "reason": "Каноническое местное название подтверждено внешним источником."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Согласованы страна текущей страницы и внешний географический источник."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "{\"type\":\"way\",\"id\":290281459}",
+      "reason": "Прочитаны теги точной OSM-геометрии; совпадают название, тип и регион."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "{\"latitude\":-54.6903,\"longitude\":-68.1298,\"coordinateSource\":\"https://mapcarta.com/W290281459\",\"pointRole\":\"representative\"}",
+      "reason": "Выбрана точка с указанной ролью и источником; альтернативные координаты не усреднялись."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.argentina.travel/actividades/laguna-esmeralda",
+      "reason": "Карточка национальной парковой службы/официального туристического ведомства."
+    }
+  ],
+  "reviewNote": "QID не установлен; сохранена подтвержденная OSM-геометрия озера. Точка Mapcarta сопоставлена с загруженным контуром OSM, без усреднения координат разных источников.",
+  "location": {
+    "latitude": -54.6903,
+    "longitude": -68.1298,
+    "coordinateSource": "https://mapcarta.com/W290281459",
+    "pointRole": "representative"
+  }
+}

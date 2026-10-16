@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_beliz_siti",
+  "stableId": "destination_belize_beliz_siti",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/belize-city/",
+  "sourceFingerprint": "c4dbda93781beb2c87ceeb619311f9eb1d61b6118227f5923286c94671a8c696",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q108223",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Belize_City"
+    },
+    "geonamesId": "3582677",
+    "osm": {
+      "type": "relation",
+      "id": 14902774
+    }
+  },
+  "location": {
+    "latitude": 17.4986111,
+    "longitude": -88.1886111,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q108223"
+  },
+  "alternateNames": [
+    "Belize City"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/belize/place/belize-city/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q108223",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Город Belize City; исключена отдельная Wikidata-карточка порта Q111387584."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q108223",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Belize City."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q108223",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q108223",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 3582677; P1566 соответствует именованному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q108223",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "P625 точной карточки города как representative; не координаты портового терминала."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q108223",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q108223",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географический объект Белиза, согласуется с countryId текущего MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/relation/14902774",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Проверены live relation tags name/place/boundary и точный wikidata=Q108223."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город Belize City; исключена отдельная Wikidata-карточка порта Q111387584. P625 точной карточки города как representative; не координаты портового терминала.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Belize City",
+      "reason": "Город Belize City; исключена отдельная Wikidata-карточка порта Q111387584."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q108223",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Belize_City",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3582677",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "17.4986111, -88.1886111",
+      "reason": "P625 точной карточки города как representative; не координаты портового терминала."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Belize City",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна текущего MD и точного внешнего объекта совпадает."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/14902774",
+      "reason": "Live OSM API подтверждает тот же QID, название и тип."
+    }
+  ]
+}

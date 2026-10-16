@@ -1,0 +1,208 @@
+name: One-time normalize SEO-GEO FAQ
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/normalize-seo-geo-faq-once.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: seo-geo-faq-migration-once
+  cancel-in-progress: false
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: true
+      - name: Normalize all editorial FAQs without rewriting content
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, re, sys
+          from pathlib import Path
+
+          ROOT = Path('data/seo-geo/articles')
+          AUDIT = Path('data/audits/seo-geo-faq-20261016.json')
+          FAQ = re.compile(r'^(?:частые\s+вопросы|часто\s+задаваемые\s+вопросы|вопросы\s+и\s+ответы|популярные\s+вопросы|faq\b|вопросы\s+по\s+теме\b)', re.I)
+          HEADING = re.compile(r'^(#{2,6})\s+(.+?)\s*$')
+          BOLD = re.compile(r'^\s*(?:([-*+]|\d+[.)])\s+)?(\*\*|__)([^*\n]{4,210}\?)\2[ \t]*(.*)$')
+          ITALIC = re.compile(r'^\s*(?:([-*+]|\d+[.)])\s+)?(\*|_)([^*\n]{4,210}\?)\2[ \t]*(.*)$')
+          QSTART = re.compile(r'^(?:как|когда|где|куда|почему|зачем|что|кто|какой|какие|какая|сколько|можно\s+ли|нужно\s+ли|стоит\s+ли|есть\s+ли|входит\s+ли|будет\s+ли|обязательно\s+ли|правда\s+ли|подойдет\s+ли|подходит\s+ли|отличается\s+ли|возможно\s+ли|чем|для\s+кого|а\s+если|в\s+чем|нужна\s+ли|нужен\s+ли|во\s+всех\s+ли)\b', re.I)
+
+          def faq_name(s):
+              return re.sub(r'^\d+[.)]\s+', '', re.sub(r'\s+#+\s*$', '', s.strip()).strip('*_ '))
+
+          def is_faq(s):
+              return bool(FAQ.match(faq_name(s)))
+
+          def digest(s):
+              s = re.sub(r'(?m)^\s*#{2,6}\s+', '', s)
+              s = re.sub(r'(?m)^\s*(?:[-*+]|\d+[.)])\s+', '', s)
+              s = s.replace('**', '').replace('__', '')
+              return re.sub(r'\s+', ' ', s).strip()
+
+          def normalize(raw, file):
+              fm = re.match(r'\A---\r?\n[\s\S]*?\r?\n---\r?\n', raw)
+              if not fm:
+                  raise ValueError('Missing frontmatter: ' + file)
+              front, body = raw[:fm.end()], raw[fm.end():]
+              lf = '\r\n' if '\r\n' in body else '\n'
+              lines, output = body.splitlines(keepends=False), []
+              ended = body.endswith(('\n', '\r'))
+              faq_active = False
+              faq_line = -1
+              questions = 0
+              fences = None
+              sections = 0
+              conversions = {}
+              errors = []
+
+              def increment(kind):
+                  conversions[kind] = conversions.get(kind, 0) + 1
+
+              def close():
+                  nonlocal faq_active, questions
+                  if faq_active and questions == 0:
+                      errors.append(f'{file}:{faq_line}: FAQ without recognizable questions')
+                  faq_active = False
+                  questions = 0
+
+              for idx, line in enumerate(lines):
+                  line_no = idx + 1
+                  fence = re.match(r'^\s{0,3}([\x60]{3,}|~{3,})', line)
+                  if fence:
+                      start = fence.group(1)
+                      if fences is None:
+                          fences = (start[0], len(start))
+                      elif start[0] == fences[0] and len(start) >= fences[1]:
+                          fences = None
+                      output.append(line)
+                      continue
+                  if fences:
+                      output.append(line)
+                      continue
+                  h = HEADING.match(line)
+                  if h and is_faq(h.group(2)):
+                      close()
+                      faq_active, faq_line, questions = True, line_no, 0
+                      sections += 1
+                      if h.group(1) != '##':
+                          output.append('## ' + h.group(2))
+                          increment('faq-heading-to-h2')
+                      else:
+                          output.append(line)
+                      continue
+                  if faq_active and h:
+                      level = len(h.group(1))
+                      title = h.group(2).strip()
+                      if title.endswith('?') and level in (2,3,4,5,6):
+                          if level != 3:
+                              output.append('### ' + title)
+                              increment('question-heading-to-h3')
+                          else:
+                              output.append(line)
+                          questions += 1
+                          continue
+                      if level <= 3:
+                          close()
+                          output.append(line)
+                          continue
+                      errors.append(f'{file}:{line_no}: unexpected heading within FAQ: {line[:80]}')
+                      output.append(line)
+                      continue
+                  if not faq_active:
+                      output.append(line)
+                      continue
+                  match = BOLD.match(line) or ITALIC.match(line)
+                  if match:
+                      title, answer = match.group(3).strip(), match.group(4)
+                      output += ['### ' + title]
+                      if answer.strip():
+                          output += ['', answer.lstrip()]
+                      elif idx + 1 < len(lines) and lines[idx+1].strip():
+                          output.append('')
+                      questions += 1
+                      increment('bold-or-italic-question-to-h3')
+                      continue
+                  short = line.strip()
+                  if (short == line and 6 <= len(short) <= 210 and short.endswith('?')
+                          and QSTART.match(short) and not short.startswith(('>', '-', '+', '*', '['))):
+                      output.append('### ' + short)
+                      if idx + 1 < len(lines) and lines[idx+1].strip():
+                          output.append('')
+                      increment('plain-question-to-h3')
+                      questions += 1
+                      continue
+                  if re.match(r'^\s*(?:[-*+]|\d+[.)])\s+[^\n]{8,180}\?\s*$', line):
+                      errors.append(f'{file}:{line_no}: possible list-form FAQ question, review required')
+                  output.append(line)
+              close()
+              new_body = lf.join(output)
+              if ended and not new_body.endswith(lf):
+                  new_body += lf
+              new = front + new_body
+              if digest(body) != digest(new_body):
+                  errors.append(f'{file}: semantic text changed unexpectedly')
+              if re.findall(r'\]\(/[^)]+\)', raw) != re.findall(r'\]\(/[^)]+\)', new):
+                  errors.append(f'{file}: internal links changed')
+              if re.findall(r'\{\{[^{}]+\}\}', raw) != re.findall(r'\{\{[^{}]+\}\}', new):
+                  errors.append(f'{file}: template variables changed')
+              return new, sections, conversions, errors
+
+          files = sorted(ROOT.rglob('index.md'))
+          changes = []
+          errors = []
+          converted = {}
+          sections_total = 0
+          for file in files:
+              text = file.read_text(encoding='utf-8')
+              rel = file.as_posix()
+              try:
+                  new, sections, kinds, bad = normalize(text, rel)
+              except Exception as exc:
+                  errors.append(f'{rel}: {exc}')
+                  continue
+              sections_total += sections
+              for k,n in kinds.items():
+                  converted[k] = converted.get(k, 0) + n
+              errors.extend(bad)
+              if new != text:
+                  changes.append((file,new))
+          summary = {
+              'version': 1, 'date': '2026-10-16', 'articlesChecked': len(files),
+              'faqSections': sections_total, 'articlesChanged': len(changes),
+              'changesByFormat': converted, 'unresolvedCount': len(errors),
+              'unresolvedExamples': errors[:100],
+              'changedFiles': [f.as_posix() for f,_ in changes],
+          }
+          print(json.dumps({k:v for k,v in summary.items() if k != 'changedFiles'}, ensure_ascii=False, indent=2))
+          if errors:
+              sys.exit('FAQ migration blocked: fix ambiguous cases before any files are changed')
+          for file, new in changes:
+              file.write_text(new, encoding='utf-8')
+          for file, _ in changes:
+              current = file.read_text(encoding='utf-8')
+              again, _, _, issues = normalize(current, file.as_posix())
+              if current != again or issues:
+                  sys.exit('Failed idempotency: '+file.as_posix()+' '+str(issues))
+          AUDIT.parent.mkdir(parents=True, exist_ok=True)
+          AUDIT.write_text(json.dumps(summary, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          PY
+      - name: Create isolated audited migration branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c faq/normalize-2026-10-16
+          git add data/seo-geo/articles data/audits/seo-geo-faq-20261016.json
+          git diff --cached --check
+          git commit -m "content(seo-geo): normalize FAQ structure in all authored articles"
+          git push origin HEAD:refs/heads/faq/normalize-2026-10-16

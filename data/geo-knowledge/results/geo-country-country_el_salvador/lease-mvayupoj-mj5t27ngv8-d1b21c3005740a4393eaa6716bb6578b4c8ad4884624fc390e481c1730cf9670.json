@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_el_salvador",
+  "stableId": "country_el_salvador",
+  "kind": "country",
+  "canonicalPath": "/el-salvador/",
+  "sourceFingerprint": "7a65a552b804d42cc25bac816d2adee4e092bc7824bba16a2972430c4f208d51",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign state",
+  "alternateNames": [
+    "El Salvador",
+    "Republic of El Salvador",
+    "República de El Salvador",
+    "Республика Эль-Сальвадор"
+  ],
+  "external": {
+    "wikidataQid": "Q792",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/El_Salvador"
+    },
+    "geonamesId": "3585968",
+    "osm": {
+      "type": "relation",
+      "id": 1520612
+    },
+    "officialUrl": "https://www.presidencia.gob.sv/"
+  },
+  "relationships": [],
+  "confidence": "high",
+  "reviewNote": "Сопоставлена страна Эль-Сальвадор Q792, не столица Сан-Сальвадор и не Салвадор в Бразилии. Координаты расходятся: Wikidata 13°40′8″N 88°51′58″W; GeoNames 13.83333,−88.91667; English Wikipedia 13.683,−89.183. Location опущен, без усреднения. Валютное поле исходного MD SVC не актуализировалось: эта очередь не собирает платежные правила. URL президентской администрации — officialUrl, не sameAs страны.",
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/el-salvador/",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое HTTP-открытие: 200, без смены URL; H1 совпадает с названием, canonical совпадает с этим URL; robots=index,follow."
+    },
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/countries/el-salvador.md",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Текущий main: country_el_salvador, status=approved; slug и contentPath совпадают с source-index entry. Blob 13245e8a626af5ffc3eec2bad5ec0995d2726164."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q792",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Точная географическая сущность Q792; название, территория и класс sovereign state соответствуют странице сайта."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q792",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P31: sovereign state/country; паспорт страны целиком."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q792",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Названия проверены по меткам/официальным именам этой сущности и точной странице; другие города/исторические образования исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/El_Salvador",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Открыта точная статья об этой территории/стране; не страница неоднозначностей и не отдельный город."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3585968/republic-of-el-salvador.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое открытие HTTP 200: ID 3585968, Republic of El Salvador, A.PCLI Independent political entity. Сверено с P1566 Q792."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/relation/1520612.json",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямой OSM API HTTP 200: relation 1520612 v217, name=El Salvador, admin_level=2, ISO3166-1=SV, wikidata=Q792, wikipedia=es:El Salvador; сверено с P402 Q792."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q792",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P625: 13°40′8″N 88°51′58″W; English Wikipedia дает 13.683,−89.183. Location не включен."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.geonames.org/3585968/republic-of-el-salvador.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Проверенные координаты GeoNames: 13.83333,−88.91667. Несогласованные/не подтвержденные независимо точки не усреднять."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://en.wikipedia.org/wiki/El_Salvador",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Координатный заголовок открыт и сопоставлен с Wikidata/GeoNames; причины исключения location сохранены в reviewNote."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.presidencia.gob.sv/",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямой HTTP 200; заголовок/содержание подтверждают официальный орган этой территории/государства. Институциональный URL не трактовать автоматически как sameAs географического объекта."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/el-salvador/",
+      "https://www.wikidata.org/wiki/Q792",
+      "https://en.wikipedia.org/wiki/El_Salvador",
+      "https://www.geonames.org/3585968/republic-of-el-salvador.html",
+      "https://www.openstreetmap.org/relation/1520612",
+      "https://www.presidencia.gob.sv/"
+    ],
+    "findings": [
+      "Точные stable ID, канонический URL и активный опубликованный HTML подтверждены.",
+      "QID, GeoNames и OSM согласованы по имени, территории и классу объекта.",
+      "Location отложен: независимая проверка роли точки не завершена. Готовы только подтвержденные поля."
+    ]
+  }
+}

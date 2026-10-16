@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_antarctica_lemaire_channel",
+  "stableId": "destination_antarctica_lemaire_channel",
+  "kind": "destination",
+  "canonicalPath": "/antarctica/place/lemaire-channel/",
+  "sourceFingerprint": "56437d3c09a46c0c43ead5b7b37f9dd3adaaf976ce1089405e8884aa40f63643",
+  "status": "READY",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q837233",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lemaire_Channel"
+    },
+    "geonamesId": "6636839"
+  },
+  "location": {
+    "latitude": -65.08333,
+    "longitude": -63.98333,
+    "pointRole": "representative",
+    "coordinateSource": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109791"
+  },
+  "alternateNames": [
+    "Lemaire Channel"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_antarctica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/antarctica/place/lemaire-channel/",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точный URL проверен HTTP 200, canonical совпадает, noindex отсутствует; актуальный MD/source-index ID, страна и тип сверены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109791",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Пролив между островом Бут и побережьем Земли Грейама; не остров Лемэр и не пролив Ле-Мер у Огненной Земли."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q837233",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Совпадают именованный объект, тип и география: Lemaire Channel."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q837233",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная английская Wikipedia взята из enwiki sitelink соответствующего QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q837233",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Точная географическая карточка 6636839; P1566 соответствует именованному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109791",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Выбрана точка официальной карточки AADC как representative. P625 Wikidata −65.133, −64 относится к другому участку протяжённого пролива; не усредняли."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q837233",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Английское название выбранного геообъекта."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "sourceUrl": "https://data.aad.gov.au/aadc/gaz/display_name.cfm?gaz_id=109791",
+      "checkedAt": "2026-10-16T21:24:13.389Z",
+      "note": "Географически в Антарктиде; не утверждает суверенитет государства."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Пролив между островом Бут и побережьем Земли Грейама; не остров Лемэр и не пролив Ле-Мер у Огненной Земли. Выбрана точка официальной карточки AADC как representative. P625 Wikidata −65.133, −64 относится к другому участку протяжённого пролива; не усредняли.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Lemaire Channel",
+      "reason": "Пролив между островом Бут и побережьем Земли Грейама; не остров Лемэр и не пролив Ле-Мер у Огненной Земли."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q837233",
+      "reason": "Соответствие по имени, географии и типу после проверки конкурирующих объектов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Lemaire_Channel",
+      "reason": "Подтверждённый enwiki sitelink выбранного QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6636839",
+      "reason": "Точная связь GeoNames с выбранным геообъектом; не туристический функциональный аналог."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-65.08333, -63.98333",
+      "reason": "Выбрана точка официальной карточки AADC как representative. P625 Wikidata −65.133, −64 относится к другому участку протяжённого пролива; не усредняли."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Lemaire Channel",
+      "reason": "Английское название в выбранной Wikidata-карточке."
+    },
+    {
+      "field": "relationships.country_antarctica",
+      "probability": 99,
+      "selected": "country_antarctica",
+      "reason": "Географический регион Антарктида, без признания территориальных претензий."
+    }
+  ]
+}

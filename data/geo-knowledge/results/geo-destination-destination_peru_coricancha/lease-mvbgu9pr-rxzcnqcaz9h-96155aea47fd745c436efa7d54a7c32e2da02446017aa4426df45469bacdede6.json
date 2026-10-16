@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_coricancha",
+  "stableId": "destination_peru_coricancha",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/coricancha/",
+  "sourceFingerprint": "4e9e92c3fdc0b93c394015ac4ad703e67e40c4db6856f9d9aa3728de507e5ab5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "ArchaeologicalSite",
+  "external": {
+    "wikidataQid": "Q817594",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Coricancha"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/coricancha.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/coricancha/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/vamos-al-coricancha-el-principal-templo-en-el-imperio-inca",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/vamos-al-coricancha-el-principal-templo-en-el-imperio-inca",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/es/inspirate/vamos-al-coricancha-el-principal-templo-en-el-imperio-inca",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q817594",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q817594",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная ссылка на статью о выбранном объекте, связанная из OSM/Wikidata; URL открыт, не страница неоднозначностей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q817594",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "P625 точного Wikidata-объекта; DMS переведены в десятичные WGS84 без усреднения."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q817594",
+      "reason": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "ArchaeologicalSite",
+      "reason": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q817594",
+      "reason": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Coricancha",
+      "reason": "MD прямо именует Кориканчу Храмом Солнца в Куско; тип city в frontmatter не соответствует смыслу текста. Выбран инкский храм, не город Куско, монастырь Санто-Доминго целиком или отдельный музей."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-13.520111111111111,-71.97571944444445",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью feature_point."
+    }
+  ],
+  "reviewNote": "Фактический объект — инкский храм/археологический памятник, хотя исходный destinationType=city. Сам MD не изменён. P625 относится к храму; роль feature_point, не вход или координаты города. GeoNames/OSM не добавлены без точной подтверждённой карточки.",
+  "location": {
+    "latitude": -13.5201111,
+    "longitude": -71.9757194,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q817594"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_trindadi_parati",
+  "stableId": "destination_brazil_trindadi_parati",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/trindade-paraty/",
+  "sourceFingerprint": "eb0c48658d4ac739e01b851b30b04a482cc6374b45a71f55a15c639451a207e1",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "coastal village",
+  "alternateNames": [
+    "Trindade",
+    "Trindade, Rio de Janeiro",
+    "Vila de Trindade"
+  ],
+  "external": {
+    "wikidataQid": "Q10391383",
+    "osm": {
+      "type": "node",
+      "id": 534696010
+    },
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Trindade_(Paraty)",
+      "en": "https://en.wikipedia.org/wiki/Trindade,_Rio_de_Janeiro"
+    }
+  },
+  "location": {
+    "latitude": -23.3507307,
+    "longitude": -44.7256883,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/534696010.json"
+  },
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10391383",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Village in Paraty municipality, Rio de Janeiro, Brazil; P17=Brazil, P131=Paraty. Not Trindade in Goiás, Pernambuco, or the Atlantic island."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/534696010.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "OSM place=village, name=Trindade, wikidata=Q10391383 and exact Portuguese Wikipedia tag."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10391383",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "ptwiki and enwiki sitelinks confirmed in EntityData for the same coastal settlement."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/534696010.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Selected named village-center OSM point in WGS84; not the Cachadaço swimming pool or a park entrance."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10391383",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent P625 -23.350694444444,-44.723888888889 differs by approximately 184 m, within the coastal village. No averaging."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-serra-da-bocaina/trindade",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "ICMBio identifies the Trindade coastal visitor sector. Its national-park boundaries are not assigned as the village identity."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/trindade-paraty.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/trindade-paraty/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/trindade-paraty/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

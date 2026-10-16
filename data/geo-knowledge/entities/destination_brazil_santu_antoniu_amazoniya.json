@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_santu_antoniu_amazoniya",
+  "stableId": "destination_brazil_santu_antoniu_amazoniya",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/santo-antonio-amazon/",
+  "sourceFingerprint": "4b7222b6757708c3e1999b6c86bb400e0ec3a46227269e1907748f39a23a20ff",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "riverside hamlet",
+  "alternateNames": [
+    "Santo Antônio",
+    "Santo Antonio"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4008784663
+    }
+  },
+  "location": {
+    "latitude": -2.7312877,
+    "longitude": -60.8246309,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4008784663.json"
+  },
+  "evidence": [
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4008784663.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "name=Santo Antonio, place=hamlet, is_in:municipality=Novo Airão, is_in:state=Amazonas, source=IBGE. Selected using the current tour based at Mirante do Gavião in Novo Airão and its paired visit to Tiririca."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4008784663.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Named settlement node in WGS84; selected as a representative settlement-center label, not a surveyed entrance."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://pub.mdpi-res.com/atmosphere/atmosphere-13-01906/article_deploy/html/images/atmosphere-13-01906-g001.png",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent field-study overview map of the lower Rio Negro RDS and four studied communities was inspected. Supports the riverbank/reserve context, not metre-level accuracy; no coordinate digitisation from the map."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://rsdjournal.org/rsd/article/view/17222",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Field research independently names Santo Antonio, Tiririca and Marajá in Novo Airão. Not Santo Antônio do Içá, the Manaus neighbourhood, or Santo Antônio do Lago do Tiririca in Iranduba."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://amazonreceptive.com.br/en/itineraries/mirante-do-gaviao-lodge-jungle-hotel/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Lodge itinerary explicitly pairs Santo Antônio and Tiririca community visits, consistent with current Ada Tours program. No GeoNames identity assigned: homonymous record 3662422 is at a different location."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/santo-antonio-amazon.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/santo-antonio-amazon/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/santo-antonio-amazon/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

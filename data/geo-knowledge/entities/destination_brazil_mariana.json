@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_mariana",
+  "stableId": "destination_brazil_mariana",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/mariana/",
+  "sourceFingerprint": "9bbf0a21ac803304f8889b641297a47caeab94c3d80c40b7ae6391cb6837ec16",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/mariana.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob 393eaf233ee4740e50e7ba044cab3d9831a1e4f5; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/mariana/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q984567",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q984567: Mariana, город/муниципалитет Minas Gerais, Brazil; совпадают страна и объект. Город/муниципалитет Мариана. Шахта Passagem — отдельный объект. Английская Wikipedia дает долготу -43.39972 (~1.7 км восточнее); выбран GeoNames, практически совпадающий с Wikidata. ADM2 6321545 (-20.32403,-43.30662) не городская точка."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mariana,_Minas_Gerais",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная статья о Mariana в Minas Gerais, Brazil. Проверена идентичность; координаты статьи не используются автоматически."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3457736/mariana.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames 3457736: населенный пункт/городская административная резиденция Mariana, Minas Gerais, Brazil. Отделен от одноименного ADM2. SHA-256 прочитанного HTML 25dd23dca0ade9e7183fd9092c10bd57ad973fa20f2d729ceda8e6211a0708a3."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3457736/mariana.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84: latitude -20.37778, longitude -43.41611; городская опорная точка записи PPL/PPLA/PPLA2, не границы и не адрес входа. SHA-256 HTML 25dd23dca0ade9e7183fd9092c10bd57ad973fa20f2d729ceda8e6211a0708a3."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q984567",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимая сверка с P625 -20.37787006111111, -43.416349619444446: расстояние 27 м, тот же населенный пункт. Точки не усреднялись. Город/муниципалитет Мариана. Шахта Passagem — отдельный объект. Английская Wikipedia дает долготу -43.39972 (~1.7 км восточнее); выбран GeoNames, практически совпадающий с Wikidata. ADM2 6321545 (-20.32403,-43.30662) не городская точка."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3457736/mariana.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames hierarchy: Brazil > Minas Gerais > одноименный муниципалитет > населенный пункт."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/mariana/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "Город/муниципалитет Мариана. Шахта Passagem — отдельный объект. Английская Wikipedia дает долготу -43.39972 (~1.7 км восточнее); выбран GeoNames, практически совпадающий с Wikidata. ADM2 6321545 (-20.32403,-43.30662) не городская точка.",
+      "GeoNames/Wikidata: 27 м между опорными точками."
+    ]
+  },
+  "entityClass": "city_and_municipality",
+  "external": {
+    "wikidataQid": "Q984567",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mariana,_Minas_Gerais"
+    },
+    "geonamesId": "3457736"
+  },
+  "alternateNames": [
+    "Mariana"
+  ],
+  "location": {
+    "latitude": -20.37778,
+    "longitude": -43.41611,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3457736/mariana.html"
+  },
+  "reviewNote": "Город/муниципалитет Мариана. Шахта Passagem — отдельный объект. Английская Wikipedia дает долготу -43.39972 (~1.7 км восточнее); выбран GeoNames, практически совпадающий с Wikidata. ADM2 6321545 (-20.32403,-43.30662) не городская точка. Координата обозначает городскую опорную точку из GeoNames, не вычисленный центроид муниципальных границ."
+}

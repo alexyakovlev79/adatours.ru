@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_gramadu",
+  "stableId": "destination_brazil_gramadu",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/gramado/",
+  "sourceFingerprint": "3ff0dc446dc2d4be2ce8e9159152bca28586ad7f9535e184744056dd8da25259",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/gramado.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob 9fdfe12bcb0fb9282b6ddd825629d7f1b4d94cc6; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/gramado/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q694833",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q694833: Gramado, город/муниципалитет Rio Grande do Sul, Brazil; совпадают страна и объект. GeoNames и Wikidata почти совпадают. Английская Wikipedia имеет две альтернативы -29.400,-50.867 и -29.40472,-50.87639; обе исключены как источники выбранной точки. Не Канела и не водопад Caracol."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gramado",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная статья о Gramado в Rio Grande do Sul, Brazil. Проверена идентичность; координаты статьи не используются автоматически."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3462284/gramado.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames 3462284: населенный пункт/городская административная резиденция Gramado, Rio Grande do Sul, Brazil. Отделен от одноименного ADM2. SHA-256 прочитанного HTML efd34d77172b1d866b598ed9443928e4b6c510f97432886495a5e5a02cd019d6."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3462284/gramado.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84: latitude -29.37861, longitude -50.87389; городская опорная точка записи PPL/PPLA/PPLA2, не границы и не адрес входа. SHA-256 HTML efd34d77172b1d866b598ed9443928e4b6c510f97432886495a5e5a02cd019d6."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q694833",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимая сверка с P625 -29.378888888888888, -50.87388888888889: расстояние 31 м, тот же населенный пункт. Точки не усреднялись. GeoNames и Wikidata почти совпадают. Английская Wikipedia имеет две альтернативы -29.400,-50.867 и -29.40472,-50.87639; обе исключены как источники выбранной точки. Не Канела и не водопад Caracol."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3462284/gramado.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames hierarchy: Brazil > Rio Grande do Sul > одноименный муниципалитет > населенный пункт."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/gramado/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "GeoNames и Wikidata почти совпадают. Английская Wikipedia имеет две альтернативы -29.400,-50.867 и -29.40472,-50.87639; обе исключены как источники выбранной точки. Не Канела и не водопад Caracol.",
+      "GeoNames/Wikidata: 31 м между опорными точками."
+    ]
+  },
+  "entityClass": "city_and_municipality",
+  "external": {
+    "wikidataQid": "Q694833",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Gramado"
+    },
+    "geonamesId": "3462284"
+  },
+  "alternateNames": [
+    "Gramado"
+  ],
+  "location": {
+    "latitude": -29.37861,
+    "longitude": -50.87389,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3462284/gramado.html"
+  },
+  "reviewNote": "GeoNames и Wikidata почти совпадают. Английская Wikipedia имеет две альтернативы -29.400,-50.867 и -29.40472,-50.87639; обе исключены как источники выбранной точки. Не Канела и не водопад Caracol. Координата обозначает городскую опорную точку из GeoNames, не вычисленный центроид муниципальных границ."
+}

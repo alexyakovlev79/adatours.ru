@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_itakurusa",
+  "stableId": "destination_brazil_itakurusa",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/itacuruca/",
+  "sourceFingerprint": "b206d5050ae067b14a8ddbd4f08d82d0edc1cd377d388f9450c1048dc49e349a",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "municipal_district_settlement",
+  "external": {
+    "wikidataQid": "Q16878145",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Itacuru%C3%A7%C3%A1",
+      "pt": "https://pt.wikipedia.org/wiki/Itacuru%C3%A7%C3%A1"
+    },
+    "osm": {
+      "type": "node",
+      "id": 416645407
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/itacuruca/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/itacuruca.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16878145",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Municipality district of Brazil, country Brazil; sitelinks pt/en Itacuruçá, не остров."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Itacuru%C3%A7%C3%A1",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Описание district of municipality Mangaratiba, Greater Rio de Janeiro, Brazil; соответствует отправной точке лодочных прогулок MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/map?bbox=-43.913,-22.932,-43.901,-22.922",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой OSM bbox XML содержит node 416645407 name Itacurussá place village source IBGE и отдельные island relation 7798207, district boundary 14602650. Поселок и остров различены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/416645407.json",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой OSM bbox XML node 416645407 −22.9278000,−43.9083000; опорная точка материкового поселка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16878145",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Независимая пространственная сверка: P625 22°55′35.26″S,43°54′21.17″W, около 290 м от поселковой точки OSM; район включает тот же поселок, островная точка лежит отдельно."
+    }
+  ],
+  "alternateNames": [
+    "Itacuruçá",
+    "Itacurussá"
+  ],
+  "location": {
+    "latitude": -22.9278,
+    "longitude": -43.9083,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/416645407.json"
+  },
+  "reviewNote": "Страница — материковый поселок/район, откуда уходят лодки; не Ilha de Itacuruçá Q10301150 и не пляж. OSM node — поселок, не административный полигон района; точка representative. P625 района отличается примерно на 300 м, не усреднялась."
+}

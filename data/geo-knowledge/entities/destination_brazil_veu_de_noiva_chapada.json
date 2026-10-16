@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_veu_de_noiva_chapada",
+  "stableId": "destination_brazil_veu_de_noiva_chapada",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/veu-de-noiva-chapada/",
+  "sourceFingerprint": "d4d3904ed1d65d9628a84d477dafb96b40bc5fe771990db7af62a89e65908899",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "waterfall",
+  "external": {
+    "officialUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/9/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/veu-de-noiva-chapada.md",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Новый поиск муниципальной карточки и первичной SGB-программы точно подтверждает водопад Rio Coxipó в национальном парке; другие Véu de Noiva в Bahia и Livramento исключены."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/veu-de-noiva-chapada/",
+      "checkedAt": "2026-10-16T15:40:32.716251+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/9/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Муниципальная карточка VÉU DE NOIVA описывает водопад внутри Parque Nacional, Rio Coxipó."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.sgb.gov.br/geossit/geossitios/ver/2191",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "SGB отдельно описывает Geossítio Cachoeira Véu de Noiva возле административной базы парка."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://rigeo.sgb.gov.br/server/api/core/bitstreams/1355724d-3692-48b0-b815-10de9485033f/content",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Новая первичная публикация поясняет, что табличные точки являются центроидами полигонов геосайтов; это объясняет часть расхождений с visitor POI, а не дает точную координату падения воды."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/9/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/9/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Официальное муниципальное описание точного VÉU DE NOIVA; используется как officialUrl, не автоматически sameAs."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/9/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cachoeira Véu de Noiva в Parque Nacional da Chapada dos Guimarães",
+      "reason": "Новый поиск муниципальной карточки и первичной SGB-программы точно подтверждает водопад Rio Coxipó в национальном парке; другие Véu de Noiva в Bahia и Livramento исключены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "waterfall",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 94,
+      "selected": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/9/",
+      "reason": "Официальное муниципальное описание точного VÉU DE NOIVA; используется как officialUrl, не автоматически sameAs."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 65,
+      "reason": "Q1754208 имеет конфликтные P131/P625 и смешанную статью; оценка тождества именно нужному водопаду ниже70%, ID не добавлен."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 65,
+      "reason": "Статья с конфликтом Chapada/Nossa Senhora do Livramento требует отдельного исправления, не добавляется."
+    },
+    {
+      "field": "location",
+      "probability": 65,
+      "reason": "SGB-точка — центроид площадного геосайта, муниципальный visitor POI может быть смотровой. Точная роль точки самого водопада ещё ниже70%; паспорт READY без location."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/veu-de-noiva-chapada/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_nacionalnyj_park_serra_da_bokajna",
+  "stableId": "destination_brazil_nacionalnyj_park_serra_da_bokajna",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/serra-da-bocaina-national-park/",
+  "sourceFingerprint": "900b46b28a93b7f681834d22a78fd5a55cf43120c2a847f8ffb1f5b9f12225e4",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "national_park",
+  "external": {
+    "wikidataQid": "Q7455207",
+    "osm": {
+      "type": "relation",
+      "id": 2634128
+    },
+    "officialUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-serra-da-bocaina/parna-da-serra-da-bocaina"
+  },
+  "alternateNames": [
+    "Parque Nacional da Serra da Bocaina"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/serra-da-bocaina-national-park/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7455207",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Parque Nacional da Serra da Bocaina, national park, Brazil; не одноимённый горный массив."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2634128/full",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямое чтение: boundary=national_park, wikidata=Q7455207, оператор ICMBio, CNUC 00.0000.0142."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-serra-da-bocaina/parna-da-serra-da-bocaina",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Точная официальная страница национального парка, подтверждает RJ/SP и прибрежный участок Trindade; официальный URL не интерпретируется сборщиком как sameAs."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7455207",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "P625 22°57′46.8″S 44°40′12″W = -22.963,-44.67; representative для площадного парка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/2634128/full",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Независимая геометрическая сверка в контуре OSM, 1 outer, 0 inner; point-in-polygon true. Это проверка принадлежности, не точности центра или доступности."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/serra-da-bocaina-national-park.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Опорная точка P625 принадлежит контуру парка OSM relation 2634128 (один внешний контур, внутренних нет). Это не вход, не центр посещений и не точка пляжа Trindade. ID UNESCO составного Paraty and Ilha Grande и ID горного массива парку не присваивались.",
+  "location": {
+    "latitude": -22.963,
+    "longitude": -44.67,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7455207"
+  }
+}

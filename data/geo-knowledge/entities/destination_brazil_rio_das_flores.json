@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_rio_das_flores",
+  "stableId": "destination_brazil_rio_das_flores",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/rio-das-flores/",
+  "sourceFingerprint": "e2961c74f1a9f3d904b44d53b92ce3d89daa488317867598961c70af8f53d02f",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "geonamesId": "3451208",
+    "osm": {
+      "type": "node",
+      "id": 338515506
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/rio-das-flores/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/rio-das-flores.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/rio-das-flores.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3451208/rio-das-flores.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "P PPL Rio das Flores, штат Rio de Janeiro; геокод муниципалитета 3304508."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/338515506.json",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Получен JSON place=village name=Rio das Flores, ref:LOCODE=BRRDF; версия 12."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.geonames.org/3451208/rio-das-flores.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Исторические варианты Santa Teresa и Santa Thereza."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/338515506.json",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "WGS84 опорная точка поселения OSM; не центроид муниципалитета."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3451208/rio-das-flores.html",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Независимая GeoNames координата −22.16750, −43.58556, около 155 м от OSM. Точки не усреднялись."
+    }
+  ],
+  "alternateNames": [
+    "Rio das Flores",
+    "Santa Teresa",
+    "Santa Thereza"
+  ],
+  "location": {
+    "latitude": -22.1661122,
+    "longitude": -43.5853593,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/338515506"
+  },
+  "reviewNote": "Q1761758/Wikipedia относятся к муниципалитету, а MD destinationType=city. Для строгого scope сохранены только settlement GeoNames/OSM; муниципальный QID и ADM2 GeoNames 6322058 не присвоены городу."
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_golubaya_peschera_bonito",
+  "stableId": "destination_brazil_golubaya_peschera_bonito",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/blue-lake-cave-bonito/",
+  "sourceFingerprint": "2e1884b749ff583f401560956590efc398f412ca3b805943e7e77472299008bb",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "cave",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 2382055156
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/blue-lake-cave-bonito/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/blue-lake-cave-bonito.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/2382055156.json",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой OSM API: node 2382055156, name Gruta do Lago Azul, name:en Blue Lake Cave, natural cave_entrance, tourism attraction."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/2382055156.json",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "WGS84 −21.1447124,−56.5915106. Явная роль entrance по тегу cave_entrance."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22687920",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Независимая карточка P625 −21.1447,−56.5915 практически совпадает с входом OSM (около 2 м). Карточка шире пещеры, поэтому используется только для пространственной сверки, не identity."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.turismo.bonito.ms.gov.br/gruta-do-lago-azul-em-bonito",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Официальная страница муниципального туризма описывает синее подземное озеро и конкретную пещеру Bonito; совпадает с production."
+    }
+  ],
+  "alternateNames": [
+    "Gruta do Lago Azul",
+    "Blue Lake Cave"
+  ],
+  "location": {
+    "latitude": -21.1447124,
+    "longitude": -56.5915106,
+    "pointRole": "entrance",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/2382055156.json"
+  },
+  "reviewNote": "Идентичность — пещера Gruta do Lago Azul, координата входа по OSM natural=cave_entrance. Q22687920 и англоязычная Wikipedia охватывают памятник природы с двумя пещерами; намеренно не присвоены пещере как точные sameAs. Точка входа не является центроидом всей охраняемой территории."
+}

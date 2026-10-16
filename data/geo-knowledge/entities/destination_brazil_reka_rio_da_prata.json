@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_reka_rio_da_prata",
+  "stableId": "destination_brazil_reka_rio_da_prata",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/rio-da-prata/",
+  "sourceFingerprint": "d33f69ecf4e20d5522944584ad96a01ed3dd9d9a692e8f412587e600154cae37",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {
+    "wikidataQid": "Q10362782",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Rio_da_Prata_(Mato_Grosso_do_Sul)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/rio-da-prata/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/rio-da-prata.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/rio-da-prata.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10362782",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Prata River, Mato Grosso do Sul, впадает в Miranda; sitelink ведёт к реке Jardim, а не к эстуарию Аргентины/Уругвая."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Rio_da_Prata_(Mato_Grosso_do_Sul)",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точная река муниципалитета Jardim, экотуризм и прозрачная вода."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/244621/1/DOC41.pdf",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Embrapa: физическая характеристика бассейна Rio da Prata, Mato Grosso do Sul, охватывающего Bonito и Jardim."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Rio_da_Prata_(Mato_Grosso_do_Sul)",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Название Rio da Prata подтверждено в точной статье."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/map?bbox=-56.46,-21.45,-56.43,-21.425",
+      "checkedAt": "2026-10-16T14:11:10.891Z",
+      "note": "Node3029431121 на river-way299010817. Геометрическая связность подтверждена: way299010817 → way299010816 (общий node3029431107) → named Rio da Prata way44830039 (общий node2382064002), source=IBGE. Выбрана точка речного участка, не вход/устье/центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://theses.gla.ac.uk/4577/1/TapiaGrimaldo2013phd.pdf",
+      "checkedAt": "2026-10-16T14:11:10.891Z",
+      "note": "Независимая полевая точка Rio da Plata (Bonito) −21.4384, −56.44521 в таблице исследованных рек совпадает с OSM узлом примерно в 7 м. Формулировка Plata в таблице сопоставлена с рекой Jardim/Bonito по региону и точной географии."
+    },
+    {
+      "field": "coordinate_conflict",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10362782",
+      "checkedAt": "2026-10-16T14:11:10.891Z",
+      "note": "P625 −21.35,−56.166667 указывает другой участок длинной реки. Вместо смешивания с туристическим участком выбрана явно обозначенная feature_point на верхнем участке; координаты не усреднялись."
+    }
+  ],
+  "alternateNames": [
+    "Rio da Prata"
+  ],
+  "reviewNote": "QID/ptwiki относятся к Rio da Prata, Jardim/MS, не к оператору Recanto Ecológico и не к эстуарию. location — точка русла на туристическом участке, сверенная с независимым полевым исследованием. GeoNames3452390 не добавлен без прямой проверки карточки.",
+  "location": {
+    "latitude": -21.4384589,
+    "longitude": -56.4452088,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/3029431121"
+  }
+}

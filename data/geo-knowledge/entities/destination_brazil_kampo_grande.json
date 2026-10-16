@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kampo_grande",
+  "stableId": "destination_brazil_kampo_grande",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/campo-grande/",
+  "sourceFingerprint": "bf03056acfe8ddd52e2b22aeb988a932823f5dca0567328fbd5a49e2d5993309",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q168929",
+    "geonamesId": "3467747"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/campo-grande/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Прямой HTTP GET: 200, canonical совпадает, H1 соответствует сущности, noindex отсутствует. Текущие production MD и source-index entry проверены; stable ID, страна Brazil и approved совпадают."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/campo-grande.md",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Текущий production MD: countryId country_brazil; назначение объекта сверено с внешними источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q168929",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Country Brazil, capital Mato Grosso do Sul, instance municipality/big city/human settlement. Контекст Пантанала подтверждает нужный Campo Grande."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3467747/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "GeoNames P PPLA Campo Grande, BR, Mato Grosso do Sul, ADM2 5002704."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3467747/",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Representative WGS84 −20.44278,−54.64639. Не центроид всего муниципалитета и не аэропорт."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q168929",
+      "checkedAt": "2026-10-16T14:08:55.588Z",
+      "note": "Независимая сверка со второй P625 20°26′34″S 54°38′45″W: около 58 м. Первая P625 на 3.8 км юго-восточнее; история расхождения сохранена, усреднения нет."
+    }
+  ],
+  "alternateNames": [
+    "Campo Grande",
+    "Кампу-Гранди"
+  ],
+  "location": {
+    "latitude": -20.44278,
+    "longitude": -54.64639,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3467747/"
+  },
+  "reviewNote": "Именно столица Mato Grosso do Sul, отправная точка в Пантанал; не Campo Grande Alagoas/Rio/Argentina и не аэропорт. GeoNames PPLA используется как опорная точка города. В WD две P625: −20.4686111,−54.6222222 и −20.4427778,−54.6458333; выбрана точка GeoNames, согласующаяся со второй, без усреднения."
+}

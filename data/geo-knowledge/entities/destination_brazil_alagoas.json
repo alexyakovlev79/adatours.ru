@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_alagoas",
+  "stableId": "destination_brazil_alagoas",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/alagoas/",
+  "sourceFingerprint": "8d10c961e7823f3dbcc98e529be8356fbeca8114294188175e7e0a1f13940ae0",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q40885",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Alagoas"
+    },
+    "geonamesId": "3408096",
+    "osm": {
+      "type": "relation",
+      "id": 303781
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/alagoas.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/alagoas/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40885",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Штат Alagoas, federative unit of Brazil, P17 Brazil. Не город Marechal Deodoro, исторически называвшийся Alagoas, и не отдельный пляж."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Alagoas",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная статья о штате на северо-востоке Бразилии."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3408096/alagoas.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP 200 GeoNames: A ADM1 Alagoas, Brazil; JSON-LD -9.58333,-36.41667."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/303781/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная граница штата: admin_level=4, ISO3166-2=BR-AL, IBGE:GEOCODIGO=27, wikidata=Q40885, source=IBGE."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40885",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "P17 Brazil, федеральная единица; подтверждается OSM ISO3166-2 BR-AL."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3408096/alagoas.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точка точной GN-карточки штата -9.58333,-36.41667, роль representative; не координаты столицы Масейо, пляжа или единственного географического центра."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/303781/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Независимая сверка: точка GN внутри единственного внешнего кольца границы штата (source=IBGE). Это проверка принадлежности территории."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/alagoas/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "federative_state",
+  "alternateNames": [
+    "Alagoas",
+    "Алагоас"
+  ],
+  "reviewNote": "Площадной объект — штат. P625 Wikidata -9.65,-36.683333 отличается от GN; точки не усреднялись. Использована представительная точка GN с независимой проверкой территории. Портал alagoas.al.gov.br не добавлен: прямое открытие недоступно.",
+  "location": {
+    "latitude": -9.58333,
+    "longitude": -36.41667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3408096/alagoas.html"
+  }
+}

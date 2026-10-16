@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_florianopolis",
+  "stableId": "destination_brazil_florianopolis",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/florianopolis/",
+  "sourceFingerprint": "54e8e1fd9c5cea2f3d19129abc9a186da991612f1522972124985f2944669599",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/florianopolis.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob c925bcf72da1936d1e040bf6467352578b274b00; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/florianopolis/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q132997",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q132997: Florianópolis, город/муниципалитет Santa Catarina, Brazil; совпадают страна и объект. QID описывает город и муниципалитет; GeoNames PPLA — городская опорная точка. Не подменять точкой острова Santa Catarina."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Florian%C3%B3polis",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная статья о Florianópolis в Santa Catarina, Brazil. Проверена идентичность; координаты статьи не используются автоматически."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3463237/florianopolis.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames 3463237: населенный пункт/городская административная резиденция Florianópolis, Santa Catarina, Brazil. Отделен от одноименного ADM2. SHA-256 прочитанного HTML fd013d02f532207bd4f038bcaa9edddc3dde70cd4fc0cd8833f2a3762015c6a7."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3463237/florianopolis.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84: latitude -27.59667, longitude -48.54917; городская опорная точка записи PPL/PPLA/PPLA2, не границы и не адрес входа. SHA-256 HTML fd013d02f532207bd4f038bcaa9edddc3dde70cd4fc0cd8833f2a3762015c6a7."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q132997",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимая сверка с P625 -27.593280555555555, -48.55304722222222: расстояние 537 м, тот же населенный пункт. Точки не усреднялись. QID описывает город и муниципалитет; GeoNames PPLA — городская опорная точка. Не подменять точкой острова Santa Catarina."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.geonames.org/3463237/florianopolis.html",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "GeoNames hierarchy: Brazil > Santa Catarina > одноименный муниципалитет > населенный пункт."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/florianopolis/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "QID описывает город и муниципалитет; GeoNames PPLA — городская опорная точка. Не подменять точкой острова Santa Catarina.",
+      "GeoNames/Wikidata: 537 м между опорными точками."
+    ]
+  },
+  "entityClass": "city_and_municipality",
+  "external": {
+    "wikidataQid": "Q132997",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Florian%C3%B3polis"
+    },
+    "geonamesId": "3463237"
+  },
+  "alternateNames": [
+    "Florianópolis"
+  ],
+  "location": {
+    "latitude": -27.59667,
+    "longitude": -48.54917,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3463237/florianopolis.html"
+  },
+  "reviewNote": "QID описывает город и муниципалитет; GeoNames PPLA — городская опорная точка. Не подменять точкой острова Santa Catarina. Координата обозначает городскую опорную точку из GeoNames, не вычисленный центроид муниципальных границ."
+}

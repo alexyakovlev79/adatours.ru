@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_ozero_akazhatuba",
+  "stableId": "destination_brazil_ozero_akazhatuba",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/lake-acajatuba/",
+  "sourceFingerprint": "6310003bf2f2cff6d55c565fef54c9e1f39a9cab27b55bad79838315cb2c6064",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "lake",
+  "external": {
+    "geonamesId": "7535658"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/lake-acajatuba.md",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Точное название Acajatuba, тип lake и контекст Rio Negro/лоджей совпадают. Соседние Acajituba/Enseada — части гидрографического района; это не основание блокировать идентичность названного озера."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/lake-acajatuba/",
+      "checkedAt": "2026-10-16T15:40:23.170169+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.tucanamazon.com/contact/",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Сам лодж указывает берег Lake Acajatuba и Iranduba, Amazonas."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/27416994",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Производная карточка GeoNames7535658: Lago de Acajatuba, lake, Amazonas; -3.11995,-60.49896. Не считается вторым независимым геодезическим источником."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.tucanamazon.com/contact/",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/27416994",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Наиболее вероятный точный объект с тем же названием/типом в нужном районе; поселение и залив не выбраны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/27416994",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Представительная точка карточки именно Lago de Acajatuba; не entrance, не геометрический центр и не точка деревни. Независимый сайт берегового лоджа подтверждает географический контекст."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.tucanamazon.com/contact/",
+      "checkedAt": "2026-10-16T15:43:10.704Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 93,
+      "selected": "Lago de Acajatuba в районе Iranduba, бассейн Rio Negro",
+      "reason": "Точное название Acajatuba, тип lake и контекст Rio Negro/лоджей совпадают. Соседние Acajituba/Enseada — части гидрографического района; это не основание блокировать идентичность названного озера."
+    },
+    {
+      "field": "entityClass",
+      "probability": 93,
+      "selected": "lake",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 83,
+      "selected": "7535658",
+      "reason": "Наиболее вероятный точный объект с тем же названием/типом в нужном районе; поселение и залив не выбраны."
+    },
+    {
+      "field": "location",
+      "probability": 78,
+      "selected": "-3.11995,-60.49896 (representative)",
+      "reason": "Представительная точка карточки именно Lago de Acajatuba; не entrance, не геометрический центр и не точка деревни. Независимый сайт берегового лоджа подтверждает географический контекст."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/lake-acajatuba/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  },
+  "location": {
+    "latitude": -3.11995,
+    "longitude": -60.49896,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/27416994"
+  }
+}

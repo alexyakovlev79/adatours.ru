@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_morro_de_sao_paulo",
+  "stableId": "destination_brazil_morro_de_sao_paulo",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/morro-de-sao-paulo/",
+  "sourceFingerprint": "905f5be782d8da375a39e89c9dd81da70f3886d1f22628921970eb016f5f98bc",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "settlement; municipality district of Cairu",
+  "external": {
+    "wikidataQid": "Q1948586",
+    "geonamesId": "8063716"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/morro-de-sao-paulo/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Морро-де-Сан-Паулу; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob 4a675f98d3a7b674c7ad4453efb92534e081847e."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/morro-de-sao-paulo/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1948586",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Morro de São Paulo; exact geographical identity in Cairu, Bahia, Brazil. Class matches the published city's/settlement's scope; not a homonymous microregion, lighthouse or individual attraction."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/8063716/morro-de-sao-paulo.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Exact named populated place Morro de São Paulo in Cairu, Bahia, Brazil; selected populated-place record, not an administrative-area centroid."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/8063716/morro-de-sao-paulo.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "WGS84 named-settlement representative point copied from GeoNames exact populated-place record. Not asserted as geometric centroid, administrative boundary, hotel entrance or individual attraction. No averaged coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1948586",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Independent-source comparison with Wikidata P625 -13.3816667, -38.9138889: separation approximately 294 m. Both identify the same named city/settlement and administrative region. P625 used for identity/location cross-check only; retained GeoNames representative point unchanged, with different reference points recorded rather than averaged."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/416655489.json",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Direct OSM node 416655489, v9: name Morro de São Paulo, place village, wikidata Q1948586, (-13.3775457,-38.9159969); 470 m from retained GeoNames point. Confirms village on Tinharé, Cairu; not lighthouse Q16566342 or headland GeoNames 3448431."
+    }
+  ],
+  "alternateNames": [
+    "Morro de São Paulo"
+  ],
+  "location": {
+    "latitude": -13.3796,
+    "longitude": -38.9122,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/8063716/morro-de-sao-paulo.html"
+  },
+  "reviewNote": "Роль координат — representative, не единственный центр города. Разница с P625 294 м зафиксирована в evidence; точки не усреднялись."
+}

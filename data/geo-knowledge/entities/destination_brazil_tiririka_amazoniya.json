@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_tiririka_amazoniya",
+  "stableId": "destination_brazil_tiririka_amazoniya",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/tiririca-amazon/",
+  "sourceFingerprint": "0bdc33e005582f145c8b75f1245ea78e1ff3ba751e6a25f17f2a751679ba5913",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "riverside hamlet",
+  "alternateNames": [
+    "Tiririca"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4008784669
+    }
+  },
+  "location": {
+    "latitude": -2.7164837,
+    "longitude": -60.8363272,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4008784669.json"
+  },
+  "evidence": [
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4008784669.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "name=Tiririca, place=hamlet, Novo Airão/Amazonas, source=IBGE. Not homonymous settlements in Codajás or Alvarães, not the performer Tiririca."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4008784669.json",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "WGS84 settlement node; selected representative center of the community, not a separate beach or boat landing."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://pub.mdpi-res.com/atmosphere/atmosphere-13-01906/article_deploy/html/images/atmosphere-13-01906-g001.png",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Independent inspected Figure 1 of the field study locates the studied communities along the western lower Rio Negro RDS shoreline. Overview corroboration only; no claim of metre-level survey precision."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://rsdjournal.org/rsd/article/view/17222",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Primary fieldwork explicitly identifies the Tiririca riverside community in Novo Airão alongside Santo Antonio and Marajá."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://amazonreceptive.com.br/en/itineraries/mirante-do-gaviao-lodge-jungle-hotel/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Paired Santo Antônio–Tiririca visits match current Ada Tours itinerary. Identity is limited to the community; a separately mentioned Tiririca beach is not asserted to share the same point."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/tiririca-amazon.md",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Current approved MD stable ID, countryId=country_brazil and canonical entry were inspected; external identity evidence also places the object in Brazil."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/tiririca-amazon/",
+      "checkedAt": "2026-10-16T14:11:58.959Z",
+      "note": "Direct HTTP GET returned 200 at the exact canonical URL with matching title and rel=canonical. Search-service fetch could not access the site; direct network verification succeeded."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/tiririca-amazon/"
+    ],
+    "findings": [
+      "Live page HTTP 200; final URL and HTML canonical match the claimed path.",
+      "Current production MD and source-index entry inspected; approved entity in Brazil.",
+      "External identity scope and coordinate point role checked; no public JSON-LD authored by collector."
+    ]
+  }
+}

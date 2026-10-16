@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_araras_eco_lodge",
+  "stableId": "destination_brazil_araras_eco_lodge",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/araras-eco-lodge/",
+  "sourceFingerprint": "19a2eb04155c689e9d5eb2ea791e7932ff0e857c28f612311f7e7c1707cece69",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://araraslodge.com.br/",
+    "osm": {
+      "type": "node",
+      "id": 4850839358
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/araras-eco-lodge.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/araras-eco-lodge/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://araraslodge.com.br/a-pousada/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Собственный сайт Pousada Araras Pantanal Eco Lodge, Estrada Parque Transpantaneira, Zona Rural, Poconé, Mato Grosso, Brasil. Не вся природная зона Pantanal."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4850839358.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Обнаружен в прямом bbox-запросе OSM: node 4850839358, name=Araras Eco Lodge, tourism=hotel, координаты -16.5122224,-56.7117179."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://araraslodge.com.br/a-pousada/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Официальный адрес Poconé, Mato Grosso, Brasil, Transpantaneira."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://araraslodge.com.br/a-pousada/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Официально опубликованы 16º30′42.3″ S, 56º42′39.4″ W. Преобразование WGS84 -16.51175,-56.7109444444; representative комплекса, не подтверждённый вход."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4850839358.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Независимая сверка с OSM hotel point -16.5122224,-56.7117179: расстояние около 98 м. Соответствует тому же комплексу; точки не усреднялись и точность до метра не заявляется."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/araras-eco-lodge/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "lodge",
+  "alternateNames": [
+    "Araras Pantanal Eco Lodge",
+    "Pousada Araras Pantanal Eco Lodge",
+    "Araras Eco Lodge"
+  ],
+  "reviewNote": "Фактический класс — лодж/гостиница, хотя редакционный destinationType=natural_area. Сохранена официальная представительная точка с независимым OSM-сопоставлением; не вход и не точка конкретного номера. QID/GeoNames не выдуманы.",
+  "location": {
+    "latitude": -16.51175,
+    "longitude": -56.7109444444,
+    "pointRole": "representative",
+    "coordinateSource": "https://araraslodge.com.br/a-pousada/"
+  }
+}

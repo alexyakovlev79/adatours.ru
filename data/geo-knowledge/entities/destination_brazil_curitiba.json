@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_curitiba",
+  "stableId": "destination_brazil_curitiba",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/curitiba/",
+  "sourceFingerprint": "2e199574604acbf79d09729952da65bb39dd50eb257b7eba44fef4318da3cc9d",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city; state capital",
+  "external": {
+    "wikidataQid": "Q4361",
+    "geonamesId": "3464975"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/curitiba/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Куритиба; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob f29db096332f86fa7e8ea150d784f43d0a1d026e."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/curitiba/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4361",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Curitiba; exact geographical identity in Paraná, Brazil. Class matches the published city's/settlement's scope; not a homonymous microregion, lighthouse or individual attraction."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3464975/curitiba.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Exact named populated place Curitiba in Paraná, Brazil; selected populated-place record, not an administrative-area centroid."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3464975/curitiba.html",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "WGS84 named-settlement representative point copied from GeoNames exact populated-place record. Not asserted as geometric centroid, administrative boundary, hotel entrance or individual attraction. No averaged coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4361",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Independent-source comparison with Wikidata P625 -25.4297222, -49.2719444: separation approximately 243 m. Both identify the same named city/settlement and administrative region. P625 used for identity/location cross-check only; retained GeoNames representative point unchanged, with different reference points recorded rather than averaged."
+    }
+  ],
+  "alternateNames": [
+    "Curitiba"
+  ],
+  "location": {
+    "latitude": -25.42778,
+    "longitude": -49.27306,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3464975/curitiba.html"
+  },
+  "reviewNote": "Роль координат — representative, не единственный центр города. Разница с P625 243 м зафиксирована в evidence; точки не усреднялись."
+}

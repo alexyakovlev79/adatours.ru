@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_kanon_itaimbezinyu",
+  "stableId": "destination_brazil_kanon_itaimbezinyu",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/itaimbezinho-canyon/",
+  "sourceFingerprint": "173cf12ef166915c8132c455804c0da325e8d8539655634e3f36c33f5bdef488",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/itaimbezinho-canyon.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob f33b7a98a6134c94f6ceeb6dad89cd681db8a573; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/itaimbezinho-canyon/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q490320",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Q490320: Cânion Itaimbezinho, instance of canyon, country Brazil. Это каньон, не парк и не город."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://fr.wikipedia.org/wiki/Canyon_d%27Itaimbezinho",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Точная самостоятельная статья о каньоне; проверено название и география."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2694805995",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "WGS84 опорная точка -29.164566, -50.0929422. Выбрана опорная точка OSM locality с точным названием каньона, не вход и не точный центр. Wikidata P625 (-29.175,-50.0916666667) расположен примерно на 1.2 км южнее; SGB отмечает иную точку геосайта. Протяженный каньон; точки не усреднялись. EN Itaimbezinho и PT Cânion do Itaimbezinho перенаправляются на национальный парк, PT Itaimbezinho — населенный пункт Bom Jesus; эти URL исключены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.sgb.gov.br/documents/d/guest/caminhos_canions_sul",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Независимый первичный источник Serviço Geológico do Brasil, выпуск март 2024, стр. 11 PDF (P10), Quadro 3, Ponto 9: lon -50.079, lat -29.159 (SIRGAS2000). Различные точки одного протяженного каньона; преобразование datum не выполнялось, SIRGAS2000 использован только для сверки положения, не как источник WGS84."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://canionsdosul.org/geossitios/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Официальный сайт геопарка описывает оба каньона отдельно, в национальных парках Aparados da Serra/Serra Geral, Бразилия."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2694805995",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прочитан первичный OSM XML: node 2694805995, visible=true, version=4, name=Cânion Itaimbezinho, place=locality, lat=-29.1645660, lon=-50.0929422. Сам каньон, не населенный пункт Bom Jesus."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/itaimbezinho-canyon/",
+      "https://www.wikidata.org/wiki/Q490320",
+      "https://www.sgb.gov.br/documents/d/guest/caminhos_canions_sul",
+      "https://canionsdosul.org/geossitios/",
+      "https://www.openstreetmap.org/api/0.6/node/2694805995"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "Выбрана опорная точка OSM locality с точным названием каньона, не вход и не точный центр. Wikidata P625 (-29.175,-50.0916666667) расположен примерно на 1.2 км южнее; SGB отмечает иную точку геосайта. Протяженный каньон; точки не усреднялись. EN Itaimbezinho и PT Cânion do Itaimbezinho перенаправляются на национальный парк, PT Itaimbezinho — населенный пункт Bom Jesus; эти URL исключены."
+    ]
+  },
+  "entityClass": "canyon",
+  "alternateNames": [
+    "Cânion Itaimbezinho"
+  ],
+  "external": {
+    "wikidataQid": "Q490320",
+    "wikipedia": {
+      "fr": "https://fr.wikipedia.org/wiki/Canyon_d%27Itaimbezinho"
+    },
+    "osm": {
+      "type": "node",
+      "id": 2694805995
+    }
+  },
+  "location": {
+    "latitude": -29.164566,
+    "longitude": -50.0929422,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/api/0.6/node/2694805995"
+  },
+  "reviewNote": "Выбрана опорная точка OSM locality с точным названием каньона, не вход и не точный центр. Wikidata P625 (-29.175,-50.0916666667) расположен примерно на 1.2 км южнее; SGB отмечает иную точку геосайта. Протяженный каньон; точки не усреднялись. EN Itaimbezinho и PT Cânion do Itaimbezinho перенаправляются на национальный парк, PT Itaimbezinho — населенный пункт Bom Jesus; эти URL исключены."
+}

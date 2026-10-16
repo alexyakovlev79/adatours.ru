@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_itacare",
+  "stableId": "destination_brazil_itacare",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/itacare/",
+  "sourceFingerprint": "c5a2e42ebe42b2fce4ffe8dc816e6fc6815577141af003403c822f2b9329c6a6",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city; municipal seat",
+  "external": {
+    "wikidataQid": "Q985513",
+    "osm": {
+      "type": "node",
+      "id": 415522539
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/itacare/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Итакаре; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob 12ba9b5f1a54d6d439c7f0c8559dc3537a9ebf2d."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/itacare/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q985513",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Itacaré; exact geographical identity in Bahia, Brazil. Class matches the published city's/settlement's scope; not a homonymous microregion, lighthouse or individual attraction."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/415522539.json",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Direct OSM API HTTP 200: name=Itacaré; place=town; wikidata=Q985513"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/415522539.json",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "WGS84 named-settlement representative point copied from OSM named settlement node. Not asserted as geometric centroid, administrative boundary, hotel entrance or individual attraction. No averaged coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q985513",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Independent-source comparison with Wikidata P625 -14.2777778, -38.9969444: separation approximately 149 m. Both identify the same named city/settlement and administrative region. P625 used for identity/location cross-check only; retained OSM representative point unchanged, with different reference points recorded rather than averaged."
+    }
+  ],
+  "alternateNames": [
+    "Itacaré"
+  ],
+  "location": {
+    "latitude": -14.2779427,
+    "longitude": -38.9955683,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/415522539.json"
+  },
+  "reviewNote": "Роль координат — representative, не единственный центр города. Разница с P625 149 м зафиксирована в evidence; точки не усреднялись."
+}

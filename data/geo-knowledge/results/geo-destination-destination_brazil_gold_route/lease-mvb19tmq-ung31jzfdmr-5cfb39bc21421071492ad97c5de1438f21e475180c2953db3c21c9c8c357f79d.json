@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_gold_route",
+  "stableId": "destination_brazil_gold_route",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/gold-route/",
+  "sourceFingerprint": "39ec74e775610ddb376a741668c1faefa60cdcb030327cd450e81cb83c74bdb1",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "composite",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_ouro_preto"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_mariana"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_kongonyas"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_inhotim"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_belo_horizonte"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zolotoj-put-brazilii.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Проверены approved MD, stable ID, страна и тип; Git blob ac92ab1d5195a8998e59efa8282f9df070d2442a; соответствующая source-index entry имеет тот же ID/canonical URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/gold-route/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Прямой HTTP-запрос: 200, конечный URL и link rel=canonical совпадают, noindex в head отсутствует."
+    },
+    {
+      "field": "relationships.destination_brazil_ouro_preto",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zolotoj-put-brazilii.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Место прямо названо в содержании опубликованного route_cluster как составляющая/остановка; relatedPlace не задает порядок посещения и не объявляет административное вложение."
+    },
+    {
+      "field": "relationships.destination_brazil_mariana",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zolotoj-put-brazilii.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Место прямо названо в содержании опубликованного route_cluster как составляющая/остановка; relatedPlace не задает порядок посещения и не объявляет административное вложение."
+    },
+    {
+      "field": "relationships.destination_brazil_kongonyas",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zolotoj-put-brazilii.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Место прямо названо в содержании опубликованного route_cluster как составляющая/остановка; relatedPlace не задает порядок посещения и не объявляет административное вложение."
+    },
+    {
+      "field": "relationships.destination_brazil_inhotim",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zolotoj-put-brazilii.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Место прямо названо в содержании опубликованного route_cluster как составляющая/остановка; relatedPlace не задает порядок посещения и не объявляет административное вложение."
+    },
+    {
+      "field": "relationships.destination_brazil_belo_horizonte",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zolotoj-put-brazilii.md",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Место прямо названо в содержании опубликованного route_cluster как составляющая/остановка; relatedPlace не задает порядок посещения и не объявляет административное вложение."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/gold-route/",
+      "checkedAt": "2026-10-16T14:05:47.718Z",
+      "note": "Опубликованная страница и approved MD: route_cluster по Minas Gerais, Brazil."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/gold-route/"
+    ],
+    "findings": [
+      "HTTP 200; canonical совпадает; статус MD approved.",
+      "Редакционная связка исторических городов и музея: Ору-Прету, Мариана, Конгоньяс, Иньотим, Белу-Оризонти. Не установлена точная единая внешняя сущность с теми же границами. Не назначать QID Estrada Real/Caminho Velho/одного города, не ставить единую координату. Нужна редакторская проверка схемы составных мест; подтвердить relatedPlace вместо единого sameAs."
+    ]
+  },
+  "entityClass": "editorial_route_cluster",
+  "reviewNote": "Редакционная связка исторических городов и музея: Ору-Прету, Мариана, Конгоньяс, Иньотим, Белу-Оризонти. Не установлена точная единая внешняя сущность с теми же границами. Не назначать QID Estrada Real/Caminho Velho/одного города, не ставить единую координату. Нужна редакторская проверка схемы составных мест; подтвердить relatedPlace вместо единого sameAs."
+}

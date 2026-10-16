@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_tijuca_national_park",
+  "stableId": "destination_brazil_tijuca_national_park",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/tijuca-national-park/",
+  "sourceFingerprint": "f8b4e519afff26b9815dbe50ae72cb129f374dd80fd6581b4b6a99bed4a52ae0",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1974494",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tijuca_National_Park"
+    },
+    "geonamesId": "3446504",
+    "osm": {
+      "type": "relation",
+      "id": 1124490
+    },
+    "officialUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-tijuca"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/tijuca-national-park.md",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точный approved MD прочитан на фиксированном main SHA; stable ID, страна и предмет страницы совпадают с entry. Тип страницы destination не подменяется типом внешнего геообъекта."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/tijuca-national-park/",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой HTTP GET: 200; rel=canonical точно совпадает с этим URL; noindex отсутствует; заголовок соответствует объекту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1974494",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная карточка всего национального парка, P31 national park, P17 Brazil, P131 Rio de Janeiro. Не лес Тижука Q14942956 и не отдельный компонент объекта UNESCO."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tijuca_National_Park",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная статья о национальном парке, управляемом ICMBio в Рио-де-Жанейро; связь с Q1974494 подтверждена sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3446504/parque-nacional-da-tijuca.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точное имя Parque Nacional da Tijuca, L PRK, Бразилия/Рио-де-Жанейро. Сам ID подтверждён, опорная точка GeoNames исключена отдельно."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/1124490/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Прямой OSM API: name=Parque Nacional da Tijuca, boundary=national_park, operator=ICMBio, wikidata=Q1974494; геометрия прочитана."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-tijuca",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Точная страница парка на сайте государственного управляющего органа. Official URL не объявляется автоматическим sameAs."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1974494",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "P17 Brazil; принадлежность подтверждается официальной карточкой ICMBio."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1974494",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "P625 22°57′34″S 43°16′40″W преобразован в WGS84 (-22.9594444444,-43.2777777778). Выбрана representative, не centroid/entrance и не центр всего многосекторного парка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/1124490/full.json",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "Независимая геометрическая сверка: 3 замкнутых outer и 1 inner; выбранная точка P625 находится внутри outer и вне inner. OSM source=IPP. Проверка принадлежности не доказывает геодезический центр."
+    },
+    {
+      "field": "location.excluded",
+      "sourceUrl": "https://www.geonames.org/3446504/parque-nacional-da-tijuca.html",
+      "checkedAt": "2026-10-16T14:08:55.850Z",
+      "note": "GeoNames (-22.96334,-43.26635) не попадает ни в одно проверенное внешнее кольцо OSM 1124490. Она не использована; точки не усреднялись."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/tijuca-national-park/"
+    ],
+    "findings": [
+      "HTTP 200, canonical совпадает, noindex отсутствует; approved content MD и точная source-index entry сверены."
+    ]
+  },
+  "entityClass": "national_park",
+  "alternateNames": [
+    "Parque Nacional da Tijuca",
+    "Tijuca National Park"
+  ],
+  "reviewNote": "Опорная точка P625 внутри проверенной границы парка; не является входом или вычисленным центроидом. Точка GeoNames исключена как не прошедшая геометрическую сверку.",
+  "location": {
+    "latitude": -22.9594444444,
+    "longitude": -43.2777777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1974494"
+  }
+}

@@ -52,7 +52,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
   <nav class="mc-menu__combinations" data-mc-menu-combinations aria-label="Сочетания стран" data-mc-menu-source={serverLinks ? 'true' : undefined}>
     {items.map((row) => (
       <div
-        class="mc-menu__combination"
+        class="mcc"
       >
         <a href={withBase(row.path)}>{formatMultiCountryNames(row.names)}</a>
 
@@ -102,7 +102,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
   .mc-menu__back[hidden],
   .mc-menu__heading[hidden],
   .mc-menu__countries[hidden],
-  .mc-menu__combination[hidden],
+  .mcc[hidden],
   .mc-menu__combinations[hidden] {
     display: none;
   }
@@ -165,13 +165,13 @@ const items = (serverLinks ? combinations : []).map((row) => ({
   .mc-menu[data-mc-ready]:not([data-mc-selected]) .mc-menu__combinations {
     display: none;
   }
-  .mc-menu__combination {
+  .mcc {
     display: flex;
     min-width: 0;
     align-items: stretch;
     gap: 8px;
   }
-  .mc-menu__combination a {
+  .mcc a {
     /* A link only covers its label, never the empty space leading to the arrow. */
     flex: 0 1 auto;
     min-width: 0;
@@ -206,9 +206,9 @@ const items = (serverLinks ? combinations : []).map((row) => ({
   /* Use the same full-row gold hover as the other desktop dropdowns.
      The parent row owns the background, covering both link and expand button. */
   .mc-menu__country:hover,
-  .mc-menu__combination:hover,
+  .mcc:hover,
   .mc-menu__country:focus-visible,
-  .mc-menu__combination:focus-within,
+  .mcc:focus-within,
   .mc-menu__all:hover,
   .mc-menu__all:focus-visible,
   .mc-menu__back:hover,
@@ -217,7 +217,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     background: color-mix(in srgb, var(--color-gold) 18%, transparent);
   }
   .mc-menu__country,
-  .mc-menu__combination {
+  .mcc {
     transition: background-color 180ms var(--ease-out);
   }
   .mc-menu :is(a, button):focus-visible {
@@ -232,7 +232,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
       padding-block: 12px;
       line-height: 1.3;
     }
-    .mc-menu__combination a {
+    .mcc a {
       padding-block: 12px;
       line-height: 1.3;
     }
@@ -271,7 +271,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
      without consuming the available height with blank row padding. */
   @media (min-width: 1241px) and (max-height: 760px) {
     .mc-menu__country,
-    .mc-menu__combination a {
+    .mcc a {
       padding-block: 9px;
     }
   }
@@ -289,7 +289,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
       text-transform: none;
       line-height: 1.15;
     }
-    .mc-menu__combination a {
+    .mcc a {
       padding: 13px 0;
       font-size: var(--mc-item-size);
       text-transform: none;

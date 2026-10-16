@@ -23,7 +23,7 @@ for (const menu of menuInstances) {
   const back = menu.querySelector<HTMLButtonElement>('[data-mc-menu-back]');
   // The canonical SSR href already contains the country key. Do not serialize
   // it a second time on every catalogue link on every page of the website.
-  const combinations = [...menu.querySelectorAll<HTMLElement>('.mc-menu__combination')]
+  const combinations = [...menu.querySelectorAll<HTMLElement>('.mcc')]
     .map((element) => ({ element, slugs: (element.querySelector('a')?.getAttribute('href') ?? '')
       .split('/').filter(Boolean).at(-1)?.split('_') ?? [] }));
   const availableKeys = new Set(combinations.map((item) => item.slugs.join('_')));

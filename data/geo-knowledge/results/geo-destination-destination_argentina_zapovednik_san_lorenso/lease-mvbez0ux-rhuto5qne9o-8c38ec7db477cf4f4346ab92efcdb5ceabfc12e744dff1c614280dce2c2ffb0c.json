@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_zapovednik_san_lorenso",
+  "stableId": "destination_argentina_zapovednik_san_lorenso",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/san-lorenzo-nature-reserve/",
+  "sourceFingerprint": "4b6a46ad5a8e618e82f4cb3e21c14ab54ac18df6456228d18d461be535e90771",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 5443722124
+    },
+    "officialUrl": "https://pinguinospuntanorte.com.ar/"
+  },
+  "location": {
+    "latitude": -42.13238,
+    "longitude": -63.89077,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/es/N5443722124"
+  },
+  "alternateNames": [
+    "Reserva Natural Estancia San Lorenzo"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/san-lorenzo-nature-reserve/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "HTTP 200; точный canonical совпал с очередью, stable ID и approved MD сверены на main cdd8b523a809da44458be6d763aa2c89541d2141. Частный природный заповедник Estancia San Lorenzo и его колония магеллановых пингвинов на севере Península Valdés, Chubut. Не муниципалитет Сан-Лоренсо, не заповедник в Salta и не иная одноименная estancia."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://chubutpatagonia.gob.ar/cupon/estancia-san-lorenzo-pinguinera/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Частный природный заповедник Estancia San Lorenzo и его колония магеллановых пингвинов на севере Península Valdés, Chubut. Не муниципалитет Сан-Лоренсо, не заповедник в Salta и не иная одноименная estancia."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/es/N5443722124",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Карточка на основе OSM указывает точный node 5443722124; Официальный сайт прямо называет Reserva Natural Estancia San Lorenzo в Península Valdés; это подтверждает туристический портал провинции. OSM-узел туристической достопримечательности соответствует именованной усадьбе/заповеднику, а не полигону его границ. Координата — опорная точка комплекса; не точка каждой колонии и не доказательство границ. Точный QID не найден, поле пропущено."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://pinguinospuntanorte.com.ar/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Прочитан официальный сайт конкретного парка/заповедника. Не автоматический sameAs."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/es/N5443722124",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Официальный сайт прямо называет Reserva Natural Estancia San Lorenzo в Península Valdés; это подтверждает туристический портал провинции. OSM-узел туристической достопримечательности соответствует именованной усадьбе/заповеднику, а не полигону его границ. Координата — опорная точка комплекса; не точка каждой колонии и не доказательство границ. Точный QID не найден, поле пропущено."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://chubutpatagonia.gob.ar/cupon/estancia-san-lorenzo-pinguinera/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Сверка географического контекста: Частный природный заповедник Estancia San Lorenzo и его колония магеллановых пингвинов на севере Península Valdés, Chubut. Не муниципалитет Сан-Лоренсо, не заповедник в Salta и не иная одноименная estancia. Официальный сайт прямо называет Reserva Natural Estancia San Lorenzo в Península Valdés; это подтверждает туристический портал провинции. OSM-узел туристической достопримечательности соответствует именованной усадьбе/заповеднику, а не полигону его границ. Координата — опорная точка комплекса; не точка каждой колонии и не доказательство границ. Точный QID не найден, поле пропущено."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://pinguinospuntanorte.com.ar/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Местное название: Reserva Natural Estancia San Lorenzo."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://pinguinospuntanorte.com.ar/",
+      "checkedAt": "2026-10-16T20:25:41.567Z",
+      "note": "Место находится в Аргентине; соответствует country_argentina в актуальном MD."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Reserva Natural Estancia San Lorenzo",
+      "reason": "Частный природный заповедник Estancia San Lorenzo и его колония магеллановых пингвинов на севере Península Valdés, Chubut. Не муниципалитет Сан-Лоренсо, не заповедник в Salta и не иная одноименная estancia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 25,
+      "reason": "Поиск точного QID Estancia San Lorenzo на Вальдесе не дал проверяемой карточки; QID города или другой estancia не подставлялся."
+    },
+    {
+      "field": "external.osm",
+      "probability": 90,
+      "selected": "node/5443722124",
+      "reason": "Именованный туристический комплекс заповедника на севере Вальдеса; точка комплекса, не границы территории."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://pinguinospuntanorte.com.ar/",
+      "reason": "Официальная страница объекта, а не главная туристическая страница всего региона."
+    },
+    {
+      "field": "location",
+      "probability": 86,
+      "selected": "-42.13238, -63.89077; representative",
+      "reason": "Официальный сайт прямо называет Reserva Natural Estancia San Lorenzo в Península Valdés; это подтверждает туристический портал провинции. OSM-узел туристической достопримечательности соответствует именованной усадьбе/заповеднику, а не полигону его границ. Координата — опорная точка комплекса; не точка каждой колонии и не доказательство границ. Точный QID не найден, поле пропущено."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Reserva Natural Estancia San Lorenzo",
+      "reason": "Название прямо используется в прочитанном внешнем источнике."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна совпадает в MD и внешнем источнике."
+    }
+  ],
+  "reviewNote": "Официальный сайт прямо называет Reserva Natural Estancia San Lorenzo в Península Valdés; это подтверждает туристический портал провинции. OSM-узел туристической достопримечательности соответствует именованной усадьбе/заповеднику, а не полигону его границ. Координата — опорная точка комплекса; не точка каждой колонии и не доказательство границ. Точный QID не найден, поле пропущено."
+}

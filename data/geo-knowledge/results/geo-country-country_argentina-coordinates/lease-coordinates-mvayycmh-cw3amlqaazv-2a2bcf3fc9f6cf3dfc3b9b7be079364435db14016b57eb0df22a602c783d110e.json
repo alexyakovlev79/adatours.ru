@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_argentina-coordinates",
+  "stableId": "country_argentina",
+  "kind": "country",
+  "canonicalPath": "/argentina/",
+  "sourceFingerprint": "673b44bc3ea77992e593e979948f028cc1dc73324f8e803e03a9b72b914da674",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "sovereign_state",
+  "external": {
+    "wikidataQid": "Q414",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Argentina",
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%B0"
+    },
+    "geonamesId": "3865483",
+    "osm": {
+      "type": "relation",
+      "id": 286393
+    },
+    "officialUrl": "https://www.argentina.gob.ar/"
+  },
+  "alternateNames": [
+    "Argentina",
+    "Argentine Republic",
+    "República Argentina"
+  ],
+  "relationships": [],
+  "evidence": [
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q414",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact sovereign_state identity Q414; name, geography and class agree with current Ada Tours page and source-index stable ID."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Argentina",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "The article describes the country, not a namesake settlement or administrative subdivision."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Argentina",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Names are contemporary names of this exact entity; historical states and broad regional aliases are excluded."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Argentina",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact English article, not a category or disambiguation page."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%B0",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the exact Russian article; title matches the Russian entity name."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q414",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "GeoNames identifier property explicitly gives 3865483."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/argentina/",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Exact canonical page opened successfully through web retrieval; content is a live country/direction page with the expected name. Current approved source MD and exact source-index entry agree on ID, slug and path."
+    },
+    {
+      "field": "sourceFingerprint",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/d0e3cb468621d09c3af48366152057c74cb0f4b8/src/content/countries/argentina.md",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Read approved MD at fixed main SHA; blob 297c0c17bfeab3544d2f078c55ed097fd734690d. Completion dispatcher separately checks the current main blob."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3865483",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened GeoNames feature card; feature code A.PCLI and country name confirm the same independent political entity."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q414",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "OpenStreetMap relation identifier is 286393; distinguish from any label node."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/286393",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the relation and verified its wikidata=Q414 tag and country name; this is a boundary relation."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.argentina.gob.ar/",
+      "checkedAt": "2026-10-16T12:41:07.338Z",
+      "note": "Opened the national government portal. Stored as an official information URL; this does not authorize treating the government portal as exact sameAs of the geographical country."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3865483/argentine-republic.html",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "Directly opened GeoNames record 3865483, feature A.PCLI independent political entity. Source coordinate pair latitude=-34, longitude=-64. Used explicitly as the gazetteer's representative point for this area; not a computed centroid, capital, entrance, itinerary stop or landing location. No averaging of alternative coordinates."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/readme.txt",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "GeoNames primary data documentation specifies latitude/longitude as decimal degrees in WGS84. Numerical order and signs checked."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/9380cca83db5f9aef52d5e762765100745f84b27/geojson/ne_110m_admin_0_countries.geojson",
+      "checkedAt": "2026-10-16T12:55:49.078Z",
+      "note": "Independent spatial validation against Natural Earth 1:110m polygon ARG: ray-casting point-in-polygon with holes and multipolygons, x=longitude, y=latitude; point lies within the expected feature and no other of the five checked features. Dataset blob 1e6ab74c7042f97013be69ceec798be8e1aff27d. This validates area membership at coarse map scale, not coordinate precision, sovereignty, centroid or tourist accessibility."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Координаты дополнены 2026-10-16T12:55:49.078Z: опорная точка GeoNames, WGS84, pointRole=representative. Независимая проверка попадания в полигон Natural Earth ARG пройдена. Это точка для обозначения страны/континента, без утверждения о точном центре, столице или туристическом объекте. Историческое примечание первой партии ДО этого дополнения (сохранено для прозрачности): Координаты −34, −64 совпадают в GeoNames, Wikidata и Wikipedia, но Wikidata прямо ссылается на GeoNames. В этой партии location опущен: независимость происхождения координат и роль точки не установлены. Правительственный портал — officialUrl, не автоматический sameAs страны.",
+  "audit": {
+    "checkedUrls": [
+      "https://www.wikidata.org/wiki/Q414",
+      "https://en.wikipedia.org/wiki/Argentina",
+      "https://ru.wikipedia.org/wiki/%D0%90%D1%80%D0%B3%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D0%B0",
+      "https://adatours.ru/argentina/",
+      "https://www.geonames.org/3865483",
+      "https://www.openstreetmap.org/relation/286393",
+      "https://www.argentina.gob.ar/",
+      "https://www.geonames.org/3865483/argentine-republic.html",
+      "https://download.geonames.org/export/dump/readme.txt",
+      "https://github.com/nvkelso/natural-earth-vector/blob/9380cca83db5f9aef52d5e762765100745f84b27/geojson/ne_110m_admin_0_countries.geojson"
+    ],
+    "findings": [
+      "Stable ID, canonical URL, approved MD and source-index entry match.",
+      "Exact external identities verified; READY applies only to the included assertions.",
+      "Coordinate addition verified 2026-10-16T12:55:49.078Z: WGS84 (-34, -64), representative, GeoNames + independent Natural Earth containment.",
+      "Different country label/centre points across sources are kept as historical alternatives; representative point selection resolves scope, not by averaging or claiming a unique geographic centre."
+    ]
+  },
+  "location": {
+    "latitude": -34,
+    "longitude": -64,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3865483/argentine-republic.html"
+  }
+}

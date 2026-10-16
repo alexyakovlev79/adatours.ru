@@ -1,0 +1,48 @@
+name: Identity 032 guarded main integration
+on:
+  push:
+    branches: [automation/identity-032-20261016]
+    paths: [.github/workflows/identity-032-apply.yml]
+permissions:
+  contents: write
+concurrency:
+  group: external-identity-main-integration
+  cancel-in-progress: false
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: automation/identity-032-20261016
+          persist-credentials: true
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /data/external-identity/
+            /data/source-index/entries/
+            /data/catalog-archive.json
+            /src/content/excursions/
+      - name: Validate exact source hashes and integrate one audit batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          INPUT=$(mktemp -d)
+          cp -a data/external-identity/working-032/. "$INPUT/"
+          export IDENTITY_EVIDENCE_COMMIT=$(git rev-parse HEAD)
+          python3 -m py_compile "$INPUT/integrate.py"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main --depth=1
+            git switch -C identity-032-integration origin/main
+            python3 "$INPUT/integrate.py" "$INPUT"
+            if git push origin HEAD:main; then
+              echo "PUSHED_COMMIT=$(git rev-parse HEAD)"
+              git show --stat --oneline HEAD
+              exit 0
+            fi
+            echo "Main advanced; re-read current main and revalidate selected files before retry $attempt"
+          done
+          echo 'Could not push without overwriting concurrent work' >&2
+          exit 1

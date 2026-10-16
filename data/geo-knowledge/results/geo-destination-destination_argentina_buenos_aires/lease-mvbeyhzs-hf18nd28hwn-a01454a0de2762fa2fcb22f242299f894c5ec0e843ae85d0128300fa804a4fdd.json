@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_buenos_aires",
+  "stableId": "destination_argentina_buenos_aires",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/buenos-aires/",
+  "sourceFingerprint": "fb69f8076bf7184265f496922f21513335c5c379dd3d3d49284c86475c08b991",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1486",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Buenos_Aires"
+    },
+    "geonamesId": "3435910",
+    "officialUrl": "https://turismo.buenosaires.gob.ar/en"
+  },
+  "location": {
+    "latitude": -34.61315,
+    "longitude": -58.37723,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3435910/"
+  },
+  "alternateNames": [
+    "Buenos Aires",
+    "Ciudad Autónoma de Buenos Aires"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/buenos-aires/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен живой URL: HTTP 200, совпадающий canonical, название и доступность; MD approved, stable ID и countryId сверены с точной entry на main cdd8b523a809da44458be6d763aa2c89541d2141. Именованный референт — город CABA: Ла-Бока, Сан-Тельмо, Каса-Росада и Обелиск. Тигре и пампа — отдельные выезды, не провинция Буэнос-Айрес."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/en",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Именованный референт — город CABA: Ла-Бока, Сан-Тельмо, Каса-Росада и Обелиск. Тигре и пампа — отдельные выезды, не провинция Буэнос-Айрес."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1486",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверены название, страна и тип выбранного объекта. Именованный референт — город CABA: Ла-Бока, Сан-Тельмо, Каса-Росада и Обелиск. Тигре и пампа — отдельные выезды, не провинция Буэнос-Айрес."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Buenos_Aires",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная статья о выбранной горе/городе; соответствует заголовку и географии страницы, не статья неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3435910/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Точная карточка населенного пункта и его страна; ID сверяется с Wikidata P1566. Для Барилоче выбран PPLA3 7647007, а не ADM3."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://turismo.buenosaires.gob.ar/en",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверен официальный муниципальный/туристический сайт выбранного направления. Это информационный officialUrl; не доказательство тождества домена и природного/городского объекта для sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1486",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Проверенные локальные и английские названия выбранной карточки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3435910/",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata P625 (-34.59972,-58.38194) отличается внутри того же города; выбрана точка GeoNames без усреднения."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1486",
+      "checkedAt": "2026-10-16T20:25:40.404Z",
+      "note": "Страна выбранного объекта в Wikidata P17 совпадает с countryId точного MD/entry."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Именованный референт — город CABA: Ла-Бока, Сан-Тельмо, Каса-Росада и Обелиск. Тигре и пампа — отдельные выезды, не провинция Буэнос-Айрес. Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata P625 (-34.59972,-58.38194) отличается внутри того же города; выбрана точка GeoNames без усреднения.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Buenos Aires",
+      "reason": "Именованный референт — город CABA: Ла-Бока, Сан-Тельмо, Каса-Росада и Обелиск. Тигре и пампа — отдельные выезды, не провинция Буэнос-Айрес."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1486",
+      "reason": "Именованный референт — город CABA: Ла-Бока, Сан-Тельмо, Каса-Росада и Обелиск. Тигре и пампа — отдельные выезды, не провинция Буэнос-Айрес."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Buenos_Aires",
+      "reason": "Статья соответствует основному именованному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3435910",
+      "reason": "Совпадают имя, страна и основной референт; идентификатор приведен точной карточкой Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://turismo.buenosaires.gob.ar/en",
+      "reason": "Портал прямо представляет выбранный объект или его официальный туризм."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Buenos Aires; Ciudad Autónoma de Buenos Aires",
+      "reason": "Названия совпадают в точной внешней карточке и/или на официальном портале."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-34.61315, -58.37723 (settlement_center)",
+      "reason": "Координаты WGS84 точной карточки GeoNames, приняты как опорная точка населенного пункта, не полигон и не геометрический центр. Wikidata P625 (-34.59972,-58.38194) отличается внутри того же города; выбрана точка GeoNames без усреднения."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "Страна подтверждена внешней карточкой и текущим сайтом."
+    }
+  ]
+}

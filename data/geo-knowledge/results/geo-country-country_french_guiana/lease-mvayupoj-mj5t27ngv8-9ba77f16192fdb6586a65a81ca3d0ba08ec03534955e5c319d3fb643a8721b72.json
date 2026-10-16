@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-country-country_french_guiana",
+  "stableId": "country_french_guiana",
+  "kind": "country",
+  "canonicalPath": "/french-guiana/",
+  "sourceFingerprint": "7e0f5c7acb4af1a2ffc2fd261131db10c944064c320afe26c84b267c8d55876e",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "overseas department and region of France",
+  "alternateNames": [
+    "French Guiana",
+    "Guyane",
+    "Guyane française"
+  ],
+  "external": {
+    "wikidataQid": "Q3769",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/French_Guiana"
+    },
+    "geonamesId": "3381670",
+    "osm": {
+      "type": "relation",
+      "id": 1260551
+    },
+    "officialUrl": "https://www.ctguyane.fr/"
+  },
+  "relationships": [],
+  "confidence": "high",
+  "reviewNote": "Французская Гвиана — территория Франции (P17/P131 Q142), не самостоятельное государство. Внутренний kind=country — раздел сайта; при интеграции использовать административную территорию/Place. Внутреннего country_france нет: вымышленную containedInPlace-связь не создавать. GeoNames 3381670 представляет территорию PCLD; 6690606 — отдельная запись департамента. OSM 1260551 — территориальная relation admin_level=3; 2502058 — другая региональная/сухопутная relation. Координаты 4,−53 совпадают в Wikidata, Wikipedia и GeoNames, но Wikidata импортирует точку из Wikipedia; независимость происхождения и роль не установлены, location опущен. CTG — официальный орган, его URL не автоматический sameAs.",
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/french-guiana/",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое HTTP-открытие: 200, без смены URL; H1 совпадает с названием, canonical совпадает с этим URL; robots=index,follow."
+    },
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/countries/french-guiana.md",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Текущий main: country_french_guiana, status=approved; slug и contentPath совпадают с source-index entry. Blob b7a262e2c3535d1db85a1bd871bd63f3bec0781b."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3769",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Точная географическая сущность Q3769; название, территория и класс overseas department and region of France соответствуют странице сайта."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3769",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P31: заморский департамент/регион Франции; P17/P131: France Q142. Не суверенное государство."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3769",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Названия проверены по меткам/официальным именам этой сущности и точной странице; другие города/исторические образования исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/French_Guiana",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Открыта точная статья об этой территории/стране; не страница неоднозначностей и не отдельный город."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3381670/guyane.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямое открытие HTTP 200: ID 3381670, Guyane, GF, A.PCLD Dependent political entity; alternate countries GF,FR. Сверено с P1566 Q3769."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/relation/1260551.json",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямой OSM API HTTP 200: relation 1260551 v134, name=Guyane, name:ru=Французская Гвиана, admin_level=3, ISO3166-1=GF, is_in:country=France, wikidata=Q3769, wikipedia=fr:Guyane. Совпадает с P402 Q3769."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3769",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "P625: 4,−53; источник — English Wikipedia. Само совпадение не является независимой проверкой роли точки. Location не включен."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://www.geonames.org/3381670/guyane.html",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Проверенные координаты GeoNames: 4,−53. Несогласованные/не подтвержденные независимо точки не усреднять."
+    },
+    {
+      "field": "location.omitted",
+      "sourceUrl": "https://en.wikipedia.org/wiki/French_Guiana",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Координатный заголовок открыт и сопоставлен с Wikidata/GeoNames; причины исключения location сохранены в reviewNote."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.ctguyane.fr/",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Прямой HTTP 200; заголовок/содержание подтверждают официальный орган этой территории/государства. Институциональный URL не трактовать автоматически как sameAs географического объекта."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.insee.fr/fr/metadonnees/geographie/region/03-guyane",
+      "checkedAt": "2026-10-16T12:56:30.515Z",
+      "note": "Официальный COG на 1 января 2026: Guyane, регион 03, chef-lieu Cayenne (97302), ссылка на департамент 973."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/french-guiana/",
+      "https://www.wikidata.org/wiki/Q3769",
+      "https://en.wikipedia.org/wiki/French_Guiana",
+      "https://www.geonames.org/3381670/guyane.html",
+      "https://www.openstreetmap.org/relation/1260551",
+      "https://www.ctguyane.fr/"
+    ],
+    "findings": [
+      "Точные stable ID, канонический URL и активный опубликованный HTML подтверждены.",
+      "QID, GeoNames и OSM согласованы по имени, территории и классу объекта.",
+      "Location отложен: независимая проверка роли точки не завершена. Готовы только подтвержденные поля."
+    ]
+  }
+}

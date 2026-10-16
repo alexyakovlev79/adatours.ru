@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_belize_plasensiya",
+  "stableId": "destination_belize_plasensiya",
+  "kind": "destination",
+  "canonicalPath": "/belize/place/placencia/",
+  "sourceFingerprint": "64501168881f8ae2306dba526c8ebb344fdcc5b67366945296cb99265851ecb4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "external": {
+    "wikidataQid": "Q2097877",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Placencia"
+    },
+    "geonamesId": "3581447"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_belize"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/plasensiya.md",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Основной референт — курортный поселок Placencia на одноименном полуострове в Stann Creek, Белиз. Описание пляжей и набережной совпадает; идентичность всему полуострову отдельно не приписана."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Placencia",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Основной референт — курортный поселок Placencia на одноименном полуострове в Stann Creek, Белиз. Описание пляжей и набережной совпадает; идентичность всему полуострову отдельно не приписана."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/belize/place/placencia/",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прямой GET, HTTP 200; H1=Пласенсия; rel=canonical соответствует URL; stable ID найден в HTML."
+    },
+    {
+      "field": "relationships.country_belize",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Placencia",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают страна Белиз и географический контекст объекта; countryId=country_belize в текущем MD и entry."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2097877",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Совпадают имя, страна Белиз и тип/смысл объекта; P17=Q242. Основной референт — курортный поселок Placencia на одноименном полуострове в Stann Creek, Белиз. Описание пляжей и набережной совпадает; идентичность всему полуострову отдельно не приписана."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2097877",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Английский sitelink относится к выбранному референту; название/география проверены по статье и первоисточнику."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2097877",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "P1566=3581447; независимо прочитана запись Placencia в текущем BZ.zip GeoNames, country=BZ, класс P/PPL."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Запись 3581447: Placencia, 16.51419, -88.36647, страна BZ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3581447/placencia.html",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Точка записи GeoNames 3581447 (P/PPL) в WGS84, прочитана из текущего BZ.zip: 16.51419, -88.36647. Роль: settlement_center."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BZ.zip",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Прочитан исходный файл BZ.txt, точная строка 3581447. Координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2097877",
+      "checkedAt": "2026-10-16T21:34:11.291Z",
+      "note": "Сверка с P625: 16.513888888889, -88.366666666667. Точки совпадают или близки для выбранного объекта. Роль не означает единственный географический центр."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Основной референт — курортный поселок Placencia на одноименном полуострове в Stann Creek, Белиз. Описание пляжей и набережной совпадает; идентичность всему полуострову отдельно не приписана.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Пласенсия",
+      "reason": "Основной референт — курортный поселок Placencia на одноименном полуострове в Stann Creek, Белиз. Описание пляжей и набережной совпадает; идентичность всему полуострову отдельно не приписана."
+    },
+    {
+      "field": "relationships.country_belize",
+      "probability": 99,
+      "selected": "country_belize",
+      "reason": "Страна подтверждена MD, source-index и внешней карточкой/первоисточником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q2097877",
+      "reason": "Основной референт — курортный поселок Placencia на одноименном полуострове в Stann Creek, Белиз. Описание пляжей и набережной совпадает; идентичность всему полуострову отдельно не приписана."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "selected": "https://en.wikipedia.org/wiki/Placencia",
+      "reason": "Статья выбранного геообъекта; для составного редакционного места используется основной референт."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3581447",
+      "reason": "Совпадают точное имя, страна, тип и P1566 выбранной записи."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "16.51419, -88.36647",
+      "reason": "Выбрана одна именованная точка GeoNames с установленной ролью; проверена по P625 и географическому контексту."
+    }
+  ],
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/belize/place/placencia/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; конечный URL и rel=canonical совпадают с canonicalPath; H1 и stable ID подтверждены в HTML.",
+      "Проверены точные content MD и source-index entry из main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065."
+    ]
+  },
+  "location": {
+    "latitude": 16.51419,
+    "longitude": -88.36647,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3581447/placencia.html"
+  }
+}

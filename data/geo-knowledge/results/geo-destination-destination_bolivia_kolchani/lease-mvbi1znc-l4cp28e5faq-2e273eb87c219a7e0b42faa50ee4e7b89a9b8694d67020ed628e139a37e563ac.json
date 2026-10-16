@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_kolchani",
+  "stableId": "destination_bolivia_kolchani",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/colchani/",
+  "sourceFingerprint": "7cf277d9a898e1c179ca8831441eba4f1d69786e81b725b43c225c0f3e178b98",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1107702",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Colchani"
+    },
+    "geonamesId": "3919884"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/colchani.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Кольчани — Colchani в муниципалитете Uyuni, провинция Antonio Quijarro, Потоси, связанный с добычей соли у солончака. Другие Colchani в Ла-Пасе и Кочабамбе исключены по маршруту и географии."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1107702",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Кольчани — Colchani в муниципалитете Uyuni, провинция Antonio Quijarro, Потоси, связанный с добычей соли у солончака. Другие Colchani в Ла-Пасе и Кочабамбе исключены по маршруту и географии."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/colchani/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Кольчани, canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1107702",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1107702",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Кольчани — Colchani в муниципалитете Uyuni, провинция Antonio Quijarro, Потоси, связанный с добычей соли у солончака. Другие Colchani в Ла-Пасе и Кочабамбе исключены по маршруту и географии."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1107702",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Проверен sitelink eswiki=Colchani выбранного референта. Кольчани — Colchani в муниципалитете Uyuni, провинция Antonio Quijarro, Потоси, связанный с добычей соли у солончака. Другие Colchani в Ла-Пасе и Кочабамбе исключены по маршруту и географии."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3919884/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "GeoNames 3919884: Colchani, P/PPL, BO; соответствует P1566 Q1107702."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитана точная строка 3919884 в BO.txt: Colchani (-20.3,-66.93333), country=BO."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3919884/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Точка GeoNames WGS84: -20.3, -66.93333; роль settlement_center. Точка не объявляется единственным центром или границей объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Исходная строка BO.txt 3919884; координаты взяты из одной записи, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1107702",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Сверка P625: -20.30055556, -66.93777778. Разница опорных точек объяснима размером водоема/поселения; географический контекст совпадает. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кольчани",
+      "reason": "Кольчани — Colchani в муниципалитете Uyuni, провинция Antonio Quijarro, Потоси, связанный с добычей соли у солончака. Другие Colchani в Ла-Пасе и Кочабамбе исключены по маршруту и географии."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1107702",
+      "reason": "Кольчани — Colchani в муниципалитете Uyuni, провинция Antonio Quijarro, Потоси, связанный с добычей соли у солончака. Другие Colchani в Ла-Пасе и Кочабамбе исключены по маршруту и географии."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Colchani",
+      "reason": "Точная статья выбранного объекта/основного референта, не неоднозначность."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3919884",
+      "reason": "Совпадают имя, география, класс и P1566 выбранной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-20.3, -66.93333",
+      "reason": "Одна точка GeoNames с установленной ролью, сверена с P625 и программой/картой; координаты не усреднялись."
+    }
+  ],
+  "reviewNote": "Кольчани — Colchani в муниципалитете Uyuni, провинция Antonio Quijarro, Потоси, связанный с добычей соли у солончака. Другие Colchani в Ла-Пасе и Кочабамбе исключены по маршруту и географии.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/colchani/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -20.3,
+    "longitude": -66.93333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3919884/"
+  }
+}

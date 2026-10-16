@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_lunnaya_dolina_la_pas",
+  "stableId": "destination_bolivia_lunnaya_dolina_la_pas",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/moon-valley-la-paz/",
+  "sourceFingerprint": "aabb31cdd9c61b34027f3cc97b4b49c8413882755b0873472267f3f9ac31e7ed",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q965764",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Valle_de_la_Luna_(Bolivia)"
+    },
+    "officialUrl": "https://lapaz.bo/turismo/mallasa-valle-de-la-luna/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/moon-valley-la-paz.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Valle de la Luna у Mallasa, Ла-Пас, Боливия — эрозионные глинисто-песчаниковые формы рельефа. Совпадает с муниципальной туристической карточкой и Q965764. Не Valle de la Luna в чилийской Атакаме, Ischigualasto или Valle de las Ánimas."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lapaz.bo/turismo/mallasa-valle-de-la-luna/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Valle de la Luna у Mallasa, Ла-Пас, Боливия — эрозионные глинисто-песчаниковые формы рельефа. Совпадает с муниципальной туристической карточкой и Q965764. Не Valle de la Luna в чилийской Атакаме, Ischigualasto или Valle de las Ánimas."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/moon-valley-la-paz/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Лунная долина (Ла-Пас), canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://lapaz.bo/turismo/mallasa-valle-de-la-luna/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965764",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Valle de la Luna у Mallasa, Ла-Пас, Боливия — эрозионные глинисто-песчаниковые формы рельефа. Совпадает с муниципальной туристической карточкой и Q965764. Не Valle de la Luna в чилийской Атакаме, Ischigualasto или Valle de las Ánimas."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965764",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Проверен sitelink eswiki=Valle de la Luna (Bolivia) выбранного референта. Valle de la Luna у Mallasa, Ла-Пас, Боливия — эрозионные глинисто-песчаниковые формы рельефа. Совпадает с муниципальной туристической карточкой и Q965764. Не Valle de la Luna в чилийской Атакаме, Ischigualasto или Valle de las Ánimas."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://lapaz.bo/turismo/mallasa-valle-de-la-luna/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Точная туристическая карточка природного объекта у Mallasa на сайте его муниципалитета La Paz."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965764",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Актуальное P625=-16.5672,-68.0944. Представительная точка эрозионного участка, не центр всего объединенного охраняемого комплекса Valle de la Luna y Cactario."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Bolivia)",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Координаты статьи -16.56722,-68.09444 согласуются с текущим P625; муниципальная карточка подтверждает Mallasa/La Paz. В старом HTML Wikidata встречалась другая близкая точка -16.57,-68.09; выбрано текущее значение JSON, без усреднения."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лунная долина (Ла-Пас)",
+      "reason": "Valle de la Luna у Mallasa, Ла-Пас, Боливия — эрозионные глинисто-песчаниковые формы рельефа. Совпадает с муниципальной туристической карточкой и Q965764. Не Valle de la Luna в чилийской Атакаме, Ischigualasto или Valle de las Ánimas."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q965764",
+      "reason": "Valle de la Luna у Mallasa, Ла-Пас, Боливия — эрозионные глинисто-песчаниковые формы рельефа. Совпадает с муниципальной туристической карточкой и Q965764. Не Valle de la Luna в чилийской Атакаме, Ischigualasto или Valle de las Ánimas."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Valle_de_la_Luna_(Bolivia)",
+      "reason": "Точная статья выбранного объекта/основного референта, не неоднозначность."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://lapaz.bo/turismo/mallasa-valle-de-la-luna/",
+      "reason": "Точная официальная муниципальная карточка объекта."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-16.5672, -68.0944",
+      "reason": "Выбрана текущая P625; совпадает с основной статьей и муниципальным географическим контекстом."
+    }
+  ],
+  "reviewNote": "Valle de la Luna у Mallasa, Ла-Пас, Боливия — эрозионные глинисто-песчаниковые формы рельефа. Совпадает с муниципальной туристической карточкой и Q965764. Не Valle de la Luna в чилийской Атакаме, Ischigualasto или Valle de las Ánimas.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/moon-valley-la-paz/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -16.5672,
+    "longitude": -68.0944,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q965764"
+  }
+}

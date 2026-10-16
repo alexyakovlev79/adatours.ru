@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_kokesa",
+  "stableId": "destination_bolivia_kokesa",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/coquesa/",
+  "sourceFingerprint": "6995f1a9c17867bf3d47265c4880dbccbd8e88cb1a6930df5e49051b14aabb7a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q5169317",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Coqueza"
+    },
+    "geonamesId": "3919141"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/coquesa.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Кокеса — поселение Coquesa/Coqueza у северного берега Salar de Uyuni и у подножия Tunupa, муниципалитет Tahua. Выбран Q5169317 с классом населенного пункта, GeoNames 3919141 и испанской статьей о localidad; английская статья Coqueza Canton не включена из-за административного охвата."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Coqueza",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Кокеса — поселение Coquesa/Coqueza у северного берега Salar de Uyuni и у подножия Tunupa, муниципалитет Tahua. Выбран Q5169317 с классом населенного пункта, GeoNames 3919141 и испанской статьей о localidad; английская статья Coqueza Canton не включена из-за административного охвата."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/coquesa/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Кокеса, canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Coqueza",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5169317",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Кокеса — поселение Coquesa/Coqueza у северного берега Salar de Uyuni и у подножия Tunupa, муниципалитет Tahua. Выбран Q5169317 с классом населенного пункта, GeoNames 3919141 и испанской статьей о localidad; английская статья Coqueza Canton не включена из-за административного охвата."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5169317",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Проверен sitelink eswiki=Coqueza выбранного референта. Используется статья Coqueza о поселении; английский Canton не включен."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3919141/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "GeoNames 3919141: Coquesa, P/PPL, BO; соответствует P1566 Q5169317."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитана точная строка 3919141 в BO.txt: Coquesa (-19.9005,-67.62223), country=BO."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3919141/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Точка GeoNames WGS84: -19.9005, -67.62223; роль settlement_center. Точка не объявляется единственным центром или границей объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Исходная строка BO.txt 3919141; координаты взяты из одной записи, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5169317",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Сверка P625: -19.90138889, -67.62555556. Разница опорных точек объяснима размером водоема/поселения; географический контекст совпадает. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Кокеса",
+      "reason": "Кокеса — поселение Coquesa/Coqueza у северного берега Salar de Uyuni и у подножия Tunupa, муниципалитет Tahua. Выбран Q5169317 с классом населенного пункта, GeoNames 3919141 и испанской статьей о localidad; английская статья Coqueza Canton не включена из-за административного охвата."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q5169317",
+      "reason": "Кокеса — поселение Coquesa/Coqueza у северного берега Salar de Uyuni и у подножия Tunupa, муниципалитет Tahua. Выбран Q5169317 с классом населенного пункта, GeoNames 3919141 и испанской статьей о localidad; английская статья Coqueza Canton не включена из-за административного охвата."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://es.wikipedia.org/wiki/Coqueza",
+      "reason": "Точная статья выбранного объекта/основного референта, не неоднозначность."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3919141",
+      "reason": "Совпадают имя, география, класс и P1566 выбранной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-19.9005, -67.62223",
+      "reason": "Одна точка GeoNames с установленной ролью, сверена с P625 и программой/картой; координаты не усреднялись."
+    }
+  ],
+  "reviewNote": "Кокеса — поселение Coquesa/Coqueza у северного берега Salar de Uyuni и у подножия Tunupa, муниципалитет Tahua. Выбран Q5169317 с классом населенного пункта, GeoNames 3919141 и испанской статьей о localidad; английская статья Coqueza Canton не включена из-за административного охвата.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/coquesa/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -19.9005,
+    "longitude": -67.62223,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3919141/"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_laguna_hedionda",
+  "stableId": "destination_bolivia_laguna_hedionda",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/laguna-hedionda/",
+  "sourceFingerprint": "650040ac5f103732ab4fa1d6e9d1e3836cd7ddc74e356c9b0f971358a554dd46",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q2448710",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Laguna_Hedionda_(Nor_L%C3%ADpez)"
+    },
+    "geonamesId": "3915244",
+    "osm": {
+      "type": "way",
+      "id": 43069185
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/laguna-hedionda.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2448710",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/laguna-hedionda/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Лагуна Хедионда, canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2448710",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2448710",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2448710",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Проверен sitelink eswiki=Laguna Hedionda (Nor Lípez) выбранного референта. Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3915244/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "GeoNames 3915244: Laguna Hedionda, H/LK, BO; соответствует P1566 Q2448710."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитана точная строка 3915244 в BO.txt: Laguna Hedionda (-21.56844,-68.04738), country=BO."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3915244/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Точка GeoNames WGS84: -21.56844, -68.04738; роль representative. Точка не объявляется единственным центром или границей объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Исходная строка BO.txt 3915244; координаты взяты из одной записи, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2448710",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Сверка P625: -21.5696528, -68.0487138. Разница опорных точек объяснима размером водоема/поселения; географический контекст совпадает. "
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/43069185",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитан актуальный OSM элемент; имя и тип объекта совпадают. У водоема natural=water, water=lake; идентичность проверена по названию и соседству."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/tours/mechta-bolivii.md",
+      "checkedAt": "2026-10-16T21:53:01.309Z",
+      "note": "Проверены именованные посещения и порядок лагун/остановок в фактической программе; география согласуется с выбранным объектом."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лагуна Хедионда",
+      "reason": "Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2448710",
+      "reason": "Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Laguna_Hedionda_(Nor_L%C3%ADpez)",
+      "reason": "Точная статья выбранного объекта/основного референта, не неоднозначность."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3915244",
+      "reason": "Совпадают имя, география, класс и P1566 выбранной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-21.56844, -68.04738",
+      "reason": "Одна точка GeoNames с установленной ролью, сверена с P625 и программой/картой; координаты не усреднялись."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "way/43069185",
+      "reason": "Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему."
+    }
+  ],
+  "reviewNote": "Выбрана Laguna Hedionda Norte / Nor Lípez рядом с Каньяпой и Хондой. Последовательность в точных MD туров и соседство на карте исключают южную Laguna Hedionda Q4144714. Q2448710 и GeoNames 3915244 относятся к северному водоему.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/laguna-hedionda/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -21.56844,
+    "longitude": -68.04738,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3915244/"
+  }
+}

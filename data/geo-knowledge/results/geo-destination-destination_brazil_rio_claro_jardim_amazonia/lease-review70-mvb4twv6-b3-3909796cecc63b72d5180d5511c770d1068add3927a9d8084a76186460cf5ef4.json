@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_rio_claro_jardim_amazonia",
+  "stableId": "destination_brazil_rio_claro_jardim_amazonia",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/rio-claro-jardim-amazonia/",
+  "sourceFingerprint": "b0f48990806a4ecfb8e8d9564ce3b23e72d40884bd7818e760958b83bdbafb2d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river_reach",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_jardim_da_amazonia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_anaconda_lake_jardim_amazonia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/rio-claro-jardim-amazonia.md",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Официальный сайт лоджа, первичная программа Araras и новый материал Embratur подтверждают именно этот участок каноэ/водных сафари. Паспорт не расширяется до всей одноимённой реки или муниципалитета."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/rio-claro-jardim-amazonia/",
+      "checkedAt": "2026-10-16T15:40:23.203937+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://jardimdaamazonia.com/pt/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Сайт лоджа подтверждает водные сафари по Rio Claro."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://feel.visitbrasil.com/en/birdwatching-no-jardim-amazonia-2",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Повторно открытый материал Embratur прямо называет берега Rio Claro у Jardim и каноэ к Ninhal das Araras."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://araraslodge.com.br/amazonia-cerrado-e-pantanal-08-dias-e-07-noites/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "День2 связывает rio Claro с lago Anaconda и Jardim da Amazônia."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://jardimdaamazonia.com/pt/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://feel.visitbrasil.com/en/birdwatching-no-jardim-amazonia-2",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Все независимые материалы указывают São José do Rio Claro, Mato Grosso, Brazil."
+    },
+    {
+      "field": "relationships.destination_brazil_jardim_da_amazonia",
+      "sourceUrl": "https://feel.visitbrasil.com/en/birdwatching-no-jardim-amazonia-2",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Это речной участок именно у подтвержденного Jardim da Amazônia."
+    },
+    {
+      "field": "relationships.destination_brazil_anaconda_lake_jardim_amazonia",
+      "sourceUrl": "https://araraslodge.com.br/amazonia-cerrado-e-pantanal-08-dias-e-07-noites/",
+      "checkedAt": "2026-10-16T15:49:57.711Z",
+      "note": "Первичный день2 объединяет каноэ по Rio Claro и lago Anaconda."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Участок Rio Claro у Jardim da Amazônia, São José do Rio Claro/MT",
+      "reason": "Официальный сайт лоджа, первичная программа Araras и новый материал Embratur подтверждают именно этот участок каноэ/водных сафари. Паспорт не расширяется до всей одноимённой реки или муниципалитета."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "river_reach",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Все независимые материалы указывают São José do Rio Claro, Mato Grosso, Brazil."
+    },
+    {
+      "field": "relationships.destination_brazil_jardim_da_amazonia",
+      "probability": 99,
+      "selected": "destination_brazil_jardim_da_amazonia",
+      "reason": "Это речной участок именно у подтвержденного Jardim da Amazônia."
+    },
+    {
+      "field": "relationships.destination_brazil_anaconda_lake_jardim_amazonia",
+      "probability": 95,
+      "selected": "destination_brazil_anaconda_lake_jardim_amazonia",
+      "reason": "Первичный день2 объединяет каноэ по Rio Claro и lago Anaconda."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "Отдельного ID редакционно выделенного участка нет; ID лоджа/города не подходит."
+    },
+    {
+      "field": "location",
+      "probability": 45,
+      "reason": "Точка здания лоджа не задаёт точку русла; без надёжной роли не переносится."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/rio-claro-jardim-amazonia/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  }
+}

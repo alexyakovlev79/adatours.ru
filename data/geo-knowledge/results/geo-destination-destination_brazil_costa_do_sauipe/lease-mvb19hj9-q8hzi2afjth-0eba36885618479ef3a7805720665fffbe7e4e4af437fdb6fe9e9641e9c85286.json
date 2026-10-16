@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_costa_do_sauipe",
+  "stableId": "destination_brazil_costa_do_sauipe",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/costa-do-sauipe/",
+  "sourceFingerprint": "d1d53220141626c8f4dab2651eb25d96ffaed9bc6a3cf5183b4d68593e93c312",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "resort destination; geographical scope unresolved",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "sourceIdentity",
+      "sourceUrl": "https://adatours.ru/brazil/place/costa-do-sauipe/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "HTTP 200; exact self canonical; H1 Коста-ду-Сауипе; no noindex. Current main MD id/countryId/status and source-index id/URL agree; observed content Git blob 326057fd637d0ba35e25b68cf50dd2eda7e65a1b."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://adatours.ru/brazil/place/costa-do-sauipe/",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Published place corresponds to current approved MD with countryId country_brazil; entry countryIds [country_brazil]."
+    },
+    {
+      "field": "identityCandidates",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4456538471.json",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Direct OSM API HTTP 200, v1: name Costa do Sauípe; place=village; (-12.4391251,-37.9233062). Candidate only; not accepted as identity of a resort complex."
+    },
+    {
+      "field": "identityCandidates",
+      "sourceUrl": "https://www.ba.gov.br/comunicacao/2024/04/noticias/complexo-costa-do-sauipe-assina-protocolo-de-intencoes-com-o-governo-do-estado-nesta-quarta-feira-10",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Official state communication identifies Costa do Sauípe as hotel complex in municipality Mata de São João, northern Bahia; supports country/region but does not prove equivalence to OSM village."
+    },
+    {
+      "field": "identityCandidates",
+      "sourceUrl": "https://mapcarta.com/26229226",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Rejected candidate found at Camaçari (-12.6797,-38.10436); not assigned to the page. No coordinate averaging."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sauipe",
+      "checkedAt": "2026-10-16T14:03:41.528Z",
+      "note": "Article distinguishes district Sauipe from hotel complex Costa do Sauipe. Do not assign district identity automatically to the resort page."
+    }
+  ],
+  "reviewNote": "Не публиковать идентичность/координаты до разграничения объекта: текущий MD описывает пляжную курортную зону Коста-ду-Сауипе; OSM node 4456538471 — village Costa do Sauípe, а официальная SECOM Bahia описывает гостиничный комплекс в Mata de São João. GeoNames 6941774 находится у Camaçari (-12.6797,-38.10436), это неподтвержденный/неподходящий одноименный кандидат. Не назначены QID, GeoNames, OSM same identity или единая точка. Нужно определить, представляет ли страница курортный комплекс либо более широкую зону, затем сверить точный официальный план/карту."
+}

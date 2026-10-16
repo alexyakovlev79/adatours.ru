@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_san_migel_del_bala",
+  "stableId": "destination_bolivia_san_migel_del_bala",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/san-miguel-del-bala/",
+  "sourceFingerprint": "7c10259f73eed539bea77b2c84e5106e2c500f6e34313fed9398dc60258cf48e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "village",
+  "external": {
+    "wikidataQid": "Q7414996",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Miguel_del_Bala"
+    }
+  },
+  "location": {
+    "latitude": -14.5080555556,
+    "longitude": -67.4858333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7414996"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/san-miguel-del-bala/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/san-miguel-del-bala.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7414996",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7414996",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7414996",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точка поселения 14°30′29″S 67°29′09″W совпадает в Wikipedia и P625. Не позиция речного причала или отдельного лоджа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Miguel_del_Bala",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Точка поселения 14°30′29″S 67°29′09″W совпадает в Wikipedia и P625. Не позиция речного причала или отдельного лоджа."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7414996",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7414996",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Miguel_del_Bala",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точная статья о выбранном географическом объекте. Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение.",
+      "selected": "village"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Точка поселения 14°30′29″S 67°29′09″W совпадает в Wikipedia и P625. Не позиция речного причала или отдельного лоджа.",
+      "selected": "-14.5080555556, -67.4858333333"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение.",
+      "selected": "Q7414996"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Индейская община такана San Miguel del Bala на западном берегу Бени в департаменте Ла-Пас, южнее Рурренабака. Эколодж — часть туристического контекста, основной референт — поселение.",
+      "selected": "https://en.wikipedia.org/wiki/San_Miguel_del_Bala"
+    }
+  ],
+  "reviewNote": null
+}

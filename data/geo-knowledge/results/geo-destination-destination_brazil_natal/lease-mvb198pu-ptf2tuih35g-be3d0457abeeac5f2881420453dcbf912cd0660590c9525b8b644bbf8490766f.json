@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_natal",
+  "stableId": "destination_brazil_natal",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/natal/",
+  "sourceFingerprint": "0fc2bc7e487ec1c803094023cd615790a19384b32120cd0b0798e225d1167719",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q131620",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Natal,_Rio_Grande_do_Norte"
+    },
+    "geonamesId": "3394023"
+  },
+  "location": {
+    "latitude": -5.795,
+    "longitude": -35.20944,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3394023/natal.html"
+  },
+  "alternateNames": [
+    "Natal"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/natal/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/natal.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_natal, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131620",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверены название, P31 и P17/P131: city, Brazil; Натал — город и столица Rio Grande do Norte в Бразилии. GeoNames 3394023 — PPLA; муниципальный ADM2 6320189 и объекты Natal в Южной Африке не использованы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Natal,_Rio_Grande_do_Norte",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точная статья о выбранном именованном объекте, проверена содержательно и по sitelink Wikidata; охват и обнаруженные координатные расхождения отражены в reviewNote."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3394023/natal.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверена точная карточка населённого пункта: GeoNameId 3394023; правильная страна и административная иерархия. Использован PPL/PPLA, а не одноимённый пляж или центроид ADM2."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3394023/natal.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-5.795, -35.20944), pointRole=settlement_center. Натал — город и столица Rio Grande do Norte в Бразилии. GeoNames 3394023 — PPLA; муниципальный ADM2 6320189 и объекты Natal в Южной Африке не использованы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131620",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Wikidata P625 5°47′42″S 35°12′32″W согласуется с GeoNames PPLA −5.79500, −35.20944; долгота отличается примерно на 2 угловые секунды, без усреднения."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131620",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Натал — город и столица Rio Grande do Norte в Бразилии. GeoNames 3394023 — PPLA; муниципальный ADM2 6320189 и объекты Natal в Южной Африке не использованы."
+}

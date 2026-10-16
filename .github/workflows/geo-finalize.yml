@@ -1,0 +1,27 @@
+name: Finalize GEO passports after Pages deployment
+on:
+  workflow_run:
+    workflows: [Deploy to GitHub Pages]
+    types: [completed]
+permissions:
+  contents: read
+jobs:
+  geo-finalize:
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.event == 'push' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Confirm exact GEO release without another site deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GEO_RUN_ID: ${{ github.event.workflow_run.id }}
+          GEO_RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: node scripts/schema-geo-autoconfirm.mjs

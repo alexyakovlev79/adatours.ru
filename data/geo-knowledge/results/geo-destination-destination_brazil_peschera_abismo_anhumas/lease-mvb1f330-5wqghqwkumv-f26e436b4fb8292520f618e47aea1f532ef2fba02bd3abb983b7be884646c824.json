@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_peschera_abismo_anhumas",
+  "stableId": "destination_brazil_peschera_abismo_anhumas",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/abismo-anhumas-cave/",
+  "sourceFingerprint": "4bcbab4ce0e9abd006982c23f1e4261334b948509dea7ee145b59af66fc84659",
+  "status": "REVIEW",
+  "identityScope": "single",
+  "entityClass": "cave",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 2382055153
+    },
+    "officialUrl": "https://abismoanhumas.com.br/localizacao-e-contato/"
+  },
+  "alternateNames": [
+    "Abismo Anhumas",
+    "Anhumas Abyss"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/abismo-anhumas-cave/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/2382055153.json",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямое чтение OSM v3: Abismo Anhumas, natural=cave_entrance, tourism=attraction. Точная пещера, координаты остаются кандидатом."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://abismoanhumas.com.br/localizacao-e-contato/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Точный официальный сайт пещеры: 23 км от Bonito-MS; адрес Rua General Osório относится к учебному центру, не входу в пещеру. Содержимое подтверждено поисковой копией, прямой web open завершился timeout."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://rigeo.sgb.gov.br/bitstream/doc/17164/1/bodoquena.pdf",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Первичный SGB/CPRM: Geossítio Nº14 Abismo Anhumas, PDF p33/printed p253; пещера около Bonito."
+    },
+    {
+      "field": "location.candidate",
+      "sourceUrl": "https://rigeo.sgb.gov.br/bitstream/doc/17164/1/bodoquena.pdf",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "SGB публикует 21°08′60″S 56°36′00″W; не превращаем грубую/аномальную DMS в точный вход."
+    },
+    {
+      "field": "location.candidate",
+      "sourceUrl": "https://www.showcaves.com/english/br/caves/AbismoAnhumas.html",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Координаты -21.145062,-56.600196 примерно в 900 м от OSM. Не усредняем."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/abismo-anhumas-cave.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "medium",
+  "reviewNote": "Точная пещера подтверждена официальным сайтом и OSM, но точка входа расходится: OSM -21.1531123,-56.5988317; Showcaves -21.145062,-56.600196 (около 900 м); SGB/CPRM Geossítio 14 печатает 21°08′60″S 56°36′00″W (грубая точность/60 секунд); план 2004 года даёт другую входную точку. location не утверждено до сверки входа с актуальной первичной картой. Координаты Centro de Treinamento в центре Bonito и скважины IMASUL не являются координатами пещеры; Q768535 (Bonito) пещере не назначается."
+}

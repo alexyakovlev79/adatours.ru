@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_sukre",
+  "stableId": "destination_bolivia_sukre",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/sucre/",
+  "sourceFingerprint": "24b4345564ed2b1a126efb1e81fdd0aeac9105718a32594ffaba7121b27d8e23",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q2907",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Sucre"
+    }
+  },
+  "location": {
+    "latitude": -19.0475,
+    "longitude": -65.26,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Sucre"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Столица Боливии и Белый город: имя, страна и колониальный центр совпадают.",
+      "selected": "Q2907"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Столица Боливии и Белый город: имя, страна и колониальный центр совпадают.",
+      "selected": "city"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Столица Боливии и Белый город: имя, страна и колониальный центр совпадают.",
+      "selected": "Q2907"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Столица Боливии и Белый город: имя, страна и колониальный центр совпадают.",
+      "selected": "https://en.wikipedia.org/wiki/Sucre"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Точка города из Wikipedia и P625 Q2907 совпадает.",
+      "selected": "-19.0475, -65.26; settlement_center"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "countryId в текущем approved MD и внешние географические источники совпадают.",
+      "selected": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/sucre/",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точный канонический URL открыт и доступен; заголовок и смысл опубликованной страницы сверены с approved MD на main 2814f11a3119ea9990bffcfcd1a41a3eb3bd5065. Столица Боливии и Белый город: имя, страна и колониальный центр совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/2814f11a3119ea9990bffcfcd1a41a3eb3bd5065/src/content/destinations/sukre.md",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Проверены stable ID, status: approved, country_bolivia и основной референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2907",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Столица Боливии и Белый город: имя, страна и колониальный центр совпадают."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sucre",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точная статья о выбранном объекте; сопоставлены название, страна, класс и географический контекст."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sucre",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Столица Боливии и Белый город: имя, страна и колониальный центр совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sucre",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Точка города из Wikipedia и P625 Q2907 совпадает."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2907",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Сверка с другим представлением географического объекта. Точка города из Wikipedia и P625 Q2907 совпадает."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sucre",
+      "checkedAt": "2026-10-16T21:32:47.347Z",
+      "note": "Объект расположен в Боливии, что согласуется с countryId текущего контента."
+    }
+  ],
+  "reviewNote": null
+}

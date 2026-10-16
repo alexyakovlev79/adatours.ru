@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_buzios",
+  "stableId": "destination_brazil_buzios",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/buzios/",
+  "sourceFingerprint": "0ab81f5bcd66096dd73ca9a38dcb22233a0ab714546fe85800b495983958c40c",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city and municipality",
+  "alternateNames": [
+    "Бузиос",
+    "Armação dos Búzios"
+  ],
+  "external": {
+    "wikidataQid": "Q680119",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Arma%C3%A7%C3%A3o_dos_B%C3%BAzios"
+    },
+    "geonamesId": "6319102"
+  },
+  "location": {
+    "latitude": -22.746944444444445,
+    "longitude": -41.88194444444444,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q680119"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/buzios.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Stable ID destination_brazil_buzios, status approved, countryId country_brazil и содержание проверены. Город/одноимённый муниципалитет Бразилии; туристические окрестности в тексте не отождествляются с отдельным парком или природным объектом."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_buzios.json",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Точная запись source-index совпадает со stable ID, страной и каноническим URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/buzios/",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Прямой HTTPS GET 16.10.2026 14:00:06 UTC: HTTP 200, конечный URL и HTML rel=canonical совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q680119",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Q680119: Armação dos Búzios. Имя, класс и страна совпадают с текущей сущностью. Город/одноимённый муниципалитет Бразилии; туристические окрестности в тексте не отождествляются с отдельным парком или природным объектом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Arma%C3%A7%C3%A3o_dos_B%C3%BAzios",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Точная статья об этом городе/муниципалитете либо острове; не список и не страница неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q680119",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "GeoNames 6319102 указан в P1566 точной карточки Q680119. Это внешний идентификатор муниципальной географии; координаты из его административного центроида не заимствуются. Прямая карточка GeoNames через поисковый инструмент недоступна, ID подтверждён по Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q680119",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Wikidata P625: координата переведена из градусов/минут/секунд в десятичные градусы WGS84. Опорная городская точка (representative), не доказанный геометрический центр муниципалитета и не точка конкретной достопримечательности."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://servicodados.ibge.gov.br/api/v3/malhas/municipios/3300233?formato=application/vnd.geo+json&qualidade=intermediaria",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Независимая пространственная сверка: HTTPS 200, официальный GeoJSON IBGE муниципалитета 3300233; алгоритм point-in-polygon с учетом внутренних колец дал inside=true для сохранённой точки. Это проверка принадлежности территории, а не точности P625 или доступности места."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/buzios.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "countryId текущего production MD — country_brazil; внешняя идентичность также находится в Бразилии."
+    }
+  ],
+  "reviewNote": null,
+  "audit": {
+    "checkedUrls": [
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/buzios.md",
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_buzios.json",
+      "https://adatours.ru/brazil/place/buzios/",
+      "https://www.wikidata.org/wiki/Q680119",
+      "https://en.wikipedia.org/wiki/Arma%C3%A7%C3%A3o_dos_B%C3%BAzios",
+      "https://servicodados.ibge.gov.br/api/v3/malhas/municipios/3300233?formato=application/vnd.geo+json&qualidade=intermediaria"
+    ],
+    "findings": [
+      "Город/одноимённый муниципалитет Бразилии; туристические окрестности в тексте не отождествляются с отдельным парком или природным объектом.",
+      "Wikidata P625: координата переведена из градусов/минут/секунд в десятичные градусы WGS84. Опорная городская точка (representative), не доказанный геометрический центр муниципалитета и не точка конкретной достопримечательности.",
+      "IBGE 3300233: point-in-polygon=true; canonical GET=200."
+    ]
+  }
+}

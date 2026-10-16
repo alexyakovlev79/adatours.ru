@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_praia_do_forte",
+  "stableId": "destination_brazil_praia_do_forte",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/praia-do-forte/",
+  "sourceFingerprint": "6f70b52249389ecdc3e3471251c2a12bc80870c88862cc31f75781bc91c1b46a",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "resort_settlement",
+  "external": {
+    "wikidataQid": "Q1015958",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Praia_do_Forte_(Mata_de_S%C3%A3o_Jo%C3%A3o)"
+    },
+    "geonamesId": "7281773"
+  },
+  "location": {
+    "latitude": -12.57739,
+    "longitude": -38.0072,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/7281773/praia-do-forte.html"
+  },
+  "alternateNames": [
+    "Praia do Forte"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/praia-do-forte/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/praia-do-forte.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_praia_do_forte, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1015958",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверены название, P31 и P17/P131: resort_settlement, Brazil; Курорт Praia do Forte в Mata de São João, Bahia, а не одноимённые пляжи других штатов. GeoNames PPL 7281773 соответствует поселению. Английская Wikipedia ошибочно показывает −12.97472, −38.47667 (район Сальвадора): координаты отвергнуты; выбран португальский sitelink с правильной локализацией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Praia_do_Forte_(Mata_de_S%C3%A3o_Jo%C3%A3o)",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точная статья о выбранном именованном объекте, проверена содержательно и по sitelink Wikidata; охват и обнаруженные координатные расхождения отражены в reviewNote."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/7281773/praia-do-forte.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверена точная карточка населённого пункта: GeoNameId 7281773; правильная страна и административная иерархия. Использован PPL/PPLA, а не одноимённый пляж или центроид ADM2."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/7281773/praia-do-forte.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-12.57739, -38.0072), pointRole=settlement_center. Курорт Praia do Forte в Mata de São João, Bahia, а не одноимённые пляжи других штатов. GeoNames PPL 7281773 соответствует поселению. Английская Wikipedia ошибочно показывает −12.97472, −38.47667 (район Сальвадора): координаты отвергнуты; выбран португальский sitelink с правильной локализацией."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1015958",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Wikidata P625 −12.5775, −38.0053194 и португальская Wikipedia 12°34′39″S 38°00′19″W согласуются с GeoNames PPL −12.57739, −38.00720, расстояние порядка 0.2 км. Английская точка не использовалась."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1015958",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Praia_do_Forte",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Отвергнуты координаты −12.97472, −38.47667: не согласуются с Mata de São João; статья описывает тот же курорт, но её координатная шапка ошибочна."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.ba.gov.br/turismo/noticia/2024-07/5093/novos-equipamentos-incrementam-turismo-em-mata-de-sao-joao",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Официальная Setur Bahia подтверждает Praia do Forte как местность муниципалитета Mata de São João в Costa dos Coqueiros."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Курорт Praia do Forte в Mata de São João, Bahia, а не одноимённые пляжи других штатов. GeoNames PPL 7281773 соответствует поселению. Английская Wikipedia ошибочно показывает −12.97472, −38.47667 (район Сальвадора): координаты отвергнуты; выбран португальский sitelink с правильной локализацией."
+}

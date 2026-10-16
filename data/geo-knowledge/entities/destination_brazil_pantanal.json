@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_pantanal",
+  "stableId": "destination_brazil_pantanal",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/pantanal/",
+  "sourceFingerprint": "1328439634b3b53daf371f62ff6eafe57d5935307a60f829df0cf198235e1b6a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "wetland_region",
+  "external": {
+    "wikidataQid": "Q157603"
+  },
+  "relationships": [
+    {
+      "type": "relatedPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/pantanal.md",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Текст говорит о затопляемых равнинах Пантанала, а не о конкретном национальном парке. Бразильские программы — туристический контекст; основной именованный объект — Pantanal. Отношение к Brazil задаётся relatedPlace, без ложного полного containedInPlace трансграничного региона."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/pantanal/",
+      "checkedAt": "2026-10-16T15:40:23.272099+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q157603",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Pantanal — природный регион, связанный с Бразилией, Боливией и Парагваем; отдельные парки/UNESCO не равны всему региону."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q157603",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q157603",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Совпадают основное название и физико-географический класс; идентификатор национального парка не выбран."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q157603",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "P625 — представительная точка региона; не объявляется центром либо входом бразильского туристического участка."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q157603",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Пантанал частично находится в Бразилии, но не целиком; выбран relatedPlace."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Пантанал — именованный природный регион, раскрытый через поездки в его бразильскую часть",
+      "reason": "Текст говорит о затопляемых равнинах Пантанала, а не о конкретном национальном парке. Бразильские программы — туристический контекст; основной именованный объект — Pantanal. Отношение к Brazil задаётся relatedPlace, без ложного полного containedInPlace трансграничного региона."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "wetland_region",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q157603",
+      "reason": "Совпадают основное название и физико-географический класс; идентификатор национального парка не выбран."
+    },
+    {
+      "field": "location",
+      "probability": 84,
+      "selected": "-17.4,-57.5 (representative)",
+      "reason": "P625 — представительная точка региона; не объявляется центром либо входом бразильского туристического участка."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Пантанал частично находится в Бразилии, но не целиком; выбран relatedPlace."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/pantanal/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  },
+  "location": {
+    "latitude": -17.4,
+    "longitude": -57.5,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q157603"
+  }
+}

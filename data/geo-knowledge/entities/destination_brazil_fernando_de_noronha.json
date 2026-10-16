@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_fernando_de_noronha",
+  "stableId": "destination_brazil_fernando_de_noronha",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/fernando-de-noronha/",
+  "sourceFingerprint": "5a76d9321f8a2ad56933ee8b7306698cd45be7a917399c7e49afa47b3312ce6a",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "archipelago",
+  "external": {
+    "wikidataQid": "Q175057",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Fernando_de_Noronha"
+    }
+  },
+  "location": {
+    "latitude": -3.855,
+    "longitude": -32.425,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q175057"
+  },
+  "alternateNames": [
+    "Fernando de Noronha"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/fernando-de-noronha/",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точный опубликованный canonical URL проверен прямым HTTP GET: 200, конечный URL совпадает, noindex отсутствует. Браузер поискового инструмента URL не открыл; использован прямой сетевой запрос."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/fernando-de-noronha.md",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Текущий утверждённый MD и точная source-index entry сверены: destination_brazil_fernando_de_noronha, country_brazil; содержание соответствует выбранному охвату объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q175057",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Проверены название, P31 и P17/P131: archipelago, Brazil; Содержание страницы — архипелаг; destinationType island в исходном MD слишком общий, публичный MD не изменялся. Q175057 описывает архипелаг, Q2438090 — только главный остров. GeoNames 3399637 — административный district, чья юрисдикция шире архипелага; ID не назначен как точный географический эквивалент. UNESCO 1000 включает также Atol das Rocas: не присвоен одному архипелагу."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fernando_de_Noronha",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Точная статья о выбранном именованном объекте, проверена содержательно и по sitelink Wikidata; охват и обнаруженные координатные расхождения отражены в reviewNote."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q175057",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Исходная точка WGS84 (-3.855, -32.425), pointRole=representative. Содержание страницы — архипелаг; destinationType island в исходном MD слишком общий, публичный MD не изменялся. Q175057 описывает архипелаг, Q2438090 — только главный остров. GeoNames 3399637 — административный district, чья юрисдикция шире архипелага; ID не назначен как точный географический эквивалент. UNESCO 1000 включает также Atol das Rocas: не присвоен одному архипелагу."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3399637/fernando-de-noronha.html",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Независимая GeoNames ADM2 точка −3.85071, −32.41997 согласуется с расположением выбранной Wikidata точки на основном острове (около 0.7 км). Это только пространственная сверка; административная территория не выдана за идентичный архипелаг и её центр не заимствован."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q175057",
+      "checkedAt": "2026-10-16T14:05:41.800Z",
+      "note": "Страна Brazil явно указана в географической карточке; сверено с countryId в текущем MD и source-index. containedInPlace указывает на существующий country_brazil."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Содержание страницы — архипелаг; destinationType island в исходном MD слишком общий, публичный MD не изменялся. Q175057 описывает архипелаг, Q2438090 — только главный остров. GeoNames 3399637 — административный district, чья юрисдикция шире архипелага; ID не назначен как точный географический эквивалент. UNESCO 1000 включает также Atol das Rocas: не присвоен одному архипелагу."
+}

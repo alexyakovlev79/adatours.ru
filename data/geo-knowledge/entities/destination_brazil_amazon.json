@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_amazon",
+  "stableId": "destination_brazil_amazon",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/manaus-amazon/",
+  "sourceFingerprint": "d32ad69e6e780ccb14be09026dca6a39fb01e2ed6355e3381b5ff6a722c19f60",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "composite",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q40236"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/c8c1b35de9a0567875bd4763f9fa351c14b28a00/src/content/destinations/manaus-amazonia.md",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Повторно прочитаны точный approved MD и source-index entry на фиксированном SHA main; stable ID, страна, имя и смысл страницы сверены. Заголовок начинается с Манауса; собственный текст, театр Амазонас, история резинового бума и город как база выездов задают основной референт. Вся Амазония не отождествляется с городом. Правило §3.2.1 допускает QID основного референта составной страницы."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/manaus-amazon/",
+      "checkedAt": "2026-10-16T15:40:23.115553+00:00",
+      "note": "Новый прямой HTTP GET: 200; canonical совпадает; robots index, follow."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40236",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Карточка Manaus: город/муниципалитет Amazonas, Brazil; именно городская база описания."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40236",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40236",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Основной именованный референт — Manaus; Q177567 леса не выбран."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40236",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "P625 3°7′8″S 60°1′18″W — опорная городская точка главного референта, не центр всей Амазонии."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40236",
+      "checkedAt": "2026-10-16T15:43:10.703Z",
+      "note": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Манаус — основной референт страницы о городе и выездах в Амазонию",
+      "reason": "Заголовок начинается с Манауса; собственный текст, театр Амазонас, история резинового бума и город как база выездов задают основной референт. Вся Амазония не отождествляется с городом. Правило §3.2.1 допускает QID основного референта составной страницы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 94,
+      "selected": "city",
+      "reason": "Класс определяется предметом страницы и повторно проверенными источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q40236",
+      "reason": "Основной именованный референт — Manaus; Q177567 леса не выбран."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-3.1188888889,-60.0216666667 (settlement_center)",
+      "reason": "P625 3°7′8″S 60°1′18″W — опорная городская точка главного референта, не центр всей Амазонии."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 99,
+      "selected": "country_brazil",
+      "reason": "Страна страницы и география повторно проверенных источников совпадают."
+    }
+  ],
+  "reviewNote": "",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/brazil/place/manaus-amazon/"
+    ],
+    "findings": [
+      "Повторное исследование по явному запросу пользователя; предыдущий immutable result сохранен в revisions state и прежнем results path.",
+      "Вероятности — экспертные оценки по источникам, порог 70% применён отдельно к идентичности и каждому публикуемому полю."
+    ]
+  },
+  "location": {
+    "latitude": -3.1188888889,
+    "longitude": -60.0216666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q40236"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_ilha_grande",
+  "stableId": "destination_brazil_ilha_grande",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/ilha-grande/",
+  "sourceFingerprint": "afcd8c029215ffe29d69dea80b796dd3c9893d33a0a7fa6302b739dfe68a932e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "island",
+  "alternateNames": [
+    "Илья-Гранди",
+    "Ilha Grande"
+  ],
+  "external": {
+    "wikidataQid": "Q1369095",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ilha_Grande"
+    },
+    "geonamesId": "3462217"
+  },
+  "location": {
+    "latitude": -23.15497,
+    "longitude": -44.23894,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3462217/ilha-grande.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_brazil_angra_dos_reis"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/ilha-grande.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Stable ID destination_brazil_ilha_grande, status approved, countryId country_brazil и содержание проверены. Остров у побережья штата Рио-де-Жанейро в муниципалитете Ангра-дус-Рейс; не одноимённый муниципалитет в Пиауи и не отдельный парк."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_ilha_grande.json",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Точная запись source-index совпадает со stable ID, страной и каноническим URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/ilha-grande/",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Прямой HTTPS GET 16.10.2026 14:00:06 UTC: HTTP 200, конечный URL и HTML rel=canonical совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1369095",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Q1369095: Ilha Grande. Имя, класс и страна совпадают с текущей сущностью. Остров у побережья штата Рио-де-Жанейро в муниципалитете Ангра-дус-Рейс; не одноимённый муниципалитет в Пиауи и не отдельный парк."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ilha_Grande",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Точная статья об этом городе/муниципалитете либо острове; не список и не страница неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3462217/ilha-grande.html",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Точная карточка GeoNames 3462217, класс T.ISL, название Ilha Grande, BR, Rio de Janeiro; совпадает с P1566 Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3462217/ilha-grande.html",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "GeoNames 3462217 (T.ISL): -23.15497, -44.23894, WGS84; опорная точка внутри острова, не вход/причал и не вычисленный центроид. P625 Wikidata (-23.1333333, -44.1666667) отличается примерно на 7.8 км; значения не усреднялись, выбрана точка GeoNames."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://servicodados.ibge.gov.br/api/v3/malhas/municipios/3300100?formato=application/vnd.geo+json&qualidade=intermediaria",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Независимая пространственная сверка: HTTPS 200, официальный GeoJSON IBGE муниципалитета 3300100; алгоритм point-in-polygon с учетом внутренних колец дал inside=true для сохранённой точки. Это проверка принадлежности территории, а не точности P625 или доступности места."
+    },
+    {
+      "field": "relationships.destination_brazil_angra_dos_reis",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1369095",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Wikidata P131: остров Ilha Grande находится в Angra dos Reis; stable ID этой опубликованной страницы есть в текущей партии."
+    },
+    {
+      "field": "audit.heritageScope",
+      "sourceUrl": "https://whc.unesco.org/en/list/1308",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Серийный объект UNESCO включает несколько компонентов; весь муниципалитет/остров не объявляется тождественным этому объекту."
+    }
+  ],
+  "reviewNote": "Выбрана точка GeoNames внутри острова; конфликт P625 сохранён в provenance.",
+  "audit": {
+    "checkedUrls": [
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/ilha-grande.md",
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_ilha_grande.json",
+      "https://adatours.ru/brazil/place/ilha-grande/",
+      "https://www.wikidata.org/wiki/Q1369095",
+      "https://en.wikipedia.org/wiki/Ilha_Grande",
+      "https://www.geonames.org/3462217/ilha-grande.html",
+      "https://servicodados.ibge.gov.br/api/v3/malhas/municipios/3300100?formato=application/vnd.geo+json&qualidade=intermediaria",
+      "https://whc.unesco.org/en/list/1308"
+    ],
+    "findings": [
+      "Остров у побережья штата Рио-де-Жанейро в муниципалитете Ангра-дус-Рейс; не одноимённый муниципалитет в Пиауи и не отдельный парк.",
+      "GeoNames 3462217 (T.ISL): -23.15497, -44.23894, WGS84; опорная точка внутри острова, не вход/причал и не вычисленный центроид. P625 Wikidata (-23.1333333, -44.1666667) отличается примерно на 7.8 км; значения не усреднялись, выбрана точка GeoNames.",
+      "IBGE 3300100: point-in-polygon=true; canonical GET=200.",
+      "UNESCO 1308 — серийный объект, не точная идентичность всей страницы; unescoSiteIds не назначен."
+    ]
+  }
+}

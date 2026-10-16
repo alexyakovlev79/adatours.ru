@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_pisko",
+  "stableId": "destination_peru_pisko",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/pisco/",
+  "sourceFingerprint": "eb845fa5872782048c740a83f5a06adc8239a79c2e8d6377be6f2eafee1c99bf",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q290504",
+    "geonamesId": "3932145",
+    "osm": {
+      "type": "node",
+      "id": 253909180
+    },
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Pisco_(ciudad)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/829696675d32833cf18ebb696ee714747a28f04b/src/content/destinations/pisko.md",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает город Писко на побережье области Ика, рядом с Паракасом. Исключены одноимённые провинция, район и напиток."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/pisco/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Проверен опубликованный точный URL: HTTP 200, H1 и canonical совпадают с задачей, noindex отсутствует."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q290504",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает город Писко на побережье области Ика, рядом с Паракасом. Исключены одноимённые провинция, район и напиток."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.geonames.org/3932145/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Источник явно помещает выбранный объект в Перу; страна совпадает с countryId исходного MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q290504",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "MD описывает город Писко на побережье области Ика, рядом с Паракасом. Исключены одноимённые провинция, район и напиток."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3932145/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Pisco (Seat of a third-order administrative division). Population 61,869. Located in South America, Peru, Ica, Pisco Province, Pisco District, Pisco. Coordinates -13.7103, -76.2054."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/253909180",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Прямое OSM API: place=city, name=Pisco, wikidata=Q290504; совпадает с выбранным городом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.openstreetmap.org/node/253909180",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная ссылка на статью о выбранном объекте, связанная из OSM/Wikidata; URL открыт, не страница неоднозначностей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3932145/",
+      "checkedAt": "2026-10-16T21:20:09.095Z",
+      "note": "Точная WGS84-точка из JSON-LD выбранной GeoNames-карточки. Репрезентативная точка объекта, не утверждение о единственном центре."
+    }
+  ],
+  "confidence": "high",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q290504",
+      "reason": "MD описывает город Писко на побережье области Ика, рядом с Паракасом. Исключены одноимённые провинция, район и напиток."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "City",
+      "reason": "MD описывает город Писко на побережье области Ика, рядом с Паракасом. Исключены одноимённые провинция, район и напиток."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "География исходного MD совпадает с внешней точной карточкой/национальным туристическим порталом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q290504",
+      "reason": "MD описывает город Писко на побережье области Ика, рядом с Паракасом. Исключены одноимённые провинция, район и напиток."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3932145",
+      "reason": "Точная GeoNames-карточка совпадает по названию, типу объекта и административной географии. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/253909180",
+      "reason": "Проверены тип, имя и перекрёстный идентификатор/оператор непосредственно в OSM API."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Pisco_(ciudad)",
+      "reason": "MD описывает город Писко на побережье области Ика, рядом с Паракасом. Исключены одноимённые провинция, район и напиток."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-13.71029,-76.20538",
+      "reason": "Точка выбранного объекта из указанного первичного геосправочника с явной ролью representative."
+    }
+  ],
+  "reviewNote": "Выбран город, не одноимённая административная единица. Точка GeoNames репрезентативная; отличается от точки OSM города, не усреднялась и не заявлена единственным центром.",
+  "location": {
+    "latitude": -13.71029,
+    "longitude": -76.20538,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3932145/"
+  }
+}

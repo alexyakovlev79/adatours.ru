@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_angra_dos_reis",
+  "stableId": "destination_brazil_angra_dos_reis",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/angra-dos-reis/",
+  "sourceFingerprint": "89b477234ab4702109cae05deb8dda8c412fe9c4720e20ce14ddc968a78ce297",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "city and municipality",
+  "alternateNames": [
+    "Ангра-дус-Рейс",
+    "Angra dos Reis"
+  ],
+  "external": {
+    "wikidataQid": "Q542829",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Angra_dos_Reis"
+    },
+    "geonamesId": "6322001"
+  },
+  "location": {
+    "latitude": -23.006944444444443,
+    "longitude": -44.31777777777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q542829"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/angra-dos-reis.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Stable ID destination_brazil_angra_dos_reis, status approved, countryId country_brazil и содержание проверены. Город/одноимённый муниципалитет Бразилии; туристические окрестности в тексте не отождествляются с отдельным парком или природным объектом."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_angra_dos_reis.json",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Точная запись source-index совпадает со stable ID, страной и каноническим URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/angra-dos-reis/",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Прямой HTTPS GET 16.10.2026 14:00:06 UTC: HTTP 200, конечный URL и HTML rel=canonical совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q542829",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Q542829: Angra dos Reis. Имя, класс и страна совпадают с текущей сущностью. Город/одноимённый муниципалитет Бразилии; туристические окрестности в тексте не отождествляются с отдельным парком или природным объектом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Angra_dos_Reis",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Точная статья об этом городе/муниципалитете либо острове; не список и не страница неоднозначностей."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q542829",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "GeoNames 6322001 указан в P1566 точной карточки Q542829. Это внешний идентификатор муниципальной географии; координаты из его административного центроида не заимствуются. Прямая карточка GeoNames через поисковый инструмент недоступна, ID подтверждён по Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q542829",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Wikidata P625: координата переведена из градусов/минут/секунд в десятичные градусы WGS84. Опорная городская точка (representative), не доказанный геометрический центр муниципалитета и не точка конкретной достопримечательности."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://servicodados.ibge.gov.br/api/v3/malhas/municipios/3300100?formato=application/vnd.geo+json&qualidade=intermediaria",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Независимая пространственная сверка: HTTPS 200, официальный GeoJSON IBGE муниципалитета 3300100; алгоритм point-in-polygon с учетом внутренних колец дал inside=true для сохранённой точки. Это проверка принадлежности территории, а не точности P625 или доступности места."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/angra-dos-reis.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "countryId текущего production MD — country_brazil; внешняя идентичность также находится в Бразилии."
+    }
+  ],
+  "reviewNote": null,
+  "audit": {
+    "checkedUrls": [
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/angra-dos-reis.md",
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_angra_dos_reis.json",
+      "https://adatours.ru/brazil/place/angra-dos-reis/",
+      "https://www.wikidata.org/wiki/Q542829",
+      "https://en.wikipedia.org/wiki/Angra_dos_Reis",
+      "https://servicodados.ibge.gov.br/api/v3/malhas/municipios/3300100?formato=application/vnd.geo+json&qualidade=intermediaria"
+    ],
+    "findings": [
+      "Город/одноимённый муниципалитет Бразилии; туристические окрестности в тексте не отождествляются с отдельным парком или природным объектом.",
+      "Wikidata P625: координата переведена из градусов/минут/секунд в десятичные градусы WGS84. Опорная городская точка (representative), не доказанный геометрический центр муниципалитета и не точка конкретной достопримечательности.",
+      "IBGE 3300100: point-in-polygon=true; canonical GET=200."
+    ]
+  }
+}

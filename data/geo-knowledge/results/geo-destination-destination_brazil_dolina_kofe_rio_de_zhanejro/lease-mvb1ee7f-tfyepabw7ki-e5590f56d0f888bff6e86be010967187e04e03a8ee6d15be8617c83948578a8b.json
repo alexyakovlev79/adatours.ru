@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_dolina_kofe_rio_de_zhanejro",
+  "stableId": "destination_brazil_dolina_kofe_rio_de_zhanejro",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/coffee-valley-rio-de-janeiro/",
+  "sourceFingerprint": "7119e367a6de70bd3307a0e1d7eaad29ad60d218d9d412e3df3ded1167704a60",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q10388830",
+    "wikipedia": {
+      "pt": "https://pt.wikipedia.org/wiki/Vale_do_Caf%C3%A9"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/coffee-valley-rio-de-janeiro/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/coffee-valley-rio-de-janeiro.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10388830",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "P31 tourist destination; P17 Brazil; P131 Rio de Janeiro; sitelink ptwiki Vale do Café."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://pt.wikipedia.org/wiki/Vale_do_Caf%C3%A9",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Статья о туристическом регионе из нескольких муниципалитетов Rio de Janeiro; точное название и область страницы совпадают."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://valedocafeturismo.com.br/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Региональное туристическое бюро подтверждает единое имя региона; сайт организации не включён в external как идентичность географического объекта."
+    }
+  ],
+  "entityClass": "tourism_region",
+  "alternateNames": [
+    "Vale do Café"
+  ],
+  "reviewNote": "Подтверждён регион Vale do Café в штате Rio de Janeiro. Это туристический регион, а не город/административная единица и не весь Vale do Paraíba. Точка не присвоена: точный центр территории не установлен. Портал Convention & Visitors Bureau использован как источник о регионе; саму организацию с регионом не отождествлять."
+}

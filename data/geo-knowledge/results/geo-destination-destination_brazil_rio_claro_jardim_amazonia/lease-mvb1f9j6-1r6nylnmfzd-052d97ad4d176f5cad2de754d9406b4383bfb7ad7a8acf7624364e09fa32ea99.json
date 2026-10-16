@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_rio_claro_jardim_amazonia",
+  "stableId": "destination_brazil_rio_claro_jardim_amazonia",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/rio-claro-jardim-amazonia/",
+  "sourceFingerprint": "b0f48990806a4ecfb8e8d9564ce3b23e72d40884bd7818e760958b83bdbafb2d",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "entityClass": "river_reach",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/rio-claro-jardim-amazonia/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Прямой HTTP GET: 200; HTML title соответствует объекту; rel=canonical совпадает с URL задачи. Веб-поисковый opener не смог открыть сайт; доступность проверена прямым запросом."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/rio-claro-jardim-amazonia.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Точный approved MD: stable ID и countryId=country_brazil совпали с claim; тип и описание сверены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/rio-claro-jardim-amazonia.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Класс выбран по содержанию места, без изменения production MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://jardimdaamazonia.com/pt/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Официальный сайт лоджа прямо связывает водные сафари с Rio Claro, São José do Rio Claro, Mato Grosso."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://feel.visitbrasil.com/birdwatching-no-jardim-amazonia/",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Embratur независимо подтверждает расположение Jardim da Amazônia на берегах Rio Claro и выход на каноэ к Ninhal das Araras."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/rio-claro-jardim-amazonia.md",
+      "checkedAt": "2026-10-16T14:09:01.790Z",
+      "note": "Закреплённое полное имя участка; не расширять scope до всей реки."
+    }
+  ],
+  "alternateNames": [
+    "Rio Claro — Jardim da Amazônia"
+  ],
+  "reviewNote": "Подтверждён конкретный участок Rio Claro у Jardim da Amazônia, São José do Rio Claro/MT. Это редакционно выделенный участок, не весь муниципалитет, не лодж и не одноимённая река у Chapada dos Guimarães. Сайт лоджа и Embratur подтверждают объект; QID/OSM/GeoNames участка и независимо проверенная точка русла не найдены. Не присваивать QID города/лоджа или координату гостиничного корпуса."
+}

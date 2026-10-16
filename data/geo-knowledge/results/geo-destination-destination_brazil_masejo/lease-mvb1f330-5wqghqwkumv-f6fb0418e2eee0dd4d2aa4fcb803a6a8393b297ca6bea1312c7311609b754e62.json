@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_masejo",
+  "stableId": "destination_brazil_masejo",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/maceio/",
+  "sourceFingerprint": "cc1fdb4e2b98cad09666d25a24db30ed084920295a798acd0211b8c5d0bb750e",
+  "status": "READY",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "geonamesId": "3395981"
+  },
+  "alternateNames": [
+    "Maceió",
+    "Масейу"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/maceio/",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Прямой HTTP GET: 200, final URL совпадает, HTML canonical совпадает, title соответствует объекту. Stable ID, approved MD, countryId и точная source-index entry сверены в main."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3395981/maceio.html",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "Maceió, BR/Alagoas, P.PPLA, точный населённый пункт."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3395981/maceio.html",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "WGS84 -9.66583,-35.73528; опорная точка населённого пункта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q168888",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "P625 муниципалитета Maceió: 9°39′57″S 35°44′6″W (-9.6658333,-35.735); приблизительно 31 м, подтверждает городскую область."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/maceio.md",
+      "checkedAt": "2026-10-16T14:09:53.626Z",
+      "note": "В актуальном approved MD countryId=country_brazil; страна согласуется с внешними географическими источниками."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "GeoNames 3395981 — P.PPLA Maceió, штат Alagoas. Муниципальный Q168888 сохранён только как источник независимой сверки, без назначения городскому объекту. Разница с P625 около 31 м; точки не усреднялись.",
+  "location": {
+    "latitude": -9.66583,
+    "longitude": -35.73528,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3395981/maceio.html"
+  }
+}

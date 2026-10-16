@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_chapada_geodesic_viewpoint",
+  "stableId": "destination_brazil_chapada_geodesic_viewpoint",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/chapada-geodesic-viewpoint/",
+  "sourceFingerprint": "b09864ac9bfea56f9f434c5ef1582a3ef556ee332bbb75bae3036f166422bc65",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/19/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/chapada-geodesic-viewpoint/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/chapada-geodesic-viewpoint.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.chapadadosguimaraes.mt.gov.br/Turismo/Atrativos-Turistico/19/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Муниципальная карточка MIRANTE DO CENTRO GEODÉSICO подтверждает точное имя и класс объекта; ссылка officialUrl, не автоматический sameAs."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.sgb.gov.br/geossit/geossitios/ver/2204",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Геологическая служба: одноимённая смотровая, координаты -15.601099968,-55.480300903, datum WGS84; противоречит муниципальной карточке."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.geoparkchapadadosguimaraes.com/estradaparquemirantes",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Геопарк подтверждает отдельную смотровую у MT-251. Это не основание отождествлять её с любым другим mirante; противоречие координат не устранено."
+    }
+  ],
+  "entityClass": "viewpoint",
+  "alternateNames": [
+    "Mirante do Centro Geodésico"
+  ],
+  "reviewNote": "Точная смотровая подтверждена, но location исключён: SGB Geossit 2204 даёт -15.601099968,-55.480300903 (WGS84), муниципальная карточка — -15.47933509601598,-55.68788164732442. Расхождение около 26 км, не допустимая разница входа и смотровой. Нужна адресная картографическая проверка. Это не геодезический монумент Cuiabá и не национальный парк целиком; QID и координаты этих объектов не присвоены."
+}

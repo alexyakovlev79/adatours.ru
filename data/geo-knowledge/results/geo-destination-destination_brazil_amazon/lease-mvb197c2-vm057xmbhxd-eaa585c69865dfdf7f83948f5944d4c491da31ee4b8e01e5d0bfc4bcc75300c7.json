@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_amazon",
+  "stableId": "destination_brazil_amazon",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/manaus-amazon/",
+  "sourceFingerprint": "d32ad69e6e780ccb14be09026dca6a39fb01e2ed6355e3381b5ff6a722c19f60",
+  "status": "REVIEW",
+  "confidence": "medium",
+  "identityScope": "composite",
+  "entityClass": "city and rainforest travel area",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/manaus-amazonia.md",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Страница «Манаус и Амазония» явно объединяет город и природный регион. Q40236 обозначает только Манаус, Q177567 — амазонский дождевой лес во многих странах; ни один не тождественен всей странице. Единые QID/GeoNames/координаты не назначены. Мастеру нужно определить состав паспорта с отдельными компонентами и их stable ID, сохранив текущие ID/URL."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_amazon.json",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "ID, countryIds и canonicalPath соответствуют текущей точной source-index entry."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/manaus-amazon/",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Прямой HTTPS GET 16.10.2026 14:00:06 UTC: HTTP 200, точный rel=canonical подтверждён."
+    },
+    {
+      "field": "audit.identityScope",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q40236",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Q40236 — город/муниципалитет Манаус, только городская часть страницы."
+    },
+    {
+      "field": "audit.identityScope",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q177567",
+      "checkedAt": "2026-10-16T14:04:05.032Z",
+      "note": "Q177567 — амазонский дождевой лес, отдельный крупный трансграничный объект."
+    }
+  ],
+  "reviewNote": "Страница «Манаус и Амазония» явно объединяет город и природный регион. Q40236 обозначает только Манаус, Q177567 — амазонский дождевой лес во многих странах; ни один не тождественен всей странице. Единые QID/GeoNames/координаты не назначены. Мастеру нужно определить состав паспорта с отдельными компонентами и их stable ID, сохранив текущие ID/URL.",
+  "audit": {
+    "checkedUrls": [
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/src/content/destinations/manaus-amazonia.md",
+      "https://github.com/alexyakovlev79/adatours.ru/blob/a18b8fdfa7bd9bd7c5ae9496ae206b24f714a39c/data/source-index/entries/destination_brazil_amazon.json",
+      "https://adatours.ru/brazil/place/manaus-amazon/",
+      "https://www.wikidata.org/wiki/Q40236",
+      "https://www.wikidata.org/wiki/Q177567"
+    ],
+    "findings": [
+      "Страница «Манаус и Амазония» явно объединяет город и природный регион. Q40236 обозначает только Манаус, Q177567 — амазонский дождевой лес во многих странах; ни один не тождественен всей странице. Единые QID/GeoNames/координаты не назначены. Мастеру нужно определить состав паспорта с отдельными компонентами и их stable ID, сохранив текущие ID/URL."
+    ],
+    "proposedChanges": [
+      "Уточнить географический охват без смены stable ID и URL; внешние идентификаторы частей хранить отдельно и не выдавать за sameAs целой страницы."
+    ]
+  }
+}

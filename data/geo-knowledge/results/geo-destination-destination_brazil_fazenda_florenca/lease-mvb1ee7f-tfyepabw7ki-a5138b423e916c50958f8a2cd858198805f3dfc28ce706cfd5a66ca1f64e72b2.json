@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_brazil_fazenda_florenca",
+  "stableId": "destination_brazil_fazenda_florenca",
+  "kind": "destination",
+  "canonicalPath": "/brazil/place/fazenda-florenca/",
+  "sourceFingerprint": "4bbb9941a751ea1a78035a544c3356bfae0fd06afce43539d832e1ff33c195df",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.hotelfazendaflorenca.com.br/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/brazil/place/fazenda-florenca/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Прямая HTTP-проверка urllib: 200, canonical совпадает с целевым URL; опубликованная страница и актуальный approved MD имеют нужный stable ID."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/fazenda-florenca.md",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Актуальный MD: countryId=country_brazil; stable ID, имя, тип и статус approved сверены."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.hotelfazendaflorenca.com.br/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Официальный сайт физической усадьбы/гостиницы Fazenda Florença, Conservatória, distrito Valença, RJ."
+    },
+    {
+      "field": "identityScope",
+      "sourceUrl": "https://www.hotelfazendaflorenca.com.br/historia/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Официальная история подтверждает исторический дом 1852 года и посещение кофейных посадок: это точный объект целевого MD."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56693535",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Карточка museum in Valença со ссылкой на музейный реестр; QID музея не присваивается всей усадьбе автоматически."
+    },
+    {
+      "field": "identityReview",
+      "sourceUrl": "https://www.hotelfazendaflorenca.com.br/localizacao/",
+      "checkedAt": "2026-10-16T14:08:07.952Z",
+      "note": "Официальный сайт указывает координаты для вертолётной навигации; не считать их входом/центром усадьбы и не смешивать с музейной точкой."
+    }
+  ],
+  "entityClass": "historic_estate",
+  "alternateNames": [
+    "Fazenda Florença",
+    "Hotel Fazenda Florença"
+  ],
+  "reviewNote": "Подтверждена историческая усадьба в Conservatória/Valença с домом 1852 года. В MD ошибочно технический destinationType=route_cluster; паспорт описывает единое физическое поместье, MD не менялся. Q56693535 помечен museum, поэтому пока не присвоен всей усадьбе. Координаты не включены: музейная точка Wikidata/Wikipedia 22°17′10.946″S 43°55′25.115″W и официальный вертолётный ориентир 22°17′51.8″S 43°54′46.7″W обозначают разные точки; роль единой точки для усадьбы независимо не подтверждена."
+}

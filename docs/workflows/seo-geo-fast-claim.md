@@ -1,8 +1,8 @@
 # Ada Tours — быстрый атомарный резерв пяти SEO/GEO-статей
 
-Версия 1.1, 16.10.2026. Дополнение к разделу 8 `docs/workflows/seo-geo-registry.md`, а не самостоятельная очередь.
+Версия 1.2, 16.10.2026. Дополнение к разделу 8 `docs/workflows/seo-geo-registry.md`, а не самостоятельная очередь.
 
-**Для команды «пиши SEO» выполнить код ниже ОДНИМ вызовом `functions.exec` (Code Mode).** На одном SHA staging читаются только `claims.json` и `05-tours.json`. Если в этапе 05 нет свободных `draft`/`queued` URL, прочитать только `06-places.json`; если он тоже исчерпан — `07-excursions.json`. Этапы 01–04 при автоматическом выборе SEO-авторов НЕ читаются. Проверяются только необходимые фазы, без одновременного открытия остальных. Резерв и статус выбранной фазы записываются одним Git tree/commit с CAS в staging, полные JSON в чат не выводятся. До захвата не читать `main`, Sheets, Actions, соседние статьи или историю коммитов. При переходе в этап 06 приоритет этапа 05 сохраняется: следующий новый захват начинает проверку опять с 05.
+**Для команды «пиши SEO» выполнить код ниже ОДНИМ вызовом `functions.exec` (Code Mode).** На одном SHA staging читаются только `claims.json` и `05-tours.json`. Если в этапе 05 меньше пяти свободных `draft`/`queued` URL, добрать недостающие из `06-places.json`; если их все еще недостаточно — из `07-excursions.json`. При полностью занятых резервах 05 перейти в 06 сразу. Этапы 01–04 при автоматическом выборе SEO-авторов НЕ читаются. Проверяются только необходимые фазы, без одновременного открытия остальных. Резервы и статусы только выбранных фаз записываются одним Git tree/commit с CAS в staging, полные JSON в чат не выводятся. До захвата не читать `main`, Sheets, Actions, соседние статьи или историю коммитов. Следующий захват вновь проверяет этап 05 первым, чтобы подхватить вновь освобожденные URL.
 
 Резервирование — отдельная операция от написания статей и публикации. **К работе над статьей приступать только после результата `status: reserved` с `commit`**. При `status: empty` работа закончена; при ошибке нельзя считать URL занятыми. При `previousWork: draft` после резервирования открыть только точный существующий `articlePath` и переиспользовать полный `approved` MD, если он уже готов; это не повод писать его снова.
 
@@ -44,29 +44,32 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
       isAvailable(record.url) &&
       !["temporarily_unavailable", "missing", "archived"].includes(record.availability)
     );
-    let phase = 5;
-    let phaseFile = phase05;
-    let possible = eligible(phaseFile);
-    if (!possible.length) {
-      phase = 6;
-      phaseFile = await readJson(phasePaths[1]);
-      possible = eligible(phaseFile);
+    const phaseFiles = [phase05];
+    const picked = [];
+    const batchLimit = 5;
+    for (let phaseIndex = 0; phaseIndex < phasePaths.length && picked.length < batchLimit; phaseIndex++) {
+      if (phaseIndex > 0) phaseFiles.push(await readJson(phasePaths[phaseIndex]));
+      const available = eligible(phaseFiles[phaseIndex]).sort((a, b) =>
+        (a.work === "draft" ? 0 : 1) - (b.work === "draft" ? 0 : 1) ||
+        a.order - b.order
+      );
+      for (const record of available.slice(0, batchLimit - picked.length)) {
+        picked.push({ record, phaseIndex });
+      }
     }
-    if (!possible.length) {
-      phase = 7;
-      phaseFile = await readJson(phasePaths[2]);
-      possible = eligible(phaseFile);
-    }
-    const picked = possible.sort((a, b) =>
-      (a.work === "draft" ? 0 : 1) - (b.work === "draft" ? 0 : 1) ||
-      a.order - b.order
-    ).slice(0, 5);
     if (!picked.length) return { status: "empty", head, checkedPhases: [5, 6, 7], elapsedMs: Date.now() - begun };
-    const selected = picked.map(record => ({ order: record.order, url: record.url, previousWork: record.work }));
-    if (dryRun) return { status: "dry_run", head, phase, selected, elapsedMs: Date.now() - begun };
+    const phases = [...new Set(picked.map(({ phaseIndex }) => phaseIndex + 5))];
+    const phase = phases[0];
+    const selected = picked.map(({ record, phaseIndex }) => ({
+      phase: phaseIndex + 5, order: record.order, url: record.url, previousWork: record.work
+    }));
+    if (dryRun) return { status: "dry_run", head, phase, phases, selected, elapsedMs: Date.now() - begun };
     const stamp = new Date(now).toISOString();
-    const expiresAt = new Date(now + 90 * 60 * 1000).toISOString();
-    for (const record of picked) {
+    const leaseMinutes = 90;
+    const expiresAt = new Date(now + leaseMinutes * 60 * 1000).toISOString();
+    const changed = new Set();
+    for (const { record, phaseIndex } of picked) {
+      changed.add(phaseIndex);
       const previousClaim = claimMap[record.url];
       record.work = "draft";
       const log = `SEO/GEO reserved ${batchId} by ${ownerId} until ${expiresAt}.`;
@@ -77,10 +80,10 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
         generation: (previousClaim?.generation || 0) + 1
       };
     }
-    const elements = [{
-      path: phasePaths[phase - 5], mode: "100644", type: "blob",
-      content: JSON.stringify(phaseFile, null, 2) + "\n"
-    }];
+    const elements = [...changed].map(i => ({
+      path: phasePaths[i], mode: "100644", type: "blob",
+      content: JSON.stringify(phaseFiles[i], null, 2) + "\n"
+    }));
     elements.push({
       path: "data/seo-geo/claims.json", mode: "100644", type: "blob",
       content: JSON.stringify(claimFile, null, 2) + "\n"
@@ -98,10 +101,10 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
         expected_sha: head, force: false
       });
       if (updated.result.success === false) throw new Error("CAS update rejected");
-      return { status: "reserved", commit: newCommit, phase, selected, elapsedMs: Date.now() - begun };
+      return { status: "reserved", commit: newCommit, phase, phases, selected, elapsedMs: Date.now() - begun };
     } catch (err) {
       const observed = await getHead();
-      if (observed === newCommit) return { status: "reserved", commit: newCommit, phase, selected, elapsedMs: Date.now() - begun };
+      if (observed === newCommit) return { status: "reserved", commit: newCommit, phase, phases, selected, elapsedMs: Date.now() - begun };
       if (observed === head) throw err;
       if (attempt === 2) throw new Error(`CAS contention after 3 attempts: ${String(err)}`);
     }
@@ -111,4 +114,4 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
 text(JSON.stringify(await fastClaimSeoBatch()));
 ```
 
-Для диагностики допустим **только без записи** вариант `await fastClaimSeoBatch({dryRun:true})`. Не включать `dryRun` в реальном запросе «пиши SEO». `phase` показывает реально выбранный этап (05/06/07); `elapsedMs` — время инструментального захвата, а не время размышления модели или подготовки статьи.
+Для диагностики допустим **только без записи** вариант `await fastClaimSeoBatch({dryRun:true})`. Не включать `dryRun` в реальном запросе «пиши SEO». `phases` показывает реально затронутые этапы, а `selected[].phase` — этап каждого URL; `elapsedMs` — время инструментального захвата, а не время размышления модели или подготовки статьи.

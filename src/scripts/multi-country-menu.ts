@@ -1,8 +1,10 @@
-// Actual hrefs for every 2-4 country combination remain in the rendered header.
-// JS changes the displayed level, without creating URL links dynamically.
+// The shared navigation fragment holds all canonical combination links once.
+// The multi-country landing page exposes the same static links for crawlers.
 import {
   extendMultiCountrySelection, previousMultiCountrySelection, formatMultiCountryNames,
 } from '../lib/multi-country-combinations.mjs';
+import { ensureSharedSiteShell } from './shared-site-shell';
+await ensureSharedSiteShell();
 const menuInstances = [...document.querySelectorAll<HTMLElement>('[data-mc-menu]')];
 const linkSource = menuInstances.map((item) => item.querySelector<HTMLElement>('[data-mc-menu-combinations][data-mc-menu-source]'))
   .find((nav) => nav && nav.children.length > 0);

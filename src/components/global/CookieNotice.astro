@@ -20,6 +20,8 @@ const privacyUrl = withBase('/privacy/');
 </div>
 
 <script>
+  import { ensureSharedSiteShell } from '../../scripts/shared-site-shell';
+  await ensureSharedSiteShell();
   const notice = document.querySelector('[data-cookie-notice]');
 
   if (notice instanceof HTMLElement) {

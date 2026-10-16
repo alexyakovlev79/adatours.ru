@@ -1,5 +1,6 @@
-// SSR head navigation: every existing combination must appear as a real link.
-// Check representative site-wide templates, including the multi-country root.
+// Pre-extraction SSR source validation: every combination must exist in Astro's header.
+// After this check and Pagefind, the final artifact deduplicates shared HTML.
+// Crawlers retain all links on the /multi-country/ catalogue and in sitemap.
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';

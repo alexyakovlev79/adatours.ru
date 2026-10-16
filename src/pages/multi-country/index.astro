@@ -11,6 +11,7 @@ import CatalogPagination from '../../components/catalog/CatalogPagination.astro'
 import MultiCountrySelector from '../../components/catalog/MultiCountrySelector.astro';
 import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
 import { formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
+import { withBase } from '../../lib/paths';
 import FactStrip from '../../components/proof/FactStrip.astro';
 import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
@@ -24,7 +25,9 @@ const [tourEntries, countryEntries] = await Promise.all([
   getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
 ]);
 const allTours = [...tourEntries].sort(compareToursBySalesFit);
-const multiCountryTours = (await getMultiCountryCatalog()).find((row) => row.path === '/multi-country/')?.tours ?? [];
+const multiCountryRows = await getMultiCountryCatalog();
+const multiCountryTours = multiCountryRows.find((row) => row.path === '/multi-country/')?.tours ?? [];
+const allCombinationLinks = multiCountryRows.filter((row) => !row.themeId && row.slugs.length >= 2);
 const countryEntryById = new Map(countryEntries.map((entry) => [entry.data.id, entry]));
 
 const catalogPages = paginateCatalog(multiCountryTours, '/multi-country/');
@@ -266,6 +269,15 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
       />
     </div>
   </section>
+
+  <details class="all-country-combinations container" data-multi-country-link-index>
+    <summary>Все сочетания стран ({allCombinationLinks.length})</summary>
+    <nav aria-label="Полный список сочетаний стран" data-pagefind-ignore="all">
+      {allCombinationLinks.map((row) => (
+        <a href={withBase(row.path)}>{formatMultiCountryNames(row.countries.map((country) => country.name))}</a>
+      ))}
+    </nav>
+  </details>
 </BaseLayout>
 
 <script>
@@ -301,4 +313,8 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
   .multi-links__intro {
     padding-bottom: clamp(44px, 7vw, 84px);
   }
+  .all-country-combinations { padding-block: 26px 68px; }
+  .all-country-combinations summary { cursor: pointer; font-weight: 600; }
+  .all-country-combinations nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 26px; max-height: 520px; overflow-y: auto; padding-top: 28px; }
+  .all-country-combinations a { color: var(--color-ink); text-underline-offset: 3px; }
 </style>

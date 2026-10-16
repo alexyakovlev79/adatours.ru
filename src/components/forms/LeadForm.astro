@@ -119,6 +119,8 @@ const personalDataHref = withBase('/personal-data/');
 </section>
 
 <script>
+  import { ensureSharedSiteShell } from '../../scripts/shared-site-shell';
+  await ensureSharedSiteShell();
   const FORM_ENDPOINT = String((window as any).ADATOURS_FORM_ENDPOINT || '').trim();
   const TRACKING_KEYS = [
     'utm_source',

@@ -93,6 +93,8 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
 <script>
   import { withBase } from '../../lib/paths';
   import { PHONE_COUNTRIES } from '../../data/phone-countries';
+  import { ensureSharedSiteShell } from '../../scripts/shared-site-shell';
+  await ensureSharedSiteShell();
   const flagUrl = (iso2) => withBase(`/phone-flags/${iso2 === 'mb' ? 'mx' : iso2}.png`);
   const maskParts = (mask, dial) => {
     const rest = mask.startsWith(dial) ? mask.slice(dial.length) : mask;

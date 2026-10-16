@@ -242,6 +242,8 @@ const nestedGroups = NAV_LINKS
 <div class:list={['site-header-spacer', theme === 'dark' && 'site-header-spacer--active']} aria-hidden="true"></div>
 
 <script>
+  import { ensureSharedSiteShell } from '../../scripts/shared-site-shell';
+  await ensureSharedSiteShell();
   const header = document.querySelector('[data-site-header]');
   const toggle = document.querySelector('[data-menu-toggle]');
   const menu = document.querySelector('[data-mobile-menu]');

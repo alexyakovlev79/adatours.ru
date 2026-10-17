@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_kuenka",
+  "stableId": "destination_ecuador_kuenka",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cuenca/",
+  "sourceFingerprint": "f527ebdb089912bb206feab0d66593f07c2ccb3ce6a22f145e9579e2a359928e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Куэнка",
+      "reason": "Cuenca в Azuay, Эквадор, у реки Tomebamba. Выбран город, а не испанская Cuenca и не только исторический центр."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q54886",
+      "reason": "Cuenca в Azuay, Эквадор, у реки Tomebamba. Выбран город, а не испанская Cuenca и не только исторический центр."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Cuenca%2C_Ecuador",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "7645168",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-2.8974138888889,-79.004480555556]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cuenca/",
+      "checkedAt": "2026-10-17T08:23:01.531Z",
+      "note": "Cuenca в Azuay, Эквадор, у реки Tomebamba. Выбран город, а не испанская Cuenca и не только исторический центр."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/kuenka.md",
+      "checkedAt": "2026-10-17T08:23:01.531Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54886",
+      "checkedAt": "2026-10-17T08:23:01.531Z",
+      "note": "Cuenca в Azuay, Эквадор, у реки Tomebamba. Выбран город, а не испанская Cuenca и не только исторический центр."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54886",
+      "checkedAt": "2026-10-17T08:23:01.531Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54886",
+      "checkedAt": "2026-10-17T08:23:01.531Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54886",
+      "checkedAt": "2026-10-17T08:23:01.531Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54886",
+      "checkedAt": "2026-10-17T08:23:01.531Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q54886",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cuenca%2C_Ecuador"
+    },
+    "geonamesId": "7645168"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -2.8974138888889,
+    "longitude": -79.004480555556,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q54886"
+  },
+  "reviewNote": "В галерее MD есть изображение с ALT Плайя-дель-Кармен (Мексика); это дефект медиа, идентичность города определена по тексту/стране. UNESCO исторического центра не присвоен всему городу."
+}

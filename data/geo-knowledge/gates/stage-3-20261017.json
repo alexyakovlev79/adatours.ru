@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "gate": "stage-3-tours",
+  "checkedAt": "2026-10-17T09:55:07.852Z",
+  "publishedPagesEvidence": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39018797660",
+  "scope": "Ten already published GEO entities checked against exact source-index entries; source URLs, status READY, canonical URL and country relationships (individual sampling), QID uniqueness and Iguaçu border separation.",
+  "samples": [
+    {
+      "stableId": "destination_brazil_rio",
+      "countryId": "country_brazil",
+      "wikidataQid": "Q8678",
+      "category": "city",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_brazil_rio.json"
+    },
+    {
+      "stableId": "destination_brazil_iguacu",
+      "countryId": "country_brazil",
+      "wikidataQid": "Q202316",
+      "category": "city",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_brazil_iguacu.json"
+    },
+    {
+      "stableId": "destination_argentina_puerto_iguasu",
+      "countryId": "country_argentina",
+      "wikidataQid": "Q55378",
+      "category": "city",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_argentina_puerto_iguasu.json"
+    },
+    {
+      "stableId": "destination_brazil_lencois_maranhenses",
+      "countryId": "country_brazil",
+      "wikidataQid": "Q647777",
+      "category": "national_park",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_brazil_lencois_maranhenses.json"
+    },
+    {
+      "stableId": "destination_peru_machu_picchu",
+      "countryId": "country_peru",
+      "wikidataQid": "Q676203",
+      "category": "archaeological_site",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_peru_machu_picchu.json"
+    },
+    {
+      "stableId": "destination_ecuador_galapagosskie_ostrova",
+      "countryId": "country_ecuador",
+      "wikidataQid": "Q38095",
+      "category": "archipelago",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_ecuador_galapagosskie_ostrova.json"
+    },
+    {
+      "stableId": "destination_chile_puerto_natales_torres_del_pajne",
+      "countryId": "country_chile",
+      "wikidataQid": "Q901646",
+      "category": "region",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_chile_puerto_natales_torres_del_pajne.json"
+    },
+    {
+      "stableId": "destination_bolivia_uyuni",
+      "countryId": "country_bolivia",
+      "wikidataQid": "Q76122",
+      "category": "salt_flat",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_bolivia_uyuni.json"
+    },
+    {
+      "stableId": "destination_costa_rica_la_fortuna_vulkan_arenal",
+      "countryId": "country_costa_rica",
+      "wikidataQid": "Q641588",
+      "category": "volcano",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_costa_rica_la_fortuna_vulkan_arenal.json"
+    },
+    {
+      "stableId": "destination_argentina_ushuajya",
+      "countryId": "country_argentina",
+      "wikidataQid": "Q44254",
+      "category": "city",
+      "entityUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/geo-knowledge/entities/destination_argentina_ushuajya.json"
+    }
+  ],
+  "passed": 10,
+  "required": 10,
+  "notes": [
+    "Ten samples confirmed by live connector reads before staging promotion.",
+    "Brazilian and Argentine Iguaçu pages have different countries and QIDs.",
+    "Broader composite Pantanal region was separately inspected and deliberately excluded from strict single-country samples.",
+    "The stage 3 gate does not mark any unfinished place READY or PUBLISHED."
+  ]
+}

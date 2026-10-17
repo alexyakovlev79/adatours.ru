@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_santiago_plaza_de_armas",
+  "stableId": "destination_chile_santiago_plaza_de_armas",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/santiago-plaza-de-armas/",
+  "sourceFingerprint": "32e6a537cf7fb919a7f7981419f25978d898563f6df9d21a497ec26587f8978f",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q602232"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q602232",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Plaza de Armas в центре Сантьяго, Чили; сама площадь, не одноименная станция метро и не площадь другого города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/santiago-plaza-de-armas.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/santiago-plaza-de-armas/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q602232",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Plaza de Armas в центре Сантьяго, Чили; сама площадь, не одноименная станция метро и не площадь другого города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q602232",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q602232",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Plaza de Armas в центре Сантьяго, Чили; сама площадь, не одноименная станция метро и не площадь другого города.",
+      "selected": "Пласа-де-Армас в Сантьяго"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Plaza de Armas в центре Сантьяго, Чили; сама площадь, не одноименная станция метро и не площадь другого города.",
+      "selected": "Q602232"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.43796667,-70.6504]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.43796667,
+    "longitude": -70.6504,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q602232"
+  }
+}

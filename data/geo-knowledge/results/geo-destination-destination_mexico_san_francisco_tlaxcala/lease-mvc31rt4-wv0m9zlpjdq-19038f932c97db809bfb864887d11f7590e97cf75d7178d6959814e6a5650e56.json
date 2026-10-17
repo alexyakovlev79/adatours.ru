@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_san_francisco_tlaxcala",
+  "stableId": "destination_mexico_san_francisco_tlaxcala",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/san-francisco-tlaxcala/",
+  "sourceFingerprint": "528d5a826c498a4ae82d8b62d411e000b83a7e650427fdbcb62626efe365b40d",
+  "status": "READY",
+  "external": {},
+  "location": {
+    "latitude": 19.31373957647059,
+    "longitude": -98.23755397058824,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/way/327627587"
+  },
+  "alternateNames": [
+    "Exconvento de San Francisco",
+    "Conjunto Conventual Franciscano de Nuestra Señora de la Asunción"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "composite",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Монастырь Сан-Франциско в Тласкале",
+      "reason": "Именованный францисканский монастырский комплекс в городе Тласкала: бывший convento, собор Nuestra Señora de la Asunción, музей и атриум. INAH прямо связывает названия Exconvento de San Francisco и Conjunto Conventual Franciscano. Location — опорная точка внутри церковного здания OSM327627587, а не граница всего комплекса. Q5758514 относится к собору, Q24557525 к региональному музею; оба не записаны как exact ID всего комплекса. Родительский UNESCO702bis (15 монастырей) не присвоен одному компоненту."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "19.31373957647059,-98.23755397058824; representative",
+      "reason": "Рассчитана средняя точка вершин замкнутого OSMway327627587 (building=church, name=Ex-convento de San Francisco). Это representative внутри комплекса; не геометрический центр всей территории."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Exconvento de San Francisco; Conjunto Conventual Franciscano de Nuestra Señora de la Asunción",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 60,
+      "selected": "Q5758514; Q24557525",
+      "reason": "Проверены JSON Wikidata: Q5758514 — cathedral, Q24557525 — museum. Оба являются частями названного монастырского комплекса; отдельный точный QID всего комплекса после целевого поиска не подтвержден."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.inah.gob.mx/boletines/suscriben-declaratoria-por-tlaxcala-para-la-salvaguarda-de-su-conjunto-catedralicio-y-zona-de-monumentos-historicos",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Именованный францисканский монастырский комплекс в городе Тласкала: бывший convento, собор Nuestra Señora de la Asunción, музей и атриум. INAH прямо связывает названия Exconvento de San Francisco и Conjunto Conventual Franciscano. Location — опорная точка внутри церковного здания OSM327627587, а не граница всего комплекса. Q5758514 относится к собору, Q24557525 к региональному музею; оба не записаны как exact ID всего комплекса. Родительский UNESCO702bis (15 монастырей) не присвоен одному компоненту."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/san-francisco-tlaxcala/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/way/327627587",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Рассчитана средняя точка вершин замкнутого OSMway327627587 (building=church, name=Ex-convento de San Francisco). Это representative внутри комплекса; не геометрический центр всей территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.inah.gob.mx/boletines/suscriben-declaratoria-por-tlaxcala-para-la-salvaguarda-de-su-conjunto-catedralicio-y-zona-de-monumentos-historicos",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.inah.gob.mx/boletines/suscriben-declaratoria-por-tlaxcala-para-la-salvaguarda-de-su-conjunto-catedralicio-y-zona-de-monumentos-historicos",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Именованный францисканский монастырский комплекс в городе Тласкала: бывший convento, собор Nuestra Señora de la Asunción, музей и атриум. INAH прямо связывает названия Exconvento de San Francisco и Conjunto Conventual Franciscano. Location — опорная точка внутри церковного здания OSM327627587, а не граница всего комплекса. Q5758514 относится к собору, Q24557525 к региональному музею; оба не записаны как exact ID всего комплекса. Родительский UNESCO702bis (15 монастырей) не присвоен одному компоненту."
+}

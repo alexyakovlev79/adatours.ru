@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ozero_sarmento",
+  "stableId": "destination_chile_ozero_sarmento",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/lake-sarmiento/",
+  "sourceFingerprint": "09355085438d11993899283b9ec0d46d2c63a445fbd03114516485b766a1b4ed",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Озеро Сармьенто",
+      "reason": "Lago Sarmiento de Gamboa у Torres del Paine, подтверждена чилийская география."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2477323",
+      "reason": "Lago Sarmiento de Gamboa у Torres del Paine, подтверждена чилийская география."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Sarmiento_Lake",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3871228",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-51.05,-72.75]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "relation/4870349",
+      "reason": "Точный P402 сопоставленного объекта."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/lake-sarmiento/",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Lago Sarmiento de Gamboa у Torres del Paine, подтверждена чилийская география."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/lake-sarmiento.md",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477323",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Lago Sarmiento de Gamboa у Torres del Paine, подтверждена чилийская география."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477323",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477323",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477323",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477323",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477323",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "P402 точной географической сущности; тип relation, не населённый пункт или иной одноимённый объект."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2477323",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Sarmiento_Lake"
+    },
+    "geonamesId": "3871228",
+    "osm": {
+      "type": "relation",
+      "id": 4870349
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -51.05,
+    "longitude": -72.75,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2477323"
+  },
+  "reviewNote": null
+}

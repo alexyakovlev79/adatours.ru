@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_guayllabamba",
+  "stableId": "destination_ecuador_guayllabamba",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/guayllabamba/",
+  "sourceFingerprint": "d0a413623b6190af6c206c30166e01cfedcf121ca168181dc950ea30d1ea1f1a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5614396",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guayllabamba"
+    }
+  },
+  "location": {
+    "latitude": -0.059052,
+    "longitude": -78.341446,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Guayllabamba"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guayllabamba",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/guayllabamba.md",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/guayllabamba/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5614396",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guayllabamba",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guayllabamba",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guayllabamba",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Гуайябамба",
+      "reason": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q5614396",
+      "reason": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Guayllabamba",
+      "reason": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-0.059052,-78.341446",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Guayllabamba — поселение и сельский приход Quito, Pichincha, Эквадор; выбран населённый пункт, не река. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

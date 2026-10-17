@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_nacionalnyj_park_soberania",
+  "stableId": "destination_panama_nacionalnyj_park_soberania",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/soberania-national-park/",
+  "sourceFingerprint": "6e6101e8495f1da344a4b4b04fd0e4a64bd005bec320edb4d1a75397fe5a4295",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1473095"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/soberania-national-park/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact national park near Panama Canal and Chagres, matching the page."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1473095",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Exact national park near Panama Canal and Chagres, matching the page."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1473095",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact national park near Panama Canal and Chagres, matching the page."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1473095",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Exact national park near Panama Canal and Chagres, matching the page."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Soberanía National Park",
+      "reason": "Exact national park near Panama Canal and Chagres, matching the page."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1473095",
+      "reason": "Exact national park near Panama Canal and Chagres, matching the page."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "9.074297222222222,-79.65980555555556",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact national park near Panama Canal and Chagres, matching the page."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Exact national park near Panama Canal and Chagres, matching the page."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 9.074297222222222,
+    "longitude": -79.65980555555556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1473095"
+  }
+}

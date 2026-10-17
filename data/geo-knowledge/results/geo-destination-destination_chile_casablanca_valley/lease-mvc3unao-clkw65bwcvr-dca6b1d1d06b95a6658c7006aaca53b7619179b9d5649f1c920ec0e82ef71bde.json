@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_casablanca_valley",
+  "stableId": "destination_chile_casablanca_valley",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/casablanca-valley/",
+  "sourceFingerprint": "1617d0320e59e47eacd82e5708fa7116bb23ceba61155cdc9a3ad4e0ca63b510",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Долина Касабланка",
+      "reason": "Касабланка — чилийская винная зона между Сантьяго и Вальпараисо. Содержание MD посвящено виноградникам и белым винам, поэтому основной референт соответствует винодельческому региону Valle de Casablanca."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 89,
+      "selected": "Q6159077",
+      "reason": "Касабланка — чилийская винная зона между Сантьяго и Вальпараисо. Содержание MD посвящено виноградникам и белым винам, поэтому основной референт соответствует винодельческому региону Valle de Casablanca."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/casablanca-valley.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Касабланка — чилийская винная зона между Сантьяго и Вальпараисо. Содержание MD посвящено виноградникам и белым винам, поэтому основной референт соответствует винодельческому региону Valle de Casablanca."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://chile.travel/en/attractions/casablanca-valley/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Касабланка — чилийская винная зона между Сантьяго и Вальпараисо. Содержание MD посвящено виноградникам и белым винам, поэтому основной референт соответствует винодельческому региону Valle de Casablanca."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6159077",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Касабланка — чилийская винная зона между Сантьяго и Вальпараисо. Содержание MD посвящено виноградникам и белым винам, поэтому основной референт соответствует винодельческому региону Valle de Casablanca."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://chile.travel/en/attractions/casablanca-valley/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Valle_de_Casablanca",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Exact Spanish article links Q6159077; wine-region scope matches MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/casablanca-valley/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q6159077"
+  },
+  "reviewNote": "Принята идентичность винной зоны, не города Casablanca, не марокканского города и не отдельной Viña Casablanca. Географическая координата всей зоны не подтверждена."
+}

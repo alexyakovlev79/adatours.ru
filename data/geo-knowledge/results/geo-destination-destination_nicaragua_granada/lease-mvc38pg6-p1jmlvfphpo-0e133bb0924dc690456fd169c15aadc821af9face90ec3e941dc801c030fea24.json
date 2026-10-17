@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_granada",
+  "stableId": "destination_nicaragua_granada",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/granada/",
+  "sourceFingerprint": "cf493f1c3da58d7186e4c3f08c20db10c954d1ca306555e37469b1a0910f72f6",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q137454412",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Granada%2C_Nicaragua",
+      "es": "https://es.wikipedia.org/wiki/Granada_(Nicaragua)"
+    },
+    "geonamesId": "3619136"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/granada/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-granada/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Город Гранада в Никарагуа; отдельная городская карточка Q137454412 и GeoNames PPLA 3619136. Q205648/Q115760596 описывают муниципалитет; департамент и испанская Гранада исключены. Wikipedia также затрагивает муниципалитет, но её главный референт и раздел о колониальном центре соответствуют городу."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-granada/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип city соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-granada/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q137454412",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Город Гранада в Никарагуа; отдельная городская карточка Q137454412 и GeoNames PPLA 3619136. Q205648/Q115760596 описывают муниципалитет; департамент и испанская Гранада исключены. Wikipedia также затрагивает муниципалитет, но её главный референт и раздел о колониальном центре соответствуют городу."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Granada,_Nicaragua",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Статья относится к выбранному городу, хотя может включать сведения о муниципалитете. Главный городской референт подтверждён раздельными городскими записями Wikidata и GeoNames."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3619136/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Home › North America › Nicaragua NI › Granada Department 06 › Granada 06 Granada P PPLA Seat of a first-order administrative division · NI Feature Map Hierarchy History Alternate names GeonameId 3619136 Coordinates 11.93062, -85.95368 Move 11°55′50.23″ N, 85°57′13.25″ W Population 89,409 Elevation ca. 46 m ASTER 46 m Timezone America/Managua Sunrise / sunset ‹ 05:33 / 17:24 › today, local time Feature code P PPLA Wikipedia Article Permalink: https://www.geonames.org/3619136/granada.html .kml .rdf geotree maptree Edit Delete this place Administrative hierarchy Parents Children A Nicaragua NI Country A ADM1 Granada"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3619136/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Одна проверенная точка основного объекта с ролью settlement_center; альтернативные координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q137454412",
+      "reason": "Город Гранада в Никарагуа; отдельная городская карточка Q137454412 и GeoNames PPLA 3619136. Q205648/Q115760596 описывают муниципалитет; департамент и испанская Гранада исключены. Wikipedia также затрагивает муниципалитет, но её главный референт и раздел о колониальном центре соответствуют городу."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q137454412",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 92,
+      "selected": "en:Granada,_Nicaragua; es:Granada_(Nicaragua)",
+      "reason": "Основной городской референт статьи совпадает; муниципальные статистические поля не переносились."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3619136",
+      "reason": "Проверены первичная запись, страна, имя и feature code; административные одноимённые записи исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "11.93062, -85.95368",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль settlement_center."
+    }
+  ],
+  "reviewNote": "Город Гранада в Никарагуа; отдельная городская карточка Q137454412 и GeoNames PPLA 3619136. Q205648/Q115760596 описывают муниципалитет; департамент и испанская Гранада исключены. Wikipedia также затрагивает муниципалитет, но её главный референт и раздел о колониальном центре соответствуют городу.",
+  "location": {
+    "latitude": 11.93062,
+    "longitude": -85.95368,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3619136/"
+  }
+}

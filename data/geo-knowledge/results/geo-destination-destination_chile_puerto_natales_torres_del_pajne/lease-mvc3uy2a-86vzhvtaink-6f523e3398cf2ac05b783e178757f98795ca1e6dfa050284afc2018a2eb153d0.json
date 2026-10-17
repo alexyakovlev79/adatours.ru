@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_puerto_natales_torres_del_pajne",
+  "stableId": "destination_chile_puerto_natales_torres_del_pajne",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/puerto-natales-torres-del-paine/",
+  "sourceFingerprint": "57275b43ff5bdac35fd354fa3c62ca714741c07ec0867dc174bd74fafa57c2ed",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 88,
+      "selected": "Пуэрто Наталес & Торрес дель Пайне",
+      "reason": "Составная страница города-базы и парка: оба H2, основная часть описания и главная тема посвящены национальному парку Torres del Paine."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 88,
+      "reason": "Точная карточка выбранного основного географического референта.",
+      "selected": "Q901646"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 88,
+      "reason": "Языковая статья того же объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Torres_del_Paine_National_Park\"}"
+    },
+    {
+      "field": "location",
+      "probability": 82,
+      "reason": "Грубая опубликованная P625 парка: опорная точка, не вход/трек/город Puerto Natales.",
+      "selected": "-51,-73"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-natales-torres-del-paine/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Составная страница города-базы и парка: оба H2, основная часть описания и главная тема посвящены национальному парку Torres del Paine."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-natales-torres-del-paine/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q901646",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точная карточка выбранного основного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q901646",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Языковая статья того же объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q901646",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Грубая опубликованная P625 парка: опорная точка, не вход/трек/город Puerto Natales."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q901646",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Составная страница города-базы и парка: оба H2, основная часть описания и главная тема посвящены национальному парку Torres del Paine."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q901646",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Torres_del_Paine_National_Park"
+    }
+  },
+  "location": {
+    "latitude": -51,
+    "longitude": -73,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q901646"
+  },
+  "reviewNote": "Основной референт парк. Пуэрто-Наталес не отождествлён с парком, координаты города не назначены парку."
+}

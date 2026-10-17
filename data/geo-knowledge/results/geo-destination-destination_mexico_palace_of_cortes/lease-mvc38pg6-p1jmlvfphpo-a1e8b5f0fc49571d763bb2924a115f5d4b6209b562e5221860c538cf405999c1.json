@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_palace_of_cortes",
+  "stableId": "destination_mexico_palace_of_cortes",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/palace-of-cortes/",
+  "sourceFingerprint": "8f63d492023201747a7083f35263597b76ae21fc7e2aa5b831d7de258914cfa9",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "palace",
+  "external": {
+    "wikidataQid": "Q7126230",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Palace_of_Cort%C3%A9s%2C_Cuernavaca",
+      "es": "https://es.wikipedia.org/wiki/Palacio_de_Cort%C3%A9s"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/palace-of-cortes/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7126230",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Историческое здание Дворца Кортеса в Куэрнаваке. Современный Региональный музей народов Морелоса — размещённое здесь учреждение, не замена идентичности здания. Q7126230 fortified palace, Cuernavaca."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7126230",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип palace соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7126230",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7126230",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Историческое здание Дворца Кортеса в Куэрнаваке. Современный Региональный музей народов Морелоса — размещённое здесь учреждение, не замена идентичности здания. Q7126230 fortified palace, Cuernavaca."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7126230",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные EN/ES страницы названного памятника; проверены sitelinks или сама статья."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7126230",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Одна проверенная точка основного объекта с ролью representative; альтернативные координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q7126230",
+      "reason": "Историческое здание Дворца Кортеса в Куэрнаваке. Современный Региональный музей народов Морелоса — размещённое здесь учреждение, не замена идентичности здания. Q7126230 fortified palace, Cuernavaca."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "palace",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q7126230",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Palace_of_Cortés,_Cuernavaca; es:Palacio_de_Cortés",
+      "reason": "Точное название, география и тип памятника совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "18.92133888888889, -99.233375",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль representative."
+    }
+  ],
+  "reviewNote": "Историческое здание Дворца Кортеса в Куэрнаваке. Современный Региональный музей народов Морелоса — размещённое здесь учреждение, не замена идентичности здания. Q7126230 fortified palace, Cuernavaca.",
+  "location": {
+    "latitude": 18.92133888888889,
+    "longitude": -99.233375,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7126230"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_prirodnyj_park_peperpot",
+  "stableId": "destination_suriname_prirodnyj_park_peperpot",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/peperpot-nature-park/",
+  "sourceFingerprint": "e30d501d9fd400fa6988ad7ff925c3b562ede1d3b37d8c6c09ab610371a106da",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Природный парк Пеперпот",
+      "reason": "Пеперпот — природный парк в Meerzorg/Commewijne на бывшей плантации, отдельный от отеля и исторической плантации Q12013270."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q26709956",
+      "reason": "Пеперпот — природный парк в Meerzorg/Commewijne на бывшей плантации, отдельный от отеля и исторической плантации Q12013270."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://peperpotnaturepark.com/",
+      "reason": "Пеперпот — природный парк в Meerzorg/Commewijne на бывшей плантации, отдельный от отеля и исторической плантации Q12013270."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "5.7972222222222225,-55.12027777777778",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/peperpot-nature-park.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Пеперпот — природный парк в Meerzorg/Commewijne на бывшей плантации, отдельный от отеля и исторической плантации Q12013270."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26709956",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Пеперпот — природный парк в Meerzorg/Commewijne на бывшей плантации, отдельный от отеля и исторической плантации Q12013270."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26709956",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Пеперпот — природный парк в Meerzorg/Commewijne на бывшей плантации, отдельный от отеля и исторической плантации Q12013270."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://peperpotnaturepark.com/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Пеперпот — природный парк в Meerzorg/Commewijne на бывшей плантации, отдельный от отеля и исторической плантации Q12013270."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26709956",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q26709956",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/peperpot-nature-park/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://peperpotnaturepark.com/new-index",
+      "checkedAt": "2026-10-17T08:05:48.568Z",
+      "note": "Official park contact names Natuur Park Peperpot, Nieuw Meerzorg, Commewijne; website is park, not resort."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q26709956",
+    "officialUrl": "https://peperpotnaturepark.com/"
+  },
+  "location": {
+    "latitude": 5.7972222222222225,
+    "longitude": -55.12027777777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q26709956"
+  },
+  "reviewNote": "MD называет national_park, но источники подтверждают природный парк/резерват, не государственный национальный парк."
+}

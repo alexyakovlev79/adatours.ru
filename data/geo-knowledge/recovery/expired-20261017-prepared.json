@@ -1,0 +1,943 @@
+{
+  "ownerId": "geo-expired-recovery-20261017",
+  "token": "lease-expired-recovery-20261017-1",
+  "source": "Verified exact MD + independent geographic sources + Pages deploy artifact",
+  "createdAt": "2026-10-17T09:26:50.300Z",
+  "results": [
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_nicaragua_ojo_de_agua",
+      "stableId": "destination_nicaragua_ojo_de_agua",
+      "kind": "destination",
+      "canonicalPath": "/nicaragua/place/ojo-de-agua/",
+      "sourceFingerprint": "8858e373912e0d734bdb4fe12b7e1d4f5376d5ba7c05b69a52bcdd789b9e4d78",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 98,
+          "selected": "Охо-де-Агуа, естественный родниковый бассейн на Ометепе у Альтаграсии",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "probability": 99,
+          "selected": "country_nicaragua",
+          "reason": "Прямой countryId в действующем MD."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_nicaragua"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://visitanicaragua.com/en/islands/Ometepe-Island/",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Охо-де-Агуа, естественный родниковый бассейн на Ометепе у Альтаграсии"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ojo-de-agua.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob 7978a8399a10a289f28f07179c8b78a60bebb10a"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./nicaragua/place/ojo-de-agua/index.html, подтверждены H1 и self-canonical https://adatours.ru/nicaragua/place/ojo-de-agua/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ojo-de-agua.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_nicaragua указана в каноническом MD и соответствует фактической географии."
+        }
+      ],
+      "reviewNote": "Нет надежного самостоятельного QID/GeoNames ID; идентичность природного бассейна подтверждена официальным туристическим порталом."
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_nicaragua_ostrov_zopango",
+      "stableId": "destination_nicaragua_ostrov_zopango",
+      "kind": "destination",
+      "canonicalPath": "/nicaragua/place/zopango-island/",
+      "sourceFingerprint": "8ea8ef5ccfda8e0a335f5f091396e818822f328cd1fac793b6dd35379977e51b",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 96,
+          "selected": "Isla Zopango, небольшой остров в бухте Asese возле Гранады, не размещенный на нем отель",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "probability": 99,
+          "selected": "country_nicaragua",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.osm",
+          "probability": 95,
+          "selected": "way/284759787",
+          "reason": "Подтвержденная островная геометрия OSM."
+        },
+        {
+          "field": "location",
+          "probability": 90,
+          "selected": "11.88442,-85.90156",
+          "reason": "Однозначная репрезентативная/городская точка подтвержденного объекта, без усреднения."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_nicaragua"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://mapcarta.com/es/W284759787",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Isla Zopango, небольшой остров в бухте Asese возле Гранады, не размещенный на нем отель"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zopango-island.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob b3f674012595824064ab2fb1169bdb494b9c7962"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./nicaragua/place/zopango-island/index.html, подтверждены H1 и self-canonical https://adatours.ru/nicaragua/place/zopango-island/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zopango-island.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_nicaragua указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.osm",
+          "sourceUrl": "https://mapcarta.com/es/W284759787",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Источник содержит точный OSM way 284759787"
+        },
+        {
+          "field": "location",
+          "sourceUrl": "https://mapcarta.com/es/W284759787",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Опорная точка 11.88442,-85.90156 с ролью representative; не геометрический контур."
+        }
+      ],
+      "external": {
+        "osm": {
+          "type": "way",
+          "id": 284759787
+        }
+      },
+      "location": {
+        "latitude": 11.88442,
+        "longitude": -85.90156,
+        "pointRole": "representative",
+        "coordinateSource": "https://mapcarta.com/es/W284759787"
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_nicaragua_ozero_nikaragua",
+      "stableId": "destination_nicaragua_ozero_nikaragua",
+      "kind": "destination",
+      "canonicalPath": "/nicaragua/place/lake-nicaragua/",
+      "sourceFingerprint": "fd05da6d20ecbcde0389b69f48af40afec3536f0fd502fab40f665f01adef1d4",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 99,
+          "selected": "Lago Cocibolca, крупное озеро Никарагуа, не озеро Манагуа",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "probability": 99,
+          "selected": "country_nicaragua",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q173862",
+          "reason": "Lago Cocibolca, крупное озеро Никарагуа, не озеро Манагуа"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "3617477",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        },
+        {
+          "field": "location",
+          "probability": 90,
+          "selected": "11.6873,-85.47863",
+          "reason": "Однозначная репрезентативная/городская точка подтвержденного объекта, без усреднения."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_nicaragua"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Lago Cocibolca, крупное озеро Никарагуа, не озеро Манагуа"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lake-nicaragua.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob d86e03546794890d5e8da55e666ec5513e19fcca"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./nicaragua/place/lake-nicaragua/index.html, подтверждены H1 и self-canonical https://adatours.ru/nicaragua/place/lake-nicaragua/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lake-nicaragua.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_nicaragua указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Lago Cocibolca, крупное озеро Никарагуа, не озеро Манагуа"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://mapcarta.com/19580632",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 3617477 for Lago Cocibolca, крупное озеро Никарагуа, не озеро Манагуа"
+        },
+        {
+          "field": "location",
+          "sourceUrl": "https://mapcarta.com/19580632",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Опорная точка 11.6873,-85.47863 с ролью representative; не геометрический контур."
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q173862",
+        "geonamesId": "3617477"
+      },
+      "location": {
+        "latitude": 11.6873,
+        "longitude": -85.47863,
+        "pointRole": "representative",
+        "coordinateSource": "https://mapcarta.com/19580632"
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_nicaragua_san_jorge",
+      "stableId": "destination_nicaragua_san_jorge",
+      "kind": "destination",
+      "canonicalPath": "/nicaragua/place/san-jorge/",
+      "sourceFingerprint": "1cf099e2d930259a189a94fa63cd11280a9ac1d58b9a8400914e8651e3d96244",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 98,
+          "selected": "Город Сан-Хорхе, порт у озера в департаменте Ривас; не одноименный муниципалитет",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "probability": 99,
+          "selected": "country_nicaragua",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q31504830",
+          "reason": "Город Сан-Хорхе, порт у озера в департаменте Ривас; не одноименный муниципалитет"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "3616794",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        },
+        {
+          "field": "location",
+          "probability": 90,
+          "selected": "11.45584,-85.80308",
+          "reason": "Однозначная репрезентативная/городская точка подтвержденного объекта, без усреднения."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_nicaragua"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://mapcarta.com/19579266",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Город Сан-Хорхе, порт у озера в департаменте Ривас; не одноименный муниципалитет"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/san-jorge.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob 15744359481c54d63d47c0f0234c735f054a7a83"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./nicaragua/place/san-jorge/index.html, подтверждены H1 и self-canonical https://adatours.ru/nicaragua/place/san-jorge/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_nicaragua",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/san-jorge.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_nicaragua указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q31504830",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Город Сан-Хорхе, порт у озера в департаменте Ривас; не одноименный муниципалитет"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://mapcarta.com/19579266",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 3616794 for Город Сан-Хорхе, порт у озера в департаменте Ривас; не одноименный муниципалитет"
+        },
+        {
+          "field": "location",
+          "sourceUrl": "https://mapcarta.com/19579266",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Опорная точка 11.45584,-85.80308 с ролью settlement_center; не геометрический контур."
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q31504830",
+        "geonamesId": "3616794"
+      },
+      "location": {
+        "latitude": 11.45584,
+        "longitude": -85.80308,
+        "pointRole": "settlement_center",
+        "coordinateSource": "https://mapcarta.com/19579266"
+      },
+      "reviewNote": "Город отделен от муниципалитета (Q956573)."
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_panama_arhipelag_san_blas",
+      "stableId": "destination_panama_arhipelag_san_blas",
+      "kind": "destination",
+      "canonicalPath": "/panama/place/san-blas-islands/",
+      "sourceFingerprint": "ff83b80d367efdb13e5a71e7c3ea2bb8832774995f70d8bad51963f20123a2a1",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 99,
+          "selected": "Острова Сан-Блас в карибской части Guna Yala, именно архипелаг, не административный округ",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_panama",
+          "probability": 99,
+          "selected": "country_panama",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q1670879",
+          "reason": "Острова Сан-Блас в карибской части Guna Yala, именно архипелаг, не административный округ"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "6941930",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_panama"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Острова Сан-Блас в карибской части Guna Yala, именно архипелаг, не административный округ"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/arhipelag-san-blas.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob 68c40676048efae13963164ca1f379bc077873ea"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./panama/place/san-blas-islands/index.html, подтверждены H1 и self-canonical https://adatours.ru/panama/place/san-blas-islands/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_panama",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/arhipelag-san-blas.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_panama указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Острова Сан-Блас в карибской части Guna Yala, именно архипелаг, не административный округ"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://mapcarta.com/San_Blas_Islands",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 6941930 for Острова Сан-Блас в карибской части Guna Yala, именно архипелаг, не административный округ"
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q1670879",
+        "geonamesId": "6941930"
+      },
+      "reviewNote": "Архипелагу не присвоена недоказанная единственная точка центра."
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_panama_bokas_del_toro",
+      "stableId": "destination_panama_bokas_del_toro",
+      "kind": "destination",
+      "canonicalPath": "/panama/place/bocas-del-toro/",
+      "sourceFingerprint": "e91616cb739f671b1a07c763378be3ba06cc63dda26292bf4973087eef923894",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 99,
+          "selected": "Архипелаг Бокас-дель-Торо, не город Bocas Town и не провинция",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_panama",
+          "probability": 99,
+          "selected": "country_panama",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q2632038",
+          "reason": "Архипелаг Бокас-дель-Торо, не город Bocas Town и не провинция"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "3713958",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_panama"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Архипелаг Бокас-дель-Торо, не город Bocas Town и не провинция"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/bokas-del-toro.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob 5c92c3964272ea310e445fd84089f2b6f17b2fe1"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./panama/place/bocas-del-toro/index.html, подтверждены H1 и self-canonical https://adatours.ru/panama/place/bocas-del-toro/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_panama",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/bokas-del-toro.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_panama указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Архипелаг Бокас-дель-Торо, не город Bocas Town и не провинция"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 3713958 for Архипелаг Бокас-дель-Торо, не город Bocas Town и не провинция"
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q2632038",
+        "geonamesId": "3713958"
+      },
+      "reviewNote": "Архипелагу не присвоена недоказанная единственная точка центра."
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_panama_bokete",
+      "stableId": "destination_panama_bokete",
+      "kind": "destination",
+      "canonicalPath": "/panama/place/boquete/",
+      "sourceFingerprint": "a591b715557cea591be46afebdce6f1ae8af86fcefcc7be62d444aff93eb6aa9",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 98,
+          "selected": "Город Boquete среди гор Чирики; не целый округ Boquete",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_panama",
+          "probability": 99,
+          "selected": "country_panama",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q804144",
+          "reason": "Город Boquete среди гор Чирики; не целый округ Boquete"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "3713860",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        },
+        {
+          "field": "location",
+          "probability": 90,
+          "selected": "8.7802,-82.4414",
+          "reason": "Однозначная репрезентативная/городская точка подтвержденного объекта, без усреднения."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_panama"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Город Boquete среди гор Чирики; не целый округ Boquete"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/bokete.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob 7c8203da23c85b78331dd89bd9cebb89825c1363"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./panama/place/boquete/index.html, подтверждены H1 и self-canonical https://adatours.ru/panama/place/boquete/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_panama",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/bokete.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_panama указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Город Boquete среди гор Чирики; не целый округ Boquete"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://mapcarta.com/Boquete",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 3713860 for Город Boquete среди гор Чирики; не целый округ Boquete"
+        },
+        {
+          "field": "location",
+          "sourceUrl": "https://mapcarta.com/Boquete",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Опорная точка 8.7802,-82.4414 с ролью settlement_center; не геометрический контур."
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q804144",
+        "geonamesId": "3713860"
+      },
+      "location": {
+        "latitude": 8.7802,
+        "longitude": -82.4414,
+        "pointRole": "settlement_center",
+        "coordinateSource": "https://mapcarta.com/Boquete"
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_panama_david",
+      "stableId": "destination_panama_david",
+      "kind": "destination",
+      "canonicalPath": "/panama/place/david/",
+      "sourceFingerprint": "9723d4b29692e7441d1513d550303d3d26518bb53a526f55d975dda3593baf94",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 99,
+          "selected": "Город San José de David в Чирики, не район David District",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_panama",
+          "probability": 99,
+          "selected": "country_panama",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q279009",
+          "reason": "Город San José de David в Чирики, не район David District"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "3711668",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        },
+        {
+          "field": "location",
+          "probability": 90,
+          "selected": "8.4371,-82.4286",
+          "reason": "Однозначная репрезентативная/городская точка подтвержденного объекта, без усреднения."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_panama"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Город San José de David в Чирики, не район David District"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/david.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob a59b8495c7a79a431e8dc6dc1ac666fd9daaa5ed"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./panama/place/david/index.html, подтверждены H1 и self-canonical https://adatours.ru/panama/place/david/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_panama",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/david.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_panama указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Город San José de David в Чирики, не район David District"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://mapcarta.com/David_%28Panama%29",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 3711668 for Город San José de David в Чирики, не район David District"
+        },
+        {
+          "field": "location",
+          "sourceUrl": "https://mapcarta.com/David_%28Panama%29",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Опорная точка 8.4371,-82.4286 с ролью settlement_center; не геометрический контур."
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q279009",
+        "geonamesId": "3711668"
+      },
+      "location": {
+        "latitude": 8.4371,
+        "longitude": -82.4286,
+        "pointRole": "settlement_center",
+        "coordinateSource": "https://mapcarta.com/David_%28Panama%29"
+      }
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_panama_zhemchuzhnye_ostrova",
+      "stableId": "destination_panama_zhemchuzhnye_ostrova",
+      "kind": "destination",
+      "canonicalPath": "/panama/place/pearl-islands/",
+      "sourceFingerprint": "bf11b3c682076afcf9c99584821ad181a4022c20cd4806b476e00c2d2539a907",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 99,
+          "selected": "Архипелаг Islas de las Perlas в Панамском заливе, а не только остров Контадора",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_panama",
+          "probability": 99,
+          "selected": "country_panama",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q1142129",
+          "reason": "Архипелаг Islas de las Perlas в Панамском заливе, а не только остров Контадора"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "3703023",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_panama"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Архипелаг Islas de las Perlas в Панамском заливе, а не только остров Контадора"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zhemchuzhnye-ostrova.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob 10bf217ed476e845174e6da1361a7e9c33fc8be4"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./panama/place/pearl-islands/index.html, подтверждены H1 и self-canonical https://adatours.ru/panama/place/pearl-islands/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_panama",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/zhemchuzhnye-ostrova.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_panama указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Архипелаг Islas de las Perlas в Панамском заливе, а не только остров Контадора"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://mapcarta.com/Pearl_Islands",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 3703023 for Архипелаг Islas de las Perlas в Панамском заливе, а не только остров Контадора"
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q1142129",
+        "geonamesId": "3703023"
+      },
+      "reviewNote": "Архипелагу не присвоена недоказанная единственная точка центра."
+    },
+    {
+      "schemaVersion": 2,
+      "jobId": "geo-destination-destination_panama_kolon",
+      "stableId": "destination_panama_kolon",
+      "kind": "destination",
+      "canonicalPath": "/panama/place/colon/",
+      "sourceFingerprint": "627c582b04e2154cd08efa49fe8e0253aee38b0c0554c088dc765d97baaef66d",
+      "status": "READY",
+      "confidence": "high",
+      "decisionPolicy": "probability-70-v1",
+      "identityScope": "single",
+      "assessments": [
+        {
+          "field": "identity",
+          "probability": 99,
+          "selected": "Ciudad de Colón, карибский портовый город Панамы, не провинция Колон",
+          "reason": "Сопоставлены название, география и сущностный тип; альтернативные одноименные объекты исключены."
+        },
+        {
+          "field": "relationships.country_panama",
+          "probability": 99,
+          "selected": "country_panama",
+          "reason": "Прямой countryId в действующем MD."
+        },
+        {
+          "field": "external.wikidataQid",
+          "probability": 96,
+          "selected": "Q12825018",
+          "reason": "Ciudad de Colón, карибский портовый город Панамы, не провинция Колон"
+        },
+        {
+          "field": "external.geonamesId",
+          "probability": 93,
+          "selected": "3712076",
+          "reason": "Exact identifier associated with confirmed feature type and geography."
+        },
+        {
+          "field": "location",
+          "probability": 90,
+          "selected": "9.359753,-79.900419",
+          "reason": "Однозначная репрезентативная/городская точка подтвержденного объекта, без усреднения."
+        }
+      ],
+      "relationships": [
+        {
+          "type": "containedInPlace",
+          "targetId": "country_panama"
+        }
+      ],
+      "evidence": [
+        {
+          "field": "identity",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Ciudad de Colón, карибский портовый город Панамы, не провинция Колон"
+        },
+        {
+          "field": "source",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/kolon.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Точный approved MD, stable ID и страна сопоставлены; ожидаемый blob bc0732616fa2f02f2107a245b6116e148cbf7cb0"
+        },
+        {
+          "field": "availability",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "В успешном Pages-артефакте имеется ./panama/place/colon/index.html, подтверждены H1 и self-canonical https://adatours.ru/panama/place/colon/; живой HTTP отдельно не измерялся."
+        },
+        {
+          "field": "relationships.country_panama",
+          "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/kolon.md",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Страна country_panama указана в каноническом MD и соответствует фактической географии."
+        },
+        {
+          "field": "external.wikidataQid",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Ciudad de Colón, карибский портовый город Панамы, не провинция Колон"
+        },
+        {
+          "field": "external.geonamesId",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "GeoNames 3712076 for Ciudad de Colón, карибский портовый город Панамы, не провинция Колон"
+        },
+        {
+          "field": "location",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+          "checkedAt": "2026-10-17T09:26:50.300Z",
+          "note": "Опорная точка 9.359753,-79.900419 с ролью settlement_center; не геометрический контур."
+        }
+      ],
+      "external": {
+        "wikidataQid": "Q12825018",
+        "geonamesId": "3712076"
+      },
+      "location": {
+        "latitude": 9.359753,
+        "longitude": -79.900419,
+        "pointRole": "settlement_center",
+        "coordinateSource": "https://www.wikidata.org/wiki/Q12825018"
+      }
+    }
+  ]
+}

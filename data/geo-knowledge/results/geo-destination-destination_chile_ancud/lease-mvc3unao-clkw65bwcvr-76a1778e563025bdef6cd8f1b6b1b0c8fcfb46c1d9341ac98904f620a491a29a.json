@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ancud",
+  "stableId": "destination_chile_ancud",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ancud/",
+  "sourceFingerprint": "7230dd2309112f8288a249754f5dbbfed8ba0ed38e0a4ec4dcc832888be7000b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Анкуд",
+      "reason": "Анкуд — исторический портовый город на севере острова Чилоэ; основной референт город, не одноимённая коммуна Q23660274."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q3597",
+      "reason": "Анкуд — исторический портовый город на севере острова Чилоэ; основной референт город, не одноимённая коммуна Q23660274."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-41.8682,-73.8287",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3899695",
+      "reason": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Ancud",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ancud.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Анкуд — исторический портовый город на севере острова Чилоэ; основной референт город, не одноимённая коммуна Q23660274."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3597",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Анкуд — исторический портовый город на севере острова Чилоэ; основной референт город, не одноимённая коммуна Q23660274."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3597",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Анкуд — исторический портовый город на севере острова Чилоэ; основной референт город, не одноимённая коммуна Q23660274."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3597",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3597",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3597",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3597",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/ancud/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3597",
+    "geonamesId": "3899695",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ancud"
+    }
+  },
+  "location": {
+    "latitude": -41.8682,
+    "longitude": -73.8287,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3597"
+  },
+  "reviewNote": "OSM relation из P402 не перенесена автоматически: границы коммуны требуют отдельной проверки соответствия городскому объекту."
+}

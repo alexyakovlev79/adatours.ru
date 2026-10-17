@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_mitla",
+  "stableId": "destination_mexico_mitla",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/mitla/",
+  "sourceFingerprint": "c309483e3fb792e5c675643ef1d131c92fef61293ebcb0592f5614150e329bc9",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archaeological_site",
+  "external": {
+    "wikidataQid": "Q1366027",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mitla",
+      "es": "https://es.wikipedia.org/wiki/Mitla"
+    },
+    "officialUrl": "https://lugares.inah.gob.mx/en/node/4350"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/mitla/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Проверены точные MD и source-index на main 8970d45ea38bcd627df622a063b9a279c92fb531; live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/en/node/4350",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Археологическая зона Митла, не современный город/муниципалитет. Точка внутри главного сохранившегося комплекса у группы Колонн — representative. Грубая P625 Wikidata 16°55′N 96°24′W не использована. OSM way описывает главный участок, поэтому не присвоен всему многосоставному памятнику как external.osm."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://lugares.inah.gob.mx/en/node/4350",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Тип archaeological_site соответствует основному объекту страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1366027",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Имя, тип и география соответствуют странице; Q1366027 — точный выбранный объект."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1366027",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "EN и ES sitelinks относятся к выбранному объекту."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1366027",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Географический объект расположен в Мексике; страна также совпадает в MD и source-index."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://lugares.inah.gob.mx/en/node/4350",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Точная страница археологической зоны INAH либо официальный сайт оператора водного парка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/155180313/full.json",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Выбрана одна точка с ролью representative. Археологическая зона Митла, не современный город/муниципалитет. Точка внутри главного сохранившегося комплекса у группы Колонн — representative. Грубая P625 Wikidata 16°55′N 96°24′W не использована. OSM way описывает главный участок, поэтому не присвоен всему многосоставному памятнику как external.osm."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Q1366027",
+      "reason": "Археологическая зона Митла, не современный город/муниципалитет. Точка внутри главного сохранившегося комплекса у группы Колонн — representative. Грубая P625 Wikidata 16°55′N 96°24′W не использована. OSM way описывает главный участок, поэтому не присвоен всему многосоставному памятнику как external.osm."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "archaeological_site",
+      "reason": "Тип определён по описанию основного объекта и первичному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1366027",
+      "reason": "Совпадают имя, география и основной референт MD; конкурирующие административные и тематические объекты исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Mitla; es:Mitla",
+      "reason": "Проверенные sitelinks выбранной карточки Wikidata."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Мексика подтверждена источником и текущей записью проекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://lugares.inah.gob.mx/en/node/4350",
+      "reason": "Источник принадлежит учреждению, управляющему именно этим объектом."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "16.92743, -96.35958",
+      "reason": "Проверенный географический ориентир объекта; роль representative."
+    },
+    {
+      "field": "candidate.external.osm.wholeSite",
+      "probability": 65,
+      "selected": "way/155180313",
+      "reason": "Подтверждает главный участок, но не все раздельные группы памятника; используется только как источник репрезентативной точки."
+    }
+  ],
+  "reviewNote": "Археологическая зона Митла, не современный город/муниципалитет. Точка внутри главного сохранившегося комплекса у группы Колонн — representative. Грубая P625 Wikidata 16°55′N 96°24′W не использована. OSM way описывает главный участок, поэтому не присвоен всему многосоставному памятнику как external.osm.",
+  "location": {
+    "latitude": 16.92743,
+    "longitude": -96.35958,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/way/155180313/full.json"
+  }
+}

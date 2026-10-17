@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_ostrov_porvenir",
+  "stableId": "destination_panama_ostrov_porvenir",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/el-porvenir-island/",
+  "sourceFingerprint": "78f1eaa40fbe845e84a3aeba3de0ed1ba87c74cb2fd717c36efea2de328bdeab",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3702560"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/el-porvenir-island/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19750798",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19750798",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://mapcarta.com/19750798",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Isla Porvenir",
+      "reason": "Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3702560",
+      "reason": "Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "9.55209,-78.95222",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Exact Isla Porvenir/Isla El Porvenir in Guna Yala. Island rather than settlement or airport selected."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 9.55209,
+    "longitude": -78.95222,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/19750798"
+  }
+}

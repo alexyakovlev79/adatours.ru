@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_french_guiana_ostrov_sen_zhozef",
+  "stableId": "destination_french_guiana_ostrov_sen_zhozef",
+  "kind": "destination",
+  "canonicalPath": "/french-guiana/place/ile-saint-joseph/",
+  "sourceFingerprint": "305700c67438ac35bdbc79aca4b79b07c10b8d88948b63b8662340d136f05718",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Остров Сен-Жозеф",
+      "reason": "Отдельный остров Сен-Жозеф Иль-дю-Салю, не архипелаг, куда ведёт английский URL Île Saint-Joseph."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_french_guiana"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка выбранного основного географического референта.",
+      "selected": "Q2262571"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Языковая статья того же объекта.",
+      "selected": "{\"fr\":\"https://fr.wikipedia.org/wiki/%C3%8Ele_Saint-Joseph\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID острова.",
+      "selected": "3380391"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM way отдельного острова.",
+      "selected": "{\"type\":\"way\",\"id\":71469971}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 острова Сен-Жозеф.",
+      "selected": "5.2813888888888885,-52.58166666666667"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/ile-saint-joseph/",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Отдельный остров Сен-Жозеф Иль-дю-Салю, не архипелаг, куда ведёт английский URL Île Saint-Joseph."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/ile-saint-joseph/",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2262571",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Точная карточка выбранного основного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2262571",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Языковая статья того же объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2262571",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "GeoNames ID острова."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2262571",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "OSM way отдельного острова."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2262571",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "P625 острова Сен-Жозеф."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2262571",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Отдельный остров Сен-Жозеф Иль-дю-Салю, не архипелаг, куда ведёт английский URL Île Saint-Joseph."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_french_guiana"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2262571",
+    "wikipedia": {
+      "fr": "https://fr.wikipedia.org/wiki/%C3%8Ele_Saint-Joseph"
+    },
+    "geonamesId": "3380391",
+    "osm": {
+      "type": "way",
+      "id": 71469971
+    }
+  },
+  "location": {
+    "latitude": 5.2813888888888885,
+    "longitude": -52.58166666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2262571"
+  }
+}

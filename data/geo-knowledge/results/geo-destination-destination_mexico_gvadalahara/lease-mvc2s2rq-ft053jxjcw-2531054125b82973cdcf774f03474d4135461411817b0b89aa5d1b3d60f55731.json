@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_gvadalahara",
+  "stableId": "destination_mexico_gvadalahara",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/guadalajara/",
+  "sourceFingerprint": "a41c77efc012cf62e8c83316905ba8f445584c948680736579c828ad3e7e41e3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q9022",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guadalajara",
+      "es": "https://es.wikipedia.org/wiki/Guadalajara_(M%C3%A9xico)"
+    },
+    "geonamesId": "4005539",
+    "officialUrl": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/guadalajara/"
+  },
+  "location": {
+    "latitude": 20.676388888888887,
+    "longitude": -103.34222222222222,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q9022"
+  },
+  "alternateNames": [
+    "Guadalajara"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/guadalajara/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Гвадалахара; index, follow. Текущий approved MD и entry сверены. Гвадалахара, столица Халиско в Мексике. Испанская Гвадалахара исключена по стране и содержанию MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/guadalajara/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Гвадалахара, столица Халиско в Мексике. Испанская Гвадалахара исключена по стране и содержанию MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9022",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: capital of the State of Jalisco, Mexico. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9022",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Гвадалахара, столица Халиско в Мексике. Испанская Гвадалахара исключена по стране и содержанию MD. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9022",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Guadalajara; Guadalajara (México). Это сопоставление карточки Q9022, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9022",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 4005539 в точной карточке Q9022. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9022",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 20.676388888888887, -103.34222222222222; роль settlement_center. Исходная точка населенного пункта, без усреднения или переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9022",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9022",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/guadalajara/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Guadalajara",
+      "reason": "Гвадалахара, столица Халиско в Мексике. Испанская Гвадалахара исключена по стране и содержанию MD."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q9022",
+      "reason": "Гвадалахара, столица Халиско в Мексике. Испанская Гвадалахара исключена по стране и содержанию MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Guadalajara ; https://es.wikipedia.org/wiki/Guadalajara_(M%C3%A9xico)",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "4005539",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "20.676388888888887, -103.34222222222222",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Guadalajara",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/guadalajara/",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "OSM relation из Wikidata не добавлена: не проверено совпадение границ с городом, а не муниципалитетом."
+}

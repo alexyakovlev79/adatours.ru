@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_kabo_san_lukas",
+  "stableId": "destination_mexico_kabo_san_lukas",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/cabo-san-lucas/",
+  "sourceFingerprint": "7517d7c633544084441a0b715bfe92dfacbe2bb4184c68cdac5bb6a241a639db",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q1020776",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cabo_San_Lucas",
+      "es": "https://es.wikipedia.org/wiki/Cabo_San_Lucas"
+    },
+    "geonamesId": "3985710",
+    "officialUrl": "https://www.visitloscabos.travel/places-to-visit/cabo-san-lucas/"
+  },
+  "location": {
+    "latitude": 22.89472222222222,
+    "longitude": -109.91527777777777,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1020776"
+  },
+  "alternateNames": [
+    "Cabo San Lucas"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/cabo-san-lucas/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Кабо-Сан-Лукас; index, follow. Текущий approved MD и entry сверены. Город-курорт Кабо-Сан-Лукас на юге Нижней Калифорнии, Baja California Sur; не муниципалитет Los Cabos и не Сан-Хосе-дель-Кабо."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitloscabos.travel/places-to-visit/cabo-san-lucas/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город-курорт Кабо-Сан-Лукас на юге Нижней Калифорнии, Baja California Sur; не муниципалитет Los Cabos и не Сан-Хосе-дель-Кабо."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1020776",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: town in Los Cabos Municipality, State of Baja California Sur, Mexico. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1020776",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город-курорт Кабо-Сан-Лукас на юге Нижней Калифорнии, Baja California Sur; не муниципалитет Los Cabos и не Сан-Хосе-дель-Кабо. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1020776",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Cabo San Lucas; Cabo San Lucas. Это сопоставление карточки Q1020776, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1020776",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3985710 в точной карточке Q1020776. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1020776",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 22.89472222222222, -109.91527777777777; роль settlement_center. Исходная точка населенного пункта, без усреднения или переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1020776",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1020776",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.visitloscabos.travel/places-to-visit/cabo-san-lucas/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cabo San Lucas",
+      "reason": "Город-курорт Кабо-Сан-Лукас на юге Нижней Калифорнии, Baja California Sur; не муниципалитет Los Cabos и не Сан-Хосе-дель-Кабо."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1020776",
+      "reason": "Город-курорт Кабо-Сан-Лукас на юге Нижней Калифорнии, Baja California Sur; не муниципалитет Los Cabos и не Сан-Хосе-дель-Кабо."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Cabo_San_Lucas ; https://es.wikipedia.org/wiki/Cabo_San_Lucas",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3985710",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "22.89472222222222, -109.91527777777777",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Cabo San Lucas",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.visitloscabos.travel/places-to-visit/cabo-san-lucas/",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Муниципальный портал Los Cabos из P856 не использован как точная городская identity. Официальная туристическая страница Cabo San Lucas подтверждает референт."
+}

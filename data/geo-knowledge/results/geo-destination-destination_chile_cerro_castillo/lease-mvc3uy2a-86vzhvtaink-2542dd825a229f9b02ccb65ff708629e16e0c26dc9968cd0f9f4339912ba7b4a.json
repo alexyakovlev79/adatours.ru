@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_cerro_castillo",
+  "stableId": "destination_chile_cerro_castillo",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/cerro-castillo/",
+  "sourceFingerprint": "3d383a59b2e44991a692f4c174fb70176e5737645824a321a1c102d3242a8436",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 80,
+      "selected": "Серро-Кастильо (Айсен)",
+      "reason": "Составной горный район у Carretera Austral в Айсене. Главный именованный ландшафтный референт — гора/массив Cerro Castillo; парк и Villa Cerro Castillo — связанные составляющие."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 80,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q5064873"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 80,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Cerro_Castillo\"}"
+    },
+    {
+      "field": "location",
+      "probability": 80,
+      "reason": "Точка именованной горы как основного референта района, не центр посёлка и не границы национального парка.",
+      "selected": "-46.065,-72.2075"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/cerro-castillo/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Составной горный район у Carretera Austral в Айсене. Главный именованный ландшафтный референт — гора/массив Cerro Castillo; парк и Villa Cerro Castillo — связанные составляющие."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/cerro-castillo/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5064873",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cerro_Castillo",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5064873",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точка именованной горы как основного референта района, не центр посёлка и не границы национального парка."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://chile.travel/en/attractions/cerro-castillo/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Составной горный район у Carretera Austral в Айсене. Главный именованный ландшафтный референт — гора/массив Cerro Castillo; парк и Villa Cerro Castillo — связанные составляющие."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q5064873",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cerro_Castillo"
+    }
+  },
+  "location": {
+    "latitude": -46.065,
+    "longitude": -72.2075,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5064873"
+  },
+  "reviewNote": "Официальный https://chile.travel/en/attractions/cerro-castillo/ независимо связывает гору, долину Ibáñez, парк и Carretera Austral. Не Cerro Castillo в Magallanes; не утверждается, что автомобильный тур включает восхождение."
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_calderon",
+  "stableId": "destination_ecuador_calderon",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/calderon/",
+  "sourceFingerprint": "4bcd0d958f8e95ec257701632a84144001fd02eba52a45ea459ae379ade918df",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q842364",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Calder%C3%B3n,_Quito"
+    },
+    "officialUrl": "https://gobierno.gadcalderon.gob.ec/wpg/nuestra-parroquia/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Кальдерон",
+      "reason": "Кальдерон — сельский приход и населённый район северо-восточнее Кито, известный фигурками mazapán. Q842364 соответствует основному референту страницы; это не персона Абдон Кальдерон. Точка представляет территорию прихода."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q842364",
+      "reason": "Кальдерон — сельский приход и населённый район северо-восточнее Кито, известный фигурками mazapán. Q842364 соответствует основному референту страницы; это не персона Абдон Кальдерон. Точка представляет территорию прихода."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Calder%C3%B3n,_Quito",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://gobierno.gadcalderon.gob.ec/wpg/nuestra-parroquia/",
+      "reason": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.09722222222222221, -78.4225",
+      "reason": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/calderon.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Кальдерон — сельский приход и населённый район северо-восточнее Кито, известный фигурками mazapán. Q842364 соответствует основному референту страницы; это не персона Абдон Кальдерон. Точка представляет территорию прихода."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/calderon/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q842364",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Кальдерон — сельский приход и населённый район северо-восточнее Кито, известный фигурками mazapán. Q842364 соответствует основному референту страницы; это не персона Абдон Кальдерон. Точка представляет территорию прихода."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Calder%C3%B3n,_Quito",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://gobierno.gadcalderon.gob.ec/wpg/nuestra-parroquia/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q842364",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/calderon.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.09722222222222221,
+    "longitude": -78.4225,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q842364"
+  }
+}

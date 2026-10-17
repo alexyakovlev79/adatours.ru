@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_mexico_city_metropolitan_cathedral",
+  "stableId": "destination_mexico_mexico_city_metropolitan_cathedral",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/mexico-city-metropolitan-cathedral/",
+  "sourceFingerprint": "1e89b2166edb5b161421dea6e6f5ee08d55427d82a886a3828e28ad42683edb6",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q610961",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mexico_City_Metropolitan_Cathedral"
+    },
+    "officialUrl": "https://www.mexicocity.cdmx.gob.mx/venues/metropolitan-cathedral/"
+  },
+  "location": {
+    "latitude": 19.4343942,
+    "longitude": -99.1330824,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q610961"
+  },
+  "alternateNames": [
+    "Catedral Metropolitana de la Ciudad de México",
+    "Catedral Metropolitana de la Asunción de la Santísima Virgen María a los cielos"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кафедральный собор Мехико",
+      "reason": "Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q610961",
+      "reason": "Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Mexico_City_Metropolitan_Cathedral",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.mexicocity.cdmx.gob.mx/venues/metropolitan-cathedral/",
+      "reason": "Официальная государственная карточка выбранного объекта. Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.4343942,-99.1330824; feature_point",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Catedral Metropolitana de la Ciudad de México; Catedral Metropolitana de la Asunción de la Santísima Virgen María a los cielos",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/metropolitan-cathedral/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/mexico-city-metropolitan-cathedral/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q610961",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q610961",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/metropolitan-cathedral/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Официальная государственная карточка выбранного объекта. Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q610961",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q610961",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/metropolitan-cathedral/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Кафедральный собор на северной стороне Zócalo в Мехико. Городской туристический портал и Q610961 подтверждают конкретное здание и местоположение; часовни внутри не отдельные референты страницы."
+}

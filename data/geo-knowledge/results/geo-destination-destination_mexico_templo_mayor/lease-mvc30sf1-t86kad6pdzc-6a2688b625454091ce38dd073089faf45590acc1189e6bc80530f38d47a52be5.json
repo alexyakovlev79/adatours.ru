@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_templo_mayor",
+  "stableId": "destination_mexico_templo_mayor",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/templo-mayor/",
+  "sourceFingerprint": "2adf5cab1452838596529ca789bd941772d81dc2eb5184aee144eaf1911f8209",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archaeological site",
+  "alternateNames": [
+    "Templo Mayor"
+  ],
+  "external": {
+    "wikidataQid": "Q774021",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Templo_Mayor",
+      "es": "https://es.wikipedia.org/wiki/Templo_Mayor"
+    },
+    "geonamesId": "6957086",
+    "officialUrl": "https://lugares.inah.gob.mx/es/node/4463"
+  },
+  "location": {
+    "latitude": 19.435,
+    "longitude": -99.131389,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q774021"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/templo-mayor/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Темпло-Майор, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Археологические остатки главного храма Теночтитлана у Сокало в Мехико. Музей дополняет посещение, но основной именованный объект MD — храмовый комплекс."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4463",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Археологические остатки главного храма Теночтитлана у Сокало в Мехико. Музей дополняет посещение, но основной именованный объект MD — храмовый комплекс."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774021",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: main Temple of Tenochtitlan. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774021",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Археологические остатки главного храма Теночтитлана у Сокало в Мехико. Музей дополняет посещение, но основной именованный объект MD — храмовый комплекс. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774021",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: enwiki: Templo Mayor; eswiki: Templo Mayor. Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774021",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P1566 = 6957086 в принятой точной карточке Q774021; тип и страна соответствуют выбранному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774021",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 19.435, -99.131389; исходная координата, роль feature_point. Точка выбранного населенного пункта или памятника, без усреднения и без переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774021",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: Templo Mayor."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q774021",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4463",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Официальный туристический или управляющий источник о выбранном объекте. Страница служит officialUrl и доказательством; не превращается автоматически в географический sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Археологические остатки главного храма Теночтитлана у Сокало в Мехико. Музей дополняет посещение, но основной именованный объект MD — храмовый комплекс.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "archaeological site",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q774021",
+      "reason": "Археологические остатки главного храма Теночтитлана у Сокало в Мехико. Музей дополняет посещение, но основной именованный объект MD — храмовый комплекс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Templo_Mayor ; https://es.wikipedia.org/wiki/Templo_Mayor",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "6957086",
+      "reason": "P1566 принятой точной карточки с совпадением типа и географии."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.435, -99.131389",
+      "reason": "P625 точного объекта; роль feature_point; Выбран Q774021 Templo Mayor, не отдельная музейная организация и не весь Теночтитлан. DestinationType natural_area служебный; реальный класс — archaeological site."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Templo Mayor",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://lugares.inah.gob.mx/es/node/4463",
+      "reason": "Проверен официальный источник о направлении или управляющей организации; используется по назначению поля officialUrl."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран Q774021 Templo Mayor, не отдельная музейная организация и не весь Теночтитлан. DestinationType natural_area служебный; реальный класс — archaeological site."
+}

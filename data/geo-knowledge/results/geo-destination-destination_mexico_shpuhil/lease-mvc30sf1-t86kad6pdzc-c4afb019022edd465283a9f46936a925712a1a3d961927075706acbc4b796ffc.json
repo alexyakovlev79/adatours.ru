@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_shpuhil",
+  "stableId": "destination_mexico_shpuhil",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/xpuhil/",
+  "sourceFingerprint": "38f5e417dacc2a0b9e6a5b059bc7dff190b4086795106f69b0eeabd8bec5512b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archaeological site",
+  "alternateNames": [
+    "Xpuhil",
+    "Xpujil"
+  ],
+  "external": {
+    "wikidataQid": "Q12912169",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Xpuhil",
+      "es": "https://es.wikipedia.org/wiki/Xpujil_(zona_arqueol%C3%B3gica)"
+    },
+    "officialUrl": "https://lugares.inah.gob.mx/es/node/4364"
+  },
+  "location": {
+    "latitude": 18.51002778,
+    "longitude": -89.40447222,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q12912169"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/xpuhil/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Шпухиль, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Археологический комплекс майя Шпухиль в Кампече, архитектура Rio Bec и сооружение с тремя башнями. Современный одноименный поселок не является референтом MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4364",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Археологический комплекс майя Шпухиль в Кампече, архитектура Rio Bec и сооружение с тремя башнями. Современный одноименный поселок не является референтом MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12912169",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: Maya archaeological site. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12912169",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Археологический комплекс майя Шпухиль в Кампече, архитектура Rio Bec и сооружение с тремя башнями. Современный одноименный поселок не является референтом MD. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12912169",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: enwiki: Xpuhil; eswiki: Xpujil (zona arqueológica). Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12912169",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 18.51002778, -89.40447222; исходная координата, роль feature_point. Точка выбранного населенного пункта или памятника, без усреднения и без переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12912169",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: Xpuhil; Xpujil."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12912169",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4364",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Официальный туристический или управляющий источник о выбранном объекте. Страница служит officialUrl и доказательством; не превращается автоматически в географический sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Археологический комплекс майя Шпухиль в Кампече, архитектура Rio Bec и сооружение с тремя башнями. Современный одноименный поселок не является референтом MD.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "archaeological site",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q12912169",
+      "reason": "Археологический комплекс майя Шпухиль в Кампече, архитектура Rio Bec и сооружение с тремя башнями. Современный одноименный поселок не является референтом MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Xpuhil ; https://es.wikipedia.org/wiki/Xpujil_(zona_arqueol%C3%B3gica)",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 55,
+      "selected": "omitted",
+      "reason": "P1566 найден, но запись GeoNames не удалось проверить отдельно от современного Xpujil; поле пропущено."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "18.51002778, -89.40447222",
+      "reason": "P625 точного объекта; роль feature_point; DestinationType natural_area не меняет фактический класс archaeological site. GeoNames 3514386 из P1566 не перенесен: не удалось отдельно проверить, относится ли запись к руинам, а не современному Xpujil."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Xpuhil; Xpujil",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://lugares.inah.gob.mx/es/node/4364",
+      "reason": "Проверен официальный источник о направлении или управляющей организации; используется по назначению поля officialUrl."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "DestinationType natural_area не меняет фактический класс archaeological site. GeoNames 3514386 из P1566 не перенесен: не удалось отдельно проверить, относится ли запись к руинам, а не современному Xpujil."
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_san_huan_chamula",
+  "stableId": "destination_mexico_san_huan_chamula",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/san-juan-chamula/",
+  "sourceFingerprint": "5ce0a02a3f24599b57a8fa47c89cb4bbae26e6326cf424af8e41f721e11715ab",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "alternateNames": [
+    "San Juan Chamula",
+    "Chamula"
+  ],
+  "external": {
+    "wikidataQid": "Q1061542",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/San_Juan_Chamula"
+    },
+    "geonamesId": "3531172"
+  },
+  "location": {
+    "latitude": 16.7875,
+    "longitude": -92.689166666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1061542"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/san-juan-chamula/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Сан-Хуан-Чамула, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Сан-Хуан-Чамула, населенный пункт и центр муниципалитета Чамула в высокогорье Чьяпаса возле Сан-Кристобаля; церковь San Juan Bautista — достопримечательность внутри поселения."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://visitchiapas.com/v2/es/blog/Nuestras-iglesias-favoritas-en-Chiapas",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Сан-Хуан-Чамула, населенный пункт и центр муниципалитета Чамула в высокогорье Чьяпаса возле Сан-Кристобаля; церковь San Juan Bautista — достопримечательность внутри поселения."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1061542",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: municipal seat of Chamula, State of Chiapas, Mexico. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1061542",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Сан-Хуан-Чамула, населенный пункт и центр муниципалитета Чамула в высокогорье Чьяпаса возле Сан-Кристобаля; церковь San Juan Bautista — достопримечательность внутри поселения. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1061542",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: eswiki: San Juan Chamula. Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1061542",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P1566 = 3531172 в принятой точной карточке Q1061542; тип и страна соответствуют выбранному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1061542",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 16.7875, -92.689166666667; исходная координата, роль settlement_center. Точка выбранного населенного пункта или памятника, без усреднения и без переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1061542",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: San Juan Chamula; Chamula."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1061542",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Сан-Хуан-Чамула, населенный пункт и центр муниципалитета Чамула в высокогорье Чьяпаса возле Сан-Кристобаля; церковь San Juan Bautista — достопримечательность внутри поселения.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "settlement",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1061542",
+      "reason": "Сан-Хуан-Чамула, населенный пункт и центр муниципалитета Чамула в высокогорье Чьяпаса возле Сан-Кристобаля; церковь San Juan Bautista — достопримечательность внутри поселения."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/San_Juan_Chamula",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3531172",
+      "reason": "P1566 принятой точной карточки с совпадением типа и географии."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "16.7875, -92.689166666667",
+      "reason": "P625 точного объекта; роль settlement_center; Карточка населенного пункта отделена от муниципалитета и от самой церкви. Выбрана точная испанская статья; enwiki Chamula описывает также муниципальный контекст. Общая статья Visit Chiapas о церквях используется как свидетельство, не как officialUrl всего поселения."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "San Juan Chamula; Chamula",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 45,
+      "selected": "omitted",
+      "reason": "Доступная статья Visit Chiapas посвящена нескольким церквям и не является точной официальной страницей поселения."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Карточка населенного пункта отделена от муниципалитета и от самой церкви. Выбрана точная испанская статья; enwiki Chamula описывает также муниципальный контекст. Общая статья Visit Chiapas о церквях используется как свидетельство, не как officialUrl всего поселения."
+}

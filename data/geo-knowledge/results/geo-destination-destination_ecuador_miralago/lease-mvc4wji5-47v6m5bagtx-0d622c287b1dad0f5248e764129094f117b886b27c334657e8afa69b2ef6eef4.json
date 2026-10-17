@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_miralago",
+  "stableId": "destination_ecuador_miralago",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/miralago/",
+  "sourceFingerprint": "001bd922da11d5e2718f02a5cc7bc908e09773db336c57a6915ccdaa7f8548d7",
+  "status": "BLOCKED",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://sanpablodellago.gob.ec/atractivos-turisticos/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Смотровая остановка Mira Lago у Панамериканского шоссе с видом на озеро San Pablo и Imbabura. Подтверждена местным GAD; не само озеро и не одноименный отель."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/miralago.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_miralago; статус approved; blob SHA=60955dc4df7e8de1004c6bcf7b3818e9f0f44b91; актуальный entry подтверждает canonical /ecuador/place/miralago/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/miralago/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_miralago.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Смотровая остановка Mira Lago у Панамериканского шоссе с видом на озеро San Pablo и Imbabura. Подтверждена местным GAD; не само озеро и не одноименный отель.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Точный самостоятельный QID и координаты точки обзора не подтверждены. Ссылка официального туристического обзора служит evidence, но не sameAs всей страницы."
+    }
+  ],
+  "reviewNote": "Географическая идентичность исследована и оценена от 70%. Технический блокер §3.2.1 workflow: точный публичный URL не удалось открыть доступными средствами, HTTP-статус/живой HTML не подтверждены. Нужна адресная проверка URL в рабочем браузере; не считать READY или PUBLISHED. Точный самостоятельный QID и координаты точки обзора не подтверждены. Ссылка официального туристического обзора служит evidence, но не sameAs всей страницы."
+}

@@ -26,7 +26,7 @@ lead: "Галапагосы можно исследовать в островн�
 
 Программы с проживанием в гостинице дают другой режим: основная база находится на обитаемом острове, а морские поездки выполняются по отдельному расписанию. В [путешествии с Кито и Галапагосами](/ecuador/tour/ecuador-quito-galapagos-islands/) полезно внимательно изучить программу дней, а не предполагать посещение всех удаленных островов по одному названию.
 
-{{catalog.tourTable:tour_source_ves_ekvador_i_galapagosskie_ostrova,tour_source_ekvador_krasota_i_priroda,tour_source_ekvador_aktivnyj_tur_s_galapagossom,tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh,tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej}}
+{{catalog.tourTable:tour_source_ves_ekvador_i_galapagosskie_ostrova,tour_source_ekvador_krasota_i_priroda,tour_source_ekvador_aktivnyj_tur_s_galapagossom,tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej}}
 
 ## Дайвинг и наблюдение за животными
 

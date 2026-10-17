@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_coyoacan",
+  "stableId": "destination_mexico_coyoacan",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/coyoacan/",
+  "sourceFingerprint": "21a9d2cc616b2497d583aaf88a6d843d57f277054d795a5cb4bfde1bd2776df5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "AdministrativeArea",
+  "external": {
+    "wikidataQid": "Q661315",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Coyoac%C3%A1n"
+    }
+  },
+  "location": {
+    "latitude": 19.35,
+    "longitude": -99.16222222222223,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q661315"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/coyoacan.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Именованный район Coyoacán в Mexico City с историческим центром у Jardín Hidalgo/Jardín Centenario. Q661315 описывает район, включая исторический центр; принят как основной референт страницы о районе с92%. Q27791443 проверен и перенаправляет на Q661315, отдельный объект не создается. Это не только Jardín Centenario или Museo Frida Kahlo."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/coyoacan/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Coyoac%C3%A1n",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Именованный район Coyoacán в Mexico City с историческим центром у Jardín Hidalgo/Jardín Centenario. Q661315 описывает район, включая исторический центр; принят как основной референт страницы о районе с92%. Q27791443 проверен и перенаправляет на Q661315, отдельный объект не создается. Это не только Jardín Centenario или Museo Frida Kahlo."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Coyoac%C3%A1n",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Именованный район Coyoacán в Mexico City с историческим центром у Jardín Hidalgo/Jardín Centenario. Q661315 описывает район, включая исторический центр; принят как основной референт страницы о районе с92%. Q27791443 проверен и перенаправляет на Q661315, отдельный объект не создается. Это не только Jardín Centenario или Museo Frida Kahlo."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Coyoac%C3%A1n",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q661315",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "P625 выбранного района находится в историческом центре и используется как representative района. Не кадастровый центр всей alcaldía и не вход в отдельный музей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q661315",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены QID,P31,P17,P131,P625 и sitelinks. Именованный район Coyoacán в Mexico City с историческим центром у Jardín Hidalgo/Jardín Centenario. Q661315 описывает район, включая исторический центр; принят как основной референт страницы о районе с92%. Q27791443 проверен и перенаправляет на Q661315, отдельный объект не создается. Это не только Jardín Centenario или Museo Frida Kahlo."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Coyoac%C3%A1n",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная EN-статья о выбранном объекте соответствует sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Страница сосредоточена на историческом центре района; Q661315 охватывает район шире (92%). Q27791443 — редирект, не самостоятельная историческая сущность.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Койоакан",
+      "reason": "Именованный район Coyoacán в Mexico City с историческим центром у Jardín Hidalgo/Jardín Centenario. Q661315 описывает район, включая исторический центр; принят как основной референт страницы о районе с92%. Q27791443 проверен и перенаправляет на Q661315, отдельный объект не создается. Это не только Jardín Centenario или Museo Frida Kahlo."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "AdministrativeArea",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "19.35, -99.16222222222223",
+      "reason": "P625 выбранного района находится в историческом центре и используется как representative района. Не кадастровый центр всей alcaldía и не вход в отдельный музей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 92,
+      "selected": "Q661315",
+      "reason": "Именованный район Coyoacán в Mexico City с историческим центром у Jardín Hidalgo/Jardín Centenario. Q661315 описывает район, включая исторический центр; принят как основной референт страницы о районе с92%. Q27791443 проверен и перенаправляет на Q661315, отдельный объект не создается. Это не только Jardín Centenario или Museo Frida Kahlo."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 92,
+      "selected": "https://en.wikipedia.org/wiki/Coyoac%C3%A1n",
+      "reason": "Именованный район Coyoacán в Mexico City с историческим центром у Jardín Hidalgo/Jardín Centenario. Q661315 описывает район, включая исторический центр; принят как основной референт страницы о районе с92%. Q27791443 проверен и перенаправляет на Q661315, отдельный объект не создается. Это не только Jardín Centenario или Museo Frida Kahlo."
+    }
+  ]
+}

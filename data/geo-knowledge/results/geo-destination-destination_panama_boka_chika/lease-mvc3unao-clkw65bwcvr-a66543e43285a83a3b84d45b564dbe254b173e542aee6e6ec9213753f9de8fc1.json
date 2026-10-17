@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_boka_chika",
+  "stableId": "destination_panama_boka_chika",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/boca-chica/",
+  "sourceFingerprint": "6bc4d1f74d7b91f108d4ee90d917bb5f7cf36b998e2f22ea1c781a69d52dcde2",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Бока-Чика",
+      "reason": "Бока-Чика в Chiriquí, San Lorenzo, Панама: тихоокеанская база поездок по заливу. Доминиканская Boca Chica Q888935 отклонена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q4936076",
+      "reason": "Бока-Чика в Chiriquí, San Lorenzo, Панама: тихоокеанская база поездок по заливу. Доминиканская Boca Chica Q888935 отклонена."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "8.216666666666667,-82.21666666666667",
+      "reason": "Выбрана P625 из English Wikipedia для поселения 8°13′N 82°13′W; альтернативная GNS точка административной территории 8°14′N 82°14′W не усредняется."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/boca-chica.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Бока-Чика в Chiriquí, San Lorenzo, Панама: тихоокеанская база поездок по заливу. Доминиканская Boca Chica Q888935 отклонена."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4936076",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Бока-Чика в Chiriquí, San Lorenzo, Панама: тихоокеанская база поездок по заливу. Доминиканская Boca Chica Q888935 отклонена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4936076",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Бока-Чика в Chiriquí, San Lorenzo, Панама: тихоокеанская база поездок по заливу. Доминиканская Boca Chica Q888935 отклонена."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4936076",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Выбрана P625 из English Wikipedia для поселения 8°13′N 82°13′W; альтернативная GNS точка административной территории 8°14′N 82°14′W не усредняется."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4936076",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/boca-chica/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q4936076"
+  },
+  "location": {
+    "latitude": 8.216666666666667,
+    "longitude": -82.21666666666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4936076"
+  }
+}

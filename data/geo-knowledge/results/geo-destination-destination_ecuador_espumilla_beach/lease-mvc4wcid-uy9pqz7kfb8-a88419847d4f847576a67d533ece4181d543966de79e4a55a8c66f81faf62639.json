@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_espumilla_beach",
+  "stableId": "destination_ecuador_espumilla_beach",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/espumilla-beach/",
+  "sourceFingerprint": "793d3cfb03800905017d325bf3822bbffc7e955a5786e423c37063596f7b7f2b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "location": {
+    "latitude": -0.18560816,
+    "longitude": -90.83407397,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.geonames.org/search.html?country=EC&q=Gal%C3%A1pagos&startRow=350"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitgalapagos.travel/visitor-sites/espumilla-beach-galapagos-islands.html",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Espumilla Beach — пляж острова Santiago (James/San Salvador) в Галапагосах Эквадора; название, мангры и место гнездования черепах совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/espumilla-beach.md",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/espumilla-beach/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/search.html?country=EC&q=Gal%C3%A1pagos&startRow=350",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "GeoNames: строка Playa Espumilla, тип beach, Ecuador Galápagos; координаты самого пляжа, не соседней лагуны."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.visitgalapagos.travel/visitor-sites/espumilla-beach-galapagos-islands.html",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Espumilla Beach — пляж острова Santiago (James/San Salvador) в Галапагосах Эквадора; название, мангры и место гнездования черепах совпадают. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пляж Эспумилья",
+      "reason": "Espumilla Beach — пляж острова Santiago (James/San Salvador) в Галапагосах Эквадора; название, мангры и место гнездования черепах совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-0.18560816,-90.83407397",
+      "reason": "GeoNames: строка Playa Espumilla, тип beach, Ecuador Galápagos; координаты самого пляжа, не соседней лагуны."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Espumilla Beach — пляж острова Santiago (James/San Salvador) в Галапагосах Эквадора; название, мангры и место гнездования черепах совпадают. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

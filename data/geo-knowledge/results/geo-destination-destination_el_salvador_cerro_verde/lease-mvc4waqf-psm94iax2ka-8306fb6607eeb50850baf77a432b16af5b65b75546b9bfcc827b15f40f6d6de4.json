@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_cerro_verde",
+  "stableId": "destination_el_salvador_cerro_verde",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/cerro-verde/",
+  "sourceFingerprint": "ecac924f0913de4f2068c2c541396beb90d5f24d91504dfaac38a77209ee7660",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1056001"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/cerro-verde/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Primary referent is Cerro Verde/Cuntetepeque wooded extinct volcano and trails in Santa Ana, not Los Volcanes park as a whole or Peruvian mine."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1056001",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Primary referent is Cerro Verde/Cuntetepeque wooded extinct volcano and trails in Santa Ana, not Los Volcanes park as a whole or Peruvian mine."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1056001",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1056001",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Primary referent is Cerro Verde/Cuntetepeque wooded extinct volcano and trails in Santa Ana, not Los Volcanes park as a whole or Peruvian mine."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19966728",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Серро-Верде",
+      "reason": "Primary referent is Cerro Verde/Cuntetepeque wooded extinct volcano and trails in Santa Ana, not Los Volcanes park as a whole or Peruvian mine."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q1056001",
+      "reason": "Primary referent is Cerro Verde/Cuntetepeque wooded extinct volcano and trails in Santa Ana, not Los Volcanes park as a whole or Peruvian mine."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.82642,\"longitude\":-89.62258,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://mapcarta.com/19966728\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.82642,
+    "longitude": -89.62258,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/19966728"
+  },
+  "reviewNote": ""
+}

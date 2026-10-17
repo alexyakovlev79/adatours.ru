@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_palenke",
+  "stableId": "destination_mexico_palenke",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/palenque/",
+  "sourceFingerprint": "a86954230dff55a8a31da49055e04f679d6feedd9d97738ef1c17b02bcd94c99",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q181427",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Palenque"
+    },
+    "geonamesId": "3522162",
+    "osm": {
+      "type": "way",
+      "id": 27638749
+    },
+    "officialUrl": "https://www.inah.gob.mx/zonas/zona-arqueologica-palenque"
+  },
+  "location": {
+    "latitude": 17.48388,
+    "longitude": -92.04689,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/palenke.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Археологический памятник древнего города майя Паленке в Чьяпасе — основной референт страницы о руинах, современном городе и окрестностях."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/palenque/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q181427",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q181427: точное название, тип и страна P17 Q96 соответствуют Археологический памятник древнего города майя Паленке в Чьяпасе — основной референт страницы о руинах, современном городе и окрестностях. Идентификатор принят для основного именованного референта составной страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Palenque",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3522162, featureCode=ANS. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/27638749",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой OSM API: Zona Arqueologica Palenque, historic=archaeological_site, en:Palenque; география совпадает с древним городом."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.inah.gob.mx/zonas/zona-arqueologica-palenque",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная карточка археологической зоны у её государственного администратора INAH; прямой HTTP 200."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "17.48388, -92.04689; pointRole=representative. Заголовок и основная часть текста посвящены древнему городу; современный Паленке указан как соседний населённый пункт. Q181427 и GeoNames 3522162 ANS приняты по основному референту. Современный город GeoNames 3522164 PPLA2 не подменяет руины. Выбранная координата ANS внутри OSM way 27638749 archaeological_site (проверено по /full); это опорная точка памятника, не центр современного города. INAH прямо различает археологическую зону и соседнее поселение."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/27638749/full",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Первичный полигон archaeological_site: GeoNames ANS point и P625 Wikidata внутри контура; выбрана GeoNames точка без усреднения."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q181427",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Археологический памятник древнего города майя Паленке в Чьяпасе — основной референт страницы о руинах, современном городе и окрестностях."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q181427",
+      "reason": "Q181427: точное название, тип и страна P17 Q96 соответствуют Археологический памятник древнего города майя Паленке в Чьяпасе — основной референт страницы о руинах, современном городе и окрестностях. Идентификатор принят для основного именованного референта составной страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3522162",
+      "reason": "Прямой MX.txt: id=3522162, featureCode=ANS. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/27638749",
+      "reason": "Прямой OSM API: Zona Arqueologica Palenque, historic=archaeological_site, en:Palenque; география совпадает с древним городом."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.inah.gob.mx/zonas/zona-arqueologica-palenque",
+      "reason": "Точная карточка археологической зоны у её государственного администратора INAH; прямой HTTP 200."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "17.48388,-92.04689",
+      "reason": "17.48388, -92.04689; pointRole=representative. Заголовок и основная часть текста посвящены древнему городу; современный Паленке указан как соседний населённый пункт. Q181427 и GeoNames 3522162 ANS приняты по основному референту. Современный город GeoNames 3522164 PPLA2 не подменяет руины. Выбранная координата ANS внутри OSM way 27638749 archaeological_site (проверено по /full); это опорная точка памятника, не центр современного города. INAH прямо различает археологическую зону и соседнее поселение."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "Заголовок и основная часть текста посвящены древнему городу; современный Паленке указан как соседний населённый пункт. Q181427 и GeoNames 3522162 ANS приняты по основному референту. Современный город GeoNames 3522164 PPLA2 не подменяет руины. Выбранная координата ANS внутри OSM way 27638749 archaeological_site (проверено по /full); это опорная точка памятника, не центр современного города. INAH прямо различает археологическую зону и соседнее поселение.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/palenque/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

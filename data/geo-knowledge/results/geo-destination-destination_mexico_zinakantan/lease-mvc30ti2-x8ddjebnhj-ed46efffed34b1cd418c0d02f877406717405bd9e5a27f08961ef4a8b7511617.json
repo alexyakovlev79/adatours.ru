@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_puerto_eskandido",
+  "stableId": "destination_mexico_puerto_eskandido",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/puerto-escondido/",
+  "sourceFingerprint": "1610098c35e91f3a5fc3880b279c22b34a288332869627828c749e524fc1a044",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1752991",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puerto_Escondido"
+    },
+    "geonamesId": "3520994",
+    "osm": {
+      "type": "node",
+      "id": 458608856
+    }
+  },
+  "location": {
+    "latitude": 15.8693331,
+    "longitude": -97.0726428,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/458608856"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/puerto-eskandido.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Курортный город Пуэрто-Эскондидо на тихоокеанском побережье штата Оахака, Мексика."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/puerto-escondido/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1752991",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q1752991: точное название, тип и страна P17 Q96 соответствуют Курортный город Пуэрто-Эскондидо на тихоокеанском побережье штата Оахака, Мексика. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Escondido",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3520994, featureCode=PPL. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/458608856",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/458608856",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "15.8693331, -97.0726428; pointRole=settlement_center. Q1752991, GeoNames 3520994 PPL в Оахаке и OSM city с тем же QID совпадают. Одноимённые города/поселения в Нижней Калифорнии, Веракрусе, Герреро и других странах исключены. Проверенная статья Puerto_Escondido,_Oaxaca соответствует нынешнему enwiki sitelink Puerto Escondido. Частный портал escondido.com.mx из P856 не признан официальным сайтом города."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1752991",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Курортный город Пуэрто-Эскондидо на тихоокеанском побережье штата Оахака, Мексика."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1752991",
+      "reason": "Q1752991: точное название, тип и страна P17 Q96 соответствуют Курортный город Пуэрто-Эскондидо на тихоокеанском побережье штата Оахака, Мексика. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3520994",
+      "reason": "Прямой MX.txt: id=3520994, featureCode=PPL. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/458608856",
+      "reason": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "15.8693331,-97.0726428",
+      "reason": "15.8693331, -97.0726428; pointRole=settlement_center. Q1752991, GeoNames 3520994 PPL в Оахаке и OSM city с тем же QID совпадают. Одноимённые города/поселения в Нижней Калифорнии, Веракрусе, Герреро и других странах исключены. Проверенная статья Puerto_Escondido,_Oaxaca соответствует нынешнему enwiki sitelink Puerto Escondido. Частный портал escondido.com.mx из P856 не признан официальным сайтом города."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "Q1752991, GeoNames 3520994 PPL в Оахаке и OSM city с тем же QID совпадают. Одноимённые города/поселения в Нижней Калифорнии, Веракрусе, Герреро и других странах исключены. Проверенная статья Puerto_Escondido,_Oaxaca соответствует нынешнему enwiki sitelink Puerto Escondido. Частный портал escondido.com.mx из P856 не признан официальным сайтом города.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/puerto-escondido/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

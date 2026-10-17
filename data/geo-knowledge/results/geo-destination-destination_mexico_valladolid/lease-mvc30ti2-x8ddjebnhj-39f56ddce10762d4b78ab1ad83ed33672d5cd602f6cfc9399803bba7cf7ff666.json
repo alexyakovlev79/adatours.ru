@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_oahaka",
+  "stableId": "destination_mexico_oahaka",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/oaxaca/",
+  "sourceFingerprint": "a97cdde22e7f23aa6ff6cdb62770571adb20c90de6582334c657c6e7074ff8f8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q131429",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Oaxaca_City"
+    },
+    "geonamesId": "3522507",
+    "osm": {
+      "type": "node",
+      "id": 269912387
+    },
+    "officialUrl": "https://www.municipiodeoaxaca.gob.mx/"
+  },
+  "location": {
+    "latitude": 17.0604663,
+    "longitude": -96.7253575,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/269912387"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/oahaka.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Город Оахака-де-Хуарес, столица одноимённого штата Оахака в Мексике."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/oaxaca/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131429",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q131429: точное название, тип и страна P17 Q96 соответствуют Город Оахака-де-Хуарес, столица одноимённого штата Оахака в Мексике. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Oaxaca_City",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3522507, featureCode=PPLA. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/269912387",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131429",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Официальный правительственный/муниципальный домен подтверждён P856 и первичными источниками. В этом проходе прямой доступ ограничен 502/403; факт ошибки доступа не переносится в географию."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/269912387",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "17.0604663, -96.7253575; pointRole=settlement_center. MD описывает именно город. Q131429, GeoNames PPLA 3522507, OSM city/official_name Oaxaca de Juárez и P625 совпадают. QID штата Оахака и объект UNESCO с историческим центром и Монте-Альбаном не присваиваются всей городской странице. Официальный муниципальный домен подтверждён P856, прямой запрос ограничен 403."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131429",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Оахака-де-Хуарес, столица одноимённого штата Оахака в Мексике."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q131429",
+      "reason": "Q131429: точное название, тип и страна P17 Q96 соответствуют Город Оахака-де-Хуарес, столица одноимённого штата Оахака в Мексике. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3522507",
+      "reason": "Прямой MX.txt: id=3522507, featureCode=PPLA. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/269912387",
+      "reason": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.municipiodeoaxaca.gob.mx/",
+      "reason": "Официальный правительственный/муниципальный домен подтверждён P856 и первичными источниками. В этом проходе прямой доступ ограничен 502/403; факт ошибки доступа не переносится в географию."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "17.0604663,-96.7253575",
+      "reason": "17.0604663, -96.7253575; pointRole=settlement_center. MD описывает именно город. Q131429, GeoNames PPLA 3522507, OSM city/official_name Oaxaca de Juárez и P625 совпадают. QID штата Оахака и объект UNESCO с историческим центром и Монте-Альбаном не присваиваются всей городской странице. Официальный муниципальный домен подтверждён P856, прямой запрос ограничен 403."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "MD описывает именно город. Q131429, GeoNames PPLA 3522507, OSM city/official_name Oaxaca de Juárez и P625 совпадают. QID штата Оахака и объект UNESCO с историческим центром и Монте-Альбаном не присваиваются всей городской странице. Официальный муниципальный домен подтверждён P856, прямой запрос ограничен 403.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/oaxaca/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

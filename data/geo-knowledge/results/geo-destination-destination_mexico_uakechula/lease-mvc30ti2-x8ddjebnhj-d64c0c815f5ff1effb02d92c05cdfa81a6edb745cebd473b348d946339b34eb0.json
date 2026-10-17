@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_monterrej",
+  "stableId": "destination_mexico_monterrej",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/monterrey/",
+  "sourceFingerprint": "f283874f8636bc1033f1713dbc4b7b6de375e46bc322c76ca0c3ce4dedb9a489",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q81033",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Monterrey"
+    },
+    "geonamesId": "3995465",
+    "osm": {
+      "type": "node",
+      "id": 4145210488
+    },
+    "officialUrl": "https://www.monterrey.gob.mx/"
+  },
+  "location": {
+    "latitude": 25.6802019,
+    "longitude": -100.315258,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/4145210488"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/monterrej.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Город Монтеррей, столица Нуэво-Леона в северо-восточной Мексике, у Сьерра-Мадре-Ориенталь."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/monterrey/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81033",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q81033: точное название, тип и страна P17 Q96 соответствуют Город Монтеррей, столица Нуэво-Леона в северо-восточной Мексике, у Сьерра-Мадре-Ориенталь. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monterrey",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3995465, featureCode=PPLA. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/4145210488",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.monterrey.gob.mx/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Официальный сайт администрации соответствующего города; P856 сверена с открытой страницей Ayuntamiento/Gobierno."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/4145210488",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "25.6802019, -100.315258; pointRole=settlement_center. Городская GeoNames PPLA 3995465 и OSM city с Q81033 совпадают с основным референтом. Муниципальный GeoNames 8582459 ADM2 не используется как координата города; американский Monterey и одноимённые поселения исключены. Выбрана точка OSM города, другие городские маркеры не усреднялись."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81033",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Монтеррей, столица Нуэво-Леона в северо-восточной Мексике, у Сьерра-Мадре-Ориенталь."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q81033",
+      "reason": "Q81033: точное название, тип и страна P17 Q96 соответствуют Город Монтеррей, столица Нуэво-Леона в северо-восточной Мексике, у Сьерра-Мадре-Ориенталь. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3995465",
+      "reason": "Прямой MX.txt: id=3995465, featureCode=PPLA. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/4145210488",
+      "reason": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.monterrey.gob.mx/",
+      "reason": "Официальный сайт администрации соответствующего города; P856 сверена с открытой страницей Ayuntamiento/Gobierno."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "25.6802019,-100.315258",
+      "reason": "25.6802019, -100.315258; pointRole=settlement_center. Городская GeoNames PPLA 3995465 и OSM city с Q81033 совпадают с основным референтом. Муниципальный GeoNames 8582459 ADM2 не используется как координата города; американский Monterey и одноимённые поселения исключены. Выбрана точка OSM города, другие городские маркеры не усреднялись."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "Городская GeoNames PPLA 3995465 и OSM city с Q81033 совпадают с основным референтом. Муниципальный GeoNames 8582459 ADM2 не используется как координата города; американский Monterey и одноимённые поселения исключены. Выбрана точка OSM города, другие городские маркеры не усреднялись.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/monterrey/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

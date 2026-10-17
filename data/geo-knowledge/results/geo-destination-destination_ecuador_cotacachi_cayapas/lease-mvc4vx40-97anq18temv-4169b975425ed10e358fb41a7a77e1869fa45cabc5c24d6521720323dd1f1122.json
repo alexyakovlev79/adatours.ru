@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_cotacachi_cayapas",
+  "stableId": "destination_ecuador_cotacachi_cayapas",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cotacachi-cayapas/",
+  "sourceFingerprint": "11bad04abea9a40c6f8907f6496506a8da317c2ba31666df688f74286e8631ec",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q4745542",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cotacachi_Cayapas_Ecological_Reserve"
+    },
+    "geonamesId": "8335501",
+    "osm": {
+      "type": "relation",
+      "id": 225653
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Заповедник Котакачи-Каяпас",
+      "reason": "Котакачи-Каяпас — охраняемая территория Эсмеральдас и Имбабуры, ныне национальный парк. Историческое наименование reserve в MD и Wikidata относится к тому же географическому объекту, а не к городу или вулкану. Точка P625 используется как опорная."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q4745542",
+      "reason": "Котакачи-Каяпас — охраняемая территория Эсмеральдас и Имбабуры, ныне национальный парк. Историческое наименование reserve в MD и Wikidata относится к тому же географическому объекту, а не к городу или вулкану. Точка P625 используется как опорная."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Cotacachi_Cayapas_Ecological_Reserve",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "8335501",
+      "reason": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "relation/225653",
+      "reason": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "0.5833333333333334, -78.68333333333334",
+      "reason": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cotacachi-cayapas.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Котакачи-Каяпас — охраняемая территория Эсмеральдас и Имбабуры, ныне национальный парк. Историческое наименование reserve в MD и Wikidata относится к тому же географическому объекту, а не к городу или вулкану. Точка P625 используется как опорная."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cotacachi-cayapas/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4745542",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Котакачи-Каяпас — охраняемая территория Эсмеральдас и Имбабуры, ныне национальный парк. Историческое наименование reserve в MD и Wikidata относится к тому же географическому объекту, а не к городу или вулкану. Точка P625 используется как опорная."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cotacachi_Cayapas_Ecological_Reserve",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4745542",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4745542",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4745542",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cotacachi-cayapas.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": 0.5833333333333334,
+    "longitude": -78.68333333333334,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4745542"
+  }
+}

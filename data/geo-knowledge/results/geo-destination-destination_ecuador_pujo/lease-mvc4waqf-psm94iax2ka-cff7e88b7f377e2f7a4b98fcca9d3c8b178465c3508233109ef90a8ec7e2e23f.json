@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_pujo",
+  "stableId": "destination_ecuador_pujo",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/puyo/",
+  "sourceFingerprint": "53e41e0d41a656f16583ab14ca885ca079956498bf68f47f2aa943736b6eb2bb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q676931"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/puyo/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Puyo / El Puyo is the city and capital of Pastaza in Ecuador; not Puyo River or canton."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q676931",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Puyo / El Puyo is the city and capital of Pastaza in Ecuador; not Puyo River or canton."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q676931",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Exact named feature in country_ecuador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q676931",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Puyo / El Puyo is the city and capital of Pastaza in Ecuador; not Puyo River or canton."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q676931",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Пуйо",
+      "reason": "Puyo / El Puyo is the city and capital of Pastaza in Ecuador; not Puyo River or canton."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q676931",
+      "reason": "Puyo / El Puyo is the city and capital of Pastaza in Ecuador; not Puyo River or canton."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":-1.4902777777777778,\"longitude\":-78.00222222222222,\"pointRole\":\"settlement_center\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q676931\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": -1.4902777777777778,
+    "longitude": -78.00222222222222,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q676931"
+  },
+  "reviewNote": ""
+}

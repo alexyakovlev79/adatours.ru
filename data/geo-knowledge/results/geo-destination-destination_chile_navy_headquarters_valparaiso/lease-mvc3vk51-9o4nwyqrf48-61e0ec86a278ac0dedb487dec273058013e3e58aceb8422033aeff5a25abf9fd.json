@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_navy_headquarters_valparaiso",
+  "stableId": "destination_chile_navy_headquarters_valparaiso",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/navy-headquarters-valparaiso/",
+  "sourceFingerprint": "b01c8e92c597c2bb147fd0ba2134457745f6830f7d3d102cb51c4ebe1b39e229",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5818006"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5818006",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Edificio Armada de Chile / Ex Intendencia на Plaza Sotomayor Вальпараисо, точное здание штаба из MD. Не управление на улице Prat и не военно-морской музей."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/navy-headquarters-valparaiso.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/navy-headquarters-valparaiso/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5818006",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Edificio Armada de Chile / Ex Intendencia на Plaza Sotomayor Вальпараисо, точное здание штаба из MD. Не управление на улице Prat и не военно-морской музей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5818006",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5818006",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Edificio Armada de Chile / Ex Intendencia на Plaza Sotomayor Вальпараисо, точное здание штаба из MD. Не управление на улице Prat и не военно-морской музей.",
+      "selected": "Военно-морской штаб в Вальпараисо"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Edificio Armada de Chile / Ex Intendencia на Plaza Sotomayor Вальпараисо, точное здание штаба из MD. Не управление на улице Prat и не военно-морской музей.",
+      "selected": "Q5818006"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.03886944,-71.62948056]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.03886944,
+    "longitude": -71.62948056,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5818006"
+  }
+}

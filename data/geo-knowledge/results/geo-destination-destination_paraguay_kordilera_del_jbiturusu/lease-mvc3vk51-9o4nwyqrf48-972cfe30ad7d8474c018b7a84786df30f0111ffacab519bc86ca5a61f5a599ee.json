@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_kordilera_del_jbiturusu",
+  "stableId": "destination_paraguay_kordilera_del_jbiturusu",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/ybytyruzu-mountain-range/",
+  "sourceFingerprint": "821ce71816637f8bacd31c378ceecca92cc4c28bed36d4c1b318804496642ee1",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3436629"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.geonames.org/3436629/cordillera-del-ybytyruzu.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Карточка GeoNames T.MTS Cordillera del Ybytyruzú, Guairá, Paraguay; горная система, а не только охраняемая территория."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/ybytyruzu-mountain-range.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/ybytyruzu-mountain-range/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3436629/cordillera-del-ybytyruzu.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Карточка GeoNames T.MTS Cordillera del Ybytyruzú, Guairá, Paraguay; горная система, а не только охраняемая территория."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3436629/cordillera-del-ybytyruzu.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Опорная точка горной системы GeoNames 3436629; не вершина и не вход в резерват."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.geonames.org/3436629/cordillera-del-ybytyruzu.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "reason": "Карточка GeoNames T.MTS Cordillera del Ybytyruzú, Guairá, Paraguay; горная система, а не только охраняемая территория.",
+      "selected": "Кордильера-дель-Йбитурусу"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "reason": "Карточка GeoNames T.MTS Cordillera del Ybytyruzú, Guairá, Paraguay; горная система, а не только охраняемая территория.",
+      "selected": "3436629"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка горной системы GeoNames 3436629; не вершина и не вход в резерват.",
+      "selected": "[-25.82362,-56.26506]"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -25.82362,
+    "longitude": -56.26506,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3436629/cordillera-del-ybytyruzu.html"
+  }
+}

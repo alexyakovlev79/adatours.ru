@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_el_mirador_la_macarena",
+  "stableId": "destination_colombia_el_mirador_la_macarena",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/el-mirador-la-macarena/",
+  "sourceFingerprint": "5365947055e02fdc4c9298e260e1448a140a1d647625e1f75618afc4bdb83fb2",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Place",
+  "external": {},
+  "location": {
+    "latitude": 2.222233,
+    "longitude": -73.807464,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://es.wikiloc.com/rutas-senderismo/cristalitos-140213069#wp-140213074"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/el-mirador-la-macarena.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Смотровая Mirador Cristalitos на маршруте El Mirador–Cristalitos, vereda El Billar возле La Macarena, с видами на Guayabero и Sierra de La Macarena. Это не город Ла-Макарена, не сам ручей и не водопад Cascada el Mirador."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/el-mirador-la-macarena/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.parquesnacionales.gov.co/sala-prensa/cano-cristales-la-puerta-de-entrada-a-los-paisajes-naturales-mas-bellos-en-el-municipio-de-la-macarena/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Смотровая Mirador Cristalitos на маршруте El Mirador–Cristalitos, vereda El Billar возле La Macarena, с видами на Guayabero и Sierra de La Macarena. Это не город Ла-Макарена, не сам ручей и не водопад Cascada el Mirador."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.parquesnacionales.gov.co/sala-prensa/cano-cristales-la-puerta-de-entrada-a-los-paisajes-naturales-mas-bellos-en-el-municipio-de-la-macarena/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.parquesnacionales.gov.co/sala-prensa/cano-cristales-la-puerta-de-entrada-a-los-paisajes-naturales-mas-bellos-en-el-municipio-de-la-macarena/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikiloc.com/rutas-senderismo/cristalitos-140213069#wp-140213074",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Первичный GPS-трек TxusMT71 (июль 2023): waypoint140213074 Mirador Cristalitos. Al río y la Sierra, 2.222233,-73.807464, высота358м. Название и роль панорамы совпадают с официальным описанием. Соседние Primer mirador и Cascada el Mirador имеют собственные точки и не подменяют выбранную смотровую."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://colombia.travel/es/la-macarena/cano-cristales-una-maravilla-natural",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Дополнительный источник подтверждает географический контекст и именованный объект."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "QID/OSM и отдельный официальный сайт смотровой не подтверждены; официальный материал парка используется как evidence, без sameAs всего парка.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Смотровая Эль-Мирадор (Ла-Макарена)",
+      "reason": "Смотровая Mirador Cristalitos на маршруте El Mirador–Cristalitos, vereda El Billar возле La Macarena, с видами на Guayabero и Sierra de La Macarena. Это не город Ла-Макарена, не сам ручей и не водопад Cascada el Mirador."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "Place",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "2.222233, -73.807464",
+      "reason": "Первичный GPS-трек TxusMT71 (июль 2023): waypoint140213074 Mirador Cristalitos. Al río y la Sierra, 2.222233,-73.807464, высота358м. Название и роль панорамы совпадают с официальным описанием. Соседние Primer mirador и Cascada el Mirador имеют собственные точки и не подменяют выбранную смотровую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "После адресного поиска точный QID не установлен; идентификаторы более крупных объектов или одноименных мест не назначены."
+    }
+  ]
+}

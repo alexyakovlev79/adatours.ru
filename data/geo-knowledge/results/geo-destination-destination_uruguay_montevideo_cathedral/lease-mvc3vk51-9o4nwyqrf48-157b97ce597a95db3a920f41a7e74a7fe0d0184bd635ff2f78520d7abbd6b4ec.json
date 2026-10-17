@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_montevideo_cathedral",
+  "stableId": "destination_uruguay_montevideo_cathedral",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/montevideo-cathedral/",
+  "sourceFingerprint": "2d2397bbb163a6befa5d82055b872c923ce30604e274c70e336ca9331e48b37a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1050600"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1050600",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Кафедральный собор Монтевидео напротив Plaza Matriz в Ciudad Vieja; не собор другого города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/montevideo-cathedral.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/uruguay/place/montevideo-cathedral/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1050600",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Кафедральный собор Монтевидео напротив Plaza Matriz в Ciudad Vieja; не собор другого города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1050600",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1050600",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Кафедральный собор Монтевидео напротив Plaza Matriz в Ciudad Vieja; не собор другого города.",
+      "selected": "Кафедральный собор Монтевидео"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Кафедральный собор Монтевидео напротив Plaza Matriz в Ciudad Vieja; не собор другого города.",
+      "selected": "Q1050600"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-34.907,-56.20411111]"
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_uruguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -34.907,
+    "longitude": -56.20411111,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1050600"
+  }
+}

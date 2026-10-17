@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_nacionalnyj_park_yasuni",
+  "stableId": "destination_ecuador_nacionalnyj_park_yasuni",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/yasuni-national-park/",
+  "sourceFingerprint": "f799eb8d88eb57192a997855d224038464ce6b7c4028977a667d3f3324ad00e8",
+  "status": "BLOCKED",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1641326"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://patrimonio.ambiente.gob.ec/iptmae/resource?r=yasuni-smart&request_locale=en",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Национальный парк Yasuni в эквадорской Амазонии, не автоматически вся биосферная территория Yasuni и не конкретный лодж."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/yasuni-national-park.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_nacionalnyj_park_yasuni; статус approved; blob SHA=dd873da2fde32e3a10a92cdbdf8971057ad86068; актуальный entry подтверждает canonical /ecuador/place/yasuni-national-park/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/yasuni-national-park/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_nacionalnyj_park_yasuni.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1641326",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Национальный парк Yasuni в эквадорской Амазонии, не автоматически вся биосферная территория Yasuni и не конкретный лодж."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Национальный парк Yasuni в эквадорской Амазонии, не автоматически вся биосферная территория Yasuni и не конкретный лодж.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1641326",
+      "reason": "Национальный парк Yasuni в эквадорской Амазонии, не автоматически вся биосферная территория Yasuni и не конкретный лодж."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "P625 Q1641326 ссылается на MAB directory биосферного резервата. Точка именно национального парка и совпадение границ не уточнены, координаты и UNESCO ID не перенесены."
+    }
+  ],
+  "reviewNote": "Географическая идентичность исследована и оценена от 70%. Технический блокер §3.2.1 workflow: точный публичный URL не удалось открыть доступными средствами, HTTP-статус/живой HTML не подтверждены. Нужна адресная проверка URL в рабочем браузере; не считать READY или PUBLISHED. P625 Q1641326 ссылается на MAB directory биосферного резервата. Точка именно национального парка и совпадение границ не уточнены, координаты и UNESCO ID не перенесены."
+}

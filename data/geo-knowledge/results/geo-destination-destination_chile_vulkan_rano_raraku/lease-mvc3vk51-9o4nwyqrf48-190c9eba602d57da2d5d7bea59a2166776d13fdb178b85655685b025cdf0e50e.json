@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_vulkan_rano_raraku",
+  "stableId": "destination_chile_vulkan_rano_raraku",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/rano-raraku-volcano/",
+  "sourceFingerprint": "0a1762fb79e9b80f2606a5402538aac4e9930c4ca51e0cadac56f3514021d098",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q937167"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q937167",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Вулкан Rano Raraku на острове Пасхи с каменоломней моаи; основной природный референт страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/rano-raraku-volcano.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/rano-raraku-volcano/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q937167",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Вулкан Rano Raraku на острове Пасхи с каменоломней моаи; основной природный референт страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q937167",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q937167",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Вулкан Rano Raraku на острове Пасхи с каменоломней моаи; основной природный референт страницы.",
+      "selected": "Вулкан Рано-Рараку"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Вулкан Rano Raraku на острове Пасхи с каменоломней моаи; основной природный референт страницы.",
+      "selected": "Q937167"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-27.12194444,-109.28888889]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -27.12194444,
+    "longitude": -109.28888889,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q937167"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_vodopad_charli",
+  "stableId": "destination_suriname_vodopad_charli",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/charlie-falls/",
+  "sourceFingerprint": "0f7332afe08dd0b402f21343f2c4d4093a1e93b635b766086ca7a5abbed5578a",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Водопад Чарли",
+      "reason": "Charlie Falls — водопад у подножия Misty Mountain в Кабалебо, отдельная остановка местного оператора."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/charlie-falls.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Charlie Falls — водопад у подножия Misty Mountain в Кабалебо, отдельная остановка местного оператора."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Charlie Falls — водопад у подножия Misty Mountain в Кабалебо, отдельная остановка местного оператора."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/charlie-falls/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Координаты Misty Mountain/курорта и одноимённых водопадов других стран не присвоены."
+}

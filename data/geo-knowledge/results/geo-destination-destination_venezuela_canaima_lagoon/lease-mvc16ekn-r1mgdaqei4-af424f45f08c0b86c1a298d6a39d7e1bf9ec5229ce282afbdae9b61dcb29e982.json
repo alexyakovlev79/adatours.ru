@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_canaima_lagoon",
+  "stableId": "destination_venezuela_canaima_lagoon",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/canaima-lagoon/",
+  "sourceFingerprint": "146f4840507ba888bf79b3988816a9686ea6e8dfff67618d32aaf710cbdd5d66",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "lake",
+  "alternateNames": [
+    "Laguna de Canaima",
+    "Canaima Lagoon"
+  ],
+  "external": {
+    "wikidataQid": "Q5969184",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Laguna_de_Canaima"
+    }
+  },
+  "location": {
+    "latitude": 6.2466944444444445,
+    "longitude": -62.850722222222224,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5969184"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/canaima-lagoon/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Именно лагуна около поселка Канайма, описанная как водоем и отправная точка к водопадам. Карточка Q5969184 — озеро в Венесуэле; поселок и национальный парк не подменяют лагуну."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_de_Canaima",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именно лагуна около поселка Канайма, описанная как водоем и отправная точка к водопадам. Карточка Q5969184 — озеро в Венесуэле; поселок и национальный парк не подменяют лагуну."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_de_Canaima",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именно лагуна около поселка Канайма, описанная как водоем и отправная точка к водопадам. Карточка Q5969184 — озеро в Венесуэле; поселок и национальный парк не подменяют лагуну."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_de_Canaima",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5969184",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именно лагуна около поселка Канайма, описанная как водоем и отправная точка к водопадам. Карточка Q5969184 — озеро в Венесуэле; поселок и национальный парк не подменяют лагуну. Прочитаны EntityData/API: P17=Venezuela и соответствующие sitelinks/описание."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_de_Canaima",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именно лагуна около поселка Канайма, описанная как водоем и отправная точка к водопадам. Карточка Q5969184 — озеро в Венесуэле; поселок и национальный парк не подменяют лагуну. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5969184",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "P625 точной карточки лагуны. Представительная точка водоема, не причал и не вход."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_de_Canaima",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лагуна Канайма",
+      "reason": "Именно лагуна около поселка Канайма, описанная как водоем и отправная точка к водопадам. Карточка Q5969184 — озеро в Венесуэле; поселок и национальный парк не подменяют лагуну."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "lake",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Laguna de Canaima; Canaima Lagoon",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5969184",
+      "reason": "Именно лагуна около поселка Канайма, описанная как водоем и отправная точка к водопадам. Карточка Q5969184 — озеро в Венесуэле; поселок и национальный парк не подменяют лагуну."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Laguna_de_Canaima\"}",
+      "reason": "Точные языковые статьи и объектный контекст совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "6.2466944444444445,-62.850722222222224 (representative)",
+      "reason": "P625 точной карточки лагуны. Представительная точка водоема, не причал и не вход."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    }
+  ],
+  "reviewNote": "UNESCO 701 относится к национальному парку Канайма; из инфобокса лагуны не перенесен как самостоятельный объект UNESCO."
+}

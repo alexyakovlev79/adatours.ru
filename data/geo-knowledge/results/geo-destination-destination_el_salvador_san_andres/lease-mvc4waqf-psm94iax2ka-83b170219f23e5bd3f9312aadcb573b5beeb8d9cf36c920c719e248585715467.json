@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_san_andres",
+  "stableId": "destination_el_salvador_san_andres",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/san-andres/",
+  "sourceFingerprint": "8aa079b880749b938fbc8386f8a4d0fadae27f1c2a40a4ccd320b6b743e0c656",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q2000719",
+    "geonamesId": "3583898"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/san-andres/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. San Andres archaeological ceremonial complex in Ciudad Arce/Zapotitan valley, El Salvador; not Colombian San Andres or a modern settlement."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2000719",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "San Andres archaeological ceremonial complex in Ciudad Arce/Zapotitan valley, El Salvador; not Colombian San Andres or a modern settlement."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2000719",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2000719",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "San Andres archaeological ceremonial complex in Ciudad Arce/Zapotitan valley, El Salvador; not Colombian San Andres or a modern settlement."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2000719",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "San Andres archaeological ceremonial complex in Ciudad Arce/Zapotitan valley, El Salvador; not Colombian San Andres or a modern settlement."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2000719",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Сан-Андрес",
+      "reason": "San Andres archaeological ceremonial complex in Ciudad Arce/Zapotitan valley, El Salvador; not Colombian San Andres or a modern settlement."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q2000719",
+      "reason": "San Andres archaeological ceremonial complex in Ciudad Arce/Zapotitan valley, El Salvador; not Colombian San Andres or a modern settlement."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3583898",
+      "reason": "San Andres archaeological ceremonial complex in Ciudad Arce/Zapotitan valley, El Salvador; not Colombian San Andres or a modern settlement."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.800616666666667,\"longitude\":-89.38914444444445,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q2000719\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.800616666666667,
+    "longitude": -89.38914444444445,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2000719"
+  },
+  "reviewNote": ""
+}

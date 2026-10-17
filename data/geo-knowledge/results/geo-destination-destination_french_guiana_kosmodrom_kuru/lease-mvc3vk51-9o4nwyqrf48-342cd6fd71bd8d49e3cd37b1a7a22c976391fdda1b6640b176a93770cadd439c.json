@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_french_guiana_kosmodrom_kuru",
+  "stableId": "destination_french_guiana_kosmodrom_kuru",
+  "kind": "destination",
+  "canonicalPath": "/french-guiana/place/guiana-space-centre/",
+  "sourceFingerprint": "3008774011c62a009efe38dff6e9f4d549d116751ba2450c5f6be156ccaaffe3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q308987"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_french_guiana"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q308987",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Основной референт MD — Centre spatial guyanais у Куру, космодром во Французской Гвиане; упоминание старого города второстепенно."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/kosmodrom-kuru.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/guiana-space-centre/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q308987",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Основной референт MD — Centre spatial guyanais у Куру, космодром во Французской Гвиане; упоминание старого города второстепенно."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q308987",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Выбран P625 космодрома как опорная точка комплекса. Альтернативные точки конкретных площадок и музейного центра не усреднялись."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q308987",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "reason": "Основной референт MD — Centre spatial guyanais у Куру, космодром во Французской Гвиане; упоминание старого города второстепенно.",
+      "selected": "Космодром Куру"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "reason": "Основной референт MD — Centre spatial guyanais у Куру, космодром во Французской Гвиане; упоминание старого города второстепенно.",
+      "selected": "Q308987"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Выбран P625 космодрома как опорная точка комплекса. Альтернативные точки конкретных площадок и музейного центра не усреднялись.",
+      "selected": "[5.23722222,-52.76055556]"
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_french_guiana"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": 5.23722222,
+    "longitude": -52.76055556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q308987"
+  }
+}

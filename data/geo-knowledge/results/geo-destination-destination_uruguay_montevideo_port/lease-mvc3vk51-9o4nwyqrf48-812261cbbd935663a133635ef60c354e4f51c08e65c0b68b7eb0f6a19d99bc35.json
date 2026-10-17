@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_montevideo_port",
+  "stableId": "destination_uruguay_montevideo_port",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/montevideo-port/",
+  "sourceFingerprint": "154481e0f66847f853f05f2ff6ad46e854431dd02cf7ec8d4f5866022dd4aa7a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1313631",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Port_of_Montevideo"
+    },
+    "officialUrl": "https://anp.com.uy/en/home/ports/commercial/port-montevideo"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://anp.com.uy/en/home/ports/commercial/port-montevideo",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/montevideo-port.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/uruguay/place/montevideo-port/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1313631",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Port_of_Montevideo",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://anp.com.uy/en/home/ports/commercial/port-montevideo",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Port_of_Montevideo",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Опорная точка порта из enwiki. Не координаты конкретного паромного причала; общая позиция ANP 34°55′S 56°14′W не усреднялась."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://anp.com.uy/en/home/ports/commercial/port-montevideo",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD.",
+      "selected": "Порт Монтевидео"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD.",
+      "selected": "Q1313631"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD.",
+      "selected": "https://en.wikipedia.org/wiki/Port_of_Montevideo"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "reason": "Puerto de Montevideo, Уругвай; портовый комплекс включает пассажирские сооружения, основной референт MD.",
+      "selected": "https://anp.com.uy/en/home/ports/commercial/port-montevideo"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка порта из enwiki. Не координаты конкретного паромного причала; общая позиция ANP 34°55′S 56°14′W не усреднялась.",
+      "selected": "[-34.90222,-56.20861]"
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_uruguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -34.90222,
+    "longitude": -56.20861,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Port_of_Montevideo"
+  }
+}

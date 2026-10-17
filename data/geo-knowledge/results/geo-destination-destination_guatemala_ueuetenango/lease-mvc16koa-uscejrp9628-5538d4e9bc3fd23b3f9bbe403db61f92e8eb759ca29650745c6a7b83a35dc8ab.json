@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_ueuetenango",
+  "stableId": "destination_guatemala_ueuetenango",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/huehuetenango/",
+  "sourceFingerprint": "b1c45e1e716feda5c3ab6ddafb0d9c7d513b0590854ddc6dd6e8963fb24e7e26",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/huehuetenango/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Проверены текущие MD и source-index в main, stable ID/страна/тип и canonical. Публичный URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://adatours.ru/guatemala/place/huehuetenango/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Класс выбран по фактическому референту MD/summary; Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q984863",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Wikidata P17 Q774 (Guatemala); страна совпадает с MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q984863",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитан Special:EntityData/Q984863.json: label/description, P31, P17 Q774 и P625. Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q984863",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "EN/ES sitelinks прочитаны из того же выбранного Wikidata entity, описывают именованный объект."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q984863",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Выбрана одна опубликованная точка без усреднения. Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Q984863",
+      "reason": "Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "city",
+      "reason": "Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Совпадают география источников и закреплённый countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q984863",
+      "reason": "Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Huehuetenango\",\"es\":\"https://es.wikipedia.org/wiki/Huehuetenango_(municipio)\"}",
+      "reason": "Прямые языковые sitelinks выбранной карточки, география и объект совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "15.314722222222,-91.476111111111",
+      "reason": "Роль settlement_center. Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames."
+    }
+  ],
+  "reviewNote": "Основной референт — город Уэуэтенанго, не одноимённый департамент. Q984863 содержит P31 city и municipality. GeoNames 3595414 из Wikidata оказался муниципалитетом ADM2 с точкой восточнее города, поэтому не добавлен. Использована городская точка P625, не административная точка GeoNames.",
+  "external": {
+    "wikidataQid": "Q984863",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Huehuetenango",
+      "es": "https://es.wikipedia.org/wiki/Huehuetenango_(municipio)"
+    }
+  },
+  "location": {
+    "latitude": 15.314722222222,
+    "longitude": -91.476111111111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q984863"
+  }
+}

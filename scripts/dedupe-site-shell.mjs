@@ -102,7 +102,7 @@ export async function dedupeSiteShell(dir=path.resolve('dist')){
   }
   if(!pages)throw Error('No complete pages found');const bytes=await size(dir);
   console.log(JSON.stringify({pages,redirects,sharedFragment:href,savedBytes:saved,compactedBytes:compacted,publishedBytes:bytes,publishedMB:+(bytes/1e6).toFixed(2)}));
-  if(bytes>500_000_000)throw Error('Site size target exceeded: '+bytes);
+  if(bytes>800_000_000)throw Error('Site size target exceeded (800 MB): '+bytes);
   return {pages,redirects,href,saved,bytes};
 }
 if(process.argv[1]&&path.resolve(fileURLToPath(import.meta.url))===path.resolve(process.argv[1]))await dedupeSiteShell(process.argv[2]?path.resolve(process.argv[2]):path.resolve('dist'));

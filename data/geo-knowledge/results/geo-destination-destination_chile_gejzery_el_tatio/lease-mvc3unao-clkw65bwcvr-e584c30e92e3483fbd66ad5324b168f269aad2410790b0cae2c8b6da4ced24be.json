@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_gejzery_el_tatio",
+  "stableId": "destination_chile_gejzery_el_tatio",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/el-tatio-geysers/",
+  "sourceFingerprint": "84f1d06b8efe8331f3d7be392015b66a6e47ba5dd684f4bea79e12c5897ff809",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Гейзеры Эль-Татио",
+      "reason": "Эль-Татио — высокогорное геотермальное поле/гейзеры в Андах северного Чили, не одноимённая отдельная гора."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q519756",
+      "reason": "Эль-Татио — высокогорное геотермальное поле/гейзеры в Андах северного Чили, не одноимённая отдельная гора."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-22.33138888888889,-68.01027777777777",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "\"3870089\"",
+      "reason": "P1566 from exact El Tatio record."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/el-tatio-geysers.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Эль-Татио — высокогорное геотермальное поле/гейзеры в Андах северного Чили, не одноимённая отдельная гора."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q519756",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Эль-Татио — высокогорное геотермальное поле/гейзеры в Андах северного Чили, не одноимённая отдельная гора."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q519756",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Эль-Татио — высокогорное геотермальное поле/гейзеры в Андах северного Чили, не одноимённая отдельная гора."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q519756",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q519756",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q519756",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "P1566 from exact El Tatio record."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/el-tatio-geysers/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q519756",
+    "geonamesId": "3870089"
+  },
+  "location": {
+    "latitude": -22.33138888888889,
+    "longitude": -68.01027777777777,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q519756"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_marble_caves",
+  "stableId": "destination_chile_marble_caves",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/marble-caves/",
+  "sourceFingerprint": "f9c33e01a792e1afed17c847d9bd8c7495122bb6f4aad96d6376a62ef38262c9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q5758501"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/marble-caves/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5758501",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5758501",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5758501",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Marble Caves / Catedral de Mármol, General Carrera",
+      "reason": "Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 85,
+      "selected": "Q5758501",
+      "reason": "Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "-46.68333333333333,-72.61666666666666",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Principal referent is Chilean marble cave formations in General Carrera near Puerto Río Tranquilo; Wikidata sitelinks include the Marble Caves attraction."
+    }
+  ],
+  "reviewNote": "Catalogue identity under Catedral/Capilla de Mármol; reference point of principal attraction, not every grotto.",
+  "location": {
+    "latitude": -46.68333333333333,
+    "longitude": -72.61666666666666,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5758501"
+  }
+}

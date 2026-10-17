@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_koban",
+  "stableId": "destination_guatemala_koban",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/coban/",
+  "sourceFingerprint": "2c6e657d325c9d33d97e1640e3738a7ac398c7dcef5b00b219e1f8429190fa70",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q867077",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cob%C3%A1n"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас.",
+      "selected": "city"
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "reason": "Страна из текущего MD согласуется с внешними географическими источниками.",
+      "selected": "country_guatemala"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас.",
+      "selected": "Q867077"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас.",
+      "selected": "https://en.wikipedia.org/wiki/Cob%C3%A1n"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Городская точка P625 15°29′N 90°22′W согласуется с Wikipedia. Не центроид муниципальной территории.",
+      "selected": "15.4833333333, -90.3666666667"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/coban/",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прямой HTTP-запрос: 200; H1 совпадает, canonical точный, noindex отсутствует. Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/koban.md",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прочитаны MD и точная source-index entry; проверены stable ID, status: approved, countryId и смысл страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q867077",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q867077",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cob%C3%A1n",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Источник географически помещает выбранный объект в country_guatemala."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q867077",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cob%C3%A1n",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Точная статья о выбранном референте. Кобан (Cobán), административный город Альта-Верапаса и база поездок по кофейным плантациям. Q867077 и Wikipedia описывают город вместе с муниципалитетом; основной референт MD — город. Не Copán в Гондурасе и не весь Альта-Верапас."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q867077",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Городская точка P625 15°29′N 90°22′W согласуется с Wikipedia. Не центроид муниципальной территории."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cob%C3%A1n",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Городская точка P625 15°29′N 90°22′W согласуется с Wikipedia. Не центроид муниципальной территории."
+    }
+  ],
+  "reviewNote": null,
+  "location": {
+    "latitude": 15.4833333333,
+    "longitude": -90.3666666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q867077"
+  }
+}

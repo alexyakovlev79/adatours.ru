@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ultima_esperanza_fjord",
+  "stableId": "destination_chile_ultima_esperanza_fjord",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ultima-esperanza-fjord/",
+  "sourceFingerprint": "b2dd301b555d797a444cd912df45e3ba573d398d818e8504c49d3157e71b95cc",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Фьорд Ультима-Эсперанса",
+      "reason": "Фьорд/залив Seno Última Esperanza у Puerto Natales; не одноимённая провинция и не отель The Singular."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q5849865"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/%C3%9Altima_Esperanza_Sound\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID фьорда.",
+      "selected": "3868828"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка акватории, не причал или гостиница.",
+      "selected": "-51.475,-73.10305555555556"
+    },
+    {
+      "field": "relationships.destination_chile_puerto_natales_torres_del_pajne",
+      "probability": 95,
+      "reason": "Страница прямо связывает фьорд с Puerto Natales и продолжением маршрута в парк.",
+      "selected": "destination_chile_puerto_natales_torres_del_pajne"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/ultima-esperanza-fjord/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Фьорд/залив Seno Última Esperanza у Puerto Natales; не одноимённая провинция и не отель The Singular."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/ultima-esperanza-fjord/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5849865",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/%C3%9Altima_Esperanza_Sound",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5849865",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "GeoNames ID фьорда."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5849865",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Опорная точка акватории, не причал или гостиница."
+    },
+    {
+      "field": "relationships.destination_chile_puerto_natales_torres_del_pajne",
+      "sourceUrl": "https://adatours.ru/chile/place/ultima-esperanza-fjord/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страница прямо связывает фьорд с Puerto Natales и продолжением маршрута в парк."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5849865",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Фьорд/залив Seno Última Esperanza у Puerto Natales; не одноимённая провинция и не отель The Singular."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_puerto_natales_torres_del_pajne"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q5849865",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/%C3%9Altima_Esperanza_Sound"
+    },
+    "geonamesId": "3868828"
+  },
+  "location": {
+    "latitude": -51.475,
+    "longitude": -73.10305555555556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5849865"
+  },
+  "reviewNote": "Не добавлен не заявленный программой отдельный круиз по фьорду."
+}

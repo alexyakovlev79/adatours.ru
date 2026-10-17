@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_mali_lima",
+  "stableId": "destination_peru_mali_lima",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/mali-lima-art-museum/",
+  "sourceFingerprint": "bf2d4761eb6e331e80a233dac6d309c7d310260ebc2256e5bd2012b62722a002",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://mali.pe/es/",
+    "wikidataQid": "Q6033913",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lima_Art_Museum"
+    }
+  },
+  "location": {
+    "latitude": -12.06044569,
+    "longitude": -77.03696961,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Lima_Art_Museum"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://mali.pe/es/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/mali-lima-art-museum.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/mali-lima-art-museum/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://mali.pe/es/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6033913",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lima_Art_Museum",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lima_Art_Museum",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://mali.pe/es/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Музей искусства Лимы — MALI",
+      "reason": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://mali.pe/es/",
+      "reason": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q6033913",
+      "reason": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Lima_Art_Museum",
+      "reason": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-12.06044569,-77.03696961",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 98,
+      "selected": "country_peru",
+      "reason": "Museo de Arte de Lima (MALI) — художественный музей во дворце Palacio de la Exposición, Lima, Peru; совпадает музей, не соседний Museo de Arte Italiano и не дворец как самостоятельная сущность. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

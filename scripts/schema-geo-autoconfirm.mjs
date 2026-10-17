@@ -1,5 +1,6 @@
 // Finalizes only a matching successful Pages run or a proven descendant with unchanged GEO entities and receipt.
 import {recordCommit,confirmDeploy,stable} from './schema-geo-core.mjs';
+import {readGitHubJsonFile} from './schema-geo-github-json.mjs';
 export function receiptMatchesPublication(p,r,sha){
  return !!p&&!!r&&p.batchId===r.batchId&&
  ['PUBLISHING','DEPLOYING','PUBLISHED'].includes(p.status)&&
@@ -26,9 +27,7 @@ export async function autoConfirmGeoRelease({token,repository,runId,runSha,log=c
   return raw?JSON.parse(raw):null;
  }
  async function jsonFile(path,ref){
-  const x=await request('/contents/'+path+'?ref='+encodeURIComponent(ref));
-  if(x.encoding!=='base64')throw Error('Unexpected contents encoding');
-  return JSON.parse(Buffer.from(x.content,'base64').toString('utf8'));
+  return readGitHubJsonFile(request,path,ref);
  }
  const run=await request('/actions/runs/'+runId);
  if(run.head_sha!==runSha||run.status!=='completed'||run.conclusion!=='success'||

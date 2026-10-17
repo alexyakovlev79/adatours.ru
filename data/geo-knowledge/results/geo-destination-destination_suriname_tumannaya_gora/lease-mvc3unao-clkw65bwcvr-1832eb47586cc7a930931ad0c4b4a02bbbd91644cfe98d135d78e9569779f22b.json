@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_tumannaya_gora",
+  "stableId": "destination_suriname_tumannaya_gora",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/misty-mountain/",
+  "sourceFingerprint": "ee26945a4640e1d986b22aa2319cfd19c13fff917590ca3070f39834a4ac661b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Туманная гора",
+      "reason": "Misty Mountain — гора в районе Кабалебо, самостоятельный пеший маршрут с возвращением через Charlie Falls; совпадает с Туманной горой MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/misty-mountain.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Misty Mountain — гора в районе Кабалебо, самостоятельный пеший маршрут с возвращением через Charlie Falls; совпадает с Туманной горой MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Misty Mountain — гора в районе Кабалебо, самостоятельный пеший маршрут с возвращением через Charlie Falls; совпадает с Туманной горой MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/misty-mountain/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Точная точка вершины не установлена; координаты курорта не подставлены."
+}

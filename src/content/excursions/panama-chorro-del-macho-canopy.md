@@ -12,11 +12,15 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_panama_vodopad_chorro_del_macho
 destinationName: Водопад Чорро-дель-Мачо
 relatedDestinations:
 - destination_panama_el_valle
 sourceSnapshot: https://drive.google.com/file/d/11SlnwD-NRAp5QXuXQ1s07d7JY4U8cPtq/view?usp=drivesdk
 themes: ["theme_adventure","theme_wildlife"]
+hero:
+  src: /media/excursions/panama-chorro-del-macho-canopy/hero-generated-20261018.webp
+  alt: "Спуск по канату над лесным ущельем у водопада Чорро-дель-Мачо в Панаме"
+  status: approved
 ---

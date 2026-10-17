@@ -11,12 +11,16 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_venezuela_kanajma_i_vodopad_anhel
 destinationName: Канайма и водопад Анхель
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1zEUM_VlxgCnFM0fR0RbCVOS0l_Zrl0PK/view?usp=drivesdk
 themes: ["theme_culture","theme_gastronomy_wine"]
+hero:
+  src: /media/excursions/canaima-pemon-village-visit/hero-generated-20261018.webp
+  alt: "Знакомство с кухней пемон и хлебом касабе в деревне у Канаймы"
+  status: approved
 ---
 
 Во время такой программы возможны музыка и танцы, покупка сувениров и дегустация местной кухни.

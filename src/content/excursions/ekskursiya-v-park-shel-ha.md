@@ -11,11 +11,15 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_mexico_park_shel_ha
 destinationName: Парк Шель-Ха
 sourceSnapshot: https://drive.google.com/file/d/18G8HRqdBeCLdg4zKxhTb8tS7EmXKlpMb/view?usp=drivesdk
 themes: ["theme_wildlife"]
+hero:
+  src: /media/excursions/xel-ha-park-tour/hero-generated-20261018.webp
+  alt: "Сноркелинг в бирюзовой лагуне парка Шель-Ха в Мексике"
+  status: approved
 ---
 
 Шель-Ха находится на Ривьере Майя. В парке можно плавать с маской и трубкой среди тропических рыб, гулять по джунглям пешком, ездить на велосипеде или мини-поезде и наблюдать местную флору и фауну.

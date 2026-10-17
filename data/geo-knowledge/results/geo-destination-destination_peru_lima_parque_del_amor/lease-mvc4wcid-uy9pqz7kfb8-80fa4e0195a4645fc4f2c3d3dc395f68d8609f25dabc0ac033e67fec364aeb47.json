@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_lima_parque_del_amor",
+  "stableId": "destination_peru_lima_parque_del_amor",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/parque-del-amor-lima/",
+  "sourceFingerprint": "6ac76e76cebcddb17c48beab03d5b5b9b1eaa100e7ed67deabfd8905634925a9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q50643122",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Love_Park,_Lima"
+    }
+  },
+  "location": {
+    "latitude": -12.1268,
+    "longitude": -77.0365,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Love_Park,_Lima"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Love_Park,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/parque-del-amor-lima.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/parque-del-amor-lima/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q50643122",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Love_Park,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Love_Park,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Love_Park,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Парк любви в Лиме",
+      "reason": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q50643122",
+      "reason": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Love_Park,_Lima",
+      "reason": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-12.1268,-77.0365",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 98,
+      "selected": "country_peru",
+      "reason": "Parque del Amor, официально Alberto Andrade Carmona Park — общественный парк на малеконе Miraflores, Lima, Peru; не парк Love Park в другой стране и не скульптура El Beso отдельно. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

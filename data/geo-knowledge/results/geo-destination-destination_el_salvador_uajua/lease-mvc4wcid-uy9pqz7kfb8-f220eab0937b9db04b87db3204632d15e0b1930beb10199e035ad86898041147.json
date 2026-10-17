@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_uajua",
+  "stableId": "destination_el_salvador_uajua",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/juayua/",
+  "sourceFingerprint": "6258b82cf791fba835bb352a508d8cd715c9aa329578ee2a43e9d9b63811f0b1",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1006979",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Juay%C3%BAa"
+    }
+  },
+  "location": {
+    "latitude": 13.833,
+    "longitude": -89.733,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Juay%C3%BAa"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Juay%C3%BAa",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/uajua.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/juayua/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1006979",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Juay%C3%BAa",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Juay%C3%BAa",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Juay%C3%BAa",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Уайуа",
+      "reason": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1006979",
+      "reason": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Juay%C3%BAa",
+      "reason": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "13.833,-89.733",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 98,
+      "selected": "country_el_salvador",
+      "reason": "Juayúa — город в Sonsonate, El Salvador, на Ruta de las Flores, известен гастрономическим фестивалем и храмом Cristo Negro; русское Уайуа/Хвайуа соответствует ему. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

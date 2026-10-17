@@ -35730,9 +35730,10 @@
       "name": "Туры через: Национальный парк Лос-Кардонес",
       "url": "/argentina/place/los-cardones-national-park/tour/",
       "countryId": "country_argentina",
-      "availability": "inventory_2026_10_11",
-      "work": "queued",
-      "order": 1890
+      "availability": "no_active_main_tours_2026_10_14",
+      "work": "waiting_for_page",
+      "order": 1890,
+      "note": "2026-10-14: целевой каталог не генерируется: в data/source-index/catalogs/tours.json нет активного тура с основным destinationId destination_argentina_nacionalnyj_park_los_kardones; src/pages/[...path].astro создает /tour/ только при mainTours.length > 0. Исходная страница места существует. SEO-статью не создавать до появления непустого каталога. Проверено автором seo-gpt6-amanda-20261014-465-467-1791994363636."
     },
     {
       "phase": 5,
@@ -35740,9 +35741,10 @@
       "name": "Туры через: Национальный парк Лос-Гласьярес",
       "url": "/argentina/place/los-glaciares-national-park/tour/",
       "countryId": "country_argentina",
-      "availability": "inventory_2026_10_11",
-      "work": "queued",
-      "order": 1891
+      "availability": "no_active_main_tours_2026_10_14",
+      "work": "waiting_for_page",
+      "order": 1891,
+      "note": "2026-10-14: целевой каталог не генерируется: в data/source-index/catalogs/tours.json нет активного тура с основным destinationId destination_argentina_nacionalnyj_park_los_glasyares; src/pages/[...path].astro создает /tour/ только при mainTours.length > 0. Исходная страница места существует. SEO-статью не создавать до появления непустого каталога. Проверено автором seo-gpt6-amanda-20261014-465-467-1791994363636."
     },
     {
       "phase": 5,
@@ -45970,9 +45972,10 @@
       "name": "Туры через: Куэвас-де-ла-Барранка",
       "url": "/el-salvador/place/cuevas-de-la-barranca/tour/",
       "countryId": "country_el_salvador",
-      "availability": "inventory_2026_10_11",
-      "work": "queued",
-      "order": 2571
+      "availability": "temporarily_unavailable",
+      "work": "temporarily_unavailable",
+      "order": 2571,
+      "notes": "Проверка 17.10.2026: в текущем data/source-index/catalogs/tours.json нет активных Tour с этим Destination ID; каталог основных туров не генерируется. Сохранить строку, перепроверить при изменении связей."
     },
     {
       "phase": 5,
@@ -45980,9 +45983,10 @@
       "name": "Туры через: Залив Фонсека (Сальвадор)",
       "url": "/el-salvador/place/gulf-of-fonseca/tour/",
       "countryId": "country_el_salvador",
-      "availability": "inventory_2026_10_11",
-      "work": "queued",
-      "order": 2572
+      "availability": "temporarily_unavailable",
+      "work": "temporarily_unavailable",
+      "order": 2572,
+      "notes": "Проверка 17.10.2026: в текущем data/source-index/catalogs/tours.json нет активных Tour с этим Destination ID; каталог основных туров не генерируется. Сохранить строку, перепроверить при изменении связей."
     },
     {
       "phase": 5,
@@ -46010,9 +46014,10 @@
       "name": "Туры через: Остров Меангера-дель-Гольфо",
       "url": "/el-salvador/place/meanguera-del-golfo-island/tour/",
       "countryId": "country_el_salvador",
-      "availability": "inventory_2026_10_11",
-      "work": "queued",
-      "order": 2575
+      "availability": "temporarily_unavailable",
+      "work": "temporarily_unavailable",
+      "order": 2575,
+      "note": "Проверка 17.10.2026: в data/source-index/catalogs/tours.json нет ни одного действующего Tour с destination_el_salvador_ostrov_meangera_del_golfo; src/pages/[...path].astro создает /tour/ только при mainTours.length>0. Страница каталога отсутствует; SEO-статья не создавалась. История URL сохранена."
     },
     {
       "phase": 5,
@@ -46400,9 +46405,12 @@
       "name": "Можно добавить: Морай",
       "url": "/peru/place/moray/optional-tours/",
       "countryId": "country_peru",
-      "availability": "inventory_2026_10_11",
-      "work": "queued",
-      "order": 2605
+      "availability": "temporarily_unavailable",
+      "work": "temporarily_unavailable",
+      "order": 2605,
+      "workBeforeUnavailable": "queued",
+      "availabilityReason": "17.10.2026: in current src/data/catalog/destinations.json and data/source-index/catalogs/tours.json no active Tour contains destination_peru_moraj as optional (destinations minus routeDestinations); catalogue root is not generated for empty selection. Existing Moray Destination and Excursion remain active.",
+      "availabilityCheckedAt": "2026-10-17"
     },
     {
       "phase": 5,

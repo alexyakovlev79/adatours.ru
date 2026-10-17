@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_old_archbishop_palace",
+  "stableId": "destination_mexico_old_archbishop_palace",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/old-archbishop-palace/",
+  "sourceFingerprint": "81f01625e2d76cf561ed6e5f03f289f0656943125422f2939f6cedf7dab1e31e",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q62018786",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Antiguo_Palacio_del_Arzobispado_(M%C3%A9xico)"
+    }
+  },
+  "location": {
+    "latitude": 19.43368,
+    "longitude": -99.1314,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q62018786"
+  },
+  "alternateNames": [
+    "Antiguo Palacio del Arzobispado",
+    "Old Archbishop's Palace"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Старый дворец архиепископа в Мехико",
+      "reason": "Историческое здание бывшего архиепископского дворца, Moneda 4, Мехико, ныне занято Museo de Arte de la SHCP. Выбран Q62018786 здания; Q1142398 музея отклонен как организация/коллекция в том же здании. Точная eswiki дворца ведет к Q62018786."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q62018786",
+      "reason": "Историческое здание бывшего архиепископского дворца, Moneda 4, Мехико, ныне занято Museo de Arte de la SHCP. Выбран Q62018786 здания; Q1142398 музея отклонен как организация/коллекция в том же здании. Точная eswiki дворца ведет к Q62018786."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Antiguo_Palacio_del_Arzobispado_(M%C3%A9xico)",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Историческое здание бывшего архиепископского дворца, Moneda 4, Мехико, ныне занято Museo de Arte de la SHCP. Выбран Q62018786 здания; Q1142398 музея отклонен как организация/коллекция в том же здании. Точная eswiki дворца ведет к Q62018786."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.43368,-99.1314; feature_point",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Antiguo Palacio del Arzobispado; Old Archbishop's Palace",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://mexicocity.cdmx.gob.mx/venues/shcp-museum-of-art/?lang=en",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Историческое здание бывшего архиепископского дворца, Moneda 4, Мехико, ныне занято Museo de Arte de la SHCP. Выбран Q62018786 здания; Q1142398 музея отклонен как организация/коллекция в том же здании. Точная eswiki дворца ведет к Q62018786."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/old-archbishop-palace/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q62018786",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Историческое здание бывшего архиепископского дворца, Moneda 4, Мехико, ныне занято Museo de Arte de la SHCP. Выбран Q62018786 здания; Q1142398 музея отклонен как организация/коллекция в том же здании. Точная eswiki дворца ведет к Q62018786."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q62018786",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Историческое здание бывшего архиепископского дворца, Moneda 4, Мехико, ныне занято Museo de Arte de la SHCP. Выбран Q62018786 здания; Q1142398 музея отклонен как организация/коллекция в том же здании. Точная eswiki дворца ведет к Q62018786."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q62018786",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q62018786",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://mexicocity.cdmx.gob.mx/venues/shcp-museum-of-art/?lang=en",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Историческое здание бывшего архиепископского дворца, Moneda 4, Мехико, ныне занято Museo de Arte de la SHCP. Выбран Q62018786 здания; Q1142398 музея отклонен как организация/коллекция в том же здании. Точная eswiki дворца ведет к Q62018786."
+}

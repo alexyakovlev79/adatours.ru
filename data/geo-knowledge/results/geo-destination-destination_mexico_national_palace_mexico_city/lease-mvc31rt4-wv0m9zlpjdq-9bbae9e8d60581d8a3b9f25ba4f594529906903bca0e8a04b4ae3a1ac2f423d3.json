@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_national_palace_mexico_city",
+  "stableId": "destination_mexico_national_palace_mexico_city",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/national-palace-mexico-city/",
+  "sourceFingerprint": "f8aa6d6758885b7d6a2c4390b9e44b7e03518d7b9bd7eeb556f20874c9d4fbf2",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1517884",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/National_Palace_(Mexico)"
+    },
+    "officialUrl": "https://www.mexicocity.cdmx.gob.mx/venues/national-palace/"
+  },
+  "location": {
+    "latitude": 19.4325,
+    "longitude": -99.13138888888889,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1517884"
+  },
+  "alternateNames": [
+    "Palacio Nacional",
+    "National Palace"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Национальный дворец Мехико",
+      "reason": "Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1517884",
+      "reason": "Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/National_Palace_(Mexico)",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.mexicocity.cdmx.gob.mx/venues/national-palace/",
+      "reason": "Официальная государственная карточка выбранного объекта. Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.4325,-99.13138888888889; feature_point",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Palacio Nacional; National Palace",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/national-palace/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/national-palace-mexico-city/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1517884",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1517884",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/national-palace/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Официальная государственная карточка выбранного объекта. Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1517884",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1517884",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/national-palace/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Palacio Nacional на восточной стороне Zócalo в Мехико; правительственный дворец с дворами и фресками Diego Rivera. Точная карточка Q1517884, не Palacio de Bellas Artes или соседние дворцы."
+}

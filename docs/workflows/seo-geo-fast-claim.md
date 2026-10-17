@@ -1,14 +1,12 @@
-# Ada Tours — быстрый атомарный резерв пяти SEO/GEO-статей
+# Ada Tours — быстрый атомарный резерв тройки SEO/GEO-статей
 
-Версия 1.4 · 16.10.2026. Рабочий код для команды **«пиши SEO»**. Запускать одним вызовом `functions.exec`.
+Версия 1.5 · 17.10.2026. Исполняемый код **одного цикла** команды «пиши SEO»; общий процесс — §8 `docs/workflows/seo-geo-registry.md`.
 
-Вначале на одном SHA staging читаются `claims.json`, компактный каталог blob SHA и этап 05. Этапы 01–04 пропускаются при неизмененных подтвержденных SHA; при изменении читаются и вновь участвуют в очереди. Если на этапе 05 осталось меньше пяти свободных задач, сразу добрать их из 06, затем 07. **Не ждать чужих резервов.** Внутри этапа `draft` без чужой действующей аренды имеет приоритет перед `queued`. Каждый новый запуск снова начинает с ранней доступной фазы.
+Один авторский чат выполняет **до 10 циклов по максимум 3 статьи**. Перед каждой тройкой вызывается этот код один раз, затем пишутся все статьи и делается **один content-коммит на тройку** (MD + provenance + `prepared` в реестре + удаление своих claims), затем однократная пакетная запись J/K/M в лист «SEO-GEO тексты». **Только после этого** резервируется следующая тройка, без команды «дальше». Этот код выполняет **только резерв**, не пишет статьи, не коммитит готовый контент и не обновляет Sheets.
 
-**Быстрое резервирование:** одна запись **только `data/seo-geo/claims.json`** через `GitHub.update_file` с ожидаемым blob SHA этого файла. Не переписывать мегабайтный `05-tours.json`, не делать отдельные `create_tree`/`create_commit`/`update_ref`: обычные коммиты других авторов не должны конфликтовать с самим резервом. При изменении `claims.json` повторить чтение и выбор не более двух раз. Для неопределенного ответа проверить собственные токены на удаленной ветке, не резервировать вслепую.
+Новый claim действует **60 минут**; долгие работы продлевают только собственные действующие claims через CAS, не переписывая сроки старых 90-минутных резервов других авторов. Выбираются свободные/истекшие `draft`, затем `queued` по `order` внутри фазы; 01–04 проверяются по известным blob SHA, выбор продолжается 05 → 06 → 07. `prepared`/`published`, архив, временно недоступные URL и чужие действующие claims не участвуют. Резерв затрагивает **только `data/seo-geo/claims.json`**: один `GitHub.update_file` с ожидаемым blob SHA; максимум два CAS-повтора. Не менять фазовые JSON при резервировании и не делать Git tree/commit вручную для claim.
 
-`work: queued` с **собственным действующим claim** уже означает «Пишется». При резерве менять статус в фазовом JSON не нужно; при готовой статье одним CAS content-коммитом записать `approved` MD, `work: prepared`, `articlePath` и снять **только свой claim**. Старые чаты с одновременным переводом `draft` и записью claim остаются совместимыми. Claims другого владельца не изменять; отдельную ветку или новую систему резервов не создавать.
-
-Пакет: **до пяти статей**. Аренда каждого URL: **90 минут**, с продлением во время длительного написания; общего ограничения на время подготовки пяти статей нет. После подтвержденного `reserved` немедленно писать первую статью. Проверка Google Sheets, `main`, Actions, исторических коммитов и соседних статей в захват не входит. При `Too many requests` не считать резерв успешным, а повторить только быстрый вызов после восстановления доступа.
+`runId` создается **один раз на авторский чат** (код вернет его после первого вызова), `cycle` меняется от 1 до 10. Для следующих циклов вызвать `fastClaimSeoBatch({runId:"<первый runId>",cycle:2})`, затем 3 и так далее. При неопределенном ответе **повторить тот же runId и cycle**, сначала проверить собственные `ownerId`/`batchId` в удаленных claims. Прежний живой claim этого цикла возвращается как `resumed`, не создавая еще три резерва. После завершенного content-коммита не вызывать снова тот же номер цикла: сначала проверить remote SHA и статус своей тройки. При `empty` остановить работу досрочно; при `lease_expired` не заявлять владение URL. Ни `main`, ни Google Sheets, ни Actions при захвате не читать.
 
 ```javascript
 function selectSeoRows(file, claims, now, limit) {
@@ -26,7 +24,7 @@ function selectSeoRows(file, claims, now, limit) {
   ).slice(0, limit);
 }
 
-async function fastClaimSeoBatch({ dryRun = false } = {}) {
+async function fastClaimSeoBatch({ dryRun = false, runId, cycle = 1 } = {}) {
   const repository = "alexyakovlev79/adatours.ru";
   const branch = "seo-geo/staging";
   const api = `https://api.github.com/repos/${repository}`;
@@ -39,8 +37,13 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
     "04-country-interest-vip": "ec81400cbfca4168db5f03fdb46730e860cdf028"
   };
   const begun = Date.now();
-  const ownerId = `seo-fast-${new Date().toISOString().replace(/\W/g,"")}-${Math.random().toString(36).slice(2,10)}`;
-  const batchId = `seo-batch-${ownerId}`;
+  if (!Number.isInteger(cycle) || cycle < 1 || cycle > 10)
+    throw new Error("SEO/GEO cycle must be an integer from 1 to 10");
+  const resolvedRunId = runId || `seo-run-${new Date().toISOString().replace(/\\W/g,"")}-${Math.random().toString(36).slice(2,10)}`;
+  if (!/^[a-zA-Z0-9_-]{8,95}$/.test(resolvedRunId))
+    throw new Error("Invalid SEO/GEO runId");
+  const ownerId = `seo-trio-${resolvedRunId}`;
+  const batchId = `seo-batch-${resolvedRunId}-c${cycle}`;
   const getHead = async () => JSON.parse((await tools.mcp__GitHub__fetch({
     url: `${api}/git/ref/heads/${branch}`
   })).result.content).object.sha;
@@ -63,14 +66,31 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
       tools.mcp__GitHub__fetch({ url: `${api}/contents/data/seo-geo/registry?ref=${head}` }),
       readJson(registryPath("05-tours"))
     ]);
-    if (claimFile.claimTimeoutMinutes !== 90 || claimFile.writerBatchSize !== 5)
-      throw new Error("SEO/GEO staging settings must be 5 articles / 90 minutes");
+    if (claimFile.claimTimeoutMinutes !== 60 || claimFile.writerBatchSize !== 3)
+      throw new Error("SEO/GEO staging settings must be 3 articles / 60 minutes");
     const fileShas = new Map(JSON.parse(directory.result.content).map(row => [row.name, row.sha]));
     const now = Date.now();
+    const mine = Object.entries(claimFile.claims || {}).filter(([, lease]) =>
+      lease.ownerId === ownerId && lease.batchId === batchId);
+    if (mine.length) {
+      const expired = mine.filter(([, lease]) =>
+        !Number.isFinite(Date.parse(lease.expiresAt)) || Date.parse(lease.expiresAt) <= now);
+      if (expired.length) return {status:"lease_expired",runId:resolvedRunId,cycle,
+        ownerId,batchId,urls:expired.map(([url])=>url),head};
+      return {status:"resumed",runId:resolvedRunId,cycle,ownerId,batchId,head,
+        selected:mine.map(([url,lease])=>({url,order:lease.order,
+          expiresAt:lease.expiresAt,generation:lease.generation})),
+        elapsedMs:Date.now()-begun};
+    }
+    const unfinished = Object.values(claimFile.claims || {}).some(lease =>
+      lease.ownerId === ownerId && lease.batchId !== batchId &&
+      Date.parse(lease.expiresAt) > now);
+    if (unfinished) return {status:"previous_cycle_incomplete",
+      runId:resolvedRunId,cycle,ownerId,head};
     const picked = [];
     const checkedPhases = [];
     const skippedPublished = [];
-    const size = 5;
+    const size = 3;
     for (const name of phases) {
       if (picked.length === size) break;
       const sha = fileShas.get(`${name}.json`);
@@ -87,7 +107,7 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
       for (const record of candidates) picked.push({record, phase});
     }
     if (!picked.length) return {
-      status:"empty", head, checkedPhases, skippedPublished,
+      status:"empty", runId:resolvedRunId, cycle, head, checkedPhases, skippedPublished,
       elapsedMs:Date.now()-begun
     };
     const selected = picked.map(({record,phase})=>({
@@ -95,11 +115,11 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
       articlePath:record.articlePath||null
     }));
     if (dryRun) return {
-      status:"dry_run",head,selected,checkedPhases,skippedPublished,
+      status:"dry_run",runId:resolvedRunId,cycle,head,selected,checkedPhases,skippedPublished,
       elapsedMs:Date.now()-begun
     };
     const stamp = new Date(now).toISOString();
-    const expiresAt = new Date(now + 90*60*1000).toISOString();
+    const expiresAt = new Date(now + 60*60*1000).toISOString();
     for (const {record} of picked) {
       const old = claimFile.claims[record.url];
       // Ownership is recorded in claims; work stays queued until prepared.
@@ -116,7 +136,7 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
         message: `seo: reserve ${selected.map(x => x.order).join("-")} (claims CAS)`
       })).result;
       if (!written.commit_sha) throw new Error("No commit SHA returned");
-      return {status:"reserved",commit:written.commit_sha,selected,
+      return {status:"reserved",runId:resolvedRunId,cycle,ownerId,batchId,commit:written.commit_sha,selected,
         checkedPhases,skippedPublished,elapsedMs:Date.now()-begun};
     } catch (error) {
       const observedHead = await getHead();
@@ -128,7 +148,7 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
       })).result.content).claims;
       if (selected.every(x => latest[x.url]?.ownerId === ownerId &&
         latest[x.url]?.batchId === batchId))
-        return {status:"reserved",verifiedAtHead:observedHead,selected,
+        return {status:"reserved",runId:resolvedRunId,cycle,ownerId,batchId,verifiedAtHead:observedHead,selected,
           checkedPhases,skippedPublished,elapsedMs:Date.now()-begun};
       if (/too many requests|rate limit|resource.exhausted/i.test(String(error)))
         throw error;
@@ -137,7 +157,8 @@ async function fastClaimSeoBatch({ dryRun = false } = {}) {
   }
 }
 
-text(JSON.stringify(await fastClaimSeoBatch()));
+// После первого ответа сохранить runId; для циклов 2–10 указать его и новый cycle.
+text(JSON.stringify(await fastClaimSeoBatch({cycle:1})));
 ```
 
-Для диагностики без записи использовать `fastClaimSeoBatch({dryRun:true})` вместо обычного вызова. `selected[].phase` и `checkedPhases` показывают этапы, `elapsedMs` — только инструментальное время.
+Для диагностики без записи использовать `fastClaimSeoBatch({dryRun:true,runId,cycle})`. `selected[].phase` и `checkedPhases` показывают этапы, `elapsedMs` — инструментальное время. `status: resumed` означает уже существующий собственный резерв этой тройки; `status: previous_cycle_incomplete` требует завершить прежнюю тройку.

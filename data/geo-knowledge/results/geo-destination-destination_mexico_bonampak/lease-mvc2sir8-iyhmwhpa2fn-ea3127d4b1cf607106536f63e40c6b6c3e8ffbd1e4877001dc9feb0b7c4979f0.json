@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_bonampak",
+  "stableId": "destination_mexico_bonampak",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/bonampak/",
+  "sourceFingerprint": "f54294dcb798330877fdee6f8bce3620b9056bbe17d76cae91e4a537dc2029f3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Place",
+  "external": {
+    "wikidataQid": "Q605455",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Bonampak"
+    },
+    "officialUrl": "https://lugares.inah.gob.mx/es/node/4331"
+  },
+  "location": {
+    "latitude": 16.704,
+    "longitude": -91.065,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q605455"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/bonampak.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Археологическая зона Bonampak в Ocosingo, Chiapas, Selva Lacandona, с майянскими настенными росписями. Не весь регион Chiapas и не соседний Yaxchilán."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/bonampak/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4331",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Археологическая зона Bonampak в Ocosingo, Chiapas, Selva Lacandona, с майянскими настенными росписями. Не весь регион Chiapas и не соседний Yaxchilán."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4331",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Археологическая зона Bonampak в Ocosingo, Chiapas, Selva Lacandona, с майянскими настенными росписями. Не весь регион Chiapas и не соседний Yaxchilán."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4331",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q605455",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "P625 точной карточки археологического комплекса; representative для зоны, не туристический въезд или конкретный зал фресок."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q605455",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены QID,P31,P17,P131,P625 и sitelinks. Археологическая зона Bonampak в Ocosingo, Chiapas, Selva Lacandona, с майянскими настенными росписями. Не весь регион Chiapas и не соседний Yaxchilán."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bonampak",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная EN-статья о выбранном объекте соответствует sitelink Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4331",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Официальный сайт святилища либо точная страница археологического объекта у управляющего INAH."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Бонампак",
+      "reason": "Археологическая зона Bonampak в Ocosingo, Chiapas, Selva Lacandona, с майянскими настенными росписями. Не весь регион Chiapas и не соседний Yaxchilán."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "Place",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "16.704, -91.065",
+      "reason": "P625 точной карточки археологического комплекса; representative для зоны, не туристический въезд или конкретный зал фресок."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q605455",
+      "reason": "Археологическая зона Bonampak в Ocosingo, Chiapas, Selva Lacandona, с майянскими настенными росписями. Не весь регион Chiapas и не соседний Yaxchilán."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Bonampak",
+      "reason": "Археологическая зона Bonampak в Ocosingo, Chiapas, Selva Lacandona, с майянскими настенными росписями. Не весь регион Chiapas и не соседний Yaxchilán."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://lugares.inah.gob.mx/es/node/4331",
+      "reason": "Официальный источник именно выбранного объекта."
+    }
+  ]
+}

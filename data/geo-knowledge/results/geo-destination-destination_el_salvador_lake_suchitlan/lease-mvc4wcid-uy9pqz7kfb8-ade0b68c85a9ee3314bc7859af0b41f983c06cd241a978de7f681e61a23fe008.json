@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_lake_suchitlan",
+  "stableId": "destination_el_salvador_lake_suchitlan",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/lake-suchitlan/",
+  "sourceFingerprint": "ba17450ebd0519e761d9e879eef115191c0779eada6095e40bc7be3c99d86521",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q30665778",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cerr%C3%B3n_Grande_Reservoir"
+    }
+  },
+  "location": {
+    "latitude": 14,
+    "longitude": -89.03056,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Cerr%C3%B3n_Grande_Reservoir"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cerr%C3%B3n_Grande_Reservoir",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/lake-suchitlan.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/lake-suchitlan/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q30665778",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cerr%C3%B3n_Grande_Reservoir",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cerr%C3%B3n_Grande_Reservoir",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cerr%C3%B3n_Grande_Reservoir",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Сучитлан",
+      "reason": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q30665778",
+      "reason": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Cerr%C3%B3n_Grande_Reservoir",
+      "reason": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "14,-89.03056",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 98,
+      "selected": "country_el_salvador",
+      "reason": "Lake Suchitlán — водохранилище Cerrón Grande на реке Lempa в El Salvador; в источнике приведены оба имени, исключены одноимённые поселения Мексики. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

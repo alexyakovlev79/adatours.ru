@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_monserrate_bogota",
+  "stableId": "destination_colombia_monserrate_bogota",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/monserrate-bogota/",
+  "sourceFingerprint": "54948c69d813bcb666749275e9735da9789ba62c5821e1c7f4c0eea5a6cb4b76",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Монсеррат в Боготе",
+      "reason": "MD: холм Monserrate над Bogotá, панорама столицы и подъём. Точная статья горы и официальный Cerro de Monserrate подтверждают объект; церковь на вершине отдельна."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_colombia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Точный холм Monserrate в Bogotá, не монастырь Montserrat в Испании и не одноимённый дворец.",
+      "selected": "Q152073"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Статья горы над центром Bogotá.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Monserrate\"}"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "reason": "Официальный ресурс Cerro de Monserrate, посвящён именно посещению этого холма.",
+      "selected": "https://monserrate.co/en/"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "Точка вершины Monserrate, не нижняя станция канатной дороги.",
+      "selected": "4.60583,-74.05639"
+    },
+    {
+      "field": "relationships.destination_colombia_bogota",
+      "probability": 99,
+      "reason": "MD явно связывает холм с Bogotá; статья указывает City Bogotá.",
+      "selected": "destination_colombia_bogota"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/monserrate-bogota/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: холм Monserrate над Bogotá, панорама столицы и подъём. Точная статья горы и официальный Cerro de Monserrate подтверждают объект; церковь на вершине отдельна."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://adatours.ru/colombia/place/monserrate-bogota/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q152073",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точный холм Monserrate в Bogotá, не монастырь Montserrat в Испании и не одноимённый дворец."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monserrate",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Статья горы над центром Bogotá."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://monserrate.co/en/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Официальный ресурс Cerro de Monserrate, посвящён именно посещению этого холма."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monserrate",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точка вершины Monserrate, не нижняя станция канатной дороги."
+    },
+    {
+      "field": "relationships.destination_colombia_bogota",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Monserrate",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "MD явно связывает холм с Bogotá; статья указывает City Bogotá."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://monserrate.co/en/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "MD: холм Monserrate над Bogotá, панорама столицы и подъём. Точная статья горы и официальный Cerro de Monserrate подтверждают объект; церковь на вершине отдельна."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_colombia_bogota"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q152073",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Monserrate"
+    },
+    "officialUrl": "https://monserrate.co/en/"
+  },
+  "location": {
+    "latitude": 4.60583,
+    "longitude": -74.05639,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Monserrate"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vulkan_pasochoa",
+  "stableId": "destination_ecuador_vulkan_pasochoa",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/pasochoa-volcano/",
+  "sourceFingerprint": "34f03563fe34e0926e647be1cf6e68b67eca8db4b886b4dda3f81e8200cb2e49",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Вулкан Пасочоа",
+      "reason": "MD: вулканический район Pasochoa у Quito и треккинг. Основной именованный референт — вулкан Pasochoa, не отдельная организация."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "MD: вулканический район Pasochoa у Quito и треккинг. Основной именованный референт — вулкан Pasochoa, не отдельная организация.",
+      "selected": "Q2648452"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья подтверждённого географического объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Pasochoa\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координата именованного вулкана; точка вершины, не место начала прогулки.",
+      "selected": "-0.433,-78.483"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/pasochoa-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: вулканический район Pasochoa у Quito и треккинг. Основной именованный референт — вулкан Pasochoa, не отдельная организация."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/pasochoa-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2648452",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: вулканический район Pasochoa у Quito и треккинг. Основной именованный референт — вулкан Pasochoa, не отдельная организация."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pasochoa",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точная статья подтверждённого географического объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pasochoa",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Координата именованного вулкана; точка вершины, не место начала прогулки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pasochoa",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: вулканический район Pasochoa у Quito и треккинг. Основной именованный референт — вулкан Pasochoa, не отдельная организация."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2648452",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pasochoa"
+    }
+  },
+  "location": {
+    "latitude": -0.433,
+    "longitude": -78.483,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Pasochoa"
+  }
+}

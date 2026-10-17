@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_manta",
+  "stableId": "destination_ecuador_manta",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/manta/",
+  "sourceFingerprint": "eb0732fdac2006b73ddd77e81aa2b2a9f4dcb37767b48b1b92f57954d131e98b",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Манта",
+      "reason": "Manta / San Pablo de Manta — портовый город Manabí Эквадора; не порт как отдельный объект и не кантон."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q990738",
+      "reason": "Manta / San Pablo de Manta — портовый город Manabí Эквадора; не порт как отдельный объект и не кантон."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Manta%2C_Ecuador",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3654410",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-0.95002222222222,-80.7162]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/manta/",
+      "checkedAt": "2026-10-17T08:23:01.532Z",
+      "note": "Manta / San Pablo de Manta — портовый город Manabí Эквадора; не порт как отдельный объект и не кантон."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/manta.md",
+      "checkedAt": "2026-10-17T08:23:01.532Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q990738",
+      "checkedAt": "2026-10-17T08:23:01.532Z",
+      "note": "Manta / San Pablo de Manta — портовый город Manabí Эквадора; не порт как отдельный объект и не кантон."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q990738",
+      "checkedAt": "2026-10-17T08:23:01.532Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q990738",
+      "checkedAt": "2026-10-17T08:23:01.532Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q990738",
+      "checkedAt": "2026-10-17T08:23:01.532Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q990738",
+      "checkedAt": "2026-10-17T08:23:01.532Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q990738",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Manta%2C_Ecuador"
+    },
+    "geonamesId": "3654410"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -0.95002222222222,
+    "longitude": -80.7162,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q990738"
+  },
+  "reviewNote": null
+}

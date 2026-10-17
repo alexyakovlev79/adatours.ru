@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_rorajma",
+  "stableId": "destination_venezuela_rorajma",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/mount-roraima/",
+  "sourceFingerprint": "a22bcdaa72f972563d8531fad79cb17ac3ab50b3645feffb3633389f72db8a3a",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q4777",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mount_Roraima"
+    },
+    "geonamesId": "3628972"
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Рорайма",
+      "reason": "Именованная столовая гора Mount Roraima, маршрут с венесуэльской стороны. Не штат Рорайма в Бразилии."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q4777",
+      "reason": "Именованная столовая гора Mount Roraima, маршрут с венесуэльской стороны. Не штат Рорайма в Бразилии."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Mount_Roraima\"}",
+      "reason": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3628972",
+      "reason": "P1566 выбранного Wikidata-объекта, не идентификатор соседнего одноименного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "5.141944444444444,-60.76416666666667; feature_point",
+      "reason": "P625 горы: именованная опорная точка массива, не геометрический центр всего плато и не исходная точка трека."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Mount Roraima; Monte Roraima",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 98,
+      "selected": "relatedPlace country_venezuela",
+      "reason": "Гора включает венесуэльскую часть, но пересекает границы трех стран."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4777",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованная столовая гора Mount Roraima, маршрут с венесуэльской стороны. Не штат Рорайма в Бразилии."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/mount-roraima/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4777",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованная столовая гора Mount Roraima, маршрут с венесуэльской стороны. Не штат Рорайма в Бразилии."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4777",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4777",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P1566 выбранного Wikidata-объекта, не идентификатор соседнего одноименного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4777",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P625 горы: именованная опорная точка массива, не геометрический центр всего плато и не исходная точка трека."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4777",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4777",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Гора включает венесуэльскую часть, но пересекает границы трех стран."
+    }
+  ],
+  "alternateNames": [
+    "Mount Roraima",
+    "Monte Roraima"
+  ],
+  "relationships": [
+    {
+      "type": "relatedPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "reviewNote": "Трансграничная гора: Wikidata P17 Venezuela/Brazil/Guyana. Связь с Венесуэлой relatedPlace; не утверждается полное нахождение массива только в одной стране.",
+  "location": {
+    "latitude": 5.141944444444444,
+    "longitude": -60.76416666666667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4777"
+  }
+}

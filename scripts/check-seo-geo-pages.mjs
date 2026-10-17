@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, relative, dirname, sep } from 'node:path';
 import { parseSeoGeoArticle, seoGeoArticleFile } from '../src/lib/seo-geo.mjs';
+import { parseFragment } from 'parse5';
 import { isArchivedPath } from '../src/lib/archive.mjs';
 
 const root = join(process.cwd(), 'data', 'seo-geo', 'articles');
@@ -51,7 +52,12 @@ for (const file of articles) {
       if (html.split(marker).length !== 2) throw new Error('Expected exactly one built SEO/GEO block: ' + article.targetPath);
       const block = html.slice(html.indexOf(marker));
       const section = block.slice(0, block.indexOf('</section>'));
-      if (!section.includes('aria-expanded=') || !section.includes(article.buttonLabel)) {
+      // Astro escapes &, quotes and other HTML characters in the visible label.
+      // Compare the decoded text node, not the serialized HTML entity syntax.
+      const labelHtml = section.match(/<span\\b[^>]*\\bdata-seo-geo-label\\b[^>]*>([\\s\\S]*?)<\\/span>/i)?.[1];
+      const labelText = labelHtml == null ? null : parseFragment(labelHtml).childNodes
+        .filter((node) => node.nodeName === '#text').map((node) => node.value).join('');
+      if (!section.includes('aria-expanded=') || labelText !== article.buttonLabel) {
         throw new Error('SEO/GEO toggle missing from HTML: ' + article.targetPath);
       }
       if (!section.includes('<h2') || section.includes('<img') || /\{\{[^}]+\}\}/.test(section)) {

@@ -23,6 +23,25 @@ test('collector reserves ten tasks, not five, and retries keep the original leas
  const cap=c.claim({jobs},fresh(),{...args,limit:100,batchSize:100});
  assert.equal(cap.length,10);
 });
+test('one collector chat completes 50 passports via five short ten-job leases',()=>{
+ const jobs=Array.from({length:50},(_,i)=>({...job,jobId:'chat_'+i,stableId:'destination_'+i,sourceOrder:i+1}));
+ const s=fresh(),seen=new Set();
+ for(let part=0;part<5;part++){
+  const chunk=c.claim({jobs},s,{...args,limit:10,batchSize:10});
+  assert.equal(chunk.length,10);
+  assert.equal(Object.keys(s.leases).length,10);
+  for(const item of chunk){
+   assert.equal(seen.has(item.jobId),false);
+   const r={...result,jobId:item.jobId,stableId:item.stableId,canonicalPath:item.url,sourceFingerprint:item.sourceFingerprint};
+   c.complete({jobs},s,{...args,result:r});
+   seen.add(item.jobId);
+  }
+  assert.equal(Object.keys(s.leases).length,0);
+ }
+ assert.equal(seen.size,50);
+ assert.equal(Object.values(s.jobs).filter(x=>x.status==='READY').length,50);
+ assert.deepEqual(c.claim({jobs},s,{...args,limit:10,batchSize:10}),[]);
+});
 test('two workers select disjoint jobs; retry returns original claim',()=>{const s=fresh();const a=c.claim(queue,s,args);const b=c.claim(queue,s,{...args,ownerId:'worker_234567',token:'token_2345678901234567'});assert.notEqual(a[0].jobId,b[0].jobId);assert.equal(c.claim(queue,s,args)[0].jobId,a[0].jobId);});
 test('expired token is fenced after reassignment',()=>{const s=fresh();c.claim(queue,s,args);c.claim(queue,s,{...args,ownerId:'worker_234567',token:'token_2345678901234567',now:args.now+91*60000});assert.throws(()=>c.complete(queue,s,{...args,now:args.now+91*60000,result}),/Lease/);});
 test('cannot renew an expired lease',()=>{const s=fresh();c.claim(queue,s,args);assert.throws(()=>c.renew(s,{...args,jobId:job.jobId,now:args.now+91*60000}),/Lease/);});

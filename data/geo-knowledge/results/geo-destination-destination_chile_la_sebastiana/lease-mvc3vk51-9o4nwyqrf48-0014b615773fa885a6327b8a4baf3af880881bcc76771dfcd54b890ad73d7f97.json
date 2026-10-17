@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_la_sebastiana",
+  "stableId": "destination_chile_la_sebastiana",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/la-sebastiana/",
+  "sourceFingerprint": "7fda4ec6e2161812caf07aad058e554a7edc9e10497bf0b7fb2b0833f16c96c6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5965210"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5965210",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Дом-музей Pablo Neruda La Sebastiana в Valparaíso, Чили; не дома La Chascona/Isla Negra и не одноименная местность Колумбии."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/la-sebastiana.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/la-sebastiana/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5965210",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Дом-музей Pablo Neruda La Sebastiana в Valparaíso, Чили; не дома La Chascona/Isla Negra и не одноименная местность Колумбии."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5965210",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5965210",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Дом-музей Pablo Neruda La Sebastiana в Valparaíso, Чили; не дома La Chascona/Isla Negra и не одноименная местность Колумбии.",
+      "selected": "Дом-музей Ла-Себастьяна"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Дом-музей Pablo Neruda La Sebastiana в Valparaíso, Чили; не дома La Chascona/Isla Negra и не одноименная местность Колумбии.",
+      "selected": "Q5965210"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.05375,-71.62276111]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.05375,
+    "longitude": -71.62276111,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5965210"
+  }
+}

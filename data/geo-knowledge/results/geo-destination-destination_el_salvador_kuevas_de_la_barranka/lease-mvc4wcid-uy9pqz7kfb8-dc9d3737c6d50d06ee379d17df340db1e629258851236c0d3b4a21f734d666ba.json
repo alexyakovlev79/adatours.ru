@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_kuevas_de_la_barranka",
+  "stableId": "destination_el_salvador_kuevas_de_la_barranka",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/cuevas-de-la-barranca/",
+  "sourceFingerprint": "4ef471f4ef336dba15f27ac3eb194c392bd5e2d8942257f491c8d58050e03bf5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://mayanescapes.com/destinations/golfo-de-fonseca/?lang=es",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Cuevas de la Barranca — именованная группа прибрежных пещер в лодочных экскурсиях по Golfo de Fonseca, La Unión, El Salvador, рядом с маршрутами Punta Chiquirín; это соответствует MD, не пещеры San Diego в Metapán."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cuevas-de-la-barranca.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/cuevas-de-la-barranca/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://mayanescapes.com/destinations/golfo-de-fonseca/?lang=es",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Cuevas de la Barranca — именованная группа прибрежных пещер в лодочных экскурсиях по Golfo de Fonseca, La Unión, El Salvador, рядом с маршрутами Punta Chiquirín; это соответствует MD, не пещеры San Diego в Metapán. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 92,
+      "selected": "Куэвас-де-ла-Барранка",
+      "reason": "Cuevas de la Barranca — именованная группа прибрежных пещер в лодочных экскурсиях по Golfo de Fonseca, La Unión, El Salvador, рядом с маршрутами Punta Chiquirín; это соответствует MD, не пещеры San Diego в Metapán."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 98,
+      "selected": "country_el_salvador",
+      "reason": "Cuevas de la Barranca — именованная группа прибрежных пещер в лодочных экскурсиях по Golfo de Fonseca, La Unión, El Salvador, рядом с маршрутами Punta Chiquirín; это соответствует MD, не пещеры San Diego в Metapán. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Группа пещер установлена по точному названию и морскому маршруту; отдельные QID/координаты не подтверждены."
+}

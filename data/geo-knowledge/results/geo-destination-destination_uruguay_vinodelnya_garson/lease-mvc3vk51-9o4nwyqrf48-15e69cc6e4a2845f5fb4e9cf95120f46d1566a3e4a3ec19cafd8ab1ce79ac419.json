@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_vinodelnya_garson",
+  "stableId": "destination_uruguay_vinodelnya_garson",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/garzon-winery/",
+  "sourceFingerprint": "cb22c96cdd49bff1a1ec8195185f55e8d98d7ccc16282bc9a67e217bb685df7c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://bodegagarzon.com/en/winery/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://bodegagarzon.com/en/winery/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Bodega Garzón в Maldonado, Уругвай: винодельня на маршруте из Punta del Este, не поселок Garzón."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/garzon-winery.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/uruguay/place/garzon-winery/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://bodegagarzon.com/en/winery/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Bodega Garzón в Maldonado, Уругвай: винодельня на маршруте из Punta del Este, не поселок Garzón."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://bodegagarzon.com/wp-content/uploads/2017/12/BG_Map-ENG.pdf",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "GPS официальной схемы проезда, опорная точка хозяйства; не заявляется геометрическим центром виноградников."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://bodegagarzon.com/en/winery/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Bodega Garzón в Maldonado, Уругвай: винодельня на маршруте из Punta del Este, не поселок Garzón.",
+      "selected": "Винодельня Гарсон"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "reason": "Bodega Garzón в Maldonado, Уругвай: винодельня на маршруте из Punta del Este, не поселок Garzón.",
+      "selected": "https://bodegagarzon.com/en/winery/"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "GPS официальной схемы проезда, опорная точка хозяйства; не заявляется геометрическим центром виноградников.",
+      "selected": "[-34.569586,-54.629049]"
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_uruguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -34.569586,
+    "longitude": -54.629049,
+    "pointRole": "representative",
+    "coordinateSource": "https://bodegagarzon.com/wp-content/uploads/2017/12/BG_Map-ENG.pdf"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_mamej",
+  "stableId": "destination_colombia_mamej",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/el-mamey/",
+  "sourceFingerprint": "4c0f9a5a2bdf32b9eb216249617809c2ca4e53fbfab046b1453529b45be0e89f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "village",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 2637875729
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_colombia_zateryannyj_gorod"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/el-mamey/",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "Прочитаны текущие MD и source-index на main 989a35d14eab8a816010b3c5c40da68f62d230bb; stable ID/countryId/URL/тип согласованы. Публичный URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://indetur.gov.co/wp-content/uploads/2023/09/Inventario-Atractivos-No-Tradicionales-Teyuna.pdf",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "Внешний источник подтверждает название, географию и фактический объект. Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://indetur.gov.co/wp-content/uploads/2023/09/Inventario-Atractivos-No-Tradicionales-Teyuna.pdf",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "Класс по фактическому именованному объекту, а не общей категории destinationType в MD. Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://indetur.gov.co/wp-content/uploads/2023/09/Inventario-Atractivos-No-Tradicionales-Teyuna.pdf",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "Местоположение в Колумбии подтверждено источником и countryId текущего MD/source-index."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/2637875729",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "Прочитан первичный OSM API node2637875729: name Machete, alt_name Machete Pelao, place hamlet, is_in Santa Marta;Magdalena;Colombia."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://indetur.gov.co/wp-content/uploads/2023/09/Inventario-Atractivos-No-Tradicionales-Teyuna.pdf",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "INDETUR связывает El Mamey и Machete; DMS-точка совпадает с OSM примерно в 80 м."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://indetur.gov.co/wp-content/uploads/2023/09/Inventario-Atractivos-No-Tradicionales-Teyuna.pdf",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "Выбрана одна опубликованная точка с указанной ролью; координаты не усреднялись. Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "relationships.destination_colombia_zateryannyj_gorod",
+      "sourceUrl": "https://indetur.gov.co/wp-content/uploads/2023/09/Inventario-Atractivos-No-Tradicionales-Teyuna.pdf",
+      "checkedAt": "2026-10-17T07:06:07.729Z",
+      "note": "INDETUR описывает Machete Pelao и Mutanzhi как самостоятельные места пешеходного маршрута к Тейуне (Ciudad Perdida)."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "village",
+      "reason": "Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "village",
+      "reason": "Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна объекта совпадает с текущими MD/source-index и внешней географией."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "{\"type\":\"node\",\"id\":2637875729}",
+      "reason": "Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "11.18276111111111,-73.82917499999999",
+      "reason": "Роль: settlement_center. Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен."
+    },
+    {
+      "field": "relationships.destination_colombia_zateryannyj_gorod",
+      "probability": 99,
+      "selected": "destination_colombia_zateryannyj_gorod",
+      "reason": "Обе деревни — самостоятельные поселения на маршруте; не части археологических руин."
+    }
+  ],
+  "reviewNote": "Мамей = El Mamey/Machete/Machete Pelao, деревня начала пешего маршрута Тейуна в округе Санта-Марта, Magdalena. INDETUR публикует точку Мачете-Пелао 11°10′57.94″N 73°49′45.03″W. OSM node2637875729: place=hamlet, name=Machete, alt_name=Machete Pelao, is_in Colombia;Magdalena;Santa Marta; согласуется примерно в 80 м. Одноимённые места в Мексике, Доминикане, Кубе и Cesar исключены. Точный QID/GeoNames не установлен.",
+  "location": {
+    "latitude": 11.18276111111111,
+    "longitude": -73.82917499999999,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://indetur.gov.co/wp-content/uploads/2023/09/Inventario-Atractivos-No-Tradicionales-Teyuna.pdf"
+  }
+}

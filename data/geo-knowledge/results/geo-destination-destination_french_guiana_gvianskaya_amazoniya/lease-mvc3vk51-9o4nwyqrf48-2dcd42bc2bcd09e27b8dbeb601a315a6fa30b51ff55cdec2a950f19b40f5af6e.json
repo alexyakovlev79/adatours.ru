@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_french_guiana_gvianskaya_amazoniya",
+  "stableId": "destination_french_guiana_gvianskaya_amazoniya",
+  "kind": "destination",
+  "canonicalPath": "/french-guiana/place/french-guiana-amazon-rainforest/",
+  "sourceFingerprint": "eeeaec4dbf71e3804a15989a1a14113cc386904d99a592cb1f63cf65474cb08c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q665459",
+    "officialUrl": "https://www.parc-amazonien-guyane.fr/fr/des-decouvertes/quest-ce-que-le-parc-amazonien-de-guyane"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_french_guiana"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.parc-amazonien-guyane.fr/fr/des-decouvertes/quest-ce-que-le-parc-amazonien-de-guyane",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "MD прямо описывает Parc amazonien de Guyane, национальный парк 2007 года во Французской Гвиане; не весь амазонский лес."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/gvianskaya-amazoniya.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/french-guiana-amazon-rainforest/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q665459",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "MD прямо описывает Parc amazonien de Guyane, национальный парк 2007 года во Французской Гвиане; не весь амазонский лес."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.parc-amazonien-guyane.fr/fr/des-decouvertes/quest-ce-que-le-parc-amazonien-de-guyane",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "MD прямо описывает Parc amazonien de Guyane, национальный парк 2007 года во Французской Гвиане; не весь амазонский лес."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q665459",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Опорная точка парка P625, не вход и не административный офис."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "sourceUrl": "https://www.parc-amazonien-guyane.fr/fr/des-decouvertes/quest-ce-que-le-parc-amazonien-de-guyane",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "MD прямо описывает Parc amazonien de Guyane, национальный парк 2007 года во Французской Гвиане; не весь амазонский лес.",
+      "selected": "Гвианская Амазония"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "MD прямо описывает Parc amazonien de Guyane, национальный парк 2007 года во Французской Гвиане; не весь амазонский лес.",
+      "selected": "Q665459"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "reason": "MD прямо описывает Parc amazonien de Guyane, национальный парк 2007 года во Французской Гвиане; не весь амазонский лес.",
+      "selected": "https://www.parc-amazonien-guyane.fr/fr/des-decouvertes/quest-ce-que-le-parc-amazonien-de-guyane"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка парка P625, не вход и не административный офис.",
+      "selected": "[2.83833333,-53.77222222]"
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_french_guiana"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": 2.83833333,
+    "longitude": -53.77222222,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q665459"
+  }
+}

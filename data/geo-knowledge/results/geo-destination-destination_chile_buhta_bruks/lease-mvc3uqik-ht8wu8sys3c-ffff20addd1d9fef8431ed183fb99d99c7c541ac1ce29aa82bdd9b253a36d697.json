@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_buhta_bruks",
+  "stableId": "destination_chile_buhta_bruks",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/brookes-bay/",
+  "sourceFingerprint": "df68cec91196c734f4aef1ee4e600fef53775fb810f50c053e4cec13f2e3aa15",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3897881"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/brookes-bay/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Bahía Brookes/Brooks fjord in Magallanes matches cruise context in Seno Almirantazgo; not similarly named Caleta Brooke."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/20141440",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Bahía Brookes/Brooks fjord in Magallanes matches cruise context in Seno Almirantazgo; not similarly named Caleta Brooke."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/20141440",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "GeoNames-derived fjord reference point. AADC lists a more southerly representative point; not averaged, not treated as glacier/landing coordinates."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://mapcarta.com/20141440",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Bahía Brookes/Brooks fjord in Magallanes matches cruise context in Seno Almirantazgo; not similarly named Caleta Brooke."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Bahía Brookes",
+      "reason": "Bahía Brookes/Brooks fjord in Magallanes matches cruise context in Seno Almirantazgo; not similarly named Caleta Brooke."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3897881",
+      "reason": "Bahía Brookes/Brooks fjord in Magallanes matches cruise context in Seno Almirantazgo; not similarly named Caleta Brooke."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "-54.35276,-69.83407",
+      "reason": "GeoNames-derived fjord reference point. AADC lists a more southerly representative point; not averaged, not treated as glacier/landing coordinates."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Bahía Brookes/Brooks fjord in Magallanes matches cruise context in Seno Almirantazgo; not similarly named Caleta Brooke."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -54.35276,
+    "longitude": -69.83407,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/20141440"
+  }
+}

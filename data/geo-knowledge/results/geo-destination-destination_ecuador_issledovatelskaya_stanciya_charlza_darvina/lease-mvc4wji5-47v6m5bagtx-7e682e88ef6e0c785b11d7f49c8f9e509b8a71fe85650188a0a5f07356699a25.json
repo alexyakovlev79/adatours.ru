@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_issledovatelskaya_stanciya_charlza_darvina",
+  "stableId": "destination_ecuador_issledovatelskaya_stanciya_charlza_darvina",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/charles-darwin-research-station/",
+  "sourceFingerprint": "a70f55b1ea15270034a2bab6b5528d0622adba076d45d4731553958062e487ab",
+  "status": "BLOCKED",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q113826",
+    "geonamesId": "3659378",
+    "officialUrl": "https://www.darwinfoundation.org/en/about/our-campus/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.darwinfoundation.org/en/about/our-campus/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Именно исследовательская станция на Санта-Крус; фонд Charles Darwin Foundation Q5871174 является другой организацией."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/charles-darwin-research-station.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_issledovatelskaya_stanciya_charlza_darvina; статус approved; blob SHA=3593987b28833a579a01223d2aa345500b1ab8cf; актуальный entry подтверждает canonical /ecuador/place/charles-darwin-research-station/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/charles-darwin-research-station/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_issledovatelskaya_stanciya_charlza_darvina.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q113826",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Именно исследовательская станция на Санта-Крус; фонд Charles Darwin Foundation Q5871174 является другой организацией."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q113826",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Идентификатор P1566 прочитан из точной карточки Wikidata; прямое открытие GeoNames недоступно, независимую проверку страницы GeoNames не заявляю."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.darwinfoundation.org/en/about/our-campus/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Официальная страница кампуса исследовательской станции на сайте организации-оператора, не общая главная фонда."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Именно исследовательская станция на Санта-Крус; фонд Charles Darwin Foundation Q5871174 является другой организацией.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q113826",
+      "reason": "Именно исследовательская станция на Санта-Крус; фонд Charles Darwin Foundation Q5871174 является другой организацией."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 90,
+      "selected": "3659378",
+      "reason": "P1566 точной карточки соответствует именованному объекту; отличия населенного пункта и территории учтены."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.darwinfoundation.org/en/about/our-campus/",
+      "reason": "Страница описывает именно кампус станции."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Координаты Wikidata и современных карт расходятся; точку института не подменять точкой соседнего центра черепах."
+    }
+  ],
+  "reviewNote": "Географическая идентичность исследована и оценена от 70%. Технический блокер §3.2.1 workflow: точный публичный URL не удалось открыть доступными средствами, HTTP-статус/живой HTML не подтверждены. Нужна адресная проверка URL в рабочем браузере; не считать READY или PUBLISHED. Координаты Wikidata и современных карт расходятся; точку института не подменять точкой соседнего центра черепах."
+}

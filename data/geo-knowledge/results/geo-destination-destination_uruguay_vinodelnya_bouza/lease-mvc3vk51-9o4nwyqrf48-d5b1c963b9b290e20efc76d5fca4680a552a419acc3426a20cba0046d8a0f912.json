@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_vinodelnya_bouza",
+  "stableId": "destination_uruguay_vinodelnya_bouza",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/bouza-winery/",
+  "sourceFingerprint": "c72b0862174d19a7c0c926bfbc24a3f08eb6417c065e57b801f8d71517a591d3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q120754748",
+    "officialUrl": "https://bouza.com.uy/contacto"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q120754748",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Бутиковая Bodega Bouza в Melilla/Монтевидео; официальный адрес Camino de la Redención 7658 bis согласуется с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/bouza-winery.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/uruguay/place/bouza-winery/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q120754748",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Бутиковая Bodega Bouza в Melilla/Монтевидео; официальный адрес Camino de la Redención 7658 bis согласуется с MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://bouza.com.uy/contacto",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Бутиковая Bodega Bouza в Melilla/Монтевидео; официальный адрес Camino de la Redención 7658 bis согласуется с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q120754748",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q120754748",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Бутиковая Bodega Bouza в Melilla/Монтевидео; официальный адрес Camino de la Redención 7658 bis согласуется с MD.",
+      "selected": "Винодельня Боуза"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Бутиковая Bodega Bouza в Melilla/Монтевидео; официальный адрес Camino de la Redención 7658 bis согласуется с MD.",
+      "selected": "Q120754748"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "reason": "Бутиковая Bodega Bouza в Melilla/Монтевидео; официальный адрес Camino de la Redención 7658 bis согласуется с MD.",
+      "selected": "https://bouza.com.uy/contacto"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-34.790701,-56.276869]"
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_uruguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -34.790701,
+    "longitude": -56.276869,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q120754748"
+  }
+}

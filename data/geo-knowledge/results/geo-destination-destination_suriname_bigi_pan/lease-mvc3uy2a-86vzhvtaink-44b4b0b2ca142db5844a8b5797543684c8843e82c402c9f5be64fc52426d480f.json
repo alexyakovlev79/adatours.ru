@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_bigi_pan",
+  "stableId": "destination_suriname_bigi_pan",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/bigi-pan/",
+  "sourceFingerprint": "31c5fbc5d0b61bda7c19a5e2356d6b4d9120c07a3d4538b5516351a9ef695160",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Биги-Пан",
+      "reason": "Водно-болотный природный район Bigi Pan / Special Management Area в Nickerie и Coronie; MD описывает всю природную территорию, не только лагуну."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Item именно охраняемой территории, не Oostelijke Polders.",
+      "selected": "Q68488496"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Нидерландская статья именно природной территории.",
+      "selected": "{\"nl\":\"https://nl.wikipedia.org/wiki/Bijzonder_Beheersgebied_Bigi_Pan\"}"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "Точечная маркировка nature_reserve Bigi Pan.",
+      "selected": "{\"type\":\"node\",\"id\":2207565790}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 как опорная точка природной территории, не точный центр/границы.",
+      "selected": "5.960805555555556,-56.86488888888889"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/bigi-pan/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Водно-болотный природный район Bigi Pan / Special Management Area в Nickerie и Coronie; MD описывает всю природную территорию, не только лагуну."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/bigi-pan/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q68488496",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Item именно охраняемой территории, не Oostelijke Polders."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://nl.wikipedia.org/wiki/Bigi_Pan",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Нидерландская статья именно природной территории."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/N2207565790",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точечная маркировка nature_reserve Bigi Pan."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q68488496",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "P625 как опорная точка природной территории, не точный центр/границы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q68488496",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Водно-болотный природный район Bigi Pan / Special Management Area в Nickerie и Coronie; MD описывает всю природную территорию, не только лагуну."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q68488496",
+    "wikipedia": {
+      "nl": "https://nl.wikipedia.org/wiki/Bijzonder_Beheersgebied_Bigi_Pan"
+    },
+    "osm": {
+      "type": "node",
+      "id": 2207565790
+    }
+  },
+  "location": {
+    "latitude": 5.960805555555556,
+    "longitude": -56.86488888888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q68488496"
+  },
+  "reviewNote": "WHSRN https://whsrn.org/whsrn_sites/bigi-pan/ и университет https://bluecarbon.uvs.edu/en/home/about-bigi-pan/ независимо подтверждают природную территорию."
+}

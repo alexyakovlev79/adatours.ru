@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_banos",
+  "stableId": "destination_ecuador_banos",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/banos/",
+  "sourceFingerprint": "56b888adabb7b92add56efe3c42c50936062f0b58bc8e3782184e555de2b73cd",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Баньос",
+      "reason": "Баньос — Baños de Agua Santa, город провинции Tungurahua в Эквадоре у одноимённого вулкана. Не другие Baños и не весь кантон."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q812717",
+      "reason": "Баньос — Baños de Agua Santa, город провинции Tungurahua в Эквадоре у одноимённого вулкана. Не другие Baños и не весь кантон."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-1.3963888888889,-78.424722222222",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "7870285",
+      "reason": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Ba%C3%B1os_de_Agua_Santa",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/banos.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Баньос — Baños de Agua Santa, город провинции Tungurahua в Эквадоре у одноимённого вулкана. Не другие Baños и не весь кантон."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q812717",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Баньос — Baños de Agua Santa, город провинции Tungurahua в Эквадоре у одноимённого вулкана. Не другие Baños и не весь кантон."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q812717",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Баньос — Baños de Agua Santa, город провинции Tungurahua в Эквадоре у одноимённого вулкана. Не другие Baños и не весь кантон."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q812717",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q812717",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q812717",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q812717",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/banos/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q812717",
+    "geonamesId": "7870285",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ba%C3%B1os_de_Agua_Santa"
+    }
+  },
+  "location": {
+    "latitude": -1.3963888888889,
+    "longitude": -78.424722222222,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q812717"
+  }
+}

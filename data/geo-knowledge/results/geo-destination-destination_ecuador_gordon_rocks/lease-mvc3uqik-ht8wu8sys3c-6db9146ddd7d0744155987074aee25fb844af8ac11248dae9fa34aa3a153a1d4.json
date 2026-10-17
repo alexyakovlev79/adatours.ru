@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_gordon_rocks",
+  "stableId": "destination_ecuador_gordon_rocks",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/gordon-rocks/",
+  "sourceFingerprint": "7198fe4e0bc1f2548ea7db82f32988564bb7c5622b1507b769f15a57ba55b028",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q23880149",
+    "geonamesId": "3657772"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/gordon-rocks/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/19661222",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19661222",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/advanced-search.html?q=Colon%2F&startRow=2300",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/19661222",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Gordon Rocks / Rocas Gordón",
+      "reason": "Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q23880149",
+      "reason": "Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3657772",
+      "reason": "Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.566528,-90.141434",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Rocks northeast of South Plaza/east of Santa Cruz; GeoNames and map identifier match, PADI independently confirms named dive site."
+    }
+  ],
+  "reviewNote": "Representative reference of rocks, not precise dive entry or depth location.",
+  "location": {
+    "latitude": -0.566528,
+    "longitude": -90.141434,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/advanced-search.html?q=Colon%2F&startRow=2300"
+  }
+}

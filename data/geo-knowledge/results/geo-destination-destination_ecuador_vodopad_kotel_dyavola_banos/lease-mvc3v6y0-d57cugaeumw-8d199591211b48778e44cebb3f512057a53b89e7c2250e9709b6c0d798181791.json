@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vodopad_kotel_dyavola_banos",
+  "stableId": "destination_ecuador_vodopad_kotel_dyavola_banos",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/pailon-del-diablo-waterfall/",
+  "sourceFingerprint": "8598d3148ba795e6d2b0db698acd5e07ce1b9169e6fe6658f7bc904b4d4d23df",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопад Котел Дьявола (Баньос)",
+      "reason": "Pailón del Diablo — конкретный водопад Río Verde у Baños; совпадают ущелье, лестницы и обзорные площадки."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5755929",
+      "reason": "Pailón del Diablo — конкретный водопад Río Verde у Baños; совпадают ущелье, лестницы и обзорные площадки."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Pail%C3%B3n_del_Diablo",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-1.4047406,-78.2958048",
+      "reason": "Прямое чтение точного водопада в OSM, не дороги или канатной станции."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/339409199",
+      "reason": "Совпадают название, тип и положение в ущелье Pastaza/Río Verde."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/pailon-del-diablo-waterfall/",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Pailón del Diablo — конкретный водопад Río Verde у Baños; совпадают ущелье, лестницы и обзорные площадки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/pailon-del-diablo-waterfall.md",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5755929",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Pailón del Diablo — конкретный водопад Río Verde у Baños; совпадают ущелье, лестницы и обзорные площадки."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5755929",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5755929",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/339409199",
+      "checkedAt": "2026-10-17T08:23:14.470Z",
+      "note": "Прямой OSM API: именованный waterway=waterfall; одна WGS84-точка каскада. Для Agoyán исправляет смещённую P625, не усредняет."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/339409199",
+      "checkedAt": "2026-10-17T08:23:14.470Z",
+      "note": "Точная node содержит совпадающее имя, тип waterfall и Wikidata QID."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q5755929",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pail%C3%B3n_del_Diablo"
+    },
+    "osm": {
+      "type": "node",
+      "id": 339409199
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -1.4047406,
+    "longitude": -78.2958048,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/339409199"
+  },
+  "reviewNote": "Посторонний текст в английской метке Wikidata не переносится в наименование сайта; sitelinks и координаты подтверждают каскад."
+}

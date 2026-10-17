@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_dolores_idalgo",
+  "stableId": "destination_mexico_dolores_idalgo",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/dolores-hidalgo/",
+  "sourceFingerprint": "9a2fc97f7a28a56b46869ee570ff1730f2ca6b5c4e08623589ce3268bbb53161",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q17487868",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Dolores_Hidalgo"
+    }
+  },
+  "location": {
+    "latitude": 21.156111111111,
+    "longitude": -100.9325,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q17487868"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/dolores-hidalgo.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Город Dolores Hidalgo Cuna de la Independencia Nacional в Guanajuato. Точный городской Q17487868 отличается от одноименного муниципалитета Q958153 и дома-музея Miguel Hidalgo; MD о городе, улицах и истории независимости."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/dolores-hidalgo/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dolores_Hidalgo",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Город Dolores Hidalgo Cuna de la Independencia Nacional в Guanajuato. Точный городской Q17487868 отличается от одноименного муниципалитета Q958153 и дома-музея Miguel Hidalgo; MD о городе, улицах и истории независимости."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dolores_Hidalgo",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Город Dolores Hidalgo Cuna de la Independencia Nacional в Guanajuato. Точный городской Q17487868 отличается от одноименного муниципалитета Q958153 и дома-музея Miguel Hidalgo; MD о городе, улицах и истории независимости."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dolores_Hidalgo",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17487868",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "P625 точной городской карточки; settlement_center. Не точка дома-музея или весь муниципальный полигон."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q17487868",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены QID,P31,P17,P131,P625 и sitelinks. Город Dolores Hidalgo Cuna de la Independencia Nacional в Guanajuato. Точный городской Q17487868 отличается от одноименного муниципалитета Q958153 и дома-музея Miguel Hidalgo; MD о городе, улицах и истории независимости."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dolores_Hidalgo",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная EN-статья о выбранном объекте соответствует sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Долорес Идальго",
+      "reason": "Город Dolores Hidalgo Cuna de la Independencia Nacional в Guanajuato. Точный городской Q17487868 отличается от одноименного муниципалитета Q958153 и дома-музея Miguel Hidalgo; MD о городе, улицах и истории независимости."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "City",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "21.156111111111, -100.9325",
+      "reason": "P625 точной городской карточки; settlement_center. Не точка дома-музея или весь муниципальный полигон."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q17487868",
+      "reason": "Город Dolores Hidalgo Cuna de la Independencia Nacional в Guanajuato. Точный городской Q17487868 отличается от одноименного муниципалитета Q958153 и дома-музея Miguel Hidalgo; MD о городе, улицах и истории независимости."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Dolores_Hidalgo",
+      "reason": "Город Dolores Hidalgo Cuna de la Independencia Nacional в Guanajuato. Точный городской Q17487868 отличается от одноименного муниципалитета Q958153 и дома-музея Miguel Hidalgo; MD о городе, улицах и истории независимости."
+    }
+  ]
+}

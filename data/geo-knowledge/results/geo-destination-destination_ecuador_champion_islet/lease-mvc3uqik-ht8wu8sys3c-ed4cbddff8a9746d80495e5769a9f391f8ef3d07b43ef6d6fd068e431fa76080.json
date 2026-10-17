@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_champion_islet",
+  "stableId": "destination_ecuador_champion_islet",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/champion-islet/",
+  "sourceFingerprint": "852d3fd1e31ad382f1b8c443200f58f239b675c40b978a110cca6fe9227632d8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q11178984"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/champion-islet/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/W34201438",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W34201438",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/W34201438",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Champion Islet / Isla Campeón",
+      "reason": "Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q11178984",
+      "reason": "Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-1.23769,-90.38573",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Exact Isla Campeón/Champion islet northeast of Floreana with OSM coastline way34201438 and QID, matching MD southern dive area."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -1.23769,
+    "longitude": -90.38573,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W34201438"
+  }
+}

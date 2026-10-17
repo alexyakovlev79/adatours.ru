@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_laguna_minikes",
+  "stableId": "destination_chile_laguna_minikes",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/laguna-miniques/",
+  "sourceFingerprint": "3d78e31c492bd6176b930928b17225465867413b3e07cc24522c6ad14bd3d639",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Лагуна Миньикес",
+      "reason": "Именно озеро Laguna Miñiques рядом с Miscanti, не одноимённый вулкан Cerro Miñiques."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q22539060"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Laguna_Mi%C3%B1iques\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID озера.",
+      "selected": "3879764"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM relation озера.",
+      "selected": "{\"type\":\"relation\",\"id\":10344266}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 водоёма, не вершины вулкана.",
+      "selected": "-23.765,-67.7925"
+    },
+    {
+      "field": "relationships.destination_chile_laguna_miskanti",
+      "probability": 95,
+      "reason": "Соседняя лагуна явно включена в MD.",
+      "selected": "destination_chile_laguna_miskanti"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-miniques/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Именно озеро Laguna Miñiques рядом с Miscanti, не одноимённый вулкан Cerro Miñiques."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-miniques/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22539060",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22539060",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22539060",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "GeoNames ID озера."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22539060",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "OSM relation озера."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22539060",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "P625 водоёма, не вершины вулкана."
+    },
+    {
+      "field": "relationships.destination_chile_laguna_miskanti",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-miniques/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Соседняя лагуна явно включена в MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22539060",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Именно озеро Laguna Miñiques рядом с Miscanti, не одноимённый вулкан Cerro Miñiques."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_laguna_miskanti"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q22539060",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Laguna_Mi%C3%B1iques"
+    },
+    "geonamesId": "3879764",
+    "osm": {
+      "type": "relation",
+      "id": 10344266
+    }
+  },
+  "location": {
+    "latitude": -23.765,
+    "longitude": -67.7925,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q22539060"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_hacha_falls",
+  "stableId": "destination_venezuela_hacha_falls",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/hacha-falls/",
+  "sourceFingerprint": "6aab44732ede14a0f5825726d08479bf3ff9952dcb585991e4169571b8def107",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "waterfall",
+  "alternateNames": [
+    "Salto Hacha",
+    "Hacha Waterfall",
+    "Hacha Fall"
+  ],
+  "external": {
+    "wikidataQid": "Q114056122",
+    "geonamesId": "3639685",
+    "osm": {
+      "type": "node",
+      "id": 7379918118
+    }
+  },
+  "location": {
+    "latitude": 6.2498921,
+    "longitude": -62.8463901,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/7379918118"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_venezuela_canaima_lagoon"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/hacha-falls/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Водопад Ача = Salto Hacha у лагуны Канайма. Местный Waku Lodge прямо различает El Sapo и Hacha; Wikidata определяет Hacha Waterfall как водопад Венесуэлы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Водопад Ача = Salto Hacha у лагуны Канайма. Местный Waku Lodge прямо различает El Sapo и Hacha; Wikidata определяет Hacha Waterfall как водопад Венесуэлы."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Водопад Ача = Salto Hacha у лагуны Канайма. Местный Waku Lodge прямо различает El Sapo и Hacha; Wikidata определяет Hacha Waterfall как водопад Венесуэлы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q114056122",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Водопад Ача = Salto Hacha у лагуны Канайма. Местный Waku Lodge прямо различает El Sapo и Hacha; Wikidata определяет Hacha Waterfall как водопад Венесуэлы. Прочитаны EntityData/API: P17=Venezuela и соответствующие sitelinks/описание."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q114056122",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "P1566=3639685 на точной Wikidata-карточке, совпадают страна и тип объекта."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/7379918118",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Прямо прочитан OSM API: имя, тип и географическое положение совпадают; самостоятельная именованная точка объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/7379918118",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Прямо прочитан OSM API node 7379918118: name Salto Hacha, name:en Hacha Fall, waterway waterfall, lat/lon 6.2498921,-62.8463901. Mapcarta округляет до 6.24989,-62.84639."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    },
+    {
+      "field": "relationships.destination_venezuela_canaima_lagoon",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Waku Lodge описывает Hacha среди водопадов лагуны Канайма; relatedPlace связывает водопад с лагуной без утверждения равенства."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопад Ача",
+      "reason": "Водопад Ача = Salto Hacha у лагуны Канайма. Местный Waku Lodge прямо различает El Sapo и Hacha; Wikidata определяет Hacha Waterfall как водопад Венесуэлы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "waterfall",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Salto Hacha; Hacha Waterfall; Hacha Fall",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q114056122",
+      "reason": "Водопад Ача = Salto Hacha у лагуны Канайма. Местный Waku Lodge прямо различает El Sapo и Hacha; Wikidata определяет Hacha Waterfall как водопад Венесуэлы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3639685",
+      "reason": "GeoNames ID указан на подтвержденной объектной карточке."
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "selected": "node/7379918118",
+      "reason": "Точная карточка OSM проверена напрямую, соседние объекты исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "6.2498921,-62.8463901 (feature_point)",
+      "reason": "Прямо прочитан OSM API node 7379918118: name Salto Hacha, name:en Hacha Fall, waterway waterfall, lat/lon 6.2498921,-62.8463901. Mapcarta округляет до 6.24989,-62.84639."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    },
+    {
+      "field": "relationships.destination_venezuela_canaima_lagoon",
+      "probability": 97,
+      "selected": "destination_venezuela_canaima_lagoon",
+      "reason": "Waku Lodge описывает Hacha среди водопадов лагуны Канайма; relatedPlace связывает водопад с лагуной без утверждения равенства."
+    }
+  ],
+  "reviewNote": "Отдельной статьи Wikipedia нет; Commons не записан в поле wikipedia. Сапо — соседний самостоятельный водопад."
+}

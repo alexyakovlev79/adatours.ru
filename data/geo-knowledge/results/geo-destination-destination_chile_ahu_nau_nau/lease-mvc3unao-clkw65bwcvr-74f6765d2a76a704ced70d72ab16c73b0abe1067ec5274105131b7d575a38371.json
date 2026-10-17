@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ahu_nau_nau",
+  "stableId": "destination_chile_ahu_nau_nau",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ahu-nau-nau/",
+  "sourceFingerprint": "bc731a987271307d55e0c8e1bcb3c113b31ff3385dddc105d8c03fdf3a404778",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Аху-Нау-Нау",
+      "reason": "Аху-Нау-Нау — платформа у пляжа Анакена; Commons authority связывает точный Q10722313 и OSM, не карточку всего пляжа."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q10722313",
+      "reason": "Аху-Нау-Нау — платформа у пляжа Анакена; Commons authority связывает точный Q10722313 и OSM, не карточку всего пляжа."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-27.07438888888889,-109.32241666666667",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":2307827295}",
+      "reason": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ahu-nau-nau.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Аху-Нау-Нау — платформа у пляжа Анакена; Commons authority связывает точный Q10722313 и OSM, не карточку всего пляжа."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Ahu_Nau_Nau",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Нау-Нау — платформа у пляжа Анакена; Commons authority связывает точный Q10722313 и OSM, не карточку всего пляжа."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10722313",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Нау-Нау — платформа у пляжа Анакена; Commons authority связывает точный Q10722313 и OSM, не карточку всего пляжа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Ahu_Nau_Nau",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Ahu_Nau_Nau",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Ahu_Nau_Nau",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Ahu_Nau_Nau",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Authority item Q10722313 explicitly identifies platform at Anakena."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/ahu-nau-nau/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q10722313",
+    "osm": {
+      "type": "node",
+      "id": 2307827295
+    }
+  },
+  "location": {
+    "latitude": -27.07438888888889,
+    "longitude": -109.32241666666667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Ahu_Nau_Nau"
+  }
+}

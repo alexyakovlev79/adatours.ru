@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_atoni",
+  "stableId": "destination_suriname_atoni",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/atjoni/",
+  "sourceFingerprint": "c3a8ecb84b4f9ac2820efc5a58603ac7a32bb8af67cbe08aec8a6fcec5162a14",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Атьони",
+      "reason": "Atjoni — поселение и важная лодочная пристань рядом с Pokigron. Точная нидерландская статья различает их, в отличие от широкого английского редиректа."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Самостоятельный item Atjoni village in Suriname.",
+      "selected": "Q135278499"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Точная статья Атьони с описанием пристани и соседнего Покигрона.",
+      "selected": "{\"nl\":\"https://nl.wikipedia.org/wiki/Atjoni\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 поселения Atjoni, не hospital.",
+      "selected": "4.488333333333333,-55.3725"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/atjoni/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Atjoni — поселение и важная лодочная пристань рядом с Pokigron. Точная нидерландская статья различает их, в отличие от широкого английского редиректа."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/atjoni/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135278499",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Самостоятельный item Atjoni village in Suriname."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://nl.wikipedia.org/wiki/Atjoni",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная статья Атьони с описанием пристани и соседнего Покигрона."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135278499",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "P625 поселения Atjoni, не hospital."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135278499",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Atjoni — поселение и важная лодочная пристань рядом с Pokigron. Точная нидерландская статья различает их, в отличие от широкого английского редиректа."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q135278499",
+    "wikipedia": {
+      "nl": "https://nl.wikipedia.org/wiki/Atjoni"
+    }
+  },
+  "location": {
+    "latitude": 4.488333333333333,
+    "longitude": -55.3725,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q135278499"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_vina_flower_clock",
+  "stableId": "destination_chile_vina_flower_clock",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/vina-flower-clock/",
+  "sourceFingerprint": "5cb65cdeda8d2fcb9ac711061eeb7dc0a527469dba06fd898cb16e7adaeacd1d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q6105155"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6105155",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Reloj de Flores/цветочные часы Viña del Mar, конкретный объект, не весь прилегающий парк."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/vina-flower-clock.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/vina-flower-clock/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6105155",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Reloj de Flores/цветочные часы Viña del Mar, конкретный объект, не весь прилегающий парк."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6105155",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6105155",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Reloj de Flores/цветочные часы Viña del Mar, конкретный объект, не весь прилегающий парк.",
+      "selected": "Цветочные часы Винья-дель-Мар"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Reloj de Flores/цветочные часы Viña del Mar, конкретный объект, не весь прилегающий парк.",
+      "selected": "Q6105155"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.02315,-71.56746111]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.02315,
+    "longitude": -71.56746111,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q6105155"
+  }
+}

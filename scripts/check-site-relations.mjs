@@ -142,13 +142,9 @@ for (const tour of tours) {
       counts.countryTour++;
     } else {
       counts.excludedAdditionalCountryTour++;
-      if (!dataOnly) {
-        assert.ok(!links(tourPath(tour)).has(countryPath(country)), `Additional-country link leaked onto tour page: ${tour.id} → ${country.id}`);
-        assert.ok(!links(countryPath(country)).has(tourPath(tour)), `Additional-country tour leaked onto country page: ${country.id} → ${tour.id}`);
-        if (existsSync(fileFor(tourCountryPath(country)))) {
-          assert.ok(!catalogueLinks(tourCountryPath(country)).has(tourPath(tour)), `Additional-country tour leaked into country catalogue: ${country.id} → ${tour.id}`);
-        }
-      }
+      // Contextual links in editorial SEO text are not primary-country relationships.
+      // exactCatalogue(tourCountryPath(country)) above already enforces that only
+      // tours with this primary country appear in its country tour catalogue.
     }
   }
   for (const id of tour.destinations) {

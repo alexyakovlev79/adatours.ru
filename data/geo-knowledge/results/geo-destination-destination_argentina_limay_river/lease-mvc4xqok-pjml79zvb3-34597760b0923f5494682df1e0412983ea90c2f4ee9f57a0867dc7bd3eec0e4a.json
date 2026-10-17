@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_limay_river",
+  "stableId": "destination_argentina_limay_river",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/limay-river/",
+  "sourceFingerprint": "a1bb336ce21a8611553c0aab26c4f72bc4d23faf6d90f3992b7ba26fc7bd31ae",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Река Лимай",
+      "reason": "MD: река Limay, прежде всего верхние участки у Bariloche для рыбалки. Основной географический референт — Río Limay, вытекающий из Nahuel Huapi; не самостоятельный тур и не охраняемый береговой ландшафт."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_argentina"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Точная река Limay в Аргентине, начало у озера Nahuel Huapi.",
+      "selected": "Q1470945"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная река Limay, русло через Río Negro и Neuquén.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Limay_River\"}"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "P625 с квалификатором applies to part=river source. Выбрана точка истока у Nahuel Huapi для верхнеречного контекста MD; устье у Neuquén не используется.",
+      "selected": "-41.05555555555555,-71.15166666666667"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/limay-river/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: река Limay, прежде всего верхние участки у Bariloche для рыбалки. Основной географический референт — Río Limay, вытекающий из Nahuel Huapi; не самостоятельный тур и не охраняемый береговой ландшафт."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://adatours.ru/argentina/place/limay-river/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1470945",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точная река Limay в Аргентине, начало у озера Nahuel Huapi."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Limay_River",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точная река Limay, русло через Río Negro и Neuquén."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1470945",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "P625 с квалификатором applies to part=river source. Выбрана точка истока у Nahuel Huapi для верхнеречного контекста MD; устье у Neuquén не используется."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.barilocheturismo.gob.ar/es/circuito-grande",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "MD: река Limay, прежде всего верхние участки у Bariloche для рыбалки. Основной географический референт — Río Limay, вытекающий из Nahuel Huapi; не самостоятельный тур и не охраняемый береговой ландшафт."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1470945",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Limay_River"
+    }
+  },
+  "location": {
+    "latitude": -41.05555555555555,
+    "longitude": -71.15166666666667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1470945"
+  }
+}

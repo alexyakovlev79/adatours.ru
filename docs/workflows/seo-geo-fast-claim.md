@@ -39,7 +39,7 @@ async function fastClaimSeoBatch({ dryRun = false, runId, cycle = 1 } = {}) {
   const begun = Date.now();
   if (!Number.isInteger(cycle) || cycle < 1 || cycle > 10)
     throw new Error("SEO/GEO cycle must be an integer from 1 to 10");
-  const resolvedRunId = runId || `seo-run-${new Date().toISOString().replace(/\\W/g,"")}-${Math.random().toString(36).slice(2,10)}`;
+  const resolvedRunId = runId || `seo-run-${new Date().toISOString().replace(/\W/g,"")}-${Math.random().toString(36).slice(2,10)}`;
   if (!/^[a-zA-Z0-9_-]{8,95}$/.test(resolvedRunId))
     throw new Error("Invalid SEO/GEO runId");
   const ownerId = `seo-trio-${resolvedRunId}`;

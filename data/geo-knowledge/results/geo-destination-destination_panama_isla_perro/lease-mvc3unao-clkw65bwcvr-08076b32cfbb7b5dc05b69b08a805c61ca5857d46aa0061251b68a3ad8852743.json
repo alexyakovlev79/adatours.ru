@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_isla_perro",
+  "stableId": "destination_panama_isla_perro",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/isla-perro/",
+  "sourceFingerprint": "2fafa5407e9d8b548931195fc3afdf7a15f54b4a934f46989702c1b5dc7bd0b8",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 93,
+      "selected": "Исла-Перро",
+      "reason": "Исла-Перро — остров Сан-Бласа с затонувшим судном и снорклингом; описание местного оператора соответствует программе и MD."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/isla-perro.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Исла-Перро — остров Сан-Бласа с затонувшим судном и снорклингом; описание местного оператора соответствует программе и MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://pba-panama.com/wp-content/uploads/2024/11/Day-Trip-to-San-Blas-Islands.pdf",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Исла-Перро — остров Сан-Бласа с затонувшим судном и снорклингом; описание местного оператора соответствует программе и MD."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://pba-panama.com/wp-content/uploads/2024/11/Day-Trip-to-San-Blas-Islands.pdf",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/isla-perro/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "reviewNote": "Основной референт — Perro Chico; не присвоена карточка соседнего Isla Perro Grande без точной проверки."
+}

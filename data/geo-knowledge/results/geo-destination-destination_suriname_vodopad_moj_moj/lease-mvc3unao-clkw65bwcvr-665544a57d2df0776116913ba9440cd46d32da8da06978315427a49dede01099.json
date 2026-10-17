@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_vodopad_moj_moj",
+  "stableId": "destination_suriname_vodopad_moj_moj",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/moi-moi-falls/",
+  "sourceFingerprint": "810a6498f74c05719f19170fed48985ae227b1c78c0c7506f4bbe3c205f320cb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Водопад Мой Мой",
+      "reason": "Moi Moi Waterfall — водопад отдельной программы Кабалебо: путь от подножия Misty Mountain и возвращение лодкой; совпадает с Мой-Мой MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/moi-moi-falls.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Moi Moi Waterfall — водопад отдельной программы Кабалебо: путь от подножия Misty Mountain и возвращение лодкой; совпадает с Мой-Мой MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Moi Moi Waterfall — водопад отдельной программы Кабалебо: путь от подножия Misty Mountain и возвращение лодкой; совпадает с Мой-Мой MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/moi-moi-falls/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Точная картографическая идентичность/точка водопада не подтверждены, QID лоджа не используется."
+}

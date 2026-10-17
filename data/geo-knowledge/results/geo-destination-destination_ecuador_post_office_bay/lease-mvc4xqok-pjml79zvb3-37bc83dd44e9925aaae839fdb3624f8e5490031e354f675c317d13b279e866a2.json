@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_post_office_bay",
+  "stableId": "destination_ecuador_post_office_bay",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/post-office-bay/",
+  "sourceFingerprint": "d2cb8aa56b0d2e5401fa14100a865b1bfa1d2b923133d20a51ee74269148917b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Бухта Пост-Офис",
+      "reason": "MD: бухта Post Office на Floreana с почтовой бочкой 1793 года. Galápagos Conservancy подтверждает точный visitor site и традицию; ресторан на San Cristóbal исключён."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "Поиск точного идентификатора бухты не установил QID; статья всего острова не равнозначна бухте."
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Найдены исторические и наблюдательские координаты с расхождениями; точка бухты нужной роли не подтверждена."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/post-office-bay/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: бухта Post Office на Floreana с почтовой бочкой 1793 года. Galápagos Conservancy подтверждает точный visitor site и традицию; ресторан на San Cristóbal исключён."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/post-office-bay/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.galapagos.org/about_galapagos/the-islands/floreana-island/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: бухта Post Office на Floreana с почтовой бочкой 1793 года. Galápagos Conservancy подтверждает точный visitor site и традицию; ресторан на San Cristóbal исключён."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ]
+}

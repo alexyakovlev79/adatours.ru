@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_aregua",
+  "stableId": "destination_paraguay_aregua",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/aregua/",
+  "sourceFingerprint": "7c1e03fdff7f25d3896b3561d5a50c50032a27be5eac779d076598ae1c5b231b",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Арегуа",
+      "reason": "Город Areguá в Central у озера Ypacaraí соответствует ремесленным лавкам и озёрному контексту MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q135975",
+      "reason": "Город Areguá в Central у озера Ypacaraí соответствует ремесленным лавкам и озёрному контексту MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Aregu%C3%A1",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3439403",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-25.3,-57.416944]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 99,
+      "selected": "country_paraguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/paraguay/place/aregua/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Город Areguá в Central у озера Ypacaraí соответствует ремесленным лавкам и озёрному контексту MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/aregua.md",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135975",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Город Areguá в Central у озера Ypacaraí соответствует ремесленным лавкам и озёрному контексту MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135975",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135975",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135975",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q135975",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q135975",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Aregu%C3%A1"
+    },
+    "geonamesId": "3439403"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "location": {
+    "latitude": -25.3,
+    "longitude": -57.416944,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q135975"
+  },
+  "reviewNote": null
+}

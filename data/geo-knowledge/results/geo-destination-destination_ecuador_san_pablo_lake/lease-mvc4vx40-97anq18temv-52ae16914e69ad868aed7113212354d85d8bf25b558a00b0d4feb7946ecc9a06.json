@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_san_pablo_lake",
+  "stableId": "destination_ecuador_san_pablo_lake",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/san-pablo-lake/",
+  "sourceFingerprint": "b32235906d7f36228098354d1dfc9e78e8e4690c4792d0839fd3e824651f37c3",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1800402",
+    "geonamesId": "3651592"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Озеро Сан-Пабло",
+      "reason": "Сан-Пабло / Imbacocha — озеро у Отавало в Имбабуре, не населённый пункт San Pablo del Lago. Из нескольких P625 выбрана точка со ссылкой на German Wikipedia; остальные близкие точки не усредняются."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1800402",
+      "reason": "Сан-Пабло / Imbacocha — озеро у Отавало в Имбабуре, не населённый пункт San Pablo del Lago. Из нескольких P625 выбрана точка со ссылкой на German Wikipedia; остальные близкие точки не усредняются."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3651592",
+      "reason": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "0.2059666666666667, -78.21913333333333",
+      "reason": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/san-pablo-lake.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Сан-Пабло / Imbacocha — озеро у Отавало в Имбабуре, не населённый пункт San Pablo del Lago. Из нескольких P625 выбрана точка со ссылкой на German Wikipedia; остальные близкие точки не усредняются."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/san-pablo-lake/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1800402",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Сан-Пабло / Imbacocha — озеро у Отавало в Имбабуре, не населённый пункт San Pablo del Lago. Из нескольких P625 выбрана точка со ссылкой на German Wikipedia; остальные близкие точки не усредняются."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1800402",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1800402",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/san-pablo-lake.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": 0.2059666666666667,
+    "longitude": -78.21913333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1800402"
+  }
+}

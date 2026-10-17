@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_zaliv_drejk",
+  "stableId": "destination_costa_rica_zaliv_drejk",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/drake-bay/",
+  "sourceFingerprint": "e3ab80f4812f07fcf0818f644247dd23701dbef2cf1e7ec3e2e35b091013cde5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "BodyOfWater",
+  "external": {
+    "wikidataQid": "Q4843107",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Bah%C3%ADa_Drake"
+    }
+  },
+  "location": {
+    "latitude": 8.7,
+    "longitude": -83.66666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4843107"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/drake-bay.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Основной именованный референт — залив Bahía Drake на северной стороне Osa Peninsula, Puntarenas, с туристическим побережьем. Это не город Drake и не Drakes Bay в California. Окрестности/база поездок вторичны; destinationType:city в MD не отражает основной объект."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/drake-bay/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bah%C3%ADa_Drake",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Основной именованный референт — залив Bahía Drake на северной стороне Osa Peninsula, Puntarenas, с туристическим побережьем. Это не город Drake и не Drakes Bay в California. Окрестности/база поездок вторичны; destinationType:city в MD не отражает основной объект."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bah%C3%ADa_Drake",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Основной именованный референт — залив Bahía Drake на северной стороне Osa Peninsula, Puntarenas, с туристическим побережьем. Это не город Drake и не Drakes Bay в California. Окрестности/база поездок вторичны; destinationType:city в MD не отражает основной объект."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bah%C3%ADa_Drake",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_costa_rica"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4843107",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "P625 точной карточки залива, точность в источнике около1угловой минуты. Representative для залива и прибрежного района, без утверждения о центре Agujitas или конкретной пристани."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4843107",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Проверены точный QID, P31/P17/P625 и EN sitelink. Основной именованный референт — залив Bahía Drake на северной стороне Osa Peninsula, Puntarenas, с туристическим побережьем. Это не город Drake и не Drakes Bay в California. Окрестности/база поездок вторичны; destinationType:city в MD не отражает основной объект."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bah%C3%ADa_Drake",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точная статья о выбранном именованном объекте, соответствующая sitelink Wikidata."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/blog/why-to-visit-drake-bay",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Дополнительный источник подтверждает именованный объект и его географический контекст."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "В исходном MD destinationType:city; основной референт принят как залив с прибрежным районом. Координаты не являются точкой посадки в лодку.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Залив Дрейк",
+      "reason": "Основной именованный референт — залив Bahía Drake на северной стороне Osa Peninsula, Puntarenas, с туристическим побережьем. Это не город Drake и не Drakes Bay в California. Окрестности/база поездок вторичны; destinationType:city в MD не отражает основной объект."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "BodyOfWater",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "8.7, -83.66666667",
+      "reason": "P625 точной карточки залива, точность в источнике около1угловой минуты. Representative для залива и прибрежного района, без утверждения о центре Agujitas или конкретной пристани."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q4843107",
+      "reason": "Основной именованный референт — залив Bahía Drake на северной стороне Osa Peninsula, Puntarenas, с туристическим побережьем. Это не город Drake и не Drakes Bay в California. Окрестности/база поездок вторичны; destinationType:city в MD не отражает основной объект."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Bah%C3%ADa_Drake",
+      "reason": "Точная статья выбранного объекта."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_tulum",
+  "stableId": "destination_mexico_tulum",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/tulum/",
+  "sourceFingerprint": "654d6a651e4a63eb0521a2a8f2181a28781a23e9eb2db0f9b21ef19cf6eedc39",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q725883",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tulum"
+    },
+    "geonamesId": "3515039"
+  },
+  "location": {
+    "latitude": 20.214722222222,
+    "longitude": -87.428888888889,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q725883"
+  },
+  "alternateNames": [
+    "Tulum",
+    "Tulu’um",
+    "Zamá"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "composite",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Тулум",
+      "reason": "Страница описывает туристический Тулум: руины, Tulum Pueblo и пляжную зону. Руины прямо названы главной достопримечательностью и занимают большую часть конкретного описания (стены, порт майя, утес), поэтому наиболее вероятный главный именованный референт — археологический Tulum."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 86,
+      "selected": "Q725883",
+      "reason": "Страница описывает туристический Тулум: руины, Tulum Pueblo и пляжную зону. Руины прямо названы главной достопримечательностью и занимают большую часть конкретного описания (стены, порт майя, утес), поэтому наиболее вероятный главный именованный референт — археологический Tulum. Редакционная страница объединяет руины, Pueblo и пляжи. Главный референт Q725883 Maya Ruins of Tulum принят на86%: руины названы главной «фишкой», подробно описаны стены/порт/утес. Современный город из отдельной статьи Tulum, Quintana Roo — другой кандидат. Location относится только к выбранному археологическому объекту, не центру всего курорта. Координаты города и руин не усреднялись."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 86,
+      "selected": "https://en.wikipedia.org/wiki/Tulum",
+      "reason": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Редакционная страница объединяет руины, Pueblo и пляжи. Главный референт Q725883 Maya Ruins of Tulum принят на86%: руины названы главной «фишкой», подробно описаны стены/порт/утес. Современный город из отдельной статьи Tulum, Quintana Roo — другой кандидат. Location относится только к выбранному археологическому объекту, не центру всего курорта. Координаты города и руин не усреднялись."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 86,
+      "selected": "3515039",
+      "reason": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. Идентификатор именно археологического Tulum, не Pueblo."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "20.214722222222,-87.428888888889; feature_point",
+      "reason": "P625 выбранного главного объекта: опорная точка достопримечательности/района; не усредненная координата разных объектов и не обещание входа."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Tulum; Tulu’um; Zamá",
+      "reason": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tulum",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Страница описывает туристический Тулум: руины, Tulum Pueblo и пляжную зону. Руины прямо названы главной достопримечательностью и занимают большую часть конкретного описания (стены, порт майя, утес), поэтому наиболее вероятный главный именованный референт — археологический Tulum."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/tulum/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точный live URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, имени, стране и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q725883",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Страница описывает туристический Тулум: руины, Tulum Pueblo и пляжную зону. Руины прямо названы главной достопримечательностью и занимают большую часть конкретного описания (стены, порт майя, утес), поэтому наиболее вероятный главный именованный референт — археологический Tulum. Редакционная страница объединяет руины, Pueblo и пляжи. Главный референт Q725883 Maya Ruins of Tulum принят на86%: руины названы главной «фишкой», подробно описаны стены/порт/утес. Современный город из отдельной статьи Tulum, Quintana Roo — другой кандидат. Location относится только к выбранному археологическому объекту, не центру всего курорта. Координаты города и руин не усреднялись."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q725883",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Редакционная страница объединяет руины, Pueblo и пляжи. Главный референт Q725883 Maya Ruins of Tulum принят на86%: руины названы главной «фишкой», подробно описаны стены/порт/утес. Современный город из отдельной статьи Tulum, Quintana Roo — другой кандидат. Location относится только к выбранному археологическому объекту, не центру всего курорта. Координаты города и руин не усреднялись."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q725883",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. Идентификатор именно археологического Tulum, не Pueblo."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q725883",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P625 выбранного главного объекта: опорная точка достопримечательности/района; не усредненная координата разных объектов и не обещание входа."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q725883",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://adatours.ru/mexico/place/tulum/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Редакционная страница объединяет руины, Pueblo и пляжи. Главный референт Q725883 Maya Ruins of Tulum принят на86%: руины названы главной «фишкой», подробно описаны стены/порт/утес. Современный город из отдельной статьи Tulum, Quintana Roo — другой кандидат. Location относится только к выбранному археологическому объекту, не центру всего курорта. Координаты города и руин не усреднялись."
+}

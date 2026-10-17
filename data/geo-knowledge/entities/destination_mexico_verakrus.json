@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_verakrus",
+  "stableId": "destination_mexico_verakrus",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/veracruz/",
+  "sourceFingerprint": "e7d04f46169bf2f5d91d02264bea170442f9d1c062d885a2021843c1085faabe",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q173270",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Veracruz_(city)",
+      "es": "https://es.wikipedia.org/wiki/Veracruz"
+    },
+    "geonamesId": "3514783",
+    "officialUrl": "https://descubre.veracruzmunicipio.gob.mx/"
+  },
+  "location": {
+    "latitude": 19.190277777778,
+    "longitude": -96.153333333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q173270"
+  },
+  "alternateNames": [
+    "Veracruz"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/veracruz/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Веракрус; index, follow. Текущий approved MD и entry сверены. Город и порт Веракрус на Мексиканском заливе; не штат Veracruz и не вся агломерация Veracruz–Boca del Río."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://descubre.veracruzmunicipio.gob.mx/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город и порт Веракрус на Мексиканском заливе; не штат Veracruz и не вся агломерация Veracruz–Boca del Río."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173270",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: town in Veracruz Municipality, State of Veracruz, Mexico. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173270",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город и порт Веракрус на Мексиканском заливе; не штат Veracruz и не вся агломерация Veracruz–Boca del Río. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173270",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Veracruz (city); Veracruz. Это сопоставление карточки Q173270, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173270",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3514783 в точной карточке Q173270. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173270",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 19.190277777778, -96.153333333333; роль settlement_center. Исходная точка населенного пункта, без усреднения или переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173270",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173270",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://descubre.veracruzmunicipio.gob.mx/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный муниципальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Veracruz",
+      "reason": "Город и порт Веракрус на Мексиканском заливе; не штат Veracruz и не вся агломерация Veracruz–Boca del Río."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q173270",
+      "reason": "Город и порт Веракрус на Мексиканском заливе; не штат Veracruz и не вся агломерация Veracruz–Boca del Río."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Veracruz_(city) ; https://es.wikipedia.org/wiki/Veracruz",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3514783",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.190277777778, -96.153333333333",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Veracruz",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://descubre.veracruzmunicipio.gob.mx/",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Город, муниципалитет и штат различены. Туристический портал Ayuntamiento относится к городским достопримечательностям; не автоматический sameAs муниципалитета."
+}

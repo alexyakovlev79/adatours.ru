@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_santa_rosa_de_kabal",
+  "stableId": "destination_colombia_santa_rosa_de_kabal",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/santa-rosa-de-cabal/",
+  "sourceFingerprint": "94b6a4b388c3eaed82fd6e86ac97b3e759879fa726a3d6f7ff642f3e19321cd3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q955068",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santa_Rosa_de_Cabal"
+    }
+  },
+  "location": {
+    "latitude": 4.8672222222222,
+    "longitude": -75.621111111111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q955068"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/santa-rosa-de-cabal.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Основной именованный референт — город и муниципалитет Santa Rosa de Cabal, Risaralda. Плантации и термальный комплекс в окрестностях вторичны. Q28501483 относится к термальному комплексу и не выбран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/santa-rosa-de-cabal/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Rosa_de_Cabal",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Основной именованный референт — город и муниципалитет Santa Rosa de Cabal, Risaralda. Плантации и термальный комплекс в окрестностях вторичны. Q28501483 относится к термальному комплексу и не выбран."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Rosa_de_Cabal",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Rosa_de_Cabal",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q955068",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "P625 городской карточки, а не координаты Termales. Wikipedia округляет координаты до минут; точки не усреднялись."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q955068",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверены точный QID, P31/P17/P625 и sitelink; Основной именованный референт — город и муниципалитет Santa Rosa de Cabal, Risaralda. Плантации и термальный комплекс в окрестностях вторичны. Q28501483 относится к термальному комплексу и не выбран."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Rosa_de_Cabal",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точная статья о выбранном объекте; соответствует Wikidata sitelink."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Санта-Роса-де-Кабаль",
+      "reason": "Основной именованный референт — город и муниципалитет Santa Rosa de Cabal, Risaralda. Плантации и термальный комплекс в окрестностях вторичны. Q28501483 относится к термальному комплексу и не выбран."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "City",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "4.8672222222222, -75.621111111111",
+      "reason": "P625 городской карточки, а не координаты Termales. Wikipedia округляет координаты до минут; точки не усреднялись."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q955068",
+      "reason": "Основной именованный референт — город и муниципалитет Santa Rosa de Cabal, Risaralda. Плантации и термальный комплекс в окрестностях вторичны. Q28501483 относится к термальному комплексу и не выбран."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Santa_Rosa_de_Cabal",
+      "reason": "Точная статья и sitelink выбранной Wikidata."
+    }
+  ]
+}

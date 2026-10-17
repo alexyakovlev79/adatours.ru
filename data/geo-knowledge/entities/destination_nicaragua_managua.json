@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_managua",
+  "stableId": "destination_nicaragua_managua",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/managua/",
+  "sourceFingerprint": "b7898ad1f75835d163e9cdc15964215461819b52432784e2ef035e294926db2c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q131546626",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Managua",
+      "es": "https://es.wikipedia.org/wiki/Managua"
+    },
+    "geonamesId": "3617763"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/managua/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-managua/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Город-столица Манагуа, Q131546626, GeoNames PPLC 3617763; Q3274 — отдельная муниципальная карточка, департамент и озеро не выбраны. Wikipedia охватывает город и муниципалитет; городской референт статьи совпадает. Выбрана городская точка GeoNames, не муниципальная P625."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-managua/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип city соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-managua/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131546626",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Город-столица Манагуа, Q131546626, GeoNames PPLC 3617763; Q3274 — отдельная муниципальная карточка, департамент и озеро не выбраны. Wikipedia охватывает город и муниципалитет; городской референт статьи совпадает. Выбрана городская точка GeoNames, не муниципальная P625."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Managua",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Статья относится к выбранному городу, хотя может включать сведения о муниципалитете. Главный городской референт подтверждён раздельными городскими записями Wikidata и GeoNames."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3617763/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Home › North America › Nicaragua NI › Managua Department 10 › Managua 10 Managua P PPLC Capital of a political entity · NI Feature Map Hierarchy History Alternate names GeonameId 3617763 Coordinates 12.13282, -86.25040 Move 12°07′58.15″ N, 86°15′01.44″ W Population 973,087 Elevation ca. 108 m SRTM3 108 m · ASTER 107 m Timezone America/Managua Sunrise / sunset ‹ 05:34 / 17:25 › today, local time Feature code P PPLC Wikipedia Article Permalink: https://www.geonames.org/3617763/managua.html .kml .rdf geotree maptree Edit Delete this place Administrative hierarchy Parents Children A Nicaragua NI Country A ADM1 Managu"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3617763/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Одна проверенная точка основного объекта с ролью settlement_center; альтернативные координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q131546626",
+      "reason": "Город-столица Манагуа, Q131546626, GeoNames PPLC 3617763; Q3274 — отдельная муниципальная карточка, департамент и озеро не выбраны. Wikipedia охватывает город и муниципалитет; городской референт статьи совпадает. Выбрана городская точка GeoNames, не муниципальная P625."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q131546626",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 92,
+      "selected": "en:Managua; es:Managua",
+      "reason": "Основной городской референт статьи совпадает; муниципальные статистические поля не переносились."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3617763",
+      "reason": "Проверены первичная запись, страна, имя и feature code; административные одноимённые записи исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "12.13282, -86.2504",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль settlement_center."
+    }
+  ],
+  "reviewNote": "Город-столица Манагуа, Q131546626, GeoNames PPLC 3617763; Q3274 — отдельная муниципальная карточка, департамент и озеро не выбраны. Wikipedia охватывает город и муниципалитет; городской референт статьи совпадает. Выбрана городская точка GeoNames, не муниципальная P625.",
+  "location": {
+    "latitude": 12.13282,
+    "longitude": -86.2504,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3617763/"
+  }
+}

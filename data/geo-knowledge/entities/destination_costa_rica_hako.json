@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_hako",
+  "stableId": "destination_costa_rica_hako",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/jaco/",
+  "sourceFingerprint": "bc04ab566584fd06437f1f0351c8650daaf9dd8bf0766beb7b3eacde46b0589d",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1463601",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Jac%C3%B3,_Costa_Rica"
+    },
+    "geonamesId": "3623369"
+  },
+  "location": {
+    "latitude": 9.61497,
+    "longitude": -84.62975,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3623369/jaco.html"
+  },
+  "alternateNames": [
+    "Jacó",
+    "Jaco"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Хако",
+      "reason": "Курортный город Jacó в Garabito, Puntarenas с серфингом, пляжем и городской инфраструктурой. Wikidata/точная Wikipedia описывают одноименный район вместе с главным городом; GeoNames отдельно подтверждает город."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1463601",
+      "reason": "Курортный город Jacó в Garabito, Puntarenas с серфингом, пляжем и городской инфраструктурой. Wikidata/точная Wikipedia описывают одноименный район вместе с главным городом; GeoNames отдельно подтверждает город."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Jac%C3%B3,_Costa_Rica",
+      "reason": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Q1463601 объединяет имя района Jacó и его главного города; соответствие туристическому городу принято на 97%. Location — отдельная городская карточка GeoNames PPLA2; административная P625 не выдана за центр города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3623369",
+      "reason": "Прямая карточка населенного места GeoNames с типом PPL/PPLA2, CR; выбран город, не район."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "9.61497,-84.62975; settlement_center",
+      "reason": "GeoNames 3623369 Jacó, P.PPLA2 — город, административный центр Garabito: 9.61497,-84.62975. Городская точка выбрана вместо более восточной P625 района 9.6200496,-84.6044399. Не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Jacó; Jaco",
+      "reason": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "containedInPlace country_costa_rica",
+      "reason": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/central-pacific/attractions-in-central-pacific",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Курортный город Jacó в Garabito, Puntarenas с серфингом, пляжем и городской инфраструктурой. Wikidata/точная Wikipedia описывают одноименный район вместе с главным городом; GeoNames отдельно подтверждает город."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/jaco/",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точный URL проверен: HTTP200, canonical совпадает, H1 соответствует, noindex нет. Approved MD и entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, стране, имени и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1463601",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Курортный город Jacó в Garabito, Puntarenas с серфингом, пляжем и городской инфраструктурой. Wikidata/точная Wikipedia описывают одноименный район вместе с главным городом; GeoNames отдельно подтверждает город."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1463601",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Q1463601 объединяет имя района Jacó и его главного города; соответствие туристическому городу принято на 97%. Location — отдельная городская карточка GeoNames PPLA2; административная P625 не выдана за центр города."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3623369/jaco.html",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Прямая карточка населенного места GeoNames с типом PPL/PPLA2, CR; выбран город, не район."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3623369/jaco.html",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "GeoNames 3623369 Jacó, P.PPLA2 — город, административный центр Garabito: 9.61497,-84.62975. Городская точка выбрана вместо более восточной P625 района 9.6200496,-84.6044399. Не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1463601",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1463601",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Q1463601 объединяет имя района Jacó и его главного города; соответствие туристическому городу принято на 97%. Location — отдельная городская карточка GeoNames PPLA2; административная P625 не выдана за центр города."
+}

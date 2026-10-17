@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_chicaque_park",
+  "stableId": "destination_colombia_chicaque_park",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/chicaque-park/",
+  "sourceFingerprint": "8fa064525b5a954e4c4cfeedb9bc2348868cb6d4111a8b44a8e4eb45696a995a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Park",
+  "external": {
+    "wikidataQid": "Q6062431",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Parque_natural_Chicaque"
+    },
+    "officialUrl": "https://www.chicaque.com/"
+  },
+  "location": {
+    "latitude": 4.6069444444444,
+    "longitude": -74.302777777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q6062431"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/chicaque-park.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Именно частный Parque Natural Chicaque в облачном лесу между Soacha и San Antonio del Tequendama. Официальный сайт подтверждает парк у Bogotá; не самостоятельный муниципалитет и не национальный парк с тем же статусом."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/chicaque-park/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.chicaque.com/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Именно частный Parque Natural Chicaque в облачном лесу между Soacha и San Antonio del Tequendama. Официальный сайт подтверждает парк у Bogotá; не самостоятельный муниципалитет и не национальный парк с тем же статусом."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.chicaque.com/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.chicaque.com/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6062431",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "P625 точной Wikidata совпадает с координатами испанской Wikipedia. Опорная точка парка, без утверждения о границах или входе. Противоречащие категории IUCN и площади источников не перенесены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6062431",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверены точный QID, P31/P17/P625 и sitelink; Именно частный Parque Natural Chicaque в облачном лесу между Soacha и San Antonio del Tequendama. Официальный сайт подтверждает парк у Bogotá; не самостоятельный муниципалитет и не национальный парк с тем же статусом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Parque_natural_Chicaque",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точная статья о выбранном объекте; соответствует Wikidata sitelink."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.chicaque.com/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Действующий официальный сайт именно выбранного объекта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Парк Чикаке",
+      "reason": "Именно частный Parque Natural Chicaque в облачном лесу между Soacha и San Antonio del Tequendama. Официальный сайт подтверждает парк у Bogotá; не самостоятельный муниципалитет и не национальный парк с тем же статусом."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "Park",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "4.6069444444444, -74.302777777778",
+      "reason": "P625 точной Wikidata совпадает с координатами испанской Wikipedia. Опорная точка парка, без утверждения о границах или входе. Противоречащие категории IUCN и площади источников не перенесены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q6062431",
+      "reason": "Именно частный Parque Natural Chicaque в облачном лесу между Soacha и San Antonio del Tequendama. Официальный сайт подтверждает парк у Bogotá; не самостоятельный муниципалитет и не национальный парк с тем же статусом."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Parque_natural_Chicaque",
+      "reason": "Точная статья и sitelink выбранной Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.chicaque.com/",
+      "reason": "Официальная страница самого парка/асьенды."
+    }
+  ]
+}

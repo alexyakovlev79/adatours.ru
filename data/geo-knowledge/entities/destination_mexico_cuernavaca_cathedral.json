@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_cuernavaca_cathedral",
+  "stableId": "destination_mexico_cuernavaca_cathedral",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/cuernavaca-cathedral/",
+  "sourceFingerprint": "d6de0a9b7896e5a930a83875b38dc0e406f99a225dad8c6471142f1ead1b61be",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "cathedral",
+  "external": {
+    "wikidataQid": "Q5192604",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cuernavaca_Cathedral",
+      "es": "https://es.wikipedia.org/wiki/Catedral_de_Cuernavaca"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/cuernavaca-cathedral/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/6138",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Собор Успения и бывший францисканский монастырский комплекс Куэрнаваки. Часовня Третьего ордена — часть посещения, не самостоятельная идентичность всей страницы. Серийный UNESCO-объект включает 15 монастырей; общий UNESCO ID всему собору как точной эквивалентности не присвоен."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/6138",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип cathedral соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/6138",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5192604",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Собор Успения и бывший францисканский монастырский комплекс Куэрнаваки. Часовня Третьего ордена — часть посещения, не самостоятельная идентичность всей страницы. Серийный UNESCO-объект включает 15 монастырей; общий UNESCO ID всему собору как точной эквивалентности не присвоен."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5192604",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные EN/ES страницы названного памятника; проверены sitelinks или сама статья."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5192604",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Одна проверенная точка основного объекта с ролью representative; альтернативные координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Q5192604",
+      "reason": "Собор Успения и бывший францисканский монастырский комплекс Куэрнаваки. Часовня Третьего ордена — часть посещения, не самостоятельная идентичность всей страницы. Серийный UNESCO-объект включает 15 монастырей; общий UNESCO ID всему собору как точной эквивалентности не присвоен."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "cathedral",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q5192604",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Cuernavaca_Cathedral; es:Catedral_de_Cuernavaca",
+      "reason": "Точное название, география и тип памятника совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "18.92021388888889, -99.23678055555555",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль representative."
+    }
+  ],
+  "reviewNote": "Собор Успения и бывший францисканский монастырский комплекс Куэрнаваки. Часовня Третьего ордена — часть посещения, не самостоятельная идентичность всей страницы. Серийный UNESCO-объект включает 15 монастырей; общий UNESCO ID всему собору как точной эквивалентности не присвоен.",
+  "location": {
+    "latitude": 18.92021388888889,
+    "longitude": -99.23678055555555,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5192604"
+  }
+}

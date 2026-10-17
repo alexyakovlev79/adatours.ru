@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_santa_prisca_taxco",
+  "stableId": "destination_mexico_santa_prisca_taxco",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/santa-prisca-taxco/",
+  "sourceFingerprint": "ff79589ff863acd24e42c89962b1c6278dcc1e590921b746e9e8680e90646e34",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "church",
+  "external": {
+    "wikidataQid": "Q1369633",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Church_of_Santa_Prisca_de_Taxco",
+      "es": "https://es.wikipedia.org/wiki/Templo_de_Santa_Prisca_(Taxco_de_Alarc%C3%B3n)"
+    },
+    "osm": {
+      "type": "way",
+      "id": 503145059
+    },
+    "officialUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/santa-prisca/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/santa-prisca-taxco/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/santa-prisca/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Действующий храм Санта-Приски и Святого Себастьяна в Таско, Герреро, Мексика. Одноимённая церковь Санта-Приска в Риме и святая Приска исключены. Точный OSM footprint с Q1369633 подтверждён API."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/santa-prisca/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип church соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/santa-prisca/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1369633",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Действующий храм Санта-Приски и Святого Себастьяна в Таско, Герреро, Мексика. Одноимённая церковь Санта-Приска в Риме и святая Приска исключены. Точный OSM footprint с Q1369633 подтверждён API."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1369633",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные EN/ES страницы названного памятника; проверены sitelinks или сама статья."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/503145059/full.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Проверен первичный OSM API: {\"amenity\":\"place_of_worship\",\"building\":\"church\",\"denomination\":\"catholic\",\"image\":\"https://photos.app.goo.gl/8sazUkZdhEdgx6wp9\",\"name\":\"Iglesia de Santa Prisca y San Sebastián\",\"name:en\":\"Santa Prisca Church\",\"name:es\":\"Iglesia de Santa Prisca y San Sebastián\",\"religion\":\"christian\",\"source\":\"bing;survey\",\"source:date\":\"06-24-2017\",\"url\":\"https://youtu.be/-tU2gvlvwls\",\"wikidata\":\"Q1369633\",\"wikimedia_commons\":\"Category:Santa Prisca Church (Taxco de Alarcón)\",\"wikipedia\":\"en:Santa Prisca de Taxco\"}"
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/santa-prisca/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Официальная монография Secretaría de Cultura о точном храме Санта-Приска в Таско."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/503145059/full.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Репрезентативная точка внутри подтверждённого OSM-полигона: геометрический центр bounding box. Это не усреднение координат независимых сущностей."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Q1369633",
+      "reason": "Действующий храм Санта-Приски и Святого Себастьяна в Таско, Герреро, Мексика. Одноимённая церковь Санта-Приска в Риме и святая Приска исключены. Точный OSM footprint с Q1369633 подтверждён API."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "church",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1369633",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Church_of_Santa_Prisca_de_Taxco; es:Templo_de_Santa_Prisca_(Taxco_de_Alarcón)",
+      "reason": "Точное название, география и тип памятника совпадают."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "way/503145059",
+      "reason": "Тип, собственное имя и положение соответствуют выбранному объекту. "
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/santa-prisca/",
+      "reason": "Государственный каталог описывает именно этот храм."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "18.55633315, -99.6047412",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль representative."
+    }
+  ],
+  "reviewNote": "Действующий храм Санта-Приски и Святого Себастьяна в Таско, Герреро, Мексика. Одноимённая церковь Санта-Приска в Риме и святая Приска исключены. Точный OSM footprint с Q1369633 подтверждён API.",
+  "location": {
+    "latitude": 18.55633315,
+    "longitude": -99.6047412,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/way/503145059/full.json"
+  }
+}

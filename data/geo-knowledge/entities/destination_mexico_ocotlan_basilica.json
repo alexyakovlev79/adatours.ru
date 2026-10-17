@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_ocotlan_basilica",
+  "stableId": "destination_mexico_ocotlan_basilica",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/ocotlan-basilica/",
+  "sourceFingerprint": "949aadc762f2b33a07c571584a5453eb330bfd58846ffeb1a0d1b7088bf1c896",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q16489558",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_Ocotl%C3%A1n"
+    }
+  },
+  "location": {
+    "latitude": 19.3179,
+    "longitude": -98.22796,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q16489558"
+  },
+  "alternateNames": [
+    "Basílica de Ocotlán",
+    "Santuario de Nuestra Señora de Ocotlán"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Базилика Богоматери Окотлан",
+      "reason": "Барочная базилика/святилище Ocotlán у города Тласкала, красный кирпич и белый декор. Q16489558 имеет тип basilica и точную eswiki здания. Образ Virgen de Ocotlán и населенный пункт Ocotlán не подменяют храм."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q16489558",
+      "reason": "Барочная базилика/святилище Ocotlán у города Тласкала, красный кирпич и белый декор. Q16489558 имеет тип basilica и точную eswiki здания. Образ Virgen de Ocotlán и населенный пункт Ocotlán не подменяют храм."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_Ocotl%C3%A1n",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Барочная базилика/святилище Ocotlán у города Тласкала, красный кирпич и белый декор. Q16489558 имеет тип basilica и точную eswiki здания. Образ Virgen de Ocotlán и населенный пункт Ocotlán не подменяют храм."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.3179,-98.22796; feature_point",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Basílica de Ocotlán; Santuario de Nuestra Señora de Ocotlán",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4818",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Барочная базилика/святилище Ocotlán у города Тласкала, красный кирпич и белый декор. Q16489558 имеет тип basilica и точную eswiki здания. Образ Virgen de Ocotlán и населенный пункт Ocotlán не подменяют храм."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/ocotlan-basilica/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16489558",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Барочная базилика/святилище Ocotlán у города Тласкала, красный кирпич и белый декор. Q16489558 имеет тип basilica и точную eswiki здания. Образ Virgen de Ocotlán и населенный пункт Ocotlán не подменяют храм."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16489558",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Барочная базилика/святилище Ocotlán у города Тласкала, красный кирпич и белый декор. Q16489558 имеет тип basilica и точную eswiki здания. Образ Virgen de Ocotlán и населенный пункт Ocotlán не подменяют храм."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16489558",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16489558",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4818",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Барочная базилика/святилище Ocotlán у города Тласкала, красный кирпич и белый декор. Q16489558 имеет тип basilica и точную eswiki здания. Образ Virgen de Ocotlán и населенный пункт Ocotlán не подменяют храм."
+}

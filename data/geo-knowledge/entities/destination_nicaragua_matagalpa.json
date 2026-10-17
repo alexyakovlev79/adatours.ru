@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_matagalpa",
+  "stableId": "destination_nicaragua_matagalpa",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/matagalpa/",
+  "sourceFingerprint": "6af9de6c682b3d8984903ee758d48997dd8a5330acc0fbcc7e464c6db4726c9d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q3851689",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Matagalpa%2C_Matagalpa"
+    },
+    "geonamesId": "3617708",
+    "osm": {
+      "type": "node",
+      "id": 4663401394
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/matagalpa/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-matagalpa/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "При широком описании окрестностей основной референт заголовка и summary — город Матагальпа. Выбран городской Q3851689: Q124971555 перенаправлен сюда. Q596688 относится к муниципалитету; Хинотега, Эстели и Сельва-Негра не объединены в одну геосущность. GeoNames 3617708 PPLA и OSM place=city подтверждают городскую точку."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-matagalpa/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип city соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-matagalpa/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3851689",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "При широком описании окрестностей основной референт заголовка и summary — город Матагальпа. Выбран городской Q3851689: Q124971555 перенаправлен сюда. Q596688 относится к муниципалитету; Хинотега, Эстели и Сельва-Негра не объединены в одну геосущность. GeoNames 3617708 PPLA и OSM place=city подтверждают городскую точку."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Matagalpa,_Matagalpa",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Статья относится к выбранному городу, хотя может включать сведения о муниципалитете. Главный городской референт подтверждён раздельными городскими записями Wikidata и GeoNames."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3617708/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Home › North America › Nicaragua NI › Matagalpa Department 12 › Matagalpa 12 Matagalpa P PPLA Seat of a first-order administrative division · NI Feature Map Hierarchy History Alternate names GeonameId 3617708 Coordinates 12.92795, -85.91906 Move 12°55′40.62″ N, 85°55′08.62″ W Population 109,089 Elevation ca. 672 m ASTER 672 m Timezone America/Managua Sunrise / sunset ‹ 05:34 / 17:23 › today, local time Feature code P PPLA Wikipedia Article Permalink: https://www.geonames.org/3617708/matagalpa.html .kml .rdf geotree maptree Edit Delete this place Administrative hierarchy Parents Children A Nicaragua NI Country A A"
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4663401394.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Проверен первичный OSM API: {\"admin_level\":\"4\",\"capital\":\"4\",\"ele\":\"682\",\"loc_name\":\"Perla del Septentrión\",\"name\":\"Matagalpa\",\"place\":\"city\",\"population\":\"108052\",\"postal_code\":\"61000\",\"website\":\"http://mimatagalpa.org/\"}"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4663401394.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Одна проверенная точка основного объекта с ролью settlement_center; альтернативные координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 90,
+      "selected": "Q3851689",
+      "reason": "При широком описании окрестностей основной референт заголовка и summary — город Матагальпа. Выбран городской Q3851689: Q124971555 перенаправлен сюда. Q596688 относится к муниципалитету; Хинотега, Эстели и Сельва-Негра не объединены в одну геосущность. GeoNames 3617708 PPLA и OSM place=city подтверждают городскую точку."
+    },
+    {
+      "field": "entityClass",
+      "probability": 90,
+      "selected": "city",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 90,
+      "selected": "Q3851689",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 92,
+      "selected": "en:Matagalpa,_Matagalpa",
+      "reason": "Основной городской референт статьи совпадает; муниципальные статистические поля не переносились."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3617708",
+      "reason": "Проверены первичная запись, страна, имя и feature code; административные одноимённые записи исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "node/4663401394",
+      "reason": "Тип, собственное имя и положение соответствуют выбранному объекту. "
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "12.9283899, -85.9184454",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль settlement_center."
+    }
+  ],
+  "reviewNote": "При широком описании окрестностей основной референт заголовка и summary — город Матагальпа. Выбран городской Q3851689: Q124971555 перенаправлен сюда. Q596688 относится к муниципалитету; Хинотега, Эстели и Сельва-Негра не объединены в одну геосущность. GeoNames 3617708 PPLA и OSM place=city подтверждают городскую точку.",
+  "location": {
+    "latitude": 12.9283899,
+    "longitude": -85.9184454,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/4663401394.json"
+  }
+}

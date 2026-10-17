@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_mehiko_siti_ruiny_teotihuakana",
+  "stableId": "destination_mexico_mehiko_siti_ruiny_teotihuakana",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/mexico-city-and-teotihuacan/",
+  "sourceFingerprint": "8dff7e4d30d204e644a29e22ffa900bab6f327704e9ad1be2b5b34acfeac8592",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q1489",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Mexico_City"
+    },
+    "geonamesId": "3530597",
+    "osm": {
+      "type": "node",
+      "id": 62270270
+    },
+    "officialUrl": "https://www.cdmx.gob.mx/"
+  },
+  "location": {
+    "latitude": 19.4326296,
+    "longitude": -99.1331785,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/62270270"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/mehiko-siti-ruiny-teotihuakana.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Мехико — основной именованный референт составной страницы о столице и поездках к Теотиуакану и в окрестности."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/mexico-city-and-teotihuacan/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1489",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q1489: точное название, тип и страна P17 Q96 соответствуют Мехико — основной именованный референт составной страницы о столице и поездках к Теотиуакану и в окрестности. Идентификатор принят для основного именованного референта составной страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Mexico_City",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3530597, featureCode=PPLC. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/62270270",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1489",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Официальный правительственный/муниципальный домен подтверждён P856 и первичными источниками. В этом проходе прямой доступ ограничен 502/403; факт ошибки доступа не переносится в географию."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/62270270",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "19.4326296, -99.1331785; pointRole=representative. Название начинается с Мехико; вводная, городские музеи и дворцы задают основной референт, а Теотиуакан описан как отдельная поездка за город. Q1489 и GeoNames 3530597 PPLC приняты для столицы по политике основного референта (95%). Точка OSM city — опорная точка Мехико, не центр всей экскурсионной области. Теотиуакан не объявляется частью города, его QID/координаты не присваиваются всей странице. P625 Wikidata южнее центрального городского узла, не усреднялась."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1489",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "reason": "Мехико — основной именованный референт составной страницы о столице и поездках к Теотиуакану и в окрестности."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q1489",
+      "reason": "Q1489: точное название, тип и страна P17 Q96 соответствуют Мехико — основной именованный референт составной страницы о столице и поездках к Теотиуакану и в окрестности. Идентификатор принят для основного именованного референта составной страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 95,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3530597",
+      "reason": "Прямой MX.txt: id=3530597, featureCode=PPLC. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/62270270",
+      "reason": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.cdmx.gob.mx/",
+      "reason": "Официальный правительственный/муниципальный домен подтверждён P856 и первичными источниками. В этом проходе прямой доступ ограничен 502/403; факт ошибки доступа не переносится в географию."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "19.4326296,-99.1331785",
+      "reason": "19.4326296, -99.1331785; pointRole=representative. Название начинается с Мехико; вводная, городские музеи и дворцы задают основной референт, а Теотиуакан описан как отдельная поездка за город. Q1489 и GeoNames 3530597 PPLC приняты для столицы по политике основного референта (95%). Точка OSM city — опорная точка Мехико, не центр всей экскурсионной области. Теотиуакан не объявляется частью города, его QID/координаты не присваиваются всей странице. P625 Wikidata южнее центрального городского узла, не усреднялась."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "Название начинается с Мехико; вводная, городские музеи и дворцы задают основной референт, а Теотиуакан описан как отдельная поездка за город. Q1489 и GeoNames 3530597 PPLC приняты для столицы по политике основного референта (95%). Точка OSM city — опорная точка Мехико, не центр всей экскурсионной области. Теотиуакан не объявляется частью города, его QID/координаты не присваиваются всей странице. P625 Wikidata южнее центрального городского узла, не усреднялась.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/mexico-city-and-teotihuacan/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

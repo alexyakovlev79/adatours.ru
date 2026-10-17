@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_chapultepec",
+  "stableId": "destination_mexico_chapultepec",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/chapultepec/",
+  "sourceFingerprint": "f06245cf24592f8400b2583f17333bc1d6749f9740cfc54ff34f0f7e597a23cb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Park",
+  "external": {
+    "wikidataQid": "Q523194",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chapultepec"
+    }
+  },
+  "location": {
+    "latitude": 19.413055555556,
+    "longitude": -99.197777777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q523194"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/chapultepec.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Bosque de Chapultepec — городской парк/лес в Mexico City. MD явно описывает несколько секций, озера и прогулки; замок и музей — вторичные объекты. Q523194 относится к парку, не к Castillo de Chapultepec и не одноименному муниципалитету."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/chapultepec/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chapultepec",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Bosque de Chapultepec — городской парк/лес в Mexico City. MD явно описывает несколько секций, озера и прогулки; замок и музей — вторичные объекты. Q523194 относится к парку, не к Castillo de Chapultepec и не одноименному муниципалитету."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chapultepec",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Bosque de Chapultepec — городской парк/лес в Mexico City. MD явно описывает несколько секций, озера и прогулки; замок и музей — вторичные объекты. Q523194 относится к парку, не к Castillo de Chapultepec и не одноименному муниципалитету."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chapultepec",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q523194",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Выбрана P625 парка как опорная точка representative. Она не определяет границы всех секций и не объявляется входом в замок."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q523194",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены QID,P31,P17,P131,P625 и sitelinks. Bosque de Chapultepec — городской парк/лес в Mexico City. MD явно описывает несколько секций, озера и прогулки; замок и музей — вторичные объекты. Q523194 относится к парку, не к Castillo de Chapultepec и не одноименному муниципалитету."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chapultepec",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная EN-статья о выбранном объекте соответствует sitelink Wikidata."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/bosque-de-chapultepec/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Дополнительный источник подтверждает объект и позволяет различить соседние/составные референты."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Чапультепек",
+      "reason": "Bosque de Chapultepec — городской парк/лес в Mexico City. MD явно описывает несколько секций, озера и прогулки; замок и музей — вторичные объекты. Q523194 относится к парку, не к Castillo de Chapultepec и не одноименному муниципалитету."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "Park",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "19.413055555556, -99.197777777778",
+      "reason": "Выбрана P625 парка как опорная точка representative. Она не определяет границы всех секций и не объявляется входом в замок."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q523194",
+      "reason": "Bosque de Chapultepec — городской парк/лес в Mexico City. MD явно описывает несколько секций, озера и прогулки; замок и музей — вторичные объекты. Q523194 относится к парку, не к Castillo de Chapultepec и не одноименному муниципалитету."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Chapultepec",
+      "reason": "Bosque de Chapultepec — городской парк/лес в Mexico City. MD явно описывает несколько секций, озера и прогулки; замок и музей — вторичные объекты. Q523194 относится к парку, не к Castillo de Chapultepec и не одноименному муниципалитету."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_kuernavaka",
+  "stableId": "destination_mexico_kuernavaka",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/cuernavaca/",
+  "sourceFingerprint": "c64bd27d1864c81c40e213bbcb550ada2f68a757659421d7f67955ed5c44a36d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q204245",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cuernavaca",
+      "es": "https://es.wikipedia.org/wiki/Cuernavaca"
+    },
+    "geonamesId": "3529947",
+    "officialUrl": "https://cuernavaca.gob.mx/?page_id=2819"
+  },
+  "location": {
+    "latitude": 18.918611111111,
+    "longitude": -99.234166666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q204245"
+  },
+  "alternateNames": [
+    "Cuernavaca"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/cuernavaca/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Куэрнавака; index, follow. Текущий approved MD и entry сверены. Куэрнавака, столица Морелоса в Мексике; город вечной весны с собором и дворцом Кортеса."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://cuernavaca.gob.mx/?page_id=2819",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Куэрнавака, столица Морелоса в Мексике; город вечной весны с собором и дворцом Кортеса."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204245",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: capital of the State of Morelos, Mexico. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204245",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Куэрнавака, столица Морелоса в Мексике; город вечной весны с собором и дворцом Кортеса. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204245",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Cuernavaca; Cuernavaca. Это сопоставление карточки Q204245, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204245",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3529947 в точной карточке Q204245. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204245",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 18.918611111111, -99.234166666667; роль settlement_center. Исходная точка населенного пункта, без усреднения или переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204245",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q204245",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://cuernavaca.gob.mx/?page_id=2819",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный муниципальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cuernavaca",
+      "reason": "Куэрнавака, столица Морелоса в Мексике; город вечной весны с собором и дворцом Кортеса."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q204245",
+      "reason": "Куэрнавака, столица Морелоса в Мексике; город вечной весны с собором и дворцом Кортеса."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Cuernavaca ; https://es.wikipedia.org/wiki/Cuernavaca",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3529947",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "18.918611111111, -99.234166666667",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Cuernavaca",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://cuernavaca.gob.mx/?page_id=2819",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Городской туристический раздел муниципального портала подтверждает референт; административные границы муниципалитета не приписаны городу."
+}

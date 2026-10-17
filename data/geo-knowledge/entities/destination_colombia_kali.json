@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_kali",
+  "stableId": "destination_colombia_kali",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/cali/",
+  "sourceFingerprint": "0e9b53a1edd11005d33eb6fc78a75d9aa8d4a88c56884e0efc699196e98612b8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q51103",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cali"
+    },
+    "geonamesId": "3687925",
+    "osm": {
+      "type": "node",
+      "id": 274021463
+    },
+    "officialUrl": "https://www.cali.gov.co/"
+  },
+  "location": {
+    "latitude": 3.4519988,
+    "longitude": -76.5325259,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/274021463"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/kali.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Сантьяго-де-Кали — город и столица департамента Валье-дель-Каука в Колумбии."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/colombia/place/cali/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51103",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q51103: название, тип, страна P17 Q739 и точный sitelink подтверждают Сантьяго-де-Кали — город и столица департамента Валье-дель-Каука в Колумбии. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cali",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный CO.txt: id 3687925, featureCode PPLA; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/274021463",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.cali.gov.co/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Официальный сайт администрации города, подтверждён P856 Wikidata и открытой страницей ведомства; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/274021463",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "3.4519988, -76.5325259; pointRole=settlement_center. Точная точка OSM city с Q51103, названием Santiago de Cali и сайтом Alcaldía. GeoNames 3687925 PPLA — городской референт, а 3687926 ADM2 в Wikidata — муниципалитет; выбрана точка OSM города, не центроид муниципальной территории. Географические точки источников различаются внутри большого города; не усреднялись."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51103",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Сантьяго-де-Кали — город и столица департамента Валье-дель-Каука в Колумбии."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q51103",
+      "reason": "Q51103: название, тип, страна P17 Q739 и точный sitelink подтверждают Сантьяго-де-Кали — город и столица департамента Валье-дель-Каука в Колумбии. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3687925",
+      "reason": "Первичный CO.txt: id 3687925, featureCode PPLA; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/274021463",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.cali.gov.co/",
+      "reason": "Официальный сайт администрации города, подтверждён P856 Wikidata и открытой страницей ведомства; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "3.4519988,-76.5325259",
+      "reason": "3.4519988, -76.5325259; pointRole=settlement_center. Точная точка OSM city с Q51103, названием Santiago de Cali и сайтом Alcaldía. GeoNames 3687925 PPLA — городской референт, а 3687926 ADM2 в Wikidata — муниципалитет; выбрана точка OSM города, не центроид муниципальной территории. Географические точки источников различаются внутри большого города; не усреднялись."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "Точная точка OSM city с Q51103, названием Santiago de Cali и сайтом Alcaldía. GeoNames 3687925 PPLA — городской референт, а 3687926 ADM2 в Wikidata — муниципалитет; выбрана точка OSM города, не центроид муниципальной территории. Географические точки источников различаются внутри большого города; не усреднялись.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/colombia/place/cali/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

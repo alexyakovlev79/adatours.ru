@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_ozero_marakajbo",
+  "stableId": "destination_venezuela_ozero_marakajbo",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/lake-maracaibo/",
+  "sourceFingerprint": "c8061479874da7c637df03cc981f506e11bdd32c7df2657841ab2244f439205f",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q182137",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lake_Maracaibo"
+    },
+    "geonamesId": "3633005"
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Озеро Маракайбо",
+      "reason": "H1, описание и водная география указывают на Lake Maracaibo, а не одноименный город."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q182137",
+      "reason": "H1, описание и водная география указывают на Lake Maracaibo, а не одноименный город."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Lake_Maracaibo\"}",
+      "reason": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3633005",
+      "reason": "P1566 выбранного Wikidata-объекта, не идентификатор соседнего одноименного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "9.8158333333333,-71.556666666667; representative",
+      "reason": "P625 именованного водоема; опорная точка на его акватории, не точка города."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Lago de Maracaibo; Lake Maracaibo",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 98,
+      "selected": "containedInPlace country_venezuela",
+      "reason": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182137",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "H1, описание и водная география указывают на Lake Maracaibo, а не одноименный город."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/lake-maracaibo/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182137",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "H1, описание и водная география указывают на Lake Maracaibo, а не одноименный город."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182137",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182137",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P1566 выбранного Wikidata-объекта, не идентификатор соседнего одноименного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182137",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P625 именованного водоема; опорная точка на его акватории, не точка города."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182137",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182137",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "alternateNames": [
+    "Lago de Maracaibo",
+    "Lake Maracaibo"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "reviewNote": "В MD/source-index ошибочно destinationType=city; основной референт уверенно водоем Q182137. Сборщик не меняет контент. Не использовать QID города Маракайбо.",
+  "location": {
+    "latitude": 9.8158333333333,
+    "longitude": -71.556666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q182137"
+  }
+}

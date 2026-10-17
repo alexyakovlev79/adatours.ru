@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_peschera_kandelyariya",
+  "stableId": "destination_guatemala_peschera_kandelyariya",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/candelaria-caves/",
+  "sourceFingerprint": "f3ecdc8936c36347870bd5c5fb7328dadab496ed436ddf8a1028f14670bb063f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "cave system",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/candelaria-caves/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Проверены текущие MD и source-index в main, stable ID/страна/тип и canonical. Публичный URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://adatours.ru/guatemala/place/candelaria-caves/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Класс выбран по фактическому референту MD/summary; Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5031651",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Wikidata P17 Q774 (Guatemala); страна совпадает с MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5031651",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитан Special:EntityData/Q5031651.json: label/description, P31, P17 Q774 и P625. Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5031651",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "EN/ES sitelinks прочитаны из того же выбранного Wikidata entity, описывают именованный объект."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5031651",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Выбрана одна опубликованная точка без усреднения. Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Q5031651",
+      "reason": "Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "cave system",
+      "reason": "Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Совпадают география источников и закреплённый countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q5031651",
+      "reason": "Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Candelaria_Caves\",\"es\":\"https://es.wikipedia.org/wiki/Cuevas_de_Candelaria\"}",
+      "reason": "Прямые языковые sitelinks выбранной карточки, география и объект совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 91,
+      "selected": "15.866241,-90.043387",
+      "reason": "Роль representative. Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены."
+    }
+  ],
+  "reviewNote": "Пещеры Канделярия — система в Альта-Верапас между Чисеком и Раксруха. Q5031651 включает cave и national park и соответствует этой системе. Точка P625 репрезентативная для протяжённой системы, не единый вход и не границы. Одноимённая пещера у Барильяса, Мексика и отдельный вход Mucbilhá исключены; непроверенные GeoNames/OSM не добавлены.",
+  "external": {
+    "wikidataQid": "Q5031651",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Candelaria_Caves",
+      "es": "https://es.wikipedia.org/wiki/Cuevas_de_Candelaria"
+    }
+  },
+  "location": {
+    "latitude": 15.866241,
+    "longitude": -90.043387,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5031651"
+  }
+}

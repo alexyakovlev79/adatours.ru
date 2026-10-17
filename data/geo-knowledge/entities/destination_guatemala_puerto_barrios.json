@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_puerto_barrios",
+  "stableId": "destination_guatemala_puerto_barrios",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/puerto-barrios/",
+  "sourceFingerprint": "d61e9197c45f91c07ddc6b07b295f20d55eb017bb4d37649ab475b2eebef59a6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3591062",
+    "wikidataQid": "Q991400",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puerto_Barrios"
+    },
+    "osm": {
+      "type": "node",
+      "id": 472115002
+    }
+  },
+  "location": {
+    "latitude": 15.72724,
+    "longitude": -88.59787,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/GT.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/puerto-barrios.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Город и порт Пуэрто-Барриос, Изабаль; основной референт страницы — город."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/puerto-barrios/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=3591062; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q991400",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Q991400 описывает город и одноимённый муниципалитет; city P31, точный sitelink и OSM place=city совпадают с городом страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q991400",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/472115002",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "15.72724, -88.59787; pointRole=settlement_center. Точка населённого пункта GeoNames сверена с отдельным узлом поселения OSM; административный центроид не используется."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q991400",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Город и порт Пуэрто-Барриос, Изабаль; основной референт страницы — город."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3591062",
+      "reason": "Прямая строка GT.txt id=3591062; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q991400",
+      "reason": "Q991400 описывает город и одноимённый муниципалитет; city P31, точный sitelink и OSM place=city совпадают с городом страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Puerto_Barrios",
+      "reason": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/472115002",
+      "reason": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "15.72724,-88.59787",
+      "reason": "15.72724, -88.59787; pointRole=settlement_center. Точка населённого пункта GeoNames сверена с отдельным узлом поселения OSM; административный центроид не используется."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "reviewNote": "Город и порт Пуэрто-Барриос, Изабаль; основной референт страницы — город.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/puerto-barrios/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

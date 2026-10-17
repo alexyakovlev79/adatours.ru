@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_filandiya",
+  "stableId": "destination_colombia_filandiya",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/filandia/",
+  "sourceFingerprint": "eef0fcc298b558726681636247baa10a6b313fec63ea40e7cb897ff36665a696",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1525384",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Filandia"
+    },
+    "geonamesId": "3682475"
+  },
+  "location": {
+    "latitude": 4.6733333333333,
+    "longitude": -75.658333333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1525384"
+  },
+  "alternateNames": [
+    "Filandia"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Филандия",
+      "reason": "Filandia в Quindío: цветные фасады, кофейный регион, Mirador Colina Iluminada и близость Pereira/Armenia/Salento совпадают с MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1525384",
+      "reason": "Filandia в Quindío: цветные фасады, кофейный регион, Mirador Colina Iluminada и близость Pereira/Armenia/Salento совпадают с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Filandia",
+      "reason": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3682475",
+      "reason": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "4.6733333333333,-75.658333333333; settlement_center",
+      "reason": "P625 точного Wikidata-объекта: опорная точка городской застройки для геопривязки населенного места; не центр всей административной территории и не точка отдельной экскурсии."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Filandia",
+      "reason": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "containedInPlace country_colombia",
+      "reason": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://colombia.travel/es/filandia",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Filandia в Quindío: цветные фасады, кофейный регион, Mirador Colina Iluminada и близость Pereira/Armenia/Salento совпадают с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/filandia/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Live URL: HTTP 200, canonical exact, H1 соответствует, noindex отсутствует. Проверены approved MD и entry из main 989a35d14eab8a816010b3c5c40da68f62d230bb; stableId/страна/URL совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1525384",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Filandia в Quindío: цветные фасады, кофейный регион, Mirador Colina Iluminada и близость Pereira/Armenia/Salento совпадают с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1525384",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1525384",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1525384",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P625 точного Wikidata-объекта: опорная точка городской застройки для геопривязки населенного места; не центр всей административной территории и не точка отдельной экскурсии."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1525384",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1525384",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Город/муниципалитет Filandia в Quindío, Q1525384. Не Finlandia и не отдельная смотровая площадка Colina Iluminada. Для location выбрана городская P625, а не иная координата enwiki."
+}

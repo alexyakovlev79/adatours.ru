@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_teotitlan_del_valle",
+  "stableId": "destination_mexico_teotitlan_del_valle",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/teotitlan-del-valle/",
+  "sourceFingerprint": "d90eb91c286da8851b6a3b3becb23fc5ae6081f3c373726f9949c2a7ce931540",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q7701202",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Teotitl%C3%A1n_del_Valle"
+    },
+    "geonamesId": "3515933",
+    "osm": {
+      "type": "node",
+      "id": 458606393
+    }
+  },
+  "location": {
+    "latitude": 17.02963,
+    "longitude": -96.51956,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/teotitlan-del-valle.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Поселение Теотитлан-дель-Валье в Оахаке, известное сапотекским ткачеством. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/teotitlan-del-valle/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7701202",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Поселение Теотитлан-дель-Валье в Оахаке, известное сапотекским ткачеством. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Teotitl%C3%A1n_del_Valle",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Поселение Теотитлан-дель-Валье в Оахаке, известное сапотекским ткачеством."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 3515933 в первичном MX.zip: feature code PPLA2; страна MX. Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/458606393",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: node/458606393. Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 17.02963, -96.51956. Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7701202",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Поселение Теотитлан-дель-Валье в Оахаке, известное сапотекским ткачеством. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_teotitlan_del_valle"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/teotitlan-del-valle/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте.",
+      "selected": "Q7701202"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://es.wikipedia.org/wiki/Teotitl%C3%A1n_del_Valle"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс PPLA2. Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте.",
+      "selected": "3515933"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте.",
+      "selected": "node/458606393"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте.",
+      "selected": "17.02963,-96.51956"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    }
+  ],
+  "reviewNote": "Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/teotitlan-del-valle/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Поселение Теотитлан-дель-Валье в Оахаке, известное сапотекским ткачеством.",
+      "Выбран Wikidata Q7701202 самого поселения, а не Q5990601 муниципалитета (GeoNames 8583022). Испанская статья относится к поселению. OSM town и GeoNames PPLA2 подтверждают точку в населённом пункте.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_la_asulita",
+  "stableId": "destination_venezuela_la_asulita",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/la-azulita/",
+  "sourceFingerprint": "4e83c9e5473b6dabc22261e93ecc146fd69dddbbc325aa9fd5ef83bd9d2f6271",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "alternateNames": [
+    "La Azulita"
+  ],
+  "external": {
+    "wikidataQid": "Q3206321",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/La_Azulita"
+    }
+  },
+  "location": {
+    "latitude": 8.71433,
+    "longitude": -71.4451,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3206321"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/la-azulita/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Город Ла-Асулита в штате Мерида, административный центр Andrés Bello. Совпадают имя, штат и церковь Inmaculada Concepción из описания страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/La_Azulita",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Город Ла-Асулита в штате Мерида, административный центр Andrés Bello. Совпадают имя, штат и церковь Inmaculada Concepción из описания страницы."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://es.wikipedia.org/wiki/La_Azulita",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Город Ла-Асулита в штате Мерида, административный центр Andrés Bello. Совпадают имя, штат и церковь Inmaculada Concepción из описания страницы."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://es.wikipedia.org/wiki/La_Azulita",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3206321",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Город Ла-Асулита в штате Мерида, административный центр Andrés Bello. Совпадают имя, штат и церковь Inmaculada Concepción из описания страницы. Прочитаны EntityData/API: P17=Venezuela и соответствующие sitelinks/описание."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/La_Azulita",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Город Ла-Асулита в штате Мерида, административный центр Andrés Bello. Совпадают имя, штат и церковь Inmaculada Concepción из описания страницы. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3206321",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "P625 карточки La Azulita. Номинальная точка города; statement имеет крупную заявленную точность, поэтому выбран representative, не точный вход/адрес."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://es.wikipedia.org/wiki/La_Azulita",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Ла-Асулита",
+      "reason": "Город Ла-Асулита в штате Мерида, административный центр Andrés Bello. Совпадают имя, штат и церковь Inmaculada Concepción из описания страницы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "settlement",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "La Azulita",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3206321",
+      "reason": "Город Ла-Асулита в штате Мерида, административный центр Andrés Bello. Совпадают имя, штат и церковь Inmaculada Concepción из описания страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/La_Azulita\"}",
+      "reason": "Точные языковые статьи и объектный контекст совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "8.71433,-71.4451 (representative)",
+      "reason": "P625 карточки La Azulita. Номинальная точка города; statement имеет крупную заявленную точность, поэтому выбран representative, не точный вход/адрес."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    }
+  ],
+  "reviewNote": null
+}

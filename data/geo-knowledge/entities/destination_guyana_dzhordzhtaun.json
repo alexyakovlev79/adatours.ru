@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guyana_dzhordzhtaun",
+  "stableId": "destination_guyana_dzhordzhtaun",
+  "kind": "destination",
+  "canonicalPath": "/guyana/place/georgetown/",
+  "sourceFingerprint": "00b041fd3c6de39e7104f728e903799ffe4a465645c51bec5a5395286b103694",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q10717",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Georgetown,_Guyana"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guyana"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности.",
+      "selected": "city"
+    },
+    {
+      "field": "relationships.country_guyana",
+      "probability": 99,
+      "reason": "Страна из текущего MD согласуется с внешними географическими источниками.",
+      "selected": "country_guyana"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности.",
+      "selected": "Q10717"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности.",
+      "selected": "https://en.wikipedia.org/wiki/Georgetown,_Guyana"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Выбрана городская точка P625 6°48′21″N 58°09′03″W. Wikipedia использует 6°48′04″N 58°09′18″W, примерно на 700 м юго-западнее; обе относятся к городу, не усреднялись.",
+      "selected": "6.8058333333, -58.1508333333"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guyana/place/georgetown/",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прямой HTTP-запрос: 200; H1 совпадает, canonical точный, noindex отсутствует. Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/dzhordzhtaun.md",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прочитаны MD и точная source-index entry; проверены stable ID, status: approved, countryId и смысл страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10717",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10717",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности."
+    },
+    {
+      "field": "relationships.country_guyana",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Georgetown,_Guyana",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Источник географически помещает выбранный объект в country_guyana."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10717",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Georgetown,_Guyana",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Точная статья о выбранном референте. Джорджтаун — столица Гайаны с соборами, дамбой и каналами. Основной референт город; Shell Beach, Рорайма и Кайетур в MD — дополнительные направления, а не часть его идентичности."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q10717",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Выбрана городская точка P625 6°48′21″N 58°09′03″W. Wikipedia использует 6°48′04″N 58°09′18″W, примерно на 700 м юго-западнее; обе относятся к городу, не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Georgetown,_Guyana",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Выбрана городская точка P625 6°48′21″N 58°09′03″W. Wikipedia использует 6°48′04″N 58°09′18″W, примерно на 700 м юго-западнее; обе относятся к городу, не усреднялись."
+    }
+  ],
+  "reviewNote": null,
+  "location": {
+    "latitude": 6.8058333333,
+    "longitude": -58.1508333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q10717"
+  }
+}

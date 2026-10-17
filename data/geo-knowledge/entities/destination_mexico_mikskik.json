@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_mikskik",
+  "stableId": "destination_mexico_mikskik",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/mixquic/",
+  "sourceFingerprint": "a0789b01f675a9355a009fcc87ae0d3716780aff36a21f2d6a0b058a9d7ece33",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "wikidataQid": "Q937097",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Andr%C3%A9s_Mixquic",
+      "es": "https://es.wikipedia.org/wiki/San_Andr%C3%A9s_M%C3%ADxquic"
+    },
+    "geonamesId": "3523124"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/mixquic/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Проверены точные MD и source-index на main 8970d45ea38bcd627df622a063b9a279c92fb531; live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.tlahuac.cdmx.gob.mx/san-andres-mixquic/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Поселение Сан-Андрес-Микскик в Tláhuac, Мехико; не отдельное кладбище, храм или праздник. GeoNames PPL."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.tlahuac.cdmx.gob.mx/san-andres-mixquic/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Тип settlement соответствует основному объекту страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q937097",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Имя, тип и география соответствуют странице; Q937097 — точный выбранный объект."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q937097",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "EN и ES sitelinks относятся к выбранному объекту."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q937097",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Географический объект расположен в Мексике; страна также совпадает в MD и source-index."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3523124/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Проверена первичная запись: точное имя, Мексика и соответствующий feature code."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3523124/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Выбрана одна точка с ролью settlement_center. Точка относится к выбранному объекту; независимые и конфликтующие координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Q937097",
+      "reason": "Поселение Сан-Андрес-Микскик в Tláhuac, Мехико; не отдельное кладбище, храм или праздник. GeoNames PPL."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "settlement",
+      "reason": "Тип определён по описанию основного объекта и первичному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q937097",
+      "reason": "Совпадают имя, география и основной референт MD; конкурирующие административные и тематические объекты исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:San_Andrés_Mixquic; es:San_Andrés_Míxquic",
+      "reason": "Проверенные sitelinks выбранной карточки Wikidata."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Мексика подтверждена источником и текущей записью проекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3523124",
+      "reason": "Запись соответствует типу объекта, не одноимённой административной территории."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.22512, -98.96408",
+      "reason": "Проверенный географический ориентир объекта; роль settlement_center."
+    }
+  ],
+  "reviewNote": "Поселение Сан-Андрес-Микскик в Tláhuac, Мехико; не отдельное кладбище, храм или праздник. GeoNames PPL.",
+  "location": {
+    "latitude": 19.22512,
+    "longitude": -98.96408,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3523124/"
+  }
+}

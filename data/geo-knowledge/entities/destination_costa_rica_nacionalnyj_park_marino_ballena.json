@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_nacionalnyj_park_marino_ballena",
+  "stableId": "destination_costa_rica_nacionalnyj_park_marino_ballena",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/marino-ballena-national-park/",
+  "sourceFingerprint": "7c564b1969280fe8acd15c43c568c35b4d66ea2812979933a78efb39b67dc4fb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3364525",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ballena_Marine_National_Park"
+    },
+    "geonamesId": "11238137",
+    "osm": {
+      "type": "relation",
+      "id": 11814236
+    },
+    "officialUrl": "https://www.sinac.go.cr/ES/ac/acosa/pnmb/Paginas/default.aspx"
+  },
+  "location": {
+    "latitude": 9.15497,
+    "longitude": -83.7482,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/CR.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/marino-ballena-national-park.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Национальный морской парк Марино-Баллена у Увиты на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/marino-ballena-national-park/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3364525",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Q3364525: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ballena_Marine_National_Park",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Первичная строка CR.txt: 11238137, featureCode RESN. Тип и география соответствуют Национальный морской парк Марино-Баллена у Увиты на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/11814236",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Прямой OSM API: точное имя и тип (национальный парк) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.sinac.go.cr/ES/ac/acosa/pnmb/Paginas/default.aspx",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная карточка охраняемой территории у государственного администратора SINAC; название и район совпадают. Прямой запрос в этом проходе вернул 502; адрес и содержание подтверждены индексом официального сайта и независимыми географическими записями."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "9.15497, -83.7482; pointRole=representative. Точка точной GeoNames RESN находится внутри внешнего полигона OSM relation 11814236 (проверено по /full). Это опорная точка парка, не геометрический центр и не вход. Q3364525 относится к парку, не к одноимённым бухтам, пляжу, острову или административному району Bahía Ballena. P625 Wikidata 9.09193,-83.7323 имеет грубую precision=0.1; координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/11814236/full",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Координата GeoNames попадает внутрь внешнего полигона точного национального парка; проверено по первичной OSM геометрии."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3364525",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Национальный морской парк Марино-Баллена у Увиты на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3364525",
+      "reason": "Q3364525: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "11238137",
+      "reason": "Первичная строка CR.txt: 11238137, featureCode RESN. Тип и география соответствуют Национальный морской парк Марино-Баллена у Увиты на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/11814236",
+      "reason": "Прямой OSM API: точное имя и тип (национальный парк) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.sinac.go.cr/ES/ac/acosa/pnmb/Paginas/default.aspx",
+      "reason": "Точная карточка охраняемой территории у государственного администратора SINAC; название и район совпадают. Прямой запрос в этом проходе вернул 502; адрес и содержание подтверждены индексом официального сайта и независимыми географическими записями."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "9.15497,-83.7482",
+      "reason": "9.15497, -83.7482; pointRole=representative. Точка точной GeoNames RESN находится внутри внешнего полигона OSM relation 11814236 (проверено по /full). Это опорная точка парка, не геометрический центр и не вход. Q3364525 относится к парку, не к одноимённым бухтам, пляжу, острову или административному району Bahía Ballena. P625 Wikidata 9.09193,-83.7323 имеет грубую precision=0.1; координаты не усреднялись."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "reviewNote": "Точка точной GeoNames RESN находится внутри внешнего полигона OSM relation 11814236 (проверено по /full). Это опорная точка парка, не геометрический центр и не вход. Q3364525 относится к парку, не к одноимённым бухтам, пляжу, острову или административному району Bahía Ballena. P625 Wikidata 9.09193,-83.7323 имеет грубую precision=0.1; координаты не усреднялись.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/marino-ballena-national-park/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

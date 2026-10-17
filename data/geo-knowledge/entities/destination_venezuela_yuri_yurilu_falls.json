@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_yuri_yurilu_falls",
+  "stableId": "destination_venezuela_yuri_yurilu_falls",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/yuri-yurilu-falls/",
+  "sourceFingerprint": "b33808d1ddc2d25db2d722fceed96c2308577e288c67688fdc72e11451e7fb44",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "waterfall_group",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "reason": "Самостоятельная редакционная страница пары Юри и Юрилу в Канайме. Два независимых туристических источника называют совместную поездку Salto Yuri–Yurilu / Yuri Yurilu, согласующуюся с MD."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "reason": "Самостоятельная редакционная страница пары Юри и Юрилу в Канайме. Два независимых туристических источника называют совместную поездку Salto Yuri–Yurilu / Yuri Yurilu, согласующуюся с MD.",
+      "selected": "waterfall_group"
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "reason": "Страна из текущего MD согласуется с внешними географическими источниками.",
+      "selected": "country_venezuela"
+    },
+    {
+      "field": "location",
+      "probability": 40,
+      "reason": "Поиск подтвердил пару, но не независимую точную точку для пары: координаты отдельного Yuri/рапидов непригодны для всего редакционного объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "Точный QID всей пары не установлен; идентичность маршрута подтверждена внешними источниками."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/yuri-yurilu-falls/",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прямой HTTP-запрос: 200; H1 совпадает, canonical точный, noindex отсутствует. Самостоятельная редакционная страница пары Юри и Юрилу в Канайме. Два независимых туристических источника называют совместную поездку Salto Yuri–Yurilu / Yuri Yurilu, согласующуюся с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/yuri-yurilu-falls.md",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прочитаны MD и точная source-index entry; проверены stable ID, status: approved, countryId и смысл страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://viajesfullenjoy.com/index.php/destinos/canaima",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Самостоятельная редакционная страница пары Юри и Юрилу в Канайме. Два независимых туристических источника называют совместную поездку Salto Yuri–Yurilu / Yuri Yurilu, согласующуюся с MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://viajesfullenjoy.com/index.php/destinos/canaima",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Самостоятельная редакционная страница пары Юри и Юрилу в Канайме. Два независимых туристических источника называют совместную поездку Salto Yuri–Yurilu / Yuri Yurilu, согласующуюся с MD."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://viajesfullenjoy.com/index.php/destinos/canaima",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Источник географически помещает выбранный объект в country_venezuela."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://oti-viajes.com/venezuela/waku-lodge",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Самостоятельная редакционная страница пары Юри и Юрилу в Канайме. Два независимых туристических источника называют совместную поездку Salto Yuri–Yurilu / Yuri Yurilu, согласующуюся с MD."
+    }
+  ],
+  "reviewNote": "READY для установленной пары водопадов. Общий QID и координаты не включены: точное соответствие всей паре и роль единой точки не установлены с порогом 70%. Точка отдельного Salto Yuri, рапидов или лагеря не объявляется точкой всей пары."
+}

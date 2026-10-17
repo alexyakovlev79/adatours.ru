@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_kampeche",
+  "stableId": "destination_mexico_kampeche",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/campeche/",
+  "sourceFingerprint": "d45b721d575b56857ae257cdbcd65c4fd300b96e7c5f1396665c2bae3bbc3384",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q61301",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Campeche_(city)",
+      "es": "https://es.wikipedia.org/wiki/San_Francisco_de_Campeche"
+    },
+    "geonamesId": "3531732"
+  },
+  "location": {
+    "latitude": 19.844814166666666,
+    "longitude": -90.53964916666666,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q61301"
+  },
+  "alternateNames": [
+    "San Francisco de Campeche",
+    "Campeche"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/campeche/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Кампече; index, follow. Текущий approved MD и entry сверены. Город Сан-Франсиско-де-Кампече с укрепленным историческим центром на побережье Мексиканского залива; не одноименный штат."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://whc.unesco.org/en/list/895/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город Сан-Франсиско-де-Кампече с укрепленным историческим центром на побережье Мексиканского залива; не одноименный штат."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61301",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: capital city of the Mexican state of Campeche. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61301",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город Сан-Франсиско-де-Кампече с укрепленным историческим центром на побережье Мексиканского залива; не одноименный штат. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61301",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Campeche (city); San Francisco de Campeche. Это сопоставление карточки Q61301, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61301",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3531732 в точной карточке Q61301. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61301",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 19.844814166666666, -90.53964916666666; роль settlement_center. Исходная точка населенного пункта, без усреднения или переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61301",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61301",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "San Francisco de Campeche",
+      "reason": "Город Сан-Франсиско-де-Кампече с укрепленным историческим центром на побережье Мексиканского залива; не одноименный штат."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q61301",
+      "reason": "Город Сан-Франсиско-де-Кампече с укрепленным историческим центром на побережье Мексиканского залива; не одноименный штат."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Campeche_(city) ; https://es.wikipedia.org/wiki/San_Francisco_de_Campeche",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3531732",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.844814166666666, -90.53964916666666",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "San Francisco de Campeche; Campeche",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 40,
+      "selected": "omitted",
+      "reason": "Доступный campeche.gob.mx относится к штату; точный городской URL не подтвержден."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "UNESCO 895 охватывает исторический центр и фортификации площадью 181 га, а не весь современный город. Поэтому не добавлен как внешняя идентичность всей карточки. Статусный портал campeche.gob.mx не принят за городской officialUrl."
+}

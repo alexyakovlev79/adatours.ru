@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_park_shel_ha",
+  "stableId": "destination_mexico_park_shel_ha",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/xel-ha-park/",
+  "sourceFingerprint": "49ee50cd9a0e96a85c3821a91a4f9606ca365b84e0826041470ce186307f7260",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "water_park",
+  "external": {
+    "wikidataQid": "Q8043423",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Xel-Ha_Park",
+      "es": "https://es.wikipedia.org/wiki/Xel-H%C3%A1"
+    },
+    "officialUrl": "https://www.xelha.com/en/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/xel-ha-park/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Проверены точные MD и source-index на main 8970d45ea38bcd627df622a063b9a279c92fb531; live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.xelha.com/en/how-to-get-to-xelha/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Природный водный парк Xel-Há с посещением «всё включено», не соседняя археологическая зона Xelhá Q1526776. Сайт оператора подтверждает объект и расположение возле Тулума."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.xelha.com/en/how-to-get-to-xelha/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Тип water_park соответствует основному объекту страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8043423",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Имя, тип и география соответствуют странице; Q8043423 — точный выбранный объект."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8043423",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "EN и ES sitelinks относятся к выбранному объекту."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8043423",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Географический объект расположен в Мексике; страна также совпадает в MD и source-index."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.xelha.com/en/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Точная страница археологической зоны INAH либо официальный сайт оператора водного парка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8043423",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Выбрана одна точка с ролью representative. Точка относится к выбранному объекту; независимые и конфликтующие координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Q8043423",
+      "reason": "Природный водный парк Xel-Há с посещением «всё включено», не соседняя археологическая зона Xelhá Q1526776. Сайт оператора подтверждает объект и расположение возле Тулума."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "water_park",
+      "reason": "Тип определён по описанию основного объекта и первичному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q8043423",
+      "reason": "Совпадают имя, география и основной референт MD; конкурирующие административные и тематические объекты исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Xel-Ha_Park; es:Xel-Há",
+      "reason": "Проверенные sitelinks выбранной карточки Wikidata."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Мексика подтверждена источником и текущей записью проекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.xelha.com/en/",
+      "reason": "Источник принадлежит учреждению, управляющему именно этим объектом."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "20.31722222222222, -87.35194444444444",
+      "reason": "Проверенный географический ориентир объекта; роль representative."
+    }
+  ],
+  "reviewNote": "Природный водный парк Xel-Há с посещением «всё включено», не соседняя археологическая зона Xelhá Q1526776. Сайт оператора подтверждает объект и расположение возле Тулума.",
+  "location": {
+    "latitude": 20.31722222222222,
+    "longitude": -87.35194444444444,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q8043423"
+  }
+}

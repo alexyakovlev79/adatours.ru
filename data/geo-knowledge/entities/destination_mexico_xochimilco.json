@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_xochimilco",
+  "stableId": "destination_mexico_xochimilco",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/xochimilco/",
+  "sourceFingerprint": "cc1b5f00d120d42f2a75dc42d19e5c8e59ea09e2dfc8b6fdd41605a349d85eae",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q643026",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Xochimilco"
+    },
+    "geonamesId": "3514450"
+  },
+  "location": {
+    "latitude": 19.247583333333335,
+    "longitude": -99.09822222222222,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q643026"
+  },
+  "alternateNames": [
+    "Xochimilco"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Сочимилько",
+      "reason": "Xochimilco — именованный район южной части Mexico City с каналами, chinampas и trajineras. Текст и официальный сайт Alcaldía описывают одну узнаваемую местность, а не отдельный причал или лодочный тур."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q643026",
+      "reason": "Xochimilco — именованный район южной части Mexico City с каналами, chinampas и trajineras. Текст и официальный сайт Alcaldía описывают одну узнаваемую местность, а не отдельный причал или лодочный тур. Q643026 — район/alcaldía Xochimilco с историческим центром и каналами, не самостоятельный отдельный город за пределами CDMX. P625 — районная опорная точка, не точка посадки на лодку. UNESCO412 более широкого серийного памятника не присвоен всему административному району."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Xochimilco",
+      "reason": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Q643026 — район/alcaldía Xochimilco с историческим центром и каналами, не самостоятельный отдельный город за пределами CDMX. P625 — районная опорная точка, не точка посадки на лодку. UNESCO412 более широкого серийного памятника не присвоен всему административному району."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3514450",
+      "reason": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.247583333333335,-99.09822222222222; representative",
+      "reason": "P625 выбранного главного объекта: опорная точка достопримечательности/района; не усредненная координата разных объектов и не обещание входа."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Xochimilco",
+      "reason": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.xochimilco.cdmx.gob.mx/que-hacer/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Xochimilco — именованный район южной части Mexico City с каналами, chinampas и trajineras. Текст и официальный сайт Alcaldía описывают одну узнаваемую местность, а не отдельный причал или лодочный тур."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/xochimilco/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точный live URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, имени, стране и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q643026",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Xochimilco — именованный район южной части Mexico City с каналами, chinampas и trajineras. Текст и официальный сайт Alcaldía описывают одну узнаваемую местность, а не отдельный причал или лодочный тур. Q643026 — район/alcaldía Xochimilco с историческим центром и каналами, не самостоятельный отдельный город за пределами CDMX. P625 — районная опорная точка, не точка посадки на лодку. UNESCO412 более широкого серийного памятника не присвоен всему административному району."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q643026",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Q643026 — район/alcaldía Xochimilco с историческим центром и каналами, не самостоятельный отдельный город за пределами CDMX. P625 — районная опорная точка, не точка посадки на лодку. UNESCO412 более широкого серийного памятника не присвоен всему административному району."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q643026",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q643026",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P625 выбранного главного объекта: опорная точка достопримечательности/района; не усредненная координата разных объектов и не обещание входа."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q643026",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://adatours.ru/mexico/place/xochimilco/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Q643026 — район/alcaldía Xochimilco с историческим центром и каналами, не самостоятельный отдельный город за пределами CDMX. P625 — районная опорная точка, не точка посадки на лодку. UNESCO412 более широкого серийного памятника не присвоен всему административному району."
+}

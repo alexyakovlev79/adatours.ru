@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_rivera_majya",
+  "stableId": "destination_mexico_rivera_majya",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/riviera-maya/",
+  "sourceFingerprint": "1a0b754a4d70cb0b95de73c6849638d20fa2b32c2103baa9d2df40f7c6700c20",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "tourism region",
+  "alternateNames": [
+    "Riviera Maya"
+  ],
+  "external": {
+    "wikidataQid": "Q2061038",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Riviera_Maya",
+      "es": "https://es.wikipedia.org/wiki/Riviera_Maya"
+    },
+    "officialUrl": "https://caribemexicano.travel/destinos/riviera-maya"
+  },
+  "location": {
+    "latitude": 20.631388888889,
+    "longitude": -87.073055555556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2061038"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/riviera-maya/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Ривьера-Майя, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Туристическая прибрежная Ривьера-Майя в Кинтана-Роо, Мексика; регион пляжей, сенотов и археологических памятников, включая район Тулума."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://caribemexicano.travel/destinos/riviera-maya",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Туристическая прибрежная Ривьера-Майя в Кинтана-Роо, Мексика; регион пляжей, сенотов и археологических памятников, включая район Тулума."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2061038",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: area just south of the tip of the Yucatán Peninsula in Mexico. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2061038",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Туристическая прибрежная Ривьера-Майя в Кинтана-Роо, Мексика; регион пляжей, сенотов и археологических памятников, включая район Тулума. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2061038",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: enwiki: Riviera Maya; eswiki: Riviera Maya. Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2061038",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 20.631388888889, -87.073055555556; исходная координата, роль representative. P625 используется как опорная точка региона в районе Плая-дель-Кармен, входящего в Ривьеру-Майя; не заявляется центр или полный охват прибрежной полосы. Регион не приравнен к одному городу или муниципалитету."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2061038",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: Riviera Maya."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2061038",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://caribemexicano.travel/destinos/riviera-maya",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Официальный туристический или управляющий источник о выбранном объекте. Страница служит officialUrl и доказательством; не превращается автоматически в географический sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Туристическая прибрежная Ривьера-Майя в Кинтана-Роо, Мексика; регион пляжей, сенотов и археологических памятников, включая район Тулума.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "tourism region",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2061038",
+      "reason": "Туристическая прибрежная Ривьера-Майя в Кинтана-Роо, Мексика; регион пляжей, сенотов и археологических памятников, включая район Тулума."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Riviera_Maya ; https://es.wikipedia.org/wiki/Riviera_Maya",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 91,
+      "selected": "20.631388888889, -87.073055555556",
+      "reason": "P625 точного объекта; роль representative; P625 используется как опорная точка региона в районе Плая-дель-Кармен, входящего в Ривьеру-Майя; не заявляется центр или полный охват прибрежной полосы. Регион не приравнен к одному городу или муниципалитету."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Riviera Maya",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://caribemexicano.travel/destinos/riviera-maya",
+      "reason": "Проверен официальный источник о направлении или управляющей организации; используется по назначению поля officialUrl."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "P625 используется как опорная точка региона в районе Плая-дель-Кармен, входящего в Ривьеру-Майя; не заявляется центр или полный охват прибрежной полосы. Регион не приравнен к одному городу или муниципалитету."
+}

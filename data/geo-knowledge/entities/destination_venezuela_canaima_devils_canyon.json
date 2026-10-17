@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_canaima_devils_canyon",
+  "stableId": "destination_venezuela_canaima_devils_canyon",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/canaima-devils-canyon/",
+  "sourceFingerprint": "832ffabe0effceabdda319d7892953352a0b9cf251b71ba6052a0e9b15f7fc62",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "canyon",
+  "alternateNames": [
+    "Cañón del Diablo",
+    "Devil's Canyon"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 10991581598
+    }
+  },
+  "location": {
+    "latitude": 5.9588515,
+    "longitude": -62.5153247,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/10991581598"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_venezuela_churun_river"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/canaima-devils-canyon/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Каньон на Чуруне по пути к Ратонсито и водопаду Анхель. Название, речной маршрут и окрестности совпадают; Анхель и весь Чурун — самостоятельные объекты."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.newfrontiersadventures.com/ve/Kuanave.html",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Каньон на Чуруне по пути к Ратонсито и водопаду Анхель. Название, речной маршрут и окрестности совпадают; Анхель и весь Чурун — самостоятельные объекты."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.newfrontiersadventures.com/ve/Kuanave.html",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Каньон на Чуруне по пути к Ратонсито и водопаду Анхель. Название, речной маршрут и окрестности совпадают; Анхель и весь Чурун — самостоятельные объекты."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.newfrontiersadventures.com/ve/Kuanave.html",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/10991581598",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Прямо прочитан OSM API: имя, тип и географическое положение совпадают; самостоятельная именованная точка объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/10991581598",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Текущая именованная OSM-точка Cañón del Diablo, position Bing/Esri и local knowledge. Опорная точка ущелья, не вход и не центр полигона; старую точку Mapcarta 5.95766,-62.51369 не усреднять."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://www.newfrontiersadventures.com/ve/Kuanave.html",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    },
+    {
+      "field": "relationships.destination_venezuela_churun_river",
+      "sourceUrl": "https://www.newfrontiersadventures.com/ve/Kuanave.html",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Оператор описывает каньон на маршруте вверх по Чуруну к Ратонсито; relatedPlace отражает географическую связь без отождествления каньона с рекой."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Каньон Дьявола в Канайме",
+      "reason": "Каньон на Чуруне по пути к Ратонсито и водопаду Анхель. Название, речной маршрут и окрестности совпадают; Анхель и весь Чурун — самостоятельные объекты."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "canyon",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Cañón del Diablo; Devil's Canyon",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "selected": "node/10991581598",
+      "reason": "Точная карточка OSM проверена напрямую, соседние объекты исключены."
+    },
+    {
+      "field": "location",
+      "probability": 87,
+      "selected": "5.9588515,-62.5153247 (representative)",
+      "reason": "Текущая именованная OSM-точка Cañón del Diablo, position Bing/Esri и local knowledge. Опорная точка ущелья, не вход и не центр полигона; старую точку Mapcarta 5.95766,-62.51369 не усреднять."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    },
+    {
+      "field": "relationships.destination_venezuela_churun_river",
+      "probability": 97,
+      "selected": "destination_venezuela_churun_river",
+      "reason": "Оператор описывает каньон на маршруте вверх по Чуруну к Ратонсито; relatedPlace отражает географическую связь без отождествления каньона с рекой."
+    }
+  ],
+  "reviewNote": "Q27769724, Q27835935, Q27801156 и Q27785212 относятся к Мексике и исключены. Фото Commons содержит положение камеры, не координату ущелья. Отдельный подтвержденный венесуэльский QID не найден."
+}

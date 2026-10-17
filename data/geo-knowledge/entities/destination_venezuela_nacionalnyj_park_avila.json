@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_nacionalnyj_park_avila",
+  "stableId": "destination_venezuela_nacionalnyj_park_avila",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/el-avila-national-park/",
+  "sourceFingerprint": "39a46f553a8d6beae795c2979c041c8bd0101d8bea4eff1fcab779874bf94369",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q19966843",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/El_%C3%81vila_National_Park"
+    }
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Национальный парк Авила",
+      "reason": "Страница национального парка над Каракасом, а не отдельной вершины El Ávila."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q19966843",
+      "reason": "Страница национального парка над Каракасом, а не отдельной вершины El Ávila."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/El_%C3%81vila_National_Park\"}",
+      "reason": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "10.533333333333,-66.866666666667; representative",
+      "reason": "P625 парка: опорная точка территории, не вход и не вершина."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Parque Nacional El Ávila; Waraira Repano",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 98,
+      "selected": "containedInPlace country_venezuela",
+      "reason": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19966843",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Страница национального парка над Каракасом, а не отдельной вершины El Ávila."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/el-avila-national-park/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19966843",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Страница национального парка над Каракасом, а не отдельной вершины El Ávila."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19966843",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19966843",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P625 парка: опорная точка территории, не вход и не вершина."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19966843",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19966843",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "alternateNames": [
+    "Parque Nacional El Ávila",
+    "Waraira Repano"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "reviewNote": "Q19966843 соответствует национальному парку; отдельная гора и канатная дорога не отождествляются с парком.",
+  "location": {
+    "latitude": 10.533333333333,
+    "longitude": -66.866666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q19966843"
+  }
+}

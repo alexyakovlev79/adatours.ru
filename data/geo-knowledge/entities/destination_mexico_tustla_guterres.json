@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_tustla_guterres",
+  "stableId": "destination_mexico_tustla_guterres",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/tuxtla-gutierrez/",
+  "sourceFingerprint": "90301cb8eec20e428f5196d8169996c499010ab2f9f44617dec000cbc85b68e7",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q207429",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tuxtla_Guti%C3%A9rrez"
+    },
+    "geonamesId": "3515001",
+    "osm": {
+      "type": "node",
+      "id": 269911529
+    },
+    "officialUrl": "https://www.tuxtla.gob.mx/"
+  },
+  "location": {
+    "latitude": 16.75357,
+    "longitude": -93.11578,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/tuxtla-gutierrez.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Город Тустла-Гутьеррес, столица штата Чьяпас. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/tuxtla-gutierrez/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q207429",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Город Тустла-Гутьеррес, столица штата Чьяпас. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tuxtla_Guti%C3%A9rrez",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Город Тустла-Гутьеррес, столица штата Чьяпас."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 3515001 в первичном MX.zip: feature code PPLA; страна MX. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/269911529",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: node/269911529. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 16.75357, -93.11578. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q207429",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q207429",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Тустла-Гутьеррес, столица штата Чьяпас. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_tustla_guterres"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/tuxtla-gutierrez/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется.",
+      "selected": "Q207429"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/Tuxtla_Guti%C3%A9rrez"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс PPLA. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется.",
+      "selected": "3515001"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется.",
+      "selected": "node/269911529"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется.",
+      "selected": "16.75357,-93.11578"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется.",
+      "selected": "https://www.tuxtla.gob.mx/"
+    }
+  ],
+  "reviewNote": "GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/tuxtla-gutierrez/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Город Тустла-Гутьеррес, столица штата Чьяпас.",
+      "GeoNames отображает название Tuxtla; класс PPLA, штат Чьяпас и OSM с Q207429 подтверждают столицу. Официальный домен подтверждён P856; прямой запрос сайта вернул HTTP 403, доступность сайта администрации не заявляется.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

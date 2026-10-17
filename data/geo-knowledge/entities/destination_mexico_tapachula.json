@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_tapachula",
+  "stableId": "destination_mexico_tapachula",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/tapachula/",
+  "sourceFingerprint": "66195e57bca6073dddabdf12a0b537757a651c6721eb646010bd3d5764960b0c",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q988225",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Tapachula_de_C%C3%B3rdova_y_Ord%C3%B3%C3%B1ez"
+    },
+    "geonamesId": "3516266"
+  },
+  "location": {
+    "latitude": 14.911071388889,
+    "longitude": -92.26432,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q988225"
+  },
+  "alternateNames": [
+    "Tapachula",
+    "Tapachula de Córdova y Ordóñez"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Тапачула",
+      "reason": "Именованный город Tapachula de Córdova y Ordóñez в Soconusco, Chiapas у границы Guatemala и вулкана Tacaná. Точная eswiki и Q988225 отделяют город от муниципалитета Q3444131."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q988225",
+      "reason": "Именованный город Tapachula de Córdova y Ordóñez в Soconusco, Chiapas у границы Guatemala и вулкана Tacaná. Точная eswiki и Q988225 отделяют город от муниципалитета Q3444131. Выбран город Q988225, не муниципалитет Q3444131, на который ссылается enwiki Tapachula. P625 Q988225 подтверждена INEGI, 2020. В MD есть ошибочное утверждение о столице Chiapas: в паспорт не перенесено; город определен по имени и реальной географии."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Tapachula_de_C%C3%B3rdova_y_Ord%C3%B3%C3%B1ez",
+      "reason": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Выбран город Q988225, не муниципалитет Q3444131, на который ссылается enwiki Tapachula. P625 Q988225 подтверждена INEGI, 2020. В MD есть ошибочное утверждение о столице Chiapas: в паспорт не перенесено; город определен по имени и реальной географии."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3516266",
+      "reason": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "14.911071388889,-92.26432; settlement_center",
+      "reason": "P625 точной карточки населенного пункта, выбран городской объект; не административный центр всей более широкой территории."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Tapachula; Tapachula de Córdova y Ordóñez",
+      "reason": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.chiapas.gob.mx/conoce-chiapas/conoce-tapachula/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Именованный город Tapachula de Córdova y Ordóñez в Soconusco, Chiapas у границы Guatemala и вулкана Tacaná. Точная eswiki и Q988225 отделяют город от муниципалитета Q3444131."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/tapachula/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точный live URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, имени, стране и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q988225",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Именованный город Tapachula de Córdova y Ordóñez в Soconusco, Chiapas у границы Guatemala и вулкана Tacaná. Точная eswiki и Q988225 отделяют город от муниципалитета Q3444131. Выбран город Q988225, не муниципалитет Q3444131, на который ссылается enwiki Tapachula. P625 Q988225 подтверждена INEGI, 2020. В MD есть ошибочное утверждение о столице Chiapas: в паспорт не перенесено; город определен по имени и реальной географии."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q988225",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Выбран город Q988225, не муниципалитет Q3444131, на который ссылается enwiki Tapachula. P625 Q988225 подтверждена INEGI, 2020. В MD есть ошибочное утверждение о столице Chiapas: в паспорт не перенесено; город определен по имени и реальной географии."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q988225",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q988225",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P625 точной карточки населенного пункта, выбран городской объект; не административный центр всей более широкой территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q988225",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://adatours.ru/mexico/place/tapachula/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Выбран город Q988225, не муниципалитет Q3444131, на который ссылается enwiki Tapachula. P625 Q988225 подтверждена INEGI, 2020. В MD есть ошибочное утверждение о столице Chiapas: в паспорт не перенесено; город определен по имени и реальной географии."
+}

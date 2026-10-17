@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_ikstapa_i_siuataneho",
+  "stableId": "destination_mexico_ikstapa_i_siuataneho",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/ixtapa-and-zihuatanejo/",
+  "sourceFingerprint": "25e19bbe2dafade25dba08931e5fb950870f381e827a5d1c6aaf63881b8028b5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "paired coastal resorts",
+  "external": {
+    "wikidataQid": "Q2088709",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ixtapa",
+      "es": "https://es.wikipedia.org/wiki/Ixtapa_Zihuatanejo"
+    },
+    "geonamesId": "4004294",
+    "officialUrl": "https://www.ixtapazihuatanejo.travel/"
+  },
+  "location": {
+    "latitude": 17.661034722222222,
+    "longitude": -101.60099694444445,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2088709"
+  },
+  "alternateNames": [
+    "Ixtapa Zihuatanejo",
+    "Ixtapa y Zihuatanejo"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/ixtapa-and-zihuatanejo/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Икстапа и Сиуатанехо; index, follow. Текущий approved MD и entry сверены. Составное направление на тихоокеанском побережье Герреро. Основной именованный референт MD — Икстапа: она описана первой и повторно, Сиуатанехо представлен соседним рыбацким городком."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.ixtapazihuatanejo.travel/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Составное направление на тихоокеанском побережье Герреро. Основной именованный референт MD — Икстапа: она описана первой и повторно, Сиуатанехо представлен соседним рыбацким городком."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088709",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: town in Zihuatanejo Municipality, State of Guerrero, Mexico. Класс страницы отражает пару курортов; внешняя identity ниже относится к основному референту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088709",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Составное направление на тихоокеанском побережье Герреро. Основной именованный референт MD — Икстапа: она описана первой и повторно, Сиуатанехо представлен соседним рыбацким городком. По probability-70-v1 принят Q2088709 Ixtapa Zihuatanejo (enwiki Ixtapa) как основной референт составной страницы. Отдельный город Zihuatanejo Q202831 не склеен с ним. Координата — опорная точка Икстапы, не центр двух городов; Ixtapa в Чьяпасе исключена."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088709",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Ixtapa; Ixtapa Zihuatanejo. Это сопоставление карточки Q2088709, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088709",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 4004294 в точной карточке Q2088709. Идентификатор относится к основному референту Ixtapa в Герреро."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088709",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 17.661034722222222, -101.60099694444445; роль representative. Опорная точка Икстапы, без усреднения с Сиуатанехо."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088709",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Названия пары направления подтверждены MD и OCV Ixtapa Zihuatanejo; Ixtapa отдельно — основной референт, не замена составного заголовка."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088709",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.ixtapazihuatanejo.travel/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. OCV представляет оба соседних курорта."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Ixtapa and Zihuatanejo; primary referent Ixtapa, Guerrero",
+      "reason": "Составное направление на тихоокеанском побережье Герреро. Основной именованный референт MD — Икстапа: она описана первой и повторно, Сиуатанехо представлен соседним рыбацким городком."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "paired coastal resorts",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 91,
+      "selected": "Q2088709",
+      "reason": "Составное направление на тихоокеанском побережье Герреро. Основной именованный референт MD — Икстапа: она описана первой и повторно, Сиуатанехо представлен соседним рыбацким городком."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 91,
+      "selected": "https://en.wikipedia.org/wiki/Ixtapa ; https://es.wikipedia.org/wiki/Ixtapa_Zihuatanejo",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 88,
+      "selected": "4004294",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "17.661034722222222, -101.60099694444445",
+      "reason": "P625 принятой карточки; роль representative соответствует основному референту Икстапе."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Ixtapa Zihuatanejo; Ixtapa y Zihuatanejo",
+      "reason": "Названия подтверждены labels/sitelinks и официальным OCV."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.ixtapazihuatanejo.travel/",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "По probability-70-v1 принят Q2088709 Ixtapa Zihuatanejo (enwiki Ixtapa) как основной референт составной страницы. Отдельный город Zihuatanejo Q202831 не склеен с ним. Координата — опорная точка Икстапы, не центр двух городов; Ixtapa в Чьяпасе исключена."
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_kosumel",
+  "stableId": "destination_mexico_kosumel",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/cozumel/",
+  "sourceFingerprint": "a668fc81934e03dafa180a62c09cd3adb5a2f51659a3173c5157b61c2d501555",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "island",
+  "external": {
+    "wikidataQid": "Q20119933",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cozumel",
+      "es": "https://es.wikipedia.org/wiki/Isla_de_Cozumel"
+    },
+    "geonamesId": "3530102",
+    "officialUrl": "https://caribemexicano.travel/destinos/isla-cozumel"
+  },
+  "location": {
+    "latitude": 20.416666666667,
+    "longitude": -86.916666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q20119933"
+  },
+  "alternateNames": [
+    "Cozumel",
+    "Isla Cozumel",
+    "Isla de Cozumel"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/cozumel/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Косумель; index, follow. Текущий approved MD и entry сверены. Остров Косумель в Кинтана-Роо, Мексика. MD посвящен острову, а не городу San Miguel de Cozumel, муниципалитету или национальному парку рифов."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://caribemexicano.travel/destinos/isla-cozumel",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Остров Косумель в Кинтана-Роо, Мексика. MD посвящен острову, а не городу San Miguel de Cozumel, муниципалитету или национальному парку рифов."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20119933",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: island in Quintana Roo, Mexico. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20119933",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Остров Косумель в Кинтана-Роо, Мексика. MD посвящен острову, а не городу San Miguel de Cozumel, муниципалитету или национальному парку рифов. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20119933",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Cozumel; Isla de Cozumel. Это сопоставление карточки Q20119933, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20119933",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3530102 в точной карточке Q20119933. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20119933",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 20.416666666667, -86.916666666667; роль representative. Грубая точка островной карточки; не координата San Miguel и не утверждение о геометрическом центре."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20119933",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q20119933",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://caribemexicano.travel/destinos/isla-cozumel",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cozumel Island",
+      "reason": "Остров Косумель в Кинтана-Роо, Мексика. MD посвящен острову, а не городу San Miguel de Cozumel, муниципалитету или национальному парку рифов."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "island",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q20119933",
+      "reason": "Остров Косумель в Кинтана-Роо, Мексика. MD посвящен острову, а не городу San Miguel de Cozumel, муниципалитету или национальному парку рифов."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Cozumel ; https://es.wikipedia.org/wiki/Isla_de_Cozumel",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3530102",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 91,
+      "selected": "20.416666666667, -86.916666666667",
+      "reason": "P625 принятой карточки; роль representative соответствует острову; не заявляется точный центр."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Cozumel; Isla Cozumel; Isla de Cozumel",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://caribemexicano.travel/destinos/isla-cozumel",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "P625 использована как опорная точка острова с исходной грубой точностью, не как доказанный геометрический центр. Не перенесено ошибочное утверждение MD о крупнейшем острове Мексики."
+}

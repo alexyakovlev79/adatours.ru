@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_ostrova_katalina",
+  "stableId": "destination_costa_rica_ostrova_katalina",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/catalina-islands/",
+  "sourceFingerprint": "da27ca8e3a7de58f6994def1c9dbae88986b62ad9c06a3b5b8d01323d65ea928",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3621619"
+  },
+  "location": {
+    "latitude": 10.47966,
+    "longitude": -85.87022,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/CR.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/catalina-islands.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Группа островов Каталина / Santa Catalina у Фламинго, Гуанакасте, на северо-западном тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/catalina-islands/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Первичная строка CR.txt: 3621619, featureCode ISLS. Тип и география соответствуют Группа островов Каталина / Santa Catalina у Фламинго, Гуанакасте, на северо-западном тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "10.47966, -85.87022; pointRole=representative. Точная GeoNames ISLS 3621619 относится к группе островов у Фламинго; точка опорная для архипелага, может находиться между отдельными островами. Это не частный прибрежный комплекс Las Catalinas, не Isla Catalina на северо-западе у Санта-Элены и не одноимённые острова США/Мексики/Доминиканы. OSM way 19781345 — один контур island с коллективным названием; не присвоен всей группе. Точный QID архипелага не найден."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и официальной туристической географией/кодом CR в GeoNames, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://scubadivecostarica.cr/faq",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Местный оператор у Фламинго описывает Catalina Islands как группу вулканических островов у побережья Гуанакасте; географический контекст совпадает."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Группа островов Каталина / Santa Catalina у Фламинго, Гуанакасте, на северо-западном тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3621619",
+      "reason": "Первичная строка CR.txt: 3621619, featureCode ISLS. Тип и география соответствуют Группа островов Каталина / Santa Catalina у Фламинго, Гуанакасте, на северо-западном тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "10.47966,-85.87022",
+      "reason": "10.47966, -85.87022; pointRole=representative. Точная GeoNames ISLS 3621619 относится к группе островов у Фламинго; точка опорная для архипелага, может находиться между отдельными островами. Это не частный прибрежный комплекс Las Catalinas, не Isla Catalina на северо-западе у Санта-Элены и не одноимённые острова США/Мексики/Доминиканы. OSM way 19781345 — один контур island с коллективным названием; не присвоен всей группе. Точный QID архипелага не найден."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и официальной туристической географией/кодом CR в GeoNames, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 0,
+      "reason": "Точный QID коста-риканской островной группы не установлен."
+    },
+    {
+      "field": "external.osm",
+      "probability": 65,
+      "selected": "way/19781345",
+      "reason": "Контур одного island с коллективным названием не подтверждает идентичность всей группы ISLS."
+    }
+  ],
+  "reviewNote": "Точная GeoNames ISLS 3621619 относится к группе островов у Фламинго; точка опорная для архипелага, может находиться между отдельными островами. Это не частный прибрежный комплекс Las Catalinas, не Isla Catalina на северо-западе у Санта-Элены и не одноимённые острова США/Мексики/Доминиканы. OSM way 19781345 — один контур island с коллективным названием; не присвоен всей группе. Точный QID архипелага не найден.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/catalina-islands/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

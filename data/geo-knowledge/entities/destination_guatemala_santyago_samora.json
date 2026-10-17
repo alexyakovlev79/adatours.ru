@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_santyago_samora",
+  "stableId": "destination_guatemala_santyago_samora",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/santiago-zamora/",
+  "sourceFingerprint": "84068934f63bbcbcc45f9953c914fc871532b066fb5a2de981fa402e439f8132",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3589099",
+    "osm": {
+      "type": "node",
+      "id": 4085375222
+    }
+  },
+  "location": {
+    "latitude": 14.54499,
+    "longitude": -90.79985,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/GT.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/santiago-zamora.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Деревня Santiago Zamora в Сакатепекесе возле Антигуа, посещаемая ради культуры какчикелей и ткачества."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/santiago-zamora/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=3589099; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/4085375222",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "14.54499, -90.79985; pointRole=settlement_center. Идентичность подтверждается GeoNames PPL, OSM village и полевыми материалами Parsons DEED Lab о кооперативе Ixoki A'J Quiemo L' в Santiago Zamora. Точный Wikidata QID не установлен."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и точный village в Сакатепекесе."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://deed.parsons.edu/2010/06/12/our-first-visit-with-santiago-zamora/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Полевой источник Parsons DEED Lab связывает Santiago Zamora с ткачихами Ixoki; подтверждает культурный контекст MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Деревня Santiago Zamora в Сакатепекесе возле Антигуа, посещаемая ради культуры какчикелей и ткачества."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3589099",
+      "reason": "Прямая строка GT.txt id=3589099; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/4085375222",
+      "reason": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "14.54499,-90.79985",
+      "reason": "14.54499, -90.79985; pointRole=settlement_center. Идентичность подтверждается GeoNames PPL, OSM village и полевыми материалами Parsons DEED Lab о кооперативе Ixoki A'J Quiemo L' в Santiago Zamora. Точный Wikidata QID не установлен."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и точный village в Сакатепекесе."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 0,
+      "reason": "Точный QID деревни не найден и не присваивается по одному совпадению названия."
+    }
+  ],
+  "reviewNote": "Идентичность подтверждается GeoNames PPL, OSM village и полевыми материалами Parsons DEED Lab о кооперативе Ixoki A'J Quiemo L' в Santiago Zamora. Точный Wikidata QID не установлен.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/santiago-zamora/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

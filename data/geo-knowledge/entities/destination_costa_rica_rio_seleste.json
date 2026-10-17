@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_rio_seleste",
+  "stableId": "destination_costa_rica_rio_seleste",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/rio-celeste/",
+  "sourceFingerprint": "40f9b90a6c987e10197f5a4c61d97c6c8d06b8fcb3c156b8473c5296037adc47",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "river",
+  "external": {
+    "wikidataQid": "Q3294211",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Celeste_River"
+    },
+    "osm": {
+      "type": "way",
+      "id": 140618305
+    }
+  },
+  "location": {
+    "latitude": 10.7035769,
+    "longitude": -84.9907739,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/2338504781"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/rio-celeste.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Голубая река Рио-Селесте в районе национального парка Тенорио, с водопадом и местом слияния Лос-Теньидерос."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/rio-celeste/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3294211",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Q3294211: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Celeste_River",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/140618305",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Первичный OSM river way 140618305 носит имя Rio Celeste и содержит точку одноимённого водопада. Это именованное русло туристического участка, без утверждения о полном бассейне или административной территории."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/2338504781",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "10.7035769, -84.9907739; pointRole=feature_point. В MD destinationType=city, но заголовок, summary и весь текст однозначно описывают реку; паспорт классифицирует объект как river. Q3294211 — Celeste River; парк Тенорио остаётся самостоятельным объектом. Выбранная feature_point — водопад Catarata Río Celeste OSM node 2338504781, который входит в последовательность узлов river way 140618305. Это конкретная точка на реке, не её географический центр. GeoNames 10227178 CMN с названием Rio Celeste находится у другого референта и не принят."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3294211",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Celeste_River",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Основной объект — river, несмотря на ошибочный destinationType=city в исходном MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Голубая река Рио-Селесте в районе национального парка Тенорио, с водопадом и местом слияния Лос-Теньидерос."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3294211",
+      "reason": "Q3294211: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "way/140618305",
+      "reason": "Первичный OSM river way 140618305 носит имя Rio Celeste и содержит точку одноимённого водопада. Это именованное русло туристического участка, без утверждения о полном бассейне или административной территории."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "10.7035769,-84.9907739",
+      "reason": "10.7035769, -84.9907739; pointRole=feature_point. В MD destinationType=city, но заголовок, summary и весь текст однозначно описывают реку; паспорт классифицирует объект как river. Q3294211 — Celeste River; парк Тенорио остаётся самостоятельным объектом. Выбранная feature_point — водопад Catarata Río Celeste OSM node 2338504781, который входит в последовательность узлов river way 140618305. Это конкретная точка на реке, не её географический центр. GeoNames 10227178 CMN с названием Rio Celeste находится у другого референта и не принят."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 25,
+      "selected": "10227178",
+      "reason": "GeoNames CMN не является речной карточкой и имеет другое положение."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "river",
+      "reason": "Основной объект — river, несмотря на ошибочный destinationType=city в исходном MD."
+    }
+  ],
+  "reviewNote": "В MD destinationType=city, но заголовок, summary и весь текст однозначно описывают реку; паспорт классифицирует объект как river. Q3294211 — Celeste River; парк Тенорио остаётся самостоятельным объектом. Выбранная feature_point — водопад Catarata Río Celeste OSM node 2338504781, который входит в последовательность узлов river way 140618305. Это конкретная точка на реке, не её географический центр. GeoNames 10227178 CMN с названием Rio Celeste находится у другого референта и не принят.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/rio-celeste/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

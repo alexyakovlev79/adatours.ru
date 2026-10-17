@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_honduras_utila",
+  "stableId": "destination_honduras_utila",
+  "kind": "destination",
+  "canonicalPath": "/honduras/place/utila/",
+  "sourceFingerprint": "fd47e83e0aec5200a1c26db9a71523ca42f5dc67722e3c458cb2c13fe3a2d731",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "island",
+  "alternateNames": [
+    "Utila",
+    "Útila",
+    "Isla de Utila"
+  ],
+  "external": {
+    "wikidataQid": "Q1572113",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Utila",
+      "es": "https://es.wikipedia.org/wiki/Utila"
+    },
+    "osm": {
+      "type": "relation",
+      "id": 5901151
+    }
+  },
+  "location": {
+    "latitude": 16.1,
+    "longitude": -86.9333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=&nation=Cape+Verde&place=&subjectid=1009583"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_honduras"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/honduras/place/utila/",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Проверены точный production URL (HTTP 200), self-canonical, H1 и отсутствие noindex; approved MD и source-index сверены с current main blob. Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Utila",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Utila",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Utila",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Местное/английское имя совпадает с именованным объектом; варианты названия проверены по точным картографическим/энциклопедическим карточкам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1572113",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб. Проверены предметный тип, страна и языковые статьи точной карточки."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Utila",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб. Языковая статья и Wikidata sitelinks относятся к выбранному референту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Utila",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб. Языковая статья и Wikidata sitelinks относятся к выбранному референту."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/5901151",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Прямо прочитан OSM API: имя и тип совпадают; wikidata=Q1572113; подтвержден объект island."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.getty.edu/vow/TGNFullDisplay?english=Y&find=&nation=Cape+Verde&place=&subjectid=1009583",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Getty TGN 1009583 — physical record Utila, Isla de (island), hierarchy Honduras, координаты 16.1000,-86.9333. Выбрана одна опорная точка острова, близкая к западному P625 Wikidata; второй P625 и OSM town node 7115114882 около 16.1005,-86.895 относятся к поселению и не усреднялись."
+    },
+    {
+      "field": "relationships.country_honduras",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Utila",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Точный именованный объект расположен в стране из MD и source-index: country_honduras. Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Утила",
+      "reason": "Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "island",
+      "reason": "Тип основного референта подтвержден названным источником; юридический статус MD автоматически не переносился."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Utila; Útila; Isla de Utila",
+      "reason": "Варианты относятся к тому же именованному объекту."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1572113",
+      "reason": "Основной референт — остров Утила в Bay Islands, Гондурас. Q1572113 совмещает остров и муниципалитет, но P31 включает island, а точная OSM relation 5901151 имеет place=island. Поселение Utila и его порт — отдельный масштаб."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Utila\",\"es\":\"https://es.wikipedia.org/wiki/Utila\"}",
+      "reason": "Точные языковые статьи/ссылки Wikidata совпадают с выбранным референтом."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "relation/5901151",
+      "reason": "Имя, объектный тип и положение проверены непосредственно в OSM; административные/соседние сущности исключены."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "16.1,-86.9333 (representative)",
+      "reason": "Getty TGN 1009583 — physical record Utila, Isla de (island), hierarchy Honduras, координаты 16.1000,-86.9333. Выбрана одна опорная точка острова, близкая к западному P625 Wikidata; второй P625 и OSM town node 7115114882 около 16.1005,-86.895 относятся к поселению и не усреднялись."
+    },
+    {
+      "field": "relationships.country_honduras",
+      "probability": 99,
+      "selected": "country_honduras",
+      "reason": "Страна подтверждена источником с точным именем и контекстом объекта."
+    }
+  ],
+  "reviewNote": "GeoNames 3600485 на Wikidata имеет qualifier applies to part municipality of Honduras и не принят как островной GeoNames. OSM node 7115114882 place=town исключен; использована island relation 5901151."
+}

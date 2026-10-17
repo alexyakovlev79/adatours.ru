@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_zapovednik_kano_negro",
+  "stableId": "destination_costa_rica_zapovednik_kano_negro",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/cano-negro-wildlife-refuge/",
+  "sourceFingerprint": "084620fc1bffbc5b439d7af482def40e81f807561d37f28bbd80974459eb8f12",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Park",
+  "external": {
+    "wikidataQid": "Q5055588",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Negro_Wildlife_Refuge"
+    }
+  },
+  "location": {
+    "latitude": 10.8775,
+    "longitude": -84.7675,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5055588"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/cano-negro-wildlife-refuge.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Refugio Nacional de Vida Silvestre Mixto Caño Negro — охраняемая водно-болотная территория на севере Costa Rica, Alajuela. Это не одноименная деревня Caño Negro и не национальный парк; категория wildlife refuge установлена по Wikidata/Wikipedia/SINAC."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/cano-negro-wildlife-refuge/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Negro_Wildlife_Refuge",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Refugio Nacional de Vida Silvestre Mixto Caño Negro — охраняемая водно-болотная территория на севере Costa Rica, Alajuela. Это не одноименная деревня Caño Negro и не национальный парк; категория wildlife refuge установлена по Wikidata/Wikipedia/SINAC."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Negro_Wildlife_Refuge",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Refugio Nacional de Vida Silvestre Mixto Caño Negro — охраняемая водно-болотная территория на севере Costa Rica, Alajuela. Это не одноименная деревня Caño Negro и не национальный парк; категория wildlife refuge установлена по Wikidata/Wikipedia/SINAC."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Negro_Wildlife_Refuge",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_costa_rica"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5055588",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Выбрана P625 точной карточки заповедника как representative. Другая точка GeoNames/Mapcarta10.914,-84.7964 расположена в другой части района; точки не усредняются. Не утверждается центр полигона или официальный вход."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5055588",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Проверены точный QID, P31/P17/P625 и EN sitelink. Refugio Nacional de Vida Silvestre Mixto Caño Negro — охраняемая водно-болотная территория на севере Costa Rica, Alajuela. Это не одноименная деревня Caño Negro и не национальный парк; категория wildlife refuge установлена по Wikidata/Wikipedia/SINAC."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Negro_Wildlife_Refuge",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точная статья о выбранном именованном объекте, соответствующая sitelink Wikidata."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.sinac.go.cr/en-us/ac/acahn/rnvscn/pages/default.aspx",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Дополнительный источник подтверждает именованный объект и его географический контекст."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Исходный destinationType:national_park обобщает тип неверно: объект является mixed national wildlife refuge. Статус и площади из разных источников не добавлялись.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Заповедник Каньо-Негро",
+      "reason": "Refugio Nacional de Vida Silvestre Mixto Caño Negro — охраняемая водно-болотная территория на севере Costa Rica, Alajuela. Это не одноименная деревня Caño Negro и не национальный парк; категория wildlife refuge установлена по Wikidata/Wikipedia/SINAC."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "Park",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "10.8775, -84.7675",
+      "reason": "Выбрана P625 точной карточки заповедника как representative. Другая точка GeoNames/Mapcarta10.914,-84.7964 расположена в другой части района; точки не усредняются. Не утверждается центр полигона или официальный вход."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5055588",
+      "reason": "Refugio Nacional de Vida Silvestre Mixto Caño Negro — охраняемая водно-болотная территория на севере Costa Rica, Alajuela. Это не одноименная деревня Caño Negro и не национальный парк; категория wildlife refuge установлена по Wikidata/Wikipedia/SINAC."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Ca%C3%B1o_Negro_Wildlife_Refuge",
+      "reason": "Точная статья выбранного объекта."
+    }
+  ]
+}

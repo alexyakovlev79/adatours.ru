@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_semuk_champej",
+  "stableId": "destination_guatemala_semuk_champej",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/semuc-champey/",
+  "sourceFingerprint": "75991b629ec5ddcbc666f0cf648cce29f18401ee772d6e4e6049b7e549e4aa02",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "7648344",
+    "wikidataQid": "Q1850670",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Semuc_Champey"
+    },
+    "osm": {
+      "type": "node",
+      "id": 1873471059
+    },
+    "officialUrl": "https://turismo-sigap.conap.gob.gt/rutas-turisticas/ruta-aventura-dentro-de-la-selva-verapaces/monumento-natural-semuc-champey/"
+  },
+  "location": {
+    "latitude": 15.53333,
+    "longitude": -89.96139,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/GT.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/semuc-champey.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Природный памятник Семук-Чампей: известняковый мост и природные бассейны над рекой Кахабон у Ланкина."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/semuc-champey/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=7648344; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1850670",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Q1850670 natural monument и pool с GeoNames 7648344; CONAP подтверждает мост, бассейны и реку Cahabón."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1850670",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/1873471059",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. Принят attraction, не один из viewpoints."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://turismo-sigap.conap.gob.gt/rutas-turisticas/ruta-aventura-dentro-de-la-selva-verapaces/monumento-natural-semuc-champey/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точная страница природного памятника на туристическом портале CONAP — государственного администратора; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "15.53333, -89.96139; pointRole=representative. GeoNames 7648344 POOL выбран как опорная точка природного комплекса, не точка входа/смотровой. GeoNames 12192630 PPL — соседний населённый пункт и исключён. OSM attraction с Q1850670 принят; одноимённые viewpoints не присвоены всему памятнику."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1850670",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Природный памятник Семук-Чампей: известняковый мост и природные бассейны над рекой Кахабон у Ланкина."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "7648344",
+      "reason": "Прямая строка GT.txt id=7648344; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1850670",
+      "reason": "Q1850670 natural monument и pool с GeoNames 7648344; CONAP подтверждает мост, бассейны и реку Cahabón."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Semuc_Champey",
+      "reason": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "selected": "node/1873471059",
+      "reason": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. Принят attraction, не один из viewpoints."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://turismo-sigap.conap.gob.gt/rutas-turisticas/ruta-aventura-dentro-de-la-selva-verapaces/monumento-natural-semuc-champey/",
+      "reason": "Точная страница природного памятника на туристическом портале CONAP — государственного администратора; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "15.53333,-89.96139",
+      "reason": "15.53333, -89.96139; pointRole=representative. GeoNames 7648344 POOL выбран как опорная точка природного комплекса, не точка входа/смотровой. GeoNames 12192630 PPL — соседний населённый пункт и исключён. OSM attraction с Q1850670 принят; одноимённые viewpoints не присвоены всему памятнику."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "reviewNote": "GeoNames 7648344 POOL выбран как опорная точка природного комплекса, не точка входа/смотровой. GeoNames 12192630 PPL — соседний населённый пункт и исключён. OSM attraction с Q1850670 принят; одноимённые viewpoints не присвоены всему памятнику.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/semuc-champey/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

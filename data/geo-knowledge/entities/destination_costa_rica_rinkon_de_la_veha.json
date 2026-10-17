@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_rinkon_de_la_veha",
+  "stableId": "destination_costa_rica_rinkon_de_la_veha",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/rincon-de-la-vieja/",
+  "sourceFingerprint": "2fe5a76b30bedffade4a2761700e81a8f00d0cd63548368460c33184c8e305dd",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1431228",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Rinc%C3%B3n_de_la_Vieja_National_Park"
+    },
+    "geonamesId": "7289471",
+    "officialUrl": "https://www.visitcostarica.com/where-to-go/protected-areas/rincon-de-la-vieja-volcano-national-park"
+  },
+  "location": {
+    "latitude": 10.83,
+    "longitude": -85.32388889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1431228"
+  },
+  "alternateNames": [
+    "Parque Nacional Rincón de la Vieja",
+    "Rincón de la Vieja National Park"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Ринкон-де-ла-Вьеха",
+      "reason": "Название, destinationType, summary и основная часть MD определяют национальный парк Rincón de la Vieja с секторами Las Pailas и Santa María. Вулкан — центральный объект внутри парка, но не основной паспорт страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1431228",
+      "reason": "Название, destinationType, summary и основная часть MD определяют национальный парк Rincón de la Vieja с секторами Las Pailas и Santa María. Вулкан — центральный объект внутри парка, но не основной паспорт страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Rinc%C3%B3n_de_la_Vieja_National_Park",
+      "reason": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Выбран парк Q1431228, не QID вулкана. P625 — опорная точка парковой территории в районе вулканического массива, не вход Las Pailas и не центр всей Área de Conservación Guanacaste. UNESCO более широкой природоохранной территории парку не присваивалось."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "7289471",
+      "reason": "P1566 точной сущности Wikidata; тип и география соответствуют выбранному объекту."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.visitcostarica.com/where-to-go/protected-areas/rincon-de-la-vieja-volcano-national-park",
+      "reason": "Точная страница именованного национального парка на официальном туристическом сайте ICT Costa Rica; не главная страны и не страница всей области."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "10.83,-85.32388889; representative",
+      "reason": "P625 точного парка: опорная точка территории, не единственный географический центр, не вход и не отдельный сектор."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Parque Nacional Rincón de la Vieja; Rincón de la Vieja National Park",
+      "reason": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "containedInPlace country_costa_rica",
+      "reason": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/protected-areas/rincon-de-la-vieja-volcano-national-park",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Название, destinationType, summary и основная часть MD определяют национальный парк Rincón de la Vieja с секторами Las Pailas и Santa María. Вулкан — центральный объект внутри парка, но не основной паспорт страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/rincon-de-la-vieja/",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точный URL проверен: HTTP200, canonical совпадает, H1 соответствует, noindex нет. Approved MD и entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, стране, имени и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1431228",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Название, destinationType, summary и основная часть MD определяют национальный парк Rincón de la Vieja с секторами Las Pailas и Santa María. Вулкан — центральный объект внутри парка, но не основной паспорт страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1431228",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Выбран парк Q1431228, не QID вулкана. P625 — опорная точка парковой территории в районе вулканического массива, не вход Las Pailas и не центр всей Área de Conservación Guanacaste. UNESCO более широкой природоохранной территории парку не присваивалось."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1431228",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "P1566 точной сущности Wikidata; тип и география соответствуют выбранному объекту."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/protected-areas/rincon-de-la-vieja-volcano-national-park",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точная страница именованного национального парка на официальном туристическом сайте ICT Costa Rica; не главная страны и не страница всей области."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1431228",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "P625 точного парка: опорная точка территории, не единственный географический центр, не вход и не отдельный сектор."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1431228",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1431228",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Выбран парк Q1431228, не QID вулкана. P625 — опорная точка парковой территории в районе вулканического массива, не вход Las Pailas и не центр всей Área de Conservación Guanacaste. UNESCO более широкой природоохранной территории парку не присваивалось."
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_zateryannyj_gorod",
+  "stableId": "destination_colombia_zateryannyj_gorod",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/ciudad-perdida/",
+  "sourceFingerprint": "20bdf771aa753a94c9dcbe9bd98ab15179b001a68719dc7104feac437f0a7af9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1094367",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ciudad_Perdida"
+    },
+    "geonamesId": "9855406",
+    "osm": {
+      "type": "way",
+      "id": 1019242960
+    },
+    "officialUrl": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-teyuna"
+  },
+  "location": {
+    "latitude": 11.037997222222,
+    "longitude": -73.925191666667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1094367"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/zateryannyj-gorod.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Археологический памятник Тайрона Teyuna / Ciudad Perdida / Buritaca-200 в Сьерра-Невада-де-Санта-Марта, Колумбия."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/colombia/place/ciudad-perdida/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1094367",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q1094367: название, тип, страна P17 Q739 и точный sitelink подтверждают Археологический памятник Тайрона Teyuna / Ciudad Perdida / Buritaca-200 в Сьерра-Невада-де-Санта-Марта, Колумбия. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ciudad_Perdida",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный CO.txt: id 9855406, featureCode ANS; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/1019242960",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-teyuna",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная официальная страница Teyuna–Ciudad Perdida у администратора ICANH."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1094367",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "11.037997222222, -73.925191666667; pointRole=feature_point. GeoNames 9855406 ANS — точный памятник, но его координата 11.04676,-73.9245 лежит вне археологического OSM way. Принята P625 Wikidata, которая попадает внутрь OSM 1019242960; это точка памятника, не начало треккинга. Населённые пункты Ciudad Perdida 3686219/8559513 и заброшенное поселение 6941958 не подходят. Официальный администратор ICANH подтверждает Teyuna–Ciudad Perdida и местоположение в районе Santa Marta, Magdalena."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/1019242960/full",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой /full way: выбранная P625 внутри археологического участка; координата GeoNames вне участка."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1094367",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Археологический памятник Тайрона Teyuna / Ciudad Perdida / Buritaca-200 в Сьерра-Невада-де-Санта-Марта, Колумбия."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1094367",
+      "reason": "Q1094367: название, тип, страна P17 Q739 и точный sitelink подтверждают Археологический памятник Тайрона Teyuna / Ciudad Perdida / Buritaca-200 в Сьерра-Невада-де-Санта-Марта, Колумбия. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "9855406",
+      "reason": "Первичный CO.txt: id 9855406, featureCode ANS; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/1019242960",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-teyuna",
+      "reason": "Точная официальная страница Teyuna–Ciudad Perdida у администратора ICANH."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "11.037997222222,-73.925191666667",
+      "reason": "11.037997222222, -73.925191666667; pointRole=feature_point. GeoNames 9855406 ANS — точный памятник, но его координата 11.04676,-73.9245 лежит вне археологического OSM way. Принята P625 Wikidata, которая попадает внутрь OSM 1019242960; это точка памятника, не начало треккинга. Населённые пункты Ciudad Perdida 3686219/8559513 и заброшенное поселение 6941958 не подходят. Официальный администратор ICANH подтверждает Teyuna–Ciudad Perdida и местоположение в районе Santa Marta, Magdalena."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "GeoNames 9855406 ANS — точный памятник, но его координата 11.04676,-73.9245 лежит вне археологического OSM way. Принята P625 Wikidata, которая попадает внутрь OSM 1019242960; это точка памятника, не начало треккинга. Населённые пункты Ciudad Perdida 3686219/8559513 и заброшенное поселение 6941958 не подходят. Официальный администратор ICANH подтверждает Teyuna–Ciudad Perdida и местоположение в районе Santa Marta, Magdalena.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/colombia/place/ciudad-perdida/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

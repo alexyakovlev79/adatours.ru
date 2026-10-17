@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_sipakira",
+  "stableId": "destination_colombia_sipakira",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/zipaquira/",
+  "sourceFingerprint": "19d5d811a83086890d805cbacff77b376453a712afd2d27f374d4a3377aa1146",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q205429",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Zipaquir%C3%A1"
+    }
+  },
+  "location": {
+    "latitude": 5.0247222222222,
+    "longitude": -74.001388888889,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q205429"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/zipaquira.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Страница города Сипакира включает самостоятельный город после посещения Catedral de Sal. Основной референт — Zipaquirá, Cundinamarca. Q2565876 относится к соляному собору и не подменяет город."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/zipaquira/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zipaquir%C3%A1",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Страница города Сипакира включает самостоятельный город после посещения Catedral de Sal. Основной референт — Zipaquirá, Cundinamarca. Q2565876 относится к соляному собору и не подменяет город."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zipaquir%C3%A1",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zipaquir%C3%A1",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q205429",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Выбрана P625 городской Wikidata, Wikipedia использует более грубую точку 5.03333,-74.00000. Это городская опорная точка, не вход в соляной собор; не усредняется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q205429",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверены точный QID, P31/P17/P625 и sitelink; Страница города Сипакира включает самостоятельный город после посещения Catedral de Sal. Основной референт — Zipaquirá, Cundinamarca. Q2565876 относится к соляному собору и не подменяет город."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zipaquir%C3%A1",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точная статья о выбранном объекте; соответствует Wikidata sitelink."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Сипакира",
+      "reason": "Страница города Сипакира включает самостоятельный город после посещения Catedral de Sal. Основной референт — Zipaquirá, Cundinamarca. Q2565876 относится к соляному собору и не подменяет город."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "City",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "5.0247222222222, -74.001388888889",
+      "reason": "Выбрана P625 городской Wikidata, Wikipedia использует более грубую точку 5.03333,-74.00000. Это городская опорная точка, не вход в соляной собор; не усредняется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q205429",
+      "reason": "Страница города Сипакира включает самостоятельный город после посещения Catedral de Sal. Основной референт — Zipaquirá, Cundinamarca. Q2565876 относится к соляному собору и не подменяет город."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Zipaquir%C3%A1",
+      "reason": "Точная статья и sitelink выбранной Wikidata."
+    }
+  ]
+}

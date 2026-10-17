@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_cuba_trinidad",
+  "stableId": "destination_cuba_trinidad",
+  "kind": "destination",
+  "canonicalPath": "/cuba/place/trinidad/",
+  "sourceFingerprint": "074060479fce3641d9a209a87859c7c4b8f7cc9fa23465a013261095dad6f0b1",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q319272",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Trinidad%2C_Cuba",
+      "es": "https://es.wikipedia.org/wiki/Trinidad_(Cuba)"
+    },
+    "geonamesId": "3534905",
+    "officialUrl": "https://www.cuba.travel/destinos/trinidad/geografia"
+  },
+  "location": {
+    "latitude": 21.8,
+    "longitude": -79.966666666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q319272"
+  },
+  "alternateNames": [
+    "Trinidad"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_cuba"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/cuba/place/trinidad/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Тринидад; index, follow. Текущий approved MD и entry сверены. Город Тринидад в провинции Санкти-Спиритус на Кубе; колониальная городская застройка — основной объект MD. Одноименные места других стран исключены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.cuba.travel/destinos/trinidad/geografia",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город Тринидад в провинции Санкти-Спиритус на Кубе; колониальная городская застройка — основной объект MD. Одноименные места других стран исключены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q319272",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: town in the province of Sancti Spíritus, Cuba. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q319272",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город Тринидад в провинции Санкти-Спиритус на Кубе; колониальная городская застройка — основной объект MD. Одноименные места других стран исключены. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q319272",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Trinidad, Cuba; Trinidad (Cuba). Это сопоставление карточки Q319272, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q319272",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3534905 в точной карточке Q319272. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q319272",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 21.8, -79.966666666667; роль settlement_center. Исходная точка населенного пункта, без усреднения или переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q319272",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q319272",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q241 (Cuba); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.cuba.travel/destinos/trinidad/geografia",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Trinidad",
+      "reason": "Город Тринидад в провинции Санкти-Спиритус на Кубе; колониальная городская застройка — основной объект MD. Одноименные места других стран исключены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q319272",
+      "reason": "Город Тринидад в провинции Санкти-Спиритус на Кубе; колониальная городская застройка — основной объект MD. Одноименные места других стран исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Trinidad%2C_Cuba ; https://es.wikipedia.org/wiki/Trinidad_(Cuba)",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3534905",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "21.8, -79.966666666667",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Trinidad",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "probability": 99,
+      "selected": "country_cuba",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 90,
+      "selected": "https://www.cuba.travel/destinos/trinidad/geografia",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Портал Cuba Travel охватывает также муниципалитет и Санкти-Спиритус; его площадь и граничные координаты не перенесены. UNESCO «Trinidad and the Valley de los Ingenios» шире городского референта, ID не добавлен."
+}

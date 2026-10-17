@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_puebla_cathedral",
+  "stableId": "destination_mexico_puebla_cathedral",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/puebla-cathedral/",
+  "sourceFingerprint": "6a270411f4c1324f44448ddb3039ab268a86bc2db2ca26a7ffec2dcdf7aa6059",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1994735",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puebla_Cathedral"
+    }
+  },
+  "location": {
+    "latitude": 19.04283333,
+    "longitude": -98.19836111,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1994735"
+  },
+  "alternateNames": [
+    "Catedral de Puebla",
+    "Catedral Basílica de Nuestra Señora de la Inmaculada Concepción"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кафедральный собор Пуэблы",
+      "reason": "Кафедральный собор Пуэблы у главной площади Zócalo. Q1994735 — Roman Catholic cathedral of Puebla, Mexico; точные en/es sitelinks и P625 совпадают с описанием. Это не собор Мехико и не храм Santo Domingo в Пуэбле."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1994735",
+      "reason": "Кафедральный собор Пуэблы у главной площади Zócalo. Q1994735 — Roman Catholic cathedral of Puebla, Mexico; точные en/es sitelinks и P625 совпадают с описанием. Это не собор Мехико и не храм Santo Domingo в Пуэбле."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Puebla_Cathedral",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Кафедральный собор Пуэблы у главной площади Zócalo. Q1994735 — Roman Catholic cathedral of Puebla, Mexico; точные en/es sitelinks и P625 совпадают с описанием. Это не собор Мехико и не храм Santo Domingo в Пуэбле."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.04283333,-98.19836111; feature_point",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Catedral de Puebla; Catedral Basílica de Nuestra Señora de la Inmaculada Concepción",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1994735",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Кафедральный собор Пуэблы у главной площади Zócalo. Q1994735 — Roman Catholic cathedral of Puebla, Mexico; точные en/es sitelinks и P625 совпадают с описанием. Это не собор Мехико и не храм Santo Domingo в Пуэбле."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/puebla-cathedral/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1994735",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Кафедральный собор Пуэблы у главной площади Zócalo. Q1994735 — Roman Catholic cathedral of Puebla, Mexico; точные en/es sitelinks и P625 совпадают с описанием. Это не собор Мехико и не храм Santo Domingo в Пуэбле."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1994735",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Кафедральный собор Пуэблы у главной площади Zócalo. Q1994735 — Roman Catholic cathedral of Puebla, Mexico; точные en/es sitelinks и P625 совпадают с описанием. Это не собор Мехико и не храм Santo Domingo в Пуэбле."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1994735",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1994735",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1994735",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Кафедральный собор Пуэблы у главной площади Zócalo. Q1994735 — Roman Catholic cathedral of Puebla, Mexico; точные en/es sitelinks и P625 совпадают с описанием. Это не собор Мехико и не храм Santo Domingo в Пуэбле."
+}

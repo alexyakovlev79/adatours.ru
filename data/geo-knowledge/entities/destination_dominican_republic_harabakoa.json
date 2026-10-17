@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_dominican_republic_harabakoa",
+  "stableId": "destination_dominican_republic_harabakoa",
+  "kind": "destination",
+  "canonicalPath": "/dominican-republic/place/jarabacoa/",
+  "sourceFingerprint": "c338b59b0cbab83340661c7bc5d85edc7177f4631b9505ea49391c8ab333bd5b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q990182",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Jarabacoa"
+    },
+    "geonamesId": "3504158",
+    "osm": {
+      "type": "node",
+      "id": 1940867864
+    }
+  },
+  "location": {
+    "latitude": 19.11683,
+    "longitude": -70.63595,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/DO.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_dominican_republic"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/harabakoa.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Город Харабакоа (Jarabacoa), провинция Ла-Вега в центральной Доминикане; главный референт страницы о городе и горных поездках."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/dominican-republic/place/jarabacoa/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q990182",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q990182: название, тип, страна P17 Q786 и точный sitelink подтверждают Город Харабакоа (Jarabacoa), провинция Ла-Вега в центральной Доминикане; главный референт страницы о городе и горных поездках. Муниципально-городская тема принята по основному именованному референту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jarabacoa",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный DO.txt: id 3504158, featureCode PPL; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/1940867864",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "19.11683, -70.63595; pointRole=settlement_center. Q990182 включает муниципальную тему и одноимённый город; точный OSM city с тем же QID подтверждает главный референт. Координата поселения GeoNames 3504158 PPL; не муниципальная запись 3504159 ADM2 из P1566. Национальный парк José Armando Bermúdez и Pico Duarte упомянуты как поездки из города, не sameAs страницы."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q990182",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Харабакоа (Jarabacoa), провинция Ла-Вега в центральной Доминикане; главный референт страницы о городе и горных поездках."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q990182",
+      "reason": "Q990182: название, тип, страна P17 Q786 и точный sitelink подтверждают Город Харабакоа (Jarabacoa), провинция Ла-Вега в центральной Доминикане; главный референт страницы о городе и горных поездках. Муниципально-городская тема принята по основному именованному референту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3504158",
+      "reason": "Первичный DO.txt: id 3504158, featureCode PPL; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/1940867864",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "19.11683,-70.63595",
+      "reason": "19.11683, -70.63595; pointRole=settlement_center. Q990182 включает муниципальную тему и одноимённый город; точный OSM city с тем же QID подтверждает главный референт. Координата поселения GeoNames 3504158 PPL; не муниципальная запись 3504159 ADM2 из P1566. Национальный парк José Armando Bermúdez и Pico Duarte упомянуты как поездки из города, не sameAs страницы."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "probability": 99,
+      "selected": "country_dominican_republic",
+      "reason": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "Q990182 включает муниципальную тему и одноимённый город; точный OSM city с тем же QID подтверждает главный референт. Координата поселения GeoNames 3504158 PPL; не муниципальная запись 3504159 ADM2 из P1566. Национальный парк José Armando Bermúdez и Pico Duarte упомянуты как поездки из города, не sameAs страницы.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/dominican-republic/place/jarabacoa/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

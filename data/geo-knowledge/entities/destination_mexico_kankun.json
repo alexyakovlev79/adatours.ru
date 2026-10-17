@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_kankun",
+  "stableId": "destination_mexico_kankun",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/cancun/",
+  "sourceFingerprint": "4e70cf6dc932e2f556685ed9923ed9fc8acd2a9cf273ebb4bba01f8c7270fb99",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q8969",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Canc%C3%BAn",
+      "es": "https://es.wikipedia.org/wiki/Canc%C3%BAn"
+    },
+    "geonamesId": "3531673",
+    "officialUrl": "https://caribemexicano.travel/destinos/cancun"
+  },
+  "location": {
+    "latitude": 21.161416111111112,
+    "longitude": -86.82481111111112,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q8969"
+  },
+  "alternateNames": [
+    "Cancún",
+    "Cancun"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/cancun/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Канкун; index, follow. Текущий approved MD и entry сверены. Город-курорт Канкун, Кинтана-Роо; туристическая зона и городской центр составляют содержание MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://caribemexicano.travel/destinos/cancun",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город-курорт Канкун, Кинтана-Роо; туристическая зона и городской центр составляют содержание MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8969",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: municipal seat of Juárez, State of Quintana Roo, Mexico. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8969",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город-курорт Канкун, Кинтана-Роо; туристическая зона и городской центр составляют содержание MD. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8969",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Cancún; Cancún. Это сопоставление карточки Q8969, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8969",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3531673 в точной карточке Q8969. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8969",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 21.161416111111112, -86.82481111111112; роль settlement_center. Исходная точка населенного пункта, без усреднения или переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8969",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8969",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://caribemexicano.travel/destinos/cancun",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Cancun",
+      "reason": "Город-курорт Канкун, Кинтана-Роо; туристическая зона и городской центр составляют содержание MD."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q8969",
+      "reason": "Город-курорт Канкун, Кинтана-Роо; туристическая зона и городской центр составляют содержание MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Canc%C3%BAn ; https://es.wikipedia.org/wiki/Canc%C3%BAn",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3531673",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "21.161416111111112, -86.82481111111112",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Cancún; Cancun",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://caribemexicano.travel/destinos/cancun",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбрана городская точка P625; не весь муниципалитет и не исключительно гостиничная коса. Caribe Mexicano — официальный туристический источник, не отдельный географический sameAs."
+}

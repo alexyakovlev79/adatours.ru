@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_moreliya",
+  "stableId": "destination_mexico_moreliya",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/morelia/",
+  "sourceFingerprint": "cd572a91fd80ff7f9fffbb54a472c490999f8203ffa46b9bae25aeadae4d0eb4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q200252",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Morelia"
+    },
+    "geonamesId": "3995402",
+    "osm": {
+      "type": "node",
+      "id": 269914489
+    },
+    "officialUrl": "https://www.morelia.gob.mx/"
+  },
+  "location": {
+    "latitude": 19.7027116,
+    "longitude": -101.1923818,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/269914489"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/moreliya.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Город Морелия, столица штата Мичоакан в Мексике."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/morelia/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200252",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q200252: точное название, тип и страна P17 Q96 соответствуют Город Морелия, столица штата Мичоакан в Мексике. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Morelia",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3995402, featureCode=PPLA. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/269914489",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.morelia.gob.mx/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Официальный сайт администрации соответствующего города; P856 сверена с открытой страницей Ayuntamiento/Gobierno."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/269914489",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "19.7027116, -101.1923818; pointRole=settlement_center. Q200252 — современный город Морелия, не штат и не муниципальная территория GeoNames 8582310 ADM2. OSM city и P625 согласуются в центре города, городская GeoNames 3995402 PPLA подтверждает референт. Выбрана точка OSM; UNESCO historic centre не присваивался всему городу."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200252",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Морелия, столица штата Мичоакан в Мексике."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q200252",
+      "reason": "Q200252: точное название, тип и страна P17 Q96 соответствуют Город Морелия, столица штата Мичоакан в Мексике. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3995402",
+      "reason": "Прямой MX.txt: id=3995402, featureCode=PPLA. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/269914489",
+      "reason": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.morelia.gob.mx/",
+      "reason": "Официальный сайт администрации соответствующего города; P856 сверена с открытой страницей Ayuntamiento/Gobierno."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.7027116,-101.1923818",
+      "reason": "19.7027116, -101.1923818; pointRole=settlement_center. Q200252 — современный город Морелия, не штат и не муниципальная территория GeoNames 8582310 ADM2. OSM city и P625 согласуются в центре города, городская GeoNames 3995402 PPLA подтверждает референт. Выбрана точка OSM; UNESCO historic centre не присваивался всему городу."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "Q200252 — современный город Морелия, не штат и не муниципальная территория GeoNames 8582310 ADM2. OSM city и P625 согласуются в центре города, городская GeoNames 3995402 PPLA подтверждает референт. Выбрана точка OSM; UNESCO historic centre не присваивался всему городу.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/morelia/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

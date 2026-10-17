@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_tikal_flores",
+  "stableId": "destination_guatemala_tikal_flores",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/tikal-and-flores/",
+  "sourceFingerprint": "1c2dc1796690b17c6a664e7e255d7c58f6efe9387befd1fae234ce94c9601440",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "route_cluster",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_guatemala_peten"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/tikal-and-flores/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Проверены текущие MD и source-index в main, stable ID/страна/тип и canonical. Публичный URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Составное редакционное направление «Тикаль & Флорес»; MD destinationType route_cluster, summary, изображения и основной текст равнозначно охватывают город Флорес и археологический Тикаль. Единого внешнего геообъекта нет. QID Флореса или Тикаля по отдельности менее 70% соответствуют всей странице; внешние идентификаторы, UNESCO и единая координата опущены. Оба компонента в Петене, Гватемала."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://adatours.ru/guatemala/place/tikal-and-flores/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Класс выбран по фактическому референту MD/summary; Составное редакционное направление «Тикаль & Флорес»; MD destinationType route_cluster, summary, изображения и основной текст равнозначно охватывают город Флорес и археологический Тикаль. Единого внешнего геообъекта нет. QID Флореса или Тикаля по отдельности менее 70% соответствуют всей странице; внешние идентификаторы, UNESCO и единая координата опущены. Оба компонента в Петене, Гватемала."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://adatours.ru/guatemala/place/tikal-and-flores/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Оба компонента направления находятся в Гватемале; countryId текущего MD и source-index country_guatemala."
+    },
+    {
+      "field": "relationships.destination_guatemala_peten",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tikal",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Археологический Тикаль находится в департаменте Петен."
+    },
+    {
+      "field": "relationships.destination_guatemala_peten",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Flores,_El_Pet%C3%A9n",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Флорес — центр департамента Петен; второй компонент того же направления."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Tikal and Flores route cluster",
+      "reason": "Составное редакционное направление «Тикаль & Флорес»; MD destinationType route_cluster, summary, изображения и основной текст равнозначно охватывают город Флорес и археологический Тикаль. Единого внешнего геообъекта нет. QID Флореса или Тикаля по отдельности менее 70% соответствуют всей странице; внешние идентификаторы, UNESCO и единая координата опущены. Оба компонента в Петене, Гватемала."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "route_cluster",
+      "reason": "Составное редакционное направление «Тикаль & Флорес»; MD destinationType route_cluster, summary, изображения и основной текст равнозначно охватывают город Флорес и археологический Тикаль. Единого внешнего геообъекта нет. QID Флореса или Тикаля по отдельности менее 70% соответствуют всей странице; внешние идентификаторы, UNESCO и единая координата опущены. Оба компонента в Петене, Гватемала."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Совпадают география источников и закреплённый countryId."
+    },
+    {
+      "field": "relationships.destination_guatemala_peten",
+      "probability": 99,
+      "selected": "destination_guatemala_peten",
+      "reason": "Оба самостоятельных компонента находятся в департаменте Петен."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 60,
+      "selected": "Q181172",
+      "reason": "Тикаль хорошо подтверждён как компонент, но не как единый главный референт страницы, которая также явно описывает Флорес. Поле опущено."
+    },
+    {
+      "field": "location",
+      "probability": 45,
+      "reason": "Для редакционного объединения двух разных мест нет одной подтверждённой точки; точка одного компонента или средняя координата не выбрана."
+    }
+  ],
+  "reviewNote": "Составное редакционное направление «Тикаль & Флорес»; MD destinationType route_cluster, summary, изображения и основной текст равнозначно охватывают город Флорес и археологический Тикаль. Единого внешнего геообъекта нет. QID Флореса или Тикаля по отдельности менее 70% соответствуют всей странице; внешние идентификаторы, UNESCO и единая координата опущены. Оба компонента в Петене, Гватемала."
+}

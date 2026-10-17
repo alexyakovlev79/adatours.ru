@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_valladolid",
+  "stableId": "destination_mexico_valladolid",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/valladolid/",
+  "sourceFingerprint": "8a405fd3e6a63c2fa2345b2ea544d695805ef25dc7db13738a5b02a887336112",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1024731",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Valladolid,_Yucat%C3%A1n"
+    },
+    "geonamesId": "3514876",
+    "osm": {
+      "type": "node",
+      "id": 1668100219
+    },
+    "officialUrl": "https://www.valladolid.gob.mx/"
+  },
+  "location": {
+    "latitude": 20.68812,
+    "longitude": -88.19936,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/valladolid.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Город Вальядолид в мексиканском штате Юкатан. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/valladolid/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1024731",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Город Вальядолид в мексиканском штате Юкатан. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valladolid,_Yucat%C3%A1n",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Город Вальядолид в мексиканском штате Юкатан."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 3514876 в первичном MX.zip: feature code PPL; страна MX. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/1668100219",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: node/1668100219. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 20.68812, -88.19936. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1024731",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.valladolid.gob.mx/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Вальядолид в мексиканском штате Юкатан. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_valladolid"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/valladolid/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города.",
+      "selected": "Q1024731"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/Valladolid,_Yucat%C3%A1n"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс PPL. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города.",
+      "selected": "3514876"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города.",
+      "selected": "node/1668100219"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города.",
+      "selected": "20.68812,-88.19936"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города.",
+      "selected": "https://www.valladolid.gob.mx/"
+    }
+  ],
+  "reviewNote": "Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/valladolid/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Город Вальядолид в мексиканском штате Юкатан.",
+      "Исключены Вальядолид в Испании и прочие тёзки. Выбран город Юкатана: GeoNames admin1 31, OSM Q1024731 и официальный сайт Ayuntamiento de Valladolid, Yucatán согласуются. Координата — опорная точка города.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

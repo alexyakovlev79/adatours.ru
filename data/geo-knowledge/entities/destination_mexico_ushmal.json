@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_ushmal",
+  "stableId": "destination_mexico_ushmal",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/uxmal/",
+  "sourceFingerprint": "3a925835dcf3694d5193ba8e100944c8be3816b0f6c15bdd495ba16b7a7178bc",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "archaeological_site",
+  "external": {
+    "wikidataQid": "Q213232",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Uxmal"
+    },
+    "geonamesId": "3514895",
+    "osm": {
+      "type": "way",
+      "id": 26645969
+    },
+    "officialUrl": "https://www.inah.gob.mx/zonas/110-zona-arqueologica-de-uxmal"
+  },
+  "location": {
+    "latitude": 20.359444444444,
+    "longitude": -89.771388888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q213232"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/uxmal.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Археологический комплекс Ушмаль культуры Пуук на Юкатане. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/uxmal/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q213232",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Археологический комплекс Ушмаль культуры Пуук на Юкатане. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Uxmal",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Археологический комплекс Ушмаль культуры Пуук на Юкатане."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 3514895 в первичном MX.zip: feature code ANS; страна MX. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/26645969",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: way/26645969. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q213232",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 20.359444444444, -89.771388888889. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q213232",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.inah.gob.mx/zonas/110-zona-arqueologica-de-uxmal",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.openstreetmap.org/way/26645969",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический тип объекта подтверждён профильными тегами OSM, Wikidata P31 и INAH."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Археологический комплекс Ушмаль культуры Пуук на Юкатане. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_ushmal"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/uxmal/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается.",
+      "selected": "Q213232"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/Uxmal"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс ANS. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается.",
+      "selected": "3514895"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается.",
+      "selected": "way/26645969"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается.",
+      "selected": "20.359444444444,-89.771388888889"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается.",
+      "selected": "https://www.inah.gob.mx/zonas/110-zona-arqueologica-de-uxmal"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Содержание MD и профильные первичные источники подтверждают тип.",
+      "selected": "archaeological_site"
+    }
+  ],
+  "reviewNote": "Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/uxmal/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Археологический комплекс Ушмаль культуры Пуук на Юкатане.",
+      "Содержание MD описывает руины, несмотря на общий destinationType city. GeoNames 3514895 Uxmal Ruins подтверждает объект, но его точка 20.36667,-89.76667 вне OSM way 26645969. Выбрана P625 Wikidata, попадающая внутрь полного контура. Соседняя деревня Uxmal node 6125427544 исключена. UNESCO ID составного объекта не присваивается.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_cabana_de_adan",
+  "stableId": "destination_colombia_cabana_de_adan",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/cabana-de-adan/",
+  "sourceFingerprint": "7728787d110b1fa09a8cd4f7fc911391061f9e0f86960434a2181bd0395d48db",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Place",
+  "external": {},
+  "location": {
+    "latitude": 11.136581,
+    "longitude": -73.859159,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://es.wikiloc.com/rutas-a-pie/machete-pelao-cabana-de-adan-ciudad-perdida-45156628#wp-45156641"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/cabana-de-adan.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Именованный лагерь Cabaña de Adán — первая лагерная остановка после El Mamey на маршруте к Ciudad Perdida в Sierra Nevada de Santa Marta. Подтвержден оператором маршрута Teyuna Tours и программой Universidad del Rosario; не ресторан La Cabaña de Adán в Córdoba, Испания."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/cabana-de-adan/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://teyunatours.com/ciudad-perdida.html",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Именованный лагерь Cabaña de Adán — первая лагерная остановка после El Mamey на маршруте к Ciudad Perdida в Sierra Nevada de Santa Marta. Подтвержден оператором маршрута Teyuna Tours и программой Universidad del Rosario; не ресторан La Cabaña de Adán в Córdoba, Испания."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://teyunatours.com/ciudad-perdida.html",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://teyunatours.com/ciudad-perdida.html",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikiloc.com/rutas-a-pie/machete-pelao-cabana-de-adan-ciudad-perdida-45156628#wp-45156641",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Первичный GPS-трек автора paulabeltrangarcia.93 (январь 2020): явно именованный waypoint45156641 Cabaña de Adán, 11.136581,-73.859159, с фотографиями лагеря. В том же треке отдельно указан Nuevo campamento Adán waypoint45156640,11.137922,-73.858805; выбран точно названный Cabaña, точки не усредняются. Это привязка именованного лагерного объекта, не гарантия расположения текущего заселения."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://urosario.edu.co/eventos/ruta-pais-sierra-nevada-de-santa-marta-ciudad-perdida",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Дополнительный источник подтверждает географический контекст и именованный объект."
+    }
+  ],
+  "confidence": "medium",
+  "reviewNote": "QID/OSM/официальный URL именно лагеря не подтверждены. Выбрана точка явно подписанной Cabaña de Adán из GPS-трека; рядом отдельно отмечен новый лагерь.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Лагерь Кабанья-де-Адан",
+      "reason": "Именованный лагерь Cabaña de Adán — первая лагерная остановка после El Mamey на маршруте к Ciudad Perdida в Sierra Nevada de Santa Marta. Подтвержден оператором маршрута Teyuna Tours и программой Universidad del Rosario; не ресторан La Cabaña de Adán в Córdoba, Испания."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "Place",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 80,
+      "selected": "11.136581, -73.859159",
+      "reason": "Первичный GPS-трек автора paulabeltrangarcia.93 (январь 2020): явно именованный waypoint45156641 Cabaña de Adán, 11.136581,-73.859159, с фотографиями лагеря. В том же треке отдельно указан Nuevo campamento Adán waypoint45156640,11.137922,-73.858805; выбран точно названный Cabaña, точки не усредняются. Это привязка именованного лагерного объекта, не гарантия расположения текущего заселения."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "После адресного поиска точный QID не установлен; идентификаторы более крупных объектов или одноименных мест не назначены."
+    }
+  ]
+}

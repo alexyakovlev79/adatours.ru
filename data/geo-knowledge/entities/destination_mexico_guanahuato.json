@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_guanahuato",
+  "stableId": "destination_mexico_guanahuato",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/guanajuato/",
+  "sourceFingerprint": "c522a56cbb146ed6575d4d74738096e4c8560d074ef98873ff23ea39c07554ca",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q61306",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guanajuato_(city)"
+    }
+  },
+  "location": {
+    "latitude": 21.017777777778,
+    "longitude": -101.25666666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q61306"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/guanajuato.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Город Guanajuato, столица одноименного штата Мексики. Театр Juárez, базилика, Plaza de la Paz и Callejón del Beso в MD подтверждают городской референт. Штат Q46475, муниципалитет и объект UNESCO HistoricTown+AdjacentMines не подменяют город."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/guanajuato/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guanajuato_(city)",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Город Guanajuato, столица одноименного штата Мексики. Театр Juárez, базилика, Plaza de la Paz и Callejón del Beso в MD подтверждают городской референт. Штат Q46475, муниципалитет и объект UNESCO HistoricTown+AdjacentMines не подменяют город."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guanajuato_(city)",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Город Guanajuato, столица одноименного штата Мексики. Театр Juárez, базилика, Plaza de la Paz и Callejón del Beso в MD подтверждают городской референт. Штат Q46475, муниципалитет и объект UNESCO HistoricTown+AdjacentMines не подменяют город."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guanajuato_(city)",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61306",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "P625 точной городской Wikidata; settlement_center. Не центр штата и не условная точка шахт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q61306",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены QID,P31,P17,P131,P625 и sitelinks. Город Guanajuato, столица одноименного штата Мексики. Театр Juárez, базилика, Plaza de la Paz и Callejón del Beso в MD подтверждают городской референт. Штат Q46475, муниципалитет и объект UNESCO HistoricTown+AdjacentMines не подменяют город."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guanajuato_(city)",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная EN-статья о выбранном объекте соответствует sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Гуанахуато",
+      "reason": "Город Guanajuato, столица одноименного штата Мексики. Театр Juárez, базилика, Plaza de la Paz и Callejón del Beso в MD подтверждают городской референт. Штат Q46475, муниципалитет и объект UNESCO HistoricTown+AdjacentMines не подменяют город."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "City",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "21.017777777778, -101.25666666667",
+      "reason": "P625 точной городской Wikidata; settlement_center. Не центр штата и не условная точка шахт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 100,
+      "selected": "Q61306",
+      "reason": "Город Guanajuato, столица одноименного штата Мексики. Театр Juárez, базилика, Plaza de la Paz и Callejón del Beso в MD подтверждают городской референт. Штат Q46475, муниципалитет и объект UNESCO HistoricTown+AdjacentMines не подменяют город."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 100,
+      "selected": "https://en.wikipedia.org/wiki/Guanajuato_(city)",
+      "reason": "Город Guanajuato, столица одноименного штата Мексики. Театр Juárez, базилика, Plaza de la Paz и Callejón del Beso в MD подтверждают городской референт. Штат Q46475, муниципалитет и объект UNESCO HistoricTown+AdjacentMines не подменяют город."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_tepuj_kuravajna",
+  "stableId": "destination_venezuela_tepuj_kuravajna",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/kuravaina-tepui/",
+  "sourceFingerprint": "a4952d99f20b03345f6455f01b85a64de42854e565bf673912c0b879d2b4266a",
+  "status": "READY",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 13308775460
+    }
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Тепуй Куравайна",
+      "reason": "Waku напрямую связывает Kuravaina с именем Kurawaimö, подъемом после Pozo Azul и видом на долину Kuraupa; совпадает с MD."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "node/13308775460",
+      "reason": "Waku напрямую связывает Kuravaina с именем Kurawaimö, подъемом после Pozo Azul и видом на долину Kuraupa; совпадает с MD. Kuravaina/Kurawaimö подтвержден местным оператором и точной вершиной OSM. QID Cerro Venado из категории фото не принят: границы именования не доказаны; Kurún/Kusari не подменяют объект."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "6.2712608,-62.7993429; feature_point",
+      "reason": "OSM Cerro Kurawaimó, natural=peak; GPS waypoint Cumbre Kuravaina 6.271945,-62.799332 расположен примерно в 76 м на той же вершине/плато. Взята одна точка OSM."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Kuravaina; Kurawaimö; Cerro Kurawaimó",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "probability": 98,
+      "selected": "containedInPlace destination_venezuela_kanajma_i_vodopad_anhel",
+      "reason": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://wakulodge.com/en/experiencias/trekking-tepuy-kuravaina",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Waku напрямую связывает Kuravaina с именем Kurawaimö, подъемом после Pozo Azul и видом на долину Kuraupa; совпадает с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/kuravaina-tepui/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/13308775460",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Waku напрямую связывает Kuravaina с именем Kurawaimö, подъемом после Pozo Azul и видом на долину Kuraupa; совпадает с MD. Kuravaina/Kurawaimö подтвержден местным оператором и точной вершиной OSM. QID Cerro Venado из категории фото не принят: границы именования не доказаны; Kurún/Kusari не подменяют объект."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/13308775460",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "OSM Cerro Kurawaimó, natural=peak; GPS waypoint Cumbre Kuravaina 6.271945,-62.799332 расположен примерно в 76 м на той же вершине/плато. Взята одна точка OSM."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikiloc.com/hiking-trails/tepuy-kurawaina-p-n-canaima-129808964#wp-129808965",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованный waypoint Cumbre Kuravaina: 6.271945,-62.799332, близко к OSM-пику."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://wakulodge.com/en/experiencias/trekking-tepuy-kuravaina",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "sourceUrl": "https://wakulodge.com/en/experiencias/trekking-tepuy-kuravaina",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "alternateNames": [
+    "Kuravaina",
+    "Kurawaimö",
+    "Cerro Kurawaimó"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_venezuela_kanajma_i_vodopad_anhel"
+    }
+  ],
+  "reviewNote": "Kuravaina/Kurawaimö подтвержден местным оператором и точной вершиной OSM. QID Cerro Venado из категории фото не принят: границы именования не доказаны; Kurún/Kusari не подменяют объект.",
+  "location": {
+    "latitude": 6.2712608,
+    "longitude": -62.7993429,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/13308775460"
+  }
+}

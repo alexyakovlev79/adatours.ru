@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_garibaldi_plaza",
+  "stableId": "destination_mexico_garibaldi_plaza",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/garibaldi-plaza/",
+  "sourceFingerprint": "f0f580aae0086bdaf9a0fa94d76bdf1b2eab1a47327afc554016ecfe455a5386",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1471225",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Plaza_Garibaldi"
+    },
+    "officialUrl": "https://www.mexicocity.cdmx.gob.mx/venues/garibaldi-plaza/"
+  },
+  "location": {
+    "latitude": 19.44056,
+    "longitude": -99.13889,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1471225"
+  },
+  "alternateNames": [
+    "Plaza Garibaldi",
+    "Plaza de Garibaldi"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Площадь Гарибальди",
+      "reason": "Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1471225",
+      "reason": "Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Plaza_Garibaldi",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.mexicocity.cdmx.gob.mx/venues/garibaldi-plaza/",
+      "reason": "Официальная государственная карточка выбранного объекта. Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.44056,-99.13889; feature_point",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Plaza Garibaldi; Plaza de Garibaldi",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/garibaldi-plaza/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/garibaldi-plaza/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1471225",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1471225",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/garibaldi-plaza/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Официальная государственная карточка выбранного объекта. Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1471225",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1471225",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/garibaldi-plaza/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Площадь Garibaldi в Centro Histórico Мехико у Eje Central, место выступлений mariachi. Q1471225 — площадь; Salón Tenampa и Museo del Tequila y el Mezcal являются соседними объектами."
+}

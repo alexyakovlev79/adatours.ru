@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_kanon_kavak",
+  "stableId": "destination_venezuela_kanon_kavak",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/kavac-canyon/",
+  "sourceFingerprint": "d6af216296cdfb3599573a3d325ff595066d38ea8248ffccfb94e07368471389",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "canyon",
+  "alternateNames": [
+    "Cañón de Kavac",
+    "Cuevas de Kavac",
+    "Kavac Gorge"
+  ],
+  "external": {
+    "wikidataQid": "Q39080884",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Cuevas_de_Kavac"
+    }
+  },
+  "location": {
+    "latitude": 5.7170578,
+    "longitude": -62.4263903,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.showcaves.com/english/ve/gorges/Kavac.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/kavac-canyon/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Каньон Кавак — скальное ущелье с водопадом у юго-восточного Ауянтепуя, называемое также Cuevas de Kavac. Статья с Q39080884 описывает garganta rocosa возле деревни Kavac; оператор различает деревню и поход к каньону."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://araguato.org/es/node/334",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Каньон Кавак — скальное ущелье с водопадом у юго-восточного Ауянтепуя, называемое также Cuevas de Kavac. Статья с Q39080884 описывает garganta rocosa возле деревни Kavac; оператор различает деревню и поход к каньону."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://araguato.org/es/node/334",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Каньон Кавак — скальное ущелье с водопадом у юго-восточного Ауянтепуя, называемое также Cuevas de Kavac. Статья с Q39080884 описывает garganta rocosa возле деревни Kavac; оператор различает деревню и поход к каньону."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://araguato.org/es/node/334",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q39080884",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Каньон Кавак — скальное ущелье с водопадом у юго-восточного Ауянтепуя, называемое также Cuevas de Kavac. Статья с Q39080884 описывает garganta rocosa возле деревни Kavac; оператор различает деревню и поход к каньону. Прочитаны EntityData/API: P17=Venezuela и соответствующие sitelinks/описание."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Cuevas_de_Kavac",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Каньон Кавак — скальное ущелье с водопадом у юго-восточного Ауянтепуя, называемое также Cuevas de Kavac. Статья с Q39080884 описывает garganta rocosa возле деревни Kavac; оператор различает деревню и поход к каньону. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.showcaves.com/english/ve/gorges/Kavac.html",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Выбрана координата страницы специализированного каталога именно Kavac gorge. Wikidata P625 5.7333611111,-62.45375 находится примерно в 3.5 км от нее и не использована. Это опорная точка ущелья по Showcaves, не точный вход; конфликт не усреднялся."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://araguato.org/es/node/334",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Каньон Кавак",
+      "reason": "Каньон Кавак — скальное ущелье с водопадом у юго-восточного Ауянтепуя, называемое также Cuevas de Kavac. Статья с Q39080884 описывает garganta rocosa возле деревни Kavac; оператор различает деревню и поход к каньону."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "canyon",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Cañón de Kavac; Cuevas de Kavac; Kavac Gorge",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q39080884",
+      "reason": "Каньон Кавак — скальное ущелье с водопадом у юго-восточного Ауянтепуя, называемое также Cuevas de Kavac. Статья с Q39080884 описывает garganta rocosa возле деревни Kavac; оператор различает деревню и поход к каньону."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Cuevas_de_Kavac\"}",
+      "reason": "Точные языковые статьи и объектный контекст совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 83,
+      "selected": "5.7170578,-62.4263903 (representative)",
+      "reason": "Выбрана координата страницы специализированного каталога именно Kavac gorge. Wikidata P625 5.7333611111,-62.45375 находится примерно в 3.5 км от нее и не использована. Это опорная точка ущелья по Showcaves, не точный вход; конфликт не усреднялся."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    }
+  ],
+  "reviewNote": "Q39080884 соответствует именованному ущелью Cuevas de Kavac; Q3047561 — деревня в Черногории, исключена. UNESCO 701 не перенесен с национального парка на каньон."
+}

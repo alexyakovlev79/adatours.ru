@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_ratoncito_island",
+  "stableId": "destination_venezuela_ratoncito_island",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/ratoncito-island/",
+  "sourceFingerprint": "a80f81e71c144d7b63a742d009141b9464e53ecfbb2652326b17c44574b212a3",
+  "status": "READY",
+  "external": {
+    "osm": {
+      "type": "relation",
+      "id": 20058057
+    }
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Остров Ратонсито",
+      "reason": "Речной остров Isla Ratoncito и остановка лодочного маршрута перед подходом к Mirador Laime подтверждены оператором и точным OSM-островом."
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "relation/20058057",
+      "reason": "Речной остров Isla Ratoncito и остановка лодочного маршрута перед подходом к Mirador Laime подтверждены оператором и точным OSM-островом. Остров Ratoncito на Churún; OSM relation 20058057 place=islet. Лагерь на берегу, одноименная деревня и Isla Ratón в Amazonas — другие объекты."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "5.9774,-62.517; representative",
+      "reason": "Выбрана внутренняя опорная точка геометрии острова: границы 5.9764256..5.9786344, -62.5175808..-62.5162491. Это не соседний лагерь Campamento Ratoncito на берегу."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Isla Ratoncito; Ratoncito Island",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "probability": 98,
+      "selected": "containedInPlace destination_venezuela_kanajma_i_vodopad_anhel",
+      "reason": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/pernocta-salto-angel",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Речной остров Isla Ratoncito и остановка лодочного маршрута перед подходом к Mirador Laime подтверждены оператором и точным OSM-островом."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/ratoncito-island/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/20058057",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Речной остров Isla Ratoncito и остановка лодочного маршрута перед подходом к Mirador Laime подтверждены оператором и точным OSM-островом. Остров Ratoncito на Churún; OSM relation 20058057 place=islet. Лагерь на берегу, одноименная деревня и Isla Ratón в Amazonas — другие объекты."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/relation/20058057",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Выбрана внутренняя опорная точка геометрии острова: границы 5.9764256..5.9786344, -62.5175808..-62.5162491. Это не соседний лагерь Campamento Ratoncito на берегу."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/pernocta-salto-angel",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/pernocta-salto-angel",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "alternateNames": [
+    "Isla Ratoncito",
+    "Ratoncito Island"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_venezuela_kanajma_i_vodopad_anhel"
+    }
+  ],
+  "reviewNote": "Остров Ratoncito на Churún; OSM relation 20058057 place=islet. Лагерь на берегу, одноименная деревня и Isla Ratón в Amazonas — другие объекты.",
+  "location": {
+    "latitude": 5.9774,
+    "longitude": -62.517,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/relation/20058057"
+  }
+}

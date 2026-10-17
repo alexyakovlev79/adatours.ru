@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_peten",
+  "stableId": "destination_guatemala_peten",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/peten/",
+  "sourceFingerprint": "e013f89f35f00f0713a3b44dae2ece1dedb19dbc38d0c770eee8667a55b37fd2",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "department",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/peten/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Проверены текущие MD и source-index в main, stable ID/страна/тип и canonical. Публичный URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://adatours.ru/guatemala/place/peten/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Класс выбран по фактическому референту MD/summary; Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q466061",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Wikidata P17 Q774 (Guatemala); страна совпадает с MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q466061",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитан Special:EntityData/Q466061.json: label/description, P31, P17 Q774 и P625. Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q466061",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "EN/ES sitelinks прочитаны из того же выбранного Wikidata entity, описывают именованный объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3591410/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитана точная запись GeoNames: rst-order administrative division · GT Feature Map Hierarchy History Alternate names GeonameId 3591410 Coordinates 16.83333, -90.00000 Move 16°49′59.99″ N, 90°00′00.00″ W Population 595,548 Elevation ca. 208 m SRTM3 208 m · ASTER 203 m Timezone America/Guatemala Feature code A ADM1 Wikipedia Ar. Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3591410/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Выбрана одна опубликованная точка без усреднения. Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Q466061",
+      "reason": "Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "department",
+      "reason": "Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Совпадают география источников и закреплённый countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q466061",
+      "reason": "Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Pet%C3%A9n_Department\",\"es\":\"https://es.wikipedia.org/wiki/Departamento_de_Pet%C3%A9n\"}",
+      "reason": "Прямые языковые sitelinks выбранной карточки, география и объект совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3591410",
+      "reason": "Название, страна GT и feature code соответствуют выбранному объекту; административные альтернативы исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "16.83333,-90",
+      "reason": "Роль representative. Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса."
+    }
+  ],
+  "reviewNote": "Основной референт — департамент Петен: summary и основной текст описывают крупнейший департамент Гватемалы и его памятники. Упоминания «острова» и Флореса — неточности текста, не отдельная идентичность. Координата GeoNames — репрезентативная точка департамента, не центр Флореса.",
+  "external": {
+    "wikidataQid": "Q466061",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pet%C3%A9n_Department",
+      "es": "https://es.wikipedia.org/wiki/Departamento_de_Pet%C3%A9n"
+    },
+    "geonamesId": "3591410"
+  },
+  "location": {
+    "latitude": 16.83333,
+    "longitude": -90,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3591410/"
+  }
+}

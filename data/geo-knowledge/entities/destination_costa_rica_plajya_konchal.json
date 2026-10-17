@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_plajya_konchal",
+  "stableId": "destination_costa_rica_plajya_konchal",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/playa-conchal/",
+  "sourceFingerprint": "315e227339726bf352bdb320e52a9f7d1a15bab349cd5a4353c1492173af1837",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q16619679",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Playa_Conchal"
+    },
+    "geonamesId": "7576980",
+    "osm": {
+      "type": "way",
+      "id": 90454583
+    }
+  },
+  "location": {
+    "latitude": 10.3996,
+    "longitude": -85.81166,
+    "pointRole": "representative",
+    "coordinateSource": "https://es.wikipedia.org/wiki/Playa_Conchal"
+  },
+  "alternateNames": [
+    "Playa Conchal",
+    "Conchal Beach"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Плайя-Кончаль",
+      "reason": "Пляж Conchal к югу от Brasilito в Guanacaste, берег из ракушечных фрагментов; exact beach Wikidata, eswiki и карта совпадают с MD. Курортные отели рядом не заменяют пляж."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q16619679",
+      "reason": "Пляж Conchal к югу от Brasilito в Guanacaste, берег из ракушечных фрагментов; exact beach Wikidata, eswiki и карта совпадают с MD. Курортные отели рядом не заменяют пляж."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Playa_Conchal",
+      "reason": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Основной референт — пляж Q16619679, хотя исходная категория resort. OSM 90454583 natural=beach и wikidata=Q16619679. Отели Westin/W и Reserva Conchal — самостоятельные объекты."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "7576980",
+      "reason": "P1566 точной сущности Wikidata; тип и география соответствуют выбранному объекту."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/90454583",
+      "reason": "Точный beach OSM с name=Playa Conchal, natural=beach, wikidata=Q16619679; положение к югу от Brasilito совпадает с ICT."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "10.3996,-85.81166; representative",
+      "reason": "Координата точной eswiki пляжа: 10.3996,-85.81166; соответствует P625 и геометрии OSM beach way90454583 (10.3992246..10.4037727,-85.8120847..-85.8033139). Опорная точка пляжа, не отеля Reserva Conchal."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Playa Conchal; Conchal Beach",
+      "reason": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "containedInPlace country_costa_rica",
+      "reason": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/guanacaste/tourist-attractions-10-in-guanacaste",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Пляж Conchal к югу от Brasilito в Guanacaste, берег из ракушечных фрагментов; exact beach Wikidata, eswiki и карта совпадают с MD. Курортные отели рядом не заменяют пляж."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/playa-conchal/",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точный URL проверен: HTTP200, canonical совпадает, H1 соответствует, noindex нет. Approved MD и entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, стране, имени и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16619679",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Пляж Conchal к югу от Brasilito в Guanacaste, берег из ракушечных фрагментов; exact beach Wikidata, eswiki и карта совпадают с MD. Курортные отели рядом не заменяют пляж."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16619679",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Основной референт — пляж Q16619679, хотя исходная категория resort. OSM 90454583 natural=beach и wikidata=Q16619679. Отели Westin/W и Reserva Conchal — самостоятельные объекты."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16619679",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "P1566 точной сущности Wikidata; тип и география соответствуют выбранному объекту."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/90454583",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точный beach OSM с name=Playa Conchal, natural=beach, wikidata=Q16619679; положение к югу от Brasilito совпадает с ICT."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Playa_Conchal",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Координата точной eswiki пляжа: 10.3996,-85.81166; соответствует P625 и геометрии OSM beach way90454583 (10.3992246..10.4037727,-85.8120847..-85.8033139). Опорная точка пляжа, не отеля Reserva Conchal."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16619679",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16619679",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Основной референт — пляж Q16619679, хотя исходная категория resort. OSM 90454583 natural=beach и wikidata=Q16619679. Отели Westin/W и Reserva Conchal — самостоятельные объекты."
+}

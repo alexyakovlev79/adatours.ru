@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_el_penon_de_guatape",
+  "stableId": "destination_colombia_el_penon_de_guatape",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/el-penon-de-guatape/",
+  "sourceFingerprint": "31daec659ff23e94916443556657f8306089577d7cb99da121d44f1597b5fa0b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Landform",
+  "external": {
+    "wikidataQid": "Q2244727",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/El_Pe%C3%B1%C3%B3n_de_Guatap%C3%A9"
+    }
+  },
+  "location": {
+    "latitude": 6.2194517,
+    "longitude": -75.1791552,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2244727"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/el-penon-de-guatape.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Самостоятельная скала El Peñón de Guatapé / Piedra del Peñol в Antioquia. Это не муниципалитет Guatapé Q1578769, не город El Peñol и не водохранилище."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/el-penon-de-guatape/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/El_Pe%C3%B1%C3%B3n_de_Guatap%C3%A9",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Самостоятельная скала El Peñón de Guatapé / Piedra del Peñol в Antioquia. Это не муниципалитет Guatapé Q1578769, не город El Peñol и не водохранилище."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/El_Pe%C3%B1%C3%B3n_de_Guatap%C3%A9",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/El_Pe%C3%B1%C3%B3n_de_Guatap%C3%A9",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2244727",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "P625 Wikidata со ссылкой на OSM way332953614. Точка скалы, не пристань или центр города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2244727",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверены точный QID, P31/P17/P625 и sitelink; Самостоятельная скала El Peñón de Guatapé / Piedra del Peñol в Antioquia. Это не муниципалитет Guatapé Q1578769, не город El Peñol и не водохранилище."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/El_Pe%C3%B1%C3%B3n_de_Guatap%C3%A9",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точная статья о выбранном объекте; соответствует Wikidata sitelink."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Скала Эль-Пеньон-де-Гуатапе",
+      "reason": "Самостоятельная скала El Peñón de Guatapé / Piedra del Peñol в Antioquia. Это не муниципалитет Guatapé Q1578769, не город El Peñol и не водохранилище."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "Landform",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "6.2194517, -75.1791552",
+      "reason": "P625 Wikidata со ссылкой на OSM way332953614. Точка скалы, не пристань или центр города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2244727",
+      "reason": "Самостоятельная скала El Peñón de Guatapé / Piedra del Peñol в Antioquia. Это не муниципалитет Guatapé Q1578769, не город El Peñol и не водохранилище."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/El_Pe%C3%B1%C3%B3n_de_Guatap%C3%A9",
+      "reason": "Точная статья и sitelink выбранной Wikidata."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_monterrico_mangroves",
+  "stableId": "destination_guatemala_monterrico_mangroves",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/monterrico-mangroves/",
+  "sourceFingerprint": "bba2fe0387f14cfd3ab5b61215a259f5afa4b829654d42fea88b05e8ea62d40a",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "mangrove_wetland",
+  "alternateNames": [
+    "Manglares de Monterrico",
+    "Monterrico mangroves"
+  ],
+  "location": {
+    "latitude": 13.899999,
+    "longitude": -90.466697,
+    "pointRole": "representative",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/File:Monterrico,_Santa_Rosa,_Guatemala.jpg"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_guatemala_monterrico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/monterrico-mangroves/",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Проверены точный production URL (HTTP 200), self-canonical, H1 и отсутствие noindex; approved MD и source-index сверены с current main blob. Самостоятельный природный объект страницы — мангровые водно-болотные угодья и каналы за берегом Монтеррико. Официальные USAC/CECON и CONAP описывают именно прогулки по этим манграм; это часть природной территории, не само поселение и не вся резервация."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://iiqb-ccqqfar.usac.edu.gt/monterrico/",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Самостоятельный природный объект страницы — мангровые водно-болотные угодья и каналы за берегом Монтеррико. Официальные USAC/CECON и CONAP описывают именно прогулки по этим манграм; это часть природной территории, не само поселение и не вся резервация."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://iiqb-ccqqfar.usac.edu.gt/monterrico/",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Самостоятельный природный объект страницы — мангровые водно-болотные угодья и каналы за берегом Монтеррико. Официальные USAC/CECON и CONAP описывают именно прогулки по этим манграм; это часть природной территории, не само поселение и не вся резервация."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://iiqb-ccqqfar.usac.edu.gt/monterrico/",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Местное/английское имя совпадает с именованным объектом; варианты названия проверены по точным картографическим/энциклопедическим карточкам."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monterrico,_Santa_Rosa,_Guatemala.jpg",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Опорная точка внутри мангрового ландшафта из геотега снимка с описанием paddling through mangroves, Monterrico. Это положение лодки/камеры в манграх, осознанно принято как representative, не географический центр, вход или граница. Проверено попадание точки в OSM wetland=mangrove way 388483197; официальный USAC подтверждает водные маршруты в этой местности."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/way/388483197",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Прямой OSM API map дал полигон natural=wetland, wetland=mangrove. Point-in-polygon для выбранных 13.899999,-90.466697: внутри. Полигон значительно шире конкретного туристического объекта, поэтому его ID не записан как external.osm."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://iiqb-ccqqfar.usac.edu.gt/monterrico/",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "Точный именованный объект расположен в стране из MD и source-index: country_guatemala. Самостоятельный природный объект страницы — мангровые водно-болотные угодья и каналы за берегом Монтеррико. Официальные USAC/CECON и CONAP описывают именно прогулки по этим манграм; это часть природной территории, не само поселение и не вся резервация."
+    },
+    {
+      "field": "relationships.destination_guatemala_monterrico",
+      "sourceUrl": "https://iiqb-ccqqfar.usac.edu.gt/monterrico/",
+      "checkedAt": "2026-10-17T07:07:38.241Z",
+      "note": "USAC указывает Aldea Monterrico, Taxisco, Santa Rosa и водные туристические маршруты местных жителей. relatedPlace связывает мангровые угодья с поселением без отождествления их границ."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Мангровые заросли Монтеррико",
+      "reason": "Самостоятельный природный объект страницы — мангровые водно-болотные угодья и каналы за берегом Монтеррико. Официальные USAC/CECON и CONAP описывают именно прогулки по этим манграм; это часть природной территории, не само поселение и не вся резервация."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "mangrove_wetland",
+      "reason": "Тип основного референта подтвержден названным источником; юридический статус MD автоматически не переносился."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Manglares de Monterrico; Monterrico mangroves",
+      "reason": "Варианты относятся к тому же именованному объекту."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "13.899999,-90.466697 (representative)",
+      "reason": "Опорная точка внутри мангрового ландшафта из геотега снимка с описанием paddling through mangroves, Monterrico. Это положение лодки/камеры в манграх, осознанно принято как representative, не географический центр, вход или граница. Проверено попадание точки в OSM wetland=mangrove way 388483197; официальный USAC подтверждает водные маршруты в этой местности."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна подтверждена источником с точным именем и контекстом объекта."
+    },
+    {
+      "field": "relationships.destination_guatemala_monterrico",
+      "probability": 98,
+      "selected": "destination_guatemala_monterrico",
+      "reason": "USAC указывает Aldea Monterrico, Taxisco, Santa Rosa и водные туристические маршруты местных жителей. relatedPlace связывает мангровые угодья с поселением без отождествления их границ."
+    }
+  ],
+  "reviewNote": "Отдельный QID/GeoNames для туристического объекта не установлен. Q1946137 принадлежит поселению, а карточка всей резервации шире мангрового участка; эти идентификаторы не присвоены манграм. Геотег — представительная точка внутри леса, не центр всей системы."
+}

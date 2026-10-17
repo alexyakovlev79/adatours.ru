@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_san_bartolo_coyotepec",
+  "stableId": "destination_mexico_san_bartolo_coyotepec",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/san-bartolo-coyotepec/",
+  "sourceFingerprint": "48ce357213616c2f9fdca86e39cccb7e375eaa25c0fd71dd30c2e998074d602b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "alternateNames": [
+    "San Bartolo Coyotepec"
+  ],
+  "external": {
+    "wikidataQid": "Q54920087",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/San_Bartolo_Coyotepec"
+    },
+    "officialUrl": "https://oaxaca.travel/index.php/es/all-destinations-es/san-bartolo-coyotepec"
+  },
+  "location": {
+    "latitude": 16.958055555556,
+    "longitude": -96.7075,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q54920087"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/san-bartolo-coyotepec/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Сан-Бартоло-Койотепек, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Поселок и муниципальный центр Сан-Бартоло-Койотепек в Оахаке, известный барро-негро и MEAPO; именно поселок описан в MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://oaxaca.travel/index.php/es/all-destinations-es/san-bartolo-coyotepec",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Поселок и муниципальный центр Сан-Бартоло-Койотепек в Оахаке, известный барро-негро и MEAPO; именно поселок описан в MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54920087",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: municipal seat of San Bartolo Coyotepec, State of Oaxaca, Mexico. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54920087",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Поселок и муниципальный центр Сан-Бартоло-Койотепек в Оахаке, известный барро-негро и MEAPO; именно поселок описан в MD. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54920087",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: eswiki: San Bartolo Coyotepec. Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54920087",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 16.958055555556, -96.7075; исходная координата, роль settlement_center. Точка выбранного населенного пункта или памятника, без усреднения и без переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54920087",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: San Bartolo Coyotepec."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q54920087",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://oaxaca.travel/index.php/es/all-destinations-es/san-bartolo-coyotepec",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Официальный туристический или управляющий источник о выбранном объекте. Страница служит officialUrl и доказательством; не превращается автоматически в географический sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Поселок и муниципальный центр Сан-Бартоло-Койотепек в Оахаке, известный барро-негро и MEAPO; именно поселок описан в MD.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "settlement",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q54920087",
+      "reason": "Поселок и муниципальный центр Сан-Бартоло-Койотепек в Оахаке, известный барро-негро и MEAPO; именно поселок описан в MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/San_Bartolo_Coyotepec",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "16.958055555556, -96.7075",
+      "reason": "P625 точного объекта; роль settlement_center; Выбран Q54920087 населенного пункта. Q3891277 относится к муниципалитету; его P625, GeoNames 8582586, OSM relation 5999710 и английская статья не перенесены. Испанская статья San Bartolo Coyotepec связана с поселком."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "San Bartolo Coyotepec",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://oaxaca.travel/index.php/es/all-destinations-es/san-bartolo-coyotepec",
+      "reason": "Проверен официальный источник о направлении или управляющей организации; используется по назначению поля officialUrl."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран Q54920087 населенного пункта. Q3891277 относится к муниципалитету; его P625, GeoNames 8582586, OSM relation 5999710 и английская статья не перенесены. Испанская статья San Bartolo Coyotepec связана с поселком."
+}

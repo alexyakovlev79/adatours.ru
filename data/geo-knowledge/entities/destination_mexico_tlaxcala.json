@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_tlaxcala",
+  "stableId": "destination_mexico_tlaxcala",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/tlaxcala/",
+  "sourceFingerprint": "0d0d5d48b91065a5a2eaf85723fa585ec1cf9d3ad30f9a4087d2d4595f734439",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q689987",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tlaxcala_(city)"
+    },
+    "geonamesId": "3815415"
+  },
+  "location": {
+    "latitude": 19.315144977965634,
+    "longitude": -98.23615119856137,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q689987"
+  },
+  "alternateNames": [
+    "Tlaxcala de Xicohténcatl",
+    "Tlaxcala"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Тласкала",
+      "reason": "Основной референт — город Tlaxcala de Xicohténcatl, столица одноименного штата, с центральными площадями и convento San Francisco. Q689987 — город, не штат и не муниципалитет Q6147713. Упоминания окрестностей не меняют главный городской референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q689987",
+      "reason": "Основной референт — город Tlaxcala de Xicohténcatl, столица одноименного штата, с центральными площадями и convento San Francisco. Q689987 — город, не штат и не муниципалитет Q6147713. Упоминания окрестностей не меняют главный городской референт."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Tlaxcala_(city)",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Основной референт — город Tlaxcala de Xicohténcatl, столица одноименного штата, с центральными площадями и convento San Francisco. Q689987 — город, не штат и не муниципалитет Q6147713. Упоминания окрестностей не меняют главный городской референт."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3815415",
+      "reason": "P1566 Q689987 относится к городу Tlaxcala de Xicohténcatl."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.315144977965634,-98.23615119856137; settlement_center",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Tlaxcala de Xicohténcatl; Tlaxcala",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4818",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Основной референт — город Tlaxcala de Xicohténcatl, столица одноименного штата, с центральными площадями и convento San Francisco. Q689987 — город, не штат и не муниципалитет Q6147713. Упоминания окрестностей не меняют главный городской референт."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/tlaxcala/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q689987",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Основной референт — город Tlaxcala de Xicohténcatl, столица одноименного штата, с центральными площадями и convento San Francisco. Q689987 — город, не штат и не муниципалитет Q6147713. Упоминания окрестностей не меняют главный городской референт."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q689987",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Основной референт — город Tlaxcala de Xicohténcatl, столица одноименного штата, с центральными площадями и convento San Francisco. Q689987 — город, не штат и не муниципалитет Q6147713. Упоминания окрестностей не меняют главный городской референт."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q689987",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P1566 Q689987 относится к городу Tlaxcala de Xicohténcatl."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q689987",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q689987",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4818",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Основной референт — город Tlaxcala de Xicohténcatl, столица одноименного штата, с центральными площадями и convento San Francisco. Q689987 — город, не штат и не муниципалитет Q6147713. Упоминания окрестностей не меняют главный городской референт."
+}

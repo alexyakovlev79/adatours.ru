@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_dolina_kokora",
+  "stableId": "destination_colombia_dolina_kokora",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/cocora-valley/",
+  "sourceFingerprint": "65d8ccc36ef654e40b48acd6adfa5ef728c5de3fe5fe39cf710035ed5ca7a82b",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q965776",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cocora_Valley"
+    },
+    "geonamesId": "7870994"
+  },
+  "location": {
+    "latitude": 4.63691,
+    "longitude": -75.48655,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q965776"
+  },
+  "alternateNames": [
+    "Valle de Cocora",
+    "Cocora Valley"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Долина Кокора",
+      "reason": "Valle de Cocora в муниципалитете Salento, Quindío: восковые пальмы, облачный лес и маршруты полностью совпадают с MD и официальным туристическим описанием."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q965776",
+      "reason": "Valle de Cocora в муниципалитете Salento, Quindío: восковые пальмы, облачный лес и маршруты полностью совпадают с MD и официальным туристическим описанием."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Cocora_Valley",
+      "reason": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "7870994",
+      "reason": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "4.63691,-75.48655; representative",
+      "reason": "Выбрана P625 4.63691,-75.48655 в верхней туристической части долины с восковыми пальмами; близко к координате точной enwiki 4.633,-75.483. Вторая P625 4.641111,-75.541389 относится к нижнему участку долины/реки; координаты не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Valle de Cocora; Cocora Valley",
+      "reason": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "containedInPlace country_colombia",
+      "reason": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://colombia.travel/es/armenia/conoce-el-valle-del-cocora",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Valle de Cocora в муниципалитете Salento, Quindío: восковые пальмы, облачный лес и маршруты полностью совпадают с MD и официальным туристическим описанием."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/cocora-valley/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Live URL: HTTP 200, canonical exact, H1 соответствует, noindex отсутствует. Проверены approved MD и entry из main 989a35d14eab8a816010b3c5c40da68f62d230bb; stableId/страна/URL совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965776",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Valle de Cocora в муниципалитете Salento, Quindío: восковые пальмы, облачный лес и маршруты полностью совпадают с MD и официальным туристическим описанием."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965776",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965776",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965776",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Выбрана P625 4.63691,-75.48655 в верхней туристической части долины с восковыми пальмами; близко к координате точной enwiki 4.633,-75.483. Вторая P625 4.641111,-75.541389 относится к нижнему участку долины/реки; координаты не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965776",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q965776",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Одна долина Q965776, не весь Los Nevados и не город Salento. Из двух P625 выбрана опорная точка туристической части с пальмами, 94%; средняя между точками не вычислялась."
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_pacific_coast",
+  "stableId": "destination_costa_rica_pacific_coast",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/pacific-coast/",
+  "sourceFingerprint": "3c082042fbbaf30a563e4d232a3c116d90f4591bec38f6e78f3581e9921941d0",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "composite",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/pacific-coast.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Тихоокеанское побережье Коста-Рики как широкий туристический регион, объединяющий северные, центральные и южные участки берега."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/pacific-coast/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и официальной туристической географией/кодом CR в GeoNames, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/guanacaste",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "ICT различает участки тихоокеанского побережья; северный Гуанакасте и центральный Кепос подтверждают широкий охват MD. Порталы служат evidence, не exact sameAs всего побережья."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/central-pacific",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "ICT различает участки тихоокеанского побережья; северный Гуанакасте и центральный Кепос подтверждают широкий охват MD. Порталы служат evidence, не exact sameAs всего побережья."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Тихоокеанское побережье Коста-Рики как широкий туристический регион, объединяющий северные, центральные и южные участки берега."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и официальной туристической географией/кодом CR в GeoNames, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 0,
+      "reason": "Единый точный QID всего тихоокеанского побережья Коста-Рики не установлен; QID океана/Никои не подходят."
+    },
+    {
+      "field": "location",
+      "probability": 0,
+      "reason": "Для протяжённого редакционного региона не определена опорная точка с достаточной уверенностью."
+    }
+  ],
+  "reviewNote": "Редакционный географический охват — всё тихоокеанское побережье страны, включая разные районы Фламинго и Кепоса. Не найден единый точный QID/GeoNames/OSM для этого охвата. Тихий океан, полуостров Никоя, отдельные туристические регионы и берег Мексики не являются идентичностью страницы. Единую координату не назначаю: у составного протяжённого региона не определена подходящая опорная точка.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/pacific-coast/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

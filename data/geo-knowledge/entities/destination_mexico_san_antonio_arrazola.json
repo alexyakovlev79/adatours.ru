@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_san_antonio_arrazola",
+  "stableId": "destination_mexico_san_antonio_arrazola",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/san-antonio-arrazola/",
+  "sourceFingerprint": "193e06b1df776e8808baad2b323d7aefcd7ccf96538d8e3fc3b5772761ac8459",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "alternateNames": [
+    "San Antonio Arrazola"
+  ],
+  "external": {
+    "wikidataQid": "Q49852718",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/San_Antonio_Arrazola"
+    },
+    "officialUrl": "https://oaxaca.travel/index.php/es/all-destinations-es/san-antonio-arrazola"
+  },
+  "location": {
+    "latitude": 17.039722222222224,
+    "longitude": -96.78972222222222,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q49852718"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/san-antonio-arrazola/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Сан-Антонио-Арразола, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Поселок Сан-Антонио-Арразола в муниципалитете Santa Cruz Xoxocotlán, Оахака, у подножия Монте-Альбана; соответствует мастерским деревянных алебрихе в MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://oaxaca.travel/index.php/es/all-destinations-es/san-antonio-arrazola",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Поселок Сан-Антонио-Арразола в муниципалитете Santa Cruz Xoxocotlán, Оахака, у подножия Монте-Альбана; соответствует мастерским деревянных алебрихе в MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q49852718",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: town in Santa Cruz Xoxocotlán Municipality, State of Oaxaca, Mexico. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q49852718",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Поселок Сан-Антонио-Арразола в муниципалитете Santa Cruz Xoxocotlán, Оахака, у подножия Монте-Альбана; соответствует мастерским деревянных алебрихе в MD. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q49852718",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: eswiki: San Antonio Arrazola. Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q49852718",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 17.039722222222224, -96.78972222222222; исходная координата, роль settlement_center. Точка выбранного населенного пункта или памятника, без усреднения и без переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q49852718",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: San Antonio Arrazola."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q49852718",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://oaxaca.travel/index.php/es/all-destinations-es/san-antonio-arrazola",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Официальный туристический или управляющий источник о выбранном объекте. Страница служит officialUrl и доказательством; не превращается автоматически в географический sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Поселок Сан-Антонио-Арразола в муниципалитете Santa Cruz Xoxocotlán, Оахака, у подножия Монте-Альбана; соответствует мастерским деревянных алебрихе в MD.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "settlement",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q49852718",
+      "reason": "Поселок Сан-Антонио-Арразола в муниципалитете Santa Cruz Xoxocotlán, Оахака, у подножия Монте-Альбана; соответствует мастерским деревянных алебрихе в MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/San_Antonio_Arrazola",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "17.039722222222224, -96.78972222222222",
+      "reason": "P625 точного объекта; роль settlement_center; Внешняя карточка относится к поселку, не к Santa Cruz Xoxocotlán и не ко всему археологическому Монте-Альбану."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "San Antonio Arrazola",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://oaxaca.travel/index.php/es/all-destinations-es/san-antonio-arrazola",
+      "reason": "Проверен официальный источник о направлении или управляющей организации; используется по назначению поля officialUrl."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Внешняя карточка относится к поселку, не к Santa Cruz Xoxocotlán и не ко всему археологическому Монте-Альбану."
+}

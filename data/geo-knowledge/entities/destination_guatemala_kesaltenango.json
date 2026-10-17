@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_kesaltenango",
+  "stableId": "destination_guatemala_kesaltenango",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/quetzaltenango/",
+  "sourceFingerprint": "1e19e2e363bdd48877a38aadabda4e23df3e967d19061e074bfad355e6e68719",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q334577",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Quetzaltenango"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы.",
+      "selected": "city"
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "reason": "Страна из текущего MD согласуется с внешними географическими источниками.",
+      "selected": "country_guatemala"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы.",
+      "selected": "Q334577"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы.",
+      "selected": "https://en.wikipedia.org/wiki/Quetzaltenango"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Городская точка P625 14°50′N 91°31′W совпадает с Wikipedia с округлением.",
+      "selected": "14.8333333333, -91.5166666667"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/quetzaltenango/",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прямой HTTP-запрос: 200; H1 совпадает, canonical точный, noindex отсутствует. Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/kesaltenango.md",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прочитаны MD и точная source-index entry; проверены stable ID, status: approved, countryId и смысл страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q334577",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q334577",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quetzaltenango",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Источник географически помещает выбранный объект в country_guatemala."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q334577",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quetzaltenango",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Точная статья о выбранном референте. Город Quetzaltenango / Xela на гватемальском нагорье, исторически связанный с Лос-Альтос. Не весь департамент Quetzaltenango и не отдельные вулканы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q334577",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Городская точка P625 14°50′N 91°31′W совпадает с Wikipedia с округлением."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Quetzaltenango",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Городская точка P625 14°50′N 91°31′W совпадает с Wikipedia с округлением."
+    }
+  ],
+  "reviewNote": null,
+  "location": {
+    "latitude": 14.8333333333,
+    "longitude": -91.5166666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q334577"
+  }
+}

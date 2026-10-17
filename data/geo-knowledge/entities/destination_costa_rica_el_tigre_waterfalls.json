@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_el_tigre_waterfalls",
+  "stableId": "destination_costa_rica_el_tigre_waterfalls",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/el-tigre-waterfalls/",
+  "sourceFingerprint": "a977203fb4bb0a9904c9479a0c7e0b0cd4626252873292ff43a85b1752eb4ff7",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "Landform",
+  "external": {
+    "officialUrl": "https://www.eltigrewaterfalls.com/"
+  },
+  "location": {
+    "latitude": 10.3743198,
+    "longitude": -84.8316549,
+    "pointRole": "entrance",
+    "coordinateSource": "https://www.eltigrewaterfalls.com/pricing"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/el-tigre-waterfalls.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Четыре водопада El Tigre Waterfalls в частном природном комплексе Monteverde вне Santa Elena, подход через Monte de los Olivos. Не сектор El Tigre национального парка Corcovado и не одноименные водопады других стран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/el-tigre-waterfalls/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.eltigrewaterfalls.com/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Четыре водопада El Tigre Waterfalls в частном природном комплексе Monteverde вне Santa Elena, подход через Monte de los Olivos. Не сектор El Tigre национального парка Corcovado и не одноименные водопады других стран."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.eltigrewaterfalls.com/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Четыре водопада El Tigre Waterfalls в частном природном комплексе Monteverde вне Santa Elena, подход через Monte de los Olivos. Не сектор El Tigre национального парка Corcovado и не одноименные водопады других стран."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.eltigrewaterfalls.com/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_costa_rica"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.eltigrewaterfalls.com/pricing",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "На официальной странице pricing в блоке How to Get to El Tigre Waterfalls извлечен подписанный маркер встроенной карты: addressTitle=El Tigre Waterfalls,addressLine1=el tigre,addressLine2=Los Olivos Guanacaste Province,markerLat10.3743198,markerLng-84.8316549. Принят visitor entrance/reception. mapLat10.37455434420512,-84.83152130213625 — центр карты; отдельное schema geo10.305,-84.825 противоречит карте и отброшено. Координаты разных источников не усреднялись."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.eltigrewaterfalls.com/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Официальная страница выбранного комплекса/объекта. Четыре водопада El Tigre Waterfalls в частном природном комплексе Monteverde вне Santa Elena, подход через Monte de los Olivos. Не сектор El Tigre национального парка Corcovado и не одноименные водопады других стран."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точный QID/OSM группы не подтвержден. Географическая привязка взята из маркера карты официального входа; ошибочная общая schema-точка10.305,-84.825 не перенесена.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопады Эль-Тигре",
+      "reason": "Четыре водопада El Tigre Waterfalls в частном природном комплексе Monteverde вне Santa Elena, подход через Monte de los Olivos. Не сектор El Tigre национального парка Corcovado и не одноименные водопады других стран."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "Landform",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "10.3743198, -84.8316549",
+      "reason": "На официальной странице pricing в блоке How to Get to El Tigre Waterfalls извлечен подписанный маркер встроенной карты: addressTitle=El Tigre Waterfalls,addressLine1=el tigre,addressLine2=Los Olivos Guanacaste Province,markerLat10.3743198,markerLng-84.8316549. Принят visitor entrance/reception. mapLat10.37455434420512,-84.83152130213625 — центр карты; отдельное schema geo10.305,-84.825 противоречит карте и отброшено. Координаты разных источников не усреднялись."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "После адресного интернет-поиска точный QID не установлен; чужие/вышестоящие объекты не подставлялись."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.eltigrewaterfalls.com/",
+      "reason": "Самостоятельный официальный сайт именованного объекта."
+    }
+  ]
+}

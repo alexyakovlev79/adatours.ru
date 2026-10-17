@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_cholula",
+  "stableId": "destination_mexico_cholula",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/cholula/",
+  "sourceFingerprint": "44c20cd98f533d9749e18c47510baf8cea70b01f3ce357837b0dd5d196487927",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q1007232",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cholula,_Puebla"
+    }
+  },
+  "location": {
+    "latitude": 19.062484166666668,
+    "longitude": -98.30750583333334,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1007232"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/cholula.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Город Cholula / Cholula de Rivadavia в Puebla с современными улицами и доколумбовым наследием. Основной референт MD — город; Great Pyramid вторична. Q1007232 соответствует городской Cholula de Rivadavia/центру San Pedro, EN-статья охватывает объединенный городской район SanPedro/SanAndrés. Не вся административная территория и не только археологическая зона."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/cholula/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cholula,_Puebla",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Город Cholula / Cholula de Rivadavia в Puebla с современными улицами и доколумбовым наследием. Основной референт MD — город; Great Pyramid вторична. Q1007232 соответствует городской Cholula de Rivadavia/центру San Pedro, EN-статья охватывает объединенный городской район SanPedro/SanAndrés. Не вся административная территория и не только археологическая зона."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cholula,_Puebla",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Город Cholula / Cholula de Rivadavia в Puebla с современными улицами и доколумбовым наследием. Основной референт MD — город; Great Pyramid вторична. Q1007232 соответствует городской Cholula de Rivadavia/центру San Pedro, EN-статья охватывает объединенный городской район SanPedro/SanAndrés. Не вся административная территория и не только археологическая зона."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cholula,_Puebla",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1007232",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная P625 городской карточки у центральной застройки Cholula; settlement_center. Не точка Great Pyramid."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1007232",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены QID,P31,P17,P131,P625 и sitelinks. Город Cholula / Cholula de Rivadavia в Puebla с современными улицами и доколумбовым наследием. Основной референт MD — город; Great Pyramid вторична. Q1007232 соответствует городской Cholula de Rivadavia/центру San Pedro, EN-статья охватывает объединенный городской район SanPedro/SanAndrés. Не вся административная территория и не только археологическая зона."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cholula,_Puebla",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная EN-статья о выбранном объекте соответствует sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Составное городское описание: выбран городской Q1007232 с90%, а не муниципалитет SanPedro/SanAndrés или отдельная пирамида.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Чолула",
+      "reason": "Город Cholula / Cholula de Rivadavia в Puebla с современными улицами и доколумбовым наследием. Основной референт MD — город; Great Pyramid вторична. Q1007232 соответствует городской Cholula de Rivadavia/центру San Pedro, EN-статья охватывает объединенный городской район SanPedro/SanAndrés. Не вся административная территория и не только археологическая зона."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "City",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "19.062484166666668, -98.30750583333334",
+      "reason": "Точная P625 городской карточки у центральной застройки Cholula; settlement_center. Не точка Great Pyramid."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 90,
+      "selected": "Q1007232",
+      "reason": "Город Cholula / Cholula de Rivadavia в Puebla с современными улицами и доколумбовым наследием. Основной референт MD — город; Great Pyramid вторична. Q1007232 соответствует городской Cholula de Rivadavia/центру San Pedro, EN-статья охватывает объединенный городской район SanPedro/SanAndrés. Не вся административная территория и не только археологическая зона."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 90,
+      "selected": "https://en.wikipedia.org/wiki/Cholula,_Puebla",
+      "reason": "Город Cholula / Cholula de Rivadavia в Puebla с современными улицами и доколумбовым наследием. Основной референт MD — город; Great Pyramid вторична. Q1007232 соответствует городской Cholula de Rivadavia/центру San Pedro, EN-статья охватывает объединенный городской район SanPedro/SanAndrés. Не вся административная территория и не только археологическая зона."
+    }
+  ]
+}

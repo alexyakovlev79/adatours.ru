@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_senot_ik_kil",
+  "stableId": "destination_mexico_senot_ik_kil",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/ik-kil-cenote/",
+  "sourceFingerprint": "8e6f3d78c159581c25a47f9eb61987f9064bbc311d33342de25e383fed742fcb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "cenote",
+  "alternateNames": [
+    "Ik Kil"
+  ],
+  "external": {
+    "wikidataQid": "Q1818515",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ik_Kil"
+    },
+    "geonamesId": "13712815",
+    "officialUrl": "https://cenoteikkil.com/"
+  },
+  "location": {
+    "latitude": 20.661,
+    "longitude": -88.5505,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1818515"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/ik-kil-cenote/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Сенот Ик-Киль, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Природный сенот Ик-Киль в Юкатане рядом с Чичен-Ицей; не Sacred Cenote Чичен-Ицы и не весь археологический комплекс."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://cenoteikkil.com/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Природный сенот Ик-Киль в Юкатане рядом с Чичен-Ицей; не Sacred Cenote Чичен-Ицы и не весь археологический комплекс."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1818515",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: cenote in Yucatan, Mexico. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1818515",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Природный сенот Ик-Киль в Юкатане рядом с Чичен-Ицей; не Sacred Cenote Чичен-Ицы и не весь археологический комплекс. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1818515",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: enwiki: Ik Kil. Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1818515",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P1566 = 13712815 в принятой точной карточке Q1818515; тип и страна соответствуют выбранному объекту."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1818515",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 20.661, -88.5505; исходная координата, роль feature_point. Точка выбранного населенного пункта или памятника, без усреднения и без переноса координат административной территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1818515",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: Ik Kil."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1818515",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://cenoteikkil.com/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Официальный туристический или управляющий источник о выбранном объекте. Страница служит officialUrl и доказательством; не превращается автоматически в географический sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Природный сенот Ик-Киль в Юкатане рядом с Чичен-Ицей; не Sacred Cenote Чичен-Ицы и не весь археологический комплекс.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "cenote",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1818515",
+      "reason": "Природный сенот Ик-Киль в Юкатане рядом с Чичен-Ицей; не Sacred Cenote Чичен-Ицы и не весь археологический комплекс."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Ik_Kil",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "13712815",
+      "reason": "P1566 принятой точной карточки с совпадением типа и географии."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "20.661, -88.5505",
+      "reason": "P625 точного объекта; роль feature_point; Координата P625 относится к сеноту. Сайт управляющего Parque Ecológico Ik Kil включает также гостиницы и инфраструктуру; использован как официальный источник, а не внешняя identity гостиницы."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Ik Kil",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://cenoteikkil.com/",
+      "reason": "Проверен официальный источник о направлении или управляющей организации; используется по назначению поля officialUrl."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Координата P625 относится к сеноту. Сайт управляющего Parque Ecológico Ik Kil включает также гостиницы и инфраструктуру; использован как официальный источник, а не внешняя identity гостиницы."
+}

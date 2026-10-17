@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_akapulko",
+  "stableId": "destination_mexico_akapulko",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/acapulco/",
+  "sourceFingerprint": "ec7824067d26b8c7a9580b3b8fde848b01d123c151f3dd3a74ca81300dee13e8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q81398",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Acapulco",
+      "es": "https://es.wikipedia.org/wiki/Acapulco_de_Ju%C3%A1rez"
+    },
+    "geonamesId": "3533462",
+    "officialUrl": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/acapulco/"
+  },
+  "location": {
+    "latitude": 16.8628695,
+    "longitude": -99.8870087,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q81398"
+  },
+  "alternateNames": [
+    "Acapulco",
+    "Acapulco de Juárez"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/acapulco/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "HTTP 200; canonical совпадает; H1: Акапулько; index, follow. Текущий approved MD и entry сверены. Город-порт и курорт Акапулько на побережье Герреро; совпадают бухта, крепость Сан-Диего и Ла-Кебрада."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/acapulco/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город-порт и курорт Акапулько на побережье Герреро; совпадают бухта, крепость Сан-Диего и Ла-Кебрада."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81398",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P31 и описание карточки: municipal seat of Acapulco, State of Guerrero, Mexico. "
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81398",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Город-порт и курорт Акапулько на побережье Герреро; совпадают бухта, крепость Сан-Диего и Ла-Кебрада. Сверены P17, описание, P31 и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81398",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "В ответе Wikidata wbgetentities проверены точные enwiki/eswiki sitelinks: Acapulco; Acapulco de Juárez. Это сопоставление карточки Q81398, не поисковая выдача."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81398",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P1566 = 3533462 в точной карточке Q81398. Описание, страна и тип совпадают с референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81398",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P625 WGS84 = 16.8628695, -99.8870087; роль settlement_center. Выбрана первая P625 с источником в точной городской карточке: 16.8628695, −99.8870087. Вторая P625 16.86336, −99.8901 отличается примерно на 330 м; точки не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81398",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Испанское и английское наименования совпадают с labels/sitelinks точной карточки."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q81398",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "P17 = Q96 (Mexico); страна совпадает с countryId текущего MD и entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/acapulco/",
+      "checkedAt": "2026-10-17T07:33:01.541Z",
+      "note": "Официальный туристический источник о выбранном направлении; используется как officialUrl, не автоматический sameAs. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Acapulco de Juárez",
+      "reason": "Город-порт и курорт Акапулько на побережье Герреро; совпадают бухта, крепость Сан-Диего и Ла-Кебрада."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Тип установлен по текущему MD и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q81398",
+      "reason": "Город-порт и курорт Акапулько на побережье Герреро; совпадают бухта, крепость Сан-Диего и Ла-Кебрада."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Acapulco ; https://es.wikipedia.org/wiki/Acapulco_de_Ju%C3%A1rez",
+      "reason": "Точные sitelinks принятого QID, без выбора одноименного региона или другого города."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3533462",
+      "reason": "Прямой P1566 точной карточки Wikidata с совпадением страны и типа."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "16.8628695, -99.8870087",
+      "reason": "P625 принятой карточки; роль settlement_center соответствует городскому референту."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "Acapulco; Acapulco de Juárez",
+      "reason": "Названия подтверждены labels/sitelinks и географией страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и страна текущего MD/entry совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.sectur.gob.mx/programas/gestion-de-destinos/productos-turisticos/bloque-pacifico-y-mar-de-cortes/acapulco/",
+      "reason": "Проверен официальный источник о направлении; сайт не приравнивается к географическому объекту через sameAs."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбрана первая P625 с источником в точной городской карточке: 16.8628695, −99.8870087. Вторая P625 16.86336, −99.8901 отличается примерно на 330 м; точки не усреднялись."
+}

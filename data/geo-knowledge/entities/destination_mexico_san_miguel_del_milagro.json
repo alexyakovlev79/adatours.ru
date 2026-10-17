@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_san_miguel_del_milagro",
+  "stableId": "destination_mexico_san_miguel_del_milagro",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/san-miguel-del-milagro/",
+  "sourceFingerprint": "bab627974e6f1dac9765ed020d70bb9c3952fd2c2c1ab7f6253627c2249f74b6",
+  "status": "READY",
+  "external": {
+    "officialUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/san-miguel-del-milagro/",
+    "osm": {
+      "type": "node",
+      "id": 11953946669
+    }
+  },
+  "location": {
+    "latitude": 19.2404957,
+    "longitude": -98.3331238,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/11953946669"
+  },
+  "alternateNames": [
+    "Santuario de San Miguel del Milagro",
+    "Santuario Nacional de San Miguel Arcángel"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Святилище Сан-Мигель-дель-Милагро",
+      "reason": "Святилище архангела Михаила на холме у Cacaxtla, Natívitas, Tlaxcala; федеральный каталог MX-SC-DGSMPC-EM-29-000462 описывает храм и предание Diego Lázaro 1631. OSM node11953946669 имеет exact name Santuario Nacional de San Miguel Arcángel и place_of_worship. Q6119471 относится к деревне и пропущен."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/san-miguel-del-milagro/",
+      "reason": "Официальная государственная карточка выбранного объекта. Святилище архангела Михаила на холме у Cacaxtla, Natívitas, Tlaxcala; федеральный каталог MX-SC-DGSMPC-EM-29-000462 описывает храм и предание Diego Lázaro 1631. OSM node11953946669 имеет exact name Santuario Nacional de San Miguel Arcángel и place_of_worship. Q6119471 относится к деревне и пропущен."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/11953946669",
+      "reason": "Точный OSM place_of_worship: Santuario Nacional de San Miguel Arcángel, roman_catholic; совпадает с расположением федерального каталога святилища."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.2404957,-98.3331238; feature_point",
+      "reason": "Координаты отдельного OSMnode11953946669 святилища, не центра деревни San Miguel del Milagro."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Santuario de San Miguel del Milagro; Santuario Nacional de San Miguel Arcángel",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "selected": "Q6119471",
+      "reason": "Q6119471 — населенный пункт San Miguel del Milagro, а паспорт посвящен отдельному святилищу; совпадения названия и населенного пункта недостаточно для exact внешней идентичности."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/san-miguel-del-milagro/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Святилище архангела Михаила на холме у Cacaxtla, Natívitas, Tlaxcala; федеральный каталог MX-SC-DGSMPC-EM-29-000462 описывает храм и предание Diego Lázaro 1631. OSM node11953946669 имеет exact name Santuario Nacional de San Miguel Arcángel и place_of_worship. Q6119471 относится к деревне и пропущен."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/san-miguel-del-milagro/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/san-miguel-del-milagro/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Официальная государственная карточка выбранного объекта. Святилище архангела Михаила на холме у Cacaxtla, Natívitas, Tlaxcala; федеральный каталог MX-SC-DGSMPC-EM-29-000462 описывает храм и предание Diego Lázaro 1631. OSM node11953946669 имеет exact name Santuario Nacional de San Miguel Arcángel и place_of_worship. Q6119471 относится к деревне и пропущен."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/11953946669",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный OSM place_of_worship: Santuario Nacional de San Miguel Arcángel, roman_catholic; совпадает с расположением федерального каталога святилища."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/11953946669",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Координаты отдельного OSMnode11953946669 святилища, не центра деревни San Miguel del Milagro."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/san-miguel-del-milagro/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://sitiosymonumentos.cultura.gob.mx/iii-estudios-monograficos/san-miguel-del-milagro/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Святилище архангела Михаила на холме у Cacaxtla, Natívitas, Tlaxcala; федеральный каталог MX-SC-DGSMPC-EM-29-000462 описывает храм и предание Diego Lázaro 1631. OSM node11953946669 имеет exact name Santuario Nacional de San Miguel Arcángel и place_of_worship. Q6119471 относится к деревне и пропущен."
+}

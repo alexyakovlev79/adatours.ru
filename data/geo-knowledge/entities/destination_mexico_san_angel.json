@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_san_angel",
+  "stableId": "destination_mexico_san_angel",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/san-angel/",
+  "sourceFingerprint": "c618ffa01fb59c028fa4f4dfa9af7b6aea553af9b45617079774d16f1aa3cbca",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "neighborhood",
+  "alternateNames": [
+    "San Ángel"
+  ],
+  "external": {
+    "wikidataQid": "Q2067789",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_%C3%81ngel",
+      "es": "https://es.wikipedia.org/wiki/San_%C3%81ngel_(Ciudad_de_M%C3%A9xico)"
+    },
+    "officialUrl": "https://mexicocity.cdmx.gob.mx/category/sanangel-imperdibles/?lang=en"
+  },
+  "location": {
+    "latitude": 19.347,
+    "longitude": -99.187,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2067789"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/san-angel/",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "HTTP 200, canonical совпадает, H1 Сан-Анхель, robots index/follow; текущий approved MD и entry сверены по ID, URL и стране. Исторический район Сан-Анхель на юге Мехико, вокруг площади San Jacinto и Bazar Sábado. Фактический референт MD — район, несмотря на общий destinationType city."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mexicocity.cdmx.gob.mx/category/sanangel-imperdibles/?lang=en",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Исторический район Сан-Анхель на юге Мехико, вокруг площади San Jacinto и Bazar Sábado. Фактический референт MD — район, несмотря на общий destinationType city."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2067789",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P31 и описание карточки: human settlement in Mexico City. Класс уточнен по содержанию MD и первичному официальному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2067789",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Исторический район Сан-Анхель на юге Мехико, вокруг площади San Jacinto и Bazar Sábado. Фактический референт MD — район, несмотря на общий destinationType city. Проверены описание, P31, P17, географический контекст и точные sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2067789",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Проверены прямые sitelinks точного QID: enwiki: San Ángel; eswiki: San Ángel (Ciudad de México). Статья другого административного уровня не добавлялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2067789",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P625 WGS84 19.347, -99.187; исходная координата, роль representative. В паспорте тип neighborhood. P625 — опорная точка района, не вход на рынок и не центр самостоятельного города. Туристический раздел включает также окрестности; не используется как отдельный географический sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2067789",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Наименования подтверждены labels/sitelinks принятого объекта: San Ángel."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2067789",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "P17 = Q96 Mexico; совпадает с countryId текущего MD и countryIds entry."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://mexicocity.cdmx.gob.mx/category/sanangel-imperdibles/?lang=en",
+      "checkedAt": "2026-10-17T07:38:30.379Z",
+      "note": "Официальный туристический или управляющий источник о выбранном объекте. Страница служит officialUrl и доказательством; не превращается автоматически в географический sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Исторический район Сан-Анхель на юге Мехико, вокруг площади San Jacinto и Bazar Sábado. Фактический референт MD — район, несмотря на общий destinationType city.",
+      "reason": "Название, страна, тип и характерные объекты текущего MD совпали с внешними источниками."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "neighborhood",
+      "reason": "Содержательное описание уточняет служебный destinationType."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2067789",
+      "reason": "Исторический район Сан-Анхель на юге Мехико, вокруг площади San Jacinto и Bazar Sábado. Фактический референт MD — район, несмотря на общий destinationType city."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/San_%C3%81ngel ; https://es.wikipedia.org/wiki/San_%C3%81ngel_(Ciudad_de_M%C3%A9xico)",
+      "reason": "Прямые sitelinks точного принятого QID; исключены несовпадающие административные объекты."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "19.347, -99.187",
+      "reason": "P625 точного объекта; роль representative; В паспорте тип neighborhood. P625 — опорная точка района, не вход на рынок и не центр самостоятельного города. Туристический раздел включает также окрестности; не используется как отдельный географический sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 98,
+      "selected": "San Ángel",
+      "reason": "Labels и sitelinks совпадают с названиями выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "P17 и countryId исходного MD совпадают."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://mexicocity.cdmx.gob.mx/category/sanangel-imperdibles/?lang=en",
+      "reason": "Проверен официальный источник о направлении или управляющей организации; используется по назначению поля officialUrl."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "В паспорте тип neighborhood. P625 — опорная точка района, не вход на рынок и не центр самостоятельного города. Туристический раздел включает также окрестности; не используется как отдельный географический sameAs."
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_kartahena",
+  "stableId": "destination_colombia_kartahena",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/cartagena/",
+  "sourceFingerprint": "f50af9697b63d1fd1598bcd8979b18c3aae38fd62b12f221819df20d7b861760",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q657461",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cartagena,_Colombia"
+    },
+    "geonamesId": "3687238",
+    "osm": {
+      "type": "node",
+      "id": 266642215
+    },
+    "officialUrl": "https://www.cartagena.gov.co/"
+  },
+  "location": {
+    "latitude": 10.4265566,
+    "longitude": -75.5441671,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/266642215"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/kartahena.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Картахена-де-Индиас — город и порт Боливара на Карибском побережье Колумбии."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/colombia/place/cartagena/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q657461",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q657461: название, тип, страна P17 Q739 и точный sitelink подтверждают Картахена-де-Индиас — город и порт Боливара на Карибском побережье Колумбии. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cartagena,_Colombia",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный CO.txt: id 3687238, featureCode PPLA; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/266642215",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q657461",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Wikidata P856 http://www.cartagena.gov.co/ указывает официальный домен мэрии; HTTPS доступ ограничен 403."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/266642215",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "10.4265566, -75.5441671; pointRole=settlement_center. Точный OSM city с Q657461 и названием Cartagena de Indias; принято городское ядро. GeoNames 3687238 PPLA — город; 3687247 ADM2 из P1566 относится к муниципальной территории и не используется для координат. Испанская Картахена и Cartagena del Chairá исключены. UNESCO-объект исторических укреплений не присваивался всему городу. Официальный домен мэрии подтверждён P856; прямой HTTPS-запрос вернул 403, ограничение доступа не использовано как географический факт."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q657461",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Картахена-де-Индиас — город и порт Боливара на Карибском побережье Колумбии."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q657461",
+      "reason": "Q657461: название, тип, страна P17 Q739 и точный sitelink подтверждают Картахена-де-Индиас — город и порт Боливара на Карибском побережье Колумбии. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3687238",
+      "reason": "Первичный CO.txt: id 3687238, featureCode PPLA; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/266642215",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://www.cartagena.gov.co/",
+      "reason": "Wikidata P856 http://www.cartagena.gov.co/ указывает официальный домен мэрии; HTTPS доступ ограничен 403."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "10.4265566,-75.5441671",
+      "reason": "10.4265566, -75.5441671; pointRole=settlement_center. Точный OSM city с Q657461 и названием Cartagena de Indias; принято городское ядро. GeoNames 3687238 PPLA — город; 3687247 ADM2 из P1566 относится к муниципальной территории и не используется для координат. Испанская Картахена и Cartagena del Chairá исключены. UNESCO-объект исторических укреплений не присваивался всему городу. Официальный домен мэрии подтверждён P856; прямой HTTPS-запрос вернул 403, ограничение доступа не использовано как географический факт."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "Точный OSM city с Q657461 и названием Cartagena de Indias; принято городское ядро. GeoNames 3687238 PPLA — город; 3687247 ADM2 из P1566 относится к муниципальной территории и не используется для координат. Испанская Картахена и Cartagena del Chairá исключены. UNESCO-объект исторических укреплений не присваивался всему городу. Официальный домен мэрии подтверждён P856; прямой HTTPS-запрос вернул 403, ограничение доступа не использовано как географический факт.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/colombia/place/cartagena/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

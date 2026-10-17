@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_cuba_plajya_del_este",
+  "stableId": "destination_cuba_plajya_del_este",
+  "kind": "destination",
+  "canonicalPath": "/cuba/place/playas-del-este/",
+  "sourceFingerprint": "e6c8716bc472b92e5c53e3aa2677eb60a1e958e28aad03bd46fb38ff32bb1c29",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "beach area",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_cuba"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_cuba_gavana"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/cuba/place/playas-del-este/",
+      "checkedAt": "2026-10-17T07:16:44.088Z",
+      "note": "Прочитаны текущие MD и source-index на main 8970d45ea38bcd627df622a063b9a279c92fb531; stable ID/countryId/каноническийURL/активность согласованы. Публичный URL HTTP200, H1 соответствует, canonical совпадает, noindex нет. Playas del Este — узнаваемая цепочка пляжей к востоку от Гаваны от Bacuranao через Tarará/El Mégano/Santa María/Boca Ciega к Guanabo; точный референт подтверждён официальным Cuba Travel. Найденный Q136388260 имеет P31 Q55488 railway station и координату станции: не добавлен. Q1566695 относится к муниципалитету Habana del Este, а не цепочке пляжей; пляжи Playa del Este на востоке Кубы — другие объекты. Единой точной внешней идентичности/репрезентативной точки всей цепочки не подтверждено: QID/GeoNames/OSM/location опущены, паспорт READY по подтверждённой идентичности пляжной зоны."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.cuba.travel/destinos/lahabana/quehacer/solyplaya",
+      "checkedAt": "2026-10-17T07:16:44.088Z",
+      "note": "Внешний первичный туристический источник подтверждает референт и его географию."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.cuba.travel/destinos/lahabana/quehacer/solyplaya",
+      "checkedAt": "2026-10-17T07:16:44.088Z",
+      "note": "Тип установлен по главному референту страницы и внешнему описанию. Playas del Este — узнаваемая цепочка пляжей к востоку от Гаваны от Bacuranao через Tarará/El Mégano/Santa María/Boca Ciega к Guanabo; точный референт подтверждён официальным Cuba Travel. Найденный Q136388260 имеет P31 Q55488 railway station и координату станции: не добавлен. Q1566695 относится к муниципалитету Habana del Este, а не цепочке пляжей; пляжи Playa del Este на востоке Кубы — другие объекты. Единой точной внешней идентичности/репрезентативной точки всей цепочки не подтверждено: QID/GeoNames/OSM/location опущены, паспорт READY по подтверждённой идентичности пляжной зоны."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "sourceUrl": "https://www.cuba.travel/destinos/lahabana/quehacer/solyplaya",
+      "checkedAt": "2026-10-17T07:16:44.088Z",
+      "note": "Официальный портал туризма Кубы подтверждает цепочку пляжей к востоку от Гаваны, страна совпадает с текущим MD/source-index."
+    },
+    {
+      "field": "relationships.destination_cuba_gavana",
+      "sourceUrl": "https://www.cuba.travel/destinos/lahabana/quehacer/solyplaya",
+      "checkedAt": "2026-10-17T07:16:44.088Z",
+      "note": "Официальный Cuba Travel называет эту цепочку пляжей восточнее Гаваны; stableId города подтверждён в текущей GEO-очереди."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Playas del Este beach chain",
+      "reason": "Playas del Este — узнаваемая цепочка пляжей к востоку от Гаваны от Bacuranao через Tarará/El Mégano/Santa María/Boca Ciega к Guanabo; точный референт подтверждён официальным Cuba Travel. Найденный Q136388260 имеет P31 Q55488 railway station и координату станции: не добавлен. Q1566695 относится к муниципалитету Habana del Este, а не цепочке пляжей; пляжи Playa del Este на востоке Кубы — другие объекты. Единой точной внешней идентичности/репрезентативной точки всей цепочки не подтверждено: QID/GeoNames/OSM/location опущены, паспорт READY по подтверждённой идентичности пляжной зоны."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "beach area",
+      "reason": "Playas del Este — узнаваемая цепочка пляжей к востоку от Гаваны от Bacuranao через Tarará/El Mégano/Santa María/Boca Ciega к Guanabo; точный референт подтверждён официальным Cuba Travel. Найденный Q136388260 имеет P31 Q55488 railway station и координату станции: не добавлен. Q1566695 относится к муниципалитету Habana del Este, а не цепочке пляжей; пляжи Playa del Este на востоке Кубы — другие объекты. Единой точной внешней идентичности/репрезентативной точки всей цепочки не подтверждено: QID/GeoNames/OSM/location опущены, паспорт READY по подтверждённой идентичности пляжной зоны."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "probability": 99,
+      "selected": "country_cuba",
+      "reason": "Подтверждены страна Cuba и текущие countryId/source-index."
+    },
+    {
+      "field": "relationships.destination_cuba_gavana",
+      "probability": 99,
+      "selected": "destination_cuba_gavana",
+      "reason": "Региональная близость к Гаване, без утверждения, что все пляжи являются самим городом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 5,
+      "selected": "Q136388260",
+      "reason": "Прочитанный P31 railway station; карточка станции не идентична пляжной цепочке. ID и её координата опущены."
+    },
+    {
+      "field": "location",
+      "probability": 45,
+      "reason": "Не найдена опубликованная точка всей цепочки с подтверждённой ролью; точку станции, муниципалитета либо одного пляжа не подставлять."
+    }
+  ],
+  "reviewNote": "Playas del Este — узнаваемая цепочка пляжей к востоку от Гаваны от Bacuranao через Tarará/El Mégano/Santa María/Boca Ciega к Guanabo; точный референт подтверждён официальным Cuba Travel. Найденный Q136388260 имеет P31 Q55488 railway station и координату станции: не добавлен. Q1566695 относится к муниципалитету Habana del Este, а не цепочке пляжей; пляжи Playa del Este на востоке Кубы — другие объекты. Единой точной внешней идентичности/репрезентативной точки всей цепочки не подтверждено: QID/GeoNames/OSM/location опущены, паспорт READY по подтверждённой идентичности пляжной зоны."
+}

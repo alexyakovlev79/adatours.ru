@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_pozo_azul_canaima",
+  "stableId": "destination_venezuela_pozo_azul_canaima",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/pozo-azul-canaima/",
+  "sourceFingerprint": "479868195ab61caf46c19ab7f7fa6532a861bd1849889afc386514ccb1a46280",
+  "status": "READY",
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Посо-Асул — Синий бассейн",
+      "reason": "Waku Lodge определяет Pozo Azul (Kurawua) как лесной бассейн после Carrao/Moroko; совпадает с описанием самостоятельной страницы."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "6.262417,-62.812583; feature_point",
+      "reason": "Именованный GPS waypoint Pozo Azul участника маршрута; фотогеометка Commons 6.262402,-62.812558 подтверждает то же место. OSM Kurawua рядом помечен жилищем и не принят как sameAs бассейна."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Pozo Azul; Kurawua",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "probability": 98,
+      "selected": "containedInPlace destination_venezuela_kanajma_i_vodopad_anhel",
+      "reason": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/pozo-azul",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Waku Lodge определяет Pozo Azul (Kurawua) как лесной бассейн после Carrao/Moroko; совпадает с описанием самостоятельной страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/pozo-azul-canaima/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikiloc.com/hiking-trails/tepuy-kurawaina-p-n-canaima-129808964#wp-129808966",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованный GPS waypoint Pozo Azul участника маршрута; фотогеометка Commons 6.262402,-62.812558 подтверждает то же место. OSM Kurawua рядом помечен жилищем и не принят как sameAs бассейна."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pozo_Azul_-_Canaima.jpg",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Авторская фотография бассейна с camera location 6.262402,-62.812558 подтверждает район waypoint; камера не выдавалась за центр бассейна."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/pozo-azul",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/pozo-azul",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "alternateNames": [
+    "Pozo Azul",
+    "Kurawua"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_venezuela_kanajma_i_vodopad_anhel"
+    }
+  ],
+  "reviewNote": "Малый природный бассейн Pozo Azul/Kurawua у Moroko. Координата из точного waypoint, не одноименная местность в Angostura. Отдельный QID/OSM бассейна не установлен.",
+  "location": {
+    "latitude": 6.262417,
+    "longitude": -62.812583,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikiloc.com/hiking-trails/tepuy-kurawaina-p-n-canaima-129808964#wp-129808966"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_san_francisko_de_yuruani",
+  "stableId": "destination_venezuela_san_francisko_de_yuruani",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/san-francisco-de-yuruani/",
+  "sourceFingerprint": "6faed3494bb6c22ed7575922cbb389478f6e2f0760b304c702a0fba0cdc25f1f",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q3471449",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Francisco_de_Yuruan%C3%AD"
+    }
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Сан-Франциско-де-Юруани",
+      "reason": "Деревня San Francisco de Yuruaní/Kumarakapay на Gran Sabana, используемая на маршрутах Рораймы; точный QID и карта совпадают."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3471449",
+      "reason": "Деревня San Francisco de Yuruaní/Kumarakapay на Gran Sabana, используемая на маршрутах Рораймы; точный QID и карта совпадают."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/San_Francisco_de_Yuruan%C3%AD\"}",
+      "reason": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "5.0574145,-61.0965801; settlement_center",
+      "reason": "P625 деревни совпадает с OSM node 4406170902; населенный пункт, не водопад Yuruaní."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "San Francisco de Yuruaní; Kumarakapay",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 98,
+      "selected": "containedInPlace country_venezuela",
+      "reason": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3471449",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Деревня San Francisco de Yuruaní/Kumarakapay на Gran Sabana, используемая на маршрутах Рораймы; точный QID и карта совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/san-francisco-de-yuruani/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3471449",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Деревня San Francisco de Yuruaní/Kumarakapay на Gran Sabana, используемая на маршрутах Рораймы; точный QID и карта совпадают."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3471449",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3471449",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P625 деревни совпадает с OSM node 4406170902; населенный пункт, не водопад Yuruaní."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3471449",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3471449",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "alternateNames": [
+    "San Francisco de Yuruaní",
+    "Kumarakapay"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "reviewNote": "Небольшой населенный пункт Kumarakapay, известный как San Francisco de Yuruaní; не одноименная река/водопад. Категория city в исходнике не менялась.",
+  "location": {
+    "latitude": 5.0574145,
+    "longitude": -61.0965801,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3471449"
+  }
+}

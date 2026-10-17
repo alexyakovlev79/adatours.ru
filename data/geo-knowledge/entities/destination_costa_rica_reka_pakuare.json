@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_reka_pakuare",
+  "stableId": "destination_costa_rica_reka_pakuare",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/pacuare-river/",
+  "sourceFingerprint": "fcbc3be00c64af5fa7e532e43b5a59e8e4b55e11bb8d7cb23b0648e47f5f1136",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3377609",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pacuare_River"
+    },
+    "geonamesId": "3622641"
+  },
+  "location": {
+    "latitude": 10.21992,
+    "longitude": -83.28105,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/CR.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/pacuare-river.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Река Пакуаре (Pacuare) в Коста-Рике, текущая от Кордильеры-Таламанка к Карибскому морю и известная рафтингом."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/pacuare-river/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3377609",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Q3377609: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Pacuare_River",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Первичная строка CR.txt: 3622641, featureCode STM. Тип и география соответствуют Река Пакуаре (Pacuare) в Коста-Рике, текущая от Кордильеры-Таламанка к Карибскому морю и известная рафтингом."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "10.21992, -83.28105; pointRole=representative. Выбрана точная GeoNames 3622641 STM и Q3377609. Координата — опорная точка у устья протяжённой реки, не старт рафтинга и не лесной лодж. P625 10.21954,-83.28067 близка к выбранной точке. Река Pacuar на тихоокеанской стороне 3622643 и отдельные рукава не присваивались странице. Дублирующие записи Rio Pacuare 6942108/9256791 не использованы для усреднения."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3377609",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Река Пакуаре (Pacuare) в Коста-Рике, текущая от Кордильеры-Таламанка к Карибскому морю и известная рафтингом."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3377609",
+      "reason": "Q3377609: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3622641",
+      "reason": "Первичная строка CR.txt: 3622641, featureCode STM. Тип и география соответствуют Река Пакуаре (Pacuare) в Коста-Рике, текущая от Кордильеры-Таламанка к Карибскому морю и известная рафтингом."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "10.21992,-83.28105",
+      "reason": "10.21992, -83.28105; pointRole=representative. Выбрана точная GeoNames 3622641 STM и Q3377609. Координата — опорная точка у устья протяжённой реки, не старт рафтинга и не лесной лодж. P625 10.21954,-83.28067 близка к выбранной точке. Река Pacuar на тихоокеанской стороне 3622643 и отдельные рукава не присваивались странице. Дублирующие записи Rio Pacuare 6942108/9256791 не использованы для усреднения."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "reviewNote": "Выбрана точная GeoNames 3622641 STM и Q3377609. Координата — опорная точка у устья протяжённой реки, не старт рафтинга и не лесной лодж. P625 10.21954,-83.28067 близка к выбранной точке. Река Pacuar на тихоокеанской стороне 3622643 и отдельные рукава не присваивались странице. Дублирующие записи Rio Pacuare 6942108/9256791 не использованы для усреднения.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/pacuare-river/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

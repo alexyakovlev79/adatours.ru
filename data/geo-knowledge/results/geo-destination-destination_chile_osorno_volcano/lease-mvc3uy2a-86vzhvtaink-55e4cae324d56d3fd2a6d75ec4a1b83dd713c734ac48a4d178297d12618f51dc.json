@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_osorno_volcano",
+  "stableId": "destination_chile_osorno_volcano",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/osorno-volcano/",
+  "sourceFingerprint": "7011de65c1109cc3fe3a07cc95f6855e7a9e32dedc17f7baf65298320277b94e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Вулкан Осорно",
+      "reason": "Именно вулкан Osorno у озёр Чили, не город Osorno."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q858808"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Osorno_(volcano)\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID вулкана.",
+      "selected": "3877945"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Профиль Smithsonian GVP 358010, точка вулкана.",
+      "selected": "-41.105,-72.496"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/osorno-volcano/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Именно вулкан Osorno у озёр Чили, не город Osorno."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/osorno-volcano/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q858808",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Osorno_(volcano)",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q858808",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "GeoNames ID вулкана."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=358010",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Профиль Smithsonian GVP 358010, точка вулкана."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q858808",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Именно вулкан Osorno у озёр Чили, не город Osorno."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q858808",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Osorno_(volcano)"
+    },
+    "geonamesId": "3877945"
+  },
+  "location": {
+    "latitude": -41.105,
+    "longitude": -72.496,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://volcano.si.edu/volcano.cfm?vn=358010"
+  },
+  "reviewNote": "WD P625 −41.1,−72.4931 не усреднялась с GVP. Паспорт не обещает восхождение по программе."
+}

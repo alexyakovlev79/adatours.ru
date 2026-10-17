@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_punta_balena",
+  "stableId": "destination_uruguay_punta_balena",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/punta-ballena/",
+  "sourceFingerprint": "c52367517bc8c6cc952f84902137efb9a6f46ac0499c7c68970f8e7e5bf61fae",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 88,
+      "selected": "Пунта-Бальена",
+      "reason": "Punta Ballena в Maldonado; связанная точная Wikipedia описывает одновременно полуостров, мыс и курорт, включает Casapueblo, что соответствует MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 88,
+      "selected": "Q975553",
+      "reason": "Punta Ballena в Maldonado; связанная точная Wikipedia описывает одновременно полуостров, мыс и курорт, включает Casapueblo, что соответствует MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 88,
+      "selected": "https://en.wikipedia.org/wiki/Punta_Ballena",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-34.88888889,-55.04055556]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 99,
+      "selected": "country_uruguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/uruguay/place/punta-ballena/",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Punta Ballena в Maldonado; связанная точная Wikipedia описывает одновременно полуостров, мыс и курорт, включает Casapueblo, что соответствует MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/punta-ballena.md",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q975553",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Punta Ballena в Maldonado; связанная точная Wikipedia описывает одновременно полуостров, мыс и курорт, включает Casapueblo, что соответствует MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q975553",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q975553",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Punta_Ballena",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Punta_Ballena",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Punta Ballena в Maldonado; связанная точная Wikipedia описывает одновременно полуостров, мыс и курорт, включает Casapueblo, что соответствует MD."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q975553",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Punta_Ballena"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "location": {
+    "latitude": -34.88888889,
+    "longitude": -55.04055556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q975553"
+  },
+  "reviewNote": "Wikidata использует широкую сущность курорта и полуострова. GeoNames населённого пункта не переносится на мыс; координата лишь representative."
+}

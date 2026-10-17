@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vulkan_ruko_pichincha",
+  "stableId": "destination_ecuador_vulkan_ruko_pichincha",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/rucu-pichincha-volcano/",
+  "sourceFingerprint": "fb5fcc71f34a306b49a5e32d4ce579772b3d5c1bb39225f6c32b311987cb37cb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Вулкан Руко-Пичинча",
+      "reason": "MD явно выделяет вершину Rucu Pichincha у Quito. Установлен отдельный Q23873637; общий Pichincha Q742216 включает также Guagua и не подставляется."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точный Rucu/Ruku Pichincha — summit in Ecuador; не весь вулканический массив.",
+      "selected": "Q23873637"
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "reason": "Именованная точка Rucu Pichincha у Quito с совпадающей координатой QID.",
+      "selected": "{\"type\":\"node\",\"id\":249414034}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "reason": "GeoNames ID точной самостоятельной вершины указан в QID и карте.",
+      "selected": "3652253"
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "reason": "Выбрана точка самостоятельной вершины Rucu, совпадает с P625 Q23873637; координата общего Pichincha не используется.",
+      "selected": "-0.16271,-78.56671"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 50,
+      "reason": "EN Rucu_Pichincha перенаправляет на статью всего массива с двумя вершинами; не включается как точный sameAs вершины."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/rucu-pichincha-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD явно выделяет вершину Rucu Pichincha у Quito. Установлен отдельный Q23873637; общий Pichincha Q742216 включает также Guagua и не подставляется."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/rucu-pichincha-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23873637",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный Rucu/Ruku Pichincha — summit in Ecuador; не весь вулканический массив."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/19650184",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Именованная точка Rucu Pichincha у Quito с совпадающей координатой QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23873637",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "GeoNames ID точной самостоятельной вершины указан в QID и карте."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19650184",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Выбрана точка самостоятельной вершины Rucu, совпадает с P625 Q23873637; координата общего Pichincha не используется."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23873637",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD явно выделяет вершину Rucu Pichincha у Quito. Установлен отдельный Q23873637; общий Pichincha Q742216 включает также Guagua и не подставляется."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q23873637",
+    "osm": {
+      "type": "node",
+      "id": 249414034
+    },
+    "geonamesId": "3652253"
+  },
+  "location": {
+    "latitude": -0.16271,
+    "longitude": -78.56671,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/19650184"
+  }
+}

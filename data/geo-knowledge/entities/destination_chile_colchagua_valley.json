@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_colchagua_valley",
+  "stableId": "destination_chile_colchagua_valley",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/colchagua-valley/",
+  "sourceFingerprint": "b16c23cf9cf96396bcaa88b0aa5dce3b298fe66798c9009ffd714aff234285ae",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q6159082"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6159082",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Долина Colchagua центрального Чили, винодельческий район O’Higgins. Не административная провинция как отдельная сущность."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/colchagua-valley.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/colchagua-valley/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6159082",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Долина Colchagua центрального Чили, винодельческий район O’Higgins. Не административная провинция как отдельная сущность."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/N8320274930",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Опорная точка долины по OSM node 8320274930/Mapcarta с тем же Q6159082; не границы винодельческой аппелласьон."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6159082",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "reason": "Долина Colchagua центрального Чили, винодельческий район O’Higgins. Не административная провинция как отдельная сущность.",
+      "selected": "Долина Кольчагуа"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "reason": "Долина Colchagua центрального Чили, винодельческий район O’Higgins. Не административная провинция как отдельная сущность.",
+      "selected": "Q6159082"
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "reason": "Опорная точка долины по OSM node 8320274930/Mapcarta с тем же Q6159082; не границы винодельческой аппелласьон.",
+      "selected": "[-34.6357,-71.1842]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -34.6357,
+    "longitude": -71.1842,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/N8320274930"
+  }
+}

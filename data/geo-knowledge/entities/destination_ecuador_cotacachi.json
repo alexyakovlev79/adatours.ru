@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_cotacachi",
+  "stableId": "destination_ecuador_cotacachi",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cotacachi/",
+  "sourceFingerprint": "d7b69b2ed8fb25a18e34bd45474c4b36b55fa649e371adb4c8ff8b2a3bceebcf",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1001959"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Котакачи",
+      "reason": "Котакачи в MD — город ремесленников около Отавало. Q1001959 — именно город Santa Ana de Cotacachi, а не вулкан, кантон или заповедник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1001959",
+      "reason": "Котакачи в MD — город ремесленников около Отавало. Q1001959 — именно город Santa Ana de Cotacachi, а не вулкан, кантон или заповедник."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "0.3, -78.26666666666667",
+      "reason": "Координаты выбранного объекта из указанного источника; роль settlement_center. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cotacachi.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Котакачи в MD — город ремесленников около Отавало. Q1001959 — именно город Santa Ana de Cotacachi, а не вулкан, кантон или заповедник."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cotacachi/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1001959",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Котакачи в MD — город ремесленников около Отавало. Q1001959 — именно город Santa Ana de Cotacachi, а не вулкан, кантон или заповедник."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1001959",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль settlement_center. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cotacachi.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": 0.3,
+    "longitude": -78.26666666666667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1001959"
+  }
+}

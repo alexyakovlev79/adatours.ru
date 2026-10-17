@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_asunson",
+  "stableId": "destination_paraguay_asunson",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/asuncion/",
+  "sourceFingerprint": "c37dc19c4bc1eea7693316c531bd89d407ef827e0fff5244ec434c4b87253002",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Асунсьон",
+      "reason": "Столица Парагвая Асунсьон; город, а не Capital District."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2933",
+      "reason": "Столица Парагвая Асунсьон; город, а не Capital District."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Asunci%C3%B3n",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3439389",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-25.28,-57.63444444444445]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 99,
+      "selected": "country_paraguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/paraguay/place/asuncion/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Столица Парагвая Асунсьон; город, а не Capital District."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/asunson.md",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2933",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Столица Парагвая Асунсьон; город, а не Capital District."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2933",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2933",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2933",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2933",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2933",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Asunci%C3%B3n"
+    },
+    "geonamesId": "3439389"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "location": {
+    "latitude": -25.28,
+    "longitude": -57.63444444444445,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2933"
+  },
+  "reviewNote": "В MD ошибочно названа река Парана; внешняя карточка указывает Paraguay River. Исходный текст сборщиком не менялся."
+}

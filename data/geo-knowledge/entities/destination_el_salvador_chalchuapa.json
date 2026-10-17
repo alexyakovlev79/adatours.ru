@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_chalchuapa",
+  "stableId": "destination_el_salvador_chalchuapa",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/chalchuapa/",
+  "sourceFingerprint": "5458bb3194a868b900dd2b06b0aa0a25fa8478e57fe28f65c09b85456dcf10c6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q2565837",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chalchuapa"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/chalchuapa/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Current city Chalchuapa in Santa Ana with Tazumal and Casa Blanca; urban referent is explicit in MD, not separate district gazetteer record."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chalchuapa",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Current city Chalchuapa in Santa Ana with Tazumal and Casa Blanca; urban referent is explicit in MD, not separate district gazetteer record."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chalchuapa",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chalchuapa",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Current city Chalchuapa in Santa Ana with Tazumal and Casa Blanca; urban referent is explicit in MD, not separate district gazetteer record."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chalchuapa",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Current city Chalchuapa in Santa Ana with Tazumal and Casa Blanca; urban referent is explicit in MD, not separate district gazetteer record."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19519850",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Чальчуапа",
+      "reason": "Current city Chalchuapa in Santa Ana with Tazumal and Casa Blanca; urban referent is explicit in MD, not separate district gazetteer record."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q2565837",
+      "reason": "Current city Chalchuapa in Santa Ana with Tazumal and Casa Blanca; urban referent is explicit in MD, not separate district gazetteer record."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Chalchuapa\"}",
+      "reason": "Current city Chalchuapa in Santa Ana with Tazumal and Casa Blanca; urban referent is explicit in MD, not separate district gazetteer record."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.98532,\"longitude\":-89.68024,\"pointRole\":\"settlement_center\",\"coordinateSource\":\"https://mapcarta.com/19519850\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.98532,
+    "longitude": -89.68024,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://mapcarta.com/19519850"
+  },
+  "reviewNote": ""
+}

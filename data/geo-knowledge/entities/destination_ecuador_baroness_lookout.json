@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_baroness_lookout",
+  "stableId": "destination_ecuador_baroness_lookout",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/baroness-lookout/",
+  "sourceFingerprint": "bdbdcbf1a966e841375cc71991d6d296404bfbbef71e8e677d04dab4f1bcd573",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/baroness-lookout/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Galápagos park authority names Mirador de la Baronesa as visitor site; operator descriptions locate it on north Floreana above mangrove-fringed La Olla Bay, matching MD."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.galapagos.gob.ec/wp-content/uploads/downloads/2018/03/00014.pdf",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Galápagos park authority names Mirador de la Baronesa as visitor site; operator descriptions locate it on north Floreana above mangrove-fringed La Olla Bay, matching MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Mirador de la Baronesa, Floreana",
+      "reason": "Galápagos park authority names Mirador de la Baronesa as visitor site; operator descriptions locate it on north Floreana above mangrove-fringed La Olla Bay, matching MD."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Galápagos park authority names Mirador de la Baronesa as visitor site; operator descriptions locate it on north Floreana above mangrove-fringed La Olla Bay, matching MD."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Available points may be botanical collection site, landing or visitor area rather than viewpoint platform; no unique exact point above threshold."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 40,
+      "reason": "No exact independently established QID for viewpoint; island QID not substituted."
+    }
+  ],
+  "reviewNote": "Coordinate candidates include botanical locality record -1.227283858,-90.443182010 and visitor-site UTM points from impact assessments. Exact lookout vs landing/sample location unresolved, so coordinates omitted."
+}

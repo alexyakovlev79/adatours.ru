@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_koloniya_del_sakramento",
+  "stableId": "destination_uruguay_koloniya_del_sakramento",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/colonia-del-sacramento/",
+  "sourceFingerprint": "2acb63153171ca87c379f9354a32f7b51ea9a3aebe6f08b93d66120d179ed084",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Колония дель Сакраменто",
+      "reason": "Город Colonia del Sacramento на Río de la Plata; страница про город, не только UNESCO Historic Quarter."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q56064",
+      "reason": "Город Colonia del Sacramento на Río de la Plata; страница про город, не только UNESCO Historic Quarter."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Colonia_del_Sacramento",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3443013",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-34.46988611111111,-57.84336944444444]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 99,
+      "selected": "country_uruguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/uruguay/place/colonia-del-sacramento/",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Город Colonia del Sacramento на Río de la Plata; страница про город, не только UNESCO Historic Quarter."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/koloniya-del-sakramento.md",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56064",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Город Colonia del Sacramento на Río de la Plata; страница про город, не только UNESCO Historic Quarter."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56064",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56064",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56064",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56064",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q56064",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Colonia_del_Sacramento"
+    },
+    "geonamesId": "3443013"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "location": {
+    "latitude": -34.46988611111111,
+    "longitude": -57.84336944444444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q56064"
+  },
+  "reviewNote": "Использована одна P625; иные координаты карточки не усреднялись. Идентификатор UNESCO старого квартала не присваивается всему городу."
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_miraflores_locks",
+  "stableId": "destination_panama_miraflores_locks",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/miraflores-locks/",
+  "sourceFingerprint": "c74da0c6d26b44d2d223e640130f419e3923358623a8973e00fc09b64ef3716f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Шлюзы Мирафлорес",
+      "reason": "Комплекс шлюзов Miraflores Панамского канала, не музей посетителей и не одноимённые города."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка lock of the Panama Canal; Q100144719 относится к отдельному центру посетителей.",
+      "selected": "Q6872559"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink комплекса шлюзов.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Miraflores_(Panama)\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 комплекса шлюзов, не здания visitor center.",
+      "selected": "8.997074999999999,-79.59186944444444"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/miraflores-locks/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Комплекс шлюзов Miraflores Панамского канала, не музей посетителей и не одноимённые города."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/miraflores-locks/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6872559",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точная карточка lock of the Panama Canal; Q100144719 относится к отдельному центру посетителей."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6872559",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Sitelink комплекса шлюзов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6872559",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "P625 комплекса шлюзов, не здания visitor center."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q6872559",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Miraflores_(Panama)"
+    }
+  },
+  "location": {
+    "latitude": 8.997074999999999,
+    "longitude": -79.59186944444444,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q6872559"
+  }
+}

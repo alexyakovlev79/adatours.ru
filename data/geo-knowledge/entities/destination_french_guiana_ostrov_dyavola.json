@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_french_guiana_ostrov_dyavola",
+  "stableId": "destination_french_guiana_ostrov_dyavola",
+  "kind": "destination",
+  "canonicalPath": "/french-guiana/place/devils-island/",
+  "sourceFingerprint": "1cbe53dcc0502f5680da6265ab1a27fced45e98ce4d8972e9d9a5abcbd9a0e55",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Остров Дьявола",
+      "reason": "Именно остров Île du Diable в Иль-дю-Салю, не вся система каторги/архипелаг. MD это явно различает."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_french_guiana"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка выбранного основного географического референта.",
+      "selected": "Q220385"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Языковая статья того же объекта.",
+      "selected": "{\"fr\":\"https://fr.wikipedia.org/wiki/%C3%8Ele_du_Diable\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка отдельного острова из французской статьи; не общая каторга.",
+      "selected": "5.293611111111111,-52.58305555555556"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/devils-island/",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Именно остров Île du Diable в Иль-дю-Салю, не вся система каторги/архипелаг. MD это явно различает."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/devils-island/",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q220385",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Точная карточка выбранного основного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q220385",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Языковая статья того же объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://fr.wikipedia.org/wiki/%C3%8Ele_du_Diable",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Опорная точка отдельного острова из французской статьи; не общая каторга."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q220385",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Именно остров Île du Diable в Иль-дю-Салю, не вся система каторги/архипелаг. MD это явно различает."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_french_guiana"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q220385",
+    "wikipedia": {
+      "fr": "https://fr.wikipedia.org/wiki/%C3%8Ele_du_Diable"
+    }
+  },
+  "location": {
+    "latitude": 5.293611111111111,
+    "longitude": -52.58305555555556,
+    "pointRole": "representative",
+    "coordinateSource": "https://fr.wikipedia.org/wiki/%C3%8Ele_du_Diable"
+  },
+  "reviewNote": "В MD ошибочный destinationType city не переносится в интерпретацию. Английская общая Devil’s Island о системе тюрем не включена; WD P625 отличается на сотни метров, точки не усреднялись."
+}

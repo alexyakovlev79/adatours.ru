@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_playa_blanca",
+  "stableId": "destination_panama_playa_blanca",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/playa-blanca/",
+  "sourceFingerprint": "8618a658f0766a4a10a3dc9c50ff68912551d7c11713370c06a2cded49c80176",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/playa-blanca/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Official Panama tourism places Playa Blanca among Pacific Riviera beaches near Farallón. MD names Playa Blanca Beach Resort as associated hotel, not identical to entire destination."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/pacific-riviera/things-to-do/watersports-and-beaches/beaches/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Official Panama tourism places Playa Blanca among Pacific Riviera beaches near Farallón. MD names Playa Blanca Beach Resort as associated hotel, not identical to entire destination."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Playa Blanca beach resort area, Coclé",
+      "reason": "Official Panama tourism places Playa Blanca among Pacific Riviera beaches near Farallón. MD names Playa Blanca Beach Resort as associated hotel, not identical to entire destination."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Official Panama tourism places Playa Blanca among Pacific Riviera beaches near Farallón. MD names Playa Blanca Beach Resort as associated hotel, not identical to entire destination."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 40,
+      "reason": "No exact QID found for this Pacific Riviera destination; namesakes in Taboga and Portobelo excluded."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "No exact beach-area coordinate verified; hotel point would narrow destination incorrectly."
+    }
+  ],
+  "reviewNote": "Hotel homepage is evidence for associated accommodation, not sameAs of the beach/resort area. Coordinates and QID omitted pending exact feature."
+}

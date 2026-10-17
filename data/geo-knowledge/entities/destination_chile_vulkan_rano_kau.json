@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_vulkan_rano_kau",
+  "stableId": "destination_chile_vulkan_rano_kau",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/rano-kau-volcano/",
+  "sourceFingerprint": "e92de8455f30913b37b839fec2c01a2f188fa1cc0a2b565e94df4c7b6a4aa32a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1340624"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1340624",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Вулкан Rano Kau на Рапа-Нуи, рядом с Orongo; идентичность вулкана отдельно от деревни и смотровой площадки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/rano-kau-volcano.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/rano-kau-volcano/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1340624",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Вулкан Rano Kau на Рапа-Нуи, рядом с Orongo; идентичность вулкана отдельно от деревни и смотровой площадки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1340624",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1340624",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Вулкан Rano Kau на Рапа-Нуи, рядом с Orongo; идентичность вулкана отдельно от деревни и смотровой площадки.",
+      "selected": "Вулкан Рано-Кау"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Вулкан Rano Kau на Рапа-Нуи, рядом с Orongo; идентичность вулкана отдельно от деревни и смотровой площадки.",
+      "selected": "Q1340624"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-27.18638889,-109.43527778]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -27.18638889,
+    "longitude": -109.43527778,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1340624"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_ostrov_meangera_del_golfo",
+  "stableId": "destination_el_salvador_ostrov_meangera_del_golfo",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/meanguera-del-golfo-island/",
+  "sourceFingerprint": "1e63e74036c92a5fa13341def8b2f5db8dc0f3ef987ee930fb360d0a39facd8c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1915478",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Isla_de_Meanguera"
+    }
+  },
+  "location": {
+    "latitude": 13.2,
+    "longitude": -87.71666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://es.wikipedia.org/wiki/Isla_de_Meanguera"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_de_Meanguera",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/meanguera-del-golfo-island.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/meanguera-del-golfo-island/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1915478",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_de_Meanguera",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_de_Meanguera",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точка острова 13°12′N 87°43′W в Wikidata Q1915478 и испанской статье. Роль representative; не координата населённого пункта на берегу."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_de_Meanguera",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Остров Меангера-дель-Гольфо",
+      "reason": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1915478",
+      "reason": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Isla_de_Meanguera",
+      "reason": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "13.2,-87.71666667",
+      "reason": "Точка острова 13°12′N 87°43′W в Wikidata Q1915478 и испанской статье. Роль representative; не координата населённого пункта на берегу."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 98,
+      "selected": "country_el_salvador",
+      "reason": "Isla de Meanguera — остров El Salvador в заливе Fonseca; основной объект MD именно остров, не округ Meanguera del Golfo Q3853446 и не Meanguerita. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

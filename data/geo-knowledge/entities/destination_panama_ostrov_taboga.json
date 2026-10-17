@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_ostrov_taboga",
+  "stableId": "destination_panama_ostrov_taboga",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/taboga-island/",
+  "sourceFingerprint": "66cd17a1ed9babd26ef10bb52846487f008dae8a3456ea74b63fd5e3763ab109",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q741106"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/taboga-island/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact island in Gulf of Panama; not Taboga district or Tobago."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q741106",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Exact island in Gulf of Panama; not Taboga district or Tobago."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q741106",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact island in Gulf of Panama; not Taboga district or Tobago."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q741106",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Exact island in Gulf of Panama; not Taboga district or Tobago."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Taboga Island",
+      "reason": "Exact island in Gulf of Panama; not Taboga district or Tobago."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q741106",
+      "reason": "Exact island in Gulf of Panama; not Taboga district or Tobago."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "8.793474999999999,-79.55480277777778",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact island in Gulf of Panama; not Taboga district or Tobago."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Exact island in Gulf of Panama; not Taboga district or Tobago."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 8.793474999999999,
+    "longitude": -79.55480277777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q741106"
+  }
+}

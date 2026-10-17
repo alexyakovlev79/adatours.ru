@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_ostrov_flamenko",
+  "stableId": "destination_panama_ostrov_flamenko",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/flamenco-island/",
+  "sourceFingerprint": "2b76b82ff8517383e91cc759912d27b2ceb5e844753273d77599c9c7bbfade09",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3709528"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/flamenco-island/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3709528",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3709528",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.geonames.org/3709528",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Isla Flamenco, Panama",
+      "reason": "GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3709528",
+      "reason": "GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "8.90862,-79.52016",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "GeoNames T.ISL island in Panamá province at Amador, matching marina context. Argentina island Q21839662 and lighthouse Q60742987 are different entities."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 10,
+      "reason": "Search returned the Argentine island and the lighthouse; neither is the Panama island, omitted."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 8.90862,
+    "longitude": -79.52016,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3709528"
+  }
+}

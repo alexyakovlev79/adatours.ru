@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_san_cristobal_island",
+  "stableId": "destination_ecuador_san_cristobal_island",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/san-cristobal-island/",
+  "sourceFingerprint": "af859ceac72c0c628e52351259bf8ed496da39456d6349df227774f7f47525e1",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Сан-Кристобаль",
+      "reason": "San Cristóbal в Галапагосском архипелаге, с Puerto Baquerizo Moreno и лагуной El Junco; не одноимённый кантон/город и не острова других стран."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q855652",
+      "reason": "San Cristóbal в Галапагосском архипелаге, с Puerto Baquerizo Moreno и лагуной El Junco; не одноимённый кантон/город и не острова других стран."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Island",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3651946",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-0.8,-89.4]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":2128941}",
+      "reason": "Точный именованный объект OSM; страна, название и географический контекст совпадают."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/san-cristobal-island/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "San Cristóbal в Галапагосском архипелаге, с Puerto Baquerizo Moreno и лагуной El Junco; не одноимённый кантон/город и не острова других стран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/san-cristobal-island.md",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q855652",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "San Cristóbal в Галапагосском архипелаге, с Puerto Baquerizo Moreno и лагуной El Junco; не одноимённый кантон/город и не острова других стран."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q855652",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q855652",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q855652",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q855652",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q855652",
+      "checkedAt": "2026-10-17T08:27:00.374Z",
+      "note": "Точный именованный объект OSM; страна, название и географический контекст совпадают."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q855652",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Island"
+    },
+    "geonamesId": "3651946",
+    "osm": {
+      "type": "relation",
+      "id": 2128941
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -0.8,
+    "longitude": -89.4,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q855652"
+  },
+  "reviewNote": null
+}

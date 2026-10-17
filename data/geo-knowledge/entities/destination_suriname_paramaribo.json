@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_paramaribo",
+  "stableId": "destination_suriname_paramaribo",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/paramaribo/",
+  "sourceFingerprint": "82ea45e5099aaa55d4d3662bd5d6d977ac80a0ee21e45d7e13ac91192e14edf8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3001",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Paramaribo"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3001",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Парамарибо — город и столица Суринама; не одноименный округ и не только исторический центр UNESCO."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/paramaribo.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/suriname/place/paramaribo/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3001",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Парамарибо — город и столица Суринама; не одноименный округ и не только исторический центр UNESCO."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paramaribo",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Парамарибо — город и столица Суринама; не одноименный округ и не только исторический центр UNESCO."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Paramaribo",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3001",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Парамарибо — город и столица Суринама; не одноименный округ и не только исторический центр UNESCO.",
+      "selected": "Парамарибо"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Парамарибо — город и столица Суринама; не одноименный округ и не только исторический центр UNESCO.",
+      "selected": "Q3001"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Парамарибо — город и столица Суринама; не одноименный округ и не только исторический центр UNESCO.",
+      "selected": "https://en.wikipedia.org/wiki/Paramaribo"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[5.85222,-55.20389]"
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_suriname"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "UNESCO 940 относится только к историческому центру; ID не приравнен ко всему городу.",
+  "location": {
+    "latitude": 5.85222,
+    "longitude": -55.20389,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Paramaribo"
+  }
+}

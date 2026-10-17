@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_cherepashij_ostrov",
+  "stableId": "destination_panama_cherepashij_ostrov",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/turtle-island/",
+  "sourceFingerprint": "11ef6230677b6f35b8763a184fd69c6349d031ae8adb5bc4fa7c794f54fd9972",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 91,
+      "selected": "Черепаший остров",
+      "reason": "Черепаший остров — Turtle Island/BBQ Island в Holandes Cays; оператор прямо связывает два названия и якорную стоянку между ним и Benedup."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/turtle-island.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Черепаший остров — Turtle Island/BBQ Island в Holandes Cays; оператор прямо связывает два названия и якорную стоянку между ним и Benedup."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.ypiyachts.com/en/yacht-charter/central-south-america/san-blas-islands/",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Черепаший остров — Turtle Island/BBQ Island в Holandes Cays; оператор прямо связывает два названия и якорную стоянку между ним и Benedup."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.ypiyachts.com/en/yacht-charter/central-south-america/san-blas-islands/",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/turtle-island/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "reviewNote": "Остров определён по локальному имени и маршруту; QID и координаты других Turtle Island не использованы."
+}

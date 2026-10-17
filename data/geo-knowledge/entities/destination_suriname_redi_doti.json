@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_redi_doti",
+  "stableId": "destination_suriname_redi_doti",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/redi-doti/",
+  "sourceFingerprint": "add14c0c75e1dc5bf227017f4dfabcfa6e0139da8b7546f6514723d8cd82ddcc",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Реди-Доти",
+      "reason": "Реди-Доти — деревня коренных народов в Para/Carolina рядом с Йоденсаванне. Подтверждена фондом управления Йоденсаванне, не отождествлена с самим памятником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q76988643",
+      "reason": "Реди-Доти — деревня коренных народов в Para/Carolina рядом с Йоденсаванне. Подтверждена фондом управления Йоденсаванне, не отождествлена с самим памятником."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "5.425277777777778,-54.97638888888889",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/redi-doti.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Реди-Доти — деревня коренных народов в Para/Carolina рядом с Йоденсаванне. Подтверждена фондом управления Йоденсаванне, не отождествлена с самим памятником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.jodensavanne.org/redi-doti",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Реди-Доти — деревня коренных народов в Para/Carolina рядом с Йоденсаванне. Подтверждена фондом управления Йоденсаванне, не отождествлена с самим памятником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q76988643",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Реди-Доти — деревня коренных народов в Para/Carolina рядом с Йоденсаванне. Подтверждена фондом управления Йоденсаванне, не отождествлена с самим памятником."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q76988643",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.jodensavanne.org/redi-doti",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/redi-doti/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q76988643"
+  },
+  "location": {
+    "latitude": 5.425277777777778,
+    "longitude": -54.97638888888889,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q76988643"
+  }
+}

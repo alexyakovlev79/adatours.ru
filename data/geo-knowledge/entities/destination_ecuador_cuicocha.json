@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_cuicocha",
+  "stableId": "destination_ecuador_cuicocha",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cuicocha/",
+  "sourceFingerprint": "7505dabc636ebf8132c667ba526501304589b21d670dd404173bf801a22ec783",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1143300",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cuicocha"
+    }
+  },
+  "location": {
+    "latitude": 0.3,
+    "longitude": -78.35,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Cuicocha"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cuicocha",
+      "checkedAt": "2026-10-17T08:31:26.029Z",
+      "note": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cuicocha.md",
+      "checkedAt": "2026-10-17T08:31:26.029Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cuicocha/",
+      "checkedAt": "2026-10-17T08:31:26.029Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1143300",
+      "checkedAt": "2026-10-17T08:31:26.029Z",
+      "note": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cuicocha",
+      "checkedAt": "2026-10-17T08:31:26.029Z",
+      "note": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cuicocha",
+      "checkedAt": "2026-10-17T08:31:26.029Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cuicocha",
+      "checkedAt": "2026-10-17T08:31:26.029Z",
+      "note": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Куикоча",
+      "reason": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1143300",
+      "reason": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Cuicocha",
+      "reason": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "0.3,-78.35",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Cuicocha — кратерная кальдера с озером в Имбабуре, Эквадор, возле Котакачи; соответствует озеру страницы. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

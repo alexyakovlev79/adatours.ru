@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ostrova_taker",
+  "stableId": "destination_chile_ostrova_taker",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/tucker-islets/",
+  "sourceFingerprint": "0f95035acea46c16ef73c1bb3b76f904c04587b3e9dc418cbdf2d7d3ad1631e7",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/tucker-islets/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Penguin colony scientific record locates Tucker islets at 54°09 S 70°17 W in Chile, matching Australis cruise stop. Distinct from Antarctica Tucker Glacier."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://investigadores.anid.cl//en/public_search/work?id=746583",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Penguin colony scientific record locates Tucker islets at 54°09 S 70°17 W in Chile, matching Australis cruise stop. Distinct from Antarctica Tucker Glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://investigadores.anid.cl//en/public_search/work?id=746583",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Penguin colony scientific record locates Tucker islets at 54°09 S 70°17 W in Chile, matching Australis cruise stop. Distinct from Antarctica Tucker Glacier."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Tuckers Islets, Whiteside Channel",
+      "reason": "Penguin colony scientific record locates Tucker islets at 54°09 S 70°17 W in Chile, matching Australis cruise stop. Distinct from Antarctica Tucker Glacier."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "-54.15,-70.2833333333",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Penguin colony scientific record locates Tucker islets at 54°09 S 70°17 W in Chile, matching Australis cruise stop. Distinct from Antarctica Tucker Glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Penguin colony scientific record locates Tucker islets at 54°09 S 70°17 W in Chile, matching Australis cruise stop. Distinct from Antarctica Tucker Glacier."
+    }
+  ],
+  "reviewNote": "Scientific source gives minute-resolution representative location of the islets; not landing or individual colony.",
+  "location": {
+    "latitude": -54.15,
+    "longitude": -70.2833333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://investigadores.anid.cl//en/public_search/work?id=746583"
+  }
+}

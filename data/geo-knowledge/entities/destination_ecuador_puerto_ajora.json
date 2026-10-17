@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_puerto_ajora",
+  "stableId": "destination_ecuador_puerto_ajora",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/puerto-ayora/",
+  "sourceFingerprint": "03a5beef1a90eb8f1c9d62fb703515ff95bcdfdce685a17a34543fd110c43bcb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1013526",
+    "geonamesId": "3652764"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_ecuador_ostrov_santa_krus_galapagosy"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/puerto-ayora/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1013526",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1013526",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1013526",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1013526",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "sourceUrl": "https://adatours.ru/ecuador/place/puerto-ayora/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Current MD explicitly locates this feature on Santa Cruz Island in Galápagos."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Puerto Ayora",
+      "reason": "City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1013526",
+      "reason": "City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3652764",
+      "reason": "City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.7444444444444444,-90.31388888888888",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "City on Santa Cruz south coast; direct Wikidata label, country and coordinates match. Incorrect DBpedia Q3455524 (generic administrative region) rejected."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "probability": 99,
+      "selected": "destination_ecuador_ostrov_santa_krus_galapagosy",
+      "reason": "Explicit named-island containment in current page MD and geographic context."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.7444444444444444,
+    "longitude": -90.31388888888888,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1013526"
+  }
+}

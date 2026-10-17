@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_glacier_alley",
+  "stableId": "destination_chile_glacier_alley",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/glacier-alley/",
+  "sourceFingerprint": "6ce09c302ddb57c094362b6bb9d397dad9eebfe6c03112b0869152152f30c7c8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/glacier-alley/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Operator describes Glacier Alley as channel stretch lined by glaciers descending Darwin Mountains; matches water route in MD."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://blogpatagonia.australis.com/chilean-fjords/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Operator describes Glacier Alley as channel stretch lined by glaciers descending Darwin Mountains; matches water route in MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Glacier Alley, northwest Beagle Channel",
+      "reason": "Operator describes Glacier Alley as channel stretch lined by glaciers descending Darwin Mountains; matches water route in MD."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Operator describes Glacier Alley as channel stretch lined by glaciers descending Darwin Mountains; matches water route in MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "No exact Wikidata identity established for named channel stretch; individual glaciers are different objects."
+    },
+    {
+      "field": "location",
+      "probability": 50,
+      "reason": "Route stretch has no uniquely verified representative point; omitted."
+    }
+  ],
+  "reviewNote": "Editorial route area with multiple glaciers. No single glacier QID or invented central coordinate assigned."
+}

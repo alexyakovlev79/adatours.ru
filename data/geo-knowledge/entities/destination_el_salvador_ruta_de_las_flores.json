@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_ruta_de_las_flores",
+  "stableId": "destination_el_salvador_ruta_de_las_flores",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/ruta-de-las-flores/",
+  "sourceFingerprint": "4adb2bc63efc0cdbc564ff120c2f74ac18eded44afa34be0e09bee1b7985dde6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/ruta-de-las-flores/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Official tourism route through western highland towns between Sonsonate and Ahuachapan, coffee region; not a single settlement."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://elsalvador.travel/esp/ruta-de-las-flores/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Official tourism route through western highland towns between Sonsonate and Ahuachapan, coffee region; not a single settlement."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://elsalvador.travel/esp/ruta-de-las-flores/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Дорога цветов",
+      "reason": "Official tourism route through western highland towns between Sonsonate and Ahuachapan, coffee region; not a single settlement."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "location",
+      "probability": 45,
+      "reason": "Multi-stop tourist corridor has no verified single coordinate; no averaged location is invented."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 45,
+      "reason": "No exact route-specific Wikidata identity established after route-name research."
+    }
+  ],
+  "reviewNote": ""
+}

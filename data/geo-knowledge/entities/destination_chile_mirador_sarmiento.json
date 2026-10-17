@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_mirador_sarmiento",
+  "stableId": "destination_chile_mirador_sarmiento",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/mirador-sarmiento/",
+  "sourceFingerprint": "00ba73556556389a4f1eb8d1e553e22ab616f8125e7f6749c8dcfec3dc0e99e4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/mirador-sarmiento/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Local full-day operator returns via Mirador Lago Sarmiento after park sightseeing, matching page sequence after Laguna Amarga."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.turismopatagonico.com/tours-puerto-natales-turismo-patagonico/full-day-torres-del-paine",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Local full-day operator returns via Mirador Lago Sarmiento after park sightseeing, matching page sequence after Laguna Amarga."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 85,
+      "selected": "Mirador del Lago Sarmiento, Torres del Paine",
+      "reason": "Local full-day operator returns via Mirador Lago Sarmiento after park sightseeing, matching page sequence after Laguna Amarga."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Local full-day operator returns via Mirador Lago Sarmiento after park sightseeing, matching page sequence after Laguna Amarga."
+    },
+    {
+      "field": "external.osm",
+      "probability": 60,
+      "reason": "Two homonymous viewpoints; itinerary insufficient to assign one node above 70%."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "No independently proven stopping point; lake coordinate not substituted."
+    }
+  ],
+  "reviewNote": "OSM candidates 693134532 (-51.00886,-72.59128) and 5940537515 (-51.03545,-72.77054). Page does not fix stopping point; exact OSM/coordinate omitted."
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_pilchicocha_lake",
+  "stableId": "destination_ecuador_pilchicocha_lake",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/pilchicocha-lake/",
+  "sourceFingerprint": "db8f65e8fb9078325b081bd9dcc5ce5ba5e6dfd22a5f86d74f465ed825a90d12",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Пилчикоча",
+      "reason": "MD: чёрноводное озеро Pilchicocha у Sacha Lodge и реки Napo. Wikipedia прямо подтверждает оба ориентира и Sucumbíos."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Lake Pilchicocha — озеро Sucumbíos, Ecuador.",
+      "selected": "Q21002398"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья озера с Sacha Lodge к северо-востоку.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Lake_Pilchicocha\"}"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Координата именно озера Pilchicocha у Napo.",
+      "selected": "-0.47361,-76.46"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/pilchicocha-lake/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: чёрноводное озеро Pilchicocha у Sacha Lodge и реки Napo. Wikipedia прямо подтверждает оба ориентира и Sucumbíos."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/pilchicocha-lake/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21002398",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Lake Pilchicocha — озеро Sucumbíos, Ecuador."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Pilchicocha",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точная статья озера с Sacha Lodge к северо-востоку."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Pilchicocha",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Координата именно озера Pilchicocha у Napo."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Pilchicocha",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: чёрноводное озеро Pilchicocha у Sacha Lodge и реки Napo. Wikipedia прямо подтверждает оба ориентира и Sucumbíos."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q21002398",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lake_Pilchicocha"
+    }
+  },
+  "location": {
+    "latitude": -0.47361,
+    "longitude": -76.46,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Lake_Pilchicocha"
+  }
+}

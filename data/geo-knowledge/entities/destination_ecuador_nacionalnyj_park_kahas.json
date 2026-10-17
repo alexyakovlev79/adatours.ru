@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_nacionalnyj_park_kahas",
+  "stableId": "destination_ecuador_nacionalnyj_park_kahas",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cajas-national-park/",
+  "sourceFingerprint": "2b6d69f6e1ef5a1fb02536b8f587a9d533de9dfced6a5b7a3847db5bbb883534",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1295864",
+    "geonamesId": "6942301"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cajas-national-park/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1295864",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1295864",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1295864",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1295864",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "El Cajas National Park",
+      "reason": "Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1295864",
+      "reason": "Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "6942301",
+      "reason": "Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-2.8461111111111115,-79.22027777777778",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Exact high-altitude protected park west of Cuenca in Azuay; MD lakes and páramo context matches."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -2.8461111111111115,
+    "longitude": -79.22027777777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1295864"
+  }
+}

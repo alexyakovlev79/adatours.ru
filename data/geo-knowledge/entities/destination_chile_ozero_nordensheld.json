@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ozero_nordensheld",
+  "stableId": "destination_chile_ozero_nordensheld",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/lake-nordenskjold/",
+  "sourceFingerprint": "b1712be75472845d8775d2799f8ea0ae9c384b1cad6b26c986c8aa3b4fc8cbc8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3031982"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3031982",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Озеро Nordenskjöld в Torres del Paine; не одноименный ледник Южной Георгии."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/lake-nordenskjold.md",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/lake-nordenskjold/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3031982",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Озеро Nordenskjöld в Torres del Paine; не одноименный ледник Южной Георгии."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3031982",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3031982",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Озеро Nordenskjöld в Torres del Paine; не одноименный ледник Южной Георгии.",
+      "selected": "Озеро Норденшельд"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Озеро Nordenskjöld в Torres del Paine; не одноименный ледник Южной Георгии.",
+      "selected": "Q3031982"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-51.03333333,-73]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -51.03333333,
+    "longitude": -73,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3031982"
+  }
+}

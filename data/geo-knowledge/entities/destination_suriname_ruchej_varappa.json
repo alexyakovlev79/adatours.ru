@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_ruchej_varappa",
+  "stableId": "destination_suriname_ruchej_varappa",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/warappa-creek/",
+  "sourceFingerprint": "aaaf2677146077ea087326642a83c81fc476cda1ceaf5ed67d5120857d12498d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Ручей Вараппа",
+      "reason": "Warappa Creek/Warappakreek — мангровый водоток Commewijne, маршрут через Bakkie/Reynsdorp к атлантической стороне. Совпадает с ручьём Вараппа из MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/warappa-creek.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Warappa Creek/Warappakreek — мангровый водоток Commewijne, маршрут через Bakkie/Reynsdorp к атлантической стороне. Совпадает с ручьём Вараппа из MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://tourboxsuriname.com/en/tours/daytrips/warrapa-creek",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Warappa Creek/Warappakreek — мангровый водоток Commewijne, маршрут через Bakkie/Reynsdorp к атлантической стороне. Совпадает с ручьём Вараппа из MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://tourboxsuriname.com/en/tours/daytrips/warrapa-creek",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/warappa-creek/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Не использованы QID плантации Bakkie, фонда Warappa или всей реки Commewijne."
+}

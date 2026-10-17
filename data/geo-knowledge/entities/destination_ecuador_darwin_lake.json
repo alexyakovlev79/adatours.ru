@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_darwin_lake",
+  "stableId": "destination_ecuador_darwin_lake",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/darwin-lake/",
+  "sourceFingerprint": "f8cdacbf93c826701fb18c4e9624d3784d4f8c6d2747191f23d62ed8af8f9b48",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.galapagos.org/about_galapagos/the-islands/isabela-island/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Darwin Lake — озеро в туфовом конусе над Tagus Cove на острове Isabela, Галапагосы Эквадора. Это не Darwin Island, Darwin Bay или одноимённые озёра других стран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/darwin-lake.md",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/darwin-lake/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.galapagos.org/about_galapagos/the-islands/isabela-island/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Darwin Lake — озеро в туфовом конусе над Tagus Cove на острове Isabela, Галапагосы Эквадора. Это не Darwin Island, Darwin Bay или одноимённые озёра других стран. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Дарвина",
+      "reason": "Darwin Lake — озеро в туфовом конусе над Tagus Cove на острове Isabela, Галапагосы Эквадора. Это не Darwin Island, Darwin Bay или одноимённые озёра других стран."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Darwin Lake — озеро в туфовом конусе над Tagus Cove на острове Isabela, Галапагосы Эквадора. Это не Darwin Island, Darwin Bay или одноимённые озёра других стран. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точный QID и координата самого озера не подтверждены; поля опущены."
+}

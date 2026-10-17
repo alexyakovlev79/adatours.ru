@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_san_ignasio_guasu",
+  "stableId": "destination_paraguay_san_ignasio_guasu",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/san-ignacio-guazu/",
+  "sourceFingerprint": "02b1312095c68782e719967700041b570ae880686803dc6861044fa1f5e12764",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2571376",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Ignacio,_Paraguay"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2571376",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Сан-Игнасио-Гуасу в Misiones, Парагвай; город с иезуитским наследием, не San Ignacio Miní в Аргентине."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/san-ignacio-guazu.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/san-ignacio-guazu/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2571376",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Сан-Игнасио-Гуасу в Misiones, Парагвай; город с иезуитским наследием, не San Ignacio Miní в Аргентине."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Ignacio,_Paraguay",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Сан-Игнасио-Гуасу в Misiones, Парагвай; город с иезуитским наследием, не San Ignacio Miní в Аргентине."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Ignacio,_Paraguay",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2571376",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Сан-Игнасио-Гуасу в Misiones, Парагвай; город с иезуитским наследием, не San Ignacio Miní в Аргентине.",
+      "selected": "Сан-Игнасио-Гуасу"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Сан-Игнасио-Гуасу в Misiones, Парагвай; город с иезуитским наследием, не San Ignacio Miní в Аргентине.",
+      "selected": "Q2571376"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Сан-Игнасио-Гуасу в Misiones, Парагвай; город с иезуитским наследием, не San Ignacio Miní в Аргентине.",
+      "selected": "https://en.wikipedia.org/wiki/San_Ignacio,_Paraguay"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-26.88667,-57.02833]"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -26.88667,
+    "longitude": -57.02833,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/San_Ignacio,_Paraguay"
+  }
+}

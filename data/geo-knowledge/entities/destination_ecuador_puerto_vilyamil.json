@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_puerto_vilyamil",
+  "stableId": "destination_ecuador_puerto_vilyamil",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/puerto-villamil/",
+  "sourceFingerprint": "c827900d0886d1248b636d26c46810cb4a9ef71865526d4bce62d1b227dce628",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пуэрто-Вильямиль",
+      "reason": "MD: прибрежный населённый пункт Puerto Villamil на Isabela. Статья и QID подтверждают крупнейшее поселение данного острова."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Puerto Villamil, поселение Isabela, Galápagos.",
+      "selected": "Q1208152"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точный населённый пункт, не Puerto Ayora.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Puerto_Villamil\"}"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "Координата населённого пункта Puerto Villamil.",
+      "selected": "-0.9568111,-90.9672472"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/puerto-villamil/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: прибрежный населённый пункт Puerto Villamil на Isabela. Статья и QID подтверждают крупнейшее поселение данного острова."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/puerto-villamil/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1208152",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Puerto Villamil, поселение Isabela, Galápagos."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Villamil",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный населённый пункт, не Puerto Ayora."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Villamil",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Координата населённого пункта Puerto Villamil."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Villamil",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: прибрежный населённый пункт Puerto Villamil на Isabela. Статья и QID подтверждают крупнейшее поселение данного острова."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1208152",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puerto_Villamil"
+    }
+  },
+  "location": {
+    "latitude": -0.9568111,
+    "longitude": -90.9672472,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Puerto_Villamil"
+  }
+}

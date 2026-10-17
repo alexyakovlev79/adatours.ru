@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_peguche_waterfall",
+  "stableId": "destination_ecuador_peguche_waterfall",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/peguche-waterfall/",
+  "sourceFingerprint": "ae63c95506a28c34399825617b6bb2b7aa18f4defb84714369314e8805de4a50",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Водопад Пегуче",
+      "reason": "MD: водопад Peguche возле Otavalo. Карта и описание Peguche Waterfalls подтверждают водопад в Imbabura."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "reason": "Cascada de Peguche, waterway=waterfall, 18m; совпадает с местностью у Otavalo.",
+      "selected": "{\"type\":\"node\",\"id\":4937842667}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка именованного водопада, не вход лесного парка.",
+      "selected": "0.23808,-78.23841"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/peguche-waterfall/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: водопад Peguche возле Otavalo. Карта и описание Peguche Waterfalls подтверждают водопад в Imbabura."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/peguche-waterfall/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/N4937842667",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Cascada de Peguche, waterway=waterfall, 18m; совпадает с местностью у Otavalo."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/N4937842667",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точка именованного водопада, не вход лесного парка."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.summitpost.org/peguche-cascadas-de-peguche-waterfalls/758365",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: водопад Peguche возле Otavalo. Карта и описание Peguche Waterfalls подтверждают водопад в Imbabura."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4937842667
+    }
+  },
+  "location": {
+    "latitude": 0.23808,
+    "longitude": -78.23841,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/N4937842667"
+  }
+}

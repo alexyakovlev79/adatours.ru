@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_reka_saramakka",
+  "stableId": "destination_suriname_reka_saramakka",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/saramacca-river/",
+  "sourceFingerprint": "5085e2fab4c189e3b616100ace416e1f3f67cdedf418e66e563e1a62eb23e878",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Река Сарамакка",
+      "reason": "Река Saramacca в Суринаме, отдельно от одноимённого округа и народа."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка реки.",
+      "selected": "Q2167056"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Статья реки с географией истока и устья.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Saramacca_River\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "Идентификатор GeoNames реки.",
+      "selected": "3383105"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка устья, явно обозначенная в инфобоксе; не центр всей реки.",
+      "selected": "5.8319,-55.9177"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/saramacca-river/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Река Saramacca в Суринаме, отдельно от одноимённого округа и народа."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/saramacca-river/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2167056",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная карточка реки."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Saramacca_River",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Статья реки с географией истока и устья."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2167056",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Идентификатор GeoNames реки."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Saramacca_River",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точка устья, явно обозначенная в инфобоксе; не центр всей реки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2167056",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Река Saramacca в Суринаме, отдельно от одноимённого округа и народа."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2167056",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Saramacca_River"
+    },
+    "geonamesId": "3383105"
+  },
+  "location": {
+    "latitude": 5.8319,
+    "longitude": -55.9177,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Saramacca_River"
+  },
+  "reviewNote": "P625 5.85,-55.8833 и другие точки WD не усреднялись; принята точка устья из текущей статьи."
+}

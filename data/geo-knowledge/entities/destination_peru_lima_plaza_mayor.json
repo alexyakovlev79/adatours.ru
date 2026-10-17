@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_lima_plaza_mayor",
+  "stableId": "destination_peru_lima_plaza_mayor",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/plaza-mayor-lima/",
+  "sourceFingerprint": "4e5693191a2cf94c711a8738755e22bf514f47756adbe1b9086a0a585d937ed9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2536763",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Plaza_Mayor,_Lima"
+    }
+  },
+  "location": {
+    "latitude": -12.04583,
+    "longitude": -77.03056,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Plaza_Mayor,_Lima"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Plaza_Mayor_de_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/plaza-mayor-lima.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/plaza-mayor-lima/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2536763",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Plaza_Mayor,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Plaza_Mayor,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Plaza_Mayor_de_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пласа-Майор в Лиме",
+      "reason": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q2536763",
+      "reason": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Plaza_Mayor,_Lima",
+      "reason": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-12.04583,-77.03056",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 98,
+      "selected": "country_peru",
+      "reason": "Plaza Mayor / Plaza de Armas — главная площадь исторического центра Lima, Peru, окружённая собором и правительственным дворцом. Идентификатор относится площади, не всему центру UNESCO. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_hesus",
+  "stableId": "destination_paraguay_hesus",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/jesus/",
+  "sourceFingerprint": "58f28a71d265a5a3ade2cf891a9f961e79c1eedee5acd28851225b2aef01c9ed",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Хесус",
+      "reason": "Основной объект MD — руины Jesuit mission Jesús de Tavarangüé, а не современный муниципалитет Jesús."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q318338",
+      "reason": "Основной объект MD — руины Jesuit mission Jesús de Tavarangüé, а не современный муниципалитет Jesús."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Ruins_of_Jes%C3%BAs_de_Tavarangue",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-27.056,-55.753]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 99,
+      "selected": "country_paraguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/paraguay/place/jesus/",
+      "checkedAt": "2026-10-17T08:02:38.378Z",
+      "note": "Основной объект MD — руины Jesuit mission Jesús de Tavarangüé, а не современный муниципалитет Jesús."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/jesus.md",
+      "checkedAt": "2026-10-17T08:02:38.378Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q318338",
+      "checkedAt": "2026-10-17T08:02:38.378Z",
+      "note": "Основной объект MD — руины Jesuit mission Jesús de Tavarangüé, а не современный муниципалитет Jesús."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q318338",
+      "checkedAt": "2026-10-17T08:02:38.378Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q318338",
+      "checkedAt": "2026-10-17T08:02:38.378Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://whc.unesco.org/en/list/648/multiple=1&unique_number=768",
+      "checkedAt": "2026-10-17T08:02:38.378Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://whc.unesco.org/en/list/648/multiple=1&unique_number=768",
+      "checkedAt": "2026-10-17T08:02:38.378Z",
+      "note": "Основной объект MD — руины Jesuit mission Jesús de Tavarangüé, а не современный муниципалитет Jesús."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q318338",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ruins_of_Jes%C3%BAs_de_Tavarangue"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "location": {
+    "latitude": -27.056,
+    "longitude": -55.753,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q318338"
+  },
+  "reviewNote": "destinationType natural_area в исходном MD не соответствует археологической миссии; сборщик сохраняет фактическую идентичность руин. Объект — компонент UNESCO 648-002, не весь совместный объект 648."
+}

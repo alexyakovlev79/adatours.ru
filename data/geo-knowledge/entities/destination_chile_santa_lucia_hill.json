@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_santa_lucia_hill",
+  "stableId": "destination_chile_santa_lucia_hill",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/santa-lucia-hill/",
+  "sourceFingerprint": "2f9dad49c893875ad2ce3d24b654b13e069a22b1a72c8ad96a1114c04821f86a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1055993"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1055993",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Cerro Santa Lucía/Huelén, холм и парк в центре Сантьяго, Чили; не станция метро и не Castillo Hidalgo отдельно."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/santa-lucia-hill.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/santa-lucia-hill/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1055993",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Cerro Santa Lucía/Huelén, холм и парк в центре Сантьяго, Чили; не станция метро и не Castillo Hidalgo отдельно."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1055993",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1055993",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Cerro Santa Lucía/Huelén, холм и парк в центре Сантьяго, Чили; не станция метро и не Castillo Hidalgo отдельно.",
+      "selected": "Холм Санта-Лючия"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Cerro Santa Lucía/Huelén, холм и парк в центре Сантьяго, Чили; не станция метро и не Castillo Hidalgo отдельно.",
+      "selected": "Q1055993"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.44027778,-70.64416667]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.44027778,
+    "longitude": -70.64416667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1055993"
+  }
+}

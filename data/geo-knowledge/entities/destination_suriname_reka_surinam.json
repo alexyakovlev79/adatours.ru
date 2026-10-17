@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_reka_surinam",
+  "stableId": "destination_suriname_reka_surinam",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/suriname-river/",
+  "sourceFingerprint": "02a822938fc6b2b168fcf69a111f895ba234dab00c19835f383dc97c93de311d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Река Суринам",
+      "reason": "Суринам — река, проходящая через Парамарибо к Атлантике; не страна Суринам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q635545",
+      "reason": "Суринам — река, проходящая через Парамарибо к Атлантике; не страна Суринам."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "5.8180555555555555,-55.159166666666664",
+      "reason": "Выбрана одна P625 опорная точка реки 5°49′5″N 55°9′33″W. Вторая P625 помечена как устье, не усредняется."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":6285505}",
+      "reason": "P402 exact river relation from Wikidata, not country boundary."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3382997",
+      "reason": "P1566 of the exact Suriname River entity."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/suriname-river.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Суринам — река, проходящая через Парамарибо к Атлантике; не страна Суринам."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q635545",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Суринам — река, проходящая через Парамарибо к Атлантике; не страна Суринам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q635545",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Суринам — река, проходящая через Парамарибо к Атлантике; не страна Суринам."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q635545",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Выбрана одна P625 опорная точка реки 5°49′5″N 55°9′33″W. Вторая P625 помечена как устье, не усредняется."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q635545",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/suriname-river/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q635545",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "P402 exact river relation from Wikidata, not country boundary."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q635545",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "P1566 of the exact Suriname River entity."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q635545",
+    "osm": {
+      "type": "relation",
+      "id": 6285505
+    },
+    "geonamesId": "3382997"
+  },
+  "location": {
+    "latitude": 5.8180555555555555,
+    "longitude": -55.159166666666664,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q635545"
+  }
+}

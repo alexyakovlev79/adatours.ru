@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_vodopady_ferullasi",
+  "stableId": "destination_suriname_vodopady_ferullasi",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/ferullasi-falls/",
+  "sourceFingerprint": "6e6e0822dd9492ba6e2b0a98224338ee155835f5b2acfdc169984d5851e8aa4d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Водопады Ферулласи",
+      "reason": "Ferullasi/Ferulassi — пороги на Верхнем Суринаме рядом с Anaula, водные маршруты к Nieuw Aurora. MD подтверждает пороги, несмотря на заголовок «водопады»."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ferullasi-falls.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Ferullasi/Ferulassi — пороги на Верхнем Суринаме рядом с Anaula, водные маршруты к Nieuw Aurora. MD подтверждает пороги, несмотря на заголовок «водопады»."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.discoversurinametours.com/english/Tours/adventure/anaula4.html",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Ferullasi/Ferulassi — пороги на Верхнем Суринаме рядом с Anaula, водные маршруты к Nieuw Aurora. MD подтверждает пороги, несмотря на заголовок «водопады»."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.discoversurinametours.com/english/Tours/adventure/anaula4.html",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/ferullasi-falls/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Координаты Anaula Nature Resort не выданы за координаты самих порогов."
+}

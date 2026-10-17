@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_morskoj_park_fransisko_koloane",
+  "stableId": "destination_chile_morskoj_park_fransisko_koloane",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/francisco-coloane-marine-park/",
+  "sourceFingerprint": "e2d729d294fdd5ebd72477786e5aeb4e82c1de3e11a7c29991327419f42d9e12",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 85,
+      "selected": "Морской парк Франсиско Колоане",
+      "reason": "Природная морская охраняемая зона Francisco Coloane в Магеллановом проливе, объект туристического наблюдения китов; не писатель."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 85,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q5483269"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 85,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Francisco_Coloane_Marine_and_Coastal_Protected_Area\"}"
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "reason": "Опорная точка морской охраняемой зоны, не маршрут судна и не гарантия места встречи китов.",
+      "selected": "-53.8333,-71.8"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/francisco-coloane-marine-park/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Природная морская охраняемая зона Francisco Coloane в Магеллановом проливе, объект туристического наблюдения китов; не писатель."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/francisco-coloane-marine-park/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5483269",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5483269",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Francisco_Coloane_Marine_and_Coastal_Protected_Area",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Опорная точка морской охраняемой зоны, не маршрут судна и не гарантия места встречи китов."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5483269",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Природная морская охраняемая зона Francisco Coloane в Магеллановом проливе, объект туристического наблюдения китов; не писатель."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q5483269",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Francisco_Coloane_Marine_and_Coastal_Protected_Area"
+    }
+  },
+  "location": {
+    "latitude": -53.8333,
+    "longitude": -71.8,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Francisco_Coloane_Marine_and_Coastal_Protected_Area"
+  },
+  "reviewNote": "Региональный туристический источник https://patagonia-chile.com/destino/francisco-coloane-marine-park/?lang=en подтверждает туристический референт. Границы малого marine park и большей coastal protected area не утверждаются равными."
+}

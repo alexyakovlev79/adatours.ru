@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_north_plaza_island",
+  "stableId": "destination_ecuador_north_plaza_island",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/north-plaza-island/",
+  "sourceFingerprint": "57e4ac6bac982151acff9f6a93a20f4b296984ab23785a89e386399725a60f6a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q11028576",
+    "geonamesId": "10630025"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/north-plaza-island/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/es/33605728",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/es/33605728",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/es/33605728",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/es/33605728",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "North Plaza / Isla Plaza Norte",
+      "reason": "Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q11028576",
+      "reason": "Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "10630025",
+      "reason": "Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.57975,-90.16145",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Exact north island beside South Plaza east of Santa Cruz; Commons group Islas Plaza Q23874116 explicitly lists Q11028576 as member, distinguishing group from island."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.57975,
+    "longitude": -90.16145,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/es/33605728"
+  }
+}

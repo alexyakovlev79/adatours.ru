@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_shlyuzy_agua_klara",
+  "stableId": "destination_panama_shlyuzy_agua_klara",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/agua-clara-locks/",
+  "sourceFingerprint": "97512a87d51718c7ec2e4b8ecbedead396fdd52daa9a4fabab0c1f8274c72626",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Шлюзы Агуа-Клара",
+      "reason": "Инженерный комплекс Agua Clara на карибской стороне канала; это шлюзы, а не одноимённый населённый пункт."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "reason": "Точная OSM-геометрия Esclusas de Agua Clara; тип water=lock и положение у Гатуна совпадают.",
+      "selected": "{\"type\":\"way\",\"id\":424799335}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка шлюзовой геометрии; не центр посетителей.",
+      "selected": "9.27114,-79.91233"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/agua-clara-locks/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Инженерный комплекс Agua Clara на карибской стороне канала; это шлюзы, а не одноимённый населённый пункт."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/agua-clara-locks/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/W424799335",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точная OSM-геометрия Esclusas de Agua Clara; тип water=lock и положение у Гатуна совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W424799335",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Опорная точка шлюзовой геометрии; не центр посетителей."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 424799335
+    }
+  },
+  "location": {
+    "latitude": 9.27114,
+    "longitude": -79.91233,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W424799335"
+  },
+  "reviewNote": "Официальный источник оператора https://visitcanaldepanama.com/en/points-of-interest/agua-clara-visitor-center-copy/ подтверждает объект; центр посетителей не подменяет sameAs шлюзов."
+}

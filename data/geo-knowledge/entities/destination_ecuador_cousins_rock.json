@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_cousins_rock",
+  "stableId": "destination_ecuador_cousins_rock",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cousins-rock/",
+  "sourceFingerprint": "c0c9a4302b4ea2d83625a40068929353c160b9bb4fda21372e0eda2f6a1ace32",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4251840797
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cousins-rock/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Named attraction Roca Cousin northwest of Bartolomé near northeast Santiago, matching dive-site MD. Antarctic Cousins Rock rejected."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/N4251840797",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Named attraction Roca Cousin northwest of Bartolomé near northeast Santiago, matching dive-site MD. Antarctic Cousins Rock rejected."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/N4251840797",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named attraction Roca Cousin northwest of Bartolomé near northeast Santiago, matching dive-site MD. Antarctic Cousins Rock rejected."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/N4251840797",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Map lists Roca Cousin tourism attraction node4251840797 in exact Santiago/Bartolomé area."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Cousins Rock / Roca Cousin, Galápagos",
+      "reason": "Named attraction Roca Cousin northwest of Bartolomé near northeast Santiago, matching dive-site MD. Antarctic Cousins Rock rejected."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.23546,-90.57466",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Named attraction Roca Cousin northwest of Bartolomé near northeast Santiago, matching dive-site MD. Antarctic Cousins Rock rejected."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Named attraction Roca Cousin northwest of Bartolomé near northeast Santiago, matching dive-site MD. Antarctic Cousins Rock rejected."
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "selected": "node/4251840797",
+      "reason": "Named mapped attraction matches dive-site rock and geographic context."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.23546,
+    "longitude": -90.57466,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/N4251840797"
+  }
+}

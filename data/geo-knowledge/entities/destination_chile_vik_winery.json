@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_vik_winery",
+  "stableId": "destination_chile_vik_winery",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/vik-winery/",
+  "sourceFingerprint": "68960a674a743545718bffef26d14c92652bd07c42bf5c693878327d01bdd31e",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "officialUrl": "https://www.vikwine.com/en/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/vik-winery/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Official winery website identifies VIK vineyard and winemaking in Millahue, matching MD. Hotel is a separate component."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.vikwine.com/en/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Official winery website identifies VIK vineyard and winemaking in Millahue, matching MD. Hotel is a separate component."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.vikwine.com/en/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Official winery website identifies VIK vineyard and winemaking in Millahue, matching MD. Hotel is a separate component."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "VIK winery, Millahue",
+      "reason": "Official winery website identifies VIK vineyard and winemaking in Millahue, matching MD. Hotel is a separate component."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://www.vikwine.com/en/",
+      "reason": "Official winery website identifies VIK vineyard and winemaking in Millahue, matching MD. Hotel is a separate component."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Official winery website identifies VIK vineyard and winemaking in Millahue, matching MD. Hotel is a separate component."
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Targeted search confirmed named destination but no unique representative point; no adjacent-entity coordinate borrowed."
+    }
+  ],
+  "reviewNote": ""
+}

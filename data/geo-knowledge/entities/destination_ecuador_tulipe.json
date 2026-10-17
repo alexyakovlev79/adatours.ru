@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_tulipe",
+  "stableId": "destination_ecuador_tulipe",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/tulipe/",
+  "sourceFingerprint": "84bcaa586d1268e9cf23647a30b53afef6a3956afe6bd78f41b4d7d0656730c6",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q116753992"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Тулипе",
+      "reason": "Тулипе — археологический комплекс культуры юмбо у Нанегалито северо-западнее Кито. Commons напрямую связывает археологический объект с Q116753992; городской музейный портал и Visit Quito подтверждают тип и географию. Не весь современный населённый пункт Тулипе."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q116753992",
+      "reason": "Тулипе — археологический комплекс культуры юмбо у Нанегалито северо-западнее Кито. Commons напрямую связывает археологический объект с Q116753992; городской музейный портал и Visit Quito подтверждают тип и географию. Не весь современный населённый пункт Тулипе."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "0.08629, -78.73633",
+      "reason": "Опорная точка раскопанных бассейнов из точной OSM-производной карточки piscinas de Tulipe; основная часть археологического комплекса, не центр современного посёлка."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/tulipe.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Тулипе — археологический комплекс культуры юмбо у Нанегалито северо-западнее Кито. Commons напрямую связывает археологический объект с Q116753992; городской музейный портал и Visit Quito подтверждают тип и географию. Не весь современный населённый пункт Тулипе."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tulipe/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Tulipe,_Ecuador",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Тулипе — археологический комплекс культуры юмбо у Нанегалито северо-западнее Кито. Commons напрямую связывает археологический объект с Q116753992; городской музейный портал и Visit Quito подтверждают тип и географию. Не весь современный населённый пункт Тулипе."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W1382171869",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/tulipe.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": 0.08629,
+    "longitude": -78.73633,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W1382171869"
+  }
+}

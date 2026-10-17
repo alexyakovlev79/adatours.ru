@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_exploradores_valley",
+  "stableId": "destination_chile_exploradores_valley",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/exploradores-valley/",
+  "sourceFingerprint": "33e37d1221db7cbf54b606eb1a0d32bf3438f9d15b793d25845403f98b53d3d7",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/exploradores-valley/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Local park operator places itself within Valle Exploradores between Puerto Río Tranquilo and Bahía Exploradores, matching MD route."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.parquexploradores.cl/contacto-parque-exploradores/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Local park operator places itself within Valle Exploradores between Puerto Río Tranquilo and Bahía Exploradores, matching MD route."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Valle Exploradores, Aysén",
+      "reason": "Local park operator places itself within Valle Exploradores between Puerto Río Tranquilo and Bahía Exploradores, matching MD route."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Local park operator places itself within Valle Exploradores between Puerto Río Tranquilo and Bahía Exploradores, matching MD route."
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Targeted search confirmed named destination but no unique representative point; no adjacent-entity coordinate borrowed."
+    }
+  ],
+  "reviewNote": "Valley not equated to glacier, bay or private park; no exact unique representative point established."
+}

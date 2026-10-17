@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_yanacocha_reserve",
+  "stableId": "destination_ecuador_yanacocha_reserve",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/yanacocha-reserve/",
+  "sourceFingerprint": "dbb91bd3c444e36b905ff8c3d45872b3ffff0d3d234a07444985c4268dd9435c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Заповедник Янакоча",
+      "reason": "MD: Yanacocha в горных окрестностях Quito, влажный лес и птицы. Муниципальный Quito Informa и Jocotoco подтверждают резерв; исключены перуанская шахта и Amazonian rescue centre."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "reason": "Yanacocha Biological Reserve, Quito Metro, Pichincha; оператор Jocotoco.",
+      "selected": "Q130738448"
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "reason": "Опорная точка карточки Yanacocha Biological Reserve с тем же QID и оператором Jocotoco.",
+      "selected": "-0.11166666666666668,-78.58477222222221"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/yanacocha-reserve/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: Yanacocha в горных окрестностях Quito, влажный лес и птицы. Муниципальный Quito Informa и Jocotoco подтверждают резерв; исключены перуанская шахта и Amazonian rescue centre."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/yanacocha-reserve/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Yanacocha_Reserve_(Ecuador)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Yanacocha Biological Reserve, Quito Metro, Pichincha; оператор Jocotoco."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Yanacocha_Reserve_(Ecuador)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Опорная точка карточки Yanacocha Biological Reserve с тем же QID и оператором Jocotoco."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://quitoinforma.quito.gob.ec/2019/07/02/un-paraiso-natural-a-pocos-minutos-de-quito-reserva-de-yanacocha/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: Yanacocha в горных окрестностях Quito, влажный лес и птицы. Муниципальный Quito Informa и Jocotoco подтверждают резерв; исключены перуанская шахта и Amazonian rescue centre."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q130738448"
+  },
+  "location": {
+    "latitude": -0.11166666666666668,
+    "longitude": -78.58477222222221,
+    "pointRole": "representative",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Yanacocha_Reserve_(Ecuador)"
+  }
+}

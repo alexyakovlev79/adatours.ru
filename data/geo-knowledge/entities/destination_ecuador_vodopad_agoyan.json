@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vodopad_agoyan",
+  "stableId": "destination_ecuador_vodopad_agoyan",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/agoyan-waterfall/",
+  "sourceFingerprint": "060300fb74b6f2c47b45a85e2fded87f2a7b915d66d9c36ae999016ad330db6b",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопад Агоян",
+      "reason": "Agoyán — водопад на Pastaza к востоку от Baños, отличён от гидроэлектростанции и деревни."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q4693664",
+      "reason": "Agoyán — водопад на Pastaza к востоку от Baños, отличён от гидроэлектростанции и деревни."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Agoy%C3%A1n",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-1.4018104,-78.3687218",
+      "reason": "Прямое чтение точного водопада в OSM, не дороги или канатной станции."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/9303694778",
+      "reason": "Совпадают название, тип и положение в ущелье Pastaza/Río Verde."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/agoyan-waterfall/",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Agoyán — водопад на Pastaza к востоку от Baños, отличён от гидроэлектростанции и деревни."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/agoyan-waterfall.md",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4693664",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Agoyán — водопад на Pastaza к востоку от Baños, отличён от гидроэлектростанции и деревни."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4693664",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4693664",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/9303694778",
+      "checkedAt": "2026-10-17T08:23:14.470Z",
+      "note": "Прямой OSM API: именованный waterway=waterfall; одна WGS84-точка каскада. Для Agoyán исправляет смещённую P625, не усредняет."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/9303694778",
+      "checkedAt": "2026-10-17T08:23:14.470Z",
+      "note": "Точная node содержит совпадающее имя, тип waterfall и Wikidata QID."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q4693664",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Agoy%C3%A1n"
+    },
+    "osm": {
+      "type": "node",
+      "id": 9303694778
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "reviewNote": "P625 Wikidata −1.4068,−78.3093 находится восточнее действительного каскада. Выбрана точная OSM-точка водопада, без усреднения; GeoNames с конфликтующей локализацией опущен.",
+  "location": {
+    "latitude": -1.4018104,
+    "longitude": -78.3687218,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/9303694778"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_millahue_valley",
+  "stableId": "destination_chile_millahue_valley",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/millahue-valley/",
+  "sourceFingerprint": "8b0e5f25919cb69092ca846c8b059540fa0cb8cd9df3d7eda81121bcf56f79a4",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Долина Мильяуэ",
+      "reason": "Мильяуэ — винная долина Millahue в Cachapoal у San Vicente de Tagua Tagua, где находится VIK. Подтверждена собственным описанием хозяйства."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/millahue-valley.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Мильяуэ — винная долина Millahue в Cachapoal у San Vicente de Tagua Tagua, где находится VIK. Подтверждена собственным описанием хозяйства."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.vikwine.com/en/artisans-and-producers-of-the-millahue-valley-visit-vik/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Мильяуэ — винная долина Millahue в Cachapoal у San Vicente de Tagua Tagua, где находится VIK. Подтверждена собственным описанием хозяйства."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.vikwine.com/en/artisans-and-producers-of-the-millahue-valley-visit-vik/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/millahue-valley/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "reviewNote": "QID и координаты отдельной Viña VIK/отеля не присвоены всей долине; точная идентичность долины в Wikidata не установлена."
+}

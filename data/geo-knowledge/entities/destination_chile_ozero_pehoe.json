@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ozero_pehoe",
+  "stableId": "destination_chile_ozero_pehoe",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/lake-pehoe/",
+  "sourceFingerprint": "4b3ca8b78421150226c51b669e11e18330456a894fdf40f051bb607ad3823221",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q6477342"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6477342",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Озеро Pehoé в Torres del Paine, Чили, а не гостиница или кемпинг Pehoé."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/lake-pehoe.md",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/lake-pehoe/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6477342",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Озеро Pehoé в Torres del Paine, Чили, а не гостиница или кемпинг Pehoé."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6477342",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6477342",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Озеро Pehoé в Torres del Paine, Чили, а не гостиница или кемпинг Pehoé.",
+      "selected": "Озеро Пехоэ"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Озеро Pehoé в Torres del Paine, Чили, а не гостиница или кемпинг Pehoé.",
+      "selected": "Q6477342"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-51.1,-73.06666667]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -51.1,
+    "longitude": -73.06666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q6477342"
+  }
+}

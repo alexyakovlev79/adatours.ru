@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_derevnya_orongo",
+  "stableId": "destination_chile_derevnya_orongo",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/orongo-village/",
+  "sourceFingerprint": "31e026f0660296489895e568db3350b063a8c1dd9921993d67bfc5cb50465502",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Деревня Оронго",
+      "reason": "Оронго — каменная церемониальная деревня у Рано-Кау, связанная с культом человека-птицы; не сам вулкан и не статуя в Британском музее."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1551834",
+      "reason": "Оронго — каменная церемониальная деревня у Рано-Кау, связанная с культом человека-птицы; не сам вулкан и не статуя в Британском музее."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-27.189444444444444,-109.44250000000001",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":1243637849}",
+      "reason": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/orongo-village.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Оронго — каменная церемониальная деревня у Рано-Кау, связанная с культом человека-птицы; не сам вулкан и не статуя в Британском музее."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1551834",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Оронго — каменная церемониальная деревня у Рано-Кау, связанная с культом человека-птицы; не сам вулкан и не статуя в Британском музее."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1551834",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Оронго — каменная церемониальная деревня у Рано-Кау, связанная с культом человека-птицы; не сам вулкан и не статуя в Британском музее."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1551834",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1551834",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1551834",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/orongo-village/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1551834",
+    "osm": {
+      "type": "node",
+      "id": 1243637849
+    }
+  },
+  "location": {
+    "latitude": -27.189444444444444,
+    "longitude": -109.44250000000001,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1551834"
+  }
+}

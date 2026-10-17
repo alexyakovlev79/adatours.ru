@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_rio_serrano",
+  "stableId": "destination_chile_rio_serrano",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/rio-serrano/",
+  "sourceFingerprint": "421eacd32ef742548b7b74ac28f47ab2a2a9ddb6030971e121a78e28e1175026",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q5638602"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5638602",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Главный референт страницы «река и прибрежный район» — река Serrano от озера Del Toro к Última Esperanza у Torres del Paine. Исключены отель и южный одноименный водоток."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/rio-serrano.md",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/rio-serrano/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5638602",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Главный референт страницы «река и прибрежный район» — река Serrano от озера Del Toro к Última Esperanza у Torres del Paine. Исключены отель и южный одноименный водоток."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5638602",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Опорная точка реки P625; не весь прибрежный район и не отель Río Serrano."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5638602",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "reason": "Главный референт страницы «река и прибрежный район» — река Serrano от озера Del Toro к Última Esperanza у Torres del Paine. Исключены отель и южный одноименный водоток.",
+      "selected": "Рио-Серрано"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "reason": "Главный референт страницы «река и прибрежный район» — река Serrano от озера Del Toro к Última Esperanza у Torres del Paine. Исключены отель и южный одноименный водоток.",
+      "selected": "Q5638602"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка реки P625; не весь прибрежный район и не отель Río Serrano.",
+      "selected": "[-51.41111111,-73.08305556]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -51.41111111,
+    "longitude": -73.08305556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5638602"
+  }
+}

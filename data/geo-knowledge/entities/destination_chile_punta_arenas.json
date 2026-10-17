@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_punta_arenas",
+  "stableId": "destination_chile_punta_arenas",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/punta-arenas/",
+  "sourceFingerprint": "b6d6e5dc04b91b2f4be64d0e1866317356ac615fb0fbda3698b333e5239a7633",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Пунта Аренас",
+      "reason": "Город Пунта-Аренас у Магелланова пролива, не административная коммуна Q20530729 и не одноимённые города других стран."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка выбранного основного географического референта.",
+      "selected": "Q51599"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Языковая статья того же объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Punta_Arenas\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 городского поселения Punta Arenas.",
+      "selected": "-53.1625,-70.90805555555556"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/punta-arenas/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Город Пунта-Аренас у Магелланова пролива, не административная коммуна Q20530729 и не одноимённые города других стран."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/punta-arenas/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51599",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точная карточка выбранного основного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51599",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Языковая статья того же объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51599",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "P625 городского поселения Punta Arenas."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51599",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Город Пунта-Аренас у Магелланова пролива, не административная коммуна Q20530729 и не одноимённые города других стран."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q51599",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Punta_Arenas"
+    }
+  },
+  "location": {
+    "latitude": -53.1625,
+    "longitude": -70.90805555555556,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q51599"
+  },
+  "reviewNote": "Широкие/сомнительные окрестные рекомендации из MD не превращены в геосвязи города."
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_hanga_roa",
+  "stableId": "destination_chile_hanga_roa",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/hanga-roa/",
+  "sourceFingerprint": "d50143418827c97045ff1803e15d867c5d01b96b0409c564c96a997ee17cebe1",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Ханга-Роа",
+      "reason": "Поселение Hanga Roa на Рапа-Нуи; не одноимённые отель, стадион или больница."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q233369"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Hanga_Roa\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID поселения.",
+      "selected": "4030754"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 поселения Hanga Roa.",
+      "selected": "-27.14924388888889,-109.43232305555556"
+    },
+    {
+      "field": "relationships.destination_chile_ostrov_pashi",
+      "probability": 95,
+      "reason": "WD прямо фиксирует нахождение города на острове Пасхи.",
+      "selected": "destination_chile_ostrov_pashi"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/hanga-roa/",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Поселение Hanga Roa на Рапа-Нуи; не одноимённые отель, стадион или больница."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/hanga-roa/",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q233369",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q233369",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q233369",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "GeoNames ID поселения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q233369",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "P625 поселения Hanga Roa."
+    },
+    {
+      "field": "relationships.destination_chile_ostrov_pashi",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q233369",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "WD прямо фиксирует нахождение города на острове Пасхи."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q233369",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Поселение Hanga Roa на Рапа-Нуи; не одноимённые отель, стадион или больница."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_ostrov_pashi"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q233369",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Hanga_Roa"
+    },
+    "geonamesId": "4030754"
+  },
+  "location": {
+    "latitude": -27.14924388888889,
+    "longitude": -109.43232305555556,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q233369"
+  }
+}

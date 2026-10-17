@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_gardner_bay",
+  "stableId": "destination_ecuador_gardner_bay",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/gardner-bay/",
+  "sourceFingerprint": "db046d27fb354f2a56b67987341b572262f10b61ddcd3cc9cbda9e2e30a98a9c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3657835",
+    "osm": {
+      "type": "node",
+      "id": 249410098
+    }
+  },
+  "location": {
+    "latitude": -1.35161,
+    "longitude": -89.6551,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/19661348"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.galapagos.org/about_galapagos/the-islands/espanola-island/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/gardner-bay.md",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/gardner-bay/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19661348",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/19661348",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19661348",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.galapagos.org/about_galapagos/the-islands/espanola-island/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Бухта Гарднер",
+      "reason": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3657835",
+      "reason": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":249410098}",
+      "reason": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-1.35161,-89.6551",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Gardner Bay — бухта у острова Española в Галапагосах Эквадора, известная пляжем и морскими львами; не островок Gardner и не одноимённая бухта другой страны. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

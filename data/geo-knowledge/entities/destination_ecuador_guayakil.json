@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_guayakil",
+  "stableId": "destination_ecuador_guayakil",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/guayaquil/",
+  "sourceFingerprint": "d6b7ef608acd353dff9a9b3709b63edc917082b7d78e7cb43b26a3222f633e52",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Гуаякиль",
+      "reason": "Гуаякиль — Santiago de Guayaquil, город на реке Гуаяс в Эквадоре. Основной референт — город, а не соседние национальные парки и пляжи из обзорного текста."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q43509",
+      "reason": "Гуаякиль — Santiago de Guayaquil, город на реке Гуаяс в Эквадоре. Основной референт — город, а не соседние национальные парки и пляжи из обзорного текста."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-2.19,-79.8875",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3657509",
+      "reason": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Guayaquil",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/guayakil.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Гуаякиль — Santiago de Guayaquil, город на реке Гуаяс в Эквадоре. Основной референт — город, а не соседние национальные парки и пляжи из обзорного текста."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43509",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Гуаякиль — Santiago de Guayaquil, город на реке Гуаяс в Эквадоре. Основной референт — город, а не соседние национальные парки и пляжи из обзорного текста."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43509",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Гуаякиль — Santiago de Guayaquil, город на реке Гуаяс в Эквадоре. Основной референт — город, а не соседние национальные парки и пляжи из обзорного текста."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43509",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43509",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43509",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q43509",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/guayaquil/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q43509",
+    "geonamesId": "3657509",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guayaquil"
+    }
+  },
+  "location": {
+    "latitude": -2.19,
+    "longitude": -79.8875,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q43509"
+  },
+  "reviewNote": "Исторические P17 в Wikidata не использованы как современные страны. Актуальная география — Ecuador."
+}

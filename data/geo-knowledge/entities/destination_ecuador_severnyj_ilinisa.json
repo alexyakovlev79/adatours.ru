@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_severnyj_ilinisa",
+  "stableId": "destination_ecuador_severnyj_ilinisa",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/iliniza-norte/",
+  "sourceFingerprint": "a7678b5bd5077173e319138c3a5eefadd842969cc814b15e86b244ae75f681ea",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 344730641
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Северный Илиниса",
+      "reason": "Северный Илиниса — отдельная северная вершина Illiniza Norte (5126 м). OSM node прямо подписан Norte. Q734280 из тега OSM относится к массиву с двумя вершинами и не добавляется как sameAs узкой страницы."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/344730641",
+      "reason": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.6492302, -78.7203596",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 60,
+      "selected": "Q734280 (не включён)",
+      "reason": "Карточка Illinizas охватывает двувершинный массив, а MD явно о северной вершине. Точная OSM-идентичность Norte подтверждена; QID более широкой сущности опущен."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/iliniza-norte.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Северный Илиниса — отдельная северная вершина Illiniza Norte (5126 м). OSM node прямо подписан Norte. Q734280 из тега OSM относится к массиву с двумя вершинами и не добавляется как sameAs узкой страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/iliniza-norte/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/344730641",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/344730641",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/iliniza-norte.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.6492302,
+    "longitude": -78.7203596,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/344730641"
+  }
+}

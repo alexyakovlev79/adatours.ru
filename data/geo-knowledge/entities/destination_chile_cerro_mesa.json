@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_cerro_mesa",
+  "stableId": "destination_chile_cerro_mesa",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/cerro-mesa/",
+  "sourceFingerprint": "cf3115c771d5787f742b07eb1c93fe957dd8b984da60d7da3750eacb6b8fb397",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/cerro-mesa/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Local hotel operator lists Cerro Mesa between Cordillera Prat, Lago Porteño and Lago del Toro on same road itinerary."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://hotelovejeropatagonico.com/site/tag/cuernos/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Local hotel operator lists Cerro Mesa between Cordillera Prat, Lago Porteño and Lago del Toro on same road itinerary."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 88,
+      "selected": "Cerro Mesa on Puerto Natales–Torres del Paine route",
+      "reason": "Local hotel operator lists Cerro Mesa between Cordillera Prat, Lago Porteño and Lago del Toro on same road itinerary."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Local hotel operator lists Cerro Mesa between Cordillera Prat, Lago Porteño and Lago del Toro on same road itinerary."
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Targeted search confirmed named destination but no unique representative point; no adjacent-entity coordinate borrowed."
+    }
+  ],
+  "reviewNote": "Exact itinerary confirms feature; namesakes in Argentina, Arica and Aysén rejected. External ID/coordinate not verified."
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_paseo_gervasoni",
+  "stableId": "destination_chile_paseo_gervasoni",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/paseo-gervasoni/",
+  "sourceFingerprint": "2e7a7315d14e2d14bf78a2f8485fff581d6da6a838707a952c788ceb55e83082",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 3418287777
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_cerro_concepcion"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/N3418287777",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Смотровая прогулочная площадка Paseo Gervasoni на Cerro Concepción в Valparaíso, рядом с Casa Lukas и Ascensor Concepción; не отель Gervasoni."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/paseo-gervasoni.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/paseo-gervasoni/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/N3418287777",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://mapcarta.com/N3418287777",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/N3418287777",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный объект Paseo Gervasoni, OSM node 3418287777, tourism=viewpoint; опорная смотровая точка прогулочной дорожки."
+    },
+    {
+      "field": "relationships.destination_chile_cerro_concepcion",
+      "sourceUrl": "https://mapcarta.com/N3418287777",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Прогулочная дорожка находится на Cerro Concepción в Valparaíso."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Смотровая прогулочная площадка Paseo Gervasoni на Cerro Concepción в Valparaíso, рядом с Casa Lukas и Ascensor Concepción; не отель Gervasoni.",
+      "selected": "Пасео-Гервасони"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.04119,-71.62656]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "selected": "node/3418287777",
+      "reason": "Совпадают имя дорожки, холм, город и положение у Casa Lukas."
+    },
+    {
+      "field": "relationships.destination_chile_cerro_concepcion",
+      "probability": 96,
+      "selected": "destination_chile_cerro_concepcion",
+      "reason": "Внешний источник и исходный MD согласуются о холме Консепсьон."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.04119,
+    "longitude": -71.62656,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/N3418287777"
+  }
+}

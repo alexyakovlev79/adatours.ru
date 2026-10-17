@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_niv_avrora",
+  "stableId": "destination_suriname_niv_avrora",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/nieuw-aurora/",
+  "sourceFingerprint": "7bb9fac49c6ff6f1ba50eff65648bbd191ecfe7816dbff99cfbd1456bb0ef227",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Ньив-Аврора",
+      "reason": "Nieuw Aurora / Tutu Buka на Верхнем Суринаме, отдельно от соседней старой Aurora и аэропорта Laduani."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка Nieuw Aurora, village Sipaliwini.",
+      "selected": "Q77850298"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Нидерландская статья отдельно различает соседние деревни.",
+      "selected": "{\"nl\":\"https://nl.wikipedia.org/wiki/Nieuw_Aurora\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 именно Nieuw Aurora.",
+      "selected": "4.373888888888889,-55.400555555555556"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/nieuw-aurora/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Nieuw Aurora / Tutu Buka на Верхнем Суринаме, отдельно от соседней старой Aurora и аэропорта Laduani."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/nieuw-aurora/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q77850298",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная карточка Nieuw Aurora, village Sipaliwini."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://nl.wikipedia.org/wiki/Nieuw_Aurora",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Нидерландская статья отдельно различает соседние деревни."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q77850298",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "P625 именно Nieuw Aurora."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q77850298",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Nieuw Aurora / Tutu Buka на Верхнем Суринаме, отдельно от соседней старой Aurora и аэропорта Laduani."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q77850298",
+    "wikipedia": {
+      "nl": "https://nl.wikipedia.org/wiki/Nieuw_Aurora"
+    }
+  },
+  "location": {
+    "latitude": 4.373888888888889,
+    "longitude": -55.400555555555556,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q77850298"
+  }
+}

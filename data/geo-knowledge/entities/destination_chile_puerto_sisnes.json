@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_puerto_sisnes",
+  "stableId": "destination_chile_puerto_sisnes",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/puerto-cisnes/",
+  "sourceFingerprint": "1e929bbf9568bc7a0db4d7b89970d5899bc6d739da0cb176de8f40c6864f70d8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q940455",
+    "geonamesId": "3874982"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-cisnes/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q940455",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q940455",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q940455",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q940455",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Puerto Cisnes",
+      "reason": "Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q940455",
+      "reason": "Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3874982",
+      "reason": "Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-44.7275,-72.68050000000001",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Town and seaport Puerto Cisnes in Cisnes commune, Aysén, at Puyuhuapi Channel; not entire commune Q3793."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -44.7275,
+    "longitude": -72.68050000000001,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q940455"
+  }
+}

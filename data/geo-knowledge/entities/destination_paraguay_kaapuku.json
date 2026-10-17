@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_kaapuku",
+  "stableId": "destination_paraguay_kaapuku",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/caapucu/",
+  "sourceFingerprint": "5d32db3969f0aef963a8c878d1c8d7c3c2ce669c0b40d8d758b7c2054a46969c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2410335",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Caapuc%C3%BA"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2410335",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Город Каапуку департамента Парагуари, Парагвай, основной референт страницы; музей является частной достопримечательностью."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/caapucu.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/caapucu/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2410335",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Город Каапуку департамента Парагуари, Парагвай, основной референт страницы; музей является частной достопримечательностью."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Caapuc%C3%BA",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Город Каапуку департамента Парагуари, Парагвай, основной референт страницы; музей является частной достопримечательностью."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Caapuc%C3%BA",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Выбрана точка города из enwiki (также один из P625); второй P625 (-26.2167,-57.2) не усреднялся."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2410335",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Город Каапуку департамента Парагуари, Парагвай, основной референт страницы; музей является частной достопримечательностью.",
+      "selected": "Каапуку"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Город Каапуку департамента Парагуари, Парагвай, основной референт страницы; музей является частной достопримечательностью.",
+      "selected": "Q2410335"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Город Каапуку департамента Парагуари, Парагвай, основной референт страницы; музей является частной достопримечательностью.",
+      "selected": "https://en.wikipedia.org/wiki/Caapuc%C3%BA"
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "reason": "Выбрана точка города из enwiki (также один из P625); второй P625 (-26.2167,-57.2) не усреднялся.",
+      "selected": "[-26.24167,-57.175]"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -26.24167,
+    "longitude": -57.175,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Caapuc%C3%BA"
+  }
+}

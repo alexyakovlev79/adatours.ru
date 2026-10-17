@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ostrov_plasa_sur",
+  "stableId": "destination_ecuador_ostrov_plasa_sur",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/south-plaza-island/",
+  "sourceFingerprint": "d3fa71e32180b4e0f828ce208039b05df46e8f8e88312727438d01109de642b8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1209933",
+    "geonamesId": "10630026"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/south-plaza-island/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/33605730",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/33605730",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/33605730",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/33605730",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "South Plaza Island",
+      "reason": "South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1209933",
+      "reason": "South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "10630026",
+      "reason": "South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.58326,-90.16386",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "South Plaza/Isla Plaza Sur east of Santa Cruz, matching iguanas and coastal cliff route; not pair of Islas Plaza or Plaza Norte."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.58326,
+    "longitude": -90.16386,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/33605730"
+  }
+}

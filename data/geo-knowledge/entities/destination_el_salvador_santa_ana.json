@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_santa_ana",
+  "stableId": "destination_el_salvador_santa_ana",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/santa-ana/",
+  "sourceFingerprint": "785ce70e842d91edd8664b2eafb6ce94b00a51532704ee3a47c0e438d04b7db8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q739664",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santa_Ana,_El_Salvador"
+    }
+  },
+  "location": {
+    "latitude": 13.995,
+    "longitude": -89.55611,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Santa_Ana,_El_Salvador"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Ana,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/santa-ana.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/santa-ana/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q739664",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Ana,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Ana,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Ana,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Санта Ана",
+      "reason": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q739664",
+      "reason": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Santa_Ana,_El_Salvador",
+      "reason": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "13.995,-89.55611",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 98,
+      "selected": "country_el_salvador",
+      "reason": "Santa Ana — город западного Сальвадора, центр кофейного региона; не департамент и не вулкан Santa Ana, поездки к которым вторичны в MD. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

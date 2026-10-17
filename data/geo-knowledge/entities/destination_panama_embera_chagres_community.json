@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_embera_chagres_community",
+  "stableId": "destination_panama_embera_chagres_community",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/embera-chagres-community/",
+  "sourceFingerprint": "918d3cac9b85e3e1854fd331626330c457dfd2f787c11b34747a67c46a03d51c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Община эмбера на реке Чагрес",
+      "reason": "Редакционная остановка: посещение одной из общин эмбера на Чагресе; MD прямо не фиксирует деревню. Национальный турпортал подтверждает несколько самостоятельных общин."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "relationships.destination_panama_chagres_river",
+      "probability": 95,
+      "reason": "Несколько общин расположены на берегах Чагрес; сохранена общая связь с рекой.",
+      "selected": "destination_panama_chagres_river"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 45,
+      "reason": "Emberá Drua, Tusipono, Parara Purú, Purú Biakirú и Ella Purú — разные поселения, ни одно не выбрано источником тура."
+    },
+    {
+      "field": "location",
+      "probability": 40,
+      "reason": "Нет названия принимающей общины, поэтому её координаты не назначены."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/embera-chagres-community/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Редакционная остановка: посещение одной из общин эмбера на Чагресе; MD прямо не фиксирует деревню. Национальный турпортал подтверждает несколько самостоятельных общин."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/embera-chagres-community/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "relationships.destination_panama_chagres_river",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/panama-city/things-to-do/culture-and-arts/indigenous-communities/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Несколько общин расположены на берегах Чагрес; сохранена общая связь с рекой."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_panama_chagres_river"
+    }
+  ],
+  "reviewNote": "READY для составной остановки, без sameAs этноса, региона Emberá-Wounaan или случайной деревни."
+}

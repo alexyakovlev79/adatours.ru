@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_plyazhi_bachas",
+  "stableId": "destination_ecuador_plyazhi_bachas",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/bachas-beaches/",
+  "sourceFingerprint": "6220a9157e9a94a084a3d171e35f4839bbb43bf8c192024ef46c08cc57a172a3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "12515185"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_ecuador_ostrov_santa_krus_galapagosy"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/bachas-beaches/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/37376048",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/search.html?country=EC&q=Gal%C3%A1pagos&startRow=400",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/37376048",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "sourceUrl": "https://adatours.ru/ecuador/place/bachas-beaches/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Current MD explicitly locates this feature on Santa Cruz Island in Galápagos."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Las Bachas beaches, north Santa Cruz",
+      "reason": "Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 90,
+      "selected": "12515185",
+      "reason": "Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-0.49435311,-90.34566227",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Playa de Las Bachas on north coast Santa Cruz, with lagoons and turtle nesting; government monitoring confirms Las Bachas visitor site. Bachas Chicas locality and Black Turtle Cove are separate."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "probability": 99,
+      "selected": "destination_ecuador_ostrov_santa_krus_galapagosy",
+      "reason": "Explicit named-island containment in current page MD and geographic context."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.49435311,
+    "longitude": -90.34566227,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/search.html?country=EC&q=Gal%C3%A1pagos&startRow=400"
+  }
+}

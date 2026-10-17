@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_puerto_varas",
+  "stableId": "destination_chile_puerto_varas",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/puerto-varas/",
+  "sourceFingerprint": "8528b97b09f936b65fe1fd40938fafa7d81d1d0c4c438770fadb78ab23436048",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пуэрто-Варас",
+      "reason": "Город Puerto Varas на берегу Llanquihue; не Puerto Montt и не одноимённая административная территория."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q51596"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Puerto_Varas\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 городского поселения.",
+      "selected": "-41.31780555555556,-72.98269444444445"
+    },
+    {
+      "field": "relationships.destination_chile_llanquihue_lake",
+      "probability": 95,
+      "reason": "Город расположен на берегу этого озера.",
+      "selected": "destination_chile_llanquihue_lake"
+    },
+    {
+      "field": "relationships.destination_chile_vicente_perez_rosales_national_park",
+      "probability": 95,
+      "reason": "Парк назван одним из направлений поездок из города.",
+      "selected": "destination_chile_vicente_perez_rosales_national_park"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-varas/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Город Puerto Varas на берегу Llanquihue; не Puerto Montt и не одноимённая административная территория."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-varas/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51596",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Varas",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51596",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "P625 городского поселения."
+    },
+    {
+      "field": "relationships.destination_chile_llanquihue_lake",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Puerto_Varas",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Город расположен на берегу этого озера."
+    },
+    {
+      "field": "relationships.destination_chile_vicente_perez_rosales_national_park",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-varas/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Парк назван одним из направлений поездок из города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51596",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Город Puerto Varas на берегу Llanquihue; не Puerto Montt и не одноимённая административная территория."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_llanquihue_lake"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_vicente_perez_rosales_national_park"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q51596",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puerto_Varas"
+    }
+  },
+  "location": {
+    "latitude": -41.31780555555556,
+    "longitude": -72.98269444444445,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q51596"
+  }
+}

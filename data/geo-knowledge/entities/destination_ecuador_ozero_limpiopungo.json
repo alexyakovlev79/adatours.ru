@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ozero_limpiopungo",
+  "stableId": "destination_ecuador_ozero_limpiopungo",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/limpiopungo-lake/",
+  "sourceFingerprint": "8b4163b7a136a6ac6be9603687b8ee6fe9a369589b6b1cd83ac001aae42f58a8",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Лимпиопунго",
+      "reason": "MD: высокогорное озеро Limpiopungo в районе Котопакси. Карта подтверждает именованный водоём у Páramo Churupinto."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.osm",
+      "probability": 94,
+      "reason": "Именованный контур Laguna de Limpiopungo, natural=water, water=lake.",
+      "selected": "{\"type\":\"way\",\"id\":169305819}"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Точка карты водоёма; поддерживается географическим справочником NGA с округлённой точкой -0.616667,-78.466667.",
+      "selected": "-0.615,-78.4747"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 40,
+      "reason": "Точная самостоятельная карточка QID не установлена; одноимённый водоём подтверждён OSM."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/limpiopungo-lake/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: высокогорное озеро Limpiopungo в районе Котопакси. Карта подтверждает именованный водоём у Páramo Churupinto."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/limpiopungo-lake/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/W169305819",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Именованный контур Laguna de Limpiopungo, natural=water, water=lake."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W169305819",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точка карты водоёма; поддерживается географическим справочником NGA с округлённой точкой -0.616667,-78.466667."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/W169305819",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: высокогорное озеро Limpiopungo в районе Котопакси. Карта подтверждает именованный водоём у Páramo Churupinto."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 169305819
+    }
+  },
+  "location": {
+    "latitude": -0.615,
+    "longitude": -78.4747,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W169305819"
+  }
+}

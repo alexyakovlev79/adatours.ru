@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_comuna_13",
+  "stableId": "destination_colombia_comuna_13",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/comuna-13/",
+  "sourceFingerprint": "4daddc7ce4b27e72ef9ec0e99c08581fa2338ad0ff1d25d30994f7380a35a0ab",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5780440",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/San_Javier_(Medell%C3%ADn)"
+    }
+  },
+  "location": {
+    "latitude": 6.25635,
+    "longitude": -75.62139,
+    "pointRole": "representative",
+    "coordinateSource": "https://es.wikipedia.org/wiki/San_Javier_(Medell%C3%ADn)"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Javier_(Medell%C3%ADn)",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/comuna-13.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/comuna-13/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5780440",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Javier_(Medell%C3%ADn)",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Javier_(Medell%C3%ADn)",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/San_Javier_(Medell%C3%ADn)",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Коммуна 13",
+      "reason": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q5780440",
+      "reason": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/San_Javier_(Medell%C3%ADn)",
+      "reason": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "6.25635,-75.62139",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 98,
+      "selected": "country_colombia",
+      "reason": "Comuna 13 San Javier — коммуна на западе Medellín, Antioquia, Colombia; район страницы, известный граффити и муралами. Координата репрезентирует всю коммуну, а не отдельный эскалатор или мурал. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

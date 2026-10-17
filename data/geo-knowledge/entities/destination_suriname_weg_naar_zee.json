@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_weg_naar_zee",
+  "stableId": "destination_suriname_weg_naar_zee",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/weg-naar-zee/",
+  "sourceFingerprint": "e1eaa565e8528f7a3007a3ba32d6fe6dc9715a70f90a0b0c4ccaf2e00856a155",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Побережье Вег-нар-Зе",
+      "reason": "Главный референт — прибрежные илистые отмели и мангры Weg naar Zee к северо-западу от Парамарибо; WHSRN подтверждает конкретный участок мониторинга птиц."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/weg-naar-zee/",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Главный референт — прибрежные илистые отмели и мангры Weg naar Zee к северо-западу от Парамарибо; WHSRN подтверждает конкретный участок мониторинга птиц."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/weg-naar-zee.md",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://whsrn.org/weg-naar-zee-a-glimpse-of-the-status-of-shorebirds-along-the-coast-of-suriname/",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://whsrn.org/weg-naar-zee-a-glimpse-of-the-status-of-shorebirds-along-the-coast-of-suriname/",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Главный референт — прибрежные илистые отмели и мангры Weg naar Zee к северо-западу от Парамарибо; WHSRN подтверждает конкретный участок мониторинга птиц."
+    }
+  ],
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Q587993 обозначает административный ressort, не сам прибрежный участок; QID и координаты районного центра не присваиваются побережью."
+}

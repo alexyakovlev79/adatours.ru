@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_lake_toro",
+  "stableId": "destination_chile_lake_toro",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/lake-toro/",
+  "sourceFingerprint": "d0fe9b29cf089edcd875eac68ef7bf9fa6bbbf0488debad3df302ff32fcef1bf",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Торо",
+      "reason": "Торо — Lago del Toro в Magallanes у юга Торрес-дель-Пайне, связанное с Paine/Serrano. Отклонены одноимённые озёра Los Lagos и Araucanía."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q2053728",
+      "reason": "Торо — Lago del Toro в Magallanes у юга Торрес-дель-Пайне, связанное с Paine/Serrano. Отклонены одноимённые озёра Los Lagos и Araucanía."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-51.233333333333,-72.75",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3869564",
+      "reason": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":5728}",
+      "reason": "P402 exact named feature; not adjacent locality or sightseeing viewpoint."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lake-toro.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Торо — Lago del Toro в Magallanes у юга Торрес-дель-Пайне, связанное с Paine/Serrano. Отклонены одноимённые озёра Los Lagos и Araucanía."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2053728",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Торо — Lago del Toro в Magallanes у юга Торрес-дель-Пайне, связанное с Paine/Serrano. Отклонены одноимённые озёра Los Lagos и Araucanía."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2053728",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Торо — Lago del Toro в Magallanes у юга Торрес-дель-Пайне, связанное с Paine/Serrano. Отклонены одноимённые озёра Los Lagos и Araucanía."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2053728",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2053728",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2053728",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2053728",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P402 exact named feature; not adjacent locality or sightseeing viewpoint."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/lake-toro/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2053728",
+    "geonamesId": "3869564",
+    "osm": {
+      "type": "relation",
+      "id": 5728
+    }
+  },
+  "location": {
+    "latitude": -51.233333333333,
+    "longitude": -72.75,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2053728"
+  }
+}

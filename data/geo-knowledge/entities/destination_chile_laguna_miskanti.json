@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_laguna_miskanti",
+  "stableId": "destination_chile_laguna_miskanti",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/laguna-miscanti/",
+  "sourceFingerprint": "543f2880574655a45bec29e5e15c2adbfdbb50a4db3af76d1647082f972a0154",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Лагуна Мисканти",
+      "reason": "Озеро Laguna Miscanti в высокогорье Antofagasta, не вулкан Cerro Miscanti."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q3068616"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Laguna_Miscanti\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка озера из актуальной статьи.",
+      "selected": "-23.725,-67.765"
+    },
+    {
+      "field": "relationships.destination_chile_laguna_minikes",
+      "probability": 95,
+      "reason": "Статья и MD различают два соседних озера.",
+      "selected": "destination_chile_laguna_minikes"
+    },
+    {
+      "field": "relationships.destination_chile_san_pedro_de_atakama",
+      "probability": 95,
+      "reason": "В MD явно названы поездки из San Pedro de Atacama.",
+      "selected": "destination_chile_san_pedro_de_atakama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-miscanti/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Озеро Laguna Miscanti в высокогорье Antofagasta, не вулкан Cerro Miscanti."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-miscanti/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3068616",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3068616",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miscanti_Lake",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Опорная точка озера из актуальной статьи."
+    },
+    {
+      "field": "relationships.destination_chile_laguna_minikes",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miscanti_Lake",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Статья и MD различают два соседних озера."
+    },
+    {
+      "field": "relationships.destination_chile_san_pedro_de_atakama",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-miscanti/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "В MD явно названы поездки из San Pedro de Atacama."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3068616",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Озеро Laguna Miscanti в высокогорье Antofagasta, не вулкан Cerro Miscanti."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_laguna_minikes"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_san_pedro_de_atakama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3068616",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Laguna_Miscanti"
+    }
+  },
+  "location": {
+    "latitude": -23.725,
+    "longitude": -67.765,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Miscanti_Lake"
+  }
+}

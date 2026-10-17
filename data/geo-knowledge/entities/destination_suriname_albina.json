@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_albina",
+  "stableId": "destination_suriname_albina",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/albina/",
+  "sourceFingerprint": "f1e4fb2b7857c399ec5e43abd8cff2dc272e3278eb04e6b44e25bcf65ae069a0",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Альбина",
+      "reason": "Город Albina на западном берегу Марони напротив Saint-Laurent-du-Maroni; страна и положение совпадают с MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка Альбины в Суринаме.",
+      "selected": "Q580016"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Статья о пограничном городе на Марони.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Albina,_Suriname\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка города, а не французского города напротив.",
+      "selected": "5.5,-54.05"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/albina/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Город Albina на западном берегу Марони напротив Saint-Laurent-du-Maroni; страна и положение совпадают с MD."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/albina/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q580016",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная карточка Альбины в Суринаме."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Albina,_Suriname",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Статья о пограничном городе на Марони."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Albina,_Suriname",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Опорная точка города, а не французского города напротив."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q580016",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Город Albina на западном берегу Марони напротив Saint-Laurent-du-Maroni; страна и положение совпадают с MD."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q580016",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Albina,_Suriname"
+    }
+  },
+  "location": {
+    "latitude": 5.5,
+    "longitude": -54.05,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Albina,_Suriname"
+  }
+}

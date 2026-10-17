@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ford_garibaldi",
+  "stableId": "destination_chile_ford_garibaldi",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/garibaldi-fjord/",
+  "sourceFingerprint": "3178e87d34323b2074b4c68b76dbfe93fbd41b9c42f85f9e84c5f74de2a6f079",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q23644204",
+    "geonamesId": "3889103"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/garibaldi-fjord/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23644204",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23644204",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23644204",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23644204",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Seno Garibaldi / Fiordo Garibaldi",
+      "reason": "Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q23644204",
+      "reason": "Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3889103",
+      "reason": "Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-54.77611111111111,-69.97027777777778",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Exact Seno Garibaldi bay/fjord in Chilean Tierra del Fuego; not Garibaldi glacier or Canadian glacier."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -54.77611111111111,
+    "longitude": -69.97027777777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q23644204"
+  }
+}

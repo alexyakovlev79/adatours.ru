@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_la_unon",
+  "stableId": "destination_el_salvador_la_unon",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/la-union/",
+  "sourceFingerprint": "3634c0995b8b1e4af0b07ef0e8fad68b41cd0dd4543be7b1d3f2a20846f56c2c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2420477",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/La_Uni%C3%B3n,_El_Salvador"
+    }
+  },
+  "location": {
+    "latitude": 13.33694,
+    "longitude": -87.84389,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/La_Uni%C3%B3n,_El_Salvador"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/La_Uni%C3%B3n,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/la-union.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/la-union/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2420477",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/La_Uni%C3%B3n,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/La_Uni%C3%B3n,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/La_Uni%C3%B3n,_El_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Ла-Уньон",
+      "reason": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q2420477",
+      "reason": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/La_Uni%C3%B3n,_El_Salvador",
+      "reason": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "13.33694,-87.84389",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 98,
+      "selected": "country_el_salvador",
+      "reason": "La Unión — портовый город восточного El Salvador у залива Fonseca; выбран город, не одноимённый департамент или филиппинская провинция. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

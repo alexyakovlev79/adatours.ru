@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_laguna_kapitan",
+  "stableId": "destination_paraguay_laguna_kapitan",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/laguna-capitan/",
+  "sourceFingerprint": "1d8ab41f9f0fe5de89216aedfc6948208096ef33f084d7f17cd4f261969dbbee",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3439191"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.geonames.org/3439191/laguna-capitan.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Именно озеро Laguna Capitán в Presidente Hayes/Чако; исключены одноименные поселение и кемпинг."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/laguna-capitan.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/laguna-capitan/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3439191/laguna-capitan.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Именно озеро Laguna Capitán в Presidente Hayes/Чако; исключены одноименные поселение и кемпинг."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3439191/laguna-capitan.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.geonames.org/3439191/laguna-capitan.html",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 93,
+      "reason": "Именно озеро Laguna Capitán в Presidente Hayes/Чако; исключены одноименные поселение и кемпинг.",
+      "selected": "Лагуна Капитан"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 93,
+      "reason": "Именно озеро Laguna Capitán в Presidente Hayes/Чако; исключены одноименные поселение и кемпинг.",
+      "selected": "3439191"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-22.55,-59.7]"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -22.55,
+    "longitude": -59.7,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3439191/laguna-capitan.html"
+  }
+}

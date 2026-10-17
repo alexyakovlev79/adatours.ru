@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_petrohue_river",
+  "stableId": "destination_chile_petrohue_river",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/petrohue-river/",
+  "sourceFingerprint": "d33a7771297dfa594f04d838fe8b788a0266c530e4f2a6eeaafedab034a31261",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Река Петроуэ",
+      "reason": "Петроуэ — река Los Lagos от озера Todos los Santos до эстуария Reloncaví. MD посвящён реке, не водопадам Q430990."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q574399",
+      "reason": "Петроуэ — река Los Lagos от озера Todos los Santos до эстуария Reloncaví. MD посвящён реке, не водопадам Q430990."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-41.140833333333,-72.399722222222",
+      "reason": "Выбрана P625 с квалификатором watercourse source: точка истока -41.140833,-72.399722. Вторая точка — устье; не усреднена. Роль feature_point, не центр реки."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3876409",
+      "reason": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":11086245}",
+      "reason": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Petrohu%C3%A9_River",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/petrohue-river.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Петроуэ — река Los Lagos от озера Todos los Santos до эстуария Reloncaví. MD посвящён реке, не водопадам Q430990."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q574399",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Петроуэ — река Los Lagos от озера Todos los Santos до эстуария Reloncaví. MD посвящён реке, не водопадам Q430990."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q574399",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Петроуэ — река Los Lagos от озера Todos los Santos до эстуария Reloncaví. MD посвящён реке, не водопадам Q430990."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q574399",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Выбрана P625 с квалификатором watercourse source: точка истока -41.140833,-72.399722. Вторая точка — устье; не усреднена. Роль feature_point, не центр реки."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q574399",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q574399",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q574399",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q574399",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/petrohue-river/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q574399",
+    "geonamesId": "3876409",
+    "osm": {
+      "type": "relation",
+      "id": 11086245
+    },
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Petrohu%C3%A9_River"
+    }
+  },
+  "location": {
+    "latitude": -41.140833333333,
+    "longitude": -72.399722222222,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q574399"
+  }
+}

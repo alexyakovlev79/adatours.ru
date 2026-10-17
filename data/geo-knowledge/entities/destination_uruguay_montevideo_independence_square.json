@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_montevideo_independence_square",
+  "stableId": "destination_uruguay_montevideo_independence_square",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/montevideo-independence-square/",
+  "sourceFingerprint": "6ddea3055edd83ede118be0ce27b339b11b8883e5a78bd56fc6a497cdde6bff0",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2099121"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099121",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Plaza Independencia Монтевидео на границе Centro и Ciudad Vieja; не площадь другого города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/montevideo-independence-square.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/uruguay/place/montevideo-independence-square/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099121",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Plaza Independencia Монтевидео на границе Centro и Ciudad Vieja; не площадь другого города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099121",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2099121",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Plaza Independencia Монтевидео на границе Centro и Ciudad Vieja; не площадь другого города.",
+      "selected": "Площадь Независимости в Монтевидео"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Plaza Independencia Монтевидео на границе Centro и Ciudad Vieja; не площадь другого города.",
+      "selected": "Q2099121"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-34.9065,-56.19975]"
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_uruguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -34.9065,
+    "longitude": -56.19975,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2099121"
+  }
+}

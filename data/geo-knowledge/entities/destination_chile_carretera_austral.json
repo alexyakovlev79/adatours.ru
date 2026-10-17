@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_carretera_austral",
+  "stableId": "destination_chile_carretera_austral",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/carretera-austral/",
+  "sourceFingerprint": "eebdb45a0e15c8cacf6af6847b97ea6c77b761ce67aa3dd669d74a9f410cd320",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Карретера-Аустраль",
+      "reason": "Карретера-Аустраль — именованная чилийская дорога Ruta 7. MD описывает её как маршрутный кластер, но главный именованный референт — существующая трасса."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q595165",
+      "reason": "Карретера-Аустраль — именованная чилийская дорога Ruta 7. MD описывает её как маршрутный кластер, но главный именованный референт — существующая трасса."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-48,-73.13",
+      "reason": "P625 — опорная точка протяжённой трассы, не её центр, конечная точка и не вся геометрия маршрута."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "12495106",
+      "reason": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":6582701}",
+      "reason": "P402 exact named feature; not adjacent locality or sightseeing viewpoint."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/carretera-austral.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Карретера-Аустраль — именованная чилийская дорога Ruta 7. MD описывает её как маршрутный кластер, но главный именованный референт — существующая трасса."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q595165",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Карретера-Аустраль — именованная чилийская дорога Ruta 7. MD описывает её как маршрутный кластер, но главный именованный референт — существующая трасса."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q595165",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Карретера-Аустраль — именованная чилийская дорога Ruta 7. MD описывает её как маршрутный кластер, но главный именованный референт — существующая трасса."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q595165",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P625 — опорная точка протяжённой трассы, не её центр, конечная точка и не вся геометрия маршрута."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q595165",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q595165",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q595165",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P402 exact named feature; not adjacent locality or sightseeing viewpoint."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/carretera-austral/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q595165",
+    "geonamesId": "12495106",
+    "osm": {
+      "type": "relation",
+      "id": 6582701
+    }
+  },
+  "location": {
+    "latitude": -48,
+    "longitude": -73.13,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q595165"
+  }
+}

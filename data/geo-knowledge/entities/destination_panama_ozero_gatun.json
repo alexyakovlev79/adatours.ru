@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_ozero_gatun",
+  "stableId": "destination_panama_ozero_gatun",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/gatun-lake/",
+  "sourceFingerprint": "298b74e67e805395e4a98dc3c4100a3c1f727012ff388aac4b31f69966c21a74",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q313637"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/gatun-lake/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q313637",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q313637",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q313637",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Gatun Lake",
+      "reason": "Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q313637",
+      "reason": "Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "9.2,-79.9",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Artificial lake forming Panama Canal; MD describes lake and shipping, not settlement Gatún or locks."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 9.2,
+    "longitude": -79.9,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q313637"
+  }
+}

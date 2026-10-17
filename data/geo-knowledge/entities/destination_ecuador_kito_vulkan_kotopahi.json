@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_kito_vulkan_kotopahi",
+  "stableId": "destination_ecuador_kito_vulkan_kotopahi",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/quito-and-cotopaxi-volcano/",
+  "sourceFingerprint": "8ac530ec8a76a1c3790ee0379dfee16eab53ead97861854c021ae764873ad81f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Кито & вулкан Котопахи",
+      "reason": "Составная страница «Кито & вулкан Котопахи»: основной референт — Кито как городская база с историческим центром, выездами к экватору и по Дороге вулканов. Вулкан — отдельно описанная выездная точка."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 84,
+      "selected": "Q2900",
+      "reason": "Составная страница «Кито & вулкан Котопахи»: основной референт — Кито как городская база с историческим центром, выездами к экватору и по Дороге вулканов. Вулкан — отдельно описанная выездная точка."
+    },
+    {
+      "field": "location",
+      "probability": 84,
+      "selected": "-0.22,-78.5125",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 84,
+      "selected": "3652462",
+      "reason": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 84,
+      "selected": "{\"type\":\"node\",\"id\":58950371}",
+      "reason": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 84,
+      "selected": "https://en.wikipedia.org/wiki/Quito",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/kito-vulkan-kotopahi.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Составная страница «Кито & вулкан Котопахи»: основной референт — Кито как городская база с историческим центром, выездами к экватору и по Дороге вулканов. Вулкан — отдельно описанная выездная точка."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2900",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Составная страница «Кито & вулкан Котопахи»: основной референт — Кито как городская база с историческим центром, выездами к экватору и по Дороге вулканов. Вулкан — отдельно описанная выездная точка."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2900",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Составная страница «Кито & вулкан Котопахи»: основной референт — Кито как городская база с историческим центром, выездами к экватору и по Дороге вулканов. Вулкан — отдельно описанная выездная точка."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2900",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2900",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2900",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2900",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2900",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/quito-and-cotopaxi-volcano/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2900",
+    "geonamesId": "3652462",
+    "osm": {
+      "type": "node",
+      "id": 58950371
+    },
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Quito"
+    }
+  },
+  "location": {
+    "latitude": -0.22,
+    "longitude": -78.5125,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2900"
+  },
+  "reviewNote": "identityScope composite. Q2900 и settlement_center относятся основному референту Quito (84%), не всей совокупности Quito/Cotopaxi/Pululahua/Quilotoa. Координаты вулкана не усреднялись с городскими."
+}

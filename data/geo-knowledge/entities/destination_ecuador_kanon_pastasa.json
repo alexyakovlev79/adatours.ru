@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_kanon_pastasa",
+  "stableId": "destination_ecuador_kanon_pastasa",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/pastaza-canyon/",
+  "sourceFingerprint": "36d25147fa84e6f7adcdf3dacf3b7808f47f545676eb41555bd874f86a2a17ac",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "composite",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Каньон Пастаса",
+      "reason": "Каньон среднего течения Pastaza к востоку от Baños, вдоль Ruta de las Cascadas. Подтверждён как природный коридор; не вся река и не перуанский водно-болотный комплекс Abanico del Pastaza."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/pastaza-canyon/",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Каньон среднего течения Pastaza к востоку от Baños, вдоль Ruta de las Cascadas. Подтверждён как природный коридор; не вся река и не перуанский водно-болотный комплекс Abanico del Pastaza."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/pastaza-canyon.md",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.banostravel.com/rutas-de-las-cascadas-banos",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.banostravel.com/rutas-de-las-cascadas-banos",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Каньон среднего течения Pastaza к востоку от Baños, вдоль Ruta de las Cascadas. Подтверждён как природный коридор; не вся река и не перуанский водно-болотный комплекс Abanico del Pastaza."
+    }
+  ],
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "reviewNote": "Единый отдельный QID/OSM каньона после поиска не установлен; идентификаторы реки/провинции и усреднённая точка маршрута не присваиваются."
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_vulkan_baru",
+  "stableId": "destination_panama_vulkan_baru",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/baru-volcano/",
+  "sourceFingerprint": "0c5fe7d0bc513bb647c5e17399e58a6f73095b68f830c66f438659061742b027",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Вулкан Бару",
+      "reason": "Volcán Barú в Chiriquí, высшая вершина Панамы; отдельно от округа Barú."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка стратовулкана в Панаме.",
+      "selected": "Q594726"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink enwiki ведёт на тот же вулкан.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Volc%C3%A1n_Bar%C3%BA\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID вулкана указан в точной карточке.",
+      "selected": "3714266"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "Точный OpenStreetMap node ID вулкана.",
+      "selected": "{\"type\":\"node\",\"id\":5703131946}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опубликованная Smithsonian точка вулкана; координаты не усреднялись.",
+      "selected": "8.808,-82.543"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/baru-volcano/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Volcán Barú в Chiriquí, высшая вершина Панамы; отдельно от округа Barú."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/baru-volcano/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q594726",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точная карточка стратовулкана в Панаме."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q594726",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Sitelink enwiki ведёт на тот же вулкан."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q594726",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "GeoNames ID вулкана указан в точной карточке."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q594726",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный OpenStreetMap node ID вулкана."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=346010",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Опубликованная Smithsonian точка вулкана; координаты не усреднялись."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q594726",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Volc%C3%A1n_Bar%C3%BA"
+    },
+    "geonamesId": "3714266",
+    "osm": {
+      "type": "node",
+      "id": 5703131946
+    }
+  },
+  "location": {
+    "latitude": 8.808,
+    "longitude": -82.543,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://volcano.si.edu/volcano.cfm?vn=346010"
+  }
+}

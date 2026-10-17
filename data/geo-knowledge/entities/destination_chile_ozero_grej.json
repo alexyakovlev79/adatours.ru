@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ozero_grej",
+  "stableId": "destination_chile_ozero_grej",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/lake-grey/",
+  "sourceFingerprint": "1c26d8dda2895970f8a4b91505d4764dd1704876d8b62c675d6242ddc6a382f5",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Озеро Грей",
+      "reason": "Lago Grey в Torres del Paine; озеро с ледниковой подпиткой, не ледник Grey и не озёра Канады."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3032022",
+      "reason": "Lago Grey в Torres del Paine; озеро с ледниковой подпиткой, не ледник Grey и не озёра Канады."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Grey_Lake",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-51.066666666667,-73.15]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "relation/7706275",
+      "reason": "Точный P402 сопоставленного объекта."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/lake-grey/",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Lago Grey в Torres del Paine; озеро с ледниковой подпиткой, не ледник Grey и не озёра Канады."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/lake-grey.md",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3032022",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Lago Grey в Torres del Paine; озеро с ледниковой подпиткой, не ледник Grey и не озёра Канады."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3032022",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3032022",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3032022",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3032022",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "P402 точной географической сущности; тип relation, не населённый пункт или иной одноимённый объект."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3032022",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Grey_Lake"
+    },
+    "osm": {
+      "type": "relation",
+      "id": 7706275
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -51.066666666667,
+    "longitude": -73.15,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3032022"
+  },
+  "reviewNote": null
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_dolina_smerti_atakama",
+  "stableId": "destination_chile_dolina_smerti_atakama",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/death-valley-atacama/",
+  "sourceFingerprint": "875d2bceb0c962bbb98a267646fa6e9e83213e893fbd9ef1cedf88a99b917ae5",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Долина Смерти (Атакама)",
+      "reason": "Долина Смерти/Valle de Marte находится у Сан-Педро-де-Атакама в Cordillera de la Sal; официальный Chile Travel подтверждает синоним. Калифорнийская Death Valley Q118388 отклонена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "selected": "Q125545010",
+      "reason": "Долина Смерти/Valle de Marte находится у Сан-Педро-де-Атакама в Cordillera de la Sal; официальный Chile Travel подтверждает синоним. Калифорнийская Death Valley Q118388 отклонена."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-22.906991666666666,-68.24604722222222",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":13662042849}",
+      "reason": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/death-valley-atacama.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Долина Смерти/Valle de Marte находится у Сан-Педро-де-Атакама в Cordillera de la Sal; официальный Chile Travel подтверждает синоним. Калифорнийская Death Valley Q118388 отклонена."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://chile.travel/blog/marte-habla-chileno-por-que-la-nasa-eligio-este-nombre-para-su-nuevo-crater/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Долина Смерти/Valle de Marte находится у Сан-Педро-де-Атакама в Cordillera de la Sal; официальный Chile Travel подтверждает синоним. Калифорнийская Death Valley Q118388 отклонена."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q125545010",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Долина Смерти/Valle de Marte находится у Сан-Педро-де-Атакама в Cordillera de la Sal; официальный Chile Travel подтверждает синоним. Калифорнийская Death Valley Q118388 отклонена."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Valle_de_la_Muerte,_San_Pedro_de_Atacama",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://chile.travel/blog/marte-habla-chileno-por-que-la-nasa-eligio-este-nombre-para-su-nuevo-crater/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Valle_de_la_Muerte,_San_Pedro_de_Atacama",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Valle_de_la_Muerte,_San_Pedro_de_Atacama",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Authority item Q125545010 explicitly names Chilean Death Valley in Cordillera de la Sal."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/death-valley-atacama/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q125545010",
+    "osm": {
+      "type": "node",
+      "id": 13662042849
+    }
+  },
+  "location": {
+    "latitude": -22.906991666666666,
+    "longitude": -68.24604722222222,
+    "pointRole": "representative",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Valle_de_la_Muerte,_San_Pedro_de_Atacama"
+  }
+}

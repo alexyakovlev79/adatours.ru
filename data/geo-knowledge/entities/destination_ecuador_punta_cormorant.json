@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_punta_cormorant",
+  "stableId": "destination_ecuador_punta_cormorant",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/punta-cormorant/",
+  "sourceFingerprint": "04ea767eec143d9406a57f7609264f7ebc8e0f11da8e70862897822042952ab6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3659677",
+    "osm": {
+      "type": "node",
+      "id": 249408850
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/punta-cormorant/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Punta Cormorant visitor site on northern Floreana; green beach and flamingo lagoon match MD. Galapagos Conservancy Floreana page independently confirms referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/19665032",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Cormorant visitor site on northern Floreana; green beach and flamingo lagoon match MD. Galapagos Conservancy Floreana page independently confirms referent."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/19665032",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Exact named feature in country_ecuador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19665032",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Cormorant visitor site on northern Floreana; green beach and flamingo lagoon match MD. Galapagos Conservancy Floreana page independently confirms referent."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/19665032",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Cormorant visitor site on northern Floreana; green beach and flamingo lagoon match MD. Galapagos Conservancy Floreana page independently confirms referent."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19665032",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Мыс Корморан",
+      "reason": "Punta Cormorant visitor site on northern Floreana; green beach and flamingo lagoon match MD. Galapagos Conservancy Floreana page independently confirms referent."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3659677",
+      "reason": "Punta Cormorant visitor site on northern Floreana; green beach and flamingo lagoon match MD. Galapagos Conservancy Floreana page independently confirms referent."
+    },
+    {
+      "field": "external.osm",
+      "probability": 93,
+      "selected": "{\"type\":\"node\",\"id\":249408850}",
+      "reason": "Punta Cormorant visitor site on northern Floreana; green beach and flamingo lagoon match MD. Galapagos Conservancy Floreana page independently confirms referent."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":-1.2225,\"longitude\":-90.42552,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://mapcarta.com/19665032\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": -1.2225,
+    "longitude": -90.42552,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/19665032"
+  },
+  "reviewNote": ""
+}

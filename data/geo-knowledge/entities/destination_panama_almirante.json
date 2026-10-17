@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_almirante",
+  "stableId": "destination_panama_almirante",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/almirante/",
+  "sourceFingerprint": "dc35251c6085c11a58cbdda69db61818142bc62280c75cf7e3a389858c86fe79",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Альмиранте",
+      "reason": "Альмиранте в Бокас-дель-Торо: материковая переправа на остров Колон. Отклонена одноимённая местность в Portobelo, Colón."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q22405685",
+      "reason": "Альмиранте в Бокас-дель-Торо: материковая переправа на остров Колон. Отклонена одноимённая местность в Portobelo, Colón."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "9.3,-82.4",
+      "reason": "Опорная точка поселения из P625 9°18′N 82°24′W, точность источника до минуты."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/almirante.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Альмиранте в Бокас-дель-Торо: материковая переправа на остров Колон. Отклонена одноимённая местность в Portobelo, Colón."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22405685",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Альмиранте в Бокас-дель-Торо: материковая переправа на остров Колон. Отклонена одноимённая местность в Portobelo, Colón."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22405685",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Альмиранте в Бокас-дель-Торо: материковая переправа на остров Колон. Отклонена одноимённая местность в Portobelo, Colón."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22405685",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Опорная точка поселения из P625 9°18′N 82°24′W, точность источника до минуты."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22405685",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/almirante/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q22405685"
+  },
+  "location": {
+    "latitude": 9.3,
+    "longitude": -82.4,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q22405685"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_punta_suarez",
+  "stableId": "destination_ecuador_punta_suarez",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/punta-suarez/",
+  "sourceFingerprint": "1f24d76f74601f4b6cb0f900855d36cef883ffc49140f5f638bec722902dd542",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q23871701",
+    "geonamesId": "3650970"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/punta-suarez/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Punta Suarez western Espanola, albatross colony and blowhole match page. Conservancy Espanola visitor-site description independently confirms."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/19647618",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Suarez western Espanola, albatross colony and blowhole match page. Conservancy Espanola visitor-site description independently confirms."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/19647618",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Exact named feature in country_ecuador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/19647618",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Suarez western Espanola, albatross colony and blowhole match page. Conservancy Espanola visitor-site description independently confirms."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19647618",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Suarez western Espanola, albatross colony and blowhole match page. Conservancy Espanola visitor-site description independently confirms."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/advanced-search.html?country=EC&q=Col%C3%B3n%2C+Archipi%C3%A9lago&startRow=150",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "GeoNames named point coordinate; OSM locality point nearby differs and was not averaged."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Мыс Суарес",
+      "reason": "Punta Suarez western Espanola, albatross colony and blowhole match page. Conservancy Espanola visitor-site description independently confirms."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q23871701",
+      "reason": "Punta Suarez western Espanola, albatross colony and blowhole match page. Conservancy Espanola visitor-site description independently confirms."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3650970",
+      "reason": "Punta Suarez western Espanola, albatross colony and blowhole match page. Conservancy Espanola visitor-site description independently confirms."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":-1.36941032,\"longitude\":-89.74536166,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://www.geonames.org/advanced-search.html?country=EC&q=Col%C3%B3n%2C+Archipi%C3%A9lago&startRow=150\"}",
+      "reason": "GeoNames named point coordinate; OSM locality point nearby differs and was not averaged."
+    }
+  ],
+  "location": {
+    "latitude": -1.36941032,
+    "longitude": -89.74536166,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.geonames.org/advanced-search.html?country=EC&q=Col%C3%B3n%2C+Archipi%C3%A9lago&startRow=150"
+  },
+  "reviewNote": ""
+}

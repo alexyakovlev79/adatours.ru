@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_intinan_museum",
+  "stableId": "destination_ecuador_intinan_museum",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/intinan-museum/",
+  "sourceFingerprint": "12a517ab253da107e8a74aeab34c0162299cf7bc497207a92ef19801d6cb5850",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Музей Интиньян",
+      "reason": "Музей Intiñan в San Antonio de Pichincha рядом с Ciudad Mitad del Mundo, отдельный объект с этнографическими экспозициями."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q21869596",
+      "reason": "Музей Intiñan в San Antonio de Pichincha рядом с Ciudad Mitad del Mundo, отдельный объект с этнографическими экспозициями."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-0.00071380555555556,-78.454411111111]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/intinan-museum/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Музей Intiñan в San Antonio de Pichincha рядом с Ciudad Mitad del Mundo, отдельный объект с этнографическими экспозициями."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/intinan-museum.md",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21869596",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Музей Intiñan в San Antonio de Pichincha рядом с Ciudad Mitad del Mundo, отдельный объект с этнографическими экспозициями."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21869596",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://museosquito.gob.ec/espacios/museo-de-sitio-intinan/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://museosquito.gob.ec/espacios/museo-de-sitio-intinan/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Музей Intiñan в San Antonio de Pichincha рядом с Ciudad Mitad del Mundo, отдельный объект с этнографическими экспозициями."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q21869596"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -0.00071380555555556,
+    "longitude": -78.454411111111,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q21869596"
+  },
+  "reviewNote": "Собственный домен не подтверждён как доступный. Точная карточка официального каталога музеев Quito сохранена как evidence, не автоматически как sameAs."
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_biologicheskij_zapovednik_limonkocha",
+  "stableId": "destination_ecuador_biologicheskij_zapovednik_limonkocha",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/limoncocha-biological-reserve/",
+  "sourceFingerprint": "2b86f0276c64d4177836713811d61b3322ca093a92389ac3b89e887c4ec002e3",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q6549842",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Limoncocha_National_Biological_Reserve"
+    },
+    "osm": {
+      "type": "relation",
+      "id": 451259
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Биологический заповедник Лимонкоча",
+      "reason": "Биологический заповедник Лимонкоча в Сукумбиос, эквадорская Амазония; совпадают название, тип и озёрно-лесной ландшафт. Опорная точка P625 относится к заповеднику, не заявляется входом."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q6549842",
+      "reason": "Биологический заповедник Лимонкоча в Сукумбиос, эквадорская Амазония; совпадают название, тип и озёрно-лесной ландшафт. Опорная точка P625 относится к заповеднику, не заявляется входом."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Limoncocha_National_Biological_Reserve",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "relation/451259",
+      "reason": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.4, -76.6",
+      "reason": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/limoncocha-biological-reserve.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Биологический заповедник Лимонкоча в Сукумбиос, эквадорская Амазония; совпадают название, тип и озёрно-лесной ландшафт. Опорная точка P625 относится к заповеднику, не заявляется входом."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/limoncocha-biological-reserve/",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6549842",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Биологический заповедник Лимонкоча в Сукумбиос, эквадорская Амазония; совпадают название, тип и озёрно-лесной ландшафт. Опорная точка P625 относится к заповеднику, не заявляется входом."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Limoncocha_National_Biological_Reserve",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6549842",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6549842",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/limoncocha-biological-reserve.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.4,
+    "longitude": -76.6,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q6549842"
+  }
+}

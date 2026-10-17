@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_lednik_pia",
+  "stableId": "destination_chile_lednik_pia",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/pia-glacier/",
+  "sourceFingerprint": "f1b72c927e74002f76d13a09b90e8b27ebec7f64f2c10d743d3720639537f4c6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/pia-glacier/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Cruise operator explicitly identifies Pía Glacier and Glacier Alley on Tierra del Fuego route; MD is the same glacier, not Antarctic Della Pia Glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.australis.com/fjords-of-tierra-del-fuego/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Cruise operator explicitly identifies Pía Glacier and Glacier Alley on Tierra del Fuego route; MD is the same glacier, not Antarctic Della Pia Glacier."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Pía Glacier, Tierra del Fuego",
+      "reason": "Cruise operator explicitly identifies Pía Glacier and Glacier Alley on Tierra del Fuego route; MD is the same glacier, not Antarctic Della Pia Glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Cruise operator explicitly identifies Pía Glacier and Glacier Alley on Tierra del Fuego route; MD is the same glacier, not Antarctic Della Pia Glacier."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "Search returned Della Pia Glacier in Antarctica; rejected."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Research describes several glacier branches and forefield sites; none independently fixed as exact glacier reference point, omitted."
+    }
+  ],
+  "reviewNote": ""
+}

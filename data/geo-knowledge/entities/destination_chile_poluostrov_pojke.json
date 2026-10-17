@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_poluostrov_pojke",
+  "stableId": "destination_chile_poluostrov_pojke",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/poike-peninsula/",
+  "sourceFingerprint": "88b22415d3a29222aee77ecb4ac9c27cf32a9ef673d4a474cd1f37a9c4645b57",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 91,
+      "selected": "Полуостров Пойке",
+      "reason": "Главный именованный референт — вулканический сектор Poike восточного полуострова Рапа-Нуи. Управляющая община подтверждает тот же рельеф и положение."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 91,
+      "selected": "Q1827535",
+      "reason": "Главный именованный референт — вулканический сектор Poike восточного полуострова Рапа-Нуи. Управляющая община подтверждает тот же рельеф и положение."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 91,
+      "selected": "https://en.wikipedia.org/wiki/Poike",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-27.105322222222,-109.25505]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://mauhenuarapanui.com/producto/poike/",
+      "reason": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/poike-peninsula/",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Главный именованный референт — вулканический сектор Poike восточного полуострова Рапа-Нуи. Управляющая община подтверждает тот же рельеф и положение."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/poike-peninsula.md",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1827535",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Главный именованный референт — вулканический сектор Poike восточного полуострова Рапа-Нуи. Управляющая община подтверждает тот же рельеф и положение."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1827535",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1827535",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://mauhenuarapanui.com/producto/poike/",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://mauhenuarapanui.com/producto/poike/",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1827535",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Poike"
+    },
+    "officialUrl": "https://mauhenuarapanui.com/producto/poike/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -27.105322222222,
+    "longitude": -109.25505,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1827535"
+  },
+  "reviewNote": "QID вулкана принят как основной референт вулканического полуострова; P625 — опорная точка массива, не точка всего побережья."
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_black_turtle_cove",
+  "stableId": "destination_ecuador_black_turtle_cove",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/black-turtle-cove/",
+  "sourceFingerprint": "76a9350be192eb92e04ed136011ce7f2466f471dd02aeb9e2c05eac10ae8984e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q8255206",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Black_Turtle_Cove"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Бухта Тортуга-Негра",
+      "reason": "Caleta Tortuga Negra / Black Turtle Cove — мангровая бухта на северном берегу Санта-Крус. Это не Tortuga Bay на юге острова; география и лодочное посещение совпадают с MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q8255206",
+      "reason": "Caleta Tortuga Negra / Black Turtle Cove — мангровая бухта на северном берегу Санта-Крус. Это не Tortuga Bay на юге острова; география и лодочное посещение совпадают с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Black_Turtle_Cove",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.5011111111111111, -90.32805555555555",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/black-turtle-cove.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Caleta Tortuga Negra / Black Turtle Cove — мангровая бухта на северном берегу Санта-Крус. Это не Tortuga Bay на юге острова; география и лодочное посещение совпадают с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/black-turtle-cove/",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8255206",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Caleta Tortuga Negra / Black Turtle Cove — мангровая бухта на северном берегу Санта-Крус. Это не Tortuga Bay на юге острова; география и лодочное посещение совпадают с MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Black_Turtle_Cove",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q8255206",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/black-turtle-cove.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.5011111111111111,
+    "longitude": -90.32805555555555,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q8255206"
+  }
+}

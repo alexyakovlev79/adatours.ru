@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_punta_sentinela",
+  "stableId": "destination_ecuador_punta_sentinela",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/punta-centinela/",
+  "sourceFingerprint": "0b40887d5cd2bc6074e52d54da70ce92eacadf17c89a1f3d233062d906a1445d",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 88,
+      "selected": "Пунта-Сентинела",
+      "reason": "Основной референт — пляжная местность и мыс Punta Centinela рядом с Punta Barandúa/Санта-Элена. Географическая карточка соответствует этому участку побережья, а не мысу на острове Puná либо чилийским одноимённым мысам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 88,
+      "selected": "Q23884240",
+      "reason": "Основной референт — пляжная местность и мыс Punta Centinela рядом с Punta Barandúa/Санта-Элена. Географическая карточка соответствует этому участку побережья, а не мысу на острове Puná либо чилийским одноимённым мысам."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3659537",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-2.1666666666667,-80.833333333333]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":249408969}",
+      "reason": "Точный именованный объект OSM; страна, название и географический контекст совпадают."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/punta-centinela/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Основной референт — пляжная местность и мыс Punta Centinela рядом с Punta Barandúa/Санта-Элена. Географическая карточка соответствует этому участку побережья, а не мысу на острове Puná либо чилийским одноимённым мысам."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/punta-centinela.md",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23884240",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Основной референт — пляжная местность и мыс Punta Centinela рядом с Punta Barandúa/Санта-Элена. Географическая карточка соответствует этому участку побережья, а не мысу на острове Puná либо чилийским одноимённым мысам."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23884240",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23884240",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.decameron.com/es/hoteles/santa-elena/royal-decameron-punta-centinela/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.decameron.com/es/hoteles/santa-elena/royal-decameron-punta-centinela/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Основной референт — пляжная местность и мыс Punta Centinela рядом с Punta Barandúa/Санта-Элена. Географическая карточка соответствует этому участку побережья, а не мысу на острове Puná либо чилийским одноимённым мысам."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/249408969",
+      "checkedAt": "2026-10-17T08:27:00.374Z",
+      "note": "Точный именованный объект OSM; страна, название и географический контекст совпадают."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q23884240",
+    "geonamesId": "3659537",
+    "osm": {
+      "type": "node",
+      "id": 249408969
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -2.1666666666667,
+    "longitude": -80.833333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q23884240"
+  },
+  "reviewNote": "Старый атрибут Guayas в внешней карточке не переносится как современная провинция; официальный источник подтверждает Santa Elena. Отель Decameron не используется как sameAs всего побережья."
+}

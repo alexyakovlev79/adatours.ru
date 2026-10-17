@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_general_carrera_lake",
+  "stableId": "destination_chile_general_carrera_lake",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/general-carrera-lake/",
+  "sourceFingerprint": "1e7c6fb27747dbddce27279e5db04bacad6e55e1a33706600541bdfe5ecc8478",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Хенераль-Каррера",
+      "reason": "Хенераль-Каррера/Буэнос-Айрес — единое трансграничное озеро между Чили и Аргентиной; страница описывает чилийскую сторону, а основным референтом остаётся озеро."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q503842",
+      "reason": "Хенераль-Каррера/Буэнос-Айрес — единое трансграничное озеро между Чили и Аргентиной; страница описывает чилийскую сторону, а основным референтом остаётся озеро."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-46.4375,-71.715",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "P17 lists Chile and Argentina. Chile contains part of the cross-border lake; relation is not exclusive."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3889025",
+      "reason": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":4842705}",
+      "reason": "P402 exact named feature; not adjacent locality or sightseeing viewpoint."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "selected": "country_argentina",
+      "reason": "P17 lists Argentina and Chile. Existing country_argentina passport verified in main. Relation denotes country containing part of this cross-border lake, not exclusive containment."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/general-carrera-lake.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Хенераль-Каррера/Буэнос-Айрес — единое трансграничное озеро между Чили и Аргентиной; страница описывает чилийскую сторону, а основным референтом остаётся озеро."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q503842",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Хенераль-Каррера/Буэнос-Айрес — единое трансграничное озеро между Чили и Аргентиной; страница описывает чилийскую сторону, а основным референтом остаётся озеро."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q503842",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Хенераль-Каррера/Буэнос-Айрес — единое трансграничное озеро между Чили и Аргентиной; страница описывает чилийскую сторону, а основным референтом остаётся озеро."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q503842",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q503842",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q503842",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q503842",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P402 exact named feature; not adjacent locality or sightseeing viewpoint."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q503842",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P17 lists Argentina and Chile. Existing country_argentina passport verified in main. Relation denotes country containing part of this cross-border lake, not exclusive containment."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/general-carrera-lake/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q503842",
+    "geonamesId": "3889025",
+    "osm": {
+      "type": "relation",
+      "id": 4842705
+    }
+  },
+  "location": {
+    "latitude": -46.4375,
+    "longitude": -71.715,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q503842"
+  },
+  "reviewNote": "QID и OSM относятся всему озеру. Оно расположено в двух странах; географические связи сохранены с обеими, коммерческий canonical остаётся чилийским."
+}

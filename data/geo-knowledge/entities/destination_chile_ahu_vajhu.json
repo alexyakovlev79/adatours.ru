@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ahu_vajhu",
+  "stableId": "destination_chile_ahu_vajhu",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ahu-vaihu/",
+  "sourceFingerprint": "6104d18a28657adad58579088fb0e9090cef0abc6e3739f29845f05a74d53564",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Аху-Вайху",
+      "reason": "Аху-Вайху — прибрежная археологическая зона Рапа-Нуи (Vaihu/Hanga Te’e), отдельная остановка рядом с Акаханга в программе оператора."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ahu-vaihu.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Аху-Вайху — прибрежная археологическая зона Рапа-Нуи (Vaihu/Hanga Te’e), отдельная остановка рядом с Акаханга в программе оператора."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.setours.com/journey/easter-island-5-days/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Вайху — прибрежная археологическая зона Рапа-Нуи (Vaihu/Hanga Te’e), отдельная остановка рядом с Акаханга в программе оператора."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.setours.com/journey/easter-island-5-days/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/ahu-vaihu/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "reviewNote": "Идентичность установлена по названию и маршруту; точный самостоятельный QID и координаты платформы не подтверждены."
+}

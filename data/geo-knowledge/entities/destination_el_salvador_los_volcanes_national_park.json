@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_los_volcanes_national_park",
+  "stableId": "destination_el_salvador_los_volcanes_national_park",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/los-volcanes-national-park/",
+  "sourceFingerprint": "33fe61066bd7bc3b0160866b8ac47c390659425f625ab96f2cf3cd393f78f5ce",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q25047797",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Los_Volcanes_National_Park"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/los-volcanes-national-park/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Los Volcanes national park uniting Santa Ana, Izalco and Cerro Verde, El Salvador; not Rwandan Volcanoes NP or Mexican biosphere reserve. Point is park reference, not full bounds."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25047797",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Los Volcanes national park uniting Santa Ana, Izalco and Cerro Verde, El Salvador; not Rwandan Volcanoes NP or Mexican biosphere reserve. Point is park reference, not full bounds."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25047797",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25047797",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Los Volcanes national park uniting Santa Ana, Izalco and Cerro Verde, El Salvador; not Rwandan Volcanoes NP or Mexican biosphere reserve. Point is park reference, not full bounds."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25047797",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Los Volcanes national park uniting Santa Ana, Izalco and Cerro Verde, El Salvador; not Rwandan Volcanoes NP or Mexican biosphere reserve. Point is park reference, not full bounds."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25047797",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Национальный парк Лос-Вулканес",
+      "reason": "Los Volcanes national park uniting Santa Ana, Izalco and Cerro Verde, El Salvador; not Rwandan Volcanoes NP or Mexican biosphere reserve. Point is park reference, not full bounds."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q25047797",
+      "reason": "Los Volcanes national park uniting Santa Ana, Izalco and Cerro Verde, El Salvador; not Rwandan Volcanoes NP or Mexican biosphere reserve. Point is park reference, not full bounds."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Los_Volcanes_National_Park\"}",
+      "reason": "Los Volcanes national park uniting Santa Ana, Izalco and Cerro Verde, El Salvador; not Rwandan Volcanoes NP or Mexican biosphere reserve. Point is park reference, not full bounds."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.827222222222222,\"longitude\":-89.62333333333332,\"pointRole\":\"representative\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q25047797\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.827222222222222,
+    "longitude": -89.62333333333332,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q25047797"
+  },
+  "reviewNote": ""
+}

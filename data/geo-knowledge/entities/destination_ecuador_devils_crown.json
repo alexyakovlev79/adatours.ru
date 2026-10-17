@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_devils_crown",
+  "stableId": "destination_ecuador_devils_crown",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/devils-crown/",
+  "sourceFingerprint": "563df9c61f3de3fff7f4f6c414d1e45d6f979fea8d5d3ed9b9351df578231f7b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.galapagosislands.com/floreana/devils-crown.html",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Devil’s Crown — кольцо скал затопленного вулканического конуса возле острова Floreana, Галапагосы Эквадора; совпадают тип, остров и контекст снорклинга."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/devils-crown.md",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/devils-crown/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.galapagosislands.com/floreana/devils-crown.html",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Devil’s Crown — кольцо скал затопленного вулканического конуса возле острова Floreana, Галапагосы Эквадора; совпадают тип, остров и контекст снорклинга. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Корона Дьявола",
+      "reason": "Devil’s Crown — кольцо скал затопленного вулканического конуса возле острова Floreana, Галапагосы Эквадора; совпадают тип, остров и контекст снорклинга."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Devil’s Crown — кольцо скал затопленного вулканического конуса возле острова Floreana, Галапагосы Эквадора; совпадают тип, остров и контекст снорклинга. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точный QID и координата скального кольца не подтверждены; поля опущены."
+}

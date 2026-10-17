@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_kanelones",
+  "stableId": "destination_uruguay_kanelones",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/canelones/",
+  "sourceFingerprint": "69859df60a3f93098f14402c4b14b67a8068f48644ad535a8a9a698d0a7204ce",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Канелонес",
+      "reason": "MD описывает винодельческий регион Канелонес и сельские хозяйства; наиболее вероятный референт — департамент Canelones, не город Q841342."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q16577",
+      "reason": "MD описывает винодельческий регион Канелонес и сельские хозяйства; наиболее вероятный референт — департамент Canelones, не город Q841342."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Canelones_Department",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3443411",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-34.524166666667,-56.281666666667]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 99,
+      "selected": "country_uruguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/uruguay/place/canelones/",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "MD описывает винодельческий регион Канелонес и сельские хозяйства; наиболее вероятный референт — департамент Canelones, не город Q841342."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/canelones.md",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16577",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "MD описывает винодельческий регион Канелонес и сельские хозяйства; наиболее вероятный референт — департамент Canelones, не город Q841342."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16577",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16577",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16577",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q16577",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q16577",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Canelones_Department"
+    },
+    "geonamesId": "3443411"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "location": {
+    "latitude": -34.524166666667,
+    "longitude": -56.281666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q16577"
+  },
+  "reviewNote": "P625 департамента совпадает с административным центром; используется только как опорная точка территории, не центр виноградников."
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ozero_panyakocha",
+  "stableId": "destination_ecuador_ozero_panyakocha",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/panacocha-lake/",
+  "sourceFingerprint": "2701803b4edb3fda7cd7ae0ed42b457006f3c7a44349a2440ba4ee2b54cbd18c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Паньякоча",
+      "reason": "MD: озёрный район Pañacocha эквадорской Амазонии. Принят водоём в Sucumbíos, исключены одноимённые озёра Перу."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.osm",
+      "probability": 93,
+      "reason": "Точный именованный водоём Laguna Pañacocha, Sucumbíos, Ecuador.",
+      "selected": "{\"type\":\"way\",\"id\":124164727}"
+    },
+    {
+      "field": "location",
+      "probability": 91,
+      "reason": "Опорная точка озера Pañacocha в Эквадоре, не населённого пункта и не перуанских тёзок.",
+      "selected": "-0.39629,-76.12748"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "Поиск дал перуанские тёзки; точный QID эквадорского озера не подтверждён."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/panacocha-lake/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: озёрный район Pañacocha эквадорской Амазонии. Принят водоём в Sucumbíos, исключены одноимённые озёра Перу."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/panacocha-lake/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/W124164727",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный именованный водоём Laguna Pañacocha, Sucumbíos, Ecuador."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W124164727",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Опорная точка озера Pañacocha в Эквадоре, не населённого пункта и не перуанских тёзок."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/W124164727",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: озёрный район Pañacocha эквадорской Амазонии. Принят водоём в Sucumbíos, исключены одноимённые озёра Перу."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 124164727
+    }
+  },
+  "location": {
+    "latitude": -0.39629,
+    "longitude": -76.12748,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W124164727"
+  }
+}

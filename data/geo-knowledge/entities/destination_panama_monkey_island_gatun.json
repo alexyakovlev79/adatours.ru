@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_monkey_island_gatun",
+  "stableId": "destination_panama_monkey_island_gatun",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/monkey-island-gatun/",
+  "sourceFingerprint": "0a96f96e4c0023b57bb68410b982b5355357f9e9ed8c26bfa9d01975aefb9caa",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Остров обезьян на озере Гатун",
+      "reason": "Туристическая природная остановка Isla de los Monos на Гатуне при лодочной поездке из Гамбоа. Официальный национальный маршрут подтверждает это название и контекст."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "relationships.destination_panama_gamboa",
+      "probability": 95,
+      "reason": "Официальный маршрут называет Гамбоа исходной точкой лодочной поездки к Monkey Island.",
+      "selected": "destination_panama_gamboa"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 40,
+      "reason": "Точный остров не отождествлён с отдельным QID; QID всего озера не присваивается острову."
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Название используется для туристической остановки/нескольких островков; конкретная точка не закреплена в программе."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/monkey-island-gatun/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Туристическая природная остановка Isla de los Monos на Гатуне при лодочной поездке из Гамбоа. Официальный национальный маршрут подтверждает это название и контекст."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/monkey-island-gatun/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "relationships.destination_panama_gamboa",
+      "sourceUrl": "https://www.tourismpanama.com/plan-your-trip/itineraries/panama-city/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Официальный маршрут называет Гамбоа исходной точкой лодочной поездки к Monkey Island."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_panama_gamboa"
+    }
+  ],
+  "reviewNote": "Официальный источник: https://www.tourismpanama.com/plan-your-trip/itineraries/panama-city/; не присвоены координаты озера или пристани."
+}

@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_punta_del_este",
+  "stableId": "destination_uruguay_punta_del_este",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/punta-del-este/",
+  "sourceFingerprint": "de2194b0b87d95ab9af2d06923b1a49a74113339f04a104325a0ac0ae9789ad9",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пунта дель Эсте",
+      "reason": "Punta del Este — город-курорт Maldonado в Уругвае, а не одноимённый мыс либо остров вне Уругвая."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q56069",
+      "reason": "Punta del Este — город-курорт Maldonado в Уругвае, а не одноимённый мыс либо остров вне Уругвая."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Punta_del_Este",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3440939",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-34.95573853238412,-54.93811503010452]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 99,
+      "selected": "country_uruguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/uruguay/place/punta-del-este/",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Punta del Este — город-курорт Maldonado в Уругвае, а не одноимённый мыс либо остров вне Уругвая."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/punta-del-este.md",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56069",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Punta del Este — город-курорт Maldonado в Уругвае, а не одноимённый мыс либо остров вне Уругвая."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56069",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56069",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56069",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q56069",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q56069",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Punta_del_Este"
+    },
+    "geonamesId": "3440939"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "location": {
+    "latitude": -34.95573853238412,
+    "longitude": -54.93811503010452,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q56069"
+  },
+  "reviewNote": null
+}

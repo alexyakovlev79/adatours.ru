@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_porog_kilo_3",
+  "stableId": "destination_suriname_porog_kilo_3",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/kilo-3-rapids/",
+  "sourceFingerprint": "d3d1113504124d3c8a722d6bc6d94e0bf2b6c11db2936ab7dff0899b134f8f42",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Порог Кило 3",
+      "reason": "Кило 3 — отдельный порог/ручей в экскурсионной системе Кабалебо: местный оператор отделяет эту остановку от BWKW и водопадов."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/kilo-3-rapids.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Кило 3 — отдельный порог/ручей в экскурсионной системе Кабалебо: местный оператор отделяет эту остановку от BWKW и водопадов."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Кило 3 — отдельный порог/ручей в экскурсионной системе Кабалебо: местный оператор отделяет эту остановку от BWKW и водопадов."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.orangesuriname.com/en/tours/kabalebo-nature-resort/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/kilo-3-rapids/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Точный QID/OSM/координаты порога не подтверждены; координаты лоджа и аэродрома не используются."
+}

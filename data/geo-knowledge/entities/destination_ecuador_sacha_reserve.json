@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_sacha_reserve",
+  "stableId": "destination_ecuador_sacha_reserve",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/sacha-reserve/",
+  "sourceFingerprint": "d0a7cd187312b95a1ece8f21d656c9149004f59e3b30981dc2279a68ea4ea86d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.sachalodge.com/about-us/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Заповедник Сача",
+      "reason": "Сача — частный природный резерват Sacha Lodge в эквадорской Амазонии. Оператор подтверждает собственный охраняемый лес и canopy walkway; это не национальный парк Ясуни и не город La Joya de los Sachas. Координаты лоджа не подменяют границы заповедника."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.sachalodge.com/about-us/",
+      "reason": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/sacha-reserve.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Сача — частный природный резерват Sacha Lodge в эквадорской Амазонии. Оператор подтверждает собственный охраняемый лес и canopy walkway; это не национальный парк Ясуни и не город La Joya de los Sachas. Координаты лоджа не подменяют границы заповедника."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/sacha-reserve/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.sachalodge.com/about-us/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/sacha-reserve.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ]
+}

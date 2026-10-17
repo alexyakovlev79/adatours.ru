@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_lake_sofia",
+  "stableId": "destination_chile_lake_sofia",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/lake-sofia/",
+  "sourceFingerprint": "69473d7e8cc115b4a2d60cf5f3bf9596cb90b815f7b80a7053eafbcc8178438f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро София",
+      "reason": "Озеро София — Lago Sofía в Magallanes у Пуэрто-Наталеса, сток к Prat; совпадают география MD, точная Commons authority и Wikidata API."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q22538623",
+      "reason": "Озеро София — Lago Sofía в Magallanes у Пуэрто-Наталеса, сток к Prat; совпадают география MD, точная Commons authority и Wikidata API."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-51.526944444444,-72.648055555556",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3870748",
+      "reason": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lake-sofia.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Озеро София — Lago Sofía в Magallanes у Пуэрто-Наталеса, сток к Prat; совпадают география MD, точная Commons authority и Wikidata API."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sofia_lake",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Озеро София — Lago Sofía в Magallanes у Пуэрто-Наталеса, сток к Prat; совпадают география MD, точная Commons authority и Wikidata API."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22538623",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Озеро София — Lago Sofía в Magallanes у Пуэрто-Наталеса, сток к Prat; совпадают география MD, точная Commons authority и Wikidata API."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22538623",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Sofia_lake",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q22538623",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/lake-sofia/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q22538623",
+    "geonamesId": "3870748"
+  },
+  "location": {
+    "latitude": -51.526944444444,
+    "longitude": -72.648055555556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q22538623"
+  },
+  "reviewNote": "Q113516442 из сторонней выдачи относится к географическому словарю, а не озеру; отклонён."
+}

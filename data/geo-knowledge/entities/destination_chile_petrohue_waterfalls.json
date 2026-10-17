@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_petrohue_waterfalls",
+  "stableId": "destination_chile_petrohue_waterfalls",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/petrohue-waterfalls/",
+  "sourceFingerprint": "5798ac653e82d5501f61b14b8626a27e491552ef545e71d96e4680dcaabbd3d8",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Водопады Петроуэ",
+      "reason": "Водопады Петроуэ — Saltos de Petrohué в парке Vicente Pérez Rosales, отдельный каскадный объект на реке, не вся река."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q430990",
+      "reason": "Водопады Петроуэ — Saltos de Petrohué в парке Vicente Pérez Rosales, отдельный каскадный объект на реке, не вся река."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-41.17235,-72.44683",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":1858708447}",
+      "reason": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Petrohu%C3%A9_Waterfalls",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/petrohue-waterfalls.md",
+      "checkedAt": "2026-10-17T08:21:33.033Z",
+      "note": "Current approved MD and stable ID checked. Водопады Петроуэ — Saltos de Petrohué в парке Vicente Pérez Rosales, отдельный каскадный объект на реке, не вся река."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430990",
+      "checkedAt": "2026-10-17T08:21:33.033Z",
+      "note": "Водопады Петроуэ — Saltos de Petrohué в парке Vicente Pérez Rosales, отдельный каскадный объект на реке, не вся река."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430990",
+      "checkedAt": "2026-10-17T08:21:33.033Z",
+      "note": "Водопады Петроуэ — Saltos de Petrohué в парке Vicente Pérez Rosales, отдельный каскадный объект на реке, не вся река."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430990",
+      "checkedAt": "2026-10-17T08:21:33.033Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430990",
+      "checkedAt": "2026-10-17T08:21:33.033Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430990",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q430990",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/petrohue-waterfalls/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q430990",
+    "osm": {
+      "type": "node",
+      "id": 1858708447
+    },
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Petrohu%C3%A9_Waterfalls"
+    }
+  },
+  "location": {
+    "latitude": -41.17235,
+    "longitude": -72.44683,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q430990"
+  }
+}

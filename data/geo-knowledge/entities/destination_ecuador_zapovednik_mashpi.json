@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_zapovednik_mashpi",
+  "stableId": "destination_ecuador_zapovednik_mashpi",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/mashpi-reserve/",
+  "sourceFingerprint": "a953fff1c6aa12f8a2516a7ebcbbc3cbd82db2e7bf75f8b3987162c86682bd59",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.mashpilodge.com/the-reserve/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mashpilodge.com/the-reserve/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Mashpi Reserve — частный заповедник облачного леса в Metropolitan District of Quito, Эквадор; собственная страница оператора отдельно описывает заповедник и исследовательскую станцию, а не только отель."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/mashpi-reserve.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/mashpi-reserve/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.mashpilodge.com/the-reserve/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Mashpi Reserve — частный заповедник облачного леса в Metropolitan District of Quito, Эквадор; собственная страница оператора отдельно описывает заповедник и исследовательскую станцию, а не только отель."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.mashpilodge.com/the-reserve/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Mashpi Reserve — частный заповедник облачного леса в Metropolitan District of Quito, Эквадор; собственная страница оператора отдельно описывает заповедник и исследовательскую станцию, а не только отель. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Заповедник Машпи",
+      "reason": "Mashpi Reserve — частный заповедник облачного леса в Metropolitan District of Quito, Эквадор; собственная страница оператора отдельно описывает заповедник и исследовательскую станцию, а не только отель."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.mashpilodge.com/the-reserve/",
+      "reason": "Mashpi Reserve — частный заповедник облачного леса в Metropolitan District of Quito, Эквадор; собственная страница оператора отдельно описывает заповедник и исследовательскую станцию, а не только отель."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Mashpi Reserve — частный заповедник облачного леса в Metropolitan District of Quito, Эквадор; собственная страница оператора отдельно описывает заповедник и исследовательскую станцию, а не только отель. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Отдельный QID и точка заповедника не подтверждены; не подставлены координаты гостиницы."
+}

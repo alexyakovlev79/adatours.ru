@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ostrov_sejmur_norte",
+  "stableId": "destination_ecuador_ostrov_sejmur_norte",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/north-seymour-island/",
+  "sourceFingerprint": "6d3e3f6974ef72ca145f4182347d69bf72f3fd0992b80c756f9bdeb9f72f46bf",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q492463"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/north-seymour-island/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q492463",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q492463",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q492463",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "North Seymour Island",
+      "reason": "Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q492463",
+      "reason": "Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.3915,-90.2841",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Galápagos North Seymour island near Baltra, matching bird colonies; not Baltra/South Seymour or Antarctic Seymour."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.3915,
+    "longitude": -90.2841,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q492463"
+  }
+}

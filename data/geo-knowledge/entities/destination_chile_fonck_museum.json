@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_fonck_museum",
+  "stableId": "destination_chile_fonck_museum",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/fonck-museum/",
+  "sourceFingerprint": "1164610c429a3945519d48889c7768c80decbc63a235197b3405a4af58489d3a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q19945535"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19945535",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Museo Fonck — археологический музей Viña del Mar, Чили; не персона Francisco Fonck."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/fonck-museum.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/fonck-museum/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19945535",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Museo Fonck — археологический музей Viña del Mar, Чили; не персона Francisco Fonck."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19945535",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q19945535",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Museo Fonck — археологический музей Viña del Mar, Чили; не персона Francisco Fonck.",
+      "selected": "Музей Фонка"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Museo Fonck — археологический музей Viña del Mar, Чили; не персона Francisco Fonck.",
+      "selected": "Q19945535"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.01980611,-71.54988889]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.01980611,
+    "longitude": -71.54988889,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q19945535"
+  }
+}

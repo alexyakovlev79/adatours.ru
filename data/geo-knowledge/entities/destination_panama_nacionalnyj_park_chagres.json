@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_nacionalnyj_park_chagres",
+  "stableId": "destination_panama_nacionalnyj_park_chagres",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/chagres-national-park/",
+  "sourceFingerprint": "8e9b4757d583c165ee6a9c2376f4980a36415cce3a9c8f892268bfee713f4469",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q3488567"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/chagres-national-park/",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3488567",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3488567",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3488567",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Chagres National Park",
+      "reason": "Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q3488567",
+      "reason": "Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "9.4,-79.5",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Exact Panamanian national park, river/Embera context matches; distinct from Chagres River and Fort San Lorenzo."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 9.4,
+    "longitude": -79.5,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3488567"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_nacionalnyj_park_bernardo_o_higgins",
+  "stableId": "destination_chile_nacionalnyj_park_bernardo_o_higgins",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/bernardo-ohiggins-national-park/",
+  "sourceFingerprint": "bb7a42e5a64eecbf647dcda96c92e65ed3169b4460fab30038c536fcb57b0dd2",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1702858"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/bernardo-ohiggins-national-park/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1702858",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1702858",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1702858",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Bernardo O'Higgins National Park",
+      "reason": "Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1702858",
+      "reason": "Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-50,-74",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Exact national park spanning Aysén and Magallanes, matching MD and Southern Patagonian Ice Field context."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -50,
+    "longitude": -74,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1702858"
+  }
+}

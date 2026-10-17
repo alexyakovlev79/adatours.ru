@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_buhta_shelter_bej",
+  "stableId": "destination_panama_buhta_shelter_bej",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/shelter-bay/",
+  "sourceFingerprint": "211812c826377bd9b938f159996e7bf3e0032e4adbeb771124625704c397b56c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Бухта Шелтер-Бей",
+      "reason": "Шелтер-Бей у карибского входа в Панамский канал; официальный адрес марины Fort Sherman, Colón соответствует тексту MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 85,
+      "selected": "https://shelterbaymarina.com/",
+      "reason": "Марина — основной операционный референт страницы бухты с яхтенной стоянкой; официальный сайт оператора Shelter Bay Marina, Fort Sherman/Colón."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/shelter-bay.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Шелтер-Бей у карибского входа в Панамский канал; официальный адрес марины Fort Sherman, Colón соответствует тексту MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://shelterbaymarina.com/contact-us/",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Шелтер-Бей у карибского входа в Панамский канал; официальный адрес марины Fort Sherman, Colón соответствует тексту MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://shelterbaymarina.com/",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Марина — основной операционный референт страницы бухты с яхтенной стоянкой; официальный сайт оператора Shelter Bay Marina, Fort Sherman/Colón."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://shelterbaymarina.com/contact-us/",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/shelter-bay/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "officialUrl": "https://shelterbaymarina.com/"
+  },
+  "reviewNote": "Не присвоен QID соседнего города или широкого залива Лимон."
+}

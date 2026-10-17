@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_parque_condor",
+  "stableId": "destination_ecuador_parque_condor",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/parque-condor/",
+  "sourceFingerprint": "810e2ff2145f8a4fa77fdc20ed799c8aa29c675fc1f3745e7a642e3d60efb28e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Парк Кондор",
+      "reason": "Fundación Parque Cóndor — центр спасения хищных птиц на Pucará de Curyloma возле Otavalo. Не городской Parque Cóndor южнее города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q117358068",
+      "reason": "Fundación Parque Cóndor — центр спасения хищных птиц на Pucará de Curyloma возле Otavalo. Не городской Parque Cóndor южнее города."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[0.231956,-78.239958]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.parquecondor.com/",
+      "reason": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":2169672236}",
+      "reason": "Точный именованный объект OSM; страна, название и географический контекст совпадают."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/parque-condor/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Fundación Parque Cóndor — центр спасения хищных птиц на Pucará de Curyloma возле Otavalo. Не городской Parque Cóndor южнее города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/parque-condor.md",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q117358068",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Fundación Parque Cóndor — центр спасения хищных птиц на Pucará de Curyloma возле Otavalo. Не городской Parque Cóndor южнее города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q117358068",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.parquecondor.com/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.parquecondor.com/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2169672236",
+      "checkedAt": "2026-10-17T08:27:00.374Z",
+      "note": "Точный именованный объект OSM; страна, название и географический контекст совпадают."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q117358068",
+    "officialUrl": "https://www.parquecondor.com/",
+    "osm": {
+      "type": "node",
+      "id": 2169672236
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": 0.231956,
+    "longitude": -78.239958,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q117358068"
+  },
+  "reviewNote": null
+}

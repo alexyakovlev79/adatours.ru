@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_tena",
+  "stableId": "destination_ecuador_tena",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/tena/",
+  "sourceFingerprint": "ac086be419df0a1e3f444bc8d80c0ac623ca8f1a0011f7479896ae317ed4a4ba",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q994312",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tena,_Ecuador"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Тена",
+      "reason": "Тена — город, столица провинции Напо в Эквадоре, база речных поездок и рафтинга. Не кантон Tena и не одноимённые поселения других стран."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q994312",
+      "reason": "Тена — город, столица провинции Напо в Эквадоре, база речных поездок и рафтинга. Не кантон Tena и не одноимённые поселения других стран."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Tena,_Ecuador",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.9888888888888888, -77.81583333333333",
+      "reason": "Координаты выбранного объекта из указанного источника; роль settlement_center. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/tena.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Тена — город, столица провинции Напо в Эквадоре, база речных поездок и рафтинга. Не кантон Tena и не одноимённые поселения других стран."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tena/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q994312",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Тена — город, столица провинции Напо в Эквадоре, база речных поездок и рафтинга. Не кантон Tena и не одноимённые поселения других стран."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tena,_Ecuador",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q994312",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль settlement_center. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/tena.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.9888888888888888,
+    "longitude": -77.81583333333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q994312"
+  }
+}

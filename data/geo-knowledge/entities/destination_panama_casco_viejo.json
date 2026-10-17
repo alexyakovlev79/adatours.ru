@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_casco_viejo",
+  "stableId": "destination_panama_casco_viejo",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/casco-viejo/",
+  "sourceFingerprint": "ccc2bc48a75d16811346c41505043fd43c8bb4f751a8a78accd37b8d935ae82a",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Каско-Вьехо",
+      "reason": "Исторический район Casco Viejo Панама-Сити, не Panamá Viejo и не весь составной объект UNESCO."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Карточка именно исторического квартала.",
+      "selected": "Q2945651"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink того же квартала.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Casco_Viejo,_Panama\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка исторического квартала.",
+      "selected": "8.9525,-79.535"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/casco-viejo/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Исторический район Casco Viejo Панама-Сити, не Panamá Viejo и не весь составной объект UNESCO."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/casco-viejo/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2945651",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Карточка именно исторического квартала."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2945651",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Sitelink того же квартала."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2945651",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Опорная точка исторического квартала."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2945651",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Casco_Viejo,_Panama"
+    }
+  },
+  "location": {
+    "latitude": 8.9525,
+    "longitude": -79.535,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2945651"
+  },
+  "reviewNote": "ID UNESCO общего/составного объекта не присвоен всему кварталу как тождественная сущность."
+}

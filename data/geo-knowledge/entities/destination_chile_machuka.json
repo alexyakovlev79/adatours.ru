@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_machuka",
+  "stableId": "destination_chile_machuka",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/machuca/",
+  "sourceFingerprint": "e95fa146a91017ee7663f5d9415e0c7d4d11a6e0d924b51550146bbf64793369",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Мачука",
+      "reason": "Поселение Machuca на пути от El Tatio в San Pedro de Atacama, Antofagasta. Не фильм, река или высокогорный Bofedal de Machuca."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID высокогорного поселения.",
+      "selected": "3881085"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "Точный OSM place=hamlet Machuca.",
+      "selected": "{\"type\":\"node\",\"id\":214226931}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка поселения, не реки/лагуны.",
+      "selected": "-22.59795,-68.0642"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 25,
+      "reason": "Поиск дал фильм Q289043 и болото Q108496881; их нельзя присваивать деревне. Точный QID деревни не подтверждён."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/machuca/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Поселение Machuca на пути от El Tatio в San Pedro de Atacama, Antofagasta. Не фильм, река или высокогорный Bofedal de Machuca."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/machuca/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/20107848",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "GeoNames ID высокогорного поселения."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/20107848",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный OSM place=hamlet Machuca."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/20107848",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точка поселения, не реки/лагуны."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/20107848",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Поселение Machuca на пути от El Tatio в San Pedro de Atacama, Antofagasta. Не фильм, река или высокогорный Bofedal de Machuca."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "geonamesId": "3881085",
+    "osm": {
+      "type": "node",
+      "id": 214226931
+    }
+  },
+  "location": {
+    "latitude": -22.59795,
+    "longitude": -68.0642,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://mapcarta.com/20107848"
+  }
+}

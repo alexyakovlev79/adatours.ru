@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_fernandina_island",
+  "stableId": "destination_ecuador_fernandina_island",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/fernandina-island/",
+  "sourceFingerprint": "ad5d01480a868745cd7cff31aa53f3a694f780b504d886fcb2568920415698eb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q83582",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Fernandina_Island"
+    }
+  },
+  "location": {
+    "latitude": -0.37,
+    "longitude": -91.55,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Fernandina_Island"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fernandina_Island",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/fernandina-island.md",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/fernandina-island/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q83582",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fernandina_Island",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fernandina_Island",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Fernandina_Island",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Остров Фернандина",
+      "reason": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q83582",
+      "reason": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Fernandina_Island",
+      "reason": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-0.37,-91.55",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Fernandina Island — остров Галапагосского архипелага Эквадора западнее Isabela; совпадает остров, а не только пункт высадки Punta Espinoza. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ahu_hanga_pukure",
+  "stableId": "destination_chile_ahu_hanga_pukure",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ahu-hanga-poukura/",
+  "sourceFingerprint": "3af8f18b52ce63bd12c5a9d2a11186ac69f81df87b5a2e14e8f6038e23a422b3",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Аху-Ханга-Пукуре",
+      "reason": "Аху-Ханга-Пукуре соответствует Ahu Haŋa Poukura/Ahu Hanga Poukura на южном побережье Рапа-Нуи; точная OSM node имеет эти два названия и historic=monument."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-27.1670513,-109.3794339",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":2307591250}",
+      "reason": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ahu-hanga-poukura.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Аху-Ханга-Пукуре соответствует Ahu Haŋa Poukura/Ahu Hanga Poukura на южном побережье Рапа-Нуи; точная OSM node имеет эти два названия и historic=monument."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2307591250.json",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Ханга-Пукуре соответствует Ahu Haŋa Poukura/Ahu Hanga Poukura на южном побережье Рапа-Нуи; точная OSM node имеет эти два названия и historic=monument."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2307591250.json",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2307591250.json",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2307591250.json",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/ahu-hanga-poukura/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -27.1670513,
+    "longitude": -109.3794339,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/api/0.6/node/2307591250.json"
+  },
+  "reviewNote": "Транслитерация Пукуре/Поукура сопоставлена по побережью и археологическому контексту; самостоятельный QID не подтверждён.",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 2307591250
+    }
+  }
+}

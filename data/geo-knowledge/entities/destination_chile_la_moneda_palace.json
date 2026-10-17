@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_la_moneda_palace",
+  "stableId": "destination_chile_la_moneda_palace",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/la-moneda-palace/",
+  "sourceFingerprint": "e17b0d651fb656b58fb4a644c00002003febafcda3f3bb06c0bcd42576fb609c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1146881"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1146881",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Palacio de La Moneda в центре Сантьяго, Чили; исторический президентский дворец, не станция метро."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/la-moneda-palace.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/la-moneda-palace/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1146881",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Palacio de La Moneda в центре Сантьяго, Чили; исторический президентский дворец, не станция метро."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1146881",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1146881",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Palacio de La Moneda в центре Сантьяго, Чили; исторический президентский дворец, не станция метро.",
+      "selected": "Дворец Ла-Монеда"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Palacio de La Moneda в центре Сантьяго, Чили; исторический президентский дворец, не станция метро.",
+      "selected": "Q1146881"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.44305556,-70.65388889]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.44305556,
+    "longitude": -70.65388889,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1146881"
+  }
+}

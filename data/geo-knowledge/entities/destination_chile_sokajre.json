@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_sokajre",
+  "stableId": "destination_chile_sokajre",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/socaire/",
+  "sourceFingerprint": "06fab99c6671d2e42d8a6136f4a20dd42dd09197ba1429666a3bd3a697f91df2",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Сокайре",
+      "reason": "Деревня Socaire к югу от San Pedro de Atacama, на пути к Miscanti и Miñiques; совпадает страна и маршрутный контекст."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q7550265",
+      "reason": "Деревня Socaire к югу от San Pedro de Atacama, на пути к Miscanti и Miñiques; совпадает страна и маршрутный контекст."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Socaire",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3870774",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-23.5902,-67.8904]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/socaire/",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Деревня Socaire к югу от San Pedro de Atacama, на пути к Miscanti и Miñiques; совпадает страна и маршрутный контекст."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/socaire.md",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7550265",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Деревня Socaire к югу от San Pedro de Atacama, на пути к Miscanti и Miñiques; совпадает страна и маршрутный контекст."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7550265",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7550265",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7550265",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7550265",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q7550265",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Socaire"
+    },
+    "geonamesId": "3870774"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -23.5902,
+    "longitude": -67.8904,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7550265"
+  },
+  "reviewNote": null
+}

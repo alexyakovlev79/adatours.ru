@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ostrov_tintoreras",
+  "stableId": "destination_ecuador_ostrov_tintoreras",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/tintoreras-islets/",
+  "sourceFingerprint": "38b7383c6a50bd955f694063f796a35b78e63275bbf0151028dfa5e1301dc386",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Остров Тинторерас",
+      "reason": "MD описывает островки Tintoreras у Исабелы. Основной именованный референт — Islote Las Tintoreras южнее Пуэрто-Вильямиля; парк подтверждает остров и место посещения."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "reason": "Именованный островок Tintoreras у Puerto Villamil, Ecuador.",
+      "selected": "Q9009920"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "reason": "Точный основной островок, не весь архипелаг.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Las_Tintoreras_Islet\"}"
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "reason": "Контур Las Tintoreras с place=islet, южнее Puerto Villamil.",
+      "selected": "{\"type\":\"way\",\"id\":5113447}"
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "reason": "Опорная точка точного контура островка; туристическая OSM node севернее и округлённый P625 не усредняются.",
+      "selected": "-0.97175,-90.9609"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tintoreras-islets/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD описывает островки Tintoreras у Исабелы. Основной именованный референт — Islote Las Tintoreras южнее Пуэрто-Вильямиля; парк подтверждает остров и место посещения."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tintoreras-islets/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q9009920",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Именованный островок Tintoreras у Puerto Villamil, Ecuador."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Las_Tintoreras_Islet",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный основной островок, не весь архипелаг."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/W5113447",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Контур Las Tintoreras с place=islet, южнее Puerto Villamil."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W5113447",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Опорная точка точного контура островка; туристическая OSM node севернее и округлённый P625 не усредняются."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://galapagos.gob.ec/comunidad-explora-galapagos-con-seguridad/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD описывает островки Tintoreras у Исабелы. Основной именованный референт — Islote Las Tintoreras южнее Пуэрто-Вильямиля; парк подтверждает остров и место посещения."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q9009920",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Las_Tintoreras_Islet"
+    },
+    "osm": {
+      "type": "way",
+      "id": 5113447
+    }
+  },
+  "location": {
+    "latitude": -0.97175,
+    "longitude": -90.9609,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W5113447"
+  }
+}

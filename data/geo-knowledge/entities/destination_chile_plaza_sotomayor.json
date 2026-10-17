@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_plaza_sotomayor",
+  "stableId": "destination_chile_plaza_sotomayor",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/plaza-sotomayor/",
+  "sourceFingerprint": "718926d048cc142a10ad04974c2f833ce24845a63322afa5b6df643d36a89de5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q7203651"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/plaza-sotomayor/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7203651",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7203651",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7203651",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Plaza Sotomayor, Valparaíso",
+      "reason": "Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q7203651",
+      "reason": "Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-33.038466666666665,-71.62876666666666",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Exact civic square at Valparaíso port is primary page referent despite walking context; not Antofagasta namesake."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -33.038466666666665,
+    "longitude": -71.62876666666666,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7203651"
+  }
+}

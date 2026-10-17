@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vulkan_ruminyaui",
+  "stableId": "destination_ecuador_vulkan_ruminyaui",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/ruminahui-volcano/",
+  "sourceFingerprint": "e1af97adc9a7d5c8c028b6ccc95b4a2e101b10f97e98b49ca0ec33f8847094ad",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Вулкан Руминяуи",
+      "reason": "MD: вулкан Rumiñahui в районе Cotopaxi. Точная статья вулкана отделена от кантона и исторической личности."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "MD: вулкан Rumiñahui в районе Cotopaxi. Точная статья вулкана отделена от кантона и исторической личности.",
+      "selected": "Q1759338"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья подтверждённого географического объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Rumi%C3%B1ahui_(volcano)\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координата именованного вулкана; точка вершины, не место начала прогулки.",
+      "selected": "-0.633,-78.533"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/ruminahui-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: вулкан Rumiñahui в районе Cotopaxi. Точная статья вулкана отделена от кантона и исторической личности."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/ruminahui-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1759338",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: вулкан Rumiñahui в районе Cotopaxi. Точная статья вулкана отделена от кантона и исторической личности."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rumi%C3%B1ahui_(volcano)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точная статья подтверждённого географического объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rumi%C3%B1ahui_(volcano)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Координата именованного вулкана; точка вершины, не место начала прогулки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rumi%C3%B1ahui_(volcano)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: вулкан Rumiñahui в районе Cotopaxi. Точная статья вулкана отделена от кантона и исторической личности."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1759338",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Rumi%C3%B1ahui_(volcano)"
+    }
+  },
+  "location": {
+    "latitude": -0.633,
+    "longitude": -78.533,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Rumi%C3%B1ahui_(volcano)"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_kamenolomnya_puna_pau",
+  "stableId": "destination_chile_kamenolomnya_puna_pau",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/puna-pau-quarry/",
+  "sourceFingerprint": "ccabe5e0477bba3d9c7d39fc1bb441e2bc76033529776024da311b835114fc2f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Каменоломня Пуна-Пау",
+      "reason": "Каменоломня/шлаковый конус Puna Pau на Рапа-Нуи, источник красного камня для пукао."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q3496141"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Puna_Pau\"}"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM археологической площадки Puna Pau.",
+      "selected": "{\"type\":\"node\",\"id\":6556430294}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка конуса/карьера, не площадка общего обзора острова.",
+      "selected": "-27.148333333333333,-109.4038888888889"
+    },
+    {
+      "field": "relationships.destination_chile_ostrov_pashi",
+      "probability": 95,
+      "reason": "WD фиксирует Easter Island как физический объект расположения.",
+      "selected": "destination_chile_ostrov_pashi"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/puna-pau-quarry/",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Каменоломня/шлаковый конус Puna Pau на Рапа-Нуи, источник красного камня для пукао."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/puna-pau-quarry/",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3496141",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3496141",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3496141",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "OSM археологической площадки Puna Pau."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3496141",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "Точка конуса/карьера, не площадка общего обзора острова."
+    },
+    {
+      "field": "relationships.destination_chile_ostrov_pashi",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3496141",
+      "checkedAt": "2026-10-17T08:12:04.917Z",
+      "note": "WD фиксирует Easter Island как физический объект расположения."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3496141",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Каменоломня/шлаковый конус Puna Pau на Рапа-Нуи, источник красного камня для пукао."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_ostrov_pashi"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3496141",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Puna_Pau"
+    },
+    "osm": {
+      "type": "node",
+      "id": 6556430294
+    }
+  },
+  "location": {
+    "latitude": -27.148333333333333,
+    "longitude": -109.4038888888889,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3496141"
+  }
+}

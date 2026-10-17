@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_niv_amsterdam",
+  "stableId": "destination_suriname_niv_amsterdam",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/nieuw-amsterdam/",
+  "sourceFingerprint": "eb2269740d0dbbe2cd67e5b258388057c3a66dde733a2eda894981c7945faf40",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Ньив-Амстердам",
+      "reason": "Nieuw Amsterdam у слияния Суринам и Коммевейне, не New Amsterdam в Гайане и не отдельный форт."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка Nieuw Amsterdam в Суринаме.",
+      "selected": "Q762619"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Точная статья населённого пункта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Nieuw_Amsterdam,_Suriname\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты населённого пункта из инфобокса; более грубая точка страницы не усреднялась.",
+      "selected": "5.88083,-55.08444"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/nieuw-amsterdam/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Nieuw Amsterdam у слияния Суринам и Коммевейне, не New Amsterdam в Гайане и не отдельный форт."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/nieuw-amsterdam/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q762619",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная карточка Nieuw Amsterdam в Суринаме."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nieuw_Amsterdam,_Suriname",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная статья населённого пункта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nieuw_Amsterdam,_Suriname",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Координаты населённого пункта из инфобокса; более грубая точка страницы не усреднялась."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q762619",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Nieuw Amsterdam у слияния Суринам и Коммевейне, не New Amsterdam в Гайане и не отдельный форт."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q762619",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Nieuw_Amsterdam,_Suriname"
+    }
+  },
+  "location": {
+    "latitude": 5.88083,
+    "longitude": -55.08444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Nieuw_Amsterdam,_Suriname"
+  }
+}

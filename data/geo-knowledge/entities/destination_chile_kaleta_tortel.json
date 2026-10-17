@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_kaleta_tortel",
+  "stableId": "destination_chile_kaleta_tortel",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/caleta-tortel/",
+  "sourceFingerprint": "632301e502eca3d5afd7e961bac29736578c72231d5a6957d7c56114d6e51efe",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q200955",
+    "geonamesId": "3869485"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/caleta-tortel/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200955",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200955",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200955",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200955",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Caleta Tortel",
+      "reason": "Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q200955",
+      "reason": "Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3869485",
+      "reason": "Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-47.8035,-73.5376111111111",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Coastal settlement near Baker river mouth in Aysén matches boardwalk village; not Tortel commune."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -47.8035,
+    "longitude": -73.5376111111111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q200955"
+  }
+}

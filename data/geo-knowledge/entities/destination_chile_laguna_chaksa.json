@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_laguna_chaksa",
+  "stableId": "destination_chile_laguna_chaksa",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/laguna-chaxa/",
+  "sourceFingerprint": "9a43a92fe020e725c57b52fdbbc71fcbcbeff2397c3c1c00b1efd95bf4f3adb5",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Лагуна Чакса",
+      "reason": "Лагуна Chaxa на Salar de Atacama; отдельная от кассы, парковки и гидрологического района Soncor."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q23650091"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Laguna_Chaxa\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID лагуны.",
+      "selected": "3895321"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM геометрия воды, не туристический офис.",
+      "selected": "{\"type\":\"way\",\"id\":174503347}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка воды по OSM-полигону; не смотровая.",
+      "selected": "-23.32793,-68.16752"
+    },
+    {
+      "field": "relationships.destination_chile_laguna_miskanti",
+      "probability": 95,
+      "reason": "Обе лагуны явно соединены поездкой в MD.",
+      "selected": "destination_chile_laguna_miskanti"
+    },
+    {
+      "field": "relationships.destination_chile_laguna_minikes",
+      "probability": 95,
+      "reason": "Миньикес явно указан в том же маршруте.",
+      "selected": "destination_chile_laguna_minikes"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-chaxa/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Лагуна Chaxa на Salar de Atacama; отдельная от кассы, парковки и гидрологического района Soncor."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-chaxa/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23650091",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23650091",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23650091",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "GeoNames ID лагуны."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23650091",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "OSM геометрия воды, не туристический офис."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/20136320",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Опорная точка воды по OSM-полигону; не смотровая."
+    },
+    {
+      "field": "relationships.destination_chile_laguna_miskanti",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-chaxa/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Обе лагуны явно соединены поездкой в MD."
+    },
+    {
+      "field": "relationships.destination_chile_laguna_minikes",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-chaxa/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Миньикес явно указан в том же маршруте."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23650091",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Лагуна Chaxa на Salar de Atacama; отдельная от кассы, парковки и гидрологического района Soncor."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_laguna_miskanti"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_laguna_minikes"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q23650091",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Laguna_Chaxa"
+    },
+    "geonamesId": "3895321",
+    "osm": {
+      "type": "way",
+      "id": 174503347
+    }
+  },
+  "location": {
+    "latitude": -23.32793,
+    "longitude": -68.16752,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/20136320"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_reka_zhatunyaku",
+  "stableId": "destination_ecuador_reka_zhatunyaku",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/jatunyacu-river/",
+  "sourceFingerprint": "1ff7d44438678975fc2eaf6a9b3fc5e77d6b13311bf2f7b4fd351be68c686281",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q23878690",
+    "geonamesId": "3655481"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Река Жатуньяку",
+      "reason": "Жатуньяку — Río Jatunyacu в провинции Напо около Тены, истоковая река Напо, известная рафтингом. Из двух P625 выбрана точка устья (applies to part: river mouth), не среднее источника и устья."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q23878690",
+      "reason": "Жатуньяку — Río Jatunyacu в провинции Напо около Тены, истоковая река Напо, известная рафтингом. Из двух P625 выбрана точка устья (applies to part: river mouth), не среднее источника и устья."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3655481",
+      "reason": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-1.0475, -77.80722222222222",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/jatunyacu-river.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Жатуньяку — Río Jatunyacu в провинции Напо около Тены, истоковая река Напо, известная рафтингом. Из двух P625 выбрана точка устья (applies to part: river mouth), не среднее источника и устья."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/jatunyacu-river/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23878690",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Жатуньяку — Río Jatunyacu в провинции Напо около Тены, истоковая река Напо, известная рафтингом. Из двух P625 выбрана точка устья (applies to part: river mouth), не среднее источника и устья."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23878690",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23878690",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/jatunyacu-river.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -1.0475,
+    "longitude": -77.80722222222222,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q23878690"
+  }
+}

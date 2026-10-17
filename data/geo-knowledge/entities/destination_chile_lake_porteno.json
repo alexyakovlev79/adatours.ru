@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_lake_porteno",
+  "stableId": "destination_chile_lake_porteno",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/lake-porteno/",
+  "sourceFingerprint": "badb0371dc1ba6770ac535a8745b1287ac19ab684ab09abbced4c480f9636d46",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Портеньо",
+      "reason": "Озеро Портеньо — Lago Porteño в Última Esperanza/чилийской Патагонии на подходах к Торрес-дель-Пайне; точная Wikidata API запись с P17=Chile."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q7355937",
+      "reason": "Озеро Портеньо — Lago Porteño в Última Esperanza/чилийской Патагонии на подходах к Торрес-дель-Пайне; точная Wikidata API запись с P17=Chile."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-51.35,-72.8",
+      "reason": "Выбрана опорная P625 из Wikidata с минутной точностью; альтернативная GeoNames точка в источниках не усреднена."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3875413",
+      "reason": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lake-porteno.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Озеро Портеньо — Lago Porteño в Última Esperanza/чилийской Патагонии на подходах к Торрес-дель-Пайне; точная Wikidata API запись с P17=Chile."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7355937",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Озеро Портеньо — Lago Porteño в Última Esperanza/чилийской Патагонии на подходах к Торрес-дель-Пайне; точная Wikidata API запись с P17=Chile."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7355937",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Озеро Портеньо — Lago Porteño в Última Esperanza/чилийской Патагонии на подходах к Торрес-дель-Пайне; точная Wikidata API запись с P17=Chile."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7355937",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Выбрана опорная P625 из Wikidata с минутной точностью; альтернативная GeoNames точка в источниках не усреднена."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7355937",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7355937",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/lake-porteno/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q7355937",
+    "geonamesId": "3875413"
+  },
+  "location": {
+    "latitude": -51.35,
+    "longitude": -72.8,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7355937"
+  }
+}

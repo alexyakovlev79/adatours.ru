@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_buccaneer_cove",
+  "stableId": "destination_ecuador_buccaneer_cove",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/buccaneer-cove/",
+  "sourceFingerprint": "f7f540d004b5f0a86cd50d88632d42ed47792c3e9119a7e4c48032c4ca6b0904",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3660080"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Бухта Буканеро",
+      "reason": "Бухта Буканеро — Caleta Bucanero / Caleta Buccaneer на северо-западе Сантьяго. Имена GeoNames и положение согласуются с описанием страницы; одноимённые развлекательные объекты США исключены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3660080",
+      "reason": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.16911, -90.82876",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/buccaneer-cove.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Бухта Буканеро — Caleta Bucanero / Caleta Buccaneer на северо-западе Сантьяго. Имена GeoNames и положение согласуются с описанием страницы; одноимённые развлекательные объекты США исключены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/buccaneer-cove/",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3660080/",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3660080/",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/buccaneer-cove.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.16911,
+    "longitude": -90.82876,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.geonames.org/3660080/"
+  }
+}

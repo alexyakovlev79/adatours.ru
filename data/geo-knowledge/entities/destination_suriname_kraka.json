@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_kraka",
+  "stableId": "destination_suriname_kraka",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/kraka/",
+  "sourceFingerprint": "753ceac73f76c4069185fbf5cf5eb44d26ac0d8e0ab696f44d5e73f37c4585c0",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 88,
+      "selected": "Крака",
+      "reason": "Крака — именованная местность Para District в Суринаме. Несмотря на обобщённый текст MD, совпадают название, страна и локальный туристический контекст."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 88,
+      "reason": "Точная GeoNames-местность Kraka в Para; не одноимённые места других стран.",
+      "selected": "3383805"
+    },
+    {
+      "field": "location",
+      "probability": 87,
+      "reason": "Опорная точка именованной местности Kraka, не обещание конкретного речного причала.",
+      "selected": "5.34609,-55.11232"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/kraka/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Крака — именованная местность Para District в Суринаме. Несмотря на обобщённый текст MD, совпадают название, страна и локальный туристический контекст."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/kraka/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19113288",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная GeoNames-местность Kraka в Para; не одноимённые места других стран."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19113288",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Опорная точка именованной местности Kraka, не обещание конкретного речного причала."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/19113288",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Крака — именованная местность Para District в Суринаме. Несмотря на обобщённый текст MD, совпадают название, страна и локальный туристический контекст."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "geonamesId": "3383805"
+  },
+  "location": {
+    "latitude": 5.34609,
+    "longitude": -55.11232,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/19113288"
+  }
+}

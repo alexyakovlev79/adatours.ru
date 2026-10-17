@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_punta_auano",
+  "stableId": "destination_ecuador_punta_auano",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/punta-ahuano/",
+  "sourceFingerprint": "fca554db987b5b7bc814cf27c1f6a9ecaf500f5537c7550d437d959108d2902d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/punta-ahuano/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Provincial government identifies La Punta de Ahuano as a port. Lodge first-hand directions identify Punta Ahuano as motor-canoe embarkation on Rio Napo. Page is this river stop, not Ahuano village."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.napo.gob.ec/trabajos-de-rehabilitacion-restablecen-el-acceso-al-puerto-de-la-punta-de-ahuano/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Provincial government identifies La Punta de Ahuano as a port. Lodge first-hand directions identify Punta Ahuano as motor-canoe embarkation on Rio Napo. Page is this river stop, not Ahuano village."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.napo.gob.ec/trabajos-de-rehabilitacion-restablecen-el-acceso-al-puerto-de-la-punta-de-ahuano/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Exact named feature in country_ecuador matches the source geography and content countryId."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Пунта-Ауано",
+      "reason": "Provincial government identifies La Punta de Ahuano as a port. Lodge first-hand directions identify Punta Ahuano as motor-canoe embarkation on Rio Napo. Page is this river stop, not Ahuano village."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Available Ahuano village center coordinates cannot identify the exact river port with 70% confidence."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 50,
+      "reason": "No verified port-specific QID; village identity is not used for the embarkation site."
+    }
+  ],
+  "reviewNote": ""
+}

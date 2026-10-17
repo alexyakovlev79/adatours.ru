@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_plantaciya_bakki",
+  "stableId": "destination_suriname_plantaciya_bakki",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/bakkie-plantation/",
+  "sourceFingerprint": "100d95a925ac67b44a34f1a246de8979df51689ca7c936163a4a820efd3d489f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 93,
+      "selected": "Плантация Бакки",
+      "reason": "Бакки / Reynsdorp — поселение на месте бывшей кофейной плантации; MD прямо делает поселение основным референтом, музей является частью посещения."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 90,
+      "reason": "Item Bakkie в Commewijne, прежнее название Reynsdorp.",
+      "selected": "Q1757308"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 90,
+      "reason": "Точная статья о Bakkie, включая бывшую плантацию Reynsdorp.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Bakkie,_Suriname\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames поселения Bakkie.",
+      "selected": "12088677"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM place=village Bakkie.",
+      "selected": "{\"type\":\"node\",\"id\":8949281233}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка поселения на бывшей плантации; не границы всего ressort.",
+      "selected": "5.9134,-54.8956"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/bakkie-plantation/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Бакки / Reynsdorp — поселение на месте бывшей кофейной плантации; MD прямо делает поселение основным референтом, музей является частью посещения."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/bakkie-plantation/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/36523032",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Item Bakkie в Commewijne, прежнее название Reynsdorp."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://mapcarta.com/36523032",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точная статья о Bakkie, включая бывшую плантацию Reynsdorp."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/36523032",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "GeoNames поселения Bakkie."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/36523032",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "OSM place=village Bakkie."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/36523032",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точка поселения на бывшей плантации; не границы всего ressort."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/36523032",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Бакки / Reynsdorp — поселение на месте бывшей кофейной плантации; MD прямо делает поселение основным референтом, музей является частью посещения."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1757308",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Bakkie,_Suriname"
+    },
+    "geonamesId": "12088677",
+    "osm": {
+      "type": "node",
+      "id": 8949281233
+    }
+  },
+  "location": {
+    "latitude": 5.9134,
+    "longitude": -54.8956,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://mapcarta.com/36523032"
+  },
+  "reviewNote": "https://museumbakkie.com/over/ подтверждает музей и историческое название; сайт музея не назначен officialUrl всего поселения."
+}

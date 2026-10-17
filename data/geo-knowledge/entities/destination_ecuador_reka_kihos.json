@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_reka_kihos",
+  "stableId": "destination_ecuador_reka_kihos",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/quijos-river/",
+  "sourceFingerprint": "ee912f8411f9ea99c3a590b96091accf69aa60224e5170b85cffb91e100c7bf4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q21006967",
+    "geonamesId": "3652559",
+    "wikipedia": {
+      "sv": "https://sv.wikipedia.org/wiki/R%C3%ADo_Quijos"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/quijos-river/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21006967",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21006967",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Exact named feature in country_ecuador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21006967",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21006967",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21006967",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21006967",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Gazetteer watercourse point represents the river; not a rafting launch or itinerary stop."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Река Кихос",
+      "reason": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 85,
+      "selected": "Q21006967",
+      "reason": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3652559",
+      "reason": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "{\"sv\":\"https://sv.wikipedia.org/wiki/R%C3%ADo_Quijos\"}",
+      "reason": "Rio Quijos watercourse in Napo; dedicated item and GeoNames identify the river. Q1104914 labels the wider Coca/Quijos system; the dedicated upper-river item selected."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":-0.15117,\"longitude\":-77.38447,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q21006967\"}",
+      "reason": "Gazetteer watercourse point represents the river; not a rafting launch or itinerary stop."
+    }
+  ],
+  "location": {
+    "latitude": -0.15117,
+    "longitude": -77.38447,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q21006967"
+  },
+  "reviewNote": ""
+}

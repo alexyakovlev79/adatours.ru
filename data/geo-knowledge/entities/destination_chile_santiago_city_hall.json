@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_santiago_city_hall",
+  "stableId": "destination_chile_santiago_city_hall",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/santiago-city-hall/",
+  "sourceFingerprint": "987a5de9841d088888857de4009381dfe7e35fbeee43ed20e28e456a17cb0291",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5818390"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.santiagoturismo.cl/es/palacio-consistorial-municipalidad-de-santiago-2/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Palacio Consistorial, здание муниципалитета на северной стороне Plaza de Armas у 21 de Mayo. Не организация муниципалитета и не ратуша в Доминиканской Республике."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/santiago-city-hall.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/santiago-city-hall/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5818390",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Palacio Consistorial, здание муниципалитета на северной стороне Plaza de Armas у 21 de Mayo. Не организация муниципалитета и не ратуша в Доминиканской Республике."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5818390",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.santiagoturismo.cl/es/palacio-consistorial-municipalidad-de-santiago-2/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Palacio Consistorial, здание муниципалитета на северной стороне Plaza de Armas у 21 de Mayo. Не организация муниципалитета и не ратуша в Доминиканской Республике.",
+      "selected": "Муниципалитет Сантьяго"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Palacio Consistorial, здание муниципалитета на северной стороне Plaza de Armas у 21 de Mayo. Не организация муниципалитета и не ратуша в Доминиканской Республике.",
+      "selected": "Q5818390"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.43696944,-70.65028056]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.43696944,
+    "longitude": -70.65028056,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5818390"
+  }
+}

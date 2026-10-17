@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_vodopad_chorro_del_macho",
+  "stableId": "destination_panama_vodopad_chorro_del_macho",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/chorro-del-macho-waterfall/",
+  "sourceFingerprint": "7aeeca18b69cf7ef37c08b67a850da807b37130b0651f391eb4b628e5dd127f7",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Водопад Чорро-дель-Мачо",
+      "reason": "Chorro El Macho у El Valle de Antón: найден именно водопад, отдельно от кассы, спортплощадки и обзорной точки."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "reason": "Узел waterway=waterfall с совпадающими названием и долиной.",
+      "selected": "{\"type\":\"node\",\"id\":1282129034}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты самого каскада, не входа.",
+      "selected": "8.62658,-80.13956"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/chorro-del-macho-waterfall/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Chorro El Macho у El Valle de Antón: найден именно водопад, отдельно от кассы, спортплощадки и обзорной точки."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/chorro-del-macho-waterfall/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/N1282129034",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Узел waterway=waterfall с совпадающими названием и долиной."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/N1282129034",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Координаты самого каскада, не входа."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 1282129034
+    }
+  },
+  "location": {
+    "latitude": 8.62658,
+    "longitude": -80.13956,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/N1282129034"
+  }
+}

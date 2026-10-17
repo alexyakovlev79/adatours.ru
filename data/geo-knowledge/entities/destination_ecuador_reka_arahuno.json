@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_reka_arahuno",
+  "stableId": "destination_ecuador_reka_arahuno",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/arajuno-river/",
+  "sourceFingerprint": "4b1a49e9f8d3f89427d707961bbd57871ac3c5d687a28cc98170a62ae430f8d6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3660580"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/arajuno-river/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Rio Arajuno stream near Ahuano/Napo; distinct from GeoNames 3652351 locality. Napo river network confirms discharge in the Ahuano area."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/19666838",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Rio Arajuno stream near Ahuano/Napo; distinct from GeoNames 3652351 locality. Napo river network confirms discharge in the Ahuano area."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/19666838",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Exact named feature in country_ecuador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19666838",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Rio Arajuno stream near Ahuano/Napo; distinct from GeoNames 3652351 locality. Napo river network confirms discharge in the Ahuano area."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19666838",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Река Арахуно",
+      "reason": "Rio Arajuno stream near Ahuano/Napo; distinct from GeoNames 3652351 locality. Napo river network confirms discharge in the Ahuano area."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3660580",
+      "reason": "Rio Arajuno stream near Ahuano/Napo; distinct from GeoNames 3652351 locality. Napo river network confirms discharge in the Ahuano area."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":-1.08442,\"longitude\":-77.5452,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://mapcarta.com/19666838\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": -1.08442,
+    "longitude": -77.5452,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/19666838"
+  },
+  "reviewNote": "Discarded secondary lodge blog claim that it is a Pastaza tributary: inconsistent with mapped Ahuano/Napo river network. No village QID used."
+}

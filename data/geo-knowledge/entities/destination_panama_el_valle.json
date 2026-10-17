@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_el_valle",
+  "stableId": "destination_panama_el_valle",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/el-valle-de-anton/",
+  "sourceFingerprint": "3a0b45af4f097af6d07a353ead92e90820c9a508de7dcb4bc6167343eb8d8dd5",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Эль Валле",
+      "reason": "Эль-Валье-де-Антон: населённый пункт Coclé/Antón внутри кальдеры. Q1324715 относится к вулкану, выбран Q4845114 города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q4845114",
+      "reason": "Эль-Валье-де-Антон: населённый пункт Coclé/Antón внутри кальдеры. Q1324715 относится к вулкану, выбран Q4845114 города."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "8.600833333333332,-80.13027777777778",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/el-valle.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Эль-Валье-де-Антон: населённый пункт Coclé/Antón внутри кальдеры. Q1324715 относится к вулкану, выбран Q4845114 города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4845114",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Эль-Валье-де-Антон: населённый пункт Coclé/Antón внутри кальдеры. Q1324715 относится к вулкану, выбран Q4845114 города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4845114",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Эль-Валье-де-Антон: населённый пункт Coclé/Antón внутри кальдеры. Q1324715 относится к вулкану, выбран Q4845114 города."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4845114",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4845114",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/el-valle-de-anton/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q4845114"
+  },
+  "location": {
+    "latitude": 8.600833333333332,
+    "longitude": -80.13027777777778,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4845114"
+  },
+  "reviewNote": "Deprecated GeoNames 3700225 не перенесён; координата относится к поселению, не к вулкану."
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_jodensavanna",
+  "stableId": "destination_suriname_jodensavanna",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/jodensavanne/",
+  "sourceFingerprint": "70acad08f335bc0ffedb70a9fb1714f89b0d19059d411cfc464c77cbd5e2feb3",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Йоденсаванна",
+      "reason": "Историческое поселение/руины Jodensavanne у реки Суринам; не лагерь интернированных и не весь составной объект UNESCO с Cassipora."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Основной исторический референт Jodensavanne.",
+      "selected": "Q648787"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Статья исторического поселения.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Jodensavanne\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка сохранившихся руин/синагоги по текущей статье; не усреднялась с WD.",
+      "selected": "5.4291722,-54.9842861"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/jodensavanne/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Историческое поселение/руины Jodensavanne у реки Суринам; не лагерь интернированных и не весь составной объект UNESCO с Cassipora."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/jodensavanne/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q648787",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Основной исторический референт Jodensavanne."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jodensavanne",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Статья исторического поселения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jodensavanne",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точка сохранившихся руин/синагоги по текущей статье; не усреднялась с WD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q648787",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Историческое поселение/руины Jodensavanne у реки Суринам; не лагерь интернированных и не весь составной объект UNESCO с Cassipora."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q648787",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Jodensavanne"
+    }
+  },
+  "location": {
+    "latitude": 5.4291722,
+    "longitude": -54.9842861,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Jodensavanne"
+  },
+  "reviewNote": "WD имеет иную точку 5°24′47.81″N,54°57′10.73″W; выбран расположенный у реки памятник из Wikipedia. Общий UNESCO 1680 включает второе кладбище, его не присваивали как тождество всего места."
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_cachapoal_valley",
+  "stableId": "destination_chile_cachapoal_valley",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/cachapoal-valley/",
+  "sourceFingerprint": "c84d50247935b81511d41c9ffd354b25bbc17cc99d8b63ebf2a6e6e4466f6d23",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "officialUrl": "https://chile.travel/en/attractions/cachapoal-valley/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/cachapoal-valley/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Official Chile tourism exact valley destination matches wine region and Millahue; not river or Cachapoal village in Ñuble."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://chile.travel/en/attractions/cachapoal-valley/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Official Chile tourism exact valley destination matches wine region and Millahue; not river or Cachapoal village in Ñuble."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://chile.travel/en/attractions/cachapoal-valley/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Official Chile tourism exact valley destination matches wine region and Millahue; not river or Cachapoal village in Ñuble."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Cachapoal Valley wine region",
+      "reason": "Official Chile tourism exact valley destination matches wine region and Millahue; not river or Cachapoal village in Ñuble."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 96,
+      "selected": "https://chile.travel/en/attractions/cachapoal-valley/",
+      "reason": "Official Chile tourism exact valley destination matches wine region and Millahue; not river or Cachapoal village in Ñuble."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Official Chile tourism exact valley destination matches wine region and Millahue; not river or Cachapoal village in Ñuble."
+    }
+  ],
+  "reviewNote": ""
+}

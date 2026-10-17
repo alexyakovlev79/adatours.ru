@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_itajpu",
+  "stableId": "destination_paraguay_itajpu",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/itaipu/",
+  "sourceFingerprint": "084c3d9b7af93b7896b345348c7d6074da8816451ac1494b5e8544fe1ff45b3a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q244169",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Itaipu_Dam"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q244169",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Гидроэлектростанция и плотина Итайпу на Паране, граница Парагвая и Бразилии; не одноименное водохранилище."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/itaipu.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/itaipu/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q244169",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Гидроэлектростанция и плотина Итайпу на Паране, граница Парагвая и Бразилии; не одноименное водохранилище."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Itaipu_Dam",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Гидроэлектростанция и плотина Итайпу на Паране, граница Парагвая и Бразилии; не одноименное водохранилище."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Itaipu_Dam",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "P625 плотины 25°24′28″S 54°35′24″W; точка сооружения, не посетительский вход."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q244169",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Гидроэлектростанция и плотина Итайпу на Паране, граница Парагвая и Бразилии; не одноименное водохранилище.",
+      "selected": "Итайпу"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Гидроэлектростанция и плотина Итайпу на Паране, граница Парагвая и Бразилии; не одноименное водохранилище.",
+      "selected": "Q244169"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Гидроэлектростанция и плотина Итайпу на Паране, граница Парагвая и Бразилии; не одноименное водохранилище.",
+      "selected": "https://en.wikipedia.org/wiki/Itaipu_Dam"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 плотины 25°24′28″S 54°35′24″W; точка сооружения, не посетительский вход.",
+      "selected": "[-25.40777778,-54.59]"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -25.40777778,
+    "longitude": -54.59,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Itaipu_Dam"
+  }
+}

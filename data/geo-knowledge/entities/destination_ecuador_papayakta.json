@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_papayakta",
+  "stableId": "destination_ecuador_papayakta",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/papallacta/",
+  "sourceFingerprint": "93af69b9b7348f8f870926c698a3a1253736b509848a8e505415655343a0a352",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 91,
+      "selected": "Папаякта",
+      "reason": "MD «Папаякта» описывает термальные источники горного района к востоку от Кито. Основной топоним — Papallacta в Napo; страница шире одного коммерческого курорта."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 85,
+      "reason": "Papallacta, Ecuador — главный именованный референт района термальных источников.",
+      "selected": "Q1001966"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 88,
+      "reason": "Точный топоним Papallacta в Napo, не род насекомых и не отдельный отель.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Papallacta\"}"
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "reason": "Опорная точка Papallacta для районной страницы; не координата бассейна либо отеля.",
+      "selected": "-0.36694,-78.13278"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/papallacta/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD «Папаякта» описывает термальные источники горного района к востоку от Кито. Основной топоним — Papallacta в Napo; страница шире одного коммерческого курорта."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/papallacta/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1001966",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Papallacta, Ecuador — главный именованный референт района термальных источников."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Papallacta",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный топоним Papallacta в Napo, не род насекомых и не отдельный отель."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Papallacta",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Опорная точка Papallacta для районной страницы; не координата бассейна либо отеля."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Papallacta",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD «Папаякта» описывает термальные источники горного района к востоку от Кито. Основной топоним — Papallacta в Napo; страница шире одного коммерческого курорта."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1001966",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Papallacta"
+    }
+  },
+  "location": {
+    "latitude": -0.36694,
+    "longitude": -78.13278,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Papallacta"
+  }
+}

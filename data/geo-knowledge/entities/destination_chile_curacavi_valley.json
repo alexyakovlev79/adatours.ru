@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_curacavi_valley",
+  "stableId": "destination_chile_curacavi_valley",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/curacavi-valley/",
+  "sourceFingerprint": "f388e47c53818765c59dfd7b1685c4bf2d84962d091f7dd66de97a367cb0eea5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/curacavi-valley/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Municipality explicitly describes Valle de Curacaví tourist landscape matching Santiago–coast corridor."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://municipalidadcuracavi.cl/respira-curacavi/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Municipality explicitly describes Valle de Curacaví tourist landscape matching Santiago–coast corridor."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Valle de Curacaví",
+      "reason": "Municipality explicitly describes Valle de Curacaví tourist landscape matching Santiago–coast corridor."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Municipality explicitly describes Valle de Curacaví tourist landscape matching Santiago–coast corridor."
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Targeted search confirmed named destination but no unique representative point; no adjacent-entity coordinate borrowed."
+    }
+  ],
+  "reviewNote": "No commune/town QID substituted for valley; Casablanca vineyard in hero is separate."
+}

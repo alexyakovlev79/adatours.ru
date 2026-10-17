@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_ostrov_kolon",
+  "stableId": "destination_panama_ostrov_kolon",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/colon-island/",
+  "sourceFingerprint": "98fc2b2ce27e4c59c009763e597bb4999f2d7aca6273c23ed2f3202cec59a2b5",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1113143",
+    "geonamesId": "3712074"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/colon-island/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1113143",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1113143",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1113143",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1113143",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Colón Island, Bocas del Toro",
+      "reason": "Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1113143",
+      "reason": "Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3712074",
+      "reason": "Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "9.389805555555554,-82.2715",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Island in Bocas del Toro archipelago, Panama, matching MD; distinct from city Colón and island namesakes in Colombia."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 9.389805555555554,
+    "longitude": -82.2715,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1113143"
+  }
+}

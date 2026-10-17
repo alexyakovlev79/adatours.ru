@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_san_salvador",
+  "stableId": "destination_el_salvador_san_salvador",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/san-salvador/",
+  "sourceFingerprint": "b461e196dc16ab8634d01e26dc6b2bf73841ea9c629e2da44abdc4ace648763b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3110",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Salvador"
+    }
+  },
+  "location": {
+    "latitude": 13.69889,
+    "longitude": -89.19139,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/San_Salvador"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/san-salvador.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/san-salvador/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3110",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Salvador",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Сан Сальвадор",
+      "reason": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q3110",
+      "reason": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/San_Salvador",
+      "reason": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "13.69889,-89.19139",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: settlement_center."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 98,
+      "selected": "country_el_salvador",
+      "reason": "San Salvador — столица и город Эль-Сальвадора в Valle de las Hamacas; основной референт городской страницы, не одноимённый департамент. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

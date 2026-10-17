@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_bellavista_cloud_forest",
+  "stableId": "destination_ecuador_bellavista_cloud_forest",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/bellavista-cloud-forest/",
+  "sourceFingerprint": "d3a91b41e5b16349d325bb6276ab107fad1798a7a242d3ae3d67ca5efe9dc049",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q4883553",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Bellavista_Cloud_Forest_Reserve"
+    },
+    "officialUrl": "https://bellavistacloudforest.com/area-protegida/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Лес Бельявиста",
+      "reason": "Облачный лес Бельявиста в районе Тандайяпа к северо-западу от Кито: название, лесной ландшафт и маршруты Миндо согласуются с частной природоохранной территорией Bellavista. Точка карточки — опорная точка леса, не геометрический центр границ."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q4883553",
+      "reason": "Облачный лес Бельявиста в районе Тандайяпа к северо-западу от Кито: название, лесной ландшафт и маршруты Миндо согласуются с частной природоохранной территорией Bellavista. Точка карточки — опорная точка леса, не геометрический центр границ."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Bellavista_Cloud_Forest_Reserve",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://bellavistacloudforest.com/area-protegida/",
+      "reason": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.0158333333, -78.6813888889",
+      "reason": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/bellavista-cloud-forest.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Облачный лес Бельявиста в районе Тандайяпа к северо-западу от Кито: название, лесной ландшафт и маршруты Миндо согласуются с частной природоохранной территорией Bellavista. Точка карточки — опорная точка леса, не геометрический центр границ."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/bellavista-cloud-forest/",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4883553",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Облачный лес Бельявиста в районе Тандайяпа к северо-западу от Кито: название, лесной ландшафт и маршруты Миндо согласуются с частной природоохранной территорией Bellavista. Точка карточки — опорная точка леса, не геометрический центр границ."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bellavista_Cloud_Forest_Reserve",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://bellavistacloudforest.com/area-protegida/",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4883553",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/bellavista-cloud-forest.md",
+      "checkedAt": "2026-10-17T08:29:59.445Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.0158333333,
+    "longitude": -78.6813888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4883553"
+  }
+}

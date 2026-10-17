@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_santiago_metropolitan_cathedral",
+  "stableId": "destination_chile_santiago_metropolitan_cathedral",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/santiago-metropolitan-cathedral/",
+  "sourceFingerprint": "6992874d1e7f04c47b566c8eaf7f7b8f37e8b2dd42c1d273d5435841228108d0",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q15042373",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santiago_Metropolitan_Cathedral"
+    }
+  },
+  "location": {
+    "latitude": -33.4376583,
+    "longitude": -70.6518056,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Santiago_Metropolitan_Cathedral"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santiago_Metropolitan_Cathedral",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/santiago-metropolitan-cathedral.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/santiago-metropolitan-cathedral/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q15042373",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santiago_Metropolitan_Cathedral",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santiago_Metropolitan_Cathedral",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santiago_Metropolitan_Cathedral",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Кафедральный собор Сантьяго",
+      "reason": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q15042373",
+      "reason": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Santiago_Metropolitan_Cathedral",
+      "reason": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-33.4376583,-70.6518056",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: feature_point."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Santiago Metropolitan Cathedral — католический кафедральный собор на Plaza de Armas, Santiago de Chile; совпадает храм, не вся площадь или архиепархия. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

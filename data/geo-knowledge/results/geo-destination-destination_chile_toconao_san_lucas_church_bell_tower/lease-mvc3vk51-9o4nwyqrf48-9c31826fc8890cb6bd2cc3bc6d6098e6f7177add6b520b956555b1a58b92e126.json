@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_toconao_san_lucas_church_bell_tower",
+  "stableId": "destination_chile_toconao_san_lucas_church_bell_tower",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/toconao-san-lucas-church-bell-tower/",
+  "sourceFingerprint": "0a84de452193665a910700787a49793b120a04603327400bcf30cedd25a45379",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q107749397"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_tokonao"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q107749397",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Главный референт пары — Iglesia de San Lucas в Toconao, Chile, с отдельно стоящей колокольней. QID относится церкви, узнаваемой части архитектурного ансамбля."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/toconao-san-lucas-church-bell-tower.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/toconao-san-lucas-church-bell-tower/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q107749397",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Главный референт пары — Iglesia de San Lucas в Toconao, Chile, с отдельно стоящей колокольней. QID относится церкви, узнаваемой части архитектурного ансамбля."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q107749397",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точка здания церкви P625. Отдельная колокольня не усреднялась с церковью и не получила идентичность церкви."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q107749397",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    },
+    {
+      "field": "relationships.destination_chile_tokonao",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q107749397",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Церковь San Lucas расположена в поселении Toconao."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 92,
+      "reason": "Главный референт пары — Iglesia de San Lucas в Toconao, Chile, с отдельно стоящей колокольней. QID относится церкви, узнаваемой части архитектурного ансамбля.",
+      "selected": "Церковь Сан-Лукас и колокольня Токонао"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 92,
+      "reason": "Главный референт пары — Iglesia de San Lucas в Toconao, Chile, с отдельно стоящей колокольней. QID относится церкви, узнаваемой части архитектурного ансамбля.",
+      "selected": "Q107749397"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка здания церкви P625. Отдельная колокольня не усреднялась с церковью и не получила идентичность церкви.",
+      "selected": "[-23.19089068,-68.00694974]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "relationships.destination_chile_tokonao",
+      "probability": 99,
+      "selected": "destination_chile_tokonao",
+      "reason": "В карточке Wikidata и MD указана Toconao; stable ID поселения проверен в предыдущей партии."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Составная страница «церковь и колокольня»: основной референт San Lucas; статус памятника башни не перенесен на все соседние объекты.",
+  "location": {
+    "latitude": -23.19089068,
+    "longitude": -68.00694974,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q107749397"
+  }
+}

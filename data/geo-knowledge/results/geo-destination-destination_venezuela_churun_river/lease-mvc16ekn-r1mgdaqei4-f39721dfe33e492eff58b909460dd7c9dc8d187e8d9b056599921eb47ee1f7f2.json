@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_churun_river",
+  "stableId": "destination_venezuela_churun_river",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/churun-river/",
+  "sourceFingerprint": "96a25aec0bfa6d96e57bc6338f5d31ccb4e032ded6008f0a3c12d02f60f5315a",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "river",
+  "alternateNames": [
+    "Río Churún",
+    "Churún River"
+  ],
+  "external": {
+    "wikidataQid": "Q3651682",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chur%C3%BAn_River",
+      "es": "https://es.wikipedia.org/wiki/R%C3%ADo_Chur%C3%BAn"
+    },
+    "geonamesId": "3645582",
+    "osm": {
+      "type": "relation",
+      "id": 20057957
+    }
+  },
+  "location": {
+    "latitude": 6.0802493,
+    "longitude": -62.618562,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3651682"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_venezuela_carrao_river"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/churun-river/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chur%C3%BAn_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chur%C3%BAn_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chur%C3%BAn_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3651682",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель. Прочитаны EntityData/API: P17=Venezuela и соответствующие sitelinks/описание."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chur%C3%BAn_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/R%C3%ADo_Chur%C3%BAn",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3651682",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "P1566=3645582 на точной Wikidata-карточке, совпадают страна и тип объекта."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/20057957",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Прямо прочитан OSM API: имя, тип и географическое положение совпадают; relation type=waterway, wikidata=Q3651682."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3651682",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Выбран P625 с P518=Q1233637: устье Чуруна в Каррао. Другой P625 5.7613929,-62.494483 относится к истоку (P518=Q7376362), не усреднялся. Координата Wikipedia около 6.08056,-62.61944 также у устья."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chur%C3%BAn_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    },
+    {
+      "field": "relationships.destination_venezuela_carrao_river",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chur%C3%BAn_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Wikidata P403 и OSM destination Carrao подтверждают, что Чурун впадает в Каррао. Использована разрешенная relatedPlace, не invented hydrography property."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Река Чурун",
+      "reason": "Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "river",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Río Churún; Churún River",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3651682",
+      "reason": "Чурун — отдельная река Боливара, приток Каррао у Ауянтепуя. OSM relation указывает wikidata Q3651682 и destination Carrao; не подменяет каньон или водопад Анхель."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Chur%C3%BAn_River\",\"es\":\"https://es.wikipedia.org/wiki/R%C3%ADo_Chur%C3%BAn\"}",
+      "reason": "Точные языковые статьи и объектный контекст совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3645582",
+      "reason": "GeoNames ID указан на подтвержденной объектной карточке."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/20057957",
+      "reason": "Точная карточка OSM проверена напрямую, соседние объекты исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "6.0802493,-62.618562 (feature_point)",
+      "reason": "Выбран P625 с P518=Q1233637: устье Чуруна в Каррао. Другой P625 5.7613929,-62.494483 относится к истоку (P518=Q7376362), не усреднялся. Координата Wikipedia около 6.08056,-62.61944 также у устья."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    },
+    {
+      "field": "relationships.destination_venezuela_carrao_river",
+      "probability": 97,
+      "selected": "destination_venezuela_carrao_river",
+      "reason": "Wikidata P403 и OSM destination Carrao подтверждают, что Чурун впадает в Каррао. Использована разрешенная relatedPlace, не invented hydrography property."
+    }
+  ],
+  "reviewNote": "Точка устья; не координата водопада Анхель и не географический центр реки."
+}

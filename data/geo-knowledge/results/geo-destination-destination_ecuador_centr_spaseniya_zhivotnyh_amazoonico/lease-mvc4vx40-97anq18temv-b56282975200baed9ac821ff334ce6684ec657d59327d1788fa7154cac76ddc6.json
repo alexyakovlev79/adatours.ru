@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_centr_spaseniya_zhivotnyh_amazoonico",
+  "stableId": "destination_ecuador_centr_spaseniya_zhivotnyh_amazoonico",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/amazoonico-animal-rescue-center/",
+  "sourceFingerprint": "28fcd7cca515800ac78d838a702514d9655b5a71689fc3193ffc5b63f1eb2bab",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.amazoonicorescue.org/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Центр спасения животных Амазонико",
+      "reason": "AmaZOOnico — центр реабилитации диких животных в Нapo, Эквадор. Официальный сайт подтверждает название и функцию центра; текст страницы связывает его с Ауано/Арахуно. Непроверенные координаты и QID не добавлены."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.amazoonicorescue.org/",
+      "reason": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/amazoonico-animal-rescue-center.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. AmaZOOnico — центр реабилитации диких животных в Нapo, Эквадор. Официальный сайт подтверждает название и функцию центра; текст страницы связывает его с Ауано/Арахуно. Непроверенные координаты и QID не добавлены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/amazoonico-animal-rescue-center/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.amazoonicorescue.org/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/amazoonico-animal-rescue-center.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ]
+}

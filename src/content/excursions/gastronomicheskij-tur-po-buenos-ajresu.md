@@ -13,9 +13,13 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_argentina_buenos_aires
 destinationName: Буэнос-Айрес
 sourceSnapshot: https://drive.google.com/file/d/173DdcyYeYQ9DyV2I1t8FZ8HDegux2cY6/view?usp=drivesdk
 themes: ["theme_gastronomy_wine"]
+hero:
+  src: /media/excursions/buenos-aires-food-tour/hero-generated-20261018.webp
+  alt: "Аргентинское мясо на гриле и красное вино в ресторане Буэнос-Айреса"
+  status: approved
 ---

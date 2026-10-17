@@ -11,11 +11,15 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
 themes: ["theme_culture"]
+hero:
+  src: /media/excursions/amazon-caboclo-family-visit/hero-generated-20261018.webp
+  alt: "Приготовление муки из маниока в доме семьи кабокло в Амазонии"
+  status: approved
 ---
 
 Во время визита вы узнаете о традициях, повседневной жизни и истории Амазонии, включая период «резиновой лихорадки».

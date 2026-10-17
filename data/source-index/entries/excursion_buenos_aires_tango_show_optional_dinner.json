@@ -62,20 +62,29 @@
     }
   },
   "media": {
-    "images": [],
-    "status": "ready",
+    "images": [
+      {
+        "url": "/media/excursions/buenos-aires-tango-show-optional-dinner/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "alt": "Пара танцует аргентинское танго на камерной сцене в Буэнос-Айресе"
+      }
+    ],
+    "status": "generated",
     "sourceUrl": null,
     "provenance": {
-      "kind": "approved_parent_tour_fragment",
+      "kind": "gpt_image",
       "parentTourId": "tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god",
-      "missingHero": true,
-      "note": "Only source-proven media are listed; no substitute image is inferred."
+      "missingHero": false,
+      "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
+      "sourceFragmentKind": "approved_parent_tour_fragment",
+      "createdAt": "2026-10-18"
     }
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "ready",
+    "media": "generated",
     "geography": "fixed"
   },
   "sheet": {

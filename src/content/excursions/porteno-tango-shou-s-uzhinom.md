@@ -12,9 +12,13 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_argentina_buenos_aires
 destinationName: Буэнос-Айрес
 sourceSnapshot: https://drive.google.com/file/d/1Y5SqS1gxfk1Gs2vZDbaX-CeR6gzeH4g8/view?usp=drivesdk
 themes: ["theme_culture"]
+hero:
+  src: /media/excursions/tango-porteno-dinner-show/hero-generated-20261018.webp
+  alt: "Танго-шоу с ужином в театральном зале Буэнос-Айреса"
+  status: approved
 ---

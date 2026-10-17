@@ -12,9 +12,13 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_belize_bolshaya_golubaya_dyra
 destinationName: Большая голубая дыра
 sourceSnapshot: https://drive.google.com/file/d/1mdDyNWWZBMkkkaVuc7CZPj_DeysugC9G/view?usp=drivesdk
 themes: ["theme_wildlife"]
+hero:
+  src: /media/excursions/great-blue-hole-scenic-flight/hero-generated-20261018.webp
+  alt: "Большая голубая дыра и коралловый риф Белиза с борта небольшого самолёта"
+  status: approved
 ---

@@ -12,11 +12,15 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
 themes: ["theme_wildlife"]
+hero:
+  src: /media/excursions/amazon-evening-caiman-watching/hero-generated-20261018.webp
+  alt: "Кайман у берега амазонской реки в вечернем свете фонаря"
+  status: approved
 ---
 
 Гид использует фонарик: глаза аллигаторов заметны по красным отражениям среди растительности. Если удастся найти небольшого аллигатора, гид может ненадолго поймать его, показать гостям и рассказать о среде обитания и способах охоты. После осмотра и фотографий животное возвращают в дикую природу.

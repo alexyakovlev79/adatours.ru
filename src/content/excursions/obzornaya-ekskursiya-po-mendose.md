@@ -11,11 +11,15 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_argentina_mendoza
 destinationName: Мендоса
 sourceSnapshot: https://drive.google.com/file/d/15CAtJqQ2j1KpQopAOZeaH9YgcEVhKnWY/view?usp=drivesdk
 themes: ["theme_culture"]
+hero:
+  src: /media/excursions/mendoza-city-tour/hero-generated-20261018.webp
+  alt: "Зелёная площадь с фонтаном и тенистыми аллеями в Мендосе"
+  status: approved
 ---
 
 Мендоса была основана в XVI веке и в тот период относилась к Чили. В XIX веке сильное землетрясение почти полностью разрушило старый город, от первоначальной застройки сохранилось немногое, в том числе руины церкви Святого Франциска.

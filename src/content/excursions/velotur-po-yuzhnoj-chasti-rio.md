@@ -12,9 +12,13 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
 sourceSnapshot: https://drive.google.com/file/d/1uPOyyV2NRTHMklYYX4uaG2lEw4GRgutS/view?usp=drivesdk
 themes: ["theme_adventure"]
+hero:
+  src: /media/excursions/rio-south-zone-bike-tour/hero-generated-20261018.webp
+  alt: "Велосипедисты на набережной Ипанемы на фоне гор Рио-де-Жанейро"
+  status: approved
 ---

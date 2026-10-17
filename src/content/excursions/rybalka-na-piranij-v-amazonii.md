@@ -12,11 +12,15 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/19F4BDJyl8i3hIsLQVW7t8gO-cN7UNakx/view?usp=drivesdk
 themes: ["theme_fishing"]
+hero:
+  src: /media/excursions/amazon-piranha-fishing/hero-generated-20261018.webp
+  alt: "Рыбалка на пираний с гидом на спокойной реке Амазонии"
+  status: approved
 ---
 
 Продолжительность от 40 минут до 1 часа.

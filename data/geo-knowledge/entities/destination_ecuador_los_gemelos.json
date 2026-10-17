@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_los_gemelos-availability",
+  "stableId": "destination_ecuador_los_gemelos",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/los-gemelos/",
+  "sourceFingerprint": "6011ed58c1aa42b9802c9386a74327f1b419b556bc031810ebc6631aab0d4f98",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "composite",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://galapagos.gob.ec/turista-es-rescatado-en-los-gemelos/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Парные провалы в высокогорье Санта-Крус, подтверждены DPNG и Galapagos Conservancy. Q20135823 относится к поселению в Мексике."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/los-gemelos.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_los_gemelos; статус approved; blob SHA=3984b3b70b28b6c4ce7b94ed1ecde2400b0aa5ef; актуальный entry подтверждает canonical /ecuador/place/los-gemelos/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/los-gemelos/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_los_gemelos.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.galapagos.org/about_galapagos/the-islands/santa-cruz-island/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Парные провалы в высокогорье Санта-Крус, подтверждены DPNG и Galapagos Conservancy. Q20135823 относится к поселению в Мексике."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/39015666296",
+      "checkedAt": "2026-10-17T09:09:27.383Z",
+      "note": "Проверен HTML ./ecuador/place/los-gemelos/index.html в артефакте github-pages успешного Pages-деплоя #39015666296; H1 и self-canonical https://adatours.ru/ecuador/place/los-gemelos/ совпадают. Прямой HTTP-ответ не измерялся."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Парные провалы в высокогорье Санта-Крус, подтверждены DPNG и Galapagos Conservancy. Q20135823 относится к поселению в Мексике.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Единый QID пары провалов не подтвержден. Координаты сбора биологических проб не являются точкой входа в туристический комплекс."
+    }
+  ],
+  "reviewNote": "Проверен HTML ./ecuador/place/los-gemelos/index.html в артефакте github-pages успешного Pages-деплоя #39015666296; H1 и self-canonical https://adatours.ru/ecuador/place/los-gemelos/ совпадают. Прямой HTTP-ответ не измерялся. Единый QID пары провалов не подтвержден. Координаты сбора биологических проб не являются точкой входа в туристический комплекс."
+}

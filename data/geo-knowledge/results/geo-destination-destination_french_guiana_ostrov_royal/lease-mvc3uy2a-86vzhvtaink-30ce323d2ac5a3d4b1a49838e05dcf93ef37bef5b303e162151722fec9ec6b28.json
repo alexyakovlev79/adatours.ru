@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_french_guiana_ostrov_royal",
+  "stableId": "destination_french_guiana_ostrov_royal",
+  "kind": "destination",
+  "canonicalPath": "/french-guiana/place/ile-royale/",
+  "sourceFingerprint": "bce8b4c6613c40a6c383e58ed6c29e20c2a96771245d0f709ff7385fe2ef6955",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Остров Рояль",
+      "reason": "Остров Île Royale у Французской Гвианы; не историческая французская колония Île-Royale в Канаде."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_french_guiana"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка выбранного основного географического референта.",
+      "selected": "Q2633190"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Языковая статья того же объекта.",
+      "selected": "{\"fr\":\"https://fr.wikipedia.org/wiki/%C3%8Ele_Royale_(Guyane)\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ISL Île Royale, French Guiana.",
+      "selected": "3380448"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 отдельного острова Иль-дю-Салю.",
+      "selected": "5.287222222222222,-52.58888888888889"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/ile-royale/",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Остров Île Royale у Французской Гвианы; не историческая французская колония Île-Royale в Канаде."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/ile-royale/",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2633190",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Точная карточка выбранного основного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2633190",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "Языковая статья того же объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3380448/ile-royale.html",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "GeoNames ISL Île Royale, French Guiana."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2633190",
+      "checkedAt": "2026-10-17T08:08:01.501Z",
+      "note": "P625 отдельного острова Иль-дю-Салю."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2633190",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Остров Île Royale у Французской Гвианы; не историческая французская колония Île-Royale в Канаде."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_french_guiana"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2633190",
+    "wikipedia": {
+      "fr": "https://fr.wikipedia.org/wiki/%C3%8Ele_Royale_(Guyane)"
+    },
+    "geonamesId": "3380448"
+  },
+  "location": {
+    "latitude": 5.287222222222222,
+    "longitude": -52.58888888888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2633190"
+  }
+}

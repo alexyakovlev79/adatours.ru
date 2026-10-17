@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_santo_domingo_mexico_city",
+  "stableId": "destination_mexico_santo_domingo_mexico_city",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/santo-domingo-mexico-city/",
+  "sourceFingerprint": "b555714a4abaa2d389aacb1bd1ef4f19a6d5d502e61c09a770e3a2de36d5be17",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q7420507",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santo_Domingo_(Mexico_City)"
+    },
+    "officialUrl": "https://www.mexicocity.cdmx.gob.mx/venues/temple-of-santo-domingo/"
+  },
+  "location": {
+    "latitude": 19.43837778,
+    "longitude": -99.13371667,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7420507"
+  },
+  "alternateNames": [
+    "Iglesia de Santo Domingo",
+    "Templo de Santo Domingo"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Церковь Санто-Доминго в Мехико",
+      "reason": "Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q7420507",
+      "reason": "Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Santo_Domingo_(Mexico_City)",
+      "reason": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.mexicocity.cdmx.gob.mx/venues/temple-of-santo-domingo/",
+      "reason": "Официальная государственная карточка выбранного объекта. Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "19.43837778,-99.13371667; feature_point",
+      "reason": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Iglesia de Santo Domingo; Templo de Santo Domingo",
+      "reason": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/temple-of-santo-domingo/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/santo-domingo-mexico-city/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точный live URL HTTP200; canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по имени, stable ID, стране и URL; fingerprint сохранен из claim."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7420507",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7420507",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Точная статья выбранного объекта, сопоставлена с Wikidata sitelinks, названием, типом и географией. Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/temple-of-santo-domingo/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Официальная государственная карточка выбранного объекта. Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7420507",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "P625 точной Wikidata-карточки; тип объекта и география сверены с MD и первичными источниками."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7420507",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Прямые испанские/международные названия того же выбранного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/temple-of-santo-domingo/",
+      "checkedAt": "2026-10-17T07:40:51.678Z",
+      "note": "Wikidata P17=Mexico Q96 либо официальный федеральный каталог и описание Tlaxcala, México подтверждают страну. Использован существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Доминиканская церковь на Plaza de Santo Domingo, Belisario Domínguez, Centro Histórico, Мехико. Совпадают алтари Virgen del Rosario и Covadonga; это храм Мехико, не одноименная церковь в Пуэбле и не сама площадь."
+}

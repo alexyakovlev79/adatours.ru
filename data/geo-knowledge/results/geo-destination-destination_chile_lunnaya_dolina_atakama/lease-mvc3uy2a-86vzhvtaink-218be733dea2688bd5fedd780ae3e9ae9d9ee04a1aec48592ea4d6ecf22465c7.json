@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_lunnaya_dolina_atakama",
+  "stableId": "destination_chile_lunnaya_dolina_atakama",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/moon-valley-atacama/",
+  "sourceFingerprint": "4ed8bee7828ceacc7a534e4468f5a4df1cd1c114c7d4a35abce493eb77947125",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Лунная долина (Атакама)",
+      "reason": "Valle de la Luna в Cordillera de la Sal у San Pedro de Atacama; не одноимённая долина Ла-Паса или Аргентины."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q119498"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Chile)\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка долины, не весь Salar de Atacama.",
+      "selected": "-22.9112,-68.32303"
+    },
+    {
+      "field": "relationships.destination_chile_san_pedro_de_atakama",
+      "probability": 95,
+      "reason": "Статья помещает долину западнее города San Pedro.",
+      "selected": "destination_chile_san_pedro_de_atakama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/moon-valley-atacama/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Valle de la Luna в Cordillera de la Sal у San Pedro de Atacama; не одноимённая долина Ла-Паса или Аргентины."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/moon-valley-atacama/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q119498",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q119498",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Chile)",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Опорная точка долины, не весь Salar de Atacama."
+    },
+    {
+      "field": "relationships.destination_chile_san_pedro_de_atakama",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Chile)",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Статья помещает долину западнее города San Pedro."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q119498",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Valle de la Luna в Cordillera de la Sal у San Pedro de Atacama; не одноимённая долина Ла-Паса или Аргентины."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_san_pedro_de_atakama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q119498",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Chile)"
+    }
+  },
+  "location": {
+    "latitude": -22.9112,
+    "longitude": -68.32303,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Valle_de_la_Luna_(Chile)"
+  }
+}

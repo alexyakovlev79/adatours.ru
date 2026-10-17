@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_san_agustin_de_callo",
+  "stableId": "destination_ecuador_san_agustin_de_callo",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/san-agustin-de-callo/",
+  "sourceFingerprint": "9b932ef86a6c857d976314f11666ae88b9428d2aeb5ba1307460c2de48e2c210",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.incahacienda.com/",
+    "osm": {
+      "type": "node",
+      "id": 4931615850
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Асьенда Сан-Агустин-де-Кальо",
+      "reason": "Сан-Агустин-де-Кальо — историческая асьенда/отель у Лассо и Котопакси. Официальный сайт Inca Hacienda и описание истории дворца инков соответствуют MD. Одноимённая мексиканская асьенда исключена."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.incahacienda.com/",
+      "reason": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/4931615850",
+      "reason": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.7289296, -78.5885988",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/san-agustin-de-callo.md",
+      "checkedAt": "2026-10-17T08:36:34.372Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Сан-Агустин-де-Кальо — историческая асьенда/отель у Лассо и Котопакси. Официальный сайт Inca Hacienda и описание истории дворца инков соответствуют MD. Одноимённая мексиканская асьенда исключена."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/san-agustin-de-callo/",
+      "checkedAt": "2026-10-17T08:36:34.372Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.incahacienda.com/",
+      "checkedAt": "2026-10-17T08:36:34.372Z",
+      "note": "Сайт самого объекта или его уполномоченного органа, а не туристического посредника."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/4931615850",
+      "checkedAt": "2026-10-17T08:36:34.372Z",
+      "note": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/4931615850",
+      "checkedAt": "2026-10-17T08:36:34.372Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/san-agustin-de-callo.md",
+      "checkedAt": "2026-10-17T08:36:34.372Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.7289296,
+    "longitude": -78.5885988,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/4931615850"
+  }
+}

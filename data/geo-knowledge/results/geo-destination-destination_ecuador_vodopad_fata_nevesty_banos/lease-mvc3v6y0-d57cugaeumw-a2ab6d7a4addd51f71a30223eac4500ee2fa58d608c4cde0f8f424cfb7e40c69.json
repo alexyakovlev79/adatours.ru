@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vodopad_fata_nevesty_banos",
+  "stableId": "destination_ecuador_vodopad_fata_nevesty_banos",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/manto-de-la-novia-waterfall/",
+  "sourceFingerprint": "dea082457e210f94968db721414080120b61856eaa7a901b496f981ad187db74",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопад Фата Невесты (Баньос)",
+      "reason": "Manto de la Novia у Río Chinchín/Pastaza на Ruta de las Cascadas возле Baños. Не одноимённые каскады вне Эквадора."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q132174894",
+      "reason": "Manto de la Novia у Río Chinchín/Pastaza на Ruta de las Cascadas возле Baños. Не одноимённые каскады вне Эквадора."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-1.4051868,-78.3361981",
+      "reason": "Прямое чтение точного водопада в OSM, не дороги или канатной станции."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/7030765110",
+      "reason": "Совпадают название, тип и положение в ущелье Pastaza/Río Verde."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/manto-de-la-novia-waterfall/",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Manto de la Novia у Río Chinchín/Pastaza на Ruta de las Cascadas возле Baños. Не одноимённые каскады вне Эквадора."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/manto-de-la-novia-waterfall.md",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q132174894",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Manto de la Novia у Río Chinchín/Pastaza на Ruta de las Cascadas возле Baños. Не одноимённые каскады вне Эквадора."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q132174894",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/7030765110",
+      "checkedAt": "2026-10-17T08:23:14.470Z",
+      "note": "Прямой OSM API: именованный waterway=waterfall; одна WGS84-точка каскада. Для Agoyán исправляет смещённую P625, не усредняет."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/7030765110",
+      "checkedAt": "2026-10-17T08:23:14.470Z",
+      "note": "Точная node содержит совпадающее имя, тип waterfall. Положение подтверждено независимым описанием Manto de la Novia в Baños."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q132174894",
+    "osm": {
+      "type": "node",
+      "id": 7030765110
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -1.4051868,
+    "longitude": -78.3361981,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/7030765110"
+  },
+  "reviewNote": null
+}

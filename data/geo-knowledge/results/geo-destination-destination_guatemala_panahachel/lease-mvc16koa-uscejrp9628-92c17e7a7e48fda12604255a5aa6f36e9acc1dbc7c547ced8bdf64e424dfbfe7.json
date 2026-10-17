@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_panahachel",
+  "stableId": "destination_guatemala_panahachel",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/panajachel/",
+  "sourceFingerprint": "d188568d092f9781f5d912bd52951bfd3c17635eb016081d4e61eacfd6cbce62",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "town",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/panajachel/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Проверены текущие MD и source-index в main, stable ID/страна/тип и canonical. Публичный URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://adatours.ru/guatemala/place/panajachel/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Класс выбран по фактическому референту MD/summary; Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25178045",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Wikidata P17 Q774 (Guatemala); страна совпадает с MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25178045",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитан Special:EntityData/Q25178045.json: label/description, P31, P17 Q774 и P625. Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3591750/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитана точная запись GeoNames: ond-order administrative division · GT Feature Map Hierarchy History Alternate names GeonameId 3591750 Coordinates 14.74185, -91.15676 Move 14°44′30.66″ N, 91°09′24.34″ W Population 11,142 Elevation ca. 1582 m SRTM3 1582 m · ASTER 1578 m Timezone America/Guatemala Sunrise / sunset ‹ 05:56 / 17:. Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3591750/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Выбрана одна опубликованная точка без усреднения. Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Q25178045",
+      "reason": "Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "town",
+      "reason": "Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Совпадают география источников и закреплённый countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q25178045",
+      "reason": "Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3591750",
+      "reason": "Название, страна GT и feature code соответствуют выбранному объекту; административные альтернативы исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "14.74185,-91.15676",
+      "reason": "Роль settlement_center. Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены."
+    }
+  ],
+  "reviewNote": "Выбран город Панахачель Q25178045 / GeoNames3591750 на берегу Атитлана. Q1634223 / GeoNames3591748 относятся к муниципалитету. У точного QID города нет Wikipedia sitelinks, статьи муниципалитета не перенесены.",
+  "external": {
+    "wikidataQid": "Q25178045",
+    "geonamesId": "3591750"
+  },
+  "location": {
+    "latitude": 14.74185,
+    "longitude": -91.15676,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3591750/"
+  }
+}

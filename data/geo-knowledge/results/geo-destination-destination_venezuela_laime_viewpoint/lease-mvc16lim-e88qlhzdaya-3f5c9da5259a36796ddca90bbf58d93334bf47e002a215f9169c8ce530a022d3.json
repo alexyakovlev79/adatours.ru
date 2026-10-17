@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_laime_viewpoint",
+  "stableId": "destination_venezuela_laime_viewpoint",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/laime-viewpoint/",
+  "sourceFingerprint": "82bf7689f038ad8afc54212be033874b4342a343f5fee9ac440267d7220721d1",
+  "status": "READY",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 3207412377
+    }
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Смотровая площадка Лайме",
+      "reason": "Именованная площадка Mirador Laime в часе пешком от Isla Ratoncito к виду на Salto Ángel; точный маршрут совпадает с MD."
+    },
+    {
+      "field": "external.osm",
+      "probability": 83,
+      "selected": "node/3207412377",
+      "reason": "Именованная площадка Mirador Laime в часе пешком от Isla Ratoncito к виду на Salto Ángel; точный маршрут совпадает с MD. Лайме — смотровая площадка, не сам Анхель. OSM Mirador Salto Ángel принят с вероятностью 83% по положению в конце подхода от Ратонсито; QID водопада не присваивался."
+    },
+    {
+      "field": "location",
+      "probability": 83,
+      "selected": "5.9672948,-62.529948; feature_point",
+      "reason": "Именованный Mirador Salto Ángel у конца лесной тропы под водопадом наиболее вероятно соответствует Laime; верхняя безымянная площадка выделена отдельно."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Mirador Laime; Laime Lookout",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "probability": 98,
+      "selected": "containedInPlace destination_venezuela_kanajma_i_vodopad_anhel",
+      "reason": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.braziladventuretours.com/tours/angel-falls-tour",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованная площадка Mirador Laime в часе пешком от Isla Ratoncito к виду на Salto Ángel; точный маршрут совпадает с MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/laime-viewpoint/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/3207412377",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованная площадка Mirador Laime в часе пешком от Isla Ratoncito к виду на Salto Ángel; точный маршрут совпадает с MD. Лайме — смотровая площадка, не сам Анхель. OSM Mirador Salto Ángel принят с вероятностью 83% по положению в конце подхода от Ратонсито; QID водопада не присваивался."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/3207412377",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованный Mirador Salto Ángel у конца лесной тропы под водопадом наиболее вероятно соответствует Laime; верхняя безымянная площадка выделена отдельно."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.braziladventuretours.com/tours/angel-falls-tour",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "sourceUrl": "https://www.braziladventuretours.com/tours/angel-falls-tour",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "alternateNames": [
+    "Mirador Laime",
+    "Laime Lookout"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_venezuela_kanajma_i_vodopad_anhel"
+    }
+  ],
+  "reviewNote": "Лайме — смотровая площадка, не сам Анхель. OSM Mirador Salto Ángel принят с вероятностью 83% по положению в конце подхода от Ратонсито; QID водопада не присваивался.",
+  "location": {
+    "latitude": 5.9672948,
+    "longitude": -62.529948,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/3207412377"
+  }
+}

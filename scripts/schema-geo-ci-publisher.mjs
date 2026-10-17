@@ -6,6 +6,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {digest,validateResult,stable,recordCommit} from './schema-geo-core.mjs';
+import {readGitHubJsonFile} from './schema-geo-github-json.mjs';
 
 const ROOT=process.cwd();
 const REPO=process.env.GITHUB_REPOSITORY||'alexyakovlev79/adatours.ru';
@@ -26,9 +27,7 @@ async function api(route,{method='GET',body}={}){
  return raw?JSON.parse(raw):null;
 }
 async function stateFromGithub(ref){
- const file=await api('/contents/data/geo-knowledge/state.json?ref='+encodeURIComponent(ref));
- if(file.encoding!=='base64')throw Error('Unexpected GEO state encoding');
- return JSON.parse(Buffer.from(file.content,'base64').toString('utf8'));
+ return readGitHubJsonFile(api,'data/geo-knowledge/state.json',ref);
 }
 function sameBatch(p,d){
  return !!p&&p.batchId===d.batchId&&p.ownerId===d.ownerId&&p.jobs.length===d.count;

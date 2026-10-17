@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_cuba_kamaguej",
+  "stableId": "destination_cuba_kamaguej",
+  "kind": "destination",
+  "canonicalPath": "/cuba/place/camaguey/",
+  "sourceFingerprint": "d0daffb41b7e34e4bd5c09dd36c6fee6d2b8522d3436f6fcd0d75335a2387c1d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q115329",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Camag%C3%BCey"
+    }
+  },
+  "location": {
+    "latitude": 21.378611111111,
+    "longitude": -77.918611111111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q115329"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_cuba"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/kamaguej.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Город Camagüey в центральной Кубе, столица одноименной провинции. Основной референт — город тинахонов, не провинция и не исключительно Historic Centre UNESCO1270. Перенаправленные дубли Q12824282/Q20582324 не создают новые объекты."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/cuba/place/camaguey/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Camag%C3%BCey",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Город Camagüey в центральной Кубе, столица одноименной провинции. Основной референт — город тинахонов, не провинция и не исключительно Historic Centre UNESCO1270. Перенаправленные дубли Q12824282/Q20582324 не создают новые объекты."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Camag%C3%BCey",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Город Camagüey в центральной Кубе, столица одноименной провинции. Основной референт — город тинахонов, не провинция и не исключительно Historic Centre UNESCO1270. Перенаправленные дубли Q12824282/Q20582324 не создают новые объекты."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Camag%C3%BCey",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_cuba"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q115329",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Выбрана P625 основной Wikidata города. Wikipedia дает21.38389,-77.90750 примерно1.3км северо-восточнее; две городские опорные точки не усредняются."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q115329",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Проверены точный QID, P31/P17/P625 и EN sitelink. Город Camagüey в центральной Кубе, столица одноименной провинции. Основной референт — город тинахонов, не провинция и не исключительно Historic Centre UNESCO1270. Перенаправленные дубли Q12824282/Q20582324 не создают новые объекты."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Camag%C3%BCey",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точная статья о выбранном именованном объекте, соответствующая sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Камагуэй",
+      "reason": "Город Camagüey в центральной Кубе, столица одноименной провинции. Основной референт — город тинахонов, не провинция и не исключительно Historic Centre UNESCO1270. Перенаправленные дубли Q12824282/Q20582324 не создают новые объекты."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "City",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "probability": 99,
+      "selected": "country_cuba",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "21.378611111111, -77.918611111111",
+      "reason": "Выбрана P625 основной Wikidata города. Wikipedia дает21.38389,-77.90750 примерно1.3км северо-восточнее; две городские опорные точки не усредняются."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q115329",
+      "reason": "Город Camagüey в центральной Кубе, столица одноименной провинции. Основной референт — город тинахонов, не провинция и не исключительно Historic Centre UNESCO1270. Перенаправленные дубли Q12824282/Q20582324 не создают новые объекты."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Camag%C3%BCey",
+      "reason": "Точная статья выбранного объекта."
+    }
+  ]
+}

@@ -54,7 +54,7 @@ for (const file of articles) {
       const section = block.slice(0, block.indexOf('</section>'));
       // Astro escapes &, quotes and other HTML characters in the visible label.
       // Compare the decoded text node, not the serialized HTML entity syntax.
-      const labelHtml = section.match(/<span\\b[^>]*\\bdata-seo-geo-label\\b[^>]*>([\\s\\S]*?)<\\/span>/i)?.[1];
+      const labelHtml = section.match(/<span\b[^>]*\bdata-seo-geo-label\b[^>]*>([\s\S]*?)<\/span>/i)?.[1];
       const labelText = labelHtml == null ? null : parseFragment(labelHtml).childNodes
         .filter((node) => node.nodeName === '#text').map((node) => node.value).join('');
       if (!section.includes('aria-expanded=') || labelText !== article.buttonLabel) {

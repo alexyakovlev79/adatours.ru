@@ -1,6 +1,7 @@
 import {promises as f} from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
+import {parse} from 'parse5';
 import {fileURLToPath} from 'node:url';
 const parts=[['header','header','<header class="site-header'],['search','div','<div class="search-overlay"'],['footer','footer','<footer class="footer"'],['cookie','div','<div class="cookie-notice"']];
 const navigation=[['/country/','Страны'],['/tours/','Туры'],['/multi-country/','Multi-country'],['/interests/','По интересам'],['/vip/','VIP'],['/mice/','MICE'],['/dmc/','Для агентств'],['/about/','О нас'],['/contacts/','Контакты']].map(([href,label])=>`<a href="${href}">${label}</a>`).join('');
@@ -34,6 +35,34 @@ function stub(key,raw,url){
   if(key==='cookie')return '<div data-site-shell="cookie" hidden></div>';
   throw Error('Unknown shared site-shell part: '+key);
 }
+
+/** Compact only parser-identified indentation and non-functional comments.
+ * Text, tag attributes, script/style, noscript fallbacks and sensitive tags
+ * are preserved byte for byte; SEO articles remain in the original HTML.
+ */
+export function compactSafeHtml(html) {
+  const root=parse(html,{sourceCodeLocationInfo:true});
+  const edits=[];
+  const preserve=new Set(['pre','textarea','script','style','code','svg','math','noscript','template']);
+  const visit=(node,sensitive=false)=>{
+    const keep=sensitive||preserve.has(node.tagName);
+    const loc=node.sourceCodeLocation;
+    if(!keep && loc){
+      if(node.nodeName==='#comment' && !(node.data||'').trimStart().startsWith('[if')) {
+        edits.push({start:loc.startOffset,end:loc.endOffset,text:''});
+      } else if(node.nodeName==='#text') {
+        const raw=html.slice(loc.startOffset,loc.endOffset);
+        if(raw.length>1 && /^[ \t\r\n]+$/.test(raw))
+          edits.push({start:loc.startOffset,end:loc.endOffset,text:' '});
+      }
+    }
+    for(const child of node.childNodes||[])visit(child,keep);
+  };
+  visit(root);
+  for(const edit of edits.sort((a,b)=>b.start-a.start))
+    html=html.slice(0,edit.start)+edit.text+html.slice(edit.end);
+  return html;
+}
 async function* htmlFiles(dir){for(const e of await f.readdir(dir,{withFileTypes:true})){
   if(['media','pagefind','shared'].includes(e.name))continue;const p=path.join(dir,e.name);
   if(e.isDirectory())yield* htmlFiles(p);else if(e.isFile()&&e.name.endsWith('.html'))yield p;
@@ -42,7 +71,7 @@ async function size(dir){let total=0;for(const e of await f.readdir(dir,{withFil
   const p=path.join(dir,e.name);total+=e.isDirectory()?await size(p):e.isFile()?(await f.stat(p)).size:0;
 }return total}
 export async function dedupeSiteShell(dir=path.resolve('dist')){
-  let common=null,href='',pages=0,redirects=0,saved=0;
+  let common=null,href='',pages=0,redirects=0,saved=0,compacted=0;
   for await(const file of htmlFiles(dir)){
     let html=await f.readFile(file,'utf8');if(!html.includes('<header class="site-header')){redirects++;continue}
     // Keep the interactive form in SSR HTML so its country selector, input
@@ -66,10 +95,13 @@ export async function dedupeSiteShell(dir=path.resolve('dist')){
       html=html.slice(0,block.start)+stub(name,block.raw,href)+html.slice(block.end);
     if(element(html,'form','<form class="form"')?.raw!==fullForm.raw)
       throw Error('Lead form altered during deduplication: '+file);
+    const beforeCompact=Buffer.byteLength(html);
+    html=compactSafeHtml(html);
+    compacted+=beforeCompact-Buffer.byteLength(html);
     saved+=before-Buffer.byteLength(html);await f.writeFile(file,html);pages++;
   }
   if(!pages)throw Error('No complete pages found');const bytes=await size(dir);
-  console.log(JSON.stringify({pages,redirects,sharedFragment:href,savedBytes:saved,publishedBytes:bytes,publishedMB:+(bytes/1e6).toFixed(2)}));
+  console.log(JSON.stringify({pages,redirects,sharedFragment:href,savedBytes:saved,compactedBytes:compacted,publishedBytes:bytes,publishedMB:+(bytes/1e6).toFixed(2)}));
   if(bytes>500_000_000)throw Error('Site size target exceeded: '+bytes);
   return {pages,redirects,href,saved,bytes};
 }

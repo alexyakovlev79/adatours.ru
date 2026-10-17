@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_san_pedro_de_atakama",
+  "stableId": "destination_chile_san_pedro_de_atakama",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/san-pedro-de-atacama/",
+  "sourceFingerprint": "981c0131ce60d42b2369fcf2eca3ac7501f793b7b34a1971810da698f2c99e43",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Сан-Педро-де-Атакама",
+      "reason": "Основной объект — город San Pedro de Atacama, исходная точка экскурсий. Q23660231 коммуны, Q42897945 памятника и река не подменяют город."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка выбранного основного географического референта.",
+      "selected": "Q187893"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Языковая статья того же объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/San_Pedro_de_Atacama\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 самостоятельного town item, не центр коммуны.",
+      "selected": "-22.910805555555555,-68.20011111111111"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/san-pedro-de-atacama/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Основной объект — город San Pedro de Atacama, исходная точка экскурсий. Q23660231 коммуны, Q42897945 памятника и река не подменяют город."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/san-pedro-de-atacama/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q187893",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точная карточка выбранного основного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q187893",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Языковая статья того же объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q187893",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "P625 самостоятельного town item, не центр коммуны."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q187893",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Основной объект — город San Pedro de Atacama, исходная точка экскурсий. Q23660231 коммуны, Q42897945 памятника и река не подменяют город."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q187893",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Pedro_de_Atacama"
+    }
+  },
+  "location": {
+    "latitude": -22.910805555555555,
+    "longitude": -68.20011111111111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q187893"
+  },
+  "reviewNote": "Боливийские Laguna Colorada/Polques из обзорного текста не включены как находящиеся внутри чилийского города."
+}

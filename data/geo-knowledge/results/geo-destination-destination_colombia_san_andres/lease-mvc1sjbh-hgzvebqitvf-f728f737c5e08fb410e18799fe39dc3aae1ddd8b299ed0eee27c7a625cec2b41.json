@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_san_andres",
+  "stableId": "destination_colombia_san_andres",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/san-andres/",
+  "sourceFingerprint": "7b23463ba3bb46f47d3a1865af46775db80214535111c8f42e7eb0106e844068",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q131051",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Andr%C3%A9s_(island)"
+    },
+    "geonamesId": "3670212"
+  },
+  "location": {
+    "latitude": 12.54778,
+    "longitude": -81.71889,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/San_Andr%C3%A9s_(island)"
+  },
+  "alternateNames": [
+    "Isla de San Andrés",
+    "San Andrés Island"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Сан-Андрес",
+      "reason": "Страница явно посвящена колумбийскому острову San Andrés с San Luis, Morgan’s Cave и пляжами. Город San Andrés Town назван второстепенной частью острова."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q131051",
+      "reason": "Страница явно посвящена колумбийскому острову San Andrés с San Luis, Morgan’s Cave и пляжами. Город San Andrés Town назван второстепенной частью острова."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/San_Andr%C3%A9s_(island)",
+      "reason": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3670212",
+      "reason": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "12.54778,-81.71889; representative",
+      "reason": "Координата точной статьи острова 12°32′52″N 81°43′08″W находится в его внутренней части. Взята как опорная точка острова, а не центр города на северном конце. Грубая P625 12.58333333,-81.7 не использована."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Isla de San Andrés; San Andrés Island",
+      "reason": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "containedInPlace country_colombia",
+      "reason": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://colombia.travel/es/san-andres-isla",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Страница явно посвящена колумбийскому острову San Andrés с San Luis, Morgan’s Cave и пляжами. Город San Andrés Town назван второстепенной частью острова."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/san-andres/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Live URL: HTTP 200, canonical exact, H1 соответствует, noindex отсутствует. Проверены approved MD и entry из main 989a35d14eab8a816010b3c5c40da68f62d230bb; stableId/страна/URL совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131051",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Страница явно посвящена колумбийскому острову San Andrés с San Luis, Morgan’s Cave и пляжами. Город San Andrés Town назван второстепенной частью острова."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131051",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131051",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Andr%C3%A9s_(island)",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Координата точной статьи острова 12°32′52″N 81°43′08″W находится в его внутренней части. Взята как опорная точка острова, а не центр города на северном конце. Грубая P625 12.58333333,-81.7 не использована."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131051",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q131051",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Q131051 — отдельный остров, не город и не весь департамент San Andrés, Providencia y Santa Catalina. UNESCO Seaflower/его границы всему острову как sameAs не присваивались."
+}

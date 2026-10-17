@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_chagres_river",
+  "stableId": "destination_panama_chagres_river",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/chagres-river/",
+  "sourceFingerprint": "d1f56c8f65cb4610cab1d9eec05f67f928bc56a2a5ccd71d1156484e5c403582",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Река Чагрес",
+      "reason": "Река Río Chagres в Панаме; основной референт — река, несмотря на экскурсионное описание берегов."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка реки Чагрес.",
+      "selected": "Q1408661"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Точная статья реки.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Chagres_River\"}"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM relation реки указан в её карточке.",
+      "selected": "{\"type\":\"relation\",\"id\":3600468}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Из двух P625 выбрана опорная точка на реке у Гамбоа; не устье и не усреднение.",
+      "selected": "9.131969444444445,-79.69203055555556"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/chagres-river/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Река Río Chagres в Панаме; основной референт — река, несмотря на экскурсионное описание берегов."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/chagres-river/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1408661",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точная карточка реки Чагрес."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1408661",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точная статья реки."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1408661",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "OSM relation реки указан в её карточке."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1408661",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Из двух P625 выбрана опорная точка на реке у Гамбоа; не устье и не усреднение."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1408661",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chagres_River"
+    },
+    "osm": {
+      "type": "relation",
+      "id": 3600468
+    }
+  },
+  "location": {
+    "latitude": 9.131969444444445,
+    "longitude": -79.69203055555556,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1408661"
+  },
+  "reviewNote": "Вторая P625 9.08,-79.68 и устье 9.317,-80 из Wikipedia не использованы для туристического участка у Гамбоа."
+}

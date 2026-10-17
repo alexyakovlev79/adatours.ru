@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_el_ocaso_coffee_farm",
+  "stableId": "destination_colombia_el_ocaso_coffee_farm",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/el-ocaso-coffee-farm/",
+  "sourceFingerprint": "805d7a876142f4b6c1ad84d3650e60ef80c39835de3a67c43891cfb5f31a2b4f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "coffee_farm",
+  "alternateNames": [
+    "Finca El Ocaso",
+    "Ocaso Coffee Farm",
+    "El Ocaso Salento"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4981374326
+    },
+    "officialUrl": "https://web.fincaelocasosalento.com/"
+  },
+  "location": {
+    "latitude": 4.625919,
+    "longitude": -75.5959039,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/4981374326"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_colombia_salento"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/el-ocaso-coffee-farm/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Проверены production URL (HTTP 200), self-canonical, H1, отсутствие noindex; approved MD и source-index сверены с актуальным main blob. Ферма Эль-Окасо возле Саленто, Quindío: производство кофе, дом и кофейные экскурсии. Исходный сайт Ocaso Coffee ссылается на fincaelocasosalento.com; актуальный сайт фермы указывает Vereda Palestina km 3,8. Это не кофейня в центре другого города и не одноименная ферма в Tolima."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.ocasocoffee.com/web/ocaso-farm/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Ферма Эль-Окасо возле Саленто, Quindío: производство кофе, дом и кофейные экскурсии. Исходный сайт Ocaso Coffee ссылается на fincaelocasosalento.com; актуальный сайт фермы указывает Vereda Palestina km 3,8. Это не кофейня в центре другого города и не одноименная ферма в Tolima."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.ocasocoffee.com/web/ocaso-farm/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Ферма Эль-Окасо возле Саленто, Quindío: производство кофе, дом и кофейные экскурсии. Исходный сайт Ocaso Coffee ссылается на fincaelocasosalento.com; актуальный сайт фермы указывает Vereda Palestina km 3,8. Это не кофейня в центре другого города и не одноименная ферма в Tolima."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.ocasocoffee.com/web/ocaso-farm/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Местное и русское название совпадает с предметным источником/точной объектной карточкой."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/4981374326",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Прямо прочитан OSM API; подтверждены имя, тип и география. Точные Vereda Palestina KM 3,8, адрес Salento, crop=coffee и официальный website совпадают с сайтом фермы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://web.fincaelocasosalento.com/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Официальный сайт фермы; ссылка на этот домен проверена также на исходном Ocaso Coffee. Совпадают Salento, Vereda Palestina KM 3,8 и кофейные экскурсии."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/4981374326",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Прямой OSM API map: Tour de Finca La Ocaso / Ocaso Coffee Tour, tourism=attraction, crop=coffee, addr:city Salento, addr:street Vereda Palestina, номер KM 3,8, website fincaelocasosalento.com. Точка экскурсионной площадки фермы; соседние Ocaso Coffee Farm и Coffee House находятся в пределах десятков метров."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.ocasocoffee.com/web/ocaso-farm/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Точный объект источника расположен в стране из MD/source-index: country_colombia. Ферма Эль-Окасо возле Саленто, Quindío: производство кофе, дом и кофейные экскурсии. Исходный сайт Ocaso Coffee ссылается на fincaelocasosalento.com; актуальный сайт фермы указывает Vereda Palestina km 3,8. Это не кофейня в центре другого города и не одноименная ферма в Tolima."
+    },
+    {
+      "field": "relationships.destination_colombia_salento",
+      "sourceUrl": "https://web.fincaelocasosalento.com/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Официальный сайт фермы прямо называет Salento, Quindío и дорогу через Vereda Palestina. relatedPlace связывает ферму с поселением без утверждения, что она находится в его городской застройке."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кофейная ферма Эль-Окасо",
+      "reason": "Ферма Эль-Окасо возле Саленто, Quindío: производство кофе, дом и кофейные экскурсии. Исходный сайт Ocaso Coffee ссылается на fincaelocasosalento.com; актуальный сайт фермы указывает Vereda Palestina km 3,8. Это не кофейня в центре другого города и не одноименная ферма в Tolima."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "coffee_farm",
+      "reason": "Тип принятого основного референта подтвержден предметным источником."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Finca El Ocaso; Ocaso Coffee Farm; El Ocaso Salento",
+      "reason": "Названия относятся к выбранному референту, отдельные соседние объекты исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "node/4981374326",
+      "reason": "Точная карточка OSM соответствует принятому референту по имени, географии и масштабу."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://web.fincaelocasosalento.com/",
+      "reason": "Оператор именно этой фермы, подтвержденный перекрестными ссылками."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "4.625919,-75.5959039 (feature_point)",
+      "reason": "Прямой OSM API map: Tour de Finca La Ocaso / Ocaso Coffee Tour, tourism=attraction, crop=coffee, addr:city Salento, addr:street Vereda Palestina, номер KM 3,8, website fincaelocasosalento.com. Точка экскурсионной площадки фермы; соседние Ocaso Coffee Farm и Coffee House находятся в пределах десятков метров."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна подтверждена предметным источником с географическим контекстом."
+    },
+    {
+      "field": "relationships.destination_colombia_salento",
+      "probability": 98,
+      "selected": "destination_colombia_salento",
+      "reason": "Официальный сайт фермы прямо называет Salento, Quindío и дорогу через Vereda Palestina. relatedPlace связывает ферму с поселением без утверждения, что она находится в его городской застройке."
+    }
+  ],
+  "reviewNote": "OSM cafe node 10031497317 в 1.5 км юго-западнее не принят вместо фермы. Выбрана площадка с точным адресом, контактами и официальным доменом. QID кофейного региона UNESCO не присвоен отдельной ферме."
+}

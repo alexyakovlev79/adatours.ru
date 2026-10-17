@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_plajya_tamarindo",
+  "stableId": "destination_costa_rica_plajya_tamarindo",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/playa-tamarindo/",
+  "sourceFingerprint": "2780f7aac07fe2e4a9bd98d12d7d50c2db379258c67c420af917f85d011cd7da",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "beach",
+  "alternateNames": [
+    "Playa Tamarindo",
+    "Tamarindo Beach"
+  ],
+  "external": {
+    "geonamesId": "13449762"
+  },
+  "location": {
+    "latitude": 10.30044,
+    "longitude": -85.84229,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/39245202"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/playa-tamarindo/",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Проверены production URL (HTTP 200), self-canonical, H1, отсутствие noindex; approved MD и source-index сверены с актуальным main blob. Плайя Тамариндо — именованный пляж у курорта Тамариндо в Guanacaste, как в H1, исходном URL и описании протяженного песчаного берега. ICT называет отдельный Tamarindo Beach; городская инфраструктура в тексте — окружение пляжа. Это не одноименный пляж в Puntarenas и не весь административный район Tamarindo."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/guanacaste",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Плайя Тамариндо — именованный пляж у курорта Тамариндо в Guanacaste, как в H1, исходном URL и описании протяженного песчаного берега. ICT называет отдельный Tamarindo Beach; городская инфраструктура в тексте — окружение пляжа. Это не одноименный пляж в Puntarenas и не весь административный район Tamarindo."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/guanacaste",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Плайя Тамариндо — именованный пляж у курорта Тамариндо в Guanacaste, как в H1, исходном URL и описании протяженного песчаного берега. ICT называет отдельный Tamarindo Beach; городская инфраструктура в тексте — окружение пляжа. Это не одноименный пляж в Puntarenas и не весь административный район Tamarindo."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/guanacaste",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Местное и русское название совпадает с предметным источником/точной объектной карточкой."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/39245202",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Точная карточка называет GeoNames 13449762 для нужного типа/масштаба объекта; сверены страна и ближайшие места."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/39245202",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Точка точной GeoNames-карточки пляжа 13449762 через Mapcarta: Playa Tamarindo, type beach, Guanacaste, 10.30044,-85.84229, рядом Tamarindo и Las Baulas. Точка пляжа, не формальный центроид административного района и не городской OSM node 773366360."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/guanacaste",
+      "checkedAt": "2026-10-17T07:17:38.005Z",
+      "note": "Точный объект источника расположен в стране из MD/source-index: country_costa_rica. Плайя Тамариндо — именованный пляж у курорта Тамариндо в Guanacaste, как в H1, исходном URL и описании протяженного песчаного берега. ICT называет отдельный Tamarindo Beach; городская инфраструктура в тексте — окружение пляжа. Это не одноименный пляж в Puntarenas и не весь административный район Tamarindo."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Плайя Тамариндо",
+      "reason": "Плайя Тамариндо — именованный пляж у курорта Тамариндо в Guanacaste, как в H1, исходном URL и описании протяженного песчаного берега. ICT называет отдельный Tamarindo Beach; городская инфраструктура в тексте — окружение пляжа. Это не одноименный пляж в Puntarenas и не весь административный район Tamarindo."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "beach",
+      "reason": "Тип принятого основного референта подтвержден предметным источником."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Playa Tamarindo; Tamarindo Beach",
+      "reason": "Названия относятся к выбранному референту, отдельные соседние объекты исключены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 48,
+      "selected": "Q2302554 (отклонен)",
+      "reason": "Карточка Q2302554 — административный район, не именованный пляж; после сравнения географии, типа и масштаба поле опущено."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "13449762",
+      "reason": "GeoNames относится к тому же выбранному объекту; соседние и административные карточки не смешивались."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "10.30044,-85.84229 (feature_point)",
+      "reason": "Точка точной GeoNames-карточки пляжа 13449762 через Mapcarta: Playa Tamarindo, type beach, Guanacaste, 10.30044,-85.84229, рядом Tamarindo и Las Baulas. Точка пляжа, не формальный центроид административного района и не городской OSM node 773366360."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Страна подтверждена предметным источником с географическим контекстом."
+    }
+  ],
+  "reviewNote": "Q2302554 определен как district in Santa Cruz canton, с P625 10.2923417,-85.798175 в глубине суши; вероятность соответствия самому пляжу ниже 70%, QID опущен. GeoNames 6619864 и OSM relation 6411126 того района также не перенесены на пляж. Одноименный пляж в Puntarenas исключен."
+}

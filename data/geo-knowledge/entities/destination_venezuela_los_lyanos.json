@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_los_lyanos",
+  "stableId": "destination_venezuela_los_lyanos",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/los-llanos/",
+  "sourceFingerprint": "09102e8650fc0211adee15f7d6fcd1406d7b9b789b61f4e2c3537f0d9f8b38b4",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q29017894",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Venezuelan_Llanos"
+    }
+  },
+  "alternateNames": [
+    "Venezuelan Llanos",
+    "Llanos Venezolanos",
+    "Los Llanos"
+  ],
+  "location": {
+    "latitude": 8,
+    "longitude": -66,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q29017894.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Venezuelan_Llanos",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Природный регион равнин Венесуэлы Llanos Venezolanos: summary/MD о саванне, реке Апуре и дикой природе описывают венесуэльскую часть Льяноса, а не административное деление."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/los-llanos/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q29017894.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Природный регион равнин Венесуэлы Llanos Venezolanos: summary/MD о саванне, реке Апуре и дикой природе описывают венесуэльскую часть Льяноса, а не административное деление. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q29017894.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Venezuelan_Llanos",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q29017894.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Грубая опорная точка 8,-66 из P625 и точной статьи о природном регионе. Роль representative, исходная точность Wikidata 1 градус; точка не выдается за центр, отдельный заповедник или точный пункт сафари."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Venezuelan_Llanos",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Грубая опорная точка 8,-66 из P625 и точной статьи о природном регионе. Роль representative, исходная точность Wikidata 1 градус; точка не выдается за центр, отдельный заповедник или точный пункт сафари."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Venezuelan_Llanos",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Использован Q29017894 природной венесуэльской области; отвергнут Q6104277 административной области и Q141501 трансграничного Льяноса Колумбии/Венесуэлы. P131=Barinas в Wikidata не перенесен: природная область шире одного штата. Только связь со страной.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Лос Льянос",
+      "reason": "Природный регион равнин Венесуэлы Llanos Venezolanos: summary/MD о саванне, реке Апуре и дикой природе описывают венесуэльскую часть Льяноса, а не административное деление."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "selected": "Q29017894",
+      "reason": "Природный регион равнин Венесуэлы Llanos Venezolanos: summary/MD о саванне, реке Апуре и дикой природе описывают венесуэльскую часть Льяноса, а не административное деление. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "https://en.wikipedia.org/wiki/Venezuelan_Llanos",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Venezuelan Llanos; Llanos Venezolanos; Los Llanos",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "8, -66; representative",
+      "reason": "Грубая опорная точка 8,-66 из P625 и точной статьи о природном регионе. Роль representative, исходная точность Wikidata 1 градус; точка не выдается за центр, отдельный заповедник или точный пункт сафари."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

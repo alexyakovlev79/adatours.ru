@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_tiwanaku_gate_of_the_sun",
+  "stableId": "destination_bolivia_tiwanaku_gate_of_the_sun",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/tiwanaku-gate-of-the-sun/",
+  "sourceFingerprint": "1d826730f05b3a455b38935129c7a9d83ba7bcdb7beddfc5708e2cf28b217423",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "monument",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_bolivia_tiauanaku"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/tiwanaku-gate-of-the-sun/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2669375",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс monument установлен по смыслу MD и исследованным источникам. Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2669375",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитан живой Special:EntityData JSON; имя, P31, P17 и смысл объекта совпадают. Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2669375",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точные Wikipedia sitelinks выбранного QID; не тематические статьи соседнего объекта."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/877180132",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитаны текущие OSM API tags/геометрия. Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID. Выбрана feature_point реального монумента OSM 877180132: Puerta del Sol, historic=monument, wikidata=Q2669375. P625 Wikidata -16.5544,-68.6741 менее точна и находится примерно в 18 м западнее. Не весь объект UNESCO Tiwanaku, не Puerta del Sol в Мадриде и не храм Каласасайя; UNESCO ID всего комплекса монументу не присваивается."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/877180132",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Выбрана feature_point реального монумента OSM 877180132: Puerta del Sol, historic=monument, wikidata=Q2669375. P625 Wikidata -16.5544,-68.6741 менее точна и находится примерно в 18 м западнее. Не весь объект UNESCO Tiwanaku, не Puerta del Sol в Мадриде и не храм Каласасайя; UNESCO ID всего комплекса монументу не присваивается."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/877180132",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Независимая сверка конкретного монумента/храмовой платформы и QID в текущей карте."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2669375",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_tiauanaku",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2669375",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Ворота Солнца в Тиуанако",
+      "reason": "Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "monument",
+      "reason": "Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2669375",
+      "reason": "Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Gate_of_the_Sun\",\"es\":\"https://es.wikipedia.org/wiki/Puerta_del_Sol_(Tiahuanaco)\"}",
+      "reason": "Sitelinks из проверенной карточки конкретного объекта."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/877180132",
+      "reason": "Выбрана feature_point реального монумента OSM 877180132: Puerta del Sol, historic=monument, wikidata=Q2669375. P625 Wikidata -16.5544,-68.6741 менее точна и находится примерно в 18 м западнее. Не весь объект UNESCO Tiwanaku, не Puerta del Sol в Мадриде и не храм Каласасайя; UNESCO ID всего комплекса монументу не присваивается."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "-16.5544181, -68.673936",
+      "reason": "Выбрана feature_point реального монумента OSM 877180132: Puerta del Sol, historic=monument, wikidata=Q2669375. P625 Wikidata -16.5544,-68.6741 менее точна и находится примерно в 18 м западнее. Не весь объект UNESCO Tiwanaku, не Puerta del Sol в Мадриде и не храм Каласасайя; UNESCO ID всего комплекса монументу не присваивается."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    },
+    {
+      "field": "relationships.destination_bolivia_tiauanaku",
+      "probability": 98,
+      "selected": "destination_bolivia_tiauanaku",
+      "reason": "Монолитные Ворота Солнца комплекса Тиуанако в MD соответствуют Gate of the Sun Q2669375; подтверждены P361 Tiwanaku и OSM node с тем же QID."
+    }
+  ],
+  "reviewNote": "Выбрана feature_point реального монумента OSM 877180132: Puerta del Sol, historic=monument, wikidata=Q2669375. P625 Wikidata -16.5544,-68.6741 менее точна и находится примерно в 18 м западнее. Не весь объект UNESCO Tiwanaku, не Puerta del Sol в Мадриде и не храм Каласасайя; UNESCO ID всего комплекса монументу не присваивается.",
+  "external": {
+    "wikidataQid": "Q2669375",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Gate_of_the_Sun",
+      "es": "https://es.wikipedia.org/wiki/Puerta_del_Sol_(Tiahuanaco)"
+    },
+    "osm": {
+      "type": "node",
+      "id": 877180132
+    }
+  },
+  "location": {
+    "latitude": -16.5544181,
+    "longitude": -68.673936,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/877180132"
+  }
+}

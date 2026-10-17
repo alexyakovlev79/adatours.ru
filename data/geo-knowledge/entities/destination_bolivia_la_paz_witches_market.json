@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_la_paz_witches_market",
+  "stableId": "destination_bolivia_la_paz_witches_market",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/la-paz-witches-market/",
+  "sourceFingerprint": "e69cf4b0b02044f9cd1504055f275bb7877c2b6d1fe35f5c9e35e3ce5a2bf5fd",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "street market",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_bolivia_la_pas"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/la-paz-witches-market/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7775306",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс street market установлен по смыслу MD и исследованным источникам. MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.concejomunicipal.bo/2019/05/29/mercado-de-las-brujas-es-declarado-patrimonio-cultural-inmaterial-del-municipio/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Проиндексированная публикация Concejo Municipal de La Paz определяет культурное пространство рынка по улицам Sagárnaga, Linares, Santa Cruz, Melchor Jiménez и атриуму San Francisco. Прямое открытие во время проверки возвращало 502; использованы доступный поисковый текст и независимая карта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7775306",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитан живой Special:EntityData JSON; имя, P31, P17 и смысл объекта совпадают. MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7775306",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точные Wikipedia sitelinks выбранного QID; не тематические статьи соседнего объекта."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/7280293747",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитаны текущие OSM API tags/геометрия. MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах. Основной референт — названный уличный рынок, а route_cluster в MD является редакционной классификацией. Выбрана representative-точка marketplace OSM 7280293747. Соседний tourism=attraction 12157845662 отмечает тот же район примерно в 140 м юго-восточнее. Wikidata -16.5,-68.149 имеет грубую точность около километра и не выбрана. Не площадь San Francisco на обложке и не The Witches Pub."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/7280293747",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Основной референт — названный уличный рынок, а route_cluster в MD является редакционной классификацией. Выбрана representative-точка marketplace OSM 7280293747. Соседний tourism=attraction 12157845662 отмечает тот же район примерно в 140 м юго-восточнее. Wikidata -16.5,-68.149 имеет грубую точность около километра и не выбрана. Не площадь San Francisco на обложке и не The Witches Pub."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.concejomunicipal.bo/2019/05/29/mercado-de-las-brujas-es-declarado-patrimonio-cultural-inmaterial-del-municipio/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Муниципальное описание указывает уличное пространство Linares/Sagárnaga/Jiménez; для него выбрана точка marketplace, не далёкая грубая P625."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7775306",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_la_pas",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7775306",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Рынок ведьм в Ла-Пасе",
+      "reason": "MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "street market",
+      "reason": "MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q7775306",
+      "reason": "MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/The_Witches%27_Market\",\"es\":\"https://es.wikipedia.org/wiki/Mercado_de_las_Brujas\"}",
+      "reason": "Sitelinks из проверенной карточки конкретного объекта."
+    },
+    {
+      "field": "external.osm",
+      "probability": 92,
+      "selected": "node/7280293747",
+      "reason": "Основной референт — названный уличный рынок, а route_cluster в MD является редакционной классификацией. Выбрана representative-точка marketplace OSM 7280293747. Соседний tourism=attraction 12157845662 отмечает тот же район примерно в 140 м юго-восточнее. Wikidata -16.5,-68.149 имеет грубую точность около километра и не выбрана. Не площадь San Francisco на обложке и не The Witches Pub."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "-16.4962388, -68.1391523",
+      "reason": "Основной референт — названный уличный рынок, а route_cluster в MD является редакционной классификацией. Выбрана representative-точка marketplace OSM 7280293747. Соседний tourism=attraction 12157845662 отмечает тот же район примерно в 140 м юго-восточнее. Wikidata -16.5,-68.149 имеет грубую точность около километра и не выбрана. Не площадь San Francisco на обложке и не The Witches Pub."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    },
+    {
+      "field": "relationships.destination_bolivia_la_pas",
+      "probability": 98,
+      "selected": "destination_bolivia_la_pas",
+      "reason": "MD описывает рынок ритуальных предметов в старом Ла-Пасе; Q7775306 и муниципальная публикация подтверждают именно Mercado de las Brujas на Linares/Jiménez и соседних улицах."
+    }
+  ],
+  "reviewNote": "Основной референт — названный уличный рынок, а route_cluster в MD является редакционной классификацией. Выбрана representative-точка marketplace OSM 7280293747. Соседний tourism=attraction 12157845662 отмечает тот же район примерно в 140 м юго-восточнее. Wikidata -16.5,-68.149 имеет грубую точность около километра и не выбрана. Не площадь San Francisco на обложке и не The Witches Pub.",
+  "external": {
+    "wikidataQid": "Q7775306",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/The_Witches%27_Market",
+      "es": "https://es.wikipedia.org/wiki/Mercado_de_las_Brujas"
+    },
+    "osm": {
+      "type": "node",
+      "id": 7280293747
+    }
+  },
+  "location": {
+    "latitude": -16.4962388,
+    "longitude": -68.1391523,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/7280293747"
+  }
+}

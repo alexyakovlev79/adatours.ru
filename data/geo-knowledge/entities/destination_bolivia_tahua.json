@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_tahua",
+  "stableId": "destination_bolivia_tahua",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/tahua/",
+  "sourceFingerprint": "3523744c6069d1261ec6edbf33f0ad5c1768a9e79d7ed81b5855a0930f5b0d5c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "village",
+  "external": {
+    "geonamesId": "3903687",
+    "osm": {
+      "type": "node",
+      "id": 2410078882
+    }
+  },
+  "location": {
+    "latitude": -19.8908485,
+    "longitude": -67.6961839,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/api/0.6/node/2410078882"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/tahua/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Населенный пункт Тахуа на северном берегу солончака Уюни. Прямой OSM XML: name=Tahua, place=village, is_in:country=Bolivia; GeoNames 3903687: P.PPL."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/tahua.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2410078882",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Населенный пункт Тахуа на северном берегу солончака Уюни. Прямой OSM XML: name=Tahua, place=village, is_in:country=Bolivia; GeoNames 3903687: P.PPL."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2410078882",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Населенный пункт Тахуа на северном берегу солончака Уюни. Прямой OSM XML: name=Tahua, place=village, is_in:country=Bolivia; GeoNames 3903687: P.PPL."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2410078882",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Выбрана текущая точка OSM node 2410078882 (-19.8908485,-67.6961839); GeoNames дает (-19.89,-67.69542), около 120 м восточнее. Не усреднялась; это поселение, не центроид кантона."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3903687/tahua.html",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Выбрана текущая точка OSM node 2410078882 (-19.8908485,-67.6961839); GeoNames дает (-19.89,-67.69542), около 120 м восточнее. Не усреднялась; это поселение, не центроид кантона."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2410078882",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3903687/tahua.html",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "GeoNames ID 3903687 установлен точной карточкой или соответствующим Wikidata P1566."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/2410078882",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "OSM API вернул visible=true, name=Tahua, place=village, is_in:country=Bolivia; геометрия поселения."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Населенный пункт Тахуа на северном берегу солончака Уюни. Прямой OSM XML: name=Tahua, place=village, is_in:country=Bolivia; GeoNames 3903687: P.PPL."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Населенный пункт Тахуа на северном берегу солончака Уюни. Прямой OSM XML: name=Tahua, place=village, is_in:country=Bolivia; GeoNames 3903687: P.PPL.",
+      "selected": "village"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Выбрана текущая точка OSM node 2410078882 (-19.8908485,-67.6961839); GeoNames дает (-19.89,-67.69542), около 120 м восточнее. Не усреднялась; это поселение, не центроид кантона.",
+      "selected": "-19.8908485, -67.6961839"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Карточка точного географического объекта, класс и страна совпадают.",
+      "selected": "3903687"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Прямое чтение XML node: Tahua, place=village, Bolivia.",
+      "selected": "node/2410078882"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 15,
+      "reason": "Найденный Q7675684 относится к кантону, не поселению; поле пропущено."
+    }
+  ],
+  "reviewNote": "Q7675684 описывает кантон, Q1477909 — муниципалитет, английская Tahua — остров Соломоновых Островов. Эти QID/Wikipedia не назначены поселению; принято точное соответствие OSM и GeoNames."
+}

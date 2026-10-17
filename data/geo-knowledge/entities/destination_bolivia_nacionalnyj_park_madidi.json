@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_nacionalnyj_park_madidi",
+  "stableId": "destination_bolivia_nacionalnyj_park_madidi",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/madidi-national-park/",
+  "sourceFingerprint": "e3ec18fb0e12a0efef497ad47e446acab50cc239b1eac34eb1712ff9eab40f7c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "national_park",
+  "external": {
+    "wikidataQid": "Q647206",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Madidi_National_Park"
+    },
+    "geonamesId": "9179604"
+  },
+  "location": {
+    "latitude": -13.46425,
+    "longitude": -68.70335,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/9179604/madidi-national-park.html"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/madidi-national-park/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/madidi-national-park.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.geonames.org/9179604/madidi-national-park.html",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.geonames.org/9179604/madidi-national-park.html",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/9179604/madidi-national-park.html",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Выбрана представительская точка точной GeoNames-карточки 9179604. Wikipedia (-13.8,-67.63333) и P625 (-14.33333,-68.33333) дают другие точки большой территории. Не усреднялись и не объявлены входом/центром."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Madidi_National_Park",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Выбрана представительская точка точной GeoNames-карточки 9179604. Wikipedia (-13.8,-67.63333) и P625 (-14.33333,-68.33333) дают другие точки большой территории. Не усреднялись и не объявлены входом/центром."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.geonames.org/9179604/madidi-national-park.html",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q647206",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Madidi_National_Park",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точная статья о выбранном географическом объекте. Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/9179604/madidi-national-park.html",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "GeoNames ID 9179604 установлен точной карточкой или соответствующим Wikidata P1566."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD.",
+      "selected": "national_park"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Выбрана представительская точка точной GeoNames-карточки 9179604. Wikipedia (-13.8,-67.63333) и P625 (-14.33333,-68.33333) дают другие точки большой территории. Не усреднялись и не объявлены входом/центром.",
+      "selected": "-13.46425, -68.70335"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD.",
+      "selected": "Q647206"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Национальный парк Мадиди и прилегающая интегрированная природная территория в Ла-Пасе; маршрут по Бени и Туичи соответствует MD.",
+      "selected": "https://en.wikipedia.org/wiki/Madidi_National_Park"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Карточка точного географического объекта, класс и страна совпадают.",
+      "selected": "9179604"
+    }
+  ],
+  "reviewNote": null
+}

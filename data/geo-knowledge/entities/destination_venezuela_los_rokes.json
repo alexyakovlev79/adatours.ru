@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_los_rokes",
+  "stableId": "destination_venezuela_los_rokes",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/los-roques/",
+  "sourceFingerprint": "763a4106ffefa13c17f9fc99a4c853df2804d13df54abd20ec80dd581968df02",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q318678",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Los_Roques_Archipelago"
+    }
+  },
+  "alternateNames": [
+    "Los Roques Archipelago",
+    "Archipiélago Los Roques"
+  ],
+  "location": {
+    "latitude": 11.8575,
+    "longitude": -66.7575,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q318678.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Los_Roques_Archipelago",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Архипелаг Лос-Рокес у Венесуэлы: MD прямо описывает множество островов, рифы и парк. Не один остров Gran Roque, не аэропорт и не одноименный риф Багам."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/los-roques/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q318678.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Архипелаг Лос-Рокес у Венесуэлы: MD прямо описывает множество островов, рифы и парк. Не один остров Gran Roque, не аэропорт и не одноименный риф Багам. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q318678.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Los_Roques_Archipelago",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q318678.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Выбрана первая P625 11.8575,-66.7575, совпадающая с точной статьей архипелага. Вторая P625 11.83333,-66.75 не усреднялась; representative архипелага с морской акваторией, не посадка/пляж/единственный центр."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Los_Roques_Archipelago",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Выбрана первая P625 11.8575,-66.7575, совпадающая с точной статьей архипелага. Вторая P625 11.83333,-66.75 не усреднялась; representative архипелага с морской акваторией, не посадка/пляж/единственный центр."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Los_Roques_Archipelago",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Внешняя идентичность всего архипелага Q318678. Категория island в локальном MD не сужает объект до Gran Roque. Самостоятельный национальный парк не заменяет архипелаг; Ramsar/WDPA не добавлены без отдельной проверки границ.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лос Рокес",
+      "reason": "Архипелаг Лос-Рокес у Венесуэлы: MD прямо описывает множество островов, рифы и парк. Не один остров Gran Roque, не аэропорт и не одноименный риф Багам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q318678",
+      "reason": "Архипелаг Лос-Рокес у Венесуэлы: MD прямо описывает множество островов, рифы и парк. Не один остров Gran Roque, не аэропорт и не одноименный риф Багам. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Los_Roques_Archipelago",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Los Roques Archipelago; Archipiélago Los Roques",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "11.8575, -66.7575; representative",
+      "reason": "Выбрана первая P625 11.8575,-66.7575, совпадающая с точной статьей архипелага. Вторая P625 11.83333,-66.75 не усреднялась; representative архипелага с морской акваторией, не посадка/пляж/единственный центр."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

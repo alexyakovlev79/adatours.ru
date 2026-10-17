@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_vulkan_ollague",
+  "stableId": "destination_bolivia_vulkan_ollague",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/ollague-volcano/",
+  "sourceFingerprint": "99e495164e6cc1c52d92570e0617ea337f05ca3cb4b33838293f8256a2373ceb",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "volcano",
+  "relationships": [
+    {
+      "type": "relatedPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/ollague-volcano/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1420297",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс volcano установлен по смыслу MD и исследованным источникам. MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=355060",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Smithsonian GVP 355060: Ollagüe, Chile–Bolivia; стратовулкан; опорная точка 21.3°S 68.18°W."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1420297",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитан живой Special:EntityData JSON; имя, P31, P17 и смысл объекта совпадают. MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1420297",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точные Wikipedia sitelinks выбранного QID; не тематические статьи соседнего объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3878083/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая карточка GeoNames прочитана с HTTP 200: точное название и класс совпадают. Единый приграничный вулкан, не самостоятельная боливийская сторона. countryId сайта сохраняется как каталогизация. Чтобы не объявлять весь вулкан вложенным только в одну страну, записаны relatedPlace к Боливии и Чили. Принята representative-точка Smithsonian -21.3,-68.18; P625 Wikidata содержит -21.3,-68.1666667 и -21.3025,-68.1791667, GeoNames -21.30222,-68.17917. Не усреднять. GeoNames относит карточку к CL; независимые Smithsonian и P17 подтверждают трансграничность."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=355060",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Единый приграничный вулкан, не самостоятельная боливийская сторона. countryId сайта сохраняется как каталогизация. Чтобы не объявлять весь вулкан вложенным только в одну страну, записаны relatedPlace к Боливии и Чили. Принята representative-точка Smithsonian -21.3,-68.18; P625 Wikidata содержит -21.3,-68.1666667 и -21.3025,-68.1791667, GeoNames -21.30222,-68.17917. Не усреднять. GeoNames относит карточку к CL; независимые Smithsonian и P17 подтверждают трансграничность."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3878083/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Независимая карточка вулкана -21.30222,-68.17917 согласуется с выбранной опорной точкой Smithsonian; не усреднялись."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=355060",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Smithsonian прямо указывает Chile–Bolivia; связаны обе страны без ложного исключительного вложения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=355060",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Smithsonian прямо указывает Chile–Bolivia; связаны обе страны без ложного исключительного вложения."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Вулкан Оллагуэ",
+      "reason": "MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "volcano",
+      "reason": "MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1420297",
+      "reason": "MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Volc%C3%A1n_Ollag%C3%BCe\",\"en\":\"https://en.wikipedia.org/wiki/Ollag%C3%BCe\"}",
+      "reason": "Sitelinks из проверенной карточки конкретного объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3878083",
+      "reason": "Имя и класс проверены в GeoNames; география уточнена независимыми источниками. Метка CL не отрицает принадлежности вулкана обеим странам."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "-21.3, -68.18",
+      "reason": "Единый приграничный вулкан, не самостоятельная боливийская сторона. countryId сайта сохраняется как каталогизация. Чтобы не объявлять весь вулкан вложенным только в одну страну, записаны relatedPlace к Боливии и Чили. Принята representative-точка Smithsonian -21.3,-68.18; P625 Wikidata содержит -21.3,-68.1666667 и -21.3025,-68.1791667, GeoNames -21.30222,-68.17917. Не усреднять. GeoNames относит карточку к CL; независимые Smithsonian и P17 подтверждают трансграничность."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "MD прямо описывает вулкан Оллагуэ на границе Боливии и Чили. Q1420297 — гора/стратовулкан с P17 обеих стран; не чилийский посёлок Ollagüe Q51055."
+    }
+  ],
+  "reviewNote": "Единый приграничный вулкан, не самостоятельная боливийская сторона. countryId сайта сохраняется как каталогизация. Чтобы не объявлять весь вулкан вложенным только в одну страну, записаны relatedPlace к Боливии и Чили. Принята representative-точка Smithsonian -21.3,-68.18; P625 Wikidata содержит -21.3,-68.1666667 и -21.3025,-68.1791667, GeoNames -21.30222,-68.17917. Не усреднять. GeoNames относит карточку к CL; независимые Smithsonian и P17 подтверждают трансграничность.",
+  "external": {
+    "wikidataQid": "Q1420297",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Volc%C3%A1n_Ollag%C3%BCe",
+      "en": "https://en.wikipedia.org/wiki/Ollag%C3%BCe"
+    },
+    "geonamesId": "3878083"
+  },
+  "location": {
+    "latitude": -21.3,
+    "longitude": -68.18,
+    "pointRole": "representative",
+    "coordinateSource": "https://volcano.si.edu/volcano.cfm?vn=355060"
+  }
+}

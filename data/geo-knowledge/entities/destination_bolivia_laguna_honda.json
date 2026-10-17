@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_laguna_honda",
+  "stableId": "destination_bolivia_laguna_honda",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/laguna-honda/",
+  "sourceFingerprint": "3a0ac0f7d8cf0f323c4036658b83dc9767dd86ec07d4b99fe59f82b433c25940",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q21800805",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Laguna_Honda_(Bolivia)"
+    },
+    "geonamesId": "3915167",
+    "osm": {
+      "type": "way",
+      "id": 43069194
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/laguna-honda.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_Honda_(Bolivia)",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/laguna-honda/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Лагуна Хонда, canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Laguna_Honda_(Bolivia)",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21800805",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21800805",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Проверен sitelink eswiki=Laguna Honda (Bolivia) выбранного референта. Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3915167/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "GeoNames 3915167: Laguna Honda, H/LK, BO; соответствует P1566 Q21800805."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитана точная строка 3915167 в BO.txt: Laguna Honda (-21.61874,-68.062), country=BO."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3915167/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Точка GeoNames WGS84: -21.61874, -68.062; роль representative. Точка не объявляется единственным центром или границей объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Исходная строка BO.txt 3915167; координаты взяты из одной записи, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q21800805",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Сверка P625: -21.61874, -68.062. Разница опорных точек объяснима размером водоема/поселения; географический контекст совпадает. "
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/43069194",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитан актуальный OSM элемент; имя и тип объекта совпадают. У водоема natural=water, water=lake; идентичность проверена по названию и соседству."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/tours/mechta-bolivii.md",
+      "checkedAt": "2026-10-16T21:53:01.309Z",
+      "note": "Проверены именованные посещения и порядок лагун/остановок в фактической программе; география согласуется с выбранным объектом."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лагуна Хонда",
+      "reason": "Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q21800805",
+      "reason": "Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Laguna_Honda_(Bolivia)",
+      "reason": "Точная статья выбранного объекта/основного референта, не неоднозначность."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3915167",
+      "reason": "Совпадают имя, география, класс и P1566 выбранной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-21.61874, -68.062",
+      "reason": "Одна точка GeoNames с установленной ролью, сверена с P625 и программой/картой; координаты не усреднялись."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "way/43069194",
+      "reason": "Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta."
+    }
+  ],
+  "reviewNote": "Выбрана Laguna Honda в цепочке лагун Каньяпа—Хедионда—Хонда у границы с Чили, юго-запад Потоси. OSM использует основное имя Laguna Ukhuqucha (Laguna Honda). Не озеро/резерват Honda в Испании и не соседняя Ch’iyar Quta.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/laguna-honda/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -21.61874,
+    "longitude": -68.062,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/3915167/"
+  }
+}

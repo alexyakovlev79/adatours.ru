@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_pustynya_siloli",
+  "stableId": "destination_bolivia_pustynya_siloli",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/siloli-desert/",
+  "sourceFingerprint": "688a53a6961cbeb999ae2ba044d8caba347a688e527fc229af4e75500c0f9d9e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "desert",
+  "external": {
+    "wikidataQid": "Q2286387",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Desierto_Siloli"
+    }
+  },
+  "location": {
+    "latitude": -22.037275,
+    "longitude": -67.881775,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2286387"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/siloli-desert/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/siloli-desert.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2286387",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2286387",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2286387",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Выбрана опорная точка P625: 22°02′14.19″S 67°52′54.39″W, практически совпадает с испанской Wikipedia. OSM/Mapcarta имеют удаленные точки -21.86356/-68.03146 и -21.84725/-67.90063; они не усреднялись и не выдаются за точный вход."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Desierto_Siloli",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Выбрана опорная точка P625: 22°02′14.19″S 67°52′54.39″W, практически совпадает с испанской Wikipedia. OSM/Mapcarta имеют удаленные точки -21.86356/-68.03146 и -21.84725/-67.90063; они не усреднялись и не выдаются за точный вход."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2286387",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2286387",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Desierto_Siloli",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точная статья о выбранном географическом объекте. Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали.",
+      "selected": "desert"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Выбрана опорная точка P625: 22°02′14.19″S 67°52′54.39″W, практически совпадает с испанской Wikipedia. OSM/Mapcarta имеют удаленные точки -21.86356/-68.03146 и -21.84725/-67.90063; они не усреднялись и не выдаются за точный вход.",
+      "selected": "-22.037275, -67.881775"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали.",
+      "selected": "Q2286387"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Пустыня Силоли в Потоси с ветровыми скальными формами и Árbol de Piedra. Самостоятельный пустынный район, не отдельная скала и не пустыня Дали.",
+      "selected": "https://es.wikipedia.org/wiki/Desierto_Siloli"
+    }
+  ],
+  "reviewNote": "OSM не включен из-за разных географических привязок одноименных точек. Q2286387 принят как сама пустыня, точка P625 — representative."
+}

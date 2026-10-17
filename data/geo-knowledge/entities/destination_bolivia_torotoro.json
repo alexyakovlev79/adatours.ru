@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_torotoro",
+  "stableId": "destination_bolivia_torotoro",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/torotoro/",
+  "sourceFingerprint": "c7b78348461412d0d73d2fe31391f90d2143791ff209c6b07488f1d6a0613c01",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "national_park",
+  "external": {
+    "wikidataQid": "Q592741",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Torotoro_National_Park",
+      "es": "https://es.wikipedia.org/wiki/Parque_nacional_Toro_Toro"
+    },
+    "geonamesId": "10176516",
+    "wdpaIds": [
+      "20039"
+    ]
+  },
+  "location": {
+    "latitude": -18.1,
+    "longitude": -65.76667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q592741"
+  },
+  "alternateNames": [
+    "Toro Toro National Park",
+    "Parque nacional Toro Toro"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "reviewNote": "MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются.",
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/torotoro/",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "HTTP 200, canonical и H1 совпадают, noindex отсутствует. ID, страна и approved сверены по точным текущим MD и source-index entry."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/torotoro.md",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Проверен MD blob 1aa3968e3dbb3ff8aa3052c4e53e945fbcf87201; MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Torotoro_National_Park",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q592741",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Тип места подтвержден именованным описанием и географией; MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Torotoro_National_Park",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Проверены имена: Toro Toro National Park; Parque nacional Toro Toro."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q592741",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Проверены P31, P17 Bolivia, география/P625 и точный sitelink. MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Torotoro_National_Park",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Точная статья об объекте, проверен Wikidata sitelink и географическое описание."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Parque_nacional_Toro_Toro",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Точная статья об объекте, проверен Wikidata sitelink и географическое описание."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q592741",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "P1566 точной карточки Q592741 = 10176516. Значение проверено в EntityData; координаты GeoNames автоматически не переносились."
+    },
+    {
+      "field": "external.wdpaIds",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q592741",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "P809 = 20039 для Toro Toro National Park. Включен только ID; площадь, границы и природоохранные режимы не импортированы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q592741",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Torotoro_National_Park",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Независимо сверены географический контекст и роль точки. MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q592741",
+      "checkedAt": "2026-10-16T21:54:02.940Z",
+      "note": "Положение в Боливии подтверждено точным внешним объектом и текущим MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Тороторо",
+      "reason": "MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "national_park",
+      "reason": "Класс соответствует MD и основному референту источников."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Toro Toro National Park; Parque nacional Toro Toro",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q592741",
+      "reason": "Соответствуют название, тип и положение; исключены соседние/одноименные сущности."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Torotoro_National_Park; https://es.wikipedia.org/wiki/Parque_nacional_Toro_Toro",
+      "reason": "Статьи соответствуют выбранному основному референту."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "10176516",
+      "reason": "Точный внешний cross-reference с совпадающими названием и географией."
+    },
+    {
+      "field": "external.wdpaIds",
+      "probability": 94,
+      "selected": "20039",
+      "reason": "P809 точного национального парка."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-18.1, -65.76667; representative",
+      "reason": "Выбрана одна точка с указанной ролью; конфликтующие координаты не усреднялись. MD прямо определяет национальный парк, поэтому выбран Q592741, а не поселок/муниципалитет Toro Toro. P625 и EN Wikipedia дают общую опорную точку парка; это не вход и не доказанный геометрический центр. P809 связывает именно парк с WDPA20039; площадь и границы не импортируются."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Согласованные страна MD и внешних источников."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_santa_elena_de_uajren",
+  "stableId": "destination_venezuela_santa_elena_de_uajren",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/santa-elena-de-uairen/",
+  "sourceFingerprint": "0404e425c6728999b7e9accb03cd86b9ff37baa0029e9d931d1152abfafc400f",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2568748",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uair%C3%A9n"
+    }
+  },
+  "alternateNames": [
+    "Santa Elena de Uairén"
+  ],
+  "location": {
+    "latitude": 4.5958694,
+    "longitude": -61.1110307,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q2568748.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uair%C3%A9n",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Город Santa Elena de Uairén в Bolívar у бразильской границы, исходный пункт маршрутов Gran Sabana; MD и entry соответствуют городу, не всей Gran Sabana или погранпереходу."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/santa-elena-de-uairen/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q2568748.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Город Santa Elena de Uairén в Bolívar у бразильской границы, исходный пункт маршрутов Gran Sabana; MD и entry соответствуют городу, не всей Gran Sabana или погранпереходу. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q2568748.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uair%C3%A9n",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q2568748.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Выбрана текущая P625 городской территории. Wikipedia 4.6021194,-61.111194 примерно на 700 м севернее — другая городская точка; не усреднялась. Роль representative, не аэропорт или граница."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uair%C3%A9n",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Выбрана текущая P625 городской территории. Wikipedia 4.6021194,-61.111194 примерно на 700 м севернее — другая городская точка; не усреднялась. Роль representative, не аэропорт или граница."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uair%C3%A9n",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Подтвержден город Q2568748. Gran Sabana и ее водопады — соседние/маршрутные объекты, не sameAs города.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Санта Елена де Уайрен",
+      "reason": "Город Santa Elena de Uairén в Bolívar у бразильской границы, исходный пункт маршрутов Gran Sabana; MD и entry соответствуют городу, не всей Gran Sabana или погранпереходу."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2568748",
+      "reason": "Город Santa Elena de Uairén в Bolívar у бразильской границы, исходный пункт маршрутов Gran Sabana; MD и entry соответствуют городу, не всей Gran Sabana или погранпереходу. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Santa_Elena_de_Uair%C3%A9n",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Santa Elena de Uairén",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "4.5958694, -61.1110307; representative",
+      "reason": "Выбрана текущая P625 городской территории. Wikipedia 4.6021194,-61.111194 примерно на 700 м севернее — другая городская точка; не усреднялась. Роль representative, не аэропорт или граница."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

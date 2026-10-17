@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_laguna_blanca",
+  "stableId": "destination_bolivia_laguna_blanca",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/laguna-blanca/",
+  "sourceFingerprint": "bfb0c4053c2d3a8136f9e8037d83ef2893a9d7f5fb5de201f4ee772f9fc40409",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "salt lake",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/laguna-blanca/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1699431",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс salt lake установлен по смыслу MD и исследованным источникам. MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1699431",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прочитан живой Special:EntityData JSON; имя, P31, P17 и смысл объекта совпадают. MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1699431",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Точные Wikipedia sitelinks выбранного QID; не тематические статьи соседнего объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/11169173/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая карточка GeoNames прочитана с HTTP 200: точное название и класс совпадают. Принята representative-точка озера GeoNames 11169173 (H.LKN, Bolivia/Potosí). Wikidata -22.8,-67.794 отличается примерно на 0.4 км; это опорные точки одного озера, без усреднения. Изображение соседней Laguna Verde в MD не используется для выбора идентичности и координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/11169173/laguna-blanca.html",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Принята representative-точка озера GeoNames 11169173 (H.LKN, Bolivia/Potosí). Wikidata -22.8,-67.794 отличается примерно на 0.4 км; это опорные точки одного озера, без усреднения. Изображение соседней Laguna Verde в MD не используется для выбора идентичности и координат."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1699431",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Wikidata -22.8,-67.794 и контекст соседней Laguna Verde подтверждают то же озеро; выбрана точка GeoNames без усреднения."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1699431",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лагуна Бланка",
+      "reason": "MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "salt lake",
+      "reason": "MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1699431",
+      "reason": "MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Laguna_Blanca_(Bolivia)\",\"es\":\"https://es.wikipedia.org/wiki/Laguna_Blanca_(Bolivia)\"}",
+      "reason": "Sitelinks из проверенной карточки конкретного объекта."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "11169173",
+      "reason": "Имя и класс проверены в GeoNames; география уточнена независимыми источниками. "
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "-22.80309, -67.79251",
+      "reason": "Принята representative-точка озера GeoNames 11169173 (H.LKN, Bolivia/Potosí). Wikidata -22.8,-67.794 отличается примерно на 0.4 км; это опорные точки одного озера, без усреднения. Изображение соседней Laguna Verde в MD не используется для выбора идентичности и координат."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "MD указывает светлую лагуну рядом с Laguna Verde на юго-западе Боливии у чилийской границы. Это озеро Sur Lípez/Potosí Q1699431, не одноименные озёра Chuquisaca и не города в Аргентине."
+    }
+  ],
+  "reviewNote": "Принята representative-точка озера GeoNames 11169173 (H.LKN, Bolivia/Potosí). Wikidata -22.8,-67.794 отличается примерно на 0.4 км; это опорные точки одного озера, без усреднения. Изображение соседней Laguna Verde в MD не используется для выбора идентичности и координат.",
+  "external": {
+    "wikidataQid": "Q1699431",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Laguna_Blanca_(Bolivia)",
+      "es": "https://es.wikipedia.org/wiki/Laguna_Blanca_(Bolivia)"
+    },
+    "geonamesId": "11169173"
+  },
+  "location": {
+    "latitude": -22.80309,
+    "longitude": -67.79251,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/11169173/laguna-blanca.html"
+  }
+}

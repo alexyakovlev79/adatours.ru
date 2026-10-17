@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_chantani_museum",
+  "stableId": "destination_bolivia_chantani_museum",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/chantani-museum/",
+  "sourceFingerprint": "594fe34d704e0f4e01afbb9d73e27c70519513804b51cedd5aadce01c4f80b31",
+  "status": "READY",
+  "confidence": "medium",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "community museum",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_bolivia_tahua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/chantani-museum/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Прямая проверка HTTP 200, canonical, H1 и stable ID; совпадают с текущими approved MD и source-index. Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://magicadventuresalardeuyuni.com/destinos-turisticos/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Класс community museum установлен по смыслу MD и исследованным источникам. Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://magicadventuresalardeuyuni.com/destinos-turisticos/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Организатор местных туров называет музей Palacio de los cántaros непосредственно в Chantani рядом с Tahua."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.culturalsurvival.org/news/tahuas-visions-future-fighting-community-tourism-over-lithium-extraction",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Автор полевого материала подтверждает семейный музей в общине Chantani в сети Marka Tahua."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.estradanomade.com.br/pontos-turisticos/potosi/tahua/museo-chantani",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Самостоятельный музей, не деревня Chantani, не Museo Artesanal de Coqueza и не одноименный поселок в Перу. Выбрана representative-точка именно карточки Museo de Chantani на Estrada Nomade (ссылка карты q=-19.9033,-67.66003). Сопоставлена с географией поселения OSM 2410078876 у Camino Coqueza–Tahua. Точная точка входа/здания не подтверждена; QID, OSM и GeoNames музея не найдены, идентификаторы деревни не присваиваются."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/2410078876",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Независимая географическая сверка: одноименная община на Camino Coqueza–Tahua. ID деревни не включен в external музея; сама музейная точка взята из отдельной карточки Museo de Chantani."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://adatours.ru/bolivia/place/chantani-museum/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    },
+    {
+      "field": "relationships.destination_bolivia_tahua",
+      "sourceUrl": "https://adatours.ru/bolivia/place/chantani-museum/",
+      "checkedAt": "2026-10-16T21:54:20.766Z",
+      "note": "Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani. Целевой stable ID проверен в действующей GEO-очереди и, где нужно, source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Музей Чантани",
+      "reason": "Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "community museum",
+      "reason": "Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "После адресного поиска точная отдельная карточка выбранного объекта не установлена; поле опущено, подтверждённая идентичность страницы сохраняет READY."
+    },
+    {
+      "field": "location",
+      "probability": 82,
+      "selected": "-19.9033, -67.66003",
+      "reason": "Самостоятельный музей, не деревня Chantani, не Museo Artesanal de Coqueza и не одноименный поселок в Перу. Выбрана representative-точка именно карточки Museo de Chantani на Estrada Nomade (ссылка карты q=-19.9033,-67.66003). Сопоставлена с географией поселения OSM 2410078876 у Camino Coqueza–Tahua. Точная точка входа/здания не подтверждена; QID, OSM и GeoNames музея не найдены, идентификаторы деревни не присваиваются."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 98,
+      "selected": "country_bolivia",
+      "reason": "Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani."
+    },
+    {
+      "field": "relationships.destination_bolivia_tahua",
+      "probability": 98,
+      "selected": "destination_bolivia_tahua",
+      "reason": "Музей Чантани на северной кромке Уюни между Тахуа и Кокесой подтверждён местным оператором Magic Adventure и полевым материалом Cultural Survival о семейном музее общины Chantani."
+    }
+  ],
+  "reviewNote": "Самостоятельный музей, не деревня Chantani, не Museo Artesanal de Coqueza и не одноименный поселок в Перу. Выбрана representative-точка именно карточки Museo de Chantani на Estrada Nomade (ссылка карты q=-19.9033,-67.66003). Сопоставлена с географией поселения OSM 2410078876 у Camino Coqueza–Tahua. Точная точка входа/здания не подтверждена; QID, OSM и GeoNames музея не найдены, идентификаторы деревни не присваиваются.",
+  "location": {
+    "latitude": -19.9033,
+    "longitude": -67.66003,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.estradanomade.com.br/pontos-turisticos/potosi/tahua/museo-chantani"
+  }
+}

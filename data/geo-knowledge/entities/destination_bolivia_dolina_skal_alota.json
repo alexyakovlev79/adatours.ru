@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_dolina_skal_alota",
+  "stableId": "destination_bolivia_dolina_skal_alota",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/valley-of-rocks-alota/",
+  "sourceFingerprint": "5809503e428b08d30ed07770be4c64f3fae88c891c9f68bef9bcbb7e4e1730a2",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "medium",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 4279236329
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/valley-of-rocks-alota.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Долина вулканических скал у Алоты на обратном участке через Сан-Кристобаль. Основной референт — Valle de Rocas примерно в 14–15 км к западу от Villa Alota. Выбран OSM node 4279236329; вариант node 588354243 у Villa Mar примерно на 37 км южнее не выбран. Скалолазная карточка Alota/Pena Blanca независимо подтверждает этот западный район."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://climbingaway.fr/en/climbing-areas/valle-de-rocas",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Долина вулканических скал у Алоты на обратном участке через Сан-Кристобаль. Основной референт — Valle de Rocas примерно в 14–15 км к западу от Villa Alota. Выбран OSM node 4279236329; вариант node 588354243 у Villa Mar примерно на 37 км южнее не выбран. Скалолазная карточка Alota/Pena Blanca независимо подтверждает этот западный район."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/valley-of-rocks-alota/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Долина Скал (Алота), canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://climbingaway.fr/en/climbing-areas/valle-de-rocas",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4279236329",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитан актуальный OSM элемент; имя и тип объекта совпадают. Долина вулканических скал у Алоты на обратном участке через Сан-Кристобаль. Основной референт — Valle de Rocas примерно в 14–15 км к западу от Villa Alota. Выбран OSM node 4279236329; вариант node 588354243 у Villa Mar примерно на 37 км южнее не выбран. Скалолазная карточка Alota/Pena Blanca независимо подтверждает этот западный район."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/4279236329",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "OSM точка Valle de Rocas tourism=attraction: -21.3960961,-67.7305461. Представительная точка западной группы скал у Алоты, не границы долины."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://climbingaway.fr/en/climbing-areas/valle-de-rocas",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Независимый профиль скального района Alota/Pena Blanca: -21.40062,-67.701809, около 3 км от OSM точки; обе точки относятся к западной группе вулканических скал у Алоты. Не усреднялись."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/tours/sokrovishcha-bolivii.md",
+      "checkedAt": "2026-10-16T21:53:01.309Z",
+      "note": "Возвращение после Ликанкабура через Долину Скал с вулканическими образованиями у Алоты и далее Сан-Кристобаль."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 92,
+      "selected": "Долина Скал (Алота)",
+      "reason": "Долина вулканических скал у Алоты на обратном участке через Сан-Кристобаль. Основной референт — Valle de Rocas примерно в 14–15 км к западу от Villa Alota. Выбран OSM node 4279236329; вариант node 588354243 у Villa Mar примерно на 37 км южнее не выбран. Скалолазная карточка Alota/Pena Blanca независимо подтверждает этот западный район."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "external.osm",
+      "probability": 88,
+      "selected": "node/4279236329",
+      "reason": "Долина вулканических скал у Алоты на обратном участке через Сан-Кристобаль. Основной референт — Valle de Rocas примерно в 14–15 км к западу от Villa Alota. Выбран OSM node 4279236329; вариант node 588354243 у Villa Mar примерно на 37 км южнее не выбран. Скалолазная карточка Alota/Pena Blanca независимо подтверждает этот западный район."
+    },
+    {
+      "field": "location",
+      "probability": 86,
+      "selected": "-21.3960961, -67.7305461",
+      "reason": "Именованная точка скального комплекса у Алоты; контекст Alota и независимая скальная площадка подтверждают правильный район."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "Единый проверенный QID именно западной Долины Скал у Алоты не найден; одноименная местность у Villa Mar не подставлялась."
+    }
+  ],
+  "reviewNote": "Долина вулканических скал у Алоты на обратном участке через Сан-Кристобаль. Основной референт — Valle de Rocas примерно в 14–15 км к западу от Villa Alota. Выбран OSM node 4279236329; вариант node 588354243 у Villa Mar примерно на 37 км южнее не выбран. Скалолазная карточка Alota/Pena Blanca независимо подтверждает этот западный район.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/valley-of-rocks-alota/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -21.3960961,
+    "longitude": -67.7305461,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/4279236329"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_karakas",
+  "stableId": "destination_venezuela_karakas",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/caracas/",
+  "sourceFingerprint": "6a6ca2fc7a6ddca3cb2432799cd012b5503bb4e2c5bb7e4c5d949400db2b7dfc",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1533",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Caracas"
+    }
+  },
+  "alternateNames": [
+    "Caracas",
+    "Santiago de León de Caracas"
+  ],
+  "location": {
+    "latitude": 10.50611111111111,
+    "longitude": -66.91444444444444,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q1533.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Caracas",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Город Каракас, столица Венесуэлы; тип city и исторические районы/музеи MD соответствуют Q1533, не отдельному столичному округу или муниципалитету."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/caracas/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1533.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Город Каракас, столица Венесуэлы; тип city и исторические районы/музеи MD соответствуют Q1533, не отдельному столичному округу или муниципалитету. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1533.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Caracas",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q1533.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Текущая P625 города совпадает с точной статьей (10.50611,-66.91444). Роль representative городской территории, без утверждения геометрического/исторического центра и без привязки к соседнему парку Авила."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Caracas",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Текущая P625 города совпадает с точной статьей (10.50611,-66.91444). Роль representative городской территории, без утверждения геометрического/исторического центра и без привязки к соседнему парку Авила."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Caracas",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Паспорт города Каракаса. Соседние Эль-Авила и побережье не включены в sameAs города. Исторические P17 Wikidata не перенесены как современные страны; country_venezuela подтвержден.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Каракас",
+      "reason": "Город Каракас, столица Венесуэлы; тип city и исторические районы/музеи MD соответствуют Q1533, не отдельному столичному округу или муниципалитету."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1533",
+      "reason": "Город Каракас, столица Венесуэлы; тип city и исторические районы/музеи MD соответствуют Q1533, не отдельному столичному округу или муниципалитету. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Caracas",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Caracas; Santiago de León de Caracas",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "10.50611111111111, -66.91444444444444; representative",
+      "reason": "Текущая P625 города совпадает с точной статьей (10.50611,-66.91444). Роль representative городской территории, без утверждения геометрического/исторического центра и без привязки к соседнему парку Авила."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

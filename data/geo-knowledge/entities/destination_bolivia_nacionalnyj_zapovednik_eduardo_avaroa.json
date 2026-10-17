@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa",
+  "stableId": "destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/eduardo-avaroa-national-reserve/",
+  "sourceFingerprint": "dbc6629fdf22895eb5c43bbf35150c8cb8738ca110b11104a3dd89c2d7927094",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "nature_reserve",
+  "external": {
+    "wikidataQid": "Q2066185",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Eduardo_Avaroa_Andean_Fauna_National_Reserve"
+    }
+  },
+  "location": {
+    "latitude": -22.535,
+    "longitude": -67.65,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2066185"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/eduardo-avaroa-national-reserve/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/eduardo-avaroa-national-reserve.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2066185",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2066185",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2066185",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Опорная точка заповедника 22°32′06″S 67°39′00″W совпадает в Wikidata и Wikipedia; не вход и не точка отдельного озера."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Eduardo_Avaroa_Andean_Fauna_National_Reserve",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Опорная точка заповедника 22°32′06″S 67°39′00″W совпадает в Wikidata и Wikipedia; не вход и не точка отдельного озера."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2066185",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2066185",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Eduardo_Avaroa_Andean_Fauna_National_Reserve",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Точная статья о выбранном географическом объекте. Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна.",
+      "selected": "nature_reserve"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Опорная точка заповедника 22°32′06″S 67°39′00″W совпадает в Wikidata и Wikipedia; не вход и не точка отдельного озера.",
+      "selected": "-22.535, -67.65"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна.",
+      "selected": "Q2066185"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Reserva Nacional de Fauna Andina Eduardo Avaroa в Sud Lípez, Потоси. Не провинция Эдуардо-Абароа и не отдельная лагуна.",
+      "selected": "https://en.wikipedia.org/wiki/Eduardo_Avaroa_Andean_Fauna_National_Reserve"
+    }
+  ],
+  "reviewNote": null
+}

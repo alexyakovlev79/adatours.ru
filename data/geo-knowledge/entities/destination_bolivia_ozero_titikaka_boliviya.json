@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_ozero_titikaka_boliviya",
+  "stableId": "destination_bolivia_ozero_titikaka_boliviya",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/lake-titicaca-bolivia/",
+  "sourceFingerprint": "b90307ef1a0e40678dad8ff829ae469c81eaa8af1b95af86445bed13e4dbeecf",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "lake_sector",
+  "external": {},
+  "location": {
+    "latitude": -16.1666666667,
+    "longitude": -68.8663888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://rsis.ramsar.org/ris/959"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/bolivia/place/lake-titicaca-bolivia/",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прямая HTTP-проверка: 200; H1 совпадает с названием, canonical точно совпадает, noindex отсутствует. Основной объект — боливийская часть Титикаки и ее берег у Копакабаны и острова Солнца. Ramsar 959 прямо назван Lago Titicaca (Sector Boliviano)."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/lake-titicaca-bolivia.md",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Прочитаны текущие MD и source-index entry; stable ID, status: approved, country_bolivia и смысл страницы совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://rsis.ramsar.org/ris/959",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Основной объект — боливийская часть Титикаки и ее берег у Копакабаны и острова Солнца. Ramsar 959 прямо назван Lago Titicaca (Sector Boliviano)."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://rsis.ramsar.org/ris/959",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Основной объект — боливийская часть Титикаки и ее берег у Копакабаны и острова Солнца. Ramsar 959 прямо назван Lago Titicaca (Sector Boliviano)."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://rsis.ramsar.org/ris/959",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Представительская точка боливийского сектора из официальной карточки Ramsar 959: 16°10′S 68°51′59″W. Не центр всего трансграничного озера. Ramsar-территория включает сопутствующие водно-болотные угодья; ее границы не объявляются границами туристической страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Titicaca",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географическая сверка. Представительская точка боливийского сектора из официальной карточки Ramsar 959: 16°10′S 68°51′59″W. Не центр всего трансграничного озера. Ramsar-территория включает сопутствующие водно-болотные угодья; ее границы не объявляются границами туристической страницы."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://rsis.ramsar.org/ris/959",
+      "checkedAt": "2026-10-16T21:52:36.263Z",
+      "note": "Географические источники относят объект к Боливии; совпадает с countryId MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "reason": "Основной объект — боливийская часть Титикаки и ее берег у Копакабаны и острова Солнца. Ramsar 959 прямо назван Lago Titicaca (Sector Boliviano)."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "reason": "Основной объект — боливийская часть Титикаки и ее берег у Копакабаны и острова Солнца. Ramsar 959 прямо назван Lago Titicaca (Sector Boliviano).",
+      "selected": "lake_sector"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Представительская точка боливийского сектора из официальной карточки Ramsar 959: 16°10′S 68°51′59″W. Не центр всего трансграничного озера. Ramsar-территория включает сопутствующие водно-болотные угодья; ее границы не объявляются границами туристической страницы.",
+      "selected": "-16.1666666667, -68.8663888889"
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "reason": "Проверенный countryId и внешний источник согласованы.",
+      "selected": "country_bolivia"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "Идентификатор всего трансграничного озера не является точным соответствием только боливийской стороне; поле пропущено."
+    }
+  ],
+  "reviewNote": "QID/Wikipedia всего озера не включены в sameAs боливийской стороны. Ramsar 959 использован как доказательство идентичности и опорной точки, без объявления полного совпадения границ охраняемого участка и редакционной страницы."
+}

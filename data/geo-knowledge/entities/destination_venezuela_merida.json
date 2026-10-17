@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_merida",
+  "stableId": "destination_venezuela_merida",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/merida/",
+  "sourceFingerprint": "d9c87fa4ce3fbe6af321509c5bcf1815c74db457e69c0395be18e9604636bbb0",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q23551",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/M%C3%A9rida,_M%C3%A9rida"
+    }
+  },
+  "alternateNames": [
+    "Mérida",
+    "Santiago de los Caballeros de Mérida"
+  ],
+  "location": {
+    "latitude": 8.57018,
+    "longitude": -71.180189,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q23551.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/M%C3%A9rida,_M%C3%A9rida",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Город Мерида в венесуэльских Андах, студенческий город с канатной дорогой и Sierra Nevada; countryId, отдельный MD merida-venezuela и содержание исключают Мериду Мексики/Испании и одноименный штат."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/merida/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q23551.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Город Мерида в венесуэльских Андах, студенческий город с канатной дорогой и Sierra Nevada; countryId, отдельный MD merida-venezuela и содержание исключают Мериду Мексики/Испании и одноименный штат. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q23551.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/M%C3%A9rida,_M%C3%A9rida",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q23551.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Выбрана актуальная P625 города 8.57018,-71.180189, опорная точка вытянутой городской территории. Wikipedia 8.600,-71.150 относится к другой части города; не усреднялась. Роль representative, не исторический центр и не канатная дорога."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/M%C3%A9rida,_M%C3%A9rida",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Выбрана актуальная P625 города 8.57018,-71.180189, опорная точка вытянутой городской территории. Wikipedia 8.600,-71.150 относится к другой части города; не усреднялась. Роль representative, не исторический центр и не канатная дорога."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/M%C3%A9rida,_M%C3%A9rida",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Идентичность города Мерида в Венесуэле Q23551; не штат Mérida и не мексиканский город. Координаты P625 как опорная городская точка; отличие энциклопедической точки зафиксировано.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Мерида",
+      "reason": "Город Мерида в венесуэльских Андах, студенческий город с канатной дорогой и Sierra Nevada; countryId, отдельный MD merida-venezuela и содержание исключают Мериду Мексики/Испании и одноименный штат."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q23551",
+      "reason": "Город Мерида в венесуэльских Андах, студенческий город с канатной дорогой и Sierra Nevada; countryId, отдельный MD merida-venezuela и содержание исключают Мериду Мексики/Испании и одноименный штат. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/M%C3%A9rida,_M%C3%A9rida",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Mérida; Santiago de los Caballeros de Mérida",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "8.57018, -71.180189; representative",
+      "reason": "Выбрана актуальная P625 города 8.57018,-71.180189, опорная точка вытянутой городской территории. Wikipedia 8.600,-71.150 относится к другой части города; не усреднялась. Роль representative, не исторический центр и не канатная дорога."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

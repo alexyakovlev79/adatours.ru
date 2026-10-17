@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_delta_reki_orinoko",
+  "stableId": "destination_venezuela_delta_reki_orinoko",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/orinoco-delta/",
+  "sourceFingerprint": "560555789ce1e640c67e9580fc7037f2c2fc0a6cc07a0b739e38e7702703dd33",
+  "status": "READY",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3433305",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Orinoco_Delta"
+    }
+  },
+  "alternateNames": [
+    "Orinoco Delta",
+    "Delta del Orinoco"
+  ],
+  "location": {
+    "latitude": 9,
+    "longitude": -61.5,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Special:EntityData/Q3433305.json"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Orinoco_Delta",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Дельта Ориноко в восточной Венесуэле, водные протоки/варао/мангровые леса; совпадает с H1, summary, countryId и точной карточкой речной дельты."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/orinoco-delta/",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Проверены прямой GET HTTP 200, конечный URL, canonical и H1; noindex отсутствует. Сверены актуальные approved MD и точная source-index entry stableId/countryId/URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q3433305.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Дельта Ориноко в восточной Венесуэле, водные протоки/варао/мангровые леса; совпадает с H1, summary, countryId и точной карточкой речной дельты. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q3433305.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Orinoco_Delta",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Special:EntityData/Q3433305.json",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Выбрана опорная точка дельты из P625, источник GNS -954267; GeoNames 3631296/Mapcarta показывают ту же 9,-61.5. Это representative площадной дельты, не устье конкретной протоки и не центр. Википедийная 9,-61 не усреднялась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19608270",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Адресная сверка географического контекста и выбранного объекта/точки. Выбрана опорная точка дельты из P625, источник GNS -954267; GeoNames 3631296/Mapcarta показывают ту же 9,-61.5. Это representative площадной дельты, не устье конкретной протоки и не центр. Википедийная 9,-61 не усреднялась."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Orinoco_Delta",
+      "checkedAt": "2026-10-16T21:52:43.445Z",
+      "note": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Q49100054 — перенаправление на Q3433305, использован действующий QID. Не присвоены QID реки Ориноко, штата Delta Amacuro или парка Delta del Orinoco. Второй фрагмент MD о Канайме/Анхеле не использован для географии дельты; нужен отдельный редакторский разбор текста.",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Дельта реки Ориноко",
+      "reason": "Дельта Ориноко в восточной Венесуэле, водные протоки/варао/мангровые леса; совпадает с H1, summary, countryId и точной карточкой речной дельты."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3433305",
+      "reason": "Дельта Ориноко в восточной Венесуэле, водные протоки/варао/мангровые леса; совпадает с H1, summary, countryId и точной карточкой речной дельты. Проверена актуальная JSON-карточка Wikidata и соответствие названия/страны/референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Orinoco_Delta",
+      "reason": "Точная статья основного референта страницы; enwiki sitelink подтвержден текущей JSON-карточкой Wikidata."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 99,
+      "selected": "Orinoco Delta; Delta del Orinoco",
+      "reason": "Подтвержденные названия/варианты основного референта, без переноса одноименных сторонних объектов."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "9, -61.5; representative",
+      "reason": "Выбрана опорная точка дельты из P625, источник GNS -954267; GeoNames 3631296/Mapcarta показывают ту же 9,-61.5. Это representative площадной дельты, не устье конкретной протоки и не центр. Википедийная 9,-61 не усреднялась."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Принадлежность страны подтверждена текущим MD countryId, entry и внешним географическим источником."
+    }
+  ]
+}

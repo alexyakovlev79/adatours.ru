@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_bolivia_kopakabana",
+  "stableId": "destination_bolivia_kopakabana",
+  "kind": "destination",
+  "canonicalPath": "/bolivia/place/copacabana/",
+  "sourceFingerprint": "3c90afe3c6f7fe4d63db2927632e1a0218ce1f6ab1f43d212b9c4315ec7868fb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q114211",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Copacabana_(Bolivia)"
+    },
+    "geonamesId": "3919189"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_bolivia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/94bfad1c7d0ba066ad25027a25d53a8589fc1e59/src/content/destinations/copacabana.md",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Копакабана — город в Боливии на озере Титикака, база лодочных поездок на остров Солнца. Не одноименный муниципалитет, аэропорт и не район Рио-де-Жанейро."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Copacabana,_Bolivia",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Копакабана — город в Боливии на озере Титикака, база лодочных поездок на остров Солнца. Не одноименный муниципалитет, аэропорт и не район Рио-де-Жанейро."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/bolivia/place/copacabana/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прямой HTTP GET 200, совпадают H1=Копакабана, canonicalPath и stableId."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Copacabana,_Bolivia",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Выбранный объект находится в Боливии; подтверждены страна и географический контекст, в MD/entry countryId=country_bolivia."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q114211",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Копакабана — город в Боливии на озере Титикака, база лодочных поездок на остров Солнца. Не одноименный муниципалитет, аэропорт и не район Рио-де-Жанейро."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q114211",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Проверен sitelink eswiki=Copacabana (Bolivia) выбранного референта. Копакабана — город в Боливии на озере Титикака, база лодочных поездок на остров Солнца. Не одноименный муниципалитет, аэропорт и не район Рио-де-Жанейро."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3919189/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "GeoNames 3919189: Copacabana, P/PPL, BO; соответствует P1566 Q114211."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Прочитана точная строка 3919189 в BO.txt: Copacabana (-16.1699,-69.07919), country=BO."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3919189/",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Точка GeoNames WGS84: -16.1699, -69.07919; роль settlement_center. Точка не объявляется единственным центром или границей объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/BO.zip",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Исходная строка BO.txt 3919189; координаты взяты из одной записи, без усреднения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q114211",
+      "checkedAt": "2026-10-16T21:52:49.699Z",
+      "note": "Сверка P625: -16.16555556, -69.08555556. Разница опорных точек объяснима размером водоема/поселения; географический контекст совпадает. "
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Копакабана",
+      "reason": "Копакабана — город в Боливии на озере Титикака, база лодочных поездок на остров Солнца. Не одноименный муниципалитет, аэропорт и не район Рио-де-Жанейро."
+    },
+    {
+      "field": "relationships.country_bolivia",
+      "probability": 99,
+      "selected": "country_bolivia",
+      "reason": "Совпадают MD, source-index и внешние географические сведения; P17=Q750 у выбранных QID."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q114211",
+      "reason": "Копакабана — город в Боливии на озере Титикака, база лодочных поездок на остров Солнца. Не одноименный муниципалитет, аэропорт и не район Рио-де-Жанейро."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://es.wikipedia.org/wiki/Copacabana_(Bolivia)",
+      "reason": "Точная статья выбранного объекта/основного референта, не неоднозначность."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3919189",
+      "reason": "Совпадают имя, география, класс и P1566 выбранной карточки."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-16.1699, -69.07919",
+      "reason": "Одна точка GeoNames с установленной ролью, сверена с P625 и программой/картой; координаты не усреднялись."
+    }
+  ],
+  "reviewNote": "Копакабана — город в Боливии на озере Титикака, база лодочных поездок на остров Солнца. Не одноименный муниципалитет, аэропорт и не район Рио-де-Жанейро.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/bolivia/place/copacabana/"
+    ],
+    "findings": [
+      "Прямой HTTP GET: 200; rel=canonical и конечный URL совпадают с canonicalPath; H1 и stable ID совпадают с задачей.",
+      "Проверены approved MD и точная source-index entry из main 94bfad1c7d0ba066ad25027a25d53a8589fc1e59."
+    ]
+  },
+  "location": {
+    "latitude": -16.1699,
+    "longitude": -69.07919,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3919189/"
+  }
+}

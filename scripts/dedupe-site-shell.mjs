@@ -2,7 +2,7 @@ import {promises as f} from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
-const parts=[['header','header','<header class="site-header'],['search','div','<div class="search-overlay"'],['footer','footer','<footer class="footer"'],['cookie','div','<div class="cookie-notice"'],['form','form','<form class="form"']];
+const parts=[['header','header','<header class="site-header'],['search','div','<div class="search-overlay"'],['footer','footer','<footer class="footer"'],['cookie','div','<div class="cookie-notice"']];
 const navigation=[['/country/','Страны'],['/tours/','Туры'],['/multi-country/','Multi-country'],['/interests/','По интересам'],['/vip/','VIP'],['/mice/','MICE'],['/dmc/','Для агентств'],['/about/','О нас'],['/contacts/','Контакты']].map(([href,label])=>`<a href="${href}">${label}</a>`).join('');
 function element(html,tag,prefix){
   const start=html.indexOf(prefix);if(start<0)return null;
@@ -12,7 +12,6 @@ function element(html,tag,prefix){
 }
 function comparable(key,raw){
   if(key==='header')return raw.replace(/site-header--(?:light|dark)/,'site-header--THEME');
-  if(key==='form')return raw.replace(/<input\b[^>]*\bname="(?:entity_id|tour_id|page_url|locale)"[^>]*>/g,'').replace(/data-lead-title="[^"]*"/,'data-lead-title="PAGE_TITLE"');
   return raw;
 }
 function stub(key,raw,url){
@@ -33,10 +32,7 @@ function stub(key,raw,url){
     return `<footer class="footer" data-site-shell="footer" data-pagefind-ignore="all"><nav aria-label="Навигация в подвале">${navigation}</nav>${meta.raw}</footer>`;
   }
   if(key==='cookie')return '<div data-site-shell="cookie" hidden></div>';
-  const head=raw.slice(0,raw.indexOf('>'));
-  const fields=[...raw.matchAll(/<input\b[^>]*\bname="(?:entity_id|tour_id|page_url|locale)"[^>]*>/g)].map(m=>m[0]);
-  if(fields.length!==4)throw Error('Four page-specific fields required');
-  return `${head} data-site-shell="form">${fields.join('')}<p role="status">Форма загружается… Для связи: <a href="mailto:info@adatours.ru">info@adatours.ru</a></p></form>`;
+  throw Error('Unknown shared site-shell part: '+key);
 }
 async function* htmlFiles(dir){for(const e of await f.readdir(dir,{withFileTypes:true})){
   if(['media','pagefind','shared'].includes(e.name))continue;const p=path.join(dir,e.name);
@@ -49,6 +45,14 @@ export async function dedupeSiteShell(dir=path.resolve('dist')){
   let common=null,href='',pages=0,redirects=0,saved=0;
   for await(const file of htmlFiles(dir)){
     let html=await f.readFile(file,'utf8');if(!html.includes('<header class="site-header')){redirects++;continue}
+    // Keep the interactive form in SSR HTML so its country selector, input
+    // handlers and modal attach to the actual node without shell hydration.
+    const fullForm=element(html,'form','<form class="form"');
+    const requiredFormMarkup=['data-lead-form','data-phone-field','data-phone-input','data-phone-menu',
+      'data-phone-country','data-phone-dial-hidden','name="name"','name="email"','name="comment"',
+      'name="contact_method"','name="entity_id"','name="tour_id"','name="page_url"','name="locale"'];
+    if(!fullForm||requiredFormMarkup.some((part)=>!fullForm.raw.includes(part)))
+      throw Error('Incomplete interactive lead form: '+file);
     const found=new Map();for(const [name,tag,begin] of parts){
       const block=element(html,tag,begin);if(!block)throw Error('Missing '+name+' in '+file);
       found.set(name,block);if(common&&comparable(name,block.raw)!==comparable(name,common.get(name)))throw Error('Page-specific '+name+' differs: '+file)
@@ -60,6 +64,8 @@ export async function dedupeSiteShell(dir=path.resolve('dist')){
     }
     const before=Buffer.byteLength(html);for(const [name,block] of [...found].sort((a,b)=>b[1].start-a[1].start))
       html=html.slice(0,block.start)+stub(name,block.raw,href)+html.slice(block.end);
+    if(element(html,'form','<form class="form"')?.raw!==fullForm.raw)
+      throw Error('Lead form altered during deduplication: '+file);
     saved+=before-Buffer.byteLength(html);await f.writeFile(file,html);pages++;
   }
   if(!pages)throw Error('No complete pages found');const bytes=await size(dir);

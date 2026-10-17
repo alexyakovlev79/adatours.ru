@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_panama_siti",
+  "stableId": "destination_panama_panama_siti",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/panama-city/",
+  "sourceFingerprint": "8ba604694923ab4731245eb2e4e3a52d139ced7eb1b803ea33297ddc781eeeaf",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Панама-Сити",
+      "reason": "Панама-Сити: столица Панамы на тихоокеанской стороне; основной референт MD — город, не Панама-Вьехо или страна."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q3306",
+      "reason": "Панама-Сити: столица Панамы на тихоокеанской стороне; основной референт MD — город, не Панама-Вьехо или страна."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "8.971111111111112,-79.53472222222221",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/panama-siti.md",
+      "checkedAt": "2026-10-17T08:00:20.164Z",
+      "note": "Current approved MD and stable ID checked. Панама-Сити: столица Панамы на тихоокеанской стороне; основной референт MD — город, не Панама-Вьехо или страна."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3306",
+      "checkedAt": "2026-10-17T08:00:20.164Z",
+      "note": "Панама-Сити: столица Панамы на тихоокеанской стороне; основной референт MD — город, не Панама-Вьехо или страна."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3306",
+      "checkedAt": "2026-10-17T08:00:20.164Z",
+      "note": "Панама-Сити: столица Панамы на тихоокеанской стороне; основной референт MD — город, не Панама-Вьехо или страна."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3306",
+      "checkedAt": "2026-10-17T08:00:20.164Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3306",
+      "checkedAt": "2026-10-17T08:00:20.164Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/panama-city/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3306"
+  },
+  "location": {
+    "latitude": 8.971111111111112,
+    "longitude": -79.53472222222221,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3306"
+  }
+}

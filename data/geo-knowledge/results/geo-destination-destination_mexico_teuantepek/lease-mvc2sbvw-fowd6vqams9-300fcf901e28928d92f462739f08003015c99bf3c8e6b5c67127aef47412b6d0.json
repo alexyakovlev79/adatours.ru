@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_teuantepek",
+  "stableId": "destination_mexico_teuantepek",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/tehuantepec/",
+  "sourceFingerprint": "581ae6c30510b9bf70ff8ca627bcc5de9d03729370e70b6d8c9d11dc999e20c2",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q629479",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Santo_Domingo_Tehuantepec"
+    },
+    "geonamesId": "3516843"
+  },
+  "location": {
+    "latitude": 16.31841,
+    "longitude": -95.24783,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q629479"
+  },
+  "alternateNames": [
+    "Santo Domingo Tehuantepec",
+    "Tehuantepec"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Теуантепек",
+      "reason": "Santo Domingo Tehuantepec — город на перешейке в Oaxaca, сапотекская культура, теуанские костюмы и доминиканский храм. Официальный OaxacaTravel прямо определяет его как город; не весь перешеек."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q629479",
+      "reason": "Santo Domingo Tehuantepec — город на перешейке в Oaxaca, сапотекская культура, теуанские костюмы и доминиканский храм. Официальный OaxacaTravel прямо определяет его как город; не весь перешеек. Принят именованный город Q629479. Одноименный перешеек, залив и муниципалитет — отдельные сущности; их геометрию/идентификаторы не переносила. P625 — городская опорная точка."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Santo_Domingo_Tehuantepec",
+      "reason": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Принят именованный город Q629479. Одноименный перешеек, залив и муниципалитет — отдельные сущности; их геометрию/идентификаторы не переносила. P625 — городская опорная точка."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3516843",
+      "reason": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "16.31841,-95.24783; settlement_center",
+      "reason": "P625 точной карточки населенного пункта, выбран городской объект; не административный центр всей более широкой территории."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Santo Domingo Tehuantepec; Tehuantepec",
+      "reason": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.oaxaca.travel/index.php/es/all-destinations-es/santo-domingo-tehuantepec",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Santo Domingo Tehuantepec — город на перешейке в Oaxaca, сапотекская культура, теуанские костюмы и доминиканский храм. Официальный OaxacaTravel прямо определяет его как город; не весь перешеек."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/tehuantepec/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точный live URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, имени, стране и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q629479",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Santo Domingo Tehuantepec — город на перешейке в Oaxaca, сапотекская культура, теуанские костюмы и доминиканский храм. Официальный OaxacaTravel прямо определяет его как город; не весь перешеек. Принят именованный город Q629479. Одноименный перешеек, залив и муниципалитет — отдельные сущности; их геометрию/идентификаторы не переносила. P625 — городская опорная точка."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q629479",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Принят именованный город Q629479. Одноименный перешеек, залив и муниципалитет — отдельные сущности; их геометрию/идентификаторы не переносила. P625 — городская опорная точка."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q629479",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q629479",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P625 точной карточки населенного пункта, выбран городской объект; не административный центр всей более широкой территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q629479",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://adatours.ru/mexico/place/tehuantepec/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Принят именованный город Q629479. Одноименный перешеек, залив и муниципалитет — отдельные сущности; их геометрию/идентификаторы не переносила. P625 — городская опорная точка."
+}

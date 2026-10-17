@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_zapovednik_fortin_toledo",
+  "stableId": "destination_paraguay_zapovednik_fortin_toledo",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/fortin-toledo-reserve/",
+  "sourceFingerprint": "a6bc9c08f164a3561c021741466f5796804a6c8444306e4fe67da78a17ca101d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://www.cccipy.org/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.cccipy.org/en/history",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Основной референт MD — CCCI/Proyecto Taguá в Fortín Toledo, Boquerón, центр сохранения чакского пекари; официальный сайт подтверждает его отдельно от соседнего форта."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/fortin-toledo-reserve.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/fortin-toledo-reserve/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.cccipy.org/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Основной референт MD — CCCI/Proyecto Taguá в Fortín Toledo, Boquerón, центр сохранения чакского пекари; официальный сайт подтверждает его отдельно от соседнего форта."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.cccipy.org/en/history",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "reason": "Основной референт MD — CCCI/Proyecto Taguá в Fortín Toledo, Boquerón, центр сохранения чакского пекари; официальный сайт подтверждает его отдельно от соседнего форта.",
+      "selected": "Заповедник Фортин-Толедо"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "reason": "Основной референт MD — CCCI/Proyecto Taguá в Fortín Toledo, Boquerón, центр сохранения чакского пекари; официальный сайт подтверждает его отдельно от соседнего форта.",
+      "selected": "https://www.cccipy.org/"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Название страницы «заповедник» редакционное. QID исторического форта и координаты форта не присвоены центру; точные координаты центра не подтверждены."
+}

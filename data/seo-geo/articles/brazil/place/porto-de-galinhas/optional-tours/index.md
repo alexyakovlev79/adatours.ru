@@ -1,6 +1,6 @@
 ---
 targetPath: /brazil/place/porto-de-galinhas/optional-tours/
-kind: destination_optional_tours
+kind: optional_destination_tours
 status: approved
 buttonLabel: "Туры с возможностью отдыха в Порту-ди-Галиньяш"
 lead: "Порту-ди-Галиньяш на побережье Пернамбуку привлекает рифами и природными бассейнами во время отлива. Разбираем, как добавить пляжный этап к турне по Бразилии и чем дополнительное посещение отличается от основного маршрута."

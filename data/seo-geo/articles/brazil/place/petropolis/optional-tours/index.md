@@ -1,6 +1,6 @@
 ---
 targetPath: /brazil/place/petropolis/optional-tours/
-kind: destination_optional_tours
+kind: optional_destination_tours
 status: approved
 buttonLabel: "Туры с дополнительной поездкой в Петрополис"
 lead: "Петрополис знакомит с императорской историей Бразилии и горными окрестностями Рио. Объясняем, как выбрать тур, где визит можно добавить к основной программе, и что посмотреть в городе."

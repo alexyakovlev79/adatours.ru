@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ahu_tongariki",
+  "stableId": "destination_chile_ahu_tongariki",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ahu-tongariki/",
+  "sourceFingerprint": "f49762da271ff8884487dc682ac85dccc8ae9f0b418962a752a5928eaa0747fd",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Аху-Тонгарики",
+      "reason": "Аху-Тонгарики — самостоятельная платформа с пятнадцатью моаи на восточном побережье Рапа-Нуи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q3448354",
+      "reason": "Аху-Тонгарики — самостоятельная платформа с пятнадцатью моаи на восточном побережье Рапа-Нуи."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-27.125833333333333,-109.27694444444444",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"way\",\"id\":221696391}",
+      "reason": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ahu-tongariki.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Аху-Тонгарики — самостоятельная платформа с пятнадцатью моаи на восточном побережье Рапа-Нуи."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3448354",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Тонгарики — самостоятельная платформа с пятнадцатью моаи на восточном побережье Рапа-Нуи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3448354",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Тонгарики — самостоятельная платформа с пятнадцатью моаи на восточном побережье Рапа-Нуи."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3448354",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3448354",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3448354",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/ahu-tongariki/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3448354",
+    "osm": {
+      "type": "way",
+      "id": 221696391
+    }
+  },
+  "location": {
+    "latitude": -27.125833333333333,
+    "longitude": -109.27694444444444,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3448354"
+  }
+}

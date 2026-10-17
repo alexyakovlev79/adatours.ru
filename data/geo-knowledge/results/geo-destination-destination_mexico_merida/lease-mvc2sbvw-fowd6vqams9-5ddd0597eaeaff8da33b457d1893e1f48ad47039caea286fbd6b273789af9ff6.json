@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_merida",
+  "stableId": "destination_mexico_merida",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/merida/",
+  "sourceFingerprint": "799c802c9603840053eb296d2b8ae3206103c708a57b4c75d0a1566e3103eac5",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q165204",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/M%C3%A9rida,_Yucat%C3%A1n"
+    },
+    "geonamesId": "3523349"
+  },
+  "location": {
+    "latitude": 20.97,
+    "longitude": -89.62,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q165204"
+  },
+  "alternateNames": [
+    "Mérida",
+    "Mérida, Yucatán"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Мерида",
+      "reason": "MD прямо указывает Mérida на мексиканском Юкатане и различает одноименный город Венесуэлы. Колониальный центр, Yucatán и база поездок к Uxmal/Chichén Itzá совпадают с Q165204."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q165204",
+      "reason": "MD прямо указывает Mérida на мексиканском Юкатане и различает одноименный город Венесуэлы. Колониальный центр, Yucatán и база поездок к Uxmal/Chichén Itzá совпадают с Q165204. Мерида в Мексике Q165204; QID города Венесуэлы и Mérida в Испании исключены. Location — опорная точка городского объекта, не отдельного отеля или муниципальной территории."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/M%C3%A9rida,_Yucat%C3%A1n",
+      "reason": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Мерида в Мексике Q165204; QID города Венесуэлы и Mérida в Испании исключены. Location — опорная точка городского объекта, не отдельного отеля или муниципальной территории."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3523349",
+      "reason": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "20.97,-89.62; settlement_center",
+      "reason": "P625 точной карточки населенного пункта, выбран городской объект; не административный центр всей более широкой территории."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Mérida; Mérida, Yucatán",
+      "reason": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://yucatan.travel/en/region/merida/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "MD прямо указывает Mérida на мексиканском Юкатане и различает одноименный город Венесуэлы. Колониальный центр, Yucatán и база поездок к Uxmal/Chichén Itzá совпадают с Q165204."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/merida/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точный live URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, имени, стране и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q165204",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "MD прямо указывает Mérida на мексиканском Юкатане и различает одноименный город Венесуэлы. Колониальный центр, Yucatán и база поездок к Uxmal/Chichén Itzá совпадают с Q165204. Мерида в Мексике Q165204; QID города Венесуэлы и Mérida в Испании исключены. Location — опорная точка городского объекта, не отдельного отеля или муниципальной территории."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q165204",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точная статья выбранного объекта; сопоставлена с sitelinks Wikidata, типом и географией. Мерида в Мексике Q165204; QID города Венесуэлы и Mérida в Испании исключены. Location — опорная точка городского объекта, не отдельного отеля или муниципальной территории."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q165204",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P1566 выбранного Wikidata-объекта; относится к выбранному главному референту. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q165204",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "P625 точной карточки населенного пункта, выбран городской объект; не административный центр всей более широкой территории."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q165204",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://adatours.ru/mexico/place/merida/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Wikidata P17=Mexico Q96 и географический контекст первичного источника подтверждают страну; существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Мерида в Мексике Q165204; QID города Венесуэлы и Mérida в Испании исключены. Location — опорная точка городского объекта, не отдельного отеля или муниципальной территории."
+}

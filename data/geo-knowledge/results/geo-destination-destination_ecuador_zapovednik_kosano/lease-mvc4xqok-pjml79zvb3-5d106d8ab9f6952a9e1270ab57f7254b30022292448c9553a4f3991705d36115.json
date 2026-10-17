@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_zapovednik_kosano",
+  "stableId": "destination_ecuador_zapovednik_kosano",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cosano-reserve/",
+  "sourceFingerprint": "14593d254f8a8a107190b423ebf42d7f8f53beff6362f86345177b5ed508434d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Заповедник Косано",
+      "reason": "MD: Cosano — лесной участок Arajuno в программах La Casa del Suizo. Официальный оператор прямо называет Cosano своим частным природным участком с доступом на каноэ."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 25,
+      "reason": "Отдельный QID Cosano не найден; коммерческий lodge и соседняя Misicocha не подставляются."
+    },
+    {
+      "field": "location",
+      "probability": 40,
+      "reason": "Подтверждён лесной участок у Arajuno, но нет надёжной координаты его границ либо входа."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cosano-reserve/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: Cosano — лесной участок Arajuno в программах La Casa del Suizo. Официальный оператор прямо называет Cosano своим частным природным участком с доступом на каноэ."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cosano-reserve/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://casadelsuizo.com/activities/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: Cosano — лесной участок Arajuno в программах La Casa del Suizo. Официальный оператор прямо называет Cosano своим частным природным участком с доступом на каноэ."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ]
+}

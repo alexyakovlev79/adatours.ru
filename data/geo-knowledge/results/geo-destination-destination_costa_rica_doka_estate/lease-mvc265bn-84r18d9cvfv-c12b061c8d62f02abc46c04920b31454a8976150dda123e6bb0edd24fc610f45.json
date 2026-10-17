@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_doka_estate",
+  "stableId": "destination_costa_rica_doka_estate",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/doka-estate/",
+  "sourceFingerprint": "8091ba3112db8130ead3aa710627375540798c3d0cd41c5f5d98f322b25104fb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Place",
+  "external": {
+    "officialUrl": "https://www.haciendadoka.com/pages/hacienda-doka-coffee-tour-best-coffee-experience-in-costa-rica",
+    "osm": {
+      "type": "way",
+      "id": 932186680
+    }
+  },
+  "location": {
+    "latitude": 10.09834,
+    "longitude": -84.21196,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W932186680"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/doka-estate.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Hacienda Doka / Doka Estate — действующее кофейное хозяйство и исторический кофейный комплекс у Poás в Alajuela. Официальная страница и точный OSM way подтверждают объект; это не Starbucks Hacienda Alsacia и не квартал Doka."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/doka-estate/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.haciendadoka.com/pages/hacienda-doka-coffee-tour-best-coffee-experience-in-costa-rica",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Hacienda Doka / Doka Estate — действующее кофейное хозяйство и исторический кофейный комплекс у Poás в Alajuela. Официальная страница и точный OSM way подтверждают объект; это не Starbucks Hacienda Alsacia и не квартал Doka."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.haciendadoka.com/pages/hacienda-doka-coffee-tour-best-coffee-experience-in-costa-rica",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Hacienda Doka / Doka Estate — действующее кофейное хозяйство и исторический кофейный комплекс у Poás в Alajuela. Официальная страница и точный OSM way подтверждают объект; это не Starbucks Hacienda Alsacia и не квартал Doka."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.haciendadoka.com/pages/hacienda-doka-coffee-tour-best-coffee-experience-in-costa-rica",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_costa_rica"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W932186680",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "OSM way932186680 напрямую проверен через API: name=Doka Estate Costa Rica Gourmet Coffee,area=yes,tourism=attraction. Выбрана опубликованная Mapcarta representative10.09834,-84.21196; туроператор дает близкую10.0985,-84.212097. Отдельный Entrada node1741312414 и местность Doka node5910671275 не подменяют весь объект."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.haciendadoka.com/pages/hacienda-doka-coffee-tour-best-coffee-experience-in-costa-rica",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Официальная страница выбранного комплекса/объекта. Hacienda Doka / Doka Estate — действующее кофейное хозяйство и исторический кофейный комплекс у Poás в Alajuela. Официальная страница и точный OSM way подтверждают объект; это не Starbucks Hacienda Alsacia и не квартал Doka."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/932186680",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Теги первичного OSM XML проверены напрямую. OSM way932186680 напрямую проверен через API: name=Doka Estate Costa Rica Gourmet Coffee,area=yes,tourism=attraction. Выбрана опубликованная Mapcarta representative10.09834,-84.21196; туроператор дает близкую10.0985,-84.212097. Отдельный Entrada node1741312414 и местность Doka node5910671275 не подменяют весь объект."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.entercostarica.com/tours/alajuela-tours/doka-estate---el-veradero-coffee-tour",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Дополнительный источник подтверждает именованный объект и его географический контекст."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точный QID не найден; сохранены официальный URL и точный OSM way. Опорная точка относится к туристическому комплексу, не к границам всех кофейных земель.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кофейная плантация Дока",
+      "reason": "Hacienda Doka / Doka Estate — действующее кофейное хозяйство и исторический кофейный комплекс у Poás в Alajuela. Официальная страница и точный OSM way подтверждают объект; это не Starbucks Hacienda Alsacia и не квартал Doka."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "Place",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "10.09834, -84.21196",
+      "reason": "OSM way932186680 напрямую проверен через API: name=Doka Estate Costa Rica Gourmet Coffee,area=yes,tourism=attraction. Выбрана опубликованная Mapcarta representative10.09834,-84.21196; туроператор дает близкую10.0985,-84.212097. Отдельный Entrada node1741312414 и местность Doka node5910671275 не подменяют весь объект."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "После адресного интернет-поиска точный QID не установлен; чужие/вышестоящие объекты не подставлялись."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.haciendadoka.com/pages/hacienda-doka-coffee-tour-best-coffee-experience-in-costa-rica",
+      "reason": "Самостоятельный официальный сайт именованного объекта."
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "selected": "way/932186680",
+      "reason": "OSM way932186680 напрямую проверен через API: name=Doka Estate Costa Rica Gourmet Coffee,area=yes,tourism=attraction. Выбрана опубликованная Mapcarta representative10.09834,-84.21196; туроператор дает близкую10.0985,-84.212097. Отдельный Entrada node1741312414 и местность Doka node5910671275 не подменяют весь объект."
+    }
+  ]
+}

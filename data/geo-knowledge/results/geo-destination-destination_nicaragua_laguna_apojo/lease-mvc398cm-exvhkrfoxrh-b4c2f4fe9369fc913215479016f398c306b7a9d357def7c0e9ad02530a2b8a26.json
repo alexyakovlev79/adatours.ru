@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_laguna_apojo",
+  "stableId": "destination_nicaragua_laguna_apojo",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/apoyo-lagoon/",
+  "sourceFingerprint": "ad07bff6dd3429c9c7dc3c02f7690f70d20175fba185acfbb84b88732ad300f3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "BodyOfWater",
+  "external": {
+    "wikidataQid": "Q620604",
+    "osm": {
+      "type": "relation",
+      "id": 5745732
+    }
+  },
+  "location": {
+    "latitude": 11.9234413,
+    "longitude": -86.0308819,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q620604"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/apoyo-lagoon/",
+      "checkedAt": "2026-10-17T07:46:37.886Z",
+      "note": "Точный production URL проверен: HTTP 200, H1 «Лагуна Апойо», self-canonical, noindex отсутствует. Прочитаны активный MD и source-index в main 8970d45ea38bcd627df622a063b9a279c92fb531; stable ID и country_nicaragua совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitanicaragua.com/en/Natural-spaces/support-lagoon/",
+      "checkedAt": "2026-10-17T07:46:37.886Z",
+      "note": "Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q620604",
+      "checkedAt": "2026-10-17T07:46:37.886Z",
+      "note": "Проверен Special:EntityData/Q620604.json: Laguna de Apoyo; crater lake; P17=Q811. Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q620604",
+      "checkedAt": "2026-10-17T07:46:37.886Z",
+      "note": "Класс BodyOfWater соответствует основному именованному референту страницы. Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q620604",
+      "checkedAt": "2026-10-17T07:46:37.886Z",
+      "note": "Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q620604",
+      "checkedAt": "2026-10-17T07:46:37.886Z",
+      "note": "P17=Q811 (Nicaragua); принадлежность согласуется с content countryId и внешним описанием."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/5745732",
+      "checkedAt": "2026-10-17T07:46:37.886Z",
+      "note": "Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Лагуна Апойо",
+      "reason": "Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q620604",
+      "reason": "Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "BodyOfWater",
+      "reason": "MD, именованный объект и внешнее описание подтверждают данный тип; Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "11.9234413,-86.0308819 (representative)",
+      "reason": "Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "P17 Q811 и точная география Никарагуа совпадают с MD."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/5745732",
+      "reason": "Прямой ответ OSM API: совпадают name, тип объекта и wikidata. Выбран водоем Laguna de Apoyo Q620604 и OSM relation 5745732 (natural=water, water=lagoon, wikidata=Q620604). Q3000329 относится более широкому природному резервату и не использован как sameAs озера. Координата взята из P625 озера; точка резервата 11.9131601,-86.0372277 не смешивалась."
+    }
+  ]
+}

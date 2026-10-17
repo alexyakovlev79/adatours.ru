@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_cerro_concepcion",
+  "stableId": "destination_chile_cerro_concepcion",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/cerro-concepcion/",
+  "sourceFingerprint": "5f1109b16c764609aacb62c7d9a36c41e5568aa7f7e43f4915a6f1a40f30f9db",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5762961"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/35925422",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Cerro Concepción — холм и исторический квартал Valparaíso, Чили. Исключены вершины в Мексике и Гватемале."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cerro-concepcion.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/cerro-concepcion/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/35925422",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Cerro Concepción — холм и исторический квартал Valparaíso, Чили. Исключены вершины в Мексике и Гватемале."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/35925422",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://mapcarta.com/35925422",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "reason": "Cerro Concepción — холм и исторический квартал Valparaíso, Чили. Исключены вершины в Мексике и Гватемале.",
+      "selected": "Холм Консепсьон"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Cerro Concepción — холм и исторический квартал Valparaíso, Чили. Исключены вершины в Мексике и Гватемале.",
+      "selected": "Q5762961"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-33.04226,-71.6265]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -33.04226,
+    "longitude": -71.6265,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/35925422"
+  }
+}

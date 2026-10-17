@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_cuba_varadero",
+  "stableId": "destination_cuba_varadero",
+  "kind": "destination",
+  "canonicalPath": "/cuba/place/varadero/",
+  "sourceFingerprint": "c4014389d5be3fcb9af829b23b79c45e804b77e759f6377f631901e6bb795ce3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q726751",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Varadero"
+    }
+  },
+  "location": {
+    "latitude": 23.139444444444,
+    "longitude": -81.286111111111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q726751"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_cuba"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/varadero.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Курортный город Varadero на полуострове Hicacos в Matanzas, Куба, с пляжным районом. Основной именованный референт — город-курорт, не вся береговая линия как один пляж и не аргентинский Baradero."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/cuba/place/varadero/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Varadero",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Курортный город Varadero на полуострове Hicacos в Matanzas, Куба, с пляжным районом. Основной именованный референт — город-курорт, не вся береговая линия как один пляж и не аргентинский Baradero."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Varadero",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Курортный город Varadero на полуострове Hicacos в Matanzas, Куба, с пляжным районом. Основной именованный референт — город-курорт, не вся береговая линия как один пляж и не аргентинский Baradero."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Varadero",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_cuba"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q726751",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "P625 точной карточки Varadero; это городская опорная точка, не географический центр всего полуострова и не один отель."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q726751",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Проверены точный QID, P31/P17/P625 и EN sitelink. Курортный город Varadero на полуострове Hicacos в Matanzas, Куба, с пляжным районом. Основной именованный референт — город-курорт, не вся береговая линия как один пляж и не аргентинский Baradero."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Varadero",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точная статья о выбранном именованном объекте, соответствующая sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Утверждение исходного текста про130км к северу от Гаваны не переносилось: Varadero расположен к востоку. Маркетинговые рейтинги пляжей не собирались.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Варадеро",
+      "reason": "Курортный город Varadero на полуострове Hicacos в Matanzas, Куба, с пляжным районом. Основной именованный референт — город-курорт, не вся береговая линия как один пляж и не аргентинский Baradero."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "City",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "probability": 99,
+      "selected": "country_cuba",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "23.139444444444, -81.286111111111",
+      "reason": "P625 точной карточки Varadero; это городская опорная точка, не географический центр всего полуострова и не один отель."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q726751",
+      "reason": "Курортный город Varadero на полуострове Hicacos в Matanzas, Куба, с пляжным районом. Основной именованный референт — город-курорт, не вся береговая линия как один пляж и не аргентинский Baradero."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Varadero",
+      "reason": "Точная статья выбранного объекта."
+    }
+  ]
+}

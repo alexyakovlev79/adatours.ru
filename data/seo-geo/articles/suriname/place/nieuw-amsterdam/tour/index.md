@@ -1,6 +1,6 @@
 ---
 targetPath: /suriname/place/nieuw-amsterdam/tour/
-kind: main_destination_tours
+kind: destination_tours
 status: approved
 buttonLabel: "Сравнить туры через Ньив-Амстердам"
 lead: "Ньив-Амстердам включен в орнитологический тур по Суринаму и в две программы по Гвианам. Сравниваем три разных формата: наблюдение за птицами, речную пристань после Пеперпота и экскурсионный день по прибрежной истории."

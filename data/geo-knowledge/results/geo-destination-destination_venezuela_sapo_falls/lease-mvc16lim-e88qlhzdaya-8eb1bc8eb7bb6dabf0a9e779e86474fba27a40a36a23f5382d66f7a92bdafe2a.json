@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_sapo_falls",
+  "stableId": "destination_venezuela_sapo_falls",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/sapo-falls/",
+  "sourceFingerprint": "b53647899f4609678c28dfc056624dcdcd2d03add415a69ee1a2a87df37919e2",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q2215418",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Salto_El_Sapo"
+    }
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Водопад Сапо",
+      "reason": "El Sapo/Sarinpa у лагуны Canaima, с проходом за водной завесой; Waku описывает отдельно от Hacha и Sapito."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2215418",
+      "reason": "El Sapo/Sarinpa у лагуны Canaima, с проходом за водной завесой; Waku описывает отдельно от Hacha и Sapito."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Salto_El_Sapo\"}",
+      "reason": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "6.2544089,-62.8379929; feature_point",
+      "reason": "Точная OSM-точка Salto El Sapo с wikidata=Q2215418. P625 Wikidata около 100 м северо-западнее относится к тому же протяженному водопаду; точки не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Salto El Sapo; Sarinpa",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "probability": 98,
+      "selected": "containedInPlace destination_venezuela_kanajma_i_vodopad_anhel",
+      "reason": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "El Sapo/Sarinpa у лагуны Canaima, с проходом за водной завесой; Waku описывает отдельно от Hacha и Sapito."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/sapo-falls/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2215418",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "El Sapo/Sarinpa у лагуны Canaima, с проходом за водной завесой; Waku описывает отдельно от Hacha и Sapito."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2215418",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/7042226395",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точная OSM-точка Salto El Sapo с wikidata=Q2215418. P625 Wikidata около 100 м северо-западнее относится к тому же протяженному водопаду; точки не усреднялись."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.destination_venezuela_kanajma_i_vodopad_anhel",
+      "sourceUrl": "https://wakulodge.com/es/experiencias/salto-sapo",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Объект находится в национальном парке Canaima; используется существующий стабильный ID парка."
+    }
+  ],
+  "alternateNames": [
+    "Salto El Sapo",
+    "Sarinpa"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_venezuela_kanajma_i_vodopad_anhel"
+    }
+  ],
+  "reviewNote": "Самостоятельный водопад Сапо, не Hacha и не Sapito. Для location выбрана OSM feature point водопада; альтернативная P625 не усреднялась.",
+  "location": {
+    "latitude": 6.2544089,
+    "longitude": -62.8379929,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/7042226395"
+  }
+}

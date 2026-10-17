@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_koloniya_tovar",
+  "stableId": "destination_venezuela_koloniya_tovar",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/colonia-tovar/",
+  "sourceFingerprint": "d81001fe453bf8e52301b988b9b57f6e3b280079dbdeb115433c8ece33161194",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "alternateNames": [
+    "Colonia Tovar"
+  ],
+  "external": {
+    "wikidataQid": "Q964130",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Colonia_Tovar",
+      "es": "https://es.wikipedia.org/wiki/Colonia_Tovar"
+    },
+    "geonamesId": "3626045"
+  },
+  "location": {
+    "latitude": 10.40555556,
+    "longitude": -67.28944444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Colonia_Tovar"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/colonia-tovar/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Tovar",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Tovar",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Tovar",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q964130",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar. Прочитаны EntityData/API: P17=Venezuela и соответствующие sitelinks/описание."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Tovar",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Colonia_Tovar",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q964130",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "P1566=3626045 на точной Wikidata-карточке, совпадают страна и тип объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Tovar",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Координата поселения из EN Wikipedia. Номинальный P625 Wikidata 10.416666666667,-67.283333333333 иной; выбран один источник с городским референтом, без усреднения."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Tovar",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Колония Товар",
+      "reason": "Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "settlement",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Colonia Tovar",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q964130",
+      "reason": "Поселение Колония Товар в Арагуа с немецкой колониальной историей. Заголовок и туристический текст называют сам город, а не весь муниципалитет Tovar."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Colonia_Tovar\",\"es\":\"https://es.wikipedia.org/wiki/Colonia_Tovar\"}",
+      "reason": "Точные языковые статьи и объектный контекст совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3626045",
+      "reason": "GeoNames ID указан на подтвержденной объектной карточке."
+    },
+    {
+      "field": "location",
+      "probability": 91,
+      "selected": "10.40555556,-67.28944444 (settlement_center)",
+      "reason": "Координата поселения из EN Wikipedia. Номинальный P625 Wikidata 10.416666666667,-67.283333333333 иной; выбран один источник с городским референтом, без усреднения."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    }
+  ],
+  "reviewNote": "P31 Wikidata содержит municipality, при этом статья и именованный объект относятся к поселению Colonia Tovar. Не переносится идентичность всего муниципалитета; официальный HTTP-сайт не добавлен как непроверенный HTTPS URL."
+}

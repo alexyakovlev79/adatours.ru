@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_enderby_islet",
+  "stableId": "destination_ecuador_enderby_islet",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/enderby-islet/",
+  "sourceFingerprint": "3c911d1bbbc14f44f0e99f3ed291609191aa8cd762bcb25af1d7fdd0e0e1b50d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q9009544"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/enderby-islet/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/W34201518",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/W34201518",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/W34201518",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Enderby Islet, Galápagos",
+      "reason": "Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q9009544",
+      "reason": "Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-1.2321,-90.36201",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Exact Ecuadorian Enderby islet near Floreana with OSM coastline way34201518 and Spanish Wikipedia identity; not New Zealand Q950165 or Chile Enderby."
+    }
+  ],
+  "reviewNote": "Nearby GeoNames-derived duplicate Q23882648 represents same islet; Wikipedia-linked Q9009544 chosen, not both.",
+  "location": {
+    "latitude": -1.2321,
+    "longitude": -90.36201,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/W34201518"
+  }
+}

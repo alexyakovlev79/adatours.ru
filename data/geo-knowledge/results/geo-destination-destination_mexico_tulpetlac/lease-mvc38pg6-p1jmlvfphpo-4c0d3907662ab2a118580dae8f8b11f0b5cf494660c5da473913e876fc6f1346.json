@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_tulpetlac",
+  "stableId": "destination_mexico_tulpetlac",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/tulpetlac/",
+  "sourceFingerprint": "e5c8241934c86798caf495394eac59b4a382a1fbfa660d437c8575c3bc78d945",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "settlement",
+  "external": {
+    "geonamesId": "3517192",
+    "osm": {
+      "type": "node",
+      "id": 6101325302
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/tulpetlac/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://quintaaparicionguadalupana.org/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Санта-Мария-Тульпетлак — историческое поселение/часть агломерации Экатепека, штат Мехико. GeoNames PPLX и OSM village обозначают само поселение. Святилище Пятого явления — его достопримечательность, сайт святилища не выдан за официальный сайт поселения. Q131274264 относится к остановке Mexibús и исключён."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://quintaaparicionguadalupana.org/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип settlement соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://quintaaparicionguadalupana.org/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3517192/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Home › North America › Mexico MX › México 15 › Ecatepec de Morelos Municipality 033 › Santa María Tulpetlac 033 Santa María Tulpetlac P PPLX Section of populated place · MX Feature Map Hierarchy History Alternate names GeonameId 3517192 Coordinates 19.56706, -99.04868 Move 19°34′01.42″ N, 99°02′55.25″ W Population – Elevation ca. 2246 m SRTM3 2246 m · ASTER 2246 m Timezone America/Mexico_City Sunrise / sunset ‹ 06:31 / 18:11 › today, local time Feature code P PPLX Wikipedia – Permalink: https://www.geonames.org/3517192/santa-maria-tulpetlac.html .kml .rdf geotree maptree Edit Delete this place Administrative hier"
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/6101325302.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Проверен первичный OSM API: {\"name\":\"Santa María Tulpetlac\",\"place\":\"village\"}"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/6101325302.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Одна проверенная точка основного объекта с ролью settlement_center; альтернативные координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "GeoNames:3517192",
+      "reason": "Санта-Мария-Тульпетлак — историческое поселение/часть агломерации Экатепека, штат Мехико. GeoNames PPLX и OSM village обозначают само поселение. Святилище Пятого явления — его достопримечательность, сайт святилища не выдан за официальный сайт поселения. Q131274264 относится к остановке Mexibús и исключён."
+    },
+    {
+      "field": "entityClass",
+      "probability": 96,
+      "selected": "settlement",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3517192",
+      "reason": "Проверены первичная запись, страна, имя и feature code; административные одноимённые записи исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "node/6101325302",
+      "reason": "Тип, собственное имя и положение соответствуют выбранному объекту. "
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.5681561, -99.0489674",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль settlement_center."
+    },
+    {
+      "field": "candidate.wikidataQid",
+      "probability": 5,
+      "selected": "Q131274264",
+      "reason": "Остановка Mexibús, не поселение; external.wikidataQid оставлен незаполненным."
+    }
+  ],
+  "reviewNote": "Санта-Мария-Тульпетлак — историческое поселение/часть агломерации Экатепека, штат Мехико. GeoNames PPLX и OSM village обозначают само поселение. Святилище Пятого явления — его достопримечательность, сайт святилища не выдан за официальный сайт поселения. Q131274264 относится к остановке Mexibús и исключён.",
+  "location": {
+    "latitude": 19.5681561,
+    "longitude": -99.0489674,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/6101325302.json"
+  }
+}

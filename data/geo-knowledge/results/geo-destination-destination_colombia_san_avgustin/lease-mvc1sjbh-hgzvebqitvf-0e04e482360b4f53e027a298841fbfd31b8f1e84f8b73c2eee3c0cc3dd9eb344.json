@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_san_avgustin",
+  "stableId": "destination_colombia_san_avgustin",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/san-agustin/",
+  "sourceFingerprint": "950800c1a1c77be8d67cf38f51a8b7b8714839da7c8af557a31b6d566931492e",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q2887224",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Agust%C3%ADn_Archaeological_Park"
+    },
+    "officialUrl": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-san-agustin",
+    "unescoSiteIds": [
+      "744"
+    ]
+  },
+  "location": {
+    "latitude": 1.887475,
+    "longitude": -76.2977261111111,
+    "pointRole": "representative",
+    "coordinateSource": "https://whc.unesco.org/en/list/744/maps/"
+  },
+  "alternateNames": [
+    "Parque arqueológico de San Agustín",
+    "San Agustín Archaeological Park"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Сан-Августин",
+      "reason": "Несмотря на destinationType=city, весь MD и summary посвящены археологическому парку: статуи, гробницы и объект UNESCO. Основной референт — парк, не муниципалитет San Agustín."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q2887224",
+      "reason": "Несмотря на destinationType=city, весь MD и summary посвящены археологическому парку: статуи, гробницы и объект UNESCO. Основной референт — парк, не муниципалитет San Agustín."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/San_Agust%C3%ADn_Archaeological_Park",
+      "reason": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-san-agustin",
+      "reason": "Точная страница парка на сайте управляющей организации ICANH; не главная организации."
+    },
+    {
+      "field": "external.unescoSiteIds",
+      "probability": 97,
+      "selected": "744",
+      "reason": "Точный серийный памятник San Agustín Archaeological Park, тот же парк и комплекс археологических участков, который составляет основной референт страницы."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "1.887475,-76.2977261111111; representative",
+      "reason": "UNESCO component 744-001 San Agustin: N1 53 14.91, W76 17 51.814. Представительная точка главного участка; не центр всех трех компонентов серийного памятника и не центр города."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Parque arqueológico de San Agustín; San Agustín Archaeological Park",
+      "reason": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "containedInPlace country_colombia",
+      "reason": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://whc.unesco.org/en/list/744/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Несмотря на destinationType=city, весь MD и summary посвящены археологическому парку: статуи, гробницы и объект UNESCO. Основной референт — парк, не муниципалитет San Agustín."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/san-agustin/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Live URL: HTTP 200, canonical exact, H1 соответствует, noindex отсутствует. Проверены approved MD и entry из main 989a35d14eab8a816010b3c5c40da68f62d230bb; stableId/страна/URL совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2887224",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Несмотря на destinationType=city, весь MD и summary посвящены археологическому парку: статуи, гробницы и объект UNESCO. Основной референт — парк, не муниципалитет San Agustín."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2887224",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.icanh.gov.co/parques-icanh/parque-arqueologico-san-agustin",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точная страница парка на сайте управляющей организации ICANH; не главная организации."
+    },
+    {
+      "field": "external.unescoSiteIds",
+      "sourceUrl": "https://whc.unesco.org/en/list/744/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точный серийный памятник San Agustín Archaeological Park, тот же парк и комплекс археологических участков, который составляет основной референт страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://whc.unesco.org/en/list/744/maps/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "UNESCO component 744-001 San Agustin: N1 53 14.91, W76 17 51.814. Представительная точка главного участка; не центр всех трех компонентов серийного памятника и не центр города."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2887224",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2887224",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Исходная категория city не соответствует содержанию MD: принят парк Q2887224 (98%). UNESCO 744 включает San Agustin, Alto de los Ídolos, Alto de las Piedras. Точка основного участка 744-001; координаты остальных участков не усреднялись. Контент не изменялся."
+}

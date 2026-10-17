@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_ostrov_koko_bandero",
+  "stableId": "destination_panama_ostrov_koko_bandero",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/coco-bandero-island/",
+  "sourceFingerprint": "5be3bc7a4736f8f167ce3662cdbbf2dbaa2405f04fb28d12c95e0ff9d73a6641",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3712150"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/coco-bandero-island/",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19769978",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19769978",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://mapcarta.com/19769978",
+      "checkedAt": "2026-10-17T08:01:18.035Z",
+      "note": "Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 90,
+      "selected": "Cayos Coco Bandero",
+      "reason": "Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 90,
+      "selected": "3712150",
+      "reason": "Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "selected": "9.5333333,-78.65",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Main named referent is Coco Bandero cays in Guna Yala/San Blas, not separate Isla Coco at 9.472306,-78.584144. Editorial singular interpreted as island group."
+    }
+  ],
+  "reviewNote": "Primary referent is the Coco Bandero island group; no individual cay selected.",
+  "location": {
+    "latitude": 9.5333333,
+    "longitude": -78.65,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/19769978"
+  }
+}

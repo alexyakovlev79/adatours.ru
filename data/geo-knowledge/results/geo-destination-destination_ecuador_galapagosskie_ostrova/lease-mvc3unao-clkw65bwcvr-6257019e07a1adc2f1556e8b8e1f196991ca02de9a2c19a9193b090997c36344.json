@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_galapagosskie_ostrova",
+  "stableId": "destination_ecuador_galapagosskie_ostrova",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/galapagos-islands/",
+  "sourceFingerprint": "3968b1e7e8eee2212b07bf326fd996ff7fa07701fb7979476ce92754d67a65a7",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Галапагосские острова",
+      "reason": "Галапагосские острова — эквадорский тихоокеанский архипелаг. Основной референт MD — группа островов, не провинция Q475038 или только национальный парк."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q38095",
+      "reason": "Галапагосские острова — эквадорский тихоокеанский архипелаг. Основной референт MD — группа островов, не провинция Q475038 или только национальный парк."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-0.66666666666667,-90.55",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3658931",
+      "reason": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":7283808}",
+      "reason": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_Islands",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/galapagosskie-ostrova.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Галапагосские острова — эквадорский тихоокеанский архипелаг. Основной референт MD — группа островов, не провинция Q475038 или только национальный парк."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38095",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Галапагосские острова — эквадорский тихоокеанский архипелаг. Основной референт MD — группа островов, не провинция Q475038 или только национальный парк."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38095",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Галапагосские острова — эквадорский тихоокеанский архипелаг. Основной референт MD — группа островов, не провинция Q475038 или только национальный парк."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38095",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38095",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38095",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38095",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q38095",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/galapagos-islands/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q38095",
+    "geonamesId": "3658931",
+    "osm": {
+      "type": "relation",
+      "id": 7283808
+    },
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Gal%C3%A1pagos_Islands"
+    }
+  },
+  "location": {
+    "latitude": -0.66666666666667,
+    "longitude": -90.55,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q38095"
+  },
+  "reviewNote": "Коммерческие P856 из Wikidata не перенесены как officialUrl архипелага; границы отдельной морской территории ЮНЕСКО не приравнены архипелагу."
+}

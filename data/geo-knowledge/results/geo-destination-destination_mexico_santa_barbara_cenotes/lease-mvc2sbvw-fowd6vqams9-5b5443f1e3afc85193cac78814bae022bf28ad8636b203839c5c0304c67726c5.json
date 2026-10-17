@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_santa_barbara_cenotes",
+  "stableId": "destination_mexico_santa_barbara_cenotes",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/santa-barbara-cenotes/",
+  "sourceFingerprint": "544d99707d5e2e1f877a9fa827327959845877c819879a41ee5c8f4fd9bb2248",
+  "status": "READY",
+  "external": {
+    "officialUrl": "https://cenotessantabarbara.com/"
+  },
+  "location": {
+    "latitude": 20.73772,
+    "longitude": -89.299706,
+    "pointRole": "representative",
+    "coordinateSource": "https://cenotessantabarbara.com/contactanos/"
+  },
+  "alternateNames": [
+    "Cenotes Santa Bárbara",
+    "Santa Bárbara Cenotes"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "identityScope": "composite",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Сеноты Санта-Барбара",
+      "reason": "Именованный комплекс Cenotes Santa Bárbara на въезде в Homún, Yucatán: официальный оператор перечисляет Cascabel, Chaksikin, Xooch и Pool Cocom и общий транспорт между ними, точно соответствуя MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://cenotessantabarbara.com/",
+      "reason": "Официальный сайт единого комплекса сенотов: четыре названных водоема и общий транспорт; не сайт отдельного сенота."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "20.73772,-89.299706; representative",
+      "reason": "На странице контактов оператор встроил Google map Cenote Santa Bárbara с координатой20.73772,-89.299706. Она попадает в посетительскую зону у общего здания Santa Barbara Restaurant & Cenotes, OSMway1214342662 (20.737515..20.7377894,-89.3002006..-89.2996604). Это опорная точка приема посетителей комплекса, не среднее четырех сенотов и не центр отдельного бассейна."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Cenotes Santa Bárbara; Santa Bárbara Cenotes",
+      "reason": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "containedInPlace country_mexico",
+      "reason": "Официальные контакты и карта оператора подтверждают Homún,Yucatán,Mexico; совпадает с MD и entry страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://cenotessantabarbara.com/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Именованный комплекс Cenotes Santa Bárbara на въезде в Homún, Yucatán: официальный оператор перечисляет Cascabel, Chaksikin, Xooch и Pool Cocom и общий транспорт между ними, точно соответствуя MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/santa-barbara-cenotes/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Точный live URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Approved MD/entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, имени, стране и URL."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://cenotessantabarbara.com/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Официальный сайт единого комплекса сенотов: четыре названных водоема и общий транспорт; не сайт отдельного сенота."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://cenotessantabarbara.com/contactanos/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "На странице контактов оператор встроил Google map Cenote Santa Bárbara с координатой20.73772,-89.299706. Она попадает в посетительскую зону у общего здания Santa Barbara Restaurant & Cenotes, OSMway1214342662 (20.737515..20.7377894,-89.3002006..-89.2996604). Это опорная точка приема посетителей комплекса, не среднее четырех сенотов и не центр отдельного бассейна."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/way/1214342662",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Здание Santa Barbara Restaurant & Cenotes подтверждает посетительскую зону у опорной точки официальной карты; не external.osm всего комплекса."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://cenotessantabarbara.com/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Прямые испанские/международные названия того же именованного объекта."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://adatours.ru/mexico/place/santa-barbara-cenotes/",
+      "checkedAt": "2026-10-17T07:32:08.237Z",
+      "note": "Официальные контакты и карта оператора подтверждают Homún,Yucatán,Mexico; совпадает с MD и entry страны."
+    }
+  ],
+  "reviewNote": "Единый управляемый комплекс нескольких сенотов. Отдельный точный QID не найден; паспорт READY по подтвержденной идентичности и официальному сайту. OSMway1214342662 — служебное здание, а nodes11230223347/364/366/11251122043 — отдельные сеноты: ни один не выдан за sameAs всего комплекса. Location — опорная посетительская зона по карте оператора."
+}

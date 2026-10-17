@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_lago_de_atitlan",
+  "stableId": "destination_guatemala_lago_de_atitlan",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/lake-atitlan/",
+  "sourceFingerprint": "36582f72bcf35349ac9d3b85bba1185f5d44c86c2b27fd5805904660a568fe22",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "lake",
+  "external": {
+    "wikidataQid": "Q273276",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов.",
+      "selected": "lake"
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "reason": "Страна из текущего MD согласуется с внешними географическими источниками.",
+      "selected": "country_guatemala"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов.",
+      "selected": "Q273276"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов.",
+      "selected": "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Представительская точка озера 14°42′N 91°12′W совпадает в Wikidata и Wikipedia; не лодочная пристань.",
+      "selected": "14.7, -91.2"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/lake-atitlan/",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прямой HTTP-запрос: 200; H1 совпадает, canonical точный, noindex отсутствует. Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/lago-de-atitlan.md",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прочитаны MD и точная source-index entry; проверены stable ID, status: approved, countryId и смысл страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q273276",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q273276",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Источник географически помещает выбранный объект в country_guatemala."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q273276",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Точная статья о выбранном референте. Озеро Атитлан в Sololá, Гватемала, с Панахачелем и Сан-Педро на берегах. Главный референт озеро, не одноименный вулкан и не один из населенных пунктов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q273276",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Представительская точка озера 14°42′N 91°12′W совпадает в Wikidata и Wikipedia; не лодочная пристань."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Lake_Atitl%C3%A1n",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Представительская точка озера 14°42′N 91°12′W совпадает в Wikidata и Wikipedia; не лодочная пристань."
+    }
+  ],
+  "reviewNote": null,
+  "location": {
+    "latitude": 14.7,
+    "longitude": -91.2,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q273276"
+  }
+}

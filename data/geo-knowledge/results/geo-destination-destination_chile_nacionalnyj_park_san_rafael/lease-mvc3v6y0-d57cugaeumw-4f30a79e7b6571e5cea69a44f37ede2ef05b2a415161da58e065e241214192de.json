@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_nacionalnyj_park_san_rafael",
+  "stableId": "destination_chile_nacionalnyj_park_san_rafael",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/laguna-san-rafael-national-park/",
+  "sourceFingerprint": "a2e347308ebae93eb01788b8719524384b0cdd280a8cf657fecaf7968735ae5e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Национальный парк Сан-Рафаэль",
+      "reason": "Национальный парк Laguna San Rafael в Aysén у Северного ледяного поля, не только одноимённый ледник."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1703052",
+      "reason": "Национальный парк Laguna San Rafael в Aysén у Северного ледяного поля, не только одноимённый ледник."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Laguna_San_Rafael_National_Park",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 80,
+      "selected": "[-47,-74]",
+      "reason": "Грубая P625 до целого градуса выбрана как опорная точка большого парка, без утверждения о центре/входе."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.conaf.cl/parque_nacionales/parque-nacional-laguna-san-rafael/",
+      "reason": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "relation/4647128",
+      "reason": "Точный P402 сопоставленного объекта."
+    },
+    {
+      "field": "external.wdpaIds",
+      "probability": 97,
+      "selected": "83",
+      "reason": "Идентификатор WDPA относится парку Laguna San Rafael целиком."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-san-rafael-national-park/",
+      "checkedAt": "2026-10-17T08:14:10.652Z",
+      "note": "Национальный парк Laguna San Rafael в Aysén у Северного ледяного поля, не только одноимённый ледник."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/laguna-san-rafael-national-park.md",
+      "checkedAt": "2026-10-17T08:14:10.652Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1703052",
+      "checkedAt": "2026-10-17T08:14:10.652Z",
+      "note": "Национальный парк Laguna San Rafael в Aysén у Северного ледяного поля, не только одноимённый ледник."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1703052",
+      "checkedAt": "2026-10-17T08:14:10.652Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1703052",
+      "checkedAt": "2026-10-17T08:14:10.652Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.conaf.cl/parque_nacionales/parque-nacional-laguna-san-rafael/",
+      "checkedAt": "2026-10-17T08:14:10.652Z",
+      "note": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.conaf.cl/parque_nacionales/parque-nacional-laguna-san-rafael/",
+      "checkedAt": "2026-10-17T08:14:10.652Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1703052",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "P402 точной географической сущности; тип relation, не населённый пункт или иной одноимённый объект."
+    },
+    {
+      "field": "external.wdpaIds",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1703052",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "WDPA 83 в точной карточке национального парка с ссылкой на Protected Planet."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1703052",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Laguna_San_Rafael_National_Park"
+    },
+    "officialUrl": "https://www.conaf.cl/parque_nacionales/parque-nacional-laguna-san-rafael/",
+    "osm": {
+      "type": "relation",
+      "id": 4647128
+    },
+    "wdpaIds": [
+      "83"
+    ]
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -47,
+    "longitude": -74,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1703052"
+  },
+  "reviewNote": "P625 округлена до целого градуса; опорная точка парка, не точка посадки/входа."
+}

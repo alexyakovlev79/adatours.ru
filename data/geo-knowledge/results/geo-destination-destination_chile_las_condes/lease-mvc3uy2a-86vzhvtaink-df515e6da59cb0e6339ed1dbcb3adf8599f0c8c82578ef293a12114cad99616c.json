@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_las_condes",
+  "stableId": "destination_chile_las_condes",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/las-condes/",
+  "sourceFingerprint": "b12a1959204c5c48fc085480027b61441b131224f23dc10aca0bb800a9db267f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Лас-Кондес",
+      "reason": "Коммуна/городской район Las Condes в Сантьяго; не отдельное офисное здание или квартал Sanhattan."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q14484"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Las_Condes\"}"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Опорная точка коммуны из текущей статьи, не центр конкретного делового комплекса.",
+      "selected": "-33.4117,-70.55"
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "probability": 95,
+      "reason": "Городская коммуна Большого Сантьяго.",
+      "selected": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/las-condes/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Коммуна/городской район Las Condes в Сантьяго; не отдельное офисное здание или квартал Sanhattan."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/las-condes/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14484",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Las_Condes",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Las_Condes",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Опорная точка коммуны из текущей статьи, не центр конкретного делового комплекса."
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Las_Condes",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Городская коммуна Большого Сантьяго."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14484",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Коммуна/городской район Las Condes в Сантьяго; не отдельное офисное здание или квартал Sanhattan."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q14484",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Las_Condes"
+    }
+  },
+  "location": {
+    "latitude": -33.4117,
+    "longitude": -70.55,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Las_Condes"
+  },
+  "reviewNote": "WD P625 −33.4167,−70.5833 и точка Wikipedia различаются; выбрана одна точка без усреднения."
+}

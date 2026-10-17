@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_llanquihue_lake",
+  "stableId": "destination_chile_llanquihue_lake",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/llanquihue-lake/",
+  "sourceFingerprint": "c666f09a41367bfd39e04574f19362c59b712e0d15fcb2bbda78bf22a98d2d2f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Озеро Льянкиуэ",
+      "reason": "Озеро Llanquihue в Los Lagos, не одноимённый город/провинция."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q826464"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Llanquihue_Lake\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Выбрана опубликованная округлённая P625 озера; не усреднение двух WD точек.",
+      "selected": "-41.13333333333333,-72.78333333333333"
+    },
+    {
+      "field": "relationships.destination_chile_puerto_varas",
+      "probability": 95,
+      "reason": "Puerto Varas является отдельным городом на берегу.",
+      "selected": "destination_chile_puerto_varas"
+    },
+    {
+      "field": "relationships.destination_chile_osorno_volcano",
+      "probability": 95,
+      "reason": "Отдельный вулкан Osorno связан с озёрным ландшафтом.",
+      "selected": "destination_chile_osorno_volcano"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/llanquihue-lake/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Озеро Llanquihue в Los Lagos, не одноимённый город/провинция."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/llanquihue-lake/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q826464",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Llanquihue_Lake",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q826464",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Выбрана опубликованная округлённая P625 озера; не усреднение двух WD точек."
+    },
+    {
+      "field": "relationships.destination_chile_puerto_varas",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Llanquihue_Lake",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Puerto Varas является отдельным городом на берегу."
+    },
+    {
+      "field": "relationships.destination_chile_osorno_volcano",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Llanquihue_Lake",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Отдельный вулкан Osorno связан с озёрным ландшафтом."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q826464",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Озеро Llanquihue в Los Lagos, не одноимённый город/провинция."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_puerto_varas"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_osorno_volcano"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q826464",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Llanquihue_Lake"
+    }
+  },
+  "location": {
+    "latitude": -41.13333333333333,
+    "longitude": -72.78333333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q826464"
+  },
+  "reviewNote": "Вторая P625 41°7′56.60″S,72°48′35.93″W не усреднялась с выбранной точкой."
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_lagartococha_lake",
+  "stableId": "destination_ecuador_lagartococha_lake",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/lagartococha-lake/",
+  "sourceFingerprint": "06e22c57226e1c2d2a5351b1306d82294b86f7048bc3b2ef09697f3c2274133d",
+  "status": "BLOCKED",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.sachalodge.com/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Озеро в маршрутах Sacha Lodge подтверждено официальным сайтом лоджа; не система Lagartococha на границе Перу и Эквадора и не озеро Pilchicocha у зданий лоджа."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/lagartococha-lake.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_lagartococha_lake; статус approved; blob SHA=5e8ec65457a26dea8670f486b9c239306cebf0e7; актуальный entry подтверждает canonical /ecuador/place/lagartococha-lake/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/lagartococha-lake/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_lagartococha_lake.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 93,
+      "selected": "Озеро в маршрутах Sacha Lodge подтверждено официальным сайтом лоджа; не система Lagartococha на границе Перу и Эквадора и не озеро Pilchicocha у зданий лоджа.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Точное внешнее ID и положение локального озера не установлены; координаты лоджа и одноименной пограничной системы не переносить."
+    }
+  ],
+  "reviewNote": "Географическая идентичность исследована и оценена от 70%. Технический блокер §3.2.1 workflow: точный публичный URL не удалось открыть доступными средствами, HTTP-статус/живой HTML не подтверждены. Нужна адресная проверка URL в рабочем браузере; не считать READY или PUBLISHED. Точное внешнее ID и положение локального озера не установлены; координаты лоджа и одноименной пограничной системы не переносить."
+}

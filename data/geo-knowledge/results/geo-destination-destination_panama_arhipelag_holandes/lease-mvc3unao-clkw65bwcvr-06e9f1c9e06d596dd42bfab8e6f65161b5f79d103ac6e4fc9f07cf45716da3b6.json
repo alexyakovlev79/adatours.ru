@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_arhipelag_holandes",
+  "stableId": "destination_panama_arhipelag_holandes",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/holandes-cays/",
+  "sourceFingerprint": "5caee7c00b68e608a882829702735a11b0b53bad3275935cfba7a5940ab3c4a0",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Архипелаг Холандес",
+      "reason": "Холандес — группа островов San Blas/Guna Yala: яхтенный оператор описывает Holandes Cays как отдельную остановку, Swimming Pool между Turtle и Benedup."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/holandes-cays.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Холандес — группа островов San Blas/Guna Yala: яхтенный оператор описывает Holandes Cays как отдельную остановку, Swimming Pool между Turtle и Benedup."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.ypiyachts.com/en/yacht-charter/central-south-america/san-blas-islands/",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Холандес — группа островов San Blas/Guna Yala: яхтенный оператор описывает Holandes Cays как отдельную остановку, Swimming Pool между Turtle и Benedup."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.ypiyachts.com/en/yacht-charter/central-south-america/san-blas-islands/",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/holandes-cays/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "reviewNote": "QID всей группы Сан-Блас не присваивается подгруппе Холандес; точная картографическая идентичность не подтверждена."
+}

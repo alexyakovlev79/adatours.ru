@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_machachi",
+  "stableId": "destination_ecuador_machachi",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/machachi/",
+  "sourceFingerprint": "1160845d97366e78812893c4f258df7ce21e366445c46f42c9fe625c14e4bb00",
+  "status": "BLOCKED",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q6723341",
+    "geonamesId": "3654536"
+  },
+  "location": {
+    "latitude": -0.51,
+    "longitude": -78.57,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q6723341"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6723341",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Город Santiago de Machachi к югу от Кито, центр кантона Mejia. Не отдельная административная паррокия."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/machachi.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_machachi; статус approved; blob SHA=523f02eb658842ad15f4aff1fc5309437009cd80; актуальный entry подтверждает canonical /ecuador/place/machachi/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/machachi/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_machachi.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6723341",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Город Santiago de Machachi к югу от Кито, центр кантона Mejia. Не отдельная административная паррокия."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6723341",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Идентификатор P1566 прочитан из точной карточки Wikidata; прямое открытие GeoNames недоступно, независимую проверку страницы GeoNames не заявляю."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6723341",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "P625 точной карточки, переведен из DMS в WGS84 decimal. Опорная точка населенного пункта, не границы окружающих лесов или административной территории."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Город Santiago de Machachi к югу от Кито, центр кантона Mejia. Не отдельная административная паррокия.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q6723341",
+      "reason": "Город Santiago de Machachi к югу от Кито, центр кантона Mejia. Не отдельная административная паррокия."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 90,
+      "selected": "3654536",
+      "reason": "P1566 точной карточки соответствует именованному объекту; отличия населенного пункта и территории учтены."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-0.51, -78.57",
+      "reason": "P625 относится к выбранному населенному пункту; точка не усредняется с другими картами."
+    }
+  ],
+  "reviewNote": "Географическая идентичность исследована и оценена от 70%. Технический блокер §3.2.1 workflow: точный публичный URL не удалось открыть доступными средствами, HTTP-статус/живой HTML не подтверждены. Нужна адресная проверка URL в рабочем браузере; не считать READY или PUBLISHED. "
+}

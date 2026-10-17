@@ -55,6 +55,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+      PUBLIC_YANDEX_MAPS_API_KEY: ${{ secrets.YANDEX_MAPS_JS_API_KEY }}
+      PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_JS_API_KEY }}
+      PUBLIC_GOOGLE_MAP_ID: ${{ vars.GOOGLE_MAPS_MAP_ID }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6

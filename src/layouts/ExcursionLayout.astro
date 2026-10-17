@@ -10,6 +10,8 @@ import Hero from '../components/editorial/Hero.astro';
 import InlineMarkdown from '../components/global/InlineMarkdown.astro';
 import TripStats from '../components/tour/TripStats.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
+import GeoRouteMap from '../components/maps/GeoRouteMap.astro';
+import {isGeoMapPilot} from '../lib/geo-map-pilots.mjs';
 import TourPricing from '../components/tour/TourPricing.astro';
 import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import EditorialStatement from '../components/editorial/EditorialStatement.astro';
@@ -25,6 +27,9 @@ import { compareToursForCountry } from '../lib/tour-ranking';
 
 const { entry } = Astro.props;
 const d = entry.data;
+const geoMapData = isGeoMapPilot(d.id) && d.status !== 'archived'
+  ? await (await import('../lib/geo-map-astro')).buildPageGeoMap('excursion', d)
+  : null;
 const archived = isArchivedEntity(d);
 const linkedDestinationIds = excursionDestinationIds(d);
 const relatedTourLimit = 10;
@@ -186,6 +191,8 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
       {remainingDescriptionHtml && <Fragment set:html={remainingDescriptionHtml} />}
     </div>
   </section>
+
+  {geoMapData && <GeoRouteMap data={geoMapData} title="Экскурсия на карте" locale="ru" />}
 
   {visibleDestinations.map((place) => (
     <DestinationBand

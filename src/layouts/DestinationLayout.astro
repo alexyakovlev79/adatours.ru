@@ -12,6 +12,8 @@ import TripStats from '../components/tour/TripStats.astro';
 import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
+import GeoRouteMap from '../components/maps/GeoRouteMap.astro';
+import {isGeoMapPilot} from '../lib/geo-map-pilots.mjs';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
 import {
@@ -26,6 +28,9 @@ import { tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-
 
 const { entry } = Astro.props;
 const d = entry.data;
+const geoMapData = isGeoMapPilot(d.id)
+  ? await (await import('../lib/geo-map-astro')).buildPageGeoMap('destination', d)
+  : null;
 // Keep the complete sorted collections for relations and counts; cap only the previews.
 const previewLimits = { tours: 10, optionalTours: 5, excursions: 5 } as const;
 const [allTourEntries, countryEntries, excursionEntries, destinationEntries] = await Promise.all([
@@ -179,6 +184,8 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
       </div>
     </section>
   )}
+
+  {geoMapData && <GeoRouteMap data={geoMapData} title="Место на карте" locale="ru" />}
 
   {d.featureBands.map((band, index) => (
     <StoryPair

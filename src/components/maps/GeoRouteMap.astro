@@ -1,0 +1,109 @@
+---
+import {withBase} from '../../lib/paths';
+
+interface Props {
+  data: any;
+  title?: string;
+  locale?: 'ru' | 'en' | 'cn';
+}
+const {data, title = 'Маршрут на карте', locale = 'ru'} = Astro.props;
+const yandexKey = import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY || '';
+const googleKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '';
+const googleMapId = import.meta.env.PUBLIC_GOOGLE_MAP_ID || '';
+const configured = Boolean(yandexKey || googleKey);
+const provider = locale === 'ru' ? 'yandex' : 'google';
+const imageUrl = (src: string) => {
+  if (!src) return '';
+  if (src.startsWith('/media/')) {
+    const origin = process.env.MEDIA_CDN_ORIGIN || import.meta.env.MEDIA_CDN_ORIGIN || 'https://img.adatours.ru';
+    if (origin) return origin.replace(/\/$/, '') + src;
+  }
+  return withBase(src);
+};
+const payload = data ? {
+  ...data,
+  points: data.points.map((p: any) => ({
+    ...p, href: withBase(p.href), image: imageUrl(p.image),
+    description: String(p.description || '').slice(0, 260),
+  })),
+} : null;
+---
+
+{configured && payload && payload.points.length > 0 && (
+  <section class="geo-map container" data-geo-map
+    data-provider={provider}
+    data-locale={locale}
+    data-yandex-key={yandexKey}
+    data-google-key={googleKey}
+    data-google-map-id={googleMapId}
+    data-geo-map-payload={JSON.stringify(payload)}
+    aria-label={title}>
+    <div class="geo-map__heading">
+      <p class="geo-map__eyebrow">География путешествия</p>
+      <h2>{title}</h2>
+    </div>
+    <div class="geo-map__viewport">
+      <div class="geo-map__canvas" data-geo-map-canvas aria-label="Интерактивная карта"></div>
+      <p class="geo-map__status" data-geo-map-status>Загружаем карту…</p>
+      <article class="geo-map__card" data-geo-card hidden>
+        <button class="geo-map__card-close" data-geo-card-close type="button" aria-label="Закрыть описание">×</button>
+        <img data-geo-card-photo alt="" loading="lazy" hidden />
+        <div class="geo-map__card-copy">
+          <h3 data-geo-card-title></h3>
+          <p data-geo-card-summary></p>
+          <a data-geo-card-link href="#">Подробнее о месте →</a>
+        </div>
+      </article>
+    </div>
+    <details class="geo-map__legend">
+      <summary>Все точки маршрута ({payload.points.length})</summary>
+      <ol>
+        {payload.points.map((point: any) => (
+          <li>
+            <a href={point.href}>{point.name}</a>
+            {point.days?.length > 0 && <small>Дни: {point.days.join(', ')}</small>}
+          </li>
+        ))}
+      </ol>
+    </details>
+  </section>
+)}
+
+<script>
+  import '../../scripts/geo-map-client.mjs';
+</script>
+
+<style is:global>
+  .geo-map { margin-top: 5rem; margin-bottom: 5rem; }
+  .geo-map__eyebrow { color: #8C7133; letter-spacing: .07em; text-transform: uppercase; font-size: .83rem; margin: 0 0 .5rem; }
+  .geo-map__heading h2 { font-size: clamp(2rem,4.6vw,3.9rem); line-height: 1.08; margin: 0 0 1.5rem; }
+  .geo-map__viewport { height: min(42vw,560px); min-height: 410px; position: relative; isolation: isolate; background: #EFEDE8; overflow: hidden; }
+  .geo-map__canvas { position:absolute; inset:0; }
+  .geo-map__status { position:absolute; inset:0; margin:0; display:grid; place-items:center; color:#555; background:#F8F5EF; font-size:1rem; }
+  .geo-map__status[hidden] { display:none; }
+  .geo-map__pin { width:38px; height:38px; background:#F2CC67; color:#1A1A1A; border:2px solid #1A1A1A; border-radius:50%; font-weight:700; font-size:15px; cursor:pointer; box-shadow:0 3px 12px #0003; }
+  .geo-map__pin:hover, .geo-map__pin:focus-visible, .geo-map__pin[aria-pressed=true] { background:#E6BA43; transform:scale(1.08); outline:2px solid #FFFCF8; outline-offset:2px; }
+  .geo-map__card { position:absolute; bottom:20px; left:20px; z-index:5; width:min(365px,calc(100% - 40px)); background:#FFFCF8; color:#1A1A1A; box-shadow:0 10px 40px #0003; max-height:90%; overflow:auto; }
+  .geo-map__card[hidden] { display:none; }
+  .geo-map__card img { width:100%; height:155px; object-fit:cover; }
+  .geo-map__card img[hidden] { display:none; }
+  .geo-map__card-copy { padding:20px 23px 22px; }
+  .geo-map__card-copy h3 { font-size:22px; line-height:1.16; margin:0 0 10px; }
+  .geo-map__card-copy p { line-height:1.5; font-size:15px; margin:0 0 12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .geo-map__card-copy a { color:#795C19; font-weight:600; text-decoration:underline; }
+  .geo-map__card-close { position:absolute; top:7px; right:7px; width:34px; height:34px; font-size:26px; border:0; cursor:pointer; background:#FFFCF8; color:#1A1A1A; }
+  .geo-map__legend { margin:14px 0 0; }
+  .geo-map__legend summary { cursor:pointer; font-size:15px; }
+  .geo-map__legend ol { padding-left:27px; columns:2; }
+  .geo-map__legend li { margin-bottom:8px; break-inside:avoid; }
+  .geo-map__legend li a { color:inherit; text-decoration:underline; }
+  .geo-map__legend small { color:#777; margin-left:7px; }
+  @media (max-width:720px) {
+    .geo-map { margin-top:3rem; margin-bottom:3rem; }
+    .geo-map__viewport { height:445px; min-height:0; }
+    .geo-map__card { left:10px; bottom:10px; width:calc(100% - 20px); }
+    .geo-map__card img { height:115px; }
+    .geo-map__card-copy { padding:15px; }
+    .geo-map__legend ol { columns:1; }
+  }
+</style>

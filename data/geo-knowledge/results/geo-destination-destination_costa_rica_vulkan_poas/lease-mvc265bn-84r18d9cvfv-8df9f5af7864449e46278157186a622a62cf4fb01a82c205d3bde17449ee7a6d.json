@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_vulkan_poas",
+  "stableId": "destination_costa_rica_vulkan_poas",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/poas-volcano/",
+  "sourceFingerprint": "dc22aaefcfba31a7088b5dd9126aac92332a1efd4007bb140fd63ac7afd648fb",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Landform",
+  "external": {
+    "wikidataQid": "Q1969482",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Po%C3%A1s_Volcano"
+    }
+  },
+  "location": {
+    "latitude": 10.1978153,
+    "longitude": -84.2302979,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1969482"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/poas-volcano.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Главный референт — стратовулкан Poás, а не одноименный кантон Q2610373 или национальный парк Q773878. destinationType:city в исходном MD ошибочен; содержимое и точные внешние источники подтверждают вулкан. Исходный контент не редактируется."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/poas-volcano/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Po%C3%A1s_Volcano",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Главный референт — стратовулкан Poás, а не одноименный кантон Q2610373 или национальный парк Q773878. destinationType:city в исходном MD ошибочен; содержимое и точные внешние источники подтверждают вулкан. Исходный контент не редактируется."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Po%C3%A1s_Volcano",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Главный референт — стратовулкан Poás, а не одноименный кантон Q2610373 или национальный парк Q773878. destinationType:city в исходном MD ошибочен; содержимое и точные внешние источники подтверждают вулкан. Исходный контент не редактируется."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Po%C3%A1s_Volcano",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_costa_rica"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1969482",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Выбрана P625 карточки самого вулкана; Wikipedia использует округленную точку10.2,-84.233. Не усредняется; точка не объявляется туристическим входом или смотровой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1969482",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Проверены точный QID, P31/P17/P625 и EN sitelink. Главный референт — стратовулкан Poás, а не одноименный кантон Q2610373 или национальный парк Q773878. destinationType:city в исходном MD ошибочен; содержимое и точные внешние источники подтверждают вулкан. Исходный контент не редактируется."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Po%C3%A1s_Volcano",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точная статья о выбранном именованном объекте, соответствующая sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "В исходном MD неверный destinationType:city; в паспорте выбран вулкан. Актуальность посещения/извержений в этой работе не оценивается.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Вулкан Поас",
+      "reason": "Главный референт — стратовулкан Poás, а не одноименный кантон Q2610373 или национальный парк Q773878. destinationType:city в исходном MD ошибочен; содержимое и точные внешние источники подтверждают вулкан. Исходный контент не редактируется."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "Landform",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "10.1978153, -84.2302979",
+      "reason": "Выбрана P625 карточки самого вулкана; Wikipedia использует округленную точку10.2,-84.233. Не усредняется; точка не объявляется туристическим входом или смотровой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1969482",
+      "reason": "Главный референт — стратовулкан Poás, а не одноименный кантон Q2610373 или национальный парк Q773878. destinationType:city в исходном MD ошибочен; содержимое и точные внешние источники подтверждают вулкан. Исходный контент не редактируется."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Po%C3%A1s_Volcano",
+      "reason": "Точная статья выбранного объекта."
+    }
+  ]
+}

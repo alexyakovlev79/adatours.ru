@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_punta_espinoza",
+  "stableId": "destination_ecuador_punta_espinoza",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/punta-espinoza/",
+  "sourceFingerprint": "160fcc55ec7b75d1037b13ca7c13e6825b553b34d01c880d4d7c389398e56e25",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q23880053",
+    "geonamesId": "3657964",
+    "osm": {
+      "type": "node",
+      "id": 249409903
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/punta-espinoza/",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/19661606",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/19661606",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Exact named feature in country_ecuador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/19661606",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19661606",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/19661606",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19661606",
+      "checkedAt": "2026-10-17T08:31:18.372Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Пунта-Эспиноза",
+      "reason": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q23880053",
+      "reason": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3657964",
+      "reason": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "external.osm",
+      "probability": 93,
+      "selected": "{\"type\":\"node\",\"id\":249409903}",
+      "reason": "Punta Espinosa / Espinoza is the northeast Fernandina peninsula visitor site with marine iguanas and flightless cormorants; Conservancy confirms."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":-0.26769,\"longitude\":-91.44704,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://mapcarta.com/19661606\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": -0.26769,
+    "longitude": -91.44704,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://mapcarta.com/19661606"
+  },
+  "reviewNote": ""
+}

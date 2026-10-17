@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_vodopady_la_pas",
+  "stableId": "destination_costa_rica_vodopady_la_pas",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/la-paz-waterfalls/",
+  "sourceFingerprint": "35fce01da4458db289cf96c177e67be712357ba0d70732a4ff07c9afcc54c45c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q65553816",
+    "osm": {
+      "type": "way",
+      "id": 771191180
+    },
+    "officialUrl": "https://waterfallgardens.com/la_paz_waterfall_gardens/"
+  },
+  "location": {
+    "latitude": 10.204410388888888,
+    "longitude": -84.161637,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q65553816"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/la-paz-waterfalls.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Природный комплекс La Paz Waterfall Gardens с пятью водопадами, лесными тропами и экспозициями животных в Коста-Рике."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/la-paz-waterfalls/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q65553816",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Q65553816: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. Официальный сайт подтверждает весь комплекс, а не один из его каскадов."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/771191180",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Прямой OSM API: точное имя и тип (La Paz Waterfall Gardens, zoo) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://waterfallgardens.com/la_paz_waterfall_gardens/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная страница комплекса у владельца Jardines de la Catarata S.A.; подтверждает пять водопадов и экспозиции."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q65553816",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "10.204410388888888, -84.161637; pointRole=representative. Главный именованный референт страницы — весь комплекс с пятью каскадами и природным парком. Q65553816 и OSM way 771191180 обозначают La Paz Waterfall Gardens. P625 попадает внутрь этого контура и используется как опорная точка комплекса, не отдельного каскада. Одиночный La Paz Waterfall и гостиница Peace Lodge не подменяют комплекс. GeoNames 9886180 HTL имеет другой тип и явно удалённую координату; исключён. Точного Wikipedia sitelink комплекса в проверенном QID нет."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q65553816",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Природный комплекс La Paz Waterfall Gardens с пятью водопадами, лесными тропами и экспозициями животных в Коста-Рике."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q65553816",
+      "reason": "Q65553816: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. Официальный сайт подтверждает весь комплекс, а не один из его каскадов."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/771191180",
+      "reason": "Прямой OSM API: точное имя и тип (La Paz Waterfall Gardens, zoo) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://waterfallgardens.com/la_paz_waterfall_gardens/",
+      "reason": "Точная страница комплекса у владельца Jardines de la Catarata S.A.; подтверждает пять водопадов и экспозиции."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "10.204410388888888,-84.161637",
+      "reason": "10.204410388888888, -84.161637; pointRole=representative. Главный именованный референт страницы — весь комплекс с пятью каскадами и природным парком. Q65553816 и OSM way 771191180 обозначают La Paz Waterfall Gardens. P625 попадает внутрь этого контура и используется как опорная точка комплекса, не отдельного каскада. Одиночный La Paz Waterfall и гостиница Peace Lodge не подменяют комплекс. GeoNames 9886180 HTL имеет другой тип и явно удалённую координату; исключён. Точного Wikipedia sitelink комплекса в проверенном QID нет."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 5,
+      "selected": "9886180",
+      "reason": "GeoNames HTL — гостиница с удалённой координатой, не весь комплекс водопадов и природного парка."
+    }
+  ],
+  "reviewNote": "Главный именованный референт страницы — весь комплекс с пятью каскадами и природным парком. Q65553816 и OSM way 771191180 обозначают La Paz Waterfall Gardens. P625 попадает внутрь этого контура и используется как опорная точка комплекса, не отдельного каскада. Одиночный La Paz Waterfall и гостиница Peace Lodge не подменяют комплекс. GeoNames 9886180 HTL имеет другой тип и явно удалённую координату; исключён. Точного Wikipedia sitelink комплекса в проверенном QID нет.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/la-paz-waterfalls/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

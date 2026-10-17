@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_ostrov_kano",
+  "stableId": "destination_costa_rica_ostrov_kano",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/cano-island/",
+  "sourceFingerprint": "5bf25e49f4ef2916b89f67d24b36078661d08bee857c423251f1fe459d2de4d9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q182214",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Isla_del_Ca%C3%B1o"
+    },
+    "geonamesId": "3624437",
+    "osm": {
+      "type": "way",
+      "id": 12452456
+    },
+    "officialUrl": "https://www.sinac.go.cr/ES/ac/acosa/Paginas/IsladelCa%C3%B1o.aspx"
+  },
+  "location": {
+    "latitude": 8.70593,
+    "longitude": -83.87959,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/CR.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/cano-island.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Остров Каньо (Isla del Caño) у полуострова Оса на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/cano-island/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182214",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Q182214: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Isla_del_Ca%C3%B1o",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Первичная строка CR.txt: 3624437, featureCode ISL. Тип и география соответствуют Остров Каньо (Isla del Caño) у полуострова Оса на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/12452456",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Прямой OSM API: точное имя и тип (island) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.sinac.go.cr/ES/ac/acosa/Paginas/IsladelCa%C3%B1o.aspx",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная карточка охраняемой территории у государственного администратора SINAC; название и район совпадают. Прямой запрос в этом проходе вернул 502; адрес и содержание подтверждены индексом официального сайта и независимыми географическими записями."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "8.70593, -83.87959; pointRole=representative. Точка GeoNames ISL находится внутри физического контура острова OSM way 12452456 с Q182214 (проверено по узлам /map). OSM relation 11805953 — отдельный биологический резерват с морской территорией, Q96374600, и не присвоен острову как exact OSM identity. GeoNames Isla Herradura 3623471 имеет похожие aliases Caño Island, но другое положение; исключён."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/way/12452456",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Координата GeoNames внутри физического контура острова, проверено по узлам OSM, не только по границе морского резервата."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q182214",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Остров Каньо (Isla del Caño) у полуострова Оса на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q182214",
+      "reason": "Q182214: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3624437",
+      "reason": "Первичная строка CR.txt: 3624437, featureCode ISL. Тип и география соответствуют Остров Каньо (Isla del Caño) у полуострова Оса на тихоокеанском побережье Коста-Рики."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/12452456",
+      "reason": "Прямой OSM API: точное имя и тип (island) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.sinac.go.cr/ES/ac/acosa/Paginas/IsladelCa%C3%B1o.aspx",
+      "reason": "Точная карточка охраняемой территории у государственного администратора SINAC; название и район совпадают. Прямой запрос в этом проходе вернул 502; адрес и содержание подтверждены индексом официального сайта и независимыми географическими записями."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "8.70593,-83.87959",
+      "reason": "8.70593, -83.87959; pointRole=representative. Точка GeoNames ISL находится внутри физического контура острова OSM way 12452456 с Q182214 (проверено по узлам /map). OSM relation 11805953 — отдельный биологический резерват с морской территорией, Q96374600, и не присвоен острову как exact OSM identity. GeoNames Isla Herradura 3623471 имеет похожие aliases Caño Island, но другое положение; исключён."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "reviewNote": "Точка GeoNames ISL находится внутри физического контура острова OSM way 12452456 с Q182214 (проверено по узлам /map). OSM relation 11805953 — отдельный биологический резерват с морской территорией, Q96374600, и не присвоен острову как exact OSM identity. GeoNames Isla Herradura 3623471 имеет похожие aliases Caño Island, но другое положение; исключён.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/cano-island/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

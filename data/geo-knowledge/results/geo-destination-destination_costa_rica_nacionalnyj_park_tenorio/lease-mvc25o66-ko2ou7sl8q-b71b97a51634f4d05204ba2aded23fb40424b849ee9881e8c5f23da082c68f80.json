@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_nacionalnyj_park_tenorio",
+  "stableId": "destination_costa_rica_nacionalnyj_park_tenorio",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/tenorio-volcano-national-park/",
+  "sourceFingerprint": "0ac46caef865137d7c518049144f46deb2312c81b46f1121766191a326338e72",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q4551358",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tenorio_Volcano_National_Park"
+    },
+    "geonamesId": "8335097",
+    "osm": {
+      "type": "relation",
+      "id": 12582130
+    },
+    "officialUrl": "https://www.sinac.go.cr/ES/ac/acat/pnvt/Paginas/default.aspx"
+  },
+  "location": {
+    "latitude": 10.67306,
+    "longitude": -85.015,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/CR.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/tenorio-volcano-national-park.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Национальный парк вулкана Тенорио в Коста-Рике; самостоятельная охраняемая территория с Рио-Селесте."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/tenorio-volcano-national-park/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4551358",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Q4551358: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tenorio_Volcano_National_Park",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Первичная строка CR.txt: 8335097, featureCode PRK. Тип и география соответствуют Национальный парк вулкана Тенорио в Коста-Рике; самостоятельная охраняемая территория с Рио-Селесте."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/12582130",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Прямой OSM API: точное имя и тип (национальный парк) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.sinac.go.cr/ES/ac/acat/pnvt/Paginas/default.aspx",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Точная карточка охраняемой территории у государственного администратора SINAC; название и район совпадают. Прямой запрос в этом проходе вернул 502; адрес и содержание подтверждены индексом официального сайта и независимыми географическими записями."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "10.67306, -85.015; pointRole=representative. GeoNames 8335097 PRK внутри внешнего полигона OSM 12582130; опорная точка парка, не начало тропы и не вершина вулкана. Старые Q23747060 и Q18285605 перенаправлены в Q4551358; сохранён действующий QID. GeoNames 3621320 VLC — вулкан, не весь парк, и не присваивается этой странице."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/12582130/full",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Координата GeoNames попадает внутрь внешнего полигона точного национального парка; проверено по первичной OSM геометрии."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4551358",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Национальный парк вулкана Тенорио в Коста-Рике; самостоятельная охраняемая территория с Рио-Селесте."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q4551358",
+      "reason": "Q4551358: точное название, тип и страна P17 Q800 совпадают с основным референтом MD. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья соответствующего географического объекта: название, тип, страна и основной референт сверены с MD и Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "8335097",
+      "reason": "Первичная строка CR.txt: 8335097, featureCode PRK. Тип и география соответствуют Национальный парк вулкана Тенорио в Коста-Рике; самостоятельная охраняемая территория с Рио-Селесте."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/12582130",
+      "reason": "Прямой OSM API: точное имя и тип (национальный парк) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "selected": "https://www.sinac.go.cr/ES/ac/acat/pnvt/Paginas/default.aspx",
+      "reason": "Точная карточка охраняемой территории у государственного администратора SINAC; название и район совпадают. Прямой запрос в этом проходе вернул 502; адрес и содержание подтверждены индексом официального сайта и независимыми географическими записями."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "10.67306,-85.015",
+      "reason": "10.67306, -85.015; pointRole=representative. GeoNames 8335097 PRK внутри внешнего полигона OSM 12582130; опорная точка парка, не начало тропы и не вершина вулкана. Старые Q23747060 и Q18285605 перенаправлены в Q4551358; сохранён действующий QID. GeoNames 3621320 VLC — вулкан, не весь парк, и не присваивается этой странице."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и P17 Q800, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "reviewNote": "GeoNames 8335097 PRK внутри внешнего полигона OSM 12582130; опорная точка парка, не начало тропы и не вершина вулкана. Старые Q23747060 и Q18285605 перенаправлены в Q4551358; сохранён действующий QID. GeoNames 3621320 VLC — вулкан, не весь парк, и не присваивается этой странице.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/tenorio-volcano-national-park/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

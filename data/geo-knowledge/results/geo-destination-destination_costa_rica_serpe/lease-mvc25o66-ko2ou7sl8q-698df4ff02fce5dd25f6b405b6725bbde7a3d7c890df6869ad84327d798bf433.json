@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_serpe",
+  "stableId": "destination_costa_rica_serpe",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/sierpe/",
+  "sourceFingerprint": "4ed8e89bb81bf29e5315433266211b072b8f8b6f402c39c90a79c347e0062a19",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3621457",
+    "osm": {
+      "type": "node",
+      "id": 1050211091
+    }
+  },
+  "location": {
+    "latitude": 8.85997,
+    "longitude": -83.47235,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/CR.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/sierpe.md",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Речное поселение Сьерпе в кантоне Оса, Пунтаренас, на юге Коста-Рики; отправная точка лодочных поездок."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/sierpe/",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Первичная строка CR.txt: 3621457, featureCode PPL. Тип и география соответствуют Речное поселение Сьерпе в кантоне Оса, Пунтаренас, на юге Коста-Рики; отправная точка лодочных поездок."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/1050211091",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Прямой OSM API: точное имя и тип (village) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "8.85997, -83.47235; pointRole=settlement_center. GeoNames 3621457 PPL и OSM village совпадают с поселением. Q3960252, статья enwiki Sierpe и OSM relation 6198914 описывают административный district, а не точный городской референт; QID и Wikipedia не включены. Река Сьерпе Q7511286 и резерват Térraba-Sierpe тоже самостоятельные объекты. Городская точка GeoNames согласуется с village node OSM, не с центром большого района."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://download.geonames.org/export/dump/CR.zip",
+      "checkedAt": "2026-10-17T07:16:05.961Z",
+      "note": "Принадлежность Коста-Рике подтверждена MD/source-index и официальной туристической географией/кодом CR в GeoNames, без переноса одноимённых объектов других стран."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Речное поселение Сьерпе в кантоне Оса, Пунтаренас, на юге Коста-Рики; отправная точка лодочных поездок."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с URL задачи, H1 и stable ID подтверждены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3621457",
+      "reason": "Первичная строка CR.txt: 3621457, featureCode PPL. Тип и география соответствуют Речное поселение Сьерпе в кантоне Оса, Пунтаренас, на юге Коста-Рики; отправная точка лодочных поездок."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/1050211091",
+      "reason": "Прямой OSM API: точное имя и тип (village) совпадают с главным референтом страницы."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "8.85997,-83.47235",
+      "reason": "8.85997, -83.47235; pointRole=settlement_center. GeoNames 3621457 PPL и OSM village совпадают с поселением. Q3960252, статья enwiki Sierpe и OSM relation 6198914 описывают административный district, а не точный городской референт; QID и Wikipedia не включены. Река Сьерпе Q7511286 и резерват Térraba-Sierpe тоже самостоятельные объекты. Городская точка GeoNames согласуется с village node OSM, не с центром большого района."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "country_costa_rica",
+      "reason": "Принадлежность Коста-Рике подтверждена MD/source-index и официальной туристической географией/кодом CR в GeoNames, без переноса одноимённых объектов других стран."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 65,
+      "selected": "Q3960252",
+      "reason": "Кандидат явно описывает district, основной референт MD — village; точный QID поселения не установлен."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 65,
+      "selected": "https://en.wikipedia.org/wiki/Sierpe",
+      "reason": "Проверенная статья описывает административный district, точное поселение надёжно определено через GeoNames и OSM."
+    }
+  ],
+  "reviewNote": "GeoNames 3621457 PPL и OSM village совпадают с поселением. Q3960252, статья enwiki Sierpe и OSM relation 6198914 описывают административный district, а не точный городской референт; QID и Wikipedia не включены. Река Сьерпе Q7511286 и резерват Térraba-Sierpe тоже самостоятельные объекты. Городская точка GeoNames согласуется с village node OSM, не с центром большого района.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/costa-rica/place/sierpe/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; текущий blob SHA MD повторно проверен."
+    ]
+  }
+}

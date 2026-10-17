@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_reka_napo",
+  "stableId": "destination_ecuador_reka_napo",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/napo-river/",
+  "sourceFingerprint": "b7a9eb3cef9966be96b5c4201f3cdbf83690d29d604ba2264e19efa278706a22",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q849480",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Napo_River"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Река Напо",
+      "reason": "Река Напо в MD — эквадорская часть трансграничного Río Napo. Идентичность всей реки Q849480 подходит основному референту; точка — начало Напо при слиянии Жатуньяку и Ансу в Эквадоре, а не устье в Перу."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q849480",
+      "reason": "Река Напо в MD — эквадорская часть трансграничного Río Napo. Идентичность всей реки Q849480 подходит основному референту; точка — начало Напо при слиянии Жатуньяку и Ансу в Эквадоре, а не устье в Перу."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Napo_River",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-1.0469444444444445, -77.80749999999999",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/napo-river.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Река Напо в MD — эквадорская часть трансграничного Río Napo. Идентичность всей реки Q849480 подходит основному референту; точка — начало Напо при слиянии Жатуньяку и Ансу в Эквадоре, а не устье в Перу."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/napo-river/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q849480",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Река Напо в MD — эквадорская часть трансграничного Río Napo. Идентичность всей реки Q849480 подходит основному референту; точка — начало Напо при слиянии Жатуньяку и Ансу в Эквадоре, а не устье в Перу."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Napo_River",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Napo_River",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/napo-river.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -1.0469444444444445,
+    "longitude": -77.80749999999999,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Napo_River"
+  }
+}

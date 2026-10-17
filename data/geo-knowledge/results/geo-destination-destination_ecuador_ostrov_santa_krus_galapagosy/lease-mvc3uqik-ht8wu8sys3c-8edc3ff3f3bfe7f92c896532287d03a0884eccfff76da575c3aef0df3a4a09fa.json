@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ostrov_santa_krus_galapagosy",
+  "stableId": "destination_ecuador_ostrov_santa_krus_galapagosy",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/santa-cruz-island/",
+  "sourceFingerprint": "abd204cd1e84bd0dfabad7819056b9930826df6704b7bcfc0b2ac70b510216dc",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q713127"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/santa-cruz-island/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q713127",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q713127",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q713127",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Santa Cruz Island, Galápagos",
+      "reason": "Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q713127",
+      "reason": "Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.6436111111111111,-90.35805555555555",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Galápagos island with Puerto Ayora on south coast; not California Santa Cruz island, canton or city."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.6436111111111111,
+    "longitude": -90.35805555555555,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q713127"
+  }
+}

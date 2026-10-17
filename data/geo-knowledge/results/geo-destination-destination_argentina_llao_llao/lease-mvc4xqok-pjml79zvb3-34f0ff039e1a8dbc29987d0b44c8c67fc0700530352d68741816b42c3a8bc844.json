@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_llao_llao",
+  "stableId": "destination_argentina_llao_llao",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/llao-llao/",
+  "sourceFingerprint": "d8daf87e8501a22918f120a3241e19ce9bfc5eaf46c3590139cc1b030827ccaa",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Льяо-Льяо",
+      "reason": "MD: природный район Llao Llao у Bariloche с прямыми ссылками на муниципальный парк, лесные тропы, Villa Tacul и Bahía López. Главный референт — Parque municipal Llao Llao, а не одноимённый отель либо населённый пункт."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_argentina"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "reason": "Точный Parque municipal Llao Llao, Río Negro, Argentina; главный природный референт страницы.",
+      "selected": "Q25249325"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Точная самостоятельная статья муниципального парка.",
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Parque_municipal_Llao_Llao\"}"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "reason": "Официальная страница администрации именно этого муниципального парка, со списком его троп и участков.",
+      "selected": "https://www.bariloche.gov.ar/descubri-bariloche/areas-protegidas/parque-municipal-llao-llao/"
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Округлённая точка QID/Wikipedia -41.05,-71.5 и точка научного исследования -41°02′57″,-71°34′05″ различаются. Роль единой координаты всего парка не подтверждена; не усредняются."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/argentina/place/llao-llao/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: природный район Llao Llao у Bariloche с прямыми ссылками на муниципальный парк, лесные тропы, Villa Tacul и Bahía López. Главный референт — Parque municipal Llao Llao, а не одноимённый отель либо населённый пункт."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://adatours.ru/argentina/place/llao-llao/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q25249325",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точный Parque municipal Llao Llao, Río Negro, Argentina; главный природный референт страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Parque_municipal_Llao_Llao",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Точная самостоятельная статья муниципального парка."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.bariloche.gov.ar/descubri-bariloche/areas-protegidas/parque-municipal-llao-llao/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "Официальная страница администрации именно этого муниципального парка, со списком его троп и участков."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.bariloche.gov.ar/descubri-bariloche/areas-protegidas/parque-municipal-llao-llao/",
+      "checkedAt": "2026-10-17T08:38:31.951Z",
+      "note": "MD: природный район Llao Llao у Bariloche с прямыми ссылками на муниципальный парк, лесные тропы, Villa Tacul и Bahía López. Главный референт — Parque municipal Llao Llao, а не одноимённый отель либо населённый пункт."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q25249325",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Parque_municipal_Llao_Llao"
+    },
+    "officialUrl": "https://www.bariloche.gov.ar/descubri-bariloche/areas-protegidas/parque-municipal-llao-llao/"
+  }
+}

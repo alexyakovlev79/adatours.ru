@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vulkan_serra_negra",
+  "stableId": "destination_ecuador_vulkan_serra_negra",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/sierra-negra-volcano/",
+  "sourceFingerprint": "107179a49e604a08c08cdd2d9c66a0c7b98a1b4668487afe91629382ec12f636",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Вулкан Сьерра-Негра",
+      "reason": "MD: вулкан Sierra Negra на Isabela, Galápagos. Исключены одноимённые мексиканские и материковые горы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "MD: вулкан Sierra Negra на Isabela, Galápagos. Исключены одноимённые мексиканские и материковые горы.",
+      "selected": "Q1189579"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья подтверждённого географического объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Sierra_Negra_(Gal%C3%A1pagos)\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координата именованного вулкана; точка вершины, не место начала прогулки.",
+      "selected": "-0.83,-91.17"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/sierra-negra-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: вулкан Sierra Negra на Isabela, Galápagos. Исключены одноимённые мексиканские и материковые горы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/sierra-negra-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1189579",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: вулкан Sierra Negra на Isabela, Galápagos. Исключены одноимённые мексиканские и материковые горы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sierra_Negra_(Gal%C3%A1pagos)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точная статья подтверждённого географического объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sierra_Negra_(Gal%C3%A1pagos)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Координата именованного вулкана; точка вершины, не место начала прогулки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sierra_Negra_(Gal%C3%A1pagos)",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD: вулкан Sierra Negra на Isabela, Galápagos. Исключены одноимённые мексиканские и материковые горы."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1189579",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Sierra_Negra_(Gal%C3%A1pagos)"
+    }
+  },
+  "location": {
+    "latitude": -0.83,
+    "longitude": -91.17,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Sierra_Negra_(Gal%C3%A1pagos)"
+  }
+}

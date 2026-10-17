@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_pereira",
+  "stableId": "destination_colombia_pereira",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/pereira/",
+  "sourceFingerprint": "a34e29c11970d719192c2fe5670f8853a37f61e349a0079d049a304c75c5d5c2",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q51111",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pereira,_Colombia"
+    },
+    "geonamesId": "3672486"
+  },
+  "location": {
+    "latitude": 4.814444444444445,
+    "longitude": -75.69472222222223,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q51111"
+  },
+  "alternateNames": [
+    "Pereira"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Перейра",
+      "reason": "Заголовок, summary и материалы определяют Pereira как город-базу кофейного региона. Экскурсии по фермам, Кокоре и Саленто не заменяют главный референт города."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q51111",
+      "reason": "Заголовок, summary и материалы определяют Pereira как город-базу кофейного региона. Экскурсии по фермам, Кокоре и Саленто не заменяют главный референт города."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Pereira,_Colombia",
+      "reason": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3672486",
+      "reason": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "4.814444444444445,-75.69472222222223; settlement_center",
+      "reason": "P625 точного Wikidata-объекта: опорная точка городской застройки для геопривязки населенного места; не центр всей административной территории и не точка отдельной экскурсии."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Pereira",
+      "reason": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "containedInPlace country_colombia",
+      "reason": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://colombia.travel/es/pereira",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Заголовок, summary и материалы определяют Pereira как город-базу кофейного региона. Экскурсии по фермам, Кокоре и Саленто не заменяют главный референт города."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/pereira/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Live URL: HTTP 200, canonical exact, H1 соответствует, noindex отсутствует. Проверены approved MD и entry из main 989a35d14eab8a816010b3c5c40da68f62d230bb; stableId/страна/URL совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51111",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Заголовок, summary и материалы определяют Pereira как город-базу кофейного региона. Экскурсии по фермам, Кокоре и Саленто не заменяют главный референт города."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51111",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51111",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51111",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P625 точного Wikidata-объекта: опорная точка городской застройки для геопривязки населенного места; не центр всей административной территории и не точка отдельной экскурсии."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51111",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51111",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Pereira Q51111, столица Risaralda. Кофейный регион/треугольник из searchAliases — поисковые темы, не alternateNames города. Координата города, не долины Кокора с обложки."
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_plyazh_anakena",
+  "stableId": "destination_chile_plyazh_anakena",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/anakena-beach/",
+  "sourceFingerprint": "8c10a47f1be69130fd07a5e5f5874b0ce34192ee38e9d953d6cc82541ec02494",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пляж Анакена",
+      "reason": "Anakena — пляж и археологический участок Рапа-Нуи с Ahu Nau Nau; не винодельня Anakena."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q484376",
+      "reason": "Anakena — пляж и археологический участок Рапа-Нуи с Ahu Nau Nau; не винодельня Anakena."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Anakena",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-27.073888888889,-109.32277777778]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/anakena-beach/",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Anakena — пляж и археологический участок Рапа-Нуи с Ahu Nau Nau; не винодельня Anakena."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/anakena-beach.md",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q484376",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Anakena — пляж и археологический участок Рапа-Нуи с Ahu Nau Nau; не винодельня Anakena."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q484376",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q484376",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q484376",
+      "checkedAt": "2026-10-17T08:14:10.654Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q484376",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Anakena"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -27.073888888889,
+    "longitude": -109.32277777778,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q484376"
+  },
+  "reviewNote": null
+}

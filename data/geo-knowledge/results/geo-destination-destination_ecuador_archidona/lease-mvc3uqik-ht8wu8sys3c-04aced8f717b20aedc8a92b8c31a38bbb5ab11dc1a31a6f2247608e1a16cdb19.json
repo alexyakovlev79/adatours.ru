@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_archidona",
+  "stableId": "destination_ecuador_archidona",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/archidona/",
+  "sourceFingerprint": "64ca4d9e969ea7cc240be00cca8ec32ce0a58fadc28278e354a691a380be6916",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q4786593"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/archidona/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4786593",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4786593",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4786593",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Archidona town, Napo, Ecuador",
+      "reason": "Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q4786593",
+      "reason": "Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.9095,-77.80771944444444",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Town in Napo Province in Ecuadorian Amazon approach, matching MD; not Spanish municipality Q920126 or Archidona Canton Q2448757."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.9095,
+    "longitude": -77.80771944444444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4786593"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guyana_savanny_rupununi",
+  "stableId": "destination_guyana_savanny_rupununi",
+  "kind": "destination",
+  "canonicalPath": "/guyana/place/rupununi-savannahs/",
+  "sourceFingerprint": "64484e881ef2e944b05331411feb662b77a695f725403bf75faea45c4f13a406",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "savanna",
+  "external": {
+    "wikidataQid": "Q3101238",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Rupununi_savannah"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guyana"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство.",
+      "selected": "savanna"
+    },
+    {
+      "field": "relationships.country_guyana",
+      "probability": 99,
+      "reason": "Страна из текущего MD согласуется с внешними географическими источниками.",
+      "selected": "country_guyana"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство.",
+      "selected": "Q3101238"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство.",
+      "selected": "https://en.wikipedia.org/wiki/Rupununi_savannah"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "P625 и Wikipedia указывают 2°45′N 59°45′W. Representative для протяженной саванны, не точный центр и не место входа.",
+      "selected": "2.75, -59.75"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guyana/place/rupununi-savannahs/",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прямой HTTP-запрос: 200; H1 совпадает, canonical точный, noindex отсутствует. Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/savanny-rupununi.md",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Прочитаны MD и точная source-index entry; проверены stable ID, status: approved, countryId и смысл страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3101238",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3101238",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство."
+    },
+    {
+      "field": "relationships.country_guyana",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rupununi_savannah",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Источник географически помещает выбранный объект в country_guyana."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3101238",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rupununi_savannah",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Точная статья о выбранном референте. Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3101238",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "P625 и Wikipedia указывают 2°45′N 59°45′W. Representative для протяженной саванны, не точный центр и не место входа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rupununi_savannah",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "P625 и Wikipedia указывают 2°45′N 59°45′W. Representative для протяженной саванны, не точный центр и не место входа."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://guyanatourism.com/nature-and-wildlife/",
+      "checkedAt": "2026-10-17T06:46:55.010Z",
+      "note": "Саванны Рупунуни в Upper Takutu-Upper Essequibo, юго-запад Гайаны; не отдельная река Rupununi и не все одноименное административно-туристическое пространство."
+    }
+  ],
+  "reviewNote": "В английском описании Q3101238 ошибочно написано Venezuela. P17=Guyana, P131=Upper Takutu-Upper Essequibo, точная Wikipedia и Guyana Tourism подтверждают Гайану. Ошибка описания не перенесена в паспорт.",
+  "location": {
+    "latitude": 2.75,
+    "longitude": -59.75,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3101238"
+  }
+}

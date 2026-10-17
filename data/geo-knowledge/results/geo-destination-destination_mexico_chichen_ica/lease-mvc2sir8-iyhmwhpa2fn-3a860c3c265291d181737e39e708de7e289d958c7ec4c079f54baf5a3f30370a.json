@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_chichen_ica",
+  "stableId": "destination_mexico_chichen_ica",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/chichen-itza/",
+  "sourceFingerprint": "d652aec46897b15dcd47e4623c080abe8abd6c302258e21588a14102d8fb0273",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Place",
+  "external": {
+    "wikidataQid": "Q5859",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chichen_Itza"
+    },
+    "officialUrl": "https://lugares.inah.gob.mx/es/node/4335",
+    "unescoSiteIds": [
+      "483"
+    ]
+  },
+  "location": {
+    "latitude": 20.683055555556,
+    "longitude": -88.568611111111,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5859"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/chichen-itza.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Именно доиспанский город и археологический комплекс Chichén Itzá в Yucatán, Mexico. Текст MD описывает единый узнаваемый объект, несмотря на destinationType:route_cluster. Не отдельная пирамида El Castillo Q1128327, не Sacred Cenote и не аэропорт."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/chichen-itza/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4335",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Именно доиспанский город и археологический комплекс Chichén Itzá в Yucatán, Mexico. Текст MD описывает единый узнаваемый объект, несмотря на destinationType:route_cluster. Не отдельная пирамида El Castillo Q1128327, не Sacred Cenote и не аэропорт."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4335",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Именно доиспанский город и археологический комплекс Chichén Itzá в Yucatán, Mexico. Текст MD описывает единый узнаваемый объект, несмотря на destinationType:route_cluster. Не отдельная пирамида El Castillo Q1128327, не Sacred Cenote и не аэропорт."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4335",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5859",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "P625 целой археологической зоны как representative; без подмены входом или центром одной пирамиды."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5859",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены QID,P31,P17,P131,P625 и sitelinks. Именно доиспанский город и археологический комплекс Chichén Itzá в Yucatán, Mexico. Текст MD описывает единый узнаваемый объект, несмотря на destinationType:route_cluster. Не отдельная пирамида El Castillo Q1128327, не Sacred Cenote и не аэропорт."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chichen_Itza",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точная EN-статья о выбранном объекте соответствует sitelink Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/4335",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Официальный сайт святилища либо точная страница археологического объекта у управляющего INAH."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/node/6131",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Дополнительный источник подтверждает объект и позволяет различить соседние/составные референты."
+    },
+    {
+      "field": "external.unescoSiteIds",
+      "sourceUrl": "https://whc.unesco.org/en/list/483/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверена запись483 Pre-Hispanic City of Chichen-Itza — тот же археологический комплекс."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "В MD задан route_cluster, но именованный и содержательный референт — единый археологический комплекс. UNESCO483 проверен непосредственно по реестру.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Чичен-Ица",
+      "reason": "Именно доиспанский город и археологический комплекс Chichén Itzá в Yucatán, Mexico. Текст MD описывает единый узнаваемый объект, несмотря на destinationType:route_cluster. Не отдельная пирамида El Castillo Q1128327, не Sacred Cenote и не аэропорт."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "Place",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "20.683055555556, -88.568611111111",
+      "reason": "P625 целой археологической зоны как representative; без подмены входом или центром одной пирамиды."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 100,
+      "selected": "Q5859",
+      "reason": "Именно доиспанский город и археологический комплекс Chichén Itzá в Yucatán, Mexico. Текст MD описывает единый узнаваемый объект, несмотря на destinationType:route_cluster. Не отдельная пирамида El Castillo Q1128327, не Sacred Cenote и не аэропорт."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 100,
+      "selected": "https://en.wikipedia.org/wiki/Chichen_Itza",
+      "reason": "Именно доиспанский город и археологический комплекс Chichén Itzá в Yucatán, Mexico. Текст MD описывает единый узнаваемый объект, несмотря на destinationType:route_cluster. Не отдельная пирамида El Castillo Q1128327, не Sacred Cenote и не аэропорт."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://lugares.inah.gob.mx/es/node/4335",
+      "reason": "Официальный источник именно выбранного объекта."
+    },
+    {
+      "field": "external.unescoSiteIds",
+      "probability": 99,
+      "selected": "483",
+      "reason": "Точное название и география объекта в реестре UNESCO."
+    }
+  ]
+}

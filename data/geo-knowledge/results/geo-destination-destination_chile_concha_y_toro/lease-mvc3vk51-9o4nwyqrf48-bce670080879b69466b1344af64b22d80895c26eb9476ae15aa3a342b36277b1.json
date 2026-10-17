@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_concha_y_toro",
+  "stableId": "destination_chile_concha_y_toro",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/concha-y-toro/",
+  "sourceFingerprint": "5d470b5e22cb30db8ef275229e82df3a88f0c9894b1b480dffb26fc8d498daf8",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://enoturismo.conchaytoro.com/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://enoturismo.conchaytoro.com/en/how-to-get-here/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Посетительская усадьба Viña Concha y Toro в Pirque; официальный адрес Av. Virginia Subercaseaux 210, Maipo Valley, Chile."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/concha-y-toro.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/concha-y-toro/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://enoturismo.conchaytoro.com/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Посетительская усадьба Viña Concha y Toro в Pirque; официальный адрес Av. Virginia Subercaseaux 210, Maipo Valley, Chile."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/28405576",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Опорная точка объекта Viña Concha y Toro в Pirque из карточки GeoNames, отображенной Mapcarta; не юридический адрес компании."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://enoturismo.conchaytoro.com/en/how-to-get-here/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "reason": "Посетительская усадьба Viña Concha y Toro в Pirque; официальный адрес Av. Virginia Subercaseaux 210, Maipo Valley, Chile.",
+      "selected": "Винодельня Конча-и-Торо"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "reason": "Посетительская усадьба Viña Concha y Toro в Pirque; официальный адрес Av. Virginia Subercaseaux 210, Maipo Valley, Chile.",
+      "selected": "https://enoturismo.conchaytoro.com/"
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "reason": "Опорная точка объекта Viña Concha y Toro в Pirque из карточки GeoNames, отображенной Mapcarta; не юридический адрес компании.",
+      "selected": "[-33.63792,-70.58372]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "QID всей международной винной компании не присвоен отдельной усадьбе/центру. Отдельные ресторан, парковка и компания не склеены.",
+  "location": {
+    "latitude": -33.63792,
+    "longitude": -70.58372,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/28405576"
+  }
+}

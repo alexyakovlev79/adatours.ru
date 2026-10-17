@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_zaliv_fonseka_salvador",
+  "stableId": "destination_el_salvador_zaliv_fonseka_salvador",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/gulf-of-fonseca/",
+  "sourceFingerprint": "8f3bdffdc12b4bab7effc07253f75f25ad854dfe6293be1d41cd7db410164f7f",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q933264"
+  },
+  "relationships": [
+    {
+      "type": "relatedPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/gulf-of-fonseca/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Page is the El Salvador travel perspective on the named Gulf of Fonseca. Main natural referent is the shared Pacific gulf between El Salvador, Honduras and Nicaragua, not a country-exclusive bay."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://elsalvador.travel/esp/golfo-de-fonseca/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Page is the El Salvador travel perspective on the named Gulf of Fonseca. Main natural referent is the shared Pacific gulf between El Salvador, Honduras and Nicaragua, not a country-exclusive bay."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://elsalvador.travel/esp/golfo-de-fonseca/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "La Union is the Salvadoran shore/access sector of this transboundary gulf; no exclusive containment of the whole gulf asserted."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q933264",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Page is the El Salvador travel perspective on the named Gulf of Fonseca. Main natural referent is the shared Pacific gulf between El Salvador, Honduras and Nicaragua, not a country-exclusive bay."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Залив Фонсека (Сальвадор)",
+      "reason": "Page is the El Salvador travel perspective on the named Gulf of Fonseca. Main natural referent is the shared Pacific gulf between El Salvador, Honduras and Nicaragua, not a country-exclusive bay."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "La Union is the Salvadoran shore/access sector of this transboundary gulf; no exclusive containment of the whole gulf asserted."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 85,
+      "selected": "Q933264",
+      "reason": "Page is the El Salvador travel perspective on the named Gulf of Fonseca. Main natural referent is the shared Pacific gulf between El Salvador, Honduras and Nicaragua, not a country-exclusive bay."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Whole-gulf central coordinate would not identify the Salvadoran shore excursion area; no independently fixed shore reference point."
+    }
+  ],
+  "reviewNote": "Transboundary shared natural referent; retain country-specific stable ID and URL. Whole-gulf sameAs does not imply the gulf belongs only to El Salvador."
+}

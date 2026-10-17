@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_panama_rainforest_discovery_center",
+  "stableId": "destination_panama_panama_rainforest_discovery_center",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/panama-rainforest-discovery-center/",
+  "sourceFingerprint": "c62d7879170cca69e74eda5d132465be64c7139ff22e0f185324b2bbb29b2ea4",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Центр изучения тропического леса Панамы",
+      "reason": "Panama Rainforest Discovery Center у Pipeline Road, башня над лесом и природное образование совпадают с официальным описанием."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://pipelineroad.org/en/",
+      "reason": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "9179810",
+      "reason": "Panama Rainforest Discovery Center у Pipeline Road, башня над лесом и природное образование совпадают с официальным описанием."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "[9.13189,-79.72437]",
+      "reason": "Точная карточка GeoNames 9179810 в Колоне у Гамбоа; официальный сайт подтверждает положение у Pipeline Road."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/panama-rainforest-discovery-center/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Panama Rainforest Discovery Center у Pipeline Road, башня над лесом и природное образование совпадают с официальным описанием."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/panama-rainforest-discovery-center.md",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://pipelineroad.org/en/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Собственный официальный сайт объекта, название и функции соответствуют MD."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/9179810/panama-rainforest-discovery-center.html",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Panama Rainforest Discovery Center у Pipeline Road, башня над лесом и природное образование совпадают с официальным описанием."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/9179810/panama-rainforest-discovery-center.html",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Точная карточка GeoNames 9179810 в Колоне у Гамбоа; официальный сайт подтверждает положение у Pipeline Road."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://pipelineroad.org/en/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "officialUrl": "https://pipelineroad.org/en/",
+    "geonamesId": "9179810"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "location": {
+    "latitude": 9.13189,
+    "longitude": -79.72437,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/9179810/panama-rainforest-discovery-center.html"
+  },
+  "reviewNote": "Wikidata QID не найден; координаты офисного адреса в Panama City отвергнуты."
+}

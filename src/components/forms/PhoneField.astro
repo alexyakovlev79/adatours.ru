@@ -409,7 +409,9 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     cursor: pointer;
   }
 
-  .phone-field__flag-wrap {
+  /* Flags inside the country list are inserted by JS without Astro scope attributes.
+     Anchor their styles to the server-rendered field instead. */
+  .phone-field :global(.phone-field__flag-wrap) {
     position: relative;
     display: grid;
     width: 24px;
@@ -419,18 +421,18 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     overflow: hidden;
   }
 
-  .phone-field__flag-fallback,
-  .phone-field__flag {
+  .phone-field :global(.phone-field__flag-fallback),
+  .phone-field :global(.phone-field__flag) {
     grid-area: 1 / 1;
   }
 
-  .phone-field__flag-fallback {
+  .phone-field :global(.phone-field__flag-fallback) {
     font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
     font-size: 18px;
     line-height: 1;
   }
 
-  .phone-field__flag {
+  .phone-field :global(.phone-field__flag) {
     display: block;
     width: 24px;
     height: 18px;
@@ -439,7 +441,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     background: #fff;
   }
 
-  .phone-field__flag[hidden] {
+  .phone-field :global(.phone-field__flag[hidden]) {
     display: none;
   }
 
@@ -490,7 +492,8 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     display: block;
   }
 
-  .phone-field__option {
+  /* Keep dynamic <button> options styled as full-width list rows (also in the modal). */
+  .phone-field__menu :global(.phone-field__option) {
     display: grid;
     grid-template-columns: 24px minmax(0, 1fr) auto;
     gap: 11px;
@@ -508,26 +511,26 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     line-height: 1.35;
   }
 
-  .phone-field__option:last-child {
+  .phone-field__menu :global(.phone-field__option:last-child) {
     border-bottom: 0;
   }
 
-  .phone-field__option:hover,
-  .phone-field__option:focus-visible {
+  .phone-field__menu :global(.phone-field__option:hover),
+  .phone-field__menu :global(.phone-field__option:focus-visible) {
     background: #f7f3ec;
   }
 
-  .phone-field__option .phone-field__flag {
+  .phone-field__menu :global(.phone-field__option .phone-field__flag) {
     border-color: rgba(0,0,0,.1);
   }
 
-  .phone-field__country-name {
+  .phone-field__menu :global(.phone-field__country-name) {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  .phone-field__option-code {
+  .phone-field__menu :global(.phone-field__option-code) {
     color: #6f6a62;
     font-weight: 600;
     white-space: nowrap;

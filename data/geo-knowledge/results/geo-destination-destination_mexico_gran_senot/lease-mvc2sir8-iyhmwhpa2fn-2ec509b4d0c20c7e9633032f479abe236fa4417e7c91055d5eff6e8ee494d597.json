@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_gran_senot",
+  "stableId": "destination_mexico_gran_senot",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/gran-cenote/",
+  "sourceFingerprint": "10c46b92851a8fce30fa8d80006e496eb7891ede6ab28e739b1aa2a321a0a451",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Landform",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 976101133
+    }
+  },
+  "location": {
+    "latitude": 20.2465584,
+    "longitude": -87.4641049,
+    "pointRole": "entrance",
+    "coordinateSource": "https://www.openstreetmap.org/node/976101133"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/gran-cenote.md",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверены approved MD, stableID, canonicalPath, страна и основной смысл страницы. Именно Gran Cenote / Grand Cenote на дороге Tulum–Cobá, Quintana Roo: открытый сенот и пещерные участки туристического объекта. Это не вся подземная система Sac Actun и не одноименный водоем южнее Tulum. OSM node976101133 именован Gran Cenote и имеет natural=cave_entrance,tourism=attraction."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/gran-cenote/",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Точный production HTML: HTTP200, ожидаемые H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://caribemexicano.travel/destinos/tulum",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Именно Gran Cenote / Grand Cenote на дороге Tulum–Cobá, Quintana Roo: открытый сенот и пещерные участки туристического объекта. Это не вся подземная система Sac Actun и не одноименный водоем южнее Tulum. OSM node976101133 именован Gran Cenote и имеет natural=cave_entrance,tourism=attraction."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://caribemexicano.travel/destinos/tulum",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Класс основного именованного референта установлен по содержанию источника. Именно Gran Cenote / Grand Cenote на дороге Tulum–Cobá, Quintana Roo: открытый сенот и пещерные участки туристического объекта. Это не вся подземная система Sac Actun и не одноименный водоем южнее Tulum. OSM node976101133 именован Gran Cenote и имеет natural=cave_entrance,tourism=attraction."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://caribemexicano.travel/destinos/tulum",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Источник размещает объект в Мексике; countryId текущего MD — country_mexico."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/976101133",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Первичный OSM XML node976101133 (version9,2025-01-09) прочитан напрямую: lat20.2465584,lon-87.4641049,name:en=Gran Cenote,name:es=Gran Cenote,natural=cave_entrance. Принята точка входа в сенот/пещеру, не парковка, не весь контур подземной системы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290344",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Проверен и исключен кандидат Sistema Sac Actun: вся пещерная система не идентична одному туристическому сеноту."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/976101133",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Именованный первичный OSM-объект проверен напрямую; Первичный OSM XML node976101133 (version9,2025-01-09) прочитан напрямую: lat20.2465584,lon-87.4641049,name:en=Gran Cenote,name:es=Gran Cenote,natural=cave_entrance. Принята точка входа в сенот/пещеру, не парковка, не весь контур подземной системы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/N976101133",
+      "checkedAt": "2026-10-17T07:32:44.815Z",
+      "note": "Дополнительный источник подтверждает объект и позволяет различить соседние/составные референты."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Тег wikidata=Q2290344 в OSM отклонен: проверенная карточка относится ко всей Sistema Sac Actun. Для отдельного Gran Cenote точный QID не установлен; оставлены точный OSM node и координаты входа.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Гран-Сенот",
+      "reason": "Именно Gran Cenote / Grand Cenote на дороге Tulum–Cobá, Quintana Roo: открытый сенот и пещерные участки туристического объекта. Это не вся подземная система Sac Actun и не одноименный водоем южнее Tulum. OSM node976101133 именован Gran Cenote и имеет natural=cave_entrance,tourism=attraction."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "Landform",
+      "reason": "Тип соответствует фактическому основному объекту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна совпадает в исходном MD и точном внешнем источнике."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "20.2465584, -87.4641049",
+      "reason": "Первичный OSM XML node976101133 (version9,2025-01-09) прочитан напрямую: lat20.2465584,lon-87.4641049,name:en=Gran Cenote,name:es=Gran Cenote,natural=cave_entrance. Принята точка входа в сенот/пещеру, не парковка, не весь контур подземной системы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 20,
+      "reason": "Q2290344 из OSM относится к более крупной системе Sac Actun, соответствие отдельному Gran Cenote ниже70%; точный самостоятельный QID не подтвержден."
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "selected": "node/976101133",
+      "reason": "Точный именованный вход Gran Cenote с совпадающей географией; более широкий Wikidata-тег не переносится."
+    }
+  ]
+}

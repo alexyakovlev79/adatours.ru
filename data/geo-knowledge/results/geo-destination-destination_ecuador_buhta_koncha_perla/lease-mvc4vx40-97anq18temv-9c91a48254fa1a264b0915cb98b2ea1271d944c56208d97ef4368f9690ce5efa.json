@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_buhta_koncha_perla",
+  "stableId": "destination_ecuador_buhta_koncha_perla",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/concha-de-perla/",
+  "sourceFingerprint": "a839e12198172a38cab73faf25189b734551b34f20d159c113ea0758b83aa63b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 2700207597
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Бухта Конча-Перла",
+      "reason": "Concha de Perla — бухта у Puerto Villamil на Исабеле. Выбрана точная OSM-карточка natural=bay; соседние узлы туристического объекта и тропы не присваиваются бухте."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/2700207597",
+      "reason": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.9623371, -90.9570031",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/concha-de-perla.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Concha de Perla — бухта у Puerto Villamil на Исабеле. Выбрана точная OSM-карточка natural=bay; соседние узлы туристического объекта и тропы не присваиваются бухте."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/concha-de-perla/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/2700207597",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Точный OSM объект нужной географической сущности, без подмены соседней достопримечательностью."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/2700207597",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/concha-de-perla.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.9623371,
+    "longitude": -90.9570031,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.openstreetmap.org/node/2700207597"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_chiloe_island",
+  "stableId": "destination_chile_chiloe_island",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/chiloe-island/",
+  "sourceFingerprint": "3df274b93a42603ea38b3cb50db3189d478dd1c9cae9196a690e293cc5fc8f8f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Остров Чилоэ",
+      "reason": "Чилоэ — Isla Grande de Chiloé, главный остров у материка через Чакао. MD и заголовок посвящены острову, не всему архипелагу Q177608 и не национальному парку."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q504449",
+      "reason": "Чилоэ — Isla Grande de Chiloé, главный остров у материка через Чакао. MD и заголовок посвящены острову, не всему архипелагу Q177608 и не национальному парку."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-42.676666666667,-73.993333333333",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3895071",
+      "reason": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"relation\",\"id\":2711509}",
+      "reason": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Chilo%C3%A9_Island",
+      "reason": "Exact English sitelink of the checked Wikidata referent."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/chiloe-island.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Чилоэ — Isla Grande de Chiloé, главный остров у материка через Чакао. MD и заголовок посвящены острову, не всему архипелагу Q177608 и не национальному парку."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q504449",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Чилоэ — Isla Grande de Chiloé, главный остров у материка через Чакао. MD и заголовок посвящены острову, не всему архипелагу Q177608 и не национальному парку."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q504449",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Чилоэ — Isla Grande de Chiloé, главный остров у материка через Чакао. MD и заголовок посвящены острову, не всему архипелагу Q177608 и не национальному парку."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q504449",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q504449",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q504449",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "P1566 exact primary referent; Wikidata API read with identity labels and geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q504449",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact identifier for the selected geographical referent; not a tour product."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q504449",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Exact English sitelink of the checked Wikidata referent."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/chiloe-island/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q504449",
+    "geonamesId": "3895071",
+    "osm": {
+      "type": "relation",
+      "id": 2711509
+    },
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chilo%C3%A9_Island"
+    }
+  },
+  "location": {
+    "latitude": -42.676666666667,
+    "longitude": -73.993333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q504449"
+  }
+}

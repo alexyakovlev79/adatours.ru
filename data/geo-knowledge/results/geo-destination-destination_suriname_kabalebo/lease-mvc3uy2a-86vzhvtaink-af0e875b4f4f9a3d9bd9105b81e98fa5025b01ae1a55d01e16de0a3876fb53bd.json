@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_kabalebo",
+  "stableId": "destination_suriname_kabalebo",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/kabalebo/",
+  "sourceFingerprint": "546bc27fe23607e05a810e44975237fac8274dca111e68720277d0eef2ccf2a5",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 87,
+      "selected": "Кабалебо",
+      "reason": "Основной референт MD — лесной и речной район Kabalebo, destinationType region. Наиболее вероятное соответствие — одноимённый ressort Sipaliwini вокруг реки, а не отдельный отель."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_suriname"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 85,
+      "reason": "Территориальный район Kabalebo в Sipaliwini, соответствует смыслу region.",
+      "selected": "Q2359770"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 85,
+      "reason": "Статья административного/географического района, описывающая лесную туристическую зону.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Kabalebo\"}"
+    },
+    {
+      "field": "location",
+      "probability": 80,
+      "reason": "Опорная точка района в текущей статье; не геометрический центр и не адрес отеля.",
+      "selected": "4.43889,-57.18722"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/kabalebo/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Основной референт MD — лесной и речной район Kabalebo, destinationType region. Наиболее вероятное соответствие — одноимённый ressort Sipaliwini вокруг реки, а не отдельный отель."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://adatours.ru/suriname/place/kabalebo/",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2359770",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Территориальный район Kabalebo в Sipaliwini, соответствует смыслу region."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kabalebo",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Статья административного/географического района, описывающая лесную туристическую зону."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Kabalebo",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Опорная точка района в текущей статье; не геометрический центр и не адрес отеля."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2359770",
+      "checkedAt": "2026-10-17T08:04:58.932Z",
+      "note": "Основной референт MD — лесной и речной район Kabalebo, destinationType region. Наиболее вероятное соответствие — одноимённый ressort Sipaliwini вокруг реки, а не отдельный отель."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2359770",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Kabalebo"
+    }
+  },
+  "location": {
+    "latitude": 4.43889,
+    "longitude": -57.18722,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Kabalebo"
+  },
+  "reviewNote": "Официальный сайт kabalebo.com подтверждает туристическую деятельность в этой лесной зоне, но не используется как sameAs всего района."
+}

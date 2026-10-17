@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_puebla_santo_domingo_rosary_chapel",
+  "stableId": "destination_mexico_puebla_santo_domingo_rosary_chapel",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/puebla-santo-domingo-rosary-chapel/",
+  "sourceFingerprint": "9de7c4d418ec8872b1c1b4dafa806ed68c9d0a8a248f653f2e9d29373c744a9a",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "chapel",
+  "external": {
+    "wikidataQid": "Q5748455",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chapel_of_the_Rosario%2C_Puebla",
+      "es": "https://es.wikipedia.org/wiki/Capilla_del_Rosario_(Puebla)"
+    },
+    "osm": {
+      "type": "way",
+      "id": 993724155
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/puebla-santo-domingo-rosary-chapel/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/pagina-de-elemento/2982",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Главный референт текста — часовня Розария внутри Санто-Доминго: всё описание посвящено её интерьеру и открытию в 1690 году. Выбран Q5748455 часовни, не Q5117179 всего храма. OSM building=chapel с этим QID и Wikimedia Commons подтверждают соответствие; standalone Wikidata URL не загрузился."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/pagina-de-elemento/2982",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип chapel соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://lugares.inah.gob.mx/es/pagina-de-elemento/2982",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/993724155/full.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Главный референт текста — часовня Розария внутри Санто-Доминго: всё описание посвящено её интерьеру и открытию в 1690 году. Выбран Q5748455 часовни, не Q5117179 всего храма. OSM building=chapel с этим QID и Wikimedia Commons подтверждают соответствие; standalone Wikidata URL не загрузился."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chapel_of_the_Rosario,_Puebla",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные EN/ES страницы названного памятника; проверены sitelinks или сама статья."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/993724155/full.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Проверен первичный OSM API: {\"addr:city\":\"Puebla\",\"addr:neighbourhood\":\"Centro Histórico\",\"addr:postcode\":\"72000\",\"addr:state\":\"Puebla\",\"addr:street\":\"Ciclovía 4 Oriente\",\"building\":\"chapel\",\"check_date\":\"2026-01-11\",\"denomination\":\"roman_catholic\",\"name\":\"Capilla del Rosario\",\"wikidata\":\"Q5748455\",\"wikimedia_commons\":\"File:Capilla del Rosario Puebla Diciembre 2015.jpg\",\"wikipedia\":\"es:Capilla del Rosario (Puebla)\"}"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/993724155/full.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Репрезентативная точка внутри подтверждённого OSM-полигона: геометрический центр bounding box. Это не усреднение координат независимых сущностей."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Q5748455",
+      "reason": "Главный референт текста — часовня Розария внутри Санто-Доминго: всё описание посвящено её интерьеру и открытию в 1690 году. Выбран Q5748455 часовни, не Q5117179 всего храма. OSM building=chapel с этим QID и Wikimedia Commons подтверждают соответствие; standalone Wikidata URL не загрузился."
+    },
+    {
+      "field": "entityClass",
+      "probability": 94,
+      "selected": "chapel",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q5748455",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Chapel_of_the_Rosario,_Puebla; es:Capilla_del_Rosario_(Puebla)",
+      "reason": "Точное название, география и тип памятника совпадают."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "way/993724155",
+      "reason": "Тип, собственное имя и положение соответствуют выбранному объекту. "
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.0465555, -98.19830205",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль representative."
+    }
+  ],
+  "reviewNote": "Главный референт текста — часовня Розария внутри Санто-Доминго: всё описание посвящено её интерьеру и открытию в 1690 году. Выбран Q5748455 часовни, не Q5117179 всего храма. OSM building=chapel с этим QID и Wikimedia Commons подтверждают соответствие; standalone Wikidata URL не загрузился.",
+  "location": {
+    "latitude": 19.0465555,
+    "longitude": -98.19830205,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/way/993724155/full.json"
+  }
+}

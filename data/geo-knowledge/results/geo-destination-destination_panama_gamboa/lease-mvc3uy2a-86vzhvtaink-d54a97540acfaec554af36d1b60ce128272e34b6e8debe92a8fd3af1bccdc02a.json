@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_gamboa",
+  "stableId": "destination_panama_gamboa",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/gamboa/",
+  "sourceFingerprint": "a0f4d9c28222802c329398420a9d1bc0307b2d23db33a9c4707b7681f241708b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Гамбоа",
+      "reason": "Поселение Gamboa у слияния Чагрес с каналом; курорт в тексте вторичен, не заменяет город."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка поселения Панамы.",
+      "selected": "Q5519723"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames PPL Gamboa в Панаме.",
+      "selected": "3709373"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink поселения.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Gamboa,_Panama\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка населённого пункта GeoNames, не отеля.",
+      "selected": "9.11697,-79.70105"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/gamboa/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Поселение Gamboa у слияния Чагрес с каналом; курорт в тексте вторичен, не заменяет город."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/gamboa/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5519723",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точная карточка поселения Панамы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3709373/gamboa.html",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "GeoNames PPL Gamboa в Панаме."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5519723",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Sitelink поселения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3709373/gamboa.html",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точка населённого пункта GeoNames, не отеля."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q5519723",
+    "geonamesId": "3709373",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Gamboa,_Panama"
+    }
+  },
+  "location": {
+    "latitude": 9.11697,
+    "longitude": -79.70105,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3709373/gamboa.html"
+  }
+}

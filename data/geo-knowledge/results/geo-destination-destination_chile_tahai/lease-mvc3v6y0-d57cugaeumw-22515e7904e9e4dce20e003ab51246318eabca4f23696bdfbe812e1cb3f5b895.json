@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_tahai",
+  "stableId": "destination_chile_tahai",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/tahai/",
+  "sourceFingerprint": "3c312b80b1088825cbb17a1adcb3ed8d48a13abbc366970ef006c2d6d624d786",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Тахаи",
+      "reason": "Комплекс Tahai на западном побережье Рапа-Нуи, объединяет три ahu; не одиночная платформа Ahu Tahai."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q3504489",
+      "reason": "Комплекс Tahai на западном побережье Рапа-Нуи, объединяет три ahu; не одиночная платформа Ahu Tahai."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Tahai",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-27.1402,-109.4271]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/tahai/",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Комплекс Tahai на западном побережье Рапа-Нуи, объединяет три ahu; не одиночная платформа Ahu Tahai."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/tahai.md",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3504489",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Комплекс Tahai на западном побережье Рапа-Нуи, объединяет три ahu; не одиночная платформа Ahu Tahai."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3504489",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3504489",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3504489",
+      "checkedAt": "2026-10-17T08:14:10.655Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3504489",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tahai"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -27.1402,
+    "longitude": -109.4271,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3504489"
+  },
+  "reviewNote": "destinationType natural_area в MD не меняет установленную археологическую идентичность."
+}

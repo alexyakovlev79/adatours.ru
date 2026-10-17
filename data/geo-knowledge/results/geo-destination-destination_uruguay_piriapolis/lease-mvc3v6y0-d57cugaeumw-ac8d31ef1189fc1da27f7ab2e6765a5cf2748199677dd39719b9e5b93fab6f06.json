@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_piriapolis",
+  "stableId": "destination_uruguay_piriapolis",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/piriapolis/",
+  "sourceFingerprint": "6209fc83f570a38f9cdf6ef09af4583d1b1b9de29c97defb95703a7648380550",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пириаполис",
+      "reason": "Piriápolis — прибрежный город с Argentino Hotel и Cerro San Antonio; не одноимённый муниципалитет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1006155",
+      "reason": "Piriápolis — прибрежный город с Argentino Hotel и Cerro San Antonio; не одноимённый муниципалитет."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Piri%C3%A1polis",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3441074",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-34.866111111111,-55.274722222222]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 99,
+      "selected": "country_uruguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/uruguay/place/piriapolis/",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Piriápolis — прибрежный город с Argentino Hotel и Cerro San Antonio; не одноимённый муниципалитет."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/piriapolis.md",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1006155",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Piriápolis — прибрежный город с Argentino Hotel и Cerro San Antonio; не одноимённый муниципалитет."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1006155",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1006155",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1006155",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1006155",
+      "checkedAt": "2026-10-17T08:06:11.303Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1006155",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Piri%C3%A1polis"
+    },
+    "geonamesId": "3441074"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "location": {
+    "latitude": -34.866111111111,
+    "longitude": -55.274722222222,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1006155"
+  },
+  "reviewNote": null
+}

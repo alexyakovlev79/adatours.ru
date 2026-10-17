@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_dolina_majpo",
+  "stableId": "destination_chile_dolina_majpo",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/maipo-valley/",
+  "sourceFingerprint": "e77b8f8b4f2eabc7ff65dac84ba69be444e88cba8f2d2a86095d742f5e55e40a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://chile.travel/en/attractions/maipo-valley/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Официальный турпортал Чили подтверждает винодельческую долину Maipo рядом с Сантьяго; это туристический винный район."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/maipo-valley.md",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/maipo-valley/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://chile.travel/en/attractions/maipo-valley/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "reason": "Официальный турпортал Чили подтверждает винодельческую долину Maipo рядом с Сантьяго; это туристический винный район.",
+      "selected": "Долина Майпо"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Не использованы QID реки Maipo, провинции Maipo и Cajón del Maipo: границы и смысл отличаются. Точная идентичность винного региона подтверждена без них."
+}

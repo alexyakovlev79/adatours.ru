@@ -13,10 +13,14 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_ecuador_reka_napo
 destinationName: Река Напо
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
 themes: ["theme_wildlife"]
+hero:
+  src: /media/excursions/casa-del-suizo-butterfly-farm/hero-generated-20261018.webp
+  alt: "Голубая бабочка морфо среди тропических растений на ферме у Casa del Suizo"
+  status: approved
 ---

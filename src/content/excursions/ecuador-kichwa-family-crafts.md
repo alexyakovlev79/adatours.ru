@@ -12,12 +12,16 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_ecuador_reka_napo
 destinationName: Река Напо
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
 themes: ["theme_culture","theme_gastronomy_wine"]
+hero:
+  src: /media/excursions/ecuador-kichwa-family-crafts/hero-generated-20261018.webp
+  alt: "Мастерица кичуа вручную создаёт глиняную посуду у реки Напо"
+  status: approved
 ---
 
 Здесь же рассказывают о духовой трубке, которую жители джунглей использовали на охоте. Желающие могут попробовать попасть в цель.

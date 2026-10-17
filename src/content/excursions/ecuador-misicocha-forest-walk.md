@@ -12,13 +12,17 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_ecuador_zapovednik_misikocha
 destinationName: Заповедник Мисикоча
 relatedDestinations: []
 duration: 1–4 часа
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
 themes: ["theme_wildlife","theme_adventure"]
+hero:
+  src: /media/excursions/ecuador-misicocha-forest-walk/hero-generated-20261018.webp
+  alt: "Гид показывает растения тропического леса в заповеднике Мисикоча"
+  status: approved
 ---
 
 Тропы различаются по протяженности и сложности, прогулка может занимать от 1 до 4 часов. Маршрут проходит через ручьи, холмы и выводит к смотровой площадке. Местный гид рассказывает, как индейцы кичуа используют растения тропического леса в быту и традиционной медицине.

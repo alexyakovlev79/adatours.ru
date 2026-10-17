@@ -11,12 +11,16 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_peru_svyaschennaya_dolina_inkov
 destinationName: Священная долина инков
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1BtRjZQrP4rvdwc5mscbeOgdGRzkHCjWx/view?usp=drivesdk
 themes: ["theme_adventure"]
+hero:
+  src: /media/excursions/peru-sacred-valley-zipline/hero-generated-20261018.webp
+  alt: "Спуск по зип-лайну над Священной долиной инков"
+  status: approved
 ---
 
 Участника фиксируют карабином с полной страховкой. Система сама обеспечивает плавную остановку, поэтому вручную тормозить не требуется.

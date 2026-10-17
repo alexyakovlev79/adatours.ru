@@ -12,12 +12,16 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_peru_svyaschennaya_dolina_inkov
 destinationName: Священная долина инков
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1BtRjZQrP4rvdwc5mscbeOgdGRzkHCjWx/view?usp=drivesdk
 themes: ["theme_adventure"]
+hero:
+  src: /media/excursions/peru-sacred-valley-via-ferrata/hero-generated-20261018.webp
+  alt: "Подъём по виа феррата над Священной долиной инков в Перу"
+  status: approved
 ---
 
 Опыт скалолазания не обязателен. Также предусмотрен спуск дюльфером по веревке со страховкой примерно на **100 метров**.

@@ -12,10 +12,14 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_ecuador_mindo
 destinationName: Миндо
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1YmOlpUD9Iuchy4Rkfq4kXeYsK1pRDGsu/view?usp=drivesdk
 themes: ["theme_adventure"]
+hero:
+  src: /media/excursions/ecuador-mindo-river-tubing/hero-generated-20261018.webp
+  alt: "Тюбинг с профессиональным гидом по лесной реке в Миндо"
+  status: approved
 ---

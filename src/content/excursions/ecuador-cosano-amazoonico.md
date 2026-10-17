@@ -12,7 +12,7 @@ route: []
 included: []
 notIncluded: []
 notes: []
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-18'
 destination: destination_ecuador_zapovednik_kosano
 destinationName: Заповедник Косано
 relatedDestinations:
@@ -21,6 +21,10 @@ relatedDestinations:
 duration: 1–3 часа
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
 themes: ["theme_wildlife"]
+hero:
+  src: /media/excursions/ecuador-cosano-amazoonico/hero-generated-20261018.webp
+  alt: "Капуцин в лесном реабилитационном вольере центра Амазонико в Эквадоре"
+  status: approved
 ---
 
 С 2 смотровых площадок открывается вид на деревню Ауано, реку Напо и небольшие притоки. Во время прогулки гид показывает местные растения и объясняет их применение.

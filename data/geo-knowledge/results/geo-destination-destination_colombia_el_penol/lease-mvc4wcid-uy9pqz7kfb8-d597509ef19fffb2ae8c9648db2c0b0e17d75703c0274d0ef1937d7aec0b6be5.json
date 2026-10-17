@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_el_penol",
+  "stableId": "destination_colombia_el_penol",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/el-penol/",
+  "sourceFingerprint": "14e59dc2ba54564ea0d12a17216f34509f80ddf6433b95f3357933dc9be47bd4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.elpenoltravel.com/parque-tematico-replica-del-viejo-penol-360/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Parque Temático Réplica del Viejo Peñol — воссозданная площадь старого поселения в El Peñol, Antioquia, Colombia; точно назван на местном туристическом портале и в муниципальном регламенте. Не современный город El Peñol, не затопленное старое место и не Piedra del Peñol."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/el-penol.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/el-penol/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.elpenoltravel.com/parque-tematico-replica-del-viejo-penol-360/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Parque Temático Réplica del Viejo Peñol — воссозданная площадь старого поселения в El Peñol, Antioquia, Colombia; точно назван на местном туристическом портале и в муниципальном регламенте. Не современный город El Peñol, не затопленное старое место и не Piedra del Peñol. Страна подтверждена источником и исходным MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.elpenol-antioquia.gov.co/Transparencia/PlaneacionGestionyControl/Manual%20de%20Convivencia%20y%20Reglamento%20Interno%20Replica.pdf",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Муниципальный регламент отдельно описывает Parque Temático Réplica Viejo Peñol у водохранилища Peñol–Guatapé."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Реплика старого Эль-Пеньола",
+      "reason": "Parque Temático Réplica del Viejo Peñol — воссозданная площадь старого поселения в El Peñol, Antioquia, Colombia; точно назван на местном туристическом портале и в муниципальном регламенте. Не современный город El Peñol, не затопленное старое место и не Piedra del Peñol."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 98,
+      "selected": "country_colombia",
+      "reason": "Parque Temático Réplica del Viejo Peñol — воссозданная площадь старого поселения в El Peñol, Antioquia, Colombia; точно назван на местном туристическом портале и в муниципальном регламенте. Не современный город El Peñol, не затопленное старое место и не Piedra del Peñol. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точный QID и координата реплики не подтверждены; идентичность города или монолита не присвоена."
+}

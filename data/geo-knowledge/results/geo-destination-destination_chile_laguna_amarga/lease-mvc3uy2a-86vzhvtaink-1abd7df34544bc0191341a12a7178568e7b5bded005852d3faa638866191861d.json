@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_laguna_amarga",
+  "stableId": "destination_chile_laguna_amarga",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/laguna-amarga/",
+  "sourceFingerprint": "bbaa56de5bb0f180a558d06115d97efec7fcf6b04b08b8081bf1004882d5207c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Лагуна Амарга",
+      "reason": "Laguna Amarga в Magallanes возле Torres del Paine, а не одноимённые лагуны Аргентины, смотровая или въездной пост."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка чилийской Laguna Amarga.",
+      "selected": "Q23655284"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID водоёма.",
+      "selected": "3899835"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM natural=water именно лагуны.",
+      "selected": "{\"type\":\"way\",\"id\":23609922}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка водоёма, не Portería Laguna Amarga.",
+      "selected": "-50.97535,-72.74775"
+    },
+    {
+      "field": "relationships.destination_chile_puerto_natales_torres_del_pajne",
+      "probability": 95,
+      "reason": "Лагуна связана с маршрутами по Torres del Paine; точная граница парка не утверждается.",
+      "selected": "destination_chile_puerto_natales_torres_del_pajne"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-amarga/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Laguna Amarga в Magallanes возле Torres del Paine, а не одноимённые лагуны Аргентины, смотровая или въездной пост."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-amarga/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/20145348",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точная карточка чилийской Laguna Amarga."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/20145348",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "GeoNames ID водоёма."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/20145348",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "OSM natural=water именно лагуны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/20145348",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Опорная точка водоёма, не Portería Laguna Amarga."
+    },
+    {
+      "field": "relationships.destination_chile_puerto_natales_torres_del_pajne",
+      "sourceUrl": "https://adatours.ru/chile/place/laguna-amarga/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Лагуна связана с маршрутами по Torres del Paine; точная граница парка не утверждается."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/20145348",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Laguna Amarga в Magallanes возле Torres del Paine, а не одноимённые лагуны Аргентины, смотровая или въездной пост."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_puerto_natales_torres_del_pajne"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q23655284",
+    "geonamesId": "3899835",
+    "osm": {
+      "type": "way",
+      "id": 23609922
+    }
+  },
+  "location": {
+    "latitude": -50.97535,
+    "longitude": -72.74775,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/20145348"
+  }
+}

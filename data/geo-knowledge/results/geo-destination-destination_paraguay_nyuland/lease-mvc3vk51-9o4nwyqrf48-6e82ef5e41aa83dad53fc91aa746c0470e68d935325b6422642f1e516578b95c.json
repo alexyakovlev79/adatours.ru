@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_nyuland",
+  "stableId": "destination_paraguay_nyuland",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/neuland/",
+  "sourceFingerprint": "6d4cb62806c4d3da5bb36f77664b2c56d71c46cfdd71f23e41abaaf1f2069040",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1709409",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Neuland_Colony"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1709409",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Меннонитское поселение Neuland в Boquerón, Парагвай; не муниципальная территория целиком."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/neuland.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/neuland/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1709409",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Меннонитское поселение Neuland в Boquerón, Парагвай; не муниципальная территория целиком."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Neuland_Colony",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Меннонитское поселение Neuland в Boquerón, Парагвай; не муниципальная территория целиком."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Neuland_Colony",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Выбрана точка поселения из enwiki и согласующегося путеводителя. P625 Wikidata западнее, не усреднялся."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1709409",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Меннонитское поселение Neuland в Boquerón, Парагвай; не муниципальная территория целиком.",
+      "selected": "Нюланд"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Меннонитское поселение Neuland в Boquerón, Парагвай; не муниципальная территория целиком.",
+      "selected": "Q1709409"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Меннонитское поселение Neuland в Boquerón, Парагвай; не муниципальная территория целиком.",
+      "selected": "https://en.wikipedia.org/wiki/Neuland_Colony"
+    },
+    {
+      "field": "location",
+      "probability": 85,
+      "reason": "Выбрана точка поселения из enwiki и согласующегося путеводителя. P625 Wikidata западнее, не усреднялся.",
+      "selected": "[-22.64972,-60.13]"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Расхождение координат Wikidata и статьи сохранено; точка относится к поселению.",
+  "location": {
+    "latitude": -22.64972,
+    "longitude": -60.13,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Neuland_Colony"
+  }
+}

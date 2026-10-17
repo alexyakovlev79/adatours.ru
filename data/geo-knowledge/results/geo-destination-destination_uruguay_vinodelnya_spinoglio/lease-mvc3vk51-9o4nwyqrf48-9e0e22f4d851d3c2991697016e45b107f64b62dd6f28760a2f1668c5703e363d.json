@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_vinodelnya_spinoglio",
+  "stableId": "destination_uruguay_vinodelnya_spinoglio",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/spinoglio-winery/",
+  "sourceFingerprint": "14547a0e7d64e1bc52ed195713fc1fa5917b1a5d37ba17e61d31747178dcb418",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "officialUrl": "https://bodegaspinoglio.com/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.inavi.com.uy/bodega/bodega-spinoglio/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "INAVI и собственная история Bodega Spinoglio подтверждают винодельню под Монтевидео, исторический погреб и четвертое поколение семьи."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/spinoglio-winery.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/uruguay/place/spinoglio-winery/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://bodegaspinoglio.com/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "INAVI и собственная история Bodega Spinoglio подтверждают винодельню под Монтевидео, исторический погреб и четвертое поколение семьи."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.inavi.com.uy/bodega/bodega-spinoglio/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "reason": "INAVI и собственная история Bodega Spinoglio подтверждают винодельню под Монтевидео, исторический погреб и четвертое поколение семьи.",
+      "selected": "Винодельня Спиноглио"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "reason": "INAVI и собственная история Bodega Spinoglio подтверждают винодельню под Монтевидео, исторический погреб и четвертое поколение семьи.",
+      "selected": "https://bodegaspinoglio.com/"
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_uruguay"
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Найденный OSM shop=wine может обозначать торговую точку; без подтверждения не используется как точка всего хозяйства."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точка магазина OSM 5469974821 не отождествлена со всей винодельней; координаты без точного подтверждения пропущены."
+}

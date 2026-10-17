@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_leon",
+  "stableId": "destination_nicaragua_leon",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/leon/",
+  "sourceFingerprint": "4945e62d5539f9f0402db3a96d29ae37ecd32669b36e17e0d9cc0a2464d51bfd",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "external": {
+    "wikidataQid": "Q130253115",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Le%C3%B3n%2C_Nicaragua",
+      "es": "https://es.wikipedia.org/wiki/Le%C3%B3n_(Nicaragua)"
+    },
+    "geonamesId": "3618030",
+    "osm": {
+      "type": "node",
+      "id": 293298496
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/leon/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mapanicaragua.com/ciudades-patrimoniales/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Главный референт — современный город Леон, Никарагуа, Q130253115 и GeoNames PPLA 3618030. Старый Леон/León Viejo — отдельный археологический объект. Q208151 сейчас муниципалитет; в OSM city node осталась эта старая Wikidata-ссылка, но имя, тип и точка однозначно соответствуют городу. Сохранён актуальный городской QID; координаты не усреднялись."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.mapanicaragua.com/ciudades-patrimoniales/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип city соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.mapanicaragua.com/ciudades-patrimoniales/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q130253115",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Главный референт — современный город Леон, Никарагуа, Q130253115 и GeoNames PPLA 3618030. Старый Леон/León Viejo — отдельный археологический объект. Q208151 сейчас муниципалитет; в OSM city node осталась эта старая Wikidata-ссылка, но имя, тип и точка однозначно соответствуют городу. Сохранён актуальный городской QID; координаты не усреднялись."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/León,_Nicaragua",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Статья относится к выбранному городу, хотя может включать сведения о муниципалитете. Главный городской референт подтверждён раздельными городскими записями Wikidata и GeoNames."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3618030/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Home › North America › Nicaragua NI › León Department 08 › León 08 León P PPLA Seat of a first-order administrative division · NI Feature Map Hierarchy History Alternate names GeonameId 3618030 Coordinates 12.43527, -86.87862 Move 12°26′06.97″ N, 86°52′43.03″ W Population 144,538 Elevation ca. 94 m ASTER 94 m Timezone America/Managua Sunrise / sunset ‹ 05:37 / 17:27 › today, local time Feature code P PPLA Wikipedia Article Permalink: https://www.geonames.org/3618030/leon.html .kml .rdf geotree maptree Edit Delete this place Administrative hierarchy Parents Children A Nicaragua NI Country A ADM1 León Department 08"
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/293298496.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Проверен первичный OSM API: {\"admin_level\":\"4\",\"capital\":\"4\",\"ele\":\"109.21\",\"name\":\"León\",\"name:hu\":\"León\",\"name:ru\":\"Леон\",\"name:uk\":\"Леон\",\"note\":\"Approximate location and elevation based on satellite imagery (primary BingSat), OpenSRTM and OpenTopo map.\",\"official_name\":\"Santiago de los Caballeros de León\",\"place\":\"city\",\"population\":\"172148\",\"postal_code\":\"21000\",\"source:id\":\"2853iii León - USGS OpenTopo map Series E751 Nicaragua 1:50k Nº E751X2853iii (1971)\",\"source:imagery\":\"BingSat, ESRI, and other open satellite imagery available to OSM as of 2024\",\"source:url\":\"https://maps.lib.utexas.edu/maps/topo/nicaragua/\",\"wikidata\":\"Q208151\",\"wikipedia\":\"es:León (Nicaragua)\"}"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/node/293298496.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Одна проверенная точка основного объекта с ролью settlement_center; альтернативные координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Q130253115",
+      "reason": "Главный референт — современный город Леон, Никарагуа, Q130253115 и GeoNames PPLA 3618030. Старый Леон/León Viejo — отдельный археологический объект. Q208151 сейчас муниципалитет; в OSM city node осталась эта старая Wikidata-ссылка, но имя, тип и точка однозначно соответствуют городу. Сохранён актуальный городской QID; координаты не усреднялись."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "city",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q130253115",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 92,
+      "selected": "en:León,_Nicaragua; es:León_(Nicaragua)",
+      "reason": "Основной городской референт статьи совпадает; муниципальные статистические поля не переносились."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3618030",
+      "reason": "Проверены первичная запись, страна, имя и feature code; административные одноимённые записи исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "node/293298496",
+      "reason": "Тип, собственное имя и положение соответствуют выбранному объекту. Старая ссылка Q208151 в теге не меняет назначение node place=city."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "12.435, -86.8789",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль settlement_center."
+    }
+  ],
+  "reviewNote": "Главный референт — современный город Леон, Никарагуа, Q130253115 и GeoNames PPLA 3618030. Старый Леон/León Viejo — отдельный археологический объект. Q208151 сейчас муниципалитет; в OSM city node осталась эта старая Wikidata-ссылка, но имя, тип и точка однозначно соответствуют городу. Сохранён актуальный городской QID; координаты не усреднялись.",
+  "location": {
+    "latitude": 12.435,
+    "longitude": -86.8789,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/node/293298496.json"
+  }
+}

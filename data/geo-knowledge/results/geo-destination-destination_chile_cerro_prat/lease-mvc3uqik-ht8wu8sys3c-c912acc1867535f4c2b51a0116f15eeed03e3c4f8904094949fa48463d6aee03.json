@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_cerro_prat",
+  "stableId": "destination_chile_cerro_prat",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/cerro-prat/",
+  "sourceFingerprint": "9d8bdae453b9f29932dd6a87276154044f49081453005da058fd8b1e4740ddc7",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/cerro-prat/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Mountaineering source places Cerro Prat in Cordillera Arturo Prat north of Puerto Natales, matching range and transit panorama."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.andeshandbook.org/montanismo/cerro/3517/prat",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Mountaineering source places Cerro Prat in Cordillera Arturo Prat north of Puerto Natales, matching range and transit panorama."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Cordillera Prat near Puerto Natales",
+      "reason": "Mountaineering source places Cerro Prat in Cordillera Arturo Prat north of Puerto Natales, matching range and transit panorama."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Mountaineering source places Cerro Prat in Cordillera Arturo Prat north of Puerto Natales, matching range and transit panorama."
+    },
+    {
+      "field": "location",
+      "probability": 55,
+      "reason": "Targeted search confirmed named destination but no unique representative point; no adjacent-entity coordinate borrowed."
+    }
+  ],
+  "reviewNote": "Primary referent is range. Namesake peaks and summit-only coordinate not substituted."
+}

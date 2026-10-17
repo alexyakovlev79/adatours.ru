@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_dominican_republic_samana",
+  "stableId": "destination_dominican_republic_samana",
+  "kind": "destination",
+  "canonicalPath": "/dominican-republic/place/samana/",
+  "sourceFingerprint": "2b22119ce449a357ec7488d6b8c7266e1bf48ef37cd36409e0ddbf2eb6dab87a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q2279055",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Saman%C3%A1_Peninsula"
+    },
+    "geonamesId": "3493233"
+  },
+  "location": {
+    "latitude": 19.25,
+    "longitude": -69.41667,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/DO.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_dominican_republic"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/samana.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Полуостров Самана на северо-востоке Доминиканы; не город Санта-Барбара-де-Самана, не провинция и не залив."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/dominican-republic/place/samana/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2279055",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q2279055: название, тип, страна P17 Q786 и точный sitelink подтверждают Полуостров Самана на северо-востоке Доминиканы; не город Санта-Барбара-де-Самана, не провинция и не залив. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Saman%C3%A1_Peninsula",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный DO.txt: id 3493233, featureCode PEN; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "19.25, -69.41667; pointRole=representative. GeoNames 3493233 PEN и Q2279055 peninsula совпадают с главным референтом MD; P625 19.250219444444,-69.421233333333 находится примерно в 0.5 км. Опорная точка полуострова, не административный центр. Город GeoNames 3492997 PPLA и провинция исключены."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2279055",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.godominicanrepublic.com/destinations/samana",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Официальный туристический источник подтверждает регион Самана с пляжами, бухтой и природными достопримечательностями; exact identity полуострова задают PEN GeoNames и Q2279055, не административная провинция."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Полуостров Самана на северо-востоке Доминиканы; не город Санта-Барбара-де-Самана, не провинция и не залив."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2279055",
+      "reason": "Q2279055: название, тип, страна P17 Q786 и точный sitelink подтверждают Полуостров Самана на северо-востоке Доминиканы; не город Санта-Барбара-де-Самана, не провинция и не залив. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3493233",
+      "reason": "Первичный DO.txt: id 3493233, featureCode PEN; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "19.25,-69.41667",
+      "reason": "19.25, -69.41667; pointRole=representative. GeoNames 3493233 PEN и Q2279055 peninsula совпадают с главным референтом MD; P625 19.250219444444,-69.421233333333 находится примерно в 0.5 км. Опорная точка полуострова, не административный центр. Город GeoNames 3492997 PPLA и провинция исключены."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "probability": 99,
+      "selected": "country_dominican_republic",
+      "reason": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "GeoNames 3493233 PEN и Q2279055 peninsula совпадают с главным референтом MD; P625 19.250219444444,-69.421233333333 находится примерно в 0.5 км. Опорная точка полуострова, не административный центр. Город GeoNames 3492997 PPLA и провинция исключены.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/dominican-republic/place/samana/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

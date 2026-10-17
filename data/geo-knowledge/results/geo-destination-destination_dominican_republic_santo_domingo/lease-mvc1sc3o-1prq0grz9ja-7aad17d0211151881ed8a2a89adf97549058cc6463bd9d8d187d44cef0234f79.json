@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_dominican_republic_santo_domingo",
+  "stableId": "destination_dominican_republic_santo_domingo",
+  "kind": "destination",
+  "canonicalPath": "/dominican-republic/place/santo-domingo/",
+  "sourceFingerprint": "0dc11a9f832f0219a461cd90873543932e2ab3ad84f2248f476f2af37d53176e",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q34820",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santo_Domingo"
+    },
+    "geonamesId": "3492908",
+    "osm": {
+      "type": "node",
+      "id": 315342451
+    },
+    "officialUrl": "https://adn.gob.do/"
+  },
+  "location": {
+    "latitude": 18.47186,
+    "longitude": -69.89232,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/DO.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_dominican_republic"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/santo-domingo.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Столица Санто-Доминго, Доминиканская Республика; город как основной референт."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/dominican-republic/place/santo-domingo/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q34820",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q34820: название, тип, страна P17 Q786 и точный sitelink подтверждают Столица Санто-Доминго, Доминиканская Республика; город как основной референт. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santo_Domingo",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный DO.txt: id 3492908, featureCode PPLC; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/315342451",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://adn.gob.do/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Официальный сайт администрации города, подтверждён P856 Wikidata и открытой страницей ведомства; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "18.47186, -69.89232; pointRole=settlement_center. GeoNames PPLC и OSM place=city/capital с Q34820 дают совпадающую городскую точку. Провинция Santo Domingo, отдельный город Santo Domingo Este 8601412 и колониальный район Q2470834 не подменяют столицу. P625 Wikidata находится западнее в городской территории; не усреднялся с GeoNames."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q34820",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Столица Санто-Доминго, Доминиканская Республика; город как основной референт."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q34820",
+      "reason": "Q34820: название, тип, страна P17 Q786 и точный sitelink подтверждают Столица Санто-Доминго, Доминиканская Республика; город как основной референт. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3492908",
+      "reason": "Первичный DO.txt: id 3492908, featureCode PPLC; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/315342451",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://adn.gob.do/",
+      "reason": "Официальный сайт администрации города, подтверждён P856 Wikidata и открытой страницей ведомства; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "18.47186,-69.89232",
+      "reason": "18.47186, -69.89232; pointRole=settlement_center. GeoNames PPLC и OSM place=city/capital с Q34820 дают совпадающую городскую точку. Провинция Santo Domingo, отдельный город Santo Domingo Este 8601412 и колониальный район Q2470834 не подменяют столицу. P625 Wikidata находится западнее в городской территории; не усреднялся с GeoNames."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "probability": 99,
+      "selected": "country_dominican_republic",
+      "reason": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "GeoNames PPLC и OSM place=city/capital с Q34820 дают совпадающую городскую точку. Провинция Santo Domingo, отдельный город Santo Domingo Este 8601412 и колониальный район Q2470834 не подменяют столицу. P625 Wikidata находится западнее в городской территории; не усреднялся с GeoNames.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/dominican-republic/place/santo-domingo/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

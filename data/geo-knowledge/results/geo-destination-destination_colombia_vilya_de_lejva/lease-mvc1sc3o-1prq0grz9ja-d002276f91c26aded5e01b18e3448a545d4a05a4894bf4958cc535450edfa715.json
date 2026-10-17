@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_vilya_de_lejva",
+  "stableId": "destination_colombia_vilya_de_lejva",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/villa-de-leyva/",
+  "sourceFingerprint": "6f88398d0e756431451a2dc47b0683208d9ebfcbbb1c9b33166d7d2ed044945a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1409503",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Villa_de_Leyva"
+    },
+    "geonamesId": "3666003",
+    "osm": {
+      "type": "node",
+      "id": 11291344272
+    },
+    "officialUrl": "https://www.villadeleyva-boyaca.gov.co/"
+  },
+  "location": {
+    "latitude": 5.63413,
+    "longitude": -73.52438,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/CO.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/vilya-de-lejva.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Колониальный город Вилья-де-Лейва в Бояке, Колумбия."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/colombia/place/villa-de-leyva/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1409503",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q1409503: название, тип, страна P17 Q739 и точный sitelink подтверждают Колониальный город Вилья-де-Лейва в Бояке, Колумбия. Муниципально-городская тема принята по основному именованному референту."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Villa_de_Leyva",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/CO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный CO.txt: id 3666003, featureCode PPLA2; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/11291344272",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; place=town Villa de Leyva."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.villadeleyva-boyaca.gov.co/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Официальный сайт администрации города, подтверждён P856 Wikidata и открытой страницей ведомства; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/CO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "5.63413, -73.52438; pointRole=settlement_center. Q1409503 — муниципалитет и основная городская тема Villa de Leyva; principal referent совпадает с городом MD. GeoNames 3666003 PPLA2 и OSM town совпадают примерно до 0.1 км. Муниципальная запись 3676662 ADM2 и OSM relation 1315417 не подставлялись вместо городской точки. Одноимённые Villa de Leiva в других департаментах исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1409503",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Колониальный город Вилья-де-Лейва в Бояке, Колумбия."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q1409503",
+      "reason": "Q1409503: название, тип, страна P17 Q739 и точный sitelink подтверждают Колониальный город Вилья-де-Лейва в Бояке, Колумбия. Муниципально-городская тема принята по основному именованному референту."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3666003",
+      "reason": "Первичный CO.txt: id 3666003, featureCode PPLA2; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/11291344272",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; place=town Villa de Leyva."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.villadeleyva-boyaca.gov.co/",
+      "reason": "Официальный сайт администрации города, подтверждён P856 Wikidata и открытой страницей ведомства; не общий туристический портал."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "5.63413,-73.52438",
+      "reason": "5.63413, -73.52438; pointRole=settlement_center. Q1409503 — муниципалитет и основная городская тема Villa de Leyva; principal referent совпадает с городом MD. GeoNames 3666003 PPLA2 и OSM town совпадают примерно до 0.1 км. Муниципальная запись 3676662 ADM2 и OSM relation 1315417 не подставлялись вместо городской точки. Одноимённые Villa de Leiva в других департаментах исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Текущая страна Colombia Q739 подтверждена P17, кодом CO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "Q1409503 — муниципалитет и основная городская тема Villa de Leyva; principal referent совпадает с городом MD. GeoNames 3666003 PPLA2 и OSM town совпадают примерно до 0.1 км. Муниципальная запись 3676662 ADM2 и OSM relation 1315417 не подставлялись вместо городской точки. Одноимённые Villa de Leiva в других департаментах исключены.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/colombia/place/villa-de-leyva/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

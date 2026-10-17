@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_dominican_republic_punta_kana",
+  "stableId": "destination_dominican_republic_punta_kana",
+  "kind": "destination",
+  "canonicalPath": "/dominican-republic/place/punta-cana/",
+  "sourceFingerprint": "9b01384d5d0da5d3d02adaadee8f2a13cfd22bb07ee5096d210c02d9e56b109d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1568095",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Punta_Cana"
+    },
+    "geonamesId": "3494242",
+    "osm": {
+      "type": "node",
+      "id": 2613949295
+    }
+  },
+  "location": {
+    "latitude": 18.556551,
+    "longitude": -68.3691611,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/2613949295"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_dominican_republic"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/punta-kana.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Курортный город Пунта-Кана на востоке Доминиканской Республики; основной референт страницы при описании Баваро, Макао и окрестностей."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/dominican-republic/place/punta-cana/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1568095",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q1568095: название, тип, страна P17 Q786 и точный sitelink подтверждают Курортный город Пунта-Кана на востоке Доминиканской Республики; основной референт страницы при описании Баваро, Макао и окрестностей. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Punta_Cana",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный DO.txt: id 3494242, featureCode PPL; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/2613949295",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/2613949295",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "18.556551, -68.3691611; pointRole=representative. Выбран OSM place=town с Q1568095; точка представляет основной курортный город, не каждый пляж широкой туристической зоны. GeoNames 3494242 PPL подтверждает поселение. Аэропорт 3494241 AIRP, мысы PT и частная гостиничная группа не присваивались странице. Несколько P625 и GeoNames описывают разные опорные точки курорта; не усреднялись."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1568095",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Курортный город Пунта-Кана на востоке Доминиканской Республики; основной референт страницы при описании Баваро, Макао и окрестностей."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1568095",
+      "reason": "Q1568095: название, тип, страна P17 Q786 и точный sitelink подтверждают Курортный город Пунта-Кана на востоке Доминиканской Республики; основной референт страницы при описании Баваро, Макао и окрестностей. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3494242",
+      "reason": "Первичный DO.txt: id 3494242, featureCode PPL; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/2613949295",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 99,
+      "selected": "18.556551,-68.3691611",
+      "reason": "18.556551, -68.3691611; pointRole=representative. Выбран OSM place=town с Q1568095; точка представляет основной курортный город, не каждый пляж широкой туристической зоны. GeoNames 3494242 PPL подтверждает поселение. Аэропорт 3494241 AIRP, мысы PT и частная гостиничная группа не присваивались странице. Несколько P625 и GeoNames описывают разные опорные точки курорта; не усреднялись."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "probability": 99,
+      "selected": "country_dominican_republic",
+      "reason": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "Выбран OSM place=town с Q1568095; точка представляет основной курортный город, не каждый пляж широкой туристической зоны. GeoNames 3494242 PPL подтверждает поселение. Аэропорт 3494241 AIRP, мысы PT и частная гостиничная группа не присваивались странице. Несколько P625 и GeoNames описывают разные опорные точки курорта; не усреднялись.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/dominican-republic/place/punta-cana/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

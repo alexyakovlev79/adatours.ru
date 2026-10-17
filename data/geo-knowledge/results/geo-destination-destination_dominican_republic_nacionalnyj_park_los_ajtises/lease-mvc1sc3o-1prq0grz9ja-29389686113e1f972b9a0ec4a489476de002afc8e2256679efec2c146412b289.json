@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_dominican_republic_nacionalnyj_park_los_ajtises",
+  "stableId": "destination_dominican_republic_nacionalnyj_park_los_ajtises",
+  "kind": "destination",
+  "canonicalPath": "/dominican-republic/place/los-haitises-national-park/",
+  "sourceFingerprint": "ac3572c120e98b37d13743a31d82eb08823bc7624ceeefd010fe05ab58de35f9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q42090",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Los_Haitises_National_Park"
+    },
+    "geonamesId": "8051204",
+    "osm": {
+      "type": "relation",
+      "id": 10078757
+    },
+    "officialUrl": "https://ambiente.gob.do/parque-nacional-los-haitises/"
+  },
+  "location": {
+    "latitude": 19.02577,
+    "longitude": -69.62997,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/DO.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_dominican_republic"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/nacionalnyj-park-los-ajtises.md",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Национальный парк Los Haitises на северо-востоке Доминиканы у залива Самана; мангры, карст и пещеры."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/dominican-republic/place/los-haitises-national-park/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42090",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Q42090: название, тип, страна P17 Q786 и точный sitelink подтверждают Национальный парк Los Haitises на северо-востоке Доминиканы у залива Самана; мангры, карст и пещеры. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Los_Haitises_National_Park",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Первичный DO.txt: id 8051204, featureCode PRK; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/10078757",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://ambiente.gob.do/parque-nacional-los-haitises/",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Точная карточка парка у государственного администратора Ministerio de Medio Ambiente."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/DO.zip",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "19.02577, -69.62997; pointRole=representative. Опорная точка GeoNames PRK находится внутри outer-полигона OSM relation 10078757 (проверено по /full); это не вход и не геометрический центр. Альтернативная P625 19.04394444,-69.59289722 также внутри; точки не усреднялись. В MD география парка упрощённо отнесена к полуострову Самана: связь с полуостровом не создавалась; парк — отдельный объект на южной стороне залива. Карстовый регион Los Haitises GeoNames 3498440 KRST не подменяет парк."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/relation/10078757/full",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Прямой /full multipolygon: координата GeoNames внутри внешнего полигона парка (ray casting)."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42090",
+      "checkedAt": "2026-10-17T07:05:41.417Z",
+      "note": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Национальный парк Los Haitises на северо-востоке Доминиканы у залива Самана; мангры, карст и пещеры."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с закреплённым URL, H1 соответствует названию, stable ID присутствует в HTML."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q42090",
+      "reason": "Q42090: название, тип, страна P17 Q786 и точный sitelink подтверждают Национальный парк Los Haitises на северо-востоке Доминиканы у залива Самана; мангры, карст и пещеры. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья открыта; описание объекта, география и связанный Wikidata совпадают с основным референтом страницы."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "8051204",
+      "reason": "Первичный DO.txt: id 8051204, featureCode PRK; точная запись нужного типа и страны, не одноимённое место другого типа."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/10078757",
+      "reason": "Прямой OSM API: точное название, тип объекта и география; QID совпадает с выбранным Wikidata."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://ambiente.gob.do/parque-nacional-los-haitises/",
+      "reason": "Точная карточка парка у государственного администратора Ministerio de Medio Ambiente."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.02577,-69.62997",
+      "reason": "19.02577, -69.62997; pointRole=representative. Опорная точка GeoNames PRK находится внутри outer-полигона OSM relation 10078757 (проверено по /full); это не вход и не геометрический центр. Альтернативная P625 19.04394444,-69.59289722 также внутри; точки не усреднялись. В MD география парка упрощённо отнесена к полуострову Самана: связь с полуостровом не создавалась; парк — отдельный объект на южной стороне залива. Карстовый регион Los Haitises GeoNames 3498440 KRST не подменяет парк."
+    },
+    {
+      "field": "relationships.country_dominican_republic",
+      "probability": 99,
+      "selected": "country_dominican_republic",
+      "reason": "Текущая страна Dominican Republic Q786 подтверждена P17, кодом DO в GeoNames и географией MD. Исторические P17 не превращались в текущие связи."
+    }
+  ],
+  "reviewNote": "Опорная точка GeoNames PRK находится внутри outer-полигона OSM relation 10078757 (проверено по /full); это не вход и не геометрический центр. Альтернативная P625 19.04394444,-69.59289722 также внутри; точки не усреднялись. В MD география парка упрощённо отнесена к полуострову Самана: связь с полуостровом не создавалась; парк — отдельный объект на южной стороне залива. Карстовый регион Los Haitises GeoNames 3498440 KRST не подменяет парк.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/dominican-republic/place/los-haitises-national-park/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 989a35d14eab8a816010b3c5c40da68f62d230bb; текущий main blob SHA повторно проверен."
+    ]
+  }
+}

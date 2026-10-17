@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_nacionalnyj_morskoj_park_chirikskogo_zaliva",
+  "stableId": "destination_panama_nacionalnyj_morskoj_park_chirikskogo_zaliva",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/gulf-of-chiriqui-national-marine-park/",
+  "sourceFingerprint": "a61afd7e2bffdec2c34e235e44353ac4f4690ca76762c28cafa993912bf755bd",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q492359"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/gulf-of-chiriqui-national-marine-park/",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q492359",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q492359",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q492359",
+      "checkedAt": "2026-10-17T08:01:18.034Z",
+      "note": "Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Gulf of Chiriquí National Marine Park",
+      "reason": "Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q492359",
+      "reason": "Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "8.1130935,-82.3035906111111",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 98,
+      "selected": "country_panama",
+      "reason": "Exact named marine national park in Chiriquí, Panama; island and Pacific coast context matches MD."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": 8.1130935,
+    "longitude": -82.3035906111111,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q492359"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_guatavita_town",
+  "stableId": "destination_colombia_guatavita_town",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/guatavita-town/",
+  "sourceFingerprint": "b59bd694d430e4e71d24ad403abbeeabfe7707b86499d7e2f7820f103a353ef7",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q1576750",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Guatavita"
+    }
+  },
+  "location": {
+    "latitude": 4.9344444444444,
+    "longitude": -73.834444444444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1576750"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/guatavita-town.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Город Guatavita в Cundinamarca, современная застройка после переноса поселения. Озеро находится отдельно в Sesquilé; Q1552915 озера не выбран. Устаревший Q14217211 перенаправлен на Q1576750."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/guatavita-town/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guatavita",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Город Guatavita в Cundinamarca, современная застройка после переноса поселения. Озеро находится отдельно в Sesquilé; Q1552915 озера не выбран. Устаревший Q14217211 перенаправлен на Q1576750."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guatavita",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guatavita",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1576750",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точка городской Wikidata совпадает с координатами точной Wikipedia, не старое затопленное поселение и не Laguna Guatavita."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1576750",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверены точный QID, P31/P17/P625 и sitelink; Город Guatavita в Cundinamarca, современная застройка после переноса поселения. Озеро находится отдельно в Sesquilé; Q1552915 озера не выбран. Устаревший Q14217211 перенаправлен на Q1576750."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Guatavita",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точная статья о выбранном объекте; соответствует Wikidata sitelink."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Город Гуатавита",
+      "reason": "Город Guatavita в Cundinamarca, современная застройка после переноса поселения. Озеро находится отдельно в Sesquilé; Q1552915 озера не выбран. Устаревший Q14217211 перенаправлен на Q1576750."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "City",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "4.9344444444444, -73.834444444444",
+      "reason": "Точка городской Wikidata совпадает с координатами точной Wikipedia, не старое затопленное поселение и не Laguna Guatavita."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1576750",
+      "reason": "Город Guatavita в Cundinamarca, современная застройка после переноса поселения. Озеро находится отдельно в Sesquilé; Q1552915 озера не выбран. Устаревший Q14217211 перенаправлен на Q1576750."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Guatavita",
+      "reason": "Точная статья и sitelink выбранной Wikidata."
+    }
+  ]
+}

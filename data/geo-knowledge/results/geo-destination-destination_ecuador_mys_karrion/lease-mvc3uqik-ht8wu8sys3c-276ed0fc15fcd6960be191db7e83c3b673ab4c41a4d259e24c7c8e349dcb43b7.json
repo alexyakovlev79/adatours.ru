@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_mys_karrion",
+  "stableId": "destination_ecuador_mys_karrion",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/punta-carrion/",
+  "sourceFingerprint": "053b7b3ea6de9615faef5897f4e7e036e52d75daf93dab33d96c14ba55d2f49e",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3659667"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_ecuador_ostrov_santa_krus_galapagosy"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/punta-carrion/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19665012",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/search.html?country=EC&q=Gal%C3%A1pagos&startRow=200",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://mapcarta.com/19665012",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "sourceUrl": "https://adatours.ru/ecuador/place/punta-carrion/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Current MD explicitly locates this feature on Santa Cruz Island in Galápagos."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Punta Carrión, northeast Santa Cruz",
+      "reason": "Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 80,
+      "selected": "3659667",
+      "reason": "Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "location",
+      "probability": 88,
+      "selected": "-0.48215338,-90.25094488",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Named coastal locality Punta Carrión at northeast Santa Cruz by Itabaca matches snorkelling point; GeoNames coordinates independently listed in Galápagos gazetteer."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "probability": 99,
+      "selected": "destination_ecuador_ostrov_santa_krus_galapagosy",
+      "reason": "Explicit named-island containment in current page MD and geographic context."
+    }
+  ],
+  "reviewNote": "Representative point of named cape/coastal locality, not offshore snorkel station or landing. OSM locality point not separately added.",
+  "location": {
+    "latitude": -0.48215338,
+    "longitude": -90.25094488,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.geonames.org/search.html?country=EC&q=Gal%C3%A1pagos&startRow=200"
+  }
+}

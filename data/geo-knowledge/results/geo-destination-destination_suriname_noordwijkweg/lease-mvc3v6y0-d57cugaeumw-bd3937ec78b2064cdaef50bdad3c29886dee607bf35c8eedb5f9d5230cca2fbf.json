@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_noordwijkweg",
+  "stableId": "destination_suriname_noordwijkweg",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/noordwijkweg/",
+  "sourceFingerprint": "f3128f7d3307e3721f5b87e44436211e3bc9699205cb5596485b33012582a86a",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 90,
+      "selected": "Нордвейквег",
+      "reason": "Редакционная орнитологическая зона вдоль Noordwijkweg у Парамарибо; дорога подтверждена картографическим источником и программой тура, точка выхода меняется."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/noordwijkweg/",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Редакционная орнитологическая зона вдоль Noordwijkweg у Парамарибо; дорога подтверждена картографическим источником и программой тура, точка выхода меняется."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/noordwijkweg.md",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://www.waze.com/live-map/directions/sr/paramaribo/paramaribo/noordwijkweg?to=place.EiJOb29yZHdpamt3ZWcsIFBhcmFtYXJpYm8sIFN1cmluYW1lIi4qLAoUChIJwxCzRrk0CI0RNCYV9k9cyokSFAoSCUP3A-IgNQiNEWNAP9p5IM-X",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.waze.com/live-map/directions/sr/paramaribo/paramaribo/noordwijkweg?to=place.EiJOb29yZHdpamt3ZWcsIFBhcmFtYXJpYm8sIFN1cmluYW1lIi4qLAoUChIJwxCzRrk0CI0RNCYV9k9cyokSFAoSCUP3A-IgNQiNEWNAP9p5IM-X",
+      "checkedAt": "2026-10-17T08:06:11.302Z",
+      "note": "Редакционная орнитологическая зона вдоль Noordwijkweg у Парамарибо; дорога подтверждена картографическим источником и программой тура, точка выхода меняется."
+    }
+  ],
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "reviewNote": "Q19380240 — улица в Нидерландах, отвергнута. Устойчивый единый геообъект орнитологического участка и координаты менее 70%; поля опущены."
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_mindo",
+  "stableId": "destination_ecuador_mindo",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/mindo/",
+  "sourceFingerprint": "f2a353368abbcb8517323f1bacea27c25e6723d4405d7268d790ab2c007e1e0d",
+  "status": "BLOCKED",
+  "confidence": "high",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q3081485",
+    "geonamesId": "3654182"
+  },
+  "location": {
+    "latitude": -0.051111111111111114,
+    "longitude": -78.77833333333334,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3081485"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3081485",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Основной именованный референт — населенный пункт/сельская местность Mindo, район облачных лесов; не вся охраняемая территория Mindo-Nambillo."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/mindo.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_mindo; статус approved; blob SHA=1314f36c6e2ce6711115cc2426d8d60935423d07; актуальный entry подтверждает canonical /ecuador/place/mindo/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/mindo/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_mindo.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3081485",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Основной именованный референт — населенный пункт/сельская местность Mindo, район облачных лесов; не вся охраняемая территория Mindo-Nambillo."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3081485",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Идентификатор P1566 прочитан из точной карточки Wikidata; прямое открытие GeoNames недоступно, независимую проверку страницы GeoNames не заявляю."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3081485",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "P625 точной карточки, переведен из DMS в WGS84 decimal. Опорная точка населенного пункта, не границы окружающих лесов или административной территории."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 90,
+      "selected": "Основной именованный референт — населенный пункт/сельская местность Mindo, район облачных лесов; не вся охраняемая территория Mindo-Nambillo.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 90,
+      "selected": "Q3081485",
+      "reason": "Основной именованный референт — населенный пункт/сельская местность Mindo, район облачных лесов; не вся охраняемая территория Mindo-Nambillo."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 90,
+      "selected": "3654182",
+      "reason": "P1566 точной карточки соответствует именованному объекту; отличия населенного пункта и территории учтены."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-0.051111111111111114, -78.77833333333334",
+      "reason": "P625 относится к выбранному населенному пункту; точка не усредняется с другими картами."
+    }
+  ],
+  "reviewNote": "Географическая идентичность исследована и оценена от 70%. Технический блокер §3.2.1 workflow: точный публичный URL не удалось открыть доступными средствами, HTTP-статус/живой HTML не подтверждены. Нужна адресная проверка URL в рабочем браузере; не считать READY или PUBLISHED. "
+}

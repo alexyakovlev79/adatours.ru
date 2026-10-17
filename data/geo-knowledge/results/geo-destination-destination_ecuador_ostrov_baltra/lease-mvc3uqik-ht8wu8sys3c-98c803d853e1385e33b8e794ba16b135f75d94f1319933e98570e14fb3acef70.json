@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ostrov_baltra",
+  "stableId": "destination_ecuador_ostrov_baltra",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/baltra-island/",
+  "sourceFingerprint": "b55ba0a589f82bf01c7d4541ce04a6c65e2239c7084733d389b7376bd8930dcf",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q200772",
+    "geonamesId": "3660365"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/baltra-island/",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200772",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200772",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200772",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q200772",
+      "checkedAt": "2026-10-17T08:24:25.796Z",
+      "note": "Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Baltra Island",
+      "reason": "Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q200772",
+      "reason": "Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3660365",
+      "reason": "Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.45,-90.26666666666667",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Galápagos island north of Itabaca Channel; canonical Q200772 confirmed by direct Wikipedia Wikidata link. Island, not Seymour airport or North Seymour."
+    }
+  ],
+  "reviewNote": "Search also returned Q14205088 with duplicated island data; canonical Wikipedia-linked Q200772 selected. Coordinate is coarse island reference, not airport.",
+  "location": {
+    "latitude": -0.45,
+    "longitude": -90.26666666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q200772"
+  }
+}

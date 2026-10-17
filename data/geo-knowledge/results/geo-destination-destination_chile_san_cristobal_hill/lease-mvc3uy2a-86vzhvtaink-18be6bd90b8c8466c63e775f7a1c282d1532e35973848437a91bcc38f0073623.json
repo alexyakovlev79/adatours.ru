@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_san_cristobal_hill",
+  "stableId": "destination_chile_san_cristobal_hill",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/san-cristobal-hill/",
+  "sourceFingerprint": "2ef2808085596653396978bd9d12436ab70641325cdb4ccc632293e9dda69e72",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Холм Сан-Кристобаль в Сантьяго",
+      "reason": "Холм Cerro San Cristóbal в Сантьяго, не холм Лимы, святилище или весь Metropolitan Park."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q181523"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Hill\"}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "reason": "GeoNames ID холма.",
+      "selected": "6619479"
+    },
+    {
+      "field": "external.osm",
+      "probability": 97,
+      "reason": "OSM node холма.",
+      "selected": "{\"type\":\"node\",\"id\":285901766}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 холма, не станция канатной дороги.",
+      "selected": "-33.42527777777777,-70.63333333333334"
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "probability": 95,
+      "reason": "Точная статья помещает холм в Santiago.",
+      "selected": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/san-cristobal-hill/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Холм Cerro San Cristóbal в Сантьяго, не холм Лимы, святилище или весь Metropolitan Park."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/san-cristobal-hill/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q181523",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Hill",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q181523",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "GeoNames ID холма."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q181523",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "OSM node холма."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q181523",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "P625 холма, не станция канатной дороги."
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Hill",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья помещает холм в Santiago."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q181523",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Холм Cerro San Cristóbal в Сантьяго, не холм Лимы, святилище или весь Metropolitan Park."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q181523",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Hill"
+    },
+    "geonamesId": "6619479",
+    "osm": {
+      "type": "node",
+      "id": 285901766
+    }
+  },
+  "location": {
+    "latitude": -33.42527777777777,
+    "longitude": -70.63333333333334,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q181523"
+  }
+}

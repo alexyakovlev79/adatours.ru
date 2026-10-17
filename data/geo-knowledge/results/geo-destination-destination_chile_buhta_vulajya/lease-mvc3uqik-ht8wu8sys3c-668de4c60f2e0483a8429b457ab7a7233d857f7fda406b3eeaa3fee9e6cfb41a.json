@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_buhta_vulajya",
+  "stableId": "destination_chile_buhta_vulajya",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/wulaia-bay/",
+  "sourceFingerprint": "26f6773c0d3da6cb44a15e30ba1125a50e79152aa777cdb3af8be8aaaa1adc84",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q4842564"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/wulaia-bay/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4842564",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4842564",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q4842564",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Bahía Wulaia",
+      "reason": "Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q4842564",
+      "reason": "Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-55.04811111111111,-68.1493888888889",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Named bay on west Navarino along Murray Channel; geographic feature rather than separate Caleta Wulaia settlement."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -55.04811111111111,
+    "longitude": -68.1493888888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q4842564"
+  }
+}

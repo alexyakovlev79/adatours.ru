@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_lednik_grej",
+  "stableId": "destination_chile_lednik_grej",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/grey-glacier/",
+  "sourceFingerprint": "6c87a80243a05b34679b16775415093ed5222e5084a9b78e211be086d4c40d69",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Ледник Грей",
+      "reason": "Ледник Grey в Южном Патагонском ледовом поле, у озера Grey; не само озеро и не Gray Glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка объекта с совпадающими типом и географией.",
+      "selected": "Q5608166"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Sitelink точного объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Grey_Glacier\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка ледника; не движущийся край ледяного фронта.",
+      "selected": "-50.95,-73.25"
+    },
+    {
+      "field": "relationships.destination_chile_puerto_natales_torres_del_pajne",
+      "probability": 95,
+      "reason": "Grey связан с национальным парком Torres del Paine.",
+      "selected": "destination_chile_puerto_natales_torres_del_pajne"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/grey-glacier/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Ледник Grey в Южном Патагонском ледовом поле, у озера Grey; не само озеро и не Gray Glacier."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/grey-glacier/",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5608166",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Точная карточка объекта с совпадающими типом и географией."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5608166",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Sitelink точного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Grey_Glacier",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Опорная точка ледника; не движущийся край ледяного фронта."
+    },
+    {
+      "field": "relationships.destination_chile_puerto_natales_torres_del_pajne",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Grey_Glacier",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Grey связан с национальным парком Torres del Paine."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5608166",
+      "checkedAt": "2026-10-17T08:12:04.918Z",
+      "note": "Ледник Grey в Южном Патагонском ледовом поле, у озера Grey; не само озеро и не Gray Glacier."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_chile_puerto_natales_torres_del_pajne"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q5608166",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Grey_Glacier"
+    }
+  },
+  "location": {
+    "latitude": -50.95,
+    "longitude": -73.25,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Grey_Glacier"
+  }
+}

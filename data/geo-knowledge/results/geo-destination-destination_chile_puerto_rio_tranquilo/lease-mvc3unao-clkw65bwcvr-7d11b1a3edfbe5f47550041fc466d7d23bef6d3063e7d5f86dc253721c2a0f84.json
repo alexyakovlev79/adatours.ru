@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_puerto_rio_tranquilo",
+  "stableId": "destination_chile_puerto_rio_tranquilo",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/puerto-rio-tranquilo/",
+  "sourceFingerprint": "7e49fbd00e5065b0f11fa9265d3c5d6a373fa83f2fc93359d56f82ded282ee70",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пуэрто-Рио-Транкило",
+      "reason": "Пуэрто-Рио-Транкило — посёлок Río Ibáñez/Aysén на западном берегу Хенераль-Каррера, база поездок к мраморным пещерам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q14218316",
+      "reason": "Пуэрто-Рио-Транкило — посёлок Río Ibáñez/Aysén на западном берегу Хенераль-Каррера, база поездок к мраморным пещерам."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-46.6241,-72.6766",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3874931",
+      "reason": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/puerto-rio-tranquilo.md",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Current approved MD and stable ID checked. Пуэрто-Рио-Транкило — посёлок Río Ibáñez/Aysén на западном берегу Хенераль-Каррера, база поездок к мраморным пещерам."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14218316",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Пуэрто-Рио-Транкило — посёлок Río Ibáñez/Aysén на западном берегу Хенераль-Каррера, база поездок к мраморным пещерам."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14218316",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Пуэрто-Рио-Транкило — посёлок Río Ibáñez/Aysén на западном берегу Хенераль-Каррера, база поездок к мраморным пещерам."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14218316",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14218316",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14218316",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "P1566 from the exact named object; primary Wikidata API inspected, deprecated statements excluded."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-rio-tranquilo/",
+      "checkedAt": "2026-10-17T08:16:30.982Z",
+      "note": "Direct GET 200, correct canonical and page title, approved current MD, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q14218316",
+    "geonamesId": "3874931"
+  },
+  "location": {
+    "latitude": -46.6241,
+    "longitude": -72.6766,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q14218316"
+  }
+}

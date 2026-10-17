@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_lake_coatepeque",
+  "stableId": "destination_el_salvador_lake_coatepeque",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/lake-coatepeque/",
+  "sourceFingerprint": "97ac5470231f68b016c7fa969b793475c9390adff76ffbbf7e71815dc4c3c40e",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q3045228",
+    "geonamesId": "3586980",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Coatepeque_Caldera"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/lake-coatepeque/",
+      "checkedAt": "2026-10-17T08:37:15.277Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mapcarta.com/19519638",
+      "checkedAt": "2026-10-17T08:37:15.277Z",
+      "note": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://mapcarta.com/19519638",
+      "checkedAt": "2026-10-17T08:37:15.277Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3045228",
+      "checkedAt": "2026-10-17T08:37:15.277Z",
+      "note": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/19519638",
+      "checkedAt": "2026-10-17T08:37:15.277Z",
+      "note": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://mapcarta.com/19519638",
+      "checkedAt": "2026-10-17T08:37:15.277Z",
+      "note": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/19519638",
+      "checkedAt": "2026-10-17T08:37:15.277Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Озеро Коатепеке",
+      "reason": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 92,
+      "selected": "Q3045228",
+      "reason": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3586980",
+      "reason": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Coatepeque_Caldera\"}",
+      "reason": "Lake Coatepeque in volcanic caldera at Santa Ana. Wikidata article/card include lake as the primary named feature; not Coatepeque municipality or Guatemalan namesake."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.86361,\"longitude\":-89.54639,\"pointRole\":\"representative\",\"coordinateSource\":\"https://mapcarta.com/19519638\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.86361,
+    "longitude": -89.54639,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/19519638"
+  },
+  "reviewNote": ""
+}

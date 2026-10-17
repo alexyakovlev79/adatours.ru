@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_espanola_island",
+  "stableId": "destination_ecuador_espanola_island",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/espanola-island/",
+  "sourceFingerprint": "4c93daadea7bf74503840306377b74ddc3f1a57a964b6eeabdb1e2c94d957aee",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Эспаньола",
+      "reason": "Española/Hood — южный остров Галапагосов с Punta Suárez и Gardner Bay, не карибская Hispaniola."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1062516",
+      "reason": "Española/Hood — южный остров Галапагосов с Punta Suárez и Gardner Bay, не карибская Hispaniola."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Espa%C3%B1ola_Island",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3657983",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-1.3666666666667,-89.683333333333]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/espanola-island/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Española/Hood — южный остров Галапагосов с Punta Suárez и Gardner Bay, не карибская Hispaniola."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/espanola-island.md",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1062516",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Española/Hood — южный остров Галапагосов с Punta Suárez и Gardner Bay, не карибская Hispaniola."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1062516",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1062516",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1062516",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1062516",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1062516",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Espa%C3%B1ola_Island"
+    },
+    "geonamesId": "3657983"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -1.3666666666667,
+    "longitude": -89.683333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1062516"
+  },
+  "reviewNote": null
+}

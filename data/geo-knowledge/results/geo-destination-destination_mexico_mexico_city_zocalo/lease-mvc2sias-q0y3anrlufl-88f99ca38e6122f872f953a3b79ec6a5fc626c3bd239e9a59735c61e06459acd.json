@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_mexico_city_zocalo",
+  "stableId": "destination_mexico_mexico_city_zocalo",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/mexico-city-zocalo/",
+  "sourceFingerprint": "4ad2eef64d2ae2dc92a19ba2317d72391e49408559fa291ae3521b63863cd82b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "square",
+  "external": {
+    "wikidataQid": "Q1348507",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Z%C3%B3calo",
+      "es": "https://es.wikipedia.org/wiki/Plaza_de_la_Constituci%C3%B3n_(Ciudad_de_M%C3%A9xico)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/mexico-city-zocalo/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Проверены точные MD и source-index на main 8970d45ea38bcd627df622a063b9a279c92fb531; live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://mexicocity.cdmx.gob.mx/venues/plaza-de-la-constitucion-the-zocalo/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Площадь Конституции (Сокало) в Мехико, не станция метро и не весь исторический центр. Q18377206 перенаправлен на Q1348507; сохранён действующий QID."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://mexicocity.cdmx.gob.mx/venues/plaza-de-la-constitucion-the-zocalo/",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Тип square соответствует основному объекту страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1348507",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Имя, тип и география соответствуют странице; Q1348507 — точный выбранный объект."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1348507",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "EN и ES sitelinks относятся к выбранному объекту."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1348507",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Географический объект расположен в Мексике; страна также совпадает в MD и source-index."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1348507",
+      "checkedAt": "2026-10-17T07:33:57.788Z",
+      "note": "Выбрана одна точка с ролью representative. Точка относится к выбранному объекту; независимые и конфликтующие координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Q1348507",
+      "reason": "Площадь Конституции (Сокало) в Мехико, не станция метро и не весь исторический центр. Q18377206 перенаправлен на Q1348507; сохранён действующий QID."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "square",
+      "reason": "Тип определён по описанию основного объекта и первичному источнику."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1348507",
+      "reason": "Совпадают имя, география и основной референт MD; конкурирующие административные и тематические объекты исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Zócalo; es:Plaza_de_la_Constitución_(Ciudad_de_México)",
+      "reason": "Проверенные sitelinks выбранной карточки Wikidata."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Мексика подтверждена источником и текущей записью проекта."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.432780555555556, -99.13333055555555",
+      "reason": "Проверенный географический ориентир объекта; роль representative."
+    }
+  ],
+  "reviewNote": "Площадь Конституции (Сокало) в Мехико, не станция метро и не весь исторический центр. Q18377206 перенаправлен на Q1348507; сохранён действующий QID.",
+  "location": {
+    "latitude": 19.432780555555556,
+    "longitude": -99.13333055555555,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1348507"
+  }
+}

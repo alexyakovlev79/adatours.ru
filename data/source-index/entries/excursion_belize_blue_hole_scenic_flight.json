@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/great-blue-hole-scenic-flight/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Большая голубая дыра и коралловый риф Белиза с борта небольшого самолёта"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_gvatemala_gonduras_i_beliz",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/polet-nad-goluboj-dyroj.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/great-blue-hole-scenic-flight/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Большая голубая дыра и коралловый риф Белиза с борта небольшого самолёта",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/great-blue-hole-scenic-flight/hero-generated-20261018.webp",
+        "alt": "Большая голубая дыра и коралловый риф Белиза с борта небольшого самолёта",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Great Blue Hole scenic flight, Belize: aerial oblique view from a small sightseeing aircraft over the actual Great Blue Hole, a nearly circular deep navy-blue marine sinkhole encircled by shallow turquoise coral reef at Lighthouse Reef, broad Caribbean sea around it. Tiny unobtrusive sliver of white light-aircraft wing in upper corner to convey sightseeing flight. Plausible natural ring reef and scale, clear sunny water, no landmass immediately surrounding the hole."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

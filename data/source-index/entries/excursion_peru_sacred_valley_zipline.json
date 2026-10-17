@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/peru-sacred-valley-zipline/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Спуск по зип-лайну над Священной долиной инков"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_vip_puteshestvie_v_imperiyu_inkov_na_8_dnej",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/peru-sacred-valley-zipline.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/peru-sacred-valley-zipline/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Спуск по зип-лайну над Священной долиной инков",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/peru-sacred-valley-zipline/hero-generated-20261018.webp",
+        "alt": "Спуск по зип-лайну над Священной долиной инков",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Zipline excursion in the Sacred Valley of the Incas, Peru: one adult traveler with helmet and full safety harness securely suspended from a taut steel cable crossing a broad Andean valley, the trolley and short safety lanyards visibly connected correctly, cultivated fields and a river far below, rounded dry Andean slopes beyond. Natural daylight, broad scenic composition, adventurous but safe and physically credible."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

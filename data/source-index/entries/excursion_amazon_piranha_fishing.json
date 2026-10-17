@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/amazon-piranha-fishing/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Рыбалка на пираний с гидом на спокойной реке Амазонии"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_vazhnoe_brazilii",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/rybalka-na-piranij-v-amazonii.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/amazon-piranha-fishing/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Рыбалка на пираний с гидом на спокойной реке Амазонии",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/amazon-piranha-fishing/hero-generated-20261018.webp",
+        "alt": "Рыбалка на пираний с гидом на спокойной реке Амазонии",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Piranha fishing excursion in Brazilian Amazon near Manaus: adult traveler and local guide seated safely in a small wooden boat on a calm forest-lined river, a simple fishing rod, guide carefully holding a modest-sized freshly caught Amazonian piranha just above the water for brief viewing, fish plausibly small compared with hands, tropical river reflections. Natural daylight, no blood or exaggerated teeth."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

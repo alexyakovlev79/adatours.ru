@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/canaima-pemon-village-visit/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Знакомство с кухней пемон и хлебом касабе в деревне у Канаймы"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_krasota_venesuely",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/canaima-pemon-village-visit.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/canaima-pemon-village-visit/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Знакомство с кухней пемон и хлебом касабе в деревне у Канаймы",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/canaima-pemon-village-visit/hero-generated-20261018.webp",
+        "alt": "Знакомство с кухней пемон и хлебом касабе в деревне у Канаймы",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Respectful cultural visit to a Pemón village near Canaima, Venezuela: adult Pemón hosts in ordinary contemporary clothing presenting cassava flatbread on a woven tray in an open-sided palm-thatch community shelter, visitors listening, tropical savanna and distant flat-topped tepui landscape beyond. Dignified warm natural documentary style, no body paint, feather headdresses or staged exotic costumes."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

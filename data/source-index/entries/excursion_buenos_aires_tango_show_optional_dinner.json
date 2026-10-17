@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/buenos-aires-tango-show-optional-dinner/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Пара танцует аргентинское танго на камерной сцене в Буэнос-Айресе"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/tango-shou-s-vozmozhnostyu-zakazat-uzhin.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/buenos-aires-tango-show-optional-dinner/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Пара танцует аргентинское танго на камерной сцене в Буэнос-Айресе",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/buenos-aires-tango-show-optional-dinner/hero-generated-20261018.webp",
+        "alt": "Пара танцует аргентинское танго на камерной сцене в Буэнос-Айресе",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Buenos Aires tango show: intimate low stage with a single adult Argentine tango couple in an elegant close embrace and expressive dance movement, male dancer in dark suit, female dancer in deep red evening dress, warm amber theater lighting, a few softly blurred seated diners beyond. A candid professional performance photograph, anatomically correct limbs and hands."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

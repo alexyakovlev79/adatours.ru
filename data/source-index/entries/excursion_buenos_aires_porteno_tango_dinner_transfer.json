@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/tango-porteno-dinner-show/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Танго-шоу с ужином в театральном зале Буэнос-Айреса"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_argentina_puteshestvie_v_doistoricheskij_mir",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/porteno-tango-shou-s-uzhinom.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/tango-porteno-dinner-show/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Танго-шоу с ужином в театральном зале Буэнос-Айреса",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/tango-porteno-dinner-show/hero-generated-20261018.webp",
+        "alt": "Танго-шоу с ужином в театральном зале Буэнос-Айреса",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Buenos Aires Tango Porteño dinner show: wide elegant historic theater interior with Art Deco atmosphere and a polished stage in the background, one adult tango couple performing on stage, foreground softly focused dinner tables set with glasses and white linen, rich amber and red theater lighting. Emphasize the dinner-and-show experience, avoid readable venue signs or invented branding."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

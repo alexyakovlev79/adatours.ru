@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/pedra-bonita-hike/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Панорама побережья Рио и Педра-да-Гавеа с вершины Педра-Бонита"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_novyj_god_v_rio_de_zhanejro_1",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/trekking-na-pedra-bonita.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/pedra-bonita-hike/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Панорама побережья Рио и Педра-да-Гавеа с вершины Педра-Бонита",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/pedra-bonita-hike/hero-generated-20261018.webp",
+        "alt": "Панорама побережья Рио и Педра-да-Гавеа с вершины Педра-Бонита",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Pedra Bonita summit hike in Tijuca forest, Rio de Janeiro: two adult hikers resting safely on the broad rounded granite summit with a panoramic coastal view toward São Conrado beach and the striking Pedra da Gávea massif, Atlantic Ocean and green mountains beyond. Early morning natural light, plausible Rio geography, no cliff-edge stunts or hang gliders."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

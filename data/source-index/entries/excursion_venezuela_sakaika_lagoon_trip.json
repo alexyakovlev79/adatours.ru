@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/venezuela-sakaika-lagoon-trip/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Лагуна Сакайка, деревянная лодка у берега и столовые горы Канаймы"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_luchshee_v_venesuele",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/venezuela-sakaika-lagoon-trip.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/venezuela-sakaika-lagoon-trip/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Лагуна Сакайка, деревянная лодка у берега и столовые горы Канаймы",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/venezuela-sakaika-lagoon-trip/hero-generated-20261018.webp",
+        "alt": "Лагуна Сакайка, деревянная лодка у берега и столовые горы Канаймы",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Sakaika lagoon excursion in Canaima region of Venezuela: peaceful wide lagoon framed by forest and a few moriche palms, a small locally used wooden boat near shore, immense softly hazy flat-topped tepui formations in the distance, warm natural afternoon light and reflections, an inviting scenic waterside viewpoint. No cyclists, no hotels, no invented waterfall."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

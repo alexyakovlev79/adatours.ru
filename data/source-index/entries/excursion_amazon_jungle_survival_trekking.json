@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/amazon-jungle-survival-trek/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Гид знакомит туристов с растениями во время треккинга по джунглям Амазонии"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_manaus_4_dnya_3_nochi",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/trekking-i-vyzhivanie-v-dzhunglyah.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/amazon-jungle-survival-trek/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Гид знакомит туристов с растениями во время треккинга по джунглям Амазонии",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/amazon-jungle-survival-trek/hero-generated-20261018.webp",
+        "alt": "Гид знакомит туристов с растениями во время треккинга по джунглям Амазонии",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Brazilian Amazon jungle survival trekking near Manaus: a small group of three adult hikers in practical long-sleeved outdoor clothing following a local guide along a narrow humid forest trail, huge buttress tree roots, dense green understory, guide calmly explaining a forest plant, soft shafts of daylight, authentic immersive rainforest adventure, no tribal costumes or weapons."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

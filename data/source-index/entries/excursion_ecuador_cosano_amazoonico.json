@@ -63,29 +63,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/ecuador-cosano-amazoonico/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Капуцин в лесном реабилитационном вольере центра Амазонико в Эквадоре"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_ekvador_v_sentyabre",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/ecuador-cosano-amazoonico.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/ecuador-cosano-amazoonico/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Капуцин в лесном реабилитационном вольере центра Амазонико в Эквадоре",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/ecuador-cosano-amazoonico/hero-generated-20261018.webp",
+        "alt": "Капуцин в лесном реабилитационном вольере центра Амазонико в Эквадоре",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "AmaZOOnico wildlife rescue center on the Arajuno River in Ecuador: a small rescued brown capuchin monkey resting naturally on a branch inside a spacious densely vegetated rehabilitation enclosure, a subtle glimpse of protective mesh and an elevated visitor walkway in soft background, tropical Amazonian forest all around. Calm respectful animal-welfare editorial photography, no petting, feeding or handling by tourists, no decorative zoo architecture."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

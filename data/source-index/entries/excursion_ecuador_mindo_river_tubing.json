@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/ecuador-mindo-river-tubing/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Тюбинг с профессиональным гидом по лесной реке в Миндо"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_ekvador_aktivnyj_tur_s_galapagossom",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/ecuador-mindo-river-tubing.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/ecuador-mindo-river-tubing/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Тюбинг с профессиональным гидом по лесной реке в Миндо",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/ecuador-mindo-river-tubing/hero-generated-20261018.webp",
+        "alt": "Тюбинг с профессиональным гидом по лесной реке в Миндо",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Guided river tubing near Mindo in Ecuador: a small group of adult visitors wearing helmets and life jackets seated securely in several large black inner tubes properly tied together into one floating raft, a professional guide beside the raft guiding it through modest whitewater on a shallow rocky cloud-forest river. Lush wet forest on both banks, natural daytime, joyful but safe, physically plausible tubes and water, no extreme waterfall."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

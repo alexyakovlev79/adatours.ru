@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/colombia-guatape-helicopter-flight/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Водохранилище Гуатапе и скала Пеньоль с высоты вертолётного полёта"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_kolumbiya_2024",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/colombia-guatape-helicopter-flight.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/colombia-guatape-helicopter-flight/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Водохранилище Гуатапе и скала Пеньоль с высоты вертолётного полёта",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/colombia-guatape-helicopter-flight/hero-generated-20261018.webp",
+        "alt": "Водохранилище Гуатапе и скала Пеньоль с высоты вертолётного полёта",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Scenic helicopter flight over Guatapé reservoir in Antioquia, Colombia: high aerial oblique view of an intricate blue-green reservoir with many green peninsulas and islands, the massive single granite monolith Piedra del Peñol rising from land within the scene, subtle edge of a helicopter window in one corner, bright clear Andean daylight. Plausible real geography, lake not ocean, no fantasy mountain range."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/rio-south-zone-bike-tour/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Велосипедисты на набережной Ипанемы на фоне гор Рио-де-Жанейро"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_rio_de_zhanejro_amazoniya_vodopady_iguasu",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/velotur-po-yuzhnoj-chasti-rio.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/rio-south-zone-bike-tour/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Велосипедисты на набережной Ипанемы на фоне гор Рио-де-Жанейро",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/rio-south-zone-bike-tour/hero-generated-20261018.webp",
+        "alt": "Велосипедисты на набережной Ипанемы на фоне гор Рио-де-Жанейро",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Rio de Janeiro south-zone bicycle tour: two adult travelers wearing helmets riding standard city bicycles on the coastal cycleway at Ipanema in Rio, Atlantic beach beside them, recognizable twin peaks of Morro Dois Irmãos in the distance, city and beach in plausible perspective, bright natural morning, candid travel editorial scene."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

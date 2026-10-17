@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/mount-avila-humboldt-hotel-tour/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Канатная дорога на Авилу, Каракас и башня отеля Humboldt на горном гребне"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_kraski_venesuely",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/venezuela-avila-humboldt-visit.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/mount-avila-humboldt-hotel-tour/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Канатная дорога на Авилу, Каракас и башня отеля Humboldt на горном гребне",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/mount-avila-humboldt-hotel-tour/hero-generated-20261018.webp",
+        "alt": "Канатная дорога на Авилу, Каракас и башня отеля Humboldt на горном гребне",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Mount El Ávila above Caracas, Venezuela: green cloud-forest mountain ridge with a red cable-car cabin suspended on its actual cable, Caracas sprawling in the valley in the distance, the recognizable cylindrical white-and-glass Hotel Humboldt tower subtly visible on the mountain crest. Clear highland daylight with soft drifting clouds, realistic architectural proportions, no invented towers or text."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

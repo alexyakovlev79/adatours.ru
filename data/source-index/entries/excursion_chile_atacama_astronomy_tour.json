@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/chile-atacama-astronomy-tour/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Наблюдение звёзд через телескоп под ночным небом Атакамы"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/chile-atacama-astronomy-tour.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/chile-atacama-astronomy-tour/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Наблюдение звёзд через телескоп под ночным небом Атакамы",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/chile-atacama-astronomy-tour/hero-generated-20261018.webp",
+        "alt": "Наблюдение звёзд через телескоп под ночным небом Атакамы",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Night astronomical excursion near San Pedro de Atacama in Chile: professional telescope on a sturdy tripod on dry desert ground, small group of adult visitors and guide as subtle silhouettes, astonishing yet physically plausible clear Milky Way and stars over low Andean desert ridges. Natural astrophotography style, dark blue night with gentle red observing light, no moon, no giant planets, no exaggerated colorful nebulae filling the sky."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

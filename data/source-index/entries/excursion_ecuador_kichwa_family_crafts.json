@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/ecuador-kichwa-family-crafts/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Мастерица кичуа вручную создаёт глиняную посуду у реки Напо"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_ekvador_v_sentyabre",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/ecuador-kichwa-family-crafts.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/ecuador-kichwa-family-crafts/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Мастерица кичуа вручную создаёт глиняную посуду у реки Напо",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/ecuador-kichwa-family-crafts/hero-generated-20261018.webp",
+        "alt": "Мастерица кичуа вручную создаёт глиняную посуду у реки Напо",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Kichwa family traditional craft visit near the Napo River in Ecuador: an adult Kichwa woman wearing ordinary contemporary clothing shaping a simple clay bowl by hand at a rustic open-sided pottery workshop, natural clay and a few handmade vessels on the worktable, two adult travelers respectfully observing, green Amazonian landscape in the background. Warm soft natural light, dignified skilled craft, no wheel, tribal costume, feathers or invented ceremony."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

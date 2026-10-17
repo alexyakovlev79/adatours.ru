@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/colombia-baru-agua-azul-day-trip/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Песчаный пляж Agua Azul на острове Бару в Колумбии"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_manyashchij_peru_kolumbiya",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/colombia-baru-agua-azul-day-trip.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/colombia-baru-agua-azul-day-trip/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Песчаный пляж Agua Azul на острове Бару в Колумбии",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/colombia-baru-agua-azul-day-trip/hero-generated-20261018.webp",
+        "alt": "Песчаный пляж Agua Azul на острове Бару в Колумбии",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Agua Azul beach on Barú island near Cartagena, Colombia: a quiet inviting Caribbean beach with pale golden sand, clear turquoise water, natural shoreline vegetation and a few simple shaded beach loungers, one coherent relaxed beach-day scene in warm sunshine, realistic tropical coast, no luxury overwater bungalows or invented signage."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

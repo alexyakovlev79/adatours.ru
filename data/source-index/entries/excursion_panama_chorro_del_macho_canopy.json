@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/panama-chorro-del-macho-canopy/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Спуск по канату над лесным ущельем у водопада Чорро-дель-Мачо в Панаме"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_vsya_panama_natsionalnye_parki_ostrova_i_doliny",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/panama-chorro-del-macho-canopy.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/panama-chorro-del-macho-canopy/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Спуск по канату над лесным ущельем у водопада Чорро-дель-Мачо в Панаме",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/panama-chorro-del-macho-canopy/hero-generated-20261018.webp",
+        "alt": "Спуск по канату над лесным ущельем у водопада Чорро-дель-Мачо в Панаме",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Canopy zipline above Chorro El Macho waterfall near El Valle de Antón in Panama: one adult rider wearing a helmet and professionally secured harness traveling on a taut steel cable over a lush forest ravine, a natural tropical waterfall visible behind and beneath at believable distance, correct cable and pulley connection, green cloud forest. Exciting but realistic safe outdoor activity, no floating person or impossible infrastructure."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

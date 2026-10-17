@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/xel-ha-park-tour/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Сноркелинг в бирюзовой лагуне парка Шель-Ха в Мексике"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_kankun_beliz",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/ekskursiya-v-park-shel-ha.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/xel-ha-park-tour/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Сноркелинг в бирюзовой лагуне парка Шель-Ха в Мексике",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/xel-ha-park-tour/hero-generated-20261018.webp",
+        "alt": "Сноркелинг в бирюзовой лагуне парка Шель-Ха в Мексике",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Xel-Há nature park, Riviera Maya, Mexico: broad natural turquoise inlet meeting lush mangroves and limestone edges, two adult snorkelers in brightly colored life jackets floating calmly in clear water in middle distance, abundant tropical vegetation, soft natural sun. Preserve the natural lagoon-park atmosphere, no Mayan pyramid or theme-park fantasy buildings."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

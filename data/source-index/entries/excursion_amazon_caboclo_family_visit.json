@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/amazon-caboclo-family-visit/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Приготовление муки из маниока в доме семьи кабокло в Амазонии"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_manaus_4_dnya_3_nochi",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/poseshchenie-semi-kaboklo.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/amazon-caboclo-family-visit/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Приготовление муки из маниока в доме семьи кабокло в Амазонии",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/amazon-caboclo-family-visit/hero-generated-20261018.webp",
+        "alt": "Приготовление муки из маниока в доме семьи кабокло в Амазонии",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Caboclo family cultural visit in the Brazilian Amazon: respectful candid scene of adult local family members in ordinary contemporary everyday clothing preparing manioc flour at a simple open-sided wooden riverside home, one shallow manioc roasting pan, tropical forest and a moored small wooden canoe softly visible beyond. Warm natural daylight, dignified everyday life, no costumes, feathers or stereotypical tribal props."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

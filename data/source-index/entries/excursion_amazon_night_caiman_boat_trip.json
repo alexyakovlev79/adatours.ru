@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/amazon-evening-caiman-watching/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Кайман у берега амазонской реки в вечернем свете фонаря"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_manaus_4_dnya_3_nochi",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/vechernyaya-progulka-po-amazonii-s-kajmanami.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/amazon-evening-caiman-watching/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Кайман у берега амазонской реки в вечернем свете фонаря",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/amazon-evening-caiman-watching/hero-generated-20261018.webp",
+        "alt": "Кайман у берега амазонской реки в вечернем свете фонаря",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Night caiman watching boat trip in the Brazilian Amazon near Manaus: low boat-level view across a calm narrow river at blue hour approaching darkness, a small caiman at the water surface near lush riverbank reeds in foreground, a discreet flashlight beam illuminating its eyes and snout, dense Amazon forest receding into dark blue evening. Keep it calm, naturally dim but clear enough for a hero image; no people handling wildlife, no aggressive animal."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

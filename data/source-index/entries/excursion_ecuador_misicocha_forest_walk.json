@@ -60,29 +60,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/ecuador-misicocha-forest-walk/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Гид показывает растения тропического леса в заповеднике Мисикоча"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_ekvador_v_sentyabre",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/ecuador-misicocha-forest-walk.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/ecuador-misicocha-forest-walk/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Гид показывает растения тропического леса в заповеднике Мисикоча",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/ecuador-misicocha-forest-walk/hero-generated-20261018.webp",
+        "alt": "Гид показывает растения тропического леса в заповеднике Мисикоча",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Guided rainforest walk in Misicocha private reserve near the Napo River in Ecuador: local adult guide in ordinary outdoor clothing gently pointing out a broad medicinal plant leaf to two adult visitors, dense intact Amazonian forest, enormous buttress tree roots and a narrow earthen path, humid dappled soft light. Respectful educational nature visit, intimate medium-wide scene, no tribal costume or props."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

@@ -62,29 +62,46 @@
     }
   },
   "media": {
-    "images": [
-      {
-        "url": "/media/excursions/casa-del-suizo-river-island-walk/hero-generated-20261018.webp",
-        "role": "hero",
-        "order": 1,
-        "alt": "Знакомство с выращиванием какао на острове реки Напо"
-      }
-    ],
-    "status": "generated",
+    "images": [],
+    "status": "existing_enhanced_preserved",
     "sourceUrl": null,
     "provenance": {
-      "kind": "gpt_image",
+      "kind": "existing_canonical_media",
       "parentTourId": "tour_source_ekvador_v_sentyabre",
       "missingHero": false,
       "note": "Dedicated hero generated with GPT Image for this excursion; direct S3 upload verified by SHA-256.",
       "sourceFragmentKind": "approved_parent_tour_fragment",
-      "createdAt": "2026-10-18"
-    }
+      "createdAt": "2026-10-18",
+      "contentPath": "src/content/excursions/ecuador-casa-suizo-river-island-walk.md",
+      "enhancementRegistry": "src/data/media/photo-enhancements.json"
+    },
+    "current": [
+      {
+        "url": "/media/excursions/casa-del-suizo-river-island-walk/hero-generated-20261018.webp",
+        "role": "hero",
+        "order": 1,
+        "slot": "hero.src",
+        "alt": "Знакомство с выращиванием какао на острове реки Напо",
+        "origin": "gpt_image"
+      }
+    ],
+    "generatedReplacements": [
+      {
+        "slot": "hero.src",
+        "previous": null,
+        "src": "/media/excursions/casa-del-suizo-river-island-walk/hero-generated-20261018.webp",
+        "alt": "Знакомство с выращиванием какао на острове реки Напо",
+        "method": "gpt-image",
+        "generatedAt": "2026-10-18",
+        "purpose": "missing_excursion_hero",
+        "prompt": "Easy guided walk on a river island near Casa del Suizo on Ecuador's Napo River: an adult local guide showing a ripe cacao pod on a low cacao tree along a cultivated tropical footpath with banana and manioc plants, two casually dressed adult visitors observing, a broad muddy Amazonian river softly visible beyond vegetation. Bright humid natural daylight, authentic agricultural learning visit, no hotel branding."
+      }
+    ]
   },
   "readiness": {
     "sources": "ready",
     "text": "approved_tour_excerpt",
-    "media": "generated",
+    "media": "existing_enhanced_preserved",
     "geography": "fixed"
   },
   "sheet": {

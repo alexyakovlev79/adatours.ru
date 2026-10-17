@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_imbabura_province",
+  "stableId": "destination_ecuador_imbabura_province",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/imbabura-province/",
+  "sourceFingerprint": "159cfaef1039e0d2e5702960f4222049a47bc1ce6d8fd68a3cf5f4787f932488",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q321863",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Imbabura_Province"
+    }
+  },
+  "location": {
+    "latitude": 0.35,
+    "longitude": -78.133,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Imbabura_Province"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Imbabura_Province",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/imbabura-province.md",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/imbabura-province/",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q321863",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Imbabura_Province",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Imbabura_Province",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Imbabura_Province",
+      "checkedAt": "2026-10-17T08:31:26.030Z",
+      "note": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Провинция Имбабура",
+      "reason": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q321863",
+      "reason": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Imbabura_Province",
+      "reason": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "0.35,-78.133",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Imbabura Province — провинция северного Эквадора со столицей Ibarra; выбран административный регион, не вулкан Imbabura. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

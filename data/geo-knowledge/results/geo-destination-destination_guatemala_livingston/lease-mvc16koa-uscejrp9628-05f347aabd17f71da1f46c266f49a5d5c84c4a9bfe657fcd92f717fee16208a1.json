@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_livingston",
+  "stableId": "destination_guatemala_livingston",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/livingston/",
+  "sourceFingerprint": "49121e40efb7dc2da11ff46fcc80f8d4d4b472ffb19198e30c201ff2dbf04691",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "town",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/guatemala/place/livingston/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Проверены текущие MD и source-index в main, stable ID/страна/тип и canonical. Публичный URL HTTP200, canonical совпадает, H1 соответствует, noindex отсутствует. Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://adatours.ru/guatemala/place/livingston/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Класс выбран по фактическому референту MD/summary; Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1192713",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Wikidata P17 Q774 (Guatemala); страна совпадает с MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1192713",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитан Special:EntityData/Q1192713.json: label/description, P31, P17 Q774 и P625. Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1192713",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "EN/ES sitelinks прочитаны из того же выбранного Wikidata entity, описывают именованный объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3593376/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Прочитана точная запись GeoNames: ond-order administrative division · GT Feature Map Hierarchy History Alternate names GeonameId 3593376 Coordinates 15.82826, -88.75039 Move 15°49′41.74″ N, 88°45′01.40″ W Population 17,923 Elevation ca. 16 m SRTM3 16 m · ASTER 18 m Timezone America/Guatemala Sunrise / sunset ‹ 05:47 / 17:32 › t. Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3593376/",
+      "checkedAt": "2026-10-17T06:50:08.366Z",
+      "note": "Выбрана одна опубликованная точка без усреднения. Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Q1192713",
+      "reason": "Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    },
+    {
+      "field": "entityClass",
+      "probability": 97,
+      "selected": "town",
+      "reason": "Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Совпадают география источников и закреплённый countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q1192713",
+      "reason": "Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Livingston,_Guatemala\",\"es\":\"https://es.wikipedia.org/wiki/Livingston_(Izabal)\"}",
+      "reason": "Прямые языковые sitelinks выбранной карточки, география и объект совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3593376",
+      "reason": "Название, страна GT и feature code соответствуют выбранному объекту; административные альтернативы исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "15.82826,-88.75039",
+      "reason": "Роль settlement_center. Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375."
+    }
+  ],
+  "reviewNote": "Ливингстон — город у устья Рио-Дульсе, не весь муниципалитет. Q1192713 совмещает город и муниципалитет (P31 town); GeoNames выбран отдельный населённый пункт 3593376, а не муниципалитет 3593375.",
+  "external": {
+    "wikidataQid": "Q1192713",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Livingston,_Guatemala",
+      "es": "https://es.wikipedia.org/wiki/Livingston_(Izabal)"
+    },
+    "geonamesId": "3593376"
+  },
+  "location": {
+    "latitude": 15.82826,
+    "longitude": -88.75039,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3593376/"
+  }
+}

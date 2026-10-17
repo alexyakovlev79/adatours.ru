@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_kepos",
+  "stableId": "destination_costa_rica_kepos",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/quepos/",
+  "sourceFingerprint": "a40fc7727e6192f6a103beb90621b1725c5ed9df2a2afd35eaefdf35b5f06cc4",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q2776723",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Quepos"
+    },
+    "geonamesId": "3622193"
+  },
+  "location": {
+    "latitude": 9.43063,
+    "longitude": -84.16231,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.geonames.org/3622193/quepos.html"
+  },
+  "alternateNames": [
+    "Quepos",
+    "Puerto Quepos"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Кепос",
+      "reason": "Quepos — именованный город на тихоокеанском побережье Puntarenas, рядом с Manuel Antonio. MD и официальный ICT описывают город как базу поездок и рыбалки; район Quepos с главным городом представлен в Q2776723."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q2776723",
+      "reason": "Quepos — именованный город на тихоокеанском побережье Puntarenas, рядом с Manuel Antonio. MD и официальный ICT описывают город как базу поездок и рыбалки; район Quepos с главным городом представлен в Q2776723."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Quepos",
+      "reason": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Q2776723 описывает район и его город-центр; принят именованный главный референт страницы (97%). Для населенного пункта выбран GeoNames3622193, не11239223. Национальный парк Manuel Antonio не отождествлен с Кепосом."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3622193",
+      "reason": "Прямая карточка населенного места GeoNames с типом PPL/PPLA2, CR; выбран город, не район."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "9.43063,-84.16231; settlement_center",
+      "reason": "GeoNames3622193 Quepos, P.PPLA2, главный населенный пункт: 9.43063,-84.16231. География города подтверждена ICT. P625 района 9.4570718,-84.1387451 и GeoNames11239223 района не использованы как городская точка."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Quepos; Puerto Quepos",
+      "reason": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "containedInPlace country_costa_rica",
+      "reason": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/blog/5-reasons-visit-quepos",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Quepos — именованный город на тихоокеанском побережье Puntarenas, рядом с Manuel Antonio. MD и официальный ICT описывают город как базу поездок и рыбалки; район Quepos с главным городом представлен в Q2776723."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/quepos/",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точный URL проверен: HTTP200, canonical совпадает, H1 соответствует, noindex нет. Approved MD и entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, стране, имени и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2776723",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Quepos — именованный город на тихоокеанском побережье Puntarenas, рядом с Manuel Antonio. MD и официальный ICT описывают город как базу поездок и рыбалки; район Quepos с главным городом представлен в Q2776723."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2776723",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Q2776723 описывает район и его город-центр; принят именованный главный референт страницы (97%). Для населенного пункта выбран GeoNames3622193, не11239223. Национальный парк Manuel Antonio не отождествлен с Кепосом."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3622193/quepos.html",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Прямая карточка населенного места GeoNames с типом PPL/PPLA2, CR; выбран город, не район."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3622193/quepos.html",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "GeoNames3622193 Quepos, P.PPLA2, главный населенный пункт: 9.43063,-84.16231. География города подтверждена ICT. P625 района 9.4570718,-84.1387451 и GeoNames11239223 района не использованы как городская точка."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2776723",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2776723",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Q2776723 описывает район и его город-центр; принят именованный главный референт страницы (97%). Для населенного пункта выбран GeoNames3622193, не11239223. Национальный парк Manuel Antonio не отождествлен с Кепосом."
+}

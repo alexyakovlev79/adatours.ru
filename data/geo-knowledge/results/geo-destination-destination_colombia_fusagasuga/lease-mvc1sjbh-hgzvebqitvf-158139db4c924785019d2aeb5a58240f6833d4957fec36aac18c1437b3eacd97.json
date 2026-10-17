@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_fusagasuga",
+  "stableId": "destination_colombia_fusagasuga",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/fusagasuga/",
+  "sourceFingerprint": "5dbb575d9a1ec8355e03d40f5cb275b9d85cf3d31659144d9b7434f412ca7bc1",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q2077525",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Fusagasug%C3%A1"
+    },
+    "geonamesId": "3682275"
+  },
+  "location": {
+    "latitude": 4.3372222222222,
+    "longitude": -74.364444444444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2077525"
+  },
+  "alternateNames": [
+    "Fusagasugá",
+    "Фусагазуга"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "selected": "Фусагасуга",
+      "reason": "Основной именованный референт — Fusagasugá в Cundinamarca, к югу от Bogotá. Hacienda Coloma раскрывает тему окрестностей и имеет собственный отдельный stable ID; допустима идентичность города с окрестностями."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "selected": "Q2077525",
+      "reason": "Основной именованный референт — Fusagasugá в Cundinamarca, к югу от Bogotá. Hacienda Coloma раскрывает тему окрестностей и имеет собственный отдельный stable ID; допустима идентичность города с окрестностями."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Fusagasug%C3%A1",
+      "reason": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 97,
+      "selected": "3682275",
+      "reason": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "4.3372222222222,-74.364444444444; settlement_center",
+      "reason": "P625 точного Wikidata-объекта: опорная точка городской застройки для геопривязки населенного места; не центр всей административной территории и не точка отдельной экскурсии."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Fusagasugá; Фусагазуга",
+      "reason": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "containedInPlace country_colombia",
+      "reason": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://haciendacoloma.com.co/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Основной именованный референт — Fusagasugá в Cundinamarca, к югу от Bogotá. Hacienda Coloma раскрывает тему окрестностей и имеет собственный отдельный stable ID; допустима идентичность города с окрестностями."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/fusagasuga/",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Live URL: HTTP 200, canonical exact, H1 соответствует, noindex отсутствует. Проверены approved MD и entry из main 989a35d14eab8a816010b3c5c40da68f62d230bb; stableId/страна/URL совпадают с задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2077525",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Основной именованный референт — Fusagasugá в Cundinamarca, к югу от Bogotá. Hacienda Coloma раскрывает тему окрестностей и имеет собственный отдельный stable ID; допустима идентичность города с окрестностями."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2077525",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Точная статья из sitelinks выбранного Wikidata; тип и география проверены."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2077525",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P1566 выбранной сущности Wikidata; соответствует именованному объекту в Colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2077525",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "P625 точного Wikidata-объекта: опорная точка городской застройки для геопривязки населенного места; не центр всей административной территории и не точка отдельной экскурсии."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2077525",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Прямые местные/международные названия объекта, подтвержденные внешней карточкой и исходными материалами; тематические поисковые метки исключены."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2077525",
+      "checkedAt": "2026-10-17T07:04:04.957Z",
+      "note": "Wikidata P17=Colombia Q739 и описание объекта подтверждают нахождение в Колумбии; используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Выбран Fusagasugá Q2077525 (94%) по имени, географии и категории city. Hacienda Coloma — самостоятельное хозяйство (есть отдельная задача), его идентификатор/координата не перенесены на город. Location — городская P625."
+}

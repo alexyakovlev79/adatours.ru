@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_machuca_san_santiago_church",
+  "stableId": "destination_chile_machuca_san_santiago_church",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/machuca-san-santiago-church/",
+  "sourceFingerprint": "1df0400268291776eb5cbaf72ce2075e9246c4a0a8e6b1b71186cf452c6c0ede",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.fundacionspa.cl/explorando-machuca/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Fundación Spa подтверждает именно Iglesia de San Santiago в высокогорной Machuca, Чили. Поселение, святой и храм различены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/machuca-san-santiago-church.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/machuca-san-santiago-church/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Iglesia_de_Machuca",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Object location церкви из Commons, а не GPS фотографа. Точки camera location из отдельных фото не использованы."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.fundacionspa.cl/explorando-machuca/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Fundación Spa подтверждает именно Iglesia de San Santiago в высокогорной Machuca, Чили. Поселение, святой и храм различены.",
+      "selected": "Церковь Сан-Сантьяго в Мачуке"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Object location церкви из Commons, а не GPS фотографа. Точки camera location из отдельных фото не использованы.",
+      "selected": "[-22.596944,-68.064167]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Точный QID/OSM-ID храма не подтвержден; QID поселения и автора фотографий не подставлялись.",
+  "location": {
+    "latitude": -22.596944,
+    "longitude": -68.064167,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Iglesia_de_Machuca"
+  }
+}

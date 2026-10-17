@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_isla_grande",
+  "stableId": "destination_colombia_isla_grande",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/isla-grande/",
+  "sourceFingerprint": "142825926644989381cbf2774221b2f95b5ff97fd2c34f54b48d7aac472a5391",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Landform",
+  "external": {
+    "wikidataQid": "Q5921647",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Isla_Grande_(Corales_del_Rosario)"
+    }
+  },
+  "location": {
+    "latitude": 10.18194444,
+    "longitude": -75.735,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5921647"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/isla-grande.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Выбран именно остров Isla Grande архипелага Corales del Rosario у Cartagena, Bolívar. Отель San Pedro de Majagua — вторичный объект. Панамская Isla Grande Q3311345 и острова Чили/Бразилии исключены."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/isla-grande/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_Grande_(Corales_del_Rosario)",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Выбран именно остров Isla Grande архипелага Corales del Rosario у Cartagena, Bolívar. Отель San Pedro de Majagua — вторичный объект. Панамская Isla Grande Q3311345 и острова Чили/Бразилии исключены."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_Grande_(Corales_del_Rosario)",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_Grande_(Corales_del_Rosario)",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5921647",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "P625 точной островной карточки и испанская Wikipedia совпадают. Опорная точка острова, не отдельного отеля и не всего архипелага."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5921647",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверены точный QID, P31/P17/P625 и sitelink; Выбран именно остров Isla Grande архипелага Corales del Rosario у Cartagena, Bolívar. Отель San Pedro de Majagua — вторичный объект. Панамская Isla Grande Q3311345 и острова Чили/Бразилии исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Isla_Grande_(Corales_del_Rosario)",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точная статья о выбранном объекте; соответствует Wikidata sitelink."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.rosariodemarhotel.com/en/what-to-visit-rosario-islands-colombia/isla-grande",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Дополнительный источник подтверждает географический контекст и именованный объект."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Исла-Гранде",
+      "reason": "Выбран именно остров Isla Grande архипелага Corales del Rosario у Cartagena, Bolívar. Отель San Pedro de Majagua — вторичный объект. Панамская Isla Grande Q3311345 и острова Чили/Бразилии исключены."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "Landform",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "10.18194444, -75.735",
+      "reason": "P625 точной островной карточки и испанская Wikipedia совпадают. Опорная точка острова, не отдельного отеля и не всего архипелага."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q5921647",
+      "reason": "Выбран именно остров Isla Grande архипелага Corales del Rosario у Cartagena, Bolívar. Отель San Pedro de Majagua — вторичный объект. Панамская Isla Grande Q3311345 и острова Чили/Бразилии исключены."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Isla_Grande_(Corales_del_Rosario)",
+      "reason": "Точная статья и sitelink выбранной Wikidata."
+    }
+  ]
+}

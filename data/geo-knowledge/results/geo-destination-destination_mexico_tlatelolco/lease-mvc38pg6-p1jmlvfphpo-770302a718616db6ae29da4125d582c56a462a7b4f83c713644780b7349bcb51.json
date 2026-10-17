@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_tlatelolco",
+  "stableId": "destination_mexico_tlatelolco",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/tlatelolco/",
+  "sourceFingerprint": "d7ad2aca9632aea0c272c148b01e52ce0a5ba5ccbd0b4625d968f2230a72929e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "square",
+  "external": {
+    "wikidataQid": "Q1851912",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Plaza_de_las_Tres_Culturas",
+      "es": "https://es.wikipedia.org/wiki/Plaza_de_las_Tres_Culturas"
+    },
+    "geonamesId": "6957085",
+    "osm": {
+      "type": "way",
+      "id": 146024221
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/mexico/place/tlatelolco/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные content MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531. Live HTTP 200, H1 совпадает, canonical точный, stable ID присутствует, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/plaza-de-las-tres-culturas/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Основной именованный референт MD — площадь Трёх культур: все абзацы описывают руины, церковь и современные здания вокруг неё. Выбран Q1851912 площади, не Q14623011 всего района Тлателолько и не древний город-государство. GeoNames 6957085 L AREA — площадь; 11561312 S ANS обозначает археологический участок и не выбран."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/plaza-de-las-tres-culturas/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Тип square соответствует главному референту страницы."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.mexicocity.cdmx.gob.mx/venues/plaza-de-las-tres-culturas/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Страна подтверждена географией первичного источника и точными MD/source-index."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1851912",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Основной именованный референт MD — площадь Трёх культур: все абзацы описывают руины, церковь и современные здания вокруг неё. Выбран Q1851912 площади, не Q14623011 всего района Тлателолько и не древний город-государство. GeoNames 6957085 L AREA — площадь; 11561312 S ANS обозначает археологический участок и не выбран."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1851912",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Точные EN/ES страницы названного памятника; проверены sitelinks или сама статья."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/6957085/",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Home › North America › Mexico MX › Mexico City 09 › Plaza de las Tres Culturas 09 Plaza de las Tres Culturas L AREA Area · MX Feature Map Hierarchy History Alternate names GeonameId 6957085 Coordinates 19.45110, -99.13720 Move 19°27′03.96″ N, 99°08′13.92″ W Population – Elevation ca. 2237 m SRTM3 2237 m · ASTER 2232 m Timezone America/Mexico_City Feature code L AREA Wikipedia – Permalink: https://www.geonames.org/6957085/plaza-de-las-tres-culturas.html .kml .rdf geotree maptree Edit Delete this place Administrative hierarchy Parents Children A Mexico MX Country A ADM1 Mexico City 09 First-order administrative div"
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/146024221/full.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Проверен первичный OSM API: {\"area\":\"yes\",\"footway\":\"yes\",\"highway\":\"pedestrian\",\"name\":\"Plaza de las Tres Culturas\",\"public\":\"yes\",\"surface\":\"paving_stones\"}"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://api.openstreetmap.org/api/0.6/way/146024221/full.json",
+      "checkedAt": "2026-10-17T07:46:39.629Z",
+      "note": "Репрезентативная точка внутри подтверждённого OSM-полигона: геометрический центр bounding box. Это не усреднение координат независимых сущностей."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 93,
+      "selected": "Q1851912",
+      "reason": "Основной именованный референт MD — площадь Трёх культур: все абзацы описывают руины, церковь и современные здания вокруг неё. Выбран Q1851912 площади, не Q14623011 всего района Тлателолько и не древний город-государство. GeoNames 6957085 L AREA — площадь; 11561312 S ANS обозначает археологический участок и не выбран."
+    },
+    {
+      "field": "entityClass",
+      "probability": 93,
+      "selected": "square",
+      "reason": "Тип основного референта установлен по MD и географическому источнику."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна объекта совпадает в источнике и текущем проекте."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 93,
+      "selected": "Q1851912",
+      "reason": "Выбран точный главный референт с учётом административных/исторических альтернатив."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "en:Plaza_de_las_Tres_Culturas; es:Plaza_de_las_Tres_Culturas",
+      "reason": "Точное название, география и тип памятника совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 90,
+      "selected": "6957085",
+      "reason": "Проверены первичная запись, страна, имя и feature code; административные одноимённые записи исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "way/146024221",
+      "reason": "Тип, собственное имя и положение соответствуют выбранному объекту. "
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "19.45173745, -99.13619345000001",
+      "reason": "Положение точного объекта подтверждено первичным географическим источником; роль representative."
+    }
+  ],
+  "reviewNote": "Основной именованный референт MD — площадь Трёх культур: все абзацы описывают руины, церковь и современные здания вокруг неё. Выбран Q1851912 площади, не Q14623011 всего района Тлателолько и не древний город-государство. GeoNames 6957085 L AREA — площадь; 11561312 S ANS обозначает археологический участок и не выбран.",
+  "location": {
+    "latitude": 19.45173745,
+    "longitude": -99.13619345000001,
+    "pointRole": "representative",
+    "coordinateSource": "https://api.openstreetmap.org/api/0.6/way/146024221/full.json"
+  }
+}

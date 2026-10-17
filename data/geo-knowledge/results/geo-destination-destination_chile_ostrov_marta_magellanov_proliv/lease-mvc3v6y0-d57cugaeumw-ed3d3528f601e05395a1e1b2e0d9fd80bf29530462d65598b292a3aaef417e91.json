@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ostrov_marta_magellanov_proliv",
+  "stableId": "destination_chile_ostrov_marta_magellanov_proliv",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/marta-island-strait-of-magellan/",
+  "sourceFingerprint": "86f6c50c2f3aa1cd4d493b3c1f88588d01b09bcb73dab5a221a6aece0d633c74",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Марта (Магелланов пролив)",
+      "reason": "Точный остров Marta у Cabo Negro в Магеллановом проливе к северо-востоку от Пунта-Аренаса, близ острова Magdalena."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q23304843",
+      "reason": "Точный остров Marta у Cabo Negro в Магеллановом проливе к северо-востоку от Пунта-Аренаса, близ острова Magdalena."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3880418",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-52.847222222222,-70.58]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/marta-island-strait-of-magellan/",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Точный остров Marta у Cabo Negro в Магеллановом проливе к северо-востоку от Пунта-Аренаса, близ острова Magdalena."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/marta-island-strait-of-magellan.md",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23304843",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Точный остров Marta у Cabo Negro в Магеллановом проливе к северо-востоку от Пунта-Аренаса, близ острова Magdalena."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23304843",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q23304843",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.conaf.cl/parque_nacionales/monumento-natural-los-pinguinos/",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.conaf.cl/parque_nacionales/monumento-natural-los-pinguinos/",
+      "checkedAt": "2026-10-17T08:14:10.653Z",
+      "note": "Точный остров Marta у Cabo Negro в Магеллановом проливе к северо-востоку от Пунта-Аренаса, близ острова Magdalena."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q23304843",
+    "geonamesId": "3880418"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "location": {
+    "latitude": -52.847222222222,
+    "longitude": -70.58,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q23304843"
+  },
+  "reviewNote": "Острова Marta Q23304840 (49°S,75°W) и Q23304838 вне пролива отвергнуты. Остров — часть Los Pingüinos, не весь памятник природы."
+}

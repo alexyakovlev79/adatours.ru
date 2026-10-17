@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_cayambe",
+  "stableId": "destination_ecuador_cayambe",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/cayambe/",
+  "sourceFingerprint": "ff23ede36e910a933b0e33618ff6fc92b27d24c8b3a229bd6cfe9175cf0676f4",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1051957",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Cayambe,_Ecuador"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Каямбе",
+      "reason": "MD прямо определяет Каямбе как город на пути из Кито к Отавало. Выбран Q1051957 (город), не вулкан Cayambe и не кантон."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1051957",
+      "reason": "MD прямо определяет Каямбе как город на пути из Кито к Отавало. Выбран Q1051957 (город), не вулкан Cayambe и не кантон."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Cayambe,_Ecuador",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "0.04388888888888889, -78.15611111111112",
+      "reason": "Координаты выбранного объекта из указанного источника; роль settlement_center. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cayambe.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. MD прямо определяет Каямбе как город на пути из Кито к Отавало. Выбран Q1051957 (город), не вулкан Cayambe и не кантон."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/cayambe/",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1051957",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "MD прямо определяет Каямбе как город на пути из Кито к Отавало. Выбран Q1051957 (город), не вулкан Cayambe и не кантон."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cayambe,_Ecuador",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1051957",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль settlement_center. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/cayambe.md",
+      "checkedAt": "2026-10-17T08:29:59.446Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": 0.04388888888888889,
+    "longitude": -78.15611111111112,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1051957"
+  }
+}

@@ -20,8 +20,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: npm
-      - run: npm ci --ignore-scripts
+      - run: npm install --ignore-scripts --no-package-lock --no-audit --no-fund
       - run: node --check scripts/schema-geo-source-collector.mjs
       - name: Collect exact source-backed GEO results
         env:

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_krepost_san_lorenso",
+  "stableId": "destination_panama_krepost_san_lorenso",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/san-lorenzo-fort/",
+  "sourceFingerprint": "4c146615993a2f0918ad96a69bbf254d6e95463cd0f5bf74947edf91fa6da118",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Крепость Сан-Лоренсо",
+      "reason": "Крепость Сан-Лоренсо — Fuerte de San Lorenzo у устья Чагрес на карибской стороне Панамы. MD ошибочно имеет destinationType city; фактический объект — крепость."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1034179",
+      "reason": "Крепость Сан-Лоренсо — Fuerte de San Lorenzo у устья Чагрес на карибской стороне Панамы. MD ошибочно имеет destinationType city; фактический объект — крепость."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "9.322586944444444,-80.002425",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/san-lorenzo-fort.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Крепость Сан-Лоренсо — Fuerte de San Lorenzo у устья Чагрес на карибской стороне Панамы. MD ошибочно имеет destinationType city; фактический объект — крепость."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1034179",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Крепость Сан-Лоренсо — Fuerte de San Lorenzo у устья Чагрес на карибской стороне Панамы. MD ошибочно имеет destinationType city; фактический объект — крепость."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1034179",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Крепость Сан-Лоренсо — Fuerte de San Lorenzo у устья Чагрес на карибской стороне Панамы. MD ошибочно имеет destinationType city; фактический объект — крепость."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1034179",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1034179",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/san-lorenzo-fort/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1034179"
+  },
+  "location": {
+    "latitude": 9.322586944444444,
+    "longitude": -80.002425,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1034179"
+  },
+  "reviewNote": "destinationType city — неточность исходного MD, сам контент не изменён. QID всей серийной территории ЮНЕСКО не присвоен отдельной крепости."
+}

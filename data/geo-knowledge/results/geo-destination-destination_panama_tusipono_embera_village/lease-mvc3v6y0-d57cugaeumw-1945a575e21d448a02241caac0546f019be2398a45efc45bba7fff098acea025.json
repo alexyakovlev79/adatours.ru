@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_tusipono_embera_village",
+  "stableId": "destination_panama_tusipono_embera_village",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/tusipono-embera-village/",
+  "sourceFingerprint": "d6fd43cd4fa8a3dc821079f55da19da0938889bb4910d39e227a8a568e6b212a",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Тусипоно — деревня эмбера",
+      "reason": "Именованная община Tusípono на реке Чагрес подтверждается национальной туристической администрацией Панамы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/tusipono-embera-village/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Именованная община Tusípono на реке Чагрес подтверждается национальной туристической администрацией Панамы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/tusipono-embera-village.md",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.atp.gob.pa/pueblos-indigenas/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.atp.gob.pa/pueblos-indigenas/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Именованная община Tusípono на реке Чагрес подтверждается национальной туристической администрацией Панамы."
+    }
+  ],
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "reviewNote": "Точная точка деревни и отдельный QID после поиска не подтверждены; поля опущены, не подменены общей общиной Embera."
+}

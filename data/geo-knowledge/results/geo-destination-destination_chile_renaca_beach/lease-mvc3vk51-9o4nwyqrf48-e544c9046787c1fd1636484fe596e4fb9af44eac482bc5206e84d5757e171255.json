@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_renaca_beach",
+  "stableId": "destination_chile_renaca_beach",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/renaca-beach/",
+  "sourceFingerprint": "47c18f506a9ac1a3b49cb6d7d1bc67d4f3bf74115041f4542f20cc1c7863fb4a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2737863"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2737863",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Пляж Reñaca в Viña del Mar. Сопоставление Q2737863 вероятно как общеупотребительное место «Reñaca town and beach area», центр туристического описания — побережье."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/renaca-beach.md",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/renaca-beach/",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2737863",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Q2737863 объединяет Reñaca и beach area; наиболее вероятное именованное соответствие при 82%. Координаты выбраны отдельно для точного пляжа."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/es/W23390670",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Опорная точка пляжа OSM way 23390670 (natural=beach), не точка поселения из Wikidata."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2737863",
+      "checkedAt": "2026-10-17T08:17:29.425Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "reason": "Пляж Reñaca в Viña del Mar. Сопоставление Q2737863 вероятно как общеупотребительное место «Reñaca town and beach area», центр туристического описания — побережье.",
+      "selected": "Пляж Реньяка"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 82,
+      "reason": "Q2737863 объединяет Reñaca и beach area; наиболее вероятное именованное соответствие при 82%. Координаты выбраны отдельно для точного пляжа.",
+      "selected": "Q2737863"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка пляжа OSM way 23390670 (natural=beach), не точка поселения из Wikidata.",
+      "selected": "[-32.96849,-71.5463]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -32.96849,
+    "longitude": -71.5463,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/es/W23390670"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_cuba_gavana",
+  "stableId": "destination_cuba_gavana",
+  "kind": "destination",
+  "canonicalPath": "/cuba/place/havana/",
+  "sourceFingerprint": "b8e9eec67a10a3fd99285e67fbf4e798d59b956585fcf24aec648f09819defb3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q1563",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Havana"
+    }
+  },
+  "location": {
+    "latitude": 23.136666666667,
+    "longitude": -82.358888888889,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1563"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_cuba"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/gavana.md",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Сверены stableID, approved MD, canonical URL, страна и смысл текста. Город Havana / La Habana, столица Кубы. Это не отдельная провинция и не только историческая Old Havana с крепостями. UNESCO204 относится к историческому ансамблю и не присваивается всей городской странице."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/cuba/place/havana/",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точный опубликованный HTML HTTP200, ожидаемый H1 и self-canonical; noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Havana",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Город Havana / La Habana, столица Кубы. Это не отдельная провинция и не только историческая Old Havana с крепостями. UNESCO204 относится к историческому ансамблю и не присваивается всей городской странице."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Havana",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Класс основного референта установлен по содержанию источника. Город Havana / La Habana, столица Кубы. Это не отдельная провинция и не только историческая Old Havana с крепостями. UNESCO204 относится к историческому ансамблю и не присваивается всей городской странице."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Havana",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Страна объекта совпадает с countryId текущего MD: country_cuba"
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1563",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "P625 точной городской Wikidata совпадает с координатами точной Wikipedia. Служебные/исторические P17 не используются вместо современной Кубы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1563",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Проверены точный QID, P31/P17/P625 и EN sitelink. Город Havana / La Habana, столица Кубы. Это не отдельная провинция и не только историческая Old Havana с крепостями. UNESCO204 относится к историческому ансамблю и не присваивается всей городской странице."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Havana",
+      "checkedAt": "2026-10-17T07:16:15.877Z",
+      "note": "Точная статья о выбранном именованном объекте, соответствующая sitelink Wikidata."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Гавана",
+      "reason": "Город Havana / La Habana, столица Кубы. Это не отдельная провинция и не только историческая Old Havana с крепостями. UNESCO204 относится к историческому ансамблю и не присваивается всей городской странице."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "City",
+      "reason": "Классификация следует фактическому основному референту, а не ошибочному destinationType MD."
+    },
+    {
+      "field": "relationships.country_cuba",
+      "probability": 99,
+      "selected": "country_cuba",
+      "reason": "Страна подтверждена MD и точным внешним источником."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "23.136666666667, -82.358888888889",
+      "reason": "P625 точной городской Wikidata совпадает с координатами точной Wikipedia. Служебные/исторические P17 не используются вместо современной Кубы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 100,
+      "selected": "Q1563",
+      "reason": "Город Havana / La Habana, столица Кубы. Это не отдельная провинция и не только историческая Old Havana с крепостями. UNESCO204 относится к историческому ансамблю и не присваивается всей городской странице."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 100,
+      "selected": "https://en.wikipedia.org/wiki/Havana",
+      "reason": "Точная статья выбранного объекта."
+    }
+  ]
+}

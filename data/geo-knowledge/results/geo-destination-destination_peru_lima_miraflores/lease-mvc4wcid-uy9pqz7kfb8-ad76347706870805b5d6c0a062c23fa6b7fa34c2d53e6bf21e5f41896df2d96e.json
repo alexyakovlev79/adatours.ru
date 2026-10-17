@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_lima_miraflores",
+  "stableId": "destination_peru_lima_miraflores",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/miraflores-lima/",
+  "sourceFingerprint": "886edab5b91ea099e6b412559509135cadf58e01a6cfaba0a3fe2e5a50f894d9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1026229",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Miraflores_District,_Lima"
+    }
+  },
+  "location": {
+    "latitude": -12.1175,
+    "longitude": -77.04306,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Miraflores_District,_Lima"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miraflores_District,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/miraflores-lima.md",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/peru/place/miraflores-lima/",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1026229",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miraflores_District,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miraflores_District,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miraflores_District,_Lima",
+      "checkedAt": "2026-10-17T08:38:03.599Z",
+      "note": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Мирафлорес в Лиме",
+      "reason": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q1026229",
+      "reason": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Miraflores_District,_Lima",
+      "reason": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-12.1175,-77.04306",
+      "reason": "Опубликованная точка соответствует выбранному объекту; роль: representative."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 98,
+      "selected": "country_peru",
+      "reason": "Miraflores — район города Lima, Peru, над тихоокеанским берегом; основной объект MD район, а Parque del Amor — отдельная достопримечательность. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null
+}

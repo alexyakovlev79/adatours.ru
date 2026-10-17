@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_vilyaermosa",
+  "stableId": "destination_mexico_vilyaermosa",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/villahermosa/",
+  "sourceFingerprint": "2142da4eb1679e84e2119aee3f356d35a00efbd878c5cd4b6363fc3cf9ff7904",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q210886",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Villahermosa"
+    },
+    "geonamesId": "3514670",
+    "osm": {
+      "type": "node",
+      "id": 269908777
+    },
+    "officialUrl": "https://www.villahermosa.gob.mx/"
+  },
+  "location": {
+    "latitude": 17.98625,
+    "longitude": -92.93928,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/villahermosa.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Город Вильяэрмоса, столица мексиканского штата Табаско. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/villahermosa/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210886",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Город Вильяэрмоса, столица мексиканского штата Табаско. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Villahermosa",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Город Вильяэрмоса, столица мексиканского штата Табаско."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 3514670 в первичном MX.zip: feature code PPLA; страна MX. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/269908777",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: node/269908777. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 17.98625, -92.93928. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q210886",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.villahermosa.gob.mx/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Вильяэрмоса, столица мексиканского штата Табаско. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_vilyaermosa"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/villahermosa/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись.",
+      "selected": "Q210886"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/Villahermosa"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс PPLA. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись.",
+      "selected": "3514670"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись.",
+      "selected": "node/269908777"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись.",
+      "selected": "17.98625,-92.93928"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись.",
+      "selected": "https://www.villahermosa.gob.mx/"
+    }
+  ],
+  "reviewNote": "GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/villahermosa/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Город Вильяэрмоса, столица мексиканского штата Табаско.",
+      "GeoNames PPLA и OSM place=city Q210886 подтверждают Вильяэрмосу Табаско. Официальный сайт обслуживает Ayuntamiento de Centro, административным центром которого является город; это не основание подменять город муниципальной территорией. P625 и городские опорные точки различаются, координаты не усреднялись.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

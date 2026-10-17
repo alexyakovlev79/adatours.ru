@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_uakechula",
+  "stableId": "destination_mexico_uakechula",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/huaquechula/",
+  "sourceFingerprint": "0f9bd6a9e7f2878697f904130197162e9690b4c262ae3af56e4b697b72e29a2c",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q5926132",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Huaquechula"
+    },
+    "geonamesId": "3527006",
+    "osm": {
+      "type": "node",
+      "id": 7068227555
+    },
+    "officialUrl": "https://huaquechula.gob.mx/"
+  },
+  "location": {
+    "latitude": 18.77116,
+    "longitude": -98.5446,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/huaquechula.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Поселение Уакечула в Пуэбле, известное семейными алтарями Дня мёртвых. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/huaquechula/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5926132",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Поселение Уакечула в Пуэбле, известное семейными алтарями Дня мёртвых. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Huaquechula",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Поселение Уакечула в Пуэбле, известное семейными алтарями Дня мёртвых."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 3527006 в первичном MX.zip: feature code PPLA2; страна MX. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/7068227555",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: node/7068227555. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 18.77116, -98.5446. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5926132",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://huaquechula.gob.mx/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Поселение Уакечула в Пуэбле, известное семейными алтарями Дня мёртвых. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_uakechula"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/huaquechula/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200.",
+      "selected": "Q5926132"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/Huaquechula"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс PPLA2. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200.",
+      "selected": "3527006"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200.",
+      "selected": "node/7068227555"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200.",
+      "selected": "18.77116,-98.5446"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200.",
+      "selected": "https://huaquechula.gob.mx/"
+    }
+  ],
+  "reviewNote": "Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/huaquechula/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Поселение Уакечула в Пуэбле, известное семейными алтарями Дня мёртвых.",
+      "Идентифицирован муниципальный центр Huaquechula в Пуэбле, а не вся муниципальная территория. OSM place=town и GeoNames PPLA2 согласуются с точкой поселения; сайт Ayuntamiento отвечает HTTP 200.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

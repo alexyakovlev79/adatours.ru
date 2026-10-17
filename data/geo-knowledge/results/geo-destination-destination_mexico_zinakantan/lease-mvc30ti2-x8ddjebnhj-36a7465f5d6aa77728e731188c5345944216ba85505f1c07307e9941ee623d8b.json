@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_zinakantan",
+  "stableId": "destination_mexico_zinakantan",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/zinacantan/",
+  "sourceFingerprint": "c58f10b438c86aae49803bd4cb1d836ed538be7075a8be715a1385f38c801aed",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q2477628",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Zinacant%C3%A1n"
+    },
+    "geonamesId": "3514026",
+    "osm": {
+      "type": "node",
+      "id": 2191073879
+    },
+    "officialUrl": "https://zinacantan.gob.mx/"
+  },
+  "location": {
+    "latitude": 16.76,
+    "longitude": -92.72299,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/zinacantan.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Поселение Зинакантан в Чьяпасе, центр культуры цоциль близ Сан-Кристобаля. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/zinacantan/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477628",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Поселение Зинакантан в Чьяпасе, центр культуры цоциль близ Сан-Кристобаля. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Zinacant%C3%A1n",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Поселение Зинакантан в Чьяпасе, центр культуры цоциль близ Сан-Кристобаля."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 3514026 в первичном MX.zip: feature code PPLA2; страна MX. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/2191073879",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: node/2191073879. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 16.76, -92.72299. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2477628",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://zinacantan.gob.mx/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Поселение Зинакантан в Чьяпасе, центр культуры цоциль близ Сан-Кристобаля. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_zinakantan"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/zinacantan/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения.",
+      "selected": "Q2477628"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/Zinacant%C3%A1n"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс PPLA2. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения.",
+      "selected": "3514026"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения.",
+      "selected": "node/2191073879"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения.",
+      "selected": "16.76,-92.72299"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения.",
+      "selected": "https://zinacantan.gob.mx/"
+    }
+  ],
+  "reviewNote": "Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/zinacantan/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Поселение Зинакантан в Чьяпасе, центр культуры цоциль близ Сан-Кристобаля.",
+      "Сопоставлено само поселение Zinacantán: GeoNames PPLA2 и OSM place=town. Сайт администрации относится к муниципалитету с этим центром, но муниципальная площадь не принимается за геометрию поселения.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

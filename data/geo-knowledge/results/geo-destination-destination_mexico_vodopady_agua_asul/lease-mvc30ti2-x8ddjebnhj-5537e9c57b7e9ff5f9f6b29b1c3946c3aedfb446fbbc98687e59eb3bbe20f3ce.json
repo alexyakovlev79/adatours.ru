@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_vodopady_agua_asul",
+  "stableId": "destination_mexico_vodopady_agua_asul",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/agua-azul-waterfalls/",
+  "sourceFingerprint": "2916490fa7fd0e87c6b9bd4119b8af54ca57844300367d915f5d077caa318382",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q577886",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Agua_Azul"
+    },
+    "geonamesId": "9627386",
+    "osm": {
+      "type": "node",
+      "id": 337406368
+    },
+    "officialUrl": "https://descubreanp.conanp.gob.mx/es/conanp/ANP?suri=27"
+  },
+  "location": {
+    "latitude": 17.2552055,
+    "longitude": -92.1150338,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/337406368"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/agua-azul-waterfalls.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Каскады водопадов Агуа-Асуль в Чьяпасе. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/agua-azul-waterfalls/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q577886",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Каскады водопадов Агуа-Асуль в Чьяпасе. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Agua_Azul",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Каскады водопадов Агуа-Асуль в Чьяпасе."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 9627386 в первичном MX.zip: feature code FLLS; страна MX. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/337406368",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: node/337406368. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/337406368",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 17.2552055, -92.1150338. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q577886",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://descubreanp.conanp.gob.mx/es/conanp/ANP?suri=27",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Каскады водопадов Агуа-Асуль в Чьяпасе. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_vodopady_agua_asul"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/agua-azul-waterfalls/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются.",
+      "selected": "Q577886"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/Agua_Azul"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс FLLS. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются.",
+      "selected": "9627386"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются.",
+      "selected": "node/337406368"
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются.",
+      "selected": "17.2552055,-92.1150338"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются.",
+      "selected": "https://descubreanp.conanp.gob.mx/es/conanp/ANP?suri=27"
+    }
+  ],
+  "reviewNote": "Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/agua-azul-waterfalls/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Каскады водопадов Агуа-Асуль в Чьяпасе.",
+      "Выбраны водопады: GeoNames Cascadas Agua Azul FLLS, не одноимённые населённые пункты и не водоток 9627387. OSM waterway=waterfall с Q577886 обозначает основную точку каскадов рядом с P625. GeoNames расположен выше по течению примерно на 700 м; точки не усреднялись. Страница CONANP описывает каскады и окружаемую охраняемую территорию; граница ANP и WDPA ID водопадам не присваиваются.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_national_museum_of_anthropology",
+  "stableId": "destination_mexico_national_museum_of_anthropology",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/national-museum-of-anthropology/",
+  "sourceFingerprint": "60c8dcfe9822bc5efd3e5aaa81bbd6d64af53510923e4148db30c80b499d8f94",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "entityClass": "museum",
+  "external": {
+    "wikidataQid": "Q524249",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/National_Museum_of_Anthropology_(Mexico)"
+    },
+    "geonamesId": "6458949",
+    "osm": {
+      "type": "way",
+      "id": 433756023
+    },
+    "officialUrl": "https://www.inah.gob.mx/museos/museo-nacional-de-antropologia"
+  },
+  "location": {
+    "latitude": 19.42613,
+    "longitude": -99.18633,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/national-museum-of-anthropology.md",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Национальный музей антропологии в Чапультепеке, Мехико. Сверены stableId, исходный MD и канонический адрес."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/national-museum-of-anthropology/",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический запрос production: HTTP 200; проверены канонический URL, H1 и stableId страницы."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q524249",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Национальный музей антропологии в Чапультепеке, Мехико. Проверены P31, P17=Q96, P625 и доступные внешние идентификаторы. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/National_Museum_of_Anthropology_(Mexico)",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена статья о выбранном объекте и её соответствие содержанию MD. Национальный музей антропологии в Чапультепеке, Мехико."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверена запись 6458949 в первичном MX.zip: feature code MUS; страна MX. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/433756023",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Проверен первичный OSM XML: way/433756023. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Выбрана WGS84 точка 19.42613, -99.18633. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q524249",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "P17=Q96 (Mexico); страна согласована с MD, GeoNames MX и локальным контекстом объекта."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.inah.gob.mx/museos/museo-nacional-de-antropologia",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Официальный сайт администрации или карточка учреждения/оператора. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.openstreetmap.org/way/433756023",
+      "checkedAt": "2026-10-17T07:41:51.233Z",
+      "note": "Фактический тип объекта подтверждён профильными тегами OSM, Wikidata P31 и INAH."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Национальный музей антропологии в Чапультепеке, Мехико. Имя, тип и география согласованы по независимым источникам.",
+      "selected": "destination_mexico_national_museum_of_anthropology"
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 100,
+      "reason": "Страница открыта; фактический HTTP 200 и правильная каноническая идентичность.",
+      "selected": "https://adatours.ru/mexico/place/national-museum-of-anthropology/"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "reason": "MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна.",
+      "selected": "Q524249"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Выбрана проверенная статья о том же объекте в Мексике.",
+      "selected": "https://en.wikipedia.org/wiki/National_Museum_of_Anthropology_(Mexico)"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "reason": "Проверен первичный MX dump, точное имя/контекст, класс MUS. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна.",
+      "selected": "6458949"
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "reason": "Точный объект по имени, тегам, положению и доступным cross-IDs. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна.",
+      "selected": "way/433756023"
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "reason": "Опорная точка выбранного объекта; расхождения источников не усреднялись. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна.",
+      "selected": "19.42613,-99.18633"
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 100,
+      "reason": "Страна Мексика подтверждена P17, GeoNames MX и исходным описанием.",
+      "selected": "country_mexico"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "reason": "Официальный домен/карточка точного объекта подтверждены первичным источником. MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна.",
+      "selected": "https://www.inah.gob.mx/museos/museo-nacional-de-antropologia"
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "reason": "Содержание MD и профильные первичные источники подтверждают тип.",
+      "selected": "museum"
+    }
+  ],
+  "reviewNote": "MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/national-museum-of-anthropology/"
+    ],
+    "findings": [
+      "HTTP 200; совпадают canonical, H1 и stableId.",
+      "Национальный музей антропологии в Чапультепеке, Мехико.",
+      "MD описывает конкретный музей, несмотря на destinationType route_cluster. Выбраны GeoNames MUS, OSM tourism=museum Q524249 и карточка INAH с HTTP 200. Координата GeoNames внутри полного контура здания way 433756023. Исключены одноимённые музеи Мадрида/Уругвая, замок Чапультепек и музей Руфино Тамайо. Основной домен mna.inah.gob.mx при прямом запросе вернул HTTP 468; официальная карточка INAH доступна.",
+      "Ревизия целостности: заменяет ошибочную привязку файла предыдущей партии; идентичность и все поля этого паспорта проверены перед фиксацией."
+    ]
+  }
+}

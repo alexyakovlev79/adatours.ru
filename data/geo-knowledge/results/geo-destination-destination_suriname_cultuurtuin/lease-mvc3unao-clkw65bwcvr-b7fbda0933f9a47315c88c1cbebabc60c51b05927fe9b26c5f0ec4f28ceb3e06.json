@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_suriname_cultuurtuin",
+  "stableId": "destination_suriname_cultuurtuin",
+  "kind": "destination",
+  "canonicalPath": "/suriname/place/cultuurtuin/",
+  "sourceFingerprint": "c7027a995afb9c73a0c53457e3ae021a6411a15c4037d293352ea7a178ea7f21",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Ботанический сад Култюртуин",
+      "reason": "Cultuurtuin — ботанический сад/городской парк Парамарибо возле стадиона; подтверждён ботанической коллекцией NYBG. Основной референт — комплекс Cultuurtuin, не отдельный соседний зоопарк Q922908."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 92,
+      "selected": "Q2301123",
+      "reason": "Cultuurtuin — ботанический сад/городской парк Парамарибо возле стадиона; подтверждён ботанической коллекцией NYBG. Основной референт — комплекс Cultuurtuin, не отдельный соседний зоопарк Q922908."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "5.847275,-55.15951944444444",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "probability": 99,
+      "selected": "country_suriname",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"node\",\"id\":4480956284}",
+      "reason": "P11693 node of Cultuurtuin in Wikidata and matching Commons category, distinct from zoo."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/cultuurtuin.md",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Current approved MD and stable ID checked. Cultuurtuin — ботанический сад/городской парк Парамарибо возле стадиона; подтверждён ботанической коллекцией NYBG. Основной референт — комплекс Cultuurtuin, не отдельный соседний зоопарк Q922908."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://sweetgum.nybg.org/science/projects/barneby/specimen-details/?irn=2017906",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Cultuurtuin — ботанический сад/городской парк Парамарибо возле стадиона; подтверждён ботанической коллекцией NYBG. Основной референт — комплекс Cultuurtuin, не отдельный соседний зоопарк Q922908."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2301123",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Cultuurtuin — ботанический сад/городской парк Парамарибо возле стадиона; подтверждён ботанической коллекцией NYBG. Основной референт — комплекс Cultuurtuin, не отдельный соседний зоопарк Q922908."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2301123",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_suriname",
+      "sourceUrl": "https://sweetgum.nybg.org/science/projects/barneby/specimen-details/?irn=2017906",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/suriname/place/cultuurtuin/",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "Direct GET 200, matching canonical and entity title, no noindex."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2301123",
+      "checkedAt": "2026-10-17T08:04:59.181Z",
+      "note": "P11693 node of Cultuurtuin in Wikidata and matching Commons category, distinct from zoo."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_suriname"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2301123",
+    "osm": {
+      "type": "node",
+      "id": 4480956284
+    }
+  },
+  "location": {
+    "latitude": 5.847275,
+    "longitude": -55.15951944444444,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2301123"
+  },
+  "reviewNote": "QID главного референта Cultuurtuin принят 92%; соседний Paramaribo Zoo не является sameAs сада."
+}

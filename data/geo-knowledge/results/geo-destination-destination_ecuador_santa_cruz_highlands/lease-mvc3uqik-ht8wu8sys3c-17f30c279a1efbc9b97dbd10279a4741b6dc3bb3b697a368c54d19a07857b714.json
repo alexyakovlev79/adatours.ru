@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_santa_cruz_highlands",
+  "stableId": "destination_ecuador_santa_cruz_highlands",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/santa-cruz-highlands/",
+  "sourceFingerprint": "15df7f948c6985b34267218c17b73d0736915b3c05efbfa8f426f4713c3b0e0b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_ecuador_ostrov_santa_krus_galapagosy"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/santa-cruz-highlands/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Charles Darwin Foundation visitor guidance names Santa Cruz Highlands; cruise operator Royal Galapagos describes same green interior with wild giant tortoises, matching MD."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.darwinfoundation.org/en/visit-galapagos/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Charles Darwin Foundation visitor guidance names Santa Cruz Highlands; cruise operator Royal Galapagos describes same green interior with wild giant tortoises, matching MD."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "sourceUrl": "https://www.darwinfoundation.org/en/visit-galapagos/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Santa Cruz Highlands is explicitly named interior area of Santa Cruz island in Foundation guidance and own MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Santa Cruz Highlands, Galápagos",
+      "reason": "Charles Darwin Foundation visitor guidance names Santa Cruz Highlands; cruise operator Royal Galapagos describes same green interior with wild giant tortoises, matching MD."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Charles Darwin Foundation visitor guidance names Santa Cruz Highlands; cruise operator Royal Galapagos describes same green interior with wild giant tortoises, matching MD."
+    },
+    {
+      "field": "relationships.destination_ecuador_ostrov_santa_krus_galapagosy",
+      "probability": 99,
+      "selected": "destination_ecuador_ostrov_santa_krus_galapagosy",
+      "reason": "Explicit island-name containment, not containment in individual ranch or crater."
+    }
+  ],
+  "reviewNote": "Broad named interior highland area; not entire Santa Cruz island, one ranch or Los Gemelos. No single representative coordinate or QID established."
+}

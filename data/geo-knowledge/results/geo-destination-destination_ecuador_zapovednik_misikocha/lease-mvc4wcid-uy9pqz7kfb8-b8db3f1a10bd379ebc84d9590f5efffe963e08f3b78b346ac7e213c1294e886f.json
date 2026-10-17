@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_zapovednik_misikocha",
+  "stableId": "destination_ecuador_zapovednik_misikocha",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/misicocha-reserve/",
+  "sourceFingerprint": "01c5ed685782cb6008cd3708c1eb86138773dd8333dce5ec985ffb4148ef1d67",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://casadelsuizo.com/activities/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Misicocha (Cosano) — частный участок первичного амазонского леса La Casa del Suizo, достигаемый короткой поездкой на каноэ; этот контекст точно совпадает с MD. Гербарий NYBG отдельно помещает Misicocha у Ahuano, Napo, Ecuador."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/misicocha-reserve.md",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Точный действующий MD, stable ID, страна и смысл страницы сверены с задачей; SHA совпадает."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/misicocha-reserve/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Публичный URL вернул HTTP 200; canonical совпадает с URL задачи."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://casadelsuizo.com/activities/",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Misicocha (Cosano) — частный участок первичного амазонского леса La Casa del Suizo, достигаемый короткой поездкой на каноэ; этот контекст точно совпадает с MD. Гербарий NYBG отдельно помещает Misicocha у Ahuano, Napo, Ecuador. Страна подтверждена источником и исходным MD."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://sweetgum.nybg.org/science/biocultural/specimen-details/?irn=411071",
+      "checkedAt": "2026-10-17T08:35:11.175Z",
+      "note": "Коллекционный образец помещает Misicocha в Napo, Ecuador, в 20 минутах вверх по реке от Ahuano."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Заповедник Мисикоча",
+      "reason": "Misicocha (Cosano) — частный участок первичного амазонского леса La Casa del Suizo, достигаемый короткой поездкой на каноэ; этот контекст точно совпадает с MD. Гербарий NYBG отдельно помещает Misicocha у Ahuano, Napo, Ecuador."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Misicocha (Cosano) — частный участок первичного амазонского леса La Casa del Suizo, достигаемый короткой поездкой на каноэ; этот контекст точно совпадает с MD. Гербарий NYBG отдельно помещает Misicocha у Ahuano, Napo, Ecuador. Страна подтверждена источником и исходным MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Самостоятельный QID и координата лесного участка не подтверждены; адрес лоджа не использован."
+}

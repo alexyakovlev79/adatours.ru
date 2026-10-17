@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_buhta_ejnsvort",
+  "stableId": "destination_chile_buhta_ejnsvort",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ainsworth-bay/",
+  "sourceFingerprint": "3f7148c09a9cf744d12edecc8dee92326dd87ff621e58ac5f7d5bd543f806ff6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q4697509",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ainsworth_Bay_(Chile)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ainsworth_Bay_(Chile)",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Бухта Ainsworth у Marinelli Glacier в Tierra del Fuego, Чили, внутри Almirantazgo Sound; не бухта Антарктиды."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/ainsworth-bay.md",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/ainsworth-bay/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://mapcarta.com/20146362",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Бухта Ainsworth у Marinelli Glacier в Tierra del Fuego, Чили, внутри Almirantazgo Sound; не бухта Антарктиды."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ainsworth_Bay_(Chile)",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Бухта Ainsworth у Marinelli Glacier в Tierra del Fuego, Чили, внутри Almirantazgo Sound; не бухта Антарктиды."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ainsworth_Bay_(Chile)",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Опорная точка бухты из enwiki, не место высадки и не ледник. Отличающиеся точки OSM/GeoNames не усреднялись."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ainsworth_Bay_(Chile)",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "reason": "Бухта Ainsworth у Marinelli Glacier в Tierra del Fuego, Чили, внутри Almirantazgo Sound; не бухта Антарктиды.",
+      "selected": "Бухта Эйнсворт"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Бухта Ainsworth у Marinelli Glacier в Tierra del Fuego, Чили, внутри Almirantazgo Sound; не бухта Антарктиды.",
+      "selected": "Q4697509"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Бухта Ainsworth у Marinelli Glacier в Tierra del Fuego, Чили, внутри Almirantazgo Sound; не бухта Антарктиды.",
+      "selected": "https://en.wikipedia.org/wiki/Ainsworth_Bay_(Chile)"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка бухты из enwiki, не место высадки и не ледник. Отличающиеся точки OSM/GeoNames не усреднялись.",
+      "selected": "[-54.39,-69.589]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -54.39,
+    "longitude": -69.589,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Ainsworth_Bay_(Chile)"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_santa_fe_island",
+  "stableId": "destination_ecuador_santa_fe_island",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/santa-fe-island/",
+  "sourceFingerprint": "810e58396b4ca0cc91f30e9d9d54de26bae96aa02913577981923cab88da60e0",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q408211",
+    "geonamesId": "3651428"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/santa-fe-island/",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q408211",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q408211",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q408211",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q408211",
+      "checkedAt": "2026-10-17T08:27:56.167Z",
+      "note": "Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Santa Fe Island / Barrington Island",
+      "reason": "Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q408211",
+      "reason": "Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3651428",
+      "reason": "Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-0.82,-90.06",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 98,
+      "selected": "country_ecuador",
+      "reason": "Exact Galápagos island southeast of Santa Cruz; primary page referent is island with diving sites, not a single dive station."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -0.82,
+    "longitude": -90.06,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q408211"
+  }
+}

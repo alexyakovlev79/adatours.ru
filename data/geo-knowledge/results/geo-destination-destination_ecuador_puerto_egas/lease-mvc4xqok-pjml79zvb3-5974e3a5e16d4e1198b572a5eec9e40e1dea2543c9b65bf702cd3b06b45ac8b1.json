@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_puerto_egas",
+  "stableId": "destination_ecuador_puerto_egas",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/puerto-egas/",
+  "sourceFingerprint": "1ed3f301c0156a52ca0b15dd11adaa67fa1265bb149fc01e59502755cf680b95",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пуэрто-Эгас",
+      "reason": "MD: Puerto Egas на Santiago, гроты морских котиков и соляной кратер. Galápagos Conservancy подтверждает именованный visitor site на юге James Bay."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "reason": "Не установлена отдельная точная карточка QID места посещения; Santiago не подставляется вместо Puerto Egas."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "Портовые справочники дают округлённую точку -0.23,-90.85, но роль для природной прибрежной тропы не подтверждена."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/puerto-egas/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: Puerto Egas на Santiago, гроты морских котиков и соляной кратер. Galápagos Conservancy подтверждает именованный visitor site на юге James Bay."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/puerto-egas/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.galapagos.org/about_galapagos/the-islands/santiago-island/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: Puerto Egas на Santiago, гроты морских котиков и соляной кратер. Galápagos Conservancy подтверждает именованный visitor site на юге James Bay."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ]
+}

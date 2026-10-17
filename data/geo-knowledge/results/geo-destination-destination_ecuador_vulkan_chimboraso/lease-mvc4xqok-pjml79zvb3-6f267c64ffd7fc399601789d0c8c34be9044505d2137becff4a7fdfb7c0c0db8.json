@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_vulkan_chimboraso",
+  "stableId": "destination_ecuador_vulkan_chimboraso",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/chimborazo-volcano/",
+  "sourceFingerprint": "595b9c2776389b3861bdd8f347bc053a248a6acdfd7d78455f2a06d9bd36b908",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Вулкан Чимборасо",
+      "reason": "MD описывает снежный вулкан Chimborazo в Эквадоре; статья отделяет его от одноимённой провинции."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "MD описывает снежный вулкан Chimborazo в Эквадоре; статья отделяет его от одноимённой провинции.",
+      "selected": "Q14081"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья подтверждённого географического объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Chimborazo\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координата именованного вулкана; точка вершины, не место начала прогулки.",
+      "selected": "-1.46917,-78.8175"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/chimborazo-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD описывает снежный вулкан Chimborazo в Эквадоре; статья отделяет его от одноимённой провинции."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/chimborazo-volcano/",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14081",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD описывает снежный вулкан Chimborazo в Эквадоре; статья отделяет его от одноимённой провинции."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chimborazo",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Точная статья подтверждённого географического объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chimborazo",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "Координата именованного вулкана; точка вершины, не место начала прогулки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chimborazo",
+      "checkedAt": "2026-10-17T08:34:51.115Z",
+      "note": "MD описывает снежный вулкан Chimborazo в Эквадоре; статья отделяет его от одноимённой провинции."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q14081",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Chimborazo"
+    }
+  },
+  "location": {
+    "latitude": -1.46917,
+    "longitude": -78.8175,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Chimborazo"
+  }
+}

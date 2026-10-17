@@ -107,7 +107,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v5
         with:
-          # Allow the ~860 MB static site to finish updating Pages before cancellation.
+          # Allow up to 950 MB of final site files to finish deploying.
           timeout: 1200000
 
   report:

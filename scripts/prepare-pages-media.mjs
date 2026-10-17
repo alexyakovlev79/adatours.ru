@@ -90,8 +90,8 @@ async function main() {
   console.log('External media deployment: ' + JSON.stringify(report));
   const output = await fileStats(dist);
   console.log('GitHub Pages artifact source size: ' + output.bytes + ' bytes');
-  // Keep 20 MB below the documented 1 GB Pages limit for the search index added next.
-  if (output.bytes > 980_000_000) throw new Error('Published site still too large');
+  // This is an intermediate size: Pagefind and site-shell deduplication still follow.
+  // Enforce the 950 MB published-site limit only on the final dist.
 }
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url)
   await main();

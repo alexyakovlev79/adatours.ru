@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_exploradores_bay",
+  "stableId": "destination_chile_exploradores_bay",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/exploradores-bay/",
+  "sourceFingerprint": "44d98f4eb26e4b4f6e893cabaa36ca6d2a0252f2c868e5e6cec9c4d873aec95f",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/exploradores-bay/",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. Exact bay at end of Exploradores land approach in Aysén; not similarly named hamlet or river."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/20124972",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. Exact bay at end of Exploradores land approach in Aysén; not similarly named hamlet or river."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://mapcarta.com/20124972",
+      "checkedAt": "2026-10-17T08:20:00.996Z",
+      "note": "Exact bay at end of Exploradores land approach in Aysén; not similarly named hamlet or river."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Bahía Exploradores",
+      "reason": "Exact bay at end of Exploradores land approach in Aysén; not similarly named hamlet or river."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-46.29405,-73.49939",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. Exact bay at end of Exploradores land approach in Aysén; not similarly named hamlet or river."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "Exact bay at end of Exploradores land approach in Aysén; not similarly named hamlet or river."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -46.29405,
+    "longitude": -73.49939,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/20124972"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ahu_akivi",
+  "stableId": "destination_chile_ahu_akivi",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/ahu-akivi/",
+  "sourceFingerprint": "077fb11a1b1ff20106f933d2439fbe341e86f338b6d0769b8e5d798bd4a2d7cc",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Аху-Акиви",
+      "reason": "Аху-Акиви — платформа семи моаи на Рапа-Нуи; совпадают имя, восстановленные статуи и островная география."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q2011739",
+      "reason": "Аху-Акиви — платформа семи моаи на Рапа-Нуи; совпадают имя, восстановленные статуи и островная география."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-27.115,-109.395",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "probability": 95,
+      "selected": "{\"type\":\"way\",\"id\":221755582}",
+      "reason": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/ahu-akivi.md",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Current approved MD and stable ID checked. Аху-Акиви — платформа семи моаи на Рапа-Нуи; совпадают имя, восстановленные статуи и островная география."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2011739",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Акиви — платформа семи моаи на Рапа-Нуи; совпадают имя, восстановленные статуи и островная география."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2011739",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Аху-Акиви — платформа семи моаи на Рапа-Нуи; совпадают имя, восстановленные статуи и островная география."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2011739",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2011739",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2011739",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Exact object OSM identifier in source; distinct from island, statue and adjacent attraction."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/ahu-akivi/",
+      "checkedAt": "2026-10-17T08:12:28.327Z",
+      "note": "Direct GET 200, canonical matches, title and active MD match, no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2011739",
+    "osm": {
+      "type": "way",
+      "id": 221755582
+    }
+  },
+  "location": {
+    "latitude": -27.115,
+    "longitude": -109.395,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2011739"
+  }
+}

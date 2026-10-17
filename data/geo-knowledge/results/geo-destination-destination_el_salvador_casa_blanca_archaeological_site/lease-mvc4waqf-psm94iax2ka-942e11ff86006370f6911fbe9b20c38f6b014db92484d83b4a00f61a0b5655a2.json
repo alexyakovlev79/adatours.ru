@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_casa_blanca_archaeological_site",
+  "stableId": "destination_el_salvador_casa_blanca_archaeological_site",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/casa-blanca-archaeological-site/",
+  "sourceFingerprint": "d0729376c1552751afdaeec8d79f4934dd31441ee19184f1470fb93704358732",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q3388840",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Casa_Blanca,_El_Salvador"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/casa-blanca-archaeological-site/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Casa Blanca archaeological park in Chalchuapa with indigo workshop and museum; current destinationType route_cluster is editorial metadata, primary referent is single identifiable archaeological park."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3388840",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Casa Blanca archaeological park in Chalchuapa with indigo workshop and museum; current destinationType route_cluster is editorial metadata, primary referent is single identifiable archaeological park."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3388840",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3388840",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Casa Blanca archaeological park in Chalchuapa with indigo workshop and museum; current destinationType route_cluster is editorial metadata, primary referent is single identifiable archaeological park."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3388840",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Casa Blanca archaeological park in Chalchuapa with indigo workshop and museum; current destinationType route_cluster is editorial metadata, primary referent is single identifiable archaeological park."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3388840",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Каса-Бланка",
+      "reason": "Casa Blanca archaeological park in Chalchuapa with indigo workshop and museum; current destinationType route_cluster is editorial metadata, primary referent is single identifiable archaeological park."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q3388840",
+      "reason": "Casa Blanca archaeological park in Chalchuapa with indigo workshop and museum; current destinationType route_cluster is editorial metadata, primary referent is single identifiable archaeological park."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Casa_Blanca,_El_Salvador\"}",
+      "reason": "Casa Blanca archaeological park in Chalchuapa with indigo workshop and museum; current destinationType route_cluster is editorial metadata, primary referent is single identifiable archaeological park."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.9894,\"longitude\":-89.6721222222,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q3388840\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.9894,
+    "longitude": -89.6721222222,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3388840"
+  },
+  "reviewNote": ""
+}

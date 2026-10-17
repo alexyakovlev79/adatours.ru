@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_uruguay_san_haver",
+  "stableId": "destination_uruguay_san_haver",
+  "kind": "destination",
+  "canonicalPath": "/uruguay/place/san-javier/",
+  "sourceFingerprint": "fbfd53210fa6b3fad3040da51aaa4befb6cd6b5fe1807098242f5459f7db23f2",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Сан-Хавьер",
+      "reason": "San Javier в Río Negro на реке Уругвай, основанный российскими переселенцами; выбран населённый пункт, не муниципалитет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q518618",
+      "reason": "San Javier в Río Negro на реке Уругвай, основанный российскими переселенцами; выбран населённый пункт, не муниципалитет."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/San_Javier%2C_Uruguay",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3440653",
+      "reason": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-32.666058,-58.133635]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "probability": 99,
+      "selected": "country_uruguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/uruguay/place/san-javier/",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "San Javier в Río Negro на реке Уругвай, основанный российскими переселенцами; выбран населённый пункт, не муниципалитет."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/san-javier.md",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q518618",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "San Javier в Río Negro на реке Уругвай, основанный российскими переселенцами; выбран населённый пункт, не муниципалитет."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q518618",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q518618",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Идентификатор P1566 точной сущности; административный объект и населённый пункт сопоставлены по смыслу страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q518618",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_uruguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q518618",
+      "checkedAt": "2026-10-17T08:06:11.304Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q518618",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Javier%2C_Uruguay"
+    },
+    "geonamesId": "3440653"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_uruguay"
+    }
+  ],
+  "location": {
+    "latitude": -32.666058,
+    "longitude": -58.133635,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q518618"
+  },
+  "reviewNote": "P625 выбрана из текущей карточки с источником переписи 2023, старое округлённое значение Wikipedia не усреднялось."
+}

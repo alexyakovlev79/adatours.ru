@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_plajya_del_karmen",
+  "stableId": "destination_mexico_plajya_del_karmen",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/playa-del-carmen/",
+  "sourceFingerprint": "b9c976257be66f1f9f6c664fcb41a7b8cb2e8b8c01f836342daad5ab76954bcc",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q989988",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Playa_del_Carmen"
+    },
+    "geonamesId": "3521342",
+    "osm": {
+      "type": "relation",
+      "id": 6329645
+    }
+  },
+  "location": {
+    "latitude": 20.6274,
+    "longitude": -87.07987,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/MX.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/plajya-del-karmen.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Курортный город Плайя-дель-Кармен в Кинтана-Роо на Карибском побережье Мексики."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/playa-del-carmen/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q989988",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q989988: точное название, тип и страна P17 Q96 соответствуют Курортный город Плайя-дель-Кармен в Кинтана-Роо на Карибском побережье Мексики. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Playa_del_Carmen",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3521342, featureCode=PPL. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/6329645",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "OSM boundary города Playa del Carmen по INEGI, Q989988 и en:Playa del Carmen; это городская территория, не автоматически весь муниципалитет."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "20.6274, -87.07987; pointRole=settlement_center. Q989988 — город, GeoNames 3521342 PPL и OSM relation 6329645 обозначают именно городскую территорию по INEGI, с тем же QID и enwiki. Муниципальная территория, вся Ривьера-Майя и одноимённое поселение в Мичоакане не являются референтом страницы. Координата GeoNames — городская опорная точка. Туристический портал letsplaya.mx из P856 не включён автоматически в officialUrl."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q989988",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Курортный город Плайя-дель-Кармен в Кинтана-Роо на Карибском побережье Мексики."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q989988",
+      "reason": "Q989988: точное название, тип и страна P17 Q96 соответствуют Курортный город Плайя-дель-Кармен в Кинтана-Роо на Карибском побережье Мексики. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3521342",
+      "reason": "Прямой MX.txt: id=3521342, featureCode=PPL. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/6329645",
+      "reason": "OSM boundary города Playa del Carmen по INEGI, Q989988 и en:Playa del Carmen; это городская территория, не автоматически весь муниципалитет."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "20.6274,-87.07987",
+      "reason": "20.6274, -87.07987; pointRole=settlement_center. Q989988 — город, GeoNames 3521342 PPL и OSM relation 6329645 обозначают именно городскую территорию по INEGI, с тем же QID и enwiki. Муниципальная территория, вся Ривьера-Майя и одноимённое поселение в Мичоакане не являются референтом страницы. Координата GeoNames — городская опорная точка. Туристический портал letsplaya.mx из P856 не включён автоматически в officialUrl."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "Q989988 — город, GeoNames 3521342 PPL и OSM relation 6329645 обозначают именно городскую территорию по INEGI, с тем же QID и enwiki. Муниципальная территория, вся Ривьера-Майя и одноимённое поселение в Мичоакане не являются референтом страницы. Координата GeoNames — городская опорная точка. Туристический портал letsplaya.mx из P856 не включён автоматически в officialUrl.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/playa-del-carmen/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

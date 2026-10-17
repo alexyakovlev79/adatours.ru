@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_mexico_san_kristobal_de_las_kasas",
+  "stableId": "destination_mexico_san_kristobal_de_las_kasas",
+  "kind": "destination",
+  "canonicalPath": "/mexico/place/san-cristobal-de-las-casas/",
+  "sourceFingerprint": "5978e011f16d6c4c883c578dedc87a841519f81b4a94df9f55e968e18ec4a464",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q524894",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_de_las_Casas"
+    },
+    "geonamesId": "3519537",
+    "osm": {
+      "type": "node",
+      "id": 269911011
+    },
+    "officialUrl": "https://www.sancristobal.gob.mx/"
+  },
+  "location": {
+    "latitude": 16.735377,
+    "longitude": -92.63873,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.openstreetmap.org/node/269911011"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_mexico"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/8970d45ea38bcd627df622a063b9a279c92fb531/src/content/destinations/san-kristobal-de-las-kasas.md",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Город Сан-Кристобаль-де-лас-Касас в горной части штата Чьяпас, Мексика."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/mexico/place/san-cristobal-de-las-casas/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q524894",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Q524894: точное название, тип и страна P17 Q96 соответствуют Город Сан-Кристобаль-де-лас-Касас в горной части штата Чьяпас, Мексика. "
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_de_las_Casas",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/MX.zip",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Прямой MX.txt: id=3519537, featureCode=PPLA2. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/269911011",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.sancristobal.gob.mx/",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Официальный сайт администрации соответствующего города; P856 сверена с открытой страницей Ayuntamiento/Gobierno."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/269911011",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "16.735377, -92.63873; pointRole=settlement_center. Q524894 municipal seat, GeoNames 3519537 PPLA2 и OSM city совпадают с городом в долине Ховель. Городская точка OSM выбрана отдельно от центроида одноимённого муниципалитета. Город и основной туристический референт MD однозначны; координаты разных маркеров внутри города не усреднялись."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q524894",
+      "checkedAt": "2026-10-17T07:32:28.293Z",
+      "note": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "reason": "Город Сан-Кристобаль-де-лас-Касас в горной части штата Чьяпас, Мексика."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical URL, H1 и stable ID совпадают с текущей задачей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q524894",
+      "reason": "Q524894: точное название, тип и страна P17 Q96 соответствуют Город Сан-Кристобаль-де-лас-Касас в горной части штата Чьяпас, Мексика. "
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "reason": "Точная статья объекта; название, тип, штат и основной референт сверены с MD и Wikidata sitelink."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3519537",
+      "reason": "Прямой MX.txt: id=3519537, featureCode=PPLA2. Запись соответствует основному референту; одноимённые записи другого типа/штата исключены."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/269911011",
+      "reason": "OSM place=city, точное название и тот же Wikidata QID подтверждают городской референт."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.sancristobal.gob.mx/",
+      "reason": "Официальный сайт администрации соответствующего города; P856 сверена с открытой страницей Ayuntamiento/Gobierno."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "16.735377,-92.63873",
+      "reason": "16.735377, -92.63873; pointRole=settlement_center. Q524894 municipal seat, GeoNames 3519537 PPLA2 и OSM city совпадают с городом в долине Ховель. Городская точка OSM выбрана отдельно от центроида одноимённого муниципалитета. Город и основной туристический референт MD однозначны; координаты разных маркеров внутри города не усреднялись."
+    },
+    {
+      "field": "relationships.country_mexico",
+      "probability": 99,
+      "selected": "country_mexico",
+      "reason": "Страна — Mexico, текущая P17 Q96, код MX в первичном GeoNames и countryId в MD/source-index."
+    }
+  ],
+  "reviewNote": "Q524894 municipal seat, GeoNames 3519537 PPLA2 и OSM city совпадают с городом в долине Ховель. Городская точка OSM выбрана отдельно от центроида одноимённого муниципалитета. Город и основной туристический референт MD однозначны; координаты разных маркеров внутри города не усреднялись.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/mexico/place/san-cristobal-de-las-casas/"
+    ],
+    "findings": [
+      "HTTP 200, canonical URL, H1 и stable ID проверены.",
+      "MD и source-index сверены на main 8970d45ea38bcd627df622a063b9a279c92fb531; current main blob SHA MD повторно проверен."
+    ]
+  }
+}

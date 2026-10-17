@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_santiago_island",
+  "stableId": "destination_ecuador_santiago_island",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/santiago-island/",
+  "sourceFingerprint": "e9c0dfc08dffb0cf816256c305d48b26702e00f23846394418a14183d166f89f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q408217",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Santiago_Island_(Gal%C3%A1pagos)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Остров Сантьяго",
+      "reason": "Сантьяго / James Island — остров Галапагосов с бухтами Sullivan, Buccaneer, Puerto Egas; не остров Сантьяго в Кабо-Верде. Точка P625 — опорная для острова, не место высадки."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q408217",
+      "reason": "Сантьяго / James Island — остров Галапагосов с бухтами Sullivan, Buccaneer, Puerto Egas; не остров Сантьяго в Кабо-Верде. Точка P625 — опорная для острова, не место высадки."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "selected": "https://en.wikipedia.org/wiki/Santiago_Island_(Gal%C3%A1pagos)",
+      "reason": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.25, -90.7",
+      "reason": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/santiago-island.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Сантьяго / James Island — остров Галапагосов с бухтами Sullivan, Buccaneer, Puerto Egas; не остров Сантьяго в Кабо-Верде. Точка P625 — опорная для острова, не место высадки."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/santiago-island/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q408217",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Сантьяго / James Island — остров Галапагосов с бухтами Sullivan, Buccaneer, Puerto Egas; не остров Сантьяго в Кабо-Верде. Точка P625 — опорная для острова, не место высадки."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Santiago_Island_(Gal%C3%A1pagos)",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Точная статья о выбранном референте, согласуется с MD и внешней карточкой."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q408217",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль representative. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/santiago-island.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.25,
+    "longitude": -90.7,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q408217"
+  }
+}

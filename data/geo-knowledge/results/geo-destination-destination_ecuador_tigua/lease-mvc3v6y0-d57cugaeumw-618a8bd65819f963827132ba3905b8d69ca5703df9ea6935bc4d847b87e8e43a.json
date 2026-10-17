@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_tigua",
+  "stableId": "destination_ecuador_tigua",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/tigua/",
+  "sourceFingerprint": "0989b94979ca3b8f802d01b0c882c38042a017ce12a9b586970c0ba98a8d0263",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Тигуа",
+      "reason": "Кичва-община Tigua в Cotopaxi на маршруте Quilotoa с наивной живописью на овечьих шкурах; подтверждены испанская подпись Wikidata и итальянский sitelink."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q63525172",
+      "reason": "Кичва-община Tigua в Cotopaxi на маршруте Quilotoa с наивной живописью на овечьих шкурах; подтверждены испанская подпись Wikidata и итальянский sitelink."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://it.wikipedia.org/wiki/Tigua_(Ecuador)",
+      "reason": "Совпадают страна, провинция, этническая община и искусство."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tigua/",
+      "checkedAt": "2026-10-17T08:23:01.533Z",
+      "note": "Кичва-община Tigua в Cotopaxi на маршруте Quilotoa с наивной живописью на овечьих шкурах; подтверждены испанская подпись Wikidata и итальянский sitelink."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/tigua.md",
+      "checkedAt": "2026-10-17T08:23:01.533Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q63525172",
+      "checkedAt": "2026-10-17T08:23:01.533Z",
+      "note": "Кичва-община Tigua в Cotopaxi на маршруте Quilotoa с наивной живописью на овечьих шкурах; подтверждены испанская подпись Wikidata и итальянский sitelink."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://zumbahua.gob.ec/cotopaxi/tigua/",
+      "checkedAt": "2026-10-17T08:23:01.533Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://zumbahua.gob.ec/cotopaxi/tigua/",
+      "checkedAt": "2026-10-17T08:23:01.533Z",
+      "note": "Кичва-община Tigua в Cotopaxi на маршруте Quilotoa с наивной живописью на овечьих шкурах; подтверждены испанская подпись Wikidata и итальянский sitelink."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://it.wikipedia.org/wiki/Tigua_(Ecuador)",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Прочитана точная статья о кичва-общине художников Cotopaxi."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q63525172",
+    "wikipedia": {
+      "it": "https://it.wikipedia.org/wiki/Tigua_(Ecuador)"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "reviewNote": "Координаты в карточке отсутствуют. Официальная страница общины не даёт численно проверяемой точки; location опущена."
+}

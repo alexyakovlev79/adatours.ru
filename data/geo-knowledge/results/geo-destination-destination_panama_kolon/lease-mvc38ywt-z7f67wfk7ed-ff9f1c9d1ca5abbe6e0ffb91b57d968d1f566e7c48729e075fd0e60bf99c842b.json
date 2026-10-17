@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_kolon",
+  "stableId": "destination_panama_kolon",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/colon/",
+  "sourceFingerprint": "627c582b04e2154cd08efa49fe8e0253aee38b0c0554c088dc765d97baaef66d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "alternateNames": [
+    "Colón",
+    "Ciudad de Colón",
+    "Colón City"
+  ],
+  "external": {
+    "wikidataQid": "Q12825018",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Col%C3%B3n%2C_Panama",
+      "es": "https://es.wikipedia.org/wiki/Col%C3%B3n_(Panam%C3%A1)"
+    },
+    "geonamesId": "3712076"
+  },
+  "location": {
+    "latitude": 9.3597527777778,
+    "longitude": -79.900419444444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q12825018"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/colon/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Город Колон, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Город Колон на карибском побережье Панамы у атлантического входа в канал; не остров Колон в архипелаге Бокас-дель-Торо и не вся провинция Колон."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Город Колон на карибском побережье Панамы у атлантического входа в канал; не остров Колон в архипелаге Бокас-дель-Торо и не вся провинция Колон."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Город Колон на карибском побережье Панамы у атлантического входа в канал; не остров Колон в архипелаге Бокас-дель-Торо и не вся провинция Колон."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Город Колон на карибском побережье Панамы у атлантического входа в канал; не остров Колон в архипелаге Бокас-дель-Торо и не вся провинция Колон. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прямые enwiki/eswiki sitelinks принятой карточки: Colón, Panama; Colón (Panamá). Не использована страница неоднозначностей или одноименная административная единица."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P1566 = 3712076 в принятой карточке точного объекта; страна и тип согласованы с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 9.3597527777778, -79.900419444444; роль settlement_center. Взята P625 населенного пункта, без усреднения и подмены его административной территорией."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия Colón; Ciudad de Colón; Colón City согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q12825018",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q804 Panama; совпадает с countryId текущего MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Город Колон на карибском побережье Панамы у атлантического входа в канал; не остров Колон в архипелаге Бокас-дель-Торо и не вся провинция Колон.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q12825018",
+      "reason": "Город Колон на карибском побережье Панамы у атлантического входа в канал; не остров Колон в архипелаге Бокас-дель-Торо и не вся провинция Колон."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Col%C3%B3n%2C_Panama ; https://es.wikipedia.org/wiki/Col%C3%B3n_(Panam%C3%A1)",
+      "reason": "Точные sitelinks принятого географического QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3712076",
+      "reason": "Прямой P1566 принятой карточки; тип и страна совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "9.3597527777778, -79.900419444444",
+      "reason": "Исходная координата принятого объекта; роль settlement_center. Выбран Q12825018 городской карточки. Региональные пляжи, тропические леса и неподтвержденные исторические формулировки исходного MD не меняют городской референт. Муниципальный сайт не загрузился; officialUrl не добавлен."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Colón; Ciudad de Colón; Colón City",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран Q12825018 городской карточки. Региональные пляжи, тропические леса и неподтвержденные исторические формулировки исходного MD не меняют городской референт. Муниципальный сайт не загрузился; officialUrl не добавлен."
+}

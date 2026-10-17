@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_san_jorge",
+  "stableId": "destination_nicaragua_san_jorge",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/san-jorge/",
+  "sourceFingerprint": "1cf099e2d930259a189a94fa63cd11280a9ac1d58b9a8400914e8651e3d96244",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "town",
+  "alternateNames": [
+    "San Jorge"
+  ],
+  "external": {
+    "wikidataQid": "Q31504830",
+    "geonamesId": "3616794",
+    "osm": {
+      "type": "relation",
+      "id": 15532817
+    },
+    "officialUrl": "https://www.mapanicaragua.com/municipio-de-san-jorge/"
+  },
+  "location": {
+    "latitude": 11.456025,
+    "longitude": -85.800725,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q31504830"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_nicaragua_ozero_nikaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/san-jorge/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Сан-Хорхе, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Город Сан-Хорхе в департаменте Ривас на берегу озера Кокиболка, отправной порт переправ на Ометепе."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-san-jorge/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Город Сан-Хорхе в департаменте Ривас на берегу озера Кокиболка, отправной порт переправ на Ометепе."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q31504830",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Город Сан-Хорхе в департаменте Ривас на берегу озера Кокиболка, отправной порт переправ на Ометепе."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q31504830",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Город Сан-Хорхе в департаменте Ривас на берегу озера Кокиболка, отправной порт переправ на Ометепе. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q31504830",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P1566 = 3616794 в принятой карточке точного объекта; страна и тип согласованы с MD."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/15532817",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Nominatim вернул relation как town, linked_place=town, admin_level=10, wikidata=Q31504830; муниципальная relation 5743369 имеет другой охват."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q31504830",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 11.456025, -85.800725; роль settlement_center. Взята P625 населенного пункта, без усреднения и подмены его административной территорией."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q31504830",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия San Jorge согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q31504830",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q811 Nicaragua; совпадает с countryId текущего MD."
+    },
+    {
+      "field": "relationships.destination_nicaragua_ozero_nikaragua",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-san-jorge/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "INTUR описывает Puerto de San Jorge и набережную на Lago Cocibolca. Stable ID и доступность адресата проверены в актуальной очереди."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-san-jorge/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Официальный национальный туристический источник о выбранном направлении; используется как officialUrl, без автоматического географического sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Город Сан-Хорхе в департаменте Ривас на берегу озера Кокиболка, отправной порт переправ на Ометепе.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "town",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q31504830",
+      "reason": "Город Сан-Хорхе в департаменте Ривас на берегу озера Кокиболка, отправной порт переправ на Ометепе."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3616794",
+      "reason": "Прямой P1566 принятой карточки; тип и страна совпадают."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "relation/15532817",
+      "reason": "Прямые теги OSM отделяют нужный остров или город от одноименного отеля или муниципалитета."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "11.456025, -85.800725",
+      "reason": "Исходная координата принятого объекта; роль settlement_center. Выбран Q31504830 town и OSM relation 15532817 linked_place=town/admin_level=10. Q956573 и OSM relation 5743369 относятся к муниципалитету; их Wikipedia и GeoNames не перенесены. Официальный туристический раздел шире города и используется как officialUrl, не географический sameAs."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "San Jorge",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    },
+    {
+      "field": "relationships.destination_nicaragua_ozero_nikaragua",
+      "probability": 98,
+      "selected": "destination_nicaragua_ozero_nikaragua",
+      "reason": "INTUR описывает Puerto de San Jorge и набережную на Lago Cocibolca."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 93,
+      "selected": "https://www.mapanicaragua.com/municipio-de-san-jorge/",
+      "reason": "Проверен официальный туристический источник; охват описания учтен без расширения географического референта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран Q31504830 town и OSM relation 15532817 linked_place=town/admin_level=10. Q956573 и OSM relation 5743369 относятся к муниципалитету; их Wikipedia и GeoNames не перенесены. Официальный туристический раздел шире города и используется как officialUrl, не географический sameAs."
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_bokas_del_toro",
+  "stableId": "destination_panama_bokas_del_toro",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/bocas-del-toro/",
+  "sourceFingerprint": "e91616cb739f671b1a07c763378be3ba06cc63dda26292bf4973087eef923894",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archipelago",
+  "alternateNames": [
+    "Bocas del Toro Archipelago",
+    "Archipiélago de Bocas del Toro"
+  ],
+  "external": {
+    "wikidataQid": "Q2632038",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Bocas_del_Toro_Archipelago",
+      "es": "https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_Bocas_del_Toro"
+    },
+    "geonamesId": "3713958",
+    "officialUrl": "https://www.tourismpanama.com/places-to-visit/bocas-del-toro/"
+  },
+  "location": {
+    "latitude": 9.3333333333333,
+    "longitude": -82.25,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2632038"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/bocas-del-toro/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Бокас-дель-Торо, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Архипелаг Бокас-дель-Торо в карибской части Панамы, включая острова Колон и Бастиментос; не город Bocas Town и не вся провинция."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/bocas-del-toro/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Архипелаг Бокас-дель-Торо в карибской части Панамы, включая острова Колон и Бастиментос; не город Bocas Town и не вся провинция."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Архипелаг Бокас-дель-Торо в карибской части Панамы, включая острова Колон и Бастиментос; не город Bocas Town и не вся провинция."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Архипелаг Бокас-дель-Торо в карибской части Панамы, включая острова Колон и Бастиментос; не город Bocas Town и не вся провинция. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прямые enwiki/eswiki sitelinks принятой карточки: Bocas del Toro Archipelago; Archipiélago de Bocas del Toro. Не использована страница неоднозначностей или одноименная административная единица."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P1566 = 3713958 в принятой карточке точного объекта; страна и тип согласованы с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 9.3333333333333, -82.25; роль representative. Текущий MD прямо описывает архипелаг. Q2632038 выбран вместо одноименных провинции и города. Официальная туристическая страница содержит и материковые сведения; используется как туристический источник, без расширения географической identity паспорта."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия Bocas del Toro Archipelago; Archipiélago de Bocas del Toro согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2632038",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q804 Panama; совпадает с countryId текущего MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/bocas-del-toro/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Официальный национальный туристический источник о выбранном направлении; используется как officialUrl, без автоматического географического sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Архипелаг Бокас-дель-Торо в карибской части Панамы, включая острова Колон и Бастиментос; не город Bocas Town и не вся провинция.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "archipelago",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2632038",
+      "reason": "Архипелаг Бокас-дель-Торо в карибской части Панамы, включая острова Колон и Бастиментос; не город Bocas Town и не вся провинция."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Bocas_del_Toro_Archipelago ; https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_Bocas_del_Toro",
+      "reason": "Точные sitelinks принятого географического QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3713958",
+      "reason": "Прямой P1566 принятой карточки; тип и страна совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "9.3333333333333, -82.25",
+      "reason": "Исходная координата принятого объекта; роль representative. Текущий MD прямо описывает архипелаг. Q2632038 выбран вместо одноименных провинции и города. Официальная туристическая страница содержит и материковые сведения; используется как туристический источник, без расширения географической identity паспорта."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Bocas del Toro Archipelago; Archipiélago de Bocas del Toro",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 93,
+      "selected": "https://www.tourismpanama.com/places-to-visit/bocas-del-toro/",
+      "reason": "Проверен официальный туристический источник; охват описания учтен без расширения географического референта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Текущий MD прямо описывает архипелаг. Q2632038 выбран вместо одноименных провинции и города. Официальная туристическая страница содержит и материковые сведения; используется как туристический источник, без расширения географической identity паспорта."
+}

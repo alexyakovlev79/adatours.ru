@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_zhemchuzhnye_ostrova",
+  "stableId": "destination_panama_zhemchuzhnye_ostrova",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/pearl-islands/",
+  "sourceFingerprint": "bf11b3c682076afcf9c99584821ad181a4022c20cd4806b476e00c2d2539a907",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archipelago",
+  "alternateNames": [
+    "Pearl Islands",
+    "Archipiélago de las Perlas",
+    "Islas de las Perlas"
+  ],
+  "external": {
+    "wikidataQid": "Q1142129",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pearl_Islands",
+      "es": "https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_las_Perlas"
+    },
+    "geonamesId": "3703023",
+    "officialUrl": "https://www.tourismpanama.com/places-to-visit/panama-city/places-to-stay/pearl-islands/"
+  },
+  "location": {
+    "latitude": 8.3333333333333,
+    "longitude": -79.116666666667,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1142129"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/pearl-islands/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Жемчужные Острова, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Жемчужные острова, архипелаг Лас-Перлас в Панамском заливе Тихого океана; Контадора — один из островов, а не весь референт."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/panama-city/places-to-stay/pearl-islands/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Жемчужные острова, архипелаг Лас-Перлас в Панамском заливе Тихого океана; Контадора — один из островов, а не весь референт."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Жемчужные острова, архипелаг Лас-Перлас в Панамском заливе Тихого океана; Контадора — один из островов, а не весь референт."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Жемчужные острова, архипелаг Лас-Перлас в Панамском заливе Тихого океана; Контадора — один из островов, а не весь референт. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прямые enwiki/eswiki sitelinks принятой карточки: Pearl Islands; Archipiélago de las Perlas. Не использована страница неоднозначностей или одноименная административная единица."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P1566 = 3703023 в принятой карточке точного объекта; страна и тип согласованы с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 8.3333333333333, -79.116666666667; роль representative. Выбрана первая P625 8.3333333333333, −79.116666666667 как опорная точка архипелага. Вторая P625 8.39087, −79.02603 относится к той же обширной группе; точки не усреднялись. Точный счет островов из разноречивых описаний не переносился."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия Pearl Islands; Archipiélago de las Perlas; Islas de las Perlas согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1142129",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q804 Panama; совпадает с countryId текущего MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/panama-city/places-to-stay/pearl-islands/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Официальный национальный туристический источник о выбранном направлении; используется как officialUrl, без автоматического географического sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Жемчужные острова, архипелаг Лас-Перлас в Панамском заливе Тихого океана; Контадора — один из островов, а не весь референт.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "archipelago",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1142129",
+      "reason": "Жемчужные острова, архипелаг Лас-Перлас в Панамском заливе Тихого океана; Контадора — один из островов, а не весь референт."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Pearl_Islands ; https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_las_Perlas",
+      "reason": "Точные sitelinks принятого географического QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3703023",
+      "reason": "Прямой P1566 принятой карточки; тип и страна совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "8.3333333333333, -79.116666666667",
+      "reason": "Исходная координата принятого объекта; роль representative. Выбрана первая P625 8.3333333333333, −79.116666666667 как опорная точка архипелага. Вторая P625 8.39087, −79.02603 относится к той же обширной группе; точки не усреднялись. Точный счет островов из разноречивых описаний не переносился."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Pearl Islands; Archipiélago de las Perlas; Islas de las Perlas",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.tourismpanama.com/places-to-visit/panama-city/places-to-stay/pearl-islands/",
+      "reason": "Проверен официальный туристический источник; охват описания учтен без расширения географического референта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбрана первая P625 8.3333333333333, −79.116666666667 как опорная точка архипелага. Вторая P625 8.39087, −79.02603 относится к той же обширной группе; точки не усреднялись. Точный счет островов из разноречивых описаний не переносился."
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_bokete",
+  "stableId": "destination_panama_bokete",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/boquete/",
+  "sourceFingerprint": "a591b715557cea591be46afebdce6f1ae8af86fcefcc7be62d444aff93eb6aa9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "town",
+  "alternateNames": [
+    "Boquete",
+    "Bajo Boquete"
+  ],
+  "external": {
+    "wikidataQid": "Q804144",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Boquete%2C_Chiriqu%C3%AD",
+      "es": "https://es.wikipedia.org/wiki/Bajo_Boquete"
+    },
+    "geonamesId": "3713860",
+    "officialUrl": "https://www.tourismpanama.com/places-to-visit/boquete/"
+  },
+  "location": {
+    "latitude": 8.78,
+    "longitude": -82.432777777778,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q804144"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/boquete/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Бокете, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Горный город Бокете, то есть Bajo Boquete в Чирики, Панама, база поездок по кофейным плантациям и к вулкану Бару."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/boquete/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Горный город Бокете, то есть Bajo Boquete в Чирики, Панама, база поездок по кофейным плантациям и к вулкану Бару."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Горный город Бокете, то есть Bajo Boquete в Чирики, Панама, база поездок по кофейным плантациям и к вулкану Бару."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Горный город Бокете, то есть Bajo Boquete в Чирики, Панама, база поездок по кофейным плантациям и к вулкану Бару. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прямые enwiki/eswiki sitelinks принятой карточки: Boquete, Chiriquí; Bajo Boquete. Не использована страница неоднозначностей или одноименная административная единица."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P1566 = 3713860 в принятой карточке точного объекта; страна и тип согласованы с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 8.78, -82.432777777778; роль settlement_center. Взята P625 населенного пункта, без усреднения и подмены его административной территорией."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия Boquete; Bajo Boquete согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q804144",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q804 Panama; совпадает с countryId текущего MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.tourismpanama.com/places-to-visit/boquete/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Официальный национальный туристический источник о выбранном направлении; используется как officialUrl, без автоматического географического sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Горный город Бокете, то есть Bajo Boquete в Чирики, Панама, база поездок по кофейным плантациям и к вулкану Бару.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "town",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "selected": "Q804144",
+      "reason": "Горный город Бокете, то есть Bajo Boquete в Чирики, Панама, база поездок по кофейным плантациям и к вулкану Бару."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Boquete%2C_Chiriqu%C3%AD ; https://es.wikipedia.org/wiki/Bajo_Boquete",
+      "reason": "Точные sitelinks принятого географического QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3713860",
+      "reason": "Прямой P1566 принятой карточки; тип и страна совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 96,
+      "selected": "8.78, -82.432777777778",
+      "reason": "Исходная координата принятого объекта; роль settlement_center. Выбран Q804144 — населенный пункт Boquete/Bajo Boquete. Q7583904 — страница неоднозначностей; Q28225640 — административный corregimiento. Окружающие парки и острова из MD не включены в городскую identity."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Boquete; Bajo Boquete",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.tourismpanama.com/places-to-visit/boquete/",
+      "reason": "Проверен официальный туристический источник; охват описания учтен без расширения географического референта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбран Q804144 — населенный пункт Boquete/Bajo Boquete. Q7583904 — страница неоднозначностей; Q28225640 — административный corregimiento. Окружающие парки и острова из MD не включены в городскую identity."
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_ostrov_zopango",
+  "stableId": "destination_nicaragua_ostrov_zopango",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/zopango-island/",
+  "sourceFingerprint": "8ea8ef5ccfda8e0a335f5f091396e818822f328cd1fac793b6dd35379977e51b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "islet",
+  "alternateNames": [
+    "Isla Zopango",
+    "Zopango Island"
+  ],
+  "external": {
+    "osm": {
+      "type": "way",
+      "id": 284759787
+    }
+  },
+  "location": {
+    "latitude": 11.8843994,
+    "longitude": -85.9016021,
+    "pointRole": "representative",
+    "coordinateSource": "https://nominatim.openstreetmap.org/search?q=Zopango%2C%20Nicaragua&format=jsonv2&extratags=1&namedetails=1&limit=4"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_nicaragua_ozero_nikaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/zopango-island/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Остров Зопанго, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Остров Зопанго в заливе Асесе на озере Никарагуа, в островной группе возле Гранады; не отдельная гостиничная организация."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.privateislandsonline.com/islands-for-rent/central-america/nicaragua/zopango-island",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Остров Зопанго в заливе Асесе на озере Никарагуа, в островной группе возле Гранады; не отдельная гостиничная организация."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.privateislandsonline.com/islands-for-rent/central-america/nicaragua/zopango-island",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Остров Зопанго в заливе Асесе на озере Никарагуа, в островной группе возле Гранады; не отдельная гостиничная организация."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/284759787",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прочитан полный way через OSM API: замкнутый контур place=islet, name=Isla Zopango, alt_name=Zopango Island. Отдельный hotel node исключен."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://nominatim.openstreetmap.org/search?q=Zopango%2C%20Nicaragua&format=jsonv2&extratags=1&namedetails=1&limit=4",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 11.8843994, -85.9016021; роль representative. Прочитан полный OSM way 284759787: place=islet, Isla Zopango, alt_name Zopango Island. Выбрана опорная точка этого островного контура из Nominatim. Q112020634 и OSM node 11150859889 описывают отель и не присвоены всему острову. Сайт владельца zopangoisland.com недоступен при проверке; officialUrl не записан."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.openstreetmap.org/way/284759787",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия Isla Zopango; Zopango Island согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.privateislandsonline.com/islands-for-rent/central-america/nicaragua/zopango-island",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Местонахождение по точному туристическому источнику и карте; совпадает с countryId текущего MD."
+    },
+    {
+      "field": "relationships.destination_nicaragua_ozero_nikaragua",
+      "sourceUrl": "https://www.privateislandsonline.com/islands-for-rent/central-america/nicaragua/zopango-island",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Карточка острова помещает Zopango в Asese Bay, Lake Nicaragua, островной район Гранады. Stable ID и доступность адресата проверены в актуальной очереди."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Зопанго в заливе Асесе на озере Никарагуа, в островной группе возле Гранады; не отдельная гостиничная организация.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "islet",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 25,
+      "selected": "omitted",
+      "reason": "Найденный Q112020634 относится к отелю, а не островному контуру."
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "selected": "way/284759787",
+      "reason": "Прямые теги OSM отделяют нужный остров или город от одноименного отеля или муниципалитета."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "11.8843994, -85.9016021",
+      "reason": "Исходная координата принятого объекта; роль representative. Прочитан полный OSM way 284759787: place=islet, Isla Zopango, alt_name Zopango Island. Выбрана опорная точка этого островного контура из Nominatim. Q112020634 и OSM node 11150859889 описывают отель и не присвоены всему острову. Сайт владельца zopangoisland.com недоступен при проверке; officialUrl не записан."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Isla Zopango; Zopango Island",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    },
+    {
+      "field": "relationships.destination_nicaragua_ozero_nikaragua",
+      "probability": 98,
+      "selected": "destination_nicaragua_ozero_nikaragua",
+      "reason": "Карточка острова помещает Zopango в Asese Bay, Lake Nicaragua, островной район Гранады."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Прочитан полный OSM way 284759787: place=islet, Isla Zopango, alt_name Zopango Island. Выбрана опорная точка этого островного контура из Nominatim. Q112020634 и OSM node 11150859889 описывают отель и не присвоены всему острову. Сайт владельца zopangoisland.com недоступен при проверке; officialUrl не записан."
+}

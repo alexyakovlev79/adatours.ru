@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_david",
+  "stableId": "destination_panama_david",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/david/",
+  "sourceFingerprint": "9723d4b29692e7441d1513d550303d3d26518bb53a526f55d975dda3593baf94",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "city",
+  "alternateNames": [
+    "David"
+  ],
+  "external": {
+    "wikidataQid": "Q279009",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/David%2C_Chiriqu%C3%AD",
+      "es": "https://es.wikipedia.org/wiki/David_(ciudad)"
+    },
+    "geonamesId": "3711668"
+  },
+  "location": {
+    "latitude": 8.438180555555556,
+    "longitude": -82.42426388888889,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q279009"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/david/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Давид, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Город Давид, столица провинции Чирики в Панаме, транспортный узел туристических маршрутов; не одноименный район и не имя человека."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.tourismpanama.com/plan-your-trip/getting-here/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Город Давид, столица провинции Чирики в Панаме, транспортный узел туристических маршрутов; не одноименный район и не имя человека."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Город Давид, столица провинции Чирики в Панаме, транспортный узел туристических маршрутов; не одноименный район и не имя человека."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Город Давид, столица провинции Чирики в Панаме, транспортный узел туристических маршрутов; не одноименный район и не имя человека. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прямые enwiki/eswiki sitelinks принятой карточки: David, Chiriquí; David (ciudad). Не использована страница неоднозначностей или одноименная административная единица."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P1566 = 3711668 в принятой карточке точного объекта; страна и тип согласованы с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 8.438180555555556, -82.42426388888889; роль settlement_center. Взята P625 населенного пункта, без усреднения и подмены его административной территорией."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Название David подтверждено labels и sitelinks точной городской карточки."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q279009",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q804 Panama; совпадает с countryId текущего MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Город Давид, столица провинции Чирики в Панаме, транспортный узел туристических маршрутов; не одноименный район и не имя человека.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "city",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q279009",
+      "reason": "Город Давид, столица провинции Чирики в Панаме, транспортный узел туристических маршрутов; не одноименный район и не имя человека."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/David%2C_Chiriqu%C3%AD ; https://es.wikipedia.org/wiki/David_(ciudad)",
+      "reason": "Точные sitelinks принятого географического QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3711668",
+      "reason": "Прямой P1566 принятой карточки; тип и страна совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "8.438180555555556, -82.42426388888889",
+      "reason": "Исходная координата принятого объекта; роль settlement_center. Внешние поля взяты из городской карточки Q279009. Непроверенные ранги по величине города и нерелевантные фотографии исходного MD не используются как географические доказательства."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "David",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Внешние поля взяты из городской карточки Q279009. Непроверенные ранги по величине города и нерелевантные фотографии исходного MD не используются как географические доказательства."
+}

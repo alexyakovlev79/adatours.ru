@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_ojo_de_agua",
+  "stableId": "destination_nicaragua_ojo_de_agua",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/ojo-de-agua/",
+  "sourceFingerprint": "8858e373912e0d734bdb4fe12b7e1d4f5376d5ba7c05b69a52bcdd789b9e4d78",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "spring-fed swimming pools",
+  "alternateNames": [
+    "Ojo de Agua"
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 3477214152
+    }
+  },
+  "location": {
+    "latitude": 11.5190997,
+    "longitude": -85.566898,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/3477214152"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_nicaragua_ostrov_ometepe"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/ojo-de-agua/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Охо-де-Агуа, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Родниковые рекреационные бассейны Охо-де-Агуа на острове Ометепе, в муниципалитете Альтаграсия, Никарагуа."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-altagracia/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Родниковые рекреационные бассейны Охо-де-Агуа на острове Ометепе, в муниципалитете Альтаграсия, Никарагуа."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-altagracia/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Родниковые рекреационные бассейны Охо-де-Агуа на острове Ометепе, в муниципалитете Альтаграсия, Никарагуа."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/3477214152",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прочитан node через OSM API 0.6: name=Ojo de Agua, leisure=nature_reserve, на острове Ометепе; это рекреационная территория бассейнов."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/node/3477214152",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 11.5190997, -85.566898; роль representative. OSM node с именем Ojo de Agua использован как опорная точка территории родниковых бассейнов, не как вход или точный центр водоема. Тег leisure=nature_reserve не является доказательством юридического статуса ООПТ. Точный QID после адресного поиска не установлен."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-altagracia/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия Ojo de Agua согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-altagracia/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Местонахождение по точному туристическому источнику и карте; совпадает с countryId текущего MD."
+    },
+    {
+      "field": "relationships.destination_nicaragua_ostrov_ometepe",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-altagracia/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "INTUR относит манантиаль Ojo de Agua к Ометепе, муниципалитету Альтаграсия. Stable ID и доступность адресата проверены в актуальной очереди."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Родниковые рекреационные бассейны Охо-де-Агуа на острове Ометепе, в муниципалитете Альтаграсия, Никарагуа.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 96,
+      "selected": "spring-fed swimming pools",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 35,
+      "selected": "omitted",
+      "reason": "Точный QID родниковых бассейнов Ометепе после адресного поиска не установлен."
+    },
+    {
+      "field": "external.osm",
+      "probability": 89,
+      "selected": "node/3477214152",
+      "reason": "Имя, расположение и рекреационная территория согласуются с INTUR; юридический статус nature reserve не утверждается."
+    },
+    {
+      "field": "location",
+      "probability": 89,
+      "selected": "11.5190997, -85.566898",
+      "reason": "Исходная координата принятого объекта; роль representative. OSM node с именем Ojo de Agua использован как опорная точка территории родниковых бассейнов, не как вход или точный центр водоема. Тег leisure=nature_reserve не является доказательством юридического статуса ООПТ. Точный QID после адресного поиска не установлен."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Ojo de Agua",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    },
+    {
+      "field": "relationships.destination_nicaragua_ostrov_ometepe",
+      "probability": 98,
+      "selected": "destination_nicaragua_ostrov_ometepe",
+      "reason": "INTUR относит манантиаль Ojo de Agua к Ометепе, муниципалитету Альтаграсия."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "OSM node с именем Ojo de Agua использован как опорная точка территории родниковых бассейнов, не как вход или точный центр водоема. Тег leisure=nature_reserve не является доказательством юридического статуса ООПТ. Точный QID после адресного поиска не установлен."
+}

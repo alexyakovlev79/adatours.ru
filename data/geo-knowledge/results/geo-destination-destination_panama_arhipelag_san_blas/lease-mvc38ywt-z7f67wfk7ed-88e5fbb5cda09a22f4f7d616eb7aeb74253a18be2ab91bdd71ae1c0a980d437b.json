@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_arhipelag_san_blas",
+  "stableId": "destination_panama_arhipelag_san_blas",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/san-blas-islands/",
+  "sourceFingerprint": "ff83b80d367efdb13e5a71e7c3ea2bb8832774995f70d8bad51963f20123a2a1",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "archipelago",
+  "alternateNames": [
+    "San Blas Islands",
+    "Archipiélago de San Blas",
+    "Archipiélago de Guna Yala"
+  ],
+  "external": {
+    "wikidataQid": "Q1670879",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Blas_Islands",
+      "es": "https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_Guna_Yala"
+    },
+    "officialUrl": "https://es.tourismpanama.com/aire-libre-y-naturaleza/playas/playas-en-el-caribe/islas-san-blas/"
+  },
+  "location": {
+    "latitude": 9.4958333333333,
+    "longitude": -78.648888888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1670879"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/san-blas-islands/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Архипелаг Сан-Блас, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Архипелаг Сан-Блас у карибского побережья Панамы, островная часть Guna Yala; не вся комарка вместе с материком."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.tourismpanama.com/aire-libre-y-naturaleza/playas/playas-en-el-caribe/islas-san-blas/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Архипелаг Сан-Блас у карибского побережья Панамы, островная часть Guna Yala; не вся комарка вместе с материком."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Архипелаг Сан-Блас у карибского побережья Панамы, островная часть Guna Yala; не вся комарка вместе с материком."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Архипелаг Сан-Блас у карибского побережья Панамы, островная часть Guna Yala; не вся комарка вместе с материком. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прямые enwiki/eswiki sitelinks принятой карточки: San Blas Islands; Archipiélago de Guna Yala. Не использована страница неоднозначностей или одноименная административная единица."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 9.4958333333333, -78.648888888889; роль representative. QID и P625 относятся к архипелагу. Точка представительская для группы островов; координата отдельной выбранной гостиницы не использована. В P1566 два равноправных ID 6941930 и 3701539; без уточнения их географического охвата ни один не записан."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия San Blas Islands; Archipiélago de San Blas; Archipiélago de Guna Yala согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1670879",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q804 Panama; совпадает с countryId текущего MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://es.tourismpanama.com/aire-libre-y-naturaleza/playas/playas-en-el-caribe/islas-san-blas/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Официальный национальный туристический источник о выбранном направлении; используется как officialUrl, без автоматического географического sameAs."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Архипелаг Сан-Блас у карибского побережья Панамы, островная часть Guna Yala; не вся комарка вместе с материком.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "archipelago",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1670879",
+      "reason": "Архипелаг Сан-Блас у карибского побережья Панамы, островная часть Guna Yala; не вся комарка вместе с материком."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/San_Blas_Islands ; https://es.wikipedia.org/wiki/Archipi%C3%A9lago_de_Guna_Yala",
+      "reason": "Точные sitelinks принятого географического QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 55,
+      "selected": "omitted",
+      "reason": "Два P1566 без проверенного различия охвата; не выбран ID наугад."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "9.4958333333333, -78.648888888889",
+      "reason": "Исходная координата принятого объекта; роль representative. QID и P625 относятся к архипелагу. Точка представительская для группы островов; координата отдельной выбранной гостиницы не использована. В P1566 два равноправных ID 6941930 и 3701539; без уточнения их географического охвата ни один не записан."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "San Blas Islands; Archipiélago de San Blas; Archipiélago de Guna Yala",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://es.tourismpanama.com/aire-libre-y-naturaleza/playas/playas-en-el-caribe/islas-san-blas/",
+      "reason": "Проверен официальный туристический источник; охват описания учтен без расширения географического референта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "QID и P625 относятся к архипелагу. Точка представительская для группы островов; координата отдельной выбранной гостиницы не использована. В P1566 два равноправных ID 6941930 и 3701539; без уточнения их географического охвата ни один не записан."
+}

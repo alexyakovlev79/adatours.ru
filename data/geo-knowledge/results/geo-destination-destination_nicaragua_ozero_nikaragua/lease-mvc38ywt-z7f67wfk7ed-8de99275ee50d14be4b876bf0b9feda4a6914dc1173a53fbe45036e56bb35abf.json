@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_nicaragua_ozero_nikaragua",
+  "stableId": "destination_nicaragua_ozero_nikaragua",
+  "kind": "destination",
+  "canonicalPath": "/nicaragua/place/lake-nicaragua/",
+  "sourceFingerprint": "fd05da6d20ecbcde0389b69f48af40afec3536f0fd502fab40f665f01adef1d4",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "lake",
+  "alternateNames": [
+    "Lake Nicaragua",
+    "Lago de Nicaragua",
+    "Lago Cocibolca"
+  ],
+  "external": {
+    "wikidataQid": "Q173862",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Lake_Nicaragua",
+      "es": "https://es.wikipedia.org/wiki/Lago_Cocibolca"
+    },
+    "geonamesId": "3617477"
+  },
+  "location": {
+    "latitude": 11.5742,
+    "longitude": -85.3563,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q173862"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_nicaragua"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/nicaragua/place/lake-nicaragua/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "HTTP 200; canonical совпадает, H1 Озеро Никарагуа, robots index/follow. Текущий approved MD и entry сверены по ID, URL, типу и стране. Озеро Никарагуа, также Кокиболка, пресноводный водоем в Никарагуа; Гранада и острова — контекст посещения, а не замена референта озера."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mapanicaragua.com/municipio-de-san-jorge/",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Озеро Никарагуа, также Кокиболка, пресноводный водоем в Никарагуа; Гранада и острова — контекст посещения, а не замена референта озера."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Географический класс определен по текущему MD и точному внешнему описанию. Озеро Никарагуа, также Кокиболка, пресноводный водоем в Никарагуа; Гранада и острова — контекст посещения, а не замена референта озера."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Озеро Никарагуа, также Кокиболка, пресноводный водоем в Никарагуа; Гранада и острова — контекст посещения, а не замена референта озера. Проверены P17, P31, географическое описание и sitelinks."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Прямые enwiki/eswiki sitelinks принятой карточки: Lake Nicaragua; Lago Cocibolca. Не использована страница неоднозначностей или одноименная административная единица."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P1566 = 3617477 в принятой карточке точного объекта; страна и тип согласованы с MD."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Исходная WGS84 точка 11.5742, -85.3563; роль representative. Выбрана исходная P625 как опорная точка озера, не геометрический центр и не координата Гранады. Значение precision=10 в Wikidata не интерпретируется как точность местоположения; лишняя точность не утверждается."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "Названия Lake Nicaragua; Lago de Nicaragua; Lago Cocibolca согласованы с labels/sitelinks, точной картографической записью или официальным туристическим описанием."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q173862",
+      "checkedAt": "2026-10-17T07:47:26.185Z",
+      "note": "P17 = Q811 Nicaragua; совпадает с countryId текущего MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Озеро Никарагуа, также Кокиболка, пресноводный водоем в Никарагуа; Гранада и острова — контекст посещения, а не замена референта озера.",
+      "reason": "Название, тип и география текущего MD совпадают с независимым внешним описанием."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "lake",
+      "reason": "Класс выбран по фактическому содержанию и внешнему географическому описанию."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q173862",
+      "reason": "Озеро Никарагуа, также Кокиболка, пресноводный водоем в Никарагуа; Гранада и острова — контекст посещения, а не замена референта озера."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Lake_Nicaragua ; https://es.wikipedia.org/wiki/Lago_Cocibolca",
+      "reason": "Точные sitelinks принятого географического QID."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3617477",
+      "reason": "Прямой P1566 принятой карточки; тип и страна совпадают."
+    },
+    {
+      "field": "location",
+      "probability": 93,
+      "selected": "11.5742, -85.3563",
+      "reason": "Исходная координата принятого объекта; роль representative. Выбрана исходная P625 как опорная точка озера, не геометрический центр и не координата Гранады. Значение precision=10 в Wikidata не интерпретируется как точность местоположения; лишняя точность не утверждается."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Lake Nicaragua; Lago de Nicaragua; Lago Cocibolca",
+      "reason": "Названия согласуются с точными внешними карточками и географией страницы."
+    },
+    {
+      "field": "relationships.country_nicaragua",
+      "probability": 99,
+      "selected": "country_nicaragua",
+      "reason": "Страна внешнего источника совпадает с countryId MD."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "Выбрана исходная P625 как опорная точка озера, не геометрический центр и не координата Гранады. Значение precision=10 в Wikidata не интерпретируется как точность местоположения; лишняя точность не утверждается."
+}

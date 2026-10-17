@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-tour-tour_source_braziliya_ot_san_paulo_do_buziosa",
+  "stableId": "tour_source_braziliya_ot_san_paulo_do_buziosa",
+  "kind": "tour",
+  "canonicalPath": "/brazil/tour/brazil-sao-paulo-to-buzios/",
+  "sourceFingerprint": "1580a8b87da440205aae774f1d14379ac2f4146f286e4e31291406759ad941bc",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "relationships": [
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_sao_paulo",
+      "position": 1,
+      "day": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_iguacu",
+      "position": 2,
+      "day": 3
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_argentina_puerto_iguasu",
+      "position": 3,
+      "day": 4
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_rio",
+      "position": 4,
+      "day": 5
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_buzios",
+      "position": 5,
+      "day": 8
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_praia_vermelha"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/braziliya-ot-san-paulo-do-buziosa.md",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Exact active MD matches saved Git blob SHA b639ec65b32706ad059125741e191adaba3eae7c; stable ID, locale and product status checked."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/data/source-index/entries/tour_source_braziliya_ot_san_paulo_do_buziosa.json",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Exact source-index entry matches stable ID, contentPath and canonical URL /brazil/tour/brazil-sao-paulo-to-buzios/."
+    },
+    {
+      "field": "relationships.destination_brazil_sao_paulo",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/braziliya-ot-san-paulo-do-buziosa.md",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Confirmed visit from itinerary day 1 places; exact registered Destination destination_brazil_sao_paulo."
+    },
+    {
+      "field": "relationships.destination_brazil_iguacu",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/braziliya-ot-san-paulo-do-buziosa.md",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Confirmed visit from itinerary day 3 places; exact registered Destination destination_brazil_iguacu."
+    },
+    {
+      "field": "relationships.destination_argentina_puerto_iguasu",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/braziliya-ot-san-paulo-do-buziosa.md",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Confirmed visit from itinerary day 4 places; exact registered Destination destination_argentina_puerto_iguasu."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/braziliya-ot-san-paulo-do-buziosa.md",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Confirmed visit from itinerary day 5 places; exact registered Destination destination_brazil_rio."
+    },
+    {
+      "field": "relationships.destination_brazil_buzios",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/braziliya-ot-san-paulo-do-buziosa.md",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Confirmed visit from itinerary day 8 places; exact registered Destination destination_brazil_buzios."
+    },
+    {
+      "field": "relationships.destination_brazil_praia_vermelha",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/braziliya-ot-san-paulo-do-buziosa.md",
+      "checkedAt": "2026-10-17T10:11:33.573Z",
+      "note": "Registered Destination is explicitly linked in active MD; visit order and mandatory status not inferred."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "tour_source_braziliya_ot_san_paulo_do_buziosa",
+      "reason": "Active production MD identity confirmed against canonical source-index and immutable Git blob."
+    },
+    {
+      "field": "relationships.destination_brazil_sao_paulo",
+      "probability": 96,
+      "selected": "destination_brazil_sao_paulo",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_iguacu",
+      "probability": 96,
+      "selected": "destination_brazil_iguacu",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_argentina_puerto_iguasu",
+      "probability": 96,
+      "selected": "destination_argentina_puerto_iguasu",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 96,
+      "selected": "destination_brazil_rio",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_buzios",
+      "probability": 96,
+      "selected": "destination_brazil_buzios",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_praia_vermelha",
+      "probability": 90,
+      "selected": "destination_brazil_praia_vermelha",
+      "reason": "Explicit canonical Destination reference; only non-positional relatedPlace asserted."
+    }
+  ],
+  "reviewNote": null
+}

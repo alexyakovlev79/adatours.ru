@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-tour-tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya",
+  "stableId": "tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya",
+  "kind": "tour",
+  "canonicalPath": "/brazil/tour/amazon-manaus-anavilhanas-vip-3-days/",
+  "sourceFingerprint": "3a5240d9954d5dce6589cafd2a9f02eb24e5f679dee9322b92462b9964970d6e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "relationships": [
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_amazon",
+      "position": 1,
+      "day": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_arhipelag_anavianas",
+      "position": 2,
+      "day": 2
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya.md",
+      "checkedAt": "2026-10-17T10:11:33.525Z",
+      "note": "Exact active MD matches saved Git blob SHA 6d941d71e24e571b3e26e8c751e9889626ea4309; stable ID, locale and product status checked."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/data/source-index/entries/tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya.json",
+      "checkedAt": "2026-10-17T10:11:33.525Z",
+      "note": "Exact source-index entry matches stable ID, contentPath and canonical URL /brazil/tour/amazon-manaus-anavilhanas-vip-3-days/."
+    },
+    {
+      "field": "relationships.destination_brazil_amazon",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya.md",
+      "checkedAt": "2026-10-17T10:11:33.525Z",
+      "note": "Confirmed visit from itinerary day 1 places; exact registered Destination destination_brazil_amazon."
+    },
+    {
+      "field": "relationships.destination_brazil_arhipelag_anavianas",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya.md",
+      "checkedAt": "2026-10-17T10:11:33.525Z",
+      "note": "Confirmed visit from itinerary day 2 places; exact registered Destination destination_brazil_arhipelag_anavianas."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "tour_source_lyuksovyj_tur_na_amazonku_v_brazilii_v_manause_i_anavilyanase_na_tri_dnya",
+      "reason": "Active production MD identity confirmed against canonical source-index and immutable Git blob."
+    },
+    {
+      "field": "relationships.destination_brazil_amazon",
+      "probability": 96,
+      "selected": "destination_brazil_amazon",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_arhipelag_anavianas",
+      "probability": 96,
+      "selected": "destination_brazil_arhipelag_anavianas",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    }
+  ],
+  "reviewNote": null
+}

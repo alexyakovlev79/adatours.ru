@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-tour-tour_brazil_pantanal_bonito_lencois_8d",
+  "stableId": "tour_brazil_pantanal_bonito_lencois_8d",
+  "kind": "tour",
+  "canonicalPath": "/brazil/tour/pantanal-bonito-lencois-maranhenses-8-days/",
+  "sourceFingerprint": "ce2df0b962ddd9bbb65ccabc38f1dac1534c2400f1726a20ffd7031d72ca4550",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "relationships": [
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_kampo_grande",
+      "position": 1,
+      "day": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_pantanal",
+      "position": 2,
+      "day": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_bonito",
+      "position": 3,
+      "day": 3
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_sao_luis",
+      "position": 4,
+      "day": 5
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_barrejrinyas",
+      "position": 5,
+      "day": 6
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_lencois_maranhenses",
+      "position": 6,
+      "day": 6
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/pantanal-bonito-lencois-8d.md",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Exact active MD matches saved Git blob SHA 3cb57661765b2dbd20624edf5ca63ef8a51b724d; stable ID, locale and product status checked."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/data/source-index/entries/tour_brazil_pantanal_bonito_lencois_8d.json",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Exact source-index entry matches stable ID, contentPath and canonical URL /brazil/tour/pantanal-bonito-lencois-maranhenses-8-days/."
+    },
+    {
+      "field": "relationships.destination_brazil_kampo_grande",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/pantanal-bonito-lencois-8d.md",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Confirmed visit from itinerary day 1 places; exact registered Destination destination_brazil_kampo_grande."
+    },
+    {
+      "field": "relationships.destination_brazil_pantanal",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/pantanal-bonito-lencois-8d.md",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Confirmed visit from itinerary day 1 places; exact registered Destination destination_brazil_pantanal."
+    },
+    {
+      "field": "relationships.destination_brazil_bonito",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/pantanal-bonito-lencois-8d.md",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Confirmed visit from itinerary day 3 places; exact registered Destination destination_brazil_bonito."
+    },
+    {
+      "field": "relationships.destination_brazil_sao_luis",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/pantanal-bonito-lencois-8d.md",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Confirmed visit from itinerary day 5 places; exact registered Destination destination_brazil_sao_luis."
+    },
+    {
+      "field": "relationships.destination_brazil_barrejrinyas",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/pantanal-bonito-lencois-8d.md",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Confirmed visit from itinerary day 6 places; exact registered Destination destination_brazil_barrejrinyas."
+    },
+    {
+      "field": "relationships.destination_brazil_lencois_maranhenses",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/pantanal-bonito-lencois-8d.md",
+      "checkedAt": "2026-10-17T10:11:33.456Z",
+      "note": "Confirmed visit from itinerary day 6 places; exact registered Destination destination_brazil_lencois_maranhenses."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "tour_brazil_pantanal_bonito_lencois_8d",
+      "reason": "Active production MD identity confirmed against canonical source-index and immutable Git blob."
+    },
+    {
+      "field": "relationships.destination_brazil_kampo_grande",
+      "probability": 96,
+      "selected": "destination_brazil_kampo_grande",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_pantanal",
+      "probability": 96,
+      "selected": "destination_brazil_pantanal",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_bonito",
+      "probability": 96,
+      "selected": "destination_brazil_bonito",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_sao_luis",
+      "probability": 96,
+      "selected": "destination_brazil_sao_luis",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_barrejrinyas",
+      "probability": 96,
+      "selected": "destination_brazil_barrejrinyas",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_lencois_maranhenses",
+      "probability": 96,
+      "selected": "destination_brazil_lencois_maranhenses",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    }
+  ],
+  "reviewNote": null
+}

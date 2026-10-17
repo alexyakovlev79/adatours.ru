@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-tour-tour_source_amazoniya",
+  "stableId": "tour_source_amazoniya",
+  "kind": "tour",
+  "canonicalPath": "/brazil/tour/amazon/",
+  "sourceFingerprint": "65b9fe0b9412cb75941c51bd88aba81983ddc9e36d7aba9b762b828ffc52e01e",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "relationships": [
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_amazon",
+      "position": 1,
+      "day": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_derevnya_akazhatuba",
+      "position": 2,
+      "day": 3
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_rio"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/amazoniya.md",
+      "checkedAt": "2026-10-17T10:11:33.542Z",
+      "note": "Exact active MD matches saved Git blob SHA 7fdbd3a5b9a14a91927683542a1a75f16d95c2e8; stable ID, locale and product status checked."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/data/source-index/entries/tour_source_amazoniya.json",
+      "checkedAt": "2026-10-17T10:11:33.542Z",
+      "note": "Exact source-index entry matches stable ID, contentPath and canonical URL /brazil/tour/amazon/."
+    },
+    {
+      "field": "relationships.destination_brazil_amazon",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/amazoniya.md",
+      "checkedAt": "2026-10-17T10:11:33.542Z",
+      "note": "Confirmed visit from itinerary day 1 places; exact registered Destination destination_brazil_amazon."
+    },
+    {
+      "field": "relationships.destination_brazil_derevnya_akazhatuba",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/amazoniya.md",
+      "checkedAt": "2026-10-17T10:11:33.542Z",
+      "note": "Confirmed visit from itinerary day 3 places; exact registered Destination destination_brazil_derevnya_akazhatuba."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/4f20cacb378afc4589b1da73a591444c9d33b027/src/content/tours/amazoniya.md",
+      "checkedAt": "2026-10-17T10:11:33.542Z",
+      "note": "Registered Destination is explicitly linked in active MD; visit order and mandatory status not inferred."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "tour_source_amazoniya",
+      "reason": "Active production MD identity confirmed against canonical source-index and immutable Git blob."
+    },
+    {
+      "field": "relationships.destination_brazil_amazon",
+      "probability": 96,
+      "selected": "destination_brazil_amazon",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_derevnya_akazhatuba",
+      "probability": 96,
+      "selected": "destination_brazil_derevnya_akazhatuba",
+      "reason": "Exact place matched to canonical ID in explicit itinerary/route or primary excursion destination."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 90,
+      "selected": "destination_brazil_rio",
+      "reason": "Explicit canonical Destination reference; only non-positional relatedPlace asserted."
+    }
+  ],
+  "reviewNote": null
+}

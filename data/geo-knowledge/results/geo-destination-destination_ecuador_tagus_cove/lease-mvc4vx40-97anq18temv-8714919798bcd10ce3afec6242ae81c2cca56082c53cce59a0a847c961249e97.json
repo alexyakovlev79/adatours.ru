@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_tagus_cove",
+  "stableId": "destination_ecuador_tagus_cove",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/tagus-cove/",
+  "sourceFingerprint": "e3093efac42b5ca1b7e32c33551aa94b428865c64e82d76224b69cdf243a23f7",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "geonamesId": "3650861"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Бухта Тагус",
+      "reason": "Бухта Тагус — Caleta Tagus на западном берегу Исабелы напротив Фернандины. GeoNames подтверждает точный inlet в Галапагосах; озеро Дарвина рядом — самостоятельный объект."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3650861",
+      "reason": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "-0.26384, -91.37226",
+      "reason": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/tagus-cove.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Текущий main MD: stable ID, страна, статус approved и смысл страницы проверены. Бухта Тагус — Caleta Tagus на западном берегу Исабелы напротив Фернандины. GeoNames подтверждает точный inlet в Галапагосах; озеро Дарвина рядом — самостоятельный объект."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tagus-cove/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Прямой HTTP GET: 200; h1 и canonical соответствуют текущей странице. Веб-поиск не открывал URL; проверка выполнена urllib.request."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.geonames.org/3650861/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Точный идентификатор объекта; сверены наименование, тип и Эквадор."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.geonames.org/3650861/",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Координаты выбранного объекта из указанного источника; роль feature_point. Точки разных источников не усредняются."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/tagus-cove.md",
+      "checkedAt": "2026-10-17T08:32:58.850Z",
+      "note": "Страна прямо указана в countryId текущего MD и подтверждена внешней географией."
+    }
+  ],
+  "location": {
+    "latitude": -0.26384,
+    "longitude": -91.37226,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.geonames.org/3650861/"
+  }
+}

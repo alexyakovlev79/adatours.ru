@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_biomuseo",
+  "stableId": "destination_panama_biomuseo",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/biomuseo/",
+  "sourceFingerprint": "5637d759525da95627a270b5fa51a49f4b009fb74254a1fb788383623c7c1bcc",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Биомузей",
+      "reason": "Музей Biomuseo Фрэнка Гери на Амадоре; поле destinationType: city в MD не соответствует фактическому музею."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_panama"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка музея Панамы.",
+      "selected": "Q6034184"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Статья о музее на Амадоре.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Biomuseo\"}"
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 97,
+      "reason": "Официальный сайт самого музея.",
+      "selected": "https://biomuseo.org/"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Точка здания музея на Амадоре.",
+      "selected": "8.9325,-79.5449"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/biomuseo/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Музей Biomuseo Фрэнка Гери на Амадоре; поле destinationType: city в MD не соответствует фактическому музею."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://adatours.ru/panama/place/biomuseo/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6034184",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точная карточка музея Панамы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Biomuseo",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Статья о музее на Амадоре."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://biomuseo.org/en/el-biomuseo/",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Официальный сайт самого музея."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Biomuseo",
+      "checkedAt": "2026-10-17T08:01:08.723Z",
+      "note": "Точка здания музея на Амадоре."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q6034184",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Biomuseo"
+    },
+    "officialUrl": "https://biomuseo.org/"
+  },
+  "location": {
+    "latitude": 8.9325,
+    "longitude": -79.5449,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Biomuseo"
+  }
+}

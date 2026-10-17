@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_carrao_river",
+  "stableId": "destination_venezuela_carrao_river",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/carrao-river/",
+  "sourceFingerprint": "85a66b92bb4629f44ef6e7617eb7f3cb6638e9dd18b64e5830b5ee0ec55b8865",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "river",
+  "alternateNames": [
+    "Río Carrao",
+    "Carrao River"
+  ],
+  "external": {
+    "wikidataQid": "Q5046020",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Carrao_River",
+      "es": "https://es.wikipedia.org/wiki/R%C3%ADo_Carrao"
+    },
+    "geonamesId": "3646474",
+    "osm": {
+      "type": "relation",
+      "id": 20044134
+    }
+  },
+  "location": {
+    "latitude": 6.2767264,
+    "longitude": -62.922408,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5046020"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/carrao-river/",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Проверены HTTP 200, точный self-canonical, H1 и отсутствие noindex; сверены approved MD и source-index с текущим main. Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carrao_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carrao_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carrao_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Местные/английские названия относятся к тому же именованному объекту; сопоставлены с точной карточкой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5046020",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность. Прочитаны EntityData/API: P17=Venezuela и соответствующие sitelinks/описание."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carrao_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/R%C3%ADo_Carrao",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность. Статья о том же объекте, соответствие Wikidata проверено."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5046020",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "P1566=3646474 на точной Wikidata-карточке, совпадают страна и тип объекта."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/relation/20044134",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Прямо прочитан OSM API: имя, тип и географическое положение совпадают; relation type=waterway, wikidata=Q5046020."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5046020",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Выбрано P625 с qualifier P518=Q1233637 (river mouth): устье Каррао в Карони. Второе P625 5.8614268,-61.6310692 с qualifier river source — исток; точки не усреднялись."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Carrao_River",
+      "checkedAt": "2026-10-17T06:49:38.947Z",
+      "note": "Именованный объект расположен в Венесуэле; географический контекст точной статьи/маршрута совпадает с MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Река Каррао",
+      "reason": "Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность."
+    },
+    {
+      "field": "entityClass",
+      "probability": 98,
+      "selected": "river",
+      "reason": "Тип объекта подтвержден описанием источника и собственного MD."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Río Carrao; Carrao River",
+      "reason": "Названия совпадают с именем источника и точными карточками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q5046020",
+      "reason": "Река Каррао в Боливаре, приток Карони; Чурун впадает в Каррао. OSM relation имеет wikidata Q5046020 и destination Caroní, что подтверждает точную речную сущность."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Carrao_River\",\"es\":\"https://es.wikipedia.org/wiki/R%C3%ADo_Carrao\"}",
+      "reason": "Точные языковые статьи и объектный контекст совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 95,
+      "selected": "3646474",
+      "reason": "GeoNames ID указан на подтвержденной объектной карточке."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "relation/20044134",
+      "reason": "Точная карточка OSM проверена напрямую, соседние объекты исключены."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "6.2767264,-62.922408 (feature_point)",
+      "reason": "Выбрано P625 с qualifier P518=Q1233637 (river mouth): устье Каррао в Карони. Второе P625 5.8614268,-61.6310692 с qualifier river source — исток; точки не усреднялись."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 99,
+      "selected": "country_venezuela",
+      "reason": "Страна подтверждена точным источником и собственной страницей."
+    }
+  ],
+  "reviewNote": "Координаты обозначают устье, а не место посадки в лодку или центр всей реки."
+}

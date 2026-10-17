@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_vulkan_pakajya",
+  "stableId": "destination_guatemala_vulkan_pakajya",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/pacaya-volcano/",
+  "sourceFingerprint": "971febd9ce914d731f60a493cdf50f1b942d598fe613a223d4d9c52a6c583a8f",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3591968",
+    "wikidataQid": "Q753924",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Pacaya"
+    },
+    "osm": {
+      "type": "node",
+      "id": 299644153
+    }
+  },
+  "location": {
+    "latitude": 14.382,
+    "longitude": -90.601,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://volcano.si.edu/volcano.cfm?vn=342110"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/pacaya-volcano.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Вулканический комплекс Пакайя в Гватемале; главный референт — вулкан."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/pacaya-volcano/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=3591968; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q753924",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Q753924 с volcano/complex volcano P31, OSM natural=volcano и Smithsonian GVP 342110 обозначают именно Пакайя в Гватемале."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q753924",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/299644153",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=342110",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "14.382, -90.601; pointRole=feature_point. Координата Smithsonian GVP — точка вулканического комплекса, не начало туристической тропы. GeoNames 3591968 VLC и OSM volcano совпадают в пределах ~0.1 км. Муниципалитет San Vicente Pacaya Q1748582 и перуанский Pacaya-Samiria исключены."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q753924",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://volcano.si.edu/volcano.cfm?vn=342110",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Smithsonian GVP 342110: Pacaya, Guatemala, complex volcano; подтверждает главный референт и координату."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Вулканический комплекс Пакайя в Гватемале; главный референт — вулкан."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3591968",
+      "reason": "Прямая строка GT.txt id=3591968; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q753924",
+      "reason": "Q753924 с volcano/complex volcano P31, OSM natural=volcano и Smithsonian GVP 342110 обозначают именно Пакайя в Гватемале."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Pacaya",
+      "reason": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/299644153",
+      "reason": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "14.382,-90.601",
+      "reason": "14.382, -90.601; pointRole=feature_point. Координата Smithsonian GVP — точка вулканического комплекса, не начало туристической тропы. GeoNames 3591968 VLC и OSM volcano совпадают в пределах ~0.1 км. Муниципалитет San Vicente Pacaya Q1748582 и перуанский Pacaya-Samiria исключены."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "reviewNote": "Координата Smithsonian GVP — точка вулканического комплекса, не начало туристической тропы. GeoNames 3591968 VLC и OSM volcano совпадают в пределах ~0.1 км. Муниципалитет San Vicente Pacaya Q1748582 и перуанский Pacaya-Samiria исключены.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/pacaya-volcano/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

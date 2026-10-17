@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_san_antonio_aguas_kalentes",
+  "stableId": "destination_guatemala_san_antonio_aguas_kalentes",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/san-antonio-aguas-calientes/",
+  "sourceFingerprint": "1cb6ba1cd47a754bdd1a462ea0e904f23222ad3ad0a8ae4c46cd6c4bf2ab897d",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3590475",
+    "wikidataQid": "Q630216",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/San_Antonio_Aguas_Calientes"
+    },
+    "osm": {
+      "type": "node",
+      "id": 602914590
+    }
+  },
+  "location": {
+    "latitude": 14.54676,
+    "longitude": -90.78054,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://download.geonames.org/export/dump/GT.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/san-antonio-aguas-calientes.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Поселение Сан-Антонио-Агуас-Кальентес возле Антигуа, Сакатепекес; текстильный центр."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/san-antonio-aguas-calientes/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=3590475; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q630216",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Q630216 — одноимённое место и муниципальная тема Сакатепекеса. Главный именованный референт совпадает, но QID охватывает муниципалитет; принят по политике основного референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q630216",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. Статья включает муниципалитет; ошибочная фраза о San Andrés Ceballos не использована для географии."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/node/602914590",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "14.54676, -90.78054; pointRole=settlement_center. GeoNames 3590475 PPLA2 и OSM town относятся именно к поселению. GeoNames 3590474 ADM2 и OSM relation 374558 не подставлялись вместо города. В enwiki ошибочно назван San Andrés Ceballos муниципальным центром; это отдельное соседнее поселение, поэтому координаты из текста Wikipedia не брались."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q630216",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Поселение Сан-Антонио-Агуас-Кальентес возле Антигуа, Сакатепекес; текстильный центр."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3590475",
+      "reason": "Прямая строка GT.txt id=3590475; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 80,
+      "selected": "Q630216",
+      "reason": "Q630216 — одноимённое место и муниципальная тема Сакатепекеса. Главный именованный референт совпадает, но QID охватывает муниципалитет; принят по политике основного референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 78,
+      "selected": "https://en.wikipedia.org/wiki/San_Antonio_Aguas_Calientes",
+      "reason": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. Статья включает муниципалитет; ошибочная фраза о San Andrés Ceballos не использована для географии."
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "node/602914590",
+      "reason": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "14.54676,-90.78054",
+      "reason": "14.54676, -90.78054; pointRole=settlement_center. GeoNames 3590475 PPLA2 и OSM town относятся именно к поселению. GeoNames 3590474 ADM2 и OSM relation 374558 не подставлялись вместо города. В enwiki ошибочно назван San Andrés Ceballos муниципальным центром; это отдельное соседнее поселение, поэтому координаты из текста Wikipedia не брались."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "reviewNote": "GeoNames 3590475 PPLA2 и OSM town относятся именно к поселению. GeoNames 3590474 ADM2 и OSM relation 374558 не подставлялись вместо города. В enwiki ошибочно назван San Andrés Ceballos муниципальным центром; это отдельное соседнее поселение, поэтому координаты из текста Wikipedia не брались.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/san-antonio-aguas-calientes/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

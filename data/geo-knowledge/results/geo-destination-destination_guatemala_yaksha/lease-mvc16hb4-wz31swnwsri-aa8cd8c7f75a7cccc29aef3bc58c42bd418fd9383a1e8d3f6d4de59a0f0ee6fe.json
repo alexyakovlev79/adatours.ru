@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_yaksha",
+  "stableId": "destination_guatemala_yaksha",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/yaxha/",
+  "sourceFingerprint": "fd993867cdc41c539025c756d12a629e9db31aafbf1f5cf66e2d02789c5e4e20",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "6941831",
+    "wikidataQid": "Q1540906",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Yaxha"
+    },
+    "osm": {
+      "type": "way",
+      "id": 28718477
+    }
+  },
+  "location": {
+    "latitude": 17.07588,
+    "longitude": -89.40248,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/GT.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/yaxha.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Археологический город майя Яшха/Якша на северном берегу озера Яшха в Петене."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/yaxha/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=6941831; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1540906",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Q1540906 archaeological site в Гватемале, точный enwiki Yaxha, GeoNames 6941831 ANS и OSM archaeological_site с тем же QID."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1540906",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/way/28718477",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "17.07588, -89.40248; pointRole=representative. Выбрана точка GeoNames 6941831 ANS; дублирующая археологическая запись 3587642 ANS отличается примерно на 20 м. Озеро 3587641 LK, посёлок 3594540 PPL, мексиканский Q61280954 и весь парк Q5193246 не присвоены этой странице."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1540906",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Археологический город майя Яшха/Якша на северном берегу озера Яшха в Петене."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "6941831",
+      "reason": "Прямая строка GT.txt id=6941831; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1540906",
+      "reason": "Q1540906 archaeological site в Гватемале, точный enwiki Yaxha, GeoNames 6941831 ANS и OSM archaeological_site с тем же QID."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Yaxha",
+      "reason": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "external.osm",
+      "probability": 99,
+      "selected": "way/28718477",
+      "reason": "Первичный OSM API: точное название, тип и положение соответствуют объекту страницы. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "17.07588,-89.40248",
+      "reason": "17.07588, -89.40248; pointRole=representative. Выбрана точка GeoNames 6941831 ANS; дублирующая археологическая запись 3587642 ANS отличается примерно на 20 м. Озеро 3587641 LK, посёлок 3594540 PPL, мексиканский Q61280954 и весь парк Q5193246 не присвоены этой странице."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "reviewNote": "Выбрана точка GeoNames 6941831 ANS; дублирующая археологическая запись 3587642 ANS отличается примерно на 20 м. Озеро 3587641 LK, посёлок 3594540 PPL, мексиканский Q61280954 и весь парк Q5193246 не присвоены этой странице.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/yaxha/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

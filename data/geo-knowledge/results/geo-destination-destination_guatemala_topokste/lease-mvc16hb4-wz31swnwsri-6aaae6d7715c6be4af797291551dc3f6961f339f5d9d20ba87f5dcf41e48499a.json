@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_topokste",
+  "stableId": "destination_guatemala_topokste",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/topoxte/",
+  "sourceFingerprint": "c2d3158ab60a8d7e98ad25ae2b97977cd16f1d9f4ef39842dd360dbf471e88aa",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3588268",
+    "wikidataQid": "Q1438240",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Topoxte"
+    }
+  },
+  "location": {
+    "latitude": 17.06226,
+    "longitude": -89.42445,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/GT.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/topoxte.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Археологический памятник майя Топоксте на островах озера Яшха, Петен; самостоятельный объект относительно Якши."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/topoxte/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=3588268; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1438240",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Q1438240 имеет P31 archaeological site вместе с island, точный sitelink Topoxte и GeoNames 3588268 ANS. Археологический референт наиболее вероятен."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1438240",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "17.06226, -89.42445; pointRole=representative. Выбрана точка точной археологической карточки GeoNames 3588268 ANS. GeoNames 3588267 LCTY 17.08333,-89.48333 — другой по типу и существенно удалённый референт; не используется. P625 Wikidata содержит обе противоречивые точки, поэтому не выбран как coordinateSource. OSM node 1699971349 смещён западнее примерно на 0.6 км: ниже порога для точного соответствия островному памятнику, пропущен."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1438240",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://noticias.mcd.gob.gt/2026/06/18/autoridades-del-mcd-realizan-visita-tecnica-al-parque-nacional-yaxha-nakum-naranjo/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "MCD перечисляет Topoxte и Yaxhá как самостоятельные древние города внутри парка."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Археологический памятник майя Топоксте на островах озера Яшха, Петен; самостоятельный объект относительно Якши."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 94,
+      "selected": "3588268",
+      "reason": "Прямая строка GT.txt id=3588268; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 93,
+      "selected": "Q1438240",
+      "reason": "Q1438240 имеет P31 archaeological site вместе с island, точный sitelink Topoxte и GeoNames 3588268 ANS. Археологический референт наиболее вероятен."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 93,
+      "selected": "https://en.wikipedia.org/wiki/Topoxte",
+      "reason": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "location",
+      "probability": 91,
+      "selected": "17.06226,-89.42445",
+      "reason": "17.06226, -89.42445; pointRole=representative. Выбрана точка точной археологической карточки GeoNames 3588268 ANS. GeoNames 3588267 LCTY 17.08333,-89.48333 — другой по типу и существенно удалённый референт; не используется. P625 Wikidata содержит обе противоречивые точки, поэтому не выбран как coordinateSource. OSM node 1699971349 смещён западнее примерно на 0.6 км: ниже порога для точного соответствия островному памятнику, пропущен."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    },
+    {
+      "field": "external.osm",
+      "probability": 65,
+      "selected": "node/1699971349",
+      "reason": "Точный памятник назван Topoxté, но положение расходится с ANS GeoNames и островным референтом; идентификатор пропущен."
+    }
+  ],
+  "reviewNote": "Выбрана точка точной археологической карточки GeoNames 3588268 ANS. GeoNames 3588267 LCTY 17.08333,-89.48333 — другой по типу и существенно удалённый референт; не используется. P625 Wikidata содержит обе противоречивые точки, поэтому не выбран как coordinateSource. OSM node 1699971349 смещён западнее примерно на 0.6 км: ниже порога для точного соответствия островному памятнику, пропущен.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/topoxte/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

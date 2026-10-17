@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_guatemala_rio_dulse",
+  "stableId": "destination_guatemala_rio_dulse",
+  "kind": "destination",
+  "canonicalPath": "/guatemala/place/rio-dulce/",
+  "sourceFingerprint": "1772cc8d0eeaf6c96bfdf8f7813a33233e4c2a1a410667764be4303587b41af9",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "geonamesId": "3597690",
+    "wikidataQid": "Q2048161",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Dulce_River_(Guatemala)"
+    }
+  },
+  "location": {
+    "latitude": 15.81448,
+    "longitude": -88.75415,
+    "pointRole": "representative",
+    "coordinateSource": "https://download.geonames.org/export/dump/GT.zip"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_guatemala"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/f84889891bbcb813806fc69c80a29a53da05e7a0/src/content/destinations/rio-dulce.md",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Река Рио-Дульсе и её каньон в Изабале; не город Фронтерас и не аргентинская река."
+    },
+    {
+      "field": "pageAvailability",
+      "sourceUrl": "https://adatours.ru/guatemala/place/rio-dulce/",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Прямая строка GT.txt id=3597690; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2048161",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Q2048161 — река Гватемалы от озера Изабаль к Карибскому морю, GeoNames 3597690; точный главный природный объект страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2048161",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://download.geonames.org/export/dump/GT.zip",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "15.81448, -88.75415; pointRole=representative. Координата GeoNames — опорная точка нижнего течения у устья. Это не центр каньона и не причал Фронтерас. P625 Wikidata 15.7475,-88.87222222 — другая точка той же протяжённой реки; не усреднялась."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2048161",
+      "checkedAt": "2026-10-17T06:49:13.079Z",
+      "note": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Река Рио-Дульсе и её каньон в Изабале; не город Фронтерас и не аргентинская река."
+    },
+    {
+      "field": "pageAvailability",
+      "probability": 99,
+      "reason": "HTTP 200; canonical совпадает с canonicalPath, H1 соответствует названию, stableId присутствует."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 99,
+      "selected": "3597690",
+      "reason": "Прямая строка GT.txt id=3597690; точный тип объекта и контекст Гватемалы сверены с MD и картографическими источниками."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2048161",
+      "reason": "Q2048161 — река Гватемалы от озера Изабаль к Карибскому морю, GeoNames 3597690; точный главный природный объект страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Dulce_River_(Guatemala)",
+      "reason": "Точный enwiki sitelink соответствующего объекта; область темы сверена с основным референтом MD. "
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "15.81448,-88.75415",
+      "reason": "15.81448, -88.75415; pointRole=representative. Координата GeoNames — опорная точка нижнего течения у устья. Это не центр каньона и не причал Фронтерас. P625 Wikidata 15.7475,-88.87222222 — другая точка той же протяжённой реки; не усреднялась."
+    },
+    {
+      "field": "relationships.country_guatemala",
+      "probability": 99,
+      "selected": "country_guatemala",
+      "reason": "Страна — Guatemala: GT в первичном GeoNames, география MD и P17 Q774."
+    }
+  ],
+  "reviewNote": "Координата GeoNames — опорная точка нижнего течения у устья. Это не центр каньона и не причал Фронтерас. P625 Wikidata 15.7475,-88.87222222 — другая точка той же протяжённой реки; не усреднялась.",
+  "audit": {
+    "checkedUrls": [
+      "https://adatours.ru/guatemala/place/rio-dulce/"
+    ],
+    "findings": [
+      "HTTP 200; canonical, H1 и stable ID проверены на действующей странице.",
+      "MD и source-index прочитаны на main f84889891bbcb813806fc69c80a29a53da05e7a0; sourceFingerprint сохранён."
+    ]
+  }
+}

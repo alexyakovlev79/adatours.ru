@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_costa_rica_nacionalnyj_park_braulio_karrilo",
+  "stableId": "destination_costa_rica_nacionalnyj_park_braulio_karrilo",
+  "kind": "destination",
+  "canonicalPath": "/costa-rica/place/braulio-carrillo-national-park/",
+  "sourceFingerprint": "a4ebef729202e292f37a515a2a03718f76aa4abdec74ef769cdda1d4c378a3af",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q1757413",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Braulio_Carrillo_National_Park"
+    },
+    "geonamesId": "8425822",
+    "officialUrl": "https://www.visitcostarica.com/where-to-go/protected-areas/braulio-carrillo-national-park"
+  },
+  "location": {
+    "latitude": 10.1599,
+    "longitude": -83.974425,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1757413"
+  },
+  "alternateNames": [
+    "Parque Nacional Braulio Carrillo",
+    "Braulio Carrillo National Park"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_costa_rica"
+    }
+  ],
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Национальный парк Браулио-Каррильо",
+      "reason": "Национальный парк Braulio Carrillo, влажные горные леса, секторы Quebrada González и Barva между Центральной долиной и Карибским склоном: точное совпадение MD и ICT."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1757413",
+      "reason": "Национальный парк Braulio Carrillo, влажные горные леса, секторы Quebrada González и Barva между Центральной долиной и Карибским склоном: точное совпадение MD и ICT."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Braulio_Carrillo_National_Park",
+      "reason": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Парк Q1757413 как единый объект, не исторический деятель Braulio Carrillo, не отдельный вулкан Barva и не только сектор Quebrada González. P625 — территориальная опорная точка, не вход."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "8425822",
+      "reason": "P1566 точной сущности Wikidata; тип и география соответствуют выбранному объекту."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.visitcostarica.com/where-to-go/protected-areas/braulio-carrillo-national-park",
+      "reason": "Точная страница именованного национального парка на официальном туристическом сайте ICT Costa Rica; не главная страны и не страница всей области."
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "selected": "10.1599,-83.974425; representative",
+      "reason": "P625 точного парка: опорная точка территории, не единственный географический центр, не вход и не отдельный сектор."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 97,
+      "selected": "Parque Nacional Braulio Carrillo; Braulio Carrillo National Park",
+      "reason": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "probability": 99,
+      "selected": "containedInPlace country_costa_rica",
+      "reason": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/protected-areas/braulio-carrillo-national-park",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Национальный парк Braulio Carrillo, влажные горные леса, секторы Quebrada González и Barva между Центральной долиной и Карибским склоном: точное совпадение MD и ICT."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/costa-rica/place/braulio-carrillo-national-park/",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точный URL проверен: HTTP200, canonical совпадает, H1 соответствует, noindex нет. Approved MD и entry текущего main 8970d45ea38bcd627df622a063b9a279c92fb531 сверены по stable ID, стране, имени и URL."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1757413",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Национальный парк Braulio Carrillo, влажные горные леса, секторы Quebrada González и Barva между Центральной долиной и Карибским склоном: точное совпадение MD и ICT."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1757413",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точная статья выбранной сущности из sitelinks Wikidata; основной именованный объект и страна совпадают. Парк Q1757413 как единый объект, не исторический деятель Braulio Carrillo, не отдельный вулкан Barva и не только сектор Quebrada González. P625 — территориальная опорная точка, не вход."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1757413",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "P1566 точной сущности Wikidata; тип и география соответствуют выбранному объекту."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.visitcostarica.com/where-to-go/protected-areas/braulio-carrillo-national-park",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Точная страница именованного национального парка на официальном туристическом сайте ICT Costa Rica; не главная страны и не страница всей области."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1757413",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "P625 точного парка: опорная точка территории, не единственный географический центр, не вход и не отдельный сектор."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1757413",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Прямые испанские/международные названия того же места; подтверждены точными карточками и контекстом страницы."
+    },
+    {
+      "field": "relationships.country_costa_rica",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1757413",
+      "checkedAt": "2026-10-17T07:14:39.521Z",
+      "note": "Выбранный объект имеет Wikidata P17=Costa Rica Q800; точный источник и MD подтверждают страну. Используется существующий stable ID страны."
+    }
+  ],
+  "reviewNote": "Парк Q1757413 как единый объект, не исторический деятель Braulio Carrillo, не отдельный вулкан Barva и не только сектор Quebrada González. P625 — территориальная опорная точка, не вход."
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_venezuela_puerto_ordas",
+  "stableId": "destination_venezuela_puerto_ordas",
+  "kind": "destination",
+  "canonicalPath": "/venezuela/place/puerto-ordaz/",
+  "sourceFingerprint": "768884a2edd393ff889c09bc16eac8966595f06ea92aaa8750dc8e03406fdccc",
+  "status": "READY",
+  "external": {
+    "wikidataQid": "Q2290080",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Puerto_Ordaz"
+    },
+    "geonamesId": "3629655"
+  },
+  "identityScope": "single",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пуэрто-Ордас",
+      "reason": "Puerto Ordaz — названная часть агломерации Ciudad Guayana, отделимая от San Félix; точная eswiki и QID совпадают."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2290080",
+      "reason": "Puerto Ordaz — названная часть агломерации Ciudad Guayana, отделимая от San Félix; точная eswiki и QID совпадают."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "{\"es\":\"https://es.wikipedia.org/wiki/Puerto_Ordaz\"}",
+      "reason": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 98,
+      "selected": "3629655",
+      "reason": "P1566 выбранного Wikidata-объекта, не идентификатор соседнего одноименного объекта."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "8.2750351,-62.7558263; settlement_center",
+      "reason": "P625 населенного места Puerto Ordaz, совпадает с координатой eswiki; не центр всей Ciudad Guayana."
+    },
+    {
+      "field": "alternateNames",
+      "probability": 96,
+      "selected": "Puerto Ordaz",
+      "reason": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "probability": 98,
+      "selected": "containedInPlace country_venezuela",
+      "reason": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290080",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Puerto Ordaz — названная часть агломерации Ciudad Guayana, отделимая от San Félix; точная eswiki и QID совпадают."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/venezuela/place/puerto-ordaz/",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точный live URL HTTP 200, canonical совпадает, H1 соответствует; основной смысл проверен по MD/entry текущего main f84889891bbcb813806fc69c80a29a53da05e7a0."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290080",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Puerto Ordaz — названная часть агломерации Ciudad Guayana, отделимая от San Félix; точная eswiki и QID совпадают."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290080",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Точная статья из sitelinks выбранного объекта Wikidata; название и география совпадают."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290080",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P1566 выбранного Wikidata-объекта, не идентификатор соседнего одноименного объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290080",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "P625 населенного места Puerto Ordaz, совпадает с координатой eswiki; не центр всей Ciudad Guayana."
+    },
+    {
+      "field": "alternateNames",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290080",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Подтвержденные местные/международные названия того же объекта."
+    },
+    {
+      "field": "relationships.country_venezuela",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2290080",
+      "checkedAt": "2026-10-17T06:49:04.054Z",
+      "note": "Именованный объект находится в Венесуэле."
+    }
+  ],
+  "alternateNames": [
+    "Puerto Ordaz"
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_venezuela"
+    }
+  ],
+  "reviewNote": "Использована точная испанская статья Puerto Ordaz. Английское перенаправление к Ciudad Guayana не добавлено как отдельная точная идентичность.",
+  "location": {
+    "latitude": 8.2750351,
+    "longitude": -62.7558263,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2290080"
+  }
+}

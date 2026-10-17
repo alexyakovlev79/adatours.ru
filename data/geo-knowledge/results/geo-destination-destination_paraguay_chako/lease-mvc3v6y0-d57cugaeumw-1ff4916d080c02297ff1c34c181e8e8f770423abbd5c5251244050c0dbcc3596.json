@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_chako",
+  "stableId": "destination_paraguay_chako",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/chaco/",
+  "sourceFingerprint": "9e2216853c69500621da779e5732056c683c39df67739cd11ca638fa2d2fb08c",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Чако",
+      "reason": "Парагвайский Чако / Región Occidental: три западных департамента Парагвая, а не весь трансграничный Gran Chaco Q208347."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q2088711",
+      "reason": "Парагвайский Чако / Región Occidental: три западных департамента Парагвая, а не весь трансграничный Gran Chaco Q208347."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Paraguayan_Chaco",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-22.105861111111,-59.256638888889]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 99,
+      "selected": "country_paraguay",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/paraguay/place/chaco/",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Парагвайский Чако / Región Occidental: три западных департамента Парагвая, а не весь трансграничный Gran Chaco Q208347."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/chaco.md",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088711",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Парагвайский Чако / Región Occidental: три западных департамента Парагвая, а не весь трансграничный Gran Chaco Q208347."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088711",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088711",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q2088711",
+      "checkedAt": "2026-10-17T08:02:38.377Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q2088711",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Paraguayan_Chaco"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "location": {
+    "latitude": -22.105861111111,
+    "longitude": -59.256638888889,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q2088711"
+  },
+  "reviewNote": "Точка — опорная точка региона, не центр города и не туристический вход."
+}

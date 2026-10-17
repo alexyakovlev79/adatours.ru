@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_vitacura",
+  "stableId": "destination_chile_vitacura",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/vitacura/",
+  "sourceFingerprint": "91556c3640a9b0469808bb83f7b6609351a778dfd643fbd9a38c08ee75b8ee0f",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Витакура",
+      "reason": "Район/коммуна Vitacura в Большом Сантьяго, современная городская зона из программы."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q201036"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Vitacura\"}"
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "reason": "Опорная точка территории из текущей статьи; не адрес ресторана.",
+      "selected": "-33.38333,-70.575"
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "probability": 95,
+      "reason": "Коммуна является частью городского пространства Santiago.",
+      "selected": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/vitacura/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Район/коммуна Vitacura в Большом Сантьяго, современная городская зона из программы."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/vitacura/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q201036",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Vitacura",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Vitacura",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Опорная точка территории из текущей статьи; не адрес ресторана."
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Vitacura",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Коммуна является частью городского пространства Santiago."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q201036",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Район/коммуна Vitacura в Большом Сантьяго, современная городская зона из программы."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q201036",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Vitacura"
+    }
+  },
+  "location": {
+    "latitude": -33.38333,
+    "longitude": -70.575,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Vitacura"
+  },
+  "reviewNote": "Грубая WD P625 −33.4,−70.6 не усреднялась с выбранной точкой Wikipedia."
+}

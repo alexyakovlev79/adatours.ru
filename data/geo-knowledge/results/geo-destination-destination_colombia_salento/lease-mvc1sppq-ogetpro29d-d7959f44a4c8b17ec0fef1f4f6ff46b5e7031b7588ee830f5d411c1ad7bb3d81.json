@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_salento",
+  "stableId": "destination_colombia_salento",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/salento/",
+  "sourceFingerprint": "a05f36a0978982ffc21e53a1ed50ff2e441a9ba0a157374fefb0a65888c52f1e",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "City",
+  "external": {
+    "wikidataQid": "Q1576707",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Salento,_Quind%C3%ADo"
+    }
+  },
+  "location": {
+    "latitude": 4.6372222222222,
+    "longitude": -75.570833333333,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1576707"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/salento.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Основной референт — город Саленто в Quindío, а не итальянский регион Salento и не долина Кокора. QID объединяет город и одноименный муниципалитет; город является именованным референтом страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/salento/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salento,_Quind%C3%ADo",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Основной референт — город Саленто в Quindío, а не итальянский регион Salento и не долина Кокора. QID объединяет город и одноименный муниципалитет; город является именованным референтом страницы."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salento,_Quind%C3%ADo",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salento,_Quind%C3%ADo",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1576707",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Выбрана P625 Wikidata для городской точки. Wikipedia дает округленную точку 4.633,-75.567; различие не усредняется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1576707",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверены точный QID, P31/P17/P625 и sitelink; Основной референт — город Саленто в Quindío, а не итальянский регион Salento и не долина Кокора. QID объединяет город и одноименный муниципалитет; город является именованным референтом страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Salento,_Quind%C3%ADo",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Точная статья о выбранном объекте; соответствует Wikidata sitelink."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Саленто",
+      "reason": "Основной референт — город Саленто в Quindío, а не итальянский регион Salento и не долина Кокора. QID объединяет город и одноименный муниципалитет; город является именованным референтом страницы."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "City",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "4.6372222222222, -75.570833333333",
+      "reason": "Выбрана P625 Wikidata для городской точки. Wikipedia дает округленную точку 4.633,-75.567; различие не усредняется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1576707",
+      "reason": "Основной референт — город Саленто в Quindío, а не итальянский регион Salento и не долина Кокора. QID объединяет город и одноименный муниципалитет; город является именованным референтом страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://en.wikipedia.org/wiki/Salento,_Quind%C3%ADo",
+      "reason": "Точная статья и sitelink выбранной Wikidata."
+    }
+  ]
+}

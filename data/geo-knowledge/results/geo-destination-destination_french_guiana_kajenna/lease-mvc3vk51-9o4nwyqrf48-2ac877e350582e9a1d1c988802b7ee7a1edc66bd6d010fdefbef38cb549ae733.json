@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_french_guiana_kajenna",
+  "stableId": "destination_french_guiana_kajenna",
+  "kind": "destination",
+  "canonicalPath": "/french-guiana/place/cayenne/",
+  "sourceFingerprint": "720185b6d7060de439e1f9e9e20f02d39e209a008261dfdedd0d0e21edbaad73",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q44401"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_french_guiana"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44401",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Cayenne — город и коммуна, административный центр Французской Гвианы; не река и не округ."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/kajenna.md",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/french-guiana/place/cayenne/",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44401",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Cayenne — город и коммуна, административный центр Французской Гвианы; не река и не округ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44401",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q44401",
+      "checkedAt": "2026-10-17T08:05:56.230Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Cayenne — город и коммуна, административный центр Французской Гвианы; не река и не округ.",
+      "selected": "Кайенна"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Cayenne — город и коммуна, административный центр Французской Гвианы; не река и не округ.",
+      "selected": "Q44401"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[4.93861111,-52.335]"
+    },
+    {
+      "field": "relationships.country_french_guiana",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_french_guiana"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": 4.93861111,
+    "longitude": -52.335,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q44401"
+  }
+}

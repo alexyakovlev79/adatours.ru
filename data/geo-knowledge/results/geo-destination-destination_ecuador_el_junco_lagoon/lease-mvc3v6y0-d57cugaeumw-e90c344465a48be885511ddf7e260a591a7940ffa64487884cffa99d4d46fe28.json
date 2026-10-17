@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_el_junco_lagoon",
+  "stableId": "destination_ecuador_el_junco_lagoon",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/el-junco-lagoon/",
+  "sourceFingerprint": "04582854397556a7100568d11a0614527b76281d2b1fdbc1de6bd35c703f6ed4",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 95,
+      "selected": "Лагуна Эль-Юнко",
+      "reason": "Основной референт en/es статей Q3049990 — пресноводная лагуна El Junco на San Cristóbal; принадлежность подтверждена Parque Nacional Galápagos."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q3049990",
+      "reason": "Основной референт en/es статей Q3049990 — пресноводная лагуна El Junco на San Cristóbal; принадлежность подтверждена Parque Nacional Galápagos."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 95,
+      "selected": "https://en.wikipedia.org/wiki/El_Junco",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-0.895,-89.48]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "relationships.destination_ecuador_san_cristobal_island",
+      "probability": 99,
+      "selected": "destination_ecuador_san_cristobal_island",
+      "reason": "Лагуна El Junco находится внутри острова San Cristóbal, что прямо подтверждается национальным парком."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/el-junco-lagoon/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Основной референт en/es статей Q3049990 — пресноводная лагуна El Junco на San Cristóbal; принадлежность подтверждена Parque Nacional Galápagos."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/el-junco-lagoon.md",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3049990",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Основной референт en/es статей Q3049990 — пресноводная лагуна El Junco на San Cristóbal; принадлежность подтверждена Parque Nacional Galápagos."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3049990",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3049990",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://galapagos.gob.ec/ninos-de-tres-islas-empiezan-un-vacacional-enfocado-en-la-conservacion/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://galapagos.gob.ec/ninos-de-tres-islas-empiezan-un-vacacional-enfocado-en-la-conservacion/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Основной референт en/es статей Q3049990 — пресноводная лагуна El Junco на San Cristóbal; принадлежность подтверждена Parque Nacional Galápagos."
+    },
+    {
+      "field": "relationships.destination_ecuador_san_cristobal_island",
+      "sourceUrl": "https://galapagos.gob.ec/ninos-de-tres-islas-empiezan-un-vacacional-enfocado-en-la-conservacion/",
+      "checkedAt": "2026-10-17T08:27:00.374Z",
+      "note": "Лагуна El Junco находится внутри острова San Cristóbal, что прямо подтверждается национальным парком."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q3049990",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/El_Junco"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_ecuador_san_cristobal_island"
+    }
+  ],
+  "location": {
+    "latitude": -0.895,
+    "longitude": -89.48,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3049990"
+  },
+  "reviewNote": "В Q3049990 смешаны Ecuador/Argentina и две P625. Принята только галапагосская точка −0.895,−89.48; аргентинская −37.89303,−59.95678 и GeoNames 3434602 исключены. Не усреднялись."
+}

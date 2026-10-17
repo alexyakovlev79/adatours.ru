@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_casa_del_arbol",
+  "stableId": "destination_ecuador_casa_del_arbol",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/casa-del-arbol/",
+  "sourceFingerprint": "31c5114e38b07551dc7f5c792f567588cd8c82927d1db14ae195684763fd2fde",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Качели «Конец света» — Каса-дель-Арбол",
+      "reason": "La Casa del Árbol — туристическая площадка и качели над Baños в секторе Runtún, отличена от кафе, одноимённых парков Cotopaxi и Shell."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "external.osm",
+      "probability": 96,
+      "selected": "{\"type\":\"node\",\"id\":778231506}",
+      "reason": "Точная смотровая площадка La Casa del Arbol рядом с качелями El columpio más famoso del mundo; не остановка автобуса и не одноимённый парк."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "[-1.4185993,-78.4264585]",
+      "reason": "Опорная точка смотровой площадки комплекса; рядом отдельная OSM node качелей."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/casa-del-arbol/",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "La Casa del Árbol — туристическая площадка и качели над Baños в секторе Runtún, отличена от кафе, одноимённых парков Cotopaxi и Shell."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/casa-del-arbol.md",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.banosecuador.travel/es/arcofimund",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.banosecuador.travel/es/arcofimund",
+      "checkedAt": "2026-10-17T08:26:24.028Z",
+      "note": "La Casa del Árbol — туристическая площадка и качели над Baños в секторе Runtún, отличена от кафе, одноимённых парков Cotopaxi и Shell."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/778231506",
+      "checkedAt": "2026-10-17T08:27:00.374Z",
+      "note": "Точная смотровая площадка La Casa del Arbol рядом с качелями El columpio más famoso del mundo; не остановка автобуса и не одноимённый парк."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.openstreetmap.org/api/0.6/node/778231506",
+      "checkedAt": "2026-10-17T08:27:00.374Z",
+      "note": "Опорная точка смотровой площадки комплекса; рядом отдельная OSM node качелей."
+    }
+  ],
+  "external": {
+    "osm": {
+      "type": "node",
+      "id": 778231506
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "reviewNote": "Отдельный QID не найден. Использована точная OSM node комплекса с домиком и качелями.",
+  "location": {
+    "latitude": -1.4185993,
+    "longitude": -78.4264585,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.openstreetmap.org/node/778231506"
+  }
+}

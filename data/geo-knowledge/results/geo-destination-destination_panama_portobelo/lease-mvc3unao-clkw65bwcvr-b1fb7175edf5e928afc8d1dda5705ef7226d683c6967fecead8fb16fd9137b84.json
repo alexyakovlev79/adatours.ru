@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_portobelo",
+  "stableId": "destination_panama_portobelo",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/portobelo/",
+  "sourceFingerprint": "c3757d48866de48a53a4658ad9c99b1ad37513e06730a30cdb52d49542f2ed3e",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Портобело",
+      "reason": "Портобело: исторический портовый город провинции Колон; совпадают испанские укрепления и карибская география. Не район Portobelo District."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "selected": "Q797147",
+      "reason": "Портобело: исторический портовый город провинции Колон; совпадают испанские укрепления и карибская география. Не район Portobelo District."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "9.554444444444446,-79.655",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 99,
+      "selected": "country_panama",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/portobelo.md",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Current approved MD and stable ID checked. Портобело: исторический портовый город провинции Колон; совпадают испанские укрепления и карибская география. Не район Portobelo District."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q797147",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Портобело: исторический портовый город провинции Колон; совпадают испанские укрепления и карибская география. Не район Portobelo District."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q797147",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Портобело: исторический портовый город провинции Колон; совпадают испанские укрепления и карибская география. Не район Portobelo District."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q797147",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q797147",
+      "checkedAt": "2026-10-17T08:00:20.165Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/panama/place/portobelo/",
+      "checkedAt": "2026-10-17T08:00:27.505Z",
+      "note": "Direct HTTP GET 200; canonical equals requested URL; robots noindex absent; title matches entity. Search proxy inaccessible, checked with direct urllib request."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q797147"
+  },
+  "location": {
+    "latitude": 9.554444444444446,
+    "longitude": -79.655,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q797147"
+  }
+}

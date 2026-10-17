@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_zapovednik_chimboraso",
+  "stableId": "destination_ecuador_zapovednik_chimboraso",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/chimborazo-reserve/",
+  "sourceFingerprint": "59600109cbfdc7460dc49f4cce31d84ea341aab7c71badbcd45255784645184a",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 96,
+      "selected": "Заповедник Чимборасо",
+      "reason": "Reserva de producción de fauna Chimborazo — охраняемая территория в трёх провинциях Эквадора, а не вулкан Chimborazo. Выбрана карточка с испанской статьёй и OSM-границей."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "selected": "Q14203835",
+      "reason": "Reserva de producción de fauna Chimborazo — охраняемая территория в трёх провинциях Эквадора, а не вулкан Chimborazo. Выбрана карточка с испанской статьёй и OSM-границей."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-1.5,-78.85]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/chimborazo-reserve/",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Reserva de producción de fauna Chimborazo — охраняемая территория в трёх провинциях Эквадора, а не вулкан Chimborazo. Выбрана карточка с испанской статьёй и OSM-границей."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/chimborazo-reserve.md",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14203835",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Reserva de producción de fauna Chimborazo — охраняемая территория в трёх провинциях Эквадора, а не вулкан Chimborazo. Выбрана карточка с испанской статьёй и OSM-границей."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14203835",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://patrimonio.ambiente.gob.ec/iptmae/resource?r=smart-chimborazo",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://patrimonio.ambiente.gob.ec/iptmae/resource?r=smart-chimborazo",
+      "checkedAt": "2026-10-17T08:23:01.534Z",
+      "note": "Reserva de producción de fauna Chimborazo — охраняемая территория в трёх провинциях Эквадора, а не вулкан Chimborazo. Выбрана карточка с испанской статьёй и OSM-границей."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q14203835"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -1.5,
+    "longitude": -78.85,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q14203835"
+  },
+  "reviewNote": "Q20615202 — конкурирующая/дублирующая карточка той же охраняемой территории; сохранён один Q14203835. Разные опорные точки не усреднялись."
+}

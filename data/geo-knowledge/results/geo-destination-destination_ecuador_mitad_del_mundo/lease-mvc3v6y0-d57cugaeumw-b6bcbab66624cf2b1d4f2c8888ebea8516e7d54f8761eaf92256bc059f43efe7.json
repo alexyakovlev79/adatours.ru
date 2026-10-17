@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_mitad_del_mundo",
+  "stableId": "destination_ecuador_mitad_del_mundo",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/mitad-del-mundo/",
+  "sourceFingerprint": "ea0c76a1c63d95a95063692a5c672f1bbc93e3eeec8308d06a4497fa91635127",
+  "status": "READY",
+  "confidence": "high",
+  "identityScope": "single",
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Митад-дель-Мундо",
+      "reason": "Ciudad Mitad del Mundo — культурно-монументальный комплекс San Antonio de Pichincha севернее Quito; не сам экватор и не соседний музей Intiñan."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q1806478",
+      "reason": "Ciudad Mitad del Mundo — культурно-монументальный комплекс San Antonio de Pichincha севернее Quito; не сам экватор и не соседний музей Intiñan."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 99,
+      "selected": "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo",
+      "reason": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "[-0.0022222222222222222,-78.45583333333333]",
+      "reason": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/mitad-del-mundo/",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Ciudad Mitad del Mundo — культурно-монументальный комплекс San Antonio de Pichincha севернее Quito; не сам экватор и не соседний музей Intiñan."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/1acd9c8951d21d12d0a5a968108e9bf7074f7a25/src/content/destinations/mitad-del-mundo.md",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Прочитан текущий approved MD: stable ID, страна и основной референт сверены с опубликованной страницей; HTTP 200 и canonical проверены напрямую."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1806478",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Ciudad Mitad del Mundo — культурно-монументальный комплекс San Antonio de Pichincha севернее Quito; не сам экватор и не соседний музей Intiñan."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1806478",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Точный sitelink выбранной сущности Wikidata."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1806478",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Одна опорная точка P625 выбранного объекта WGS84; не усреднение и не утверждение о входе."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1806478",
+      "checkedAt": "2026-10-17T08:26:24.027Z",
+      "note": "Страна подтверждается текущим MD и точным внешним источником."
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q1806478",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "location": {
+    "latitude": -0.0022222222222222222,
+    "longitude": -78.45583333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1806478"
+  },
+  "reviewNote": "Домен mitaddelmundo.com сейчас содержит посторонний контент, поэтому officialUrl не добавлен."
+}

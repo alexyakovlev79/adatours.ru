@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_kalama",
+  "stableId": "destination_chile_kalama",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/calama/",
+  "sourceFingerprint": "c65df30f2ad44f5b597872634196ee6e0caedd1c6a7f91e7f6c97956379c1c11",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q3685"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3685",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Город Calama в El Loa/Antofagasta, Чили, транспортная база Атакамы; не аэропорт и не одноименная коммуна целиком."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/calama.md",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/calama/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3685",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Город Calama в El Loa/Antofagasta, Чили, транспортная база Атакамы; не аэропорт и не одноименная коммуна целиком."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3685",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3685",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Город Calama в El Loa/Antofagasta, Чили, транспортная база Атакамы; не аэропорт и не одноименная коммуна целиком.",
+      "selected": "Калама"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Город Calama в El Loa/Antofagasta, Чили, транспортная база Атакамы; не аэропорт и не одноименная коммуна целиком.",
+      "selected": "Q3685"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-22.46238889,-68.92719444]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -22.46238889,
+    "longitude": -68.92719444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3685"
+  }
+}

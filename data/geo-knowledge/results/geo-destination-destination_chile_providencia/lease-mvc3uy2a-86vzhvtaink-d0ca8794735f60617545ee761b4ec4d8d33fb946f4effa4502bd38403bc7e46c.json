@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_providencia",
+  "stableId": "destination_chile_providencia",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/providencia/",
+  "sourceFingerprint": "fdceaab3278f4fb7fbc391e1e6c841fd5ed77d1e7cdcf9e34394fe5251b76635",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Провиденсия",
+      "reason": "Городская коммуна Providencia в Сантьяго, не колумбийский остров и не одноимённые поселения других стран."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Точная карточка выбранного географического референта.",
+      "selected": "Q51587"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "reason": "Точная статья выбранного географического референта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Providencia,_Chile\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "P625 городской коммуны, не привязка к отдельной улице.",
+      "selected": "-33.43333333333333,-70.61666666666666"
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "probability": 95,
+      "reason": "Источник прямо определяет Providencia как часть Santiago City.",
+      "selected": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/providencia/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Городская коммуна Providencia в Сантьяго, не колумбийский остров и не одноимённые поселения других стран."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/providencia/",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51587",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная карточка выбранного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Providencia,_Chile",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Точная статья выбранного географического референта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51587",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "P625 городской коммуны, не привязка к отдельной улице."
+    },
+    {
+      "field": "relationships.destination_chile_santyago_de_chili",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Providencia,_Chile",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Источник прямо определяет Providencia как часть Santiago City."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q51587",
+      "checkedAt": "2026-10-17T08:18:29.960Z",
+      "note": "Городская коммуна Providencia в Сантьяго, не колумбийский остров и не одноимённые поселения других стран."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_chile_santyago_de_chili"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q51587",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Providencia,_Chile"
+    }
+  },
+  "location": {
+    "latitude": -33.43333333333333,
+    "longitude": -70.61666666666666,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q51587"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_tokonao",
+  "stableId": "destination_chile_tokonao",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/toconao/",
+  "sourceFingerprint": "16c15bdff345e6dc0caca075dee6187c7efd5070fe3a2e73108de424af457a9a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q7812041"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7812041",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Поселение Toconao в San Pedro de Atacama, Antofagasta, Чили, с церковью San Lucas; не одноименная река."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/toconao.md",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/toconao/",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7812041",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Поселение Toconao в San Pedro de Atacama, Antofagasta, Чили, с церковью San Lucas; не одноименная река."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7812041",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q7812041",
+      "checkedAt": "2026-10-17T08:13:31.357Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "reason": "Поселение Toconao в San Pedro de Atacama, Antofagasta, Чили, с церковью San Lucas; не одноименная река.",
+      "selected": "Токонао"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "reason": "Поселение Toconao в San Pedro de Atacama, Antofagasta, Чили, с церковью San Lucas; не одноименная река.",
+      "selected": "Q7812041"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-23.1905,-68.00711111]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -23.1905,
+    "longitude": -68.00711111,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q7812041"
+  }
+}

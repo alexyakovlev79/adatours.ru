@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_paraguay_koloniya_independensiya",
+  "stableId": "destination_paraguay_koloniya_independensiya",
+  "kind": "destination",
+  "canonicalPath": "/paraguay/place/colonia-independencia/",
+  "sourceFingerprint": "23323d1942333cbc7ee652e88a88d5c3a77a950635fbdac508c9f8f547b17f86",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "external": {
+    "wikidataQid": "Q1661083",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Colonia_Independencia"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_paraguay"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1661083",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Колония и район Independencia в Гуайра у Йбитурусу; основной именованный референт составной страницы."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/colonia-independencia.md",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/paraguay/place/colonia-independencia/",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1661083",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Колония и район Independencia в Гуайра у Йбитурусу; основной именованный референт составной страницы."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Independencia",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Колония и район Independencia в Гуайра у Йбитурусу; основной именованный референт составной страницы."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Colonia_Independencia",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Опорная точка Independencia из enwiki/P625; не центр всех холмов и водопадов окрестностей."
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1661083",
+      "checkedAt": "2026-10-17T08:01:25.722Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "reason": "Колония и район Independencia в Гуайра у Йбитурусу; основной именованный референт составной страницы.",
+      "selected": "Колония-Индепенденсия"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "reason": "Колония и район Independencia в Гуайра у Йбитурусу; основной именованный референт составной страницы.",
+      "selected": "Q1661083"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 94,
+      "reason": "Колония и район Independencia в Гуайра у Йбитурусу; основной именованный референт составной страницы.",
+      "selected": "https://en.wikipedia.org/wiki/Colonia_Independencia"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная точка Independencia из enwiki/P625; не центр всех холмов и водопадов окрестностей.",
+      "selected": "[-25.72,-56.25]"
+    },
+    {
+      "field": "relationships.country_paraguay",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_paraguay"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": null,
+  "location": {
+    "latitude": -25.72,
+    "longitude": -56.25,
+    "pointRole": "representative",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Colonia_Independencia"
+  }
+}

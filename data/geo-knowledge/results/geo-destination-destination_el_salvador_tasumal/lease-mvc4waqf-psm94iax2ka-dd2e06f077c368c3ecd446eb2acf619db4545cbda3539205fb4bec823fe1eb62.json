@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_tasumal",
+  "stableId": "destination_el_salvador_tasumal",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/tazumal/",
+  "sourceFingerprint": "9abe184548b0b03eb97418ed9cc4efac9b3a55a3c068fe20f3281a8f5b546d32",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q690372",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tazumal"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/tazumal/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. Tazumal archaeological site in Chalchuapa, western El Salvador; distinct from Casa Blanca and the city."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tazumal",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Tazumal archaeological site in Chalchuapa, western El Salvador; distinct from Casa Blanca and the city."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tazumal",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q690372",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Tazumal archaeological site in Chalchuapa, western El Salvador; distinct from Casa Blanca and the city."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tazumal",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Tazumal archaeological site in Chalchuapa, western El Salvador; distinct from Casa Blanca and the city."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tazumal",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Тасумаль",
+      "reason": "Tazumal archaeological site in Chalchuapa, western El Salvador; distinct from Casa Blanca and the city."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q690372",
+      "reason": "Tazumal archaeological site in Chalchuapa, western El Salvador; distinct from Casa Blanca and the city."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Tazumal\"}",
+      "reason": "Tazumal archaeological site in Chalchuapa, western El Salvador; distinct from Casa Blanca and the city."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.97944,\"longitude\":-89.67417,\"pointRole\":\"feature_point\",\"coordinateSource\":\"https://en.wikipedia.org/wiki/Tazumal\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.97944,
+    "longitude": -89.67417,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Tazumal"
+  },
+  "reviewNote": ""
+}

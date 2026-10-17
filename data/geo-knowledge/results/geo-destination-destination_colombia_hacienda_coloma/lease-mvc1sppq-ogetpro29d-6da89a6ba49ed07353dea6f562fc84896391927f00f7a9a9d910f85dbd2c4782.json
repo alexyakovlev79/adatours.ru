@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_colombia_hacienda_coloma",
+  "stableId": "destination_colombia_hacienda_coloma",
+  "kind": "destination",
+  "canonicalPath": "/colombia/place/hacienda-coloma/",
+  "sourceFingerprint": "b210acf4be66e443dabc4bf22330821d2ae8a06539effb0c63d8c6e13355ac8a",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "entityClass": "Place",
+  "external": {
+    "officialUrl": "https://haciendacoloma.com.co/en/about-us/"
+  },
+  "location": {
+    "latitude": 4.3430326,
+    "longitude": -74.3773558,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://haciendacoloma.com.co/en/about-us/"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_colombia"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/989a35d14eab8a816010b3c5c40da68f62d230bb/src/content/destinations/hacienda-coloma.md",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Сверены approved MD, stable ID, title, страна и содержательный основной референт. Историческая кофейная Hacienda Coloma в Fusagasugá, Cundinamarca. Официальный сайт подтверждает архитектуру, кофейное хозяйство и адрес Av. las Palmas Vía Tibacuy."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/colombia/place/hacienda-coloma/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Проверка опубликованного HTML: HTTP200, ожидаемый H1 и self-canonical, noindex отсутствует."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://haciendacoloma.com.co/en/about-us/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Историческая кофейная Hacienda Coloma в Fusagasugá, Cundinamarca. Официальный сайт подтверждает архитектуру, кофейное хозяйство и адрес Av. las Palmas Vía Tibacuy."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://haciendacoloma.com.co/en/about-us/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Классификация именованного объекта по содержанию источника."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "sourceUrl": "https://haciendacoloma.com.co/en/about-us/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Источник размещает выбранный объект в Колумбии; countryId текущего MD — country_colombia."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://haciendacoloma.com.co/en/about-us/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Координаты извлечены из destination части ссылки HOW TO GET THERE WITH GOOGLE MAPS на официальной странице: !1d-74.3773558!2d4.3430326. Числа после @4.5509263,-74.3689546 — центр обзора маршрута, не координаты асьенды. Близкий независимый справочный пин 4.3430300,-74.3773569 подтверждает участок, не усреднялся."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://haciendacoloma.com.co/en/about-us/",
+      "checkedAt": "2026-10-17T07:05:57.427Z",
+      "note": "Действующий официальный сайт именно выбранного объекта."
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "QID не установлен с порогом 70%; официальный URL и точка объекта подтверждены.",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Кофейная асьенда Колома",
+      "reason": "Историческая кофейная Hacienda Coloma в Fusagasugá, Cundinamarca. Официальный сайт подтверждает архитектуру, кофейное хозяйство и адрес Av. las Palmas Vía Tibacuy."
+    },
+    {
+      "field": "entityClass",
+      "probability": 95,
+      "selected": "Place",
+      "reason": "Класс основного референта установлен по содержанию MD и внешнему источнику."
+    },
+    {
+      "field": "relationships.country_colombia",
+      "probability": 99,
+      "selected": "country_colombia",
+      "reason": "Страна совпадает в MD и внешнем географическом/официальном источнике."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "4.3430326, -74.3773558",
+      "reason": "Координаты извлечены из destination части ссылки HOW TO GET THERE WITH GOOGLE MAPS на официальной странице: !1d-74.3773558!2d4.3430326. Числа после @4.5509263,-74.3689546 — центр обзора маршрута, не координаты асьенды. Близкий независимый справочный пин 4.3430300,-74.3773569 подтверждает участок, не усреднялся."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 30,
+      "reason": "После адресного поиска точный QID не установлен; идентификаторы более крупных объектов или одноименных мест не назначены."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://haciendacoloma.com.co/en/about-us/",
+      "reason": "Официальная страница самого парка/асьенды."
+    }
+  ]
+}

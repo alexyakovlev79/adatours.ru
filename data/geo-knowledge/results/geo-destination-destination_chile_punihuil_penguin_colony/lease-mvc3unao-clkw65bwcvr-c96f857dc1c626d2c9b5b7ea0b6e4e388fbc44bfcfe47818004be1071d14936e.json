@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_punihuil_penguin_colony",
+  "stableId": "destination_chile_punihuil_penguin_colony",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/punihuil-penguin-colony/",
+  "sourceFingerprint": "8ba0e9c9d2ff326d88de6cef0c9470f8333841adad1cf0acd364d3853cb08c5c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пуньиуиль: колония пингвинов",
+      "reason": "Основной референт «Пуньиуиль: колония пингвинов» — охраняемые островки Islotes de Puñihuil. CONAF подтверждает три островка и обе названные в MD колонии пингвинов у северо-западного Чилоэ."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 93,
+      "selected": "Q6084438",
+      "reason": "Основной референт «Пуньиуиль: колония пингвинов» — охраняемые островки Islotes de Puñihuil. CONAF подтверждает три островка и обе названные в MD колонии пингвинов у северо-западного Чилоэ."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 95,
+      "selected": "https://www.conaf.cl/parque_nacionales/monumento-natural-islotes-de-punihuil/",
+      "reason": "Основной референт «Пуньиуиль: колония пингвинов» — охраняемые островки Islotes de Puñihuil. CONAF подтверждает три островка и обе названные в MD колонии пингвинов у северо-западного Чилоэ."
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "selected": "-41.92472222222222,-74.03916666666666",
+      "reason": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Country agrees with current MD and external geographic context."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/punihuil-penguin-colony.md",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Current approved MD and stable ID checked. Основной референт «Пуньиуиль: колония пингвинов» — охраняемые островки Islotes de Puñihuil. CONAF подтверждает три островка и обе названные в MD колонии пингвинов у северо-западного Чилоэ."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.conaf.cl/parque_nacionales/monumento-natural-islotes-de-punihuil/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Основной референт «Пуньиуиль: колония пингвинов» — охраняемые островки Islotes de Puñihuil. CONAF подтверждает три островка и обе названные в MD колонии пингвинов у северо-западного Чилоэ."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q6084438",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Основной референт «Пуньиуиль: колония пингвинов» — охраняемые островки Islotes de Puñihuil. CONAF подтверждает три островка и обе названные в MD колонии пингвинов у северо-западного Чилоэ."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.conaf.cl/parque_nacionales/monumento-natural-islotes-de-punihuil/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Основной референт «Пуньиуиль: колония пингвинов» — охраняемые островки Islotes de Puñihuil. CONAF подтверждает три островка и обе названные в MD колонии пингвинов у северо-западного Чилоэ."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Islotes_de_Pu%C3%B1ihuil",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Source coordinate for the named referent, without averaging."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.conaf.cl/parque_nacionales/monumento-natural-islotes-de-punihuil/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Country agrees with current MD and external geographic context."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/Category:Islotes_de_Pu%C3%B1ihuil",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Authority Q6084438 names the same protected islets which CONAF identifies as nesting grounds."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/punihuil-penguin-colony/",
+      "checkedAt": "2026-10-17T08:21:33.034Z",
+      "note": "Direct GET 200; canonical and title match current approved MD; no noindex."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q6084438",
+    "officialUrl": "https://www.conaf.cl/parque_nacionales/monumento-natural-islotes-de-punihuil/"
+  },
+  "location": {
+    "latitude": -41.92472222222222,
+    "longitude": -74.03916666666666,
+    "pointRole": "representative",
+    "coordinateSource": "https://commons.wikimedia.org/wiki/Category:Islotes_de_Pu%C3%B1ihuil"
+  },
+  "reviewNote": "QID охраняемых островков принят как основной географический референт 93%; не использована карточка ресторана, береговой деревни или отдельного турпродукта."
+}

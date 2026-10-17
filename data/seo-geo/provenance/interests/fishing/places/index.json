@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "targetPath": "/interests/fishing/places/",
+  "articlePath": "data/seo-geo/articles/interests/fishing/places/index.md",
+  "researchedAt": "2026-10-17T18:36:38.536Z",
+  "editorialIntent": "Выбрать реальные рыболовные места по акватории и способу ловли: речная Амазония, Пантанал, океан у Коста-Рики, нахлыст на Лимае. Не дублировать описания туров и их тарифы.",
+  "repositorySources": [
+    "src/content/themes/rybalka.md",
+    "src/content/destinations/manaus-amazonia.md",
+    "src/content/destinations/pantanal.md",
+    "src/content/destinations/flamingo.md",
+    "src/content/destinations/catalina-islands.md",
+    "src/content/destinations/pacific-coast.md",
+    "src/content/destinations/plajya-tamarindo.md",
+    "src/content/destinations/limay-river.md",
+    "src/content/tours/rio-de-zhanejro.md",
+    "src/content/tours/rybalka-v-pantanale.md",
+    "src/content/tours/pybalka-v-kosta-rike.md",
+    "src/content/tours/patagonia-lakes-lakeshore-chalet-10-days.md",
+    "data/source-index/catalogs/destinations.json",
+    "data/source-index/catalogs/tours.json"
+  ],
+  "externalSources": [
+    {
+      "url": "https://sema.mt.gov.br/site/index.php/sema/noticias/7253-defeso-da-piracema-come%C3%A7ou-no-dia-01-10-em-mato-grosso",
+      "checkedAt": "2026-10-17",
+      "supports": "SEMA-MT: сезонный запрет любительской и профессиональной рыбалки в части бассейнов штата, октябрь 2026 — январь 2027."
+    },
+    {
+      "url": "https://www.gov.br/pt-br/servicos/solicitar-licenca-de-pescador-amador-ou-esportivoo?id=10058&origem=servico",
+      "checkedAt": "2026-10-17",
+      "supports": "Бразильское федеральное рыболовное разрешение и отдельные ограничения штатов и охраняемых территорий."
+    }
+  ],
+  "commercialVerification": {
+    "activeThematicDestinationIds": [
+      "destination_brazil_amazon",
+      "destination_brazil_pantanal",
+      "destination_costa_rica_plajya_tamarindo",
+      "destination_costa_rica_flamingo",
+      "destination_costa_rica_ostrova_katalina",
+      "destination_costa_rica_pacific_coast",
+      "destination_argentina_limay_river"
+    ],
+    "notes": "Состав тематической подборки сверялся по тематическим полям мест и связям активных туров/экскурсий; динамические количества не закреплены в Markdown. Конкретные услуги принадлежат описанию соответствующего тура."
+  },
+  "editorialChecks": [
+    "Главный интент — выбор места; не повторяется глобальный гид по интересу.",
+    "Коммерческие сведения и ссылки сверены с активными Tour/Destination MD и source-index; архив не предлагается.",
+    "Таблицы по 2 компактных столбца; FAQ содержит H2 и отдельные H3-вопросы.",
+    "В публичной статье нет внешних ссылок, изображений, статических чисел ассортимента или неподтвержденных гарантий."
+  ]
+}

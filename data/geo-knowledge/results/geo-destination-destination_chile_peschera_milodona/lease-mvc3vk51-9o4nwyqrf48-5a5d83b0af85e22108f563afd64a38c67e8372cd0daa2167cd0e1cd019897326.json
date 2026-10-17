@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_peschera_milodona",
+  "stableId": "destination_chile_peschera_milodona",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/mylodon-cave/",
+  "sourceFingerprint": "8092c2f076e7ac73000cfcca721134eb2ac0cd2bcd180ceca31a932df1f6dff0",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q1483271"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1483271",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Пещера Милодона у Cerro Benítez и Пуэрто-Наталеса — главный природный объект комплекса Cueva del Milodón. Карточка памятника охватывает пещеру и соседние образования."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/21732a36d01647f995571a3f042190de339345ef/src/content/destinations/mylodon-cave.md",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Точный MD: stable ID, approved status, страна и смысл страницы сверены. Публичный URL проверен отдельно."
+    },
+    {
+      "field": "canonicalPath",
+      "sourceUrl": "https://adatours.ru/chile/place/mylodon-cave/",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "HTTP 200; заголовок и canonical соответствуют задаче."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1483271",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Пещера Милодона у Cerro Benítez и Пуэрто-Наталеса — главный природный объект комплекса Cueva del Milodón. Карточка памятника охватывает пещеру и соседние образования."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1483271",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Координаты именованного объекта взяты из указанной карточки без усреднения."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1483271",
+      "checkedAt": "2026-10-17T08:09:21.566Z",
+      "note": "Страна объекта подтверждена источником и countryId исходного MD."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 94,
+      "reason": "Пещера Милодона у Cerro Benítez и Пуэрто-Наталеса — главный природный объект комплекса Cueva del Milodón. Карточка памятника охватывает пещеру и соседние образования.",
+      "selected": "Пещера Милодона"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 94,
+      "reason": "Пещера Милодона у Cerro Benítez и Пуэрто-Наталеса — главный природный объект комплекса Cueva del Milodón. Карточка памятника охватывает пещеру и соседние образования.",
+      "selected": "Q1483271"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Координаты именованного объекта взяты из указанной карточки без усреднения.",
+      "selected": "[-51.56561111,-72.61969444]"
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "reason": "Страна объекта подтверждена источником и countryId исходного MD.",
+      "selected": "country_chile"
+    }
+  ],
+  "confidence": "high",
+  "reviewNote": "QID комплекса принят для главного именованного референта по политике 70%; не приписывается отдельным музейным экспонатам.",
+  "location": {
+    "latitude": -51.56561111,
+    "longitude": -72.61969444,
+    "pointRole": "feature_point",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1483271"
+  }
+}

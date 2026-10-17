@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_ostrov_isabela",
+  "stableId": "destination_ecuador_ostrov_isabela",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/isabela-island/",
+  "sourceFingerprint": "0047e9e43b8941bf45f1c0301ac6f768d8e5ca336fddc69ebf7ee567494e5d37",
+  "status": "BLOCKED",
+  "confidence": "high",
+  "identityScope": "single",
+  "external": {
+    "wikidataQid": "Q83639",
+    "geonamesId": "3655571"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q83639",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Остров Isabela Галапагосского архипелага, Эквадор; не одноименные населенные пункты и острова других стран."
+    },
+    {
+      "field": "source",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/src/content/destinations/isabela-island.md",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Точный MD прочитан; id=destination_ecuador_ostrov_isabela; статус approved; blob SHA=bb7d17f64b018691b5a78ae8a27151174ecb38f3; актуальный entry подтверждает canonical /ecuador/place/isabela-island/."
+    },
+    {
+      "field": "availability",
+      "sourceUrl": "https://adatours.ru/ecuador/place/isabela-island/",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Предпринято прямое открытие точного canonical URL. Веб-инструмент вернул Internal Error / URL not accessible via this tool; HTTP-код сервера и опубликованный HTML не получены. Это ограничение проверки, не доказательство 404 или отсутствия страницы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/entries/destination_ecuador_ostrov_isabela.json",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "countryIds и countryId MD однозначно указывают Эквадор; внешняя география согласуется."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q83639",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Остров Isabela Галапагосского архипелага, Эквадор; не одноименные населенные пункты и острова других стран."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q83639",
+      "checkedAt": "2026-10-17T08:31:53.425Z",
+      "note": "Идентификатор P1566 прочитан из точной карточки Wikidata; прямое открытие GeoNames недоступно, независимую проверку страницы GeoNames не заявляю."
+    }
+  ],
+  "decisionPolicy": "probability-70-v1",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Остров Isabela Галапагосского архипелага, Эквадор; не одноименные населенные пункты и острова других стран.",
+      "reason": "Сопоставлены точные название, страна, тип, смысл MD и внешние источники."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "selected": "country_ecuador",
+      "reason": "Совпадают страна текущего source-index/MD и география внешнего источника."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 99,
+      "selected": "Q83639",
+      "reason": "Остров Isabela Галапагосского архипелага, Эквадор; не одноименные населенные пункты и острова других стран."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 90,
+      "selected": "3655571",
+      "reason": "P1566 точной карточки соответствует именованному объекту; отличия населенного пункта и территории учтены."
+    },
+    {
+      "field": "location",
+      "probability": 60,
+      "reason": "В P625 есть две опорные точки (0°45′39″S и 0°35′34″S). Не усреднять: точное назначение и выбранный референт координат отдельно не подтверждены."
+    }
+  ],
+  "reviewNote": "Географическая идентичность исследована и оценена от 70%. Технический блокер §3.2.1 workflow: точный публичный URL не удалось открыть доступными средствами, HTTP-статус/живой HTML не подтверждены. Нужна адресная проверка URL в рабочем браузере; не считать READY или PUBLISHED. В P625 есть две опорные точки (0°45′39″S и 0°35′34″S). Не усреднять: точное назначение и выбранный референт координат отдельно не подтверждены."
+}

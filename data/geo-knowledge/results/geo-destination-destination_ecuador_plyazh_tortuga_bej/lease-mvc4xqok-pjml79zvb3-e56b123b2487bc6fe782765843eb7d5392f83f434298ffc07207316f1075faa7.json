@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_ecuador_plyazh_tortuga_bej",
+  "stableId": "destination_ecuador_plyazh_tortuga_bej",
+  "kind": "destination",
+  "canonicalPath": "/ecuador/place/tortuga-bay-beach/",
+  "sourceFingerprint": "7bde439f6130617b333e67a7803ff097b67050c81a3f8716ee92cbc98485289c",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Пляж Тортуга-Бэй",
+      "reason": "MD: пляж Tortuga Bay на Santa Cruz рядом с Puerto Ayora. Точная статья описывает большой пляж и отдельную бухту для купания; исключена Bahía Tortuga у Исабелы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_ecuador"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 96,
+      "reason": "Tortuga Bay — точный туристический пляж и бухта Santa Cruz.",
+      "selected": "Q5716487"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Статья именно Tortuga Bay Santa Cruz.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Tortuga_Bay\"}"
+    },
+    {
+      "field": "external.osm",
+      "probability": 98,
+      "reason": "Playa Tortuga Bay, natural=beach, 3km юго-западнее Puerto Ayora.",
+      "selected": "{\"type\":\"way\",\"id\":62373091}"
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "reason": "GeoNames идентификатор точного пляжа указан в картографической карточке.",
+      "selected": "12515156"
+    },
+    {
+      "field": "location",
+      "probability": 97,
+      "reason": "Опорная точка пляжа Santa Cruz, подтверждённая близкой точкой статьи.",
+      "selected": "-0.76223,-90.33526"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tortuga-bay-beach/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. MD: пляж Tortuga Bay на Santa Cruz рядом с Puerto Ayora. Точная статья описывает большой пляж и отдельную бухту для купания; исключена Bahía Tortuga у Исабелы."
+    },
+    {
+      "field": "relationships.country_ecuador",
+      "sourceUrl": "https://adatours.ru/ecuador/place/tortuga-bay-beach/",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5716487",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Tortuga Bay — точный туристический пляж и бухта Santa Cruz."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tortuga_Bay",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Статья именно Tortuga Bay Santa Cruz."
+    },
+    {
+      "field": "external.osm",
+      "sourceUrl": "https://mapcarta.com/37375990",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Playa Tortuga Bay, natural=beach, 3km юго-западнее Puerto Ayora."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://mapcarta.com/37375990",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "GeoNames идентификатор точного пляжа указан в картографической карточке."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://mapcarta.com/37375990",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "Опорная точка пляжа Santa Cruz, подтверждённая близкой точкой статьи."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Tortuga_Bay",
+      "checkedAt": "2026-10-17T08:30:58.979Z",
+      "note": "MD: пляж Tortuga Bay на Santa Cruz рядом с Puerto Ayora. Точная статья описывает большой пляж и отдельную бухту для купания; исключена Bahía Tortuga у Исабелы."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_ecuador"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q5716487",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Tortuga_Bay"
+    },
+    "osm": {
+      "type": "way",
+      "id": 62373091
+    },
+    "geonamesId": "12515156"
+  },
+  "location": {
+    "latitude": -0.76223,
+    "longitude": -90.33526,
+    "pointRole": "representative",
+    "coordinateSource": "https://mapcarta.com/37375990"
+  }
+}

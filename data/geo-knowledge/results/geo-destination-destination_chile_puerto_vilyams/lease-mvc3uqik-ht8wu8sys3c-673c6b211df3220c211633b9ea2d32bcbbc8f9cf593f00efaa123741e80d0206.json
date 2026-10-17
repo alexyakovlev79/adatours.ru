@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_puerto_vilyams",
+  "stableId": "destination_chile_puerto_vilyams",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/puerto-williams/",
+  "sourceFingerprint": "ee8b077b6159768ad76146f90c0f0e1ea62b3acbf6f5f476b6d7847c590a3eba",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q1251087",
+    "geonamesId": "3874926"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/puerto-williams/",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Live HTTP 200 and self canonical verified; current approved MD stable ID, country and description matched. City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1251087",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "external.geonamesId",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1251087",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1251087",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "Named feature reference point; not an entrance or a calculated centroid. City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1251087",
+      "checkedAt": "2026-10-17T08:11:48.217Z",
+      "note": "City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 98,
+      "selected": "Puerto Williams",
+      "reason": "City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1251087",
+      "reason": "City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "external.geonamesId",
+      "probability": 96,
+      "selected": "3874926",
+      "reason": "City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "location",
+      "probability": 92,
+      "selected": "-54.93411111111111,-67.61088888888888",
+      "reason": "Named feature reference point; not an entrance or a calculated centroid. City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 98,
+      "selected": "country_chile",
+      "reason": "City and port on Navarino Island on Beagle Channel in Chile; matches MD, distinct from larger Cabo de Hornos commune."
+    }
+  ],
+  "reviewNote": "",
+  "location": {
+    "latitude": -54.93411111111111,
+    "longitude": -67.61088888888888,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1251087"
+  }
+}

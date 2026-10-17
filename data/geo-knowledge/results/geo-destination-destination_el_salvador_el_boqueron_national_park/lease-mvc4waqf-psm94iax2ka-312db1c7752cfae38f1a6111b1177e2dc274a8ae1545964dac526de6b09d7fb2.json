@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_el_salvador_el_boqueron_national_park",
+  "stableId": "destination_el_salvador_el_boqueron_national_park",
+  "kind": "destination",
+  "canonicalPath": "/el-salvador/place/el-boqueron-national-park/",
+  "sourceFingerprint": "8c6671458c6ffcf5ffce60c3b0144244abe879db471aa491056a9af9658b3cc6",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "wikidataQid": "Q5350834",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/El_Boquer%C3%B3n_National_Park"
+    }
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_el_salvador"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/el-salvador/place/el-boqueron-national-park/",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "HTTP 200; canonical and live title checked. Current main MD stable ID, geography, type and approved status match. El Boqueron national park on San Salvador volcano; park identity retained, not volcano QID substituted."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5350834",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "El Boqueron national park on San Salvador volcano; park identity retained, not volcano QID substituted."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5350834",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Exact named feature in country_el_salvador matches the source geography and content countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5350834",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "El Boqueron national park on San Salvador volcano; park identity retained, not volcano QID substituted."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5350834",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "El Boqueron national park on San Salvador volcano; park identity retained, not volcano QID substituted."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q5350834",
+      "checkedAt": "2026-10-17T08:37:15.276Z",
+      "note": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Национальный парк Эль-Бокерон",
+      "reason": "El Boqueron national park on San Salvador volcano; park identity retained, not volcano QID substituted."
+    },
+    {
+      "field": "relationships.country_el_salvador",
+      "probability": 99,
+      "selected": "country_el_salvador",
+      "reason": "Source geography agrees with current main countryId."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 95,
+      "selected": "Q5350834",
+      "reason": "El Boqueron national park on San Salvador volcano; park identity retained, not volcano QID substituted."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 96,
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/El_Boquer%C3%B3n_National_Park\"}",
+      "reason": "El Boqueron national park on San Salvador volcano; park identity retained, not volcano QID substituted."
+    },
+    {
+      "field": "location",
+      "probability": 94,
+      "selected": "{\"latitude\":13.733333333333333,\"longitude\":-89.28333333333333,\"pointRole\":\"representative\",\"coordinateSource\":\"https://www.wikidata.org/wiki/Q5350834\"}",
+      "reason": "Selected exact named-feature point; not an average or an entrance claim."
+    }
+  ],
+  "location": {
+    "latitude": 13.733333333333333,
+    "longitude": -89.28333333333333,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q5350834"
+  },
+  "reviewNote": ""
+}

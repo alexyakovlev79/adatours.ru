@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_ostrov_pashi",
+  "stableId": "destination_chile_ostrov_pashi",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/easter-island/",
+  "sourceFingerprint": "6279d1f947dc9f3b529d04b929b838ec620ceccf48a5e5f4412e1f4de9602571",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 97,
+      "selected": "Остров Пасхи",
+      "reason": "Остров Rapa Nui / Easter Island, принадлежащий Чили; не муниципалитет и не только национальный парк."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "reason": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией.",
+      "selected": "country_chile"
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 97,
+      "reason": "Точная карточка выбранного основного географического референта.",
+      "selected": "Q14452"
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 97,
+      "reason": "Языковая статья того же объекта.",
+      "selected": "{\"en\":\"https://en.wikipedia.org/wiki/Easter_Island\"}"
+    },
+    {
+      "field": "location",
+      "probability": 95,
+      "reason": "Опорная P625 острова, не границы национального парка.",
+      "selected": "-27.12,-109.35"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://adatours.ru/chile/place/easter-island/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точный URL: HTTP 200, self-canonical, index/follow; approved MD со стабильным ID сверён. Остров Rapa Nui / Easter Island, принадлежащий Чили; не муниципалитет и не только национальный парк."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://adatours.ru/chile/place/easter-island/",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Страна явно закреплена countryId в актуальном MD и согласуется с исследованной географией."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14452",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Точная карточка выбранного основного географического референта."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14452",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Языковая статья того же объекта."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14452",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Опорная P625 острова, не границы национального парка."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q14452",
+      "checkedAt": "2026-10-17T08:08:01.502Z",
+      "note": "Остров Rapa Nui / Easter Island, принадлежащий Чили; не муниципалитет и не только национальный парк."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q14452",
+    "wikipedia": {
+      "en": "https://en.wikipedia.org/wiki/Easter_Island"
+    }
+  },
+  "location": {
+    "latitude": -27.12,
+    "longitude": -109.35,
+    "pointRole": "representative",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q14452"
+  },
+  "reviewNote": "Устаревшие/спекулятивные исторические утверждения MD не переносятся в паспорт."
+}

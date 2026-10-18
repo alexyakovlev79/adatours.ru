@@ -1,0 +1,46 @@
+name: Publish rewritten SEO
+on:
+  push:
+    branches:
+      - seo-geo/voice-rewrite-control
+    paths:
+      - data/seo-geo/voice-rewrite/dispatch.json
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: seo-voice-rewrite-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Load immutable dispatch and staging snapshot
+        env:
+          CONTROL_COMMIT: ${ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin main seo-geo/voice-rewrite-control seo-geo/voice-rewrite-staging
+          dispatch="$(git show "$CONTROL_COMMIT:data/seo-geo/voice-rewrite/dispatch.json")"
+          test "$(jq -r .mode <<<"$dispatch")" = "publish-all-ready"
+          staging="$(jq -er .stagingHead <<<"$dispatch")"
+          git cat-file -e "$staging^{commit}"
+          echo "REWRITE_STAGING_SHA=$staging" >> "$GITHUB_ENV"
+          echo "REWRITE_DISPATCH_SHA=$CONTROL_COMMIT" >> "$GITHUB_ENV"
+      - name: Merge only validated voice edits into one main content commit
+        id: publisher
+        run: node scripts/seo-geo-voice-rewrite-publisher.mjs
+      - name: Trigger exactly one standard Pages deploy
+        if: steps.publisher.outputs.deploy_needed == 'true'
+        env:
+          GH_TOKEN: ${ github.token }}
+        run: gh workflow run deploy.yml --ref main

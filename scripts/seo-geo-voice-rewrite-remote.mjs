@@ -110,10 +110,10 @@ async function claim(tools,core,{runId,cycle,limit=10}) {
 }
 async function complete(tools,core,{runId,cycle,items}) {
   const lease=core.newClaim(runId,cycle);
-  if(!Array.isArray(items)||!items.length||items.length>10)throw Error('Supply 1–10 {url,sourceBlobSha,content} articles');
+  if(!Array.isArray(items)||!items.length||items.length>10)throw Error('Supply 1–10 {url,sourceBlobSha,originalContent,content} articles');
   if(new Set(items.map(x=>x.url)).size!==items.length)throw Error('Duplicate URL');
   for(let attempt=0;attempt<3;attempt++) {
-    const [staging,main]=await Promise.all([branch(tools,REWRITE),branch(tools,'main')]);
+    const staging=await branch(tools,REWRITE);
     const [c,p]=await Promise.all([
       getJson(tools,ROOT+'claims.json',staging),getJson(tools,ROOT+'prepared.json',staging)
     ]);
@@ -125,15 +125,19 @@ async function complete(tools,core,{runId,cycle,items}) {
       throw Error('The complete operation must contain all current claimed URLs (release blocked URLs first)');
     if(active.some(([,v])=>Date.parse(v.expiresAt)<=Date.now()))
       return {status:'lease_expired',runId,cycle,urls:[...expected]};
-    const fetched=await Promise.all(items.map(async row=>{
+    // The writer supplies the exact original bytes and blob SHA from its own
+    // pinned main fetch. The master independently proves the SHA at publication.
+    // Avoid 10 redundant connector reads in a single Code Mode transaction.
+    const fetched=items.map(row=>{
       const cl=c.json.claims[row.url];
-      const file=await getText(tools,cl.path,main);
-      if(!row.sourceBlobSha || row.sourceBlobSha!==file.sha)
-        throw Error('Writer source SHA differs from current main source; reopen this exact MD before submission');
-      const result=core.validateVoiceRewrite(file.text,row.content,row.url);
-      return {...result,url:row.url,path:cl.path,oldBlobSha:file.sha,content:row.content,
+      if(!/^[a-f0-9]{40}$/.test(row.sourceBlobSha))
+        throw Error('Exact 40-hex sourceBlobSha is required for '+row.url);
+      if(typeof row.originalContent!=='string')
+        throw Error('Exact originalContent is required for '+row.url);
+      const result=core.validateVoiceRewrite(row.originalContent,row.content,row.url);
+      return {...result,url:row.url,path:cl.path,oldBlobSha:row.sourceBlobSha,content:row.content,
         order:cl.order,phase:cl.phase};
-    }));
+    });
     const prepared={...p.json,entries:{...p.json.entries}};
     const claims={...c.json,claims:{...c.json.claims}};
     const files=[];

@@ -158,8 +158,9 @@ async function complete(tools,core,{runId,cycle,items}) {
     }
   }
 }
-async function release(tools,core,{runId,cycle,urls=[]}) {
+async function release(tools,core,{runId,cycle,urls=[],reviews=[]}) {
   const lease=core.newClaim(runId,cycle);
+  if(!Array.isArray(reviews))throw Error('reviews must be an array of {url,reason}');
   for(let attempt=0;attempt<3;attempt++) {
     const s=await branch(tools,REWRITE);
     const c=await getJson(tools,ROOT+'claims.json',s);
@@ -167,13 +168,31 @@ async function release(tools,core,{runId,cycle,urls=[]}) {
     const targets=owned(next.claims,lease.ownerId,lease.batchId).map(([url])=>url);
     const selected=urls.length?targets.filter(url=>urls.includes(url)):targets;
     if(!selected.length)return {status:'nothing_to_release',runId,cycle};
-    selected.forEach(url=>delete next.claims[url]);
+    const reviewList=reviews.filter(row=>selected.includes(row.url));
+    if(reviews.some(row=>!selected.includes(row.url)))throw Error('Cannot mark foreign URL for review');
+    for(const url of selected)delete next.claims[url];
     try{
-      const result=un(await tools.mcp__GitHub__update_file({
-        repository_full_name:REPO,path:ROOT+'claims.json',branch:REWRITE,
-        sha:c.sha,content:json(next),message:'seo rewrite: release blocked claims'
-      }));
-      return {status:'released',urls:selected,commit:result.commit_sha};
+      let commit;
+      if(reviewList.length){
+        const existing=await getJson(tools,ROOT+'prepared.json',s);
+        const ready={...existing.json,entries:{...existing.json.entries}};
+        for(const row of reviewList){
+          if(!row.reason||typeof row.reason!=='string')throw Error('Review reason required');
+          ready.entries[row.url]={status:'review',url:row.url,runId,
+            batchId:lease.batchId,reason:row.reason.slice(0,500),
+            reviewedAt:new Date().toISOString()};
+        }
+        commit=await casBatch(tools,s,[
+          [ROOT+'claims.json',json(next)],[ROOT+'prepared.json',json(ready)]
+        ],'seo rewrite: record '+reviewList.length+' REVIEW and release claims');
+      }else{
+        const result=un(await tools.mcp__GitHub__update_file({
+          repository_full_name:REPO,path:ROOT+'claims.json',branch:REWRITE,
+          sha:c.sha,content:json(next),message:'seo rewrite: release blocked claims'
+        }));
+        commit=result.commit_sha;
+      }
+      return {status:'released',urls:selected,review:reviewList.map(row=>row.url),commit};
     }catch(e){if(await branch(tools,REWRITE)===s||attempt===2)throw e;}
   }
 }

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "role": "independent-voice-only-editorial-pass",
+  "writerCommand": "переписывай seo",
+  "publisherCommand": "публикуй исправленное seo",
+  "writerBranch": "seo-geo/voice-rewrite-staging",
+  "controlBranch": "seo-geo/voice-rewrite-control",
+  "batchSize": 10,
+  "maxCyclesPerChat": 10,
+  "batchMinutes": 30,
+  "sourceStatus": "published",
+  "finalStatus": "rewritten",
+  "sheetsStatus": "Переписано",
+  "sheet": {
+    "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+    "sheetName": "SEO-GEO тексты",
+    "urlColumn": "E",
+    "statusColumn": "J",
+    "articleColumn": "K",
+    "publishedDateColumn": "L",
+    "noteColumn": "M"
+  },
+  "policy": "Only targeted voice phrasing, no change to structure, links, tables, facts, numbers, dates, prices, headings, schemas or dynamic expressions."
+}

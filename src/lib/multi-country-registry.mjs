@@ -90,7 +90,7 @@ export const multiCountryTypeLabel = (kind) => kind === 'multi_country_combinati
 export function multiCountrySeoSheetRow(entry, catalog) {
   return [entry.order, '5. Туры', multiCountryTypeLabel(entry.kind), entry.name, 'https://adatours.ru' + entry.url,
     entry.id, catalog.countryNames.join(', '), catalog.themeName, 'Каталог доступен',
-    ({ published: 'Опубликовано', prepared: 'Ждет публикации', draft: 'Пишется', queued: 'В очереди',
+    ({ published: 'Опубликовано', rewritten: 'Переписано', prepared: 'Ждет публикации', draft: 'Пишется', queued: 'В очереди',
       temporarily_unavailable: 'Временно недоступна' })[entry.work] ?? entry.work,
     entry.articlePath ?? '', entry.publishedAt ?? '', 'Автоматический каталог: ' + catalog.count + ' туров. Полная SEO/GEO-статья учитывается отдельно.'];
 }

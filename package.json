@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "npm run sync:multi-country && node --test tests/seo-geo.test.mjs tests/seo-geo-faq-format.test.mjs tests/seo-geo-link-preflight.test.mjs tests/seo-geo-release-gate.test.mjs tests/lazy-images.test.mjs tests/generated-source-materials.test.mjs tests/commissioned-source-materials.test.mjs tests/catalog-pagination.test.mjs tests/multi-country-combinations.test.mjs tests/multi-country-catalog.test.mjs tests/vip-tours.test.mjs tests/interest-model.test.mjs tests/interest-copy.test.mjs tests/seo-meta.test.mjs tests/structured-data.test.mjs tests/geo-knowledge-renderer.test.mjs tests/geo-route-map.test.mjs tests/structured-data-html.test.mjs tests/seo-geo-schema.test.mjs tests/prepare-pages-media.test.mjs tests/direct-s3-ingestion.test.mjs tests/image-captions.test.mjs tests/social-previews.test.mjs tests/social-preview-manifest.test.mjs && astro build && node scripts/check-seo-geo-pages.mjs && node scripts/check-site-relations.mjs && node scripts/check-catalog-pagination.mjs && node scripts/check-multi-country-menu.mjs && node scripts/check-multi-country-interests.mjs && node scripts/check-interest-model.mjs && node scripts/check-interest-presentation.mjs && node scripts/check-schema.mjs && node scripts/build-social-previews.mjs && node scripts/prepare-pages-media.mjs && pagefind --site dist && node scripts/dedupe-site-shell.mjs",
+    "build": "npm run sync:multi-country && node --test tests/seo-geo-voice-rewrite.test.mjs tests/seo-geo.test.mjs tests/seo-geo-faq-format.test.mjs tests/seo-geo-link-preflight.test.mjs tests/seo-geo-release-gate.test.mjs tests/lazy-images.test.mjs tests/generated-source-materials.test.mjs tests/commissioned-source-materials.test.mjs tests/catalog-pagination.test.mjs tests/multi-country-combinations.test.mjs tests/multi-country-catalog.test.mjs tests/vip-tours.test.mjs tests/interest-model.test.mjs tests/interest-copy.test.mjs tests/seo-meta.test.mjs tests/structured-data.test.mjs tests/geo-knowledge-renderer.test.mjs tests/geo-route-map.test.mjs tests/structured-data-html.test.mjs tests/seo-geo-schema.test.mjs tests/prepare-pages-media.test.mjs tests/direct-s3-ingestion.test.mjs tests/image-captions.test.mjs tests/social-previews.test.mjs tests/social-preview-manifest.test.mjs && astro build && node scripts/check-seo-geo-pages.mjs && node scripts/check-site-relations.mjs && node scripts/check-catalog-pagination.mjs && node scripts/check-multi-country-menu.mjs && node scripts/check-multi-country-interests.mjs && node scripts/check-interest-model.mjs && node scripts/check-interest-presentation.mjs && node scripts/check-schema.mjs && node scripts/build-social-previews.mjs && node scripts/prepare-pages-media.mjs && pagefind --site dist && node scripts/dedupe-site-shell.mjs",
     "preview": "astro preview",
     "reserve:destination": "node scripts/reserve-destination.mjs",
     "test:destination-reservations": "node --test tests/destination-reservations.test.mjs",
@@ -19,7 +19,8 @@
     "preflight:seo-links": "node scripts/preflight-seo-geo-links.mjs",
     "preflight:seo-release": "node scripts/check-seo-geo-release.mjs",
     "test:seo-preflight": "node --test tests/seo-geo-link-preflight.test.mjs",
-    "sync:multi-country": "node scripts/sync-multi-country-registries.mjs --write"
+    "sync:multi-country": "node scripts/sync-multi-country-registries.mjs --write",
+    "test:seo-voice-rewrite": "node --test tests/seo-geo-voice-rewrite.test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

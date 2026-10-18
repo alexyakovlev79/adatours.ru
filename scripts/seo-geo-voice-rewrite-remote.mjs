@@ -110,7 +110,7 @@ async function claim(tools,core,{runId,cycle,limit=10}) {
 }
 async function complete(tools,core,{runId,cycle,items}) {
   const lease=core.newClaim(runId,cycle);
-  if(!Array.isArray(items)||!items.length||items.length>10)throw Error('Supply 1–10 {url,content} articles');
+  if(!Array.isArray(items)||!items.length||items.length>10)throw Error('Supply 1–10 {url,sourceBlobSha,content} articles');
   if(new Set(items.map(x=>x.url)).size!==items.length)throw Error('Duplicate URL');
   for(let attempt=0;attempt<3;attempt++) {
     const [staging,main]=await Promise.all([branch(tools,REWRITE),branch(tools,'main')]);
@@ -128,6 +128,8 @@ async function complete(tools,core,{runId,cycle,items}) {
     const fetched=await Promise.all(items.map(async row=>{
       const cl=c.json.claims[row.url];
       const file=await getText(tools,cl.path,main);
+      if(!row.sourceBlobSha || row.sourceBlobSha!==file.sha)
+        throw Error('Writer source SHA differs from current main source; reopen this exact MD before submission');
       const result=core.validateVoiceRewrite(file.text,row.content,row.url);
       return {...result,url:row.url,path:cl.path,oldBlobSha:file.sha,content:row.content,
         order:cl.order,phase:cl.phase};

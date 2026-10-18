@@ -11,7 +11,7 @@ lead: >-
 
 Эта география соединяет две части Южной Америки. [Бразилия](/brazil/) предлагает [Рио-де-Жанейро](/brazil/place/rio-de-janeiro/) и водопады Игуасу; [Уругвай](/uruguay/) — [Монтевидео](/uruguay/place/montevideo/) на другом берегу Рио-де-ла-Платы. [Боливия](/bolivia/) — это лагуны, [Уюни](/bolivia/place/uyuni/) и высокогорный [Ла-Пас](/bolivia/place/la-paz/), а [Перу](/peru/) — Титикака, Куско, Мачу-Пикчу и Лима.
 
-В каталоге представлены {{catalog.toursCountPhrase}}. [20-дневный тур по шести странам](/multi-country/tour/latin-america-6-countries-20-days/) проходит через Бразилию, Аргентину, Уругвай, Чили, Боливию и Перу. [32-дневная поездка по восьми странам](/multi-country/tour/south-america-eight-countries-32-days/) добавляет после перуанского этапа Эквадор и Колумбию, включая Галапагосские острова.
+В нашем каталоге вы найдете {{catalog.toursCountPhrase}}. [20-дневный тур по шести странам](/multi-country/tour/latin-america-6-countries-20-days/) проходит через Бразилию, Аргентину, Уругвай, Чили, Боливию и Перу. [32-дневная поездка по восьми странам](/multi-country/tour/south-america-eight-countries-32-days/) добавляет после перуанского этапа Эквадор и Колумбию, включая Галапагосские острова.
 
 {{catalog.tourTable:tour_latin_america_six_countries_20_days_2026,tour_south_america_eight_countries_32_days_2026}}
 

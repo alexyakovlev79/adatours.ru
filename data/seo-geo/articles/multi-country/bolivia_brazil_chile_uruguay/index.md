@@ -11,7 +11,7 @@ lead: >-
 
 Эти направления показывают Южную Америку с разных сторон. [Бразилия](/brazil/) — это [Рио-де-Жанейро](/brazil/place/rio-de-janeiro/) и водопады Игуасу; [Уругвай](/uruguay/) — прогулка по [Монтевидео](/uruguay/place/montevideo/) на другом берегу Рио-де-ла-Платы; [Чили](/chile/) — Сантьяго и [Сан-Педро-де-Атакама](/chile/place/san-pedro-de-atacama/). В [Боливии](/bolivia/) маршрут идет по высокогорным дорогам между лагунами и солончаками к [Уюни](/bolivia/place/uyuni/).
 
-В каталоге представлены {{catalog.toursCountPhrase}}, включающих все четыре страны как основные. Это [тур на 20 дней по 6 странам](/multi-country/tour/latin-america-6-countries-20-days/) и [тур на 32 дня по 8 странам](/multi-country/tour/south-america-eight-countries-32-days/). Оба начинаются в Бразилии, продолжаются через Аргентину и Уругвай в Чили и Боливию, а затем в Перу. Второй маршрут после Перу идет также через Эквадор и Колумбию.
+В нашем каталоге вы найдете {{catalog.toursCountPhrase}}, включающих все четыре страны как основные. Это [тур на 20 дней по 6 странам](/multi-country/tour/latin-america-6-countries-20-days/) и [тур на 32 дня по 8 странам](/multi-country/tour/south-america-eight-countries-32-days/). Оба начинаются в Бразилии, продолжаются через Аргентину и Уругвай в Чили и Боливию, а затем в Перу. Второй маршрут после Перу идет также через Эквадор и Колумбию.
 
 {{catalog.tourTable:tour_latin_america_six_countries_20_days_2026,tour_south_america_eight_countries_32_days_2026}}
 

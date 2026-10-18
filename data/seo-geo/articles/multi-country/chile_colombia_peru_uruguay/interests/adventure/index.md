@@ -35,7 +35,7 @@ lead: >-
 
 ## Как выбрать маршрут
 
-В каталоге представлены {{catalog.toursCountPhrase}}. Полное описание дней и услуг приведено в [программе по восьми странам](/multi-country/tour/south-america-eight-countries-32-days/). Для сравнения других форматов есть [мультистрановые приключения](/multi-country/interests/adventure/) и [приключенческие туры с Чили](/interests/adventure/tours/chile/). [Общая подборка Чили, Колумбии, Перу и Уругвая](/multi-country/chile_colombia_peru_uruguay/) показывает это сочетание без тематического фильтра.
+В нашем каталоге {{catalog.toursCountPhrase}}. Подробности о днях и услугах вы найдете в [программе по восьми странам](/multi-country/tour/south-america-eight-countries-32-days/). Для сравнения других форматов есть [мультистрановые приключения](/multi-country/interests/adventure/) и [приключенческие туры с Чили](/interests/adventure/tours/chile/). [Общая подборка Чили, Колумбии, Перу и Уругвая](/multi-country/chile_colombia_peru_uruguay/) показывает это сочетание без тематического фильтра.
 
 ## Частые вопросы о приключенческом путешествии
 

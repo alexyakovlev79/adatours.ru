@@ -9,7 +9,7 @@ lead: >-
 
 ## Какие туры проходят через Лагуну Колорада
 
-В каталоге представлены {{catalog.toursCountPhrase}}, в которых [Лагуна Колорада](/bolivia/place/laguna-colorada/) включена в **основной маршрут**. Здесь собраны и короткие поездки по юго-западному Альтиплано, и большие туры через Перу, Чили, Аргентину и другие страны. Число программ рассчитывается по актуальному каталогу, поэтому вновь опубликованные и выведенные из ассортимента туры учитываются автоматически.
+Мы предлагаем {{catalog.toursCountPhrase}}, в которых [Лагуна Колорада](/bolivia/place/laguna-colorada/) включена в **основной маршрут**. Здесь собраны и короткие поездки по юго-западному Альтиплано, и большие туры через Перу, Чили, Аргентину и другие страны. В подборку входят действующие программы Ada Tours, а выведенные из ассортимента маршруты в ней отсутствуют.
 
 {{catalog.tourTable:tour_source_solonchak_uyuni,tour_source_prirodnye_chudesa_bolivii,tour_source_priklyucheniya_v_bolivii,tour_source_velikij_tur_po_yuzhnoj_amerike,tour_bolivia_chile_hidden_treasures_16_days,tour_peru_bolivia_uyuni_lakes_15_days,tour_south_america_luxury_33_days}}
 

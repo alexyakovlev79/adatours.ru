@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   finalize:
-    if: ${ github.event.workflow_run.head_branch == 'main' }}
+    if: ${{ github.event.workflow_run.head_branch == 'main' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -23,7 +23,7 @@ jobs:
           node-version: 24
       - name: Check the exact published article blobs and record final statuses
         env:
-          PAGES_RUN_SHA: ${ github.event.workflow_run.head_sha }}
-          PAGES_RUN_ID: ${ github.event.workflow_run.id }}
-          PAGES_CONCLUSION: ${ github.event.workflow_run.conclusion }}
+          PAGES_RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+          PAGES_RUN_ID: ${{ github.event.workflow_run.id }}
+          PAGES_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
         run: node scripts/seo-geo-voice-rewrite-finalize.mjs

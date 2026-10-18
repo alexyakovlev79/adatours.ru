@@ -25,7 +25,7 @@ jobs:
           node-version: 24
       - name: Load immutable dispatch and staging snapshot
         env:
-          CONTROL_COMMIT: ${ github.sha }}
+          CONTROL_COMMIT: ${{ github.sha }}
         shell: bash
         run: |
           set -euo pipefail
@@ -42,5 +42,5 @@ jobs:
       - name: Trigger exactly one standard Pages deploy
         if: steps.publisher.outputs.deploy_needed == 'true'
         env:
-          GH_TOKEN: ${ github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main

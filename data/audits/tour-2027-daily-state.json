@@ -5,12 +5,12 @@
   "driveRootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
   "lastAttempt": {
-    "at": "2026-10-17T07:07:47.571Z",
-    "kind": "full_manual_daily_scan",
+    "at": "2026-10-18T02:06:14.047Z",
+    "kind": "full_daily_scan",
     "status": "complete_no_word_changes_with_pdf_review",
-    "runId": "manual-word-2027-2026-10-17T07-05-07-459Z"
+    "runId": "daily-word-2027-20261018-20261018020354100"
   },
-  "lastCompleteScanAt": "2026-10-17T07:07:47.571Z",
+  "lastCompleteScanAt": "2026-10-18T02:04:46.038Z",
   "lastSuccessfulBatchAt": "2026-10-16T08:45:18.639748+00:00",
   "openQueue": [
     {
@@ -30,7 +30,17 @@
       "queueType": "pdf_source_review",
       "publicationAllowed": false,
       "detectedAt": "2026-10-17T07:07:13.876Z",
-      "reasonForNoPublication": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone."
+      "reasonForNoPublication": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
+      "lastCheckedInRun": "daily-word-2027-20261018-20261018020354100",
+      "sourceVersion": {
+        "modifiedTime": "2026-10-09T13:30:40.492Z",
+        "bytes": 6051218,
+        "version": null
+      },
+      "readableTextSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1",
+      "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline",
+      "resolutionStatus": "unchanged_source_conflict_no_confirmed_replacement"
     },
     {
       "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
@@ -52,7 +62,17 @@
       "queueType": "pdf_source_review",
       "publicationAllowed": false,
       "detectedAt": "2026-10-17T07:07:13.876Z",
-      "reasonForNoPublication": "Same 10-day/9-night program, 30 December 2026–8 January 2027, Rio 4n/Iguazu 2n/Buenos Aires 3n and nine SGL/DBL/TPL hotel tariffs. PDF specifies English-speaking excursion guides; canonical Word specifies Russian-speaking guides, including Corcovado and included services. This is not a confirmed new Tour and the guide-language conflict is not resolved by the file name or timestamp."
+      "reasonForNoPublication": "Same 10-day/9-night program, 30 December 2026–8 January 2027, Rio 4n/Iguazu 2n/Buenos Aires 3n and nine SGL/DBL/TPL hotel tariffs. PDF specifies English-speaking excursion guides; canonical Word specifies Russian-speaking guides, including Corcovado and included services. This is not a confirmed new Tour and the guide-language conflict is not resolved by the file name or timestamp.",
+      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
+      "lastCheckedInRun": "daily-word-2027-20261018-20261018020354100",
+      "sourceVersion": {
+        "modifiedTime": "2026-10-09T22:23:51.716Z",
+        "bytes": 2811751,
+        "version": null
+      },
+      "readableTextSha256": "baaa907c23fa71f22aff09c492defeeedd93a23ad71d99cf5af6bfaeb4cfb3e4",
+      "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline",
+      "resolutionStatus": "unchanged_source_conflict_no_confirmed_replacement"
     }
   ],
   "runs": [
@@ -260,6 +280,109 @@
       "sheetStatus": "not_required_no_content_publication",
       "errors": [],
       "nextStep": "Continue normal daily detection; retain two explicit PDF source reviews. Do not replace Russian-speaking guides with English or use unrelated Spanish group tariffs without a verified authoritative source."
+    },
+    {
+      "id": "daily-word-2027-20261018-20261018020354100",
+      "startedAt": "2026-10-18T02:03:54.100Z",
+      "scanFinishedAt": "2026-10-18T02:04:46.038Z",
+      "finishedAt": "2026-10-18T02:06:14.047Z",
+      "trigger": "daily_autonomous_check",
+      "scanStatus": "complete",
+      "outcome": "no_new_or_modified_word_files_with_existing_pdf_source_reviews",
+      "foldersScanned": 26,
+      "rootChildren": 25,
+      "filesObserved": 205,
+      "uniqueFilesObserved": 205,
+      "wordFilesObserved": 199,
+      "pdfFilesObserved": 6,
+      "registeredTourWordFiles": 196,
+      "excludedAuxiliaryWordFiles": 3,
+      "newFileIds": [],
+      "candidateChangedFileIds": [],
+      "missingFileIds": [],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 0,
+      "comparison": {
+        "inventoryBlobSha": "347cfc46a18aa9ba91aa22271e52e63d85fa572a",
+        "workflowBlobSha": "9e0aada54c2b2293b61fe90b4f910e4304ce6158",
+        "previousCompleteScanAt": "2026-10-17T07:07:47.571Z",
+        "method": "Fresh complete recursive direct Drive listing in five separate functions.exec batches of five folders plus root; maximum returned children 57, below both 100 and requested top_k 1000. No continuation tokens returned, no undiscovered nested folders. Every ID/modifiedTime matches both prior daily snapshot and canonical inventory where present. Two queued PDFs and their two exact candidate Words were re-read; two Word text hashes match original inventory after accounting for its terminal LF. Other unchanged Words were not re-extracted.",
+        "versionAndChecksumAvailability": "Folder listing and targeted metadata readback expose modifiedTime/size, not requested version or binary checksums. Record unavailable version/checksum as null; exact readable-text SHA256 recorded for four documents."
+      },
+      "sourceContentChecks": [
+        {
+          "id": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "characters": 32883,
+          "textSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1",
+          "inventoryHashMatchesWithLF": false
+        },
+        {
+          "id": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
+          "characters": 13069,
+          "textSha256": "baaa907c23fa71f22aff09c492defeeedd93a23ad71d99cf5af6bfaeb4cfb3e4",
+          "inventoryHashMatchesWithLF": false
+        },
+        {
+          "id": "1Kjvbso56c2nJhFSZq5crWwga8anymdnP",
+          "characters": 13161,
+          "textSha256": "4162a0e3a5efd01a078723eacd71c60bec16ba70260f3adbb512f2b34c69bc6c",
+          "inventorySha256": "c75658f9a7e3a34f50794fb327b427c08e957d4f6fc9aa8137af24c48cb0176c",
+          "inventoryHashMatchesWithLF": true
+        },
+        {
+          "id": "11UCPG-16zAKPnxrcT16amhN1HX6YEbfy",
+          "characters": 10121,
+          "textSha256": "98e1e7fbdf526017ef94534f1833452324b428e18c85128c854925abb4911a98",
+          "inventorySha256": "fc71ff1b0f9faa0c86d2a0a51d353de12c633447cbcc3f3b1e02bfcdcf07438c",
+          "inventoryHashMatchesWithLF": true
+        }
+      ],
+      "existingOpenQueueAtStart": 2,
+      "queueChecks": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "programKey": null,
+          "stage": "pdf_text_reviewed",
+          "status": "REVIEW",
+          "sourceVersion": {
+            "modifiedTime": "2026-10-09T13:30:40.492Z",
+            "bytes": 6051218,
+            "version": null
+          },
+          "readableTextSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1",
+          "action": "re-read PDF and exact candidate Word; existing source conflict remains; do not publish",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
+          "programKey": "P135",
+          "stage": "pdf_and_word_compared",
+          "status": "REVIEW",
+          "sourceVersion": {
+            "modifiedTime": "2026-10-09T22:23:51.716Z",
+            "bytes": 2811751,
+            "version": null
+          },
+          "readableTextSha256": "baaa907c23fa71f22aff09c492defeeedd93a23ad71d99cf5af6bfaeb4cfb3e4",
+          "action": "re-read PDF and exact candidate Word; existing source conflict remains; do not publish",
+          "nextStep": "Resolve the authoritative guide language before applying this PDF as an update; retain Word and existing Tour ID until resolved."
+        }
+      ],
+      "sourceReviewQueueRemaining": 2,
+      "publicationStatus": "not_attempted_no_confirmed_word_change_and_unresolved_pdf_sources",
+      "contentCommit": null,
+      "deployRun": null,
+      "newTours": 0,
+      "updatedTours": 0,
+      "newDestinations": 0,
+      "newExcursions": 0,
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_published_object_changes",
+      "geoStatus": "not_required_no_new_entities",
+      "errors": [],
+      "pendingFolderIds": [],
+      "nextStep": "Retain both PDF reviews until a corrected authoritative source appears; preserve canonical Word and do not contact third parties."
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",
@@ -336,7 +459,9 @@
       "firstObservedByDailyRun": "manual-control-2026-10-15",
       "isNewInThisScan": false,
       "reviewedAt": "2026-10-17T07:07:13.876Z",
-      "extractedTextCharacters": 32883
+      "extractedTextCharacters": 32883,
+      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
+      "readableTextSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1"
     },
     {
       "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
@@ -353,7 +478,9 @@
       "firstObservedByDailyRun": "manual-control-2026-10-15",
       "isNewInThisScan": false,
       "reviewedAt": "2026-10-17T07:07:13.876Z",
-      "extractedTextCharacters": 13069
+      "extractedTextCharacters": 13069,
+      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
+      "readableTextSha256": "baaa907c23fa71f22aff09c492defeeedd93a23ad71d99cf5af6bfaeb4cfb3e4"
     },
     {
       "driveFileId": "1IgJJGHOBHSXL8L2WMgLYNz_8pI4yFWtx",
@@ -377,7 +504,7 @@
     }
   ],
   "latestDriveSnapshot": {
-    "at": "2026-10-17T07:07:47.571Z",
+    "at": "2026-10-18T02:04:46.038Z",
     "rootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
     "scanStatus": "complete",
     "folders": [
@@ -549,7 +676,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P001",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5375301
       },
       {
         "driveFileId": "1EhJfFowYPCXzDd-TML5lKRjvl2G0Kk0E",
@@ -561,7 +689,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P002",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 13615772
       },
       {
         "driveFileId": "1ieOqDeLtzMJY9sAhcp96uV03nsgSiCLQ",
@@ -573,7 +702,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P003",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 22050919
       },
       {
         "driveFileId": "1iTLxaJci0-E9CZTBMwCYjJiZTMyu_x28",
@@ -585,7 +715,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P004",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6980315
       },
       {
         "driveFileId": "1gZ3bqTwQ_59DCqQyFzRgf_53jRY3cHSl",
@@ -597,7 +728,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P005",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5939283
       },
       {
         "driveFileId": "120CQgsde0TEyXVZHOQ52XkMUyNQJsNL_",
@@ -609,7 +741,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P006",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2020753
       },
       {
         "driveFileId": "1rtYJ_Sg9scTo1Ib6BJJw-U_poWqenwIJ",
@@ -621,7 +754,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P007",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3772878
       },
       {
         "driveFileId": "11DgsH9YxGcnDrgJmkr3MDHaipxRFDlPL",
@@ -633,7 +767,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P008",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2732694
       },
       {
         "driveFileId": "1s-8BCk5eP_LwNBziRXUvmlvmSdovFWzP",
@@ -645,7 +780,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P009",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 27020424
       },
       {
         "driveFileId": "1butPiR7ZRJDGqCrV5LIi5KzbwMUYV8Lz",
@@ -657,7 +793,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P010",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 11552335
       },
       {
         "driveFileId": "1EWxohAVcD-XCAzEdxsSBsiISQDVFACVf",
@@ -669,7 +806,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P011",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5056727
       },
       {
         "driveFileId": "1EJcuwA-Ein2EADhIhx7Me1ZkkYpR_MgF",
@@ -681,7 +819,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P012",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5354411
       },
       {
         "driveFileId": "1Teplr6p6WIA5ow9sf9yOkCzMjDmgX3B-",
@@ -693,7 +832,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P013",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5851604
       },
       {
         "driveFileId": "10dvC8af6CzhLoZ-GfWKJuU4Ig_JyRPlM",
@@ -705,7 +845,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P014",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 17622867
       },
       {
         "driveFileId": "116eH9e_Su7nsI0fynPiJwKSQVCI7OAOD",
@@ -717,7 +858,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P015",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 15393568
       },
       {
         "driveFileId": "1YCUbwARgRaeCBLJvCzwWKqhKLTOBICoe",
@@ -729,7 +871,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P016",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10588492
       },
       {
         "driveFileId": "1eVwN7RYPJdoRT6dXtd-tudCwPXBk94xy",
@@ -741,7 +884,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P017",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 36116048
       },
       {
         "driveFileId": "1ksPnw61-VzXdNjx3mRm3uuRTsEMaQyCl",
@@ -753,7 +897,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P018",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 23070874
       },
       {
         "driveFileId": "1ow3Iisp1magVaLjqQUtlijZTZAvYTeWp",
@@ -765,7 +910,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P019",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 16915499
       },
       {
         "driveFileId": "1BFzfdAZ0Vt0mYe2YI8yc-4lL7Vd_HFPv",
@@ -777,7 +923,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P020",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3700793
       },
       {
         "driveFileId": "1lWeAiB-7v8o63YZI4qIOQlpSQL2Zht6R",
@@ -789,7 +936,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P021",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3358984
       },
       {
         "driveFileId": "1KEDrQnYyaJJN2aL3fJfrNR-gAy21FLCK",
@@ -801,7 +949,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P022",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 24308605
       },
       {
         "driveFileId": "1RvHUyc1osz8RgXnIpjvGvMHmTj9K9eHL",
@@ -813,7 +962,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P023",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2200230
       },
       {
         "driveFileId": "1P8McpHZEYpzowGVMvHTkRFs_sKwdpM16",
@@ -825,7 +975,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P024",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2299895
       },
       {
         "driveFileId": "1DMMz4N6h5_STB3gI6GnrKauiAUON10qR",
@@ -837,7 +988,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P025",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2325668
       },
       {
         "driveFileId": "1GUX4I3ummOv_b3JG7ZTVPljSEkDwIU-U",
@@ -849,7 +1001,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P026",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2298017
       },
       {
         "driveFileId": "1IJCi1k921IDssN0vGLsVmnOoQ5xTWT8o",
@@ -861,7 +1014,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P027",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 14146497
       },
       {
         "driveFileId": "1bN59Os3gqQL7zQr6Qwg92ym-LZSnp0fn",
@@ -873,7 +1027,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P028",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9628712
       },
       {
         "driveFileId": "1mfrALIdEovxDH2ahFtc-wuor942SGvqn",
@@ -885,7 +1040,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P029",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6462714
       },
       {
         "driveFileId": "1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x",
@@ -897,7 +1053,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P030",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4883305
       },
       {
         "driveFileId": "1AGRe5pF92IiNZzminJvGpccanyDmhCiU",
@@ -909,7 +1066,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P031",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3651634
       },
       {
         "driveFileId": "18-m9Is7xIKzVM3aQSSt4y6qCBWtjoKuk",
@@ -921,7 +1079,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P032",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4951481
       },
       {
         "driveFileId": "1DkLBy9rBTlAz2k3AQT0ohvgVIAagIOoo",
@@ -933,7 +1092,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P033",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2184981
       },
       {
         "driveFileId": "1l3NZVOJImL-ZtZAmlFjBDPrOpyMT2C56",
@@ -945,7 +1105,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P034",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 11165659
       },
       {
         "driveFileId": "1dsT6ebFO9L4ilxhnIamb0C-iqlwkhMT8",
@@ -957,7 +1118,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P035",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 36671944
       },
       {
         "driveFileId": "1E3cu_NsB-Q55iBpMfoX87YrECo17Kgpm",
@@ -969,7 +1131,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P036",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3589497
       },
       {
         "driveFileId": "1Ht66U8h6NUzf07VNwV9c6pH_v_uVNaAo",
@@ -981,7 +1144,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P022",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 24308605
       },
       {
         "driveFileId": "1-YRzv_6uGoDx8hIOM899hoy-3xFHgfKe",
@@ -993,7 +1157,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P037",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 7401496
       },
       {
         "driveFileId": "12Duu6WD8YDZRzL8O6hEeE5FDdfwplqKz",
@@ -1005,7 +1170,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P038",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 28886883
       },
       {
         "driveFileId": "1s8C2hA5M8Xq9v-uealzohr9okK55ebU_",
@@ -1017,7 +1183,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P039",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 17360866
       },
       {
         "driveFileId": "1eNlJbN-1Cbg2q6hVGcjlhOy8tsoDAE3h",
@@ -1029,7 +1196,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P040",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 38763946
       },
       {
         "driveFileId": "16Yho_hI1w_jZ1yah_LrAH8cKU0V5Wddt",
@@ -1041,7 +1209,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P041",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 39356446
       },
       {
         "driveFileId": "1S9Yxr3o4Yn77DDkStiW3PXI-drhZT3xk",
@@ -1053,7 +1222,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P042",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 47886181
       },
       {
         "driveFileId": "1FO7BcjDJgArdLqmabhS5L9LW5Y4VmK0i",
@@ -1065,7 +1235,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P171",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10425112
       },
       {
         "driveFileId": "1S8O23p3rfd15P5ihSppvW2C-1cYmM57S",
@@ -1077,7 +1248,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P170",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10633987
       },
       {
         "driveFileId": "1VIBqzNdzSJkiUq8FiL78N2BRmfNDwo31",
@@ -1089,7 +1261,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P043",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8022604
       },
       {
         "driveFileId": "1cLVaZTUZWg3v12X6Kuqa8etRRaY39kfu",
@@ -1101,7 +1274,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P043",
-        "classification": "registered_program_pdf"
+        "classification": "registered_program_pdf",
+        "bytes": 7033765
       },
       {
         "driveFileId": "1hEl65uC5XxRmXN-vzq3TFZkQ9Eny65gz",
@@ -1113,7 +1287,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P044",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9326664
       },
       {
         "driveFileId": "1Mi9d57-P1XaUec17BRLdnkXDZaXtmUy3",
@@ -1125,7 +1300,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P045",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 384213
       },
       {
         "driveFileId": "1RutAyh6jgoOj4IR2J7Gj3GpWTs52n8Oo",
@@ -1137,7 +1313,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P046",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4769342
       },
       {
         "driveFileId": "1UggFIBG6Xj2EN4rZ5b31vfegR9NIdcDT",
@@ -1149,7 +1326,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P051",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 18097176
       },
       {
         "driveFileId": "1skaR2iQ6FrxpdT_QMuxOoacXJWUn5TWa",
@@ -1161,7 +1339,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P169",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1060276
       },
       {
         "driveFileId": "1z_Hn43j-IHNBwo5_QwWAdgbDJ4unpoPt",
@@ -1173,7 +1352,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P045",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 383983
       },
       {
         "driveFileId": "1K7mXZs3iOQm9U7fDH-HRmgE3lOn6i6lD",
@@ -1185,7 +1365,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P080",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5511530
       },
       {
         "driveFileId": "1pAA3G9pbiLSNwDlK-R_6sAkEP72bvLrq",
@@ -1197,7 +1378,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P046",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4769321
       },
       {
         "driveFileId": "18JlxnPW3h7QnCAI5J_xyPxxupRuQN54g",
@@ -1209,7 +1391,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P047",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1472686
       },
       {
         "driveFileId": "1Kbz5HNDLaNlF1Xz1E08QPhuQzNkmxFiy",
@@ -1221,7 +1404,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P048",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10509087
       },
       {
         "driveFileId": "1qqg_wsISE9df71wjk6AcVkuNRq7xLVoe",
@@ -1233,7 +1417,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P049",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1865174
       },
       {
         "driveFileId": "1xav4a_QttYhHqMEZlM1OsBHY54qZM7mp",
@@ -1245,7 +1430,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P050",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4121228
       },
       {
         "driveFileId": "1k2nkvsOwYyYSQiypHRb1ONYnJ21ujdln",
@@ -1257,7 +1443,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P052",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4421801
       },
       {
         "driveFileId": "1XbfhTCbZC8A_hK6azPVuMAFipSpAhHmr",
@@ -1269,7 +1456,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P053",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4105088
       },
       {
         "driveFileId": "1IV_0KIv-hMXGKyCkHkXd-aeC1sod7yg5",
@@ -1281,7 +1469,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P054",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 7170981
       },
       {
         "driveFileId": "1WLLe6iOY4dkgnQbQl9oiK31QweUUA-rq",
@@ -1293,7 +1482,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P055",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 16725717
       },
       {
         "driveFileId": "1gQ-b6RL_1WycICvJ2mvmElwVNqx27oql",
@@ -1305,7 +1495,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P056",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1275473
       },
       {
         "driveFileId": "1eqvUS8-2r0QF7ukiQAYVuL6GDDrLVeAU",
@@ -1317,7 +1508,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P057",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1379601
       },
       {
         "driveFileId": "19azCGfr4smp-AQy5o4mQvtkfULPtOMzG",
@@ -1329,7 +1521,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P058",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9949542
       },
       {
         "driveFileId": "11UCPG-16zAKPnxrcT16amhN1HX6YEbfy",
@@ -1341,7 +1534,10 @@
         "version": null,
         "checksum": null,
         "programKey": "P059",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4008664,
+        "readableTextSha256": "98e1e7fbdf526017ef94534f1833452324b428e18c85128c854925abb4911a98",
+        "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline"
       },
       {
         "driveFileId": "1te0NoRlCFCkprjsNlqDRzqGcoKoy95aE",
@@ -1353,7 +1549,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P060",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1278789
       },
       {
         "driveFileId": "1RC4JVwa9pNqemBAaJnmsnyE1P9vZ6MXp",
@@ -1365,7 +1562,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P061",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3719896
       },
       {
         "driveFileId": "1fl1BPByaAsmLufzOOlnw0JDqgJqVkdV-",
@@ -1377,7 +1575,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P062",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2246855
       },
       {
         "driveFileId": "1-iP28XW_AWkzMc0RblURAC1agXZ1o8Ir",
@@ -1389,7 +1588,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P063",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 7025693
       },
       {
         "driveFileId": "1HY1teydYIljcmefYCtGTKteZaMgvNXsF",
@@ -1401,7 +1601,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P064",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1916209
       },
       {
         "driveFileId": "19QWeq2ZDrpZLXjDLLMcXh_KtTboZDlKX",
@@ -1413,7 +1614,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P065",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5267616
       },
       {
         "driveFileId": "1GoModQ3BCgOo6lOAKrnlFU9ggbS58yKL",
@@ -1425,7 +1627,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P066",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5137751
       },
       {
         "driveFileId": "1oggKMDakULVfSUlKKWdxVYrZn2KMLoBE",
@@ -1437,7 +1640,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P067",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 21131759
       },
       {
         "driveFileId": "1cDyQGEPklh2ckz6-JzwRmgE8O597QWwG",
@@ -1449,7 +1653,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P068",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5751198
       },
       {
         "driveFileId": "1moIDf9Rpu00YiTMcY3MfxmfLGRubW5kP",
@@ -1461,7 +1666,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P069",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 11018901
       },
       {
         "driveFileId": "11DCAguJnX6Dd-XUtoCxbqC_ADdSpP6vx",
@@ -1473,7 +1679,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P070",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2457660
       },
       {
         "driveFileId": "1E4Lc1c1AzZudT3MKmYqbjp5vdOozxG1j",
@@ -1485,7 +1692,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P071",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 23176632
       },
       {
         "driveFileId": "1upH0a0_J1aGcNmLHI0mKszagOYjfTb_A",
@@ -1497,7 +1705,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P072",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2847570
       },
       {
         "driveFileId": "16ASy5mk2j6Kf8gs5CcsO_G6_lz7vHBJA",
@@ -1509,7 +1718,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P073",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 22550643
       },
       {
         "driveFileId": "1xcMowipqiYJzSVe8Ys5UlSaUmhHRI4ds",
@@ -1521,7 +1731,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P074",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 23065489
       },
       {
         "driveFileId": "1LoRqKPvRsf3y-2vn4d9uE-Kv6avb9_dG",
@@ -1533,7 +1744,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P075",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 38565993
       },
       {
         "driveFileId": "1FygiOMTM22L8B3FcqLseku3j8NWoNmIw",
@@ -1545,7 +1757,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P076",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 901260
       },
       {
         "driveFileId": "12SiyfXD5cmxTBxLwVqoKQTKvlNno4oep",
@@ -1557,7 +1770,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P077",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 17888909
       },
       {
         "driveFileId": "1pI8Z5otE4DQDfxySu33vUc2HdSltAgUx",
@@ -1569,7 +1783,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P078",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5850489
       },
       {
         "driveFileId": "1vK1403LhxTEPv_4-Y-IWsdBUs5Z6Jap8",
@@ -1581,7 +1796,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P079",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3771019
       },
       {
         "driveFileId": "1xl8O5-7K7gg_KkuKK5e-IL1lBZmbMvcM",
@@ -1593,7 +1809,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P081",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1409486
       },
       {
         "driveFileId": "1SmSgSpfM9MA_NUVqdSZUoeoKuqWpnm5C",
@@ -1605,7 +1822,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P082",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3916933
       },
       {
         "driveFileId": "1zIg2kIOpb7EOGB-5CtG-n0evD1qM5xcV",
@@ -1617,7 +1835,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P083",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5590208
       },
       {
         "driveFileId": "1gJL6wENRglVMMyVX2rlWvcJfEFy8eQOm",
@@ -1629,7 +1848,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P084",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4821215
       },
       {
         "driveFileId": "15akcPKqbny6iaVW1AjMYEQ0pDes2bXnQ",
@@ -1641,7 +1861,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P085",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 21705699
       },
       {
         "driveFileId": "1K8T6QZoMkDjggR-hENCg402iJIOcs1cY",
@@ -1653,7 +1874,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P086",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 20594444
       },
       {
         "driveFileId": "1eIcgS0dHDNpH6HdezKhNp9ptziqNehfq",
@@ -1665,7 +1887,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P087",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 16531494
       },
       {
         "driveFileId": "1fEfuMFwcYqXRDblcCCy53PyQ2YBUqI2t",
@@ -1677,7 +1900,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P088",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3322750
       },
       {
         "driveFileId": "1miAreWqDuHlkbxCgAB3GAaHcv8AFsg8C",
@@ -1689,7 +1913,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P089",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3498231
       },
       {
         "driveFileId": "1gqIJXqTYsu32ES-2kDpOxxFACsHKFjdr",
@@ -1701,7 +1926,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P090",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8552013
       },
       {
         "driveFileId": "16kTzZvLYTF6oWnFZTpvPxYdesVw52Jc6",
@@ -1713,7 +1939,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P091",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 21526280
       },
       {
         "driveFileId": "1gMSf7AZ03CVGcNuJfscbPZYKBHwL9hRq",
@@ -1725,7 +1952,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P092",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6320808
       },
       {
         "driveFileId": "1cG6A6GA_bxt6s5NUGUdMA_1RJHm5SuEN",
@@ -1737,7 +1965,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P093",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4745239
       },
       {
         "driveFileId": "1YsHiTbfqXdoD-cjzVVM2HVDcH8pucxQE",
@@ -1749,7 +1978,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P094",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 64937845
       },
       {
         "driveFileId": "1D04UFzIJIE8I0JDz8IgUvAu4iBDyCwEA",
@@ -1761,7 +1991,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P095",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3169777
       },
       {
         "driveFileId": "1z2ysqJ_7DVER7-6fjXr_N-1JQxX1uyMn",
@@ -1773,7 +2004,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P096",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4901656
       },
       {
         "driveFileId": "1tnDv4wOdgMuc4Qmi2v36FXIXfPuM0j63",
@@ -1785,7 +2017,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P097",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9166824
       },
       {
         "driveFileId": "1JX8Osf_D88_oiU0Yze8kF8knDCbc2Dkq",
@@ -1797,7 +2030,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P098",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10696588
       },
       {
         "driveFileId": "1j3oxyPxLjk17AxK3DC-BTB3di7PFWEMF",
@@ -1809,7 +2043,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P099",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 11252646
       },
       {
         "driveFileId": "1q6OMZlJa330EA2p9cPUs81Soe5nxNSNF",
@@ -1821,7 +2056,8 @@
         "version": null,
         "checksum": null,
         "programKey": null,
-        "classification": "auxiliary_non_tour_word"
+        "classification": "auxiliary_non_tour_word",
+        "bytes": 42721144
       },
       {
         "driveFileId": "1TGAF3QF8XX-VrVTVMgSs50tq7V8d7oGs",
@@ -1833,7 +2069,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P043",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8169337
       },
       {
         "driveFileId": "1msC4CsEWXaPWNYTbe1xnDv_-AgdTgsLV",
@@ -1845,7 +2082,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P170",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10912915
       },
       {
         "driveFileId": "1iBdizUjv-VcTa8NA4RomlGK-dwqh-SaK",
@@ -1857,7 +2095,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P171",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10425112
       },
       {
         "driveFileId": "1oY-NYx09AKB4GytwNQwIDs7B0l4OYIDo",
@@ -1869,7 +2108,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P100",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6877033
       },
       {
         "driveFileId": "1gJ1_mNkCyTjj_98DLQS1QF8Ze0b4ybN4",
@@ -1881,7 +2121,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P043",
-        "classification": "registered_program_pdf"
+        "classification": "registered_program_pdf",
+        "bytes": 7033765
       },
       {
         "driveFileId": "1iYGk1FwlRUnuLb82yI_teVSw_3PLaWhG",
@@ -1893,7 +2134,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P045",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 384213
       },
       {
         "driveFileId": "1vp-dqFnu0RIAc08dEAENvTxgHLb6qPJI",
@@ -1905,7 +2147,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P076",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 396182
       },
       {
         "driveFileId": "1_Cfl5kRmb-VHmnuWte-BbHNZfdqtyKHJ",
@@ -1917,7 +2160,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P101",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 13470046
       },
       {
         "driveFileId": "1m3seHdUa3XZ9uxw6bBi_v3BUC84fJUo2",
@@ -1929,7 +2173,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P102",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 10571780
       },
       {
         "driveFileId": "1AE7daYamykdBi1VK4RrVaXKMMUrRzJKF",
@@ -1941,7 +2186,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P103",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 38366982
       },
       {
         "driveFileId": "1BDEY5p7a0mRlI7LNhc9inf0OYQqkiWam",
@@ -1953,7 +2199,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P104",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1891123
       },
       {
         "driveFileId": "1mtpDP_NPbAGL54yClrU8TZuOUcEUJf4t",
@@ -1965,7 +2212,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P105",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5359085
       },
       {
         "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
@@ -1977,7 +2225,10 @@
         "version": null,
         "checksum": null,
         "programKey": null,
-        "classification": "needs_pdf_review"
+        "classification": "needs_pdf_review",
+        "bytes": 6051218,
+        "readableTextSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1",
+        "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline"
       },
       {
         "driveFileId": "1Fg36H-7Wj19XoYkDZQsS8uY_jSbxTd-D",
@@ -1989,7 +2240,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P106",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1510325
       },
       {
         "driveFileId": "1zWTBZQZpl9vvjK01-cNLRFYJt2VZIOE2",
@@ -2001,7 +2253,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P107",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2651916
       },
       {
         "driveFileId": "1P3LxiLgJKPeX9COqlUovScukmYFRny2N",
@@ -2013,7 +2266,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P108",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1523497
       },
       {
         "driveFileId": "1ydIzUxXVRHKmIGZpMtqwTQfQ8yKUir0F",
@@ -2025,7 +2279,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P109",
-        "classification": "registered_program_pdf"
+        "classification": "registered_program_pdf",
+        "bytes": 6417641
       },
       {
         "driveFileId": "1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB",
@@ -2037,7 +2292,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P117",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4214775
       },
       {
         "driveFileId": "1wxd4Fq4-rEaL2TE50dJMhgNl4EzuJJNX",
@@ -2049,7 +2305,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P122",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 20060982
       },
       {
         "driveFileId": "1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ",
@@ -2061,7 +2318,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P111",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4661656
       },
       {
         "driveFileId": "12BSwGO6ase0kfKxd9Jp8JlHUC4X8teAn",
@@ -2073,7 +2331,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P045",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 385095
       },
       {
         "driveFileId": "1OJwFmxnMZ0UZfvTQpSNWIM_5TzMQE6NT",
@@ -2085,7 +2344,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P067",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 21131761
       },
       {
         "driveFileId": "1snFnoINZkqnOiuFA1UMTYSiOFYo8fTcO",
@@ -2097,7 +2357,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P110",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1369080
       },
       {
         "driveFileId": "1NErCFKzKVsPpaWpU5nexkagASyPFgy3K",
@@ -2109,7 +2370,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P044",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9326664
       },
       {
         "driveFileId": "1JtCSrvNG6geYQfD8hJvq5rWLgMSfYLbC",
@@ -2121,7 +2383,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P112",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 15854930
       },
       {
         "driveFileId": "1lfibiUF3jx5l1hq2xXAwMiT4YXKMbw1i",
@@ -2133,7 +2396,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P113",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4402492
       },
       {
         "driveFileId": "1DpLMlVaRd34whOzAfvk_Fnl8trpPM2QK",
@@ -2145,7 +2409,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P060",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3566200
       },
       {
         "driveFileId": "1XH94LwW3ziRhm3ueKHR2biMbg97e_PX1",
@@ -2157,7 +2422,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P114",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6294011
       },
       {
         "driveFileId": "1mT6CCTXmmiOg8ebri3Yx_FDnwrsczLwz",
@@ -2169,7 +2435,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P115",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1405421
       },
       {
         "driveFileId": "1jK2Iu98GrqMalVGV6ljRDCtWeYLXEEIM",
@@ -2181,7 +2448,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P116",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 35976236
       },
       {
         "driveFileId": "14AcwXEAKWk0aL6yHNJEb57BumCn0aK19",
@@ -2193,7 +2461,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P118",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6116914
       },
       {
         "driveFileId": "1RMOiyc3hazi5oKJWgKey6NB7Ht2AU54y",
@@ -2205,7 +2474,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P119",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 13286803
       },
       {
         "driveFileId": "1lComQQhTHAI5KUZ9lmKPSSUpwVGFXeNL",
@@ -2217,7 +2487,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P120",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8551064
       },
       {
         "driveFileId": "1c9gktI3zlyoabtPVz3PhfNDItbCct8H5",
@@ -2229,7 +2500,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P121",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3567168
       },
       {
         "driveFileId": "1sJUI2CSrMD7h30QFI1e9Zf4b-LNi7jcY",
@@ -2241,7 +2513,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P069",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 11018027
       },
       {
         "driveFileId": "13Jd5CjLa4kCifoN7NmqE6UGF_DxwXt1h",
@@ -2253,7 +2526,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P088",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3322747
       },
       {
         "driveFileId": "1WDaKlFdyth3V7LiYkGQxl3nIxB2IhyVP",
@@ -2265,7 +2539,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P079",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3770893
       },
       {
         "driveFileId": "1CsGXhzkzj-IU_xXDYNGFHM_fshmYaQXB",
@@ -2277,7 +2552,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P046",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4769342
       },
       {
         "driveFileId": "10f47h71epwPEB6FfRj4imZGlGXQ-XjiC",
@@ -2289,7 +2565,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P079",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8038488
       },
       {
         "driveFileId": "1zSj5MnMuuXMy4vdNmNge_0aoUdSvImOx",
@@ -2301,7 +2578,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P045",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2122746
       },
       {
         "driveFileId": "195wXR8ezg4oI1GPRqwh9IweV0HpnB__X",
@@ -2313,7 +2591,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P113",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1307333
       },
       {
         "driveFileId": "1KKt2LiHmB-rqvfaS5p1Ad_SJvOWYHizp",
@@ -2325,7 +2604,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P069",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 11018027
       },
       {
         "driveFileId": "1u7HGbk5fOexsVGOf-IItuGystWxsOrnH",
@@ -2337,7 +2617,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P123",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3531142
       },
       {
         "driveFileId": "1MCUXBiq_HYaNTONYUIpyGuYvVV76I9Ku",
@@ -2349,7 +2630,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P124",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 976815
       },
       {
         "driveFileId": "15U6pzr7Vde_C90zMoqmPo2FEhusldE-D",
@@ -2361,7 +2643,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P125",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 11430028
       },
       {
         "driveFileId": "1I3PPMbct27dOjvKtaBjCLLfs2yLY_2rH",
@@ -2373,7 +2656,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P125",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4540777
       },
       {
         "driveFileId": "1FadSVhirch2MG4khM8rL3TpcicU6tQGC",
@@ -2385,7 +2669,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P126",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6950488
       },
       {
         "driveFileId": "1JI6ZBQtl3Y_LC6hLD-y0Rn8W2M3p5b5h",
@@ -2397,7 +2682,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P127",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 12421971
       },
       {
         "driveFileId": "1BDjyYTsNgYCYHkSCc4Y-apfzMz1EdxRi",
@@ -2409,7 +2695,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P128",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6758395
       },
       {
         "driveFileId": "1idXvVut2EUCZwPPEtaVzOA6usFOj8a3_",
@@ -2421,7 +2708,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P129",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6726242
       },
       {
         "driveFileId": "10oIIbNfwg59WJtBA8oZ2tRETqkYxo5p5",
@@ -2433,7 +2721,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P130",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 186037
       },
       {
         "driveFileId": "1Jyk6KlKNCE7S14g68NYjDjnhZ_v2-yMu",
@@ -2445,7 +2734,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P131",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6602902
       },
       {
         "driveFileId": "1P39Z9KCCurAI5QuOaR9Kf-11wOSee17y",
@@ -2457,7 +2747,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P117",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9747815
       },
       {
         "driveFileId": "1Cn41JKRDrFqc9O6lxFEKixi5nBTfNcpP",
@@ -2469,7 +2760,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P132",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5994005
       },
       {
         "driveFileId": "1x58I21WjIEZhC5ZHrRIoP93lvTQKeD_6",
@@ -2481,7 +2773,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P094",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 19550470
       },
       {
         "driveFileId": "1rozMEVH6bAiQqvsjdXQI4YBNhtbvfTx4",
@@ -2493,7 +2786,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P044",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9326664
       },
       {
         "driveFileId": "1Z3JMZXFBlQgCxsUSj7YBy2e1skLA18iE",
@@ -2505,7 +2799,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P133",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 7177555
       },
       {
         "driveFileId": "1XFk5MV8FDfwJgD2M1fORsmetmakXt9c8",
@@ -2517,7 +2812,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P134",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 14468664
       },
       {
         "driveFileId": "1qu6eANpEsuvSLHYLi1c6szDD3NQzRJgE",
@@ -2529,7 +2825,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P113",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 5831799
       },
       {
         "driveFileId": "1kEDV3PLo-hLuOehp9bKS6WJwvc2XVa5h",
@@ -2541,7 +2838,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P045",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 2122746
       },
       {
         "driveFileId": "1IgJJGHOBHSXL8L2WMgLYNz_8pI4yFWtx",
@@ -2553,7 +2851,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P142",
-        "classification": "existing_program_brochure"
+        "classification": "existing_program_brochure",
+        "bytes": 2757300
       },
       {
         "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
@@ -2565,7 +2864,10 @@
         "version": null,
         "checksum": null,
         "programKey": "P135",
-        "classification": "needs_pdf_review"
+        "classification": "needs_pdf_review",
+        "bytes": 2811751,
+        "readableTextSha256": "baaa907c23fa71f22aff09c492defeeedd93a23ad71d99cf5af6bfaeb4cfb3e4",
+        "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline"
       },
       {
         "driveFileId": "1Kjvbso56c2nJhFSZq5crWwga8anymdnP",
@@ -2577,7 +2879,10 @@
         "version": null,
         "checksum": null,
         "programKey": "P135",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8113561,
+        "readableTextSha256": "4162a0e3a5efd01a078723eacd71c60bec16ba70260f3adbb512f2b34c69bc6c",
+        "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline"
       },
       {
         "driveFileId": "1ZaAXBy_tbSigYKnqCeScyDRNE0qRri5d",
@@ -2589,7 +2894,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P136",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6775969
       },
       {
         "driveFileId": "14Om_luOpwtBtqql7NxyZDRQ8xtjv4uTb",
@@ -2601,7 +2907,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P137",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1268541
       },
       {
         "driveFileId": "1gaL9MHGLftE6Q3_O5tuZF3AkM3XDs8kH",
@@ -2613,7 +2920,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P138",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8167196
       },
       {
         "driveFileId": "1FEYZGxUPKg8a6JrRkx_2FG0e7wwZ4JOU",
@@ -2625,7 +2933,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P139",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 43339994
       },
       {
         "driveFileId": "1QGKwDhr8CwK321tCUMUuNAyliJpBr5mz",
@@ -2637,7 +2946,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P140",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 9730487
       },
       {
         "driveFileId": "1xN_GP-qNB2wE5hz42vnS45FEXKw3Mqeb",
@@ -2649,7 +2959,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P141",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8458175
       },
       {
         "driveFileId": "1HbsOmP3KzeLw1VGZk1XEaCAnvflwkZQe",
@@ -2661,7 +2972,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P142",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 15126779
       },
       {
         "driveFileId": "16HYc2q48Bca_8Zo2VD-W1iOufzB_c33b",
@@ -2673,7 +2985,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P143",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 16756363
       },
       {
         "driveFileId": "1u5ezyd_oXIe6SZtASV11R3UnOA3mYbFr",
@@ -2685,7 +2998,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P144",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 13689337
       },
       {
         "driveFileId": "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
@@ -2697,7 +3011,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P153",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 8551074
       },
       {
         "driveFileId": "1aodmuf2MCV25iJuC2XGK7ok7X9tu-Qpu",
@@ -2709,7 +3024,8 @@
         "version": null,
         "checksum": null,
         "programKey": null,
-        "classification": "auxiliary_non_tour_word"
+        "classification": "auxiliary_non_tour_word",
+        "bytes": 529327
       },
       {
         "driveFileId": "12QJtd211FeAN8NdNUvLeLvn4p_iGfYfA",
@@ -2721,7 +3037,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P145",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 794095
       },
       {
         "driveFileId": "1oLZAfaNIgNA-GbS3R8II2cvW_TFlka6t",
@@ -2733,7 +3050,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P146",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 735704
       },
       {
         "driveFileId": "16GI9NiTFhgcwJSm3Y5XaVHIuoEtr-7Y0",
@@ -2745,7 +3063,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P147",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 936474
       },
       {
         "driveFileId": "11U4ImOs5mtSCy83Jp7cqewca5b-S9yL7",
@@ -2757,7 +3076,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P148",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1824079
       },
       {
         "driveFileId": "1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp",
@@ -2769,7 +3089,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P149",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 770937
       },
       {
         "driveFileId": "1odj5X6HhIZ5RWzMPdZOVyUTxtmhmdoR4",
@@ -2781,7 +3102,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P150",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 866520
       },
       {
         "driveFileId": "1qkPpWu99FABWC0lOUv80QsAPHJGIahUG",
@@ -2793,7 +3115,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P151",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 773090
       },
       {
         "driveFileId": "1Ua17HBMs3lZcz3bo1uFqsBufP1AUipkN",
@@ -2805,7 +3128,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P152",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1070930
       },
       {
         "driveFileId": "1HI1vzOx4WDYCTLmxZAfUou4ueUdgbIQt",
@@ -2817,7 +3141,8 @@
         "version": null,
         "checksum": null,
         "programKey": null,
-        "classification": "auxiliary_non_tour_word"
+        "classification": "auxiliary_non_tour_word",
+        "bytes": 536330
       },
       {
         "driveFileId": "1wm4F-nqVlb_latC4I9kxI4NGR2we-e8l",
@@ -2829,7 +3154,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P154",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1460940
       },
       {
         "driveFileId": "1H-xNMIgh0fUgKtMbzilltHzg3rOJrtI4",
@@ -2841,7 +3167,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P155",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 1795598
       },
       {
         "driveFileId": "19pKXftoqMdCFVJMHyFGeSlBnA1aT6c5e",
@@ -2853,7 +3180,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P156",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3046388
       },
       {
         "driveFileId": "1EIC9jKLRqITF8NK50uSAlJbf0NeREbOm",
@@ -2865,7 +3193,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P157",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3501187
       },
       {
         "driveFileId": "1fkf4D9-9xNYjrVtiklv8IsK85SNe2tqi",
@@ -2877,7 +3206,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P158",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 338682
       },
       {
         "driveFileId": "1XQxG7EGyqT7ocecorNoz8kZb5Nc2zPoz",
@@ -2889,7 +3219,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P159",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4252663
       },
       {
         "driveFileId": "199I4cPaXMicxUKzIZIjiQtSHIffrvzBE",
@@ -2901,7 +3232,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P160",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 3981747
       },
       {
         "driveFileId": "1HFQgkqcjsvx1UCA_Zh3xXLodzsZnNd3B",
@@ -2913,7 +3245,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P161",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4126638
       },
       {
         "driveFileId": "15rBdMvFM6CsIXXtqkUz-x2Vz6qI76csW",
@@ -2925,7 +3258,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P162",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 6449383
       },
       {
         "driveFileId": "1yJf5w4VcmsoTdfSattK8taFMuTak_8m9",
@@ -2937,7 +3271,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P163",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 12559543
       },
       {
         "driveFileId": "1OQYapq32LGsSOtNr4wAbPUfLtP-jDREi",
@@ -2949,7 +3284,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P164",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 230275
       },
       {
         "driveFileId": "1oARzLN8Eh0E4J0Yp8F_wRGXs8fIMomBA",
@@ -2961,7 +3297,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P165",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 302427
       },
       {
         "driveFileId": "1zLr992kFMz9UdiLXx9LI-RtuWbl--jS4",
@@ -2973,7 +3310,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P166",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 267363
       },
       {
         "driveFileId": "1i8AMBZ-bp9Fc1AB7ru8BB6QDqibsM8b9",
@@ -2985,7 +3323,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P167",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 300005
       },
       {
         "driveFileId": "1zat9NNuJlzlnuF_KU5o_-E8BGpGXd6tF",
@@ -2997,7 +3336,8 @@
         "version": null,
         "checksum": null,
         "programKey": "P168",
-        "classification": "registered_program_word"
+        "classification": "registered_program_word",
+        "bytes": 4157037
       }
     ],
     "pendingFolderIds": [],

@@ -265,10 +265,31 @@ ordinary stops (100) but below departure. On routes returning directly to
 departure the start remains at 1000 and wins; no second marker is created.
 Both the Yandex YMapMarker and the Google advanced/legacy marker adapters
 reuse the identical ordered list and zIndex values. Destination neighborhood
-maps keep their established rule: only the featured current place is raised
-to 1000, unrelated neighbors stay at 100.
+maps keep the featured current place highest at 1000. Recommendations
+get strictly decreasing z-index by numbered relevance position, so №2 is 999,
+№3 is 998, down to №11 at 990; lower numbers cover higher numbers.
 
 The marker identity, visit order, GPS coordinates, route SVG geometry,
 camera fit, lazy loading and circle colors remain unchanged. Tests include
 normal 3-stop routes, arrival at an earlier visited stop, return to departure,
 single-point trips and unchanged Destination prominence.
+
+
+## Destination recommendation marker ranking — 19.10.2026
+
+On a Destination page, the `Куда поехать дальше` section counts each
+co-occurring destination once per active Tour whose full `destinations`
+contains the current place (including optional stops); it sorts by descending
+number of shared Tours and then Russian name, limiting the list to ten.
+The map uses the same ordered IDs, omitting only those without published
+verified GEO coordinates. Each visible point's position is assigned after
+this GEO filter; №1 is always the current destination.
+
+All Destination markers now have a *strict* priority order, not just the
+featured marker: `zIndex = 1001 - position`. Thus №7 is 994 and №8 is 993,
+so №8 cannot obscure №7, even at identical coordinates. The shared
+`orderedGeoMapMarkers` helper also sorts actual insertion order ascending
+by z-index, protecting both Yandex Maps 3 and Google Maps (legacy and advanced
+marker variants). Tour and Excursion starting/final marker precedence is
+unchanged. The ranking or contents of recommendations, GEO screening, marker
+colors, route geometries and map lazy loading are not changed.

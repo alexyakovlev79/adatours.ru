@@ -7,9 +7,10 @@ export const MAP_MARKER_Z_INDEX = Object.freeze({
   start: 1000,
 });
 
-// Destinations use their existing featured-place priority.
-// Tours/excursions use the actual ordered route, including return visits:
-// departure marker 1 always wins, final visit is second, others are below.
+// Destinations use the numbered recommendation order: position 1 wins,
+// and every earlier recommendation is above every later recommendation.
+// Tours/excursions keep their different itinerary rule: departure wins,
+// actual final visit is second, all intermediate stops remain beneath.
 export function orderedGeoMapMarkers(data) {
   const points = Array.isArray(data?.points) ? data.points : [];
   if (!points.length) return [];
@@ -28,13 +29,21 @@ export function orderedGeoMapMarkers(data) {
       points[points.length - 1]
     : null;
 
-  return points.map((point, index) => ({
-    point, index,
-    zIndex: point.isPrimary || point === departure
+  return points.map((point, index) => {
+    // On Destination maps the positions are assigned by the already-ranked
+    // "Куда поехать дальше" list. Larger zIndex and later paint order win.
+    // № 7 (994) must cover № 8 (993), never the reverse. There are at most
+    // ten recommendations, so these distinct values remain below № 1 (1000).
+    const position = Number.isInteger(point.position) && point.position > 1
+      ? point.position : index + 2;
+    const zIndex = point.isPrimary || point === departure
       ? MAP_MARKER_Z_INDEX.start
-      : point === arrival
-        ? MAP_MARKER_Z_INDEX.finish
-        : MAP_MARKER_Z_INDEX.normal,
-  })).sort((a, b) => a.zIndex - b.zIndex || a.index - b.index)
+      : primary
+        ? MAP_MARKER_Z_INDEX.start - position + 1
+        : point === arrival
+          ? MAP_MARKER_Z_INDEX.finish
+          : MAP_MARKER_Z_INDEX.normal;
+    return {point, index, zIndex};
+  }).sort((a, b) => a.zIndex - b.zIndex || a.index - b.index)
     .map(({point, zIndex}) => ({point, zIndex}));
 }

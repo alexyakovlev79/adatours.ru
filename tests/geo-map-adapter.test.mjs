@@ -152,7 +152,8 @@ test('Yandex and Google raise the featured point and color secondary markers',as
     assert.equal(markers.length,3);
     assert.equal(markers.at(-1).element.id,'rio');
     assert.equal(markers.at(-1).props.zIndex,1000);
-    assert.ok(markers.slice(0,2).every(m=>m.props.zIndex===100));
+    assert.deepEqual(markers.map(m=>m.element.id),['lima','iguacu','rio']);
+    assert.deepEqual(markers.map(m=>m.props.zIndex),[998,999,1000]);
     assert.equal(map.children.filter(x=>x instanceof Listener).length,0);
   }finally{globalThis.window=previous;}
   const created=[];
@@ -168,7 +169,9 @@ test('Yandex and Google raise the featured point and color secondary markers',as
     assert.equal(created.length,3);
     assert.equal(created.at(-1).title,'Рио-де-Жанейро');
     assert.equal(created.at(-1).zIndex,1000);
-    assert.ok(created.slice(0,2).every(m=>m.zIndex===100 && m.icon.fillColor==='#B8D5E2'));
+    assert.deepEqual(created.map(m=>m.title),['Лима','Фоз-ду-Игуасу','Рио-де-Жанейро']);
+    assert.deepEqual(created.map(m=>m.zIndex),[998,999,1000]);
+    assert.ok(created.slice(0,2).every(m=>m.icon.fillColor==='#B8D5E2'));
     assert.equal(created.at(-1).icon.fillColor,'#F2CC67');
   }finally{globalThis.window=previous;}
 });
@@ -203,12 +206,12 @@ test('returning to departure leaves marker one on top, no conflicting finish',()
   assert.ok(markers.slice(0,-1).every(x=>x.zIndex===100));
 });
 
-test('destination neighborhood still uses only featured-place priority',()=>{
+test('destination neighbors layer in descending recommendation order',()=>{
   const data={...sample,route:[],points:sample.points.map((p,i)=>({
     ...p,isPrimary:i===0,isRelated:i!==0,
   }))};
   const markers=orderedGeoMapMarkers(data);
-  assert.deepEqual(markers.map(x=>x.zIndex),[100,100,1000]);
+  assert.deepEqual(markers.map(x=>x.zIndex),[998,999,1000]);
   assert.equal(markers.at(-1).point.id,'rio');
 });
 
@@ -216,4 +219,64 @@ test('one-point tour marker stays highest; missing routes remain benign',()=>{
   const one={points:[sample.points[0]],route:[sample.points[0].coordinates]};
   assert.deepEqual(orderedGeoMapMarkers(one).map(x=>x.zIndex),[1000]);
   assert.deepEqual(orderedGeoMapMarkers({points:[],route:[]}),[]);
+});
+
+
+test('on a Destination map every earlier number covers every later number',()=>{
+  // Up to ten co-located recommendations, independently of coordinates.
+  const points=Array.from({length:11},(_,i)=>({
+    id:'place-'+(i+1),position:i+1,coordinates:[-75.5,4.6],
+    isPrimary:i===0,isRelated:i>0,
+  }));
+  const markers=orderedGeoMapMarkers({points,route:[]});
+  assert.deepEqual(markers.map(x=>x.point.position),
+    [11,10,9,8,7,6,5,4,3,2,1]);
+  assert.deepEqual(markers.map(x=>x.zIndex),
+    [990,991,992,993,994,995,996,997,998,999,1000]);
+  const zByPosition=new Map(markers.map(x=>[x.point.position,x.zIndex]));
+  assert.ok(zByPosition.get(7)>zByPosition.get(8));
+  assert.ok(zByPosition.get(1)>zByPosition.get(2));
+});
+
+test('Yandex and Google honor the earlier-number-above-later rule on coincident pins',async()=>{
+  const points=Array.from({length:8},(_,i)=>({
+    id:'place-'+(i+1),name:'Место '+(i+1),position:i+1,
+    coordinates:[-75.5,4.6],
+    isPrimary:i===0,isRelated:i>0,
+  }));
+  const data={...sample,points,route:[],center:points[0].coordinates};
+  const oldWindow=globalThis.window;
+  class YMap{constructor(){this.children=[];}addChild(child){this.children.push(child);}}
+  class Layer{constructor(props={}){this.props=props;}}
+  class YMarker{constructor(props,element){this.props=props;this.element=element;}}
+  class Listener{constructor(props){this.props=props;}}
+  globalThis.window={ymaps3:{
+    ready:Promise.resolve(),YMap,YMapDefaultSchemeLayer:Layer,
+    YMapDefaultFeaturesLayer:Layer,YMapMarker:YMarker,YMapListener:Listener,
+  }};
+  try{
+    const map=await renderYandexMap({clientWidth:400,clientHeight:445},data,
+      'TEST',()=>{},async()=>{},p=>({id:p.id}));
+    const markers=map.children.filter(x=>x instanceof YMarker);
+    assert.deepEqual(markers.map(x=>x.element.id),
+      ['place-8','place-7','place-6','place-5','place-4','place-3','place-2','place-1']);
+    assert.deepEqual(markers.map(x=>x.props.zIndex),
+      [993,994,995,996,997,998,999,1000]);
+  }finally{globalThis.window=oldWindow;}
+
+  const created=[];
+  class GMap{}
+  class GMarker{constructor(props){created.push(props);}addListener(){}}
+  globalThis.window={google:{maps:{
+    importLibrary:async name=>name==='maps'?{Map:GMap}:{AdvancedMarkerElement:null},
+    Marker:GMarker,SymbolPath:{CIRCLE:0},
+  }}};
+  try{
+    await renderGoogleMap({clientWidth:400,clientHeight:445},data,'TEST','',
+      ()=>{},async()=>{},()=>({}),'en');
+    assert.deepEqual(created.map(x=>x.title),
+      ['Место 8','Место 7','Место 6','Место 5','Место 4','Место 3','Место 2','Место 1']);
+    assert.deepEqual(created.map(x=>x.zIndex),
+      [993,994,995,996,997,998,999,1000]);
+  }finally{globalThis.window=oldWindow;}
 });

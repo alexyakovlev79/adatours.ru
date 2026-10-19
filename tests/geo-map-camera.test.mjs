@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {fitGeoCamera,geoToWorld,DEFAULT_INITIAL_ZOOM_BOOST} from '../src/lib/geo-map-camera.mjs';
+import {fitGeoCamera,geoToWorld,MAP_MARKER_DIAMETER,MAP_PRIMARY_MARKER_DIAMETER} from '../src/lib/geo-map-camera.mjs';
 import {routeDirectionArrows,routeLegs} from '../src/lib/geo-map-direction.mjs';
 
 // Actual coordinates of confirmed destinations on Ada Tours' Brazil/Argentina/Peru pilot.
@@ -27,37 +27,66 @@ function screenPoint(coordinate,camera,width,height) {
   return {x:width/2+dx*scale,y:height/2+(y-cy)*scale};
 }
 
-for(const [width,height] of [[1030,480],[360,445],[1200,700]]) {
-  test('all South America pilot points fit in '+width+'x'+height,()=>{
-    const camera=fitGeoCamera(itinerary,{width,height,zoomBoost:0});
+
+function visibleCircleGaps(coordinates, camera, width, height, primaryId = -1) {
+  const markers=coordinates.map((coordinate,i)=>{
+    const {x,y}=screenPoint(coordinate,camera,width,height);
+    const radius=(i===primaryId?MAP_PRIMARY_MARKER_DIAMETER:MAP_MARKER_DIAMETER)/2;
+    return {left:x-radius,right:width-x-radius,top:y-radius,bottom:height-y-radius};
+  });
+  return {
+    left:Math.min(...markers.map(p=>p.left)),
+    right:Math.min(...markers.map(p=>p.right)),
+    top:Math.min(...markers.map(p=>p.top)),
+    bottom:Math.min(...markers.map(p=>p.bottom)),
+  };
+}
+
+for (const [width,height] of [[1030,480],[360,445],[390,445],[320,445],[1200,700]]) {
+  test('complete South America itinerary fits marker edges tightly at '+width+'x'+height,()=>{
+    const camera=fitGeoCamera(itinerary,{width,height});
     assert.ok(camera);
-    assert.ok(camera.zoom>2 && camera.zoom<6);
-    for(const place of itinerary) {
-      const pixel=screenPoint(place,camera,width,height);
-      assert.ok(pixel.x>=55&&pixel.x<=width-55,JSON.stringify(pixel));
-      assert.ok(pixel.y>=75&&pixel.y<=height-75,JSON.stringify(pixel));
-    }
+    const gaps=visibleCircleGaps(itinerary,camera,width,height);
+    // Every 38px circle must be completely within the map canvas.
+    for(const gap of Object.values(gaps))
+      assert.ok(gap>=-0.01,'Clipped marker at '+width+'x'+height+': '+JSON.stringify(gaps));
+    const tightX=gaps.left<=MAP_MARKER_DIAMETER+0.01 && gaps.right<=MAP_MARKER_DIAMETER+0.01;
+    const tightY=gaps.top<=MAP_MARKER_DIAMETER+0.01 && gaps.bottom<=MAP_MARKER_DIAMETER+0.01;
+    assert.ok(tightX||tightY,'No limiting axis at '+width+'x'+height+': '+JSON.stringify(gaps));
+    assert.ok(camera.zoom>2&&camera.zoom<6);
   });
 }
 
-test('single-place maps use the same closer starting view without moving the center',()=>{
+test('the wide map is height-constrained; mobile is width-constrained',()=>{
+  const desktop=fitGeoCamera(itinerary,{width:1030,height:480});
+  const mobile=fitGeoCamera(itinerary,{width:360,height:445});
+  const deskGaps=visibleCircleGaps(itinerary,desktop,1030,480);
+  const mobileGaps=visibleCircleGaps(itinerary,mobile,360,445);
+  assert.ok(deskGaps.top<=MAP_MARKER_DIAMETER && deskGaps.bottom<=MAP_MARKER_DIAMETER);
+  assert.ok(mobileGaps.left<=MAP_MARKER_DIAMETER && mobileGaps.right<=MAP_MARKER_DIAMETER);
+  assert.notEqual(desktop.zoom,mobile.zoom);
+});
+
+test('featured 44px marker stays fully on-screen with no more than one circle of limiting gap',()=>{
+  const places=[[-75.5,4.6],[-75.48,4.63],[-75.57,4.64],[-74.5,5.2]];
+  for(const [width,height] of [[1030,480],[360,445]]) {
+    const points=places.map((coordinates,i)=>({coordinates,isPrimary:i===0}));
+    const camera=fitGeoCamera(places,{width,height,points});
+    const gaps=visibleCircleGaps(places,camera,width,height,0);
+    assert.ok(Object.values(gaps).every(gap=>gap>=-0.01));
+    assert.ok(
+      (gaps.left<=MAP_MARKER_DIAMETER && gaps.right<=MAP_MARKER_DIAMETER) ||
+      (gaps.top<=MAP_MARKER_DIAMETER && gaps.bottom<=MAP_MARKER_DIAMETER)
+    );
+  }
+});
+
+test('one-point maps stay centered at their configured type zoom',()=>{
   assert.deepEqual(fitGeoCamera([itinerary[0]],{width:360,height:445,pointZoom:10}),{
-    center:itinerary[0],zoom:10+DEFAULT_INITIAL_ZOOM_BOOST,
+    center:itinerary[0],zoom:10,
   });
   assert.equal(fitGeoCamera([itinerary[0]],{pointZoom:17}).zoom,17);
 });
-
-for (const [width,height] of [[1030,480],[360,445],[1200,700]]) {
-  test('default zoom matches two mouse-wheel increments at '+width+'x'+height,()=>{
-    const fit=fitGeoCamera(itinerary,{width,height,zoomBoost:0});
-    const initial=fitGeoCamera(itinerary,{width,height});
-    assert.deepEqual(initial.center,fit.center);
-    assert.ok(Math.abs(initial.zoom-fit.zoom-DEFAULT_INITIAL_ZOOM_BOOST)<1e-10);
-    const scale=Math.pow(2,initial.zoom-fit.zoom);
-    assert.ok(scale>1.50&&scale<1.53,'Expected approximately 1.52x screenshot magnification');
-  });
-}
-
 
 test('180th meridian uses the short longitude arc',()=>{
   const camera=fitGeoCamera([[179,-15],[-179,-16]],{width:800,height:480});

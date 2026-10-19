@@ -113,11 +113,14 @@ export async function renderYandexMap(
   const coordinates=data.route?.length?data.route:data.points.map(p=>p.coordinates);
   const camera=fitGeoCamera(coordinates,{
     width:canvas.clientWidth,height:canvas.clientHeight,pointZoom:data.zoom,
+    points:data.points,
   });
   const location=camera||{center:data.center,zoom:data.zoom};
   let map;
   try{
-    map=new YMap(canvas,{location,theme:'light'});
+    // Prevent raster/vector auto rounding from making a fitted fractional
+    // zoom jump to the next whole level and clipping extreme pins.
+    map=new YMap(canvas,{location,theme:'light',zoomRounding:'smooth'});
     map.addChild(new YMapDefaultSchemeLayer());
     map.addChild(new YMapDefaultFeaturesLayer({zIndex:1800}));
   }catch(error){throw failure('YANDEX_CREATE',error);}

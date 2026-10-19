@@ -6,10 +6,12 @@ const MAX_MERCATOR_LAT = 85.05112878;
 const TILE_SIZE = 256;
 const radians = Math.PI / 180;
 
-// Matches approximately two mouse-wheel zoom increments in the Yandex pilot
-// (~1.52x apparent scale), without mistaking them for two whole zoom levels.
-// Applied by both Yandex and Google and at every responsive viewport size.
-export const DEFAULT_INITIAL_ZOOM_BOOST = 0.6;
+// The same pin dimensions are used by GeoRouteMap.astro on all viewports.
+export const MAP_MARKER_DIAMETER = 38;
+export const MAP_PRIMARY_MARKER_DIAMETER = 44;
+// Leave slightly less than one marker diameter between the closest pin edge
+// and the restricting viewport border (room for floating-point rounding).
+const EDGE_GAP_RATIO = 0.9;
 
 const clampedLat = lat => Math.max(-MAX_MERCATOR_LAT, Math.min(MAX_MERCATOR_LAT, lat));
 const isCoordinate = c => Array.isArray(c) && c.length === 2 &&
@@ -48,8 +50,8 @@ function unwrapWorldLongitudes(xs) {
 }
 
 export function fitGeoCamera(route, {
-  width, height, pointZoom = 9, minZoom = 1.2, maxZoom = 17,
-  zoomBoost = DEFAULT_INITIAL_ZOOM_BOOST,
+  width, height, pointZoom = 9, minZoom = 0, maxZoom = 17,
+  points = [],
 } = {}) {
   const coordinates = (route || []).filter(isCoordinate);
   if (!coordinates.length) return null;
@@ -57,7 +59,9 @@ export function fitGeoCamera(route, {
   const viewportHeight = Number.isFinite(height) && height > 0 ? height : 480;
   if (coordinates.length === 1 || coordinates.every(c =>
     Math.abs(c[0] - coordinates[0][0]) < 1e-9 && Math.abs(c[1] - coordinates[0][1]) < 1e-9)) {
-    return {center:coordinates[0], zoom:Math.min(maxZoom, Math.max(minZoom, pointZoom + zoomBoost))};
+    // A single pin has no geographic extent to fit; center it at its
+    // destination-type zoom without applying an arbitrary zoom offset.
+    return {center:coordinates[0], zoom:Math.min(maxZoom, Math.max(minZoom, pointZoom))};
   }
 
   const world = coordinates.map(geoToWorld);
@@ -67,18 +71,21 @@ export function fitGeoCamera(route, {
   const minY = Math.min(...ys), maxY = Math.max(...ys);
   const center = worldToGeo([(minX + maxX)/2, (minY + maxY)/2]);
 
-  // In addition to the 38px markers, keep an editorial breathing space at every edge.
-  const horizontalInset = viewportWidth < 650 ? 64 : 90;
-  const verticalInset = viewportHeight < 500 ? 82 : 94;
-  const availableWidth = Math.max(100, viewportWidth - 2*horizontalInset);
-  const availableHeight = Math.max(110, viewportHeight - 2*verticalInset);
+  // Fit actual circles, not just their point coordinates. The largest marker
+  // radius protects the featured destination (44px); every other pin is 38px.
+  // For a 38px boundary pin the resulting gap is <= its 38px diameter.
+  // The *restricting axis* (height on wide maps, width on narrow ones) gets
+  // a gap of roughly one circle on BOTH opposite edges.
+  const radius = (points || []).some(p => p?.isPrimary)
+    ? MAP_PRIMARY_MARKER_DIAMETER/2 : MAP_MARKER_DIAMETER/2;
+  const inset = radius + MAP_MARKER_DIAMETER * EDGE_GAP_RATIO;
+  const availableWidth = Math.max(1, viewportWidth - 2*inset);
+  const availableHeight = Math.max(1, viewportHeight - 2*inset);
   const dx = Math.max(1e-9, maxX-minX), dy = Math.max(1e-9, maxY-minY);
   const xZoom = Math.log2(availableWidth / (TILE_SIZE * dx));
   const yZoom = Math.log2(availableHeight / (TILE_SIZE * dy));
-  // First find the safe geographic overview, then apply the user-selected
-  // closer default view. Deliberately closer framing may crop peripheral pins;
-  // the markers, order, pan/zoom and textual point list remain available.
-  const fitZoom = Math.min(xZoom,yZoom)-0.45;
-  const zoom = Math.min(maxZoom, Math.max(minZoom, fitZoom + zoomBoost));
+  // No generic zoom boost or extra arbitrary safety factor: these could
+  // respectively clip pins or leave needlessly large empty margins.
+  const zoom = Math.min(maxZoom, Math.max(minZoom, Math.min(xZoom,yZoom)));
   return {center,zoom};
 }

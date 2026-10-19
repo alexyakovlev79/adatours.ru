@@ -16,10 +16,12 @@ export async function renderGoogleMap(
   const routeCoordinates = data.route?.length ? data.route : data.points.map(p=>p.coordinates);
   const camera = fitGeoCamera(routeCoordinates, {
     width:canvas.clientWidth, height:canvas.clientHeight, pointZoom:data.zoom,
+    points:data.points,
   }) || {center:data.center,zoom:data.zoom};
   const map = new Map(canvas, {
     center: {lat:camera.center[1],lng:camera.center[0]}, zoom:camera.zoom,
     ...(mapId ? {mapId} : {}),
+    isFractionalZoomEnabled: true,
     disableDefaultUI: true, zoomControl: true, gestureHandling: 'greedy',
     clickableIcons: false,
     styles: mapId ? undefined : [{featureType:'poi.business',stylers:[{visibility:'off'}]}],

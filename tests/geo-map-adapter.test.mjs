@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {renderYandexMap} from '../src/scripts/geo-map-yandex.mjs';
 import {renderGoogleMap} from '../src/scripts/geo-map-google.mjs';
-import {fitGeoCamera,DEFAULT_INITIAL_ZOOM_BOOST} from '../src/lib/geo-map-camera.mjs';
+import {fitGeoCamera} from '../src/lib/geo-map-camera.mjs';
 
 const sample = {
   points: [
@@ -38,6 +38,7 @@ test('Yandex uses the correct camera and pins without detached feature lines',as
     assert.equal(map.props.location.zoom,
       fitGeoCamera(sample.route,{width:1030,height:480,pointZoom:sample.zoom}).zoom);
     assert.ok(!('bounds' in map.props.location));
+    assert.equal(map.props.zoomRounding,'smooth');
     assert.equal(map.children.filter(x=>x instanceof Layer).length,2);
     assert.equal(map.children.filter(x=>x instanceof Feature).length,0);
     assert.equal(map.children.filter(x=>x instanceof Marker && x.element.kind==='pin').length,3);
@@ -61,7 +62,7 @@ test('Yandex one-place map has no route or arrows',async()=>{
     const data={...sample,points:[sample.points[0]],route:[sample.route[0]]};
     const map=await renderYandexMap({clientWidth:390,clientHeight:445},data,'TEST',
       ()=>{},async()=>{},()=>({kind:'pin'}),'ru',()=>({kind:'arrow'}));
-    assert.equal(map.props.location.zoom,sample.zoom+DEFAULT_INITIAL_ZOOM_BOOST);
+    assert.equal(map.props.location.zoom,sample.zoom);
     assert.equal(map.children.filter(x=>x instanceof Feature).length,0);
     assert.equal(map.children.filter(x=>x instanceof Marker).length,1);
   }finally {globalThis.window=previous;}
@@ -106,6 +107,7 @@ test('Google uses the same custom camera and directions instead of provider fitB
     await renderGoogleMap({clientWidth:1030,clientHeight:480},sample,'TEST_KEY','',
       ()=>{},async()=>{},()=>({kind:'pin'}),'en');
     assert.ok(mapInstance.props.zoom<sample.zoom);
+    assert.equal(mapInstance.props.isFractionalZoomEnabled,true);
     assert.equal(mapInstance.props.zoom,
       fitGeoCamera(sample.route,{width:1030,height:480,pointZoom:sample.zoom}).zoom);
     assert.equal(created.polylines.length,sample.route.length-1);

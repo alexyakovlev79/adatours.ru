@@ -207,3 +207,31 @@ coordinates, marker styling, overlay behavior or lazy-load gate changes.
 The intentionally closer initial view can clip peripheral stops on long
 routes; pan/zoom and the accessible full list of stops remain available.
 Pass `zoomBoost: 0` to test the unmodified fit-to-all geometry separately.
+
+
+## Marker-edge-based responsive auto-fit — 19.10.2026
+
+Supersedes the temporary `DEFAULT_INITIAL_ZOOM_BOOST=0.6` shortcut. Do **not**
+apply a fixed zoom increment or the former broad 64/90px horizontal and
+82/94px vertical padding. The start camera now uses the real map canvas width
+and height and the *outer edges of its markers* (38px normal, 44px featured).
+It reserves the largest circle radius plus 0.9 of one normal marker diameter
+at each edge. In the limiting dimension, both opposite marker-edge gaps stay
+within a single marker diameter. The other dimension may have more empty
+space when the geography's aspect ratio differs from the viewport: enlarging
+further would clip points. The algorithm runs independently for desktop and
+mobile at their actual responsive pixel dimensions, using the original WGS84
+Mercator bounds and antimeridian handling.
+
+Yandex Maps 3 uses `zoomRounding:'smooth'` and Google Maps explicitly enables
+`isFractionalZoomEnabled:true` so raster defaults do not round the computed
+fractional zoom and cut off border markers. The static source data, ordered
+routes, directional arrows, highlighted destination colors, photo cards,
+and deferred API loading are unchanged. A single location remains centered
+at its type-specific `pointZoom` because it has no bounding extent.
+
+Regression tests project real Brazil/Argentina/Peru itinerary points on
+1030×480 desktop, 360×445/390×445/320×445 mobile and 1200×700 wide
+canvases, checking all circles are visible and that the limiting side(s)
+have no more than one diameter of clearance. Also test a featured 44px
+destination circle and both provider fractional zoom settings.

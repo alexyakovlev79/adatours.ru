@@ -52,7 +52,9 @@ for (const [width,height] of [[1030,480],[360,445],[390,445],[320,445],[1200,700
     for(const gap of Object.values(gaps))
       assert.ok(gap>=-0.01,'Clipped marker at '+width+'x'+height+': '+JSON.stringify(gaps));
     const tightX=gaps.left<=MAP_MARKER_DIAMETER+0.01 && gaps.right<=MAP_MARKER_DIAMETER+0.01;
-    const tightY=gaps.top<=MAP_MARKER_DIAMETER+0.01 && gaps.bottom<=MAP_MARKER_DIAMETER+0.01;
+    // The upward camera offset transfers clearance from top to bottom;
+    // the combined vertical margin still checks the original tight zoom.
+    const tightY=gaps.top+gaps.bottom<=2*MAP_MARKER_DIAMETER+0.02;
     assert.ok(tightX||tightY,'No limiting axis at '+width+'x'+height+': '+JSON.stringify(gaps));
     assert.ok(camera.zoom>2&&camera.zoom<6);
   });
@@ -63,12 +65,12 @@ test('the wide map is height-constrained; mobile is width-constrained',()=>{
   const mobile=fitGeoCamera(itinerary,{width:360,height:445});
   const deskGaps=visibleCircleGaps(itinerary,desktop,1030,480);
   const mobileGaps=visibleCircleGaps(itinerary,mobile,360,445);
-  assert.ok(deskGaps.top<=MAP_MARKER_DIAMETER && deskGaps.bottom<=MAP_MARKER_DIAMETER);
+  assert.ok(deskGaps.top+deskGaps.bottom<=2*MAP_MARKER_DIAMETER+0.02);
   assert.ok(mobileGaps.left<=MAP_MARKER_DIAMETER && mobileGaps.right<=MAP_MARKER_DIAMETER);
   assert.notEqual(desktop.zoom,mobile.zoom);
 });
 
-test('featured 44px marker stays fully on-screen with no more than one circle of limiting gap',()=>{
+test('featured 44px marker stays fully on-screen with tight combined limiting margins',()=>{
   const places=[[-75.5,4.6],[-75.48,4.63],[-75.57,4.64],[-74.5,5.2]];
   for(const [width,height] of [[1030,480],[360,445]]) {
     const points=places.map((coordinates,i)=>({coordinates,isPrimary:i===0}));
@@ -77,7 +79,7 @@ test('featured 44px marker stays fully on-screen with no more than one circle of
     assert.ok(Object.values(gaps).every(gap=>gap>=-0.01));
     assert.ok(
       (gaps.left<=MAP_MARKER_DIAMETER && gaps.right<=MAP_MARKER_DIAMETER) ||
-      (gaps.top<=MAP_MARKER_DIAMETER && gaps.bottom<=MAP_MARKER_DIAMETER)
+      (gaps.top+gaps.bottom<=2*MAP_MARKER_DIAMETER+0.02)
     );
   }
 });

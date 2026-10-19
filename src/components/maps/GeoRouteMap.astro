@@ -40,7 +40,7 @@ const payload = data ? {
     data-geo-map-payload={JSON.stringify(payload)}
     aria-label={title}>
     <div class="geo-map__heading">
-      <p class="geo-map__eyebrow">{entityType === 'excursion' ? 'География экскурсии' : 'География путешествия'}</p>
+      <p class="geo-map__eyebrow">{entityType === 'excursion' ? 'География экскурсии' : entityType === 'destination' ? 'География места' : 'География путешествия'}</p>
       <h2>{title}</h2>
     </div>
     <div class="geo-map__viewport">
@@ -58,11 +58,11 @@ const payload = data ? {
       </article>
     </div>
     <details class="geo-map__legend">
-      <summary>{entityType === 'excursion' ? 'Все точки экскурсии' : 'Все точки маршрута'} ({payload.points.length})</summary>
+      <summary>{entityType === 'excursion' ? 'Все точки экскурсии' : entityType === 'destination' ? 'Места на карте' : 'Все точки маршрута'} ({payload.points.length})</summary>
       <ol>
         {payload.points.map((point: any) => (
           <li>
-            <a href={point.href}>{point.name}</a>
+            <a href={point.href} aria-current={point.isPrimary ? 'page' : undefined}>{point.name}</a>
             {point.days?.length > 0 && <small>Дни: {point.days.join(', ')}</small>}
           </li>
         ))}
@@ -90,14 +90,20 @@ const payload = data ? {
   .geo-map__direction { display:block; width:20px; height:18px; pointer-events:none; transform:translate(-50%, -50%) rotate(var(--direction-angle, 0deg)); transform-origin:center; filter:drop-shadow(0 1px 1px #1A1A1A33); }
   .geo-map__direction svg { display:block; width:100%; height:100%; overflow:visible; }
   .geo-map__pin { width:38px; height:38px; background:#F2CC67; color:#1A1A1A; border:2px solid #1A1A1A; border-radius:50%; font-weight:700; font-size:15px; cursor:pointer; box-shadow:0 3px 12px #0003; }
-  .geo-map__pin:hover, .geo-map__pin:focus-visible, .geo-map__pin[aria-pressed=true] { background:#E6BA43; transform:scale(1.08); outline:2px solid #FFFCF8; outline-offset:2px; }
-  .geo-map__card { position:absolute; top:16px; left:20px; z-index:10; width:min(365px,calc(100% - 40px)); background:#FFFCF8; color:#1A1A1A; box-shadow:0 10px 40px #0003; max-height:calc(100% - 84px); overflow:auto; }
+  .geo-map__pin--primary { position:relative; z-index:4; width:44px; height:44px; border-width:3px; background:#F2CC67; box-shadow:0 3px 14px #0006; }
+  .geo-map__pin--related { background:#B8D5E2; }
+  .geo-map__pin:hover, .geo-map__pin:focus-visible, .geo-map__pin[aria-pressed=true] { filter:brightness(.96); transform:scale(1.08); outline:2px solid #FFFCF8; outline-offset:2px; }
+  .geo-map__card { position:absolute; top:16px; left:20px; z-index:10; width:min(365px,calc(100% - 40px)); background:#FFFCF8; color:#1A1A1A; box-shadow:0 10px 40px #0003; max-height:calc(100% - 52px); overflow:auto; }
+  /* Fill available vertical map space, stopping above Yandex attribution. */
+  .geo-map__card.geo-map__card--has-photo { height:calc(100% - 52px); max-height:none; display:flex; flex-direction:column; overflow:hidden; }
+  .geo-map__card.geo-map__card--has-photo img { flex:1 1 0; width:100%; height:auto; min-height:0; object-fit:cover; }
+  .geo-map__card.geo-map__card--has-photo .geo-map__card-copy { flex:0 0 auto; }
   .geo-map__card[hidden] { display:none; }
   .geo-map__card img { width:100%; height:220px; object-fit:cover; }
   .geo-map__card img[hidden] { display:none; }
   .geo-map__card-copy { padding:20px 23px 22px; }
   .geo-map__card-copy h3 { font-size:22px; line-height:1.16; margin:0 0 10px; }
-  .geo-map__card-copy p { line-height:1.5; font-size:15px; margin:0 0 12px; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+  .geo-map__card-copy p { line-height:1.5; font-size:15px; margin:0 0 12px; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; }
   .geo-map__card-copy a { color:#795C19; font-weight:600; text-decoration:underline; }
   .geo-map__card-close { position:absolute; top:7px; right:7px; width:34px; height:34px; font-size:26px; border:0; cursor:pointer; background:#FFFCF8; color:#1A1A1A; }
   .geo-map__legend { margin:14px 0 0; }
@@ -109,10 +115,11 @@ const payload = data ? {
   @media (max-width:720px) {
     .geo-map { margin-top:3rem; margin-bottom:3rem; }
     .geo-map__viewport { height:445px; min-height:0; }
-    .geo-map__card { left:10px; top:12px; width:calc(100% - 20px); max-height:calc(100% - 72px); }
+    .geo-map__card { left:10px; top:12px; width:calc(100% - 20px); max-height:calc(100% - 52px); }
+    .geo-map__card.geo-map__card--has-photo { height:calc(100% - 52px); }
     .geo-map__card img { height:200px; }
     .geo-map__card-copy { padding:13px 15px 15px; }
-    .geo-map__card-copy p { -webkit-line-clamp:2; }
+    .geo-map__card-copy p { -webkit-line-clamp:3; }
     .geo-map__legend ol { columns:1; }
   }
 </style>

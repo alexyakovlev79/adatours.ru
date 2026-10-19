@@ -109,3 +109,53 @@ test('Google uses the same custom camera and directions instead of provider fitB
     assert.ok(created.markers.length>sample.points.length);
   }finally {globalThis.window=previous;}
 });
+
+
+// An overlapping featured destination must stay above all its recommendations.
+test('Yandex and Google raise the featured point and color secondary markers',async()=>{
+  const points=[
+    {...sample.points[0],isPrimary:true},
+    {...sample.points[1],isRelated:true},
+    {...sample.points[2],isRelated:true},
+  ];
+  const data={...sample,points,route:[]};
+  const previous=globalThis.window;
+  const classes=[];
+  class YMap {
+    constructor(_root,props){this.props=props;this.children=[];}
+    addChild(c){this.children.push(c);}
+  }
+  class Layer{constructor(props={}){this.props=props;}}
+  class Marker{constructor(props,element){this.props=props;this.element=element;}}
+  class Listener{constructor(props){this.props=props;}}
+  globalThis.window={ymaps3:{
+    ready:Promise.resolve(),YMap,YMapDefaultSchemeLayer:Layer,
+    YMapDefaultFeaturesLayer:Layer,YMapMarker:Marker,YMapListener:Listener,
+  }};
+  try{
+    const map=await renderYandexMap({clientWidth:450,clientHeight:445},data,'KEY',
+      ()=>{},async()=>{},p=>({id:p.id}));
+    const markers=map.children.filter(x=>x instanceof Marker);
+    assert.equal(markers.length,3);
+    assert.equal(markers.at(-1).element.id,'rio');
+    assert.equal(markers.at(-1).props.zIndex,1000);
+    assert.ok(markers.slice(0,2).every(m=>m.props.zIndex===100));
+    assert.equal(map.children.filter(x=>x instanceof Listener).length,0);
+  }finally{globalThis.window=previous;}
+  const created=[];
+  class GMap{constructor(){}}
+  class GMarker{constructor(props){created.push(props);}addListener(){}}
+  globalThis.window={google:{maps:{
+    importLibrary:async()=>({Map:GMap,AdvancedMarkerElement:null}),
+    Marker:GMarker,SymbolPath:{CIRCLE:0},
+  }}};
+  try{
+    await renderGoogleMap({clientWidth:450,clientHeight:445},data,'KEY','',
+      ()=>{},async()=>{},()=>({}),'en');
+    assert.equal(created.length,3);
+    assert.equal(created.at(-1).title,'Рио-де-Жанейро');
+    assert.equal(created.at(-1).zIndex,1000);
+    assert.ok(created.slice(0,2).every(m=>m.zIndex===100 && m.icon.fillColor==='#B8D5E2'));
+    assert.equal(created.at(-1).icon.fillColor,'#F2CC67');
+  }finally{globalThis.window=previous;}
+});

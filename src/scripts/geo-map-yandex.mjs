@@ -124,11 +124,13 @@ export async function renderYandexMap(
 
   const anchors=new Map();
   try{
-    for(const point of data.points){
+    // Secondary points first, the primary destination last and above all pins.
+    const ordered=[...data.points].sort((a,b)=>Number(!!a.isPrimary)-Number(!!b.isPrimary));
+    for(const point of ordered){
       const marker=createPin(point,onSelect);
       anchors.set(coordinateKey(point.coordinates),marker);
       map.addChild(new YMapMarker({
-        coordinates:point.coordinates,zIndex:100,
+        coordinates:point.coordinates,zIndex:point.isPrimary?1000:100,
       },marker));
     }
     attachRouteOverlay(canvas,map,data.route,anchors,YMapListener);

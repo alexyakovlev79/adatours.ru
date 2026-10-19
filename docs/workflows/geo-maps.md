@@ -164,3 +164,30 @@ historical and superseded by this section.
   scrolling, and proximity within 300px of the viewport. Initial render alone
   cannot trigger network loading, including when the map sits above the fold.
   Without IntersectionObserver, proximity is calculated on scroll/resize.
+
+
+## Catalogue-wide GEO map activation — 19.10.2026
+
+The three-page allowlist in the historic pilot is no longer a runtime gate.
+One shared `GeoRouteMap.astro` is now invoked in each common Tour, Excursion,
+and Destination layout. There are no per-product scripts, duplicated map
+implementations or generated binary assets. Only active RU entities with at
+least one verified published Destination GEO coordinate render the component.
+The existing first-screen/load/scroll/proximity lazy-load gate still prevents
+initial Google/Yandex API and tile requests.
+
+Tour and excursion maps preserve their real ordered visits and schematic
+arrows. A Destination map sits immediately before the existing "Куда поехать
+дальше" section. It receives *exactly* the already calculated and capped
+recommendation IDs, excludes neighbors without valid published coordinate
+passports, and requires the current destination itself to have verified
+coordinates. It shows no route lines, because recommendations are alternatives.
+The main destination gets a gold, larger high-z-index marker drawn last in
+both Yandex and Google Maps; neighbors have blue markers. At equal/nearby
+locations the current place remains on top. All links/cards share the same
+canonical Destination identity and text.
+
+On both desktop and mobile, photo cards fill their map's available vertical
+space almost to the provider attribution, with the photo flexing taller and
+summaries allowing four/three lines respectively. The provider controls remain
+uncovered. A photo-less card remains content-sized rather than a tall blank box.

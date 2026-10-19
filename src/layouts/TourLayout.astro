@@ -12,7 +12,6 @@ import TripStats from '../components/tour/TripStats.astro';
 import HighlightsEditorial from '../components/tour/HighlightsEditorial.astro';
 import Itinerary from '../components/tour/Itinerary.astro';
 import GeoRouteMap from '../components/maps/GeoRouteMap.astro';
-import {isGeoMapPilot} from '../lib/geo-map-pilots.mjs';
 import TourPricing from '../components/tour/TourPricing.astro';
 import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
@@ -25,9 +24,8 @@ import { mainTourCountryIds, mainTourDestinationIds, optionalTourDestinationIds 
 
 const { entry } = Astro.props;
 const d = entry.data;
-const geoMapData = isGeoMapPilot(d.id) && d.status !== 'archived'
-  ? await (await import('../lib/geo-map-astro')).buildPageGeoMap('tour', d)
-  : null;
+// One shared map component for every active tour with verified published GEO points.
+const geoMapData = await (await import('../lib/geo-map-astro')).buildPageGeoMap('tour', d);
 const archived = isArchivedEntity(d);
 const vip = !archived && (await getVipTourPaths()).has(tourPath(d));
 const roundedPrice = typeof d.priceFrom === 'number' ? Math.round(d.priceFrom) : null;

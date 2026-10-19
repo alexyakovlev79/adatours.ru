@@ -193,3 +193,29 @@ export function finalizeGeoMap(visits, index) {
   })[first.type] || 9;
   return {points, route, bounds, zoom, center: first.coordinates, geojson};
 }
+
+
+// A destination's "where next" map shows choices, not a visit sequence.
+// The same relatedIds array used by the page's recommendation block is reused
+// here, and only published, verified GEO destination coordinates are retained.
+export function destinationNeighborhoodMap(primaryId, relatedIds, index) {
+  if (!index.entries.has(primaryId)) return null;
+  const ids = [primaryId, ...new Set((relatedIds || []).filter(id =>
+    id !== primaryId && index.entries.has(id)))];
+  const model = finalizeGeoMap(ids.map(id => ({id, days:[]})), index);
+  if (!model) return null;
+  return {
+    ...model,
+    points: model.points.map(p => ({
+      ...p, isPrimary:p.id === primaryId, isRelated:p.id !== primaryId,
+    })),
+    route: [],
+    geojson: {
+      type:'FeatureCollection',
+      features:model.geojson.features.filter(f => f.properties.kind === 'point')
+        .map(f => ({
+          ...f, properties:{...f.properties, isPrimary:f.properties.id === primaryId},
+        })),
+    },
+  };
+}

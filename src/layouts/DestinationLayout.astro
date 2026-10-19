@@ -13,7 +13,6 @@ import DestinationBand from '../components/editorial/DestinationBand.astro';
 import CatalogMoreLink from '../components/editorial/CatalogMoreLink.astro';
 import MediaGallery from '../components/editorial/MediaGallery.astro';
 import GeoRouteMap from '../components/maps/GeoRouteMap.astro';
-import {isGeoMapPilot} from '../lib/geo-map-pilots.mjs';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import { withBase } from '../lib/paths';
 import {
@@ -28,9 +27,6 @@ import { tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-
 
 const { entry } = Astro.props;
 const d = entry.data;
-const geoMapData = isGeoMapPilot(d.id)
-  ? await (await import('../lib/geo-map-astro')).buildPageGeoMap('destination', d)
-  : null;
 // Keep the complete sorted collections for relations and counts; cap only the previews.
 const previewLimits = { tours: 10, optionalTours: 5, excursions: 5 } as const;
 const [allTourEntries, countryEntries, excursionEntries, destinationEntries] = await Promise.all([
@@ -87,6 +83,11 @@ const relatedDestinations = destinationEntries
     a.data.name.localeCompare(b.data.name, 'ru')
   )
   .slice(0, 10);
+// Compute map and the recommendation block from the same selection/order.
+// Unpublished or unverified neighbors are filtered by the shared GEO index.
+const geoMapData = await (await import('../lib/geo-map-astro')).buildPageGeoMap(
+  'destination', d, relatedDestinations.map(item => item.data.id),
+);
 const featureBandImages = new Set(d.featureBands.map((band) => band.image));
 const visibleGallery = d.gallery.filter(
   (item) => item.src !== d.hero?.src && !featureBandImages.has(item.src)
@@ -185,8 +186,6 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     </section>
   )}
 
-  {geoMapData && <GeoRouteMap data={geoMapData} title="Место на карте" locale="ru" />}
-
   {d.featureBands.map((band, index) => (
     <StoryPair
       eyebrow={band.eyebrow}
@@ -279,6 +278,10 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
       )}
     </>
   )}
+
+  {geoMapData && <GeoRouteMap data={geoMapData}
+    title={relatedDestinations.length > 0 ? 'Место и куда поехать дальше' : 'Место на карте'}
+    locale="ru" entityType="destination" />}
 
   {relatedDestinations.length > 0 && (
     <>

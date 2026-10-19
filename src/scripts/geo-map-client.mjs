@@ -59,6 +59,8 @@ export function createPin(point, onSelect) {
   const button = document.createElement('button');
   button.type = 'button';
   button.className = 'geo-map__pin';
+  if (point.isPrimary) button.classList.add('geo-map__pin--primary');
+  else if (point.isRelated) button.classList.add('geo-map__pin--related');
   button.textContent = String(point.position);
   button.setAttribute('aria-label', point.name + ': показать описание');
   button.addEventListener('click', e => {
@@ -87,6 +89,7 @@ function openCard(root, point) {
     photo.hidden = true;
   }
   link.href = point.href;
+  card.classList.toggle('geo-map__card--has-photo', Boolean(point.image));
   card.hidden = false;
   for (const marker of root.querySelectorAll('.geo-map__pin'))
     marker.setAttribute('aria-pressed', String(marker.getAttribute('aria-label')?.startsWith(point.name + ':')));

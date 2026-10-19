@@ -60,17 +60,21 @@ export async function renderGoogleMap(
     }
   }
 
-  for (const point of data.points) {
+  // Always place the featured destination above its nearby recommendations.
+  const ordered = [...data.points].sort((a,b)=>Number(!!a.isPrimary)-Number(!!b.isPrimary));
+  for (const point of ordered) {
     const position = {lat:point.coordinates[1],lng:point.coordinates[0]};
+    const zIndex = point.isPrimary ? 1000 : 100;
     if (AdvancedMarkerElement) {
       const pin = createPin(point, onSelect);
-      new AdvancedMarkerElement({map, position, content:pin, title:point.name, zIndex:100});
+      new AdvancedMarkerElement({map, position, content:pin, title:point.name, zIndex});
     } else {
       const marker = new google.maps.Marker({
-        map, position, title:point.name, zIndex:100,
+        map, position, title:point.name, zIndex,
         label: {text:String(point.position),color:'#1A1A1A',fontWeight:'700'},
-        icon: {path:google.maps.SymbolPath.CIRCLE,scale:18,
-          fillColor:'#F2CC67',fillOpacity:1,strokeColor:'#1A1A1A',strokeWeight:1.5},
+        icon: {path:google.maps.SymbolPath.CIRCLE,scale:point.isPrimary?21:18,
+          fillColor:point.isRelated?'#B8D5E2':'#F2CC67',fillOpacity:1,
+          strokeColor:'#1A1A1A',strokeWeight:point.isPrimary?2.5:1.5},
       });
       marker.addListener('click', () => onSelect(point));
     }

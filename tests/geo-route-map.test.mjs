@@ -77,3 +77,19 @@ test('single point has no route line and retains destination URL', () => {
   assert.equal(map.points[0].href,'/br/place/rio/');
   assert.equal(map.zoom,10);
 });
+
+
+// Recommendations share the destination page's sorted IDs, not an invented route.
+import {destinationNeighborhoodMap} from '../src/lib/geo-route-data.mjs';
+test('destination neighborhood maps the current place plus only eligible recommendations', () => {
+  const model=destinationNeighborhoodMap('cocora',
+    ['salento','rio','weak','inactive','salento','cocora'], index);
+  assert.deepEqual(model.points.map(p => p.id), ['cocora','salento','rio']);
+  assert.deepEqual(model.points.map(p => p.isPrimary), [true,false,false]);
+  assert.deepEqual(model.points.map(p => p.isRelated), [false,true,true]);
+  assert.deepEqual(model.route, []);
+  assert.ok(model.geojson.features.every(f => f.properties.kind === 'point'));
+  assert.equal(model.geojson.features.filter(f => f.properties.isPrimary).length, 1);
+  assert.equal(model.bounds.west, -75.57);
+  assert.equal(destinationNeighborhoodMap('weak',['rio'],index),null);
+});

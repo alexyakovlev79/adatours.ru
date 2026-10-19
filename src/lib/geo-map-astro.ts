@@ -2,7 +2,7 @@ import {getCollection} from 'astro:content';
 import {isActiveEntity} from './archive.mjs';
 import destinationCatalog from '../data/catalog/destinations.json';
 import {excursionPath} from './routes';
-import {makeGeoIndex, tourVisits, excursionVisits, finalizeGeoMap} from './geo-route-data.mjs';
+import {makeGeoIndex, tourVisits, excursionVisits, finalizeGeoMap, destinationNeighborhoodMap} from './geo-route-data.mjs';
 
 // Only passports already published by the GEO master in main are usable here.
 // Immutable staging results must never be imported into a public map.
@@ -27,12 +27,11 @@ function loadMapSources() {
   return cachedSources;
 }
 
-export async function buildPageGeoMap(kind: 'tour' | 'destination' | 'excursion', data: any) {
+export async function buildPageGeoMap(kind: 'tour' | 'destination' | 'excursion', data: any, relatedDestinationIds: string[] = []) {
   if (data.locale !== 'ru' || !isActiveEntity(data)) return null;
   const {index, excursions} = await loadMapSources();
   if (kind === 'destination') {
-    if (!index.entries.has(data.id)) return null;
-    return finalizeGeoMap([{id:data.id, days:[]}], index);
+    return destinationNeighborhoodMap(data.id, relatedDestinationIds, index);
   }
   const model = finalizeGeoMap(
     kind === 'tour' ? tourVisits(data, index, excursions) : excursionVisits(data, index),

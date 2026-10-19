@@ -206,14 +206,17 @@
     },
     {
       "batch_id": "adatours-com-identity-061",
-      "report": "adatours-com-identity-061.json",
-      "research_status": "complete",
+      "report": "adatours-com-identity-061-correction.json",
+      "research_status": "complete_corrected",
       "checked": 50,
       "confirmed_exact": 0,
       "positions": "3001–3050",
       "queue_sync": "pending",
       "correspondences_table_sync": "pending",
-      "reason": "Detailed 50-record evidence saved in main commit b959b7dd05de05480de2eb6ab723b7d7b7698d0c; monolithic queue/crosswalk GitHub update hit a transport error. Resume only sync; do not repeat research."
+      "reason": "Corrected batch 061 uses frozen indices 3018–3067. Original report overlaps batch 060 on 17 keys and omits 17 required URLs; 50-key corrected standalone result committed f0e1846d0bcc72711aa63a2604c44c7c2bb45837. Big queue/crosswalk upload failed due transport error; do not claim integration or repeat research.",
+      "original_report": "adatours-com-identity-061.json",
+      "corrected_at": "2026-10-19",
+      "preserved_commit": "f0e1846d0bcc72711aa63a2604c44c7c2bb45837"
     }
   ],
   "completed_ahead_of_cursor": [

@@ -158,3 +158,25 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           CATALOG_SOURCE_SHA: ${{ github.sha }}
         run: node scripts/persist-multi-country-registries.mjs
+
+  seo-rewrite-finalize:
+    name: Finalize rewritten SEO after successful Pages deploy
+    needs: [media, build, deploy]
+    if: ${{ needs.media.result == 'success' && needs.build.result == 'success' && needs.deploy.result == 'success' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Verify deployed article SHA and finalize SEO statuses
+        env:
+          PAGES_RUN_SHA: ${{ github.sha }}
+          PAGES_RUN_ID: ${{ github.run_id }}
+          PAGES_CONCLUSION: success
+        run: node scripts/seo-geo-voice-rewrite-finalize.mjs

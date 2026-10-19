@@ -346,10 +346,10 @@
         "notes"
       ],
       "sha256": {
-        "json": "30d560fdcd6dab80154c87555e9a021a9fce413e3d8bcd0fe5589133abc63746",
-        "csv": "5458c5c8878edf0f7f91c79c1e71e0ca7f5f7f6286e652091cc0abc6155ad3f0"
+        "json": "88056bba0005903a6ab336c222f050ad190f868edb7b35ed5a5aadd2f958f68c",
+        "csv": "0c9043b88f3906eef0898cba17253078b52b15da4e0f4cbcc7a7802c2373f10d"
       },
-      "updated_at": "2026-10-19T06:30:46.424Z"
+      "updated_at": "2026-10-19T06:25:26.016Z"
     }
   ],
   "index": {
@@ -616,31 +616,37 @@
       "note": "50 unique new Ecuador catalogue URLs; prior 045/047/048/050 synchronization still pending."
     },
     {
-      "batch_id": "adatours-com-identity-060",
-      "report": "adatours-com-identity-060.json",
-      "positions": "2951–3000",
-      "checked": 50,
+      "batch_id": "adatours-com-identity-064",
+      "checked_at": "2026-10-19T06:25:26.016Z",
+      "processed": 50,
       "confirmed_exact": 0,
-      "checked_at": "2026-10-19T06:26:12.986Z",
-      "research_status": "complete",
-      "correspondences_table_sync": "completed",
-      "queue_sync": "pending_due_connector_size_limit",
-      "contiguous_cursor": 2200
+      "first_key": "https://adatours.ru/mexico/place/merida/tour/",
+      "last_key": "https://adatours.ru/mexico/place/xpuhil/tour/",
+      "report": "adatours-com-identity-064.json",
+      "status": "completed_integrated",
+      "queue_and_correspondences_synced": true,
+      "contiguous_cursor": 2200,
+      "overlap_with_pending_batch_065": 17,
+      "next_new_batch": "adatours-com-identity-065",
+      "note": "Batch 064 has 17 keys also present in earlier saved but unsynchronized 065 research. Avoid duplicate crosswalk rows when reconciling 065; 057–063 remain independent."
     }
   ],
   "adatours_com_identity_latest_out_of_order": {
-    "batch_id": "adatours-com-identity-060",
-    "report": "adatours-com-identity-060.json",
-    "positions": "2951–3000",
-    "checked": 50,
+    "batch_id": "adatours-com-identity-064",
+    "checked_at": "2026-10-19T06:25:26.016Z",
+    "processed": 50,
     "confirmed_exact": 0,
-    "checked_at": "2026-10-19T06:26:12.986Z",
-    "research_status": "complete",
-    "correspondences_table_sync": "completed",
-    "queue_sync": "pending_due_connector_size_limit",
-    "contiguous_cursor": 2200
+    "first_key": "https://adatours.ru/mexico/place/merida/tour/",
+    "last_key": "https://adatours.ru/mexico/place/xpuhil/tour/",
+    "report": "adatours-com-identity-064.json",
+    "status": "completed_integrated",
+    "queue_and_correspondences_synced": true,
+    "contiguous_cursor": 2200,
+    "overlap_with_pending_batch_065": 17,
+    "next_new_batch": "adatours-com-identity-065",
+    "note": "Batch 064 has 17 keys also present in earlier saved but unsynchronized 065 research. Avoid duplicate crosswalk rows when reconciling 065; 057–063 remain independent."
   },
-  "updated_at": "2026-10-19T06:08:46.545Z",
+  "updated_at": "2026-10-19T06:25:26.016Z",
   "adatours_com_identity_batch_057": {
     "batch_id": "adatours-com-identity-057",
     "checked_at": "2026-10-19T06:08:46.545Z",
@@ -655,19 +661,5 @@
     "contiguous_cursor": 2200,
     "next_missing": "adatours-com-identity-058",
     "note": "#056/#059 preserved; exact record-by-record report and crosswalk recorded, giant queue sync pending."
-  },
-  "completed_reports_pending_sync": [
-    {
-      "batch_id": "adatours-com-identity-060",
-      "report": "adatours-com-identity-060.json",
-      "positions": "2951–3000",
-      "checked": 50,
-      "confirmed_exact": 0,
-      "checked_at": "2026-10-19T06:26:12.986Z",
-      "research_status": "complete",
-      "correspondences_table_sync": "completed",
-      "queue_sync": "pending_due_connector_size_limit",
-      "contiguous_cursor": 2200
-    }
-  ]
+  }
 }

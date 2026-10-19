@@ -133,7 +133,7 @@
       "unconfirmed_elsewhere": 36
     }
   ],
-  "updated_at": "2026-10-19T06:28:20.833Z",
+  "updated_at": "2026-10-19T06:25:26.016Z",
   "completed_reports_pending_sync": [
     {
       "batch_id": "adatours-com-identity-011",
@@ -323,19 +323,28 @@
       "correspondences_table_sync": "completed",
       "saved_at": "2026-10-19T06:08:46.545Z",
       "reason": "Oversized queue JSON remaining."
+    },
+    {
+      "batch_id": "adatours-com-identity-064",
+      "report": "adatours-com-identity-064.json",
+      "positions": "3151–3200",
+      "checked": 50,
+      "confirmed": 0,
+      "integrated_queue": true,
+      "integrated_correspondences": true,
+      "saved_at": "2026-10-19T06:25:26.016Z",
+      "overlap_with_pending_batch_065": 17
     }
   ],
   "latest_out_of_order_research": {
-    "batch_id": "adatours-com-identity-065",
+    "batch_id": "adatours-com-identity-064",
+    "positions": "3151–3200",
     "checked": 50,
     "confirmed": 0,
-    "positions": "3201–3250",
-    "next_new_batch": "adatours-com-identity-066",
-    "next_new_first_key": "https://adatours.ru/mexico/xochimilco/",
-    "continuing_cursor": 2200,
-    "sync_pending": true
-  },
-  "frozen_identity_batch_index": "data/external-identity/verification-batches/index.json",
-  "frozen_identity_batch_instruction": "data/external-identity/verification-batches/README.md",
-  "batch_key_rule": "For numbered batches use exact keys in immutable batch file, never mutable array index. Reuse results by exact URL/ID; reconcile overlaps 049/050 and 058/059."
+    "next_nominal_batch": "adatours-com-identity-065",
+    "earliest_unrecorded_batch": "adatours-com-identity-057",
+    "contiguous_cursor": 2200,
+    "sync_pending": false,
+    "overlap_with_pending_065": 17
+  }
 }

@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "purpose": "Fixed identities and URL lists for parallel 50-link batches",
+  "source_queue": "data/external-identity/work-queues-20261012/adatours.com.json",
+  "source_queue_blob_sha": "a109a1fc3a4a4855bcca8c32850d2267158caa90",
+  "source_unique_keys": 3780,
+  "early_batches": "Existing 001–044 reports and queue verification_batches",
+  "previously_checked_before_batches": {
+    "count": 17,
+    "keys": [
+      "country_antarctica",
+      "country_argentina",
+      "country_belize",
+      "country_bolivia",
+      "country_brazil",
+      "destination_argentina_bariloche",
+      "destination_belize_ambergris_kaje",
+      "destination_bolivia_kochabamba",
+      "destination_brazil_angra_dos_reis",
+      "destination_chile_ostrov_pashi",
+      "tour_source_antarktida_programma_na_ves_den",
+      "tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin",
+      "tour_source_luchshee_iz_dvukh_mirov",
+      "tour_source_mechta_bolivii",
+      "tour_source_udivitelnaya_braziliya",
+      "excursion_source_la_pas_siti_tur",
+      "excursion_source_tropicheskie_ostrova_rajskoe_naslazhdenie"
+    ]
+  },
+  "backfill": {
+    "file": "data/external-identity/verification-batches/050-backfill.json",
+    "count": 17
+  },
+  "overlaps": [
+    {
+      "batches": [
+        "049",
+        "050"
+      ],
+      "count": 17,
+      "action": "reuse"
+    },
+    {
+      "batches": [
+        "058",
+        "059"
+      ],
+      "count": 17,
+      "action": "reuse"
+    }
+  ],
+  "batches": [
+    {
+      "id": "adatours-com-identity-045",
+      "file": "data/external-identity/verification-batches/045.json",
+      "positions": {
+        "first": 2201,
+        "last": 2250
+      },
+      "source_positions": {
+        "first": 2218,
+        "last": 2267
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/brazil/place/porto-jofre/tour/",
+      "last_key": "https://adatours.ru/brazil/rio-de-janeiro/pedra-bonita-hike/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-046",
+      "file": "data/external-identity/verification-batches/046.json",
+      "positions": {
+        "first": 2251,
+        "last": 2300
+      },
+      "source_positions": {
+        "first": 2268,
+        "last": 2317
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/brazil/rio-de-janeiro/rio-champions-parade-2027-sambadrome/tour/",
+      "last_key": "https://adatours.ru/chile/casablanca-valley/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-046.json"
+    },
+    {
+      "id": "adatours-com-identity-047",
+      "file": "data/external-identity/verification-batches/047.json",
+      "positions": {
+        "first": 2301,
+        "last": 2350
+      },
+      "source_positions": {
+        "first": 2318,
+        "last": 2367
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/chile/cerro-concepcion/",
+      "last_key": "https://adatours.ru/chile/orongo-village/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-048",
+      "file": "data/external-identity/verification-batches/048.json",
+      "positions": {
+        "first": 2351,
+        "last": 2400
+      },
+      "source_positions": {
+        "first": 2368,
+        "last": 2417
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/chile/paseo-atkinson/",
+      "last_key": "https://adatours.ru/chile/place/grey-glacier/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-049",
+      "file": "data/external-identity/verification-batches/049.json",
+      "positions": {
+        "first": 2401,
+        "last": 2450
+      },
+      "source_positions": {
+        "first": 2418,
+        "last": 2467
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/chile/place/hanga-roa/optional-tours/",
+      "last_key": "https://adatours.ru/chile/place/salto-grande-waterfall/tour/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-049.json"
+    },
+    {
+      "id": "adatours-com-identity-050",
+      "file": "data/external-identity/verification-batches/050.json",
+      "positions": {
+        "first": 2451,
+        "last": 2500
+      },
+      "source_positions": {
+        "first": 2451,
+        "last": 2500
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/chile/place/plaza-sotomayor/tour/",
+      "last_key": "https://adatours.ru/chile/rio-serrano/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-050.json"
+    },
+    {
+      "id": "adatours-com-identity-051",
+      "file": "data/external-identity/verification-batches/051.json",
+      "positions": {
+        "first": 2501,
+        "last": 2550
+      },
+      "source_positions": {
+        "first": 2518,
+        "last": 2567
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/chile/toconao/",
+      "last_key": "https://adatours.ru/colombia/place/el-ocaso-coffee-farm/tour/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-051.json"
+    },
+    {
+      "id": "adatours-com-identity-052",
+      "file": "data/external-identity/verification-batches/052.json",
+      "positions": {
+        "first": 2551,
+        "last": 2600
+      },
+      "source_positions": {
+        "first": 2568,
+        "last": 2617
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/colombia/place/el-penon-de-guatape/tour/",
+      "last_key": "https://adatours.ru/costa-rica/place/drake-bay/tour/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-052.json"
+    },
+    {
+      "id": "adatours-com-identity-053",
+      "file": "data/external-identity/verification-batches/053.json",
+      "positions": {
+        "first": 2601,
+        "last": 2650
+      },
+      "source_positions": {
+        "first": 2618,
+        "last": 2667
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/costa-rica/place/el-tigre-waterfalls/tour/",
+      "last_key": "https://adatours.ru/ecuador/cuenca/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-053.json"
+    },
+    {
+      "id": "adatours-com-identity-054",
+      "file": "data/external-identity/verification-batches/054.json",
+      "positions": {
+        "first": 2651,
+        "last": 2700
+      },
+      "source_positions": {
+        "first": 2668,
+        "last": 2717
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/ecuador/cuenca/cuenca-city-and-panama-hats/tour/",
+      "last_key": "https://adatours.ru/ecuador/place/casa-del-arbol/tour/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-054.json"
+    },
+    {
+      "id": "adatours-com-identity-055",
+      "file": "data/external-identity/verification-batches/055.json",
+      "positions": {
+        "first": 2701,
+        "last": 2750
+      },
+      "source_positions": {
+        "first": 2718,
+        "last": 2767
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/ecuador/place/cayambe/tour/",
+      "last_key": "https://adatours.ru/ecuador/place/misicocha-reserve/tour/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-055.json"
+    },
+    {
+      "id": "adatours-com-identity-056",
+      "file": "data/external-identity/verification-batches/056.json",
+      "positions": {
+        "first": 2751,
+        "last": 2800
+      },
+      "source_positions": {
+        "first": 2768,
+        "last": 2817
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/ecuador/place/mitad-del-mundo/tour/",
+      "last_key": "https://adatours.ru/ecuador/place/south-plaza-island/tour/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-056.json"
+    },
+    {
+      "id": "adatours-com-identity-057",
+      "file": "data/external-identity/verification-batches/057.json",
+      "positions": {
+        "first": 2801,
+        "last": 2850
+      },
+      "source_positions": {
+        "first": 2818,
+        "last": 2867
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/ecuador/place/tagus-cove/tour/",
+      "last_key": "https://adatours.ru/french-guiana/place/ile-saint-joseph/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-058",
+      "file": "data/external-identity/verification-batches/058.json",
+      "positions": {
+        "first": 2851,
+        "last": 2900
+      },
+      "source_positions": {
+        "first": 2868,
+        "last": 2917
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/french-guiana/place/saint-laurent-du-maroni/tour/",
+      "last_key": "https://adatours.ru/guatemala/place/tikal-and-flores/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-059",
+      "file": "data/external-identity/verification-batches/059.json",
+      "positions": {
+        "first": 2901,
+        "last": 2950
+      },
+      "source_positions": {
+        "first": 2901,
+        "last": 2950
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/guatemala/place/monterrico/tour/",
+      "last_key": "https://adatours.ru/interests/adventure/tours/bolivia/",
+      "existing_report_at_freeze": "data/external-identity/adatours-com-identity-059.json"
+    },
+    {
+      "id": "adatours-com-identity-060",
+      "file": "data/external-identity/verification-batches/060.json",
+      "positions": {
+        "first": 2951,
+        "last": 3000
+      },
+      "source_positions": {
+        "first": 2951,
+        "last": 3000
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/interests/adventure/tours/brazil/",
+      "last_key": "https://adatours.ru/interests/culture-and-history/places/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-061",
+      "file": "data/external-identity/verification-batches/061.json",
+      "positions": {
+        "first": 3001,
+        "last": 3050
+      },
+      "source_positions": {
+        "first": 3001,
+        "last": 3050
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/interests/culture-and-history/related/",
+      "last_key": "https://adatours.ru/interests/fishing/related/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-062",
+      "file": "data/external-identity/verification-batches/062.json",
+      "positions": {
+        "first": 3051,
+        "last": 3100
+      },
+      "source_positions": {
+        "first": 3051,
+        "last": 3100
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/interests/fishing/tours/",
+      "last_key": "https://adatours.ru/interests/wildlife/tours/honduras/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-063",
+      "file": "data/external-identity/verification-batches/063.json",
+      "positions": {
+        "first": 3101,
+        "last": 3150
+      },
+      "source_positions": {
+        "first": 3101,
+        "last": 3150
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/interests/wildlife/tours/mexico/",
+      "last_key": "https://adatours.ru/mexico/place/cancun/optional-tours/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-064",
+      "file": "data/external-identity/verification-batches/064.json",
+      "positions": {
+        "first": 3151,
+        "last": 3200
+      },
+      "source_positions": {
+        "first": 3151,
+        "last": 3200
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/mexico/place/cancun/tour/",
+      "last_key": "https://adatours.ru/mexico/place/santo-domingo-mexico-city/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-065",
+      "file": "data/external-identity/verification-batches/065.json",
+      "positions": {
+        "first": 3201,
+        "last": 3250
+      },
+      "source_positions": {
+        "first": 3201,
+        "last": 3250
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/mexico/place/sumidero-canyon/tour/",
+      "last_key": "https://adatours.ru/mexico/xel-ha-park/xel-ha-park-tour/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-066",
+      "file": "data/external-identity/verification-batches/066.json",
+      "positions": {
+        "first": 3251,
+        "last": 3300
+      },
+      "source_positions": {
+        "first": 3251,
+        "last": 3300
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/mexico/xochimilco/",
+      "last_key": "https://adatours.ru/panama/embera-chagres-community/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-067",
+      "file": "data/external-identity/verification-batches/067.json",
+      "positions": {
+        "first": 3301,
+        "last": 3350
+      },
+      "source_positions": {
+        "first": 3301,
+        "last": 3350
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/panama/embera-chagres-community/chagres-embera-cultural-visit/tour/",
+      "last_key": "https://adatours.ru/panama/place/taboga-island/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-068",
+      "file": "data/external-identity/verification-batches/068.json",
+      "positions": {
+        "first": 3351,
+        "last": 3400
+      },
+      "source_positions": {
+        "first": 3351,
+        "last": 3400
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/panama/place/turtle-island/tour/",
+      "last_key": "https://adatours.ru/peru/lima/lima-folklore-dinner-show/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-069",
+      "file": "data/external-identity/verification-batches/069.json",
+      "positions": {
+        "first": 3401,
+        "last": 3450
+      },
+      "source_positions": {
+        "first": 3401,
+        "last": 3450
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/peru/lima/lima-miraflores-casa-aliaga/tour/",
+      "last_key": "https://adatours.ru/peru/place/qenqo/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-070",
+      "file": "data/external-identity/verification-batches/070.json",
+      "positions": {
+        "first": 3451,
+        "last": 3500
+      },
+      "source_positions": {
+        "first": 3451,
+        "last": 3500
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/peru/place/raqchi/tour/",
+      "last_key": "https://adatours.ru/tours/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-071",
+      "file": "data/external-identity/verification-batches/071.json",
+      "positions": {
+        "first": 3501,
+        "last": 3550
+      },
+      "source_positions": {
+        "first": 3501,
+        "last": 3550
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/uruguay/colonia-del-sacramento/",
+      "last_key": "https://adatours.ru/venezuela/place/barinas/tour/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-072",
+      "file": "data/external-identity/verification-batches/072.json",
+      "positions": {
+        "first": 3551,
+        "last": 3600
+      },
+      "source_positions": {
+        "first": 3551,
+        "last": 3600
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/venezuela/place/canaima-and-angel-falls/tour/",
+      "last_key": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-bird-park-tour-6-hours/tour/page/2/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-073",
+      "file": "data/external-identity/verification-batches/073.json",
+      "positions": {
+        "first": 3601,
+        "last": 3650
+      },
+      "source_positions": {
+        "first": 3601,
+        "last": 3650
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-bird-park-tour-6-hours/tour/page/3/",
+      "last_key": "https://adatours.ru/interests/beach-holidays/tours/brazil/page/2/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-074",
+      "file": "data/external-identity/verification-batches/074.json",
+      "positions": {
+        "first": 3651,
+        "last": 3700
+      },
+      "source_positions": {
+        "first": 3651,
+        "last": 3700
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/interests/beach-holidays/tours/page/2/",
+      "last_key": "https://adatours.ru/interests/wildlife/places/page/10/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-075",
+      "file": "data/external-identity/verification-batches/075.json",
+      "positions": {
+        "first": 3701,
+        "last": 3750
+      },
+      "source_positions": {
+        "first": 3701,
+        "last": 3750
+      },
+      "item_count": 50,
+      "first_key": "https://adatours.ru/interests/wildlife/places/page/11/",
+      "last_key": "https://adatours.ru/places/page/21/",
+      "existing_report_at_freeze": null
+    },
+    {
+      "id": "adatours-com-identity-076",
+      "file": "data/external-identity/verification-batches/076.json",
+      "positions": {
+        "first": 3751,
+        "last": 3780
+      },
+      "source_positions": {
+        "first": 3751,
+        "last": 3780
+      },
+      "item_count": 30,
+      "first_key": "https://adatours.ru/places/page/22/",
+      "last_key": "person_anna",
+      "existing_report_at_freeze": null
+    }
+  ]
+}

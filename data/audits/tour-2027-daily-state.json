@@ -5,12 +5,12 @@
   "driveRootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
   "lastAttempt": {
-    "at": "2026-10-18T02:06:14.047Z",
+    "at": "2026-10-19T02:05:10.125Z",
     "kind": "full_daily_scan",
     "status": "complete_no_word_changes_with_pdf_review",
-    "runId": "daily-word-2027-20261018-20261018020354100"
+    "runId": "daily-word-2027-20261019-20261019020316427"
   },
-  "lastCompleteScanAt": "2026-10-18T02:04:46.038Z",
+  "lastCompleteScanAt": "2026-10-19T02:04:17.196Z",
   "lastSuccessfulBatchAt": "2026-10-16T08:45:18.639748+00:00",
   "openQueue": [
     {
@@ -31,8 +31,8 @@
       "publicationAllowed": false,
       "detectedAt": "2026-10-17T07:07:13.876Z",
       "reasonForNoPublication": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
-      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
-      "lastCheckedInRun": "daily-word-2027-20261018-20261018020354100",
+      "lastCheckedAt": "2026-10-19T02:05:10.125Z",
+      "lastCheckedInRun": "daily-word-2027-20261019-20261019020316427",
       "sourceVersion": {
         "modifiedTime": "2026-10-09T13:30:40.492Z",
         "bytes": 6051218,
@@ -63,8 +63,8 @@
       "publicationAllowed": false,
       "detectedAt": "2026-10-17T07:07:13.876Z",
       "reasonForNoPublication": "Same 10-day/9-night program, 30 December 2026–8 January 2027, Rio 4n/Iguazu 2n/Buenos Aires 3n and nine SGL/DBL/TPL hotel tariffs. PDF specifies English-speaking excursion guides; canonical Word specifies Russian-speaking guides, including Corcovado and included services. This is not a confirmed new Tour and the guide-language conflict is not resolved by the file name or timestamp.",
-      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
-      "lastCheckedInRun": "daily-word-2027-20261018-20261018020354100",
+      "lastCheckedAt": "2026-10-19T02:05:10.125Z",
+      "lastCheckedInRun": "daily-word-2027-20261019-20261019020316427",
       "sourceVersion": {
         "modifiedTime": "2026-10-09T22:23:51.716Z",
         "bytes": 2811751,
@@ -383,6 +383,104 @@
       "errors": [],
       "pendingFolderIds": [],
       "nextStep": "Retain both PDF reviews until a corrected authoritative source appears; preserve canonical Word and do not contact third parties."
+    },
+    {
+      "id": "daily-word-2027-20261019-20261019020316427",
+      "startedAt": "2026-10-19T02:03:16.427Z",
+      "scanFinishedAt": "2026-10-19T02:04:17.196Z",
+      "finishedAt": "2026-10-19T02:05:10.125Z",
+      "trigger": "daily_autonomous_check",
+      "scanStatus": "complete",
+      "outcome": "no_new_or_modified_word_files_with_existing_pdf_source_reviews",
+      "foldersScanned": 26,
+      "rootChildren": 25,
+      "filesObserved": 205,
+      "uniqueFilesObserved": 205,
+      "wordFilesObserved": 199,
+      "pdfFilesObserved": 6,
+      "registeredTourWordFiles": 196,
+      "excludedAuxiliaryWordFiles": 3,
+      "newFileIds": [],
+      "candidateChangedFileIds": [],
+      "sizeChangedFileIds": [],
+      "missingFileIds": [],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 0,
+      "comparison": {
+        "inventoryBlobSha": "347cfc46a18aa9ba91aa22271e52e63d85fa572a",
+        "workflowBlobSha": "9e0aada54c2b2293b61fe90b4f910e4304ce6158",
+        "previousCompleteScanAt": "2026-10-18T02:04:46.038Z",
+        "method": "Fresh recursive connected Google Drive list_folder, root plus five separate functions.exec batches of five folders. Requested top_k 1000; largest listing 57, all below 100, no continuation tokens or deeper folders returned. All 205 IDs/modifiedTime/sizes/parent folders match prior snapshot. Registered IDs and modifiedTime also match canonical inventory. Candidate Word P135/P059 re-read and text-hashed; exact text plus inventory terminal LF matches both stored hashes. Other unchanged Words were not re-extracted.",
+        "versionAndChecksumAvailability": "Listing and two targeted PDF metadata reads expose ID/modifiedTime/size, not requested version/md5Checksum/sha256Checksum. Record unavailable fields as null; fresh readable-text hashes only for the two addressed Words."
+      },
+      "sourceContentChecks": [
+        {
+          "programKey": "P135",
+          "driveFileId": "1Kjvbso56c2nJhFSZq5crWwga8anymdnP",
+          "characters": 13161,
+          "textSha256": "4162a0e3a5efd01a078723eacd71c60bec16ba70260f3adbb512f2b34c69bc6c",
+          "inventorySha256": "c75658f9a7e3a34f50794fb327b427c08e957d4f6fc9aa8137af24c48cb0176c",
+          "unchangedWithInventoryTerminalLF": true
+        },
+        {
+          "programKey": "P059",
+          "driveFileId": "11UCPG-16zAKPnxrcT16amhN1HX6YEbfy",
+          "characters": 10121,
+          "textSha256": "98e1e7fbdf526017ef94534f1833452324b428e18c85128c854925abb4911a98",
+          "inventorySha256": "fc71ff1b0f9faa0c86d2a0a51d353de12c633447cbcc3f3b1e02bfcdcf07438c",
+          "unchangedWithInventoryTerminalLF": true
+        }
+      ],
+      "existingOpenQueueAtStart": 2,
+      "queueChecks": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "sourceVersion": {
+            "modifiedTime": "2026-10-09T13:30:40.492Z",
+            "bytes": 6051218,
+            "version": null
+          },
+          "metadataReadbackConfirmed": true,
+          "action": "Full discovery found no revised or additional authoritative source; PDF metadata and two candidate Word texts checked. Retain prior exact PDF-text review without repeating unchanged PDF extraction.",
+          "previousTextReviewedAt": "2026-10-17T07:07:13.876Z",
+          "blocker": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
+          "programKey": "P135",
+          "status": "REVIEW",
+          "stage": "pdf_and_word_compared",
+          "sourceVersion": {
+            "modifiedTime": "2026-10-09T22:23:51.716Z",
+            "bytes": 2811751,
+            "version": null
+          },
+          "metadataReadbackConfirmed": true,
+          "action": "Full discovery found no revised or additional authoritative source; PDF metadata and two candidate Word texts checked. Retain prior exact PDF-text review without repeating unchanged PDF extraction.",
+          "previousTextReviewedAt": "2026-10-17T07:07:13.876Z",
+          "blocker": "Same 10-day/9-night program, 30 December 2026–8 January 2027, Rio 4n/Iguazu 2n/Buenos Aires 3n and nine SGL/DBL/TPL hotel tariffs. PDF specifies English-speaking excursion guides; canonical Word specifies Russian-speaking guides, including Corcovado and included services. This is not a confirmed new Tour and the guide-language conflict is not resolved by the file name or timestamp.",
+          "nextStep": "Resolve the authoritative guide language before applying this PDF as an update; retain Word and existing Tour ID until resolved."
+        }
+      ],
+      "sourceReviewQueueRemaining": 2,
+      "publicationStatus": "not_attempted_no_confirmed_word_change_and_unresolved_pdf_sources",
+      "contentCommit": null,
+      "deployRun": null,
+      "newTours": 0,
+      "updatedTours": 0,
+      "newDestinations": 0,
+      "newExcursions": 0,
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_published_object_changes",
+      "geoStatus": "not_required_no_new_entities",
+      "errors": [],
+      "pendingFolderIds": [],
+      "nextStep": "Preserve both existing REVIEW items until corrected authoritative sources appear. Do not change published terms, repeat media production or contact third parties."
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",
@@ -504,7 +602,7 @@
     }
   ],
   "latestDriveSnapshot": {
-    "at": "2026-10-18T02:04:46.038Z",
+    "at": "2026-10-19T02:04:17.196Z",
     "rootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
     "scanStatus": "complete",
     "folders": [

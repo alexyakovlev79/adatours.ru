@@ -147,3 +147,20 @@ moving marker DOM, and ensure YMapFeature is not instantiated by Yandex.
 
 The earlier descriptions of Yandex native vector strokes above are
 historical and superseded by this section.
+
+## Popup cards, excursion placement and gated lazy loading — 19.10.2026
+
+- Selecting a numbered marker opens its informational card near the **top** of
+  the map, outside the bottom-left Yandex control and attribution region. The
+  card is in a higher stacking context than map UI; a capped scrollable area
+  preserves access on narrow viewports. Popup photos have **larger**, less
+  panoramic crops (220px desktop, 200px mobile), never reduced to make room.
+  On mobile summaries use two lines so the destination link stays above the
+  map controls. Original assets and alt descriptions remain unchanged.
+- Excursions use the legend “Все точки экскурсии”; tour legends remain “Все
+  точки маршрута”. Their map follows the place banners and precedes photos.
+- The provider API and tiles now require three independent conditions:
+  `window.load` plus completion of above-fold images/fonts, actual downward
+  scrolling, and proximity within 300px of the viewport. Initial render alone
+  cannot trigger network loading, including when the map sits above the fold.
+  Without IntersectionObserver, proximity is calculated on scroll/resize.

@@ -192,8 +192,6 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     </div>
   </section>
 
-  {geoMapData && <GeoRouteMap data={geoMapData} title="Экскурсия на карте" locale="ru" />}
-
   {visibleDestinations.map((place) => (
     <DestinationBand
       eyebrow="Место"
@@ -207,6 +205,8 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
       descriptionBelow={true}
     />
   ))}
+
+  {geoMapData && <GeoRouteMap data={geoMapData} title="Экскурсия на карте" locale="ru" entityType="excursion" />}
 
   {d.gallery.length > 0 && (
     <MediaGallery

@@ -1,4 +1,5 @@
-// Provider code and tiles load only when the map comes near the viewport.
+// Provider code and tiles load only after first-screen readiness, downward scroll and map proximity.
+import {canMountGeoMap, movedDown, nearViewport} from '../lib/geo-map-lazy.mjs';
 const scriptLoads = new Map();
 
 export function loadProviderScript(id, url) {
@@ -178,17 +179,74 @@ function initMaps() {
     });
   }
 
-  if (!('IntersectionObserver' in window)) {
-    maps.forEach(mount);
-    return;
+  // A nearby map never starts on initial paint, even when located in the first
+  // viewport. Both prerequisites are mandatory: full page/first-screen load
+  // AND a genuine downward page scroll from the initial position.
+  let firstScreenReady = false;
+  let scrolledDown = false;
+  let previousScrollY = Math.max(0, window.scrollY);
+  let observer;
+
+  const tryMount = root => {
+    const near = nearViewport(root.getBoundingClientRect(), window.innerHeight, 300);
+    if (!canMountGeoMap({firstScreenReady, scrolledDown, near})) return;
+    observer?.unobserve(root);
+    mount(root);
+  };
+  const checkNearby = () => maps.forEach(tryMount);
+
+  if ('IntersectionObserver' in window) {
+    observer = new IntersectionObserver(entries => {
+      for (const entry of entries)
+        if (entry.isIntersecting) tryMount(entry.target);
+    }, {rootMargin: '300px 0px'});
+    maps.forEach(root => observer.observe(root));
   }
-  const observer = new IntersectionObserver(entries => {
-    for (const entry of entries) if (entry.isIntersecting) {
-      observer.unobserve(entry.target);
-      mount(entry.target);
+
+  window.addEventListener('scroll', () => {
+    const currentY = Math.max(0, window.scrollY);
+    if (movedDown(previousScrollY, currentY)) {
+      scrolledDown = true;
+      if (firstScreenReady) checkNearby();
+    } else if (scrolledDown && !observer) {
+      checkNearby();
     }
-  }, {rootMargin: '300px 0px'});
-  maps.forEach(root => observer.observe(root));
+    previousScrollY = currentY;
+  }, {passive:true});
+
+  // Recheck visible regions when the browser resizes, including the fallback
+  // for browsers without IntersectionObserver.
+  window.addEventListener('resize', () => {
+    if (firstScreenReady && scrolledDown) checkNearby();
+  }, {passive:true});
+
+  const finishFirstScreen = async () => {
+    // window.load includes normal above-fold assets. Explicitly wait for any
+    // first-viewport images that were lazy-loaded and excluded from load.
+    const visibleImages = Array.from(document.images).filter(image => {
+      const rect = image.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom > 0;
+    });
+    await Promise.all(visibleImages.map(image => {
+      if (image.complete) return Promise.resolve();
+      return new Promise(resolve => {
+        const done = () => {
+          image.removeEventListener('load', done);
+          image.removeEventListener('error', done);
+          resolve();
+        };
+        image.addEventListener('load', done, {once:true});
+        image.addEventListener('error', done, {once:true});
+        if (image.complete) done();
+      });
+    }));
+    if (document.fonts?.ready) await document.fonts.ready.catch(() => {});
+    firstScreenReady = true;
+    if (scrolledDown) checkNearby();
+  };
+
+  if (document.readyState === 'complete') void finishFirstScreen();
+  else window.addEventListener('load', () => {void finishFirstScreen();}, {once:true});
 }
 
 if (document.readyState === 'loading')

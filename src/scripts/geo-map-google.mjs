@@ -3,6 +3,7 @@ import {fitGeoCamera} from '../lib/geo-map-camera.mjs';
 import {orderedGeoMapMarkers} from '../lib/geo-map-marker-priority.mjs';
 
 // One static sequence is shared by Google and Yandex; no Directions API requests.
+const searchMarkerState = new WeakMap();
 export async function renderGoogleMap(
   canvas, data, key, mapId, onSelect, loadScript, createPin, locale='ru', createArrow,
 ) {
@@ -65,11 +66,14 @@ export async function renderGoogleMap(
 
   // Draw route finish below departure but above intermediary stops.
   // The featured Destination marker still wins on neighborhood maps.
+  const markerInstances=[];
   for (const {point,zIndex} of orderedGeoMapMarkers(data)) {
     const position = {lat:point.coordinates[1],lng:point.coordinates[0]};
     if (AdvancedMarkerElement) {
       const pin = createPin(point, onSelect);
-      new AdvancedMarkerElement({map, position, content:pin, title:point.name, zIndex});
+      markerInstances.push(new AdvancedMarkerElement({
+        map,position,content:pin,title:point.name,zIndex,
+      }));
     } else {
       const marker = new google.maps.Marker({
         map, position, title:point.name, zIndex,
@@ -79,7 +83,47 @@ export async function renderGoogleMap(
           strokeColor:'#1A1A1A',strokeWeight:point.isPrimary?2.5:1.5},
       });
       marker.addListener('click', () => onSelect(point));
+      markerInstances.push(marker);
     }
   }
+  searchMarkerState.set(map,{markers:markerInstances,AdvancedMarkerElement});
   return map;
+}
+
+// Search only: reuse the Google map and API, changing just circles and camera.
+export function redrawGoogleSearchPoints(map, canvas, data, onSelect, createPin) {
+  const state=searchMarkerState.get(map);
+  if(!state)return;
+  for(const marker of state.markers) {
+    if(typeof marker.setMap==='function')marker.setMap(null);
+    else marker.map=null;
+  }
+  state.markers=[];
+  const google=window.google;
+  for(const {point,zIndex} of orderedGeoMapMarkers(data)){
+    const position={lat:point.coordinates[1],lng:point.coordinates[0]};
+    if(state.AdvancedMarkerElement){
+      state.markers.push(new state.AdvancedMarkerElement({
+        map,position,content:createPin(point,onSelect),title:point.name,zIndex,
+      }));
+    }else{
+      const marker=new google.maps.Marker({
+        map,position,title:point.name,zIndex,
+        label:{text:String(point.position),color:'#1A1A1A',fontWeight:'700'},
+        icon:{path:google.maps.SymbolPath.CIRCLE,scale:16,
+          fillColor:'#F2CC67',fillOpacity:1,
+          strokeColor:'#1A1A1A',strokeWeight:1.5},
+      });
+      marker.addListener('click',()=>onSelect(point));
+      state.markers.push(marker);
+    }
+  }
+  if(data.points?.length) {
+    const camera=fitGeoCamera(data.points.map(p=>p.coordinates),{
+      width:canvas.clientWidth,height:canvas.clientHeight,
+      points:data.points,pointZoom:8,
+    });
+    if(camera)map.moveCamera({center:{lat:camera.center[1],lng:camera.center[0]},
+      zoom:camera.zoom});
+  }
 }

@@ -1,6 +1,7 @@
 ---
 import { withBase } from '../../lib/paths';
 import SearchResults from './SearchResults.astro';
+import SearchPlacesMap from './SearchPlacesMap.astro';
 
 const pagefindBundle = withBase('/pagefind/');
 const pagefindBase = import.meta.env.BASE_URL || '/';
@@ -52,6 +53,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         <button type="button" aria-pressed="false" data-search-filter="excursion">Экскурсии</button>
       </div>
 
+      <SearchPlacesMap />
       <SearchResults />
     </div>
   </div>
@@ -70,6 +72,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
   const status = overlay?.querySelector('[data-search-status]');
   const list = overlay?.querySelector('[data-search-list]');
   const template = overlay?.querySelector('[data-search-result-template]');
+  const placesMapRoot = overlay?.querySelector('[data-search-places-map]');
 
   if (
     overlay instanceof HTMLElement &&
@@ -85,6 +88,41 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     let hideTimerId = 0;
     let requestId = 0;
     let previousFocus: HTMLElement | null = null;
+    let placesMapPromise: Promise<any> | null = null;
+    let placesMapGeneration = 0;
+
+    // Neither map provider nor GEO coordinates are requested outside Places.
+    const ensurePlacesMap = () => {
+      if (!placesMapPromise && placesMapRoot instanceof HTMLElement) {
+        placesMapPromise = import('../../scripts/search-places-map.mjs')
+          .then(module => module.createSearchPlacesMap(placesMapRoot));
+      }
+      return placesMapPromise;
+    };
+    const setPlacesMapVisible = (visible: boolean) => {
+      if (placesMapRoot instanceof HTMLElement) placesMapRoot.hidden = !visible;
+      ++placesMapGeneration;
+      if (!visible && placesMapPromise) {
+        placesMapPromise.then(map => map?.suspend()).catch(() => {});
+      }
+    };
+    const updatePlacesMap = async (items: any[], queryId: number) => {
+      if (activeFilter !== 'destination' || overlay.hidden) return;
+      const generation = ++placesMapGeneration;
+      try {
+        const map = await ensurePlacesMap();
+        if (!map || generation !== placesMapGeneration ||
+            queryId !== requestId || activeFilter !== 'destination' ||
+            overlay.hidden) return;
+        await map.update(items.map(item => item.data));
+      } catch (error) {
+        const state = placesMapRoot?.querySelector('[data-search-map-status]');
+        if (state instanceof HTMLElement) {
+          state.hidden = false;
+          state.textContent = 'Карта временно недоступна. Список мест работает.';
+        }
+      }
+    };
 
     const normalize = (value: string) =>
       value.toLocaleLowerCase('ru-RU')
@@ -241,6 +279,10 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         results.setAttribute('aria-busy', 'false');
         clearResults();
         setStatus(query.length === 0 ? 'Ищите страну, место, тур или экскурсию.' : 'Введите еще 1 символ.');
+        if (activeFilter === 'destination') {
+          ++placesMapGeneration;
+          if (placesMapPromise) void placesMapPromise.then(map => map?.clear()).catch(() => {});
+        }
         return;
       }
 
@@ -313,6 +355,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         const visibleResults = filtered.slice(0, MAX_SEARCH_RESULTS);
         clearResults();
         for (const item of visibleResults) list.append(createResult(item.data));
+        if (activeFilter === 'destination') void updatePlacesMap(visibleResults, thisRequest);
 
         setStatus(
           visibleResults.length === 0
@@ -324,6 +367,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       } catch (error) {
         console.error('Ada Tours search failed', error);
         clearResults();
+        if (activeFilter === 'destination') void updatePlacesMap([], thisRequest);
         setStatus('Поиск временно недоступен.');
       } finally {
         if (thisRequest === requestId) results.setAttribute('aria-busy', 'false');
@@ -331,12 +375,17 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     };
 
     const scheduleSearch = () => {
+      // Invalidate pending results immediately on every letter or deletion,
+      // then reuse the existing 120ms Pagefind debounce before redrawing pins.
+      ++requestId;
+      ++placesMapGeneration;
       window.clearTimeout(debounceId);
       debounceId = window.setTimeout(runSearch, 120);
     };
 
     const setFilter = (value: string) => {
       activeFilter = value;
+      setPlacesMapVisible(value === 'destination');
       filters.forEach((button) => {
         if (button instanceof HTMLButtonElement) {
           const active = button.dataset.searchFilter === value;
@@ -356,6 +405,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       document.body.classList.add('search-open');
       requestAnimationFrame(() => overlay.classList.add('is-open'));
       input.focus();
+      if (activeFilter === 'destination') setPlacesMapVisible(true);
       ensurePagefind().catch(() => {});
     };
 
@@ -364,6 +414,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       overlay.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('search-open');
       window.clearTimeout(hideTimerId);
+      setPlacesMapVisible(false);
       hideTimerId = window.setTimeout(() => { overlay.hidden = true; }, 220);
       previousFocus?.focus();
     };
@@ -381,6 +432,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       document.body.classList.remove('search-open');
       results.setAttribute('aria-busy', 'false');
       previousFocus = null;
+      setPlacesMapVisible(false);
     };
     window.addEventListener('pagehide', resetSearchOnNavigation);
     window.addEventListener('pageshow', resetSearchOnNavigation);

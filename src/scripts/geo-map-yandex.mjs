@@ -5,6 +5,7 @@ import {orderedGeoMapMarkers} from '../lib/geo-map-marker-priority.mjs';
 // Route SVG uses the actual DOM positions of YMapMarker pins.
 // Native YMapFeature line geometry previously appeared far west of those pins.
 const SVG_NS = 'http://www.w3.org/2000/svg';
+const searchMarkerState = new WeakMap();
 function failure(stage,error){
   const detail=error instanceof Error?error.message:String(error??'Unknown error');
   const wrapped=new Error(detail);
@@ -127,17 +128,42 @@ export async function renderYandexMap(
   }catch(error){throw failure('YANDEX_CREATE',error);}
 
   const anchors=new Map();
+  const mountedMarkers=[];
   try{
     // Paint middle stops first, the route finish next, departure last.
     // On Destination maps the featured place retains the highest priority.
     for(const {point,zIndex} of orderedGeoMapMarkers(data)){
       const marker=createPin(point,onSelect);
       anchors.set(coordinateKey(point.coordinates),marker);
-      map.addChild(new YMapMarker({
-        coordinates:point.coordinates,zIndex,
-      },marker));
+      const child=new YMapMarker({coordinates:point.coordinates,zIndex},marker);
+      map.addChild(child);
+      mountedMarkers.push(child);
     }
     attachRouteOverlay(canvas,map,data.route,anchors,YMapListener);
+    searchMarkerState.set(map,{markers:mountedMarkers});
   }catch(error){throw failure('YANDEX_MARKERS',error);}
   return map;
+}
+
+// Update only the markers and fit of an existing search YMap.
+// Provider API and map instance are reused on every search keystroke.
+export function redrawYandexSearchPoints(map, canvas, data, onSelect, createPin) {
+  const state=searchMarkerState.get(map);
+  if(!state)return;
+  for(const marker of state.markers)map.removeChild(marker);
+  state.markers=[];
+  const {YMapMarker}=window.ymaps3;
+  for(const {point,zIndex} of orderedGeoMapMarkers(data)){
+    const marker=new YMapMarker({coordinates:point.coordinates,zIndex},
+      createPin(point,onSelect));
+    map.addChild(marker);
+    state.markers.push(marker);
+  }
+  if(data.points?.length){
+    const camera=fitGeoCamera(data.points.map(p=>p.coordinates),{
+      width:canvas.clientWidth,height:canvas.clientHeight,
+      points:data.points,pointZoom:8,
+    });
+    if(camera)map.setLocation({...camera,duration:0});
+  }
 }

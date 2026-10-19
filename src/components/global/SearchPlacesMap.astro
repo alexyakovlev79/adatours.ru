@@ -1,0 +1,53 @@
+---
+import {withBase} from '../../lib/paths';
+const yandexKey=import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY||'';
+const googleKey=import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY||'';
+const googleMapId=import.meta.env.PUBLIC_GOOGLE_MAP_ID||'';
+---
+<section class="search-places-map" aria-label="Найденные места на карте"
+  data-search-places-map
+  data-yandex-key={yandexKey}
+  data-google-key={googleKey}
+  data-google-map-id={googleMapId}
+  data-geo-url={withBase('/search-geo-places.json')}
+  hidden>
+  <div class="search-places-map__canvas" data-search-map-canvas role="group"
+    aria-label="Карта результатов поиска"></div>
+  <p class="search-places-map__status" data-search-map-status aria-live="polite">
+    Введите хотя бы 2 символа, чтобы увидеть места на карте.
+  </p>
+  <div class="search-places-map__card" data-search-map-card hidden>
+    <a href="#" data-search-map-link></a>
+    <button type="button" data-search-map-card-close aria-label="Закрыть название места">×</button>
+  </div>
+</section>
+<style>
+  .search-places-map {position:relative;margin-top:18px;height:clamp(150px,19vh,185px);
+    background:#EFEDE8;isolation:isolate;overflow:hidden}
+  .search-places-map[hidden], .search-places-map__card[hidden] {display:none}
+  .search-places-map__canvas {position:absolute;inset:0}
+  .search-places-map__status {position:absolute;inset:0;display:grid;place-items:center;
+    padding:12px 16px;margin:0;text-align:center;background:#F6F4EE;color:#56534B;
+    font-size:.89rem;pointer-events:none;z-index:3}
+  .search-places-map__status[hidden]{display:none}
+  .search-places-map__card {position:absolute;top:9px;left:9px;right:9px;
+    z-index:8;display:flex;align-items:center;justify-content:space-between;gap:8px;
+    width:fit-content;max-width:calc(100% - 18px);background:#FFFCF8;
+    box-shadow:0 2px 14px #0002;padding:8px 10px;font-size:.9rem}
+  .search-places-map__card a {color:#795C19;overflow-wrap:anywhere}
+  .search-places-map__card button {border:0;background:transparent;font-size:1.5rem;
+    line-height:1;cursor:pointer}
+  .search-places-map :global(.search-places-map__pin) {
+    display:grid;place-items:center;width:34px;height:34px;background:#F2CC67;
+    border:2px solid #1A1A1A;border-radius:50%;box-shadow:0 2px 9px #0003;
+    color:#1A1A1A;font-size:13px;font-weight:700;cursor:pointer;
+  }
+  .search-places-map :global(.search-places-map__pin:hover),
+  .search-places-map :global(.search-places-map__pin:focus-visible) {
+    background:#E6BA43;outline:2px solid #FFFCF8;outline-offset:1px
+  }
+  .search-places-map:not([hidden]) + :global(.search-results){margin-top:16px}
+  @media(max-width:720px){
+    .search-places-map {height:clamp(150px,23vh,188px);margin-top:13px}
+  }
+</style>

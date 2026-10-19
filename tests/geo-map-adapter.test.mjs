@@ -280,3 +280,73 @@ test('Yandex and Google honor the earlier-number-above-later rule on coincident 
       [993,994,995,996,997,998,999,1000]);
   }finally{globalThis.window=oldWindow;}
 });
+
+
+test('Yandex search map redraws markers without constructing another map',async()=>{
+  const prev=globalThis.window;
+  let instances=0, children=[];
+  class YMap {
+    constructor(){instances++;this.children=[];}
+    addChild(child){this.children.push(child);}
+    removeChild(child){this.children=this.children.filter(x=>x!==child);}
+    setLocation(location){this.location=location;}
+  }
+  class Layer{constructor(props={}){this.props=props;}}
+  class YMarker{constructor(props,element){this.props=props;this.element=element;}}
+  class Listener{constructor(props){this.props=props;}}
+  globalThis.window={ymaps3:{
+    ready:Promise.resolve(),YMap,YMapDefaultSchemeLayer:Layer,
+    YMapDefaultFeaturesLayer:Layer,YMapMarker:YMarker,YMapListener:Listener,
+  }};
+  try {
+    const {renderYandexMap,redrawYandexSearchPoints}=
+      await import('../src/scripts/geo-map-yandex.mjs');
+    const root={clientWidth:400,clientHeight:170};
+    const data={...sample,route:[],points:sample.points.slice(0,2)};
+    const map=await renderYandexMap(root,data,'TEST',()=>{},async()=>{},
+      p=>({id:p.id}));
+    const changed={...data,points:[sample.points[2]]};
+    redrawYandexSearchPoints(map,root,changed,()=>{},p=>({id:p.id}));
+    assert.equal(instances,1);
+    assert.deepEqual(map.children.filter(x=>x instanceof YMarker)
+      .map(x=>x.element.id),['lima']);
+    assert.equal(map.location.zoom,fitGeoCamera(
+      [sample.points[2].coordinates],{width:400,height:170,points:changed.points,pointZoom:8}).zoom);
+    redrawYandexSearchPoints(map,root,{...changed,points:[]},()=>{},()=>({}));
+    assert.equal(map.children.filter(x=>x instanceof YMarker).length,0);
+    assert.equal(instances,1);
+  }finally{globalThis.window=prev;}
+});
+
+test('Google search map redraws legacy pins without creating a second Map',async()=>{
+  const prev=globalThis.window;
+  let instances=0;
+  class GMap {
+    constructor(){instances++;}
+    moveCamera(location){this.newLocation=location;}
+  }
+  class GMarker {
+    constructor(props){this.props=props;this.map=props.map;}
+    setMap(value){this.map=value;}
+    addListener(){}
+  }
+  globalThis.window={google:{maps:{
+    importLibrary:async kind=>kind==='maps'?{Map:GMap}:{AdvancedMarkerElement:null},
+    Marker:GMarker,SymbolPath:{CIRCLE:0},
+  }}};
+  try{
+    const {renderGoogleMap,redrawGoogleSearchPoints}=
+      await import('../src/scripts/geo-map-google.mjs');
+    const root={clientWidth:400,clientHeight:170};
+    const init={...sample,route:[],points:sample.points.slice(0,2)};
+    const map=await renderGoogleMap(root,init,'TEST','',()=>{},
+      async()=>{},()=>({}),'ru');
+    const next={...init,points:sample.points.slice(1)};
+    redrawGoogleSearchPoints(map,root,next,()=>{},()=>({}));
+    assert.equal(instances,1);
+    assert.ok(map.newLocation.zoom>0);
+    assert.equal(map.newLocation.center.lat,
+      fitGeoCamera(next.points.map(p=>p.coordinates),
+        {width:400,height:170,points:next.points,pointZoom:8}).center[1]);
+  }finally{globalThis.window=prev;}
+});

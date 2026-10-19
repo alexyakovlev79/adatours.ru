@@ -293,3 +293,25 @@ by z-index, protecting both Yandex Maps 3 and Google Maps (legacy and advanced
 marker variants). Tour and Excursion starting/final marker precedence is
 unchanged. The ranking or contents of recommendations, GEO screening, marker
 colors, route geometries and map lazy loading are not changed.
+
+
+## Live search map in Places tab — 19.10.2026
+
+The global search overlay shows a compact (150–185px desktop, 150–188px
+mobile) map between the `Места` filter and the existing `Найдено` results.
+It is absent on all other search tabs. A single static JSON endpoint
+`/search-geo-places.json` holds minimal URL/coordinate pairs from the same
+published, verified GEO index as the destination pages. Its bytes are
+downloaded only after the Places tab is selected; no per-page GEO JSON is
+embedded in HTML. Search text remains handled entirely by Pagefind.
+
+After every change of at least one character (including deletions), existing
+Pagefind debounce (120ms) returns the ranked filtered results. The very same
+results determine the circles, in the same order, with only those lacking
+published GEO coordinates omitted. The Yandex/Google map instance and JS API
+are loaded only once and kept for later updates. The common provider adapters
+update markers and camera on the existing instance using
+`YMap.removeChild/addChild/setLocation` or Google Marker removal and
+`Map.moveCamera`. No geocoding/routing API, per-letter network calls or map
+reinitialization. Zero-result queries clear pins without affecting the text
+search. Close or switch tabs to suspend updates; reopening reuses the same map.

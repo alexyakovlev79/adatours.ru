@@ -27,6 +27,15 @@ function loadMapSources() {
   return cachedSources;
 }
 
+// Shared compact static map index fetched only while the Places search tab is active.
+// No GEO catalogue or passports are embedded into every page's HTML.
+export async function getSearchGeoPlaces() {
+  const {index} = await loadMapSources();
+  return [...index.entries.values()].map((point: any) => ({
+    url:point.href,coordinates:point.coordinates,
+  }));
+}
+
 export async function buildPageGeoMap(kind: 'tour' | 'destination' | 'excursion', data: any, relatedDestinationIds: string[] = []) {
   if (data.locale !== 'ru' || !isActiveEntity(data)) return null;
   const {index, excursions} = await loadMapSources();

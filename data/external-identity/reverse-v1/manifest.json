@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-19",
+  "sourceFirst": true,
+  "primarySite": "https://adatours.ru",
+  "branch": "external-identity/staging",
+  "batchSize": 50,
+  "leaseMinutes": 60,
+  "checkpointEvery": 10,
+  "priority": [
+    "vipdeluxetravel.ru",
+    "adatours.com",
+    "brasiltours.ru"
+  ],
+  "statuses": [
+    "leased",
+    "matched_exact",
+    "redirect_ready",
+    "checked_no_confirmed_pair",
+    "review",
+    "retry",
+    "excluded"
+  ],
+  "inventories": {
+    "adatours.com": {
+      "path": "data/external-identity/reverse-v1/inventories/adatours.com.json",
+      "uniqueSourceUrls": 798,
+      "originalSavedUrls": 647,
+      "alreadyMatchedExact": 327,
+      "importedReview": 2,
+      "blockedByRobots": 1,
+      "discoveryComplete": false
+    },
+    "brasiltours.ru": {
+      "path": "data/external-identity/reverse-v1/inventories/brasiltours.ru.json",
+      "uniqueSourceUrls": 1421,
+      "oldSnapshotPages": 1426,
+      "historicalMigrationPairs": 690,
+      "discoveryComplete": false
+    },
+    "vipdeluxetravel.ru": {
+      "path": "data/external-identity/reverse-v1/inventories/vipdeluxetravel.ru.json",
+      "uniqueSourceUrls": 0,
+      "discoveryComplete": false
+    }
+  },
+  "statePath": "data/external-identity/reverse-v1/state.json",
+  "resultsDir": "data/external-identity/reverse-v1/results/",
+  "legacyPreserved": [
+    "data/external-identity/adatours-com-correspondences.json",
+    "data/external-identity/adatours-com-identity-*.json",
+    "data/external-identity/verification-batches/",
+    "data/external-identity/brasiltours-snapshots.json",
+    "data/external-identity/brasiltours-ru.json",
+    "data/external-identity/work-queues-20261012/"
+  ],
+  "mappingPolicy": {
+    "adatours.com": "sameAs_only_verified_identity",
+    "brasiltours.ru": "sameAs_only_verified_current_identity",
+    "vipdeluxetravel.ru": "301_target_only_after_verification"
+  }
+}

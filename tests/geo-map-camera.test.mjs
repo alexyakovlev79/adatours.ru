@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {fitGeoCamera,geoToWorld} from '../src/lib/geo-map-camera.mjs';
-import {routeDirectionArrows} from '../src/lib/geo-map-direction.mjs';
+import {routeDirectionArrows,routeLegs} from '../src/lib/geo-map-direction.mjs';
 
 // Actual coordinates of confirmed destinations on Ada Tours' Brazil/Argentina/Peru pilot.
 const itinerary = [
@@ -73,4 +73,26 @@ test('long legs get arrows but nearby landmarks do not crowd the overview',()=>{
     assert.ok(arrow.coordinates.every(Number.isFinite));
     assert.ok(Number.isFinite(arrow.angle));
   }
+});
+
+test('South American route draws only its local legs, never a stray Pacific segment',()=>{
+  const legs=routeLegs(itinerary);
+  assert.equal(legs.length,itinerary.length-1);
+  for(const {coordinates} of legs){
+    assert.equal(coordinates.length,2);
+    for(const [lng,lat] of coordinates) {
+      assert.ok(lng>=-78 && lng<=-43, 'Unexpected longitude: '+lng);
+      assert.ok(lat>=-35 && lat<=-12, 'Unexpected latitude: '+lat);
+    }
+  }
+});
+
+test('dateline travel splits into two short legs instead of a line around the world',()=>{
+  const legs=routeLegs([[179,-15],[-179,-16]]);
+  assert.equal(legs.length,2);
+  assert.equal(legs[0].coordinates[1][0],180);
+  assert.equal(legs[1].coordinates[0][0],-180);
+  assert.ok(legs.every(x=>Math.abs(x.coordinates[1][0]-x.coordinates[0][0])<=2));
+  assert.equal(routeLegs([[0,0],[0,0]]).length,0);
+  assert.equal(routeLegs([[0,0],[NaN,0],[1,1]]).length,0);
 });

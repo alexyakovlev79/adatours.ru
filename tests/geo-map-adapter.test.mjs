@@ -35,10 +35,13 @@ test('Yandex route uses a matching vector source, fitted camera, arrows and pins
     assert.ok(map.props.location.zoom<sample.zoom);
     assert.ok(!('bounds' in map.props.location));
     assert.equal(map.children[1].props.source,'adatours-route-lines');
-    const route=map.children.find(x=>x instanceof Feature);
-    assert.equal(route.props.source,map.children[1].props.source);
-    assert.deepEqual(route.props.geometry.coordinates,sample.route);
-    assert.equal(route.props.style.stroke.length,2);
+    const routes=map.children.filter(x=>x instanceof Feature);
+    assert.equal(routes.length,sample.route.length-1);
+    assert.ok(routes.every(x=>x.props.source===map.children[1].props.source));
+    assert.deepEqual(routes[0].props.geometry.coordinates,sample.route.slice(0,2));
+    assert.deepEqual(routes[1].props.geometry.coordinates,sample.route.slice(1,3));
+    assert.ok(routes.every(x=>x.props.style.stroke.length===1));
+    assert.ok(routes.every(x=>x.props.style.stroke[0].color!=='#FFFCF8'));
     assert.equal(map.children.filter(x=>x instanceof Marker && x.element.kind==='pin').length,3);
     assert.ok(map.children.some(x=>x instanceof Marker && x.element.kind==='arrow'));
     assert.ok(map.children.filter(x=>x instanceof Marker && x.element.kind==='pin').every(x=>x.props.zIndex===100));
@@ -104,7 +107,9 @@ test('Google uses the same custom camera and directions instead of provider fitB
     await renderGoogleMap({clientWidth:1030,clientHeight:480},sample,'TEST_KEY','',
       ()=>{},async()=>{},()=>({kind:'pin'}),'en');
     assert.ok(mapInstance.props.zoom<sample.zoom);
-    assert.equal(created.polylines.length,2);
+    assert.equal(created.polylines.length,sample.route.length-1);
+    assert.ok(created.polylines.every(x=>x.path.length===2));
+    assert.ok(created.polylines.every(x=>x.strokeColor!=='#FFFCF8' && x.strokeWeight<=3));
     assert.ok(created.markers.length>sample.points.length);
   }finally {globalThis.window=previous;}
 });

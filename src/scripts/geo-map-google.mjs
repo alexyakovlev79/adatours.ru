@@ -1,4 +1,4 @@
-import {routeDirectionArrows} from '../lib/geo-map-direction.mjs';
+import {routeDirectionArrows, routeLegs} from '../lib/geo-map-direction.mjs';
 import {fitGeoCamera} from '../lib/geo-map-camera.mjs';
 
 // One static sequence is shared by Google and Yandex; no Directions API requests.
@@ -26,13 +26,11 @@ export async function renderGoogleMap(
   });
 
   if (data.route?.length > 1) {
-    const path = data.route.map(([lng,lat]) => ({lat,lng}));
-    for (const stroke of [
-      {color:'#FFFCF8', weight:9}, {color:'#A87518', weight:4.5},
-    ]) {
+    for (const {coordinates} of routeLegs(data.route)) {
       new google.maps.Polyline({
-        path, map, geodesic:false, strokeColor:stroke.color,
-        strokeWeight:stroke.weight, strokeOpacity:1, clickable:false,
+        path:coordinates.map(([lng,lat])=>({lat,lng})),
+        map, geodesic:false, strokeColor:'#8E691F',
+        strokeWeight:3, strokeOpacity:1, clickable:false,
       });
     }
   }
@@ -52,10 +50,10 @@ export async function renderGoogleMap(
         new google.maps.Marker({
           map, position, zIndex:40, clickable:false,
           icon:{
-            path:'M -12,-4 L 7,0 L -12,4 L -8,0 Z',
-            rotation:arrow.angle, scale:1.2,
-            fillColor:'#A87518', fillOpacity:1,
-            strokeColor:'#FFFCF8', strokeWeight:2,
+            path:'M -7,-6 L 8,0 L -7,6 L -3,0 Z',
+            rotation:arrow.angle, scale:1,
+            fillColor:'#9B6F16', fillOpacity:1,
+            strokeColor:'#FFFCF8', strokeWeight:1.2,
           },
         });
       }

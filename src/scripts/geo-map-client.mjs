@@ -38,20 +38,18 @@ export function createDirectionalArrow(angle) {
 
   const ns = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(ns, 'svg');
-  svg.setAttribute('viewBox', '0 0 36 30');
+  svg.setAttribute('viewBox', '0 0 20 18');
   svg.setAttribute('focusable', 'false');
 
-  // Two strokes keep the arrow legible over cities, water and mountain relief.
-  for (const [color, width] of [['#FFFCF8', '8'], ['#9B6F16', '4']]) {
-    const path = document.createElementNS(ns, 'path');
-    path.setAttribute('d', 'M3 15H29M20 6L29 15L20 24');
-    path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', color);
-    path.setAttribute('stroke-width', width);
-    path.setAttribute('stroke-linecap', 'round');
-    path.setAttribute('stroke-linejoin', 'round');
-    svg.appendChild(path);
-  }
+  // A compact arrowhead, centered on the actual route leg.
+  // No long tail or thick white halo that looks like a second route.
+  const path = document.createElementNS(ns, 'path');
+  path.setAttribute('d', 'M3 3L16 9L3 15L6.5 9Z');
+  path.setAttribute('fill', '#9B6F16');
+  path.setAttribute('stroke', '#FFFCF8');
+  path.setAttribute('stroke-width', '1.4');
+  path.setAttribute('stroke-linejoin', 'round');
+  svg.appendChild(path);
   holder.appendChild(svg);
   return holder;
 }

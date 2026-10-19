@@ -1,14 +1,11 @@
-import {routeDirectionArrows} from '../lib/geo-map-direction.mjs';
+import {routeDirectionArrows, routeLegs} from '../lib/geo-map-direction.mjs';
 import {fitGeoCamera} from '../lib/geo-map-camera.mjs';
 
 // Routes are static schematics: no paid routing/geocoding requests.
 const ROUTE_SOURCE = 'adatours-route-lines';
 const ROUTE_STYLE = {
   simplificationRate: 0,
-  stroke: [
-    {width: 9, color: '#FFFCF8'},
-    {width: 4.5, color: '#A87518'},
-  ],
+  stroke: [{width: 3, color: '#8E691F'}],
 };
 
 // Never display API keys in an error message or console diagnostics.
@@ -84,12 +81,16 @@ export async function renderYandexMap(
 
   try {
     if (data.route?.length > 1) {
-      map.addChild(new YMapFeature({
-        id: 'adatours-itinerary-route',
-        source: ROUTE_SOURCE,
-        geometry: {type: 'LineString', coordinates: data.route},
-        style: ROUTE_STYLE,
-      }));
+      // A feature per geographic leg prevents any global wrap or accidental
+      // connection across the opposite hemisphere.
+      routeLegs(data.route).forEach(({segment, coordinates}, index) => {
+        map.addChild(new YMapFeature({
+          id: 'adatours-itinerary-leg-' + segment + '-' + index,
+          source: ROUTE_SOURCE,
+          geometry: {type: 'LineString', coordinates},
+          style: ROUTE_STYLE,
+        }));
+      });
     }
   } catch (error) {
     throw failure('YANDEX_ROUTE', error);

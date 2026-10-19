@@ -105,11 +105,13 @@ It leaves generous margin for numbered markers, supports the antimeridian and
 does not call Google/Yandex \`fitBounds\`. Both adapters receive the same result.
 Single-place pages retain their type-based initial zoom.
 
-The route feature uses an explicit matching data-source/layer, a high-contrast
-two-stroke itinerary line and a direction arrow for each visibly long leg.
-\`geo-map-direction.mjs\` projects each straight schematic segment, places the
-arrow at 55% of its length, and excludes short local hops (avoiding a cluster
-of arrows around Rio or Cusco). Both providers use the same arrow data.
+The route uses an explicit matching data-source/layer, independently rendered
+two-point legs and one narrow gold stroke without a wide white outer halo.
+\`geo-map-direction.mjs\` divides legs at the antimeridian when needed, so no
+line crosses the unrelated hemisphere; the map camera continues to depend
+only on actual visit coordinates. Compact filled arrowheads sit on long legs
+at 58% of their projected length, with short local hops left unmarked.
+Both providers use the same leg geometry and direction data.
 No Directions API requests are made. On subsequent user pan/zoom, markers and
 arrows remain geographically anchored; there is no automatic recentering.
 

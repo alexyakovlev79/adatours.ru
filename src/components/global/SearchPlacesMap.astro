@@ -57,20 +57,20 @@ const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN
     font-weight:500;font-size:clamp(18px,2vw,22px);line-height:1.15}
   .search-places-map__card p{font-size:13px;line-height:1.4;margin:0 0 10px;
     overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
-  .search-places-map__card a{color:#795C19;font-size:13px;
+  .search-places-map__card a{color:var(--color-brand-deep);font-size:13px;
     font-weight:600;text-decoration:underline}
   .search-places-map__close{position:absolute;right:7px;top:7px;z-index:2;
     width:32px;height:32px;background:#FFFCF8;border:0;
     color:#1A1A1A;font-size:25px;line-height:1;cursor:pointer}
   .search-places-map :global(.search-places-map__pin){
     display:grid;place-items:center;width:34px;height:34px;
-    background:#F2CC67;border:2px solid #1A1A1A;
+    background:var(--color-brand);border:2px solid #1A1A1A;
     border-radius:50%;box-shadow:0 2px 9px #0003;color:#1A1A1A;
     font-size:13px;font-weight:700;cursor:pointer
   }
   .search-places-map :global(.search-places-map__pin:hover),
   .search-places-map :global(.search-places-map__pin:focus-visible){
-    background:#E6BA43;outline:2px solid #FFFCF8;outline-offset:1px
+    background:var(--color-brand-hover);outline:2px solid #FFFCF8;outline-offset:1px
   }
   @media(max-width:760px){
     .search-places-map.is-preparing{

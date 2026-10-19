@@ -57,13 +57,13 @@ const numbers = paginationNumbers(p.currentPage, p.totalPages);
     max-width: 100%;
     padding: 14px 32px;
     color: var(--color-ink);
-    background: var(--color-gold);
+    background: var(--color-brand);
     font-family: var(--font-display);
     font-size: 1.2rem;
     text-decoration: none;
     transition: background 180ms ease;
   }
-  .catalog-pagination__more:hover { background: var(--color-gold-hover, #e6ba43); }
+  .catalog-pagination__more:hover { background: var(--color-brand-hover, #18a8b2); }
   .catalog-pagination__more[aria-disabled='true'] { cursor: progress; opacity: .65; }
   .catalog-pagination__more[hidden] { display: none; }
   .catalog-pagination__status { max-width: 650px; margin: 0; font-size: .95rem; }
@@ -88,7 +88,7 @@ const numbers = paginationNumbers(p.currentPage, p.totalPages);
     text-decoration: none;
     border-bottom: 1px solid transparent;
   }
-  .catalog-pagination__number.is-current { border-color: var(--color-gold-deep, #c89a20); font-weight: 600; }
+  .catalog-pagination__number.is-current { border-color: var(--color-brand-deep, #08757d); font-weight: 600; }
   a.catalog-pagination__number:hover, .catalog-pagination__direction:hover { border-color: currentColor; }
   .catalog-pagination__gap { padding-inline: 2px; }
   .catalog-pagination__first { color: inherit; text-underline-offset: .25em; }

@@ -203,7 +203,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     opacity: .8;
     cursor: pointer;
   }
-  /* Use the same full-row gold hover as the other desktop dropdowns.
+  /* Use the same full-row brand-color hover as the other desktop dropdowns.
      The parent row owns the background, covering both link and expand button. */
   .mc-menu__country:hover,
   .mcc:hover,
@@ -214,14 +214,14 @@ const items = (serverLinks ? combinations : []).map((row) => ({
   .mc-menu__back:hover,
   .mc-menu__back:focus-visible {
     color: inherit;
-    background: color-mix(in srgb, var(--color-gold) 18%, transparent);
+    background: color-mix(in srgb, var(--color-brand) 18%, transparent);
   }
   .mc-menu__country,
   .mcc {
     transition: background-color 180ms var(--ease-out);
   }
   .mc-menu :is(a, button):focus-visible {
-    outline: 2px solid var(--color-gold-deep);
+    outline: 2px solid var(--color-brand-deep);
     outline-offset: 3px;
   }
   @media (min-width: 1241px) {

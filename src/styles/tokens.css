@@ -5,11 +5,17 @@
   --color-ink-deep: #131412;
   --color-muted: #767676;
   --color-line: rgba(26, 26, 26, 0.18);
-  --color-gold: #f2cc67;
-  --color-gold-hover: #e6ba43;
-  --color-gold-soft: #f7e0a4;
-  --color-champagne: #e9d5a2;
-  --color-gold-deep: #c89a20;
+  /* Ada Tours brand turquoise. The gold-named aliases keep older components compatible. */
+  --color-brand: #22BFC8;
+  --color-brand-hover: #18A8B2;
+  --color-brand-soft: #D9F5F6;
+  --color-brand-subtle: #D0EAEC;
+  --color-brand-deep: #08757D;
+  --color-gold: var(--color-brand);
+  --color-gold-hover: var(--color-brand-hover);
+  --color-gold-soft: var(--color-brand-soft);
+  --color-champagne: var(--color-brand-subtle);
+  --color-gold-deep: var(--color-brand-deep);
 
   --font-display: Futura, "Century Gothic", Avenir, Montserrat, Arial, sans-serif;
   --font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;

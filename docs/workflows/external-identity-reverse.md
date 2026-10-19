@@ -40,3 +40,37 @@
 Отдельный мастер сводит из подтвержденных результатов **source-first журнал** (исходная страница, статус, RU цель, evidence, timestamp) и **RU-first представление** (RU canonical и три доменные колонки, допускающие несколько источников). Синхронизировать Google Sheets по source URL и RU canonical/stable ID, **не по прежнему номеру строки**. При сбое Sheets повторить только синхронизацию, не claim/сканирование. `sameAs` выпускать в существующий JSON-LD только из `matched_exact`, с корректным типом сущности и проверкой живой страницы; `checked_no_confirmed_pair` не публиковать. Файл для применения 301 на VIP-домене — **только** `redirect_ready`: old URL → конкретный new URL → HTTP 301; сохранение путей и исключение цепочек/петель проверять при отдельном развертывании. **Само выставление статуса не включает редиректы.**
 
 Приемка полноты — сравнение списка всех обнаруженных URL каждого старого домена с состояниями, отдельные числа `confirmed/review/retry/pending/leased`, дата полноты sitemap/CMS; рост RU до 5227 и выше сам по себе очередь не увеличивает. В начале нового дня допускается только инкрементальное дополнение внешних URL, без перенумерации и сброса готовых evidence.
+
+## Точный запуск в ChatGPT Code Mode
+
+Один раз за чат: загрузить рабочий модуль **из текущего main**, создать owner/token и удерживать их до закрытия партии.
+
+~~~javascript
+const repo='alexyakovlev79/adatours.ru';
+const path='scripts/reverse-identity-remote.mjs';
+const f=(await tools.mcp__GitHub__fetch_file({repository_full_name:repo,path,ref:'main'})).result;
+const src=f.content||(await tools.mcp__GitHub__fetch_blob({repository_full_name:repo,blob_sha:f.sha})).result.content;
+const reverse=new Function(src.replace(/^export /gm,'')+';return runReverseIdentity;')();
+const ownerId='reverse-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,14);
+const token='lease-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,14);
+const claim=await reverse(tools,{action:'claim',ownerId,token,limit:50});
+text(claim); // Сохранить exact ownerId/token/batchId в текущем чате. Не генерировать их повторно.
+~~~
+
+После исследования первого десятка:
+
+~~~javascript
+// Те же reverse, ownerId, token и claim.batchId предыдущего вызова.
+// На каждую исходную страницу ровно один завершенный результат.
+const saved=await reverse(tools,{action:'complete',ownerId,token,
+  batchId:claim.batchId,part:1,results:[
+    {sourceUrl:'https://adatours.com/example',status:'matched_exact',
+     ruUrl:'https://adatours.ru/example/',evidence:['точная ссылка/снимок и проверенные идентичные факты'],note:'тот же продукт и программа'}
+  ]});
+text(saved);
+~~~
+
+Пример above описывает **формат вызова**, не фактическое соответствие и не разрешение использовать выдуманный URL. Отправлять реальные адреса только из своего claim. Для остальных частей `part:2..5`; каждый part содержит от 1 до 10 новых source URL, в обычной полной партии — по 10. При необходимости `renew` с тем же owner/token/batchId; `release` отдает свои неразобранные URL обратно в очередь. Для диагностики без изменения очереди — `action:'status'` или `claim` с `dryRun:true`. Для спорных/сбойных задач отдельно `claim` с `lane:'review'` или `lane:'retry'`. Старые миграционные кандидаты считать подсказкой, а не `matched_exact` без исследования. После каждой готовой десятки выводить короткий факт сохранения и продолжать до конца выбранных 50, не ждать «дальше».
+
+**Активация нового внешнего инвентаря:** добавлять его URL в versioned main и ту же точную статическую очередь `external-identity/staging` через безопасный CAS; не менять существующие source URL и завершенные статусы, не перезахватывать старые задачи. После новой инвентаризации VIP обновить `discoveryStatus` с `pending_discovery` на `partial` или `complete` только при реальном наличии source URLs и доказательств.
+

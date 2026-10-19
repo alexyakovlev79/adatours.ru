@@ -6,8 +6,9 @@ interface Props {
   title?: string;
   locale?: 'ru' | 'en' | 'cn';
   entityType?: 'tour' | 'excursion' | 'destination';
+  showHeading?: boolean;
 }
-const {data, title = 'Маршрут на карте', locale = 'ru', entityType = 'tour'} = Astro.props;
+const {data, title = 'Маршрут на карте', locale = 'ru', entityType = 'tour', showHeading = true} = Astro.props;
 const yandexKey = import.meta.env.PUBLIC_YANDEX_MAPS_API_KEY || '';
 const googleKey = import.meta.env.PUBLIC_GOOGLE_MAPS_API_KEY || '';
 const googleMapId = import.meta.env.PUBLIC_GOOGLE_MAP_ID || '';
@@ -39,10 +40,12 @@ const payload = data ? {
     data-google-map-id={googleMapId}
     data-geo-map-payload={JSON.stringify(payload)}
     aria-label={title}>
-    <div class="geo-map__heading">
-      <p class="geo-map__eyebrow">{entityType === 'excursion' ? 'География экскурсии' : entityType === 'destination' ? 'География места' : 'География путешествия'}</p>
-      <h2>{title}</h2>
-    </div>
+    {showHeading && (
+      <div class="geo-map__heading">
+        <p class="geo-map__eyebrow">{entityType === 'excursion' ? 'География экскурсии' : entityType === 'destination' ? 'География места' : 'География путешествия'}</p>
+        <h2>{title}</h2>
+      </div>
+    )}
     <div class="geo-map__viewport">
       <div class="geo-map__canvas" data-geo-map-canvas aria-label="Интерактивная карта"></div>
       <p class="geo-map__status" data-geo-map-status aria-live="polite">Карта загрузится при прокрутке страницы.</p>

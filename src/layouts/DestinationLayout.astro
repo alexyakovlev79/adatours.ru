@@ -279,13 +279,19 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     </>
   )}
 
-  {geoMapData && <GeoRouteMap data={geoMapData}
-    title={relatedDestinations.length > 0 ? 'Место и куда поехать дальше' : 'Место на карте'}
-    locale="ru" entityType="destination" />}
+  {geoMapData && relatedDestinations.length === 0 && (
+    <GeoRouteMap data={geoMapData} title="Место на карте" locale="ru" entityType="destination" />
+  )}
 
   {relatedDestinations.length > 0 && (
     <>
-      <EditorialStatement eyebrow="Продолжить маршрут" text="Куда поехать дальше" />
+      <div class:list={['destination-next-intro', {'destination-next-intro--mapped': Boolean(geoMapData)}]}>
+        <EditorialStatement eyebrow="Продолжить маршрут" text="Куда поехать дальше" />
+        {geoMapData && (
+          <GeoRouteMap data={geoMapData} title="Место и куда поехать дальше"
+            locale="ru" entityType="destination" showHeading={false} />
+        )}
+      </div>
       {relatedDestinations.map((item, index) => {
         const relatedCountry = countryById.get(item.data.countryId);
         const relatedCountryName = relatedCountry?.data.name ?? '';
@@ -372,6 +378,16 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 </script>
 
 <style>
+  /* On place pages the map is part of “Куда поехать дальше”, not a
+     separate editorial section with two accumulated vertical spacings. */
+  .destination-next-intro--mapped :global(.statement.section) {
+    padding-bottom: clamp(16px, 2.2vw, 28px);
+  }
+  .destination-next-intro--mapped :global(.geo-map) {
+    margin-top: 0;
+    margin-bottom: clamp(20px, 3vw, 36px);
+  }
+
   .destination-copy {
     padding-block: 16px clamp(28px, 3vw, 40px);
   }

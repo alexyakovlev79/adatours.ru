@@ -15,13 +15,16 @@ export function createSearchPlacesMap(root) {
   const close=root.querySelector('[data-search-map-card-close]');
   const keys={yandex:root.dataset.yandexKey,google:root.dataset.googleKey};
   let geoPromise=null,providerPromise=null,instance=null,generation=0;
-  let lastPaint='',active=false;
+  let lastPaint='',active=false,photoRequestId=0;
   const DEFAULT_CENTER=[-62,-15];
   const showStatus=message=>{
     if(!status||!active)return;
     status.textContent=message;status.hidden=false;
   };
-  const hideCard=()=>{if(card)card.hidden=true;};
+  const hideCard=()=>{
+    ++photoRequestId;
+    if(card)card.hidden=true;
+  };
   const photoUrl=value=>{
     const image=String(value||'').trim();
     if(!image)return '';
@@ -36,11 +39,26 @@ export function createSearchPlacesMap(root) {
     cardTitle.textContent=point.name;
     cardSummary.textContent=point.description||'';
     cardSummary.hidden=!point.description;
+    // Do not expose a broken image or reserve space while the thumbnail loads.
     const photo=photoUrl(point.image);
-    if(photo){cardPhoto.src=photo;cardPhoto.alt=point.name;cardPhoto.hidden=false;}
-    else{cardPhoto.removeAttribute('src');cardPhoto.hidden=true;}
+    const request=++photoRequestId;
+    cardPhoto.hidden=true;
+    cardPhoto.alt='';
+    cardPhoto.removeAttribute('src');
     cardLink.href=point.href;
     card.hidden=false;
+    if(photo){
+      cardPhoto.src=photo;
+      void cardPhoto.decode().then(()=>{
+        if(request!==photoRequestId||card.hidden||!cardPhoto.naturalWidth)return;
+        cardPhoto.alt=point.name;
+        cardPhoto.hidden=false;
+      }).catch(()=>{
+        if(request!==photoRequestId)return;
+        cardPhoto.hidden=true;
+        cardPhoto.removeAttribute('src');
+      });
+    }
   };
   close?.addEventListener('click',hideCard);
   const createPin=(point,onSelect)=>{

@@ -16,11 +16,13 @@ const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN
     Введите хотя бы 2 символа, чтобы увидеть места на карте.
   </p>
   <article class="search-places-map__card" data-search-map-card hidden>
-    <button type="button" class="search-places-map__close"
-      data-search-map-card-close aria-label="Закрыть описание места">×</button>
-    <img data-search-map-photo alt="" loading="lazy" hidden />
+    <img data-search-map-photo alt="" loading="eager" hidden />
     <div class="search-places-map__card-copy">
-      <h3 data-search-map-title></h3>
+      <div class="search-places-map__card-heading">
+        <h3 data-search-map-title></h3>
+        <button type="button" class="search-places-map__close"
+          data-search-map-card-close aria-label="Закрыть описание места">×</button>
+      </div>
       <p data-search-map-description></p>
       <a href="#" data-search-map-link>Подробнее о месте →</a>
     </div>
@@ -46,22 +48,43 @@ const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN
   }
   .search-places-map__status[hidden]{display:none}
   .search-places-map__card{
-    position:absolute;top:9px;left:9px;z-index:9;
-    width:min(278px,calc(100% - 18px));max-height:calc(100% - 48px);
-    overflow:auto;color:#1A1A1A;background:#FFFCF8;box-shadow:0 4px 20px #0003
+    position:absolute;top:10px;left:10px;z-index:9;
+    display:flex;align-items:stretch;
+    width:min(360px,calc(100% - 20px));
+    max-height:calc(100% - 54px);overflow-x:hidden;overflow-y:auto;
+    color:var(--color-ink);background:var(--color-bg);
+    border-radius:4px;box-shadow:0 8px 24px rgb(0 0 0 / 22%)
   }
-  .search-places-map__card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+  .search-places-map__card img{
+    display:block;flex:0 0 104px;width:104px;height:104px;
+    align-self:center;object-fit:cover
+  }
   .search-places-map__card img[hidden]{display:none}
-  .search-places-map__card-copy{padding:12px 15px 15px}
-  .search-places-map__card h3{margin:0 0 7px;font-family:var(--font-display);
-    font-weight:500;font-size:clamp(18px,2vw,22px);line-height:1.15}
-  .search-places-map__card p{font-size:13px;line-height:1.4;margin:0 0 10px;
-    overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
-  .search-places-map__card a{color:var(--color-brand-deep);font-size:13px;
-    font-weight:600;text-decoration:underline}
-  .search-places-map__close{position:absolute;right:7px;top:7px;z-index:2;
-    width:32px;height:32px;background:#FFFCF8;border:0;
-    color:#1A1A1A;font-size:25px;line-height:1;cursor:pointer}
+  .search-places-map__card-copy{flex:1;min-width:0;padding:12px 14px}
+  .search-places-map__card-heading{
+    display:flex;align-items:flex-start;justify-content:space-between;gap:8px
+  }
+  .search-places-map__card h3{
+    min-width:0;margin:0;font-family:var(--font-display);
+    font-weight:500;font-size:clamp(18px,2vw,22px);line-height:1.15;
+    overflow-wrap:anywhere
+  }
+  .search-places-map__card p{
+    margin:8px 0;font-size:13px;line-height:1.4;
+    overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical
+  }
+  .search-places-map__card a{
+    display:inline-block;color:var(--color-brand-deep);font-size:13px;
+    line-height:1.4;font-weight:600;text-decoration:underline
+  }
+  .search-places-map__close{
+    display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;
+    margin:-4px -4px 0 0;padding:0;background:transparent;border:0;
+    color:var(--color-ink);font-size:24px;line-height:1;cursor:pointer
+  }
+  .search-places-map__close:focus-visible{
+    outline:2px solid var(--color-brand-deep);outline-offset:2px
+  }
   .search-places-map :global(.search-places-map__pin){
     display:grid;place-items:center;width:34px;height:34px;
     background:var(--color-brand);border:2px solid #1A1A1A;
@@ -76,9 +99,12 @@ const mediaOrigin=process.env.MEDIA_CDN_ORIGIN||import.meta.env.MEDIA_CDN_ORIGIN
     .search-places-map.is-preparing{
       width:calc(100vw - 2 * var(--gutter))!important
     }
-    .search-places-map__card{width:min(245px,calc(100% - 18px))}
-    .search-places-map__card img{max-height:130px}
-    .search-places-map__card-copy{padding:9px 12px 12px}
-    .search-places-map__card p{-webkit-line-clamp:2}
+    .search-places-map__card{
+      top:9px;left:9px;width:calc(100% - 18px);
+      max-height:calc(100% - 56px)
+    }
+    .search-places-map__card img{flex-basis:86px;width:86px;height:96px}
+    .search-places-map__card-copy{padding:10px 12px}
+    .search-places-map__card h3{font-size:18px}
   }
 </style>

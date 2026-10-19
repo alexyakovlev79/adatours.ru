@@ -51,12 +51,12 @@
     "step": 3,
     "domain": "adatours.com",
     "action": "Next 50 frozen objects after cursor 2200, starting https://adatours.ru/brazil/place/porto-jofre/tour/; preserve completed batches 001–044 and out-of-order batch 046.",
-    "status": "pending",
+    "status": "superseded_no_new_claims",
     "object_limit": 50,
     "queue": "adatours.com.json",
     "inventory": "adatours-com-url-inventory-20261012.json"
   },
-  "resume": "Read plan.json and the selected domain queue. Run one batch, persist results/cursor and checkpoint commit, report counts, then stop until the user says далее.",
+  "resume": "RU-first queue archived; start new source-first 'сверяй дальше' using docs/workflows/external-identity-reverse.md and external-identity/staging. Do not reserve more RU batches.",
   "completed_step": 2,
   "schema_implementation": "not_authorized_by_this_research_plan",
   "queues": [
@@ -75,7 +75,7 @@
     "geography.json",
     "completed-vip.json"
   ],
-  "active_step": 3,
+  "active_step": "superseded_stop_ru_first_claims",
   "last_checkpoint": {
     "step": 3,
     "domain": "adatours.com",
@@ -349,5 +349,8 @@
     "contiguous_cursor": 2200,
     "sync_pending": false,
     "overlap_with_pending_065": 17
-  }
+  },
+  "supersededOn": "2026-10-19",
+  "supersededBy": "docs/workflows/external-identity-reverse.md",
+  "previousActiveStep": 3
 }

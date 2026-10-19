@@ -350,3 +350,11 @@ test('Google search map redraws legacy pins without creating a second Map',async
         {width:400,height:170,points:next.points,pointZoom:8}).center[1]);
   }finally{globalThis.window=prev;}
 });
+
+
+test('search matches use relevance layering with number one above all others',()=>{
+  const points=sample.points.map((p,i)=>({...p,position:i+1,isSearchResult:true}));
+  const markers=orderedGeoMapMarkers({points,route:[]});
+  assert.deepEqual(markers.map(x=>x.point.position),[3,2,1]);
+  assert.deepEqual(markers.map(x=>x.zIndex),[998,999,1000]);
+});

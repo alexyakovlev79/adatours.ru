@@ -315,3 +315,10 @@ update markers and camera on the existing instance using
 `Map.moveCamera`. No geocoding/routing API, per-letter network calls or map
 reinitialization. Zero-result queries clear pins without affecting the text
 search. Close or switch tabs to suspend updates; reopening reuses the same map.
+
+
+Search-map cleanup: after erasing the query below 2 characters, switching
+tabs, or closing the overlay, previously displayed markers are removed.
+Provider setup that finishes after query deletion also clears stale pins.
+When returning to Places, the same map and GEO index are reused.
+Search matches have relevance-based z-indexes (№1 above №2, etc.).

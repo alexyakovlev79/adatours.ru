@@ -16,6 +16,8 @@ export function orderedGeoMapMarkers(data) {
   if (!points.length) return [];
 
   const primary = points.some(point => point.isPrimary);
+  // Search matches, like recommendations, keep earlier numbers above later ones.
+  const ranked = primary || points.some(point => point.isSearchResult);
   const visits = Array.isArray(data?.route) ? data.route : [];
   const isRoute = !primary && visits.length > 0;
   const departure = isRoute
@@ -34,11 +36,11 @@ export function orderedGeoMapMarkers(data) {
     // "Куда поехать дальше" list. Larger zIndex and later paint order win.
     // № 7 (994) must cover № 8 (993), never the reverse. There are at most
     // ten recommendations, so these distinct values remain below № 1 (1000).
-    const position = Number.isInteger(point.position) && point.position > 1
-      ? point.position : index + 2;
+    const position = Number.isInteger(point.position) && point.position >= 1
+      ? point.position : index + 1;
     const zIndex = point.isPrimary || point === departure
       ? MAP_MARKER_Z_INDEX.start
-      : primary
+      : ranked
         ? MAP_MARKER_Z_INDEX.start - position + 1
         : point === arrival
           ? MAP_MARKER_Z_INDEX.finish

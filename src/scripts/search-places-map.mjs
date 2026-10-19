@@ -97,7 +97,11 @@ export function createSearchPlacesMap(root) {
           instance=ready;
           lastPaint=ready.initialSignature;
         }
-        if(current!==generation||root.hidden)return;
+        if(current!==generation||root.hidden){
+          // The visitor may have cleared or changed tabs during API setup.
+          if(!desired.length)redraw([]);
+          return;
+        }
         redraw(desired);
         if(status)status.hidden=true;
       }catch(error){
@@ -106,13 +110,14 @@ export function createSearchPlacesMap(root) {
       }
     },
     clear(){
-      ++generation;desired=[];lastPaint='';redraw([]);
+      ++generation;desired=[];redraw([]);
       if(card)card.hidden=true;
       showStatus('Введите хотя бы 2 символа, чтобы увидеть места на карте.');
     },
     suspend(){
-      ++generation;
+      ++generation;desired=[];redraw([]);
       if(card)card.hidden=true;
+      showStatus('Введите хотя бы 2 символа, чтобы увидеть места на карте.');
     },
   };
 }

@@ -322,3 +322,24 @@ tabs, or closing the overlay, previously displayed markers are removed.
 Provider setup that finishes after query deletion also clears stale pins.
 When returning to Places, the same map and GEO index are reused.
 Search matches have relevance-based z-indexes (№1 above №2, etc.).
+
+
+## Search Places map: prewarmed side layout (19.10.2026)
+
+An explicit click opening the global search dialog initializes one
+map with an empty marker list at a real offscreen 4:3 canvas size;
+the map provider script and tiles can start loading before the visitor
+chooses the Places tab. Only the Places tab fetches the compact GEO index.
+The map API and instance are reused when the text search changes.
+
+On desktop, the results occupy the left half of the container and
+the 4:3 map the right half, with the "Найдено" count and first results
+visible immediately on the left. On mobile, the same 4:3 map sits above
+full-width results. Other tabs retain full-width search listings.
+
+Clicking a pin shows a map-contained card with a 4:3 photo, title,
+short Pagefind summary and destination link. The image is lazily fetched
+only when selected, and relative /media paths use the configured CDN.
+Pagefind remains the source of matching results and metadata; GEO data
+still supplies only verified coordinates and is not refetched on every
+keystroke.

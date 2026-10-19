@@ -14,13 +14,16 @@ test('Pagefind URLs match GEO rows regardless of host, query and trailing slash'
     '/brazil/place/rio-de-janeiro/');
   const result=searchGeoPoints([
     {url:'/argentina/place/puerto-iguazu/',meta:{title:'Пуэрто-Игуасу'}},
-    {url:'/brazil/place/rio-de-janeiro/?utm_source=search',meta:{title:'Рио'}},
+    {url:'/brazil/place/rio-de-janeiro/?utm_source=search',
+      meta:{title:'Рио',image:'/media/rio.webp',summary:'Город на побережье'}},
     {url:'/brazil/place/rio-de-janeiro/',meta:{title:'Дубль'}},
     {url:'/colombia/place/unknown/',meta:{title:'Без паспорта'}},
   ],index);
   assert.deepEqual(result.map(x=>x.name),['Пуэрто-Игуасу','Рио']);
   assert.deepEqual(result.map(x=>x.position),[1,2]);
   assert.ok(result.every(x=>x.isSearchResult));
+  assert.equal(result[1].image,'/media/rio.webp');
+  assert.equal(result[1].description,'Город на побережье');
 });
 test('empty and non-GEO search results do not create markers',()=>{
   assert.deepEqual(searchGeoPoints([],new Map()),[]);

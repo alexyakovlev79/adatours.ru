@@ -53,8 +53,10 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         <button type="button" aria-pressed="false" data-search-filter="excursion">Экскурсии</button>
       </div>
 
-      <SearchPlacesMap />
-      <SearchResults />
+      <div class="search-overlay__results-layout" data-search-results-layout>
+        <SearchResults />
+        <SearchPlacesMap />
+      </div>
     </div>
   </div>
 </div>
@@ -73,6 +75,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
   const list = overlay?.querySelector('[data-search-list]');
   const template = overlay?.querySelector('[data-search-result-template]');
   const placesMapRoot = overlay?.querySelector('[data-search-places-map]');
+  const resultsLayout = overlay?.querySelector('[data-search-results-layout]');
 
   if (
     overlay instanceof HTMLElement &&
@@ -91,19 +94,37 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     let placesMapPromise: Promise<any> | null = null;
     let placesMapGeneration = 0;
 
-    // Neither map provider nor GEO coordinates are requested outside Places.
+    // Opening search prewarms one map; only Places fetches GEO results.
     const ensurePlacesMap = () => {
       if (!placesMapPromise && placesMapRoot instanceof HTMLElement) {
         placesMapPromise = import('../../scripts/search-places-map.mjs')
-          .then(module => module.createSearchPlacesMap(placesMapRoot));
+          .then(module => module.createSearchPlacesMap(placesMapRoot))
+          .catch(error => { placesMapPromise = null; throw error; });
       }
       return placesMapPromise;
     };
+    const warmSearchMap = () => {
+      const promise = ensurePlacesMap();
+      if (!promise) return;
+      void promise.then(map => {
+        map.show(activeFilter === 'destination');
+        return map.prewarm();
+      }).catch(() => {});
+    };
     const setPlacesMapVisible = (visible: boolean) => {
-      if (placesMapRoot instanceof HTMLElement) placesMapRoot.hidden = !visible;
+      if (resultsLayout instanceof HTMLElement)
+        resultsLayout.classList.toggle('is-places', visible);
       ++placesMapGeneration;
-      if (!visible && placesMapPromise) {
-        placesMapPromise.then(map => map?.suspend()).catch(() => {});
+      if (placesMapRoot instanceof HTMLElement) {
+        placesMapRoot.hidden = false;
+        placesMapRoot.classList.toggle('is-preparing', !visible);
+        placesMapRoot.setAttribute('aria-hidden', String(!visible));
+      }
+      if (placesMapPromise) {
+        void placesMapPromise.then(map => {
+          map.show(visible);
+          if (!visible) map.suspend();
+        }).catch(() => {});
       }
     };
     const updatePlacesMap = async (items: any[], queryId: number) => {
@@ -405,8 +426,11 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       document.body.classList.add('search-open');
       requestAnimationFrame(() => overlay.classList.add('is-open'));
       input.focus();
-      if (activeFilter === 'destination') setPlacesMapVisible(true);
+      setPlacesMapVisible(activeFilter === 'destination');
+      warmSearchMap();
       ensurePagefind().catch(() => {});
+      if (activeFilter === 'destination' && input.value.trim().length >= 2)
+        void runSearch();
     };
 
     const closeSearch = () => {
@@ -525,5 +549,24 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
   .search-filters button{padding:8px 0 7px;border:0;border-bottom:1px solid transparent;color:color-mix(in srgb,var(--color-ink) 58%,transparent);background:transparent;font-family:var(--font-display);font-size:.9rem;cursor:pointer}
   .search-filters button:hover,.search-filters button.is-active{color:var(--color-ink)}
   .search-filters button.is-active{border-bottom-color:var(--color-gold-deep)}
+  .search-overlay__results-layout.is-places{
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:clamp(20px,3vw,46px);align-items:start;margin-top:clamp(18px,2.4vw,30px)
+  }
+  .search-overlay__results-layout.is-places :global(.search-results){
+    margin-top:0;min-width:0
+  }
+  .search-overlay__results-layout.is-places :global(.search-places-map){
+    position:sticky;top:16px;min-width:0;margin-top:0
+  }
+  @media(max-width:760px){
+    .search-overlay__results-layout.is-places{
+      grid-template-columns:minmax(0,1fr);gap:14px;margin-top:16px
+    }
+    .search-overlay__results-layout.is-places :global(.search-places-map){
+      order:0;position:relative;top:auto
+    }
+    .search-overlay__results-layout.is-places :global(.search-results){order:1}
+  }
   @media(max-width:640px){.search-overlay__content{padding-top:20px}.search-overlay__input{padding-bottom:16px;font-size:clamp(2rem,10vw,3.2rem)}.search-overlay__input::placeholder{font-size:clamp(.94rem,3.8vw,1.125rem)}.search-filters{gap-inline:18px}}
 </style>

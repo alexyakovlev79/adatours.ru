@@ -32,6 +32,7 @@ export function searchGeoPoints(results,index) {
       id:path,position:points.length+1,
       name:String(data.meta?.title||path),
       description:String(data.meta?.summary||''),
+      image:String(data.meta?.image||''),
       coordinates:coords,href:data.url,isSearchResult:true,
     });
   }

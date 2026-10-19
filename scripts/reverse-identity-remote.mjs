@@ -189,6 +189,7 @@ export async function runReverseIdentity(tools, args = {}) {
       const already=normalized.filter(r=>st.records[r.sourceUrl]?.receipt===path);
       if(already.length===normalized.length)return {status:'already_saved',batchId,part,count:normalized.length,head,receipt:path};
       if(already.length)throw new Error('Mixed already-completed and uncommitted rows in same part; recover existing receipt');
+      if(st.parts?.[path])throw new Error('Part number already has an immutable receipt: '+path);
       for(const r of normalized){
         const item=st.records[r.sourceUrl];
         if(!item||item.status!=='leased'||item.ownerId!==ownerId||item.token!==token||
@@ -207,6 +208,8 @@ export async function runReverseIdentity(tools, args = {}) {
           ...(old.priorReview?{priorReview:old.priorReview}:{})};
       }
       st.updatedAt=checkedAt;
+      if(!st.parts)st.parts={};
+      st.parts[path]={batchId,part,count:output.length,urls:output.map(r=>r.sourceUrl),savedAt:checkedAt};
       const commitData=await fetchApi(base+'/git/commits/'+head);
       const tree=unwrap(await tools.mcp__GitHub__create_tree({
         repository_full_name:repo,base_tree_sha:commitData.tree.sha,

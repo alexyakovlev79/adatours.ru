@@ -65,7 +65,9 @@ const payload = data ? {
       <ol>
         {payload.points.map((point: any) => (
           <li>
-            <a href={point.href} aria-current={point.isPrimary ? 'page' : undefined}>{point.name}</a>
+            {entityType === 'destination' && point.isPrimary
+              ? <strong aria-current="page">{point.name}</strong>
+              : <a href={point.href}>{point.name}</a>}
             {point.days?.length > 0 && <small>Дни: {point.days.join(', ')}</small>}
           </li>
         ))}
@@ -114,6 +116,7 @@ const payload = data ? {
   .geo-map__legend ol { padding-left:27px; columns:2; }
   .geo-map__legend li { margin-bottom:8px; break-inside:avoid; }
   .geo-map__legend li a { color:inherit; text-decoration:underline; }
+  .geo-map__legend li strong { color:inherit; font-weight:700; }
   .geo-map__legend small { color:#777; margin-left:7px; }
   @media (max-width:720px) {
     .geo-map { margin-top:3rem; margin-bottom:3rem; }

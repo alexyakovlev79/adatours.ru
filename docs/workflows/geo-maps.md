@@ -235,3 +235,19 @@ Regression tests project real Brazil/Argentina/Peru itinerary points on
 canvases, checking all circles are visible and that the limiting side(s)
 have no more than one diameter of clearance. Also test a featured 44px
 destination circle and both provider fractional zoom settings.
+
+## Small upward camera adjustment and current place text — 19.10.2026
+
+Following the marker-edge fit, the initial camera shifts the projected
+geography **up 19 px on desktop and up 38 px on mobile**. The 720px responsive
+breakpoint is the same as the map component's mobile breakpoint. The shift is
+implemented by moving the Mercator camera center southward at the computed
+fractional zoom, without changing coordinates, zoom, ordered legs, or marker
+geometry. A clamp preserves at least 3px of space above the topmost circle on
+height-constrained maps, so these are maximum intended shifts when headroom
+permits. Applies to both Google and Yandex via `fitGeoCamera()`, including
+single-place maps.
+
+In the Destination map's ordered legend, the featured/current destination
+is rendered as a bold `<strong aria-current="page">` without an anchor; other
+destinations retain canonical links. Tour and excursion legends are unchanged.

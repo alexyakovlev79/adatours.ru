@@ -1,5 +1,6 @@
 import {routeDirectionArrows, routeLegs} from '../lib/geo-map-direction.mjs';
 import {fitGeoCamera} from '../lib/geo-map-camera.mjs';
+import {orderedGeoMapMarkers} from '../lib/geo-map-marker-priority.mjs';
 
 // One static sequence is shared by Google and Yandex; no Directions API requests.
 export async function renderGoogleMap(
@@ -62,11 +63,10 @@ export async function renderGoogleMap(
     }
   }
 
-  // Always place the featured destination above its nearby recommendations.
-  const ordered = [...data.points].sort((a,b)=>Number(!!a.isPrimary)-Number(!!b.isPrimary));
-  for (const point of ordered) {
+  // Draw route finish below departure but above intermediary stops.
+  // The featured Destination marker still wins on neighborhood maps.
+  for (const {point,zIndex} of orderedGeoMapMarkers(data)) {
     const position = {lat:point.coordinates[1],lng:point.coordinates[0]};
-    const zIndex = point.isPrimary ? 1000 : 100;
     if (AdvancedMarkerElement) {
       const pin = createPin(point, onSelect);
       new AdvancedMarkerElement({map, position, content:pin, title:point.name, zIndex});

@@ -1,5 +1,6 @@
 import {fitGeoCamera} from '../lib/geo-map-camera.mjs';
 import {coordinateKey, screenRouteGeometry} from '../lib/geo-map-screen-route.mjs';
+import {orderedGeoMapMarkers} from '../lib/geo-map-marker-priority.mjs';
 
 // Route SVG uses the actual DOM positions of YMapMarker pins.
 // Native YMapFeature line geometry previously appeared far west of those pins.
@@ -127,13 +128,13 @@ export async function renderYandexMap(
 
   const anchors=new Map();
   try{
-    // Secondary points first, the primary destination last and above all pins.
-    const ordered=[...data.points].sort((a,b)=>Number(!!a.isPrimary)-Number(!!b.isPrimary));
-    for(const point of ordered){
+    // Paint middle stops first, the route finish next, departure last.
+    // On Destination maps the featured place retains the highest priority.
+    for(const {point,zIndex} of orderedGeoMapMarkers(data)){
       const marker=createPin(point,onSelect);
       anchors.set(coordinateKey(point.coordinates),marker);
       map.addChild(new YMapMarker({
-        coordinates:point.coordinates,zIndex:point.isPrimary?1000:100,
+        coordinates:point.coordinates,zIndex,
       },marker));
     }
     attachRouteOverlay(canvas,map,data.route,anchors,YMapListener);

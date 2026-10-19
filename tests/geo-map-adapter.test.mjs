@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {renderYandexMap} from '../src/scripts/geo-map-yandex.mjs';
 import {renderGoogleMap} from '../src/scripts/geo-map-google.mjs';
 import {fitGeoCamera} from '../src/lib/geo-map-camera.mjs';
+import {orderedGeoMapMarkers, MAP_MARKER_Z_INDEX} from '../src/lib/geo-map-marker-priority.mjs';
 
 const sample = {
   points: [
@@ -43,7 +44,9 @@ test('Yandex uses the correct camera and pins without detached feature lines',as
     assert.equal(map.children.filter(x=>x instanceof Feature).length,0);
     assert.equal(map.children.filter(x=>x instanceof Marker && x.element.kind==='pin').length,3);
     assert.equal(map.children.filter(x=>x instanceof Marker && x.element.kind==='arrow').length,0);
-    assert.ok(map.children.filter(x=>x instanceof Marker && x.element.kind==='pin').every(x=>x.props.zIndex===100));
+    const pins=map.children.filter(x=>x instanceof Marker && x.element.kind==='pin');
+    assert.deepEqual(pins.map(x=>x.element.id),['iguacu','lima','rio']);
+    assert.deepEqual(pins.map(x=>x.props.zIndex),[100,900,1000]);
   } finally {globalThis.window=previous;}
 });
 
@@ -114,6 +117,9 @@ test('Google uses the same custom camera and directions instead of provider fitB
     assert.ok(created.polylines.every(x=>x.path.length===2));
     assert.ok(created.polylines.every(x=>x.strokeColor!=='#FFFCF8' && x.strokeWeight<=3));
     assert.ok(created.markers.length>sample.points.length);
+    const pins=created.markers.filter(x=>x.title);
+    assert.deepEqual(pins.map(x=>x.title),['Фоз-ду-Игуасу','Лима','Рио-де-Жанейро']);
+    assert.deepEqual(pins.map(x=>x.zIndex),[100,900,1000]);
   }finally {globalThis.window=previous;}
 });
 
@@ -165,4 +171,49 @@ test('Yandex and Google raise the featured point and color secondary markers',as
     assert.ok(created.slice(0,2).every(m=>m.zIndex===100 && m.icon.fillColor==='#B8D5E2'));
     assert.equal(created.at(-1).icon.fillColor,'#F2CC67');
   }finally{globalThis.window=previous;}
+});
+
+
+test('excursion departure and last visited marker always overlay intermediate stops',()=>{
+  const markers=orderedGeoMapMarkers(sample);
+  assert.deepEqual(markers.map(x=>x.point.position),[2,3,1]);
+  assert.deepEqual(markers.map(x=>x.zIndex),[
+    MAP_MARKER_Z_INDEX.normal,MAP_MARKER_Z_INDEX.finish,MAP_MARKER_Z_INDEX.start,
+  ]);
+});
+
+test('return visit gives actual last route stop second-highest priority',()=>{
+  const data={...sample,route:[
+    sample.points[0].coordinates, sample.points[2].coordinates,
+    sample.points[1].coordinates,
+  ]};
+  const markers=orderedGeoMapMarkers(data);
+  assert.deepEqual(markers.map(x=>x.point.id),['lima','iguacu','rio']);
+  assert.deepEqual(markers.map(x=>x.zIndex),[100,900,1000]);
+});
+
+test('returning to departure leaves marker one on top, no conflicting finish',()=>{
+  const data={...sample,route:[
+    sample.points[0].coordinates,sample.points[1].coordinates,
+    sample.points[0].coordinates,
+  ]};
+  const markers=orderedGeoMapMarkers(data);
+  assert.equal(markers.at(-1).point.position,1);
+  assert.equal(markers.at(-1).zIndex,1000);
+  assert.ok(markers.slice(0,-1).every(x=>x.zIndex===100));
+});
+
+test('destination neighborhood still uses only featured-place priority',()=>{
+  const data={...sample,route:[],points:sample.points.map((p,i)=>({
+    ...p,isPrimary:i===0,isRelated:i!==0,
+  }))};
+  const markers=orderedGeoMapMarkers(data);
+  assert.deepEqual(markers.map(x=>x.zIndex),[100,100,1000]);
+  assert.equal(markers.at(-1).point.id,'rio');
+});
+
+test('one-point tour marker stays highest; missing routes remain benign',()=>{
+  const one={points:[sample.points[0]],route:[sample.points[0].coordinates]};
+  assert.deepEqual(orderedGeoMapMarkers(one).map(x=>x.zIndex),[1000]);
+  assert.deepEqual(orderedGeoMapMarkers({points:[],route:[]}),[]);
 });

@@ -251,3 +251,24 @@ single-place maps.
 In the Destination map's ordered legend, the featured/current destination
 is rendered as a bold `<strong aria-current="page">` without an anchor; other
 destinations retain canonical links. Tour and excursion legends are unchanged.
+
+
+## Route marker stacking — 19.10.2026
+
+Tours and Excursions now prioritize overlapping circles through the single
+provider-neutral `src/lib/geo-map-marker-priority.mjs` helper. The starting
+marker (position 1) has zIndex **1000** and is rendered last, ensuring it is
+visible above every other route marker. The marker for the **actual final
+visit** in the ordered `route[]` (not necessarily the highest unique marker
+number when a route returns to an earlier place) has zIndex **900**, above
+ordinary stops (100) but below departure. On routes returning directly to
+departure the start remains at 1000 and wins; no second marker is created.
+Both the Yandex YMapMarker and the Google advanced/legacy marker adapters
+reuse the identical ordered list and zIndex values. Destination neighborhood
+maps keep their established rule: only the featured current place is raised
+to 1000, unrelated neighbors stay at 100.
+
+The marker identity, visit order, GPS coordinates, route SVG geometry,
+camera fit, lazy loading and circle colors remain unchanged. Tests include
+normal 3-stop routes, arrival at an earlier visited stop, return to departure,
+single-point trips and unchanged Destination prominence.

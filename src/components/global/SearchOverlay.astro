@@ -93,6 +93,8 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
     let previousFocus: HTMLElement | null = null;
     let placesMapPromise: Promise<any> | null = null;
     let placesMapGeneration = 0;
+    const shouldShowPlacesMap = () =>
+      activeFilter === 'destination' && input.value.trim().length >= 2;
 
     // Opening search prewarms one map; only Places fetches GEO results.
     const ensurePlacesMap = () => {
@@ -107,7 +109,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       const promise = ensurePlacesMap();
       if (!promise) return;
       void promise.then(map => {
-        map.show(activeFilter === 'destination');
+        map.show(shouldShowPlacesMap());
         return map.prewarm();
       }).catch(() => {});
     };
@@ -128,12 +130,12 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       }
     };
     const updatePlacesMap = async (items: any[], queryId: number) => {
-      if (activeFilter !== 'destination' || overlay.hidden) return;
+      if (!shouldShowPlacesMap() || overlay.hidden) return;
       const generation = ++placesMapGeneration;
       try {
         const map = await ensurePlacesMap();
         if (!map || generation !== placesMapGeneration ||
-            queryId !== requestId || activeFilter !== 'destination' ||
+            queryId !== requestId || !shouldShowPlacesMap() ||
             overlay.hidden) return;
         await map.update(items.map(item => item.data));
       } catch (error) {
@@ -400,13 +402,14 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       // then reuse the existing 120ms Pagefind debounce before redrawing pins.
       ++requestId;
       ++placesMapGeneration;
+      setPlacesMapVisible(shouldShowPlacesMap());
       window.clearTimeout(debounceId);
       debounceId = window.setTimeout(runSearch, 120);
     };
 
     const setFilter = (value: string) => {
       activeFilter = value;
-      setPlacesMapVisible(value === 'destination');
+      setPlacesMapVisible(shouldShowPlacesMap());
       filters.forEach((button) => {
         if (button instanceof HTMLButtonElement) {
           const active = button.dataset.searchFilter === value;
@@ -426,11 +429,10 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       document.body.classList.add('search-open');
       requestAnimationFrame(() => overlay.classList.add('is-open'));
       input.focus();
-      setPlacesMapVisible(activeFilter === 'destination');
+      setPlacesMapVisible(shouldShowPlacesMap());
       warmSearchMap();
       ensurePagefind().catch(() => {});
-      if (activeFilter === 'destination' && input.value.trim().length >= 2)
-        void runSearch();
+      if (shouldShowPlacesMap()) void runSearch();
     };
 
     const closeSearch = () => {

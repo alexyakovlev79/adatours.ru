@@ -60,3 +60,12 @@ Russia without VPN, then independently from an international network. Verify
 the three maps' route order, cards, fit-to-bounds and mobile. After the pilot,
 switch from the three-ID allowlist to all active Tour/Destination/Excursion pages
 with resolved GEO points; no extra MD fields or photo copies are necessary.
+
+## Activation record — 2026-10-19
+
+The owner configured a Yandex Maps JavaScript API key for `adatours.ru`
+and added the repository Actions secret `YANDEX_MAPS_JS_API_KEY`.
+Deploying again is necessary because Astro embeds its public browser key
+only during the build. The three-page allowlist remains in effect; full
+catalogue activation requires the pilot test from Russia without VPN.
+Never copy the secret value into Git, documentation or CI logs.

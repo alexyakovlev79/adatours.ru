@@ -30,6 +30,32 @@ export function loadProviderScript(id, url) {
   return scriptLoads.get(id);
 }
 
+export function createDirectionalArrow(angle) {
+  const holder = document.createElement('span');
+  holder.className = 'geo-map__direction';
+  holder.setAttribute('aria-hidden', 'true');
+  holder.style.setProperty('--direction-angle', String(angle) + 'deg');
+
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', '0 0 36 30');
+  svg.setAttribute('focusable', 'false');
+
+  // Two strokes keep the arrow legible over cities, water and mountain relief.
+  for (const [color, width] of [['#FFFCF8', '8'], ['#9B6F16', '4']]) {
+    const path = document.createElementNS(ns, 'path');
+    path.setAttribute('d', 'M3 15H29M20 6L29 15L20 24');
+    path.setAttribute('fill', 'none');
+    path.setAttribute('stroke', color);
+    path.setAttribute('stroke-width', width);
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('stroke-linejoin', 'round');
+    svg.appendChild(path);
+  }
+  holder.appendChild(svg);
+  return holder;
+}
+
 export function createPin(point, onSelect) {
   const button = document.createElement('button');
   button.type = 'button';
@@ -107,11 +133,11 @@ async function mount(root) {
       if (provider === 'yandex') {
         const {renderYandexMap} = await import('./geo-map-yandex.mjs');
         await renderYandexMap(element, payload, keys.yandex, select,
-          loadProviderScript, createPin, root.dataset.locale);
+          loadProviderScript, createPin, root.dataset.locale, createDirectionalArrow);
       } else {
         const {renderGoogleMap} = await import('./geo-map-google.mjs');
         await renderGoogleMap(element, payload, keys.google, root.dataset.googleMapId,
-          select, loadProviderScript, createPin, root.dataset.locale);
+          select, loadProviderScript, createPin, root.dataset.locale, createDirectionalArrow);
       }
       status.hidden = true;
       root.dataset.mapReady = provider;

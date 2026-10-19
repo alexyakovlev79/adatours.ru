@@ -92,3 +92,28 @@ If the stage is `YANDEX_SCRIPT`, verify browser network access to
 Referer restriction in the developer console. Do not silently switch to a
 provider without its own correctly configured key. The production map must
 not send client-side errors or keys to any server or analytics endpoint.
+
+## Automatic initial map camera and route arrows — 19.10.2026
+
+The pilot route reported correctly geocoded South American places, but passing
+\`location.bounds\` to Yandex produced a viewport clipping northern and southern
+destinations. Astro still supplies WGS84 \`[lng, lat]\` and the unchanged visit order.
+
+\`geo-map-camera.mjs\` now computes Web Mercator center and zoom locally from
+**all ordered visited coordinates** and the actual container size (responsive).
+It leaves generous margin for numbered markers, supports the antimeridian and
+does not call Google/Yandex \`fitBounds\`. Both adapters receive the same result.
+Single-place pages retain their type-based initial zoom.
+
+The route feature uses an explicit matching data-source/layer, a high-contrast
+two-stroke itinerary line and a direction arrow for each visibly long leg.
+\`geo-map-direction.mjs\` projects each straight schematic segment, places the
+arrow at 55% of its length, and excludes short local hops (avoiding a cluster
+of arrows around Rio or Cusco). Both providers use the same arrow data.
+No Directions API requests are made. On subsequent user pan/zoom, markers and
+arrows remain geographically anchored; there is no automatic recentering.
+
+Tests cover the actual Brazil/Argentina/Peru GEO coordinates at desktop/mobile
+widths, direction bearings, no-op cases, and mocked Google/Yandex adapters.
+Only the map UI/renderer is changed; no content MD, GEO passports or routes
+are edited. Pilot allowlist remains unchanged.

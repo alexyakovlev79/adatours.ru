@@ -56,7 +56,7 @@ export async function runReverseIdentity(tools, args = {}) {
       r.ownerId === ownerId && r.token === token);
   }
   const action = args.action || 'status';
-  if (!['claim','renew','complete','status'].includes(action)) throw new Error('Unknown action: '+action);
+  if (!['claim','renew','release','complete','status'].includes(action)) throw new Error('Unknown action: '+action);
   const manifest = (await readJson(manifestPath,'main')).data;
   const leaseMs = 60*60*1000, batchSize=50, checkpointEvery=10;
   if (manifest.leaseMinutes !== 60 || manifest.batchSize !== 50 || manifest.checkpointEvery !== 10)
@@ -105,6 +105,7 @@ export async function runReverseIdentity(tools, args = {}) {
         if(selected.length){domain=d;break;}
       }
       if(!selected.length)return {status:'empty',lane,domain:args.domain||'all',head};
+      if(args.dryRun===true) return {status:'dry_run',lane,domain,count:selected.length,selected,head};
       const batchId='reverse-'+domain.replace(/[^a-z0-9]/gi,'-')+'-'+tick.toString(36)+'-'+Math.random().toString(36).slice(2,10);
       const claimedAt=iso(tick),expiresAt=iso(tick+leaseMs);
       for(const row of selected) {
@@ -139,6 +140,25 @@ export async function runReverseIdentity(tools, args = {}) {
         const commit=await saveClaim(st,f.sha,'external-identity: renew '+args.batchId);
         return {status:'renewed',batchId:args.batchId,count:own.length,expiresAt,commit};
       }catch(e){if(attempt===2)throw new Error('Renew CAS failed 3 times: '+String(e));}
+    }
+  }
+  if (action === 'release') {
+    if(!validName(args.batchId))throw new Error('Need batchId');
+    for(let attempt=0;attempt<3;attempt++){
+      const head=await getHead(),f=await loadState(head),st=f.data,tick=now();
+      const own=activeOwn(st,ownerId,token).filter(([,r])=>r.batchId===args.batchId);
+      if(!own.length)return {status:'nothing_to_release',batchId:args.batchId,head};
+      if(own.some(([,r])=>Date.parse(r.expiresAt)<=tick))
+        return {status:'lease_expired',batchId:args.batchId};
+      for(const [url,r] of own){
+        if(r.priorReview)st.records[url]=r.priorReview;
+        else delete st.records[url];
+      }
+      st.updatedAt=iso(tick);
+      try{
+        const commit=await saveClaim(st,f.sha,'external-identity: release '+args.batchId);
+        return {status:'released',batchId:args.batchId,count:own.length,commit};
+      }catch(e){if(attempt===2)throw new Error('Release CAS failed 3 times: '+String(e));}
     }
   }
   if (action === 'complete') {

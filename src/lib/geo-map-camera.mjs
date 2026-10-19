@@ -6,6 +6,11 @@ const MAX_MERCATOR_LAT = 85.05112878;
 const TILE_SIZE = 256;
 const radians = Math.PI / 180;
 
+// Matches approximately two mouse-wheel zoom increments in the Yandex pilot
+// (~1.52x apparent scale), without mistaking them for two whole zoom levels.
+// Applied by both Yandex and Google and at every responsive viewport size.
+export const DEFAULT_INITIAL_ZOOM_BOOST = 0.6;
+
 const clampedLat = lat => Math.max(-MAX_MERCATOR_LAT, Math.min(MAX_MERCATOR_LAT, lat));
 const isCoordinate = c => Array.isArray(c) && c.length === 2 &&
   Number.isFinite(c[0]) && Number.isFinite(c[1]) &&
@@ -42,14 +47,17 @@ function unwrapWorldLongitudes(xs) {
   return xs.map(x => x < arcStart ? x + 1 : x);
 }
 
-export function fitGeoCamera(route, {width, height, pointZoom = 9, minZoom = 1.2, maxZoom = 17} = {}) {
+export function fitGeoCamera(route, {
+  width, height, pointZoom = 9, minZoom = 1.2, maxZoom = 17,
+  zoomBoost = DEFAULT_INITIAL_ZOOM_BOOST,
+} = {}) {
   const coordinates = (route || []).filter(isCoordinate);
   if (!coordinates.length) return null;
   const viewportWidth = Number.isFinite(width) && width > 0 ? width : 960;
   const viewportHeight = Number.isFinite(height) && height > 0 ? height : 480;
   if (coordinates.length === 1 || coordinates.every(c =>
     Math.abs(c[0] - coordinates[0][0]) < 1e-9 && Math.abs(c[1] - coordinates[0][1]) < 1e-9)) {
-    return {center:coordinates[0], zoom:pointZoom};
+    return {center:coordinates[0], zoom:Math.min(maxZoom, Math.max(minZoom, pointZoom + zoomBoost))};
   }
 
   const world = coordinates.map(geoToWorld);
@@ -67,7 +75,10 @@ export function fitGeoCamera(route, {width, height, pointZoom = 9, minZoom = 1.2
   const dx = Math.max(1e-9, maxX-minX), dy = Math.max(1e-9, maxY-minY);
   const xZoom = Math.log2(availableWidth / (TILE_SIZE * dx));
   const yZoom = Math.log2(availableHeight / (TILE_SIZE * dy));
-  // A further 0.45 zoom of safety avoids clipping when providers round raster zoom.
-  const zoom = Math.min(maxZoom, Math.max(minZoom, Math.min(xZoom,yZoom)-0.45));
+  // First find the safe geographic overview, then apply the user-selected
+  // closer default view. Deliberately closer framing may crop peripheral pins;
+  // the markers, order, pan/zoom and textual point list remain available.
+  const fitZoom = Math.min(xZoom,yZoom)-0.45;
+  const zoom = Math.min(maxZoom, Math.max(minZoom, fitZoom + zoomBoost));
   return {center,zoom};
 }

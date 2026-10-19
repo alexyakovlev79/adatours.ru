@@ -191,3 +191,19 @@ On both desktop and mobile, photo cards fill their map's available vertical
 space almost to the provider attribution, with the photo flexing taller and
 summaries allowing four/three lines respectively. The provider controls remain
 uncovered. A photo-less card remains content-sized rather than a tall blank box.
+
+
+## Closer initial camera — 19.10.2026
+
+The owner compared screenshots before and after two physical mouse-wheel
+zoom increments. The visible inter-marker distance increased about 1.5×;
+two full Web Mercator zoom levels would instead produce 4× magnification.
+The shared `fitGeoCamera()` therefore applies `DEFAULT_INITIAL_ZOOM_BOOST
+= 0.6` (approximately 1.52×) **after** calculating the original geographic
+center and initial overview. It applies to every map on Tour, Excursion and
+Destination pages, on desktop and mobile, with Yandex and Google alike.
+The upper zoom limit still applies to a single location. No route order,
+coordinates, marker styling, overlay behavior or lazy-load gate changes.
+The intentionally closer initial view can clip peripheral stops on long
+routes; pan/zoom and the accessible full list of stops remain available.
+Pass `zoomBoost: 0` to test the unmodified fit-to-all geometry separately.

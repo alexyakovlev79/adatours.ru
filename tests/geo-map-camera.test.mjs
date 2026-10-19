@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {fitGeoCamera,geoToWorld} from '../src/lib/geo-map-camera.mjs';
+import {fitGeoCamera,geoToWorld,DEFAULT_INITIAL_ZOOM_BOOST} from '../src/lib/geo-map-camera.mjs';
 import {routeDirectionArrows,routeLegs} from '../src/lib/geo-map-direction.mjs';
 
 // Actual coordinates of confirmed destinations on Ada Tours' Brazil/Argentina/Peru pilot.
@@ -29,7 +29,7 @@ function screenPoint(coordinate,camera,width,height) {
 
 for(const [width,height] of [[1030,480],[360,445],[1200,700]]) {
   test('all South America pilot points fit in '+width+'x'+height,()=>{
-    const camera=fitGeoCamera(itinerary,{width,height});
+    const camera=fitGeoCamera(itinerary,{width,height,zoomBoost:0});
     assert.ok(camera);
     assert.ok(camera.zoom>2 && camera.zoom<6);
     for(const place of itinerary) {
@@ -40,11 +40,24 @@ for(const [width,height] of [[1030,480],[360,445],[1200,700]]) {
   });
 }
 
-test('single-place maps preserve city zoom and center',()=>{
+test('single-place maps use the same closer starting view without moving the center',()=>{
   assert.deepEqual(fitGeoCamera([itinerary[0]],{width:360,height:445,pointZoom:10}),{
-    center:itinerary[0],zoom:10,
+    center:itinerary[0],zoom:10+DEFAULT_INITIAL_ZOOM_BOOST,
   });
+  assert.equal(fitGeoCamera([itinerary[0]],{pointZoom:17}).zoom,17);
 });
+
+for (const [width,height] of [[1030,480],[360,445],[1200,700]]) {
+  test('default zoom matches two mouse-wheel increments at '+width+'x'+height,()=>{
+    const fit=fitGeoCamera(itinerary,{width,height,zoomBoost:0});
+    const initial=fitGeoCamera(itinerary,{width,height});
+    assert.deepEqual(initial.center,fit.center);
+    assert.ok(Math.abs(initial.zoom-fit.zoom-DEFAULT_INITIAL_ZOOM_BOOST)<1e-10);
+    const scale=Math.pow(2,initial.zoom-fit.zoom);
+    assert.ok(scale>1.50&&scale<1.53,'Expected approximately 1.52x screenshot magnification');
+  });
+}
+
 
 test('180th meridian uses the short longitude arc',()=>{
   const camera=fitGeoCamera([[179,-15],[-179,-16]],{width:800,height:480});

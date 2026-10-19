@@ -14,7 +14,7 @@ const sample = {
   center:[-43.205,-22.911],zoom:6,
 };
 
-test('Yandex route uses a matching vector source, fitted camera, arrows and pins',async()=>{
+test('Yandex uses the correct camera and pins without detached feature lines',async()=>{
   const previous=globalThis.window;
   class Map {
     constructor(root,props){this.root=root;this.props=props;this.children=[];}
@@ -23,9 +23,10 @@ test('Yandex route uses a matching vector source, fitted camera, arrows and pins
   class Layer {constructor(props={}){this.props=props;}}
   class Feature {constructor(props){this.props=props;}}
   class Marker {constructor(props,element){this.props=props;this.element=element;}}
+  class Listener {constructor(props){this.props=props;}}
   globalThis.window={ymaps3:{
     ready:Promise.resolve(),YMap:Map,YMapDefaultSchemeLayer:Layer,
-    YMapDefaultFeaturesLayer:Layer,YMapFeature:Feature,YMapMarker:Marker,
+    YMapDefaultFeaturesLayer:Layer,YMapFeature:Feature,YMapMarker:Marker,YMapListener:Listener,
   }};
   try {
     const canvas={clientWidth:1030,clientHeight:480};
@@ -34,16 +35,10 @@ test('Yandex route uses a matching vector source, fitted camera, arrows and pins
     assert.deepEqual(map.props.location.center.length,2);
     assert.ok(map.props.location.zoom<sample.zoom);
     assert.ok(!('bounds' in map.props.location));
-    assert.equal(map.children[1].props.source,'adatours-route-lines');
-    const routes=map.children.filter(x=>x instanceof Feature);
-    assert.equal(routes.length,sample.route.length-1);
-    assert.ok(routes.every(x=>x.props.source===map.children[1].props.source));
-    assert.deepEqual(routes[0].props.geometry.coordinates,sample.route.slice(0,2));
-    assert.deepEqual(routes[1].props.geometry.coordinates,sample.route.slice(1,3));
-    assert.ok(routes.every(x=>x.props.style.stroke.length===1));
-    assert.ok(routes.every(x=>x.props.style.stroke[0].color!=='#FFFCF8'));
+    assert.equal(map.children.filter(x=>x instanceof Layer).length,2);
+    assert.equal(map.children.filter(x=>x instanceof Feature).length,0);
     assert.equal(map.children.filter(x=>x instanceof Marker && x.element.kind==='pin').length,3);
-    assert.ok(map.children.some(x=>x instanceof Marker && x.element.kind==='arrow'));
+    assert.equal(map.children.filter(x=>x instanceof Marker && x.element.kind==='arrow').length,0);
     assert.ok(map.children.filter(x=>x instanceof Marker && x.element.kind==='pin').every(x=>x.props.zIndex===100));
   } finally {globalThis.window=previous;}
 });
@@ -54,9 +49,10 @@ test('Yandex one-place map has no route or arrows',async()=>{
   class Layer {constructor(props={}){this.props=props;}}
   class Feature {constructor(props){this.props=props;}}
   class Marker {constructor(props,element){this.props=props;this.element=element;}}
+  class Listener {constructor(props){this.props=props;}}
   globalThis.window={ymaps3:{
     ready:Promise.resolve(),YMap:Map,YMapDefaultSchemeLayer:Layer,
-    YMapDefaultFeaturesLayer:Layer,YMapFeature:Feature,YMapMarker:Marker,
+    YMapDefaultFeaturesLayer:Layer,YMapFeature:Feature,YMapMarker:Marker,YMapListener:Listener,
   }};
   try{
     const data={...sample,points:[sample.points[0]],route:[sample.route[0]]};
@@ -79,7 +75,7 @@ test('Yandex provider still categorizes network and initialization failures',asy
   class Layer{}
   globalThis.window={ymaps3:{
     ready:Promise.resolve(),YMap:BadMap,YMapDefaultSchemeLayer:Layer,
-    YMapDefaultFeaturesLayer:Layer,YMapFeature:Layer,YMapMarker:Layer,
+    YMapDefaultFeaturesLayer:Layer,YMapFeature:Layer,YMapMarker:Layer,YMapListener:Layer,
   }};
   try {
     await assert.rejects(renderYandexMap({},sample,'TEST_KEY',()=>{},

@@ -119,3 +119,31 @@ Tests cover the actual Brazil/Argentina/Peru GEO coordinates at desktop/mobile
 widths, direction bearings, no-op cases, and mocked Google/Yandex adapters.
 Only the map UI/renderer is changed; no content MD, GEO passports or routes
 are edited. Pilot allowlist remains unchanged.
+
+
+## Route displacement root cause and renderer replacement — 19.10.2026
+
+The pilot reproduced a Yandex-only discrepancy: numbered HTML YMapMarker
+pins correctly appeared in South America, whereas the YMapFeature stroke
+rendered in the Pacific. Both paths were fed the exact same verified WGS84
+destination coordinates. Changing feature source IDs, splitting the geometry,
+thinning strokes and adding arrows did not fix the mismatch, because all three
+attempts retained a separately positioned YMapFeature rendering pipeline.
+
+Yandex now renders the schematic route with an independent, pointer-transparent
+SVG overlay. Each segment's screen endpoints are measured from the actual
+rendered DOM rectangles of its numbered YMapMarker endpoints, with a short
+inset for each pin; arrowheads sit directly on that segment. YMapListener
+schedules redraw after pan/zoom; ResizeObserver covers viewport resize.
+Bounded warmup handles asynchronous marker attachment. This removes the
+separate route coordinate projection that caused the previous discrepancy.
+
+Google Maps continues to use native geographic Polylines, unchanged.
+The initial camera, GEO passports, ordered visits, point numbering, URLs,
+and content remain unchanged. No external directions/geocoding calls added.
+For repeated-world copies, long dateline strokes are suppressed.
+New regression tests explicitly assert pixel alignment and redraw after
+moving marker DOM, and ensure YMapFeature is not instantiated by Yandex.
+
+The earlier descriptions of Yandex native vector strokes above are
+historical and superseded by this section.

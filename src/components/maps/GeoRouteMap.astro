@@ -80,6 +80,7 @@ const payload = data ? {
   .geo-map__heading h2 { font-size: clamp(2rem,4.6vw,3.9rem); line-height: 1.08; margin: 0 0 1.5rem; }
   .geo-map__viewport { height: min(42vw,560px); min-height: 410px; position: relative; isolation: isolate; background: #EFEDE8; overflow: hidden; }
   .geo-map__canvas { position:absolute; inset:0; }
+  .geo-map__route-overlay { position:absolute; inset:0; z-index:2; width:100%; height:100%; display:block; overflow:hidden; pointer-events:none; }
   .geo-map__status { position:absolute; inset:0; margin:0; display:grid; place-items:center; color:#555; background:#F8F5EF; font-size:1rem; }
   .geo-map__status[hidden] { display:none; }
   .geo-map__retry { position:absolute; z-index:7; right:20px; bottom:20px; border:1px solid #1A1A1A; background:#F2CC67; color:#1A1A1A; font-weight:600; padding:10px 16px; cursor:pointer; }

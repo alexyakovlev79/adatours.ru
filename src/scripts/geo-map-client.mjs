@@ -1,5 +1,4 @@
-// This entry is loaded only on pages containing the shared GeoRouteMap component.
-// Provider scripts and map tiles are not requested until the section nears the viewport.
+// Provider code and tiles load only when the map comes near the viewport.
 const scriptLoads = new Map();
 
 export function loadProviderScript(id, url) {
@@ -7,13 +6,24 @@ export function loadProviderScript(id, url) {
     scriptLoads.set(id, new Promise((resolve, reject) => {
       const el = document.createElement('script');
       el.async = true;
-      el.src = url;
-      el.onload = resolve;
-      el.onerror = () => {
-        scriptLoads.delete(id);
-        el.remove();
-        reject(new Error('Map API could not be loaded: ' + id));
+      let finished = false;
+      let timer;
+      const finish = (error) => {
+        if (finished) return;
+        finished = true;
+        clearTimeout(timer);
+        el.onload = null;
+        el.onerror = null;
+        if (error) {
+          scriptLoads.delete(id);
+          el.remove();
+          reject(error);
+        } else resolve();
       };
+      el.onload = () => finish();
+      el.onerror = () => finish(new Error('Could not download the map API script'));
+      timer = setTimeout(() => finish(new Error('Map API script loading timed out')), 20000);
+      el.src = url;
       document.head.append(el);
     }));
   }
@@ -53,54 +63,97 @@ function openCard(root, point) {
   }
   link.href = point.href;
   card.hidden = false;
-  const selected = root.querySelector('.geo-map__pin[aria-pressed=true]');
-  selected?.setAttribute('aria-pressed', 'false');
-  for (const marker of root.querySelectorAll('.geo-map__pin')) {
-    if (marker.getAttribute('aria-label')?.startsWith(point.name + ':'))
-      marker.setAttribute('aria-pressed', 'true');
-  }
+  for (const marker of root.querySelectorAll('.geo-map__pin'))
+    marker.setAttribute('aria-pressed', String(marker.getAttribute('aria-label')?.startsWith(point.name + ':')));
+}
+
+function safeDetail(error) {
+  return String(error?.message || error || 'Unknown error')
+    .replace(/((?:apikey|api_key|token|signature|key)=)[^&\s]+/gi, '$1[hidden]')
+    .replace(/\b[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}\b/gi, '[hidden]')
+    .slice(0, 240);
 }
 
 async function mount(root) {
-  if (root.dataset.mapMounted) return;
+  if (root.dataset.mapMounted === 'true') return;
   root.dataset.mapMounted = 'true';
   const element = root.querySelector('[data-geo-map-canvas]');
   const status = root.querySelector('[data-geo-map-status]');
-  let payload;
-  try { payload = JSON.parse(root.dataset.geoMapPayload || '{}'); }
-  catch { status.textContent = 'Данные карты недоступны'; return; }
-  if (!payload.points?.length || !element) return;
+  const retry = root.querySelector('[data-geo-map-retry]');
+  if (!element || !status) return;
+  status.hidden = false;
+  status.textContent = 'Загружаем карту…';
+  if (retry) retry.hidden = true;
 
-  const preference = root.dataset.provider === 'google' ? ['google', 'yandex'] : ['yandex', 'google'];
+  let payload;
+  try {
+    payload = JSON.parse(root.dataset.geoMapPayload || '{}');
+  } catch {
+    status.textContent = 'Ошибка данных карты (GEO_DATA).';
+    return;
+  }
+  if (!payload.points?.length) return;
+
+  const preference = root.dataset.provider === 'google'
+    ? ['google', 'yandex'] : ['yandex', 'google'];
   const keys = {yandex: root.dataset.yandexKey, google: root.dataset.googleKey};
   const select = point => openCard(root, point);
   let lastError = null;
+  let lastProvider = '';
+
   for (const provider of preference) {
     if (!keys[provider]) continue;
     try {
       if (provider === 'yandex') {
         const {renderYandexMap} = await import('./geo-map-yandex.mjs');
-        await renderYandexMap(element, payload, keys.yandex, select, loadProviderScript, createPin, root.dataset.locale);
+        await renderYandexMap(element, payload, keys.yandex, select,
+          loadProviderScript, createPin, root.dataset.locale);
       } else {
         const {renderGoogleMap} = await import('./geo-map-google.mjs');
-        await renderGoogleMap(element, payload, keys.google, root.dataset.googleMapId, select, loadProviderScript, createPin, root.dataset.locale);
+        await renderGoogleMap(element, payload, keys.google, root.dataset.googleMapId,
+          select, loadProviderScript, createPin, root.dataset.locale);
       }
       status.hidden = true;
       root.dataset.mapReady = provider;
+      delete root.dataset.mapError;
       return;
     } catch (error) {
       lastError = error;
+      lastProvider = provider;
+      const code = error?.mapCode || (provider === 'google' ? 'GOOGLE_INIT' : 'YANDEX_IMPORT');
+      // Logs contain no request URL or API key. The exact fault is preserved only in a
+      // sanitized string for the browser's developer console and opt-in debug mode.
+      console.warn('[Ada Tours GeoMap]', code, safeDetail(error));
       element.replaceChildren();
     }
   }
-  status.textContent = lastError
-    ? 'Карта временно недоступна. Места маршрута перечислены ниже.'
-    : 'Карта подключается после настройки картографического API.';
+
+  if (lastError) {
+    const code = lastError.mapCode ||
+      (lastProvider === 'google' ? 'GOOGLE_INIT' : 'YANDEX_IMPORT');
+    root.dataset.mapError = code;
+    const debug = new URLSearchParams(window.location.search).get('mapdebug') === '1';
+    status.textContent = 'Карта временно недоступна. Код: ' + code +
+      (debug ? '. ' + safeDetail(lastError) : '.');
+    if (retry) retry.hidden = false;
+  } else {
+    status.textContent = 'Картографический API еще не настроен.';
+  }
 }
 
 function initMaps() {
   const maps = document.querySelectorAll('[data-geo-map]');
   if (!maps.length) return;
+
+  for (const root of maps) {
+    root.querySelector('[data-geo-card-close]')
+      ?.addEventListener('click', () => {root.querySelector('[data-geo-card]').hidden = true;});
+    root.querySelector('[data-geo-map-retry]')?.addEventListener('click', () => {
+      delete root.dataset.mapMounted;
+      mount(root);
+    });
+  }
+
   if (!('IntersectionObserver' in window)) {
     maps.forEach(mount);
     return;
@@ -112,8 +165,8 @@ function initMaps() {
     }
   }, {rootMargin: '300px 0px'});
   maps.forEach(root => observer.observe(root));
-  for (const root of maps) root.querySelector('[data-geo-card-close]')
-    ?.addEventListener('click', () => {root.querySelector('[data-geo-card]').hidden = true;});
 }
-if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initMaps, {once:true});
+
+if (document.readyState === 'loading')
+  document.addEventListener('DOMContentLoaded', initMaps, {once: true});
 else initMaps();

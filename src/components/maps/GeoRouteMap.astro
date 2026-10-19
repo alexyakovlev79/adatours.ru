@@ -44,7 +44,8 @@ const payload = data ? {
     </div>
     <div class="geo-map__viewport">
       <div class="geo-map__canvas" data-geo-map-canvas aria-label="Интерактивная карта"></div>
-      <p class="geo-map__status" data-geo-map-status>Загружаем карту…</p>
+      <p class="geo-map__status" data-geo-map-status aria-live="polite">Загружаем карту…</p>
+      <button class="geo-map__retry" data-geo-map-retry type="button" hidden>Повторить загрузку</button>
       <article class="geo-map__card" data-geo-card hidden>
         <button class="geo-map__card-close" data-geo-card-close type="button" aria-label="Закрыть описание">×</button>
         <img data-geo-card-photo alt="" loading="lazy" hidden />
@@ -81,6 +82,9 @@ const payload = data ? {
   .geo-map__canvas { position:absolute; inset:0; }
   .geo-map__status { position:absolute; inset:0; margin:0; display:grid; place-items:center; color:#555; background:#F8F5EF; font-size:1rem; }
   .geo-map__status[hidden] { display:none; }
+  .geo-map__retry { position:absolute; z-index:7; right:20px; bottom:20px; border:1px solid #1A1A1A; background:#F2CC67; color:#1A1A1A; font-weight:600; padding:10px 16px; cursor:pointer; }
+  .geo-map__retry[hidden] { display:none; }
+  .geo-map__retry:focus-visible { outline:3px solid #1A1A1A; outline-offset:2px; }
   .geo-map__pin { width:38px; height:38px; background:#F2CC67; color:#1A1A1A; border:2px solid #1A1A1A; border-radius:50%; font-weight:700; font-size:15px; cursor:pointer; box-shadow:0 3px 12px #0003; }
   .geo-map__pin:hover, .geo-map__pin:focus-visible, .geo-map__pin[aria-pressed=true] { background:#E6BA43; transform:scale(1.08); outline:2px solid #FFFCF8; outline-offset:2px; }
   .geo-map__card { position:absolute; bottom:20px; left:20px; z-index:5; width:min(365px,calc(100% - 40px)); background:#FFFCF8; color:#1A1A1A; box-shadow:0 10px 40px #0003; max-height:90%; overflow:auto; }

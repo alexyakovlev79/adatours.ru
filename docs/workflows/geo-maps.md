@@ -69,3 +69,26 @@ Deploying again is necessary because Astro embeds its public browser key
 only during the build. The three-page allowlist remains in effect; full
 catalogue activation requires the pilot test from Russia without VPN.
 Never copy the secret value into Git, documentation or CI logs.
+
+## Map runtime diagnostics (2026-10-19)
+
+When the static point list renders but the map says unavailable, it means Astro's
+GEO data path has already succeeded and a browser-side provider step failed.
+The map now shows an anonymized stage code:
+
+- `YANDEX_SCRIPT`: JS API script could not be downloaded (network/blocker/timeout).
+- `YANDEX_GLOBAL`: script loaded without creating `window.ymaps3`.
+- `YANDEX_READY`: Yandex async initialization rejected or timed out.
+- `YANDEX_EXPORTS`: expected Yandex constructors not present.
+- `YANDEX_CREATE`: map container/layers could not be created.
+- `YANDEX_ROUTE`: polyline creation failed.
+- `YANDEX_MARKERS`: custom marker construction failed.
+
+Add `?mapdebug=1` to an affected page for a short **sanitized** error detail.
+Neither the error text nor console diagnostics include the API key or request URL.
+The viewer can retry loading using the map's button, without reloading the page.
+If the stage is `YANDEX_SCRIPT`, verify browser network access to
+`api-maps.yandex.ru`; if `YANDEX_READY`, inspect the key status and HTTP
+Referer restriction in the developer console. Do not silently switch to a
+provider without its own correctly configured key. The production map must
+not send client-side errors or keys to any server or analytics endpoint.

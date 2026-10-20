@@ -208,7 +208,7 @@ routeDestinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_pacific_coast
-primaryThemes: ["theme_adventure","theme_wildlife"]
+primaryThemes: ["theme_adventure", "theme_nature"]
 themes: ["theme_beach"]
 ---
 

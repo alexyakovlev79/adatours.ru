@@ -244,7 +244,7 @@ routeDestinations:
 - destination_costa_rica_kepos
 - destination_costa_rica_manuel_antonio
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature", "theme_wildlife"]
 themes: ["theme_adventure", "theme_beach", "theme_gastronomy_wine", "theme_coffee"]
 ---
 

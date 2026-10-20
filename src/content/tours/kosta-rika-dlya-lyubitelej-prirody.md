@@ -132,7 +132,7 @@ routeDestinations:
 - destination_costa_rica_nacionalnyj_park_braulio_karrilo
 - destination_costa_rica_tortuguero
 - destination_costa_rica_la_fortuna_vulkan_arenal
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: []
 ---
 

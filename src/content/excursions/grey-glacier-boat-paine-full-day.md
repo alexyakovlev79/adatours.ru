@@ -21,7 +21,7 @@ relatedDestinations:
 - destination_chile_ozero_nordensheld
 - destination_chile_laguna_amarga
 - destination_chile_ozero_sarmento
-themes: [theme_wildlife]
+themes: ["theme_nature"]
 duration: Весь день
 lead: 'Экскурсия на весь день: лодочная прогулка к леднику Грей, озера национального парка Торрес-дель-Пайне и пещера Милодона.'
 route:

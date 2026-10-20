@@ -9,8 +9,7 @@ destination: destination_chile_lunnaya_dolina_atakama
 relatedDestinations:
 - destination_chile_san_pedro_de_atakama
 - destination_chile_nacionalnyj_zapovednik_los_flamenkos
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-09-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Красноватые скальные гребни Лунной долины на фоне гор Атакамы в Чили"

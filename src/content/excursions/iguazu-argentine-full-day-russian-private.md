@@ -9,8 +9,7 @@ destination: destination_argentina_puerto_iguasu
 destinationName: Пуэрто Игуасу
 relatedDestinations:
 - destination_argentina_garganta_del_diablo
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/jekskursija-na-argentinskie-vodopady/gallery-0-src-enhanced-20261008.webp
   hover: 'Аргентинская сторона Игуасу: каскады и радуга в брызгах'

@@ -11,8 +11,7 @@ relatedDestinations:
 - destination_argentina_nahuel_huapi_lake
 - destination_argentina_ostrov_viktoriya_ozero_nauel_uapi
 - destination_argentina_arrayanes_forest
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/victoria-island-nahuel-huapi/hero-generated-20261008.webp
   hover: "Остров Виктория: прозрачная вода, высокие деревья и горы вдали"

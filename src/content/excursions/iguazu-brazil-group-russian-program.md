@@ -5,8 +5,7 @@ title: Бразильская сторона Игуасу с русскогов�
 country: country_brazil
 destination: destination_brazil_iguacu
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 lead: Прогулка по бразильской стороне водопадов Игуасу с русскоговорящим гидом в составе группы.
 hero:
   src: /media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/hero-src-enhanced-20261008.webp

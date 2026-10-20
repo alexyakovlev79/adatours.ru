@@ -7,8 +7,7 @@ title: 'Атакама: вечер у профессиональных теле�
 country: country_chile
 destination: destination_chile_san_pedro_de_atakama
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-08-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Двое путешественников под Млечным Путём в ночной пустыне Атакама"

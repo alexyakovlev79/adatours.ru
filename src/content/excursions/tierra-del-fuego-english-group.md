@@ -13,8 +13,7 @@ relatedDestinations:
 - destination_argentina_ensenada_zaratiegui
 - destination_argentina_lago_roca
 - destination_argentina_lapataia_bay
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_argentina_nacionalnyj_park_terra_del_fuego/original-01.jpg
   hover: 'Тьерра-дель-Фуэго: мостик у воды на фоне горного леса'

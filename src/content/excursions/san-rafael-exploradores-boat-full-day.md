@@ -11,9 +11,7 @@ relatedDestinations:
 - destination_chile_exploradores_bay
 - destination_chile_nacionalnyj_park_san_rafael
 - destination_chile_san_rafael_glacier
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_nature", "theme_cruises"]
 hero:
   src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-03-generated-20261008-v1.webp
   hover: "Сан-Рафаэль: голубой ледяной фронт и плавающие льдины в Патагонии"

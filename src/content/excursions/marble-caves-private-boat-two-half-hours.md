@@ -9,9 +9,7 @@ destination: destination_chile_marble_caves
 relatedDestinations:
 - destination_chile_general_carrera_lake
 - destination_chile_puerto_rio_tranquilo
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_nature", "theme_cruises"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-23-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Лодка с путешественниками под мраморным сводом на озере Хенераль-Каррера"

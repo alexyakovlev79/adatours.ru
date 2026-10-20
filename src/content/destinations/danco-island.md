@@ -13,9 +13,7 @@ hero:
   hover: "Остров Данко: пингвины у холодного моря и заснеженных склонов"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 searchAliases:
 - Danco Island
 - Danco

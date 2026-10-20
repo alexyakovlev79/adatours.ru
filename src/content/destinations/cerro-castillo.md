@@ -15,9 +15,7 @@ hero:
   caption: 'Иллюстрация GPT Images: пейзаж района Серро-Кастильо'
   status: approved
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - Серро-Кастильо
 - Cerro Castillo

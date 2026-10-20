@@ -13,8 +13,7 @@ hero:
   alt: "Цветные дома Пуэрто-Наталеса перед заливом и снежными горами, Чили"
   hover: "Пуэрто-Наталес в Чили: прибрежный город на фоне гор за водой"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Фьорд Ультима-Эсперанса
 sourceSnapshot: data/source-index/materials/destination_chile_ultima_esperanza_fjord.md

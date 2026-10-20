@@ -13,9 +13,7 @@ hero:
   hover: "Хаф-Мун: пингвины у моря и база Камара на берегу"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 searchAliases:
 - Half Moon Island
 - Остров Полумесяца

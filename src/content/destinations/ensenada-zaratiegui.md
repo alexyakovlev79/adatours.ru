@@ -13,8 +13,7 @@ hero:
   hover: "Энсенада-Саратьеги: причал, вода и заснеженные горы"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_ensenada_zaratiegui.md
 updatedAt: '2026-10-11'
 ---

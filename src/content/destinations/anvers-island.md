@@ -13,9 +13,7 @@ hero:
   hover: "Остров Анверс в Антарктиде: ледники над скалистым берегом и льдины на воде"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 searchAliases:
 - Anvers Island
 - Anvers

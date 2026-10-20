@@ -13,9 +13,7 @@ hero:
   hover: "Мыс Жугла: пингвины на темных камнях у спокойной морской воды"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 searchAliases:
 - Jougla Point
 - Мыс Джугла

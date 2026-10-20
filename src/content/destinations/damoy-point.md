@@ -13,10 +13,7 @@ hero:
   hover: "Мыс Дамой: пингвины и оранжевый домик у воды"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_adventure
-- theme_culture
-- theme_wildlife
+themes: ["theme_adventure", "theme_culture", "theme_nature"]
 searchAliases:
 - Damoy Point
 - Дамой

@@ -48,13 +48,24 @@ const resolvedHref = opensLeadModal ? '#request' : withBase(href);
       border-color 220ms var(--ease-out);
   }
 
+  /* Translucent brand CTA: keep the underlying photo visible. */
   .cta--gold {
-    background: var(--color-brand);
+    border-color: var(--color-brand);
+    background: color-mix(in srgb, var(--color-brand) 22%, transparent);
     color: var(--color-ink-deep);
   }
 
   .cta--gold:hover {
-    background: var(--color-brand-hover);
+    border-color: var(--color-brand-hover);
+    background: color-mix(in srgb, var(--color-brand) 38%, transparent);
+  }
+
+  /* White CTA lettering remains readable over photographic heroes. */
+  :global(.hero) .cta--gold,
+  :global(.band) .cta--gold,
+  :global(.band-card) .cta--gold {
+    color: var(--color-bg);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .55);
   }
 
   .cta--light {

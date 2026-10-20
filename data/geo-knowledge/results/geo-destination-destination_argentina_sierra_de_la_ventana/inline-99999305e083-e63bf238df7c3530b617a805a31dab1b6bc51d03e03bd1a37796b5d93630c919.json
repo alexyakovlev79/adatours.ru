@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_sierra_de_la_ventana",
+  "stableId": "destination_argentina_sierra_de_la_ventana",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/sierra-de-la-ventana/",
+  "sourceFingerprint": "65d88e4e726c3119ceb35f66f0b6460e2d3c767a536b5df10cc4b0eac3345bd7",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Сьерра-де-ла-Вентана",
+      "reason": "Точная новая сущность сверена с утвержденным Word, canonical каталогом и адресной проверкой официальных источников."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 100,
+      "selected": "country_argentina",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q3925137",
+      "reason": "Проверена карточка Wikidata: тип и административная география совпадают. Для Sierra de la Ventana выбран населенный пункт Q3925137, а не горный хребет Q879368."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://sierrasdelaventana.tur.ar/",
+      "reason": "Проверена официальная страница муниципалитета, туристического ведомства или природоохранного органа об объекте."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-38.153333,-61.799444",
+      "reason": "Координаты проверенной карточки объекта, приблизительная репрезентативная точка, не точка входа."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://sierrasdelaventana.tur.ar/",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Локальная топонимика и принадлежность к Аргентине проверены по официальному источнику."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Страна программы и названного места — Аргентина."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3925137",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Точный объект, название, тип и принадлежность сопоставлены с локальным источником."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://sierrasdelaventana.tur.ar/",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Официальный источник названного места; не сторонний туристический агрегатор."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q3925137",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Координаты из свойства coordinate location; южная и западная широты имеют отрицательный знак."
+    }
+  ],
+  "reviewNote": "Адресный паспорт нового места. Город/населенный пункт отделен от одноименного округа; неподтвержденные QID и координаты пропущены. Изображения — иллюстрации GPT Image.",
+  "external": {
+    "wikidataQid": "Q3925137",
+    "officialUrl": "https://sierrasdelaventana.tur.ar/"
+  },
+  "location": {
+    "latitude": -38.153333,
+    "longitude": -61.799444,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q3925137"
+  }
+}

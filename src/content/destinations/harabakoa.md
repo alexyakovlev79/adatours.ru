@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-harabakoa-v-dominikane"
 sourceSnapshot: "https://drive.google.com/file/d/1OKZStXCXIwG2oTruSTAmCdSlpjT9Zhcd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 ## Харабакоа - место приключений!

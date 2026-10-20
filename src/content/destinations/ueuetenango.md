@@ -26,7 +26,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/114WEXhEOAOu-LRflQ0B6GTFKuM7R3UlC/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_gastronomy_wine","theme_wildlife"]
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_nature"]
 ---
 
 ### Уэуэтенанго - туристический центр Гватемалы

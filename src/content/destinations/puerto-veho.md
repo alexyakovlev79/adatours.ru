@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-puehrto-vekho-de-talamanka-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1EOUDtlg6srhAEg8ytT8luCPY-PXE2rCB/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_beach","theme_wildlife","theme_diving","theme_adventure"]
+themes: ["theme_beach", "theme_wildlife", "theme_diving", "theme_adventure", "theme_nature"]
 ---
 
 ## Курорт Карибского побережья

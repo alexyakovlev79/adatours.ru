@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-poluostrov-osa-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1KWLiXjmqA8LiGwW5XCBTs7vT_gYnTfZN/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_beach"]
+themes: ["theme_wildlife", "theme_beach", "theme_nature"]
 ---
 
 На южном побережье Тихого океана Коста-Рики расположен один из самых красивых и экзотических уголков нашей планеты – полуостров Оса. Природа полуострова является самой биологически насыщенной из всех известных мировых экосистем. Уникальные климатические и географические условия не имеют аналогов не только в странах Центральной Америки, но и во всем мире.

@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-monteverde-oblachnye-lesa-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/144kNfv-7h6eiMElu3WL_b7VkaUjDdfNh/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 ---
 
 ## Облачный лес и птица кетцаль: что посмотреть в Монтеверде, Коста-Рика

@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-vulkan-rinkon-de-la-vekho-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1Z33ouUu6HOntofe3_uwGQuAWUsyDiFbE/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 ---
 
 ## Вулкан, грязи и рафтинг: что посмотреть в Ринкон-де-ла-Вьеха, Коста-Рика

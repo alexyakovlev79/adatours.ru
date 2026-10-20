@@ -13,9 +13,7 @@ hero:
   hover: "Лагоа-да-Консейсан: широкая лагуна на фоне дюн и Атлантического океана"
   alt: "Лагуна Лагоа-да-Консейсан с прибрежными домами, зелеными холмами и дюнами, Бразилия"
 gallery: []
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 sourceSnapshot: data/source-index/materials/destination_brazil_lagoa_da_conceicao.md
 updatedAt: '2026-10-10'
 ---

@@ -13,9 +13,7 @@ hero:
   hover: "Лагуна-Капри: лес и каменистый берег перед горным массивом"
   alt: "Синяя Лагуна-Капри у лесного берега под гранитными вершинами Фицроя, Аргентина"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_laguna_capri.md
 updatedAt: '2026-10-10'
 ---

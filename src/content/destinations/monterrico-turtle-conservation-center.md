@@ -13,8 +13,7 @@ hero:
   alt: "Маленькие морские черепахи на темном песке перед океаном на закате"
   hover: "Морские черепахи ползут по песчаному берегу к полосе прибоя"
 gallery: []
-themes:
-- theme_wildlife
+themes: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_monterrico_turtle_conservation_center.md
 updatedAt: '2026-10-10'
 ---

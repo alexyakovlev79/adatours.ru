@@ -12,7 +12,7 @@ hero:
   hover: "Вег-нар-Зе: красные ибисы кормятся у мелких водных проток"
   alt: "Алые ибисы на илистой отмели у мангрового побережья Вег-нар-Зе, Суринам"
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_suriname_weg_naar_zee.md
 updatedAt: '2026-10-10'
 ---

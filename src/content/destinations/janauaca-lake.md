@@ -13,9 +13,7 @@ hero:
   hover: "Жанауака: каноэ среди золотистых отражений рассвета"
   alt: "Каноэ с двумя людьми на тихом озере Жанауака у амазонского леса, Бразилия"
 gallery: []
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_brazil_janauaca_lake.md
 updatedAt: '2026-10-10'
 ---

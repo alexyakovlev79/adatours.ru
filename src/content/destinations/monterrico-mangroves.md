@@ -13,8 +13,7 @@ hero:
   alt: "Человек в лодке на спокойном мангровом канале Монтеррико, Гватемала"
   hover: "Монтеррико в Гватемале: лодка между зелеными берегами и переплетенными мангровыми корнями"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_guatemala_monterrico_mangroves.md
 updatedAt: '2026-10-10'
 ---

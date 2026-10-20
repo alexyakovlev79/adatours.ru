@@ -13,9 +13,7 @@ hero:
   hover: "Эль-Пеньон-де-Гуатапе: лестница в расщелине монолита и башня на вершине"
   alt: "Скала Эль-Пеньон-де-Гуатапе с зигзагообразной лестницей и смотровой башней, Колумбия"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 relatedDestinations:
 - destination_colombia_guatape
 sourceSnapshot: data/source-index/materials/destination_colombia_el_penon_de_guatape.md

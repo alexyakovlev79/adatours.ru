@@ -384,15 +384,15 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   :global(#home-start), :global(#home-countries), :global(#home-interests),
   :global(#home-tours), :global(#home-services) { scroll-margin-top: 94px; }
 
-  .home-section { padding-block: clamp(74px, 9vw, 132px); }
-  .home-heading { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr); align-items: end; gap: clamp(24px, 6vw, 110px); margin-bottom: clamp(34px, 5vw, 72px); }
+  .home-section { padding-block: var(--section-y); }
+  .home-heading { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(260px, .75fr); align-items: end; gap: clamp(24px, 6vw, 110px); margin-bottom: var(--heading-gap); }
   .home-heading .eyebrow { margin: 0 0 14px; }
   .home-heading h2 { max-width: 850px; margin: 0; font-size: var(--text-h2); line-height: 1.05; text-wrap: balance; }
   .home-heading > p { max-width: 480px; margin: 0; color: color-mix(in srgb, var(--color-ink) 73%, transparent); font-size: var(--text-lg); line-height: 1.5; }
 
   .home-start { background: #f6f2eb; }
   .home-start .eyebrow { margin: 0 0 16px; }
-  .home-start h2 { max-width: 1050px; margin: 0 0 clamp(34px, 5vw, 72px); font-size: var(--text-h2); line-height: 1.04; }
+  .home-start h2 { max-width: 1050px; margin: 0 0 var(--heading-gap); font-size: var(--text-h2); line-height: 1.04; }
   .home-start__links { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(28px, 5vw, 72px); }
   .home-start__links a { display: grid; grid-template-columns: 36px minmax(0, 1fr) 22px; column-gap: 14px; padding: 24px 0; border-top: 1px solid rgb(26 26 26 / 30%); transition: opacity 180ms ease; }
   .home-start__links a:hover { opacity: .65; }
@@ -417,7 +417,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-poster__content h3 { margin: 0 0 18px; font-size: clamp(1.6rem, 2.3vw, 2.9rem); line-height: 1.08; overflow-wrap: anywhere; }
   .home-poster__arrow { display: inline-flex; gap: 14px; align-items: center; padding-bottom: 6px; border-bottom: 1px solid rgb(255 255 255 / 80%); font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; }
   .home-poster[data-image-text-align="right"] .home-poster__content { text-align: right; }
-  .home-all-link { display: flex; justify-content: space-between; gap: 24px; width: fit-content; max-width: 100%; margin-top: clamp(32px, 4vw, 54px); padding-bottom: 12px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: clamp(1rem, 1.6vw, 1.3rem); }
+  .home-all-link { display: flex; justify-content: space-between; gap: 24px; width: fit-content; max-width: 100%; margin-top: var(--heading-gap); padding-bottom: 12px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: clamp(1rem, 1.6vw, 1.3rem); }
   .home-all-link:hover { opacity: .65; }
 
   .home-interests { background: #f6f2eb; }
@@ -455,12 +455,12 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-services__links { display: flex; flex-wrap: wrap; gap: 16px 34px; margin-top: 28px; }
   .home-services__links a { padding-bottom: 6px; border-bottom: 1px solid currentColor; font-size: .86rem; }
 
-  .home-team { padding-bottom: clamp(68px, 8vw, 120px); }
+  .home-team { padding-bottom: var(--section-y); }
   .home-team :global(.person) { padding-bottom: 0; }
   .home-proof-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
   .home-proof-links a { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 24px 0; border-top: 1px solid var(--color-line); font-family: var(--font-display); font-size: clamp(1.05rem, 1.6vw, 1.4rem); }
   .home-proof-links a:hover { opacity: .65; }
-  .home-final { padding-block: clamp(70px, 9vw, 130px); color: #fff; background: var(--color-ink-deep); }
+  .home-final { padding-block: var(--section-y); color: #fff; background: var(--color-ink-deep); }
   .home-final h2 { max-width: 970px; margin: 12px 0 25px; font-size: var(--text-h2); line-height: 1.04; }
   .home-final p:not(.eyebrow) { max-width: 640px; color: rgb(255 255 255 / 78%); font-size: var(--text-lg); }
   .home-final a { display: inline-flex; gap: 25px; margin-top: 22px; padding: 14px 0; border-bottom: 1px solid var(--color-gold); color: var(--color-gold); }

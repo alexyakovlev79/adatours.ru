@@ -34,7 +34,7 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
 
   .process h2 {
     max-width: 1000px;
-    margin: 12px 0 clamp(46px, 7vw, 92px);
+    margin: 12px 0 var(--heading-gap);
   }
 
   .process__steps {

@@ -509,7 +509,7 @@ const personalDataHref = withBase('/personal-data/');
 
 <style>
   .lead {
-    padding-bottom: clamp(24px, 3vw, 40px);
+    padding-block: var(--section-y-tight);
     color: var(--color-bg);
     background: var(--color-ink-deep);
   }
@@ -517,7 +517,8 @@ const personalDataHref = withBase('/personal-data/');
   .lead__grid {
     display: grid;
     grid-template-columns: 1fr .8fr;
-    gap: clamp(50px, 8vw, 130px);
+    column-gap: clamp(50px, 8vw, 130px);
+    row-gap: var(--heading-gap);
     align-items: start;
   }
 

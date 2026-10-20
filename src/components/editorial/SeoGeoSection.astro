@@ -85,7 +85,7 @@ const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Bool
 
 <style>
   .seo-geo {
-    padding-block: clamp(44px, 6vw, 88px);
+    padding-block: var(--section-y-tight);
     border-top: 1px solid var(--color-line);
     background: var(--color-bg);
   }
@@ -170,7 +170,7 @@ const controlId = 'seo-geo-content-' + article.targetPath.split('/').filter(Bool
   .seo-geo__toggle svg { flex-shrink: 0; transition: transform .2s ease; }
   .seo-geo__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
   @media (max-width: 600px) {
-    .seo-geo { padding-block: 36px 56px; }
+    .seo-geo { padding-block: var(--section-y-tight); }
     .seo-geo__container { max-width: 100%; }
     /* Compact editorial tables should fit the article width without side scrolling. */
     .seo-geo__content :global(table) {

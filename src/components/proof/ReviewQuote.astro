@@ -54,7 +54,7 @@ const { review, index = 0 } = Astro.props;
     gap: clamp(36px, 8vw, 120px);
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
     margin-inline: auto;
-    padding-block: clamp(54px, 7vw, 96px);
+    padding-block: var(--section-y-tight);
   }
 
   .review__number {

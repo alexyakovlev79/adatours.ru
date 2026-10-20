@@ -290,7 +290,7 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
   }
 
   .multi-tours__head {
-    padding-bottom: clamp(44px, 7vw, 84px);
+    padding-bottom: var(--heading-gap);
   }
 
   .multi-tours__head h2,
@@ -311,9 +311,9 @@ const seoDescription = seoFill(SEO.multiCountry.description, { tourCountLabel: s
   }
 
   .multi-links__intro {
-    padding-bottom: clamp(44px, 7vw, 84px);
+    padding-bottom: var(--heading-gap);
   }
-  .all-country-combinations { padding-block: 26px 68px; }
+  .all-country-combinations { padding-block: var(--section-y-tight); }
   .all-country-combinations summary { cursor: pointer; font-weight: 600; }
   .all-country-combinations nav { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 26px; max-height: 520px; overflow-y: auto; padding-top: 28px; }
   .all-country-combinations a { color: var(--color-ink); text-underline-offset: 3px; }

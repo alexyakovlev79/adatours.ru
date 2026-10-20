@@ -22,8 +22,10 @@
 
   --container-max: 1200px;
   --gutter: clamp(24px, 4vw, 64px);
-  --section-y: clamp(72px, 10vw, 150px);
-  --section-y-tight: clamp(52px, 7vw, 104px);
+  /* Compact section edges: adjacent sections total 48–96px, not 144–300px. */
+  --section-y: clamp(24px, 3.3vw, 48px);
+  --section-y-tight: clamp(16px, 2.2vw, 32px);
+  --heading-gap: clamp(20px, 2.2vw, 32px);
 
   --hero-height: clamp(560px, 42vw, 650px);
   --header-h: 60px;

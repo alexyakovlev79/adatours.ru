@@ -54,7 +54,8 @@ const hasContent = hasServices || noteItems.length > 0;
   .included__grid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: clamp(52px,8vw,120px);
+    column-gap: clamp(52px,8vw,120px);
+    row-gap: var(--heading-gap);
     margin-top: 18px;
   }
 

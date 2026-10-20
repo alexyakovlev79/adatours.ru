@@ -374,7 +374,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 </script>
 
 <style>
-  .tour-copy { background: var(--color-bg); padding: 0 0 clamp(28px, 4vw, 56px); }
+  .tour-copy { background: var(--color-bg); padding: 0 0 var(--section-y-tight); }
   .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
   .tour-copy :global(.prose:empty) { display: none; }
   .tour-copy .tour-lead {

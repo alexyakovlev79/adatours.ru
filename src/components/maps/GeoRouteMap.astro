@@ -81,7 +81,7 @@ const payload = data ? {
 </script>
 
 <style is:global>
-  .geo-map { margin-top: 5rem; margin-bottom: 5rem; }
+  .geo-map { margin-block: var(--section-y-tight); }
   .geo-map__eyebrow { color: #8C7133; letter-spacing: .07em; text-transform: uppercase; font-size: .83rem; margin: 0 0 .5rem; }
   .geo-map__heading h2 { font-size: clamp(2rem,4.6vw,3.9rem); line-height: 1.08; margin: 0 0 1.5rem; }
   .geo-map__viewport { height: min(42vw,560px); min-height: 410px; position: relative; isolation: isolate; background: #EFEDE8; overflow: hidden; }
@@ -119,7 +119,7 @@ const payload = data ? {
   .geo-map__legend li strong { color:inherit; font-weight:700; }
   .geo-map__legend small { color:#777; margin-left:7px; }
   @media (max-width:720px) {
-    .geo-map { margin-top:3rem; margin-bottom:3rem; }
+    .geo-map { margin-block:var(--section-y-tight); }
     .geo-map__viewport { height:445px; min-height:0; }
     .geo-map__card { left:10px; top:12px; width:calc(100% - 20px); max-height:calc(100% - 52px); }
     .geo-map__card.geo-map__card--has-photo { height:calc(100% - 52px); }

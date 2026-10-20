@@ -40,7 +40,7 @@ const visible = showAll ? matching : matching.slice(0, 12);
   {!themeId && !showAll && <a href={withBase('/multi-country/')}>Все мультистрановые туры</a>}
 </section>}
 <style>
-  .mc-related { padding-block: 40px; }
+  .mc-related { padding-block: var(--section-y-tight); }
   .mc-related h2 { margin: 0 0 24px; font-size: clamp(1.6rem, 3vw, 2.6rem); }
   ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; margin: 18px 0 24px; padding: 0; list-style: none; }
   a { color: var(--color-ink); text-underline-offset: .2em; overflow-wrap: anywhere; }

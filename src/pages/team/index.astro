@@ -152,11 +152,11 @@ const colleagues = [
   .team-hero__heading {
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
     margin-inline: auto;
-    padding-block: clamp(28px, 4vw, 52px) clamp(52px, 7vw, 94px);
+    padding-block: var(--section-y-tight);
   }
   .team-hero__heading .eyebrow { margin: 0 0 16px; }
   .team-hero__heading h1 { max-width: 1120px; margin: 0; }
-  .team-intro { padding-top: clamp(24px, 4vw, 64px); }
+  .team-intro { padding-top: var(--section-y-tight); }
 
   .team-intro__copy {
     display: grid;

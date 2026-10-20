@@ -88,7 +88,7 @@ const { reviews } = Astro.props;
 </script>
 
 <style>
-  .reviews-carousel { padding-block: clamp(66px, 7vw, 100px); background: #f6f2eb; }
+  .reviews-carousel { padding-block: var(--section-y); background: #f6f2eb; }
   .reviews-carousel__heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
   .reviews-carousel__heading .eyebrow { margin: 0 0 12px; }
   .reviews-carousel__heading h2 { max-width: 800px; margin: 0; font-size: var(--text-h2); line-height: 1.07; }

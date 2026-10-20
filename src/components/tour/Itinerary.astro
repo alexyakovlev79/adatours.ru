@@ -330,8 +330,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
   const desktopPhotoMax = 660;
   const mediaGap = 16;
-  const collapsedMediaGap = 18;
-  const cardBottomGap = 18;
+  const collapsedMediaGap = 10;
+  const cardBottomGap = 10;
 
   const imageCount = (card: HTMLElement) =>
     Number.parseInt(card.dataset.itineraryImageCount ?? '0', 10) || 0;
@@ -342,6 +342,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   const clearRowSizing = (card: HTMLElement) => {
     card.removeAttribute('data-row-coordinated');
     card.removeAttribute('data-row-expanded');
+    card.style.removeProperty('--itinerary-summary-height');
     card.style.removeProperty('--itinerary-row-height');
     card.style.removeProperty('--itinerary-row-media-height');
     card.style.removeProperty('--itinerary-expanded-photo-height');
@@ -371,6 +372,12 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     for (let index = 0; index < itineraryCards.length; index += 2) {
       const pair = itineraryCards.slice(index, index + 2);
       const counts = pair.map(imageCount);
+      // Measure unrestricted titles first, then reserve the taller summary in
+      // both columns. This also aligns single-photo pairs with long titles.
+      const sharedSummaryHeight = Math.max(...pair.map(summaryHeight));
+      pair.forEach((card) => card.style.setProperty(
+        '--itinerary-summary-height', sharedSummaryHeight + 'px',
+      ));
       const anyOpen = pair.some(
         (card) => imageCount(card) > 0 &&
           card.querySelector<HTMLDetailsElement>(':scope > .day')?.open,
@@ -517,9 +524,9 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   .itinerary__heading {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 40px;
+    gap: 16px 24px;
     align-items: start;
-    margin-bottom: clamp(40px, 6vw, 80px);
+    margin-bottom: var(--heading-gap);
   }
 
   .itinerary__heading h2 {
@@ -543,7 +550,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     grid-template-columns: 80px 1fr 44px;
     gap: 20px;
     align-items: center;
-    min-height: 126px;
+    min-height: var(--itinerary-summary-height, 80px);
+    padding-block: 12px;
     cursor: pointer;
     list-style: none;
   }
@@ -580,7 +588,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 40px;
-    padding: 0 0 54px 100px;
+    padding: 0 0 24px 100px;
   }
 
   .day__content p {
@@ -685,14 +693,14 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     .itinerary__days {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      column-gap: 48px;
+      column-gap: 18px;
     }
 
     .day-card {
       display: flex;
       flex-direction: column;
       min-height: 100%;
-      padding-bottom: 18px;
+      padding-bottom: 10px;
     }
 
     .day__content {
@@ -736,7 +744,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
       flex: 0 0 auto;
       min-height: 0;
       max-height: none;
-      margin-top: 18px;
+      margin-top: 10px;
       padding-top: 0;
       aspect-ratio: 16 / 9;
     }
@@ -807,7 +815,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
     .day summary {
       grid-template-columns: 44px 1fr 30px;
-      min-height: 76px;
+      min-height: 64px;
     }
 
     .day-card {
@@ -825,7 +833,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     }
 
     .day-card:not(.day-card--image) {
-      padding-bottom: 54px;
+      padding-bottom: 24px;
     }
 
     .day__content > div:first-child {

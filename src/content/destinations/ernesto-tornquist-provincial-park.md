@@ -13,9 +13,7 @@ hero:
   src: /media/tours/argentina-agricultural-11-days/day06-ventania-generated-20261020-v1.webp
   alt: 'Каменистые склоны и травянистые долины системы Вентания: иллюстрация'
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -13,9 +13,7 @@ hero:
   hover: "Осорно в Чили: снежный конус над озером Льянкиуэ"
   alt: "Заснеженный вулкан Осорно отражается в озере Льянкиуэ за лесистым берегом, Чили"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 searchAliases:
 - Пуэрто-Варас
 sourceSnapshot: data/source-index/materials/destination_chile_puerto_varas.md

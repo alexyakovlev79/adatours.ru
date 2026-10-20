@@ -18,8 +18,7 @@ hero:
   alt: Зеленые склоны кратера Эль-Бокерон и внутренний конус Бокеронсито, Эль-Сальвадор
   hover: 'Эль-Бокерон: большой кратер и Бокеронсито на дне'
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

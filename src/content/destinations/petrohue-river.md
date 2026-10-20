@@ -13,8 +13,7 @@ hero:
   hover: "Петроуэ: зеленые ветви над яркой водой реки"
   alt: "Бирюзовая вода Петроуэ под нависающей веткой среди лесистых берегов, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Река Петроуэ
 sourceSnapshot: data/source-index/materials/destination_chile_petrohue_river.md

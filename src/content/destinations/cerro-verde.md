@@ -17,8 +17,7 @@ hero:
   alt: Темный конус вулкана Исалько с лесной смотровой площадки Серро-Верде, Эль-Сальвадор
   hover: 'Серро-Верде: лес и панорама Исалько'
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

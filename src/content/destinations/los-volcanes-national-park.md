@@ -17,9 +17,7 @@ hero:
   alt: Лесистый массив Санта-Аны и темный конус Исалько в Лос-Вулканес, Эль-Сальвадор
   hover: 'Лос-Вулканес: два разных вулканических пейзажа'
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

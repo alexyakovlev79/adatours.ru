@@ -13,9 +13,7 @@ hero:
   alt: Река Лимай с прозрачной синей водой, галечными берегами и рыболовными лодками
   hover: Река Лимай с прозрачной синей водой, галечными берегами и рыболовными лодками
 gallery: []
-themes:
-- theme_fishing
-- theme_wildlife
+themes: ["theme_fishing", "theme_nature"]
 searchAliases:
 - Лимай
 - Río Limay

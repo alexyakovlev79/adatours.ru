@@ -13,9 +13,7 @@ hero:
   alt: Лесная тропа Льяо-Льяо с видом на озёрный пейзаж у Барилоче — иллюстрация GPT Images
   hover: Лесная тропа Льяо-Льяо с видом на озёрный пейзаж у Барилоче — иллюстрация GPT Images
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - Llao Llao
 - Льяо Льяо

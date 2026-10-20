@@ -13,8 +13,7 @@ hero:
   hover: "Осорно в Чили: снежный конус над озером Льянкиуэ"
   alt: "Заснеженный вулкан Осорно отражается в озере Льянкиуэ за лесистым берегом, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Озеро Льянкиуэ
 sourceSnapshot: data/source-index/materials/destination_chile_llanquihue_lake.md

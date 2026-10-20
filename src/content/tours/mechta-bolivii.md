@@ -249,7 +249,7 @@ routeDestinations:
 - destination_bolivia_ostrov_inka_huasi
 - destination_bolivia_vulkan_tunupa
 - destination_bolivia_lunnaya_dolina_la_pas
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

@@ -198,7 +198,7 @@ routeDestinations:
 - destination_bolivia_ostrov_inka_huasi
 - destination_bolivia_kokesa
 - destination_bolivia_vulkan_tunupa
-primaryThemes: ["theme_culture","theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

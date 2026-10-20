@@ -73,11 +73,8 @@ routeDestinations:
 - destination_bolivia_torotoro
 - destination_bolivia_umajalanta_cave
 - destination_bolivia_el_vergel_canyon
-primaryThemes:
-- theme_wildlife
-- theme_adventure
-themes:
-- theme_culture
+primaryThemes: ["theme_nature", "theme_adventure"]
+themes: ["theme_culture"]
 durationDays: 11
 durationNights: 10
 priceFrom: null

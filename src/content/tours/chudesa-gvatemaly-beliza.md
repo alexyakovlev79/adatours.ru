@@ -328,8 +328,8 @@ routeDestinations:
 - destination_belize_karakol
 - destination_belize_peschera_aktun_tunichil_muknal
 - destination_belize_morskoj_zapovednik_hol_chan
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife","theme_adventure"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature", "theme_wildlife", "theme_adventure"]
 ---
 
 

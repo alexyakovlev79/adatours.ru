@@ -24,7 +24,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/tury-v-nacionalnyj-park-torgurego-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1KuhWnwXaFuagtKCCM7ZxUgTFSq4OnWBe/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 ---
 
 ## Черепахи, каналы и туканы: что посмотреть в Тортугеро

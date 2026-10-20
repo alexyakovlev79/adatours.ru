@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-v-provinciyu-pinar-del-rio-i-dolinu-vinyales-na-kube"
 sourceSnapshot: "https://drive.google.com/file/d/1_BG-4XTRKIhFpvLLoItJd7qjlkPYluPa/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ## Пинар-дель-Рио - живописный уголок Кубы

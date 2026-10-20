@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-barakoa-na-ostrove-kuba"
 sourceSnapshot: "https://drive.google.com/file/d/15SB7MKjoZ7yhcHh74QzZGSmF-VFfQ0Ez/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife","theme_beach"]
+themes: ["theme_culture", "theme_nature", "theme_beach"]
 ---
 
 ## Баракоа - живописный уголок Кубы

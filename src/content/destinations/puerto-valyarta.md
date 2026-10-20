@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-puehrto-valyarta-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/12VNbdpDdC2BsUNwQ2sAezUbWfAZPlfiT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_beach","theme_culture","theme_wildlife"]
+themes: ["theme_beach", "theme_culture"]
 ---
 
 ## Пуэрто-Вальярта - город-курорт!

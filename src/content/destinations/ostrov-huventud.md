@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-na-ostrov-huventud-na-kube"
 sourceSnapshot: "https://drive.google.com/file/d/1LAFl_dC4h7cjdBL11DdryTC79y6FN4t5/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_beach","theme_diving","theme_culture","theme_wildlife"]
+themes: ["theme_beach", "theme_diving", "theme_culture", "theme_wildlife", "theme_nature"]
 ---
 
 ## Остров Хувентуд - место тусовок для молодежи!

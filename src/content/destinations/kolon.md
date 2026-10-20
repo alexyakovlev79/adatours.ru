@@ -19,7 +19,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kolon-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1A6wfGcpW-l3ubodUTT-Ww_MM1XPgM2p4/view?usp=drivesdk"
 updatedAt: '2026-10-11'
-themes: ["theme_beach","theme_wildlife"]
+themes: ["theme_beach"]
 ---
 
 ## Колон- колониальное очарование Панамы!

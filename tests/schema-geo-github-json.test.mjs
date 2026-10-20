@@ -34,5 +34,5 @@ test('rejects missing and malformed immutable blob identifiers',async()=>{
 });
 
 test('rejects blob response with no real contents',async()=>{
- await assert.rejects(readGitHubJsonFile(async url=>url.startsWith('/contents/')?{encoding:'none',sha}:{encoding:'none',content:''}),path,'main'),/Git blob did not return base64/);
+ await assert.rejects(readGitHubJsonFile(async url=>url.startsWith('/contents/')?{encoding:'none',sha}:{encoding:'none',content:''},path,'main'),/Git blob did not return base64/);
 });

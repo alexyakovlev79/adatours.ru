@@ -46,10 +46,10 @@ test('catalogue lead is individual, uses current total and does not expose inter
     }
   }
 });
-test('interest index includes all 14, counts primary+secondary once and sorts by count then Russian name', () => {
+test('interest index includes all 15, counts primary+secondary once and sorts by count then Russian name', () => {
   const tours=[tour('one',{primaryThemes:[N],themes:[A]}),tour('two',{primaryThemes:[N]}),tour('three',{status:'archived'}),tour('four',{status:'draft'}),tour('five',{locale:'en'})];
   const rows=buildInterestIndex(themes,[...tours,tours[0]]);
-  assert.equal(rows.length,14);
+  assert.equal(rows.length,15);
   assert.deepEqual(rows.slice(0,2).map(r=>[r.entry.data.id,r.tourCount]),[[N,2],[A,1]]);
   for (let i=1;i<rows.length;i++) assert.ok(rows[i-1].tourCount >= rows[i].tourCount);
   const archived=buildInterestIndex(themes,[tour('one',{primaryThemes:[N],themes:[A],status:'archived'}),tours[1]]);

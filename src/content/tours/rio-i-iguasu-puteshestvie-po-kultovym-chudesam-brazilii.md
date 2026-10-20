@@ -151,7 +151,7 @@ routeDestinations:
 - destination_brazil_ilha_grande
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
-primaryThemes: ["theme_culture","theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

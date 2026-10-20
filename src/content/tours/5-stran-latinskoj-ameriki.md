@@ -119,11 +119,8 @@ routeDestinations:
 - destination_chile_la_moneda_palace
 - destination_chile_santa_lucia_hill
 - destination_peru_santo_domingo_lima
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure"]
 durationDays: 18
 durationNights: 17
 route:

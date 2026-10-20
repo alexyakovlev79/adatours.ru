@@ -316,9 +316,7 @@ routeDestinations:
 - destination_brazil_tijuca_national_park
 - destination_argentina_garganta_del_diablo
 - destination_argentina_nacionalnyj_park_los_glasyares
-primaryThemes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 format: Частный
 gallery: []

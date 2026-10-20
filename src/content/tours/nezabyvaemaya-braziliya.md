@@ -283,8 +283,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_buzios
-primaryThemes: ["theme_beach","theme_culture"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_beach", "theme_culture"]
+themes: ["theme_nature"]
 ---
 
 

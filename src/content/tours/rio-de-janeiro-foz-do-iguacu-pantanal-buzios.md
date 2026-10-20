@@ -268,11 +268,8 @@ routeDestinations:
 - destination_brazil_kampo_grande
 - destination_brazil_pantanal
 - destination_brazil_buzios
-primaryThemes:
-- theme_wildlife
-- theme_beach
-themes:
-- theme_culture
+primaryThemes: ["theme_wildlife", "theme_beach"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 

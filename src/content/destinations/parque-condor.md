@@ -10,7 +10,7 @@ summary: "Парк Кондор возле Отавало знакомит с х
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_parque_condor/hero-generated-20261010-editorial-v1.webp", "alt": "Андский кондор на камне на фоне зелёных склонов возле Отавало", "hover": "Отавало: кондор над зелёной горной долиной"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

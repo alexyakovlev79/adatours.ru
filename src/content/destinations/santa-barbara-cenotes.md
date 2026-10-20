@@ -12,9 +12,7 @@ hero:
   hover: "Сеноты Санта-Барбара: луч света над прозрачной водой и деревянной лестницей"
   alt: "Бирюзовая вода сенота Санта-Барбары под известняковым сводом, Юкатан, Мексика"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_mexico_santa_barbara_cenotes.md
 updatedAt: '2026-10-10'
 ---

@@ -12,8 +12,7 @@ hero:
   alt: "Каменистая высокогорная пустыня и грунтовая дорога в районе Охо-де-Пердис, Боливия"
   hover: "Охо-де-Пердис в Боливии: пустынные склоны и дорога"
 gallery: []
-themes:
-- theme_wildlife
+themes: []
 facts: []
 featureBands: []
 relatedDestinations: []

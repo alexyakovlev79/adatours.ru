@@ -13,8 +13,7 @@ hero:
   hover: "Игуасу в Аргентине: радуга среди каскадов и густой зелени"
   alt: "Радуга над потоками Игуасу между лесистыми островками, Аргентина"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations:
 - destination_argentina_puerto_iguasu
 featuredTours: []

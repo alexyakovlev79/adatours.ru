@@ -14,9 +14,7 @@ hero:
   status: approved
   hover: "Хидден-Вэлли в Белизе: узкая тропа над зеленой долиной"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 facts: []
 sourceSnapshot: data/source-index/materials/destination_belize_hidden_valley.md
 updatedAt: '2026-10-10'

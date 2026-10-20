@@ -12,9 +12,7 @@ hero:
   hover: "Галапагосские острова: морская черепаха под водой среди рыб"
   alt: "Морская черепаха плывет среди рыб над каменистым дном, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
-- theme_diving
+themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_ecuador_cousins_rock.md
 updatedAt: '2026-10-10'
 ---

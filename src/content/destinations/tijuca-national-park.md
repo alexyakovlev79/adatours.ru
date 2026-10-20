@@ -13,8 +13,7 @@ searchAliases:
 - Tijuca National Park
 - Parque Nacional da Tijuca
 - Floresta da Tijuca
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/tizhuka-tropicheskij-les-i-vodopady-na-dzhipe/gallery-0-src-enhanced-20261007.webp
   hover: "Тижука в Рио: водопад Каскатинья среди мокрых скал и растений"

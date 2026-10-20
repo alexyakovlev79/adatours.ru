@@ -10,7 +10,7 @@ summary: "Озеро Акажатуба в бассейне Риу-Негру о
 searchAliases: ["ozero-akazhatuba"]
 hero: {"src": "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp", "alt": "Поселение Акажатуба на берегу амазонского водоема — иллюстрация"}
 gallery: []
-themes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

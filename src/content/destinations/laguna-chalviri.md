@@ -12,8 +12,7 @@ hero:
   alt: "Светлые берега лагуны Чалвири и отражения сухих гор Альтиплано, Боливия"
   hover: "Чалвири в Боливии: прозрачное мелководье у высокогорной равнины"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

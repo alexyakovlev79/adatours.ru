@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_coronel_suarez",
+  "stableId": "destination_argentina_coronel_suarez",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/coronel-suarez/",
+  "sourceFingerprint": "90f73257c8523b8acf7758e8a6c40d7a44c5b65239651f7e5ccd7a6a8759cd9b",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Коронель-Суарес",
+      "reason": "Точная новая сущность сверена с утвержденным Word, canonical каталогом и адресной проверкой официальных источников."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 100,
+      "selected": "country_argentina",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.coronelsuarez.gob.ar/turismo-visita-nuestra-pagina/",
+      "reason": "Проверена официальная страница муниципалитета, туристического ведомства или природоохранного органа об объекте."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.coronelsuarez.gob.ar/turismo-visita-nuestra-pagina/",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Локальная топонимика и принадлежность к Аргентине проверены по официальному источнику."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Страна программы и названного места — Аргентина."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.coronelsuarez.gob.ar/turismo-visita-nuestra-pagina/",
+      "checkedAt": "2026-10-20T09:55:11.871Z",
+      "note": "Официальный источник названного места; не сторонний туристический агрегатор."
+    }
+  ],
+  "reviewNote": "Адресный паспорт нового места. Город/населенный пункт отделен от одноименного округа; неподтвержденные QID и координаты пропущены. Изображения — иллюстрации GPT Image.",
+  "external": {
+    "officialUrl": "https://www.coronelsuarez.gob.ar/turismo-visita-nuestra-pagina/"
+  }
+}

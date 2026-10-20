@@ -28,7 +28,7 @@ test("countries after 'по' use case",()=>{
 });
 
 
-import {SEO_CASES,seoCountryCase,seoPlacePhrase,seoPlaceDirectionPhrase,seoInterestCase} from '../src/lib/seo-grammar.mjs';
+import {SEO_CASES,seoCountryCase,seoCountryDirection,seoPlacePhrase,seoPlaceDirectionPhrase,seoInterestCase} from '../src/lib/seo-grammar.mjs';
 import {seoCountryTitle,seoDestinationTitle,seoTourTitle,seoExcursionTitle,
  seoThemeHubTitle,seoThemeCatalogTitle,seoCountryTourCatalogTitle,
  seoCountryPlacesCatalogTitle,seoCountryExcursionsCatalogTitle,seoDestinationTourCatalogTitle,
@@ -76,7 +76,7 @@ test('SEO title cases and conditional prices',()=>{
  const place={id:'destination_bolivia_samaipata',name:'Самаипата',countryId:'country_bolivia'};
  assert.match(seoCountryTourCatalogTitle('country_brazil'),/по Бразилии/);
  assert.match(seoCountryPlacesCatalogTitle('country_brazil',21),/^21 локация Бразилии/);
- assert.match(seoCountryExcursionsCatalogTitle('country_belize',2),/^2 экскурсии в Белизе/);
+ assert.match(seoCountryExcursionsCatalogTitle('country_belize',2),/^2 экскурсии в Белиз/);
  assert.match(seoDestinationTourCatalogTitle(place,4),/4 тура .* в Самаипате \(Боливии\)/);
  assert.match(seoDestinationTourCatalogTitle(place,4,true),/заехать в Самаипату/);
  assert.match(seoDestinationExcursionsCatalogTitle(place,'Боливия',2),/^2 экскурсии в Самаипате, Боливия/);
@@ -307,4 +307,39 @@ test('SEO: a single price uses singular wording without от', () => {
     prices: [{ id: 'one', kind: 'tour', currency: 'USD', amount: 1350 }] });
   assert.equal(moneyText(result.title), 'По лучшей цене $1 350');
   assert.equal(moneyText(result.description), 'Каталог и цена $1 350 2026-2027');
+});
+
+test('all 24 country directions are explicit and agree with the catalogues', async () => {
+ const {readFileSync}=await import('node:fs');
+ const list=JSON.parse(readFileSync(new URL('../data/source-index/catalogs/countries.json',import.meta.url),'utf8')).entries;
+ const expected={
+  country_brazil:'в Бразилию',country_argentina:'в Аргентину',
+  country_peru:'в Перу',country_antarctica:'в Антарктиду',
+  country_belize:'в Белиз',country_bolivia:'в Боливию',
+  country_venezuela:'в Венесуэлу',country_guyana:'в Гайану',
+  country_guatemala:'в Гватемалу',country_honduras:'в Гондурас',
+  country_dominican_republic:'в Доминикану',country_colombia:'в Колумбию',
+  country_costa_rica:'в Коста-Рику',country_cuba:'на Кубу',
+  country_mexico:'в Мексику',country_nicaragua:'в Никарагуа',
+  country_panama:'в Панаму',country_paraguay:'в Парагвай',
+  country_suriname:'в Суринам',country_uruguay:'в Уругвай',
+  country_french_guiana:'во Французскую Гвиану',
+  country_chile:'в Чили',country_ecuador:'в Эквадор',
+  country_el_salvador:'в Эль-Сальвадор'
+ };
+ assert.equal(list.length,24);
+ assert.deepEqual(Object.keys(SEO_CASES.countries).sort(),list.map(x=>x.id).sort());
+ assert.deepEqual(Object.keys(expected).sort(),list.map(x=>x.id).sort());
+ const {vipCountryTitle}=await import('../src/lib/vip-countries.mjs');
+ for(const country of list) {
+  const direction=expected[country.id];
+  assert.equal(seoCountryDirection(country.id),direction,country.id);
+  assert.equal(seoCountryDirection(country.name),direction,country.name);
+  assert.equal(vipCountryTitle(country),'VIP-туры '+direction,country.id);
+  assert.ok(seoCountryExcursionsCatalogTitle(country.id,2).includes('2 экскурсии '+direction+' | Ada Tours'));
+ }
+ assert.throws(()=>seoCountryDirection('country_unknown'),/Missing country direction/);
+ const layout=readFileSync(new URL('../src/layouts/CountryLayout.astro',import.meta.url),'utf8');
+ assert.ok(layout.includes('<h2 id="country-tours-title">Туры {countryDirection}</h2>'));
+ assert.ok(layout.includes('<h2 id="country-excursions-title">Экскурсии {countryDirection}</h2>'));
 });

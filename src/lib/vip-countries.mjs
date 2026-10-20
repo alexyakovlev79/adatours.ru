@@ -1,28 +1,12 @@
 import { isActiveEntity } from './archive.mjs';
 import { selectVipTours } from './vip-tours.mjs';
 import { compareToursForCountry } from './tour-sales-fit.mjs';
+import { seoCountryDirection } from './seo-grammar.mjs';
 
 const dataOf = (entry) => entry?.data ?? entry;
-const directions = {
-  country_brazil: 'в Бразилию', country_argentina: 'в Аргентину',
-  country_peru: 'в Перу', country_antarctica: 'в Антарктиду',
-  country_belize: 'в Белиз', country_bolivia: 'в Боливию',
-  country_chile: 'в Чили', country_colombia: 'в Колумбию',
-  country_costa_rica: 'в Коста-Рику', country_cuba: 'на Кубу',
-  country_dominican_republic: 'в Доминикану', country_ecuador: 'в Эквадор',
-  country_el_salvador: 'в Эль-Сальвадор', country_french_guiana: 'во Французскую Гвиану',
-  country_guatemala: 'в Гватемалу', country_guyana: 'в Гайану',
-  country_honduras: 'в Гондурас', country_mexico: 'в Мексику',
-  country_nicaragua: 'в Никарагуа', country_panama: 'в Панаму',
-  country_paraguay: 'в Парагвай', country_suriname: 'в Суринам',
-  country_uruguay: 'в Уругвай', country_venezuela: 'в Венесуэлу',
-};
-
 export function vipCountryTitle(country) {
   const data = dataOf(country);
-  const direction = directions[data.id];
-  if (!direction) throw new Error(`Missing VIP country direction: ${data.id}`);
-  return `VIP-туры ${direction}`;
+  return `VIP-туры ${seoCountryDirection(data.id)}`;
 }
 
 export function vipCountryPath(country) {

@@ -1,6 +1,6 @@
 /** User-approved SEO title formulas, independent from visible page copy. */
 import {seoCountLabel,seoPluralIndex,seoYearRange} from './seo-meta.mjs';
-import {seoCountryCase,seoCountryName,seoPlacePhrase,seoPlaceDirectionPhrase} from './seo-grammar.mjs';
+import {seoCountryCase,seoCountryName,seoCountryDirection,seoPlacePhrase,seoPlaceDirectionPhrase} from './seo-grammar.mjs';
 const F={tour:['тур','тура','туров'],excursion:['экскурсия','экскурсии','экскурсий'],
  attraction:['локация','локации','локаций']};
 /** Compact only SEO titles; names, headings, URLs and editorial copy keep their wording. */
@@ -77,7 +77,7 @@ export function seoCountryPlacesCatalogTitle(countryId,total) {
  return phrase+' '+seoCountryCase(countryId,'genitive')+' | Ada Tours';
 }
 export function seoCountryExcursionsCatalogTitle(countryId,total) {
- return (quantity(total,'excursion')||'Экскурсии')+' в '+seoCountryCase(countryId,'prepositional')+' | Ada Tours';
+ return (quantity(total,'excursion')||'Экскурсии')+' '+seoCountryDirection(countryId)+' | Ada Tours';
 }
 export function seoDestinationTourCatalogTitle(destination,total,optional=false) {
  const n=quantity(total,'tour')||'Туры';

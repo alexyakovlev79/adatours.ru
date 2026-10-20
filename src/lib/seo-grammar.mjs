@@ -6,6 +6,13 @@ export function seoCountryCase(idOrName, grammaticalCase = 'prepositional') {
  return row?.[grammaticalCase] ?? row?.name ?? idOrName ?? '';
 }
 export function seoCountryName(idOrName) { return seoCountryCase(idOrName,'name'); }
+/** Directional form for a fixed country: "в Колумбию", "на Кубу", "во Французскую Гвиану". */
+export function seoCountryDirection(idOrName) {
+ const row=table.countries[idOrName] ?? countryNames.find(value=>value.name===idOrName);
+ if(!row?.accusative || !row?.directionPreposition)
+  throw new Error('Missing country direction form: '+String(idOrName));
+ return row.directionPreposition+' '+row.accusative;
+}
 function inflectLocative(name) {
  const words=name.split(/\s+/),last=words.pop() || '';
  let result=last;

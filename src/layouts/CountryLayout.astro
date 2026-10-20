@@ -1,7 +1,7 @@
 ---
 import { interestsForCountry } from '../lib/interest-model.mjs';
 import { seoCountryTitle, seoAttractionsDescription } from '../lib/seo-page.mjs';
-import { seoCountryCase } from '../lib/seo-grammar.mjs';
+import { seoCountryCase, seoCountryDirection } from '../lib/seo-grammar.mjs';
 import { isActiveEntity } from '../lib/archive.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
@@ -29,30 +29,7 @@ const d = entry.data;
 // editorial image settings and the separate, unabridged country catalogues.
 const previewLimits = { destinations: 15, tours: 10, excursions: 5 } as const;
 
-const countryTourTarget = ({
-  country_brazil: 'Бразилию',
-  country_argentina: 'Аргентину',
-  country_peru: 'Перу',
-  country_antarctica: 'Антарктиду',
-  country_bolivia: 'Боливию',
-  country_venezuela: 'Венесуэлу',
-  country_guatemala: 'Гватемалу',
-  country_guyana: 'Гайану',
-  country_dominican_republic: 'Доминикану',
-  country_costa_rica: 'Коста-Рику',
-  country_cuba: 'Кубу',
-  country_mexico: 'Мексику',
-  country_nicaragua: 'Никарагуа',
-  country_panama: 'Панаму',
-  country_paraguay: 'Парагвай',
-  country_suriname: 'Суринам',
-  country_uruguay: 'Уругвай',
-  country_french_guiana: 'Французскую Гвиану',
-  country_chile: 'Чили',
-  country_el_salvador: 'Эль-Сальвадор',
-} as Record<string, string>)[d.id] ?? d.name;
-
-const countryTourPreposition = d.id === 'country_french_guiana' ? 'во' : 'в';
+const countryDirection = seoCountryDirection(d.id);
 
 const [destinationEntries, allTourEntries, excursionEntries, allThemeEntries] = await Promise.all([
   getCollection('destinations', ({ data }) =>
@@ -227,7 +204,7 @@ const featureBandImageTextAlign = (href: string) => {
         <div class="container">
           <div class="country-linked__heading country-linked__heading--tours">
             <p class="eyebrow">Туры</p>
-            <h2 id="country-tours-title">Туры {countryTourPreposition} {countryTourTarget}</h2>
+            <h2 id="country-tours-title">Туры {countryDirection}</h2>
             <p>Готовый маршрут можно взять за основу и адаптировать под ваши даты, темп и интересы.</p>
           </div>
         </div>
@@ -270,7 +247,7 @@ const featureBandImageTextAlign = (href: string) => {
       <div class="container">
         <div class="country-linked__heading">
           <p class="eyebrow">Экскурсии</p>
-          <h2 id="country-excursions-title">{d.name}: экскурсии</h2>
+          <h2 id="country-excursions-title">Экскурсии {countryDirection}</h2>
         </div>
       </div>
 

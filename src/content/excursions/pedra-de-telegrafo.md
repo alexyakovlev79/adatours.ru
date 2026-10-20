@@ -44,7 +44,7 @@ notes:
 sourceUrl: https://brasiltours.ru/pedra-de-telegrafo
 sourceSnapshot: page_texts_newstep/Excursions/pedra-de-telegrafo__288d52b5.md
 updatedAt: 2026-09-30
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 Поход начинается с прогулки по пляжу. Затем предстоит около часа подъема на высоту 350 метров.

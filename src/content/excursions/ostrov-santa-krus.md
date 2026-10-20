@@ -58,7 +58,7 @@ relatedDestinations:
   - destination_ecuador_ostrov_baltra
   - destination_ecuador_ostrov_santa_krus_galapagosy
   - destination_ecuador_puerto_ajora
-themes: ["theme_wildlife"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 Из аэропорта на острове Балтра вы отправитесь к каналу Итабака, который отделяет Балтру от Санта-Круса. Переправа на моторной лодке занимает около 5 минут, после чего маршрут продолжается на индивидуальном транспорте через остров в сторону Пуэрто-Айоры.

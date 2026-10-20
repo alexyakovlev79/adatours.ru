@@ -62,7 +62,7 @@ updatedAt: '2026-10-11'
 relatedDestinations:
   - destination_colombia_dolina_kokora
   - destination_colombia_salento
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 В Саленто предусмотрена остановка на смотровой площадке с видом на долину.

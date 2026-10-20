@@ -62,7 +62,7 @@ updatedAt: '2026-10-11'
 relatedDestinations:
   - destination_bolivia_laguna_verde
   - destination_bolivia_laguna_kolorada
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 ---
 
 В сухой сезон Салар де Уюни открывается как белая соляная равнина, а в сезон дождей его поверхность превращается в огромное зеркало.

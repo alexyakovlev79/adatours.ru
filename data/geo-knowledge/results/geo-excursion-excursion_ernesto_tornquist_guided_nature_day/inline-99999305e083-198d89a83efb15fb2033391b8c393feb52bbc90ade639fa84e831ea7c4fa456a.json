@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-excursion-excursion_ernesto_tornquist_guided_nature_day",
+  "stableId": "excursion_ernesto_tornquist_guided_nature_day",
+  "kind": "excursion",
+  "canonicalPath": "/argentina/ernesto-tornquist-provincial-park/ernesto-tornquist-guided-nature-day/",
+  "sourceFingerprint": "db5387fe052b52dd6da5e3d47eaa9e773806cdffe8bdffba01721889625fc701",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Парк Эрнесто-Торнкист: прогулка с гидом из Сьерра-де-ла-Вентана",
+      "reason": "Точная новая сущность сверена с утвержденным Word, canonical каталогом и адресной проверкой официальных источников."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 100,
+      "selected": "country_argentina",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    },
+    {
+      "field": "relationships.destination_argentina_sierra_de_la_ventana",
+      "probability": 100,
+      "selected": "destination_argentina_sierra_de_la_ventana",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    },
+    {
+      "field": "relationships.destination_argentina_ernesto_tornquist_provincial_park",
+      "probability": 100,
+      "selected": "destination_argentina_ernesto_tornquist_provincial_park",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_argentina_sierra_de_la_ventana",
+      "position": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_argentina_ernesto_tornquist_provincial_park",
+      "position": 2
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.872Z",
+      "note": "Идентичность программы и услуг — точный предоставленный Word в неизменяемом content commit."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.872Z",
+      "note": "Страна программы и названного места — Аргентина."
+    },
+    {
+      "field": "relationships.destination_argentina_sierra_de_la_ventana",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.872Z",
+      "note": "Маршрут и порядок посещения подтверждены соответствующим днем Word."
+    },
+    {
+      "field": "relationships.destination_argentina_ernesto_tornquist_provincial_park",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.872Z",
+      "note": "Маршрут и порядок посещения подтверждены соответствующим днем Word."
+    }
+  ],
+  "reviewNote": "Адресный паспорт новой деловой программы. Коммерческие факты взяты только из Word; внешняя идентичность географического объекта не присваивается продукту."
+}

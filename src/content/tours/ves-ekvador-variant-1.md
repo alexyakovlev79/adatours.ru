@@ -238,7 +238,7 @@ routeDestinations:
 - destination_ecuador_mindo
 - destination_ecuador_tigua
 - destination_ecuador_ozero_kilotoa
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: ["theme_adventure"]
 ---
 

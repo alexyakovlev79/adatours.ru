@@ -341,7 +341,7 @@ routeDestinations:
 - destination_chile_poluostrov_pojke
 - destination_chile_ahu_te_pito_kura
 - destination_chile_ahu_nau_nau
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

@@ -107,11 +107,8 @@ routeDestinations:
 - destination_bolivia_laguna_chalviri
 - destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa
 - destination_chile_santiago_city_hall
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure"]
 durationDays: 14
 durationNights: 13
 priceFrom: 6559

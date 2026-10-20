@@ -198,7 +198,7 @@ routeDestinations:
 - destination_ecuador_tena
 - destination_ecuador_reka_zhatunyaku
 - destination_ecuador_papayakta
-primaryThemes: ["theme_adventure","theme_wildlife"]
+primaryThemes: ["theme_adventure", "theme_nature"]
 themes: ["theme_culture"]
 ---
 

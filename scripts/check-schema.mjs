@@ -178,6 +178,9 @@ for (const file of files.sort()) {
         assert.ok(Number(node.ratingValue) > 0, 'AggregateRating has a positive ratingValue');
         assert.ok(Number(node.bestRating) >= Number(node.ratingValue), 'AggregateRating stays within bestRating');
         assert.ok(Number(node.reviewCount) > 0, 'AggregateRating has reviewCount');
+        if (nodes.some((parent) => parent.aggregateRating?.['@id'] === node['@id'])) {
+          assert.equal(node.itemReviewed, undefined, 'Nested AggregateRating must not repeat itemReviewed');
+        }
       }
       if (hasType(node, 'ItemList')) assert.equal(node.numberOfItems, node.itemListElement?.length, 'ItemList count equals rendered items');
       for (const key of ['reviewRating', 'foundingDate']) assert.equal(node[key], undefined, `No unsupported claim ${key}`);

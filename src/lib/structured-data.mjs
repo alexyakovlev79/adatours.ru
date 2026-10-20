@@ -449,7 +449,7 @@ export function buildStructuredData({ root, organization, records, page, documen
       const aggregate = add({
         '@type': 'AggregateRating',
         '@id': `${organization.url.replace(/\/$/, '')}/#aggregate-rating`,
-        itemReviewed: ref(orgId),
+        // Nested in Organization.aggregateRating: the parent is already the rated entity.
         ratingValue: authoredAggregate.ratingValue,
         bestRating: authoredAggregate.bestRating,
         worstRating: authoredAggregate.worstRating,

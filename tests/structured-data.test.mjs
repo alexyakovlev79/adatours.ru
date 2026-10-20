@@ -134,6 +134,8 @@ test('reviews keep displayed authors/text and an explicitly supplied aggregate r
   assert.equal(nodes(graph, 'AggregateRating').length, 1);
   assert.equal(nodes(graph, 'AggregateRating')[0].ratingValue, 5);
   assert.equal(nodes(graph, 'AggregateRating')[0].reviewCount, 1);
+  assert.equal(nodes(graph, 'AggregateRating')[0].itemReviewed, undefined);
+  assert.equal(nodes(graph, 'Review')[0].itemReviewed['@id'], `${root}#organization`);
   assert.equal(nodes(graph, 'Organization')[0].aggregateRating['@id'], `${root}#aggregate-rating`);
   assert.equal(nodes(graph, 'CollectionPage')[0].mainEntity['@id'], `${root}reviews/#reviews`);
 });
@@ -164,6 +166,8 @@ test('homepage describes visible sections, services, catalogs and customer revie
   assert.equal(org.aggregateRating['@id'], `${root}#aggregate-rating`);
   assert.equal(nodes(graph, 'Review').length, 1);
   assert.equal(nodes(graph, 'AggregateRating')[0].reviewCount, 1);
+  assert.equal(nodes(graph, 'AggregateRating')[0].itemReviewed, undefined);
+  assert.equal(nodes(graph, 'Review')[0].itemReviewed['@id'], `${root}#organization`);
   assert.equal(nodes(graph, 'WebPageElement').length, 5);
   assert.equal(nodes(graph, 'Service').length, 4);
   assert.ok(nodes(graph, 'CollectionPage').some((node) => node['@id'] === `${root}country/#webpage`));

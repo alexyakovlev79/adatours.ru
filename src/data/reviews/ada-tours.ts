@@ -174,7 +174,7 @@ export const adaReviewPageSchema = (reviews: AdaReview[]) => [
   })),
   {
     '@type': 'AggregateRating',
-    itemReviewed: { '@id': 'https://adatours.ru/#organization' },
+    // Central schema generation nests this rating under Organization.aggregateRating.
     ratingValue: ADA_REVIEW_RATING,
     bestRating: 5,
     worstRating: 1,

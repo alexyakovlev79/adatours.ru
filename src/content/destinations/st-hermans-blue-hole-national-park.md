@@ -12,9 +12,7 @@ hero:
   hover: "Сент-Херманс: лес окружает прозрачную голубую воду"
   alt: "Прозрачный бирюзовый водоем среди тропического леса в парке Сент-Херманс-Блю-Хоул, Белиз"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -8,7 +8,7 @@ countryId: "country_argentina"
 destinationType: "natural_area"
 summary: "Пуэнте-дель-Инка — уникальное природное образование в аргентинских Андах, расположенное на высоте около 2 700 метров над уровнем моря, недалеко от границы с Чили. Огромная каменная арка перекинулась над рекой Мендоса и выглядит так, словно создана человеческими руками."
 searchAliases: ["Пуэнте-дель-Инка", "puente-de-inka"]
-themes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 hero: {"src": "/media/destinations/destination_argentina_puente_de_inka/original-01.jpg", "alt": "Старое здание с пустыми оконными проемами на желтых минеральных отложениях Пуэнте-де-Инка, Аргентина", hover: "Пуэнте-де-Инка: старые стены на минеральных уступах"}
 gallery: []
 facts: []

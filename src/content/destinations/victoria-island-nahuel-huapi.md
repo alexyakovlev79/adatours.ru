@@ -12,9 +12,7 @@ hero:
   hover: "Остров Виктория: прозрачная вода, высокие деревья и горы вдали"
   alt: "Лесистый берег острова Виктория с деревянной пристанью, озеро Науэль-Уапи, Аргентина"
 gallery: []
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_nature", "theme_cruises"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -12,9 +12,7 @@ hero:
   alt: "Двое людей на надувных кругах плывут к лесному выходу из пещеры «Лапа ягуара», Белиз"
   hover: "«Лапа ягуара» в Белизе: сплав по прозрачной пещерной реке в шлемах и жилетах"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

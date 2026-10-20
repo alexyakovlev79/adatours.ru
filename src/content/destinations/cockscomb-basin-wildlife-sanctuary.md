@@ -12,9 +12,7 @@ hero:
   alt: "Лесная тропа среди корней и пальм в Коксскомб-Бейсин, Белиз"
   hover: "Коксскомб-Бейсин в Белизе: узкая тропа в густом тропическом лесу"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

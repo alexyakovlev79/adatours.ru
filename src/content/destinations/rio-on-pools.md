@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Природные бассейны Рио-Он посещают во время поездки через Маунтин-Пайн-Ридж. Здесь делают остановку для отдыха у воды.
 searchAliases:
 - prirodnye-bassejny-rio-on
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_belize_prirodnye_bassejny_rio_on/hero-generated-20261008.webp
   alt: "Прозрачные речные бассейны и невысокие каскады Рио-Он среди сосен, Белиз"

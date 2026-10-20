@@ -12,9 +12,7 @@ hero:
   alt: "Большая голубая дыра с кольцом бирюзового рифа, вид с воздуха, Белиз"
   hover: "Белиз: темный круг Большой голубой дыры среди светлого кораллового рифа"
 gallery: []
-themes:
-- theme_diving
-- theme_wildlife
+themes: ["theme_diving", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

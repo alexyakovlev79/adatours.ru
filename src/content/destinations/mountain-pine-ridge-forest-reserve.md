@@ -12,9 +12,7 @@ searchAliases:
 - Mountain Pine Ridge
 - Mountain Pine Ridge Forest
 - zapovednik-mauntin-pajn-ridzh
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/destinations/destination_belize_zapovednik_mauntin_pajn_ridzh/hero-generated-20261008.webp
   alt: "Сосновый лес и каменистая река в заповеднике Маунтин-Пайн-Ридж, Белиз"

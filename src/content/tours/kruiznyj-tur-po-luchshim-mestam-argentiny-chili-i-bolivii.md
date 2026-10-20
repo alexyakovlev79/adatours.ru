@@ -95,13 +95,8 @@ routeDestinations:
 - destination_argentina_nahuel_huapi_lake
 - destination_argentina_ostrov_viktoriya_ozero_nauel_uapi
 - destination_argentina_arrayanes_forest
-primaryThemes:
-- theme_cruises
-- theme_wildlife
-themes:
-- theme_culture
-- theme_gastronomy_wine
-- theme_events
+primaryThemes: ["theme_cruises", "theme_nature"]
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_events", "theme_wildlife"]
 durationDays: 18
 durationNights: 17
 route:

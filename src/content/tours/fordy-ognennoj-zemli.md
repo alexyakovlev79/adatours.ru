@@ -125,8 +125,8 @@ routeDestinations:
 - destination_chile_lednik_pia
 - destination_chile_buhta_vulajya
 - destination_chile_buhta_bruks
-primaryThemes: ["theme_cruises","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_cruises", "theme_nature"]
+themes: ["theme_wildlife"]
 ---
 
 

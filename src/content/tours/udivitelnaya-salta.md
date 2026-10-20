@@ -150,7 +150,7 @@ routeDestinations:
 - destination_argentina_tilkara
 - destination_argentina_salinas_grandes
 - destination_argentina_ukiya
-primaryThemes: ["theme_wildlife","theme_gastronomy_wine"]
+primaryThemes: ["theme_nature", "theme_gastronomy_wine"]
 themes: ["theme_culture"]
 ---
 

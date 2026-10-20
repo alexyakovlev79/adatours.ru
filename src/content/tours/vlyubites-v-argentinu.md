@@ -321,7 +321,7 @@ routeDestinations:
 - destination_argentina_salinas_grandes
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

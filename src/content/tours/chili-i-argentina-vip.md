@@ -642,8 +642,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_buenos_aires
 - destination_argentina_ukiya
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 

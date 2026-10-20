@@ -295,7 +295,7 @@ routeDestinations:
 - destination_argentina_nacionalnyj_park_los_glasyares
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
-primaryThemes: ["theme_wildlife","theme_gastronomy_wine"]
+primaryThemes: ["theme_nature", "theme_gastronomy_wine"]
 themes: ["theme_culture"]
 ---
 

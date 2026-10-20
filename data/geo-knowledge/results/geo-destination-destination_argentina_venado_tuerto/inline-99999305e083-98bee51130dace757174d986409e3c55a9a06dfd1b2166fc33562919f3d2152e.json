@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_venado_tuerto",
+  "stableId": "destination_argentina_venado_tuerto",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/venado-tuerto/",
+  "sourceFingerprint": "a613fd79b963e6b15ba546334c6beb1a92ce5687c1a3d0296d8d77b468fed281",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Венадо-Туэрто",
+      "reason": "Точная новая сущность сверена с утвержденным Word, canonical каталогом и адресной проверкой официальных источников."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 100,
+      "selected": "country_argentina",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q1889146",
+      "reason": "Проверена карточка Wikidata: тип и административная география совпадают. Для Sierra de la Ventana выбран населенный пункт Q3925137, а не горный хребет Q879368."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://venadotuerto.gob.ar/descubrivenado/lugaresdeinteres/",
+      "reason": "Проверена официальная страница муниципалитета, туристического ведомства или природоохранного органа об объекте."
+    },
+    {
+      "field": "location",
+      "probability": 90,
+      "selected": "-33.75,-61.966667",
+      "reason": "Координаты проверенной карточки объекта, приблизительная репрезентативная точка, не точка входа."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://venadotuerto.gob.ar/descubrivenado/lugaresdeinteres/",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Локальная топонимика и принадлежность к Аргентине проверены по официальному источнику."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Страна программы и названного места — Аргентина."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1889146",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Точный объект, название, тип и принадлежность сопоставлены с локальным источником."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://venadotuerto.gob.ar/descubrivenado/lugaresdeinteres/",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Официальный источник названного места; не сторонний туристический агрегатор."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q1889146",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Координаты из свойства coordinate location; южная и западная широты имеют отрицательный знак."
+    }
+  ],
+  "reviewNote": "Адресный паспорт нового места. Город/населенный пункт отделен от одноименного округа; неподтвержденные QID и координаты пропущены. Изображения — иллюстрации GPT Image.",
+  "external": {
+    "wikidataQid": "Q1889146",
+    "officialUrl": "https://venadotuerto.gob.ar/descubrivenado/lugaresdeinteres/"
+  },
+  "location": {
+    "latitude": -33.75,
+    "longitude": -61.966667,
+    "pointRole": "settlement_center",
+    "coordinateSource": "https://www.wikidata.org/wiki/Q1889146"
+  }
+}

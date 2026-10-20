@@ -79,11 +79,8 @@ routeDestinations:
 - destination_bolivia_ostrov_inka_huasi
 - destination_bolivia_chantani_museum
 - destination_bolivia_la_paz_witches_market
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure"]
 audiences: []
 format: Сборный
 durationDays: 12

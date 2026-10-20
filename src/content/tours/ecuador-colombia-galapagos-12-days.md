@@ -52,10 +52,8 @@ routeDestinations:
 - destination_colombia_bogota
 - destination_colombia_monserrate_bogota
 - destination_colombia_sipakira
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes: []
+primaryThemes: ["theme_culture", "theme_wildlife"]
+themes: ["theme_nature"]
 audiences: []
 format: Групповой тур с русскоговорящими и англоговорящими гидами
 durationDays: 12

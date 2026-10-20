@@ -123,12 +123,8 @@ routeDestinations:
 - destination_peru_huaca_huallamarca
 - destination_peru_lima_plaza_mayor
 - destination_peru_santo_domingo_lima
-primaryThemes:
-- theme_culture
-- theme_adventure
-themes:
-- theme_wildlife
-- theme_gastronomy_wine
+primaryThemes: ["theme_culture", "theme_adventure"]
+themes: ["theme_nature", "theme_gastronomy_wine"]
 audiences: []
 format: Групповой
 durationDays: 12

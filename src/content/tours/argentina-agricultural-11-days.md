@@ -24,11 +24,8 @@ destinations: &id001
 - destination_argentina_mar_del_plata
 - destination_argentina_balcarce
 routeDestinations: *id001
-primaryThemes:
-- theme_culture
-themes:
-- theme_wildlife
-- theme_adventure
+primaryThemes: ["theme_culture"]
+themes: ["theme_nature", "theme_adventure"]
 audiences:
 - b2b
 - mice

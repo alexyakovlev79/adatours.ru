@@ -232,11 +232,8 @@ routeDestinations:
 - destination_colombia_bogota
 - destination_colombia_monserrate_bogota
 - destination_colombia_sipakira
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure", "theme_wildlife"]
 format: 'Комбинированный: групповые и индивидуальные экскурсии'
 durationDays: 32
 durationNights: 31

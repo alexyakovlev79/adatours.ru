@@ -10,7 +10,7 @@ summary: "Бухта Урбина на западе Исабелы показы�
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_urbina_bay/hero-generated-20261010-third-ten-v1.webp", "alt": "Сухопутная игуана на каменистом берегу бухты Урбина возле кактусов", "hover": "Бухта Урбина: жёлтая игуана среди прибрежных камней"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -10,7 +10,7 @@ summary: "Мыс Суарес на Эспаньоле приглашает на 
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_espanola_island/hero-generated-20261010-editorial-v1.webp", "alt": "Галапагосский альбатрос на скалистом берегу Эспаньолы — иллюстрация"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

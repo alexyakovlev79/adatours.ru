@@ -10,7 +10,7 @@ summary: "Бухта Тагус на Исабеле соединяет прог�
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_tagus_cove/hero-generated-20261010-third-ten-v1.webp", "alt": "Два галапагосских пингвина и баклан на камнях у воды бухты Тагус", "hover": "Бухта Тагус: пингвины и баклан на скалистом берегу"}
 gallery: []
-themes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

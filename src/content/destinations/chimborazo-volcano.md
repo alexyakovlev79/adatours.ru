@@ -12,8 +12,7 @@ hero:
   hover: "Чимборасо: животные пасутся перед массивной заснеженной вершиной"
   alt: "Викуньи на сухом высокогорном плато у снежного Чимборасо, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

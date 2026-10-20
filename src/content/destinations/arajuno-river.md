@@ -12,8 +12,7 @@ hero:
   alt: "Каменистый берег реки Арахуно среди густого тропического леса, Эквадор"
   hover: "Арахуно в Эквадоре: округлые камни у зеленоватой речной воды"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

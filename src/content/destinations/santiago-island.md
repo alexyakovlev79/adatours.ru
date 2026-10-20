@@ -10,7 +10,7 @@ summary: "Сантьяго соединяет лавовые поля, каме�
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_santiago_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские котики на камнях возле прибрежных заводей острова Сантьяго", "hover": "Сантьяго: морские котики на вулканическом берегу"}
 gallery: []
-themes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

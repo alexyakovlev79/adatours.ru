@@ -12,8 +12,7 @@ hero:
   hover: "Пасочоа: горная тропа над облаками и зеленым лесом"
   alt: "Лесистые склоны и скалистая вершина вулкана Пасочоа, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

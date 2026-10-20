@@ -15,8 +15,7 @@ gallery:
 - src: /media/destinations/sacha-reserve/gallery-generated-20261009-root-v1.webp
   hover: "Сача: нос каноэ между деревьями и их отражениями в воде"
   alt: "Нос каноэ на темной воде затопленного леса заповедника Сача, Эквадор"
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

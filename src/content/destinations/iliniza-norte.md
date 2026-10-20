@@ -12,8 +12,7 @@ hero:
   hover: "Илиниса-Норте: каменистая вершина и горная тропа"
   alt: "Острый скалистый гребень Илиниса-Норте над сухими травянистыми склонами, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -10,9 +10,7 @@ destinationName: Островки Гранады — Лас-Ислетас
 relatedDestinations:
 - destination_nicaragua_ozero_nikaragua
 - destination_nicaragua_mombacho_volcano
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

@@ -18,7 +18,7 @@ destinationName: Заповедник Мисикоча
 relatedDestinations: []
 duration: 1–4 часа
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/excursions/ecuador-misicocha-forest-walk/hero-generated-20261018.webp
   alt: "Гид показывает растения тропического леса в заповеднике Мисикоча"

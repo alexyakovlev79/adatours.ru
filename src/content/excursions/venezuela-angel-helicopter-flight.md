@@ -20,5 +20,5 @@ hero:
   src: /media/countries/venezuela/block-094-generated-20261011-dedup-v1.webp
   hover: "Венесуэла: высокий водопад Анхель на отвесной скальной стене"
   alt: "Водопад Анхель падает со столовой горы среди облаков, Венесуэла"
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---

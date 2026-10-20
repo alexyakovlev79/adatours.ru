@@ -19,7 +19,7 @@ destinationName: Река Напо
 relatedDestinations: []
 duration: 1–2 часа
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
-themes: ["theme_wildlife","theme_gastronomy_wine"]
+themes: ["theme_nature", "theme_gastronomy_wine"]
 hero:
   src: /media/excursions/casa-del-suizo-river-island-walk/hero-generated-20261018.webp
   alt: "Знакомство с выращиванием какао на острове реки Напо"

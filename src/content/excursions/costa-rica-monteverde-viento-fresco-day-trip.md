@@ -21,7 +21,7 @@ hero:
   src: /media/excursions/costa-rica-monteverde-viento-fresco-day-trip/hero-src-enhanced-20261007.webp
   hover: "Монтеверде в Коста-Рике: зеленые горы и облачный лес"
   alt: "Густой лес на зеленых горных склонах под облаками в Монтеверде, Коста-Рика"
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 Название Монтеверде переводится с испанского как «зеленая гора». Маршрут проходит через горный облачный лес к водопадам Viento Fresco.

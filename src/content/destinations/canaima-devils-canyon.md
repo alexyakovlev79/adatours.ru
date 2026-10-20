@@ -14,9 +14,7 @@ hero:
   status: approved
   hover: "Канайма: река между высокими скалами Каньона Дьявола"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_canaima_devils_canyon.md
 updatedAt: '2026-10-10'
 ---

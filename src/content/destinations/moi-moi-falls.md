@@ -12,8 +12,7 @@ hero:
   alt: "Каскады Мой-Мой на темных каменных уступах среди леса, Суринам"
   hover: "Мой-Мой в Суринаме: широкие речные каскады и спокойный водоем внизу"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

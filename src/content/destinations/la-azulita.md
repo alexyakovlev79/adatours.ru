@@ -12,9 +12,7 @@ hero:
   alt: "Мощеная улица Ла-Асулиты с невысокими домами под зелеными горами, Венесуэла"
   hover: "Ла-Асулита в Венесуэле: черепичные крыши и горные склоны в облаках"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 searchAliases:
 - la-asulita
 sourceSnapshot: data/source-index/materials/destination_venezuela_la_asulita.md

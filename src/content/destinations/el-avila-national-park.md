@@ -12,9 +12,7 @@ hero:
   hover: "Авила: городская панорама за лесистыми горными склонами"
   alt: "Каракас в горной долине со склонов Авилы, Венесуэла"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_nacionalnyj_park_avila.md
 updatedAt: '2026-10-08'
 ---

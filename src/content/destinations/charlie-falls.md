@@ -12,8 +12,7 @@ hero:
   alt: "Небольшие каскады водопада Чарли между мшистыми валунами в лесу Суринама"
   hover: "Чарли в Суринаме: лесной ручей среди темных камней и густой зелени"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

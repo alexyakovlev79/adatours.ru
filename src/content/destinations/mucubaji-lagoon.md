@@ -12,9 +12,7 @@ hero:
   hover: "Лагуна Мукубажи: горное озеро среди склонов парамо"
   alt: "Лагуна Мукубажи с розеточными растениями на берегу среди холмов и низких облаков, Венесуэла"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_laguna_mukumbahi.md
 updatedAt: '2026-10-08'
 ---

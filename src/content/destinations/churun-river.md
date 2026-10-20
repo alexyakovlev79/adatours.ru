@@ -14,9 +14,7 @@ hero:
   status: approved
   hover: "Чурун: лесистая долина реки между отвесными скалами"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_churun_river.md
 updatedAt: '2026-10-10'
 ---

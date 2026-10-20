@@ -12,9 +12,7 @@ hero:
   hover: "Кавак: зеленая вода между высокими каменными стенами"
   alt: "Водопад в узком скальном каньоне Кавак над прозрачной водой, Венесуэла"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_kanon_kavak.md
 updatedAt: '2026-10-08'
 ---

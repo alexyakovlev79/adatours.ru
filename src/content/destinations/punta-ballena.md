@@ -12,8 +12,7 @@ hero:
   hover: "Пунта-Бальена: скалы у воды на закате"
   alt: "Скалистый берег Пунта-Бальены с низкими травянистыми холмами в золотом свете заката, Уругвай"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

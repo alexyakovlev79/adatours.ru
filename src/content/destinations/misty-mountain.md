@@ -12,8 +12,7 @@ hero:
   alt: "Туманная гора над лесом и рекой у Кабалебо, Суринам"
   hover: "Суринам: утренняя дымка вокруг лесистых склонов Туманной горы"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

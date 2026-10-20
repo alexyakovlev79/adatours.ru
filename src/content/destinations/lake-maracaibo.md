@@ -12,8 +12,7 @@ hero:
   alt: "Ветвящиеся молнии над озером Маракайбо у дельты Кататумбо, Венесуэла"
   hover: "Кататумбо в Венесуэле: ночные молнии и их свет над темной водой"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - ozero-marakajbo
 sourceSnapshot: data/source-index/materials/destination_venezuela_ozero_marakajbo.md

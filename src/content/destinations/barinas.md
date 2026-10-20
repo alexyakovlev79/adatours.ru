@@ -12,8 +12,7 @@ hero:
   hover: "Баринас: стадо за сельской оградой на фоне гор"
   alt: "Коровы на зеленом пастбище у предгорий Анд в Баринасе, Венесуэла"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_venezuela_barinas.md
 updatedAt: '2026-10-09'

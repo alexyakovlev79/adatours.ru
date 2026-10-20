@@ -14,9 +14,7 @@ hero:
   status: approved
   hover: "Река Чурун: зелёный остров Ратонсито перед скальными стенами"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_ratoncito_island.md
 updatedAt: '2026-10-10'
 ---

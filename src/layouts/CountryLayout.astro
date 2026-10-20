@@ -209,11 +209,13 @@ const featureBandImageTextAlign = (href: string) => {
           })}
       </div>
       {destinationEntries.length > previewLimits.destinations && (
-        <div class="container country-linked__more">
+        <div class:list={['country-more-strip', { 'country-more-strip--next-tours': tourEntries.length > 0 }]}>
+          <div class="container country-linked__more">
             <a class="country-catalog-link" href={withBase(destinationCountryPath(d))}>
               <span>{d.name}: все красоты</span>
               <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
             </a>
+          </div>
         </div>
       )}
     </section>
@@ -251,11 +253,13 @@ const featureBandImageTextAlign = (href: string) => {
         ))}
       </div>
       {tourEntries.length > previewLimits.tours && (
-        <div class="container country-tours__more">
-          <a class="country-catalog-link" href={withBase(tourCountryPath(d))}>
-            <span>{d.name}: все туры</span>
-            <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
-          </a>
+        <div class:list={['country-more-strip', { 'country-more-strip--next-light': excursionEntries.length > 0 || themeEntries.length > 0 }]}>
+          <div class="container country-tours__more">
+            <a class="country-catalog-link" href={withBase(tourCountryPath(d))}>
+              <span>{d.name}: все туры</span>
+              <span class="country-catalog-link__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
       )}
     </section>
@@ -390,6 +394,15 @@ const featureBandImageTextAlign = (href: string) => {
 
   .country-tours__bands {
     display: block;
+  }
+
+  /* Catalogue exits belong visually to the section that immediately follows. */
+  .country-more-strip--next-tours {
+    background: #f5f0e8;
+  }
+
+  .country-more-strip--next-light {
+    background: var(--color-bg);
   }
 
   .country-linked__more,

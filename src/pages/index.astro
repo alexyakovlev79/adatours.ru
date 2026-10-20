@@ -163,7 +163,11 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
           />
         ))}
       </div>
-      <a class="home-all-link" href={withBase('/country/')}>Все страны Латинской Америки <span aria-hidden="true">↗</span></a>
+      <div class="home-more-strip home-more-strip--next-interests">
+        <div class="container">
+          <a class="home-all-link" href={withBase('/country/')}>Все страны Латинской Америки <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -204,7 +208,11 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
           ))}
         </ul>
       )}
-      <a class="home-all-link" href={withBase('/interests/')}>Открыть все {themeEntries.filter(activeRu).length} интересов <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="home-more-strip home-more-strip--next-tours">
+      <div class="container">
+        <a class="home-all-link" href={withBase('/interests/')}>Открыть все {themeEntries.filter(activeRu).length} интересов <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
   </section>
 
@@ -423,8 +431,16 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-poster[data-image-text-align="right"] .home-poster__content { text-align: right; }
   .home-all-link { display: flex; justify-content: space-between; gap: 24px; width: fit-content; max-width: 100%; margin-top: var(--heading-gap); padding-bottom: 12px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: clamp(1rem, 1.6vw, 1.3rem); }
   .home-all-link:hover { opacity: .65; }
-  .home-countries__cards > .home-all-link,
   .home-tours__cards > .home-all-link { margin-inline: var(--gutter); }
+
+  /* The exit links flow into the NEXT section, rather than making a thin band
+     with the previous section's background. */
+  .home-countries,
+  .home-interests { padding-bottom: 0; }
+  .home-more-strip { display: flow-root; padding-block: var(--section-y-tight); }
+  .home-more-strip .home-all-link { margin-top: 0; margin-inline: 0; }
+  .home-more-strip--next-interests { background: #f6f2eb; }
+  .home-more-strip--next-tours { background: var(--color-bg); }
 
   .home-interests { background: #f6f2eb; }
   .home-interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
@@ -488,7 +504,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     .home-country-grid :global(.band) { min-height: clamp(360px, 105vw, 460px); }
     .home-country-grid :global(.band__content) { padding-block: clamp(48px, 6vw, 86px); }
     .home-country-grid :global(.band__title) { font-size: var(--text-h2); line-height: 1.02; }
-    .home-countries__cards .home-all-link { margin-inline: var(--gutter); }
+    .home-countries__cards .home-more-strip .home-all-link { margin-inline: 0; }
     /* Mobile featured tours: edge-to-edge photography with no lead text overlay. */
     .home-tours__cards { width: 100%; max-width: none; }
     .home-tours :global(.band) { min-height: clamp(360px, 105vw, 460px); }

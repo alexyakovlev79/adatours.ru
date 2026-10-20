@@ -12,8 +12,7 @@ hero:
   alt: "Каньон со слоистыми скалами и каменистой тропой в национальном парке Тороторо, Боливия"
   hover: "Тороторо в Боливии: каменная тропа над каньоном"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

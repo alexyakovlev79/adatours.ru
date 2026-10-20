@@ -12,8 +12,7 @@ hero:
   alt: "Каменные дома Пуэрто-Чувица у края белого солончака Уюни, Боливия"
   hover: "Пуэрто-Чувица в Боливии: дома у солончака на фоне гор"
 gallery: []
-themes:
-- theme_wildlife
+themes: []
 facts: []
 featureBands: []
 relatedDestinations: []

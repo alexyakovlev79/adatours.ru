@@ -12,8 +12,7 @@ hero:
   alt: "Ледник между заснеженными горами спускается к воде Ледниковой аллеи в чилийской Патагонии"
   hover: "Чилийская Патагония: ледник у воды в Ледниковой аллее"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

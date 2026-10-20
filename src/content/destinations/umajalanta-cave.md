@@ -12,8 +12,7 @@ hero:
   hover: "Умахаланта: каменные натеки над прозрачной водой"
   alt: "Посетитель у подземного ручья среди сталактитов пещеры Умахаланта, Боливия"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

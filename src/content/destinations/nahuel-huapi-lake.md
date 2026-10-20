@@ -12,8 +12,7 @@ hero:
   alt: "Озеро Науэль-Уапи с каменистого берега на фоне снежных гор, Аргентина"
   hover: "Науэль-Уапи в Аргентине: прозрачная вода у камней и горные вершины вдали"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

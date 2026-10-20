@@ -12,8 +12,7 @@ hero:
   hover: "Рамадитас: горные отражения в мелкой лагуне"
   alt: "Высокогорная лагуна Рамадитас отражает сухие горные склоны, Боливия"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

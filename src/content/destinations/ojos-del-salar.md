@@ -12,8 +12,7 @@ hero:
   alt: "Два круглых водяных отверстия в белой соляной поверхности Уюни, Боливия"
   hover: "Солончак Уюни: синие водяные отверстия среди соли"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

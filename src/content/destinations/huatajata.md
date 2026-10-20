@@ -12,8 +12,7 @@ hero:
   hover: "Уатахата: лодки с фигурными носами у озерного поселка"
   alt: "Тростниковые лодки у причала Уатахаты на озере Титикака, Боливия"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -13,8 +13,7 @@ hero:
   hover: "Бачас: белый песок и черные камни у бирюзового моря"
   alt: "Белый песчаный берег пляжей Бачас с черными вулканическими камнями у прозрачной воды, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

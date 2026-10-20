@@ -12,8 +12,7 @@ hero:
   src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
   alt: Остров Санта-Крус (Галапагосы)
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

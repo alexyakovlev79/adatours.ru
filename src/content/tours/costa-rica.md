@@ -242,8 +242,8 @@ routeDestinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_manuel_antonio
-primaryThemes: ["theme_wildlife"]
-themes: ["theme_beach"]
+primaryThemes: ["theme_nature"]
+themes: ["theme_beach", "theme_wildlife"]
 ---
 
 **Программа:** 2024 год

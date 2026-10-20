@@ -298,8 +298,8 @@ routeDestinations:
 - destination_costa_rica_nacionalnyj_park_korkovado
 - destination_costa_rica_ostrov_kano
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife"]
-themes: ["theme_beach", "theme_adventure", "theme_coffee"]
+primaryThemes: ["theme_nature"]
+themes: ["theme_beach", "theme_adventure", "theme_coffee", "theme_wildlife"]
 ---
 
 

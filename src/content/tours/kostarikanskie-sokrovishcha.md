@@ -300,7 +300,7 @@ routeDestinations:
 - destination_costa_rica_manuel_antonio
 - destination_costa_rica_nacionalnyj_park_marino_ballena
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_wildlife", "theme_nature"]
 themes: ["theme_adventure", "theme_gastronomy_wine", "theme_coffee"]
 ---
 

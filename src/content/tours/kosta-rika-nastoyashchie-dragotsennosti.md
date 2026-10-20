@@ -134,8 +134,8 @@ routeDestinations:
 - destination_costa_rica_zaliv_drejk
 - destination_costa_rica_nacionalnyj_park_korkovado
 - destination_costa_rica_ostrov_kano
-primaryThemes: ["theme_wildlife","theme_diving"]
-themes: []
+primaryThemes: ["theme_wildlife", "theme_diving"]
+themes: ["theme_nature"]
 ---
 
 

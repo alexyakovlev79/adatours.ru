@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-excursion-excursion_panama_craft_beer_tasting",
+  "stableId": "excursion_panama_craft_beer_tasting",
+  "kind": "excursion",
+  "canonicalPath": "/panama/panama-city/craft-beer-tasting/",
+  "sourceFingerprint": "a742d15d5c9bbbb60b87e51ca5a146410e3c62d08e13ef8976e33819ca0a7eb5",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Дегустация крафтового пива La Rana Dorada",
+      "reason": "Новая самостоятельная сущность точно сопоставлена с проверенной программой Анны, stable ID, страной и canonical URL."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 100,
+      "selected": "country_panama",
+      "reason": "Страна и город объекта подтверждены каталогом и источником."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "probability": 100,
+      "selected": "destination_panama_panama_siti",
+      "reason": "Место прямо указано в соответствующей части проверенной программы; порядок взят из маршрута."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/craft-beer-tasting.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Проверены название, страна, канонический URL и свежий текст новой страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/craft-beer-tasting.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/craft-beer-tasting.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.laranadorada.com/",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Внешний контекст названного места/формата проверен в интернете. Маршрут и коммерческие условия берутся только из Word Анны, без присвоения внешнего QID турпродукту."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_panama_panama_siti",
+      "position": 1,
+      "optional": false
+    }
+  ]
+}

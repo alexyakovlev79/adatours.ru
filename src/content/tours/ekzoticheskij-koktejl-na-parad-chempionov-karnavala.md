@@ -391,12 +391,8 @@ routeDestinations:
 - destination_brazil_buzios
 - destination_brazil_vodopady_reki_mimozo
 - destination_brazil_golubaya_peschera_bonito
-primaryThemes:
-- theme_events
-- theme_beach
-themes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_events", "theme_beach"]
+themes: ["theme_culture", "theme_nature", "theme_wildlife"]
 ---
 
 

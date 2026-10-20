@@ -242,9 +242,7 @@ routeDestinations:
 - destination_argentina_buenos_aires
 - destination_brazil_sugarloaf_mountain
 - destination_argentina_recoleta
-primaryThemes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 format: Для взрослых
 ---

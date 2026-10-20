@@ -398,11 +398,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_amazon
 - destination_brazil_buzios
-primaryThemes:
-- theme_events
-themes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_events"]
+themes: ["theme_nature", "theme_wildlife", "theme_culture"]
 ---
 
 **Групповой заезд:** 05.02-16.02  

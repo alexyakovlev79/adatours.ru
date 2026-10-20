@@ -307,7 +307,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-argentinu-na-11dnej
 sourceSnapshot: page_texts_original/tur-v-argentinu-na-11dnej__b1e0208b.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

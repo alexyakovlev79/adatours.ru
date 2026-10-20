@@ -43,9 +43,7 @@ routeDestinations:
 - destination_argentina_nahuel_huapi_lake
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
-primaryThemes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 durationDays: 14
 durationNights: 13

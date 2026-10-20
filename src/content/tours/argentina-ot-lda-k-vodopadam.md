@@ -261,7 +261,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-ot-lda-k-vodopadam
 sourceSnapshot: https://drive.google.com/file/d/1lUNpPSwfe0uvcJDfgWIAkIVgOd-qC5d3/view?usp=drivesdk
 updatedAt: 2026-10-02
-primaryThemes: ["theme_culture","theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

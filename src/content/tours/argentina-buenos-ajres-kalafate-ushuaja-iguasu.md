@@ -297,7 +297,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-buenos-ajres-kalafate-ushuaja-iguasu
 sourceSnapshot: page_texts_original/argentina-buenos-ajres-kalafate-ushuaja-iguasu__026be0aa.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: ["theme_culture"]
 ---
 

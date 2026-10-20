@@ -207,8 +207,8 @@ routeDestinations:
 - destination_belize_zapovednik_mauntin_pajn_ridzh
 - destination_belize_peschera_rio_frio
 - destination_belize_prirodnye_bassejny_rio_on
-primaryThemes: ["theme_adventure","theme_culture"]
-themes: ["theme_beach","theme_wildlife"]
+primaryThemes: ["theme_adventure", "theme_culture"]
+themes: ["theme_beach", "theme_nature"]
 ---
 
 

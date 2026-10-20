@@ -210,8 +210,8 @@ routeDestinations:
 - destination_belize_karakol
 - destination_belize_peschera_barton_krik
 - destination_belize_morskoj_zapovednik_hol_chan
-primaryThemes: ["theme_adventure","theme_culture"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_adventure", "theme_culture"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 

@@ -197,8 +197,8 @@ routeDestinations:
 - destination_belize_lamanaj
 - destination_belize_shunaantunich
 - destination_belize_zoopark_beliza
-primaryThemes: ["theme_adventure","theme_culture"]
-themes: ["theme_beach","theme_wildlife"]
+primaryThemes: ["theme_adventure", "theme_culture"]
+themes: ["theme_beach", "theme_nature"]
 ---
 
 

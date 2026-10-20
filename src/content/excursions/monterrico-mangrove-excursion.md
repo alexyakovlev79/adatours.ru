@@ -9,8 +9,7 @@ destination: destination_guatemala_monterrico_mangroves
 destinationName: Мангровые заросли Монтеррико
 relatedDestinations:
 - destination_guatemala_monterrico
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/discover-guatemala-8-days/mangroves-generated-20261010-p037-v1.webp
   alt: "Человек в лодке на спокойном мангровом канале Монтеррико, Гватемала"

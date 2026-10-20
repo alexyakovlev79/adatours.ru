@@ -10,8 +10,7 @@ destinationName: Гамбоа
 relatedDestinations:
 - destination_panama_nacionalnyj_park_soberania
 - destination_panama_panama_rainforest_discovery_center
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/tours/panama-city-gamboa-6-days/discovery-generated-20261010-p036-v1.webp
   hover: "Гамбоа: тропический лес со смотровой площадки"

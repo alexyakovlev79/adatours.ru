@@ -9,9 +9,7 @@ destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
 relatedDestinations:
 - destination_brazil_tijuca_national_park
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 lead: После завтрака вы отправитесь на экскурсию продолжительностью 4 часа. Путь проходит через тропический лес
   Тижука к вершине Корковаду и статуе Христа-Искупителя.
 hero:

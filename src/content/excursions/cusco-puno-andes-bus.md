@@ -25,9 +25,7 @@ hero:
   hover: 'Озеро Титикака: лодка на воде и далёкие холмы'
 lead: Туристический автобус пересекает высокогорные районы Анд между Куско и Пуно. По пути вы увидите Андагуаилильяс, инкские
   руины Ракчи и горные пейзажи перевала Ла-Рая.
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 locale: ru
 status: approved
 language: []

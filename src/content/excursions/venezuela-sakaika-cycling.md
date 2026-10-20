@@ -16,7 +16,7 @@ destination: destination_venezuela_kanajma_i_vodopad_anhel
 destinationName: Канайма и водопад Анхель
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1XH92Fy0Amt9ucbzA6OjA_kW6lI_bkN8I/view?usp=drivesdk
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/excursions/venezuela-sakaika-cycling/hero-generated-20261018.webp
   alt: "Велосипедная прогулка у лагуны Сакайка на фоне тепуев Венесуэлы"

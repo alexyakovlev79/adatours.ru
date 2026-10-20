@@ -12,9 +12,7 @@ searchAliases:
 destination: destination_colombia_chicaque_park
 destinationName: Парк Чикаке
 relatedDestinations: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 duration: 6 часов
 format: Индивидуальная экскурсия
 language:

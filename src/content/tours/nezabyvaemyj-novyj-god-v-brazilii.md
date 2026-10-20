@@ -295,12 +295,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_buzios
-primaryThemes:
-- theme_events
-- theme_beach
-themes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_events", "theme_beach"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 **Даты:** 30.12.2026 - 08.01.2027  

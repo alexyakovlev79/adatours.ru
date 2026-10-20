@@ -454,12 +454,8 @@ routeDestinations:
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_sukuri
 - destination_brazil_vodopady_reki_mimozo
-primaryThemes:
-- theme_events
-- theme_wildlife
-themes:
-- theme_beach
-- theme_culture
+primaryThemes: ["theme_events", "theme_nature"]
+themes: ["theme_beach", "theme_culture"]
 ---
 
 

@@ -356,12 +356,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_angra_dos_reis
-primaryThemes:
-- theme_events
-- theme_beach
-themes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_events", "theme_beach"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 

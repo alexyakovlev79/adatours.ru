@@ -8,9 +8,7 @@ country: country_costa_rica
 destination: destination_costa_rica_la_fortuna_vulkan_arenal
 destinationName: Ла Фортуна & Вулкан Ареналь
 relatedDestinations: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

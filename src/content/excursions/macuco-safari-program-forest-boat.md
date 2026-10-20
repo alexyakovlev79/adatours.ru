@@ -7,9 +7,7 @@ title: 'Макуко Сафари: лес, река и лодка у водоп�
 country: country_brazil
 destination: destination_brazil_iguacu
 relatedDestinations: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp
   hover: "Красная лодка с людьми в бурном потоке"

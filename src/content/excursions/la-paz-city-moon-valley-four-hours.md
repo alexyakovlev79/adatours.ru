@@ -9,9 +9,7 @@ destination: destination_bolivia_la_pas
 relatedDestinations:
 - destination_bolivia_la_paz_witches_market
 - destination_bolivia_lunnaya_dolina_la_pas
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-03-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Четверо путешественников у глиняных скал Лунной долины возле Ла-Паса"

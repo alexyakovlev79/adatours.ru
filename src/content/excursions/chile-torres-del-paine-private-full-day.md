@@ -16,8 +16,7 @@ relatedDestinations:
 - destination_chile_vodopad_salto_grande
 - destination_chile_ozero_nordensheld
 - destination_chile_laguna_amarga
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 format: Индивидуальная экскурсия
 hero:
   src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp

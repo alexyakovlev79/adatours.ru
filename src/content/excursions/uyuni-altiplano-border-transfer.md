@@ -13,9 +13,7 @@ relatedDestinations:
 - destination_bolivia_laguna_blanca
 - destination_bolivia_laguna_verde
 - destination_chile_san_pedro_de_atakama
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-06-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Бирюзовая Лагуна Верде у сухих вулканических склонов, Боливия"

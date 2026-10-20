@@ -8,9 +8,7 @@ country: country_guatemala
 destination: destination_guatemala_vulkan_pakajya
 destinationName: Вулкан Пакайя
 relatedDestinations: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

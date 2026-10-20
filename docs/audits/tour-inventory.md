@@ -617,8 +617,8 @@
 | `tour_south_america_eight_countries_32_days_2026` | [8 стран Южной Америки за 32 дня: от Рио и Игуасу до Галапагосов и Колумбии](https://adatours.ru/multi-country/tour/south-america-eight-countries-32-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_latin_america_six_countries_20_days_2026` | [6 стран Латинской Америки за 20 дней: от Рио до Мачу-Пикчу](https://adatours.ru/multi-country/tour/latin-america-6-countries-20-days/) | Активная страница | `Y26-008` |
 | `tour_patagonia_lakes_lakeshore_chalet_10_days` | [Озёра Патагонии: рыбалка и отдых в Lakeshore Chalet на 10 дней](https://adatours.ru/argentina/tour/patagonia-lakes-lakeshore-chalet-10-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_panama_mice_7_days` | [MICE в Панаме: программа для корпоративной группы на 7 дней](https://adatours.ru/panama/tour/panama-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_brazil_mice_7_days` | [MICE в Бразилии на 7 дней: Сан-Паулу, Игуасу, Амазония и Рио](https://adatours.ru/brazil/tour/brazil-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_panama_mice_7_days` | [Деловой тур в Панаму на 7 дней](https://adatours.ru/panama/tour/panama-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_brazil_mice_7_days` | [Деловой тур в Бразилию на 7 дней: Сан-Паулу, Игуасу, Амазония и Рио](https://adatours.ru/brazil/tour/brazil-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 
 ## 6. Исключённые файлы
 

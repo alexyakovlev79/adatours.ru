@@ -308,8 +308,8 @@ routeDestinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_plyazhi_bachas
 - destination_ecuador_mys_karrion
-primaryThemes: ["theme_adventure","theme_wildlife"]
-themes: ["theme_culture"]
+primaryThemes: ["theme_adventure", "theme_nature"]
+themes: ["theme_culture", "theme_wildlife"]
 ---
 
 

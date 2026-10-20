@@ -153,8 +153,8 @@ routeDestinations:
 - destination_ecuador_ostrov_isabela
 - destination_ecuador_puerto_vilyamil
 - destination_ecuador_ostrov_tintoreras
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 

@@ -12,8 +12,7 @@ hero:
   alt: "Водопад Ла-Пас среди скал и влажного тропического леса Коста-Рики"
   hover: "Коста-Рика: каскад Ла-Пас в окружении тропической зелени"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Сад водопадов Ла-Пас
 - vodopady-la-pas

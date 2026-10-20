@@ -12,9 +12,7 @@ hero:
   hover: "Колибри у фиолетовых цветов в Коста-Рике"
   alt: "Зеленый колибри с рыжим хвостом летит у небольших фиолетовых цветов, Коста-Рика"
 gallery: []
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 searchAliases:
 - Залив Драке
 - zaliv-drejk

@@ -12,8 +12,7 @@ hero:
   alt: "Узкая тропа среди высокогорных трав в Котакачи-Каяпас, Эквадор"
   hover: "Котакачи-Каяпас в Эквадоре: зеленые склоны и тропа под облачными горами"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

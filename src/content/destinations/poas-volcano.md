@@ -12,8 +12,7 @@ hero:
   hover: "Поас: серые стены кратера вокруг светло-бирюзового озера"
   alt: "Бирюзовое озеро и пар в широком кратере вулкана Поас, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Поас
 - vulkan-poas

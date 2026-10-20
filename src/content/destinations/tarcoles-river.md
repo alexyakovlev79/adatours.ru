@@ -12,8 +12,7 @@ hero:
   hover: "Тарколес: крокодил отдыхает на берегу у воды"
   alt: "Крокодил на илистом берегу реки Тарколес у мангровых корней, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - Tarcoles
 - reka-tarkoles

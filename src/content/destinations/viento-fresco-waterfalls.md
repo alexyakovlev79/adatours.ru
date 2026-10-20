@@ -12,9 +12,7 @@ hero:
   hover: "Вьенто-Фреско: падающая вода и каменистый поток под лесным склоном"
   alt: "Водопад Вьенто-Фреско среди зеленых склонов у Тиларана, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - Viento Fresco
 - vodopady-vento-fresko

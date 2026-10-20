@@ -12,8 +12,7 @@ hero:
   hover: "Каньо-Негро: птицы у зеленого берега водно-болотных угодий"
   alt: "Цапли у тихой воды среди болотной растительности Каньо-Негро, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - Caño Negro
 - zapovednik-kano-negro

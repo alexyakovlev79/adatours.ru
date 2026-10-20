@@ -12,8 +12,7 @@ hero:
   hover: "Амазонико: лесная дорожка рядом с вольерами животных"
   alt: "Тропа и сетчатые вольеры среди густой зелени центра Амазонико, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: []
 facts: []
 featureBands: []
 relatedDestinations: []

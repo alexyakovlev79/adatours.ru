@@ -12,9 +12,7 @@ hero:
   hover: "Остров Каньо в Коста-Рике: зеленый берег среди синей воды"
   alt: "Небольшой остров Каньо с лесом и скалистым берегом в Тихом океане, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
-- theme_diving
+themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 searchAliases:
 - ostrov-kano
 sourceSnapshot: data/source-index/materials/destination_costa_rica_ostrov_kano.md

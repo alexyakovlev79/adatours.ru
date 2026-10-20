@@ -10,7 +10,7 @@ summary: "Бухта Буканеро на Сантьяго открывает �
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_buccaneer_cove/hero-generated-20261010-batch-four-v1.webp", "alt": "Выветренные вулканические скалы бухты Буканеро над синей водой", "hover": "Бухта Буканеро: прибрежные скалы со стороны моря"}
 gallery: []
-themes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

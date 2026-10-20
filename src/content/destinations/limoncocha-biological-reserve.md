@@ -12,8 +12,7 @@ hero:
   alt: "Деревянное каноэ у лесного берега лагуны Лимонкоча, Эквадор"
   hover: "Лимонкоча в Эквадоре: спокойная лагуна отражает лес и облака"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

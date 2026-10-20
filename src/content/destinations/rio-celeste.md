@@ -12,9 +12,7 @@ hero:
   hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
   alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - rio-seleste
 sourceSnapshot: data/source-index/materials/destination_costa_rica_rio_seleste.md

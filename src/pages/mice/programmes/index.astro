@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import { isActiveEntity } from '../../../lib/archive.mjs';
+import { tourPath } from '../../../lib/routes';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/editorial/Hero.astro';
+import EditorialStatement from '../../../components/editorial/EditorialStatement.astro';
+import DestinationBand from '../../../components/editorial/DestinationBand.astro';
+import MiceNav from '../../../components/commercial/MiceNav.astro';
+
+const programmes = (await getCollection('tours', ({ data }) =>
+  data.locale === 'ru' && isActiveEntity(data) && data.audiences.includes('b2b')
+)).sort((a, b) => b.data.priority - a.data.priority || a.data.title.localeCompare(b.data.title, 'ru'));
+---
+
+<BaseLayout
+  title="B2B-программы Ada Tours: корпоративные поездки и деловые группы"
+  description="Примеры B2B-программ Ada Tours с маршрутом по дням, транспортом, сопровождением и экскурсиями. Адаптируем поездку под даты, состав и рабочее расписание вашей группы."
+  image="/media/countries/panama/featureBands-1-enhanced-20261002.webp"
+  leadTitle="Рассчитать программу для нашей группы"
+  leadEntityId="b2b-programmes"
+>
+  <Hero
+    eyebrow="B2B · MICE · Деловые группы"
+    title="Программы, с которых начинается поездка вашей команды"
+    intro="Посмотрите, как устроена поездка по дням: где работает транспорт, кто сопровождает группу, как распределены питание и экскурсии. Выберите основу, а даты и состав услуг мы согласуем под вашу задачу."
+    image="/media/countries/panama/featureBands-1-enhanced-20261002.webp"
+    ctaHref="#request"
+    ctaLabel="Рассчитать для нашей группы"
+  />
+
+  <MiceNav active="programmes" />
+
+  <EditorialStatement
+    eyebrow="Примеры программ"
+    text="Каждую программу можно обсудить для своей группы. Для расчета понадобятся даты, количество участников, обязательные встречи, требования к транспорту, языку сопровождения и питанию."
+  />
+
+  {programmes.map((entry, index) => (
+    <DestinationBand
+      eyebrow={`${entry.data.format} · ${entry.data.durationDays} дней`}
+      title={entry.data.title}
+      text={entry.data.lead}
+      image={entry.data.hero?.src}
+      href={tourPath(entry.data)}
+      align={index % 2 === 1 ? 'right' : 'left'}
+    />
+  ))}
+</BaseLayout>

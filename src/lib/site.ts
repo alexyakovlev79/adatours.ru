@@ -11,11 +11,13 @@ export const DMC_NAV_LINKS = [
   { id: 'overview', href: '/dmc/', label: 'DMC / B2B' },
   { id: 'agencies', href: '/dmc/travel-agencies/', label: 'Турагентствам' },
   { id: 'terms', href: '/dmc/terms/', label: 'Условия работы' },
+  { id: 'programmes', href: '/mice/programmes/', label: 'B2B-программы' },
 ] as const;
 
 export const MICE_NAV_LINKS = [
   { id: 'overview', href: '/mice/', label: 'MICE и корпоративные поездки' },
   { id: 'delegations', href: '/mice/business-delegations/', label: 'Деловые делегации' },
+  { id: 'programmes', href: '/mice/programmes/', label: 'B2B-программы' },
 ] as const;
 
 export const ABOUT_NAV_LINKS = [
@@ -46,3 +48,4 @@ export const FOOTER_NAV_LINKS = MOBILE_NAV_LINKS.flatMap((link) => {
   if (link.href === '/about/') return [link, ...ABOUT_NAV_LINKS.slice(1)];
   return [link];
 });
+

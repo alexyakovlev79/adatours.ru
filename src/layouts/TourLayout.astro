@@ -24,6 +24,7 @@ import { mainTourCountryIds, mainTourDestinationIds, optionalTourDestinationIds 
 
 const { entry } = Astro.props;
 const d = entry.data;
+const b2b = d.audiences.includes('b2b');
 // One shared map component for every active tour with verified published GEO points.
 const geoMapData = await (await import('../lib/geo-map-astro')).buildPageGeoMap('tour', d);
 const archived = isArchivedEntity(d);
@@ -127,7 +128,7 @@ const remainingBodyHtml = firstHeadingHtml ? tourBodyHtml.slice(firstHeadingHtml
 const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
-<BaseLayout breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={metaDescription} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : b2b ? "Рассчитать программу для нашей группы" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={metaDescription} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}
@@ -146,15 +147,15 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   <Hero
     tour
     vip={vip}
-    eyebrow={archived ? "Архивный тур" : d.format === "Сборный" ? "Сборный тур" : "Индивидуальный тур"}
+    eyebrow={archived ? "Архивный тур" : b2b ? "B2B-программа" : d.format === "Сборный" ? "Сборный тур" : "Индивидуальный тур"}
     title={d.title}
     image={d.hero?.src}
     imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}
     meta={heroMeta}
-    ctaLabel={archived ? "Актуальные туры" : "Получить программу"}
-    ctaHref={archived ? "/tours/" : "/contacts/"}
+    ctaLabel={archived ? "Актуальные туры" : b2b ? "Рассчитать для нашей группы" : "Получить программу"}
+    ctaHref={archived ? "/tours/" : b2b ? "#request" : "/contacts/"}
   >
     {!archived && <Breadcrumbs slot="breadcrumbs" inline pathname={Astro.url.pathname} title={d.title} items={tourBreadcrumbs(d)} />}
   </Hero>
@@ -512,4 +513,5 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     .tour-links__more { display: none !important; }
   }
 </style>
+
 

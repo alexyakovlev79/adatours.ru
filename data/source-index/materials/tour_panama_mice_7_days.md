@@ -1,28 +1,215 @@
----
-id: case_panama_mice_programme_2026
-locale: ru
-title: 'MICE в Панаме: 7 дней групповой логистики и экскурсий'
-slug: panama-mice-programme-2026
-status: approved
-segment: MICE / пример групповой программы
-projectStatus: programme
-summary: 'Панама-Сити, 12–18 сентября 2026 года: индивидуальные и групповые трансферы, транспорт до 14,5 часа в день, Панамский канал, гастрономия и сопровождение.'
-countries: [country_panama]
-cities: [Панама-Сити, Гамбоа]
-duration: 7 дней
-year: 2026
-nda: false
-hero:
-  src: /media/countries/panama/block-075-generated-20261011-dedup-v1.webp
-  alt: Панама-Сити и Панамский канал
-gallery: []
-proof:
-  - Программа Ada Tours «Panama · Meetings & Experiences», 12–18 сентября 2026 года
-  - В программе указаны типы транспорта, часы работы, трансферы, экскурсии, меню и услуги сопровождения
-relatedServices: [/mice/]
-sourceSnapshot: Ada_Tours_Panama_MICE_Programme_2026_complet.docx
-updatedAt: 2026-10-20
----
+# Предоставленная программа Анны
+
+Источник: Ada_Tours_Panama_MICE_Programme_2026_complet.docx
+Library ID: libfile_32817d90bd988191847061c512a1fa6b
+
+PANAMA  ·  MICE GROUP  ·  2026
+
+Panama · Meetings & Experiences
+
+Panama City · Culture, gastronomy & the Canal
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+12–18 September 2026
+
+7 days  ·  Group programme  ·  Transport, guided visits & dining
+
+Programme at a glance
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A detailed operational programme bringing together airport transfers, private transport, guided sightseeing, Panama Canal experiences, coffee and beer tastings, and restaurant meals.
+
+12 SEP   ·   International arrivals · transfers · welcome dinners
+
+13 SEP   ·   Casco Viejo · Mahalo lunch · Geisha coffee
+
+14 SEP   ·   Miraflores Visitor Center · group meals
+
+15 SEP   ·   Transport services · dinner · airport movements
+
+16 SEP   ·   Transport services · group lunch and dinner
+
+17 SEP   ·   Gamboa · Panama Canal boat expedition · city tour · craft beer
+
+18 SEP   ·   Airport departures · vehicle services
+
+Day by day
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Detailed services and experiences
+
+12 SEP · PANAMA CITY
+
+International arrival · airport assistance
+
+Arrival at Tocumen International Airport (PTY). Scheduled international flight AA 959 at 12:16; a further arrival by flight CM 444 at 20:35. Meet-and-assist services and coordination for the transfer to the hotel.
+
+Private arrival transfers · Hyatt Regency
+
+Arrival transfer from PTY Airport to Hyatt Regency Panama City, including a private 15-passenger motor coach for a scheduled arrival and an additional private 35-passenger coach for a larger arrival group. Individual Mercedes-Benz Vito transfer arrangements are also scheduled.
+
+Welcome dinner · Mystic India Restaurant
+
+Restaurant dinner for the early-arriving group, with transportation between the hotel and the restaurant. Additional dinner transfer from Hyatt Regency Panama City to Mystic India Restaurant for a larger group, including motor coach and waiting time; return transfers are coordinated.
+
+Indian welcome menu
+
+Lentil soup (vegetarian); starters of chicken tikka cooked in charcoal and mushroom sizzler (vegetarian); family-style mains including aloo gobi, potato cauliflower, paneer tikka lababdar, homemade cottage cheese, chicken patiala, yellow dal lentils, veg biryani, basmati rice, assorted naan breads, raita and salads. Dessert: gulab jamun. Assorted sodas and still water.
+
+Transport coordination & water
+
+English-speaking transportation coordinator for assistance and coordination of transportation services. Bottled water provision: three bottles per person per day.
+
+13 SEP · PANAMA CITY
+
+Private vehicles at disposal
+
+Chevrolet Suburban premium SUVs available for up to 10 hours, 09:00–19:00, including scheduled airport pick-up and individual transportation requirements. Additional Mercedes-Benz Sprinter at disposal for up to 10 hours, with a 12:30 departure for lunch and subsequent Casco Viejo standby and return transfer.
+
+Lunch · Mahalo Cocina y Jardín
+
+Group lunch at Mahalo Cocina y Jardín, in a clandestine room and lobby setting. Three-course special menu with appetizer, main course, lentil/dal option and beverages including assorted sodas, still water and natural juices (orange, passion fruit or lemonade).
+
+Geisha coffee experience
+
+One-hour guided tasting of three Geisha coffees produced using different processing methods. Introduction to Panamanian Geisha coffee, its history, origin, aromas, flavours, processing techniques and the characteristics of selected desserts paired with Geisha coffee.
+
+Casco Viejo walking tour
+
+Four-hour guided walking tour of historic Casco Viejo with English-speaking guides. Assistance and coordination throughout the visit, transfers and restaurant stop.
+
+Support services
+
+English-speaking transportation coordinator, English-to-Spanish translator available for four hours, bottled water (three bottles per person per day) and additional restaurant consumption on request.
+
+14 SEP · PANAMA CITY
+
+Private vehicle fleet at disposal
+
+Chevrolet Suburban premium SUVs and Mercedes-Benz Vito standard SUVs available for up to 14 hours, generally 08:00–22:00, for hotel departures, scheduled city movements and airport pick-ups. Dedicated 45-seat motor coach available up to 13 hours, 09:00–22:00, including dinner and hotel transfers.
+
+Lunch · Mystic India Restaurant
+
+Group buffet lunch at Mystic India Restaurant. Menu options pending discussion with the client. Additional à la carte consumption is separate from the planned group menu.
+
+Panama Canal · Miraflores Visitor Center
+
+English-speaking guided Panama Canal tour (up to four hours) with assistance and coordination throughout. Admission tickets to the Miraflores Visitor Center at the Panama Canal.
+
+Dinner · Mystic India Restaurant
+
+Group buffet dinner at Mystic India Restaurant, with dedicated group transportation. Menu options pending discussion with the client; additional à la carte consumption may be arranged separately.
+
+Individual airport movements & assistance
+
+Scheduled individual arrival transfer from PTY Airport to Hyatt Regency Panama City using Mercedes-Benz Vito, with English-speaking airport coordinator. Bottled water: three bottles per person per day.
+
+15 SEP · PANAMA CITY
+
+Private vehicles at disposal
+
+Multiple Chevrolet Suburban premium SUVs and Mercedes-Benz Vito standard SUVs available for up to 14 hours, 08:00–22:00, from Hyatt Regency Panama City. Dedicated 45-seat motor coach available for up to 13 hours, 08:00–21:00, including dinner and hotel transfers.
+
+Dinner · Mystic India Restaurant
+
+Group buffet dinner at Mystic India Restaurant; menu options pending discussion with the client. Additional à la carte consumption available separately.
+
+Airport departure transfer
+
+Individual departure transfer from Hyatt Regency Panama City to PTY Airport for flight KL 758 at 18:50, with approximate hotel pick-up at 15:00. Mercedes-Benz Vito private vehicle.
+
+Logistical support
+
+English-speaking transportation coordinator, bottled water (three bottles per person per day), and two bouquets of roses and chocolate cake as separately scheduled services.
+
+16 SEP · PANAMA CITY
+
+Private vehicles at disposal
+
+Multiple Chevrolet Suburban premium SUVs and Mercedes-Benz Vito standard SUVs at disposal for up to 14 hours, 08:00–22:00, from Hyatt Regency Panama City. Dedicated 45-seat motor coach for up to 13 hours, 08:00–21:00, including dinner and hotel transfers.
+
+Lunch · Mystic India Restaurant
+
+Lunch at Mystic India Restaurant with à la carte consumption by group members, coordinated with the programme transportation.
+
+Dinner · Mystic India Restaurant
+
+Group buffet dinner at Mystic India Restaurant, with restaurant and return transport arrangements. Additional à la carte consumption is separate.
+
+Airport departure
+
+Individual departure transfer from Hyatt Regency Panama City to PTY Airport for flight CM 443 at 09:13; approximate hotel pick-up at 06:30. Mercedes-Benz Vito standard SUV.
+
+Logistical support
+
+English-speaking transportation coordinator and bottled water (three bottles per person per day).
+
+17 SEP · PANAMA CITY & GAMBOA
+
+Private vehicles and motor coach
+
+Chevrolet Suburban premium SUVs and Mercedes-Benz Vito standard SUVs at disposal for up to 14–14.5 hours, with departures between 07:30 and 09:30 depending on the service. 45-seat motor coach at disposal for up to 13 hours, 07:30–22:30, including dinner and hotel transfers.
+
+Gamboa excursion · morning
+
+07:30 transfer from Hyatt Regency Panama City to Gamboa by 45-seat motor coach, including three hours of coach waiting time during the excursion. Gamboa activities for approximately three hours, including a boat expedition through the waters of the Panama Canal.
+
+Panama City private sightseeing tour
+
+Six-hour guided city experience with English-speaking guides, transportation by motor coach and up to six hours of waiting time. Panoramic drive along Balboa Avenue and modern Panama City; visits to historic Casco Antiguo, San José Church and its Golden Altar, and Panama Viejo.
+
+Admission tickets
+
+Admission to San José Church (Golden Altar) and to the Panama La Vieja historic site.
+
+Craft beer tasting · La Rana Dorada
+
+One-hour tasting of three craft beers from La Rana Dorada. Introduction to beer styles, aromas, flavours and characteristics, with transportation by motor coach.
+
+Lunch · Mystic India Restaurant
+
+Group buffet lunch at Mystic India Restaurant; menu options pending discussion with the client. English-speaking guide and transportation/lunch coordinator for up to 10 hours, assisting with Gamboa, sightseeing, city tours, transportation logistics, group movements and lunch service.
+
+Dinner & return transfers
+
+Group dinner transportation from hotel to Mystic India Restaurant by motor coach (up to 45 passengers), and return transfer to Hyatt Regency Panama City. Restaurant dinner with additional à la carte consumption by group members.
+
+Airport departures & support
+
+Individual and group departure transfers to PTY Airport, including a scheduled 18:50 flight transfer and an early departure arrangement for flight UA 1031 at 10:00 the following day. English-speaking transportation coordinator and bottled water (three bottles per person per day).
+
+18 SEP · PANAMA CITY
+
+Early international departures
+
+Scheduled airport transfer from Hyatt Regency Panama City to PTY Airport for flight UA 1031 at 10:00, with approximate hotel pick-up at 06:30. Private Mercedes-Benz Sprinter transfer; separate private Mercedes-Benz Vito transfer for another traveller on the same flight.
+
+Additional airport departure transfers
+
+Scheduled departures for flight AA 2964 at 13:16, flight KL 758 at 18:50 (approximate hotel pick-up 14:30), and flight AF 491 at 21:55 (approximate pick-up 14:30). Mercedes-Benz Vito, Chevrolet Suburban premium SUV and 45-seat motor coach transfers according to group size.
+
+Vehicles at disposal & waiting time
+
+Mercedes-Benz Vito available for up to four hours during the day. 45-seat motor coach available for up to two hours, 12:30–14:30, including lunch transfer and waiting time.
+
+Departure coordination
+
+English-speaking transportation coordinator for assistance with airport movements. Bottled water: three bottles per person per day.
+
+Programme notes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+This document preserves the activities and service types visible in the supplied operational schedule, while removing individual names, personal assignments and all prices. Vehicle capacities and scheduled group services are retained where relevant.
+
+Flight times, services, admissions, menus and transport allocations are subject to operational reconfirmation. The source images contain some truncated lines; no missing information has been invented.
+
+## Русский перевод
+
+
 
 ## Задача и состав программы
 
@@ -131,3 +318,4 @@ Chevrolet Suburban и Mercedes-Benz Vito работают до 14–14,5 час�
 ## Обсудить прием вашей группы
 
 Для расчета [MICE-программы](/mice/) сообщите даты, число участников, график прилетов и вылетов, рабочие встречи и требования к питанию. Эти данные помогут подобрать транспорт, сопровождение и экскурсионную часть под вашу группу.
+

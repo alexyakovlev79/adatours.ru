@@ -97,8 +97,8 @@ routeDestinations:
 - destination_antarctica_lednik_kollinz
 - destination_antarctica_villa_las_estrellas
 - destination_antarctica_stanciya_bellinsgauzen
-primaryThemes: ["theme_cruises","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_cruises", "theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 **Даты:** февраль 03-21 / март 10-15  

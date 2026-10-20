@@ -227,8 +227,8 @@ routeDestinations:
 - destination_suriname_atoni
 - destination_suriname_vodopady_ferullasi
 - destination_suriname_niv_avrora
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_wildlife"]
 ---
 
 

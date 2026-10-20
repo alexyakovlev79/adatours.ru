@@ -156,8 +156,8 @@ routeDestinations:
 - destination_antarctica_antarkticheskij_proliv
 - destination_antarctica_proliv_gerlashe
 - destination_antarctica_proliv_penola
-primaryThemes: ["theme_cruises","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_cruises", "theme_nature"]
+themes: ["theme_wildlife"]
 ---
 
 

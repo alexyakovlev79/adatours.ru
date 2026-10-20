@@ -24,7 +24,7 @@ destinations: &id001
 - destination_nicaragua_san_huan_del_sur
 routeDestinations: *id001
 primaryThemes: ["theme_culture", "theme_beach"]
-themes: ["theme_nature", "theme_adventure"]
+themes: ["theme_nature", "theme_adventure", "theme_wildlife"]
 audiences:
 - couples
 - groups

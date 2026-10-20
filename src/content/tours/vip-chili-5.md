@@ -297,7 +297,7 @@ routeDestinations:
 - destination_chile_renaca_beach
 - destination_chile_fonck_museum
 primaryThemes: ["theme_nature"]
-themes: ["theme_culture", "theme_gastronomy_wine"]
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_wildlife"]
 ---
 
 

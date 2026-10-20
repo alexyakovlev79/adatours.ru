@@ -25,7 +25,7 @@ const pricedTitle = (baseTitle, tours) => {
 };
 const expectedThemeAlign=new Map([['motorcycle-tours','left'],['adventure','left'],['weddings-and-romance','right'],['wildlife','right']]);
 const index=at('/interests/'), expected=buildInterestIndex(collections.themes,collections.tours);
-assert.equal(expected.length,14);
+assert.equal(expected.length,15);
 assert.deepEqual(ids(index,'data-interest-index-item'),expected.map(r=>r.entry.data.id));
 assert.deepEqual(ids(index,'data-interest-tour-count').map(Number),expected.map(r=>r.tourCount));
 for (const {id,slug} of INTERESTS) {

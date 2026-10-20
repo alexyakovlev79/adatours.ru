@@ -11,13 +11,13 @@ const cases = [[0,2],[1,0],[2,1],[3,1],[4,1],[5,2],[10,2],[11,2],[12,2],[13,2],[
 test('every approved interest has independent complete visitor copy and three grammatical forms', () => {
   assert.deepEqual(Object.keys(INTEREST_COPY).sort(), INTERESTS.map(r=>r.id).sort());
   for (const field of ['tourIntro','geographyIntro','catalogIntro']) {
-    assert.equal(new Set(INTERESTS.map(r=>interestCopy(r.id)[field])).size,14);
+    assert.equal(new Set(INTERESTS.map(r=>interestCopy(r.id)[field])).size,15);
     for (const interest of INTERESTS) assert.ok(interestCopy(interest.id)[field].length > 45);
   }
   for (const row of INTERESTS) assert.equal(interestCopy(row.id).tourForms.length,3);
   assert.throws(()=>interestCopy('unknown'));
 });
-test('all fourteen complete noun/adjective phrases inflect correctly, including teens and compound counts', () => {
+test('all fifteen complete noun/adjective phrases inflect correctly, including teens and compound counts', () => {
   for (const [n,index] of cases) {
     assert.equal(pluralIndex(n), index);
     for (const {id} of INTERESTS) assert.equal(interestTourCount(id,n),`${n} ${interestCopy(id).tourForms[index]}`);

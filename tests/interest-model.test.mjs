@@ -38,7 +38,7 @@ test('country order rewards route presence, preserves global order and thematic 
   assert.deepEqual(hub.allCountries[0].tours.map((t) => t.data.id), ['concentrated', 'dilute']);
   assert.deepEqual(hub.allTours.map((t) => t.data.id), ['dilute', 'concentrated']);
 });
-test('closed dictionary retains the nine stable URLs and includes the restored coffee interest among fourteen themes', () => { assert.equal(INTERESTS.length, 14); assert.equal(INTERESTS.find((r) => r.id === 'theme_motorcycle').slug, 'motorcycle-tours'); });
+test('closed dictionary retains the nine stable URLs and includes the restored coffee interest among fifteen themes', () => { assert.equal(INTERESTS.length, 15); assert.equal(INTERESTS.find((r) => r.id === 'theme_motorcycle').slug, 'motorcycle-tours'); });
 test('primary relevance beats a stronger commercial score', () => {
   const primary = tour('primary', { durationDays: 30 }), secondary = tour('secondary', { primaryThemes: [C], themes: [A], countries: ['one', 'two'], durationDays: 13 });
   assert.equal(themeRelevance(primary, A), 2); assert.equal(themeRelevance(secondary, A), 1);

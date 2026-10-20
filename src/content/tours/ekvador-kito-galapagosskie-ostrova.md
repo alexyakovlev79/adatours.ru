@@ -169,7 +169,7 @@ routeDestinations:
 - destination_ecuador_issledovatelskaya_stanciya_charlza_darvina
 - destination_ecuador_plyazh_tortuga_bej
 primaryThemes: ["theme_wildlife"]
-themes: []
+themes: ["theme_nature"]
 ---
 
 

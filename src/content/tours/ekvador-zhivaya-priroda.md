@@ -56,10 +56,8 @@ routeDestinations:
 - destination_ecuador_sacha_reserve
 - destination_ecuador_pilchicocha_lake
 - destination_ecuador_lagartococha_lake
-primaryThemes:
-- theme_wildlife
-themes:
-- theme_culture
+primaryThemes: ["theme_wildlife", "theme_nature"]
+themes: ["theme_culture"]
 durationDays: 15
 durationNights: 14
 priceFrom: 7443

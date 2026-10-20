@@ -15,11 +15,8 @@ destinations: &id001
 - destination_uruguay_koloniya_del_sakramento
 - destination_argentina_santa_susana
 routeDestinations: *id001
-primaryThemes:
-- theme_culture
-themes:
-- theme_gastronomy_wine
-- theme_wildlife
+primaryThemes: ["theme_culture"]
+themes: ["theme_gastronomy_wine", "theme_nature"]
 audiences:
 - Корпоративные группы
 format: "Групповой"

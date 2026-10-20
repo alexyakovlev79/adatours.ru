@@ -380,8 +380,8 @@ routeDestinations:
 - destination_ecuador_guayakil
 routeCountries:
 - country_ecuador
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: ["theme_spa"]
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_spa", "theme_wildlife"]
 ---
 
 

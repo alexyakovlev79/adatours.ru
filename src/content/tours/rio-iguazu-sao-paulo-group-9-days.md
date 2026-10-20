@@ -14,12 +14,8 @@ destinations: &id001
 - destination_brazil_iguacu
 - destination_brazil_sao_paulo
 routeDestinations: *id001
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
-- theme_events
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure", "theme_events"]
 audiences:
 - groups
 - mice

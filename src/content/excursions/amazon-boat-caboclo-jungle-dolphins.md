@@ -8,11 +8,7 @@ country: country_brazil
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 relatedDestinations: []
-themes:
-- theme_wildlife
-- theme_culture
-- theme_adventure
-- theme_fishing
+themes: ["theme_wildlife", "theme_culture", "theme_adventure", "theme_fishing", "theme_nature"]
 lead: Амазонские реки, рыбалка на пираний, знакомство с жизнью кабокло, прогулка по лесу и программа с розовыми дельфинами.
 hero:
   src: /media/home/amazon-enhanced-20260930.webp

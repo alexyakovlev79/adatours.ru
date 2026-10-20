@@ -11,9 +11,7 @@ relatedDestinations:
 - destination_venezuela_canaima_lagoon
 - destination_venezuela_hacha_falls
 - destination_venezuela_sapo_falls
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 format: Лодочная и пешая экскурсия
 hero:
   src: /media/tours/canaima-angel-falls-4-days/sapo-generated-20261010-p034-v1.webp

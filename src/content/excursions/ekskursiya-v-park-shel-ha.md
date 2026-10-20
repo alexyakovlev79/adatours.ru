@@ -15,7 +15,7 @@ updatedAt: '2026-10-18'
 destination: destination_mexico_park_shel_ha
 destinationName: Парк Шель-Ха
 sourceSnapshot: https://drive.google.com/file/d/18G8HRqdBeCLdg4zKxhTb8tS7EmXKlpMb/view?usp=drivesdk
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/excursions/xel-ha-park-tour/hero-generated-20261018.webp
   alt: "Сноркелинг в бирюзовой лагуне парка Шель-Ха в Мексике"

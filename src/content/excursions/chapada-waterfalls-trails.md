@@ -9,8 +9,7 @@ destination: destination_brazil_nacionalnyj_park_shapada_dus_gimarajns
 destinationName: Национальный парк Шапада-дус-Гимарайнс
 relatedDestinations:
 - destination_brazil_veu_de_noiva_chapada
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 language:
 - Английский
 hero:

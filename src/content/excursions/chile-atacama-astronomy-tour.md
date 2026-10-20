@@ -17,7 +17,7 @@ destination: destination_chile_san_pedro_de_atakama
 destinationName: Сан-Педро-де-Атакама
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1TmhuHeFCJQI9NsauVVqkAf0BUuW2PXCY/view?usp=drivesdk
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/chile-atacama-astronomy-tour/hero-generated-20261018.webp
   alt: "Наблюдение звёзд через телескоп под ночным небом Атакамы"

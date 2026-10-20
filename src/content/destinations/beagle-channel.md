@@ -12,9 +12,7 @@ hero:
   hover: "Канал Бигль: полосатый маяк перед заснеженными горными вершинами"
   alt: "Красно-белый маяк на скалистом островке в канале Бигль, Огненная Земля"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

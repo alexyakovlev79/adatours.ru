@@ -12,8 +12,7 @@ hero:
   hover: "Пехоэ: яркая озерная вода у золотистой травы и патагонских гор"
   alt: "Бирюзовое озеро Пехоэ перед зубчатыми вершинами Торрес-дель-Пайне, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

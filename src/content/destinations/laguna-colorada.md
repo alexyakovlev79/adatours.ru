@@ -12,8 +12,7 @@ hero:
   hover: "Лагуна Колорада: фламинго у белого минерального берега и сухих гор"
   alt: "Розовые фламинго в красной воде Лагуны Колорада, Боливия"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

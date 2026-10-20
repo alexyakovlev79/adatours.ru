@@ -12,9 +12,7 @@ hero:
   alt: "Каменный бассейн термальных источников Полкес на рассвете, Боливия"
   hover: "Полкес в Боливии: пар над теплой водой и горы у солончаковой равнины"
 gallery: []
-themes:
-- theme_spa
-- theme_wildlife
+themes: ["theme_spa", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

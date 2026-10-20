@@ -12,8 +12,7 @@ hero:
   alt: "Голубое озеро Норденшельд под горным массивом Торрес-дель-Пайне, Чили"
   hover: "Норденшельд в Чили: ветреный травянистый берег и горы за озером"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

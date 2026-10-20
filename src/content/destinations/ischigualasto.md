@@ -12,9 +12,7 @@ hero:
   hover: "Исчигуалясто: скала Эль-Онго среди сухих каменистых склонов"
   alt: "Грибовидная скала Эль-Онго на узком светлом основании в пустынном ландшафте Исчигуалясто, Аргентина"
 gallery: []
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -12,8 +12,7 @@ hero:
   hover: "Рио-Серрано: река в горной долине Патагонии"
   alt: "Извилистая голубая река Серрано среди травянистых долин на фоне снежных вершин Пайне, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

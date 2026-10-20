@@ -291,7 +291,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-argentinu-i-braziliyu-s-plyazhnym-otdykhom
 sourceSnapshot: page_texts_original/tur-v-argentinu-i-braziliyu-s-plyazhnym-otdykhom__4ee83d7d.md
 updatedAt: 2026-09-29
-primaryThemes: ["theme_wildlife","theme_beach"]
+primaryThemes: ["theme_nature", "theme_beach"]
 themes: ["theme_culture"]
 ---
 

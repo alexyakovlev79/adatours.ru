@@ -254,8 +254,8 @@ faq:
 sourceUrl: https://brasiltours.ru/priklyuchencheskij-tur-v-braziliyu-na-17-dnej
 sourceSnapshot: page_texts_original/priklyuchencheskij-tur-v-braziliyu-na-17-dnej__7dceac50.md
 updatedAt: '2026-10-10'
-primaryThemes: ["theme_adventure","theme_wildlife"]
-themes: ["theme_culture","theme_beach"]
+primaryThemes: ["theme_adventure", "theme_nature"]
+themes: ["theme_culture", "theme_beach", "theme_wildlife"]
 ---
 
 Это активная программа, в которой города постоянно сменяются природой. Вы подниметесь к Христу-Искупителю и на Сахарную голову, проедете на джипе через лес Тижука, проведете день среди бухт Илья-Гранде, увидите Игуасу и при желании приблизитесь к водопадам на лодке «Макуко Сафари». В Пантанале главными становятся дикие животные, открытые равнины и утренние сафари. Бонито добавляет прозрачную воду, известняковые пещеры, сплав и зиплайн, а Ленсойс-Мараньенсес завершает путешествие белыми дюнами и лагунами.

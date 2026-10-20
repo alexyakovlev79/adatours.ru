@@ -159,7 +159,7 @@ sourceUrl: https://brasiltours.ru/recife-porto-de-galinhas
 sourceSnapshot: page_texts_original/recife-porto-de-galinhas__8bcbd545.md
 updatedAt: 2026-09-30
 primaryThemes: ["theme_beach"]
-themes: ["theme_wildlife","theme_culture","theme_diving"]
+themes: ["theme_nature", "theme_culture", "theme_diving"]
 ---
 
 Маршрут постепенно уводит от города к океану. Сначала Ресифи и Олинда: каналы, мосты, исторические кварталы, старые церкви и виды с холмов на побережье. Затем 2 дня в Порту-де-Галиньяс, где пляжи и рифы во время отлива превращаются в природные бассейны с прозрачной теплой водой.

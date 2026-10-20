@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-excursion-excursion_panama_city_heritage_group_tour",
+  "stableId": "excursion_panama_city_heritage_group_tour",
+  "kind": "excursion",
+  "canonicalPath": "/panama/panama-city/panama-city-heritage-group-tour/",
+  "sourceFingerprint": "a86c7e56613a1d916c0bf5bafe7203a27c3c948a95472bf8aa93a105d52fbc45",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Панама-Сити: современный город, Сан-Хосе и Панама-Вьехо",
+      "reason": "Новая самостоятельная сущность точно сопоставлена с проверенной программой Анны, stable ID, страной и canonical URL."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 100,
+      "selected": "country_panama",
+      "reason": "Страна и город объекта подтверждены каталогом и источником."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "probability": 100,
+      "selected": "destination_panama_panama_siti",
+      "reason": "Место прямо указано в соответствующей части проверенной программы; порядок взят из маршрута."
+    },
+    {
+      "field": "relationships.destination_panama_casco_viejo",
+      "probability": 100,
+      "selected": "destination_panama_casco_viejo",
+      "reason": "Место прямо указано в соответствующей части проверенной программы; порядок взят из маршрута."
+    },
+    {
+      "field": "relationships.destination_panama_san_jose_church",
+      "probability": 100,
+      "selected": "destination_panama_san_jose_church",
+      "reason": "Место прямо указано в соответствующей части проверенной программы; порядок взят из маршрута."
+    },
+    {
+      "field": "relationships.destination_panama_panama_viejo",
+      "probability": 100,
+      "selected": "destination_panama_panama_viejo",
+      "reason": "Место прямо указано в соответствующей части проверенной программы; порядок взят из маршрута."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/panama-city-heritage-group-tour.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Проверены название, страна, канонический URL и свежий текст новой страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/panama-city-heritage-group-tour.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/panama-city-heritage-group-tour.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_casco_viejo",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/panama-city-heritage-group-tour.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_san_jose_church",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/panama-city-heritage-group-tour.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_panama_viejo",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/panama-city-heritage-group-tour.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.tourismpanama.com/lugares-para-visitar/ciudad-de-panama/cosas-para-hacer/sitios-historicos/casco-antiguo/",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Внешний контекст названного места/формата проверен в интернете. Маршрут и коммерческие условия берутся только из Word Анны, без присвоения внешнего QID турпродукту."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_panama_panama_siti",
+      "position": 1,
+      "optional": false
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_panama_casco_viejo",
+      "position": 2,
+      "optional": false
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_panama_san_jose_church",
+      "position": 3,
+      "optional": false
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_panama_panama_viejo",
+      "position": 4,
+      "optional": false
+    }
+  ]
+}

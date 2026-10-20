@@ -245,6 +245,8 @@ const cases = defineCollection({
     ...common,
     title: z.string(),
     segment: z.string(),
+    summary: z.string().optional(),
+    projectStatus: z.enum(['completed', 'programme', 'planned']).default('completed'),
     countries: z.array(z.string()).default([]),
     cities: z.array(z.string()).default([]),
     groupSize: z.string().optional(),
@@ -294,3 +296,4 @@ export const collections = {
   people,
   articles,
 };
+

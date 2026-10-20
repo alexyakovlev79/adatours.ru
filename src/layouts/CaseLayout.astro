@@ -8,6 +8,7 @@ import { withBase } from '../lib/paths';
 
 const { entry } = Astro.props;
 const d = entry.data;
+const isProgramme = d.projectStatus === 'programme' || d.projectStatus === 'planned';
 
 const stats = [
   d.groupSize ? { value: d.groupSize, label: 'размер группы' } : null,
@@ -24,13 +25,13 @@ const serviceLabels: Record<string, string> = {
 
 <BaseLayout leadTitle="Обсудить похожую поездку или мероприятие" leadEntityId={d.id}
   title={d.title}
-  description={`${d.title}. Анонимный кейс Ada Tours: задача, логистика, выполненные работы и результат.`}
+  description={d.summary ?? `${d.title}. Кейс Ada Tours: задача, логистика, выполненные работы и результат.`}
   image={d.hero?.src}
 >
   <Hero
-    eyebrow={d.nda ? 'Анонимный кейс' : 'Кейс Ada Tours'}
+    eyebrow={d.projectStatus === 'planned' ? 'Запланированная программа' : isProgramme ? 'Пример программы Ada Tours' : d.nda ? 'Анонимный кейс' : 'Кейс Ada Tours'}
     title={d.title}
-    intro={d.cities.length ? d.cities.join(' · ') : d.segment}
+    intro={d.summary ?? (d.cities.length ? d.cities.join(' · ') : d.segment)}
     image={d.hero?.src}
     ctaLabel="Обсудить похожую задачу"
   />
@@ -41,7 +42,13 @@ const serviceLabels: Record<string, string> = {
 
   <EditorialStatement
     eyebrow={d.segment}
-    text="Заказчик под NDA, поэтому название компании и персональные данные закрыты. В кейсе остаются маршрут, задача и работа Ada Tours на месте."
+    text={isProgramme
+      ? (d.projectStatus === 'planned'
+        ? 'Запланированная отраслевая поездка. Даты, профессиональные визиты и состав сопровождения приведены в программе ниже.'
+        : 'Подробная программа обслуживания группы: маршрут, транспорт, сопровождение и экскурсии. Состав услуг и расписание приведены для этой поездки.')
+      : d.nda
+        ? 'Заказчик под NDA, поэтому название компании и персональные данные закрыты. В кейсе остаются маршрут, задача и работа Ada Tours на месте.'
+        : 'Задача, маршрут и работа Ada Tours на месте.'}
   />
 
   <section class="case-copy section--tight">
@@ -54,7 +61,7 @@ const serviceLabels: Record<string, string> = {
     <section class="case-proof section">
       <div class="container">
         <p class="eyebrow">Подтверждение</p>
-        <h2>Чем подтвержден проект</h2>
+        <h2>{isProgramme ? 'Основа программы' : 'Чем подтвержден проект'}</h2>
         <ul>
           {d.proof.map((item) => <li>{item}</li>)}
         </ul>
@@ -98,3 +105,4 @@ const serviceLabels: Record<string, string> = {
     border-bottom: 1px solid currentColor;
   }
 </style>
+

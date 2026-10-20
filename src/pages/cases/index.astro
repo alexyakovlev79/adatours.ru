@@ -20,7 +20,7 @@ const cases = (await getCollection('cases', ({ data }) =>
   <Hero
     eyebrow="Кейсы"
     title="Кейсы Ada Tours: MICE, делегации и корпоративные группы"
-    intro="Часть проектов закрыта NDA. В кейсах остаются задача, объем работы, маршрут и решения Ada Tours."
+    intro="Деловые делегации, корпоративные группы и подробные программы поездок. Задачи, маршруты, транспорт и сопровождение; запланированные программы отмечены отдельно."
     image="/media/home/rio-night-enhanced-20260930.webp"
   />
 
@@ -35,10 +35,11 @@ const cases = (await getCollection('cases', ({ data }) =>
     <DestinationBand
       eyebrow={item.data.segment}
       title={item.data.title}
-      text={[item.data.groupSize, item.data.duration, item.data.cities.join(' · ')].filter(Boolean).join(' · ')}
+      text={item.data.summary ?? [item.data.groupSize, item.data.duration, item.data.cities.join(' · ')].filter(Boolean).join(' · ')}
       image={item.data.hero?.src}
       href={`/cases/${item.data.slug}/`}
       align={index % 2 === 1 ? 'right' : 'left'}
     />
   ))}
 </BaseLayout>
+

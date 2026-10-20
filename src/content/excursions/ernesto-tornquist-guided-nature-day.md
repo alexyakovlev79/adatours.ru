@@ -9,9 +9,7 @@ destination: destination_argentina_ernesto_tornquist_provincial_park
 destinationName: Парк Эрнесто-Торнкист
 relatedDestinations:
 - destination_argentina_sierra_de_la_ventana
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 format: Экскурсия для группы
 language: []
 priceFrom: null

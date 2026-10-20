@@ -30,9 +30,7 @@ notIncluded: []
 notes:
 - В составе семидневной программы выезд из Hyatt Regency в 07:30 на автобусе на 45 мест.
 - Транспорт, ожидание и сопровождение рассчитаем для вашей группы.
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_nature", "theme_cruises"]
 sourceSnapshot: data/source-index/materials/excursion_panama_gamboa_canal_boat_expedition.md
 updatedAt: '2026-10-20'
 ---

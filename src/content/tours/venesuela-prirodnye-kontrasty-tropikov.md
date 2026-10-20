@@ -221,8 +221,8 @@ routeDestinations:
 - destination_venezuela_kanajma_i_vodopad_anhel
 - destination_venezuela_delta_reki_orinoko
 - destination_venezuela_ostrov_margarita
-primaryThemes: ["theme_wildlife","theme_beach"]
-themes: ["theme_culture","theme_adventure"]
+primaryThemes: ["theme_nature", "theme_beach"]
+themes: ["theme_culture", "theme_adventure"]
 ---
 
 

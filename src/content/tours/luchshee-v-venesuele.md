@@ -277,7 +277,7 @@ routeDestinations:
 - destination_venezuela_karakas
 - destination_venezuela_kanajma_i_vodopad_anhel
 - destination_venezuela_ostrov_margarita
-primaryThemes: ["theme_wildlife","theme_beach"]
+primaryThemes: ["theme_nature", "theme_beach"]
 themes: []
 ---
 

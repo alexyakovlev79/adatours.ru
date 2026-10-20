@@ -328,7 +328,7 @@ routeDestinations:
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
 primaryThemes: ["theme_culture", "theme_beach"]
-themes: ["theme_gastronomy_wine", "theme_wildlife", "theme_coffee"]
+themes: ["theme_gastronomy_wine", "theme_nature", "theme_coffee"]
 ---
 
 

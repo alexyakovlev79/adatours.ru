@@ -239,7 +239,7 @@ routeDestinations:
 - destination_venezuela_rorajma
 - destination_venezuela_puerto_ordas
 - destination_venezuela_kanajma_i_vodopad_anhel
-primaryThemes: ["theme_adventure","theme_wildlife"]
+primaryThemes: ["theme_adventure", "theme_nature"]
 themes: []
 ---
 

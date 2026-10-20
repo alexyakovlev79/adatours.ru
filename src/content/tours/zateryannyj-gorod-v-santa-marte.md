@@ -180,8 +180,8 @@ routeDestinations:
 - destination_colombia_zateryannyj_gorod
 - destination_colombia_nacionalnyj_park_tajrona
 - destination_colombia_cabana_de_adan
-primaryThemes: ["theme_adventure","theme_culture"]
-themes: ["theme_wildlife","theme_beach"]
+primaryThemes: ["theme_adventure", "theme_culture"]
+themes: ["theme_nature", "theme_beach"]
 ---
 
 

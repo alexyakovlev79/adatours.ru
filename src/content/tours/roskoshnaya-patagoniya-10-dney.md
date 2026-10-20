@@ -498,8 +498,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/roskoshnaya-patagoniya-10-dney
 sourceSnapshot: page_texts_original/roskoshnaya-patagoniya-10-dney__d238558e.md
 updatedAt: 2026-10-01
-primaryThemes: ["theme_wildlife"]
-themes: ["theme_culture","theme_gastronomy_wine"]
+primaryThemes: ["theme_nature"]
+themes: ["theme_culture","theme_gastronomy_wine","theme_wildlife"]
 ---
 
 ## Патагония через Аргентину и Чили

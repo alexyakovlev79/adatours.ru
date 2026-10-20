@@ -354,7 +354,7 @@ sourceUrl: https://brasiltours.ru/argentina-and-south-patagonia-in-the-footsteps
 sourceSnapshot: page_texts_original/argentina-and-south-patagonia-in-the-footsteps-of-darwin__328854c5.md
 updatedAt: 2026-10-02
 primaryThemes: ["theme_adventure"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Экспедиция на высшую вершину Южной Америки

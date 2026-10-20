@@ -8,7 +8,7 @@ countryId: "country_brazil"
 destinationType: "natural_area"
 summary: "Широкая панорама скальных стен и зеленых долин в Серра-Жерал."
 searchAliases: ["Cânion Fortaleza","kanon-fortaleza"]
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 hero: {"src": "/media/destinations/destination_brazil_kanon_fortaleza/hero-generated-20261009-v1.webp", "alt": "Высокие скальные стены каньона Форталеза над глубокой зеленой долиной, Бразилия", "status": "approved", "hover": "Форталеза в Бразилии: лесистые склоны между широкими каменными обрывами"}
 gallery: []
 relatedDestinations: []

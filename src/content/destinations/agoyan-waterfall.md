@@ -13,8 +13,7 @@ hero:
   hover: "Агоян: белая вода между отвесными скалами и влажным лесом"
   alt: "Потоки водопада Агоян в зеленом горном ущелье, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

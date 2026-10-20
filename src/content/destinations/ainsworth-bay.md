@@ -12,9 +12,7 @@ hero:
   hover: "Бухта Эйнсворт в Чили: спокойная вода у лесистого горного берега"
   alt: "Каменистый берег бухты Эйнсворт и лес на фоне ледника и снежных гор, Чили"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

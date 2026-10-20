@@ -8,7 +8,7 @@ countryId: "country_brazil"
 destinationType: "city"
 summary: "Город на высокогорном плато у каньонов юга Бразилии."
 searchAliases: ["Cambará do Sul","kambara-du-sul"]
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 hero: {"src":"/media/destinations/destination_brazil_kambara_du_sul/hero-generated-20261009-v1.webp","alt":"Грунтовая дорога среди лугов и араукарий у Камбара-ду-Сул, Бразилия","status":"approved","hover":"Камбара-ду-Сул в Бразилии: открытые луга и араукарии под облачным небом"}
 gallery: []
 relatedDestinations: []

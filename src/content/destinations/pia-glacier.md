@@ -12,9 +12,7 @@ hero:
   hover: "Ледник Пиа: голубой ледяной фронт и плавающие льдины у скалистого берега"
   alt: "Ледник Пиа спускается к воде фьорда между снежными горами, Чили"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

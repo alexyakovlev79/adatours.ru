@@ -12,9 +12,7 @@ hero:
   hover: "Бухта Брукс: ледник между снежными горами"
   alt: "Каменистый берег бухты Брукс с лесом, голубым ледником и заснеженными горными вершинами, Чили"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

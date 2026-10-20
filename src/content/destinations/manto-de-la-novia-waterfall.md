@@ -13,8 +13,7 @@ hero:
   hover: "Баньос: водопад на зеленом склоне под канатной дорогой"
   alt: "Водопад Фата Невесты и подвесная кабина над речной долиной у Баньоса, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

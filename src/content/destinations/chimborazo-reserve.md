@@ -13,8 +13,7 @@ hero:
   hover: "Чимборасо в Эквадоре: снежная вершина над высокогорной дорогой"
   alt: "Дорога через высокогорные луга к заснеженному вулкану Чимборасо, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

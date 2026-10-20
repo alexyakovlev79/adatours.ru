@@ -13,8 +13,7 @@ hero:
   hover: "Парк Кахас: озера под облачным небом"
   alt: "Темные горные озера среди травянистых холмов и скал национального парка Кахас, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

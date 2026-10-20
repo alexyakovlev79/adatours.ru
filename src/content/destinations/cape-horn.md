@@ -12,9 +12,7 @@ hero:
   hover: "Мыс Горн: белый маяк над холодным океаном под серыми облаками"
   alt: "Маяк мыса Горн на травянистом плато над скалами и бурным морем, Чили"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

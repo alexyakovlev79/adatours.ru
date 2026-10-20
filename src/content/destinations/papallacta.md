@@ -12,9 +12,7 @@ hero:
   hover: "Папаякта: теплые бассейны под облачными горными склонами"
   alt: "Пар над каменными термальными бассейнами Папаякты среди зеленых гор, Эквадор"
 gallery: []
-themes:
-- theme_spa
-- theme_wildlife
+themes: ["theme_spa", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

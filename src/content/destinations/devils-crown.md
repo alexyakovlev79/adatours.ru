@@ -10,7 +10,7 @@ summary: "Корона Дьявола у Флорены — остатки за�
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_devils_crown/hero-generated-20261010-next-ten-v1.webp", "alt": "Тёмные вулканические скалы Короны Дьявола вокруг бирюзовой воды у Флорены", "hover": "Флорена: скальный обод Короны Дьявола в океане"}
 gallery: []
-themes: ["theme_diving", "theme_wildlife"]
+themes: ["theme_diving", "theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

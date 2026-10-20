@@ -12,8 +12,7 @@ hero:
   alt: "Зелёные поля и поселения провинции Имбабура у подножия вулкана"
   hover: "Имбабура: возделанные поля и невысокие дома на фоне вулкана"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

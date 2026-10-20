@@ -12,8 +12,7 @@ hero:
   hover: "Тинторерас: вулканические камни и морские игуаны у прозрачной воды"
   alt: "Морские игуаны на темной лаве у бирюзовых проток Тинторерас, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

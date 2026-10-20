@@ -12,8 +12,7 @@ hero:
   alt: "Туман над спокойной водой озера Паньякоча среди тропического леса, Эквадор"
   hover: "Паньякоча в Эквадоре: отражения лесного берега и трава у тихой воды"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

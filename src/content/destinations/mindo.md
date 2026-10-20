@@ -12,8 +12,7 @@ hero:
   hover: "Миндо: лесной поток и туман над зелеными холмами"
   alt: "Каменистая река среди густого влажного леса Миндо, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -12,8 +12,7 @@ hero:
   alt: "Озеро Лимпиопунго отражает заснеженный вулкан Котопакси над золотистыми травами, Эквадор"
   hover: "Лимпиопунго в Эквадоре: мелкое озеро и снежная вершина Котопакси вдали"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

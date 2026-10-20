@@ -10,7 +10,7 @@ summary: "Озеро Пилчикоча в эквадорской Амазони
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_pilchicocha_lake/hero-generated-20261010-next-ten-v1.webp", "alt": "Деревянное каноэ у лесного берега озера Пильчикоча, Эквадор", hover: "Пильчикоча: тихое озеро и отражения тропического леса"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

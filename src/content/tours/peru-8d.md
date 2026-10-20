@@ -212,7 +212,7 @@ sourceUrl: https://brasiltours.ru/tur-v-peru-na-8-dnej
 sourceSnapshot: page_texts_original/tur-v-peru-na-8-dnej__ca861743.md
 updatedAt: 2026-09-29
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Что ждет в путешествии

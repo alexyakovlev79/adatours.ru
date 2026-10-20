@@ -11,9 +11,7 @@ hero:
   src: /media/tours/manyashchaya-kolumbiya/itinerary-1-images-0-src-enhanced-20261007.webp
   alt: Озеро Гуатавита
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 searchAliases:
 - ozero-guatavita
 sourceSnapshot: data/source-index/materials/destination_colombia_ozero_guatavita.md

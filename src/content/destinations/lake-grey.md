@@ -10,8 +10,7 @@ summary: Озеро Грей в Торрес-дель-Пайне принима�
 searchAliases:
 - Lago Grey
 - ozero-grej
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp
   hover: "Ледник Грей: ледяной фронт под пасмурными горами"

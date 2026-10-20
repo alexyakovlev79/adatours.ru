@@ -10,8 +10,7 @@ summary: Солончак Атакама соединяет соляные ра�
 searchAliases:
 - Салар-де-Атакама
 - solonchak-atakama
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_chile_laguna_chaksa/hero-generated-20261008-resumed-v1.webp
   hover: "Чакса в Чили: фламинго на фоне пустынных гор"

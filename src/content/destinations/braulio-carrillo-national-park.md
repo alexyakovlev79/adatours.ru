@@ -12,9 +12,7 @@ hero:
   alt: "Лесная тропа среди густой зелени национального парка Браулио-Каррильо"
   hover: "Браулио-Каррильо: тропа во влажном тропическом лесу"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 searchAliases:
 - nacionalnyj-park-braulio-karrilo
 sourceSnapshot: data/source-index/materials/destination_costa_rica_nacionalnyj_park_braulio_karrilo.md

@@ -12,9 +12,7 @@ hero:
   hover: "Корковадо в Коста-Рике: тропическая зелень у океанского берега"
   alt: "Пальмы и тропический лес у тихоокеанского пляжа национального парка Корковадо, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 searchAliases:
 - Корковадо
 - nacionalnyj-park-korkovado

@@ -13,8 +13,7 @@ hero:
   hover: "Сармьенто: светлый берег озера и патагонские горы"
   alt: "Синяя вода озера Сармьенто перед снежными вершинами Торрес-дель-Пайне, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -10,8 +10,7 @@ summary: 'Лос-Фламенкос объединяет отдельные уч
 searchAliases:
 - Лос-Фламенкос
 - nacionalnyj-zapovednik-los-flamenkos
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_chile_laguna_chaksa/hero-generated-20261008-resumed-v1.webp
   hover: "Чакса в Чили: фламинго на фоне пустынных гор"

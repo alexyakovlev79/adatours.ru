@@ -12,9 +12,7 @@ hero:
   alt: "Тихоокеанский пляж с пальмами и лесом национального парка Марино-Баллена"
   hover: "Марино-Баллена: тропический берег и океанский прибой"
 gallery: []
-themes:
-- theme_wildlife
-- theme_beach
+themes: ["theme_wildlife", "theme_beach", "theme_nature"]
 searchAliases:
 - nacionalnyj-park-marino-ballena
 sourceSnapshot: data/source-index/materials/destination_costa_rica_nacionalnyj_park_marino_ballena.md

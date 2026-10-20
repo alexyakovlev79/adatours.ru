@@ -10,7 +10,7 @@ summary: "Остров Марта в Магеллановом проливе: к
 searchAliases: ["остров Марта", "ostrov-marta-magellanov-proliv"]
 hero: {"src": "/media/destinations/destination_chile_ostrov_marta_magellanov_proliv/hero-generated-20261010-final-v1.webp", "alt": "Морские львы на низком скалистом берегу острова Марта в Магеллановом проливе, Чили", "hover": "Остров Марта: морские львы отдыхают на камнях у прибоя"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

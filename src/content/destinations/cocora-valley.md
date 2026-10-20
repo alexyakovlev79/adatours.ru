@@ -24,9 +24,7 @@ gallery:
 - src: /media/tours/ikonicheskaya-kolumbiya/itinerary-7-images-0-src-enhanced-20261007.webp
   alt: "Рельсы фуникулёра спускаются по зелёному склону к городу"
   hover: "Путь фуникулёра среди деревьев с видом на город"
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - dolina-kokora
 sourceSnapshot: data/source-index/materials/destination_colombia_dolina_kokora.md

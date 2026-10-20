@@ -79,10 +79,8 @@ routeCountries:
 - country_brazil
 routeDestinations:
 - destination_brazil_amazon
-primaryThemes:
-- theme_fishing
-themes:
-- theme_wildlife
+primaryThemes: ["theme_fishing"]
+themes: []
 ---
 
 **Базовая программа:** 3 дня / 2 ночи  

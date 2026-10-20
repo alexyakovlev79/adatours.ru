@@ -190,10 +190,8 @@ routeDestinations:
 - destination_brazil_amazon
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 

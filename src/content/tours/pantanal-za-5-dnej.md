@@ -143,9 +143,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_kampo_grande
 - destination_brazil_pantanal
-primaryThemes:
-- theme_wildlife
-themes: []
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 За 5 дней программа дает время познакомиться с Пантаналом без спешки. В нее входят лодочные прогулки, верховая езда, фотосафари на автомобиле 4x4, каякинг, рыбалка на пиранью и дополнительный день сафари в лодже.

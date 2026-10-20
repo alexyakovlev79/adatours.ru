@@ -129,9 +129,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_kampo_grande
 - destination_brazil_pantanal
-primaryThemes:
-- theme_wildlife
-themes: []
+primaryThemes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 

@@ -39,7 +39,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/makuko-safari-he"
 sourceSnapshot: "https://drive.google.com/file/d/1wSJPu96aJvwN9CeOQZBzpEzqsXgdrIeM/view?usp=drivesdk"
 updatedAt: '2026-10-11'
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 На джипе Вы совершите захватывающее Макуко сафари через джунгли. Вас сопровождает гид с информацией об этом Национальном парке. Через джунгли, а затем пешком Вы приходите на специализированную платформу реки Игуасу, где Вас ожидает впечатляющие путешествие на лодке под водопады.

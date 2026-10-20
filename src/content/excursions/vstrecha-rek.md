@@ -41,7 +41,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/vstrecha-rek"
 sourceSnapshot: "https://drive.google.com/file/d/1cKDXahlgcRCeYbILvB6recQN8pygpDVp/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Свадьба рек

@@ -35,7 +35,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/korkovado-i-les-tizhuka"
 sourceSnapshot: "https://drive.google.com/file/d/1-X9q8AgH9yI-Lki33C4JliQWgomYWW06/view?usp=drivesdk"
 updatedAt: '2026-10-10'
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 ## Горы и тропический лес Рио

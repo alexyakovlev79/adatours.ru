@@ -55,7 +55,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/tortuga-bej-vysokogorya-s-cherepakhami"
 sourceSnapshot: "https://drive.google.com/file/d/1TE5gnqEnJJm4PjlraebiykNQw82c03Pj/view?usp=drivesdk"
 updatedAt: 2026-10-02
-themes: ["theme_wildlife","theme_beach"]
+themes: ["theme_wildlife", "theme_beach", "theme_nature"]
 ---
 
 ## Бухта Тортуга

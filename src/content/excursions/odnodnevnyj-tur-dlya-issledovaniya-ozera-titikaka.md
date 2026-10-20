@@ -48,7 +48,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka"
 sourceSnapshot: "https://drive.google.com/file/d/1MFwiljj72VAgw-NwEEN-x-9qBNWJLJVT/view?usp=drivesdk"
 updatedAt: 2026-10-02
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ## Однодневный тур на озеро Титикака

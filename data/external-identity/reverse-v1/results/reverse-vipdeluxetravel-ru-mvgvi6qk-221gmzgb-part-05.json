@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
+  "part": 5,
+  "ownerId": "reverse-vip-p3-20261020-cf9e54",
+  "checkedAt": "2026-10-20T16:12:19.407Z",
+  "results": [
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/packages",
+      "status": "retry",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/packages, title (unavailable or empty listing), result network_error",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ika Ика; canonical RU path https://adatours.ru/peru/place/ica/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 1. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old site request failed due to transport error; first retry the specific legacy URL before considering any redirect even though the place is known.",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/ekskursii",
+      "status": "review",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/ekskursii, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ika Ика; canonical RU path https://adatours.ru/peru/ica/",
+        "Site generator produces filtered excursion catalog only when active set is nonempty; current set 0. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old category is empty and no nonempty current matching category is generated; manual decision required (place fallback or 410).",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/peru/place/iquitos/",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru, title Икитос, Перу: достопримечательности и путеводитель по Амазонии, result fetched",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ikitos Икитос; canonical RU path https://adatours.ru/peru/place/iquitos/",
+        "Approved destination MD exists and describes the same place."
+      ],
+      "note": "Same approved place detail, confirmed by old page H1/description and new source identity.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/packages",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/peru/place/iquitos/tour/",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/packages, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ikitos Икитос; canonical RU path https://adatours.ru/peru/place/iquitos/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 6. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Same destination and nonempty catalog type; old membership unavailable. Perform final HTTP target check before activating 301.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/ekskursii",
+      "status": "retry",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/ekskursii, title (unavailable or empty listing), result network_error",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ikitos Икитос; canonical RU path https://adatours.ru/peru/iquitos/",
+        "Site generator produces filtered excursion catalog only when active set is nonempty; current set 1. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old site request failed due to transport error; first retry the specific legacy URL before considering any redirect even though the place is known.",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/mexico/place/ixtapa-and-zihuatanejo/",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike, title Экскурсии и туры в города Икстапа и Сиуатанехо в Мексике, result fetched",
+        "Identified same country/destination in current Ada Tours data: destination_mexico_ikstapa_i_siuataneho Икстапа и Сиуатанехо; canonical RU path https://adatours.ru/mexico/place/ixtapa-and-zihuatanejo/",
+        "Approved destination MD exists and describes the same place."
+      ],
+      "note": "Same approved place detail, confirmed by old page H1/description and new source identity.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/packages",
+      "status": "review",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/packages, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_mexico_ikstapa_i_siuataneho Икстапа и Сиуатанехо; canonical RU path https://adatours.ru/mexico/place/ixtapa-and-zihuatanejo/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 0. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old category is empty and no nonempty current matching category is generated; manual decision required (place fallback or 410).",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/ekskursii",
+      "status": "review",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/ekskursii, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_mexico_ikstapa_i_siuataneho Икстапа и Сиуатанехо; canonical RU path https://adatours.ru/mexico/ixtapa-and-zihuatanejo/",
+        "Site generator produces filtered excursion catalog only when active set is nonempty; current set 0. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old category is empty and no nonempty current matching category is generated; manual decision required (place fallback or 410).",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/place/ilha-grande/",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi, title Илья-Гранди, Бразилия: достопримечательности и путеводитель по острову без машин, result fetched",
+        "Identified same country/destination in current Ada Tours data: destination_brazil_ilha_grande Илья-Гранди; canonical RU path https://adatours.ru/brazil/place/ilha-grande/",
+        "Approved destination MD exists and describes the same place."
+      ],
+      "note": "Same approved place detail, confirmed by old page H1/description and new source identity.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi/packages",
+      "status": "retry",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi/packages, title (unavailable or empty listing), result network_error",
+        "Identified same country/destination in current Ada Tours data: destination_brazil_ilha_grande Илья-Гранди; canonical RU path https://adatours.ru/brazil/place/ilha-grande/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 11. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old site request failed due to transport error; first retry the specific legacy URL before considering any redirect even though the place is known.",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    }
+  ]
+}

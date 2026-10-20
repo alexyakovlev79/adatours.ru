@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T16:11:30.097Z",
+  "updatedAt": "2026-10-20T16:12:19.407Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -6019,103 +6019,173 @@
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/packages": {
-      "status": "leased",
+      "status": "retry",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/packages, title (unavailable or empty listing), result network_error",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ika Ика; canonical RU path https://adatours.ru/peru/place/ica/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 1. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old site request failed due to transport error; first retry the specific legacy URL before considering any redirect even though the place is known.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/ekskursii, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ika Ика; canonical RU path https://adatours.ru/peru/ica/",
+        "Site generator produces filtered excursion catalog only when active set is nonempty; current set 0. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old category is empty and no nonempty current matching category is generated; manual decision required (place fallback or 410).",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "https://adatours.ru/peru/place/iquitos/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru, title Икитос, Перу: достопримечательности и путеводитель по Амазонии, result fetched",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ikitos Икитос; canonical RU path https://adatours.ru/peru/place/iquitos/",
+        "Approved destination MD exists and describes the same place."
+      ],
+      "note": "Same approved place detail, confirmed by old page H1/description and new source identity.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "https://adatours.ru/peru/place/iquitos/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/packages, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ikitos Икитос; canonical RU path https://adatours.ru/peru/place/iquitos/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 6. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Same destination and nonempty catalog type; old membership unavailable. Perform final HTTP target check before activating 301.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/ekskursii": {
-      "status": "leased",
+      "status": "retry",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/ekskursii, title (unavailable or empty listing), result network_error",
+        "Identified same country/destination in current Ada Tours data: destination_peru_ikitos Икитос; canonical RU path https://adatours.ru/peru/iquitos/",
+        "Site generator produces filtered excursion catalog only when active set is nonempty; current set 1. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old site request failed due to transport error; first retry the specific legacy URL before considering any redirect even though the place is known.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "https://adatours.ru/mexico/place/ixtapa-and-zihuatanejo/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike, title Экскурсии и туры в города Икстапа и Сиуатанехо в Мексике, result fetched",
+        "Identified same country/destination in current Ada Tours data: destination_mexico_ikstapa_i_siuataneho Икстапа и Сиуатанехо; canonical RU path https://adatours.ru/mexico/place/ixtapa-and-zihuatanejo/",
+        "Approved destination MD exists and describes the same place."
+      ],
+      "note": "Same approved place detail, confirmed by old page H1/description and new source identity.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/packages": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/packages, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_mexico_ikstapa_i_siuataneho Икстапа и Сиуатанехо; canonical RU path https://adatours.ru/mexico/place/ixtapa-and-zihuatanejo/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 0. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old category is empty and no nonempty current matching category is generated; manual decision required (place fallback or 410).",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/ekskursii, title (unavailable or empty listing), result empty_html",
+        "Identified same country/destination in current Ada Tours data: destination_mexico_ikstapa_i_siuataneho Икстапа и Сиуатанехо; canonical RU path https://adatours.ru/mexico/ixtapa-and-zihuatanejo/",
+        "Site generator produces filtered excursion catalog only when active set is nonempty; current set 0. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old category is empty and no nonempty current matching category is generated; manual decision required (place fallback or 410).",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "https://adatours.ru/brazil/place/ilha-grande/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi, title Илья-Гранди, Бразилия: достопримечательности и путеводитель по острову без машин, result fetched",
+        "Identified same country/destination in current Ada Tours data: destination_brazil_ilha_grande Илья-Гранди; canonical RU path https://adatours.ru/brazil/place/ilha-grande/",
+        "Approved destination MD exists and describes the same place."
+      ],
+      "note": "Same approved place detail, confirmed by old page H1/description and new source identity.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi/packages": {
-      "status": "leased",
+      "status": "retry",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:12:19.407Z",
+      "evidence": [
+        "Original VIP crawl 2026-10-19: https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi/packages, title (unavailable or empty listing), result network_error",
+        "Identified same country/destination in current Ada Tours data: destination_brazil_ilha_grande Илья-Гранди; canonical RU path https://adatours.ru/brazil/place/ilha-grande/tour/",
+        "Site generator produces filtered tour catalog only when active set is nonempty; current set 11. Old listing cannot prove membership without HTML."
+      ],
+      "note": "Old site request failed due to transport error; first retry the specific legacy URL before considering any redirect even though the place is known.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     }
   },
@@ -6372,6 +6442,24 @@
         "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru"
       ],
       "savedAt": "2026-10-20T16:11:30.097Z"
+    },
+    "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-05.json": {
+      "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
+      "part": 5,
+      "count": 10,
+      "urls": [
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ikstapa-i-siuatanekho-v-meksike/ekskursii",
+        "https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi",
+        "https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi/packages"
+      ],
+      "savedAt": "2026-10-20T16:12:19.407Z"
     }
   }
 }

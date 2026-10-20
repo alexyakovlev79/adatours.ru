@@ -366,7 +366,7 @@ routeDestinations:
 - destination_peru_pisak
 - destination_peru_moraj
 - destination_peru_aguas_kalentes
-primaryThemes: ["theme_culture","theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

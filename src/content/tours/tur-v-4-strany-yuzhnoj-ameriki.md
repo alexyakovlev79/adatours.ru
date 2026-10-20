@@ -392,7 +392,7 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_buzios
 - destination_chile_peschera_milodona
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 priceFrom: 6836
 ---

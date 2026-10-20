@@ -235,8 +235,8 @@ routeDestinations:
 - destination_brazil_derevnya_akazhatuba
 - destination_brazil_sugarloaf_mountain
 - destination_brazil_parque_das_aves
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 priceFrom: 5576
 ---
 

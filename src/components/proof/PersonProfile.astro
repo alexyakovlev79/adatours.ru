@@ -59,7 +59,8 @@ const resolvedPhoto = photo?.src ? withBase(photo.src) : undefined;
   .person {
     display: grid;
     grid-template-columns: minmax(0, .9fr) minmax(360px, 1.1fr);
-    gap: clamp(48px, 8vw, 120px);
+    column-gap: clamp(48px, 8vw, 120px);
+    row-gap: var(--heading-gap);
     align-items: center;
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
     margin-inline: auto;

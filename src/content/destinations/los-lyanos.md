@@ -21,7 +21,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-zapovdenik-i-savanny-los-lyanos-v-venesuehle
 sourceSnapshot: https://drive.google.com/file/d/1vysh6zVyE17VWLuAc1t8FIy4Sm3kvBT6/view?usp=drivesdk
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 ---
 
 Простирающиеся на сотни километров равнины Льяноса, занимающие почти треть территории страны, представляют собой обширную саванну, кое-где прерываемую изолированными лугами и рощами. Река Рио-Апуре делит регион практически напополам, отделяя Льяно-Альто ("верхние" или "возвышенные" равнины) от Льяно-Бахо ("низинные" равнины).

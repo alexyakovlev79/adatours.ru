@@ -239,8 +239,8 @@ routeDestinations:
 - destination_costa_rica_ostrova_katalina
 - destination_costa_rica_plajya_tamarindo
 - destination_costa_rica_pacific_coast
-primaryThemes: ["theme_adventure","theme_wildlife"]
-themes: ["theme_beach","theme_fishing","theme_diving"]
+primaryThemes: ["theme_adventure", "theme_nature"]
+themes: ["theme_beach", "theme_fishing", "theme_diving", "theme_wildlife"]
 ---
 
 

@@ -243,8 +243,8 @@ routeDestinations:
 - destination_mexico_bonampak
 - destination_mexico_vilyaermosa
 - destination_mexico_kankun
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature"]
 ---
 
 ## Мексика Фантастическая, 2027

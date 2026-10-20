@@ -765,8 +765,8 @@ routeDestinations:
 - destination_panama_panama_siti
 - destination_panama_nacionalnyj_park_chagres
 - destination_panama_playa_blanca
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: ["theme_beach"]
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_beach", "theme_wildlife"]
 ---
 
 

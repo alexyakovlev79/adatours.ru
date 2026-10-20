@@ -58,11 +58,8 @@ routeDestinations:
 - destination_mexico_chichen_ica
 - destination_mexico_rivera_majya
 - destination_mexico_valladolid
-primaryThemes:
-- theme_culture
-themes:
-- theme_wildlife
-- theme_gastronomy_wine
+primaryThemes: ["theme_culture"]
+themes: ["theme_nature", "theme_gastronomy_wine"]
 durationDays: 12
 durationNights: 11
 priceFrom: 2587

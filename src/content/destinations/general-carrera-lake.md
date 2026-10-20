@@ -15,8 +15,7 @@ hero:
   hover: "Чилийская Патагония: поселок у бирюзового озера Хенераль-Каррера"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Озеро Хенераль-Каррера
 sourceSnapshot: data/source-index/materials/destination_chile_general_carrera_lake.md

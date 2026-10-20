@@ -14,8 +14,7 @@ hero:
   status: approved
   hover: "Портеньо: широкая озерная гладь под низкими облаками"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_chile_lake_porteno.md
 updatedAt: '2026-10-11'
 ---

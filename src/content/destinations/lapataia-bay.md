@@ -13,8 +13,7 @@ hero:
   hover: "Лапатая: прогулочный настил вдоль тихого залива"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_lapataia_bay.md
 updatedAt: '2026-10-11'
 ---

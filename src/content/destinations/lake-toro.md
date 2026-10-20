@@ -14,8 +14,7 @@ hero:
   status: approved
   hover: "Озеро Торо в чилийской Патагонии: широкая гладь за золотистым берегом"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_chile_lake_toro.md
 updatedAt: '2026-10-11'
 ---

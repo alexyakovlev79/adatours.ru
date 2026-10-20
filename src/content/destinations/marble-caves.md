@@ -15,8 +15,7 @@ hero:
   hover: "Мраморные пещеры в Чили: арки и полосатые скальные стены у воды"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Мраморные пещеры
 sourceSnapshot: data/source-index/materials/destination_chile_marble_caves.md

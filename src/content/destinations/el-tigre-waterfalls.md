@@ -13,9 +13,7 @@ hero:
   alt: "Узкий водопад среди влажного леса Эль-Тигре у Монтеверде, Коста-Рика"
   hover: "Эль-Тигре в Коста-Рике: водопад по темной скале в зеленый речной бассейн"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - El Tigre Waterfalls
 - Водопады Эль Тигре

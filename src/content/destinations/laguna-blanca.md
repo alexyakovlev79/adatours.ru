@@ -14,8 +14,7 @@ hero:
   hover: "Лагуна Верде в Боливии: светлая вода среди каменистых гор под синим небом"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Лагуна Бланка
 sourceSnapshot: data/source-index/materials/destination_bolivia_laguna_blanca.md

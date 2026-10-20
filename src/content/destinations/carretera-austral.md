@@ -15,8 +15,7 @@ hero:
   hover: "Чилийская Патагония: поселок у бирюзового озера Хенераль-Каррера"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Карретера-Аустраль
 sourceSnapshot: data/source-index/materials/destination_chile_carretera_austral.md

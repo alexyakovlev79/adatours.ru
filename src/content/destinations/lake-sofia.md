@@ -15,8 +15,7 @@ hero:
   status: approved
   hover: "София: тихая озерная гладь под облачным небом"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_chile_lake_sofia.md
 updatedAt: '2026-10-11'
 ---

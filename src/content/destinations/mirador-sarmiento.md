@@ -13,8 +13,7 @@ hero:
   hover: "Сармьенто: светлый берег озера и патагонские горы"
   alt: "Синяя вода озера Сармьенто перед снежными вершинами Торрес-дель-Пайне, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Смотровая площадка Мирадор-Сармьенто
 sourceSnapshot: data/source-index/materials/destination_chile_mirador_sarmiento.md

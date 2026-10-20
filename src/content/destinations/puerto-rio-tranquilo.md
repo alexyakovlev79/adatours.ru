@@ -15,8 +15,7 @@ hero:
   hover: "Чилийская Патагония: поселок у бирюзового озера Хенераль-Каррера"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Пуэрто-Рио-Транкило
 sourceSnapshot: data/source-index/materials/destination_chile_puerto_rio_tranquilo.md

@@ -13,8 +13,7 @@ hero:
   hover: "Огненная Земля: прозрачная вода озера Рока у лесистых склонов"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_lago_roca.md
 updatedAt: '2026-10-11'
 ---

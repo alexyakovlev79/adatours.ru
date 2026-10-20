@@ -26,7 +26,7 @@ notes:
   - "Организуется по желанию и за дополнительную плату."
 sourceSnapshot: page_texts_original/tur-v-argentinu-na-dikuyu-prirodu__de3d500b.md
 updatedAt: 2026-10-02
-themes: ["theme_fishing","theme_wildlife"]
+themes: ["theme_fishing", "theme_nature"]
 ---
 
 По желанию и за дополнительную плату можно организовать прогулку по реке Корриентес или рыбалку на дорадо.

@@ -31,7 +31,7 @@ sourceSnapshot: page_texts_original/neveroyatnaya-argentina__b36cf7e0.md
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_argentina_laguna_esmeralda
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 Маршрут начинается после выезда из города по Национальной трассе №3. Путь до лагуны занимает примерно 2 часа и проходит через субантарктический лес, торфяные долины и реки с бобровыми плотинами.

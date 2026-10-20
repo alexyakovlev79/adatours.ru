@@ -27,7 +27,7 @@ sourceSnapshot: page_texts_original/prostory-patagonii-chili-i-argentina-v-odnom
 updatedAt: 2026-10-02
 relatedDestinations:
   - destination_argentina_ozero_argentino
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 Экскурсия проходит вдоль берега озера Архентино и посвящена истории региона. По пути гид рассказывает о коренных народах и первых поселенцах, которые осваивали Патагонию.

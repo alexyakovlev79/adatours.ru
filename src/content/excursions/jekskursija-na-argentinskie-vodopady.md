@@ -42,7 +42,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jekskursija-na-argentinskie-vodopady"
 sourceSnapshot: "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/materials/excursion_source_jekskursija_na_argentinskie_vodopady.md"
 updatedAt: '2026-10-20'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Аргентинская сторона Игуасу

@@ -40,7 +40,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jekskursija-na-brazil-skuju-storonu-vodopadov"
 sourceSnapshot: "https://drive.google.com/file/d/1SBnm8nZfR7Y6XvkFLIbj5VegmRAgPisM/view?usp=drivesdk"
 updatedAt: '2026-10-11'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Панорама водопадов с бразильского берега

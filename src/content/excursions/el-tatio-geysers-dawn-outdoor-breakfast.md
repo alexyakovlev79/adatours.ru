@@ -9,8 +9,7 @@ destination: destination_chile_gejzery_el_tatio
 destinationName: Гейзеры Эль-Татио
 relatedDestinations:
 - destination_chile_san_pedro_de_atakama
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x488-20261011-v1-enhanced-20261011-pass2324-v1.webp
   hover: "Эль-Татио: люди среди паровых столбов у сухих гор"

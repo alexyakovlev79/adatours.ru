@@ -12,8 +12,7 @@ relatedDestinations:
 - destination_chile_petrohue_waterfalls
 - destination_chile_petrohue_river
 - destination_chile_osorno_volcano
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/peujja-i-vodopady-petroje/hero-regenerated-20261011-v1.webp
   hover: "Петроуэ: бурная вода на скалистых уступах среди лесистых берегов"

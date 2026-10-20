@@ -11,8 +11,7 @@ relatedDestinations:
 - destination_argentina_lednik_perito_moreno
 - destination_argentina_ozero_argentino
 - destination_argentina_nacionalnyj_park_los_glasyares
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 format: Групповая экскурсия
 language:
 - английский

@@ -13,9 +13,7 @@ relatedDestinations:
 - destination_bolivia_dolina_skal_alota
 - destination_bolivia_vulkan_ollague
 - destination_bolivia_ojo_de_perdiz
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 duration: Полный день
 format: По программе
 language: []

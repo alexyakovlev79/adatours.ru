@@ -12,10 +12,7 @@ relatedDestinations:
 - destination_bolivia_ojos_del_salar
 - destination_bolivia_chantani_museum
 - destination_bolivia_ostrov_inka_huasi
-themes:
-- theme_wildlife
-- theme_culture
-- theme_adventure
+themes: ["theme_nature", "theme_culture", "theme_adventure"]
 lead: Кладбище поездов и добыча соли в Колчани, «глаза воды», музей Чантани и кактусы Инкауаси. Обед проходит на
   солончаке, а вечером маршрут завершается чаепитием на закате.
 hero:

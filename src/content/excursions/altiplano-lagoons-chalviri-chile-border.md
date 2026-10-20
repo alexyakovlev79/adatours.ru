@@ -20,9 +20,7 @@ relatedDestinations:
 - destination_bolivia_gejzery_sol_de_manyana
 - destination_bolivia_laguna_chalviri
 - destination_chile_san_pedro_de_atakama
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/destinations/laguna-chiar-khota-potosi/hero-generated-20261008.webp
   hover: "Чиаркота: птицы на мелководье высокогорного озера"

@@ -9,9 +9,7 @@ destination: destination_peru_cusco
 relatedDestinations:
 - destination_peru_pereval_la_raya
 - destination_peru_puno_i_o_titikaka
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 lead: Поезд из Куско в Пуно с вагоном-рестораном, баром и панорамным вагоном. По пути остановка у перевала Ла-Рая;
   обед из 3 блюд включен.
 hero:

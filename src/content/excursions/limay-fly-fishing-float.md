@@ -8,9 +8,7 @@ country: country_argentina
 destination: destination_argentina_limay_river
 destinationName: Река Лимай
 relatedDestinations: []
-themes:
-- theme_fishing
-- theme_wildlife
+themes: ["theme_fishing"]
 duration: Полный день
 format: Индивидуальная экскурсия в составе программы Lakeshore Chalet
 hero:

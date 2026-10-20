@@ -16,9 +16,7 @@ relatedDestinations:
 - destination_bolivia_termalnye_istochniki_polkes
 - destination_bolivia_laguna_verde
 - destination_bolivia_uyuni
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 duration: Полный день
 format: По программе
 language: []

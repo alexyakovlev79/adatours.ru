@@ -12,9 +12,7 @@ relatedDestinations:
 - destination_peru_auanakancha
 - destination_peru_olyantajtambo
 - destination_peru_svyaschennaya_dolina_inkov
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_culture"]
 lead: Ремесленная ярмарка Писака, ламы и альпаки Ауанаканчи, каменные террасы Ольянтайтамбо. Поездка из Куско на
   полный день с обедом.
 hero:

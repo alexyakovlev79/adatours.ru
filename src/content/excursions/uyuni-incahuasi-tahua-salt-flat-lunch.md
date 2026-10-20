@@ -14,9 +14,7 @@ relatedDestinations:
 - destination_bolivia_uyuni_tahua_stone_formations
 - destination_bolivia_tahua
 - destination_bolivia_kokesa
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x426-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: "Облака и горы отражаются в покрытом водой солончаке Уюни; вдали внедорожник"

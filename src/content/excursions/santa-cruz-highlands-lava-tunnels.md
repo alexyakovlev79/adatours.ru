@@ -9,8 +9,7 @@ destination: destination_ecuador_santa_cruz_highlands
 destinationName: Высокогорья Санта-Крус
 relatedDestinations:
 - destination_ecuador_ostrov_santa_krus_galapagosy
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 language:
 - английский
 format: Групповая экскурсия

@@ -42,7 +42,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-kuritiba-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-brazilskij-gorod-kuritiba-braziliya__fe5474a6.md
 updatedAt: 2026-09-25
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 Куритиба находится в штате Парана. Современный образ города во многом связан с общественным транспортом, пешеходными зонами, парками и аккуратно организованными общественными пространствами.

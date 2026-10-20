@@ -36,10 +36,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-prajya-de-forte-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-prajya-de-forte-braziliya__5a5310ba.md
 updatedAt: 2026-09-25
-themes:
-- theme_beach
-- theme_culture
-- theme_wildlife
+themes: ["theme_beach", "theme_culture", "theme_nature"]
 ---
 
 Прайя-ду-Форте находится на побережье Баии примерно в 85 км от Сальвадора. Длинные пляжи, пальмы и мангровая растительность делают его удобным местом для нескольких спокойных дней у океана.

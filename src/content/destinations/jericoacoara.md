@@ -30,7 +30,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii__adbfe390.md
 updatedAt: 2026-09-25
-themes: ["theme_beach","theme_adventure","theme_wildlife"]
+themes: ["theme_beach", "theme_adventure", "theme_nature"]
 ---
 
 Жерикоакоара – это океан, белые песчаные дюны, пальмы и небольшое поселение у побережья. Рядом находится национальный парк Жерикоакоара.

@@ -36,7 +36,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya__6567032e.md
 updatedAt: 2026-09-25
-themes: ["theme_beach","theme_wildlife"]
+themes: ["theme_beach"]
 ---
 
 Морро-де-Сан-Паулу расположен на острове Тиньяре у побережья Баии. Поездка на катамаране из Сальвадора занимает около часа, поэтому остров удобно включать в более длинный маршрут по штату.

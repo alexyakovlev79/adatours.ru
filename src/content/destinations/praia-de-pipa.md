@@ -32,7 +32,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-prajya-de-pipa-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-prajya-de-pipa-braziliya__eb45ba81.md
 updatedAt: '2026-10-11'
-themes: ["theme_beach","theme_adventure","theme_wildlife"]
+themes: ["theme_beach", "theme_adventure", "theme_wildlife", "theme_nature"]
 ---
 
 Днем можно почти не уходить с побережья: прогулки, вода, серфинг и природные виды. Вечером открываются рестораны и бары, звучит местная музыка, в том числе форро.

@@ -51,9 +51,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii__37f42b69.md
 updatedAt: 2026-09-24
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 ---
 
 Ангра-дус-Рейс находится на атлантическом побережье штата Рио-де-Жанейро, примерно в 155 км к югу от Рио. Сюда едут ради Коста-Верде: зеленые склоны подходят к морю, а в заливе много островов и небольших бухт.

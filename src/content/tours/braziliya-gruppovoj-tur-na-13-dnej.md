@@ -254,8 +254,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_derevnya_akazhatuba
-primaryThemes: ["theme_wildlife"]
-themes: ["theme_culture","theme_beach"]
+primaryThemes: ["theme_nature"]
+themes: ["theme_culture", "theme_beach", "theme_wildlife"]
 ---
 
 

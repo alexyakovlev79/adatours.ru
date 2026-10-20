@@ -128,10 +128,8 @@ routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
 - destination_brazil_rio
-primaryThemes:
-- theme_wildlife
-themes:
-- theme_culture
+primaryThemes: ["theme_wildlife", "theme_nature"]
+themes: ["theme_culture"]
 ---
 
 

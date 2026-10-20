@@ -209,7 +209,7 @@ routeDestinations:
 - destination_brazil_recife
 - destination_brazil_porto_de_galinhas
 primaryThemes: ["theme_beach"]
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 

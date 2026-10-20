@@ -335,12 +335,8 @@ routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_buzios
 - destination_brazil_praia_vermelha
-primaryThemes:
-- theme_family
-- theme_beach
-themes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_family", "theme_beach"]
+themes: ["theme_nature", "theme_culture", "theme_wildlife"]
 ---
 
 

@@ -1,5 +1,5 @@
-// Provider code and tiles load only after first-screen readiness, downward scroll and map proximity.
-import {canMountGeoMap, movedDown, nearViewport} from '../lib/geo-map-lazy.mjs';
+// Keep offscreen maps lazy, but load immediately after first-screen readiness when visible.
+import {canMountGeoMap, isMapVisible, movedDown, nearViewport} from '../lib/geo-map-lazy.mjs';
 const scriptLoads = new Map();
 
 export function loadProviderScript(id, url) {
@@ -182,17 +182,18 @@ function initMaps() {
     });
   }
 
-  // A nearby map never starts on initial paint, even when located in the first
-  // viewport. Both prerequisites are mandatory: full page/first-screen load
-  // AND a genuine downward page scroll from the initial position.
+  // First-screen assets still get priority. A map already in the viewport
+  // can start without scrolling; an offscreen map needs downward scroll and proximity.
   let firstScreenReady = false;
   let scrolledDown = false;
   let previousScrollY = Math.max(0, window.scrollY);
   let observer;
 
   const tryMount = root => {
-    const near = nearViewport(root.getBoundingClientRect(), window.innerHeight, 300);
-    if (!canMountGeoMap({firstScreenReady, scrolledDown, near})) return;
+    const rect = root.getBoundingClientRect();
+    const visible = isMapVisible(rect, window.innerWidth, window.innerHeight);
+    const near = nearViewport(rect, window.innerHeight, 300);
+    if (!canMountGeoMap({firstScreenReady, scrolledDown, near, visible})) return;
     observer?.unobserve(root);
     mount(root);
   };
@@ -208,20 +209,25 @@ function initMaps() {
 
   window.addEventListener('scroll', () => {
     const currentY = Math.max(0, window.scrollY);
-    if (movedDown(previousScrollY, currentY)) {
-      scrolledDown = true;
-      if (firstScreenReady) checkNearby();
-    } else if (scrolledDown && !observer) {
-      checkNearby();
-    }
+    if (movedDown(previousScrollY, currentY)) scrolledDown = true;
     previousScrollY = currentY;
+    if (firstScreenReady) checkNearby();
   }, {passive:true});
 
-  // Recheck visible regions when the browser resizes, including the fallback
-  // for browsers without IntersectionObserver.
+  // Recheck after resizing, tab restoration, or return from a discarded tab.
+  // The double frame allows the browser to restore its saved scroll position.
   window.addEventListener('resize', () => {
-    if (firstScreenReady && scrolledDown) checkNearby();
+    if (firstScreenReady) checkNearby();
   }, {passive:true});
+  const checkRestoredViewport = () => {
+    window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+      if (firstScreenReady) checkNearby();
+    }));
+  };
+  window.addEventListener('pageshow', checkRestoredViewport);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') checkRestoredViewport();
+  });
 
   const finishFirstScreen = async () => {
     // window.load includes normal above-fold assets. Explicitly wait for any
@@ -245,7 +251,7 @@ function initMaps() {
     }));
     if (document.fonts?.ready) await document.fonts.ready.catch(() => {});
     firstScreenReady = true;
-    if (scrolledDown) checkNearby();
+    checkNearby();
   };
 
   if (document.readyState === 'complete') void finishFirstScreen();

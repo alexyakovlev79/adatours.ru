@@ -343,3 +343,16 @@ only when selected, and relative /media paths use the configured CDN.
 Pagefind remains the source of matching results and metadata; GEO data
 still supplies only verified coordinates and is not refetched on every
 keystroke.
+
+## Visible maps after refresh and tab restoration — 20.10.2026
+
+A map with any positive pixel overlap with the actual viewport can mount after
+first-screen assets are ready **without** a user scroll. The previous scroll
+requirement remains only for offscreen maps, which also need to approach within
+300px of the viewport. Check strict two-dimensional viewport visibility
+separately from the expanded proximity zone. Recheck on first-screen readiness,
+scroll, resize, `pageshow` (including BFCache), and when a previously hidden
+tab becomes visible. Wait two animation frames on restoration so the browser's
+restored scroll position is reflected in element geometry. This supersedes the
+historical mandatory-scroll rule above. Photo lazy-loading and search-map
+activation on opening the Places tab remain unchanged.

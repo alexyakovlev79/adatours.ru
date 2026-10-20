@@ -36,7 +36,7 @@ const { href, label } = Astro.props;
     max-width: 100%;
     min-height: 48px;
     padding-block: 10px;
-    border-bottom: 1px solid var(--color-brand-deep, #08757d);
+    border-bottom: 1px solid currentColor;
     color: var(--color-ink);
     font-family: var(--font-display);
     font-size: clamp(1.15rem, 1.8vw, 1.65rem);
@@ -55,10 +55,6 @@ const { href, label } = Astro.props;
     font-size: 1.3em;
     line-height: 1;
     transition: transform 180ms ease;
-  }
-
-  .catalog-more__link:hover {
-    border-color: var(--color-ink);
   }
 
   .catalog-more__link:hover .catalog-more__arrow {

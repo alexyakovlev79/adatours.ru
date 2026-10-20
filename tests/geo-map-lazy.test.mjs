@@ -1,12 +1,24 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {canMountGeoMap, movedDown, nearViewport} from '../src/lib/geo-map-lazy.mjs';
+import {canMountGeoMap, isMapVisible, movedDown, nearViewport} from '../src/lib/geo-map-lazy.mjs';
 
-test('map never starts on initial page load, even when already visible', () => {
-  assert.equal(canMountGeoMap({firstScreenReady:true,scrolledDown:false,near:true}),false);
-  assert.equal(canMountGeoMap({firstScreenReady:false,scrolledDown:true,near:true}),false);
-  assert.equal(canMountGeoMap({firstScreenReady:true,scrolledDown:true,near:false}),false);
-  assert.equal(canMountGeoMap({firstScreenReady:true,scrolledDown:true,near:true}),true);
+test('a visible map starts without scrolling as soon as first-screen assets are ready', () => {
+  assert.equal(canMountGeoMap({firstScreenReady:true,scrolledDown:false,near:true,visible:true}),true);
+  assert.equal(canMountGeoMap({firstScreenReady:false,scrolledDown:false,near:true,visible:true}),false);
+  assert.equal(canMountGeoMap({firstScreenReady:true,scrolledDown:false,near:true,visible:false}),false);
+  assert.equal(canMountGeoMap({firstScreenReady:true,scrolledDown:true,near:false,visible:false}),false);
+  assert.equal(canMountGeoMap({firstScreenReady:true,scrolledDown:true,near:true,visible:false}),true);
+});
+
+test('strict viewport overlap counts even a small visible edge on reload or restore', () => {
+  const box = (top,bottom,left=100,right=900) => ({top,bottom,left,right,width:right-left,height:bottom-top});
+  assert.equal(isMapVisible(box(899,1200),1600,900),true);
+  assert.equal(isMapVisible(box(-200,1),1600,900),true);
+  assert.equal(isMapVisible(box(900,1200),1600,900),false);
+  assert.equal(isMapVisible(box(-200,0),1600,900),false);
+  assert.equal(isMapVisible(box(200,300,-120,1),1600,900),true);
+  assert.equal(isMapVisible(box(200,300,-120,0),1600,900),false);
+  assert.equal(isMapVisible(box(0,10,100,100),1600,900),false);
 });
 
 test('only an actual downward page movement opens the scroll gate', () => {

@@ -43,8 +43,9 @@ const orientation = layout === 'orientation';
         <p class="eyebrow">{eyebrow}</p>
         <h2>{title}</h2>
       </div>
+    </div>
 
-      <div class="media-gallery__grid">
+    <div class="media-gallery__grid">
         {visibleItems.map((item, index) => (
           <figure
             class:list={['media-gallery__item', `media-gallery__item--${index % 6}`]}
@@ -65,13 +66,13 @@ const orientation = layout === 'orientation';
             {item.caption && <figcaption>{item.caption}</figcaption>}
           </figure>
         ))}
-      </div>
     </div>
   </section>
 )}
 
 <style>
   .media-gallery {
+    padding-bottom: 0;
     background: var(--color-bg);
   }
 
@@ -83,279 +84,89 @@ const orientation = layout === 'orientation';
     margin-bottom: var(--heading-gap);
   }
 
-  .media-gallery__heading h2 {
-    max-width: 860px;
-    margin: 0;
-  }
+  .media-gallery__heading h2 { max-width: 860px; margin: 0; }
 
+  /* A single edge-to-edge, zero-gutter photo wall for all gallery layouts. */
   .media-gallery__grid {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: clamp(18px, 2.3vw, 34px);
-    align-items: start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 0;
   }
 
   .media-gallery__item {
+    position: relative;
+    grid-column: span 1;
     min-width: 0;
     margin: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--color-line);
+  }
+
+  .media-gallery__item:nth-child(5n) {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
   }
 
   .media-gallery__item img {
+    position: absolute;
+    inset: 0;
     display: block;
     width: 100%;
     height: 100%;
+    max-width: none;
     object-fit: cover;
-  }
-
-  .media-gallery__item--0 {
-    grid-column: span 7;
-  }
-
-  .media-gallery__item--0 img {
-    aspect-ratio: 4 / 3;
-  }
-
-  .media-gallery__item--1 {
-    grid-column: span 5;
-    margin-top: var(--heading-gap);
-  }
-
-  .media-gallery__item--1 img {
-    aspect-ratio: 3 / 4;
-  }
-
-  .media-gallery__item--2 {
-    grid-column: span 5;
-  }
-
-  .media-gallery__item--2 img {
-    aspect-ratio: 1 / 1;
-  }
-
-  .media-gallery__item--3 {
-    grid-column: span 7;
-    margin-top: var(--heading-gap);
-  }
-
-  .media-gallery__item--3 img {
-    aspect-ratio: 16 / 10;
-  }
-
-  .media-gallery__item--4 {
-    grid-column: 2 / span 10;
-    margin-block: var(--heading-gap);
-  }
-
-  .media-gallery__item--4 img {
-    aspect-ratio: 16 / 8;
-  }
-
-  .media-gallery__item--5 {
-    grid-column: 4 / span 7;
-  }
-
-  .media-gallery__item--5 img {
-    aspect-ratio: 4 / 3;
+    object-position: center;
   }
 
   .media-gallery figcaption {
-    max-width: 720px;
-    margin-top: 10px;
-    color: rgba(26,26,26,.58);
-    font-size: var(--text-xs);
-  }
-
-  /* Test layout for Rio: a full-bleed, gapless photo wall.
-     The source order stays unchanged; only the rendering changes. */
-  .media-gallery--flush .media-gallery__heading {
-    margin-bottom: 0;
-    padding-bottom: var(--section-y-tight);
-  }
-
-  .media-gallery--flush .media-gallery__grid {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: clamp(360px, 35vw, 620px);
-    gap: 0;
-    align-items: stretch;
-  }
-
-  .media-gallery--flush .media-gallery__item,
-  .media-gallery--flush .media-gallery__item--0,
-  .media-gallery--flush .media-gallery__item--1,
-  .media-gallery--flush .media-gallery__item--2,
-  .media-gallery--flush .media-gallery__item--3,
-  .media-gallery--flush .media-gallery__item--4,
-  .media-gallery--flush .media-gallery__item--5 {
-    position: relative;
-    grid-column: auto;
-    margin: 0;
-    overflow: hidden;
-  }
-
-  .media-gallery--flush .media-gallery__item:nth-child(5n) {
-    grid-column: 1 / -1;
-  }
-
-  .media-gallery--flush .media-gallery__item img,
-  .media-gallery--flush .media-gallery__item--0 img,
-  .media-gallery--flush .media-gallery__item--1 img,
-  .media-gallery--flush .media-gallery__item--2 img,
-  .media-gallery--flush .media-gallery__item--3 img,
-  .media-gallery--flush .media-gallery__item--4 img,
-  .media-gallery--flush .media-gallery__item--5 img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: auto;
-    object-fit: cover;
-  }
-
-  .media-gallery--flush figcaption {
     position: absolute;
     inset: auto 0 0;
+    z-index: 1;
     max-width: none;
     margin: 0;
-    padding: 28px 24px 18px;
+    padding: 30px clamp(18px, 3vw, 44px) 18px;
     color: #fff;
-    background: linear-gradient(transparent, rgba(0,0,0,.58));
+    background: linear-gradient(transparent, rgba(0,0,0,.72));
+    font-size: var(--text-xs);
+    line-height: 1.5;
   }
 
-  .media-gallery--flush[data-image-text-align] figcaption {
+  .media-gallery[data-image-text-align] figcaption {
     text-align: var(--image-text-align);
   }
 
-
-  /* Excursion gallery: landscape images span the content width,
-     portrait images form two-column pairs. */
-  .media-gallery--orientation .media-gallery__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 1200px;
-    margin-inline: auto;
-  }
-
-  .media-gallery--orientation .media-gallery__item,
-  .media-gallery--orientation .media-gallery__item--0,
-  .media-gallery--orientation .media-gallery__item--1,
-  .media-gallery--orientation .media-gallery__item--2,
-  .media-gallery--orientation .media-gallery__item--3,
-  .media-gallery--orientation .media-gallery__item--4,
-  .media-gallery--orientation .media-gallery__item--5 {
-    grid-column: 1 / -1;
-    margin: 0;
-  }
-
+  /* Excursion/destination portraits pair up; landscape frames span the row. */
   .media-gallery--orientation .media-gallery__item[data-orientation="portrait"] {
     grid-column: span 1;
+    aspect-ratio: 3 / 4;
   }
-
-  .media-gallery--orientation .media-gallery__item img,
-  .media-gallery--orientation .media-gallery__item--0 img,
-  .media-gallery--orientation .media-gallery__item--1 img,
-  .media-gallery--orientation .media-gallery__item--2 img,
-  .media-gallery--orientation .media-gallery__item--3 img,
-  .media-gallery--orientation .media-gallery__item--4 img,
-  .media-gallery--orientation .media-gallery__item--5 img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
+  .media-gallery--orientation .media-gallery__item[data-orientation="landscape"],
+  .media-gallery--orientation .media-gallery__item:not([data-orientation]) {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
   }
 
   @media (max-width: 760px) {
-    .media-gallery__heading {
-      grid-template-columns: 1fr;
-      gap: 12px;
-    }
-
-    .media-gallery__grid {
-      grid-template-columns: 1fr;
-      gap: 28px;
-    }
-
+    .media-gallery__heading { grid-template-columns: 1fr; gap: 12px; }
+    .media-gallery__grid { grid-template-columns: 1fr; }
     .media-gallery__item,
-    .media-gallery__item--0,
-    .media-gallery__item--1,
-    .media-gallery__item--2,
-    .media-gallery__item--3,
-    .media-gallery__item--4,
-    .media-gallery__item--5 {
-      grid-column: 1;
-      margin: 0;
-    }
-
-    .media-gallery__item:nth-child(3n + 1) img {
-      aspect-ratio: 4 / 5;
-    }
-
-    .media-gallery__item:nth-child(3n + 2) img {
-      aspect-ratio: 4 / 3;
-    }
-
-    .media-gallery__item:nth-child(3n) img {
-      aspect-ratio: 1 / 1;
-    }
-
-    .media-gallery--flush .media-gallery__heading {
-      padding-bottom: 24px;
-    }
-
-    .media-gallery--flush .media-gallery__grid {
-      grid-template-columns: 1fr;
-      grid-auto-rows: auto;
-      gap: 0;
-    }
-
-    .media-gallery--flush .media-gallery__item,
-    .media-gallery--flush .media-gallery__item:nth-child(5n) {
-      grid-column: 1;
-      aspect-ratio: 4 / 3;
-    }
-
-    .media-gallery--flush .media-gallery__item img,
-    .media-gallery--flush .media-gallery__item:nth-child(3n + 1) img,
-    .media-gallery--flush .media-gallery__item:nth-child(3n + 2) img,
-    .media-gallery--flush .media-gallery__item:nth-child(3n) img {
-      width: 100%;
-      height: 100%;
-      aspect-ratio: auto;
-      object-fit: cover;
-    }
-
-    .media-gallery--orientation .media-gallery__grid {
-      grid-template-columns: 1fr;
-      max-width: none;
-    }
-
-    .media-gallery--orientation .media-gallery__item,
-    .media-gallery--orientation .media-gallery__item--0,
-    .media-gallery--orientation .media-gallery__item--1,
-    .media-gallery--orientation .media-gallery__item--2,
-    .media-gallery--orientation .media-gallery__item--3,
-    .media-gallery--orientation .media-gallery__item--4,
-    .media-gallery--orientation .media-gallery__item--5,
+    .media-gallery__item:nth-child(5n) { grid-column: 1; aspect-ratio: 4 / 3; }
     .media-gallery--orientation .media-gallery__item[data-orientation="portrait"] {
       grid-column: 1;
-      margin: 0;
+      aspect-ratio: 4 / 5;
     }
-
-    .media-gallery--orientation .media-gallery__item img,
-    .media-gallery--orientation .media-gallery__item:nth-child(3n + 1) img,
-    .media-gallery--orientation .media-gallery__item:nth-child(3n + 2) img,
-    .media-gallery--orientation .media-gallery__item:nth-child(3n) img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: auto;
-      object-fit: contain;
+    .media-gallery--orientation .media-gallery__item[data-orientation="landscape"],
+    .media-gallery--orientation .media-gallery__item:not([data-orientation]) {
+      grid-column: 1;
+      aspect-ratio: 4 / 3;
     }
-
-    /* Mobile panoramic photos must occupy at least a 16:9 frame.
-       Narrower originals retain their full height and natural proportions. */
-    .media-gallery--orientation .media-gallery__item[data-mobile-panorama="true"] img {
+    .media-gallery--orientation .media-gallery__item[data-mobile-panorama="true"] {
+      grid-column: 1;
       aspect-ratio: 16 / 9;
-      object-fit: cover;
-      object-position: center;
     }
+    .media-gallery figcaption { padding: 24px 20px 14px; }
   }
 </style>
 

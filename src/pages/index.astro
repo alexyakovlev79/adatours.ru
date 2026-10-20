@@ -150,7 +150,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         imageTextAlign={leadingCountry.data.imageTextAlign}
       />
     )}
-    <div class="container home-countries__cards">
+    <div class="home-countries__cards">
       <div class="home-country-grid">
         {otherCountries.map((country) => (
           <DestinationBand
@@ -176,7 +176,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         </div>
         <p>Выберите, что хочется увидеть или попробовать. Мы покажем страны и маршруты, где это впечатление становится частью путешествия.</p>
       </div>
-      <div class="home-interest-grid">
+    </div>
+    <div class="home-interest-grid">
         {visualInterests.map(({ entry, tourCount }, index) => (
           <InterestCard
             entityId={entry.data.id}
@@ -188,7 +189,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
             large={index === 0}
           />
         ))}
-      </div>
+    </div>
+    <div class="container">
       {otherInterests.length > 0 && (
         <ul class="home-interest-list">
           {otherInterests.map(({ entry, tourCount }) => (
@@ -225,7 +227,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         imageTextAlign={mainTour.data.imageTextAlign}
       />
     )}
-    <div class="container home-tours__cards">
+    <div class="home-tours__cards">
       <div class="home-tour-grid">
         {smallTours.map((entry) => (
           <a class="home-poster home-poster--tour" href={withBase(tourPath(entry.data))} data-image-text-align={entry.data.imageTextAlign}>
@@ -262,7 +264,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         </div>
         <p>Путешествие начинается с одного места: водопада, национального парка, города или экскурсии, ради которой стоит изменить маршрут.</p>
       </div>
-      <div class="home-discover__grid">
+    </div>
+    <div class="home-discover__grid">
         <a class="home-discover__tile" href={withBase('/places/')}>
           <img src={withBase(placeCover)} alt="" loading="lazy" />
           <span class="home-discover__shade" aria-hidden="true"></span>
@@ -281,7 +284,6 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
             <span>Прогулки, выезды и занятия, которые можно добавить к маршруту <span aria-hidden="true">↗</span></span>
           </span>
         </a>
-      </div>
     </div>
   </section>
 
@@ -294,7 +296,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
         </div>
         <p>Ada Tours организует индивидуальные поездки, корпоративные программы и обслуживание туристов в Бразилии и Латинской Америке для зарубежных туроператоров.</p>
       </div>
-      <div class="home-services__grid">
+    </div>
+    <div class="home-services__grid">
         <a class="home-service home-service--vip" href={withBase('/vip/')}>
           <img src={withBase('/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp')} loading="lazy" alt={imageCaption('/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp').alt} title={imageCaption('/media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/hero-src-enhanced-20261007.webp').hover} />
           <span class="home-service__shade" aria-hidden="true"></span>
@@ -325,7 +328,8 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
             <strong>Подробнее <span aria-hidden="true">↗</span></strong>
           </span>
         </a>
-      </div>
+    </div>
+    <div class="container">
       <div class="home-services__links">
         <a href={withBase('/mice/business-delegations/')}>Деловые делегации <span aria-hidden="true">↗</span></a>
         <a href={withBase('/dmc/travel-agencies/')}>Для турагентств <span aria-hidden="true">↗</span></a>
@@ -404,7 +408,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-start__search p { margin: 0; }
   .home-start__search :global(.search-trigger) { padding: 12px 18px; border: 1px solid currentColor; font-size: .8rem; }
 
-  .home-country-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+  .home-country-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin-top: 0; }
   .home-country-grid :global(.band) { min-width: 0; min-height: clamp(310px, 34vw, 470px); }
   .home-country-grid :global(.band__content) { padding-block: clamp(30px, 3vw, 46px); }
   .home-country-grid :global(.band__title) { font-size: clamp(2rem, 3.5vw, 3.65rem); overflow-wrap: anywhere; }
@@ -419,9 +423,11 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-poster[data-image-text-align="right"] .home-poster__content { text-align: right; }
   .home-all-link { display: flex; justify-content: space-between; gap: 24px; width: fit-content; max-width: 100%; margin-top: var(--heading-gap); padding-bottom: 12px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: clamp(1rem, 1.6vw, 1.3rem); }
   .home-all-link:hover { opacity: .65; }
+  .home-countries__cards > .home-all-link,
+  .home-tours__cards > .home-all-link { margin-inline: var(--gutter); }
 
   .home-interests { background: #f6f2eb; }
-  .home-interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3.5vw, 46px); }
+  .home-interest-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
   .home-interest-grid :global(.interest-card__meta) { text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; }
   .home-interest-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 44px; margin: clamp(32px, 5vw, 62px) 0 0; padding: 0; list-style: none; }
   .home-interest-list li { min-width: 0; border-top: 1px solid var(--color-line); }
@@ -431,20 +437,20 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-interest-list small { color: var(--color-muted); font-size: .75rem; white-space: nowrap; text-decoration: underline; text-underline-offset: .22em; text-decoration-thickness: 1px; }
   .home-interest-list a > span:last-child { justify-self: end; }
 
-  .home-tour-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+  .home-tour-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin-top: 0; }
   .home-poster--tour { min-height: clamp(350px, 37vw, 510px); }
   .home-poster--tour :global(.vip-badge--overlay) { top: 16px; left: 16px; }
   .home-poster--tour h3 { max-width: 680px; font-size: clamp(1.5rem, 2.35vw, 2.8rem); }
   .home-poster--tour .eyebrow { font-size: .78rem; }
 
   .home-discover { background: #f6f2eb; }
-  .home-discover__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .home-discover__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
   .home-discover__tile { position: relative; display: flex; align-items: flex-end; min-height: clamp(360px, 42vw, 570px); overflow: hidden; isolation: isolate; color: white; background: #222c2b; }
   .home-discover__copy { display: block; width: 100%; padding: clamp(24px, 4vw, 58px); }
   .home-discover__copy h3 { margin: 12px 0 18px; font-size: clamp(2.3rem, 4vw, 4.6rem); line-height: 1; }
   .home-discover__copy > span:last-child { display: block; max-width: 420px; color: rgb(255 255 255 / 88%); line-height: 1.5; }
 
-  .home-services__grid { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); grid-template-rows: repeat(2, minmax(270px, 1fr)); gap: 18px; min-height: 750px; }
+  .home-services__grid { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); grid-template-rows: repeat(2, minmax(270px, 1fr)); gap: 0; min-height: 750px; }
   .home-service { position: relative; display: flex; align-items: flex-end; min-height: 300px; overflow: hidden; isolation: isolate; color: white; background: #222c2b; }
   .home-service--vip { grid-row: 1 / 3; }
   .home-service--vip img { object-position: 64% center; }
@@ -495,14 +501,10 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     .home-start__links { grid-template-columns: 1fr; }
     .home-start__links a { grid-template-columns: 28px minmax(0, 1fr) 22px; padding-block: 20px; }
     .home-start__search { align-items: flex-start; flex-direction: column; gap: 18px; }
-    /* All single-column home photography reaches both viewport edges. */
+    /* Photo mosaics are full-bleed at every breakpoint. */
     .home-interest-grid,
     .home-discover__grid,
-    .home-services__grid {
-      width: calc(100% + 2 * var(--gutter));
-      margin-inline: calc(-1 * var(--gutter));
-      gap: 0;
-    }
+    .home-services__grid { gap: 0; }
     /* Interest tiles use the same full-bleed photo + overlay as tours. */
     .home-interest-grid { grid-template-columns: 1fr; }
     .home-interest-grid :global(.interest-card--large) { grid-column: 1 / -1; }

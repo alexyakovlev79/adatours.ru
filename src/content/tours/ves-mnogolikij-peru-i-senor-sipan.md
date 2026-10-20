@@ -437,7 +437,7 @@ routeDestinations:
 - destination_peru_chiklajo
 - destination_peru_uaka_rahada
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 

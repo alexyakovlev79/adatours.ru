@@ -417,8 +417,8 @@ routeDestinations:
 - destination_peru_machu_picchu
 - destination_peru_puerto_maldonado
 - destination_peru_ozero_tres_chimbadas
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_wildlife"]
 ---
 
 Лима встречает современными районами, колониальной архитектурой и кухней. Куско хранит наследие империи инков в улицах, храмах и каменной кладке. Мачу-Пикчу открывается среди гор и облаков, а на Титикаке жизнь продолжается на плавучих островах Урос. Затем путешествие меняется еще раз: после Анд вы отправитесь в Пуэрто-Мальдонадо, в тропический лес Амазонии.

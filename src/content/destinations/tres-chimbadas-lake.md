@@ -12,8 +12,7 @@ hero:
   alt: "Нос деревянного каноэ на озере Трес-Чимбадас среди туманного тропического леса, Перу"
   hover: "Трес-Чимбадас в Перу: спокойная вода отражает лесной берег и утреннюю дымку"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - ozero-tres-chimbadas
 sourceSnapshot: data/source-index/materials/destination_peru_ozero_tres_chimbadas.md

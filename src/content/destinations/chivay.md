@@ -12,9 +12,7 @@ hero:
   alt: "Мощеная улица Чивая с невысокими каменными домами перед андскими склонами, Перу"
   hover: "Чивай в Перу: тихая улица и черепичные крыши на фоне сухих гор"
 gallery: []
-themes:
-- theme_wildlife
-- theme_spa
+themes: ["theme_wildlife", "theme_spa", "theme_nature"]
 searchAliases:
 - chivaj
 sourceSnapshot: data/source-index/materials/destination_peru_chivaj.md

@@ -13,8 +13,7 @@ hero:
   hover: "Биги-Пан: стая красных птиц над мелководной лагуной"
   alt: "Красные птицы летят над водой и мангровыми зарослями Биги-Пан, Суринам"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

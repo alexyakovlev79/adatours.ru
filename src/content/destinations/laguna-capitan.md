@@ -12,8 +12,7 @@ hero:
   alt: "Фламинго на мелководье соленой лагуны Капитан с сухими светлыми берегами, Парагвай"
   hover: "Лагуна Капитан в Чако: мелкая вода, соляной берег и далекие фламинго"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - laguna-kapitan
 sourceSnapshot: data/source-index/materials/destination_paraguay_laguna_kapitan.md

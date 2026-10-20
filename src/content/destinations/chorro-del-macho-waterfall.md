@@ -12,9 +12,7 @@ hero:
   hover: "Эль-Валье: белая струя водопада над каменистым ручьем"
   alt: "Водопад Чорро-Эль-Мачо падает со скалы среди густого леса, Панама"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - Chorro del Macho
 - vodopad-chorro-del-macho

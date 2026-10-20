@@ -108,9 +108,9 @@
     "skippedArchived": 3
   },
   "releasePreparation": {
-    "updatedAt": "2026-10-20T15:55:35.692952+00:00",
+    "updatedAt": "2026-10-20T16:16:27.504685+00:00",
     "classificationCommit": "5ee60e90946a9122f679c757f2482b2dcf7956d3",
-    "status": "registries_and_table_repair_prepared_not_deployed",
+    "status": "individual_seo_review_in_progress_not_deployed",
     "natureHero": "/media/themes/nature/hero-generated-20261020-v1.webp",
     "natureHeroReceiptVerified": true,
     "independentVipCopyAndSeoGrammar": true,
@@ -118,16 +118,16 @@
       "passed": 351,
       "failed": 0
     },
-    "editorialReviewed": 8,
+    "editorialReviewed": 16,
     "auditPath": "data/migrations/interest-split-20261020/release-audit.json",
-    "next": "Review remaining 524 semantic candidates; additional nature articles; final main/staging reconciliation and complete CI before cutover.",
+    "next": "Continue individual semantic review of remaining 516 candidates, prioritizing country wildlife pages; additional nature articles; reconcile fresh main/staging and full CI before cutover.",
     "registryNewNatureUrls": 368,
     "registryOtherNewUrls": 18,
     "registryUnavailableWildlifeUrls": 6,
     "registryTotalRows": 5613,
     "tableScopeRepairedArticles": 40,
     "removedOutOfScopeTableIds": 63,
-    "pendingSemanticReview": 524,
+    "pendingSemanticReview": 516,
     "newNatureArticlesPrepared": 1,
     "articleLinkPreflight": {
       "articles": 41,
@@ -139,12 +139,22 @@
     "sourceIndexThemeRowsSynchronized": 980,
     "plannedDestinationThemeRowsSynchronized": 15,
     "lastCI": {
-      "sha": "fa95a0f495c363e39e304c67e9bc3652dc6603b2",
-      "runId": 39451575260,
-      "status": "failed_at_source_index_consistency",
+      "sha": "18f8c9817b46b894efffd986c529fc6f78f0bed3",
+      "runId": 39452944606,
+      "status": "success",
       "builtPages": 6129,
-      "seoArticleFilesChecked": 5188,
-      "followup": "Source-index and existing planned catalog thematic fields synchronized from confirmed decisions; next full CI pending."
+      "unitTestsPassed": 351,
+      "scope": "Full code/registry checkpoint before seo-semantic-core-001 text edits."
+    },
+    "lastEditorialBatch": {
+      "id": "seo-semantic-core-001",
+      "articles": 8,
+      "articleReleaseGateAccepted": 8,
+      "articleLinkPreflightErrors": 0,
+      "thematicTablePreflightErrors": 0,
+      "classificationConsistencyErrors": 0,
+      "reviewedByExactResultBlobSha": true,
+      "productionDeployed": false
     }
   }
 }

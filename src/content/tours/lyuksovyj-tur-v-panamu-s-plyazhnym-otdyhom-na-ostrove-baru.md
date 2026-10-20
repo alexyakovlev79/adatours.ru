@@ -374,8 +374,8 @@ routeDestinations:
 - destination_panama_bokete
 - destination_panama_vulkan_baru
 - destination_panama_bokas_del_toro
-primaryThemes: ["theme_wildlife", "theme_beach"]
-themes: ["theme_culture", "theme_gastronomy_wine", "theme_coffee"]
+primaryThemes: ["theme_nature", "theme_beach"]
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_coffee", "theme_wildlife"]
 ---
 
 

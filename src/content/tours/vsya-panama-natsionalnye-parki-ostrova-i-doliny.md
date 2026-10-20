@@ -219,8 +219,8 @@ routeDestinations:
 - destination_panama_shlyuzy_agua_klara
 - destination_panama_el_valle
 - destination_panama_vodopad_chorro_del_macho
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_wildlife"]
 ---
 
 

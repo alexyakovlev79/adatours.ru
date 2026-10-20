@@ -436,8 +436,8 @@ routeDestinations:
 - destination_peru_chivaj
 - destination_peru_arekipa
 - destination_peru_tumbes
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 

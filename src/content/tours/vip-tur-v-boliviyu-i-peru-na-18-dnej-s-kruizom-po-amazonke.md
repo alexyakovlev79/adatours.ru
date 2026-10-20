@@ -372,8 +372,8 @@ routeDestinations:
 - destination_peru_linii_naska_i_ostrova_balestas
 - destination_peru_pisko
 - destination_peru_parakas
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: ["theme_cruises","theme_gastronomy_wine"]
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_cruises", "theme_gastronomy_wine", "theme_wildlife"]
 ---
 
 

@@ -250,7 +250,7 @@ routeDestinations:
 - destination_panama_almirante
 - destination_panama_ostrov_kolon
 - destination_panama_bokas_del_toro
-primaryThemes: ["theme_wildlife", "theme_beach"]
+primaryThemes: ["theme_nature", "theme_beach"]
 themes: ["theme_culture", "theme_gastronomy_wine", "theme_adventure", "theme_coffee"]
 ---
 

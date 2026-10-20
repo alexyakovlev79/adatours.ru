@@ -319,7 +319,7 @@ routeDestinations:
 - destination_peru_urubamba
 - destination_peru_moraj
 - destination_peru_lima
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

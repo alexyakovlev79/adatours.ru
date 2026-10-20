@@ -42,8 +42,9 @@ priceNote: Мы подготовим индивидуальный расчет �
 dates:
 - 'По запросу. Пример маршрута: 26 сентября — 2 октября 2026 года.'
 hero:
-  src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
-  alt: Рио-де-Жанейро вечером
+  src: /media/tours/brazil-mice-7-days/hero-b2b-generated-20261020-v1.webp
+  alt: "Деловая группа на смотровой площадке с видом на Сахарную Голову и залив Рио-де-Жанейро: иллюстрация"
+  hover: "B2B-поездка в Бразилию: делегация знакомится с панорамой Рио"
 gallery: []
 featured: false
 priority: 0

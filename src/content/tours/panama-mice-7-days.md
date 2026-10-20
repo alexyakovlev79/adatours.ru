@@ -38,8 +38,9 @@ priceNote: Мы подготовим расчет для вашей группы
 dates:
 - 'По запросу. Пример программы: 12–18 сентября 2026 года.'
 hero:
-  src: /media/countries/panama/featureBands-1-enhanced-20261002.webp
-  alt: Исторические дома Панама-Сити с красными крышами на берегу воды, Панама
+  src: /media/tours/panama-mice-7-days/hero-b2b-generated-20261020-v1.webp
+  alt: "Корпоративная группа с гидом наблюдает проход судна через шлюзы Панамского канала: иллюстрация"
+  hover: "MICE в Панаме: групповой выезд к Панамскому каналу"
 gallery: []
 featured: false
 priority: 0

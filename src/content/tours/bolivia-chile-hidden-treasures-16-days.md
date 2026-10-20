@@ -72,13 +72,8 @@ destinations: &id001
 - destination_chile_fonck_museum
 - destination_chile_la_sebastiana
 routeDestinations: *id001
-primaryThemes:
-- theme_wildlife
-- theme_adventure
-themes:
-- theme_culture
-- theme_gastronomy_wine
-- theme_cruises
+primaryThemes: ["theme_nature", "theme_adventure"]
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_cruises"]
 audiences:
 - vip
 format: Частный

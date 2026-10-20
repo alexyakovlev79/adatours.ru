@@ -20,9 +20,7 @@ destinations: &id001
 - destination_chile_marble_caves
 - destination_chile_cerro_castillo
 routeDestinations: *id001
-primaryThemes:
-- theme_wildlife
-- theme_cruises
+primaryThemes: ["theme_nature", "theme_cruises"]
 themes: []
 audiences: []
 format: Частный

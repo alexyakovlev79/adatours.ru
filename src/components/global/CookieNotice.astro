@@ -79,16 +79,17 @@ const privacyUrl = withBase('/privacy/');
   .cookie-notice button {
     min-height: 40px;
     padding: 9px 14px;
-    color: var(--color-ink);
-    background: var(--color-gold);
-    border: 0;
+    color: var(--color-bg);
+    background: var(--cta-fill-dark);
+    border: 1px solid var(--cta-border);
     border-radius: var(--radius-cta);
     cursor: pointer;
-    transition: background var(--motion-fast, 200ms) ease;
+    transition: background var(--motion-fast, 200ms) ease, border-color var(--motion-fast, 200ms) ease;
   }
 
   .cookie-notice button:hover {
-    background: var(--color-gold-hover);
+    border-color: var(--cta-border-hover);
+    background: var(--cta-fill-dark-hover);
   }
 
   @media (max-width: 520px) {

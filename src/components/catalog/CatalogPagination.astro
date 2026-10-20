@@ -56,15 +56,19 @@ const numbers = paginationNumbers(p.currentPage, p.totalPages);
     min-height: 52px;
     max-width: 100%;
     padding: 14px 32px;
+    border: 1px solid var(--cta-border);
     border-radius: var(--radius-cta);
     color: var(--color-ink);
-    background: var(--color-brand);
+    background: var(--cta-fill-light);
     font-family: var(--font-display);
     font-size: 1.2rem;
     text-decoration: none;
-    transition: background 180ms ease;
+    transition: background 180ms ease, border-color 180ms ease;
   }
-  .catalog-pagination__more:hover { background: var(--color-brand-hover, #18a8b2); }
+  .catalog-pagination__more:hover {
+    border-color: var(--cta-border-hover);
+    background: var(--cta-fill-light-hover);
+  }
   .catalog-pagination__more[aria-disabled='true'] { cursor: progress; opacity: .65; }
   .catalog-pagination__more[hidden] { display: none; }
   .catalog-pagination__status { max-width: 650px; margin: 0; font-size: .95rem; }

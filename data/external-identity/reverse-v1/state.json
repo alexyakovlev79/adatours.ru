@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T15:21:52.883Z",
+  "updatedAt": "2026-10-20T15:22:50.832Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -4149,103 +4149,173 @@
       "generation": 1
     },
     "https://vipdeluxetravel.ru/antarktika-ru/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/antarktika-ru/ekskursii; source title (zero-byte HTML)",
+        "Current Ada Tours source-index ID=country_antarctica; matching geographic identity; canonical=https://adatours.ru/antarctica/excursion/",
+        "Astro filtered excursion catalogue counts 0 active products from current source data; legacy empty 200 response supplies URL type only."
+      ],
+      "note": "No existing nonempty corresponding RU excursion catalogue. Retain for editorial decision about geographic fallback or gone status.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/guatemala/place/antigua-guatemala/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale; source title Экскурсии и туры в город Антигуа-Гуатемала в Гватемале",
+        "Current Ada Tours source-index ID=destination_guatemala_antigua_guatemala; matching geographic identity; canonical=https://adatours.ru/guatemala/place/antigua-guatemala/",
+        "Approved current MD of this place checked against legacy geographical description."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/guatemala/place/antigua-guatemala/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale/packages; source title (zero-byte HTML)",
+        "Current Ada Tours source-index ID=destination_guatemala_antigua_guatemala; matching geographic identity; canonical=https://adatours.ru/guatemala/place/antigua-guatemala/tour/",
+        "Astro filtered tour catalogue counts 13 active products from current source data; legacy empty 200 response supplies URL type only."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/guatemala/antigua-guatemala/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale/ekskursii; source title (zero-byte HTML)",
+        "Current Ada Tours source-index ID=destination_guatemala_antigua_guatemala; matching geographic identity; canonical=https://adatours.ru/guatemala/antigua-guatemala/",
+        "Astro filtered excursion catalogue counts 2 active products from current source data; legacy empty 200 response supplies URL type only."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/peru/place/arequipa/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru; source title Арекипа, Перу: достопримечательности и путеводитель по Белому городу",
+        "Current Ada Tours source-index ID=destination_peru_arekipa; matching geographic identity; canonical=https://adatours.ru/peru/place/arequipa/",
+        "Approved current MD of this place checked against legacy geographical description."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/peru/place/arequipa/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru/packages; source title (zero-byte HTML)",
+        "Current Ada Tours source-index ID=destination_peru_arekipa; matching geographic identity; canonical=https://adatours.ru/peru/place/arequipa/tour/",
+        "Astro filtered tour catalogue counts 6 active products from current source data; legacy empty 200 response supplies URL type only."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/peru/arequipa/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru/ekskursii; source title (zero-byte HTML)",
+        "Current Ada Tours source-index ID=destination_peru_arekipa; matching geographic identity; canonical=https://adatours.ru/peru/arequipa/",
+        "Astro filtered excursion catalogue counts 2 active products from current source data; legacy empty 200 response supplies URL type only."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/panama/place/san-blas-islands/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname; source title Пляжные туры и дайвинг-туры на острова Сан-Блас в Панаме",
+        "Current Ada Tours source-index ID=destination_panama_arhipelag_san_blas; matching geographic identity; canonical=https://adatours.ru/panama/place/san-blas-islands/",
+        "Approved current MD of this place checked against legacy geographical description."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "https://adatours.ru/panama/place/san-blas-islands/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname/packages; source title (zero-byte HTML)",
+        "Current Ada Tours source-index ID=destination_panama_arhipelag_san_blas; matching geographic identity; canonical=https://adatours.ru/panama/place/san-blas-islands/tour/",
+        "Astro filtered tour catalogue counts 2 active products from current source data; legacy empty 200 response supplies URL type only."
+      ],
+      "note": "Equivalent geography and page purpose; for empty legacy listings the historical product membership is not asserted.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-20261020-chat01-a71c",
-      "token": "lease-vip-20261020-chat01-dac3",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T15:22:50.832Z",
+      "evidence": [
+        "Legacy VIP crawl 2026-10-19 URL https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname/ekskursii; source title (zero-byte HTML)",
+        "Current Ada Tours source-index ID=destination_panama_arhipelag_san_blas; matching geographic identity; canonical=https://adatours.ru/panama/san-blas-islands/",
+        "Astro filtered excursion catalogue counts 0 active products from current source data; legacy empty 200 response supplies URL type only."
+      ],
+      "note": "No existing nonempty corresponding RU excursion catalogue. Retain for editorial decision about geographic fallback or gone status.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
-      "claimedAt": "2026-10-20T15:09:56.896Z",
-      "expiresAt": "2026-10-20T16:09:56.896Z",
+      "ownerId": "reverse-vip-20261020-chat01-a71c",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-asunson-v-paragvae": {
@@ -4404,6 +4474,24 @@
         "https://vipdeluxetravel.ru/antarktika-ru/packages"
       ],
       "savedAt": "2026-10-20T15:21:52.883Z"
+    },
+    "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh-part-04.json": {
+      "batchId": "reverse-vipdeluxetravel-ru-mvgtkpwg-hbgpowwh",
+      "part": 4,
+      "count": 10,
+      "urls": [
+        "https://vipdeluxetravel.ru/antarktika-ru/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v-gvatemale/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-paname/ekskursii"
+      ],
+      "savedAt": "2026-10-20T15:22:50.832Z"
     }
   }
 }

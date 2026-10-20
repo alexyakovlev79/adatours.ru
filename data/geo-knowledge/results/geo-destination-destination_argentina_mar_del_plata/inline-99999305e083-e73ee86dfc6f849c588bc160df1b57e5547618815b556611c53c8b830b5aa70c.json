@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_mar_del_plata",
+  "stableId": "destination_argentina_mar_del_plata",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/mar-del-plata/",
+  "sourceFingerprint": "b9588ad37a354e5fa398bdaa7174a3b3d90ddb34c865b65077d5a359d264793d",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Мар-дель-Плата",
+      "reason": "Точная новая сущность сверена с утвержденным Word, canonical каталогом и адресной проверкой официальных источников."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 100,
+      "selected": "country_argentina",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://turismomardelplata.gob.ar/ASP/EN/La-ciudad.htm",
+      "reason": "Проверена официальная страница муниципалитета, туристического ведомства или природоохранного органа об объекте."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://turismomardelplata.gob.ar/ASP/EN/La-ciudad.htm",
+      "checkedAt": "2026-10-20T09:55:11.872Z",
+      "note": "Локальная топонимика и принадлежность к Аргентине проверены по официальному источнику."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.872Z",
+      "note": "Страна программы и названного места — Аргентина."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://turismomardelplata.gob.ar/ASP/EN/La-ciudad.htm",
+      "checkedAt": "2026-10-20T09:55:11.872Z",
+      "note": "Официальный источник названного места; не сторонний туристический агрегатор."
+    }
+  ],
+  "reviewNote": "Адресный паспорт нового места. Город/населенный пункт отделен от одноименного округа; неподтвержденные QID и координаты пропущены. Изображения — иллюстрации GPT Image.",
+  "external": {
+    "officialUrl": "https://turismomardelplata.gob.ar/ASP/EN/La-ciudad.htm"
+  }
+}

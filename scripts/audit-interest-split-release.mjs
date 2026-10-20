@@ -21,6 +21,8 @@ const migrationRoot = 'data/migrations/interest-split-20261020';
 const journal = json(`${migrationRoot}/decisions.json`);
 const catalog = Object.fromEntries(['tour', 'excursion', 'destination'].map(type =>
   [type, new Map(json(`data/source-index/catalogs/${type}s.json`).entries.map(row => [row.id, row]))]));
+const indexById = new Map(json('data/source-index/index.json').entries.map(row => [row.id, row]));
+const plannedById = new Map(json('src/data/catalog/destinations.json').map(row => [row.id, row]));
 const errors = [], coverage = {}, dispositions = {};
 let matches = 0;
 for (const [key, item] of Object.entries(journal.items)) {
@@ -28,12 +30,14 @@ for (const [key, item] of Object.entries(journal.items)) {
   coverage[label] = (coverage[label] ?? 0) + 1;
   if (item.status !== 'done') continue;
   const md = parse(item.contentPath), entry = json(`data/source-index/entries/${item.id}.json`);
-  const compact = catalog[item.type].get(item.id), expected = JSON.stringify(fields(item.type, item.after));
-  if ([md.id, entry.id, compact?.id].some(id => id !== item.id)) errors.push(`${key}: ID mismatch`);
-  if ([md, entry, compact].some(row => !row || JSON.stringify(fields(item.type, row)) !== expected)) {
-    errors.push(`${key}: MD / entry / catalog / decision mismatch`);
+  const compact = catalog[item.type].get(item.id), index = indexById.get(item.id), expected = JSON.stringify(fields(item.type, item.after));
+  if ([md.id, entry.id, compact?.id, index?.id].some(id => id !== item.id)) errors.push(`${key}: ID mismatch`);
+  if ([md, entry, compact, index].some(row => !row || JSON.stringify(fields(item.type, row)) !== expected)) {
+    errors.push(`${key}: MD / entry / catalog / index / decision mismatch`);
     continue;
   }
+  const planned = item.type === 'destination' ? plannedById.get(item.id) : null;
+  if (planned?.themes && JSON.stringify(fields(item.type, planned)) !== expected) errors.push(`${key}: planned catalog themes mismatch`);
   const primary = md.primaryThemes ?? [], secondary = md.themes ?? [];
   if (item.type === 'tour' && (primary.length < 1 || primary.length > 2)) errors.push(`${key}: primary count`);
   if (new Set([...primary, ...secondary]).size !== primary.length + secondary.length) errors.push(`${key}: duplicate themes`);
@@ -97,7 +101,7 @@ const ledger = json('src/data/media/direct-s3-uploads.json');
 const receiptRows = ledger.assets;
 const report = { version: 1, checkedAt: new Date().toISOString(), sourceCommit: execFileSync('git', ['rev-parse', 'origin/feature/split-nature-wildlife-20261020'], { encoding: 'utf8' }).trim(),
   sourceNote: 'Confirmed remote checkpoint; candidate preparation files validated from working tree.',
-  classification: { coverage, activeTriplesMatched: matches, dispositions, errors },
+  classification: { coverage, activeTriplesMatched: matches, sourceIndexAlsoValidated: true, dispositions, errors },
   media: { natureHero: hero, registeredReceipt: receiptRows.some(row => '/' + row.key === hero), themeHeroes: content.themes.filter(row => row.data.hero?.src).length },
   catalog: { registryBaselineRef, regular: regular.length, vip: vip.length, multiCountry: multi.length,
     nature: { regular: regular.filter(row => row.themeId === 'theme_nature').length, vip: vip.filter(row => row.themeId === 'theme_nature').length,

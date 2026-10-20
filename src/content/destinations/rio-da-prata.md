@@ -12,9 +12,7 @@ hero:
   alt: "Рыбы и водные растения в прозрачной реке Рио-да-Прата, Бразилия"
   hover: "Рио-да-Прата в Бразилии: рыбы среди подводной зелени"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_brazil_reka_rio_da_prata.md
 updatedAt: '2026-10-08'
 ---

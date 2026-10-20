@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Река Салобра в районе Бом-Жардима входит в маршруты для наблюдения за рыбами и водной растительностью.
 searchAliases:
 - reka-salobra
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_reka_salobra/salobra-generated-20261008.webp
   hover: "Река Салобра: подводная растительность в прозрачной воде"

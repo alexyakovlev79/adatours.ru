@@ -11,8 +11,7 @@ searchAliases:
 - Gruta do Lago Azul
 - Blue Lake Cave
 - golubaya-peschera-bonito
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_golubaya_peschera_bonito/destination_brazil_golubaya_peschera_bonito-generated-20261008.webp
   alt: "Сталактиты над прозрачным синим озером в Голубой пещере Бонито, Бразилия"

@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Лагуна Азул находится среди белых дюн Ленсойс-Мараньенсес и входит в маршруты из Баррейриньяса.
 searchAliases:
 - laguna-azul-lensojs-maranenses
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_laguna_azul_lensojs_maranenses/destination_brazil_laguna_azul_lensojs_maranenses-generated-20261008.webp
   alt: "Бирюзовая лагуна Азул между светлыми дюнами Ленсойс-Мараньенсес, Бразилия"

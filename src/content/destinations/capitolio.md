@@ -9,8 +9,7 @@ destinationType: region
 summary: Капитолио в Минас-Жерайсе знакомит с каньонами, водопадами и водными маршрутами озера Фурнаш.
 searchAliases:
 - kapitolio
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_kapitolio/destination_brazil_kapitolio-generated-20261008.webp
   hover: "Капитолио в Бразилии: вода между высокими скалами каньона"

@@ -10,9 +10,7 @@ summary: Серра-да-Бокайна сохраняет Атлантичес�
 searchAliases:
 - Serra da Bocaina
 - nacionalnyj-park-serra-da-bokajna
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/destinations/destination_brazil_trindadi_parati/hero-generated-20261008-next20.webp
   hover: "Триндади у Парати: бирюзовая вода между прибрежными валунами"

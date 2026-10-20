@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Река Кларинью — направление прогулки на каноэ из эколоджа «Арарас» в Северном Пантанале.
 searchAliases:
 - Clarinho River
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010-enhanced-20261011-doc-v1.webp
   hover: "Пантанал: лодка отражается в воде у зеленого берега"

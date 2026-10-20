@@ -12,9 +12,7 @@ hero:
   hover: "Атинс: поселок у моря на фоне песчаных дюн"
   alt: "Песчаное побережье Атинса с лодками, низкими домами, пальмами и светлыми дюнами вдали, Бразилия"
 gallery: []
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_brazil_atins.md
 updatedAt: '2026-10-08'
 ---

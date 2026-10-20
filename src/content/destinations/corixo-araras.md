@@ -10,8 +10,7 @@ summary: Коришу — альтернативный водный маршру
 searchAliases:
 - Corixo River — Araras
 - Река Коришу у Araras Eco Lodge
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010-enhanced-20261011-doc-v1.webp
   hover: "Пантанал: лодка отражается в воде у зеленого берега"

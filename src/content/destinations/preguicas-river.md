@@ -12,8 +12,7 @@ searchAliases:
 - Preguiças
 - Rio Preguiças
 - reka-pregias
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_reka_pregias/destination_brazil_reka_pregias-generated-20261008.webp
   hover: "Река Прегиас: пальмы и лес на тихих берегах"

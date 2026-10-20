@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Река Аруау входит в водные маршруты по бразильской Амазонии с прогулками на каноэ и наблюдением за природой.
 searchAliases:
 - reka-aruau
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_reka_aruau/hero-generated-20261008-resumed.webp
   hover: "Река Аруау: лодка, лесные берега и отражения в воде"

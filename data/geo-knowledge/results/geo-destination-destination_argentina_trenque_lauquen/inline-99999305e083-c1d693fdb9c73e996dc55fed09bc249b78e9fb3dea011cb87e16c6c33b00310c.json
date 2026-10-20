@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_argentina_trenque_lauquen",
+  "stableId": "destination_argentina_trenque_lauquen",
+  "kind": "destination",
+  "canonicalPath": "/argentina/place/trenque-lauquen/",
+  "sourceFingerprint": "658043e4c8d9e01726fdcbc14763a4d09abc90c43738203332d9f937fa83cabd",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Тренке-Лаукен",
+      "reason": "Точная новая сущность сверена с утвержденным Word, canonical каталогом и адресной проверкой официальных источников."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "probability": 100,
+      "selected": "country_argentina",
+      "reason": "Страна и последовательность основного маршрута прямо следуют из программы 24.11–04.12.2026; дополнительных неподтвержденных остановок нет."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q264679",
+      "reason": "Проверена карточка Wikidata: тип и административная география совпадают. Для Sierra de la Ventana выбран населенный пункт Q3925137, а не горный хребет Q879368."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.trenquelauquen.gov.ar/la-ciudad/turismo/",
+      "reason": "Проверена официальная страница муниципалитета, туристического ведомства или природоохранного органа об объекте."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_argentina"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.trenquelauquen.gov.ar/la-ciudad/turismo/",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Локальная топонимика и принадлежность к Аргентине проверены по официальному источнику."
+    },
+    {
+      "field": "relationships.country_argentina",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/99999305e08376217959107996be57f768faaa75/data/source-index/materials/tour_argentina_agricultural_11_days.md",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Страна программы и названного места — Аргентина."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q264679",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Точный объект, название, тип и принадлежность сопоставлены с локальным источником."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.trenquelauquen.gov.ar/la-ciudad/turismo/",
+      "checkedAt": "2026-10-20T09:55:11.870Z",
+      "note": "Официальный источник названного места; не сторонний туристический агрегатор."
+    }
+  ],
+  "reviewNote": "Адресный паспорт нового места. Город/населенный пункт отделен от одноименного округа; неподтвержденные QID и координаты пропущены. Изображения — иллюстрации GPT Image.",
+  "external": {
+    "wikidataQid": "Q264679",
+    "officialUrl": "https://www.trenquelauquen.gov.ar/la-ciudad/turismo/"
+  }
+}

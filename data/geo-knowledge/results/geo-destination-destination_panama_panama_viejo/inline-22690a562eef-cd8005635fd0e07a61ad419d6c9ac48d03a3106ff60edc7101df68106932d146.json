@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_panama_viejo",
+  "stableId": "destination_panama_panama_viejo",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/panama-viejo/",
+  "sourceFingerprint": "64b51b8dd1a3b7a81548af01c204b613589aec1be8294861a79271c794573531",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Панама-Вьехо",
+      "reason": "Новая самостоятельная сущность точно сопоставлена с проверенной программой Анны, stable ID, страной и canonical URL."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 100,
+      "selected": "country_panama",
+      "reason": "Страна и город объекта подтверждены каталогом и источником."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "probability": 100,
+      "selected": "destination_panama_panama_siti",
+      "reason": "Страна и город объекта подтверждены каталогом и источником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q712335",
+      "reason": "Имя и объект в Панама-Сити совпадают; Wikipedia связывает точный Wikidata item и координаты, география согласована с первоисточником."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Panam%C3%A1_Viejo",
+      "reason": "Имя и объект в Панама-Сити совпадают; Wikipedia связывает точный Wikidata item и координаты, география согласована с первоисточником."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 98,
+      "selected": "https://www.patronatopanamaviejo.org/",
+      "reason": "Имя и объект в Панама-Сити совпадают; Wikipedia связывает точный Wikidata item и координаты, география согласована с первоисточником."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "9.0068286,-79.485149",
+      "reason": "Имя и объект в Панама-Сити совпадают; Wikipedia связывает точный Wikidata item и координаты, география согласована с первоисточником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/destinations/panama-viejo.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Проверены название, страна, канонический URL и свежий текст новой страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/destinations/panama-viejo.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/destinations/panama-viejo.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q712335",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Адресно проверена идентичность археологического комплекса или церкви; исторический город и действующая церковь не смешаны."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Panam%C3%A1_Viejo",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Адресно проверена идентичность археологического комплекса или церкви; исторический город и действующая церковь не смешаны."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.patronatopanamaviejo.org/",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Адресно проверена идентичность археологического комплекса или церкви; исторический город и действующая церковь не смешаны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Panam%C3%A1_Viejo",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Адресно проверена идентичность археологического комплекса или церкви; исторический город и действующая церковь не смешаны."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_panama_panama_siti"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q712335",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Panam%C3%A1_Viejo"
+    },
+    "officialUrl": "https://www.patronatopanamaviejo.org/"
+  },
+  "location": {
+    "latitude": 9.0068286,
+    "longitude": -79.485149,
+    "pointRole": "representative",
+    "coordinateSource": "https://es.wikipedia.org/wiki/Panam%C3%A1_Viejo"
+  }
+}

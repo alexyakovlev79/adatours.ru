@@ -2,13 +2,15 @@
 import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { reconcileMultiCountryRegistries } from '../src/lib/multi-country-registry.mjs';
-import { PHASE_FILES, compactRegistry } from './sync-multi-country-registries.mjs';
+import { PHASE_FILES, compactRegistry, readCatalogContent } from './sync-multi-country-registries.mjs';
+import { reconcileInterestRegistries } from '../src/lib/interest-registry-projection.mjs';
 
 const repo = process.env.GITHUB_REPOSITORY;
 const token = process.env.GH_TOKEN;
 const sourceSha = process.env.CATALOG_SOURCE_SHA ?? process.env.GITHUB_SHA;
 if (!repo || !token || !sourceSha) throw new Error('GitHub repository, runtime token and source SHA are required');
 const snapshot = JSON.parse(readFileSync('data/catalogues/multi-country.json', 'utf8'));
+const interestContent = await readCatalogContent();
 const base = 'https://api.github.com/repos/' + repo;
 const request = async (path, method = 'GET', body) => {
   const response = await fetch(base + path, { method, headers: {
@@ -41,7 +43,8 @@ for (const branch of ['main', 'seo-geo/staging']) {
       completed = true; break;
     }
     const sourceFiles = await Promise.all([...PHASE_FILES, 'index.json'].map((name) => fileAt('data/seo-geo/registry/' + name, head)));
-    const updated = reconcileMultiCountryRegistries(sourceFiles.slice(0, -1).map((file) => file.json), sourceFiles.at(-1).json, snapshot);
+    const interests = reconcileInterestRegistries(sourceFiles.slice(0, -1).map((file) => file.json), interestContent);
+    const updated = reconcileMultiCountryRegistries(interests, sourceFiles.at(-1).json, snapshot);
     const changes = [];
     for (let i = 0; i < PHASE_FILES.length; i++) if (JSON.stringify(updated.phases[i]) !== JSON.stringify(sourceFiles[i].json))
       changes.push({ path: 'data/seo-geo/registry/' + PHASE_FILES[i], mode: '100644', type: 'blob', content: compactRegistry(updated.phases[i]) });

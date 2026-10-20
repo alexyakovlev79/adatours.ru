@@ -13,7 +13,9 @@ lead: >-
 
 Каталог объединяет {{catalog.toursCountPhrase}}. Это [путешествие по 6 странам на 20 дней](/multi-country/tour/latin-america-6-countries-20-days/) и [поездка по 8 странам на 32 дня](/multi-country/tour/south-america-eight-countries-32-days/). Выбранные Боливия, Бразилия, Перу и Уругвай входят в более длинную последовательность через Аргентину и Чили; речь не идет о природном экспрессе только по четырем странам.
 
-{{catalog.tourTable:tour_latin_america_six_countries_20_days_2026,tour_south_america_eight_countries_32_days_2026}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/bolivia_brazil_peru_uruguay/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_south_america_eight_countries_32_days_2026}}
 
 ## Бразилия: водопады Игуасу и атлантический лес
 

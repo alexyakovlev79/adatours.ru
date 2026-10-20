@@ -53,7 +53,9 @@ lead: >-
 
 В [групповом туре по пяти странам](/multi-country/tour/latin-america-5-countries-group-tour-18-days/) природные дни Игуасу и лагун встроены в сравнительно плотный маршрут. [Путешествие по шести странам](/multi-country/tour/latin-america-6-countries-20-days/) добавляет Монтевидео. [Большой маршрут по восьми странам](/multi-country/tour/south-america-eight-countries-32-days/) расширяет природную географию до Эквадора, но одновременно увеличивает число перелетов и переездов.
 
-{{catalog.tourTable:tour_source_5_stran_latinskoj_ameriki,tour_latin_america_six_countries_20_days_2026,tour_south_america_eight_countries_32_days_2026}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/argentina_bolivia_brazil/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_south_america_eight_countries_32_days_2026}}
 
 Если важна только одна экосистема, сравните также [туры о природе в Бразилии](/interests/wildlife/tours/brazil/) и [туры о природе в Боливии](/interests/wildlife/tours/bolivia/). Три страны имеет смысл объединять, когда вы действительно хотите увидеть контраст между Атлантическим лесом и высокогорными озерами и готовы выделить время на полноценный межстрановой маршрут.
 

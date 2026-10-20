@@ -49,7 +49,9 @@ lead: >-
 
 [20-дневная программа через шесть стран](/multi-country/tour/latin-america-6-countries-20-days/) соединяет Игуасу, Монтевидео и северное Чили с Андским высокогорьем, зато не обещает Патагонию. [Большой 32-дневный маршрут](/multi-country/tour/south-america-eight-countries-32-days/) включает также Эквадор и Галапагосы, где предусмотрены самостоятельные природные остановки. Это существенно более длинная поездка, а не просто расширенная версия семнадцатидневного патагонского тура.
 
-{{catalog.tourTable:tour_source_tur_v_4_strany_yuzhnoj_ameriki,tour_source_vsya_argentina,tour_latin_america_six_countries_20_days_2026,tour_south_america_eight_countries_32_days_2026}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/argentina_brazil_chile_uruguay/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_south_america_eight_countries_32_days_2026}}
 
 Чтобы выбрать путешествие по экологическим зонам без привязки к этим четырем странам, откройте [мультистрановые туры по природе и животным](/multi-country/interests/wildlife/). Для более узкого акцента на юге полезны [природные поездки с Аргентиной](/interests/wildlife/tours/argentina/) и [туры с природными объектами Чили](/interests/wildlife/tours/chile/).
 

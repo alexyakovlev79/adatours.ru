@@ -45,7 +45,9 @@ lead: >-
 | [5 стран за 19 дней](/multi-country/tour/central-america-5-countries-19-days/) | Гватемальское высокогорье, Монтеверде, Ареналь и Каньо-Негро |
 | [8 стран за 26 дней](/multi-country/tour/central-america-8-countries-26-days/) | Леса, вулканы и водные экосистемы нескольких стран вплоть до Панамы |
 
-{{catalog.tourTable:tour_source_gvatemala_gonduras_el_salvador_beliz,tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh,tour_central_america_eight_countries_26_days}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/el-salvador_honduras/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_otbleski_tsentralnoj_ameriki_v_5_stranakh,tour_central_america_eight_countries_26_days}}
 
 Таким образом, выбор двух стран в каталоге помогает найти маршруты, в которых они присутствуют. А выбор интереса «Природа и животные» выделяет программу с природными впечатлениями **где-либо на полном маршруте**. Приоритетную страну наблюдения за природой нужно выбирать по конкретным дням.
 

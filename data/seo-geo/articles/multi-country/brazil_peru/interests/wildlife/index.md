@@ -46,7 +46,9 @@ lead: >-
 
 Сопоставьте реальные программы:
 
-{{catalog.tourTable:tour_brazil_argentina_peru_14d,tour_brazil_peru_argentina_group_15_days,tour_source_tur_v_peru_i_braziliyu}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/brazil_peru/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_braziliya_i_peru_na_novyj_god,tour_south_america_eight_countries_32_days_2026}}
 
 [14-дневный частный маршрут через Аргентину](/multi-country/tour/brazil-argentina-peru-14-days/) соединяет водопады и основные культурные объекты Перу. [15-дневная групповая поездка](/multi-country/tour/brazil-peru-argentina-group-15-days/) добавляет ледник Перито-Морено в Аргентине: природный блок здесь шире, но ледник расположен **не в Бразилии или Перу**. А [13-дневная поездка в Перу и Бразилию с пляжным отдыхом](/multi-country/tour/peru-machu-picchu-brazil-rio-beaches/) сочетает горы, водопады и океан без обязательной отдельной экспедиции по джунглям.
 

@@ -108,18 +108,33 @@
     "skippedArchived": 3
   },
   "releasePreparation": {
-    "updatedAt": "2026-10-20T15:21:28.043769+00:00",
+    "updatedAt": "2026-10-20T15:45:06.192958+00:00",
     "classificationCommit": "5ee60e90946a9122f679c757f2482b2dcf7956d3",
-    "status": "partial_not_deployed",
+    "status": "registries_and_table_repair_prepared_not_deployed",
     "natureHero": "/media/themes/nature/hero-generated-20261020-v1.webp",
     "natureHeroReceiptVerified": true,
     "independentVipCopyAndSeoGrammar": true,
     "unitTests": {
-      "passed": 349,
+      "passed": 351,
       "failed": 0
     },
-    "editorialReviewed": 7,
+    "editorialReviewed": 8,
     "auditPath": "data/migrations/interest-split-20261020/release-audit.json",
-    "next": "Complete remaining per-article semantic review; reconcile 368 new nature URLs and six unavailable wildlife URLs; full CI and cutover per release WORK."
+    "next": "Review remaining 524 semantic candidates; additional nature articles; final main/staging reconciliation and complete CI before cutover.",
+    "registryNewNatureUrls": 368,
+    "registryOtherNewUrls": 18,
+    "registryUnavailableWildlifeUrls": 6,
+    "registryTotalRows": 5613,
+    "tableScopeRepairedArticles": 40,
+    "removedOutOfScopeTableIds": 63,
+    "pendingSemanticReview": 524,
+    "newNatureArticlesPrepared": 1,
+    "articleLinkPreflight": {
+      "articles": 41,
+      "errors": 0
+    },
+    "thematicTablePreflight": {
+      "errors": 0
+    }
   }
 }

@@ -51,7 +51,9 @@ lead: >-
 
 [Маршрут «Суринам, Гайана, Французская Гвиана» на 14 дней](/multi-country/tour/suriname-guyana-french-guiana/) содержит наиболее продолжительную природную часть, включая дополнительные лесные участки Суринама и Кабалебо. Это выбор для тех, кто готов выделить больше времени на лодки, перемещения между отдаленными точками и проживание вдали от крупных городов.
 
-{{catalog.tourTable:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana,tour_source_priklyuchenie_v_gvianakh,tour_source_surinam_gajana_frantsuzskaya_gviana}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/french-guiana_guyana_suriname/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_priklyuchenie_v_gvianakh,tour_source_surinam_gajana_frantsuzskaya_gviana}}
 
 Чтобы сравнить эти же территории без тематического ограничения, откройте [полную подборку трех Гвиан](/multi-country/french-guiana_guyana_suriname/). Культурная версия путешествия подробно описана в [отдельном разделе об истории трех Гвиан](/multi-country/french-guiana_guyana_suriname/interests/culture-and-history/).
 

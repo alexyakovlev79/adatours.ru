@@ -45,7 +45,9 @@ lead: >-
 | [12 дней, 3 страны](/multi-country/tour/guatemala-honduras-belize/) | Лесные районы и Карибское море |
 | [26 дней, 8 стран](/multi-country/tour/central-america-8-countries-26-days/) | Природа Центральной Америки, включая Коста-Рику |
 
-{{catalog.tourTable:tour_source_gvatemala_gonduras_el_salvador_beliz,tour_source_gvatemala_gonduras_i_beliz,tour_central_america_eight_countries_26_days}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/belize_guatemala_honduras/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_gvatemala_gonduras_i_beliz,tour_central_america_eight_countries_26_days}}
 
 В [26-дневной программе от Мексики до Панамы](/multi-country/tour/central-america-8-countries-26-days/) Белиз представлен Караколем, пещерой Рио-Фрио и природными бассейнами Маунтин-Пайн-Ридж. В Гватемале есть Тикаль, Атитлан и вулкан Пакайя; в Гондурасе — Копан. При этом **самые выраженные наблюдения природы в поздней части этой поездки проходят уже в Коста-Рике**: Монтеверде, Ареналь и каналы Тортугеро. Они не принадлежат Белизу, Гватемале или Гондурасу только потому, что все страны объединены в одной программе.
 

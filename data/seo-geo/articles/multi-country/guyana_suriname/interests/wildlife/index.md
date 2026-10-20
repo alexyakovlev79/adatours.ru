@@ -54,7 +54,9 @@ lead: >-
 | [9 дней: Приключение в Гвианах](/multi-country/tour/guianas-adventure/) | Кайетур, Пеперпот, речной лес |
 | [14 дней по трем Гвианам](/multi-country/tour/suriname-guyana-french-guiana/) | Кабалебо, тропы, птицы, речные выходы |
 
-{{catalog.tourTable:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana,tour_source_priklyuchenie_v_gvianakh,tour_source_surinam_gajana_frantsuzskaya_gviana}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/guyana_suriname/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_priklyuchenie_v_gvianakh,tour_source_surinam_gajana_frantsuzskaya_gviana}}
 
 В 7-дневном туре путь проходит через Суринам, Французскую Гвиану и Гайану; времени на глубокое пребывание в лесу меньше. 9-дневный вариант добавляет речные поселения и больше лесной среды. 14-дневный рассчитан на путешественника, готового выделить несколько дней на внутренние районы Суринама, пешие выходы и перелет к отдаленной базе.
 

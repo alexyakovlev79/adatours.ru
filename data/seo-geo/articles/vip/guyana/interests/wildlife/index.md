@@ -46,7 +46,9 @@ lead: >-
 
 Состав и текущие параметры программ можно сравнить непосредственно по действующим данным сайта:
 
-{{catalog.tourTable:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana,tour_source_priklyuchenie_v_gvianakh,tour_source_surinam_gajana_frantsuzskaya_gviana}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/vip/guyana/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_priklyuchenie_v_gvianakh,tour_source_surinam_gajana_frantsuzskaya_gviana}}
 
 ## VIP-организация: комфорт на маршруте и реальные ограничения
 

@@ -47,7 +47,9 @@ lead: >-
 | 12 дней, юг Аргентины | Огненная Земля и водопады |
 | 14 дней, Амазония | Река, джунгли и Игуасу |
 
-{{catalog.tourTable:tour_source_argentina_and_brazil_ru,tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu,tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/argentina_brazil/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu}}
 
 Для сравнения программ по каждой стране посмотрите [природные маршруты с Аргентиной](/interests/wildlife/tours/argentina/) и [поездки с природной тематикой в Бразилии](/interests/wildlife/tours/brazil/). Проверьте, какие страны в конкретном туре основные, а какие указаны как дополнительное посещение.
 

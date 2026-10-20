@@ -3,6 +3,7 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
 import yaml from 'js-yaml';
+import { createHash } from 'node:crypto';
 import { readCatalogContent } from './sync-multi-country-registries.mjs';
 import { buildTourFilterIndex } from '../src/lib/tour-filters.mjs';
 import { buildVipFilterIndex } from '../src/lib/vip-filters.mjs';
@@ -66,6 +67,10 @@ const oldWildlifePaths = oldRows.filter(row => /\/interests\/wildlife\//.test(ro
 const retired = oldWildlifePaths.filter(row => !paths.has(row.url));
 const newNature = [...paths].filter(path => path.includes('/interests/nature/') && !byUrl.has(path)).sort();
 const affected = [];
+const editorial = json(`${migrationRoot}/editorial-decisions.json`).articles;
+const approvedReviews = new Map(editorial.filter(row => ['reviewed_for_interest_split', 'new_nature_article_prepared'].includes(row.decision))
+  .map(row => [row.articlePath, row.resultBlobSha]));
+const blobSha = raw => createHash('sha1').update('blob ' + Buffer.byteLength(raw) + '\0').update(raw).digest('hex');
 for (const file of files('data/seo-geo/articles').filter(file => file.endsWith('.md'))) {
   const raw = readFileSync(file, 'utf8'), targetPath = raw.match(/^targetPath:\s*(.+)$/m)?.[1]?.trim();
   const oldNameCount = [...raw.matchAll(/природа и животные/gi)].length;
@@ -76,7 +81,8 @@ for (const file of files('data/seo-geo/articles').filter(file => file.endsWith('
       ? path.replace('/interests/wildlife/', '/interests/nature/') : null }));
   if (wildlifeTarget || oldNameCount || brokenLinks.length) affected.push({ targetPath, articlePath: file,
     work: byUrl.get(targetPath)?.work ?? null, liveTarget: wildlifeTarget ? paths.has(targetPath) : null,
-    wildlifeTarget, oldNameCount, brokenLinks, editorialStatus: 'pending_individual_semantic_review' });
+    wildlifeTarget, oldNameCount, brokenLinks, editorialStatus: approvedReviews.get(file) === blobSha(raw)
+      ? 'reviewed_for_interest_split' : 'pending_individual_semantic_review' });
 }
 const claimStates = ['seo-geo/staging', 'seo-geo/voice-rewrite-staging'].map(ref => {
   const path = ref.includes('voice-') ? 'data/seo-geo/voice-rewrite/claims.json' : 'data/seo-geo/claims.json';
@@ -98,6 +104,8 @@ const report = { version: 1, checkedAt: new Date().toISOString(), sourceCommit: 
       multiCountry: multi.filter(row => row.themeId === 'theme_nature').length }, newNatureUrls: newNature,
     retiredWildlife: retired.map(row => ({ url: row.url, id: row.id, work: row.work, articlePath: row.articlePath ?? null })) },
   seo: { affected: affected.length, wildlifeTargets: affected.filter(row => row.wildlifeTarget).length,
+    pendingSemanticReview: affected.filter(row => row.editorialStatus === 'pending_individual_semantic_review').length,
+    reviewedCandidates: affected.filter(row => row.editorialStatus === 'reviewed_for_interest_split').length,
     liveWildlifeTargets: affected.filter(row => row.wildlifeTarget && row.liveTarget).length,
     oldNameArticles: affected.filter(row => row.oldNameCount).length,
     articlesWithRetiredLinks: affected.filter(row => row.brokenLinks.length).length, articles: affected },

@@ -48,7 +48,9 @@ lead: >-
 
 В [классическом туре по пяти странам на 18 дней](/multi-country/tour/latin-america-5-countries-group-tour-18-days/) на Игуасу выделены дни с двух сторон границы, а Боливия занимает два насыщенных джиповых этапа и продолжение через Ла-Пас. [20-дневный маршрут с Уругваем](/multi-country/tour/latin-america-6-countries-20-days/) расширяет географию и добавляет дни, но сам по себе не превращается в отдельную программу бердвотчинга. [32-дневное путешествие по восьми странам](/multi-country/tour/south-america-eight-countries-32-days/) идет дальше, к Эквадору и Галапагосским островам; эти объекты находятся **за пределами четырех стран текущего сочетания**, хотя входят в полный тур.
 
-{{catalog.tourTable:tour_source_5_stran_latinskoj_ameriki,tour_latin_america_six_countries_20_days_2026,tour_south_america_eight_countries_32_days_2026}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/argentina_bolivia_brazil_chile/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_south_america_eight_countries_32_days_2026}}
 
 За более широким выбором по теме можно перейти к [природным путешествиям по нескольким странам](/multi-country/interests/wildlife/). Отдельные каталоги помогают увидеть [природные туры с Бразилией](/interests/wildlife/tours/brazil/), [Аргентиной](/interests/wildlife/tours/argentina/), [Боливией](/interests/wildlife/tours/bolivia/) и [Чили](/interests/wildlife/tours/chile/), но тематическая метка всего тура не доказывает посещение природного объекта в каждой стране.
 

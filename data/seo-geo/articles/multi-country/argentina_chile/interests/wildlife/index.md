@@ -43,7 +43,9 @@ lead: >-
 | 13 дней по югу | Ушуайя, озера и горы |
 | 9 дней по фьордам | Каналы, ледники и побережье |
 
-{{catalog.tourTable:tour_source_prostory_patagonii_chili_i_argentina_v_odnom_puteshestvii,tour_source_argentina_chili_i_prekrasnaya_patagoniya,tour_source_patagoniya_i_chilijskie_fordy}}
+Таблица ниже сравнивает программы с включенными наблюдениями за дикими животными или птицами. Пейзажные маршруты без таких наблюдений можно сравнить в [подборке природных путешествий](/multi-country/argentina_chile/interests/nature/). В многострановом туре наблюдения могут проходить за пределами стран, вынесенных в название подборки: проверяйте полный маршрут и конкретные дни.
+
+{{catalog.tourTable:tour_source_roskoshnaya_patagoniya_10_dney,tour_source_chili_i_argentina_vip,tour_source_fordy_ognennoj_zemli}}
 
 ## Сезон, переезды и безопасность в природных парках
 

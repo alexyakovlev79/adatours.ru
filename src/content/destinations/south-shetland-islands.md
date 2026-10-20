@@ -8,7 +8,7 @@ countryId: "country_antarctica"
 destinationType: "island"
 summary: "Архипелаг включает множество островов, крупнейший из которых — Кинг-Джордж. Здесь расположены международные научные станции, служащие базами для исследований климата, океана, ледников и уникальных полярных экосистем. Другие острова архипелага практически не затронуты человеческой деятельностью и сохраняют свою суровую, почти нетронутую природу."
 searchAliases: ["yuzhnye-shetlandskie-ostrova"]
-themes: ["theme_wildlife", "theme_cruises"]
+themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
 hero: {"src": "/media/destinations/destination_antarctica_yuzhnye_shetlandskie_ostrova/original-01.png", "alt": "Пингвины на скалистом берегу Южных Шетландских островов перед льдом на воде и снежными горами, Антарктида", hover: "Южные Шетландские острова: пингвины у моря среди льда и гор"}
 gallery: []
 facts: []

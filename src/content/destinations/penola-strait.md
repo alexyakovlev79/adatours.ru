@@ -12,9 +12,7 @@ hero:
   hover: "Пролив Пенола: отражения снежных берегов в спокойной воде"
   alt: "Пролив Пенола с дрейфующими льдинами между заснеженными скалами, Антарктида"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -8,7 +8,7 @@ countryId: "country_argentina"
 destinationType: "national_park"
 summary: "Национальный парк Лос-Кардонес"
 searchAliases: ["Лос-Кардонес", "Los Cardones", "nacionalnyj-park-los-kardones"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 hero: {"src": "/media/destinations/destination_argentina_nacionalnyj_park_los_kardones/original-01.jpg", "alt": "Деревянный знак парка Лос-Кардонес у дороги под серыми облаками, Аргентина", hover: "Лос-Кардонес: знак на каменных опорах перед горными склонами"}
 gallery: []
 facts: []

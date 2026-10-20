@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-excursion-excursion_panama_casco_viejo_group_walk",
+  "stableId": "excursion_panama_casco_viejo_group_walk",
+  "kind": "excursion",
+  "canonicalPath": "/panama/casco-viejo/casco-viejo-group-walk/",
+  "sourceFingerprint": "d596a40b081afb0d88e8c6000cb2ae1d306bbdab8745b7638fd60005c87f1936",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Каско-Вьехо: прогулка с англоговорящим гидом",
+      "reason": "Новая самостоятельная сущность точно сопоставлена с проверенной программой Анны, stable ID, страной и canonical URL."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 100,
+      "selected": "country_panama",
+      "reason": "Страна и город объекта подтверждены каталогом и источником."
+    },
+    {
+      "field": "relationships.destination_panama_casco_viejo",
+      "probability": 100,
+      "selected": "destination_panama_casco_viejo",
+      "reason": "Место прямо указано в соответствующей части проверенной программы; порядок взят из маршрута."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/casco-viejo-group-walk.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Проверены название, страна, канонический URL и свежий текст новой страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/casco-viejo-group-walk.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_casco_viejo",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/excursions/casco-viejo-group-walk.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "identity",
+      "sourceUrl": "https://es.tourismpanama.com/lugares-para-visitar/ciudad-de-panama/cosas-para-hacer/sitios-historicos/casco-antiguo/",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Внешний контекст названного места/формата проверен в интернете. Маршрут и коммерческие условия берутся только из Word Анны, без присвоения внешнего QID турпродукту."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_panama_casco_viejo",
+      "position": 1,
+      "optional": false
+    }
+  ]
+}

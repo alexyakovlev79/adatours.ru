@@ -13,8 +13,7 @@ hero:
   hover: "Лагуна Амарга: прозрачная вода на фоне гор Пайне"
   alt: "Бирюзовая лагуна Амарга с белым минеральным берегом перед острыми вершинами Пайне, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

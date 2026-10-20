@@ -9,9 +9,7 @@ destinationType: resort
 summary: Триндаде рядом с Парати соединяет океанские пляжи, Атлантический лес и природный бассейн среди скал.
 searchAliases:
 - trindadi-parati
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_trindadi_parati/hero-generated-20261008-next20.webp
   hover: "Триндади у Парати: бирюзовая вода между прибрежными валунами"

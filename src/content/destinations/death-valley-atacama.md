@@ -12,8 +12,7 @@ hero:
   hover: "Атакама: дюна и охристые хребты в теплом вечернем свете"
   alt: "Оранжевая песчаная дюна среди скальных гребней Долины Смерти в Атакаме, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

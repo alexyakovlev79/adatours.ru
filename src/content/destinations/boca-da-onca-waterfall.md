@@ -12,9 +12,7 @@ hero:
   alt: "Водопад Бока-да-Онса у отвесной скалы среди леса Серра-да-Бодокена, Бразилия"
   hover: "Серра-да-Бодокена в Бразилии: водопад Бока-да-Онса"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_brazil_vodopad_boka_da_onsa.md
 updatedAt: '2026-10-08'
 ---

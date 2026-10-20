@@ -15,8 +15,7 @@ hero:
   hover: "Ледник Грей: ледяной фронт под пасмурными горами"
   alt: "Голубая стена ледника Грей и льдины на темной воде озера, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -10,8 +10,7 @@ summary: Тиририка в Амазонии входит в маршруты �
 searchAliases:
 - Тиририка
 - tiririka-amazoniya
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_tiririka_amazoniya/destination_brazil_tiririka_amazoniya-generated-20261008.webp
   hover: "Тиририка: лес и светлая полоса песка вдоль реки"

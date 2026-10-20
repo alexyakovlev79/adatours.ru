@@ -9,8 +9,7 @@ destinationType: city
 summary: Вила-да-Маромба в районе Висконди-де-Мауа связана с прогулками к водопадам и природным бассейнам.
 searchAliases:
 - Маромба
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_vila_da_maromba/hero-generated-20261008-next20.webp
   alt: "Каменистая река у лесистых склонов и домов Вила-да-Маромбы, Бразилия"

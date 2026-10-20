@@ -12,9 +12,7 @@ hero:
   alt: "Сако-ду-Мамангуа между лесистыми горными берегами, Бразилия"
   hover: "Сако-ду-Мамангуа в Бразилии: длинный морской залив среди зеленых холмов"
 gallery: []
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_brazil_sako_du_mamangua.md
 updatedAt: '2026-10-08'
 ---

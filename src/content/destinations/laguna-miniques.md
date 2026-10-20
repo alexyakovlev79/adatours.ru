@@ -10,8 +10,7 @@ summary: Лагуна Миньикес — высокогорное озеро �
 searchAliases:
 - Озеро Минике
 - laguna-minikes
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_chile_laguna_minikes/hero-generated-20261008-resumed-v1.webp
   alt: "Синяя лагуна Миньикес среди сухих горных склонов, Чили"

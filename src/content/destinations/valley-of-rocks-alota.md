@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Долина Скал у Алоты входит в маршрут по юго-западу Боливии и знакомит с каменными ландшафтами высокогорья.
 searchAliases:
 - dolina-skal-alota
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_dolina_skal_alota/hero-generated-20261008.webp
   alt: "Выветренные каменные останцы на сухой равнине у Алоты, Боливия"

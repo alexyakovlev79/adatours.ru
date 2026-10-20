@@ -10,8 +10,7 @@ summary: Лагуна Хонда входит в высокогорный мар
 searchAliases:
 - Лагуна Онда
 - Honda
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_laguna_honda/hero-generated-20261008.webp
   hover: "Лагуна Хонда: высокогорное озеро с птицами у берега"

@@ -9,9 +9,7 @@ destinationType: city
 summary: Копакабана на боливийском берегу Титикаки служит отправной точкой лодочной поездки на остров Солнца.
 searchAliases:
 - kopakabana
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_kopakabana/hero-generated-20261008.webp
   alt: "Лодки на озере Титикака перед городом Копакабана, Боливия"

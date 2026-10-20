@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Пустыня Силоли входит в высокогорные маршруты Боливии вместе с лагунами и вулканическими ландшафтами региона Липес.
 searchAliases:
 - pustynya-siloli
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_pustynya_siloli/hero-generated-20261008.webp
   hover: "Силоли: причудливая каменная форма на фоне сухих гор"

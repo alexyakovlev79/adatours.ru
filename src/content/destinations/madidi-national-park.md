@@ -9,9 +9,7 @@ destinationType: national_park
 summary: В национальном парке Мадиди лодочные маршруты по реке Туичи сменяются прогулками по амазонским джунглям.
 searchAliases:
 - nacionalnyj-park-madidi
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 hero:
   src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-07-generated-20261008-v1.webp
   alt: "Нос деревянной лодки на реке Туичи среди леса парка Мадиди, Боливия"

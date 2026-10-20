@@ -9,9 +9,7 @@ destinationType: city
 summary: Рурренабак, отправная точка путешествия по боливийской Амазонии, соединяет авиаперелет с лодочными маршрутами по Бени.
 searchAliases:
 - rurrenabak
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 hero:
   src: /media/destinations/destination_bolivia_rurrenabak/hero-generated-20261008.webp
   hover: "Рурренабак: речная набережная перед лесистыми горами"

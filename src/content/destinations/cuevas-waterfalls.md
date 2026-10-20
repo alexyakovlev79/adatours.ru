@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Водопады Куэвас входят в природную часть путешествия по району Самаипаты в Боливии.
 searchAliases:
 - vodopady-kuevas
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_vodopady_kuevas/hero-generated-20261008.webp
   hover: "Куэвас: вода стекает по скале в тихий лесной бассейн"

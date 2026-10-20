@@ -10,8 +10,7 @@ summary: Заповедник Эдуардо-Авароа включен в ма
 searchAliases:
 - Эдуардо Авароа
 - nacionalnyj-zapovednik-eduardo-avaroa
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa/hero-generated-20261008.webp
   hover: "Эдуардо-Авароа: голубая лагуна, белые берега и фламинго"

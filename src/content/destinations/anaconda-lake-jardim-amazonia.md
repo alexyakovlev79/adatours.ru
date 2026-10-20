@@ -10,8 +10,7 @@ summary: Озеро Анаконда — направление прогулки
 searchAliases:
 - Anaconda Lake — Jardim da Amazônia
 - Озеро Анаконда у Jardim da Amazônia
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010-enhanced-20261011-doc-v1.webp
   hover: "Амазония: густые лесистые берега отражаются в тихой воде"

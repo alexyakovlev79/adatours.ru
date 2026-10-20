@@ -9,9 +9,7 @@ destinationType: natural_area
 summary: Боливийская часть озера Титикака входит в маршруты через Копакабану и остров Солнца.
 searchAliases:
 - ozero-titikaka-boliviya
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 hero:
   src: /media/destinations/destination_bolivia_ozero_titikaka_boliviya/hero-generated-20261008.webp
   hover: "Титикака: каменные террасы на склоне над озером"

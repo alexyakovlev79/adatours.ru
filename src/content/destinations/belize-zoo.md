@@ -12,9 +12,7 @@ hero:
   hover: "Зоопарк Белиза: тапир среди тропической зелени"
   alt: "Тапир среди густой зеленой растительности в естественном лесном окружении Зоопарка Белиза"
 gallery: []
-themes:
-- theme_wildlife
-- theme_family
+themes: ["theme_family"]
 facts: []
 featureBands: []
 relatedDestinations: []

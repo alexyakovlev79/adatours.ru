@@ -12,8 +12,7 @@ searchAliases:
 - Эдьонда
 - Hedionda
 - Лагуна Эдионда
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_laguna_hedionda/hero-generated-20261008.webp
   alt: "Фламинго на мелководье Лагуны Эдионда на фоне сухих горных склонов, Боливия"

@@ -12,8 +12,7 @@ hero:
   alt: "Сухая соляная равнина Чигуана с темными горами на горизонте, Боливия"
   hover: "Чигуана в Боливии: светлая соляная поверхность и далекие вулканические горы"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - solonchak-chiguana
 sourceSnapshot: data/source-index/materials/destination_bolivia_solonchak_chiguana.md

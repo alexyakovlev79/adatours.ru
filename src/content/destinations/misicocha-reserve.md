@@ -12,8 +12,7 @@ hero:
   alt: "Узкая тропа среди крупных деревьев и густой зелени леса Мисикоча, Эквадор"
   hover: "Мисикоча в Эквадоре: корни тропических деревьев вдоль лесной тропы"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

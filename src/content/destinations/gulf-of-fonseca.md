@@ -12,8 +12,7 @@ hero:
   alt: "Рыбацкая лодка и зеленые острова залива Фонсека, Эль-Сальвадор"
   hover: "Залив Фонсека: небольшая лодка у берега и островные горы вдали"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

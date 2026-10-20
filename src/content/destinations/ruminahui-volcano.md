@@ -12,8 +12,7 @@ hero:
   hover: "Руминяуи: острые вершины над открытыми травянистыми склонами"
   alt: "Темный скалистый гребень Руминяуи над высокогорными травами, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

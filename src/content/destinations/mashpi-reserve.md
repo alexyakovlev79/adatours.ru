@@ -12,8 +12,7 @@ hero:
   hover: "Машпи: тропа среди папоротников и деревьев над туманной долиной"
   alt: "Узкая лесная тропа и влажные зеленые склоны заповедника Машпи, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

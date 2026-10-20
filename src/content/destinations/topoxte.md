@@ -12,9 +12,7 @@ hero:
   alt: "Небольшой каменный храм Топоксте у лесистого берега озера Якша, Гватемала"
   hover: "Топоксте в Гватемале: лестница древнего храма майя и озеро за деревьями"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

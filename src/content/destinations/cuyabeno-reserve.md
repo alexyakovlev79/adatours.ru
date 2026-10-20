@@ -12,8 +12,7 @@ hero:
   alt: "Человек в каноэ среди затопленного леса заповедника Куябено, Эквадор"
   hover: "Куябено в Эквадоре: темная вода и высокие стволы вокруг узкого каноэ"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

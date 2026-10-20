@@ -12,8 +12,7 @@ hero:
   hover: "Руко-Пичинча: горная тропа над облаками"
   alt: "Тропа по травянистому гребню к скалистой вершине Руко-Пичинча, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

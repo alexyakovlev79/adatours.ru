@@ -12,8 +12,7 @@ hero:
   hover: "Илинисас: снежные и скалистые вершины над золотистыми травами"
   alt: "Две вершины Илинисы над травянистым высокогорьем, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -12,10 +12,7 @@ hero:
   hover: "Канделярия: скальные натеки и камни в большой пещере"
   alt: "Известняковый зал пещер Канделярия с дневным светом у входа, Гватемала"
 gallery: []
-themes:
-- theme_wildlife
-- theme_culture
-- theme_adventure
+themes: ["theme_nature", "theme_culture", "theme_adventure"]
 searchAliases:
 - peschera-kandelyariya
 sourceSnapshot: data/source-index/materials/destination_guatemala_peschera_kandelyariya.md

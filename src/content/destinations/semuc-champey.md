@@ -12,9 +12,7 @@ hero:
   hover: "Семук-Чампей: ступенчатые бассейны с высоты лесного склона"
   alt: "Бирюзовые природные бассейны Семук-Чампея среди тропического леса, Гватемала"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - semuk-champej
 sourceSnapshot: data/source-index/materials/destination_guatemala_semuk_champej.md

@@ -12,9 +12,7 @@ hero:
   alt: "Моторная лодка на реке Рио-Дульсе между высокими лесистыми скалами, Гватемала"
   hover: "Рио-Дульсе в Гватемале: спокойная зеленая вода среди тропического каньона"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -10,9 +10,7 @@ destinationName: Рио-де-Жанейро
 relatedDestinations:
 - destination_brazil_tijuca_national_park
 - destination_brazil_corcovado_christ_the_redeemer
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 route:
 - Лес Тижука
 - Корковаду

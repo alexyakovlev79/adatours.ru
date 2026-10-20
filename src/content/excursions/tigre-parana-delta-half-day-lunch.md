@@ -8,9 +8,7 @@ country: country_argentina
 destination: destination_argentina_tigre
 destinationName: Тигре
 relatedDestinations: []
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 language: []
 lead: Водные пути, острова и дома у берега в Тигре и дельте Параны. Полудневная экскурсия с гидом, билетами и обедом.
 hero:

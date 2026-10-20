@@ -9,9 +9,7 @@ destination: destination_brazil_angra_dos_reis
 destinationName: Ангра-дус-Рейс
 relatedDestinations:
 - destination_brazil_ilha_grande
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 route:
 - Ангра-дус-Рейс
 - Острова и пляжи бухты

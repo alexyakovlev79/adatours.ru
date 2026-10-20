@@ -9,8 +9,7 @@ destination: destination_brazil_tijuca_national_park
 destinationName: Национальный парк Тижука
 relatedDestinations:
 - destination_brazil_rio
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 route:
 - Тропический лес Тижука
 - Водопады

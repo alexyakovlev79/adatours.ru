@@ -18,9 +18,7 @@ destinationName: Тепуй Куравайна
 relatedDestinations:
 - destination_venezuela_pozo_azul_canaima
 sourceSnapshot: https://docs.google.com/document/d/1l3NZVOJImL-ZtZAmlFjBDPrOpyMT2C56/edit
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/countries/venezuela/block-096-generated-20261011-dedup-v1.webp
   alt: Саванна и тепуи с вершины Куравейны у Канаймы, Венесуэла

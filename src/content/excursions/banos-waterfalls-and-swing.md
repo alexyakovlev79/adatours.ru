@@ -14,9 +14,7 @@ relatedDestinations:
 - destination_ecuador_riobamba
 - destination_ecuador_kanon_pastasa
 - destination_ecuador_casa_del_arbol
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 duration: 8–9 часов с переездом в Риобамбу
 language:
 - русский

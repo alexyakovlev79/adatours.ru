@@ -11,9 +11,7 @@ relatedDestinations:
 - destination_ecuador_riobamba
 - destination_ecuador_ingapirka
 - destination_ecuador_kuenka
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_wildlife", "theme_culture", "theme_nature"]
 duration: 11–12 часов с переездами
 language:
 - русский

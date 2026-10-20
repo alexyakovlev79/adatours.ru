@@ -11,9 +11,7 @@ relatedDestinations:
 - destination_ecuador_kito_vulkan_kotopahi
 - destination_ecuador_tigua
 - destination_ecuador_banos
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 duration: 11 часов с переездами
 hero:
   src: /media/tours/complete-ecuador-new-year/word-13-20261009-v1-enhanced-20261011-doc-v1.webp

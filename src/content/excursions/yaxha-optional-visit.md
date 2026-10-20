@@ -8,9 +8,7 @@ country: country_guatemala
 destination: destination_guatemala_yaksha
 destinationName: Якша
 relatedDestinations: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 format: Дополнительная экскурсия по запросу
 hero:
   src: /media/destinations/yaxha/hero-generated-20261008.webp

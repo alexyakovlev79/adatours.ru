@@ -2487,13 +2487,19 @@
         ],
         "themes": [
           "theme_beach",
-          "theme_culture"
+          "theme_culture",
+          "theme_wildlife"
         ]
       },
       "status": "done",
-      "evidence": "Включены частная лодка по Илья-Гранде, Игуасу и ландшафтно-этнографический маршрут Анавильянас. Дельфины на обратном пути лишь возможная встреча; близкое плавание с ними на следующий день явно предлагается как дополнение, обязательной программы фауны нет.",
+      "evidence": "День 8, собственный contentBlocks: после ужина лодочная прогулка для наблюдения ночных животных в Mirante do Gavião; отдельной доплаты не указано, общие экскурсии включены. Включены также Игуасу, Анавильянас и Илья-Гранде. Плавание с дельфинами дня 10 факультативно и не использовано как основание.",
       "note": "Own production program reviewed; MD, exact entry and compact catalog validated.",
-      "batchId": "tour-009"
+      "batchId": "tour-031",
+      "correction": {
+        "previousBatchId": "tour-009",
+        "sourceBlobSha": "15da06f593793556443269ac4609701a83d4413b",
+        "reason": "Own contentBlocks night wildlife program was omitted by initial text reader."
+      }
     },
     "tour:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu_s_alagoas": {
       "type": "tour",
@@ -8626,6 +8632,86 @@
       "evidence": "День 6: включенная прогулка с гидом по горным ландшафтам Эрнесто-Торнкист и смотровым точкам. Профессиональное животноводство не сафари.",
       "note": "Own production program reviewed; MD, exact entry and compact catalog validated.",
       "batchId": "tour-030"
+    },
+    "tour:tour_source_argentina_chili_boliviya": {
+      "type": "tour",
+      "id": "tour_source_argentina_chili_boliviya",
+      "contentPath": "src/content/tours/argentina-chili-boliviya.md",
+      "sourceBlobSha": "be6e15392216fdce9ff79d9ba822035cff55f403",
+      "before": {
+        "primaryThemes": [
+          "theme_wildlife",
+          "theme_culture"
+        ],
+        "themes": []
+      },
+      "after": {
+        "primaryThemes": [
+          "theme_wildlife",
+          "theme_culture"
+        ],
+        "themes": []
+      },
+      "status": "skipped_archived",
+      "evidence": "data/catalog-archive.json: Программы и услуги обеих страниц полностью совпадают; сохранена patagonia-uyuni-salt-flats-12-days, существующие SEO-рекомендации перенесены. Прямое поручение пользователя свести один Word к одному активному туру.",
+      "note": "Archived MD and source records preserved without edits.",
+      "batchId": "tour-031"
+    },
+    "tour:tour_source_tur_v_braziliyu_za_vkusami": {
+      "type": "tour",
+      "id": "tour_source_tur_v_braziliyu_za_vkusami",
+      "contentPath": "src/content/tours/tur-v-braziliyu-za-vkusami.md",
+      "sourceBlobSha": "527e37ee6f79fcda939c994c602723571ee68ec9",
+      "before": {
+        "primaryThemes": [
+          "theme_culture",
+          "theme_beach"
+        ],
+        "themes": [
+          "theme_wildlife"
+        ]
+      },
+      "after": {
+        "primaryThemes": [
+          "theme_culture",
+          "theme_beach"
+        ],
+        "themes": [
+          "theme_wildlife"
+        ]
+      },
+      "status": "skipped_archived",
+      "evidence": "data/catalog-archive.json: Сохранён flavors-of-brazil с более полными днями и длительностью экскурсий; частные лодочные трансферы и условия цен приведены к Word. Прямое поручение пользователя свести один Word к одному активному туру.",
+      "note": "Archived MD and source records preserved without edits.",
+      "batchId": "tour-031"
+    },
+    "tour:tour_source_meksika_fantasticheskaya": {
+      "type": "tour",
+      "id": "tour_source_meksika_fantasticheskaya",
+      "contentPath": "src/content/tours/meksika-fantasticheskaya.md",
+      "sourceBlobSha": "3f401dd928f82e146a7756e0d8045f065918aeca",
+      "before": {
+        "primaryThemes": [
+          "theme_culture",
+          "theme_beach"
+        ],
+        "themes": [
+          "theme_wildlife"
+        ]
+      },
+      "after": {
+        "primaryThemes": [
+          "theme_culture",
+          "theme_beach"
+        ],
+        "themes": [
+          "theme_wildlife"
+        ]
+      },
+      "status": "skipped_archived",
+      "evidence": "data/catalog-archive.json: Прямая команда пользователя 15.10.2026: «P103 архивируй версию тура без цены». Выбрана страница «Мексика Фантастическая» без priceFrom. Страница «Фантастический Тур по Мексике» с ценой 4046 USD остаётся активной. Порядок дней различается; duplicateOf не установлен, тождество программ не подтверждено. Активная страница сохранена; все 12 дней приведены к Word P103, обе цены 4046/5209 подтверждены полным DOCX. Архивная страница сохранена как дубль обновлённой программы.",
+      "note": "Archived MD and source records preserved without edits.",
+      "batchId": "tour-031"
     }
   }
 }

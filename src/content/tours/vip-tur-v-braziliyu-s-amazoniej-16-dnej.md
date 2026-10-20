@@ -470,7 +470,7 @@ routeDestinations:
 - destination_brazil_santu_antoniu_amazoniya
 - destination_brazil_tiririka_amazoniya
 primaryThemes: ["theme_events", "theme_nature"]
-themes: ["theme_beach", "theme_culture"]
+themes: ["theme_beach", "theme_culture", "theme_wildlife"]
 ---
 
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T16:10:41.843Z",
+  "updatedAt": "2026-10-20T16:11:30.097Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -5849,103 +5849,173 @@
       "generation": 1
     },
     "https://vipdeluxetravel.ru/dominikanskaya-respublika-ru": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "https://adatours.ru/dominican-republic/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/dominikanskaya-respublika-ru (fetched), title Отдых в Доминикане: когда лучше ехать? | Туроператор Ada Tours",
+        "Canonical Ada Tours identity for same geographic subject country_dominican_republic (Доминикана): candidate https://adatours.ru/dominican-republic/",
+        "Country/Destination MD approved and same geographic subject."
+      ],
+      "note": "Corresponding active place/country detail or existing nonempty catalog. Verify live HTTP target before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/dominikanskaya-respublika-ru/packages": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/dominikanskaya-respublika-ru/packages (empty_html), title (none, empty list)",
+        "Canonical Ada Tours identity for same geographic subject country_dominican_republic (Доминикана): candidate https://adatours.ru/dominican-republic/tour/",
+        "The old tour catalog served 200 with an empty body; matching RU catalog has 0 active related products and is generated only if nonempty."
+      ],
+      "note": "No equivalent active RU filtered catalog; choose place/country fallback or 410 only after manual decision.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/dominikanskaya-respublika-ru/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/dominikanskaya-respublika-ru/ekskursii (empty_html), title (none, empty list)",
+        "Canonical Ada Tours identity for same geographic subject country_dominican_republic (Доминикана): candidate https://adatours.ru/dominican-republic/excursion/",
+        "The old excursion catalog served 200 with an empty body; matching RU catalog has 0 active related products and is generated only if nonempty."
+      ],
+      "note": "No equivalent active RU filtered catalog; choose place/country fallback or 410 only after manual decision.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname (fetched), title Пляжные туры и экскурсии на Жемчужные острова в Панаме",
+        "Canonical Ada Tours identity for same geographic subject destination_panama_zhemchuzhnye_ostrova (Жемчужные Острова): candidate https://adatours.ru/panama/place/pearl-islands/",
+        "No active Destination MD has been published for this named place, so the suggested canonical does not serve a page."
+      ],
+      "note": "Destination source entry exists, but the production MD is absent. Do not issue 301 to a nonpublished page.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname/packages": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname/packages (empty_html), title (none, empty list)",
+        "Canonical Ada Tours identity for same geographic subject destination_panama_zhemchuzhnye_ostrova (Жемчужные Острова): candidate https://adatours.ru/panama/place/pearl-islands/tour/",
+        "No active Destination MD has been published for this named place, so the suggested canonical does not serve a page."
+      ],
+      "note": "Destination source entry exists, but the production MD is absent. Do not issue 301 to a nonpublished page.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname/ekskursii (empty_html), title (none, empty list)",
+        "Canonical Ada Tours identity for same geographic subject destination_panama_zhemchuzhnye_ostrova (Жемчужные Острова): candidate https://adatours.ru/panama/pearl-islands/",
+        "No active Destination MD has been published for this named place, so the suggested canonical does not serve a page."
+      ],
+      "note": "Destination source entry exists, but the production MD is absent. Do not issue 301 to a nonpublished page.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "https://adatours.ru/brazil/place/jericoacoara/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii (fetched), title Жерикоакоара, Бразилия: достопримечательности и путеводитель по курорту",
+        "Canonical Ada Tours identity for same geographic subject destination_brazil_jericoacoara (Жерикоакоара): candidate https://adatours.ru/brazil/place/jericoacoara/",
+        "Country/Destination MD approved and same geographic subject."
+      ],
+      "note": "Corresponding active place/country detail or existing nonempty catalog. Verify live HTTP target before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii/packages": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii/packages (empty_html), title (none, empty list)",
+        "Canonical Ada Tours identity for same geographic subject destination_brazil_jericoacoara (Жерикоакоара): candidate https://adatours.ru/brazil/place/jericoacoara/tour/",
+        "The old tour catalog served 200 with an empty body; matching RU catalog has 0 active related products and is generated only if nonempty."
+      ],
+      "note": "No equivalent active RU filtered catalog; choose place/country fallback or 410 only after manual decision.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii/ekskursii (empty_html), title (none, empty list)",
+        "Canonical Ada Tours identity for same geographic subject destination_brazil_jericoacoara (Жерикоакоара): candidate https://adatours.ru/brazil/jericoacoara/",
+        "The old excursion catalog served 200 with an empty body; matching RU catalog has 0 active related products and is generated only if nonempty."
+      ],
+      "note": "No equivalent active RU filtered catalog; choose place/country fallback or 410 only after manual decision.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-p3-20261020-cf9e54",
-      "token": "lease-vip-p3-20261020-fa612d",
+      "ruUrl": "https://adatours.ru/peru/place/ica/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:11:30.097Z",
+      "evidence": [
+        "Archived VIP crawl 19 Oct 2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru (fetched), title Ика и Уакачина, Перу: достопримечательности и путеводитель по оазису",
+        "Canonical Ada Tours identity for same geographic subject destination_peru_ika (Ика): candidate https://adatours.ru/peru/place/ica/",
+        "Country/Destination MD approved and same geographic subject."
+      ],
+      "note": "Corresponding active place/country detail or existing nonempty catalog. Verify live HTTP target before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
-      "claimedAt": "2026-10-20T16:03:57.980Z",
-      "expiresAt": "2026-10-20T17:03:57.980Z",
+      "ownerId": "reverse-vip-p3-20261020-cf9e54",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru/packages": {
@@ -6284,6 +6354,24 @@
         "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-gajany-gorod-dzhordzhtaun-georgetown/ekskursii"
       ],
       "savedAt": "2026-10-20T16:10:41.843Z"
+    },
+    "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb-part-04.json": {
+      "batchId": "reverse-vipdeluxetravel-ru-mvgvi6qk-221gmzgb",
+      "part": 4,
+      "count": 10,
+      "urls": [
+        "https://vipdeluxetravel.ru/dominikanskaya-respublika-ru",
+        "https://vipdeluxetravel.ru/dominikanskaya-respublika-ru/packages",
+        "https://vipdeluxetravel.ru/dominikanskaya-respublika-ru/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-island-v-paname/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-zherikoakoara-morskoj-kurort-v-brazilii/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ika-v-peru"
+      ],
+      "savedAt": "2026-10-20T16:11:30.097Z"
     }
   }
 }

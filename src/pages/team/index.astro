@@ -6,6 +6,7 @@ import PersonProfile from '../../components/proof/PersonProfile.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
+import team from '../../data/organization/team.json';
 
 const teamPhoto = '/media/people/team/team-group-enhanced-20261007.webp';
 const people = await getCollection('people', ({ data }) =>
@@ -18,49 +19,8 @@ const renderedPeople = await Promise.all(
   })
 );
 
-// Names and responsibilities from the official Ada Tours team introduction.
-const colleagues = [
-  {
-    name: 'Александра',
-    role: 'Менеджер по путешествиям',
-    text: 'Живет в Бразилии. Организует поездки по стране и другим направлениям Латинской Америки, любит исследовать новые места.',
-  },
-  {
-    name: 'Наталия',
-    role: 'Карибы, Доминикана, Куба и Мексика',
-    text: 'Занимается маршрутами по Карибскому региону и Латинской Америке, в том числе поездками со сложной программой.',
-  },
-  {
-    name: 'Иона Алвес',
-    role: 'Координатор поездок',
-    text: 'Работает в туризме с 2009 года. Любит знакомиться с разными культурами и путешествовать активно.',
-  },
-  {
-    name: 'Никита',
-    role: 'Операционный менеджер',
-    text: 'Родом из Москвы, живет и работает с командой в Рио-де-Жанейро. Увлекается мотопутешествиями, дайвингом и сноубордом.',
-  },
-  {
-    name: 'Джована',
-    role: 'Помощник координатора',
-    text: 'Родом из Рио-де-Жанейро. Выбрала туризм, чтобы знакомить людей с любимым городом и помогать воплощать мечты о путешествиях.',
-  },
-  {
-    name: 'Армине',
-    role: 'Контент и разработка туров',
-    text: 'Из Армении. Вместе с Ada Tours открыла для себя Бразилию и Латинскую Америку и освоила работу в туризме.',
-  },
-  {
-    name: 'Ольга',
-    role: 'Маркетинг',
-    text: 'Живет в Нидерландах, много путешествовала по Латинской Америке. Среди ее поездок был 5-дневный поход к Затерянному городу в Колумбии.',
-  },
-  {
-    name: 'Даниэль',
-    role: 'Финансовый директор',
-    text: 'Занимается финансами Ada Tours. В жизни особенно ценит семью и свободу, интересуется новыми технологиями.',
-  },
-];
+const colleagues = team.members;
+
 ---
 
 <BaseLayout
@@ -123,10 +83,22 @@ const colleagues = [
     </div>
     <div class="team-grid">
       {colleagues.map((person) => (
-        <article class="team-member">
+        <article class="team-member" id={person.id}>
+          <img
+            class="team-member__photo"
+            src={withBase(person.photo.src)}
+            alt={person.photo.alt}
+            title={person.photo.hover}
+            width={person.photo.width}
+            height={person.photo.height}
+            loading="lazy"
+            decoding="async"
+          />
           <h3>{person.name}</h3>
           <p class="team-member__role">{person.role}</p>
-          <p>{person.text}</p>
+          <div class="team-member__bio">
+            {person.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
         </article>
       ))}
     </div>
@@ -203,6 +175,17 @@ const colleagues = [
     border-top: 1px solid var(--color-line);
   }
 
+  .team-member__photo {
+    display: block;
+    width: min(100%, 360px);
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .team-member__bio p {
+    margin: 0 0 1em;
+  }
+
   .team-member h3 {
     margin: 0 0 10px;
     font-size: clamp(1.4rem, 2.5vw, 2rem);
@@ -213,7 +196,7 @@ const colleagues = [
     margin: 0 0 18px;
   }
 
-  .team-member p:last-child {
+  .team-member__bio p:last-child {
     margin: 0;
     max-width: 600px;
   }

@@ -277,7 +277,7 @@ routeDestinations:
 - destination_colombia_santa_marta
 - destination_colombia_nacionalnyj_park_tajrona
 primaryThemes: ["theme_culture", "theme_gastronomy_wine"]
-themes: ["theme_wildlife", "theme_coffee"]
+themes: ["theme_nature", "theme_coffee"]
 ---
 
 

@@ -351,7 +351,7 @@ routeDestinations:
 - destination_colombia_santa_rosa_de_kabal
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
-primaryThemes: ["theme_wildlife", "theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: ["theme_gastronomy_wine", "theme_coffee"]
 ---
 

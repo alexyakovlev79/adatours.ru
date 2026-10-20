@@ -194,7 +194,7 @@ routeDestinations:
 - destination_colombia_guatape
 - destination_colombia_kartahena
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 

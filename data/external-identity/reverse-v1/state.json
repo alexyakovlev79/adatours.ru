@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T16:40:51.973Z",
+  "updatedAt": "2026-10-20T16:41:25.064Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -6528,103 +6528,173 @@
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii/packages": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii/packages, HTTP 200 / zero-byte HTML",
+        "Exact old sourceUrl matched destination_colombia_kali; RU page https://adatours.ru/colombia/place/cali/tour/; production destination MD verified approved.",
+        "Astro has no generated corresponding tour catalogue because no qualifying active content links to this place."
+      ],
+      "note": "Target would not exist. Review fallback to destination page or HTTP 410 rather than guessing.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii/ekskursii, HTTP 200 / zero-byte HTML",
+        "Exact old sourceUrl matched destination_colombia_kali; RU page https://adatours.ru/colombia/cali/; production destination MD verified approved.",
+        "Astro has no generated corresponding excursion catalogue because no qualifying active content links to this place."
+      ],
+      "note": "Target would not exist. Review fallback to destination page or HTTP 410 rather than guessing.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "https://adatours.ru/mexico/place/campeche/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike, Экскурсии и туры в исторический город Кампече в Мексике",
+        "Exact old sourceUrl matched destination_mexico_kampeche; RU page https://adatours.ru/mexico/place/campeche/; production destination MD verified approved.",
+        "Old geographic page H1/description and RU destination article identify the same place."
+      ],
+      "note": "Same place and page intention, redirect specific rather than generic.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "https://adatours.ru/mexico/place/campeche/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike/packages, HTTP 200 / zero-byte HTML",
+        "Exact old sourceUrl matched destination_mexico_kampeche; RU page https://adatours.ru/mexico/place/campeche/tour/; production destination MD verified approved.",
+        "Old empty listing has explicit tour URL; Astro produces a nonempty tour catalogue for same place (indexed active relations: 3)."
+      ],
+      "note": "Same category intention and geography; no fabricated match of historical product membership.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike/ekskursii, HTTP 200 / zero-byte HTML",
+        "Exact old sourceUrl matched destination_mexico_kampeche; RU page https://adatours.ru/mexico/campeche/; production destination MD verified approved.",
+        "Astro has no generated corresponding excursion catalogue because no qualifying active content links to this place."
+      ],
+      "note": "Target would not exist. Review fallback to destination page or HTTP 410 rather than guessing.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "https://adatours.ru/venezuela/place/canaima-and-angel-falls/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle, Экскурсии и туры в Канайму и на Водопад Анхель в Венесуэле",
+        "Exact old sourceUrl matched destination_venezuela_kanajma_i_vodopad_anhel; RU page https://adatours.ru/venezuela/place/canaima-and-angel-falls/; production destination MD verified approved.",
+        "Old geographic page H1/description and RU destination article identify the same place."
+      ],
+      "note": "Same place and page intention, redirect specific rather than generic.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "https://adatours.ru/venezuela/place/canaima-and-angel-falls/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle/packages, HTTP 200 / zero-byte HTML",
+        "Exact old sourceUrl matched destination_venezuela_kanajma_i_vodopad_anhel; RU page https://adatours.ru/venezuela/place/canaima-and-angel-falls/tour/; production destination MD verified approved.",
+        "Old empty listing has explicit tour URL; Astro produces a nonempty tour catalogue for same place (indexed active relations: 10)."
+      ],
+      "note": "Same category intention and geography; no fabricated match of historical product membership.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "https://adatours.ru/venezuela/canaima-and-angel-falls/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle/ekskursii, HTTP 200 / zero-byte HTML",
+        "Exact old sourceUrl matched destination_venezuela_kanajma_i_vodopad_anhel; RU page https://adatours.ru/venezuela/canaima-and-angel-falls/; production destination MD verified approved.",
+        "Old empty listing has explicit excursion URL; Astro produces a nonempty excursion catalogue for same place (indexed active relations: 10)."
+      ],
+      "note": "Same category intention and geography; no fabricated match of historical product membership.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "https://adatours.ru/mexico/place/cancun/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike, Экскурсии и пляжные туры на курорт Канкун в Мексике",
+        "Exact old sourceUrl matched destination_mexico_kankun; RU page https://adatours.ru/mexico/place/cancun/; production destination MD verified approved.",
+        "Old geographic page H1/description and RU destination article identify the same place."
+      ],
+      "note": "Same place and page intention, redirect specific rather than generic.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-b04-20261020-gpt6",
-      "token": "lease-vip-b04-20261020-f837d2",
+      "ruUrl": "https://adatours.ru/mexico/place/cancun/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-20T16:41:25.064Z",
+      "evidence": [
+        "VIP crawl 2026-10-19, https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike/packages, HTTP 200 / zero-byte HTML",
+        "Exact old sourceUrl matched destination_mexico_kankun; RU page https://adatours.ru/mexico/place/cancun/tour/; production destination MD verified approved.",
+        "Old empty listing has explicit tour URL; Astro produces a nonempty tour catalogue for same place (indexed active relations: 8)."
+      ],
+      "note": "Same category intention and geography; no fabricated match of historical product membership.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
-      "claimedAt": "2026-10-20T16:35:06.244Z",
-      "expiresAt": "2026-10-20T17:35:06.244Z",
+      "ownerId": "reverse-vip-b04-20261020-gpt6",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike/ekskursii": {
@@ -7135,6 +7205,24 @@
         "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii"
       ],
       "savedAt": "2026-10-20T16:40:51.973Z"
+    },
+    "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01-part-03.json": {
+      "batchId": "reverse-vipdeluxetravel-ru-mvgwm8as-2z37xu01",
+      "part": 3,
+      "count": 10,
+      "urls": [
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle/packages",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-kanajma-i-na-vodopad-anhel-v-venesuehle/ekskursii",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike",
+        "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-meksike/packages"
+      ],
+      "savedAt": "2026-10-20T16:41:25.064Z"
     }
   }
 }

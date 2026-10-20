@@ -14,9 +14,9 @@ format: "Групповой тур"
 language:
   - "Английский"
   - "Испанский"
-priceFrom: 75
+priceFrom: null
 currency: "USD"
-priceNote: "Стоимость — $75. При 2 участниках — $244 на человека; при 3 участниках — $175 на человека; при 4 участниках — $141 на человека."
+priceNote: Стоимость рассчитывается по запросу на даты поездки и состав группы.
 hero:
   src: "/media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/hero-src-enhanced-20261008.webp"
   hover: "Чинчеро: церковь над старой каменной кладкой"
@@ -47,12 +47,10 @@ included:
 notIncluded:
   - "Медицинская страховка"
 notes:
-  - "Стоимость — $75."
-  - "Стоимость при 2 участниках — $244 USD на человека; при 3 участниках — $175 USD на человека; при 4 участниках — $141 USD на человека."
-  - "Принимающая сторона оставляет за собой право изменения порядка посещения достопримечательностей."
+- Принимающая сторона оставляет за собой право изменения порядка посещения достопримечательностей.
 sourceUrl: "https://brasiltours.ru/svyashchennaya-dolina-premium-gruppovoj-tur"
-sourceSnapshot: "https://drive.google.com/file/d/17KxquG3PoU-27m9BvGIt9Ye1gWiDdsBN/view?usp=drivesdk"
-updatedAt: "2026-10-02"
+sourceSnapshot: data/source-index/materials/excursion_source_svyashchennaya_dolina_premium_gruppovoj_tur.md
+updatedAt: '2026-10-20'
 themes: ["theme_culture"]
 ---
 
@@ -76,13 +74,8 @@ themes: ["theme_culture"]
 
 ## Стоимость
 
-Стоимость — $75.
-
-| Количество участников | Стоимость на человека |
-| --- | --- |
-| 2 человека | $244 USD |
-| 3 человека | $175 USD |
-| 4 человека | $141 USD |
+Стоимость рассчитывается по запросу на даты поездки и состав группы.
 
 Включены услуги гида на английском или испанском языке, трансфер и обед. Медицинская страховка оплачивается дополнительно.
+
 

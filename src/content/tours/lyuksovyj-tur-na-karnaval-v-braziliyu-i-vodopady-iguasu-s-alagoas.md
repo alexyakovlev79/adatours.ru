@@ -475,12 +475,8 @@ routeDestinations:
 - destination_brazil_masejo
 - destination_brazil_alagoas
 - destination_brazil_praia_vermelha
-primaryThemes:
-- theme_events
-- theme_beach
-themes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_events", "theme_beach"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 

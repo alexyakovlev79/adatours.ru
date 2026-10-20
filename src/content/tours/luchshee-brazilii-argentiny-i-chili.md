@@ -523,11 +523,8 @@ routeDestinations:
 - destination_chile_santiago_plaza_de_armas
 - destination_chile_la_moneda_palace
 - destination_chile_santa_lucia_hill
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes:
-- theme_gastronomy_wine
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_gastronomy_wine"]
 ---
 
 

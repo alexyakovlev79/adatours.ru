@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_panama_san_jose_church",
+  "stableId": "destination_panama_san_jose_church",
+  "kind": "destination",
+  "canonicalPath": "/panama/place/san-jose-church/",
+  "sourceFingerprint": "fd64e7dc88c5cbdb693899cb48d1229c737f673bb0cc835da8591df5ec1b7207",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Церковь Сан-Хосе и Золотой алтарь",
+      "reason": "Новая самостоятельная сущность точно сопоставлена с проверенной программой Анны, stable ID, страной и canonical URL."
+    },
+    {
+      "field": "relationships.country_panama",
+      "probability": 100,
+      "selected": "country_panama",
+      "reason": "Страна и город объекта подтверждены каталогом и источником."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "probability": 100,
+      "selected": "destination_panama_panama_siti",
+      "reason": "Страна и город объекта подтверждены каталогом и источником."
+    },
+    {
+      "field": "external.wikidataQid",
+      "probability": 98,
+      "selected": "Q42885490",
+      "reason": "Имя и объект в Панама-Сити совпадают; Wikipedia связывает точный Wikidata item и координаты, география согласована с первоисточником."
+    },
+    {
+      "field": "external.wikipedia",
+      "probability": 98,
+      "selected": "https://es.wikipedia.org/wiki/Iglesia_de_San_Jos%C3%A9_(Panam%C3%A1)",
+      "reason": "Имя и объект в Панама-Сити совпадают; Wikipedia связывает точный Wikidata item и координаты, география согласована с первоисточником."
+    },
+    {
+      "field": "location",
+      "probability": 98,
+      "selected": "8.951398,-79.536022",
+      "reason": "Имя и объект в Панама-Сити совпадают; Wikipedia связывает точный Wikidata item и координаты, география согласована с первоисточником."
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/destinations/san-jose-church.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Проверены название, страна, канонический URL и свежий текст новой страницы."
+    },
+    {
+      "field": "relationships.country_panama",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/destinations/san-jose-church.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "relationships.destination_panama_panama_siti",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/22690a562eefa9647c49ec4b70230bfaf4a15a30/src/content/destinations/san-jose-church.md",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "География и посещение подтверждены текстом новой страницы и исходной программой."
+    },
+    {
+      "field": "external.wikidataQid",
+      "sourceUrl": "https://www.wikidata.org/wiki/Q42885490",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Адресно проверена идентичность археологического комплекса или церкви; исторический город и действующая церковь не смешаны."
+    },
+    {
+      "field": "external.wikipedia",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Iglesia_de_San_Jos%C3%A9_(Panam%C3%A1)",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Адресно проверена идентичность археологического комплекса или церкви; исторический город и действующая церковь не смешаны."
+    },
+    {
+      "field": "location",
+      "sourceUrl": "https://es.wikipedia.org/wiki/Iglesia_de_San_Jos%C3%A9_(Panam%C3%A1)",
+      "checkedAt": "2026-10-20T05:43:25.671Z",
+      "note": "Адресно проверена идентичность археологического комплекса или церкви; исторический город и действующая церковь не смешаны."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_panama"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_panama_panama_siti"
+    }
+  ],
+  "external": {
+    "wikidataQid": "Q42885490",
+    "wikipedia": {
+      "es": "https://es.wikipedia.org/wiki/Iglesia_de_San_Jos%C3%A9_(Panam%C3%A1)"
+    }
+  },
+  "location": {
+    "latitude": 8.951398,
+    "longitude": -79.536022,
+    "pointRole": "representative",
+    "coordinateSource": "https://es.wikipedia.org/wiki/Iglesia_de_San_Jos%C3%A9_(Panam%C3%A1)"
+  }
+}

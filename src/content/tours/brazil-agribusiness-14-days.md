@@ -29,13 +29,8 @@ routeDestinations:
 - destination_brazil_parque_das_aves
 - destination_argentina_puerto_iguasu
 - destination_argentina_garganta_del_diablo
-primaryThemes:
-- theme_events
-- theme_wildlife
-themes:
-- theme_culture
-- theme_adventure
-- theme_fishing
+primaryThemes: ["theme_events", "theme_nature"]
+themes: ["theme_culture", "theme_adventure", "theme_fishing", "theme_wildlife"]
 audiences:
 - mice
 - groups

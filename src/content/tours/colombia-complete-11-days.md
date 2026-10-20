@@ -27,7 +27,7 @@ destinations: &id001
 - destination_colombia_el_penon_de_guatape
 routeDestinations: *id001
 primaryThemes: ["theme_culture", "theme_beach"]
-themes: ["theme_gastronomy_wine", "theme_adventure", "theme_wildlife", "theme_coffee"]
+themes: ["theme_gastronomy_wine", "theme_adventure", "theme_nature", "theme_coffee"]
 audiences: []
 format: "Частный"
 durationDays: 11

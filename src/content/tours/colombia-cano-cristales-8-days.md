@@ -27,11 +27,8 @@ routeDestinations:
   - "destination_colombia_el_mirador_la_macarena"
   - "destination_colombia_cano_cristalitos"
   - "destination_colombia_kano_kristales"
-primaryThemes:
-  - "theme_wildlife"
-  - "theme_adventure"
-themes:
-  - "theme_culture"
+primaryThemes: ["theme_nature", "theme_adventure"]
+themes: ["theme_culture", "theme_wildlife"]
 audiences: []
 format: "Частный"
 durationDays: 8

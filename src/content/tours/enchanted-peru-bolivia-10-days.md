@@ -66,9 +66,7 @@ routeDestinations:
 - destination_peru_tambomachay
 - destination_peru_sikuani
 - destination_peru_pukara
-primaryThemes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 audiences: []
 format: Сборный

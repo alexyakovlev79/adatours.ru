@@ -34,11 +34,8 @@ routeDestinations:
 - destination_panama_panama_rainforest_discovery_center
 - destination_panama_ozero_gatun
 - destination_panama_monkey_island_gatun
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_cruises
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_cruises", "theme_wildlife"]
 durationDays: 6
 durationNights: 5
 route:

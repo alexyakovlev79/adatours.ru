@@ -30,11 +30,8 @@ routeDestinations:
 - destination_guatemala_ishimche
 - destination_guatemala_antigua_guatemala
 - destination_guatemala_monterrico
-primaryThemes:
-- theme_culture
-- theme_beach
-themes:
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature"]
 audiences: []
 format: "Регулярный"
 durationDays: 8

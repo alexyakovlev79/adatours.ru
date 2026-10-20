@@ -34,9 +34,7 @@ routeDestinations:
 - destination_venezuela_canaima_devils_canyon
 - destination_venezuela_ratoncito_island
 - destination_venezuela_laime_viewpoint
-primaryThemes:
-- theme_wildlife
-- theme_adventure
+primaryThemes: ["theme_nature", "theme_adventure"]
 themes: []
 durationDays: 4
 durationNights: 3

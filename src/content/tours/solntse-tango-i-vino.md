@@ -273,9 +273,7 @@ routeDestinations:
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
 - destination_chile_valparaiso_i_vinya_del_mar
-primaryThemes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

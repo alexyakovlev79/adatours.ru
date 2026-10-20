@@ -39,11 +39,8 @@ routeDestinations:
 - destination_mexico_chichen_ica
 - destination_mexico_valladolid
 - destination_mexico_rivera_majya
-primaryThemes:
-- theme_culture
-themes:
-- theme_wildlife
-- theme_adventure
+primaryThemes: ["theme_culture"]
+themes: ["theme_nature", "theme_adventure"]
 audiences: []
 format: "Экскурсии"
 durationDays: 8

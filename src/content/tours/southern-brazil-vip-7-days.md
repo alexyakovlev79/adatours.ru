@@ -16,12 +16,8 @@ destinations: &id001
 - destination_brazil_kanon_itaimbezinyu
 - destination_brazil_florianopolis
 routeDestinations: *id001
-primaryThemes:
-- theme_wildlife
-- theme_gastronomy_wine
-themes:
-- theme_adventure
-- theme_culture
+primaryThemes: ["theme_nature", "theme_gastronomy_wine"]
+themes: ["theme_adventure", "theme_culture"]
 audiences:
 - VIP
 format: "Для двоих"

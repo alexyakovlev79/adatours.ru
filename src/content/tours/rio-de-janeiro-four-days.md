@@ -14,10 +14,8 @@ destinations:
 routeDestinations:
 - destination_brazil_rio
 - destination_brazil_tijuca_national_park
-primaryThemes:
-- theme_culture
-themes:
-- theme_wildlife
+primaryThemes: ["theme_culture"]
+themes: []
 audiences: []
 format: "Экскурсии"
 durationDays: 4

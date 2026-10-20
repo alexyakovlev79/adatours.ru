@@ -23,10 +23,8 @@ routeDestinations:
 - destination_brazil_parque_das_aves
 - destination_argentina_puerto_iguasu
 - destination_argentina_garganta_del_diablo
-primaryThemes:
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_nature"]
+themes: ["theme_adventure"]
 audiences: []
 format: "Экскурсии"
 durationDays: 3

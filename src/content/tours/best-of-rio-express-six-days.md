@@ -14,11 +14,8 @@ destinations: &id001
 - destination_brazil_angra_dos_reis
 - destination_brazil_ilha_grande
 routeDestinations: *id001
-primaryThemes:
-- theme_culture
-- theme_beach
-themes:
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature"]
 audiences: []
 format: "Экскурсии"
 durationDays: 6

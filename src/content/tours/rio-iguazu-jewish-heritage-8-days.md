@@ -23,7 +23,7 @@ routeDestinations:
   - destination_brazil_iguacu
   - destination_argentina_puerto_iguasu
   - destination_argentina_garganta_del_diablo
-primaryThemes: [theme_culture, theme_wildlife]
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 audiences: []
 format: "Смешанный"

@@ -76,11 +76,8 @@ routeDestinations:
 - "destination_argentina_walichu_caves"
 - "destination_argentina_lednik_perito_moreno"
 - "destination_argentina_nacionalnyj_park_los_glasyares"
-primaryThemes:
-- "theme_culture"
-- "theme_wildlife"
-themes:
-- "theme_gastronomy_wine"
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_gastronomy_wine"]
 format: Частный
 durationDays: 15
 durationNights: 14

@@ -12,8 +12,7 @@ hero:
   alt: "Прозрачная лагуна Бакалар у деревянного причала и зеленого берега, Мексика"
   hover: "Бакалар в Мексике: светлое мелководье переходит в глубокую синюю воду"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - laguna-bakalar
 sourceSnapshot: data/source-index/materials/destination_mexico_laguna_bakalar.md

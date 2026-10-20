@@ -12,9 +12,7 @@ hero:
   hover: "Калакмуль: центральная лестница пирамиды среди лесной зелени"
   alt: "Широкая ступенчатая пирамида Калакмуля над тропическим лесом, Мексика"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 searchAliases:
 - kalakmul
 sourceSnapshot: data/source-index/materials/destination_mexico_kalakmul.md

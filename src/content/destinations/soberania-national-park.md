@@ -12,8 +12,7 @@ hero:
   alt: "Узкая тропа среди деревьев и густой зелени парка Собераниа, Панама"
   hover: "Собераниа в Панаме: тенистая лесная тропа и широкие корни деревьев"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - nacionalnyj-park-soberania
 sourceSnapshot: data/source-index/materials/destination_panama_nacionalnyj_park_soberania.md

@@ -16,9 +16,7 @@ gallery:
 - src: /media/tours/panama-2024/itinerary-5-images-0-src-enhanced-20261007.webp
   hover: "Бока-Чика: панорама зелёных берегов, островов и воды"
   alt: "Зелёные холмы и острова у морской бухты Бока-Чики, Панама"
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 searchAliases:
 - Boca Chica
 - boka-chika

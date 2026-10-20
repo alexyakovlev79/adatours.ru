@@ -12,8 +12,7 @@ hero:
   hover: "Сумидеро: спокойная вода под скалами с зеленой растительностью"
   alt: "Река между высокими отвесными стенами каньона Сумидеро, Мексика"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - kanon-sumidero
 sourceSnapshot: data/source-index/materials/destination_mexico_kanon_sumidero.md

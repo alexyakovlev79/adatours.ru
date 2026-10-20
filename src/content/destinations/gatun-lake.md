@@ -12,9 +12,7 @@ hero:
   alt: "Грузовое судно на озере Гатун между лесистыми островами, Панама"
   hover: "Озеро Гатун в Панаме: проходящее судно и зеленые берега"
 gallery: []
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_nature", "theme_cruises"]
 searchAliases:
 - Gatun
 - ozero-gatun

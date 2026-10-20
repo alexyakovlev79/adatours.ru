@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Сенот Ик-Киль дополняет маршрут к Чичен-Ице знакомством с природными подземными водоемами Юкатана.
 searchAliases:
 - senot-ik-kil
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_mexico_senot_ik_kil/hero-generated-20261008.webp
   alt: "Купающиеся в сеноте Ик-Киль под зеленью и длинными корнями, Мексика"

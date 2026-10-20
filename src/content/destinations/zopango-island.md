@@ -12,8 +12,7 @@ hero:
   hover: "Зопанго: небольшой остров на фоне горы Момбачо"
   alt: "Зеленый остров Зопанго с деревянным причалом перед вулканом, Никарагуа"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - ostrov-zopango
 sourceSnapshot: data/source-index/materials/destination_nicaragua_ostrov_zopango.md

@@ -36,7 +36,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-banos-v-ehkvadore-tunguraua"
 sourceSnapshot: "https://drive.google.com/file/d/1ti0yUSUiv0WXAX_7DhsxmZG0m97dpsWb/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_spa","theme_wildlife"]
+themes: ["theme_spa", "theme_nature"]
 ---
 
 ## Термальные источники и качели на краю света: что посмотреть в Баньосе

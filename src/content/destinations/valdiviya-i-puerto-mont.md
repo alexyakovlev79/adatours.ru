@@ -39,7 +39,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-valdiviyu-puehrto-varas-puehrto-mont-v-chili"
 sourceSnapshot: "https://drive.google.com/file/d/1LbcEmDowoHF5R_Jmf5KDihiJJvJCYqIz/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife","theme_adventure","theme_culture"]
+themes: ["theme_wildlife", "theme_adventure", "theme_culture", "theme_nature"]
 ---
 
 ### Вальдивия

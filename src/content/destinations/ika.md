@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-ika-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1agv15vXg8WYTfmvtsK0Gd6ohqB5urO-H/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_adventure","theme_culture"]
+themes: ["theme_nature", "theme_adventure", "theme_culture"]
 ---
 
 ## Камни Ики и оазис Уакачина: что посмотреть в Ике, Перу

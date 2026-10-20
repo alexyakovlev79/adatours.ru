@@ -30,7 +30,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-poluostrov-parakas-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1yk7W5_DSVG2Bsj1s8yn6ev7pJwoPhA9-/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 ---
 
 ## Острова Бальестас и морские львы: что посмотреть на полуострове Паракас

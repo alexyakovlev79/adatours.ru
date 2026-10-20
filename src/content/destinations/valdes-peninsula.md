@@ -12,8 +12,7 @@ hero:
   hover: "Полуостров Вальдес: морские слоны на сухом атлантическом берегу"
   alt: "Морские слоны на берегу полуострова Вальдес у низких скал и Атлантики, Аргентина"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

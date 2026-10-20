@@ -21,7 +21,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-park-gvianskaya-amazoniya"
 sourceSnapshot: "https://drive.google.com/file/d/1Cri43PRjUmLjCqjJxdH9IxP-knu4ygCk/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Парк Гвианская Амазония — самый большой парк во Французской Гвиане

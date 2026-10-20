@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-excursion-excursion_rio_shopping_six_hours",
+  "stableId": "excursion_rio_shopping_six_hours",
+  "kind": "excursion",
+  "canonicalPath": "/brazil/rio-de-janeiro/rio-shopping-six-hours/",
+  "sourceFingerprint": "e029ca6163380b8015000f3eb30ee8a3407064d54d87510eb4eb45ba923ecc50",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "Шопинг в Рио-де-Жанейро с англоговорящим гидом",
+      "reason": "Новый MD и канонический URL подтверждены original creation commit; содержание сверено с точным Word Анны."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 100,
+      "selected": "country_brazil",
+      "reason": "Программа проходит в Бразилии, география объектов подтверждена официальными источниками."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 99,
+      "selected": "destination_brazil_rio",
+      "reason": "Место прямо задано проверенной программой и каноническим каталогом; порядок берется из Word."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_rio",
+      "position": 1
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/90eac0d8046b2227f7257ecd7e2e7fe7421e1f87/data/source-index/materials/excursion_rio_shopping_six_hours.md",
+      "checkedAt": "2026-10-20T07:05:01.931Z",
+      "note": "Word Ada_Tours_Brazil_MICE_Programme_2026_complet_revise.docx: проверены 7 дней и состав услуг; для шопинга — 6 часов, английский гид, подача у Windsor Oceânico."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://www.windsorhoteis.com/hotel/windsor-oceanico/",
+      "checkedAt": "2026-10-20T07:05:01.931Z",
+      "note": "Официальный сайт Windsor подтверждает расположение Oceânico в Барра-да-Тижука, Рио-де-Жанейро; это точка конференционных трансферов и начала шопинга. Конкретные магазины не добавлены."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/90eac0d8046b2227f7257ecd7e2e7fe7421e1f87/data/source-index/materials/excursion_rio_shopping_six_hours.md",
+      "checkedAt": "2026-10-20T07:05:01.931Z",
+      "note": "Связь и роль места подтверждены точным исходным Word и каноническими ID. Порядок дней сохранен; дополнительная экскурсия отмечена relatedPlace."
+    }
+  ],
+  "reviewNote": "Шестичасовой шопинг в Рио с англоговорящим гидом и подачей к Windsor Oceânico. Конкретный торговый центр не задан и не выдуман; отдельный внешний QID продукта не назначается."
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-tour-tour_brazil_mice_7_days",
+  "stableId": "tour_brazil_mice_7_days",
+  "kind": "tour",
+  "canonicalPath": "/brazil/tour/brazil-mice-7-days/",
+  "sourceFingerprint": "a8bb207438ac06c5b174390a20849fbdade0574361eaae569543f82ac62e5aa8",
+  "status": "READY",
+  "confidence": "high",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 100,
+      "selected": "MICE в Бразилии на 7 дней: Сан-Паулу, Игуасу, Амазония и Рио",
+      "reason": "Новый MD и канонический URL подтверждены original creation commit; содержание сверено с точным Word Анны."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "probability": 100,
+      "selected": "country_brazil",
+      "reason": "Программа проходит в Бразилии, география объектов подтверждена официальными источниками."
+    },
+    {
+      "field": "relationships.destination_brazil_sao_paulo",
+      "probability": 99,
+      "selected": "destination_brazil_sao_paulo",
+      "reason": "Место прямо задано проверенной программой и каноническим каталогом; порядок берется из Word."
+    },
+    {
+      "field": "relationships.destination_brazil_iguacu",
+      "probability": 99,
+      "selected": "destination_brazil_iguacu",
+      "reason": "Место прямо задано проверенной программой и каноническим каталогом; порядок берется из Word."
+    },
+    {
+      "field": "relationships.destination_brazil_parque_das_aves",
+      "probability": 99,
+      "selected": "destination_brazil_parque_das_aves",
+      "reason": "Место прямо задано проверенной программой и каноническим каталогом; порядок берется из Word."
+    },
+    {
+      "field": "relationships.destination_brazil_amazon",
+      "probability": 99,
+      "selected": "destination_brazil_amazon",
+      "reason": "Место прямо задано проверенной программой и каноническим каталогом; порядок берется из Word."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "probability": 99,
+      "selected": "destination_brazil_rio",
+      "reason": "Место прямо задано проверенной программой и каноническим каталогом; порядок берется из Word."
+    },
+    {
+      "field": "relationships.destination_brazil_corcovado_christ_the_redeemer",
+      "probability": 99,
+      "selected": "destination_brazil_corcovado_christ_the_redeemer",
+      "reason": "Дополнительная экскурсия дня 6; связь relatedPlace сохраняет условность участия."
+    },
+    {
+      "field": "relationships.destination_brazil_sugarloaf_mountain",
+      "probability": 99,
+      "selected": "destination_brazil_sugarloaf_mountain",
+      "reason": "Дополнительная экскурсия дня 6; связь relatedPlace сохраняет условность участия."
+    }
+  ],
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_brazil"
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_sao_paulo",
+      "position": 1,
+      "day": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_iguacu",
+      "position": 2,
+      "day": 2
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_parque_das_aves",
+      "position": 3,
+      "day": 2
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_amazon",
+      "position": 4,
+      "day": 3
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_brazil_rio",
+      "position": 5,
+      "day": 4
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_corcovado_christ_the_redeemer"
+    },
+    {
+      "type": "relatedPlace",
+      "targetId": "destination_brazil_sugarloaf_mountain"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/90eac0d8046b2227f7257ecd7e2e7fe7421e1f87/data/source-index/materials/tour_brazil_mice_7_days.md",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Word Ada_Tours_Brazil_MICE_Programme_2026_complet_revise.docx: проверены 7 дней и состав услуг; для шопинга — 6 часов, английский гид, подача у Windsor Oceânico."
+    },
+    {
+      "field": "relationships.destination_brazil_rio",
+      "sourceUrl": "https://www.windsorhoteis.com/hotel/windsor-oceanico/",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Официальный сайт Windsor подтверждает расположение Oceânico в Барра-да-Тижука, Рио-де-Жанейро; это точка конференционных трансферов и начала шопинга. Конкретные магазины не добавлены."
+    },
+    {
+      "field": "relationships.destination_brazil_iguacu",
+      "sourceUrl": "https://macucosafari.com.br/",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Официальный Macuco Safari: парк Игуасу, Фоз-ду-Игуасу, Бразилия; аргентинская сторона маршруту не приписана."
+    },
+    {
+      "field": "relationships.destination_brazil_parque_das_aves",
+      "sourceUrl": "https://www.parquedasaves.com.br/",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Официальный Парк птиц подтверждает объект в Фоз-ду-Игуасу."
+    },
+    {
+      "field": "relationships.destination_brazil_amazon",
+      "sourceUrl": "https://www.amazonecopark.com.br/o-hotel",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Официальный сайт Amazon Ecopark подтверждает лодж в районе Манауса; география соотнесена с существующим destination_brazil_amazon. Состав занятий и питания не дополнен."
+    },
+    {
+      "field": "relationships.country_brazil",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/90eac0d8046b2227f7257ecd7e2e7fe7421e1f87/data/source-index/materials/tour_brazil_mice_7_days.md",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Связь и роль места подтверждены точным исходным Word и каноническими ID. Порядок дней сохранен; дополнительная экскурсия отмечена relatedPlace."
+    },
+    {
+      "field": "relationships.destination_brazil_sao_paulo",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/90eac0d8046b2227f7257ecd7e2e7fe7421e1f87/data/source-index/materials/tour_brazil_mice_7_days.md",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Связь и роль места подтверждены точным исходным Word и каноническими ID. Порядок дней сохранен; дополнительная экскурсия отмечена relatedPlace."
+    },
+    {
+      "field": "relationships.destination_brazil_corcovado_christ_the_redeemer",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/90eac0d8046b2227f7257ecd7e2e7fe7421e1f87/data/source-index/materials/tour_brazil_mice_7_days.md",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Связь и роль места подтверждены точным исходным Word и каноническими ID. Порядок дней сохранен; дополнительная экскурсия отмечена relatedPlace."
+    },
+    {
+      "field": "relationships.destination_brazil_sugarloaf_mountain",
+      "sourceUrl": "https://github.com/alexyakovlev79/adatours.ru/blob/90eac0d8046b2227f7257ecd7e2e7fe7421e1f87/data/source-index/materials/tour_brazil_mice_7_days.md",
+      "checkedAt": "2026-10-20T07:05:01.932Z",
+      "note": "Связь и роль места подтверждены точным исходным Word и каноническими ID. Порядок дней сохранен; дополнительная экскурсия отмечена relatedPlace."
+    }
+  ],
+  "reviewNote": "Порядок основного маршрута: Сан-Паулу — Игуасу — Амазония — Рио. Корковаду и Сахарная Голова — дополнительная программа, поэтому relatedPlace. Вопросы расписания и расчетов сохранены менеджерам. Самостоятельный внешний QID туристического продукта не назначается."
+}

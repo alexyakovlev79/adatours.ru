@@ -20,6 +20,7 @@ import ReviewCarousel from '../components/proof/ReviewCarousel.astro';
 import { ADA_REVIEWS, adaReviewPageSchema } from '../data/reviews/ada-tours';
 import FactStrip from '../components/proof/FactStrip.astro';
 import SearchTrigger from '../components/global/SearchTrigger.astro';
+import directS3Uploads from '../data/media/direct-s3-uploads.json';
 
 const activeRu = ({ data }) => data.locale === 'ru' && isActiveEntity(data);
 const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionEntries, people] = await Promise.all([
@@ -71,6 +72,16 @@ const excursionCover = excursionEntries.find((entry) => entry.data.country === '
   ?? excursionEntries.find((entry) => entry.data.hero?.src)?.data.hero?.src
   ?? '/media/home/rio-night-enhanced-20260930.webp';
 const anna = people.find((entry) => entry.data.id === 'person_anna');
+
+// Enable the mobile homepage video only after its exact S3 upload receipt is committed.
+// Until then, phones retain the existing static hero image.
+const homeMobileHeroKey = 'media/home/home-hero-mobile-20261020-v1.mp4';
+const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
+  asset.key === homeMobileHeroKey &&
+  asset.contentType === 'video/mp4' &&
+  asset.sha256 === 'dbf0e5b1480228f34025d378523ae0b4d5bb47eb2f7b9e0ff6427f21315d2fcb' &&
+  asset.bytes === 1609018
+) ? `/${homeMobileHeroKey}` : undefined;
 ---
 
 <BaseLayout
@@ -87,7 +98,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     title="Латинская Америка. Ваша история путешествия"
     intro="Мы принимающий туроператор из Рио-де-Жанейро с опытом 20 лет. Соединим интересные вам места в одну поездку — частную, VIP или деловую — с продуманной логистикой и сервисом."
     image="/media/home/hero-rio-generated-20261008-v2.webp"
-    video={{ src: "/media/home/home-hero-20261016-v1.mp4" }}
+    video={{ src: "/media/home/home-hero-20261016-v1.mp4", mobileSrc: homeMobileHeroSrc }}
     ctaHref="#home-start"
     ctaLabel="Выбрать путешествие"
   />

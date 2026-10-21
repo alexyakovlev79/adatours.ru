@@ -182,7 +182,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/1caf1dd0cc24104717efaad5.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Полностью прочитан и сверён по SHA-256 snapshots/1caf1dd0cc24104717efaad5.html (d83bbe5c7f5fa9093413e1dd9a601c7716f3f4be37c21179ceba3ba1df80a648); snapshot HTTP 200, H1 Hotel. Реальная страница 8 каталога производителя Hotel: позиции 106–108 из 108, от Windsor Miramar Palace Rio до Windsor Plaza Rio Copacabana, карточки размещения с ценами/бронированием.",
+        "Текущий main aafd4b2da015d669e477eedffb3c956ede417992: проверены src/pages и четыре каталога source-index (Country/Destination/Excursion/Tour). Отдельной коллекции Hotel и каталога бронирования 108 отелей с этой пагинацией нет. VIP, страна или тур имеют другой предмет/ассортимент."
+      ],
+      "note": "Подтверждённой RU-пары для hotel?page=8 нет. Это самостоятельная содержательная страница гостиничного каталога, не пустая страница и не доказанный технический дубль. 301 на главную/каталог туров не назначен; судьба старого гостиничного раздела отдельно.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:22:26.151Z",
+      "checkedBy": "reverse-worker-mvi9bqoq-z10jgc5usm7",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package/3-strany-latinskoj-ameriki?page=1",
@@ -395,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:22:21.949Z"
+  "updatedAt": "2026-10-21T15:22:26.151Z"
 }

@@ -1361,7 +1361,45 @@
         "batchId": "vip-023",
         "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/brazil/tour/northeast-brazil-recife-porto-de-galinhas-fernando-de-noronha-10-days/",
+        "relation": "redirect_301",
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:38:33.727Z",
+        "reason": "Архивирована лишь дублирующая карточка. В центральном архиве закреплён duplicateOf=бывший канонический активный тур Ресифи — Порту-де-Галиньяс — Норонья на 10 дней. Выбрана эта действующая замена.",
+        "evidence": [
+          "Прямой VIP GET 200; прочитаны все дни: Ресифи/Олинда, Порту-де-Галиньяс, Фернанду-де-Норонья, день 7 дайвинг, день 10 вылет.",
+          "data/catalog-archive.json main blob 9f3554275d0e420a5af2005e4421afa0034c59d4: duplicateOf tour_brazil_recife_porto_noronha_10d, та же 10-дневная программа; сохранённая копия approved.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/brazil-northeast-recife-porto-noronha-10d.md, blob 938f3a0e8d77c3a772f3564cb124d4ed81f37937; статус и программа прочитаны."
+        ],
+        "targetEntityId": "tour_brazil_recife_porto_noronha_10d"
+      },
+      "sourceObservation": {
+        "n": 126,
+        "sourceUrl": "https://vipdeluxetravel.ru/package/belosnezhnye-zhemchuzhiny-brazilii",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/belosnezhnye-zhemchuzhiny-brazilii",
+        "canonical": "https://vipdeluxetravel.ru/belosnezhnye-zhemchuzhiny-brazilii",
+        "sha256": "d7585758a86b93f346d9fa0b7ab4a57f291df24f60c12ba9ef74fdc7bf63e06f",
+        "title": "Пляжный тур в Бразилию на 10 дней",
+        "h1": [
+          "Белоснежные  жемчужины Бразилии"
+        ],
+        "dayHeadings": [
+          "День 1: Ресифи",
+          "День 2:  Ресифи",
+          "День 3: Порту де Галиньяс",
+          "День 4: Порту де Галиньяс",
+          "День 5: Порту де Галиньяс - Фернанду ди Норонья",
+          "День 6: Фернанду ди Норонья",
+          "День 7: Дайвинг",
+          "День 8-9: Фернанду ди Норонья",
+          "День 10: Фернанду ди Норонья"
+        ]
+      }
     },
     {
       "reviewOrder": 127,
@@ -2062,7 +2100,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:38:56.627Z",
+  "updatedAt": "2026-10-21T16:38:58.241Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

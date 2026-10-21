@@ -102,7 +102,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/05bd3c637126da9959b59a31.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP inventory #615: путь /packages, pageType tour_listing, historical HTTP 200; заголовок каталога пустой.",
+        "RU tours catalog: для destination_honduras_utila нет активных основных туров; src/pages/[...path].astro не строит пустой tourDestinationPath."
+      ],
+      "note": "Нет действующего RU-каталога туров через остров Утила: в актуальной базе отсутствуют активные основные туры этого места. Нужен выбор между страницей места и 410, без фиктивного 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:52:29.440Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-utila-v-gondurase/ekskursii",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:50:21.339Z"
+  "updatedAt": "2026-10-21T14:52:29.440Z"
 }

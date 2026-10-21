@@ -2847,7 +2847,41 @@
         "batchId": "vip-028",
         "batchSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6"
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:40:41.915Z",
+        "reason": "Теперь установлено точное отличие: VIP — трёхдневная церемония на смотровой Дона-Марта с Fairmont, а RU-кандидат за те же $4243 — церемония на пляже Прайя-Вермелья. Общая цена и город не заменяют разные площадки; подходящая действующая пара не подтверждена.",
+        "evidence": [
+          "VIP GET точного product_id=4182 200, canonical route=product/product&product_id=4182, код wdr; прочитана программа: 3 дня/2 ночи, день 2 Mirante Dona Marta.",
+          "RU rio-de-janeiro-wedding прямо фиксирует Praia Vermelha; tropical-package — другой однодневный продукт.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/rio-de-janeiro-wedding.md, blob 2d050eec5085174ea7532bae20ea0ac10df4deb7; статус и программа прочитаны."
+        ],
+        "targetEntityId": null
+      },
+      "sourceObservation": {
+        "n": 148,
+        "sourceUrl": "https://vipdeluxetravel.ru/package?product_id=4182&page=9",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/package?product_id=4182&page=9",
+        "canonical": "https://vipdeluxetravel.ru?route=product/product&product_id=4182",
+        "sha256": "9cfd188880c4a606fbe1e3cb5b7faf02da0b8a96e4f3d7d385e16fc39cd26862",
+        "title": "Свадебная церемония любви в Рио де Жанейро",
+        "h1": [
+          "Свадебная церемония любви в Рио де Жанейро"
+        ],
+        "dayHeadings": [
+          "День 1",
+          "День 2",
+          "День 3",
+          "Программа включает:",
+          "Программа не включает:"
+        ]
+      }
     },
     {
       "reviewOrder": 149,
@@ -2908,7 +2942,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:41:17.309Z",
+  "updatedAt": "2026-10-21T16:41:19.100Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

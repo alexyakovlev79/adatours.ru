@@ -247,7 +247,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/playa-del-carmen/packages; canonical sourceUrl; H1 «Tours to countries of Latin America». В полученном HTML нет карточек gallery-title; показаны общие вводные Choose a tour и Tours to Latin America.",
+        "main 50542db1: destination_mexico_plajya_del_karmen, approved, src/content/destinations/plajya-del-karmen.md, canonical /mexico/place/playa-del-carmen/. Плайя дель Кармен находится в центре Ривьеры-Майя у Карибского моря. Здесь есть пляжи, коралловые рифы и оживленная Пятая авеню, а поблизости находятся Шкарет, Шель-Ха и Тулум. Активных основных RU-туров с этим ID: 0; собственных экскурсий по destination: 0.",
+        "RU src/pages/[...path].astro и src/lib/tour-relations.ts: каталог основных туров использует routeDestinations ?? destinations, optional-tours отделен; экскурсионные каталоги формируются из активных Excursion. EN-географическое имя не доказывает равенство фильтра и состава."
+      ],
+      "note": "Шаблон EN-каталога прочитан, но локальный состав предложений не подтвержден. Самостоятельная RU-страница места не тождественна каталогу туров/экскурсий.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:16:01.845Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/playa-tamarindo/excursions",
@@ -430,5 +441,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:15:59.610Z"
+  "updatedAt": "2026-10-21T16:16:01.845Z"
 }

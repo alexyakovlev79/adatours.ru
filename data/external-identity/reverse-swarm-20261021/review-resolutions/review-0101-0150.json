@@ -1113,7 +1113,27 @@
         "batchId": "vip-022",
         "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/brazil/tour/rio-de-janeiro-carnival/",
+        "relation": "redirect_301",
+        "confidence": 0.74,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:38:33.727Z",
+        "reason": "Наиболее вероятный адресный преемник недоступного старого карнавального тура — закреплённая миграционная сущность «Карнавал в Рио». Выбран конкретный опубликованный тур на 5 дней с Самбадромом; общий каталог и иные многострановые карнавалы не подставлены.",
+        "evidence": [
+          "Источник исторически 404; текущий прямой запрос 503 не раскрывает старую программу. Основание — совокупность специфичного события/города, наследуемого ID и действующей программы; прежние услуги не утверждаются.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/karnaval-v-rio-de-zhanejro.md, blob 1dc11da04ed00e5c5d8c13fb2f819deff5caed3c; статус и программа прочитаны."
+        ],
+        "targetEntityId": "tour_source_karnaval_v_rio_de_zhanejro"
+      },
+      "sourceObservation": {
+        "n": 121,
+        "sourceUrl": "https://vipdeluxetravel.ru/karnaval-v-rio-de-zhanejro",
+        "http": 503,
+        "error": "HTTP Error 503: Service Unavailable"
+      }
     },
     {
       "reviewOrder": 122,
@@ -1959,7 +1979,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:36:25.976Z",
+  "updatedAt": "2026-10-21T16:38:49.530Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

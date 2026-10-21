@@ -9,9 +9,9 @@ destinationType: route_cluster
 summary: Пасео-Аткинсон относится к прогулочным дорожкам на холмах Вальпараисо. Цветные дома, старые фонари и открывающиеся
   виды на бухту делают короткую прогулку яркой частью знакомства с городом.
 hero:
-  src: /media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-0-src-enhanced-20261007.webp
-  alt: Смотровая прогулочная дорожка среди цветных домов на холмах Вальпараисо
-  hover: Смотровая прогулочная дорожка среди цветных домов на холмах Вальпараисо
+  src: /media/destinations/paseo-atkinson/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Пасео-Аткинсон — иллюстрация"
+  hover: "Пасео-Аткинсон — новая обложка"
   status: approved
 gallery: []
 themes:

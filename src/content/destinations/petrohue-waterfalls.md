@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: На водопадах Петроуэ бирюзовые потоки проходят между темными вулканическими скалами. Каскады находятся
   в Озерном крае Чили.
 hero:
-  src: /media/excursions/peujja-i-vodopady-petroje/hero-regenerated-20261011-v1.webp
-  hover: "Петроуэ: бурная вода на скалистых уступах среди лесистых берегов"
-  alt: "Бирюзовые каскады Петроуэ между темными скалами и зеленым лесом, Чили"
+  src: /media/destinations/petrohue-waterfalls/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Водопады Петроуэ — новая обложка"
+  alt: "Водопады Петроуэ — иллюстрация"
 gallery: []
 themes: ["theme_nature"]
 searchAliases:

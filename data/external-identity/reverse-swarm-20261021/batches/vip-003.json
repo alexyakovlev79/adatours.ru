@@ -182,7 +182,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/dffd12361bb01762294a0a58.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #469: подраздел /ekskursii курорта Пуэрто-Вьехо, pageType excursion_listing, HTTP 200 с пустым title.",
+        "В data/source-index/catalogs/excursions.json не найдено ни одной активной экскурсии с destinationIds/relatedDestinationIds для destination_costa_rica_puerto_veho, поэтому непустой /costa-rica/puerto-viejo/ не подтвержден."
+      ],
+      "note": "Отсутствует релевантный действующий RU-каталог экскурсий. Возможна страница курорта или 410, требуется редакционное решение без запуска 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:54:35.776Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-kurort-puehrto-valyarta-v-meksike",
@@ -395,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:54:08.903Z"
+  "updatedAt": "2026-10-21T14:54:35.776Z"
 }

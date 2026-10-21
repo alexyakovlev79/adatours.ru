@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9bl75-wz4a20i6j3",
-    "token": "reverse-lease-mvi9bl75-h7zrfa6gy0p",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:31:11.450Z",
-    "expiresAt": "2026-10-21T17:01:11.450Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-vila-gale-fortaleza?page=7",
@@ -442,8 +436,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/45a3810fc9e195ad664f2201.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/45a3810fc9e195ad664f2201.html, SHA-256 fd8cac6b60914cede9a81b1e497c28ce2daecf89cc05382f5e3ccdb4f0a424ad, обход 2026-10-20T13:16:07+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Nannai Beach Resort». Nannai Beach Resort — курортный отель в Порту-ди-Галиньяш по крошкам; текст описывает приватность, номера и бунгало с собственными бассейнами, перечень гостиничных услуг.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) самостоятельная страница Nannai Beach Resort по названию/бренду не установлена. src/content.config.ts не содержит hotel collection; [...path].astro не формирует отдельный hotel detail. География города и другие туристические продукты не заменяют гостиничную сущность."
+      ],
+      "note": "Проверена отдельная гостиничная карточка Nannai Beach Resort, Порту-ди-Галиньяш. Подтвержденная самостоятельная RU-страница именно этого объекта в просмотренном текущем source-index не установлена. Общий Place, тур с возможным проживанием и другой отель не назначены 301-целью; текущая работоспособность самого отеля не оценивалась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:34:07.940Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:34:04.710Z"
+  "updatedAt": "2026-10-21T15:34:07.940Z",
+  "completedAt": "2026-10-21T15:34:07.940Z",
+  "lastOwner": "reverse-worker-mvi9bl75-wz4a20i6j3"
 }

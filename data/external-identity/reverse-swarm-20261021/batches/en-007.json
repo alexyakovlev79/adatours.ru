@@ -62,7 +62,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN GET 21.10.2026 HTTP 200: /excursions-in-brazil/excursions показывает только City Tour & Sugarloaf Mountain (4 hrs) и Excursion to Christ the Redeemer.",
+        "RU GET https://adatours.ru/brazil/excursion/ HTTP 200: каталог сообщает 105 экскурсий; среди карточек Парк птиц, Макуко Сафари, полеты на вертолете, Ботанический сад и Петрополис."
+      ],
+      "note": "Действующий RU-каталог Бразилии существенно отличается от двух карточек EN. Совпадение отдельных экскурсионных объектов не устанавливает равенство всего каталога; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:41:42.912Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/excursions-in-brazil/packages",
@@ -375,5 +385,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:40:45.555Z"
+  "updatedAt": "2026-10-21T15:41:42.912Z"
 }

@@ -85,7 +85,18 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/bd3957746cbb6a3980ea39cd.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Просмотрен приватный HTML snapshots/bd3957746cbb6a3980ea39cd.html; SHA-256 8f2b3ba31ed902c7c8d99678cb9fd8ad8ec48070a34a0d16c6a104569a34e126 проверен. Title/H1: Отель Copacabana Mar Rio. Отель Copacabana Mar 4* в двух кварталах от Копакабаны, 50 м от метро Cardeal Arcoverde; бассейн на крыше, фитнес-центр, Wi-Fi в номерах. Код брони Hotel Copacabana Mar Rio Brazil.",
+        "Проверены текущие source-index каталоги main: destinations (1018 записей, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b), tours (397, 5d0662b6b1589951c684b2c44ea1093b182ce9bf), excursions (416, 402b7d42c61bc17709c1ae07fc92dfa32ee08327). Отдельной сущности с этим названием/ID/aliases не найдено. В src/content и src/pages/[...path].astro нет коллекции/маршрута отелей; страницы города и туры не являются карточкой конкретного отеля.",
+        "HTML canonical: https://vipdeluxetravel.ru/hotel-copacabana-mar-rio; query остаётся частью source URL. В frozen inventory нет второй записи с тем же canonical, технический дубль не подтвержден. Объекты RU о Рио и пляже Копакабана имеют другую сущность и не подтверждают пару этому отелю."
+      ],
+      "note": "Не найдена подтвержденная самостоятельная RU-карточка «Отель Copacabana Mar Rio». Страница города/курорта или тур с проживанием не заменяет карточку и бронирование конкретного отеля; 301 не назначен. Проверен сохраненный HTML, без заявления о сегодняшнем HTTP.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:22:49.178Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/brazil-hotel-das-cataratas-foz-do-iguacu?page=4",
@@ -348,5 +359,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:22:35.858Z"
+  "updatedAt": "2026-10-21T15:22:49.178Z"
 }

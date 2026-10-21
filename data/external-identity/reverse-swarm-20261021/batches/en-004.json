@@ -209,7 +209,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:35:40.845199+00:00; HTTP 200, 91532 bytes, SHA-256 651512bfd6b6a9cebd1c9baf5af70edfc4998de60cfec297447472c775091bf2; canonical https://adatours.com/campeche/excursions. Title Excursions and tours to Campeche, the city in Mexico; H1 Excursions to countries of Latin America.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (0): в данном HTML карточки не обнаружены.",
+        "RU-кандидат определён по канонической сущности destination_mexico_kampeche, data/source-index/entries/destination_mexico_kampeche.json, blob 10610573dfe6b37882ea01f9a4bd4b29e5598478 и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/mexico/campeche/: HTTP 404; действующий каталог по этому адресу не подтверждён; в прочитанном sitemap-0.xml его нет.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "EN имеет общий H1 и не показывает карточек в текущем HTML; RU-каталог экскурсий Кампече возвращает HTTP 404. Само совпадение географии не подтверждает sameAs каталога."
+      ],
+      "note": "EN имеет общий H1 и не показывает карточек в текущем HTML; RU-каталог экскурсий Кампече возвращает HTTP 404. Само совпадение географии не подтверждает sameAs каталога.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:24.478Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/campeche/packages",
@@ -422,5 +436,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:18.060Z"
+  "updatedAt": "2026-10-21T15:39:24.478Z"
 }

@@ -162,7 +162,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/4ba31a27116e68e3010e1294.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/tours/page/6/",
+      "evidence": [
+        "Frozen VIP position 1098: /package?page=6, H1/title «Package», 200 в снимке, каталог туров.",
+        "RU src/pages/[...path].astro формирует /tours/ по active Tour; src/lib/catalog-pagination.ts создает /tours/page/6/, размер страницы 30."
+      ],
+      "note": "Будущий 301 сохранит категорию и номер списка; набор туров на страницах не объявляется идентичным.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:00:58.767Z",
+      "checkedBy": "reverse-worker-mvi83xgd-3cwif9g4q3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package?page=7",
@@ -385,5 +395,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:00:32.612Z"
+  "updatedAt": "2026-10-21T15:00:58.767Z"
 }

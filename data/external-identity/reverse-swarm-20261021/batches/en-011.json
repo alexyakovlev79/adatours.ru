@@ -502,7 +502,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: category, HTTP 200, H1 «Excursions to countries of Latin America», crawlReport adatours-com-crawl-002.json; snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Excursions to countries of Latin America». module/productsjson по datasrc страницы HTTP 200, total=0. Состав EN: products=[].",
+        "Текущий main src/content/destinations/paraty.md, approved destination_brazil_paraty, «Парати». Проверенный RU-каталог /brazil/paraty/ HTTP 200, H1 «2 экскурсии в Парати, Бразилия - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours»; всего 2 продуктов до пагинации."
+      ],
+      "note": "География и тип каталога сопоставимы, но состав различается: EN 0, RU 2. Равенство каталога не подтверждено; sameAs не назначен. Это не отрицание возможных пар отдельных программ.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:16:11.546Z",
+      "checkedBy": "reverse-worker-mvib4yya-sd3rdqazv2p",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/paraty/packages",
@@ -535,5 +545,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:16:08.969Z"
+  "updatedAt": "2026-10-21T16:16:11.546Z"
 }

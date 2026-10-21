@@ -14,7 +14,7 @@
     "firstInventoryPosition": 571,
     "lastInventoryPosition": 787
   },
-  "status": "in_progress",
+  "status": "completed",
   "notes": [
     "Explicit user request: resolve second 50 review records with >=70% acceptance. Original worker records retained unchanged. No production deploy, sameAs publication or redirect activation."
   ],
@@ -4004,7 +4004,57 @@
         "batchBlobSha": "94340646bfed4f8fa3890d7d0b78bef146a4f9f3",
         "reviewOrder": 100
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/brazil/tour/tropical-wedding-ceremony/",
+        "targetId": "tour_source_wedding_ceremony_tropical_package",
+        "comparedId": "tour_source_wedding_ceremony_tropical_package",
+        "targetContentPath": "src/content/tours/wedding-ceremony-tropical-package.md",
+        "targetBlobSha": "59aa81ef8c5fc48f5853070477da0be0a350622b",
+        "confidence": 0.75,
+        "accepted": true,
+        "basis": "editorial_package_successor",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.753Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/wedding-ceremony-tropical-package → HTTP 200, title «Тропическая свадебная церемония», 50195 байт, SHA-256 090ddc9875bdddc53d47024751115694764f3766ea0c6e6151377de89530604a. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/wedding-ceremony-tropical-package.md, blob 59aa81ef8c5fc48f5853070477da0be0a350622b: approved, tour_source_wedding_ceremony_tropical_package; RU цель https://adatours.ru/brazil/tour/tropical-wedding-ceremony/ → HTTP 200, SHA-256 cce29583ddd0afdfb0fdb3c795e5d3d13db0d6deb2eb3a25e3d3d963a949007a.",
+          "Один и тот же уникальный пакет tropical-package: точное название «Тропическая свадебная церемония», исходный код брони 2835 и цена $4063; в RU тот же именованный пакет и $4063. Исходный раздел описания пуст, хлебные крошки относят к Ангра-душ-Рейш, RU — к Рио. При пороге 70% принят актуальный пакет-преемник, но тождество места церемонии и состава услуг не утверждается."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-100",
+          "url": "https://vipdeluxetravel.ru/wedding-ceremony-tropical-package",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/wedding-ceremony-tropical-package",
+          "sha256": "090ddc9875bdddc53d47024751115694764f3766ea0c6e6151377de89530604a",
+          "bytes": 50195,
+          "title": "Тропическая свадебная церемония",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/wedding-ceremony-tropical-package\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "tour_source_wedding_ceremony_tropical_package",
+          "url": "https://adatours.ru/brazil/tour/tropical-wedding-ceremony/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/brazil/tour/tropical-wedding-ceremony/",
+          "sha256": "cce29583ddd0afdfb0fdb3c795e5d3d13db0d6deb2eb3a25e3d3d963a949007a",
+          "bytes": 71274,
+          "title": "Тур Тропическая свадебная церемония в Рио-де-Жанейро на 1 день по цене от $4 063 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/brazil/tour/tropical-wedding-ceremony/\">"
+          ],
+          "dayHeadings": [
+            "1 день",
+            "1 день"
+          ]
+        }
+      }
     }
   ],
   "mainCatalogueProof": {
@@ -4079,9 +4129,19 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:58.580Z",
+  "updatedAt": "2026-10-21T16:36:00.355Z",
   "progress": {
-    "resolved": 49,
+    "resolved": 50,
     "total": 50
+  },
+  "completedAt": "2026-10-21T16:36:00.355Z",
+  "summary": {
+    "total": 50,
+    "redirect_ready": 43,
+    "gone_410": 7,
+    "unresolved": 0,
+    "probabilityThreshold": 0.7,
+    "minAcceptedConfidence": 0.75,
+    "productionApplied": false
   }
 }

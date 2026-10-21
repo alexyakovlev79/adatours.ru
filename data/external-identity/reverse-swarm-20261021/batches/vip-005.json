@@ -122,7 +122,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/f8b74daac104f3516c69e9f8.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/el-salvador/san-salvador/",
+      "evidence": [
+        "Frozen VIP inventory #526: snapshotHttp=200, pageType=excursion_listing, title=\"(empty)\", H1=\"(empty)\"; snapshotFile=snapshots/f8b74daac104f3516c69e9f8.html; live HTTP не проверен.",
+        "RU Excursion-каталог места destination_el_salvador_san_salvador через excursionDestinationPath(): в каталоге есть действующая Excursion excursion_san_salvador_joya_de_ceren_san_andres, MD status=approved, основной destinationIds содержит этот город."
+      ],
+      "note": "Тип и география каталога совпадают. Идентичность прежнего ассортимента не установлена: VIP listing имеет пустой title/H1 в сохраненном обходе. 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:46:27.014Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-san-hose-stolicu-kosta-riki",
@@ -365,5 +375,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:46:22.958Z"
+  "updatedAt": "2026-10-21T14:46:27.014Z"
 }

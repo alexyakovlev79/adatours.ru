@@ -505,7 +505,19 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан текущий EN HTML 2026-10-21T15:37:36.478115+00:00: HTTP 200, 50774 bytes, SHA-256 cf1dca5ea9e9bc724ffdf305420aafb8e00c1193df369dbd7c9316ea9bba2e91; canonical https://adatours.com/chile-cruise; H1 Chile cruise.",
+        "Frozen inventory blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType other, сохранённый HTTP 200, snapshotFile отсутствует; использовано фактическое текущее содержание.",
+        "EN — блоговая статья Chile cruise от 04.04.2025: общий рассказ о морском путешествии Ушуайя — мыс Горн — пролив Дрейка — Антарктика — Пунта-Аренас. Нет фиксированного числа дней, судна, даты отправления или полного перечня включённых услуг.",
+        "Прочитан main src/content/tours/patagoniya-i-chilijskie-fordy.md, blob e54ee4219b10e04c34a218b4af484b09e82a2c25, stable ID tour_source_patagoniya_i_chilijskie_fordy: 9-дневный круиз Пуэрто-Монт — фьорды Патагонии — Ушуайя, без описанного в EN маршрута через Антарктику. Также проверена country_chile и текущая подборка туров Чили."
+      ],
+      "note": "Статья об общем круизном направлении не является карточкой того же Tour. Конкретная программа с совпадающими маршрутом, длительностью и условиями не подтверждена; sameAs к круизу или странице Чили не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:43:56.738Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/chile-en/excursions",
@@ -672,5 +684,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:43:52.248Z"
+  "updatedAt": "2026-10-21T15:43:56.738Z"
 }

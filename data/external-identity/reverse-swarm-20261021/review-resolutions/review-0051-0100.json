@@ -767,7 +767,49 @@
         "batchBlobSha": "8c1e6c447f94efb0ea6fb89c203883a2ffa7ad57",
         "reviewOrder": 61
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/peru/place/tumbes/",
+        "targetId": "destination_peru_tumbes",
+        "targetContentPath": "src/content/destinations/tumbes.md",
+        "targetBlobSha": "f7d03d261d8ad1c7756c11ae101186d0ca1cf8f4",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-007 #607.",
+          "Текущий main src/content/destinations/tumbes.md, blob f7d03d261d8ad1c7756c11ae101186d0ca1cf8f4: approved destination_peru_tumbes, Тумбес; прямой GET https://adatours.ru/peru/place/tumbes/ → HTTP 200, SHA-256 8a4c5a0c9dac3c8841f0b4c26edc276bdcbdb9fa8ca5a68d2f3cf33b1ef6aa06."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Тумбес». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-61",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tumbes-v-peru/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tumbes-v-peru/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_peru_tumbes",
+          "url": "https://adatours.ru/peru/place/tumbes/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/peru/place/tumbes/",
+          "sha256": "8a4c5a0c9dac3c8841f0b4c26edc276bdcbdb9fa8ca5a68d2f3cf33b1ef6aa06",
+          "bytes": 116961,
+          "title": "Тумбес в Перу: локации и 1 тур. Каталог 2026-2027: цена $4 129 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/peru/place/tumbes/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 62,
@@ -1922,9 +1964,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:35.891Z",
+  "updatedAt": "2026-10-21T16:32:16.786Z",
   "progress": {
-    "resolved": 10,
+    "resolved": 11,
     "total": 50
   }
 }

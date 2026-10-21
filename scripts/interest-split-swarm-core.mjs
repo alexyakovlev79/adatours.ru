@@ -89,7 +89,7 @@ export function checkArticleInvariant(before,after,task) {
   for(const key of ['targetPath','kind','status']) if(field(before,key)!==field(after,key)) throw Error('Forbidden article frontmatter change: '+key);
   if(field(before,'targetPath')!==task.url) throw Error('Article targetPath does not match reserved task URL');
   if(after.length<250||!head(after))throw Error('Article truncated or malformed');
-  if(/\btheme_wildlife\b/.test(head(after)) && /\btheme_nature\b/.test(head(after)) && false)throw Error('unreachable');
+  if(after.includes('\u0000'))throw Error('NUL byte not allowed in article');
 }
 export function finish(state,{ownerId,token,results,nowMs}) {
   const rows=requireLease(state,{ownerId,token,ids:results.map(x=>x.id),nowMs});

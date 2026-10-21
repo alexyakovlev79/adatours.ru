@@ -354,7 +354,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Montevideo Tours | Old City, Rambla & Markets | Ada Tours», H1 «Montevideo: Tours to Uruguay's Capital, Old City, and Waterfront», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: package category_id=131, offerCount=7; productsjson вернул 7 программ, включая uid 2984 Montevideo City pack 2022, 3031 Argentina: Buenos Aires–Salta–Iguassu и 4365 Chile-Argentina-Brazil.",
+        "RU /uruguay/place/montevideo/tour/ HTTP 200: 8 программ с Монтевидео в основном маршруте, в том числе Бразилия/Аргентина/Уругвай 13 дней, Уругвай/Парагвай 16 дней, Уругвай: Вино и Традиции Староверцев, 6 и 8 стран Южной Америки."
+      ],
+      "note": "Не совпадают размер и логика состава: EN 7 программ с историческим City pack 2022; RU 8 основных маршрутов. Для sameAs необходим одинаковый каталог, он не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:56:10.647Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/morro-de-sao-paulo/excursions",
@@ -487,5 +498,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:56:07.880Z"
+  "updatedAt": "2026-10-21T15:56:10.647Z"
 }

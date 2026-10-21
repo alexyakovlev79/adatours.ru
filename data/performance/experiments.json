@@ -11,20 +11,58 @@
       "status": "complete",
       "hypothesis": null,
       "state": "After viewport lazy load. Brazil Desktop video, Mobile poster.",
-      "devices": ["Mobile", "Desktop"],
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
       "pages": 25,
       "runsPerPageAndDevice": 3,
       "validRuns": 150,
-      "excluded": {"DRIFT": 43, "ERROR": 1},
+      "excluded": {
+        "DRIFT": 43,
+        "ERROR": 1
+      },
       "raw": "data/performance/runs/B00.json",
       "summary": "data/performance/summaries/B00.json",
       "source": "Google PageSpeed Insights official UI, Lighthouse 13.5.0",
       "changeNotes": "Parallel tour publication changed seven HTML control pages. Their earlier series was retained as DRIFT and replaced. Final HTML checks match refresh-before checks.",
       "decision": "Discuss the next hypothesis before implementing another optimization.",
       "priorChanges": [
-        {"change": "viewport lazy images", "commits": ["b0d752ff2e52033f83f4e2e243ce43fab95d0170", "a9c464bbdf5db6e87aca66e18d6f76b4e7654448"], "effect": null, "note": "No pre-change PSI baseline was collected."},
-        {"change": "existing Brazil desktop hero-video", "effect": null, "note": "A same-device video-on/video-off comparison has not been run."}
+        {
+          "change": "viewport lazy images",
+          "commits": [
+            "b0d752ff2e52033f83f4e2e243ce43fab95d0170",
+            "a9c464bbdf5db6e87aca66e18d6f76b4e7654448"
+          ],
+          "effect": null,
+          "note": "No pre-change PSI baseline was collected."
+        },
+        {
+          "change": "existing Brazil desktop hero-video",
+          "effect": null,
+          "note": "A same-device video-on/video-off comparison has not been run."
+        }
       ]
+    },
+    {
+      "id": "P02",
+      "kind": "optimization",
+      "date": "2026-10-21",
+      "status": "awaiting-deploy",
+      "authorization": "User explicitly requested live mobile connection and measurements, with homepage country/adventure screenshots.",
+      "hypothesis": "Reuse prepared mobile crop assets for seven opted-in homepage covers; preserve image loading window and desktop originals.",
+      "scope": "Homepage country backgrounds (5) and wildlife/adventure (2), <=479 CSS px. Other card uses and hero/video behavior unchanged.",
+      "devices": [
+        "Mobile",
+        "Desktop"
+      ],
+      "runsPerPageAndDevice": 3,
+      "raw": "data/performance/runs/P02-home-mobile-cards-20261021.json",
+      "assetBytes": {
+        "before": 2398612,
+        "after": 540154
+      },
+      "decision": "Complete publication, verify selected sources and compare three before/after PSI runs; do not attribute below-fold weight reduction to startup LCP without measurements."
     }
   ]
 }

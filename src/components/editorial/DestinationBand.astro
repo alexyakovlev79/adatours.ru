@@ -11,6 +11,7 @@ interface Props {
   text?: string;
   href: string;
   image?: string;
+  mobileCover?: { src: string; position: string };
   align?: 'left' | 'right';
   imageTextAlign?: 'left' | 'right';
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
@@ -26,6 +27,7 @@ const {
   text,
   href,
   image,
+  mobileCover,
   align = 'left',
   imageTextAlign,
   mediaStatus,
@@ -35,7 +37,7 @@ const {
 } = Astro.props;
 
 const resolvedImage = image ? withBase(image) : undefined;
-const style = resolvedImage ? `--band-image: url("${resolvedImage}")` : undefined;
+const style = resolvedImage ? `--band-image: url("${resolvedImage}")${mobileCover ? `;--band-mobile-image: url("${withBase(mobileCover.src)}");--band-mobile-position: ${mobileCover.position}` : ''}` : undefined;
 const resolvedHref = withBase(href);
 const resolvedAlign = imageTextAlign ?? align;
 const vip = (await getVipTourPaths()).has(href);
@@ -61,6 +63,7 @@ const vip = (await getVipTourPaths()).has(href);
   </a>
 ) : (
   <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image, 'band--strong-overlay': strongOverlay }]} href={resolvedHref} style={style}
+    data-mobile-cover={mobileCover ? 'home-p02' : undefined}
     data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
@@ -196,6 +199,13 @@ const vip = (await getVipTourPaths()).has(href);
     background-image: var(--band-image);
     background-size: cover;
     background-position: center;
+  }
+
+  @media (max-width: 479px) {
+    .band--image[data-mobile-cover="home-p02"] {
+      background-image: var(--band-mobile-image, var(--band-image));
+      background-position: var(--band-mobile-position, center);
+    }
   }
 
   .band__overlay {

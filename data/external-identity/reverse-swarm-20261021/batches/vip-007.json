@@ -582,7 +582,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/cdc44c0976fa2e252d8a8b09.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory №609: страница типа tour_listing, сохраненный HTTP 200, исходный title пуст, snapshotFile=snapshots/cdc44c0976fa2e252d8a8b09.html; содержимое старого HTML не исследовано.",
+        "RU source-index: approved Destination destination_el_salvador_uajua существует; ни одна active Tour не ссылается на destination_el_salvador_uajua, поэтому непустой каталог туров этого места не подтвержден."
+      ],
+      "note": "В старом URL заявлен список туров по объекту «Уайуа», но сейчас нет действующих RU продуктов с соответствующей связью. Редакционно выбрать переход на страницу места или 410; запрет на 301 к пустому каталогу/главной.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:57:25.460Z",
+      "checkedBy": "reverse-worker-mvi83j7a-l8szybbr92h",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvadore/ekskursii",
@@ -595,5 +605,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:57:19.663Z"
+  "updatedAt": "2026-10-21T14:57:25.460Z"
 }

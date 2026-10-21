@@ -696,7 +696,27 @@
         "batchId": "vip-018",
         "batchSha": "5233d0a65058e43c23e694db6f3190e12b962a71"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/guatemala/place/huehuetenango/",
+        "relation": "redirect_301",
+        "confidence": 0.97,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:35:48.119Z",
+        "reason": "Полный VIP-текст, как и RU, описывает сам Уэуэтенанго, Кучуматанес, рынок Indígena и кофе. Закулеу присутствует в title, но не является отдельной программой в содержимом.",
+        "evidence": [
+          "Открыт текст VIP: H1 «Уэуэтенанго», город и рынок Indígena; самостоятельной программы по Закулеу в тексте нет.",
+          "Проверен текущий main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/destinations/ueuetenango.md, blob 17bb000a63e89fb0c64a2a33658ac52f6af5144d, canonical /guatemala/place/huehuetenango/."
+        ],
+        "targetEntityId": "destination_guatemala_ueuetenango"
+      },
+      "sourceObservation": {
+        "n": 113,
+        "sourceUrl": "https://vipdeluxetravel.ru/gvatemala-ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale",
+        "http": 503,
+        "error": "HTTP Error 503: Service Unavailable"
+      }
     },
     {
       "reviewOrder": 114,
@@ -1777,7 +1797,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:36:07.963Z",
+  "updatedAt": "2026-10-21T16:36:10.427Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

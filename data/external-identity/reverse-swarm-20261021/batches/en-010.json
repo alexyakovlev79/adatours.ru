@@ -207,7 +207,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Excursions and tours to the capital of Mexico, Mexico City», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTML HTTP 200, typeid=2&category_id=190; productsjson с исходным datasrc возвращает products=[], total=0.",
+        "RU /mexico/mexico-city-and-teotihuacan/ HTTP 200: каталог «6 экскурсий в Мехико (руины Теотиуакана)»; source-index destination_mexico_mehiko_siti_ruiny_teotihuakana."
+      ],
+      "note": "Один и тот же составной регион Мехико/Теотиуакан, но каталог EN пуст, RU содержит 6 экскурсий. География не заменяет равенство набора; sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:54:11.103Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/mexico-city/packages",
@@ -410,5 +421,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:54:08.932Z"
+  "updatedAt": "2026-10-21T15:54:11.103Z"
 }

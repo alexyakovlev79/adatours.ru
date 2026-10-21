@@ -85,7 +85,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-003: title «Excursions and tours in Valparaíso, Chile», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "21.10.2026: EN HTML HTTP 200: экскурсионный фильтр typeid=2&category_id=91, productsjson products=[], total=0.",
+        "RU /chile/valparaiso-vina-del-mar/ HTTP 200: 2 экскурсии в Вальпараисо и Винья-дель-Мар. Source-index destination_chile_valparaiso_i_vinya_del_mar — составной регион двух городов."
+      ],
+      "note": "Пустая EN-выдача экскурсий Вальпараисо не совпадает с двумя RU-экскурсиями объединенного направления Вальпараисо/Винья-дель-Мар. Не доказаны одинаковые фильтр и состав, sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:21:57.501Z",
+      "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/valparaiso/packages",
@@ -228,5 +239,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:21:55.122Z"
+  "updatedAt": "2026-10-21T16:21:57.501Z"
 }

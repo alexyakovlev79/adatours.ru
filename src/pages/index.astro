@@ -495,6 +495,15 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
   .home-final p:not(.eyebrow) { max-width: 640px; color: rgb(255 255 255 / 78%); font-size: var(--text-lg); }
   .home-final a { display: inline-flex; gap: 25px; margin-top: 22px; padding: 14px 0; border-bottom: 1px solid currentColor; color: #fff; }
 
+  /* Narrow desktop tiles always keep their copy left-aligned. */
+  @media (min-width: 761px) {
+    .home-interest-grid :global(.interest-card:nth-child(5n + 3) .interest-card__copy),
+    .home-interest-grid :global(.interest-card:nth-child(5n + 4) .interest-card__copy),
+    .home-interest-grid :global(.interest-card:nth-child(5n + 5) .interest-card__copy) { text-align: left; }
+    .home-interest-grid :global(.interest-card:nth-child(5n + 3) h3),
+    .home-interest-grid :global(.interest-card:nth-child(5n + 4) h3),
+    .home-interest-grid :global(.interest-card:nth-child(5n + 5) h3) { margin-left: 0; }
+  }
   @media (max-width: 980px) {
     .home-country-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .home-services__grid { min-height: 670px; }

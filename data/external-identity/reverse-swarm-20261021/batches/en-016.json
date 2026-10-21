@@ -263,7 +263,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-003: title «Romantic tours and wedding arrangements  & Vacation packages | Guided trips to South America with Ada Tours», H1 «Choose your wedding ceremony», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "21.10.2026: EN HTTP 200: тематическая категория Weddings and Romance, category_id=672, H1 «Choose your wedding ceremony». productsjson с исходным datasrc возвращает products=[], total=0.",
+        "RU /interests/weddings-and-romance/ HTTP 200: «Свадьбы и романтические путешествия — 4 тура», готовые свадебные/романтические программы."
+      ],
+      "note": "Тема свадеб и романтики совпадает, но EN-каталог пуст, RU содержит 4 программы. Подтвержденного равенства каталогов нет, sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:23:25.697Z",
+      "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/when-is-the-best-time-to-visit-the-marvellous-city",
@@ -316,5 +327,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:23:23.151Z"
+  "updatedAt": "2026-10-21T16:23:25.697Z"
 }

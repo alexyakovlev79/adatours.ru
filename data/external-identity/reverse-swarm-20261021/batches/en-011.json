@@ -102,7 +102,17 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: pageType other, snapshotHttp 200, title DMC Brazil & South America: Tour Operator for Latin America | Ada Tours; snapshotFile не задан.",
+        "Живой запрос GET без следования редиректу 21.10.2026 подтвердил HTTP 301, Location: https://adatours.com/. С follow получена главная HTTP 200, H1 «Tours to all the countries of Latin America». /packages не является самостоятельным активным каталогом."
+      ],
+      "note": "Подтвержденный технический redirect-alias главной страницы EN. Исключен как самостоятельная сущность; содержимое главной после 301 не выдано за новый sameAs /packages и не сопоставлялось RU-каталогу /tours/.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:11:48.454Z",
+      "checkedBy": "reverse-worker-mvib4yya-sd3rdqazv2p",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/palenque/excursions",
@@ -315,5 +325,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:09:40.529Z"
+  "updatedAt": "2026-10-21T16:11:48.454Z"
 }

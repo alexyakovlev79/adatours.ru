@@ -370,7 +370,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Diving tours  & Vacation packages to Mexico, the Dominican Republic, Brazil, Panama, Venezuela, Costa Rica, Nicaragua, Ecuador, Honduras, Belize, and Colombia  |Diving  trips to Latin America  with Ada Tours», H1 «DIVING TOURS TO SOUTH AND CENTRAL AMERICA». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/diving-vacations: HTTP 200, canonical=https://adatours.com/diving-vacations, H1 «DIVING TOURS TO SOUTH AND CENTRAL AMERICA».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isThemesCategory&typeid=1&hideFilters=1&hideMoreButton=0&category_id=17. Первый ответ API: total=3, products=3. Примеры ID/названий: 4154 «Beaches of Brazil»; 4382 «Belize: Inland/ Island Adventure»; 790 «Authentic Costa  Rican Jewels».",
+        "https://adatours.ru/interests/diving/ — HTTP 200, canonical совпадает, H1 «Дайвинг». На странице представлены 4 тура и география Коста-Рика/Эквадор/Бразилия, включая отдельный дайвинг на Галапагосах 4/5 дней."
+      ],
+      "note": "EN Diving показывает 3 программы, включая Belize: Inland/Island Adventure; RU подборка содержит 4 другие комбинации и отдельную галапагосскую программу. Одинаковая тема не означает одинаковый состав sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:42.090Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/dmc-argentina-travel-agencies-2026",
@@ -503,5 +515,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:33.658Z"
+  "updatedAt": "2026-10-21T15:46:42.090Z"
 }

@@ -292,7 +292,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: category, HTTP 200, H1 «Panama: Tours to the Panama Canal and Archipelago Beaches», crawlReport adatours-com-crawl-002.json; snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Panama: Tours to the Panama Canal and Archipelago Beaches». module/productsjson по datasrc страницы HTTP 200, total=8. Состав EN: 2970 The Best of Central America; 4128 Adventures in Panama; 3742 Panama, Costa Rica &amp;Nicaragua ; 1137 Luxury Panama; 4111 The Best of  Panama  ; 4407 A grand journey through Panama; 2273 Luxury Panama; 4112 Panama:  San Blas.",
+        "Текущий main src/content/countries/panama.md, approved country_panama, «Панама». Проверенный RU-каталог /panama/tour/ HTTP 200, H1 «Туры в Панаму»; всего 12 продуктов до пагинации."
+      ],
+      "note": "География и тип каталога сопоставимы, но состав различается: EN 8, RU 12. Равенство каталога не подтверждено; sameAs не назначен. Это не отрицание возможных пар отдельных программ. Для EN-запроса с size=24 проверены slice=1 (8 UID) и slice=2/3 (пусто); это не вывод по одной пустой SSR-разметке.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:15:00.227Z",
+      "checkedBy": "reverse-worker-mvib4yya-sd3rdqazv2p",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/pantanal-wildlife-photography-trip-2026",
@@ -475,5 +485,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:14:15.095Z"
+  "updatedAt": "2026-10-21T16:15:00.227Z"
 }

@@ -3382,7 +3382,57 @@
         "batchBlobSha": "37db2926bfced9cf7d2fb73624d33343f2f3ac91",
         "reviewOrder": 93
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/multi-country/tour/best-of-argentina-14-days/",
+        "targetId": "tour_argentina_best_14_days",
+        "comparedId": "tour_argentina_best_14_days",
+        "targetContentPath": "src/content/tours/best-of-argentina-14-days.md",
+        "targetBlobSha": "3c74211dd19d1d3044bc385f6bea1495544464f7",
+        "confidence": 0.94,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.739Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/luchshee-v-argentine-2026 → HTTP 200, title «Лучшее в Аргентине 2026», 61683 байт, SHA-256 ff92f82dbf7992d5b8fa57b200f85b3130e244e0e7643f0eb9d0f74100d1f3c5. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/best-of-argentina-14-days.md, blob 3c74211dd19d1d3044bc385f6bea1495544464f7: published, tour_argentina_best_14_days; RU цель https://adatours.ru/multi-country/tour/best-of-argentina-14-days/ → HTTP 200, SHA-256 0ac56a7e2521c0540ff45b98a0ff4b4d0998c58d0af320bce8608a5f218f266b.",
+          "Прямой HTML вместо пустой метаописи дает 14 дней /13 ночей и цепочку Буэнос-Айрес → Калафате → Ушуайя → Барилоче → Игуасу. В текущем RU тот же маршрут и длительность."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-93",
+          "url": "https://vipdeluxetravel.ru/luchshee-v-argentine-2026",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/luchshee-v-argentine-2026",
+          "sha256": "ff92f82dbf7992d5b8fa57b200f85b3130e244e0e7643f0eb9d0f74100d1f3c5",
+          "bytes": 61683,
+          "title": "Лучшее в Аргентине 2026",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/luchshee-v-argentine-2026\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "tour_argentina_best_14_days",
+          "url": "https://adatours.ru/multi-country/tour/best-of-argentina-14-days/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/multi-country/tour/best-of-argentina-14-days/",
+          "sha256": "0ac56a7e2521c0540ff45b98a0ff4b4d0998c58d0af320bce8608a5f218f266b",
+          "bytes": 297765,
+          "title": "Тур Лучшее в Аргентине: 14 дней с Барилоче и Игуасу по цене от $5 096 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/multi-country/tour/best-of-argentina-14-days/\">"
+          ],
+          "dayHeadings": [
+            "Дни Основной район",
+            "День на аргентинской стороне сосредоточен на дорожках, верхнем и нижнем маршрутах и смотровых у Глотки Дьявола. Пуэрто-Игуасу служит отправной точкой для знакомства с этой стороной каскадов. На бразильской стороне, в районе Фоз-ду-Игуасу , основная экскурсия дает более широкие панорамы всей системы водопадов. Оба посещения входят в основной маршрут и проводятся индивидуально с русскоговорящим гидом."
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 94,
@@ -3667,9 +3717,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:46.148Z",
+  "updatedAt": "2026-10-21T16:35:47.811Z",
   "progress": {
-    "resolved": 42,
+    "resolved": 43,
     "total": 50
   }
 }

@@ -422,7 +422,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/542353542ccff153483890ce.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан точный снимок snapshots/542353542ccff153483890ce.html, проверен SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855; snapshotHttp 200, pageType excursion_listing, H1 «». Пустой HTML /ekskursii (0 байт); родитель — страна Суринам, не город Парамарибо и не весь регион Гвиан.",
+        "В текущем main source-index экскурсий нет активных продуктов country_suriname; маршрутизатор не создаёт соответствующий страновой экскурсионный каталог. Страновая страница и каталог туров доступны, но их назначение иное. Проверка RU-цели 21.10.2026: https://adatours.ru/suriname/excursion/ → HTTP 404; активный каталог по этому адресу отсутствует."
+      ],
+      "note": "Каталог экскурсий Суринама отсутствует (HTTP 404). Нужен отдельный выбор: страновая страница либо 410. Каталог многодневных туров не назначен как подтверждённая замена каталогу экскурсий; 301 не готов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:39:39.966Z",
+      "checkedBy": "reverse-worker-mvi7p2m1-46jkr1l3h9z",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-suchitoto-v-ehl-salvadore",
@@ -515,5 +525,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:39:36.139Z"
+  "updatedAt": "2026-10-21T14:39:39.966Z"
 }

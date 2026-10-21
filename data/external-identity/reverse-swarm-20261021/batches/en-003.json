@@ -311,7 +311,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 прочитаны EN HTML (GET 200/self-canonical, SHA-256 446dd57390456cc5940c7ba90dc821afb778cc0ee7b6fa824e07b55c73590a86) и JSON, который использует публичный каталог (SHA-256 efce2935025fa4d81cce9d4edeaa2af2dd3d18cd4e9faf7e5d8d91fba48c83f8). EN Brasilia excursions: H1 об архитектуре Нимейера, но gallery без товаров и API category_id=72/typeid=2 products=[], total=0.",
+        "Сверены активные MD, source-index, правила каталогов и живой RU HTTP в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2. В current main у destination_brazil_brasilia нет активных экскурсий; /brazil/brasilia/ HTTP 404. /brazil/place/brasilia/ — описание города, а не тот же каталог.",
+        "Frozen inventory: pageType=category, snapshotHttp=200, H1 «Brasilia Excursions: Niemeyer Architecture and UNESCO Sites», crawlReport=adatours-com-crawl-001.json; snapshotFile не задан, приватный снимок не заявляется просмотренным."
+      ],
+      "note": "Подтверждённой sameAs-пары нет: одно географическое название не делает каталоги идентичными. Пустой EN-ассортимент и/или другой RU-состав отражены как отсутствие подтверждения, не как технический retry; связь не опубликована.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:16.056Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/brasilia/packages",
@@ -414,5 +425,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:09.945Z"
+  "updatedAt": "2026-10-21T15:38:16.056Z"
 }

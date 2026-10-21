@@ -122,7 +122,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/caacf0ed247ce755a446f167.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #406: /ekskursii при странице Парамарибо, pageType=excursion_listing, HTTP 200 в исторической описи, но title/H1 самого листинга пусты.",
+        "В текущем source-index/catalogs/excursions.json нет неархивных Excursion с destinationIds или relatedDestinationIds=destination_suriname_paramaribo; активный RU-каталог экскурсий этого места не подтвержден."
+      ],
+      "note": "Для /ekskursii города Парамарибо нет подтвержденного непустого целевого каталога; решение об альтернативе — страница города или 410 — требует отдельного рассмотрения. Не направлять на главную.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:41:59.937Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-parati-v-brazilii",
@@ -365,5 +375,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:41:54.895Z"
+  "updatedAt": "2026-10-21T14:41:59.937Z"
 }

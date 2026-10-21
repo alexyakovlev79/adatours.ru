@@ -75,12 +75,12 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
 
 // Enable the mobile homepage video only after its exact S3 upload receipt is committed.
 // Until then, phones retain the existing static hero image.
-const homeMobileHeroKey = 'media/home/home-hero-mobile-20261020-v1.mp4';
+const homeMobileHeroKey = 'media/home/home-hero-mobile-20261021-v1.mp4';
 const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
   asset.key === homeMobileHeroKey &&
   asset.contentType === 'video/mp4' &&
-  asset.sha256 === 'dbf0e5b1480228f34025d378523ae0b4d5bb47eb2f7b9e0ff6427f21315d2fcb' &&
-  asset.bytes === 1609018
+  asset.sha256 === '83ad6267234a817d72fc9428796f3b7338e4677289abf69fb2da9a8424c2241a' &&
+  asset.bytes === 1606586
 ) ? `/${homeMobileHeroKey}` : undefined;
 ---
 

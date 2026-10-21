@@ -213,7 +213,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN первый запрос вернул 503, адресный повтор успешен: HTTP 200, canonical /belize-placencia/excursions; title Пласенсия, H1 общий Excursions to countries of Latin America. Карточек нет, текст общий про Бразилию/фавелы/Бонито. SHA-256 500f533d530202c1f0139d50202131a54179d2f8c7e8fbc57bd9da8bc8d33f88.",
+        "RU main source-index: destination_belize_plasensiya /belize/place/placencia/ — место; excursions.json blob 402b7d42c61bc17709c1ae07fc92dfa32ee08327 не содержит экскурсионных сущностей с этим destinationId, поэтому соответствующий каталог маршрутизатором не создаётся.",
+        "Frozen inventory: category, snapshotHttp 200, category_id 42, H1 общий; snapshotFile отсутствует. Реальный HTML прочитан после восстановления доступа."
+      ],
+      "note": "Пустой по товарам EN-каталог Пласенсии не имеет подтвержденного RU-эквивалента того же типа и состава; карточка курорта не подходит для sameAs. Временный 503 устранён повтором, технического хвоста не осталось.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:51.229Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-placencia/packages",
@@ -416,5 +427,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:08.162Z"
+  "updatedAt": "2026-10-21T15:39:51.229Z"
 }

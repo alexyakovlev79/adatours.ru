@@ -222,7 +222,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/55ce0683d71b3bba45c2726f.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #471: /packages под исторической страницей курорта Пуэрто-Вальярта, тип tour_listing, HTTP 200, title пустой; состав старых туров не раскрыт.",
+        "В текущем RU каталоге data/source-index/catalogs/tours.json нет активных Tour с местом destination_mexico_puerto_valyarta; следовательно /mexico/place/puerto-vallarta/tour/ как непустая страница не генерируется."
+      ],
+      "note": "Не подтвержден RU-каталог туров Пуэрто-Вальярты. Нельзя направлять на потенциальный 404; решение о странице курорта вместо каталога или 410 отложено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:55:35.025Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-kurort-puehrto-valyarta-v-meksike/ekskursii",
@@ -415,5 +425,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:55:02.173Z"
+  "updatedAt": "2026-10-21T14:55:35.025Z"
 }

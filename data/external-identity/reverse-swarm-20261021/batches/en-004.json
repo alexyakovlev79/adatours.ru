@@ -551,7 +551,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:37:38.748533+00:00; HTTP 200, 99113 bytes, SHA-256 db05a9a6495129a4998f987a637cd271c6f0d9ba932c1160d5c1da4f1057e7ca; canonical https://adatours.com/chile-santiago/excursions. Title Excursions and tours to the capital of Chile, the city of Santiago de Chile; H1 Excursions to countries of Latin America.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (0): в данном HTML карточки не обнаружены.",
+        "RU-кандидат определён по канонической сущности destination_chile_santyago_de_chili, data/source-index/entries/destination_chile_santyago_de_chili.json, blob edaa24a8d4c94c6c309c83d76f6a6f4a63bde7bb и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/chile/santiago-de-chile/: HTTP 200; canonical https://adatours.ru/chile/santiago-de-chile/; H1 8 экскурсий в Сантьяго-де-Чили, Чили - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours; SHA-256 6c5178f527e9f27d4004c7c8fbe27cb58c012da3ca5f861baea2315ea07d0c48.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "EN HTML имеет общий H1 и не показывает карточек; RU содержит 8 экскурсий по Сантьяго-де-Чили. Активные составы не совпали, sameAs не подтверждён."
+      ],
+      "note": "EN HTML имеет общий H1 и не показывает карточек; RU содержит 8 экскурсий по Сантьяго-де-Чили. Активные составы не совпали, sameAs не подтверждён.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:06.523Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/chile-santiago/packages",
@@ -604,5 +618,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:42:03.904Z"
+  "updatedAt": "2026-10-21T15:42:06.523Z"
 }

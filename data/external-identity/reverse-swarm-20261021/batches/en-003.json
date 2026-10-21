@@ -252,7 +252,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/bolivia/place/sucre/tour/",
+      "evidence": [
+        "21.10.2026 исходный каталог GET 200/self-canonical, HTML SHA-256 121d305cd5262fdb37e9618e9b2fbdca1a2e6d9e88c5b83b26ca8596378da0a5; проверен публичный productsjson, использующий datasrc страницы, SHA-256 885c2a9d3ec27f17dd0c65c9dc82252b26e264824c38ea94c5542dbd5cf260b5. EN category_id=174/typeid=1 содержит ровно Treasures of Bolivia,12 дней/11 ночей; источник подробно отводит день 4 на перелёт Санта-Крус–Сукре, день 5 на город (Casa de la Libertad, ASUR/Recoleta), день 6 на Сукре–Потоси–Уюни. Полная 12-дневная программа прочитана.",
+        "Проверены active MD, source-index и живой RU-каталог в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2: RU каталог destination_bolivia_sukre содержит ровно tour_source_sokrovishcha_bolivii, published,12 дней. Совпали все дневные этапы, в том числе два дня/две ночи Сукре и переезд через Потоси, ночёвки, завтрак/экскурсии/входные билеты и полный пансион пакета Уюни. Каталог не подменён страницей самого Сукре.",
+        "Точный RU canonical отвечает HTTP 200, self-canonical, robots index,follow, H1 указывает тот же тип/место и количество. Frozen: snapshotHttp=200, pageType=category, crawlReport=adatours-com-crawl-001.json, snapshotFile отсутствует; использованы действующие EN-страницы."
+      ],
+      "note": "Подтверждён sameAs именно каталога: одинаковые тип продукта, географический фильтр и полный состав действующих предложений. Программы составляющих проверены по содержанию, не только по slug/названию. Разметка сайта не изменена.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:39:47.654Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-uyuni-desert/excursions",
@@ -480,5 +491,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:45.362Z"
+  "updatedAt": "2026-10-21T15:39:47.654Z"
 }

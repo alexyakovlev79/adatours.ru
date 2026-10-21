@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
-    "token": "reverse-lease-mvi7vc6u-3nlan9gideg",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:37:54.339Z",
-    "expiresAt": "2026-10-21T16:07:54.339Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-san-pedro-la-laguna-v-gvatemale",
@@ -602,8 +596,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/cb271254da687afd4a92bda6.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #550: HTTP=200, pageType=excursion_listing, title=\"(empty)\", H1=\"(empty)\", snapshotFile=snapshots/cb271254da687afd4a92bda6.html. Исторический обход, без новой live-проверки.",
+        "В data/source-index/catalogs/excursions.json отсутствуют активные экскурсии с destinationIds либо relatedDestinationIds=destination_venezuela_santa_elena_de_uajren. RU Destination MD опубликован, но экскурсионный каталог /venezuela/santa-elena-de-uairen/ не подтвержден как непустой."
+      ],
+      "note": "VIP /ekskursii Санта-Елены-де-Уайрен не имеет непустого RU аналога. Требуется редакционное решение 410 или переход на действующую городскую страницу; нельзя выдавать пустую подборку за действующую.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:55:11.589Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:55:05.271Z"
+  "updatedAt": "2026-10-21T14:55:11.589Z",
+  "completedAt": "2026-10-21T14:55:11.589Z",
+  "lastOwner": "reverse-worker-mvi7vc6u-ulkyiawmeh9"
 }

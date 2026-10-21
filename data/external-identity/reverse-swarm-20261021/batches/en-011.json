@@ -42,7 +42,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: pageType=other, snapshotHttp=200, H1 «One DMC for a Multi-Country South America Trip», crawlReport adatours-com-crawl-002.json; snapshotFile не задан. Живой GET 21.10.2026 HTTP 200, self-canonical, H1 «One DMC for a Multi-Country South America Trip».",
+        "Живая статья Anna Avanesova, Published 08-09-2026, Updated 08-10-2026: выбор одного DMC для Brazil/Argentina/Chile/Peru, общий документ маршрута, перелеты и границы, ответственный контакт, условия единой сметы. Приведены различные примеры маршрутов и других операторов (Coltur, DMC Argentina, Ovation); это не один Tour и не полный каталог.",
+        "Проверены /dmc/ HTTP 200, H1 «DMC в Бразилии и Латинской Америке для туроператоров и турагентств» — коммерческая страница услуги; /multi-country/ HTTP 200, H1 «Туры по нескольким странам Латинской Америки» — действующая подборка 93 маршрутов. Назначение обоих RU-кандидатов отличается от сравнительной EN-статьи."
+      ],
+      "note": "Эквивалент конкретной EN-статьи среди проверенных RU-кандидатов не подтвержден. Статья о выборе DMC не является sameAs услуги DMC, каталога multi-country или упомянутого маршрута.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:11.554Z",
+      "checkedBy": "reverse-worker-mvib4yya-sd3rdqazv2p",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/orange-walk-district/excursions",
@@ -597,5 +608,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T16:17:09.252Z"
+  "updatedAt": "2026-10-21T16:17:11.554Z"
 }

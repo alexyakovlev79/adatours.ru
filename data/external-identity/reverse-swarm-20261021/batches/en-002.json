@@ -298,7 +298,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /belize-san-ignacio/excursions, self canonical; title San Ignacio, H1 общий Excursions to countries of Latin America. Карточек нет; тело — общий текст о Бразилии и её экскурсиях. SHA-256 47bac68321eba1f5ba4a03c093c96ef521fc04f400095b1157ab1d5d99d99bb4.",
+        "RU /belize/san-ignacio/ проверен live и возвращает HTTP404. Main source-index destination_belize_san_ignasio /belize/place/san-ignacio/ представляет место, а не каталог; в excursions.json нет самостоятельных продуктов с данным destinationId.",
+        "Frozen inventory category_id43, type category, snapshotHttp200, snapshotFile отсутствует. Старый title с названием города сам по себе не подтверждает товары или соответствие."
+      ],
+      "note": "Не подтвержден RU-эквивалент экскурсионного каталога Сан-Игнасио: целевой каталог 404, а городская страница другого типа. Пустой EN-каталог не сопоставляется с национальной подборкой.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:31.529Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-san-ignacio/packages",
@@ -461,5 +472,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:42:07.742Z"
+  "updatedAt": "2026-10-21T15:42:31.529Z"
 }

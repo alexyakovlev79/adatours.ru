@@ -482,7 +482,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/2087385f47109a7face81d38.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #484: /ekskursii мексиканского курорта Пуэрто-Эскондидо, pageType excursion_listing, HTTP 200 и пустой title, ассортимент источника не доказан.",
+        "Текущий data/source-index/catalogs/excursions.json не содержит ни одной активной экскурсии, связанной через destinationIds/relatedDestinationIds с destination_mexico_puerto_eskandido; непустого RU /mexico/puerto-escondido/ нет."
+      ],
+      "note": "Не найден релевантный действующий RU-каталог экскурсий. Кандидаты на решение: страница места или 410, а не перенаправление на пустой URL.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:00:21.252Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/gorod-puehrto-madrin-v-argentine",
@@ -545,5 +555,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:00:03.263Z"
+  "updatedAt": "2026-10-21T15:00:21.252Z"
 }

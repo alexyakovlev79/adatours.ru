@@ -1952,7 +1952,46 @@
         "batchId": "vip-025",
         "batchSha": "a2d56b207c2c3affdfcde3438d05326656725227"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/brazil/tour/brazil-costa-do-sauipe-beach/",
+        "relation": "redirect_301",
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:38:33.727Z",
+        "reason": "Причина REVIEW устранена: текущий main уже исправлен на Прайя-ду-Форте, как в реальном VIP-маршруте. Совпадают 12 дней, Рио, Игуасу, Сальвадор и 4 ночи пляжного отдыха.",
+        "evidence": [
+          "VIP GET 200: дни 8–12 Прайя-ду-Форте, не Коста-ду-Сауипе; прочитан #tab-subdesc.",
+          "Main title и route содержат Прайя-ду-Форте, в программе то же место и Pousada Casa do Forte. Устаревший title VIP с Коста-ду-Сауипе не принят вместо программы.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/romanticheskaya-braziliya.md, blob bdacec2215f5e9b69b79bfefe1596dd5226f0802; статус и программа прочитаны."
+        ],
+        "targetEntityId": "tour_source_romanticheskaya_braziliya"
+      },
+      "sourceObservation": {
+        "n": 135,
+        "sourceUrl": "https://vipdeluxetravel.ru/package/romanticheskaya-braziliya?page=3",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/romanticheskaya-braziliya",
+        "canonical": "https://vipdeluxetravel.ru/romanticheskaya-braziliya",
+        "sha256": "a9184904f1a600de0301f2b38bbe0b05ae24ef9f272e926b62c8e07d9a7c7112",
+        "title": "Тур в Бразилию с пляжным отдыхом в Коста ду Сауипе",
+        "h1": [
+          "Романтическая Бразилия"
+        ],
+        "dayHeadings": [
+          "День 1.Рио де Жанейро",
+          "День 2. Рио де Жанейро",
+          "День 3. Рио де Жанейро",
+          "День 4. Рио де Жанейро- Фос ду  Игуасу",
+          "День 5. Фос ду  Игуасу",
+          "День 6. Фос ду  Игуасу - Сальвадор",
+          "День 7. Сальвадор",
+          "День 8. Сальвадор– Прайя ду Форте",
+          "День  9-11. Прайя ду Форте",
+          "День 12. Прайя-ду-Форте –Салвадор"
+        ]
+      }
     },
     {
       "reviewOrder": 136,
@@ -2390,7 +2429,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:39:11.790Z",
+  "updatedAt": "2026-10-21T16:39:13.475Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

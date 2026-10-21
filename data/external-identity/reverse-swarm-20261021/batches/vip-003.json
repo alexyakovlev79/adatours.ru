@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi83yzp-devej3lzane",
-    "token": "reverse-lease-mvi83yzp-y8e6l3yh7w",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:44:36.620Z",
-    "expiresAt": "2026-10-21T16:14:36.620Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-punta-gorda-v-belize-na-karibah",
@@ -602,8 +596,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/c6a5b8594981d9c66649a0e0.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #490: исторический /ekskursii раздела Ресифи (Бразилия), pageType excursion_listing, HTTP 200 и пустой title, товарный состав источника не доказан.",
+        "В текущем data/source-index/catalogs/excursions.json отсутствуют активные Excursion с destination_brazil_recife в основном или дополнительном месте, следовательно /brazil/recife/ как непустой RU-каталог экскурсий не подтвержден."
+      ],
+      "note": "Релевантного действующего RU-каталога экскурсий Ресифи нет. Требуется редакционный выбор перенаправления на страницу города или 410; 301 не готов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:02:32.592Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:02:15.909Z"
+  "updatedAt": "2026-10-21T15:02:32.592Z",
+  "completedAt": "2026-10-21T15:02:32.592Z",
+  "lastOwner": "reverse-worker-mvi83yzp-devej3lzane"
 }

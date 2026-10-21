@@ -17,18 +17,34 @@
           "natureEquivalent": "/interests/nature/tours/paraguay/"
         }
       ],
-      "status": "review",
-      "ownerId": "isr-mvhxnj60-aazhstne1nm",
-      "token": "lease-mvhxnj60-eawjsi0pxh9",
-      "claimedAt": "2026-10-21T09:51:53.861Z",
+      "status": "done",
+      "ownerId": null,
+      "token": null,
+      "claimedAt": null,
       "leaseUntil": null,
       "attempts": 2,
-      "decision": "review",
-      "note": "Блокер тематического URL: единственный активный маршрут с основными странами Бразилия+Парагвай, tour_source_tur_po_uruguayu_i_paragvayu_16_dnej, в Tour MD и source-index имеет primaryThemes=[theme_culture,theme_nature] и themes=[theme_gastronomy_wine,theme_beach], без theme_wildlife. Поэтому /multi-country/brazil_paraguay/interests/wildlife/ сейчас не имеет тематических туров, тогда как статья обещает Фортин-Толедо, тагуа и птиц лагуны Капитан из этого тура. Самостоятельно менять targetPath или классификацию нельзя; мастеру требуется решить по фактическим дням 8-9: добавить обоснованный wildlife для тура либо перевести статью и ссылки в nature без потери уникального материала.",
-      "sourceSha": null,
-      "resultSha": null,
-      "completedAt": "2026-10-21T09:54:43.475Z",
-      "checkedBy": "isr-mvhxnj60-aazhstne1nm"
+      "decision": "confirmed",
+      "note": "По фактической 16-дневной программе основная природная тема — ландшафты Чако, Гуайры и Игуасу. Центр сохранения тагуа, возможные птицы лагуны Капитан и посещение Парка птиц не являются отдельно заявленным сафари по диким животным. Выполненная массовая классификация culture+nature подтверждена. Этот старый wildlife URL включен в release-audit.catalog.retiredWildlife и в новой сборке временно недоступен; его исторический SEO MD сохраняется неизменным. Активный тематический URL — /multi-country/brazil_paraguay/interests/nature/. Не менять Tour ради спасения пустого каталога.",
+      "sourceSha": "f0b2d22fbab3a3e384f588c3b05bf223255b2472",
+      "resultSha": "f0b2d22fbab3a3e384f588c3b05bf223255b2472",
+      "completedAt": "2026-10-21T13:33:11.417Z",
+      "checkedBy": "seo-nature-wildlife-release-coordinator",
+      "reviewHistory": [
+        {
+          "status": "review",
+          "note": "Блокер тематического URL: единственный активный маршрут с основными странами Бразилия+Парагвай, tour_source_tur_po_uruguayu_i_paragvayu_16_dnej, в Tour MD и source-index имеет primaryThemes=[theme_culture,theme_nature] и themes=[theme_gastronomy_wine,theme_beach], без theme_wildlife. Поэтому /multi-country/brazil_paraguay/interests/wildlife/ сейчас не имеет тематических туров, тогда как статья обещает Фортин-Толедо, тагуа и птиц лагуны Капитан из этого тура. Самостоятельно менять targetPath или классификацию нельзя; мастеру требуется решить по фактическим дням 8-9: добавить обоснованный wildlife для тура либо перевести статью и ссылки в nature без потери уникального материала.",
+          "worker": "isr-mvhxnj60-aazhstne1nm",
+          "completedAt": "2026-10-21T09:54:43.475Z",
+          "sourceSHA": null,
+          "attempts": 2
+        }
+      ],
+      "reviewResolution": {
+        "confidencePercent": 95,
+        "decisionPolicy": "probability-70-v1",
+        "reason": "Retired wildlife URL remains historical; active nature catalog is separate",
+        "historicArticlePreserved": true
+      }
     },
     {
       "id": "seo-0017",

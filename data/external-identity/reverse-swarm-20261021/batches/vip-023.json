@@ -82,7 +82,17 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/518e01a7c7eda79987b9880c.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/excursions/",
+      "evidence": [
+        "VIP inventory (2026-10-20) identifies /excursion as HTTP 200, title and H1 both “Excursion”, with no country, product ID or topic filter; intent is the generic excursion listing.",
+        "Current Ada Tours routing/workflow defines /excursions/ as its real general excursions catalogue, populated from active canonical Excursion entities; same unfiltered category intent."
+      ],
+      "note": "Кандидат для общего каталога экскурсий: сравнение ассортимента по отдельным продуктам не установлено, но общая категория и отсутствие фильтров подтверждены. 301 пока не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:58:38.994Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=account%2Faccount",
@@ -345,5 +355,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:58:35.399Z"
+  "updatedAt": "2026-10-21T14:58:38.994Z"
 }

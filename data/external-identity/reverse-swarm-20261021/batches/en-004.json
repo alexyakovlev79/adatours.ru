@@ -643,8 +643,22 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:37:44.223814+00:00; HTTP 200, 94916 bytes, SHA-256 2ee00a98bbb7274c5cac6c08a4aa45467ac97ebc0cc65879905c3fa35934aec1; canonical https://adatours.com/ciudad-del-este/packages. Title Ciudad del Este Tours | Shopping, Itaipu Dam & Monday Falls; H1 Ciudad del Este: Tours for Shopping, the Dam, and Waterfalls.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (1): Tour of Paraguay 2024.",
+        "RU-кандидат определён по канонической сущности destination_paraguay_syudad_del_este, data/source-index/entries/destination_paraguay_syudad_del_este.json, blob 58e9f6f4b855d65b232df07f55b015b0a7a0b7da и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/paraguay/place/ciudad-del-este/tour/: HTTP 200; canonical https://adatours.ru/paraguay/place/ciudad-del-este/tour/; H1 2 тура 2026-2027 в Сьюдад-дель-Эсте (Парагвае) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours; SHA-256 26fa415fa39e34b20b020a26350f63ecc3804da7612f17f4da23ae812c704cf6.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "EN показывает одну карточку Tour of Paraguay 2024; RU содержит 2 программы: 16-дневный Уругвай–Парагвай 2026 и 8-дневный Парагвай 2023. Совпадение полной подборки и актуальной версии программы не подтверждено."
+      ],
+      "note": "EN показывает одну карточку Tour of Paraguay 2024; RU содержит 2 программы: 16-дневный Уругвай–Парагвай 2026 и 8-дневный Парагвай 2023. Совпадение полной подборки и актуальной версии программы не подтверждено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:16.554Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:42:11.295Z"
+  "updatedAt": "2026-10-21T15:42:16.554Z"
 }

@@ -162,7 +162,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/f3ec82579f2750378d789116.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Полностью прочитан и сверён по SHA-256 snapshots/f3ec82579f2750378d789116.html (cbca1fcb13afe6b9bf83a9258320ed951769b442bf535d246db2fc1554022b11); snapshot HTTP 200, H1 Hotel. Реальная страница 7 каталога производителя Hotel: позиции 91–105 из 108, от Salvatti Foz do Iguassu до Windsor Martinique Rio, карточки размещения с ценами/бронированием.",
+        "Текущий main aafd4b2da015d669e477eedffb3c956ede417992: проверены src/pages и четыре каталога source-index (Country/Destination/Excursion/Tour). Отдельной коллекции Hotel и каталога бронирования 108 отелей с этой пагинацией нет. VIP, страна или тур имеют другой предмет/ассортимент."
+      ],
+      "note": "Подтверждённой RU-пары для hotel?page=7 нет. Это самостоятельная содержательная страница гостиничного каталога, не пустая страница и не доказанный технический дубль. 301 на главную/каталог туров не назначен; судьба старого гостиничного раздела отдельно.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:22:21.949Z",
+      "checkedBy": "reverse-worker-mvi9bqoq-z10jgc5usm7",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel?page=8",
@@ -385,5 +395,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:22:18.040Z"
+  "updatedAt": "2026-10-21T15:22:21.949Z"
 }

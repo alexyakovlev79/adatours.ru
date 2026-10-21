@@ -1644,7 +1644,42 @@
         "batchId": "vip-024",
         "batchSha": "7c762c84434809c50d6a259bc8e35a17f2c00834"
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.94,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:38:33.727Z",
+        "reason": "Основной 10-дневный маршрут Рио — Бузиос совпадает, но VIP явно продаёт индивидуальный тур, а RU прямо фиксирует групповой формат. Это значимое условие продукта; действующая частная замена не подтверждена.",
+        "evidence": [
+          "VIP GET 200: title «Индивидуальный тур...», описание «Тропический Парад Чемпионов 2026», дни 1–10 Рио/Бузиос.",
+          "Текущий MD: format Групповой, 12–21.02.2027; смена года допустима, смена формата не приравнена автоматически.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe.md, blob 19ef49023c58b6585df23b0f780128f103862e9b; статус и программа прочитаны."
+        ],
+        "targetEntityId": null
+      },
+      "sourceObservation": {
+        "n": 130,
+        "sourceUrl": "https://vipdeluxetravel.ru/package/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe",
+        "canonical": "https://vipdeluxetravel.ru/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe",
+        "sha256": "b56bcb6f5a78493ca9d86e87f17d1aa127ed9c95cc44a8105c3efda9a6d92258",
+        "title": "Индивидуальный тур в Бразилию на Парад Чемпионов",
+        "h1": [
+          "Тропический Парад Чемпионов"
+        ],
+        "dayHeadings": [
+          "День 1: Рио-де-Жанейро",
+          "День 2: Рио-де-Жанейро",
+          "День 3: Рио-де-Жанейро",
+          "День 4: Рио-де-Жанейро  - Бузиос",
+          "День 5-9: Бузиос",
+          "День 10:  Бузиос - Рио-де-Жанейро"
+        ]
+      }
     },
     {
       "reviewOrder": 131,
@@ -2229,7 +2264,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:39:03.597Z",
+  "updatedAt": "2026-10-21T16:39:05.214Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

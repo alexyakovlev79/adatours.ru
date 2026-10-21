@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi8ea8q-oy90kdzrig8",
-    "token": "reverse-lease-mvi8ea8q-bpnbpb95lbs",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:52:47.472Z",
-    "expiresAt": "2026-10-21T16:22:47.472Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/argentina-ru/ehkskursii-i-tury-na-argentinskij-kurort-bariloche",
@@ -602,8 +596,20 @@
       "pageType": "unclassified",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/914e34da85c7dfaef5e3af9f.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/place/belo-horizonte/",
+      "evidence": [
+        "Frozen VIP inventory №880: заголовок «Белу-Оризонти, Бразилия: достопримечательности и путеводитель по городу-саду», H1 «Белу Оризонте», сохраненный snapshotHttp=200, snapshotFile=snapshots/914e34da85c7dfaef5e3af9f.html; HTML напрямую не читался.",
+        "Активный RU MD src/content/destinations/belo-horizonte.md: status=approved, stable ID destination_brazil_belo_horizonte, countryId country_brazil; содержание: Белу-Оризонти в Минас-Жерайс, район Пампулья и архитектура Оскара Нимейера. Точный canonical /brazil/place/belo-horizonte/ установлен каталогом source-index."
+      ],
+      "note": "Исходная и целевая страницы описывают один географический объект и туристическое направление. Подготовлена запись будущего 301, сам редирект не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:10:04.602Z",
+      "checkedBy": "reverse-worker-mvi8ea8q-oy90kdzrig8",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:09:59.031Z"
+  "updatedAt": "2026-10-21T15:10:04.602Z",
+  "completedAt": "2026-10-21T15:10:04.602Z",
+  "lastOwner": "reverse-worker-mvi8ea8q-oy90kdzrig8"
 }

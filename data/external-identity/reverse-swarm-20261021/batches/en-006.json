@@ -85,7 +85,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory: category, snapshotHttp=200, H1 «Costa do Sauipe: Beach Resort & Golf Holidays»; snapshotFile отсутствует.",
+        "Текущий EN HTML HTTP 200; module/productsjson HTTP 200 (page=isPackageCategory,typeid=1,category_id=312) возвращает total=1, продукт 3424 «Romantic Brazil», https://adatours.com/romantic-brazil.",
+        "RU https://adatours.ru/brazil/place/costa-do-sauipe/optional-tours/ HTTP 200: 1 тур «Бразилия: Little Mix — от Сан-Паулу до пляжей Баии»; /brazil/place/costa-do-sauipe/tour/ HTTP 404. Страница места /brazil/place/costa-do-sauipe/ HTTP 200, destination_brazil_costa_do_sauipe."
+      ],
+      "note": "EN-каталог показывает Romantic Brazil, RU-подборка — Little Mix; кроме того RU-каталог отмечает необязательный заезд. Совпадения названия курорта и количества недостаточно для одинаковых состава/фильтров sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:43:14.327Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/costa-rica-en/excursions",
@@ -348,5 +359,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:41:56.150Z"
+  "updatedAt": "2026-10-21T15:43:14.327Z"
 }

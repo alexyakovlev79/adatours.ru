@@ -1880,7 +1880,49 @@
         "batchBlobSha": "0108735cf2b7b27529388e9f55e3eb8a2ae16fc0",
         "reviewOrder": 77
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/paraguay/place/encarnacion-and-trinidad/",
+        "targetId": "destination_paraguay_enkarnason_trinidad",
+        "targetContentPath": "src/content/destinations/enkarnason-trinidad.md",
+        "targetBlobSha": "44838453eb01626e4ea525d491a28ca711837499",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-009 #667.",
+          "Текущий main src/content/destinations/enkarnason-trinidad.md, blob 44838453eb01626e4ea525d491a28ca711837499: approved destination_paraguay_enkarnason_trinidad, Энкарнасьон & Тринидад; прямой GET https://adatours.ru/paraguay/place/encarnacion-and-trinidad/ → HTTP 200, SHA-256 c7141aee9897600c1700f03a5c47f0094f71e4f697553ead287405752486e094."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Энкарнасьон & Тринидад». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-77",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ehnkarnason-trinidad-v-paragvae/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-ehnkarnason-trinidad-v-paragvae/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_paraguay_enkarnason_trinidad",
+          "url": "https://adatours.ru/paraguay/place/encarnacion-and-trinidad/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/paraguay/place/encarnacion-and-trinidad/",
+          "sha256": "c7141aee9897600c1700f03a5c47f0094f71e4f697553ead287405752486e094",
+          "bytes": 111599,
+          "title": "Энкарнасьон & Тринидад в Парагвае: локации и 1 тур. Каталог 2026-2027: цена $3 903 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/paraguay/place/encarnacion-and-trinidad/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 78,
@@ -2573,9 +2615,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:42.077Z",
+  "updatedAt": "2026-10-21T16:32:43.666Z",
   "progress": {
-    "resolved": 26,
+    "resolved": 27,
     "total": 50
   }
 }

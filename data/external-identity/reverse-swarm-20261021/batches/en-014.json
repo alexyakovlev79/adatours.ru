@@ -421,7 +421,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Atacama Desert Tours | Geysers & Moon Valley | Ada Tours; H1 Atacama Desert: Tours to the Geysers and Salt Flats; category_ids=[\"256\"]; adatours-com-crawl-002.json index 255; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/san-pedro-de-atacama/packages: HTTP 200; SHA256 e638b4a6c54c12e09f193ef7ce83223e6e73441fcf6ba5d029e54255ca33297a. Видимые gallery-карточки: 5 country-tour in Latin America; Argentina, Chile and Bolivia; Chile  The Best: Santiago – Atacama Desert - Torres del Paine - Easter Island; Chile  VIP: Summer & Wine; Chile: Santiago – Atacama  Desert  – Torres  del  Paine; Chile:  Space travel on Earth; VIP Chile 5*; Great South America Tour Фильтр EN category_id 256, isPackageCategory/typeid=1.",
+        "main src/content/destinations/san-pedro-de-atakama.md, blob 2ee5ac79c554e30d09be11fc96463c2a28a846e5: approved destination_chile_san_pedro_de_atakama, /chile/place/san-pedro-de-atacama/. RU каталог https://adatours.ru/chile/place/san-pedro-de-atacama/tour/: HTTP 200; 21 тур 2026-2027 в Сан-Педро-де-Атакаме (Чили) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан-Педро-де-Атакама. Оставить заявку ↗ VIP 13 дней Лучшее Бразилии, Аргентины и Чили Смотреть ↗ VIP 15 дней Солнце, Танго, Вино и Атакама Смотреть ↗ 12 дней Тур в Чили на 12 дней по лучшим местам страны с о.Па. routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+      ],
+      "note": "У каталогов одинаковое географическое намерение и есть тематически близкие продукты, однако полное равенство динамического EN состава и действующих RU программ не установлено. Категория старого CMS не доказывает совпадение правила RU основного маршрута. Оставлено REVIEW без sameAs, нужна сверка всех продуктов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:59.199Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/san-salvador/excursions",
@@ -524,5 +535,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:17:56.860Z"
+  "updatedAt": "2026-10-21T16:17:59.199Z"
 }

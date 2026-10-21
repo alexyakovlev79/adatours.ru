@@ -11,8 +11,8 @@ summary: Сельскохозяйственный район юго-запада
 searchAliases:
 - Coronel Dorrego
 hero:
-  src: /media/tours/argentina-agricultural-11-days/day07-field-trials-generated-20261020-v1.webp
-  alt: 'Опытные делянки кукурузы и подсолнечника для изучения норм высева: иллюстрация'
+  src: /media/destinations/coronel-dorrego/hero-generated-20261021-dedup-v1.webp
+  alt: "Коронель-Доррего: пшеничные поля и подсолнечник пампы — иллюстрация"
 gallery: []
 themes:
 - theme_culture
@@ -22,7 +22,7 @@ featuredExcursions: []
 facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_coronel_dorrego.md
-updatedAt: '2026-10-20'
+updatedAt: '2026-10-21'
 ---
 
 Коронель-Доррего расположен на юго-западе провинции Буэнос-Айрес. Одноименный муниципалитет соседствует с Трес-Арройосом и выходит к Аргентинскому морю, соединяя внутренние сельские районы и атлантическое направление.

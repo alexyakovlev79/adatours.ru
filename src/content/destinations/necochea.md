@@ -10,8 +10,8 @@ summary: Атлантический город Аргентины, где кур
 searchAliases:
 - Necochea
 hero:
-  src: /media/tours/argentina-agricultural-11-days/day09-grain-storage-generated-20261020-v1.webp
-  alt: 'Полимерные рукава для хранения зерна на аргентинском поле: иллюстрация'
+  src: /media/destinations/necochea/hero-generated-20261021-dedup-v1.webp
+  alt: "Некочеа: песчаный берег Атлантики и портовый волнолом вдали — иллюстрация"
 gallery: []
 themes:
 - theme_culture
@@ -21,7 +21,7 @@ featuredExcursions: []
 facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_necochea.md
-updatedAt: '2026-10-20'
+updatedAt: '2026-10-21'
 ---
 
 Некочеа находится на Атлантическом побережье провинции Буэнос-Айрес. Для путешественника это морское направление, а для аграрной делегации — возможность рассмотреть связь сельскохозяйственной пампы и экспортной логистики.

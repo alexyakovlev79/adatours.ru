@@ -10,14 +10,14 @@
 
 | № | Страница | Где повторяется hero | Статус |
 |---|---|---|---|
-| 1 | [Балькарсе](https://adatours.ru/argentina/place/balcarce/) | [/argentina/place/necochea/](https://adatours.ru/argentina/place/necochea/) | Ожидает генерации |
-| 2 | [Коронель-Доррего](https://adatours.ru/argentina/place/coronel-dorrego/) | [/argentina/place/diego-de-alvear/](https://adatours.ru/argentina/place/diego-de-alvear/) | Ожидает генерации |
-| 3 | [Диего-де-Альвеар](https://adatours.ru/argentina/place/diego-de-alvear/) | [/argentina/place/coronel-dorrego/](https://adatours.ru/argentina/place/coronel-dorrego/) | Ожидает генерации |
-| 4 | [Парк Эрнесто-Торнкист](https://adatours.ru/argentina/place/ernesto-tornquist-provincial-park/) | [/argentina/ernesto-tornquist-provincial-park/ernesto-tornquist-guided-nature-day/](https://adatours.ru/argentina/ernesto-tornquist-provincial-park/ernesto-tornquist-guided-nature-day/) | Ожидает генерации |
-| 5 | [Хенераль-Ареналес](https://adatours.ru/argentina/place/general-arenales/) | [/argentina/place/pergamino/](https://adatours.ru/argentina/place/pergamino/) | Ожидает генерации |
-| 6 | [Некочеа](https://adatours.ru/argentina/place/necochea/) | [/argentina/place/balcarce/](https://adatours.ru/argentina/place/balcarce/) | Ожидает генерации |
-| 7 | [Тренке-Лаукен](https://adatours.ru/argentina/place/trenque-lauquen/) | [/argentina/place/pergamino/](https://adatours.ru/argentina/place/pergamino/) | Ожидает генерации |
-| 8 | [Трес-Арройос](https://adatours.ru/argentina/place/tres-arroyos/) | [/argentina/place/diego-de-alvear/](https://adatours.ru/argentina/place/diego-de-alvear/), [/argentina/place/coronel-dorrego/](https://adatours.ru/argentina/place/coronel-dorrego/) | Ожидает генерации |
+| 1 | [Балькарсе](https://adatours.ru/argentina/place/balcarce/) | [/argentina/place/necochea/](https://adatours.ru/argentina/place/necochea/) | S3 проверен, подключено; ожидает публикации |
+| 2 | [Коронель-Доррего](https://adatours.ru/argentina/place/coronel-dorrego/) | [/argentina/place/diego-de-alvear/](https://adatours.ru/argentina/place/diego-de-alvear/) | S3 проверен, подключено; ожидает публикации |
+| 3 | [Диего-де-Альвеар](https://adatours.ru/argentina/place/diego-de-alvear/) | [/argentina/place/coronel-dorrego/](https://adatours.ru/argentina/place/coronel-dorrego/) | S3 проверен, подключено; ожидает публикации |
+| 4 | [Парк Эрнесто-Торнкист](https://adatours.ru/argentina/place/ernesto-tornquist-provincial-park/) | [/argentina/ernesto-tornquist-provincial-park/ernesto-tornquist-guided-nature-day/](https://adatours.ru/argentina/ernesto-tornquist-provincial-park/ernesto-tornquist-guided-nature-day/) | S3 проверен, подключено; ожидает публикации |
+| 5 | [Хенераль-Ареналес](https://adatours.ru/argentina/place/general-arenales/) | [/argentina/place/pergamino/](https://adatours.ru/argentina/place/pergamino/) | S3 проверен, подключено; ожидает публикации |
+| 6 | [Некочеа](https://adatours.ru/argentina/place/necochea/) | [/argentina/place/balcarce/](https://adatours.ru/argentina/place/balcarce/) | S3 проверен, подключено; ожидает публикации |
+| 7 | [Тренке-Лаукен](https://adatours.ru/argentina/place/trenque-lauquen/) | [/argentina/place/pergamino/](https://adatours.ru/argentina/place/pergamino/) | S3 проверен, подключено; ожидает публикации |
+| 8 | [Трес-Арройос](https://adatours.ru/argentina/place/tres-arroyos/) | [/argentina/place/diego-de-alvear/](https://adatours.ru/argentina/place/diego-de-alvear/), [/argentina/place/coronel-dorrego/](https://adatours.ru/argentina/place/coronel-dorrego/) | S3 проверен, подключено; ожидает публикации |
 
 ## Остальные найденные страницы
 
@@ -183,3 +183,7 @@
 | 156 | [VIP-туры в Перу](https://adatours.ru/vip/peru/) | `/media/countries/peru/hero-enhanced-20260930.webp` |
 
 Машинный реестр с точными совпадениями: `data/audits/hero-inline-duplicates-20261021.json`. Новые изображения публикуются только после проверенной загрузки в S3; старые файлы сохраняются.
+
+## Первая партия: результат
+
+Создано восемь новых hero через встроенный imagegen. WebP сохранены отдельно, напрямую загружены в S3 и сверены по SHA-256. Новые пути подключены к hero восьми Destination MD и их точным source-index entries; происхождение и полные промпты записаны в машинном реестре и photo-enhancements.json. Статус публикации — ожидает штатного deploy.

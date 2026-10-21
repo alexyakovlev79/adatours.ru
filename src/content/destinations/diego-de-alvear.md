@@ -11,8 +11,8 @@ summary: Небольшой населенный пункт департамен
 searchAliases:
 - Diego de Alvear
 hero:
-  src: /media/tours/argentina-agricultural-11-days/day07-field-trials-generated-20261020-v1.webp
-  alt: 'Опытные делянки кукурузы и подсолнечника для изучения норм высева: иллюстрация'
+  src: /media/destinations/diego-de-alvear/hero-generated-20261021-dedup-v1.webp
+  alt: "Диего-де-Альвеар: сельская дорога среди полей Санта-Фе — иллюстрация"
 gallery: []
 themes:
 - theme_culture
@@ -22,7 +22,7 @@ featuredExcursions: []
 facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_diego_de_alvear.md
-updatedAt: '2026-10-20'
+updatedAt: '2026-10-21'
 ---
 
 Диего-де-Альвеар находится в департаменте Хенераль-Лопес провинции Санта-Фе. Эта остановка помогает увидеть повседневную сельскую Аргентину за пределами крупных городов и морских курортов.

@@ -11,8 +11,8 @@ summary: Остановка в сельскохозяйственной част
 searchAliases:
 - General Arenales
 hero:
-  src: /media/tours/argentina-agricultural-11-days/day03-no-till-generated-20261020-v1.webp
-  alt: 'Прямой посев по растительным остаткам на равнинном поле пампы: иллюстрация'
+  src: /media/destinations/general-arenales/hero-generated-20261021-dedup-v1.webp
+  alt: "Хенераль-Ареналес: зелёные поля и сельское хозяйство пампы — иллюстрация"
 gallery: []
 themes:
 - theme_culture
@@ -22,7 +22,7 @@ featuredExcursions: []
 facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_general_arenales.md
-updatedAt: '2026-10-20'
+updatedAt: '2026-10-21'
 ---
 
 Хенераль-Ареналес — город и одноименный муниципалитет провинции Буэнос-Айрес. В деловом путешествии сюда едут за пределы столичной Аргентины: к полям, хозяйствам и практической работе аграриев.

@@ -10,8 +10,8 @@ summary: 'Провинциальный парк в системе Вентани
 searchAliases:
 - Parque Provincial Ernesto Tornquist
 hero:
-  src: /media/tours/argentina-agricultural-11-days/day06-ventania-generated-20261020-v1.webp
-  alt: 'Каменистые склоны и травянистые долины системы Вентания: иллюстрация'
+  src: /media/destinations/ernesto-tornquist-provincial-park/hero-generated-20261021-dedup-v1.webp
+  alt: "Парк Эрнесто-Торнкист: скалистые гребни и травянистая долина Вентании — иллюстрация"
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 relatedDestinations: []
@@ -20,7 +20,7 @@ featuredExcursions: []
 facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_ernesto_tornquist_provincial_park.md
-updatedAt: '2026-10-20'
+updatedAt: '2026-10-21'
 ---
 
 Парк Эрнесто-Торнкист охраняет участок горной системы Вентания в провинции Буэнос-Айрес. Его характерный пейзаж — скалистые гребни и травянистые склоны, которые заметно отличаются от окружающих сельскохозяйственных равнин.

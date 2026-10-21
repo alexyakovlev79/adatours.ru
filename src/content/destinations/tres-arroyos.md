@@ -11,8 +11,8 @@ summary: Город на юге провинции Буэнос-Айрес, от
 searchAliases:
 - Tres Arroyos
 hero:
-  src: /media/tours/argentina-agricultural-11-days/day07-field-trials-generated-20261020-v1.webp
-  alt: 'Опытные делянки кукурузы и подсолнечника для изучения норм высева: иллюстрация'
+  src: /media/destinations/tres-arroyos/hero-generated-20261021-dedup-v1.webp
+  alt: "Трес-Арройос: сельская дорога и золотистые поля у города — иллюстрация"
 gallery: []
 themes:
 - theme_culture
@@ -22,7 +22,7 @@ featuredExcursions: []
 facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_tres_arroyos.md
-updatedAt: '2026-10-20'
+updatedAt: '2026-10-21'
 ---
 
 Трес-Арройос соединяет городскую жизнь с сельскими окрестностями и атлантическим побережьем одноименного муниципалитета. За пределами города расположены небольшие поселения и сельские ландшафты, а дальше маршрут можно продолжить к морю.

@@ -282,7 +282,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/4dcf57d806f5cd355ca8e18e.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/place/sao-paulo/tour/",
+      "evidence": [
+        "Frozen VIP #534: http=200, type=tour_listing, title=\"(empty)\", h1=\"(empty)\", snapshotFile=snapshots/4dcf57d806f5cd355ca8e18e.html; живой ответ VIP не проверялся.",
+        "RU /brazil/place/sao-paulo/tour/ — tourDestinationPath для destination_brazil_sao_paulo; в каталоге 12 неархивных основных туров, пример tour_brazil_sao_paulo_rio_ilha_paraty_12d (MD status approved, routeDestinationIds содержит Сан-Паулу)."
+      ],
+      "note": "VIP /packages соответствует назначению «туры по Сан-Паулу» и RU каталог непустой. Состав старого ассортимента не восстановлен и не объявляется совпадающим; 301 еще не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:50:01.711Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-san-paulu-braziliya/ekskursii",
@@ -445,5 +455,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:49:36.169Z"
+  "updatedAt": "2026-10-21T14:50:01.711Z"
 }

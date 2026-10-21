@@ -340,7 +340,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /belo-horizonte/excursions self canonical, H1 Belo Horizonte Excursions: Pampulla Park and Niemeyer Architecture. 0 карточек, после фильтров общий текст о Бразилии. SHA-256 9fe090b8893677cc988e50f387f2f1e34d84946bce0531f065221e29ad284356.",
+        "RU live HTTP200 /brazil/belo-horizonte/, self canonical, 1 экскурсия: Сити-тур по Белу-Оризонти → /brazil/belo-horizonte/belo-horizonte-city-tour/, stable ID excursion_source_siti_tur_po_belu_orizonti; место destination_brazil_belo_horizonte. SHA-256 ec746be165b84fa03c7d7668635372435b3003de5ed8385838b11146f2fd74da.",
+        "Frozen EN inventory category_id242, snapshotHttp200, snapshotFile отсутствует; фильтр города близок, но состав 0 EN против 1 RU не совпадает."
+      ],
+      "note": "Каталоги экскурсий Белу-Оризонти не имеют одинакового состава: исходный EN-каталог не показывает товаров, RU содержит один действующий сити-тур. sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:43:37.275Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belo-horizonte/packages",
@@ -483,5 +494,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:42:58.847Z"
+  "updatedAt": "2026-10-21T15:43:37.275Z"
 }

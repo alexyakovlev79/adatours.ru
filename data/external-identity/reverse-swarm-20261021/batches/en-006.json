@@ -304,7 +304,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Curitiba Eco Tours | Brazil's Green Capital & Niemeyer Museum», H1 «Curitiba: Eco Tours in Brazil's Green Capital». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/curitiba/packages: HTTP 200, canonical=https://adatours.com/curitiba/packages, H1 «Curitiba: Eco Tours in Brazil's Green Capital».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isPackageCategory&typeid=1&category_id=305&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=cities&excludes%5B3%5D=excursions&excludes%5B4%5D=themes. Первый ответ API: total=0, products=0. Примеры ID/названий: products=[].",
+        "https://adatours.ru/brazil/place/curitiba/ — HTTP 200, canonical совпадает, H1 «Куритиба». /brazil/place/curitiba/tour/ и optional-tours/ вернули 404; текущий sitemap содержит место, но не эти каталоги."
+      ],
+      "note": "EN-каталог Packages пуст по productsjson, а RU-страница описывает город. Действующая идентичная RU-подборка туров не подтверждена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:28.789Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cuzco/excursions",
@@ -467,5 +479,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:26.621Z"
+  "updatedAt": "2026-10-21T15:46:28.789Z"
 }

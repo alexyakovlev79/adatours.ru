@@ -43,7 +43,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: category 374, H1 Rincon de la Vieja: Tours to the Geysers and Hot Springs; crawl_report adatours-com-crawl-002.json, index 228, snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026: HTTP 200; в EN /packages показаны 5 Wonders in Costa Rica, Costa Rica & Nicaragua, Costa Rica: Beach & Mountain Break — три программы.",
+        "Живой GET https://adatours.ru/costa-rica/place/rincon-de-la-vieja/tour/: HTTP 200, «Показано 1–2 из 2»; две программы «5 Чудес Коста Рики» и «Коста Рика: Отдых на пляже и в горах». main routes.ts/[...path].astro: это каталог mainTours по tourHasMainDestination для destination_costa_rica_rinkon_de_la_veha."
+      ],
+      "note": "Подтверждено различие состава EN и RU каталогов: EN дополнительно содержит Costa Rica & Nicaragua; RU каталог основного маршрута содержит две программы. Точная пара sameAs для каталогов не подтверждена, отдельная Place не заменяет каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:13:28.792Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/rio-de-janeiro/excursions",
@@ -326,5 +337,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:12:40.464Z"
+  "updatedAt": "2026-10-21T16:13:28.792Z"
 }

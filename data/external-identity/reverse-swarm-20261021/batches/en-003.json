@@ -280,7 +280,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 прочитаны EN HTML (GET 200/self-canonical, SHA-256 daffe3992309d24e748b6966866c918f3858e45a51523d375cab732d77362636) и JSON, который использует публичный каталог (SHA-256 d2d17b4581d004bc01075d6dc1b4ec73e98d9d908917fa58936408b8e4d35a1c). EN Boquete excursions: один Coffee Tour, category_id=262/typeid=2.",
+        "Сверены активные MD, source-index, правила каталогов и живой RU HTTP в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2. В current main нет самостоятельной экскурсии по кофейным плантациям Бокете и нет такого каталога; /panama/boquete/ HTTP 404. Географическая /panama/place/boquete/ и дегустация гейши в Панама-Сити имеют иной предмет/место.",
+        "Frozen inventory: pageType=category, snapshotHttp=200, H1 «Boquete: Excursions to Coffee Plantations and Panama's Cloud Forests», crawlReport=adatours-com-crawl-001.json; snapshotFile не задан, приватный снимок не заявляется просмотренным."
+      ],
+      "note": "Подтверждённой sameAs-пары нет: одно географическое название не делает каталоги идентичными. Пустой EN-ассортимент и/или другой RU-состав отражены как отсутствие подтверждения, не как технический retry; связь не опубликована.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:09.945Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/boquete/packages",
@@ -403,5 +414,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:07.372Z"
+  "updatedAt": "2026-10-21T15:38:09.945Z"
 }

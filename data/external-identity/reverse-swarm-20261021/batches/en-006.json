@@ -348,7 +348,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Cusco Tours | Gateway to Machu Picchu & Inca Capital», H1 «Cusco: Tours to the Inca Capital and Gateway to Machu Picchu». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/cuzco/packages: HTTP 200, canonical=https://adatours.com/cuzco/packages, H1 «Cusco: Tours to the Inca Capital and Gateway to Machu Picchu».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isPackageCategory&typeid=1&category_id=120&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=cities&excludes%5B3%5D=excursions&excludes%5B4%5D=themes. Прочитаны slices 1:8, 2:8, 3:8, 4:0; 24 уникальных продуктов, paginationError=null. Примеры ID/названий: 4089 «3 Countries-Tour: Brazil, Argentina and Peru»; 4231 «Peru &amp; Bolivia»; 1502 «Brazil, Argentina, Chile &amp; Peru»; 4220 «Peru: Great Inca Expedition»; 3819 «Peru: Route of the Ancestral Energies».",
+        "https://adatours.ru/peru/place/cusco/tour/ — HTTP 200, canonical совпадает, H1 «35 туров 2026-2027 в Куско (Перу)…». География destination_peru_cusco подтверждена source-index."
+      ],
+      "note": "Полная пагинация EN API дала 24 уникальных программы; RU-каталог содержит 35 туров. Идентичность фильтров и состава не подтверждена; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:33.658Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/diving-vacations",
@@ -491,5 +503,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:30.834Z"
+  "updatedAt": "2026-10-21T15:46:33.658Z"
 }

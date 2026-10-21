@@ -422,7 +422,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/ca1e605d9e9bac5146573ba0.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #541: snapshotHttp=200, type=excursion_listing, title=\"(empty)\", H1=\"(empty)\", snapshotFile=snapshots/ca1e605d9e9bac5146573ba0.html; живое содержимое не подтверждалось.",
+        "VIP inventory классифицирует /ekskursii как excursion_listing для исходной страницы с двумя островами в title. У RU destination_colombia_san_andres нет активных Excursion по destinationIds/relatedDestinationIds; подходящего непустого RU каталога нет."
+      ],
+      "note": "Нет действующего каталога экскурсий Сан-Андреса, плюс остается неопределенность включения Провиденсии. Нужен отдельный выбор RU направления/410, чтобы не направлять посетителя на отсутствующий или суженный каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:52:03.624Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-pustynyu-san-pedro-de-atakama-v-chili",
@@ -515,5 +525,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:51:59.740Z"
+  "updatedAt": "2026-10-21T14:52:03.624Z"
 }

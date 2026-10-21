@@ -222,7 +222,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/04939fa2997ab7da3144ebc6.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory 2026-10-20: requested account/order returned HTTP 200 but final URL /?route=account/login with title \"Авторизация\".",
+        "Ada Tours current RU canonical content contains travel pages and catalogues; private previous-order history is not a content entity."
+      ],
+      "note": "Раздел истории заказов личного кабинета перенаправлял на авторизацию, самостоятельной страницы тура для 301 здесь нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:05:27.955Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=account%2Fdownload",
@@ -415,5 +425,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:05:02.715Z"
+  "updatedAt": "2026-10-21T15:05:27.955Z"
 }

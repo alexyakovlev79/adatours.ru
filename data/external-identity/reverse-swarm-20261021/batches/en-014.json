@@ -484,7 +484,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Excursions and tours to Santa Ana in El Salvador; H1 Excursions to countries of Latin America; category_ids=[\"80\"]; adatours-com-crawl-002.json index 260; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/santa-ana/excursions: HTTP 200; SHA256 dd6c157d0ed955c253c92566913253d36e01318542a753966698f45f078008c6. В статическом HTML нет предметных gallery-карточек; заголовок общий Latin America. Отсутствие gallery не считается доказательством отсутствия динамических продуктов. Фильтр EN category_id 80, isExcursionCategory/typeid=2.",
+        "main src/content/destinations/santa-ana.md, blob 567b3662e7498e64bdfa2a5dc59af101017e8b5d: approved destination_el_salvador_santa_ana, /el-salvador/place/santa-ana/. RU каталог https://adatours.ru/el-salvador/santa-ana/: HTTP Error 404: Not Found. routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+      ],
+      "note": "Предметный RU каталог по действующему маршрутизатору отвечает 404. Approved Place того же города существует, но имеет другой предмет, чем EN каталог. Подтвержденной пары sameAs нет; источник не признан технической ошибкой.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:07.142Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/santa-ana/packages",
@@ -557,5 +568,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:18:04.546Z"
+  "updatedAt": "2026-10-21T16:18:07.142Z"
 }

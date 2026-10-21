@@ -482,7 +482,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/1c85c4123f3a375313e7c772.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory #424: /ekskursii при пляже Тамариндо, pageType=excursion_listing, исторический HTTP 200; перечень исходных продуктов неизвестен.",
+        "RU approved destination_costa_rica_plajya_tamarindo, но компактный каталог экскурсий не содержит активных Excursion с destinationIds/relatedDestinationIds=destination_costa_rica_plajya_tamarindo. Целевой непустой /costa-rica/playa-tamarindo/ не подтвержден."
+      ],
+      "note": "Каталог экскурсий курорта Тамариндо отсутствует в текущей активной модели. Нужно отдельно выбрать страницу курорта либо решение 410; прямой 301 на несуществующий каталог недопустим.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:48:25.819Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-kurort-plasensiya-v-belize-na-karibah",
@@ -545,5 +555,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:48:22.138Z"
+  "updatedAt": "2026-10-21T14:48:25.819Z"
 }

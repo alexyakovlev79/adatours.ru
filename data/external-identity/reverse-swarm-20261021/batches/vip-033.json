@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-3071dc0e9c4b-mvi9bz00",
-    "token": "reverse-lease-mvi9bz00-fufmrrs1ad",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:19:04.139Z",
-    "expiresAt": "2026-10-21T16:49:04.139Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=5&product_id=4067",
@@ -602,8 +596,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/b620f256a8a20e492e51f4f2.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан раздел описания snapshots/b620f256a8a20e492e51f4f2.html из проверенного архива; SHA-256 HTML 610b31760d35dc774ffc2d64cad8773982852176b27721149e7dbcc0d4547ffa совпал с frozen inventory. Colonna Galápagos Garden: отель группы Othon на холме между пляжами Buzios, 180 км от Rio; размещение с видом на океан, ресторан Galapagos Inn. Исторический HTTP 200 от 20.10.2026.",
+        "Проверен main aafd4b2da015d669e477eedffb3c956ede417992: полный source-index/index.json, имена/алиасы; коллекции src/content.config.ts (9ff84bc04b08231d6b0e03af8eed980cd2f90d8b), дерево src/pages и динамические маршруты src/pages/[...path].astro (cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3). Самостоятельной RU-карточки этого отеля и каталога гостиниц не найдено."
+      ],
+      "note": "Не подтверждена действующая RU-цель для гостиничного продукта «Colonna Galápagos Garden». Общая страница города/региона или тур не заменяет карточку отеля. Требуется отдельное решение: перенос карточки либо 410; 301 не назначен. Текущий HTTP не заявляется.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:26:19.083Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:26:10.486Z"
+  "updatedAt": "2026-10-21T15:26:19.083Z",
+  "completedAt": "2026-10-21T15:26:19.083Z",
+  "lastOwner": "reverse-worker-3071dc0e9c4b-mvi9bz00"
 }

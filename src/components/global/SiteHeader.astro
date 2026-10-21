@@ -46,6 +46,12 @@ const interestChildLinks: NavChild[] = buildInterestIndex(themeEntries, tourEntr
     label: entry.data.name,
   }));
 
+// Independent columns keep a two-line interest label from stretching
+// the gap between unrelated links in the opposite column.
+const interestMenuColumns = [0, 1].map((column) =>
+  interestChildLinks.filter((_, index) => index % 2 === column)
+);
+
 const miceChildLinks: NavChild[] = MICE_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
 const vipChildLinks: NavChild[] = (await getVipCountryIndex())
   .map(({ href, entry }) => ({ href, label: entry.data.name }));
@@ -137,13 +143,24 @@ const nestedGroups = NAV_LINKS
               class:list={[
                 'desktop-nav__submenu',
                 { 'desktop-nav__submenu--wide': children.length > 8 || link.href === '/vip/',
-                  'desktop-nav__submenu--countries': link.href === '/country/' },
+                  'desktop-nav__submenu--countries': link.href === '/country/',
+                  'desktop-nav__submenu--interests': link.href === '/interests/' },
               ]}
               aria-label={link.label}
             >
-              {children.map((child) => (
-                <a href={withBase(child.href)}>{child.label}</a>
-              ))}
+              {link.href === '/interests/' ? (
+                interestMenuColumns.map((column) => (
+                  <div class="desktop-nav__submenu-column">
+                    {column.map((child) => (
+                      <a href={withBase(child.href)}>{child.label}</a>
+                    ))}
+                  </div>
+                ))
+              ) : (
+                children.map((child) => (
+                  <a href={withBase(child.href)}>{child.label}</a>
+                ))
+              )}
             </div>
           </div>
         ) : (
@@ -570,13 +587,22 @@ const nestedGroups = NAV_LINKS
     min-width: min(520px, calc(100vw - 40px));
   }
 
+  /* Interest columns flow independently: long labels never add space to the other side. */
+  .desktop-nav__submenu--interests > .desktop-nav__submenu-column {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    min-width: 0;
+  }
+
   /* Anchor the first wide menu below its link, clear of the viewport's left edge. */
   .desktop-nav__submenu--countries {
     --submenu-offset-x: 0%;
     left: 0;
   }
 
-  .desktop-nav__submenu > a {
+  .desktop-nav__submenu > a,
+  .desktop-nav__submenu--interests .desktop-nav__submenu-column > a {
     padding: 12px 18px;
     white-space: nowrap;
     font-family: var(--font-display);
@@ -586,7 +612,8 @@ const nestedGroups = NAV_LINKS
     text-transform: uppercase;
   }
 
-  .desktop-nav__submenu--wide > a {
+  .desktop-nav__submenu--wide > a,
+  .desktop-nav__submenu--interests .desktop-nav__submenu-column > a {
     min-width: 0;
     white-space: normal;
     line-height: 1.3;
@@ -594,7 +621,9 @@ const nestedGroups = NAV_LINKS
   }
 
   .desktop-nav__submenu > a:hover,
-  .desktop-nav__submenu > a:focus-visible {
+  .desktop-nav__submenu > a:focus-visible,
+  .desktop-nav__submenu--interests .desktop-nav__submenu-column > a:hover,
+  .desktop-nav__submenu--interests .desktop-nav__submenu-column > a:focus-visible {
     background: color-mix(in srgb, var(--color-brand) 18%, transparent);
   }
 

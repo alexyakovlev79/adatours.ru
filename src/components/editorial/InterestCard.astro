@@ -44,7 +44,7 @@ const vip = (await getVipTourPaths()).has(href);
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: linear-gradient(180deg, rgba(10,10,9,.1) 12%, rgba(10,10,9,.82) 100%);
+    background: var(--interest-shade, linear-gradient(180deg, rgba(10,10,9,.1) 12%, rgba(10,10,9,.82) 100%));
   }
   .interest-card__image {
     position: absolute;
@@ -95,7 +95,7 @@ const vip = (await getVipTourPaths()).has(href);
     .interest-card[data-interest-item="theme_adventure"] { --interest-original-position: 92% center; }
     .interest-card[data-interest-item="theme_adventure"] .interest-card__image img { object-position: 92% center; }
   }
-  @media (max-width: 479px) {
+  @media (max-width: 760px) {
     .interest-card__responsive-image {
       background-image: var(--interest-mobile-image, var(--interest-image));
       background-position: var(--interest-mobile-position, center);

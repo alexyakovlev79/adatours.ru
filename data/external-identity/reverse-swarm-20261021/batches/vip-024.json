@@ -222,7 +222,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/b978cf17796070386f18521c.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/tours/page/9/",
+      "evidence": [
+        "Frozen VIP inventory #1101: H1/title «Package», https://vipdeluxetravel.ru/package?page=9, snapshotHttp=200, общий список туров page=9.",
+        "RU src/pages/[...path].astro генерирует /tours/, src/lib/catalog-pagination.ts создает страницу /tours/page/9/, 30 позиций на часть; в src/content/tours/ 389 MD."
+      ],
+      "note": "Будущая карта 301 для категории и номера страницы; равенство ассортимента не утверждается и 301 не активирован.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:02:14.768Z",
+      "checkedBy": "reverse-worker-mvi83xgd-3cwif9g4q3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/pedra-de-telegrafo",
@@ -415,5 +425,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:01:49.154Z"
+  "updatedAt": "2026-10-21T15:02:14.768Z"
 }

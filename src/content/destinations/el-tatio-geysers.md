@@ -11,9 +11,9 @@ searchAliases:
 - gejzery-el-tatio
 themes: ["theme_nature"]
 hero:
-  src: /media/destinations/destination_chile_gejzery_el_tatio/hero-generated-20261008-resumed-v1.webp
-  hover: "Эль-Татио: клубы пара у гор на фоне восходящего солнца"
-  alt: "Пар над каменистым геотермальным полем Эль-Татио на рассвете, Чили"
+  src: /media/destinations/el-tatio-geysers/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Гейзеры Эль-Татио — новая обложка"
+  alt: "Гейзеры Эль-Татио — иллюстрация"
 gallery: []
 relatedDestinations: []
 featuredTours: []

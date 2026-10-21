@@ -161,7 +161,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:35:34.702564+00:00; HTTP 200, 92678 bytes, SHA-256 e75057ea9e6b8abc178c6e23f31d877a38cc018c774f1f3b07044b0c28c7703f; canonical https://adatours.com/cajamarca/excursions. Title Cajamarca Excursions | Inca Baths & Cumbemayo | Ada Tours; H1 Cajamarca: Excursions to Inca Baths and Cumbemayo.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (1): Otuzco Niches.",
+        "RU-кандидат определён по канонической сущности destination_peru_kahamarka, data/source-index/entries/destination_peru_kahamarka.json, blob 69adb5eac6e5787cc5c166c0621637decd30cce1 и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/peru/cajamarca/: HTTP 404; действующий каталог по этому адресу не подтверждён; в прочитанном sitemap-0.xml его нет.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "EN показывает Otuzco Niches, но соответствующий RU-каталог экскурсий по Кахамарке возвращает HTTP 404 и отсутствует в sitemap; географическая карточка места не является каталогом. Подтверждённой пары нет."
+      ],
+      "note": "EN показывает Otuzco Niches, но соответствующий RU-каталог экскурсий по Кахамарке возвращает HTTP 404 и отсутствует в sitemap; географическая карточка места не является каталогом. Подтверждённой пары нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:15.776Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cajamarca/packages",
@@ -394,5 +408,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:13.120Z"
+  "updatedAt": "2026-10-21T15:39:15.776Z"
 }

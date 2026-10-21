@@ -242,7 +242,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/56e2694caab6b770e66b6299.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/56e2694caab6b770e66b6299.html, SHA-256 f6bb0ab9fbfe1f429f62a69b0988e0437bf271bc18570d0510a816e118a30f02, обход 2026-10-20T13:13:36+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Blue Tree Towers Anália Franco». Blue Tree Towers Anália Franco — отель на востоке Сан-Паулу рядом с торговым центром Anália Franco и парком CERET; 134 номера категорий Superior, Premier Luxury, Luxury и Junior Suite.",
+        "Проверены актуальные main source-index каталоги destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf): самостоятельной страницы Blue Tree Towers Anália Franco по названию/бренду не установлено. В src/content.config.ts нет hotel collection, маршрутизатор [...path].astro не выделяет hotel detail; общий тур/город не доказывает соответствия гостинице."
+      ],
+      "note": "Проверена самостоятельная карточка Blue Tree Towers Anália Franco; география исходника: Сан-Паулу. Подтвержденная текущая RU-страница именно этой гостиницы в просмотренном source-index не найдена. Другой отель той же сети, туристический город и тур с возможным размещением не назначены 301-целью.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:06.457Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/blue-tree-towers-recife?page=1",
@@ -345,5 +355,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:03.959Z"
+  "updatedAt": "2026-10-21T15:33:06.457Z"
 }

@@ -502,9 +502,9 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
 <style>
   .itinerary {
-    --itinerary-gold: #f2cc67;
-    color: var(--color-bg);
-    background: var(--color-ink-deep);
+    --itinerary-gold: #86620f; /* Same gold accent, dark enough for a light surface. */
+    color: var(--color-ink);
+    background: var(--color-surface-gray);
     /* The pricing section starts directly after the final itinerary row. */
     padding-bottom: 0;
   }
@@ -599,7 +599,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
   .day__content p {
     margin-top: 0;
-    color: rgba(255,255,255,.74);
+    color: rgb(26 26 26 / 80%);
   }
 
   .day__places {
@@ -618,7 +618,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   .day__subsection {
     margin-top: 28px;
     padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,.16);
+    border-top: 1px solid var(--color-line);
   }
 
   .day__subsection h3 {
@@ -651,7 +651,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
   .day__embedded-excursion :global(.excursion-embed__body p) {
     margin-top: 0;
-    color: rgba(255,255,255,.74);
+    color: rgb(26 26 26 / 80%);
   }
 
   .day__embedded-excursion :global(.excursion-embed__body p:last-child) {

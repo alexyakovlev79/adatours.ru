@@ -28,8 +28,8 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
 
 <style>
   .process--dark {
-    color: var(--color-bg);
-    background: var(--color-ink-deep);
+    color: var(--color-ink);
+    background: var(--color-surface-beige);
   }
 
   .process h2 {
@@ -44,7 +44,7 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
   }
 
   .process--dark .process__steps {
-    border-color: rgba(255,255,255,.22);
+    border-color: var(--color-line);
   }
 
   .step {
@@ -54,7 +54,7 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
   }
 
   .process--dark .step {
-    border-color: rgba(255,255,255,.22);
+    border-color: var(--color-line);
   }
 
   .step + .step {
@@ -69,7 +69,7 @@ const { eyebrow, title, steps, dark = false } = Astro.props;
   }
 
   .process--dark .step > span {
-    color: var(--color-gold);
+    color: var(--color-brand-deep);
   }
 
   .step h3 {

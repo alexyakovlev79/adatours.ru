@@ -18,16 +18,16 @@ const { price = 'По запросу', ctaLabel = 'Заказать этот т�
       <h2>{price}</h2>
     </div>
     <div class="pricing__copy">
-      <PrimaryCTA href="/contacts/" label={ctaLabel} variant="dark" />
+      <PrimaryCTA href="/contacts/" label={ctaLabel} variant="light" />
     </div>
   </div>
 </section>
 
 <style>
   .pricing {
-    /* Dark surface and matching action with light lettering. */
-    background: var(--color-ink-deep);
-    color: var(--color-bg);
+    /* A warm neutral pause between the map and programme conditions. */
+    background: var(--color-surface-beige);
+    color: var(--color-ink);
     padding-top: var(--section-y-tight);
   }
 
@@ -51,7 +51,7 @@ const { price = 'По запросу', ctaLabel = 'Заказать этот т�
 
   .pricing :global(.cta) {
     margin-top: 0;
-    color: #fff;
+    color: var(--color-ink);
   }
 
   @media (max-width: 760px) {

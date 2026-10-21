@@ -388,7 +388,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     display: flex;
     align-items: stretch;
     min-height: 48px;
-    border-bottom: 1px solid rgba(255,255,255,.35);
+    border-bottom: 1px solid rgb(26 26 26 / 45%);
   }
 
   .phone-field__control:focus-within {
@@ -403,8 +403,8 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     min-width: 92px;
     padding: 0 14px 0 0;
     border: 0;
-    border-right: 1px solid rgba(255,255,255,.18);
-    color: var(--color-bg);
+    border-right: 1px solid var(--color-line);
+    color: var(--color-ink);
     background: transparent;
     cursor: pointer;
   }
@@ -437,7 +437,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     width: 24px;
     height: 18px;
     object-fit: cover;
-    border: 1px solid rgba(255,255,255,.2);
+    border: 1px solid var(--color-line);
     background: #fff;
   }
 
@@ -456,7 +456,7 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     flex: 0 0 auto;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
-    border-top: 5px solid rgba(255,255,255,.55);
+    border-top: 5px solid var(--color-text-muted);
   }
 
   .phone-field__input {
@@ -465,12 +465,13 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     padding: 12px 0 12px 14px;
     border: 0;
     outline: 0;
-    color: var(--color-bg);
+    color: var(--color-ink);
     background: transparent;
   }
 
   .phone-field__input::placeholder {
-    color: rgba(255,255,255,.46);
+    color: var(--color-text-muted);
+    opacity: 1;
   }
 
   .phone-field__menu {

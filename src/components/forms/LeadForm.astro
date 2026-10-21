@@ -510,8 +510,8 @@ const personalDataHref = withBase('/personal-data/');
 <style>
   .lead {
     padding-block: var(--section-y-tight);
-    color: var(--color-bg);
-    background: var(--color-ink-deep);
+    color: var(--color-ink);
+    background: var(--color-surface-gray);
   }
 
   .lead__grid {
@@ -546,7 +546,7 @@ const personalDataHref = withBase('/personal-data/');
   .form label span,
   .form-field__label,
   .contact-method legend {
-    color: rgba(255,255,255,.55);
+    color: var(--color-text-muted);
     font-size: .72rem;
     letter-spacing: .09em;
     text-transform: uppercase;
@@ -557,11 +557,17 @@ const personalDataHref = withBase('/personal-data/');
     width: 100%;
     padding: 12px 0;
     border: 0;
-    border-bottom: 1px solid rgba(255,255,255,.35);
+    border-bottom: 1px solid rgb(26 26 26 / 45%);
     border-radius: 0;
     outline: 0;
-    color: var(--color-bg);
+    color: var(--color-ink);
     background: transparent;
+  }
+
+  .form input::placeholder,
+  .form textarea::placeholder {
+    color: var(--color-text-muted);
+    opacity: 1;
   }
 
   .form input:focus,
@@ -571,11 +577,11 @@ const personalDataHref = withBase('/personal-data/');
 
   .form input[aria-invalid="true"],
   .form textarea[aria-invalid="true"] {
-    border-bottom-color: #e79683;
+    border-bottom-color: #9f2d1e;
   }
 
   .form :global(.phone-field__control.is-invalid) {
-    border-bottom-color: #e79683;
+    border-bottom-color: #9f2d1e;
   }
 
   .contact-method {
@@ -617,7 +623,7 @@ const personalDataHref = withBase('/personal-data/');
   .form .contact-method__option span {
     position: relative;
     padding: 0 0 7px;
-    color: rgba(255,255,255,.68);
+    color: var(--color-text-muted);
     font-size: .95rem;
     line-height: 1.2;
     letter-spacing: .01em;
@@ -627,18 +633,18 @@ const personalDataHref = withBase('/personal-data/');
   }
 
   .form .contact-method__option:hover span {
-    color: var(--color-bg);
+    color: var(--color-ink);
   }
 
   .form .contact-method__option input:checked + span {
-    color: var(--color-gold);
+    color: var(--color-brand-deep);
     border-bottom-color: var(--color-gold);
   }
 
   .form .contact-method__option input:disabled + span {
-    color: rgba(255,255,255,.28);
+    color: var(--color-text-muted);
     cursor: not-allowed;
-    opacity: .72;
+    opacity: 1;
   }
 
   .form .contact-method__option input:focus-visible + span {
@@ -654,8 +660,8 @@ const personalDataHref = withBase('/personal-data/');
     padding: 17px 20px;
     border: 1px solid var(--cta-border);
     border-radius: var(--radius-cta);
-    color: var(--color-bg);
-    background: var(--cta-fill-dark);
+    color: var(--color-ink);
+    background: var(--cta-fill-light);
     cursor: pointer;
     font-family: var(--font-display);
     font-size: .8rem;
@@ -667,7 +673,7 @@ const personalDataHref = withBase('/personal-data/');
 
   .form button:hover:not(:disabled) {
     border-color: var(--cta-border-hover);
-    background: var(--cta-fill-dark-hover);
+    background: var(--cta-fill-light-hover);
   }
 
   .form button:disabled {
@@ -678,22 +684,22 @@ const personalDataHref = withBase('/personal-data/');
   .form__status {
     min-height: 20px;
     margin: -12px 0 0;
-    color: rgba(255,255,255,.68);
+    color: var(--color-text-muted);
     font-size: .8rem;
     line-height: 1.5;
   }
 
   .form__status.is-error {
-    color: #ffc1b2;
+    color: #9f2d1e;
   }
 
   .form__status.is-success {
-    color: #9be2b8;
+    color: #14643a;
   }
 
   .form__consent {
     margin: -14px 0 0;
-    color: rgba(255,255,255,.55);
+    color: var(--color-text-muted);
     font-size: .75rem;
     line-height: 1.55;
   }

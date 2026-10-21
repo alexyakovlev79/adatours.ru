@@ -327,7 +327,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/b16ce77eda0cf43c697d9f44.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/argentina/place/salta/tour/",
+      "evidence": [
+        "VIP frozen #507: /packages страницы Сальты, тип tour_listing, snapshotHttp 200, title/H1 отсутствуют.",
+        "RU tour_source_udivitelnaya_salta в src/content/tours/udivitelnaya-salta.md, status published, содержит destination_argentina_salta в основном маршруте; source-index хранит несколько туров через Сальту, непустой RU каталог /argentina/place/salta/tour/."
+      ],
+      "note": "География и тип каталога совпадают, но идентичность старого набора пакетов не проверялась: пустой snapshot. Кандидат на будущий 301, а не действующий редирект.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:44:01.491Z",
+      "checkedBy": "reverse-worker-mvi7q2f3-npohnkqqib",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-v-gorod-i-provinciyu-salta-v-argentine/ekskursii",
@@ -460,5 +470,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:43:57.494Z"
+  "updatedAt": "2026-10-21T14:44:01.491Z"
 }

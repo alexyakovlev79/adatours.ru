@@ -102,7 +102,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: snapshotHttp 200, category_id=58, isExcursionCategory, title «Mendoza Excursions | Vineyards, Wine Tasting & Wine Route», H1 общий; snapshotFile не указан.",
+        "21.10.2026 EN HTML HTTP 200; productsjson с исходным datasrc возвращает один продукт uid 187 «ESP: SKIWEEK en Las Leñas (Argentina)», URL /argentina-mendoza-skiweek; в HTML указана программа с периодом 18.06–03.09.2022.",
+        "RU /argentina/place/mendoza/ HTTP 200, destination_argentina_mendoza: 6 экскурсий, в том числе обзорная по Мендосе, долина Уко и Лухан-де-Куйо, винодельни и дегустации. Это иной состав, не программа SKIWEEK."
+      ],
+      "note": "EN-фильтр экскурсий по Мендосе фактически отдает исторический горнолыжный пакет 2022 года. RU показывает городские и винные экскурсии; заголовок о виноградниках не доказывает совпадение ассортимента. Требуется редакционное решение, sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:53:28.122Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/mendoza/packages",
@@ -366,5 +377,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:52:54.349Z"
+  "updatedAt": "2026-10-21T15:53:28.122Z"
 }

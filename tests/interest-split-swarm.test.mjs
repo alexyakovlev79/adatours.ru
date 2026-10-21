@@ -37,10 +37,10 @@ test('finish is atomic with submitted results and preserves immutable work trail
  assert.equal(released[0].status,'queued');
 });
 test('unique literal edits and article identity guard',()=>{
- const input='---\ntargetPath: /interests/wildlife/\nkind: interest\nstatus: approved\n---\n\n'+('Sample article about nature and birds. '.repeat(12));
+ const input='---\ntargetPath: /interests/wildlife/\nkind: interest\nstatus: approved\n---\n\nUnique intro: nature and birds. '+('Sample article body about landscapes. '.repeat(12));
  const newText=applyEdits(input,[{find:'nature and birds',replace:'observing wild birds'}]);
  checkArticleInvariant(input,newText,{url:'/interests/wildlife/'});
- assert.ok(newText.includes('observing wild birds'));
+ assert.ok(newText.includes('Unique intro: observing wild birds.'));
  assert.throws(()=>applyEdits(input,[{find:'article',replace:'guide'}]),/exactly once/);
  assert.throws(()=>checkArticleInvariant(input,newText.replace('targetPath: /interests/wildlife/','targetPath: /interests/nature/'),{url:'/interests/wildlife/'}),/Forbidden/);
 });

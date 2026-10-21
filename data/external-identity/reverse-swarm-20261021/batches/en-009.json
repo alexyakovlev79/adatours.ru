@@ -545,7 +545,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory: pageType=other, HTTP 200, H1 «Luxury tours Patagonia (Argentina and Chile)», crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, self-canonical, H1 «Luxury tours Patagonia (Argentina and Chile)».",
+        "Редакционная статья Anna Avanesova, Published 01-04-2025, Updated 18-10-2026. Сравнивает аргентинскую и чилийскую Патагонию, Перито-Морено, El Chaltén, Torres del Paine, Ushuaia и пограничную логистику. Упоминает разные самостоятельные программы: Chile and Argentina Deluxe (14 дней), Argentina Chile Bolivia (12), Patagonia and Chilean Fjords (9), Ice Sun and the End of the Earth (12); сама не является одной программой.",
+        "Проверены /vip/argentina/ HTTP 200 (26 маршрутов) и /vip/chile/ HTTP 200 (24 маршрута): каталоги по странам. В /vip/chile/ виден тур «Чили & Аргентина Делюкс» 14 дней; это один из предметов EN-статьи, а не ее идентичная сущность."
+      ],
+      "note": "Статья о нескольких маршрутах и двух сторонах Патагонии не тождественна одному туру или страновому VIP-каталогу. Подтвержденной sameAs-пары среди проверенных RU-кандидатов нет; упоминание продукта не преобразовано в sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:57:54.399Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/luxury-travel-colombia",
@@ -598,5 +609,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:57:51.934Z"
+  "updatedAt": "2026-10-21T15:57:54.399Z"
 }

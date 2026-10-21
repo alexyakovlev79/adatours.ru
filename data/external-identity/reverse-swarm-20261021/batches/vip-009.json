@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi7ulbn-l9hzm4e5q9",
-    "token": "reverse-lease-mvi7ulbn-9l6h6kxpmvb",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:37:19.219Z",
-    "expiresAt": "2026-10-21T16:07:19.219Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-hako-jaco-v-kosta-rike",
@@ -584,8 +578,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/f74064273aa4d90c4a480f05.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/nicaragua/esteli/",
+      "evidence": [
+        "Frozen VIP inventory: /ekskursii, pageType excursion_listing, snapshotHttp 200, пустые title/H1; родительский H1 «Эстели», Никарагуа.",
+        "RU Destination destination_nicaragua_esteli approved; Excursion excursion_esteli_cigar_factory_murals, src/content/excursions/esteli-cigar-factory-murals.md, status approved, destination destination_nicaragua_esteli; непустой каталог /nicaragua/esteli/."
+      ],
+      "note": "Подготовлен будущий 301 на RU каталог экскурсий Эстели с существующим продуктом. Исторический пустой листинг не доказывает совпадение товара.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:53:04.120Z",
+      "checkedBy": "reverse-worker-mvi7ulbn-l9hzm4e5q9",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:52:59.989Z"
+  "updatedAt": "2026-10-21T14:53:04.120Z",
+  "completedAt": "2026-10-21T14:53:04.120Z",
+  "lastOwner": "reverse-worker-mvi7ulbn-l9hzm4e5q9"
 }

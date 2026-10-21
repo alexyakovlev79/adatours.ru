@@ -1,0 +1,14 @@
+# Mobile hero cropping: composition policy
+
+User-approved correction, 21 October 2026. Applies to hero photos only. The pilot implementation and exact per-page decisions are in `src/data/media/mobile-hero-pilot-20261021.json`; results and limitations are in `docs/audits/mobile-hero-pilot-20261021.md`.
+
+1. Identify the exact page, slot and original source/hash. Inspect the published responsive CSS and any manual `object-position` before choosing a crop. The same photograph can have different framing in a hero and a card. Record that distinction explicitly in comparisons.
+2. Reuse a successful manual focus. For CSS percentage alignment p, the original visible rectangle starts at `(sourceWidth - visibleWidth) * p`; the percentage is not the subject's coordinate in the original image. Adapt the crop to the actual slot geometry and inspect the result again.
+3. For people, birds, reptiles and other living creatures, prioritize heads/faces. Whole bodies, hands, wings and tails are optional. For a shared scene, an intentional partial view of both characters is acceptable; the Peru child + llama central view is an approved example.
+4. If no better focus is evident, crop the central side edges already hidden by the mobile cover. Do not reject an image solely because all bodies or a wide landscape cannot fit. Preserve the source and make a separate derivative.
+5. Evaluate the rendered cover, including further cropping caused by different block proportions. Protect heads at short/wide sizes with appropriate vertical alignment. Inspect a range of widths/heights; do not equate a phone model, user agent or Google device label with a single ratio.
+6. The current pilot uses 3:4 derivatives, responsive widths without enlargement, WebP quality 78 and a source boundary of 479 CSS px. These are pilot settings, not a universal ratio/breakpoint for future hero designs. Wider views retain originals. Photo-lead heroes such as Brazil require a separate geometry profile.
+7. Use deterministic crop/resize tooling; AI may select focus, but must not redraw the photograph. Measure output bytes. A smaller file is not proof of a faster LCP or a higher PageSpeed score; retain separate measured evidence.
+8. Publish only verified immutable S3 files through `docs/workflows/direct-s3-upload.md`; never new Git binaries. Scope the mapping to page + unchanged hero source. Galleries, cards, their existing focus and lazy loading remain separate. Run the agreed performance protocol and record all runs, including variance and regressions.
+
+Pilot correction examples: macaw → head right; iguana/jaguar → head left; adventure couple → successful right-focused reference from the mobile card (`92% center`); Peru pair, island and monument → accepted central frame. The adventure card itself is unchanged.

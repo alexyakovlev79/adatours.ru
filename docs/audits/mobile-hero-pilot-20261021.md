@@ -37,7 +37,7 @@ Rollback: remove pilot import/source selection in Hero.astro and restore HeroVid
 | /interests/adventure/ | READY | Перенесён удачный фокус 92% вправо из мобильной карточки; в hero сохранены оба лица. |
 | /interests/wildlife/ | READY | Фокус влево на голове ягуара; часть тела может выходить за кадр. |
 
-## Published and measured
+## Revision 1 — published and measured
 
 Pages deployment 39581191127 succeeded for source commit 222317b852d443f37635404dde3157f6b632d715. Public HTML verification: 20/20 expected results; 11 pages opt in. Brazil's prepared crop is preview-only because its photo-lead hero has a shorter media region. Eight composition failures retain original assets. 12 prepared crops is not 12 enabled pages.
 
@@ -60,4 +60,6 @@ Eight new revised crops, 16 immutable WebP assets (`20261021-v2`). Existing 27 v
 
 Mobile source boundary remains max-width 479 CSS px, independent of device labels. Wider/tablet/landscape widths keep the original; full originals remain intact. No upscaling. Simulated cover checks at 320x700, 412x556 and 479x400 confirmed bird/iguana/jaguar heads and both traveler faces; the partially cropped Peru pair is intentional. Top alignment protects heads on wider/shorter hero blocks. Text overlays vary per real page and are not included in the crop simulation.
 
-Checks: all 20 source hashes unchanged, 43 derivative hashes and bounds valid, no enlargement. Uploaded v2 assets require verified GET receipts and production build gate before considering publication successful. Revision 1 PSI results above remain historical, not attributed to the additional eight crops.
+Checks: all 20 source hashes unchanged, 43 derivative hashes and bounds valid, no enlargement. All 16 uploaded v2 assets have verified GET receipts; the production build gate and Pages deployment passed. Revision 1 PSI results above remain historical, not attributed to the additional eight crops.
+
+Revision 2 published: source b347ba79d0dff6c3ca91ddc29d0068b6d91be1f9, successful full Pages run 39586375126. Public HTML verification 20/20, 19 enabled. Three independent before/after reports for /interests/adventure/, Mobile and Desktop, stored in data/performance/runs/P01-hero-mobile-revision2-20261021.json. Mobile scores 65/74/78 -> 66/79/79, median 74 -> 79; LCP 6.828 -> 5.520s (-19.2%); TBT 29 -> 45ms, CLS 0. Desktop scores 95/95/96 -> 95/95/99, median 95 -> 95; LCP 1.444 -> 1.364s; TBT 26 -> 27ms. Desktop original unchanged, so do not attribute desktop variation to crops. Score ranges overlap and these are lab results for one page, not an all-site guarantee. LCP diagnostic confirms h19-portrait-636. HTML stable throughout each measurement series.

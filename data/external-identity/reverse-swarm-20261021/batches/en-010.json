@@ -228,7 +228,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Mexico City Tours | Zocalo, Teotihuacan & Chapultepec», H1 «Mexico City: Tours to the Capital and Pyramids», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: typeid=1, category_id=190, schema offerCount=11. Первая выдача productsjson содержит uid 2514 Amazing Gastronomic Mexico Tour, 4380 Mexico Fantastico, 3759 Mexico Lindo, 3614 Gran Tour of Mexico, 3679 Mexico: Colonial & Culinary, 3615 Viva Mexico, 2289 All Mexico, 3761 Colonial Treasures; ответ ограничен первыми 8 карточками, полным списком его не считаю.",
+        "RU /mexico/place/mexico-city-and-teotihuacan/tour/ HTTP 200, 11 туров: в числе карточек 26-дневная Центральная Америка, День Мертвых, Религиозное путешествие и Треугольник Солнца; stable ID destination_mexico_mehiko_siti_ruiny_teotihuakana."
+      ],
+      "note": "Количество 11 совпадает по schema/заголовку, но равенство полного набора EN и RU не доказано. Каталог нельзя объявить sameAs по городу и числу карточек; требуется полная адресная сверка программ.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:55:08.287Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/mexico-en/excursions",
@@ -421,5 +432,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:54:11.103Z"
+  "updatedAt": "2026-10-21T15:55:08.287Z"
 }

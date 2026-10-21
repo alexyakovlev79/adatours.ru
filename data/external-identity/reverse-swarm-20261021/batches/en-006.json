@@ -106,7 +106,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Costa Rica Excursions: Volcanoes, Rainforests & Beaches», H1 «Discover Costa Rica: Excursions to Volcanoes, Rainforests and Beaches». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/costa-rica-en/excursions: HTTP 200, canonical=https://adatours.com/costa-rica-en/excursions, H1 «Discover Costa Rica: Excursions to Volcanoes, Rainforests and Beaches».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=44&excludes%5B0%5D=themes&excludes%5B1%5D=countries. Первый ответ API: total=5, products=5. Примеры ID/названий: 2046 «Bribri & Kekoldi Indian Reserves»; 2051 «Carara National Park»; 2076 «Mangrove Tour»; 2075 «Naranjo River Rafting»; 2055 «Villa Lapas hanging bridges».",
+        "https://adatours.ru/costa-rica/excursion/ — HTTP 200, canonical совпадает, H1 «7 экскурсий в Коста-Рику | Ada Tours». Просмотрены 7 карточек: Ареналь/Лос-Туканес, канопи Монтеверде, облачный лес Монтеверде, Viento Fresco, мосты Ареналя, Тортугеро на рассвете, водопады Эль-Тигре."
+      ],
+      "note": "Состав каталогов различается: EN предлагает 5 экскурсий (Bribri/Kekoldi, Carara, Mangrove, Naranjo, Villa Lapas), RU — 7 других программ. Одной географии недостаточно для sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:45:59.068Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/costa-rica-en/packages",
@@ -359,5 +371,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:43:14.327Z"
+  "updatedAt": "2026-10-21T15:45:59.068Z"
 }

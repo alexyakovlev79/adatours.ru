@@ -322,7 +322,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/1e8c1294e2fd231f70df4e9a.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/1e8c1294e2fd231f70df4e9a.html, SHA-256 aed2a110a4b0ec7f8e86f125c3a4c1cede0ba4e9affff20fe3335b6548dba27a, обход 2026-10-20T13:14:36+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «COSTA DO SAUIPE: CLUB / PARK / FUN / CLASS». Hotel-карточка «COSTA DO SAUIPE: CLUB / PARK / FUN / CLASS», крошки Бразилия → Коста де Сауипе; тело повторяет названия вариантов Club/Park/Fun/Class, из услуг указан интернет. Подробных программ размещения/условий all inclusive нет.",
+        "Проверен main src/content/destinations/costa-do-sauipe.md (blob 326057fd637d0ba35e25b68cf50dd2eda7e65a1b): stable ID destination_brazil_costa_do_sauipe, status approved, /brazil/place/costa-do-sauipe/, тип resort. Это описание курорта Баии с пляжами, дюнами, спортом и SPA, без разграничения гостиничных Club/Park/Fun/Class. Найденные Tour brazil-little-mix-10-days и brazil-costa-do-sauipe-beach являются многодневными поездками, не карточками этих гостиниц."
+      ],
+      "note": "Есть географически релевантная RU-страница курорта Коста-ду-Сауипе, но исходная гостиничная карточка перечисляет Club/Park/Fun/Class, а условия этих вариантов и all inclusive текущим Place не установлены. Требуется редакционный выбор допустимости 301 на курорт либо отдельного решения по гостиничной карточке; ruUrl не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:49.416Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/enotel-resort-and-spa?page=1",
@@ -385,5 +395,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:46.940Z"
+  "updatedAt": "2026-10-21T15:33:49.416Z"
 }

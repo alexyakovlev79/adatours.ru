@@ -344,7 +344,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/29a3d49303e7ebc73872ad19.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан исходный HTML snapshots/29a3d49303e7ebc73872ad19.html из vip-identity-crawl-20261020.zip; SHA-256 файла 4c05d34dfc1d953d6eafddb78f0fc2cd3de04d062a3e6cb690c84461e4764d21 совпадает с frozen inventory (blob 84d12dca210caa17f7af85edd88ab3ab9e4b0dfe). Сохранённый HTTP 200, дата 2026-10-20T13:06:51+00:00; product_id=258.",
+        "Rafain Palace: гостиничный комплекс в Игуасу с 213 apartments и 11 suites, конференц-залами и бассейнами.",
+        "HTML/inventory canonical: https://vipdeluxetravel.ru/brazil-hotel-rafain-palace-foz-do-iguacu; текущий URL содержит /hotel/ и ?page=. Идентичность другому URL по полному содержимому не подтверждена; одного canonical недостаточно для excluded.",
+        "Проверен текущий main: destination_brazil_iguacu, /brazil/place/foz-do-iguacu/, status approved (src/content/destinations/foz-do-iguacu.md, blob 561389b1de01185b95a5868b3ee8baa8ded82cbb). Страница описывает город/курорт/природный район и туристические маршруты, не данный гостиничный продукт.",
+        "В текущем data/source-index/catalogs/destinations.json (main, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) по имени/slug/aliases отдельная сущность этого отеля не найдена; в src/content.config.ts нет коллекции hotels. Прочитан опубликованный sitemap-0.xml 21.10.2026: 6093 URL, точная гостиничная цель не подтверждена."
+      ],
+      "note": "Соответствующая отдельная RU-карточка отеля не подтверждена. Географическая страница не сохраняет намерение выбора/бронирования этого отеля; требуется редакционное решение: сохранять гостиничную страницу или 410. RU-цель и готовность 301 не назначены.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:26:33.281Z",
+      "checkedBy": "reverse-worker-mvi9cm3m-l6ox3ffx1id",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-real-palace-rio?page=6",
@@ -497,5 +510,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:26:31.043Z"
+  "updatedAt": "2026-10-21T15:26:33.281Z"
 }

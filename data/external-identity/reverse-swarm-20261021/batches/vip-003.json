@@ -282,7 +282,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/e325d01f6923a35b1faaa7c3.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/argentina/place/puerto-iguazu/tour/",
+      "evidence": [
+        "Frozen VIP #474: /packages в разделе «Пуэрто-Игуасу, Аргентина» (родительская карточка #473), pageType tour_listing и HTTP 200; snapshot title пуст, прежний товарный набор не подтвержден.",
+        "В src/content/destinations/puerto-iguasu.md статус approved, id destination_argentina_puerto_iguasu; текущий активный tours catalog включает 88 основных туров через аргентинский Пуэрто-Игуасу (например tour_brazil_argentina_peru_14d, tour_source_buenos_ajres_salta_iguasu), поэтому RU /argentina/place/puerto-iguazu/tour/ — непустая географическая подборка туров."
+      ],
+      "note": "Совпадает цель пользователя — каталог туров через аргентинскую сторону Игуасу. Состав прежнего /packages не доказан из пустого title/снимка; это только кандидат 301, без включения.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:56:30.643Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/gorod-puehrto-iguasu-v-argentine/ekskursii",
@@ -445,5 +455,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:56:09.517Z"
+  "updatedAt": "2026-10-21T14:56:30.643Z"
 }

@@ -2918,7 +2918,71 @@
         "batchBlobSha": "37db2926bfced9cf7d2fb73624d33343f2f3ac91",
         "reviewOrder": 88
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/panama/tour/panama-2024/",
+        "targetId": "tour_source_panama_2024",
+        "comparedId": "tour_source_panama_2024",
+        "targetContentPath": "src/content/tours/panama-2024.md",
+        "targetBlobSha": "270bd6db70d173230dc450434383e1e33b3ab2d7",
+        "confidence": 0.99,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.723Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/panama-2024 → HTTP 200, title «Панама», 70158 байт, SHA-256 a78f9951c4038f2e2c3fcc92b3056393b008254e887c2c3409faf4e0ec16e443. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/panama-2024.md, blob 270bd6db70d173230dc450434383e1e33b3ab2d7: published, tour_source_panama_2024; RU цель https://adatours.ru/panama/tour/panama-2024/ → HTTP 200, SHA-256 5b8a6f083667cc1711dbbc79735da73e4b592d7bf5bd1679f703907fe1b91fd7.",
+          "Проверен полный исходник: 16 дней Панама-Сити → Чагрес → Сан-Блас → Бока-Чика → Бокете/Бару → Бокас-дель-Торо → Панама-Сити. Тот же маршрут и распределение дней в RU; одноименный 4-дневный тур не выбран."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-88",
+          "url": "https://vipdeluxetravel.ru/panama-2024",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/panama-2024",
+          "sha256": "a78f9951c4038f2e2c3fcc92b3056393b008254e887c2c3409faf4e0ec16e443",
+          "bytes": 70158,
+          "title": "Панама",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/panama-2024\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Панама",
+            "День 2: Панама сити-тур с посещением Панамского канала",
+            "День 3: Национальный парк Чагрес и индейцы Эмбера",
+            "День 4: Сан-Блас",
+            "День 5: Панама",
+            "День 6: Панама – Бока Чика",
+            "День 7–8: Бока Чика",
+            "День 9: Бока Чика – Бокет",
+            "День 10: Вулкан Бару",
+            "День 11: Бокет",
+            "День 12: Бокет – Бокас-дель-Торо",
+            "День 13–14: Бокас-дель-Торо",
+            "День 15: Бокас-дель-Торо – Панама",
+            "День 16: Панама"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_panama_2024",
+          "url": "https://adatours.ru/panama/tour/panama-2024/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/panama/tour/panama-2024/",
+          "sha256": "5b8a6f083667cc1711dbbc79735da73e4b592d7bf5bd1679f703907fe1b91fd7",
+          "bytes": 163151,
+          "title": "Тур Панама по цене от $6 629 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/panama/tour/panama-2024/\">"
+          ],
+          "dayHeadings": [
+            "Дни Ключевая часть"
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 89,
@@ -3353,9 +3417,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:37.294Z",
+  "updatedAt": "2026-10-21T16:35:39.350Z",
   "progress": {
-    "resolved": 37,
+    "resolved": 38,
     "total": 50
   }
 }

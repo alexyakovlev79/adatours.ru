@@ -82,7 +82,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/a7d83ba77e47754e6f5f1397.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/a7d83ba77e47754e6f5f1397.html, SHA-256 8bc61281053248e800f205daac6bbe122e57fa9b39593d9232f9e85099deb0f6, обход 2026-10-20T13:11:36+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Отель Windsor Martinique Rio». Windsor Martinique Rio — трехзвездочный отель у Копакабаны и Ипанемы; бассейн на крыше, ресторан с бразильской/международной кухней и условия проживания.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) поиск названия/бренда Windsor Martinique не дал самостоятельной страницы этого отеля. В src/content.config.ts перечислены countries/destinations/tours/excursions/themes/cases/people/articles, отдельной гостиничной коллекции нет; маршрутизатор [...path].astro формирует detail этих туристических сущностей."
+      ],
+      "note": "Проверена карточка конкретного отеля Windsor Martinique, Рио-де-Жанейро. Подтвержденной самостоятельной RU-страницы отеля в просмотренном текущем source-index нет. Географическая страница города и тур с возможным проживанием имеют другое назначение и не назначены 301-целью; полнота внешнего discovery не заявляется.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:20.308Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/windsor-miramar-palace?page=8",
@@ -265,5 +275,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:17.864Z"
+  "updatedAt": "2026-10-21T15:32:20.308Z"
 }

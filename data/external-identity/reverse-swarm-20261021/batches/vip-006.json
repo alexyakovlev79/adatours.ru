@@ -542,7 +542,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/82ceea7f7396dd4ae0455fe0.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан точный снимок snapshots/82ceea7f7396dd4ae0455fe0.html, проверен SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855; snapshotHttp 200, pageType excursion_listing, H1 «». Пустой HTML /ekskursii (0 байт); географический объект подтверждён родителем как Сьюдад-дель-Эсте, Парагвай.",
+        "В текущем main source-index нет активных самостоятельных экскурсий destination_paraguay_syudad_del_este; маршрутизатор не формирует каталог. Городская страница и два многодневных тура существуют, но не заменяют каталог экскурсий. Проверка RU-цели 21.10.2026: https://adatours.ru/paraguay/ciudad-del-este/ → HTTP 404; активный каталог по этому адресу отсутствует."
+      ],
+      "note": "Каталог экскурсий Сьюдад-дель-Эсте отсутствует (HTTP 404). Нужен отдельный редакционный выбор страницы места либо 410. На соседний город, отдельный тур или главную перенаправление не подтверждено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:40:34.405Z",
+      "checkedBy": "reverse-worker-mvi7p2m1-46jkr1l3h9z",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-takna-v-peru",
@@ -575,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:40:31.922Z"
+  "updatedAt": "2026-10-21T14:40:34.405Z"
 }

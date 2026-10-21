@@ -302,7 +302,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, конечный https://adatours.com/antigua-guatemala/excursions; title Excursions and tours to Antiqua  de Guatemala city in Guatemala; H1 Excursions to countries of Latin America. Фильтр from=category&page=isExcursionCategory&typeid=2&category_id=144&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. SHA-256 20a38bf104bcbc0d52b16d65204b2c14c88da9fa0d88b9cf207355b5503347e6. Frozen inventory: category_ids=[\"144\"], page_type=category; приватный HTML-снимок для этого EN URL не предоставлен.",
+        "Проверен RU-кандидат https://adatours.ru/guatemala/antigua-guatemala/: GET 200, конечный https://adatours.ru/guatemala/antigua-guatemala/, canonical https://adatours.ru/guatemala/antigua-guatemala/. RU содержит 2 экскурсии: Ишимче и Антигуа; Антигуа и текстильные традиции. EN использует category_id=144 и динамическую выдачу без подтвержденного совпадения этих двух программ. География сопоставлена с destination_guatemala_antigua_guatemala в source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 и маршрутизатором src/lib/routes.ts."
+      ],
+      "note": "Каталог тематически/географически близок, но полное тождество фильтра и всех активных программ EN/RU не доказано. Статические EN-превью не заменяют динамическую выдачу; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:06.049Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/antigua-guatemala/packages",
@@ -465,5 +475,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:41.322Z"
+  "updatedAt": "2026-10-21T15:39:06.049Z"
 }

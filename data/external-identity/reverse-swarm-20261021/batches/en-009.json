@@ -302,7 +302,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory: category HTTP 200, H1 «Leon: Excursions to the Cathedral, Cerro Negro Volcano, Colonial City», crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Leon: Excursions to the Cathedral, Cerro Negro Volcano, Colonial City». Module/productsjson по datasrc данного каталога: HTTP 200, total=1. Состав EN: 416 León City Tour.",
+        "Текущий main src/content/destinations/leon.md: approved destination_nicaragua_leon, «Леон». Живой RU-каталог /nicaragua/leon/ HTTP 200; H1 «2 экскурсии в Леоне, Никарагуа - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours», полный счетчик 2 экскурсий до пагинации. /nicaragua/place/leon/ — самостоятельная страница места."
+      ],
+      "note": "Состав каталогов различается: EN 1, RU 2 экскурсий. География и тип сходны, но точная идентичность подборки не подтверждена; sameAs не назначен. Отрицательный вывод относится к паре каталогов, а не к отдельным совпадающим продуктам.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:56:22.572Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/leon/packages",
@@ -475,5 +485,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:56:20.028Z"
+  "updatedAt": "2026-10-21T15:56:22.572Z"
 }

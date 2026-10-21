@@ -42,7 +42,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прямая GET-проверка 21.10.2026: HTTP 200, H1 «Unforgettable tours»; на /excursions-in-brazil показан общий незаполненный шаблон Beautiful country с отсутствующими названиями страны и без карточек экскурсий.",
+        "Текущий main: data/source-index/catalogs/excursions.json содержит конкретные экскурсии Бразилии, включая экскурсии Рио и Игуасу; общий EN-шаблон не подтверждает ни этот каталог, ни Country country_brazil."
+      ],
+      "note": "Адрес по slug напоминает экскурсии по Бразилии, но фактически возвращает незаполненную общую страницу страны. Идентичность действующей RU-сущности не установлена; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:34.650Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/excursions-in-brazil/excursions",
@@ -315,5 +325,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:36:40.217Z"
+  "updatedAt": "2026-10-21T15:39:34.650Z"
 }

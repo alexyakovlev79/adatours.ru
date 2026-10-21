@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: >-
   Бонито в штате Мату-Гросу-ду-Сул выбирают ради прозрачных рек, пещер, водопадов и активного экотуризма: снорклинга, рафтинга, треккинга и поездок по природным маршрутам.
 hero:
-  src: /media/destinations/bonito/hero-enhanced-20261001.webp
-  hover: "Грот Голубого озера в Бонито: сталактиты над синей водой"
-  alt: "Длинные сталактиты над ярко-синим озером и каменистым берегом пещеры Бонито, Бразилия"
+  src: /media/destinations/bonito/hero-generated-20261021-dedup50-v1.webp
+  hover: Бонито — иллюстрация
+  alt: Бонито — иллюстрация
 gallery:
   - src: /media/destinations/bonito/gallery-1-enhanced-20261001.webp
     hover: "Бонито: подводное плавание в прозрачной воде у зелёного берега"
@@ -45,7 +45,7 @@ featureBands:
     image: /media/destinations/bonito/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-bonito-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-bonito-v-brazilii__fe15cf30.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-21'
 themes: ["theme_adventure", "theme_wildlife", "theme_nature"]
 ---
 

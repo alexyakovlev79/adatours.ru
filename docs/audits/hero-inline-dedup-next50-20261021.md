@@ -1,6 +1,6 @@
 # Следующие 50 индивидуальных hero — 21 октября 2026
 
-Подключено 30 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
+Подключено 40 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
 
 | № | Партия | Страница | Статус |
 |---|---|---|---|
@@ -34,16 +34,16 @@
 | 28 | 3 | [Бездна Аньюмас](https://adatours.ru/brazil/place/abismo-anhumas-cave/) | S3 проверен, подключено |
 | 29 | 3 | [Ангра-дус-Рейс](https://adatours.ru/brazil/place/angra-dos-reis/) | S3 проверен, подключено |
 | 30 | 3 | [Зачарованный Аквариум](https://adatours.ru/brazil/place/aquario-encantado/) | S3 проверен, подключено |
-| 31 | 4 | [Эколодж «Арарас»](https://adatours.ru/brazil/place/araras-eco-lodge/) | Ожидает генерации |
-| 32 | 4 | [Бом-Жардим](https://adatours.ru/brazil/place/bom-jardim/) | Ожидает генерации |
-| 33 | 4 | [Бонито](https://adatours.ru/brazil/place/bonito/) | Ожидает генерации |
-| 34 | 4 | [Национальный парк Шапада-дус-Гимарайнс](https://adatours.ru/brazil/place/chapada-dos-guimaraes-national-park/) | Ожидает генерации |
-| 35 | 4 | [Геодезическая смотровая Шапада-дус-Гимарайнс](https://adatours.ru/brazil/place/chapada-geodesic-viewpoint/) | Ожидает генерации |
-| 36 | 4 | [Река Кларинью](https://adatours.ru/brazil/place/clarinho-river/) | Ожидает генерации |
-| 37 | 4 | [Река Коришу у эколоджа «Арарас»](https://adatours.ru/brazil/place/corixo-araras/) | Ожидает генерации |
-| 38 | 4 | [Куритиба](https://adatours.ru/brazil/place/curitiba/) | Ожидает генерации |
-| 39 | 4 | [Флорианополис](https://adatours.ru/brazil/place/florianopolis/) | Ожидает генерации |
-| 40 | 4 | [Фоз-ду-Игуасу](https://adatours.ru/brazil/place/foz-do-iguacu/) | Ожидает генерации |
+| 31 | 4 | [Эколодж «Арарас»](https://adatours.ru/brazil/place/araras-eco-lodge/) | S3 проверен, подключено |
+| 32 | 4 | [Бом-Жардим](https://adatours.ru/brazil/place/bom-jardim/) | S3 проверен, подключено |
+| 33 | 4 | [Бонито](https://adatours.ru/brazil/place/bonito/) | S3 проверен, подключено |
+| 34 | 4 | [Национальный парк Шапада-дус-Гимарайнс](https://adatours.ru/brazil/place/chapada-dos-guimaraes-national-park/) | S3 проверен, подключено |
+| 35 | 4 | [Геодезическая смотровая Шапада-дус-Гимарайнс](https://adatours.ru/brazil/place/chapada-geodesic-viewpoint/) | S3 проверен, подключено |
+| 36 | 4 | [Река Кларинью](https://adatours.ru/brazil/place/clarinho-river/) | S3 проверен, подключено |
+| 37 | 4 | [Река Коришу у эколоджа «Арарас»](https://adatours.ru/brazil/place/corixo-araras/) | S3 проверен, подключено |
+| 38 | 4 | [Куритиба](https://adatours.ru/brazil/place/curitiba/) | S3 проверен, подключено |
+| 39 | 4 | [Флорианополис](https://adatours.ru/brazil/place/florianopolis/) | S3 проверен, подключено |
+| 40 | 4 | [Фоз-ду-Игуасу](https://adatours.ru/brazil/place/foz-do-iguacu/) | S3 проверен, подключено |
 | 41 | 5 | [Золотой путь Бразилии](https://adatours.ru/brazil/place/gold-route/) | Ожидает генерации |
 | 42 | 5 | [Грамаду](https://adatours.ru/brazil/place/gramado/) | Ожидает генерации |
 | 43 | 5 | [Илья-Гранди](https://adatours.ru/brazil/place/ilha-grande/) | Ожидает генерации |

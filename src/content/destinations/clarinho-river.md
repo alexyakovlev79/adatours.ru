@@ -11,12 +11,12 @@ searchAliases:
 - Clarinho River
 themes: ["theme_nature"]
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010-enhanced-20261011-doc-v1.webp
-  hover: "Пантанал: лодка отражается в воде у зеленого берега"
-  alt: "Человек в узкой лодке на спокойной воде у лесистого берега, Пантанал, Бразилия"
+  src: /media/destinations/clarinho-river/hero-generated-20261021-dedup50-v1.webp
+  hover: Река Кларинью — иллюстрация
+  alt: Река Кларинью — иллюстрация
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_clarinho_river.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-21'
 ---
 
 ## Тихая прогулка по воде

@@ -11,9 +11,9 @@ searchAliases:
 - nacionalnyj-park-shapada-dus-gimarajns
 themes: ["theme_nature"]
 hero:
-  src: /media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp
-  hover: "Шапада-дус-Гимарайнс: узкий поток падает с красноватого скального уступа"
-  alt: "Высокий водопад в скальном амфитеатре парка Шапада-дус-Гимарайнс, Бразилия"
+  src: /media/destinations/chapada-dos-guimaraes-national-park/hero-generated-20261021-dedup50-v1.webp
+  hover: Национальный парк Шапада-дус-Гимарайнс — иллюстрация
+  alt: Национальный парк Шапада-дус-Гимарайнс — иллюстрация
 gallery: []
 relatedDestinations: []
 featuredTours: []
@@ -21,7 +21,7 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-21'
 ---
 
 В национальном парке Шапада-дус-Гимарайнс маршруты проходят среди песчаниковых скал и каньонов. Вода и ветер сформировали характерные формы рельефа, а природные тропы соединяют участки растительности и водопады.

@@ -415,7 +415,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/porto-de-galinhas/packages; canonical sourceUrl; H1 «Porto de Galinhas: Natural Pools & Beach Tours». В полученном HTML 5 карточек: Beaches of Brazil; Brazil with Beaches ; Paradise Brazil; Colorful Brazil ; Beautiful Brazil with Amazon: 16-Day New Year journey.",
+        "main 50542db1: destination_brazil_porto_de_galinhas, approved, src/content/destinations/porto-de-galinhas.md, canonical /brazil/place/porto-de-galinhas/. Порту-ди-Галиньяш в Пернамбуку выбирают ради пляжей, рифов и природных бассейнов во время отлива. Маракайпи подходит для серфинга, а Муру-Алту дает более спокойный формат отдыха у воды. Активных основных RU-туров: 6, собственных Excursion по destination: 0. Примеры основных RU-туров: Индивидуальный тур в Бразилию на 13 дней; Люксовый индивидуальный тур в Бразилию с Амазонией | 16 дней; Бразилия с пляжами.",
+        "RU-каталоги из src/pages/[...path].astro: основное посещение и optional-tours разделены через tour-relations.ts; Place и каталог — разные сущности. Совпадение географии без одинакового фильтра и состава не дает sameAs."
+      ],
+      "note": "EN HTML содержит 5 карточек, а действующая RU-коллекция основных туров — 6. Точная идентичность состава и фильтров не подтверждена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:16:38.508Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/porto-seguro-arraial-d-ajuda",
@@ -518,5 +529,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:16:36.317Z"
+  "updatedAt": "2026-10-21T16:16:38.508Z"
 }

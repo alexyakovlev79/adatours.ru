@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T09:58:22.718Z",
+  "updatedAt": "2026-10-21T09:59:12.236Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -10222,103 +10222,170 @@
       "generation": 2
     },
     "https://vipdeluxetravel.ru/panama-ru/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/panama/excursion/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/panama-ru/ekskursii; snapshot status empty_html, HTTP unavailable, title (no HTML body); type excursion_listing.",
+        "Exact legacy source link https://brasiltours.ru/panama-ru → canonical source-index ID country_panama (Панама); production Country MD approved (SHA f3d5caaeb1a1dd65288f9faa13ed3e88ee8e03a6); resulting canonical https://adatours.ru/panama/excursion/.",
+        "Active nonarchived catalogue entries for this exact country_panama: 12 main-route tours, 15 geographically related excursions; current src/pages/[...path].astro creates filtered catalogues only when nonempty. The original old listing saved HTTP 200 with zero-byte body, so actual former product list is unknown."
+      ],
+      "note": "Same country/place and same excursion listing purpose with current active products; no claim about identical historical membership. Prospective 301 only; confirm live HTTP before release.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/panama/place/panama-city/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname; snapshot status fetched, HTTP unavailable, title Панама-Сити: достопримечательности и путеводитель по столице; type unclassified.",
+        "Exact legacy source link https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname → canonical source-index ID destination_panama_panama_siti (Панама-Сити); production Destination MD approved (SHA dfdc91deba0bad85a12a3e8ff687328e6a4dbbf4); resulting canonical https://adatours.ru/panama/place/panama-city/."
+      ],
+      "note": "The same geolocation and primary landing intent are confirmed via archived title and current approved source entry. Prospective 301 only.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/panama/place/panama-city/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname/packages; snapshot status empty_html, HTTP unavailable, title (no HTML body); type tour_listing.",
+        "Exact legacy source link https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname → canonical source-index ID destination_panama_panama_siti (Панама-Сити); production Destination MD approved (SHA dfdc91deba0bad85a12a3e8ff687328e6a4dbbf4); resulting canonical https://adatours.ru/panama/place/panama-city/tour/.",
+        "Active nonarchived catalogue entries for this exact destination_panama_panama_siti: 12 main-route tours, 6 geographically related excursions; current src/pages/[...path].astro creates filtered catalogues only when nonempty. The original old listing saved HTTP 200 with zero-byte body, so actual former product list is unknown."
+      ],
+      "note": "Same country/place and same tour listing purpose with current active products; no claim about identical historical membership. Prospective 301 only; confirm live HTTP before release.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/panama/panama-city/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname/ekskursii; snapshot status empty_html, HTTP unavailable, title (no HTML body); type excursion_listing.",
+        "Exact legacy source link https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname → canonical source-index ID destination_panama_panama_siti (Панама-Сити); production Destination MD approved (SHA dfdc91deba0bad85a12a3e8ff687328e6a4dbbf4); resulting canonical https://adatours.ru/panama/panama-city/.",
+        "Active nonarchived catalogue entries for this exact destination_panama_panama_siti: 12 main-route tours, 6 geographically related excursions; current src/pages/[...path].astro creates filtered catalogues only when nonempty. The original old listing saved HTTP 200 with zero-byte body, so actual former product list is unknown."
+      ],
+      "note": "Same country/place and same excursion listing purpose with current active products; no claim about identical historical membership. Prospective 301 only; confirm live HTTP before release.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/brazil/place/pantanal/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii; snapshot status fetched, HTTP unavailable, title Пантанал, Бразилия: достопримечательности и путеводитель по заповеднику; type unclassified.",
+        "Exact legacy source link https://brasiltours.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii → canonical source-index ID destination_brazil_pantanal (Пантанал); production Destination MD approved (SHA 15dce3c4788d865b0a3381f5a77fa28fe16ad017); resulting canonical https://adatours.ru/brazil/place/pantanal/."
+      ],
+      "note": "The same geolocation and primary landing intent are confirmed via archived title and current approved source entry. Prospective 301 only.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/brazil/place/pantanal/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii/packages; snapshot status empty_html, HTTP unavailable, title (no HTML body); type tour_listing.",
+        "Exact legacy source link https://brasiltours.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii → canonical source-index ID destination_brazil_pantanal (Пантанал); production Destination MD approved (SHA 15dce3c4788d865b0a3381f5a77fa28fe16ad017); resulting canonical https://adatours.ru/brazil/place/pantanal/tour/.",
+        "Active nonarchived catalogue entries for this exact destination_brazil_pantanal: 14 main-route tours, 2 geographically related excursions; current src/pages/[...path].astro creates filtered catalogues only when nonempty. The original old listing saved HTTP 200 with zero-byte body, so actual former product list is unknown."
+      ],
+      "note": "Same country/place and same tour listing purpose with current active products; no claim about identical historical membership. Prospective 301 only; confirm live HTTP before release.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/brazil/pantanal/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii/ekskursii; snapshot status empty_html, HTTP unavailable, title (no HTML body); type excursion_listing.",
+        "Exact legacy source link https://brasiltours.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii → canonical source-index ID destination_brazil_pantanal (Пантанал); production Destination MD approved (SHA 15dce3c4788d865b0a3381f5a77fa28fe16ad017); resulting canonical https://adatours.ru/brazil/pantanal/.",
+        "Active nonarchived catalogue entries for this exact destination_brazil_pantanal: 14 main-route tours, 2 geographically related excursions; current src/pages/[...path].astro creates filtered catalogues only when nonempty. The original old listing saved HTTP 200 with zero-byte body, so actual former product list is unknown."
+      ],
+      "note": "Same country/place and same excursion listing purpose with current active products; no claim about identical historical membership. Prospective 301 only; confirm live HTTP before release.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/paragvaj-ru": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/paraguay/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/paragvaj-ru; snapshot status fetched, HTTP unavailable, title Путешествие в Парагвай: отдых и лучшее в стране | Туроператор Ada Tours; type unclassified.",
+        "Exact legacy source link https://brasiltours.ru/paragvaj-ru → canonical source-index ID country_paraguay (Парагвай); production Country MD approved (SHA 4207425fe86bd56d41ba90dfdc1937eab675c44a); resulting canonical https://adatours.ru/paraguay/."
+      ],
+      "note": "The same geolocation and primary landing intent are confirmed via archived title and current approved source entry. Prospective 301 only.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/paragvaj-ru/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/paraguay/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/paragvaj-ru/packages; snapshot status empty_html, HTTP unavailable, title (no HTML body); type tour_listing.",
+        "Exact legacy source link https://brasiltours.ru/paragvaj-ru → canonical source-index ID country_paraguay (Парагвай); production Country MD approved (SHA 4207425fe86bd56d41ba90dfdc1937eab675c44a); resulting canonical https://adatours.ru/paraguay/tour/.",
+        "Active nonarchived catalogue entries for this exact country_paraguay: 2 main-route tours, 1 geographically related excursions; current src/pages/[...path].astro creates filtered catalogues only when nonempty. The original old listing saved HTTP 200 with zero-byte body, so actual former product list is unknown."
+      ],
+      "note": "Same country/place and same tour listing purpose with current active products; no claim about identical historical membership. Prospective 301 only; confirm live HTTP before release.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/paragvaj-ru/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/paraguay/excursion/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:59:12.236Z",
+      "evidence": [
+        "Preserved vipdeluxetravel.ru crawl of 2026-10-19: https://vipdeluxetravel.ru/paragvaj-ru/ekskursii; snapshot status empty_html, HTTP unavailable, title (no HTML body); type excursion_listing.",
+        "Exact legacy source link https://brasiltours.ru/paragvaj-ru → canonical source-index ID country_paraguay (Парагвай); production Country MD approved (SHA 4207425fe86bd56d41ba90dfdc1937eab675c44a); resulting canonical https://adatours.ru/paraguay/excursion/.",
+        "Active nonarchived catalogue entries for this exact country_paraguay: 2 main-route tours, 1 geographically related excursions; current src/pages/[...path].astro creates filtered catalogues only when nonempty. The original old listing saved HTTP 200 with zero-byte body, so actual former product list is unknown."
+      ],
+      "note": "Same country/place and same excursion listing purpose with current active products; no claim about identical historical membership. Prospective 301 only; confirm live HTTP before release.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     }
   },

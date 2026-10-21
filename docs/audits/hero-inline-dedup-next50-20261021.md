@@ -1,19 +1,19 @@
 # Следующие 50 индивидуальных hero — 21 октября 2026
 
-Пять последовательных партий по 10. Исходная очередь — проверка повторов hero внутри страницы. Предыдущие восемь замен исключены. Новые WebP публикуются только после прямой загрузки в S3 и сверки SHA-256.
+Подключено 10 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
 
 | № | Партия | Страница | Статус |
 |---|---|---|---|
-| 1 | 1 | [Остров Хаф-Мун](https://adatours.ru/antarctica/place/half-moon-island/) | Ожидает генерации |
-| 2 | 1 | [Базилика Эль-Пилар](https://adatours.ru/argentina/place/basilica-del-pilar/) | Ожидает генерации |
-| 3 | 1 | [Буэнос-Айрес](https://adatours.ru/argentina/place/buenos-aires/) | Ожидает генерации |
-| 4 | 1 | [Качи](https://adatours.ru/argentina/place/cachi/) | Ожидает генерации |
-| 5 | 1 | [Каса-Росада](https://adatours.ru/argentina/place/casa-rosada/) | Ожидает генерации |
-| 6 | 1 | [Серро-Кампанарио](https://adatours.ru/argentina/place/cerro-campanario/) | Ожидает генерации |
-| 7 | 1 | [Куэвас-Пинтадас-де-Гуачипас](https://adatours.ru/argentina/place/cuevas-pintadas-guachipas/) | Ожидает генерации |
-| 8 | 1 | [Эль-Калафате](https://adatours.ru/argentina/place/el-calafate/) | Ожидает генерации |
-| 9 | 1 | [Лухан-де-Куйо](https://adatours.ru/argentina/place/lujan-de-cuyo/) | Ожидает генерации |
-| 10 | 1 | [Остров Мартильо](https://adatours.ru/argentina/place/martillo-island/) | Ожидает генерации |
+| 1 | 1 | [Остров Хаф-Мун](https://adatours.ru/antarctica/place/half-moon-island/) | S3 проверен, подключено |
+| 2 | 1 | [Базилика Эль-Пилар](https://adatours.ru/argentina/place/basilica-del-pilar/) | S3 проверен, подключено |
+| 3 | 1 | [Буэнос-Айрес](https://adatours.ru/argentina/place/buenos-aires/) | S3 проверен, подключено |
+| 4 | 1 | [Качи](https://adatours.ru/argentina/place/cachi/) | S3 проверен, подключено |
+| 5 | 1 | [Каса-Росада](https://adatours.ru/argentina/place/casa-rosada/) | S3 проверен, подключено |
+| 6 | 1 | [Серро-Кампанарио](https://adatours.ru/argentina/place/cerro-campanario/) | S3 проверен, подключено |
+| 7 | 1 | [Куэвас-Пинтадас-де-Гуачипас](https://adatours.ru/argentina/place/cuevas-pintadas-guachipas/) | S3 проверен, подключено |
+| 8 | 1 | [Эль-Калафате](https://adatours.ru/argentina/place/el-calafate/) | S3 проверен, подключено |
+| 9 | 1 | [Лухан-де-Куйо](https://adatours.ru/argentina/place/lujan-de-cuyo/) | S3 проверен, подключено |
+| 10 | 1 | [Остров Мартильо](https://adatours.ru/argentina/place/martillo-island/) | S3 проверен, подключено |
 | 11 | 2 | [Мендоса](https://adatours.ru/argentina/place/mendoza/) | Ожидает генерации |
 | 12 | 2 | [Пуэрто Игуасу](https://adatours.ru/argentina/place/puerto-iguazu/) | Ожидает генерации |
 | 13 | 2 | [Кладбище Реколета](https://adatours.ru/argentina/place/recoleta-cemetery/) | Ожидает генерации |
@@ -55,4 +55,6 @@
 | 49 | 5 | [Река Клару у лоджа «Жардим-да-Амазония»](https://adatours.ru/brazil/place/rio-claro-jardim-amazonia/) | Ожидает генерации |
 | 50 | 5 | [Сан-Паулу](https://adatours.ru/brazil/place/sao-paulo/) | Ожидает генерации |
 
-Промпты, новые пути, receipts и промежуточные статусы: [машинный реестр](../../data/audits/hero-inline-dedup-next50-20261021.json).
+Промпты, новые пути, receipts и происхождение встроенного imagegen: [машинный реестр](../../data/audits/hero-inline-dedup-next50-20261021.json).
+
+Публикация выполняется штатным Pages workflow. «Подключено» означает content commit, а не подтверждённый финальный deploy.

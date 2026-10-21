@@ -9,8 +9,8 @@ destinationType: city
 summary: >-
   В Буэнос-Айресе можно соединить Ла-Боку и Сан-Тельмо, Пласа-де-Майо, Каса-Росаду, Обелиск, музеи, театры, танго и отдельный выезд в дельту Тигре.
 hero:
-  src: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
-  alt: Буэнос-Айрес, Аргентина
+  src: /media/destinations/buenos-aires/hero-generated-20261021-dedup50-v1.webp
+  alt: Буэнос-Айрес — иллюстрация
 gallery:
   - src: /media/home/buenos-aires-enhanced-20260930.webp
     hover: "Буэнос-Айрес: фасад Каса-Росада и цветы на переднем плане"
@@ -42,7 +42,7 @@ featureBands:
     image: /media/destinations/buenos-aires/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/stolica-argentiny-gorod-buehnos-ajres
 sourceSnapshot: page_texts_original/stolica-argentiny-gorod-buehnos-ajres__3e2ffb79.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-21'
 themes: ["theme_culture"]
 ---
 

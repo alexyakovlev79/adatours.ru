@@ -9,8 +9,8 @@ destinationType: city
 summary: >-
   Эль-Калафате в программах Ada Tours связан прежде всего с Национальным парком Лос-Гласьярес и ледником Перито-Морено: смотровые маршруты, прогулка на судне и активные форматы на льду.
 hero:
-  src: /media/destinations/el-calafate/hero-enhanced-20260930.webp
-  alt: Патагония рядом с Эль-Калафате
+  src: /media/destinations/el-calafate/hero-generated-20261021-dedup50-v1.webp
+  alt: Эль-Калафате — иллюстрация
 gallery:
   - src: /media/home/patagonia-enhanced-20260930.webp
     hover: "Патагония: озеро с зелёными берегами на фоне гор"
@@ -42,7 +42,7 @@ featureBands:
     image: /media/destinations/el-calafate/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/argentinskaya-patagoniya-i-gorod-ehl-kalafate
 sourceSnapshot: page_texts_original/argentinskaya-patagoniya-i-gorod-ehl-kalafate__cf077830.md
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-21'
 themes: ["theme_nature", "theme_adventure"]
 ---
 

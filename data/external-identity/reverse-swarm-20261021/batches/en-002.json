@@ -529,7 +529,19 @@
       "pageType": "unknown",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/colombia/bogota/bogota-city-tour/",
+      "evidence": [
+        "EN live HTTP200 /bogota-city-tour self canonical; H1 Panoramic city tour of Bogotá's historic and cultural center, Duration Half day, выезд9:00; Ла-Канделария → Музей золота → Casa de la Moneda/Ботеро → площадь Боливара → Монсеррат. SHA-256 513952d0b479ae6f951aae847f2fdde64b443ae1a699cc664a801f5caa123742.",
+        "RU live HTTP200 /colombia/bogota/bogota-city-tour/ self canonical, stable ID excursion_source_siti_tur_v_bogote, approved MD blob bc3bdc1bb769c53f1919ea9ff51c1f0ce507f5a1: 5ч, выезд9:00, те же остановки и порядок; полдня EN совместимо с5ч RU. SHA-256 5707e5a509ebfd82b3998bff74c8ce5505b7b5e46101806d792469283882f8e3.",
+        "В обеих версиях основная цена$226; для2чел$141/чел,3чел$109/чел,4чел$102/чел; включены трансфер и английский гид, обед дополнительно. Совпадает условие изменения порядка остановок.",
+        "Отдельный RU-кандидат excursion_colombia_bogota_museums_monserrate_6_hours проверен (MD blob1721187f7a23d9d7dbbb4fe937d82fa71b0d1f2a): 6ч, билеты/страховочная карта и иные условия; он исключён как другая программа. Frozen EN typeunknown, title/H1 пусты, HTTP200, snapshotFile отсутствует — вывод основан на текущем HTML."
+      ],
+      "note": "Подтверждена именно 5-часовая RU-экскурсия с тем же маршрутом, временем начала, ценовой сеткой и услугами; отдельный 6-часовой Word-маршрут не смешивается. sameAs сохранён только в реестре.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:48:50.205Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-cochabamba/excursions",
@@ -582,5 +594,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:48:01.595Z"
+  "updatedAt": "2026-10-21T15:48:50.205Z"
 }

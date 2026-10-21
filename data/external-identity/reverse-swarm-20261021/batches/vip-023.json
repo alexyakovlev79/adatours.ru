@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi8ec97-qnsoy8j4sr",
-    "token": "reverse-lease-mvi8ec97-vfdiz88elsm",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:52:41.296Z",
-    "expiresAt": "2026-10-21T16:22:41.296Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/tur-v-braziliyu-na-kofejnye-fazendy",
@@ -602,8 +596,20 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/0f0d21e5fd7569eea28769f3.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP source crawl 2026-10-20: HTTP 200, title and H1 both \"Соединенные Штаты Венесуэлы\", canonical /soedinennye-shtaty-venesuely.",
+        "Ada Tours same product Tour tour_source_soedinennye_shtaty_venesuely, 12 days, Margarita–Orinoco Delta–Canaima–Llanos, has MD status archived and confirmed 2025 departures."
+      ],
+      "note": "Точное название и маршрут существуют в RU, но тур архивирован с датами 2025 года. Для старого VIP URL требуется решение по активной замене или 410; архивный RU URL не является готовой целью 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:10:56.067Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:10:51.606Z"
+  "updatedAt": "2026-10-21T15:10:56.067Z",
+  "completedAt": "2026-10-21T15:10:56.067Z",
+  "lastOwner": "reverse-worker-mvi8ec97-qnsoy8j4sr"
 }

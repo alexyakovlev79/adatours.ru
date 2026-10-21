@@ -462,7 +462,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/382422c505e377f384b28080.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #483: URL /packages под мексиканским курортом Пуэрто-Эскондидо, pageType tour_listing, HTTP 200, title пуст; старый ассортимент неизвестен.",
+        "Ни один активный Tour в текущем data/source-index/catalogs/tours.json не содержит destination_mexico_puerto_eskandido, поэтому непустой RU каталог /mexico/place/puerto-escondido/tour/ отсутствует."
+      ],
+      "note": "Для старого списка туров Пуэрто-Эскондидо нет непустого RU-каталога. Нужен редакционный выбор между направлением на страницу курорта и 410; 301 пока не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:00:03.263Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-kurort-puerto-escondido-v-meksike/ekskursii",
@@ -535,5 +545,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:59:43.873Z"
+  "updatedAt": "2026-10-21T15:00:03.263Z"
 }

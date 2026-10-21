@@ -1,11 +1,11 @@
 ---
 import { withBase } from '../../lib/paths';
-interface Props { src: string; mobileSrc?: string; poster: string }
-const { src, mobileSrc, poster } = Astro.props;
+interface Props { src: string; mobileSrc?: string; poster: string; posterInHeroPicture?: boolean }
+const { src, mobileSrc, poster, posterInHeroPicture = false } = Astro.props;
 ---
 
 <hero-background-video>
-  <video class="hero-video" data-src={withBase(src)} data-mobile-src={mobileSrc ? withBase(mobileSrc) : undefined} poster={withBase(poster)}
+  <video class="hero-video" data-src={withBase(src)} data-mobile-src={mobileSrc ? withBase(mobileSrc) : undefined} poster={posterInHeroPicture ? undefined : withBase(poster)}
     muted loop autoplay playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
   <button class="hero-video-toggle" type="button" hidden aria-label="Приостановить видео">
     <span aria-hidden="true">Ⅱ</span>

@@ -216,20 +216,23 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     max-width: 100%;
     margin-top: 18px;
     padding: 12px 20px;
-    border: 1px solid var(--color-gold-deep);
+    border: 1px solid var(--cta-border);
     border-radius: var(--radius-cta);
     color: var(--color-ink);
-    background: var(--color-gold-soft);
+    background: var(--cta-fill-light);
     font-family: var(--font-display);
     font-size: .93rem;
     font-weight: 600;
     line-height: 1.35;
     text-align: center;
     text-decoration: none;
-    transition: background 180ms ease;
+    transition: background 180ms ease, border-color 180ms ease;
   }
   .mc-picker__reset > span { white-space: nowrap; }
-  .mc-picker__reset:hover { background: var(--color-gold); }
+  .mc-picker__reset:hover {
+    border-color: var(--cta-border-hover);
+    background: var(--cta-fill-light-hover);
+  }
   .mc-picker__reset:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }
   @media (max-width: 600px) {
     .mc-picker { padding-bottom: 30px; }

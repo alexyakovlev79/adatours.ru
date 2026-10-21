@@ -295,9 +295,9 @@ notes:
 - Порядок экскурсий может быть изменен при сохранении программы тура.
 - Ada Tours не несет ответственности за пропущенные завтраки в отелях, если раннее выселение связано с ранним перелетом или
   экскурсией.
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-21'
 sourceUrl: https://brasiltours.ru/vlyubites-v-argentinu
-sourceSnapshot: https://drive.google.com/file/d/1Lc-exxPA9YxnTOx3Pr_YZ50SfogO38xu/view?usp=drivesdk
+sourceSnapshot: https://docs.google.com/document/d/1mT6CCTXmmiOg8ebri3Yx_FDnwrsczLwz/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true
 durationDays: 15
 durationNights: 14
 priceFrom: 5375

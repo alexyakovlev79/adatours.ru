@@ -35,8 +35,10 @@ const resolvedHref = opensLeadModal ? '#request' : withBase(href);
     gap: 28px;
     min-width: 210px;
     padding: 16px 20px;
-    border: 1px solid transparent;
+    border: 1px solid var(--cta-border);
     border-radius: var(--radius-cta);
+    background: var(--cta-fill-light);
+    color: var(--color-ink-deep);
     font-family: var(--font-display);
     font-size: 0.8rem;
     font-weight: 600;
@@ -48,39 +50,43 @@ const resolvedHref = opensLeadModal ? '#request' : withBase(href);
       border-color 220ms var(--ease-out);
   }
 
-  .cta--gold {
-    background: var(--color-brand);
-    color: var(--color-ink-deep);
+  /* All CTA variants share a neutral translucent surface and turquoise rim. */
+  .cta:hover {
+    border-color: var(--cta-border-hover);
+    background: var(--cta-fill-light-hover);
   }
 
-  .cta--gold:hover {
-    background: var(--color-brand-hover);
-  }
-
-  .cta--light {
-    background: var(--color-bg);
-    color: var(--color-ink);
-  }
-
-  .cta--ghost {
-    border-color: currentColor;
-    background: transparent;
-  }
-
-  /* Inverse primary CTA for saturated brand surfaces (e.g. tour pricing). */
   .cta--dark {
-    border-color: var(--color-ink-deep);
-    background: var(--color-ink-deep);
     color: var(--color-bg);
+    background: var(--cta-fill-dark);
   }
 
   .cta--dark:hover {
-    border-color: color-mix(in srgb, var(--color-ink-deep) 84%, var(--color-bg));
-    background: color-mix(in srgb, var(--color-ink-deep) 84%, var(--color-bg));
+    background: var(--cta-fill-dark-hover);
   }
 
-  .cta--dark:focus-visible {
-    outline: 3px solid var(--color-ink-deep);
-    outline-offset: 4px;
+  /* Photographic banners and the transparent header need white lettering. */
+  :global(.hero) .cta,
+  :global(.band) .cta,
+  :global(.band-card) .cta,
+  :global(.story) .cta,
+  :global(.proof) .cta,
+  :global(.site-header--light:not(.is-scrolled):not(.is-open)) .cta,
+  :global(.site-header.is-open) .cta,
+  :global(.mobile-menu) .cta {
+    color: var(--color-bg);
+    background: var(--cta-fill-photo);
+    text-shadow: 0 1px 3px rgb(0 0 0 / 60%);
+  }
+
+  :global(.hero) .cta:hover,
+  :global(.band) .cta:hover,
+  :global(.band-card) .cta:hover,
+  :global(.story) .cta:hover,
+  :global(.proof) .cta:hover,
+  :global(.site-header--light:not(.is-scrolled):not(.is-open)) .cta:hover,
+  :global(.site-header.is-open) .cta:hover,
+  :global(.mobile-menu) .cta:hover {
+    background: var(--cta-fill-photo-hover);
   }
 </style>

@@ -4,14 +4,17 @@ import VipBadge from '../tour/VipBadge.astro';
 import { getVipTourPaths } from '../../lib/vip-catalog';
 interface Props {
   entityId: string; title: string; text?: string; href: string; image?: string;
+  mobileCover?: { src: string; position: string };
   eyebrow?: string; meta?: string; imageTextAlign?: 'left' | 'right'; large?: boolean;
 }
-const { entityId, title, text, href, image, eyebrow, meta, imageTextAlign = 'left', large = false } = Astro.props;
+const { entityId, title, text, href, image, mobileCover, eyebrow, meta, imageTextAlign = 'left', large = false } = Astro.props;
 const vip = (await getVipTourPaths()).has(href);
 ---
 <article class:list={['interest-card', { 'interest-card--large': large }]} data-interest-item={entityId}>
   <a href={withBase(href)} class="interest-card__link">
-    {image && <div class="interest-card__image"><img src={withBase(image)} alt="" loading="lazy" decoding="async" />{vip && <VipBadge overlay />}</div>}
+    {image && <div class="interest-card__image">{mobileCover
+      ? <span class="interest-card__responsive-image" data-mobile-cover="home-p02" aria-hidden="true" style={`--interest-image: url("${withBase(image)}");--interest-mobile-image: url("${withBase(mobileCover.src)}");--interest-mobile-position: ${mobileCover.position}`} />
+      : <img src={withBase(image)} alt="" loading="lazy" decoding="async" />}{vip && <VipBadge overlay />}</div>}
     <div class="interest-card__copy" data-text-align={imageTextAlign}>
       {eyebrow && eyebrow !== 'По интересам' && <p class="eyebrow">{eyebrow}</p>}
       <h3>{title}<span aria-hidden="true"> ↗</span></h3>
@@ -53,8 +56,17 @@ const vip = (await getVipTourPaths()).has(href);
   }
   .interest-card__image :global(.vip-badge--overlay) { top: 16px; left: 16px; }
   .interest-card__image img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+  .interest-card__responsive-image {
+    position: absolute;
+    inset: 0;
+    background-image: var(--interest-image);
+    background-size: cover;
+    background-position: var(--interest-original-position, center);
+    transition: transform .35s ease;
+  }
   @media (prefers-reduced-motion: no-preference) {
-    .interest-card__link:hover img { transform: scale(1.025); }
+    .interest-card__link:hover img,
+    .interest-card__link:hover .interest-card__responsive-image { transform: scale(1.025); }
   }
   .interest-card__copy {
     position: relative;
@@ -79,5 +91,14 @@ const vip = (await getVipTourPaths()).has(href);
     .interest-card__copy { padding: 24px var(--gutter) 30px; }
     h3 { font-size: clamp(1.85rem, 7vw, 2.55rem); }
     .interest-card--large .interest-card__link { min-height: clamp(360px, 105vw, 500px); }
+    /* Keep the hikers visible when the horizontal adventure photo is cropped on phones. */
+    .interest-card[data-interest-item="theme_adventure"] { --interest-original-position: 92% center; }
+    .interest-card[data-interest-item="theme_adventure"] .interest-card__image img { object-position: 92% center; }
+  }
+  @media (max-width: 479px) {
+    .interest-card__responsive-image {
+      background-image: var(--interest-mobile-image, var(--interest-image));
+      background-position: var(--interest-mobile-position, center);
+    }
   }
 </style>

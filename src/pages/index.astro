@@ -20,6 +20,15 @@ import ReviewCarousel from '../components/proof/ReviewCarousel.astro';
 import { ADA_REVIEWS, adaReviewPageSchema } from '../data/reviews/ada-tours';
 import FactStrip from '../components/proof/FactStrip.astro';
 import SearchTrigger from '../components/global/SearchTrigger.astro';
+import directS3Uploads from '../data/media/direct-s3-uploads.json';
+import mobileHeroPilot from '../data/media/mobile-hero-pilot-20261021.json';
+
+// Explicit homepage opt-in: reuse verified crops without changing other card uses.
+const mobileCoverFor = (source?: string) => {
+  const crop = mobileHeroPilot.items.find((item) => item.source === source && item.status === 'READY');
+  const variant = crop?.variants.at(-1);
+  return crop && variant ? { src: `/${variant.key}`, position: crop.objectPosition } : undefined;
+};
 
 const activeRu = ({ data }) => data.locale === 'ru' && isActiveEntity(data);
 const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionEntries, people] = await Promise.all([
@@ -71,6 +80,16 @@ const excursionCover = excursionEntries.find((entry) => entry.data.country === '
   ?? excursionEntries.find((entry) => entry.data.hero?.src)?.data.hero?.src
   ?? '/media/home/rio-night-enhanced-20260930.webp';
 const anna = people.find((entry) => entry.data.id === 'person_anna');
+
+// Enable the mobile homepage video only after its exact S3 upload receipt is committed.
+// Until then, phones retain the existing static hero image.
+const homeMobileHeroKey = 'media/home/home-hero-mobile-20261021-v1.mp4';
+const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
+  asset.key === homeMobileHeroKey &&
+  asset.contentType === 'video/mp4' &&
+  asset.sha256 === '83ad6267234a817d72fc9428796f3b7338e4677289abf69fb2da9a8424c2241a' &&
+  asset.bytes === 1606586
+) ? `/${homeMobileHeroKey}` : undefined;
 ---
 
 <BaseLayout
@@ -87,7 +106,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     title="Латинская Америка. Ваша история путешествия"
     intro="Мы принимающий туроператор из Рио-де-Жанейро с опытом 20 лет. Соединим интересные вам места в одну поездку — частную, VIP или деловую — с продуманной логистикой и сервисом."
     image="/media/home/hero-rio-generated-20261008-v2.webp"
-    video={{ src: "/media/home/home-hero-20261016-v1.mp4" }}
+    video={{ src: "/media/home/home-hero-20261016-v1.mp4", mobileSrc: homeMobileHeroSrc }}
     ctaHref="#home-start"
     ctaLabel="Выбрать путешествие"
   />
@@ -147,6 +166,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
           : leadingCountry.data.summary}
         href={countryPath(leadingCountry.data)}
         image={leadingCountry.data.hero?.src}
+        mobileCover={mobileCoverFor(leadingCountry.data.hero?.src)}
         imageTextAlign={leadingCountry.data.imageTextAlign}
       />
     )}
@@ -159,6 +179,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
             title={country.data.name}
             href={countryPath(country.data)}
             image={country.data.hero?.src}
+            mobileCover={mobileCoverFor(country.data.hero?.src)}
             imageTextAlign={country.data.imageTextAlign}
           />
         ))}
@@ -190,6 +211,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
             meta={interestTourCount(entry.data.id, tourCount)}
             image={entry.data.hero?.src}
             href={themePath(entry.data)}
+            mobileCover={mobileCoverFor(entry.data.hero?.src)}
             large={index === 0}
           />
         ))}
@@ -259,8 +281,9 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
     title="Одна поездка. Несколько стран"
     text="Аргентина и Бразилия, Перу и Боливия, Патагония и водопады Игуасу. Сравните готовые маршруты по нескольким странам."
     href="/multi-country/"
-    image="/media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp"
+    image="/media/home/rio-night-enhanced-20260930.webp"
     align="right"
+    strongOverlay
   />
 
   <section id="home-discover" class="home-discover home-section" aria-labelledby="home-discover-title">
@@ -485,7 +508,7 @@ const anna = people.find((entry) => entry.data.id === 'person_anna');
   .home-final { padding-block: var(--section-y); color: #fff; background: var(--color-ink-deep); }
   .home-final h2 { max-width: 970px; margin: 12px 0 25px; font-size: var(--text-h2); line-height: 1.04; }
   .home-final p:not(.eyebrow) { max-width: 640px; color: rgb(255 255 255 / 78%); font-size: var(--text-lg); }
-  .home-final a { display: inline-flex; gap: 25px; margin-top: 22px; padding: 14px 0; border-bottom: 1px solid var(--color-gold); color: var(--color-gold); }
+  .home-final a { display: inline-flex; gap: 25px; margin-top: 22px; padding: 14px 0; border-bottom: 1px solid currentColor; color: #fff; }
 
   @media (max-width: 980px) {
     .home-country-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

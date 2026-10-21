@@ -11,11 +11,13 @@ interface Props {
   text?: string;
   href: string;
   image?: string;
+  mobileCover?: { src: string; position: string };
   align?: 'left' | 'right';
   imageTextAlign?: 'left' | 'right';
   mediaStatus?: 'approved' | 'needs_replacement' | 'replaced';
   replacementReason?: string;
   descriptionBelow?: boolean;
+  strongOverlay?: boolean;
 }
 
 const {
@@ -25,15 +27,17 @@ const {
   text,
   href,
   image,
+  mobileCover,
   align = 'left',
   imageTextAlign,
   mediaStatus,
   replacementReason,
   descriptionBelow = false,
+  strongOverlay = false,
 } = Astro.props;
 
 const resolvedImage = image ? withBase(image) : undefined;
-const style = resolvedImage ? `--band-image: url("${resolvedImage}")` : undefined;
+const style = resolvedImage ? `--band-image: url("${resolvedImage}")${mobileCover ? `;--band-mobile-image: url("${withBase(mobileCover.src)}");--band-mobile-position: ${mobileCover.position}` : ''}` : undefined;
 const resolvedHref = withBase(href);
 const resolvedAlign = imageTextAlign ?? align;
 const vip = (await getVipTourPaths()).has(href);
@@ -58,7 +62,8 @@ const vip = (await getVipTourPaths()).has(href);
     <span class="band-card__link">Смотреть <span aria-hidden="true">↗</span></span>
   </a>
 ) : (
-  <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image }]} href={resolvedHref} style={style}
+  <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image, 'band--strong-overlay': strongOverlay }]} href={resolvedHref} style={style}
+    data-mobile-cover={mobileCover ? 'home-p02' : undefined}
     data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
@@ -196,6 +201,13 @@ const vip = (await getVipTourPaths()).has(href);
     background-position: center;
   }
 
+  @media (max-width: 479px) {
+    .band--image[data-mobile-cover="home-p02"] {
+      background-image: var(--band-mobile-image, var(--band-image));
+      background-position: var(--band-mobile-position, center);
+    }
+  }
+
   .band__overlay {
     position: absolute;
     inset: 0;
@@ -204,6 +216,11 @@ const vip = (await getVipTourPaths()).has(href);
     transition: background 350ms var(--ease-out);
   }
 
+
+  /* Explicitly requested darker text zone, without changing the original photo. */
+  .band--strong-overlay .band__overlay {
+    background: linear-gradient(90deg, rgba(10,10,9,.44), rgba(10,10,9,.70) 48%, rgba(10,10,9,.80));
+  }
 
   .band__content {
     align-self: end;
@@ -248,6 +265,9 @@ const vip = (await getVipTourPaths()).has(href);
   }
 
   @media (max-width: 720px) {
+    .band--strong-overlay .band__overlay {
+      background: linear-gradient(180deg, rgba(8,9,8,.55), rgba(8,9,8,.74) 54%, rgba(8,9,8,.84));
+    }
     .band-card {
       display: grid;
       grid-template-columns: var(--gutter) minmax(0, 1fr) var(--gutter);

@@ -102,7 +102,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/e04d7514b15469644c6c5900.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/place/porto-alegre/tour/",
+      "evidence": [
+        "Frozen VIP inventory position 435: suffix /packages, pageType=tour_listing, snapshotHttp=200; заголовок снимка пуст, состав старых товаров не доказан.",
+        "RU destination_brazil_porto_alegre опубликовано; src/pages/[...path].astro генерирует /brazil/place/porto-alegre/tour/ при наличии основных маршрутов. В текущих MD/каталоге 3 активных основных туров через место."
+      ],
+      "note": "Кандидат 301 по идентичной географии и типу каталога. Совпадение старого и текущего состава туров не утверждается.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:40:08.485Z",
+      "checkedBy": "reverse-worker-mvi7q9ft-aq1m9jzn3z",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-portu-alegri-v-brazilii/ekskursii",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:40:04.745Z"
+  "updatedAt": "2026-10-21T14:40:08.485Z"
 }

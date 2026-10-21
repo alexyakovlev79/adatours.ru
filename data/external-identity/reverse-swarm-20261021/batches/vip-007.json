@@ -62,7 +62,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/4dcb317e1ada6b8452c33fe5.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP замороженный инвентарь №583: pageType=excursion_listing, HTTP в старом снимке 200, title/H1 пусты, snapshotFile=snapshots/4dcb317e1ada6b8452c33fe5.html; HTML не открыт.",
+        "Текущий каталог source-index Ada Tours: место Тапачула, stable ID destination_mexico_tapachula, имеет действующий Destination MD, но не имеет связанных активных экскурсий для непустого RU-каталога."
+      ],
+      "note": "URL старого списка экскурсий для «Тапачула»: действующего непустого аналогичного каталога Ada Tours не обнаружено. Нельзя делать 301 на отсутствующий каталог либо на главную; требуется редакционное решение о переводе на страницу места или 410.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:52:26.395Z",
+      "checkedBy": "reverse-worker-mvi83j7a-l8szybbr92h",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tegusigalpa-v-gondurase",
@@ -425,5 +435,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:51:28.076Z"
+  "updatedAt": "2026-10-21T14:52:26.395Z"
 }

@@ -42,7 +42,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/47829db3b766544a9a19783f.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #462: HTTP 200, pageType=tour_listing под страницей Пунта-Горды, snapshot title пуст; исходный состав туров не подтвержден.",
+        "В текущем каталоге data/source-index/catalogs/tours.json среди активных туров нет ни одной связи с destination_belize_punta_gorda; непустой /belize/place/punta-gorda/tour/ отсутствует."
+      ],
+      "note": "Нельзя направлять каталог туров на несуществующий RU-список и утверждать тождество ассортимента. Нужен выбор: страница места /belize/place/punta-gorda/ либо 410; 301 не готов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:51:16.468Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-punta-gorda-v-belize-na-karibah/ekskursii",
@@ -325,5 +335,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:50:07.859Z"
+  "updatedAt": "2026-10-21T14:51:16.468Z"
 }

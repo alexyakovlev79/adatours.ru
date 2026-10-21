@@ -282,7 +282,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Curitiba Eco Excursions | Green Capital & Niemeyer Museum | Ada Tours», H1 «Curitiba Eco Excursions: Green Capital and Niemeyer Museum». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/curitiba/excursions: HTTP 200, canonical=https://adatours.com/curitiba/excursions, H1 «Curitiba Eco Excursions: Green Capital and Niemeyer Museum».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=305&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. Первый ответ API: total=1, products=1. Примеры ID/названий: 2206 «City Tour - Curitiba».",
+        "https://adatours.ru/brazil/place/curitiba/ — HTTP 200, canonical совпадает, H1 «Куритиба». Текущий sitemap не содержит отдельного экскурсионного каталога /brazil/curitiba/."
+      ],
+      "note": "EN — каталог с City Tour - Curitiba (2206), RU — страница самого города; отдельной равной подборки экскурсий не найдено. Нельзя присвоить каталог ни месту, ни одной экскурсии как sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:26.621Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/curitiba/packages",
@@ -455,5 +467,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:23.879Z"
+  "updatedAt": "2026-10-21T15:46:26.621Z"
 }

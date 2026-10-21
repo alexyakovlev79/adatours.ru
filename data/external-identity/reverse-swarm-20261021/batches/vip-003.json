@@ -122,7 +122,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/5dd5e46b7d7b112df5cfa38e.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #466: URL /ekskursii в разделе Пунта-дель-Эсте, pageType excursion_listing, HTTP 200 и пустой title; конкретный набор не извлечен.",
+        "В data/source-index/catalogs/excursions.json нет активных Excursion с destinationIds/relatedDestinationIds для destination_uruguay_punta_del_este, поэтому RU /uruguay/punta-del-este/ не имеет подтвержденного непустого каталога."
+      ],
+      "note": "Нельзя готовить 301 на отсутствующий каталог экскурсий Пунта-дель-Эсте; требуется решение о переадресации на страницу курорта либо 410.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:51:36.091Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-puehrto-vekho-de-talamanka-v-kosta-rike",
@@ -365,5 +375,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:51:30.422Z"
+  "updatedAt": "2026-10-21T14:51:36.091Z"
 }

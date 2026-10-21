@@ -8,9 +8,9 @@ countryId: country_peru
 destinationType: city
 summary: Виникунка в Перу, андская гора с естественными цветными полосами осадочных пород.
 hero:
-  src: /media/excursions/ekskursiya-na-raduzhnuyu-goru-vinikunka/hero-src-enhanced-20261007.webp
-  hover: "Виникунка в Перу: полосатые горные гребни под облаками"
-  alt: "Разноцветные минеральные полосы на склонах Радужной горы Виникунка, Перу"
+  src: /media/destinations/vinicunca/hero-generated-20261021-dedup4-v1.webp
+  hover: "Минеральные полосы горы Виникунка в Перуанских Андах"
+  alt: "Минеральные полосы горы Виникунка в Перуанских Андах — иллюстрация"
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 searchAliases:

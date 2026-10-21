@@ -2383,7 +2383,69 @@
         "batchBlobSha": "3587016428615b36cdf38027ecdfcf330253a796",
         "reviewOrder": 82
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "disposition": "gone_410",
+        "recommendedHttpStatus": 410,
+        "relation": null,
+        "ruUrl": "",
+        "targetId": null,
+        "comparedId": "tour_source_ot_venesuely_do_kolumbii",
+        "targetContentPath": "src/content/tours/ot-venesuely-do-kolumbii.md",
+        "targetBlobSha": "7ee81bd705974927f00c62c1d1c9d275ca7c30ca",
+        "confidence": 0.97,
+        "accepted": true,
+        "basis": "retire",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.707Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/ot-venesuely-do-kolumbii → HTTP 200, title «Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом)», 73500 байт, SHA-256 8c8b40160ceb9a99d0976b74b36b70adc7c1fa3c583ca54716ea40379137e6e5. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/ot-venesuely-do-kolumbii.md, blob 7ee81bd705974927f00c62c1d1c9d275ca7c30ca: archived, tour_source_ot_venesuely_do_kolumbii; сопоставленный продукт архивирован.",
+          "Та же 12-дневная групповая программа Каракас → Лос-Рокес → Канайма/Анхель → кофейный регион Колумбии → Картахена → Богота присутствует только в RU-архиве."
+        ],
+        "note": "Принято редакционное решение: закрыть старое предложение кодом 410 при отдельном внедрении. Подтвержденной активной пары нет; 410 сейчас не включен.",
+        "liveSource": {
+          "key": "source-82",
+          "url": "https://vipdeluxetravel.ru/ot-venesuely-do-kolumbii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ot-venesuely-do-kolumbii",
+          "sha256": "8c8b40160ceb9a99d0976b74b36b70adc7c1fa3c583ca54716ea40379137e6e5",
+          "bytes": 73500,
+          "title": "Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом)",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/ot-venesuely-do-kolumbii\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1(понедельник): Каракас",
+            "День 2 (вторник): Островной архипелаг Лос-Рокес",
+            "День3 (среда): Архипелаг Лос-Рокес",
+            "День 4 (четверг): Национальный парк Канайма - остров Анатолия, водопады Сапо и Ача",
+            "День5 (пятница): Водопад Сальто Анхель на целый день",
+            "День 6 (суббота): Национальный парк Канайма",
+            "День 7 (воскресенье): Каракас - поместье Санта Тереза",
+            "День 8 (понедельник): Богота - долина Кокора - Саленто",
+            "День 9(вторник): Кофейное поместье - Картахена",
+            "День 10 (среда): Сити-тур по Картахене",
+            "День11(четверг): Богота - Соляной храм",
+            "День12 (пятница): Богота - Каракас"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_ot_venesuely_do_kolumbii",
+          "url": "https://adatours.ru/multi-country/tour/venezuela-colombia-group-tour-12-days/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/multi-country/tour/venezuela-colombia-group-tour-12-days/",
+          "sha256": "310b63db0c2e52fdf73c4cf9872e98baf44e778c04b47ae72f54d12519515752",
+          "bytes": 108393,
+          "title": "Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом) по цене от $6 871 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/multi-country/tour/venezuela-colombia-group-tour-12-days/\">"
+          ],
+          "dayHeadings": [
+            "День отдыха у лагуны Канайма. Вечером запланирован визит в деревню народа пемон: музыка, танцевальное представление, сувениры и знакомство с местной кухней. Среди необычных местных блюд здесь встречаются соус из термитов или муравьев, гусеницы пальмы мориче и хлеб из юкки касабэ."
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 83,
@@ -2998,9 +3060,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:27.154Z",
+  "updatedAt": "2026-10-21T16:35:28.651Z",
   "progress": {
-    "resolved": 31,
+    "resolved": 32,
     "total": 50
   }
 }

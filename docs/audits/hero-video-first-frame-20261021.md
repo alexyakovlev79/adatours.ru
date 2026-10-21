@@ -1,0 +1,15 @@
+# P03: matching first frame for hero videos
+
+User decision: do not download/show the editorial photo underneath a movie. Use the exact selected movie's first frame, or an empty background. Independent phone/desktop variants can later exist on any page, and an explicitly enabled country cover on the homepage may reuse the video-cover component. No new video placement is enabled by this change.
+
+Scope: existing homepage desktop/mobile movies and Brazil desktop movie. Other photo-only heroes and the seven homepage P02 card covers retain their existing images and lazy behavior. No analytics, video bytes, playback start delay, device policy or general video-player changes.
+
+The shared Hero wraps its existing responsive picture in HeroVideo only when a video config exists. HeroVideo stores the picture in an inert template and noscript fallback; it selects the device before activating photo or movie/frame. Only the selected first frame is inserted as a high-priority image. Selected movie is attached on surface visibility. Posters and movies share cover/center geometry; the frame is not styled with the editorial photo's focal position. Movie errors retain their matching frame. An unprepared future poster may show the existing neutral surface; only an actual video error then activates photo. Pausing, autoplay rejection, hidden-tab and offscreen handling remain supported.
+
+Registry `src/data/media/hero-video-posters.json` keys first frames by versioned movie source and records original movie/frame SHA-256. Current first frames extracted with ffmpeg, no seek: mobile home720x1280,23434B; desktop home1280x720,126322B; Brazil scaled without upscale to1280x958,101398B. All three uploaded and GET/SHA-256 verified through the direct S3 session; records added to current media ledger without losing parallel uploads. No Git binaries.
+
+Validation before release: both Astro components compile; minimal Astro7.3.4 fixture builds and renders both slots; parse5 proves editorial URLs inert with JS and active without JS; DOM unit harness passes16 device/source branches (phone, Android tablet, iPad, desktop × both/desktop-only/mobile-only/no-poster), selected poster/source and video-error handling; four durable Node selection tests pass. Full production pipeline is the final gate.
+
+Three new independent PSI baseline reports for homepage: pnx1gza9l3,elf98z7fr6,sy956tdyb6. Mobile76/78/78; LCP5485/5415/5391ms; Desktop95/93/97; LCP1472/1463/1267ms. Lighthouse13.5.0. Public homepage SHA remains37c388a28ad6f3f6ab828bb7bcdd23ce9fedd0e06afce77cc4c1ddb09699cdea throughout before series. Brazil before and all after rows will be saved in P03 run JSON. Compare medians/ranges, record uncertainty in remote PSI CDN source. Do not claim zero frame transition: video may advance before first displayed decoded frame; this change removes the unrelated photograph/scene switch.
+
+Rollback: restore Hero and HeroVideo from the parent commit; preserve uploaded frames/receipts. The general first-frame contract remains documented for future work. Status: awaiting production deploy and after measurements.

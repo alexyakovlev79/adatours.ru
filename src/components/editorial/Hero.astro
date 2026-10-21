@@ -11,7 +11,7 @@ interface Props {
   title: string;
   intro?: string;
   image?: string;
-  video?: { src: string; mobileSrc?: string };
+  video?: { src?: string; mobileSrc?: string; poster?: string; mobilePoster?: string };
   imageTextAlign?: 'left' | 'right';
   ctaHref?: string;
   ctaLabel?: string;
@@ -51,6 +51,8 @@ const {
 } = Astro.props;
 
 const resolvedImage = image ? withBase(image) : undefined;
+// The wrapper keeps the ordinary photograph inert until the device branch is known.
+const MediaWrapper = video ? HeroVideo : 'div';
 const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
 // Deliberately scoped to the pilot page AND its unchanged original hero.
 const mobileHero = !mobilePhotoLead ? mobileHeroPilot.items.find((item) =>
@@ -63,12 +65,14 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
 <section
   class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized, 'hero--compact-cta': compactCta, 'hero--photo-lead': mobilePhotoLead, 'hero--with-breadcrumbs': hasBreadcrumbs }]}
   style={imagePositionMobile ? { '--hero-image-position-mobile': imagePositionMobile } : undefined}
+  data-video-surface={video ? "" : undefined}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
 >
-  {resolvedImage && (
-    <picture style="display: contents">
+  {(resolvedImage || video) && (
+    <MediaWrapper {...(video ?? {})} style="display: contents">
+    {resolvedImage && <picture style="display: contents">
     {mobileHero && <source media={mobileHeroPilot.media} srcset={mobileSrcset} sizes="100vw" type="image/webp" width={mobileHero.variants[0].width} height={mobileHero.variants[0].height} />}
     <img
       class="hero__media"
@@ -81,9 +85,9 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
       fetchpriority="high"
       referrerpolicy="no-referrer"
     />
-    </picture>
+    </picture>}
+    </MediaWrapper>
   )}
-  {video && image && <HeroVideo src={video.src} mobileSrc={video.mobileSrc} poster={image} posterInHeroPicture={Boolean(mobileHero)} />}
   <div class="hero__overlay"></div>
   {hasBreadcrumbs && <div class="hero__breadcrumbs"><slot name="breadcrumbs" /></div>}
   <div class="hero__content">
@@ -430,4 +434,5 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
   }
   .hero--with-breadcrumbs .hero__content { padding-top: clamp(28px, 4vw, 56px); }
 </style>
+
 

@@ -1,75 +1,94 @@
 ---
 import { withBase } from '../../lib/paths';
-interface Props { src: string; mobileSrc?: string; poster: string; posterInHeroPicture?: boolean }
-const { src, mobileSrc, poster, posterInHeroPicture = false } = Astro.props;
+import videoPosters from '../../data/media/hero-video-posters.json';
+interface Props { src?: string; mobileSrc?: string; poster?: string; mobilePoster?: string }
+const { src, mobileSrc, poster, mobilePoster } = Astro.props;
+const firstFrameFor = (source?: string) => videoPosters.items.find((item) => item.src === source)?.poster;
+const desktopPoster = poster ?? firstFrameFor(src);
+const phonePoster = mobilePoster ?? firstFrameFor(mobileSrc);
 ---
 
 <hero-background-video>
-  <video class="hero-video" data-src={withBase(src)} data-mobile-src={mobileSrc ? withBase(mobileSrc) : undefined} poster={posterInHeroPicture ? undefined : withBase(poster)}
-    muted loop autoplay playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+  <!-- Inert even to the preload scanner: activate ONLY for a photo device branch. -->
+  <template data-static-hero><slot /></template>
+  <noscript><slot /></noscript>
+  <template data-first-frame>
+    <img class="hero-video-poster" alt="" aria-hidden="true" loading="eager" fetchpriority="high" />
+  </template>
+  <video class="hero-video" data-src={src ? withBase(src) : undefined}
+    data-mobile-src={mobileSrc ? withBase(mobileSrc) : undefined}
+    data-poster={desktopPoster ? withBase(desktopPoster) : undefined}
+    data-mobile-poster={phonePoster ? withBase(phonePoster) : undefined}
+    muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
   <button class="hero-video-toggle" type="button" hidden aria-label="Приостановить видео">
     <span aria-hidden="true">Ⅱ</span>
   </button>
 </hero-background-video>
 
 <script>
-  import { isPhoneDevice } from '../../lib/phone-device.mjs';
+  import { selectHeroVideo } from '../../lib/hero-video-selection.mjs';
   class HeroBackgroundVideo extends HTMLElement {
     cleanup?: () => void;
     connectedCallback() {
+      this.cleanup?.();
       const video = this.querySelector('video');
       const button = this.querySelector('button');
       if (!video || !button) return;
-      const phone = isPhoneDevice(navigator);
-      if (phone && !video.dataset.mobileSrc) {
-        this.setAttribute('data-phone', '');
-        return;
+      const selected = selectHeroVideo(video.dataset, navigator);
+      const showPhoto = () => {
+        if (this.dataset.mode === 'photo') return;
+        this.dataset.mode = 'photo';
+        const template = this.querySelector<HTMLTemplateElement>('template[data-static-hero]');
+        if (template) this.append(template.content.cloneNode(true));
+      };
+      if (!selected) { showPhoto(); return; }
+      this.dataset.mode = 'video';
+      // Only the chosen movie's first frame is requested; the editorial photo stays inert.
+      if (selected.poster && !this.querySelector('.hero-video-poster')) {
+        const template = this.querySelector<HTMLTemplateElement>('template[data-first-frame]');
+        const frame = template?.content.cloneNode(true) as DocumentFragment | undefined;
+        const image = frame?.querySelector('img');
+        if (frame && image) { image.src = selected.poster; this.insertBefore(frame, video); }
       }
-      let visible = true;
+      let visible = false;
       let pausedByUser = false;
       let failed = false;
-      const selectSource = () => phone && video.dataset.mobileSrc
-        ? video.dataset.mobileSrc : video.dataset.src!;
+      const events = new AbortController();
       const updateButton = () => {
         button.setAttribute('aria-label', video.paused ? 'Воспроизвести видео' : 'Приостановить видео');
         button.firstElementChild!.textContent = video.paused ? '▶' : 'Ⅱ';
       };
       const play = () => {
         if (failed || pausedByUser || !visible || document.hidden) return;
-        if (!video.getAttribute('src')) video.src = selectSource();
+        if (!video.getAttribute('src')) video.src = selected.src;
         video.muted = true;
-        void video.play().catch(() => {
-          button.hidden = false;
-          updateButton();
-        });
+        void video.play().catch(() => { button.hidden = false; updateButton(); });
       };
       video.addEventListener('playing', () => {
         video.classList.add('is-playing');
         button.hidden = false;
         updateButton();
-      });
-      video.addEventListener('pause', updateButton);
+      }, { signal: events.signal });
+      video.addEventListener('pause', updateButton, { signal: events.signal });
       video.addEventListener('error', () => {
         failed = true;
         video.classList.remove('is-playing');
         button.hidden = true;
-      });
+        // A failed movie keeps its matching frame. With no frame, the photo is now visible.
+        if (!selected.poster) showPhoto();
+      }, { signal: events.signal });
       button.addEventListener('click', () => {
         if (!video.paused) { pausedByUser = true; video.pause(); }
         else { pausedByUser = false; play(); }
-      });
+      }, { signal: events.signal });
       const onVisibility = () => document.hidden ? video.pause() : play();
-      document.addEventListener('visibilitychange', onVisibility);
+      document.addEventListener('visibilitychange', onVisibility, { signal: events.signal });
       const observer = new IntersectionObserver(([entry]) => {
         visible = entry.isIntersecting;
         if (visible) play(); else video.pause();
       });
-      observer.observe(this.closest('.hero')!);
-      this.cleanup = () => {
-        observer.disconnect();
-        document.removeEventListener('visibilitychange', onVisibility);
-        video.pause();
-      };
+      observer.observe(this.closest('[data-video-surface]') ?? this.parentElement!);
+      this.cleanup = () => { observer.disconnect(); events.abort(); video.pause(); };
     }
     disconnectedCallback() { this.cleanup?.(); }
   }
@@ -78,7 +97,7 @@ const { src, mobileSrc, poster, posterInHeroPicture = false } = Astro.props;
 
 <style>
   hero-background-video { display: contents; }
-  .hero-video {
+  .hero-video, .hero-video-poster {
     position: absolute;
     inset: 0;
     z-index: -2;
@@ -87,9 +106,9 @@ const { src, mobileSrc, poster, posterInHeroPicture = false } = Astro.props;
     max-width: none;
     object-fit: cover;
     object-position: center;
-    opacity: 0;
     pointer-events: none;
   }
+  .hero-video { opacity: 0; }
   .hero-video.is-playing { opacity: 1; }
   .hero-video-toggle {
     position: absolute;
@@ -110,6 +129,4 @@ const { src, mobileSrc, poster, posterInHeroPicture = false } = Astro.props;
   }
   .hero-video-toggle[hidden] { display: none; }
   .hero-video-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-  hero-background-video[data-phone] .hero-video,
-  hero-background-video[data-phone] .hero-video-toggle { display: none; }
 </style>

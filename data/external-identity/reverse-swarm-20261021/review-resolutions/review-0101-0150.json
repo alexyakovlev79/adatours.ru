@@ -647,7 +647,27 @@
         "batchId": "vip-018",
         "batchSha": "5233d0a65058e43c23e694db6f3190e12b962a71"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/guatemala/place/lake-izabal/",
+        "relation": "redirect_301",
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:35:48.119Z",
+        "reason": "Полный VIP-текст описывает ту же деревню Лаго-Изабал и озеро, что и RU. Предполагаемое расхождение «озеро против деревни» возникло из title и не подтверждается содержимым.",
+        "evidence": [
+          "Web open исходного URL → страница /ehkskursii-i-tury-na-ozero-isabal-v-gvatemale; H1 «Лаго-Изабал», описание деревни на южном берегу, Сан-Филипе и Киригуа.",
+          "Проверен текущий main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/destinations/lago-izabal.md, blob 6683874985a18ad9b25ecdb51601e67db7ba744c, canonical /guatemala/place/lake-izabal/."
+        ],
+        "targetEntityId": "destination_guatemala_lago_izabal"
+      },
+      "sourceObservation": {
+        "n": 112,
+        "sourceUrl": "https://vipdeluxetravel.ru/gvatemala-ru/ehkskursii-i-tury-na-ozero-isabal-v-gvatemale",
+        "http": 503,
+        "error": "HTTP Error 503: Service Unavailable"
+      }
     },
     {
       "reviewOrder": 113,
@@ -1757,7 +1777,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:36:05.819Z",
+  "updatedAt": "2026-10-21T16:36:07.963Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

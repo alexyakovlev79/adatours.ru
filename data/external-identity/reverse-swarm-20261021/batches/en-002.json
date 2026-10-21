@@ -551,7 +551,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /bolivia-cochabamba/excursions self canonical; title Cochabamba Tours & Vacation packages, H1 общий Excursions to countries of Latin America. Нет карточек; общий текст о Бразилии/фавелах/Бонито. SHA-256 4cf73ac64c54fb496dd0a244e9e12feeebd95b5ac0fd2b2418f760c68d1ba353.",
+        "RU /bolivia/cochabamba/ live HTTP404; main source-index destination_bolivia_kochabamba /bolivia/place/cochabamba/ — город. В excursions.json blob402b7d42c61bc17709c1ae07fc92dfa32ee08327 нет экскурсионных продуктов с этим destinationId.",
+        "Frozen inventory category_id167, snapshotHttp200, snapshotFile отсутствует. Тур через Кочабамбу и карточка города не являются таким же экскурсионным каталогом."
+      ],
+      "note": "Подтвержденной пары EN-каталога экскурсий Кочабамбы нет; RU-каталог возвращает404, а город и тур представляют другие сущности. sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:49:25.549Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-cochabamba/packages",
@@ -594,5 +605,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:48:50.205Z"
+  "updatedAt": "2026-10-21T15:49:25.549Z"
 }

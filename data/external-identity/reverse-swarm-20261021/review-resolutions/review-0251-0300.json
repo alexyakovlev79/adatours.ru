@@ -1,0 +1,1524 @@
+{
+  "version": 1,
+  "batchId": "review-0251-0300",
+  "scope": "external-identity-second-pass",
+  "ownerId": "review-sixth50-2b275cd3100c",
+  "createdAt": "2026-10-21T16:27:42.350Z",
+  "decisionPolicy": "probability-70-v1",
+  "threshold": 0.7,
+  "sourceBranch": "feature/external-identity-swarm-20261021",
+  "order": "manifest batches in order, records inventoryPosition, status=review; frozen 2026-10-21T16:25Z",
+  "range": {
+    "first": 251,
+    "last": 300
+  },
+  "status": "in_progress",
+  "notes": [
+    "User assigned sixth 50 review. Original records retained; decisions separate. No production changes."
+  ],
+  "records": [
+    {
+      "reviewOrder": 251,
+      "sourceUrl": "https://adatours.com/belo-horizonte/packages",
+      "sourceBatch": "en-002",
+      "sourceBatchBlobSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+      "original": {
+        "batchId": "en-002",
+        "batchSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+        "sourceUrl": "https://adatours.com/belo-horizonte/packages",
+        "inventoryPosition": 83,
+        "title": "Belo Horizonte Tours | Garden City & Niemeyer Architecture",
+        "h1": "Belo Horizonte: Garden City Tours & Architecture",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN live HTTP200 /belo-horizonte/packages self canonical, H1 Belo Horizonte: Garden City Tours & Architecture. Карточек туров нет; общий текст об отдыхе в Латинской Америке. SHA-256 e2e2d0239622a96d3094d1427adabd9495c8f8a3abb6f50aa4a9f53aa104d90c.",
+          "RU live HTTP200 /brazil/place/belo-horizonte/tour/ self canonical, 1 тур: Бразилия за14 дней Рио/Ору-Прету/Сальвадор/Прайя-ду-Форте/Игуасу, stable ID tour_brazil_gems_14d. SHA-256 39acdf044294717c2a6e824c4b72bd86b29f6f86942a5675b5569f3bde27ab64.",
+          "Frozen EN category_id242, snapshotHttp200, snapshotFile отсутствует. RU destination_brazil_belo_horizonte; город присутствует в маршруте действующего тура как транспортный узел, но пустой EN-состав этому не равен."
+        ],
+        "note": "Географический фильтр Белу-Оризонти близок, но EN не показывает туров, а RU-каталог содержит один продукт. Строгое sameAs состава не подтверждено.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:44:20.260Z",
+        "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 252,
+      "sourceUrl": "https://adatours.com/bocas-del-toro/packages",
+      "sourceBatch": "en-002",
+      "sourceBatchBlobSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+      "original": {
+        "batchId": "en-002",
+        "batchSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+        "sourceUrl": "https://adatours.com/bocas-del-toro/packages",
+        "inventoryPosition": 94,
+        "title": "Bocas del Toro Tours | Surfing, Snorkeling & Caribbean Vibe",
+        "h1": "Bocas del Toro: Tours to the Surfing & Adventure Archipelago",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN live HTTP200 /bocas-del-toro/packages self canonical; H1 Bocas del Toro: Tours to the Surfing & Adventure Archipelago. 5 карточек: Adventures in Panama, Luxury Panama (/luxury-panama), The Best of Panama, A grand journey through Panama, Luxury Panama (/luxury-tour-panama-city-bocas-del-toro-boquete-12-days). SHA-256 41c42eb761e043da3e77c1cfd0907d3936aa2953078c5e3ca22d68138be00a65.",
+          "RU live HTTP200 /panama/place/bocas-del-toro/tour/ self canonical, 3 тура: Люксовая Панама12д, Лучшее в Панаме11д, Панама16д. Stable IDs tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru, tour_source_luchshee_v_paname, tour_source_panama_2024. SHA-256 9045fd79be575c5685172bafd4db70ae9bbf50155a7492be81d1e1bf7b15388f.",
+          "Frozen EN category_id159, snapshotHttp200, snapshotFile отсутствует; geographic filter destination_panama_bokas_del_toro близок, но 5 источников/3 RU-продукта не образуют доказанный равный состав."
+        ],
+        "note": "Каталоги Бокас-дель-Торо имеют разное число и набор карточек; две разные EN-ссылки с одинаковым названием Luxury Panama не склеиваются по одному заголовку. sameAs каталогов не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:48:01.595Z",
+        "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 253,
+      "sourceUrl": "https://adatours.com/bolivia-cochabamba/packages",
+      "sourceBatch": "en-002",
+      "sourceBatchBlobSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+      "original": {
+        "batchId": "en-002",
+        "batchSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+        "sourceUrl": "https://adatours.com/bolivia-cochabamba/packages",
+        "inventoryPosition": 98,
+        "title": "Cochabamba Tours | Christ Statue & Markets | Ada Tours",
+        "h1": "Cochabamba: Tours to the City, Christ Statue, and Markets",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN live HTTP200 /bolivia-cochabamba/packages self canonical, H1 Cochabamba: Tours to the City, Christ Statue, and Markets. Одна карточка Adventures in Bolivia. SHA-256 30a628506c2c7ee09e699fa503e0c59a2cbae4a7ebff3b814fd6aa96c79b44d3.",
+          "RU live HTTP200 /bolivia/place/cochabamba/tour/ self canonical, 1 тур tour_source_priklyucheniya_v_bolivii (Боливия11д Титикака/Ла-Пас/Уюни/Тороторо). SHA-256 625f23c91bcbbeef69b41de389525b3205c26640433e215f4f8540cc8d50f4b0.",
+          "Сопоставлен полный EN /adventures-in-bolivia (HTTP200, SHA-256 23109b8d995564bc8876603c38e0758f3d3d9f08d58c920ebcc54075c185d2b5) и текущий RU MD blob45f0c7477378ac90afe55e93799ce43d91d45174: совпадают11д/10н и последовательность Санта-Крус–Тиуанаку/Титикака–Ла-Пас–Уюни/лагуны–Кочабамба–Тороторо.",
+          "Но EN содержит датированный индивидуальный план12–22мая для2pax с рейсом OB739; RU прямо не имеет фиксированных дат и исключает все внутренние/международные авиабилеты, тогда как EN не проясняет их стоимость/включение. Frozen category_id167, snapshotFile отсутствует."
+        ],
+        "note": "Каталоги одноэлементные и маршрут очень близок, но текущая идентичность единственного продукта по существенным условиям не подтверждена: датированный EN-план и открытый RU-тур различаются, авиабилеты EN неясны. sameAs оставлен на разбор.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:50:17.505Z",
+        "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 254,
+      "sourceUrl": "https://adatours.com/bolivia-copacabana-lake-titicaca",
+      "sourceBatch": "en-002",
+      "sourceBatchBlobSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+      "original": {
+        "batchId": "en-002",
+        "batchSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+        "sourceUrl": "https://adatours.com/bolivia-copacabana-lake-titicaca",
+        "inventoryPosition": 99,
+        "title": "Tours to Copacabana & Lake Titicaca(Bolivia)   & Vacation packages | Guided trips to Bolivia  with Ada Tours",
+        "h1": "Copacabana & Lake Titicaca Tours",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN live HTTP200 /bolivia-copacabana-lake-titicaca self canonical, H1 Copacabana & Lake Titicaca Tours. Содержательная совмещённая посадочная: озеро Титикака, Копакабана, Isla del Sol, также упомянуты острова Урос; разделы города/экскурсий/этимологии и CTA, карточек программ нет. SHA-256 9ebc269915cab351b3f0cfaeeb5bf015421204d9b418a40bdfe4b9a141ac4ba2.",
+          "RU main approved destination_bolivia_kopakabana /bolivia/place/copacabana/ (MD blob54855f37cba688a5a35358aca57839843abc3a86) — отдельный city Копакабана, база лодок на остров Солнца.",
+          "RU main approved destination_bolivia_ozero_titikaka_boliviya /bolivia/place/lake-titicaca-bolivia/ (MD blob1968a1a432379b23ce912cc2fe0484b07a3a2571) — отдельная natural_area боливийского берега озера. Таким образом источник охватывает несколько самостоятельных RU-сущностей.",
+          "Frozen inventory category_id168, typecategory, snapshotHttp200, snapshotFile отсутствует. RU-цель не выбрана по составному slug; обе точные канонические страницы/типы прочитаны."
+        ],
+        "note": "Источник одновременно представляет Копакабану, Титикаку и островные поездки; в RU город и боливийское озеро разделены на разные сущности. Однозначная идентичность одной RU-цели не подтверждена, нужен разбор основного референта; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:50:57.053Z",
+        "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 255,
+      "sourceUrl": "https://adatours.com/bolivia-copacabana-lake-titicaca/excursions",
+      "sourceBatch": "en-002",
+      "sourceBatchBlobSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+      "original": {
+        "batchId": "en-002",
+        "batchSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+        "sourceUrl": "https://adatours.com/bolivia-copacabana-lake-titicaca/excursions",
+        "inventoryPosition": 100,
+        "title": "Copacabana & Isla del Sol Excursions | Lake Titicaca",
+        "h1": "Copacabana & Isla del Sol: Excursions on Lake Titicaca and Inca Ruins",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN live HTTP200 /bolivia-copacabana-lake-titicaca/excursions self canonical, H1 Copacabana & Isla del Sol: Excursions on Lake Titicaca and Inca Ruins. Но фактически2 карточки: Titicaca Lake, Uros & Taquile Islands (/titicaca-lake-uros-taquile-islands) и Tour to Titicaca Lake, Uros & Taquile Islands (/tour-to-titicaca-lake-uros-taquile-islands). SHA-256 8385f198e9681e7812150f3cd30fde9ec67af1fb7b0243d1be3beda590ad2c4b.",
+          "RU live HTTP200 /bolivia/copacabana/ self canonical, 2 иных продукта: Титикака на катамаране: Копакабана и Остров Солнца (excursion_bolivia_titicaca_isla_del_sol_catamaran) и вариант на катере (excursion_bolivia_titicaca_isla_del_sol_speedboat). SHA-256 bcf0d7a286c59c74f6002b2889fa03f42498ad09f71441c8fd9f37d2b1c79943.",
+          "Frozen EN category_id168, HTTP200, snapshotFile отсутствует. Название EN говорит о Копакабане/Isla del Sol, карточки — об Урос/Такиле; одно и то же число2 не доказывает совпадения товаров и географии."
+        ],
+        "note": "Идентичность экскурсионных каталогов не подтверждена: две EN-карточки про Урос/Такиле против двух RU-программ к Острову Солнца. Требуется разбор категоризации источника; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:51:39.115Z",
+        "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 256,
+      "sourceUrl": "https://adatours.com/bolivia-copacabana-lake-titicaca/packages",
+      "sourceBatch": "en-002",
+      "sourceBatchBlobSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+      "original": {
+        "batchId": "en-002",
+        "batchSha": "bb9c34d8fd1069b2f084676df98ad05e62d29d70",
+        "sourceUrl": "https://adatours.com/bolivia-copacabana-lake-titicaca/packages",
+        "inventoryPosition": 101,
+        "title": "Copacabana & Isla del Sol Tours | Lake Titicaca & Inca Ruins",
+        "h1": "Copacabana & Isla del Sol: Tours on Lake Titicaca and Inca Ruins",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN live HTTP200 /bolivia-copacabana-lake-titicaca/packages self canonical, H1 Copacabana & Isla del Sol: Tours on Lake Titicaca and Inca Ruins. 10 карточек, включая 5 country-tour, Adventures in Bolivia, Peru&Bolivia, Bolivia at Glance, Peru Great Inca Expedition, 21 Day Adventure in Peru, Feeling Peru/Ecuador VIP, Marvels of Peru, Treasures of Bolivia, Great Inca Expedition. SHA-256 fa7d641ecdf28bd9e8a55cc9db7967c1a64f63f1d043627d7931a97cbc4e1157.",
+          "RU live HTTP200 /bolivia/place/copacabana/tour/ self canonical: тоже10, но другой состав, например Перу/Боливия/Чили14д, Перу/Боливия с Уюни12д, Уюни/озёра15д, Мечта Боливии7д, Очаровательные Перу/Боливия10д. Нет EN-карточек 21 Day Adventure in Peru и Marvels of Peru. SHA-256 deae73bb5ea7ec84ddfaa68a55bc99b4e0eae6ec6905395fc131a2351101e423.",
+          "RU live HTTP200 /bolivia/place/lake-titicaca-bolivia/tour/ self canonical:9 туров, включая VIP Чили/Боливия/Перу12д и программы боливийского берега; SHA-256 d7ce8ca065b9f1b961c6637bad7b445df12e8bbac2c6c034af2be7bb50fc0250. Обе точные RU-категории проверены вместо выбора по slug.",
+          "Frozen EN category_id168, HTTP200, snapshotFile отсутствует. Составной EN-фильтр Копакабана/Титикака включает ряд чисто перуанских программ и не совпадает ни с городским RU-фильтром, ни с боливийским берегом озера."
+        ],
+        "note": "sameAs не подтвержден: одинаковое число10 у EN и RU-Копакабаны скрывает разный набор туров; RU-Титикака имеет9 и другой фильтр. Требуется разбор ассортимента/географии источника, одной RU-цели не назначено.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:52:23.372Z",
+        "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 257,
+      "sourceUrl": "https://adatours.com/cayenne/packages",
+      "sourceBatch": "en-004",
+      "sourceBatchBlobSha": "4fd7c7c9a905d87b54c98963a16bbccf455d6df8",
+      "original": {
+        "batchId": "en-004",
+        "batchSha": "4fd7c7c9a905d87b54c98963a16bbccf455d6df8",
+        "sourceUrl": "https://adatours.com/cayenne/packages",
+        "inventoryPosition": 184,
+        "title": "Cayenne Tours | Capital of French Guiana & Colonial Heritage",
+        "h1": "Cayenne: Tours to the Capital of French Guiana",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Текущий EN-каталог прочитан 2026-10-21T15:37:34.164592+00:00: HTTP 200, canonical https://adatours.com/cayenne/packages, 98835 bytes, SHA-256 8c5f026584e3d4de3d86c6b03b4ab41156ebc00a36e24761d4292f3e1997fe6f; H1 Cayenne: Tours to the Capital of French Guiana. Frozen inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: category/200, snapshotFile отсутствует.",
+          "EN-каталог показывает ровно три карточки: /guianas-experience-with-local-community (9 дней), /suriname-guyana-french-guiana (14 дней), /guyana-surinam-french-guyana (7 дней). Прочитаны полные программы и включено/не включено этих трёх EN-продуктов, а не только названия.",
+          "Текущий RU-каталог https://adatours.ru/french-guiana/place/cayenne/tour/: HTTP 200, canonical https://adatours.ru/french-guiana/place/cayenne/tour/, SHA-256 b4ca6ec789918480391ba8179f7107d8e11bd2819d7474d2f348f31fbe2a7e5f; 3 тура (14, 9, 7 дней). Каноническое место destination_french_guiana_kajenna сверено с source-index entry blob f0b42e29903e6de124720a728273453a275fce48. Фильтр сайта — основное посещение Кайенны.",
+          "Девятидневные EN guianas-experience-with-local-community (HTML SHA-256 964439ea18faf694f56661e447f590ea71966280b134b1302393dc872dd903f2) и RU tour_source_priklyuchenie_v_gvianakh (MD blob 2b6faff8e7c51f1cbac055393a4172620c45f4a8) имеют последовательность Джорджтаун/Кайетур — Парамарибо/Пеперпот — Кайенна/Куру/острова — джунгли/маруны — выезд из Суринама; совпадают указанные англогид, 3* и исключённый перелёт Гайана–Суринам.",
+          "Четырнадцатидневные EN suriname-guyana-french-guiana (HTML SHA-256 c46931eb50c6df3f3dffe20c42c7d40222c78ddf9e5a6f5ab97fdaadbf7407d8) и RU tour_source_surinam_gajana_frantsuzskaya_gviana (MD blob 685861bac45d67b0f0f947ece1fccc1e6532835c) включают тот же основной блок и дни Kabalebo: Туманная гора/Чарли, Мой-Мой, Кило 3, Йодденсаванна/Реди-Доти; окончание в Суринаме.",
+          "Критическое несовпадение третьей программы: EN /guyana-surinam-french-guyana (HTML SHA-256 b678271946a821cf8019326349dcd8d85ad600bca8018a0ca45184f8bf67c7d6) — день 1 Джорджтаун, день 2 Кайетур и рейс в Суринам, день 7 выезд из Суринама. RU tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana (MD blob 6b3e03e5b0b2060e0fb5200ee1188af115544e22) — день 1 Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 выезд из Гайаны.",
+          "У EN семидневной программы блок included при этом указывает рейс Suriname–Guyana, что противоречит направлению перелёта в EN itinerary. Совпадение трёх названий/длительностей и географии не устраняет конфликт фактической последовательности и условий одного продукта."
+        ],
+        "note": "Нужна редакционная сверка семидневной программы: EN и RU имеют разные начальную/конечную страны и порядок маршрута, а EN inclusions противоречат EN itinerary. Пока идентичность всех трёх программ и точного состава каталога не подтверждена, sameAs каталога не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:44:46.833Z",
+        "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 258,
+      "sourceUrl": "https://adatours.com/encarnacion/packages",
+      "sourceBatch": "en-007",
+      "sourceBatchBlobSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+      "original": {
+        "batchId": "en-007",
+        "batchSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+        "sourceUrl": "https://adatours.com/encarnacion/packages",
+        "inventoryPosition": 302,
+        "title": "Encarnacion Tours | Jesuit Missions UNESCO & Parana River",
+        "h1": "Encarnacion: Tours to the Jesuit Missions and Parana Riverfront",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /encarnacion/packages содержит только Tour of Paraguay 2024; проверена связанная /tour-of-paraguay-2024: 8 дней/7 ночей, Чако–Филадельфия–Pa'i Puku–Сан-Игнасио–Энкарнасьон–Хесус/Тринидад–Итайпу, $4434 в карточке продукта; в included явно указан Early Check In on day 1.",
+          "RU GET https://adatours.ru/paraguay/place/encarnacion-and-trinidad/tour/ HTTP 200: один тур «Парагвай 2023». Current main src/content/tours/klassicheskij-paragvaj.md (blob ac313f47db30895bd72024c1e959237ad1145607) подтверждает тот же 8-дневный маршрут, но $3903, и early check-in в included не указан."
+        ],
+        "note": "Сильный кандидат: одинаковый фильтр и один очень близкий маршрут. Существенные условия продукта не сведены: различаются опубликованные цены и явное включение раннего заселения. Нужна редакционная сверка актуальной версии; sameAs пока не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:44:09.751Z",
+        "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 259,
+      "sourceUrl": "https://adatours.com/fascinating-tour",
+      "sourceBatch": "en-007",
+      "sourceBatchBlobSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+      "original": {
+        "batchId": "en-007",
+        "batchSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+        "sourceUrl": "https://adatours.com/fascinating-tour",
+        "inventoryPosition": 320,
+        "title": "",
+        "h1": "",
+        "pageType": "unknown",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /fascinating-tour фактически Tour «Fascinating Brazil», 14 дней/13 ночей, $7001, Рио–Пантанал/Бонито–Манаус–Сан-Луис–Баррейриньяс. В дне 7 указаны Gruta do Lago Azul и снорклинг по Rio Sucuri, 750 м; день 9 предлагает выбрать активность лоджа.",
+          "Current main src/content/tours/udivitelnaya-braziliya.md, ID tour_source_udivitelnaya_braziliya, canonical https://adatours.ru/brazil/tour/amazing-brazil/, blob b81880497414d0a08c24f5b32c200bb9c666193c: 14 дней/13 ночей и $7001, но день 7 — Рио-да-Прата/Olho d'Água, день 9 — пирании, индейская деревня и урок выживания."
+        ],
+        "note": "Найден сильный кандидат «Удивительная Бразилия»: общие маршрут, длительность и цена. Однако конкретная река снорклинга и наполнение дня в Амазонии различаются. До уточнения программы не подтверждать sameAs; исторический пустой title не отражает текущую полноценную EN-страницу.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:44:12.315Z",
+        "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 260,
+      "sourceUrl": "https://adatours.com/french-guyana-en/packages",
+      "sourceBatch": "en-007",
+      "sourceBatchBlobSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+      "original": {
+        "batchId": "en-007",
+        "batchSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+        "sourceUrl": "https://adatours.com/french-guyana-en/packages",
+        "inventoryPosition": 345,
+        "title": "French Guyana Tours: Kourou Spaceport & Amazon Jungle",
+        "h1": "French Guyana: Tours to the Spaceport and the Jungle",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /french-guyana-en/packages содержит три тура — Guianas experience with local community (9 дней), Suriname Guyana French Guiana (14 дней), The Three Guianas highlights (7 дней). Все три связанные карточки открыты напрямую; 7-дневная /guyana-surinam-french-guyana начинается в Georgetown, день 2 — Kaieteur и перелет в Suriname, выезд из Suriname.",
+          "RU GET https://adatours.ru/french-guiana/tour/ HTTP 200: три программы на 7/9/14 дней. Current main src/content/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana.md, ID tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana, blob 6b3e03e5b0b2060e0fb5200ee1188af115544e22: день 1 прибытие в Suriname/Paramaribo, день 2 Paramaribo/Peperpot; маршрут завершается Guyana/Georgetown."
+        ],
+        "note": "Названия и число программ каталогов совпадают, но один из трех продуктов имеет обратную последовательность стран и иной пункт начала/окончания в RU и EN. Идентичность полного состава требует редакционного решения по 7-дневному туру; sameAs каталога не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:44:14.487Z",
+        "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 261,
+      "sourceUrl": "https://adatours.com/georgetown/packages",
+      "sourceBatch": "en-007",
+      "sourceBatchBlobSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+      "original": {
+        "batchId": "en-007",
+        "batchSha": "5b96520209afd88300551945e96923eaf0f4d34c",
+        "sourceUrl": "https://adatours.com/georgetown/packages",
+        "inventoryPosition": 349,
+        "title": "Georgetown Tours | Guyana's Capital & Colonial Architecture",
+        "h1": "Georgetown: Tours to Guyana's Capital and Colonial Heritage",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /georgetown/packages показывает Guianas experience with local community (9 дней), Suriname Guyana French Guiana (14), The Three Guianas highlights (7). Прямая проверка последнего продукта /guyana-surinam-french-guyana: прибытие в Guyana/Georgetown, день 2 Kaieteur и перелет в Suriname, отъезд из Suriname.",
+          "RU GET https://adatours.ru/guyana/place/georgetown/tour/ HTTP 200: три тура на 7/9/14 дней, destination_guyana_dzhordzhtaun. Проверенный current main ID tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana: 7-дневная программа начинается в Suriname, а Georgetown/Kaieteur поставлены в завершающую часть."
+        ],
+        "note": "Есть сильная пара каталогов по Джорджтауну с теми же тремя названиями/длительностями. Но 7-дневные продукты расходятся по последовательности стран и точкам прибытия/отъезда; без решения по этой программе одинаковый состав не подтвержден. sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:44:16.770Z",
+        "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 262,
+      "sourceUrl": "https://adatours.com/guyana-en/packages",
+      "sourceBatch": "en-008",
+      "sourceBatchBlobSha": "e1d5785507044cc7ab5b3715186cc02d961d3e6b",
+      "original": {
+        "batchId": "en-008",
+        "batchSha": "e1d5785507044cc7ab5b3715186cc02d961d3e6b",
+        "sourceUrl": "https://adatours.com/guyana-en/packages",
+        "inventoryPosition": 376,
+        "title": "Guyana Tours: Kaieteur Falls & Amazon Jungle | Ada Tours",
+        "h1": "Guyana: Tours to Kaieteur Falls and the Rupununi Savannah",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory #376: title «Guyana Tours: Kaieteur Falls & Amazon Jungle | Ada Tours», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+          "EN HTTP 200/self canonical; H1 «Guyana: Tours to Kaieteur Falls and the Rupununi Savannah». Три карточки: /guianas-experience-with-local-community (9д), /suriname-guyana-french-guiana (14д), /guyana-surinam-french-guyana (7д). Все три текущие программы отдельно прочитаны.",
+          "RU HTTP 200 https://adatours.ru/guyana/tour/ — 3 программы на 9/14/7 дней; проверены текущие MD main 81bda828: tour_source_priklyuchenie_v_gvianakh, tour_source_surinam_gajana_frantsuzskaya_gviana, tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana. 9д и 14д совпадают по последовательности ключевых дней и включениям.",
+          "Существенное расхождение 7-дневного продукта: EN day1 Georgetown/Guyana → day2 Kaieteur/Suriname → day6 Kourou space centre → day7 Depart Suriname; RU day1 Paramaribo/Suriname → day5 Cayenne/Paramaribo → day6 Georgetown/Kaieteur → day7 Depart Guyana. В RU included есть Suriname–Guyana, в EN текст дней и блок перелетов противоречат друг другу."
+        ],
+        "note": "Кандидат каталога https://adatours.ru/guyana/tour/ требует редакционного решения: одинаковые три длительности и две точные программы недостаточны, пока не разобран противоположный порядок и условия 7-дневного тура. sameAs пока не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:51:40.221Z",
+        "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 263,
+      "sourceUrl": "https://adatours.com/kaieteur-national-park/packages",
+      "sourceBatch": "en-009",
+      "sourceBatchBlobSha": "30d3d99a0738648c77f6367782077ed7d104c4c8",
+      "original": {
+        "batchId": "en-009",
+        "batchSha": "30d3d99a0738648c77f6367782077ed7d104c4c8",
+        "sourceUrl": "https://adatours.com/kaieteur-national-park/packages",
+        "inventoryPosition": 414,
+        "title": "Kaieteur National Park Tours | Legendary Waterfall & Jungle",
+        "h1": "Kaieteur: Tours to the Legendary Waterfall and the Amazon Jungle",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12 category HTTP 200; crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Kaieteur: Tours to the Legendary Waterfall and the Amazon Jungle». Реальный module/productsjson по datasrc: total=3, UID 4356 Guianas experience with local community (9 дней), 3650 Suriname, Guyana, French Guiana (14), 1150 The Three Guianas highlights (7).",
+          "Проверены main src/content/destinations/nacionalnyj-park-kajetur.md, approved destination_guyana_nacionalnyj_park_kajetur, и RU-каталог /guyana/place/kaieteur-national-park/tour/ HTTP 200. В RU ровно 3 маршрута: /multi-country/tour/guianas-adventure/ (9), /multi-country/tour/suriname-guyana-french-guiana/ (14), /multi-country/tour/suriname-guyana-french-guiana-3-countries/ (7). Проверены живые полные страницы всех шести EN/RU-программ, а не только названия в каталоге.",
+          "Расхождение 7-дневной программы: EN https://adatours.com/guyana-surinam-french-guyana сейчас Day 1 Arrival in Guyana Georgetown, Day 2 Kaieteur + flight to Suriname, Day 4 French Guiana/Cayenne, Day 6 Space center + return Suriname, Day 7 Depart Suriname. RU /multi-country/tour/suriname-guyana-french-guiana-3-countries/ начинает с прибытия в Суринам/Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 вылет из Гайаны. Иная последовательность стран и конечные аэропорты. 9- и 14-дневные кандидаты имеют совпадающую базовую последовательность."
+        ],
+        "note": "Кандидат /guyana/place/kaieteur-national-park/tour/ оставлен на редакционную сверку. Количество и названия трех программ выглядят парными, но 7-дневный текущий продукт имеет разные начало, конец и порядок стран; равенство полного состава каталога не подтверждено. SameAs не назначен; решить, являются ли это разными вариантами программы или одна версия требует актуализации.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:57:17.723Z",
+        "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 264,
+      "sourceUrl": "https://adatours.com/kourou/packages",
+      "sourceBatch": "en-009",
+      "sourceBatchBlobSha": "30d3d99a0738648c77f6367782077ed7d104c4c8",
+      "original": {
+        "batchId": "en-009",
+        "batchSha": "30d3d99a0738648c77f6367782077ed7d104c4c8",
+        "sourceUrl": "https://adatours.com/kourou/packages",
+        "inventoryPosition": 417,
+        "title": "Kourou Tours | Spaceport & European Space Centre | Ada Tours",
+        "h1": "Kourou: Tours to the Spaceport and Rocket Launches",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12 category HTTP 200; crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Kourou: Tours to the Spaceport and Rocket Launches». Реальный module/productsjson по datasrc: total=3, UID 4356 Guianas experience with local community (9 дней), 3650 Suriname, Guyana, French Guiana (14), 1150 The Three Guianas highlights (7).",
+          "Проверены main src/content/destinations/kosmodrom-kuru.md, approved destination_french_guiana_kosmodrom_kuru, и RU-каталог /french-guiana/place/guiana-space-centre/tour/ HTTP 200. В RU ровно 3 маршрута: /multi-country/tour/guianas-adventure/ (9), /multi-country/tour/suriname-guyana-french-guiana/ (14), /multi-country/tour/suriname-guyana-french-guiana-3-countries/ (7). Проверены живые полные страницы всех шести EN/RU-программ, а не только названия в каталоге.",
+          "Расхождение 7-дневной программы: EN https://adatours.com/guyana-surinam-french-guyana сейчас Day 1 Arrival in Guyana Georgetown, Day 2 Kaieteur + flight to Suriname, Day 4 French Guiana/Cayenne, Day 6 Space center + return Suriname, Day 7 Depart Suriname. RU /multi-country/tour/suriname-guyana-french-guiana-3-countries/ начинает с прибытия в Суринам/Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 вылет из Гайаны. Иная последовательность стран и конечные аэропорты. 9- и 14-дневные кандидаты имеют совпадающую базовую последовательность."
+        ],
+        "note": "Кандидат /french-guiana/place/guiana-space-centre/tour/ оставлен на редакционную сверку. Количество и названия трех программ выглядят парными, но 7-дневный текущий продукт имеет разные начало, конец и порядок стран; равенство полного состава каталога не подтверждено. SameAs не назначен; решить, являются ли это разными вариантами программы или одна версия требует актуализации.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:57:20.259Z",
+        "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 265,
+      "sourceUrl": "https://adatours.com/managua/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/managua/packages",
+        "inventoryPosition": 469,
+        "title": "Managua Tours | Capital of Nicaragua & Lake Managua",
+        "h1": "Managua: Tours to the Capital and Lake Managua",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory: snapshotHttp 200; title «Managua Tours | Capital of Nicaragua & Lake Managua», H1 «Managua: Tours to the Capital and Lake Managua», snapshotFile не указан; crawl-002: category_id=38, isPackageCategory.",
+          "21.10.2026 EN HTML HTTP 200: typeid=1&category_id=38, AggregateOffer.offerCount=6. RU /nicaragua/place/managua/tour/ HTTP 200: «7 туров», показано 1–7 из 7, в том числе «Лучшее в Никарагуа: вулканы, Ометепе и Тихий океан» и 26-дневная Центральная Америка; source-index destination_nicaragua_managua."
+        ],
+        "note": "Географический фильтр совпадает, но подтвержденного равенства состава каталогов нет: EN заявляет 6 предложений, RU показывает 7. Кандидат /nicaragua/place/managua/tour/ требует адресной сверки ассортимента; sameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:52:54.349Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 266,
+      "sourceUrl": "https://adatours.com/mendoza/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/mendoza/excursions",
+        "inventoryPosition": 478,
+        "title": "Mendoza Excursions | Vineyards, Wine Tasting & Wine Route",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: snapshotHttp 200, category_id=58, isExcursionCategory, title «Mendoza Excursions | Vineyards, Wine Tasting & Wine Route», H1 общий; snapshotFile не указан.",
+          "21.10.2026 EN HTML HTTP 200; productsjson с исходным datasrc возвращает один продукт uid 187 «ESP: SKIWEEK en Las Leñas (Argentina)», URL /argentina-mendoza-skiweek; в HTML указана программа с периодом 18.06–03.09.2022.",
+          "RU /argentina/place/mendoza/ HTTP 200, destination_argentina_mendoza: 6 экскурсий, в том числе обзорная по Мендосе, долина Уко и Лухан-де-Куйо, винодельни и дегустации. Это иной состав, не программа SKIWEEK."
+        ],
+        "note": "EN-фильтр экскурсий по Мендосе фактически отдает исторический горнолыжный пакет 2022 года. RU показывает городские и винные экскурсии; заголовок о виноградниках не доказывает совпадение ассортимента. Требуется редакционное решение, sameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:53:28.122Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 267,
+      "sourceUrl": "https://adatours.com/mendoza/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/mendoza/packages",
+        "inventoryPosition": 479,
+        "title": "Mendoza Tours | Vineyards & Wine Tasting | Ada Tours",
+        "h1": "Mendoza: Tours to Vineyards and Argentine Wine Tastings",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mendoza Tours | Vineyards & Wine Tasting | Ada Tours», H1 «Mendoza: Tours to Vineyards and Argentine Wine Tastings», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTML HTTP 200: typeid=1, category_id=58, offerCount=4. productsjson показывает uid 4236 All Argentina, 3555 Argentina for good life degustateurs, 4372 Aconcagua Trek, 2750 Colorful Argentina: Buenos Aires-Mendoza-Calafate-Iguassu.",
+          "RU /argentina/place/mendoza/tour/ HTTP 200: 9 туров. В наборе есть 9-дневный Chile–Argentina–Mendoza wine, 17-дневный Chile–Argentina grand tour и 26-дневный Best of Argentina/Patagonia; stable ID места destination_argentina_mendoza."
+        ],
+        "note": "Фильтр туров через Мендосу сопоставим, но состав различается: 4 EN против 9 RU программ. SameAs каталога не подтвержден; требуется согласование ассортимента.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:54:04.531Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 268,
+      "sourceUrl": "https://adatours.com/merida/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/merida/packages",
+        "inventoryPosition": 482,
+        "title": "Mérida Tours | Mountain Resort & Adventure | Ada Tours",
+        "h1": "Mérida: Tours to the Andes, Cable Car, and Adventure",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mérida Tours | Mountain Resort & Adventure | Ada Tours», H1 «Mérida: Tours to the Andes, Cable Car, and Adventure», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTML HTTP 200: package category_id=141, offerCount=1. productsjson: единственный uid 3678 «Merida City Break», /merida-city-break.",
+          "RU /venezuela/place/merida/tour/ HTTP 200: 2 тура — «Венесуэла -Новые Конкистадоры» и «Тур в Венесуэлу на 12 дней с пляжным отдыхом и эко-маршрутами»; destination_venezuela_merida."
+        ],
+        "note": "EN предлагает самостоятельный Merida City Break, RU — два больших 12-дневных венесуэльских маршрута. Идентичность набора программ не подтверждена, назначение sameAs отложено.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:54:08.932Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 269,
+      "sourceUrl": "https://adatours.com/mexico-city/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/mexico-city/excursions",
+        "inventoryPosition": 485,
+        "title": "Excursions and tours to the capital of Mexico, Mexico City",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Excursions and tours to the capital of Mexico, Mexico City», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTML HTTP 200, typeid=2&category_id=190; productsjson с исходным datasrc возвращает products=[], total=0.",
+          "RU /mexico/mexico-city-and-teotihuacan/ HTTP 200: каталог «6 экскурсий в Мехико (руины Теотиуакана)»; source-index destination_mexico_mehiko_siti_ruiny_teotihuakana."
+        ],
+        "note": "Один и тот же составной регион Мехико/Теотиуакан, но каталог EN пуст, RU содержит 6 экскурсий. География не заменяет равенство набора; sameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:54:11.103Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 270,
+      "sourceUrl": "https://adatours.com/mexico-city/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/mexico-city/packages",
+        "inventoryPosition": 486,
+        "title": "Mexico City Tours | Zocalo, Teotihuacan & Chapultepec",
+        "h1": "Mexico City: Tours to the Capital and Pyramids",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mexico City Tours | Zocalo, Teotihuacan & Chapultepec», H1 «Mexico City: Tours to the Capital and Pyramids», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: typeid=1, category_id=190, schema offerCount=11. Первая выдача productsjson содержит uid 2514 Amazing Gastronomic Mexico Tour, 4380 Mexico Fantastico, 3759 Mexico Lindo, 3614 Gran Tour of Mexico, 3679 Mexico: Colonial & Culinary, 3615 Viva Mexico, 2289 All Mexico, 3761 Colonial Treasures; ответ ограничен первыми 8 карточками, полным списком его не считаю.",
+          "RU /mexico/place/mexico-city-and-teotihuacan/tour/ HTTP 200, 11 туров: в числе карточек 26-дневная Центральная Америка, День Мертвых, Религиозное путешествие и Треугольник Солнца; stable ID destination_mexico_mehiko_siti_ruiny_teotihuakana."
+        ],
+        "note": "Количество 11 совпадает по schema/заголовку, но равенство полного набора EN и RU не доказано. Каталог нельзя объявить sameAs по городу и числу карточек; требуется полная адресная сверка программ.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:55:08.287Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 271,
+      "sourceUrl": "https://adatours.com/mexico-en/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/mexico-en/excursions",
+        "inventoryPosition": 489,
+        "title": "Mexico Tours & Vacation packages | Guided trips to Mexico with Ada Tours",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mexico Tours & Vacation packages | Guided trips to Mexico with Ada Tours», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: каталог экскурсий Мексики typeid=2&category_id=183; productsjson возвращает products=[], total=0.",
+          "RU /mexico/excursion/ HTTP 200, заголовок «20 экскурсий в Мексику»; source-index страна country_mexico. RU содержит экскурсии по Мехико, Оахаке и другим местам страны."
+        ],
+        "note": "Географический фильтр — вся Мексика, но EN-выдача пуста, RU-каталог содержит 20 экскурсий. Подтвержденного равенства состава нет; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:55:10.727Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 272,
+      "sourceUrl": "https://adatours.com/mexico-en/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/mexico-en/packages",
+        "inventoryPosition": 490,
+        "title": "Mexico Tours: Chichen Itza, Cancun & Day of the Dead",
+        "h1": "Mexico: Tours to Mayan Pyramids and Cancun Beaches",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mexico Tours: Chichen Itza, Cancun & Day of the Dead», H1 «Mexico: Tours to Mayan Pyramids and Cancun Beaches», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: package category_id=183, AggregateOffer.offerCount=12. Первая страница productsjson содержит 8 карточек: 2514 Amazing Gastronomic Mexico Tour, 4380 Mexico Fantastico, 3759 Mexico Lindo, 4076 Fantastic Mexico Tour, 3614 Gran Tour of Mexico, 3679 Mexico: Colonial & Culinary, 4234 Mexico: Southern Adventure Shortcut, 3615 Viva Mexico; это не весь список.",
+          "RU /mexico/tour/ HTTP 200, каталог программ по Мексике; видны программы «День Мертвых в Мексике», «Треугольник Солнца», «Религиозное путешествие по Мексике», 26-дневная Центральная Америка и другие."
+        ],
+        "note": "Фильтр страны совпадает, но полного доказательства одинакового состава и статуса программ нет. Каталог EN не приравнивается к RU по одному названию страны; оставлен на адресную сверку ассортимента.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:55:13.313Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 273,
+      "sourceUrl": "https://adatours.com/monteverde-santa-elena/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/monteverde-santa-elena/excursions",
+        "inventoryPosition": 495,
+        "title": "Excursions and tours to Monteverde (Cloud Forests) in Costa Rica",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Excursions and tours to Monteverde (Cloud Forests) in Costa Rica», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: typeid=2&category_id=48, Monteverde (Cloud Forests), Costa Rica; productsjson: products=[], total=0.",
+          "RU /costa-rica/monteverde-santa-elena/ HTTP 200: «4 экскурсии в Монтеверде и Санта-Элене»; stable ID destination_costa_rica_monteverde_santa_elena. /place/.../optional-tours/ — другой каталог туров с необязательным посещением и не используется как экскурсионная цель."
+        ],
+        "note": "EN-каталог экскурсий по Монтеверде пуст, RU-каталог содержит 4 экскурсии. Совпадение направления не подтверждает sameAs набора продуктов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:55:15.925Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 274,
+      "sourceUrl": "https://adatours.com/monteverde-santa-elena/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/monteverde-santa-elena/packages",
+        "inventoryPosition": 496,
+        "title": "Monteverde Cloud Forest Tours | Hanging Bridges & Zip Line",
+        "h1": "Monteverde: Tours to the Cloud Forest and Hanging Bridges",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Monteverde Cloud Forest Tours | Hanging Bridges & Zip Line», H1 «Monteverde: Tours to the Cloud Forest and Hanging Bridges», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: typeid=1&category_id=48, schema offerCount=11. Первая выдача productsjson: The Best of Central America, Beautiful Costa Rica, Economical Costa Rica, Guatemala and Costa Rica, Costa Rica & Nicaragua, Tour Costa Rica With Rental Car, Treasures of Costa Rica, Luxury Costa Rica; первые 8, не весь список.",
+          "RU /costa-rica/place/monteverde-santa-elena/tour/ HTTP 200: 16 туров, в том числе «Экстремальная Коста-Рика», «Жемчужины Коста-Рики» и «Центральная Америка: 8 стран за 26 дней»; destination_costa_rica_monteverde_santa_elena."
+        ],
+        "note": "Каталоги одной географии имеют различный заявленный размер: 11 EN против 16 RU. Равенство ассортимента не подтверждено; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:55:18.325Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 275,
+      "sourceUrl": "https://adatours.com/montevideo/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/montevideo/excursions",
+        "inventoryPosition": 500,
+        "title": "Montevideo Excursions | Old Town & Independence Square",
+        "h1": "Montevideo: Excursions to the Old Town and Independence Square",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Montevideo Excursions | Old Town & Independence Square», H1 «Montevideo: Excursions to the Old Town and Independence Square», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: typeid=2&category_id=131, offerCount=6; productsjson вернул 4309 Walk tour in Historic Center, 4310 Punta del Este e Piriápolis, 4306 Montevideo City tour, 4312 Excursion to Colônia do Santíssimo Sacramento, 4308 City Tour & winery tasting, 4307 City tour and Historic Center.",
+          "RU /uruguay/montevideo/ HTTP 200, 5 экскурсий: пеший исторический центр, сити-тур/исторический центр, сити-тур с винодельней, Пунта-дель-Эсте/Пириаполис и паромная поездка из Буэнос-Айреса. destination_uruguay_montevideo."
+        ],
+        "note": "Каталоги географически близки, но EN содержит 6 программ, RU — 5; Колония и паромная поездка из Буэнос-Айреса показывают разные правила включения. SameAs каталога не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:56:07.880Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 276,
+      "sourceUrl": "https://adatours.com/montevideo/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/montevideo/packages",
+        "inventoryPosition": 501,
+        "title": "Montevideo Tours | Old City, Rambla & Markets | Ada Tours",
+        "h1": "Montevideo: Tours to Uruguay's Capital, Old City, and Waterfront",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Montevideo Tours | Old City, Rambla & Markets | Ada Tours», H1 «Montevideo: Tours to Uruguay's Capital, Old City, and Waterfront», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: package category_id=131, offerCount=7; productsjson вернул 7 программ, включая uid 2984 Montevideo City pack 2022, 3031 Argentina: Buenos Aires–Salta–Iguassu и 4365 Chile-Argentina-Brazil.",
+          "RU /uruguay/place/montevideo/tour/ HTTP 200: 8 программ с Монтевидео в основном маршруте, в том числе Бразилия/Аргентина/Уругвай 13 дней, Уругвай/Парагвай 16 дней, Уругвай: Вино и Традиции Староверцев, 6 и 8 стран Южной Америки."
+        ],
+        "note": "Не совпадают размер и логика состава: EN 7 программ с историческим City pack 2022; RU 8 основных маршрутов. Для sameAs необходим одинаковый каталог, он не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:56:10.647Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 277,
+      "sourceUrl": "https://adatours.com/moto-tours",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/moto-tours",
+        "inventoryPosition": 505,
+        "title": "Moto Tours to Brazil |Moto tours  in Latin America | Guided trips to South America with Ada Tours  in Latin America | Guided trips to South America with Ada Tours",
+        "h1": "MOTORCYCLE TOURS TO SOUTH AND CENTRAL AMERICA",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Moto Tours to Brazil |Moto tours  in Latin America | Guided trips to South America with Ada Tours  in Latin America | Guided trips to South America with Ada Tours», H1 «MOTORCYCLE TOURS TO SOUTH AND CENTRAL AMERICA», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: тематический каталог category_id=668, isThemesCategory; offerCount=1, productsjson единственный uid 4346 «Motorcycle Trip Across Brazil», /motorcycle-trip-across-brazil.",
+          "RU /interests/motorcycle-tours/ HTTP 200: «Мото-туры — 2 тура», две действующие программы по Бразилии на 12 и на 10 дней; состав указан в блоке «Готовые маршруты · 2 тура»."
+        ],
+        "note": "Совпадает интерес «мото-туры», но EN содержит одну программу, RU — две разные по длительности. Идентичность тематических каталогов не доказана; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:56:18.328Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 278,
+      "sourceUrl": "https://adatours.com/multi-country-tours",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/multi-country-tours",
+        "inventoryPosition": 507,
+        "title": "Combined tours to several Latin American countries",
+        "h1": "COMBINED TOURS TO SOUTH AND CENTRAL AMERICA",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Combined tours to several Latin American countries», H1 «COMBINED TOURS TO SOUTH AND CENTRAL AMERICA», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: category_id=669, isThemesCategory, H1 «COMBINED TOURS TO SOUTH AND CENTRAL AMERICA», schema offerCount=31. В первой выдаче productsjson видны Brazil/Argentina/Peru, 4 Countries, 5 Countries, Argentina/Chile/Bolivia и другие; выдача первых 8 карточек не считается полным каталогом.",
+          "RU /multi-country/ HTTP 200: заголовок «93 Multi-country тура», первая страница 30 карточек; показаны 2–8 стран и программы Центральной/Южной Америки."
+        ],
+        "note": "Намерение комбинированных туров совпадает, однако заявленный размер ассортимента EN 31 против RU 93 и одинаковый состав не подтвержден. SameAs каталогов не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:56:55.799Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 279,
+      "sourceUrl": "https://adatours.com/natal/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/natal/packages",
+        "inventoryPosition": 511,
+        "title": "Natal Brazil Tours | Sun City & Sand Dunes | Ada Tours",
+        "h1": "Natal: Sun City & Dune Buggy Tours",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Natal Brazil Tours | Sun City & Sand Dunes | Ada Tours», H1 «Natal: Sun City & Dune Buggy Tours», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: package category_id=240, offerCount=1; productsjson один uid 3784 «Dunes, Lagoons, Waterfalls and Beaches», /dunes-lagoons-waterfalls-and-beaches.",
+          "RU /brazil/place/natal/tour/ HTTP 200: 2 тура — Бразилия 13 дней с Рио, Игуасу, Ленсойс и Пипой; Аргентина/Бразилия 11 дней с Буэнос-Айресом, Эль-Калафате, Игуасу и Пипой. destination_brazil_natal."
+        ],
+        "note": "Один EN-пакет против двух RU-маршрутов. Географическое пересечение с Наталом не доказывает идентичность каталогов или текущей программы EN-продукта. SameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:57:03.219Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 280,
+      "sourceUrl": "https://adatours.com/nazca",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/nazca",
+        "inventoryPosition": 513,
+        "title": "Nazca Lines: Attractions and Travel Guide to the Nazca Plateau",
+        "h1": "Geoglyphs and the Andean Candelabra: What to See on the Nazca Plateau",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Nazca Lines: Attractions and Travel Guide to the Nazca Plateau», H1 «Geoglyphs and the Andean Candelabra: What to See on the Nazca Plateau», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: После первоначального 503 повтор 21.10.2026 дал HTTP 200. EN-страница Nazca, category_id=125, isSity: текст о геоглифах плато Наска, рисунках hummingbird/spider/monkey, их осмотре с самолета. H1 упоминает также Andean Candelabra; самостоятельного описания островов Бальестас в основном тексте нет.",
+          "RU /peru/place/nazca-lines-and-ballestas-islands/ HTTP 200, stable ID destination_peru_linii_naska_i_ostrova_balestas; source-index и заголовок явно задают составной объект «Линии Наска и Острова Бальестас», а не только плато Наска."
+        ],
+        "note": "Наска совпадает как часть объекта, но RU-цель объединяет геоглифы с отдельными островами Бальестас. Равенство полного предмета страниц не доказано; частичного географического совпадения недостаточно для sameAs.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:57:05.425Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 281,
+      "sourceUrl": "https://adatours.com/nazca/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/nazca/excursions",
+        "inventoryPosition": 514,
+        "title": "Excursions and tours to Nazca Lines ,in Peru",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Excursions and tours to Nazca Lines ,in Peru», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: excursion typeid=2&category_id=125, productsjson products=[], total=0; название «Excursions and tours to Nazca Lines, in Peru».",
+          "RU /peru/nazca-lines-and-ballestas-islands/ HTTP 200: 4 экскурсии по составному направлению Наска и Бальестас; destination_peru_linii_naska_i_ostrova_balestas. Это более широкая география, чем плато Наска."
+        ],
+        "note": "EN-каталог экскурсий Наски пуст, RU содержит 4 экскурсии и объединяет Наску с островами Бальестас. Не совпадают подтвержденный состав и охват; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:57:55.792Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 282,
+      "sourceUrl": "https://adatours.com/nazca/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/nazca/packages",
+        "inventoryPosition": 515,
+        "title": "Nazca Tours | Mysterious Lines & Desert Flight | Ada Tours",
+        "h1": "Nazca: Tours to the Mysterious Desert Lines",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Nazca Tours | Mysterious Lines & Desert Flight | Ada Tours», H1 «Nazca: Tours to the Mysterious Desert Lines», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: package typeid=1&category_id=125, offerCount=3. productsjson: uid 4333 «21 Day Adventure in Peru», 4359 «Marvels of Peru», 2950 «Peru: From the Enigmas to the Incas».",
+          "RU /peru/place/nazca-lines-and-ballestas-islands/tour/ HTTP 200: 6 основных туров, отдельно /optional-tours/ содержит 8 программ с возможностью добавить место; source-index объединяет Наску и Бальестас."
+        ],
+        "note": "EN 3 пакетных программы по Наске против 6 RU основных маршрутов составного направления и отдельного дополнительного каталога. Фильтр и набор не идентичны; sameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:57:58.452Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 283,
+      "sourceUrl": "https://adatours.com/nicaragua-en/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/nicaragua-en/excursions",
+        "inventoryPosition": 519,
+        "title": "Nicaragua Excursions: Volcanoes, Granada & Lake Nicaragua",
+        "h1": "Volcanoes, Colonial Granada and Lake Nicaragua: Top Attractions in Nicaragua",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Nicaragua Excursions: Volcanoes, Granada & Lake Nicaragua», H1 «Volcanoes, Colonial Granada and Lake Nicaragua: Top Attractions in Nicaragua», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: После первоначального 503 повтор дал HTTP 200. EN excursion category_id=29, offerCount=5; productsjson: 1839 Estelí – Tour del Tabaco, 1835 Granada Colonial e Isletas, 416 León City Tour, 1837 Pueblos Blancos, 417 San Jacinto and Flor de Caña Rum.",
+          "RU /nicaragua/excursion/ HTTP 200: 7 экскурсий, в том числе Манагуа/Леон-Вьехо, Ометепе/Охо-де-Агуа, островки Гранады/Момбачо и Эстели. Точный набор отличается от пяти EN-карточек."
+        ],
+        "note": "Технический сбой устранен повтором. Страновой фильтр один, но 5 EN-программ и 7 RU-экскурсий имеют разный состав. SameAs не назначен, требуется согласование каталога.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:58:00.947Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 284,
+      "sourceUrl": "https://adatours.com/nicaragua-en/packages",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/nicaragua-en/packages",
+        "inventoryPosition": 520,
+        "title": "Nicaragua Tours: Volcanoes, Lakes & Surfing | Ada Tours",
+        "h1": "Nicaragua: Tours to Volcanoes and the Pacific Coast",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Nicaragua Tours: Volcanoes, Lakes & Surfing | Ada Tours», H1 «Nicaragua: Tours to Volcanoes and the Pacific Coast», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: package category_id=29, offerCount=6. productsjson вернул 6 программ: The Best of Central America, Costa Rica & Nicaragua, Central America Highlights, Panama/Costa Rica/Nicaragua, The Best of Nicaragua, Beaches and Ecology.",
+          "RU /nicaragua/tour/ HTTP 200: 7 маршрутов, включая VIP Коста-Рика/Никарагуа на частном самолете 12 дней, 5 стран Центральной Америки 19 дней и 8 стран Центральной Америки 26 дней."
+        ],
+        "note": "Каталоги по Никарагуа не равны: EN 6 программ, RU 7 с иными большими и VIP-маршрутами. Возможное совпадение отдельных туров не подтверждает sameAs каталога.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:58:05.803Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 285,
+      "sourceUrl": "https://adatours.com/oaxaca-city/excursions",
+      "sourceBatch": "en-010",
+      "sourceBatchBlobSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+      "original": {
+        "batchId": "en-010",
+        "batchSha": "8bcde46c5129fc319aade6c0e79e7fd0d7a3d7c0",
+        "sourceUrl": "https://adatours.com/oaxaca-city/excursions",
+        "inventoryPosition": 524,
+        "title": "Excursions and tours to Oaxaca City, in Mexico",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Excursions and tours to Oaxaca City, in Mexico», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: После первоначального 503 повтор дал HTTP 200. EN экскурсионный каталог typeid=2&category_id=195; productsjson products=[], total=0. География Oaxaca City, Mexico.",
+          "RU /mexico/oaxaca/ HTTP 200: 3 экскурсии — Митла/ткачество/мескаль, Монте-Альбан/алебрихе/черная глина, обзорная по Оахаке; source-index destination_mexico_oahaka, /mexico/place/oaxaca/ HTTP 200."
+        ],
+        "note": "Технический сбой устранен. EN-выдача экскурсий Оахаки пуста, RU содержит три действующие программы; равенства состава нет, sameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:58:35.592Z",
+        "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 286,
+      "sourceUrl": "https://adatours.com/porto-seguro-arraial-d-ajuda",
+      "sourceBatch": "en-012",
+      "sourceBatchBlobSha": "d1bae2ddf8ba1ac244ee237e95a6ffc192ca34a2",
+      "original": {
+        "batchId": "en-012",
+        "batchSha": "d1bae2ddf8ba1ac244ee237e95a6ffc192ca34a2",
+        "sourceUrl": "https://adatours.com/porto-seguro-arraial-d-ajuda",
+        "inventoryPosition": 601,
+        "title": "Porto Seguro, Brazil: Attractions and Travel Guide",
+        "h1": "Beaches and Nightlife: What to See in Porto Seguro and Arraial d'Ajuda, Brazil",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "GET 21.10.2026 HTTP 200, canonical sourceUrl. EN H1: Beaches and Nightlife: What to See in Porto Seguro and Arraial d'Ajuda, Brazil; самостоятельные разделы Porto Seguro и Arraial d’Ajuda. Вторая часть описывает улицу Mucugê, Bróduei, церковь Nossa Senhora d’Ajuda и паром через реку.",
+          "main 50542db1: approved destination_brazil_porto_seguro, src/content/destinations/porto-seguro.md, canonical /brazil/place/porto-seguro/; предмет RU — Порту-Сегуру, исторический центр и побережье Южной Баии. Arraial d’Ajuda и ее перечисленные объекты в тексте RU не раскрыты."
+        ],
+        "note": "EN-страница объединяет Порту-Сегуру и Арраял-д’Ажуда, а RU-кандидат посвящен Порту-Сегуру. Нужно редакционное решение о границах сущности/расширении RU; пока точный sameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:16:58.879Z",
+        "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 287,
+      "sourceUrl": "https://adatours.com/recife",
+      "sourceBatch": "en-013",
+      "sourceBatchBlobSha": "9ad51a430d12ac0a78c5b807ce833974b05216ea",
+      "original": {
+        "batchId": "en-013",
+        "batchSha": "9ad51a430d12ac0a78c5b807ce833974b05216ea",
+        "sourceUrl": "https://adatours.com/recife",
+        "inventoryPosition": 649,
+        "title": "Olinda, Brazil: Attractions and Travel Guide to the UNESCO City",
+        "h1": "Colonial Architecture and Carnival: What to See in Olinda, Brazil",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory #649: title «Olinda, Brazil: Attractions and Travel Guide to the UNESCO City», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+          "EN HTTP 200/self canonical https://adatours.com/recife; H1 «Colonial Architecture and Carnival: What to See in Olinda, Brazil». В начале указан город Olinda у северной окраины Recife в Бразилии, но последующие абзацы описывают Monbulk, Mount Dandenong, Dandenong Ranges National Park и Olinda Falls.",
+          "Официальный Parks Victoria подтверждает другой географический контекст: https://www.parks.vic.gov.au/projects/greater-melbourne/olinda-precinct-project — Olinda в Dandenong Ranges, 50 км восточнее Melbourne; официальный ботанический сад также указывает Olinda–Monbulk Road. Следовательно, EN-текст смешивает бразильскую и австралийскую Олинду.",
+          "RU HTTP 200/self canonical https://adatours.ru/brazil/place/olinda/, H1 «Олинда». main 50542db1f: destination_brazil_olinda, текущий MD/source-index — город Пернамбуку рядом с Ресифи, барочные церкви, колониальный центр и карнавал; destination_brazil_recife — отдельный объект."
+        ],
+        "note": "Вероятный кандидат — бразильская Олинда, но текущая EN-страница /recife содержит существенное смешение с одноименным местом у Мельбурна. Нужна редакционная правка/решение по первичному референту; sameAs пока не подтвержден, RU-цель не назначена.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:13:50.943Z",
+        "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 288,
+      "sourceUrl": "https://adatours.com/rio-de-janeiro/excursions",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/rio-de-janeiro/excursions",
+        "inventoryPosition": 662,
+        "title": "Rio de Janeiro Excursions | Christ Statue, Sugarloaf & Samba | Ada Tours",
+        "h1": "Rio de Janeiro: Sightseeing Tours of Major Landmarks",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: Rio de Janeiro Excursions | Christ Statue, Sugarloaf & Samba | Ada Tours; H1 Rio de Janeiro: Sightseeing Tours of Major Landmarks; category_ids=[\"54\"]; adatours-com-crawl-002.json index 230; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/rio-de-janeiro/excursions: HTTP 200; SHA256 ee98551c81f7a2781081a03276d5e4d280191bf402a8c63c04308cc686b72f5d. Видимые карточки: City Tour & Sugarloaf Mountain (4 hrs); Excursion to Christ the Redeemer; Private helicopter flight in Rio de Janeiro; Boat Trip — Guanabara Bay; Buzios full day tour with boat",
+          "main src/content/destinations/rio-de-janeiro.md, blob a35194b74855ebf214e3fd7ef70ca3f01bc9876d: approved destination_brazil_rio, /brazil/place/rio-de-janeiro/. Проверка RU каталога https://adatours.ru/brazil/rio-de-janeiro/: HTTP 200; 50 экскурсий в Рио-де-Жанейро, Бразилия - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Экскурсии Ada Tours: Рио-де-Жанейро, Бразилия. Оставить заявку ↗ Полет на вертолете над Рио-де-Жанейро Воздушная прогулка над Рио с видами на океан, пляжи, лагуну, Корковадо, Сахарную Голову и городские кварталы. Смотреть ↗ около 4 часов Ботанический сад в Рио-де-Жан."
+        ],
+        "note": "География и тип каталога совпадают, но полный ассортимент EN и RU не подтвержден одинаковым. RU содержит существенно расширенный набор; наличие общих названий отдельных продуктов не доказывает sameAs каталога. Требуется адресное сравнение полного состава, RU цель не назначена.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:15:43.786Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 289,
+      "sourceUrl": "https://adatours.com/rio-de-janeiro/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/rio-de-janeiro/packages",
+        "inventoryPosition": 663,
+        "title": "Rio de Janeiro Tours | Christ the Redeemer & Carnival",
+        "h1": "Rio de Janeiro: Beaches, Samba & Carnival Tours",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: Rio de Janeiro Tours | Christ the Redeemer & Carnival; H1 Rio de Janeiro: Beaches, Samba & Carnival Tours; category_ids=[\"54\"]; adatours-com-crawl-002.json index 231; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/rio-de-janeiro/packages: HTTP 200; SHA256 6fba56a869a55c0ff73c36e3ed95e456e011fd4b27edc2fe36a915daebe9b039. Видимые карточки: 3 Countries-Tour: Brazil, Argentina and Peru; 4 Countries :  Chile, Argentina Uruguay and Brazil with spectacular Patagonia; 5 Countries Tour; 5 country-tour in Latin America; A fascinating tour of Brazil",
+          "main src/content/destinations/rio-de-janeiro.md, blob a35194b74855ebf214e3fd7ef70ca3f01bc9876d: approved destination_brazil_rio, /brazil/place/rio-de-janeiro/. Проверка RU каталога https://adatours.ru/brazil/place/rio-de-janeiro/tour/: HTTP 200; 117 туров 2026-2027 в Рио-де-Жанейро (Бразилии) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Рио-де-Жанейро. Оставить заявку ↗ 13 дней · Частный Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа Смотреть ↗ VIP 14 дней · Частный Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-."
+        ],
+        "note": "География и тип каталога совпадают, но полный ассортимент EN и RU не подтвержден одинаковым. RU содержит существенно расширенный набор; наличие общих названий отдельных продуктов не доказывает sameAs каталога. Требуется адресное сравнение полного состава, RU цель не назначена.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:15:46.380Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 290,
+      "sourceUrl": "https://adatours.com/salta/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/salta/packages",
+        "inventoryPosition": 671,
+        "title": "Salta Tours | Train to the Clouds & Seven Colors Mountain",
+        "h1": "Salta: Tours on the Train to the Clouds and to Seven Colors Mountain",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: title Salta Tours | Train to the Clouds & Seven Colors Mountain; H1 Salta: Tours on the Train to the Clouds and to Seven Colors Mountain; category_ids=[\"61\"]; adatours-com-crawl-002.json index 237; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/salta/packages: HTTP 200; SHA256 ce2f49ccd176b6b09b3d0d2a9f43848b4869517911f39008152c2129bf9621e4. Видимые карточки: All Argentina; Fall in Love with Argentina; Buenos Aires, Salta and Iguazú; Argentina: Buenos Aires - Salta - Iguassu; Amazing Salta",
+          "main src/content/destinations/salta.md, blob 22d149adf0ffdcb05227cba20a0051b46da49012: approved destination_argentina_salta, /argentina/place/salta/. RU каталог https://adatours.ru/argentina/place/salta/tour/: HTTP 200; 7 туров 2026-2027 в Сальте (Аргентине) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сальта. Оставить заявку ↗ VIP 12 дней · Частный Буэнос-Айрес, Сальта и Игуасу Смотреть ↗ VIP 15 дней · Частный Аргентина: большое путешествие от Игуасу до Патагонии Смотреть ↗ 15 дней Тур в Аргентину с Патагонией по лу."
+        ],
+        "note": "У каталогов совпадает географическое намерение, но идентичность полного состава и фильтров не установлена. EN содержит видимые карточки программ, RU — актуальную подборку основного маршрута. Из-за потенциального пересечения нужна проверка всех продуктов, без назначения sameAs и без подмены каталогов Place.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:16:43.836Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 291,
+      "sourceUrl": "https://adatours.com/salvador-da-bahia/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/salvador-da-bahia/packages",
+        "inventoryPosition": 674,
+        "title": "Salvador da Bahia Tours. Pelourinho & Afro Brazilian Culture",
+        "h1": "Salvador da Bahia: Pelourinho Tours with Afro Brazilian Culture",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: title Salvador da Bahia Tours. Pelourinho & Afro Brazilian Culture; H1 Salvador da Bahia: Pelourinho Tours with Afro Brazilian Culture; category_ids=[\"65\"]; adatours-com-crawl-002.json index 240; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/salvador-da-bahia/packages: HTTP 200; SHA256 cab8907598979d3c6996e938ba3218d13c47b5678d14576167322ec3bf165bac. Видимые карточки: Authentic Brazil; Fun Brazil and Argentina; Romantic Brazil; Brazil: Little Mix; Following the treasures of Brazil; Brazil experience; Colorful Brazil",
+          "main src/content/destinations/salvador.md, blob 105a20a060f871c804df34cdfbf107de577548b6: approved destination_brazil_salvador, /brazil/place/salvador/. RU каталог https://adatours.ru/brazil/place/salvador/tour/: HTTP 200; 9 туров 2026-2027 в Сальвадоре (Бразилии) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сальвадор. Оставить заявку ↗ VIP 14 дней · Частный Бразилия за 14 дней: Рио, Ору-Прету, Сальвадор, Прайя-ду-Форте и Игуасу Смотреть ↗ 14 дней Тур в Бразилию и Аргентину: от Манауса (Амазонка) до Игуасу Смотреть ↗ 14."
+        ],
+        "note": "У каталогов совпадает географическое намерение, но идентичность полного состава и фильтров не установлена. EN содержит видимые карточки программ, RU — актуальную подборку основного маршрута. Из-за потенциального пересечения нужна проверка всех продуктов, без назначения sameAs и без подмены каталогов Place.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:16:48.447Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 292,
+      "sourceUrl": "https://adatours.com/san-cristobal-de-las-lasas/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/san-cristobal-de-las-lasas/packages",
+        "inventoryPosition": 680,
+        "title": "San Cristobal de las Casas Tours | Colonial City",
+        "h1": "San Cristobal de las Casas: Tours to the Colonial City and Villages",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: San Cristobal de las Casas Tours | Colonial City; H1 San Cristobal de las Casas: Tours to the Colonial City and Villages; category_ids=[\"198\"]; adatours-com-crawl-002.json index 246; HTTP 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/san-cristobal-de-las-lasas/packages: HTTP 200; SHA256 bac47252e75440b58fb0369eee96f7f37c6249a20b3a117ef56840a20542d6b1. Видимые карточки: Amazing Gastronomic Mexico Tour; Mexico Fantastico; Mexico Lindo; Fantastic Mexico Tour; Viva Mexico",
+          "main src/content/destinations/san-kristobal-de-las-kasas.md, blob 657e9276fe9599250abc71183cbd564264b20fd0: approved destination_mexico_san_kristobal_de_las_kasas, /mexico/place/san-cristobal-de-las-casas/. RU каталог https://adatours.ru/mexico/place/san-cristobal-de-las-casas/tour/: HTTP 200; 2 тура 2026-2027 в Сан Кристобал де Лас Касасе (Мексике) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан Кристобал де Лас Касас. Оставить заявку ↗ 12 дней Фантастический Тур по Мексике Смотреть ↗ 6 дней Мексика: «Южное Приключение — Краткий маршрут» Смотреть ↗ Показано 1–2 из 2 Какие туры проходят че."
+        ],
+        "note": "Совпадает географическое намерение каталогов, но совпадение полного состава программ и ограничений не подтверждено. EN показывает несколько программ, RU — подборку текущих основных маршрутов; общие названия не доказывают тождество. Нужна сверка полных динамических списков и продуктов, sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:17:22.562Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 293,
+      "sourceUrl": "https://adatours.com/san-jose/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/san-jose/packages",
+        "inventoryPosition": 683,
+        "title": "San José Costa Rica Tours | Gold Museum & National Theatre",
+        "h1": "San José: Tours to Costa Rica's Cultural Capital",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: San José Costa Rica Tours | Gold Museum & National Theatre; H1 San José: Tours to Costa Rica's Cultural Capital; category_ids=[\"52\"]; adatours-com-crawl-002.json index 249; HTTP 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/san-jose/packages: HTTP 200; SHA256 99874527bb1a500e8a11955fb296bca1ee178a60d1fcbc2bab407f1b0f4fd1c0. Видимые карточки: 5 Wonders in Costa Rica; Basic  Costa  Rica; Costa Rica for nature lovers; Short and Complete Costa Rica; Authentic Costa  Rican Jewels; Economical Costa Rica; Guatemala and Costa Rica; Costa Rica & Nicaragua; Tour Costa Rica With Rental Car",
+          "main src/content/destinations/san-hose.md, blob 12b44578a7b32ea3cccb1ffcb32f5463e5ef8dea: approved destination_costa_rica_san_hose, /costa-rica/place/san-jose/. RU каталог https://adatours.ru/costa-rica/place/san-jose/tour/: HTTP 200; 23 тура 2026-2027 в Сан-Хосе (Коста-Рике) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан Хосе. Оставить заявку ↗ VIP 13 дней Коста Рика Никарагуа Смотреть ↗ VIP 13 дней Экстремальная Коста-Рика Смотреть ↗ VIP 12 дней VIP-тур в Коста-Рику и Никарагуа | На частном самолете Смотреть ↗ VIP 14 дней Тур в."
+        ],
+        "note": "Совпадает географическое намерение каталогов, но совпадение полного состава программ и ограничений не подтверждено. EN показывает несколько программ, RU — подборку текущих основных маршрутов; общие названия не доказывают тождество. Нужна сверка полных динамических списков и продуктов, sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:17:27.541Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 294,
+      "sourceUrl": "https://adatours.com/san-pedro-de-atacama/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/san-pedro-de-atacama/packages",
+        "inventoryPosition": 689,
+        "title": "Atacama Desert Tours | Geysers & Moon Valley | Ada Tours",
+        "h1": "Atacama Desert: Tours to the Geysers and Salt Flats",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: title Atacama Desert Tours | Geysers & Moon Valley | Ada Tours; H1 Atacama Desert: Tours to the Geysers and Salt Flats; category_ids=[\"256\"]; adatours-com-crawl-002.json index 255; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/san-pedro-de-atacama/packages: HTTP 200; SHA256 e638b4a6c54c12e09f193ef7ce83223e6e73441fcf6ba5d029e54255ca33297a. Видимые gallery-карточки: 5 country-tour in Latin America; Argentina, Chile and Bolivia; Chile  The Best: Santiago – Atacama Desert - Torres del Paine - Easter Island; Chile  VIP: Summer & Wine; Chile: Santiago – Atacama  Desert  – Torres  del  Paine; Chile:  Space travel on Earth; VIP Chile 5*; Great South America Tour Фильтр EN category_id 256, isPackageCategory/typeid=1.",
+          "main src/content/destinations/san-pedro-de-atakama.md, blob 2ee5ac79c554e30d09be11fc96463c2a28a846e5: approved destination_chile_san_pedro_de_atakama, /chile/place/san-pedro-de-atacama/. RU каталог https://adatours.ru/chile/place/san-pedro-de-atacama/tour/: HTTP 200; 21 тур 2026-2027 в Сан-Педро-де-Атакаме (Чили) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан-Педро-де-Атакама. Оставить заявку ↗ VIP 13 дней Лучшее Бразилии, Аргентины и Чили Смотреть ↗ VIP 15 дней Солнце, Танго, Вино и Атакама Смотреть ↗ 12 дней Тур в Чили на 12 дней по лучшим местам страны с о.Па. routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+        ],
+        "note": "У каталогов одинаковое географическое намерение и есть тематически близкие продукты, однако полное равенство динамического EN состава и действующих RU программ не установлено. Категория старого CMS не доказывает совпадение правила RU основного маршрута. Оставлено REVIEW без sameAs, нужна сверка всех продуктов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:17:59.199Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 295,
+      "sourceUrl": "https://adatours.com/san-salvador/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/san-salvador/packages",
+        "inventoryPosition": 692,
+        "title": "San Salvador Tours | Capital of El Salvador & Volcanoes",
+        "h1": "San Salvador: Tours to the Capital and Volcanoes",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: title San Salvador Tours | Capital of El Salvador & Volcanoes; H1 San Salvador: Tours to the Capital and Volcanoes; category_ids=[\"79\"]; adatours-com-crawl-002.json index 258; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/san-salvador/packages: HTTP 200; SHA256 da73578f6c633a6d8855f1ad3ea726ababe05113f239b249f759d0a002e90130. Видимые gallery-карточки: The Best of Central America; Central America Highlights; The Best of El Salvador Фильтр EN category_id 79, isPackageCategory/typeid=1.",
+          "main src/content/destinations/san-salvador.md, blob 1c4c6c7a29198eeeac9ab9fa63a78b30f5381bfb: approved destination_el_salvador_san_salvador, /el-salvador/place/san-salvador/. RU каталог https://adatours.ru/el-salvador/place/san-salvador/tour/: HTTP 200; 5 туров 2026-2027 в Сан Сальвадоре (Эль-Сальвадоре) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан Сальвадор. Оставить заявку ↗ 11 дней Гватемала - Гондурас- Эль Сальвадор - Белиз Смотреть ↗ VIP 19 дней Тур в Гватемалу, Гондурас, Сальвадор, Никарагуа и Коста-Рику на 19 дней Смотреть ↗ 6 дней Лучшее . routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+        ],
+        "note": "У каталогов одинаковое географическое намерение и есть тематически близкие продукты, однако полное равенство динамического EN состава и действующих RU программ не установлено. Категория старого CMS не доказывает совпадение правила RU основного маршрута. Оставлено REVIEW без sameAs, нужна сверка всех продуктов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:18:04.546Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 296,
+      "sourceUrl": "https://adatours.com/sao-luis/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/sao-luis/packages",
+        "inventoryPosition": 703,
+        "title": "Sao Luis UNESCO Tours | Reggae Capital & French Colonial",
+        "h1": "Sao Luis: UNESCO Heritage & Reggae Capital Tours",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: title Sao Luis UNESCO Tours | Reggae Capital & French Colonial; H1 Sao Luis: UNESCO Heritage & Reggae Capital Tours; category_ids=[\"314\"]; adatours-com-crawl-002.json index 267; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/sao-luis/packages: HTTP 200; SHA256 9f0bf8af389ff1f8eac1d70f44ceee5cd4e4c1dce03c4c85a35b412887bde270. Видимые gallery-карточки: A fascinating tour of Brazil; Marvelous Secret Brazil!; Dunes, Lagoons, Waterfalls and Beaches; Brazil Adventures; Grand tour in Brazil",
+          "main src/content/destinations/sao-luis.md, blob 8c9d83e534d9b04dd1db5170f2fafb449e357fab: approved destination_brazil_sao_luis, /brazil/place/sao-luis/. RU каталог https://adatours.ru/brazil/place/sao-luis/tour/: HTTP 200; 5 туров 2026-2027 в Сан-Луисе (Бразилии) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан-Луис. Оставить заявку ↗ 13 дней · Частный Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа Смотреть ↗ VIP 14 дней Удивительная Бразилия Смотреть ↗ 17 дней · Частный Большое приключение в Браз. routes.ts/[...path].astro отделяет Place, основной маршрут тура и самостоятельные экскурсии."
+        ],
+        "note": "В обоих каталогах видны по пять карточек, но названия и набор программ различаются; количество не доказывает тождество. EN содержит Grand tour in Brazil и Dunes, Lagoons, Waterfalls and Beaches, RU — 4-дневные Ленсойс и 8-дневный Пантанал/Бонито/Ленсойс. Нужны программы и полный динамический EN список для точного решения; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:18:46.202Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 297,
+      "sourceUrl": "https://adatours.com/sao-paulo/excursions",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/sao-paulo/excursions",
+        "inventoryPosition": 705,
+        "title": "Sao Paulo City Excursions | Museums, Dining & Shopping | Ada Tours",
+        "h1": "Sao Paulo: Sightseeing Excursions in the Megacity",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: title Sao Paulo City Excursions | Museums, Dining & Shopping | Ada Tours; H1 Sao Paulo: Sightseeing Excursions in the Megacity; category_ids=[\"66\"]; adatours-com-crawl-002.json index 269; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/sao-paulo/excursions: HTTP 200; SHA256 08d6a422d2d1e8dacbecec6f9834c9f60299fefd55d8418d52a91d7f0aab1b8d. Видимые gallery-карточки: Sao Paulo City tour",
+          "main src/content/destinations/sao-paulo.md, blob 210278eb158f9dd202bc4cddb45968e18b3d2557: approved destination_brazil_sao_paulo, /brazil/place/sao-paulo/. RU каталог https://adatours.ru/brazil/sao-paulo/: HTTP 200; 9 экскурсий в Сан-Паулу, Бразилия - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Экскурсии Ada Tours: Сан-Паулу, Бразилия. Оставить заявку ↗ Полдня Сан-Паулу: обзорная экскурсия на полдня с гидом Сегодня вас ждет полудневная обзорная экскурсия по Сан-Паулу в сопровождении англоговорящего гида. Билеты включены. Смотреть ↗ 4 часа · Индивидуальная экскурс. routes.ts/[...path].astro отделяет Place, основной маршрут тура и самостоятельные экскурсии."
+        ],
+        "note": "Совпадает география каталога, присутствуют тематически близкие продукты, однако одинаковый полный состав и условия не подтверждены. EN gallery не равна доказанному полному динамическому списку; RU содержит расширенную актуальную подборку. REVIEW без назначения sameAs; нужна адресная сверка всех продуктов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:18:50.051Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 298,
+      "sourceUrl": "https://adatours.com/sao-paulo/packages",
+      "sourceBatch": "en-014",
+      "sourceBatchBlobSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+      "original": {
+        "batchId": "en-014",
+        "batchSha": "68d3b567c87136ef17edc8860113a8c9d2fafe5e",
+        "sourceUrl": "https://adatours.com/sao-paulo/packages",
+        "inventoryPosition": 706,
+        "title": "Sao Paulo Tours | Museums, Restaurants & Formula One",
+        "h1": "Sao Paulo: World Class Museums, Dining & Cultural Tours",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory 2026-10-12: title Sao Paulo Tours | Museums, Restaurants & Formula One; H1 Sao Paulo: World Class Museums, Dining & Cultural Tours; category_ids=[\"66\"]; adatours-com-crawl-002.json index 270; snapshotHttp 200, snapshotFile отсутствует.",
+          "Живой GET 21.10.2026 https://adatours.com/sao-paulo/packages: HTTP 200; SHA256 379cf7431ff6f6da37fa43664fae6313316d87ad50cec8c8d09703b46cf74059. Видимые gallery-карточки: Brazil from Sau Paolo to Buzios; Motorcycle Trip Across Brazil; Brazil: Little Mix; Brazil: Sao Paulo – Iguazu -Rio de Janeiro – Ilha Grande -Paraty; Brazil experience; Brazil: Sao Paulo – Iguazu -Rio de Janeiro – Buzios; Grand tour in Brazil",
+          "main src/content/destinations/sao-paulo.md, blob 210278eb158f9dd202bc4cddb45968e18b3d2557: approved destination_brazil_sao_paulo, /brazil/place/sao-paulo/. RU каталог https://adatours.ru/brazil/place/sao-paulo/tour/: HTTP 200; 13 туров 2026-2027 в Сан-Паулу (Бразилии) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан-Паулу. Оставить заявку ↗ 12 дней · Частный Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати Смотреть ↗ 13 дней Тур в Бразилию: Рио-де-Жанейро, Манаус, Сальвадор, Фос-ду-Игуасу Смотреть ↗ VIP 12 . routes.ts/[...path].astro отделяет Place, основной маршрут тура и самостоятельные экскурсии."
+        ],
+        "note": "Совпадает география каталога, присутствуют тематически близкие продукты, однако одинаковый полный состав и условия не подтверждены. EN gallery не равна доказанному полному динамическому списку; RU содержит расширенную актуальную подборку. REVIEW без назначения sameAs; нужна адресная сверка всех продуктов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:18:52.297Z",
+        "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 299,
+      "sourceUrl": "https://adatours.com/suchitoto/packages",
+      "sourceBatch": "en-015",
+      "sourceBatchBlobSha": "79ba4c6daac8a0a1a4c149473aa56a20c09b9ec5",
+      "original": {
+        "batchId": "en-015",
+        "batchSha": "79ba4c6daac8a0a1a4c149473aa56a20c09b9ec5",
+        "sourceUrl": "https://adatours.com/suchitoto/packages",
+        "inventoryPosition": 718,
+        "title": "Suchitoto Tours | Colonial Town on the Lake | Ada Tours",
+        "h1": "Suchitoto: Tours to the Colonial Town and Lake",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory #718: title «Suchitoto Tours | Colonial Town on the Lake | Ada Tours», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+          "EN HTTP 200/self canonical; H1 «Suchitoto: Tours to the Colonial Town and Lake». Одна карточка /the-best-of-el-salvador-2023. Текущий продукт отдельно прочитан: 6д/5н; дни San Salvador → San Andres/Joya de Ceren → Suchitoto → San Salvador/La Union → Fonseca Gulf → La Union/San Salvador.",
+          "RU HTTP 200 https://adatours.ru/el-salvador/place/suchitoto/tour/ — одна программа tour_source_luchshee_v_salvadore, 6д. main luchshee-v-salvadore.md: дни San Salvador → Cerro Verde/Flower Route → Tazumal/Casa Blanca/Santa Ana/Ataco → Joya de Ceren/San Andres/Suchitoto → Suchitoto/indigo → airport. Дней La Union/Fonseca в текущем маршруте нет."
+        ],
+        "note": "Кандидат каталога и шестидневного продукта требует редакционного решения: названия, длительность и часть посещений близки, но существенный маршрут изменен — RU Дорога цветов/индиго вместо EN Ла-Уньон/Фонсека. SameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:22:15.945Z",
+        "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 300,
+      "sourceUrl": "https://adatours.com/valdivia/packages",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "batchSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+        "sourceUrl": "https://adatours.com/valdivia/packages",
+        "inventoryPosition": 775,
+        "title": "Excursions and tours to Valdivia, Puerto Montt in Chile",
+        "h1": "Tours to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Excursions and tours to Valdivia, Puerto Montt in Chile», H1 «Tours to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTML HTTP 200, пакетный фильтр typeid=1&category_id=90 (Valdivia/Puerto Montt). productsjson по исходному datasrc возвращает products=[], total=0.",
+          "RU /chile/place/valdivia-puerto-montt/tour/ HTTP 200: 2 тура — «Патагония и Чилийские фьорды» 9 дней и VIP по Южной Америке 33 дня; source-index destination_chile_valdiviya_i_puerto_mont."
+        ],
+        "note": "EN-каталог пакетных туров пуст, действующий RU-каталог содержит 2 программы. Географический фильтр близок, но состав не совпадает; sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:21:55.122Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    }
+  ]
+}

@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvib4yya-sd3rdqazv2p",
-    "token": "reverse-lease-mvib4yya-gvvwpn0ubtb",
-    "generation": 1,
-    "claimedAt": "2026-10-21T16:09:40.529Z",
-    "expiresAt": "2026-10-21T17:39:40.529Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/oaxaca-city/packages",
@@ -323,7 +317,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: pageType=other, snapshotHttp=200, H1 «How Do You Plan a Pantanal Wildlife Photo Trip in 2026?», crawlReport adatours-com-crawl-002.json; snapshotFile не задан. Живой GET 21.10.2026 HTTP 200, self-canonical, H1 «How Do You Plan a Pantanal Wildlife Photo Trip in 2026?».",
+        "Живая статья Anna Avanesova, Published/Updated 17-09-2026: планирование фотопоездки, повторные полевые сессии, натуралисты, лодки и оборудование, жара, сезонность и невозможность гарантировать снимок ягуара. 10-дневная структура Cuiaba/Piuval/Taiama/Porto Jofre приведена как пример для согласования; у страницы нет самостоятельной фиксированной программы по дням с датами и ценой.",
+        "Проверен main src/content/destinations/pantanal.md, approved destination_brazil_pantanal; /brazil/place/pantanal/ HTTP 200 — самостоятельный природный регион. /brazil/place/pantanal/tour/ HTTP 200 — каталог 14 текущих маршрутов, /brazil/pantanal/ HTTP 200 — 2 экскурсии. Это страницы места/продуктовых подборок, а не идентичная статья о фотографической организации поездки."
+      ],
+      "note": "Публикация о планировании съемки в Пантанале не тождественна самому Пантаналу, любому туру по нему или каталогу. 10-дневный пример не выдан за отдельный подтвержденный продукт; sameAs-пара среди проверенных RU-кандидатов не подтверждена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:14.045Z",
+      "checkedBy": "reverse-worker-mvib4yya-sd3rdqazv2p",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/pantanal/excursions",
@@ -608,5 +613,7 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T16:17:11.554Z"
+  "updatedAt": "2026-10-21T16:17:14.045Z",
+  "completedAt": "2026-10-21T16:17:14.045Z",
+  "lastOwner": "reverse-worker-mvib4yya-sd3rdqazv2p"
 }

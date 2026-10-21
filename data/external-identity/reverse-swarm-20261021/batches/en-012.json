@@ -163,7 +163,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/peten/packages; canonical sourceUrl; H1 «Peten: Tours to the Maya Pyramids and Jungle». В полученном HTML 3 карточек: Central America Highlights ; Guatemala & Belize wonders ; Mayan World  2024.",
+        "main 50542db1: destination_guatemala_peten, approved, src/content/destinations/peten.md, canonical /guatemala/place/peten/. Регион Гватемалы с археологическими памятниками майя среди джунглей: Тикаль, Якша, Сейбал, Агуатека, Сан-Бартоло и Эль-Мирадор. Активных основных RU-туров с этим ID: 8; собственных экскурсий по destination: 0. Примеры RU: Мир Майя; Чудеса Гватемалы & Белиза; Гватемала, Гондурас и Белиз.",
+        "RU src/pages/[...path].astro и src/lib/tour-relations.ts: каталог основных туров использует routeDestinations ?? destinations, optional-tours отделен; экскурсионные каталоги формируются из активных Excursion. EN-географическое имя не доказывает равенство фильтра и состава."
+      ],
+      "note": "Не подтверждена идентичность EN-коллекции из 3 видимых карточек и текущего RU-каталога (8 основных туров). Страницу Place не принимаю за sameAs коллекции.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:15:42.235Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/peterman-islands/excursions",
@@ -386,5 +397,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:15:40.241Z"
+  "updatedAt": "2026-10-21T16:15:42.235Z"
 }

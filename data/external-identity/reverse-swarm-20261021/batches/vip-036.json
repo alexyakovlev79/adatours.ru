@@ -102,7 +102,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/6684abff08860556acde3eae.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/6684abff08860556acde3eae.html, SHA-256 1a4c128b53fbccd407c658007bca42ef4b9fbb2f970e0ca6aef1f43e12a7c65c, обход 2026-10-20T13:11:51+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Отель Windsor Miramar Palace Rio». Windsor Miramar Palace Rio — отель на набережной Копакабаны, бар на крыше и ресторан Ancoradouro; исходник описывает номера и гостиничные условия.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) поиск названия/бренда Windsor Miramar Palace не дал самостоятельной страницы этого отеля. В src/content.config.ts перечислены countries/destinations/tours/excursions/themes/cases/people/articles, отдельной гостиничной коллекции нет; маршрутизатор [...path].astro формирует detail этих туристических сущностей."
+      ],
+      "note": "Проверена карточка конкретного отеля Windsor Miramar Palace, Рио-де-Жанейро. Подтвержденной самостоятельной RU-страницы отеля в просмотренном текущем source-index нет. Географическая страница города и тур с возможным проживанием имеют другое назначение и не назначены 301-целью; полнота внешнего discovery не заявляется.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:23.345Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/windsor-palace?page=8",
@@ -275,5 +285,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:20.308Z"
+  "updatedAt": "2026-10-21T15:32:23.345Z"
 }

@@ -42,7 +42,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory: category, HTTP 200, title «Excursions and tours to Jericoacoara (seaside resort) in Brazil», H1 «Excursions to countries of Latin America», crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, self-canonical /jericoacoara/excursions; это экскурсионный каталог, а не страница курорта.",
+        "Актуальный main: src/content/destinations/jericoacoara.md, approved destination_brazil_jericoacoara, Бразилия, пляж/дюны/Lago Azul/Lago Paraiso. /brazil/place/jericoacoara/ HTTP 200; ожидаемый по src/lib/routes.ts экскурсионный каталог /brazil/jericoacoara/ отвечает HTTP 404."
+      ],
+      "note": "Действующий RU-каталог экскурсий Жерикоакоары не найден. Страница курорта не тождественна каталогу; sameAs не назначен. Наличие туров с дополнительным посещением курорта на странице места не создает отсутствующий каталог экскурсий.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:51:48.598Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/jericoacoara/packages",
@@ -325,5 +335,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:51:19.294Z"
+  "updatedAt": "2026-10-21T15:51:48.598Z"
 }

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {take,refresh,release,requireLease,applyEdits,checkArticleInvariant,finish,summarize,validateSubmitArgs} from '../scripts/interest-split-swarm-core.mjs';
+import {take,refresh,release,requireLease,applyEdits,checkArticleInvariant,finish,summarize,validateSubmitArgs,reopenReview} from '../scripts/interest-split-swarm-core.mjs';
 const owner='editor-agent-123456',token='lease-unique-123456',nextOwner='editor-agent-abcdef',nextToken='lease-unique-abcdef';
 const first=()=>({schemaVersion:1,lane:0,items:[
  {id:'seo-0001',lane:0,url:'/interests/wildlife/',path:'data/seo-geo/articles/interests/wildlife/index.md',status:'queued',attempts:0},
@@ -49,4 +49,21 @@ test('submit requires explicit semantic evidence and source CAS sha',()=>{
  assert.doesNotThrow(()=>validateSubmitArgs(base));
  assert.throws(()=>validateSubmitArgs({...base,items:[{...base.items[0],note:'fine'}]}),/explanation/);
  assert.throws(()=>validateSubmitArgs({...base,items:[{...base.items[0],decision:'edited'}]}),/nonempty/);
+});
+
+test('coordinator reopens a REVIEW by CAS timestamp and preserves audit history',()=>{
+ const s=first();
+ take(s,{ownerId:owner,token,limit:1,nowMs:t});
+ finish(s,{ownerId:owner,token,nowMs:t+1000,results:[{
+   id:'seo-0001',decision:'review',
+   note:'Need explicit source evidence for a claimed wildlife encounter.',
+   sourceSha:null,resultSha:null
+ }]});
+ const row=s.items[0],oldAt=row.completedAt;
+ assert.throws(()=>reopenReview(s,{id:'seo-0001',expectedCompletedAt:'wrong',reason:'Reviewed independently and found an updated primary source.',nowMs:t+2000}),/changed/);
+ reopenReview(s,{id:'seo-0001',expectedCompletedAt:oldAt,
+  reason:'Reviewer located an explicit current itinerary and can now make the decision.',nowMs:t+2000});
+ assert.equal(row.status,'queued');
+ assert.equal(row.reviewHistory.length,1);
+ assert.equal(row.reviewHistory[0].reviewedAt,oldAt);
 });

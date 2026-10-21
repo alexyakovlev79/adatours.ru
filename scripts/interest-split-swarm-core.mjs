@@ -101,6 +101,16 @@ export function finish(state,{ownerId,token,results,nowMs}) {
   }
   return rows;
 }
+export function reopenReview(state,{id,expectedCompletedAt,reason,nowMs}) {
+  if(typeof reason!=='string'||reason.trim().length<28)throw Error('Coordinating editor must explain why a REVIEW is reopened');
+  const task=state.items.find(x=>x.id===id);
+  if(!task||task.status!=='review'||task.completedAt!==expectedCompletedAt)throw Error('REVIEW has changed; re-read current shard before reopening');
+  task.reviewHistory=[...(task.reviewHistory||[]),{note:task.note,checkedBy:task.checkedBy,
+    sourceSha:task.sourceSha,reviewedAt:task.completedAt,reopenedAt:utc(nowMs),reason}];
+  task.status='queued';task.ownerId=null;task.token=null;task.claimedAt=null;task.leaseUntil=null;
+  task.decision=null;task.note=null;task.sourceSha=null;task.resultSha=null;task.completedAt=null;task.checkedBy=null;
+  return task;
+}
 export function summarize(states) {
   const out={total:0,queued:0,leased:0,done:0,review:0};
   for(const state of states){for(const item of state.items){out.total++;if(!(item.status in out))throw Error('Unrecognized swarm status: '+item.status);out[item.status]++;}}

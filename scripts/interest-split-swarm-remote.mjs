@@ -164,6 +164,21 @@ async function submit(tools,core,request,manifest) {
     }
   }
 }
+async function requeueReview(tools,core,request,manifest) {
+  const lane=request.lane,path=core.shardPath(lane);
+  if(!Number.isInteger(lane)||lane<0||lane>=manifest.shardCount)throw Error('Invalid lane');
+  for(let attempt=0;attempt<3;attempt++) {
+    const previous=await file(tools,path),state=JSON.parse(previous.content);
+    const row=core.reopenReview(state,{id:request.id,expectedCompletedAt:request.expectedCompletedAt,
+      reason:request.reason,nowMs:Date.now()});
+    try {
+      const write=unwrap(await tools.mcp__GitHub__update_file({repository_full_name:REPO,
+        path,branch:BRANCH,sha:previous.sha,content:JSON.stringify(state,null,2)+'\n',
+        message:'chore(interest-swarm): requeue reviewed '+row.id+' [skip ci]'}));
+      return {status:'requeued',lane,id:row.id,commit:write.commit_sha};
+    }catch(error) { if(attempt===2)throw Error('Review CAS contention: '+String(error)); }
+  }
+}
 async function status(tools,core,request,manifest) {
   const from=request.from??0,count=Math.min(4,request.count??4);
   if(!Number.isInteger(from)||from<0||from>=manifest.shardCount)throw Error('Invalid status start');
@@ -180,5 +195,6 @@ export async function runInterestSplitSwarm(tools,core,request) {
   if(request.action==='claim')return claim(tools,core,request,manifest);
   if(request.action==='renew'||request.action==='release')return leaseChange(tools,core,request,manifest,request.action);
   if(request.action==='submit')return submit(tools,core,request,manifest);
+  if(request.action==='requeue_review')return requeueReview(tools,core,request,manifest);
   throw Error('Unknown swarm action '+request.action);
 }

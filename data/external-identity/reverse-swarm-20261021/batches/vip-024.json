@@ -82,7 +82,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/0ab87ec56b9ef878d630545f.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/tours/page/2/",
+      "evidence": [
+        "Frozen VIP inventory position 1094: /package?page=2, title/H1 «Package», snapshotHttp=200, категория tour_candidate — страница 2 общего списка туров.",
+        "RU src/pages/[...path].astro создает непустой каталог /tours/, а src/lib/catalog-pagination.ts генерирует /tours/page/2/ при активных Tour, CATALOG_PAGE_SIZE=30; сохраняются тип и номер страницы."
+      ],
+      "note": "Только соответствие общего назначения каталога и номера пагинации; равенство прежнего состава туров не заявлено. Цель для будущего 301.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:56:02.349Z",
+      "checkedBy": "reverse-worker-mvi83xgd-3cwif9g4q3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package?page=3",
@@ -345,5 +355,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:55:58.504Z"
+  "updatedAt": "2026-10-21T14:56:02.349Z"
 }

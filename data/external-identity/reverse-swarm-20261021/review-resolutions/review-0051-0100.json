@@ -2104,7 +2104,64 @@
         "batchBlobSha": "3587016428615b36cdf38027ecdfcf330253a796",
         "reviewOrder": 79
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "disposition": "gone_410",
+        "recommendedHttpStatus": 410,
+        "relation": null,
+        "ruUrl": "",
+        "targetId": null,
+        "comparedId": "tour_source_belosnezhnye_zhemchuzhiny_brazilii",
+        "targetContentPath": "src/content/tours/belosnezhnye-zhemchuzhiny-brazilii.md",
+        "targetBlobSha": "4a0d20efe263f4f7ed5c416b1282dfc1c2d81fa8",
+        "confidence": 0.96,
+        "accepted": true,
+        "basis": "retire",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.699Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/belosnezhnye-zhemchuzhiny-brazilii → HTTP 200, title «Пляжный тур в Бразилию на 10 дней», 68458 байт, SHA-256 d7585758a86b93f346d9fa0b7ab4a57f291df24f60c12ba9ef74fdc7bf63e06f. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/belosnezhnye-zhemchuzhiny-brazilii.md, blob 4a0d20efe263f4f7ed5c416b1282dfc1c2d81fa8: archived, tour_source_belosnezhnye_zhemchuzhiny_brazilii; сопоставленный продукт архивирован.",
+          "10-дневный пляжный маршрут Ресифи → Порту-де-Галиньяс → Фернанду-ди-Норонья совпадает с RU-архивом. Активной равнозначной программы не установлено."
+        ],
+        "note": "Принято редакционное решение: закрыть старое предложение кодом 410 при отдельном внедрении. Подтвержденной активной пары нет; 410 сейчас не включен.",
+        "liveSource": {
+          "key": "source-79",
+          "url": "https://vipdeluxetravel.ru/belosnezhnye-zhemchuzhiny-brazilii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/belosnezhnye-zhemchuzhiny-brazilii",
+          "sha256": "d7585758a86b93f346d9fa0b7ab4a57f291df24f60c12ba9ef74fdc7bf63e06f",
+          "bytes": 68458,
+          "title": "Пляжный тур в Бразилию на 10 дней",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/belosnezhnye-zhemchuzhiny-brazilii\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Ресифи",
+            "День 2: Ресифи",
+            "День 3: Порту де Галиньяс",
+            "День 4: Порту де Галиньяс",
+            "День 5: Порту де Галиньяс - Фернанду ди Норонья",
+            "День 6: Фернанду ди Норонья",
+            "День 7: Дайвинг",
+            "День 8-9: Фернанду ди Норонья",
+            "День 10: Фернанду ди Норонья"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_belosnezhnye_zhemchuzhiny_brazilii",
+          "url": "https://adatours.ru/brazil/tour/brazil-beach-tour-10-days/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/brazil/tour/brazil-beach-tour-10-days/",
+          "sha256": "4d56f926d0802d48fd3201f5f92e7c4753b78a8080650a6910b0704368f29303",
+          "bytes": 86708,
+          "title": "Тур Пляжный тур в Бразилию на 10 дней по цене от $4 448 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/brazil/tour/brazil-beach-tour-10-days/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 80,
@@ -2809,9 +2866,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:22.247Z",
+  "updatedAt": "2026-10-21T16:35:23.927Z",
   "progress": {
-    "resolved": 28,
+    "resolved": 29,
     "total": 50
   }
 }

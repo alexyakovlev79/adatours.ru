@@ -352,7 +352,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN GET 21.10.2026 HTTP 200: /french-guyana-en/excursions имеет общий H1 «Excursions to countries of Latin America», без карточек экскурсий.",
+        "GET https://adatours.ru/french-guiana/excursion/ вернул HTTP 404; текущий country ID country_french_guiana относится к Французской Гвиане, а ее действующий tour-каталог имеет другой тип."
+      ],
+      "note": "Пустому экскурсионному EN-каталогу не найдена действующая RU-пара того же типа. Каталог трех многодневных туров и страница страны не подменяют экскурсии; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:18.668Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/french-guyana-en/packages",
@@ -435,5 +445,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:42:16.238Z"
+  "updatedAt": "2026-10-21T15:42:18.668Z"
 }

@@ -488,7 +488,18 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/8f913e57384ec9f4924cb066.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/rio-de-janeiro/santa-teresa-corcovado-jeep-tour/",
+      "evidence": [
+        "VIP GET HTTP 200: H1 «Джип тур на Санта-Терезу и Корковадо», Бразилия → Рио-де-Жанейро в breadcrumbs, карточка Excursion, код 128. Архив и текущий HTML подтверждают эту комбинацию района, горы и джип-формата, но tab-description пуст.",
+        "Frozen snapshots/8f913e57384ec9f4924cb066.html, SHA-256 7776258a56c351716c3eabdec90ade73cf562761ddeca77de753cf549c77627c; snapshotHttp 200, pageType excursion_candidate, title «Джип тур на Санта-Терезу и Корковадо». Архивный HTML извлечен и контрольная сумма подтверждена.",
+        "Цель открыта HTTP 200 с совпадающим canonical; approved excursion_source_dzhip_tur_na_santa_terezu_i_korkovado, src/content/excursions/dzhip-tur-na-santa-terezu-i-korkovado.md (main e21d06ae). Предмет — джип-тур Санта-Тереза + Корковадо в Рио; RU описывает район художников и посещение статуи Христа."
+      ],
+      "note": "Подготовлен кандидат для будущего 301 по точному экскурсионному назначению и географии. Пустое VIP-описание не дает доказательства всех условий/длительности; 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T16:23:28.938Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 2
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/zaliv-guanabara-morskaya-progulka",
@@ -551,7 +562,7 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:23:26.568Z",
+  "updatedAt": "2026-10-21T16:23:28.938Z",
   "leaseHistory": [
     {
       "ownerId": "reverse-worker-mvi83xgd-3cwif9g4q3",

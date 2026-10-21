@@ -610,7 +610,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Sao Paulo City Excursions | Museums, Dining & Shopping | Ada Tours; H1 Sao Paulo: Sightseeing Excursions in the Megacity; category_ids=[\"66\"]; adatours-com-crawl-002.json index 269; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/sao-paulo/excursions: HTTP 200; SHA256 08d6a422d2d1e8dacbecec6f9834c9f60299fefd55d8418d52a91d7f0aab1b8d. Видимые gallery-карточки: Sao Paulo City tour",
+        "main src/content/destinations/sao-paulo.md, blob 210278eb158f9dd202bc4cddb45968e18b3d2557: approved destination_brazil_sao_paulo, /brazil/place/sao-paulo/. RU каталог https://adatours.ru/brazil/sao-paulo/: HTTP 200; 9 экскурсий в Сан-Паулу, Бразилия - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Экскурсии Ada Tours: Сан-Паулу, Бразилия. Оставить заявку ↗ Полдня Сан-Паулу: обзорная экскурсия на полдня с гидом Сегодня вас ждет полудневная обзорная экскурсия по Сан-Паулу в сопровождении англоговорящего гида. Билеты включены. Смотреть ↗ 4 часа · Индивидуальная экскурс. routes.ts/[...path].astro отделяет Place, основной маршрут тура и самостоятельные экскурсии."
+      ],
+      "note": "Совпадает география каталога, присутствуют тематически близкие продукты, однако одинаковый полный состав и условия не подтверждены. EN gallery не равна доказанному полному динамическому списку; RU содержит расширенную актуальную подборку. REVIEW без назначения sameAs; нужна адресная сверка всех продуктов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:50.051Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/sao-paulo/packages",
@@ -623,5 +634,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:18:46.202Z"
+  "updatedAt": "2026-10-21T16:18:50.051Z"
 }

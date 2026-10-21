@@ -122,7 +122,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/2b773a642541e7bb25d412af.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/2b773a642541e7bb25d412af.html, SHA-256 8e56e8cc6d35566fb9fb9986dbcf8ea0e9cb2f38e9458089f7a6cbdb7f614d04, обход 2026-10-20T13:12:07+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Отель Windsor Palace Rio». Windsor Palace Rio — отдельный отель в двух кварталах от Копакабаны; бассейн на крыше, номера с видом на море, улучшенные номера с джакузи и люксы с сауной.",
+        "Проверены актуальные main source-index каталоги destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf): самостоятельной страницы Windsor Palace по названию/бренду не установлено. В src/content.config.ts нет hotel collection, маршрутизатор [...path].astro не выделяет hotel detail; общий тур/город не доказывает соответствия гостинице."
+      ],
+      "note": "Проверена самостоятельная карточка Windsor Palace; география исходника: Рио-де-Жанейро. Подтвержденная текущая RU-страница именно этой гостиницы в просмотренном source-index не найдена. Другой отель той же сети, туристический город и тур с возможным размещением не назначены 301-целью.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:51.976Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/windsor-plaza-copacabana?page=8",
@@ -285,5 +295,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:23.345Z"
+  "updatedAt": "2026-10-21T15:32:51.976Z"
 }

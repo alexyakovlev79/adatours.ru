@@ -508,7 +508,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /bocas-del-toro/packages self canonical; H1 Bocas del Toro: Tours to the Surfing & Adventure Archipelago. 5 карточек: Adventures in Panama, Luxury Panama (/luxury-panama), The Best of Panama, A grand journey through Panama, Luxury Panama (/luxury-tour-panama-city-bocas-del-toro-boquete-12-days). SHA-256 41c42eb761e043da3e77c1cfd0907d3936aa2953078c5e3ca22d68138be00a65.",
+        "RU live HTTP200 /panama/place/bocas-del-toro/tour/ self canonical, 3 тура: Люксовая Панама12д, Лучшее в Панаме11д, Панама16д. Stable IDs tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru, tour_source_luchshee_v_paname, tour_source_panama_2024. SHA-256 9045fd79be575c5685172bafd4db70ae9bbf50155a7492be81d1e1bf7b15388f.",
+        "Frozen EN category_id159, snapshotHttp200, snapshotFile отсутствует; geographic filter destination_panama_bokas_del_toro близок, но 5 источников/3 RU-продукта не образуют доказанный равный состав."
+      ],
+      "note": "Каталоги Бокас-дель-Торо имеют разное число и набор карточек; две разные EN-ссылки с одинаковым названием Luxury Panama не склеиваются по одному заголовку. sameAs каталогов не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:48:01.595Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bogota-city-tour",
@@ -571,5 +582,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:47:35.320Z"
+  "updatedAt": "2026-10-21T15:48:01.595Z"
 }

@@ -171,7 +171,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP 200 /belize-en/excursions self canonical, H1 Belize Excursions: Authentic Experiences with Local Guides. 3 карточки: Belize City Tour, Belize Zoo Tour, Caracol & Rio Frio Cave & Pools. SHA-256 8a80d8572b583ef739b65127a0c667b328a915e96362ecd60d74d8d2b1850b8c.",
+        "RU live HTTP 200 /belize/excursion/, self canonical, H1 4 экскурсии в Белиз. Состав: полёт над Голубой дырой, Каракол/Рио-Фрио/Рио-Он, дополнительный Каракол из Хидден-Вэлли, прогулка Хидден-Вэлли. SHA-256 ad9ba00fc65bce9f0272d1e3715dcafeeaceab9eda1579f589e557ae2c706e93.",
+        "Frozen inventory category, HTTP 200, category_id 32, snapshotFile отсутствует; географический фильтр Белиз совпадает, но городской обзор/зоопарк отсутствуют в RU, а RU-полёт/Хидден-Вэлли — в EN."
+      ],
+      "note": "Национальные каталоги экскурсий имеют разный состав: 3 EN против 4 RU. Общая страна и частичное пересечение по Караколу не доказывают sameAs; требуется редакционное решение.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:39.473Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-en/packages",
@@ -394,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:02.977Z"
+  "updatedAt": "2026-10-21T15:38:39.473Z"
 }

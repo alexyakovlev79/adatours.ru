@@ -542,7 +542,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, конечный https://adatours.com/asuncion/packages; title Asuncion Tours | Capital of Paraguay, History & Culture; H1 Asuncion: Tours to the Capital of Paraguay, Museums, Historic Center. Фильтр from=category&page=isPackageCategory&typeid=1&category_id=115&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=cities&excludes%5B3%5D=excursions&excludes%5B4%5D=themes. SHA-256 300e20686fae3d94fd5b6829b06ee6171c06d5253720f4debe6701736cd4b19e. Frozen inventory: category_ids=[\"115\"], page_type=category; приватный HTML-снимок для этого EN URL не предоставлен.",
+        "Проверен RU-кандидат https://adatours.ru/paraguay/place/asuncion/tour/: GET 200, конечный https://adatours.ru/paraguay/place/asuncion/tour/, canonical https://adatours.ru/paraguay/place/asuncion/tour/. RU содержит 2 тура: Уругвай и Парагвай (16 дней) и «Парагвай 2023» (8 дней). EN-превью Uruguay & Paraguay Tour: Hidden Gems и Tour of Paraguay 2024 похожи по названию, но текущие программы/условия и полный состав выдачи не сверены до тождества; годы вариантов различаются. География сопоставлена с destination_paraguay_asunson в source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 и маршрутизатором src/lib/routes.ts."
+      ],
+      "note": "Каталог тематически/географически близок, но полное тождество фильтра и всех активных программ EN/RU не доказано. Статические EN-превью не заменяют динамическую выдачу; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:41:02.325Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/banos/excursions",
@@ -575,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:40:47.955Z"
+  "updatedAt": "2026-10-21T15:41:02.325Z"
 }

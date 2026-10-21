@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9c6r7-ij5ljbuti",
-    "token": "reverse-lease-mvi9c6r7-4dxoanntipi",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:19:11.619Z",
-    "expiresAt": "2026-10-21T16:49:11.619Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-colonna-park?page=3",
@@ -631,8 +625,21 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/acd581abf9225894d6d6f13e.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Просмотрен приватный HTML snapshots/acd581abf9225894d6d6f13e.html; SHA-256 420aca74bee79b036ac68b1df0cbc6830d3a547d98ad7b9344427379fb64f90d проверен. Title/H1: Отель Pestana Rio Atlantica. Pestana Rio Atlantica / Pestana Rio Atlântica — гостиница непосредственно на Копакабане в Рио: стеклянное здание, в снимке 103 номера и 113 апартаментов, бассейн на крыше, ресторан португальской кухни, собственные условия размещения детей.",
+        "Проверены текущие source-index каталоги main: destinations (1018 записей, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b), tours (397, 5d0662b6b1589951c684b2c44ea1093b182ce9bf), excursions (416, 402b7d42c61bc17709c1ae07fc92dfa32ee08327). Отдельной сущности с этим названием/ID/aliases не найдено. В src/content и src/pages/[...path].astro нет коллекции/маршрута отелей; страницы города и туры не являются карточкой конкретного отеля.",
+        "HTML canonical: https://vipdeluxetravel.ru/pestana-rio-atlantica-hotel; query остаётся частью source URL. В frozen inventory нет второй записи с тем же canonical, технический дубль не подтвержден. Не тождественна Pestana Angra Beach Bungalows в Ангре и не тождественна пляжу Копакабана. В каталоге RU самостоятельный объект Pestana Rio Atlântica не найден."
+      ],
+      "note": "Не найдена подтвержденная самостоятельная RU-карточка «Отель Pestana Rio Atlantica». Страница города/курорта или тур с проживанием не заменяет карточку и бронирование конкретного отеля; 301 не назначен. Проверен сохраненный HTML, без заявления о сегодняшнем HTTP.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:27:59.612Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:27:46.183Z"
+  "updatedAt": "2026-10-21T15:27:59.612Z",
+  "completedAt": "2026-10-21T15:27:59.612Z",
+  "lastOwner": "reverse-worker-mvi9c6r7-ij5ljbuti"
 }

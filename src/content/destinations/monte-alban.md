@@ -8,9 +8,8 @@ countryId: country_mexico
 destinationType: city
 summary: Археологический комплекс сапотеков на вершине горы над Оахакой.
 hero:
-  src: /media/tours/viva-meksika/monte-alban-generated-20261010-v1.webp
-  hover: "Монте-Альбан: низкие ступенчатые сооружения над долиной Оахаки"
-  alt: "Каменные платформы Монте-Альбана вокруг травянистой площади, Мексика"
+  src: "/media/destinations/monte-alban/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Монте-Альбан — иллюстрация"
 gallery: []
 themes:
 - theme_culture

@@ -9,10 +9,9 @@ destinationType: route_cluster
 summary: Национальный музей антропологии в Мехико знакомит с цивилизациями Мезоамерики и культурой народов современной
   Мексики.
 hero:
-  src: /media/tours/mexico-religious-journey/anthropology-museum-generated-20261011-v1.webp
-  alt: "Фонтан под широким навесом во дворе Национального музея антропологии, Мехико, Мексика"
-  hover: "Музей антропологии в Мехико: вода стекает вокруг резной опоры навеса"
-  status: approved
+  src: "/media/destinations/national-museum-of-anthropology/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Национальный музей антропологии — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

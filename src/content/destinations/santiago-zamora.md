@@ -8,9 +8,8 @@ countryId: country_guatemala
 destinationType: city
 summary: Сантьяго-Самора возле Антигуа в Гватемале, поселение для знакомства с культурой майя-какчикель и ручным текстилем.
 hero:
-  src: /media/tours/mir-majya/santiago-zamora-place-generated-20261009-v1.webp
-  hover: "Сантьяго-Самора: ремесленницы и тканые изделия"
-  alt: "Две ремесленницы рассматривают сложенные разноцветные ткани на столе во дворе Сантьяго-Саморы, Гватемала"
+  src: "/media/destinations/santiago-zamora/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Сантьяго-Самора — иллюстрация"
 gallery: []
 themes:
 - theme_culture

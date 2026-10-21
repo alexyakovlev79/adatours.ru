@@ -1,6 +1,6 @@
 # Третья партия 50 индивидуальных hero — 21 октября 2026
 
-Подключено 10 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
+Подключено 20 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
 
 | № | Страница | Статус |
 |---|---|---|
@@ -14,16 +14,16 @@
 | 8 | [Чичикастенанго](https://adatours.ru/guatemala/place/chichicastenango/) | Подключено, S3 проверен |
 | 9 | [Мангровые заросли Монтеррико](https://adatours.ru/guatemala/place/monterrico-mangroves/) | Подключено, S3 проверен |
 | 10 | [Центр охраны черепах Монтеррико](https://adatours.ru/guatemala/place/monterrico-turtle-conservation-center/) | Подключено, S3 проверен |
-| 11 | [Вулкан Пакайя](https://adatours.ru/guatemala/place/pacaya-volcano/) | Сгенерировано |
-| 12 | [Сантьяго-Самора](https://adatours.ru/guatemala/place/santiago-zamora/) | Сгенерировано |
-| 13 | [Якша](https://adatours.ru/guatemala/place/yaxha/) | Сгенерировано |
-| 14 | [Сантуарио Гваделупы](https://adatours.ru/mexico/place/basilica-of-guadalupe/) | Сгенерировано |
-| 15 | [Чичен-Ица](https://adatours.ru/mexico/place/chichen-itza/) | Сгенерировано |
-| 16 | [Мерида](https://adatours.ru/mexico/place/merida/) | Сгенерировано |
-| 17 | [Кафедральный собор Мехико](https://adatours.ru/mexico/place/mexico-city-metropolitan-cathedral/) | Сгенерировано |
-| 18 | [Сокало Мехико](https://adatours.ru/mexico/place/mexico-city-zocalo/) | Сгенерировано |
-| 19 | [Монте-Альбан](https://adatours.ru/mexico/place/monte-alban/) | Сгенерировано |
-| 20 | [Национальный музей антропологии](https://adatours.ru/mexico/place/national-museum-of-anthropology/) | Сгенерировано |
+| 11 | [Вулкан Пакайя](https://adatours.ru/guatemala/place/pacaya-volcano/) | Подключено, S3 проверен |
+| 12 | [Сантьяго-Самора](https://adatours.ru/guatemala/place/santiago-zamora/) | Подключено, S3 проверен |
+| 13 | [Якша](https://adatours.ru/guatemala/place/yaxha/) | Подключено, S3 проверен |
+| 14 | [Сантуарио Гваделупы](https://adatours.ru/mexico/place/basilica-of-guadalupe/) | Подключено, S3 проверен |
+| 15 | [Чичен-Ица](https://adatours.ru/mexico/place/chichen-itza/) | Подключено, S3 проверен |
+| 16 | [Мерида](https://adatours.ru/mexico/place/merida/) | Подключено, S3 проверен |
+| 17 | [Кафедральный собор Мехико](https://adatours.ru/mexico/place/mexico-city-metropolitan-cathedral/) | Подключено, S3 проверен |
+| 18 | [Сокало Мехико](https://adatours.ru/mexico/place/mexico-city-zocalo/) | Подключено, S3 проверен |
+| 19 | [Монте-Альбан](https://adatours.ru/mexico/place/monte-alban/) | Подключено, S3 проверен |
+| 20 | [Национальный музей антропологии](https://adatours.ru/mexico/place/national-museum-of-anthropology/) | Подключено, S3 проверен |
 | 21 | [Национальный дворец Мехико](https://adatours.ru/mexico/place/national-palace-mexico-city/) | Зарезервировано |
 | 22 | [Базилика Богоматери Окотлан](https://adatours.ru/mexico/place/ocotlan-basilica/) | Зарезервировано |
 | 23 | [Церковь Санта-Приска в Таско](https://adatours.ru/mexico/place/santa-prisca-taxco/) | Зарезервировано |

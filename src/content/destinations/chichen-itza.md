@@ -12,9 +12,8 @@ searchAliases:
 themes:
 - theme_culture
 hero:
-  src: /media/destinations/destination_mexico_chichen_ica/hero-generated-20261008.webp
-  hover: "Чичен-Ица в Мексике: древняя пирамида над травянистой площадью"
-  alt: "Ступенчатая пирамида с длинной лестницей на зеленой площади Чичен-Ицы, Мексика"
+  src: "/media/destinations/chichen-itza/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Чичен-Ица — иллюстрация"
 gallery: [{"src": "/media/tours/meksika-yuzhnoe-priklyuchenie-kratkij-marshrut/itinerary-5-images-0-src-enhanced-20261007.webp", "alt": "Ступенчатая пирамида с храмом на вершине в Чичен-Ице, Мексика", "hover": "Чичен-Ица: каменная пирамида на зелёной площади"}, {"src": "/media/tours/meksika-lindo/itinerary-5-images-0-src-regenerated-20261011-v2.webp", "alt": "Ступенчатая пирамида Чичен-Ицы с храмом на вершине и травяной площадкой у основания, Мексика", hover: "Чичен-Ица: каменная пирамида в вечернем свете"}]
 relatedDestinations: []
 featuredTours: []

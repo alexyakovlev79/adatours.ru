@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvib5fjy-rs5rsfvrep",
-    "token": "reverse-lease-mvib5fjy-1hw7j3ga3q7",
-    "generation": 1,
-    "claimedAt": "2026-10-21T16:10:06.996Z",
-    "expiresAt": "2026-10-21T17:40:06.996Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/penguins-punta-arenas",
@@ -622,8 +616,20 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026 HTTP 200: H1 Privacy Policy, link rel=canonical отсутствует. Текст регулирует сбор данных пользователей сайта adatours.com: учетные записи/восстановление пароля, имя/email/телефон/почтовый адрес, cookies/sessions, рассылки и анализ использования.",
+        "main 50542db1: src/pages/privacy/index.astro, RU /privacy/, — отдельная политика сайта adatours.ru. Названы ADA TOURS 2007 - OPERADORA DE TURISMO LTDA, CNPJ 08.537.782/0001-04 и технический cookie adatours_cookie_notice сроком до года; содержание не является переводом EN-политики."
+      ],
+      "note": "Одинаковая функция legal-страниц и компания не означают идентичность документа: политики относятся к разным сайтам, содержат разные положения. Подтвержденной точной sameAs-пары нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:43.537Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T16:17:40.656Z"
+  "updatedAt": "2026-10-21T16:17:43.537Z",
+  "completedAt": "2026-10-21T16:17:43.537Z",
+  "lastOwner": "reverse-worker-mvib5fjy-rs5rsfvrep"
 }

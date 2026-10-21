@@ -316,7 +316,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: Excursions and tours in San José, the capital of Costa Rica; H1 Excursions to countries of Latin America; category_ids=[\"52\"]; adatours-com-crawl-002.json index 248; HTTP 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/san-jose/excursions: HTTP 200; SHA256 a43785b09487c9feafa20be3eb41e56a047dbee2c1376982baa067b3121f6fca. H1 Excursions to countries of Latin America; в gallery нет карточек выбранного города.",
+        "main src/content/destinations/san-hose.md, blob 12b44578a7b32ea3cccb1ffcb32f5463e5ef8dea: approved destination_costa_rica_san_hose, /costa-rica/place/san-jose/. RU каталог https://adatours.ru/costa-rica/san-jose/: HTTP Error 404: Not Found."
+      ],
+      "note": "Действующий предметный RU каталог экскурсий по каноническому маршрутизатору отвечает 404. Approved Place этого же города имеет другой тип и назначение; EN /excursions нельзя признать sameAs Place по одной географии.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:24.798Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/san-jose/packages",
@@ -480,5 +491,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:17:22.562Z"
+  "updatedAt": "2026-10-21T16:17:24.798Z"
 }

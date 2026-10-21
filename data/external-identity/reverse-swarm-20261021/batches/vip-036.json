@@ -342,7 +342,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/66213bff7daa2a5b5b597541.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/66213bff7daa2a5b5b597541.html, SHA-256 ebcc15fb704be778e2e02b4843927360506d755e05efe2c67fb14c2281234c86, обход 2026-10-20T13:14:51+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Enotel Resort and Spa». Enotel Porto de Galinhas Resort & Spa — средство размещения группы Estevão Neves в Ипожука, Порту-ди-Галиньяш; all inclusive, 2,5 км от города и 57 км от аэропорта Ресифи, территория 70 000 м².",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) самостоятельная страница Enotel Resort and Spa по названию/бренду не установлена. src/content.config.ts не содержит hotel collection; [...path].astro не формирует отдельный hotel detail. География города и другие туристические продукты не заменяют гостиничную сущность."
+      ],
+      "note": "Проверена отдельная гостиничная карточка Enotel Resort and Spa, Порту-ди-Галиньяш / Ипожука. Подтвержденная самостоятельная RU-страница именно этого объекта в просмотренном текущем source-index не установлена. Общий Place, тур с возможным проживанием и другой отель не назначены 301-целью; текущая работоспособность самого отеля не оценивалась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:51.681Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/gt-porto-bali?page=1",
@@ -395,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:49.416Z"
+  "updatedAt": "2026-10-21T15:33:51.681Z"
 }

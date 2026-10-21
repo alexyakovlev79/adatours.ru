@@ -182,7 +182,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, конечный https://adatours.com/ambergris-caye/excursions; title Tours to Ambergris  Caye & Vacation packages | Guided trips to Belize  with Ada Tours; H1 Excursions to countries of Latin America. Фильтр from=category&page=isExcursionCategory&typeid=2&category_id=33&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. SHA-256 7dc417399ce737c24eb5e8d2ffd9305e1b1a2ca67c2ad1d4bbf9690c4d7dffb5. Frozen inventory: category_ids=[\"33\"], page_type=category; приватный HTML-снимок для этого EN URL не предоставлен.",
+        "Проверен RU-кандидат https://adatours.ru/belize/ambergris-caye/: GET 404, конечный https://adatours.ru/belize/ambergris-caye/, canonical https://adatours.ru/404.html. Каталог экскурсий не существует; страница Place Амбергрис-Кайе имеет другой тип. География сопоставлена с destination_belize_ambergris_kaje в source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 и маршрутизатором src/lib/routes.ts."
+      ],
+      "note": "Точный однотипный RU-каталог по проверенному штатному маршруту отсутствует (HTTP 404). Place/страна не подставлена вместо коллекции. Подтвержденной пары sameAs не найдено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:37:31.223Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/ambergris-caye/packages",
@@ -395,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:36:55.479Z"
+  "updatedAt": "2026-10-21T15:37:31.223Z"
 }

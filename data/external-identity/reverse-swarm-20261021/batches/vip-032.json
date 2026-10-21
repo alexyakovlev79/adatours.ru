@@ -522,7 +522,17 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/8fef4c12bdf894b1a6bf0076.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/8fef4c12bdf894b1a6bf0076.html, SHA-256 dc5886c568a79d4a4f25af1a1062c2358a0f4dfd91faa78e83ee8875bc4f01fd, обход 2026-10-20T12:47:06+00:00: product_id=4062: шестичасовая поездка из отеля с гидом и водителем в Прайя-ду-Форте, около 85 км от Салвадора; морские черепахи, руины Гарсия-де-Авила и прогулки по деревне; цена по запросу.",
+        "Прочитан main src/content/destinations/praia-do-forte.md, ID destination_brazil_praia_do_forte, status approved, /brazil/place/praia-do-forte/: тот же курорт, расстояние 85 км, черепахи и Гарсия-де-Авила. Это Place без шестичасовой экскурсионной программы; соответствующего продукта в source-index экскурсий нет. Каталоги source-index main: excursions blob 402b7d42c61bc17709c1ae07fc92dfa32ee08327; destinations blob cdfbc9f04396ba9db825d26d663a09a416d91f2b."
+      ],
+      "note": "Само место совпадает, но RU-страница предлагает описание курорта, не шестичасовую поездку из Салвадора с гидом и водителем. Нужен редакционный выбор допустимости 301 на Place либо отдельного решения по продукту; автоматическая цель не назначена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:26:57.114Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=4&product_id=3932",
@@ -565,5 +575,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:26:51.572Z"
+  "updatedAt": "2026-10-21T15:26:57.114Z"
 }

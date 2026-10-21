@@ -400,7 +400,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Excursions and tours to the San Pedro de Atacama Desert in Chile; H1 Excursions to countries of Latin America; category_ids=[\"256\"]; adatours-com-crawl-002.json index 254; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/san-pedro-de-atacama/excursions: HTTP 200; SHA256 fce8e57a792b4511ae6e67d095775fc54145832648a7b4195b64c00982ea7b22. В статическом HTML нет предметных gallery-карточек; заголовок общий Latin America. Отсутствие gallery не считается доказательством отсутствия динамических продуктов. Фильтр EN category_id 256, isExcursionCategory/typeid=2.",
+        "main src/content/destinations/san-pedro-de-atakama.md, blob 2ee5ac79c554e30d09be11fc96463c2a28a846e5: approved destination_chile_san_pedro_de_atakama, /chile/place/san-pedro-de-atacama/. RU каталог https://adatours.ru/chile/san-pedro-de-atacama/: HTTP 200; 11 экскурсий в Сан-Педро-де-Атакаме, Чили - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Экскурсии Ada Tours: Сан-Педро-де-Атакама, Чили. Оставить заявку ↗ 1,5–2 часа Атакама: вечер у профессиональных телескопов Вечером — ночной астрономический тур (1,5-2 часа): наблюдение звёздного неба в профессиональные телескопы. Сан-Педро-де-Атакама — одно из лучш. routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+      ],
+      "note": "Проверены EN category и действующий предметный RU каталог. EN статический HTML не дает подтверждённого полного списка продуктов, RU содержит конкретные активные программы. Точная пара sameAs не подтверждена; это не утверждение, что динамический EN каталог пуст.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:56.860Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/san-pedro-de-atacama/packages",
@@ -513,5 +524,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:17:30.168Z"
+  "updatedAt": "2026-10-21T16:17:56.860Z"
 }

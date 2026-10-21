@@ -142,7 +142,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/3c40ef463479b6ede67f9459.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Полностью прочитан и сверён по SHA-256 snapshots/3c40ef463479b6ede67f9459.html (6abf54bf40abbcb098ed5f16d7254552e3c6d90eaf283e3e83deefdc316c7e35); snapshot HTTP 200, H1 Hotel. Реальная страница 6 каталога производителя Hotel: позиции 76–90 из 108, от Porto Real Resort Angra dos Reis до Royal Rio Palace, карточки размещения с ценами/бронированием.",
+        "Текущий main aafd4b2da015d669e477eedffb3c956ede417992: проверены src/pages и четыре каталога source-index (Country/Destination/Excursion/Tour). Отдельной коллекции Hotel и каталога бронирования 108 отелей с этой пагинацией нет. VIP, страна или тур имеют другой предмет/ассортимент."
+      ],
+      "note": "Подтверждённой RU-пары для hotel?page=6 нет. Это самостоятельная содержательная страница гостиничного каталога, не пустая страница и не доказанный технический дубль. 301 на главную/каталог туров не назначен; судьба старого гостиничного раздела отдельно.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:22:18.040Z",
+      "checkedBy": "reverse-worker-mvi9bqoq-z10jgc5usm7",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel?page=7",
@@ -375,5 +385,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:22:13.707Z"
+  "updatedAt": "2026-10-21T15:22:18.040Z"
 }

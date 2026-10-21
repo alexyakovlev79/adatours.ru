@@ -182,7 +182,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/0963a52aa740718e29a7de94.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/paraty/",
+      "evidence": [
+        "Frozen VIP inventory #409: /ekskursii под городом Парати, pageType=excursion_listing, snapshotHttp 200; title/H1 конкретного листинга не содержат перечня продуктов.",
+        "Действующий RU destination_brazil_paraty approved, его каталог /brazil/paraty/ собирает 2 неархивные экскурсии по destination/relatedDestinations; проверенный approved excursion_paraty_waterfalls_cachaca_jeep относится к destination_brazil_paraty."
+      ],
+      "note": "Кандидат 301 на существующий каталог экскурсий Парати. Исторический ассортимент листинга не подтвержден как одинаковый.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:43:09.310Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/peru-ru",
@@ -395,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:43:05.026Z"
+  "updatedAt": "2026-10-21T14:43:09.310Z"
 }

@@ -91,7 +91,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/02718f5d1f2485e505a4ae01.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан исходный HTML snapshots/02718f5d1f2485e505a4ae01.html из vip-identity-crawl-20261020.zip; SHA-256 файла 723a45163203c1d30f68150cb878227044fa083803f4d5a6fd5cb61a03b6d333 совпадает с frozen inventory (blob 84d12dca210caa17f7af85edd88ab3ab9e4b0dfe). Сохранённый HTTP 200, дата 2026-10-20T13:04:07+00:00; product_id=58.",
+        "Porto Bay Rio Internacional: четырёхзвёздочный отель на Копакабане; номера с балконами, бассейн и бары.",
+        "HTML/inventory canonical: https://vipdeluxetravel.ru/porto-bay-rio-internacional-hotel; текущий URL содержит /hotel/ и ?page=. Идентичность другому URL по полному содержимому не подтверждена; одного canonical недостаточно для excluded.",
+        "Проверен текущий main: destination_brazil_rio, /brazil/place/rio-de-janeiro/, status approved (src/content/destinations/rio-de-janeiro.md, blob a35194b74855ebf214e3fd7ef70ca3f01bc9876d). Страница описывает город/курорт/природный район и туристические маршруты, не данный гостиничный продукт.",
+        "В текущем data/source-index/catalogs/destinations.json (main, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) по имени/slug/aliases отдельная сущность этого отеля не найдена; в src/content.config.ts нет коллекции hotels. Прочитан опубликованный sitemap-0.xml 21.10.2026: 6093 URL, точная гостиничная цель не подтверждена."
+      ],
+      "note": "Соответствующая отдельная RU-карточка отеля не подтверждена. Географическая страница не сохраняет намерение выбора/бронирования этого отеля; требуется редакционное решение: сохранять гостиничную страницу или 410. RU-цель и готовность 301 не назначены.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:25:34.901Z",
+      "checkedBy": "reverse-worker-mvi9cm3m-l6ox3ffx1id",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-porto-real-resort-angra-dos-reis?page=6",
@@ -354,5 +367,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:25:32.675Z"
+  "updatedAt": "2026-10-21T15:25:34.901Z"
 }

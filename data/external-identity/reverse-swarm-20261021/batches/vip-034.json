@@ -526,7 +526,18 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/5cd9e728b0bd933d7cefc9d1.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Просмотрен приватный HTML snapshots/5cd9e728b0bd933d7cefc9d1.html; SHA-256 d3486c38c185b2e3987f2c8a6e7272d81912b4758aecbf00192c49139e7d3445 проверен. Title/H1: Отель Mirador Rio. Mirador Rio — отель в 4 кварталах/10 минутах от пляжа Копакабана; номера с мини-баром и отдельной ванной, часть с джакузи/сауной; бассейн с панорамой города и ресторан Vila Real.",
+        "Проверены текущие source-index каталоги main: destinations (1018 записей, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b), tours (397, 5d0662b6b1589951c684b2c44ea1093b182ce9bf), excursions (416, 402b7d42c61bc17709c1ae07fc92dfa32ee08327). Отдельной сущности с этим названием/ID/aliases не найдено. В src/content и src/pages/[...path].astro нет коллекции/маршрута отелей; страницы города и туры не являются карточкой конкретного отеля.",
+        "HTML canonical: https://vipdeluxetravel.ru/hotel-mirador-rio; query остаётся частью source URL. В frozen inventory нет второй записи с тем же canonical, технический дубль не подтвержден. Найденные в RU-каталоге Mirador Laime, El Mirador La Macarena и Mirador Sarmiento — смотровые площадки в других странах, не отель Mirador Rio."
+      ],
+      "note": "Не найдена подтвержденная самостоятельная RU-карточка «Отель Mirador Rio». Страница города/курорта или тур с проживанием не заменяет карточку и бронирование конкретного отеля; 301 не назначен. Проверен сохраненный HTML, без заявления о сегодняшнем HTTP.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:27:00.145Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-mirasol-rio?page=5",
@@ -579,5 +590,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:26:52.469Z"
+  "updatedAt": "2026-10-21T15:27:00.145Z"
 }

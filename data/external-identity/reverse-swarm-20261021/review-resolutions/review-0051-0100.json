@@ -3197,7 +3197,66 @@
         "batchBlobSha": "37db2926bfced9cf7d2fb73624d33343f2f3ac91",
         "reviewOrder": 91
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/colombia/tour/colombia-cano-cristales-beyond/",
+        "targetId": "tour_source_kolumbiya_s_kano_kristales_i_ne_tolko",
+        "comparedId": "tour_source_kolumbiya_s_kano_kristales_i_ne_tolko",
+        "targetContentPath": "src/content/tours/kolumbiya-s-kano-kristales-i-ne-tolko.md",
+        "targetBlobSha": "87919adabd43d4066d733e2b1b6b7fc330488ae5",
+        "confidence": 0.83,
+        "accepted": true,
+        "basis": "editorial_program_successor",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.732Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/colombia-bogota-cartaghena.ru → HTTP 200, title «Разноликая Колумбия 2022», 101405 байт, SHA-256 a7fe5ab32a873bccf3a58497cc3049a4485598ae9028de0b33f1ea43e5044ff7. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/kolumbiya-s-kano-kristales-i-ne-tolko.md, blob 87919adabd43d4066d733e2b1b6b7fc330488ae5: published, tour_source_kolumbiya_s_kano_kristales_i_ne_tolko; RU цель https://adatours.ru/colombia/tour/colombia-cano-cristales-beyond/ → HTTP 200, SHA-256 2bff143b51b3dd772727079e96ab4db248cee871b9ce3b0d35084741e459616e.",
+          "В полном исходнике выявлены 11 дней: Богота/Гуатавита/Сипакира → Каньо-Кристалес → Перейра/Кокора/термы → Картахена. Выбран активный маршрут по тем же основным блокам на 12 дней с Росарио; это релевантная замена. 5–6-дневные Богота–Картахена и 11-дневная программа без Каньо-Кристалес отклонены."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-91",
+          "url": "https://vipdeluxetravel.ru/colombia-bogota-cartaghena.ru",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/colombia-bogota-cartaghena.ru",
+          "sha256": "a7fe5ab32a873bccf3a58497cc3049a4485598ae9028de0b33f1ea43e5044ff7",
+          "bytes": 101405,
+          "title": "Разноликая Колумбия 2022",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/colombia-bogota-cartaghena.ru\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1. Богота",
+            "День 2. Богота –Сити тур",
+            "День 3. Гуатавита и Соляной собор",
+            "День 4. Каньо Кристалес",
+            "День 5. Каньо Кристалес",
+            "День 6. Каньо-Кристалес-Кофейный регион",
+            "День 7. Саленто и Валье-де-Кокора",
+            "День 8. Кофе и Горячие источники",
+            "День 9. Картахена",
+            "День 10. Картахена",
+            "День 11. Богота"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_kolumbiya_s_kano_kristales_i_ne_tolko",
+          "url": "https://adatours.ru/colombia/tour/colombia-cano-cristales-beyond/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/colombia/tour/colombia-cano-cristales-beyond/",
+          "sha256": "2bff143b51b3dd772727079e96ab4db248cee871b9ce3b0d35084741e459616e",
+          "bytes": 182870,
+          "title": "Тур Колумбия с «Каньо-Кристалес» и не только по цене от $4 621 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/colombia/tour/colombia-cano-cristales-beyond/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 92,
@@ -3542,9 +3601,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:42.751Z",
+  "updatedAt": "2026-10-21T16:35:44.546Z",
   "progress": {
-    "resolved": 40,
+    "resolved": 41,
     "total": 50
   }
 }

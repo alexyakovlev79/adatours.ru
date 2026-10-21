@@ -442,7 +442,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #239: title «Excursions and tours in Colón, (on the ocean coast) in Panama», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; title «Excursions and tours in Colón, (on the ocean coast) in Panama», H1 «Excursions to countries of Latin America». Gallery без карточек экскурсий.",
+        "RU https://adatours.ru/panama/colon/ вернул HTTP 404. main: destination_panama_kolon — город Колон, excursion MD с ним нет; destination_panama_ostrov_kolon — другой объект, не используется."
+      ],
+      "note": "Каталог экскурсий города Колон не имеет подтвержденной действующей RU-пары; подмена его островом Колон или географической страницей недопустима.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:44:29.262Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/colon/packages",
@@ -535,5 +546,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:44:26.874Z"
+  "updatedAt": "2026-10-21T15:44:29.262Z"
 }

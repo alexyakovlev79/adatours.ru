@@ -463,7 +463,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/362ea7a06714a62775eca6fb.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory position 1293: hotel_candidate «Blue, Tree, Towers, Recife», H1 «Blue Tree Towers Recife», snapshotHttp 200, individual accommodation page.",
+        "RU Astro content.config.ts has no Hotel collection and no verified equivalent accommodation product."
+      ],
+      "note": "«Blue, Tree, Towers, Recife» — отдельный гостиничный объект в старом каталоге. В действующем RU нет самостоятельного гостиничного продукта, поэтому для 301 нужен выбор: новая карточка с условиями либо 410. Перенаправление на город не подтверждено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:24:33.732Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/bourbon-cataratas",
@@ -536,5 +546,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:24:27.131Z"
+  "updatedAt": "2026-10-21T15:24:33.732Z"
 }

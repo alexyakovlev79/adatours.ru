@@ -129,7 +129,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP 200, canonical /belize-city/excursions, H1 Belize City: Excursions to Mayan Ruins, Jungles, and the Reef. Две карточки Belize City Tour (/belize-city-tour-excursion) и Belize Zoo Tour (/belize-city-excursion-zoo). SHA-256 10831a2a88fc16a490e84528d0e132e5bcca0dc55614617105a6a6ffde61053c.",
+        "RU /belize/belize-city/ проверен напрямую: HTTP 404. Main excursions.json blob 402b7d42c61bc17709c1ae07fc92dfa32ee08327 содержит 4 экскурсии Белиза (Хидден-Вэлли, Каракол, полёт над Голубой дырой, Каракол/Рио-Фрио/Рио-Он), ни одной с destination_belize_beliz_siti.",
+        "RU /belize/place/belize-city/ — сущность города, а не двухэлементный экскурсионный каталог. Frozen EN category_id 34, HTTP 200, snapshotFile отсутствует."
+      ],
+      "note": "Подтвержденного RU-каталога экскурсий Белиз-Сити с тем же составом нет: адрес каталога 404, а обзор города и зоопарк не представлены теми же самостоятельными RU-экскурсиями. sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:37:24.908Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-city/packages",
@@ -372,5 +383,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:36:49.854Z"
+  "updatedAt": "2026-10-21T15:37:24.908Z"
 }

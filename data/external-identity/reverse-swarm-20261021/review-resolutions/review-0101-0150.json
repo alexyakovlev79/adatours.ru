@@ -900,7 +900,35 @@
         "batchId": "vip-022",
         "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/privacy/",
+        "relation": "redirect_301",
+        "confidence": 0.98,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:35:48.119Z",
+        "reason": "Название URL вводило в заблуждение: фактическое содержимое — политика конфиденциальности ADA TOURS OPERADORA DE TURISMO 2007 LTDA. Поэтому выбран /privacy/, а не B2B /dmc/terms/.",
+        "evidence": [
+          "Прямой GET VIP 200 и web open: после H1 «Правила и условия» идёт «ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ И ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ», назван тот же оператор.",
+          "Открыта RU /privacy/: текущая политика обработки данных Ada Tours."
+        ],
+        "targetEntityId": null
+      },
+      "sourceObservation": {
+        "n": 117,
+        "sourceUrl": "https://vipdeluxetravel.ru/pravila-i-usloviya",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/pravila-i-usloviya",
+        "canonical": null,
+        "sha256": "894aafc8b41d8ca3cc5026a693bb5f4377c089796da2afcbf08c55c60c7013bd",
+        "title": "Правила и условия",
+        "h1": [
+          "Правила и условия",
+          "ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ"
+        ],
+        "dayHeadings": []
+      }
     },
     {
       "reviewOrder": 118,
@@ -1862,7 +1890,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:36:17.277Z",
+  "updatedAt": "2026-10-21T16:36:19.832Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi83j7a-l8szybbr92h",
-    "token": "reverse-lease-mvi83j7a-pq7fpyj4g0e",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:44:21.660Z",
-    "expiresAt": "2026-10-21T16:14:21.660Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tapachula-v-meksike",
@@ -602,8 +596,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/9fe3fb6f9e13e3dd6f78c8d2.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory №610: URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvadore/ekskursii, pageType=excursion_listing, snapshotHttp=200, snapshotFile=snapshots/9fe3fb6f9e13e3dd6f78c8d2.html, title и h1 списка пусты; HTML не открыт.",
+        "RU approved Destination destination_el_salvador_uajua есть на /el-salvador/place/juayua/, но каталог экскурсий source-index не содержит Excursion с основным или дополнительным destination_el_salvador_uajua."
+      ],
+      "note": "Старому /ekskursii города Уайуа пока нет действующего непустого каталога экскурсий Ada Tours. Требуется редакционный выбор: страница самого города либо 410, без 301 на несуществующую подборку.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:57:57.233Z",
+      "checkedBy": "reverse-worker-mvi83j7a-l8szybbr92h",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:57:25.460Z"
+  "updatedAt": "2026-10-21T14:57:57.233Z",
+  "completedAt": "2026-10-21T14:57:57.233Z",
+  "lastOwner": "reverse-worker-mvi83j7a-l8szybbr92h"
 }

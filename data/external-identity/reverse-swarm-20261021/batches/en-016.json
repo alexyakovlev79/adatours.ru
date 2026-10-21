@@ -232,7 +232,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-003: title «Villa de Leyva Tours | Colonial Gem & UNESCO Candidate», H1 «Villa de Leyva: Tours to Colombia's Colonial Gem», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "21.10.2026: EN HTTP 200, package category_id=229, schema offerCount=2. productsjson вернул uid 2498 Live Colombia и 3363 Viva Colombia. Дополнительно открыты HTTP 200 /live-colombia и /viva-colombia-2023: обе программы имеют дни 1–13 через Боготу, Вилья-де-Лейву, Перейру, Санта-Марту и Картахену; Viva использует испаноязычного гида, Live — англоязычного.",
+        "RU /colombia/place/villa-de-leyva/tour/ HTTP 200: 2 программы — «Колумбия Live» 13 дней и «Колумбия за чудесами» 10 дней через Армению. Main MD подтверждают duration/day sequence; EN Viva — отдельная 13-дневная программа через Перейру, а не этот 10-дневный тур."
+      ],
+      "note": "Одинаковое количество карточек 2 не означает равный состав. EN Live+Viva (обе 13 дней) отличается от RU Live 13 дней+«Колумбия за чудесами» 10 дней. SameAs каталога не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:24:25.804Z",
+      "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/vip-travel",
@@ -338,5 +349,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T16:23:27.954Z"
+  "updatedAt": "2026-10-21T16:24:25.804Z"
 }

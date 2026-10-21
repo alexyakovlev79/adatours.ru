@@ -352,7 +352,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/porto-alegre/excursions; canonical sourceUrl; H1 «Excursions to countries of Latin America». В полученном HTML нет карточек gallery-title; присутствует общий текст про путешествия по Латинской Америке.",
+        "main 50542db1: destination_brazil_porto_alegre, approved, src/content/destinations/porto-alegre.md, canonical /brazil/place/porto-alegre/. Порту-Алегри, административный центр штата Риу-Гранди-ду-Сул, расположен у Гуаибы и дает другой образ Бразилии: зеленый южный город, старые кварталы, прогулки у воды и знакомство с культурой гаучу. Активных основных RU-туров: 3, собственных Excursion по destination: 0.",
+        "RU-каталоги из src/pages/[...path].astro: основное посещение и optional-tours разделены через tour-relations.ts; Place и каталог — разные сущности. Совпадение географии без одинакового фильтра и состава не дает sameAs."
+      ],
+      "note": "Конкретный локальный состав EN-каталога не подтвержден полученным HTML; страница RU-места существует, но не заменяет идентичный каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:16:31.289Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/porto-alegre/packages",
@@ -485,5 +496,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:16:29.367Z"
+  "updatedAt": "2026-10-21T16:16:31.289Z"
 }

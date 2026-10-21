@@ -361,7 +361,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /belo-horizonte/packages self canonical, H1 Belo Horizonte: Garden City Tours & Architecture. Карточек туров нет; общий текст об отдыхе в Латинской Америке. SHA-256 e2e2d0239622a96d3094d1427adabd9495c8f8a3abb6f50aa4a9f53aa104d90c.",
+        "RU live HTTP200 /brazil/place/belo-horizonte/tour/ self canonical, 1 тур: Бразилия за14 дней Рио/Ору-Прету/Сальвадор/Прайя-ду-Форте/Игуасу, stable ID tour_brazil_gems_14d. SHA-256 39acdf044294717c2a6e824c4b72bd86b29f6f86942a5675b5569f3bde27ab64.",
+        "Frozen EN category_id242, snapshotHttp200, snapshotFile отсутствует. RU destination_brazil_belo_horizonte; город присутствует в маршруте действующего тура как транспортный узел, но пустой EN-состав этому не равен."
+      ],
+      "note": "Географический фильтр Белу-Оризонти близок, но EN не показывает туров, а RU-каталог содержит один продукт. Строгое sameAs состава не подтверждено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:44:20.260Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/best-dmc-brazil-travel-agencies-2026",
@@ -494,5 +505,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:43:37.275Z"
+  "updatedAt": "2026-10-21T15:44:20.260Z"
 }

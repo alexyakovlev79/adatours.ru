@@ -122,7 +122,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/043fee65fd036b2a5fce409f.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP inventory #616: вложенная /ekskursii, pageType excursion_listing, historical HTTP 200; title и H1 пустые.",
+        "RU excursions catalog: 0 активных связей destination_honduras_utila; Astro не создает страницу пустой подборки."
+      ],
+      "note": "Для Утилы нет активных экскурсий в каноническом каталоге, поэтому /honduras/utila/ как непустой каталог не создается. Требуется выбор 410 или другого обоснованного маршрута.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:52:32.288Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-argentinskuyu-patagoniyu-i-gorod-ushuajya",
@@ -365,5 +375,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:52:29.440Z"
+  "updatedAt": "2026-10-21T14:52:32.288Z"
 }

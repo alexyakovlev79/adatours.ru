@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9s3d2-5bwshz0713i",
-    "token": "reverse-lease-mvi9s3d2-e7il0bwbapk",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:31:49.107Z",
-    "expiresAt": "2026-10-21T17:01:49.107Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/brief-brazil-dmc-congress-incentive",
@@ -447,7 +441,22 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN-каталог прочитан 2026-10-21T15:37:34.164592+00:00: HTTP 200, canonical https://adatours.com/cayenne/packages, 98835 bytes, SHA-256 8c5f026584e3d4de3d86c6b03b4ab41156ebc00a36e24761d4292f3e1997fe6f; H1 Cayenne: Tours to the Capital of French Guiana. Frozen inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: category/200, snapshotFile отсутствует.",
+        "EN-каталог показывает ровно три карточки: /guianas-experience-with-local-community (9 дней), /suriname-guyana-french-guiana (14 дней), /guyana-surinam-french-guyana (7 дней). Прочитаны полные программы и включено/не включено этих трёх EN-продуктов, а не только названия.",
+        "Текущий RU-каталог https://adatours.ru/french-guiana/place/cayenne/tour/: HTTP 200, canonical https://adatours.ru/french-guiana/place/cayenne/tour/, SHA-256 b4ca6ec789918480391ba8179f7107d8e11bd2819d7474d2f348f31fbe2a7e5f; 3 тура (14, 9, 7 дней). Каноническое место destination_french_guiana_kajenna сверено с source-index entry blob f0b42e29903e6de124720a728273453a275fce48. Фильтр сайта — основное посещение Кайенны.",
+        "Девятидневные EN guianas-experience-with-local-community (HTML SHA-256 964439ea18faf694f56661e447f590ea71966280b134b1302393dc872dd903f2) и RU tour_source_priklyuchenie_v_gvianakh (MD blob 2b6faff8e7c51f1cbac055393a4172620c45f4a8) имеют последовательность Джорджтаун/Кайетур — Парамарибо/Пеперпот — Кайенна/Куру/острова — джунгли/маруны — выезд из Суринама; совпадают указанные англогид, 3* и исключённый перелёт Гайана–Суринам.",
+        "Четырнадцатидневные EN suriname-guyana-french-guiana (HTML SHA-256 c46931eb50c6df3f3dffe20c42c7d40222c78ddf9e5a6f5ab97fdaadbf7407d8) и RU tour_source_surinam_gajana_frantsuzskaya_gviana (MD blob 685861bac45d67b0f0f947ece1fccc1e6532835c) включают тот же основной блок и дни Kabalebo: Туманная гора/Чарли, Мой-Мой, Кило 3, Йодденсаванна/Реди-Доти; окончание в Суринаме.",
+        "Критическое несовпадение третьей программы: EN /guyana-surinam-french-guyana (HTML SHA-256 b678271946a821cf8019326349dcd8d85ad600bca8018a0ca45184f8bf67c7d6) — день 1 Джорджтаун, день 2 Кайетур и рейс в Суринам, день 7 выезд из Суринама. RU tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana (MD blob 6b3e03e5b0b2060e0fb5200ee1188af115544e22) — день 1 Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 выезд из Гайаны.",
+        "У EN семидневной программы блок included при этом указывает рейс Suriname–Guyana, что противоречит направлению перелёта в EN itinerary. Совпадение трёх названий/длительностей и географии не устраняет конфликт фактической последовательности и условий одного продукта."
+      ],
+      "note": "Нужна редакционная сверка семидневной программы: EN и RU имеют разные начальную/конечную страны и порядок маршрута, а EN inclusions противоречат EN itinerary. Пока идентичность всех трёх программ и точного состава каталога не подтверждена, sameAs каталога не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:44:46.833Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cayo-district/excursions",
@@ -708,5 +717,7 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:44:06.916Z"
+  "updatedAt": "2026-10-21T15:44:46.833Z",
+  "completedAt": "2026-10-21T15:44:46.833Z",
+  "lastOwner": "reverse-worker-mvi9s3d2-5bwshz0713i"
 }

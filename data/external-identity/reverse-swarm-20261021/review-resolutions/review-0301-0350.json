@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "batchId": "review-0301-0350",
+  "scope": "external-identity-second-pass",
+  "ownerId": "review-seventh50-39437b4f3117",
+  "createdAt": "2026-10-21T16:28:32.414Z",
+  "decisionPolicy": "probability-70-v1",
+  "threshold": 0.7,
+  "sourceBranch": "feature/external-identity-swarm-20261021",
+  "sourceCommit": "249dbe2ee77852b315e344bf32850e6c293fc8f8",
+  "order": "manifest batches in order, records inventoryPosition, status=review; source commit frozen; order matches review-0251-0300",
+  "range": {
+    "first": 301,
+    "last": 310,
+    "requestedLast": 350
+  },
+  "status": "in_progress",
+  "notes": [
+    "User assigned seventh 50 review if present. 310 REVIEW at frozen source commit; only 10 entries available at positions 301-310. Original records retained; decisions separate. No production changes."
+  ],
+  "records": [
+    {
+      "reviewOrder": 301,
+      "sourceUrl": "https://adatours.com/valparaiso",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/valparaiso",
+        "inventoryPosition": 776,
+        "title": "Valparaiso Travel Guide | Best Places & Tips | Ada Tours",
+        "h1": "Funiculars and colorful houses: what to see in Valparaiso, Chile",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: snapshotHttp 200, title «Valparaiso Travel Guide | Best Places & Tips | Ada Tours», H1 «Funiculars and colorful houses: what to see in Valparaiso, Chile», pageType category, isSity, category_id=91; snapshotFile не указан.",
+          "21.10.2026 EN HTML HTTP 200, описана сама Valparaíso: порт, холмы, фуникулеры, дом Неруды, Морской музей, площадь Сотомайор; Viña del Mar лишь кратко сравнивается с ним как современный соседний город.",
+          "Текущий main src/content/destinations/valparaiso-i-vinya-del-mar.md (blob 9e52211a88f639b81ab54a2df1c95480a70ac797): approved, ID destination_chile_valparaiso_i_vinya_del_mar, destinationType route_cluster. RU canonical /chile/place/valparaiso-vina-del-mar/ HTTP 200: объединяет два самостоятельных города, включая пляжи, парки и ботанический сад Винья-дель-Мар."
+        ],
+        "note": "Главный объект EN — город Вальпараисо; RU-кандидат — составное направление Вальпараисо и Винья-дель-Мар. Общая часть содержания подтверждена, но идентичность полного предмета страницы нет. Нужна редакционная сверка охвата, sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:21:17.920Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 302,
+      "sourceUrl": "https://adatours.com/valparaiso/excursions",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/valparaiso/excursions",
+        "inventoryPosition": 777,
+        "title": "Excursions and tours in Valparaíso, Chile",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Excursions and tours in Valparaíso, Chile», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTML HTTP 200: экскурсионный фильтр typeid=2&category_id=91, productsjson products=[], total=0.",
+          "RU /chile/valparaiso-vina-del-mar/ HTTP 200: 2 экскурсии в Вальпараисо и Винья-дель-Мар. Source-index destination_chile_valparaiso_i_vinya_del_mar — составной регион двух городов."
+        ],
+        "note": "Пустая EN-выдача экскурсий Вальпараисо не совпадает с двумя RU-экскурсиями объединенного направления Вальпараисо/Винья-дель-Мар. Не доказаны одинаковые фильтр и состав, sameAs не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:21:57.501Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 303,
+      "sourceUrl": "https://adatours.com/valparaiso/packages",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/valparaiso/packages",
+        "inventoryPosition": 778,
+        "title": "Valparaiso Tours | Pablo Neruda House & Vina Beaches",
+        "h1": "Valparaiso and Vina del Mar: Tours to Neruda House and Colorful Hills",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Valparaiso Tours | Pablo Neruda House & Vina Beaches», H1 «Valparaiso and Vina del Mar: Tours to Neruda House and Colorful Hills», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTML HTTP 200: packages category_id=91, H1 прямо включает Valparaiso and Vina del Mar. schema offerCount=7; productsjson вернул 7 продуктов, включая 3600 Grand VIP Chile/Argentina 17 days, 1502 Brazil/Argentina/Chile/Peru, 2976 Chile & Argentina Deluxe, 1113 Chile VIP Summer & Wine, 4023 Mysteries of Men, 2492 Space travel и 4391 VIP Chile 5*.",
+          "RU /chile/place/valparaiso-vina-del-mar/tour/ HTTP 200: 11 основных туров, показано 1–11 из 11; destination_chile_valparaiso_i_vinya_del_mar."
+        ],
+        "note": "Географическое объединение двух городов совпадает по H1, однако EN содержит 7 продуктов, RU 11. Разные наборы не объявляются sameAs, требуется согласование ассортимента.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:21:59.680Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 304,
+      "sourceUrl": "https://adatours.com/venezuela-en/excursions",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/venezuela-en/excursions",
+        "inventoryPosition": 780,
+        "title": "Venezuela Tours & Vacation packages | Guided trips to Venezuela  with Ada Tours",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Venezuela Tours & Vacation packages | Guided trips to Venezuela  with Ada Tours», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTML HTTP 200: экскурсионный фильтр всей Венесуэлы typeid=2&category_id=134; productsjson products=[], total=0.",
+          "RU /venezuela/excursion/ HTTP 200: «13 экскурсий в Венесуэлу», показано 1–13 из 13; страна country_venezuela."
+        ],
+        "note": "Страновой фильтр одинаковый, но EN-выдача пуста, RU содержит 13 экскурсий. Совпадение названия страны не подтверждает sameAs каталогов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:22:02.027Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 305,
+      "sourceUrl": "https://adatours.com/venezuela-en/packages",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/venezuela-en/packages",
+        "inventoryPosition": 781,
+        "title": "Venezuela Tours: Angel Falls, Roraima & Los Roques",
+        "h1": "Venezuela: Tours to Angel Falls and Los Roques Archipelago",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Venezuela Tours: Angel Falls, Roraima & Los Roques», H1 «Venezuela: Tours to Angel Falls and Los Roques Archipelago», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTML HTTP 200: пакетный каталог category_id=134, offerCount=2. productsjson: uid 3204 «Tour from Venezuela to Colombia» и 2526 «Venezuela: Canaima and Los Roques National Parks».",
+          "RU /venezuela/tour/ HTTP 200: каталог туров по Венесуэле, включает действующие программы страны; ранее в текущем main проверены «Краски Венесуэлы» 6 дней и другие 12-дневные программы. Два EN-продукта не доказывают равенство всей RU-подборке."
+        ],
+        "note": "Подтвержден EN-каталог из двух предложений; одинаковый состав с действующим RU-каталогом не подтвержден. Пересечение отдельных направлений и туров недостаточно для sameAs.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:22:06.367Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 306,
+      "sourceUrl": "https://adatours.com/villa-de-leyva/excursions",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/villa-de-leyva/excursions",
+        "inventoryPosition": 785,
+        "title": "Excursions and tours to Villa de Leyva, the city of Colombii",
+        "h1": "Excursions to countries of Latin America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Excursions and tours to Villa de Leyva, the city of Colombii», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTTP 200: каталог экскурсий Villa de Leyva, Colombia; typeid=2&category_id=229. productsjson products=[], total=0.",
+          "RU /colombia/villa-de-leyva/ HTTP 200: 1 экскурсия на 12 часов с историческим центром, мостом Бояка и палеонтологией; destination_colombia_vilya_de_lejva."
+        ],
+        "note": "География совпадает, но EN-выдача пуста, RU содержит одну экскурсию. Равенство набора не подтверждено, sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:23:21.157Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 307,
+      "sourceUrl": "https://adatours.com/villa-de-leyva/packages",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/villa-de-leyva/packages",
+        "inventoryPosition": 786,
+        "title": "Villa de Leyva Tours | Colonial Gem & UNESCO Candidate",
+        "h1": "Villa de Leyva: Tours to Colombia's Colonial Gem",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Villa de Leyva Tours | Colonial Gem & UNESCO Candidate», H1 «Villa de Leyva: Tours to Colombia's Colonial Gem», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTTP 200, package category_id=229, schema offerCount=2. productsjson вернул uid 2498 Live Colombia и 3363 Viva Colombia. Дополнительно открыты HTTP 200 /live-colombia и /viva-colombia-2023: обе программы имеют дни 1–13 через Боготу, Вилья-де-Лейву, Перейру, Санта-Марту и Картахену; Viva использует испаноязычного гида, Live — англоязычного.",
+          "RU /colombia/place/villa-de-leyva/tour/ HTTP 200: 2 программы — «Колумбия Live» 13 дней и «Колумбия за чудесами» 10 дней через Армению. Main MD подтверждают duration/day sequence; EN Viva — отдельная 13-дневная программа через Перейру, а не этот 10-дневный тур."
+        ],
+        "note": "Одинаковое количество карточек 2 не означает равный состав. EN Live+Viva (обе 13 дней) отличается от RU Live 13 дней+«Колумбия за чудесами» 10 дней. SameAs каталога не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:24:25.804Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 308,
+      "sourceUrl": "https://adatours.com/vip-travel",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/vip-travel",
+        "inventoryPosition": 789,
+        "title": "VIP luxury tours and trips to Latin America",
+        "h1": "Luxury  and VIP  Tours  to  South  and  Central  America",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «VIP luxury tours and trips to Latin America», H1 «Luxury  and VIP  Tours  to  South  and  Central  America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTTP 200: тематическая VIP-категория category_id=9, isThemesCategory; schema offerCount=41. Первая выдача содержит Grand VIP Chile/Argentina 17 days, New 2026 Year in Rio, Unforgettable New Year Rio, VIP Brazil/Argentina 10 days и другие; 8 карточек не считаются полным списком.",
+          "RU /vip/ HTTP 200: заголовок «90 VIP и Luxury туров», действующий каталог с фильтрами по странам и интересам."
+        ],
+        "note": "VIP-намерение одинаковое, но размеры и полный состав не совпадают: EN заявляет 41, RU 90. Географически общую VIP-подборку нельзя объявить sameAs без равенства ассортимента.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:23:23.151Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 309,
+      "sourceUrl": "https://adatours.com/weddings-and-romance",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/weddings-and-romance",
+        "inventoryPosition": 792,
+        "title": "Romantic tours and wedding arrangements  & Vacation packages | Guided trips to South America with Ada Tours",
+        "h1": "Choose your wedding ceremony",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Romantic tours and wedding arrangements  & Vacation packages | Guided trips to South America with Ada Tours», H1 «Choose your wedding ceremony», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTTP 200: тематическая категория Weddings and Romance, category_id=672, H1 «Choose your wedding ceremony». productsjson с исходным datasrc возвращает products=[], total=0.",
+          "RU /interests/weddings-and-romance/ HTTP 200: «Свадьбы и романтические путешествия — 4 тура», готовые свадебные/романтические программы."
+        ],
+        "note": "Тема свадеб и романтики совпадает, но EN-каталог пуст, RU содержит 4 программы. Подтвержденного равенства каталогов нет, sameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:23:25.697Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 310,
+      "sourceUrl": "https://adatours.com/wine-tours",
+      "sourceBatch": "en-016",
+      "sourceBatchBlobSha": "40aa949122b2b309e75b7f73c6c6ca98ab41521e",
+      "original": {
+        "batchId": "en-016",
+        "sourceUrl": "https://adatours.com/wine-tours",
+        "inventoryPosition": 798,
+        "title": "Gastronomic tours and wine tours to Latin America",
+        "h1": "WINE AND GREAT FOOD IN BRAZIL & THROUGHOUT SOUTH AND CENTRAL AMERICA",
+        "pageType": "category",
+        "snapshotHttp": 200,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen inventory/crawl-003: title «Gastronomic tours and wine tours to Latin America», H1 «WINE AND GREAT FOOD IN BRAZIL & THROUGHOUT SOUTH AND CENTRAL AMERICA», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "21.10.2026: EN HTTP 200: Wine and great food, category_id=666, schema offerCount=8. productsjson вернул 6 видимых карточек: Amazing Gastronomic Mexico, Sun/Tango/Wine, Best of Brazil/Argentina/Chile, Chile Gourmet VIP, Mexico Colonial/Culinary, Argentina for good life degustateurs; расхождение schema и выдачи сохраняется, полным набором 8 их не считаю.",
+          "RU /interests/food-and-wine/ HTTP 200: «Гастрономия и вино — 69 туров», Готовые маршруты · 69 туров."
+        ],
+        "note": "Гастрономическое и винное направление совпадает, но EN-выдача/метаданные и RU-каталог 69 туров имеют различный объем и не подтвержденный одинаковый состав. SameAs не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:23:27.954Z",
+        "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+        "claimGeneration": 1
+      },
+      "decision": null
+    }
+  ]
+}

@@ -62,7 +62,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/c539ad412ca197bdf8bb1d16.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/c539ad412ca197bdf8bb1d16.html, SHA-256 f67fa63fac8d99f8df699a66d3ce289e11df2d4ec5fc0898629ff59bb48885e9, обход 2026-10-20T13:11:21+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Отель Windsor Excelsior Rio». Windsor Excelsior Rio — четырехзвездочный отель на Копакабане, терраса, бассейн, сауна и ресторан Ofrin; изложены условия размещения детей и отмены.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) поиск названия/бренда Windsor Excelsior не дал самостоятельной страницы этого отеля. В src/content.config.ts перечислены countries/destinations/tours/excursions/themes/cases/people/articles, отдельной гостиничной коллекции нет; маршрутизатор [...path].astro формирует detail этих туристических сущностей."
+      ],
+      "note": "Проверена карточка конкретного отеля Windsor Excelsior, Рио-де-Жанейро. Подтвержденной самостоятельной RU-страницы отеля в просмотренном текущем source-index нет. Географическая страница города и тур с возможным проживанием имеют другое назначение и не назначены 301-целью; полнота внешнего discovery не заявляется.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:17.864Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/windsor-martinique-hotel?page=7",
@@ -255,5 +265,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:15.532Z"
+  "updatedAt": "2026-10-21T15:32:17.864Z"
 }

@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9bl75-wz4a20i6j3",
-    "token": "reverse-lease-mvi9bl75-h7zrfa6gy0p",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:18:55.235Z",
-    "expiresAt": "2026-10-21T16:48:55.235Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/pedra-de-telegrafo?page=1",
@@ -602,8 +596,20 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/60700ad47b080cfb3b1c0463.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/60700ad47b080cfb3b1c0463.html, SHA-256 e034b1862c7b7e48f70f1f29faa74ed85614dbc3f414cba8e31f3ec363f00d43, обход 2026-10-20T12:48:06+00:00: product_id=3952, H1 «Экскурсия в морской заповедник Холь Чан»: дайвинг/снорклинг в Shark Ray Alley с акулами-няньками и скатами, лодка и дайвмастер.",
+        "Актуальный source-index экскурсий Белиза содержит Хидден-Вэлли, Каракол и полет над Голубой дырой, но не Hol Chan/Холь-Чан/Shark Ray Alley. Полет над Голубой дырой отличается и объектом, и видом активности. Каталоги source-index main: excursions blob 402b7d42c61bc17709c1ae07fc92dfa32ee08327; destinations blob cdfbc9f04396ba9db825d26d663a09a416d91f2b."
+      ],
+      "note": "Подтвержденной RU-пары для конкретного морского заповедника Холь-Чан и водной программы Shark Ray Alley не установлено в просмотренном каталоге. Общий Белиз или полет над Голубой дырой не назначены вместо снорклинга/дайвинга.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:27:10.430Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:27:07.914Z"
+  "updatedAt": "2026-10-21T15:27:10.430Z",
+  "completedAt": "2026-10-21T15:27:10.430Z",
+  "lastOwner": "reverse-worker-mvi9bl75-wz4a20i6j3"
 }

@@ -422,7 +422,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/b1aee5598f53919f71feb1ae.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/b1aee5598f53919f71feb1ae.html, SHA-256 d57aa69275df80f75261812f8524767dd4b1cacc116b4b1cd18e936902aaab57, обход 2026-10-20T13:15:51+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Mareiro Hotel». Mareiro Hotel — четырехзвездочная гостиница у моря на Beira Mar в Форталезе, 200 номеров, два ресторана и конференц-центр до 450 гостей, бассейн с баром.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) самостоятельная страница Mareiro Hotel по названию/бренду не установлена. src/content.config.ts не содержит hotel collection; [...path].astro не формирует отдельный hotel detail. География города и другие туристические продукты не заменяют гостиничную сущность."
+      ],
+      "note": "Проверена отдельная гостиничная карточка Mareiro Hotel, Форталеза. Подтвержденная самостоятельная RU-страница именно этого объекта в просмотренном текущем source-index не установлена. Общий Place, тур с возможным проживанием и другой отель не назначены 301-целью; текущая работоспособность самого отеля не оценивалась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:34:04.710Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/nannai-beach-resort?page=1",
@@ -435,5 +445,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:34:01.108Z"
+  "updatedAt": "2026-10-21T15:34:04.710Z"
 }

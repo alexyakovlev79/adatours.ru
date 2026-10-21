@@ -498,7 +498,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/portobelo/excursions; canonical sourceUrl; H1 «Excursions to countries of Latin America». В полученном HTML карточек gallery-title нет; основной текст — общий шаблон путешествий/экскурсий Латинской Америки.",
+        "main 50542db1: destination_panama_portobelo, approved, src/content/destinations/portobelo.md, canonical /panama/place/portobelo/. Старинный испанский порт с колониальной архитектурой и фортами в окрестностях. В одной из церквей Портобело хранится статуя «черного Иисуса». Активных основных RU-туров: 1, собственных Excursion по destination: 0. Примеры: Панама.",
+        "Маршрутизатор RU src/pages/[...path].astro создает только непустые каталоги; основное и факультативное посещение разделены. Отдельная страница Place не является каталогом с тем же фильтром и набором продуктов."
+      ],
+      "note": "Подтвержденной пары конкретного EN-каталога нет: состав локальных предложений не установлен по HTML. Совпадающее географическое название не является достаточным основанием для sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:05.658Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/portobelo/packages",
@@ -561,5 +572,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:17:03.399Z"
+  "updatedAt": "2026-10-21T16:17:05.658Z"
 }

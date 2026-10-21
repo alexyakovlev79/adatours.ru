@@ -249,7 +249,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Mexico Tours & Vacation packages | Guided trips to Mexico with Ada Tours», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: каталог экскурсий Мексики typeid=2&category_id=183; productsjson возвращает products=[], total=0.",
+        "RU /mexico/excursion/ HTTP 200, заголовок «20 экскурсий в Мексику»; source-index страна country_mexico. RU содержит экскурсии по Мехико, Оахаке и другим местам страны."
+      ],
+      "note": "Географический фильтр — вся Мексика, но EN-выдача пуста, RU-каталог содержит 20 экскурсий. Подтвержденного равенства состава нет; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:55:10.727Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/mexico-en/packages",
@@ -432,5 +443,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:55:08.287Z"
+  "updatedAt": "2026-10-21T15:55:10.727Z"
 }

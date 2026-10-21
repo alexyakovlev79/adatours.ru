@@ -162,7 +162,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/838513c524fc11367d9cbd52.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/838513c524fc11367d9cbd52.html, SHA-256 7acd90efab1897f367bce7b18a63faa92a9b79d8c5d7e350327bd07ee8ad8381, обход 2026-10-20T13:12:36+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Agua Marinha Hotel». Agua Marinha Hotel — трехзвездочный отель на 66 номеров у Praia de Iracema, рядом с Pirata Bar, Ponte Metálica и Dragão do Mar; хлебные крошки указывают Форталезу.",
+        "Проверены актуальные main source-index каталоги destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf): самостоятельной страницы Agua Marinha по названию/бренду не установлено. В src/content.config.ts нет hotel collection, маршрутизатор [...path].astro не выделяет hotel detail; общий тур/город не доказывает соответствия гостинице."
+      ],
+      "note": "Проверена самостоятельная карточка Agua Marinha; география исходника: Форталеза. Подтвержденная текущая RU-страница именно этой гостиницы в просмотренном source-index не найдена. Другой отель той же сети, туристический город и тур с возможным размещением не назначены 301-целью.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:56.413Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/beach-class-suites?page=1",
@@ -305,5 +315,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:54.367Z"
+  "updatedAt": "2026-10-21T15:32:56.413Z"
 }

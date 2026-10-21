@@ -22,7 +22,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN GET 21.10.2026 HTTP 200: /encarnacion/packages содержит только Tour of Paraguay 2024; проверена связанная /tour-of-paraguay-2024: 8 дней/7 ночей, Чако–Филадельфия–Pa'i Puku–Сан-Игнасио–Энкарнасьон–Хесус/Тринидад–Итайпу, $4434 в карточке продукта; в included явно указан Early Check In on day 1.",
+        "RU GET https://adatours.ru/paraguay/place/encarnacion-and-trinidad/tour/ HTTP 200: один тур «Парагвай 2023». Current main src/content/tours/klassicheskij-paragvaj.md (blob ac313f47db30895bd72024c1e959237ad1145607) подтверждает тот же 8-дневный маршрут, но $3903, и early check-in в included не указан."
+      ],
+      "note": "Сильный кандидат: одинаковый фильтр и один очень близкий маршрут. Существенные условия продукта не сведены: различаются опубликованные цены и явное включение раннего заселения. Нужна редакционная сверка актуальной версии; sameAs пока не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:44:09.751Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/excursions",
@@ -495,5 +505,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:42:55.604Z"
+  "updatedAt": "2026-10-21T15:44:09.751Z"
 }

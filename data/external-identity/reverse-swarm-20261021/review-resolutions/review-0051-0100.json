@@ -623,7 +623,49 @@
         "batchBlobSha": "8c1e6c447f94efb0ea6fb89c203883a2ffa7ad57",
         "reviewOrder": 59
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/honduras/place/tegucigalpa/",
+        "targetId": "destination_honduras_tegusigalpa",
+        "targetContentPath": "src/content/destinations/tegusigalpa.md",
+        "targetBlobSha": "e0061fe2b406387c740f284f61cf2b4d00de7a1b",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-007 #586.",
+          "Текущий main src/content/destinations/tegusigalpa.md, blob e0061fe2b406387c740f284f61cf2b4d00de7a1b: approved destination_honduras_tegusigalpa, Тегусигальпа; прямой GET https://adatours.ru/honduras/place/tegucigalpa/ → HTTP 200, SHA-256 fa106097f6bd8d589ff6e7f08f059216193bd9bbf58eeb63247778d47483059a."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Тегусигальпа». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-59",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tegusigalpa-v-gondurase/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tegusigalpa-v-gondurase/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_honduras_tegusigalpa",
+          "url": "https://adatours.ru/honduras/place/tegucigalpa/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/honduras/place/tegucigalpa/",
+          "sha256": "fa106097f6bd8d589ff6e7f08f059216193bd9bbf58eeb63247778d47483059a",
+          "bytes": 80554,
+          "title": "Тегусигальпа в Гондурасе: локации. Пока нет туров в это место. Путешествия 2026-2027 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/honduras/place/tegucigalpa/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 60,
@@ -1838,9 +1880,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:32.673Z",
+  "updatedAt": "2026-10-21T16:31:34.299Z",
   "progress": {
-    "resolved": 8,
+    "resolved": 9,
     "total": 50
   }
 }

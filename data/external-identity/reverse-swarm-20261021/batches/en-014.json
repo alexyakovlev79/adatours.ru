@@ -526,7 +526,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Tours and excursions to Santo Domingo, the capital of the Dominican Republic; H1 Excursions to countries of Latin America; category_ids=[\"644\"]; adatours-com-crawl-002.json index 263; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/santo-domingo-en/excursions: HTTP 200; SHA256 4d05bf909181d9bf2ac82b59b1f146b99a7d3fcacf253360bca2d3137672439d. Общий H1 Excursions to countries of Latin America; в статической gallery нет карточек места. Это не подтверждение пустого динамического каталога.",
+        "main src/content/destinations/santo-domingo.md, blob bcfa4c54ee44669832834828172af68019ac9640: approved destination_dominican_republic_santo_domingo, /dominican-republic/place/santo-domingo/. RU каталог https://adatours.ru/dominican-republic/santo-domingo/: HTTP Error 404: Not Found. routes.ts/[...path].astro отделяет Place, основной маршрут тура и самостоятельные экскурсии."
+      ],
+      "note": "Предметный RU каталог туров/экскурсий отвечает HTTP404. Approved Place того же географического объекта существует, но не является каталогом с тем же составом. Подтвержденной пары sameAs нет; на Place или общую главную связь не назначена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:35.856Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/santo-domingo-en/packages",
@@ -579,5 +590,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:18:09.339Z"
+  "updatedAt": "2026-10-21T16:18:35.856Z"
 }

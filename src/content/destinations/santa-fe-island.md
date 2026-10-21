@@ -8,9 +8,8 @@ countryId: country_ecuador
 destinationType: island
 summary: Санта-Фе к юго-востоку от Санта-Крус предлагает дайвинг среди рифовых рыб, черепах и морских львов.
 hero:
-  src: /media/excursions/ostrov-santa-krus/hero-enhanced-20261001.webp
-  hover: "Галапагосы: морские львы в бирюзовой воде"
-  alt: "Морские львы плывут под поверхностью прозрачной воды у песчаного дна, Галапагосы, Эквадор"
+  src: "/media/destinations/santa-fe-island/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Остров Санта-Фе — иллюстрация"
 gallery: []
 themes:
 - theme_wildlife

@@ -572,7 +572,18 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/99b0be51bfdc7a67c1828f18.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/excursions/",
+      "evidence": [
+        "Архив и GET 21.10.2026 HTTP 200: H1 Excursion; это страница 3 общего каталога, позиции 31–45 из 65, 15 товарных карточек. Примеры: Торрес дель Пейн; Экскурсия в Кафажате; Экскурсия по Панама-Сити; Экскурсия на Вилла-де-Лейва. Состав видимых карточек совпал с архивным; отдельного фильтра страны/места в URL нет.",
+        "Frozen snapshots/99b0be51bfdc7a67c1828f18.html, SHA-256 15ff1b42b8dea84ebcff90486813786e96ff4a5b99a1bcf4fcc56ec7da02caf8; snapshotHttp 200, inventory pageType excursion_candidate. HTML прочитан и контрольная сумма подтверждена; фактически это каталог, а не самостоятельный продукт.",
+        "Действующий RU https://adatours.ru/excursions/ открыт HTTP 200, canonical совпадает, H1 «Экскурсии по Латинской Америке», title сообщает 415 экскурсий. Это непустой общий каталог активных экскурсий, создаваемый src/pages/[...path].astro из активной коллекции Excursion; тот же тип и намерение выбора экскурсий по странам Латинской Америки."
+      ],
+      "note": "Кандидат будущего 301 со старой страницы 3 на начало соответствующего RU-каталога экскурсий. Старый page=3 не переносится: объем, сортировка и размер страниц изменились. Равенство набора из 65 и 415 не заявляется; это не sameAs и не редирект на главную сайта. Фактический 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T16:24:15.323Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 2
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=4",
@@ -595,7 +606,7 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:24:09.990Z",
+  "updatedAt": "2026-10-21T16:24:15.323Z",
   "leaseHistory": [
     {
       "ownerId": "reverse-worker-mvi83xgd-3cwif9g4q3",

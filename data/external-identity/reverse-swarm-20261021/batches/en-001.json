@@ -282,7 +282,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, конечный https://adatours.com/antarctica-en/packages; title Antarctica Tours: Drake Passage Cruises & Penguin Expeditions; H1 Antarctica: Tours to the End of the Earth and Polar Expeditions. Фильтр from=category&page=isPackageCategory&typeid=1&category_id=394&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=excursions&excludes%5B3%5D=themes. SHA-256 3f44547afdf7c071db0cbed791c81726769d02439d326486d061e973aea1dab5. Frozen inventory: category_ids=[\"394\"], page_type=category; приватный HTML-снимок для этого EN URL не предоставлен.",
+        "Проверен RU-кандидат https://adatours.ru/antarctica/tour/: GET 200, конечный https://adatours.ru/antarctica/tour/, canonical https://adatours.ru/antarctica/tour/. RU-каталог: 9 маршрутов Антарктиды. EN-превью дополнительно включают Patagonia & Chilean Fjords и Fiordes Da Terra Do Fogo/Punta Arenas to Ushuaia, то есть Патагонию/Огненную Землю; совпадение географического фильтра и состава не доказано. География сопоставлена с country_antarctica в source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 и маршрутизатором src/lib/routes.ts."
+      ],
+      "note": "Каталог тематически/географически близок, но полное тождество фильтра и всех активных программ EN/RU не доказано. Статические EN-превью не заменяют динамическую выдачу; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:24.886Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/antigua-guatemala/excursions",
@@ -445,5 +455,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:22.642Z"
+  "updatedAt": "2026-10-21T15:38:24.886Z"
 }

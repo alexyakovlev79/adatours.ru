@@ -2655,7 +2655,57 @@
         "batchBlobSha": "3587016428615b36cdf38027ecdfcf330253a796",
         "reviewOrder": 85
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/antarctica/tour/antarctica-overnight-program/",
+        "targetId": "tour_source_antarktida_programma_s_nochevkoj",
+        "comparedId": "tour_source_antarktida_programma_s_nochevkoj",
+        "targetContentPath": "src/content/tours/antarktida-programma-s-nochevkoj.md",
+        "targetBlobSha": "a19e1c26fa18371a20e0a998d2c58d9a39f97af9",
+        "confidence": 0.98,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.715Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/antarktida-programma-s-nochevkoj → HTTP 200, title «Антарктида: программа с ночевкой», 70112 байт, SHA-256 481934e2c7e691e78345c7d1452976d44169fd80692c1d64822ef0d10150863a. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/antarktida-programma-s-nochevkoj.md, blob a19e1c26fa18371a20e0a998d2c58d9a39f97af9: published, tour_source_antarktida_programma_s_nochevkoj; RU цель https://adatours.ru/antarctica/tour/antarctica-overnight-program/ → HTTP 200, SHA-256 e593ec7cc48ed0677ad98f0b78f8b0cbe3f80a0a836444a808673e4f943d77e0.",
+          "Прямой HTML подтверждает Пунта-Аренас → Кинг-Джордж, одну ночевку у ледника Коллинз, Ардли, Беллинсгаузен, обратный перелет на второй день; отдельно включены четыре ночи в Пунта-Аренас. В RU те же два антарктических дня и буфер проживания; 5 дней в карточке не означают 5 ночей в Антарктиде."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-85",
+          "url": "https://vipdeluxetravel.ru/antarktida-programma-s-nochevkoj",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/antarktida-programma-s-nochevkoj",
+          "sha256": "481934e2c7e691e78345c7d1452976d44169fd80692c1d64822ef0d10150863a",
+          "bytes": 70112,
+          "title": "Антарктида: программа с ночевкой",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/antarktida-programma-s-nochevkoj\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Пунта-Аренас – Кинг-Джордж",
+            "День 2: Кинг-Джордж – Пунта-Аренас"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_antarktida_programma_s_nochevkoj",
+          "url": "https://adatours.ru/antarctica/tour/antarctica-overnight-program/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/antarctica/tour/antarctica-overnight-program/",
+          "sha256": "e593ec7cc48ed0677ad98f0b78f8b0cbe3f80a0a836444a808673e4f943d77e0",
+          "bytes": 113807,
+          "title": "Тур Антарктида: программа с ночевкой по цене от $8 220 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/antarctica/tour/antarctica-overnight-program/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 86,
@@ -3180,9 +3230,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:32.030Z",
+  "updatedAt": "2026-10-21T16:35:33.817Z",
   "progress": {
-    "resolved": 34,
+    "resolved": 35,
     "total": 50
   }
 }

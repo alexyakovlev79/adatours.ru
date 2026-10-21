@@ -362,7 +362,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/1bef8e28b3dd9686ccc00519.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #478: раздел /ekskursii Пуэрто-Лимона, тип excursion_listing, HTTP 200, пустой title и неподтвержденный состав предложений.",
+        "В текущем data/source-index/catalogs/excursions.json ни одна активная экскурсия не связывается по destinationIds/relatedDestinationIds с destination_costa_rica_puerto_limon; RU /costa-rica/puerto-limon/ как непустой каталог не подтвержден."
+      ],
+      "note": "Для старого списка экскурсий Пуэрто-Лимона не найден существующий каталог того же назначения. Нужен редакционный выбор между страницей города и 410; 301 пока не готов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:57:53.108Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-v-patagonii-chili-torres-del-pajne-i-puehrto-natales",
@@ -485,5 +495,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:57:34.813Z"
+  "updatedAt": "2026-10-21T14:57:53.108Z"
 }

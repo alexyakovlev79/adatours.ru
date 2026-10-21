@@ -2475,7 +2475,66 @@
         "batchBlobSha": "3587016428615b36cdf38027ecdfcf330253a796",
         "reviewOrder": 83
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "disposition": "gone_410",
+        "recommendedHttpStatus": 410,
+        "relation": null,
+        "ruUrl": "",
+        "targetId": null,
+        "comparedId": "tour_source_soedinennye_shtaty_venesuely",
+        "targetContentPath": "src/content/tours/soedinennye-shtaty-venesuely.md",
+        "targetBlobSha": "19d8fd920ff5f8919c907e1a58114a8a210ea02d",
+        "confidence": 0.97,
+        "accepted": true,
+        "basis": "retire",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.710Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/soedinennye-shtaty-venesuely → HTTP 200, title «Соединенные Штаты Венесуэлы», 72490 байт, SHA-256 6d0d45099c458ae22112a4b572cced4a5f4e502965185c8bab49994503add7e4. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/soedinennye-shtaty-venesuely.md, blob 19d8fd920ff5f8919c907e1a58114a8a210ea02d: archived, tour_source_soedinennye_shtaty_venesuely; сопоставленный продукт архивирован.",
+          "Та же 12-дневная программа Маргарита → Ориноко → Пуэрто-Ордас → Канайма/Анхель → Каракас → Лос-Льянос архивирована; ее старые даты не превращены в действующий продукт."
+        ],
+        "note": "Принято редакционное решение: закрыть старое предложение кодом 410 при отдельном внедрении. Подтвержденной активной пары нет; 410 сейчас не включен.",
+        "liveSource": {
+          "key": "source-83",
+          "url": "https://vipdeluxetravel.ru/soedinennye-shtaty-venesuely",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/soedinennye-shtaty-venesuely",
+          "sha256": "6d0d45099c458ae22112a4b572cced4a5f4e502965185c8bab49994503add7e4",
+          "bytes": 72490,
+          "title": "Соединенные Штаты Венесуэлы",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/soedinennye-shtaty-venesuely\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: (понедельник): Остров Маргарита",
+            "День 2(вторник) - 3 (среда): Остров Маргарита",
+            "День 4 (четверг): Дельта реки Ориноко",
+            "День 5 (пятница): Дельта реки Ориноко",
+            "День 6 (суббота): Пуэрто Ордас - Парк Льевизна",
+            "День 7 (воскресенье): Национальный парк Канайма - остров Анатолия и водопады Сапо и Ача",
+            "День 8 (понедельник): Водопад Сальто Анхель",
+            "День 9 (вторник): Каракас",
+            "День 10(среда): Баринас – Лос Льянос",
+            "День 11(четверг): Лос Льянос",
+            "День12 (пятница): Каракас"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_soedinennye_shtaty_venesuely",
+          "url": "https://adatours.ru/venezuela/tour/united-states-of-venezuela/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/venezuela/tour/united-states-of-venezuela/",
+          "sha256": "1cc2305375a0ecae3b6c5fc878844244302add8151897f9fcb9971692cd625f0",
+          "bytes": 93498,
+          "title": "Тур Соединенные Штаты Венесуэлы по цене от $4 748 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/venezuela/tour/united-states-of-venezuela/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 84,
@@ -3060,9 +3119,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:28.651Z",
+  "updatedAt": "2026-10-21T16:35:30.374Z",
   "progress": {
-    "resolved": 32,
+    "resolved": 33,
     "total": 50
   }
 }

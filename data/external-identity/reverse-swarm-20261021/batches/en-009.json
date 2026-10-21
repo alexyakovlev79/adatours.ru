@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mviacz20-2bl89ht96kp",
-    "token": "reverse-lease-mviacz20-v91bkdd7nl",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:48:07.485Z",
-    "expiresAt": "2026-10-21T17:18:07.485Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/itacare/packages",
@@ -566,7 +560,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory: pageType=other, HTTP 200, H1 «Luxury Travel in Colombia: Choose the Experience First», crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, self-canonical, H1 «Luxury Travel in Colombia: Choose the Experience First».",
+        "Редакционная статья Anna Avanesova, Published 08-04-2025, Updated 02-10-2026. Выбор опыта и темпа в Bogotá/Medellín, кофейном регионе, Cartagena/Rosario, Cocora/Los Nevados/Tayrona; частная лодка, отели и гиды описаны как опции для согласования, а не гарантированный состав единого тура.",
+        "Проверен /vip/colombia/ HTTP 200, H1 «VIP-туры в Колумбию»: 2 маршрута — «Колумбия VIP: Богота, кофейный регион, Картахена и остров Бару» и «8 стран Южной Америки за 32 дня». RU-каталог содержит продуктовые карточки и отдельную статью о фактически доступной 10-дневной программе, а не ту же EN-публикацию."
+      ],
+      "note": "Ни VIP-каталог Колумбии, ни отдельная программа не равны EN-статье о выборе luxury-впечатлений. Похожая тематика недостаточна для sameAs; эквивалент редакционной страницы среди проверенных RU-кандидатов не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:58:03.282Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/machu-picchu-the-inca-trail/excursions",
@@ -609,5 +614,7 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:57:54.399Z"
+  "updatedAt": "2026-10-21T15:58:03.282Z",
+  "completedAt": "2026-10-21T15:58:03.282Z",
+  "lastOwner": "reverse-worker-mviacz20-2bl89ht96kp"
 }

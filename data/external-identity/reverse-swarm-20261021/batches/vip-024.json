@@ -202,7 +202,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/1826b9d629176beec922c6f4.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/tours/page/8/",
+      "evidence": [
+        "Frozen VIP inventory #1100: H1/title «Package», original https://vipdeluxetravel.ru/package?page=8, snapshotHttp=200, общий каталог page 8.",
+        "RU src/pages/[...path].astro создает общий каталог /tours/ активных туров, src/lib/catalog-pagination.ts страницу /tours/page/8/ (30 на часть)."
+      ],
+      "note": "Кандидат 301 по типу каталога и номеру страницы. Равенство старого и нового товарного состава не подтверждалось.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:01:49.154Z",
+      "checkedBy": "reverse-worker-mvi83xgd-3cwif9g4q3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package?page=9",
@@ -405,5 +415,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:01:29.405Z"
+  "updatedAt": "2026-10-21T15:01:49.154Z"
 }

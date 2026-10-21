@@ -169,7 +169,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #217: title «Excursions and tours to the city of Cali in Colombia», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «Tours to countries of Latin America», breadcrumb Colombia / Cali / Tours. Карточек туров нет, далее общие тексты о Латинской Америке.",
+        "main 78fe61f4: destination_colombia_kali, src/content/destinations/kali.md; ни одного Tour MD с этим destination ID. https://adatours.ru/colombia/place/cali/tour/ вернул HTTP 404."
+      ],
+      "note": "Пара каталога туров не подтверждена: текущий RU не имеет этого каталога, EN не показывает товаров. Географическая страница Кали относится к другому типу сущности.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:24.271Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/colombia-cartagena-tours-excursions-hotels/excursions",
@@ -392,5 +403,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:42:22.266Z"
+  "updatedAt": "2026-10-21T15:42:24.271Z"
 }

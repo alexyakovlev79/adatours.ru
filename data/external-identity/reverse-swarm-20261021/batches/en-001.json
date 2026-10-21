@@ -402,7 +402,17 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, H1 Argentinian Wine tours, статья 01.04.2025; SHA-256 389287eec478a11db2f154de165411baa8b9f811ff4683f56c4b6ad712fb0ffe. Описывает винные регионы Luján de Cuyo, Maipú, Uco Valley, форматы дегустаций/размещения; нет одной заданной программы Tour или каталожного фильтра.",
+        "RU https://adatours.ru/interests/food-and-wine/tours/argentina/ отвечает 200 с совпадающим canonical, H1 «Гастрономические туры в Аргентину», 27 маршрутов — каталог с кухней, крабами, асадо, винодельнями. В source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 есть отдельные винные экскурсии/туры, но не тождественная EN-статья."
+      ],
+      "note": "EN — обзорная статья, RU-кандидат — более широкий гастрономический каталог; совпадение темы вина не делает их одной сущностью. Точный sameAs не подтвержден; статья не приписана Tour.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:41.322Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/asuncion/excursions",
@@ -455,5 +465,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:24.886Z"
+  "updatedAt": "2026-10-21T15:38:41.322Z"
 }

@@ -4,7 +4,7 @@ export const BRANCH='feature/external-identity-swarm-20261021';
 export const LIMIT=30;
 export const LEASE_MINUTES=90;
 export const STATUSES=['matched_exact','redirect_ready','checked_no_confirmed_pair','review','retry','excluded'];
-export const DOMAINS=['vipdeluxetravel.ru','adatours.com','brasiltours.ru'];
+export const DOMAINS=['vipdeluxetravel.ru','adatours.com'];
 export const stamp=ms=>new Date(ms).toISOString();
 export function hashString(str) {
   let h=2166136261;
@@ -18,7 +18,7 @@ export function requireIdentity(ownerId,token) {
     throw Error('Use distinct persistent ownerId/token (12-100 safe characters)');
 }
 export function batchPath(batchId) {
-  if(!/^(vip|en|br)-[0-9]{3}$/.test(batchId))throw Error('Invalid batchId');
+  if(!/^(vip|en)-[0-9]{3}$/.test(batchId))throw Error('Invalid batchId');
   return SWARM_ROOT+'/batches/'+batchId+'.json';
 }
 export function validateBatch(batch) {
@@ -35,8 +35,8 @@ export function validateBatch(batch) {
   return batch;
 }
 export function batchIdMatchesDomain(id,domain) {
-  return /^(vip|en|br)-[0-9]{3}$/.test(id) &&
-    ({vip:'vipdeluxetravel.ru',en:'adatours.com',br:'brasiltours.ru'})[id.split('-')[0]]===domain;
+  return /^(vip|en)-[0-9]{3}$/.test(id) &&
+    ({vip:'vipdeluxetravel.ru',en:'adatours.com',})[id.split('-')[0]]===domain;
 }
 export function summary(batch) {
   const counts={queued:0,matched_exact:0,redirect_ready:0,checked_no_confirmed_pair:0,review:0,retry:0,excluded:0};

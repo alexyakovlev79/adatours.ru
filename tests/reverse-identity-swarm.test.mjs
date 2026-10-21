@@ -76,3 +76,8 @@ test('verified external identity is domain-specific with evidence',()=>{
   assert.throws(()=>validatedResult('vipdeluxetravel.ru',{
     ...review,ruUrl:'https://adatours.ru/brazil/'}),/Unconfirmed/);
 });
+
+test('Brasiltours donor site is excluded from worker batch identity',()=>{
+  assert.throws(()=>batchPath('br-001'),/Invalid batchId/);
+  assert.throws(()=>validateBatch({version:1,batchId:'br-001',domain:'brasiltours.ru',records:[{sourceUrl:'https://brasiltours.ru/',inventoryPosition:1,status:'queued'}]}));
+});

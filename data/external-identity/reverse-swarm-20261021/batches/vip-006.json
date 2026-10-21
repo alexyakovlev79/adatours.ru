@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi7p2m1-46jkr1l3h9z",
-    "token": "reverse-lease-mvi7p2m1-bhbkklcevvf",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:33:01.524Z",
-    "expiresAt": "2026-10-21T16:03:01.524Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-santa-kruz-v-bolivii",
@@ -602,8 +596,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/612ba76ffe62cec6f089d9f9.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан точный снимок snapshots/612ba76ffe62cec6f089d9f9.html, проверен SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855; snapshotHttp 200, pageType excursion_listing, H1 «». Пустой HTML /ekskursii (0 байт); родительская страница подтверждает город Такна в Перу и его окрестности.",
+        "В текущем main source-index нет активных самостоятельных экскурсий destination_peru_takna; соответствующий каталог маршрутизатор не формирует. Путеводитель по Такне активен, но не является каталогом экскурсионных продуктов. Проверка RU-цели 21.10.2026: https://adatours.ru/peru/tacna/ → HTTP 404; активный каталог по этому адресу отсутствует."
+      ],
+      "note": "Экскурсионный каталог Такны отсутствует (HTTP 404). Требуется отдельное решение: страница места либо 410. Содержимое пустого старого каталога не восстанавливается, подтверждённая цель 301 не назначена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:40:59.936Z",
+      "checkedBy": "reverse-worker-mvi7p2m1-46jkr1l3h9z",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:40:57.508Z"
+  "updatedAt": "2026-10-21T14:40:59.936Z",
+  "completedAt": "2026-10-21T14:40:59.936Z",
+  "lastOwner": "reverse-worker-mvi7p2m1-46jkr1l3h9z"
 }

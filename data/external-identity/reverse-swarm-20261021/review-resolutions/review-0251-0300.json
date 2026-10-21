@@ -569,7 +569,27 @@
         "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.65,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Три программы совпадают по названиям и срокам, но третья имеет другую последовательность стран и точку выезда. Порог для всего каталога не достигнут.",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /georgetown/packages показывает Guianas experience with local community (9 дней), Suriname Guyana French Guiana (14), The Three Guianas highlights (7). Прямая проверка последнего продукта /guyana-surinam-french-guyana: прибытие в Guyana/Georgetown, день 2 Kaieteur и перелет в Suriname, отъезд из Suriname.",
+          "RU GET https://adatours.ru/guyana/place/georgetown/tour/ HTTP 200: три тура на 7/9/14 дней, destination_guyana_dzhordzhtaun. Проверенный current main ID tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana: 7-дневная программа начинается в Suriname, а Georgetown/Kaieteur поставлены в завершающую часть."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 262,
@@ -600,7 +620,29 @@
         "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.65,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Две программы парные; семидневная расходится по маршруту и содержит противоречие рейсов. Частичного совпадения недостаточно для whole-catalog sameAs.",
+        "evidence": [
+          "Frozen inventory #376: title «Guyana Tours: Kaieteur Falls & Amazon Jungle | Ada Tours», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+          "EN HTTP 200/self canonical; H1 «Guyana: Tours to Kaieteur Falls and the Rupununi Savannah». Три карточки: /guianas-experience-with-local-community (9д), /suriname-guyana-french-guiana (14д), /guyana-surinam-french-guyana (7д). Все три текущие программы отдельно прочитаны.",
+          "RU HTTP 200 https://adatours.ru/guyana/tour/ — 3 программы на 9/14/7 дней; проверены текущие MD main 81bda828: tour_source_priklyuchenie_v_gvianakh, tour_source_surinam_gajana_frantsuzskaya_gviana, tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana. 9д и 14д совпадают по последовательности ключевых дней и включениям.",
+          "Существенное расхождение 7-дневного продукта: EN day1 Georgetown/Guyana → day2 Kaieteur/Suriname → day6 Kourou space centre → day7 Depart Suriname; RU day1 Paramaribo/Suriname → day5 Cayenne/Paramaribo → day6 Georgetown/Kaieteur → day7 Depart Guyana. В RU included есть Suriname–Guyana, в EN текст дней и блок перелетов противоречат друг другу."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 263,
@@ -630,7 +672,28 @@
         "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.65,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Полный productsjson содержит три продукта; девяти- и четырнадцатидневные пары сильные, семидневная меняет начало/конец. Каталог целиком не принят.",
+        "evidence": [
+          "Frozen inventory 2026-10-12 category HTTP 200; crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Kaieteur: Tours to the Legendary Waterfall and the Amazon Jungle». Реальный module/productsjson по datasrc: total=3, UID 4356 Guianas experience with local community (9 дней), 3650 Suriname, Guyana, French Guiana (14), 1150 The Three Guianas highlights (7).",
+          "Проверены main src/content/destinations/nacionalnyj-park-kajetur.md, approved destination_guyana_nacionalnyj_park_kajetur, и RU-каталог /guyana/place/kaieteur-national-park/tour/ HTTP 200. В RU ровно 3 маршрута: /multi-country/tour/guianas-adventure/ (9), /multi-country/tour/suriname-guyana-french-guiana/ (14), /multi-country/tour/suriname-guyana-french-guiana-3-countries/ (7). Проверены живые полные страницы всех шести EN/RU-программ, а не только названия в каталоге.",
+          "Расхождение 7-дневной программы: EN https://adatours.com/guyana-surinam-french-guyana сейчас Day 1 Arrival in Guyana Georgetown, Day 2 Kaieteur + flight to Suriname, Day 4 French Guiana/Cayenne, Day 6 Space center + return Suriname, Day 7 Depart Suriname. RU /multi-country/tour/suriname-guyana-french-guiana-3-countries/ начинает с прибытия в Суринам/Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 вылет из Гайаны. Иная последовательность стран и конечные аэропорты. 9- и 14-дневные кандидаты имеют совпадающую базовую последовательность."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 264,
@@ -660,7 +723,28 @@
         "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.6,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Помимо конфликта семидневного тура, EN-каталог города Куру сравнивается с RU-каталогом космодрома. Полное равенство предмета и состава не установлено.",
+        "evidence": [
+          "Frozen inventory 2026-10-12 category HTTP 200; crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Kourou: Tours to the Spaceport and Rocket Launches». Реальный module/productsjson по datasrc: total=3, UID 4356 Guianas experience with local community (9 дней), 3650 Suriname, Guyana, French Guiana (14), 1150 The Three Guianas highlights (7).",
+          "Проверены main src/content/destinations/kosmodrom-kuru.md, approved destination_french_guiana_kosmodrom_kuru, и RU-каталог /french-guiana/place/guiana-space-centre/tour/ HTTP 200. В RU ровно 3 маршрута: /multi-country/tour/guianas-adventure/ (9), /multi-country/tour/suriname-guyana-french-guiana/ (14), /multi-country/tour/suriname-guyana-french-guiana-3-countries/ (7). Проверены живые полные страницы всех шести EN/RU-программ, а не только названия в каталоге.",
+          "Расхождение 7-дневной программы: EN https://adatours.com/guyana-surinam-french-guyana сейчас Day 1 Arrival in Guyana Georgetown, Day 2 Kaieteur + flight to Suriname, Day 4 French Guiana/Cayenne, Day 6 Space center + return Suriname, Day 7 Depart Suriname. RU /multi-country/tour/suriname-guyana-french-guiana-3-countries/ начинает с прибытия в Суринам/Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 вылет из Гайаны. Иная последовательность стран и конечные аэропорты. 9- и 14-дневные кандидаты имеют совпадающую базовую последовательность."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 265,
@@ -689,7 +773,27 @@
         "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.45,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Шесть EN против семи RU, включая актуальные большие маршруты. Общий фильтр Манагуа подтвержден, тождество списка нет.",
+        "evidence": [
+          "Frozen inventory: snapshotHttp 200; title «Managua Tours | Capital of Nicaragua & Lake Managua», H1 «Managua: Tours to the Capital and Lake Managua», snapshotFile не указан; crawl-002: category_id=38, isPackageCategory.",
+          "21.10.2026 EN HTML HTTP 200: typeid=1&category_id=38, AggregateOffer.offerCount=6. RU /nicaragua/place/managua/tour/ HTTP 200: «7 туров», показано 1–7 из 7, в том числе «Лучшее в Никарагуа: вулканы, Ометепе и Тихий океан» и 26-дневная Центральная Америка; source-index destination_nicaragua_managua."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 266,
@@ -719,7 +823,28 @@
         "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.05,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "EN фактически выдает горнолыжный SKIWEEK 2022, RU — шесть городских/винных экскурсий. Это разные продукты и назначение.",
+        "evidence": [
+          "Frozen inventory/crawl-002: snapshotHttp 200, category_id=58, isExcursionCategory, title «Mendoza Excursions | Vineyards, Wine Tasting & Wine Route», H1 общий; snapshotFile не указан.",
+          "21.10.2026 EN HTML HTTP 200; productsjson с исходным datasrc возвращает один продукт uid 187 «ESP: SKIWEEK en Las Leñas (Argentina)», URL /argentina-mendoza-skiweek; в HTML указана программа с периодом 18.06–03.09.2022.",
+          "RU /argentina/place/mendoza/ HTTP 200, destination_argentina_mendoza: 6 экскурсий, в том числе обзорная по Мендосе, долина Уко и Лухан-де-Куйо, винодельни и дегустации. Это иной состав, не программа SKIWEEK."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 267,
@@ -749,7 +874,28 @@
         "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.35,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Четыре конкретных EN-продукта против девяти RU с дополнительными межстрановыми/длинными маршрутами; равенства подборки нет.",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mendoza Tours | Vineyards & Wine Tasting | Ada Tours», H1 «Mendoza: Tours to Vineyards and Argentine Wine Tastings», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTML HTTP 200: typeid=1, category_id=58, offerCount=4. productsjson показывает uid 4236 All Argentina, 3555 Argentina for good life degustateurs, 4372 Aconcagua Trek, 2750 Colorful Argentina: Buenos Aires-Mendoza-Calafate-Iguassu.",
+          "RU /argentina/place/mendoza/tour/ HTTP 200: 9 туров. В наборе есть 9-дневный Chile–Argentina–Mendoza wine, 17-дневный Chile–Argentina grand tour и 26-дневный Best of Argentina/Patagonia; stable ID места destination_argentina_mendoza."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 268,
@@ -779,7 +925,28 @@
         "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.1,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Один короткий Merida City Break не равен двум большим венесуэльским маршрутам на 12 дней.",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mérida Tours | Mountain Resort & Adventure | Ada Tours», H1 «Mérida: Tours to the Andes, Cable Car, and Adventure», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTML HTTP 200: package category_id=141, offerCount=1. productsjson: единственный uid 3678 «Merida City Break», /merida-city-break.",
+          "RU /venezuela/place/merida/tour/ HTTP 200: 2 тура — «Венесуэла -Новые Конкистадоры» и «Тур в Венесуэлу на 12 дней с пляжным отдыхом и эко-маршрутами»; destination_venezuela_merida."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 269,
@@ -809,7 +976,28 @@
         "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.1,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Пустая фактическая EN-выдача против шести RU-экскурсий. Совпадение региона Мехико/Теотиуакан не заменяет состава.",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Excursions and tours to the capital of Mexico, Mexico City», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTML HTTP 200, typeid=2&category_id=190; productsjson с исходным datasrc возвращает products=[], total=0.",
+          "RU /mexico/mexico-city-and-teotihuacan/ HTTP 200: каталог «6 экскурсий в Мехико (руины Теотиуакана)»; source-index destination_mexico_mehiko_siti_ruiny_teotihuakana."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 270,
@@ -839,7 +1027,28 @@
         "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.5,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Одинаковое число 11 не доказывает равенство: доступные EN-карточки и RU-названия заметно различаются, полный EN-набор не сохранен.",
+        "evidence": [
+          "Frozen inventory/crawl-002: title «Mexico City Tours | Zocalo, Teotihuacan & Chapultepec», H1 «Mexico City: Tours to the Capital and Pyramids», snapshotHttp 200, pageType category; snapshotFile не указан.",
+          "Онлайн-проверка 21.10.2026: EN HTTP 200: typeid=1, category_id=190, schema offerCount=11. Первая выдача productsjson содержит uid 2514 Amazing Gastronomic Mexico Tour, 4380 Mexico Fantastico, 3759 Mexico Lindo, 3614 Gran Tour of Mexico, 3679 Mexico: Colonial & Culinary, 3615 Viva Mexico, 2289 All Mexico, 3761 Colonial Treasures; ответ ограничен первыми 8 карточками, полным списком его не считаю.",
+          "RU /mexico/place/mexico-city-and-teotihuacan/tour/ HTTP 200, 11 туров: в числе карточек 26-дневная Центральная Америка, День Мертвых, Религиозное путешествие и Треугольник Солнца; stable ID destination_mexico_mehiko_siti_ruiny_teotihuakana."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 271,
@@ -1742,12 +1951,12 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:29:59.336Z",
+  "updatedAt": "2026-10-21T16:30:01.458Z",
   "summary": {
     "total": 50,
-    "adjudicated": 10,
+    "adjudicated": 20,
     "matched_exact": 3,
-    "checked_no_confirmed_pair": 7,
-    "pending": 40
+    "checked_no_confirmed_pair": 17,
+    "pending": 30
   }
 }

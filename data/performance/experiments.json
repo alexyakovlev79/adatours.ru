@@ -119,6 +119,199 @@
           "note": "Unrelated existing all-tests failure; production curated-test/build/deploy gate succeeded."
         }
       }
+    },
+    {
+      "id": "P03",
+      "kind": "optimization",
+      "date": "2026-10-21",
+      "status": "published_measurements_partial",
+      "authorization": "User rejects unrelated photo before video; use exact first frame, independent mobile/desktop variants; architecture reusable for future page/card covers, no new video placements now.",
+      "scope": "Existing homepage and Brazil hero movies; generic reusable cover, independent phone/desktop sources and exact first-frame posters. No new placements.",
+      "sourceCommit": "67f05033539de839a03a951e650d8557342925d6",
+      "successfulDeployRun": 39614440948,
+      "raw": "data/performance/runs/P03-hero-video-first-frame-20261021.json",
+      "validRuns": 20,
+      "excluded": {
+        "DRIFT": 13,
+        "ERROR": 5
+      },
+      "measured": {
+        "home": {
+          "Mobile": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 78,
+              "fcpMs": 1051,
+              "lcpMs": 5367,
+              "tbtMs": 108,
+              "cls": 0,
+              "siMs": 4398,
+              "performanceRange": [
+                75,
+                80
+              ],
+              "lcpRangeMs": [
+                5246,
+                5595
+              ]
+            },
+            "after": {
+              "count": 1,
+              "complete": false,
+              "performance": 79,
+              "fcpMs": 1051,
+              "lcpMs": 5189,
+              "tbtMs": 10,
+              "cls": 0,
+              "siMs": 3950,
+              "performanceRange": [
+                79,
+                79
+              ],
+              "lcpRangeMs": [
+                5189,
+                5189
+              ]
+            }
+          },
+          "Desktop": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 95,
+              "fcpMs": 281,
+              "lcpMs": 1457,
+              "tbtMs": 10,
+              "cls": 0,
+              "siMs": 852,
+              "performanceRange": [
+                87,
+                96
+              ],
+              "lcpRangeMs": [
+                1396,
+                1499
+              ]
+            },
+            "after": {
+              "count": 1,
+              "complete": false,
+              "performance": 96,
+              "fcpMs": 304,
+              "lcpMs": 1358,
+              "tbtMs": 8,
+              "cls": 0,
+              "siMs": 712,
+              "performanceRange": [
+                96,
+                96
+              ],
+              "lcpRangeMs": [
+                1358,
+                1358
+              ]
+            }
+          }
+        },
+        "brazil": {
+          "Mobile": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 78,
+              "fcpMs": 1276,
+              "lcpMs": 5686,
+              "tbtMs": 32,
+              "cls": 0,
+              "siMs": 2824,
+              "performanceRange": [
+                66,
+                80
+              ],
+              "lcpRangeMs": [
+                5484,
+                6230
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 66,
+              "fcpMs": 3928,
+              "lcpMs": 6228,
+              "tbtMs": 28,
+              "cls": 0,
+              "siMs": 5119,
+              "performanceRange": [
+                66,
+                78
+              ],
+              "lcpRangeMs": [
+                5695,
+                6360
+              ]
+            }
+          },
+          "Desktop": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 95,
+              "fcpMs": 352,
+              "lcpMs": 1552,
+              "tbtMs": 34,
+              "cls": 0,
+              "siMs": 652,
+              "performanceRange": [
+                94,
+                96
+              ],
+              "lcpRangeMs": [
+                1390,
+                1564
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 94,
+              "fcpMs": 339,
+              "lcpMs": 1532,
+              "tbtMs": 47,
+              "cls": 0,
+              "siMs": 733,
+              "performanceRange": [
+                88,
+                95
+              ],
+              "lcpRangeMs": [
+                1416,
+                1589
+              ]
+            }
+          }
+        }
+      },
+      "decision": "Publish requested first-frame UX, retain independent device sources and no new placements. No homepage gain claim: only1/3 after reports completed, other2 failed/navigation and human-verification. Brazil Mobile score median78→66, LCP5686→6228ms, Desktop95→94, LCP1552→1532ms; ranges overlap and FCP bimodal. Investigate photo-only device branch startup and render/font/third-party timing next, discuss before another experiment. Do not attribute regression solely to crop/first-frame or claim proven gain.",
+      "blocker": {
+        "provider": "Google PageSpeed Insights",
+        "scope": "Homepage after run3, before report created; both device metrics unavailable",
+        "reason": "Unusual traffic / human-verification page persists after one permitted reload. No CAPTCHA interaction, no alternate route/proxy/API retries. Existing reports that were already started are retained.",
+        "attemptTime": "2026-10-21T14:36:51Z"
+      },
+      "validation": {
+        "productionBuild": "success",
+        "productionPages": "success",
+        "s3Receipts": "3 uploaded, GET/SHA verified; production ledger verification success",
+        "browserDesktopHome": "video mode; only selected first-frame img active; selected desktop movie playing; native poster absent; no country-card videos",
+        "ssr": "home and Brazil: photo only in inert template/noscript; zero active SSR img; src/poster absent on video; chosen frame/video in data attributes",
+        "deviceHarness": "16 source/device branches pass; four Node tests; Astro SSR/no-JS fixture pass",
+        "realPhoneScreenshot": false,
+        "browserDesktopBrazil": "Only matching first-frame img active and complete; selected desktop movie playing; native poster absent.",
+        "psiEmulatedMobileHome": "LCP DOM identifies selected mobile first-frame img, not editorial photo.",
+        "sheetVisual": "Google browser requires sign-in; existing row styles copied and verified through API. No sign-in attempted."
+      }
     }
   ]
 }

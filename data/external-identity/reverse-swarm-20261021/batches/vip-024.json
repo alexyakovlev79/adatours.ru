@@ -362,7 +362,18 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7f9b5cae0644f59dc683c5c8.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/rio-de-janeiro/rio-de-janeiro-surfing-lesson/",
+      "evidence": [
+        "Проверен архив vip-identity-crawl-20261020.zip, SHA-256 e49c366e917e29f6ee3df86b8c2368f06f4581cb96d300324b1642f8e4a9dbb5: snapshots/7f9b5cae0644f59dc683c5c8.html совпадает с inventory snapshotSha256. H1 «Урок серфинга Рио -де- Жанейро», тип excursion_candidate, HTTP 200; описание ограничено фразой «Атлантика ждет своих покорителей!».",
+        "GET 21.10.2026 исходного URL завершился HTTP 200 на плоском /urok-serfinga-rio-de-zhanejro; карточка Excursion, код sur. Подтвержден предмет — урок серфинга в Рио, а не каталог или другой водный спорт.",
+        "RU canonical открыт напрямую: HTTP 200, canonical совпадает; approved excursion_source_urok_serfinga_rio_de_zhanejro, src/content/excursions/urok-serfinga-rio-de-zhanejro.md (main e21d06ae). Урок на Арпоадоре/Ипанеме с инструктором и доской соответствует конкретному назначению исходной карточки."
+      ],
+      "note": "Кандидат для будущего 301 на действующую карточку урока серфинга. Неполное описание VIP не подтверждает равенство длительности и всех условий; фактический 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T16:21:34.387Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 2
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/citi-tur-po-la-pasu-pokoj-ocharovaniya",
@@ -485,7 +496,7 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:18:41.729Z",
+  "updatedAt": "2026-10-21T16:21:34.387Z",
   "leaseHistory": [
     {
       "ownerId": "reverse-worker-mvi83xgd-3cwif9g4q3",

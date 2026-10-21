@@ -502,7 +502,17 @@
       "pageType": "unclassified",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/f16d6ddae9232fbfac8945a5.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/el-salvador/place/santa-ana/",
+      "evidence": [
+        "Frozen VIP #545: HTTP=200, pageType=unclassified, title=\"Экскурсии и туры в Санта-Анна и городище Тасумаль в Сальвадоре\", H1=\"Санта Ана\", snapshotFile=snapshots/f16d6ddae9232fbfac8945a5.html; не свежий запрос.",
+        "RU Destination MD src/content/destinations/santa-ana.md: id=destination_el_salvador_santa_ana, status approved; H1 сущности Санта-Ана. В body прямо упомянут комплекс Тасумаль в западной части региона и поездки из города; оба исходных топонима охвачены."
+      ],
+      "note": "Старый title включает Санта-Ану и Тасумаль, H1 — Санта-Ана; действующая RU страница города охватывает оба объекта с тем же туристическим намерением. Это заготовка 301, не действующий редирект.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:54:01.416Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-santa-anna-i-gorodishche-tasumal-v-salvadore/packages",
@@ -555,5 +565,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:53:30.483Z"
+  "updatedAt": "2026-10-21T14:54:01.416Z"
 }

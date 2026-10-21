@@ -262,7 +262,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/cca8545ef1cf0f9e056fa3e2.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen crawl 2026-10-20: HTTP 200 with generic title \"VIP Deluxe Travel\" but finalUrl is the VIP home page, not a populated cart page.",
+        "Ada Tours RU is a lead-generation site without a shopping cart or equivalent public product detail at a cart address."
+      ],
+      "note": "Устаревший технический маршрут корзины магазина возвращает главную страницу; не имеет самостоятельного контента для перенаправления.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:06:16.370Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=checkout%2Fcheckout",
@@ -435,5 +445,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:05:31.488Z"
+  "updatedAt": "2026-10-21T15:06:16.370Z"
 }

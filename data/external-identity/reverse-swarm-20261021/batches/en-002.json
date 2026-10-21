@@ -22,7 +22,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP 200, canonical /bariloche/packages, H1 Bariloche: Tours to the Patagonia Ski Resort and Lakes; 5 карточек: All Argentina, Grand VIP Chile/Argentina 17 days, Bariloche and Buenos Aires, Best of Argentina, Patagonian Lake Crossing. HTML SHA-256 eb4401cb94cb791164b097daaa0445369aa1543508b2063c2f257e7d13754d80.",
+        "RU live HTTP 200 /argentina/place/bariloche/tour/, canonical совпадает; 8 туров. Включены, например, Lakeshore Chalet 10 дней, Аргентина/Чили/Боливия 18 дней, Аргентина и Патагония 14 дней. SHA-256 2cbb2c698a44b11f7147cdbd6c7ac937550d99b6cc2e3c31321018fd56082944.",
+        "Frozen EN inventory: category, HTTP 200, H1 тот же; crawl adatours-com-crawl-001, category_id 249, snapshotFile отсутствует. RU stable ID места destination_argentina_bariloche."
+      ],
+      "note": "География и намерение каталогов близки, но текущий состав 5 EN против 8 RU различается. sameAs не подтвержден; отдельная статья о Барилоче не заменяет каталог туров.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:56.108Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/beach-tours",
@@ -315,5 +326,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:31:29.893Z"
+  "updatedAt": "2026-10-21T15:33:56.108Z"
 }

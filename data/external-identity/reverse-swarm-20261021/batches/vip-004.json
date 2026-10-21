@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi7q2f3-npohnkqqib",
-    "token": "reverse-lease-mvi7q2f3-9r3g7pebjc5",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:33:47.939Z",
-    "expiresAt": "2026-10-21T16:03:47.939Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-vulkan-rinkon-de-la-vekho-v-kosta-rike",
@@ -575,8 +569,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/6a09ebb7632e98c512f0b131.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/sao-luis/",
+      "evidence": [
+        "VIP frozen #520: /ekskursii геостраницы Сан-Луиса, тип excursion_listing, snapshotHttp 200, title/H1 отсутствуют.",
+        "RU src/content/excursions/oznakomitelnaya-ekskursiya-po-san-luisu.md (blob d22e3af6), excursion_sao_luis_intro_city_tour, status approved и primary destination destination_brazil_sao_luis; также есть обзорная четырехчасовая экскурсия. Каталог экскурсий места /brazil/sao-luis/ непустой."
+      ],
+      "note": "Непустой RU-каталог соответствует типу и городу; старый товарный состав по snapshot не доказан. Будущий 301 не настроен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:46:54.072Z",
+      "checkedBy": "reverse-worker-mvi7q2f3-npohnkqqib",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:46:49.253Z"
+  "updatedAt": "2026-10-21T14:46:54.072Z",
+  "completedAt": "2026-10-21T14:46:54.072Z",
+  "lastOwner": "reverse-worker-mvi7q2f3-npohnkqqib"
 }

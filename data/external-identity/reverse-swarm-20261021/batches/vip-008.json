@@ -582,7 +582,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/414d1f1c458e1fe184d2df4e.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/french-guiana/tour/",
+      "evidence": [
+        "VIP inventory #639: /packages у страны «Французская Гвиана», pageType=tour_listing, historical HTTP 200 с пустыми заголовками.",
+        "RU tours.json: 3 активных тура с основной страной country_french_guiana («Три страны: Суринам, Гайана и Фр.Гвиана», «Приключение в Гвианах» и др.); Astro создает /french-guiana/tour/."
+      ],
+      "note": "Совпадают регион и тип каталога. Не утверждается совпадение составов старого и текущего ассортимента; 301 еще не выполнялся.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:59:18.429Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/frantsuzskaya-gviana-ru/ekskursii",
@@ -595,5 +605,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:59:14.826Z"
+  "updatedAt": "2026-10-21T14:59:18.429Z"
 }

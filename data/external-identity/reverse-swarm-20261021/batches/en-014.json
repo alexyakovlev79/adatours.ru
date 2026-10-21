@@ -505,7 +505,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Excursions and tours to Santa Ana in El Salvador; H1 Tours to countries of Latin America; category_ids=[\"80\"]; adatours-com-crawl-002.json index 261; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/santa-ana/packages: HTTP 200; SHA256 331eba0761657cee1c54c0e1e591078f0f685bd171afd3d0a3d472dad6af13d9. В статическом HTML нет предметных gallery-карточек; заголовок общий Latin America. Отсутствие gallery не считается доказательством отсутствия динамических продуктов. Фильтр EN category_id 80, isPackageCategory/typeid=1.",
+        "main src/content/destinations/santa-ana.md, blob 567b3662e7498e64bdfa2a5dc59af101017e8b5d: approved destination_el_salvador_santa_ana, /el-salvador/place/santa-ana/. RU каталог https://adatours.ru/el-salvador/place/santa-ana/tour/: HTTP 200; 1 тур 2026-2027 в Санта Ане (Эль-Сальвадоре) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Санта Ана. Оставить заявку ↗ 6 дней Лучшее в Сальвадоре: вулканы, города майя и Сучитото — 6 дней Смотреть ↗ Показано 1–1 из 1 Ada Tours Расскажите, какой маршрут вам нужен Website Имя Номер для связи 🌐 +7 🌐 Russ. routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+      ],
+      "note": "Проверены EN category и действующий предметный RU каталог. EN статический HTML не дает подтверждённого полного списка продуктов, RU содержит конкретные активные программы. Точная пара sameAs не подтверждена; это не утверждение, что динамический EN каталог пуст.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:09.339Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/santo-domingo-en/excursions",
@@ -568,5 +579,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:18:07.142Z"
+  "updatedAt": "2026-10-21T16:18:09.339Z"
 }

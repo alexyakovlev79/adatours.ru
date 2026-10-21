@@ -484,7 +484,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #242: title «Colonia del Sacramento Excursions | Old Town & Lighthouse», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «Colonia del Sacramento: Excursions to the UNESCO Old Town, Lighthouse». Одна карточка /excursion-to-colonia-do-santissimo-sacramento; HTML-пагинации нет.",
+        "RU HTTP 200 https://adatours.ru/uruguay/colonia-del-sacramento/ — две самостоятельные экскурсии: из Буэнос-Айреса и 8-часовая из Монтевидео. destination_uruguay_koloniya_del_sakramento; оба excursion MD проверены в main 78fe61f4."
+      ],
+      "note": "Каталог EN содержит одну экскурсию, RU две с разными пунктами отправления. Даже возможная пара одного продукта не делает каталоги одинаковыми; sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:45:31.510Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/colonia-del-sacramento/packages",
@@ -557,5 +568,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:44:31.528Z"
+  "updatedAt": "2026-10-21T15:45:31.510Z"
 }

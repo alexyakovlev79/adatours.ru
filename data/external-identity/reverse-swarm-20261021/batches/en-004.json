@@ -445,7 +445,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:37:36.384060+00:00; HTTP 200, 92589 bytes, SHA-256 69dbd653261c65c27468dffce201116ad9438daf9154c6cc2ffa77c9854fc47c; canonical https://adatours.com/cayo-district/excursions. Title Cayo District Excursions | Maya Ruins, Caves & Rainforest; H1 Cayo District: Excursions to Maya Ruins, Caves, and Rainforest.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (1): Caracol & Rio Frio Cave & Pools.",
+        "RU-кандидат определён по канонической сущности destination_belize_kajo, data/source-index/entries/destination_belize_kajo.json, blob c418cd04cb6fc667982aa763c72464768f686f8b и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/belize/cayo/: HTTP 404; действующий каталог по этому адресу не подтверждён; в прочитанном sitemap-0.xml его нет.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "В EN показана Caracol & Rio Frio Cave & Pools; RU-каталог экскурсий Кайо возвращает HTTP 404 и отсутствует в sitemap. Карточка округа Кайо не является каталогом и не назначена sameAs."
+      ],
+      "note": "В EN показана Caracol & Rio Frio Cave & Pools; RU-каталог экскурсий Кайо возвращает HTTP 404 и отсутствует в sitemap. Карточка округа Кайо не является каталогом и не назначена sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:41:53.704Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cayo-district/packages",
@@ -548,5 +562,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:40:58.180Z"
+  "updatedAt": "2026-10-21T15:41:53.704Z"
 }

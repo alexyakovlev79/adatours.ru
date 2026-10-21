@@ -456,7 +456,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/porto-seguro-arraial-d-ajuda/excursions; canonical sourceUrl; H1 «Excursions to countries of Latin America». В полученном HTML карточек gallery-title нет; основной текст — общий шаблон путешествий/экскурсий Латинской Америки.",
+        "main 50542db1: destination_brazil_porto_seguro, approved, src/content/destinations/porto-seguro.md, canonical /brazil/place/porto-seguro/. Порту-Сегуру на юге штата Баия сочетает исторический центр колониального периода, атлантические пляжи и активную курортную жизнь. В программу можно включить старый город, музейные объекты, побережье, рифы и соседние курортные районы. Активных основных RU-туров: 0, собственных Excursion по destination: 0.",
+        "Маршрутизатор RU src/pages/[...path].astro создает только непустые каталоги; основное и факультативное посещение разделены. Отдельная страница Place не является каталогом с тем же фильтром и набором продуктов."
+      ],
+      "note": "Подтвержденной пары конкретного EN-каталога нет: состав локальных предложений не установлен по HTML. Совпадающее географическое название не является достаточным основанием для sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:01.199Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/porto-seguro-arraial-d-ajuda/packages",
@@ -539,5 +550,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:16:58.879Z"
+  "updatedAt": "2026-10-21T16:17:01.199Z"
 }

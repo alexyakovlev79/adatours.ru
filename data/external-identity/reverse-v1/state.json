@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T09:53:51.006Z",
+  "updatedAt": "2026-10-21T09:57:35.821Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -9889,103 +9889,169 @@
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/bolivia/place/oruro/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii; snapshot fetched, HTTP not received, title Экскурсии и туры в город Оруро (Oruro) в Боливии; unclassified.",
+        "Exact source-index mapping destination_bolivia_oruro (Оруро), original https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii; approved RU MD ac9a9bc655abc9374979b71b6739af45513cdaf2, canonical https://adatours.ru/bolivia/place/oruro/."
+      ],
+      "note": "Identical geographical entity and editorial landing intent supported by archived title, exact legacy source and approved RU MD. Prospective 301 only; not deployed.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii/packages": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii/packages; snapshot empty_html, HTTP not received, title not extracted; tour_listing.",
+        "Exact source-index mapping destination_bolivia_oruro (Оруро), original https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii; approved RU MD ac9a9bc655abc9374979b71b6739af45513cdaf2, canonical https://adatours.ru/bolivia/place/oruro/tour/.",
+        "Active main source-index/main-route relations (archive excluded): 0 tours / 0 excursions for destination_bolivia_oruro; Astro renders only nonempty filtered catalogues. Old listing contains no retrievable product membership."
+      ],
+      "note": "Legacy tour listing returned HTTP 200 with empty body and RU destination has zero active matching tour entries; proposed https://adatours.ru/bolivia/place/oruro/tour/ is not emitted by current static generator. Decide parent destination vs HTTP 410 separately, no redirect to nonexistent filtered URL.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii/ekskursii; snapshot empty_html, HTTP not received, title not extracted; excursion_listing.",
+        "Exact source-index mapping destination_bolivia_oruro (Оруро), original https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii; approved RU MD ac9a9bc655abc9374979b71b6739af45513cdaf2, canonical https://adatours.ru/bolivia/oruro/.",
+        "Active main source-index/main-route relations (archive excluded): 0 tours / 0 excursions for destination_bolivia_oruro; Astro renders only nonempty filtered catalogues. Old listing contains no retrievable product membership."
+      ],
+      "note": "Legacy excursion listing returned HTTP 200 with empty body and RU destination has zero active matching excursion entries; proposed https://adatours.ru/bolivia/oruro/ is not emitted by current static generator. Decide parent destination vs HTTP 410 separately, no redirect to nonexistent filtered URL.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle": {
-      "status": "leased",
+      "status": "retry",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle; snapshot network_error, HTTP not received, title not extracted; unclassified.",
+        "Exact source-index mapping destination_venezuela_ostrov_margarita (Остров Маргарита), original https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle; approved RU MD d22510c56ddd9198802a3d2ab86ddb529ef2887b, canonical https://adatours.ru/venezuela/place/margarita-island/."
+      ],
+      "note": "Archived VIP request failed (network_error, no preserved HTML content). Candidate RU place/category is known but old page meaning cannot be verified from this snapshot; retry this exact source URL separately, do not approve a 301 from an unreachable old page.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/venezuela/place/margarita-island/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle/packages; snapshot empty_html, HTTP not received, title not extracted; tour_listing.",
+        "Exact source-index mapping destination_venezuela_ostrov_margarita (Остров Маргарита), original https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle; approved RU MD d22510c56ddd9198802a3d2ab86ddb529ef2887b, canonical https://adatours.ru/venezuela/place/margarita-island/tour/.",
+        "Active main source-index/main-route relations (archive excluded): 3 tours / 0 excursions for destination_venezuela_ostrov_margarita; Astro renders only nonempty filtered catalogues. Old listing contains no retrievable product membership."
+      ],
+      "note": "Matching destination and tour catalogue intent, active RU entries available. The old HTTP 200 listing is zero-byte, so historical product-list equality cannot be confirmed. Future 301 only; check live target before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle/ekskursii; snapshot empty_html, HTTP not received, title not extracted; excursion_listing.",
+        "Exact source-index mapping destination_venezuela_ostrov_margarita (Остров Маргарита), original https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venesuehle; approved RU MD d22510c56ddd9198802a3d2ab86ddb529ef2887b, canonical https://adatours.ru/venezuela/margarita-island/.",
+        "Active main source-index/main-route relations (archive excluded): 3 tours / 0 excursions for destination_venezuela_ostrov_margarita; Astro renders only nonempty filtered catalogues. Old listing contains no retrievable product membership."
+      ],
+      "note": "Legacy excursion listing returned HTTP 200 with empty body and RU destination has zero active matching excursion entries; proposed https://adatours.ru/venezuela/margarita-island/ is not emitted by current static generator. Decide parent destination vs HTTP 410 separately, no redirect to nonexistent filtered URL.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua": {
-      "status": "leased",
+      "status": "retry",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua; snapshot network_error, HTTP not received, title not extracted; unclassified.",
+        "Exact source-index mapping destination_nicaragua_ostrov_ometepe (Остров Ометепе), original https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua; approved RU MD c6d295b1d794d653ccebd45f67f9b748e75d07bd, canonical https://adatours.ru/nicaragua/place/ometepe-island/."
+      ],
+      "note": "Archived VIP request failed (network_error, no preserved HTML content). Candidate RU place/category is known but old page meaning cannot be verified from this snapshot; retry this exact source URL separately, do not approve a 301 from an unreachable old page.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/nicaragua/place/ometepe-island/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua/packages; snapshot empty_html, HTTP not received, title not extracted; tour_listing.",
+        "Exact source-index mapping destination_nicaragua_ostrov_ometepe (Остров Ометепе), original https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua; approved RU MD c6d295b1d794d653ccebd45f67f9b748e75d07bd, canonical https://adatours.ru/nicaragua/place/ometepe-island/tour/.",
+        "Active main source-index/main-route relations (archive excluded): 1 tours / 1 excursions for destination_nicaragua_ostrov_ometepe; Astro renders only nonempty filtered catalogues. Old listing contains no retrievable product membership."
+      ],
+      "note": "Matching destination and tour catalogue intent, active RU entries available. The old HTTP 200 listing is zero-byte, so historical product-list equality cannot be confirmed. Future 301 only; check live target before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua/ekskursii": {
-      "status": "leased",
+      "status": "retry",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua/ekskursii; snapshot network_error, HTTP not received, title not extracted; excursion_listing.",
+        "Exact source-index mapping destination_nicaragua_ostrov_ometepe (Остров Ометепе), original https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua; approved RU MD c6d295b1d794d653ccebd45f67f9b748e75d07bd, canonical https://adatours.ru/nicaragua/ometepe-island/.",
+        "Active main source-index/main-route relations (archive excluded): 1 tours / 1 excursions for destination_nicaragua_ostrov_ometepe; Astro renders only nonempty filtered catalogues. Old listing contains no retrievable product membership."
+      ],
+      "note": "Archived VIP request failed (network_error, no preserved HTML content). Candidate RU place/category is known but old page meaning cannot be verified from this snapshot; retry this exact source URL separately, do not approve a 301 from an unreachable old page.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b08-recovery",
-      "token": "vip-oct21-b08-recovery-20261021",
+      "ruUrl": "https://adatours.ru/chile/place/easter-island/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:57:35.821Z",
+      "evidence": [
+        "VIP preserved 2026-10-19 crawl: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island; snapshot fetched, HTTP not received, title Остров Пасхи, Чили: достопримечательности и путеводитель по острову моаи; unclassified.",
+        "Exact source-index mapping destination_chile_ostrov_pashi (Остров Пасхи), original https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island; approved RU MD ca4ae5594471c0e6d5d6b5a56cdfd49e9cf88ab9, canonical https://adatours.ru/chile/place/easter-island/."
+      ],
+      "note": "Identical geographical entity and editorial landing intent supported by archived title, exact legacy source and approved RU MD. Prospective 301 only; not deployed.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m-part-01.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
-      "claimedAt": "2026-10-21T09:53:51.006Z",
-      "expiresAt": "2026-10-21T10:53:51.006Z",
+      "ownerId": "reverse-vip-oct21-b08-recovery",
       "generation": 2
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island/packages": {

@@ -234,7 +234,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/belize/place/placencia/tour/",
+      "evidence": [
+        "EN live HTTP 200, self canonical /belize-placencia/packages, H1 Placencia: Tours to the Resort with Beaches and the Reef. Полный состав: Exploring Belize и Belize Highlights for 11 days, ровно 2 карточки. HTML SHA-256 085528b96edb1fdcccbe73971fd217fa3f0d1f1e25070a8588642922d525f376.",
+        "RU live HTTP 200 /belize/place/placencia/tour/, self canonical, ровно 2 тура: Исследуя Белиз /belize/tour/explore-belize/ и Лучшее в Белизе за 11 дней /belize/tour/best-of-belize-11-days/. Stable IDs tour_source_issleduya_beliz, tour_source_luchshee_v_belize_za_11_dnej; место destination_belize_plasensiya. SHA-256 35a98dabbed03c5b4f54a169c3ee6df6d72de473e54fccd685de0a750e7de886.",
+        "Первый товар проверен целиком: одинаковые 13д/12н и маршрут Ламанай–Кайе-Колкер–ATM–Пласенсия, отели/условия. Второй проверен по EN live /belize-highlights-for-11-days (HTTP200, SHA-256 fcb7350920889123c09c66dbafceb65c9f4077e826da67ce3ee580ef8a49ecc7) и RU published MD blob 7b4961f68c7fe83b6a6160c3ef43d7ebe0a19474: 11д/10н, Каракол/Рио-Фрио/Рио-Он день2, ATM день4, Пласенсия день6, сноркелинг7, закатный круиз9, вылет11; $3636.",
+        "У второго товара совпадают 5 ночей Sweet Songs Lodge King Casita с завтраками и 5 Caribbean Beach Cabanas Luna/Sol без питания, трансферы и перелёт. EN Mid-Range и RU Standard средний уровень имеют одинаковый конкретный гостиничный состав. Frozen inventory category_id42, snapshotFile отсутствует."
+      ],
+      "note": "Совпадают тип, фильтр Пласенсия и полный двухэлементный состав каталогов; обе программы дополнительно сверены по маршруту, длительности и существенным условиям. sameAs подтвержден только в реестре.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:41:03.579Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-punta-gorda/excursions",
@@ -427,5 +439,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:51.229Z"
+  "updatedAt": "2026-10-21T15:41:03.579Z"
 }

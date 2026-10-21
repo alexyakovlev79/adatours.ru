@@ -79,5 +79,7 @@ const vip = (await getVipTourPaths()).has(href);
     .interest-card__copy { padding: 24px var(--gutter) 30px; }
     h3 { font-size: clamp(1.85rem, 7vw, 2.55rem); }
     .interest-card--large .interest-card__link { min-height: clamp(360px, 105vw, 500px); }
+    /* Keep the hikers visible when the horizontal adventure photo is cropped on phones. */
+    .interest-card[data-interest-item="theme_adventure"] .interest-card__image img { object-position: 92% center; }
   }
 </style>

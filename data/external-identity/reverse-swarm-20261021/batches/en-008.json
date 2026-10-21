@@ -106,7 +106,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #369: title «Guayaquil Excursions | Malecon 2000, Iguana Park | Ada Tours», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «Guayaquil: Excursions to the Boardwalk, Iguana Park, Colonial Center», но единственная карточка ведет на /airport-transfer-guayaquil и описывает Airport Transfer Guayaquil, airport/hotel one way.",
+        "RU HTTP 200 https://adatours.ru/ecuador/guayaquil/ — 1 экскурсия «Кахас и плантация какао: высокогорные озёра и шоколад». main: destination_ecuador_guayakil, экскурсия cajas-and-cacao-workshop.md."
+      ],
+      "note": "Одинаковое число карточек не означает равный состав: EN предлагает трансфер, RU — экскурсию в Кахас и на какао-плантацию. sameAs каталогов не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:49:40.149Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/guayaquil/packages",
@@ -359,5 +370,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:49:37.593Z"
+  "updatedAt": "2026-10-21T15:49:40.149Z"
 }

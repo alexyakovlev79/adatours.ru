@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi90g84-avdnjyf76x8",
-    "token": "reverse-lease-mvi90g84-dcv8bcgj8aj",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:09:55.204Z",
-    "expiresAt": "2026-10-21T16:39:55.204Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package/vivat-kolumbiya?page=5",
@@ -602,8 +596,20 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7ade8d0747d1e49fb252642d.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/argentina/tour/aconcagua-climb/",
+      "evidence": [
+        "VIP inventory 20.10.2026: HTTP 200, H1 «Восхождение на Аконкагуа 6962м» (в отличие от исторического slug), canonical https://vipdeluxetravel.ru/argentina-and-south-patagonia-in-the-footsteps-of-darwin.",
+        "RU src/content/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin.md: ID tour_source_argentina_and_south_patagonia_in_the_footsteps_of_darwin, status approved; 20-дневная программа восхождения на Аконкагуа 6962м, подтвержденное совпадение H1 и маршрута по собственному MD."
+      ],
+      "note": "Для старого URL с непрозрачным slug сопоставление выполнено по фактическому H1 из frozen inventory и RU программе восхождения, а не по slug. Кандидат будущего 301; HTML ZIP/live HTTP не проверялись.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:22:23.408Z",
+      "checkedBy": "reverse-worker-mvi90g84-avdnjyf76x8",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:21:58.204Z"
+  "updatedAt": "2026-10-21T15:22:23.408Z",
+  "completedAt": "2026-10-21T15:22:23.408Z",
+  "lastOwner": "reverse-worker-mvi90g84-avdnjyf76x8"
 }

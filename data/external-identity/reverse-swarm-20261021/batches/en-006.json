@@ -22,7 +22,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: category, snapshotHttp 200, H1 «Excursions to countries of Latin America», crawlReport adatours-com-crawl-001.json; snapshotFile отсутствует, приватный HTML не просмотрен.",
+        "Живое чтение исходного URL: HTTP 200, тот же title и H1, JS-контейнер каталога; повторный запрос дал 503. Товарный состав исходника не подтвержден.",
+        "Действующая RU-страница https://adatours.ru/nicaragua/place/corn-islands/ HTTP 200, canonical совпадает, H1 «Острова Корн»; stable ID destination_nicaragua_ostrova_korn проверен в main source-index. Это страница места, не подтвержденный идентичный каталог экскурсий."
+      ],
+      "note": "Подтвержденной пары sameAs нет: географическое совпадение Островов Корн не доказывает идентичность каталога экскурсий и его состава со страницей места RU. RU canonical не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:50.327Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/corn-islands/packages",
@@ -315,5 +326,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:36:37.208Z"
+  "updatedAt": "2026-10-21T15:39:50.327Z"
 }

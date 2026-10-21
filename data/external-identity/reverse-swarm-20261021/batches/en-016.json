@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvibh2ey-wk2zo2unmhp",
-    "token": "reverse-lease-mvibh2ey-ptinidxikyc",
-    "generation": 1,
-    "claimedAt": "2026-10-21T16:19:11.392Z",
-    "expiresAt": "2026-10-21T17:49:11.392Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/valdivia/excursions",
@@ -358,7 +352,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-003: title «Wine tour Argentina and Chile», H1 «Wine tour Argentina and Chile», snapshotHttp 200, pageType other; snapshotFile не указан.",
+        "21.10.2026: EN HTTP 200: публикация «Wine tour Argentina and Chile» от 08-04-2025, категории Gastronomic/Wine Tours, Argentina, Chile. Это обзор винных регионов Майпо, Кольчагуа, Касабланка, Аконкагуа, Эльки, Мендоса, Лухан-де-Куйо, Майпу и Уко; дневной программы и фиксированной длительности нет, crawl-003 pageType other без product/category ID.",
+        "RU /multi-country/tour/chile-argentina-mendoza-wine-9-days/ HTTP 200, approved tour_source_vinnyj_tur_v_argentinu_i_chili: конкретный продукт на 9 дней с программой. /interests/food-and-wine/ — каталог 69 туров, также другой тип."
+      ],
+      "note": "Статья о винных регионах двух стран не идентична конкретному 9-дневному туру или общему гастрономическому каталогу. Сходное название не доказывает sameAs; подтвержденной RU-публикации той же статьи нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:24:35.346Z",
+      "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/wine-tours",
@@ -382,5 +387,7 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T16:24:33.161Z"
+  "updatedAt": "2026-10-21T16:24:35.346Z",
+  "completedAt": "2026-10-21T16:24:35.346Z",
+  "lastOwner": "reverse-worker-mvibh2ey-wk2zo2unmhp"
 }

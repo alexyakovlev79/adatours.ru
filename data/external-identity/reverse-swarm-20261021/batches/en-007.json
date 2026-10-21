@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
-    "token": "reverse-lease-mvi9yaqv-nz1v0iy5cs",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:36:40.217Z",
-    "expiresAt": "2026-10-21T17:06:40.217Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/encarnacion/packages",
@@ -422,7 +416,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN GET 21.10.2026 HTTP 200: /foz-do-iguacu/packages, H1 «Iguazu Falls: Devil's Throat & Adventure Tours». Проверена полная динамическая выдача /?route=module/productsjson с исходным datasrc isPackageCategory, category_id=83: 88 продуктов в срезах 1–11, slice=12 products:[], total:0. Встречаются и Argentina Chile and Bolivia, и Southern Brazil and Wineries.",
+        "RU GET https://adatours.ru/brazil/place/foz-do-iguacu/tour/ HTTP 200: каталог основного маршрута destination_brazil_iguacu, 107 туров, «Показано 1–30 из 107». Current main связывает этот каталог с основными routeDestinations, а не произвольным упоминанием Игуасу."
+      ],
+      "note": "Полный EN-набор из 88 продуктов не совпадает с текущим RU-набором из 107 туров через Фоз-ду-Игуасу. Помимо числа продуктов есть разница географического отбора; sameAs каталога не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:50:08.277Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/french-guyana-en/excursions",
@@ -605,5 +609,7 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:50:05.922Z"
+  "updatedAt": "2026-10-21T15:50:08.277Z",
+  "completedAt": "2026-10-21T15:50:08.277Z",
+  "lastOwner": "reverse-worker-mvi9yaqv-xdfoj6xzebe"
 }

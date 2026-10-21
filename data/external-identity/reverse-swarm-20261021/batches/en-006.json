@@ -326,7 +326,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Cusco Excursions | Sacsayhuaman & Sacred Valley | Ada Tours», H1 «Cusco: Excursions to the Inca Capital and Sacred Valley». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/cuzco/excursions: HTTP 200, canonical=https://adatours.com/cuzco/excursions, H1 «Cusco: Excursions to the Inca Capital and Sacred Valley».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=120&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. Первый ответ API: total=4, products=4. Примеры ID/названий: 4298 «Excursion to Machu Picchu»; 4299 «City tour and Archaeological Park of Sacsayhuaman»; 4301 «Vinicunca, the Rainbow Mountain»; 4300 «Sacred Valley Preminum (SIB)».",
+        "https://adatours.ru/peru/cusco/ — HTTP 200, canonical совпадает, H1 «14 экскурсий в Куско, Перу…». Среди RU-карточек есть экскурсии по археологии Куско, Священной долине, Мачу-Пикчу и Радужной горе."
+      ],
+      "note": "EN-каталог содержит 4 экскурсии, RU — 14. Часть тематик похожа, однако полного одинакового состава нет; каталогам sameAs не присвоен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:30.834Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cuzco/packages",
@@ -479,5 +491,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:28.789Z"
+  "updatedAt": "2026-10-21T15:46:30.834Z"
 }

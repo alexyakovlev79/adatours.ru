@@ -238,7 +238,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Tours and excursions to Cuenca in Ecuador (Azuay)», H1 «Excursions to countries of Latin America». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/cuenca/excursions: HTTP 200, canonical=https://adatours.com/cuenca/excursions, H1 «Excursions to countries of Latin America».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=101&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. Первый ответ API: total=1, products=1. Примеры ID/названий: 500 «Airport transfer Cuenca».",
+        "https://adatours.ru/ecuador/cuenca/ — HTTP 200, canonical совпадает, H1 «3 экскурсии в Куэнке, Эквадор…». Карточки: исторический центр и панамские шляпы; Кахас и какао; Чимборасо и Ингапирка."
+      ],
+      "note": "EN-каталог состоит из Airport transfer Cuenca (500); RU — три содержательные экскурсии, не этот транспортный каталог. Подтвержденной пары sameAs нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:21.341Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cuenca/packages",
@@ -431,5 +443,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:11.066Z"
+  "updatedAt": "2026-10-21T15:46:21.341Z"
 }

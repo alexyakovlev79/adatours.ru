@@ -543,7 +543,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Excursions and tours to Nazca Lines ,in Peru», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: excursion typeid=2&category_id=125, productsjson products=[], total=0; название «Excursions and tours to Nazca Lines, in Peru».",
+        "RU /peru/nazca-lines-and-ballestas-islands/ HTTP 200: 4 экскурсии по составному направлению Наска и Бальестас; destination_peru_linii_naska_i_ostrova_balestas. Это более широкая география, чем плато Наска."
+      ],
+      "note": "EN-каталог экскурсий Наски пуст, RU содержит 4 экскурсии и объединяет Наску с островами Бальестас. Не совпадают подтвержденный состав и охват; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:57:55.792Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/nazca/packages",
@@ -586,5 +597,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:57:05.425Z"
+  "updatedAt": "2026-10-21T15:57:55.792Z"
 }

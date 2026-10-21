@@ -302,7 +302,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7a0cac2f5e08543b7c7c6d1b.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP source inventory (2026-10-20): HTTP 200, title and H1 \"Поиск\", dynamic OpenCart product/search route without a product identifier.",
+        "Ada Tours RU search is a client lookup function rather than a permanent product or catalogue identity corresponding to the legacy queryless search form."
+      ],
+      "note": "Служебная поисковая форма без запроса и без собственной сущности. Подставлять общую страницу тура или конкретный RU URL для 301 нельзя.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:06:51.023Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=journal2%2Fblog",
@@ -455,5 +465,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:06:25.285Z"
+  "updatedAt": "2026-10-21T15:06:51.023Z"
 }

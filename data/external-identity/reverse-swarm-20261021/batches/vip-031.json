@@ -102,7 +102,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/0744023402be8bad4e69f402.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Полностью прочитан и сверён по SHA-256 snapshots/0744023402be8bad4e69f402.html (80aca69480bcb04e062d25455cee7d4e816899b4205d3ee51a47693a3863fab8); snapshot HTTP 200, H1 Hotel. Реальная страница 4 каталога производителя Hotel: позиции 46–60 из 108, от Das Cataratas Foz do Iguacu до Mabu Foz & Thermas, карточки размещения с ценами/бронированием.",
+        "Текущий main aafd4b2da015d669e477eedffb3c956ede417992: проверены src/pages и четыре каталога source-index (Country/Destination/Excursion/Tour). Отдельной коллекции Hotel и каталога бронирования 108 отелей с этой пагинацией нет. VIP, страна или тур имеют другой предмет/ассортимент."
+      ],
+      "note": "Подтверждённой RU-пары для hotel?page=4 нет. Это самостоятельная содержательная страница гостиничного каталога, не пустая страница и не доказанный технический дубль. 301 на главную/каталог туров не назначен; судьба старого гостиничного раздела отдельно.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:22:10.430Z",
+      "checkedBy": "reverse-worker-mvi9bqoq-z10jgc5usm7",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel?page=5",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:22:06.165Z"
+  "updatedAt": "2026-10-21T15:22:10.430Z"
 }

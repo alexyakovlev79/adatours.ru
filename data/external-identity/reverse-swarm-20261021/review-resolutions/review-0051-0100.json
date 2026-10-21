@@ -3286,7 +3286,73 @@
         "batchBlobSha": "37db2926bfced9cf7d2fb73624d33343f2f3ac91",
         "reviewOrder": 92
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/panama/tour/luxury-panama-12-days/",
+        "targetId": "tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
+        "comparedId": "tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
+        "targetContentPath": "src/content/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru.md",
+        "targetBlobSha": "b95f1467d0ad784d9748c136369ae6d210f01a31",
+        "confidence": 0.98,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.736Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/vip-panama-bocas-del-toro → HTTP 200, title «Роскошная Панама», 68547 байт, SHA-256 cef09726e4a298b703533ed3da97af3383aac4307f11fb2ed3d95f3f2b22a9a1. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru.md, blob b95f1467d0ad784d9748c136369ae6d210f01a31: published, tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru; RU цель https://adatours.ru/panama/tour/luxury-panama-12-days/ → HTTP 200, SHA-256 ca64872d13889bc1867776dc6094c187d701604674c5ce442982f6a4d391634c.",
+          "Прямой HTML: 12 дней Панама-Сити → Чагрес/Эмбера → Бока-Чика (дни 4–6) → Бокете (7) → Бару (8) → Бокас-дель-Торо (9–10) → Панама (11–12). Все блоки совпадают с действующим премиальным RU-туром; ошибочное предположение об отсутствии Бокас-дель-Торо устранено."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-92",
+          "url": "https://vipdeluxetravel.ru/vip-panama-bocas-del-toro",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/vip-panama-bocas-del-toro",
+          "sha256": "cef09726e4a298b703533ed3da97af3383aac4307f11fb2ed3d95f3f2b22a9a1",
+          "bytes": 68547,
+          "title": "Роскошная Панама",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/vip-panama-bocas-del-toro\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Панама-сити",
+            "День 2: Панама-сити",
+            "День 3: Экскурсия в Парк Чагрес к Индейцам Эмбера",
+            "День 4: Панама Cити – Бока Чика",
+            "День 5-6: Бока Чика",
+            "День 7: Boquete (горный и кофейный регион Панамы)",
+            "День 8: Вулкан Бару",
+            "День 9: Boquete / Бокас-дель-Торо",
+            "День 10: Бокас-дель-Торо",
+            "День 11: Бокас-дель-Торо / Панама",
+            "День 12: Панама сити"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
+          "url": "https://adatours.ru/panama/tour/luxury-panama-12-days/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/panama/tour/luxury-panama-12-days/",
+          "sha256": "ca64872d13889bc1867776dc6094c187d701604674c5ce442982f6a4d391634c",
+          "bytes": 166929,
+          "title": "Тур Люксовый тур в Панаму: 12 дней vip отдыха | Ada Tours по цене от $12 098 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/panama/tour/luxury-panama-12-days/\">"
+          ],
+          "dayHeadings": [
+            "Дни 5-6 оставлены для отдыха на острове. В программе доступны каяки, paddle board, йога, экологические тропы и пляжный отдых. Питание включает завтрак, обед, закуски и ужин из 3 блюд, а из напитков указаны местное пиво, вина и коктейли.",
+            "Дни 5 и 6 оставлены свободными.",
+            "День 10 полностью свободный.",
+            "День проходит с русскоговорящим гидом, если такое сопровождение подтверждено под запрос.",
+            "День полностью свободный.",
+            "Дни 5–6 оставлены для отдыха. Среди возможных занятий — прогулки по экологическим тропам, каяки, SUP, йога и пляжный отдых. Конкретную доступность и стоимость дополнительных активностей нужно проверять по условиям выбранного размещения; список возможностей отеля не всегда совпадает с оплаченным набором услуг."
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 93,
@@ -3601,9 +3667,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:44.546Z",
+  "updatedAt": "2026-10-21T16:35:46.148Z",
   "progress": {
-    "resolved": 41,
+    "resolved": 42,
     "total": 50
   }
 }

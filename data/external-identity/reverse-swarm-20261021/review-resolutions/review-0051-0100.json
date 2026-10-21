@@ -2735,7 +2735,66 @@
         "batchBlobSha": "34ed3422e3c3ab7691e7796bb488425aaceb94a4",
         "reviewOrder": 86
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "disposition": "gone_410",
+        "recommendedHttpStatus": 410,
+        "relation": null,
+        "ruUrl": "",
+        "targetId": null,
+        "comparedId": "tour_source_skazki_venesuelskogo_lesa",
+        "targetContentPath": "src/content/tours/skazki-venesuelskogo-lesa.md",
+        "targetBlobSha": "c293c3734968894aad3c6e8845396bba2093970b",
+        "confidence": 0.97,
+        "accepted": true,
+        "basis": "retire",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.718Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/skazki-venesuelskogo-lesa → HTTP 200, title «Сказки Венесуэльского  Леса », 80894 байт, SHA-256 91580d463dd7ec8e1ce0ba6f05903d71b97d19bc516f9fd35d0bcec5df894e1d. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/skazki-venesuelskogo-lesa.md, blob c293c3734968894aad3c6e8845396bba2093970b: archived, tour_source_skazki_venesuelskogo_lesa; сопоставленный продукт архивирован.",
+          "Одноименная 12-дневная программа Маргарита → Ориноко → Канайма → Лос-Рокес → Каракас найдена только в архиве RU."
+        ],
+        "note": "Принято редакционное решение: закрыть старое предложение кодом 410 при отдельном внедрении. Подтвержденной активной пары нет; 410 сейчас не включен.",
+        "liveSource": {
+          "key": "source-86",
+          "url": "https://vipdeluxetravel.ru/skazki-venesuelskogo-lesa",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/skazki-venesuelskogo-lesa",
+          "sha256": "91580d463dd7ec8e1ce0ba6f05903d71b97d19bc516f9fd35d0bcec5df894e1d",
+          "bytes": 80894,
+          "title": "Сказки Венесуэльского  Леса ",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/skazki-venesuelskogo-lesa\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День1 (понедельник): Остров Маргарита",
+            "День 2 (вторник): Остров Маргарита - Дельта реки Ориноко",
+            "День 3 (среда): Дельта реки Ориноко",
+            "День 4 (четверг): Национальный парк Канайма - остров Анатолия, водопад Эль Сапо, Эль Ача",
+            "День 5 (пятница): Водопад Сальто Анхель на целый день",
+            "День6 (суббота): Голубая лагуна",
+            "День 7 (воскресенье): Национальный парк Лос-Рокес",
+            "День8 (понедельник): Национальный парк Лос Рокес",
+            "День 9(вторник): Национальный парк Лос-Рокес",
+            "День10 (среда): Национальный парк Лос-Рокес – Каракас",
+            "День 12 (пятница): Каракас"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_skazki_venesuelskogo_lesa",
+          "url": "https://adatours.ru/venezuela/tour/venezuela-forest-tales/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/venezuela/tour/venezuela-forest-tales/",
+          "sha256": "468ee6bb938480b2a0b7ec01ddd4041dd4a4ea452bd11bbbc0719cb402fc94df",
+          "bytes": 101622,
+          "title": "Тур Сказки Венесуэльского Леса по цене от $5 920 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/venezuela/tour/venezuela-forest-tales/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 87,
@@ -3230,9 +3289,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:33.817Z",
+  "updatedAt": "2026-10-21T16:35:35.576Z",
   "progress": {
-    "resolved": 35,
+    "resolved": 36,
     "total": 50
   }
 }

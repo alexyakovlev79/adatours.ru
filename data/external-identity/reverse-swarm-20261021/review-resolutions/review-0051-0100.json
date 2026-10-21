@@ -978,7 +978,44 @@
         "batchBlobSha": "b9adc25a5f96aa3afc25232f7a7fe47f97858162",
         "reviewOrder": 64
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/honduras/place/utila/",
+        "targetId": "destination_honduras_utila",
+        "targetContentPath": "src/content/destinations/utila.md",
+        "targetBlobSha": "5b799f2fe03051e1829937d5dd0a2960dc95eba0",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 503; актуальный HTML не получен. Для географии и типа tour_listing переиспользованы исходные evidence и frozen snapshotHttp 200, vip-008 #615; текущая недоступность не выдается за удаление страницы.",
+          "Текущий main src/content/destinations/utila.md, blob 5b799f2fe03051e1829937d5dd0a2960dc95eba0: approved destination_honduras_utila, Утила; прямой GET https://adatours.ru/honduras/place/utila/ → HTTP 200, SHA-256 269c6e163bd675439d25b09c92aa8248ec7b0f7fa9c71678d8a8a72f0d1a7949."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Утила». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-64",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-utila-v-gondurase/packages",
+          "http": 503,
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        "liveTarget": {
+          "key": "destination_honduras_utila",
+          "url": "https://adatours.ru/honduras/place/utila/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/honduras/place/utila/",
+          "sha256": "269c6e163bd675439d25b09c92aa8248ec7b0f7fa9c71678d8a8a72f0d1a7949",
+          "bytes": 81073,
+          "title": "Утила в Гондурасе: локации. Пока нет туров в это место. Путешествия 2026-2027 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/honduras/place/utila/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 65,
@@ -2043,9 +2080,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:20.204Z",
+  "updatedAt": "2026-10-21T16:32:21.730Z",
   "progress": {
-    "resolved": 13,
+    "resolved": 14,
     "total": 50
   }
 }

@@ -1256,7 +1256,49 @@
         "batchBlobSha": "b9adc25a5f96aa3afc25232f7a7fe47f97858162",
         "reviewOrder": 68
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/brazil/place/fernando-de-noronha/",
+        "targetId": "destination_brazil_fernando_de_noronha",
+        "targetContentPath": "src/content/destinations/fernando-de-noronha.md",
+        "targetBlobSha": "9f8f6e51305827305294d9920e0320d629625b21",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-008 #628.",
+          "Текущий main src/content/destinations/fernando-de-noronha.md, blob 9f8f6e51305827305294d9920e0320d629625b21: approved destination_brazil_fernando_de_noronha, Фернанду-ди-Норонья; прямой GET https://adatours.ru/brazil/place/fernando-de-noronha/ → HTTP 200, SHA-256 53f3ae59cc0e72ad30785ce661337c7f91c60a4fd431ffe5977ceb4d64bad4c3."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Фернанду-ди-Норонья». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-68",
+          "url": "https://vipdeluxetravel.ru/tury-v-fernandu-di-noronya-arhipelag-v-brazilii/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/tury-v-fernandu-di-noronya-arhipelag-v-brazilii/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_brazil_fernando_de_noronha",
+          "url": "https://adatours.ru/brazil/place/fernando-de-noronha/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/brazil/place/fernando-de-noronha/",
+          "sha256": "53f3ae59cc0e72ad30785ce661337c7f91c60a4fd431ffe5977ceb4d64bad4c3",
+          "bytes": 115423,
+          "title": "Фернанду-ди-Норонья в Бразилии: локации и 2 тура. Каталог 2026-2027: цены от $5 660 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/brazil/place/fernando-de-noronha/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 69,
@@ -2201,9 +2243,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:26.857Z",
+  "updatedAt": "2026-10-21T16:32:28.628Z",
   "progress": {
-    "resolved": 17,
+    "resolved": 18,
     "total": 50
   }
 }

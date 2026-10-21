@@ -568,7 +568,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/0cf0259da75f85e6ea4b45a4.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #1058: source URL https://vipdeluxetravel.ru/package, title «Package», pageType=tour_candidate, historical snapshotHttp=200.",
+        "Исторический HTTP 200, title «Package» и pageType=tour_candidate, но страница /package не идентифицирует конкретную программу; RU имеет отдельные Tour и каталог /tours/."
+      ],
+      "note": "Без содержимого старого /package невозможно отличить конкретный товар от CMS-заглушки или общего списка. Не выбирать произвольный тур и не переводить на главную; требуется ручное решение.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:56:34.362Z",
+      "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/karnaval-v-rio-de-zhanejro",
@@ -591,5 +601,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:56:27.654Z"
+  "updatedAt": "2026-10-21T14:56:34.362Z"
 }

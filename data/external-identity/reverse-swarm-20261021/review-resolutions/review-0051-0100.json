@@ -3103,7 +3103,71 @@
         "batchBlobSha": "37db2926bfced9cf7d2fb73624d33343f2f3ac91",
         "reviewOrder": 90
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/multi-country/tour/brazil-rio-iguazu-lencois-natal-pipa-13-days/",
+        "targetId": "tour_brazil_dunes_13d",
+        "comparedId": "tour_brazil_dunes_13d",
+        "targetContentPath": "src/content/tours/brazil-dunes-13d.md",
+        "targetBlobSha": "5f74a0ec567dcc18b31053ee6bf7d8ceb675618d",
+        "confidence": 0.98,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.728Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii → HTTP 200, title «Загадочные дюны», 77486 байт, SHA-256 caaee76723c3688b24e21842fbfb0f01e64c9063852ea9402548d64c7b8d4d66. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/brazil-dunes-13d.md, blob 5f74a0ec567dcc18b31053ee6bf7d8ceb675618d: approved, tour_brazil_dunes_13d; RU цель https://adatours.ru/multi-country/tour/brazil-rio-iguazu-lencois-natal-pipa-13-days/ → HTTP 200, SHA-256 2f83b6fb76857961cd5692b4977a03ce3c0a609fdd3b5a9ff45395693a1a5778.",
+          "Исходная программа 13 дней: Рио → Игуасу → Сан-Луис → Баррейриньяс/Атинс → Натал/Пипа. Совпадает с 13-дневной RU-программой; 4-дневный Ленсойс-Мараньенсес отклонен."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-90",
+          "url": "https://vipdeluxetravel.ru/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii",
+          "sha256": "caaee76723c3688b24e21842fbfb0f01e64c9063852ea9402548d64c7b8d4d66",
+          "bytes": 77486,
+          "title": "Загадочные дюны",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1. Рио-де-Жанейро",
+            "День 2. Рио-де-Жанейро",
+            "День 3. Рио-де-Жанейро",
+            "День 4. Рио-де-Жанейро – Фоз-до-Игуасу",
+            "День 5. Фос-до-Игуасу",
+            "День 6. Фос-до-Игуасу",
+            "День 7. Фоc-до-Игуасу – Сан-Луис",
+            "День 8: Сан-Луис – Баррейриньяс",
+            "День 9: Баррейриньос – Атинс",
+            "День 10: Баррейриньяс",
+            "День 11: Баррейриньяс – Сан-Луис – Натал",
+            "День 12: Натал (Пипа)",
+            "День 13: Натал (Пипа)"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_brazil_dunes_13d",
+          "url": "https://adatours.ru/multi-country/tour/brazil-rio-iguazu-lencois-natal-pipa-13-days/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/multi-country/tour/brazil-rio-iguazu-lencois-natal-pipa-13-days/",
+          "sha256": "2f83b6fb76857961cd5692b4977a03ce3c0a609fdd3b5a9ff45395693a1a5778",
+          "bytes": 190482,
+          "title": "Тур Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа по цене от $5 345 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/multi-country/tour/brazil-rio-iguazu-lencois-natal-pipa-13-days/\">"
+          ],
+          "dayHeadings": [
+            "День проходит без фиксированной экскурсионной программы. После длинного маршрута через Рио, Игуасу и Мараньян здесь остается время на океан, прогулки и отдых.",
+            "Дни 9–10 продолжают знакомство с регионом. Запланирована водная экскурсия по реке Прегуисас с остановками у Вассураса, района маяка и Атинса . Затем посещается лагуна Атинс, а маршрут возвращается в Баррейриньяс. Эти поездки показывают, что район Ленсойс — это не только песчаные гряды: здесь есть река, мангровые заросли, поселения и прибрежные пейзажи."
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 91,
@@ -3478,9 +3542,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:41.073Z",
+  "updatedAt": "2026-10-21T16:35:42.751Z",
   "progress": {
-    "resolved": 39,
+    "resolved": 40,
     "total": 50
   }
 }

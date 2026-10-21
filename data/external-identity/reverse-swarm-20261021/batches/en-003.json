@@ -168,7 +168,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/bolivia/place/potosi/tour/",
+      "evidence": [
+        "21.10.2026 исходный каталог GET 200/self-canonical, HTML SHA-256 73904f084db6c0da72219139de711d5755e11cc289eba085efc498695cdd9715; проверен публичный productsjson, использующий datasrc страницы, SHA-256 885c2a9d3ec27f17dd0c65c9dc82252b26e264824c38ea94c5542dbd5cf260b5. EN category_id=171/typeid=1: ровно один продукт Treasures of Bolivia (/treasures-of-bolivia), 12 дней/11 ночей. Проверены все 12 дней: Санта-Крус–Самаипата/Амборо–Сукре–Потоси–Уюни/лагуны–Копакабана/Isla del Sol–Ла-Пас; Потоси день 6: шахтёрский рынок/Серро-Рико/Тио.",
+        "Проверены active MD, source-index и живой RU-каталог в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2: RU каталог по destination_bolivia_potosi содержит только tour_source_sokrovishcha_bolivii, published, 12 дней. Сверены полный itinerary, те же 11 ночей (2 Санта-Крус,1 Самаипата,2 Сукре,2 Уюни,1 Flamencos,2 Ла-Пас,1 Копакабана), отели El Pueblito/Flamencos и включённое питание Уюни. Фильтр места и состав единственного продукта совпали.",
+        "Точный RU canonical отвечает HTTP 200, self-canonical, robots index,follow, H1 указывает тот же тип/место и количество. Frozen: snapshotHttp=200, pageType=category, crawlReport=adatours-com-crawl-001.json, snapshotFile отсутствует; использованы действующие EN-страницы."
+      ],
+      "note": "Подтверждён sameAs именно каталога: одинаковые тип продукта, географический фильтр и полный состав действующих предложений. Программы составляющих проверены по содержанию, не только по slug/названию. Разметка сайта не изменена.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:39:39.721Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-santa-cruz/excursions",
@@ -447,5 +458,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:36.851Z"
+  "updatedAt": "2026-10-21T15:39:39.721Z"
 }

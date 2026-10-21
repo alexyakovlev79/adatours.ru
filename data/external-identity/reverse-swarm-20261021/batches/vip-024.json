@@ -102,7 +102,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/b899c5cbb7180979ed8a8471.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/tours/page/3/",
+      "evidence": [
+        "VIP frozen inventory #1095: https://vipdeluxetravel.ru/package?page=3, H1/title «Package», snapshot HTTP 200, общий листинг туров page=3.",
+        "RU src/pages/[...path].astro: активный общий каталог туров /tours/, src/lib/catalog-pagination.ts: 30 туров на страницу и path /tours/page/3/; в src/content/tours найдено 389 Tour MD."
+      ],
+      "note": "301-кандидат по типу и номеру каталожной страницы. Равенство конкретных туров в старом и новом списках не установлено.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:59:42.286Z",
+      "checkedBy": "reverse-worker-mvi83xgd-3cwif9g4q3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package?page=4",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:56:02.349Z"
+  "updatedAt": "2026-10-21T14:59:42.286Z"
 }

@@ -242,7 +242,17 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/cbe45b518121747a1c477bcb.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory #1252: URL https://vipdeluxetravel.ru/excursion?page=1, HTTP 200, title/H1 \"Excursion\", тип excursion_candidate.",
+        "В RU существует /excursions/ как общий каталог, но frozen запись не содержит состава страниц /excursion?page=1 и фильтров."
+      ],
+      "note": "Страница /excursion?page=1 является общим листингом с заголовком Excursion. Совпадение фильтров и состава карточек со страницей /excursions/ не подтверждено. Не разрешать 301 без редакционной сверки каталога.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:18:13.179Z",
+      "checkedBy": "reverse-worker-mvi90inx-8sl6n0h45f",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/torres-del-pejn-gruppovoj-tur?page=3",
@@ -425,5 +435,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:18:08.691Z"
+  "updatedAt": "2026-10-21T15:18:13.179Z"
 }

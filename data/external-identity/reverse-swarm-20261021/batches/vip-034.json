@@ -253,7 +253,18 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/b6cf6c2ca8a2df350ec3882e.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Просмотрен приватный HTML snapshots/b6cf6c2ca8a2df350ec3882e.html; SHA-256 0423e71438085bc2843595cc503c27608d097dadce62537af3a74cbbeff783d5 проверен. Title/H1: Отель Intercontinental Rio de Janeiro. Rio Intercontinental — отель на первой линии Сан-Конрадо в Рио; в снимке 429 номеров, 20 конференц-залов до 2000 делегатов, бассейн и спа, рестораны Varana и Alfredo di Roma.",
+        "Проверены текущие source-index каталоги main: destinations (1018 записей, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b), tours (397, 5d0662b6b1589951c684b2c44ea1093b182ce9bf), excursions (416, 402b7d42c61bc17709c1ae07fc92dfa32ee08327). Отдельной сущности с этим названием/ID/aliases не найдено. В src/content и src/pages/[...path].astro нет коллекции/маршрута отелей; страницы города и туры не являются карточкой конкретного отеля.",
+        "HTML canonical: https://vipdeluxetravel.ru/intercontinental-rio; query остаётся частью source URL. В frozen inventory нет второй записи с тем же canonical, технический дубль не подтвержден. Общий раздел деловых туров/MICE не тождественен гостинице с собственным бронированием; исторический бренд не переименовывался по догадке."
+      ],
+      "note": "Не найдена подтвержденная самостоятельная RU-карточка «Отель Intercontinental Rio de Janeiro». Страница города/курорта или тур с проживанием не заменяет карточку и бронирование конкретного отеля; 301 не назначен. Проверен сохраненный HTML, без заявления о сегодняшнем HTTP.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:24:25.513Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-ipanema-plaza-rio?page=4",
@@ -436,5 +447,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:24:10.061Z"
+  "updatedAt": "2026-10-21T15:24:25.513Z"
 }

@@ -187,7 +187,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 прочитаны EN HTML (GET 200/self-canonical, SHA-256 0904e77e765188380c1ec69be8261a35fcb8ca3f48873dd2db3e6fb6f4f11fa2) и JSON, который использует публичный каталог (SHA-256 accd1ee728f0d3ec15c90781a1e1f55f371de8b4e0eba662a863a5bc5e3f794a). EN Сукре excursions: один продукт Tarabuco; фильтр isExcursionCategory, category_id=174/typeid=2.",
+        "Сверены активные MD, source-index, правила каталогов и живой RU HTTP в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2. В current main отсутствует самостоятельная экскурсия Tarabuco и каталог экскурсий Сукре. /bolivia/sucre/ HTTP 404, /bolivia/place/sucre/ имеет тип Destination. Тур «Сокровища Боливии» не является этой экскурсией или её каталогом.",
+        "Frozen inventory: pageType=category, snapshotHttp=200, H1 «Sucre: Excursions to the UNESCO White City and Dinosaur Park», crawlReport=adatours-com-crawl-001.json; snapshotFile не задан, приватный снимок не заявляется просмотренным."
+      ],
+      "note": "Подтверждённой sameAs-пары нет: одно географическое название не делает каталоги идентичными. Пустой EN-ассортимент и/или другой RU-состав отражены как отсутствие подтверждения, не как технический retry; связь не опубликована.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:02.355Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-sucre/packages",
@@ -370,5 +381,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:00.080Z"
+  "updatedAt": "2026-10-21T15:38:02.355Z"
 }

@@ -46,7 +46,58 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/chile/place/valparaiso-vina-del-mar/",
+        "confidence": 0.6,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue, not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN описывает отдельный город Вальпараисо; действующий RU stable ID destination_chile_valparaiso_i_vinya_del_mar имеет destinationType route_cluster и объединяет Вальпараисо с самостоятельным Винья-дель-Мар. Общая часть и близкий заголовок не устраняют различие полного географического объекта.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/valparaiso",
+            "http": 200,
+            "canonical": "https://adatours.com/valparaiso",
+            "h1": [
+              "Funiculars and colorful houses: what to see in Valparaiso, Chile"
+            ],
+            "sha256": "8cbde0567ad26b0838a72246d78517380e72cf914175b2fd24669035c73d98ff",
+            "checkedAt": "2026-10-21T16:30:02.490764+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "7"
+            ]
+          },
+          {
+            "url": "https://adatours.ru/chile/place/valparaiso-vina-del-mar/",
+            "http": 200,
+            "canonical": "https://adatours.ru/chile/place/valparaiso-vina-del-mar/",
+            "h1": [
+              "Вальпараисо и Винья дель Мар"
+            ],
+            "sha256": "2aa8093cafdaa875204e8eb4a90bfafeceea39adaeb0d20eaac871ae4aeab9c8",
+            "checkedAt": "2026-10-21T16:30:03.437316+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "10"
+            ]
+          }
+        ],
+        "additionalEvidence": [
+          "Current main src/content/destinations/valparaiso-i-vinya-del-mar.md blob 9e52211a88f639b81ab54a2df1c95480a70ac797: approved route_cluster; separate Valparaiso and Vina del Mar sections."
+        ],
+        "reviewedAt": "2026-10-21T16:31:29.755Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read, retained first-pass evidence, current main Destination MD",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 302,

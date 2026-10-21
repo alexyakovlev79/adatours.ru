@@ -102,7 +102,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, title Excursion and tours in beach resort of Acapulco in Mexico; H1 общий Excursions to countries of Latin America. Фильтр isExcursionCategory/typeid=2/category_id=184, статическая выдача товаров отсутствует, SHA-256 fa3e3b8b3ba1eb97f33d4f9b4397b40d1cee981d25907774d84448d314683e42.",
+        "Проверен соответствующий маршрут каталога по src/lib/routes.ts: https://adatours.ru/mexico/acapulco/ возвращает HTTP 404, canonical /404.html. В main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 существует Place destination_mexico_akapulko, но Place не является каталогом экскурсий."
+      ],
+      "note": "Точная пара EN-каталога экскурсий не подтверждена: действующий однотипный RU-каталог отсутствует по проверенному маршруту. Страница курорта не подставлена вместо каталога; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:36:52.677Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/alcapulco/packages",
@@ -375,5 +385,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:35:22.047Z"
+  "updatedAt": "2026-10-21T15:36:52.677Z"
 }

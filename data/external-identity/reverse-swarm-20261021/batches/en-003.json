@@ -408,7 +408,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 GET действующей EN-страницы: HTTP 200/self-canonical; HTML SHA-256 2ae76601370ae7ec95721937826c12cd2bcafecb326605e1e1f40fed4efc5e7b. Проверены вводная, разделы, таблицы/FAQ и JSON-LD BlogPosting, автор Anna Avanesova. BlogPosting Анны Аванесовой, опубликован 07.10.2026: статья об одном DMC для VIP-поездки Бразилия–Аргентина, ответственности на стыке стран, аэропортах GIG/SDU/IGU/IGR/EZE/AEP и опциональной частной авиации.",
+        "Current main 78fe61f4b9fa878e86bd00862b0506a72fb148d2: Проверены RU service routes /dmc/, /dmc/travel-agencies/, VIP/multi-country каталоги и контент туров. Это услуги и продукты, а EN-документ — отдельная авторская статья о координации. Соответствующая RU-публикация с этим предметом и структурой не подтверждена. В src/content/articles нет действующих article MD; совпадения точного EN URL в src и source-index не найдены. Это вспомогательные проверки, отсутствие пары определено по типу и предмету страниц.",
+        "Frozen inventory: pageType=other, snapshotHttp=200, title/H1 «Brazil and Argentina VIP Trip: One DMC, Two Countries», crawlReport=adatours-com-crawl-001.json; snapshotFile пустой, исходный приватный снимок не заявляется просмотренным."
+      ],
+      "note": "Подтверждённой sameAs-пары для конкретной EN-публикации нет. Статья о маршруте/услуге не отождествлена с самим туром, каталогом или организацией. Связь в Schema.org не добавлялась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:24.835Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/brazil-business-delegation",
@@ -491,5 +502,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:47.654Z"
+  "updatedAt": "2026-10-21T15:42:24.835Z"
 }

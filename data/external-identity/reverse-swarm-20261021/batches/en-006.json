@@ -260,7 +260,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Cuenca Tours | UNESCO City & Cajas National Park | Ada Tours», H1 «Cuenca: Tours to the UNESCO City and Cajas National Park». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/cuenca/packages: HTTP 200, canonical=https://adatours.com/cuenca/packages, H1 «Cuenca: Tours to the UNESCO City and Cajas National Park».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isPackageCategory&typeid=1&category_id=101&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=cities&excludes%5B3%5D=excursions&excludes%5B4%5D=themes. Первый ответ API: total=1, products=1. Примеры ID/названий: 2552 «Active Ecuador».",
+        "https://adatours.ru/ecuador/place/cuenca/tour/ — HTTP 200, canonical совпадает, H1 «3 тура 2026-2027 в Куэнке (Эквадоре)…». Каноническое место destination_ecuador_kuenka подтверждено source-index."
+      ],
+      "note": "EN-каталог содержит один Active Ecuador (2552), RU-каталог включает три программы. Состав не тождественен; sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:23.879Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/curitiba/excursions",
@@ -443,5 +455,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:21.341Z"
+  "updatedAt": "2026-10-21T15:46:23.879Z"
 }

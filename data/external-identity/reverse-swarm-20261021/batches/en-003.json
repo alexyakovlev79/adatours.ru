@@ -249,7 +249,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 прочитаны EN HTML (GET 200/self-canonical, SHA-256 b109fb4ddb366505dcacb5abbbd2e91ae45f4d346617aee55915872423620a3f) и JSON, который использует публичный каталог (SHA-256 efce2935025fa4d81cce9d4edeaa2af2dd3d18cd4e9faf7e5d8d91fba48c83f8). EN Bonito excursions: общий H1, gallery без товаров, API category_id=68/typeid=2 products=[], total=0.",
+        "Сверены активные MD, source-index, правила каталогов и живой RU HTTP в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2. RU /brazil/bonito/ HTTP 200 содержит одну активную экскурсию — excursion_brazil_bonito_abismo_anhumas, «Бездна Аньюмас». Это непустая RU-подборка, состав не совпадает с пустым EN-ответом.",
+        "Frozen inventory: pageType=category, snapshotHttp=200, H1 «Excursions to countries of Latin America», crawlReport=adatours-com-crawl-001.json; snapshotFile не задан, приватный снимок не заявляется просмотренным."
+      ],
+      "note": "Подтверждённой sameAs-пары нет: одно географическое название не делает каталоги идентичными. Пустой EN-ассортимент и/или другой RU-состав отражены как отсутствие подтверждения, не как технический retry; связь не опубликована.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:07.372Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bonito/packages",
@@ -392,5 +403,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:04.938Z"
+  "updatedAt": "2026-10-21T15:38:07.372Z"
 }

@@ -122,7 +122,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/2718a2897fe26a3c657fdfc7.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "2026-10-20 archived VIP inventory: HTTP 200, title and H1 “Забыли пароль?”, OpenCart route account/forgotten; this is a password-reset UI rather than a public travel page.",
+        "Ada Tours public RU content routes are travel pages and catalogues, not customer-account password reset features."
+      ],
+      "note": "Техническая страница восстановления пароля; нет самостоятельного туристического контента и корректной RU-цели для 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:03:37.563Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=product%2Fspecial",
@@ -365,5 +375,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:00:18.403Z"
+  "updatedAt": "2026-10-21T15:03:37.563Z"
 }

@@ -52,7 +52,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory: title «Beach tours and excursions to the Manta seaside resort in Ecuador», H1 «Excursions to countries of Latin America», snapshotHttp 200, snapshotFile не указан; crawl-002: category_id=179, isExcursionCategory.",
+        "21.10.2026 исходный HTML HTTP 200, каталог экскурсий по Манте. Source-index main: destination_ecuador_manta, /ecuador/place/manta/ — отдельная страница приморского города; она доступна HTTP 200. Отдельный каталог многодневных туров /ecuador/place/manta/tour/ вернул 404."
+      ],
+      "note": "Проверен EN-каталог экскурсий по Манте. RU-страница места обозначает сам город, а не идентичный набор экскурсионных продуктов; совпадение города не подтверждает sameAs. Подтвержденной пары нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:51:30.958Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/manta/packages",
@@ -336,5 +346,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:51:06.387Z"
+  "updatedAt": "2026-10-21T15:51:30.958Z"
 }

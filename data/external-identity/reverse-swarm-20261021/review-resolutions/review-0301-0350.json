@@ -696,7 +696,53 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/interests/weddings-and-romance/",
+        "confidence": 0.65,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN — сервисная посадочная организации свадеб и романтических событий, включая индивидуальные церемонии и предложения; RU — тематическая страница с четырьмя конкретными программами. Тематическая близость подтверждена, тождество коммерческого раздела/ассортимента недостаточно вероятно.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/weddings-and-romance",
+            "http": 200,
+            "canonical": "https://adatours.com/weddings-and-romance",
+            "h1": [
+              "Choose your wedding ceremony"
+            ],
+            "sha256": "d681ff2745526ca5b2567364eee142b6d565e7b606a2f92355d7ec8079bf8c3e",
+            "checkedAt": "2026-10-21T16:30:06.369952+00:00",
+            "htmlCards": [],
+            "offerCount": []
+          },
+          {
+            "url": "https://adatours.ru/interests/weddings-and-romance/",
+            "http": 200,
+            "canonical": "https://adatours.ru/interests/weddings-and-romance/",
+            "h1": [
+              "Свадьбы и романтические путешествия"
+            ],
+            "sha256": "5523577665508b4b47fd6d639cb50606e084288d15c011a201546a0b71f159ee",
+            "checkedAt": "2026-10-21T16:30:09.219725+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "4"
+            ]
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:32:04.714Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 310,
@@ -728,5 +774,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:02.424Z"
+  "updatedAt": "2026-10-21T16:32:04.714Z"
 }

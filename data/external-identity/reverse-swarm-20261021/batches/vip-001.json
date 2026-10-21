@@ -402,7 +402,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7796568627b5189ec65a1455.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory #420: /packages при курорте Плайя-дель-Кармен (pageType=tour_listing, исторический HTTP 200), без заголовков и ассортимента исходного листинга.",
+        "Текущий RU destination_mexico_plajya_del_karmen approved. В каталогах 2 тура упоминают место только в полном destinations, но 0 имеют его в основных routeDestinations. Поэтому /mexico/place/playa-del-carmen/tour/ пуст, а /optional-tours/ имеет другой смысл и требует отдельного выбора."
+      ],
+      "note": "Нет непустого каталога основных туров Плайя-дель-Кармен. Два маршрута относятся лишь к факультативным посещениям; решать, вести ли старый /packages на optional-tours, страницу курорта или 410, должен редактор.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:47:35.433Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-kurort-plajya-del-karmen-v-meksike/ekskursii",
@@ -505,5 +515,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:46:52.061Z"
+  "updatedAt": "2026-10-21T14:47:35.433Z"
 }

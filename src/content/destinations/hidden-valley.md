@@ -9,15 +9,15 @@ destinationType: natural_area
 summary: Сосновые холмы, тропический лес и прогулочные тропы частного природного заповедника в Маунтин-Пайн-Ридж. Лесной
   этап путешествия по Белизу между Сан-Игнасио и Карибским морем.
 hero:
-  src: /media/destinations/hidden-valley/hidden-valley-generated-20261010-p022-v1.webp
-  alt: "Тропа среди сосен на лесистых холмах Хидден-Вэлли, Белиз"
+  src: /media/destinations/hidden-valley/hero-generated-20261021-dedup50-v1.webp
+  alt: Хидден-Вэлли — иллюстрация
   status: approved
-  hover: "Хидден-Вэлли в Белизе: узкая тропа над зеленой долиной"
+  hover: Хидден-Вэлли — иллюстрация
 gallery: []
 themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 facts: []
 sourceSnapshot: data/source-index/materials/destination_belize_hidden_valley.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-21'
 ---
 Хидден-Вэлли находится в западном Белизе, в горной области Маунтин-Пайн-Ридж. На склонах здесь растут карибские сосны, а ниже начинается густой тропический лес. Между холмами проложены прогулочные тропы; ручьи образуют водопады и естественные водоемы. Сюда приезжают ради лесных прогулок, наблюдения за птицами и отдыха среди зелени.
 

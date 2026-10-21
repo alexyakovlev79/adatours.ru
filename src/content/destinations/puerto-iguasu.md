@@ -9,9 +9,9 @@ destinationType: city
 summary: 'Пуэрто-Игуасу находится на севере Аргентины, на границе с Бразилией и Парагваем. Национальный парк Игуасу расположен в 18 км от города: здесь начинаются маршруты к водопадам.'
 searchAliases: []
 hero:
-  src: /media/destinations/puerto-iguasu/hero-enhanced-20261002.webp
-  hover: "Аргентинская сторона Игуасу: потоки воды между лесистыми скалами"
-  alt: "Каскады водопадов Игуасу среди густого зеленого леса со стороны Аргентины"
+  src: /media/destinations/puerto-iguazu/hero-generated-20261021-dedup50-v1.webp
+  hover: Пуэрто Игуасу — иллюстрация
+  alt: Пуэрто Игуасу — иллюстрация
 gallery:
 - src: /media/destinations/puerto-iguasu/gallery-1-enhanced-20261002.webp
   hover: "Игуасу: широкие потоки воды над скалами с густой растительностью"
@@ -33,7 +33,7 @@ featureBands: []
 facts: []
 sourceUrl: https://brasiltours.ru/gorod-puehrto-iguasu-v-argentine
 sourceSnapshot: https://drive.google.com/file/d/1T5Id-GJ7RyqdwIVofM3UpGe2FocfIxBh/view?usp=drivesdk
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-21'
 themes: ["theme_nature"]
 ---
 

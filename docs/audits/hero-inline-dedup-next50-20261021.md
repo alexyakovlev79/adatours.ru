@@ -1,6 +1,6 @@
 # Следующие 50 индивидуальных hero — 21 октября 2026
 
-Подключено 10 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
+Подключено 20 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
 
 | № | Партия | Страница | Статус |
 |---|---|---|---|
@@ -14,16 +14,16 @@
 | 8 | 1 | [Эль-Калафате](https://adatours.ru/argentina/place/el-calafate/) | S3 проверен, подключено |
 | 9 | 1 | [Лухан-де-Куйо](https://adatours.ru/argentina/place/lujan-de-cuyo/) | S3 проверен, подключено |
 | 10 | 1 | [Остров Мартильо](https://adatours.ru/argentina/place/martillo-island/) | S3 проверен, подключено |
-| 11 | 2 | [Мендоса](https://adatours.ru/argentina/place/mendoza/) | Ожидает генерации |
-| 12 | 2 | [Пуэрто Игуасу](https://adatours.ru/argentina/place/puerto-iguazu/) | Ожидает генерации |
-| 13 | 2 | [Кладбище Реколета](https://adatours.ru/argentina/place/recoleta-cemetery/) | Ожидает генерации |
-| 14 | 2 | [Реколета](https://adatours.ru/argentina/place/recoleta/) | Ожидает генерации |
-| 15 | 2 | [Национальный парк Тьерра-дель-Фуэго](https://adatours.ru/argentina/place/tierra-del-fuego-national-park/) | Ожидает генерации |
-| 16 | 2 | [Полуостров Вальдес](https://adatours.ru/argentina/place/valdes-peninsula/) | Ожидает генерации |
-| 17 | 2 | [Остров Виктория (озеро Науэль-Уапи)](https://adatours.ru/argentina/place/victoria-island-nahuel-huapi/) | Ожидает генерации |
-| 18 | 2 | [Хидден-Вэлли](https://adatours.ru/belize/place/hidden-valley/) | Ожидает генерации |
-| 19 | 2 | [Музей Чантани](https://adatours.ru/bolivia/place/chantani-museum/) | Ожидает генерации |
-| 20 | 2 | [Лагуна Бланка](https://adatours.ru/bolivia/place/laguna-blanca/) | Ожидает генерации |
+| 11 | 2 | [Мендоса](https://adatours.ru/argentina/place/mendoza/) | S3 проверен, подключено |
+| 12 | 2 | [Пуэрто Игуасу](https://adatours.ru/argentina/place/puerto-iguazu/) | S3 проверен, подключено |
+| 13 | 2 | [Кладбище Реколета](https://adatours.ru/argentina/place/recoleta-cemetery/) | S3 проверен, подключено |
+| 14 | 2 | [Реколета](https://adatours.ru/argentina/place/recoleta/) | S3 проверен, подключено |
+| 15 | 2 | [Национальный парк Тьерра-дель-Фуэго](https://adatours.ru/argentina/place/tierra-del-fuego-national-park/) | S3 проверен, подключено |
+| 16 | 2 | [Полуостров Вальдес](https://adatours.ru/argentina/place/valdes-peninsula/) | S3 проверен, подключено |
+| 17 | 2 | [Остров Виктория (озеро Науэль-Уапи)](https://adatours.ru/argentina/place/victoria-island-nahuel-huapi/) | S3 проверен, подключено |
+| 18 | 2 | [Хидден-Вэлли](https://adatours.ru/belize/place/hidden-valley/) | S3 проверен, подключено |
+| 19 | 2 | [Музей Чантани](https://adatours.ru/bolivia/place/chantani-museum/) | S3 проверен, подключено |
+| 20 | 2 | [Лагуна Бланка](https://adatours.ru/bolivia/place/laguna-blanca/) | S3 проверен, подключено |
 | 21 | 3 | [Лагуна Чиаркота](https://adatours.ru/bolivia/place/laguna-chiar-khota-potosi/) | Ожидает генерации |
 | 22 | 3 | [Лагуна Верде](https://adatours.ru/bolivia/place/laguna-verde/) | Ожидает генерации |
 | 23 | 3 | [Озеро Титикака (Боливия)](https://adatours.ru/bolivia/place/lake-titicaca-bolivia/) | Ожидает генерации |

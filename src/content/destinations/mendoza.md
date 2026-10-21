@@ -9,9 +9,9 @@ destinationType: region
 summary: >-
   Мендоса соединяет город у подножия Анд с виноградниками и винодельнями. В одной программе можно совместить городскую прогулку и поездку по Ruta de los Vinos с дегустациями.
 hero:
-  src: /media/destinations/mendoza/hero-enhanced-20260930.webp
-  hover: "Анды у Мендосы: тропа ведет в долину между сухими горными склонами"
-  alt: "Горная долина с каменистыми склонами и снежной вершиной в районе Мендосы, Аргентина"
+  src: /media/destinations/mendoza/hero-generated-20261021-dedup50-v1.webp
+  hover: Мендоса — иллюстрация
+  alt: Мендоса — иллюстрация
 gallery: []
 relatedDestinations:
   - destination_argentina_buenos_aires
@@ -40,7 +40,7 @@ featureBands:
     image: /media/destinations/mendoza/hero-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/gorod-i-vinnyj-region-mendosa-v-argentine
 sourceSnapshot: page_texts_original/gorod-i-vinnyj-region-mendosa-v-argentine__ac7f8b41.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-21'
 themes: ["theme_gastronomy_wine","theme_culture"]
 ---
 

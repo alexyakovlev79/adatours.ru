@@ -9,9 +9,9 @@ destinationType: route_cluster
 summary: 'Местный музей в поселении Чантани на северной стороне Уюни: культурное наследие альтиплано и жизнь селений
   у Тунупы.'
 hero:
-  src: /media/destinations/destination_bolivia_vulkan_tunupa/hero-generated-20261008.webp
-  hover: 'Уюни: ровный солончак перед разноцветными склонами Тунупы'
-  alt: Вулкан Тунупа за белой поверхностью солончака Уюни, Боливия
+  src: /media/destinations/chantani-museum/hero-generated-20261021-dedup50-v1.webp
+  hover: Музей Чантани — иллюстрация
+  alt: Музей Чантани — иллюстрация
   caption: Вулкан Тунупа и северная часть Уюни, район поселения Чантани
 gallery: []
 themes:
@@ -21,7 +21,7 @@ searchAliases:
 - Chantani Museum
 - Museo de Chantani
 sourceSnapshot: data/source-index/materials/destination_bolivia_chantani_museum.md
-updatedAt: '2026-10-13'
+updatedAt: '2026-10-21'
 ---
 
 Музей Чантани находится в одноименном поселении на северной стороне солончака Уюни, между Тахуа и Кокесой. Это небольшой местный музей, посвященный природному и культурному наследию региона. Посещение дополняет поездку по солончаку и знакомство с поселениями у подножия Тунупы.

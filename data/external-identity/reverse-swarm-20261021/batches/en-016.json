@@ -127,7 +127,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-003: title «Venezuela Tours & Vacation packages | Guided trips to Venezuela  with Ada Tours», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "21.10.2026: EN HTML HTTP 200: экскурсионный фильтр всей Венесуэлы typeid=2&category_id=134; productsjson products=[], total=0.",
+        "RU /venezuela/excursion/ HTTP 200: «13 экскурсий в Венесуэлу», показано 1–13 из 13; страна country_venezuela."
+      ],
+      "note": "Страновой фильтр одинаковый, но EN-выдача пуста, RU содержит 13 экскурсий. Совпадение названия страны не подтверждает sameAs каталогов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:22:02.027Z",
+      "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/venezuela-en/packages",
@@ -250,5 +261,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:21:59.680Z"
+  "updatedAt": "2026-10-21T16:22:02.027Z"
 }

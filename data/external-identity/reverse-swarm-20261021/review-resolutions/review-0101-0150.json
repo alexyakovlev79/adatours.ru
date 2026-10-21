@@ -957,7 +957,28 @@
         "batchId": "vip-022",
         "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/brazil/tour/rio-iguazu-new-year-7-days/",
+        "relation": "redirect_301",
+        "confidence": 0.8,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:35:48.119Z",
+        "reason": "Для недоступного старого URL выбран наиболее вероятный преемник по специфичному намерению: Новый год, Рио и Игуасу. Активный RU-тур воспроизводит это сочетание и сохранённую миграционную сущность.",
+        "evidence": [
+          "Прямой GET VIP подтверждает 404; исторический текст и услуги не восстановлены.",
+          "Main: опубликованный 7-дневный маршрут Рио — обе стороны Игуасу с новогодним блоком. Решение вероятностное, идентичность старых услуг не утверждается.",
+          "Проверен текущий main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu.md, blob 0dce771204019a1d81d4f8de6e65d3b1ca694a92, canonical /brazil/tour/rio-iguazu-new-year-7-days/."
+        ],
+        "targetEntityId": "tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu"
+      },
+      "sourceObservation": {
+        "n": 118,
+        "sourceUrl": "https://vipdeluxetravel.ru/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu",
+        "http": 404,
+        "error": "HTTP Error 404: Not Found"
+      }
     },
     {
       "reviewOrder": 119,
@@ -1890,7 +1911,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:36:19.832Z",
+  "updatedAt": "2026-10-21T16:36:21.914Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

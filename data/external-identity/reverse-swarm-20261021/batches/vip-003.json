@@ -62,7 +62,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/233bd63e5a7bff2877cd2257.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #463: HTTP 200, pageType=excursion_listing, пустой title у подраздела Пунта-Горды (Белиз); позиции исходного каталога не подтверждены.",
+        "В текущем data/source-index/catalogs/excursions.json нет активных экскурсий с основным или дополнительным местом destination_belize_punta_gorda; /belize/punta-gorda/ как непустой каталог не подтвержден."
+      ],
+      "note": "Не найден существующий RU-каталог экскурсий по Пунта-Горде. Нужен редакционный выбор назначения: действующая страница места или 410; подготовка 301 отложена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:51:21.417Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-punta-del-ehste-v-urugvae",
@@ -335,5 +345,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:51:16.468Z"
+  "updatedAt": "2026-10-21T14:51:21.417Z"
 }

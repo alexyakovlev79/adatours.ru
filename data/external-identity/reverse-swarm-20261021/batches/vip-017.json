@@ -262,7 +262,17 @@
       "pageType": "unclassified",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/3e981bf00754fa1c401bcfd4.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/place/olinda/",
+      "evidence": [
+        "VIP frozen inventory 893: title «Олинда, Бразилия: достопримечательности и путеводитель по городу ЮНЕСКО», H1 «Олинда», historical snapshotHttp 200, snapshotFile snapshots/3e981bf00754fa1c401bcfd4.html; название URL recife-brazil не совпадает с H1 и title.",
+        "RU approved MD src/content/destinations/olinda.md (destination_brazil_olinda): исторический центр UNESCO, холмы и церкви Олинды, canonical https://adatours.ru/brazil/place/olinda/; это другой объект, чем Ресифи."
+      ],
+      "note": "Будущий 301 именно на Олинду, не на Ресифи: назначение определено по title/H1 и MD. Состав туров и живые HTTP-ответы не проверены; редирект не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:06:17.589Z",
+      "checkedBy": "reverse-worker-mvi8ejjf-p87bjemb83",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/braziliya/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya",
@@ -435,5 +445,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:04:11.236Z"
+  "updatedAt": "2026-10-21T15:06:17.589Z"
 }

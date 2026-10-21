@@ -22,7 +22,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: category, HTTP 200, H1 «Itacaré: VIP Beach Resort & Eco Tours», crawlReport adatours-com-crawl-002.json; snapshotFile не задан. Живой GET 21.10.2026: HTTP 200, self-canonical /itacare/packages, H1 тот же; datasrc isPackageCategory&typeid=1&category_id=356, то есть каталог туров.",
+        "В актуальном main src/content/destinations/itacare.md (blob 1a045c88199a24fca42a7fd2c401d4458fb6354c) approved destination_brazil_itacare: город Итакаре, Баия, атлантические пляжи и Мата-Атлантика. Живой /brazil/place/itacare/ HTTP 200 сообщает «Пока нет туров в это место»; /brazil/place/itacare/tour/ HTTP 404."
+      ],
+      "note": "Точного действующего RU-каталога туров Итакаре нет. Информационная страница города — другой тип сущности и не sameAs каталога; связь по одной географии не назначалась. Пустой SSR-контейнер EN не принят за доказательство отсутствия продуктов в динамическом каталоге.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:51:19.294Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/jericoacoara/excursions",
@@ -315,5 +325,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:48:07.485Z"
+  "updatedAt": "2026-10-21T15:51:19.294Z"
 }

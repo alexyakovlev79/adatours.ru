@@ -3735,7 +3735,66 @@
         "batchBlobSha": "94340646bfed4f8fa3890d7d0b78bef146a4f9f3",
         "reviewOrder": 97
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "disposition": "gone_410",
+        "recommendedHttpStatus": 410,
+        "relation": null,
+        "ruUrl": "",
+        "targetId": null,
+        "comparedId": "tour_source_venesuela_populyarnye_napravleniya",
+        "targetContentPath": "src/content/tours/venesuela-populyarnye-napravleniya.md",
+        "targetBlobSha": "ac27c0643d68ad1702b0bc314b0344af58befc8a",
+        "confidence": 0.97,
+        "accepted": true,
+        "basis": "retire",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.746Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/venesuela-populyarnye-napravleniya → HTTP 200, title «Венесуэла: Популярные направления », 74125 байт, SHA-256 64765a3d78864f8e10dd676e8ace38f09f6ea7fbe5a65209385c8127136eb670. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/venesuela-populyarnye-napravleniya.md, blob ac27c0643d68ad1702b0bc314b0344af58befc8a: archived, tour_source_venesuela_populyarnye_napravleniya; сопоставленный продукт архивирован.",
+          "Та же 12-дневная программа Каракас → Колония-Товар → Канайма/Анхель → Маргарита → Каракас/Санта-Тереза существует только как archived; активный равнозначный преемник не установлен."
+        ],
+        "note": "Принято редакционное решение: закрыть старое предложение кодом 410 при отдельном внедрении. Подтвержденной активной пары нет; 410 сейчас не включен.",
+        "liveSource": {
+          "key": "source-97",
+          "url": "https://vipdeluxetravel.ru/venesuela-populyarnye-napravleniya",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/venesuela-populyarnye-napravleniya",
+          "sha256": "64765a3d78864f8e10dd676e8ace38f09f6ea7fbe5a65209385c8127136eb670",
+          "bytes": 74125,
+          "title": "Венесуэла: Популярные направления ",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/venesuela-populyarnye-napravleniya\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1 (понедельник): Каракас",
+            "День 2 (вторник): Обзорная экскурсия по Каракасу",
+            "День 3 (среда): Колония Товар",
+            "День4 (четверг): Национальный парк Канайма – лагуна Канайма, водопады Сапо и Ача",
+            "День5 (пятница): Водопад Сальто Анхель на целый день",
+            "День 6 (суббота): Свободное время на Канайме",
+            "День 7 (воскресенье): Национальный парк Канайма - Остров Маргарита",
+            "День 8 (понедельник): Остров Маргарита",
+            "День 9 (вторник) Обзорная экскурсия с русским гидом по острову Маргарита",
+            "День 10 - 11 (среда - четверг): Остров Маргарита",
+            "День 12 (пятница): Каракас - Поместье -фабрика по производству венесуэльского рома Санта Тереза"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_venesuela_populyarnye_napravleniya",
+          "url": "https://adatours.ru/venezuela/tour/venezuela-popular-destinations/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/venezuela/tour/venezuela-popular-destinations/",
+          "sha256": "9681671fac7725097f0b6d3dc8d37a41ac1daab628d1dd90f39060f2f31b60c2",
+          "bytes": 108302,
+          "title": "Тур Венесуэла: Популярные направления по цене от $3 395 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/venezuela/tour/venezuela-popular-destinations/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 98,
@@ -3900,9 +3959,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:53.399Z",
+  "updatedAt": "2026-10-21T16:35:55.096Z",
   "progress": {
-    "resolved": 46,
+    "resolved": 47,
     "total": 50
   }
 }

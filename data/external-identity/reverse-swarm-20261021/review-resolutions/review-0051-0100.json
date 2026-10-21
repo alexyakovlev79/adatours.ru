@@ -3012,7 +3012,68 @@
         "batchBlobSha": "37db2926bfced9cf7d2fb73624d33343f2f3ac91",
         "reviewOrder": 89
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/multi-country/tour/south-america-peru-bolivia-chile-easter-island/",
+        "targetId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+        "comparedId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+        "targetContentPath": "src/content/tours/velikij-tur-po-yuzhnoj-amerike.md",
+        "targetBlobSha": "40b7a856ec686415d03988053f47cff2f8301fee",
+        "confidence": 0.99,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.726Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/velikij-tur-po-yuzhnoj-amerike → HTTP 200, title «Тур по Южной Америке: Перу, Боливия, Чили + Остров Пасхи», 89524 байт, SHA-256 0db4e4f48396a408e999b487ebb1fc48a889d6f3958e4a42e315ecd78f072b1c. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/velikij-tur-po-yuzhnoj-amerike.md, blob 40b7a856ec686415d03988053f47cff2f8301fee: approved, tour_source_velikij_tur_po_yuzhnoj_amerike; RU цель https://adatours.ru/multi-country/tour/south-america-peru-bolivia-chile-easter-island/ → HTTP 200, SHA-256 7f4aa3fe78224ab57db0ea022813212036d8db871b236565d1dfd621eaabec35.",
+          "Основная программа 14 дней: Перу → Боливия/Уюни → Атакама/Сантьяго. В исходном HTML остров Пасхи прямо вынесен в «Дополнительно: ... 3 дня /2 ночи», как и в RU. Прежняя причина review устранена."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-89",
+          "url": "https://vipdeluxetravel.ru/velikij-tur-po-yuzhnoj-amerike",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/velikij-tur-po-yuzhnoj-amerike",
+          "sha256": "0db4e4f48396a408e999b487ebb1fc48a889d6f3958e4a42e315ecd78f072b1c",
+          "bytes": 89524,
+          "title": "Тур по Южной Америке: Перу, Боливия, Чили + Остров Пасхи",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/velikij-tur-po-yuzhnoj-amerike\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Прибытие в Лиму – знакомство со столицей Перу",
+            "День 2: Лима – колониальный центр и океанское побережье",
+            "День 3: Перелет в Куско – храм Кориканча и крепость Саксайуаман",
+            "День 4: Мачу-Пикчу – затерянный город инков",
+            "День 5: Переезд из Куско в Пуно – Анды и перевал Ла Райя",
+            "День 6: Озеро Титикака – плавучие острова Урос",
+            "День 8: Ла-Пас – рынок ведьм и панорамы Анд",
+            "День 9: Перелет в Уюни – солончак, кладбище поездов и отель из соли",
+            "День 10: Уюни – плато Альтиплано, высокогорные лагуны и пустыня Силоли",
+            "День 11: Переезд в Сан-Педро-де-Атакама – лагуны Колорада и Верде",
+            "День 12: Перелет в Сантьяго – отдых в чилийской столице",
+            "День 13: Сантьяго – обзорная экскурсия по городу",
+            "День 14: Сантьяго – вылет домой"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+          "url": "https://adatours.ru/multi-country/tour/south-america-peru-bolivia-chile-easter-island/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/multi-country/tour/south-america-peru-bolivia-chile-easter-island/",
+          "sha256": "7f4aa3fe78224ab57db0ea022813212036d8db871b236565d1dfd621eaabec35",
+          "bytes": 320386,
+          "title": "Тур Большой тур по Южной Америке на 14 дней: Перу, Боливия и Чили по цене от $6 559 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/multi-country/tour/south-america-peru-bolivia-chile-easter-island/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 90,
@@ -3417,9 +3478,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:39.350Z",
+  "updatedAt": "2026-10-21T16:35:41.073Z",
   "progress": {
-    "resolved": 38,
+    "resolved": 39,
     "total": 50
   }
 }

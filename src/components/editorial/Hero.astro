@@ -4,6 +4,7 @@ import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import HeroVideo from './HeroVideo.astro';
 import VipBadge from '../tour/VipBadge.astro';
+import mobileHeroPilot from '../../data/media/mobile-hero-pilot-20261021.json';
 
 interface Props {
   eyebrow?: string;
@@ -51,6 +52,11 @@ const {
 
 const resolvedImage = image ? withBase(image) : undefined;
 const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
+// Deliberately scoped to the pilot page AND its unchanged original hero.
+const mobileHero = !mobilePhotoLead ? mobileHeroPilot.items.find((item) =>
+  item.pagePath === Astro.url.pathname && item.source === image && item.status === 'READY'
+) : undefined;
+const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} ${v.width}w`).join(', ');
 
 ---
 
@@ -62,8 +68,12 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
   data-replacement-reason={replacementReason}
 >
   {resolvedImage && (
+    <picture style="display: contents">
+    {mobileHero && <source media={mobileHeroPilot.media} srcset={mobileSrcset} sizes="100vw" type="image/webp" width={mobileHero.variants[0].width} height={mobileHero.variants[0].height} />}
     <img
       class="hero__media"
+      data-mobile-hero={mobileHero ? "pilot" : undefined}
+      style={mobileHero ? { "--hero-mobile-crop-position": mobileHero.objectPosition } : undefined}
       src={resolvedImage}
       alt=""
       aria-hidden="true"
@@ -71,8 +81,9 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
       fetchpriority="high"
       referrerpolicy="no-referrer"
     />
+    </picture>
   )}
-  {video && image && <HeroVideo src={video.src} mobileSrc={video.mobileSrc} poster={image} />}
+  {video && image && <HeroVideo src={video.src} mobileSrc={video.mobileSrc} poster={image} posterInHeroPicture={Boolean(mobileHero)} />}
   <div class="hero__overlay"></div>
   {hasBreadcrumbs && <div class="hero__breadcrumbs"><slot name="breadcrumbs" /></div>}
   <div class="hero__content">
@@ -127,6 +138,10 @@ const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
     max-width: none;
     object-fit: cover;
     object-position: center;
+  }
+
+  @media (max-width: 479px) {
+    .hero__media[data-mobile-hero="pilot"] { object-position: var(--hero-mobile-crop-position, center); }
   }
 
   .hero__overlay {

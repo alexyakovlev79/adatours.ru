@@ -282,7 +282,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/04cb7b8d14911a5e7be1dd18.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/tour/brazil-sao-paulo-to-buzios/",
+      "evidence": [
+        "VIP HTML 04cb7b8d14911a5e7be1dd18.html: 12 дней Сан-Паулу → Игуасу → Рио-де-Жанейро → Бузиос, завершение вылетом из Сан-Паулу.",
+        "В data/catalog-archive.json ID tour_source_sao_paulo_buzios_rio_iguasu имеет reason duplicate и duplicateOf=tour_source_braziliya_ot_san_paulo_do_buziosa; архив подтвердил одинаковую 12-дневную программу и условия. Действующий MD src/content/tours/braziliya-ot-san-paulo-do-buziosa.md опубликован, 12 дней с теми же местами."
+      ],
+      "note": "Для 301 выбрана подтвержденная активная копия дубля, а не архивная страница старого Tour ID.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:08:55.942Z",
+      "checkedBy": "reverse-worker-mvi8e1qn-pxkq8k7yg0e",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package/vsya-panama-natsionalnye-parki-ostrova-i-doliny?page=2",
@@ -445,5 +455,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:08:47.672Z"
+  "updatedAt": "2026-10-21T15:08:55.942Z"
 }

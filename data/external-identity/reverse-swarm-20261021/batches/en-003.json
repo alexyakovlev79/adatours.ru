@@ -147,7 +147,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/bolivia/potosi/",
+      "evidence": [
+        "21.10.2026 исходный каталог GET 200/self-canonical, HTML SHA-256 c16efe303ed7ef5600e9a8be49ecd204aeca914b49e3dc91cd593dd030163ef5; проверен публичный productsjson, использующий datasrc страницы, SHA-256 adfeda97285dd631b5ff6ac9ffa6a31dfabad0aec86d6c768fa59b7cc80742ff. EN category_id=171/typeid=2: API содержит ровно один продукт uid=4322, Potosí Tour (/potosi-tour). Полный продукт прочитан: выезд из отеля 09:00, рынок шахтёров, Серро-Рико, несколько уровней шахт, алтари Тио, возврат; полдня, английский гид и трансфер, обед отдельно.",
+        "Проверены active MD, source-index и живой RU-каталог в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2: RU destination_bolivia_potosi, каталог из одной excursion_source_potosi_tur; src/content/excursions/potosi-tur.md approved, 4 часа. Совпали рынок, спуск в Серро-Рико, Тио, выезд 09:00, английский гид/трансфер и исключение обеда; таблица 2pax $55 / 3pax $50 совпала.",
+        "Точный RU canonical отвечает HTTP 200, self-canonical, robots index,follow, H1 указывает тот же тип/место и количество. Frozen: snapshotHttp=200, pageType=category, crawlReport=adatours-com-crawl-001.json, snapshotFile отсутствует; использованы действующие EN-страницы."
+      ],
+      "note": "Подтверждён sameAs именно каталога: одинаковые тип продукта, географический фильтр и полный состав действующих предложений. Программы составляющих проверены по содержанию, не только по slug/названию. Разметка сайта не изменена.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:39:36.851Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-potosi/packages",
@@ -436,5 +447,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:19.949Z"
+  "updatedAt": "2026-10-21T15:39:36.851Z"
 }

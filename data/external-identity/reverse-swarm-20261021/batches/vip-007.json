@@ -522,7 +522,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/c68ee06c7ab37bf7b12a5506.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/peru/place/tumbes/tour/",
+      "evidence": [
+        "VIP inventory №606: pageType=tour_listing, https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tumbes-v-peru/packages, snapshotHttp=200, snapshotFile=snapshots/c68ee06c7ab37bf7b12a5506.html; title списка пуст и HTML не открыт.",
+        "Ada Tours RU: approved Destination destination_peru_tumbes; действующий опубликованный Tour MD src/content/tours/ves-mnogolikij-peru-plyazhi-tumbesa.md содержит destination_peru_tumbes в основном маршруте. Канонический непустой список https://adatours.ru/peru/place/tumbes/tour/."
+      ],
+      "note": "Старому /packages Тумбеса отвечает непустой RU каталог туров по тому же месту. Кандидат на 301, без утверждения равенства конкретного списка старых предложений.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:56:57.000Z",
+      "checkedBy": "reverse-worker-mvi83j7a-l8szybbr92h",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-tumbes-v-peru/ekskursii",
@@ -575,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:56:53.368Z"
+  "updatedAt": "2026-10-21T14:56:57.000Z"
 }

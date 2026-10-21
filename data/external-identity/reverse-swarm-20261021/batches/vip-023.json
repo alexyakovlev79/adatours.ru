@@ -202,7 +202,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/22cb2938417c81ecb04f91de.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory 2026-10-20: HTTP 200, title \"Авторизация\", final URL /?route=account/login from account/address.",
+        "Current Ada Tours public RU pages do not provide a corresponding customer address-book destination."
+      ],
+      "note": "Адресная книга покупателя, технический маршрут OpenCart с переводом на страницу авторизации. Перенаправление на туристический контент некорректно.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:05:02.715Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=account%2Forder",
@@ -405,5 +415,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:04:59.206Z"
+  "updatedAt": "2026-10-21T15:05:02.715Z"
 }

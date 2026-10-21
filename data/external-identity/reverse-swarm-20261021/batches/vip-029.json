@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi90inx-8sl6n0h45f",
-    "token": "reverse-lease-mvi90inx-16f0cezczwn",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:10:23.382Z",
-    "expiresAt": "2026-10-21T16:40:23.382Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/nezabyvaemoe-tango-shou?page=2",
@@ -602,8 +596,20 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/0e7deeb5759d63aaa93f2afd.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #1270: snapshot HTTP 200, title «Таско и пещеры Какауамильпа», H1 «Индивидуальная экскурсия в Таско и пещеры Какауамильпа».",
+        "RU каталоги excursions/tours/destinations: есть место destination_mexico_tasko и экскурсия excursion_mexico_cuernavaca_taxco_pilgrimage, но последняя — паломничество с мессой в Санта-Приске, не пещеры Какауамильпа; соответствующего комплексного маршрута нет."
+      ],
+      "note": "Полная программа индивидуального маршрута Таско + пещеры Какауамильпа не подтверждена у RU объекта. Существующая экскурсия в Таско имеет другую программу и цель; без эквивалентной RU страницы 301 не назначается.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:25:39.418Z",
+      "checkedBy": "reverse-worker-mvi90inx-8sl6n0h45f",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:25:34.585Z"
+  "updatedAt": "2026-10-21T15:25:39.418Z",
+  "completedAt": "2026-10-21T15:25:39.418Z",
+  "lastOwner": "reverse-worker-mvi90inx-8sl6n0h45f"
 }

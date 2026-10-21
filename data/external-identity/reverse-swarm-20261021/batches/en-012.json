@@ -289,7 +289,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/playa-tamarindo/packages; canonical sourceUrl; H1 «Tamarindo: Tours to the Surfing and Sunset Beach». В полученном HTML 2 карточек: 5 Wonders in Costa Rica; 3 glances at Costa Rica.",
+        "main 50542db1: destination_costa_rica_plajya_tamarindo, approved, src/content/destinations/plajya-tamarindo.md, canonical /costa-rica/place/playa-tamarindo/. Плайя Тамариндо предлагает пляжный отдых, серфинг, рыбалку и прогулки под парусом. В городке есть рестораны, художественные галереи и лавки ремесленников. Активных основных RU-туров с этим ID: 5; собственных экскурсий по destination: 0. Примеры RU: Экстремальная Коста-Рика; Коста Рика Никарагуа; Коста Рика: Короткая, но полная программа.",
+        "RU src/pages/[...path].astro и src/lib/tour-relations.ts: каталог основных туров использует routeDestinations ?? destinations, optional-tours отделен; экскурсионные каталоги формируются из активных Excursion. EN-географическое имя не доказывает равенство фильтра и состава."
+      ],
+      "note": "Не подтверждена идентичность EN-коллекции из 2 видимых карточек и текущего RU-каталога (5 основных туров). Страницу Place не принимаю за sameAs коллекции.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:16:06.377Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/port-lockroy/excursions",
@@ -452,5 +463,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:16:04.304Z"
+  "updatedAt": "2026-10-21T16:16:06.377Z"
 }

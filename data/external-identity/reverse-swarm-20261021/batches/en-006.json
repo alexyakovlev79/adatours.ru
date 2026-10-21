@@ -128,7 +128,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Costa Rica Tours: Jungles, Volcanoes & Two Oceans», H1 «Costa Rica: Tours to the Land of Jungles and Volcanoes». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/costa-rica-en/packages: HTTP 200, canonical=https://adatours.com/costa-rica-en/packages, H1 «Costa Rica: Tours to the Land of Jungles and Volcanoes».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isPackageCategory&typeid=1&category_id=44&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=excursions&excludes%5B3%5D=themes. Прочитаны slices 1:8, 2:8, 3:5; 21 уникальных продуктов, paginationError=null. Примеры ID/названий: 2509 «5 Wonders in Costa Rica»; 2970 «The Best of Central America»; 4140 «Basic  Costa  Rica»; 4251 «Costa Rica for nature lovers»; 3192 «Short and Complete Costa Rica».",
+        "https://adatours.ru/costa-rica/tour/ — HTTP 200, canonical совпадает. На первой странице 28 туров, в том числе новые самостоятельные и multi-country программы; просмотрены карточки и ссылки. Каноническая страна country_costa_rica подтверждена source-index."
+      ],
+      "note": "Полный EN-каталог после чтения трех страниц API содержит 21 программу, RU-подборка — 28. Фильтры/состав не тождественны, поэтому sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:01.198Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cozumel/excursions",
@@ -371,5 +383,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:45:59.068Z"
+  "updatedAt": "2026-10-21T15:46:01.198Z"
 }

@@ -107,7 +107,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/belize/place/caye-caulker/tour/",
+      "evidence": [
+        "EN live HTTP 200, canonical /belize-caye-caulker/packages; H1 Caye Caulker: Tours to the Island with Beaches and the Barrier Reef. Ровно одна карточка Exploring Belize → /exploring-belize. SHA-256 3134f4090bdb790600628c72264099bc4b45f3a5d95806d57777f5b18c04b944.",
+        "RU live HTTP 200 /belize/place/caye-caulker/tour/, self canonical, H1 1 тур на Кайе-Колкере. Ровно одна карточка Исследуя Белиз → /belize/tour/explore-belize/, stable ID tour_source_issleduya_beliz, место destination_belize_kaje_kolker. RU SHA-256 e46a0b98165814c5df7c9e6de7a048162254d5c55e8f1dccfc6c871795c0404f.",
+        "Товар сверён по полным программам: EN /exploring-belize HTTP 200 SHA-256 85a4fe5afb63c1276b680e5d7b22ede7022d2f7a88291d68980ec5c7d9c2727d и RU published MD blob 1f8f5f1e0d5efe2252e94e75c1ba216866023993: 13д/12н, Ламанай → Кайе-Колкер → Сан-Игнасио/ATM → Пласенсия, одинаковые дни, $4169, отели Lamanai Outpost/Island Magic/Black Rock/Azure del Mar и включённые трансферы.",
+        "Frozen inventory category, HTTP 200, category_id 40, snapshotFile отсутствует. Совпадают объект фильтра (остров Кайе Колкер), тип (туры с посещением) и полный одноэлементный состав."
+      ],
+      "note": "Подтверждена идентичность каталогов с одним и тем же туром и географическим фильтром. Программа единственного товара проверена по дням и условиям. Только результат сверки, без публикации JSON-LD.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:36:49.854Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-city/excursions",
@@ -360,5 +372,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:35:55.285Z"
+  "updatedAt": "2026-10-21T15:36:49.854Z"
 }

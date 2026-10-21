@@ -438,7 +438,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Combined tours to several Latin American countries», H1 «COMBINED TOURS TO SOUTH AND CENTRAL AMERICA», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: category_id=669, isThemesCategory, H1 «COMBINED TOURS TO SOUTH AND CENTRAL AMERICA», schema offerCount=31. В первой выдаче productsjson видны Brazil/Argentina/Peru, 4 Countries, 5 Countries, Argentina/Chile/Bolivia и другие; выдача первых 8 карточек не считается полным каталогом.",
+        "RU /multi-country/ HTTP 200: заголовок «93 Multi-country тура», первая страница 30 карточек; показаны 2–8 стран и программы Центральной/Южной Америки."
+      ],
+      "note": "Намерение комбинированных туров совпадает, однако заявленный размер ассортимента EN 31 против RU 93 и одинаковый состав не подтвержден. SameAs каталогов не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:56:55.799Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/multi-country-tours-chile-and-colombia",
@@ -531,5 +542,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:56:18.328Z"
+  "updatedAt": "2026-10-21T15:56:55.799Z"
 }

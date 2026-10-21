@@ -7,6 +7,8 @@ import EditorialProof from '../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../components/proof/ProcessSteps.astro';
 import DmcNav from '../../components/commercial/DmcNav.astro';
 import DmcFaq from '../../components/commercial/DmcFaq.astro';
+import CommercialDetails from '../../components/commercial/CommercialDetails.astro';
+import DestinationBand from '../../components/editorial/DestinationBand.astro';
 import { ORG } from '../../data/organization/ada-tours';
 ---
 
@@ -73,14 +75,33 @@ import { ORG } from '../../data/organization/ada-tours';
 
   <EditorialProof
     eyebrow="Коммерческая работа"
-    title="Договор и условия под конкретное бронирование"
-    text="Для туроператоров используется договор, а вознаграждение обычно согласуется как процент. Финальные коммерческие условия фиксируются для конкретной поездки."
+    title="Роли сторон и условия конкретной поездки"
+    text="Для каждого запроса определяем программу, объем местных услуг и условия сотрудничества. Тарифную модель, порядок работы с клиентом и условия подтверждения бронирований важно согласовать отдельно."
     image="/media/destinations/foz-do-iguacu/gallery-1-enhanced-20261001.webp"
     facts={[
-      'Договор для работы с туроператором',
-      'Вознаграждение обычно согласуется как процент',
-      'Состав и стоимость услуг подтверждаются под конкретную поездку',
-      'С постоянными партнерами возможны повторные договоры',
+      'Распределение задач между агентством и Ada Tours',
+      'Порядок общения с гостями во время поездки',
+      'Состав услуг и расчет для выбранных дат',
+      'Письменные условия подтверждения и изменений',
+    ]}
+  />
+
+  <DestinationBand
+    eyebrow="Выполненный кейс · 2026"
+    title="Корпоративная группа из 30 человек: Рио и Ангра-дус-Рейш"
+    text="Автобусы, гиды, катамаран, питание, экскурсии и вечернее мероприятие в единой программе."
+    image="/media/destinations/angra-dos-reis/hero-enhanced-20261001.webp"
+    href="/cases/corporate-group-rio-angra-2026/"
+  />
+
+  <CommercialDetails
+    id="dmc-coverage"
+    eyebrow="Подтвержденный опыт и примеры"
+    title="Что можно оценить до первого запроса"
+    rows={[
+      { title: 'Выполненные проекты', text: 'Два опубликованных NDA-кейса в Бразилии показывают работу с корпоративной группой из 30 гостей и делегацией из 8 человек.', href: '/cases/', linkLabel: 'Посмотреть кейсы Ada Tours' },
+      { title: 'B2B-программы', text: 'Предложения по Панаме, Бразилии и аграрной Аргентине содержат подробные дни, варианты транспорта, сопровождения и экскурсий. Это примеры возможных маршрутов, а не отчеты о состоявшихся поездках.', href: '/mice/programmes/', linkLabel: 'Изучить программы по дням' },
+      { title: 'Условия партнерства', text: 'Перед подтверждением поездки отдельно согласуются коммерческая модель, документы, общение с клиентом, объем операционной помощи и правила изменений.', href: '/dmc/terms/', linkLabel: 'Условия B2B-работы' },
     ]}
   />
 

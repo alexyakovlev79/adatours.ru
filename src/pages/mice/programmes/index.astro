@@ -7,10 +7,14 @@ import Hero from '../../../components/editorial/Hero.astro';
 import EditorialStatement from '../../../components/editorial/EditorialStatement.astro';
 import DestinationBand from '../../../components/editorial/DestinationBand.astro';
 import MiceNav from '../../../components/commercial/MiceNav.astro';
+import CommercialDetails from '../../../components/commercial/CommercialDetails.astro';
+import DmcFaq from '../../../components/commercial/DmcFaq.astro';
 
+const firstProgrammes = ['tour_panama_mice_7_days', 'tour_brazil_mice_7_days', 'tour_argentina_agricultural_11_days'];
+const programmeOrder = new Map(firstProgrammes.map((id, index) => [id, index]));
 const programmes = (await getCollection('tours', ({ data }) =>
   data.locale === 'ru' && isActiveEntity(data) && data.audiences.includes('b2b')
-)).sort((a, b) => b.data.priority - a.data.priority || a.data.title.localeCompare(b.data.title, 'ru'));
+)).sort((a, b) => (programmeOrder.get(a.data.id) ?? 999) - (programmeOrder.get(b.data.id) ?? 999) || b.data.priority - a.data.priority || a.data.title.localeCompare(b.data.title, 'ru'));
 ---
 
 <BaseLayout
@@ -23,7 +27,7 @@ const programmes = (await getCollection('tours', ({ data }) =>
   <Hero
     eyebrow="B2B · MICE · Деловые группы"
     title="Программы, с которых начинается поездка вашей команды"
-    intro="Посмотрите, как устроена поездка по дням: где работает транспорт, кто сопровождает группу, как распределены питание и экскурсии. Выберите основу, а даты и состав услуг мы согласуем под вашу задачу."
+    intro="Подробные примеры поездок для корпоративных групп и делегаций: транспорт, сопровождение, деловые встречи и экскурсии по дням. Это программы для обсуждения, а не отчеты о проведенных проектах."
     image="/media/countries/panama/featureBands-1-enhanced-20261002.webp"
     ctaHref="#request"
     ctaLabel="Рассчитать для нашей группы"
@@ -33,7 +37,19 @@ const programmes = (await getCollection('tours', ({ data }) =>
 
   <EditorialStatement
     eyebrow="Примеры программ"
-    text="Каждую программу можно обсудить для своей группы. Для расчета понадобятся даты, количество участников, обязательные встречи, требования к транспорту, языку сопровождения и питанию."
+    text="Здесь собраны предложения для новых B2B-запросов. Три свежие программы показывают разные задачи: прием группы в Панаме, конференционную поездку по Бразилии и профессиональные визиты в Аргентине. Выполненные проекты отдельно представлены в разделе кейсов."
+  />
+
+  <CommercialDetails
+    id="programmes-formats"
+    eyebrow="Три формата"
+    title="От корпоративного приема до отраслевой делегации"
+    intro="Показанные программы собраны из подробных маршрутов. Их окончательные даты, объем услуг, встречи и стоимость определяются при согласовании конкретной поездки."
+    rows={[
+      { title: 'Панама · 7 дней', text: 'Раздельные встречи прибывающих, автомобили и групповые автобусы, Панамский канал, прогулки по столице, гастрономия и англоязычное сопровождение. Численность группы в исходном примере не указана.', href: '/panama/tour/panama-mice-7-days/', linkLabel: 'Открыть программу Панамы' },
+      { title: 'Бразилия · 7 дней', text: 'Сан-Паулу, Игуасу, Манаус и Рио-де-Жанейро. В примере есть конференционная часть и экскурсии; участие гостей и временные окна деловой и свободной программы требуется согласовать.', href: '/brazil/tour/brazil-mice-7-days/', linkLabel: 'Открыть программу Бразилии' },
+      { title: 'Аргентина · 11 дней', text: 'Аграрные хозяйства, исследовательские учреждения и профессиональные визиты в провинции Буэнос-Айрес, с переводом, транспортом и культурной частью. Посещение конкретных организаций зависит от их подтверждения.', href: '/argentina/tour/argentina-agricultural-11-days/', linkLabel: 'Открыть аграрную программу' },
+    ]}
   />
 
   {programmes.map((entry, index) => (
@@ -45,5 +61,13 @@ const programmes = (await getCollection('tours', ({ data }) =>
       href={tourPath(entry.data)}
       align={index % 2 === 1 ? 'right' : 'left'}
     />
-  ))}
+  ))}  <DmcFaq
+    title="Что важно при выборе программы"
+    items={[
+      { question: 'Это уже проведенные поездки Ada Tours?', answer: 'На этой странице представлены примеры подробных B2B-программ, которые можно использовать при подготовке нового запроса. Подтвержденные выполненные проекты опубликованы отдельно в разделе «Кейсы».' },
+      { question: 'Какие услуги входят в стоимость?', answer: 'В каждой программе указаны известные включенные и исключенные услуги. Размещение, билеты, конференции и отдельные визиты нельзя считать включенными, если это прямо не предусмотрено условиями выбранного маршрута.' },
+      { question: 'Можно ли изменить города, транспорт или деловой график?', answer: 'Да, цель раздела — дать основу для индивидуального обсуждения. При перерасчете определяются новые даты, размер группы, доступность поставщиков и подтверждаемые встречи.' },
+      { question: 'Где посмотреть опыт уже проведенных корпоративных поездок?', answer: 'В разделе кейсов есть две опубликованные программы работы Ada Tours с группами на 30 и 8 человек в Бразилии.' },
+    ]}
+  />
 </BaseLayout>

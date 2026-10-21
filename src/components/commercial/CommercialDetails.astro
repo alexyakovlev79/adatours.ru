@@ -1,0 +1,92 @@
+---
+import { withBase } from '../../lib/paths';
+
+interface DetailRow {
+  title: string;
+  text: string;
+  href?: string;
+  linkLabel?: string;
+}
+interface Props {
+  id: string;
+  eyebrow?: string;
+  title: string;
+  intro?: string;
+  rows: DetailRow[];
+}
+const { id, eyebrow, title, intro, rows } = Astro.props;
+---
+
+<section class="commercial-details" aria-labelledby={id}>
+  <div class="container">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h2 id={id}>{title}</h2>
+    {intro && <p class="commercial-details__intro">{intro}</p>}
+    <div class="commercial-details__rows">
+      {rows.map((row) => (
+        <article class="commercial-details__row">
+          <h3>{row.title}</h3>
+          <div>
+            <p>{row.text}</p>
+            {row.href && (
+              <a href={withBase(row.href)}>{row.linkLabel ?? 'Подробнее'} <span aria-hidden="true">↗</span></a>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .commercial-details {
+    padding-block: clamp(36px, 4.4vw, 70px);
+    background: var(--color-bg);
+  }
+  .commercial-details h2 {
+    max-width: 1020px;
+    margin: 10px 0 16px;
+    font-size: var(--text-h2);
+    line-height: 1.08;
+  }
+  .commercial-details__intro {
+    max-width: 820px;
+    margin: 0 0 clamp(22px, 3vw, 38px);
+    color: color-mix(in srgb, var(--color-ink) 75%, transparent);
+  }
+  .commercial-details__rows { border-top: 1px solid var(--color-line); }
+  .commercial-details__row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.75fr);
+    gap: clamp(20px, 5vw, 90px);
+    padding: clamp(18px, 2.4vw, 32px) 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+  .commercial-details__row h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 1.5vw, 1.85rem);
+    line-height: 1.2;
+  }
+  .commercial-details__row p {
+    max-width: 740px;
+    margin: 0;
+    line-height: 1.55;
+    color: color-mix(in srgb, var(--color-ink) 77%, transparent);
+  }
+  .commercial-details__row a {
+    display: inline-block;
+    margin-top: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--color-gold-deep);
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .commercial-details__row a:hover,
+  .commercial-details__row a:focus-visible { color: var(--color-gold-deep); }
+  @media (max-width: 720px) {
+    .commercial-details__row { grid-template-columns: 1fr; gap: 10px; }
+  }
+</style>

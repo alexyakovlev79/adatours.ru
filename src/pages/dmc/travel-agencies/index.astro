@@ -7,6 +7,8 @@ import EditorialProof from '../../../components/proof/EditorialProof.astro';
 import ProcessSteps from '../../../components/proof/ProcessSteps.astro';
 import DmcNav from '../../../components/commercial/DmcNav.astro';
 import DmcFaq from '../../../components/commercial/DmcFaq.astro';
+import CommercialDetails from '../../../components/commercial/CommercialDetails.astro';
+import DestinationBand from '../../../components/editorial/DestinationBand.astro';
 import { ORG } from '../../../data/organization/ada-tours';
 ---
 
@@ -78,6 +80,27 @@ import { ORG } from '../../../data/organization/ada-tours';
     ]}
   />
 
+  <DestinationBand
+    eyebrow="Реальный B2B-кейс · 2026"
+    title="Деловая делегация из 8 человек в Сан-Паулу и Кампинасе"
+    text="Отели, автомобили, микроавтобусы, перевод на трех языках и организация рабочих переездов."
+    image="/media/destinations/sao-paulo/hero-enhanced-20261001.webp"
+    href="/cases/business-delegation-sao-paulo-campinas-2026/"
+  />
+
+  <CommercialDetails
+    id="agency-scope"
+    eyebrow="Работа с партнером"
+    title="Что согласуем между агентством и Ada Tours"
+    intro="Для сохранения коммерческой роли агентства важно заранее определить контакты, состав документов и порядок решений во время поездки."
+    rows={[
+      { title: 'Работа с туристом', text: 'До бронирования определяем, кто согласует изменения с клиентом и в каких случаях локальной команде нужен прямой контакт с путешественниками для встреч, трансферов и оперативных вопросов.' },
+      { title: 'Предложение и документы', text: 'В запросе можно уточнить нужный формат маршрута, расчета, подтверждений и ваучеров. Возможность оформления отдельных материалов под бренд партнера требует отдельного согласования.' },
+      { title: 'Стоимость и договор', text: 'Уточняются фактическая тарифная модель, состав включенных услуг, срок действия предложения, порядок оплаты и условия изменений. Единый процент или нетто-тариф заранее не обещаются.', href: '/dmc/terms/', linkLabel: 'Подробнее об условиях сотрудничества' },
+      { title: 'Примеры программ', text: 'Сопоставьте задачи клиента с программами по Панаме, Бразилии и Аргентине, затем пришлите даты, бюджет и обязательные пункты.', href: '/mice/programmes/', linkLabel: 'Посмотреть B2B-программы' },
+    ]}
+  />
+
   <ProcessSteps
     eyebrow="Рабочий процесс"
     title="От запроса партнера до программы на месте"
@@ -108,6 +131,14 @@ import { ORG } from '../../../data/organization/ada-tours';
       {
         question: 'С группами какого размера работает Ada Tours?',
         answer: `Обычные группы — ${ORG.service.groups.standard.display} человек. Для крупных событий подтвержден диапазон ${ORG.service.groups.largeEvents.display} участников.`,
+      },
+      {
+        question: 'Будет ли Ada Tours общаться напрямую с клиентом агентства?',
+        answer: 'Коммерческую роль агентства и порядок связи с путешественниками согласуем до поездки. Для трансферов, встреч и оперативных изменений может потребоваться контакт с участниками на месте.',
+      },
+      {
+        question: 'Можно ли получить документы с оформлением нашего агентства?',
+        answer: 'Сообщите, какие документы и какой формат нужны вашему клиенту. Доступность брендированных маршрутов, ваучеров и других материалов согласуется отдельно для проекта.',
       },
     ]}
   />

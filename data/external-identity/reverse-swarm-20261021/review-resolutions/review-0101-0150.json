@@ -1162,7 +1162,28 @@
         "batchId": "vip-022",
         "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/multi-country/tour/brazil-argentina-chile-new-year-2027-10-days/",
+        "relation": "redirect_301",
+        "confidence": 0.84,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:38:33.727Z",
+        "reason": "Принят конкретный новогодний тур по Бразилии, Аргентине и Чили как наиболее вероятное продолжение той же миграционной программы. Текущие 2027 год и 10 дней относятся только к новой программе.",
+        "evidence": [
+          "Старый VIP URL исторически 404, в нем зафиксированы три страны и Новый год; текущий GET 503, старые даты не восстановлены.",
+          "Main: Рио/Новый год, Игуасу, Буэнос-Айрес и Сантьяго, ровно три заданные страны.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/tur-v-braziliyu-argentinu-i-chili-na-novyj-god.md, blob 054fd75b86d6c45d10629d4abb8ec74ca804494d; статус и программа прочитаны."
+        ],
+        "targetEntityId": "tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god"
+      },
+      "sourceObservation": {
+        "n": 122,
+        "sourceUrl": "https://vipdeluxetravel.ru/tur-v-braziliyu-argentinu-i-chili-na-novyj-god",
+        "http": 503,
+        "error": "HTTP Error 503: Service Unavailable"
+      }
     },
     {
       "reviewOrder": 123,
@@ -1979,7 +2000,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:38:49.530Z",
+  "updatedAt": "2026-10-21T16:38:51.064Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

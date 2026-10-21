@@ -456,7 +456,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Dominican Republic Tours: Punta Cana Beaches & Caribbean Paradise», H1 «Dominican Republic: Tours to the Best Caribbean Beaches». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/dominican-republic-en/packages: HTTP 200, canonical=https://adatours.com/dominican-republic-en/packages, H1 «Dominican Republic: Tours to the Best Caribbean Beaches».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isPackageCategory&typeid=1&category_id=301&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=excursions&excludes%5B3%5D=themes. Первый ответ API: total=5, products=5. Примеры ID/названий: 3417 «Mountain Adventure in Dominicana»; 4169 «Family Beach Holidays»; 3415 «North Coast Honeymoon»; 3948 «Jeep Adventure in Dominicana»; 3950 «Boutique-Hotel Roundtrip in Dominicana».",
+        "https://adatours.ru/dominican-republic/tour/ — HTTP 404; текущий sitemap не содержит этот каталог. В source-index есть Country country_dominican_republic с /dominican-republic/."
+      ],
+      "note": "EN содержит пять действующих карточек туров по Доминикане, RU-каталог туров не существует по каноническому адресу. Страница страны не равна этому ассортименту; точная sameAs-пара не подтверждена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:50.841Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/easter-island/excursions",
@@ -549,5 +561,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:48.866Z"
+  "updatedAt": "2026-10-21T15:46:50.841Z"
 }

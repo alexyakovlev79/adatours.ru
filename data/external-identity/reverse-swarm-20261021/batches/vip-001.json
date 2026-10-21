@@ -422,7 +422,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/9c50018cd0527971883acd59.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/mexico/playa-del-carmen/",
+      "evidence": [
+        "VIP frozen inventory #421: /ekskursii при курорте Плайя-дель-Кармен, pageType=excursion_listing, сохраненный HTTP 200; прежний ассортимент по snapshot title/H1 не известен.",
+        "RU destination_mexico_plajya_del_karmen approved; каталог экскурсий места /mexico/playa-del-carmen/ формируется по excursionDestinationIds и включает approved excursion_mexico_chichen_itza_valladolid_caribbean, где relatedDestinations содержит destination_mexico_plajya_del_karmen."
+      ],
+      "note": "Действующий RU-каталог связан с курортом Плайя-дель-Кармен, но включает экскурсию с переездом из Мериды; точный состав старого /ekskursii не установлен. Кандидат будущего 301 по типу каталога.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:47:40.626Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-plyazh-tamarindo-v-kosta-rike",
@@ -515,5 +525,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:47:35.433Z"
+  "updatedAt": "2026-10-21T14:47:40.626Z"
 }

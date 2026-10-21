@@ -382,7 +382,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/04d525e60a4256cd5088f41e.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитаны HTML snapshots/04d525e60a4256cd5088f41e.html (SHA-256 f05b24f88cb63da1af046a7d57b0e9fddf5be106afbf55493371d2a22ea3a097) и snapshots/8a376bf2087a78ee6353ac53.html (SHA-256 402271f89e34c01b9668af4c0559f8617fe2763f60191dbb3d8a08ec64f09065); обе суммы совпали с frozen inventory из проверенного архива e49c366e917e29f6ee3df86b8c2368f06f4581cb96d300324b1642f8e4a9dbb5. У обоих canonical https://vipdeluxetravel.ru/hotel, H1 Hotel.",
+        "Текст всего #content побуквенно совпадает после нормализации пробелов: 2927 символов. Та же первая страница 1–15 из 108 отелей, 8 страниц; одинаковые 15 гостиничных карточек Agua Marinha → Nannai Beach Resort в том же порядке. Ссылки различаются только параметром page=1."
+      ],
+      "note": "Подтвержден технический дубль первой страницы гостиничного каталога: /hotel?page=1 эквивалентен /hotel. Исключен только этот query URL; базовый /hotel и его чужая запись не изменены. RU sameAs/301 не назначается.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:24:57.694Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/brazil-foz-do-iguassu-iguacu-hotel-best-western-falls-galli?page=3",
@@ -495,5 +505,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:24:48.989Z"
+  "updatedAt": "2026-10-21T15:24:57.694Z"
 }

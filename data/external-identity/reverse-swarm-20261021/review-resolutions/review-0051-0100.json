@@ -1184,7 +1184,49 @@
         "batchBlobSha": "b9adc25a5f96aa3afc25232f7a7fe47f97858162",
         "reviewOrder": 67
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/guatemala/place/huehuetenango/",
+        "targetId": "destination_guatemala_ueuetenango",
+        "targetContentPath": "src/content/destinations/ueuetenango.md",
+        "targetBlobSha": "17bb000a63e89fb0c64a2a33658ac52f6af5144d",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-008 #622.",
+          "Текущий main src/content/destinations/ueuetenango.md, blob 17bb000a63e89fb0c64a2a33658ac52f6af5144d: approved destination_guatemala_ueuetenango, Уэуэтенанго; прямой GET https://adatours.ru/guatemala/place/huehuetenango/ → HTTP 200, SHA-256 9d736d5306bab046ceba23ccb696c099f4ae36538a0913c1396bd80adc607c8b."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Уэуэтенанго». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-67",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_guatemala_ueuetenango",
+          "url": "https://adatours.ru/guatemala/place/huehuetenango/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/guatemala/place/huehuetenango/",
+          "sha256": "9d736d5306bab046ceba23ccb696c099f4ae36538a0913c1396bd80adc607c8b",
+          "bytes": 91223,
+          "title": "Уэуэтенанго в Гватемале: локации. Пока нет туров в это место. Путешествия 2026-2027 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/guatemala/place/huehuetenango/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 68,
@@ -2159,9 +2201,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:25.193Z",
+  "updatedAt": "2026-10-21T16:32:26.857Z",
   "progress": {
-    "resolved": 16,
+    "resolved": 17,
     "total": 50
   }
 }

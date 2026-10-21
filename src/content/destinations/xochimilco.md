@@ -8,9 +8,8 @@ countryId: country_mexico
 destinationType: city
 summary: Сочимилько знакомит с каналами южной части Мехико и традиционными прогулочными лодками.
 hero:
-  src: /media/tours/viva-meksika/xochimilco-generated-20261010-v1.webp
-  hover: "Сочимилько: цветные лодки у зеленых берегов канала"
-  alt: "Яркие прогулочные лодки на канале Сочимилько под ивами, Мехико, Мексика"
+  src: "/media/destinations/xochimilco/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Сочимилько — иллюстрация"
 gallery: []
 themes:
 - theme_culture

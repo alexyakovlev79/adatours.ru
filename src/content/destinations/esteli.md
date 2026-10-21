@@ -8,7 +8,9 @@ countryId: "country_nicaragua"
 destinationType: "city"
 summary: "Город премиальных сигар и археологических памятников. В окрестностях Эстели находятся наскальные рисунки Лас Пинтас и водопад La Estanzuela."
 searchAliases: []
-hero: {"src":"/media/destinations/esteli/hero-enhanced-20261005.webp","alt":"Ряды сигар в открытом деревянном ящике, Эстели, Никарагуа","hover":"Никарагуа: коричневые сигары, уложенные рядами в деревянной коробке"}
+hero:
+  src: "/media/destinations/esteli/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Эстели — иллюстрация"
 gallery: [{"src":"/media/destinations/esteli/gallery-1-enhanced-20261005.webp","alt":"Парк Эстели с пальмами, зеленой беседкой, прохожими и велотакси, Никарагуа", hover: "Эстели: прогулочная дорожка и беседка среди пальм"},{"src":"/media/destinations/esteli/gallery-2-enhanced-20261005.webp","alt":"Зеленая городская площадь Эстели среди низких зданий перед лесистыми холмами, Никарагуа", hover: "Эстели: городской сквер и холмы на горизонте"},{"src":"/media/destinations/esteli/gallery-3-enhanced-20261005.webp","alt":"Человек держит две крупные морские звезды над прозрачной водой на мелководье", hover: "Морские звезды в руках над прозрачной морской водой"}]
 facts: []
 featureBands: []

@@ -8,10 +8,9 @@ countryId: country_mexico
 destinationType: route_cluster
 summary: Санта-Приска, барочная церковь XVIII века с двумя башнями в историческом центре серебряного города Таско.
 hero:
-  src: /media/tours/mexico-religious-journey/santa-prisca-taxco-generated-20261011-v1.webp
-  alt: "Церковь Санта-Приска с двумя резными башнями среди белых домов Таско, Мексика"
-  hover: "Санта-Приска в Таско: розоватые башни над домами с черепичными крышами"
-  status: approved
+  src: "/media/destinations/santa-prisca-taxco/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Церковь Санта-Приска в Таско — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

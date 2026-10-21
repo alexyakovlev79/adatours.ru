@@ -1,6 +1,6 @@
 # Третья партия 50 индивидуальных hero — 21 октября 2026
 
-Подключено 20 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
+Подключено 30 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
 
 | № | Страница | Статус |
 |---|---|---|
@@ -24,16 +24,16 @@
 | 18 | [Сокало Мехико](https://adatours.ru/mexico/place/mexico-city-zocalo/) | Подключено, S3 проверен |
 | 19 | [Монте-Альбан](https://adatours.ru/mexico/place/monte-alban/) | Подключено, S3 проверен |
 | 20 | [Национальный музей антропологии](https://adatours.ru/mexico/place/national-museum-of-anthropology/) | Подключено, S3 проверен |
-| 21 | [Национальный дворец Мехико](https://adatours.ru/mexico/place/national-palace-mexico-city/) | Зарезервировано |
-| 22 | [Базилика Богоматери Окотлан](https://adatours.ru/mexico/place/ocotlan-basilica/) | Зарезервировано |
-| 23 | [Церковь Санта-Приска в Таско](https://adatours.ru/mexico/place/santa-prisca-taxco/) | Зарезервировано |
-| 24 | [Церковь Санто-Доминго в Мехико](https://adatours.ru/mexico/place/santo-domingo-mexico-city/) | Зарезервировано |
-| 25 | [Тлателолько и площадь Трех культур](https://adatours.ru/mexico/place/tlatelolco/) | Зарезервировано |
-| 26 | [Тласкала](https://adatours.ru/mexico/place/tlaxcala/) | Зарезервировано |
-| 27 | [Ушмаль](https://adatours.ru/mexico/place/uxmal/) | Зарезервировано |
-| 28 | [Сочимилько](https://adatours.ru/mexico/place/xochimilco/) | Зарезервировано |
-| 29 | [Эстели](https://adatours.ru/nicaragua/place/esteli/) | Зарезервировано |
-| 30 | [Островки Гранады — Лас-Ислетас](https://adatours.ru/nicaragua/place/granada-islets/) | Зарезервировано |
+| 21 | [Национальный дворец Мехико](https://adatours.ru/mexico/place/national-palace-mexico-city/) | Подключено, S3 проверен |
+| 22 | [Базилика Богоматери Окотлан](https://adatours.ru/mexico/place/ocotlan-basilica/) | Подключено, S3 проверен |
+| 23 | [Церковь Санта-Приска в Таско](https://adatours.ru/mexico/place/santa-prisca-taxco/) | Подключено, S3 проверен |
+| 24 | [Церковь Санто-Доминго в Мехико](https://adatours.ru/mexico/place/santo-domingo-mexico-city/) | Подключено, S3 проверен |
+| 25 | [Тлателолько и площадь Трех культур](https://adatours.ru/mexico/place/tlatelolco/) | Подключено, S3 проверен |
+| 26 | [Тласкала](https://adatours.ru/mexico/place/tlaxcala/) | Подключено, S3 проверен |
+| 27 | [Ушмаль](https://adatours.ru/mexico/place/uxmal/) | Подключено, S3 проверен |
+| 28 | [Сочимилько](https://adatours.ru/mexico/place/xochimilco/) | Подключено, S3 проверен |
+| 29 | [Эстели](https://adatours.ru/nicaragua/place/esteli/) | Подключено, S3 проверен |
+| 30 | [Островки Гранады — Лас-Ислетас](https://adatours.ru/nicaragua/place/granada-islets/) | Подключено, S3 проверен |
 | 31 | [Каско-Вьехо](https://adatours.ru/panama/place/casco-viejo/) | Зарезервировано |
 | 32 | [Река Чагрес](https://adatours.ru/panama/place/chagres-river/) | Зарезервировано |
 | 33 | [Гамбоа](https://adatours.ru/panama/place/gamboa/) | Зарезервировано |

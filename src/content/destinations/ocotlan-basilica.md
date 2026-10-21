@@ -8,10 +8,9 @@ countryId: country_mexico
 destinationType: route_cluster
 summary: Базилика Окотлан у Тласкалы известна белой барочной лепниной, красным кирпичом и почитаемым образом Богоматери.
 hero:
-  src: /media/tours/mexico-religious-journey/ocotlan-basilica-generated-20261011-v1.webp
-  alt: "Две башни базилики Окотлан с белой лепниной и красным кирпичом, Тласкала, Мексика"
-  hover: "Базилика Окотлан в Мексике: резной белый портал между краснокирпичными башнями"
-  status: approved
+  src: "/media/destinations/ocotlan-basilica/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Базилика Богоматери Окотлан — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

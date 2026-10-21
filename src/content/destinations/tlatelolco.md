@@ -8,10 +8,9 @@ countryId: country_mexico
 destinationType: region
 summary: Тлателолько соединяет древние руины, церковь Сантьяго и современные здания на площади Трех культур в Мехико.
 hero:
-  src: /media/tours/mexico-religious-journey/tlatelolco-generated-20261011-v1.webp
-  alt: "Каменные руины Тлателолько перед церковью и многоэтажными домами Мехико, Мексика"
-  hover: "Тлателолько в Мехико: древние стены, церковные башни и современная застройка"
-  status: approved
+  src: "/media/destinations/tlatelolco/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Тлателолько и площадь Трех культур — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

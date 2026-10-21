@@ -9,10 +9,9 @@ destinationType: route_cluster
 summary: Барочная церковь Санто-Доминго в историческом центре Мехико хранит золоченые алтари и почитаемые религиозные
   образы.
 hero:
-  src: /media/tours/mexico-religious-journey/santo-domingo-mexico-city-generated-20261011-v1.webp
-  alt: "Краснокирпичная церковь Санто-Доминго с резным порталом и колокольней, Мехико, Мексика"
-  hover: "Санто-Доминго в Мехико: каменный портал на красном фасаде и высокая колокольня"
-  status: approved
+  src: "/media/destinations/santo-domingo-mexico-city/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Церковь Санто-Доминго в Мехико — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

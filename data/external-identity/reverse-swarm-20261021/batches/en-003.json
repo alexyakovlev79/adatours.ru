@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9rpun-jmuoe9d64sf",
-    "token": "reverse-lease-mvi9rpun-nn63rzaijwm",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:31:33.937Z",
-    "expiresAt": "2026-10-21T17:01:33.937Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/bolivia-dream",
@@ -589,7 +583,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 GET EN HTTP 200/self-canonical, HTML SHA-256 c52d03ad7593037b10b80ad90a162da37079399911aeed30c2cb974e629d58d0. Проверены вводная, структура разделов и JSON-LD BlogPosting, автор Anna Avanesova. BlogPosting от 02.10.2026: изменение планов клиента во время поездки — запрос против решения, варианты, отмена/доплаты, полномочия согласования, единственная актуальная версия маршрута; отдельно от темы сорванной стыковки.",
+        "Current main 78fe61f4b9fa878e86bd00862b0506a72fb148d2: Проверены RU /dmc/travel-agencies/, /dmc/terms/, /dmc/. Общие условия поддержки и внесения изменений — тематический аналог услуги, но не подтверждённая RU-версия отдельной инструкции для агентств. Проверен production content и source-index: точный EN URL не встречается; src/content/articles не содержит активных article MD. Эти машинные признаки лишь дополняют смысловую проверку, не доказывают отсутствие перевода сами по себе.",
+        "Frozen inventory: pageType=other, snapshotHttp=200, title/H1 «When Clients’ Brazil Plans Change Mid-Trip: The Agency Handoff», crawlReport=adatours-com-crawl-001.json; snapshotFile отсутствует. Приватный снимок не заявляется просмотренным; исследована текущая EN-страница."
+      ],
+      "note": "Подтверждённой sameAs-пары для конкретной EN-публикации нет. Статья об услуге или маршруте не отождествлена с туром, каталогом либо организацией. Связь в Schema.org не добавлялась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:44:44.620Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/brazil/excursions",
@@ -634,5 +639,7 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:44:42.165Z"
+  "updatedAt": "2026-10-21T15:44:44.620Z",
+  "completedAt": "2026-10-21T15:44:44.620Z",
+  "lastOwner": "reverse-worker-mvi9rpun-jmuoe9d64sf"
 }

@@ -11,9 +11,9 @@ searchAliases:
 - zacharovannyj-akvarium
 themes: ["theme_wildlife", "theme_nature"]
 hero:
-  src: /media/destinations/destination_brazil_zacharovannyj_akvarium/aquario-generated-20261008.webp
-  hover: "Зачарованный Аквариум: рыбы в прозрачной воде среди корней"
-  alt: "Рыбы среди затопленных корней и растений в прозрачной воде Зачарованного Аквариума, Бразилия"
+  src: /media/destinations/aquario-encantado/hero-generated-20261021-dedup50-v1.webp
+  hover: Зачарованный Аквариум — иллюстрация
+  alt: Зачарованный Аквариум — иллюстрация
 gallery: []
 relatedDestinations: []
 featuredTours: []
@@ -21,7 +21,7 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_zacharovannyj_akvarium.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-21'
 ---
 
 К Зачарованному Аквариуму подходят пешком во время поездки по району Бом-Жардима. Этот природный водоем входит в программу снорклинга среди рыб и водной растительности.

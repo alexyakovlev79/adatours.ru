@@ -1,6 +1,6 @@
 # Следующие 50 индивидуальных hero — 21 октября 2026
 
-Подключено 20 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
+Подключено 30 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
 
 | № | Партия | Страница | Статус |
 |---|---|---|---|
@@ -24,16 +24,16 @@
 | 18 | 2 | [Хидден-Вэлли](https://adatours.ru/belize/place/hidden-valley/) | S3 проверен, подключено |
 | 19 | 2 | [Музей Чантани](https://adatours.ru/bolivia/place/chantani-museum/) | S3 проверен, подключено |
 | 20 | 2 | [Лагуна Бланка](https://adatours.ru/bolivia/place/laguna-blanca/) | S3 проверен, подключено |
-| 21 | 3 | [Лагуна Чиаркота](https://adatours.ru/bolivia/place/laguna-chiar-khota-potosi/) | Ожидает генерации |
-| 22 | 3 | [Лагуна Верде](https://adatours.ru/bolivia/place/laguna-verde/) | Ожидает генерации |
-| 23 | 3 | [Озеро Титикака (Боливия)](https://adatours.ru/bolivia/place/lake-titicaca-bolivia/) | Ожидает генерации |
-| 24 | 3 | [Музей соли Плайя-Бланка](https://adatours.ru/bolivia/place/playa-blanca-salt-museum/) | Ожидает генерации |
-| 25 | 3 | [Ворота Солнца в Тиуанако](https://adatours.ru/bolivia/place/tiwanaku-gate-of-the-sun/) | Ожидает генерации |
-| 26 | 3 | [Кладбище поездов в Уюни](https://adatours.ru/bolivia/place/uyuni-train-cemetery/) | Ожидает генерации |
-| 27 | 3 | [Долина Скал (Алота)](https://adatours.ru/bolivia/place/valley-of-rocks-alota/) | Ожидает генерации |
-| 28 | 3 | [Бездна Аньюмас](https://adatours.ru/brazil/place/abismo-anhumas-cave/) | Ожидает генерации |
-| 29 | 3 | [Ангра-дус-Рейс](https://adatours.ru/brazil/place/angra-dos-reis/) | Ожидает генерации |
-| 30 | 3 | [Зачарованный Аквариум](https://adatours.ru/brazil/place/aquario-encantado/) | Ожидает генерации |
+| 21 | 3 | [Лагуна Чиаркота](https://adatours.ru/bolivia/place/laguna-chiar-khota-potosi/) | S3 проверен, подключено |
+| 22 | 3 | [Лагуна Верде](https://adatours.ru/bolivia/place/laguna-verde/) | S3 проверен, подключено |
+| 23 | 3 | [Озеро Титикака (Боливия)](https://adatours.ru/bolivia/place/lake-titicaca-bolivia/) | S3 проверен, подключено |
+| 24 | 3 | [Музей соли Плайя-Бланка](https://adatours.ru/bolivia/place/playa-blanca-salt-museum/) | S3 проверен, подключено |
+| 25 | 3 | [Ворота Солнца в Тиуанако](https://adatours.ru/bolivia/place/tiwanaku-gate-of-the-sun/) | S3 проверен, подключено |
+| 26 | 3 | [Кладбище поездов в Уюни](https://adatours.ru/bolivia/place/uyuni-train-cemetery/) | S3 проверен, подключено |
+| 27 | 3 | [Долина Скал (Алота)](https://adatours.ru/bolivia/place/valley-of-rocks-alota/) | S3 проверен, подключено |
+| 28 | 3 | [Бездна Аньюмас](https://adatours.ru/brazil/place/abismo-anhumas-cave/) | S3 проверен, подключено |
+| 29 | 3 | [Ангра-дус-Рейс](https://adatours.ru/brazil/place/angra-dos-reis/) | S3 проверен, подключено |
+| 30 | 3 | [Зачарованный Аквариум](https://adatours.ru/brazil/place/aquario-encantado/) | S3 проверен, подключено |
 | 31 | 4 | [Эколодж «Арарас»](https://adatours.ru/brazil/place/araras-eco-lodge/) | Ожидает генерации |
 | 32 | 4 | [Бом-Жардим](https://adatours.ru/brazil/place/bom-jardim/) | Ожидает генерации |
 | 33 | 4 | [Бонито](https://adatours.ru/brazil/place/bonito/) | Ожидает генерации |

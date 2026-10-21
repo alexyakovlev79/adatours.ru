@@ -11,9 +11,9 @@ searchAliases:
 - ozero-titikaka-boliviya
 themes: ["theme_nature", "theme_culture"]
 hero:
-  src: /media/destinations/destination_bolivia_ozero_titikaka_boliviya/hero-generated-20261008.webp
-  hover: "Титикака: каменные террасы на склоне над озером"
-  alt: "Синяя вода Титикаки у террасированного боливийского берега"
+  src: /media/destinations/lake-titicaca-bolivia/hero-generated-20261021-dedup50-v1.webp
+  hover: Озеро Титикака (Боливия) — иллюстрация
+  alt: Озеро Титикака (Боливия) — иллюстрация
 gallery: []
 relatedDestinations: []
 featuredTours: []
@@ -21,7 +21,7 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_ozero_titikaka_boliviya.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-21'
 ---
 
 Боливийский берег озера Титикака посещают во время путешествия из Ла-Паса через Альтиплано. Наземный маршрут ведет к Копакабане, откуда на лодке отправляются к острову Солнца.

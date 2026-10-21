@@ -374,7 +374,64 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/venezuela/tour/",
+        "confidence": 0.35,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN-каталог Венесуэлы содержит две карточки: Tour from Venezuela to Colombia и Venezuela: Canaima and Los Roques National Parks. RU содержит 10 других/расширенных маршрутов, включая 4-, 6- и 12-дневные. Идентичность всей подборки не достигает порога.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/venezuela-en/packages",
+            "http": 200,
+            "canonical": "https://adatours.com/venezuela-en/packages",
+            "h1": [
+              "Venezuela: Tours to Angel Falls and Los Roques Archipelago"
+            ],
+            "sha256": "dc0e02bb1642b50b9a93ad268b40c31cf6e467caee47b371a7dcbe2a28a36018",
+            "checkedAt": "2026-10-21T16:30:02.454220+00:00",
+            "htmlCards": [
+              {
+                "text": "Tour from Venezuela to Colombia",
+                "href": null
+              },
+              {
+                "text": "Venezuela: Canaima and Los Roques National Parks",
+                "href": null
+              }
+            ],
+            "offerCount": [
+              "2"
+            ]
+          },
+          {
+            "url": "https://adatours.ru/venezuela/tour/",
+            "http": 200,
+            "canonical": "https://adatours.ru/venezuela/tour/",
+            "h1": [
+              "Туры в Венесуэлу"
+            ],
+            "sha256": "7d36081169b1b5e18a1e041cb93cc7aaf54bd104ea6d43e79c8069007e62f4b4",
+            "checkedAt": "2026-10-21T16:30:03.551024+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "10"
+            ]
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:31:58.015Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 306,
@@ -522,5 +579,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:56.497Z"
+  "updatedAt": "2026-10-21T16:31:58.015Z"
 }

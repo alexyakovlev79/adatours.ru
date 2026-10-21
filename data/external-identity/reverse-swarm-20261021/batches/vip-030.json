@@ -383,7 +383,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/4000c3c1101a789fb720ce28.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory position 1289: hotel_candidate «Beach, Class,Suites», H1 «Beach Class Suites», snapshotHttp 200, individual URL https://vipdeluxetravel.ru/hotel/beach-class-suites.",
+        "RU src/content.config.ts has no Hotel collection: no equivalent individual hotel booking product can be established; existing tours and destinations are different intents."
+      ],
+      "note": "Отдельная карточка размещения «Beach, Class,Suites» не имеет подтвержденной RU-страницы отеля или сопоставимой услуги бронирования. Для будущего 301 требуется решение о создании карточки или ответе 410; на город и главную не перенаправлять.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:23:49.139Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/blue-tree-towers-faria",
@@ -496,5 +506,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:23:44.196Z"
+  "updatedAt": "2026-10-21T15:23:49.139Z"
 }

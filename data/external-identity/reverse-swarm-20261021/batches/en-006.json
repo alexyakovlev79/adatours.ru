@@ -478,7 +478,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Excursions and tours to Easter Island in Chile (Easter Island)», H1 «Excursions to countries of Latin America». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/easter-island/excursions: HTTP 200, canonical=https://adatours.com/easter-island/excursions, H1 «Excursions to countries of Latin America».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=296&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. Первый ответ API: total=0, products=0. Примеры ID/названий: products=[].",
+        "https://adatours.ru/chile/easter-island/ — HTTP 200, canonical совпадает, H1 «9 экскурсий на острове Пасхи, Чили…». Просмотрены карточки Оронго/Рано-Кау, Анакена/Рано-Рараку/Тонгарики, Аху-Акиви/Пуна-Пау и другие."
+      ],
+      "note": "EN API для экскурсий на острове Пасхи возвращает total=0, тогда как RU содержит 9 экскурсий. Каталоги не имеют одинакового состава; sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:53.240Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/easter-island/packages",
@@ -561,5 +573,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:50.841Z"
+  "updatedAt": "2026-10-21T15:46:53.240Z"
 }

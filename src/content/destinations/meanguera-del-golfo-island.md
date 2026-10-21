@@ -12,8 +12,7 @@ hero:
   hover: "Меангера-дель-Гольфо: лодки и прибрежные дома у лесистого холма"
   alt: "Рыбацкие лодки у деревни на зеленом острове Меангера-дель-Гольфо, Сальвадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

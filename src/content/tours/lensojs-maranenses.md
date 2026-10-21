@@ -210,8 +210,7 @@ routeDestinations:
 - destination_brazil_laguna_azul_lensojs_maranenses
 - destination_brazil_vassuoras_lensojs_maranenses
 - destination_brazil_mayak_pergula
-primaryThemes:
-- theme_wildlife
+primaryThemes: ["theme_nature"]
 themes: []
 ---
 

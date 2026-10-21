@@ -285,7 +285,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii
 sourceSnapshot: page_texts_original/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii__a75a97ce.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

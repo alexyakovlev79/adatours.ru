@@ -13,8 +13,7 @@ hero:
   hover: "Пеперпот: прогулочная тропа в тропическом лесу"
   alt: "Узкая лесная тропа среди пальм, крупных деревьев и густой зелени парка Пеперпот, Суринам"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

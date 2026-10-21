@@ -193,7 +193,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/chudesnaya-tajna-brazilii
 sourceSnapshot: page_texts_original/chudesnaya-tajna-brazilii__72837379.md
 updatedAt: 2026-09-29
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature","theme_wildlife"]
 themes: ["theme_culture"]
 ---
 

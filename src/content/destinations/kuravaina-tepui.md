@@ -12,9 +12,7 @@ hero:
   hover: "Канайма: широкая долина у тепуи Куравайна"
   alt: "Столовые горы и извилистая река в зеленой долине Канаймы, Венесуэла"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_tepuj_kuravajna.md
 updatedAt: '2026-10-08'
 ---

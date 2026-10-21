@@ -11,9 +11,7 @@ relatedDestinations:
 - destination_peru_lima
 - destination_peru_parakas
 - destination_peru_linii_naska_i_ostrova_balestas
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_wildlife", "theme_nature"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x141-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: "Каменная арка островов Бальестас над синей морской водой, Перу"

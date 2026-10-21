@@ -168,8 +168,8 @@ routeDestinations:
 - destination_brazil_ilha_grande
 - destination_brazil_paraty
 - destination_brazil_praia_vermelha
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature"]
 ---
 
 Рио открывает путешествие панорамами и городскими сценами. С высоты Сахарной Головы и Корковадо видны Копакабана, Ипанема, залив Гуанабара, мост Рио - Нитерой и окружающие горы. На Илья-Гранде вместо городской программы остаются вода, зеленые острова и лодка. Парати завершает поездку историей золотого пути из Минас-Жерайс и прогулкой по центру, где автомобильное движение уступило место булыжным улицам и старой архитектуре.

@@ -22,13 +22,8 @@ routeDestinations:
 - destination_brazil_trindadi_parati
 - destination_brazil_angra_dos_reis
 - destination_brazil_ilha_grande
-primaryThemes:
-- theme_events
-- theme_beach
-themes:
-- theme_culture
-- theme_wildlife
-- theme_gastronomy_wine
+primaryThemes: ["theme_events", "theme_beach"]
+themes: ["theme_culture", "theme_nature", "theme_gastronomy_wine"]
 audiences:
 - groups
 - mice

@@ -21,7 +21,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-atitlan-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1CKQm86edIHSKtWPay8IvPtPl_m8Fg693/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 ### Атитлан - самое красивое озеро Гватемалы

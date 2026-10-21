@@ -203,7 +203,7 @@ routeDestinations:
 - destination_brazil_viskondi_de_maua
 - destination_brazil_maringa_viskondi_de_maua
 - destination_brazil_vila_da_maromba
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: ["theme_beach"]
 ---
 

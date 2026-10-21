@@ -13,8 +13,7 @@ hero:
   hover: "Вараппа: спокойная вода под зелеными мангровыми зарослями"
   alt: "Узкий водный проход ручья Вараппа среди мангровых корней, Суринам"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

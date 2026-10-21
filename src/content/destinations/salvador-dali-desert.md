@@ -12,9 +12,7 @@ hero:
   hover: "Пустыня Сальвадора Дали: валуны среди пустынной равнины"
   alt: "Темные отдельные валуны на охристой равнине пустыни Сальвадора Дали перед разноцветными горами, Боливия"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

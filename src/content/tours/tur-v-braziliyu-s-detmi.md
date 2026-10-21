@@ -270,12 +270,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_brazil_buzios
-primaryThemes:
-- theme_family
-- theme_beach
-themes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_family", "theme_beach"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 

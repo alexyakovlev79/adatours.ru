@@ -8,7 +8,7 @@ countryId: "country_chile"
 destinationType: "natural_area"
 summary: "Ледниковый фьорд Огненной Земли среди лесистых и скалистых гор."
 searchAliases: ["ford-garibaldi"]
-themes: ["theme_wildlife","theme_cruises"]
+themes: ["theme_nature", "theme_cruises"]
 hero: {"src": "/media/destinations/destination_chile_ford_garibaldi/hero-generated-20261009-v1.webp", "alt": "Голубой ледник в глубине фьорда Гарибальди между крутыми горами", "status": "approved", "hover": "Фьорд Гарибальди: плавающие льдины и ледник под низкими облаками"}
 gallery: []
 relatedDestinations: []

@@ -13,9 +13,7 @@ searchAliases:
 - "Пещера Abismo Anhumas"
 - "Абисмо Анумас"
 - "Абисмо-Аньюмас"
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp
   hover: "Аньюмас: лучи света над подземным озером"

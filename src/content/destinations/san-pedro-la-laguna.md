@@ -39,7 +39,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-san-pedro-la-laguna-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1-4tBBLApb11cohdyBW8wiLSvLCA7_wzD/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 Великолепный поселок на берегу озера, привлекающих любителей здорового образа жизни. Здесь можно попрактиковаться в испанском языке, научиться играть на африканских барабанах или просто поваляться в гамаке.

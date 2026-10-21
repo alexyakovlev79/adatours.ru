@@ -10,9 +10,7 @@ destinationName: Ангра-дус-Рейс
 relatedDestinations:
 - destination_brazil_ilha_grande
 - destination_brazil_rio
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 route:
 - Рио-де-Жанейро
 - Ангра-дус-Рейс

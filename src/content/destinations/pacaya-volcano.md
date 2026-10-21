@@ -12,9 +12,7 @@ hero:
   hover: "Пакайя: вулканический склон и тропа среди застывшей лавы"
   alt: "Тропа по черному лавовому полю к темному конусу вулкана Пакайя под облаками, Гватемала"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 searchAliases:
 - Pacaya
 - vulkan-pakajya

@@ -17,9 +17,7 @@ hero:
   alt: Светлые эрозионные столбы Лунной долины у Ла-Паса
 lead: Городская экскурсия по Ла-Пасу с Рынком ведьм продолжается среди эрозионных столбов Долины Луны и у археологических
   памятников Тиуанако.
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 locale: ru
 status: approved
 language: []

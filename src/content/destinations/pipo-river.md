@@ -13,8 +13,7 @@ hero:
   hover: "Река Пипо: лесистые берега, камни и горы вдали"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_pipo_river.md
 updatedAt: '2026-10-11'
 ---

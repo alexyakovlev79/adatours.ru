@@ -9,9 +9,7 @@ destination: destination_peru_ikitos
 destinationName: Икитос
 relatedDestinations:
 - destination_peru_ucayali_river
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x176-20261011-v1-enhanced-20261011-pass2324-v1.webp
   hover: "Aqua Nera: круизное судно с открытой верхней палубой у речной лодки"

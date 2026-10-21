@@ -12,8 +12,7 @@ hero:
   alt: "Темное дно кальдеры Сьерра-Негра с зеленой кромкой, остров Исабела, Эквадор"
   hover: "Сьерра-Негра на Галапагосах: широкая вулканическая кальдера под низкими облаками"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

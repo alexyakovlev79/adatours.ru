@@ -293,7 +293,7 @@ routeDestinations: *id001
 routeCountries:
 - country_colombia
 primaryThemes: ["theme_culture", "theme_beach"]
-themes: ["theme_gastronomy_wine", "theme_wildlife", "theme_coffee"]
+themes: ["theme_gastronomy_wine", "theme_nature", "theme_coffee"]
 ---
 
 

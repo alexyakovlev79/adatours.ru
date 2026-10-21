@@ -7,9 +7,7 @@ title: 'Кофейный регион: зиплайн и конная прогу
 country: country_colombia
 destination: destination_colombia_pereira
 relatedDestinations: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 language:
 - английский
 priceFrom: null

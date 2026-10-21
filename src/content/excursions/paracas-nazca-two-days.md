@@ -9,9 +9,7 @@ destination: destination_peru_parakas
 relatedDestinations:
 - destination_peru_lima
 - destination_peru_linii_naska_i_ostrova_balestas
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_culture"]
 lead: Автобусная поездка из Лимы в Паракас с ночевкой на тихоокеанском побережье. По желанию можно добавить полет
   над линиями Наска.
 hero:

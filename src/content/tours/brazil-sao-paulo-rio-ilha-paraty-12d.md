@@ -247,8 +247,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/sao-paulo-rio-parati-ilhe-grande
 sourceSnapshot: page_texts_original/sao-paulo-rio-parati-ilhe-grande__4c4817c6.md
 updatedAt: 2026-09-29
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature"]
 ---
 
 Сначала вы познакомитесь с деловым и культурным Сан-Паулу, затем увидите Игуасу с 2 сторон. После Рио путешествие становится более камерным: на Илья-Гранде нет автомобилей, а Парати сохраняет улицы и дома XVIII века. Финальный день проходит у рыбацкой деревни Триндади, с пляжами, тропой через Атлантический лес и природным бассейном Caixa D'aco.

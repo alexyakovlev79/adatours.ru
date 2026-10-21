@@ -33,7 +33,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-pisko-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1MJC2VEO9xcBG8Brw-WivkhA9-6jq7Ifb/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_gastronomy_wine","theme_wildlife"]
+themes: ["theme_gastronomy_wine", "theme_nature"]
 ---
 
 Писко, расположенный на побережье Перу, этот городок достиг благополучия и стал известен благодаря производимому там спиртному напитку из винограда отличного качества, очень сочного и сладкого.

@@ -306,7 +306,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/argentina-chili-i-prekrasnaya-patagoniya
 sourceSnapshot: page_texts_original/argentina-chili-i-prekrasnaya-patagoniya__c5ba6894.md
 updatedAt: 2026-10-01
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: ["theme_culture"]
 ---
 

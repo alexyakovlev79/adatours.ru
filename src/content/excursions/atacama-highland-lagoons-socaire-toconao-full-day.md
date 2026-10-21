@@ -16,9 +16,7 @@ relatedDestinations:
 - destination_chile_nacionalnyj_zapovednik_los_flamenkos
 - destination_chile_tokonao
 - destination_chile_toconao_san_lucas_church_bell_tower
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_wildlife", "theme_culture", "theme_nature"]
 format: Групповая экскурсия
 duration: Целый день
 hero:

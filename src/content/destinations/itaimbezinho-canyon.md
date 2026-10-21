@@ -8,7 +8,7 @@ countryId: "country_brazil"
 destinationType: "natural_area"
 summary: "Узкое лесистое ущелье с отвесными скальными стенами в Апарадус-да-Серра."
 searchAliases: ["Itaimbezinho","kanon-itaimbezinyu"]
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 hero: {"src":"/media/destinations/destination_brazil_kanon_itaimbezinyu/hero-generated-20261009-v1.webp","alt":"Отвесные стены каньона Итаимбезинью над лесистым ущельем, Бразилия","status":"approved","hover":"Итаимбезинью в Бразилии: глубокое зеленое ущелье между каменными стенами"}
 gallery: []
 relatedDestinations: []

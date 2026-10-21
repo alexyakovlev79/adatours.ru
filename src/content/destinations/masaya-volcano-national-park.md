@@ -13,8 +13,7 @@ hero:
   alt: "Дым над широким кратером вулкана Масая у зеленых склонов, Никарагуа"
   hover: "Масая в Никарагуа: вулканический кратер и густая дымка над скалами"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_masaya_volcano_national_park.md
 updatedAt: '2026-10-10'

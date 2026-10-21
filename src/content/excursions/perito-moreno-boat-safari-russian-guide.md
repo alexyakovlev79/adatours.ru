@@ -10,8 +10,7 @@ destinationName: "Ледник Перито-Морено"
 relatedDestinations:
 - "destination_argentina_el_calafate"
 - "destination_argentina_nacionalnyj_park_los_glasyares"
-themes:
-- "theme_wildlife"
+themes: ["theme_nature"]
 lead: "Экскурсия к Перито-Морено с русскоговорящим гидом и групповым катером."
 route:
 - "Ледник Перито-Морено"

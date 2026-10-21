@@ -139,8 +139,8 @@ routeDestinations:
 - destination_costa_rica_zapovednik_kano_negro
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife"]
-themes: ["theme_gastronomy_wine", "theme_coffee"]
+primaryThemes: ["theme_nature"]
+themes: ["theme_gastronomy_wine", "theme_coffee", "theme_wildlife"]
 ---
 
 

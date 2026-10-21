@@ -350,7 +350,7 @@ routeDestinations:
 - destination_peru_chivaj
 - destination_peru_arekipa
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 

@@ -12,8 +12,7 @@ searchAliases:
 - Висконде-де-Мауа
 - Visconde de Mauá
 - viskondi-de-maua
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_viskondi_de_maua/hero-generated-20261008-resumed.webp
   hover: "Висконди-де-Мауа: горный ручей впадает в бирюзовый водоем"

@@ -13,9 +13,7 @@ hero:
   hover: 'Канайма: пальмы на песчаном берегу и широкий водопад за водой'
   alt: Песчаный берег с пальмами и водопадом за лагуной Канаймы, Венесуэла
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_canaima_lagoon.md
 updatedAt: '2026-10-10'
 ---

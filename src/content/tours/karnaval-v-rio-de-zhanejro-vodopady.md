@@ -220,11 +220,8 @@ routeDestinations:
 - destination_brazil_rio
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
-primaryThemes:
-- theme_events
-themes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_events"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 В Рио город живет вокруг океана, музыки и подготовки к Карнавалу. В Игуасу главное ощущение задает вода: сначала слышен низкий гул за деревьями, затем появляются каскады, водяная пыль и широкое ущелье. Такое сочетание делает маршрут особенно насыщенным: за одну поездку вы успеваете увидеть большой городской праздник, тропический лес и один из самых впечатляющих водопадных комплексов Южной Америки.

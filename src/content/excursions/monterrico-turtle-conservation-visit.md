@@ -9,8 +9,7 @@ destination: destination_guatemala_monterrico_turtle_conservation_center
 destinationName: Центр охраны черепах Монтеррико
 relatedDestinations:
 - destination_guatemala_monterrico
-themes:
-- theme_wildlife
+themes: []
 hero:
   src: /media/tours/discover-guatemala-8-days/turtles-generated-20261010-p037-v1.webp
   alt: "Маленькие морские черепахи на темном песке перед океаном на закате"

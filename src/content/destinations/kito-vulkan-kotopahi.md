@@ -72,7 +72,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-ehkvadore
 sourceSnapshot: page_texts_original/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-ehkvadore__9359a33c.md
 updatedAt: 2026-10-02
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 Кито расположен в андской долине на высоте 2850 м. Старый город сохраняет колониальную архитектуру, церкви и монастыри, а современная часть столицы развивается среди гор и вулканических массивов.

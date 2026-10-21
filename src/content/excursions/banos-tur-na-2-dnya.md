@@ -49,7 +49,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/banos-tur-na-2-dnya"
 sourceSnapshot: data/source-index/materials/excursion_source_banos_tur_na_2_dnya.md
 updatedAt: '2026-10-20'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Баньос — это рай для любителей природы и искателей острых ощущений!

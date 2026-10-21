@@ -15,9 +15,7 @@ hero:
   alt: "Каменистая тропа у Эль-Чалтена на фоне пиков Фицроя, Аргентина"
   hover: "Эль-Чалтен в Аргентине: тропа через кустарники к острым горным вершинам"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -91,11 +91,8 @@ routeDestinations:
 - destination_ecuador_puerto_ajora
 - destination_ecuador_ostrov_baltra
 - destination_ecuador_los_gemelos
-primaryThemes:
-- theme_wildlife
-- theme_cruises
-themes:
-- theme_culture
+primaryThemes: ["theme_wildlife", "theme_cruises"]
+themes: ["theme_culture", "theme_nature"]
 durationDays: 18
 durationNights: 17
 priceFrom: 10314

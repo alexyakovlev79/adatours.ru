@@ -12,8 +12,7 @@ hero:
   hover: "Тортуга-Бэй: игуаны у песчаного берега и океанского прибоя"
   alt: "Белый пляж Тортуга-Бэй с морскими игуанами у бирюзовых волн, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

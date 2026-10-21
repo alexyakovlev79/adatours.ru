@@ -33,10 +33,7 @@ destinations:
 - destination_ecuador_mitad_del_mundo
 - destination_ecuador_intinan_museum
 - destination_ecuador_casa_del_arbol
-themes:
-- theme_culture
-- theme_adventure
-- theme_gastronomy_wine
+themes: ["theme_culture", "theme_adventure", "theme_gastronomy_wine", "theme_wildlife"]
 audiences: []
 route:
 - Кито
@@ -554,9 +551,7 @@ routeDestinations:
 - destination_ecuador_intinan_museum
 - destination_ecuador_casa_del_arbol
 format: Групповой
-primaryThemes:
-- theme_events
-- theme_wildlife
+primaryThemes: ["theme_events", "theme_nature"]
 gallery:
 - src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1-enhanced-20261011-doc-v1.webp
   hover: "Митад-дель-Мундо: пара на желтой линии перед монументом"

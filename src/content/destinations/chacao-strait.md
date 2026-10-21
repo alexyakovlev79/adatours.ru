@@ -13,9 +13,7 @@ hero:
   alt: "Автомобили на пароме в проливе Чакао между Чилоэ и материком, Чили"
   hover: "Пролив Чакао в Чили: паромная палуба с машинами и встречное судно"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 searchAliases:
 - Пролив Чакао
 sourceSnapshot: data/source-index/materials/destination_chile_chacao_strait.md

@@ -12,9 +12,7 @@ relatedDestinations:
 - destination_mexico_hierve_el_agua
 - destination_mexico_oahaka
 lead: Митла, ткацкие мастерские Теотитлана, Хьерве-эль-Агуа и дегустация мескаля.
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 hero:
   src: /media/destinations/oaxaca/gallery-3-enhanced-20261004.webp
   alt: Мужчина в шляпе среди крупных агав на плантации у Оахаки, Мексика

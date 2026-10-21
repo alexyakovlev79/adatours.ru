@@ -13,9 +13,7 @@ hero:
   hover: "Лагуна-де-лос-Трес: ледниковое озеро перед острыми гранитными вершинами"
   alt: "Бирюзовая Лагуна-де-лос-Трес среди каменистых берегов под вершинами Фицроя, Аргентина"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_laguna_de_los_tres.md
 updatedAt: '2026-10-10'
 ---

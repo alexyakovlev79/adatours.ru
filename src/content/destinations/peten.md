@@ -20,7 +20,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-majya-ehl-peten-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1JYuBsakTihAlAv0DeHLFqfhVYn_-Qbst/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ### Петен-остров с городом Флорес

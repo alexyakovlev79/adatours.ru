@@ -7,8 +7,7 @@ title: 'Игуасу: панорамы бразильской стороны'
 country: country_brazil
 destination: destination_brazil_iguacu
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/hero-src-enhanced-20261008.webp
   hover: "Игуасу: мостки у мощных потоков падающей воды"

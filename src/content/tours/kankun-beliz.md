@@ -240,8 +240,8 @@ routeDestinations:
 - destination_mexico_senot_ik_kil
 - destination_mexico_koba
 - destination_belize_morskoj_zapovednik_hol_chan
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 

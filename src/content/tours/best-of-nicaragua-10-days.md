@@ -23,12 +23,8 @@ destinations: &id001
 - destination_nicaragua_ojo_de_agua
 - destination_nicaragua_san_huan_del_sur
 routeDestinations: *id001
-primaryThemes:
-- theme_culture
-- theme_beach
-themes:
-- theme_wildlife
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature", "theme_adventure", "theme_wildlife"]
 audiences:
 - couples
 - groups

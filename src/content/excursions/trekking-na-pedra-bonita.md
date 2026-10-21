@@ -16,7 +16,7 @@ updatedAt: '2026-10-18'
 destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
 sourceSnapshot: https://drive.google.com/file/d/13cWCvwZ-eLhD15Eoqb4sq4ApQpOnz-G5/view?usp=drivesdk
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/excursions/pedra-bonita-hike/hero-generated-20261018.webp
   alt: "Панорама побережья Рио и Педра-да-Гавеа с вершины Педра-Бонита"

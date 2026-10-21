@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-gorod-matagalpa-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1B12l1p2Z1_uSKkWdL0MaqeH_cLIxyvcm/view?usp=drivesdk"
 updatedAt: '2026-10-11'
-themes: ["theme_wildlife","theme_gastronomy_wine","theme_culture"]
+themes: ["theme_nature", "theme_gastronomy_wine", "theme_culture"]
 ---
 
 ## Матагальпа в Никарагуа!

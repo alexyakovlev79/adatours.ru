@@ -10,8 +10,7 @@ destinationName: Бом-Жардим
 relatedDestinations:
 - destination_brazil_zacharovannyj_akvarium
 - destination_brazil_reka_salobra
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 language:
 - Английский
 hero:

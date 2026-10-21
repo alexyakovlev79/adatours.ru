@@ -12,8 +12,7 @@ hero:
   alt: "Зеленые склоны полуострова Пойке над скалистым берегом острова Пасхи, Чили"
   hover: "Пойке на острове Пасхи: травянистое плато и морской прибой у обрывов"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

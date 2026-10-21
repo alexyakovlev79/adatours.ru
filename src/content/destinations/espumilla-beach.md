@@ -10,7 +10,7 @@ summary: "Пляж Эспумилья на Сантьяго знакомит с 
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_espumilla_beach/hero-generated-20261010-batch-four-v1.webp", "alt": "Песчаный пляж Эспумилья, прибрежная птица и вулканические камни у воды", "hover": "Эспумилья: песчаный берег и птица у прибоя"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

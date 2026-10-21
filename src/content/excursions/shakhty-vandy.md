@@ -45,7 +45,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/shakhty-vandy"
 sourceSnapshot: "https://drive.google.com/file/d/1akghlRLdYEQ-C3Gr9rxn4gyFxkbsN_ec/view?usp=drivesdk"
 updatedAt: '2026-10-10'
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ## Рудники Ванды

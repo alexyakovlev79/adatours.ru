@@ -48,7 +48,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ostrov-plasa"
 sourceSnapshot: "https://drive.google.com/file/d/1dyOO0-N-9WLybYl6Y60bSA6iCu0UFZZf/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 ---
 
 ## Остров Пласа -это:

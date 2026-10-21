@@ -14,8 +14,7 @@ hero:
   src: /media/tours/argentina-agricultural-11-days/day06-sierra-rest-generated-20261020-v1.webp
   alt: 'Зеленая долина и невысокие холмы у Сьерра-де-ла-Вентана: иллюстрация'
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -17,11 +17,8 @@ routeDestinations:
 - destination_argentina_bariloche
 - destination_argentina_nahuel_huapi_lake
 - destination_argentina_limay_river
-primaryThemes:
-- theme_fishing
-themes:
-- theme_wildlife
-- theme_gastronomy_wine
+primaryThemes: ["theme_fishing"]
+themes: ["theme_nature", "theme_gastronomy_wine"]
 audiences:
 - vip
 format: Индивидуальная поездка для группы до 6 гостей

@@ -10,7 +10,7 @@ summary: "Пуэрто-Эгас на Сантьяго ведет вдоль ла
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_puerto_egas/hero-generated-20261010-batch-four-v1.webp", "alt": "Галапагосские морские котики под скальным навесом у заводи Пуэрто-Эгас", "hover": "Пуэрто-Эгас: морские котики у воды под вулканической скалой"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

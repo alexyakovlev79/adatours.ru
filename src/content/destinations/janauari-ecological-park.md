@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Жанауари, экологический парк в районе Манауса, включают в речные маршруты по бразильской Амазонии.
 searchAliases:
 - ekologicheskij-park-zhanauari
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_ekologicheskij_park_zhanauari/hero-generated-20261008-resumed.webp
   hover: "Жанауари: мостки над лесным водоемом с гигантскими кувшинками"

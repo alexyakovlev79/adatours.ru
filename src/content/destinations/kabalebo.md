@@ -12,8 +12,7 @@ hero:
   hover: "Кабалебо: каноэ на тихой коричневой воде у тропического берега"
   alt: "Деревянное каноэ у берега реки Кабалебо среди густого леса, Суринам"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

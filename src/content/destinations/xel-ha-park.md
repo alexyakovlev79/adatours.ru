@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Парк Шель-Ха включают в программу отдыха на мексиканском побережье как отдельную дневную поездку.
 searchAliases:
 - park-shel-ha
-themes:
-- theme_wildlife
+themes: []
 hero:
   src: /media/destinations/destination_mexico_park_shel_ha/hero-generated-20261008.webp
   alt: "Люди плавают в прозрачной лагуне парка Шель-Ха среди скал и зелени, Мексика"

@@ -158,8 +158,8 @@ routeDestinations:
 - destination_suriname_bigi_pan
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: []
+primaryThemes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_nature"]
 ---
 
 

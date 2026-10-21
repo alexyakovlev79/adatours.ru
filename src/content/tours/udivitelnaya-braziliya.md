@@ -277,8 +277,8 @@ routeDestinations:
 - destination_brazil_vodopad_boka_da_onsa
 - destination_brazil_reka_pregias
 - destination_brazil_praia_vermelha
-primaryThemes: ["theme_wildlife"]
-themes: ["theme_adventure","theme_culture"]
+primaryThemes: ["theme_nature", "theme_wildlife"]
+themes: ["theme_adventure", "theme_culture"]
 ---
 
 

@@ -15,7 +15,7 @@ updatedAt: '2026-10-18'
 destination: destination_brazil_amazon
 destinationName: Манаус и Амазония
 sourceSnapshot: https://drive.google.com/file/d/1HQQThKxYsgHoUkh7BEEU7noQF9DzgQD1/view?usp=drivesdk
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/excursions/amazon-jungle-survival-trek/hero-generated-20261018.webp
   alt: "Гид знакомит туристов с растениями во время треккинга по джунглям Амазонии"

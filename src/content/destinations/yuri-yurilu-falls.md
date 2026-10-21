@@ -14,9 +14,7 @@ hero:
   status: approved
   hover: "Канайма в Венесуэле: речные каскады среди темных камней и тропической зелени"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_yuri_yurilu_falls.md
 updatedAt: '2026-10-10'
 ---

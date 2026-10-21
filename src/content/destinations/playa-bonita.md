@@ -12,8 +12,7 @@ hero:
   alt: "Каменистый берег Плайя-Бонита и озеро Науэль-Уапи на фоне гор, Аргентина"
   hover: "Плайя-Бонита в Аргентине: камни на берегу озера Науэль-Уапи"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

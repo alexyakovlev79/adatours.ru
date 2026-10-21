@@ -10,8 +10,7 @@ relatedDestinations:
 - destination_argentina_lednik_perito_moreno
 - destination_argentina_nacionalnyj_park_los_glasyares
 - destination_argentina_ozero_argentino
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 format: Индивидуальная экскурсия
 hero:
   src: /media/excursions/uvlekatel-nyj-tur-k-perito-moreno/hero-src-enhanced-20261007.webp

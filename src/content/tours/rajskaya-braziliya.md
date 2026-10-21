@@ -313,11 +313,8 @@ routeDestinations:
 - destination_brazil_olinda
 - destination_brazil_porto_de_galinhas
 - destination_brazil_fernando_de_noronha
-primaryThemes:
-- theme_beach
-- theme_wildlife
-themes:
-- theme_culture
+primaryThemes: ["theme_beach", "theme_nature"]
+themes: ["theme_culture"]
 ---
 
 

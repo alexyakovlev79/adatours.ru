@@ -10,8 +10,7 @@ destinationName: Лодж «Жардим-да-Амазония»
 relatedDestinations:
 - destination_brazil_rio_claro_jardim_amazonia
 - destination_brazil_anaconda_lake_jardim_amazonia
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 language:
 - Английский
 hero:

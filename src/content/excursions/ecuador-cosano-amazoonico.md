@@ -20,7 +20,7 @@ relatedDestinations:
 - destination_ecuador_reka_arahuno
 duration: 1–3 часа
 sourceSnapshot: https://drive.google.com/file/d/1aPPbOZZLfuZuDcABJ6Dl4ZFkpjQjC7g2/view?usp=drivesdk
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/ecuador-cosano-amazoonico/hero-generated-20261018.webp
   alt: "Капуцин в лесном реабилитационном вольере центра Амазонико в Эквадоре"

@@ -17,8 +17,7 @@ hero:
   alt: Синяя вода озера Коатепеке и лесистые берега вулканической котловины, Эль-Сальвадор
   hover: 'Коатепеке: широкая озерная панорама с зеленых склонов'
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

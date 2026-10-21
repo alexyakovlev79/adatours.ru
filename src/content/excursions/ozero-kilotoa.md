@@ -39,7 +39,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ozero-kilotoa"
 sourceSnapshot: "https://drive.google.com/file/d/1hQ3FBIun3D_lhOyhi7MOJIPsq8imZt9Z/view?usp=drivesdk"
 updatedAt: '2026-10-11'
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 ## Озеро Килотоа — это вулканическое озеро, расположенное в западных Андах!

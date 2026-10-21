@@ -10,8 +10,7 @@ summary: Водопады реки Мимозо входят в природны
 searchAliases:
 - Estância Mimosa
 - vodopady-reki-mimozo
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_vodopady_reki_mimozo/destination_brazil_vodopady_reki_mimozo-generated-20261008.webp
   hover: "Река Мимозо: невысокие каскады у зеленого речного бассейна"

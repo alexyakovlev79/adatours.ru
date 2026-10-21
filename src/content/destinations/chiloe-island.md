@@ -13,9 +13,7 @@ hero:
   hover: "Анкуд: пушка над гаванью и прибрежными городскими кварталами"
   alt: "Старинная пушка на каменной стене над заливом Анкуда, остров Чилоэ, Чили"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 searchAliases:
 - Остров Чилоэ
 sourceSnapshot: data/source-index/materials/destination_chile_chiloe_island.md

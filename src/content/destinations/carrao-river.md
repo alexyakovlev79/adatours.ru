@@ -14,9 +14,7 @@ hero:
   status: approved
   hover: "Канайма в Венесуэле: лодка у тихой реки и красноватые скальные плато вдали"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_carrao_river.md
 updatedAt: '2026-10-10'
 ---

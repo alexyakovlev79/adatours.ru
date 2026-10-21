@@ -12,8 +12,7 @@ hero:
   alt: "Мощный невысокий водопад Сальто-Гранде на фоне гор Торрес-дель-Пайне, Чили"
   hover: "Сальто-Гранде в Чили: бирюзовый речной поток между темными скалами"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

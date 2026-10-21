@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "repository": "alexyakovlev79/adatours.ru",
+  "branch": "feature/split-nature-wildlife-seo-swarm-20261021",
+  "baseRef": "feature/split-nature-wildlife-20261020",
+  "baseSha": "f9112a4aea79eda3877c7e827846a16fb0548ab6",
+  "queueSource": "data/migrations/interest-split-20261020/release-audit.json",
+  "queueAuditBlob": "118759682400b2085e503d3124959182fb7b62ae",
+  "createdAt": "2026-10-21",
+  "status": "closed",
+  "taskCount": 488,
+  "shardCount": 16,
+  "leaseMinutes": 90,
+  "batchSize": 3,
+  "sourceAuditedAt": "2026-10-21T07:43:22.408Z",
+  "initialReviewed": 37,
+  "policy": "CAS lease per shard; content+decision atomic commit in swarm branch; no production push or deploy until final cutover.",
+  "closedAt": "2026-10-21T13:41:09.097Z",
+  "completion": {
+    "count": 488,
+    "previousReviewed": 37,
+    "ledgerEntries": 533,
+    "confirmedBy": "all 16 shards; 488 DONE; 0 queued, 0 leased, 0 REVIEW",
+    "sourceCutover": "pending_final_CI_and_main_merge"
+  }
+}

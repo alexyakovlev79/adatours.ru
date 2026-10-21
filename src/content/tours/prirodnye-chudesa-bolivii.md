@@ -298,10 +298,8 @@ routeDestinations:
 - destination_bolivia_nacionalnyj_park_madidi
 - destination_bolivia_kopakabana
 - destination_bolivia_ozero_titikaka_boliviya
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 **Краткий маршрут:** Ла-Пас - Уюни - Тахуа - пустыня Силоли - Лагуна-Верде - Уюни - Рурренабак - Сан-Мигель-дель-Бала - Национальный парк Мадиди - Ла-Пас - Копакабана - остров Солнца - Ла-Пас  

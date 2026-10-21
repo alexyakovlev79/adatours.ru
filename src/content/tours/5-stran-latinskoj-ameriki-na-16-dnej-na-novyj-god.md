@@ -94,12 +94,8 @@ routeDestinations:
 - destination_peru_tambomachay
 - destination_peru_sacsayhuaman
 - destination_peru_lima
-primaryThemes:
-- theme_events
-- theme_culture
-themes:
-- theme_wildlife
-- theme_adventure
+primaryThemes: ["theme_events", "theme_culture"]
+themes: ["theme_nature", "theme_adventure"]
 format: Групповой
 audiences:
 - group

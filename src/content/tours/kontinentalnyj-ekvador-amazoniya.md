@@ -519,10 +519,8 @@ destinations: &id001
 routeDestinations: *id001
 routeCountries:
 - country_ecuador
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes: []
+primaryThemes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_nature"]
 ---
 
 

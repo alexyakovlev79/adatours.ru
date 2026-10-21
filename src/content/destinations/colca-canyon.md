@@ -15,9 +15,7 @@ gallery:
 - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
   hover: "Каньон Колка в Перу: река среди горных склонов и террас"
   alt: "Глубокий каньон с рекой и зелеными террасами, Колка, Перу"
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 searchAliases:
 - kanon-kolka
 sourceSnapshot: data/source-index/materials/destination_peru_kanon_kolka.md

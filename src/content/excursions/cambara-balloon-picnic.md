@@ -8,9 +8,7 @@ country: country_brazil
 destination: destination_brazil_kambara_du_sul
 destinationName: Камбара-ду-Сул
 relatedDestinations: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/tours/southern-brazil-vip-7-days/balloons-word-20261010-enhanced-20261011-pass2324-v1.webp
   hover: "Южная Бразилия: полет воздушных шаров над полями и поселком"

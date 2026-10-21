@@ -38,12 +38,14 @@ import {seoCountryTitle,seoDestinationTitle,seoTourTitle,seoExcursionTitle,
 
 test('case table covers all known countries, themes, and destinations',()=>{
  assert.equal(Object.keys(SEO_CASES.countries).length,24);
- assert.equal(Object.keys(SEO_CASES.interests).length,14);
+ assert.equal(Object.keys(SEO_CASES.interests).length,15);
  assert.ok(Object.keys(SEO_CASES.destinations).length>=700);
  assert.equal(seoCountryCase('country_brazil','genitive'),'Бразилии');
  assert.equal(seoCountryCase('country_belize','dative'),'Белизу');
  assert.equal(seoCountryCase('country_belize','prepositional'),'Белизе');
  assert.equal(seoInterestCase('theme_cruises'),'Круизы и экспедиции');
+ assert.equal(seoInterestCase('theme_nature','genitive'),'природы');
+ assert.equal(seoInterestCase('theme_wildlife','genitive'),'животных и сафари');
  assert.equal(seoPlacePhrase('destination_bolivia_samaipata','Самаипата'),'в Самаипате');
  assert.equal(seoPlaceDirectionPhrase('destination_bolivia_samaipata','Самаипата'),'в Самаипату');
  assert.equal(seoPlacePhrase('destination_ecuador_galapagosskie_ostrova','Галапагосские острова'),'на Галапагосских островах');

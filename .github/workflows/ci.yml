@@ -43,6 +43,10 @@ jobs:
           node --test tests/*.test.mjs > /tmp/unit-tests.log 2>&1 || { tail -60 /tmp/unit-tests.log; exit 1; }
           tail -12 /tmp/unit-tests.log
 
+      - name: Verify sealed nature/wildlife swarm editorial receipts
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.number == 40 }}
+        run: node scripts/interest-split-swarm-finalize.mjs --finalize
+
       - name: Build Astro and Pagefind
         shell: bash
         run: |

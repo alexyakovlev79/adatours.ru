@@ -243,7 +243,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/tur-v-yuzhnuyu-braziliyu
 sourceSnapshot: page_texts_original/tur-v-yuzhnuyu-braziliyu__6a976af6.md
 updatedAt: 2026-09-29
-primaryThemes: ["theme_wildlife","theme_beach"]
+primaryThemes: ["theme_nature","theme_beach"]
 themes: ["theme_culture","theme_adventure"]
 ---
 

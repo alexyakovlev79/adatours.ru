@@ -21,9 +21,7 @@ destinations:
 - destination_brazil_jericoacoara
 - destination_brazil_aquiraz
 - destination_brazil_trancoso
-themes:
-- theme_beach
-- theme_culture
+themes: ["theme_beach", "theme_culture", "theme_wildlife"]
 audiences: []
 route:
 - Рио-де-Жанейро, 4 ночи
@@ -257,9 +255,7 @@ routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_buzios
 format: "Групповой"
-primaryThemes:
-- theme_events
-- theme_wildlife
+primaryThemes: ["theme_events", "theme_nature"]
 ---
 
 **Длительность:** 12 дней / 11 ночей  

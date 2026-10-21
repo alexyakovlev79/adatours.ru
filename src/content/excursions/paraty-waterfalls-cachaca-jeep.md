@@ -9,9 +9,7 @@ destination: destination_brazil_paraty
 destinationName: Парати
 relatedDestinations:
 - destination_brazil_nacionalnyj_park_serra_da_bokajna
-themes:
-- theme_wildlife
-- theme_gastronomy_wine
+themes: ["theme_nature", "theme_gastronomy_wine"]
 route:
 - Серра-да-Бокайна
 - Педра-Бранка

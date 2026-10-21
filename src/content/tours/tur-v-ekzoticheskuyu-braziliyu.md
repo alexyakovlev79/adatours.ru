@@ -320,11 +320,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_amazon
 - destination_brazil_buzios
-primaryThemes:
-- theme_wildlife
-- theme_beach
-themes:
-- theme_culture
+primaryThemes: ["theme_nature", "theme_beach"]
+themes: ["theme_culture"]
 ---
 
 

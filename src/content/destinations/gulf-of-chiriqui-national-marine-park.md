@@ -12,10 +12,7 @@ hero:
   alt: "Лесистый остров с узким белым пляжем в Чирикском заливе, Панама"
   hover: "Чирикский залив в Панаме: скалистый остров и светлая песчаная бухта"
 gallery: []
-themes:
-- theme_wildlife
-- theme_beach
-- theme_diving
+themes: ["theme_nature", "theme_beach", "theme_diving"]
 searchAliases:
 - nacionalnyj-morskoj-park-chirikskogo-zaliva
 sourceSnapshot: data/source-index/materials/destination_panama_nacionalnyj_morskoj_park_chirikskogo_zaliva.md

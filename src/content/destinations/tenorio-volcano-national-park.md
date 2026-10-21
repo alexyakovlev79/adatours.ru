@@ -12,9 +12,7 @@ hero:
   alt: "Голубая река Рио-Селесте среди камней и леса в парке Тенорио, Коста-Рика"
   hover: "Тенорио в Коста-Рике: бирюзовая вода между лесистыми берегами"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - Тенорио
 - nacionalnyj-park-tenorio

@@ -13,8 +13,7 @@ hero:
   hover: "Гамбоа: тропический лес со смотровой площадки"
   alt: "Перила смотровой площадки над густым зеленым пологом тропического леса у Гамбоа, Панама"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - panama-rainforest-discovery-center
 - Panama Rainforest Discovery Center

@@ -12,9 +12,7 @@ hero:
   alt: "Туманная лесная тропа среди папоротников на Момбачо, Никарагуа"
   hover: "Момбачо в Никарагуа: влажный облачный лес с узкой тропой"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_mombacho_volcano.md
 updatedAt: '2026-10-10'

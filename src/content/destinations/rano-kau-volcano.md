@@ -12,8 +12,7 @@ hero:
   hover: "Рано-Кау на острове Пасхи: кратерное озеро и океан за склоном"
   alt: "Заросшее озеро внутри кратера Рано-Кау у океанского берега, остров Пасхи, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

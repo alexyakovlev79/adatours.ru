@@ -8,7 +8,7 @@ countryId: "country_chile"
 destinationType: "national_park"
 summary: "Ледники, холодные фьорды и удаленные горные берега чилийской Патагонии."
 searchAliases: ["nacionalnyj-park-bernardo-o-higgins"]
-themes: ["theme_wildlife","theme_cruises"]
+themes: ["theme_nature", "theme_cruises"]
 hero: {"src":"/media/destinations/destination_chile_nacionalnyj_park_bernardo_o_higgins/hero-generated-20261009-v1.webp","alt":"Голубая стена ледника у воды между заснеженными горами парка Бернардо-О’Хиггинс, Чили","status":"approved", hover: "Бернардо-О’Хиггинс: ледник и льдины в тихой воде фьорда"}
 gallery: []
 relatedDestinations: []

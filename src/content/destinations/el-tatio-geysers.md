@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Эль-Татио — высокогорное геотермальное поле Атакамы, куда приезжают на рассвете ради парящих фумарол.
 searchAliases:
 - gejzery-el-tatio
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_chile_gejzery_el_tatio/hero-generated-20261008-resumed-v1.webp
   hover: "Эль-Татио: клубы пара у гор на фоне восходящего солнца"

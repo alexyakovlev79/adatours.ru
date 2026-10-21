@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-20T14:59:18.845328+00:00",
+  "classificationStatus": "complete",
+  "baselineCheckpoint": "922a569a69410a1121dde21df2c9995a360568bb",
+  "parentCommit": "ccebc3e903d41b225d26c22f2449af41bbf02de2",
+  "coverage": {
+    "tour:done": 301,
+    "tour:skipped_archived": 3,
+    "excursion:done": 203,
+    "destination:done": 518
+  },
+  "ledgerItems": 1025,
+  "activeMdEntryCatalogLedgerMatches": 1022,
+  "unresolvedIds": [],
+  "checks": {
+    "tourPrimaryAndSecondaryConstraints": "passed",
+    "knownThemeIds": "passed",
+    "unrelatedThemesPreserved": "passed",
+    "contentBodiesAndOtherFrontmatterPreserved": 970,
+    "exactEntryOtherFieldsPreserved": 970,
+    "catalogOtherFieldsAndCompactFormat": "passed",
+    "archivedRecordsPreserved": "passed",
+    "noDeletedFiles": "passed"
+  },
+  "unitTests": {
+    "command": "node --test tests/interest-model.test.mjs tests/interest-copy.test.mjs",
+    "passed": 25,
+    "failed": 1,
+    "preExistingFailure": {
+      "path": "tests/interest-copy.test.mjs",
+      "line": 52,
+      "message": "15 !== 14",
+      "reason": "Existing test still asserts 14 interests; same assertion present at baseline checkpoint. Resolve during release preparation."
+    }
+  },
+  "productionStatus": "not_merged_or_deployed",
+  "next": "Separate release work: hero, SEO/GEO, docs, 15-interest test gate, full CI and coordinated cutover."
+}

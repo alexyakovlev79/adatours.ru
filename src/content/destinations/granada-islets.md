@@ -12,8 +12,7 @@ hero:
   alt: "Зеленые островки озера Никарагуа на фоне горы Момбачо"
   hover: "Озеро Никарагуа: небольшие лесистые острова и гора на горизонте"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_granada_islets.md
 updatedAt: '2026-10-10'

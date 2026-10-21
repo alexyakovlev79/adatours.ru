@@ -10,8 +10,7 @@ summary: Véu de Noiva — водопад национального парка 
 searchAliases:
 - Véu de Noiva — Chapada dos Guimarães
 - Bridal Veil — Chapada
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp
   hover: "Шапада-дус-Гимарайнс: узкий поток падает с красноватого скального уступа"

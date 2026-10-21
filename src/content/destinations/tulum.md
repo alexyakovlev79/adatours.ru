@@ -27,7 +27,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-tulum-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1iCbTN_dLNkCztJVBRLKu8QzEclZFWNn8/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_beach","theme_wildlife"]
+themes: ["theme_culture", "theme_beach", "theme_nature"]
 ---
 
 ## Тулум - лучший туристический центр Юкатана!

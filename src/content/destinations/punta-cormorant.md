@@ -10,7 +10,7 @@ summary: "Мыс Корморан на Флорене знакомит с лаг
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_punta_cormorant/hero-generated-20261010-next-ten-v1.webp", "alt": "Розовые фламинго на мелководье у мыса Корморан, Галапагосы, Эквадор", hover: "Мыс Корморан: фламинго в прибрежной лагуне"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

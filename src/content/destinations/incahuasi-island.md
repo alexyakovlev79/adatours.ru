@@ -12,9 +12,7 @@ hero:
   alt: "Высокие кактусы острова Инка-Хуаси над белым солончаком Уюни, Боливия"
   hover: "Инка-Хуаси в Боливии: кактусы на каменистом склоне у соляной равнины"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

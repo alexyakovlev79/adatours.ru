@@ -12,8 +12,7 @@ hero:
   alt: "Два зеленых острова в синей воде кратерного озера Куикоча, Эквадор"
   hover: "Куикоча в Эквадоре: острова между крутыми склонами кальдеры"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

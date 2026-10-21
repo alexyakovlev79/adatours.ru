@@ -358,7 +358,7 @@ notes:
 sourceUrl: https://brasiltours.ru/3-strany-latinskoj-ameriki
 sourceSnapshot: page_texts_original/3-strany-latinskoj-ameriki__7610ce8f.md
 updatedAt: 2026-09-30
-primaryThemes: ["theme_culture","theme_wildlife"]
+primaryThemes: ["theme_culture","theme_nature"]
 themes: []
 ---
 

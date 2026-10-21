@@ -11,8 +11,7 @@ relatedDestinations:
 - destination_nicaragua_san_jorge
 - destination_nicaragua_ojo_de_agua
 - destination_nicaragua_ozero_nikaragua
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

@@ -38,7 +38,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/corcovado-tijuca-forest-half-day-tour-lunch"
 sourceSnapshot: "https://drive.google.com/file/d/1-oxgEk6XJ69I7mX9Cfm6WEoaH-L1C6UC/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 ## Корковадо и тропический лес Тижука

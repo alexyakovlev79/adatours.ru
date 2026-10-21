@@ -196,7 +196,7 @@ routeDestinations:
 - destination_mexico_senot_ik_kil
 - destination_mexico_rivera_majya
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 

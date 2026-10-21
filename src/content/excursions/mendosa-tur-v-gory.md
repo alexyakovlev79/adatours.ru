@@ -58,7 +58,7 @@ updatedAt: '2026-10-11'
 relatedDestinations:
   - destination_argentina_akonkagua
   - destination_argentina_uspalyata
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 Дорога проходит через долину реки Мендоса и историческую Успальяту. У Аконкагуа предусмотрена остановка на смотровой площадке.

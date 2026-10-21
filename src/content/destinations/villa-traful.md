@@ -8,7 +8,7 @@ countryId: "country_argentina"
 destinationType: "city"
 summary: "Вилья-Трафуль — небольшой горный посёлок в аргентинской Патагонии, затерянный среди Андских лесов на берегу озера Трафуль. Это место словно создано для тех, кто ищет тишину, единение с природой и возможность увидеть Патагонию вдали от оживлённых туристических маршрутов. Здесь горные склоны, покрытые густыми лесами, спускаются к прозрачной воде, а извилистые дороги ведут через долины, открывая всё новые панорамы нетронутых ландшафтов."
 searchAliases: ["vilya-traful"]
-themes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 hero: {"src": "/media/destinations/destination_argentina_vilya_traful/original-01.jpg", "alt": "Тихое озеро у Вилья-Трафуля с отражением скалистых гор, освещенных розовым закатом, Аргентина", hover: "Вилья-Трафуль: закат над озером и горами"}
 gallery:
 - src: /media/destinations/destination_argentina_vilya_traful/original-02.jpg

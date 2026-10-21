@@ -9,9 +9,7 @@ destinationType: city
 summary: Сан-Мигель-дель-Бала знакомит с амазонским лесом и традициями народа такана. К поселению и эколоджу добираются на лодке по реке Бени.
 searchAliases:
 - san-migel-del-bala
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 hero:
   src: /media/tours/prirodnye-chudesa-bolivii/itinerary-day-06-generated-20261008-v1.webp
   alt: "Моторная лодка у домов на берегу реки Бени в Сан-Мигель-дель-Бала, Боливия"

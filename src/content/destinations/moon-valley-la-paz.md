@@ -10,8 +10,7 @@ summary: Лунная долина дополняет знакомство с Л
 searchAliases:
 - Валле-де-ла-Луна (Ла-Пас)
 - lunnaya-dolina-la-pas
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_lunnaya_dolina_la_pas/hero-generated-20261008.webp
   alt: "Светлые эрозионные столбы Лунной долины перед сухими горами у Ла-Паса, Боливия"

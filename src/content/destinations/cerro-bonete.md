@@ -11,7 +11,7 @@ hero:
   src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp
   alt: "Участники горного похода на каменистом склоне с видом на Аконкагуа — реалистичная иллюстрация района пика Бонете"
 gallery: []
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_cerro_bonete.md
 updatedAt: '2026-10-10'
 ---

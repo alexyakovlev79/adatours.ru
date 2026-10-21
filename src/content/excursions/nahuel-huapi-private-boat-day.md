@@ -8,9 +8,7 @@ country: country_argentina
 destination: destination_argentina_nahuel_huapi_lake
 destinationName: Озеро Науэль-Уапи
 relatedDestinations: []
-themes:
-- theme_wildlife
-- theme_gastronomy_wine
+themes: ["theme_nature", "theme_gastronomy_wine"]
 duration: Полный день
 format: Индивидуальная экскурсия в составе программы Lakeshore Chalet
 hero:

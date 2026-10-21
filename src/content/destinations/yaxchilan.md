@@ -12,9 +12,7 @@ hero:
   hover: "Яшчилан: ступени и каменные проемы под кронами деревьев"
   alt: "Каменная лестница к древнему сооружению Яшчилана среди леса, Мексика"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 searchAliases:
 - Якшилан
 - yashchilan

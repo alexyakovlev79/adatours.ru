@@ -96,10 +96,8 @@ routeDestinations:
 - destination_brazil_pantanal
 - destination_brazil_kuyaba
 - destination_brazil_portu_zhofri
-primaryThemes:
-- theme_fishing
-themes:
-- theme_wildlife
+primaryThemes: ["theme_fishing"]
+themes: []
 ---
 
 **Длительность:** 2-7 дней  

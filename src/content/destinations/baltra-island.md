@@ -13,8 +13,7 @@ hero:
   hover: "Балтра: сухой вулканический берег у бирюзовой воды"
   alt: "Кактусы на каменистом берегу острова Балтра, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

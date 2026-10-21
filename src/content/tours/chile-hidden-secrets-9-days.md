@@ -101,11 +101,8 @@ routeDestinations:
 - destination_chile_ozero_nordensheld
 - destination_chile_laguna_amarga
 - destination_chile_mirador_sarmiento
-primaryThemes:
-- theme_wildlife
-themes:
-- theme_culture
-- theme_cruises
+primaryThemes: ["theme_nature"]
+themes: ["theme_culture", "theme_cruises", "theme_wildlife"]
 format: Смешанный
 durationDays: 9
 durationNights: 8

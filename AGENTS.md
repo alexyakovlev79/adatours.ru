@@ -1,3 +1,9 @@
+# Рой: проверка SEO после разделения интересов (21.10.2026)
+
+**Команда «Рой ADA: проверяй SEO-интересы»** запускает независимый Work-чат по `docs/tasks/WORK_ADATOURS_INTEREST_SPLIT_SWARM_20261021.md`. Брать до 3 свободных статей через `scripts/interest-split-swarm-remote.mjs` с уникальными ownerId/token, сохранять каждую адресную смысловую проверку атомарным commit в `feature/split-nature-wildlife-seo-swarm-20261021`, автоматически продолжать до 9–12 статей за чат. Источник истины: `data/migrations/interest-split-20261020/swarm/manifest.json` и 16 CAS-shards. Исходный PR #40 и `main` **не изменять** до финального мастера: `docs/tasks/WORK_ADATOURS_INTEREST_SPLIT_SWARM_RELEASE_20261021.md`. Резерв 90 минут, после обрыва неготовые задания освобождаются; статус `done` не переоформлять. Это **не** обычные команды «пиши SEO» или «переписывай seo».
+
+---
+
 # Внешние сайты Анны: обратная сверка и 301 (19.10.2026)
 
 **Команда «сверяй дальше»** означает **одну полную партию до 50 URL исходного сайта**, а не RU-first работу по 3780 или 5000+ страницам adatours.ru. Каноническая инструкция: `docs/workflows/external-identity-reverse.md`; диспетчер: `scripts/reverse-identity-remote.mjs`, ветка **`external-identity/staging`**, реестр `data/external-identity/reverse-v1/`. Резерв действует **60 минут**, одновременно могут работать несколько чатов, checkpoint результатов по 10 URL с CAS. Приоритет: **vipdeluxetravel.ru → adatours.com → brasiltours.ru**; если VIP не имеет сохраненного полного списка URL, перейти к английскому источнику, не выдумывать URL. Источник `adatours.com` / `brasiltours.ru` → доказанный `sameAs`; **vipdeluxetravel.ru → карта 301** на один точный действующий RU URL, без автоматического включения редиректов. Исторические отчеты и миграционные пары сохранить. Старый план `data/external-identity/work-queues-20261012/plan.json` помечен superseded, по нему не захватывать новые RU-first партии. Не менять GEO/SEO staging и Schema.org при сверке.
@@ -71,7 +77,7 @@
 
 `docs/workflows/urls.md` — единый контракт английских URL: общие каталоги `/country/`, `/places/`, `/tours/`, `/excursions/`, `/interests/`; country-first иерархия объектов сохраняется. Русская транслитерация для новых slug запрещена. Существующие stable ID и точные `contentPath` не переименовываются. Для действительно нового резерва нужен явный `slug` либо латинское `englishName`; существующее место переиспользуется без этих полей.
 
-**Интересы:** закрытый справочник из 14 ID в `src/data/interest-registry.json`. Активный Tour: 1–2 `primaryThemes` + непересекающиеся дополнительные `themes`; Excursion/Destination: собственные `themes`, без наследования. `Country.relatedThemes` и ручные списки Theme запрещены. Метки production MD и точных source-index entry/catalog обновляются вместе. Полный контракт: `docs/workflows/interests.md`.
+**Интересы:** закрытый справочник из 15 ID в `src/data/interest-registry.json`. Активный Tour: 1–2 `primaryThemes` + непересекающиеся дополнительные `themes`; Excursion/Destination: собственные `themes`, без наследования. `Country.relatedThemes` и ручные списки Theme запрещены. Метки production MD и точных source-index entry/catalog обновляются вместе. Полный контракт: `docs/workflows/interests.md`.
 
 `docs/workflows/master.md` — общий контракт и справочник, не обязательное полное чтение перед каждой сущностью. Исторические handoff и прежние версии workflow не задают действия.
 

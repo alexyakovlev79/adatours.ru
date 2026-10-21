@@ -20,8 +20,7 @@ hero:
   alt: Лодка у деревянного причала на озере Сучитлан среди зеленых островов, Эль-Сальвадор
   hover: 'Сучитлан: лодочная прогулка среди островов и зеленых берегов'
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

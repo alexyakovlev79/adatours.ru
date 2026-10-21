@@ -10,9 +10,7 @@ destinationName: Копакабана
 relatedDestinations:
 - destination_bolivia_ozero_titikaka_boliviya
 - destination_bolivia_solnechnyj_ostrov
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 duration: Полный день
 format: По программе
 language: []

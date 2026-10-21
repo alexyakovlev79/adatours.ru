@@ -39,7 +39,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island"
 sourceSnapshot: "https://drive.google.com/file/d/1uUVlUrN75IZe2TZ5WCKisI3ebCh9c8o5/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_culture","theme_wildlife","theme_beach"]
+themes: ["theme_culture", "theme_nature", "theme_beach"]
 ---
 
 ## Статуи моаи и вулкан Рано-Рараку: что посмотреть на Острове Пасхи, Чили

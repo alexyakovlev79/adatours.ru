@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-ehl-valle-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1xv7Pzs-WJPo02iOF0dPj3A3cQBD-mDcs/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 ---
 
 ## Кальдера вулкана и золотые лягушки: что посмотреть в Эль-Валле, Панама

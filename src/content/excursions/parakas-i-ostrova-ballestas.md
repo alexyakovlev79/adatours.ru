@@ -26,7 +26,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: 2026-09-30
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 ---
 
 Рано утром вы выезжаете из Лимы в Паракас. В 8:00 катер отправляется из порта к Андскому Канделябру Паракаса и островам Бальестас.

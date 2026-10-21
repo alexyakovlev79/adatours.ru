@@ -12,9 +12,7 @@ hero:
   hover: "Талампайя: красные скалы над сухим руслом"
   alt: "Сухое каменистое русло между высокими красными стенами каньона Талампайя, Аргентина"
 gallery: []
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 facts: []
 featureBands: []
 relatedDestinations: []

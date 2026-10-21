@@ -281,7 +281,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/buenos-ajres-salta-iguasu
 sourceSnapshot: page_texts_original/buenos-ajres-salta-iguasu__6feef4b7.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature","theme_culture"]
 themes: ["theme_gastronomy_wine"]
 ---
 

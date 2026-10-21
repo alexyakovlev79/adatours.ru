@@ -12,8 +12,7 @@ hero:
   alt: "Длинная моторная лодка у лесного причала на широкой реке Напо, Эквадор"
   hover: "Напо в Эквадоре: лодка под навесом и буроватая речная вода"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

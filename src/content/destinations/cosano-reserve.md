@@ -12,8 +12,7 @@ hero:
   hover: "Косано: извилистая тропа в тени тропического леса"
   alt: "Лесная тропа между крупными стволами и густой зеленью в заповеднике Косано, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

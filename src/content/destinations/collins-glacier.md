@@ -12,8 +12,7 @@ hero:
   hover: "Ледник Коллинз: пологий ледяной край у моря"
   alt: "Низкий пологий ледник Коллинз у серого моря с плавучим льдом и снежным берегом, Антарктида"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

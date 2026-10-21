@@ -396,8 +396,8 @@ routeDestinations:
 - destination_peru_arekipa
 - destination_peru_linii_naska_i_ostrova_balestas
 - destination_peru_parakas
-primaryThemes: ["theme_events","theme_culture"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_events", "theme_culture"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 Отдельная часть путешествия посвящена празднику Святой Канделярии в Пуно. В начале февраля город наполняют процессии, музыка, костюмированный парад и традиционный танец дьявола.

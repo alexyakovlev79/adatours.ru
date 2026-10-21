@@ -24,7 +24,7 @@ notes: ["Принимающая сторона оставляет за собо�
 sourceUrl: "https://brasiltours.ru/uvlekatel-nyj-tur-k-perito-moreno"
 sourceSnapshot: "https://drive.google.com/file/d/1gZmt7IK3JeQvKEzj-c1iKuMMl7odXmxc/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Ледник Перито Морено

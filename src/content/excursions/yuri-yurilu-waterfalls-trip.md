@@ -8,9 +8,7 @@ country: country_venezuela
 destination: destination_venezuela_yuri_yurilu_falls
 destinationName: Водопады Юри и Юрилу
 relatedDestinations: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 format: Дополнительная экскурсия
 hero:
   src: /media/tours/canaima-angel-falls-4-days/yuri-generated-20261010-p034-v1.webp

@@ -13,10 +13,7 @@ hero:
   hover: "Порт-Локрой: пингвины у исторической базы"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_cruises
-- theme_culture
-- theme_wildlife
+themes: ["theme_cruises", "theme_culture"]
 searchAliases:
 - Port Lockroy
 - Порт Локрой

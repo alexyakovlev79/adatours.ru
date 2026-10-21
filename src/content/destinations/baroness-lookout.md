@@ -10,7 +10,7 @@ summary: "Мирадор-де-ла-Баронесса на Флорене отк
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_baroness_lookout/hero-generated-20261010-batch-four-v1.webp", "alt": "Бирюзовая бухта и сухие вулканические склоны Флорены со смотровой точки Баронессы", "hover": "Смотровая Баронессы на Флорене: бухта среди вулканических берегов"}
 gallery: []
-themes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

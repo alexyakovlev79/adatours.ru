@@ -50,7 +50,7 @@ sourceSnapshot: page_texts_newstep/Excursions/papallakta__80578384.md
 updatedAt: 2026-09-30
 relatedDestinations:
   - destination_ecuador_papayakta
-themes: ["theme_spa","theme_wildlife"]
+themes: ["theme_spa", "theme_nature"]
 ---
 
 Папаякта находится в Эквадорских Андах на высоте около 3300 метров по дороге из Кито в сторону Амазонии. По пути природные зоны меняются от высокогорных ландшафтов к более влажным лесам.

@@ -9,9 +9,7 @@ destination: destination_chile_marble_caves
 destinationName: Мраморные пещеры
 relatedDestinations:
 - destination_chile_general_carrera_lake
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_nature", "theme_cruises"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x815-20261011-v1-enhanced-20261012-next21-v1.webp
   alt: "Мраморные гроты с полосатыми сводами над бирюзовой водой озера Хенераль-Каррера"

@@ -43,7 +43,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-pustynyu-lensojc-maranenses-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-pustynyu-lensojc-maranenses-v-brazilii__de947896.md
 updatedAt: '2026-10-11'
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 ---
 
 Лагуны сезонные. В разные месяцы глубина воды и доступные маршруты меняются, поэтому даты поездки лучше подбирать под состояние парка. На месте программу можно построить вокруг прогулок по дюнам, купания и маршрутов к известным лагунам, включая Лагоа-Азул.

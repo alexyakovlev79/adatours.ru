@@ -40,9 +40,7 @@ routeDestinations:
 - destination_argentina_el_calafate
 - destination_argentina_lednik_perito_moreno
 - destination_argentina_nacionalnyj_park_los_glasyares
-primaryThemes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 audiences:
 - Группы 10–20 человек

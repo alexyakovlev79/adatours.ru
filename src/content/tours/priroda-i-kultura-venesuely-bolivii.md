@@ -286,7 +286,7 @@ routeDestinations:
 - destination_bolivia_gejzery_sol_de_manyana
 - destination_bolivia_pustynya_salvadora_dali
 - destination_bolivia_laguna_verde
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: ["theme_beach"]
 ---
 

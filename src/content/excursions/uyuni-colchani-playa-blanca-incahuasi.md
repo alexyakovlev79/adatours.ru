@@ -12,9 +12,7 @@ relatedDestinations:
 - destination_bolivia_playa_blanca_salt_museum
 - destination_bolivia_ojos_del_salar
 - destination_bolivia_ostrov_inka_huasi
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 duration: Полный день
 format: По программе
 language: []

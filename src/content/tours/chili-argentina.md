@@ -380,7 +380,7 @@ routeDestinations:
 - destination_argentina_buenos_aires
 - destination_argentina_plaza_dorrego
 - destination_argentina_plaza_de_mayo
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

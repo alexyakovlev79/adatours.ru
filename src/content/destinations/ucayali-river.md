@@ -13,9 +13,7 @@ hero:
   alt: "Тропический лес отражается в спокойной воде амазонской протоки"
   hover: "Амазония: зеленые берега и зеркальное отражение деревьев в воде"
 gallery: []
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
 searchAliases:
 - Река Укаяли
 sourceSnapshot: data/source-index/materials/destination_peru_ucayali_river.md

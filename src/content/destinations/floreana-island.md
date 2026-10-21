@@ -10,7 +10,7 @@ summary: "Флорена соединяет пляжи Галапагосов, �
 searchAliases: ["остров Флорена", "ostrov-florena-galapagosy"]
 hero: {"src": "/media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp", "alt": "Морские львы на светлом песчаном пляже Галапагосских островов, Эквадор", hover: "Галапагосы: морские львы отдыхают у бирюзового океана"}
 gallery: []
-themes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_wildlife", "theme_culture", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

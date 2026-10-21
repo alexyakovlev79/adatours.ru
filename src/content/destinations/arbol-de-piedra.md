@@ -12,8 +12,7 @@ hero:
   hover: "Силоли: выветренная скала над ровным песчаным участком"
   alt: "Скала Каменное Дерево на тонком основании в пустыне Силоли, Боливия"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

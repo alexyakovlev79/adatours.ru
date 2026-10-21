@@ -8,9 +8,7 @@ country: country_brazil
 destination: destination_brazil_florianopolis
 destinationName: Флорианополис
 relatedDestinations: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 hero:
   src: /media/destinations/florianopolis/hero-enhanced-20261001.webp
   hover: "Флорианополис: вид сверху на бухты и скалистое побережье"

@@ -23,7 +23,7 @@ notes: ["Принимающая сторона оставляет за собо�
 sourceUrl: "https://brasiltours.ru/jekskursija-v-park-ptic"
 sourceSnapshot: "https://drive.google.com/file/d/1bGH5F8IT0fUfauI4-kdbvqWNWdG1z1Xd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Экзотический парк птиц

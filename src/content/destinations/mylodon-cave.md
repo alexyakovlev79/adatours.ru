@@ -12,9 +12,7 @@ hero:
   hover: "Пещера Милодона в Чили: дорожка под широким скальным навесом"
   alt: "Широкий темный вход в пещеру Милодона под нависающей скалой, Чили"
 gallery: []
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 facts: []
 featureBands: []
 relatedDestinations: []

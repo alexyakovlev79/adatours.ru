@@ -15,12 +15,8 @@ destinations: &id001
 - destination_argentina_puerto_iguasu
 - destination_argentina_garganta_del_diablo
 routeDestinations: *id001
-primaryThemes:
-- theme_wildlife
-- theme_adventure
-themes:
-- theme_culture
-- theme_gastronomy_wine
+primaryThemes: ["theme_nature", "theme_adventure"]
+themes: ["theme_culture", "theme_gastronomy_wine"]
 audiences:
 - Корпоративные группы
 format: "Инсентив"

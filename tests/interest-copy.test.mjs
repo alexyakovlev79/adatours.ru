@@ -11,13 +11,13 @@ const cases = [[0,2],[1,0],[2,1],[3,1],[4,1],[5,2],[10,2],[11,2],[12,2],[13,2],[
 test('every approved interest has independent complete visitor copy and three grammatical forms', () => {
   assert.deepEqual(Object.keys(INTEREST_COPY).sort(), INTERESTS.map(r=>r.id).sort());
   for (const field of ['tourIntro','geographyIntro','catalogIntro']) {
-    assert.equal(new Set(INTERESTS.map(r=>interestCopy(r.id)[field])).size,14);
+    assert.equal(new Set(INTERESTS.map(r=>interestCopy(r.id)[field])).size,15);
     for (const interest of INTERESTS) assert.ok(interestCopy(interest.id)[field].length > 45);
   }
   for (const row of INTERESTS) assert.equal(interestCopy(row.id).tourForms.length,3);
   assert.throws(()=>interestCopy('unknown'));
 });
-test('all fourteen complete noun/adjective phrases inflect correctly, including teens and compound counts', () => {
+test('all fifteen complete noun/adjective phrases inflect correctly, including teens and compound counts', () => {
   for (const [n,index] of cases) {
     assert.equal(pluralIndex(n), index);
     for (const {id} of INTERESTS) assert.equal(interestTourCount(id,n),`${n} ${interestCopy(id).tourForms[index]}`);
@@ -46,10 +46,10 @@ test('catalogue lead is individual, uses current total and does not expose inter
     }
   }
 });
-test('interest index includes all 14, counts primary+secondary once and sorts by count then Russian name', () => {
+test('interest index includes all 15, counts primary+secondary once and sorts by count then Russian name', () => {
   const tours=[tour('one',{primaryThemes:[N],themes:[A]}),tour('two',{primaryThemes:[N]}),tour('three',{status:'archived'}),tour('four',{status:'draft'}),tour('five',{locale:'en'})];
   const rows=buildInterestIndex(themes,[...tours,tours[0]]);
-  assert.equal(rows.length,14);
+  assert.equal(rows.length,15);
   assert.deepEqual(rows.slice(0,2).map(r=>[r.entry.data.id,r.tourCount]),[[N,2],[A,1]]);
   for (let i=1;i<rows.length;i++) assert.ok(rows[i-1].tourCount >= rows[i].tourCount);
   const archived=buildInterestIndex(themes,[tour('one',{primaryThemes:[N],themes:[A],status:'archived'}),tours[1]]);

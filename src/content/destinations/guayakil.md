@@ -33,7 +33,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-guayakil-v-ehkvadore"
 sourceSnapshot: "https://drive.google.com/file/d/1V27NT_iuWZdGRq4sqyjLobmMHNjGzHBo/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_wildlife", "theme_nature"]
 ---
 
 ## Малекон 2000 и Лас-Пеньяс: что посмотреть в Гуаякиле, Эквадор

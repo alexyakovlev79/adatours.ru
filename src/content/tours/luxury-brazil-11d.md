@@ -224,7 +224,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/roskoshnaya-braziliya
 sourceSnapshot: page_texts_original/roskoshnaya-braziliya__7b56b4e6.md
 updatedAt: 2026-09-29
-primaryThemes: ["theme_beach","theme_wildlife"]
+primaryThemes: ["theme_beach", "theme_nature"]
 themes: ["theme_culture"]
 ---
 

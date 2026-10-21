@@ -45,7 +45,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-tumbes-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1HUjw8GRMBJl1WafZ0o8_UObm5OONH5Q8/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_beach","theme_wildlife"]
+themes: ["theme_beach", "theme_nature"]
 ---
 
 ## Белые пляжи и джунгли: что посмотреть в Тумбесе, Перу

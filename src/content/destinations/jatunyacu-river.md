@@ -12,8 +12,7 @@ hero:
   hover: "Жатуньяку: белая вода у лесистых берегов"
   alt: "Пороги реки Жатуньяку среди темных камней и густого леса, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

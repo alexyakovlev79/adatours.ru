@@ -9,9 +9,7 @@ destination: destination_brazil_araras_eco_lodge
 destinationName: Эколодж «Арарас»
 relatedDestinations:
 - destination_brazil_pantanal
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_wildlife", "theme_nature"]
 language:
 - Английский
 hero:

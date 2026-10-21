@@ -279,8 +279,8 @@ routeDestinations:
 - destination_brazil_derevnya_akazhatuba
 - destination_brazil_sugarloaf_mountain
 - destination_argentina_recoleta
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 format: Групповой SIB
 priceFrom: 4659
 ---

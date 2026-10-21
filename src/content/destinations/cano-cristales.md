@@ -15,9 +15,7 @@ gallery:
 - src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/hero-src-enhanced-20261007.webp
   alt: "Розовые водные растения между камнями реки Каньо-Кристалес, Колумбия"
   hover: "Каньо-Кристалес: розовые растения в прозрачной воде среди камней"
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - kano-kristales
 sourceSnapshot: data/source-index/materials/destination_colombia_kano_kristales.md

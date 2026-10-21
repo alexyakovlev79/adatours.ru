@@ -342,11 +342,8 @@ routeDestinations:
 - destination_chile_tokonao
 - destination_chile_machuka
 - destination_brazil_praia_vermelha
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes:
-- theme_gastronomy_wine
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_gastronomy_wine", "theme_wildlife"]
 ---
 
 

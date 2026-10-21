@@ -12,8 +12,7 @@ hero:
   alt: "Невысокие пороги Кило 3 среди темных валунов и тропического леса, Суринам"
   hover: "Кило 3 в Суринаме: белая вода между камнями на лесной реке"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

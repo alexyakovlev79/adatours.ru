@@ -12,8 +12,7 @@ hero:
   alt: "Озерная набережная Сан-Бернардино у зеленых холмов, Парагвай"
   hover: "Сан-Бернардино в Парагвае: спокойная вода, деревья и невысокие береговые здания"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_paraguay_san_bernardino.md
 updatedAt: '2026-10-09'

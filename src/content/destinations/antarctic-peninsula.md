@@ -12,9 +12,7 @@ hero:
   alt: "Голубой айсберг перед заснеженным берегом Антарктического полуострова"
   hover: "Антарктический полуостров: айсберг на темной воде под снежными горами"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

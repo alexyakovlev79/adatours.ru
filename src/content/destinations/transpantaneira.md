@@ -10,8 +10,7 @@ summary: Транспантанейра — грунтовая дорога из
   за животными.
 searchAliases:
 - Transpantaneira Park Road
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-2-enhanced-20261006.webp
   hover: "Пантанал: птицы взлетают над водоемом"

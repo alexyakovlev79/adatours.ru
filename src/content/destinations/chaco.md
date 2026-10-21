@@ -12,9 +12,7 @@ hero:
   hover: "Чако в Парагвае: пыльная дорога через редколесье"
   alt: "Грунтовая дорога среди сухих деревьев и кустарников парагвайского Чако"
 gallery: []
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 searchAliases:
 - chako
 sourceSnapshot: data/source-index/materials/destination_paraguay_chako.md

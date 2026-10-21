@@ -12,8 +12,7 @@ hero:
   alt: "Озера и лесистые холмы с вершины Серро-Кампанарио, Аргентина"
   hover: "Серро-Кампанарио в Аргентине: панорама озер среди леса и гор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

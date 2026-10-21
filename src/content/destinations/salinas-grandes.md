@@ -12,9 +12,7 @@ hero:
   hover: "Салинас-Грандес: соляная равнина у далеких андских гор"
   alt: "Прямоугольный бассейн с голубой водой среди белой соли Салинас-Грандес, Аргентина"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

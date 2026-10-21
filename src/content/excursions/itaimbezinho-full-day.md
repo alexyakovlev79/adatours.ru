@@ -9,8 +9,7 @@ destination: destination_brazil_kanon_itaimbezinyu
 destinationName: Каньон Итаимбезинью
 relatedDestinations:
 - destination_brazil_kambara_du_sul
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/southern-brazil-vip-7-days/itaimbezinho-canyon-word-20261010-enhanced-20261011-pass2324-v1.webp
   hover: "Итаимбезинью: глубокий каньон между лесистыми плато"

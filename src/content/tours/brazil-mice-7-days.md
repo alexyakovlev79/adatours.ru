@@ -22,11 +22,8 @@ routeDestinations:
 - destination_brazil_parque_das_aves
 - destination_brazil_amazon
 - destination_brazil_rio
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure"]
 audiences:
 - b2b
 - mice

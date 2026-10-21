@@ -8,9 +8,7 @@ country: country_guatemala
 destination: destination_guatemala_tikal_flores
 destinationName: Тикаль & Флорес
 relatedDestinations: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 format: Экскурсионная программа
 hero:
   src: /media/tours/guatemala-belize-maya-world-12-days/tikal-word-08-20261010-p022-v1-enhanced-20261011-doc-v1.webp

@@ -6,8 +6,7 @@ country: country_argentina
 destination: destination_argentina_puerto_iguasu
 relatedDestinations:
 - destination_argentina_garganta_del_diablo
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 lead: Переезд через мост Танкредо-Невес и прогулка по аргентинской стороне Игуасу с русскоговорящим гидом.
 hero:
   src: /media/excursions/jekskursija-na-argentinskie-vodopady/hero-src-enhanced-20261008.webp

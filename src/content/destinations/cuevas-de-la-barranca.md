@@ -12,8 +12,7 @@ hero:
   hover: "Пещеры Барранка: скальные полости у зеленого побережья"
   alt: "Темные входы в прибрежные пещеры Барранка над водой залива Фонсека, Сальвадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

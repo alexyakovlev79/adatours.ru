@@ -13,8 +13,7 @@ hero:
   hover: "Петроуэ: бурная вода на скалистых уступах среди лесистых берегов"
   alt: "Бирюзовые каскады Петроуэ между темными скалами и зеленым лесом, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Водопады Петроуэ
 sourceSnapshot: data/source-index/materials/destination_chile_petrohue_waterfalls.md

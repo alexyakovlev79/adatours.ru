@@ -10,9 +10,7 @@ destinationName: Национальный парк Кахас
 relatedDestinations:
 - destination_ecuador_kuenka
 - destination_ecuador_guayakil
-themes:
-- theme_wildlife
-- theme_gastronomy_wine
+themes: ["theme_nature", "theme_gastronomy_wine"]
 language:
 - русский
 hero:

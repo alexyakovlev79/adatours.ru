@@ -12,9 +12,7 @@ hero:
   hover: "Кордильера-дель-Йбитурусу: зеленые холмы и лесные склоны"
   alt: "Лесистые гряды Кордильеры-дель-Йбитурусу над зеленой сельской долиной, Парагвай"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - kordilera-del-jbiturusu
 sourceSnapshot: data/source-index/materials/destination_paraguay_kordilera_del_jbiturusu.md

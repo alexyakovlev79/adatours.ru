@@ -60,11 +60,8 @@ routeDestinations:
 - destination_ecuador_mosquera_islet
 - destination_ecuador_daphne_major
 - destination_ecuador_ostrov_baltra
-primaryThemes:
-- theme_cruises
-- theme_wildlife
-themes:
-- theme_gastronomy_wine
+primaryThemes: ["theme_cruises", "theme_wildlife"]
+themes: ["theme_gastronomy_wine", "theme_nature"]
 durationDays: 8
 durationNights: 7
 priceFrom: 11550

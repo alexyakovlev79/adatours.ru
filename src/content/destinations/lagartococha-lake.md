@@ -10,7 +10,7 @@ summary: "Лагартокоча в районе Сача Лодж открыв�
 searchAliases: []
 hero: {"src": "/media/destinations/sacha-reserve/gallery-generated-20261009-root-v1.webp", "alt": "Нос каноэ на темной воде затопленного леса заповедника Сача, Эквадор", hover: "Сача: нос каноэ между деревьями и их отражениями в воде"}
 gallery: []
-themes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

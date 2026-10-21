@@ -12,9 +12,7 @@ hero:
   alt: "Излучина реки и зелёные равнины у Ла-Макарены, вид со смотровой Эль-Мирадор"
   hover: "Эль-Мирадор у Ла-Макарены: река среди леса и равнин"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - Эль-Мирадор близ Ла-Макарены
 - El Mirador La Macarena

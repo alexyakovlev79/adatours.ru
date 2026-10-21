@@ -13,8 +13,7 @@ hero:
   hover: "Сеймур-Норте: голубоногая олуша у воды в вечернем свете"
   alt: "Голубоногая олуша на каменистом берегу острова Сеймур-Норте, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

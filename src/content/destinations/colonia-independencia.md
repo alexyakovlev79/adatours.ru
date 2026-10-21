@@ -12,9 +12,7 @@ hero:
   hover: "Колония-Индепенденсия: дом с черепичной крышей у лесистых склонов"
   alt: "Невысокий сельский дом среди зеленых холмов Колонии-Индепенденсия, Парагвай"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - koloniya-independensiya
 sourceSnapshot: data/source-index/materials/destination_paraguay_koloniya_independensiya.md

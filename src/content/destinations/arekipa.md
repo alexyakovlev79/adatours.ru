@@ -77,7 +77,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-arekipa-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-arekipa-v-peru__e7ff1886.md
 updatedAt: 2026-10-02
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 Арекипа получила прозвище «Белый город» благодаря светлому вулканическому камню, который широко использовали в местной архитектуре. Исторический центр соединяет колониальные здания, церкви, монастыри и площади.

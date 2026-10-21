@@ -390,8 +390,8 @@ routeDestinations:
 - destination_guatemala_rio_dulse
 - destination_guatemala_livingston
 - destination_honduras_kopan_ruinas
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: ["theme_adventure"]
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure", "theme_wildlife"]
 ---
 
 

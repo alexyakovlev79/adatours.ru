@@ -36,7 +36,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-hose-stolicu-kosta-riki"
 sourceSnapshot: "https://drive.google.com/file/d/105Xdj4lmpqMSIezWtP8eUQiTYP1YzJsa/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_gastronomy_wine","theme_wildlife"]
+themes: ["theme_culture", "theme_gastronomy_wine", "theme_nature"]
 ---
 
 ## Театры, музеи и колониальные здания: что посмотреть в Сан-Хосе

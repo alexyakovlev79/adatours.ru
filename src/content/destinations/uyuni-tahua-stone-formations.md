@@ -13,8 +13,7 @@ hero:
   hover: "Альтиплано: скальные останцы перед дальними горными хребтами"
   alt: "Выветренные каменные столбы на сухой равнине между Уюни и Тахуа, Боливия"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Каменные образования на маршруте Уюни — Тахуа
 sourceSnapshot: data/source-index/materials/destination_bolivia_uyuni_tahua_stone_formations.md

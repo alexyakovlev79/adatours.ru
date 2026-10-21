@@ -10,7 +10,7 @@ summary: "На Пунта-Морено на Исабеле темные лаво
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_punta_moreno/hero-generated-20261010-third-ten-v1.webp", "alt": "Фламинго в небольшой лагуне среди тёмных лавовых полей Пунта-Морено", "hover": "Пунта-Морено: фламинго в лагуне на вулканическом берегу"}
 gallery: []
-themes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

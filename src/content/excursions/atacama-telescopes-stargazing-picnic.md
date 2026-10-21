@@ -8,8 +8,7 @@ country: country_chile
 destination: destination_chile_san_pedro_de_atakama
 destinationName: Сан-Педро-де-Атакама
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x478-20261011-v1-enhanced-20261011-pass2324-v1.webp
   hover: "Атакама: наблюдение за звездами над темными горными силуэтами"

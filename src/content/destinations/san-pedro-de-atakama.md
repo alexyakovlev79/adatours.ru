@@ -26,7 +26,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-pustynyu-san-pedro-de-atakama-v-chili"
 sourceSnapshot: "https://drive.google.com/file/d/1_t_aFz7xrxZ3VRQ_7K7cme8cit2zJnpe/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 ## Лунная долина и гейзеры Татио: что посмотреть в Сан-Педро-де-Атакама, Чили

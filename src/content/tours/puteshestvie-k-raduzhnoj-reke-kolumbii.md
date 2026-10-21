@@ -192,7 +192,7 @@ routeDestinations:
 - destination_colombia_la_makarena
 - destination_colombia_kano_kristales
 - destination_colombia_guayabero_river
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: ["theme_culture"]
 ---
 

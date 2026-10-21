@@ -12,8 +12,7 @@ hero:
   hover: "Пегуче: белый поток над темными камнями среди зелени"
   alt: "Водопад Пегуче у лесной тропы с деревянными перилами, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

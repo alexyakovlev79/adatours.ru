@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Озеро Фурнаш в районе Капитолио входит в лодочные маршруты по каньонам и водопадам.
 searchAliases:
 - ozero-furnash
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_ozero_furnash/destination_brazil_ozero_furnash-generated-20261008.webp
   hover: "Фурнаш: озеро между холмами и скалистыми берегами"

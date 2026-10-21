@@ -25,7 +25,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: '2026-10-10'
-themes: ["theme_adventure","theme_wildlife","theme_diving"]
+themes: ["theme_adventure", "theme_nature", "theme_diving"]
 ---
 
 Дополнительно можно заказать спуск в пещеру Аньюмас, примерно в 20 км к западу от Бонито. За узкой расщелиной открывается огромная подземная полость. Спуск по тросовой системе идет примерно на 72 м вниз.

@@ -10,9 +10,7 @@ destinationName: Озеро Гатун
 relatedDestinations:
 - destination_panama_monkey_island_gatun
 - destination_panama_panama_canal
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
 hero:
   src: /media/tours/panama-city-gamboa-6-days/word-10-20261010-enhanced-20261011-pass2324-v1.webp
   hover: "Белолицые обезьяны в зеленой листве"

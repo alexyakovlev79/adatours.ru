@@ -102,8 +102,8 @@ routeDestinations:
 - destination_antarctica_villa_las_estrellas
 - destination_antarctica_stanciya_bellinsgauzen
 - destination_antarctica_stanciya_velikaya_stena
-primaryThemes: ["theme_cruises","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_cruises", "theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 

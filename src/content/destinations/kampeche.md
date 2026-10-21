@@ -27,7 +27,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1tP3sJi1I8cLcN253_UcoQswD-cf0rO16/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ## Кампече - город-крепость в Мексике

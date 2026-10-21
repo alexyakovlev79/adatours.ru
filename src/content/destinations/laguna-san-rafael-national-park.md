@@ -14,8 +14,7 @@ hero:
   hover: "Сан-Рафаэль: голубой ледяной фронт и плавающие льдины в Патагонии"
   alt: "Ледник Сан-Рафаэль у серо-зеленой лагуны и облачных гор, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

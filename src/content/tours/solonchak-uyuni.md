@@ -46,9 +46,7 @@ routeDestinations:
 - destination_bolivia_kolchani
 - destination_bolivia_ojos_del_salar
 - destination_bolivia_ostrov_inka_huasi
-primaryThemes:
-- theme_adventure
-- theme_wildlife
+primaryThemes: ["theme_adventure", "theme_nature"]
 themes: []
 durationDays: 3
 durationNights: 2

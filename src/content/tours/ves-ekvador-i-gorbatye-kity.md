@@ -29,9 +29,7 @@ destinations:
 - destination_ecuador_mitad_del_mundo
 - destination_ecuador_intinan_museum
 - destination_ecuador_casa_del_arbol
-themes:
-- theme_culture
-- theme_adventure
+themes: ["theme_culture", "theme_adventure", "theme_nature"]
 audiences: []
 route:
 - Кито
@@ -310,9 +308,7 @@ routeDestinations:
 - destination_ecuador_intinan_museum
 - destination_ecuador_casa_del_arbol
 format: Групповой
-primaryThemes:
-- theme_wildlife
-- theme_beach
+primaryThemes: ["theme_wildlife", "theme_beach"]
 gallery: []
 ---
 

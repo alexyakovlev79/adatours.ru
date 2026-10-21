@@ -211,13 +211,8 @@ routeDestinations:
 - destination_chile_cerro_castillo
 - destination_chile_marble_caves
 - destination_chile_general_carrera_lake
-primaryThemes:
-- theme_culture
-- theme_cruises
-themes:
-- theme_wildlife
-- theme_adventure
-- theme_gastronomy_wine
+primaryThemes: ["theme_culture", "theme_cruises"]
+themes: ["theme_wildlife", "theme_nature", "theme_adventure", "theme_gastronomy_wine"]
 format: Частный
 durationDays: 33
 durationNights: 32

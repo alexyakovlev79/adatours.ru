@@ -395,8 +395,8 @@ routeDestinations:
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_san_hose
 - destination_costa_rica_plajya_tamarindo
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: ["theme_beach"]
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_beach", "theme_wildlife"]
 ---
 
 

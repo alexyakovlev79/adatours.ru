@@ -12,9 +12,7 @@ hero:
   hover: "Чиаркота: птицы на мелководье высокогорного озера"
   alt: "Фламинго у голубой воды Лагуны Чиаркота среди сухих гор, Боливия"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

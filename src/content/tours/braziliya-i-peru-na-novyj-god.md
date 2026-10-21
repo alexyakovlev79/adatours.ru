@@ -434,11 +434,8 @@ routeDestinations:
 - destination_peru_pukara
 - destination_peru_andaguaililyas
 - destination_peru_pereval_la_raya
-primaryThemes:
-- theme_events
-- theme_culture
-themes:
-- theme_wildlife
+primaryThemes: ["theme_events", "theme_culture"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 

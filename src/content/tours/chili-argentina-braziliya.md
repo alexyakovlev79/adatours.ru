@@ -375,7 +375,7 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_brazil_rio
 - destination_chile_peschera_milodona
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

@@ -353,8 +353,8 @@ routeDestinations:
 - destination_ecuador_ostrov_plasa_sur
 - destination_ecuador_mys_karrion
 - destination_ecuador_guayakil
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 

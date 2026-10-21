@@ -12,8 +12,7 @@ hero:
   alt: "Узкий водопад среди слоистых скал и зелени каньона Верхель, Боливия"
   hover: "Каньон Верхель в Боливии: водопад у скального уступа"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

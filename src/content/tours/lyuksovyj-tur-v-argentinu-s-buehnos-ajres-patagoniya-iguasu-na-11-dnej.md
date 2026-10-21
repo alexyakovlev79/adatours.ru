@@ -562,7 +562,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej
 sourceSnapshot: page_texts_original/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej__374153d4.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

@@ -15,9 +15,7 @@ gallery:
 - src: /media/tours/panama-2024/itinerary-2-images-0-src-enhanced-20261007.webp
   hover: "Парк Чагрес: панорама воды и покрытых лесом холмов"
   alt: "Большой водоём среди лесистых холмов национального парка Чагрес, Панама"
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 searchAliases:
 - Chagres
 - nacionalnyj-park-chagres

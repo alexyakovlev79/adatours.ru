@@ -12,8 +12,7 @@ hero:
   hover: "Остров Ардли: пингвины у спокойной воды"
   alt: "Пингвины на низком галечном берегу острова Ардли перед тихой бухтой и округлыми холмами, Антарктида"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

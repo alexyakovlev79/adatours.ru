@@ -8,7 +8,7 @@ countryId: "country_antarctica"
 destinationType: "island"
 summary: "Пейзажи острова поражают первозданной красотой и необычным сочетанием природы и человеческого присутствия. Белоснежные ледники спускаются к океану, вдоль каменистых берегов плавают айсберги, а на прибрежных участках шумят колонии пингвинов. Здесь также можно встретить тюленей и разнообразных морских птиц, наблюдая за животными в их естественной среде обитания."
 searchAliases: ["ostrov-king-dzhordzh"]
-themes: ["theme_wildlife", "theme_cruises"]
+themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
 hero: {"src": "/media/destinations/destination_antarctica_ostrov_king_dzhordzh/original-01.png", "alt": "Пингвины у моря перед прибрежной станцией и снежными горами острова Кинг-Джордж, Антарктида", hover: "Кинг-Джордж: пингвины на скалах у ледяного побережья и станции"}
 gallery: []
 facts: []

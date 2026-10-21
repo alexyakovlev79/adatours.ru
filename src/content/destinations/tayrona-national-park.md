@@ -15,10 +15,7 @@ gallery:
 - src: /media/tours/zateryannyj-gorod-v-santa-marte/itinerary-day-06-generated-20261008-v1.webp
   alt: "Пляж Канавераль с пальмами и округлыми валунами, парк Тайрона, Колумбия"
   hover: "Канавераль в Колумбии: волны у светлого пляжа и крупных прибрежных камней"
-themes:
-- theme_wildlife
-- theme_beach
-- theme_adventure
+themes: ["theme_nature", "theme_beach", "theme_adventure"]
 searchAliases:
 - Природный парк Тайрона
 - nacionalnyj-park-tajrona

@@ -46,7 +46,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ostrov-severnyj-sejmur"
 sourceSnapshot: "https://drive.google.com/file/d/1tuuBr4nIWPhHHBS_lftDpldVpcDfxu0q/view?usp=drivesdk"
 updatedAt: 2026-10-02
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 ---
 
 ## Остров Северный Сеймур и пляжи Бачас

@@ -12,9 +12,7 @@ hero:
   hover: "Галапагосы: морские львы в бирюзовой воде"
   alt: "Морские львы плывут под поверхностью прозрачной воды у песчаного дна, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
-- theme_diving
+themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_ecuador_daphne_minor.md
 updatedAt: '2026-10-10'
 ---

@@ -48,7 +48,7 @@ notes:
 sourceUrl: https://brasiltours.ru/park-jekzoticheskih-ptic-v-iguasu
 sourceSnapshot: page_texts_newstep/Excursions/park-jekzoticheskih-ptic-v-iguasu__c7aa2f3e.md
 updatedAt: '2026-10-11'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 Кроме птиц, здесь можно увидеть местных насекомых.

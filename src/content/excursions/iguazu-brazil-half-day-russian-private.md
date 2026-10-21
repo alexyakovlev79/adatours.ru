@@ -8,8 +8,7 @@ country: country_brazil
 destination: destination_brazil_iguacu
 destinationName: Фоз-ду-Игуасу
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/gallery-0-src-enhanced-20261008.webp
   hover: 'Игуасу: панорама водопадов среди зеленых склонов'

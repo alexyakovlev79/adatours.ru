@@ -356,11 +356,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
-primaryThemes:
-- theme_events
-themes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_events"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 **Даты:** 30.12.2026 - 08.01.2027  

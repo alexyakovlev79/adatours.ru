@@ -316,7 +316,7 @@ routeDestinations:
 - destination_colombia_kartahena
 - destination_colombia_islas_rosario
 primaryThemes: ["theme_culture", "theme_adventure"]
-themes: ["theme_wildlife", "theme_beach", "theme_gastronomy_wine", "theme_coffee"]
+themes: ["theme_nature", "theme_beach", "theme_gastronomy_wine", "theme_coffee"]
 ---
 
 ## Колумбия за 15 дней

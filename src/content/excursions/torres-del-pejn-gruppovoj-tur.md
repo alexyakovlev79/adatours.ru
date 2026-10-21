@@ -24,7 +24,7 @@ notes: ["Возможны скидки для более чем одного ч�
 sourceUrl: "https://brasiltours.ru/torres-del-pejn-gruppovoj-tur"
 sourceSnapshot: "https://drive.google.com/file/d/1ATJfIemDa3Gnv4VWmNryrVRk75gsGpdM/view?usp=drivesdk"
 updatedAt: '2026-10-10'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Пейзажи Торрес-дель-Пайне

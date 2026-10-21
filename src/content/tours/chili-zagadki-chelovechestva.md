@@ -229,7 +229,7 @@ routeDestinations:
 - destination_chile_ahu_nau_nau
 - destination_chile_dolina_majpo
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife","theme_gastronomy_wine"]
+themes: ["theme_nature", "theme_gastronomy_wine"]
 ---
 
 **Год программы:** 2026

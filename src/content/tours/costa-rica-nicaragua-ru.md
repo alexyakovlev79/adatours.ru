@@ -256,8 +256,8 @@ routeDestinations:
 - destination_costa_rica_plajya_tamarindo
 - destination_costa_rica_pacific_coast
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife", "theme_culture"]
-themes: ["theme_beach", "theme_coffee"]
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_beach", "theme_coffee", "theme_wildlife"]
 ---
 
 

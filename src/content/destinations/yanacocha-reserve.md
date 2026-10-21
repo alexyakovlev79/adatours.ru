@@ -12,8 +12,7 @@ hero:
   hover: "Янакоча: узкая тропа в густом облачном лесу"
   alt: "Влажная лесная тропа Янакочи среди мхов и туманных горных склонов, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

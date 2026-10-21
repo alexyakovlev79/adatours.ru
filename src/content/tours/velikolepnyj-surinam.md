@@ -143,10 +143,8 @@ routeDestinations:
 - destination_suriname_ruchej_varappa
 - destination_suriname_plantaciya_bakki
 - destination_suriname_kabalebo
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes: []
+primaryThemes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_nature"]
 ---
 
 

@@ -9,9 +9,7 @@ destination: destination_costa_rica_el_tigre_waterfalls
 destinationName: Водопады Эль-Тигре
 relatedDestinations:
 - destination_costa_rica_monteverde_santa_elena
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

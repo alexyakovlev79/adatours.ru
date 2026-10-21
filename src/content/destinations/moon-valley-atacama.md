@@ -12,8 +12,7 @@ searchAliases:
 - Valle de la Luna
 - Valle de la Luna (Atacama)
 - lunnaya-dolina-atakama
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_chile_lunnaya_dolina_atakama/destination_chile_lunnaya_dolina_atakama-generated-20261008.webp
   hover: "Лунная долина: дюна и пустынные гряды Атакамы"

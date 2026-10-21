@@ -13,8 +13,7 @@ hero:
   alt: "Невысокие пороги Ферулласи между плоскими камнями и лесистыми берегами, Суринам"
   hover: "Ферулласи в Суринаме: речные каскады среди темных каменных уступов"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

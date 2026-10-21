@@ -21,9 +21,7 @@ included:
 - Поездка на катамаране по программе
 - Символический ритуал каллавая
 - Обед на озере
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 locale: ru
 status: approved
 language: []

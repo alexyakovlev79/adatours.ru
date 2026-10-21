@@ -11,10 +11,7 @@ relatedDestinations:
 - destination_brazil_clarinho_river
 - destination_brazil_corixo_araras
 - destination_brazil_pantanal
-themes:
-- theme_wildlife
-- theme_adventure
-- theme_fishing
+themes: ["theme_wildlife", "theme_adventure", "theme_fishing", "theme_nature"]
 language:
 - Английский
 hero:

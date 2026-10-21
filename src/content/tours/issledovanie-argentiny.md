@@ -346,7 +346,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/issledovanie-argentiny
 sourceSnapshot: https://drive.google.com/file/d/1M-N5pDW1zOoSxMsohNrV1sg2OReyt2rZ/view?usp=drivesdk
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature", "theme_wildlife"]
 themes: ["theme_culture"]
 ---
 

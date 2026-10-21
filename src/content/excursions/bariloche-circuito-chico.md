@@ -11,8 +11,7 @@ relatedDestinations:
 - destination_argentina_playa_bonita
 - destination_argentina_cerro_campanario
 - destination_argentina_nahuel_huapi_lake
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/cerro-campanario/hero-generated-20261009-followup-v1.webp
   alt: "Озера и лесистые холмы с вершины Серро-Кампанарио, Аргентина"

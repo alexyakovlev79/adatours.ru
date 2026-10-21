@@ -10,7 +10,7 @@ summary: "Бухта Тортуга-Негра на Санта-Крус приг
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_black_turtle_cove/hero-generated-20261010-batch-four-v1.webp", "alt": "Морская черепаха в прозрачной воде у мангров бухты Тортуга-Негра, Галапагосы, Эквадор", hover: "Тортуга-Негра: черепаха у ветвистых мангровых корней"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

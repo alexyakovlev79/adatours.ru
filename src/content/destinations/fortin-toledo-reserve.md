@@ -12,8 +12,7 @@ hero:
   alt: "Чакский пекари тагуа на сухой лесной подстилке в районе Фортин-Толедо"
   hover: "Фортин-Толедо: пекари среди сухих ветвей и листвы"
 gallery: []
-themes:
-- theme_wildlife
+themes: []
 searchAliases:
 - zapovednik-fortin-toledo
 sourceSnapshot: data/source-index/materials/destination_paraguay_zapovednik_fortin_toledo.md

@@ -28,7 +28,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/jel-val-e-de-anton"
 sourceSnapshot: "https://drive.google.com/file/d/1tyxn8FFdiaHDwBpahYEgkI4Wn6w8EKgr/view?usp=drivesdk"
 updatedAt: '2026-10-10'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Поселок внутри вулканического кратера

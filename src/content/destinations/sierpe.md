@@ -12,8 +12,7 @@ hero:
   hover: "Сьерпе: речная пристань перед мангровыми берегами"
   alt: "Пассажирская лодка и люди у деревянного причала Сьерпе, Коста-Рика"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Сиерпе
 - serpe

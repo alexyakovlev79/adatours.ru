@@ -37,7 +37,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/brazilskaya-storona-vodopadov-iguasu"
 sourceSnapshot: "https://github.com/alexyakovlev79/adatours.ru/blob/main/data/source-index/materials/excursion_source_brazilskaya_storona_vodopadov_iguasu.md"
 updatedAt: '2026-10-20'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Бразильская сторона Игуасу

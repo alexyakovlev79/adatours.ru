@@ -13,9 +13,7 @@ hero:
   hover: "Бухта Неко: пингвины у воды с льдинами и голубой ледяной стеной"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 searchAliases:
 - Neko Harbour
 - Neko Harbor

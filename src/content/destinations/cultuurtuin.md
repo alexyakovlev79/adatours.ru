@@ -12,7 +12,7 @@ hero:
   hover: "Култюртуин: лесная дорожка у деревьев с широкими корнями"
   alt: "Тенистая тропа среди крупных деревьев и густой зелени сада Култюртуин, Суринам"
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_suriname_cultuurtuin.md
 updatedAt: '2026-10-10'
 ---

@@ -12,7 +12,7 @@ hero:
   hover: "Пласа-Франсия: вид на южную стену Аконкагуа"
   alt: "Южная стена Аконкагуа со снегом и ледниками над каменистой долиной на подходе к Пласа-Франсия, Аргентина"
 gallery: []
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_plaza_francia.md
 updatedAt: '2026-10-10'
 ---

@@ -40,7 +40,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/ekskursiya-na-raduzhnuyu-goru-vinikunka"
 sourceSnapshot: "https://drive.google.com/file/d/1kCAVRwDHC9Wg4RhasR9arBMQ6HnQlTlP/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 ## Виникунка, захватывающая красота высокогорной флоры и величественное присутствие снежных гор.

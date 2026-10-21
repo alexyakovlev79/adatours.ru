@@ -8,7 +8,7 @@ countryId: "country_argentina"
 destinationType: "city"
 summary: "Пуэрто-Альманса — небольшое рыбацкое поселение на востоке Огненной Земли, расположенное на берегу пролива Бигль. Это одно из самых удалённых и атмосферных мест аргентинской Патагонии, где суровая природа практически полностью определяет ритм жизни."
 searchAliases: ["puerto-almansa"]
-themes: ["theme_gastronomy_wine", "theme_wildlife"]
+themes: ["theme_gastronomy_wine", "theme_nature"]
 hero: {"src":"/media/destinations/destination_argentina_puerto_almansa/original-01.jpg","alt":"Лодка с надписью «Альманса» у дороги и берега Пуэрто-Альмансы, Аргентина","hover":"Пуэрто-Альманса в Аргентине: лодка, дорожные указатели и морской берег"}
 gallery: []
 facts: []

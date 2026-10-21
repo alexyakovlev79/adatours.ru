@@ -253,7 +253,7 @@ routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_buzios
 primaryThemes: ["theme_events"]
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_wildlife", "theme_culture"]
 ---
 
 

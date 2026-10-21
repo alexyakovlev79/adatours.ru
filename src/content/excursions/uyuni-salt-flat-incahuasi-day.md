@@ -8,9 +8,7 @@ country: country_bolivia
 destination: destination_bolivia_uyuni
 relatedDestinations:
 - destination_bolivia_ostrov_inka_huasi
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-05-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Внедорожник и человек на зеркальной поверхности солончака Уюни под облаками"

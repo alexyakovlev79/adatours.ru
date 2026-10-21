@@ -12,8 +12,7 @@ hero:
   alt: "Поля и небольшие дома внутри зеленого кратера Пулулауа, Эквадор"
   hover: "Пулулауа в Эквадоре: сельские поля под лесистыми стенами кратера"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

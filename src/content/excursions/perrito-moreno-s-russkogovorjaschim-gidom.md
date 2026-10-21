@@ -32,7 +32,7 @@ sourceSnapshot: page_texts_newstep/Excursions/perrito-moreno-s-russkogovorjaschi
 updatedAt: 2026-09-30
 relatedDestinations:
   - destination_argentina_lednik_perito_moreno
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 Экскурсия проходит в районе Эль-Калафате. Сопровождение — русскоговорящий гид.

@@ -8,8 +8,7 @@ country: country_costa_rica
 destination: destination_costa_rica_tortuguero
 destinationName: Тортугуэро
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

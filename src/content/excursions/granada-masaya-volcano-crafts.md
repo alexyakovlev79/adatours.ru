@@ -10,9 +10,7 @@ destinationName: Гранада
 relatedDestinations:
 - destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_masaya
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1Ayc3e9tT7jO7QyA-tRuBv1AOEIiyIkZ4/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 ---
 
 ## Ометепе - вулканический остров Никарагуа

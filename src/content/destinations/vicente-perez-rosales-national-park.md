@@ -13,8 +13,7 @@ hero:
   hover: "Петроуэ: зеленые ветви над яркой водой реки"
   alt: "Бирюзовая вода Петроуэ под нависающей веткой среди лесистых берегов, Чили"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Национальный парк Висенте-Перес-Росалес
 sourceSnapshot: data/source-index/materials/destination_chile_vicente_perez_rosales_national_park.md

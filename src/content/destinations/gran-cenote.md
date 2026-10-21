@@ -12,8 +12,7 @@ hero:
   hover: "Гран-Сенот: свет на воде у естественного пещерного проема"
   alt: "Прозрачная бирюзовая вода Гран-Сенота под скальным сводом и корнями, Мексика"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - gran-senot
 sourceSnapshot: data/source-index/materials/destination_mexico_gran_senot.md

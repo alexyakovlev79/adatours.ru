@@ -13,9 +13,7 @@ relatedDestinations:
 - destination_venezuela_canaima_devils_canyon
 - destination_venezuela_ratoncito_island
 - destination_venezuela_laime_viewpoint
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 format: Лодочная и пешая экскурсия
 hero:
   src: /media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp

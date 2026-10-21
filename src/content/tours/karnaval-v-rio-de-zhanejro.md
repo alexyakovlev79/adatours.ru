@@ -158,7 +158,7 @@ routeCountries:
 routeDestinations:
 - destination_brazil_rio
 primaryThemes: ["theme_events"]
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture"]
 ---
 
 

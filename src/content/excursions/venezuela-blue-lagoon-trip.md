@@ -18,8 +18,7 @@ destinationName: Канайма и водопад Анхель
 relatedDestinations:
 - destination_venezuela_pozo_azul_canaima
 sourceSnapshot: https://docs.google.com/document/d/1l3NZVOJImL-ZtZAmlFjBDPrOpyMT2C56/edit
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/countries/venezuela/block-108-generated-20261011-dedup-v1.webp
   alt: Естественный водоем Посо-Асул среди скал и растительности Канаймы — иллюстрация

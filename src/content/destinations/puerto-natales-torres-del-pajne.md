@@ -35,7 +35,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-v-patagonii-chili-torres-del-pajne-i-puehrto-natales"
 sourceSnapshot: "https://drive.google.com/file/d/1w8znxirsdWhM77M5csL9oU5Sg1oUJenx/view?usp=drivesdk"
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 ---
 
 ## Гранитные башни и ледник Грей: что посмотреть в Торрес-дель-Пайне, Чили

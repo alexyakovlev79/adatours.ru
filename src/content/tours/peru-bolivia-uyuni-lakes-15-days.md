@@ -104,11 +104,8 @@ routeDestinations:
 - destination_bolivia_gejzery_sol_de_manyana
 - destination_bolivia_termalnye_istochniki_polkes
 - destination_bolivia_laguna_verde
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure"]
 audiences: []
 format: Сборный
 durationDays: 15

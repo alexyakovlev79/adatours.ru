@@ -12,9 +12,7 @@ hero:
   hover: "Виникунка в Перу: полосатые горные гребни под облаками"
   alt: "Разноцветные минеральные полосы на склонах Радужной горы Виникунка, Перу"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 searchAliases:
 - Vinicunca
 - Радужная гора Виникунка

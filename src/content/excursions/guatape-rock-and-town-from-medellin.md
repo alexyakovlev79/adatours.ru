@@ -10,9 +10,7 @@ destinationName: Медельин
 relatedDestinations:
 - destination_colombia_guatape
 - destination_colombia_el_penon_de_guatape
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 language:
 - английский
 priceFrom: null

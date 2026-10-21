@@ -13,8 +13,7 @@ hero:
   hover: "Мыс Каррион: скалистый берег и бирюзовая вода"
   alt: "Темные вулканические скалы мыса Каррион у прозрачной бирюзовой воды, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

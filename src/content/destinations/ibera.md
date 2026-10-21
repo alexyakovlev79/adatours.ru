@@ -8,7 +8,7 @@ countryId: "country_argentina"
 destinationType: "natural_area"
 summary: "Ибера — один из крупнейших и наиболее впечатляющих природных регионов Аргентины, расположенный на северо-востоке страны, в провинции Корриентес. Бескрайние болота, лагуны, небольшие острова и водные протоки образуют уникальную экосистему, которую часто называют одним из главных природных сокровищ Аргентины."
 searchAliases: ["Iberá", "Esteros del Iberá"]
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 hero: {"src": "/media/destinations/destination_argentina_ibera/original-01.jpg", "alt": "Капибары среди прибрежной зелени и плавающих растений водно-болотных угодий Иберы, Аргентина", hover: "Ибера: капибары у воды среди густой растительности"}
 gallery: [{"src": "/media/destinations/destination_argentina_ibera/original-02.jpg", "alt": "Олень с ветвистыми рогами среди травы и воды в Ибере, Аргентина", hover: "Ибера: олень в зелёных зарослях водно-болотных угодий"}]
 facts: []

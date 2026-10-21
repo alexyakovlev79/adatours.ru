@@ -12,7 +12,7 @@ hero:
   hover: "Кабанья-де-Адан: гамаковый навес у каменистой тропы на лесном склоне"
   alt: "Открытый деревянный навес с гамаками в лагере Кабанья-де-Адан среди тропической зелени, Колумбия"
 gallery: []
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_colombia_cabana_de_adan.md
 updatedAt: '2026-10-10'
 ---

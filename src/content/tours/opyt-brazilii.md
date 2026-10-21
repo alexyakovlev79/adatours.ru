@@ -281,11 +281,8 @@ routeDestinations:
 - destination_brazil_maringa_viskondi_de_maua
 - destination_brazil_vila_da_maromba
 - destination_brazil_nacionalnyj_park_serra_da_bokajna
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes:
-- theme_beach
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_beach"]
 ---
 
 

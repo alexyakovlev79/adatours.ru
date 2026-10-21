@@ -129,11 +129,8 @@ routeDestinations:
 - destination_panama_casco_viejo
 - destination_panama_ostrov_flamenko
 - destination_guatemala_peten
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_adventure", "theme_wildlife"]
 audiences: []
 format: Экскурсии
 durationDays: 26

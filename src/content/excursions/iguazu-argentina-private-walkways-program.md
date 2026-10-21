@@ -8,8 +8,7 @@ country: country_argentina
 destination: destination_argentina_puerto_iguasu
 relatedDestinations:
 - destination_argentina_garganta_del_diablo
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/excursions/jekskursija-na-argentinskie-vodopady/hero-src-enhanced-20261008.webp
   hover: "Игуасу: вид сверху на площадку между падающими потоками воды"

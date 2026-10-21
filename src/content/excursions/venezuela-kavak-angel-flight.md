@@ -20,5 +20,5 @@ sourceSnapshot: https://drive.google.com/file/d/1XH92Fy0Amt9ucbzA6OjA_kW6lI_bkN8
 hero:
   src: /media/countries/venezuela/block-095-generated-20261011-dedup-v1.webp
   alt: Узкий скальный каньон Кавак с водой и каскадом, Венесуэла
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---

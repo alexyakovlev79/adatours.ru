@@ -245,7 +245,7 @@ routeDestinations:
 - destination_chile_ozero_grej
 - destination_chile_peschera_milodona
 - destination_chile_rio_serrano
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: ["theme_culture"]
 ---
 

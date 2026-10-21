@@ -46,7 +46,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-ikitos-na-amazonke-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1XEOr-wA7ZDGR4XFATkEO4vDbfF0vgdR8/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 ## Река Амазонка и джунгли: что посмотреть в Икитосе, Перу

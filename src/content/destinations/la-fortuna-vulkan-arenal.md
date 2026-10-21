@@ -43,7 +43,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-s-vulkanom-arenal-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1QNrLpMXGzmlJQkFExWEbb7E_cXN3w1yc/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Вулкан Ареналь и водопад: что посмотреть в Ла-Фортуне, Коста-Рика

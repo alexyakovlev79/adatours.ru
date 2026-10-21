@@ -191,7 +191,7 @@ routeDestinations:
 - destination_chile_sokajre
 - destination_chile_gejzery_el_tatio
 - destination_chile_machuka
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: ["theme_culture"]
 ---
 

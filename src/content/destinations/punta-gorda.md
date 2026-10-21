@@ -22,7 +22,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-punta-gorda-v-belize-na-karibah
 sourceSnapshot: https://drive.google.com/file/d/1FP2TDHD3zRfV2_eq3ZbwEEHX9ukGUQVN/view?usp=drivesdk
 updatedAt: '2026-10-02'
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 Пунта-Горда -рыболовецкий порт, расположен на западном побережье Карибского моря в южной части Белиза. Пунта-Горда - это ворота к достопримечательностям, которыми изобилует округ Толедо.

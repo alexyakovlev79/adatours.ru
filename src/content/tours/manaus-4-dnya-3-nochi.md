@@ -135,8 +135,7 @@ routeCountries:
 - country_brazil
 routeDestinations:
 - destination_brazil_amazon
-primaryThemes:
-- theme_wildlife
+primaryThemes: ["theme_wildlife", "theme_nature"]
 themes: []
 ---
 

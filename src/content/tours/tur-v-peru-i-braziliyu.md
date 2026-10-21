@@ -332,8 +332,8 @@ routeDestinations:
 - destination_peru_andaguaililyas
 - destination_peru_pereval_la_raya
 - destination_peru_sikuani
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature"]
 ---
 
 

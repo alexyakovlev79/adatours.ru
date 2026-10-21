@@ -8,8 +8,7 @@ country: country_brazil
 destination: destination_brazil_iguacu
 relatedDestinations:
 - destination_brazil_parque_das_aves
-themes:
-- theme_wildlife
+themes: []
 format: Индивидуальная экскурсия
 hero:
   src: /media/excursions/park-jekzoticheskih-ptic-v-iguasu/hero-enhanced-20260930.webp

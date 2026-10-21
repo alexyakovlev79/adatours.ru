@@ -12,8 +12,7 @@ hero:
   hover: "Остров Исабела: бирюзовая вода у светлого пляжа и темных камней"
   alt: "Белый песок и черные вулканические камни на берегу Исабелы, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

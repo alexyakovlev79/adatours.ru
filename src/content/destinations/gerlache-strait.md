@@ -12,9 +12,7 @@ hero:
   hover: "Пролив Герлаше: отражения заснеженных склонов и льдин"
   alt: "Ледник и снежные горы над спокойной водой пролива Герлаше, Антарктида"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

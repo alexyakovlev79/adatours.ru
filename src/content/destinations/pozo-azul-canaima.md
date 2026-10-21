@@ -14,9 +14,7 @@ hero:
   alt: "Прозрачный бирюзовый водоем Посо-Асул среди красноватых скал Канаймы, Венесуэла"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_pozo_azul_canaima.md
 updatedAt: '2026-10-10'
 ---

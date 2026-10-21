@@ -12,9 +12,7 @@ hero:
   hover: "Якша: панорама озера и непрерывного зеленого леса"
   alt: "Озеро Якша за густыми кронами тропического леса Петена, Гватемала"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -18,7 +18,7 @@ destinationName: Водопад Чорро-дель-Мачо
 relatedDestinations:
 - destination_panama_el_valle
 sourceSnapshot: https://drive.google.com/file/d/11SlnwD-NRAp5QXuXQ1s07d7JY4U8cPtq/view?usp=drivesdk
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/excursions/panama-chorro-del-macho-canopy/hero-generated-20261018.webp
   alt: "Спуск по канату над лесным ущельем у водопада Чорро-дель-Мачо в Панаме"

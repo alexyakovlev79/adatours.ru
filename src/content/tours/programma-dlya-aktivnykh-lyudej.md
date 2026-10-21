@@ -339,8 +339,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/programma-dlya-aktivnykh-lyudej
 sourceSnapshot: page_texts_original/programma-dlya-aktivnykh-lyudej__0df3cdcb.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: ["theme_adventure","theme_gastronomy_wine"]
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_adventure", "theme_gastronomy_wine"]
 ---
 
 После Сантьяго программа продолжается на Рапа-Нуи: дни 9-11 посвящены Аху-Акиви, Оронго, Рано-Рараку, Аху-Тонгарики и пляжу Анакена. Путешествие соединяет большой город, винные долины, Патагонию и археологические ландшафты острова Пасхи.

@@ -10,8 +10,7 @@ summary: Вассуорас у реки Прегисас знакомит с п�
 searchAliases:
 - Вассуорас
 - vassuoras-lensojs-maranenses
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_vassuoras_lensojs_maranenses/destination_brazil_vassuoras_lensojs_maranenses-generated-20261008.webp
   hover: "Вассуорас: спокойная лагуна среди песка и тропической зелени"

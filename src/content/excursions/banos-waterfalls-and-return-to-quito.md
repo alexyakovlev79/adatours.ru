@@ -14,9 +14,7 @@ relatedDestinations:
 - destination_ecuador_kanon_pastasa
 - destination_ecuador_casa_del_arbol
 - destination_ecuador_kito_vulkan_kotopahi
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 duration: 11–12 часов с переездами
 hero:
   src: /media/destinations/agoyan-waterfall/hero-generated-20261009-v1.webp

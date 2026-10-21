@@ -23,9 +23,7 @@ gallery:
 - src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-07-generated-20261008-next20.webp
   alt: "Тропа через травянистую равнину к столовой горе Рорайма, Венесуэла"
   hover: "Рорайма: тропа среди травы и плоская вершина вдали"
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_rorajma.md
 updatedAt: '2026-10-08'
 ---

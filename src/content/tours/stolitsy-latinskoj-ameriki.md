@@ -270,9 +270,7 @@ routeDestinations:
 - destination_uruguay_koloniya_del_sakramento
 - destination_uruguay_montevideo
 - destination_uruguay_punta_del_este
-primaryThemes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

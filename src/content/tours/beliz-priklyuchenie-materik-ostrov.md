@@ -202,8 +202,8 @@ routeDestinations:
 - destination_belize_shunaantunich
 - destination_belize_jaguar_paw
 - destination_belize_morskoj_zapovednik_hol_chan
-primaryThemes: ["theme_adventure","theme_wildlife"]
-themes: ["theme_culture","theme_beach"]
+primaryThemes: ["theme_adventure", "theme_nature"]
+themes: ["theme_culture", "theme_beach", "theme_wildlife"]
 ---
 
 

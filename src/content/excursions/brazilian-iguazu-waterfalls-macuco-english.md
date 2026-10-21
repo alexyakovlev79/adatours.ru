@@ -8,9 +8,7 @@ country: country_brazil
 destination: destination_brazil_iguacu
 destinationName: Фоз-ду-Игуасу
 relatedDestinations: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 route:
 - Бразильская сторона водопадов Игуасу
 - Панорамные смотровые площадки

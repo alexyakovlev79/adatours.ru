@@ -12,9 +12,7 @@ hero:
   alt: "Тропа среди мшистых деревьев облачного леса Чикаке, Колумбия"
   hover: "Чикаке в Колумбии: лесная тропа на склоне и туман за деревьями"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 searchAliases:
 - Чикаке
 - Chicaque Natural Park

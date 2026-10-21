@@ -51,7 +51,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-tikal-i-flores-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1kcE1FLUhHkshYFuOZ6f4vy1H_0R1FvHD/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ## Флорес - столица острова Петен

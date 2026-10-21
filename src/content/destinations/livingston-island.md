@@ -13,9 +13,7 @@ hero:
   hover: "Остров Ливингстон: ледниковый берег у темной морской воды"
   caption: Иллюстрация GPT Images
   status: approved
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_wildlife", "theme_nature"]
 searchAliases:
 - Livingston Island
 sourceSnapshot: data/source-index/materials/destination_antarctica_livingston_island.md

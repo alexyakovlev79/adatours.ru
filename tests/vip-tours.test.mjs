@@ -7,9 +7,21 @@ import { SEO_CASES } from '../src/lib/seo-grammar.mjs';
 import { buildVipFilterIndex, vipFilterOptions } from '../src/lib/vip-filters.mjs';
 import { paginateCatalog } from '../src/lib/catalog-pagination.ts';
 import { buildTourFilterIndex, tourFilterOptions } from '../src/lib/tour-filters.mjs';
-import { buildInterestHub } from '../src/lib/interest-model.mjs';
+import { buildInterestHub, INTERESTS } from '../src/lib/interest-model.mjs';
 import destinationCatalog from '../src/data/catalog/destinations.json' with { type: 'json' };
-import { tourFilterTitle } from '../src/lib/vip-copy.mjs';
+import { tourFilterTitle, vipFilterTitle, vipFilterDescription } from '../src/lib/vip-copy.mjs';
+
+test('all fifteen interests have VIP copy and grammar; landscapes and animals stay separate', () => {
+  for (const theme of INTERESTS) {
+    assert.ok(vipFilterTitle(undefined, theme).length > 10);
+    assert.ok(vipFilterDescription(undefined, theme, 2).length > 50);
+    assert.equal(SEO_CASES.interests[theme.id].name, theme.name);
+  }
+  const nature = { id: 'theme_nature' }, wildlife = { id: 'theme_wildlife' };
+  assert.match(vipFilterTitle(undefined, nature), /любителей природы/);
+  assert.match(vipFilterTitle(undefined, wildlife), /наблюдением за животными/);
+  assert.notEqual(vipFilterDescription(undefined, nature, 2), vipFilterDescription(undefined, wildlife, 2));
+});
 
 test('coffee interest supports ordinary, VIP and country intersections with its own visitor copy', () => {
   const theme = { id: 'theme_coffee', slug: 'coffee-tours', name: 'Кофейные туры', locale: 'ru' };
@@ -39,7 +51,7 @@ const filterCountries = [
   { id: 'country_peru', slug: 'peru', name: 'Перу', locale: 'ru' },
 ];
 const filterThemes = [
-  { id: 'theme_wildlife', slug: 'wildlife', name: 'Природа и животные', locale: 'ru' },
+  { id: 'theme_wildlife', slug: 'wildlife', name: 'Животные и сафари', locale: 'ru' },
   { id: 'theme_culture', slug: 'culture-and-history', name: 'Культура и история', locale: 'ru' },
   { id: 'theme_spa', slug: 'spa', name: 'SPA и wellness', locale: 'ru' },
 ];

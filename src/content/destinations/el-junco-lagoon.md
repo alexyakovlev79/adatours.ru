@@ -10,7 +10,7 @@ summary: "Эль-Юнко — пресноводная лагуна в вулк�
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_el_junco_lagoon/hero-generated-20261010-editorial-v1.webp", "alt": "Пресноводная лагуна Эль-Юнко среди зелёных склонов и папоротников", "hover": "Эль-Юнко: округлая лагуна среди зелёных холмов"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

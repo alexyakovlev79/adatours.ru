@@ -219,7 +219,7 @@ routeDestinations:
 - destination_ecuador_vodopad_agoyan
 - destination_ecuador_vodopad_fata_nevesty_banos
 - destination_ecuador_vodopad_kotel_dyavola_banos
-primaryThemes: ["theme_adventure","theme_wildlife"]
+primaryThemes: ["theme_adventure", "theme_nature"]
 themes: ["theme_culture"]
 ---
 

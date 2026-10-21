@@ -12,8 +12,7 @@ hero:
   hover: "Эль-Анхель в Эквадоре: высокогорное озеро среди фрайлехонов"
   alt: "Фрайлехоны на горном склоне у озера в заповеднике Эль-Анхель, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

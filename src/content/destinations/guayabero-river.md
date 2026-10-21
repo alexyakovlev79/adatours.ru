@@ -12,8 +12,7 @@ hero:
   hover: "Гуаяберо: спокойная река у лесистого берега, вид из лодки"
   alt: "Нос лодки на реке Гуаяберо среди каменистых берегов и тропического леса, Колумбия"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Гуаяберо
 - Rio Guayabero

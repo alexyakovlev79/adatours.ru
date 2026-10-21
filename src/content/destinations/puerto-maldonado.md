@@ -12,8 +12,7 @@ hero:
   alt: "Деревянная моторная лодка у речного берега Пуэрто-Мальдонадо, Перу"
   hover: "Пуэрто-Мальдонадо в Перу: лодка под деревьями у широкой реки"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_peru_puerto_maldonado.md
 updatedAt: '2026-10-11'

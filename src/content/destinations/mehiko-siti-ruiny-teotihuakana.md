@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-mekhiko-siti-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1GvrAEiziITM3-7ETCYTA3yNxXI1-T81X/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_wildlife", "theme_nature"]
 ---
 
 ## Мехико — город контрастов!

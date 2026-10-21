@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Лагуна Мисканти в Атакаме лежит среди сухих высокогорных плато и вулканических склонов.
 searchAliases:
 - laguna-miskanti
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_chile_laguna_miskanti/hero-generated-20261008-resumed-v1.webp
   alt: "Лагуна Мисканти с изогнутым берегом на фоне гор, Чили"

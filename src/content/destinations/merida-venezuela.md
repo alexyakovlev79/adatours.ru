@@ -8,7 +8,7 @@ countryId: country_venezuela
 destinationType: city
 summary: Мерида — студенческий город в Венесуэле с высокогорной канатной дорогой, старинными кварталами и национальным парком Сьерра-Невада в окрестностях.
 searchAliases: []
-themes: [theme_culture, theme_wildlife]
+themes: ["theme_culture", "theme_nature"]
 hero:
   src: /media/destinations/merida/hero-enhanced-20261003.webp
   alt: "Желтые цветы перед горными склонами и полями в окрестностях Мериды, Венесуэла"

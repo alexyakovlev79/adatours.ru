@@ -31,7 +31,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-manuehl-antonio-v-kosta-rike"
 sourceSnapshot: "https://drive.google.com/file/d/1gI1u4yZtz3_WnnRag163KUF7yglf80tT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_beach","theme_wildlife"]
+themes: ["theme_beach", "theme_wildlife", "theme_nature"]
 ---
 
 ## Пляжи, джунгли и ленивцы: что посмотреть в Мануэль-Антонио, Коста-Рика

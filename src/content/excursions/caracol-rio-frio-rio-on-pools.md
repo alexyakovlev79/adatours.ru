@@ -11,9 +11,7 @@ relatedDestinations:
 - destination_belize_peschera_rio_frio
 - destination_belize_prirodnye_bassejny_rio_on
 - destination_belize_zapovednik_mauntin_pajn_ridzh
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

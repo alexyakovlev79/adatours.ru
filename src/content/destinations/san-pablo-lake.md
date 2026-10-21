@@ -10,7 +10,7 @@ summary: "Озеро Сан-Пабло возле Отавало лежит у �
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_san_pablo_lake/hero-generated-20261010-next-ten-v1.webp", "alt": "Озеро Сан-Пабло и вулкан Имбабура в Андах — иллюстрация"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

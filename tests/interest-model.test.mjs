@@ -38,7 +38,26 @@ test('country order rewards route presence, preserves global order and thematic 
   assert.deepEqual(hub.allCountries[0].tours.map((t) => t.data.id), ['concentrated', 'dilute']);
   assert.deepEqual(hub.allTours.map((t) => t.data.id), ['dilute', 'concentrated']);
 });
-test('closed dictionary retains the nine stable URLs and includes the restored coffee interest among fourteen themes', () => { assert.equal(INTERESTS.length, 14); assert.equal(INTERESTS.find((r) => r.id === 'theme_motorcycle').slug, 'motorcycle-tours'); });
+test('closed dictionary retains the nine stable URLs and includes the restored coffee interest among fifteen themes', () => { assert.equal(INTERESTS.length, 15); assert.equal(INTERESTS.find((r) => r.id === 'theme_motorcycle').slug, 'motorcycle-tours'); });
+test('nature and wildlife retain independent URLs, membership and own place/excursion tags', () => {
+  const nature = 'theme_nature', wildlife = 'theme_wildlife';
+  assert.equal(INTERESTS.find(row => row.id === nature).slug, 'nature');
+  assert.equal(INTERESTS.find(row => row.id === wildlife).slug, 'wildlife');
+  const content = { countries, themes, tours: [
+    tour('landscape', { primaryThemes: [nature], destinations: ['waterfall'], itinerary: [{ excursionRef: 'safari' }] }),
+    tour('animals', { primaryThemes: [wildlife] }),
+    tour('both', { primaryThemes: [nature], themes: [wildlife] }),
+    tour('archived-both', { primaryThemes: [nature, wildlife], status: 'archived' }),
+  ], destinations: [entity('waterfall', { countryId: 'one', themes: [nature] })],
+  excursions: [entity('safari', { country: 'one', themes: [wildlife] })] };
+  const landscape = buildInterestHub(nature, content), animals = buildInterestHub(wildlife, content);
+  assert.deepEqual(new Set(landscape.allTours.map(row => row.data.id)), new Set(['landscape', 'both']));
+  assert.deepEqual(new Set(animals.allTours.map(row => row.data.id)), new Set(['animals', 'both']));
+  assert.ok(landscape.allExperiences.some(row => row.id === 'waterfall'));
+  assert.ok(!landscape.allExperiences.some(row => row.id === 'safari'));
+  assert.ok(animals.allExperiences.some(row => row.id === 'safari'));
+  assert.ok(!animals.allExperiences.some(row => row.id === 'waterfall'));
+});
 test('primary relevance beats a stronger commercial score', () => {
   const primary = tour('primary', { durationDays: 30 }), secondary = tour('secondary', { primaryThemes: [C], themes: [A], countries: ['one', 'two'], durationDays: 13 });
   assert.equal(themeRelevance(primary, A), 2); assert.equal(themeRelevance(secondary, A), 1);

@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1HifBGSSBCHExrIa--_Us9Kr_9rqRNVHd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_beach","theme_wildlife","theme_fishing"]
+themes: ["theme_beach", "theme_wildlife", "theme_fishing", "theme_nature"]
 ---
 
 ## Острова Корн- в Карибском море

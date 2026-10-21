@@ -53,7 +53,7 @@ relatedDestinations:
   - destination_ecuador_ostrov_santa_krus_galapagosy
   - destination_ecuador_ostrov_florena_galapagosy
   - destination_ecuador_puerto_ajora
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_wildlife", "theme_culture", "theme_nature"]
 ---
 
 Флорена известна своей историей: здесь бывали китобои и пираты, а связанные с островом истории первых поселенцев стали частью его культурного наследия.

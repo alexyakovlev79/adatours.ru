@@ -43,7 +43,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-v-gorod-florianopolis
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-v-gorod-florianopolis__15d0c865.md
 updatedAt: 2026-09-25
-themes: ["theme_beach","theme_adventure","theme_wildlife","theme_culture"]
+themes: ["theme_beach", "theme_adventure", "theme_nature", "theme_culture"]
 ---
 
 Флорианополис расположен на острове Санта-Катарина и связан с материком. Океанское побережье, лагуны, дюны и городская часть позволяют чередовать пляжный отдых, прогулки и выезды по острову.

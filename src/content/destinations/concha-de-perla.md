@@ -12,8 +12,7 @@ hero:
   alt: "Прозрачная лагуна Конча-Перла среди мангров и вулканических камней"
   hover: "Конча-Перла: бирюзовая вода у мангров и деревянного настила"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

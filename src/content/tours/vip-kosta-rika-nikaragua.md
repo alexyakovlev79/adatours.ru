@@ -361,8 +361,8 @@ routeDestinations:
 - destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_laguna_apojo
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife", "theme_culture"]
-themes: ["theme_gastronomy_wine", "theme_coffee"]
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_gastronomy_wine", "theme_coffee", "theme_wildlife"]
 ---
 
 

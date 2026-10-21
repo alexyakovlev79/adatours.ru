@@ -20,8 +20,7 @@ relatedDestinations:
 - destination_chile_ozero_nordensheld
 - destination_chile_laguna_amarga
 - destination_chile_mirador_sarmiento
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-17-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Вход в пещеру Милодона с тропой и деревьями за широким каменным сводом, Чили"

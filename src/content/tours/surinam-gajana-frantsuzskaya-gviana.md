@@ -314,10 +314,8 @@ routeDestinations:
 - destination_suriname_jodensavanna
 - destination_suriname_redi_doti
 - destination_suriname_kabalebo
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes: []
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_wildlife"]
 ---
 
 **Год программы:** 2026  

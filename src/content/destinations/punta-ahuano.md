@@ -12,8 +12,7 @@ hero:
   alt: "Длинные моторные лодки у речного причала Пунта-Ауано, Эквадор"
   hover: "Пунта-Ауано в Эквадоре: деревянные лодки и дома у мутной речной воды"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

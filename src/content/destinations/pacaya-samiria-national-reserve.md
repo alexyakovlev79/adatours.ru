@@ -12,8 +12,7 @@ hero:
   alt: "Мужчина в узком каноэ на лесной реке Пакая-Самирии, Перу"
   hover: "Пакая-Самирия в Перу: каноэ на темной воде с отражениями тропического леса"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

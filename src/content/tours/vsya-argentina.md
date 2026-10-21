@@ -776,8 +776,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/vsya-argentina
 sourceSnapshot: https://docs.google.com/document/d/1-ppkM_nl815BdOJUUHwIsC868DfzI8mJ/edit
 updatedAt: '2026-10-14'
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: ["theme_adventure","theme_gastronomy_wine"]
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_adventure", "theme_gastronomy_wine"]
 priceNote: 13 707 USD на человека при двух участниках; отели с завтраками, перелеты отдельно.
 routeDestinations:
 - destination_argentina_buenos_aires

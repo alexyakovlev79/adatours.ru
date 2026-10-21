@@ -12,9 +12,7 @@ hero:
   alt: "Пороги реки Пакуаре между валунами и тропическим лесом, Коста-Рика"
   hover: "Река Пакуаре в Коста-Рике: бурная вода у камней и зеленые берега"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 searchAliases:
 - reka-pakuare
 sourceSnapshot: data/source-index/materials/destination_costa_rica_reka_pakuare.md

@@ -311,7 +311,7 @@ routeDestinations:
 - destination_brazil_fazenda_taquara
 - destination_brazil_fazenda_florenca
 primaryThemes: ["theme_coffee"]
-themes: ["theme_culture", "theme_wildlife", "theme_gastronomy_wine"]
+themes: ["theme_culture", "theme_nature", "theme_gastronomy_wine"]
 ---
 
 

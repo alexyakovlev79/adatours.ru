@@ -12,8 +12,7 @@ hero:
   alt: "Деревянная дорожка среди миртовых деревьев леса Арраянес, Аргентина"
   hover: "Лес Арраянес в Аргентине: дорожка среди рыжеватых стволов"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

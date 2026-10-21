@@ -12,9 +12,7 @@ hero:
   hover: "Хьерве-эль-Агуа: прозрачная вода на скальной террасе над долиной"
   alt: "Минеральный бассейн у белых окаменевших каскадов Хьерве-эль-Агуа, Оахака, Мексика"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_mexico_hierve_el_agua.md
 updatedAt: '2026-10-10'
 ---

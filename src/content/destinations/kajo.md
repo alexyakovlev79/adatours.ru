@@ -27,7 +27,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-okrug-kajo-i-ruiny-shunantunich-v-belize
 sourceSnapshot: https://drive.google.com/file/d/19XwJ1xcXSBjGpO9z8eoelM8Lm5bhOtrn/view?usp=drivesdk
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 ---
 
 На территории курорта Кайо находятся прекрасные природные достопримечательности – бабуиновый обезьяний заповедник, ягуаровый заповедник, джунгли, тропические леса, водопады, зоопарк, пещеры с подземными реками.

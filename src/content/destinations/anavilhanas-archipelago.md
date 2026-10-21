@@ -13,9 +13,7 @@ searchAliases:
 - Национальный парк Anavilhanas
 - Анавильянас
 - arhipelag-anavianas
-themes:
-- theme_wildlife
-- theme_cruises
+themes: ["theme_nature", "theme_cruises"]
 hero:
   src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/itinerary-day-02-generated-20261008-v1.webp
   hover: "Анавианас сверху: зеленые острова и широкие речные протоки"

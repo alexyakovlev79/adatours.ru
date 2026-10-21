@@ -13,9 +13,7 @@ hero:
   alt: "Желтая и оранжевая кабины канатной дороги над Сантьяго, Чили"
   hover: "Сантьяго в Чили: канатная дорога Сан-Кристобаля на фоне города и снежных Анд"
 gallery: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 searchAliases:
 - Холм Сан-Кристобаль в Сантьяго
 sourceSnapshot: data/source-index/materials/destination_chile_san_cristobal_hill.md

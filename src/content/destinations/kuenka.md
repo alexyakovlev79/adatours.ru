@@ -66,7 +66,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-gorod-kuehnka-v-ehkvadore
 sourceSnapshot: page_texts_original/tury-i-ehkskursii-v-gorod-kuehnka-v-ehkvadore__f255553b.md
 updatedAt: 2026-10-02
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 Куэнка была основана испанцами в 1557 году на месте инкского города. Исторический центр сохранил колониальную планировку, мощеные улицы, дома с балконами и внутренними двориками, белые храмы и музеи.

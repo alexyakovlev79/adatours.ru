@@ -252,8 +252,8 @@ routeDestinations:
 - destination_venezuela_los_lyanos
 - destination_venezuela_laguna_mukumbahi
 - destination_venezuela_merida
-primaryThemes: ["theme_wildlife"]
-themes: ["theme_culture","theme_beach"]
+primaryThemes: ["theme_nature", "theme_wildlife"]
+themes: ["theme_culture", "theme_beach"]
 ---
 
 

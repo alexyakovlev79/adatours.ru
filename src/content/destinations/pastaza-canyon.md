@@ -13,8 +13,7 @@ hero:
   hover: "Каньон Пастаса: бурный поток между зелеными горными склонами"
   alt: "Река Пастаса на дне глубокого лесистого каньона, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

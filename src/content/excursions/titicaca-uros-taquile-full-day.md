@@ -10,9 +10,7 @@ destinationName: Пуно и о.Титикака
 relatedDestinations:
 - destination_peru_ostrova_uros
 - destination_peru_ostrov_takile
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture", "theme_nature"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x384-20261011-v1-enhanced-20261011-pass2324-v1.webp
   alt: "Жители островов Урос рядом с тростниковыми лодками и домами на Титикаке, Перу"

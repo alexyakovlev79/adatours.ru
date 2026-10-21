@@ -8,9 +8,7 @@ country: country_guatemala
 destination: destination_guatemala_tikal_flores
 destinationName: Тикаль & Флорес
 relatedDestinations: []
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

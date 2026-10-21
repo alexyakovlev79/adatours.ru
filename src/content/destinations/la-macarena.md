@@ -12,9 +12,7 @@ hero:
   hover: "Ла-Макарена: низкая городская застройка среди тропической зелени"
   alt: "Цветные дома и цветущие растения на улице Ла-Макарены, Колумбия"
 gallery: []
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 searchAliases:
 - la-makarena
 sourceSnapshot: data/source-index/materials/destination_colombia_la_makarena.md

@@ -9,8 +9,7 @@ destination: destination_chile_san_pedro_de_atakama
 relatedDestinations:
 - destination_chile_lunnaya_dolina_atakama
 - destination_chile_nacionalnyj_zapovednik_los_flamenkos
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 format: Индивидуальная экскурсия
 hero:
   src: /media/destinations/destination_chile_lunnaya_dolina_atakama/destination_chile_lunnaya_dolina_atakama-generated-20261008.webp

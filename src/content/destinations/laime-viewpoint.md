@@ -13,9 +13,7 @@ hero:
   alt: Высокий водопад падает с отвесной скалы среди облаков, Канайма, Венесуэла
   hover: 'Канайма, Венесуэла: высокий водопад падает с отвесной скалы среди облаков'
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_laime_viewpoint.md
 updatedAt: '2026-10-10'
 ---

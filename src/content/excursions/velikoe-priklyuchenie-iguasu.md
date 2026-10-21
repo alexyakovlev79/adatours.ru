@@ -29,7 +29,7 @@ notes:
   - "Рекомендуются средство от насекомых, кроссовки и удобная одежда."
 sourceSnapshot: page_texts_original/neveroyatnaya-argentina__b36cf7e0.md
 updatedAt: '2026-10-11'
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 Участок на лодке Zodiac проходит около 6 км через пороги и каньон.

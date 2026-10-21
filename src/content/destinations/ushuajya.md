@@ -28,7 +28,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-argentinskuyu-patagoniyu-i-gorod-ushuajya
 sourceSnapshot: https://drive.google.com/file/d/1OZxuygq-_vtmHmWdje6OKd9j8GT4MAc1/view?usp=drivesdk
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife","theme_adventure"]
+themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
 ---
 
 Ушуайя - самый южный город на планете, расположенный на берегах пролива Бигл, на Архипелаге Огненная Земля. Магелланов пролив отделяет архипелаг от южноамериканского континента. В начале 16 века Магеллан, проплывая по проливу ( впоследствие названным его именем), увидел дым от огромного количества костров, разведенных индейцами, и назвал архипелаг Огненной Землей.

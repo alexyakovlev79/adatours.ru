@@ -9,9 +9,7 @@ destination: destination_panama_embera_chagres_community
 destinationName: Община эмбера на реке Чагрес
 relatedDestinations:
 - destination_panama_chagres_river
-themes:
-- theme_culture
-- theme_wildlife
+themes: ["theme_culture"]
 hero:
   src: /media/tours/panama-city-gamboa-6-days/word-6-20261010-enhanced-20261011-pass2324-v1.webp
   alt: "Музыканты эмбера с барабаном у ремесленных изделий под соломенной крышей, Панама"

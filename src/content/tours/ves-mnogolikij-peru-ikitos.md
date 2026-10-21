@@ -496,8 +496,8 @@ routeDestinations:
 - destination_peru_chivaj
 - destination_peru_arekipa
 - destination_peru_ikitos
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_wildlife"]
 ---
 
 

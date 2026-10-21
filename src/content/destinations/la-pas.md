@@ -33,7 +33,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-bolivii-gorod-la-pas
 sourceSnapshot: https://drive.google.com/file/d/1rpTPzm7fZhhMmhAKf3CiXH2ux8VRDEUr/view?usp=drivesdk
 updatedAt: '2026-10-02'
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 Ла Пас основан в 1548 г. под именем Ла-Сюидад-де-Нуэстра-Секора-де-Ла-Пас. Город находится на высоте 3660 м над уровнем моря. В самой низине долины находится исторический центр и площадь Сан-Франсиско, от которой в разные стороны расходятся и круто взбираются вверх вымощенные кирпичом и булыжником улочки, которые придают городу неповторимый колорит. Ла-Пас - фактическая столица Боливии и самая высокогорная "столица" в мире.

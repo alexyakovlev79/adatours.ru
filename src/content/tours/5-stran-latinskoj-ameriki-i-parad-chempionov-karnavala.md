@@ -149,12 +149,8 @@ routeDestinations:
 - destination_peru_lima_plaza_mayor
 - destination_peru_santo_domingo_lima
 - destination_peru_larco_museum
-primaryThemes:
-- theme_events
-- theme_culture
-themes:
-- theme_wildlife
-- theme_adventure
+primaryThemes: ["theme_events", "theme_culture"]
+themes: ["theme_nature", "theme_adventure"]
 format: Групповой
 audiences:
 - group

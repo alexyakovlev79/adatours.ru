@@ -12,8 +12,7 @@ hero:
   hover: "Ясуни: свет над речной водой и лесными берегами"
   alt: "Тихая река среди густого тропического леса Ясуни в утреннем тумане, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

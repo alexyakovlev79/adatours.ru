@@ -180,7 +180,7 @@ routeDestinations:
 - destination_costa_rica_tortuguero
 - destination_costa_rica_vodopady_la_pas
 - destination_costa_rica_doka_estate
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: ["theme_gastronomy_wine", "theme_coffee"]
 ---
 

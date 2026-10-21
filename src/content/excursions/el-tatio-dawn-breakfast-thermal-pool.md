@@ -8,9 +8,7 @@ country: country_chile
 destination: destination_chile_gejzery_el_tatio
 relatedDestinations:
 - destination_chile_san_pedro_de_atakama
-themes:
-- theme_wildlife
-- theme_spa
+themes: ["theme_nature", "theme_spa"]
 hero:
   src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-10-20261011-v1-enhanced-20261011-next50-v1.webp
   alt: "Высокий столб пара и посетители на гейзерном поле Эль-Татио, Чили"

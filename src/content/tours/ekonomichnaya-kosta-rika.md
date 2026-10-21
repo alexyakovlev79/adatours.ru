@@ -170,7 +170,7 @@ routeDestinations:
 - destination_costa_rica_la_fortuna_vulkan_arenal
 - destination_costa_rica_monteverde_santa_elena
 - destination_costa_rica_manuel_antonio
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature", "theme_wildlife"]
 themes: []
 ---
 

@@ -12,9 +12,7 @@ hero:
   hover: "Каньяпа в Боливии: высокогорная лагуна с фламинго"
   alt: "Фламинго на мелководье лагуны Каньяпа среди соляных берегов и вулканических гор, Боливия"
 gallery: []
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 facts: []
 featureBands: []
 relatedDestinations: []

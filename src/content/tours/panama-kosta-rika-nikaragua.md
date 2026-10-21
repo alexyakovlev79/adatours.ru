@@ -261,8 +261,8 @@ routeDestinations:
 - destination_nicaragua_masaya
 - destination_nicaragua_masaya_volcano_national_park
 - destination_nicaragua_ostrov_zopango
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: ["theme_beach"]
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_beach", "theme_wildlife"]
 ---
 
 

@@ -376,7 +376,7 @@ routeDestinations:
 - destination_belize_zoopark_beliza
 - destination_belize_morskoj_zapovednik_hol_chan
 primaryThemes: ["theme_wildlife"]
-themes: ["theme_culture","theme_beach"]
+themes: ["theme_culture", "theme_beach", "theme_nature"]
 ---
 
 

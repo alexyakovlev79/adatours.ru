@@ -33,7 +33,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-gornyj-kurort-bokete-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1VXp3p7fEX-mlAdSlumUN9pZ110WDsAGY/view?usp=drivesdk"
 updatedAt: '2026-10-11'
-themes: ["theme_gastronomy_wine", "theme_wildlife", "theme_coffee"]
+themes: ["theme_gastronomy_wine", "theme_nature", "theme_coffee"]
 ---
 
 ## Вулкан Бару и заповедник Ла-Амистад: что посмотреть в Бокете, Панама

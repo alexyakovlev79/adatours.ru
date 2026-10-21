@@ -331,11 +331,8 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_buzios
 - destination_brazil_praia_vermelha
-primaryThemes:
-- theme_beach
-- theme_wildlife
-themes:
-- theme_culture
+primaryThemes: ["theme_beach", "theme_nature"]
+themes: ["theme_culture"]
 ---
 
 

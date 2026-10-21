@@ -12,8 +12,7 @@ hero:
   alt: "Бассейн Охо-де-Агуа с прозрачной водой среди тропических деревьев"
   hover: "Охо-де-Агуа: прозрачный бассейн в тенистом лесу"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_ojo_de_agua.md
 updatedAt: '2026-10-10'

@@ -9,8 +9,7 @@ destination: destination_argentina_salinas_grandes
 destinationName: "Салинас-Грандес"
 relatedDestinations:
 - "destination_argentina_salta"
-themes:
-- "theme_wildlife"
+themes: ["theme_nature"]
 lead: "Полный день на Салинас-Грандес по дороге №9 из Сальты."
 route:
 - "Салинас-Грандес"

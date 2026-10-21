@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Зачарованный Аквариум — природный водоем района Бом-Жардима с прозрачной водой и наблюдением за рыбами.
 searchAliases:
 - zacharovannyj-akvarium
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_zacharovannyj_akvarium/aquario-generated-20261008.webp
   hover: "Зачарованный Аквариум: рыбы в прозрачной воде среди корней"

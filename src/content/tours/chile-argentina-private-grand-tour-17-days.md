@@ -132,13 +132,8 @@ routeDestinations:
 - destination_argentina_recoleta_cemetery
 - destination_argentina_basilica_del_pilar
 - destination_argentina_puerto_madero
-primaryThemes:
-- theme_culture
-- theme_wildlife
-themes:
-- theme_gastronomy_wine
-- theme_adventure
-- theme_beach
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_gastronomy_wine", "theme_adventure", "theme_beach"]
 format: Частный VIP
 durationDays: 17
 durationNights: 16

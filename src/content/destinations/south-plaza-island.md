@@ -13,8 +13,7 @@ hero:
   hover: "Пласа-Сур: голова и колючий гребень галапагосской игуаны"
   alt: "Оранжевая наземная игуана крупным планом на острове Пласа-Сур, Галапагосы, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

@@ -8,7 +8,7 @@ countryId: "country_argentina"
 destinationType: "city"
 summary: "Вилья-Ла-Ангостура — живописный горный городок на юго-западе Аргентины, расположенный на берегу озера Науэль-Уапи, среди величественных Анд и густых патагонских лесов. Его часто называют одним из самых красивых уголков аргентинской Патагонии: здесь альпийские пейзажи сочетаются с уютной атмосферой небольшого курорта, деревянной архитектурой и неторопливым ритмом жизни."
 searchAliases: ["vilya-la-angostura"]
-themes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_nature", "theme_adventure"]
 hero: {"src":"/media/destinations/destination_argentina_vilya_la_angostura/original-01.jpg","alt":"Каменистый берег озера у лесистых гор Вилья-Ла-Ангостуры, Аргентина","hover":"Вилья-Ла-Ангостура в Аргентине: синее озеро перед зелеными горными склонами"}
 gallery: [{"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-02.jpg", "alt": "Озеро и лесистые горы сквозь ветви деревьев у Вилья-Ла-Ангостуры, Аргентина", hover: "Вилья-Ла-Ангостура: озеро и горы за ветвями деревьев"}, {"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-03.jpg", "alt": "Лесистые полуострова и озёра у Вилья-Ла-Ангостуры, Аргентина", hover: "Вилья-Ла-Ангостура: панорама озёр среди лесов и гор"}, {"src": "/media/destinations/destination_argentina_vilya_la_angostura/original-04.jpg", "alt": "Бирюзовая река, мост и здания у Вилья-Ла-Ангостуры, Аргентина", hover: "Вилья-Ла-Ангостура: мост через реку среди лесистых берегов"}]
 facts: []

@@ -107,10 +107,8 @@ routeDestinations:
 - destination_brazil_ekologicheskij_park_zhanauari
 - destination_brazil_tumbira
 - destination_brazil_reka_aruau
-primaryThemes:
-- theme_cruises
-- theme_wildlife
-themes: []
+primaryThemes: ["theme_cruises", "theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 

@@ -11,8 +11,7 @@ hero:
   src: /media/countries/nicaragua/block-072-generated-20261011-dedup-v1.webp
   alt: Острова и водный простор озера Никарагуа
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - ozero-nikaragua
 sourceSnapshot: data/source-index/materials/destination_nicaragua_ozero_nikaragua.md

@@ -243,8 +243,7 @@ routeCountries:
 routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_arhipelag_anavianas
-primaryThemes:
-- theme_wildlife
+primaryThemes: ["theme_wildlife", "theme_nature"]
 themes: []
 ---
 

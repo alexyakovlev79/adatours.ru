@@ -18,7 +18,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-majya-palenke-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1-XzatJ1jxlIq809_sc3Gk-ROYftEIHQ5/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ## Паленке — крупнейшие руины древнего города Mайя!

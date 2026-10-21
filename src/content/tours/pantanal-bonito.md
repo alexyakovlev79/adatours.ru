@@ -171,10 +171,8 @@ routeDestinations:
 - destination_brazil_bonito
 - destination_brazil_golubaya_peschera_bonito
 - destination_brazil_reka_sukuri
-primaryThemes:
-- theme_wildlife
-- theme_adventure
-themes: []
+primaryThemes: ["theme_wildlife", "theme_adventure"]
+themes: ["theme_nature"]
 ---
 
 

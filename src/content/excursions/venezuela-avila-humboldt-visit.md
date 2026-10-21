@@ -16,7 +16,7 @@ destination: destination_venezuela_nacionalnyj_park_avila
 destinationName: Национальный парк Авила
 relatedDestinations: []
 sourceSnapshot: https://drive.google.com/file/d/1XH92Fy0Amt9ucbzA6OjA_kW6lI_bkN8I/view?usp=drivesdk
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 hero:
   src: /media/excursions/mount-avila-humboldt-hotel-tour/hero-generated-20261018.webp
   alt: "Канатная дорога на Авилу, Каракас и башня отеля Humboldt на горном гребне"

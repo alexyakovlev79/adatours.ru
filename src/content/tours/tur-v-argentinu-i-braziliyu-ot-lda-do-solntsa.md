@@ -229,9 +229,7 @@ routeDestinations:
 - destination_argentina_puerto_iguasu
 - destination_brazil_iguacu
 - destination_brazil_rio
-primaryThemes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
 ---
 

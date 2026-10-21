@@ -8,9 +8,7 @@ country: country_peru
 destination: destination_peru_vinikunka
 destinationName: Виникунка
 relatedDestinations: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 hero:
   src: /media/excursions/ekskursiya-na-raduzhnuyu-goru-vinikunka/hero-src-enhanced-20261007.webp
   hover: "Виникунка в Перу: полосатые горные гребни под облаками"

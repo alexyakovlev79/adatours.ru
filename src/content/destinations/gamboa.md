@@ -13,8 +13,7 @@ hero:
   alt: "Речной причал у лесистых берегов Гамбоа, Панама"
   hover: "Гамбоа в Панаме: тихая река, деревянный причал и тропическая зелень"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - Gamboa
 sourceSnapshot: data/source-index/materials/destination_panama_gamboa.md

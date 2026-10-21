@@ -363,9 +363,7 @@ routeDestinations:
 - destination_argentina_tigre
 - destination_argentina_san_isidro_buenos_ajres
 - destination_chile_santyago_de_chili
-primaryThemes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

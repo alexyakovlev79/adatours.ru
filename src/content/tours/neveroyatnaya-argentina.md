@@ -306,8 +306,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/neveroyatnaya-argentina
 sourceSnapshot: page_texts_original/neveroyatnaya-argentina__b36cf7e0.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_wildlife","theme_culture"]
-themes: []
+primaryThemes: ["theme_nature", "theme_culture"]
+themes: ["theme_wildlife"]
 ---
 
 В программу входят внутренние перелеты Aerolineas Argentinas, трансферы, основные экскурсии и входные билеты в национальные парки. В Ушуайе маршрут сочетает национальный парк, канал Бигль и полный день на внедорожниках. В Эль-Калафате основная экскурсия посвящена Перито-Морено, а свободный день можно дополнить одной из двух ледниковых навигаций. В Игуасу предусмотрены обе стороны водопадов и дополнительная лодочная программа.

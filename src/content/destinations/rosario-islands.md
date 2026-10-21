@@ -14,10 +14,7 @@ hero:
 gallery:
 - {"src":"/media/tours/kolumbiya-2024/itinerary-day-11-generated-20261008-v1.webp","alt":"Пальмы, песчаный берег и деревянный причал над бирюзовой водой, Острова Росарио, Колумбия","hover":"Острова Росарио, Колумбия: пальмы, песчаный берег и деревянный причал над бирюзовой водой"}
 - {"src":"/media/tours/kolumbiya-2024/itinerary-day-12-generated-20261008-v1.webp","alt":"Нос лодки над прозрачной водой между зелёными островками, Острова Росарио, Колумбия","hover":"Острова Росарио, Колумбия: нос лодки над прозрачной водой между зелёными островками"}
-themes:
-- theme_beach
-- theme_diving
-- theme_wildlife
+themes: ["theme_beach", "theme_diving", "theme_nature"]
 searchAliases:
 - Islas del Rosario
 - Islas Rosario

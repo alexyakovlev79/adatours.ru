@@ -338,7 +338,7 @@ routeDestinations:
 - destination_argentina_gorod_umauaka
 - destination_argentina_salinas_grandes
 - destination_argentina_ukiya
-primaryThemes: ["theme_wildlife","theme_culture"]
+primaryThemes: ["theme_nature", "theme_culture"]
 themes: ["theme_gastronomy_wine"]
 ---
 

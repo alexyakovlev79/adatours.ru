@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Вулкан Тунупа дополняет маршрут по солончаку Уюни горными видами северной части региона.
 searchAliases:
 - vulkan-tunupa
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_bolivia_vulkan_tunupa/hero-generated-20261008.webp
   hover: "Уюни: ровный солончак перед разноцветными склонами Тунупы"

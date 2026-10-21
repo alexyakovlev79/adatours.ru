@@ -14,8 +14,7 @@ hero:
   hover: "Торрес-дель-Пайне в Чили: скальные башни и озеро за каменистым берегом"
   status: approved
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 searchAliases:
 - Горный массив Прат
 sourceSnapshot: data/source-index/materials/destination_chile_cerro_prat.md

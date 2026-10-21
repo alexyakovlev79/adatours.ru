@@ -9,8 +9,7 @@ destinationType: region
 summary: Бом-Жардим — район прозрачных рек, озер и природных бассейнов с маршрутами для снорклинга.
 searchAliases:
 - bom-zhardim
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp
   hover: "Бом-Жардим: лесной водоем с видимым каменистым дном"

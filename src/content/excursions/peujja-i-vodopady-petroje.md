@@ -28,7 +28,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/peujja-i-vodopady-petroje"
 sourceSnapshot: "https://drive.google.com/file/d/1slH__xwXXODhxHXErIS4fZlxp3Zgsms5/view?usp=drivesdk"
 updatedAt: '2026-10-10'
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Вода и леса Озерного края

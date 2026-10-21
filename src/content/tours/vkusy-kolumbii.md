@@ -229,6 +229,6 @@ routeDestinations:
 - destination_colombia_kartahena
 - destination_colombia_hacienda_coloma
 primaryThemes: ["theme_culture"]
-themes: ["theme_gastronomy_wine", "theme_wildlife", "theme_coffee"]
+themes: ["theme_gastronomy_wine", "theme_nature", "theme_coffee"]
 ---
 

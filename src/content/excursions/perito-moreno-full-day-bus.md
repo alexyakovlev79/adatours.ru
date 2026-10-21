@@ -10,8 +10,7 @@ destinationName: Эль-Калафате
 relatedDestinations:
 - destination_argentina_lednik_perito_moreno
 - destination_argentina_nacionalnyj_park_los_glasyares
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 lead: Поездка из Эль-Калафате к Перито-Морено с гидом, прогулкой по оборудованным дорожкам и смотровым площадкам
   у ледника.
 hero:

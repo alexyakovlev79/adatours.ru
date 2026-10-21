@@ -12,8 +12,7 @@ hero:
   hover: "Кихос: надувная лодка на белой воде между темными камнями"
   alt: "Рафт на бурных порогах реки Кихос среди лесистых склонов, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

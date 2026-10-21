@@ -33,10 +33,7 @@ featureBands: []
 sourceUrl: https://brasiltours.ru/tury-v-fernandu-di-noronya-arhipelag-v-brazilii
 sourceSnapshot: page_texts_original/tury-v-fernandu-di-noronya-arhipelag-v-brazilii__981f2035.md
 updatedAt: '2026-10-11'
-themes:
-- theme_diving
-- theme_beach
-- theme_wildlife
+themes: ["theme_diving", "theme_beach", "theme_nature"]
 ---
 
 Архипелаг имеет вулканическое происхождение. Его природные территории и морская экосистема входят в объект Всемирного наследия UNESCO с 2001 года. В воде встречаются черепахи, дельфины и множество рыб.

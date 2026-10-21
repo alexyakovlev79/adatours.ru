@@ -36,12 +36,8 @@ routeDestinations:
 - destination_argentina_kanal_bigl
 - destination_antarctica_drake_passage
 - destination_antarctica_antarkticheskij_poluostrov
-primaryThemes:
-- theme_cruises
-- theme_wildlife
-themes:
-- theme_adventure
-- theme_culture
+primaryThemes: ["theme_cruises", "theme_wildlife"]
+themes: ["theme_adventure", "theme_culture", "theme_nature"]
 audiences:
 - group
 format: Экспедиция

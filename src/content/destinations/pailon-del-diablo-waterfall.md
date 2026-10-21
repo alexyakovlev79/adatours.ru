@@ -13,8 +13,7 @@ hero:
   hover: "Баньос: мощный поток Котла Дьявола у лестниц и смотровых площадок"
   alt: "Водопад Котел Дьявола среди камней и зеленых склонов у Баньоса, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

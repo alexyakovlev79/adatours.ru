@@ -258,7 +258,7 @@ routeCountries:
 routeDestinations:
 - destination_venezuela_karakas
 - destination_venezuela_kanajma_i_vodopad_anhel
-primaryThemes: ["theme_wildlife"]
+primaryThemes: ["theme_nature"]
 themes: ["theme_adventure"]
 ---
 

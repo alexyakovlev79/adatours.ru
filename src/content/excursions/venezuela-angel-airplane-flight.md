@@ -20,5 +20,5 @@ hero:
   src: "/media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp"
   hover: "Канайма: высокий водопад Анхель среди облаков"
   alt: "Высокий водопад падает с отвесной скалы среди облаков, Канайма, Венесуэла"
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---

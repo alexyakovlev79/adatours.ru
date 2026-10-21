@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-montesuma-v-kosta-rike-poluostrov-nikoya"
 sourceSnapshot: "https://drive.google.com/file/d/1l__E6-3qQ1OCnBJ1NSfGYb3o_t-T67Tm/view?usp=drivesdk"
 updatedAt: '2026-10-11'
-themes: ["theme_beach","theme_wildlife"]
+themes: ["theme_beach", "theme_nature"]
 ---
 
 ## Монтесума -живописная деревушка в Коста Рике

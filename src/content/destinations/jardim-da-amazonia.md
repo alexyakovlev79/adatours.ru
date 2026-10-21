@@ -12,8 +12,7 @@ searchAliases:
 - Jardim D’Amazônia
 - Jardim da Amazônia Lodge
 - Jardim da Amazônia
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/brazil-three-ecosystems-8-days/word-1-20261010-enhanced-20261011-doc-v1.webp
   alt: "Каменистая тропа среди густой зелени и стволов тропического леса"

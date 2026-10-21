@@ -33,7 +33,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-deltu-reki-orinoko-v-venesuehle
 sourceSnapshot: https://drive.google.com/file/d/1mO7cXkfd7JjHS_bnttPrK8nnSWSVBTJC/view?usp=drivesdk
 updatedAt: '2026-10-02'
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_wildlife", "theme_culture", "theme_nature"]
 ---
 
 Богатая своими достопримечательностями Венесуэла представляет Вам дельту реки Ориноко! Её воды спускаются с предгорий Анд бурным потоком, образуя одно из прекраснейших мест во всей стране. Здесь можно увидеть тропический лес, мангровые заросли. Разнообразие цвета воды, ее состава и экосистемы делят на протоки на "белые" и "черные". Вокруг "чёрных рек" почти нет москитов и в их водах не водятся кайманы. "Белые" же реки наоборот кишат живностью и насекомыми.

@@ -46,7 +46,7 @@ featureBands:
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-bonito-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-bonito-v-brazilii__fe15cf30.md
 updatedAt: 2026-09-24
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_wildlife", "theme_nature"]
 ---
 
 

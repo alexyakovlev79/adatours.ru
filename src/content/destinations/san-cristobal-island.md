@@ -10,7 +10,7 @@ summary: "Сан-Кристобаль на Галапагосах соединя
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_san_cristobal_island/hero-generated-20261010-editorial-v1.webp", "alt": "Две скальные части Леон-Дормидо в океане у острова Сан-Кристобаль", "hover": "Сан-Кристобаль: скалы Леон-Дормидо среди синей воды"}
 gallery: []
-themes: ["theme_wildlife", "theme_diving"]
+themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

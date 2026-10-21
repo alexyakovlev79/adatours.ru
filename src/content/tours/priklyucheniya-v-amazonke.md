@@ -94,10 +94,8 @@ routeCountries:
 routeDestinations:
 - destination_brazil_amazon
 - destination_brazil_derevnya_akazhatuba
-primaryThemes:
-- theme_adventure
-themes:
-- theme_wildlife
+primaryThemes: ["theme_adventure"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 **Отправление:** 08:30  

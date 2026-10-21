@@ -263,8 +263,8 @@ routeDestinations:
 - destination_guatemala_rio_dulse
 - destination_guatemala_topokste
 - destination_guatemala_yaksha
-primaryThemes: ["theme_culture","theme_beach"]
-themes: ["theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature", "theme_wildlife"]
 ---
 
 

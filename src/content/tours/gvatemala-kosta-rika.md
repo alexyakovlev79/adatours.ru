@@ -343,8 +343,8 @@ routeDestinations:
 routeCountries:
 - country_guatemala
 - country_costa_rica
-primaryThemes: ["theme_culture","theme_wildlife"]
-themes: ["theme_beach"]
+primaryThemes: ["theme_culture", "theme_nature"]
+themes: ["theme_beach", "theme_wildlife"]
 ---
 
 

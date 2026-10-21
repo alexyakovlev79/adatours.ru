@@ -12,9 +12,7 @@ hero:
   hover: "Фагнано: озеро между лесом и горами Огненной Земли"
   alt: "Синее озеро Фагнано у каменистого лесистого берега перед горными склонами, Огненная Земля, Аргентина"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

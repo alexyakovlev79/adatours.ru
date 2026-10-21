@@ -11,8 +11,7 @@ searchAliases:
 - Рио-Сукури
 - Rio Sucuri
 - reka-sukuri
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_reka_sukuri/destination_brazil_reka_sukuri-generated-20261008.webp
   hover: "Река Сукури: подводный мир в прозрачной воде"

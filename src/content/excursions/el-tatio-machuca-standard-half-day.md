@@ -11,9 +11,7 @@ relatedDestinations:
 - destination_chile_san_pedro_de_atakama
 - destination_chile_machuka
 - destination_chile_machuca_san_santiago_church
-themes:
-- theme_wildlife
-- theme_culture
+themes: ["theme_nature", "theme_culture"]
 format: Групповая экскурсия
 duration: Полдня
 hero:

@@ -12,9 +12,7 @@ hero:
   hover: "Хол-Чан: акула у кораллов в прозрачной бирюзовой воде"
   alt: "Акула-нянька над песчаным дном у кораллового рифа Хол-Чан, Белиз"
 gallery: []
-themes:
-- theme_wildlife
-- theme_diving
+themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

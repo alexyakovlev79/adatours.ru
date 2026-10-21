@@ -12,9 +12,7 @@ hero:
   alt: "Цветные деревянные дома и лодки у берега острова Колон в Бокас-дель-Торо, Панама"
   hover: "Остров Колон в Панаме: пальмы над домами на сваях и тихая прибрежная вода"
 gallery: []
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 searchAliases:
 - ostrov-kolon
 sourceSnapshot: data/source-index/materials/destination_panama_ostrov_kolon.md

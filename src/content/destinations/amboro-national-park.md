@@ -10,9 +10,7 @@ summary: Парк Амборо входит в природную часть м�
 searchAliases:
 - Амборо
 - park-amboro
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/tours/krasivaya-boliviya/hero-enhanced-20261006.webp
   hover: "Пустынный пейзаж между охристыми скалами"

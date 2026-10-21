@@ -12,8 +12,7 @@ hero:
   hover: "Бельявиста в Эквадоре: лесная тропа среди мха и тумана"
   alt: "Узкая тропа среди покрытых мхом деревьев и туманного леса Бельявиста, Эквадор"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

@@ -12,8 +12,7 @@ hero:
   alt: "Узкая тропа среди папоротников и мшистых деревьев в заповеднике Кетцаля, Гватемала"
   hover: "Заповедник Кетцаля в Гватемале: влажный облачный лес с густой зеленью"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 searchAliases:
 - zapovednik-ketcalya
 sourceSnapshot: data/source-index/materials/destination_guatemala_zapovednik_ketcalya.md

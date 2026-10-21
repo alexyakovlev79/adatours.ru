@@ -269,12 +269,8 @@ routeDestinations:
 - destination_brazil_kanon_itaimbezinyu
 - destination_brazil_kanon_fortaleza
 - destination_brazil_peschera_abismo_anhumas
-primaryThemes:
-- theme_wildlife
-- theme_adventure
-themes:
-- theme_gastronomy_wine
-- theme_culture
+primaryThemes: ["theme_nature", "theme_adventure"]
+themes: ["theme_gastronomy_wine", "theme_culture", "theme_wildlife"]
 ---
 
 

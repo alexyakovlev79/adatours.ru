@@ -176,10 +176,8 @@ routeDestinations:
 - destination_brazil_zacharovannyj_akvarium
 - destination_brazil_pokone
 - destination_brazil_portu_zhofri
-primaryThemes:
-- theme_wildlife
-- theme_culture
-themes: []
+primaryThemes: ["theme_wildlife", "theme_culture"]
+themes: ["theme_nature"]
 ---
 
 

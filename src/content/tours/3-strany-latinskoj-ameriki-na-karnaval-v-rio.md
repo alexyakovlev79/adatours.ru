@@ -311,7 +311,7 @@ routeDestinations:
 - destination_argentina_buenos_aires
 - destination_chile_santyago_de_chili
 - destination_brazil_praia_vermelha
-primaryThemes: ["theme_culture","theme_wildlife"]
+primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
 

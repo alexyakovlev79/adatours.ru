@@ -338,7 +338,7 @@ routeDestinations:
 - destination_guatemala_yaksha
 - destination_belize_karakol
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 

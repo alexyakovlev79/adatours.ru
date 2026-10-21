@@ -214,7 +214,7 @@ routeDestinations:
 - destination_chile_ahu_hanga_pukure
 - destination_chile_tahai
 primaryThemes: ["theme_culture"]
-themes: ["theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 

@@ -9,9 +9,7 @@ destination: destination_brazil_trindadi_parati
 destinationName: Триндади (Парати)
 relatedDestinations:
 - destination_brazil_paraty
-themes:
-- theme_beach
-- theme_wildlife
+themes: ["theme_beach", "theme_nature"]
 route:
 - Парати
 - Триндади

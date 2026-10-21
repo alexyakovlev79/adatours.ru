@@ -27,7 +27,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-liberiya-v-kosta-rike-guanakaste"
 sourceSnapshot: "https://drive.google.com/file/d/1xNU7XbKu8PQYb6jer-RDM_BaPA1MeCZZ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife","theme_beach"]
+themes: ["theme_culture", "theme_nature", "theme_beach"]
 ---
 
 ## Белый город и сухой тропический рай: что посмотреть в Либерии, Коста-Рика

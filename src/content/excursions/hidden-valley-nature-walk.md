@@ -8,8 +8,7 @@ country: country_belize
 destination: destination_belize_hidden_valley
 destinationName: Хидден-Вэлли
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 format: Экскурсионная программа
 hero:
   src: /media/destinations/hidden-valley/hidden-valley-generated-20261010-p022-v1.webp

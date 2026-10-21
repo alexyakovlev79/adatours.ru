@@ -23,7 +23,7 @@ included: []
 notIncluded: []
 notes: []
 updatedAt: '2026-10-11'
-themes: ["theme_adventure","theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 ---
 
 Основной участок тропы занимает около 30 минут.

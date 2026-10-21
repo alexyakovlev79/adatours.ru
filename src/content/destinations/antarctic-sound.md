@@ -12,9 +12,7 @@ hero:
   hover: "Антарктический пролив: высокая ровная ледяная стена над морем"
   alt: "Плоский столовый айсберг перед снежными берегами Антарктического пролива"
 gallery: []
-themes:
-- theme_cruises
-- theme_wildlife
+themes: ["theme_cruises", "theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

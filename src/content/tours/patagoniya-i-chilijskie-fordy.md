@@ -209,7 +209,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/patagoniya-i-chilijskie-fordy
 sourceSnapshot: page_texts_original/patagoniya-i-chilijskie-fordy__5b05c890.md
 updatedAt: 2026-10-02
-primaryThemes: ["theme_cruises","theme_wildlife"]
+primaryThemes: ["theme_cruises","theme_nature"]
 themes: []
 ---
 

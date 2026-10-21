@@ -42,11 +42,8 @@ routeDestinations:
 - destination_brazil_transpantaneira
 - destination_brazil_pantanal
 - destination_brazil_araras_eco_lodge
-primaryThemes:
-- theme_wildlife
-- theme_adventure
-themes:
-- theme_fishing
+primaryThemes: ["theme_nature", "theme_adventure"]
+themes: ["theme_fishing", "theme_wildlife"]
 audiences: []
 format: "Эко-тур"
 durationDays: 8

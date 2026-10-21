@@ -301,11 +301,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_argentina_buenos_aires
-primaryThemes:
-- theme_events
-themes:
-- theme_culture
-- theme_wildlife
+primaryThemes: ["theme_events"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 **Даты программы:** 05.02 - 14.02

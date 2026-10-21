@@ -19,11 +19,8 @@ destinations: &id001
 - destination_antarctica_anvers_island
 - destination_antarctica_antarkticheskij_poluostrov
 routeDestinations: *id001
-primaryThemes:
-- theme_cruises
-- theme_wildlife
-themes:
-- theme_adventure
+primaryThemes: ["theme_cruises", "theme_wildlife"]
+themes: ["theme_adventure", "theme_nature"]
 audiences:
 - group
 format: Экспедиция

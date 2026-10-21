@@ -10,7 +10,7 @@ summary: "Рабида запоминается красным вулканич�
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_rabida_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские львы и пеликан на красном пляже Рабиды, Галапагосы, Эквадор", "hover": "Рабида: морские львы у прибоя на красноватом песке"}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

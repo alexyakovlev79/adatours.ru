@@ -352,11 +352,8 @@ routeDestinations:
 - destination_brazil_iguacu
 - destination_argentina_puerto_iguasu
 - destination_brazil_praia_vermelha
-primaryThemes:
-- theme_events
-themes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_events"]
+themes: ["theme_nature", "theme_culture"]
 ---
 
 

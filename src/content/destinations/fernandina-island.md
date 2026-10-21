@@ -10,7 +10,7 @@ summary: "Фернандина на западе Галапагосов знак
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_fernandina_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские игуаны на лавовом берегу Фернандины — иллюстрация", "hover": "Фернандина на западе Галапагосов знакомит с лавовыми берегами и животными, чья жизнь связана с холодными океанскими водами."}
 gallery: []
-themes: ["theme_wildlife"]
+themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 featuredTours: []
 featuredExcursions: []

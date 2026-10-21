@@ -13,8 +13,7 @@ hero:
   alt: Тукан с ярким оранжевым клювом на ограждении, Бразилия
   hover: 'Бразилия: тукан на деревянных перилах в парке птиц'
 gallery: []
-themes:
-- theme_wildlife
+themes: []
 relatedDestinations:
 - destination_brazil_iguacu
 featuredTours: []

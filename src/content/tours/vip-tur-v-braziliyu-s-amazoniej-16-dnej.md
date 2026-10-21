@@ -469,12 +469,8 @@ routeDestinations:
 - destination_brazil_arhipelag_anavianas
 - destination_brazil_santu_antoniu_amazoniya
 - destination_brazil_tiririka_amazoniya
-primaryThemes:
-- theme_events
-- theme_wildlife
-themes:
-- theme_beach
-- theme_culture
+primaryThemes: ["theme_events", "theme_nature"]
+themes: ["theme_beach", "theme_culture", "theme_wildlife"]
 ---
 
 

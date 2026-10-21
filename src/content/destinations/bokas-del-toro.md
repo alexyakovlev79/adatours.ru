@@ -38,7 +38,7 @@ featuredExcursions: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-arhipelag-bokas-del-toro-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1zJkidIhT86FM3pF_tZ99nnb58N72m-S9/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_beach","theme_wildlife"]
+themes: ["theme_beach", "theme_wildlife", "theme_nature"]
 ---
 
 ## Коралловые рифы и дельфины: что посмотреть на Бокас-дель-Торо, Панама

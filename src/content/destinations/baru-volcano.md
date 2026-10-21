@@ -12,9 +12,7 @@ hero:
   hover: "Бару: горные склоны и облака ниже вершины"
   alt: "Каменистая вершина вулкана Бару над зелеными долинами и облаками, Панама"
 gallery: []
-themes:
-- theme_adventure
-- theme_wildlife
+themes: ["theme_adventure", "theme_nature"]
 searchAliases:
 - Вулкан Baru
 - vulkan-baru

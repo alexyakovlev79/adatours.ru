@@ -47,7 +47,7 @@ facts:
 sourceUrl: https://brasiltours.ru/kolumbiya-c-kofe
 sourceSnapshot: page_texts_original/kolumbiya-c-kofe__a5554234.md
 updatedAt: '2026-10-11'
-themes: ["theme_gastronomy_wine", "theme_wildlife", "theme_culture", "theme_coffee"]
+themes: ["theme_gastronomy_wine", "theme_nature", "theme_culture", "theme_coffee"]
 ---
 
 На кофейных фермах можно увидеть основные этапы производства: посадку, ручной сбор, сушку, обработку, помол и обжарку зерна. Экскурсионные программы завершаются дегустацией кофе и знакомством с работой бариста.

@@ -8,8 +8,7 @@ country: country_chile
 destination: destination_chile_puerto_natales_torres_del_pajne
 destinationName: Пуэрто Наталес & Торрес дель Пайне
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/tours/south-america-luxury-33-days/pdf-x670-20261011-v1-enhanced-20261011-pass2324-v1.webp
   hover: "Торрес-дель-Пайне: острые вершины и скалистые берега озера"

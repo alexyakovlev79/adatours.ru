@@ -8,8 +8,7 @@ country: country_costa_rica
 destination: destination_costa_rica_monteverde_santa_elena
 destinationName: Монтеверде & Санта Елена
 relatedDestinations: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 format: Экскурсионная программа с англоговорящим гидом
 language:
 - английский

@@ -41,12 +41,8 @@ routeDestinations:
 - destination_antarctica_anvers_island
 - destination_antarctica_antarkticheskij_poluostrov
 - destination_antarctica_yuzhnye_shetlandskie_ostrova
-primaryThemes:
-- theme_cruises
-- theme_adventure
-themes:
-- theme_wildlife
-- theme_culture
+primaryThemes: ["theme_cruises", "theme_adventure"]
+themes: ["theme_wildlife", "theme_culture", "theme_nature"]
 audiences:
 - group
 format: Экспедиция

@@ -59,12 +59,8 @@ routeDestinations:
 - destination_chile_santiago_central_post_office
 - destination_chile_santiago_city_hall
 - destination_chile_santa_lucia_hill
-primaryThemes:
-- theme_events
-- theme_culture
-themes:
-- theme_wildlife
-- theme_gastronomy_wine
+primaryThemes: ["theme_events", "theme_culture"]
+themes: ["theme_nature", "theme_gastronomy_wine"]
 audiences: []
 format: Групповой
 durationDays: 11

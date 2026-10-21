@@ -305,8 +305,8 @@ routeDestinations:
 - destination_ecuador_ozero_panyakocha
 - destination_ecuador_biologicheskij_zapovednik_limonkocha
 - destination_ecuador_ozero_limpiopungo
-primaryThemes: ["theme_wildlife","theme_cruises"]
-themes: ["theme_culture","theme_spa"]
+primaryThemes: ["theme_nature", "theme_cruises"]
+themes: ["theme_culture", "theme_spa", "theme_wildlife"]
 ---
 
 

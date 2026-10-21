@@ -178,7 +178,7 @@ faq: []
 sourceUrl: https://brasiltours.ru/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii
 sourceSnapshot: page_texts_original/zagadochnye-dyuny-s-ozerami-vodopadami-i-plyazhami-brazilii__0881a3e3.md
 updatedAt: 2026-09-29
-primaryThemes: ["theme_wildlife","theme_beach"]
+primaryThemes: ["theme_nature","theme_beach"]
 themes: ["theme_culture"]
 ---
 

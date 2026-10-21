@@ -10,9 +10,7 @@ destinationName: Сеноты Санта-Барбара
 relatedDestinations:
 - destination_mexico_merida
 lead: Поездка к сенотам Санта-Барбары из Мериды.
-themes:
-- theme_wildlife
-- theme_adventure
+themes: ["theme_nature", "theme_adventure"]
 hero:
   src: /media/excursions/santa-barbara-cenotes-tour/hero-src-enhanced-20261010.webp
   hover: "Мерида: собор за зеленой городской площадью"

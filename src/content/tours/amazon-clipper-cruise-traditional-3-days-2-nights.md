@@ -110,8 +110,8 @@ faq: []
 sourceUrl: https://brasiltours.ru/amazon-clipper-cruise-traditional-3-days-2-nights
 sourceSnapshot: amazon-clipper-cruise-traditional-3-days-2-nights__07c7b05f.md
 updatedAt: 2026-09-30
-primaryThemes: ["theme_cruises","theme_wildlife"]
-themes: []
+primaryThemes: ["theme_cruises", "theme_wildlife"]
+themes: ["theme_nature"]
 ---
 
 ## Три дня на Амазонке

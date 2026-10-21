@@ -9,8 +9,7 @@ destinationType: natural_area
 summary: Рио-Фрио, пещера на маршруте через заповедник Маунтин-Пайн-Ридж, дополняет знакомство с природой материкового Белиза.
 searchAliases:
 - peschera-rio-frio
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 hero:
   src: /media/destinations/destination_belize_peschera_rio_frio/hero-generated-20261008.webp
   alt: "Река и каменные валуны у большого входа в пещеру Рио-Фрио, Белиз"

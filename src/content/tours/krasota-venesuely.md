@@ -398,8 +398,8 @@ routeDestinations:
 - destination_venezuela_la_asulita
 - destination_venezuela_barinas
 - destination_venezuela_los_lyanos
-primaryThemes: ["theme_adventure","theme_wildlife"]
-themes: ["theme_beach"]
+primaryThemes: ["theme_adventure", "theme_nature"]
+themes: ["theme_beach", "theme_wildlife"]
 ---
 
 

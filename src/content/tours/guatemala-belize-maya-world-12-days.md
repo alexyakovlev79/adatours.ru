@@ -41,11 +41,8 @@ routeDestinations:
 - destination_belize_hidden_valley
 - destination_belize_beliz_siti
 - destination_belize_ambergris_kaje
-primaryThemes:
-- theme_culture
-- theme_beach
-themes:
-- theme_wildlife
+primaryThemes: ["theme_culture", "theme_beach"]
+themes: ["theme_nature"]
 audiences:
 - couples
 - groups

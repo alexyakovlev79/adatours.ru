@@ -11,8 +11,7 @@ searchAliases:
 - Porto Jofre
 - Порту-Жофре
 - portu-zhofri
-themes:
-- theme_wildlife
+themes: ["theme_wildlife", "theme_nature"]
 hero:
   src: /media/destinations/destination_brazil_portu_zhofri/porto-jofre-generated-20261008.webp
   hover: "Порту-Жофри в Пантанале: ягуар у кромки воды"

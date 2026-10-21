@@ -13,8 +13,7 @@ hero:
   hover: "Река Суринам: лодка у зеленого берега в вечернем свете"
   alt: "Деревянная лодка на широкой реке Суринам у тропического леса"
 gallery: []
-themes:
-- theme_wildlife
+themes: ["theme_nature"]
 facts: []
 featureBands: []
 relatedDestinations: []

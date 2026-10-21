@@ -18,7 +18,7 @@ facts: []
 sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-matansas-na-ostrove-kuba"
 sourceSnapshot: "https://drive.google.com/file/d/10T-tS-MgLPuIJITIsptBpN0cHj_V7GKI/view?usp=drivesdk"
 updatedAt: "2026-10-02"
-themes: ["theme_culture","theme_wildlife"]
+themes: ["theme_culture", "theme_nature"]
 ---
 
 ## Матантас - "Кубинская Венеция"

@@ -33,7 +33,7 @@ notes:
 sourceUrl: "https://brasiltours.ru/half-day-corcovado-tijuca-private-tour"
 sourceSnapshot: data/source-index/materials/excursion_source_half_day_corcovado_tijuca_private_tour.md
 updatedAt: '2026-10-20'
-themes: ["theme_wildlife","theme_culture"]
+themes: ["theme_nature", "theme_culture"]
 format: Индивидуальная экскурсия
 ---
 

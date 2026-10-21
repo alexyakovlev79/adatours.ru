@@ -422,7 +422,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/05a90b2e937ed6af6b2632bb.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory №601: URL https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-truhilo-v-peru/ekskursii, pageType=excursion_listing, snapshotHttp=200, snapshotFile=snapshots/05a90b2e937ed6af6b2632bb.html; старый title пуст, HTML не открыт.",
+        "Для destination_peru_truhilo в действующем компактном каталоге excursions нет ни основного, ни дополнительного экскурсионного соответствия; непустой каталог /peru/trujillo/ не подтвержден."
+      ],
+      "note": "Старый /ekskursii относится к Трухильо, но сопоставимый непустой список самостоятельных экскурсий Ada Tours отсутствует. Решение: страница места либо 410; не создавать 301 на пустой каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:56:07.689Z",
+      "checkedBy": "reverse-worker-mvi83j7a-l8szybbr92h",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-morskoj-kurort-tulum-v-meksike",
@@ -545,5 +555,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:55:36.119Z"
+  "updatedAt": "2026-10-21T14:56:07.689Z"
 }

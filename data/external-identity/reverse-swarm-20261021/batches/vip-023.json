@@ -102,7 +102,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/2051a05c6ca4806ddb645ef2.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory (2026-10-20): HTTP 200, title “Авторизация”, finalUrl https://vipdeluxetravel.ru/?route=account/login; route=account/account.",
+        "Current Ada Tours public RU routes are travel content/catalogues; no identical public account or legacy promotion route is confirmed."
+      ],
+      "note": "Маршрут account/account: интерфейс авторизации, фактический finalUrl ведет на account/login. У Ada Tours нет эквивалентной индексируемой страницы тура или места.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:00:18.403Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=account%2Fforgotten",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:58:38.994Z"
+  "updatedAt": "2026-10-21T15:00:18.403Z"
 }

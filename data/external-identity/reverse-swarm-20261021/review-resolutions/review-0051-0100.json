@@ -3669,7 +3669,43 @@
         "batchBlobSha": "94340646bfed4f8fa3890d7d0b78bef146a4f9f3",
         "reviewOrder": 96
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "disposition": "gone_410",
+        "recommendedHttpStatus": 410,
+        "relation": null,
+        "ruUrl": "",
+        "targetId": null,
+        "comparedId": null,
+        "targetContentPath": null,
+        "targetBlobSha": null,
+        "confidence": 0.94,
+        "accepted": true,
+        "basis": "retire",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.743Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/panama-city-2022 → HTTP 200, title «Панама-Сити 2022», 76220 байт, SHA-256 959a05fc7210e1aa5b7c8a921f844699d3b186f79b697fdbe5a176304dd18ad2. Полный HTML прочитан; сохранены заголовки дней.",
+          "Полный HTML: ровно 2 дня /1 ночь, встреча в аэропорту, одна ночевка и 6-часовая экскурсия; срок до 31.12.2022. 6-дневный Панама-Сити–Гамбоа иной продукт, поэтому для старого пакета выбран 410."
+        ],
+        "note": "Принято редакционное решение: закрыть старое предложение кодом 410 при отдельном внедрении. Подтвержденной активной пары нет; 410 сейчас не включен.",
+        "liveSource": {
+          "key": "source-96",
+          "url": "https://vipdeluxetravel.ru/panama-city-2022",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/panama-city-2022",
+          "sha256": "959a05fc7210e1aa5b7c8a921f844699d3b186f79b697fdbe5a176304dd18ad2",
+          "bytes": 76220,
+          "title": "Панама-Сити 2022",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/panama-city-2022\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Панама-Сити",
+            "День 2: Обзорная Экскурсия по Панама-Сити"
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 97,
@@ -3864,9 +3900,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:51.493Z",
+  "updatedAt": "2026-10-21T16:35:53.399Z",
   "progress": {
-    "resolved": 45,
+    "resolved": 46,
     "total": 50
   }
 }

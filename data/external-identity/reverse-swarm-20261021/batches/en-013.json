@@ -350,7 +350,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #649: title «Olinda, Brazil: Attractions and Travel Guide to the UNESCO City», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical https://adatours.com/recife; H1 «Colonial Architecture and Carnival: What to See in Olinda, Brazil». В начале указан город Olinda у северной окраины Recife в Бразилии, но последующие абзацы описывают Monbulk, Mount Dandenong, Dandenong Ranges National Park и Olinda Falls.",
+        "Официальный Parks Victoria подтверждает другой географический контекст: https://www.parks.vic.gov.au/projects/greater-melbourne/olinda-precinct-project — Olinda в Dandenong Ranges, 50 км восточнее Melbourne; официальный ботанический сад также указывает Olinda–Monbulk Road. Следовательно, EN-текст смешивает бразильскую и австралийскую Олинду.",
+        "RU HTTP 200/self canonical https://adatours.ru/brazil/place/olinda/, H1 «Олинда». main 50542db1f: destination_brazil_olinda, текущий MD/source-index — город Пернамбуку рядом с Ресифи, барочные церкви, колониальный центр и карнавал; destination_brazil_recife — отдельный объект."
+      ],
+      "note": "Вероятный кандидат — бразильская Олинда, но текущая EN-страница /recife содержит существенное смешение с одноименным местом у Мельбурна. Нужна редакционная правка/решение по первичному референту; sameAs пока не подтвержден, RU-цель не назначена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:13:50.943Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/recife-en-brazil/excursions",
@@ -393,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:13:01.862Z"
+  "updatedAt": "2026-10-21T16:13:50.943Z"
 }

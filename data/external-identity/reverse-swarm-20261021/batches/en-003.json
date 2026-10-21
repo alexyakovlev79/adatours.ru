@@ -189,7 +189,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/bolivia/santa-cruz/",
+      "evidence": [
+        "21.10.2026 исходный каталог GET 200/self-canonical, HTML SHA-256 deeffd370c93c8b614a50a4942fd6fd73d902939657bc25a52dfbcddcf8ca4b0; проверен публичный productsjson, использующий datasrc страницы, SHA-256 84f6f5f9d08386ba9d4ecfd1ae299c09fbcebe4f327c77579a6fb5297b8d532a. EN category_id=173/typeid=2: ровно 2 продукта — Samaipata Tour uid=4319 и Amboro Park Tour uid=4321. Полные продукты проверены: Самаипата/El Fuerte (120 км, традиционный обед); облачный лес Амборо и водопады Cuevas; обе экскурсии из Санта-Круса на полный день, с английским гидом/трансфером.",
+        "Проверены active MD, source-index и живой RU-каталог в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2: RU каталог destination_bolivia_santa_krus содержит ровно excursion_source_samaipata_tur и excursion_source_amboro_park_tur, оба approved/8 часов. Прочитаны полные MD: совпадают маршрут/достопримечательности, английский гид и трансфер; обед включён только в Самаипате. Совпали цены $621/$733 и таблицы per-pax.",
+        "Точный RU canonical отвечает HTTP 200, self-canonical, robots index,follow, H1 указывает тот же тип/место и количество. Frozen: snapshotHttp=200, pageType=category, crawlReport=adatours-com-crawl-001.json, snapshotFile отсутствует; использованы действующие EN-страницы."
+      ],
+      "note": "Подтверждён sameAs именно каталога: одинаковые тип продукта, географический фильтр и полный состав действующих предложений. Программы составляющих проверены по содержанию, не только по slug/названию. Разметка сайта не изменена.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:39:42.933Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-santa-cruz/packages",
@@ -458,5 +469,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:39.721Z"
+  "updatedAt": "2026-10-21T15:39:42.933Z"
 }

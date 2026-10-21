@@ -62,7 +62,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: HTTP 200, canonical совпадает с sourceUrl; title относится к Osa Peninsula, но H1 «Tours to countries of Latin America», основной текст о Латинской Америке; конкретных карточек туров Оса в полученном HTML нет.",
+        "main 50542db1: approved destination_costa_rica_poluostrov_osa, src/content/destinations/poluostrov-osa.md, canonical /costa-rica/place/osa-peninsula/; описаны Корковадо, Дрейк-Бей и тихоокеанское побережье. Это Place, а не доказанно тот же EN-каталог."
+      ],
+      "note": "Не подтверждены фильтр и состав каталога туров полуострова Оса; географическую страницу и generic EN-шаблон не связываю как sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:13:24.167Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/peru-en/excursions",
@@ -335,5 +345,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:13:22.238Z"
+  "updatedAt": "2026-10-21T16:13:24.167Z"
 }

@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi848jl-sda0v3if9j",
-    "token": "reverse-lease-mvi848jl-lhnx4wb1ze",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:44:51.751Z",
-    "expiresAt": "2026-10-21T16:14:51.751Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/urugvaj-ru",
@@ -602,8 +596,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/77fe814074a8d5541a14d92a.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP inventory #640: /ekskursii Французской Гвианы, pageType excursion_listing, прежний HTTP 200, title/H1 пусты.",
+        "RU source-index excursions.json: 0 активных продуктов геостраны country_french_guiana; Astro создает страновой каталог только из непустого набора."
+      ],
+      "note": "В актуальных RU-данных нет самостоятельных активных экскурсий с геостраной Французская Гвиана. Каталог /french-guiana/excursion/ не создается; нужен выбор дальнейшего URL или 410.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:59:26.995Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:59:18.429Z"
+  "updatedAt": "2026-10-21T14:59:26.995Z",
+  "completedAt": "2026-10-21T14:59:26.995Z",
+  "lastOwner": "reverse-worker-mvi848jl-sda0v3if9j"
 }

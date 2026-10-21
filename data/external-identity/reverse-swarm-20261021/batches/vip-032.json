@@ -262,7 +262,17 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/111301a4e42b0d6bb9783e5b.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/brazil/rio-de-janeiro/santa-teresa-corcovado-jeep-tour/",
+      "evidence": [
+        "Прочитан HTML snapshots/111301a4e42b0d6bb9783e5b.html, SHA-256 49137f8142d0679f89b895c10b7926c74b2a175b441060f17a3b659c1143779c, обход 2026-10-20T12:43:51+00:00: H1 «Джип тур на Санта-Терезу и Корковадо», крошки Бразилия → Рио-де-Жанейро; исходник однозначно задает джип-экскурсию по двум названным объектам, tab-description пуста.",
+        "Активная экскурсия того же названия с форматом группового джип-тура: Санта-Тереза, затем Корковадо и статуя Христа-Искупителя; MD updatedAt 20.10.2026, duration 4 часа. Проверены main src/content/excursions/dzhip-tur-na-santa-terezu-i-korkovado.md, stable ID excursion_source_dzhip_tur_na_santa_terezu_i_korkovado, canonical source-index /brazil/rio-de-janeiro/santa-teresa-corcovado-jeep-tour/; живая RU-страница 21.10.2026: HTTP 200, canonical совпадает."
+      ],
+      "note": "Подготовлен подходящий адрес для будущего 301 по тому же экскурсионному намерению и маршруту. Исторические продолжительность, цена и обслуживание пустым исходным описанием не подтверждены. 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:23:57.574Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/zaliv-guanabara-morskaya-progulka?page=1",
@@ -435,5 +445,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:23:55.447Z"
+  "updatedAt": "2026-10-21T15:23:57.574Z"
 }

@@ -590,7 +590,17 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/3732951848477b1e078d8b21.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Полностью прочитан snapshots/3732951848477b1e078d8b21.html, SHA-256 55e5f7109f871366977d0d1eb256239914751d776a2dc04bd16888dad8076715 проверен по frozen inventory. product_id=4182, код wdr: 3 дня/2 ночи Fairmont Copacabana Deluxe Ocean View, 4243 USD за двоих; церемония на Mirante Dona Marta, макияж, фото/городская экскурсия и декор; романтический ужин не включён.",
+        "Сверены tour_source_rio_de_janeiro_wedding, approved, /brazil/tour/rio-de-janeiro-praia-vermelha-wedding/: цена 4243 совпадает, но место — пляж Прайя-Вермелья, itinerary/included пусты, durationDays не задан. Другой tropical-wedding-ceremony — однодневный пакет 4063 USD."
+      ],
+      "note": "Общий город и цена 4243 не подтверждают идентичность: исходник Dona Marta + Fairmont 3 дня, RU указывает Прайя-Вермелья и не содержит нужной программы. Нужен редакционный выбор/восстановление описания; 301 на похожую свадебную страницу не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:29:15.253Z",
+      "checkedBy": "reverse-worker-mvi9bqoq-z10jgc5usm7",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package?page=9&product_id=4063",
@@ -603,5 +613,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:29:11.850Z"
+  "updatedAt": "2026-10-21T15:29:15.253Z"
 }

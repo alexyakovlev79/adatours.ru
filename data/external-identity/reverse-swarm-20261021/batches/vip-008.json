@@ -42,7 +42,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/421b7f474f3a6f89bd3aaa79.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/uruguay/tour/",
+      "evidence": [
+        "VIP inventory #612: pageType=tour_listing, source path /urugvaj-ru/packages; frozen HTTP 200, но title/H1 пусты и ассортимент старого каталога не подтвержден.",
+        "RU src/pages/[...path].astro создает /uruguay/tour/ при непустой подборке tourHasMainCountry; каталог tours.json содержит 8 активных маршрутов с основной страной country_uruguay, включая tour_source_luchshee_v_urugvae_pyatizvjozdochnyj_marshrut."
+      ],
+      "note": "География и тип каталога совпадают. Состав прежних packages неизвестен; равенство перечней не утверждается, 301 пока не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:48:51.612Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/urugvaj-ru/ekskursii",
@@ -325,5 +335,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:48:43.886Z"
+  "updatedAt": "2026-10-21T14:48:51.612Z"
 }

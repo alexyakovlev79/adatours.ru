@@ -43,7 +43,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory: category; title «Tours and diving in the Caribbean on the island of Corn in Nicaragua», H1 «Tours to countries of Latin America», snapshotHttp 200; snapshotFile не указан.",
+        "Текущий EN HTML HTTP 200: breadcrumb Nicaragua → Corn Islands → Packages; JS datasrc содержит page=isPackageCategory, typeid=1, category_id=31. Карточки отсутствуют в исходном HTML, пустой каталог из этого не следует.",
+        "RU https://adatours.ru/nicaragua/place/corn-islands/ HTTP 200: H1 «Острова Корн», страница места с описанием Биг-Корн/Литл-Корн. https://adatours.ru/nicaragua/place/corn-islands/tour/ и optional-tours/ вернули 404. Main source-index подтверждает destination_nicaragua_ostrova_korn."
+      ],
+      "note": "Отдельный действующий RU-каталог туров на Корн не найден по каноническим маршрутам; страница места не равна EN Packages. Подтвержденной пары sameAs нет; RU-цель не назначена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:40:37.399Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/costa-do-sauipe/excursions",
@@ -326,5 +337,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:50.327Z"
+  "updatedAt": "2026-10-21T15:40:37.399Z"
 }

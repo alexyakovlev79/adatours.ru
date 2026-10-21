@@ -503,7 +503,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:37:38.732815+00:00; HTTP 200, 118252 bytes, SHA-256 58e24136b50568d2f844e064537631461d2b97130713aeac19b735d8a26b3173; canonical https://adatours.com/chile-en/excursions. Title Chile Tours & Vacation packages | Guided trips to Chile with Ada Tours; H1 Excursions to countries of Latin America.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (0): в данном HTML карточки не обнаружены.",
+        "RU-кандидат определён по канонической сущности country_chile, country_chile, blob 06d14961af93dd6d41ae09c3599a5407fae09494 и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/chile/excursion/: HTTP 200; canonical https://adatours.ru/chile/excursion/; H1 40 экскурсий в Чили | Ada Tours; SHA-256 813fc5c531c6c26c0fb90e90c950cecdf77192f013c8738a2359f6e494c64ecf.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "EN HTML содержит общий H1 и не показывает товарных карточек; RU-каталог содержит 40 экскурсий по Чили. Действующие составы не совпали, поэтому географическое совпадение не принято как sameAs."
+      ],
+      "note": "EN HTML содержит общий H1 и не показывает товарных карточек; RU-каталог содержит 40 экскурсий по Чили. Действующие составы не совпали, поэтому географическое совпадение не принято как sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:01.471Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/chile-en/packages",
@@ -576,5 +590,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:41:58.947Z"
+  "updatedAt": "2026-10-21T15:42:01.471Z"
 }

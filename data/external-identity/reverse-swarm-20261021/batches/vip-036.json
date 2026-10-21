@@ -182,7 +182,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/917f6f55b7febdc94432e869.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/917f6f55b7febdc94432e869.html, SHA-256 cee871513de09d6fe11206c8fb7bb28cf432b87fe40e0697ef422ebfd1a3f9e1, обход 2026-10-20T13:12:51+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Beach Class Suites». Beach Class Suites — гостиница на 153 апартамента на набережной Boa Viagem, в тексте явно Recife; Junior/Senior/Master Suite, бассейн и бизнес-центр. Крошки противоречиво указывают Олинду.",
+        "Проверены актуальные main source-index каталоги destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf): самостоятельной страницы Beach Class Suites по названию/бренду не установлено. В src/content.config.ts нет hotel collection, маршрутизатор [...path].astro не выделяет hotel detail; общий тур/город не доказывает соответствия гостинице."
+      ],
+      "note": "Проверена самостоятельная карточка Beach Class Suites; география исходника: Ресифи по основному тексту; Олинда в крошках. Подтвержденная текущая RU-страница именно этой гостиницы в просмотренном source-index не найдена. Другой отель той же сети, туристический город и тур с возможным размещением не назначены 301-целью.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:59.830Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/blue-tree-towers-faria?page=1",
@@ -315,5 +325,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:56.413Z"
+  "updatedAt": "2026-10-21T15:32:59.830Z"
 }

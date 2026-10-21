@@ -302,7 +302,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/0bdafe9b61cfd56e70342d40.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #415: дочерний /ekskursii по Петену, pageType=excursion_listing, snapshotHttp 200; title/H1 листинга пусты.",
+        "RU destination_guatemala_peten approved, но в актуальном compact catalog экскурсий нет активных Excursion со связью destination_guatemala_peten ни как основной, ни как дополнительной. Непустой URL /guatemala/peten/ не подтвержден."
+      ],
+      "note": "Соответствующего действующего каталога экскурсий Петена сейчас нет. Решение о 301 на страницу региона либо 410 передать на отдельную проверку; не выдумывать каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:45:53.402Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-pisko-v-peru",
@@ -455,5 +465,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:45:49.194Z"
+  "updatedAt": "2026-10-21T14:45:53.402Z"
 }

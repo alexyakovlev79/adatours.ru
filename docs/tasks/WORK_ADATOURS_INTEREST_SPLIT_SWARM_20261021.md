@@ -35,7 +35,7 @@ const paths=['scripts/interest-split-swarm-core.mjs','scripts/interest-split-swa
 const [a,b]=await Promise.all(paths.map(path=>
   tools.mcp__GitHub__fetch_file({repository_full_name:repo,path,ref})));
 const core=new Function(a.result.content.replace(/^export /gm,'')+
- ';return {SWARM_ROOT,shardPath,checkIdentity,hashString,take,activeLease,refresh,release,validateSubmitArgs,requireLease,applyEdits,checkArticleInvariant,finish,summarize};')();
+ ';return {SWARM_ROOT,shardPath,checkIdentity,hashString,take,activeLease,refresh,release,validateSubmitArgs,requireLease,applyEdits,checkArticleInvariant,finish,summarize,reopenReview};')();
 const swarm=new Function(b.result.content.replace(/^export /gm,'')+
  ';return runInterestSplitSwarm;')();
 const ownerId='isr-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,14);
@@ -127,3 +127,7 @@ node scripts/audit-interest-split-release.mjs --write
 
 После каждой статьи: ID + URL + edited/confirmed/review + commit SHA.
 После каждых трех: закрыто N уникальных заданий, REVIEW M, текущая группа и последний подтвержденный commit. По окончании чата перечислить свои активные незакрытые lease (если они остались). Не утверждать опубликование до общего релиза. **Не запрашивать у пользователя разрешение на очередную пачку — продолжать автоматически.**
+
+## 9. Для координатора: повторно открыть REVIEW
+
+Если конкретный REVIEW разрешен дополнительными фактами, только координирующий чат перечитывает shard и вызывает диспетчер с action='requeue_review', lane, id, expectedCompletedAt (точное completedAt сохраненного REVIEW) и reason не короче 28 символов. Переоткрытие сохраняет старую причину в reviewHistory; затем новый worker получает обычный claim. Самовольное исправление состояния в JSON без CAS запрещено.

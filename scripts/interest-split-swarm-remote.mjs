@@ -176,7 +176,13 @@ async function requeueReview(tools,core,request,manifest) {
         path,branch:BRANCH,sha:previous.sha,content:JSON.stringify(state,null,2)+'\n',
         message:'chore(interest-swarm): requeue reviewed '+row.id+' [skip ci]'}));
       return {status:'requeued',lane,id:row.id,commit:write.commit_sha};
-    }catch(error) { if(attempt===2)throw Error('Review CAS contention: '+String(error)); }
+    }catch(error) {
+      const checked=JSON.parse((await file(tools,path)).content);
+      const task=checked.items.find(x=>x.id===request.id);
+      if(task?.status==='queued' && task.reviewHistory?.some(v=>v.reviewedAt===request.expectedCompletedAt && v.reason===request.reason))
+        return {status:'requeued_after_uncertain_response',lane,id:request.id};
+      if(attempt===2)throw Error('Review CAS contention: '+String(error));
+    }
   }
 }
 async function status(tools,core,request,manifest) {

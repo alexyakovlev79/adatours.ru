@@ -74,7 +74,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 прочитаны EN HTML (GET 200/self-canonical, SHA-256 132ec2be1792f5dbb1a9c66a0cb200c3ea6c2aa10d42f67b7434e1e708f06f30) и JSON, который использует публичный каталог (SHA-256 999e821c441c7d4d2ecb38afac5f5d343bf2a7a1a4116df3640097db13638d67). EN-фильтр Ла-Пас, excursions: 3 продукта — City Tour, Tiwanaku/Desaguadero и Soul’s Valley & Palca Canyon.",
+        "Сверены активные MD, source-index, правила каталогов и живой RU HTTP в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2. RU /bolivia/la-paz/ HTTP 200, 4 экскурсии: два исходных тура плюс excursion_bolivia_la_paz_moon_valley_tiwanaku и excursion_la_paz_city_moon_valley_four_hours; отдельный Soul’s Valley/Palca Canyon отсутствует.",
+        "Frozen inventory: pageType=category, snapshotHttp=200, H1 «La Paz: Excursions to the Capital, Cable Cars, and Valle de la Luna», crawlReport=adatours-com-crawl-001.json; snapshotFile не задан, приватный снимок не заявляется просмотренным."
+      ],
+      "note": "Подтверждённой sameAs-пары нет: одно географическое название не делает каталоги идентичными. Пустой EN-ассортимент и/или другой RU-состав отражены как отсутствие подтверждения, не как технический retry; связь не опубликована.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:37:54.094Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-la-paz/packages",
@@ -337,5 +348,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:37:50.664Z"
+  "updatedAt": "2026-10-21T15:37:54.094Z"
 }

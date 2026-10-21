@@ -142,7 +142,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/68a654df30b30286ec75a1f8.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "VIP crawl 2026-10-20: HTTP 200, title/H1 \"Акции\", OpenCart route product/special; category of special offers.",
+        "Ada Tours RU current routes have /tours/ but no confirmed matching special-offer collection with the historical same product membership."
+      ],
+      "note": "Проверен старый раздел «Акции», но состав специальных предложений не подтвержден и автоматический перенос на общий каталог туров искажает намерение.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:04:13.564Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=account%2Fedit",
@@ -375,5 +385,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:03:37.563Z"
+  "updatedAt": "2026-10-21T15:04:13.564Z"
 }

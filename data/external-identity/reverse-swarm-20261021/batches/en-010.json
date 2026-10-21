@@ -291,7 +291,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Excursions and tours to Monteverde (Cloud Forests) in Costa Rica», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: typeid=2&category_id=48, Monteverde (Cloud Forests), Costa Rica; productsjson: products=[], total=0.",
+        "RU /costa-rica/monteverde-santa-elena/ HTTP 200: «4 экскурсии в Монтеверде и Санта-Элене»; stable ID destination_costa_rica_monteverde_santa_elena. /place/.../optional-tours/ — другой каталог туров с необязательным посещением и не используется как экскурсионная цель."
+      ],
+      "note": "EN-каталог экскурсий по Монтеверде пуст, RU-каталог содержит 4 экскурсии. Совпадение направления не подтверждает sameAs набора продуктов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:55:15.925Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/monteverde-santa-elena/packages",
@@ -454,5 +465,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:55:13.313Z"
+  "updatedAt": "2026-10-21T15:55:15.925Z"
 }

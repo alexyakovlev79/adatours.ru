@@ -86,7 +86,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP 200 /belize-caye-caulker/excursions, canonical тот же; title про Кайе Колкер, H1 общий Excursions to countries of Latin America. Карточки экскурсий отсутствуют; содержимое — общий текст про Бразилию, фавелы Рио/Сан-Паулу и Бонито. SHA-256 e4a0f4f9e950fd37d43c92a3f4c2ad4c5f7adfd6560b1fb222452db781c1aeaf.",
+        "Текущий main source-index: destination_belize_kaje_kolker /belize/place/caye-caulker/ — остров; в excursions.json (blob 402b7d42c61bc17709c1ae07fc92dfa32ee08327) нет экскурсионных сущностей с этим destinationId. routes.ts строит каталог места только при наличии связанных экскурсий.",
+        "Frozen inventory: category, snapshotHttp 200, H1 общий, crawl001 category_id 40, snapshotFile отсутствует. Содержательный RU-каталог того же фильтра/состава не подтвержден."
+      ],
+      "note": "Исходная страница — пустой по товарам EN-каталог экскурсий с общим текстом, а RU-карточка Кайе Колкер является местом. Подтвержденной пары того же типа и состава нет; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:35:55.285Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-caye-caulker/packages",
@@ -349,5 +360,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:35:19.765Z"
+  "updatedAt": "2026-10-21T15:35:55.285Z"
 }

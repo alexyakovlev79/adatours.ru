@@ -463,7 +463,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title San Salvador Tours | Capital of El Salvador & Volcanoes; H1 San Salvador: Tours to the Capital and Volcanoes; category_ids=[\"79\"]; adatours-com-crawl-002.json index 258; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/san-salvador/packages: HTTP 200; SHA256 da73578f6c633a6d8855f1ad3ea726ababe05113f239b249f759d0a002e90130. Видимые gallery-карточки: The Best of Central America; Central America Highlights; The Best of El Salvador Фильтр EN category_id 79, isPackageCategory/typeid=1.",
+        "main src/content/destinations/san-salvador.md, blob 1c4c6c7a29198eeeac9ab9fa63a78b30f5381bfb: approved destination_el_salvador_san_salvador, /el-salvador/place/san-salvador/. RU каталог https://adatours.ru/el-salvador/place/san-salvador/tour/: HTTP 200; 5 туров 2026-2027 в Сан Сальвадоре (Эль-Сальвадоре) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан Сальвадор. Оставить заявку ↗ 11 дней Гватемала - Гондурас- Эль Сальвадор - Белиз Смотреть ↗ VIP 19 дней Тур в Гватемалу, Гондурас, Сальвадор, Никарагуа и Коста-Рику на 19 дней Смотреть ↗ 6 дней Лучшее . routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+      ],
+      "note": "У каталогов одинаковое географическое намерение и есть тематически близкие продукты, однако полное равенство динамического EN состава и действующих RU программ не установлено. Категория старого CMS не доказывает совпадение правила RU основного маршрута. Оставлено REVIEW без sameAs, нужна сверка всех продуктов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:04.546Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/santa-ana/excursions",
@@ -546,5 +557,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:18:02.087Z"
+  "updatedAt": "2026-10-21T16:18:04.546Z"
 }

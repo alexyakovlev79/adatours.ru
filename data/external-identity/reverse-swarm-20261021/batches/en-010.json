@@ -375,7 +375,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Excursions and tours to Morro de São Paulo», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: экскурсионный фильтр typeid=2&category_id=316, productsjson products=[], total=0.",
+        "RU /brazil/place/morro-de-sao-paulo/ HTTP 200: destination_brazil_morro_de_sao_paulo, страница островного курорта; в заголовке нет экскурсий/туров, указано «Пока нет туров в это место». /brazil/morro-de-sao-paulo/ HTTP 404."
+      ],
+      "note": "Проверен пустой EN-каталог экскурсий Морро-де-Сан-Паулу. Действующего однотипного RU-каталога не подтверждено; страницу самого места нельзя назначить sameAs каталога.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:56:13.393Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/morro-de-sao-paulo/packages",
@@ -498,5 +509,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:56:10.647Z"
+  "updatedAt": "2026-10-21T15:56:13.393Z"
 }

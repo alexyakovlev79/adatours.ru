@@ -1,6 +1,6 @@
 # Следующие 50 индивидуальных hero — 21 октября 2026
 
-Подключено 40 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
+Подключено 50 из 50. Пять партий по 10. Все подключённые новые WebP напрямую загружены в S3 и проверены по SHA-256. Предыдущие восемь замен в эту партию не входят.
 
 | № | Партия | Страница | Статус |
 |---|---|---|---|
@@ -44,16 +44,16 @@
 | 38 | 4 | [Куритиба](https://adatours.ru/brazil/place/curitiba/) | S3 проверен, подключено |
 | 39 | 4 | [Флорианополис](https://adatours.ru/brazil/place/florianopolis/) | S3 проверен, подключено |
 | 40 | 4 | [Фоз-ду-Игуасу](https://adatours.ru/brazil/place/foz-do-iguacu/) | S3 проверен, подключено |
-| 41 | 5 | [Золотой путь Бразилии](https://adatours.ru/brazil/place/gold-route/) | Ожидает генерации |
-| 42 | 5 | [Грамаду](https://adatours.ru/brazil/place/gramado/) | Ожидает генерации |
-| 43 | 5 | [Илья-Гранди](https://adatours.ru/brazil/place/ilha-grande/) | Ожидает генерации |
-| 44 | 5 | [Лодж «Жардим-да-Амазония»](https://adatours.ru/brazil/place/jardim-da-amazonia/) | Ожидает генерации |
-| 45 | 5 | [Манаус и Амазония](https://adatours.ru/brazil/place/manaus-amazon/) | Ожидает генерации |
-| 46 | 5 | [Ору-Прету](https://adatours.ru/brazil/place/ouro-preto/) | Ожидает генерации |
-| 47 | 5 | [Пантанал](https://adatours.ru/brazil/place/pantanal/) | Ожидает генерации |
-| 48 | 5 | [Порту-Алегри](https://adatours.ru/brazil/place/porto-alegre/) | Ожидает генерации |
-| 49 | 5 | [Река Клару у лоджа «Жардим-да-Амазония»](https://adatours.ru/brazil/place/rio-claro-jardim-amazonia/) | Ожидает генерации |
-| 50 | 5 | [Сан-Паулу](https://adatours.ru/brazil/place/sao-paulo/) | Ожидает генерации |
+| 41 | 5 | [Золотой путь Бразилии](https://adatours.ru/brazil/place/gold-route/) | S3 проверен, подключено |
+| 42 | 5 | [Грамаду](https://adatours.ru/brazil/place/gramado/) | S3 проверен, подключено |
+| 43 | 5 | [Илья-Гранди](https://adatours.ru/brazil/place/ilha-grande/) | S3 проверен, подключено |
+| 44 | 5 | [Лодж «Жардим-да-Амазония»](https://adatours.ru/brazil/place/jardim-da-amazonia/) | S3 проверен, подключено |
+| 45 | 5 | [Манаус и Амазония](https://adatours.ru/brazil/place/manaus-amazon/) | S3 проверен, подключено |
+| 46 | 5 | [Ору-Прету](https://adatours.ru/brazil/place/ouro-preto/) | S3 проверен, подключено |
+| 47 | 5 | [Пантанал](https://adatours.ru/brazil/place/pantanal/) | S3 проверен, подключено |
+| 48 | 5 | [Порту-Алегри](https://adatours.ru/brazil/place/porto-alegre/) | S3 проверен, подключено |
+| 49 | 5 | [Река Клару у лоджа «Жардим-да-Амазония»](https://adatours.ru/brazil/place/rio-claro-jardim-amazonia/) | S3 проверен, подключено |
+| 50 | 5 | [Сан-Паулу](https://adatours.ru/brazil/place/sao-paulo/) | S3 проверен, подключено |
 
 Промпты, новые пути, receipts и происхождение встроенного imagegen: [машинный реестр](../../data/audits/hero-inline-dedup-next50-20261021.json).
 

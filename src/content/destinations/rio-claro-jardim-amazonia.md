@@ -12,12 +12,12 @@ searchAliases:
 - Река Клару у Jardim da Amazônia
 themes: ["theme_wildlife", "theme_nature"]
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-2-20261010-enhanced-20261011-doc-v1.webp
-  hover: "Амазония: густые лесистые берега отражаются в тихой воде"
-  alt: "Спокойная лесная река с отражениями зеленых деревьев, Амазония, Бразилия"
+  src: /media/destinations/rio-claro-jardim-amazonia/hero-generated-20261021-dedup50-v1.webp
+  hover: Река Клару у лоджа «Жардим-да-Амазония» — иллюстрация
+  alt: Река Клару у лоджа «Жардим-да-Амазония» — иллюстрация
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_rio_claro_jardim_amazonia.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-21'
 ---
 
 ## Каноэ вдоль лесных берегов

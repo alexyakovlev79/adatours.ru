@@ -8,9 +8,9 @@ countryId: country_brazil
 destinationType: natural_area
 summary: 'Манаус можно соединить с несколькими днями в джунглях Амазонии: театр Амазонас, встреча вод, лодж, лодочные маршруты, рыбалка, ночное сафари и природные программы.'
 hero:
-  src: /media/destinations/manaus-amazonia/hero-enhanced-20261001.webp
-  hover: "Амазония в Бразилии: речная излучина среди тропического леса"
-  alt: "Извилистая река среди густого леса Амазонии, Бразилия, вид сверху"
+  src: /media/destinations/manaus-amazon/hero-generated-20261021-dedup50-v1.webp
+  hover: Манаус и Амазония — иллюстрация
+  alt: Манаус и Амазония — иллюстрация
 gallery:
 - src: /media/home/amazon-enhanced-20260930.webp
   hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
@@ -44,7 +44,7 @@ featureBands:
   image: /media/home/amazon-enhanced-20260930.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus__791a2ef7.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-21'
 themes: ["theme_wildlife", "theme_nature", "theme_fishing", "theme_culture"]
 ---
 

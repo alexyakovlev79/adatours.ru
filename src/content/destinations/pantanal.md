@@ -9,8 +9,8 @@ destinationType: natural_area
 summary: >-
   Пантанал подходит для поездки, где главная цель – природа: наблюдение за животными и птицами, прогулки на лодках и лошадях, рыбалка, фазенда и ночное сафари.
 hero:
-  src: /media/destinations/pantanal/hero-enhanced-20261001.webp
-  alt: Природа Пантанала в Бразилии
+  src: /media/destinations/pantanal/hero-generated-20261021-dedup50-v1.webp
+  alt: Пантанал — иллюстрация
 gallery: []
 relatedDestinations:
   - destination_brazil_amazon
@@ -41,7 +41,7 @@ featureBands:
     image: /media/destinations/pantanal/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii
 sourceSnapshot: page_texts_original/tury-v-nacionalnyj-zapovednik-pantanal-v-brazilii__a1533a1e.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-21'
 themes: ["theme_wildlife", "theme_nature", "theme_fishing"]
 ---
 

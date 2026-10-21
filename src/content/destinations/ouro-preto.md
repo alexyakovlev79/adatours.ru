@@ -9,9 +9,9 @@ destinationType: city
 summary: >-
   Ору-Прету в штате Минас-Жерайс вырос в эпоху золотой лихорадки. Сегодня сюда едут ради барочной архитектуры, старых шахт, музеев, площади Тирадентис и исторического центра, включенного в список Всемирного наследия UNESCO.
 hero:
-  src: /media/destinations/ouro-preto/hero-enhanced-20261001.webp
-  hover: "Ору-Прету: белые колониальные дома и церкви на городских холмах"
-  alt: "Церковь и черепичные крыши Ору-Прету на холмистом склоне, Бразилия"
+  src: /media/destinations/ouro-preto/hero-generated-20261021-dedup50-v1.webp
+  hover: Ору-Прету — иллюстрация
+  alt: Ору-Прету — иллюстрация
 gallery: []
 relatedDestinations:
   - destination_brazil_gold_route
@@ -42,7 +42,7 @@ featureBands:
     image: /media/destinations/ouro-preto/hero-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya__226a4f58.md
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-21'
 themes: ["theme_culture"]
 ---
 

@@ -8,8 +8,8 @@ countryId: country_brazil
 destinationType: city
 summary: Сан-Паулу подходит для поездки, где важны современная городская Бразилия, музеи, архитектура, гастрономия, деловые встречи и большой выбор культурных событий.
 hero:
-  src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
-  alt: Панорама Сан-Паулу, Бразилия
+  src: /media/destinations/sao-paulo/hero-generated-20261021-dedup50-v1.webp
+  alt: Сан-Паулу — иллюстрация
 gallery:
 - src: /media/destinations/destination_brazil_sao_paulo/sao-paulo-departure-generated-20261008.webp
   hover: "Сан-Паулу: деревья, пешеходы и автомобили у городских высоток"
@@ -31,7 +31,7 @@ facts:
 featureBands: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-paulu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-san-paulu-braziliya__f2082e1c.md
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-21'
 themes:
 - theme_culture
 - theme_gastronomy_wine

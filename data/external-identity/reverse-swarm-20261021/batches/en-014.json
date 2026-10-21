@@ -442,7 +442,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Excursions and tours to San Salvador, in El Salvador; H1 Excursions to countries of Latin America; category_ids=[\"79\"]; adatours-com-crawl-002.json index 257; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/san-salvador/excursions: HTTP 200; SHA256 049460f9e97c4d7d2b706c33ecfbe233db40f8568be0a69a2b00fe9103642c82. В статическом HTML нет предметных gallery-карточек; заголовок общий Latin America. Отсутствие gallery не считается доказательством отсутствия динамических продуктов. Фильтр EN category_id 79, isExcursionCategory/typeid=2.",
+        "main src/content/destinations/san-salvador.md, blob 1c4c6c7a29198eeeac9ab9fa63a78b30f5381bfb: approved destination_el_salvador_san_salvador, /el-salvador/place/san-salvador/. RU каталог https://adatours.ru/el-salvador/san-salvador/: HTTP 200; 1 экскурсия в Сан Сальвадоре, Эль-Сальвадор - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Экскурсии Ada Tours: Сан Сальвадор, Эль-Сальвадор. Оставить заявку ↗ Экскурсионная программа с англоговорящим гидом Сан-Сальвадор, Хойя-де-Серен и Сан-Андрес Исторический центр Сан-Сальвадора и два археологических памятника знакомят с разными эпохами страны. Горо. routes.ts/[...path].astro: туры только по основному месту, экскурсии по собственным destination-связям."
+      ],
+      "note": "Проверены EN category и действующий предметный RU каталог. EN статический HTML не дает подтверждённого полного списка продуктов, RU содержит конкретные активные программы. Точная пара sameAs не подтверждена; это не утверждение, что динамический EN каталог пуст.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:02.087Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/san-salvador/packages",
@@ -535,5 +546,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:17:59.199Z"
+  "updatedAt": "2026-10-21T16:18:02.087Z"
 }

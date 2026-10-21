@@ -23,7 +23,7 @@ assert(DOMAINS.length===2&&DOMAINS.every(x=>manifest.byDomain[x]),'Domain whitel
 const statePath='data/external-identity/reverse-v1/state.json';
 assert(blobSha(statePath)===manifest.baseStateSha,'Frozen historical state.json changed');
 const historic=json(statePath);
-let allUrls=new Set(),byDomain={},activeLeases=0,total=0,queued=0,done=0;
+let allUrls=new Set(),allBatchIds=new Set(),byDomain={},activeLeases=0,total=0,queued=0,done=0;
 for(const domain of DOMAINS) {
   const sourcePath='data/external-identity/reverse-v1/inventories/'+domain+'.json';
   const meta=manifest.byDomain[domain];
@@ -42,7 +42,7 @@ for(const domain of DOMAINS) {
   assert(batches.length===meta.batches,'Wrong number of batches '+domain);
   const seen=new Set();let domainQueued=0,domainDone=0;
   for(const spec of batches){
-    assert(!allUrls.has(spec.id),'Duplicate batch id '+spec.id);
+    assert(!allBatchIds.has(spec.id),'Duplicate batch id '+spec.id);allBatchIds.add(spec.id);
     const batch=validateBatch(json(spec.path));
     assert(batch.batchId===spec.id&&batch.domain===domain,'Batch id/domain mismatch '+spec.id);
     assert(batch.records.length===spec.count,'Wrong batch length '+spec.id);

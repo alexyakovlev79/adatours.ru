@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvib5m67-k5ko7e1pqwn",
-    "token": "reverse-lease-mvib5m67-2e7berxvj9m",
-    "generation": 1,
-    "claimedAt": "2026-10-21T16:10:29.825Z",
-    "expiresAt": "2026-10-21T17:40:29.825Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/rincon-de-la-vieja/excursions",
@@ -631,8 +625,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Sao Paulo Tours | Museums, Restaurants & Formula One; H1 Sao Paulo: World Class Museums, Dining & Cultural Tours; category_ids=[\"66\"]; adatours-com-crawl-002.json index 270; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/sao-paulo/packages: HTTP 200; SHA256 379cf7431ff6f6da37fa43664fae6313316d87ad50cec8c8d09703b46cf74059. Видимые gallery-карточки: Brazil from Sau Paolo to Buzios; Motorcycle Trip Across Brazil; Brazil: Little Mix; Brazil: Sao Paulo – Iguazu -Rio de Janeiro – Ilha Grande -Paraty; Brazil experience; Brazil: Sao Paulo – Iguazu -Rio de Janeiro – Buzios; Grand tour in Brazil",
+        "main src/content/destinations/sao-paulo.md, blob 210278eb158f9dd202bc4cddb45968e18b3d2557: approved destination_brazil_sao_paulo, /brazil/place/sao-paulo/. RU каталог https://adatours.ru/brazil/place/sao-paulo/tour/: HTTP 200; 13 туров 2026-2027 в Сан-Паулу (Бразилии) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Туры Ada Tours, в основной маршрут которых входит Сан-Паулу. Оставить заявку ↗ 12 дней · Частный Бразилия за 12 дней: Сан-Паулу, Игуасу, Рио, Илья-Гранди и Парати Смотреть ↗ 13 дней Тур в Бразилию: Рио-де-Жанейро, Манаус, Сальвадор, Фос-ду-Игуасу Смотреть ↗ VIP 12 . routes.ts/[...path].astro отделяет Place, основной маршрут тура и самостоятельные экскурсии."
+      ],
+      "note": "Совпадает география каталога, присутствуют тематически близкие продукты, однако одинаковый полный состав и условия не подтверждены. EN gallery не равна доказанному полному динамическому списку; RU содержит расширенную актуальную подборку. REVIEW без назначения sameAs; нужна адресная сверка всех продуктов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:52.297Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T16:18:50.051Z"
+  "updatedAt": "2026-10-21T16:18:52.297Z",
+  "completedAt": "2026-10-21T16:18:52.297Z",
+  "lastOwner": "reverse-worker-mvib5m67-k5ko7e1pqwn"
 }

@@ -21,6 +21,14 @@ import { ADA_REVIEWS, adaReviewPageSchema } from '../data/reviews/ada-tours';
 import FactStrip from '../components/proof/FactStrip.astro';
 import SearchTrigger from '../components/global/SearchTrigger.astro';
 import directS3Uploads from '../data/media/direct-s3-uploads.json';
+import mobileHeroPilot from '../data/media/mobile-hero-pilot-20261021.json';
+
+// Explicit homepage opt-in: reuse verified crops without changing other card uses.
+const mobileCoverFor = (source?: string) => {
+  const crop = mobileHeroPilot.items.find((item) => item.source === source && item.status === 'READY');
+  const variant = crop?.variants.at(-1);
+  return crop && variant ? { src: `/${variant.key}`, position: crop.objectPosition } : undefined;
+};
 
 const activeRu = ({ data }) => data.locale === 'ru' && isActiveEntity(data);
 const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionEntries, people] = await Promise.all([
@@ -158,6 +166,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
           : leadingCountry.data.summary}
         href={countryPath(leadingCountry.data)}
         image={leadingCountry.data.hero?.src}
+        mobileCover={mobileCoverFor(leadingCountry.data.hero?.src)}
         imageTextAlign={leadingCountry.data.imageTextAlign}
       />
     )}
@@ -170,6 +179,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
             title={country.data.name}
             href={countryPath(country.data)}
             image={country.data.hero?.src}
+            mobileCover={mobileCoverFor(country.data.hero?.src)}
             imageTextAlign={country.data.imageTextAlign}
           />
         ))}
@@ -201,6 +211,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
             meta={interestTourCount(entry.data.id, tourCount)}
             image={entry.data.hero?.src}
             href={themePath(entry.data)}
+            mobileCover={mobileCoverFor(entry.data.hero?.src)}
             large={index === 0}
           />
         ))}

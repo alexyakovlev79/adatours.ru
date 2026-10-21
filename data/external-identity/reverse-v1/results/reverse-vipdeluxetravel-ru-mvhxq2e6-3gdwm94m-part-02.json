@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "batchId": "reverse-vipdeluxetravel-ru-mvhxq2e6-3gdwm94m",
+  "part": 2,
+  "ownerId": "reverse-vip-oct21-b08-recovery",
+  "checkedAt": "2026-10-21T09:58:22.718Z",
+  "results": [
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island/packages",
+      "status": "retry",
+      "note": "Snapshot collection failed to fetch the source URL; the old page cannot be independently verified. Even if a plausible active RU catalogue exists, revisit this precise VIP URL before authorizing HTTP 301.",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island/packages; snapshot network_error, HTTP unavailable; archive title (empty title); page type tour_listing.",
+        "Same source object mapped to exact Ada Tours source ID destination_chile_ostrov_pashi (Остров Пасхи), original Brasiltours https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island; current approved Destination MD SHA ca4ae5594471c0e6d5d6b5a56cdfd49e9cf88ab9; RU canonical https://adatours.ru/chile/place/easter-island/tour/.",
+        "Main relation catalogue shows 7 active main-tour candidates and 9 active excursion candidates (excluding central archive). Actual Astro generates filtered catalogue only when count > 0. Old filtered listing has an empty saved HTML body; historical tour membership is unverified."
+      ],
+      "relation": null,
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island/ekskursii",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/chile/easter-island/",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island/ekskursii; snapshot empty_html, HTTP unavailable; archive title (empty title); page type excursion_listing.",
+        "Same source object mapped to exact Ada Tours source ID destination_chile_ostrov_pashi (Остров Пасхи), original Brasiltours https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-easter-island; current approved Destination MD SHA ca4ae5594471c0e6d5d6b5a56cdfd49e9cf88ab9; RU canonical https://adatours.ru/chile/easter-island/.",
+        "Main relation catalogue shows 7 active main-tour candidates and 9 active excursion candidates (excluding central archive). Actual Astro generates filtered catalogue only when count > 0. Old filtered listing has an empty saved HTML body; historical tour membership is unverified."
+      ],
+      "note": "Same destination, correct excursion listing intent, and nonempty current active RU catalogue. No assertion of matching historical products from empty old HTML. Proposed 301, pending deployment checks.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/nicaragua/place/corn-islands/",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua; snapshot fetched, HTTP unavailable; archive title Туры и дайвинг на Карибах на острове Корн в Никарагуа; page type unclassified.",
+        "Same source object mapped to exact Ada Tours source ID destination_nicaragua_ostrova_korn (Острова Корн), original Brasiltours https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua; current approved Destination MD SHA ace33fdf900b0d1900a50bae167c8ad5f4374776; RU canonical https://adatours.ru/nicaragua/place/corn-islands/."
+      ],
+      "note": "Geographical identity and landing-page intent match the exact canonical active object. Prospective 301 only; no deployment performed.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua/packages",
+      "status": "review",
+      "note": "Old HTTP 200 tour listing contains zero bytes. There are no matching active tour entries under that destination; Astro does not create https://adatours.ru/nicaragua/place/corn-islands/tour/. Need separate editorial decision between parent place redirect or HTTP 410.",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua/packages; snapshot empty_html, HTTP unavailable; archive title (empty title); page type tour_listing.",
+        "Same source object mapped to exact Ada Tours source ID destination_nicaragua_ostrova_korn (Острова Корн), original Brasiltours https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua; current approved Destination MD SHA ace33fdf900b0d1900a50bae167c8ad5f4374776; RU canonical https://adatours.ru/nicaragua/place/corn-islands/tour/.",
+        "Main relation catalogue shows 0 active main-tour candidates and 0 active excursion candidates (excluding central archive). Actual Astro generates filtered catalogue only when count > 0. Old filtered listing has an empty saved HTML body; historical tour membership is unverified."
+      ],
+      "relation": null,
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua/ekskursii",
+      "status": "review",
+      "note": "Old HTTP 200 excursion listing contains zero bytes. There are no matching active excursion entries under that destination; Astro does not create https://adatours.ru/nicaragua/corn-islands/. Need separate editorial decision between parent place redirect or HTTP 410.",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua/ekskursii; snapshot empty_html, HTTP unavailable; archive title (empty title); page type excursion_listing.",
+        "Same source object mapped to exact Ada Tours source ID destination_nicaragua_ostrova_korn (Острова Корн), original Brasiltours https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua; current approved Destination MD SHA ace33fdf900b0d1900a50bae167c8ad5f4374776; RU canonical https://adatours.ru/nicaragua/corn-islands/.",
+        "Main relation catalogue shows 0 active main-tour candidates and 0 active excursion candidates (excluding central archive). Actual Astro generates filtered catalogue only when count > 0. Old filtered listing has an empty saved HTML body; historical tour membership is unverified."
+      ],
+      "relation": null,
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/ecuador/place/otavalo/",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore; snapshot fetched, HTTP unavailable; archive title Отавало: достопримечательности и путеводитель по знаменитому рынку; page type unclassified.",
+        "Same source object mapped to exact Ada Tours source ID destination_ecuador_otavalo (Отавало), original Brasiltours https://brasiltours.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore; current approved Destination MD SHA e977f555b32e570d9c4644babcd626f1037095d4; RU canonical https://adatours.ru/ecuador/place/otavalo/."
+      ],
+      "note": "Geographical identity and landing-page intent match the exact canonical active object. Prospective 301 only; no deployment performed.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore/packages",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/ecuador/place/otavalo/tour/",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore/packages; snapshot empty_html, HTTP unavailable; archive title (empty title); page type tour_listing.",
+        "Same source object mapped to exact Ada Tours source ID destination_ecuador_otavalo (Отавало), original Brasiltours https://brasiltours.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore; current approved Destination MD SHA e977f555b32e570d9c4644babcd626f1037095d4; RU canonical https://adatours.ru/ecuador/place/otavalo/tour/.",
+        "Main relation catalogue shows 3 active main-tour candidates and 1 active excursion candidates (excluding central archive). Actual Astro generates filtered catalogue only when count > 0. Old filtered listing has an empty saved HTML body; historical tour membership is unverified."
+      ],
+      "note": "Same destination, correct tour listing intent, and nonempty current active RU catalogue. No assertion of matching historical products from empty old HTML. Proposed 301, pending deployment checks.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore/ekskursii",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/ecuador/otavalo/",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore/ekskursii; snapshot empty_html, HTTP unavailable; archive title (empty title); page type excursion_listing.",
+        "Same source object mapped to exact Ada Tours source ID destination_ecuador_otavalo (Отавало), original Brasiltours https://brasiltours.ru/tury-i-ehkskursii-v-gorod-otavalo-v-ehkvadore; current approved Destination MD SHA e977f555b32e570d9c4644babcd626f1037095d4; RU canonical https://adatours.ru/ecuador/otavalo/.",
+        "Main relation catalogue shows 3 active main-tour candidates and 1 active excursion candidates (excluding central archive). Actual Astro generates filtered catalogue only when count > 0. Old filtered listing has an empty saved HTML body; historical tour membership is unverified."
+      ],
+      "note": "Same destination, correct excursion listing intent, and nonempty current active RU catalogue. No assertion of matching historical products from empty old HTML. Proposed 301, pending deployment checks.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/panama-ru",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/panama/",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/panama-ru; snapshot fetched, HTTP unavailable; archive title Путешествие в Панаму: что посмотреть во время поездки? | Туроператор Ada Tours; page type unclassified.",
+        "Same source object mapped to exact Ada Tours source ID country_panama (Панама), original Brasiltours https://brasiltours.ru/panama-ru; current approved Country MD SHA f3d5caaeb1a1dd65288f9faa13ed3e88ee8e03a6; RU canonical https://adatours.ru/panama/."
+      ],
+      "note": "Geographical identity and landing-page intent match the exact canonical active object. Prospective 301 only; no deployment performed.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    },
+    {
+      "sourceUrl": "https://vipdeluxetravel.ru/panama-ru/packages",
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/panama/tour/",
+      "evidence": [
+        "VIP saved crawl 2026-10-19: https://vipdeluxetravel.ru/panama-ru/packages; snapshot empty_html, HTTP unavailable; archive title (empty title); page type tour_listing.",
+        "Same source object mapped to exact Ada Tours source ID country_panama (Панама), original Brasiltours https://brasiltours.ru/panama-ru; current approved Country MD SHA f3d5caaeb1a1dd65288f9faa13ed3e88ee8e03a6; RU canonical https://adatours.ru/panama/tour/.",
+        "Main relation catalogue shows 12 active main-tour candidates and 15 active excursion candidates (excluding central archive). Actual Astro generates filtered catalogue only when count > 0. Old filtered listing has an empty saved HTML body; historical tour membership is unverified."
+      ],
+      "note": "Same destination, correct tour listing intent, and nonempty current active RU catalogue. No assertion of matching historical products from empty old HTML. Proposed 301, pending deployment checks.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T09:58:22.718Z",
+      "sourceDomain": "vipdeluxetravel.ru"
+    }
+  ]
+}

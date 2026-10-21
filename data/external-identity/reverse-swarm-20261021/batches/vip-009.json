@@ -227,7 +227,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/f1f883b269d2e88ea1947dd7.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/chile/excursion/",
+      "evidence": [
+        "Frozen VIP inventory: /chili-ru/ekskursii, pageType excursion_listing, snapshotHttp 200, пустые title/H1; категория страны определяется родительской страницей «Чили».",
+        "RU Country country_chile в src/content/countries/chile.md активен; src index excursions содержит 40 неархивных RU экскурсий с географией country_chile; непустой каталог /chile/excursion/."
+      ],
+      "note": "Кандидат на 301 из списка экскурсий Чили в текущий соответствующий RU каталог; старый ассортимент не заявляется равным текущему.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:47:12.703Z",
+      "checkedBy": "reverse-worker-mvi7ulbn-l9hzm4e5q9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-chichikastenango-v-gvatemale",
@@ -410,5 +420,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:47:07.779Z"
+  "updatedAt": "2026-10-21T14:47:12.703Z"
 }

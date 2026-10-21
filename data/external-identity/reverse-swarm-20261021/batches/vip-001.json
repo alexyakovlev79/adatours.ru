@@ -542,7 +542,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/fccf0878f8b46311c50a0969.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #427: старый /ekskursii при Пласенсии, pageType=excursion_listing и сохраненный HTTP 200; ассортимент страницы по метаданным не определен.",
+        "RU approved destination_belize_plasensiya, но в source-index/catalogs/excursions.json нет неархивных экскурсий с destinationIds или relatedDestinationIds=destination_belize_plasensiya. Непустой каталог /belize/placencia/ отсутствует."
+      ],
+      "note": "Для экскурсий Пласенсии нет действующего самостоятельного RU-каталога. Нужен отдельный выбор между страницей курорта и 410; сейчас 301 не готов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:49:17.891Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-poluostrov-osa-v-kosta-rike",
@@ -575,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:49:14.069Z"
+  "updatedAt": "2026-10-21T14:49:17.891Z"
 }

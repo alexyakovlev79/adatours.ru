@@ -335,7 +335,49 @@
         "batchBlobSha": "56951648b0cce87aca3f625f571054bbf1129786",
         "reviewOrder": 55
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/peru/place/tacna/",
+        "targetId": "destination_peru_takna",
+        "targetContentPath": "src/content/destinations/takna.md",
+        "targetBlobSha": "53eeb2b382d49083d57924704187c9f4f671208d",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-006 #580.",
+          "Текущий main src/content/destinations/takna.md, blob 53eeb2b382d49083d57924704187c9f4f671208d: approved destination_peru_takna, Такна; прямой GET https://adatours.ru/peru/place/tacna/ → HTTP 200, SHA-256 e7f80f6128b2b382e89fea6bbc33a57b50e9cb53d86505b7330b0617f0d2cd02."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Такна». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-55",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-takna-v-peru/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-takna-v-peru/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_peru_takna",
+          "url": "https://adatours.ru/peru/place/tacna/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/peru/place/tacna/",
+          "sha256": "e7f80f6128b2b382e89fea6bbc33a57b50e9cb53d86505b7330b0617f0d2cd02",
+          "bytes": 73330,
+          "title": "Такна в Перу: локации. Пока нет туров в это место. Путешествия 2026-2027 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/peru/place/tacna/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 56,
@@ -1670,9 +1712,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:26.204Z",
+  "updatedAt": "2026-10-21T16:31:27.745Z",
   "progress": {
-    "resolved": 4,
+    "resolved": 5,
     "total": 50
   }
 }

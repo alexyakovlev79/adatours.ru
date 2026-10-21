@@ -3916,7 +3916,65 @@
         "batchBlobSha": "94340646bfed4f8fa3890d7d0b78bef146a4f9f3",
         "reviewOrder": 99
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/ecuador/tour/complete-ecuador-new-year/",
+        "targetId": "tour_source_ves_ekvador_na_novyj_god",
+        "comparedId": "tour_source_ves_ekvador_na_novyj_god",
+        "targetContentPath": "src/content/tours/ves-ekvador-na-novyj-god.md",
+        "targetBlobSha": "961035e77dbce25be2392a296c41dddc8dd670e1",
+        "confidence": 0.97,
+        "accepted": true,
+        "basis": "same_route_updated_dates",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.751Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/ves-ekvador-na-novyj-god → HTTP 200, title «Весь Эквадор», 106521 байт, SHA-256 0f7291c945e8fbb7ea8083b0fc88f756c514bbc10854e7ff5a120d81475660c6. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/ves-ekvador-na-novyj-god.md, blob 961035e77dbce25be2392a296c41dddc8dd670e1: approved, tour_source_ves_ekvador_na_novyj_god; RU цель https://adatours.ru/ecuador/tour/complete-ecuador-new-year/ → HTTP 200, SHA-256 dbf77a04a3867e782067c926a6ac85bbb73fec29c85c3fa80808230762146144.",
+          "В исходнике Новый год 2023/24, 11 дней Кито → Килотоа/Баньос → Риобамба/Чимборасо → Куэнка/Кахас → Гуаякиль → Галапагосы. RU сохраняет новогодний формат и маршрут для 30.12.2026–09.01.2027; это обновленный сезонный преемник."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-99",
+          "url": "https://vipdeluxetravel.ru/ves-ekvador-na-novyj-god",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ves-ekvador-na-novyj-god",
+          "sha256": "0f7291c945e8fbb7ea8083b0fc88f756c514bbc10854e7ff5a120d81475660c6",
+          "bytes": 106521,
+          "title": "Весь Эквадор",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/ves-ekvador-na-novyj-god\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Суббота 30/12/2023 - Кито",
+            "День 2: Воскресенье 31/12/2023 - Кито",
+            "День 3: Понедельник 01/01/2024 Кито-Килотоа-Баньос",
+            "День 4: Вторник 02/01/2024 Баньос-Риобамба",
+            "День 5: Среда 03/01/2024 - Риобамба-Чимборасо-Ингапирка-Куэнка",
+            "День 7: Пятница 05/01/2024 Куэнка-Кахас-Гуаякиль",
+            "День 8-11: Суббота 06/01/2024-Вторник 09/01/2024 - Гуаякиль-Галапагосские Острова",
+            "День 2: Морская Экскурсия На Остров Бартоломе",
+            "День 3: Морская Экскурсия на Остров Сеймур Или Пласа",
+            "День 4"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_ves_ekvador_na_novyj_god",
+          "url": "https://adatours.ru/ecuador/tour/complete-ecuador-new-year/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/ecuador/tour/complete-ecuador-new-year/",
+          "sha256": "dbf77a04a3867e782067c926a6ac85bbb73fec29c85c3fa80808230762146144",
+          "bytes": 252873,
+          "title": "Тур Весь Эквадор на Новый год: Анды и Галапагосы по цене от $4 250 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/ecuador/tour/complete-ecuador-new-year/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 100,
@@ -4021,9 +4079,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:56.711Z",
+  "updatedAt": "2026-10-21T16:35:58.580Z",
   "progress": {
-    "resolved": 48,
+    "resolved": 49,
     "total": 50
   }
 }

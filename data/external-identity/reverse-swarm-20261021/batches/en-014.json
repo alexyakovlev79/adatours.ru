@@ -358,7 +358,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: Excursions and tours in San Juan del Sur, in Nicaragua; H1 Excursions to countries of Latin America; category_ids=[\"39\"]; adatours-com-crawl-002.json index 251; HTTP 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/san-juan-del-sur/excursions: HTTP 200; SHA256 b4fd58020fba41da9443d47239258d52bb1eca1cdee9a66456f41cf6760954d3. H1 Excursions to countries of Latin America; в gallery нет карточек выбранного города.",
+        "main src/content/destinations/san-huan-del-sur.md, blob 1444a47c3504ed418e40709692af1477e40b3a31: approved destination_nicaragua_san_huan_del_sur, /nicaragua/place/san-juan-del-sur/. RU каталог https://adatours.ru/nicaragua/san-juan-del-sur/: HTTP Error 404: Not Found."
+      ],
+      "note": "Действующий предметный RU каталог экскурсий по каноническому маршрутизатору отвечает 404. Approved Place этого же города имеет другой тип и назначение; EN /excursions нельзя признать sameAs Place по одной географии.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:30.168Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/san-juan-del-sur/packages",
@@ -502,5 +513,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:17:27.541Z"
+  "updatedAt": "2026-10-21T16:17:30.168Z"
 }

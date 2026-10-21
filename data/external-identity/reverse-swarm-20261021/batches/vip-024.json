@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 2,
-  "lease": {
-    "ownerId": "reverse-worker-mvib5fjy-rs5rsfvrep",
-    "token": "reverse-lease-mvib5fjy-1hw7j3ga3q7",
-    "generation": 2,
-    "claimedAt": "2026-10-21T16:18:41.729Z",
-    "expiresAt": "2026-10-21T17:48:41.729Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe",
@@ -614,10 +608,21 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/9ac44eb8cf0d2b60955a67b0.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/excursions/",
+      "evidence": [
+        "Архив и GET 21.10.2026 HTTP 200: H1 Excursion; это страница 5 общего каталога, позиции 61–65 из 65, 5 товарных карточек. Примеры: Экскурсия на Вила Параисо; Морской заповедник Холь-Чан; Порту-де-Галинас; Парк Роберто Бурле Маркс; Архипелаг Анавильянс. Состав видимых карточек совпал с архивным; отдельного фильтра страны/места в URL нет.",
+        "Frozen snapshots/9ac44eb8cf0d2b60955a67b0.html, SHA-256 7ed5986200a29355612125caf3c4d8c77636ec3304a5a1e82b8377c9cd91806f; snapshotHttp 200, inventory pageType excursion_candidate. HTML прочитан и контрольная сумма подтверждена; фактически это каталог, а не самостоятельный продукт.",
+        "Действующий RU https://adatours.ru/excursions/ открыт HTTP 200, canonical совпадает, H1 «Экскурсии по Латинской Америке», title сообщает 415 экскурсий. Это непустой общий каталог активных экскурсий, создаваемый src/pages/[...path].astro из активной коллекции Excursion; тот же тип и намерение выбора экскурсий по странам Латинской Америки."
+      ],
+      "note": "Кандидат будущего 301 со старой страницы 5 на начало соответствующего RU-каталога экскурсий. Старый page=5 не переносится: объем, сортировка и размер страниц изменились. Равенство набора из 65 и 415 не заявляется; это не sameAs и не редирект на главную сайта. Фактический 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T16:24:22.952Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 2
     }
   ],
-  "updatedAt": "2026-10-21T16:24:19.890Z",
+  "updatedAt": "2026-10-21T16:24:22.952Z",
   "leaseHistory": [
     {
       "ownerId": "reverse-worker-mvi83xgd-3cwif9g4q3",
@@ -627,5 +632,7 @@
       "reclaimedAt": "2026-10-21T16:18:41.729Z",
       "reason": "expired"
     }
-  ]
+  ],
+  "completedAt": "2026-10-21T16:24:22.952Z",
+  "lastOwner": "reverse-worker-mvib5fjy-rs5rsfvrep"
 }

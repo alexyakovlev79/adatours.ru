@@ -1767,7 +1767,34 @@
         "batchId": "vip-024",
         "batchSha": "7c762c84434809c50d6a259bc8e35a17f2c00834"
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.95,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:38:33.727Z",
+        "reason": "Тот же продукт, что review 102: источник продаёт джип-экскурсию по Тижуке, Китайской смотровой, Monkeys и Пепино; RU обещает статую Христа. Полный маршрут не соответствует.",
+        "evidence": [
+          "Прямой GET точного /excursion/... 200, canonical на тот же товар, код 110 и $188; содержимое #tab-description прочитано.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/excursions/half-day-corcovado-tijuca-private-tour.md, blob ca0a64af296576982f6146fdd8825a1b2d7e4bcc; статус и программа прочитаны."
+        ],
+        "targetEntityId": null
+      },
+      "sourceObservation": {
+        "n": 132,
+        "sourceUrl": "https://vipdeluxetravel.ru/excursion/half-day-corcovado-tijuca-private-tour",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/excursion/half-day-corcovado-tijuca-private-tour",
+        "canonical": "https://vipdeluxetravel.ru/half-day-corcovado-tijuca-private-tour",
+        "sha256": "9c3ba0c411ae1b3dec6a938143ca2facec825b64bba0aaab511f5a977f050687",
+        "title": "Half day tour Corcovado & Tijuca Forest",
+        "h1": [
+          "Индивидуальный тур на Корковадо& Тижука"
+        ],
+        "dayHeadings": []
+      }
     },
     {
       "reviewOrder": 133,
@@ -2292,7 +2319,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:39:06.818Z",
+  "updatedAt": "2026-10-21T16:39:08.333Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

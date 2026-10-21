@@ -162,7 +162,17 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7f8ac233910eacbd8768ac23.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/7f8ac233910eacbd8768ac23.html, SHA-256 d357e1dc10f370a37ad9cde9a8ea8f4d28b8e910e7c1911a73100077b8c1b09b, обход 2026-10-20T12:42:36+00:00: Индивидуальная экскурсия 4 часа: улица Вышивальщиц, Рынок ведьм, Сан-Франциско, площадь Мурильо, Килли-Килли, канатная дорога и Долина Луны; опционально гончарная мастерская, указан трансфер отель–аэропорт.",
+        "Проверен excursion_source_la_pas_siti_tur (4–5 часов, рынки, канатная дорога, Килли-Килли), но в нем нет Долины Луны. Альтернатива excursion_la_paz_city_moon_valley_four_hours включает Ла-Пас и Лунную долину, однако ее краткий MD не подтверждает канатную дорогу, мастерскую и трансфер в аэропорт. Проверены main src/content/excursions/la-pas-siti-tur.md, stable ID excursion_source_la_pas_siti_tur, canonical source-index /bolivia/la-paz/la-paz-city-tour/; живая RU-страница 21.10.2026: HTTP 200, canonical совпадает."
+      ],
+      "note": "Два действующих кандидата покрывают разные части исходной программы: la-paz-city-tour и la-paz-city-moon-valley-four-hours. Требуется редакционный выбор 301-цели для комбинированного маршрута; соответствие не назначено автоматически.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:23:33.396Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion/brazilskaya-storona-vodopadov-iguasu?page=1",
@@ -385,5 +395,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:22:46.005Z"
+  "updatedAt": "2026-10-21T15:23:33.396Z"
 }

@@ -466,7 +466,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /blog, title/H1/canonical пусты, однако содержимое не пустое: Blog Ada Tours, тематические фильтры и список датированных статей, например A Congress in Cusco, Best Latin American Countries, Brazil DMC, бизнес-делегации и VIP-поездки. HTML225164байт, SHA-256 4c35f3a6484628d310297c0a1b1d71f328f50a464fa5a8fcbf7dfef7221eebdc.",
+        "RU /blog/ проверен напрямую: HTTP404. Текущий main src/content/articles содержит только .gitkeep; национальные каталоги, страницы для агентств и туры не являются индексом этих английских публикаций.",
+        "Frozen inventory other, snapshotHttp200, title/H1 пусты, crawl001 без product/category IDs; snapshotFile отсутствует. Пустые метаданные не использованы как основание excluded: реальная страница содержит блог."
+      ],
+      "note": "Подтвержденного RU-эквивалента индекса EN-блога не найдено; это содержательная страница списка статей, а не техническая пустышка. sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:59.507Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bocas-del-toro/excursions",
@@ -549,5 +560,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:13.816Z"
+  "updatedAt": "2026-10-21T15:46:59.507Z"
 }

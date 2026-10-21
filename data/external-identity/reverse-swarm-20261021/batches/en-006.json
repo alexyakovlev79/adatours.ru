@@ -434,7 +434,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Dominican Republic | 2024-2025 Holidays to the Dominican Republic at bargain prices», H1 «Excursions to countries of Latin America». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/dominican-republic-en/excursions: HTTP 200, canonical=https://adatours.com/dominican-republic-en/excursions, H1 «Excursions to countries of Latin America».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=301&excludes%5B0%5D=themes&excludes%5B1%5D=countries. Первый ответ API: total=0, products=0. Примеры ID/названий: products=[].",
+        "https://adatours.ru/dominican-republic/excursion/ — HTTP 404. Текущий sitemap содержит страницу /dominican-republic/, но не отдельный каталог экскурсий по стране. Source-index подтверждает country_dominican_republic."
+      ],
+      "note": "EN-каталог экскурсий возвращает API total=0/products=[]. Равного действующего RU-каталога нет; страницу страны нельзя подставить как sameAs каталога.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:48.866Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/dominican-republic-en/packages",
@@ -537,5 +549,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:46.710Z"
+  "updatedAt": "2026-10-21T15:46:48.866Z"
 }

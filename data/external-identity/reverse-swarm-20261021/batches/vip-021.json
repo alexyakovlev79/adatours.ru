@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi7qkmo-qd4q87dsy6d",
-    "token": "reverse-lease-mvi7qkmo-wl28lag95e",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:34:11.668Z",
-    "expiresAt": "2026-10-21T16:04:11.668Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/panama-ru/ehkskursii-i-tury-v-stolicu-strany-gorod-panama-siti-v-paname",
@@ -602,8 +596,20 @@
       "pageType": "unclassified",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/2eaca54f679c47e63b2a318b.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/chile/place/valdivia-puerto-montt/",
+      "evidence": [
+        "Frozen VIP inventory: title \"Экскурсии и туры в Вальдивию, Пуэрто Варас, Пуэрто Монт в Чили\", H1 \"Вальдивия и Пуэрто Монт\", historical HTTP 200 (not current HTTP).",
+        "GitHub approved RU Destination destination_chile_valdiviya_i_puerto_mont, /chile/place/valdivia-puerto-montt/: Вальдивия, Пуэрто-Варас и Пуэрто-Монт вместе упомянуты в RU summary, глава описывает регион Чили."
+      ],
+      "note": "RU заголовок сокращен до двух городов, но summary покрывает все три пункта старого URL; будущий редирект не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:46:43.947Z",
+      "checkedBy": "reverse-worker-mvi7qkmo-qd4q87dsy6d",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:46:39.636Z"
+  "updatedAt": "2026-10-21T14:46:43.947Z",
+  "completedAt": "2026-10-21T14:46:43.947Z",
+  "lastOwner": "reverse-worker-mvi7qkmo-qd4q87dsy6d"
 }

@@ -102,7 +102,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12 category HTTP 200; crawlReport adatours-com-crawl-002.json, snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Kaieteur: Tours to the Legendary Waterfall and the Amazon Jungle». Реальный module/productsjson по datasrc: total=3, UID 4356 Guianas experience with local community (9 дней), 3650 Suriname, Guyana, French Guiana (14), 1150 The Three Guianas highlights (7).",
+        "Проверены main src/content/destinations/nacionalnyj-park-kajetur.md, approved destination_guyana_nacionalnyj_park_kajetur, и RU-каталог /guyana/place/kaieteur-national-park/tour/ HTTP 200. В RU ровно 3 маршрута: /multi-country/tour/guianas-adventure/ (9), /multi-country/tour/suriname-guyana-french-guiana/ (14), /multi-country/tour/suriname-guyana-french-guiana-3-countries/ (7). Проверены живые полные страницы всех шести EN/RU-программ, а не только названия в каталоге.",
+        "Расхождение 7-дневной программы: EN https://adatours.com/guyana-surinam-french-guyana сейчас Day 1 Arrival in Guyana Georgetown, Day 2 Kaieteur + flight to Suriname, Day 4 French Guiana/Cayenne, Day 6 Space center + return Suriname, Day 7 Depart Suriname. RU /multi-country/tour/suriname-guyana-french-guiana-3-countries/ начинает с прибытия в Суринам/Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 вылет из Гайаны. Иная последовательность стран и конечные аэропорты. 9- и 14-дневные кандидаты имеют совпадающую базовую последовательность."
+      ],
+      "note": "Кандидат /guyana/place/kaieteur-national-park/tour/ оставлен на редакционную сверку. Количество и названия трех программ выглядят парными, но 7-дневный текущий продукт имеет разные начало, конец и порядок стран; равенство полного состава каталога не подтверждено. SameAs не назначен; решить, являются ли это разными вариантами программы или одна версия требует актуализации.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:57:17.723Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/kourou/excursions",
@@ -565,5 +576,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:57:15.323Z"
+  "updatedAt": "2026-10-21T15:57:17.723Z"
 }

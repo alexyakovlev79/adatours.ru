@@ -210,7 +210,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/bolivia/place/santa-cruz/tour/",
+      "evidence": [
+        "21.10.2026 исходный каталог GET 200/self-canonical, HTML SHA-256 cf28ff1fee925f8cf706c8889f617fdc4181acf4b4a8d1a09970539045632824; проверен публичный productsjson, использующий datasrc страницы, SHA-256 47d7d5659950d3b86e249203abf731764e491c785972278738431b59e2193d5f. EN category_id=173/typeid=1: ровно 2 продукта Adventures in Bolivia (/adventures-in-bolivia),11 дней/10 ночей, и Treasures of Bolivia,12/11. Прочитаны обе полные программы: первый через Титикаку/Ла-Пас/Уюни/Кочабамбу/Тороторо, второй через Самаипату/Амборо/Сукре/Потоси/Уюни/Титикаку.",
+        "Проверены active MD, source-index и живой RU-каталог в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2: RU каталог destination_bolivia_santa_krus содержит ровно tour_source_priklyucheniya_v_bolivii (approved,11 дней) и tour_source_sokrovishcha_bolivii (published,12 дней). Сверены все 11/12 дневных этапов, включая Тиуанако/острова/Хуатахата, Умахаланта/каньон Верхель в первом и Сукре/Потоси/Копакабана во втором. Тип Tour, географический фильтр и состав из двух программ совпали.",
+        "Точный RU canonical отвечает HTTP 200, self-canonical, robots index,follow, H1 указывает тот же тип/место и количество. Frozen: snapshotHttp=200, pageType=category, crawlReport=adatours-com-crawl-001.json, snapshotFile отсутствует; использованы действующие EN-страницы."
+      ],
+      "note": "Подтверждён sameAs именно каталога: одинаковые тип продукта, географический фильтр и полный состав действующих предложений. Программы составляющих проверены по содержанию, не только по slug/названию. Разметка сайта не изменена.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:39:45.362Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-sucre/excursions",
@@ -469,5 +480,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:42.933Z"
+  "updatedAt": "2026-10-21T15:39:45.362Z"
 }

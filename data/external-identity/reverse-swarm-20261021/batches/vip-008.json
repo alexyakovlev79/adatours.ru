@@ -182,7 +182,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/a43ae3ccac250276847ff153.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/argentina/ushuaia/",
+      "evidence": [
+        "VIP inventory #619: /ekskursii для Ушуайи, pageType=excursion_listing, old snapshotHttp=200 без товарных заголовков.",
+        "RU active excursions: 7 экскурсий для destination_argentina_ushuajya, в том числе Огненная Земля и пингвины; src/pages/[...path].astro создает /argentina/ushuaia/."
+      ],
+      "note": "География и назначение совпадают; ассортимент старой выдачи не подтвержден. Будущий 301 в данном проходе не выполняется.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:54:30.428Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale",
@@ -395,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:54:26.822Z"
+  "updatedAt": "2026-10-21T14:54:30.428Z"
 }

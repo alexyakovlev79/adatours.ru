@@ -533,7 +533,64 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/colombia/place/villa-de-leyva/tour/",
+        "confidence": 0.4,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "Оба каталога содержат по две карточки, но наборы различаются: EN Live Colombia и Viva Colombia, RU Колумбия Live 13 дней и Колумбия за чудесами 10 дней. По сохраненной сверке первых программ Viva также 13 дней, поэтому равное количество не доказывает тождество.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/villa-de-leyva/packages",
+            "http": 200,
+            "canonical": "https://adatours.com/villa-de-leyva/packages",
+            "h1": [
+              "Villa de Leyva: Tours to Colombia's Colonial Gem"
+            ],
+            "sha256": "3d6bf2792de64324152316fb6ca9041dc43171cc9ff66b11d750f014f70e761d",
+            "checkedAt": "2026-10-21T16:30:06.501818+00:00",
+            "htmlCards": [
+              {
+                "text": "Live Colombia",
+                "href": null
+              },
+              {
+                "text": "Viva Colombia",
+                "href": null
+              }
+            ],
+            "offerCount": [
+              "2"
+            ]
+          },
+          {
+            "url": "https://adatours.ru/colombia/place/villa-de-leyva/tour/",
+            "http": 200,
+            "canonical": "https://adatours.ru/colombia/place/villa-de-leyva/tour/",
+            "h1": [
+              "2 тура 2026-2027 в Вилья-де-Лейве (Колумбии) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours"
+            ],
+            "sha256": "73e3782dca74f7ed919780dda7dd4e5e3470a3a5bd0479dd09e53e8834b12c29",
+            "checkedAt": "2026-10-21T16:30:03.524001+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "2"
+            ]
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:32:00.849Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 308,
@@ -623,5 +680,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:59.325Z"
+  "updatedAt": "2026-10-21T16:32:00.849Z"
 }

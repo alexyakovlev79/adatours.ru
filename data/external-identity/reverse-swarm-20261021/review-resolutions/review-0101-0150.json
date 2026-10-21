@@ -2790,7 +2790,35 @@
         "batchId": "vip-028",
         "batchSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/brazil/tour/tropical-wedding-ceremony/",
+        "relation": "redirect_301",
+        "confidence": 0.9,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:40:41.915Z",
+        "reason": "Выбран конкретный действующий пакет «Тропическая свадебная церемония». Совпадают уникальное название продукта и цена $4063; среди RU-программ есть именно эта миграционная сущность, другие церемонии имеют иные названия и цены.",
+        "evidence": [
+          "VIP GET 200: H1 «Тропическая свадебная церемония», код 2835 и цена $4063. Описание пустое, прежняя длительность и место источником не подтверждены.",
+          "RU approved: «Тропическая свадебная церемония» в Рио, 1 день, $4063; совпадение исходного намерения оценено выше 70%, старый состав пакета не утверждается.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/wedding-ceremony-tropical-package.md, blob 59aa81ef8c5fc48f5853070477da0be0a350622b; статус и программа прочитаны."
+        ],
+        "targetEntityId": "tour_source_wedding_ceremony_tropical_package"
+      },
+      "sourceObservation": {
+        "n": 147,
+        "sourceUrl": "https://vipdeluxetravel.ru/package/wedding-ceremony-tropical-package?page=8",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/wedding-ceremony-tropical-package",
+        "canonical": "https://vipdeluxetravel.ru/wedding-ceremony-tropical-package",
+        "sha256": "090ddc9875bdddc53d47024751115694764f3766ea0c6e6151377de89530604a",
+        "title": "Тропическая свадебная церемония",
+        "h1": [
+          "Тропическая свадебная церемония"
+        ],
+        "dayHeadings": []
+      }
     },
     {
       "reviewOrder": 148,
@@ -2880,7 +2908,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:41:15.318Z",
+  "updatedAt": "2026-10-21T16:41:17.309Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

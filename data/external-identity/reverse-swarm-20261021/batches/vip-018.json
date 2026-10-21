@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi86yku-dha0g5sqqgq",
-    "token": "reverse-lease-mvi86yku-tjbnlwwx4b",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:46:56.469Z",
-    "expiresAt": "2026-10-21T16:16:56.469Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/venesuela-ru/ehkskursii-i-tury-v-stolicu-venesuehly-gorod-karakas",
@@ -602,8 +596,20 @@
       "pageType": "unclassified",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/872e107a4c37c58d85048760.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/dominican-republic/place/samana/",
+      "evidence": [
+        "Frozen VIP inventory #940: title «Туры и экскурсии на полуостров Самана в Доминикане», H1 «Самана», snapshotHttp=200; HTML исходного сайта не читался.",
+        "Проверен активный RU MD src/content/destinations/samana.md: id=destination_dominican_republic_samana, status=approved, name «Самана», countryId=country_dominican_republic, summary описывает полуостров Самана с пляжами и водопадами; canonical /dominican-republic/place/samana/."
+      ],
+      "note": "В старой посадочной и действующей RU странице основной референт — полуостров Самана в Доминикане. Подготовлен будущий 301 по географии без заявления тождественности ассортимента экскурсий; перед применением проверить живые HTTP-ответы.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:09:46.086Z",
+      "checkedBy": "reverse-worker-mvi86yku-dha0g5sqqgq",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:09:24.962Z"
+  "updatedAt": "2026-10-21T15:09:46.086Z",
+  "completedAt": "2026-10-21T15:09:46.086Z",
+  "lastOwner": "reverse-worker-mvi86yku-dha0g5sqqgq"
 }

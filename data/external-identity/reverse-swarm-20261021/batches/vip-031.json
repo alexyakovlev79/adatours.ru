@@ -326,7 +326,18 @@
       "pageType": "tour_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/d0ce9ddeb1f64c10721609a5.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/",
+      "evidence": [
+        "Проверен snapshots/d0ce9ddeb1f64c10721609a5.html, SHA-256 d475a1838fcc696a21fb06746c4abfc41be2eabbfa33e46fd51e492d72c72709 совпал с inventory. 17-дневный Гранд-тур с частной авиацией: Сантьяго/винная долина, Остров Пасхи дни 3–5, Атакама день 6, Торрес-дель-Пайне, Калафате/Перито-Морено, Мендоса/Лужан, обе стороны Игуасу, Буэнос-Айрес/танго.",
+        "Проверены content MD и source-index текущего main aafd4b2da015d669e477eedffb3c956ede417992: tour_chile_argentina_private_grand_tour_17_days в src/content/tours/chile-argentina-private-grand-tour-17-days.md, approved, 17 дней; совпадают все 17 основных этапов, чартер на Пасхи, частный джет через Каламу, 3 винодельни Лужан и танго-шоу день 16.",
+        "21.10.2026 GET точного выбранного RU URL: HTTP 200, self-canonical, robots index,follow; H1 подтверждает выбранную программу."
+      ],
+      "note": "Найден отдельный действующий 17-дневный продукт с соответствующим маршрутом. Похожий /multi-country/tour/chile-argentina-vip/ на 26 дней отвергнут. В исходном тексте дня 6 есть вставка об Ушуайе, противоречащая заголовку; RU-программа следует основному 17-дневному маршруту. Подготовлен будущий 301, без включения.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:27:43.002Z",
+      "checkedBy": "reverse-worker-mvi9bqoq-z10jgc5usm7",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/package/meksika-lindo?page=1",
@@ -519,5 +530,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:27:03.378Z"
+  "updatedAt": "2026-10-21T15:27:43.002Z"
 }

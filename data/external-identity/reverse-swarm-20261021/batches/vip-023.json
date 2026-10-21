@@ -162,7 +162,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/9db25a31dfaaad38cb1634bf.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP crawl 2026-10-20: HTTP 200, H1 empty, title \"Авторизация\", finalUrl /?route=account/login for requested OpenCart account/edit.",
+        "No equivalent public account-edit entity or indexable travel content exists in current RU Ada Tours routes."
+      ],
+      "note": "Служебный маршрут редактирования профиля пользователя перенаправляет на авторизацию; в карту туристических 301 не входит.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:04:34.716Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=account%2Fpassword",
@@ -385,5 +395,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:04:13.564Z"
+  "updatedAt": "2026-10-21T15:04:34.716Z"
 }

@@ -212,7 +212,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN GET 21.10.2026 HTTP 200: /fishing-tours — тематическая страница FISHING TOURS TO THE AMAZON TO SOUTH AND CENTRAL AMERICA. Проверен используемый сайтом /?route=module/productsjson с точным datasrc category_id=349: 6 продуктов — Fishing in Rio de Janeiro, The Pantanal for 5 days, The Pantanal (4 days/3 nights), Fishing in the Pantanal, Fishing in Costa Rica, Sport Fishing–Pousada Mamori; slice=2 возвращает products:[], total:0.",
+        "RU GET https://adatours.ru/interests/fishing/ HTTP 200: 8 маршрутов, включая «Озёра Патагонии: рыбалка и отдых в Lakeshore Chalet на 10 дней», «Рыбалка в Ушуайе», «Агробизнес в Бразилии» и «Амазония, саванна и Пантанал». Реестр интересов main: theme_fishing."
+      ],
+      "note": "Полный полученный EN-набор из шести продуктов не совпадает с восемью текущими RU-маршрутами. Есть совпадающие отдельные программы Mamori/Коста-Рика/Пантанал, но каталоги как сущности не идентичны; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:47:32.375Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/flores-tikal/excursions",
@@ -585,5 +595,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:46:02.998Z"
+  "updatedAt": "2026-10-21T15:47:32.375Z"
 }

@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9c6r7-ij5ljbuti",
-    "token": "reverse-lease-mvi9c6r7-4dxoanntipi",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:31:29.893Z",
-    "expiresAt": "2026-10-21T17:01:29.893Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/bariloche/packages",
@@ -637,8 +631,22 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /bolivia-copacabana-lake-titicaca/packages self canonical, H1 Copacabana & Isla del Sol: Tours on Lake Titicaca and Inca Ruins. 10 карточек, включая 5 country-tour, Adventures in Bolivia, Peru&Bolivia, Bolivia at Glance, Peru Great Inca Expedition, 21 Day Adventure in Peru, Feeling Peru/Ecuador VIP, Marvels of Peru, Treasures of Bolivia, Great Inca Expedition. SHA-256 fa7d641ecdf28bd9e8a55cc9db7967c1a64f63f1d043627d7931a97cbc4e1157.",
+        "RU live HTTP200 /bolivia/place/copacabana/tour/ self canonical: тоже10, но другой состав, например Перу/Боливия/Чили14д, Перу/Боливия с Уюни12д, Уюни/озёра15д, Мечта Боливии7д, Очаровательные Перу/Боливия10д. Нет EN-карточек 21 Day Adventure in Peru и Marvels of Peru. SHA-256 deae73bb5ea7ec84ddfaa68a55bc99b4e0eae6ec6905395fc131a2351101e423.",
+        "RU live HTTP200 /bolivia/place/lake-titicaca-bolivia/tour/ self canonical:9 туров, включая VIP Чили/Боливия/Перу12д и программы боливийского берега; SHA-256 d7ce8ca065b9f1b961c6637bad7b445df12e8bbac2c6c034af2be7bb50fc0250. Обе точные RU-категории проверены вместо выбора по slug.",
+        "Frozen EN category_id168, HTTP200, snapshotFile отсутствует. Составной EN-фильтр Копакабана/Титикака включает ряд чисто перуанских программ и не совпадает ни с городским RU-фильтром, ни с боливийским берегом озера."
+      ],
+      "note": "sameAs не подтвержден: одинаковое число10 у EN и RU-Копакабаны скрывает разный набор туров; RU-Титикака имеет9 и другой фильтр. Требуется разбор ассортимента/географии источника, одной RU-цели не назначено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:52:23.372Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:51:39.115Z"
+  "updatedAt": "2026-10-21T15:52:23.372Z",
+  "completedAt": "2026-10-21T15:52:23.372Z",
+  "lastOwner": "reverse-worker-mvi9c6r7-ij5ljbuti"
 }

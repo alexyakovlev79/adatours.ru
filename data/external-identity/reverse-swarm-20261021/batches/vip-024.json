@@ -551,7 +551,18 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/ba76462e2de54e80d5ffe017.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/excursions/",
+      "evidence": [
+        "Архив и GET 21.10.2026 HTTP 200: H1 Excursion; это страница 2 общего каталога, позиции 16–30 из 65, 15 товарных карточек. Примеры: Корковадо и лес Тижука; Макуко-Сафари; Национальный парк Огненная земля; Обзорная экскурсия по Сантьяго. Состав видимых карточек совпал с архивным; отдельного фильтра страны/места в URL нет.",
+        "Frozen snapshots/ba76462e2de54e80d5ffe017.html, SHA-256 457249a7e295493aa76748affe33f06768a9ca60f6dfb2ca11d30d01ba6b9433; snapshotHttp 200, inventory pageType excursion_candidate. HTML прочитан и контрольная сумма подтверждена; фактически это каталог, а не самостоятельный продукт.",
+        "Действующий RU https://adatours.ru/excursions/ открыт HTTP 200, canonical совпадает, H1 «Экскурсии по Латинской Америке», title сообщает 415 экскурсий. Это непустой общий каталог активных экскурсий, создаваемый src/pages/[...path].astro из активной коллекции Excursion; тот же тип и намерение выбора экскурсий по странам Латинской Америки."
+      ],
+      "note": "Кандидат будущего 301 со старой страницы 2 на начало соответствующего RU-каталога экскурсий. Старый page=2 не переносится: объем, сортировка и размер страниц изменились. Равенство набора из 65 и 415 не заявляется; это не sameAs и не редирект на главную сайта. Фактический 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T16:24:09.990Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 2
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=3",
@@ -584,7 +595,7 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:23:33.851Z",
+  "updatedAt": "2026-10-21T16:24:09.990Z",
   "leaseHistory": [
     {
       "ownerId": "reverse-worker-mvi83xgd-3cwif9g4q3",

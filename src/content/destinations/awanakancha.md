@@ -9,7 +9,10 @@ destinationType: "natural_area"
 summary: "Андские животные и традиционное ткачество на дороге между Куско и Писаком."
 searchAliases: ["Awanakancha","auanakancha"]
 themes: ["theme_culture"]
-hero: {"src":"/media/destinations/destination_peru_auanakancha/hero-generated-20261009-v1.webp","alt":"Лама и две альпаки у каменной ограды Ауанаканчи, Перу","status":"approved", hover: "Ауанаканча: животные на фоне сухих горных склонов"}
+hero:
+  src: "/media/destinations/awanakancha/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Ауанаканча — иллюстрация"
+  status: "approved"
 gallery: []
 relatedDestinations: []
 featuredTours: []

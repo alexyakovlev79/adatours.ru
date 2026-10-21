@@ -9,9 +9,8 @@ destinationType: city
 summary: Исторический квартал Панама-Сити с узкими улицами, церквями и площадями. Здесь знакомятся с колониальным
   наследием столицы на пешей прогулке.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-3-20261010-enhanced-20261011-pass2324-v1.webp
-  hover: "Каско-Вьехо: яркие украшения над узкой улицей старого города"
-  alt: "Пешеходная улица Каско-Вьехо с цветными фасадами и подвесными украшениями, Панама-Сити"
+  src: "/media/destinations/casco-viejo/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Каско-Вьехо — иллюстрация"
 gallery: []
 themes:
 - theme_culture

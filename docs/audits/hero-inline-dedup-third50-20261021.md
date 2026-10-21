@@ -1,6 +1,6 @@
 # Третья партия 50 индивидуальных hero — 21 октября 2026
 
-Подключено 30 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
+Подключено 40 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
 
 | № | Страница | Статус |
 |---|---|---|
@@ -34,16 +34,16 @@
 | 28 | [Сочимилько](https://adatours.ru/mexico/place/xochimilco/) | Подключено, S3 проверен |
 | 29 | [Эстели](https://adatours.ru/nicaragua/place/esteli/) | Подключено, S3 проверен |
 | 30 | [Островки Гранады — Лас-Ислетас](https://adatours.ru/nicaragua/place/granada-islets/) | Подключено, S3 проверен |
-| 31 | [Каско-Вьехо](https://adatours.ru/panama/place/casco-viejo/) | Зарезервировано |
-| 32 | [Река Чагрес](https://adatours.ru/panama/place/chagres-river/) | Зарезервировано |
-| 33 | [Гамбоа](https://adatours.ru/panama/place/gamboa/) | Зарезервировано |
-| 34 | [Шлюзы Мирафлорес](https://adatours.ru/panama/place/miraflores-locks/) | Зарезервировано |
-| 35 | [Остров обезьян на озере Гатун](https://adatours.ru/panama/place/monkey-island-gatun/) | Зарезервировано |
-| 36 | [Панамский канал](https://adatours.ru/panama/place/panama-canal/) | Зарезервировано |
-| 37 | [Панама-Сити](https://adatours.ru/panama/place/panama-city/) | Зарезервировано |
-| 38 | [Центр изучения тропического леса Панамы](https://adatours.ru/panama/place/panama-rainforest-discovery-center/) | Зарезервировано |
-| 39 | [Ауанаканча](https://adatours.ru/peru/place/awanakancha/) | Зарезервировано |
-| 40 | [Каньон Колка](https://adatours.ru/peru/place/colca-canyon/) | Зарезервировано |
+| 31 | [Каско-Вьехо](https://adatours.ru/panama/place/casco-viejo/) | Подключено, S3 проверен |
+| 32 | [Река Чагрес](https://adatours.ru/panama/place/chagres-river/) | Подключено, S3 проверен |
+| 33 | [Гамбоа](https://adatours.ru/panama/place/gamboa/) | Подключено, S3 проверен |
+| 34 | [Шлюзы Мирафлорес](https://adatours.ru/panama/place/miraflores-locks/) | Подключено, S3 проверен |
+| 35 | [Остров обезьян на озере Гатун](https://adatours.ru/panama/place/monkey-island-gatun/) | Подключено, S3 проверен |
+| 36 | [Панамский канал](https://adatours.ru/panama/place/panama-canal/) | Подключено, S3 проверен |
+| 37 | [Панама-Сити](https://adatours.ru/panama/place/panama-city/) | Подключено, S3 проверен |
+| 38 | [Центр изучения тропического леса Панамы](https://adatours.ru/panama/place/panama-rainforest-discovery-center/) | Подключено, S3 проверен |
+| 39 | [Ауанаканча](https://adatours.ru/peru/place/awanakancha/) | Подключено, S3 проверен |
+| 40 | [Каньон Колка](https://adatours.ru/peru/place/colca-canyon/) | Подключено, S3 проверен |
 | 41 | [Куско](https://adatours.ru/peru/place/cusco/) | Зарезервировано |
 | 42 | [Перевал Ла-Рая](https://adatours.ru/peru/place/la-raya-pass/) | Зарезервировано |
 | 43 | [Музей Ларко](https://adatours.ru/peru/place/larco-museum/) | Зарезервировано |

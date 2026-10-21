@@ -9,9 +9,8 @@ destinationType: route_cluster
 summary: Шлюзы, озеро Гатун и суда на пути между океанами. В Панаме канал можно увидеть с площадок Мирафлорес и
   с лодки у лесных берегов.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-4-20261010-enhanced-20261011-doc-v1.webp
-  hover: "Панамский канал: шлюзовые камеры и подходящие к ним суда"
-  alt: "Суда в шлюзах Панамского канала среди зеленых берегов, вид сверху"
+  src: "/media/destinations/panama-canal/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Панамский канал — иллюстрация"
 gallery: []
 themes:
 - theme_culture

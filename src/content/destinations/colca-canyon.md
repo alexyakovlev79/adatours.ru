@@ -8,9 +8,8 @@ countryId: country_peru
 destinationType: city
 summary: Каньон Колка в Перу, горная долина с глубокими склонами и наблюдением за андскими кондорами.
 hero:
-  src: /media/excursions/kanon-kolka-i-polet-kondora/hero-enhanced-20261001.webp
-  hover: "Каньон Колка: горная долина и сельскохозяйственные террасы"
-  alt: "Река на дне каньона Колка среди сухих склонов и террас, Перу"
+  src: "/media/destinations/colca-canyon/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Каньон Колка — иллюстрация"
 gallery:
 - src: /media/destinations/isla-del-sol/hero-enhanced-20261003.webp
   hover: "Каньон Колка в Перу: река среди горных склонов и террас"

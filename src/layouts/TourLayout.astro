@@ -1,4 +1,5 @@
 ---
+import HorizontalLinkList from '../components/editorial/HorizontalLinkList.astro';
 import { themeIds } from '../lib/interest-model.mjs';
 import { getVipTourPaths } from '../lib/vip-catalog';
 import { seoTourTitle, seoAttractionsDescription } from '../lib/seo-page.mjs';
@@ -106,8 +107,8 @@ const metaDescription = /достопримечательност/iu.test(d.titl
   : d.lead;
 const mainCountryEntries = mainTourCountryIds(d).map((id) => countryById.get(id)).filter(Boolean);
 const placeGroups = [
-  { label: 'Места маршрута', entries: mainPlaces, collapsible: true },
-  { label: 'Места дополнительных экскурсий', entries: optionalPlaces, collapsible: false },
+  { label: 'Места маршрута', entries: mainPlaces },
+  { label: 'Места дополнительных экскурсий', entries: optionalPlaces },
 ];
 const durationLabel = d.durationDays
   ? `${d.durationDays} ${pluralRu(d.durationDays, 'день', 'дня', 'дней')}`
@@ -185,39 +186,31 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
       {mainCountryEntries.length > 0 && (
         <nav class="tour-links__group" aria-label="Страны маршрута">
           <p class="tour-links__label">Страны маршрута</p>
-          <ul>
+          <HorizontalLinkList>
             {mainCountryEntries.map((country) => (
               <li><a href={withBase(countryPath(country.data))}>{country.data.name}</a></li>
             ))}
-          </ul>
+          </HorizontalLinkList>
         </nav>
       )}
       {placeGroups.filter((group) => group.entries.length).map((group) => (
-        <nav class="tour-links__group" aria-label={group.label} data-tour-places={group.collapsible ? '' : undefined}>
+        <nav class="tour-links__group" aria-label={group.label}>
           <p class="tour-links__label">{group.label}</p>
-          <ul id={group.collapsible ? 'tour-places-' + d.id : undefined} data-tour-places-list={group.collapsible ? '' : undefined}>
+          <HorizontalLinkList>
             {group.entries.map((item) => (
               <li>{item.href ? <a href={withBase(item.href)}>{item.name}</a> : <span>{item.name}</span>}</li>
             ))}
-          </ul>
-          {group.collapsible && (
-            <button class="tour-links__more" type="button" aria-expanded="false" aria-controls={'tour-places-' + d.id} data-tour-places-toggle hidden>
-              <span data-tour-places-label>Все достопримечательности</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-          )}
+          </HorizontalLinkList>
         </nav>
       ))}
       {linkedInterests.length > 0 && (
         <nav class="tour-links__group tour-links__group--interests" aria-label="Интересы поездки">
           <p class="tour-links__label">По интересам</p>
-          <ul>
+          <HorizontalLinkList>
             {linkedInterests.map((theme) => (
               <li><a href={withBase(themePath(theme))}>{theme.name}</a></li>
             ))}
-          </ul>
+          </HorizontalLinkList>
         </nav>
       )}
     </div>
@@ -316,62 +309,8 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
       document.fonts.ready.then(update);
     });
   };
-  const initTourPlaces = () => {
-    document.querySelectorAll<HTMLElement>('[data-tour-places]').forEach((group) => {
-      if (group.dataset.placesReady) return;
-      const list = group.querySelector<HTMLUListElement>('[data-tour-places-list]');
-      const toggle = group.querySelector<HTMLButtonElement>('[data-tour-places-toggle]');
-      const label = group.querySelector<HTMLElement>('[data-tour-places-label]');
-      if (!list || !toggle || !label) return;
-      group.dataset.placesReady = 'true';
-      let expanded = false;
-
-      const update = () => {
-        const items = Array.from(list.children) as HTMLLIElement[];
-        // Count actual flex rows, not places: the number varies with screen width.
-        const rowTops = [...new Set(items.map((item) => item.offsetTop))].sort((a, b) => a - b);
-        const hasMore = matchMedia('(max-width: 760px)').matches && rowTops.length >= 5;
-
-        if (hasMore) {
-          const thirdRow = items.filter((item) => item.offsetTop === rowTops[2]);
-          const listTop = list.getBoundingClientRect().top;
-          const fadeStart = Math.max(0, Math.floor(thirdRow[0].getBoundingClientRect().top - listTop));
-          const previewHeight = Math.ceil(Math.max(...thirdRow.map((item) => item.getBoundingClientRect().bottom)) - listTop);
-          list.style.setProperty('--tour-places-fade-start', fadeStart + 'px');
-          list.style.setProperty('--tour-places-preview-height', previewHeight + 'px');
-        }
-
-        const collapsed = hasMore && !expanded;
-        list.classList.toggle('is-collapsed', collapsed);
-        const fourthRowTop = hasMore ? rowTops[3] : Infinity;
-        // Clipped links should not receive keyboard focus until the list is expanded.
-        items.forEach((item) => { item.inert = collapsed && item.offsetTop >= fourthRowTop; });
-        toggle.hidden = !hasMore;
-        toggle.setAttribute('aria-expanded', String(hasMore && expanded));
-        label.textContent = expanded ? 'Свернуть' : 'Все достопримечательности';
-      };
-
-      toggle.addEventListener('click', () => {
-        expanded = !expanded;
-        update();
-        if (!expanded && group.getBoundingClientRect().top < 0) {
-          window.scrollTo({
-            top: Math.max(0, window.scrollY + group.getBoundingClientRect().top - 20),
-            behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-          });
-        }
-      });
-
-      update();
-      window.addEventListener('resize', update);
-      document.fonts.ready.then(update);
-    });
-  };
-
   initTourDescriptions();
-  initTourPlaces();
   document.addEventListener('astro:page-load', initTourDescriptions);
-  document.addEventListener('astro:page-load', initTourPlaces);
 </script>
 
 <style>
@@ -445,15 +384,13 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     text-transform: uppercase;
     color: color-mix(in srgb, var(--color-ink) 72%, transparent);
   }
-  .tour-links ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
-  .tour-links li { max-width: 100%; font-size: clamp(.875rem, .85rem + .15vw, 1rem); line-height: 1.4; }
+  .tour-links li { font-size: clamp(.875rem, .85rem + .15vw, 1rem); line-height: 1.4; }
   .tour-links a, .tour-links li > span {
     display: block;
     padding: 6px 10px;
     border: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
     border-radius: 6px;
     background: color-mix(in srgb, var(--color-champagne) 12%, var(--color-bg));
-    overflow-wrap: anywhere;
     text-decoration: none;
     transition: background-color .15s ease, border-color .15s ease;
   }
@@ -466,52 +403,8 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     background: color-mix(in srgb, var(--color-champagne) 40%, var(--color-bg));
   }
   .tour-links li > span { border-style: dashed; background: transparent; }
-  .tour-links__more {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    justify-self: center;
-    min-height: 44px;
-    max-width: 100%;
-    margin-top: 4px;
-    padding: 8px 16px;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 14%, transparent);
-    border-radius: 6px;
-    background: color-mix(in srgb, var(--color-champagne) 12%, var(--color-bg));
-    color: var(--color-ink);
-    font-size: var(--text-base);
-    font-weight: 500;
-    line-height: 1.35;
-    text-align: center;
-    cursor: pointer;
-  }
-  .tour-links__more:hover, .tour-links__more:focus-visible {
-    border-color: var(--color-gold-deep);
-    background: color-mix(in srgb, var(--color-champagne) 35%, var(--color-bg));
-  }
-  .tour-links__more svg { flex: none; transition: transform .2s ease; }
-  .tour-links__more[aria-expanded="true"] svg { transform: rotate(180deg); }
   @media (max-width: 760px) {
     .tour-links__group { grid-template-columns: minmax(0, 1fr); gap: 8px; padding-block: 12px; }
     .tour-links__label { margin: 0; }
-    .tour-links [data-tour-places-list].is-collapsed {
-      max-height: var(--tour-places-preview-height);
-      overflow: hidden;
-      -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 var(--tour-places-fade-start), transparent var(--tour-places-preview-height));
-      mask-image: linear-gradient(to bottom, #000 0, #000 var(--tour-places-fade-start), transparent var(--tour-places-preview-height));
-    }
-    .tour-links__more:not([hidden]) { display: flex; }
-  }
-  @media print {
-    .tour-links [data-tour-places-list].is-collapsed {
-      max-height: none;
-      overflow: visible;
-      -webkit-mask-image: none;
-      mask-image: none;
-    }
-    .tour-links__more { display: none !important; }
   }
 </style>
-
-

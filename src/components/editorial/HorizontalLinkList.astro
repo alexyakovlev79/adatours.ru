@@ -1,0 +1,110 @@
+<ul class="horizontal-link-list" data-horizontal-links tabindex="0">
+  <slot />
+</ul>
+
+<script>
+  const initHorizontalLinks = () => {
+    document.querySelectorAll<HTMLUListElement>('[data-horizontal-links]').forEach((list) => {
+      if (list.dataset.scrollReady) return;
+      list.dataset.scrollReady = 'true';
+
+      const update = () => {
+        const overflows = list.scrollWidth > list.clientWidth + 1;
+        list.classList.toggle('is-scrollable', overflows);
+        list.tabIndex = overflows ? 0 : -1;
+      };
+      update();
+      new ResizeObserver(update).observe(list);
+      document.fonts.ready.then(update);
+
+      // Translate a mouse wheel into horizontal movement; release page scrolling at the ends.
+      list.addEventListener('wheel', (event) => {
+        if (event.ctrlKey || Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;
+        const unit = event.deltaMode === 1 ? 24 : event.deltaMode === 2 ? list.clientWidth : 1;
+        const previous = list.scrollLeft;
+        list.scrollLeft += event.deltaY * unit;
+        if (list.scrollLeft !== previous) event.preventDefault();
+      }, { passive: false });
+
+      let pointerId: number | null = null;
+      let startX = 0;
+      let startScroll = 0;
+      let dragged = false;
+      list.addEventListener('pointerdown', (event) => {
+        if (event.pointerType !== 'mouse' || event.button !== 0 || !list.classList.contains('is-scrollable')) return;
+        pointerId = event.pointerId;
+        startX = event.clientX;
+        startScroll = list.scrollLeft;
+        dragged = false;
+      });
+      list.addEventListener('pointermove', (event) => {
+        if (event.pointerId !== pointerId) return;
+        const distance = event.clientX - startX;
+        if (!dragged && Math.abs(distance) < 5) return;
+        if (!dragged) {
+          dragged = true;
+          list.setPointerCapture(event.pointerId);
+          list.classList.add('is-dragging');
+        }
+        event.preventDefault();
+        list.scrollLeft = startScroll - distance;
+      });
+      const finishDrag = () => {
+        if (pointerId !== null && list.hasPointerCapture(pointerId)) list.releasePointerCapture(pointerId);
+        pointerId = null;
+        list.classList.remove('is-dragging');
+        // The click following pointerup must not open a link after dragging.
+        setTimeout(() => { dragged = false; }, 0);
+      };
+      list.addEventListener('pointerup', finishDrag);
+      list.addEventListener('pointercancel', finishDrag);
+      list.addEventListener('lostpointercapture', finishDrag);
+      list.addEventListener('pointerleave', () => { if (!dragged) pointerId = null; });
+      list.addEventListener('dragstart', (event) => event.preventDefault());
+      list.addEventListener('click', (event) => {
+        if (dragged) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+      }, true);
+
+      list.addEventListener('keydown', (event) => {
+        if (event.target !== list) return;
+        const step = Math.max(120, list.clientWidth * .7);
+        if (event.key === 'ArrowRight') list.scrollLeft += step;
+        else if (event.key === 'ArrowLeft') list.scrollLeft -= step;
+        else if (event.key === 'Home') list.scrollLeft = 0;
+        else if (event.key === 'End') list.scrollLeft = list.scrollWidth;
+        else return;
+        event.preventDefault();
+      });
+    });
+  };
+  initHorizontalLinks();
+  document.addEventListener('astro:page-load', initHorizontalLinks);
+</script>
+
+<style>
+  .horizontal-link-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 6px;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 3px 2px 6px;
+    list-style: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-line) transparent;
+  }
+  .horizontal-link-list > :global(li) { flex: 0 0 auto; white-space: nowrap; }
+  .horizontal-link-list.is-scrollable { cursor: grab; }
+  .horizontal-link-list.is-dragging { cursor: grabbing; user-select: none; }
+  .horizontal-link-list.is-dragging :global(a) { cursor: grabbing; }
+  .horizontal-link-list:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 2px; }
+  @media print {
+    .horizontal-link-list { flex-wrap: wrap; overflow: visible; }
+  }
+</style>

@@ -2721,7 +2721,47 @@
         "batchId": "vip-028",
         "batchSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/ecuador/tour/ecuador-galapagos-islands/",
+        "relation": "redirect_301",
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:40:41.915Z",
+        "reason": "Полная 11-дневная программа подтверждает нужный RU-тур: Кито, экватор, Килотоа, Баньос, Амазония, Папаякта, Галапагосы, Бартоломе и Сеймур/Пласа. Другие 8–18-дневные предложения отклонены.",
+        "evidence": [
+          "VIP GET 200: прочитаны все дни #tab-subdesc, день 11 вылет; конкретный маршрут, а не общий заголовок.",
+          "RU main: те же 11 дней и последовательность материк/острова; текущие даты 1–11.09.2027 относятся к новой редакции.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/tours/ves-ekvador-galapagosskie-ostrova.md, blob 5f06d6b0cf5eb8377df1825ab28fbf3935794301; статус и программа прочитаны."
+        ],
+        "targetEntityId": "tour_source_ves_ekvador_galapagosskie_ostrova"
+      },
+      "sourceObservation": {
+        "n": 146,
+        "sourceUrl": "https://vipdeluxetravel.ru/package/ves-ekvador-galapagosskie-ostrova?page=8",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/ves-ekvador-galapagosskie-ostrova",
+        "canonical": "https://vipdeluxetravel.ru/ves-ekvador-galapagosskie-ostrova",
+        "sha256": "c488d0e6441f2f177dee95de062f83d109f9f069e05e7f5530090cb294c764c7",
+        "title": "Эквадор + Галапагосские острова",
+        "h1": [
+          "Весь Эквадор + Галапагосские острова"
+        ],
+        "dayHeadings": [
+          "День 1:  Кито",
+          "День 2:   Кито",
+          "День 3:  Кито-Килотоа-Баньос",
+          "День 4: Баньос",
+          "День 5:  Баньос-Амазония",
+          "День 6:  Амазония",
+          "День 7: Амазония-Папаякта",
+          "День 8-11:  Папаякта-Кито-Галапагосские Острова-Гуаякиль",
+          "День 9: Морская Экскурсия на Остров Бартоломе",
+          "День 10: Морская Экскурсия на Остров Сеймур Или Пласа",
+          "День 11:"
+        ]
+      }
     },
     {
       "reviewOrder": 147,
@@ -2840,7 +2880,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:41:13.631Z",
+  "updatedAt": "2026-10-21T16:41:15.318Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

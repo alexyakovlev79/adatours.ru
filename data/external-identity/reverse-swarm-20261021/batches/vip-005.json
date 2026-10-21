@@ -382,7 +382,17 @@
       "pageType": "unclassified",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7454e1d1be0370cd037cf6b5.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #539: snapshotHttp=200, pageType=unclassified, title=\"Экскурсии и туры на остров Сан-Андрес-и-Провиденсия в Колумбии\", H1=\"Сан-Андрес\", snapshotFile=snapshots/7454e1d1be0370cd037cf6b5.html. Live VIP запрос не удался.",
+        "VIP frozen title называет «Сан-Андрес-и-Провиденсия», хотя H1 «Сан-Андрес»; текущий RU MD src/content/destinations/san-andres.md, id=destination_colombia_san_andres (status approved), описывает остров Сан-Андрес и пляжи, но не содержит самостоятельного описания острова Провиденсия."
+      ],
+      "note": "Неоднозначен охват исходной страницы: заголовок VIP объединяет Сан-Андрес и Провиденсию, а кандидат RU /colombia/place/san-andres/ описывает только Сан-Андрес. До 301 нужна редакционная сверка объема, не назначать более узкую цель автоматически.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:51:28.153Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-san-andres-i-providensiya-v-kolumbii/packages",
@@ -495,5 +505,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:51:23.326Z"
+  "updatedAt": "2026-10-21T14:51:28.153Z"
 }

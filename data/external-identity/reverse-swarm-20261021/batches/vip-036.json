@@ -262,7 +262,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7956a07490494e38c81e9635.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/7956a07490494e38c81e9635.html, SHA-256 c6840c8b527e7411f613f0b3b5604f21f6f12f26487a2c39fdca5a1f213dd9d3, обход 2026-10-20T13:13:51+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Blue Tree Towers Recife». Blue Tree Towers Recife — гостиница на пляже Piedade в Jaboatão dos Guararapes, в 10 минутах от аэропорта Ресифи по тексту; в хлебных крошках ошибочно/противоречиво указана Олинда.",
+        "Проверены актуальные main source-index каталоги destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf): самостоятельной страницы Blue Tree Towers Recife по названию/бренду не установлено. В src/content.config.ts нет hotel collection, маршрутизатор [...path].astro не выделяет hotel detail; общий тур/город не доказывает соответствия гостинице."
+      ],
+      "note": "Проверена самостоятельная карточка Blue Tree Towers Recife; география исходника: Жабоатан-дус-Гуарарапис по основному тексту; Олинда в крошках. Подтвержденная текущая RU-страница именно этой гостиницы в просмотренном source-index не найдена. Другой отель той же сети, туристический город и тур с возможным размещением не назначены 301-целью.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:10.097Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/bourbon-cataratas?page=1",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:06.457Z"
+  "updatedAt": "2026-10-21T15:33:10.097Z"
 }

@@ -102,7 +102,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/f4e8c22891b5c6efa588a691.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/el-salvador/place/san-salvador/tour/",
+      "evidence": [
+        "Frozen VIP inventory #525: snapshotHttp=200, pageType=tour_listing, title=\"(empty)\", H1=\"(empty)\"; snapshotFile=snapshots/f4e8c22891b5c6efa588a691.html; live HTTP не проверен.",
+        "Основной Tour-каталог места destination_el_salvador_san_salvador через tourDestinationPath(): 5 неархивных Tour в source-index; проверен опубликованный Tour tour_source_gvatemala_gonduras_el_salvador_beliz с routeDestinationIds, production MD status=published."
+      ],
+      "note": "Тип и геофильтр совпадают. Состав товаров прежнего VIP listing (пустые title/H1) не подтвержден и не объявлен тождественным; будущий 301 пока не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:46:22.958Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/tury-i-ehkskursii-v-stolicu-ehl-salvadora-gorod-san-salvador/ekskursii",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:45:09.999Z"
+  "updatedAt": "2026-10-21T14:46:22.958Z"
 }

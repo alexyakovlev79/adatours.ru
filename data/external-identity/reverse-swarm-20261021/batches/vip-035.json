@@ -459,7 +459,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/565950dae1143fc2dc7d3e50.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан исходный HTML snapshots/565950dae1143fc2dc7d3e50.html из vip-identity-crawl-20261020.zip; SHA-256 файла e28ceee706ec10f44f155254dc280b685a0b38fb1637e5ee6b03de0a8a30f1f1 совпадает с frozen inventory (blob 84d12dca210caa17f7af85edd88ab3ab9e4b0dfe). Сохранённый HTTP 200, дата 2026-10-20T13:08:06+00:00; product_id=1215.",
+        "Salvatti Foz do Iguassu: гостиница в центре города с полуолимпийским и детским бассейнами, парковкой и двуязычным персоналом.",
+        "HTML/inventory canonical: https://vipdeluxetravel.ru/hotel-salvatti-foz-do-iguassu; текущий URL содержит /hotel/ и ?page=. Идентичность другому URL по полному содержимому не подтверждена; одного canonical недостаточно для excluded.",
+        "Проверен текущий main: destination_brazil_iguacu, /brazil/place/foz-do-iguacu/, status approved (src/content/destinations/foz-do-iguacu.md, blob 561389b1de01185b95a5868b3ee8baa8ded82cbb). Страница описывает город/курорт/природный район и туристические маршруты, не данный гостиничный продукт.",
+        "В текущем data/source-index/catalogs/destinations.json (main, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) по имени/slug/aliases отдельная сущность этого отеля не найдена; в src/content.config.ts нет коллекции hotels. Прочитан опубликованный sitemap-0.xml 21.10.2026: 6093 URL, точная гостиничная цель не подтверждена."
+      ],
+      "note": "Соответствующая отдельная RU-карточка отеля не подтверждена. Географическая страница не сохраняет намерение выбора/бронирования этого отеля; требуется редакционное решение: сохранять гостиничную страницу или 410. RU-цель и готовность 301 не назначены.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:27:06.676Z",
+      "checkedBy": "reverse-worker-mvi9cm3m-l6ox3ffx1id",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/brazil-hotel-san-rafael-comfort-class-hotelfoz-do-iguacu?page=7",
@@ -562,5 +575,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:26:54.681Z"
+  "updatedAt": "2026-10-21T15:27:06.676Z"
 }

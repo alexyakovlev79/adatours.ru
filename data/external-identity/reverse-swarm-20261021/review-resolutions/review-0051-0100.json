@@ -2286,7 +2286,74 @@
         "batchBlobSha": "3587016428615b36cdf38027ecdfcf330253a796",
         "reviewOrder": 81
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/",
+        "targetId": "tour_chile_argentina_private_grand_tour_17_days",
+        "comparedId": "tour_chile_argentina_private_grand_tour_17_days",
+        "targetContentPath": "src/content/tours/chile-argentina-private-grand-tour-17-days.md",
+        "targetBlobSha": "c7f72884bcd690f8891a46f87260fd934f0fc1ca",
+        "confidence": 0.95,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.705Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/chili-i-argentina-vip → HTTP 200, title «Люксовый отдых в Чили и Аргентине с островом Пасхи | 17 дней», 98217 байт, SHA-256 b123019582449a735063192349dcec0e30a72069804c7ec004193eef257703ad. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/chile-argentina-private-grand-tour-17-days.md, blob c7f72884bcd690f8891a46f87260fd934f0fc1ca: approved, tour_chile_argentina_private_grand_tour_17_days; RU цель https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/ → HTTP 200, SHA-256 aae78b2dd1f911499439dfe6d3c912ff3081d2d8d010ae33733d6e6103d7d1bb.",
+          "Найден правильный 17-дневный преемник: Сантьяго → остров Пасхи → Атакама → Торрес-дель-Пайне → Эль-Калафате → Мендоса → Игуасу → Буэнос-Айрес. Старый кандидат chile-argentina-vip на 26 дней отклонен. Включенность частной авиации не приравнивается."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-81",
+          "url": "https://vipdeluxetravel.ru/chili-i-argentina-vip",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/chili-i-argentina-vip",
+          "sha256": "b123019582449a735063192349dcec0e30a72069804c7ec004193eef257703ad",
+          "bytes": 98217,
+          "title": "Люксовый отдых в Чили и Аргентине с островом Пасхи | 17 дней",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/chili-i-argentina-vip\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1. Сантьяго. Прилет и обзорная экскурсия",
+            "День 2. Сантьяго. Винная долина",
+            "День 3. Сантьяго – Остров Пасхи",
+            "День 4. Остров Пасхи. Анакена",
+            "День 5. Остров Пасхи – Сантьяго",
+            "День 6. Сантьяго – пустыня Атакама",
+            "День 7. Атакама – Патагония: Пунта-Аренас",
+            "День 8. Патагония. Торрес-дель-Пайне",
+            "День 9. Патагония – Эль-Калафате",
+            "День 10. Эль-Калафате. Ледник Перито-Морено",
+            "День 11. Эль-Калафате – Мендоса",
+            "День 12. Мендоса. Долина Лужан",
+            "День 13. Мендоса – Игуасу",
+            "День 14. Игуасу. Бразильская сторона",
+            "День 15. Игуасу. Аргентинская сторона – Буэнос-Айрес",
+            "День 16. Буэнос-Айрес. Столица элегантности",
+            "День 17. Буэнос-Айрес. Отъезд"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_chile_argentina_private_grand_tour_17_days",
+          "url": "https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/",
+          "sha256": "aae78b2dd1f911499439dfe6d3c912ff3081d2d8d010ae33733d6e6103d7d1bb",
+          "bytes": 383905,
+          "title": "Тур Чили и Аргентина: гран-тур на 17 дней с Игуасу в Бразилии по цене от $23 700 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/\">"
+          ],
+          "dayHeadings": [
+            "День 7 содержит и закат в Долине Луны, и дневной перелёт в Патагонию. Порядок и время этих услуг согласуются до бронирования."
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 82,
@@ -2931,9 +2998,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:25.496Z",
+  "updatedAt": "2026-10-21T16:35:27.154Z",
   "progress": {
-    "resolved": 30,
+    "resolved": 31,
     "total": 50
   }
 }

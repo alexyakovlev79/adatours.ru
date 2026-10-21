@@ -112,7 +112,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory: category HTTP 200, title «Excursions and tours to the Kourou Cosmodrome in French Guiana», H1 «Excursions to countries of Latin America», crawlReport adatours-com-crawl-002.json, snapshotFile не задан. Живой GET 21.10.2026 HTTP 200, self-canonical; datasrc isExcursionCategory&typeid=2&category_id=110. Проверен реальный module/productsjson по этому datasrc: total=0, products=[].",
+        "Main src/content/destinations/kosmodrom-kuru.md: approved destination_french_guiana_kosmodrom_kuru, космодром во Французской Гвиане. /french-guiana/place/guiana-space-centre/ HTTP 200; каталог экскурсий /french-guiana/guiana-space-centre/ HTTP 404. Каталог туров существует отдельно."
+      ],
+      "note": "Пустой EN-каталог экскурсий и отсутствующий RU-каталог не образуют sameAs. Страница космодрома описывает объект, а не подборку экскурсий; подтвержденной пары нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:53:22.336Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/kourou/packages",
@@ -355,5 +365,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:52:44.151Z"
+  "updatedAt": "2026-10-21T15:53:22.336Z"
 }

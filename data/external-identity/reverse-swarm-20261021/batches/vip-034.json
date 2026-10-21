@@ -22,7 +22,18 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/184fe3881203ead678f647ec.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Просмотрен приватный HTML snapshots/184fe3881203ead678f647ec.html; SHA-256 4485dcebe2e3f678a896a83a59580f202e9709d12e1c890a7506773ad54513e9 проверен. Title/H1: Отель Colonna Park. Семейный отель 4* на мысу у пляжа Joao Fernandes в Бузиосе; описаны номера/услуги и бронирование Hotel Colonna Park Buzios Brazil.",
+        "Проверены текущие source-index каталоги main: destinations (1018 записей, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b), tours (397, 5d0662b6b1589951c684b2c44ea1093b182ce9bf), excursions (416, 402b7d42c61bc17709c1ae07fc92dfa32ee08327). Отдельной сущности с этим названием/ID/aliases не найдено. В src/content и src/pages/[...path].astro нет коллекции/маршрута отелей; страницы города и туры не являются карточкой конкретного отеля.",
+        "HTML canonical: https://vipdeluxetravel.ru/hotel-colonna-park; page=3 не удаляется из ключа сверки. В frozen inventory нет второй записи с таким же canonical: технический дубль не подтвержден. RU destination_brazil_buzios (/brazil/place/buzios/) описывает курорт, пляжи и прогулки, а не этот отель."
+      ],
+      "note": "Подтверждённой RU-карточки Colonna Park не найдено. Город Бузиос и туры с проживанием не эквивалентны бронированию конкретного отеля; 301 не назначен. Проверка по сохранённому HTML, без утверждения о сегодняшней HTTP-доступности.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:21:58.231Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-comfort-suites-oscar-freire-sao-paulo?page=3",
@@ -315,5 +326,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:19:11.619Z"
+  "updatedAt": "2026-10-21T15:21:58.231Z"
 }

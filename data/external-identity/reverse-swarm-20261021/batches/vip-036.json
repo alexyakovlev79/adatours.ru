@@ -362,7 +362,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/3f1566d70b7b255d7043d1e8.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/3f1566d70b7b255d7043d1e8.html, SHA-256 d2c609f59ceff12249ee220837a0cf104e4404bf72a59622a70f17583e6df901, обход 2026-10-20T13:15:06+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Golden Tulip Porto Bali». Golden Tulip Porto Bali — гостиница в Ангра-дус-Рейс по хлебным крошкам; 138 апартаментов, собственный гостевой пирс, рестораны, сауна, фитнес и бассейны.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) самостоятельная страница Golden Tulip Porto Bali по названию/бренду не установлена. src/content.config.ts не содержит hotel collection; [...path].astro не формирует отдельный hotel detail. География города и другие туристические продукты не заменяют гостиничную сущность."
+      ],
+      "note": "Проверена отдельная гостиничная карточка Golden Tulip Porto Bali, Ангра-дус-Рейс. Подтвержденная самостоятельная RU-страница именно этого объекта в просмотренном текущем source-index не установлена. Общий Place, тур с возможным проживанием и другой отель не назначены 301-целью; текущая работоспособность самого отеля не оценивалась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:53.875Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/brazil-hotel-paraiso-das-aguas-bonito?page=1",
@@ -405,5 +415,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:51.681Z"
+  "updatedAt": "2026-10-21T15:33:53.875Z"
 }

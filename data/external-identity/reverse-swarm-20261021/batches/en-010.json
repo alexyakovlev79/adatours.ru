@@ -22,7 +22,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory: title «Excursions and tours in the capital of Nicaragua, Managua», H1 «Excursions to countries of Latin America», snapshotHttp 200, snapshotFile отсутствует; crawl-002: category_id=38, isExcursionCategory.",
+        "21.10.2026 получен исходный HTML HTTP 200; фильтр from=category&page=isExcursionCategory&typeid=2&category_id=38. RU /nicaragua/place/managua/ HTTP 200 — страница места destination_nicaragua_managua, а /nicaragua/place/managua/optional-tours/ вернул HTTP 404."
+      ],
+      "note": "Подтвержден каталог экскурсий Манагуа, но действующего однотипного RU-каталога не найдено. Страница места и каталог многодневных туров не являются sameAs каталога экскурсий.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:50:40.526Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/managua/packages",
@@ -315,5 +325,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:48:13.278Z"
+  "updatedAt": "2026-10-21T15:50:40.526Z"
 }

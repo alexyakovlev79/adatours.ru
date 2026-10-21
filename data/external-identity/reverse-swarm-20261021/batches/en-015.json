@@ -505,7 +505,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #753: title «Tour Information», pageType other, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «Tour Information». Служебный текст для путешественника: запрос email, индивидуальный маршрут, внутренние рейсы, предложение/invoice, после оплаты ваучеры, за неделю подробный список времени/контактов, встреча с табличкой.",
+        "RU HTTP 200 https://adatours.ru/dmc/travel-agencies/ — B2B-страница для турагентств и туроператоров, с агентским брифом, передачей наземной программы и кейсом делегации. main src/pages/dmc/travel-agencies/index.astro и /dmc/terms/ не являются переводом EN-инструкции путешественнику."
+      ],
+      "note": "Общие стадии запроса и бронирования не доказывают идентичность страниц разной аудитории и содержания. Отдельная подтвержденная RU-пара Tour Information не найдена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:25:11.029Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/tulum/excursions",
@@ -568,5 +579,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:25:08.601Z"
+  "updatedAt": "2026-10-21T16:25:11.029Z"
 }

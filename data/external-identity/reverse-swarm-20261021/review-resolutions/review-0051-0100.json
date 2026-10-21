@@ -3556,7 +3556,90 @@
         "batchBlobSha": "94340646bfed4f8fa3890d7d0b78bef146a4f9f3",
         "reviewOrder": 95
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "disposition": "gone_410",
+        "recommendedHttpStatus": 410,
+        "relation": null,
+        "ruUrl": "",
+        "targetId": null,
+        "comparedId": null,
+        "targetContentPath": null,
+        "targetBlobSha": null,
+        "confidence": 0.91,
+        "accepted": true,
+        "basis": "retire",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.743Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/panama-2022-panama-siti-bokas-del-toro → HTTP 200, title «Панама 2022: Панама сити- Бокас дель Торо», 63821 байт, SHA-256 662c5432bb0e5b1298c139f8f5404d6912a97e0bf5b00190c4cc761dd64d7eca. Полный HTML прочитан; сохранены заголовки дней.",
+          "Исходный продукт — 11 дней /10 ночей, преимущественно пляжный отдых Бокас-дель-Торо в дни 4–9, тариф 2022 года. Среди действующих RU-панамских программ нет эквивалента: 12-дневный люксовый и 16-дневный маршруты добавляют Бока-Чику/Бокете/Бару и меняют назначение. Выбрано закрытие старого предложения, без подмены общим каталогом.",
+          "Дополнительно проверен main src/content/tours/luchshee-v-paname.md, blob d67f0c4a173c67c8e68d274823ee183492abdec9: 11 дней, но Чагрес, залив Чирики, Бокете, Бару и лишь дни 8–10 в Бокас-дель-Торо; это также не исходный 11-дневный пляжный пакет."
+        ],
+        "note": "Принято редакционное решение: закрыть старое предложение кодом 410 при отдельном внедрении. Подтвержденной активной пары нет; 410 сейчас не включен.",
+        "liveSource": {
+          "key": "source-95",
+          "url": "https://vipdeluxetravel.ru/panama-2022-panama-siti-bokas-del-toro",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/panama-2022-panama-siti-bokas-del-toro",
+          "sha256": "662c5432bb0e5b1298c139f8f5404d6912a97e0bf5b00190c4cc761dd64d7eca",
+          "bytes": 63821,
+          "title": "Панама 2022: Панама сити- Бокас дель Торо",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/panama-2022-panama-siti-bokas-del-toro\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Панама",
+            "День 2: Обзорный тур по городу с посещением Мирафлорес",
+            "День 3: Панама/ Бокас-дель-Торо",
+            "День 4-9: Бокас-дель-Торо",
+            "День 10: Бокас-дель-Торо / Панама",
+            "День 11: Панама"
+          ]
+        },
+        "comparedProducts": [
+          {
+            "id": "tour_source_vsya_panama_natsionalnye_parki_ostrova_i_doliny",
+            "path": "src/content/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny.md",
+            "sha": "f0e73ca4d1e7bf5d91be821d927d75d595dcca60"
+          },
+          {
+            "id": "tour_source_luchshee_v_paname",
+            "path": "src/content/tours/luchshee-v-paname.md",
+            "sha": "d67f0c4a173c67c8e68d274823ee183492abdec9"
+          },
+          {
+            "id": "tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
+            "path": "src/content/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru.md",
+            "sha": "b95f1467d0ad784d9748c136369ae6d210f01a31"
+          },
+          {
+            "id": "tour_source_panama_2024",
+            "path": "src/content/tours/panama-2024.md",
+            "sha": "270bd6db70d173230dc450434383e1e33b3ab2d7"
+          },
+          {
+            "id": "tour_source_panama_panama_siti_dolina_anton_krepost_san_lorenso",
+            "path": "src/content/tours/panama-panama-siti-dolina-anton-krepost-san-lorenso.md",
+            "sha": "812ac528f0586f5486be7986030f755182cae552"
+          },
+          {
+            "id": "tour_source_ostrova_san_blas_na_yakhte_lyuks_klassa",
+            "path": "src/content/tours/ostrova-san-blas-na-yakhte-lyuks-klassa.md",
+            "sha": "6eeedb031829ab5009f934f7fc78cf5ddf1b4090"
+          },
+          {
+            "id": "tour_panama_city_gamboa_6_days",
+            "path": "src/content/tours/panama-city-gamboa-6-days.md",
+            "sha": "5ba6e9213c88c6977a525dac004ad7ccf3924329"
+          },
+          {
+            "id": "tour_panama_mice_7_days",
+            "path": "src/content/tours/panama-mice-7-days.md",
+            "sha": "a45cd8b40fa9bc6ef9306f499b2439d7a8224a28"
+          }
+        ]
+      }
     },
     {
       "reviewOrder": 96,
@@ -3781,9 +3864,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:49.681Z",
+  "updatedAt": "2026-10-21T16:35:51.493Z",
   "progress": {
-    "resolved": 44,
+    "resolved": 45,
     "total": 50
   }
 }

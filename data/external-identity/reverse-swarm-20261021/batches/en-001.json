@@ -262,7 +262,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, конечный https://adatours.com/antarctica-en/excursions; title Antarctica Tours & Vacation packages | Guided trips to Antarctica with Ada Tours; H1 Excursions to countries of Latin America. Фильтр from=category&page=isExcursionCategory&typeid=2&category_id=394&excludes%5B0%5D=themes&excludes%5B1%5D=countries. SHA-256 0b45dc93aa8cdd743beb37da27e69d675de3cbd89c52895c9511ae203779fb70. Frozen inventory: category_ids=[\"394\"], page_type=category; приватный HTML-снимок для этого EN URL не предоставлен.",
+        "Проверен RU-кандидат https://adatours.ru/antarctica/excursion/: GET 404, конечный https://adatours.ru/antarctica/excursion/, canonical https://adatours.ru/404.html. RU-каталог экскурсий по Антарктиде не существует (404); страница страны и каталог экспедиций другого типа. География сопоставлена с country_antarctica в source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 и маршрутизатором src/lib/routes.ts."
+      ],
+      "note": "Точный однотипный RU-каталог по проверенному штатному маршруту отсутствует (HTTP 404). Place/страна не подставлена вместо коллекции. Подтвержденной пары sameAs не найдено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:38:22.642Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/antarctica-en/packages",
@@ -435,5 +445,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:14.989Z"
+  "updatedAt": "2026-10-21T15:38:22.642Z"
 }

@@ -522,7 +522,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Nazca Lines: Attractions and Travel Guide to the Nazca Plateau», H1 «Geoglyphs and the Andean Candelabra: What to See on the Nazca Plateau», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: После первоначального 503 повтор 21.10.2026 дал HTTP 200. EN-страница Nazca, category_id=125, isSity: текст о геоглифах плато Наска, рисунках hummingbird/spider/monkey, их осмотре с самолета. H1 упоминает также Andean Candelabra; самостоятельного описания островов Бальестас в основном тексте нет.",
+        "RU /peru/place/nazca-lines-and-ballestas-islands/ HTTP 200, stable ID destination_peru_linii_naska_i_ostrova_balestas; source-index и заголовок явно задают составной объект «Линии Наска и Острова Бальестас», а не только плато Наска."
+      ],
+      "note": "Наска совпадает как часть объекта, но RU-цель объединяет геоглифы с отдельными островами Бальестас. Равенство полного предмета страниц не доказано; частичного географического совпадения недостаточно для sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:57:05.425Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/nazca/excursions",
@@ -575,5 +586,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:57:03.219Z"
+  "updatedAt": "2026-10-21T15:57:05.425Z"
 }

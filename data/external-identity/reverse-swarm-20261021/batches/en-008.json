@@ -22,7 +22,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #362: title «Excursions and tours to Guatemala City, in Guatemala», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «Excursions to countries of Latin America». Breadcrumb указывает Guatemala City / Excursions, но товарная gallery пуста, далее общий текст про экскурсии по Латинской Америке.",
+        "RU https://adatours.ru/guatemala/guatemala-city/ вернул HTTP 404. main 81bda828: destination_guatemala_gvatemala_siti существует как место, excursion MD с этим destination ID нет."
+      ],
+      "note": "Подтвержденной пары каталога экскурсий нет: действующего RU-каталога Гватемала-Сити не найдено. Географическая страница города не является sameAs экскурсионной подборки.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:49:30.007Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/guatemala-city/packages",
@@ -315,5 +326,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:47:14.052Z"
+  "updatedAt": "2026-10-21T15:49:30.007Z"
 }

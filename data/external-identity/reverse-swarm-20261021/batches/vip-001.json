@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi7pzbx-ocsqbozvq6",
-    "token": "reverse-lease-mvi7pzby-sb772s3tkv",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:33:44.010Z",
-    "expiresAt": "2026-10-21T16:03:44.010Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-poluostrov-parakas-v-peru",
@@ -602,8 +596,20 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/59d050143b4571380f96af07.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #430: /ekskursii при полуострове Оса, pageType=excursion_listing, сохраненный HTTP 200, название и состав дочернего листинга неизвестны.",
+        "RU approved destination_costa_rica_poluostrov_osa; source-index/catalogs/excursions.json не содержит неархивных экскурсий с destinationIds/relatedDestinationIds=destination_costa_rica_poluostrov_osa, действующего непустого /costa-rica/osa-peninsula/ нет."
+      ],
+      "note": "Экскурсионному листингу полуострова Оса пока не соответствует активная RU-подборка. Отдельное решение: страница места или 410, без выдуманного 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:49:54.282Z",
+      "checkedBy": "reverse-worker-mvi7pzbx-ocsqbozvq6",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T14:49:49.237Z"
+  "updatedAt": "2026-10-21T14:49:54.282Z",
+  "completedAt": "2026-10-21T14:49:54.282Z",
+  "lastOwner": "reverse-worker-mvi7pzbx-ocsqbozvq6"
 }

@@ -666,7 +666,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/07d6963c72b600906b9beb75.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан исходный HTML snapshots/07d6963c72b600906b9beb75.html из vip-identity-crawl-20261020.zip; SHA-256 файла 8ad058d6bcec4cd51342a2a2e9c97493f9458d302772a1d2925a948428135d20 совпадает с frozen inventory (blob 84d12dca210caa17f7af85edd88ab3ab9e4b0dfe). Сохранённый HTTP 200, дата 2026-10-20T13:10:21+00:00; product_id=267.",
+        "Tropical Manaus: конкретная гостиница в Манаусе у тропического леса; описаны номера, собственный небольшой зоопарк и питание.",
+        "HTML/inventory canonical: https://vipdeluxetravel.ru/hotel-tropical-manaus-amazonas; текущий URL содержит /hotel/ и ?page=. Идентичность другому URL по полному содержимому не подтверждена; одного canonical недостаточно для excluded.",
+        "Проверен текущий main: destination_brazil_amazon, /brazil/place/manaus-amazon/, status approved (src/content/destinations/manaus-amazonia.md, blob 6ef7b50fb97fc8444cdc37e8f2fabaecd59710e7). Страница описывает город/курорт/природный район и туристические маршруты, не данный гостиничный продукт.",
+        "В текущем data/source-index/catalogs/destinations.json (main, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) по имени/slug/aliases отдельная сущность этого отеля не найдена; в src/content.config.ts нет коллекции hotels. Прочитан опубликованный sitemap-0.xml 21.10.2026: 6093 URL, точная гостиничная цель не подтверждена."
+      ],
+      "note": "Соответствующая отдельная RU-карточка отеля не подтверждена. Географическая страница не сохраняет намерение выбора/бронирования этого отеля; требуется редакционное решение: сохранять гостиничную страницу или 410. RU-цель и готовность 301 не назначены.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:27:52.112Z",
+      "checkedBy": "reverse-worker-mvi9cm3m-l6ox3ffx1id",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/turrance-foz-do-iguassu?page=7",
@@ -679,5 +692,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:27:49.081Z"
+  "updatedAt": "2026-10-21T15:27:52.112Z"
 }

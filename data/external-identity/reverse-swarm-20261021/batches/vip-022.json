@@ -486,7 +486,18 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/fcb67597cd53b9ad98326e3c.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "Сохраненная опись VIP #1054: sourceUrl https://vipdeluxetravel.ru/?route=information%2Fsitemap, title «Карта сайта», pageType=technical_candidate, historical HTTP 200.",
+        "Source query route=information%2Fsitemap является техническим адресом карты сайта, а не страницей туристического продукта.",
+        "В frozen inventory title «Карта сайта», pageType=technical_candidate, historical HTTP 200."
+      ],
+      "note": "Подтвержден служебный sitemap-маршрут CMS; исключен из смысловых соответствий Tour/Destination и из карты коммерческих 301. Служебные sitemap-URL обрабатываются отдельно при миграции.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:55:17.057Z",
+      "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvadore/uayua",
@@ -549,5 +560,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:55:08.185Z"
+  "updatedAt": "2026-10-21T14:55:17.057Z"
 }

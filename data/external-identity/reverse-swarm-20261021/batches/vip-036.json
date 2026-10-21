@@ -282,7 +282,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/982798026a408658c9d6dc5a.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/982798026a408658c9d6dc5a.html, SHA-256 6222528083144780387cfe36b5b41185c7448247f1e0dbc120bf7e889add7dd5, обход 2026-10-20T13:14:06+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Bourbon Cataratas». Bourbon Cataratas Hotel and Resort в Фоз-ду-Игуасу: территория 165 000 м², 312 номеров/люксов, конференц-площадки до 1300 участников; отдельная гостиница рядом с водопадами.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) самостоятельная страница Bourbon Cataratas по названию/бренду не установлена. src/content.config.ts не содержит hotel collection; [...path].astro не формирует отдельный hotel detail. География города и другие туристические продукты не заменяют гостиничную сущность."
+      ],
+      "note": "Проверена отдельная гостиничная карточка Bourbon Cataratas, Фоз-ду-Игуасу. Подтвержденная самостоятельная RU-страница именно этого объекта в просмотренном текущем source-index не установлена. Общий Place, тур с возможным проживанием и другой отель не назначены 301-целью; текущая работоспособность самого отеля не оценивалась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:43.746Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/comfort-fortaleza?page=1",
@@ -365,5 +375,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:10.097Z"
+  "updatedAt": "2026-10-21T15:33:43.746Z"
 }

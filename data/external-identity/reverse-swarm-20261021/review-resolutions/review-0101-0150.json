@@ -1057,7 +1057,34 @@
         "batchId": "vip-022",
         "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/tours/",
+        "relation": "redirect_301",
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:35:48.119Z",
+        "reason": "Полный текущий /package — общий каталог туров разных стран, а не неизвестная карточка продукта. Прямой функциональный преемник — /tours/.",
+        "evidence": [
+          "Прямой GET VIP 200: H1 Package, сортировка и карточки «3 страны», «5 стран», «Белоснежные жемчужины», «Гранд тур по Чили и Аргентине».",
+          "RU /tours/ — действующий общий каталог туристических программ."
+        ],
+        "targetEntityId": null
+      },
+      "sourceObservation": {
+        "n": 120,
+        "sourceUrl": "https://vipdeluxetravel.ru/package",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/package",
+        "canonical": "https://vipdeluxetravel.ru/package",
+        "sha256": "26c5bad1d533e6d5fca4086e560fc6eee104aff554bb5d080a57101379c8782a",
+        "title": "Package",
+        "h1": [
+          "Package"
+        ],
+        "dayHeadings": []
+      }
     },
     {
       "reviewOrder": 121,
@@ -1932,7 +1959,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:36:24.083Z",
+  "updatedAt": "2026-10-21T16:36:25.976Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

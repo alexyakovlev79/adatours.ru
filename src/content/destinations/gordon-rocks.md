@@ -8,8 +8,8 @@ countryId: country_ecuador
 destinationType: natural_area
 summary: Гордон-Рокс у Санта-Крус привлекает опытных дайверов сильными течениями и возможностью встретить акул-молотов.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-07-20261009-v1-enhanced-20261011-doc-v1.webp
-  alt: Вулканические берега, бирюзовая бухта и остроконечная скала на Галапагосах
+  src: /media/destinations/gordon-rocks/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Гордон-Рокс — иллюстрация"
 gallery: []
 themes:
 - theme_wildlife

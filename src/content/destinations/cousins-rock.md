@@ -8,9 +8,9 @@ countryId: country_ecuador
 destinationType: natural_area
 summary: Казенс-Рок у Сантьяго и Бартоломе соединяет рифовые участки и подводную стену с черными кораллами.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-11-20261009-v1-enhanced-20261011-doc-v1.webp
-  hover: "Галапагосские острова: морская черепаха под водой среди рыб"
-  alt: "Морская черепаха плывет среди рыб над каменистым дном, Галапагосы, Эквадор"
+  src: /media/destinations/cousins-rock/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Казенс-Рок — новая обложка"
+  alt: "Казенс-Рок — иллюстрация"
 gallery: []
 themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_ecuador_cousins_rock.md

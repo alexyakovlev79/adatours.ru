@@ -8,9 +8,9 @@ countryId: country_costa_rica
 destinationType: city
 summary: Рио-Селесте в Коста-Рике, голубая река с водопадом и лесными тропами в национальном парке Тенорио.
 hero:
-  src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-  hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
-  alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
+  src: /media/destinations/rio-celeste/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Рио-Селесте — новая обложка"
+  alt: "Рио-Селесте — иллюстрация"
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 searchAliases:

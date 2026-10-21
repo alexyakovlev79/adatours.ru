@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: Агоян — водопад в долине реки Пастаса неподалёку от Баньоса. Потоки воды проходят между скальными стенами,
   окружёнными влажной зелёной растительностью.
 hero:
-  src: /media/destinations/agoyan-waterfall/hero-generated-20261009-v1.webp
-  hover: "Агоян: белая вода между отвесными скалами и влажным лесом"
-  alt: "Потоки водопада Агоян в зеленом горном ущелье, Эквадор"
+  src: /media/destinations/agoyan-waterfall/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Водопад Агоян — новая обложка"
+  alt: "Водопад Агоян — иллюстрация"
 gallery: []
 themes: ["theme_nature"]
 relatedDestinations: []

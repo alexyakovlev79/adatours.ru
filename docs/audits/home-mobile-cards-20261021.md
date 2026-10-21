@@ -16,4 +16,18 @@ Three independent official PSI reports before and after, each Mobile and Desktop
 
 Rollback: remove the three homepage `mobileCover` prop passes and helper/import, then remove the optional component support. Preserve original and crop assets. The previous P01 page-top hero behavior remains independent.
 
-Status: prepared, not yet published. GitHub connector reported authenticated API quota exhaustion during preparation; publication must be confirmed by commit and successful Pages deployment before changing this status.
+Status: published and verified. The quota issue was resolved using the ordinary PR merge route; production Pages deployment succeeded.
+
+Implementation committed as 43587faa4156236afc2e52c23871189ffeded06f and merged through PR #41 as 15c4fcbed1f8a43046f01abf4bcf0bbd73c279cb after generic ref reads were blocked by authenticated GitHub API quota. The standard Pages run is 39590174691. The production build and deployment completed successfully.
+
+PR CI run 39590083244 failed in the all-tests step: an existing syntax error in tests/schema-geo-github-json.test.mjs:37 (extra parenthesis) prevents that unrelated GEO test file from parsing. Reproduced from the unmodified base commit 217ce28cc86d1bd6a7484f80bda18bc4712fdf65 with Node 24.19.0; the current change does not touch that test or module. Record this as an existing all-tests failure, separate from the production build gate and the passing three-component/lazy-background checks.
+
+Composition QA used actual homepage card height clamp(360px, 105vw, 460px) at widths 320, 412 and 479px, with the selected source positions. Visual simulations retained both traveler faces, jaguar head, the intended partial child/llama pair, mountain peaks and the statue. These are crop simulations without the page text overlay, not real-device screenshots.
+
+## Published measurements
+
+Public HTML: seven opted-in covers, all URLs deferred; correct mobile rules shipped. Browser DOM confirmed all seven were deferred before scrolling, loaded their URL properties on scroll, and retained original source selection on desktop. Live CSSOM mobile conditions `(width <= 479px)` match exactly five country bands and two interest cover spans, with all expected crop URLs. This is DOM/CSS verification plus composition simulation, not a real-phone screenshot. Homepage top hero and video unchanged.
+
+Three independent reports per stage/device. Mobile 77/76/82 -> 78/77/82, median 77 -> 78; LCP 5.566 -> 5.451s (-2.1%); TBT 71 -> 30ms; CLS 0; SI 4.489 -> 4.062s. Desktop 96/92/92 -> 95/93/95, median 92 -> 95; LCP 1.427 -> 1.518s (+6.4%); TBT 150 -> 62ms; CLS 0; SI .818 -> .780s. Both score ranges overlap. A meaningful start-up score improvement is not established from this series. The measurable file-weight benefit is for seven cards when loaded. Desktop sources remain original, but opt-in markup/shared CSS changed; do not present desktop measurements as an isolated crop effect.
+
+Source/deploy: 15c4fcbed1f8a43046f01abf4bcf0bbd73c279cb / 39590174691. Before HTML SHA-256: 0c27c66702a16a559f3ecda77357e972e97b3d4e3fc5553cd535fe40b292df22. After: 37c388a28ad6f3f6ab828bb7bcdd23ce9fedd0e06afce77cc4c1ddb09699cdea. Both series stable in public HTML; remote PSI CDN-copy hash cannot be proven. All 12 raw metric rows saved in the performance run JSON and the existing Google Sheets journal.

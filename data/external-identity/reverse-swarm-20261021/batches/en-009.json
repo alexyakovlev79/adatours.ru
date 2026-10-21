@@ -62,7 +62,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Живой GET 21.10.2026 HTTP 200, self-canonical /jericoacoara/packages, H1 «Jericoacoara: Best Beach & Kitesurfing Tours»; frozen inventory category HTTP 200, тот же H1, crawlReport adatours-com-crawl-002.json; snapshotFile отсутствует.",
+        "Текущий approved destination_brazil_jericoacoara в main, src/content/destinations/jericoacoara.md, описывает курорт/дюны/лагуны; /brazil/place/jericoacoara/ HTTP 200. Каталог основного маршрута /brazil/place/jericoacoara/tour/ HTTP 404. Видимые 3 тура на странице места не доказывают существование такого каталога: main строит отдельные main/optional подборки."
+      ],
+      "note": "Для EN-каталога туров Жерикоакоары действующая RU-пара того же фильтра не подтверждена. Страница места и необязательные посещения не заменяют каталог основного маршрута; sameAs не назначен, динамический состав EN не признан пустым по SSR.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:52:08.995Z",
+      "checkedBy": "reverse-worker-mviacz20-2bl89ht96kp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/kaieteur-national-park/excursions",
@@ -335,5 +345,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:51:48.598Z"
+  "updatedAt": "2026-10-21T15:52:08.995Z"
 }

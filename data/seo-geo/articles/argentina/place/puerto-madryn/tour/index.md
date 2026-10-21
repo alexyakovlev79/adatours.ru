@@ -52,7 +52,7 @@ lead: >-
 
 {{catalog.tourTable:tour_source_tur_v_argentinu_na_dikuyu_prirodu,tour_source_issledovanie_argentiny,tour_source_argentina_puteshestvie_v_doistoricheskij_mir,tour_source_chili_i_argentina_vip}}
 
-Для других вариантов поездок смотрите [каталог туров по Аргентине](/argentina/tour/) и раздел [«Природа и животные»](/interests/wildlife/). В них встречаются маршруты с иным соотношением городов, парков и природных наблюдений.
+Для других вариантов поездок смотрите [каталог туров по Аргентине](/argentina/tour/) и раздел [«Животные и сафари»](/interests/wildlife/). Если приоритет — ледники, горы и водопады, сравните также раздел [«Природа»](/interests/nature/). Выбирайте по включенным дням: ландшафтная экскурсия и наблюдение за морской фауной решают разные задачи.
 
 ## Что означает посещение Пуэрто-Мадрина в туре
 

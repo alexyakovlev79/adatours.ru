@@ -260,7 +260,9 @@ const nestedGroups = NAV_LINKS
 
 <script>
   import { ensureSharedSiteShell } from '../../scripts/shared-site-shell';
+  import { initializeMultiCountryMenus } from '../../scripts/multi-country-menu';
   await ensureSharedSiteShell();
+  initializeMultiCountryMenus();
   const header = document.querySelector('[data-site-header]');
   const toggle = document.querySelector('[data-menu-toggle]');
   const menu = document.querySelector('[data-mobile-menu]');

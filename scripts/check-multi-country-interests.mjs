@@ -1,6 +1,6 @@
 import { CATALOG_PAGE_SIZE } from '../src/lib/catalog-pagination.ts';
 import assert from 'node:assert/strict';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { readCatalogContent } from './sync-multi-country-registries.mjs';
 import { buildMultiCountryCatalog, multiCountryCatalogPath, multiCountryPickerOptions } from '../src/lib/multi-country-catalog.mjs';
@@ -43,3 +43,27 @@ for (const row of rows.filter((item) => item.themeId)) {
   assert.ok(parent.includes('href="' + row.path + '"'), 'Parent links to intersection: ' + row.path);
 }
 console.log('Multi-country interests: ' + rows.filter((row) => row.themeId).length + ' catalogue roots; ' + checked + ' HTML pages, exact tour sets and selector links.');
+
+// Country-specific interest catalogues must not repeat the multi-country links.
+let countryPages = 0;
+function checkCountryPages(directory) {
+  for (const entry of readdirSync(directory, { withFileTypes: true })) {
+    const file = join(directory, entry.name);
+    if (entry.isDirectory()) checkCountryPages(file);
+    else if (entry.name === 'index.html') {
+      const html = readFileSync(file, 'utf8');
+      assert.ok(!html.includes('data-multi-country-related'), 'No multi-country recommendations: ' + file);
+      countryPages++;
+    }
+  }
+}
+for (const interest of readdirSync('dist/interests', { withFileTypes: true }).filter((entry) => entry.isDirectory())) {
+  const tours = join('dist/interests', interest.name, 'tours');
+  if (!existsSync(tours)) continue;
+  for (const country of readdirSync(tours, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && entry.name !== 'page')) {
+    checkCountryPages(join(tours, country.name));
+  }
+}
+assert.ok(countryPages > 0, 'Country-specific interest catalogues exist');
+console.log('Interest + country: ' + countryPages + ' pages without multi-country recommendations.');

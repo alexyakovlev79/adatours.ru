@@ -22,6 +22,8 @@ for (const file of examples) {
   const html = readFileSync(file, 'utf8');
   const header = html.match(/<header\b[^>]*data-site-header[^>]*>[\s\S]*?<\/header>/)?.[0];
   assert.ok(header, 'Missing header: ' + file);
+  assert.ok(!/<script\b[^>]*\btype="module"/.test(header),
+    'Module entrypoints must survive shared-header extraction: ' + file);
   const linked = [...header.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>/g)]
     .map((match) => match[1].replaceAll('&amp;', '&'))
     .filter((href) => /^\/multi-country\/[a-z0-9_-]+\/$/.test(href));

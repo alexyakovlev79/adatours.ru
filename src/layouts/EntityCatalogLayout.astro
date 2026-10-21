@@ -231,7 +231,7 @@ const listSchema = {
     </div>
     <CatalogPagination pagination={p} />
   </div>
-  {kind === 'tour' && !isVipCatalog && themeContextId && <MultiCountryRelated themeId={themeContextId} countryId={countryContextId} currentPath={p.rootPath} />}
+  {kind === 'tour' && !isVipCatalog && !isThemeCountryCatalog && themeContextId && <MultiCountryRelated themeId={themeContextId} countryId={countryContextId} currentPath={p.rootPath} />}
 </BaseLayout>
 
 <script>

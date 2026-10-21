@@ -3,8 +3,8 @@
 import {
   extendMultiCountrySelection, previousMultiCountrySelection, formatMultiCountryNames,
 } from '../lib/multi-country-combinations.mjs';
-import { ensureSharedSiteShell } from './shared-site-shell';
-await ensureSharedSiteShell();
+// Called by SiteHeader after the shared header has been inserted.
+export function initializeMultiCountryMenus() {
 const menuInstances = [...document.querySelectorAll<HTMLElement>('[data-mc-menu]')];
 const linkSource = menuInstances.map((item) => item.querySelector<HTMLElement>('[data-mc-menu-combinations][data-mc-menu-source]'))
   .find((nav) => nav && nav.children.length > 0);
@@ -200,4 +200,5 @@ for (const menu of menuInstances) {
   }
 
   display();
+}
 }

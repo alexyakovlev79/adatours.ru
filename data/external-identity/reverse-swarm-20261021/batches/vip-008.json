@@ -542,7 +542,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/9ad87f6545fc030ed4690c2a.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP inventory #637: /ekskursii страницы Форталезы, pageType excursion_listing, прежний HTTP 200 с пустыми title/H1.",
+        "RU excursions catalog: 0 активных экскурсий с destination_brazil_fortaleza; Astro не создает /brazil/fortaleza/."
+      ],
+      "note": "Нет опубликованных активных экскурсий, привязанных к Форталезе; /brazil/fortaleza/ как непустой каталог не создается. Необходим адресный выбор страницы места либо 410 без выдуманного 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:59:10.457Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/frantsuzskaya-gviana-ru",
@@ -575,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:58:28.574Z"
+  "updatedAt": "2026-10-21T14:59:10.457Z"
 }

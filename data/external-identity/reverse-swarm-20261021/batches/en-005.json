@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
-    "token": "reverse-lease-mvi9xr0h-a0beu3jtsnm",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:36:13.904Z",
-    "expiresAt": "2026-10-21T17:06:13.904Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/coban/excursions",
@@ -631,8 +625,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #253: title «Cordoba Tours | Jesuit Block & Colonial Architecture», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «Cordoba: Tours to the Jesuit Block and Colonial Landmarks». Ни gallery-bigitem, ни gallery-middleitem с турпродуктами нет; далее общие тексты о Латинской Америке.",
+        "RU https://adatours.ru/argentina/place/cordoba/tour/ вернул HTTP 404. main: destination_argentina_kordoba — географическая страница города; ни одного Tour MD с этим destination ID нет."
+      ],
+      "note": "Пары каталога туров нет: текущий RU-каталог не существует, EN не показывает товаров. Географическая страница города относится к другой сущности.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:45:49.609Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:45:44.933Z"
+  "updatedAt": "2026-10-21T15:45:49.609Z",
+  "completedAt": "2026-10-21T15:45:49.609Z",
+  "lastOwner": "reverse-worker-mvi9xr0h-tpq3bwqf32n"
 }

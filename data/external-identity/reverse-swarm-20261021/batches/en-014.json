@@ -547,7 +547,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Santo Domingo Tours | Colonial City & Caribbean Culture; H1 Santo Domingo: Tours to the Colonial City and Caribbean Culture; category_ids=[\"644\"]; adatours-com-crawl-002.json index 264; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/santo-domingo-en/packages: HTTP 200; SHA256 11cc09f330ee6c55af31a50dc8e32ec2264c1c7b325d22fac5abd71f60a3837f. Видимые gallery-карточки: Mountain Adventure in Dominicana; Family Beach Holidays; North Coast Honeymoon; Jeep Adventure in Dominicana; Boutique-Hotel Roundtrip in Dominicana",
+        "main src/content/destinations/santo-domingo.md, blob bcfa4c54ee44669832834828172af68019ac9640: approved destination_dominican_republic_santo_domingo, /dominican-republic/place/santo-domingo/. RU каталог https://adatours.ru/dominican-republic/place/santo-domingo/tour/: HTTP Error 404: Not Found. routes.ts/[...path].astro отделяет Place, основной маршрут тура и самостоятельные экскурсии."
+      ],
+      "note": "Предметный RU каталог туров/экскурсий отвечает HTTP404. Approved Place того же географического объекта существует, но не является каталогом с тем же составом. Подтвержденной пары sameAs нет; на Place или общую главную связь не назначена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:18:39.267Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/sao-luis/excursions",
@@ -590,5 +601,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:18:35.856Z"
+  "updatedAt": "2026-10-21T16:18:39.267Z"
 }

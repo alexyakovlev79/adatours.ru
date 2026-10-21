@@ -22,7 +22,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-003: snapshotHttp 200, pageType category, title «Excursions and tours to Valdivia, Puerto Montt in Chile», H1 «Excursions to countries of Latin America», category_id=90, isExcursionCategory; snapshotFile не указан.",
+        "21.10.2026 исходный HTML HTTP 200; productsjson с исходным datasrc typeid=2&category_id=90 возвращает products=[], total=0.",
+        "Текущий main source-index и approved MD: destination_chile_valdiviya_i_puerto_mont, составное место «Вальдивия и Пуэрто Монт», /chile/place/valdivia-puerto-montt/ HTTP 200. Канонический адрес каталога экскурсий /chile/valdivia-puerto-montt/ вернул HTTP 404; страница места и каталог многодневных туров — другие сущности."
+      ],
+      "note": "Проверен пустой EN-каталог экскурсий Вальдивии/Пуэрто-Монта. Подтвержденной действующей RU-пары того же типа и набора нет; страница места не назначается sameAs каталога.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:20:57.306Z",
+      "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/valdivia/packages",
@@ -195,5 +206,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:19:11.392Z"
+  "updatedAt": "2026-10-21T16:20:57.306Z"
 }

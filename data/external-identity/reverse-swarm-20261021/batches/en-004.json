@@ -619,7 +619,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:37:44.263321+00:00; HTTP 200, 92715 bytes, SHA-256 cc7250be9e3807e88dd766760ab3ef5ae83136ba2a146221f37259e527f6432b; canonical https://adatours.com/ciudad-del-este/excursions. Title Excursions and tours to Ciudad del Este, in Paraguay; H1 Excursions to countries of Latin America.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (0): в данном HTML карточки не обнаружены.",
+        "RU-кандидат определён по канонической сущности destination_paraguay_syudad_del_este, data/source-index/entries/destination_paraguay_syudad_del_este.json, blob 58e9f6f4b855d65b232df07f55b015b0a7a0b7da и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/paraguay/ciudad-del-este/: HTTP 404; действующий каталог по этому адресу не подтверждён; в прочитанном sitemap-0.xml его нет.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "EN HTML имеет общий H1 и не показывает карточек; RU-каталог экскурсий Сьюдад-дель-Эсте возвращает HTTP 404 и отсутствует в sitemap. Самостоятельная страница города не подменяет каталог."
+      ],
+      "note": "EN HTML имеет общий H1 и не показывает карточек; RU-каталог экскурсий Сьюдад-дель-Эсте возвращает HTTP 404 и отсутствует в sitemap. Самостоятельная страница города не подменяет каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:11.295Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/ciudad-del-este/packages",
@@ -632,5 +646,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:42:08.860Z"
+  "updatedAt": "2026-10-21T15:42:11.295Z"
 }

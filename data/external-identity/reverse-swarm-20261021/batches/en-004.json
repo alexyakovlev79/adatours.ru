@@ -67,7 +67,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:33:51.765058+00:00; HTTP 200, 116927 bytes, SHA-256 826e2cb7848facab50fa8a931b303031dd01e5b4a601fcd14d12bb0e23f111bd; canonical https://adatours.com/buenos-aires/packages. Title Buenos Aires Tours | Tango, La Boca & Steaks | Ada Tours; H1 Buenos Aires: Tours to the Capital of Tango and Argentine Cuisine.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (11): 3 Countries-Tour: Brazil, Argentina and Peru; 4 Countries : Chile, Argentina Uruguay and Brazil with spectacular Patagonia; 5 Countries Tour; 5 country-tour in Latin America; All Argentina; Brazil -Argentina: group tour; Dreams Come True on Carnival; Dreams Come True: Brazil & Argentina; Dreams come true: Brazil and Argentina; Fall in Love with Argentina; From Ice to Waterfalls.",
+        "RU-кандидат определён по канонической сущности destination_argentina_buenos_aires, data/source-index/entries/destination_argentina_buenos_aires.json, blob 5b36489ccda5bbe248a5f1fbcc95527b15168237 и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/argentina/place/buenos-aires/tour/: HTTP 200; canonical https://adatours.ru/argentina/place/buenos-aires/tour/; H1 63 тура 2026-2027 в Буэнос-Айресе (Аргентине) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours; SHA-256 a72b1d4e0ea7efb39e1d98e3a4196ca5b6d3a9fa9fea160bc07ce3e0d9ff88dc.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "EN показывает 11 карточек, включая 3/4/5-country и From Ice to Waterfalls; RU объявляет 63 тура с основным посещением Буэнос-Айреса. Совпадение полного состава и фильтра обязательного посещения не подтверждено."
+      ],
+      "note": "EN показывает 11 карточек, включая 3/4/5-country и From Ice to Waterfalls; RU объявляет 63 тура с основным посещением Буэнос-Айреса. Совпадение полного состава и фильтра обязательного посещения не подтверждено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:00.465Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/business-travel-mice",
@@ -352,5 +366,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:38:58.020Z"
+  "updatedAt": "2026-10-21T15:39:00.465Z"
 }

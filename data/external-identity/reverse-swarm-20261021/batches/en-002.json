@@ -43,7 +43,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP 200 /beach-tours, canonical тот же; H1 BEACH HOLIDAYS TO BRAZIL & THROUGHOUT SOUTH AND CENTRAL AMERICA. Текст — пляжные поездки/курорты, включая Мексику, Доминикану, Гондурас; карточек gallery-title нет, только Booking form. SHA-256 b4c2328f28d6e56057f44277c3426ce5c771f85f9c69bc088fd03a974f5a21bf.",
+        "RU live HTTP 200 /interests/beach-holidays/, H1 Пляжный отдых, title 114 туров и впечатлений. Страница содержит реальные карточки туров, мест и тематические каталоги стран; SHA-256 668ef0a7f36da138093a3f7665fc4ba1a6ef93a248551dc5da189dfc8520d602.",
+        "Frozen inventory: category, HTTP 200, category_id 670, snapshotFile отсутствует. Тема близка RU theme_beach, однако совпадение фильтра и состава каталога не доказано."
+      ],
+      "note": "Совпадает тема пляжного отдыха, но EN — сервисная посадочная без показанного состава туров, RU — тематический каталог с 114 турами. Строгое sameAs каталогов не подтверждено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:34:22.268Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-best-of-both-worlds",
@@ -326,5 +337,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:56.108Z"
+  "updatedAt": "2026-10-21T15:34:22.268Z"
 }

@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-ada20261021-cc81a6f9f073",
-    "token": "reverse-lease-ada20261021-17481cab8f02",
-    "generation": 1,
-    "claimedAt": "2026-10-21T14:47:52.345Z",
-    "expiresAt": "2026-10-21T16:17:52.345Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/torres-del-pejn-gruppovoj-tur",
@@ -602,8 +596,20 @@
       "pageType": "unclassified",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/59e716187fdca288386f2cf0.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/argentina/place/buenos-aires/",
+      "evidence": [
+        "VIP ZIP snapshots/59e716187fdca288386f2cf0.html: географический справочник «Буэнос-Айрес», районы Ла-Бока и Сан-Тельмо, театры, музеи, история города; исходный canonical указывает на https://vipdeluxetravel.ru/stolica-argentiny-gorod-buehnos-ajres.",
+        "RU src/content/destinations/buenos-aires.md: approved destination_argentina_buenos_aires, тип city, описание Ла-Боки, Сан-Тельмо, Пласа-де-Майо, музеев и театров; canonical /argentina/place/buenos-aires/."
+      ],
+      "note": "Сопоставлена справочная страница того же города, не экскурсия и не произвольный тур; отдельный старый alias также сохраняется в истории.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:08:29.280Z",
+      "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:08:10.882Z"
+  "updatedAt": "2026-10-21T15:08:29.280Z",
+  "completedAt": "2026-10-21T15:08:29.280Z",
+  "lastOwner": "reverse-worker-ada20261021-cc81a6f9f073"
 }

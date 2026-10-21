@@ -42,7 +42,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/d5ad25a10d13648248746c50.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/panama/place/portobelo/tour/",
+      "evidence": [
+        "Frozen VIP inventory position 432: suffix /packages, pageType=tour_listing, snapshotHttp=200; заголовок снимка пуст, состав старых товаров не доказан.",
+        "RU destination_panama_portobelo опубликовано; src/pages/[...path].astro генерирует /panama/place/portobelo/tour/ при наличии основных маршрутов. В текущих MD/каталоге 1 активных основных туров через место."
+      ],
+      "note": "Кандидат 301 по идентичной географии и типу каталога. Совпадение старого и текущего состава туров не утверждается.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:39:56.640Z",
+      "checkedBy": "reverse-worker-mvi7q9ft-aq1m9jzn3z",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-kurort-portobelo-v-paname/ekskursii",
@@ -325,5 +335,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:39:52.535Z"
+  "updatedAt": "2026-10-21T14:39:56.640Z"
 }

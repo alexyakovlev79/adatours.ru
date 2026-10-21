@@ -1,6 +1,6 @@
 # Третья партия 50 индивидуальных hero — 21 октября 2026
 
-Подключено 40 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
+Подключено 50 из 50. Новые WebP загружены напрямую в S3 и проверены по SHA-256.
 
 | № | Страница | Статус |
 |---|---|---|
@@ -44,15 +44,15 @@
 | 38 | [Центр изучения тропического леса Панамы](https://adatours.ru/panama/place/panama-rainforest-discovery-center/) | Подключено, S3 проверен |
 | 39 | [Ауанаканча](https://adatours.ru/peru/place/awanakancha/) | Подключено, S3 проверен |
 | 40 | [Каньон Колка](https://adatours.ru/peru/place/colca-canyon/) | Подключено, S3 проверен |
-| 41 | [Куско](https://adatours.ru/peru/place/cusco/) | Зарезервировано |
-| 42 | [Перевал Ла-Рая](https://adatours.ru/peru/place/la-raya-pass/) | Зарезервировано |
-| 43 | [Музей Ларко](https://adatours.ru/peru/place/larco-museum/) | Зарезервировано |
-| 44 | [Кафедральный собор Лимы](https://adatours.ru/peru/place/lima-cathedral/) | Зарезервировано |
-| 45 | [Лима](https://adatours.ru/peru/place/lima/) | Зарезервировано |
-| 46 | [Мачу-Пикчу](https://adatours.ru/peru/place/machu-picchu/) | Зарезервировано |
-| 47 | [Паракас](https://adatours.ru/peru/place/paracas/) | Зарезервировано |
-| 48 | [Ракчи](https://adatours.ru/peru/place/raqchi/) | Зарезервировано |
-| 49 | [Священная долина инков](https://adatours.ru/peru/place/sacred-valley-of-the-incas/) | Зарезервировано |
-| 50 | [Острова Урос](https://adatours.ru/peru/place/uros-islands/) | Зарезервировано |
+| 41 | [Куско](https://adatours.ru/peru/place/cusco/) | Подключено, S3 проверен |
+| 42 | [Перевал Ла-Рая](https://adatours.ru/peru/place/la-raya-pass/) | Подключено, S3 проверен |
+| 43 | [Музей Ларко](https://adatours.ru/peru/place/larco-museum/) | Подключено, S3 проверен |
+| 44 | [Кафедральный собор Лимы](https://adatours.ru/peru/place/lima-cathedral/) | Подключено, S3 проверен |
+| 45 | [Лима](https://adatours.ru/peru/place/lima/) | Подключено, S3 проверен |
+| 46 | [Мачу-Пикчу](https://adatours.ru/peru/place/machu-picchu/) | Подключено, S3 проверен |
+| 47 | [Паракас](https://adatours.ru/peru/place/paracas/) | Подключено, S3 проверен |
+| 48 | [Ракчи](https://adatours.ru/peru/place/raqchi/) | Подключено, S3 проверен |
+| 49 | [Священная долина инков](https://adatours.ru/peru/place/sacred-valley-of-the-incas/) | Подключено, S3 проверен |
+| 50 | [Острова Урос](https://adatours.ru/peru/place/uros-islands/) | Подключено, S3 проверен |
 
 Промпты и происхождение: [реестр](../../data/audits/hero-inline-dedup-third50-20261021.json). Подключение означает content commit; публикация — штатным Pages deploy.

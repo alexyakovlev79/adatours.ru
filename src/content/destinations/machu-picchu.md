@@ -9,9 +9,8 @@ destinationType: region
 summary: >-
   Мачу-Пикчу – инкская цитадель XV века в горах Перу. В центре посещения находятся террасы и каменные сооружения, Храм Солнца, Храм трех окон, Главный храм и камень Интиуатана.
 hero:
-  src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
-  hover: "Мачу-Пикчу: древние террасы над глубокой горной долиной"
-  alt: "Каменные постройки и террасы Мачу-Пикчу среди гор и облаков, Перу"
+  src: "/media/destinations/machu-picchu/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Мачу-Пикчу — иллюстрация"
 gallery:
 - src: /media/excursions/ekskursiya-v-zateryannyj-gorod-machu-pikchu/gallery-1-src-enhanced-20261007.webp
   hover: "Мачу-Пикчу: древние стены и зелёные террасы на фоне гор"

@@ -9,10 +9,9 @@ destinationType: route_cluster
 summary: 'Доколумбовое искусство Перу в Лиме: керамика моче, ткани, золотые и серебряные изделия в колониальном
   особняке.'
 hero:
-  src: /media/excursions/muzej-larko-lima/ceramics-generated-20261013-v1.webp
-  alt: Красно-коричневые сосуды доколумбовой керамики в музейной витрине
-  hover: 'Керамика древнего Перу: сосуды со стремевидными ручками и фигурными изображениями'
-  caption: Доколумбовая керамика Перу — один из разделов музейной коллекции
+  src: "/media/destinations/larco-museum/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Музей Ларко — иллюстрация"
+  caption: "Доколумбовая керамика Перу — один из разделов музейной коллекции"
 gallery: []
 themes:
 - theme_culture

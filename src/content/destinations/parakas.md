@@ -9,9 +9,8 @@ destinationType: "resort"
 summary: "Полуостров Паракас: скалистое побережье, морские львы, птицы и прогулки на моторных лодках к островам Баллестас."
 searchAliases: []
 hero:
-  src: "/media/destinations/parakas/hero-enhanced-20261005.webp"
-  alt: "Катера под большой скальной аркой у побережья Паракаса, Перу"
-  hover: "Паракас в Перу: морская скальная арка и туристические лодки"
+  src: "/media/destinations/parakas/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Паракас — иллюстрация"
 gallery:
   - src: "/media/destinations/parakas/gallery-1-enhanced-20261005.webp"
     alt: "Красноватый пляж и жёлтые скалы побережья Паракаса, Перу"

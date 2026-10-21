@@ -64,7 +64,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: category, snapshotHttp 200, H1 «Excursions to countries of Latin America»; snapshotFile отсутствует, приватный снимок не просмотрен.",
+        "После первоначального 503 текущий EN HTML получен с HTTP 200; соответствующий module/productsjson (datasrc page=isExcursionCategory, typeid=2, category_id из HTML) вернул HTTP 200, total=0, products=[]. Проверен JSON-ответ, не только пустой HTML.",
+        "RU https://adatours.ru/brazil/place/costa-do-sauipe/ HTTP 200, H1 «Коста-ду-Сауипе»; это страница пляжного курорта. В текущем sitemap-0.xml нет каталога /brazil/costa-do-sauipe/; есть лишь место и optional-tours/ с одной программой."
+      ],
+      "note": "У EN страницы каталога экскурсий API сообщает total=0; RU страница курорта и один необязательный заезд в туре не являются тем же каталогом. Подтвержденной sameAs-пары нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:41:56.150Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/costa-do-sauipe/packages",
@@ -337,5 +348,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:40:37.399Z"
+  "updatedAt": "2026-10-21T15:41:56.150Z"
 }

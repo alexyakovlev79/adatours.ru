@@ -295,7 +295,18 @@
       "pageType": "other",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #731: title «Terms & Conditions», pageType other, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «TERMS AND CONDITIONS». Текст GTC для участников и посредников: заключение договора, данные клиента, оплата при бронировании, правила отмены после invoice deadline, изменение цены и услуг, ответственность и участие.",
+        "RU HTTP 200 https://adatours.ru/dmc/terms/ — «Условия работы с DMC Ada Tours». main src/pages/dmc/terms/index.astro: B2B-вопросы согласования программы, тарифной модели, плательщика, предложений, подтверждения поставщиков и индивидуальных условий изменений/отмен; это не тот же текст GTC и не его перевод."
+      ],
+      "note": "Различаются тип документа, аудитория и конкретные условия: EN — общие договорные GTC, RU — коммерческая страница согласования B2B-работы. SameAs по сходному названию terms не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:23:14.335Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/the-amazon-manaus/excursions",
@@ -458,5 +469,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:23:12.159Z"
+  "updatedAt": "2026-10-21T16:23:14.335Z"
 }

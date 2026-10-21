@@ -403,7 +403,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/f8b8bc6b1e12e4007abcb078.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory position 1290: hotel_candidate «Blue, Tree, Premium, Faria, Lima», H1 «Blue Tree Premium Faria Lima», snapshotHttp 200, independent lodging URL.",
+        "Current RU content schema includes tours, excursions and destinations but no Hotel collection or confirmed identical hotel offer."
+      ],
+      "note": "Страница «Blue, Tree, Premium, Faria, Lima» продавала отдельный гостиничный продукт. В RU отсутствует каноническая Hotel-страница с условиями бронирования; для 301 нужно решение о создании эквивалента либо прекращении старого адреса с 410.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:24:05.839Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/blue-tree-premium-paulista",
@@ -506,5 +516,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:23:49.139Z"
+  "updatedAt": "2026-10-21T15:24:05.839Z"
 }

@@ -1600,7 +1600,49 @@
         "batchBlobSha": "0108735cf2b7b27529388e9f55e3eb8a2ae16fc0",
         "reviewOrder": 73
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/costa-rica/place/jaco/",
+        "targetId": "destination_costa_rica_hako",
+        "targetContentPath": "src/content/destinations/hako.md",
+        "targetBlobSha": "93cbb0bb40adce2f2133d9e29bc13f29c1dcc68b",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-009 #643.",
+          "Текущий main src/content/destinations/hako.md, blob 93cbb0bb40adce2f2133d9e29bc13f29c1dcc68b: approved destination_costa_rica_hako, Хако; прямой GET https://adatours.ru/costa-rica/place/jaco/ → HTTP 200, SHA-256 595fa95abcd987a93e5f29c74e5508e10a0060e3f93aeba26d044c8074345fcf."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Хако». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-73",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-hako-jaco-v-kosta-rike/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-hako-jaco-v-kosta-rike/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_costa_rica_hako",
+          "url": "https://adatours.ru/costa-rica/place/jaco/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/costa-rica/place/jaco/",
+          "sha256": "595fa95abcd987a93e5f29c74e5508e10a0060e3f93aeba26d044c8074345fcf",
+          "bytes": 85082,
+          "title": "Хако в Коста-Рике: локации. Пока нет туров в это место. Путешествия 2026-2027 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/costa-rica/place/jaco/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 74,
@@ -2401,9 +2443,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:35.431Z",
+  "updatedAt": "2026-10-21T16:32:36.948Z",
   "progress": {
-    "resolved": 22,
+    "resolved": 23,
     "total": 50
   }
 }

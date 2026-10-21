@@ -745,7 +745,27 @@
         "batchId": "vip-019",
         "batchSha": "be315b6a61e9480fc9ebeff985019ebc16096119"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/colombia/place/san-andres/",
+        "relation": "redirect_301",
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:35:48.119Z",
+        "reason": "H1 и полное описание источника посвящены Сан-Андресу: пляжи, Сан-Луис, Ла-Лома, пират Морган. Расширенный title с Провиденсией не меняет основного референта; RU — именно Сан-Андрес.",
+        "evidence": [
+          "Web open исходного URL прочитан; source H1 «Сан-Андрес», описание того же колумбийского острова.",
+          "Проверен текущий main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/destinations/san-andres.md, blob 155b2336e04095ffdb79d8efd667ad54b4a155ac, canonical /colombia/place/san-andres/."
+        ],
+        "targetEntityId": "destination_colombia_san_andres"
+      },
+      "sourceObservation": {
+        "n": 114,
+        "sourceUrl": "https://vipdeluxetravel.ru/kolumbiya-ru/ehkskursii-i-tury-na-ostrov-san-andres-i-providensiya-v-kolumbii",
+        "http": 503,
+        "error": "HTTP Error 503: Service Unavailable"
+      }
     },
     {
       "reviewOrder": 115,
@@ -1797,7 +1817,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:36:10.427Z",
+  "updatedAt": "2026-10-21T16:36:12.774Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

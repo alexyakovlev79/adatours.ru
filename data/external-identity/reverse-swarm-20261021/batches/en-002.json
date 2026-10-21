@@ -572,7 +572,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /bolivia-cochabamba/packages self canonical, H1 Cochabamba: Tours to the City, Christ Statue, and Markets. Одна карточка Adventures in Bolivia. SHA-256 30a628506c2c7ee09e699fa503e0c59a2cbae4a7ebff3b814fd6aa96c79b44d3.",
+        "RU live HTTP200 /bolivia/place/cochabamba/tour/ self canonical, 1 тур tour_source_priklyucheniya_v_bolivii (Боливия11д Титикака/Ла-Пас/Уюни/Тороторо). SHA-256 625f23c91bcbbeef69b41de389525b3205c26640433e215f4f8540cc8d50f4b0.",
+        "Сопоставлен полный EN /adventures-in-bolivia (HTTP200, SHA-256 23109b8d995564bc8876603c38e0758f3d3d9f08d58c920ebcc54075c185d2b5) и текущий RU MD blob45f0c7477378ac90afe55e93799ce43d91d45174: совпадают11д/10н и последовательность Санта-Крус–Тиуанаку/Титикака–Ла-Пас–Уюни/лагуны–Кочабамба–Тороторо.",
+        "Но EN содержит датированный индивидуальный план12–22мая для2pax с рейсом OB739; RU прямо не имеет фиксированных дат и исключает все внутренние/международные авиабилеты, тогда как EN не проясняет их стоимость/включение. Frozen category_id167, snapshotFile отсутствует."
+      ],
+      "note": "Каталоги одноэлементные и маршрут очень близок, но текущая идентичность единственного продукта по существенным условиям не подтверждена: датированный EN-план и открытый RU-тур различаются, авиабилеты EN неясны. sameAs оставлен на разбор.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:50:17.505Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-copacabana-lake-titicaca",
@@ -605,5 +617,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:49:25.549Z"
+  "updatedAt": "2026-10-21T15:50:17.505Z"
 }

@@ -1709,7 +1709,35 @@
         "batchId": "vip-024",
         "batchSha": "7c762c84434809c50d6a259bc8e35a17f2c00834"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/bolivia/la-paz/la-paz-city-moon-valley-four-hours/",
+        "relation": "redirect_301",
+        "confidence": 0.82,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:38:33.727Z",
+        "reason": "Выбрана четырёхчасовая экскурсия «Ла-Пас и Лунная долина» как наиболее вероятный преемник: совпадают город, исторический центр, Рынок ведьм и обязательная Лунная долина. Услуги трансфера в аэропорт и все дополнительные остановки старой экскурсии не обещаются как одинаковые.",
+        "evidence": [
+          "VIP GET 200: прочитан полный текст четырёхчасовой программы, город + Лунная долина; аэропортовый трансфер присутствует только в старом тексте.",
+          "Оба RU-кандидата прочитаны; вариант la-paz-city-tour без Лунной долины отклонён, выбран содержащий главный природный объект.",
+          "Main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/excursions/la-paz-city-moon-valley-four-hours.md, blob cf79c43e87119607d82dee9ea8a6f438b3355714; статус и программа прочитаны."
+        ],
+        "targetEntityId": "excursion_la_paz_city_moon_valley_four_hours"
+      },
+      "sourceObservation": {
+        "n": 131,
+        "sourceUrl": "https://vipdeluxetravel.ru/excursion/citi-tur-po-la-pasu-pokoj-ocharovaniya",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/citi-tur-po-la-pasu-pokoj-ocharovaniya",
+        "canonical": "https://vipdeluxetravel.ru/citi-tur-po-la-pasu-pokoj-ocharovaniya",
+        "sha256": "cc06c1f682132d78dd2db1bd45b0dc44260b8a731174cc9266e7839c36c596f0",
+        "title": "Cити тур по Ла Пасу: Покой  Очарования",
+        "h1": [
+          "Cити тур по Ла Пасу: Покой  Очарования"
+        ],
+        "dayHeadings": []
+      }
     },
     {
       "reviewOrder": 132,
@@ -2264,7 +2292,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:39:05.214Z",
+  "updatedAt": "2026-10-21T16:39:06.818Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

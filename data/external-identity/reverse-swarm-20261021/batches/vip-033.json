@@ -42,7 +42,17 @@
       "pageType": "excursion_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/ec1bc910df1e9a3c0c880f4d.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан snapshots/ec1bc910df1e9a3c0c880f4d.html; SHA-256 88e6ad96be77ef79c9c1ae4d468351da6ee7819ddb30c3007c3d1bb9cf38a4b7 совпал с frozen inventory. Исходник product_id=3890, H1 «Экскурсия в Рио: Парк Роберто Бурле Маркс»: бывшее поместье ландшафтного архитектора, сад с местными растениями, тур с русскоговорящим гидом $350 на человека при 2 участниках.",
+        "В source-index main aafd4b2da015d669e477eedffb3c956ede417992 не найден самостоятельный объект Бурле Маркса. Проверена экскурсия excursion_source_botanical_garden, src/content/excursions/botanical-garden.md, blob 91ed22b31a7057cbe4092b9890cb6a7e1ba4ed19: Jardim Botânico 1808 года у Корковадо, 137 га, 4 часа. Это другой сад, не парк Бурле Маркса."
+      ],
+      "note": "Подтвержденной RU-цели для экскурсии по поместью Бурле Маркса нет. Нельзя подменять ее Ботаническим садом Рио или общегородской страницей. Требуется решение: создание соответствующего продукта либо 410; 301 не подготовлен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:21:40.834Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=5&product_id=4071",
@@ -325,5 +335,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:21:13.701Z"
+  "updatedAt": "2026-10-21T15:21:40.834Z"
 }

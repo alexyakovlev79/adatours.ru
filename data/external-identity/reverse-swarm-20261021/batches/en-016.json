@@ -106,7 +106,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-003: title «Valparaiso Tours | Pablo Neruda House & Vina Beaches», H1 «Valparaiso and Vina del Mar: Tours to Neruda House and Colorful Hills», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "21.10.2026: EN HTML HTTP 200: packages category_id=91, H1 прямо включает Valparaiso and Vina del Mar. schema offerCount=7; productsjson вернул 7 продуктов, включая 3600 Grand VIP Chile/Argentina 17 days, 1502 Brazil/Argentina/Chile/Peru, 2976 Chile & Argentina Deluxe, 1113 Chile VIP Summer & Wine, 4023 Mysteries of Men, 2492 Space travel и 4391 VIP Chile 5*.",
+        "RU /chile/place/valparaiso-vina-del-mar/tour/ HTTP 200: 11 основных туров, показано 1–11 из 11; destination_chile_valparaiso_i_vinya_del_mar."
+      ],
+      "note": "Географическое объединение двух городов совпадает по H1, однако EN содержит 7 продуктов, RU 11. Разные наборы не объявляются sameAs, требуется согласование ассортимента.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:21:59.680Z",
+      "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/venezuela-en/excursions",
@@ -239,5 +250,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:21:57.501Z"
+  "updatedAt": "2026-10-21T16:21:59.680Z"
 }

@@ -242,7 +242,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/62f842a7911203d533d26c34.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory 2026-10-20: account/download returned HTTP 200 and title \"Авторизация\"; final URL /?route=account/login.",
+        "Current RU Ada Tours site does not expose private shop downloads as canonical public tourist content."
+      ],
+      "note": "Раздел загрузок авторизованного покупателя является техническим, его перенаправление на RU туристическую страницу было бы ложным.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:05:31.488Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=checkout%2Fcart",
@@ -425,5 +435,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:05:27.955Z"
+  "updatedAt": "2026-10-21T15:05:31.488Z"
 }

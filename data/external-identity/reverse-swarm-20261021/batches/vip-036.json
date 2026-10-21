@@ -22,7 +22,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/dcbc021e9bd52c8d1b263c70.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/dcbc021e9bd52c8d1b263c70.html, SHA-256 2210e1eb2f7c24eca3c15f5c2df64ecb6be1bca846fa5be7ebe8729341c48a2a, обход 2026-10-20T13:10:51+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Отель Vila Gale Fortaleza». Vila Gale Fortaleza — гостиница у Praia do Futuro в Форталезе; описание номеров с кондиционером, бассейна, сауны, ресторана и конференц-зала.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) поиск названия/бренда Vila Gale Fortaleza не дал самостоятельной страницы этого отеля. В src/content.config.ts перечислены countries/destinations/tours/excursions/themes/cases/people/articles, отдельной гостиничной коллекции нет; маршрутизатор [...path].astro формирует detail этих туристических сущностей."
+      ],
+      "note": "Проверена карточка конкретного отеля Vila Gale Fortaleza, Форталеза. Подтвержденной самостоятельной RU-страницы отеля в просмотренном текущем source-index нет. Географическая страница города и тур с возможным проживанием имеют другое назначение и не назначены 301-целью; полнота внешнего discovery не заявляется.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:13.523Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-villa-rasa-marina-and-spa?page=7",
@@ -235,5 +245,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:31:11.450Z"
+  "updatedAt": "2026-10-21T15:32:13.523Z"
 }

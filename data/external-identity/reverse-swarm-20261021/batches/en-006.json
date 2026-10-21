@@ -150,7 +150,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Excursions and tours in Cozumel Resort  Island, in Mexico», H1 «Excursions to countries of Latin America». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/cozumel/excursions: HTTP 200, canonical=https://adatours.com/cozumel/excursions, H1 «Excursions to countries of Latin America».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=187&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. Первый ответ API: total=0, products=0. Примеры ID/названий: products=[].",
+        "https://adatours.ru/mexico/place/cozumel/ — HTTP 200, canonical совпадает, H1 «Косумель», страница острова с дайвингом. Текущий sitemap не содержит отдельный каталог /mexico/cozumel/."
+      ],
+      "note": "EN-каталог экскурсий вернул products=[] и total=0 через API. RU описывает сам остров, а не идентичный каталог экскурсий; подтвержденной пары sameAs нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:46:03.939Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/cozumel/packages",
@@ -383,5 +395,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:01.198Z"
+  "updatedAt": "2026-10-21T15:46:03.939Z"
 }

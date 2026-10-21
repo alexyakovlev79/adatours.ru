@@ -253,7 +253,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: title Tours and excursions to  Samaná Peninsula in the Dominican Republic; H1 Tours to countries of Latin America; category_ids=[\"643\"]; adatours-com-crawl-002.json index 243; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/samana/packages: HTTP 200; SHA256 c903dcc21f46b06593be3282c3330fef43edaf24ea4545832d17342779eec079. Общий каталог Latin America; gallery выбранного места не содержит карточек.",
+        "main src/content/destinations/samana.md, blob 67f4ac246e705dff7440dffa7adaf20c3ab77aba: approved destination_dominican_republic_samana, /dominican-republic/place/samana/. RU каталог https://adatours.ru/dominican-republic/place/samana/tour/: HTTP Error 404: Not Found."
+      ],
+      "note": "Предметный RU каталог по действующему каноническому маршрутизатору отвечает 404. Approved Place данного места существует, но не является тем же каталогом туров/экскурсий; подтвержденной пары sameAs нет.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:16:52.760Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/san-cristobal-de-las-lasas/excursions",
@@ -447,5 +458,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:16:50.635Z"
+  "updatedAt": "2026-10-21T16:16:52.760Z"
 }

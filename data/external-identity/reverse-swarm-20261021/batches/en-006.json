@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
-    "token": "reverse-lease-mvi9y7b5-bsysfb3pwtt",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:36:37.208Z",
-    "expiresAt": "2026-10-21T17:06:37.208Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://adatours.com/corn-islands/excursions",
@@ -654,8 +648,22 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Encarnacion Excursions | Jesuit Ruins of Trinidad», H1 «Encarnacion: Excursions to the Jesuit Ruins and the Parana River». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/encarnacion/excursions: HTTP 200, canonical=https://adatours.com/encarnacion/excursions, H1 «Encarnacion: Excursions to the Jesuit Ruins and the Parana River».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isExcursionCategory&typeid=2&category_id=265&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. Первый ответ API: total=0, products=0. Примеры ID/названий: products=[].",
+        "https://adatours.ru/paraguay/place/encarnacion-and-trinidad/ — HTTP 200, canonical совпадает, H1 «Энкарнасьон & Тринидад». В текущем sitemap нет отдельного экскурсионного каталога /paraguay/encarnacion-and-trinidad/; есть страница места и каталог 1 тура."
+      ],
+      "note": "EN-каталог экскурсий Encarnacion возвращает API total=0. RU страница составного места Энкарнасьон/Тринидад и каталог туров не равны этому каталогу экскурсий; sameAs не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:47:27.938Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:47:25.444Z"
+  "updatedAt": "2026-10-21T15:47:27.938Z",
+  "completedAt": "2026-10-21T15:47:27.938Z",
+  "lastOwner": "reverse-worker-mvi9y7b5-1eou2d2dr8i"
 }

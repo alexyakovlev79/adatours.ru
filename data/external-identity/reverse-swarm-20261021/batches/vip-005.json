@@ -342,7 +342,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/e857342a52d31253041a9e83.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #537: snapshotHttp=200, pageType=tour_listing, title=\"(empty)\", H1=\"(empty)\", snapshotFile=snapshots/e857342a52d31253041a9e83.html; не live check.",
+        "У RU Destination destination_colombia_san_avgustin есть активный MD, но ни один неархивный Tour в data/source-index/catalogs/tours.json не содержит этот ID как основной маршрут; отдельных главных туров через это место не подтверждено."
+      ],
+      "note": "VIP /packages — список туров Сан-Августина; действующий RU каталог основных туров этого места пуст. Не перенаправлять на несуществующий /colombia/place/san-agustin/tour/; нужно решение о странице места или 410.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:50:54.262Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-arheologicheskij-gorod-san-avgustin-v-kolumbii/ekskursii",
@@ -475,5 +485,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:50:49.731Z"
+  "updatedAt": "2026-10-21T14:50:54.262Z"
 }

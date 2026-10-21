@@ -269,7 +269,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory category 39, adatours-com-crawl-002.json index 252, HTTP200. Живой GET EN /san-juan-del-sur/packages HTTP200: единственная видимая gallery-карточка The Best of Nicaragua ведёт на /the-best-of-nicaragua-2023.",
+        "Живой GET EN продукта /the-best-of-nicaragua-2023 HTTP200: 10days/9nights, $2695; день4 — Zopango Island, купание, птицы и обед на частном острове; день6 — Ometepe/Mombacho/San Juan del Sur с 4x4, прогулкой по кратеру и zipline.",
+        "Живой RU /nicaragua/place/san-juan-del-sur/tour/ HTTP200: одна программа. main src/content/tours/best-of-nicaragua-10-days.md, blob793a66fd91e660ae6efcadd4453c8b70e81c3402, active tour_nicaragua_best_10_days: 10дней/9ночей, 2027, $3342 DBL; день4 — островки Гранады+канопи Момбачо, без Zopango; день6 — паром и прямой трансфер, посещение Момбачо явно исключено из основного дня."
+      ],
+      "note": "Совпадают география, длительность и три свободных дня у океана, но программы существенно различаются: Zopango в EN против Момбачо в RU на дне4 и дополнительная экскурсия на Момбачо на дне6 EN против прямого трансфера RU. Единственный видимый продукт каталогов не является подтверждённо той же программой; sameAs каталога не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:16:41.437Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/san-pedro-de-atacama/excursions",
@@ -392,5 +403,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:15:54.912Z"
+  "updatedAt": "2026-10-21T16:16:41.437Z"
 }

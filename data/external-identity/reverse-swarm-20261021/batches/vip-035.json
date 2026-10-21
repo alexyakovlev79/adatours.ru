@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi9cm3m-l6ox3ffx1id",
-    "token": "reverse-lease-mvi9cm3m-kyy9z4y06zg",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:19:46.752Z",
-    "expiresAt": "2026-10-21T16:49:46.752Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-pestana-bahia?page=5",
@@ -689,8 +683,23 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/03dbd0ec8fdfff6232573433.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан исходный HTML snapshots/03dbd0ec8fdfff6232573433.html из vip-identity-crawl-20261020.zip; SHA-256 файла 8a2dc9d53167472003f6284d761837368e6114350fd48fa493afc3388da2b283 совпадает с frozen inventory (blob 84d12dca210caa17f7af85edd88ab3ab9e4b0dfe). Сохранённый HTTP 200, дата 2026-10-20T13:10:36+00:00; product_id=1214.",
+        "Title «Отель Turrance Foz do Iguassu», в описании Turrance Green: гостиница в Фоз-ду-Игуасу, номера, ресторан, бассейн и фитнес-центр.",
+        "HTML/inventory canonical: https://vipdeluxetravel.ru/turrance-foz-do-iguassu; текущий URL содержит /hotel/ и ?page=. Идентичность другому URL по полному содержимому не подтверждена; одного canonical недостаточно для excluded.",
+        "Проверен текущий main: destination_brazil_iguacu, /brazil/place/foz-do-iguacu/, status approved (src/content/destinations/foz-do-iguacu.md, blob 561389b1de01185b95a5868b3ee8baa8ded82cbb). Страница описывает город/курорт/природный район и туристические маршруты, не данный гостиничный продукт.",
+        "В текущем data/source-index/catalogs/destinations.json (main, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) по имени/slug/aliases отдельная сущность этого отеля не найдена; в src/content.config.ts нет коллекции hotels. Прочитан опубликованный sitemap-0.xml 21.10.2026: 6093 URL, точная гостиничная цель не подтверждена."
+      ],
+      "note": "Соответствующая отдельная RU-карточка отеля не подтверждена. Географическая страница не сохраняет намерение выбора/бронирования этого отеля; требуется редакционное решение: сохранять гостиничную страницу или 410. RU-цель и готовность 301 не назначены.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:27:54.454Z",
+      "checkedBy": "reverse-worker-mvi9cm3m-l6ox3ffx1id",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:27:52.112Z"
+  "updatedAt": "2026-10-21T15:27:54.454Z",
+  "completedAt": "2026-10-21T15:27:54.454Z",
+  "lastOwner": "reverse-worker-mvi9cm3m-l6ox3ffx1id"
 }

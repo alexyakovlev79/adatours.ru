@@ -1395,7 +1395,44 @@
         "batchBlobSha": "b9adc25a5f96aa3afc25232f7a7fe47f97858162",
         "reviewOrder": 70
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/brazil/place/fortaleza/",
+        "targetId": "destination_brazil_fortaleza",
+        "targetContentPath": "src/content/destinations/fortaleza.md",
+        "targetBlobSha": "a5cbd82af5c678915851f997d8f1703a8f17a466",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 503; актуальный HTML не получен. Для географии и типа excursion_listing переиспользованы исходные evidence и frozen snapshotHttp 200, vip-008 #637; текущая недоступность не выдается за удаление страницы.",
+          "Текущий main src/content/destinations/fortaleza.md, blob a5cbd82af5c678915851f997d8f1703a8f17a466: approved destination_brazil_fortaleza, Форталеза; прямой GET https://adatours.ru/brazil/place/fortaleza/ → HTTP 200, SHA-256 ca29ca4c475def8d3752a8a6a6a9db4348bd3825445955bdc1ee8c1228d663c2."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Форталеза». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-70",
+          "url": "https://vipdeluxetravel.ru/plyazhnye-tury-v-braziliyu-na-more-v-gorod-fortaleza/ekskursii",
+          "http": 503,
+          "error": "HTTP Error 503: Service Unavailable"
+        },
+        "liveTarget": {
+          "key": "destination_brazil_fortaleza",
+          "url": "https://adatours.ru/brazil/place/fortaleza/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/brazil/place/fortaleza/",
+          "sha256": "ca29ca4c475def8d3752a8a6a6a9db4348bd3825445955bdc1ee8c1228d663c2",
+          "bytes": 75680,
+          "title": "Форталеза в Бразилии: локации. Пока нет туров в это место. Путешествия 2026-2027 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/brazil/place/fortaleza/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 71,
@@ -2280,9 +2317,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:30.278Z",
+  "updatedAt": "2026-10-21T16:32:31.813Z",
   "progress": {
-    "resolved": 19,
+    "resolved": 20,
     "total": 50
   }
 }

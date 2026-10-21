@@ -460,7 +460,51 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/colombia/villa-de-leyva/",
+        "confidence": 0.15,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "В EN-экскурсионном фильтре Вилья-де-Лейвы в полученном HTML нет карточек; RU содержит одну 12-часовую экскурсию с историческим центром, мостом Бояка и палеонтологией. Равенство коммерческого предложения не подтверждено.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/villa-de-leyva/excursions",
+            "http": 200,
+            "canonical": "https://adatours.com/villa-de-leyva/excursions",
+            "h1": [
+              "Excursions to countries of Latin America"
+            ],
+            "sha256": "e236a48f292469f1c6da973db9c592802e8fdff2d14e26529dac2dfbaf17d6f4",
+            "checkedAt": "2026-10-21T16:30:06.180128+00:00",
+            "htmlCards": [],
+            "offerCount": []
+          },
+          {
+            "url": "https://adatours.ru/colombia/villa-de-leyva/",
+            "http": 200,
+            "canonical": "https://adatours.ru/colombia/villa-de-leyva/",
+            "h1": [
+              "1 экскурсия в Вилья-де-Лейве, Колумбия - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours"
+            ],
+            "sha256": "009ce0d70fbbb157b02fcd63c729b2876e1a949b52bba3f633a44c765b5cddc1",
+            "checkedAt": "2026-10-21T16:30:03.466390+00:00",
+            "htmlCards": [],
+            "offerCount": []
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:31:59.325Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 307,
@@ -579,5 +623,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:58.015Z"
+  "updatedAt": "2026-10-21T16:31:59.325Z"
 }

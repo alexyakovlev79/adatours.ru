@@ -142,7 +142,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/ace302d5f070bc879d9b959a.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/ace302d5f070bc879d9b959a.html, SHA-256 501acbf2b3ad637d9f68ea64c4242992e35db2c9ec77b683ca25d4357765ed5a, обход 2026-10-20T13:12:21+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Отель Windsor Plaza Rio Copacabana». Windsor Plaza Rio Copacabana — четырехзвездочная гостиница у Копакабаны, бассейн на крыше, сауна, ресторан и исторически заявленный бесплатный автобус в центр/аэропорты.",
+        "Проверены актуальные main source-index каталоги destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf): самостоятельной страницы Windsor Plaza Copacabana по названию/бренду не установлено. В src/content.config.ts нет hotel collection, маршрутизатор [...path].astro не выделяет hotel detail; общий тур/город не доказывает соответствия гостинице."
+      ],
+      "note": "Проверена самостоятельная карточка Windsor Plaza Copacabana; география исходника: Рио-де-Жанейро. Подтвержденная текущая RU-страница именно этой гостиницы в просмотренном source-index не найдена. Другой отель той же сети, туристический город и тур с возможным размещением не назначены 301-целью.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:32:54.367Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/agua-marinha?page=1",
@@ -295,5 +305,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:51.976Z"
+  "updatedAt": "2026-10-21T15:32:54.367Z"
 }

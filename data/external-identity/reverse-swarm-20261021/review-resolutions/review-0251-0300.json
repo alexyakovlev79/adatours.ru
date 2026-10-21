@@ -45,7 +45,28 @@
         "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.15,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Пустой EN-каталог против одного действующего RU-тура: совпадает город, но отсутствует набор, который можно признать той же подборкой.",
+        "evidence": [
+          "EN live HTTP200 /belo-horizonte/packages self canonical, H1 Belo Horizonte: Garden City Tours & Architecture. Карточек туров нет; общий текст об отдыхе в Латинской Америке. SHA-256 e2e2d0239622a96d3094d1427adabd9495c8f8a3abb6f50aa4a9f53aa104d90c.",
+          "RU live HTTP200 /brazil/place/belo-horizonte/tour/ self canonical, 1 тур: Бразилия за14 дней Рио/Ору-Прету/Сальвадор/Прайя-ду-Форте/Игуасу, stable ID tour_brazil_gems_14d. SHA-256 39acdf044294717c2a6e824c4b72bd86b29f6f86942a5675b5569f3bde27ab64.",
+          "Frozen EN category_id242, snapshotHttp200, snapshotFile отсутствует. RU destination_brazil_belo_horizonte; город присутствует в маршруте действующего тура как транспортный узел, но пустой EN-состав этому не равен."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 252,
@@ -75,7 +96,28 @@
         "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.45,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Пять EN-продуктов против трех RU, включая два разных Luxury Panama. Три общих направления не доказывают тождество каталога.",
+        "evidence": [
+          "EN live HTTP200 /bocas-del-toro/packages self canonical; H1 Bocas del Toro: Tours to the Surfing & Adventure Archipelago. 5 карточек: Adventures in Panama, Luxury Panama (/luxury-panama), The Best of Panama, A grand journey through Panama, Luxury Panama (/luxury-tour-panama-city-bocas-del-toro-boquete-12-days). SHA-256 41c42eb761e043da3e77c1cfd0907d3936aa2953078c5e3ca22d68138be00a65.",
+          "RU live HTTP200 /panama/place/bocas-del-toro/tour/ self canonical, 3 тура: Люксовая Панама12д, Лучшее в Панаме11д, Панама16д. Stable IDs tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru, tour_source_luchshee_v_paname, tour_source_panama_2024. SHA-256 9045fd79be575c5685172bafd4db70ae9bbf50155a7492be81d1e1bf7b15388f.",
+          "Frozen EN category_id159, snapshotHttp200, snapshotFile отсутствует; geographic filter destination_panama_bokas_del_toro близок, но 5 источников/3 RU-продукта не образуют доказанный равный состав."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 253,
@@ -106,7 +148,29 @@
         "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "matched_exact",
+        "ruUrl": "https://adatours.ru/bolivia/place/cochabamba/tour/",
+        "relation": "sameAs",
+        "confidence": 0.82,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": true,
+        "reason": "Единственный продукт в обоих каталогах, 11 дней/10 ночей, совпадающая подробная последовательность Санта-Крус–Титикака–Ла-Пас–Уюни–Кочабамба–Тороторо. Датированный персональный EN-план считаю вариантом той же базовой программы; включение рейса не приравнивается.",
+        "evidence": [
+          "EN live HTTP200 /bolivia-cochabamba/packages self canonical, H1 Cochabamba: Tours to the City, Christ Statue, and Markets. Одна карточка Adventures in Bolivia. SHA-256 30a628506c2c7ee09e699fa503e0c59a2cbae4a7ebff3b814fd6aa96c79b44d3.",
+          "RU live HTTP200 /bolivia/place/cochabamba/tour/ self canonical, 1 тур tour_source_priklyucheniya_v_bolivii (Боливия11д Титикака/Ла-Пас/Уюни/Тороторо). SHA-256 625f23c91bcbbeef69b41de389525b3205c26640433e215f4f8540cc8d50f4b0.",
+          "Сопоставлен полный EN /adventures-in-bolivia (HTTP200, SHA-256 23109b8d995564bc8876603c38e0758f3d3d9f08d58c920ebcc54075c185d2b5) и текущий RU MD blob45f0c7477378ac90afe55e93799ce43d91d45174: совпадают11д/10н и последовательность Санта-Крус–Тиуанаку/Титикака–Ла-Пас–Уюни/лагуны–Кочабамба–Тороторо.",
+          "Но EN содержит датированный индивидуальный план12–22мая для2pax с рейсом OB739; RU прямо не имеет фиксированных дат и исключает все внутренние/международные авиабилеты, тогда как EN не проясняет их стоимость/включение. Frozen category_id167, snapshotFile отсутствует."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 254,
@@ -137,7 +201,29 @@
         "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.6,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Копакабана, озеро Титикака и островные поездки разделены в RU. Ни один основной референт не набирает 70% по сохраненным доказательствам.",
+        "evidence": [
+          "EN live HTTP200 /bolivia-copacabana-lake-titicaca self canonical, H1 Copacabana & Lake Titicaca Tours. Содержательная совмещённая посадочная: озеро Титикака, Копакабана, Isla del Sol, также упомянуты острова Урос; разделы города/экскурсий/этимологии и CTA, карточек программ нет. SHA-256 9ebc269915cab351b3f0cfaeeb5bf015421204d9b418a40bdfe4b9a141ac4ba2.",
+          "RU main approved destination_bolivia_kopakabana /bolivia/place/copacabana/ (MD blob54855f37cba688a5a35358aca57839843abc3a86) — отдельный city Копакабана, база лодок на остров Солнца.",
+          "RU main approved destination_bolivia_ozero_titikaka_boliviya /bolivia/place/lake-titicaca-bolivia/ (MD blob1968a1a432379b23ce912cc2fe0484b07a3a2571) — отдельная natural_area боливийского берега озера. Таким образом источник охватывает несколько самостоятельных RU-сущностей.",
+          "Frozen inventory category_id168, typecategory, snapshotHttp200, snapshotFile отсутствует. RU-цель не выбрана по составному slug; обе точные канонические страницы/типы прочитаны."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 255,
@@ -167,7 +253,28 @@
         "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.1,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Урос/Такиле в фактических EN-продуктах против Острова Солнца в RU; различается конкретная география экскурсий.",
+        "evidence": [
+          "EN live HTTP200 /bolivia-copacabana-lake-titicaca/excursions self canonical, H1 Copacabana & Isla del Sol: Excursions on Lake Titicaca and Inca Ruins. Но фактически2 карточки: Titicaca Lake, Uros & Taquile Islands (/titicaca-lake-uros-taquile-islands) и Tour to Titicaca Lake, Uros & Taquile Islands (/tour-to-titicaca-lake-uros-taquile-islands). SHA-256 8385f198e9681e7812150f3cd30fde9ec67af1fb7b0243d1be3beda590ad2c4b.",
+          "RU live HTTP200 /bolivia/copacabana/ self canonical, 2 иных продукта: Титикака на катамаране: Копакабана и Остров Солнца (excursion_bolivia_titicaca_isla_del_sol_catamaran) и вариант на катере (excursion_bolivia_titicaca_isla_del_sol_speedboat). SHA-256 bcf0d7a286c59c74f6002b2889fa03f42498ad09f71441c8fd9f37d2b1c79943.",
+          "Frozen EN category_id168, HTTP200, snapshotFile отсутствует. Название EN говорит о Копакабане/Isla del Sol, карточки — об Урос/Такиле; одно и то же число2 не доказывает совпадения товаров и географии."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 256,
@@ -198,7 +305,29 @@
         "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.35,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Составной боливийско-перуанский EN-фильтр не совпадает ни с RU-Копакабаной, ни с RU-боливийской Титикакой; равенство числа карточек случайно.",
+        "evidence": [
+          "EN live HTTP200 /bolivia-copacabana-lake-titicaca/packages self canonical, H1 Copacabana & Isla del Sol: Tours on Lake Titicaca and Inca Ruins. 10 карточек, включая 5 country-tour, Adventures in Bolivia, Peru&Bolivia, Bolivia at Glance, Peru Great Inca Expedition, 21 Day Adventure in Peru, Feeling Peru/Ecuador VIP, Marvels of Peru, Treasures of Bolivia, Great Inca Expedition. SHA-256 fa7d641ecdf28bd9e8a55cc9db7967c1a64f63f1d043627d7931a97cbc4e1157.",
+          "RU live HTTP200 /bolivia/place/copacabana/tour/ self canonical: тоже10, но другой состав, например Перу/Боливия/Чили14д, Перу/Боливия с Уюни12д, Уюни/озёра15д, Мечта Боливии7д, Очаровательные Перу/Боливия10д. Нет EN-карточек 21 Day Adventure in Peru и Marvels of Peru. SHA-256 deae73bb5ea7ec84ddfaa68a55bc99b4e0eae6ec6905395fc131a2351101e423.",
+          "RU live HTTP200 /bolivia/place/lake-titicaca-bolivia/tour/ self canonical:9 туров, включая VIP Чили/Боливия/Перу12д и программы боливийского берега; SHA-256 d7ce8ca065b9f1b961c6637bad7b445df12e8bbac2c6c034af2be7bb50fc0250. Обе точные RU-категории проверены вместо выбора по slug.",
+          "Frozen EN category_id168, HTTP200, snapshotFile отсутствует. Составной EN-фильтр Копакабана/Титикака включает ряд чисто перуанских программ и не совпадает ни с городским RU-фильтром, ни с боливийским берегом озера."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 257,
@@ -232,7 +361,32 @@
         "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.65,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Две из трех программ совпадают, но третья имеет другое начало, конец и внутренне противоречивый перелет. Это конкретный конфликт, вероятность полного тождества ниже порога.",
+        "evidence": [
+          "Текущий EN-каталог прочитан 2026-10-21T15:37:34.164592+00:00: HTTP 200, canonical https://adatours.com/cayenne/packages, 98835 bytes, SHA-256 8c5f026584e3d4de3d86c6b03b4ab41156ebc00a36e24761d4292f3e1997fe6f; H1 Cayenne: Tours to the Capital of French Guiana. Frozen inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: category/200, snapshotFile отсутствует.",
+          "EN-каталог показывает ровно три карточки: /guianas-experience-with-local-community (9 дней), /suriname-guyana-french-guiana (14 дней), /guyana-surinam-french-guyana (7 дней). Прочитаны полные программы и включено/не включено этих трёх EN-продуктов, а не только названия.",
+          "Текущий RU-каталог https://adatours.ru/french-guiana/place/cayenne/tour/: HTTP 200, canonical https://adatours.ru/french-guiana/place/cayenne/tour/, SHA-256 b4ca6ec789918480391ba8179f7107d8e11bd2819d7474d2f348f31fbe2a7e5f; 3 тура (14, 9, 7 дней). Каноническое место destination_french_guiana_kajenna сверено с source-index entry blob f0b42e29903e6de124720a728273453a275fce48. Фильтр сайта — основное посещение Кайенны.",
+          "Девятидневные EN guianas-experience-with-local-community (HTML SHA-256 964439ea18faf694f56661e447f590ea71966280b134b1302393dc872dd903f2) и RU tour_source_priklyuchenie_v_gvianakh (MD blob 2b6faff8e7c51f1cbac055393a4172620c45f4a8) имеют последовательность Джорджтаун/Кайетур — Парамарибо/Пеперпот — Кайенна/Куру/острова — джунгли/маруны — выезд из Суринама; совпадают указанные англогид, 3* и исключённый перелёт Гайана–Суринам.",
+          "Четырнадцатидневные EN suriname-guyana-french-guiana (HTML SHA-256 c46931eb50c6df3f3dffe20c42c7d40222c78ddf9e5a6f5ab97fdaadbf7407d8) и RU tour_source_surinam_gajana_frantsuzskaya_gviana (MD blob 685861bac45d67b0f0f947ece1fccc1e6532835c) включают тот же основной блок и дни Kabalebo: Туманная гора/Чарли, Мой-Мой, Кило 3, Йодденсаванна/Реди-Доти; окончание в Суринаме.",
+          "Критическое несовпадение третьей программы: EN /guyana-surinam-french-guyana (HTML SHA-256 b678271946a821cf8019326349dcd8d85ad600bca8018a0ca45184f8bf67c7d6) — день 1 Джорджтаун, день 2 Кайетур и рейс в Суринам, день 7 выезд из Суринама. RU tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana (MD blob 6b3e03e5b0b2060e0fb5200ee1188af115544e22) — день 1 Парамарибо, день 3 Куру, день 6 Джорджтаун/Кайетур, день 7 выезд из Гайаны.",
+          "У EN семидневной программы блок included при этом указывает рейс Suriname–Guyana, что противоречит направлению перелёта в EN itinerary. Совпадение трёх названий/длительностей и географии не устраняет конфликт фактической последовательности и условий одного продукта."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 258,
@@ -261,7 +415,30 @@
         "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "matched_exact",
+        "ruUrl": "https://adatours.ru/paraguay/place/encarnacion-and-trinidad/tour/",
+        "relation": "sameAs",
+        "confidence": 0.83,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": true,
+        "reason": "Одноэлементные каталоги с одним восьмидневным маршрутом Чако–Филадельфия–Пай-Пуку–Энкарнасьон–миссии–Итайпу. Разная цена и ранний заезд трактуются как локализованные условия предложения той же программы, а не другая сущность.",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /encarnacion/packages содержит только Tour of Paraguay 2024; проверена связанная /tour-of-paraguay-2024: 8 дней/7 ночей, Чако–Филадельфия–Pa'i Puku–Сан-Игнасио–Энкарнасьон–Хесус/Тринидад–Итайпу, $4434 в карточке продукта; в included явно указан Early Check In on day 1.",
+          "RU GET https://adatours.ru/paraguay/place/encarnacion-and-trinidad/tour/ HTTP 200: один тур «Парагвай 2023». Current main src/content/tours/klassicheskij-paragvaj.md (blob ac313f47db30895bd72024c1e959237ad1145607) подтверждает тот же 8-дневный маршрут, но $3903, и early check-in в included не указан."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ],
+        "additionalEvidence": [
+          "Re-read current main src/content/tours/klassicheskij-paragvaj.md; original blob and 8-day route/3903 USD retained."
+        ]
+      }
     },
     {
       "reviewOrder": 259,
@@ -290,7 +467,31 @@
         "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "matched_exact",
+        "ruUrl": "https://adatours.ru/brazil/tour/amazing-brazil/",
+        "relation": "sameAs",
+        "confidence": 0.86,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": true,
+        "reason": "Совпадают 14 дней/13 ночей, цена 7001 USD и редкая последовательность Рио–Пантанал/Бонито–Манаус–Сан-Луис–Баррейриньяс. Замена реки снорклинга и конкретизация дня лоджа относятся к вариантам базовой программы. Идентичность принята вероятностно, условия остаются различными.",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /fascinating-tour фактически Tour «Fascinating Brazil», 14 дней/13 ночей, $7001, Рио–Пантанал/Бонито–Манаус–Сан-Луис–Баррейриньяс. В дне 7 указаны Gruta do Lago Azul и снорклинг по Rio Sucuri, 750 м; день 9 предлагает выбрать активность лоджа.",
+          "Current main src/content/tours/udivitelnaya-braziliya.md, ID tour_source_udivitelnaya_braziliya, canonical https://adatours.ru/brazil/tour/amazing-brazil/, blob b81880497414d0a08c24f5b32c200bb9c666193c: 14 дней/13 ночей и $7001, но день 7 — Рио-да-Прата/Olho d'Água, день 9 — пирании, индейская деревня и урок выживания."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ],
+        "additionalEvidence": [
+          "Re-read EN https://adatours.com/fascinating-tour via web retrieval 2026-10-21; days 10-14 and exclusions remain consistent with base itinerary.",
+          "Re-read current main src/content/tours/udivitelnaya-braziliya.md blob b81880497414d0a08c24f5b32c200bb9c666193c."
+        ]
+      }
     },
     {
       "reviewOrder": 260,
@@ -319,7 +520,27 @@
         "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.65,
+        "confidenceMeaning": "Estimated probability that proposed RU and EN pages identify the same entity/catalogue; subjective editorial estimate, not statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "accepted": false,
+        "reason": "Три названия/длительности совпадают, но семидневная программа идет в обратном порядке и имеет другие аэропорты начала/конца. Полный состав каталогов не принят.",
+        "evidence": [
+          "EN GET 21.10.2026 HTTP 200: /french-guyana-en/packages содержит три тура — Guianas experience with local community (9 дней), Suriname Guyana French Guiana (14 дней), The Three Guianas highlights (7 дней). Все три связанные карточки открыты напрямую; 7-дневная /guyana-surinam-french-guyana начинается в Georgetown, день 2 — Kaieteur и перелет в Suriname, выезд из Suriname.",
+          "RU GET https://adatours.ru/french-guiana/tour/ HTTP 200: три программы на 7/9/14 дней. Current main src/content/tours/3-strany-gajana-surinam-i-frantsuzskaya-gviana.md, ID tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana, blob 6b3e03e5b0b2060e0fb5200ee1188af115544e22: день 1 прибытие в Suriname/Paramaribo, день 2 Paramaribo/Peperpot; маршрут завершается Guyana/Georgetown."
+        ],
+        "reviewedAt": "2026-10-21T16:29:47.140Z",
+        "reviewedBy": "review-sixth50-2b275cd3100c",
+        "researchMode": "second-pass adjudication of retained first-pass evidence; selected positive references re-read",
+        "limitations": [
+          "No new live HTTP claim for every URL; HTTP and hashes in original evidence belong to original worker.",
+          "Decision is registry preparation; does not publish JSON-LD, activate redirects, or equate differing commercial conditions."
+        ]
+      }
     },
     {
       "reviewOrder": 261,
@@ -1520,5 +1741,13 @@
       },
       "decision": null
     }
-  ]
+  ],
+  "updatedAt": "2026-10-21T16:29:59.336Z",
+  "summary": {
+    "total": 50,
+    "adjudicated": 10,
+    "matched_exact": 3,
+    "checked_no_confirmed_pair": 7,
+    "pending": 40
+  }
 }

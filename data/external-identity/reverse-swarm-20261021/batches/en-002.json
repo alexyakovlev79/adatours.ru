@@ -487,7 +487,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN live HTTP200 /bocas-del-toro/excursions self canonical; title про архипелаг Бокас-дель-Торо, H1 общий Excursions to countries of Latin America. Карточек нет, текст общий про Бразилию. SHA-256 d47ea6efa85da37b4dc5efb70df461fc69bfddcd8a341b8f8747697ae1feb199.",
+        "RU /panama/bocas-del-toro/ проверен live: HTTP404. Main source-index destination_panama_bokas_del_toro /panama/place/bocas-del-toro/ — место; в excursions.json blob402b7d42c61bc17709c1ae07fc92dfa32ee08327 нет экскурсий с данным destinationId.",
+        "Frozen category_id159, snapshotHttp200, snapshotFile отсутствует. Национальная экскурсионная подборка/карточка архипелага не являются каталогом того же фильтра и состава."
+      ],
+      "note": "Подтвержденной RU-пары пустого EN-каталога экскурсий Бокас-дель-Торо нет. Карточка архипелага имеет другой тип, а экскурсионный каталог по месту возвращает404.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:47:35.320Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bocas-del-toro/packages",
@@ -560,5 +571,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:59.507Z"
+  "updatedAt": "2026-10-21T15:47:35.320Z"
 }

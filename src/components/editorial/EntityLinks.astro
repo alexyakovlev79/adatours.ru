@@ -1,4 +1,5 @@
 ---
+import HorizontalLinkList from './HorizontalLinkList.astro';
 import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../lib/archive.mjs';
 import { themeIds } from '../../lib/interest-model.mjs';
@@ -32,11 +33,11 @@ const visibleGroups: LinkGroup[] = [
     {visibleGroups.map((group) => (
       <nav class:list={['entity-links__group', { 'entity-links__group--interests': group.interests }]} aria-label={group.label}>
         <p class="entity-links__label">{group.label}</p>
-        <ul>
+        <HorizontalLinkList>
           {group.entries.map((item) => (
             <li>{item.href ? <a href={withBase(item.href)}>{item.name}</a> : <span>{item.name}</span>}</li>
           ))}
-        </ul>
+        </HorizontalLinkList>
       </nav>
     ))}
   </div>
@@ -61,15 +62,13 @@ const visibleGroups: LinkGroup[] = [
     text-transform: uppercase;
     color: color-mix(in srgb, var(--color-ink) 72%, transparent);
   }
-  .entity-links ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
-  .entity-links li { max-width: 100%; font-size: clamp(.875rem, .85rem + .15vw, 1rem); line-height: 1.4; }
+  .entity-links li { font-size: clamp(.875rem, .85rem + .15vw, 1rem); line-height: 1.4; }
   .entity-links a, .entity-links li > span {
     display: block;
     padding: 6px 10px;
     border: 1px solid color-mix(in srgb, var(--color-ink) 12%, transparent);
     border-radius: 6px;
     background: color-mix(in srgb, var(--color-champagne) 12%, var(--color-bg));
-    overflow-wrap: anywhere;
     text-decoration: none;
     transition: background-color .15s ease, border-color .15s ease;
   }

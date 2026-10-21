@@ -199,7 +199,80 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/chile/place/valparaiso-vina-del-mar/tour/",
+        "confidence": 0.45,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN H1 и RU-фильтр относятся к Вальпараисо и Винья-дель-Мар, но продуктовые наборы различаются: EN schema offerCount=7, непосредственно в HTML извлечены шесть gallery-title, RU показывает 11 программ. Расхождение счетчиков EN не трактуется как полный список из шести.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/valparaiso/packages",
+            "http": 200,
+            "canonical": "https://adatours.com/valparaiso/packages",
+            "h1": [
+              "Valparaiso and Vina del Mar: Tours to Neruda House and Colorful Hills"
+            ],
+            "sha256": "f2f4679f3b58c1b3b1766f4bd83d9be20e22bdc1d09f540f5434099230d70075",
+            "checkedAt": "2026-10-21T16:30:02.413864+00:00",
+            "htmlCards": [
+              {
+                "text": "Grand Vip tour to Chile and Argentina in 17 days",
+                "href": null
+              },
+              {
+                "text": "Brazil, Argentina, Chile & Peru",
+                "href": null
+              },
+              {
+                "text": "Chile  & Argentina  Deluxe",
+                "href": null
+              },
+              {
+                "text": "Chile  VIP: Summer & Wine",
+                "href": null
+              },
+              {
+                "text": "Chile: The mysteries of Men",
+                "href": null
+              },
+              {
+                "text": "VIP Chile 5*",
+                "href": null
+              }
+            ],
+            "offerCount": [
+              "7"
+            ]
+          },
+          {
+            "url": "https://adatours.ru/chile/place/valparaiso-vina-del-mar/tour/",
+            "http": 200,
+            "canonical": "https://adatours.ru/chile/place/valparaiso-vina-del-mar/tour/",
+            "h1": [
+              "11 туров 2026-2027 в Вальпараисо и Винья-дель-Мар (Чили) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours"
+            ],
+            "sha256": "6c2152f9979e6228fdbfafb270ede616f3ae3568615a9e259d2ce3926d9366fa",
+            "checkedAt": "2026-10-21T16:30:03.488054+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "10"
+            ]
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:31:55.190Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 304,
@@ -405,5 +478,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:53.867Z"
+  "updatedAt": "2026-10-21T16:31:55.190Z"
 }

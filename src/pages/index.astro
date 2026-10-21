@@ -532,9 +532,9 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
     .home-interest-grid :global(.interest-card__link) { min-height: clamp(220px, 66.667vw, 380px); }
     .home-interest-grid :global(.interest-card:nth-child(3n + 1) .interest-card__link) { min-height: clamp(190px, 53vw, 300px); }
     .home-interest-grid :global(.interest-card__copy) { padding: 18px 14px 20px; }
-    .home-interest-grid :global(.interest-card__copy h3) { font-size: clamp(1.15rem, 4.5vw, 1.85rem); line-height: 1.1; overflow-wrap: normal; }
+    .home-interest-grid :global(.interest-card__copy h3) { font-size: clamp(1.15rem, 4.5vw, 1.85rem) !important; line-height: 1.1; overflow-wrap: anywhere; }
     .home-interest-grid :global(.interest-card:nth-child(3n + 1) .interest-card__copy) { padding-inline: var(--gutter); }
-    .home-interest-grid :global(.interest-card:nth-child(3n + 1) h3) { font-size: clamp(1.65rem, 6vw, 2.35rem); }
+    .home-interest-grid :global(.interest-card:nth-child(3n + 1) h3) { font-size: clamp(1.65rem, 6vw, 2.35rem) !important; }
     .home-interest-grid :global(.interest-card__meta) { margin-top: 9px; font-size: clamp(.7rem, 2.7vw, .9rem); color: #fff; }
     .home-tour-grid, .home-discover__grid { grid-template-columns: 1fr; }
     .home-discover { padding-bottom: 0; }

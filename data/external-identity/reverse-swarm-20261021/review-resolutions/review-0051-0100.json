@@ -47,7 +47,49 @@
         "batchBlobSha": "56951648b0cce87aca3f625f571054bbf1129786",
         "reviewOrder": 51
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/suriname/",
+        "targetId": "country_suriname",
+        "targetContentPath": "src/content/countries/suriname.md",
+        "targetBlobSha": "df8e884d26acea2859a9b7d08c1c19b8563a777c",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-006 #571.",
+          "Текущий main src/content/countries/suriname.md, blob df8e884d26acea2859a9b7d08c1c19b8563a777c: approved country_suriname, Суринам; прямой GET https://adatours.ru/suriname/ → HTTP 200, SHA-256 69c08e74a655f2ba989a8c90b40f807799a5f149eb7bdd6cac29f572c6c8df85."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же направления «Суринам». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-51",
+          "url": "https://vipdeluxetravel.ru/surinam-ru/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/surinam-ru/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "country_suriname",
+          "url": "https://adatours.ru/suriname/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/suriname/",
+          "sha256": "69c08e74a655f2ba989a8c90b40f807799a5f149eb7bdd6cac29f572c6c8df85",
+          "bytes": 204101,
+          "title": "Суринам: 23 локации. Каталог 2026-2027: 6 туров и цены от $3 745 туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/suriname/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 52,
@@ -1501,5 +1543,10 @@
       },
       "decision": null
     }
-  ]
+  ],
+  "updatedAt": "2026-10-21T16:31:21.522Z",
+  "progress": {
+    "resolved": 1,
+    "total": 50
+  }
 }

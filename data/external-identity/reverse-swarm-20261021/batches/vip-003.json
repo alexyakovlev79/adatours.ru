@@ -542,7 +542,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/6fd93b32c713c5685e0fe986.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #487: /ekskursii в разделе «Пуэрто-Мадрин, Аргентина», pageType excursion_listing, HTTP 200, пустой title; исходный состав продуктов не раскрыт.",
+        "В data/source-index/catalogs/excursions.json нет активных Excursion с основным/дополнительным destination_argentina_puerto_madrin; каталог /argentina/puerto-madryn/ как непустой список не подтвержден, хотя самостоятельная страница места существует."
+      ],
+      "note": "Отсутствует соответствующий действующий RU-каталог экскурсий по Пуэрто-Мадрину; решение о 301 на страницу города или 410 требует редакционной проверки.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:01:23.838Z",
+      "checkedBy": "reverse-worker-mvi83yzp-devej3lzane",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-resife-braziliya",
@@ -575,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:01:02.789Z"
+  "updatedAt": "2026-10-21T15:01:23.838Z"
 }

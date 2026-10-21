@@ -252,7 +252,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/8b481dd293888118ab1b27d5.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан исходный HTML snapshots/8b481dd293888118ab1b27d5.html из vip-identity-crawl-20261020.zip; SHA-256 файла 3164b06ab0a5006859b89379314b5b8872a62009330ac925e116b41c3b35fa9f совпадает с frozen inventory (blob 84d12dca210caa17f7af85edd88ab3ab9e4b0dfe). Сохранённый HTTP 200, дата 2026-10-20T13:05:51+00:00; product_id=150.",
+        "Конфликт идентичности: title «Отель Pousada Corsário Paraty», H1 «Отель Pousada Corsário», но описание начинается с Pousada do Príncipe; описаны особняк и бассейн в Парати.",
+        "HTML/inventory canonical: https://vipdeluxetravel.ru/pousada-corsario-paraty; текущий URL содержит /hotel/ и ?page=. Идентичность другому URL по полному содержимому не подтверждена; одного canonical недостаточно для excluded.",
+        "Проверен текущий main: destination_brazil_paraty, /brazil/place/paraty/, status approved (src/content/destinations/paraty.md, blob ede5176b093ce8b9a0570387a47ff0fc4d3cf4ac). Страница описывает город/курорт/природный район и туристические маршруты, не данный гостиничный продукт.",
+        "В текущем data/source-index/catalogs/destinations.json (main, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) по имени/slug/aliases отдельная сущность этого отеля не найдена; в src/content.config.ts нет коллекции hotels. Прочитан опубликованный sitemap-0.xml 21.10.2026: 6093 URL, точная гостиничная цель не подтверждена."
+      ],
+      "note": "Нужна редакционная проверка конфликта Corsário / do Príncipe и решение о судьбе гостиничного URL: отдельная RU-карточка не подтверждена; страница Парати не заменяет конкретный отель. Кандидат на 301 не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:26:06.890Z",
+      "checkedBy": "reverse-worker-mvi9cm3m-l6ox3ffx1id",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/pousada-do-pilar?page=6",
@@ -445,5 +458,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:26:04.137Z"
+  "updatedAt": "2026-10-21T15:26:06.890Z"
 }

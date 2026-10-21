@@ -142,7 +142,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN GET 21.10.2026 HTTP 200: H1 «Fernando de Noronha: Diving & Eco Tours»; видимая карточка Paradise Brazil ведет на /paradize-brazil.",
+        "RU GET https://adatours.ru/brazil/place/fernando-de-noronha/tour/ HTTP 200; current main связывает destination_brazil_fernando_de_noronha с двумя турами: tour_brazil_recife_porto_noronha_10d и tour_source_rajskaya_braziliya."
+      ],
+      "note": "Фильтр места близок, но EN показывает Paradise Brazil, тогда как RU имеет две программы, включая 10-дневный северо-восток Бразилии. Равенство состава каталогов не подтверждено; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:40:40.068Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/fishing-tours",
@@ -345,5 +355,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:40:35.066Z"
+  "updatedAt": "2026-10-21T15:40:40.068Z"
 }

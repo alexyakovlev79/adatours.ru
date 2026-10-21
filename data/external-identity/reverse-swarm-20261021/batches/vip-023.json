@@ -282,7 +282,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/81fc21886f27df8c13f98ef3.html",
-      "status": "queued"
+      "status": "excluded",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen crawl 2026-10-20: HTTP 200, generic \"VIP Deluxe Travel\" title, finalUrl is VIP domain root / rather than checkout.",
+        "Current Ada Tours RU pages use request/contact forms, not this OpenCart checkout workflow or a public checkout resource."
+      ],
+      "note": "Устаревшее оформление заказа OpenCart направляет на главную; это технический маршрут без отдельной эквивалентной страницы RU.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:06:25.285Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=product%2Fsearch",
@@ -445,5 +455,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:06:16.370Z"
+  "updatedAt": "2026-10-21T15:06:25.285Z"
 }

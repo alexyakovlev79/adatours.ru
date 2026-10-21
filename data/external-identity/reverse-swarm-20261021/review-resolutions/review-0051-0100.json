@@ -3462,7 +3462,71 @@
         "batchBlobSha": "94340646bfed4f8fa3890d7d0b78bef146a4f9f3",
         "reviewOrder": 94
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/multi-country/tour/active-adventure-tour/",
+        "targetId": "tour_source_programma_dlya_aktivnykh_lyudej",
+        "comparedId": "tour_source_programma_dlya_aktivnykh_lyudej",
+        "targetContentPath": "src/content/tours/programma-dlya-aktivnykh-lyudej.md",
+        "targetBlobSha": "5047b6cad11742f9d4da88d48e03b94fe8c92949",
+        "confidence": 0.99,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.743Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/programma-dlya-aktivnykh-lyudej → HTTP 200, title «Программа для Активных людей», 74520 байт, SHA-256 5aed4e73bc56dae16f57a1d832ead7fddd9e44b484e5c61a85044709f19496d0. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/programma-dlya-aktivnykh-lyudej.md, blob 5047b6cad11742f9d4da88d48e03b94fe8c92949: approved, tour_source_programma_dlya_aktivnykh_lyudej; RU цель https://adatours.ru/multi-country/tour/active-adventure-tour/ → HTTP 200, SHA-256 998762359c3e4c5e1c74e02adb33fceb2b25a221ec1829e21798f99a38bb64ec.",
+          "Полный исходник подтверждает 12 дней Буэнос-Айрес → Сантьяго → Пунта-Наталес/Торрес-дель-Пайне → Сантьяго → остров Пасхи/Оронго/Анакена → Буэнос-Айрес; текущая RU-программа совпадает по дням."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-94",
+          "url": "https://vipdeluxetravel.ru/programma-dlya-aktivnykh-lyudej",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/programma-dlya-aktivnykh-lyudej",
+          "sha256": "5aed4e73bc56dae16f57a1d832ead7fddd9e44b484e5c61a85044709f19496d0",
+          "bytes": 74520,
+          "title": "Программа для Активных людей",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/programma-dlya-aktivnykh-lyudej\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1: Буэнос Айрес",
+            "День 2: Буэнос Айрес",
+            "День 3: Буэнос Айрес– Сантьяго де Чили",
+            "День 4: Сантьяго де Чили",
+            "День 5: Пунта-Наталес",
+            "День 6: Национальный парк Торрес-дель-Пайне",
+            "День 7: Национальный парк Торрес-дель-Пайне",
+            "День 8: Сантьяго",
+            "День 9: Остров Пасхи",
+            "День 10: Экскурсия на Оронго",
+            "День 11: Экскурсия по Анакена",
+            "День 12: Буэнос Айрес"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_programma_dlya_aktivnykh_lyudej",
+          "url": "https://adatours.ru/multi-country/tour/active-adventure-tour/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/multi-country/tour/active-adventure-tour/",
+          "sha256": "998762359c3e4c5e1c74e02adb33fceb2b25a221ec1829e21798f99a38bb64ec",
+          "bytes": 160472,
+          "title": "Тур Аргентина, Патагония, Сантьяго и остров Пасхи за 12 дней в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/multi-country/tour/active-adventure-tour/\">"
+          ],
+          "dayHeadings": [
+            "День посвящен активной программе вокруг Сантьяго. Предусмотрены дегустация вин и треккинг по винной долине или в горах рядом с городом.",
+            "День посвящен ритуальному центру Оронго.",
+            "Дни 9–11 посвящены острову Пасхи. В числе остановок Аху-Акиви , Рано-Као, Оронго, Рано-Рараку , Аху-Тонгарики и пляж Анакена."
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 95,
@@ -3717,9 +3781,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:47.811Z",
+  "updatedAt": "2026-10-21T16:35:49.681Z",
   "progress": {
-    "resolved": 43,
+    "resolved": 44,
     "total": 50
   }
 }

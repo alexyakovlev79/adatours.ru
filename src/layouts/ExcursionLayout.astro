@@ -182,13 +182,24 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     })) },
   ]} />
 
-  <section class="excursion-copy section--tight">
-    <div class="container prose">
-      {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
-      {d.lead?.trim() && <p class="excursion-lead"><InlineMarkdown text={d.lead} /></p>}
-      {remainingDescriptionHtml && <Fragment set:html={remainingDescriptionHtml} />}
-    </div>
-  </section>
+  {(d.lead?.trim() || descriptionHtml.trim()) && (
+    <section class="excursion-copy section--tight">
+      <div class="container prose" data-excursion-description>
+        {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
+        <div class="excursion-copy__text" id={'excursion-description-' + d.id} data-excursion-description-text>
+          {d.lead?.trim() && <p class="excursion-lead"><InlineMarkdown text={d.lead} /></p>}
+          {remainingDescriptionHtml && <Fragment set:html={remainingDescriptionHtml} />}
+        </div>
+        <button class="excursion-copy__toggle" type="button" aria-expanded="false"
+          aria-controls={'excursion-description-' + d.id} data-excursion-description-toggle hidden>
+          <span data-excursion-description-label>Подробнее об экскурсии</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </section>
+  )}
 
   {visibleDestinations.map((place) => (
     <DestinationBand
@@ -264,6 +275,65 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
 
 </BaseLayout>
 
+<script>
+  const initExcursionDescriptions = () => {
+    document.querySelectorAll<HTMLElement>('[data-excursion-description]').forEach((section) => {
+      if (section.dataset.descriptionReady) return;
+      const text = section.querySelector<HTMLElement>('[data-excursion-description-text]');
+      const toggle = section.querySelector<HTMLButtonElement>('[data-excursion-description-toggle]');
+      const label = section.querySelector<HTMLElement>('[data-excursion-description-label]');
+      if (!text || !toggle || !label) return;
+      section.dataset.descriptionReady = 'true';
+      let expanded = false;
+
+      const update = () => {
+        const firstParagraph = text.querySelector<HTMLElement>('p');
+        const lead = text.querySelector<HTMLElement>('.excursion-lead');
+        const lineHeight = parseFloat(getComputedStyle(firstParagraph ?? text).lineHeight) || 30;
+        // Match Tour/Destination: show the complete lead or seven lines, whichever is longer.
+        const leadHeight = lead
+          ? lead.getBoundingClientRect().bottom - text.getBoundingClientRect().top
+          : 0;
+        const previewHeight = Math.ceil(Math.max(leadHeight, lineHeight * 7));
+        const long = text.scrollHeight > previewHeight + lineHeight;
+        text.style.setProperty('--excursion-copy-preview-height', previewHeight + 'px');
+        text.style.setProperty('--excursion-copy-fade-height', lineHeight * 2 + 'px');
+        text.classList.toggle('is-collapsed', long && !expanded);
+        toggle.hidden = !long;
+        toggle.setAttribute('aria-expanded', String(!long || expanded));
+        label.textContent = expanded ? 'Свернуть' : 'Подробнее об экскурсии';
+      };
+
+      toggle.addEventListener('click', () => {
+        expanded = !expanded;
+        update();
+        if (!expanded && text.getBoundingClientRect().top < 0) {
+          window.scrollTo({
+            top: Math.max(0, window.scrollY + text.getBoundingClientRect().top - 120),
+            behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+          });
+        }
+      });
+
+      // Make links or controls in the clipped text visible before keyboard navigation.
+      text.addEventListener('focusin', () => {
+        if (!expanded && !toggle.hidden) {
+          expanded = true;
+          update();
+        }
+      });
+
+      update();
+      if ('ResizeObserver' in window) new ResizeObserver(update).observe(text);
+      else window.addEventListener('resize', update);
+      document.fonts.ready.then(update);
+    });
+  };
+
+  initExcursionDescriptions();
+  document.addEventListener('astro:page-load', initExcursionDescriptions);
+</script>
+
 <style>
   .excursion-copy {
     background: var(--color-bg);
@@ -296,6 +366,50 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
   .excursion-copy :global(.prose) .excursion-lead {
     font-weight: 600;
     color: var(--color-ink);
+  }
+  .excursion-copy__text { display: flow-root; }
+  .excursion-copy__text.is-collapsed {
+    max-height: var(--excursion-copy-preview-height);
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - var(--excursion-copy-fade-height)), transparent);
+    mask-image: linear-gradient(to bottom, #000 calc(100% - var(--excursion-copy-fade-height)), transparent);
+  }
+  .excursion-copy__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 44px;
+    margin: 12px auto 0;
+    padding: 8px 16px;
+    border: 1px solid color-mix(in srgb, var(--color-ink) 14%, transparent);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--color-champagne) 12%, var(--color-bg));
+    color: var(--color-ink);
+    font-size: var(--text-base);
+    font-weight: 500;
+    line-height: 1.35;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease;
+  }
+  .excursion-copy__toggle[hidden] { display: none; }
+  .excursion-copy__toggle:hover, .excursion-copy__toggle:focus-visible {
+    border-color: var(--color-gold-deep);
+    background: color-mix(in srgb, var(--color-champagne) 35%, var(--color-bg));
+  }
+  .excursion-copy__toggle svg { flex: none; transition: transform .2s ease; }
+  .excursion-copy__toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+  @media print {
+    .excursion-copy__text.is-collapsed {
+      max-height: none;
+      overflow: visible;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+    .excursion-copy__toggle { display: none; }
   }
 </style>
 

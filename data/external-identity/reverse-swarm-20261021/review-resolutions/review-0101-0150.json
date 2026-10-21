@@ -47,7 +47,22 @@
         "batchId": "vip-014",
         "batchSha": "786d0b817986fd52ef27a19d71ec107950054156"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/brazil/foz-do-iguacu/iguazu-falls-brazilian-side-6-hours/",
+        "relation": "redirect_301",
+        "confidence": 0.9,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:32:51.482Z",
+        "reason": "Причина REVIEW устранена в main: аргентинский поезд и маршруты удалены, теперь RU описывает только бразильскую сторону. H1 и тип экскурсии источника совпадают, цена $80 также совпадает.",
+        "evidence": [
+          "Прямой GET VIP 200: H1 «Бразильская сторона водопадов Игуасу», код 2610, цена $80; описание пусто. Маршрут источника не выдумывается.",
+          "Текущий main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/excursions/brazilskaya-storona-vodopadov-iguasu.md, blob aac25d0e05b602d9017fb6e01075c4c69414e350; проверен актуальный текст, canonical /brazil/foz-do-iguacu/iguazu-falls-brazilian-side-6-hours/."
+        ],
+        "targetEntityId": "excursion_source_brazilskaya_storona_vodopadov_iguasu",
+        "sourceLimitations": "Исходный результат первого прохода сохранен. Оценка вероятности — редакционное решение, а не доказанная 100% идентичность."
+      }
     },
     {
       "reviewOrder": 102,
@@ -1475,5 +1490,6 @@
       },
       "decision": null
     }
-  ]
+  ],
+  "updatedAt": "2026-10-21T16:33:01.193Z"
 }

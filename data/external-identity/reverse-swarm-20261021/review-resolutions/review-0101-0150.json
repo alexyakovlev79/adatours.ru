@@ -179,7 +179,22 @@
         "batchId": "vip-015",
         "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/tours/",
+        "relation": "redirect_301",
+        "confidence": 0.8,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:32:51.482Z",
+        "reason": "Общая витрина «Лучшие из туров» переходит на действующий общий каталог путешествий. Выбран функциональный преемник по намерению, без утверждения равенства ассортимента.",
+        "evidence": [
+          "VIP web open: адрес переходит на главную; в меню это общий пункт «Лучшие из туров».",
+          "RU /tours/ открыт: каталог действующих туров по Латинской Америке."
+        ],
+        "targetEntityId": null,
+        "sourceLimitations": "Исходный результат первого прохода сохранен. Оценка вероятности — редакционное решение, а не доказанная 100% идентичность."
+      }
     },
     {
       "reviewOrder": 105,
@@ -1521,5 +1536,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:33:05.723Z"
+  "updatedAt": "2026-10-21T16:33:07.160Z"
 }

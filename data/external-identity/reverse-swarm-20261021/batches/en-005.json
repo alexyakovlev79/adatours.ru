@@ -43,7 +43,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #208: category, snapshotHttp 200, title «Coban Tours | Caves, Waterfalls & Mountain Landscapes»; snapshotFile отсутствует, приватный снимок не просматривался.",
+        "Текущий EN HTTP 200, self canonical /coban/packages; H1 «Coban: Tours to Caves, Waterfalls, and Mountains». Единственная карточка gallery-bigitem ведет на /the-best-of-central-america.",
+        "Текущий RU HTTP 200 https://adatours.ru/guatemala/place/coban/tour/: 1 тур «Лучшее в Гватемале», 14 дней; main 78fe61f4 src/content/tours/luchshee-v-gvatemale.md и destination_guatemala_koban. Состав не совпадает с EN The Best of Central America."
+      ],
+      "note": "Фильтр по Кобану близок, но EN показывает The Best of Central America, а RU — отдельную 14-дневную программу «Лучшее в Гватемале». Каталоги с различным составом не подтверждаются как sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:41:01.214Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/coffee-region-in-brazil",
@@ -326,5 +337,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:04.978Z"
+  "updatedAt": "2026-10-21T15:41:01.214Z"
 }

@@ -2910,7 +2910,34 @@
         "batchId": "vip-029",
         "batchSha": "93b260f243108808a305f587750e5d22ad36d919"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/excursions/",
+        "relation": "redirect_301",
+        "confidence": 0.99,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:40:41.915Z",
+        "reason": "Прочитан реальный общий список экскурсий без географического фильтра. RU /excursions/ — прямой функциональный преемник; совпадение полной товарной массы не требуется для миграционной пары общих каталогов.",
+        "evidence": [
+          "VIP GET 200: H1 Excursion, 65 товаров, 5 страниц; вместе Рио, Игуасу, Ла-Пас и Колумбия.",
+          "Текущая RU архитектура содержит общий каталог самостоятельных экскурсий; это не туры и не страна."
+        ],
+        "targetEntityId": null
+      },
+      "sourceObservation": {
+        "n": 149,
+        "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=1",
+        "http": 200,
+        "finalUrl": "https://vipdeluxetravel.ru/excursion?page=1",
+        "canonical": "https://vipdeluxetravel.ru/excursion",
+        "sha256": "6fdb6ba3f97df2717d38c4dbe3e50cba66797e07133b337b266aa34360233537",
+        "title": "Excursion",
+        "h1": [
+          "Excursion"
+        ],
+        "dayHeadings": []
+      }
     },
     {
       "reviewOrder": 150,
@@ -2942,7 +2969,7 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:41:19.100Z",
+  "updatedAt": "2026-10-21T16:41:20.980Z",
   "ruMainSha": "bc482d80103f329c4edcd5938eb8becdadeaa935",
   "ruArchiveBlobSha": "9f3554275d0e420a5af2005e4421afa0034c59d4"
 }

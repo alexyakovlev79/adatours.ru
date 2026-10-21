@@ -211,7 +211,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #376: title «Guyana Tours: Kaieteur Falls & Amazon Jungle | Ada Tours», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; H1 «Guyana: Tours to Kaieteur Falls and the Rupununi Savannah». Три карточки: /guianas-experience-with-local-community (9д), /suriname-guyana-french-guiana (14д), /guyana-surinam-french-guyana (7д). Все три текущие программы отдельно прочитаны.",
+        "RU HTTP 200 https://adatours.ru/guyana/tour/ — 3 программы на 9/14/7 дней; проверены текущие MD main 81bda828: tour_source_priklyuchenie_v_gvianakh, tour_source_surinam_gajana_frantsuzskaya_gviana, tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana. 9д и 14д совпадают по последовательности ключевых дней и включениям.",
+        "Существенное расхождение 7-дневного продукта: EN day1 Georgetown/Guyana → day2 Kaieteur/Suriname → day6 Kourou space centre → day7 Depart Suriname; RU day1 Paramaribo/Suriname → day5 Cayenne/Paramaribo → day6 Georgetown/Kaieteur → day7 Depart Guyana. В RU included есть Suriname–Guyana, в EN текст дней и блок перелетов противоречат друг другу."
+      ],
+      "note": "Кандидат каталога https://adatours.ru/guyana/tour/ требует редакционного решения: одинаковые три длительности и две точные программы недостаточны, пока не разобран противоположный порядок и условия 7-дневного тура. sameAs пока не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:51:40.221Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/honduras-en/excursions",
@@ -436,5 +448,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:50:51.785Z"
+  "updatedAt": "2026-10-21T15:51:40.221Z"
 }

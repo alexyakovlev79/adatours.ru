@@ -527,7 +527,21 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN HTML получен 2026-10-21T15:37:38.853148+00:00; HTTP 200, 159044 bytes, SHA-256 d408c4931cf84d9863f966fc65dd8c1f2aa5ac412df6762fde4dff31407d78e0; canonical https://adatours.com/chile-en/packages. Title Chile Tours: Atacama, Patagonia & Easter Island | Ada Tours; H1 Chile: Tours to the Atacama Desert and Patagonia.",
+        "Прочитан frozen inventory data/external-identity/reverse-v1/inventories/adatours.com.json, blob ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: исходная запись category/HTTP 200. Отдельный snapshotFile в записи отсутствует; сверка сделана по текущему HTML.",
+        "Наблюдаемые EN-карточки (11): 4 Countries : Chile, Argentina Uruguay and Brazil with spectacular Patagonia; 5 Countries Tour; 5 country-tour in Latin America; Argentina, Chile and Bolivia; Dreams come true: Brazil and Argentina; Patagonia & Chilean Fjords; Sun, Tango and Wine; The Best of Brazil, Argentina, and Chile; Tour to Brazil, Argentina and Chile for New Year; Your wildest dreams: Argentina & Chile with Savage Patagonia; Argentina, Chile and Bolivia.",
+        "RU-кандидат определён по канонической сущности country_chile, country_chile, blob 06d14961af93dd6d41ae09c3599a5407fae09494 и src/lib/routes.ts; не только по slug. Проверен https://adatours.ru/chile/tour/: HTTP 200; canonical https://adatours.ru/chile/tour/; H1 Туры в Чили; SHA-256 8a6b2663603cdc50f0d127da82f42eaabe124e8df854c0c5c2cf723827d77ed5.",
+        "В current main src/pages/[...path].astro (blob cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3) туры места фильтруются по tourHasMainDestination, дополнительные посещения — отдельно; экскурсии — по excursionDestinationIds. Общая география и отдельные похожие продукты не доказывают совпадения каталога.",
+        "В EN видны 11 карточек, включая повтор Argentina, Chile and Bolivia; действующий RU-каталог содержит 46 маршрутов с основной страной Чили. Идентичность состава и фильтра основных стран не подтверждена."
+      ],
+      "note": "В EN видны 11 карточек, включая повтор Argentina, Chile and Bolivia; действующий RU-каталог содержит 46 маршрутов с основной страной Чили. Идентичность состава и фильтра основных стран не подтверждена.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:42:03.904Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/chile-santiago/excursions",
@@ -590,5 +604,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:42:01.471Z"
+  "updatedAt": "2026-10-21T15:42:03.904Z"
 }

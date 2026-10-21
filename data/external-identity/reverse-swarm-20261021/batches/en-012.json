@@ -561,7 +561,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "GET 21.10.2026: 200 https://adatours.com/praia-de-pipa/packages; canonical sourceUrl; H1 «Praia de Pipa: Dolphins, Surfing & Hippie Beach Village». В полученном HTML карточек gallery-title нет; основной текст — общий шаблон путешествий/экскурсий Латинской Америки.",
+        "main 50542db1: destination_brazil_praia_de_pipa, approved, src/content/destinations/praia-de-pipa.md, canonical /brazil/place/praia-de-pipa/. Прайя-де-Пипа находится примерно в 70 км к югу от Натала. Курорт известен пляжами, дюнами, серфингом, морскими прогулками, наблюдением за дельфинами и живой вечерней сценой. Активных основных RU-туров: 2, собственных Excursion по destination: 0. Примеры: Бразилия за 13 дней: Рио, Игуасу, Ленсойс-Мараньенсес и Прайя-де-Пипа; Аргентина и Бразилия за 11 дней: Буэнос-Айрес, Эль-Калафате, Игуасу и Прайя-де-Пипа.",
+        "Маршрутизатор RU src/pages/[...path].astro создает только непустые каталоги; основное и факультативное посещение разделены. Отдельная страница Place не является каталогом с тем же фильтром и набором продуктов."
+      ],
+      "note": "Подтвержденной пары конкретного EN-каталога нет: состав локальных предложений не установлен по HTML. Совпадающее географическое название не является достаточным основанием для sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:17:12.490Z",
+      "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/praia-do-forte/excursions",
@@ -594,5 +605,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:17:10.418Z"
+  "updatedAt": "2026-10-21T16:17:12.490Z"
 }

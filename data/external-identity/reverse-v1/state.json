@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T08:12:20.366Z",
+  "updatedAt": "2026-10-21T08:12:57.002Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -9386,103 +9386,169 @@
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/brazil/place/morro-de-sao-paulo/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya; HTTP 200, HTML сохранен; Морро-де-Сан-Паулу, Бразилия: достопримечательности и путеводитель.",
+        "Тот же исходный объект по source-index: destination_brazil_morro_de_sao_paulo, legacy https://brasiltours.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya; проверен активный destination MD в main (blob 4a675f98d3); текущий RU canonical/каталог https://adatours.ru/brazil/place/morro-de-sao-paulo/."
+      ],
+      "note": "Один и тот же географический объект и назначение страницы; кандидат для будущего HTTP 301, не развернут.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya/packages": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya/packages; HTTP 200 и пустой HTML; Морро-де-Сан-Паулу, Бразилия: достопримечательности и путеводитель.",
+        "Тот же исходный объект по source-index: destination_brazil_morro_de_sao_paulo, legacy https://brasiltours.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya; проверен активный destination MD в main (blob 4a675f98d3); текущий RU canonical/каталог https://adatours.ru/brazil/place/morro-de-sao-paulo/tour/.",
+        "Для соответствующего каталога: 0 неархивных индексных основных туров с content MD; src/pages/[...path].astro выводит этот каталог при непустом активном наборе; старый список товаров из нулевого HTML не восстановить."
+      ],
+      "note": "Для этой географии нет действующей непустой подборки туров, предполагаемый RU URL не генерируется. Выбрать отдельно перенаправление на действующую страницу места или HTTP 410; 301 пока не назначать.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya/ekskursii; HTTP 200 и пустой HTML; Морро-де-Сан-Паулу, Бразилия: достопримечательности и путеводитель.",
+        "Тот же исходный объект по source-index: destination_brazil_morro_de_sao_paulo, legacy https://brasiltours.ru/ehkskursii-i-tury-v-gorod-morro-de-san-paulu-braziliya; проверен активный destination MD в main (blob 4a675f98d3); текущий RU canonical/каталог https://adatours.ru/brazil/morro-de-sao-paulo/.",
+        "Для соответствующего каталога: 0 неархивных индексных экскурсий с content MD; src/pages/[...path].astro выводит этот каталог при непустом активном наборе; старый список товаров из нулевого HTML не восстановить."
+      ],
+      "note": "Для этой географии нет действующей непустой подборки экскурсий, предполагаемый RU URL не генерируется. Выбрать отдельно перенаправление на действующую страницу места или HTTP 410; 301 пока не назначать.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/brazil/place/natal/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya; HTTP 200, HTML сохранен; Натал, Бразилия: достопримечательности и путеводитель.",
+        "Тот же исходный объект по source-index: destination_brazil_natal, legacy https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya; проверен активный destination MD в main (blob 8e2c6e5208); текущий RU canonical/каталог https://adatours.ru/brazil/place/natal/."
+      ],
+      "note": "Один и тот же географический объект и назначение страницы; кандидат для будущего HTTP 301, не развернут.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/brazil/place/natal/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya/packages; HTTP 200 и пустой HTML; Натал, Бразилия: достопримечательности и путеводитель.",
+        "Тот же исходный объект по source-index: destination_brazil_natal, legacy https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya; проверен активный destination MD в main (blob 8e2c6e5208); текущий RU canonical/каталог https://adatours.ru/brazil/place/natal/tour/.",
+        "Для соответствующего каталога: 2 неархивных индексных основных туров с content MD; src/pages/[...path].astro выводит этот каталог при непустом активном наборе; старый список товаров из нулевого HTML не восстановить."
+      ],
+      "note": "География и тип каталога совпадают, в RU есть подходящая непустая подборка. Старый список товаров не установлен, необходима финальная проверка HTTP перед 301.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya/ekskursii; HTTP 200 и пустой HTML; Натал, Бразилия: достопримечательности и путеводитель.",
+        "Тот же исходный объект по source-index: destination_brazil_natal, legacy https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya; проверен активный destination MD в main (blob 8e2c6e5208); текущий RU canonical/каталог https://adatours.ru/brazil/natal/.",
+        "Для соответствующего каталога: 0 неархивных индексных экскурсий с content MD; src/pages/[...path].astro выводит этот каталог при непустом активном наборе; старый список товаров из нулевого HTML не восстановить."
+      ],
+      "note": "Для этой географии нет действующей непустой подборки экскурсий, предполагаемый RU URL не генерируется. Выбрать отдельно перенаправление на действующую страницу места или HTTP 410; 301 пока не назначать.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/guyana/place/kaieteur-national-park/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur; HTTP 200, HTML сохранен; Экскурсии и туры в Национальный парк Кайетур в Гайане.",
+        "Тот же исходный объект по source-index: destination_guyana_nacionalnyj_park_kajetur, legacy https://brasiltours.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur; проверен активный destination MD в main (blob 1fd17964d3); текущий RU canonical/каталог https://adatours.ru/guyana/place/kaieteur-national-park/."
+      ],
+      "note": "Один и тот же географический объект и назначение страницы; кандидат для будущего HTTP 301, не развернут.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/guyana/place/kaieteur-national-park/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur/packages; HTTP 200 и пустой HTML; Экскурсии и туры в Национальный парк Кайетур в Гайане.",
+        "Тот же исходный объект по source-index: destination_guyana_nacionalnyj_park_kajetur, legacy https://brasiltours.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur; проверен активный destination MD в main (blob 1fd17964d3); текущий RU canonical/каталог https://adatours.ru/guyana/place/kaieteur-national-park/tour/.",
+        "Для соответствующего каталога: 3 неархивных индексных основных туров с content MD; src/pages/[...path].astro выводит этот каталог при непустом активном наборе; старый список товаров из нулевого HTML не восстановить."
+      ],
+      "note": "География и тип каталога совпадают, в RU есть подходящая непустая подборка. Старый список товаров не установлен, необходима финальная проверка HTTP перед 301.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur/ekskursii; HTTP 200 и пустой HTML; Экскурсии и туры в Национальный парк Кайетур в Гайане.",
+        "Тот же исходный объект по source-index: destination_guyana_nacionalnyj_park_kajetur, legacy https://brasiltours.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park-kajetur; проверен активный destination MD в main (blob 1fd17964d3); текущий RU canonical/каталог https://adatours.ru/guyana/kaieteur-national-park/.",
+        "Для соответствующего каталога: 0 неархивных индексных экскурсий с content MD; src/pages/[...path].astro выводит этот каталог при непустом активном наборе; старый список товаров из нулевого HTML не восстановить."
+      ],
+      "note": "Для этой географии нет действующей непустой подборки экскурсий, предполагаемый RU URL не генерируется. Выбрать отдельно перенаправление на действующую страницу места или HTTP 410; 301 пока не назначать.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/tury-v-nacionalnyj-park-los-ajtises-v-dominikane": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b07-amanda",
-      "token": "vip-oct21-b07-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/dominican-republic/place/los-haitises-national-park/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T08:12:57.002Z",
+      "evidence": [
+        "Снимок VIP от 19.10.2026: https://vipdeluxetravel.ru/tury-v-nacionalnyj-park-los-ajtises-v-dominikane; HTTP 200, HTML сохранен; Туры и экскурсии в Национальный парк Лос-Айтисес в Доминикане.",
+        "Тот же исходный объект по source-index: destination_dominican_republic_nacionalnyj_park_los_ajtises, legacy https://brasiltours.ru/tury-v-nacionalnyj-park-los-ajtises-v-dominikane; проверен активный destination MD в main (blob a6ec353d84); текущий RU canonical/каталог https://adatours.ru/dominican-republic/place/los-haitises-national-park/."
+      ],
+      "note": "Один и тот же географический объект и назначение страницы; кандидат для будущего HTTP 301, не развернут.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy-part-05.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhtrh4b-pkdbpgpy",
-      "claimedAt": "2026-10-21T08:02:58.283Z",
-      "expiresAt": "2026-10-21T09:02:58.283Z",
+      "ownerId": "reverse-vip-oct21-b07-amanda",
       "generation": 1
     }
   },

@@ -542,7 +542,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/7d186439c0a725adcd3e1744.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #547: HTTP=200, pageType=excursion_listing, title=\"(empty)\", H1=\"(empty)\", snapshotFile=snapshots/7d186439c0a725adcd3e1744.html; live HTTP недоступен.",
+        "Для активного Destination destination_el_salvador_santa_ana есть RU страница города и связанный Tour, но в каталоге Excursion нет ни одного активного destinationIds/relatedDestinationIds с этим ID; отдельная страница /el-salvador/santa-ana/ не подтверждена как непустая."
+      ],
+      "note": "VIP /ekskursii для Санта-Аны/Тасумаля нельзя перенаправить на несуществующий экскурсионный каталог. Нужна оценка 410 либо перехода на страницу города без выдачи ее за каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:54:33.187Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-santa-elena-de-uajren-v-venesuehle",
@@ -575,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:54:06.911Z"
+  "updatedAt": "2026-10-21T14:54:33.187Z"
 }

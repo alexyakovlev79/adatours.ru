@@ -585,7 +585,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Nicaragua Excursions: Volcanoes, Granada & Lake Nicaragua», H1 «Volcanoes, Colonial Granada and Lake Nicaragua: Top Attractions in Nicaragua», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: После первоначального 503 повтор дал HTTP 200. EN excursion category_id=29, offerCount=5; productsjson: 1839 Estelí – Tour del Tabaco, 1835 Granada Colonial e Isletas, 416 León City Tour, 1837 Pueblos Blancos, 417 San Jacinto and Flor de Caña Rum.",
+        "RU /nicaragua/excursion/ HTTP 200: 7 экскурсий, в том числе Манагуа/Леон-Вьехо, Ометепе/Охо-де-Агуа, островки Гранады/Момбачо и Эстели. Точный набор отличается от пяти EN-карточек."
+      ],
+      "note": "Технический сбой устранен повтором. Страновой фильтр один, но 5 EN-программ и 7 RU-экскурсий имеют разный состав. SameAs не назначен, требуется согласование каталога.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:58:00.947Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/nicaragua-en/packages",
@@ -608,5 +619,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:57:58.452Z"
+  "updatedAt": "2026-10-21T15:58:00.947Z"
 }

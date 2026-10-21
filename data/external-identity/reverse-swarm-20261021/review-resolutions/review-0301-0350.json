@@ -14,9 +14,10 @@
     "last": 310,
     "requestedLast": 350
   },
-  "status": "in_progress",
+  "status": "completed",
   "notes": [
-    "User assigned seventh 50 review if present. 310 REVIEW at frozen source commit; only 10 entries available at positions 301-310. Original records retained; decisions separate. No production changes."
+    "User assigned seventh 50 review if present. 310 REVIEW at frozen source commit; only 10 entries available at positions 301-310. Original records retained; decisions separate. No production changes.",
+    "Threshold applied to probability of identity, not to thematic similarity; no candidate reached 70%. No further review positions from source commit exist after 310. Later incoming first-pass REVIEW are outside this frozen selection."
   ],
   "records": [
     {
@@ -771,8 +772,65 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/interests/food-and-wine/",
+        "confidence": 0.6,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN — винно-гастрономическая сервисная посадочная с индивидуальными/VIP маршрутами и schema offerCount=8; RU — тематическая страница с 69 программами и более широким составом. Сохраненная первая проверка обнаружила шесть EN карточек через productsjson, но это не полный набор из восьми. Тема совпадает, один и тот же каталог не подтвержден.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/wine-tours",
+            "http": 200,
+            "canonical": "https://adatours.com/wine-tours",
+            "h1": [
+              "WINE AND GREAT FOOD IN BRAZIL & THROUGHOUT SOUTH AND CENTRAL AMERICA"
+            ],
+            "sha256": "5e80a9b0cc299f9912529fe4f2d678f28abf7d00f911e2adce9b1a002754caba",
+            "checkedAt": "2026-10-21T16:30:06.316285+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "8"
+            ]
+          },
+          {
+            "url": "https://adatours.ru/interests/food-and-wine/",
+            "http": 200,
+            "canonical": "https://adatours.ru/interests/food-and-wine/",
+            "h1": [
+              "Гастрономия и вино"
+            ],
+            "sha256": "1c3850fc270631813b226d048aa4642c7ddefd659c6aca74f3ac12f109882f3e",
+            "checkedAt": "2026-10-21T16:30:09.205895+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "9"
+            ]
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:32:06.446Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     }
   ],
-  "updatedAt": "2026-10-21T16:32:04.714Z"
+  "updatedAt": "2026-10-21T16:32:06.446Z",
+  "completedAt": "2026-10-21T16:32:06.446Z",
+  "summary": {
+    "selected": 10,
+    "resolved": 10,
+    "matched_exact": 0,
+    "checked_no_confirmed_pair": 10,
+    "review": 0,
+    "retry": 0
+  }
 }

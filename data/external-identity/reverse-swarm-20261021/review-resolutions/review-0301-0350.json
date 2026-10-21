@@ -126,7 +126,51 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/chile/valparaiso-vina-del-mar/",
+        "confidence": 0.2,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN-страница экскурсионного фильтра Вальпараисо не показывает продуктовых карточек; RU-каталог объединенного направления содержит две разные экскурсии через оба города. Совпадение основного города не подтверждает тождество каталога.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/valparaiso/excursions",
+            "http": 200,
+            "canonical": "https://adatours.com/valparaiso/excursions",
+            "h1": [
+              "Excursions to countries of Latin America"
+            ],
+            "sha256": "1dabfd60e25ce15e372e8c739ed80d5808fcf725b101ab6b34c139880666f6cc",
+            "checkedAt": "2026-10-21T16:30:02.529996+00:00",
+            "htmlCards": [],
+            "offerCount": []
+          },
+          {
+            "url": "https://adatours.ru/chile/valparaiso-vina-del-mar/",
+            "http": 200,
+            "canonical": "https://adatours.ru/chile/valparaiso-vina-del-mar/",
+            "h1": [
+              "2 экскурсии в Вальпараисо и Винья-дель-Мар, Чили - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours"
+            ],
+            "sha256": "13a2702379f545bdf1095ea779453f52774f6ef9b265431173a254dd5b01dfdc",
+            "checkedAt": "2026-10-21T16:30:03.539929+00:00",
+            "htmlCards": [],
+            "offerCount": []
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:31:53.867Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 303,
@@ -360,5 +404,6 @@
       },
       "decision": null
     }
-  ]
+  ],
+  "updatedAt": "2026-10-21T16:31:53.867Z"
 }

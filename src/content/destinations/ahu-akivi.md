@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: Аху-Акиви на острове Пасхи известна рядом из 7 восстановленных моаи. Церемониальная платформа входит в экскурсионные маршруты по памятникам Рапа-Нуи.
 searchAliases: []
 hero:
-  src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-09-generated-20261008-v1.webp
-  hover: "Аху-Акиви: статуи моаи на травянистом склоне"
-  alt: "Ряд каменных моаи на платформе Аху-Акиви, остров Пасхи, Чили"
+  src: /media/destinations/ahu-akivi/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Аху-Акиви — новая обложка"
+  alt: "Аху-Акиви — иллюстрация"
 gallery: []
 themes:
 - theme_culture

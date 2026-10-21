@@ -9,10 +9,10 @@ destinationType: region
 summary: Качапоаль знакомит с винными пейзажами центрального Чили. В долине Мильяуэ, входящей в этот регион, расположено
   хозяйство VIK. Виноградники расходятся по холмам, а поездка сюда соединяет сельские виды с дегустациями.
 hero:
-  src: /media/tours/chile-argentina-private-grand-tour-17-days/millahue-generated-20261011-v1.webp
-  alt: "Ряды виноградников на пологих холмах долины Мильяуэ в вечернем свете, Чили"
+  src: /media/destinations/cachapoal-valley/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Долина Качапоаль — иллюстрация"
   status: approved
-  hover: "Мильяуэ: виноградные склоны у гор на закате"
+  hover: "Долина Качапоаль — новая обложка"
 gallery: []
 themes:
 - theme_gastronomy_wine

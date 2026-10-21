@@ -363,7 +363,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/2a6b54400ff38d3cfc3ec76e.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory position 1288: hotel_candidate «Agua, Marinha, Hotel», H1 «Agua Marinha Hotel», snapshotHttp 200, individual URL https://vipdeluxetravel.ru/hotel/agua-marinha.",
+        "RU src/content.config.ts has no Hotel collection: no equivalent individual hotel booking product can be established; existing tours and destinations are different intents."
+      ],
+      "note": "Отдельная карточка размещения «Agua, Marinha, Hotel» не имеет подтвержденной RU-страницы отеля или сопоставимой услуги бронирования. Для будущего 301 требуется решение о создании карточки или ответе 410; на город и главную не перенаправлять.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:23:44.196Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/beach-class-suites",
@@ -486,5 +496,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:22:57.856Z"
+  "updatedAt": "2026-10-21T15:23:44.196Z"
 }

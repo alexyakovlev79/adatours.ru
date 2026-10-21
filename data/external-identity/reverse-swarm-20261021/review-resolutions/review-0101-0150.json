@@ -135,7 +135,22 @@
         "batchId": "vip-014",
         "batchSha": "786d0b817986fd52ef27a19d71ec107950054156"
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "ruUrl": "https://adatours.ru/argentina/buenos-aires/la-ventana-tango-dinner-show/",
+        "relation": "redirect_301",
+        "confidence": 0.76,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:32:51.482Z",
+        "reason": "Наиболее вероятный преемник авторской экскурсии «Незабываемое танго-шоу»: одинаковая тема, Буэнос-Айрес, ужин и уникальная миграционная сущность. При пороге 70% выбран La Ventana как RU-преемник; тождество исторической площадки не заявлено.",
+        "evidence": [
+          "Прямой GET VIP 200: H1 «Незабываемое танго-шоу», код нт; title про танго с ужином. Текст описания пуст, историческая площадка не установлена.",
+          "Текущий main bc482d80103f329c4edcd5938eb8becdadeaa935: src/content/excursions/nezabyvaemoe-tango-shou.md, blob ffd6fa2c41501e6f8318f492876ce0913c951073; проверен актуальный текст, canonical /argentina/buenos-aires/la-ventana-tango-dinner-show/."
+        ],
+        "targetEntityId": "excursion_source_nezabyvaemoe_tango_shou",
+        "sourceLimitations": "Исходный результат первого прохода сохранен. Оценка вероятности — редакционное решение, а не доказанная 100% идентичность."
+      }
     },
     {
       "reviewOrder": 104,
@@ -1506,5 +1521,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:33:02.766Z"
+  "updatedAt": "2026-10-21T16:33:05.723Z"
 }

@@ -582,7 +582,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/3a30aa144a71280e000fbfe9.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/contacts/",
+      "evidence": [
+        "VIP ZIP snapshots/3a30aa144a71280e000fbfe9.html: реальная страница «Обратная связь», офис Nossa Senhora de Copacabana 680/916 Rio de Janeiro, телефон +55 21 34356408 и форма сообщения.",
+        "RU src/pages/contacts/index.astro + src/data/organization/ada-tours.ts: активная страница контактов Ada Tours, тот же адрес Avenida Nossa Senhora de Copacabana 680 Sala 916, тот же номер +55 21 3435-6408 и способы связи."
+      ],
+      "note": "Совпали физический адрес и телефон, пользовательское назначение страницы; будущий 301 ведет на /contacts/, не на главную.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:08:10.882Z",
+      "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/argentina-ru/stolica-argentiny-gorod-buehnos-ajres",
@@ -595,5 +605,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:07:50.549Z"
+  "updatedAt": "2026-10-21T15:08:10.882Z"
 }

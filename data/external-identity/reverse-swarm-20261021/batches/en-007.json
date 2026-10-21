@@ -232,7 +232,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "EN GET 21.10.2026 HTTP 200: H1 «Discover Florianopolis: Beaches, Surfing and the Magic Island», но в каталоге /florianopolis/excursions нет карточек программ.",
+        "RU GET https://adatours.ru/brazil/florianopolis/ HTTP 200: одна экскурсия «Флорианополис: частная обзорная экскурсия», current main ID excursion_brazil_florianopolis_private_city."
+      ],
+      "note": "EN-страница не содержит действующую RU-программу частного обзора, поэтому составы каталогов не идентичны. Географическое совпадение не является подтвержденным sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:41:49.946Z",
+      "checkedBy": "reverse-worker-mvi9yaqv-xdfoj6xzebe",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/florianopolis/packages",
@@ -405,5 +415,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:41:47.660Z"
+  "updatedAt": "2026-10-21T15:41:49.946Z"
 }

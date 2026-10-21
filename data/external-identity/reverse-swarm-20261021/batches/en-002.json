@@ -64,7 +64,19 @@
       "pageType": "unknown",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/belize/tour/belize-best-of-both-worlds/",
+      "evidence": [
+        "EN live HTTP 200, canonical /belize-best-of-both-worlds; подробная программа 9 дней/8 ночей: прибытие Сан-Игнасио, Каракол (день 2), ATM (3), Бартон-Крик (4), Тикаль (5), перелёт в Сан-Педро (6), свободные 7–8, вылет 9. SHA-256 28c0fffea39eaa3b930f0687a843019bc9b4153a43869b4ef265ed54e8398682.",
+        "RU live HTTP 200, canonical /belize/tour/belize-best-of-both-worlds/, stable ID tour_source_luchshee_iz_dvukh_mirov, status published. Текущий MD blob 67210ff91bfff7fb8e6229a3082b5d1db1f46bf1 и source-index entry 29a5683ddc91a663b890d6e6903f074335af5b06 подтверждают ту же последовательность всех 9 дней.",
+        "Совпадают 5 ночей San Ignacio Resort Hotel Garden View и 3 ночи Ramon's Village Jungle Deluxe, 4 экскурсии с обедами/билетами, наземный трансфер и два местных перелёта, исключения (граница, международные билеты, чаевые). RU live SHA-256 54fa8f93485c3de3d7b0751e680ec61f852819c9362f1463ccf577ff87b05f13.",
+        "Frozen inventory: title/H1 пусты, type unknown, snapshotHttp 200, crawlReport/snapshotFile отсутствуют; идентификация выполнена по текущему полному HTML, а не slug/sourceUrl."
+      ],
+      "note": "Подтверждена одна и та же программа тура. В EN верхняя строка Route упоминает Hol Chan/Shark Ray Alley, но подробный маршрут и включённые услуги совпадают с RU; цене EN $4914 соответствует RU от $4910, разница сохранена как ценовое расхождение. Только реестр sameAs, без публикации разметки.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:35:19.765Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/belize-caye-caulker/excursions",
@@ -337,5 +349,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:34:22.268Z"
+  "updatedAt": "2026-10-21T15:35:19.765Z"
 }

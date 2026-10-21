@@ -8,8 +8,25 @@ export function isWithinImageWindow(rect, width, height) {
 export function initializeLazyImages() {
   let observer;
   const pending = new Set();
+  const backgroundRequests = new Map();
+  const warmBackground = (element) => {
+    // Resolve CSS first: mobile/desktop custom properties may contain two URLs,
+    // but only the background selected for this device should be requested.
+    const background = window.getComputedStyle(element).backgroundImage;
+    for (const match of background.matchAll(/url\((?:"([^"]*)"|'([^']*)'|([^)]*))\)/g)) {
+      const src = (match[1] ?? match[2] ?? match[3]).trim();
+      if (!src || src.startsWith('data:') || backgroundRequests.has(src)) continue;
+      const image = new window.Image();
+      backgroundRequests.set(src, image);
+      image.onload = image.onerror = () => backgroundRequests.set(src, null);
+      image.src = src;
+    }
+  };
   const activate = (element) => {
     if (element.dataset.lazySrc) {
+      // Runtime-inserted images can still carry native loading="lazy".
+      // Our geometry window owns scheduling, so do not defer a second time.
+      element.setAttribute('loading', 'eager');
       // Set sizes/srcset before src so a responsive image makes one request.
       if (element.dataset.lazySrcset) {
         element.setAttribute('srcset', element.dataset.lazySrcset);
@@ -21,6 +38,8 @@ export function initializeLazyImages() {
     if (element.dataset.lazyStyle) {
       element.style.cssText += ';' + element.dataset.lazyStyle;
       delete element.dataset.lazyStyle;
+      // Start the request now, even when the CSS background is not painted yet.
+      warmBackground(element);
     }
     pending.delete(element);
     observer?.unobserve(element);

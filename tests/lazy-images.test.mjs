@@ -93,6 +93,7 @@ test('runtime fetches only nearby images and responds to scroll, resize, hidden 
   try {
     initializeLazyImages();
     assert.equal(near.attrs.src, '/photo-1599.webp');
+    assert.equal(near.attrs.loading, 'eager');
     assert.equal(far.attrs.src, undefined);
     assert.equal(hidden.attrs.src, undefined);
     assert.equal(metadata.attrs.src, undefined);
@@ -126,6 +127,7 @@ test('backgrounds load after reload, restored scroll, fonts and layout changes w
   const keys = ['window', 'document', 'IntersectionObserver', 'MutationObserver', 'ResizeObserver'];
   const saved = Object.fromEntries(keys.map((key) => [key, globalThis[key]]));
   const listeners = {}, frames = [];
+  const requests = [];
   let layoutChanged, contentChanged, finishFonts;
   const fontsReady = new Promise((resolve) => { finishFonts = resolve; });
   const background = (top, hidden = false) => ({
@@ -142,6 +144,8 @@ test('backgrounds load after reload, restored scroll, fonts and layout changes w
   const tick = () => { const current = frames.splice(0); current.forEach((fn) => fn()); };
   const dispatch = (event) => listeners[event]?.();
   globalThis.window = { innerWidth: 390, innerHeight: 800, ResizeObserver: true,
+    Image: class { set src(value) { requests.push(value); } },
+    getComputedStyle: (node) => ({ backgroundImage: node.selectedBackground ?? node.style.cssText.match(/url\("[^"]+"\)/)?.[0] ?? 'none' }),
     addEventListener: (name, fn) => listeners[name] = fn,
     requestAnimationFrame: (fn) => { frames.push(fn); return 1; } };
   globalThis.document = { body: {}, fonts: { ready: fontsReady }, visibilityState: 'visible',
@@ -166,6 +170,17 @@ test('backgrounds load after reload, restored scroll, fonts and layout changes w
     font.top = 400; finishFonts(); await fontsReady; tick(); active(font, 3400);
     hidden.hidden = false; layoutChanged(); tick(); active(hidden, 100);
     const appended = background(1500); nodes.push(appended); contentChanged(); tick(); active(appended, 1500);
+    assert.ok(requests.includes('/band-1500.webp'), 'request starts a screen ahead, before the background is painted');
+    const responsive = background(1500);
+    responsive.dataset.lazyStyle = '--desktop: url("/desktop.webp");--mobile: url("/mobile.webp")';
+    responsive.selectedBackground = 'url("/mobile.webp")';
+    nodes.push(responsive); contentChanged(); tick();
+    assert.ok(requests.includes('/mobile.webp'));
+    assert.ok(!requests.includes('/desktop.webp'), 'unused device cover stays unfetched');
+    const duplicate = background(1500); duplicate.selectedBackground = 'url("/mobile.webp")';
+    nodes.push(duplicate); contentChanged(); tick();
+    assert.equal(requests.filter((src) => src === '/mobile.webp').length, 1);
+    assert.ok(!requests.includes('/band-10000.webp'), 'distant backgrounds stay deferred');
     const resumed = background(3500); nodes.push(resumed); resumed.top = 500;
     dispatch('visibilitychange'); active(resumed, 3500);
     assert.ok(distant.dataset.lazyStyle);

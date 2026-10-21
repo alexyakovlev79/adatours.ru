@@ -202,7 +202,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/04effe3e270aa569ee27c10d.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/04effe3e270aa569ee27c10d.html, SHA-256 b20bdba4be7dc8b76b682f50bf8442f87b21e727e7002eca83ee474b15154a76, обход 2026-10-20T13:13:06+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Blue Tree Premium Faria Lima». Blue Tree Premium Faria Lima (в тексте также Blue Tree Towers Faria Lima) в Сан-Паулу; 338 номеров, 77 трансформируются в офисы, аэропорт Congonhas в 6,7 км; подробные категории номеров.",
+        "Проверены актуальные main source-index каталоги destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf): самостоятельной страницы Blue Tree Premium Faria Lima по названию/бренду не установлено. В src/content.config.ts нет hotel collection, маршрутизатор [...path].astro не выделяет hotel detail; общий тур/город не доказывает соответствия гостинице."
+      ],
+      "note": "Проверена самостоятельная карточка Blue Tree Premium Faria Lima; география исходника: Сан-Паулу. Подтвержденная текущая RU-страница именно этой гостиницы в просмотренном source-index не найдена. Другой отель той же сети, туристический город и тур с возможным размещением не назначены 301-целью.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:33:01.923Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/blue-tree-premium-paulista?page=1",
@@ -325,5 +335,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:32:59.830Z"
+  "updatedAt": "2026-10-21T15:33:01.923Z"
 }

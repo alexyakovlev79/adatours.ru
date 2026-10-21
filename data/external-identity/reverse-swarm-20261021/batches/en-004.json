@@ -63,7 +63,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/mice/",
+      "evidence": [
+        "Текущий EN HTML прочитан 21.10.2026 15:33 UTC: HTTP 200, canonical https://adatours.com/business-travel-mice, SHA-256 eea32a1a98ce79bfb4f983d57f5926977a838d274bad21715726277040a50f8e. H1 MICE and Intensives, Events and Congresses in Latin America!; страница описывает собственную MICE-услугу Ada Tours Brazil Latin America DMC.",
+        "Предмет EN: индивидуальное планирование incentive, мероприятий и конгрессов в Латинской Америке; площадки, отели, встречи, рестораны, гиды/координаторы и транспорт. Это коммерческая услуга, несмотря на исторический pageType category; конкретного товара, фиксированной программы и фильтрованного списка туров здесь нет.",
+        "Прочитана действующая RU https://adatours.ru/mice/ и её исходник main src/pages/mice/index.astro, blob 8a4b83a6897cb70e39293ac58e58d0c50169e413: leadEntityId mice, география Бразилия и Латинская Америка; та же MICE/корпоративная услуга Ada Tours — площадки, размещение, трансферы, гиды, встречи, питание, события и местная координация.",
+        "Обе страницы представляют один коммерческий сервис одного оператора для корпоративных групп, делегаций и incentive-поездок; RU-кейсы и дополнительные разделы конкретизируют услугу. Совпадение не выводится из похожего slug или наличия общей темы."
+      ],
+      "note": "Подтверждена идентичность коммерческой MICE-услуги Ada Tours. Это не отождествление отдельного тура или каталогов с разным составом. Сохранена проверенная связь для отдельной мастер-интеграции; JSON-LD не изменён.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T15:36:11.389Z",
+      "checkedBy": "reverse-worker-mvi9s3d2-5bwshz0713i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/buzios/excursions",
@@ -326,5 +338,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:35:05.049Z"
+  "updatedAt": "2026-10-21T15:36:11.389Z"
 }

@@ -10,10 +10,10 @@ summary: Центральная почта входит в историческ�
   и Национальным историческим музеем, образуя одну из самых выразительных сторон площади. На этом месте раньше находились
   здания, связанные с управлением Чили.
 hero:
-  src: /media/tours/chile-argentina-private-grand-tour-17-days/plaza-generated-20261011-v1.webp
-  alt: "Пальмы и исторические фасады вокруг Пласа-де-Армас в Сантьяго, Чили"
+  src: /media/destinations/santiago-central-post-office/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Центральная почта Сантьяго — иллюстрация"
   status: approved
-  hover: "Сантьяго: центральная площадь с пальмами, башнями и прохожими"
+  hover: "Центральная почта Сантьяго — новая обложка"
 gallery: []
 themes:
 - theme_culture

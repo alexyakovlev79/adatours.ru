@@ -10,9 +10,9 @@ summary: Небольшой Пуэрто-Рио-Транкило стоит у �
   водными маршрутами к Мраморным пещерам. Дома, горные склоны и бирюзовый берег делают поселок приятным местом для остановки
   между экскурсиями.
 hero:
-  src: /media/tours/bolivia-chile-hidden-treasures-16-days/word-18-20261011-v1-enhanced-20261011-next50-v1.webp
-  alt: "Пуэрто-Рио-Транкило на берегу озера Хенераль-Каррера среди гор, Чили"
-  hover: "Чилийская Патагония: поселок у бирюзового озера Хенераль-Каррера"
+  src: /media/destinations/puerto-rio-tranquilo/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Пуэрто-Рио-Транкило — иллюстрация"
+  hover: "Пуэрто-Рио-Транкило — новая обложка"
   status: approved
 gallery: []
 themes: ["theme_nature"]

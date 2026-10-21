@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: Холм Сан-Кристобаль поднимается над Сантьяго. С его склонов и смотровых площадок видны городские кварталы
   и Андский хребет.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x535-20261011-v1-enhanced-20261011-pass2324-v1.webp
-  alt: "Желтая и оранжевая кабины канатной дороги над Сантьяго, Чили"
-  hover: "Сантьяго в Чили: канатная дорога Сан-Кристобаля на фоне города и снежных Анд"
+  src: /media/destinations/san-cristobal-hill/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Холм Сан-Кристобаль в Сантьяго — иллюстрация"
+  hover: "Холм Сан-Кристобаль в Сантьяго — новая обложка"
 gallery: []
 themes: ["theme_culture", "theme_nature"]
 searchAliases:

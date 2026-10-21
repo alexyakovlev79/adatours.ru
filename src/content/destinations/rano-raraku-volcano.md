@@ -10,9 +10,9 @@ summary: Рано-Рараку на острове Пасхи был камен�
 searchAliases:
 - vulkan-rano-raraku
 hero:
-  src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-11-generated-20261008-v1.webp
-  hover: "Рано-Рараку: каменные головы моаи среди травы и скал"
-  alt: "Частично погруженные в землю моаи на травянистом склоне Рано-Рараку, остров Пасхи, Чили"
+  src: /media/destinations/rano-raraku-volcano/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Вулкан Рано-Рараку — новая обложка"
+  alt: "Вулкан Рано-Рараку — иллюстрация"
 gallery: []
 themes:
 - theme_culture

@@ -547,7 +547,18 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/98c887ec26e21edc1a480059.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Просмотрен приватный HTML snapshots/98c887ec26e21edc1a480059.html; SHA-256 2d9b1f43e1081c817fd36ca192e13baaed532d3c83a4eff2b3b30e9965e2515a проверен. Title/H1: Отель Mirasol Rio. Mirasol Rio / Mirasol Copacabana Hotel в 300 м от Копакабаны; открытый бассейн с террасой, сауна, ресторан El Sol и бар Sky Sol; код брони Hotel Mirasol Rio Brazil.",
+        "Проверены текущие source-index каталоги main: destinations (1018 записей, blob cdfbc9f04396ba9db825d26d663a09a416d91f2b), tours (397, 5d0662b6b1589951c684b2c44ea1093b182ce9bf), excursions (416, 402b7d42c61bc17709c1ae07fc92dfa32ee08327). Отдельной сущности с этим названием/ID/aliases не найдено. В src/content и src/pages/[...path].astro нет коллекции/маршрута отелей; страницы города и туры не являются карточкой конкретного отеля.",
+        "HTML canonical: https://vipdeluxetravel.ru/hotel-mirasol-rio; query остаётся частью source URL. В frozen inventory нет второй записи с тем же canonical, технический дубль не подтвержден. Mirasol не смешивается с соседней карточкой Mirador Rio, несмотря на похожее имя и город."
+      ],
+      "note": "Не найдена подтвержденная самостоятельная RU-карточка «Отель Mirasol Rio». Страница города/курорта или тур с проживанием не заменяет карточку и бронирование конкретного отеля; 301 не назначен. Проверен сохраненный HTML, без заявления о сегодняшнем HTTP.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:27:11.999Z",
+      "checkedBy": "reverse-worker-mvi9c6r7-ij5ljbuti",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/hotel-othon-aeroport-rio?page=5",
@@ -590,5 +601,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:27:00.145Z"
+  "updatedAt": "2026-10-21T15:27:11.999Z"
 }

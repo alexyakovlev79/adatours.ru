@@ -402,7 +402,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/6bccd8c5bf31cc0fc3508909.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан HTML snapshots/6bccd8c5bf31cc0fc3508909.html, SHA-256 a5727ead8d8cd70c300ec267706d913faedefa2e8d526ed918983276d0ebd41a, обход 2026-10-20T13:15:36+00:00, snapshotHttp 200, pageType hotel_candidate; H1 «Maksoud Plaza». Maksoud Plaza Sao Paulo Hotel — гостиница в Сан-Паулу с 416 номерами/люксами, атриумом 22-этажного здания, ресторанами/барами, Health Club и конференц-павильоном.",
+        "В актуальных main source-index каталогах destinations (blob cdfbc9f04396ba9db825d26d663a09a416d91f2b) и tours (blob 5d0662b6b1589951c684b2c44ea1093b182ce9bf) самостоятельная страница Maksoud Plaza по названию/бренду не установлена. src/content.config.ts не содержит hotel collection; [...path].astro не формирует отдельный hotel detail. География города и другие туристические продукты не заменяют гостиничную сущность."
+      ],
+      "note": "Проверена отдельная гостиничная карточка Maksoud Plaza, Сан-Паулу. Подтвержденная самостоятельная RU-страница именно этого объекта в просмотренном текущем source-index не установлена. Общий Place, тур с возможным проживанием и другой отель не назначены 301-целью; текущая работоспособность самого отеля не оценивалась.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:34:01.108Z",
+      "checkedBy": "reverse-worker-mvi9bl75-wz4a20i6j3",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/mareiro-hotel?page=1",
@@ -425,5 +435,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:57.677Z"
+  "updatedAt": "2026-10-21T15:34:01.108Z"
 }

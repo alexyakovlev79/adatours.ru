@@ -6,13 +6,7 @@
   "baseStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
   "createdAt": "2026-10-21",
   "claimGeneration": 1,
-  "lease": {
-    "ownerId": "reverse-worker-mvi90jn9-tgeaiviqmlj",
-    "token": "reverse-lease-mvi90jn9-ez3l338n0aj",
-    "generation": 1,
-    "claimedAt": "2026-10-21T15:11:49.990Z",
-    "expiresAt": "2026-10-21T16:41:49.990Z"
-  },
+  "lease": null,
   "records": [
     {
       "sourceUrl": "https://vipdeluxetravel.ru/excursion?product_id=4037&page=4",
@@ -603,8 +597,20 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/4f1eae7bc4d310ddd463e0e0.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory item 1300: «Maksoud Plaza», pageType hotel_candidate, H1 «Maksoud Plaza», snapshotHttp 200.",
+        "RU content.config.ts has no Hotel collection or active individually bookable Maksoud Plaza product."
+      ],
+      "note": "Исходный URL посвящен размещению в гостинице Maksoud Plaza. На RU отсутствует эквивалентная гостиничная карточка; городской хаб Сан-Паулу не соответствует тому же продукту. Нужно выбрать создание целевой страницы либо 410, не включать предположительный 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:26:44.251Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T15:26:27.011Z"
+  "updatedAt": "2026-10-21T15:26:44.251Z",
+  "completedAt": "2026-10-21T15:26:44.251Z",
+  "lastOwner": "reverse-worker-mvi90jn9-tgeaiviqmlj"
 }

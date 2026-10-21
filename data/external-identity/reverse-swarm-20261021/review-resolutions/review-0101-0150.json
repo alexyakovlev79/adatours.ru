@@ -311,7 +311,22 @@
         "batchId": "vip-015",
         "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "confidence": 0.98,
+        "accepted": true,
+        "decisionPolicy": "probability-70-v1",
+        "decidedAt": "2026-10-21T16:32:51.482Z",
+        "reason": "Самостоятельного RU-каталога отелей нет. Гостиничное бронирование не заменяется турами. Рекомендация при миграции — 410 после отдельного применения решения.",
+        "evidence": [
+          "VIP hotels обозначен отдельным гостиничным разделом; его путь сейчас ведет на общую витрину.",
+          "Проверен src/content.config.ts и три предметных source-index: Country/Destination/Tour/Excursion есть, Hotel-коллекции нет."
+        ],
+        "targetEntityId": null,
+        "sourceLimitations": "Исходный результат первого прохода сохранен. Оценка вероятности — редакционное решение, а не доказанная 100% идентичность."
+      }
     },
     {
       "reviewOrder": 108,
@@ -1566,5 +1581,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:33:10.512Z"
+  "updatedAt": "2026-10-21T16:33:12.129Z"
 }

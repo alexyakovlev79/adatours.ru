@@ -182,7 +182,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/2da46c7ffc5ea6395586ff31.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #529: snapshotHttp=200, pageType=excursion_listing, title=\"(empty)\", H1=\"(empty)\"; snapshotFile=snapshots/2da46c7ffc5ea6395586ff31.html; без новой живой проверки VIP.",
+        "У RU Destination destination_costa_rica_san_hose опубликован MD (status=approved), но в data/source-index/catalogs/excursions.json отсутствует активная Excursion с destinationIds либо relatedDestinationIds для этого ID."
+      ],
+      "note": "Каталог экскурсий Сан-Хосе пуст по действующим данным. Решить, нужна ли отдельная страница экскурсий либо HTTP 410; нельзя назначить 301 на несуществующую подборку.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:47:47.931Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-san-huan-del-sur-v-nikaragua",
@@ -395,5 +405,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:47:43.326Z"
+  "updatedAt": "2026-10-21T14:47:47.931Z"
 }

@@ -43,7 +43,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "21.10.2026 прочитаны EN HTML (GET 200/self-canonical, SHA-256 f122cbb6395b8fc696785fa721dbd4d427f2eb2a116bc2d6a3797dd8871d3c77) и JSON, который использует публичный каталог (SHA-256 08619086563f62ce2a45bc1de242c915c139e42d7e974734aa31ff09e88e6aba). EN-каталог экскурсий Боливии: 8 позиций по API, вторая страница пустая; в том числе Tarabuco и Soul’s Valley & Palca Canyon.",
+        "Сверены активные MD, source-index, правила каталогов и живой RU HTTP в main 78fe61f4b9fa878e86bd00862b0506a72fb148d2. Действующий RU /bolivia/excursion/ возвращает 200 и 19 экскурсий; есть новые самостоятельные экскурсии Тиуанако, Титикака и Альтиплано. Состав не совпадает с восемью EN-продуктами.",
+        "Frozen inventory: pageType=category, snapshotHttp=200, H1 «Bolivia Excursions: Uyuni Salt Flats, Lake Titicaca and Death Road», crawlReport=adatours-com-crawl-001.json; snapshotFile не задан, приватный снимок не заявляется просмотренным."
+      ],
+      "note": "Подтверждённой sameAs-пары нет: одно географическое название не делает каталоги идентичными. Пустой EN-ассортимент и/или другой RU-состав отражены как отсутствие подтверждения, не как технический retry; связь не опубликована.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:37:50.664Z",
+      "checkedBy": "reverse-worker-mvi9rpun-jmuoe9d64sf",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/bolivia-en/packages",
@@ -326,5 +337,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:33:27.572Z"
+  "updatedAt": "2026-10-21T15:37:50.664Z"
 }

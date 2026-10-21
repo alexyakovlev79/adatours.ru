@@ -548,7 +548,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory #400: title «Margarita Island Beach Tours in Venezuela», pageType category, snapshotHttp 200, snapshotFile отсутствует; приватный снимок не просматривался.",
+        "EN HTTP 200/self canonical; title «Margarita Island Beach Tours in Venezuela», H1 «Excursions to countries of Latin America». Товарная gallery пуста, конкретных экскурсионных карточек нет.",
+        "RU https://adatours.ru/venezuela/margarita-island/ вернул HTTP 404. main 81bda828: destination_venezuela_ostrov_margarita — географическая страница острова; самостоятельных excursion MD с этим ID нет."
+      ],
+      "note": "Подтвержденного действующего RU-каталога экскурсий острова Маргарита нет. Географическая страница и многодневные туры не являются sameAs этого EN-каталога.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:54:18.364Z",
+      "checkedBy": "reverse-worker-mvi9xr0h-tpq3bwqf32n",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/isla-de-margarita/packages",
@@ -591,5 +602,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:53:52.401Z"
+  "updatedAt": "2026-10-21T15:54:18.364Z"
 }

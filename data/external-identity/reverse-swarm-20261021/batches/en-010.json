@@ -480,7 +480,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory/crawl-002: title «Excursions and tours to the Brazilian city of Natal | Brazil», H1 «Excursions to countries of Latin America», snapshotHttp 200, pageType category; snapshotFile не указан.",
+        "Онлайн-проверка 21.10.2026: EN HTTP 200: excursion category_id=240, typeid=2; productsjson products=[], total=0. География — Natal, Brazil.",
+        "RU destination_brazil_natal: /brazil/place/natal/ HTTP 200, страница города с двумя многодневными турами; /brazil/natal/ HTTP 404. Список туров не является каталогом экскурсий."
+      ],
+      "note": "Пустой EN-каталог экскурсий Натала не имеет подтвержденной однотипной RU-пары. Страница города и каталог многодневных маршрутов не подходят для sameAs.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:57:00.716Z",
+      "checkedBy": "reverse-worker-mviacx8u-9vmh5o15fv",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/natal/packages",
@@ -553,5 +564,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:56:57.961Z"
+  "updatedAt": "2026-10-21T15:57:00.716Z"
 }

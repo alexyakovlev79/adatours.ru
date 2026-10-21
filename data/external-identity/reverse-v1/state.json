@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T07:04:21.118Z",
+  "updatedAt": "2026-10-21T07:04:59.878Z",
   "policy": "source-first-three-domains",
   "records": {
     "https://adatours.com/antarctica-en": {
@@ -8221,103 +8221,170 @@
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-liberiya-v-kosta-rike-guanakaste/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-liberiya-v-kosta-rike-guanakaste/ekskursii; parent page 'Либерия, Коста-Рика: достопримечательности и путеводитель по Белому городу'; old filtered listing HTTP 200 with zero-byte HTML.",
+        "Ada Tours main source-index exact identity destination_costa_rica_liberiya; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-v-gorod-liberiya-v-kosta-rike-guanakaste; current approved Destination MD verified (blob dd55fc83f0); canonical https://adatours.ru/costa-rica/liberia/.",
+        "GitHub main catalogue/main route relation: 0 matching nonarchived destination excursion record(s) with MD; src/pages/[...path].astro generates filtered catalogues only for nonempty active results. Product list of empty old HTML cannot be compared."
+      ],
+      "note": "Old filtered excursions listing is empty, current matching destination has zero active relevant excursions; proposed filtered URL is not generated. Editorial choice: redirect to the relevant parent destination page or return HTTP 410; no fabricated 301.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/guatemala/place/livingston/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale; parent page 'Экскурсии и туры в город Ливингстон в Гватемале'; old landing https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale, fetched HTML.",
+        "Ada Tours main source-index exact identity destination_guatemala_livingston; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale; current approved Destination MD verified (blob 772b2ac215); canonical https://adatours.ru/guatemala/place/livingston/."
+      ],
+      "note": "Geography, main source identity and destination landing purpose coincide. Future 301 only, not yet deployed.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/guatemala/place/livingston/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale/packages; parent page 'Экскурсии и туры в город Ливингстон в Гватемале'; old filtered listing HTTP 200 with zero-byte HTML.",
+        "Ada Tours main source-index exact identity destination_guatemala_livingston; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale; current approved Destination MD verified (blob 772b2ac215); canonical https://adatours.ru/guatemala/place/livingston/tour/.",
+        "GitHub main catalogue/main route relation: 4 matching nonarchived main-route tour record(s) with MD; src/pages/[...path].astro generates filtered catalogues only for nonempty active results. Product list of empty old HTML cannot be compared."
+      ],
+      "note": "Same destination and tour listing intent; matching current source catalogue nonempty. Historical product composition unavailable in zero-byte old HTML. Future 301 only; production HTTP check required before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale/ekskursii": {
-      "status": "leased",
+      "status": "review",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "",
+      "relation": null,
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale/ekskursii; parent page 'Экскурсии и туры в город Ливингстон в Гватемале'; old filtered listing HTTP 200 with zero-byte HTML.",
+        "Ada Tours main source-index exact identity destination_guatemala_livingston; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatemale; current approved Destination MD verified (blob 772b2ac215); canonical https://adatours.ru/guatemala/livingston/.",
+        "GitHub main catalogue/main route relation: 0 matching nonarchived destination excursion record(s) with MD; src/pages/[...path].astro generates filtered catalogues only for nonempty active results. Product list of empty old HTML cannot be compared."
+      ],
+      "note": "Old filtered excursions listing is empty, current matching destination has zero active relevant excursions; proposed filtered URL is not generated. Editorial choice: redirect to the relevant parent destination page or return HTTP 410; no fabricated 301.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/peru/place/lima/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu; parent page 'Лима, Перу: достопримечательности и путеводитель по столице'; old landing https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu, fetched HTML.",
+        "Ada Tours main source-index exact identity destination_peru_lima; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu; current approved Destination MD verified (blob 58e3705268); canonical https://adatours.ru/peru/place/lima/."
+      ],
+      "note": "Geography, main source identity and destination landing purpose coincide. Future 301 only, not yet deployed.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/peru/place/lima/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu/packages; parent page 'Лима, Перу: достопримечательности и путеводитель по столице'; old filtered listing HTTP 200 with zero-byte HTML.",
+        "Ada Tours main source-index exact identity destination_peru_lima; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu; current approved Destination MD verified (blob 58e3705268); canonical https://adatours.ru/peru/place/lima/tour/.",
+        "GitHub main catalogue/main route relation: 35 matching nonarchived main-route tour record(s) with MD; src/pages/[...path].astro generates filtered catalogues only for nonempty active results. Product list of empty old HTML cannot be compared."
+      ],
+      "note": "Same destination and tour listing intent; matching current source catalogue nonempty. Historical product composition unavailable in zero-byte old HTML. Future 301 only; production HTTP check required before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/peru/lima/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu/ekskursii; parent page 'Лима, Перу: достопримечательности и путеводитель по столице'; old filtered listing HTTP 200 with zero-byte HTML.",
+        "Ada Tours main source-index exact identity destination_peru_lima; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-peru-gorod-limu; current approved Destination MD verified (blob 58e3705268); canonical https://adatours.ru/peru/lima/.",
+        "GitHub main catalogue/main route relation: 12 matching nonarchived destination excursion record(s) with MD; src/pages/[...path].astro generates filtered catalogues only for nonempty active results. Product list of empty old HTML cannot be compared."
+      ],
+      "note": "Same destination and excursion listing intent; matching current source catalogue nonempty. Historical product composition unavailable in zero-byte old HTML. Future 301 only; production HTTP check required before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/peru/place/nazca-lines-and-ballestas-islands/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru; parent page 'Линии Наска, Перу: достопримечательности и путеводитель по плато Наска'; old landing https://vipdeluxetravel.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru, fetched HTML.",
+        "Ada Tours main source-index exact identity destination_peru_linii_naska_i_ostrova_balestas; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru; current approved Destination MD verified (blob 511dce7f20); canonical https://adatours.ru/peru/place/nazca-lines-and-ballestas-islands/."
+      ],
+      "note": "Geography, main source identity and destination landing purpose coincide. Future 301 only, not yet deployed.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru/packages": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/peru/place/nazca-lines-and-ballestas-islands/tour/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru/packages; parent page 'Линии Наска, Перу: достопримечательности и путеводитель по плато Наска'; old filtered listing HTTP 200 with zero-byte HTML.",
+        "Ada Tours main source-index exact identity destination_peru_linii_naska_i_ostrova_balestas; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru; current approved Destination MD verified (blob 511dce7f20); canonical https://adatours.ru/peru/place/nazca-lines-and-ballestas-islands/tour/.",
+        "GitHub main catalogue/main route relation: 6 matching nonarchived main-route tour record(s) with MD; src/pages/[...path].astro generates filtered catalogues only for nonempty active results. Product list of empty old HTML cannot be compared."
+      ],
+      "note": "Same destination and tour listing intent; matching current source catalogue nonempty. Historical product composition unavailable in zero-byte old HTML. Future 301 only; production HTTP check required before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru/ekskursii": {
-      "status": "leased",
+      "status": "redirect_ready",
       "sourceDomain": "vipdeluxetravel.ru",
-      "ownerId": "reverse-vip-oct21-b06-amanda",
-      "token": "vip-oct21-b06-checkpoints-20261021",
+      "ruUrl": "https://adatours.ru/peru/nazca-lines-and-ballestas-islands/",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T07:04:59.878Z",
+      "evidence": [
+        "VIP archive snapshot 2026-10-19: https://vipdeluxetravel.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru/ekskursii; parent page 'Линии Наска, Перу: достопримечательности и путеводитель по плато Наска'; old filtered listing HTTP 200 with zero-byte HTML.",
+        "Ada Tours main source-index exact identity destination_peru_linii_naska_i_ostrova_balestas; legacy brasiltours source https://brasiltours.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska-v-peru; current approved Destination MD verified (blob 511dce7f20); canonical https://adatours.ru/peru/nazca-lines-and-ballestas-islands/.",
+        "GitHub main catalogue/main route relation: 4 matching nonarchived destination excursion record(s) with MD; src/pages/[...path].astro generates filtered catalogues only for nonempty active results. Product list of empty old HTML cannot be compared."
+      ],
+      "note": "Same destination and excursion listing intent; matching current source catalogue nonempty. Historical product composition unavailable in zero-byte old HTML. Future 301 only; production HTTP check required before deployment.",
+      "receipt": "data/external-identity/reverse-v1/results/reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs-part-03.json",
       "batchId": "reverse-vipdeluxetravel-ru-mvhrccsu-cz5fghfs",
-      "claimedAt": "2026-10-21T06:55:13.614Z",
-      "expiresAt": "2026-10-21T07:55:13.614Z",
+      "ownerId": "reverse-vip-oct21-b06-amanda",
       "generation": 1
     },
     "https://vipdeluxetravel.ru/lissabon": {

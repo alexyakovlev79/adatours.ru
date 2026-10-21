@@ -1,6 +1,6 @@
 # Mobile hero pilot — 21 October 2026
 
-Authorized pilot: 20 distinct published hero photos, 12 approved crops, 8 REVIEW_NO_CROP. Only exact page path + unchanged hero source opt in. Gallery/card uses do not change. Portrait source applies at <=479 CSS px; wider viewports retain the original. photo-lead heroes are excluded from automatic application.
+Current revision 2: 20 prepared crops, 19 enabled hero pages, Brazil preview-only. All eight original REVIEW_NO_CROP decisions were superseded by the user-approved head/face-first rule. Historical revision 1 below retains its measurements. Only exact page path + unchanged hero source opt in. Gallery/card uses do not change. Portrait source applies at <=479 CSS px; wider viewports retain the original. photo-lead heroes are excluded from automatic application.
 
 27 WebP derivatives, quality 78, no enlargement; original maximum available crop sizes are preserved. Sharp runtime 0.35.5. Encoding/crop preparation: 2.415 seconds (excludes visual review, network and upload). Original downloads: 48.662 seconds. Full-size accepted originals: 4,060,352 bytes; largest derivative per accepted photo: 982,614 bytes, reduction 75.8%. This is asset size, not LCP improvement.
 
@@ -17,25 +17,25 @@ Rollback: remove pilot import/source selection in Hero.astro and restore HeroVid
 | Page | Decision | Reason |
 |---|---|---|
 | / | READY | Сахарная голова и изгиб залива |
-| /brazil/ | READY | Статуя Христа и горные склоны |
+| /brazil/ | READY (preview only) | Статуя Христа и горные склоны |
 | /argentina/ | READY | Главная вершина Фицрой и передний план |
-| /peru/ | REVIEW_NO_CROP | Лица ребёнка и ламы не помещаются вместе в безопасный вертикальный кадр |
-| /belize/ | REVIEW_NO_CROP | Для сохранения ребёнка, рук и морской звезды нужен более широкий кадр |
+| /peru/ | READY | Сохранён центральный совместный кадр: часть лица ребёнка и часть морды ламы; частичная обрезка допустима. |
+| /belize/ | READY | Приоритет — голова ребёнка; руки и морская звезда могут быть частично обрезаны. |
 | /bolivia/ | READY | Фламинго, лагуна и горы |
 | /chile/ | READY | Горный массив и бирюзовое озеро |
 | /colombia/ | READY | Разноцветные фасады улицы |
-| /costa-rica/ | REVIEW_NO_CROP | Длинный хвост и раскрытые крылья ара не помещаются в вертикальный кадр |
-| /ecuador/ | REVIEW_NO_CROP | В вертикальном кадре теряется значительная часть тела игуаны |
+| /costa-rica/ | READY | Фокус вправо на голове ара; хвост и края крыльев можно обрезать. |
+| /ecuador/ | READY | Фокус влево на голове игуаны; сохранение всего тела не требуется. |
 | /mexico/ | READY | Центр розетки агавы |
-| /panama/ | REVIEW_NO_CROP | Вертикальная обрезка разрушает композицию вытянутого острова |
-| /uruguay/ | REVIEW_NO_CROP | Нельзя сохранить целиком группу пальцев монумента |
+| /panama/ | READY | Центральная часть острова: удалены боковые края, скрываемые мобильным hero. |
+| /uruguay/ | READY | Центральная часть монумента: сохранение всех пальцев не требуется. |
 | /antarctica/ | READY | Айсберг и отражение |
 | /vip/ | READY | Вулкан, фламинго и отражения |
 | /mice/ | READY | Сахарная голова и залив |
 | /mice/business-delegations/ | READY | Город, берег и закат |
 | /dmc/travel-agencies/ | READY | Изгибы лагун и дюны |
-| /interests/adventure/ | REVIEW_NO_CROP | Оба лица и указывающая рука не помещаются в безопасный вертикальный кадр |
-| /interests/wildlife/ | REVIEW_NO_CROP | В узком hero невозможно сохранить целиком ягуара без изменения композиции |
+| /interests/adventure/ | READY | Перенесён удачный фокус 92% вправо из мобильной карточки; в hero сохранены оба лица. |
+| /interests/wildlife/ | READY | Фокус влево на голове ягуара; часть тела может выходить за кадр. |
 
 ## Published and measured
 
@@ -48,3 +48,16 @@ Three independent official PSI reports per stage, each Mobile and Desktop. Mobil
 Official PSI LCP diagnostic confirms the new h01-portrait-705 image. No device-wide optimization applied to other slots. Main HTML SHA-256 before: 07b50b62ab009ef7e2243ecfb6c9300952bc60ad3cc4c36bde75f8ca8fa1c6e9; after: 0c27c66702a16a559f3ecda77357e972e97b3d4e3fc5553cd535fe40b292df22. Remote PSI CDN-copy SHA cannot be verified, but its diagnostic names the versioned new crop.
 
 Measurements recorded in repository and existing Google Sheets journal; record-only commit skips CI, no duplicate deployment.
+
+
+## Revision 2 — composition correction, 21 October 2026
+
+User correction: prioritize heads/faces for all living creatures. Whole bodies, hands, tails and wings are not mandatory. Partial shared framing (Peru child + llama) is explicitly accepted. Read existing per-slot positions before deriving a crop; if a special subject cannot be confidently selected, crop the central edges already hidden by cover rather than rejecting the image.
+
+Confirmed existing mobile adventure card rule: `InterestCard.astro`, max-width 759px, `theme_adventure`, `object-position:92% center`. This rule remains unchanged. Its successful right alignment is transferred to the separate adventure hero derivative. The original theme hero was centered; the prior report failed to distinguish this use from the card. The new report explicitly names the card as the reference.
+
+Eight new revised crops, 16 immutable WebP assets (`20261021-v2`). Existing 27 v1 assets retained. Eight originals: 2,246,276 -> 568,126 bytes (-74.7%). Enabled 19-photo subset: 6,063,410 -> 1,503,286 bytes (-75.2%). All 20 including unchanged Brazil: 6,306,628 -> 1,746,504 bytes (-72.3%). These are file sizes, not measured speed gains. No homepage image/source, video timing, lazy loading or card CSS changes.
+
+Mobile source boundary remains max-width 479 CSS px, independent of device labels. Wider/tablet/landscape widths keep the original; full originals remain intact. No upscaling. Simulated cover checks at 320x700, 412x556 and 479x400 confirmed bird/iguana/jaguar heads and both traveler faces; the partially cropped Peru pair is intentional. Top alignment protects heads on wider/shorter hero blocks. Text overlays vary per real page and are not included in the crop simulation.
+
+Checks: all 20 source hashes unchanged, 43 derivative hashes and bounds valid, no enlargement. Uploaded v2 assets require verified GET receipts and production build gate before considering publication successful. Revision 1 PSI results above remain historical, not attributed to the additional eight crops.

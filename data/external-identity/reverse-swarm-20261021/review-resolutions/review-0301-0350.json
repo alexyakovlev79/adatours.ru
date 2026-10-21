@@ -619,7 +619,55 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/vip/",
+        "confidence": 0.5,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN VIP Travel — общая премиальная посадочная со schema offerCount=41; RU /vip/ содержит 90 туров. Тема и оператор совпадают, но это не доказательство одного и того же товарного каталога.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/vip-travel",
+            "http": 200,
+            "canonical": "https://adatours.com/vip-travel",
+            "h1": [
+              "Luxury  and VIP  Tours  to  South  and  Central  America"
+            ],
+            "sha256": "ba97955970158a78029bf85092fa579791516b01b155e2f5c360124426c953f4",
+            "checkedAt": "2026-10-21T16:30:06.464625+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "41"
+            ]
+          },
+          {
+            "url": "https://adatours.ru/vip/",
+            "http": 200,
+            "canonical": "https://adatours.ru/vip/",
+            "h1": [
+              "Путешествие, устроенное вокруг вас"
+            ],
+            "sha256": "c63475a2a33f485eead64df0bebc5113870038d3953625b0f26c01fe2ffc330b",
+            "checkedAt": "2026-10-21T16:30:09.309842+00:00",
+            "htmlCards": [],
+            "offerCount": [
+              "26"
+            ]
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:32:02.424Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 309,
@@ -680,5 +728,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:00.849Z"
+  "updatedAt": "2026-10-21T16:32:02.424Z"
 }

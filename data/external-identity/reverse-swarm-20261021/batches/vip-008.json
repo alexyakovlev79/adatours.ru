@@ -62,7 +62,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/c961d46e7f8b3e818a29d8c4.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/uruguay/excursion/",
+      "evidence": [
+        "VIP inventory #613: pageType=excursion_listing, source path /urugvaj-ru/ekskursii; frozen HTTP 200, пустые title/H1, товары в снимке не подтверждены.",
+        "RU src/pages/[...path].astro создает /uruguay/excursion/ из активных экскурсий геостраны; каталог excursions.json содержит 6 неархивных экскурсий Уругвая, включая excursion_source_peshij_tur_po_istoricheskomu_tsentru."
+      ],
+      "note": "Подготовлена географически релевантная карта каталога экскурсий; прежний ассортимент не доказан, фактический 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:48:57.242Z",
+      "checkedBy": "reverse-worker-mvi848jl-sda0v3if9j",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-ostrov-utila-v-gondurase",
@@ -335,5 +345,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:48:51.612Z"
+  "updatedAt": "2026-10-21T14:48:57.242Z"
 }

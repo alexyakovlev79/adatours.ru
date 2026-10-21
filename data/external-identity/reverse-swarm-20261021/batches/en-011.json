@@ -212,7 +212,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: category, HTTP 200, H1 «Palenque: Tours to the Maya Pyramids and Waterfalls», crawlReport adatours-com-crawl-002.json; snapshotFile отсутствует. Живой GET 21.10.2026 HTTP 200, H1 «Palenque: Tours to the Maya Pyramids and Waterfalls». module/productsjson по datasrc страницы HTTP 200, total=3. Состав EN: 4076 Fantastic Mexico Tour ; 3615 Viva Mexico; 2289 All Mexico.",
+        "Текущий main src/content/destinations/palenke.md, approved destination_mexico_palenke, «Паленке». Проверенный RU-каталог /mexico/place/palenque/tour/ HTTP 200, H1 «4 тура 2026-2027 в Паленке (Мексике) - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours»; всего 4 продуктов до пагинации."
+      ],
+      "note": "География и тип каталога сопоставимы, но состав различается: EN 3, RU 4. Равенство каталога не подтверждено; sameAs не назначен. Это не отрицание возможных пар отдельных программ.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:14:08.419Z",
+      "checkedBy": "reverse-worker-mvib4yya-sd3rdqazv2p",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/panama-city/excursions",
@@ -435,5 +445,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:14:04.186Z"
+  "updatedAt": "2026-10-21T16:14:08.419Z"
 }

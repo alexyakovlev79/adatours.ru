@@ -583,7 +583,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/794f9f46cdc383a20f98e276.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "VIP frozen inventory item 1299: title «HOTEL PARAISO DAS AGUAS BONITO», H1 identifying Hotel Paraíso das Águas in Bonito, hotel_candidate, HTTP 200.",
+        "Current RU site content schema has no Hotel collection; no confirmed product selling accommodation at this hotel."
+      ],
+      "note": "Это конкретный Hotel Paraíso das Águas в Бониту. На RU нет страницы гостиницы с услугой размещения, а страница направления Бониту не равна гостиничному предложению. Требуется редакционное решение: создать целевую Hotel-страницу либо использовать 410, без ложного 301.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:26:27.011Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/maksoud-plaza",
@@ -596,5 +606,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:25:44.871Z"
+  "updatedAt": "2026-10-21T15:26:27.011Z"
 }

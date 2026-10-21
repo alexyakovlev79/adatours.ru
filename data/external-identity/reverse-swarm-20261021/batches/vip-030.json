@@ -423,7 +423,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/aca1285b76b5ea286cbc8e6a.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory position 1291: hotel_candidate «BLUE TREE PREMIUM PAULISTA», H1 «BLUE TREE PREMIUM PAULISTA», snapshotHttp 200, independent lodging URL.",
+        "Current RU content schema includes tours, excursions and destinations but no Hotel collection or confirmed identical hotel offer."
+      ],
+      "note": "Страница «BLUE TREE PREMIUM PAULISTA» продавала отдельный гостиничный продукт. В RU отсутствует каноническая Hotel-страница с условиями бронирования; для 301 нужно решение о создании эквивалента либо прекращении старого адреса с 410.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:24:10.203Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/blue-tree-towers-analia-franco",
@@ -516,5 +526,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:24:05.839Z"
+  "updatedAt": "2026-10-21T15:24:10.203Z"
 }

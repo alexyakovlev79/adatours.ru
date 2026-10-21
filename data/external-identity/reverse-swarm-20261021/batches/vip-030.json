@@ -443,7 +443,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/e69b72f9b5853c5a04e96138.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory position 1292: hotel_candidate «Blue, Tree, Towers, Anália, Franco,», H1 «Blue Tree Towers Anália Franco», snapshotHttp 200, individual accommodation page.",
+        "RU Astro content.config.ts has no Hotel collection and no verified equivalent accommodation product."
+      ],
+      "note": "«Blue, Tree, Towers, Anália, Franco,» — отдельный гостиничный объект в старом каталоге. В действующем RU нет самостоятельного гостиничного продукта, поэтому для 301 нужен выбор: новая карточка с условиями либо 410. Перенаправление на город не подтверждено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:24:27.131Z",
+      "checkedBy": "reverse-worker-mvi90jn9-tgeaiviqmlj",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel/blue-tree-towers-recife",
@@ -526,5 +536,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:24:10.203Z"
+  "updatedAt": "2026-10-21T15:24:27.131Z"
 }

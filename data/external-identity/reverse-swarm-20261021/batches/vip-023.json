@@ -322,7 +322,17 @@
       "pageType": "technical_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/46c840ff3eff08bc0f2f2b23.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/articles/",
+      "evidence": [
+        "VIP frozen inventory 2026-10-20: HTTP 200, H1 and title both \"Блог\", Journal2 blog root with no specific article or filter in URL.",
+        "Ada Tours defines /articles/ as active general editorial articles index; both source and target are unfiltered entry points to travel editorial content, not individual posts."
+      ],
+      "note": "Кандидат 301 с общего блога на общий раздел статей. Состав исторических публикаций не подтвержден как идентичный; отдельных статей это решение не связывает и 301 не включает.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T15:06:54.936Z",
+      "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/?route=product%2Fmanufacturer",
@@ -465,5 +475,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:06:51.023Z"
+  "updatedAt": "2026-10-21T15:06:54.936Z"
 }

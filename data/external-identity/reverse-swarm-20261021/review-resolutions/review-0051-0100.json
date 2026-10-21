@@ -906,7 +906,49 @@
         "batchBlobSha": "8c1e6c447f94efb0ea6fb89c203883a2ffa7ad57",
         "reviewOrder": 63
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/el-salvador/place/juayua/",
+        "targetId": "destination_el_salvador_uajua",
+        "targetContentPath": "src/content/destinations/uajua.md",
+        "targetBlobSha": "eeb18777a8cd72b0c583a2cea2d10b0b6d52e9f4",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-007 #610.",
+          "Текущий main src/content/destinations/uajua.md, blob eeb18777a8cd72b0c583a2cea2d10b0b6d52e9f4: approved destination_el_salvador_uajua, Уайуа; прямой GET https://adatours.ru/el-salvador/place/juayua/ → HTTP 200, SHA-256 d0ef4d9d1136664f0fbbb7f858f3399fe9c5211d086d2d7261c8479f470e6cd9."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же места «Уайуа». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-63",
+          "url": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvadore/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvadore/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "destination_el_salvador_uajua",
+          "url": "https://adatours.ru/el-salvador/place/juayua/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/el-salvador/place/juayua/",
+          "sha256": "d0ef4d9d1136664f0fbbb7f858f3399fe9c5211d086d2d7261c8479f470e6cd9",
+          "bytes": 75886,
+          "title": "Уайуа в Эль-Сальвадоре: локации. Пока нет туров в это место. Путешествия 2026-2027 принимающего туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/el-salvador/place/juayua/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 64,
@@ -2001,9 +2043,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:18.523Z",
+  "updatedAt": "2026-10-21T16:32:20.204Z",
   "progress": {
-    "resolved": 12,
+    "resolved": 13,
     "total": 50
   }
 }

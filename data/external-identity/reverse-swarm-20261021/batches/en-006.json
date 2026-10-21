@@ -500,7 +500,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen EN inventory ca915fd80a4048df385ecd7375a1ee4fbf6ffe0f: pageType=category, snapshotHttp=200, title «Easter Island Tours | Moai Statues & Mysteries | Ada Tours», H1 «Easter Island: Tours to the Moai Statues and Ancient Mysteries». snapshotFile не указан; приватный снимок не просмотрен.",
+        "Текущий https://adatours.com/easter-island/packages: HTTP 200, canonical=https://adatours.com/easter-island/packages, H1 «Easter Island: Tours to the Moai Statues and Ancient Mysteries».",
+        "module/productsjson HTTP 200; datasrc=from=category&page=isPackageCategory&typeid=1&category_id=296&excludes%5B0%5D=excursions&excludes%5B1%5D=countries&excludes%5B2%5D=cities&excludes%5B3%5D=excursions&excludes%5B4%5D=themes. Первый ответ API: total=3, products=3. Примеры ID/названий: 990 «Chile  The Best: Santiago – Atacama Desert - Torres del Paine - Easter Island»; 4023 «Chile: The mysteries of Men»; 1510 «Chile: Colorful Santiago and the Enigmatic Easter Island».",
+        "https://adatours.ru/chile/place/easter-island/tour/ — HTTP 200, canonical совпадает, H1 «7 туров 2026-2027 на острове Пасхи (Чили)…». Дополнительно optional-tours/ HTTP 200: 1 необязательный заезд."
+      ],
+      "note": "EN Packages содержит три тура, основной RU каталог — семь. Подмена основного каталога optional-tours или страницей места не доказывает совпадение фильтров и состава; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:47:00.776Z",
+      "checkedBy": "reverse-worker-mvi9y7b5-1eou2d2dr8i",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/ecuador-en/excursions",
@@ -573,5 +585,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:46:53.240Z"
+  "updatedAt": "2026-10-21T15:47:00.776Z"
 }

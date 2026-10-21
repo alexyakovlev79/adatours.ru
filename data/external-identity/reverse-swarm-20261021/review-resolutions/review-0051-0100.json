@@ -2191,7 +2191,72 @@
         "batchBlobSha": "3587016428615b36cdf38027ecdfcf330253a796",
         "reviewOrder": 80
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "recommendedHttpStatus": 301,
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/multi-country/tour/brazil-argentina-group-tour/",
+        "targetId": "tour_source_braziliya_argentina_gruppovoj_tur",
+        "comparedId": "tour_source_braziliya_argentina_gruppovoj_tur",
+        "targetContentPath": "src/content/tours/braziliya-argentina-gruppovoj-tur.md",
+        "targetBlobSha": "a2c0a5e928287e7b81b772b3ac478ea0022e102c",
+        "confidence": 0.98,
+        "accepted": true,
+        "basis": "same_route",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:34:39.702Z",
+        "evidence": [
+          "Прямой GET https://vipdeluxetravel.ru/braziliya-argentina-gruppovoj-tur → HTTP 200, title «Бразилия-Аргентина:групповой тур», 79610 байт, SHA-256 699c79eb6988a8c4cbded5629e561cc051e7b679d40f9ba9d889e3f051fe40e4. Полный HTML прочитан; сохранены заголовки дней.",
+          "Текущий main src/content/tours/braziliya-argentina-gruppovoj-tur.md, blob a2c0a5e928287e7b81b772b3ac478ea0022e102c: published, tour_source_braziliya_argentina_gruppovoj_tur; RU цель https://adatours.ru/multi-country/tour/brazil-argentina-group-tour/ → HTTP 200, SHA-256 ac648bb108a297310f74827386f877671be3054f0c95ffeb3f6d65d58ac627a7.",
+          "14 дней: Рио (дни 1–3), Манаус (4–5), Сальвадор/Прайя-ду-Форте (6–8), Игуасу (9–10), Буэнос-Айрес (11–14). Совпадает групповой формат."
+        ],
+        "note": "Принято при пороге вероятности 70% как цель будущего 301. Это не sameAs и не гарантия сохранения исторических дат, цен, отелей или включенных перелетов. Редирект сейчас не включен.",
+        "liveSource": {
+          "key": "source-80",
+          "url": "https://vipdeluxetravel.ru/braziliya-argentina-gruppovoj-tur",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/braziliya-argentina-gruppovoj-tur",
+          "sha256": "699c79eb6988a8c4cbded5629e561cc051e7b679d40f9ba9d889e3f051fe40e4",
+          "bytes": 79610,
+          "title": "Бразилия-Аргентина:групповой тур",
+          "canonical": [
+            "<link href=\"https://vipdeluxetravel.ru/braziliya-argentina-gruppovoj-tur\" rel=\"canonical\" />"
+          ],
+          "dayHeadings": [
+            "День 1. Рио-де-Жанейро",
+            "День 2. Рио-де-Жанейро",
+            "День 3. Рио-де-Жанейро",
+            "День 4. Рио-де-Жанейро — Манаус",
+            "День 5. Манаус",
+            "День 6. Манаус — Сальвадор",
+            "День 7. Сальвадор",
+            "День 8. Сальвадор — Прайя-ду-Форте",
+            "День 9. Сальвадор — Фоз-ду-Игуасу",
+            "День 10. Фоз-ду-Игуасу",
+            "День 11. Фоз-ду-Игуасу — Буэнос-Айрес",
+            "День 12. Буэнос-Айрес",
+            "День 13. Буэнос-Айрес",
+            "День 14. Буэнос-Айрес"
+          ]
+        },
+        "liveTarget": {
+          "key": "tour_source_braziliya_argentina_gruppovoj_tur",
+          "url": "https://adatours.ru/multi-country/tour/brazil-argentina-group-tour/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/multi-country/tour/brazil-argentina-group-tour/",
+          "sha256": "ac648bb108a297310f74827386f877671be3054f0c95ffeb3f6d65d58ac627a7",
+          "bytes": 164699,
+          "title": "Тур Бразилия-Аргентина:групповой тур по цене от $4 659 в 2026-2027 от туроператора с русскоговорящими гидами | Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/multi-country/tour/brazil-argentina-group-tour/\">"
+          ],
+          "dayHeadings": [
+            "День посвящен отдыху и купанию.",
+            "Дни Основной маршрут"
+          ]
+        }
+      }
     },
     {
       "reviewOrder": 81,
@@ -2866,9 +2931,9 @@
     "sourceComparison": "Verify original sourceBatchBlobSha/record evidence before importing; retain both original and decision",
     "productionApplied": false
   },
-  "updatedAt": "2026-10-21T16:35:23.927Z",
+  "updatedAt": "2026-10-21T16:35:25.496Z",
   "progress": {
-    "resolved": 29,
+    "resolved": 30,
     "total": 50
   }
 }

@@ -242,7 +242,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/69992a47948befe11d348d26.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory #532: snapshotHttp=200, pageType=excursion_listing, title=\"(empty)\", h1=\"(empty)\", snapshotFile=snapshots/69992a47948befe11d348d26.html. Это не свежий HTTP-запрос.",
+        "По действующему реестру Excursion нет активных destinationIds/relatedDestinationIds с id destination_nicaragua_san_huan_del_sur; страница места src/content/destinations/san-huan-del-sur.md при этом status approved."
+      ],
+      "note": "У Сан-Хуан-дель-Сур сейчас нет непустого RU каталога экскурсий. Нужен редакционный выбор: оставить географическую страницу вместо каталога или вернуть 410; редирект на пустой URL не готов.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:49:26.898Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-san-paulu-braziliya",
@@ -425,5 +435,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:48:53.784Z"
+  "updatedAt": "2026-10-21T14:49:26.898Z"
 }

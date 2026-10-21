@@ -522,7 +522,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/576be7bb93fd0a4d0bbc4757.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/el-salvador/place/santa-ana/tour/",
+      "evidence": [
+        "Frozen VIP #546: HTTP=200, pageType=tour_listing, title=\"(empty)\", H1=\"(empty)\", snapshotFile=snapshots/576be7bb93fd0a4d0bbc4757.html; не свежий запрос.",
+        "RU tourDestinationPath для destination_el_salvador_santa_ana ведет в /el-salvador/place/santa-ana/tour/. 1 действующий Tour tour_source_luchshee_v_salvadore, MD status published, в routeDestinationIds одновременно Santa Ana и destination_el_salvador_tasumal."
+      ],
+      "note": "Непустая RU туровая подборка сохраняет географию Санта-Ана/Тасумаль. Точный состав VIP /packages неизвестен, тождество ассортимента не утверждается; 301 не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:54:06.911Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-santa-anna-i-gorodishche-tasumal-v-salvadore/ekskursii",
@@ -565,5 +575,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:54:01.416Z"
+  "updatedAt": "2026-10-21T14:54:06.911Z"
 }

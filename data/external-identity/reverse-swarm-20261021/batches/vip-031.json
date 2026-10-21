@@ -62,7 +62,17 @@
       "pageType": "hotel_candidate",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/d518073804a6c05fcd8ef0b7.html",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Полностью прочитан и сверён по SHA-256 snapshots/d518073804a6c05fcd8ef0b7.html (7a84a3c00e9e0bd34bea1d6dade35292777c4e47abfe20a7e46aaea1c243d115); snapshot HTTP 200, H1 Hotel. Реальная страница 2 каталога производителя Hotel: позиции 16–30 из 108, от Pestana Bahia Lodge до Bandeirantes Rio, карточки размещения с ценами/бронированием.",
+        "Текущий main aafd4b2da015d669e477eedffb3c956ede417992: проверены src/pages и четыре каталога source-index (Country/Destination/Excursion/Tour). Отдельной коллекции Hotel и каталога бронирования 108 отелей с этой пагинацией нет. VIP, страна или тур имеют другой предмет/ассортимент."
+      ],
+      "note": "Подтверждённой RU-пары для hotel?page=2 нет. Это самостоятельная содержательная страница гостиничного каталога, не пустая страница и не доказанный технический дубль. 301 на главную/каталог туров не назначен; судьба старого гостиничного раздела отдельно.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:22:04.186Z",
+      "checkedBy": "reverse-worker-mvi9bqoq-z10jgc5usm7",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/hotel?page=3",
@@ -335,5 +345,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:21:29.559Z"
+  "updatedAt": "2026-10-21T15:22:04.186Z"
 }

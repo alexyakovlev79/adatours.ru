@@ -1,0 +1,1479 @@
+{
+  "version": 1,
+  "batchId": "review-0101-0150",
+  "scope": "external-identity-second-pass",
+  "ownerId": "review-third50-4b8019c83901",
+  "createdAt": "2026-10-21T16:28:25.212Z",
+  "decisionPolicy": "probability-70-v1",
+  "threshold": 0.7,
+  "sourceBranch": "feature/external-identity-swarm-20261021",
+  "order": "manifest batches in order, records inventoryPosition, status=review; compatible with review-0051-0100 frozen selection",
+  "range": {
+    "first": 101,
+    "last": 150,
+    "firstInventoryPosition": 799,
+    "lastInventoryPosition": 1264
+  },
+  "status": "in_progress",
+  "notes": [
+    "Explicit user request: third 50 review, accept most likely decision at >=70%; confidence retained as estimate. Original worker records are immutable. No production deploy, redirects activation, or sameAs publication.",
+    "First 100 review positions are excluded. Additive decision file is ownership reservation; first-pass batch leases are not changed."
+  ],
+  "records": [
+    {
+      "reviewOrder": 101,
+      "sourceUrl": "https://vipdeluxetravel.ru/brazilskaya-storona-vodopadov-iguasu",
+      "sourceBatch": "vip-014",
+      "sourceBatchBlobSha": "786d0b817986fd52ef27a19d71ec107950054156",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/brazilskaya-storona-vodopadov-iguasu",
+        "inventoryPosition": 799,
+        "title": "Бразильская сторона водопадов Игуасу",
+        "h1": "Бразильская сторона водопадов Игуасу",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/df447e62bfb573d7105cfca8.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Замороженная VIP-опись №799: «Бразильская сторона водопадов Игуасу», H1 тот же; исторический HTTP 200.",
+          "RU excursion_source_brazilskaya_storona_vodopadov_iguasu: approved, по названию Бразилия; программа включает экологический поезд и Верхний/Нижний маршруты, типичные для аргентинской стороны."
+        ],
+        "note": "Нужно редакционное решение перед 301: кандидат https://adatours.ru/brazil/foz-do-iguacu/iguazu-falls-brazilian-side-6-hours/ совпадает названием, но его маршрут описывает объекты аргентинской стороны. Содержание VIP HTML недоступно; без уточнения перенаправление не подтверждать.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:55:41.887Z",
+        "checkedBy": "reverse-worker-20261021-1743-f6219bf0a5a4",
+        "claimGeneration": 1,
+        "batchId": "vip-014",
+        "batchSha": "786d0b817986fd52ef27a19d71ec107950054156"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 102,
+      "sourceUrl": "https://vipdeluxetravel.ru/half-day-corcovado-tijuca-private-tour",
+      "sourceBatch": "vip-014",
+      "sourceBatchBlobSha": "786d0b817986fd52ef27a19d71ec107950054156",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/half-day-corcovado-tijuca-private-tour",
+        "inventoryPosition": 805,
+        "title": "Half day tour Corcovado & Tijuca Forest",
+        "h1": "Индивидуальный тур на Корковадо& Тижука",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/358be20b24925265be58fe0b.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen inventory №805: «Half day tour Corcovado & Tijuca Forest», H1 «Индивидуальный тур на Корковадо& Тижука»; отдельно подчеркнут индивидуальный формат.",
+          "RU excursion_source_half_day_corcovado_tijuca_private_tour: approved, полдня на Корковадо и в лес Тижука, но в публичном описании/условиях индивидуальный формат не подтвержден; также существуют отдельные групповые варианты."
+        ],
+        "note": "Кандидат https://adatours.ru/brazil/rio-de-janeiro/half-day-corcovado-tijuca-private-tour/ по ID и маршруту. Перед 301 нужно подтвердить индивидуальный формат и различие с групповыми программами 802/806; старый HTML не получен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:58:09.369Z",
+        "checkedBy": "reverse-worker-20261021-1743-f6219bf0a5a4",
+        "claimGeneration": 1,
+        "batchId": "vip-014",
+        "batchSha": "786d0b817986fd52ef27a19d71ec107950054156"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 103,
+      "sourceUrl": "https://vipdeluxetravel.ru/nezabyvaemoe-tango-shou",
+      "sourceBatch": "vip-014",
+      "sourceBatchBlobSha": "786d0b817986fd52ef27a19d71ec107950054156",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/nezabyvaemoe-tango-shou",
+        "inventoryPosition": 810,
+        "title": "Экскурсия \"Танго в Буэнос-Айресе\" с шоу и ужином",
+        "h1": "Незабываемое танго -шоу",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/9cfca1268fa28c18773bd7ef.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen inventory №810: title «Экскурсия “Танго в Буэнос-Айресе” с шоу и ужином», H1 «Незабываемое танго-шоу»; исторический HTTP 200. Конкретная площадка в доступных данных VIP не названа.",
+          "RU excursion_source_nezabyvaemoe_tango_shou: approved; конкретный клуб «Ла Вентана», ужин, частный трансфер и русскоязычный гид. В RU-каталоге есть другие танго-программы с ужином."
+        ],
+        "note": "Нужна дополнительная проверка старой площадки/условий: кандидат https://adatours.ru/argentina/buenos-aires/la-ventana-tango-dinner-show/; общий заголовок VIP не доказывает, что это именно «Ла Вентана». Не подтверждать 301 по одному названию.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:59:50.997Z",
+        "checkedBy": "reverse-worker-20261021-1743-f6219bf0a5a4",
+        "claimGeneration": 1,
+        "batchId": "vip-014",
+        "batchSha": "786d0b817986fd52ef27a19d71ec107950054156"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 104,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours",
+        "inventoryPosition": 841,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/7bdb42657b88a592b430b04f.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/7bdb42657b88a592b430b04f.html: снимок показывает общую витрину VIP Deluxe Travel и предложения разных стран; frozen inventory finalUrl=https://vipdeluxetravel.ru/, H1 отсутствует.",
+          "RU сайт имеет /tours/, но состав и сортировка прежней категории «Лучшие из туров» не подтверждены снимком перенаправленного на главную URL."
+        ],
+        "note": "Требуется решение о назначении старой подборки «Лучшие из туров»: нельзя автоматически считать все RU-туры тем же ассортиментом или отправлять на главную.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:04:15.131Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 105,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/wine-itineraries",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/wine-itineraries",
+        "inventoryPosition": 842,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/85c5a39b536298a84f70b16b.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/85c5a39b536298a84f70b16b.html: по адресу «Винные маршруты» сохранена общая домашняя витрина; frozen finalUrl=https://vipdeluxetravel.ru/, нет отдельного винного каталога.",
+          "RU /interests/food-and-wine/ есть в тематической модели, но ассортимент старой «wine-itineraries» не подтвержден."
+        ],
+        "note": "Ручная проверка бывшего фильтра винных маршрутов и решение о 301/410; одного названия категории для редиректа недостаточно.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:05:51.216Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 106,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/health-spa",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/health-spa",
+        "inventoryPosition": 843,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/0b37e5c4976b1abc1a288d82.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/0b37e5c4976b1abc1a288d82.html: вместо ожидаемой категории «Здоровье и СПА» сохранена общая домашняя витрина; frozen finalUrl=https://vipdeluxetravel.ru/.",
+          "RU /interests/spa/ использует конкретный текущий тематический состав; старые SPA-программы и фильтр по снимку не восстановлены."
+        ],
+        "note": "Нельзя подтвердить соответствие старого SPA-каталога новому тематическому разделу: требуется проверка состава и решение 301 либо 410.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:06:07.488Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 107,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/hotels",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/hotels",
+        "inventoryPosition": 844,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/cd8c1b648731a7766f378d71.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/cd8c1b648731a7766f378d71.html: адрес гостиничной категории выдавал общую главную VIP, финальный URL https://vipdeluxetravel.ru/, индивидуальный список отелей не представлен.",
+          "На текущем RU сайте нет самостоятельной Hotel Content Collection и гостиничного каталога; /tours/ и /dmc/ не эквиваленты инвентаря отелей."
+        ],
+        "note": "Для старого раздела отелей нет подтвержденного аналога. Нужен выбор: специализированная будущая страница, отказ 410 или отдельное бизнес-решение; 301 не готов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:06:27.028Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 108,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/wedding-honeymoon",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/wedding-honeymoon",
+        "inventoryPosition": 845,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/f889472335d88b4920b870af.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/f889472335d88b4920b870af.html: URL категории «Свадьбы и медовый месяц» возвращает домашнюю витрину со смешанными предложениями, frozen finalUrl=https://vipdeluxetravel.ru/.",
+          "RU /interests/weddings-and-romance/ относится к свадебным и романтическим программам, но старый каталог и его состав в данном снимке не подтверждены."
+        ],
+        "note": "Сопоставление категорий требует сравнить реальные свадебные/медовые программы: пока нет доказанной полной пары для 301 или sameAs.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:06:45.584Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 109,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/specialoffers",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/specialoffers",
+        "inventoryPosition": 846,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/068f03acc9d25b784f5448b7.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/068f03acc9d25b784f5448b7.html: вместо самостоятельного каталога «Специальные предложения» отдается общая домашняя витрина; finalUrl главная vipdeluxetravel.ru.",
+          "RU /tours/ и коммерческие страницы не обещают идентичной коллекции акций, даты/скидки в прежних предложениях не подтверждены."
+        ],
+        "note": "Требуется адресная инвентаризация бывших спецпредложений либо решение о 410; направлять скидочные старые URL в общие туры без проверки неправильно.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:07:07.657Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 110,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/multi-country-holidays",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/multi-country-holidays",
+        "inventoryPosition": 847,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/e525660d28bf9be1e82a2097.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/e525660d28bf9be1e82a2097.html: бывшая категория «Туры в больше чем одну страну» отдает общую главную VIP и смешанный список предложений, frozen finalUrl=https://vipdeluxetravel.ru/.",
+          "RU /multi-country/ существует с активным каталогом multi-country, но состав и фильтры старой витрины неизвестны; нельзя приравнивать по URL-теме."
+        ],
+        "note": "Возможная RU-цель — тематический каталог многострановых путешествий, но перед 301 требуется подтвердить эквивалентность намерения и ассортимента.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:07:30.499Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 111,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/ecolodges-adventure",
+      "sourceBatch": "vip-015",
+      "sourceBatchBlobSha": "eac57d53e39107988fee1a3316b60b4c925c0c72",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/ecolodges-adventure",
+        "inventoryPosition": 848,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/f4ac01d7b9cd2b19e65cb895.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP ZIP snapshots/f4ac01d7b9cd2b19e65cb895.html: адрес «Эколоджи» (ecolodges-adventure) на момент обхода показывает общую домашнюю витрину вместо отдельной коллекции, frozen finalUrl=https://vipdeluxetravel.ru/.",
+          "В RU есть /interests/adventure/ и /interests/wildlife/, но категории природных маршрутов/эколоджей не являются автоматически одним и тем же ассортиментом или типом размещения."
+        ],
+        "note": "Нужен выбор релевантного действующего типа/ассортимента или 410; нельзя направить на произвольный приключенческий тур по сходству категории.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:07:50.549Z",
+        "checkedBy": "reverse-worker-ada20261021-cc81a6f9f073",
+        "claimGeneration": 1,
+        "batchId": "vip-015",
+        "batchSha": "eac57d53e39107988fee1a3316b60b4c925c0c72"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 112,
+      "sourceUrl": "https://vipdeluxetravel.ru/gvatemala-ru/ehkskursii-i-tury-na-ozero-isabal-v-gvatemale",
+      "sourceBatch": "vip-018",
+      "sourceBatchBlobSha": "5233d0a65058e43c23e694db6f3190e12b962a71",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/gvatemala-ru/ehkskursii-i-tury-na-ozero-isabal-v-gvatemale",
+        "inventoryPosition": 925,
+        "title": "Экскурсии и туры на озеро Исабаль в Гватемале",
+        "h1": "Лаго-Изабал",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/b60a9c9dd0e13d3c59ae1caa.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Сохраненная VIP-опись: title «Экскурсии и туры на озеро Исабаль в Гватемале», H1 «Лаго-Изабал», исторический snapshotHttp=200.",
+          "Действующий RU MD lago-izabal.md: id=destination_guatemala_lago_izabal, status=approved, описание преимущественно небольшой деревни на южном берегу озера Изабал, а не самого озера."
+        ],
+        "note": "Неопределенность референта: старый URL посвящен турам на озеро Исабаль, новый RU контент преимущественно о деревне у озера. Требуется редакторская проверка совпадения намерения, 301 пока не подтвержден.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:03:49.125Z",
+        "checkedBy": "reverse-worker-mvi86yku-dha0g5sqqgq",
+        "claimGeneration": 1,
+        "batchId": "vip-018",
+        "batchSha": "5233d0a65058e43c23e694db6f3190e12b962a71"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 113,
+      "sourceUrl": "https://vipdeluxetravel.ru/gvatemala-ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale",
+      "sourceBatch": "vip-018",
+      "sourceBatchBlobSha": "5233d0a65058e43c23e694db6f3190e12b962a71",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/gvatemala-ru/ehkskursii-i-tury-v-gorod-uehuehtenango-v-gvatemale",
+        "inventoryPosition": 930,
+        "title": "Экскурсии и туры в город Уэуэтенанго и на руины Закулеу в Гватемале",
+        "h1": "Уэуэтенанго",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/4ebde9d18d7a3186f54df9e4.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Старая VIP-опись: title «Экскурсии и туры в город Уэуэтенанго и на руины Закулеу в Гватемале», H1 «Уэуэтенанго», snapshotHttp=200.",
+          "RU MD src/content/destinations/ueuetenango.md (approved) описывает город и окрестности, но нет упоминания руин Закулеу, прямо заявленных в старом URL."
+        ],
+        "note": "Существенная часть намерения старой страницы — посещение руин Закулеу вблизи Уэуэтенанго — не подтверждена действующим RU описанием города. Нужно решить, дополнять страницу или предложить отдельную цель; до проверки 301 не утверждать.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:05:06.163Z",
+        "checkedBy": "reverse-worker-mvi86yku-dha0g5sqqgq",
+        "claimGeneration": 1,
+        "batchId": "vip-018",
+        "batchSha": "5233d0a65058e43c23e694db6f3190e12b962a71"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 114,
+      "sourceUrl": "https://vipdeluxetravel.ru/kolumbiya-ru/ehkskursii-i-tury-na-ostrov-san-andres-i-providensiya-v-kolumbii",
+      "sourceBatch": "vip-019",
+      "sourceBatchBlobSha": "be315b6a61e9480fc9ebeff985019ebc16096119",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/kolumbiya-ru/ehkskursii-i-tury-na-ostrov-san-andres-i-providensiya-v-kolumbii",
+        "inventoryPosition": 950,
+        "title": "Экскурсии и туры на остров Сан-Андрес-и-Провиденсия в Колумбии",
+        "h1": "Сан-Андрес",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/4b2aff7a3247b9971c1e6199.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP source title охватывает «остров Сан-Андрес-и-Провиденсия», H1 «Сан-Андрес», historical snapshotHttp 200. Полный приватный HTML-снимок недоступен.",
+          "RU src/content/destinations/san-andres.md: active destination_colombia_san_andres, /colombia/place/san-andres/, текст и summary только об острове Сан-Андрес; Провиденсия встречается лишь в техническом sourceUrl, не в публичном описании."
+        ],
+        "note": "Не подтверждено равенство охвата: внешний title включает Провиденсию, а доступная RU-страница описывает только Сан-Андрес. Нужна редакторская сверка HTML источника/решение о единой странице или отдельной цели; 301 пока нельзя рекомендовать.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:55:21.220Z",
+        "checkedBy": "reverse-worker-mvi86468-ji4c05865r",
+        "claimGeneration": 1,
+        "batchId": "vip-019",
+        "batchSha": "be315b6a61e9480fc9ebeff985019ebc16096119"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 115,
+      "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/packages",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/the-best-of-tours/packages",
+        "inventoryPosition": 1050,
+        "title": "VIP Deluxe Travel",
+        "h1": "",
+        "pageType": "tour_listing",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/854643e05d880a5f539e9393.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Сохраненная опись VIP #1050: sourceUrl https://vipdeluxetravel.ru/the-best-of-tours/packages, title «VIP Deluxe Travel», pageType=tour_listing, historical HTTP 200.",
+          "Путь /the-best-of-tours/packages и pageType=tour_listing в замороженной описи; title «VIP Deluxe Travel» не раскрывает товары и состав.",
+          "RU /tours/ и /vip/ существуют как разные подборки с разным составом."
+        ],
+        "note": "Пустой либо общий listing не позволяет подтвердить идентичность отбора «лучшие туры» с /tours/ или /vip/. Требуется восстановление состава старого каталога либо отдельное решение о целевом URL/410; 301 пока нельзя готовить.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:54:48.269Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 116,
+      "sourceUrl": "https://vipdeluxetravel.ru/politika-konfidentsialnosti",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/politika-konfidentsialnosti",
+        "inventoryPosition": 1052,
+        "title": "Политика конфиденциальности",
+        "h1": "Политика конфиденциальности",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/090b5805c32098c923931e5c.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Сохраненная опись VIP #1052: sourceUrl https://vipdeluxetravel.ru/politika-konfidentsialnosti, title «Политика конфиденциальности», pageType=unclassified, historical HTTP 200.",
+          "Старый URL обозначен в описи как «Политика конфиденциальности»; полный правовой текст исходного HTML из приватного ZIP в этом сеансе недоступен.",
+          "RU /privacy/ существует; его текст относится к обработке данных ADA TOURS 2007 - OPERADORA DE TURISMO LTDA и cookie adatours.ru."
+        ],
+        "note": "Похожее название юридической страницы не подтверждает совпадение сторон, юрисдикции и условий обработки персональных данных. Нужна юридическая сверка исходного текста до возможного 301; RU-адрес намеренно не назначен.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:54:54.394Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 117,
+      "sourceUrl": "https://vipdeluxetravel.ru/pravila-i-usloviya",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/pravila-i-usloviya",
+        "inventoryPosition": 1053,
+        "title": "Правила и условия",
+        "h1": "Правила и условия ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ",
+        "pageType": "unclassified",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/78a395b031911919e4da57a8.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Сохраненная опись VIP #1053: sourceUrl https://vipdeluxetravel.ru/pravila-i-usloviya, title «Правила и условия», pageType=unclassified, historical HTTP 200.",
+          "Старый URL «Правила и условия» в VIP-описи, исходный полный текст не был доступен для содержательной сверки.",
+          "RU /dmc/terms/ описывает B2B-договоры с турагентствами, процентное вознаграждение и коммерческие условия; это не универсальные потребительские условия."
+        ],
+        "note": "Не перенаправлять общие правила старого сайта на B2B-условия DMC без подтверждения текста и аудитории. Нужен самостоятельный выбор актуальной юридической RU-цели либо сохранение 404/410.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:55:08.185Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 118,
+      "sourceUrl": "https://vipdeluxetravel.ru/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu",
+        "inventoryPosition": 1056,
+        "title": "",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 404,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1056: source URL https://vipdeluxetravel.ru/priklyucheniya-na-novyj-god-v-rio-i-na-vodopadakh-iguasu, title «(empty)», pageType=unclassified, historical snapshotHttp=404.",
+          "В архивной описи HTTP 404, заголовок пуст, snapshotFile отсутствует. В RU каталоге существует tour_source_priklyucheniya_na_novyj_god_v_rio_i_na_vodopadakh_iguasu, тур на 7 дней, URL /brazil/tour/rio-iguazu-new-year-7-days/."
+        ],
+        "note": "Тема Нового года в Рио и Игуасу похожа, но исходный маршрут, длительность и услуги не представлены при 404. Нельзя утверждать совпадение прежнего турпродукта. Нужно редакционное решение о 301 или сохранении 404/410.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:56:21.022Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 119,
+      "sourceUrl": "https://vipdeluxetravel.ru/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej",
+        "inventoryPosition": 1057,
+        "title": "",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 404,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1057: source URL https://vipdeluxetravel.ru/mechty-sbyvayutsya-tur-v-braziliyu-i-argentinu-na-9-dnej, title «(empty)», pageType=unclassified, historical snapshotHttp=404.",
+          "В архиве HTTP 404 без title и снимка; slug обещает Бразилию, Аргентину и 9 дней. В RU существует tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej, маршрут Рио—Игуасу—Буэнос-Айрес 9 дней, URL /multi-country/tour/brazil-argentina-rio-iguazu-buenos-aires-9-days/."
+        ],
+        "note": "Есть сильная гипотеза соответствия, но источник HTTP 404 и состав программы/услуг старого VIP-тура не проверены. Пока REVIEW, без назначенного RU-адреса для 301.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:56:27.654Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 120,
+      "sourceUrl": "https://vipdeluxetravel.ru/package",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package",
+        "inventoryPosition": 1058,
+        "title": "Package",
+        "h1": "Package",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/0cf0259da75f85e6ea4b45a4.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1058: source URL https://vipdeluxetravel.ru/package, title «Package», pageType=tour_candidate, historical snapshotHttp=200.",
+          "Исторический HTTP 200, title «Package» и pageType=tour_candidate, но страница /package не идентифицирует конкретную программу; RU имеет отдельные Tour и каталог /tours/."
+        ],
+        "note": "Без содержимого старого /package невозможно отличить конкретный товар от CMS-заглушки или общего списка. Не выбирать произвольный тур и не переводить на главную; требуется ручное решение.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:56:34.362Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 121,
+      "sourceUrl": "https://vipdeluxetravel.ru/karnaval-v-rio-de-zhanejro",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/karnaval-v-rio-de-zhanejro",
+        "inventoryPosition": 1059,
+        "title": "",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 404,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1059: source URL https://vipdeluxetravel.ru/karnaval-v-rio-de-zhanejro, title «(empty)», pageType=unclassified, historical snapshotHttp=404.",
+          "Архивный HTTP 404, title и HTML-снимок отсутствуют; slug указывает только на карнавал в Рио. В RU каталоге имеется несколько различных карнавальных программ."
+        ],
+        "note": "Нет фактов для выбора единственного турпродукта: длительность, дата и маршрут старой страницы неизвестны. Нужна содержательная сверка либо решение оставить 404/410.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:56:39.147Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 122,
+      "sourceUrl": "https://vipdeluxetravel.ru/tur-v-braziliyu-argentinu-i-chili-na-novyj-god",
+      "sourceBatch": "vip-022",
+      "sourceBatchBlobSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/tur-v-braziliyu-argentinu-i-chili-na-novyj-god",
+        "inventoryPosition": 1060,
+        "title": "",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 404,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1060: source URL https://vipdeluxetravel.ru/tur-v-braziliyu-argentinu-i-chili-na-novyj-god, title «(empty)», pageType=unclassified, historical snapshotHttp=404.",
+          "Архивный HTTP 404 и отсутствие title/snapshotFile; slug указывает на Новый год в Бразилии, Аргентине и Чили. RU Tour tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god: 2027, 10 дней, URL /multi-country/tour/brazil-argentina-chile-new-year-2027-10-days/."
+        ],
+        "note": "Есть кандидат по странам и празднику, но год, длительность и программа исходного URL не установлены. Нельзя уверенно приравнять его к программе RU 2027 года и ставить 301 без дополнительных материалов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:56:43.122Z",
+        "checkedBy": "reverse-worker-mvi7v6kj-kkww7q32hs",
+        "claimGeneration": 1,
+        "batchId": "vip-022",
+        "batchSha": "8f627afb71ea7bef2eb3b87912b0232f5672d1d4"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 123,
+      "sourceUrl": "https://vipdeluxetravel.ru/tur-v-braziliyu-na-kofejnye-fazendy",
+      "sourceBatch": "vip-023",
+      "sourceBatchBlobSha": "507ba58f292005b87f8e549256c0037c05cd5e63",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/tur-v-braziliyu-na-kofejnye-fazendy",
+        "inventoryPosition": 1061,
+        "title": "",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 404,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen crawl 2026-10-20: HTTP 404, title/H1 empty; no captured page subject.",
+          "RU source-index: tour_source_tur_v_braziliyu_na_kofejnye_fazendy is active, 8 days, Rio–Iguazu–coffee fazendas; historical donor path matches VIP path."
+        ],
+        "note": "VIP-страница отдала 404; совпадение исторического пути с RU sourceUrl без содержимого VIP не позволяет подтвердить готовность 301. Редактору сверить прежний продукт либо принять решение по 410.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:58:28.096Z",
+        "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+        "claimGeneration": 1,
+        "batchId": "vip-023",
+        "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 124,
+      "sourceUrl": "https://vipdeluxetravel.ru/tur-v-chili-luchshee-v-strane-i-gastronomiya-gurme",
+      "sourceBatch": "vip-023",
+      "sourceBatchBlobSha": "507ba58f292005b87f8e549256c0037c05cd5e63",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/tur-v-chili-luchshee-v-strane-i-gastronomiya-gurme",
+        "inventoryPosition": 1062,
+        "title": "",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 404,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen crawl 2026-10-20: HTTP 404, title/H1 empty.",
+          "RU active Tour tour_source_tur_v_chili_luchshee_v_strane_i_gastronomiya_gurme: 7 days, Santiago–Atacama–Patagonia; historical donor URL path coincides."
+        ],
+        "note": "В исходном VIP-обходе 404 и нет страницы для сравнения с текущим туром на 7 дней. Кандидат есть по старому пути, но прямое 301 без доказательства содержания пока преждевременно.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:58:31.494Z",
+        "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+        "claimGeneration": 1,
+        "batchId": "vip-023",
+        "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 125,
+      "sourceUrl": "https://vipdeluxetravel.ru/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej",
+      "sourceBatch": "vip-023",
+      "sourceBatchBlobSha": "507ba58f292005b87f8e549256c0037c05cd5e63",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej",
+        "inventoryPosition": 1063,
+        "title": "",
+        "h1": "",
+        "pageType": "unclassified",
+        "snapshotHttp": 404,
+        "snapshotFile": "",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen crawl 2026-10-20: HTTP 404; no page title or H1.",
+          "Current RU tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej is approved: 11 days, Buenos Aires–El Calafate–Ushuaia–Iguazu, source-path match only."
+        ],
+        "note": "Старая VIP-страница недоступна (404) и содержимое не сохранено в доступном обзоре. Одного совпадения URL с источником RU недостаточно, чтобы считать прежние услуги доказанно равными.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:58:35.399Z",
+        "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+        "claimGeneration": 1,
+        "batchId": "vip-023",
+        "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 126,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/belosnezhnye-zhemchuzhiny-brazilii",
+      "sourceBatch": "vip-023",
+      "sourceBatchBlobSha": "507ba58f292005b87f8e549256c0037c05cd5e63",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/belosnezhnye-zhemchuzhiny-brazilii",
+        "inventoryPosition": 1081,
+        "title": "Пляжный тур в Бразилию на 10 дней",
+        "h1": "Белоснежные жемчужины Бразилии",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/91d789f2e965dc5ab2751813.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen crawl 2026-10-20: HTTP 200, H1 \"Белоснежные жемчужины Бразилии\", page title \"Пляжный тур в Бразилию на 10 дней\"; source canonical /belosnezhnye-zhemchuzhiny-brazilii.",
+          "Exact RU identity tour_source_belosnezhnye_zhemchuzhiny_brazilii exists but its current MD status is archived (10-day Recife–Porto de Galinhas–Fernando de Noronha itinerary); archived page has noindex, not an active 301 target."
+        ],
+        "note": "Точный исходный тур в Ada Tours архивирован. Выбирать архивный URL как готовый 301 нельзя; требуется решение: подтвержденная активная замена или 410 на старом адресе.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:08:32.422Z",
+        "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+        "claimGeneration": 1,
+        "batchId": "vip-023",
+        "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 127,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/chili-i-argentina-vip",
+      "sourceBatch": "vip-023",
+      "sourceBatchBlobSha": "507ba58f292005b87f8e549256c0037c05cd5e63",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/chili-i-argentina-vip",
+        "inventoryPosition": 1085,
+        "title": "Люксовый отдых в Чили и Аргентине с островом Пасхи | 17 дней",
+        "h1": "Гранд тур по Чили и Аргентине",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/9e64b5ee5c9cc4c4a21fb90b.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP source crawl 2026-10-20: HTTP 200, title explicitly \"Люксовый отдых в Чили и Аргентине с островом Пасхи | 17 дней\", H1 \"Гранд тур по Чили и Аргентине\".",
+          "Ada Tours published candidate tour_source_chili_i_argentina_vip is 26 days and its itinerary covers Chile and Argentina with Santiago, Torres del Paine, El Calafate, Ushuaia, Bariloche and additional places; a matching 17-day Easter-Island programme is not demonstrated."
+        ],
+        "note": "Существенное расхождение: в VIP 17 дней и остров Пасхи, в RU 26 дней, иной охват программы. Требуется ручное решение по реальной замене или 410; 301 готовым считать нельзя.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:09:51.825Z",
+        "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+        "claimGeneration": 1,
+        "batchId": "vip-023",
+        "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 128,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/ot-venesuely-do-kolumbii",
+      "sourceBatch": "vip-023",
+      "sourceBatchBlobSha": "507ba58f292005b87f8e549256c0037c05cd5e63",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/ot-venesuely-do-kolumbii",
+        "inventoryPosition": 1088,
+        "title": "Тур в Венесуэлу и Колумбию на 12 дней (групповой с русским гидом)",
+        "h1": "От Венесуэлы до Колумбии",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/94646598cdbe95e77a8e5dd0.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen inventory 2026-10-20: HTTP 200, H1 \"От Венесуэлы до Колумбии\", title advertises a 12-day group tour with Russian guide.",
+          "Ada Tours exact Tour tour_source_ot_venesuely_do_kolumbii has same 12-day Venezuela–Colombia programme but is currently archived, containing 2025 departures; archived URL is noindex, not an active 301 destination."
+        ],
+        "note": "Исходный продукт найден, но его RU-страница архивирована из-за прошедших дат 2025 года. Нужна подтвержденная действующая замена или решение 410, архивный URL не назначен для 301.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:10:26.059Z",
+        "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+        "claimGeneration": 1,
+        "batchId": "vip-023",
+        "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 129,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/soedinennye-shtaty-venesuely",
+      "sourceBatch": "vip-023",
+      "sourceBatchBlobSha": "507ba58f292005b87f8e549256c0037c05cd5e63",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/soedinennye-shtaty-venesuely",
+        "inventoryPosition": 1090,
+        "title": "Соединенные Штаты Венесуэлы",
+        "h1": "Соединенные Штаты Венесуэлы",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/0f0d21e5fd7569eea28769f3.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP source crawl 2026-10-20: HTTP 200, title and H1 both \"Соединенные Штаты Венесуэлы\", canonical /soedinennye-shtaty-venesuely.",
+          "Ada Tours same product Tour tour_source_soedinennye_shtaty_venesuely, 12 days, Margarita–Orinoco Delta–Canaima–Llanos, has MD status archived and confirmed 2025 departures."
+        ],
+        "note": "Точное название и маршрут существуют в RU, но тур архивирован с датами 2025 года. Для старого VIP URL требуется решение по активной замене или 410; архивный RU URL не является готовой целью 301.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:10:56.067Z",
+        "checkedBy": "reverse-worker-mvi8ec97-qnsoy8j4sr",
+        "claimGeneration": 1,
+        "batchId": "vip-023",
+        "batchSha": "507ba58f292005b87f8e549256c0037c05cd5e63"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 130,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe",
+      "sourceBatch": "vip-024",
+      "sourceBatchBlobSha": "7c762c84434809c50d6a259bc8e35a17f2c00834",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/parad-chempionov-karnavala-i-otdykh-na-tropicheskom-poberezhe",
+        "inventoryPosition": 1091,
+        "title": "Индивидуальный тур в Бразилию на Парад Чемпионов",
+        "h1": "Тропический Парад Чемпионов",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/7411f9526afcbe95d4fd52b2.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP snapshot metadata: H1 «Тропический Парад Чемпионов», title «Индивидуальный тур в Бразилию на Парад Чемпионов».",
+          "RU MD tour_source_parad_chempionov_karnavala_i_otdykh_na_tropicheskom_poberezhe, status approved, 10 дней 12–21.02.2027, Рио/Бузиос, format «Групповой»; URL /brazil/tour/brazil-champions-parade-tropical-coast/."
+        ],
+        "note": "Внешний title обещает индивидуальный тур, действующий RU продукт явно групповой; для 301 нужно согласовать формат/идентичность программы по исходному снимку. Один slug и парад недостаточны.",
+        "relation": null,
+        "checkedAt": "2026-10-21T14:49:48.336Z",
+        "checkedBy": "reverse-worker-mvi83xgd-3cwif9g4q3",
+        "claimGeneration": 1,
+        "batchId": "vip-024",
+        "batchSha": "7c762c84434809c50d6a259bc8e35a17f2c00834"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 131,
+      "sourceUrl": "https://vipdeluxetravel.ru/excursion/citi-tur-po-la-pasu-pokoj-ocharovaniya",
+      "sourceBatch": "vip-024",
+      "sourceBatchBlobSha": "7c762c84434809c50d6a259bc8e35a17f2c00834",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/excursion/citi-tur-po-la-pasu-pokoj-ocharovaniya",
+        "inventoryPosition": 1109,
+        "title": "Cити тур по Ла Пасу: Покой Очарования",
+        "h1": "Cити тур по Ла Пасу: Покой Очарования",
+        "pageType": "excursion_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/e18578b26b33ed78507ac353.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Архив и текущая VIP-страница прочитаны: индивидуальная программа Ла-Паса на 4 часа включает улицу Вышивальщиц, Рынок ведьм, Сан-Франциско, Мурильо, Килли-Килли, канатную дорогу, обязательную Долину Луны и трансфер отель–аэропорт. Гончарная мастерская — дополнительно.",
+          "Подтвержден frozen snapshots/e18578b26b33ed78507ac353.html, SHA-256 711a92938fc4903f094cc90a5be9cee4fc4de040905eeebf8db9560d6bab9559; snapshotHttp 200, тип excursion_candidate; текущий GET также 200.",
+          "Два действующих RU-кандидата открыты HTTP 200 с собственными canonical: excursion_source_la_pas_siti_tur (/bolivia/la-paz/la-paz-city-tour/) охватывает город/канатную дорогу за 4–5 часов, но без Долины Луны; excursion_la_paz_city_moon_valley_four_hours (/bolivia/la-paz/la-paz-city-moon-valley-four-hours/) включает город и Долину Луны, но не подтверждает остальные услуги VIP. Тексты обоих approved MD main e21d06ae прочитаны."
+        ],
+        "note": "Нужно выбрать целевую программу редакционно: ближайшая legacy-карточка лишена Долины Луны, а альтернативная четырехчасовая не подтверждает полный маршрут/трансфер. Автоматический 301 пока не готов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:22:19.131Z",
+        "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+        "claimGeneration": 2,
+        "batchId": "vip-024",
+        "batchSha": "7c762c84434809c50d6a259bc8e35a17f2c00834"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 132,
+      "sourceUrl": "https://vipdeluxetravel.ru/excursion/half-day-corcovado-tijuca-private-tour",
+      "sourceBatch": "vip-024",
+      "sourceBatchBlobSha": "7c762c84434809c50d6a259bc8e35a17f2c00834",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/excursion/half-day-corcovado-tijuca-private-tour",
+        "inventoryPosition": 1116,
+        "title": "Half day tour Corcovado & Tijuca Forest",
+        "h1": "Индивидуальный тур на Корковадо& Тижука",
+        "pageType": "excursion_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/2c098d85879969069535cf4a.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Архив и текущий VIP HTTP 200: H1 «Индивидуальный тур на Корковадо& Тижука», код 110; по тексту джип из отеля, Китайская смотровая, водопад Monkeys, тропы Тижуки и пляж Пепино с дельтапланами. Подъем к статуе Христа в программе не указан.",
+          "Frozen snapshots/2c098d85879969069535cf4a.html, SHA-256 de031d9dba4692bbc57bb6f4383ee25517e9132751535cad33a52ff6735e9213; snapshotHttp 200, pageType excursion_candidate, title «Half day tour Corcovado & Tijuca Forest». Архивный HTML извлечен и контрольная сумма подтверждена.",
+          "Кандидат /brazil/rio-de-janeiro/half-day-corcovado-tijuca-private-tour/ открыт HTTP 200, canonical точный; approved excursion_source_half_day_corcovado_tijuca_private_tour, main e21d06ae. Текущий RU-текст обещает посещение Корковадо и статуи Христа, а Китайская смотровая/Monkeys/Пепино не названы; другие RU-экскурсии по Корковадо тоже не воспроизводят описанный VIP-маршрут."
+        ],
+        "note": "Название и цена $188 совпадают с близким RU-кандидатом, но программа содержательно различается: VIP описывает лесной джип-маршрут, RU — в том числе статую Христа. Требуется редакционное решение; 301 не готов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T16:23:33.851Z",
+        "checkedBy": "reverse-worker-mvib5fjy-rs5rsfvrep",
+        "claimGeneration": 2,
+        "batchId": "vip-024",
+        "batchSha": "7c762c84434809c50d6a259bc8e35a17f2c00834"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 133,
+      "sourceUrl": "https://vipdeluxetravel.ru/hotel",
+      "sourceBatch": "vip-025",
+      "sourceBatchBlobSha": "a2d56b207c2c3affdfcde3438d05326656725227",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/hotel",
+        "inventoryPosition": 1124,
+        "title": "Hotel",
+        "h1": "Hotel",
+        "pageType": "hotel_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/8a376bf2087a78ee6353ac53.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "HTML-снимок VIP snapshots/8a376bf2087a78ee6353ac53.html содержит отельные карточки Agua Marinha Hotel, Beach Class Suites, Blue Tree Premium и цены; это реальный каталог отелей.",
+          "Существующая RU-архитектура Ada Tours не содержит Hotel Content Collection/каталога прямого бронирования отелей."
+        ],
+        "note": "Нужен отдельный выбор судьбы отельного каталога: создать релевантную RU-страницу/предложение либо вернуть 410. Нельзя направлять гостиничные товары на каталог туров или главную.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:02:59.931Z",
+        "checkedBy": "reverse-worker-mvi8e1qn-pxkq8k7yg0e",
+        "claimGeneration": 1,
+        "batchId": "vip-025",
+        "batchSha": "a2d56b207c2c3affdfcde3438d05326656725227"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 134,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/ekzoticheskij-koktejl-na-parad-chempionov-karnavala-v-brazilii?page=2",
+      "sourceBatch": "vip-025",
+      "sourceBatchBlobSha": "a2d56b207c2c3affdfcde3438d05326656725227",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/ekzoticheskij-koktejl-na-parad-chempionov-karnavala-v-brazilii?page=2",
+        "inventoryPosition": 1125,
+        "title": "Тур в Бразилию на Карнавал: Рио | Водопады Игуасу и Амазония",
+        "h1": "Экзотический коктейль на Парад Чемпионов Карнавала в Бразилии",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/84c6761c966b09138f602732.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP-снимок 84c6761c966b09138f602732.html содержит самостоятельную 11-дневную карнавальную программу Рио — Игуасу — Амазония — Бузиос.",
+          "В центральном архиве Ada Tours объект tour_source_ekzoticheskij_koktejl_na_parad_chempionov_karnavala_v_brazilii имеет archived/expired_dates, даты 07–17.03.2025, hadPage=false."
+        ],
+        "note": "Точного активного RU-тура данной 11-дневной карнавальной программы нет: канонический ID архивирован как тур с прошедшими датами и без опубликованной страницы. Нужен выбор релевантного действующего маршрута либо решения о 410; не вести на архив или главную.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:05:35.839Z",
+        "checkedBy": "reverse-worker-mvi8e1qn-pxkq8k7yg0e",
+        "claimGeneration": 1,
+        "batchId": "vip-025",
+        "batchSha": "a2d56b207c2c3affdfcde3438d05326656725227"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 135,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/romanticheskaya-braziliya?page=3",
+      "sourceBatch": "vip-025",
+      "sourceBatchBlobSha": "a2d56b207c2c3affdfcde3438d05326656725227",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/romanticheskaya-braziliya?page=3",
+        "inventoryPosition": 1149,
+        "title": "Тур в Бразилию с пляжным отдыхом в Коста ду Сауипе",
+        "h1": "Романтическая Бразилия",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/0fe3322e596b646a44e6fd1b.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP HTML 0fe3322e596b646a44e6fd1b.html: source title обещает пляжный отдых в Коста-ду-Сауипе, но программа дней 9–11 явно описывает пляжный отдых в Прайя-ду-Форте, день 12 — выезд из Прайя-ду-Форте.",
+          "Tour MD src/content/tours/romanticheskaya-braziliya.md: 12-дневная опубликованная «Романтическая Бразилия» с Коста-ду-Сауипе в маршруте и днях 8–12; в разделе цены назван отель Pousada Casa do Forte и отдельно оговорена неопределенность пляжного размещения."
+        ],
+        "note": "Неоднозначна существенная география пляжного блока: в исходной программе Прайя-ду-Форте, в текущей RU-программе Коста-ду-Сауипе. До уточнения отеля/места 4 ночей не подтверждать полный эквивалент и не создавать 301.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:13:17.240Z",
+        "checkedBy": "reverse-worker-mvi8e1qn-pxkq8k7yg0e",
+        "claimGeneration": 1,
+        "batchId": "vip-025",
+        "batchSha": "a2d56b207c2c3affdfcde3438d05326656725227"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 136,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/skazki-venesuelskogo-lesa?page=3",
+      "sourceBatch": "vip-025",
+      "sourceBatchBlobSha": "a2d56b207c2c3affdfcde3438d05326656725227",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/skazki-venesuelskogo-lesa?page=3",
+        "inventoryPosition": 1150,
+        "title": "Сказки Венесуэльского Леса",
+        "h1": "Сказки Венесуэльского Леса",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/8240840248f0f1d482d4ea21.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP HTML 8240840248f0f1d482d4ea21.html: 12-дневный тур «Сказки Венесуэльского леса», остров Маргарита → дельта Ориноко → Канайма → Лос-Рокес → Каракас.",
+          "Центральный архив Ada Tours: tour_source_skazki_venesuelskogo_lesa, archived с причиной expired_dates (исторический заезд 08.01.2024); существующий Tour MD src/content/tours/skazki-venesuelskogo-lesa.md также status: archived."
+        ],
+        "note": "Прежняя 12-дневная программа архивирована из-за прошедшей даты, подтвержденной действующей идентичной RU-программы нет. Решить отдельно: подобрать проверенную актуальную замену или отдать 410, не направлять на архив или главную.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:13:44.896Z",
+        "checkedBy": "reverse-worker-mvi8e1qn-pxkq8k7yg0e",
+        "claimGeneration": 1,
+        "batchId": "vip-025",
+        "batchSha": "a2d56b207c2c3affdfcde3438d05326656725227"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 137,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/chili-argentina-braziliya?page=3",
+      "sourceBatch": "vip-026",
+      "sourceBatchBlobSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/chili-argentina-braziliya?page=3",
+        "inventoryPosition": 1155,
+        "title": "Чили-Аргентина- Бразилия",
+        "h1": "Чили-Аргентина- Бразилия",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/dda4ce068eb747f6130486dd.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP: HTTP 200; title «Чили-Аргентина- Бразилия», H1 «Чили-Аргентина- Бразилия», snapshotFile snapshots/dda4ce068eb747f6130486dd.html.",
+          "В RU есть тур Чили–Аргентина–Бразилия на 15 дней (Сантьяго, Патагония, Буэнос-Айрес, Игуасу, Рио), однако исходный VIP H1 перечисляет только страны. Существуют несколько разных маршрутов этой тройки; закрытый HTML-снимок не доступен, соответствие именно 15-дневной программе не доказано."
+        ],
+        "note": "В RU есть тур Чили–Аргентина–Бразилия на 15 дней (Сантьяго, Патагония, Буэнос-Айрес, Игуасу, Рио), однако исходный VIP H1 перечисляет только страны. Существуют несколько разных маршрутов этой тройки; закрытый HTML-снимок не доступен, соответствие именно 15-дневной программе не доказано.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:21:43.294Z",
+        "checkedBy": "reverse-worker-mvi907cq-fc7geoelgda",
+        "claimGeneration": 1,
+        "batchId": "vip-026",
+        "batchSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 138,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/braziliya-s-detmi?page=4",
+      "sourceBatch": "vip-026",
+      "sourceBatchBlobSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/braziliya-s-detmi?page=4",
+        "inventoryPosition": 1159,
+        "title": "Бразилия с детьми",
+        "h1": "Бразилия с детьми",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/2fc5ec895189a8679b91a226.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP: HTTP 200; title «Бразилия с детьми», H1 «Бразилия с детьми», snapshotFile snapshots/2fc5ec895189a8679b91a226.html.",
+          "Опубликованный RU тур tour_source_braziliya_s_detmi включает Рио, Игуасу, Амазонию и Бузиос; однако источник VIP содержит лишь общее H1 «Бразилия с детьми», без длительности и маршрута. Приватный снимок не доступен, тождество этой семейной программы не доказано."
+        ],
+        "note": "Опубликованный RU тур tour_source_braziliya_s_detmi включает Рио, Игуасу, Амазонию и Бузиос; однако источник VIP содержит лишь общее H1 «Бразилия с детьми», без длительности и маршрута. Приватный снимок не доступен, тождество этой семейной программы не доказано.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:23:30.273Z",
+        "checkedBy": "reverse-worker-mvi907cq-fc7geoelgda",
+        "claimGeneration": 1,
+        "batchId": "vip-026",
+        "batchSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 139,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/gvatemala-kosta-rika?page=4",
+      "sourceBatch": "vip-026",
+      "sourceBatchBlobSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/gvatemala-kosta-rika?page=4",
+        "inventoryPosition": 1161,
+        "title": "Гватемала - Коста-Рика",
+        "h1": "Гватемала & Коста-Рика",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/9f209a4aa56e1c67a4c44b0a.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP inventory: HTTP 200; title «Гватемала - Коста-Рика», H1 «Гватемала & Коста-Рика», snapshotFile snapshots/9f209a4aa56e1c67a4c44b0a.html.",
+          "В RU опубликован тур tour_source_gvatemala_kosta_rika на 15 дней (Антигуа, Тикаль, Ареналь, Мануэль-Антонио), но VIP H1 называет только 2 страны. Без доступа к приватному HTML-снимку нельзя подтвердить продолжительность и программу исходной страницы; не утверждать 301 по совпадению стран."
+        ],
+        "note": "В RU опубликован тур tour_source_gvatemala_kosta_rika на 15 дней (Антигуа, Тикаль, Ареналь, Мануэль-Антонио), но VIP H1 называет только 2 страны. Без доступа к приватному HTML-снимку нельзя подтвердить продолжительность и программу исходной страницы; не утверждать 301 по совпадению стран.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:26:06.215Z",
+        "checkedBy": "reverse-worker-mvi907cq-fc7geoelgda",
+        "claimGeneration": 1,
+        "batchId": "vip-026",
+        "batchSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 140,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/krasivaya-kosta-rika?page=4",
+      "sourceBatch": "vip-026",
+      "sourceBatchBlobSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/krasivaya-kosta-rika?page=4",
+        "inventoryPosition": 1167,
+        "title": "Красивая Коста Рика",
+        "h1": "Красивая Коста Рика",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/50f7251aaa0fd79c76eadf03.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen inventory: HTTP 200, title «Красивая Коста Рика», H1 «Красивая Коста Рика», snapshotFile snapshots/50f7251aaa0fd79c76eadf03.html.",
+          "Действующий RU тур tour_source_krasivaya_kosta_rika: 15 дней (Поас, Ареналь, Каньо-Негро, Монтеверде и Тихий океан), но frozen VIP title/H1 «Красивая Коста Рика» без длительности и посещаемых мест; исходный приватный HTML недоступен. Нельзя подтвердить идентичность полного маршрута."
+        ],
+        "note": "Действующий RU тур tour_source_krasivaya_kosta_rika: 15 дней (Поас, Ареналь, Каньо-Негро, Монтеверде и Тихий океан), но frozen VIP title/H1 «Красивая Коста Рика» без длительности и посещаемых мест; исходный приватный HTML недоступен. Нельзя подтвердить идентичность полного маршрута.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:27:27.331Z",
+        "checkedBy": "reverse-worker-mvi907cq-fc7geoelgda",
+        "claimGeneration": 1,
+        "batchId": "vip-026",
+        "batchSha": "6f4e046de392b4998d14372e3bfa0bb5a389fb00"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 141,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/colombia-bogota-cartaghena.ru?page=6",
+      "sourceBatch": "vip-027",
+      "sourceBatchBlobSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/colombia-bogota-cartaghena.ru?page=6",
+        "inventoryPosition": 1198,
+        "title": "Разноликая Колумбия 2022",
+        "h1": "Разноликая Колумбия.ru",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/d56199063afa7a7dd4e34a25.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory: HTTP 200, title «Разноликая Колумбия 2022», H1 «Разноликая Колумбия.ru», canonical https://vipdeluxetravel.ru/colombia-bogota-cartaghena.ru.",
+          "Текущий каталог RU Tour содержит несколько программ через Боготу и Картахену с разными маршрутами и днями, но не закрепляет тождество этого старого продукта."
+        ],
+        "note": "В текущем каталоге нет однозначно закрепленного тура с этим источником; возможны несколько культурных маршрутов по Колумбии. Нужна сверка оригинальной программы из приватного HTML-снимка, иначе 301 может вести на чужой продукт.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:19:29.978Z",
+        "checkedBy": "reverse-worker-mvi90g84-avdnjyf76x8",
+        "claimGeneration": 1,
+        "batchId": "vip-027",
+        "batchSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 142,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/vip-panama-bocas-del-toro?page=6",
+      "sourceBatch": "vip-027",
+      "sourceBatchBlobSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/vip-panama-bocas-del-toro?page=6",
+        "inventoryPosition": 1199,
+        "title": "Роскошная Панама",
+        "h1": "Роскошная Панама",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/93276839a4bdb582be2cc523.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory: HTTP 200, H1 «Роскошная Панама», canonical https://vipdeluxetravel.ru/vip-panama-bocas-del-toro.",
+          "RU каталог включает люксовый тур по Панаме на 12 дней и другие маршруты; самого идентичного продукта по исходному пути в источниках не установлено."
+        ],
+        "note": "В названии исходного URL указан Бокас-дель-Торо; подтвердить, что актуальная люксовая программа включает тот же маршрут и услуги, нельзя без исходного HTML. Не перенаправлять автоматически на похожий VIP-тур.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:19:34.770Z",
+        "checkedBy": "reverse-worker-mvi90g84-avdnjyf76x8",
+        "claimGeneration": 1,
+        "batchId": "vip-027",
+        "batchSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 143,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/luchshee-v-argentine-2026?page=6",
+      "sourceBatch": "vip-027",
+      "sourceBatchBlobSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/luchshee-v-argentine-2026?page=6",
+        "inventoryPosition": 1200,
+        "title": "Лучшее в Аргентине 2026",
+        "h1": "Лучшее в Аргентине 2026",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/a386e95684c70b1360437a83.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Снимок инвентаря 20.10.2026: HTTP 200, title/H1 «Лучшее в Аргентине 2026», canonical https://vipdeluxetravel.ru/luchshee-v-argentine-2026.",
+          "RU каталог содержит несколько непохожих программ по Аргентине и Патагонии, в том числе предложения 2026–2027; точного подтвержденного source ID для этого VIP URL нет."
+        ],
+        "note": "Общая формулировка «Лучшее в Аргентине» не идентифицирует один маршрут, длительность и услуги; требуется исходная программа для корректного выбора RU-цели. Статус review, 301 не включать.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:19:40.583Z",
+        "checkedBy": "reverse-worker-mvi90g84-avdnjyf76x8",
+        "claimGeneration": 1,
+        "batchId": "vip-027",
+        "batchSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 144,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/panama-2022-panama-siti-bokas-del-toro?page=7",
+      "sourceBatch": "vip-027",
+      "sourceBatchBlobSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/panama-2022-panama-siti-bokas-del-toro?page=7",
+        "inventoryPosition": 1206,
+        "title": "Панама 2022: Панама сити- Бокас дель Торо",
+        "h1": "Панама: Панама сити- Бокас дель Торо",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/5af2b1f6c020092dbb65ece6.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Сохраненный VIP crawl 20.10.2026: snapshotHttp 200, title/H1 «Панама 2022: Панама-Сити — Бокас-дель-Торо», canonical https://vipdeluxetravel.ru/panama-2022-panama-siti-bokas-del-toro.",
+          "RU Tour catalog показывает несколько программ по Панаме, включая VIP и 2024, но не подтверждает равенство старого маршрута Панама-Сити — Бокас-дель-Торо какой-либо активной программе."
+        ],
+        "note": "Без содержания оригинального ZIP HTML нельзя надежно определить длительность, состав услуг и точную RU-цель. Не перенаправлять по общему совпадению страны или города; требуется отдельная смысловая сверка источника.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:21:34.216Z",
+        "checkedBy": "reverse-worker-mvi90g84-avdnjyf76x8",
+        "claimGeneration": 1,
+        "batchId": "vip-027",
+        "batchSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 145,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/panama-city-2022?page=7",
+      "sourceBatch": "vip-027",
+      "sourceBatchBlobSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/panama-city-2022?page=7",
+        "inventoryPosition": 1207,
+        "title": "Панама-Сити 2022",
+        "h1": "Панама-Сити 2022",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/8b09088b52ff6a63db99cd11.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP crawl: HTTP 200, title/H1 «Панама-Сити 2022», canonical https://vipdeluxetravel.ru/panama-city-2022, тип tour_candidate.",
+          "В RU Tour catalog есть программы по Панаме и отдельный тур Панама-Сити + Гамбоа на 6 дней, но одинаковый город без программы не доказывает их совпадение."
+        ],
+        "note": "Название города и исторический год не раскрывают состав тура. Выбор между карточкой Панама-Сити, туром по Панама-Сити и 410 возможен лишь после чтения исходной программы; безопасного подтвержденного 301 нет.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:21:43.191Z",
+        "checkedBy": "reverse-worker-mvi90g84-avdnjyf76x8",
+        "claimGeneration": 1,
+        "batchId": "vip-027",
+        "batchSha": "f0a1c8f24b4f3f36f5673dde5217608229939d3e"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 146,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/ves-ekvador-galapagosskie-ostrova?page=8",
+      "sourceBatch": "vip-028",
+      "sourceBatchBlobSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/ves-ekvador-galapagosskie-ostrova?page=8",
+        "inventoryPosition": 1216,
+        "title": "Эквадор + Галапагосские острова",
+        "h1": "Весь Эквадор + Галапагосские острова",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/550ebb735112ec819a97fb9f.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1216: исторический HTTP 200, тип tour_candidate, title «Эквадор + Галапагосские острова», точный исходный URL https://vipdeluxetravel.ru/package/ves-ekvador-galapagosskie-ostrova?page=8.",
+          "Несколько разных активных туров Эквадор–Галапагосы: 8 дней complete-ecuador-galapagos-islands, 17 дней adventure, 18 дней wildlife cruise и другие; сохраненный исходный заголовок не дает длительности и маршрута."
+        ],
+        "note": "Нельзя подтвердить единственную RU-цель без полной программы прежней страницы; нужен просмотр содержимого снимка/редакционное решение, 301 не готов.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:18:00.017Z",
+        "checkedBy": "reverse-worker-mvi90nmp-r4u77cnk52d",
+        "claimGeneration": 1,
+        "batchId": "vip-028",
+        "batchSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 147,
+      "sourceUrl": "https://vipdeluxetravel.ru/package/wedding-ceremony-tropical-package?page=8",
+      "sourceBatch": "vip-028",
+      "sourceBatchBlobSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package/wedding-ceremony-tropical-package?page=8",
+        "inventoryPosition": 1227,
+        "title": "Тропическая свадебная церемония",
+        "h1": "Тропическая свадебная церемония",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/7fe0a791d2f00025d132cc30.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1227: historical HTTP 200, pageType tour_candidate, title «Тропическая свадебная церемония», URL https://vipdeluxetravel.ru/package/wedding-ceremony-tropical-package?page=8.",
+          "RU Tour tour_source_wedding_ceremony_tropical_package approved — однодневная тропическая свадебная церемония в Рио-де-Жанейро; на источнике в замороженном title только «Тропическая свадебная церемония», без географии и состава церемонии."
+        ],
+        "note": "Схожи название и slug, но сохраненный источник не подтверждает Рио и точный формат. Полный HTML-снимок недоступен: 301 отложен до смыслового подтверждения, другие свадьбы не подставлять.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:21:18.166Z",
+        "checkedBy": "reverse-worker-mvi90nmp-r4u77cnk52d",
+        "claimGeneration": 1,
+        "batchId": "vip-028",
+        "batchSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 148,
+      "sourceUrl": "https://vipdeluxetravel.ru/package?product_id=4182&page=9",
+      "sourceBatch": "vip-028",
+      "sourceBatchBlobSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/package?product_id=4182&page=9",
+        "inventoryPosition": 1235,
+        "title": "Свадебная церемония любви в Рио де Жанейро",
+        "h1": "Свадебная церемония любви в Рио де Жанейро",
+        "pageType": "tour_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/85305ef5cb378e6e2a1e65ea.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP inventory #1235: source tour_candidate, title «Свадебная церемония любви в Рио де Жанейро», HTTP snapshot 200, точный URL https://vipdeluxetravel.ru/package?product_id=4182&page=9.",
+          "В действующем RU каталоге есть минимум две свадебные программы Рио: tour_source_rio_de_janeiro_wedding — конкретно Praia Vermelha, и tour_source_wedding_ceremony_tropical_package — однодневная тропическая церемония. Старый product_id=4182 имеет только общий заголовок без места/формата."
+        ],
+        "note": "Точного соответствия невозможно выбрать между различными свадебными пакетами Рио без исходного описания. Любой 301 сейчас преждевременен; требуется предметная сверка product_id=4182.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:24:02.817Z",
+        "checkedBy": "reverse-worker-mvi90nmp-r4u77cnk52d",
+        "claimGeneration": 1,
+        "batchId": "vip-028",
+        "batchSha": "30baa601e02e55165f031e2a3d6b995b7a47f8d6"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 149,
+      "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=1",
+      "sourceBatch": "vip-029",
+      "sourceBatchBlobSha": "93b260f243108808a305f587750e5d22ad36d919",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/excursion?page=1",
+        "inventoryPosition": 1252,
+        "title": "Excursion",
+        "h1": "Excursion",
+        "pageType": "excursion_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/cbe45b518121747a1c477bcb.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "VIP frozen inventory #1252: URL https://vipdeluxetravel.ru/excursion?page=1, HTTP 200, title/H1 \"Excursion\", тип excursion_candidate.",
+          "В RU существует /excursions/ как общий каталог, но frozen запись не содержит состава страниц /excursion?page=1 и фильтров."
+        ],
+        "note": "Страница /excursion?page=1 является общим листингом с заголовком Excursion. Совпадение фильтров и состава карточек со страницей /excursions/ не подтверждено. Не разрешать 301 без редакционной сверки каталога.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:18:13.179Z",
+        "checkedBy": "reverse-worker-mvi90inx-8sl6n0h45f",
+        "claimGeneration": 1,
+        "batchId": "vip-029",
+        "batchSha": "93b260f243108808a305f587750e5d22ad36d919"
+      },
+      "decision": null
+    },
+    {
+      "reviewOrder": 150,
+      "sourceUrl": "https://vipdeluxetravel.ru/excursion/jekskursija-na-argentinskie-vodopady?page=3",
+      "sourceBatch": "vip-029",
+      "sourceBatchBlobSha": "93b260f243108808a305f587750e5d22ad36d919",
+      "original": {
+        "sourceUrl": "https://vipdeluxetravel.ru/excursion/jekskursija-na-argentinskie-vodopady?page=3",
+        "inventoryPosition": 1264,
+        "title": "Экскурсия на Водопады Игуасу в Аргентине и Бразилии",
+        "h1": "Экскурсия на Аргентинские водопады",
+        "pageType": "excursion_candidate",
+        "snapshotHttp": 200,
+        "snapshotFile": "snapshots/fd5df0de42f43496a23463d0.html",
+        "status": "review",
+        "ruUrl": "",
+        "evidence": [
+          "Frozen VIP #1264: H1 «Экскурсия на Аргентинские водопады», но title «Экскурсия на Водопады Игуасу в Аргентине и Бразилии» (HTTP 200 в сохраненном инвентаре).",
+          "RU approved MD excursion_source_jekskursija_na_argentinskie_vodopady, /argentina/puerto-iguazu/iguazu-falls-argentine-side-tour/: lead описывает 6-часовое посещение аргентинской стороны, не обеих стран."
+        ],
+        "note": "Неоднозначность охвата: VIP title обещает обе стороны Игуасу, H1 ограничивается аргентинской; RU программа ведет только на аргентинскую сторону. До проверки исходной программы нельзя выпускать 301 на односторонний продукт.",
+        "relation": null,
+        "checkedAt": "2026-10-21T15:24:07.277Z",
+        "checkedBy": "reverse-worker-mvi90inx-8sl6n0h45f",
+        "claimGeneration": 1,
+        "batchId": "vip-029",
+        "batchSha": "93b260f243108808a305f587750e5d22ad36d919"
+      },
+      "decision": null
+    }
+  ]
+}

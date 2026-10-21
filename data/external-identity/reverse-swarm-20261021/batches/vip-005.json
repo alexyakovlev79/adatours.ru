@@ -582,7 +582,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/5fc1d0903fd2688d03769ff8.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP #549: HTTP=200, pageType=tour_listing, title=\"(empty)\", H1=\"(empty)\", snapshotFile=snapshots/5fc1d0903fd2688d03769ff8.html. Исторический обход, без новой live-проверки.",
+        "Для действующей RU страницы destination_venezuela_santa_elena_de_uajren есть MD status approved, но в data/source-index/catalogs/tours.json нет ни одного активного Tour с основным routeDestinationIds/destinationIds данного города. RU /venezuela/place/santa-elena-de-uairen/tour/ не подтвержден как существующий непустой каталог."
+      ],
+      "note": "Старый VIP /packages не имеет действующей RU туровой подборки Санта-Елены-де-Уайрен. Нужен выбор корректной информационной страницы или HTTP 410; недопустимо перенаправление на пустой каталог.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:55:05.271Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-santa-elena-de-uajren-v-venesuehle/ekskursii",
@@ -595,5 +605,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:54:37.589Z"
+  "updatedAt": "2026-10-21T14:55:05.271Z"
 }

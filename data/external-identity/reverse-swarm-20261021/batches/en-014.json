@@ -148,7 +148,18 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen inventory 2026-10-12: Tours to Salta & Vacation packages | Guided trips to Argentina with Ada Tours; H1 Excursions to countries of Latin America; category_ids=[\"61\"]; adatours-com-crawl-002.json index 236; snapshotHttp 200, snapshotFile отсутствует.",
+        "Живой GET 21.10.2026 https://adatours.com/salta/excursions: HTTP 200; SHA256 3f667da99c81fb75162c2bb97a0583aa03893b6946d37a87970d5ac3247ad6da. Общий каталог Latin America; product gallery не содержит карточек выбранного места.",
+        "main src/content/destinations/salta.md, blob 22d149adf0ffdcb05227cba20a0051b46da49012: approved destination_argentina_salta, /argentina/place/salta/. Проверка RU каталога https://adatours.ru/argentina/salta/: HTTP 200; 4 экскурсии в Сальте, Аргентина - купить по лучшей цене напрямую у принимающего туроператора | Ada Tours Экскурсии Ada Tours: Сальта, Аргентина. Оставить заявку ↗ Качи: горный город из Кафаяте в Сальту Поездка в Качи с колониальной церковью, мощеными улицами и высадкой в Сальте. Смотреть ↗ Салинас-Грандес: экскурсия с русскоговорящим гидом Полный день на Салинас-Грандес по доро."
+      ],
+      "note": "В EN видна общая экскурсионная страница без карточек выбранного места, а RU содержит предметный каталог самостоятельных экскурсий. Идентичность фильтра и состава не подтверждена; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T16:15:54.912Z",
+      "checkedBy": "reverse-worker-mvib5m67-k5ko7e1pqwn",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/salta/packages",
@@ -381,5 +392,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T16:15:50.573Z"
+  "updatedAt": "2026-10-21T16:15:54.912Z"
 }

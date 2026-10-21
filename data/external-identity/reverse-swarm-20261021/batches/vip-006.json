@@ -162,7 +162,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/582fc3f59410b3d1c7f92d15.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Прочитан точный снимок snapshots/582fc3f59410b3d1c7f92d15.html, проверен SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855; snapshotHttp 200, pageType tour_listing, H1 «». Пустой HTML (0 байт) каталога туров; родитель — Санто-Доминго в Доминикане, а не одноимённые церкви в Мексике или Перу.",
+        "В текущем main нет активных туров с destination_dominican_republic_santo_domingo в source-index; маршрутизатор создаёт каталог места только при непустом наборе туров. Проверка RU-цели 21.10.2026: https://adatours.ru/dominican-republic/place/santo-domingo/tour/ → HTTP 404; активный каталог по этому адресу отсутствует."
+      ],
+      "note": "Туристическая страница места /dominican-republic/place/santo-domingo/ существует, но каталога туров нет (HTTP 404). Нужен отдельный выбор: релевантность страницы места либо 410; 301 не подтвержден.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:38:08.356Z",
+      "checkedBy": "reverse-worker-mvi7p2m1-46jkr1l3h9z",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/tury-i-ehkskursii-v-gorod-santo-domingo-v-dominikane/ekskursii",
@@ -385,5 +395,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:38:06.314Z"
+  "updatedAt": "2026-10-21T14:38:08.356Z"
 }

@@ -462,7 +462,19 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "matched_exact",
+      "ruUrl": "https://adatours.ru/paraguay/tour/",
+      "evidence": [
+        "Frozen inventory 2026-10-12: category, snapshotHttp 200, H1 «Paraguay: Tours to Iguazu Falls and Jesuit Missions», crawlReport adatours-com-crawl-002.json; snapshotFile не задан. Живой GET 21.10.2026 HTTP 200 с self-canonical. Проверен фактический module/productsjson по datasrc: total=2, UID 4400 Uruguay & Paraguay Tour: Hidden Gems (16 дней/15 ночей) и UID 3033 Tour of Paraguay 2024 (8 дней/7 ночей).",
+        "Текущий main src/content/countries/paraguay.md: approved country_paraguay. Канонический /paraguay/tour/ HTTP 200: полный счетчик 2 и ровно две карточки /multi-country/tour/uruguay-paraguay-16-days-2026/ (16 дней) и /paraguay/tour/classic-paraguay-2023/ (8 дней). Страновой фильтр и полный набор программ совпадают, включая многострановый маршрут с Парагваем.",
+        "Проверены полные живые 8-дневные программы EN /tour-of-paraguay-2024 и RU /paraguay/tour/classic-paraguay-2023/: Асунсьон → Чако/Филадельфия → школа Пай-Пуку → Асунсьон → Сан-Игнасио/Энкарнасьон → Хесус/Тринидад/Сьюдад-дель-Эсте → Моисей Бертони/Итайпу → Асунсьон, отъезд в день 8. Совпадают 7 ночей с завтраком, частный транспорт, англоговорящий гид, входные билеты. Main stable ID tour_source_klassicheskij_paragvaj, src/content/tours/klassicheskij-paragvaj.md, status published.",
+        "Проверены полные живые 16-дневные EN /uruguay-paraguay-hidden-gems-tour-16-days и RU /multi-country/tour/uruguay-paraguay-16-days-2026/: Монтевидео, Колония в день 2, Канелонес/Пунта-дель-Эсте в дни 3–5, Асунсьон в дни 6–7, Чако/Лагуна Капитан в дни 8–10, Гуайра в дни 11–12, перелет к Игуасу в день 13, бразильская сторона/Macuco в день 14, аргентинская сторона в день 15, вылет в день 16. Совпадают 15 ночей, проживание, трансферы, питание по программе, входные билеты и сопровождение; авиабилеты, страховка и личные расходы отдельно. Main stable ID tour_source_tur_po_uruguayu_i_paragvayu_16_dnej, status published."
+      ],
+      "note": "Подтверждена идентичность страновых каталогов по фильтру и обоим действующим продуктам, с проверкой текущих программ. Годы в исторических заголовках 2023/2024 и различающиеся цены не использовались как доказательство идентичности. Сохранена только кандидатная sameAs-связь; JSON-LD и production не менялись.",
+      "relation": "sameAs",
+      "checkedAt": "2026-10-21T16:17:09.252Z",
+      "checkedBy": "reverse-worker-mvib4yya-sd3rdqazv2p",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/paramaribo/excursions",
@@ -585,5 +597,5 @@
       "claimGeneration": 1
     }
   ],
-  "updatedAt": "2026-10-21T16:16:20.438Z"
+  "updatedAt": "2026-10-21T16:17:09.252Z"
 }

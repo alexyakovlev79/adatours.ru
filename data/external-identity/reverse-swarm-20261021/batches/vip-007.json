@@ -542,7 +542,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/3bcbb794af8418bee9c073cb.html",
-      "status": "queued"
+      "status": "review",
+      "ruUrl": "",
+      "evidence": [
+        "Frozen VIP inventory №607: страница типа excursion_listing, сохраненный HTTP 200, исходный title пуст, snapshotFile=snapshots/3bcbb794af8418bee9c073cb.html; содержимое старого HTML не исследовано.",
+        "RU source-index: approved Destination destination_peru_tumbes существует; ни одна active Excursion не ссылается на destination_peru_tumbes, поэтому непустой каталог экскурсий этого места не подтвержден."
+      ],
+      "note": "В старом URL заявлен список экскурсий по объекту «Тумбес», но сейчас нет действующих RU продуктов с соответствующей связью. Редакционно выбрать переход на страницу места или 410; запрет на 301 к пустому каталогу/главной.",
+      "relation": null,
+      "checkedAt": "2026-10-21T14:57:19.663Z",
+      "checkedBy": "reverse-worker-mvi83j7a-l8szybbr92h",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvadore",
@@ -585,5 +595,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:56:57.000Z"
+  "updatedAt": "2026-10-21T14:57:19.663Z"
 }

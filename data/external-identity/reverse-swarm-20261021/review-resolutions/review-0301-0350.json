@@ -301,7 +301,51 @@
         "checkedBy": "reverse-worker-mvibh2ey-wk2zo2unmhp",
         "claimGeneration": 1
       },
-      "decision": null
+      "decision": {
+        "status": "checked_no_confirmed_pair",
+        "ruUrl": "",
+        "relation": null,
+        "candidateRuUrl": "https://adatours.ru/venezuela/excursion/",
+        "confidence": 0.15,
+        "confidenceMeaning": "Subjective editorial estimate of probability of SAME entity/catalogue; not confidence in a negative decision or statistical certainty.",
+        "decisionPolicy": "probability-70-v1",
+        "threshold": 0.7,
+        "accepted": false,
+        "reason": "EN-экскурсионный раздел Венесуэлы показывает общий текст без продуктовых карточек; RU содержит 13 конкретных экскурсий. Страновой фильтр совпадает, действующий состав — нет.",
+        "evidence": [
+          {
+            "url": "https://adatours.com/venezuela-en/excursions",
+            "http": 200,
+            "canonical": "https://adatours.com/venezuela-en/excursions",
+            "h1": [
+              "Excursions to countries of Latin America"
+            ],
+            "sha256": "0d3b3b5f9bfee4948fb20cc6af08f2fc185ee8398bdb76832faca531ee3c80bb",
+            "checkedAt": "2026-10-21T16:30:02.507085+00:00",
+            "htmlCards": [],
+            "offerCount": []
+          },
+          {
+            "url": "https://adatours.ru/venezuela/excursion/",
+            "http": 200,
+            "canonical": "https://adatours.ru/venezuela/excursion/",
+            "h1": [
+              "13 экскурсий в Венесуэлу | Ada Tours"
+            ],
+            "sha256": "130974e387d6428344ad2b362e6cff95d9ba4c3a7f4935596409570bc596531c",
+            "checkedAt": "2026-10-21T16:30:03.569184+00:00",
+            "htmlCards": [],
+            "offerCount": []
+          }
+        ],
+        "reviewedAt": "2026-10-21T16:31:56.497Z",
+        "reviewedBy": "review-seventh50-39437b4f3117",
+        "researchMode": "Fresh live EN/RU HTML read and retained detailed first-pass evidence",
+        "limitations": [
+          "Fresh HTML cards are not asserted to be complete AJAX inventory; prior productsjson evidence is attributed to first pass.",
+          "No production sameAs, redirect or content changes."
+        ]
+      }
     },
     {
       "reviewOrder": 305,
@@ -478,5 +522,5 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:31:55.190Z"
+  "updatedAt": "2026-10-21T16:31:56.497Z"
 }

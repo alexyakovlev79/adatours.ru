@@ -347,7 +347,17 @@
       "pageType": "excursion_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/c235a3d126ca4b8dac8308ee.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/ecuador/excursion/",
+      "evidence": [
+        "Frozen VIP inventory: /ekvador-ru/ekskursii, pageType excursion_listing, snapshotHttp 200; пустые title/H1, привязка к страновому узлу «Эквадор».",
+        "RU Country country_ecuador approved; в текущем source-index 32 действующие Excursion с географией country_ecuador, и существует непустой страновой каталог /ecuador/excursion/."
+      ],
+      "note": "Подготовлен будущий 301 на каталог экскурсий Эквадора. Нельзя заявить совпадение прежнего набора предложений при пустой HTML-витрине.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:48:47.841Z",
+      "checkedBy": "reverse-worker-mvi7ulbn-l9hzm4e5q9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-na-kurort-ehl-valle-v-paname",
@@ -470,5 +480,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:48:41.166Z"
+  "updatedAt": "2026-10-21T14:48:47.841Z"
 }

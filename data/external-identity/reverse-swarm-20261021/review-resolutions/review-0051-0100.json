@@ -1462,7 +1462,49 @@
         "batchBlobSha": "b9adc25a5f96aa3afc25232f7a7fe47f97858162",
         "reviewOrder": 71
       },
-      "decision": null
+      "decision": {
+        "status": "redirect_ready",
+        "disposition": "redirect_301",
+        "relation": "redirect_301",
+        "ruUrl": "https://adatours.ru/french-guiana/",
+        "targetId": "country_french_guiana",
+        "targetContentPath": "src/content/countries/french-guiana.md",
+        "targetBlobSha": "b7a262e2c3535d1db85a1bd871bd63f3bec0781b",
+        "confidence": 0.88,
+        "accepted": true,
+        "basis": "editorial_geographic_fallback",
+        "exactEntityOrProductMatch": false,
+        "reviewedAt": "2026-10-21T16:31:03.006Z",
+        "evidence": [
+          "Прямой GET исходного URL: HTTP 200, 0 байт; SHA-256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855. Пустой HTML не содержит ассортимента. Тип excursion_listing и родительская география берутся из сохраненной записи vip-008 #640.",
+          "Текущий main src/content/countries/french-guiana.md, blob b7a262e2c3535d1db85a1bd871bd63f3bec0781b: approved country_french_guiana, Французская Гвиана; прямой GET https://adatours.ru/french-guiana/ → HTTP 200, SHA-256 291e70ea35d216cc2fdd6f69c84472bc89c39ceec915935de45df0eacca17934."
+        ],
+        "note": "Принято редакционное решение по порогу 70%: старую пустую/недействующую подборку заменить содержательной страницей того же направления «Французская Гвиана». Сохранена точная география. Это релевантная замена раздела; одинаковый ассортимент не утверждается. 301 подготовлен, не включен.",
+        "liveSource": {
+          "key": "source-71",
+          "url": "https://vipdeluxetravel.ru/frantsuzskaya-gviana-ru/ekskursii",
+          "http": 200,
+          "finalUrl": "https://vipdeluxetravel.ru/frantsuzskaya-gviana-ru/ekskursii",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "title": "",
+          "canonical": [],
+          "dayHeadings": []
+        },
+        "liveTarget": {
+          "key": "country_french_guiana",
+          "url": "https://adatours.ru/french-guiana/",
+          "http": 200,
+          "finalUrl": "https://adatours.ru/french-guiana/",
+          "sha256": "291e70ea35d216cc2fdd6f69c84472bc89c39ceec915935de45df0eacca17934",
+          "bytes": 202948,
+          "title": "Французская Гвиана: 7 локаций. Каталог 2026-2027: 3 тура и цены от $5 119 туроператора Ada Tours",
+          "canonical": [
+            "<link rel=\"canonical\" href=\"https://adatours.ru/french-guiana/\">"
+          ],
+          "dayHeadings": []
+        }
+      }
     },
     {
       "reviewOrder": 72,
@@ -2317,9 +2359,9 @@
       "decision": null
     }
   ],
-  "updatedAt": "2026-10-21T16:32:31.813Z",
+  "updatedAt": "2026-10-21T16:32:33.871Z",
   "progress": {
-    "resolved": 20,
+    "resolved": 21,
     "total": 50
   }
 }

@@ -342,7 +342,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, конечный https://adatours.com/archipielago-de-san-blas/excursions; title Beach tours and diving tours to the San Blas Islands in Panama; H1 Excursions to countries of Latin America. Фильтр from=category&page=isExcursionCategory&typeid=2&category_id=158&excludes%5B0%5D=themes&excludes%5B1%5D=countries&excludes%5B2%5D=cities. SHA-256 144d14f088a9b1f46bf635b7fa54491e58659ca7e2909d179e1a3dee5b0b560f. Frozen inventory: category_ids=[\"158\"], page_type=category; приватный HTML-снимок для этого EN URL не предоставлен.",
+        "Проверен RU-кандидат https://adatours.ru/panama/san-blas-islands/: GET 404, конечный https://adatours.ru/panama/san-blas-islands/, canonical https://adatours.ru/404.html. RU-каталог экскурсий по Сан-Блас возвращает 404, страница архипелага другого типа. География сопоставлена с destination_panama_arhipelag_san_blas в source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 и маршрутизатором src/lib/routes.ts."
+      ],
+      "note": "Точный однотипный RU-каталог по проверенному штатному маршруту отсутствует (HTTP 404). Place/страна не подставлена вместо коллекции. Подтвержденной пары sameAs не найдено.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:39:21.127Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/archipielago-de-san-blas/packages",
@@ -485,5 +495,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:39:10.731Z"
+  "updatedAt": "2026-10-21T15:39:21.127Z"
 }

@@ -462,7 +462,17 @@
       "pageType": "category",
       "snapshotHttp": 200,
       "snapshotFile": "",
-      "status": "queued"
+      "status": "checked_no_confirmed_pair",
+      "ruUrl": "",
+      "evidence": [
+        "Текущий EN GET 200, конечный https://adatours.com/argentina-en/excursions; title Argentina Excursions: Tango, Glaciers & Iguazu Falls; H1 Argentina Excursions: Best Places to Visit. Фильтр from=category&page=isExcursionCategory&typeid=2&category_id=55&excludes%5B0%5D=themes&excludes%5B1%5D=countries. SHA-256 7988b8d1d8ded8d876a884a7df684ce57479203afb6625aedb9254edff55a91d. Frozen inventory: category_ids=[\"55\"], page_type=category; приватный HTML-снимок для этого EN URL не предоставлен.",
+        "Проверен RU-кандидат https://adatours.ru/argentina/excursion/: GET 200, конечный https://adatours.ru/argentina/excursion/, canonical https://adatours.ru/argentina/excursion/. RU содержит 63 экскурсии с пагинацией. В EN-превью кроме Tierra del Fuego и Macuco Safari есть Private Transfer Buenos Aires/El Calafate и испанский SKIWEEK Las Leñas 2022; единый тип/полный набор 63 RU программ не подтвержден. География сопоставлена с country_argentina в source-index main 78fe61f4b9fa878e86bd00862b0506a72fb148d2 и маршрутизатором src/lib/routes.ts."
+      ],
+      "note": "Каталог тематически/географически близок, но полное тождество фильтра и всех активных программ EN/RU не доказано. Статические EN-превью не заменяют динамическую выдачу; sameAs не назначен.",
+      "relation": null,
+      "checkedAt": "2026-10-21T15:40:38.033Z",
+      "checkedBy": "reverse-worker-3071dc0e9c4b-mvi9bz00",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://adatours.com/argentina-en/packages",
@@ -545,5 +555,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T15:40:04.610Z"
+  "updatedAt": "2026-10-21T15:40:38.033Z"
 }

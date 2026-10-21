@@ -42,7 +42,17 @@
       "pageType": "tour_listing",
       "snapshotHttp": 200,
       "snapshotFile": "snapshots/e1c14eab45e2fac18c34f9ce.html",
-      "status": "queued"
+      "status": "redirect_ready",
+      "ruUrl": "https://adatours.ru/guatemala/place/san-pedro-la-laguna/tour/",
+      "evidence": [
+        "Frozen VIP inventory #522: snapshotHttp=200, pageType=tour_listing, title=\"(empty)\", H1=\"(empty)\"; snapshotFile=snapshots/e1c14eab45e2fac18c34f9ce.html. Это данные сохраненного обхода, не новая HTTP-проверка.",
+        "RU каталог основных туров места /guatemala/place/san-pedro-la-laguna/tour/ формируется tourDestinationPath() из destination id=destination_guatemala_san_pedro_la_laguna. В каталоге источников есть 2 неархивных основных Tour; проверен production MD: tour_source_gvatemala_gonduras_el_salvador_beliz; /multi-country/tour/guatemala-honduras-el-salvador-belize/; Tour status published."
+      ],
+      "note": "География и тип каталога соответствуют; состав прежней VIP-подборки из snapshot с пустыми title/H1 не подтвержден и не заявляется равным новому. 301 пока не включен.",
+      "relation": "redirect_301",
+      "checkedAt": "2026-10-21T14:45:00.916Z",
+      "checkedBy": "reverse-worker-mvi7vc6u-ulkyiawmeh9",
+      "claimGeneration": 1
     },
     {
       "sourceUrl": "https://vipdeluxetravel.ru/ehkskursii-i-tury-v-san-pedro-la-laguna-v-gvatemale/ekskursii",
@@ -325,5 +335,5 @@
       "status": "queued"
     }
   ],
-  "updatedAt": "2026-10-21T14:44:52.660Z"
+  "updatedAt": "2026-10-21T14:45:00.916Z"
 }

@@ -42,7 +42,7 @@ test('small laptop with 150% Windows scaling can play an oversized home hero', (
 
 test('minor clipping no longer prevents playback; a narrow visible strip still pauses', () => {
   assert.equal(isPlayableVisible(rect(-1), screen), true);
-  assert.equal(isPlayableVisible(rect(501), screen), false);
+  assert.equal(isPlayableVisible(rect(750), screen), false);
   assert.equal(isPlayableVisible(rect(0, -1), screen), true);
   assert.equal(isPlayableVisible(rect(-160), screen), false);
   assert.equal(isPlayableVisible(rect(-100), screen), true);

@@ -1,5 +1,4 @@
 ---
-import InlineMarkdown from '../global/InlineMarkdown.astro';
 import { withBase } from '../../lib/paths';
 
 interface Props { text: string }
@@ -15,11 +14,18 @@ for (const match of text.matchAll(links)) {
   cursor = start + match[0].length;
 }
 if (cursor < text.length) parts.push({ text: text.slice(cursor) });
+
+// Render runs directly: component boundary whitespace must not separate punctuation.
+const inlineRuns = (value: string) => {
+  const chunks = value.split('**');
+  const balanced = chunks.length > 1 && chunks.length % 2 === 1;
+  return (balanced ? chunks : [value]).map((text, index) => ({ text, bold: balanced && index % 2 === 1 }));
+};
 ---
 
 <span class="authority-inline">{parts.map((part) => part.href
-  ? <a href={withBase(part.href)}><InlineMarkdown text={part.text} /></a>
-  : <InlineMarkdown text={part.text} />)}</span>
+  ? <a href={withBase(part.href)}>{inlineRuns(part.text).map((run) => run.bold ? <strong>{run.text}</strong> : run.text)}</a>
+  : inlineRuns(part.text).map((run) => run.bold ? <strong>{run.text}</strong> : run.text))}</span>
 
 <style>
   .authority-inline a {

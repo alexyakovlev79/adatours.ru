@@ -6,7 +6,7 @@
     "/webinars/",
     "/partners/"
   ],
-  "status": "prepared",
+  "status": "published-with-typography-fix-pending",
   "baselineCommit": "a5ccfb99f2bb3b1b962a438289deaf752ec753c2",
   "copyRulesSource": "Project attachment: 08-writing-rules.md — Правила написания любых текстов",
   "entitySourceRegistry": "data/external-identity/entity-authority-20261022.json",
@@ -231,6 +231,1231 @@
     {
       "check": "git-diff-whitespace",
       "status": "passed"
+    },
+    {
+      "check": "existing-internal-link-targets",
+      "status": "passed",
+      "report": {
+        "formatVersion": 1,
+        "startedAt": "2026-10-22T15:39:24.524Z",
+        "finishedAt": "2026-10-22T15:39:29.033Z",
+        "context": {
+          "releaseCommit": "8a068ca8ebcf7cc9e2f3f097788c71f4b3ea45d0",
+          "pendingRun": "39806119109",
+          "source": "src/data/authority-pages.json",
+          "scope": "Published existing internal destinations linked from the three new pages; /press/, /webinars/, /partners/ are excluded.",
+          "method": "Read-only HTTPS GET through curl, DOM and JSON-LD inspection. No UI, build, mutation, login or form submission.",
+          "limits": "Current published HTML at recorded times, not the pending release. Catalog total and visible item counts come from server-rendered markup. Addressed link audit only.",
+          "environmentNote": "Node fetch with --use-env-proxy failed in this environment; successful public GET checks used approved curl access.",
+          "cacheNote": "The /about/ response was reused from the first successful curl GET during this same audit; its checkedAt is the DOM inspection time."
+        },
+        "summary": {
+          "targets": 17,
+          "passed": 17,
+          "review": 0,
+          "errors": 0,
+          "http200": 17,
+          "canonicalMatches": 17,
+          "ogUrlMatches": 17,
+          "noindexPages": 0,
+          "redirects": 0,
+          "nonemptyCatalogs": {
+            "/brazil/tour/": {
+              "key": "/brazil/tour/",
+              "total": 148,
+              "page": 1,
+              "visibleItems": 30
+            },
+            "/multi-country/": {
+              "key": "/multi-country/",
+              "total": 93,
+              "page": 1,
+              "visibleItems": 30
+            },
+            "/tours/": {
+              "key": "/tours/",
+              "total": 358,
+              "page": 1,
+              "visibleItems": 30
+            },
+            "/vip/": {
+              "key": "/vip/",
+              "total": 90,
+              "page": 1,
+              "visibleItems": 30
+            }
+          }
+        },
+        "results": [
+          {
+            "path": "/about/",
+            "sourcePages": [
+              "press"
+            ],
+            "checkedAt": "2026-10-22T15:39:24.526Z",
+            "requestUrl": "https://adatours.ru/about/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/about/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 61020,
+            "bodySha256": "bd70f5eb4d5410d57c74ef4278840e331db922c9d29b08b39a84768b463913db",
+            "canonical": "https://adatours.ru/about/",
+            "ogUrl": "https://adatours.ru/about/",
+            "title": "Ada Tours: DMC в Бразилии и Латинской Америке",
+            "h1": [
+              "Ada Tours: DMC в Бразилии и Латинской Америке"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 4492,
+            "schemaPageType": "AboutPage",
+            "mainEntityType": [
+              "Organization",
+              "TravelAgency"
+            ],
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/about/#list-1",
+                "name": "Анна Аванесова",
+                "numberOfItems": 1,
+                "renderedItems": 1
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/argentina/",
+            "sourcePages": [
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:24.526Z",
+            "requestUrl": "https://adatours.ru/argentina/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/argentina/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 261828,
+            "bodySha256": "bc6b7a1693c8dc098a166b7c709299a2fd3e5d9c7b44f716ed4f53691acc2d86",
+            "canonical": "https://adatours.ru/argentina/",
+            "ogUrl": "https://adatours.ru/argentina/",
+            "title": "Аргентина: 105 локаций и 63 экскурсии. Каталог 2026-2027: 73 тура и цены от $1 000 туроператора Ada Tours",
+            "h1": [
+              "Аргентина"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 31830,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": [
+              "Country",
+              "TouristDestination"
+            ],
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/argentina/#list-2",
+                "name": "Аргентина",
+                "numberOfItems": 15,
+                "renderedItems": 15
+              },
+              {
+                "id": "https://adatours.ru/argentina/#list-3",
+                "name": "Туры в Аргентину",
+                "numberOfItems": 31,
+                "renderedItems": 31
+              },
+              {
+                "id": "https://adatours.ru/argentina/#list-4",
+                "name": "Экскурсии в Аргентину",
+                "numberOfItems": 5,
+                "renderedItems": 5
+              },
+              {
+                "id": "https://adatours.ru/argentina/#list-5",
+                "name": "Путешествия по интересам",
+                "numberOfItems": 11,
+                "renderedItems": 11
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/bolivia/",
+            "sourcePages": [
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:24.541Z",
+            "requestUrl": "https://adatours.ru/bolivia/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/bolivia/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 254355,
+            "bodySha256": "f9db0b3ab392df998cfdfb97446189ba1a1065dad036574dd0817b15036fa4c6",
+            "canonical": "https://adatours.ru/bolivia/",
+            "ogUrl": "https://adatours.ru/bolivia/",
+            "title": "Боливия: 58 локаций и 19 экскурсий. Каталог 2026-2027: 25 туров и цены от $440 туроператора Ada Tours",
+            "h1": [
+              "Боливия"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 33521,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": [
+              "Country",
+              "TouristDestination"
+            ],
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/bolivia/#list-2",
+                "name": "Боливия",
+                "numberOfItems": 15,
+                "renderedItems": 15
+              },
+              {
+                "id": "https://adatours.ru/bolivia/#list-3",
+                "name": "Туры в Боливию",
+                "numberOfItems": 31,
+                "renderedItems": 31
+              },
+              {
+                "id": "https://adatours.ru/bolivia/#list-4",
+                "name": "Экскурсии в Боливию",
+                "numberOfItems": 5,
+                "renderedItems": 5
+              },
+              {
+                "id": "https://adatours.ru/bolivia/#list-5",
+                "name": "Путешествия по интересам",
+                "numberOfItems": 8,
+                "renderedItems": 8
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/brazil/",
+            "sourcePages": [
+              "press",
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:25.137Z",
+            "requestUrl": "https://adatours.ru/brazil/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/brazil/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 263736,
+            "bodySha256": "9d360f6a451ad6e1bb73b4e7b7b4733c3c2004854a7179432f387f19fc1fc725",
+            "canonical": "https://adatours.ru/brazil/",
+            "ogUrl": "https://adatours.ru/brazil/",
+            "title": "Бразилия: 111 локаций и 105 экскурсий. Каталог 2026-2027: 148 туров и цены от $764 туроператора Ada Tours",
+            "h1": [
+              "Бразилия"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 37097,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": [
+              "Country",
+              "TouristDestination"
+            ],
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/brazil/#list-2",
+                "name": "Бразилия",
+                "numberOfItems": 15,
+                "renderedItems": 15
+              },
+              {
+                "id": "https://adatours.ru/brazil/#list-3",
+                "name": "Туры в Бразилию",
+                "numberOfItems": 31,
+                "renderedItems": 31
+              },
+              {
+                "id": "https://adatours.ru/brazil/#list-4",
+                "name": "Экскурсии в Бразилию",
+                "numberOfItems": 5,
+                "renderedItems": 5
+              },
+              {
+                "id": "https://adatours.ru/brazil/#list-5",
+                "name": "Путешествия по интересам",
+                "numberOfItems": 14,
+                "renderedItems": 14
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/brazil/tour/",
+            "sourcePages": [
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:25.805Z",
+            "requestUrl": "https://adatours.ru/brazil/tour/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/brazil/tour/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 192096,
+            "bodySha256": "8f7f2caeff3206b46dd89cb3f472717d64d3bbc3eb7cfd5c71eed59a0cbf284c",
+            "canonical": "https://adatours.ru/brazil/tour/",
+            "ogUrl": "https://adatours.ru/brazil/tour/",
+            "title": "Каталог туров 2026-2027 по Бразилии - купить по лучшей цене от $764 напрямую у принимающего туроператора | Ada Tours",
+            "h1": [
+              "Туры в Бразилию"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 21501,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": "ItemList",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/brazil/tour/#catalog",
+                "name": "Туры в Бразилию",
+                "numberOfItems": 30,
+                "renderedItems": 30
+              }
+            ],
+            "catalogs": [
+              {
+                "key": "/brazil/tour/",
+                "total": 148,
+                "page": 1,
+                "visibleItems": 30
+              }
+            ],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/cases/",
+            "sourcePages": [
+              "press",
+              "partners"
+            ],
+            "checkedAt": "2026-10-22T15:39:26.302Z",
+            "requestUrl": "https://adatours.ru/cases/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/cases/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 28627,
+            "bodySha256": "c17521c29bc9b2c82882b7a80aeb64ebc22b1414a39096161d1ddfd67ba764b0",
+            "canonical": "https://adatours.ru/cases/",
+            "ogUrl": "https://adatours.ru/cases/",
+            "title": "Кейсы Ada Tours: MICE, делегации и корпоративные группы",
+            "h1": [
+              "Кейсы Ada Tours: MICE, делегации и корпоративные группы"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 1263,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": "ItemList",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/cases/#list-1",
+                "name": "Кейсы Ada Tours: MICE, делегации и корпоративные группы",
+                "numberOfItems": 3,
+                "renderedItems": 3
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/chile/",
+            "sourcePages": [
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:26.685Z",
+            "requestUrl": "https://adatours.ru/chile/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/chile/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 268921,
+            "bodySha256": "84506a6ef2ae30e6c4773a91d2b6938d6acfa503088a99d2c4679ace4268aca6",
+            "canonical": "https://adatours.ru/chile/",
+            "ogUrl": "https://adatours.ru/chile/",
+            "title": "Чили: 113 локаций и 40 экскурсий. Каталог 2026-2027: 46 туров и цены от $1 492 туроператора Ada Tours",
+            "h1": [
+              "Чили"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 35687,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": [
+              "Country",
+              "TouristDestination"
+            ],
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/chile/#list-2",
+                "name": "Чили",
+                "numberOfItems": 15,
+                "renderedItems": 15
+              },
+              {
+                "id": "https://adatours.ru/chile/#list-3",
+                "name": "Туры в Чили",
+                "numberOfItems": 31,
+                "renderedItems": 31
+              },
+              {
+                "id": "https://adatours.ru/chile/#list-4",
+                "name": "Экскурсии в Чили",
+                "numberOfItems": 5,
+                "renderedItems": 5
+              },
+              {
+                "id": "https://adatours.ru/chile/#list-5",
+                "name": "Путешествия по интересам",
+                "numberOfItems": 8,
+                "renderedItems": 8
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/contacts/",
+            "sourcePages": [
+              "press",
+              "partners"
+            ],
+            "checkedAt": "2026-10-22T15:39:27.073Z",
+            "requestUrl": "https://adatours.ru/contacts/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/contacts/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 26028,
+            "bodySha256": "d7988fb82aaa11d22fef82e2cf369022b064040f9e085c0cc797ca7a8f220b9f",
+            "canonical": "https://adatours.ru/contacts/",
+            "ogUrl": "https://adatours.ru/contacts/",
+            "title": "Контакты и адреса Ada Tours",
+            "h1": [
+              "Обсудить поездку"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 812,
+            "schemaPageType": "ContactPage",
+            "mainEntityType": [
+              "Organization",
+              "TravelAgency"
+            ],
+            "itemLists": [],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/dmc/terms/",
+            "sourcePages": [
+              "partners"
+            ],
+            "checkedAt": "2026-10-22T15:39:27.134Z",
+            "requestUrl": "https://adatours.ru/dmc/terms/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/dmc/terms/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 44166,
+            "bodySha256": "4cbe8c0daef2978cacb28a6f4a693e858735346f661d83aa68a6151638e3c753",
+            "canonical": "https://adatours.ru/dmc/terms/",
+            "ogUrl": "https://adatours.ru/dmc/terms/",
+            "title": "Условия работы с DMC Ada Tours для турагентств",
+            "h1": [
+              "Условия работы с DMC Ada Tours"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 4732,
+            "schemaPageType": "WebPage",
+            "mainEntityType": "Service",
+            "itemLists": [],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/dmc/travel-agencies/",
+            "sourcePages": [
+              "press",
+              "webinars",
+              "partners"
+            ],
+            "checkedAt": "2026-10-22T15:39:27.542Z",
+            "requestUrl": "https://adatours.ru/dmc/travel-agencies/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/dmc/travel-agencies/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 46347,
+            "bodySha256": "bdfb187295902b3c992f22b01c4525b30de2980ae9c9f7f3f581ab9e0876a6a4",
+            "canonical": "https://adatours.ru/dmc/travel-agencies/",
+            "ogUrl": "https://adatours.ru/dmc/travel-agencies/",
+            "title": "DMC для турагентств и туроператоров в Бразилии | принимающий туроператор в Южной Америке Ada Tours",
+            "h1": [
+              "DMC для турагентств и туроператоров"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 4641,
+            "schemaPageType": "WebPage",
+            "mainEntityType": "Service",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/dmc/travel-agencies/#list-2",
+                "name": "DMC для турагентств и туроператоров",
+                "numberOfItems": 1,
+                "renderedItems": 1
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/mice/",
+            "sourcePages": [
+              "press",
+              "partners"
+            ],
+            "checkedAt": "2026-10-22T15:39:27.612Z",
+            "requestUrl": "https://adatours.ru/mice/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/mice/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 46584,
+            "bodySha256": "93ad87579987638774ee805922cf8b2219d99a7762b659afc709187d69e39c79",
+            "canonical": "https://adatours.ru/mice/",
+            "ogUrl": "https://adatours.ru/mice/",
+            "title": "MICE и корпоративные поездки для бизнеса по Бразилии и Латинской (Южной) Америке с принимающим русскоязычным туроператором Ada Tours",
+            "h1": [
+              "Корпоративная поездка, где все сходится по времени"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 4901,
+            "schemaPageType": "WebPage",
+            "mainEntityType": "Service",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/mice/#list-2",
+                "name": "Корпоративная поездка, где все сходится по времени",
+                "numberOfItems": 2,
+                "renderedItems": 2
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/multi-country/",
+            "sourcePages": [
+              "press",
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:27.679Z",
+            "requestUrl": "https://adatours.ru/multi-country/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/multi-country/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 279029,
+            "bodySha256": "682645a7d74d032df809b178380d8265605ede6a75cc415c2f52560985ddd622",
+            "canonical": "https://adatours.ru/multi-country/",
+            "ogUrl": "https://adatours.ru/multi-country/",
+            "title": "93 Multi-country тура по Латинской Америке — одна поездка по нескольким странам Южной Америки | Ada Tours",
+            "h1": [
+              "Туры по нескольким странам Латинской Америки"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 34381,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": "ItemList",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/multi-country/#catalog",
+                "name": "Туры по нескольким странам Латинской Америки",
+                "numberOfItems": 30,
+                "renderedItems": 30
+              }
+            ],
+            "catalogs": [
+              {
+                "key": "/multi-country/",
+                "total": 93,
+                "page": 1,
+                "visibleItems": 30
+              }
+            ],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/peru/",
+            "sourcePages": [
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:27.762Z",
+            "requestUrl": "https://adatours.ru/peru/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/peru/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 255828,
+            "bodySha256": "f0c5d2e56daf4f7eb21416faeeb3e413d7b34dcdd10132b9ebc161af100ed476",
+            "canonical": "https://adatours.ru/peru/",
+            "ogUrl": "https://adatours.ru/peru/",
+            "title": "Перу: 59 локаций и 42 экскурсии. Каталог 2026-2027: 35 туров и цены от $919 туроператора Ada Tours",
+            "h1": [
+              "Перу"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 33029,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": [
+              "Country",
+              "TouristDestination"
+            ],
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/peru/#list-2",
+                "name": "Перу",
+                "numberOfItems": 15,
+                "renderedItems": 15
+              },
+              {
+                "id": "https://adatours.ru/peru/#list-3",
+                "name": "Туры в Перу",
+                "numberOfItems": 31,
+                "renderedItems": 31
+              },
+              {
+                "id": "https://adatours.ru/peru/#list-4",
+                "name": "Экскурсии в Перу",
+                "numberOfItems": 5,
+                "renderedItems": 5
+              },
+              {
+                "id": "https://adatours.ru/peru/#list-5",
+                "name": "Путешествия по интересам",
+                "numberOfItems": 8,
+                "renderedItems": 8
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/team/",
+            "sourcePages": [
+              "partners"
+            ],
+            "checkedAt": "2026-10-22T15:39:27.832Z",
+            "requestUrl": "https://adatours.ru/team/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/team/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 41276,
+            "bodySha256": "39c492bd33eff82e60c5f3e856a3ab0a710fdcf67105d5b67d930d033e4d675f",
+            "canonical": "https://adatours.ru/team/",
+            "ogUrl": "https://adatours.ru/team/",
+            "title": "Команда Ada Tours в Бразилии и Латинской Америке",
+            "h1": [
+              "Команда Ada Tours в Бразилии и Латинской Америке"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 4129,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": "ItemList",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/team/#list-1",
+                "name": "Анна Аванесова",
+                "numberOfItems": 1,
+                "renderedItems": 1
+              }
+            ],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/team/anna-avanesova/",
+            "sourcePages": [
+              "press",
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:28.105Z",
+            "requestUrl": "https://adatours.ru/team/anna-avanesova/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/team/anna-avanesova/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 52816,
+            "bodySha256": "fb7d230ce081af88284b87599cdc7ed6e1337efa7aa04e86f1b42c94de2248e8",
+            "canonical": "https://adatours.ru/team/anna-avanesova/",
+            "ogUrl": "https://adatours.ru/team/anna-avanesova/",
+            "title": "Анна Аванесова: основатель и CEO Ada Tours",
+            "h1": [
+              "Анна Аванесова"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 3682,
+            "schemaPageType": "ProfilePage",
+            "mainEntityType": "Person",
+            "itemLists": [],
+            "catalogs": [],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/tours/",
+            "sourcePages": [
+              "press",
+              "webinars"
+            ],
+            "checkedAt": "2026-10-22T15:39:28.366Z",
+            "requestUrl": "https://adatours.ru/tours/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/tours/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 230434,
+            "bodySha256": "c486f06fe1897783f23832dde8625ca1729f6bec212fff556d2f462c822c9594",
+            "canonical": "https://adatours.ru/tours/",
+            "ogUrl": "https://adatours.ru/tours/",
+            "title": "Каталог 358 туров 2026-2027 по Бразилии и Южной Америке - заказать и купить тур в Латинскую Америку по лучшей цене от $136 напрямую у принимающего туроператора Ada Tours",
+            "h1": [
+              "Путешествия по Латинской Америке"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 27732,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": "ItemList",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/tours/#catalog",
+                "name": "Путешествия по Латинской Америке",
+                "numberOfItems": 30,
+                "renderedItems": 30
+              }
+            ],
+            "catalogs": [
+              {
+                "key": "/tours/",
+                "total": 358,
+                "page": 1,
+                "visibleItems": 30
+              }
+            ],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          },
+          {
+            "path": "/vip/",
+            "sourcePages": [
+              "press",
+              "partners"
+            ],
+            "checkedAt": "2026-10-22T15:39:28.428Z",
+            "requestUrl": "https://adatours.ru/vip/",
+            "status": 200,
+            "finalUrl": "https://adatours.ru/vip/",
+            "redirected": false,
+            "contentType": "text/html; charset=utf-8",
+            "bytes": 201316,
+            "bodySha256": "5841f072115005857d21ca614afea350470d81d44f26defb0e66d519a97af0eb",
+            "canonical": "https://adatours.ru/vip/",
+            "ogUrl": "https://adatours.ru/vip/",
+            "title": "90 VIP и Luxury туров по Южной Америке. Премиальные поездки и путешествия по 24 странам Латинской Америки с Ada Tours по выгодным ценам от $3 809",
+            "h1": [
+              "Путешествие, устроенное вокруг вас"
+            ],
+            "robots": [
+              {
+                "name": "robots",
+                "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+              }
+            ],
+            "xRobotsTag": [],
+            "noindex": false,
+            "mainTextCharacters": 22922,
+            "schemaPageType": "CollectionPage",
+            "mainEntityType": "ItemList",
+            "itemLists": [
+              {
+                "id": "https://adatours.ru/vip/#catalog",
+                "name": "Путешествие, устроенное вокруг вас",
+                "numberOfItems": 30,
+                "renderedItems": 30
+              }
+            ],
+            "catalogs": [
+              {
+                "key": "/vip/",
+                "total": 90,
+                "page": 1,
+                "visibleItems": 30
+              }
+            ],
+            "jsonLdErrors": [],
+            "concerns": [],
+            "result": "pass"
+          }
+        ]
+      },
+      "phase": "before-first-deploy",
+      "reportPath": "research/authority-internal-links.json",
+      "checkedAt": "2026-10-22T15:39:24.524Z",
+      "finishedAt": "2026-10-22T15:39:29.033Z",
+      "summary": {
+        "targets": 17,
+        "passed": 17,
+        "review": 0,
+        "errors": 0,
+        "http200": 17,
+        "canonicalMatches": 17,
+        "ogUrlMatches": 17,
+        "noindexPages": 0,
+        "redirects": 0,
+        "nonemptyCatalogs": {
+          "/brazil/tour/": {
+            "key": "/brazil/tour/",
+            "total": 148,
+            "page": 1,
+            "visibleItems": 30
+          },
+          "/multi-country/": {
+            "key": "/multi-country/",
+            "total": 93,
+            "page": 1,
+            "visibleItems": 30
+          },
+          "/tours/": {
+            "key": "/tours/",
+            "total": 358,
+            "page": 1,
+            "visibleItems": 30
+          },
+          "/vip/": {
+            "key": "/vip/",
+            "total": 90,
+            "page": 1,
+            "visibleItems": 30
+          }
+        }
+      },
+      "note": "17 already published internal destinations checked before the new release completed, not a second post-deploy check. The three new pages are checked under published-authority-pages."
+    },
+    {
+      "check": "standard-pages-ci",
+      "status": "passed",
+      "releaseCommit": "8a068ca8ebcf7cc9e2f3f097788c71f4b3ea45d0",
+      "run": 39806119109,
+      "deployJob": 119927127311,
+      "runStatus": "completed",
+      "runConclusion": "success",
+      "runUpdatedAt": "2026-10-22T15:49:52Z",
+      "testsPassed": 297,
+      "builtPages": 6132,
+      "schemaErrors": 0,
+      "evidence": "Completed GitHub Actions run and deploy job verified by release owner."
+    },
+    {
+      "check": "published-authority-pages",
+      "status": "passed",
+      "reportPath": "research/authority-live/report.json",
+      "checkedAt": "2026-10-22T15:52:36.787Z",
+      "finishedAt": "2026-10-22T15:52:39.216Z",
+      "transport": "curl HTTPS",
+      "schemaVersion": "2026-10-22.2",
+      "errors": [],
+      "pages": [
+        {
+          "path": "/partners/",
+          "status": 200,
+          "finalUrl": "https://adatours.ru/partners/",
+          "title": "Международные партнеры и представители Ada Tours",
+          "description": "Партнеры Ada Tours: JAN Tourism Consultancy, REPS Unlimited и Global Destinations. Представительство на зарубежных рынках и членство в ABAV-RJ.",
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "bytes": 53618,
+          "jsonLdScripts": 1,
+          "nodes": 19,
+          "listId": "https://adatours.ru/partners/#authority-list",
+          "listItems": 4,
+          "articles": 1,
+          "events": 0,
+          "organizations": 5,
+          "visibleSources": 5,
+          "faqItems": 4,
+          "ogImage": "https://img.adatours.ru/media/social-previews/v1/788da0287b12bef0ac890d3d37de.jpg"
+        },
+        {
+          "path": "/press/",
+          "status": 200,
+          "finalUrl": "https://adatours.ru/press/",
+          "title": "Ada Tours в СМИ: интервью, публикации и международные выставки",
+          "description": "Ada Tours и Анна Аванесова в туристических изданиях: интервью, репортажи с ILTM, ITB и WTM, партнерства и поездки по Бразилии и Латинской Америке.",
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "bytes": 84464,
+          "jsonLdScripts": 1,
+          "nodes": 26,
+          "listId": "https://adatours.ru/press/#authority-list",
+          "listItems": 13,
+          "articles": 13,
+          "events": 0,
+          "organizations": 1,
+          "visibleSources": 13,
+          "faqItems": 4,
+          "ogImage": "https://img.adatours.ru/media/social-previews/v1/c1197864505078dfd174a02716ac.jpg"
+        },
+        {
+          "path": "/webinars/",
+          "status": 200,
+          "finalUrl": "https://adatours.ru/webinars/",
+          "title": "Вебинары Анны Аванесовой о Латинской Америке | Ada Tours",
+          "description": "Вебинары Ada Tours для турагентов и путешественников: Бразилия, маршруты по нескольким странам, индивидуальные поездки и интервью Анны Аванесовой.",
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "bytes": 69646,
+          "jsonLdScripts": 1,
+          "nodes": 24,
+          "listId": "https://adatours.ru/webinars/#authority-list",
+          "listItems": 6,
+          "articles": 1,
+          "events": 6,
+          "organizations": 1,
+          "visibleSources": 7,
+          "faqItems": 4,
+          "ogImage": "https://img.adatours.ru/media/social-previews/v1/c6e39dd1235677b8514e49bb71b0.jpg"
+        }
+      ],
+      "verified": [
+        "canonical",
+        "title",
+        "description",
+        "robots",
+        "Open Graph and Twitter metadata",
+        "unique graph IDs",
+        "visible source links and rel",
+        "source dates and update labels",
+        "ItemList IDs, positions and visible items",
+        "visible FAQ text",
+        "hero images",
+        "whole Anna portrait"
+      ],
+      "imageAssets": {
+        "checked": 10,
+        "http200": 10,
+        "correctImageContentTypes": true
+      },
+      "sitemap": {
+        "indexUrl": "https://adatours.ru/sitemap-index.xml",
+        "status": 200,
+        "childFiles": [
+          "https://adatours.ru/sitemap-0.xml"
+        ],
+        "totalUrls": 6096,
+        "pages": {
+          "press": true,
+          "webinars": true,
+          "partners": true
+        }
+      },
+      "robotsTxtStatus": 200,
+      "note": "An earlier direct Node fetch attempt failed before any HTTP response. This successful curl report replaces that transport diagnostic."
+    },
+    {
+      "check": "published-schema-regression",
+      "status": "passed",
+      "reportPath": "research/authority-regression/comparison.json",
+      "checkedAt": "2026-10-22T15:51:07.496Z",
+      "releaseCommit": "8a068ca8ebcf7cc9e2f3f097788c71f4b3ea45d0",
+      "scope": "Only GET /brazil/ and /team/anna-avanesova/; no crawling; no repository mutations.",
+      "pages": [
+        {
+          "url": "https://adatours.ru/brazil/",
+          "baselineAt": "2026-10-22T15:38:38.739Z",
+          "afterAt": "2026-10-22T15:50:05.990Z",
+          "httpStatus": 200,
+          "canonicalUnchanged": true,
+          "schemaScriptsBefore": 1,
+          "schemaScriptsAfter": 1,
+          "nodeCountBefore": 119,
+          "nodeCountAfter": 119,
+          "fullSchemaUnchanged": true,
+          "meaningfulFactsSha256Before": "33e19239ced4da4bae2d433ccc63a8072657818a4caa60ecb55b2c475a3a53d0",
+          "meaningfulFactsSha256After": "33e19239ced4da4bae2d433ccc63a8072657818a4caa60ecb55b2c475a3a53d0",
+          "geography": {
+            "before": 41,
+            "after": 41,
+            "removed": [],
+            "added": [],
+            "changed": []
+          },
+          "passed": true
+        },
+        {
+          "url": "https://adatours.ru/team/anna-avanesova/",
+          "baselineAt": "2026-10-22T15:38:38.755Z",
+          "afterAt": "2026-10-22T15:50:06.023Z",
+          "httpStatus": 200,
+          "canonicalUnchanged": true,
+          "schemaScriptsBefore": 1,
+          "schemaScriptsAfter": 1,
+          "nodeCountBefore": 18,
+          "nodeCountAfter": 18,
+          "fullSchemaUnchanged": true,
+          "meaningfulFactsSha256Before": "57e1d971ba067f923a7287253ca5daacfb8ce2394063488242f4aefa1d9eb062",
+          "meaningfulFactsSha256After": "57e1d971ba067f923a7287253ca5daacfb8ce2394063488242f4aefa1d9eb062",
+          "geography": {
+            "before": 1,
+            "after": 1,
+            "removed": [],
+            "added": [],
+            "changed": []
+          },
+          "passed": true
+        }
+      ],
+      "verifiedProperties": [
+        "stable @id",
+        "sameAs",
+        "hasMap",
+        "geo",
+        "subjectOf",
+        "performerIn"
+      ],
+      "note": "Full JSON-LD equality confirmed on the two sampled existing pages; complete generated-site schema validation is recorded separately under standard-pages-ci."
+    },
+    {
+      "check": "published-desktop-interface",
+      "status": "passed",
+      "releaseCommit": "8a068ca8ebcf7cc9e2f3f097788c71f4b3ea45d0",
+      "evidence": "Direct CUA observations reported by release owner; no screenshot files saved.",
+      "paths": [
+        "/press/",
+        "/webinars/",
+        "/partners/"
+      ],
+      "viewportWidth": 1363,
+      "documentWidth": 1348,
+      "horizontalOverflow": false,
+      "heroImagesLoaded": 3,
+      "annaPortrait": {
+        "width": 1254,
+        "height": 1254,
+        "wholeImageVisible": true
+      },
+      "aboutNavLinks": 8,
+      "aboutDropdownKeyboardAccessible": true,
+      "navigationClicksPassed": [
+        "Webinars",
+        "Partners"
+      ],
+      "search": {
+        "query": "вебинары Анны",
+        "results": 1,
+        "title": "Вебинары Анны Аванесовой о Латинской Америке",
+        "label": "О КОМПАНИИ · Вебинары",
+        "summaryCorrect": true
+      },
+      "faq": {
+        "path": "/partners/",
+        "question": "Можно ли обратиться в Ada Tours напрямую?",
+        "expandedAnswerVisible": true
+      },
+      "cta": {
+        "label": "Отправить партнерский запрос",
+        "destination": "/partners/#request",
+        "formHeadingVisible": true,
+        "formHeadingViewportY": [
+          174,
+          386
+        ],
+        "formSubmitted": false
+      },
+      "mobileViewportVerified": false,
+      "mobileCoverage": "Earlier JavaScript behavior scenarios and CSS inspection only; an actual mobile viewport was unavailable.",
+      "typographyIssue": "Extra whitespace before punctuation beside inline links; local fix tracked separately and not yet deployed."
+    },
+    {
+      "check": "authority-inline-typography-ssr",
+      "status": "passed",
+      "deploymentStatus": "pending",
+      "component": "src/components/authority/AuthorityInline.astro",
+      "reportPath": "research/authority-inline-ssr-report.json",
+      "mode": "Focused real AuthorityInline SSR via compiler-rs and AstroContainer",
+      "cases": 6,
+      "passedCases": 6,
+      "compilerDiagnostics": [],
+      "coverage": [
+        "punctuation after links",
+        "bold inline text",
+        "nested bold link label",
+        "HTML escaping",
+        "unbalanced formatting",
+        "anchor links and unsupported external markdown links"
+      ],
+      "note": "Previously completed focused real-component SSR; no tests were rerun while updating this audit."
     }
-  ]
+  ],
+  "releaseCommit": "8a068ca8ebcf7cc9e2f3f097788c71f4b3ea45d0",
+  "deploymentRun": 39806119109,
+  "updatedAt": "2026-10-22T16:02:04Z",
+  "deploymentJob": 119927127311,
+  "deploymentStatus": "success",
+  "deploymentRunUpdatedAt": "2026-10-22T15:49:52Z",
+  "pendingFollowUp": {
+    "status": "prepared-awaiting-deployment",
+    "file": "src/components/authority/AuthorityInline.astro",
+    "change": "Remove extra whitespace before punctuation adjacent to inline links.",
+    "localCheck": "authority-inline-typography-ssr: 6/6 passed",
+    "releaseCommit": null,
+    "deploymentRun": null,
+    "note": "The live and regression checks above describe the first published release; they do not claim that this local typography correction is published."
+  }
 }

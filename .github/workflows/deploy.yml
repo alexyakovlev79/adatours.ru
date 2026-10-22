@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths-ignore:
       - data/media/upload-session-request.json
+      - data/media/upload-session-requests/**
   workflow_dispatch:
   schedule:
     # December 31 at 21:05 UTC = January 1 at 00:05 Moscow time.

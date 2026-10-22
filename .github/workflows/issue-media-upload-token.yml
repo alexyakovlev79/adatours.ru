@@ -5,18 +5,30 @@ on:
     branches: [main]
     paths:
       - data/media/upload-session-request.json
+      - data/media/upload-session-requests/*.json
   workflow_dispatch:
+    inputs:
+      request_json:
+        description: Public X25519 session request JSON only; never a private key or credential
+        required: false
+        type: string
+      request_id:
+        description: Exact 32-character hexadecimal requestId from request_json
+        required: false
+        type: string
 
 permissions:
   contents: read
   id-token: write
 
 concurrency:
-  group: adatours-media-session-token
+  # Every immutable mailbox request gets its own runner, never a shared pending slot.
+  group: adatours-media-session-token-${{ github.run_id }}
   cancel-in-progress: false
 
 jobs:
   issue:
+    if: ${{ github.ref == 'refs/heads/main' && github.repository == 'alexyakovlev79/adatours.ru' }}
     name: Seal temporary S3 token for one Work session
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -25,21 +37,80 @@ jobs:
     steps:
       - name: Checkout current main
         uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
       - name: Node.js 24
         uses: actions/setup-node@v6
         with:
           node-version: 24
       - name: Validate short-lived upload request
+        id: request
+        env:
+          MEDIA_INPUT_REQUEST: ${{ inputs.request_json }}
+          MEDIA_INPUT_REQUEST_ID: ${{ inputs.request_id }}
         run: |
-          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
-          node --input-type=module -e "
-            import fs from 'node:fs';
-            import {validateSessionRequest} from './scripts/lib/media-token-envelope.mjs';
-            validateSessionRequest(JSON.parse(fs.readFileSync('data/media/upload-session-request.json', 'utf8')));
-            console.log('One-time X25519 Work session verified.');
-          "
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import {execFileSync} from 'node:child_process';
+          import {validateSessionRequest} from './scripts/lib/media-token-envelope.mjs';
+          const check = (ok, message) => { if (!ok) throw Error(message); };
+          check(process.env.YC_SA_ID, 'Missing YC_MEDIA_SA_ID');
+          const legacy = 'data/media/upload-session-request.json';
+          const prefix = 'data/media/upload-session-requests/';
+          let raw, expectedId;
+          if (process.env.GITHUB_EVENT_NAME === 'workflow_dispatch') {
+            const input = process.env.MEDIA_INPUT_REQUEST || '';
+            expectedId = process.env.MEDIA_INPUT_REQUEST_ID || '';
+            check(Boolean(input) === Boolean(expectedId), 'Supply both request_json and request_id');
+            if (input) {
+              check(/^[0-9a-f]{32}$/.test(expectedId), 'Invalid dispatch request_id');
+              raw = input;
+            } else {
+              // Backward-compatible manual run of the original singleton request.
+              raw = fs.readFileSync(legacy, 'utf8');
+            }
+          } else {
+            check(process.env.GITHUB_EVENT_NAME === 'push', 'Unsupported request event');
+            const event = JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
+            check(event.ref === 'refs/heads/main', 'Mailbox pushes must target main');
+            check(/^[0-9a-f]{40}$/.test(event.before || '') && /^[0-9a-f]{40}$/.test(event.after || ''), 'Invalid push revision');
+            // Read data at the triggering commit, never a later worker's main HEAD.
+            const changes = execFileSync('git', ['diff', '--no-renames', '--name-status', '-z', event.before, event.after], {encoding:'utf8'}).split('\0');
+            const requests = [];
+            for (let i=0; i+1<changes.length; i+=2) {
+              const status=changes[i], file=changes[i+1];
+              if (file===legacy || file.startsWith(prefix)) requests.push({status,file});
+            }
+            check(requests.length===1, 'Push must contain exactly one session request change');
+            const {status,file}=requests[0];
+            if (file===legacy) check(status==='A' || status==='M', 'Invalid legacy request change');
+            else {
+              const match=/^data\/media\/upload-session-requests\/([0-9a-f]{32})\.json$/.exec(file);
+              check(match && status==='A', 'Mailbox requests must be newly created immutable requestId.json files');
+              expectedId=match[1];
+            }
+            raw=execFileSync('git', ['show', event.after+':'+file], {encoding:'utf8',maxBuffer:16384});
+          }
+          check(typeof raw==='string' && Buffer.byteLength(raw)<=4096, 'Request is too large');
+          const request=JSON.parse(raw);
+          const fields=['bucket','createdAt','recipientPublicKey','requestId','version'];
+          check(request && !Array.isArray(request) && Object.keys(request).sort().join(',')===fields.join(','), 'Only public session request fields are allowed');
+          check(typeof request.recipientPublicKey==='string' && request.recipientPublicKey.length<=128, 'Invalid public key size');
+          check(typeof request.createdAt==='string' && request.createdAt.length<=40, 'Invalid request timestamp');
+          validateSessionRequest(request);
+          check(!expectedId || request.requestId===expectedId, 'Request ID does not match dispatch input or mailbox filename');
+          const file=path.join(process.env.RUNNER_TEMP, 'media-session-'+request.requestId+'.json');
+          fs.writeFileSync(file, JSON.stringify(request)+'\n', {mode:0o600,flag:'wx'});
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, 'request_file='+file+'\nrequest_id='+request.requestId+'\n');
+          console.log('Validated public X25519 session request: '+request.requestId);
+          NODE
       - name: Exchange GitHub OIDC token and seal temporary credential
         shell: bash
+        env:
+          MEDIA_REQUEST_FILE: ${{ steps.request.outputs.request_file }}
         run: |
           set -euo pipefail
           oidc_json="$(curl --fail --silent --show-error --get \
@@ -62,12 +133,12 @@ jobs:
 
           MEDIA_ENVELOPE_OUTPUT=media-upload-session-envelope.json \
             YC_MEDIA_IAM_TOKEN="$iam_token" \
-            node scripts/issue-media-token.mjs data/media/upload-session-request.json
+            node scripts/issue-media-token.mjs "$MEDIA_REQUEST_FILE"
 
       - name: Downloadable encrypted token packet, never plaintext
         uses: actions/upload-artifact@v4
         with:
-          name: encrypted-media-session-${{ github.run_id }}
+          name: encrypted-media-session-${{ steps.request.outputs.request_id }}-${{ github.run_id }}
           path: media-upload-session-envelope.json
           if-no-files-found: error
           retention-days: 1

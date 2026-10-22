@@ -9,7 +9,7 @@
 1. Сгенерировать одноразовые ключи и запрос **вне Git-репозитория**:
    `node scripts/media-work-session.mjs init --out /tmp/adatours-media-session`.
    Вывод покажет пути `*.request.json` и `*.private.pem`. Приватный файл остается только на компьютере Work и не попадает в GitHub, сообщения или логи.
-2. Через GitHub connector записать **только JSON из `*.request.json`** в `data/media/upload-session-request.json` на ветке `main`. Создать файл при первом использовании; затем обновлять существующий. Это маленький публичный ключ, не пароль и не изображение.
+2. Через GitHub connector записать **только JSON из `*.request.json`** в `data/media/upload-session-request.json` на ветке `main`. Создать файл при первом использовании; затем обновлять существующий. Это маленький публичный ключ, не пароль и не изображение. **При параллельной работе вместо общего файла использовать независимые запросы из раздела ниже.**
 3. GitHub Actions автоматически запускает **Issue encrypted short-lived media upload token**. В логе найти **только строку `SEALED_MEDIA_TOKEN=...`** или скачать одноименный зашифрованный артефакт. Содержимое зашифровано X25519 + AES-256-GCM для локального приватного ключа Work. Время действия пакета — 10 минут, запрос живет не более 20 минут. При истечении срока повторить подготовку сеанса.
 4. Подготовить локальный текстовый `batch.json` вне Git (не более 30 файлов):
    ```json
@@ -39,6 +39,37 @@
    `node scripts/merge-direct-media-receipt.mjs /tmp/ada-work/receipt.json`.
    Затем обновить только необходимые Tour/Country/Excursion/Destination MD, provenance, и привычные фотореестры. Один логический commit **только текстовых изменений**, включая `src/data/media/direct-s3-uploads.json`. Все бинарные файлы оставить вне Git.
 7. GitHub Actions перед публикацией проверяет каждую запись в S3 по размеру, SHA-256 и MIME. Если объекта нет — деплой блокируется, предыдущее опубликованное состояние сайта сохраняется.
+
+## Независимые запросы для параллельных чатов
+
+После публикации обновленного `issue-media-upload-token.yml` в main каждому чату доступен отдельный канал запроса. Сначала закончить обрезку и кодирование, затем создать свежую локальную сессию командой из п.1: запрос действителен 20 минут, полученный зашифрованный допуск — 10 минут. Приватный ключ остается только локально.
+
+**Через доступный GitHub connector:** создать **новый** текстовый файл `data/media/upload-session-requests/<requestId>.json` в main. Его имя должно точно совпадать с `requestId` внутри публичного JSON. Один запрос — один create-file commit. Не изменять существующий mailbox-файл и не добавлять `[skip ci]` / `[skip actions]` в сообщение: это остановит выпуск допуска.
+
+```javascript
+// request — только прочитанный локальный *.request.json, без приватного ключа.
+const result = await tools.mcp__codex_apps__github_create_file({
+  repository_full_name: 'alexyakovlev79/adatours.ru',
+  branch: 'main',
+  path: 'data/media/upload-session-requests/' + request.requestId + '.json',
+  content: JSON.stringify(request, null, 2) + '\n',
+  message: 'media: request isolated upload session ' + request.requestId
+});
+```
+
+Сохранить SHA коммита. Найти именно его запуск через GET `https://api.github.com/repos/alexyakovlev79/adatours.ru/actions/workflows/issue-media-upload-token.yml/runs?event=push&head_sha=<COMMIT_SHA>`. Обычный `fetch_commit_workflow_runs` здесь не подходит: его текущая обертка возвращает только запуски pull request. Для неопределенного ответа create-file сначала перечитать **тот же** путь и сравнить публичный запрос, затем найти его создание через GET `.../commits?sha=main&path=data/media/upload-session-requests/<requestId>.json&per_page=1`; не перезаписывать файл и не создавать новый резерв автоматически.
+
+В соответствующем запуске взять `SEALED_MEDIA_TOKEN` либо артефакт `encrypted-media-session-<requestId>-<runId>`, проверить совпадение requestId и выполнить локальную загрузку из п.5. Сеансы не делят общий concurrency slot. Данные запроса читаются из **точного triggering commit**, а исполняемый код — только из main; произвольные ref, код и учетные данные в запросе отвергаются. Публикация сайта должна игнорировать `data/media/upload-session-requests/**`, как и старый singleton-файл.
+
+**Если доступен workflow dispatch:** запустить `issue-media-upload-token.yml` строго с `ref: main` и обоими строковыми inputs: `request_json` — полный публичный JSON; `request_id` — его точный requestId. Например:
+
+```sh
+gh workflow run issue-media-upload-token.yml --ref main \
+  -f request_json="$(cat /tmp/adatours-media-session/<id>.request.json)" \
+  -f request_id='<id>'
+```
+
+Текущий набор GitHub connector tools не содержит запуска workflow dispatch; mailbox выше выполняется через имеющийся create-file tool. Старые singleton push и ручной dispatch без inputs сохранены для последовательной работы. Локальный upload по-прежнему принимает максимум 30 файлов за вызов; большие наборы делить, затем сохранять все подтвержденные receipts. В рое receipts хранятся отдельно по пакетам; общий `direct-s3-uploads.json` объединяет мастер при финальном подключении.
 
 ## Безопасность и отказоустойчивость
 

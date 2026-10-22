@@ -437,6 +437,257 @@
         "productionBuild": "success",
         "journal": "PSI Runs273–284; Summary73–76; Changes9; formulas/native formats/validation verified through API. Native visual render unavailable in existing unauthenticated Google browser; no login attempted."
       }
+    },
+    {
+      "id": "P05",
+      "title": "Shared hover and viewport video-cover playback with orientation-based borrowed heroes",
+      "status": "published_measured",
+      "authorization": "Alexey requests all six shared cover rules and mobile country card height reduction; country examples must not be special cases.",
+      "scope": "All existing common hero/borrowed-cover integrations; mobile home country cards -12.5%; existing media unchanged.",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "successfulDeployRun": 39791792223,
+      "initialSourceCommit": "88c8e0e941245f87c1bc4d4d2c7a197cbd01b3de",
+      "raw": "data/performance/runs/P05-video-cover-playback-20261022.json",
+      "validRuns": 24,
+      "excluded": {
+        "DRIFT": 4
+      },
+      "measured": {
+        "home": {
+          "Mobile": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 78,
+              "fcpMs": 1211,
+              "lcpMs": 5329,
+              "tbtMs": 60,
+              "cls": 0,
+              "siMs": 4423,
+              "performanceRange": [
+                76,
+                78
+              ],
+              "lcpRangeMs": [
+                5299,
+                5433
+              ],
+              "fcpRangeMs": [
+                1208,
+                1212
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 69,
+              "fcpMs": 3780,
+              "lcpMs": 5497,
+              "tbtMs": 18,
+              "cls": 0,
+              "siMs": 4960,
+              "performanceRange": [
+                69,
+                74
+              ],
+              "lcpRangeMs": [
+                5369,
+                5820
+              ],
+              "fcpRangeMs": [
+                1201,
+                3825
+              ]
+            }
+          },
+          "Desktop": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 95,
+              "fcpMs": 304,
+              "lcpMs": 1508,
+              "tbtMs": 54,
+              "cls": 0,
+              "siMs": 853,
+              "performanceRange": [
+                95,
+                95
+              ],
+              "lcpRangeMs": [
+                1461,
+                1551
+              ],
+              "fcpRangeMs": [
+                292,
+                306
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 96,
+              "fcpMs": 295,
+              "lcpMs": 1385,
+              "tbtMs": 30,
+              "cls": 0,
+              "siMs": 753,
+              "performanceRange": [
+                96,
+                97
+              ],
+              "lcpRangeMs": [
+                1208,
+                1427
+              ],
+              "fcpRangeMs": [
+                290,
+                309
+              ]
+            }
+          }
+        },
+        "brazil": {
+          "Mobile": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 76,
+              "fcpMs": 1351,
+              "lcpMs": 6483,
+              "tbtMs": 95,
+              "cls": 0,
+              "siMs": 2927,
+              "performanceRange": [
+                64,
+                78
+              ],
+              "lcpRangeMs": [
+                5660,
+                6828
+              ],
+              "fcpRangeMs": [
+                1351,
+                3922
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 65,
+              "fcpMs": 3941,
+              "lcpMs": 6801,
+              "tbtMs": 3,
+              "cls": 0,
+              "siMs": 5241,
+              "performanceRange": [
+                64,
+                78
+              ],
+              "lcpRangeMs": [
+                6185,
+                7716
+              ],
+              "fcpRangeMs": [
+                1351,
+                3954
+              ]
+            }
+          },
+          "Desktop": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 95,
+              "fcpMs": 342,
+              "lcpMs": 1349,
+              "tbtMs": 12,
+              "cls": 0,
+              "siMs": 742,
+              "performanceRange": [
+                91,
+                97
+              ],
+              "lcpRangeMs": [
+                1218,
+                1475
+              ],
+              "fcpRangeMs": [
+                337,
+                376
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 95,
+              "fcpMs": 345,
+              "lcpMs": 1530,
+              "tbtMs": 5,
+              "cls": 0,
+              "siMs": 951,
+              "performanceRange": [
+                92,
+                95
+              ],
+              "lcpRangeMs": [
+                1476,
+                1754
+              ],
+              "fcpRangeMs": [
+                333,
+                349
+              ]
+            }
+          }
+        }
+      },
+      "verification": {
+        "nodePolicyAndSelectionTests": 18,
+        "runtimeDomScenarios": 15,
+        "astroSsrIntegrations": 7,
+        "productionBuild": {
+          "tests": 291,
+          "failed": 0,
+          "pages": 6129
+        },
+        "publication": "Media/build/deploy/report success; final live bundle BUztSkvO contains touch-input guard; all jobs successful.",
+        "browser": {
+          "viewport": [
+            1363,
+            936
+          ],
+          "initialMoviesWithoutHover": 0,
+          "editorialPhotoInVideoBranch": false,
+          "cardHover": {
+            "top": 111.296875,
+            "bottom": 791.296875,
+            "playing": true,
+            "time": 5.467203
+          },
+          "hoverOutReturnsFirstFrame": true,
+          "clippedEdgeStops": true,
+          "catalogBorrowedCoverAutomatic": true,
+          "screenshot": "adatours-video-covers-p05-1792680225507.jpg"
+        },
+        "physicalPhoneTested": false,
+        "journal": "PSI Runs285–312 (24VALID,4DRIFT); Summary77–84; Changes10. Native values/formulas/formats/validation/links checked via API. Export layout reviewed; artifact renderer cannot evaluate exported Sheets FILTER formulas; native API values are correct. Native browser view was blocked at Google sign-in; no sign-in attempted."
+      },
+      "diagnostic": {
+        "pageId": "home",
+        "device": "Mobile",
+        "run": 2,
+        "reportId": "cq21c3ux48",
+        "element": "img.hero-video-poster",
+        "resource": "https://img.adatours.ru/media/video-posters/home-hero-mobile-20261021-v1-first-frame-20261021-v1.webp",
+        "ttfbMs": 10,
+        "loadDelayMs": 1360,
+        "loadDurationMs": 390,
+        "renderDelayMs": 650,
+        "note": "Observed LCP audit subpart values; not summed to simulated headline LCP. Early first-frame request is a proposed next experiment, not implemented."
+      },
+      "conclusion": "Mobile scores worsened in this series; no mobile acceleration claim. Desktop starts with frame only and no movie until hover, so workload differs. Concurrent entity-authority source and three-sample variability prevent isolated causal attribution. Next proposed experiment: request chosen first frame before main JS; not implemented.",
+      "nextCycleRequiresDiscussion": true
     }
   ]
 }

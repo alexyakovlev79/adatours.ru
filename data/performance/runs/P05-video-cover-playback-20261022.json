@@ -1,10 +1,229 @@
 {
   "experiment": "P05",
+  "date": "2026-10-22",
+  "status": "published_measured",
+  "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+  "successfulDeployRun": 39791792223,
+  "initialSourceCommit": "88c8e0e941245f87c1bc4d4d2c7a197cbd01b3de",
+  "initialDeployRun": 39789253856,
   "beforeRuntime": "16b557b50a4e050c480699eaeeec77796b529728",
   "beforePagesRun": 39769291693,
   "beforeHashes": {
     "home": "8abc3d54904c59d96eee30d9f6d05d2e7580a8e6cff67982dfb857453b7fe686",
     "brazil": "eafab746a55303a108b1d1cf4e8d40705231a8e56732068899316bd0e6ff0087"
+  },
+  "afterHashes": {
+    "home": "11a059c128ed908f56286420ec3c463d91ae55bd8deca3496eb991b6f1d146bd",
+    "brazil": "9d360f6a451ad6e1bb73b4e7b7b4733c3c2004854a7179432f387f19fc1fc725"
+  },
+  "htmlStableBeforeAndAfterEachSeries": true,
+  "concurrentSourceCommit": "d6b20a16b75d47e17fb2d1a91af95478aa0be30a",
+  "validRuns": 24,
+  "excluded": {
+    "DRIFT": 4
+  },
+  "measured": {
+    "home": {
+      "Mobile": {
+        "before": {
+          "count": 3,
+          "complete": true,
+          "performance": 78,
+          "fcpMs": 1211,
+          "lcpMs": 5329,
+          "tbtMs": 60,
+          "cls": 0,
+          "siMs": 4423,
+          "performanceRange": [
+            76,
+            78
+          ],
+          "lcpRangeMs": [
+            5299,
+            5433
+          ],
+          "fcpRangeMs": [
+            1208,
+            1212
+          ]
+        },
+        "after": {
+          "count": 3,
+          "complete": true,
+          "performance": 69,
+          "fcpMs": 3780,
+          "lcpMs": 5497,
+          "tbtMs": 18,
+          "cls": 0,
+          "siMs": 4960,
+          "performanceRange": [
+            69,
+            74
+          ],
+          "lcpRangeMs": [
+            5369,
+            5820
+          ],
+          "fcpRangeMs": [
+            1201,
+            3825
+          ]
+        }
+      },
+      "Desktop": {
+        "before": {
+          "count": 3,
+          "complete": true,
+          "performance": 95,
+          "fcpMs": 304,
+          "lcpMs": 1508,
+          "tbtMs": 54,
+          "cls": 0,
+          "siMs": 853,
+          "performanceRange": [
+            95,
+            95
+          ],
+          "lcpRangeMs": [
+            1461,
+            1551
+          ],
+          "fcpRangeMs": [
+            292,
+            306
+          ]
+        },
+        "after": {
+          "count": 3,
+          "complete": true,
+          "performance": 96,
+          "fcpMs": 295,
+          "lcpMs": 1385,
+          "tbtMs": 30,
+          "cls": 0,
+          "siMs": 753,
+          "performanceRange": [
+            96,
+            97
+          ],
+          "lcpRangeMs": [
+            1208,
+            1427
+          ],
+          "fcpRangeMs": [
+            290,
+            309
+          ]
+        }
+      }
+    },
+    "brazil": {
+      "Mobile": {
+        "before": {
+          "count": 3,
+          "complete": true,
+          "performance": 76,
+          "fcpMs": 1351,
+          "lcpMs": 6483,
+          "tbtMs": 95,
+          "cls": 0,
+          "siMs": 2927,
+          "performanceRange": [
+            64,
+            78
+          ],
+          "lcpRangeMs": [
+            5660,
+            6828
+          ],
+          "fcpRangeMs": [
+            1351,
+            3922
+          ]
+        },
+        "after": {
+          "count": 3,
+          "complete": true,
+          "performance": 65,
+          "fcpMs": 3941,
+          "lcpMs": 6801,
+          "tbtMs": 3,
+          "cls": 0,
+          "siMs": 5241,
+          "performanceRange": [
+            64,
+            78
+          ],
+          "lcpRangeMs": [
+            6185,
+            7716
+          ],
+          "fcpRangeMs": [
+            1351,
+            3954
+          ]
+        }
+      },
+      "Desktop": {
+        "before": {
+          "count": 3,
+          "complete": true,
+          "performance": 95,
+          "fcpMs": 342,
+          "lcpMs": 1349,
+          "tbtMs": 12,
+          "cls": 0,
+          "siMs": 742,
+          "performanceRange": [
+            91,
+            97
+          ],
+          "lcpRangeMs": [
+            1218,
+            1475
+          ],
+          "fcpRangeMs": [
+            337,
+            376
+          ]
+        },
+        "after": {
+          "count": 3,
+          "complete": true,
+          "performance": 95,
+          "fcpMs": 345,
+          "lcpMs": 1530,
+          "tbtMs": 5,
+          "cls": 0,
+          "siMs": 951,
+          "performanceRange": [
+            92,
+            95
+          ],
+          "lcpRangeMs": [
+            1476,
+            1754
+          ],
+          "fcpRangeMs": [
+            333,
+            349
+          ]
+        }
+      }
+    }
+  },
+  "diagnostic": {
+    "pageId": "home",
+    "device": "Mobile",
+    "run": 2,
+    "reportId": "cq21c3ux48",
+    "element": "img.hero-video-poster",
+    "resource": "https://img.adatours.ru/media/video-posters/home-hero-mobile-20261021-v1-first-frame-20261021-v1.webp",
+    "ttfbMs": 10,
+    "loadDelayMs": 1360,
+    "loadDurationMs": 390,
+    "renderDelayMs": 650,
+    "note": "Observed LCP audit subpart values; not summed to simulated headline LCP. Early first-frame request is a proposed next experiment, not implemented."
   },
   "runs": [
     {
@@ -25,7 +244,10 @@
       "captured": "22 окт. 2026 г., 15:18 GMT+2",
       "collectedAt": "2026-10-22T13:26:31.511Z",
       "status": "VALID",
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05B-20261022&psi_run=1"
     },
     {
       "stage": "before",
@@ -46,7 +268,10 @@
       "collectedAt": "2026-10-22T13:26:34.435Z",
       "status": "VALID",
       "transferKiB": 6615,
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05B-20261022&psi_run=1"
     },
     {
       "stage": "before",
@@ -66,7 +291,10 @@
       "captured": "22 окт. 2026 г., 15:19 GMT+2",
       "collectedAt": "2026-10-22T13:26:34.505Z",
       "status": "VALID",
-      "unusedJsKiB": 106
+      "unusedJsKiB": 106,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05B-20261022&psi_run=1"
     },
     {
       "stage": "before",
@@ -87,7 +315,10 @@
       "collectedAt": "2026-10-22T13:26:37.305Z",
       "status": "VALID",
       "transferKiB": 4707,
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05B-20261022&psi_run=1"
     },
     {
       "stage": "before",
@@ -107,7 +338,10 @@
       "captured": "22 окт. 2026 г., 15:26 GMT+2",
       "collectedAt": "2026-10-22T13:29:44.337Z",
       "status": "VALID",
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05B-20261022&psi_run=2"
     },
     {
       "stage": "before",
@@ -128,7 +362,10 @@
       "collectedAt": "2026-10-22T13:29:48.096Z",
       "status": "VALID",
       "transferKiB": 6615,
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05B-20261022&psi_run=2"
     },
     {
       "stage": "before",
@@ -148,7 +385,10 @@
       "captured": "22 окт. 2026 г., 15:26 GMT+2",
       "collectedAt": "2026-10-22T13:29:48.157Z",
       "status": "VALID",
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05B-20261022&psi_run=2"
     },
     {
       "stage": "before",
@@ -169,7 +409,10 @@
       "collectedAt": "2026-10-22T13:29:51.735Z",
       "status": "VALID",
       "transferKiB": 4708,
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05B-20261022&psi_run=2"
     },
     {
       "stage": "before",
@@ -189,7 +432,10 @@
       "captured": "22 окт. 2026 г., 15:29 GMT+2",
       "collectedAt": "2026-10-22T13:32:43.450Z",
       "status": "VALID",
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05B-20261022&psi_run=3"
     },
     {
       "stage": "before",
@@ -210,7 +456,10 @@
       "collectedAt": "2026-10-22T13:32:46.931Z",
       "status": "VALID",
       "transferKiB": 6615,
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05B-20261022&psi_run=3"
     },
     {
       "stage": "before",
@@ -230,7 +479,10 @@
       "captured": "22 окт. 2026 г., 15:29 GMT+2",
       "collectedAt": "2026-10-22T13:32:47.030Z",
       "status": "VALID",
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05B-20261022&psi_run=3"
     },
     {
       "stage": "before",
@@ -251,7 +503,417 @@
       "collectedAt": "2026-10-22T13:32:50.507Z",
       "status": "VALID",
       "transferKiB": 4707,
-      "unusedJsKiB": 105
+      "unusedJsKiB": 105,
+      "cycle": "P05B-20261022",
+      "sourceCommit": "16b557b50a4e050c480699eaeeec77796b529728",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05B-20261022&psi_run=3"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 1,
+      "device": "Mobile",
+      "performance": 69,
+      "fcpMs": 3764,
+      "lcpMs": 5208,
+      "tbtMs": 0,
+      "cls": 0,
+      "siMs": 5425,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/qm3qcvlary?form_factor=mobile",
+      "reportId": "qm3qcvlary",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 15:56:19",
+      "captured": "22 окт. 2026 г., 15:56 GMT+2",
+      "collectedAt": "2026-10-22T13:57:45.326Z",
+      "status": "DRIFT",
+      "unusedJsKiB": 105,
+      "exclusion": "Preliminary runtime 88c8e0e; desktop with no touch and no fine-hover could autoplay. Final runtime changes policy, so this incomplete series is excluded.",
+      "sourceCommit": "88c8e0e941245f87c1bc4d4d2c7a197cbd01b3de",
+      "cycle": "P05A-20261022",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05A-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 1,
+      "device": "Desktop",
+      "performance": 94,
+      "fcpMs": 337,
+      "lcpMs": 1450,
+      "tbtMs": 105,
+      "cls": 0,
+      "siMs": 855,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/qm3qcvlary?form_factor=desktop",
+      "reportId": "qm3qcvlary",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 15:56:19",
+      "captured": "22 окт. 2026 г., 15:56 GMT+2",
+      "collectedAt": "2026-10-22T13:57:48.106Z",
+      "status": "DRIFT",
+      "transferKiB": 3094,
+      "unusedJsKiB": 105,
+      "exclusion": "Preliminary runtime 88c8e0e; desktop with no touch and no fine-hover could autoplay. Final runtime changes policy, so this incomplete series is excluded.",
+      "sourceCommit": "88c8e0e941245f87c1bc4d4d2c7a197cbd01b3de",
+      "cycle": "P05A-20261022",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05A-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 1,
+      "device": "Mobile",
+      "performance": 64,
+      "fcpMs": 3957,
+      "lcpMs": 7774,
+      "tbtMs": 73,
+      "cls": 0,
+      "siMs": 5133,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/2k5rtr0g78?form_factor=mobile",
+      "reportId": "2k5rtr0g78",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 15:56:20",
+      "captured": "22 окт. 2026 г., 15:56 GMT+2",
+      "collectedAt": "2026-10-22T13:57:48.153Z",
+      "status": "DRIFT",
+      "unusedJsKiB": 106,
+      "exclusion": "Preliminary runtime 88c8e0e; desktop with no touch and no fine-hover could autoplay. Final runtime changes policy, so this incomplete series is excluded.",
+      "sourceCommit": "88c8e0e941245f87c1bc4d4d2c7a197cbd01b3de",
+      "cycle": "P05A-20261022",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05A-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 1,
+      "device": "Desktop",
+      "performance": 95,
+      "fcpMs": 359,
+      "lcpMs": 1489,
+      "tbtMs": 72,
+      "cls": 0,
+      "siMs": 859,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/2k5rtr0g78?form_factor=desktop",
+      "reportId": "2k5rtr0g78",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 15:56:20",
+      "captured": "22 окт. 2026 г., 15:56 GMT+2",
+      "collectedAt": "2026-10-22T13:57:51.158Z",
+      "status": "DRIFT",
+      "transferKiB": 4710,
+      "unusedJsKiB": 105,
+      "exclusion": "Preliminary runtime 88c8e0e; desktop with no touch and no fine-hover could autoplay. Final runtime changes policy, so this incomplete series is excluded.",
+      "sourceCommit": "88c8e0e941245f87c1bc4d4d2c7a197cbd01b3de",
+      "cycle": "P05A-20261022",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05A-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 1,
+      "device": "Mobile",
+      "performance": 74,
+      "fcpMs": 1201,
+      "lcpMs": 5820,
+      "tbtMs": 131,
+      "cls": 0,
+      "siMs": 5101,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/mr8l6tedaf?form_factor=mobile",
+      "reportId": "mr8l6tedaf",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:41:05",
+      "captured": "22 окт. 2026 г., 16:41 GMT+2",
+      "collectedAt": "2026-10-22T14:42:29.308Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05F-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 1,
+      "device": "Desktop",
+      "performance": 97,
+      "fcpMs": 290,
+      "lcpMs": 1208,
+      "tbtMs": 3,
+      "cls": 0,
+      "siMs": 753,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/mr8l6tedaf?form_factor=desktop",
+      "reportId": "mr8l6tedaf",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:41:05",
+      "captured": "22 окт. 2026 г., 16:41 GMT+2",
+      "collectedAt": "2026-10-22T14:42:32.010Z",
+      "status": "VALID",
+      "unusedJsKiB": 106,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05F-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 1,
+      "device": "Mobile",
+      "performance": 64,
+      "fcpMs": 3954,
+      "lcpMs": 7716,
+      "tbtMs": 2,
+      "cls": 0,
+      "siMs": 5241,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/d75y92q4o6?form_factor=mobile",
+      "reportId": "d75y92q4o6",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:41:06",
+      "captured": "22 окт. 2026 г., 16:41 GMT+2",
+      "collectedAt": "2026-10-22T14:42:32.070Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05F-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 1,
+      "device": "Desktop",
+      "performance": 92,
+      "fcpMs": 345,
+      "lcpMs": 1754,
+      "tbtMs": 38,
+      "cls": 0,
+      "siMs": 1035,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/d75y92q4o6?form_factor=desktop",
+      "reportId": "d75y92q4o6",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:41:06",
+      "captured": "22 окт. 2026 г., 16:41 GMT+2",
+      "collectedAt": "2026-10-22T14:42:34.765Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05F-20261022&psi_run=1"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 2,
+      "device": "Mobile",
+      "performance": 69,
+      "fcpMs": 3780,
+      "lcpMs": 5369,
+      "tbtMs": 0,
+      "cls": 0,
+      "siMs": 4936,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/cq21c3ux48?form_factor=mobile",
+      "reportId": "cq21c3ux48",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:42:35",
+      "captured": "22 окт. 2026 г., 16:42 GMT+2",
+      "collectedAt": "2026-10-22T14:44:35.831Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05F-20261022&psi_run=2"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 2,
+      "device": "Desktop",
+      "performance": 96,
+      "fcpMs": 309,
+      "lcpMs": 1427,
+      "tbtMs": 45,
+      "cls": 0,
+      "siMs": 644,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/cq21c3ux48?form_factor=desktop",
+      "reportId": "cq21c3ux48",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:42:35",
+      "captured": "22 окт. 2026 г., 16:42 GMT+2",
+      "collectedAt": "2026-10-22T14:44:39.622Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05F-20261022&psi_run=2"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 2,
+      "device": "Mobile",
+      "performance": 65,
+      "fcpMs": 3941,
+      "lcpMs": 6801,
+      "tbtMs": 3,
+      "cls": 0,
+      "siMs": 5481,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/jagzl5thev?form_factor=mobile",
+      "reportId": "jagzl5thev",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:42:36",
+      "captured": "22 окт. 2026 г., 16:42 GMT+2",
+      "collectedAt": "2026-10-22T14:44:39.708Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05F-20261022&psi_run=2"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 2,
+      "device": "Desktop",
+      "performance": 95,
+      "fcpMs": 333,
+      "lcpMs": 1476,
+      "tbtMs": 0,
+      "cls": 0,
+      "siMs": 825,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/jagzl5thev?form_factor=desktop",
+      "reportId": "jagzl5thev",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:42:36",
+      "captured": "22 окт. 2026 г., 16:42 GMT+2",
+      "collectedAt": "2026-10-22T14:44:43.291Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05F-20261022&psi_run=2"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 3,
+      "device": "Mobile",
+      "performance": 69,
+      "fcpMs": 3825,
+      "lcpMs": 5497,
+      "tbtMs": 18,
+      "cls": 0,
+      "siMs": 4960,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/btuux6al65?form_factor=mobile",
+      "reportId": "btuux6al65",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:44:44",
+      "captured": "22 окт. 2026 г., 16:44 GMT+2",
+      "collectedAt": "2026-10-22T14:47:08.132Z",
+      "status": "VALID",
+      "unusedJsKiB": 106,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05F-20261022&psi_run=3"
+    },
+    {
+      "stage": "after",
+      "pageId": "home",
+      "run": 3,
+      "device": "Desktop",
+      "performance": 96,
+      "fcpMs": 295,
+      "lcpMs": 1385,
+      "tbtMs": 30,
+      "cls": 0,
+      "siMs": 836,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru/btuux6al65?form_factor=desktop",
+      "reportId": "btuux6al65",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:44:44",
+      "captured": "22 окт. 2026 г., 16:44 GMT+2",
+      "collectedAt": "2026-10-22T14:47:10.890Z",
+      "status": "VALID",
+      "unusedJsKiB": 104,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/?psi_cycle=P05F-20261022&psi_run=3"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 3,
+      "device": "Mobile",
+      "performance": 78,
+      "fcpMs": 1351,
+      "lcpMs": 6185,
+      "tbtMs": 37,
+      "cls": 0,
+      "siMs": 1351,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/fldoyo82r2?form_factor=mobile",
+      "reportId": "fldoyo82r2",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:44:45",
+      "captured": "22 окт. 2026 г., 16:44 GMT+2",
+      "collectedAt": "2026-10-22T14:47:10.947Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05F-20261022&psi_run=3"
+    },
+    {
+      "stage": "after",
+      "pageId": "brazil",
+      "run": 3,
+      "device": "Desktop",
+      "performance": 95,
+      "fcpMs": 349,
+      "lcpMs": 1530,
+      "tbtMs": 5,
+      "cls": 0,
+      "siMs": 951,
+      "lighthouse": "13.5.0",
+      "reportUrl": "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil/fldoyo82r2?form_factor=desktop",
+      "reportId": "fldoyo82r2",
+      "reportTimeUi": "Отчет от 22 окт. 2026 г., 16:44:45",
+      "captured": "22 окт. 2026 г., 16:44 GMT+2",
+      "collectedAt": "2026-10-22T14:47:14.093Z",
+      "status": "VALID",
+      "unusedJsKiB": 105,
+      "cycle": "P05F-20261022",
+      "sourceCommit": "76270128597e1cade470aa2e3bf804b9037370eb",
+      "requestedUrl": "https://adatours.ru/brazil/?psi_cycle=P05F-20261022&psi_run=3"
     }
-  ]
+  ],
+  "verification": {
+    "nodePolicyAndSelectionTests": 18,
+    "runtimeDomScenarios": 15,
+    "astroSsrIntegrations": 7,
+    "productionBuild": {
+      "tests": 291,
+      "failed": 0,
+      "pages": 6129
+    },
+    "publication": "Media/build/deploy/report success; final live bundle BUztSkvO contains touch-input guard; all jobs successful.",
+    "browser": {
+      "viewport": [
+        1363,
+        936
+      ],
+      "initialMoviesWithoutHover": 0,
+      "editorialPhotoInVideoBranch": false,
+      "cardHover": {
+        "top": 111.296875,
+        "bottom": 791.296875,
+        "playing": true,
+        "time": 5.467203
+      },
+      "hoverOutReturnsFirstFrame": true,
+      "clippedEdgeStops": true,
+      "catalogBorrowedCoverAutomatic": true,
+      "screenshot": "adatours-video-covers-p05-1792680225507.jpg"
+    },
+    "physicalPhoneTested": false,
+    "journal": "PSI Runs285–312 (24VALID,4DRIFT); Summary77–84; Changes10. Native values/formulas/formats/validation/links checked via API. Export layout reviewed; artifact renderer cannot evaluate exported Sheets FILTER formulas; native API values are correct. Native browser view was blocked at Google sign-in; no sign-in attempted."
+  },
+  "conclusion": "Mobile scores worsened in this series; no mobile acceleration claim. Desktop starts with frame only and no movie until hover, so workload differs. Concurrent entity-authority source and three-sample variability prevent isolated causal attribution. Next proposed experiment: request chosen first frame before main JS; not implemented.",
+  "nextCycleRequiresDiscussion": true
 }

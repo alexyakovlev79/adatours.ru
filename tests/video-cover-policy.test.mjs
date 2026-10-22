@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { usesTouchPlayback, isFullyVisible, selectCoverVideo, coverRows, TouchCoverQueue } from '../src/lib/cover-playback-policy.mjs';
+import { usesTouchPlayback, isFullyVisible, isPlayableVisible, selectCoverVideo, coverRows, TouchCoverQueue } from '../src/lib/cover-playback-policy.mjs';
 import { buildHeroVideoCatalog, borrowedHeroVideo, withFirstFrames } from '../src/lib/hero-video-catalog.mjs';
 
 const screen = { top: 0, bottom: 800, left: 0, right: 1000 };
@@ -33,6 +33,22 @@ test('a one-pixel loss at any edge stops eligibility; oversized and hidden surfa
   }
 });
 
+test('small laptop with 150% Windows scaling can play an oversized home hero', () => {
+  const laptop = { top: 0, bottom: 535, left: 0, right: 1050 };
+  assert.equal(isPlayableVisible(rect(0, 0, 1050, 900), laptop), true);
+  assert.equal(isPlayableVisible(rect(-150, 0, 1050, 900), laptop), true);
+  assert.equal(isPlayableVisible(rect(-690, 0, 1050, 900), laptop), false);
+});
+
+test('minor clipping no longer prevents playback; a narrow visible strip still pauses', () => {
+  assert.equal(isPlayableVisible(rect(-1), screen), true);
+  assert.equal(isPlayableVisible(rect(501), screen), false);
+  assert.equal(isPlayableVisible(rect(0, -1), screen), true);
+  assert.equal(isPlayableVisible(rect(-160), screen), false);
+  assert.equal(isPlayableVisible(rect(-100), screen), true);
+  assert.equal(isPlayableVisible(rect(0, 0, 0, 300), screen), false);
+});
+
 test('a row is generic and ordered by actual horizontal position, not names or DOM order', () => {
   const rows = coverRows([item('third', 200, 600, 200), item('first', 200, 0, 200), item('second', 200, 300, 200)]);
   assert.deepEqual(rows[0].items.map(i => i.id), ['first', 'second', 'third']);
@@ -57,10 +73,10 @@ test('four videos advance left-to-right, and an unrelated ended event cannot ste
   assert.equal(q.choose(row, screen), 'a');
 });
 
-test('full visibility wins over a latched row; the next row waits for its own centre', () => {
+test('sufficient overlap keeps a latched row playing until it leaves; the next row still waits for centre', () => {
   const q = new TouchCoverQueue();
   assert.equal(q.choose([item('old', 250), item('new', 650)], screen), 'old');
-  assert.equal(q.choose([item('old', -1), item('new', 399)], screen), undefined);
+  assert.equal(q.choose([item('old', -1), item('new', 399)], screen), 'old');
   assert.equal(q.choose([item('old', -160), item('new', 240)], screen), 'new');
 });
 

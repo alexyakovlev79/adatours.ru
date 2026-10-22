@@ -1,6 +1,6 @@
 import { selectHeroVideo } from '../lib/hero-video-selection.mjs';
 import { isWithinImageWindow } from './lazy-images.mjs';
-import { isFullyVisible, selectCoverVideo, TouchCoverQueue, usesTouchPlayback } from '../lib/cover-playback-policy.mjs';
+import { isPlayableVisible, selectCoverVideo, TouchCoverQueue, usesTouchPlayback } from '../lib/cover-playback-policy.mjs';
 
 const managers = new WeakMap();
 
@@ -35,8 +35,8 @@ export function initializeVideoCovers(view = window) {
     const current = touchMode ? queue.choose(items.filter((i) => i.displayed && i.entry.selected && !i.entry.failed && !i.entry.hero), screen) : undefined;
     for (const item of items) {
       const { entry, rect } = item;
-      const full = item.displayed && isFullyVisible(rect, screen);
-      const active = !doc.hidden && full && (touchMode ? entry.hero || current === entry.id : entry.hoverHost.matches(':hover') && pointer && pointer.x >= rect.left && pointer.x <= rect.right && pointer.y >= rect.top && pointer.y <= rect.bottom);
+      const visibleEnough = item.displayed && isPlayableVisible(rect, screen);
+      const active = !doc.hidden && visibleEnough && (touchMode ? entry.hero || current === entry.id : entry.hoverHost.matches(':hover') && pointer && pointer.x >= rect.left && pointer.x <= rect.right && pointer.y >= rect.top && pointer.y <= rect.bottom);
       entry.setPlaying(active, touchMode);
     }
   };
@@ -109,7 +109,7 @@ export function initializeVideoCovers(view = window) {
         this.userPaused = !this.video.paused;
         this.blocked = false;
         if (this.userPaused) this.stop();
-        else if (this.allowed && isFullyVisible(this.surface.getBoundingClientRect(), viewport())) this.setPlaying(true, touch());
+        else if (this.allowed && isPlayableVisible(this.surface.getBoundingClientRect(), viewport())) this.setPlaying(true, touch());
         manager.schedule();
       }, options);
       this.hoverHost.addEventListener('pointerenter', manager.point, options);

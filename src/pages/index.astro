@@ -11,6 +11,7 @@ import { interestTourCount } from '../lib/interest-copy.mjs';
 import { compareToursBySalesFit } from '../lib/tour-ranking';
 import { countryPath, mainTourCountries, themePath, tourPath } from '../lib/routes';
 import { withBase } from '../lib/paths';
+import { ABOUT_NAV_LINKS } from '../lib/site';
 import { imageCaption } from '../lib/image-captions.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/editorial/Hero.astro';
@@ -385,10 +386,9 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
       </PersonProfile>
     )}
     <nav class="container home-proof-links" aria-label="Больше об Ada Tours">
-      <a href={withBase('/cases/')}>Кейсы <span aria-hidden="true">↗</span></a>
-      <a href={withBase('/reviews/')}>Отзывы <span aria-hidden="true">↗</span></a>
-      <a href={withBase('/team/')}>Команда <span aria-hidden="true">↗</span></a>
-      <a href={withBase('/about/')}>О компании <span aria-hidden="true">↗</span></a>
+      {ABOUT_NAV_LINKS.map((link) => (
+        <a href={withBase(link.href)}>{link.label} <span aria-hidden="true">↗</span></a>
+      ))}
     </nav>
   </section>
 
@@ -494,9 +494,11 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
 
   .home-team { padding-bottom: var(--section-y); }
   .home-team :global(.person) { padding-bottom: 0; }
-  .home-proof-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
-  .home-proof-links a { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 24px 0; border-top: 1px solid var(--color-line); font-family: var(--font-display); font-size: clamp(1.05rem, 1.6vw, 1.4rem); }
+  .home-proof-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px 26px; margin-top: 24px; }
+  .home-proof-links a { display: flex; min-width: 0; align-items: center; justify-content: space-between; gap: 14px; padding: 18px 0; border-top: 1px solid var(--color-line); font-family: var(--font-display); font-size: clamp(.98rem, 1.5vw, 1.3rem); line-height: 1.25; }
+  .home-proof-links a span { flex: 0 0 auto; }
   .home-proof-links a:hover { opacity: .65; }
+  .home-proof-links a:focus-visible { outline: 2px solid var(--color-brand-deep); outline-offset: 3px; }
   .home-final { padding-block: var(--section-y); color: var(--color-ink); background: var(--color-surface); }
   .home-final h2 { max-width: 970px; margin: 12px 0 25px; font-size: var(--text-h2); line-height: 1.04; }
   .home-final p:not(.eyebrow) { max-width: 640px; color: var(--color-text-muted); font-size: var(--text-lg); }
@@ -566,6 +568,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
     .home-poster__content .eyebrow { font-size: .65rem; }
     .home-discover__tile { min-height: 360px; }
     .home-proof-links { gap: 0 18px; }
+    .home-proof-links a { padding: 16px 0; font-size: clamp(.93rem, 3.7vw, 1.1rem); }
   }
 </style>
 

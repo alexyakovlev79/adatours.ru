@@ -1,7 +1,14 @@
 ---
-import { FOOTER_NAV_LINKS, SITE } from '../../lib/site';
+import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS, SITE } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 import { ORG } from '../../data/organization/ada-tours';
+
+const columns = [
+  { title: 'Путешествия', primary: NAV_LINKS.slice(0, 5), children: [], trailing: [] },
+  { title: 'Деловые поездки', primary: [NAV_LINKS[5]], children: MICE_NAV_LINKS.slice(1), trailing: [] },
+  { title: 'Для партнеров', primary: [NAV_LINKS[6]], children: DMC_NAV_LINKS.slice(1), trailing: [] },
+  { title: 'Ada Tours', primary: [NAV_LINKS[7]], children: ABOUT_NAV_LINKS.slice(1), trailing: [NAV_LINKS[8]] },
+];
 ---
 
 <footer class="footer">
@@ -10,23 +17,52 @@ import { ORG } from '../../data/organization/ada-tours';
       <p class="eyebrow">Ada Tours</p>
       <h2>Бразилия и Латинская Америка</h2>
     </div>
-    <a class="footer__request" href={withBase('/contacts/')} data-lead-modal="true" aria-label="Обсудить поездку — открыть форму заявки">Обсудить поездку <span aria-hidden="true">↗</span></a>
+    <a class="footer__request" href={withBase('/contacts/')} data-lead-modal="true" aria-label="Обсудить поездку — открыть форму заявки">
+      Обсудить поездку <span aria-hidden="true">↗</span>
+    </a>
   </div>
 
-  <div class="footer__grid">
-    <nav aria-label="Навигация в подвале">
-      {FOOTER_NAV_LINKS.map((link) => <a href={withBase(link.href)}>{link.label}</a>)}
-    </nav>
+  <div class="footer__navigation">
+    {columns.map((column) => (
+      <div class="footer__column">
+        <p class="footer__heading">{column.title}</p>
+        <nav aria-label={column.title}>
+          {column.primary.map((link) => (
+            <a class="footer__primary-link" href={withBase(link.href)}>{link.label}</a>
+          ))}
+          {column.children.length > 0 && (
+            <div class="footer__subnav">
+              {column.children.map((link) => (
+                <a href={withBase(link.href)}>{link.label}</a>
+              ))}
+            </div>
+          )}
+          {column.trailing?.map((link) => (
+            <a class="footer__primary-link" href={withBase(link.href)}>{link.label}</a>
+          ))}
+        </nav>
+      </div>
+    ))}
+  </div>
 
-    <div class="footer__meta">
-      <p>© {new Date().getFullYear()} {SITE.name}</p>
-      <a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a href={ORG.telegramHref} target="_blank" rel="noopener noreferrer">Telegram</a>
+  <div class="footer__contact">
+    <div class="footer__contact-main">
+      <span class="footer__caption">Свяжитесь с нами</span>
       <a href={ORG.phoneHref}>{ORG.phoneDisplay}</a>
       <a href={`mailto:${ORG.email}`}>{ORG.email}</a>
+    </div>
+    <div class="footer__messengers">
+      <a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+      <a href={ORG.telegramHref} target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+    </div>
+  </div>
+
+  <div class="footer__legal">
+    <p>© {new Date().getFullYear()} {SITE.name}</p>
+    <nav aria-label="Юридическая информация">
       <a href={withBase('/privacy/')}>Политика конфиденциальности</a>
       <a href={withBase('/personal-data/')}>Обработка персональных данных</a>
-    </div>
+    </nav>
   </div>
 
   <div class="footer__credit">
@@ -36,26 +72,19 @@ import { ORG } from '../../data/organization/ada-tours';
 
 <style>
   .footer {
-    padding: clamp(24px, 3vw, 40px) var(--gutter) 36px;
+    padding: clamp(24px, 3vw, 40px) var(--gutter) 0;
     color: var(--color-ink);
     background: var(--color-surface);
   }
-
   .footer__top {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: end;
     gap: 48px;
-    padding-bottom: var(--section-y-tight);
+    padding-bottom: clamp(36px, 5vw, 70px);
     border-bottom: 1px solid var(--color-line);
   }
-
-  .footer h2 {
-    max-width: 950px;
-    margin: 12px 0 0;
-  }
-
-  /* Primary conversion action on the light footer, styled as a real CTA. */
+  .footer h2 { max-width: 950px; margin: 12px 0 0; }
   .footer__request {
     display: inline-flex;
     align-items: center;
@@ -69,92 +98,140 @@ import { ORG } from '../../data/organization/ada-tours';
     color: var(--color-ink);
     background: var(--cta-fill-light);
     font-family: var(--font-display);
-    font-size: 0.86rem;
+    font-size: .86rem;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
     text-transform: uppercase;
     transition: background 200ms var(--ease-out), border-color 200ms var(--ease-out);
   }
-
   .footer__request:hover {
     border-color: var(--cta-border-hover);
     background: var(--cta-fill-light-hover);
   }
-
-  .footer__request:focus-visible {
+  .footer a:focus-visible {
     outline: 2px solid var(--color-brand-deep);
     outline-offset: 4px;
   }
-
-  .footer__grid {
+  .footer__navigation {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 48px;
-    padding-top: var(--section-y-tight);
+    grid-template-columns: 1.03fr 1fr 1fr 1.24fr;
+    gap: clamp(26px, 4vw, 72px);
+    padding-block: clamp(34px, 4.5vw, 68px);
   }
-
-  .footer nav,
-  .footer__meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px 24px;
-    align-items: center;
-  }
-
-  .footer nav a,
-  .footer__meta {
-    font-size: 0.82rem;
-  }
-
-  .footer__meta {
-    justify-content: flex-end;
+  .footer__column { min-width: 0; }
+  .footer__heading {
+    margin: 0 0 22px;
     color: var(--color-text-muted);
+    font-family: var(--font-display);
+    font-size: .73rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
   }
-
-  .footer__meta p {
-    margin: 0;
-    font-size: inherit;
+  .footer__column nav,
+  .footer__subnav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-
+  .footer__column nav { gap: 15px; }
+  .footer__column a {
+    display: inline-block;
+    max-width: 100%;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    line-height: 1.36;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    transition: color 180ms ease;
+  }
+  .footer__column a:hover,
+  .footer__contact a:hover,
+  .footer__legal a:hover { color: var(--color-brand-deep); }
+  .footer__primary-link { font-size: clamp(.9rem, 1.1vw, 1.06rem); font-weight: 500; }
+  .footer__subnav {
+    gap: 12px;
+    padding-left: 16px;
+    margin-left: 2px;
+    border-left: 1px solid color-mix(in srgb, var(--color-brand-deep) 34%, var(--color-line));
+  }
+  .footer__subnav a { font-size: clamp(.83rem, 1vw, .93rem); color: var(--color-text-muted); }
+  .footer__contact {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 48px;
+    padding-block: 26px 30px;
+    border-top: 1px solid var(--color-line);
+  }
+  .footer__contact-main {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+  }
+  .footer__caption {
+    flex-basis: 100%;
+    color: var(--color-text-muted);
+    font-size: .74rem;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .footer__contact-main a {
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 1.6vw, 1.3rem);
+    overflow-wrap: anywhere;
+  }
+  .footer__messengers { display: flex; flex-wrap: wrap; gap: 16px 30px; }
+  .footer__messengers a { font-size: .9rem; color: var(--color-ink); }
+  .footer__legal {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+    padding: 20px 0 26px;
+    color: var(--color-text-muted);
+    border-top: 1px solid var(--color-line);
+    font-size: .8rem;
+  }
+  .footer__legal p { margin: 0; }
+  .footer__legal nav { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+  .footer__legal a { color: inherit; }
+  /* Equal air above and below the credit line: exactly centred within this strip. */
   .footer__credit {
-    margin-top: clamp(20px, 2.5vw, 32px);
-    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(72px, 7vw, 92px);
+    padding: 18px 0;
     border-top: 1px solid var(--color-line);
     text-align: center;
-    font-size: 0.76rem;
+    font-size: .76rem;
   }
-
-  .footer__credit a {
-    color: var(--color-text-muted);
+  .footer__credit a { color: var(--color-text-muted); }
+  .footer__credit a:hover { color: var(--color-ink); text-decoration: underline; }
+  @media (max-width: 1060px) {
+    .footer__navigation {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 42px 60px;
+    }
   }
-
-  .footer__credit a:hover {
-    color: var(--color-ink);
-    text-decoration: underline;
-  }
-
-  .footer__credit a:focus-visible {
-    outline: 2px solid var(--color-brand-deep);
-    outline-offset: 4px;
-  }
-
   @media (max-width: 780px) {
-    .footer__top,
-    .footer__grid {
-      grid-template-columns: 1fr;
-    }
-
-    .footer__top {
-      gap: 32px;
-    }
-
-    .footer__request {
-      width: 100%;
-      min-width: 0;
-    }
-
-    .footer__meta {
-      justify-content: flex-start;
-    }
+    .footer__top { grid-template-columns: 1fr; gap: 32px; }
+    .footer__request { width: 100%; min-width: 0; }
+    .footer__contact { align-items: flex-start; }
+  }
+  @media (max-width: 480px) {
+    .footer__navigation { grid-template-columns: 1fr; gap: 30px; }
+    .footer__heading { margin-bottom: 14px; }
+    .footer__column nav { gap: 12px; }
+    .footer__subnav { gap: 10px; }
+    .footer__contact-main { display: grid; gap: 8px; }
+    .footer__caption { margin-bottom: 4px; }
+    .footer__legal nav { flex-direction: column; gap: 8px; }
+    .footer__credit { min-height: 76px; font-size: .72rem; }
   }
 </style>

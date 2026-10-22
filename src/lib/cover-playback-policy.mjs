@@ -14,6 +14,21 @@ export function isFullyVisible(rect, viewport) {
     && rect.left >= viewport.left - epsilon && rect.right <= viewport.right + epsilon;
 }
 
+// A useful fraction of the VIDEO SURFACE should be on screen, even when the
+// hero is taller than the available viewport (small laptops / OS zoom).
+// Comparing against min(surface, viewport) makes an oversized hero playable.
+// A small sliver on screen still pauses the movie. Unlike full visibility,
+// this tolerates a little cropping at the viewport edges.
+export function isPlayableVisible(rect, viewport) {
+  const viewportWidth = viewport.right - viewport.left;
+  const viewportHeight = viewport.bottom - viewport.top;
+  if (!(rect.width > 0 && rect.height > 0 && viewportWidth > 0 && viewportHeight > 0)) return false;
+  const visibleWidth = Math.max(0, Math.min(rect.right, viewport.right) - Math.max(rect.left, viewport.left));
+  const visibleHeight = Math.max(0, Math.min(rect.bottom, viewport.bottom) - Math.max(rect.top, viewport.top));
+  return visibleWidth / Math.min(rect.width, viewportWidth) >= 0.6
+    && visibleHeight / Math.min(rect.height, viewportHeight) >= 0.55;
+}
+
 // Covers select by their measured shape, never by device or viewport width.
 export function selectCoverVideo(sources, rect) {
   if (!(rect.width > 0 && rect.height > 0)) return undefined;
@@ -39,7 +54,7 @@ export function coverRows(items) {
 }
 
 // A row is latched after crossing the centre. It can keep its turn while the
-// user scrolls, but full visibility always wins. A newly centred row takes over.
+// user scrolls, but sufficient on-screen area is still required. A newly centred row takes over.
 export class TouchCoverQueue {
   previous = new Map();
   activeKey;
@@ -57,7 +72,7 @@ export class TouchCoverQueue {
       const before = this.previous.get(row.key);
       const reached = before === undefined ? delta <= 0
         : (before > 0 && delta <= 0) || (before < 0 && delta >= 0);
-      if (reached && row.items.every((i) => isFullyVisible(i.rect, viewport))) crossed.push(row);
+      if (reached && row.items.every((i) => isPlayableVisible(i.rect, viewport))) crossed.push(row);
       next.set(row.key, delta);
     }
     this.previous = next;
@@ -71,7 +86,7 @@ export class TouchCoverQueue {
     if (!row) { this.current = undefined; return undefined; }
     this.cursor %= row.items.length;
     const candidate = row.items[this.cursor];
-    this.current = isFullyVisible(candidate.rect, viewport) ? candidate.id : undefined;
+    this.current = isPlayableVisible(candidate.rect, viewport) ? candidate.id : undefined;
     return this.current;
   }
 

@@ -7,26 +7,45 @@ interface Props {
 }
 
 const { active } = Astro.props;
+const current = ABOUT_NAV_LINKS.find((link) => link.id === active) ?? ABOUT_NAV_LINKS[0];
 ---
 
 <div class="about-nav-shell" data-pagefind-ignore>
   <nav class="about-nav" aria-label="Раздел о компании">
     {ABOUT_NAV_LINKS.map((link) => (
-      <a
-        href={withBase(link.href)}
-        aria-current={active === link.id ? 'page' : undefined}
-      >
+      <a href={withBase(link.href)} aria-current={active === link.id ? 'page' : undefined}>
         {link.label}
       </a>
     ))}
   </nav>
+
+  <!-- At narrow widths show the current section instead of a row of clipped tabs.
+       Native details works without JavaScript or horizontal scrolling. -->
+  <nav class="about-nav-mobile" aria-label="Переходы по разделу о компании">
+    <details>
+      <summary>
+        <span class="about-nav-mobile__current">
+          <span class="about-nav-mobile__eyebrow">О компании · Разделы</span>
+          <strong>{current.label}</strong>
+        </span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </summary>
+      <div class="about-nav-mobile__links">
+        {ABOUT_NAV_LINKS.map((link) => (
+          <a href={withBase(link.href)} aria-current={active === link.id ? 'page' : undefined}>
+            {link.label}
+            {active === link.id && <span class="about-nav-mobile__check" aria-hidden="true">✓</span>}
+          </a>
+        ))}
+      </div>
+    </details>
+  </nav>
 </div>
 
 <style>
-  .about-nav-shell {
-    background: var(--color-bg);
-  }
-
+  .about-nav-shell { background: var(--color-bg); }
   .about-nav {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +56,6 @@ const { active } = Astro.props;
     gap: 0 clamp(16px, 2.5vw, 40px);
     border-bottom: 1px solid var(--color-line);
   }
-
   .about-nav a {
     position: relative;
     display: inline-flex;
@@ -56,17 +74,10 @@ const { active } = Astro.props;
     white-space: nowrap;
     transition: color 180ms ease;
   }
-
   .about-nav a:hover,
   .about-nav a:focus-visible,
-  .about-nav a[aria-current='page'] {
-    color: var(--color-ink);
-  }
-
-  .about-nav a:focus-visible {
-    outline-offset: -4px;
-  }
-
+  .about-nav a[aria-current='page'] { color: var(--color-ink); }
+  .about-nav a:focus-visible { outline-offset: -4px; }
   .about-nav a[aria-current='page']::after {
     content: '';
     position: absolute;
@@ -74,47 +85,82 @@ const { active } = Astro.props;
     bottom: -1px;
     left: 0;
     height: 3px;
-    background: var(--color-gold);
+    background: var(--color-brand-deep);
   }
-
-  @media (max-width: 1000px) {
-    .about-nav-shell {
+  .about-nav-mobile { display: none; }
+  @media (max-width: 1100px) {
+    .about-nav-shell { border-bottom: 1px solid var(--color-line); }
+    .about-nav { display: none; }
+    .about-nav-mobile {
+      display: block;
+      width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+      margin-inline: auto;
+    }
+    .about-nav-mobile details { width: 100%; }
+    .about-nav-mobile summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 74px;
+      padding-block: 12px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .about-nav-mobile summary::-webkit-details-marker { display: none; }
+    .about-nav-mobile__current { display: grid; gap: 5px; min-width: 0; }
+    .about-nav-mobile__eyebrow {
+      color: var(--color-text-muted);
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .about-nav-mobile strong {
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    .about-nav-mobile svg { flex: 0 0 auto; transition: transform 180ms ease; }
+    .about-nav-mobile details[open] summary svg { transform: rotate(180deg); }
+    .about-nav-mobile__links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 22px;
+      padding: 4px 0 20px;
+      border-top: 1px solid var(--color-line);
+    }
+    .about-nav-mobile__links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      min-height: 50px;
+      padding: 11px 0;
       border-bottom: 1px solid var(--color-line);
-      overflow: hidden;
+      font-family: var(--font-display);
+      font-size: clamp(.87rem, 2vw, 1rem);
+      line-height: 1.25;
+      color: var(--color-ink);
     }
-
-    .about-nav {
-      flex-wrap: nowrap;
-      width: 100%;
-      padding: 0;
-      justify-content: flex-start;
-      gap: 0;
-      overflow-x: auto;
-      overscroll-behavior-inline: contain;
-      scrollbar-width: none;
-      border: 0;
+    .about-nav-mobile__links a[aria-current='page'] {
+      color: var(--color-brand-deep);
+      font-weight: 600;
     }
-
-    .about-nav::-webkit-scrollbar {
-      display: none;
+    .about-nav-mobile__check { font-size: .95rem; }
+    .about-nav-mobile summary:focus-visible,
+    .about-nav-mobile__links a:focus-visible {
+      outline: 2px solid var(--color-brand-deep);
+      outline-offset: 3px;
     }
-
-    .about-nav a {
-      flex: 0 0 auto;
-      min-width: 132px;
-      min-height: 64px;
-      padding: 14px 18px;
-      font-size: .69rem;
-      letter-spacing: .035em;
-    }
-
-    .about-nav a + a {
-      border-left: 1px solid var(--color-line);
-    }
-
-    .about-nav a[aria-current='page']::after {
-      right: 14px;
-      left: 14px;
-    }
+  }
+  @media (max-width: 420px) {
+    .about-nav-mobile__links { grid-template-columns: 1fr; }
+    .about-nav-mobile summary { min-height: 68px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .about-nav-mobile svg { transition: none; }
   }
 </style>

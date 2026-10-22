@@ -4,7 +4,7 @@ export function usesTouchPlayback(browser = {}, fineHover = false) {
   return isPhoneDevice(browser)
     || /iPad|Tablet|Android|Silk\/|Kindle|PlayBook/i.test(browser.userAgent || '')
     || (/Mac/i.test(browser.platform || '') && browser.maxTouchPoints > 1)
-    || !fineHover;
+    || (!fineHover && browser.maxTouchPoints > 0);
 }
 
 export function isFullyVisible(rect, viewport) {

@@ -22,7 +22,8 @@ test('phone/tablet playback is independent of a narrow desktop viewport or conne
   assert.equal(usesTouchPlayback({ userAgent: 'iPad' }, true), true);
   assert.equal(usesTouchPlayback({ userAgent: 'Android' }, true), true);
   assert.equal(usesTouchPlayback({ platform: 'MacIntel', maxTouchPoints: 5 }, true), true);
-  assert.equal(usesTouchPlayback({ userAgent: 'Desktop' }, false), true);
+  assert.equal(usesTouchPlayback({ userAgent: 'Desktop', maxTouchPoints: 0 }, false), false);
+  assert.equal(usesTouchPlayback({ userAgent: 'Other touch device', maxTouchPoints: 5 }, false), true);
 });
 
 test('a one-pixel loss at any edge stops eligibility; oversized and hidden surfaces never play', () => {

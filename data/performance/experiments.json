@@ -312,6 +312,131 @@
         "psiEmulatedMobileHome": "LCP DOM identifies selected mobile first-frame img, not editorial photo.",
         "sheetVisual": "Google browser requires sign-in; existing row styles copied and verified through API. No sign-in attempted."
       }
+    },
+    {
+      "id": "P04",
+      "title": "Desktop Brazil video on homepage wide card with own first frame and lazy loading",
+      "status": "published_measured",
+      "authorization": "Alexey explicitly requests the existing desktop Brazil video on the wide Brazil homepage card, its own first-frame underlay and lazy loading; phones retain photo.",
+      "scope": "Only leading Brazil DestinationBand on homepage. Desktop/tablets use existing movie; phones retain adaptive photo. Other cards unchanged.",
+      "sourceCommit": "93f859d6fe405b0e471c258854173fe12cfb1e5e",
+      "successfulDeployRun": 39758512823,
+      "raw": "data/performance/runs/P04-brazil-home-card-video-20261022.json",
+      "validRuns": 12,
+      "excluded": {},
+      "measured": {
+        "home": {
+          "Mobile": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 78,
+              "fcpMs": 1126,
+              "lcpMs": 5114,
+              "tbtMs": 17,
+              "cls": 0,
+              "siMs": 4404,
+              "performanceRange": [
+                78,
+                79
+              ],
+              "lcpRangeMs": [
+                4909,
+                5288
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 81,
+              "fcpMs": 1201,
+              "lcpMs": 5063,
+              "tbtMs": 63,
+              "cls": 0,
+              "siMs": 3027,
+              "performanceRange": [
+                76,
+                81
+              ],
+              "lcpRangeMs": [
+                5056,
+                5381
+              ]
+            }
+          },
+          "Desktop": {
+            "before": {
+              "count": 3,
+              "complete": true,
+              "performance": 96,
+              "fcpMs": 302,
+              "lcpMs": 1323,
+              "tbtMs": 28,
+              "cls": 0,
+              "siMs": 739,
+              "transferKiB": 3227,
+              "unusedJsKiB": 105,
+              "performanceRange": [
+                94,
+                97
+              ],
+              "lcpRangeMs": [
+                1304,
+                1547
+              ]
+            },
+            "after": {
+              "count": 3,
+              "complete": true,
+              "performance": 96,
+              "fcpMs": 294,
+              "lcpMs": 1388,
+              "tbtMs": 31,
+              "cls": 0,
+              "siMs": 1020,
+              "transferKiB": 6615,
+              "unusedJsKiB": 105,
+              "performanceRange": [
+                94,
+                96
+              ],
+              "lcpRangeMs": [
+                1293,
+                1414
+              ]
+            }
+          }
+        }
+      },
+      "decision": "Retain requested desktop card video. No robust performance gain: overlapping score/LCP ranges; desktop score median96→96, Mobile78→81. Desktop payload3227→6615KiB because card is inside initial loading window. Next discuss a lighter card-specific encode; do not silently change loading window or auto-run next optimization.",
+      "validation": {
+        "nodeTests": 8,
+        "astroCompilerDiagnostics": 0,
+        "actualComponentDomScenarios": 13,
+        "physicalPhone": false,
+        "liveDesktop": {
+          "viewport": [
+            1363,
+            936
+          ],
+          "initialCardTop": 1506.296875,
+          "initialState": "loaded frame/MP4, paused, readyState4, frame complete",
+          "activeEditorialPhoto": false,
+          "nativePosterAttribute": false,
+          "wholeCardLink": "https://adatours.ru/brazil/",
+          "nestedButtonInAnchor": false,
+          "buttonOffsetTop": 20,
+          "visible": "PageDown: scroll828/top678.296875, movie playing at4.83s",
+          "manualPause": "pause leaves same URL, correct label after media pause event; return from offscreen keeps user pause",
+          "resume": "button resumes playback; screenshot confirms actual video scene and intact copy",
+          "offscreen": "card bottom−929.703125, scroll3116: paused; returning card top345.296875: playing",
+          "linkClick": "Actual destination link navigated to https://adatours.ru/brazil/",
+          "screenshot": "Local QA viewport screenshot, no real phone screenshot. Not a network trace."
+        },
+        "productionPages": "success",
+        "productionBuild": "success",
+        "journal": "PSI Runs273–284; Summary73–76; Changes9; formulas/native formats/validation verified through API. Native visual render unavailable in existing unauthenticated Google browser; no login attempted."
+      }
     }
   ]
 }

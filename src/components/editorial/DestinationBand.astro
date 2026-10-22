@@ -13,7 +13,7 @@ interface Props {
   text?: string;
   href: string;
   image?: string;
-  mobileCover?: { src: string; position: string };
+  mobileCover?: { src: string; position: string; narrow?: boolean };
   video?: { src?: string; mobileSrc?: string; poster?: string; mobilePoster?: string };
   align?: 'left' | 'right';
   imageTextAlign?: 'left' | 'right';
@@ -74,7 +74,7 @@ const vip = (await getVipTourPaths()).has(href);
     data-replacement-reason={replacementReason}
   >
     <HeroVideo {...video} lazy controlsPosition="cover" placement="cover" selection="orientation">
-      <span class="band__photo" style={style} data-mobile-cover={mobileCover ? 'home-p02' : undefined} aria-hidden="true"></span>
+      <span class="band__photo" style={style} data-mobile-cover={mobileCover ? mobileCover.narrow ? 'home-p06' : 'home-p02' : undefined} aria-hidden="true"></span>
     </HeroVideo>
     <div class="band__overlay"></div>
     {vip && <VipBadge overlay />}
@@ -89,7 +89,7 @@ const vip = (await getVipTourPaths()).has(href);
   </div>
 ) : (
   <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image, 'band--strong-overlay': strongOverlay }]} href={resolvedHref} style={style}
-    data-mobile-cover={mobileCover ? 'home-p02' : undefined}
+    data-mobile-cover={mobileCover ? mobileCover.narrow ? 'home-p06' : 'home-p02' : undefined}
     data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
@@ -242,7 +242,9 @@ const vip = (await getVipTourPaths()).has(href);
 
   @media (max-width: 479px) {
     .band--image[data-mobile-cover="home-p02"],
-    .band__photo[data-mobile-cover="home-p02"] {
+    .band__photo[data-mobile-cover="home-p02"],
+    .band--image[data-mobile-cover="home-p06"],
+    .band__photo[data-mobile-cover="home-p06"] {
       background-image: var(--band-mobile-image, var(--band-image));
       background-position: var(--band-mobile-position, center);
     }

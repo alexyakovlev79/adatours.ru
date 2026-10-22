@@ -6,6 +6,7 @@ import HeroVideo from './HeroVideo.astro';
 import { videoForBorrowedHero } from '../../lib/hero-video-catalog.ts';
 import VipBadge from '../tour/VipBadge.astro';
 import mobileHeroPilot from '../../data/media/mobile-hero-pilot-20261021.json';
+import mobileHeroP06 from '../../data/media/mobile-hero-p06-20261022.json';
 
 interface Props {
   eyebrow?: string;
@@ -57,10 +58,13 @@ const borrowedVideo = video ? undefined : await videoForBorrowedHero(image, Astr
 const coverVideo = video ?? borrowedVideo;
 const MediaWrapper = coverVideo ? HeroVideo : 'div';
 const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
-// Deliberately scoped to the pilot page AND its unchanged original hero.
-const mobileHero = !mobilePhotoLead ? mobileHeroPilot.items.find((item) =>
+// Match the exact page AND its unchanged original hero before using a prepared crop.
+const experimentHero = !mobilePhotoLead ? mobileHeroP06.items.find((item) =>
   item.pagePath === Astro.url.pathname && item.source === image && item.status === 'READY'
 ) : undefined;
+const mobileHero = experimentHero ?? (!mobilePhotoLead ? mobileHeroPilot.items.find((item) =>
+  item.pagePath === Astro.url.pathname && item.source === image && item.status === 'READY'
+) : undefined);
 const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} ${v.width}w`).join(', ');
 
 ---
@@ -76,10 +80,10 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
   {(resolvedImage || coverVideo) && (
     <MediaWrapper {...(coverVideo ?? {})} selection={borrowedVideo ? "orientation" : "device"} placement="hero" style="display: contents">
     {resolvedImage && <picture style="display: contents">
-    {mobileHero && <source media={mobileHeroPilot.media} srcset={mobileSrcset} sizes="100vw" type="image/webp" width={mobileHero.variants[0].width} height={mobileHero.variants[0].height} />}
+    {mobileHero && <source media={experimentHero ? mobileHeroP06.media : mobileHeroPilot.media} srcset={mobileSrcset} sizes="100vw" type="image/webp" width={mobileHero.variants[0].width} height={mobileHero.variants[0].height} />}
     <img
       class="hero__media"
-      data-mobile-hero={mobileHero ? "pilot" : undefined}
+      data-mobile-hero={experimentHero ? "p06" : mobileHero ? "pilot" : undefined}
       style={mobileHero ? { "--hero-mobile-crop-position": mobileHero.objectPosition } : undefined}
       src={resolvedImage}
       alt=""
@@ -148,7 +152,7 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
   }
 
   @media (max-width: 479px) {
-    .hero__media[data-mobile-hero="pilot"] { object-position: var(--hero-mobile-crop-position, center); }
+    .hero__media[data-mobile-hero] { object-position: var(--hero-mobile-crop-position, center); }
   }
 
   .hero__overlay {

@@ -2,8 +2,9 @@
 import type { HTMLAttributes } from 'astro/types';
 import HeroVideo from './HeroVideo.astro';
 import { videoForBorrowedHero } from '../../lib/hero-video-catalog.ts';
-interface Props extends HTMLAttributes<'img'> { fill?: boolean; background?: boolean }
-const { fill = false, background = false, ...attributes } = Astro.props;
+import { withBase } from '../../lib/paths';
+interface Props extends HTMLAttributes<'img'> { fill?: boolean; background?: boolean; mobileCover?: { src: string; position: string } }
+const { fill = false, background = false, mobileCover, ...attributes } = Astro.props;
 const video = await videoForBorrowedHero(typeof attributes.src === 'string' ? attributes.src : undefined, Astro.url.pathname);
 ---
 {video ? (
@@ -13,9 +14,17 @@ const video = await videoForBorrowedHero(typeof attributes.src === 'string' ? at
       <img {...attributes} data-cover-photo />
     </HeroVideo>
   </span>
+) : mobileCover ? (
+  <span class:list={['hero-image-responsive', { 'hero-image-cover--fill': fill, 'hero-image-cover--background': background }]}
+    data-mobile-cover="home-p06" role={attributes.alt ? 'img' : undefined} aria-label={attributes.alt || undefined} aria-hidden={attributes.alt ? undefined : 'true'} title={attributes.title}
+    style={`--cover-original-image:url("${attributes.src}");--cover-phone-image:url("${withBase(mobileCover.src)}");--cover-phone-position:${mobileCover.position}`} />
 ) : <img {...attributes} data-cover-photo />}
 <style>
   .hero-image-cover { position: relative; display: block; width: 100%; height: 100%; min-width: 0; overflow: hidden; isolation: isolate; aspect-ratio: var(--cover-image-ratio, 4/3); }
   .hero-image-cover--background { z-index: -2; }
   .hero-image-cover--fill { position: absolute; inset: 0; aspect-ratio: auto; }
+  .hero-image-responsive { display: block; width: 100%; height: 100%; background-image: var(--cover-original-image); background-size: cover; background-position: center; transition: transform 700ms var(--ease-out); }
+  @media (max-width: 479px) {
+    .hero-image-responsive { background-image: var(--cover-phone-image, var(--cover-original-image)); background-position: var(--cover-phone-position, center); }
+  }
 </style>

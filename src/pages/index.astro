@@ -23,9 +23,13 @@ import FactStrip from '../components/proof/FactStrip.astro';
 import SearchTrigger from '../components/global/SearchTrigger.astro';
 import directS3Uploads from '../data/media/direct-s3-uploads.json';
 import mobileHeroPilot from '../data/media/mobile-hero-pilot-20261021.json';
+import mobileHeroP06 from '../data/media/mobile-hero-p06-20261022.json';
 
 // Explicit homepage opt-in: reuse verified crops without changing other card uses.
-const mobileCoverFor = (source?: string) => {
+const mobileCoverFor = (source?: string, allowLegacy = true) => {
+  const experimentCrop = mobileHeroP06.items.find((item) => item.source === source && item.status === 'READY' && item.homeCover);
+  if (experimentCrop?.homeCover) return { src: `/${experimentCrop.homeCover.key}`, position: experimentCrop.homeCover.position, narrow: true };
+  if (!allowLegacy) return undefined;
   const crop = mobileHeroPilot.items.find((item) => item.source === source && item.status === 'READY');
   const variant = crop?.variants.at(-1);
   return crop && variant ? { src: `/${variant.key}`, position: crop.objectPosition } : undefined;
@@ -210,7 +214,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
             meta={interestTourCount(entry.data.id, tourCount)}
             image={entry.data.hero?.src}
             href={themePath(entry.data)}
-            mobileCover={index % 3 !== 0 ? mobileCoverFor(entry.data.hero?.src) : undefined}
+            mobileCover={mobileCoverFor(entry.data.hero?.src, index % 3 !== 0)}
             imageTextAlign={entry.data.imageTextAlign}
           />
         ))}
@@ -238,6 +242,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
         text={mainTour.data.lead}
         href={tourPath(mainTour.data)}
         image={mainTour.data.hero?.src}
+        mobileCover={mobileCoverFor(mainTour.data.hero?.src)}
         imageTextAlign={mainTour.data.imageTextAlign}
       />
     )}
@@ -245,7 +250,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
       <div class="home-tour-grid">
         {smallTours.map((entry) => (
           <a class="home-poster home-poster--tour" href={withBase(tourPath(entry.data))} data-image-text-align={entry.data.imageTextAlign}>
-            {entry.data.hero?.src && <HeroImage fill background src={withBase(entry.data.hero.src)} loading="lazy" alt="" />}
+            {entry.data.hero?.src && <HeroImage fill background src={withBase(entry.data.hero.src)} mobileCover={mobileCoverFor(entry.data.hero.src)} loading="lazy" alt="" />}
             <span class="home-poster__shade" aria-hidden="true"></span>
             {vipTourPaths.has(tourPath(entry.data)) && <VipBadge overlay />}
             <span class="home-poster__content">
@@ -430,6 +435,7 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
   .home-poster { position: relative; display: flex; align-items: flex-end; min-width: 0; min-height: clamp(310px, 34vw, 470px); overflow: hidden; isolation: isolate; color: #fff; background: linear-gradient(140deg, #343c36, #151713); }
   .home-poster :global(img[data-cover-photo]), .home-discover__tile :global(img[data-cover-photo]), .home-service :global(img[data-cover-photo]) { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; max-width: none; object-fit: cover; transition: transform 700ms var(--ease-out); }
   .home-poster:hover :global(img[data-cover-photo]), .home-discover__tile:hover :global(img[data-cover-photo]), .home-service:hover :global(img[data-cover-photo]) { transform: scale(1.035); }
+  .home-poster:hover :global(.hero-image-responsive) { transform: scale(1.035); }
   .home-poster__shade, .home-discover__shade, .home-service__shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgb(0 0 0 / 5%) 12%, rgb(0 0 0 / 70%) 100%); }
   .home-poster__content { display: block; width: 100%; padding: clamp(18px, 2.5vw, 34px); }
   .home-poster__content .eyebrow { display: block; margin-bottom: 14px; color: rgb(255 255 255 / 85%); }

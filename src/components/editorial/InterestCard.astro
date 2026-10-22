@@ -5,7 +5,7 @@ import VipBadge from '../tour/VipBadge.astro';
 import { getVipTourPaths } from '../../lib/vip-catalog';
 interface Props {
   entityId: string; title: string; text?: string; href: string; image?: string;
-  mobileCover?: { src: string; position: string };
+  mobileCover?: { src: string; position: string; narrow?: boolean };
   eyebrow?: string; meta?: string; imageTextAlign?: 'left' | 'right'; large?: boolean;
 }
 const { entityId, title, text, href, image, mobileCover, eyebrow, meta, imageTextAlign = 'left', large = false } = Astro.props;
@@ -14,7 +14,7 @@ const vip = (await getVipTourPaths()).has(href);
 <article class:list={['interest-card', { 'interest-card--large': large }]} data-interest-item={entityId}>
   <a href={withBase(href)} class="interest-card__link">
     {image && <div class="interest-card__image" data-video-surface><BorrowedHero image={image} layer="foreground">{mobileCover
-      ? <span class="interest-card__responsive-image" data-mobile-cover="home-p02" aria-hidden="true" style={`--interest-image: url("${withBase(image)}");--interest-mobile-image: url("${withBase(mobileCover.src)}");--interest-mobile-position: ${mobileCover.position}`} />
+      ? <span class="interest-card__responsive-image" data-mobile-cover={mobileCover.narrow ? 'home-p06' : 'home-p02'} aria-hidden="true" style={`--interest-image: url("${withBase(image)}");--interest-mobile-image: url("${withBase(mobileCover.src)}");--interest-mobile-position: ${mobileCover.position}`} />
       : <img src={withBase(image)} alt="" loading="lazy" decoding="async" />}</BorrowedHero>{vip && <VipBadge overlay />}</div>}
     <div class="interest-card__copy" data-text-align={imageTextAlign}>
       {eyebrow && eyebrow !== 'По интересам' && <p class="eyebrow">{eyebrow}</p>}
@@ -97,7 +97,13 @@ const vip = (await getVipTourPaths()).has(href);
     .interest-card[data-interest-item="theme_adventure"] .interest-card__image img { object-position: 92% center; }
   }
   @media (max-width: 760px) {
-    .interest-card__responsive-image {
+    .interest-card__responsive-image[data-mobile-cover="home-p02"] {
+      background-image: var(--interest-mobile-image, var(--interest-image));
+      background-position: var(--interest-mobile-position, center);
+    }
+  }
+  @media (max-width: 479px) {
+    .interest-card__responsive-image[data-mobile-cover="home-p06"] {
       background-image: var(--interest-mobile-image, var(--interest-image));
       background-position: var(--interest-mobile-position, center);
     }

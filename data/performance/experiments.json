@@ -688,6 +688,51 @@
       },
       "conclusion": "Mobile scores worsened in this series; no mobile acceleration claim. Desktop starts with frame only and no movie until hover, so workload differs. Concurrent entity-authority source and three-sample variability prevent isolated causal attribution. Next proposed experiment: request chosen first frame before main JS; not implemented.",
       "nextCycleRequiresDiscussion": true
+    },
+    {
+      "id": "P06",
+      "kind": "optimization",
+      "date": "2026-10-22",
+      "status": "baseline_complete_prepared_for_publication",
+      "authorization": "User explicitly requests 20 new photo pages plus homepage, three successful Mobile runs each before and after, apply crops and publish. Ordinary failures must be retried; no desktop runs requested.",
+      "hypothesis": "Visual semantic focus with deterministic 3:4 crops reduces mobile hero image transfer; measure changes independently from file bytes.",
+      "scope": "20 exact page/source pairs and four homepage covers at <=479 CSS px; homepage top video unchanged.",
+      "devices": [
+        "Mobile"
+      ],
+      "pages": 21,
+      "runsPerPageAndDevice": 3,
+      "controlPages": "data/performance/pages-P06-20261022.json",
+      "focus": "data/performance/focus-P06-20261022.json",
+      "raw": "data/performance/runs/P06-mobile-hero-crops-20261022.json",
+      "summary": "data/performance/summaries/P06-mobile-hero-crops-20261022.json",
+      "manifest": "src/data/media/mobile-hero-p06-20261022.json",
+      "assetBytes": {
+        "original20": 9271076,
+        "largest20Portraits": 2286380,
+        "uploadedVariants": 45
+      },
+      "excludedInitialBaseline": "58 completed reports excluded as DRIFT after a concurrent shared-header publication; complete baseline restarted.",
+      "nextCycleRequiresDiscussion": true,
+      "validRuns": 63,
+      "excluded": {
+        "DRIFT": 58,
+        "ERROR_OR_INCOMPLETE": 7
+      },
+      "beforeSourceCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
+      "beforeSuccessfulDeployRun": 39810582959,
+      "verification": {
+        "astroCompile": 5,
+        "existingTargetedTestsPassed": 14,
+        "renderedSelectedHero": 20,
+        "changedSourceRejected": 20,
+        "otherPageRejected": 20,
+        "legacyHeroPreserved": 19,
+        "homeCoverDeferred": 4,
+        "reproducedAssetHashes": 45,
+        "physicalPhoneTested": false,
+        "localFullBuild": "Component bundling succeeded; full prerender blocked by omitted legacy media files in sparse checkout. Standard production workflow remains the full publication gate."
+      }
     }
   ]
 }

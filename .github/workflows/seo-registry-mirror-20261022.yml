@@ -1,0 +1,73 @@
+name: Reconcile SEO registry stages 2026-10-22
+on:
+  push:
+    branches: [ops/seo-registry-mirror-20261022]
+permissions:
+  contents: write
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Mirror confirmed main SEO status to staging without touching claims or articles
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            echo "Reconciliation attempt ${attempt}"
+            git fetch --no-tags origin main seo-geo/staging
+            git checkout -B seo-reconcile refs/remotes/origin/seo-geo/staging
+            node <<'NODE'
+          const fs = require('node:fs');
+          const cp = require('node:child_process');
+          const names = ['01-countries','02-interests','03-country-interest','04-country-interest-vip','05-tours','06-places','07-excursions'];
+          const syncKeys = ['work','articlePath','preparedAt','publishedAt','publishedCommit','deployRun','rewrittenAt','rewrittenCommit','rewriteDeployRun','rewriteSourceBlobSha','rewriteResultBlobSha','rewriteChanges'];
+          const report = [];
+          for (const name of names) {
+            const path = 'data/seo-geo/registry/' + name + '.json';
+            const main = JSON.parse(cp.execFileSync('git',['show','refs/remotes/origin/main:' + path],{encoding:'utf8',maxBuffer:24*1024*1024}));
+            const stage = JSON.parse(fs.readFileSync(path,'utf8'));
+            const mainByUrl = new Map(main.entries.map(r=>[r.url,r]));
+            const stageByUrl = new Map(stage.entries.map(r=>[r.url,r]));
+            if (mainByUrl.size !== main.entries.length || stageByUrl.size !== stage.entries.length) throw Error('Duplicate URL in '+name);
+            if (mainByUrl.size !== stageByUrl.size) throw Error('SEO registry cardinality drift in '+name);
+            let advanced=0, fields=0;
+            for (const row of stage.entries) {
+              const source=mainByUrl.get(row.url);
+              if (!source) throw Error('Main missing staged URL '+row.url);
+              if (source.work !== 'rewritten') continue;
+              if (!['published','prepared','rewritten'].includes(row.work)) throw Error('Unexpected staged state '+row.url+':'+row.work);
+              if (!source.rewrittenAt || !source.rewrittenCommit) throw Error('Main rewrite receipt missing: '+row.url);
+              if (row.work !== 'rewritten') advanced++;
+              for (const key of syncKeys) {
+                if (!Object.prototype.hasOwnProperty.call(source,key)) continue;
+                if (JSON.stringify(row[key]) !== JSON.stringify(source[key])) {
+                  row[key] = source[key]; fields++;
+                }
+              }
+            }
+            if (fields) fs.writeFileSync(path,JSON.stringify(stage,null,2)+'\n');
+            report.push({name,advanced,fields});
+          }
+          console.log('SEO_REGISTRY_RECONCILIATION',JSON.stringify(report));
+          NODE
+            git add data/seo-geo/registry/*.json
+            if git diff --cached --quiet; then
+              echo "Staging is current; no commit necessary."
+              exit 0
+            fi
+            git commit -m "seo: mirror final rewritten statuses from main [skip ci]"
+            if git push origin HEAD:refs/heads/seo-geo/staging; then
+              echo "Staging SEO registry synchronization committed."
+              exit 0
+            fi
+            echo "Concurrent staging change, recomputing from fresh branch heads"
+          done
+          echo "Unable to perform nonforce sync after three attempts" >&2
+          exit 1

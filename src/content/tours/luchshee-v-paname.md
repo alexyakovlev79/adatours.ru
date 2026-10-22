@@ -150,7 +150,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/boquete/gallery-1-enhanced-20261023-v2.webp
     hover: "Бокете: пара ярких попугаев ара на земле среди растений"
     alt: "Два красных попугая ара с жёлто-синими крыльями среди зелени в районе Бокете, Панама"
 - day: 8

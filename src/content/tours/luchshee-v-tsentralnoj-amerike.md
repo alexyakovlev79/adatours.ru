@@ -551,7 +551,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: "/media/destinations/boquete/gallery-4-enhanced-20261005.webp"
+  - src: "/media/destinations/boquete/gallery-4-enhanced-20261023-v2.webp"
     hover: "Бокете: торговая улица, церковь и зелёные горы на горизонте"
     alt: "Городская улица с магазинами и церковными башнями на фоне гор, Бокете, Панама"
 - day: 19
@@ -612,7 +612,7 @@ itinerary:
 
     Завтрак включен.
   images:
-  - src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/boquete/gallery-1-enhanced-20261023-v2.webp
     hover: "Бокете: пара ярких попугаев ара на земле среди растений"
     alt: "Два красных попугая ара с жёлто-синими крыльями среди зелени в районе Бокете, Панама"
 - day: 21

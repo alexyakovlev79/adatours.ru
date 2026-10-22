@@ -10,16 +10,16 @@ summary: "Горный город среди кофейных и цитрусо�
 searchAliases: []
 hero: {"src":/media/countries/panama/featureBands-2-enhanced-20261002.webp,"alt":"Человек на зеленом горном выступе над облаками в районе Бокете, Панама", hover: "Бокете: горный склон над сплошным слоем облаков"}
 gallery:
-- src: /media/destinations/boquete/gallery-1-enhanced-20261005.webp
+- src: /media/destinations/boquete/gallery-1-enhanced-20261023-v2.webp
   hover: "Бокете: пара ярких попугаев ара на земле среди растений"
   alt: "Два красных попугая ара с жёлто-синими крыльями среди зелени в районе Бокете, Панама"
-- src: /media/destinations/boquete/gallery-2-enhanced-20261005.webp
+- src: /media/destinations/boquete/gallery-2-enhanced-20261023-v2.webp
   alt: "Небольшой водопад на каменистом ручье среди зелени в Бокете, Панама"
   hover: "Бокете: вода струится по камням лесного ручья"
-- src: /media/destinations/boquete/gallery-3-enhanced-20261005.webp
+- src: /media/destinations/boquete/gallery-3-enhanced-20261023-v2.webp
   alt: "Кирпичные арки и каменные колонны разрушенного здания под открытым небом"
   hover: "Руины здания с высокими арками и колоннами без крыши"
-- src: /media/destinations/boquete/gallery-4-enhanced-20261005.webp
+- src: /media/destinations/boquete/gallery-4-enhanced-20261023-v2.webp
   alt: "Городская улица с магазинами и церковными башнями на фоне гор, Бокете, Панама"
   hover: "Бокете: торговая улица, церковь и зелёные горы на горизонте"
 - src: /media/tours/luchshee-v-paname/itinerary-4-images-0-src-enhanced-20261007.webp

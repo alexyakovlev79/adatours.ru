@@ -36,7 +36,9 @@ const sh = (command, ...args) => execFileSync(command, args, {
 }).trimEnd();
 const git = (...args) => sh('git', ...args);
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-const at = (ref, path) => git('show', ref + ':' + path);
+const at = (ref, path) => execFileSync('git', ['show', ref + ':' + path], {
+  encoding: 'utf8', maxBuffer: 64 * 1024 * 1024
+});
 const blob = (ref, path) => {
   try { return git('rev-parse', ref + ':' + path); } catch { return null; }
 };

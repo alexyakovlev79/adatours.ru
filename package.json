@@ -21,18 +21,20 @@
     "test:seo-preflight": "node --test tests/seo-geo-link-preflight.test.mjs",
     "sync:multi-country": "node scripts/sync-multi-country-registries.mjs --write",
     "test:seo-voice-rewrite": "node --test tests/seo-geo-voice-rewrite.test.mjs",
-    "check:entity-authority": "node scripts/export-entity-authority.mjs --check"
+    "check:entity-authority": "node scripts/export-entity-authority.mjs --check",
+    "test:mobile-hero": "node --test tests/mobile-hero*.test.mjs tests/media-upload-session-dispatch.test.mjs"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.2",
     "@astrojs/sitemap": "3.7.4",
     "astro": "7.3.4",
     "parse5": "8.0.1",
-    "sharp": "^0.34.4",
-    "@astrojs/markdown-remark": "^7.3.2"
+    "sharp": "^0.34.4"
   },
   "devDependencies": {
     "js-yaml": "4.3.2",
-    "pagefind": "1.5.2"
+    "pagefind": "1.5.2",
+    "sharp-hero-crops": "npm:sharp@0.35.5"
   },
   "engines": {
     "node": ">=24"

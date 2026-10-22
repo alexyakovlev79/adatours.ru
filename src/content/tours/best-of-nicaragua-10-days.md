@@ -80,7 +80,7 @@ itinerary:
     Ночь в отеле: El Convento либо Real La Merced; окончательный отель и место ночевки подтверждаются перед бронированием.
     Питание: завтрак.'
   images:
-  - src: /media/destinations/leon/gallery-10-enhanced-20261005.webp
+  - src: /media/destinations/leon/gallery-10-enhanced-20261023-v2.webp
     alt: Грузовик на улице Леона с цветными фасадами и церковными башнями, Никарагуа
     hover: 'Леон: цветные дома и жёлтые башни над улицей'
   contentBlocks:

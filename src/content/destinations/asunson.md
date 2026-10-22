@@ -16,7 +16,7 @@ gallery:
 - src: /media/destinations/asuncion/gallery-2-enhanced-20261005.webp
   alt: "Светлый собор с двумя башнями в Асунсьоне, Парагвай"
   hover: "Асунсьон: фасад собора с двумя башнями и арочными входами"
-- src: /media/destinations/asuncion/gallery-3-enhanced-20261005.webp
+- src: /media/destinations/asuncion/gallery-3-enhanced-20261023-v2.webp
   alt: "Белая церковь с остроконечными башнями за оградой в Асунсьоне, Парагвай"
   hover: "Асунсьон: светлые шпили церкви среди деревьев"
 - {"src":"/media/destinations/asuncion/gallery-4-enhanced-20261005.webp","alt":"Жёлтые стены памятника с рельефами и статуей, Асунсьон, Парагвай","hover":"Асунсьон, Парагвай: жёлтые стены памятника с рельефами и статуей"}

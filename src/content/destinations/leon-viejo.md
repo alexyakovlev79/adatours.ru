@@ -8,7 +8,7 @@ countryId: country_nicaragua
 destinationType: natural_area
 summary: 'Руины первого Леона: улицы, фундаменты храмов и домов испанского города XVI века возле озера Манагуа.'
 hero:
-  src: /media/destinations/leon/gallery-11-enhanced-20261005.webp
+  src: /media/destinations/leon/gallery-11-enhanced-20261023-v2.webp
   alt: Низкие каменные и кирпичные руины среди травы и деревьев у Леона, Никарагуа
   hover: 'Окрестности Леона: остатки стен среди зелени'
 gallery: []

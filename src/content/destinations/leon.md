@@ -31,16 +31,16 @@ gallery:
 - src: /media/destinations/leon/gallery-7-enhanced-20261004.webp
   alt: "Коническая гора над слоем облаков в лучах низкого солнца"
   hover: "Рассветные лучи над горой и облаками"
-- src: /media/destinations/leon/gallery-8-enhanced-20261005.webp
+- src: /media/destinations/leon/gallery-8-enhanced-20261023-v2.webp
   alt: "Церковная башня и черепичные крыши на фоне холмов в золотистом свете"
   hover: "Золотистый свет над церковной башней и городскими крышами"
 - src: /media/destinations/leon/gallery-9-enhanced-20261005.webp
   alt: "Скульптура льва с открытой пастью перед фасадом собора в Леоне, Никарагуа"
   hover: "Леон: каменный лев у стен собора"
-- src: /media/destinations/leon/gallery-10-enhanced-20261005.webp
+- src: /media/destinations/leon/gallery-10-enhanced-20261023-v2.webp
   alt: "Грузовик на улице Леона с цветными фасадами и церковными башнями, Никарагуа"
   hover: "Леон: цветные дома и жёлтые башни над улицей"
-- src: /media/destinations/leon/gallery-11-enhanced-20261005.webp
+- src: /media/destinations/leon/gallery-11-enhanced-20261023-v2.webp
   alt: "Низкие каменные и кирпичные руины среди травы и деревьев у Леона, Никарагуа"
   hover: "Окрестности Леона: остатки стен среди зелени"
 facts: []

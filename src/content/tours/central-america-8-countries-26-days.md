@@ -422,7 +422,7 @@ itinerary:
   text: Утром переезд из Гранады в Леон. После прибытия — обзорная прогулка по историческому центру, собор и Центр искусств
     Фонда Ортис-Гурдиан. Террасы собора посещаются при возможности. Далее размещение в отеле Леона и свободное время.
   images:
-  - src: /media/destinations/leon/gallery-10-enhanced-20261005.webp
+  - src: /media/destinations/leon/gallery-10-enhanced-20261023-v2.webp
     alt: Грузовик на улице Леона с цветными фасадами и церковными башнями, Никарагуа
     hover: 'Леон: цветные дома и жёлтые башни над улицей'
 - excursionRef: excursion_leon_cathedral_ortiz_gurdian_walk

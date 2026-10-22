@@ -92,6 +92,28 @@ test('SEO title cases and conditional prices',()=>{
  assert.ok(!seoExcursionTitle({title:'Полет',priceFrom:null},'country_brazil').includes('цена'));
 });
 
+test('SEO object titles skip a tour prefix when the name already contains the noun',()=>{
+ const year=seoYearRange();
+ for(const [title,expected] of [
+  ['Новогодний тур в Бразилию и Аргентину','Новогодний тур в Бразилию и Аргентину'],
+  ['Большой тур по Патагонии','Большой тур по Патагонии'],
+  ['Тур по Бразилии','Тур по Бразилии'],
+  ['Мото-тур по Аргентине','Мото-тур по Аргентине'],
+  ['Туры по Амазонии','Туры по Амазонии'],
+  ['Несколько туров по Южной Америке','Несколько туров по Южной Америке'],
+  ['Путешествие по Перу','Тур Путешествие по Перу'],
+  ['Туристические тропы Бразилии','Тур Туристические тропы Бразилии'],
+  ['Контуры Амазонии','Тур Контуры Амазонии']
+ ]) {
+  assert.ok(seoTourTitle({title}).startsWith(expected+' в '+year),title);
+ }
+ // Excursion detail titles already use the original name without adding a category prefix.
+ assert.match(seoExcursionTitle({title:'Экскурсия на водопады Игуасу'},'country_brazil'),
+  /^Экскурсия на водопады Игуасу, Бразилия/);
+ assert.match(seoExcursionTitle({title:'Вечерняя экскурсия по Рио'},'country_brazil'),
+  /^Вечерняя экскурсия по Рио, Бразилия/);
+});
+
 test('SEO titles compact every grammatical case without changing source names',()=>{
  const original='Достопримечательность, достопримечательности, достопримечательностей, достопримечательностям, достопримечательностями, достопримечательностях, достопримечательностью';
  assert.equal(seoCompactTitle(original),'Локация, локации, локаций, локациям, локациями, локациях, локацией');

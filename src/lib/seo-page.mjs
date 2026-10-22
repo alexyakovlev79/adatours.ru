@@ -41,7 +41,9 @@ function priceFrom(price,currency) {
 }
 export function seoTourTitle(d) {
  const compact=seoCompactTitle(d.title);
- const named=/^тур(?:\s|$)/iu.test(compact)?compact:'Тур '+compact;
+ // Match the standalone noun anywhere in the object name, including inflected forms.
+ const named=/(?:^|[^\p{L}])тур(?:а|у|ом|е|ы|ов|ам|ами|ах)?(?!\p{L})/iu.test(compact)
+  ? compact : 'Тур '+compact;
  const price=priceFrom(d.priceFrom,d.currency);
  return named+(price?' по цене '+price:'')+' в '+year()+
   ' от туроператора с русскоговорящими гидами | Ada Tours';

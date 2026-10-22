@@ -9,7 +9,7 @@ lead: >-
 
 ## Перу и Уругвай: разный вклад в природное путешествие
 
-В каталоге представлены {{catalog.toursCountPhrase}}. Две действующие программы — [«6 стран Латинской Америки за 20 дней: от Рио до Мачу-Пикчу»](/multi-country/tour/latin-america-6-countries-20-days/) и [«8 стран Южной Америки за 32 дня»](/multi-country/tour/south-america-eight-countries-32-days/). Оба маршрута включают [Перу](/peru/) и [Уругвай](/uruguay/), но фактическая программа каждой страны совсем разная.
+В нашей подборке вы найдете {{catalog.toursCountPhrase}}. Две действующие программы — [«6 стран Латинской Америки за 20 дней: от Рио до Мачу-Пикчу»](/multi-country/tour/latin-america-6-countries-20-days/) и [«8 стран Южной Америки за 32 дня»](/multi-country/tour/south-america-eight-countries-32-days/). Оба маршрута включают [Перу](/peru/) и [Уругвай](/uruguay/), но фактическая программа каждой страны совсем разная.
 
 {{catalog.tourTable:tour_latin_america_six_countries_20_days_2026,tour_south_america_eight_countries_32_days_2026}}
 

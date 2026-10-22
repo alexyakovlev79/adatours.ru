@@ -3,7 +3,8 @@ import { ORG } from '../data/organization/ada-tours';
 import { SITE } from './site';
 import { countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 import { isActiveEntity, isArchivedEntity } from './archive.mjs';
-import { buildStructuredData } from './structured-data.mjs';
+import { buildStructuredData, recordId } from './structured-data.mjs';
+import { authoritativeEnglishTarget, attachExternalPageSameAs } from './external-page-sameas.mjs';
 import { inspectHtml } from './structured-data-html.mjs';
 import { inspectSeoGeoArticle } from './seo-geo-schema.mjs';
 import externalProfiles from '../../data/external-identity/external-profiles.json';
@@ -21,6 +22,9 @@ for (const row of confirmedEnglishPairs.rows) {
   if (status !== 'confirmed' || !['country', 'destination', 'tour', 'excursion'].includes(kind)) continue;
   try {
     if (new URL(ru).origin !== new URL(SITE.url).origin || new URL(en).origin !== 'https://adatours.com') continue;
+    // The 22.10 adjudication overrides older, conflicting EN-to-RU mappings.
+    const newerCanonical = authoritativeEnglishTarget(en);
+    if (newerCanonical && newerCanonical !== new URL(ru).pathname) continue;
     const pairs = confirmedById.get(entityId) || [];
     pairs.push({ kind, ru, en });
     confirmedById.set(entityId, pairs);
@@ -94,6 +98,12 @@ export async function pageStructuredData(input: {
       document: { ...inspected.facts, editorial }, breadcrumbs: input.breadcrumbs || [],
       extra: [...[input.extra || []].flat(), ...inspected.legacy], geoKnowledge });
   const current = records.find((record) => record.path === input.path);
+  // One static, local lookup per page; no Sheets/API calls and no browser JS.
+  attachExternalPageSameAs(graph, {
+    path: input.path,
+    pageUrl: input.url,
+    entityId: current ? recordId(current, input.root) : undefined,
+  });
   const prices = collectSeoPagePrices({
     records, root: input.root, path: input.path,
     groups: inspected.facts.groups, priceVisible: inspected.facts.priceVisible,

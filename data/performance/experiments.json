@@ -693,7 +693,7 @@
       "id": "P06",
       "kind": "optimization",
       "date": "2026-10-22",
-      "status": "baseline_complete_prepared_for_publication",
+      "status": "published_measurements_blocked_google_verification",
       "authorization": "User explicitly requests 20 new photo pages plus homepage, three successful Mobile runs each before and after, apply crops and publish. Ordinary failures must be retried; no desktop runs requested.",
       "hypothesis": "Visual semantic focus with deterministic 3:4 crops reduces mobile hero image transfer; measure changes independently from file bytes.",
       "scope": "20 exact page/source pairs and four homepage covers at <=479 CSS px; homepage top video unchanged.",
@@ -714,10 +714,11 @@
       },
       "excludedInitialBaseline": "58 completed reports excluded as DRIFT after a concurrent shared-header publication; complete baseline restarted.",
       "nextCycleRequiresDiscussion": true,
-      "validRuns": 63,
+      "validRuns": 85,
       "excluded": {
         "DRIFT": 58,
-        "ERROR_OR_INCOMPLETE": 7
+        "ERROR_IMAGE": 1,
+        "ERROR_OR_INCOMPLETE_ATTEMPTS": 8
       },
       "beforeSourceCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
       "beforeSuccessfulDeployRun": 39810582959,
@@ -731,8 +732,19 @@
         "homeCoverDeferred": 4,
         "reproducedAssetHashes": 45,
         "physicalPhoneTested": false,
-        "localFullBuild": "Component bundling succeeded; full prerender blocked by omitted legacy media files in sparse checkout. Standard production workflow remains the full publication gate."
-      }
+        "localFullBuild": "Component bundling succeeded; full prerender blocked by omitted legacy media files in sparse checkout. Standard production workflow remains the full publication gate.",
+        "productionBuild": {
+          "tests": 297,
+          "failed": 0,
+          "pages": 6132
+        }
+      },
+      "sourceCommit": "31717fae385a8dc43794fbd167695aac572c6d3b",
+      "successfulDeployRun": 39815531276,
+      "validBefore": 63,
+      "validAfter": 22,
+      "preliminaryExcluded": 6,
+      "continuation": "Google suspicious-traffic reCAPTCHA persists after one ordinary reload. Browser handoff required. Six active reports and35 queued jobs retained. Never count broken hero screenshots as successful tests."
     }
   ]
 }

@@ -7,10 +7,39 @@
   "source": "Google PageSpeed Insights official UI; calculator values retained at millisecond precision",
   "unmeasuredAudits": "No transfer-weight, unused-script, LCP-breakdown or long-task values were collected; absent fields are not zero.",
   "versionCaveat": "Local public HTML hashes bracket each phase. The exact CDN copy used by remote Google workers is not independently observable.",
-  "publication": {},
-  "validRuns": 63,
+  "publication": {
+    "sourceCommit": "31717fae385a8dc43794fbd167695aac572c6d3b",
+    "status": "published_pages_deploy_success",
+    "baselineSourceCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
+    "baselineDeploy": 39810582959,
+    "successfulDeployRun": 39815531276,
+    "deployRun": 39815531276,
+    "verification": {
+      "renderedSelectedHeroes": 20,
+      "changedSourceRejected": 20,
+      "otherPageRejected": 20,
+      "legacyHeroesPreserved": 19,
+      "homepageCoversDeferred": 4,
+      "reproducedAssetHashes": 45,
+      "baselineSheetRuns": "313:440",
+      "baselineSheetSummary": "85:105",
+      "publicHeroes": 20,
+      "publicHomepageCovers": 4,
+      "desktopCurrentSrcVerified": "https://img.adatours.ru/media/countries/guatemala/hero-enhanced-20261002.webp",
+      "browserHomepageCoversInitiallyDeferred": 4
+    },
+    "productionBuild": {
+      "tests": 297,
+      "passed": 297,
+      "failed": 0,
+      "pages": 6132
+    }
+  },
+  "validRuns": 85,
   "excludedDrift": 58,
-  "failedAttempts": 7,
+  "excludedImageErrors": 1,
+  "preliminaryRunsExcluded": 6,
+  "failedAttempts": 8,
   "pages": [
     {
       "id": "p01",
@@ -63,23 +92,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          67,
+          86,
+          82
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-cuba/07udbea7ee?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-cuba/w2t9skd1sh?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-cuba/pn0exrw28t?form_factor=mobile"
+        ],
+        "performance": 82,
+        "performanceRange": [
+          67,
+          86
+        ],
+        "fcpMs": 1351.0,
+        "fcpMsRange": [
+          1351.0,
+          3773.0
+        ],
+        "lcpMs": 4878.0,
+        "lcpMsRange": [
+          4138.0,
+          6145.0
+        ],
+        "tbtMs": 44.0,
+        "tbtMsRange": [
+          30.0,
+          82.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 1431.0,
+        "speedIndexMsRange": [
+          1351.0,
+          5172.0
+        ]
+      },
+      "deltaPerformance": 5,
+      "deltaLcpPercent": -17.629179331306986,
+      "deltaTbtPercent": -25.423728813559322
     },
     {
       "id": "p02",
@@ -132,23 +190,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          67,
+          79,
+          85
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-dominican-republic/0f2ze1kgg9?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-dominican-republic/bk0ke4vtuu?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-dominican-republic/mu4p57ipa3?form_factor=mobile"
+        ],
+        "performance": 79,
+        "performanceRange": [
+          67,
+          85
+        ],
+        "fcpMs": 1201.0,
+        "fcpMsRange": [
+          1201.0,
+          3844.0
+        ],
+        "lcpMs": 5043.0,
+        "lcpMsRange": [
+          4361.0,
+          5778.0
+        ],
+        "tbtMs": 76.0,
+        "tbtMsRange": [
+          64.0,
+          162.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 2858.0,
+        "speedIndexMsRange": [
+          1201.0,
+          5107.0
+        ]
+      },
+      "deltaPerformance": 3,
+      "deltaLcpPercent": -26.31502045587376,
+      "deltaTbtPercent": 28.81355932203389
     },
     {
       "id": "p03",
@@ -201,23 +288,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          63,
+          78,
+          78
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-guatemala/yxkk56md12?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-guatemala/n0e725vm44?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-guatemala/e76g33evpq?form_factor=mobile"
+        ],
+        "performance": 78,
+        "performanceRange": [
+          63,
+          78
+        ],
+        "fcpMs": 1351.0,
+        "fcpMsRange": [
+          1351.0,
+          3809.0
+        ],
+        "lcpMs": 5845.0,
+        "lcpMsRange": [
+          5794.0,
+          6134.0
+        ],
+        "tbtMs": 63.0,
+        "tbtMsRange": [
+          50.0,
+          244.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 3168.0,
+        "speedIndexMsRange": [
+          2940.0,
+          5027.0
+        ]
+      },
+      "deltaPerformance": 4,
+      "deltaLcpPercent": -17.385159010600702,
+      "deltaTbtPercent": 21.153846153846146
     },
     {
       "id": "p04",
@@ -270,23 +386,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          67,
+          81,
+          68
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-nicaragua/yyndmwk983?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-nicaragua/3lheux3l6p?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-nicaragua/qlkm4exh6a?form_factor=mobile"
+        ],
+        "performance": 68,
+        "performanceRange": [
+          67,
+          81
+        ],
+        "fcpMs": 3949.0,
+        "fcpMsRange": [
+          1208.0,
+          3969.0
+        ],
+        "lcpMs": 5588.0,
+        "lcpMsRange": [
+          5054.0,
+          5760.0
+        ],
+        "tbtMs": 24.0,
+        "tbtMsRange": [
+          2.0,
+          92.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 5002.0,
+        "speedIndexMsRange": [
+          1462.0,
+          5033.0
+        ]
+      },
+      "deltaPerformance": -8,
+      "deltaLcpPercent": -14.386394974720396,
+      "deltaTbtPercent": -81.10236220472441
     },
     {
       "id": "p05",
@@ -339,22 +484,46 @@
         ]
       },
       "after": {
-        "count": 0,
+        "count": 2,
         "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
+        "scores": [
+          66,
+          75
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil-tour-brazil-group-tour-13-days/m2dm1g7ued?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-brazil-tour-brazil-group-tour-13-days/s442iia28a?form_factor=mobile"
+        ],
+        "performance": 70.5,
+        "performanceRange": [
+          66,
+          75
+        ],
+        "fcpMs": 2627.5,
+        "fcpMsRange": [
+          1351.0,
+          3904.0
+        ],
+        "lcpMs": 5679.0,
+        "lcpMsRange": [
+          5219.0,
+          6139.0
+        ],
+        "tbtMs": 172.0,
+        "tbtMsRange": [
+          82.0,
+          262.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 3472.5,
+        "speedIndexMsRange": [
+          1830.0,
+          5115.0
+        ]
       }
     },
     {
@@ -408,23 +577,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          66,
+          67,
+          67
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-tour-argentina-prehistoric-journey/l0lk83aaxq?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-tour-argentina-prehistoric-journey/ikyp0z5d4h?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-tour-argentina-prehistoric-journey/3w3k839tru?form_factor=mobile"
+        ],
+        "performance": 67,
+        "performanceRange": [
+          66,
+          67
+        ],
+        "fcpMs": 3779.0,
+        "fcpMsRange": [
+          3778.0,
+          3824.0
+        ],
+        "lcpMs": 6179.0,
+        "lcpMsRange": [
+          6134.0,
+          6193.0
+        ],
+        "tbtMs": 53.0,
+        "tbtMsRange": [
+          44.0,
+          72.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 5047.0,
+        "speedIndexMsRange": [
+          5020.0,
+          5107.0
+        ]
+      },
+      "deltaPerformance": 4,
+      "deltaLcpPercent": -26.414195546028342,
+      "deltaTbtPercent": -40.44943820224719
     },
     {
       "id": "p07",
@@ -477,23 +675,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          61,
+          79,
+          66
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-multi-country-tour-guatemala-honduras-el-salvador-belize/1r6nendbbf?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-multi-country-tour-guatemala-honduras-el-salvador-belize/xjr7lyhm1q?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-multi-country-tour-guatemala-honduras-el-salvador-belize/idxhtsuuai?form_factor=mobile"
+        ],
+        "performance": 66,
+        "performanceRange": [
+          61,
+          79
+        ],
+        "fcpMs": 3784.0,
+        "fcpMsRange": [
+          1351.0,
+          3821.0
+        ],
+        "lcpMs": 6151.0,
+        "lcpMsRange": [
+          5789.0,
+          6180.0
+        ],
+        "tbtMs": 84.0,
+        "tbtMsRange": [
+          51.0,
+          267.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 5081.0,
+        "speedIndexMsRange": [
+          1557.0,
+          5329.0
+        ]
+      },
+      "deltaPerformance": -8,
+      "deltaLcpPercent": -6.477117226699103,
+      "deltaTbtPercent": -56.25
     },
     {
       "id": "p08",
@@ -546,22 +773,46 @@
         ]
       },
       "after": {
-        "count": 0,
+        "count": 2,
         "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
+        "scores": [
+          66,
+          97
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-tour-best-of-peru-21-days/3p6b0bw2og?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-tour-best-of-peru-21-days/cf7fmpvbn6?form_factor=mobile"
+        ],
+        "performance": 81.5,
+        "performanceRange": [
+          66,
+          97
+        ],
+        "fcpMs": 2642.0,
+        "fcpMsRange": [
+          1351.0,
+          3933.0
+        ],
+        "lcpMs": 4439.5,
+        "lcpMsRange": [
+          2628.0,
+          6251.0
+        ],
+        "tbtMs": 55.5,
+        "tbtMsRange": [
+          49.0,
+          62.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 3238.0,
+        "speedIndexMsRange": [
+          1351.0,
+          5125.0
+        ]
       }
     },
     {

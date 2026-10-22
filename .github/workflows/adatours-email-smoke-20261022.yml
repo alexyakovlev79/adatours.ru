@@ -1,0 +1,75 @@
+name: AdaTours email delivery smoke test
+on:
+  push:
+    branches:
+      - diagnostic/postbox-dkim-dns-20261022
+    paths:
+      - .github/workflows/adatours-email-smoke-20261022.yml
+permissions:
+  contents: read
+jobs:
+  test-cloud-function:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify Yandex Cloud Function and submit one labeled QA email
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timedelta, timezone
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError, URLError
+
+          function_url = "https://functions.yandexcloud.net/d4e9tk1l5e35s0r3j39t"
+          origin = "https://adatours.ru"
+
+          def send(req):
+              try:
+                  with urlopen(req, timeout=25) as res:
+                      return res.status, dict(res.headers), res.read().decode("utf-8")
+              except HTTPError as exc:
+                  body = exc.read().decode("utf-8", errors="replace")[:300]
+                  print("Function HTTP error:", exc.code, "response:", body)
+                  raise
+              except URLError as exc:
+                  print("Function network error:", type(exc.reason).__name__)
+                  raise
+
+          status, headers, _ = send(Request(function_url, method="OPTIONS", headers={
+            "Origin": origin,
+            "Access-Control-Request-Method": "POST",
+            "Access-Control-Request-Headers": "Content-Type",
+          }))
+          print("Preflight HTTP:", status, "Allow-Origin:", headers.get("Access-Control-Allow-Origin", ""))
+          assert status == 204
+          assert headers.get("Access-Control-Allow-Origin") == origin
+
+          now = datetime.now(timezone.utc)
+          iso = lambda dt: dt.isoformat().replace("+00:00", "Z")
+          payload = {
+            "site": "adatours",
+            "lang": "ru",
+            "full_name": "AUTOTEST ADA EMAIL 2026-10-22",
+            "phone": "",
+            "phone_country": "",
+            "email": "info@adatours.ru",
+            "comment": "Техническая проверка Yandex Cloud Postbox после подтверждения DKIM. Не клиентская заявка.",
+            "contact_method": "email",
+            "entity_id": "email-restore-test-20261022",
+            "tour_id": "",
+            "company_website": "",
+            "page_url": "https://adatours.ru/",
+            "canonical_url": "https://adatours.ru/",
+            "referrer": "",
+            "utm": {},
+            "form_started_at": iso(now - timedelta(seconds=40)),
+            "submitted_at": iso(now),
+          }
+          status, headers, body = send(Request(
+            function_url, data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+            method="POST", headers={"Origin": origin, "Content-Type": "application/json"}))
+          print("Submission HTTP:", status, "result:", body[:300])
+          assert status == 200 and json.loads(body).get("ok") is True
+          print("ADA_EMAIL_SMOKE_PASS: Cloud Function reports Postbox delivery accepted.")
+          PY

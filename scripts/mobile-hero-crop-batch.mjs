@@ -6,7 +6,10 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
 import { createRequire } from 'node:module';
 
-const sharp = createRequire(import.meta.url)('sharp');
+const require = createRequire(import.meta.url);
+let sharp;
+try { sharp = require('sharp-hero-crops'); }
+catch (error) { if (error.code !== 'MODULE_NOT_FOUND') throw error; sharp = require('sharp'); }
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 export const SHARP_VERSION = '0.35.5';
 export const WEBP_QUALITY = 78;

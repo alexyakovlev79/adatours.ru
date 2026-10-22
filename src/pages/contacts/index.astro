@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import ContactActions from '../../components/global/ContactActions.astro';
 import { ORG } from '../../data/organization/ada-tours';
+import AuthoritySources from '../../components/proof/AuthoritySources.astro';
 ---
 
 <BaseLayout leadTitle="Оставить заявку" leadEntityId="contacts"
@@ -47,6 +48,8 @@ import { ORG } from '../../data/organization/ada-tours';
       </div>
     </div>
   </section>
+
+  <AuthoritySources entityKey="organization" path="/contacts/" groups={['maps']} heading="Офис Ada Tours на картах" compact />
 
 </BaseLayout>
 

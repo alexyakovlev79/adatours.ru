@@ -23,7 +23,7 @@ function* objects(value) {
   else if (value && typeof value === 'object') { yield value; for (const v of Object.values(value)) yield* objects(v); }
 }
 const pageTypes = new Set(['WebPage', 'CollectionPage', 'AboutPage', 'ContactPage', 'ProfilePage', 'FAQPage']);
-const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'GeoCoordinates', 'Country', 'AdministrativeArea', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'AggregateOffer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'Review', 'AggregateRating', 'WebPageElement', 'Table', 'Question', 'Answer']);
+const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'GeoCoordinates', 'Country', 'AdministrativeArea', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'AggregateOffer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'NewsArticle', 'EducationEvent', 'VirtualLocation', 'Review', 'AggregateRating', 'WebPageElement', 'Table', 'Question', 'Answer']);
 const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages: 0, redirects: 0, archives: 0, withSchema: 0, catalogPages: 0, faqPages: 0, offerPages: 0, editorialArticles: 0, editorialSections: 0, editorialTables: 0, subjectOfLinks: 0, pageTypes: {}, mainEntityTypes: {}, errors: [], pages: [] };
 const definitions = new Set();
 const references = [];

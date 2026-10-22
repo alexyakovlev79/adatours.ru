@@ -8,6 +8,7 @@ import EditorialProof from '../../components/proof/EditorialProof.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
 import { ORG } from '../../data/organization/ada-tours';
+import AuthoritySources from '../../components/proof/AuthoritySources.astro';
 
 const people = await getCollection('people', ({ data }) => data.id === 'person_anna' && data.locale === 'ru');
 const anna = people[0];
@@ -85,5 +86,7 @@ const anna = people[0];
       <p>Анна Аванесова основала Ada Tours. Ее личный опыт путешествий по Латинской Америке сформировал подход компании: маршрут собирается вокруг конкретного человека, его дат, интересов и темпа поездки.</p>
     </PersonProfile>
   )}
+
+  <AuthoritySources entityKey="organization" path="/about/" heading="Ada Tours в профессиональном сообществе" />
 
 </BaseLayout>

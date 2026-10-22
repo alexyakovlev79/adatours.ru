@@ -4,6 +4,7 @@ import { SITE } from './site';
 import { countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 import { isActiveEntity, isArchivedEntity } from './archive.mjs';
 import { buildStructuredData, recordId } from './structured-data.mjs';
+import { authorityRegistry } from './entity-authority.mjs';
 import { authoritativeEnglishTarget, attachExternalPageSameAs } from './external-page-sameas.mjs';
 import { inspectHtml } from './structured-data-html.mjs';
 import { inspectSeoGeoArticle } from './seo-geo-schema.mjs';
@@ -83,6 +84,7 @@ export async function pageStructuredData(input: {
     sameAs: [...new Set([ORG.externalProfiles.officialInternationalSite, ORG.externalProfiles.abavRio,
       ...verifiedSameAs].filter(Boolean))],
     externalMentions: confirmedMentions,
+    areaServedEntityIds: ['country_brazil', 'country_argentina', 'country_peru'],
     areaServed: [
       { '@type': 'Country', name: 'Бразилия' },
       { '@type': 'Country', name: 'Аргентина' },
@@ -96,7 +98,7 @@ export async function pageStructuredData(input: {
   const graph = buildStructuredData({ root: input.root, organization, records,
       page: { path: input.path, url: input.url, title: input.title, description: input.description, lang: input.lang, image: input.image },
       document: { ...inspected.facts, editorial }, breadcrumbs: input.breadcrumbs || [],
-      extra: [...[input.extra || []].flat(), ...inspected.legacy], geoKnowledge });
+      extra: [...[input.extra || []].flat(), ...inspected.legacy], geoKnowledge, authority: authorityRegistry });
   const current = records.find((record) => record.path === input.path);
   // One static, local lookup per page; no Sheets/API calls and no browser JS.
   attachExternalPageSameAs(graph, {

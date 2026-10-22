@@ -1,0 +1,249 @@
+---
+import { getAuthoritySources } from '../../lib/entity-authority.mjs';
+
+interface Props {
+  entityKey: 'organization' | 'person_anna';
+  path: string;
+  heading?: string;
+  compact?: boolean;
+  groups?: string[];
+}
+
+type SourceGroup = 'profiles' | 'coverage' | 'maps' | 'appearances';
+interface AuthoritySource {
+  id: string;
+  url: string;
+  label?: string;
+  name: string;
+  summary?: string;
+  publisher?: { name: string; url?: string };
+  datePublished?: string;
+  dateModified?: string;
+  startDate?: string;
+  displayGroup: SourceGroup;
+}
+
+const {
+  entityKey,
+  path,
+  heading = entityKey === 'person_anna'
+    ? 'Интервью, выступления и профили Анны'
+    : 'Ada Tours в профессиональном сообществе',
+  compact = false,
+  groups,
+} = Astro.props;
+
+const sectionId = `authority-sources-${entityKey}`;
+const groupLabels: Record<SourceGroup, string> = {
+  profiles: 'Профили',
+  coverage: 'Публикации',
+  maps: 'Карты',
+  appearances: 'Выступления',
+};
+const dateFormat = new Intl.DateTimeFormat('ru-RU', {
+  day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+});
+const monthFormat = new Intl.DateTimeFormat('ru-RU', {
+  month: 'long', year: 'numeric', timeZone: 'UTC',
+});
+
+function sourceDate(source: AuthoritySource) {
+  const value = source.datePublished || source.startDate || source.dateModified;
+  if (!value) return null;
+  const prefix = !source.datePublished && !source.startDate ? 'Обновлено: ' : '';
+  if (/^\d{4}$/.test(value)) return { value, label: `${prefix}${value}` };
+  const date = new Date(value);
+  if (!Number.isFinite(date.getTime())) return null;
+  const label = /^\d{4}-\d{2}$/.test(value)
+    ? monthFormat.format(date)
+    : dateFormat.format(date);
+  return { value, label: `${prefix}${label}` };
+}
+
+const sources = getAuthoritySources(entityKey, { path, groups }) as AuthoritySource[];
+const sections = (Object.keys(groupLabels) as SourceGroup[])
+  .map((key) => ({
+    key,
+    label: groupLabels[key],
+    items: sources.filter((source) => source.displayGroup === key)
+      .map((source) => ({ ...source, date: sourceDate(source) })),
+  }))
+  .filter((group) => group.items.length > 0);
+---
+
+{sections.length > 0 && (
+  <section
+    id={sectionId}
+    class:list={['authority-sources', { 'authority-sources--compact': compact }]}
+    aria-labelledby={`${sectionId}-heading`}
+  >
+    <div class="authority-sources__inner">
+      <h2 id={`${sectionId}-heading`}>{heading}</h2>
+
+      <div class="authority-sources__groups">
+        {sections.map((group) => (
+          <div class="authority-sources__group">
+            <h3 id={`${sectionId}-${group.key}`}>{group.label}</h3>
+            <ul
+              class:list={[
+                'authority-sources__list',
+                { 'authority-sources__list--profiles': ['profiles', 'maps'].includes(group.key) },
+              ]}
+              aria-labelledby={`${sectionId}-${group.key}`}
+            >
+              {group.items.map((source) => (
+                <li data-authority-source={source.id}>
+                  <a href={source.url} target="_blank" rel="external noopener noreferrer">
+                    <span>{source.label || source.name}</span>
+                    <span class="authority-sources__arrow" aria-hidden="true">↗</span>
+                  </a>
+                  {(source.publisher?.name || source.date) && (
+                    <p class="authority-sources__meta">
+                      {source.publisher?.name && <span>{source.publisher.name}</span>}
+                      {source.publisher?.name && source.date && <span aria-hidden="true">·</span>}
+                      {source.date && <time datetime={source.date.value}>{source.date.label}</time>}
+                    </p>
+                  )}
+                  {['coverage', 'appearances'].includes(group.key) && source.summary && (
+                    <p class="authority-sources__summary">{source.summary}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .authority-sources {
+    padding-block: var(--section-y);
+    background: var(--color-surface);
+    color: var(--color-ink);
+  }
+
+  .authority-sources__inner {
+    width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+    margin-inline: auto;
+  }
+
+  .authority-sources h2 {
+    max-width: 900px;
+    margin: 0 0 26px;
+    font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.35rem);
+    line-height: 1.15;
+  }
+
+  .authority-sources__groups {
+    display: grid;
+    gap: 26px;
+  }
+
+  .authority-sources h3 {
+    margin: 0 0 12px;
+    color: var(--color-text-muted);
+    font-family: var(--font-display);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .authority-sources__list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .authority-sources__list li {
+    min-width: 0;
+    padding-block: 14px;
+    border-top: 1px solid var(--color-line);
+  }
+
+  .authority-sources__list--profiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 32px;
+  }
+
+  .authority-sources__list a {
+    display: inline-flex;
+    max-width: 100%;
+    gap: 10px;
+    align-items: baseline;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    transition: color 160ms ease, text-decoration-color 160ms ease;
+  }
+
+  .authority-sources__list a:hover,
+  .authority-sources__list a:focus-visible {
+    color: var(--color-brand-deep);
+    text-decoration-color: currentColor;
+  }
+
+  .authority-sources__arrow {
+    flex-shrink: 0;
+    color: var(--color-brand-deep);
+  }
+
+  .authority-sources__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    margin: 5px 0 0;
+    color: var(--color-text-muted);
+    font-size: .78rem;
+    line-height: 1.5;
+  }
+
+  .authority-sources__summary {
+    max-width: 900px;
+    margin: 8px 0 0;
+    color: color-mix(in srgb, var(--color-ink) 78%, transparent);
+    font-size: .9rem;
+    line-height: 1.6;
+  }
+
+  .authority-sources--compact {
+    padding-block: var(--section-y-tight);
+  }
+
+  .authority-sources--compact h2 {
+    margin-bottom: 20px;
+    font-size: clamp(1.35rem, 1.1rem + .7vw, 1.75rem);
+  }
+
+  .authority-sources--compact .authority-sources__groups {
+    gap: 20px;
+  }
+
+  .authority-sources--compact .authority-sources__list li {
+    padding-block: 10px;
+  }
+
+  @media (max-width: 640px) {
+    .authority-sources__list--profiles {
+      grid-template-columns: 1fr;
+    }
+
+    .authority-sources h2 {
+      margin-bottom: 20px;
+    }
+
+    .authority-sources__groups {
+      gap: 22px;
+    }
+  }
+</style>

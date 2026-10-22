@@ -6,6 +6,7 @@ import Hero from '../../components/editorial/Hero.astro';
 import EditorialStatement from '../../components/editorial/EditorialStatement.astro';
 import PersonProfile from '../../components/proof/PersonProfile.astro';
 import AboutNav from '../../components/commercial/AboutNav.astro';
+import AuthoritySources from '../../components/proof/AuthoritySources.astro';
 
 export async function getStaticPaths() {
   const people = await getCollection('people', ({ data }) =>
@@ -58,5 +59,9 @@ const isAnna = entry.data.id === 'person_anna';
   >
     <Content />
   </PersonProfile>
+
+  {isAnna && (
+    <AuthoritySources entityKey="person_anna" path="/team/anna-avanesova/" heading="Интервью, публикации и выступления Анны" />
+  )}
 
 </BaseLayout>

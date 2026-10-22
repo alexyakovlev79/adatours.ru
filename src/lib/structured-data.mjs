@@ -1,10 +1,11 @@
 import { selectVipTours } from './vip-tours.mjs';
 import { mergeGeoPassport } from './geo-knowledge.mjs';
+import { getAuthorityEntity, getVisibleAuthoritySources } from './entity-authority.mjs';
 
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-16.1';
+export const SCHEMA_VERSION = '2026-10-22.1';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -103,7 +104,7 @@ const publicType = (record) => {
   return { tour: 'TouristTrip', excursion: 'TouristTrip', theme: 'DefinedTerm', person: 'Person', case: 'Article', article: 'Article' }[record.kind];
 };
 /** Create a new context per page; records/indexes can be shared by the caller. */
-export function buildStructuredData({ root, organization, records, page, document = {}, breadcrumbs = [], extra = [], geoKnowledge = null }) {
+export function buildStructuredData({ root, organization, records, page, document = {}, breadcrumbs = [], extra = [], geoKnowledge = null, authority = null }) {
   const byPath = new Map(records.map((r) => [r.path, r]));
   const byId = new Map(records.map((r) => [r.data.id, r]));
   const current = byPath.get(page.path);
@@ -119,13 +120,16 @@ export function buildStructuredData({ root, organization, records, page, documen
   const siteId = `${root}#website`;
   const pageId = `${page.url}#webpage`;
   const logoId = `${root}#logo`;
+  const orgAuthority = getAuthorityEntity('organization', authority);
   add({ '@type': 'ImageObject', '@id': logoId, url: absoluteUrl(organization.logo, root), contentUrl: absoluteUrl(organization.logo, root), caption: organization.name, width: 553, height: 184 });
   add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId, name: organization.name,
     legalName: organization.legalName, url: organization.url, logo: ref(logoId),
     description: cleanText(organization.description), email: organization.email, telephone: organization.telephone,
     identifier: organization.cnpj ? { '@type': 'PropertyValue', propertyID: 'CNPJ', value: organization.cnpj } : undefined,
     taxID: organization.cnpj, address: organization.address, areaServed: organization.areaServed,
-    sameAs: organization.sameAs?.filter((url) => /^https?:\/\//.test(url)),
+    sameAs: [...new Set([...(organization.sameAs || []), ...orgAuthority.sameAs])].filter((url) => /^https?:\/\//.test(url)),
+    alternateName: orgAuthority.alternateName, hasMap: orgAuthority.hasMap,
+    memberOf: orgAuthority.memberOf, mainEntityOfPage: ref(`${absoluteUrl('/about/', root)}#webpage`),
     knowsLanguage: organization.languages?.map(languageCode),
     contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', email: organization.email,
       telephone: organization.telephone, availableLanguage: organization.languages?.map(languageCode),
@@ -133,8 +137,9 @@ export function buildStructuredData({ root, organization, records, page, documen
   });
   // Only exact, approved independent coverage is a subjectOf relation. A directory
   // profile is a sameAs identity, not an editorial article or a rating source.
+  const visibleSourceUrls = new Set((document.groups || []).flatMap((group) => group.links || []).map((link) => link.href));
   const independentWorks = (organization.externalMentions || []).filter((item) =>
-    /^https:\/\//.test(item.url || '') && item.name).map((item) =>
+    /^https:\/\//.test(item.url || '') && item.name && visibleSourceUrls.has(item.url)).map((item) =>
     add({ '@type': 'Article', '@id': item.url + '#article', url: item.url,
       headline: cleanText(item.name), about: ref(orgId) }));
   if (independentWorks.length) add({ '@type': ['Organization', 'TravelAgency'], '@id': orgId,
@@ -237,13 +242,20 @@ export function buildStructuredData({ root, organization, records, page, documen
       }
     }
     if (record.kind === 'person') {
+      const personAuthority = getAuthorityEntity(d.id, authority);
       node.jobTitle = cleanText(d.role);
       node.worksFor = ref(orgId);
+      node.alternateName = personAuthority.alternateName;
+      node.sameAs = [...new Set([...(node.sameAs || []), ...(d.externalProfiles || []), ...personAuthority.sameAs])]
+        .filter((value) => /^https:\/\//.test(value));
       if (full) {
         node.description ||= cleanText(page.description);
-        node.knowsAbout = d.expertise;
+        node.knowsAbout = d.expertise?.map((topic) => {
+          const country = records.find((candidate) => candidate.kind === 'country' && publicRecord(candidate)
+            && recordName(candidate) === cleanText(topic));
+          return country ? ensureRecord(country) : topic;
+        });
         node.knowsLanguage = d.languages?.map(languageCode);
-        node.sameAs = d.externalProfiles?.filter((v) => /^https?:\/\//.test(v));
       }
     }
     if (['case', 'article'].includes(record.kind)) {
@@ -258,6 +270,19 @@ export function buildStructuredData({ root, organization, records, page, documen
       }
     }
     return add(mergeGeoPassport(node, record, geoKnowledge));
+  }
+  // The company's existing service geography reuses canonical country nodes and
+  // their checked GEO passports. No second Brazil/Argentina/Peru identity graph.
+  if (organization.areaServedEntityIds?.length) {
+    const coverage = organization.areaServedEntityIds.map((id) => byId.get(id))
+      .filter((record) => publicRecord(record) && record.kind === 'country')
+      .map((record) => ['/', '/about/'].includes(page.path) ? ensureRecord(record) : ref(recordId(record, root)));
+    if (coverage.length === organization.areaServedEntityIds.length) {
+      organization = { ...organization, areaServed: [...coverage,
+        ...(organization.areaServed || []).filter((area) => !hasType(area, 'Country'))] };
+      add({ ...nodes.get(orgId), areaServed: organization.areaServed,
+        contactPoint: { ...nodes.get(orgId).contactPoint, areaServed: organization.areaServed } });
+    }
   }
   const founder = byId.get('person_anna');
   if (publicRecord(founder) && founder.kind === 'person') {
@@ -665,6 +690,45 @@ export function buildStructuredData({ root, organization, records, page, documen
           }).filter(Boolean) } })) });
     webPage.hasPart.push(faqRef);
   }
+  // External works are described only where their links are actually rendered.
+  // The source decides whether it is about the entity or merely mentions it.
+  const authorityRef = (key) => key === 'organization' ? ref(orgId)
+    : publicRecord(byId.get(key)) ? ensureRecord(byId.get(key)) : undefined;
+  const appendRelation = (key, property, item) => {
+    const target = authorityRef(key);
+    const entity = target && nodes.get(target['@id']);
+    if (!entity) return;
+    const values = [...new Map([...(entity[property] || []), item].map((value) => [value['@id'], value])).values()];
+    add({ ...entity, [property]: values });
+  };
+  const citations = [];
+  for (const source of getVisibleAuthoritySources(page.path, document, authority)) {
+    if (!['article', 'event'].includes(source.kind)) continue;
+    const event = source.kind === 'event';
+    const relationRefs = (property) => (source.relations?.[property] || []).map(authorityRef).filter(Boolean);
+    const work = add({
+      '@id': source.url + (event ? '#event' : '#article'),
+      '@type': event ? 'EducationEvent' : source.schemaType === 'NewsArticle' ? 'NewsArticle' : 'Article',
+      url: source.url, name: cleanText(source.name), headline: event ? undefined : cleanText(source.name),
+      description: cleanText(source.summary) || undefined, inLanguage: source.language,
+      publisher: event ? undefined : { '@type': 'Organization', name: source.publisher.name, url: source.publisher.url },
+      datePublished: event ? undefined : source.datePublished,
+      dateModified: event ? undefined : source.dateModified,
+      about: relationRefs('subjectOf'), mentions: relationRefs('mentions'),
+      performer: event ? relationRefs('performer') : undefined,
+      organizer: event ? relationRefs('organizer') : undefined,
+      startDate: event ? source.startDate : undefined,
+      eventAttendanceMode: event ? source.eventAttendanceMode : undefined,
+      location: event && source.eventAttendanceMode === 'https://schema.org/OnlineEventAttendanceMode'
+        ? { '@type': 'VirtualLocation', url: source.url } : undefined,
+    });
+    for (const key of source.relations?.subjectOf || []) appendRelation(key, 'subjectOf', work);
+    if (event) {
+      for (const key of source.relations?.performer || []) appendRelation(key, 'performerIn', work);
+      webPage.mentions.push(work);
+    } else citations.push(work);
+  }
+  if (citations.length) webPage.citation = citations;
   add(webPage);
   return { '@context': 'https://schema.org', '@graph': [...nodes.values()] };
 }

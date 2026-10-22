@@ -116,14 +116,17 @@ test('pagination and pages with no SEO article do not claim hidden editorial con
   assert.equal(node(graph, 'FAQPage'), undefined);
 });
 
-test('organization uses only confirmed independent article as subjectOf', () => {
-  const graph = buildStructuredData({ root, organization: {
+test('organization uses a confirmed visible independent article as subjectOf', () => {
+  const input = { root, organization: {
     ...org, externalMentions: [{ name: 'Ada Tours — история', url: 'https://example.org/story' }],
   }, records: all,
-    page: { path: '/about/', url: root + 'about/', title: 'О нас', description: 'О нас', lang: 'ru' } });
+    page: { path: '/about/', url: root + 'about/', title: 'О нас', description: 'О нас', lang: 'ru' } };
+  const graph = buildStructuredData({ ...input,
+    document: { groups: [{ links: [{ href: 'https://example.org/story' }] }] } });
   const external = id(graph, 'https://example.org/story#article');
   assert.equal(external['@type'], 'Article');
   assert.equal(node(graph, 'Organization').subjectOf[0]['@id'], external['@id']);
+  assert.equal(node(buildStructuredData(input), 'Article'), undefined);
 });
 
 test('only explicitly verified cross-language canonical pairs become entity sameAs', () => {

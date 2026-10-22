@@ -1,0 +1,1743 @@
+{
+  "formatVersion": 1,
+  "checkedAt": "2026-10-22",
+  "decisionPolicy": "probability-70-v1",
+  "minimumProbability": 70,
+  "scope": "Organization Ada Tours and Person Anna Avanesova. Supplements existing external-profiles; does not change the GEO or SEO queue.",
+  "entities": {
+    "organization": {
+      "name": "Ada Tours",
+      "schemaId": "https://adatours.ru/#organization",
+      "canonicalPath": "/about/"
+    },
+    "person_anna": {
+      "name": "Анна Аванесова",
+      "schemaId": "https://adatours.ru/team/anna-avanesova/#person",
+      "canonicalPath": "/team/anna-avanesova/"
+    }
+  },
+  "claims": [
+    {
+      "entity": "organization",
+      "property": "alternateName",
+      "value": [
+        "Ada Tours Brazil & Latin America DMC"
+      ],
+      "status": "verified",
+      "probability": 100,
+      "evidence": "Вариант названия используется в точных официальных профилях IMEX и ILTM.",
+      "evidenceSourceIds": [
+        "imex-company",
+        "iltm-cannes-company"
+      ]
+    },
+    {
+      "entity": "person_anna",
+      "property": "alternateName",
+      "value": [
+        "Anna Avanesova"
+      ],
+      "status": "verified",
+      "probability": 100,
+      "evidence": "Латинское имя совпадает в профессиональных профилях и интервью.",
+      "evidenceSourceIds": [
+        "anna-xing",
+        "anna-price-of-business"
+      ]
+    },
+    {
+      "entity": "organization",
+      "property": "memberOf",
+      "value": {
+        "name": "ABAV-RJ",
+        "url": "https://abavrio.com.br/"
+      },
+      "status": "verified",
+      "probability": 99,
+      "evidence": "Новый официальный каталог ABAV-RJ публикует профиль с точным CNPJ Ada Tours, юридическим именем, официальным доменом и статусом ATIVO.",
+      "evidenceSourceIds": [
+        "abav-rj-company"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "linkedin-company",
+      "url": "https://www.linkedin.com/company/ada-tours",
+      "name": "Ada Tours",
+      "publisher": {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Профиль указывает adatours.com, Рио-де-Жанейро и офис Nossa Senhora de Copacabana 680–916; публикации содержат действующий телефон +55 21 98848-4456.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "evidenceUrls": [
+        "https://www.linkedin.com/company/ada-tours"
+      ],
+      "label": "Ada Tours в LinkedIn",
+      "deployment": "active"
+    },
+    {
+      "id": "imex-company",
+      "url": "https://america.imexevents.com/exhibitor/ada-tours-brazil--latin-america-dmc",
+      "name": "ADA TOURS BRAZIL & LATIN AMERICA DMC",
+      "publisher": {
+        "name": "IMEX America",
+        "url": "https://america.imexevents.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Официальный профиль экспонента с прямой ссылкой adatours.com и представителями Anna Avanesova и Daniel Serrano.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Участие в выставке не означает членство в IMEX или Embratur.",
+      "evidenceUrls": [
+        "https://america.imexevents.com/exhibitor/ada-tours-brazil--latin-america-dmc"
+      ],
+      "label": "Ada Tours на IMEX America",
+      "deployment": "active"
+    },
+    {
+      "id": "jan-tourism-company",
+      "url": "https://jantourism-consultancy.com/dmc-partners/ada-tours-brazil-latin-america/",
+      "name": "Ada Tours – Brazil & Latin America",
+      "publisher": {
+        "name": "JAN Tourism Consultancy",
+        "url": "https://jantourism-consultancy.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Специальный профиль партнера Ada Tours: adatours.com, Anna Avanesova, anna@adatours.com и телефон +55 21 98848-4456 совпадают.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ],
+        "mentions": [
+          "person_anna"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Указанные здесь 1986 год и 38 лет противоречат другим источникам. Не использовать для foundingDate/стажа. Компания представляет Ada Tours в Бенилюксе и ОАЭ; это партнер, а не родительская организация.",
+      "evidenceUrls": [
+        "https://jantourism-consultancy.com/dmc-partners/ada-tours-brazil-latin-america/"
+      ],
+      "label": "Ada Tours у JAN Tourism Consultancy",
+      "deployment": "active"
+    },
+    {
+      "id": "reps-unlimited-company",
+      "url": "https://reps-unlimited.com/ada-tours/",
+      "name": "Ada Tours",
+      "publisher": {
+        "name": "REPS Unlimited",
+        "url": "https://reps-unlimited.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Профиль DMC с прямой ссылкой adatours.com, адресом Copacabana 680 sala 916 и обоими телефонами +55 21 98848-4456 и +55 21 3435-6408.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "evidenceUrls": [
+        "https://reps-unlimited.com/ada-tours/"
+      ],
+      "label": "Ada Tours у REPS Unlimited",
+      "deployment": "active"
+    },
+    {
+      "id": "tours-com-company",
+      "url": "https://www.tours.com/tour_operators/ada-tours.htm",
+      "name": "Ada Tours",
+      "publisher": {
+        "name": "Tours.com",
+        "url": "https://www.tours.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Отдельный профиль бразильского DMC с сайтом adatours.com и специализацией на Латинской Америке.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "evidenceUrls": [
+        "https://www.tours.com/tour_operators/ada-tours.htm"
+      ],
+      "label": "Ada Tours в каталоге Tours.com",
+      "deployment": "active"
+    },
+    {
+      "id": "glassdoor-company",
+      "url": "https://www.glassdoor.com/Overview/Working-at-Ada-Tours-EI_IE2750178.11,20.htm",
+      "name": "Working at Ada Tours",
+      "publisher": {
+        "name": "Glassdoor",
+        "url": "https://www.glassdoor.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Профиль работодателя Ada Tours содержит прямую ссылку на adatours.com.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Рейтинг работодателя не переносить в клиентский aggregateRating компании.",
+      "evidenceUrls": [
+        "https://www.glassdoor.com/Overview/Working-at-Ada-Tours-EI_IE2750178.11,20.htm"
+      ],
+      "label": "Профиль компании на Glassdoor",
+      "deployment": "active"
+    },
+    {
+      "id": "abav-rj-company",
+      "url": "https://agencias.abavrio.com.br/agencias/64b68797-aa75-4730-ba08-d2ebc50d943f",
+      "name": "Ada Tours — Agência Associada | ABAV-RJ",
+      "publisher": {
+        "name": "ABAV-RJ",
+        "url": "https://abavrio.com.br/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Новый официальный каталог дает Ada Tours: status ATIVO, CNPJ 08.537.782/0001-04, юридическое имя ADA TOURS 2007 OPERADORA DE TURISMO LTDA, info@adatours.com и adatours.com.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Старый URL теперь HTTP 404. Новый профиль HTTP 200; публичные данные того же каталога подтверждают действующее членство. Адрес и телефоны содержат ошибки: не копировать.",
+      "evidenceUrls": [
+        "https://agencias.abavrio.com.br/agencias/64b68797-aa75-4730-ba08-d2ebc50d943f"
+      ],
+      "label": "Ada Tours в ассоциации ABAV-RJ",
+      "deployment": "active",
+      "history": [
+        {
+          "url": "https://abavrio.com.br/agencias/ada-tours/",
+          "observation": "Ранее читаемый профиль, 22 октября 2026 при финальной перепроверке HTTP 404."
+        }
+      ],
+      "verificationDetails": {
+        "checkedAt": "2026-10-22",
+        "httpStatus": 200,
+        "canonical": "https://agencias.abavrio.com.br/agencias/64b68797-aa75-4730-ba08-d2ebc50d943f",
+        "directoryUrl": "https://agencias.abavrio.com.br/",
+        "publicRecord": {
+          "id": "64b68797-aa75-4730-ba08-d2ebc50d943f",
+          "nome_fantasia": "Ada Tours",
+          "razao_social": "ADA TOURS 2007 OPERADORA DE TURISMO LTDA",
+          "cnpj": "08.537.782/0001-04",
+          "email_agencia": "info@adatours.com",
+          "site_agencia": "https://adatours.com",
+          "status": "ATIVO"
+        },
+        "membershipProbability": 99
+      }
+    },
+    {
+      "id": "facebook-english",
+      "url": "https://www.facebook.com/AdaToursBrazil/",
+      "name": "Ada Tours Brazil",
+      "publisher": {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Индекс профиля и свежих постов показывает adatours.com, info@adatours.com, офис 680–916 и телефон +55 21 98848-4456.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Открытие выдает страницу ограничения Facebook. Принимать идентичность по подробному индексу; старый телефон 2547-6488 не копировать.",
+      "evidenceUrls": [
+        "https://www.facebook.com/AdaToursBrazil/"
+      ],
+      "label": "Ada Tours Brazil в Facebook",
+      "deployment": "active"
+    },
+    {
+      "id": "instagram-current",
+      "url": "https://www.instagram.com/adatoursoficial/",
+      "name": "DMC Brazil & Latin America — Ada Tours",
+      "publisher": {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Профиль и индексируемые публикации указывают adatours.com, info@adatours.com и +55 21 98848-4456; содержание посвящено программам Ada Tours.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Это актуальный обнаруженный профиль; не подменять им исторический adatours_brazil без учета отдельной идентичности аккаунта.",
+      "evidenceUrls": [
+        "https://www.instagram.com/adatoursoficial/"
+      ],
+      "label": "Ada Tours в Instagram",
+      "deployment": "active"
+    },
+    {
+      "id": "youtube-current",
+      "url": "https://www.youtube.com/@adatoursofficial",
+      "name": "Ada Tours",
+      "publisher": {
+        "name": "YouTube",
+        "url": "https://www.youtube.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 86,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Канал описывает Ada Tours как DMC из Рио-де-Жанейро, работающий в Бразилии, Латинской Америке и Антарктиде; публикует фирменные видео Welcome to Brazil и MICE with Ada Tours.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Прямое открытие ограничено; дата и количество подписчиков не используются.",
+      "evidenceUrls": [
+        "https://www.youtube.com/@adatoursofficial"
+      ],
+      "label": "Видеоканал Ada Tours",
+      "deployment": "active"
+    },
+    {
+      "id": "yandex-office",
+      "url": "https://yandex.com/maps/org/ada_tours/27375203648/",
+      "name": "Ada Tours — Yandex Maps",
+      "publisher": {
+        "name": "Yandex Maps",
+        "url": "https://yandex.com/maps/"
+      },
+      "kind": "map",
+      "schemaType": "Map",
+      "language": "en",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Профиль подтвержден владельцем; указаны Avenida Nossa Senhora de Copacabana, телефон +55 21 98848-4456 и новости выставок Ada Tours.",
+      "relations": {
+        "hasMap": [
+          "organization"
+        ],
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "maps",
+      "displayOn": [
+        "/contacts/"
+      ],
+      "notes": "Ссылка на старый brasiltours.ru в профиле сохранена; домен не открывался. В описании офиса использовать точный адрес со страницы контактов adatours.ru.",
+      "evidenceUrls": [
+        "https://yandex.com/maps/org/ada_tours/27375203648/"
+      ],
+      "label": "Офис на Яндекс Картах",
+      "deployment": "active"
+    },
+    {
+      "id": "google-office",
+      "url": "https://maps.app.goo.gl/umDKYvF224GFJ73X9",
+      "name": "Ada Tours — Google Maps",
+      "publisher": {
+        "name": "Google Maps",
+        "url": "https://maps.google.com/"
+      },
+      "kind": "map",
+      "schemaType": "Map",
+      "language": "en",
+      "status": "verified",
+      "probability": 97,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Индекс Google Maps показывает Ada Tours, адрес Avenida Nossa Senhora de Copacabana 680, Рио-де-Жанейро и действующий телефон +55 21 3435-6408.",
+      "relations": {
+        "hasMap": [
+          "organization"
+        ]
+      },
+      "displayGroup": "maps",
+      "displayOn": [
+        "/contacts/"
+      ],
+      "notes": "Прямой open короткой ссылки ограничен. Индекс дает 22051-001, сайт и REPS 22050-001: индекс не переносить; координаты по этой проверке не извлекались.",
+      "evidenceUrls": [
+        "https://maps.app.goo.gl/umDKYvF224GFJ73X9"
+      ],
+      "label": "Офис на Google Maps",
+      "deployment": "active"
+    },
+    {
+      "id": "iltm-cannes-company",
+      "url": "https://www.iltm.com/cannes/en-gb/exhibitor-directory/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-6dff15a6-0663-49c8-8cd7-d0c346223781.html",
+      "name": "ADA TOURS BRAZIL & LATIN AMERICA DMC — ILTM Cannes",
+      "publisher": {
+        "name": "ILTM / RX",
+        "url": "https://www.iltm.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 96,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Официальный индекс профиля экспонента показывает Ada Tours Brazil & Latin America DMC и точный офис Avenida Nossa Senhora de Copacabana 680 sala 916.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Open возвращает оболочку каталога: профиль подгружается динамически. Не выводить из одного профиля неподтвержденные даты участия.",
+      "evidenceUrls": [
+        "https://www.iltm.com/cannes/en-gb/exhibitor-directory/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-6dff15a6-0663-49c8-8cd7-d0c346223781.html"
+      ],
+      "label": "Ada Tours на ILTM Cannes",
+      "deployment": "active"
+    },
+    {
+      "id": "iltm-na-company",
+      "url": "https://www.iltm.com/north-america/en-gb/exhibitor-directory/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-3a455c72-75e0-4a28-a715-5714ca3e7fac.html",
+      "name": "Ada Tours Brazil & Latin America DMC — ILTM North America",
+      "publisher": {
+        "name": "ILTM / RX",
+        "url": "https://www.iltm.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 94,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Официальный профиль именует Ada Tours Brazil & Latin America DMC; продукты относятся к Латинской Америке. PANROTAS отдельно подтверждает участие Ada Tours и Анны в выставке.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Open возвращает оболочку каталога; идентичность подтверждается индексом и репортажем с выставки.",
+      "evidenceUrls": [
+        "https://www.iltm.com/north-america/en-gb/exhibitor-directory/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-3a455c72-75e0-4a28-a715-5714ca3e7fac.html"
+      ],
+      "label": "Ada Tours на ILTM North America",
+      "deployment": "active"
+    },
+    {
+      "id": "atm-company",
+      "url": "https://www.wtm.com/atm/en-gb/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-3a455c72-75e0-4a28-a715-5714ca3e7fac.html",
+      "name": "Ada Tours Brazil & Latin America DMC — Arabian Travel Market",
+      "publisher": {
+        "name": "Arabian Travel Market / RX",
+        "url": "https://www.wtm.com/atm/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 94,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Официальный профиль Ada Tours Brazil & Latin America DMC; описание персональных поездок в Латинской Америке совпадает с продуктами и специализацией компании.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Содержание динамическое; open возвращает оболочку. Не использовать общую страницу каталога с coId как sameAs.",
+      "evidenceUrls": [
+        "https://www.wtm.com/atm/en-gb/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-3a455c72-75e0-4a28-a715-5714ca3e7fac.html"
+      ],
+      "label": "Ada Tours на Arabian Travel Market",
+      "deployment": "active"
+    },
+    {
+      "id": "wtm-london-company",
+      "url": "https://www.wtm.com/london/en-gb/exhibitor-directory/exhibitor-details.org-09b6606e-3d76-4286-81d0-cd47ace3946e.html",
+      "name": "ADA TOURS BRAZIL & LATIN AMERICA DMC — WTM London",
+      "publisher": {
+        "name": "World Travel Market / RX",
+        "url": "https://www.wtm.com/london/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 93,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Официальный индекс дает отдельный профиль Ada Tours Brazil & Latin America DMC и описание путешествий по Латинской Америке; партнер JAN также подтверждает представление компании на WTM.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Прямое открытие ограничено.",
+      "evidenceUrls": [
+        "https://www.wtm.com/london/en-gb/exhibitor-directory/exhibitor-details.org-09b6606e-3d76-4286-81d0-cd47ace3946e.html"
+      ],
+      "label": "Ada Tours на WTM London",
+      "deployment": "active"
+    },
+    {
+      "id": "ibtm-company",
+      "url": "https://www.ibtmworld.com/en-gb/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-d7f97056-c1c9-4541-b523-21d2fbf02af4.html",
+      "name": "ADA TOURS BRAZIL & LATIN AMERICA DMC — IBTM World",
+      "publisher": {
+        "name": "IBTM World / RX",
+        "url": "https://www.ibtmworld.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 94,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Официальный профиль описывает деловые поездки Ada Tours по Бразилии и Латинской Америке. Индекс каталога называет стенд M60 с Embratur; JAN подтверждает участие компании.",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Прямое открытие ограничено. Соседство на стенде не равно memberOf Embratur.",
+      "evidenceUrls": [
+        "https://www.ibtmworld.com/en-gb/exhibitor-details.ada%20tours%20brazil%20%20latin%20america%20dmc.org-d7f97056-c1c9-4541-b523-21d2fbf02af4.html"
+      ],
+      "label": "Ada Tours на IBTM World",
+      "deployment": "active"
+    },
+    {
+      "id": "ettravelworld-india-2025",
+      "url": "https://travel.economictimes.indiatimes.com/news/travel-agents/outbound/global-destinations-to-represent-latin-america-based-ada-tours-in-india/120199341",
+      "name": "Global Destinations to represent Latin America-based Ada Tours in India",
+      "publisher": {
+        "name": "ETTravelWorld",
+        "url": "https://travel.economictimes.indiatimes.com/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Сообщение о партнерстве Global Destinations и Ada Tours содержит прямую цитату Anna Avanesova, CEO of Ada Tours; указаны профиль DMC, страны работы и основание в 2007 году.",
+      "relations": {
+        "subjectOf": [
+          "organization"
+        ],
+        "mentions": [
+          "person_anna"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/about/",
+        "/team/anna-avanesova/"
+      ],
+      "notes": "На странице Updated On Apr 11, 2025; поисковый сниппет однажды показывал Apr 12. Не использовать сниппет как точную дату публикации.",
+      "evidenceUrls": [
+        "https://travel.economictimes.indiatimes.com/news/travel-agents/outbound/global-destinations-to-represent-latin-america-based-ada-tours-in-india/120199341"
+      ],
+      "dateModified": "2025-04-11",
+      "label": "Ada Tours и Global Destinations: представительство в Индии",
+      "summary": "В материале о партнерстве с Global Destinations Анна рассказывает о работе Ada Tours с путешественниками из Индии.",
+      "deployment": "active"
+    },
+    {
+      "id": "ttj-india-2025",
+      "url": "https://traveltradejournal.com/latin-american-dmc-ada-tours-appoints-global-destinations-as-its-india-partner/",
+      "name": "Latin American DMC Ada Tours appoints Global Destinations as its India partner",
+      "publisher": {
+        "name": "Travel Trade Journal",
+        "url": "https://traveltradejournal.com/"
+      },
+      "kind": "article",
+      "schemaType": "Article",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Публикация посвящена назначению представителя Ada Tours в Индии; описывает компанию и приводит комментарии руководителей обеих сторон.",
+      "relations": {
+        "subjectOf": [
+          "organization"
+        ],
+        "mentions": [
+          "person_anna"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/about/"
+      ],
+      "datePublished": "2025-04-10",
+      "notes": "Тот же информационный повод, что ETTravelWorld; достаточно 1–2 ссылок об этом событии, остальные перепечатки хранить как резерв.",
+      "evidenceUrls": [
+        "https://traveltradejournal.com/latin-american-dmc-ada-tours-appoints-global-destinations-as-its-india-partner/"
+      ],
+      "label": "Партнерство Ada Tours с Global Destinations",
+      "summary": "Новость о представительстве Ada Tours на индийском рынке с комментариями руководителей обеих компаний.",
+      "deployment": "active"
+    },
+    {
+      "id": "panrotas-iltm-2026",
+      "url": "https://www.panrotas.com.br/viagens-de-luxo/eventos/2026/10/iltm-na-2026-hoteis-no-rio-de-janeiro-chamam-a-atencao-do-publico-norte-americano-fotos_232493.html",
+      "name": "ILTM NA 2026: hotéis no Rio de Janeiro chamam a atenção do público norte-americano; fotos",
+      "publisher": {
+        "name": "PANROTAS",
+        "url": "https://www.panrotas.com.br/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Репортаж с ILTM NA 2026 называет Ada Tours участником и приводит прямой комментарий Anna Avanesova, diretora-geral da Ada Tours, об Амазонии и Ленсойс-Мараньенсис.",
+      "relations": {
+        "mentions": [
+          "organization",
+          "person_anna"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/about/",
+        "/team/anna-avanesova/"
+      ],
+      "datePublished": "2026-10-01",
+      "notes": "Это обзор выставки с другими компаниями, поэтому mentions, не subjectOf всей статьи.",
+      "evidenceUrls": [
+        "https://www.panrotas.com.br/viagens-de-luxo/eventos/2026/10/iltm-na-2026-hoteis-no-rio-de-janeiro-chamam-a-atencao-do-publico-norte-americano-fotos_232493.html"
+      ],
+      "label": "Анна об интересе к Бразилии на ILTM North America 2026",
+      "summary": "Анна комментирует интерес путешественников к Амазонии и Ленсойс-Мараньенсис в репортаже с международной выставки.",
+      "deployment": "active"
+    },
+    {
+      "id": "panrotas-iltm-2025",
+      "url": "https://www.panrotas.com.br/viagens-de-luxo/eventos/2025/10/iltm-north-america-2025-tem-balanco-positivo-entre-fornecedores-brasileiros-confira_222401.html",
+      "name": "ILTM North America 2025 tem balanço positivo entre fornecedores brasileiros; confira",
+      "publisher": {
+        "name": "PANROTAS",
+        "url": "https://www.panrotas.com.br/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Собственный репортаж PANROTAS с ILTM North America 2025 содержит прямую оценку выставки от Anna Avanesova, diretora geral da Ada Tours.",
+      "relations": {
+        "mentions": [
+          "organization",
+          "person_anna"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "datePublished": "2025-10-10",
+      "notes": "Обзор нескольких поставщиков; использовать mentions.",
+      "evidenceUrls": [
+        "https://www.panrotas.com.br/viagens-de-luxo/eventos/2025/10/iltm-north-america-2025-tem-balanco-positivo-entre-fornecedores-brasileiros-confira_222401.html"
+      ],
+      "label": "Итоги ILTM North America 2025: комментарий Анны",
+      "summary": "В репортаже с выставки Анна делится результатами встреч с зарубежными туристическими компаниями.",
+      "deployment": "active"
+    },
+    {
+      "id": "embratur-fiexpo-2026",
+      "url": "https://embratur.com.br/2026/06/08/brasil-mostra-seu-potencial-para-turismo-de-negocios-e-eventos-na-fiexpo-latin-america-2026-na-costa-rica/",
+      "name": "Brasil mostra seu potencial para turismo de negócios e eventos na FIEXPO Latin America 2026, na Costa Rica",
+      "publisher": {
+        "name": "Embratur",
+        "url": "https://embratur.com.br/"
+      },
+      "kind": "article",
+      "schemaType": "Article",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 98,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Официальная публикация бразильского агентства продвижения туризма перечисляет Ada Tours Dmc Brasil & Latin America среди 15 соэкспонентов FIEXPO 2026.",
+      "relations": {
+        "mentions": [
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/about/"
+      ],
+      "datePublished": "2026-06-08",
+      "notes": "Прямое открытие дает 403. Упоминание участия не является государственной сертификацией или членством в Embratur.",
+      "evidenceUrls": [
+        "https://embratur.com.br/2026/06/08/brasil-mostra-seu-potencial-para-turismo-de-negocios-e-eventos-na-fiexpo-latin-america-2026-na-costa-rica/"
+      ],
+      "label": "Ada Tours среди участников FIEXPO Latin America 2026",
+      "summary": "Бразильское агентство продвижения туризма называет Ada Tours среди участников деловой туристической выставки в Коста-Рике.",
+      "deployment": "active"
+    },
+    {
+      "id": "evintra-success-story",
+      "url": "https://www.evintra.com/media/565/ada-tours-a-success-story-within-evintras-hosted-buyer-program",
+      "name": "ADA Tours: A Success Story within EVINTRA’s Hosted Buyer Program",
+      "publisher": {
+        "name": "EVINTRA",
+        "url": "https://www.evintra.com/"
+      },
+      "kind": "article",
+      "schemaType": "Article",
+      "language": "en",
+      "status": "verified",
+      "probability": 98,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Отдельная публикация EVINTRA о работе Ada Tours как бразильского принимающего оператора и результатах участия в программе Hosted Buyer.",
+      "relations": {
+        "subjectOf": [
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/about/"
+      ],
+      "notes": "Уже включено в живую микроразметку по сообщению родительского агента; прямое открытие ограничено robots.",
+      "evidenceUrls": [
+        "https://www.evintra.com/media/565/ada-tours-a-success-story-within-evintras-hosted-buyer-program"
+      ],
+      "label": "Ada Tours в программе Hosted Buyer EVINTRA",
+      "summary": "EVINTRA рассказывает об участии Ada Tours в программе профессиональных встреч Hosted Buyer.",
+      "deployment": "active"
+    },
+    {
+      "id": "global-destinations-partners",
+      "url": "https://www.globaldestinations.in/partners.html",
+      "name": "Global Partnerships. Local Expertise.",
+      "publisher": {
+        "name": "Global Destinations",
+        "url": "https://www.globaldestinations.in/"
+      },
+      "kind": "directory",
+      "schemaType": "CollectionPage",
+      "language": "en",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Официальный список партнеров содержит раздел Ada Tours — LATIN AMERICA с описанием DMC, направлений и услуг.",
+      "relations": {
+        "mentions": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [],
+      "notes": "Общая страница партнеров не подходит для sameAs Ada Tours. Можно использовать в будущей странице международных представительств как подтверждение партнерства.",
+      "evidenceUrls": [
+        "https://www.globaldestinations.in/partners.html"
+      ],
+      "label": "Ada Tours в списке партнеров Global Destinations",
+      "deployment": "saved_for_future_page"
+    },
+    {
+      "id": "anna-linkedin",
+      "url": "https://br.linkedin.com/in/anna-avanesova-44931b17",
+      "name": "Anna Avanesova - Incoming Tour Operator for Latin America",
+      "publisher": {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Индекс самого LinkedIn дает имя Anna Avanesova, компанию Ada Tours, местоположение Rio de Janeiro, профессиональную специализацию; тот же профиль содержит авторские материалы об Ada Tours.",
+      "relations": {
+        "sameAs": [
+          "person_anna"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "notes": "Direct open robots/429; identity проверена по индексируемому первичному профилю. Не заявлять прямую HTTP-проверку успешной.",
+      "evidenceUrls": [
+        "https://br.linkedin.com/in/anna-avanesova-44931b17"
+      ],
+      "label": "Анна Аванесова в LinkedIn",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-xing",
+      "url": "https://www.xing.com/profile/Anna_Avanesova2",
+      "name": "Anna Avanesova - CEO - Ada Tours Brazil And Latin America",
+      "publisher": {
+        "name": "XING",
+        "url": "https://www.xing.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Открытый персональный профиль: CEO, Ada Tours Brazil And Latin America, Rio de Janeiro, Brazil.",
+      "relations": {
+        "sameAs": [
+          "person_anna"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "evidenceUrls": [
+        "https://www.xing.com/profile/Anna_Avanesova2"
+      ],
+      "label": "Анна Аванесова в XING",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-imex",
+      "url": "https://america.imexevents.com/participant/50510",
+      "name": "Anna Avanesova - IMEX America",
+      "publisher": {
+        "name": "IMEX America",
+        "url": "https://america.imexevents.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Профиль на сайте организатора: имя, Director, Ada Tours Brazil & Latin America Dmc, www.adatours.com; авторская биография прямо называет ее General Director and Founder.",
+      "relations": {
+        "sameAs": [
+          "person_anna"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "notes": "Использовать singular /participant/50510: этот URL полностью представлен в поисковом индексе. Direct open недоступен. Альтернативный /participants/50510 не добавлять дублем.",
+      "evidenceUrls": [
+        "https://america.imexevents.com/participant/50510"
+      ],
+      "label": "Анна Аванесова на IMEX America",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-lasvegas-forum",
+      "url": "https://lasvegastravelagentforum24.sched.com/exhibitor/info16194",
+      "name": "Anna Avanesova - Las Vegas Travel Agent Forum",
+      "publisher": {
+        "name": "Las Vegas Travel Agent Forum / Sched",
+        "url": "https://lasvegastravelagentforum24.sched.com/"
+      },
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Официальный профиль участницы конференции называет Anna Avanesova, ссылается на adatours.com; биография описывает основание DMC в Бразилии, организацию событий и планирование поездок.",
+      "relations": {
+        "sameAs": [
+          "person_anna"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "notes": "Страница прошедшего события; identity остается корректной. Биография упоминает Business Management studies в Нидерландах/Испании, но вуз/диплом не указан, alumniOf/hasCredential не заполнять.",
+      "evidenceUrls": [
+        "https://lasvegastravelagentforum24.sched.com/exhibitor/info16194"
+      ],
+      "label": "Анна на Las Vegas Travel Agent Forum",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-price-of-business",
+      "url": "https://www.thetimesusa.com/luxury-travel-in-latin-america/",
+      "name": "Luxury Travel in Latin America",
+      "publisher": {
+        "name": "The Times USA / Price of Business Show",
+        "url": "https://www.thetimesusa.com/"
+      },
+      "kind": "article",
+      "schemaType": "Article",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Оригинальное интервью Kevin Price с Anna Avanesova: туроператорская деятельность в Латинской Америке, прямая ссылка adatours.com и встроенная аудиозапись Price of Business Show.",
+      "relations": {
+        "subjectOf": [
+          "person_anna",
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/about/",
+        "/team/anna-avanesova/"
+      ],
+      "datePublished": "2025-03-14",
+      "notes": "Не приписывать Анне авторство статьи: она interviewee. AudioObject возможен после проверки дополнительных метаданных и доступности записи.",
+      "mediaCandidate": {
+        "embedUrl": "https://w.soundcloud.com/player/?maxheight=960&maxwidth=640&show_artwork=true&url=https://api.soundcloud.com/tracks/2054395880&visual=true",
+        "status": "metadata_incomplete"
+      },
+      "evidenceUrls": [
+        "https://www.thetimesusa.com/luxury-travel-in-latin-america/"
+      ],
+      "label": "Интервью Анны: путешествия по Латинской Америке",
+      "summary": "Разговор Анны с Кевином Прайсом о путешествиях по Латинской Америке, личном опыте и индивидуальном подходе к маршрутам.",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-panrotas-iltm-2024",
+      "url": "https://www.panrotas.com.br/mercado/feiras/2024/09/iltm-north-america-brasileiros-notam-aumento-do-interesse-pelo-pais-fotos_209887.html",
+      "name": "ILTM North America: brasileiros notam aumento do interesse pelo país; fotos",
+      "publisher": {
+        "name": "PANROTAS",
+        "url": "https://www.panrotas.com.br/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Фото Анны и цитата от ее имени; названа генеральным директором DMC Ada Tours, базирующейся в Рио-де-Жанейро, и участницей ILTM.",
+      "relations": {
+        "mentions": [
+          "person_anna",
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [],
+      "datePublished": "2024-09-27",
+      "evidenceUrls": [
+        "https://www.panrotas.com.br/mercado/feiras/2024/09/iltm-north-america-brasileiros-notam-aumento-do-interesse-pelo-pais-fotos_209887.html"
+      ],
+      "label": "Анна о спросе на Бразилию на ILTM North America 2024",
+      "deployment": "saved_for_future_page"
+    },
+    {
+      "id": "anna-me-itb-2026",
+      "url": "https://www.mercadoeeventos.com.br/feiras-e-eventos/itb-2026-conheca-as-dmcs-brasileiras-que-marcaram-presenca-em-berlim/",
+      "name": "ITB 2026: conheça as DMCs brasileiras que marcaram presença em Berlim",
+      "publisher": {
+        "name": "Mercado e Eventos",
+        "url": "https://www.mercadoeeventos.com.br/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "В списке участников Ada Tours Brazil; в галерее фотография подписана Anna Avanesova, da Ada Tours.",
+      "relations": {
+        "mentions": [
+          "person_anna",
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/about/",
+        "/team/anna-avanesova/"
+      ],
+      "datePublished": "2026-03-04",
+      "evidenceUrls": [
+        "https://www.mercadoeeventos.com.br/feiras-e-eventos/itb-2026-conheca-as-dmcs-brasileiras-que-marcaram-presenca-em-berlim/"
+      ],
+      "label": "Ada Tours и Анна на ITB Berlin 2026",
+      "summary": "В репортаже о бразильских DMC на ITB Berlin опубликована фотография Анны как представителя Ada Tours.",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-me-itb-2025",
+      "url": "https://www.mercadoeeventos.com.br/feiras-e-eventos/embratur-e-destaque-no-pavilhao-sul-americano-da-itb-2025-com-mais-de-40-coexpositores-veja-mais-fotos/",
+      "name": "Embratur é destaque no pavilhão sul-americano da ITB 2025 com mais de 40 coexpositores; veja mais fotos",
+      "publisher": {
+        "name": "Mercado e Eventos",
+        "url": "https://www.mercadoeeventos.com.br/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Фото с ITB 2025 подписаны Olga Denisova e Anna Avanesova, da ADA Tours Incoming Tour Operator Latin America.",
+      "relations": {
+        "mentions": [
+          "person_anna",
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [],
+      "datePublished": "2025-03-04",
+      "evidenceUrls": [
+        "https://www.mercadoeeventos.com.br/feiras-e-eventos/embratur-e-destaque-no-pavilhao-sul-americano-da-itb-2025-com-mais-de-40-coexpositores-veja-mais-fotos/"
+      ],
+      "label": "Команда Ada Tours на ITB Berlin 2025",
+      "deployment": "saved_for_future_page"
+    },
+    {
+      "id": "anna-me-wtm-2024",
+      "url": "https://www.mercadoeeventos.com.br/_destaque_/slideshow/veja-mais-fotos-do-segundo-dia-da-wtm-de-londres/",
+      "name": "Veja mais fotos do segundo dia da WTM de Londres",
+      "publisher": {
+        "name": "Mercado e Eventos",
+        "url": "https://www.mercadoeeventos.com.br/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "pt-BR",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Репортаж редакции из Лондона с фото, подписанным Anna Avanesova, da Ada Tours.",
+      "relations": {
+        "mentions": [
+          "person_anna",
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [],
+      "datePublished": "2024-11-06",
+      "evidenceUrls": [
+        "https://www.mercadoeeventos.com.br/_destaque_/slideshow/veja-mais-fotos-do-segundo-dia-da-wtm-de-londres/"
+      ],
+      "label": "Анна на WTM London 2024",
+      "deployment": "saved_for_future_page"
+    },
+    {
+      "id": "anna-india-outbound",
+      "url": "https://indiaoutbound.info/trade-news/global-destinations-to-represent-ada-tours-in-india/",
+      "name": "Global Destinations to represent Ada Tours in India",
+      "publisher": {
+        "name": "India Outbound",
+        "url": "https://indiaoutbound.info/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "en",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Издание прямо отмечает пресс-релиз как основу новости; указаны Ada Tours, Global Destinations и прямая цитата Anna Avanesova, CEO.",
+      "relations": {
+        "mentions": [
+          "person_anna"
+        ],
+        "subjectOf": [
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [],
+      "datePublished": "2025-04-10",
+      "notes": "Связанная новость о том же партнерстве, не дополнительное независимое доказательство всех чисел.",
+      "evidenceUrls": [
+        "https://indiaoutbound.info/trade-news/global-destinations-to-represent-ada-tours-in-india/"
+      ],
+      "label": "Ada Tours назначает представителя в Индии",
+      "deployment": "saved_for_future_page"
+    },
+    {
+      "id": "anna-atorus-2024",
+      "url": "https://www.atorus.ru/node/58635",
+      "name": "На туррынке прогнозируют рост организованного турпотока в Бразилию, Аргентину и Перу",
+      "publisher": {
+        "name": "Ассоциация туроператоров России",
+        "url": "https://www.atorus.ru/"
+      },
+      "kind": "article",
+      "schemaType": "NewsArticle",
+      "language": "ru",
+      "status": "verified",
+      "probability": 99,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "search_index",
+      "evidence": "Первичный индекс страницы сообщает о выступлении генерального директора принимающей компании Ada Tours Анны Аванесовой для партнеров ITM group, ради которого она приехала из Рио в Москву.",
+      "relations": {
+        "mentions": [
+          "person_anna",
+          "organization"
+        ]
+      },
+      "displayGroup": "coverage",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "datePublished": "2024-09-13",
+      "notes": "Подтверждает профессиональное выступление; не подтверждает членство Ada Tours в АТОР. Direct open вернул 403.",
+      "evidenceUrls": [
+        "https://www.atorus.ru/node/58635"
+      ],
+      "label": "Анна на встрече с партнерами ITM group в Москве",
+      "summary": "АТОР рассказывает о выступлении Анны перед партнерами ITM group и интересе к маршрутам по Бразилии, Аргентине и Перу.",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-profi-webinar-2026",
+      "url": "https://profi.travel/events/webinars/show/169157",
+      "name": "Латинская Америка с Ada Tours",
+      "publisher": {
+        "name": "Profi.Travel",
+        "url": "https://profi.travel/"
+      },
+      "kind": "event",
+      "schemaType": "EducationEvent",
+      "language": "ru",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Организатор назван Туроператор Ada Tours Бразилия & Латинская Америка; ведущая Анна Аванесова, генеральный директор. Есть опубликованная программа по Бразилии, Аргентине, Уругваю, Чили, Боливии, Перу, Эквадору и Колумбии.",
+      "relations": {
+        "performer": [
+          "person_anna"
+        ],
+        "organizer": [
+          "organization"
+        ]
+      },
+      "displayGroup": "appearances",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "startDate": "2026-06-02",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "notes": "Семантически EducationEvent.performer → Person; EducationEvent.organizer → Ada Tours. Страница в каталоге записей; для VideoObject нужны URL видео/thumbnail/uploadDate, которых текущая текстовая выдача не подтверждает.",
+      "evidenceUrls": [
+        "https://profi.travel/events/webinars/show/169157"
+      ],
+      "label": "Латинская Америка с Ada Tours",
+      "summary": "Вебинар Анны для турагентов о направлениях и маршрутах по Латинской Америке. Организатор — Ada Tours.",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-profi-webinar-2021",
+      "url": "https://profi.travel/events/webinars/show/167356",
+      "name": "Влюбитесь в Латинскую Америку",
+      "publisher": {
+        "name": "Profi.Travel",
+        "url": "https://profi.travel/"
+      },
+      "kind": "event",
+      "schemaType": "EducationEvent",
+      "language": "ru",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Организатор Ada Tours; ведущая Анна Аванесова, директор туроператора. Подтверждены дата и программа.",
+      "relations": {
+        "performer": [
+          "person_anna"
+        ],
+        "organizer": [
+          "organization"
+        ]
+      },
+      "displayGroup": "appearances",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "startDate": "2021-11-18",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "evidenceUrls": [
+        "https://profi.travel/events/webinars/show/167356"
+      ],
+      "label": "Влюбитесь в Латинскую Америку",
+      "summary": "Анна знакомит турагентов с путешествиями по Латинской Америке. Организатор — Ada Tours.",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-profi-webinar-2018",
+      "url": "https://profi.travel/events/webinars/show/161343",
+      "name": "Тур на одном вдохе — с туроператором Ada Tours Бразилия & Латинская Америка! Пять стран Латинской Америки: Бразилия, Аргентина, Боливия, Чили, Перу",
+      "publisher": {
+        "name": "Profi.Travel",
+        "url": "https://profi.travel/"
+      },
+      "kind": "event",
+      "schemaType": "EducationEvent",
+      "language": "ru",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Организатор Ada Tours; ведущая Анна Аванесова, директор компании. Подтверждены дата и программа пяти стран.",
+      "relations": {
+        "performer": [
+          "person_anna"
+        ],
+        "organizer": [
+          "organization"
+        ]
+      },
+      "displayGroup": "appearances",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "startDate": "2018-11-19",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "evidenceUrls": [
+        "https://profi.travel/events/webinars/show/161343"
+      ],
+      "label": "Пять стран Латинской Америки в одном путешествии",
+      "summary": "Анна разбирает путешествия по Бразилии, Аргентине, Боливии, Чили и Перу. Организатор — Ada Tours.",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-profi-webinar-2015",
+      "url": "https://profi.travel/events/webinars/show/128880",
+      "name": "Прямая трансляция из Рио! Индивидуальные туры в Бразилию и другие страны Латинской Америки от принимающего туроператора Ada Tours",
+      "publisher": {
+        "name": "Profi.Travel",
+        "url": "https://profi.travel/"
+      },
+      "kind": "event",
+      "schemaType": "EducationEvent",
+      "language": "ru",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Организатор Ada Tours; ведущая Анна Аванесова, генеральный директор. На дату 2015 года указано проживание в Бразилии и 12 лет опыта в туризме.",
+      "relations": {
+        "performer": [
+          "person_anna"
+        ],
+        "organizer": [
+          "organization"
+        ]
+      },
+      "displayGroup": "appearances",
+      "displayOn": [
+        "/team/anna-avanesova/"
+      ],
+      "startDate": "2015-11-17",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "notes": "12 лет — историческое значение, не переносить в текущую биографию как нынешний опыт.",
+      "evidenceUrls": [
+        "https://profi.travel/events/webinars/show/128880"
+      ],
+      "label": "Индивидуальные туры: прямой эфир из Рио",
+      "summary": "Эфир Анны из Рио о том, как устроены индивидуальные поездки по Бразилии и соседним странам. Организатор — Ada Tours.",
+      "deployment": "active"
+    },
+    {
+      "id": "anna-profi-webinar-2020",
+      "url": "https://profi.travel/events/webinars/show/166852",
+      "name": "Бразилия и Латинская Америка: путешествие внутрь себя, места силы, неограниченные возможности",
+      "publisher": {
+        "name": "Profi.Travel",
+        "url": "https://profi.travel/"
+      },
+      "kind": "event",
+      "schemaType": "EducationEvent",
+      "language": "ru",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Организатор Ada Tours; ведущая Anna Avanesova, Director. Подтверждены дата и программа.",
+      "relations": {
+        "performer": [
+          "person_anna"
+        ],
+        "organizer": [
+          "organization"
+        ]
+      },
+      "displayGroup": "appearances",
+      "displayOn": [],
+      "startDate": "2020-11-10",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "evidenceUrls": [
+        "https://profi.travel/events/webinars/show/166852"
+      ],
+      "label": "Бразилия и Латинская Америка: места силы",
+      "deployment": "saved_for_future_page"
+    },
+    {
+      "id": "anna-profi-webinar-2019",
+      "url": "https://profi.travel/events/webinars/show/166119",
+      "name": "Бразилия и Латинская Америка",
+      "publisher": {
+        "name": "Profi.Travel",
+        "url": "https://profi.travel/"
+      },
+      "kind": "event",
+      "schemaType": "EducationEvent",
+      "language": "ru",
+      "status": "verified",
+      "probability": 100,
+      "checkedAt": "2026-10-22",
+      "verificationMode": "page_read",
+      "evidence": "Организатор Ada Tours; ведущая Anna Avanesova, директор. Подтверждены дата и программа по Бразилии и Центральной Америке.",
+      "relations": {
+        "performer": [
+          "person_anna"
+        ],
+        "organizer": [
+          "organization"
+        ]
+      },
+      "displayGroup": "appearances",
+      "displayOn": [],
+      "startDate": "2019-11-14",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "evidenceUrls": [
+        "https://profi.travel/events/webinars/show/166119"
+      ],
+      "label": "Бразилия и Латинская Америка",
+      "deployment": "saved_for_future_page"
+    },
+    {
+      "id": "evintra-company",
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "checkedAt": "2026-10-22",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "deployment": "active",
+      "url": "https://www.evintra.com/profile/14470/ada-tours-latin-america-tour-operator-14470/21447/br",
+      "publisher": {
+        "name": "EVINTRA",
+        "url": "https://www.evintra.com/"
+      },
+      "probability": 99,
+      "evidence": "Действующий бразильский профиль: contact_person Anna Avanesova, city Rio de Janeiro, website adatours.com, адрес Avenida Nossa Senhora Copacabana 680/916.",
+      "verificationMode": "page_read",
+      "notes": "Прежний чилийский URL перенаправляет на новый бразильский canonical. В номере телефона лишний код страны и иной индекс; контакты не переносить.",
+      "history": [
+        {
+          "url": "https://www.evintra.com/profile/14470/ada-tours-latin-america-tour-operator/15232/estacion-central-chile",
+          "observation": "HTTP redirect на новый бразильский профиль"
+        }
+      ],
+      "verificationDetails": {
+        "checkedAt": "2026-10-22",
+        "httpStatus": 200,
+        "htmlCanonical": "https://www.evintra.com/profile/14470/ada-tours-latin-america-tour-operator-14470/21447/br",
+        "publicProfile": {
+          "contact_person": "Anna Avanesova",
+          "country": "BR",
+          "city": "Rio de Janeiro",
+          "website": "https://adatours.com/",
+          "street": "Avenida Nossa Senhora Copacabana",
+          "number": "680/916"
+        }
+      },
+      "name": "Ada Tours Latin America Tour Operator",
+      "label": "Ada Tours в EVINTRA",
+      "evidenceUrls": [
+        "https://www.evintra.com/profile/14470/ada-tours-latin-america-tour-operator-14470/21447/br"
+      ]
+    },
+    {
+      "id": "instagram-russian",
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "checkedAt": "2026-10-22",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "deployment": "active",
+      "url": "https://www.instagram.com/adatoursoficial_br/",
+      "publisher": {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/"
+      },
+      "probability": 88,
+      "evidence": "Официально оформленный русскоязычный профиль Ada Tours; бразильские программы и перекрестные упоминания в публикациях Анны согласуются с компанией. Канонический URL и заголовок подтверждены HTTP 200.",
+      "verificationMode": "search_index",
+      "notes": "Принято по политике 70%. HTTP HTML подтверждает имя и canonical; описание профиля/программ дополнительно присутствует в поисковом индексе.",
+      "verificationDetails": {
+        "checkedAt": "2026-10-22",
+        "httpStatus": 200,
+        "htmlCanonical": "https://www.instagram.com/adatoursoficial_br/",
+        "htmlTitle": "Ada Tours Official (@adatoursoficial_br) • Instagram photos and videos"
+      },
+      "name": "Ada Tours Official — Instagram",
+      "label": "Русскоязычный профиль Ada Tours в Instagram",
+      "evidenceUrls": [
+        "https://www.instagram.com/adatoursoficial_br/"
+      ]
+    },
+    {
+      "id": "facebook-russian",
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "checkedAt": "2026-10-22",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "deployment": "active",
+      "url": "https://www.facebook.com/adatoursoficial.br",
+      "publisher": {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/"
+      },
+      "probability": 96,
+      "evidence": "Профиль Ада Турс Бразилия расположен в Рио; индекс указывает adatours.com.br, который перенаправляет на adatours.com. HTTP 200 подтверждает название и canonical.",
+      "verificationMode": "search_index",
+      "notes": "В sameAs сохранять собственный canonical без конечного slash.",
+      "verificationDetails": {
+        "checkedAt": "2026-10-22",
+        "httpStatus": 200,
+        "htmlCanonical": "https://www.facebook.com/adatoursoficial.br",
+        "htmlTitle": "Ада Турс Бразилия | Rio de Janeiro RJ"
+      },
+      "name": "Ада Турс Бразилия — Facebook",
+      "label": "Русскоязычный профиль Ada Tours в Facebook",
+      "evidenceUrls": [
+        "https://www.facebook.com/adatoursoficial.br"
+      ]
+    },
+    {
+      "id": "x-current",
+      "kind": "profile",
+      "schemaType": "ProfilePage",
+      "language": "en",
+      "status": "verified",
+      "checkedAt": "2026-10-22",
+      "relations": {
+        "sameAs": [
+          "organization"
+        ]
+      },
+      "displayGroup": "profiles",
+      "displayOn": [
+        "/about/"
+      ],
+      "deployment": "active",
+      "url": "https://x.com/adatoursoficial",
+      "publisher": {
+        "name": "X",
+        "url": "https://x.com/"
+      },
+      "probability": 99,
+      "evidence": "Интервью Anna Avanesova в The Times USA ссылается на этот профиль рядом с adatours.com. HTTP 200: Ada Tours, Latin America Tour Operator, Рио и официальный домен.",
+      "verificationMode": "official_outlink",
+      "notes": "Подтвержден актуальный профиль adatoursoficial; не смешивать со старыми Ada_Tours и AdaToursBrazil.",
+      "verificationDetails": {
+        "checkedAt": "2026-10-22",
+        "httpStatus": 200,
+        "htmlCanonical": "https://x.com/adatoursoficial",
+        "htmlTitle": "Ada Tours (@adatoursoficial) / X",
+        "description": "Latin America Tour Operator"
+      },
+      "name": "Ada Tours — X",
+      "label": "Ada Tours в X",
+      "evidenceUrls": [
+        "https://x.com/adatoursoficial",
+        "https://www.thetimesusa.com/luxury-travel-in-latin-america/"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "url": "https://www.tripadvisor.com/Attraction_Review-g303506-d23420880-Reviews-Ada_Tours-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
+      "probability": 65,
+      "status": "candidate",
+      "evidence": "Совпадают название и город, но описание русскоязычного гида и отсутствие проверенного домена/телефона недостаточны для различения компании и личного гида; возможны дубли.",
+      "decision": "Do not publish yet",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://cn.tripadvisor.com/Attraction_Review-g303506-d32972758-Reviews-Ada_Tours-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html",
+      "probability": 60,
+      "status": "candidate",
+      "evidence": "В индексе только название и город; контакты и описание недоступны.",
+      "decision": "Do not publish yet",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://3pulse.com/en/AnnaAvanesova",
+      "probability": 60,
+      "status": "candidate",
+      "evidence": "Совпадают имя, город Rio de Janeiro и география путешествий, но прямой связи с Ada Tours или подтвержденными личными профилями пока нет.",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCD2XIObuKZ3ZRg9uRFd4O5Q",
+      "probability": 30,
+      "status": "candidate",
+      "evidence": "Найден только тезка/одноименный канал с недостаточной привязкой к Ada Tours.",
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "url": "https://www.med-practic.com/rus/3212/profile.html",
+      "probability": 1,
+      "status": "rejected",
+      "evidence": "Одноименный акушер-гинеколог в Ереване; профессия и география не соответствуют основательнице Ada Tours.",
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "futurePages": [
+    {
+      "path": "/press/",
+      "title": "Ada Tours в СМИ и на международных выставках",
+      "sourceIds": [
+        "ettravelworld-india-2025",
+        "ttj-india-2025",
+        "panrotas-iltm-2026",
+        "panrotas-iltm-2025",
+        "embratur-fiexpo-2026",
+        "evintra-success-story",
+        "anna-price-of-business",
+        "anna-panrotas-iltm-2024",
+        "anna-me-itb-2026",
+        "anna-me-itb-2025",
+        "anna-me-wtm-2024",
+        "anna-india-outbound",
+        "anna-atorus-2024"
+      ],
+      "schema": [
+        "CollectionPage",
+        "ItemList",
+        "Article.about",
+        "Article.mentions",
+        "Organization.subjectOf",
+        "Person.subjectOf"
+      ],
+      "notes": "Хронология с краткими пояснениями и внешними первоисточниками. Сначала отобразить материалы, затем размечать их."
+    },
+    {
+      "path": "/webinars/",
+      "title": "Вебинары и выступления Анны Аванесовой",
+      "sourceIds": [
+        "anna-profi-webinar-2026",
+        "anna-profi-webinar-2021",
+        "anna-profi-webinar-2018",
+        "anna-profi-webinar-2015",
+        "anna-profi-webinar-2020",
+        "anna-profi-webinar-2019",
+        "anna-price-of-business"
+      ],
+      "schema": [
+        "CollectionPage",
+        "ItemList",
+        "EducationEvent",
+        "Person.performerIn",
+        "Event.performer",
+        "Event.organizer"
+      ],
+      "notes": "Для VideoObject/AudioObject сначала получить реальные contentUrl/embedUrl, изображение и дату записи. Не выдумывать эти поля."
+    },
+    {
+      "path": "/partners/",
+      "title": "Международные представители и профессиональные связи",
+      "sourceIds": [
+        "jan-tourism-company",
+        "reps-unlimited-company",
+        "global-destinations-partners",
+        "ettravelworld-india-2025",
+        "abav-rj-company"
+      ],
+      "schema": [
+        "AboutPage",
+        "Organization",
+        "memberOf",
+        "sameAs",
+        "citation"
+      ],
+      "notes": "Указать подтвержденные роли и рынки. Коммерческие представители не становятся parentOrganization/subOrganization, выставки не становятся ассоциациями."
+    }
+  ],
+  "limits": [
+    "Даты проверки не являются датами публикации источников.",
+    "search_index означает чтение индекса первичного источника; это не заявление об успешном прямом HTTP-открытии.",
+    "foundingDate, число клиентов, часы работы, рейтинги, языки лично Анны, дипломы и массовое reviewedBy не добавлялись.",
+    "Google Maps и Яндекс Карты относятся к офису компании, не к Person.",
+    "Публикации и события добавляются в JSON-LD только при видимой ссылке на странице. sameAs и идентичность организации/основателя доступны в едином графе сайта."
+  ]
+}

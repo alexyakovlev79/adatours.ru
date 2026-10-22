@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "kind": "reverse_identity_legacy_english_review_adjudication",
+  "createdAt": "2026-10-22T09:35:07.065Z",
+  "decisionPolicy": "probability-70-v1",
+  "mainSourceCommit": "cf14ba13681a2580e4a67e018c741d6365b5cabd",
+  "sourceBranch": "feature/external-identity-swarm-20261021",
+  "sourceStateSha": "0f7a4351d53a8fca4be9d36a512004d6a6d64c43",
+  "summary": {
+    "matched_exact": 2,
+    "reviewRemaining": 0
+  },
+  "decisions": [
+    {
+      "reviewNo": "legacy-en-001",
+      "sourceDomain": "adatours.com",
+      "sourceUrl": "https://adatours.com/argentina-chile-and-bolivia",
+      "originalWorkerStatus": "review",
+      "previousCandidates": [
+        "https://adatours.ru/multi-country/tour/argentina-chile-bolivia-patagonia-12-days/",
+        "https://adatours.ru/multi-country/tour/patagonia-uyuni-salt-flats-12-days/"
+      ],
+      "decision": "matched_exact",
+      "relation": "sameAs",
+      "ruUrl": "https://adatours.ru/multi-country/tour/patagonia-uyuni-salt-flats-12-days/",
+      "targetId": "tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni",
+      "probabilityPercent": 98,
+      "decisionPolicy": "probability-70-v1",
+      "acceptedAsFinal": true,
+      "decisionReason": "Другая RU-кандидатура /argentina-chile-bolivia-patagonia-12-days/ архивирована. Действующий 12-дневный тур Патагония–Уюни содержит тот же маршрут Буэнос-Айрес → Эль-Калафате → Торрес-дель-Пайне → Сантьяго/Атакама → Уюни, что английская продуктовая страница. Старая дата/цена не приравниваются к текущим условиям.",
+      "evidence": [
+        "EN dedicated product page https://adatours.com/argentina-chile-and-bolivia (route/duration/price checked in source evidence)",
+        "RU main cf14ba13681a2580e4a67e018c741d6365b5cabd: src/content/tours/prekrasnaya-patagoniya-i-solonchak-uyuni.md, tour_source_prekrasnaya_patagoniya_i_solonchak_uyuni, current active canonical /multi-country/tour/patagonia-uyuni-salt-flats-12-days/.",
+        "Original duplicate candidates from legacy state: [\"https://adatours.ru/multi-country/tour/argentina-chile-bolivia-patagonia-12-days/\",\"https://adatours.ru/multi-country/tour/patagonia-uyuni-salt-flats-12-days/\"]",
+        "Другая RU-кандидатура /argentina-chile-bolivia-patagonia-12-days/ архивирована. Действующий 12-дневный тур Патагония–Уюни содержит тот же маршрут Буэнос-Айрес → Эль-Калафате → Торрес-дель-Пайне → Сантьяго/Атакама → Уюни, что английская продуктовая страница. Старая дата/цена не приравниваются к текущим условиям."
+      ],
+      "sourceHttpRechecked": false,
+      "targetHttpRechecked": false,
+      "productionSameAsNotDeployed": true,
+      "notes": "Mutual sameAs candidate only for independent active EN/RU pages; do not apply to rejected RU competitor."
+    },
+    {
+      "reviewNo": "legacy-en-002",
+      "sourceDomain": "adatours.com",
+      "sourceUrl": "https://adatours.com/luxury-argentina-tour-11-days",
+      "originalWorkerStatus": "review",
+      "previousCandidates": [
+        "https://adatours.ru/multi-country/tour/argentina-patagonia-vip-11-days/",
+        "https://adatours.ru/multi-country/tour/luxury-argentina-buenos-aires-patagonia-iguazu-11-days-2026-2027/"
+      ],
+      "decision": "matched_exact",
+      "relation": "sameAs",
+      "ruUrl": "https://adatours.ru/multi-country/tour/luxury-argentina-buenos-aires-patagonia-iguazu-11-days-2026-2027/",
+      "targetId": "tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej",
+      "probabilityPercent": 99,
+      "decisionPolicy": "probability-70-v1",
+      "acceptedAsFinal": true,
+      "decisionReason": "EN Deluxe Argentina 11 days с маршрутом Буэнос-Айрес, Эль-Калафате, Ушуайя, Игуасу и ценой $8,957.50 точнее совпадает с RU люкс-продуктом с ценой от $8,958 и теми же городами. Другой RU 11-дневный VIP-тур за $3,858 является отдельным коммерческим предложением; не использовать его как sameAs EN этой цены.",
+      "evidence": [
+        "EN dedicated product page https://adatours.com/luxury-argentina-tour-11-days (route/duration/price checked in source evidence)",
+        "RU main cf14ba13681a2580e4a67e018c741d6365b5cabd: src/content/tours/lyuksovyj-tur-v-argentinu-s-buehnos-ajres-patagoniya-iguasu-na-11-dnej.md, tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej, current active canonical /multi-country/tour/luxury-argentina-buenos-aires-patagonia-iguazu-11-days-2026-2027/.",
+        "Original duplicate candidates from legacy state: [\"https://adatours.ru/multi-country/tour/argentina-patagonia-vip-11-days/\",\"https://adatours.ru/multi-country/tour/luxury-argentina-buenos-aires-patagonia-iguazu-11-days-2026-2027/\"]",
+        "EN Deluxe Argentina 11 days с маршрутом Буэнос-Айрес, Эль-Калафате, Ушуайя, Игуасу и ценой $8,957.50 точнее совпадает с RU люкс-продуктом с ценой от $8,958 и теми же городами. Другой RU 11-дневный VIP-тур за $3,858 является отдельным коммерческим предложением; не использовать его как sameAs EN этой цены."
+      ],
+      "sourceHttpRechecked": false,
+      "targetHttpRechecked": false,
+      "productionSameAsNotDeployed": true,
+      "notes": "Mutual sameAs candidate only for independent active EN/RU pages; do not apply to rejected RU competitor."
+    }
+  ],
+  "productionChanges": false
+}

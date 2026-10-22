@@ -47,3 +47,5 @@ jobs:
           dig @8.8.8.8 +time=5 +tries=1 TXT adatours.ru +noall +answer
           dig @8.8.8.8 +time=5 +tries=1 MX adatours.ru +noall +answer
           echo '=== END DIAGNOSTICS ==='
+
+# Recheck after correcting duplicate suffix in REG.RU on 2026-10-22

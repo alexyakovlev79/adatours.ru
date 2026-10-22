@@ -1,0 +1,49 @@
+name: Diagnose AdaTours Postbox DKIM DNS
+on:
+  push:
+    branches:
+      - diagnostic/postbox-dkim-dns-20261022
+permissions:
+  contents: read
+jobs:
+  inspect-dns:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect authoritative DNS and public resolvers (read-only)
+        shell: bash
+        run: |
+          set -u
+          echo '=== AUTHORITATIVE NAMESERVERS ==='
+          dig +time=4 +tries=1 NS adatours.ru +noall +answer
+          dig +short NS adatours.ru | sort -u > /tmp/adatours-ns.txt
+          echo '=== PUBLIC DNS NS RECORDS ==='
+          for resolver in 8.8.8.8 1.1.1.1 77.88.8.8; do
+            echo "--- resolver $resolver NS adatours.ru ---"
+            dig @"$resolver" +time=5 +tries=1 NS adatours.ru +noall +comments +answer +authority
+          done
+          echo '=== EXPECTED DKIM CNAME RECORDS (public resolvers) ==='
+          for selector in 1 2; do
+            host="egth04qrmf4oovjrv7bm-${selector}._domainkey.adatours.ru"
+            expected="egth04qrmf4oovjrv7bm-${selector}.dkim.pstbx.ru."
+            echo "--- $host -> $expected ---"
+            for resolver in 8.8.8.8 1.1.1.1 77.88.8.8; do
+              echo "resolver $resolver:"
+              dig @"$resolver" +time=5 +tries=1 CNAME "$host" +noall +comments +answer +authority
+              echo "TXT lookup (for key visibility; only one key may currently be live):"
+              dig @"$resolver" +time=5 +tries=1 TXT "$host" +noall +comments +answer | sed -E 's/(p=)[A-Za-z0-9+/=]+/\1[redacted]/g' | head -8
+            done
+          done
+          echo '=== DIRECT QUERIES TO AUTHORITATIVE DNS (NO CACHE) ==='
+          while IFS= read -r ns; do
+            [ -n "$ns" ] || continue
+            echo "Nameserver: $ns"
+            for selector in 1 2; do
+              host="egth04qrmf4oovjrv7bm-${selector}._domainkey.adatours.ru"
+              dig @"$ns" +time=5 +tries=1 +norecurse CNAME "$host" +noall +comments +answer +authority
+            done
+          done < /tmp/adatours-ns.txt
+          echo '=== DOMAIN ROOT SPF / MX (read-only) ==='
+          dig @8.8.8.8 +time=5 +tries=1 TXT adatours.ru +noall +answer
+          dig @8.8.8.8 +time=5 +tries=1 MX adatours.ru +noall +answer
+          echo '=== END DIAGNOSTICS ==='

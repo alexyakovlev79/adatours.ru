@@ -1,0 +1,84 @@
+name: Finalize SEO first publication 2026-10-22
+on:
+  push:
+    branches: [ops/seo-finalize-20261022]
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Require successful exact Pages deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          result="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/39739538073" --jq '.conclusion')"
+          test "$result" = success
+      - name: Finalize exact first-publication records without another Pages build
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          sync_branch() {
+            local branch="$1"
+            for attempt in 1 2 3; do
+              git fetch --no-tags origin "refs/heads/${branch}:refs/remotes/origin/${branch}"
+              git checkout -B seo-release-sync "refs/remotes/origin/${branch}"
+              if [ "$branch" = main ]; then
+                git merge-base --is-ancestor ddf6fd5c01550f1115fc7ad7d8c0428549041851 HEAD
+              fi
+              TARGET_BRANCH="$branch" node - <<'NODE'
+          const fs = require('node:fs');
+          const cp = require('node:child_process');
+          const rows = [["costa-rica_el-salvador_mexico_nicaragua","342d7478a039c27b0ad1fc3ae1fabb7ac50eb5e2"],["costa-rica_el-salvador_mexico_panama","8ab5f11c90cc2cb9fc9785340f8c463ece8104f0"],["costa-rica_guatemala_honduras_mexico","636909ff3fe7722c01b260e3ddaf11ea820ec5fe"],["costa-rica_guatemala_mexico_nicaragua","14c87c003c4a9c0c1a50ab269c76eb80874f5c17"],["costa-rica_guatemala_mexico_panama","8d265082bc30c231292b7904fb5eab252c36545a"],["costa-rica_honduras_mexico_nicaragua","56a4fddd5355b70ab7f02c433aef6eaa3f164b83"],["costa-rica_honduras_mexico_panama","938a96c7a68ad2850818a501a86a0a77367982c2"],["costa-rica_mexico_nicaragua_panama","fa7e4ab17fdb89d45c17b110f39d5ff6365a0ae9"],["el-salvador_guatemala_honduras_mexico","592e43a4d125b2ce1cb689062365f27103798a6b"],["el-salvador_guatemala_mexico_nicaragua","b8e7b58c44bea613b41188abe521ba9dea777c0f"],["el-salvador_guatemala_mexico_panama","e72d83c4fe3de895860de59106f4605552eb1ea2"],["el-salvador_honduras_mexico_nicaragua","1da7da7628b7b135251d6f3be09596e3a2602914"],["el-salvador_honduras_mexico_panama","d79c5537d26406da9ad08ad8e68bfeb6d5ec5250"],["el-salvador_mexico_nicaragua_panama","773b75b916a92c3a18d570661e1a9141113f97f9"],["guatemala_honduras_mexico_nicaragua","220e369a4f2c2ae20315b07549481df890acd2ec"]];
+          const path = 'data/seo-geo/registry/05-tours.json';
+          const reg = JSON.parse(fs.readFileSync(path, 'utf8'));
+          const idx = new Map(reg.entries.map(row => [row.url, row]));
+          for (const [slug, expectedSha] of rows) {
+            const url = '/multi-country/' + slug + '/interests/nature/';
+            const article = 'data/seo-geo/articles' + url + 'index.md';
+            const row = idx.get(url);
+            if (!row || row.kind !== 'multi_country_interest' || row.themeId !== 'theme_nature')
+              throw Error('SEO row not found or identity changed: ' + url);
+            if (process.env.TARGET_BRANCH === 'main') {
+              if (!fs.existsSync(article)) throw Error('Article missing in main: ' + article);
+              const actual = cp.execFileSync('git', ['hash-object', article], {encoding:'utf8'}).trim();
+              if (actual !== expectedSha) throw Error('Deployed article SHA changed: ' + url);
+            }
+            if (row.work === 'published' || row.work === 'rewritten') continue;
+            if (!['queued', 'prepared'].includes(row.work)) throw Error('Unexpected work status: ' + url + ': ' + row.work);
+            row.work = 'published';
+            row.articlePath = article;
+            row.publishedAt = '2026-10-22';
+            row.publishedCommit = 'ddf6fd5c01550f1115fc7ad7d8c0428549041851';
+            row.deployRun = 'https://github.com/alexyakovlev79/adatours.ru/actions/runs/39739538073';
+            row.updatedAt = '2026-10-22';
+          }
+          fs.writeFileSync(path, JSON.stringify(reg, null, 2) + '\n');
+          NODE
+              git add data/seo-geo/registry/05-tours.json
+              if git diff --cached --quiet; then
+                echo "Already finalized on $branch"
+                return 0
+              fi
+              git commit -m "seo: finalize 15 published nature pages [skip ci]"
+              if git push origin "HEAD:${branch}"; then
+                echo "Finalized $branch"
+                return 0
+              fi
+            done
+            echo "CAS retries exhausted for $branch" >&2
+            return 1
+          }
+          sync_branch main
+          sync_branch seo-geo/staging

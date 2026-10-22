@@ -6,7 +6,7 @@
   "runsPerPagePerStage": 3,
   "source": "Google PageSpeed Insights official UI; calculator values retained at millisecond precision",
   "unmeasuredAudits": "No transfer-weight, unused-script, LCP-breakdown or long-task values were collected; absent fields are not zero.",
-  "versionCaveat": "Local public HTML hashes bracket each phase. The exact CDN copy used by remote Google workers is not independently observable.",
+  "versionCaveat": "Public HTML snapshots are retained; per user instruction the after series is not restarted for the concurrent publication. The attached htmlSha256 is the initial public phase snapshot, and sourceCommit is crop publication identity, not guaranteed exact bytes or version used by each Google worker.",
   "publication": {
     "sourceCommit": "31717fae385a8dc43794fbd167695aac572c6d3b",
     "status": "published_pages_deploy_success",
@@ -35,11 +35,17 @@
       "pages": 6132
     }
   },
-  "validRuns": 92,
+  "validRuns": 105,
   "excludedDrift": 58,
   "excludedImageErrors": 2,
   "preliminaryRunsExcluded": 6,
-  "failedAttempts": 9,
+  "failedAttempts": 10,
+  "protocolAmendment": {
+    "userInstruction": "сейчас параллельный чат опять пееопубликует сайт: не надо перезапускать все замеры, посчитаем, что изменений значимых нет",
+    "decision": "Continue the existing before/after sample across the upcoming concurrent publication, treating its changes as immaterial by user decision. Do not restart or reclassify completed valid measurements solely for this publication.",
+    "limitation": "The after series can span published versions; do not attribute every performance change solely to the crop. Crop sourceCommit identifies implementation publication, not an independently verified exact version used by each Google worker.",
+    "initialBaselineExclusion": "The earlier58-report excluded baseline remains historical. The user instruction concerns the new upcoming publication; the already-complete63-run before baseline is retained."
+  },
   "pages": [
     {
       "id": "p01",
@@ -969,34 +975,36 @@
         ]
       },
       "after": {
-        "count": 2,
-        "complete": false,
+        "count": 3,
+        "complete": true,
         "scores": [
           82,
-          92
+          92,
+          68
         ],
         "reports": [
           "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-place-puerto-iguazu/ul6hsk7zqt?form_factor=mobile",
-          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-place-puerto-iguazu/8b8hmp9lbm?form_factor=mobile"
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-place-puerto-iguazu/8b8hmp9lbm?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-place-puerto-iguazu/m2o9t259sc?form_factor=mobile"
         ],
-        "performance": 87.0,
+        "performance": 82,
         "performanceRange": [
-          82,
+          68,
           92
         ],
         "fcpMs": 1201.0,
         "fcpMsRange": [
           1201.0,
-          1201.0
+          3782.0
         ],
-        "lcpMs": 4112.0,
+        "lcpMs": 4860.0,
         "lcpMsRange": [
           3364.0,
-          4860.0
+          5815.0
         ],
-        "tbtMs": 50.0,
+        "tbtMs": 35.0,
         "tbtMsRange": [
-          35.0,
+          14.0,
           65.0
         ],
         "cls": 0.0,
@@ -1004,12 +1012,15 @@
           0.0,
           0.0
         ],
-        "speedIndexMs": 2047.0,
+        "speedIndexMs": 2808.0,
         "speedIndexMsRange": [
           1286.0,
-          2808.0
+          5064.0
         ]
-      }
+      },
+      "deltaPerformance": 7,
+      "deltaLcpPercent": -13.99752256237834,
+      "deltaTbtPercent": -82.41206030150754
     },
     {
       "id": "p11",
@@ -1062,42 +1073,44 @@
         ]
       },
       "after": {
-        "count": 1,
+        "count": 2,
         "complete": false,
         "scores": [
-          67
+          67,
+          81
         ],
         "reports": [
-          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-place-machu-picchu/tp3aebkjzg?form_factor=mobile"
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-place-machu-picchu/tp3aebkjzg?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-place-machu-picchu/fsrs0wf84y?form_factor=mobile"
         ],
-        "performance": 67,
+        "performance": 74.0,
         "performanceRange": [
           67,
-          67
+          81
         ],
-        "fcpMs": 3797.0,
+        "fcpMs": 2536.5,
         "fcpMsRange": [
-          3797.0,
+          1276.0,
           3797.0
         ],
-        "lcpMs": 6133.0,
+        "lcpMs": 5608.0,
         "lcpMsRange": [
-          6133.0,
+          5083.0,
           6133.0
         ],
-        "tbtMs": 11.0,
+        "tbtMs": 16.0,
         "tbtMsRange": [
           11.0,
-          11.0
+          21.0
         ],
         "cls": 0.0,
         "clsRange": [
           0.0,
           0.0
         ],
-        "speedIndexMs": 5101.0,
+        "speedIndexMs": 3376.5,
         "speedIndexMsRange": [
-          5101.0,
+          1652.0,
           5101.0
         ]
       }
@@ -1153,22 +1166,46 @@
         ]
       },
       "after": {
-        "count": 0,
+        "count": 2,
         "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
+        "scores": [
+          80,
+          68
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-cuba-place-havana/1d9of6sgkg?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-cuba-place-havana/zxz1t0b5bk?form_factor=mobile"
+        ],
+        "performance": 74.0,
+        "performanceRange": [
+          68,
+          80
+        ],
+        "fcpMs": 2504.0,
+        "fcpMsRange": [
+          1201.0,
+          3807.0
+        ],
+        "lcpMs": 5512.0,
+        "lcpMsRange": [
+          5135.0,
+          5889.0
+        ],
+        "tbtMs": 66.0,
+        "tbtMsRange": [
+          39.0,
+          93.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 3134.5,
+        "speedIndexMsRange": [
+          1271.0,
+          4998.0
+        ]
       }
     },
     {
@@ -1222,23 +1259,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          80,
+          80,
+          88
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-ecuador-banos-banos-tour-from-quito-2-days/mahe646luu?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-ecuador-banos-banos-tour-from-quito-2-days/dg897gssll?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-ecuador-banos-banos-tour-from-quito-2-days/mkj86tzcef?form_factor=mobile"
+        ],
+        "performance": 80,
+        "performanceRange": [
+          80,
+          88
+        ],
+        "fcpMs": 1201.0,
+        "fcpMsRange": [
+          1201.0,
+          1201.0
+        ],
+        "lcpMs": 5334.0,
+        "lcpMsRange": [
+          3914.0,
+          5459.0
+        ],
+        "tbtMs": 64.0,
+        "tbtMsRange": [
+          31.0,
+          76.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 1358.0,
+        "speedIndexMsRange": [
+          1201.0,
+          1744.0
+        ]
+      },
+      "deltaPerformance": 10,
+      "deltaLcpPercent": -32.48101265822785,
+      "deltaTbtPercent": -77.06093189964159
     },
     {
       "id": "p14",
@@ -1291,23 +1357,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          78,
+          79,
+          66
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-chile-marble-caves-marble-caves-private-boat-two-half-hours/p2kk363bhv?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-chile-marble-caves-marble-caves-private-boat-two-half-hours/3y6g78dgdg?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-chile-marble-caves-marble-caves-private-boat-two-half-hours/i8ol63ksdw?form_factor=mobile"
+        ],
+        "performance": 78,
+        "performanceRange": [
+          66,
+          79
+        ],
+        "fcpMs": 1351.0,
+        "fcpMsRange": [
+          1351.0,
+          3780.0
+        ],
+        "lcpMs": 5577.0,
+        "lcpMsRange": [
+          5411.0,
+          6250.0
+        ],
+        "tbtMs": 112.0,
+        "tbtMsRange": [
+          98.0,
+          127.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 2693.0,
+        "speedIndexMsRange": [
+          1872.0,
+          4992.0
+        ]
+      },
+      "deltaPerformance": 7,
+      "deltaLcpPercent": -31.771470516271105,
+      "deltaTbtPercent": -22.22222222222222
     },
     {
       "id": "p15",
@@ -1360,23 +1455,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          81,
+          83,
+          68
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-ecuador-misicocha-reserve-ecuador-misicocha-forest-walk/d2ggge5612?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-ecuador-misicocha-reserve-ecuador-misicocha-forest-walk/rkwy9pvh6c?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-ecuador-misicocha-reserve-ecuador-misicocha-forest-walk/biwyc2q6s5?form_factor=mobile"
+        ],
+        "performance": 81,
+        "performanceRange": [
+          68,
+          83
+        ],
+        "fcpMs": 1201.0,
+        "fcpMsRange": [
+          1201.0,
+          3743.0
+        ],
+        "lcpMs": 4869.0,
+        "lcpMsRange": [
+          4738.0,
+          5944.0
+        ],
+        "tbtMs": 8.0,
+        "tbtMsRange": [
+          3.0,
+          138.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 1256.0,
+        "speedIndexMsRange": [
+          1201.0,
+          5061.0
+        ]
+      },
+      "deltaPerformance": 3,
+      "deltaLcpPercent": -17.80891289669142,
+      "deltaTbtPercent": -91.91919191919192
     },
     {
       "id": "p16",

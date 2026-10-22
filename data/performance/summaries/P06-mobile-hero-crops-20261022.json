@@ -35,11 +35,11 @@
       "pages": 6132
     }
   },
-  "validRuns": 85,
+  "validRuns": 92,
   "excludedDrift": 58,
-  "excludedImageErrors": 1,
+  "excludedImageErrors": 2,
   "preliminaryRunsExcluded": 6,
-  "failedAttempts": 8,
+  "failedAttempts": 9,
   "pages": [
     {
       "id": "p01",
@@ -773,47 +773,52 @@
         ]
       },
       "after": {
-        "count": 2,
-        "complete": false,
+        "count": 3,
+        "complete": true,
         "scores": [
           66,
-          97
+          97,
+          68
         ],
         "reports": [
           "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-tour-best-of-peru-21-days/3p6b0bw2og?form_factor=mobile",
-          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-tour-best-of-peru-21-days/cf7fmpvbn6?form_factor=mobile"
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-tour-best-of-peru-21-days/cf7fmpvbn6?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-tour-best-of-peru-21-days/dejd5rcbu3?form_factor=mobile"
         ],
-        "performance": 81.5,
+        "performance": 68,
         "performanceRange": [
           66,
           97
         ],
-        "fcpMs": 2642.0,
+        "fcpMs": 2423.0,
         "fcpMsRange": [
           1351.0,
           3933.0
         ],
-        "lcpMs": 4439.5,
+        "lcpMs": 5986.0,
         "lcpMsRange": [
           2628.0,
           6251.0
         ],
-        "tbtMs": 55.5,
+        "tbtMs": 62.0,
         "tbtMsRange": [
           49.0,
-          62.0
+          107.0
         ],
         "cls": 0.0,
         "clsRange": [
           0.0,
           0.0
         ],
-        "speedIndexMs": 3238.0,
+        "speedIndexMs": 5125.0,
         "speedIndexMsRange": [
           1351.0,
-          5125.0
+          7144.0
         ]
-      }
+      },
+      "deltaPerformance": 8,
+      "deltaLcpPercent": -18.602121294533593,
+      "deltaTbtPercent": -78.839590443686
     },
     {
       "id": "p09",
@@ -866,23 +871,52 @@
         ]
       },
       "after": {
-        "count": 0,
-        "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
-      }
+        "count": 3,
+        "complete": true,
+        "scores": [
+          81,
+          60,
+          61
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-guatemala-place-tikal-and-flores/l3asy0fq30?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-guatemala-place-tikal-and-flores/27zprjrrnr?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-guatemala-place-tikal-and-flores/4xccbcr254?form_factor=mobile"
+        ],
+        "performance": 61,
+        "performanceRange": [
+          60,
+          81
+        ],
+        "fcpMs": 3809.0,
+        "fcpMsRange": [
+          1201.0,
+          3844.0
+        ],
+        "lcpMs": 5805.0,
+        "lcpMsRange": [
+          5226.0,
+          5858.0
+        ],
+        "tbtMs": 301.0,
+        "tbtMsRange": [
+          53.0,
+          340.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 4974.0,
+        "speedIndexMsRange": [
+          1564.0,
+          5161.0
+        ]
+      },
+      "deltaPerformance": -15,
+      "deltaLcpPercent": -14.632352941176475,
+      "deltaTbtPercent": 1104.0
     },
     {
       "id": "p10",
@@ -935,22 +969,46 @@
         ]
       },
       "after": {
-        "count": 0,
+        "count": 2,
         "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
+        "scores": [
+          82,
+          92
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-place-puerto-iguazu/ul6hsk7zqt?form_factor=mobile",
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-argentina-place-puerto-iguazu/8b8hmp9lbm?form_factor=mobile"
+        ],
+        "performance": 87.0,
+        "performanceRange": [
+          82,
+          92
+        ],
+        "fcpMs": 1201.0,
+        "fcpMsRange": [
+          1201.0,
+          1201.0
+        ],
+        "lcpMs": 4112.0,
+        "lcpMsRange": [
+          3364.0,
+          4860.0
+        ],
+        "tbtMs": 50.0,
+        "tbtMsRange": [
+          35.0,
+          65.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 2047.0,
+        "speedIndexMsRange": [
+          1286.0,
+          2808.0
+        ]
       }
     },
     {
@@ -1004,22 +1062,44 @@
         ]
       },
       "after": {
-        "count": 0,
+        "count": 1,
         "complete": false,
-        "scores": [],
-        "reports": [],
-        "performance": null,
-        "performanceRange": null,
-        "fcpMs": null,
-        "fcpMsRange": null,
-        "lcpMs": null,
-        "lcpMsRange": null,
-        "tbtMs": null,
-        "tbtMsRange": null,
-        "cls": null,
-        "clsRange": null,
-        "speedIndexMs": null,
-        "speedIndexMsRange": null
+        "scores": [
+          67
+        ],
+        "reports": [
+          "https://pagespeed.web.dev/analysis/https-adatours-ru-peru-place-machu-picchu/tp3aebkjzg?form_factor=mobile"
+        ],
+        "performance": 67,
+        "performanceRange": [
+          67,
+          67
+        ],
+        "fcpMs": 3797.0,
+        "fcpMsRange": [
+          3797.0,
+          3797.0
+        ],
+        "lcpMs": 6133.0,
+        "lcpMsRange": [
+          6133.0,
+          6133.0
+        ],
+        "tbtMs": 11.0,
+        "tbtMsRange": [
+          11.0,
+          11.0
+        ],
+        "cls": 0.0,
+        "clsRange": [
+          0.0,
+          0.0
+        ],
+        "speedIndexMs": 5101.0,
+        "speedIndexMsRange": [
+          5101.0,
+          5101.0
+        ]
       }
     },
     {

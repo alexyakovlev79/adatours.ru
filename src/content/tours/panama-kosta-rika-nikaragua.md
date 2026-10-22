@@ -47,7 +47,7 @@ itinerary:
   - Панама-Сити
   text: Прибытие в международный аэропорт Tocumen. Встреча и трансфер в отель Eurostars Panama City. Размещение и ночь в Панама-Сити.
   images:
-  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261023-v2.webp
     hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
     alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
 - day: 2
@@ -64,7 +64,7 @@ itinerary:
     \ жилую зону канала, где жили американцы, участвовавшие в строительстве и обслуживании канала, и по бульвару Бальбоа вдоль\
     \ Панамского залива.\n\nНочь в отеле Eurostars Panama City.  \n**Питание:** завтрак."
   images:
-  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261023-v2.webp
     hover: "Панама-Сити: белый фасад с арками и балконными ограждениями"
     alt: "Белое историческое здание с балконами и арочным входом в Панама-Сити, Панама"
 - day: 3

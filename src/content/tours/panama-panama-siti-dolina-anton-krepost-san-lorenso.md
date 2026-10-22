@@ -112,7 +112,7 @@ itinerary:
 
     После окончания экскурсии трансфер в аэропорт и вылет далее по маршруту.
   images:
-  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261023-v2.webp
     hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
     alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
 included:

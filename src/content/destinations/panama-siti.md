@@ -12,13 +12,13 @@ hero:
   src: "/media/destinations/panama-siti/hero-generated-20261021-dedup-third50-v1.webp"
   alt: "Панама-Сити — иллюстрация"
 gallery:
-- src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+- src: /media/destinations/panama-city/gallery-1-enhanced-20261023-v2.webp
   hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
   alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
-- src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+- src: /media/destinations/panama-city/gallery-2-enhanced-20261023-v2.webp
   hover: "Панама-Сити: белый фасад с арками и балконными ограждениями"
   alt: "Белое историческое здание с балконами и арочным входом в Панама-Сити, Панама"
-- src: /media/destinations/panama-city/gallery-3-enhanced-20261005.webp
+- src: /media/destinations/panama-city/gallery-3-enhanced-20261023-v2.webp
   alt: "Разноцветные рыболовные лодки у берега Панама-Сити"
   hover: "Панама-Сити: рыболовные лодки на берегу рядом с домами"
 - {"src":"/media/destinations/panama-city/gallery-4-enhanced-20261005.webp","alt":"Высотные здания и гавань в сумерках, Панама-Сити, Панама","hover":"Панама-Сити, Панама: высотные здания и гавань в сумерках"}

@@ -106,7 +106,7 @@ itinerary:
 
     По прибытии трансфер в регион Бока-Чика и размещение в отеле.
   images:
-  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261023-v2.webp
     hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
     alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
 - day: 7
@@ -210,7 +210,7 @@ itinerary:
   - Панама-Сити
   text: В назначенное время трансфер в аэропорт для вылета домой.
   images:
-  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261023-v2.webp
     hover: "Панама-Сити: белый фасад с арками и балконными ограждениями"
     alt: "Белое историческое здание с балконами и арочным входом в Панама-Сити, Панама"
 included:

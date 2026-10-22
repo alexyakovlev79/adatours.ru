@@ -99,7 +99,7 @@ itinerary:
 
     Питание: завтрак.
   images:
-  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261023-v2.webp
     hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
     alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
 - day: 5
@@ -203,7 +203,7 @@ itinerary:
 
     Трансфер в аэропорт.
   images:
-  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261023-v2.webp
     hover: "Панама-Сити: белый фасад с арками и балконными ограждениями"
     alt: "Белое историческое здание с балконами и арочным входом в Панама-Сити, Панама"
 included:

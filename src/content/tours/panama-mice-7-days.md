@@ -103,7 +103,7 @@ itinerary:
     Включаем англоговорящего транспортного координатора, переводчика с английского на испанский на 4 часа и по 3
     бутылки воды на человека.'
   images:
-  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261023-v2.webp
     alt: Белое историческое здание с балконами и арочным входом в Панама-Сити, Панама
 - excursionRef: excursion_panama_casco_viejo_group_walk
   places:
@@ -175,7 +175,7 @@ itinerary:
     Для раннего вылета подготовим индивидуальный трансфер из Hyatt Regency в аэропорт PTY на Mercedes-Benz Vito.
     Включаем сопровождение англоговорящего транспортного координатора и по 3 бутылки воды на человека.'
   images:
-  - src: /media/destinations/panama-city/gallery-3-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-3-enhanced-20261023-v2.webp
     alt: Разноцветные рыболовные лодки у берега Панама-Сити
 - day: 6
   label: 17 сентября · пример программы
@@ -202,7 +202,7 @@ itinerary:
     поездку, организуем трансферы в PTY; также подготовим ранние выезды следующего дня. Для каждого участника включаем
     по 3 бутылки воды.'
   images:
-  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261023-v2.webp
     alt: Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама
 - excursionRef: excursion_panama_gamboa_canal_boat_expedition
   places:

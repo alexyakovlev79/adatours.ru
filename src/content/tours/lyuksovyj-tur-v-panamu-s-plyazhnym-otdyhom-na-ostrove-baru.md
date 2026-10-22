@@ -148,7 +148,7 @@ itinerary:
 
     После размещения остается свободное время.
   images:
-  - src: /media/destinations/panama-city/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-1-enhanced-20261023-v2.webp
     hover: "Панама-Сити: освещённый фасад собора между двумя белыми башнями"
     alt: "Ночная подсветка каменного собора с белыми башнями в Панама-Сити, Панама"
 - day: 5
@@ -315,7 +315,7 @@ itinerary:
 
     После островов и джунглей возвращение в современную городскую среду становится финальной сменой обстановки перед вылетом.
   images:
-  - src: /media/destinations/panama-city/gallery-2-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-2-enhanced-20261023-v2.webp
     hover: "Панама-Сити: белый фасад с арками и балконными ограждениями"
     alt: "Белое историческое здание с балконами и арочным входом в Панама-Сити, Панама"
 - day: 12
@@ -327,7 +327,7 @@ itinerary:
 
     На этом 12-дневная программа завершается.
   images:
-  - src: /media/destinations/panama-city/gallery-3-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-3-enhanced-20261023-v2.webp
     alt: "Разноцветные рыболовные лодки у берега Панама-Сити"
     hover: "Панама-Сити: рыболовные лодки на берегу рядом с домами"
 included:

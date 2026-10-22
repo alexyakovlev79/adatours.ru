@@ -29,8 +29,13 @@ function stub(key,raw,url){
   }
   if(key==='search')return '<div id="site-search" data-site-shell="search" hidden></div>';
   if(key==='footer'){
-    const meta=element(raw,'div','<div class="footer__meta"');if(!meta)throw Error('Footer metadata changed');
-    return `<footer class="footer" data-site-shell="footer" data-pagefind-ignore="all"><nav aria-label="Навигация в подвале">${navigation}</nav>${meta.raw}</footer>`;
+    // The footer has separate navigation, contact, legal and credit sections.
+    // Preserve useful SSR fallback content before the shared fragment loads.
+    const contact=element(raw,'div','<div class="footer__contact"');
+    const legal=element(raw,'div','<div class="footer__legal"');
+    const credit=element(raw,'div','<div class="footer__credit"');
+    if(!contact||!legal||!credit)throw Error('Footer contact, legal or credit markup changed');
+    return `<footer class="footer" data-site-shell="footer" data-pagefind-ignore="all"><nav aria-label="Навигация в подвале">${navigation}</nav>${contact.raw}${legal.raw}${credit.raw}</footer>`;
   }
   if(key==='cookie')return '<div data-site-shell="cookie" hidden></div>';
   throw Error('Unknown shared site-shell part: '+key);

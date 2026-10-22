@@ -55,7 +55,7 @@ itinerary:
     \ также посетите частный зоосад и ботанический сад «Эль Нисперо».\n\n**Обед:** в стоимость экскурсии не входит. Гид подскажет\
     \ рестораны на месте.  \n**Канопи-тур:** оплачивается дополнительно."
   images:
-  - src: /media/destinations/el-valle-de-anton/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/el-valle-de-anton/gallery-1-enhanced-20261023-v2.webp
     alt: "Группа людей у каменистого ручья среди деревьев в Эль-Валле, Панама"
     hover: "Эль-Валле в Панаме: люди отдыхают у ручья в тени деревьев"
 - excursionRef: excursion_panama_chorro_del_macho_canopy

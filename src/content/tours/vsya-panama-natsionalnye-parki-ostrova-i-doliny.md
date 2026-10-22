@@ -159,7 +159,7 @@ itinerary:
     \nОбед в этот день не включен. Гид порекомендует рестораны на месте. Канопи-тур оплачивается дополнительно.\n\nПо окончании\
     \ экскурсии - трансфер в отель."
   images:
-  - src: /media/destinations/el-valle-de-anton/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/el-valle-de-anton/gallery-1-enhanced-20261023-v2.webp
     alt: "Группа людей у каменистого ручья среди деревьев в Эль-Валле, Панама"
     hover: "Эль-Валле в Панаме: люди отдыхают у ручья в тени деревьев"
 - excursionRef: excursion_panama_chorro_del_macho_canopy

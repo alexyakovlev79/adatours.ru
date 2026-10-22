@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/editorial/Hero.astro';
+import AboutNav from '../../components/commercial/AboutNav.astro';
+import AuthoritySection from '../../components/authority/AuthoritySection.astro';
+import AuthorityPartnerList from '../../components/authority/AuthorityPartnerList.astro';
+import AuthorityFaq from '../../components/authority/AuthorityFaq.astro';
+import AuthorityClosing from '../../components/authority/AuthorityClosing.astro';
+import AuthoritySearchRecord from '../../components/authority/AuthoritySearchRecord.astro';
+import authorityPages from '../../data/authority-pages.json';
+import { getAuthorityPageSources, getAuthorityPartners } from '../../lib/entity-authority.mjs';
+
+const page = authorityPages.partners;
+const sources = new Map(getAuthorityPageSources(page.path).map((source) => [source.id, source]));
+const partners = getAuthorityPartners().map((partner) => ({
+  ...partner,
+  sources: partner.sourceIds.map((id) => {
+    const source = sources.get(id);
+    if (!source) throw new Error(`Partner page is missing visible source: ${id}`);
+    return source;
+  }),
+}));
+const commercialPartners = partners.filter((partner) => partner.id !== 'organization_abav_rj');
+const professionalAssociations = partners.filter((partner) => partner.id === 'organization_abav_rj');
+const membership = page.sections[2];
+const breadcrumbs = [
+  { label: 'Главная', href: '/' },
+  { label: 'О нас', href: '/about/' },
+  { label: page.breadcrumbLabel, href: page.path },
+];
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  canonical={page.path}
+  image={page.heroImage}
+  leadTitle={page.leadTitle}
+  leadEntityId={page.leadEntityId}
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    eyebrow={page.eyebrow}
+    title={page.h1}
+    intro={page.lead}
+    image={page.heroImage}
+    ctaLabel={page.heroCta.label}
+    ctaHref={page.heroCta.href}
+    compact
+    compactCta
+    mobilePhotoLead
+    imagePositionMobile="65% center"
+    mediaStatus="approved"
+  />
+  <AboutNav active="partners" />
+  <AuthoritySearchRecord title={page.h1} summary={page.description} subtitle={page.searchSubtitle}
+    aliases={[...page.searchAliases, ...partners.map((partner) => partner.name)]} image={page.heroImage} />
+
+  <AuthoritySection section={page.sections[0]} />
+  <AuthorityPartnerList
+    id="international-partners"
+    eyebrow={page.sourcesEyebrow}
+    title={page.sourcesHeading}
+    intro={page.sourcesIntro}
+    partners={commercialPartners}
+    entries={page.sourceEntries}
+  />
+  <AuthorityPartnerList
+    id={membership.id}
+    eyebrow={membership.eyebrow}
+    title={membership.heading}
+    paragraphsMarkdown={membership.paragraphsMarkdown}
+    partners={professionalAssociations}
+    entries={page.sourceEntries}
+  />
+  <AuthoritySection section={page.sections[1]} />
+  <AuthorityFaq title={page.faqHeading} items={page.faq} />
+  <AuthorityClosing content={page.finalCta} />
+</BaseLayout>

@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/editorial/Hero.astro';
+import AboutNav from '../../components/commercial/AboutNav.astro';
+import AuthoritySection from '../../components/authority/AuthoritySection.astro';
+import AuthoritySourceList from '../../components/authority/AuthoritySourceList.astro';
+import AuthoritySpeaker from '../../components/authority/AuthoritySpeaker.astro';
+import AuthorityFaq from '../../components/authority/AuthorityFaq.astro';
+import AuthorityClosing from '../../components/authority/AuthorityClosing.astro';
+import AuthoritySearchRecord from '../../components/authority/AuthoritySearchRecord.astro';
+import authorityPages from '../../data/authority-pages.json';
+import { getAuthorityPageSources } from '../../lib/entity-authority.mjs';
+
+const page = authorityPages.webinars;
+const sources = getAuthorityPageSources(page.path);
+const webinars = page.sourceEntries.filter((entry) => !entry.displaySeparately);
+const interviews = page.sourceEntries.filter((entry) => entry.displaySeparately);
+const breadcrumbs = [
+  { label: 'Главная', href: '/' },
+  { label: 'О нас', href: '/about/' },
+  { label: page.breadcrumbLabel, href: page.path },
+];
+---
+
+<BaseLayout
+  title={page.title}
+  description={page.description}
+  canonical={page.path}
+  image={page.heroImage}
+  leadTitle={page.leadTitle}
+  leadEntityId={page.leadEntityId}
+  breadcrumbs={breadcrumbs}
+>
+  <Hero
+    eyebrow={page.eyebrow}
+    title={page.h1}
+    intro={page.lead}
+    image={page.heroImage}
+    ctaLabel={page.heroCta.label}
+    ctaHref={page.heroCta.href}
+    compact
+    compactCta
+    mobilePhotoLead
+    imagePositionMobile="75% center"
+    mediaStatus="approved"
+  />
+  <AboutNav active="webinars" />
+  <AuthoritySearchRecord title={page.h1} summary={page.description} subtitle={page.searchSubtitle}
+    aliases={[...page.searchAliases, ...sources.map((source) => source.publisher.name)]} image={page.heroImage} />
+
+  <AuthoritySection section={page.sections[0]} />
+  <AuthoritySpeaker section={page.sections[1]} speaker={page.speaker} />
+  <AuthoritySourceList
+    id="past-webinars"
+    eyebrow={page.sourcesEyebrow}
+    title={page.sourcesHeading}
+    intro={page.sourcesIntro}
+    sources={sources}
+    entries={webinars}
+  />
+  <AuthoritySourceList
+    id="interview"
+    eyebrow={page.interviewEyebrow}
+    title={page.interviewHeading}
+    sources={sources}
+    entries={interviews}
+  />
+  <AuthoritySection section={page.sections[2]} />
+  <AuthorityFaq title={page.faqHeading} items={page.faq} />
+  <AuthorityClosing content={page.finalCta} />
+</BaseLayout>

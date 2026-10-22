@@ -1,0 +1,50 @@
+---
+import AuthorityInline from './AuthorityInline.astro';
+import { withBase } from '../../lib/paths';
+import type { AuthoritySectionCopy } from './content';
+
+interface Props {
+  section: AuthoritySectionCopy;
+  speaker: { name: string; role: string; photo: string; photoAlt: string; href: string; linkLabel: string };
+}
+const { section, speaker } = Astro.props;
+---
+
+<section id={section.id} class="authority-speaker section" aria-labelledby={`${section.id}-title`}>
+  <div class="container authority-speaker__grid">
+    <figure>
+      <div class="authority-speaker__photo">
+        <img src={withBase(speaker.photo)} alt={speaker.photoAlt} width="1254" height="1254" loading="lazy" decoding="async" />
+      </div>
+      <figcaption><span>{speaker.name}</span><small>{speaker.role}</small></figcaption>
+    </figure>
+    <div class="authority-speaker__body">
+      <p class="eyebrow">{section.eyebrow}</p>
+      <h2 id={`${section.id}-title`}>{section.heading}</h2>
+      {section.paragraphsMarkdown.map((text) => <p class="authority-speaker__text"><AuthorityInline text={text} /></p>)}
+      <a class="authority-speaker__link" href={withBase(speaker.href)}>{speaker.linkLabel}<span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .authority-speaker { scroll-margin-top: calc(var(--header-h) + 24px); }
+  .authority-speaker__grid { display: grid; grid-template-columns: minmax(180px, 260px) minmax(0, 1fr); align-items: center; gap: clamp(28px, 5vw, 72px); }
+  figure { margin: 0; }
+  .authority-speaker__photo { display: block; }
+  .authority-speaker__photo img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+  figcaption { margin-top: 15px; }
+  figcaption span { display: block; font-family: var(--font-display); font-size: 1.05rem; }
+  figcaption small { display: block; margin-top: 5px; font-size: .82rem; line-height: 1.5; color: var(--color-text-muted); }
+  .authority-speaker__body { max-width: 800px; }
+  .eyebrow { margin: 0 0 14px; color: var(--color-brand-deep); }
+  h2 { margin: 0 0 22px; max-width: 26ch; font-size: clamp(1.9rem, 2.6vw, 2.85rem); line-height: 1.12; }
+  .authority-speaker__text { margin: 0 0 16px; color: var(--color-text-muted); }
+  .authority-speaker__link { display: inline-flex; gap: 12px; margin-top: 3px; font-size: .95rem; font-weight: 600; color: var(--color-brand-deep); text-decoration: underline; text-underline-offset: .2em; }
+  @media (max-width: 740px) {
+    .authority-speaker__grid { grid-template-columns: 1fr; gap: 25px; }
+    figure { display: grid; grid-template-columns: minmax(0, 170px) minmax(0, 1fr); align-items: end; gap: 20px; }
+    figcaption { margin: 0 0 5px; }
+  }
+  @media (max-width: 380px) { figure { grid-template-columns: 135px minmax(0, 1fr); gap: 14px; } }
+</style>

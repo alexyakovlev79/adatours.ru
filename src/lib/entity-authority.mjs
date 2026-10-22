@@ -24,6 +24,28 @@ export function getAuthoritySources(entityKey, { path, groups } = {}, data = reg
     && (!groups?.length || groups.includes(source.displayGroup)));
 }
 
+// Curated collections share their order and membership with the page template.
+// The renderer still independently requires every source URL to be visible.
+export function getAuthorityPageSources(path, data = registry) {
+  const page = data?.futurePages?.find((entry) => entry.path === path);
+  const sources = new Map(acceptedAuthoritySources(data).map((source) => [source.id, source]));
+  return [...new Set(page?.sourceIds || [])].map((id) => sources.get(id))
+    .filter((source) => source?.displayOn?.includes(path));
+}
+
+export function getAuthorityPartners(data = registry) {
+  const sources = new Map(acceptedAuthoritySources(data).map((source) => [source.id, source]));
+  return (data?.partners || []).filter((partner) => accepted(partner)
+    && partner.sourceIds?.length && partner.sourceIds.every((id) => sources.has(id)))
+    .map((partner) => {
+      const entity = data.entities?.[partner.entity];
+      if (!entity?.name || !https(entity.url) || !https(entity.schemaId)) return undefined;
+      return { id: partner.entity, name: entity.name, url: entity.url, schemaId: entity.schemaId,
+        role: partner.role, description: partner.description,
+        sourceIds: [...partner.sourceIds], sources: partner.sourceIds.map((id) => sources.get(id)) };
+    }).filter(Boolean);
+}
+
 export function getAuthorityEntity(entityKey, data = registry) {
   const sources = acceptedAuthoritySources(data);
   const ids = new Set(sources.map((source) => source.id));
@@ -47,10 +69,23 @@ export function getAuthorityEntity(entityKey, data = registry) {
   return fields;
 }
 
-export function getVisibleAuthoritySources(path, document = {}, data = registry) {
-  const visibleUrls = new Set([
+export function visibleAuthorityUrls(document = {}) {
+  return [...new Set([
     ...(document.links || []), ...(document.groups || []).flatMap((group) => group.links || []),
-  ].map((link) => typeof link === 'string' ? link : link.href));
-  return acceptedAuthoritySources(data).filter((source) => source.displayOn?.includes(path)
-    && visibleUrls.has(source.url));
+  ].map((link) => typeof link === 'string' ? link : link.href).filter(Boolean))];
+}
+
+export function getVisibleAuthoritySources(path, document = {}, data = registry) {
+  const sources = new Map(acceptedAuthoritySources(data)
+    .filter((source) => source.displayOn?.includes(path)).map((source) => [source.url, source]));
+  return visibleAuthorityUrls(document).map((url) => sources.get(url)).filter(Boolean);
+}
+
+export function getVisibleAuthorityPartners(path, document = {}, data = registry) {
+  if (path !== '/partners/') return [];
+  const visibleUrls = visibleAuthorityUrls(document);
+  const sources = new Set(getVisibleAuthoritySources(path, document, data).map((source) => source.id));
+  return getAuthorityPartners(data).filter((partner) => visibleUrls.includes(partner.url)
+    && partner.sourceIds.some((id) => sources.has(id)))
+    .sort((a, b) => visibleUrls.indexOf(a.url) - visibleUrls.indexOf(b.url));
 }

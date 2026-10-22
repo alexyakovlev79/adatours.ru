@@ -1,0 +1,38 @@
+---
+import AuthorityInline from './AuthorityInline.astro';
+import type { AuthoritySectionCopy } from './content';
+
+interface Props { section: AuthoritySectionCopy }
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="authority-section section" aria-labelledby={`${section.id}-title`}>
+  <div class="container authority-section__grid">
+    <header>
+      <p class="eyebrow">{section.eyebrow}</p>
+      <h2 id={`${section.id}-title`}>{section.heading}</h2>
+    </header>
+    <div class="authority-section__body">
+      {section.paragraphsMarkdown.map((text) => <p><AuthorityInline text={text} /></p>)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .authority-section { scroll-margin-top: calc(var(--header-h) + 24px); }
+  .authority-section__grid {
+    display: grid;
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1.25fr);
+    gap: clamp(28px, 5vw, 72px);
+    align-items: start;
+  }
+  .eyebrow { margin: 0 0 14px; color: var(--color-brand-deep); }
+  h2 { margin: 0; font-size: clamp(1.9rem, 2.6vw, 2.85rem); line-height: 1.12; }
+  .authority-section__body { max-width: 740px; }
+  .authority-section__body p { margin: 0 0 16px; color: var(--color-text-muted); }
+  .authority-section__body p:last-child { margin-bottom: 0; }
+  @media (max-width: 820px) {
+    .authority-section__grid { grid-template-columns: 1fr; gap: 22px; }
+    h2 { max-width: 28ch; }
+  }
+</style>

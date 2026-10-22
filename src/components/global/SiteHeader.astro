@@ -400,8 +400,9 @@ const nestedGroups = NAV_LINKS
         const opener = submenuOpener;
         setSubmenu('');
         requestAnimationFrame(() => opener?.focus());
-      } else {
+      } else if (toggle.getAttribute('aria-expanded') === 'true') {
         setOpen(false);
+        toggle.focus();
       }
     });
   }

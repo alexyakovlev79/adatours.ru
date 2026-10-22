@@ -1,0 +1,26 @@
+---
+import { withBase } from '../../lib/paths';
+
+interface Props {
+  title: string;
+  summary: string;
+  subtitle: string;
+  aliases?: string[];
+  image?: string;
+}
+const { title, summary, subtitle, aliases = [], image } = Astro.props;
+---
+
+<section class="authority-search-record" data-pagefind-body aria-hidden="true">
+  <span data-pagefind-meta="title" data-pagefind-filter="search_title">{title}</span>
+  <p data-pagefind-meta="summary">{summary}</p>
+  <span data-pagefind-meta="entity_type" data-pagefind-filter="entity_type">page</span>
+  <span data-pagefind-meta="type_label">О компании</span>
+  <span data-pagefind-meta="subtitle">{subtitle}</span>
+  {aliases.length > 0 && <span data-pagefind-meta="aliases">{[...new Set(aliases)].join(' | ')}</span>}
+  {image && <span data-pagefind-meta="image[data-search-image]" data-search-image={withBase(image)}></span>}
+</section>
+
+<style>
+  .authority-search-record { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); white-space: nowrap; border: 0; pointer-events: none; }
+</style>

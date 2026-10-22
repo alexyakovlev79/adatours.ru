@@ -1,0 +1,33 @@
+---
+import InlineMarkdown from '../global/InlineMarkdown.astro';
+import { withBase } from '../../lib/paths';
+
+interface Props { text: string }
+const { text } = Astro.props;
+const parts: Array<{ text: string; href?: string }> = [];
+// Editorial copy supports internal links and anchors. All text remains escaped.
+const links = /\[([^\]]+)\]\((\/(?!\/)[^\s)]*|#[A-Za-z][\w-]*)\)/g;
+let cursor = 0;
+for (const match of text.matchAll(links)) {
+  const start = match.index ?? 0;
+  if (start > cursor) parts.push({ text: text.slice(cursor, start) });
+  parts.push({ text: match[1], href: match[2] });
+  cursor = start + match[0].length;
+}
+if (cursor < text.length) parts.push({ text: text.slice(cursor) });
+---
+
+<span class="authority-inline">{parts.map((part) => part.href
+  ? <a href={withBase(part.href)}><InlineMarkdown text={part.text} /></a>
+  : <InlineMarkdown text={part.text} />)}</span>
+
+<style>
+  .authority-inline a {
+    color: var(--color-brand-deep);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--color-brand-deep) 38%, transparent);
+    text-underline-offset: .2em;
+    text-decoration-thickness: 1px;
+  }
+  .authority-inline a:hover { text-decoration-color: currentColor; }
+</style>

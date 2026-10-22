@@ -29,11 +29,12 @@ const { active } = Astro.props;
 
   .about-nav {
     display: flex;
+    flex-wrap: wrap;
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
     margin-inline: auto;
     padding: 0 clamp(4px, 1vw, 16px);
     justify-content: center;
-    gap: clamp(28px, 4.5vw, 78px);
+    gap: 0 clamp(16px, 2.5vw, 40px);
     border-bottom: 1px solid var(--color-line);
   }
 
@@ -57,8 +58,13 @@ const { active } = Astro.props;
   }
 
   .about-nav a:hover,
+  .about-nav a:focus-visible,
   .about-nav a[aria-current='page'] {
     color: var(--color-ink);
+  }
+
+  .about-nav a:focus-visible {
+    outline-offset: -4px;
   }
 
   .about-nav a[aria-current='page']::after {
@@ -71,13 +77,14 @@ const { active } = Astro.props;
     background: var(--color-gold);
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 1000px) {
     .about-nav-shell {
       border-bottom: 1px solid var(--color-line);
       overflow: hidden;
     }
 
     .about-nav {
+      flex-wrap: nowrap;
       width: 100%;
       padding: 0;
       justify-content: flex-start;

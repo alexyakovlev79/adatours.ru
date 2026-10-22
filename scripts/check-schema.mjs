@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { inspectHtml } from '../src/lib/structured-data-html.mjs';
 import { hasType, types, logicalPath, cleanText, SCHEMA_VERSION } from '../src/lib/structured-data.mjs';
+import { getAuthorityPageSources, getAuthorityPartners, getVisibleAuthoritySources, getVisibleAuthorityPartners } from '../src/lib/entity-authority.mjs';
 import { isArchivedPath } from '../src/lib/archive.mjs';
 import { validateDirectAssetLedger } from './lib/direct-media-ledger.mjs';
 const output = 'dist';
@@ -75,7 +76,12 @@ for (const file of files.sort()) {
       assert.equal(nodes.filter((n) => hasType(n, 'TouristTrip') || hasType(n, 'Offer')).length, 0, 'Redirect is not another product');
       report.redirects++;
     } else {
-      assert.equal(nodes.filter((n) => hasType(n, 'Organization')).length, 1, 'One organization');
+      const companyId = 'https://adatours.ru/#organization';
+      assert.equal(nodes.filter((n) => hasType(n, 'Organization') && n['@id'] === companyId).length, 1, 'One canonical Ada Tours organization');
+      assert.deepEqual(nodes.filter((n) => hasType(n, 'Organization') && n['@id'] !== companyId)
+        .map((n) => n['@id']).sort(),
+      getVisibleAuthorityPartners(inferredPath, inspected.facts).map((partner) => partner.schemaId).sort(),
+      'Only visible, evidence-backed partner organizations receive separate nodes');
       assert.equal(nodes.filter((n) => hasType(n, 'WebSite')).length, 1, 'One website');
       assert.ok(page.description, 'Page description');
       assert.equal(inspected.metadata.ogUrl, canonical, 'Open Graph URL equals canonical');
@@ -217,6 +223,32 @@ for (const file of files.sort()) {
       assert.deepEqual(list.itemListElement.map((n) => n.url), [...new Set(group.links.map((n) => n.href))], 'Actual card URLs and order');
       assert.equal(page.mainEntity?.['@id'], list['@id'], 'CollectionPage is connected to its list');
       report.catalogPages++;
+    }
+    const authoritySources = getAuthorityPageSources(inferredPath);
+    if (authoritySources.length && !inspected.metadata.redirect) {
+      assert.ok(hasType(page, 'CollectionPage'), 'Authority index uses CollectionPage');
+      const visibleSources = getVisibleAuthoritySources(inferredPath, inspected.facts);
+      const visibleIds = new Set(visibleSources.map((source) => source.id));
+      for (const source of authoritySources) assert.ok(visibleIds.has(source.id), `Authority source is visible: ${source.id}`);
+      const list = byId.get(`${canonical}#authority-list`);
+      assert.ok(list && hasType(list, 'ItemList'), 'Authority index has its own ItemList');
+      assert.equal(page.mainEntity?.['@id'], list['@id'], 'Authority list is the page main entity');
+      const partners = getVisibleAuthorityPartners(inferredPath, inspected.facts);
+      const expected = inferredPath === '/partners/' ? partners.map((partner) => partner.url)
+        : visibleSources.filter((source) => source.kind === (inferredPath === '/webinars/' ? 'event' : 'article'))
+          .map((source) => source.url);
+      assert.deepEqual(list.itemListElement.map((item) => item.url), expected, 'Authority list follows visible links and their order');
+      assert.deepEqual(list.itemListElement.map((item) => item.position), expected.map((_, index) => index + 1), 'Authority list positions');
+      if (inferredPath === '/partners/') {
+        assert.equal(partners.length, getAuthorityPartners().length, 'Every partner has a visible homepage and supporting source');
+        for (const source of authoritySources.filter((source) => source.kind === 'directory')) {
+          const directory = byId.get(source.url + '#webpage');
+          assert.ok(directory && hasType(directory, 'CollectionPage'), 'Generic partner directory stays a CollectionPage');
+          assert.ok(directory.mentions?.some((item) => item['@id'] === 'https://adatours.ru/#organization'), 'Directory mentions Ada Tours');
+          assert.ok(!byId.get('https://adatours.ru/#organization').sameAs?.includes(source.url), 'Generic directory is not an identity URL');
+          assert.equal(directory.mainEntity, undefined, 'A multi-company directory does not have Ada Tours as its sole main entity');
+        }
+      }
     }
     const main = byId.get(page.mainEntity?.['@id']);
     const mainType = main ? types(main).join('+') : 'WebPage only';

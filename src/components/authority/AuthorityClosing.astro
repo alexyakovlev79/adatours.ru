@@ -1,0 +1,28 @@
+---
+import PrimaryCTA from '../global/PrimaryCTA.astro';
+
+interface Props {
+  content: { eyebrow: string; title: string; text: string; label: string; href: string };
+}
+const { content } = Astro.props;
+---
+
+<section class="authority-closing section" aria-labelledby="authority-closing-title">
+  <div class="container authority-closing__inner">
+    <div>
+      <p class="eyebrow">{content.eyebrow}</p>
+      <h2 id="authority-closing-title">{content.title}</h2>
+      <p class="authority-closing__text">{content.text}</p>
+    </div>
+    <PrimaryCTA href={content.href} label={content.label} />
+  </div>
+</section>
+
+<style>
+  .authority-closing__inner { display: grid; grid-template-columns: minmax(0, 760px) auto; align-items: center; justify-content: space-between; gap: 28px 48px; padding-top: clamp(28px, 4vw, 48px); border-top: 1px solid var(--color-line); }
+  .eyebrow { margin: 0 0 14px; color: var(--color-brand-deep); }
+  h2 { margin: 0; font-size: clamp(1.9rem, 2.6vw, 2.85rem); line-height: 1.12; }
+  .authority-closing__text { max-width: 650px; margin: 20px 0 0; color: var(--color-text-muted); }
+  .authority-closing__inner :global(.cta) { max-width: 340px; min-width: 0; }
+  @media (max-width: 900px) { .authority-closing__inner { grid-template-columns: 1fr; justify-items: start; } }
+</style>

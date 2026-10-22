@@ -26,6 +26,9 @@ export const ABOUT_NAV_LINKS = [
   { id: 'team', href: '/team/', label: 'Команда' },
   { id: 'reviews', href: '/reviews/', label: 'Отзывы' },
   { id: 'cases', href: '/cases/', label: 'Кейсы' },
+  { id: 'press', href: '/press/', label: 'СМИ' },
+  { id: 'webinars', href: '/webinars/', label: 'Вебинары' },
+  { id: 'partners', href: '/partners/', label: 'Партнеры' },
 ] as const;
 
 export const NAV_LINKS = [

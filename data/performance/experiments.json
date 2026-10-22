@@ -693,7 +693,7 @@
       "id": "P06",
       "kind": "optimization",
       "date": "2026-10-22",
-      "status": "published_measurements_blocked_google_verification",
+      "status": "complete",
       "authorization": "User explicitly requests 20 new photo pages plus homepage, three successful Mobile runs each before and after, apply crops and publish. Ordinary failures must be retried; no desktop runs requested.",
       "hypothesis": "Visual semantic focus with deterministic 3:4 crops reduces mobile hero image transfer; measure changes independently from file bytes.",
       "scope": "20 exact page/source pairs and four homepage covers at <=479 CSS px; homepage top video unchanged.",
@@ -714,11 +714,11 @@
       },
       "excludedInitialBaseline": "58 completed reports excluded as DRIFT after a concurrent shared-header publication; complete baseline restarted.",
       "nextCycleRequiresDiscussion": true,
-      "validRuns": 85,
+      "validRuns": 126,
       "excluded": {
         "DRIFT": 58,
-        "ERROR_IMAGE": 1,
-        "ERROR_OR_INCOMPLETE_ATTEMPTS": 8
+        "ERROR_IMAGE": 2,
+        "ERROR_OR_INCOMPLETE_ATTEMPTS": 11
       },
       "beforeSourceCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
       "beforeSuccessfulDeployRun": 39810582959,
@@ -737,22 +737,217 @@
           "tests": 297,
           "failed": 0,
           "pages": 6132
+        },
+        "journal": {
+          "rawBefore": "313:440",
+          "rawAfter": "441:507",
+          "summary": "85:126",
+          "changes": "11",
+          "validBefore": 63,
+          "validAfter": 63,
+          "nativeFormulasVerified": 714,
+          "numericDifferences": 0,
+          "dateFormatsAndStatusValidationVerified": true
         }
       },
       "sourceCommit": "31717fae385a8dc43794fbd167695aac572c6d3b",
       "successfulDeployRun": 39815531276,
       "validBefore": 63,
-      "validAfter": 42,
+      "validAfter": 63,
       "preliminaryExcluded": 6,
-      "continuation": "Third Google suspicious-traffic challenge; one ordinary reload did not clear it. Two active reports and19 queued jobs retained. No further Google requests until the check clears.",
+      "continuation": null,
       "excludedImageErrors": 2,
-      "afterPauseHtmlStable": 21,
       "protocolAmendment": {
         "userInstruction": "сейчас параллельный чат опять пееопубликует сайт: не надо перезапускать все замеры, посчитаем, что изменений значимых нет",
         "decision": "Continue the existing before/after sample across the upcoming concurrent publication, treating its changes as immaterial by user decision. Do not restart or reclassify completed valid measurements solely for this publication.",
         "limitation": "The after series can span published versions; do not attribute every performance change solely to the crop. Crop sourceCommit identifies implementation publication, not an independently verified exact version used by each Google worker.",
         "initialBaselineExclusion": "The earlier58-report excluded baseline remains historical. The user instruction concerns the new upcoming publication; the already-complete63-run before baseline is retained."
-      }
+      },
+      "completedAt": "2026-10-22T20:33:06.773Z",
+      "finalPublicVerification": {
+        "checkedPages": 21,
+        "selectedHeroesConnected": 20,
+        "homepageCoversConnected": 4,
+        "pagesWithChangedHtml": 21,
+        "acceptedConcurrentPublication": true,
+        "pages": [
+          {
+            "pageId": "p01",
+            "publicSha256": "883a7fde7d115a723dff8471a424744344cf4a29020313ccde67f6f7dd72e208",
+            "initialAfterSha256": "9e103a3394b16c9c8e29d3adad181746d47c0ad34c88db63d7b9878d9c50d997",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:20.066649+00:00"
+          },
+          {
+            "pageId": "p02",
+            "publicSha256": "838bf074e6fe6970dc4630234dc0d34cd338ccb50f9996a99c664529d0dff68f",
+            "initialAfterSha256": "e98b31706ec4117d339e6d595c210ded32529a1f73116af6d2ccc8fd64a685b7",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:20.064220+00:00"
+          },
+          {
+            "pageId": "p03",
+            "publicSha256": "788df3ad4ec241a4f5146c6ef5aa965c4a6f8679598e9f5483c7c363db1b6771",
+            "initialAfterSha256": "62bbda5a15e55f200892b68f7345ee9c63ed4a08ac1e0479dd741666071767e2",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:20.101282+00:00"
+          },
+          {
+            "pageId": "p04",
+            "publicSha256": "f07fd0a996ae92290f07333640d8bea0b0216591633f1a244f35225fa5c06605",
+            "initialAfterSha256": "9ac99b4759bfdb4dcf17a1c830b7c3559e3ec52288a59bd7814e7f1154be00fd",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:20.210605+00:00"
+          },
+          {
+            "pageId": "p05",
+            "publicSha256": "176d5335bab42a262425314bc102ba367ffe4c8f8efe7e727741524b43db75b4",
+            "initialAfterSha256": "8165906a8e9ff2ba439a5e33b6221e347c5ebbbdadc23ef491a12e84ec4b4b1c",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:19.992213+00:00"
+          },
+          {
+            "pageId": "p06",
+            "publicSha256": "07fbf48f95955583b7f087fb23c7a84d5bf7e13d2c040dfda4f4092ed3bcfaa2",
+            "initialAfterSha256": "92628922b3a6e621efcc2b7a6d392954b2f11c11c74691b926be5ff20d539410",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:25.255447+00:00"
+          },
+          {
+            "pageId": "p07",
+            "publicSha256": "8e34a0385f5aa43a8c343cac5c9f6d3e760e296cde55668620ccb1b539f0fcb7",
+            "initialAfterSha256": "95b21e6a13deb467c89e07edf8cb09fea5b365a3434a95c82f7c9fb134cb8fb8",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:25.155126+00:00"
+          },
+          {
+            "pageId": "p08",
+            "publicSha256": "4e44d359132be9a48f4108a508711fa17ddcbec8844abaed1f54b883a38fd253",
+            "initialAfterSha256": "dc94a413e55533f5e21fe9de8602fe9020b29054f80d9728b9bac50d9aa8d6de",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:25.212811+00:00"
+          },
+          {
+            "pageId": "p09",
+            "publicSha256": "2f4ce12f6073455b3d925148844683f4c47ec96950e879c25e7399fffc4aace1",
+            "initialAfterSha256": "8f31042e87db44d9bff8507d9afee00389b8fd4d24cba0de4a1eb91c90de0c2b",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:25.252481+00:00"
+          },
+          {
+            "pageId": "p10",
+            "publicSha256": "732ddded6556fc686f549928c2c25a32e6a2490943f91ca7a31c0d1b5adb67df",
+            "initialAfterSha256": "1e174761bb5d7858bb8dcabb5eb58af77bdc05287916797a69076264c6c22526",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:25.210978+00:00"
+          },
+          {
+            "pageId": "p11",
+            "publicSha256": "30f20a0b3a11631d9413d89c198dfe41ce4a6100d1bb0a00c0ea077227956c48",
+            "initialAfterSha256": "5c529d4ce8f481c4022e4b3440012bbb0ae73905c9a6c515e93ff7844494841c",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:30.338284+00:00"
+          },
+          {
+            "pageId": "p12",
+            "publicSha256": "ac1398b0c47ae86239dd65d8509d3bb230a244822f49805102f05d3a17922009",
+            "initialAfterSha256": "87f9eebcb57948ade62b3302f22e246d9f2de4addb7bed9755be176ad5c9bb2c",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:30.334765+00:00"
+          },
+          {
+            "pageId": "p13",
+            "publicSha256": "a4c8694bac781275acf66a4ef41e285e8b994bdb44a3b3d51a4902f368d9be7c",
+            "initialAfterSha256": "7d99286bd0bd3d56d74d1056d51062815e6b6e1b3141768d8113aaa6cd66f616",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:30.448346+00:00"
+          },
+          {
+            "pageId": "p14",
+            "publicSha256": "77a33b6d5cb6bcc7386944dd5b3544eb5ec90ec4c4f8a02e0da3523cb864ff39",
+            "initialAfterSha256": "89d5b90c8f6903dd58d809403c0f041d2b1de62e9a3a7cdfc251e1d178d89dc5",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:30.489398+00:00"
+          },
+          {
+            "pageId": "p15",
+            "publicSha256": "bfe8832425e7e1c636f26f99ba5833a1813674046a8831d8d64dc077308b4797",
+            "initialAfterSha256": "11b69793ab7b46e23bb11b320e5913a11451193c04e2bfe1a1f3bbccb5981d2e",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:30.368430+00:00"
+          },
+          {
+            "pageId": "p16",
+            "publicSha256": "56c92a292df965416d029996c417dc38a510b20f3c63bb406bc0a46df219b158",
+            "initialAfterSha256": "6c2b52661586270a959586f421449e2bf355bfaf10e376105c39148cbc040042",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:35.572183+00:00"
+          },
+          {
+            "pageId": "p17",
+            "publicSha256": "4ec53e1fe58a74d7eef22f9a741f6ae6b3446e9b2dc2040c0410a749089a396e",
+            "initialAfterSha256": "d0597f5f0e395f3c05addb33f6132d6aa44f00eba464aaa3efcb0f864165550e",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:35.650584+00:00"
+          },
+          {
+            "pageId": "p18",
+            "publicSha256": "6f673e115ffc5351267097974d351bf616295e77d15b64d9feb56ba7d57c298b",
+            "initialAfterSha256": "ac7c0b8c2a42fcd2d41f047add6406fbac2c03309f24fef4ef24799d75cc4566",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:35.573307+00:00"
+          },
+          {
+            "pageId": "p19",
+            "publicSha256": "8b0a795389ece8ab077f097aa8d04a4e67ee0c98424f415a23c8501acd24e08b",
+            "initialAfterSha256": "dd2713f56f999101e89ff384d69d7e38705ba8e2776c87d025c9b162bbbe3bdf",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:35.661395+00:00"
+          },
+          {
+            "pageId": "p20",
+            "publicSha256": "bbbafd830373419c62c3ffa594c9c7501e20ca87972c6505177aa41272478880",
+            "initialAfterSha256": "99dd94b4109d3b9eedd82410d57ef0c1244fba7aac55a14993c5c9327bc5836d",
+            "changed": true,
+            "allVariantsConnected": true,
+            "capturedAt": "2026-10-22T20:31:35.572042+00:00"
+          },
+          {
+            "pageId": "home",
+            "publicSha256": "14c96b484fff77340bf92ad4d9e787d95349d1fb5fa1ad27c7e99cd9881e87ca",
+            "initialAfterSha256": "44597ae958fb78a527f56345b87c5f20504ef578a5f22b67ece386baf9901dd4",
+            "changed": true,
+            "mobileCoversConnected": [
+              "p05",
+              "p06",
+              "p07",
+              "p17"
+            ],
+            "capturedAt": "2026-10-22T20:31:40.192821+00:00"
+          }
+        ]
+      },
+      "decision": "Retain published crops. Largest20 portrait files -75.34%; median performance improves on16/20, decreases on3/20, unchanged on1/20. LCP medians decrease on20/20; median paired relative change-17.72%. Score ranges overlap on15/20. Homepage69→83. Later concurrent publication accepted as immaterial by explicit user instruction; do not isolate all timing effects to crop or start a new experiment automatically.",
+      "intermediateAfterPauseHtmlStable": 21
     }
   ]
 }

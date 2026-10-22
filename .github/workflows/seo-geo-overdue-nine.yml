@@ -1,0 +1,35 @@
+name: Publish overdue SEO/GEO batch
+
+on:
+  push:
+    branches:
+      - seo-geo/staging
+    paths:
+      - data/seo-geo/release-dispatch/overdue-nine-20261022.json
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: seo-geo-overdue-nine-20261022
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: seo-geo/staging
+          fetch-depth: 0
+          persist-credentials: true
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Publish frozen approved articles and confirm Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SEO_DISPATCH_SHA: ${{ github.sha }}
+        run: node scripts/seo-geo-overdue-nine-release.mjs

@@ -2,41 +2,51 @@
 import { MICE_NAV_LINKS } from '../../lib/site';
 import { withBase } from '../../lib/paths';
 
-interface Props {
-  active: (typeof MICE_NAV_LINKS)[number]['id'];
-}
-
+interface Props { active: (typeof MICE_NAV_LINKS)[number]['id']; }
 const { active } = Astro.props;
+const current = MICE_NAV_LINKS.find((link) => link.id === active) ?? MICE_NAV_LINKS[0];
 ---
 
 <div class="mice-nav-shell" data-pagefind-ignore>
   <nav class="mice-nav" aria-label="Раздел MICE">
     {MICE_NAV_LINKS.map((link) => (
-      <a
-        href={withBase(link.href)}
-        aria-current={active === link.id ? 'page' : undefined}
-      >
+      <a href={withBase(link.href)} aria-current={active === link.id ? 'page' : undefined}>
         {link.label}
       </a>
     ))}
   </nav>
+  <nav class="mice-nav-mobile" aria-label="Раздел MICE">
+    <details>
+      <summary>
+        <span class="mice-nav-mobile__current">
+          <small>MICE · Разделы</small>
+          <strong>{current.label}</strong>
+        </span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6" /></svg>
+      </summary>
+      <div class="mice-nav-mobile__links">
+        {MICE_NAV_LINKS.map((link) => (
+          <a href={withBase(link.href)} aria-current={active === link.id ? 'page' : undefined}>
+            {link.label}
+            {active === link.id && <span aria-hidden="true">✓</span>}
+          </a>
+        ))}
+      </div>
+    </details>
+  </nav>
 </div>
 
 <style>
-  .mice-nav-shell {
-    background: var(--color-bg);
-  }
-
+  .mice-nav-shell { background: var(--color-bg); }
   .mice-nav {
     display: flex;
     width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
     margin-inline: auto;
     padding: 0 clamp(4px, 1vw, 16px);
     justify-content: center;
-    gap: clamp(48px, 9vw, 140px);
+    gap: clamp(30px, 5vw, 90px);
     border-bottom: 1px solid var(--color-line);
   }
-
   .mice-nav a {
     position: relative;
     display: inline-flex;
@@ -54,12 +64,8 @@ const { active } = Astro.props;
     text-transform: uppercase;
     transition: color 180ms ease;
   }
-
   .mice-nav a:hover,
-  .mice-nav a[aria-current='page'] {
-    color: var(--color-ink);
-  }
-
+  .mice-nav a[aria-current='page'] { color: var(--color-ink); }
   .mice-nav a[aria-current='page']::after {
     content: '';
     position: absolute;
@@ -67,36 +73,74 @@ const { active } = Astro.props;
     bottom: -1px;
     left: 0;
     height: 3px;
-    background: var(--color-gold);
+    background: var(--color-brand-deep);
   }
-
-  @media (max-width: 620px) {
-    .mice-nav-shell {
+  .mice-nav-mobile { display: none; }
+  @media (max-width: 1020px) {
+    .mice-nav-shell { border-bottom: 1px solid var(--color-line); }
+    .mice-nav { display: none; }
+    .mice-nav-mobile {
+      display: block;
+      width: min(calc(100% - (var(--gutter) * 2)), var(--container-max));
+      margin-inline: auto;
+    }
+    .mice-nav-mobile summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 74px;
+      padding-block: 12px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .mice-nav-mobile summary::-webkit-details-marker { display: none; }
+    .mice-nav-mobile__current { display: grid; gap: 5px; min-width: 0; }
+    .mice-nav-mobile small {
+      color: var(--color-text-muted);
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .mice-nav-mobile strong {
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    .mice-nav-mobile svg { flex: 0 0 auto; transition: transform 180ms ease; }
+    .mice-nav-mobile details[open] summary svg { transform: rotate(180deg); }
+    .mice-nav-mobile__links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 22px;
+      padding: 4px 0 20px;
+      border-top: 1px solid var(--color-line);
+    }
+    .mice-nav-mobile__links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      min-height: 50px;
+      padding: 11px 0;
       border-bottom: 1px solid var(--color-line);
+      font-family: var(--font-display);
+      font-size: clamp(.87rem, 2vw, 1rem);
+      line-height: 1.25;
+      color: var(--color-ink);
     }
-
-    .mice-nav {
-      width: 100%;
-      padding: 0;
-      gap: 0;
-      border: 0;
-    }
-
-    .mice-nav a {
-      flex: 1 1 0;
-      min-height: 64px;
-      padding: 14px 10px;
-      font-size: .69rem;
-      letter-spacing: .035em;
-    }
-
-    .mice-nav a + a {
-      border-left: 1px solid var(--color-line);
-    }
-
-    .mice-nav a[aria-current='page']::after {
-      right: 10px;
-      left: 10px;
-    }
+    .mice-nav-mobile__links a[aria-current='page'] { color: var(--color-brand-deep); font-weight: 600; }
+    .mice-nav-mobile summary:focus-visible,
+    .mice-nav-mobile__links a:focus-visible { outline: 2px solid var(--color-brand-deep); outline-offset: 3px; }
+  }
+  @media (max-width: 420px) {
+    .mice-nav-mobile__links { grid-template-columns: 1fr; }
+    .mice-nav-mobile summary { min-height: 68px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .mice-nav-mobile svg { transition: none; }
   }
 </style>

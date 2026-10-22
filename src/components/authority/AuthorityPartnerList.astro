@@ -28,7 +28,24 @@ const copyForSource = new Map(entries.map((entry) => [entry.sourceId, entry]));
       {partners.map((partner) => (
         <article id={copyForSource.get(partner.sources[0]?.id)?.anchorId} class="authority-partners__item">
           <div class="authority-partners__identity">
-            <p class="authority-partners__role">{partner.role}</p>
+            <div class="authority-partners__role-line">
+              <span class="authority-partners__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                  {partner.id === 'organization_abav_rj' ? (
+                    <>
+                      <path d="m12 2 9 4v6c0 5.5-3.6 8.7-9 10-5.4-1.3-9-4.5-9-10V6z" />
+                      <path d="m8 12 2.5 2.5L16 9" />
+                    </>
+                  ) : (
+                    <>
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M3 12h18 M12 3c-5 4.5-5 13.5 0 18 M12 3c5 4.5 5 13.5 0 18" />
+                    </>
+                  )}
+                </svg>
+              </span>
+              <p class="authority-partners__role">{partner.role}</p>
+            </div>
             <h3><a href={partner.url} target="_blank" rel="external noopener noreferrer">{partner.name}<span aria-hidden="true">↗</span></a></h3>
           </div>
           <div class="authority-partners__body">
@@ -67,7 +84,19 @@ const copyForSource = new Map(entries.map((entry) => [entry.sourceId, entry]));
   .authority-partners__intro p:last-child { margin-bottom: 0; }
   .authority-partners__list { border-top: 1px solid var(--color-line); }
   .authority-partners__item { padding-block: 30px; border-bottom: 1px solid var(--color-line); }
-  .authority-partners__role { margin: 0 0 12px; color: var(--color-brand-deep); font-size: .8rem; font-weight: 600; }
+  .authority-partners__role-line { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; }
+  .authority-partners__icon {
+    display: grid;
+    place-items: center;
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid color-mix(in srgb, var(--color-brand-deep) 25%, var(--color-line));
+    border-radius: 50%;
+    color: var(--color-brand-deep);
+  }
+  .authority-partners__icon svg { width: 21px; height: 21px; }
+  .authority-partners__role { margin: 0; color: var(--color-brand-deep); font-size: .8rem; font-weight: 600; }
   h3 { margin: 0; font-size: clamp(1.5rem, 2vw, 2rem); line-height: 1.18; }
   h3 a:hover { color: var(--color-brand-deep); }
   h3 a span { display: inline-block; margin-left: 12px; font-size: 1.1rem; color: var(--color-brand-deep); }

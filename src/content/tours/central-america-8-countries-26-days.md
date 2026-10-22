@@ -542,7 +542,7 @@ itinerary:
   - Панама-Сити
   text: После завтрака трансфер в аэропорт Сан-Хосе и перелет в Панаму. По прибытии трансфер в отель в Панама-Сити.
   images:
-  - src: /media/destinations/panama-city/gallery-4-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-4-enhanced-20261023-v2.webp
     alt: Высотные здания и гавань в сумерках, Панама-Сити, Панама
     hover: 'Панама-Сити, Панама: высотные здания и гавань в сумерках'
 - day: 25

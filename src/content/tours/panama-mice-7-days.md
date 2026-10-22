@@ -79,7 +79,7 @@ itinerary:
     В течение дня с вами работает англоговорящий транспортный координатор. Для каждого участника подготовим по 3
     бутылки воды.'
   images:
-  - src: /media/destinations/panama-city/gallery-4-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-4-enhanced-20261023-v2.webp
     alt: Высотные здания и гавань в сумерках, Панама-Сити, Панама
 - day: 2
   label: 13 сентября · пример программы

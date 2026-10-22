@@ -143,7 +143,7 @@ itinerary:
     отдыха и прогулок. В назначенное время — индивидуальный трансфер в международный аэропорт Токумен. Окончание
     обслуживания.
   images:
-  - src: /media/destinations/panama-city/gallery-4-enhanced-20261005.webp
+  - src: /media/destinations/panama-city/gallery-4-enhanced-20261023-v2.webp
     alt: Высотные здания и гавань в сумерках, Панама-Сити, Панама
     hover: 'Панама-Сити, Панама: высотные здания и гавань в сумерках'
 included:

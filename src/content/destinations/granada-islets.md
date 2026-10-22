@@ -8,9 +8,8 @@ countryId: country_nicaragua
 destinationType: natural_area
 summary: 'Зеленые островки на озере Никарагуа у Гранады: лодочные проходы, птицы и виды в сторону вулкана Момбачо.'
 hero:
-  src: /media/tours/vip-kosta-rika-nikaragua/lake-nicaragua-place-generated-20261009-v1.webp
-  alt: "Зеленые островки озера Никарагуа на фоне горы Момбачо"
-  hover: "Озеро Никарагуа: небольшие лесистые острова и гора на горизонте"
+  src: "/media/destinations/granada-islets/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Островки Гранады — Лас-Ислетас — иллюстрация"
 gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []

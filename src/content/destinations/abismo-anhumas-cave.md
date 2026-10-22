@@ -15,9 +15,9 @@ searchAliases:
 - "Абисмо-Аньюмас"
 themes: ["theme_adventure", "theme_nature"]
 hero:
-  src: /media/tours/brazil-adventure-17d/highlights/07-abismo-anhumas-enhanced-20260930.webp
-  hover: "Аньюмас: лучи света над подземным озером"
-  alt: "Солнечные лучи из отверстия в своде над голубым подземным озером и сталактитами пещеры Аньюмас"
+  src: /media/destinations/abismo-anhumas-cave/hero-generated-20261021-dedup50-v1.webp
+  hover: Бездна Аньюмас — иллюстрация
+  alt: Бездна Аньюмас — иллюстрация
 gallery: [{"src":"/media/tours/brazil-adventure-17d/highlights/anhumas-descent-generated-20261011-dedup-v1.webp","alt":"Спуск по веревке в пещеру Аньюмас через отверстие в своде, Бонито, Бразилия","hover":"Аньюмас в Бразилии: страховочная веревка под светлым входом в глубокую пещеру"}]
 relatedDestinations: []
 featuredTours: []
@@ -25,7 +25,7 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_peschera_abismo_anhumas.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-21'
 ---
 
 Аньюмас входит в природные маршруты района Бонито в Бразилии. Подземное озеро и каменные формы пещеры выделяют эту остановку среди прогулок по рекам и лесным тропам.

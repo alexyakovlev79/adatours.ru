@@ -11,9 +11,9 @@ searchAliases:
 - dolina-skal-alota
 themes: ["theme_nature"]
 hero:
-  src: /media/destinations/destination_bolivia_dolina_skal_alota/hero-generated-20261008.webp
-  alt: "Выветренные каменные останцы на сухой равнине у Алоты, Боливия"
-  hover: "Алота в Боливии: причудливые скалы перед дальними горными хребтами"
+  src: /media/destinations/valley-of-rocks-alota/hero-generated-20261021-dedup50-v1.webp
+  alt: Долина Скал (Алота) — иллюстрация
+  hover: Долина Скал (Алота) — иллюстрация
 gallery: []
 relatedDestinations: []
 featuredTours: []
@@ -21,7 +21,7 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_dolina_skal_alota.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-21'
 ---
 
 Долина Скал у Алоты включена в высокогорное путешествие по Боливии. Это одна из природных остановок маршрута через пустынные участки и лагуны юго-запада страны.

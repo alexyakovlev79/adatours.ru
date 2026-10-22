@@ -12,9 +12,9 @@ searchAliases:
 - ozero-grej
 themes: ["theme_nature"]
 hero:
-  src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp
-  hover: "Ледник Грей: ледяной фронт под пасмурными горами"
-  alt: "Голубая стена ледника Грей и льдины на темной воде озера, Чили"
+  src: /media/destinations/lake-grey/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Озеро Грей — новая обложка"
+  alt: "Озеро Грей — иллюстрация"
 gallery: []
 relatedDestinations: []
 featuredTours: []

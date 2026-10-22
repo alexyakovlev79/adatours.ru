@@ -502,8 +502,9 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
 <style>
   .itinerary {
-    color: var(--color-bg);
-    background: var(--color-ink-deep);
+    --itinerary-gold: #86620f; /* Same gold accent, dark enough for a light surface. */
+    color: var(--color-ink);
+    background: var(--color-surface-gray);
     /* The pricing section starts directly after the final itinerary row. */
     padding-bottom: 0;
   }
@@ -566,7 +567,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   }
 
   .day__number {
-    color: var(--color-gold);
+    color: var(--itinerary-gold);
     font-family: var(--font-display);
     font-size: .9rem;
     letter-spacing: .08em;
@@ -598,18 +599,18 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
   .day__content p {
     margin-top: 0;
-    color: rgba(255,255,255,.74);
+    color: rgb(26 26 26 / 80%);
   }
 
   .day__places {
-    color: var(--color-gold) !important;
+    color: var(--itinerary-gold) !important;
     font-size: .78rem !important;
     letter-spacing: .08em;
     text-transform: uppercase;
   }
 
   .day__excursion-link {
-    color: var(--color-gold);
+    color: var(--itinerary-gold);
     text-decoration: underline;
     text-underline-offset: .2em;
   }
@@ -617,12 +618,12 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   .day__subsection {
     margin-top: 28px;
     padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,.16);
+    border-top: 1px solid var(--color-line);
   }
 
   .day__subsection h3 {
     margin: 0 0 14px;
-    color: var(--color-gold);
+    color: var(--itinerary-gold);
     font-family: var(--font-display);
     font-size: clamp(1.1rem, 1rem + .45vw, 1.45rem);
     line-height: 1.2;
@@ -642,7 +643,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
   .day__content-block--section h3,
   .day__embedded-excursion h3 {
     margin: 0 0 14px;
-    color: var(--color-gold);
+    color: var(--itinerary-gold);
     font-family: var(--font-display);
     font-size: clamp(1.1rem, 1rem + .45vw, 1.45rem);
     line-height: 1.2;
@@ -650,7 +651,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
   .day__embedded-excursion :global(.excursion-embed__body p) {
     margin-top: 0;
-    color: rgba(255,255,255,.74);
+    color: rgb(26 26 26 / 80%);
   }
 
   .day__embedded-excursion :global(.excursion-embed__body p:last-child) {

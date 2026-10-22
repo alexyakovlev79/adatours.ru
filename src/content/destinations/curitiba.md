@@ -9,9 +9,9 @@ destinationType: city
 summary: >-
   Куритиба в штате Парана интересна городским планированием, зелеными зонами и архитектурой. В маршрут можно включить Руа-дас-Флорес, Руа-24-Орас, Оперу-ди-Арами и музей Оскара Нимейера.
 hero:
-  src: /media/destinations/curitiba/hero-enhanced-20261001.webp
-  hover: "Куритиба: стеклянные купола оранжереи"
-  alt: "Стеклянная оранжерея с белыми арками и округлыми куполами в Куритибе, Бразилия"
+  src: /media/destinations/curitiba/hero-generated-20261021-dedup50-v1.webp
+  hover: Куритиба — иллюстрация
+  alt: Куритиба — иллюстрация
 gallery: []
 relatedDestinations:
   - destination_brazil_florianopolis
@@ -41,7 +41,7 @@ featureBands:
     image: /media/destinations/curitiba/featureBands-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-kuritiba-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-brazilskij-gorod-kuritiba-braziliya__fe5474a6.md
-updatedAt: 2026-09-25
+updatedAt: '2026-10-21'
 themes: ["theme_culture"]
 ---
 

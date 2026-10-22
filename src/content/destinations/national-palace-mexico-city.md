@@ -9,10 +9,9 @@ destinationType: route_cluster
 summary: Национальный дворец занимает восточную сторону Сокало; посещение внутренних помещений зависит от режима
   доступа.
 hero:
-  src: /media/destinations/destination_mexico_mexico_city_zocalo/hero-generated-20261010-twenty-v1.webp
-  alt: "Мексиканский флаг на площади Сокало перед собором и Национальным дворцом, Мехико"
-  hover: "Мехико: флаг над площадью Сокало у собора и дворца"
-  status: approved
+  src: "/media/destinations/national-palace-mexico-city/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Национальный дворец Мехико — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

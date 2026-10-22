@@ -43,7 +43,7 @@ const syllabifyFormat = (value: string) => value.replace(/[а-яё]+/giu, (word)
 });
 ---
 
-<section class="stats" data-variant={variant}>
+<section class="stats" data-variant={variant} data-count={stats.length}>
   <div class="stats__inner" data-count={stats.length} style={`--stats-count: ${stats.length}`}>
     {stats.map((stat) => (
       <div class:list={['stat', { 'stat--format': stat.kind === 'format' }]}>
@@ -175,6 +175,12 @@ const syllabifyFormat = (value: string) => value.replace(/[а-яё]+/giu, (word)
       padding-block: 18px;
     }
 
+    /* Compact the crossed 2x2 grid without changing 1-2 fact layouts. */
+    .stats[data-variant="default"][data-count="3"],
+    .stats[data-variant="default"][data-count="4"] {
+      padding-block: 10px;
+    }
+
     .stats__inner {
       --stat-value-size: clamp(1.65rem, 7vw, 2rem);
       position: relative;
@@ -218,10 +224,17 @@ const syllabifyFormat = (value: string) => value.replace(/[а-яё]+/giu, (word)
       border: 0;
     }
 
+    .stats[data-variant="default"] .stats__inner[data-count="3"] .stat,
+    .stats[data-variant="default"] .stats__inner[data-count="4"] .stat {
+      min-height: 96px;
+      padding: 10px 12px;
+    }
+
     .stats__inner[data-count="3"] .stat strong,
     .stats__inner[data-count="4"] .stat strong {
       display: flex;
-      min-height: 1.9em;
+      min-height: 1.2em;
+      margin-bottom: 6px;
       align-items: flex-end;
     }
 

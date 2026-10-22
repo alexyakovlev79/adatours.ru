@@ -9,9 +9,9 @@ destinationType: island
 summary: Чилоэ — остров на юге Чили с рыбацкими поселениями, деревянной архитектурой и морскими традициями. С материка
   сюда прибывают на пароме через пролив Чакао.
 hero:
-  src: /media/tours/south-america-luxury-33-days/ancud-gpt-20261011-v1.webp
-  hover: "Анкуд: пушка над гаванью и прибрежными городскими кварталами"
-  alt: "Старинная пушка на каменной стене над заливом Анкуда, остров Чилоэ, Чили"
+  src: /media/destinations/chiloe-island/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Остров Чилоэ — новая обложка"
+  alt: "Остров Чилоэ — иллюстрация"
 gallery: []
 themes: ["theme_culture"]
 searchAliases:

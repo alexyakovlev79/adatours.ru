@@ -12,9 +12,9 @@ searchAliases:
 - laguna-chaksa
 themes: ["theme_wildlife", "theme_nature"]
 hero:
-  src: /media/destinations/destination_chile_laguna_chaksa/hero-generated-20261008-resumed-v1.webp
-  hover: "Чакса в Чили: фламинго на фоне пустынных гор"
-  alt: "Розовые фламинго на мелководье лагуны Чакса среди соляной корки, Чили"
+  src: /media/destinations/laguna-chaxa/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Лагуна Чакса — новая обложка"
+  alt: "Лагуна Чакса — иллюстрация"
 gallery: []
 relatedDestinations: []
 featuredTours: []

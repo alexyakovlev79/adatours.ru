@@ -9,9 +9,8 @@ destinationType: natural_area
 summary: Лесные тропы и смотровая башня над кронами деревьев возле Гамбоа. Центр помогает познакомиться с птицами
   и природой тропического леса.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/discovery-generated-20261010-p036-v1.webp
-  hover: "Гамбоа: тропический лес со смотровой площадки"
-  alt: "Перила смотровой площадки над густым зеленым пологом тропического леса у Гамбоа, Панама"
+  src: "/media/destinations/panama-rainforest-discovery-center/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Центр изучения тропического леса Панамы — иллюстрация"
 gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 searchAliases:

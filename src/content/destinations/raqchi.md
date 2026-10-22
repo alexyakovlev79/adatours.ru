@@ -9,9 +9,8 @@ destinationType: natural_area
 summary: Археологический комплекс к югу от Куско, известный монументальной стеной храма Виракочи и круглыми складскими
   постройками.
 hero:
-  src: /media/tours/tur-v-peru-i-braziliyu/raqchi-place-generated-20261008.webp
-  hover: "Ракчи: сохранившаяся стена храма и каменные основания колонн"
-  alt: "Высокая стена храма Виракочи среди руин Ракчи перед горами, Перу"
+  src: "/media/destinations/raqchi/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Ракчи — иллюстрация"
 gallery: []
 themes:
 - theme_culture

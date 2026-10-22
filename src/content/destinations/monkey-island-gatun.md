@@ -8,9 +8,8 @@ countryId: country_panama
 destinationType: island
 summary: Лодочная прогулка из Гамбоа к лесным берегам Гатуна. Здесь наблюдают за обезьянами в их естественной среде.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-10-20261010-enhanced-20261011-pass2324-v1.webp
-  hover: "Белолицые обезьяны в зеленой листве"
-  alt: "Две белолицые обезьяны с темной шерстью среди густых зеленых ветвей"
+  src: "/media/destinations/monkey-island-gatun/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Остров обезьян на озере Гатун — иллюстрация"
 gallery: []
 themes:
 - theme_wildlife

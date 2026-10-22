@@ -8,9 +8,9 @@ countryId: country_chile
 destinationType: natural_area
 summary: Аху-Тонгарики — археологическая платформа острова Пасхи с пятнадцатью восстановленными моаи.
 hero:
-  src: /media/destinations/ahu-tongariki/hero-generated-20261009-v3.webp
-  hover: "Аху-Тонгарики: статуи моаи на фоне моря и вулканического побережья"
-  alt: "Ряд каменных моаи Аху-Тонгарики у океанского берега, остров Пасхи, Чили"
+  src: /media/destinations/ahu-tongariki/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Аху-Тонгарики — новая обложка"
+  alt: "Аху-Тонгарики — иллюстрация"
 gallery: []
 themes:
 - theme_culture

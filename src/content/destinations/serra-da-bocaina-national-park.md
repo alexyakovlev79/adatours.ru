@@ -12,9 +12,9 @@ searchAliases:
 - nacionalnyj-park-serra-da-bokajna
 themes: ["theme_nature", "theme_adventure"]
 hero:
-  src: /media/destinations/destination_brazil_trindadi_parati/hero-generated-20261008-next20.webp
-  hover: "Триндади у Парати: бирюзовая вода между прибрежными валунами"
-  alt: "Прозрачный природный бассейн среди гранитных валунов и тропического леса, Триндади, Бразилия"
+  src: /media/destinations/serra-da-bocaina-national-park/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Национальный парк Серра-да-Бокайна — новая обложка"
+  alt: "Национальный парк Серра-да-Бокайна — иллюстрация"
 gallery: []
 relatedDestinations: []
 featuredTours: []

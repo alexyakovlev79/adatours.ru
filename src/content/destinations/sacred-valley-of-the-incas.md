@@ -9,9 +9,8 @@ destinationType: region
 summary: Священная долина инков в Перу объединяет горные пейзажи, сельскохозяйственные террасы и исторические поселения возле
   Куско.
 hero:
-  src: /media/tours/manyashchij-peru-kolumbiya/sacred-valley-place-generated-20261009-v1.webp
-  hover: "Священная долина: извилистая река между сельскими поселениями и Андами"
-  alt: "Река Урубамба среди полей и гор Священной долины инков, Перу"
+  src: "/media/destinations/sacred-valley-of-the-incas/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Священная долина инков — иллюстрация"
 gallery:
 - {"src":"/media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/sacred-valley-crafts-generated-20261009-v1.webp","alt":"Мастерица ткёт полосатую ткань у окна с видом на горы, Священная долина инков, Перу","hover":"Священная долина инков, Перу: мастерица ткёт полосатую ткань у окна с видом на горы"}
 themes:

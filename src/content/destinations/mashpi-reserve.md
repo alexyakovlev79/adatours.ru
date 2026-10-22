@@ -8,9 +8,8 @@ countryId: country_ecuador
 destinationType: natural_area
 summary: Машпи — район облачного леса к северо-западу от Кито. Программы здесь посвящены прогулкам среди влажной растительности и наблюдению за природой лесных склонов.
 hero:
-  src: /media/destinations/mashpi-reserve/hero-generated-20261009-root-v1.webp
-  hover: "Машпи: тропа среди папоротников и деревьев над туманной долиной"
-  alt: "Узкая лесная тропа и влажные зеленые склоны заповедника Машпи, Эквадор"
+  src: "/media/destinations/mashpi-reserve/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Заповедник Машпи — иллюстрация"
 gallery: []
 themes: ["theme_nature"]
 facts: []

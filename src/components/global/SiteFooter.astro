@@ -37,8 +37,8 @@ import { ORG } from '../../data/organization/ada-tours';
 <style>
   .footer {
     padding: clamp(24px, 3vw, 40px) var(--gutter) 36px;
-    color: var(--color-bg);
-    background: var(--color-ink-deep);
+    color: var(--color-ink);
+    background: var(--color-surface);
   }
 
   .footer__top {
@@ -47,7 +47,7 @@ import { ORG } from '../../data/organization/ada-tours';
     align-items: end;
     gap: 48px;
     padding-bottom: var(--section-y-tight);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid var(--color-line);
   }
 
   .footer h2 {
@@ -55,7 +55,7 @@ import { ORG } from '../../data/organization/ada-tours';
     margin: 12px 0 0;
   }
 
-  /* Primary conversion action on the dark footer, styled as a real CTA. */
+  /* Primary conversion action on the light footer, styled as a real CTA. */
   .footer__request {
     display: inline-flex;
     align-items: center;
@@ -66,8 +66,8 @@ import { ORG } from '../../data/organization/ada-tours';
     padding: 18px 24px;
     border: 1px solid var(--cta-border);
     border-radius: var(--radius-cta);
-    color: var(--color-bg);
-    background: var(--cta-fill-dark);
+    color: var(--color-ink);
+    background: var(--cta-fill-light);
     font-family: var(--font-display);
     font-size: 0.86rem;
     font-weight: 600;
@@ -78,11 +78,11 @@ import { ORG } from '../../data/organization/ada-tours';
 
   .footer__request:hover {
     border-color: var(--cta-border-hover);
-    background: var(--cta-fill-dark-hover);
+    background: var(--cta-fill-light-hover);
   }
 
   .footer__request:focus-visible {
-    outline: 2px solid var(--color-bg);
+    outline: 2px solid var(--color-brand-deep);
     outline-offset: 4px;
   }
 
@@ -108,7 +108,7 @@ import { ORG } from '../../data/organization/ada-tours';
 
   .footer__meta {
     justify-content: flex-end;
-    color: rgba(255,255,255,.6);
+    color: var(--color-text-muted);
   }
 
   .footer__meta p {
@@ -119,22 +119,22 @@ import { ORG } from '../../data/organization/ada-tours';
   .footer__credit {
     margin-top: clamp(20px, 2.5vw, 32px);
     padding-top: 18px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid var(--color-line);
     text-align: center;
     font-size: 0.76rem;
   }
 
   .footer__credit a {
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--color-text-muted);
   }
 
   .footer__credit a:hover {
-    color: var(--color-bg);
+    color: var(--color-ink);
     text-decoration: underline;
   }
 
   .footer__credit a:focus-visible {
-    outline: 2px solid var(--color-bg);
+    outline: 2px solid var(--color-brand-deep);
     outline-offset: 4px;
   }
 

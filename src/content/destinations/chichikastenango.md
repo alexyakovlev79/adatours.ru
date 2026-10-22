@@ -9,9 +9,8 @@ destinationType: city
 summary: "Торговый городок в 120 км от столицы Гватемалы. По четвергам и воскресеньям здесь работает рынок «Чичи» с ремесленными изделиями и сувенирами."
 searchAliases: []
 hero:
-  src: "/media/destinations/chichicastenango/hero-enhanced-20261003.webp"
-  hover: "Чичикастенанго: узорчатые ткани и яркие сумки на рыночном прилавке"
-  alt: "Разноцветные тканые сумки и изделия на рынке Чичикастенанго, Гватемала"
+  src: "/media/destinations/chichikastenango/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Чичикастенанго — иллюстрация"
 gallery:
 - src: /media/destinations/chichicastenango/gallery-1-enhanced-20261003.webp
   alt: "Стопки ярких полосатых тканей на рынке Чичикастенанго, Гватемала"

@@ -68,7 +68,7 @@ const payload = data ? {
             {entityType === 'destination' && point.isPrimary
               ? <strong aria-current="page">{point.name}</strong>
               : <a href={point.href}>{point.name}</a>}
-            {point.days?.length > 0 && <small>Дни: {point.days.join(', ')}</small>}
+            {point.days?.length > 0 && <small>{point.days.length === 1 ? 'День' : 'Дни'}: {point.days.join(', ')}</small>}
           </li>
         ))}
       </ol>

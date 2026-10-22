@@ -11,9 +11,9 @@ searchAliases:
 - bom-zhardim
 themes: ["theme_wildlife", "theme_nature"]
 hero:
-  src: /media/destinations/destination_brazil_bom_zhardim/hero-generated-20261008-resumed.webp
-  hover: "Бом-Жардим: лесной водоем с видимым каменистым дном"
-  alt: "Прозрачная бирюзовая вода и деревянный настил среди леса Бом-Жардима, Бразилия"
+  src: /media/destinations/bom-jardim/hero-generated-20261021-dedup50-v1.webp
+  hover: Бом-Жардим — иллюстрация
+  alt: Бом-Жардим — иллюстрация
 gallery: []
 relatedDestinations: []
 featuredTours: []
@@ -21,7 +21,7 @@ featuredExcursions: []
 featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_bom_zhardim.md
-updatedAt: '2026-10-08'
+updatedAt: '2026-10-21'
 ---
 
 Бом-Жардим находится в переходной зоне между саванной и амазонским дождевым лесом. Район известен прозрачными реками, озерами и пещерами.

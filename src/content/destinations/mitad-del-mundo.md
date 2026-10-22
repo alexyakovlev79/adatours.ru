@@ -9,9 +9,8 @@ destinationType: route_cluster
 summary: Митад-дель-Мундо — культурно-туристический комплекс к северу от Кито, посвящённый экватору и геодезической
   истории Эквадора. Центральный монумент увенчан металлическим шаром.
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-04-20261009-v1-enhanced-20261011-doc-v1.webp
-  hover: "Митад-дель-Мундо: пара на желтой линии перед монументом"
-  alt: "Пара целуется у монумента Митад-дель-Мундо на линии экватора, Эквадор"
+  src: "/media/destinations/mitad-del-mundo/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Митад-дель-Мундо — иллюстрация"
 gallery: []
 themes:
 - theme_culture

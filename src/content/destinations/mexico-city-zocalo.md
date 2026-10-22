@@ -8,7 +8,9 @@ countryId: "country_mexico"
 destinationType: "natural_area"
 summary: "Сокало, площадь Конституции в Мехико, окружена кафедральным собором и Национальным дворцом. Отсюда удобно начать прогулку по историческому центру столицы."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_mexico_mexico_city_zocalo/hero-generated-20261010-twenty-v1.webp", "alt": "Мексиканский флаг на площади Сокало перед собором и Национальным дворцом, Мехико", "hover": "Мехико: флаг над площадью Сокало у собора и дворца"}
+hero:
+  src: "/media/destinations/mexico-city-zocalo/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Сокало Мехико — иллюстрация"
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

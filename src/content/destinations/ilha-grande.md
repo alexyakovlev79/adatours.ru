@@ -9,9 +9,9 @@ destinationType: island
 summary: >-
   Илья-Гранди подходит для нескольких дней без автомобиля: по острову передвигаются пешком и на лодках, а поездку строят вокруг пляжей, бухт, дайвинга и маршрутов через Атлантический лес.
 hero:
-  src: /media/destinations/ilha-grande/hero-enhanced-20261001.webp
-  hover: "Илья-Гранди: лодка на спокойной синей воде у гористого острова"
-  alt: "Парусная лодка у зеленых берегов острова Илья-Гранди, Бразилия"
+  src: /media/destinations/ilha-grande/hero-generated-20261021-dedup50-v1.webp
+  hover: Илья-Гранди — иллюстрация
+  alt: Илья-Гранди — иллюстрация
 gallery:
   - src: /media/destinations/ilha-grande/gallery-1-enhanced-20261001.webp
     alt: "Лесистые горы, прибрежный посёлок и бухта Илья-Гранди, Бразилия"
@@ -47,7 +47,7 @@ featureBands:
     image: /media/destinations/ilha-grande/gallery-2-enhanced-20261001.webp
 sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi__6bfbc8fb.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-21'
 themes: ["theme_beach", "theme_diving", "theme_adventure", "theme_nature"]
 ---
 

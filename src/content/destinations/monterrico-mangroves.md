@@ -9,9 +9,8 @@ destinationType: natural_area
 summary: Водные каналы среди переплетенных корней и зеленых крон показывают другую сторону тихоокеанского побережья
   Гватемалы.
 hero:
-  src: /media/tours/discover-guatemala-8-days/mangroves-generated-20261010-p037-v1.webp
-  alt: "Человек в лодке на спокойном мангровом канале Монтеррико, Гватемала"
-  hover: "Монтеррико в Гватемале: лодка между зелеными берегами и переплетенными мангровыми корнями"
+  src: "/media/destinations/monterrico-mangroves/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Мангровые заросли Монтеррико — иллюстрация"
 gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_guatemala_monterrico_mangroves.md

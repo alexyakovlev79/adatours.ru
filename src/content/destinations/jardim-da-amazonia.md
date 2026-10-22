@@ -14,12 +14,12 @@ searchAliases:
 - Jardim da Amazônia
 themes: ["theme_nature"]
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-1-20261010-enhanced-20261011-doc-v1.webp
-  alt: "Каменистая тропа среди густой зелени и стволов тропического леса"
-  hover: "Узкая лесная тропа между деревьями, лианами и папоротниками"
+  src: /media/destinations/jardim-da-amazonia/hero-generated-20261021-dedup50-v1.webp
+  alt: Лодж «Жардим-да-Амазония» — иллюстрация
+  hover: Лодж «Жардим-да-Амазония» — иллюстрация
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_jardim_da_amazonia.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-21'
 ---
 
 ## Лес и вода южной Амазонии

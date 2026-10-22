@@ -388,10 +388,11 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
     }
   }
 
-  /* On selected phone covers, keep the subject above the copy and fade into ink. */
+  /* On selected phone covers, keep the subject above the copy and fade into a light surface. */
   @media (max-width: 720px) {
     .hero--photo-lead {
-      background: var(--color-ink-deep);
+      color: var(--color-ink);
+      background: var(--color-surface-gray);
     }
 
     .hero--photo-lead .hero__media {
@@ -406,8 +407,8 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
         180deg,
         rgb(15 16 14 / 16%) 0%,
         rgb(15 16 14 / 4%) 46%,
-        rgb(19 20 18 / 42%) 70%,
-        var(--color-ink-deep) 100%
+        rgb(241 242 240 / 94%) 70%,
+        var(--color-surface-gray) 100%
       );
     }
 
@@ -415,6 +416,20 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
       justify-content: flex-start;
       padding-top: max(calc(var(--header-h) + 140px), 66vw);
       padding-bottom: 30px;
+    }
+
+    .hero--photo-lead .hero__bottom p {
+      color: var(--color-text-muted);
+    }
+
+    .hero.hero--photo-lead :global(.cta) {
+      color: var(--color-ink);
+      background: var(--cta-fill-light);
+      text-shadow: none;
+    }
+
+    .hero.hero--photo-lead :global(.cta:hover) {
+      background: var(--cta-fill-light-hover);
     }
 
     .hero--photo-lead h1 {

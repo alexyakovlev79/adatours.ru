@@ -8,9 +8,8 @@ countryId: country_guatemala
 destinationType: natural_area
 summary: Вулкан Пакайя в Гватемале, вулканический комплекс с несколькими конусами и пешими маршрутами по горным склонам.
 hero:
-  src: /media/tours/luchshee-v-gvatemale/pacaya-place-generated-20261009-v1.webp
-  hover: "Пакайя: вулканический склон и тропа среди застывшей лавы"
-  alt: "Тропа по черному лавовому полю к темному конусу вулкана Пакайя под облаками, Гватемала"
+  src: "/media/destinations/pacaya-volcano/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Вулкан Пакайя — иллюстрация"
 gallery: []
 themes: ["theme_adventure", "theme_nature"]
 searchAliases:

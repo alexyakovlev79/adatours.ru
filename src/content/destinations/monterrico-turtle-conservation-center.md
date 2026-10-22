@@ -9,9 +9,8 @@ destinationType: natural_area
 summary: 'Знакомство с охраной морских черепах на тихоокеанском берегу: от сохранения яиц до возвращения маленьких
   черепах в океан.'
 hero:
-  src: /media/tours/discover-guatemala-8-days/turtles-generated-20261010-p037-v1.webp
-  alt: "Маленькие морские черепахи на темном песке перед океаном на закате"
-  hover: "Морские черепахи ползут по песчаному берегу к полосе прибоя"
+  src: "/media/destinations/monterrico-turtle-conservation-center/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Центр охраны черепах Монтеррико — иллюстрация"
 gallery: []
 themes: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_monterrico_turtle_conservation_center.md

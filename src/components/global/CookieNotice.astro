@@ -53,9 +53,9 @@ const privacyUrl = withBase('/privacy/');
     align-items: center;
     width: min(390px, calc(100vw - 36px));
     padding: 16px 16px 16px 18px;
-    color: var(--color-bg);
-    background: rgb(19 20 18 / 96%);
-    border: 1px solid rgb(255 255 255 / 14%);
+    color: var(--color-ink);
+    background: rgb(255 255 255 / 98%);
+    border: 1px solid var(--color-line);
     box-shadow: 0 16px 40px rgb(0 0 0 / 24%);
     backdrop-filter: blur(10px);
   }
@@ -71,7 +71,7 @@ const privacyUrl = withBase('/privacy/');
   }
 
   .cookie-notice a {
-    color: var(--color-gold);
+    color: var(--color-brand-deep);
     text-decoration: underline;
     text-underline-offset: 3px;
   }
@@ -79,8 +79,8 @@ const privacyUrl = withBase('/privacy/');
   .cookie-notice button {
     min-height: 40px;
     padding: 9px 14px;
-    color: var(--color-bg);
-    background: var(--cta-fill-dark);
+    color: var(--color-ink);
+    background: var(--cta-fill-light);
     border: 1px solid var(--cta-border);
     border-radius: var(--radius-cta);
     cursor: pointer;
@@ -89,7 +89,7 @@ const privacyUrl = withBase('/privacy/');
 
   .cookie-notice button:hover {
     border-color: var(--cta-border-hover);
-    background: var(--cta-fill-dark-hover);
+    background: var(--cta-fill-light-hover);
   }
 
   @media (max-width: 520px) {

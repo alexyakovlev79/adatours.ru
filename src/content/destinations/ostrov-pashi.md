@@ -9,9 +9,9 @@ destinationType: "island"
 summary: "Остров Пасхи: статуи моаи, Аху Тонгарики, вулкан Рано-Рараку, пляж Анакена и знакомство с культурой островитян."
 searchAliases: []
 hero:
-  src: /media/countries/chile/featureBands-3-enhanced-20261002.webp
-  hover: "Остров Пасхи: ряд моаи на фоне закатного неба"
-  alt: "Силуэты ряда моаи перед низким солнцем на острове Пасхи, Чили"
+  src: /media/destinations/easter-island/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Остров Пасхи — новая обложка"
+  alt: "Остров Пасхи — иллюстрация"
 gallery:
   - src: "/media/destinations/ostrov-pashi/gallery-1-enhanced-20261005.webp"
     hover: "Остров Пасхи: зелёный берег и тёмные прибрежные скалы у океана"

@@ -9,7 +9,10 @@ destinationType: "city"
 summary: "В горах Серра-Гауша, на юге Бразилии, находится Грамаду — город, который удивляет с первого взгляда."
 searchAliases: ["gramadu"]
 themes: ["theme_culture", "theme_events", "theme_gastronomy_wine"]
-hero: {"src": "/media/destinations/destination_brazil_gramadu/original-01-20261010.jpg", "alt": "Светлое многоэтажное здание с декоративными фасадами, балконами и крутыми крышами", hover: "Здание с балконами и высокими островерхими крышами"}
+hero:
+  src: /media/destinations/gramado/hero-generated-20261021-dedup50-v1.webp
+  alt: Грамаду — иллюстрация
+  hover: Грамаду — иллюстрация
 gallery: [{"src": "/media/destinations/destination_brazil_gramadu/original-02-20261010.jpg", "alt": "Высокий водопад у лесистого склона в окрестностях Грамаду, Бразилия", hover: "Грамаду: водопад среди зеленых лесных холмов"}]
 facts: []
 featureBands: []
@@ -17,7 +20,7 @@ relatedDestinations: []
 featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_gramadu.md"
-updatedAt: '2026-10-11'
+updatedAt: '2026-10-21'
 ---
 
 Здесь бразильская природа встречается с европейским наследием: деревянные шале, ухоженные сады, уютные площади и архитектура с заметными немецкими и итальянскими мотивами создают совершенно необычный для страны облик.

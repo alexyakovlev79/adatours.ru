@@ -8,9 +8,9 @@ countryId: country_brazil
 destinationType: resort
 summary: 'Ангра-дус-Рейс на Коста-Верде подходит для отдыха у моря после Рио: острова и бухты, пляжи, катамараны, небольшие катера и яхты, спокойные отели и поездки по побережью.'
 hero:
-  src: /media/destinations/angra-dos-reis/hero-enhanced-20261001.webp
-  hover: "Ангра-дус-Рейс: зеленый остров с каменистым берегом, вид сверху"
-  alt: "Небольшой лесистый остров у Ангра-дус-Рейс в бирюзовом море, Бразилия"
+  src: /media/destinations/angra-dos-reis/hero-generated-20261021-dedup50-v1.webp
+  hover: Ангра-дус-Рейс — иллюстрация
+  alt: Ангра-дус-Рейс — иллюстрация
 gallery:
 - src: /media/destinations/angra-dos-reis/gallery-1-enhanced-20261001.webp
   hover: "Ангра-дус-Рейс: лодки у причала и дома на зелёном склоне"
@@ -50,7 +50,7 @@ featureBands:
   image: /media/tours/tropicheskij-karnaval-s-angroj-dush-rejsh/angra-10-generated-20261008.webp
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii__37f42b69.md
-updatedAt: 2026-09-24
+updatedAt: '2026-10-21'
 themes: ["theme_beach", "theme_nature"]
 ---
 

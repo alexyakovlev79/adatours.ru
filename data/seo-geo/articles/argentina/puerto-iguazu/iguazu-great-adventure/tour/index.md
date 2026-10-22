@@ -20,7 +20,7 @@ lead: "Gran Aventura у водопадов Игуасу объединяет п�
 
 Среди других маршрутов с прямой связью — [12-дневное путешествие через Патагонию и Игуасу](/multi-country/tour/argentina-buenos-aires-el-calafate-ushuaia-iguazu-12-days/) и [16-дневное исследование Аргентины](/argentina/tour/explore-argentina-16-days/). Сопоставляя их, обращайте внимание на количество дней у водопадов и на то, какой участок программы выделен под активную лодочную часть.
 
-{{catalog.tourTable:tour_source_neveroyatnaya_argentina,tour_argentina_best_14_days,tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu,tour_source_issledovanie_argentiny}}
+{{catalog.tourTable:tour_source_neveroyatnaya_argentina,tour_argentina_best_14_days,tour_source_issledovanie_argentiny}}
 
 ## Что происходит во время экскурсии
 

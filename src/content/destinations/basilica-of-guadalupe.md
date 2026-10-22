@@ -8,7 +8,9 @@ countryId: "country_mexico"
 destinationType: "natural_area"
 summary: "Святилище Девы Гваделупской в Мехико объединяет старую базилику и современный круглый храм. Это место паломничества и знакомства с религиозной культурой Мексики."
 searchAliases: []
-hero: {"src": "/media/destinations/mexico-city-and-teotihuacan/hero-enhanced-20261004.webp", "alt": "Историческая церковная архитектура святилища Гваделупы в Мехико", "hover": "Святилище Девы Гваделупской в Мехико объединяет старую базилику и современный круглый храм. Это место паломничества и знакомства с религиозной культурой Мексики."}
+hero:
+  src: "/media/destinations/basilica-of-guadalupe/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Сантуарио Гваделупы — иллюстрация"
 gallery: []
 themes: ["theme_culture"]
 relatedDestinations: []

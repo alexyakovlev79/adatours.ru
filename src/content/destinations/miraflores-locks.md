@@ -9,9 +9,8 @@ destinationType: natural_area
 summary: Посмотрите, как суда проходят через шлюзы Панамского канала. Центр посетителей Мирафлорес знакомит с историей
   канала и принципом его работы.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-4-20261010-enhanced-20261011-doc-v1.webp
-  hover: "Панамский канал: шлюзовые камеры и подходящие к ним суда"
-  alt: "Суда в шлюзах Панамского канала среди зеленых берегов, вид сверху"
+  src: "/media/destinations/miraflores-locks/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Шлюзы Мирафлорес — иллюстрация"
 gallery: []
 themes:
 - theme_culture

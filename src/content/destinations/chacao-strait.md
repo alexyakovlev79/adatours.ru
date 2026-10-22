@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: Пролив Чакао отделяет остров Чилоэ от материковой части Чили. Паромная переправа связывает берега и входит
   в автомобильный маршрут на остров.
 hero:
-  src: /media/tours/south-america-luxury-33-days/chacao-gpt-20261011-v1.webp
-  alt: "Автомобили на пароме в проливе Чакао между Чилоэ и материком, Чили"
-  hover: "Пролив Чакао в Чили: паромная палуба с машинами и встречное судно"
+  src: /media/destinations/chacao-strait/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Пролив Чакао — иллюстрация"
+  hover: "Пролив Чакао — новая обложка"
 gallery: []
 themes: ["theme_cruises", "theme_nature"]
 searchAliases:

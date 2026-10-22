@@ -8,9 +8,8 @@ countryId: country_guatemala
 destinationType: natural_area
 summary: Якша, древний город майя в гватемальском Петене, окружен тропическим лесом и лагунами. Здесь сохранились храмы, акрополи, площади и дороги, связывающие разные части поселения.
 hero:
-  src: /media/destinations/yaxha/hero-generated-20261008.webp
-  hover: "Якша: панорама озера и непрерывного зеленого леса"
-  alt: "Озеро Якша за густыми кронами тропического леса Петена, Гватемала"
+  src: "/media/destinations/yaxha/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Якша — иллюстрация"
 gallery: []
 themes: ["theme_culture", "theme_nature"]
 facts: []

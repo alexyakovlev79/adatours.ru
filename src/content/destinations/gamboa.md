@@ -9,9 +9,8 @@ destinationType: city
 summary: Две ночи среди тропической природы у Чагрес и Панамского канала. Из Гамбоа отправляются в Соберанию и на
   лодочные прогулки по Гатуну.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/gamboa-generated-20261010-p036-v1.webp
-  alt: "Речной причал у лесистых берегов Гамбоа, Панама"
-  hover: "Гамбоа в Панаме: тихая река, деревянный причал и тропическая зелень"
+  src: "/media/destinations/gamboa/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Гамбоа — иллюстрация"
 gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 searchAliases:

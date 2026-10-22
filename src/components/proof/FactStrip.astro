@@ -21,8 +21,8 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
   }
 
   .fact-strip--dark {
-    color: var(--color-bg);
-    background: var(--color-ink-deep);
+    color: var(--color-ink);
+    background: var(--color-surface-gray);
   }
 
   .fact-strip__inner {
@@ -48,7 +48,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
   }
 
   .fact-strip--dark .fact + .fact {
-    border-color: rgba(255,255,255,.18);
+    border-color: var(--color-line);
   }
 
   .fact strong {
@@ -99,7 +99,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
   }
 
   .fact-strip--dark .fact span {
-    color: rgba(255,255,255,.56);
+    color: var(--color-text-muted);
   }
 
   @media (max-width: 900px) and (min-width: 681px) {
@@ -148,7 +148,7 @@ const { facts, dark = false, wideFirst = false } = Astro.props;
 
     .fact-strip--dark .fact-strip__inner::before,
     .fact-strip--dark .fact-strip__inner::after {
-      background: rgba(255,255,255,.18);
+      background: var(--color-line);
     }
 
     .fact,

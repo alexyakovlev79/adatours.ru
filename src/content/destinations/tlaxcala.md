@@ -8,10 +8,9 @@ countryId: country_mexico
 destinationType: city
 summary: Тласкала, исторический город центральной Мексики с площадями, францисканским монастырем и святилищем Окотлан.
 hero:
-  src: /media/tours/mexico-religious-journey/tlaxcala-san-francisco-generated-20261011-v1.webp
-  alt: "Монастырь Сан-Франциско с аркадой и колокольней у зеленого двора, Тласкала, Мексика"
-  hover: "Тласкала: старинные каменные стены монастыря под деревьями"
-  status: approved
+  src: "/media/destinations/tlaxcala/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Тласкала — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

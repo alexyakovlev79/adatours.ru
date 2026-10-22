@@ -8,8 +8,8 @@ countryId: country_colombia
 destinationType: region
 summary: Район Медельина, где уличные росписи местных художников рассказывают о прошлом и переменах городской жизни.
 hero:
-  src: /media/destinations/comuna-13/hero-generated-20261015-y26-005-v1.webp
-  alt: Яркие муралы, открытый эскалатор и дома на склонах Коммуны 13 в Медельине, Колумбия
+  src: /media/destinations/comuna-13/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Коммуна 13 — иллюстрация"
 themes:
 - theme_culture
 relatedDestinations:

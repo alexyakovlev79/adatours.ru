@@ -223,7 +223,7 @@ const nestedGroups = NAV_LINKS
 
         <div class="mobile-menu__contact">
           <PrimaryCTA href="/contacts/" label="Оставить заявку" />
-          <ContactActions light />
+          <ContactActions />
         </div>
       </section>
 
@@ -442,11 +442,11 @@ const nestedGroups = NAV_LINKS
   }
 
   .site-header.is-open {
-    color: var(--color-bg);
+    color: var(--color-ink);
   }
 
   .site-header.is-open::before {
-    background: var(--color-ink-deep);
+    background: var(--color-surface);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
@@ -499,11 +499,11 @@ const nestedGroups = NAV_LINKS
   }
 
   .site-header.is-open .brand__logo--white {
-    display: block;
+    display: none;
   }
 
   .site-header.is-open .brand__logo--black {
-    display: none;
+    display: block;
   }
 
   .desktop-nav {
@@ -735,8 +735,8 @@ const nestedGroups = NAV_LINKS
       z-index: 1;
       display: block;
       overflow: hidden;
-      color: var(--color-bg);
-      background: var(--color-ink-deep);
+      color: var(--color-ink);
+      background: var(--color-surface);
       opacity: 0;
       visibility: hidden;
       transform: translateY(-10px);
@@ -774,7 +774,7 @@ const nestedGroups = NAV_LINKS
       overflow-x: hidden;
       overflow-y: auto;
       overscroll-behavior: contain;
-      background: var(--color-ink-deep);
+      background: var(--color-surface);
       transition: transform 300ms var(--ease-out);
     }
 
@@ -838,7 +838,7 @@ const nestedGroups = NAV_LINKS
 
     .mobile-menu__arrow {
       flex: 0 0 auto;
-      color: rgba(255,255,255,.62);
+      color: var(--color-text-muted);
       font-size: .9em;
       line-height: 1;
     }
@@ -850,7 +850,7 @@ const nestedGroups = NAV_LINKS
       gap: 9px;
       align-items: center;
       border: 0;
-      color: rgba(255,255,255,.72);
+      color: var(--color-text-muted);
       background: transparent;
       font-family: var(--font-display);
       font-size: .82rem;
@@ -891,8 +891,8 @@ const nestedGroups = NAV_LINKS
       max-width: 100%;
       min-width: 0;
       padding: 13px 0;
-      border-bottom: 1px solid rgba(255,255,255,.14);
-      color: rgba(255,255,255,.78);
+      border-bottom: 1px solid var(--color-line);
+      color: var(--color-ink);
       font-size: clamp(1.08rem, 4vw, 1.55rem);
       line-height: 1.15;
       white-space: normal;
@@ -900,7 +900,7 @@ const nestedGroups = NAV_LINKS
     }
 
     .mobile-menu__panel--submenu > nav > a.mobile-menu__overview {
-      color: var(--color-bg);
+      color: var(--color-ink);
       font-weight: 600;
     }
 

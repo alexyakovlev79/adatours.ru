@@ -9,10 +9,10 @@ destinationType: natural_area
 summary: Муниципалитет Сантьяго работает в историческом Паласио-Консисториаль у Пласа-де-Армас. Здание связано с
   городской властью и вместе с соседними фасадами почты и музея помогает представить, как развивалась столица.
 hero:
-  src: /media/tours/chile-argentina-private-grand-tour-17-days/plaza-generated-20261011-v1.webp
-  alt: "Пальмы и исторические фасады вокруг Пласа-де-Армас в Сантьяго, Чили"
+  src: /media/destinations/santiago-city-hall/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Муниципалитет Сантьяго — иллюстрация"
   status: approved
-  hover: "Сантьяго: центральная площадь с пальмами, башнями и прохожими"
+  hover: "Муниципалитет Сантьяго — новая обложка"
 gallery: []
 themes:
 - theme_culture

@@ -10,9 +10,9 @@ summary: Сан-Рафаэль встречает путешественнико
   с воды, рассмотреть синие участки льда и пройти среди дрейфующих айсбергов. За ледником поднимаются горы чилийской
   Патагонии.
 hero:
-  src: /media/tours/patagoniya-i-chilijskie-fordy/itinerary-day-03-generated-20261008-v1.webp
-  hover: "Сан-Рафаэль: голубой ледяной фронт и плавающие льдины в Патагонии"
-  alt: "Ледник Сан-Рафаэль у серо-зеленой лагуны и облачных гор, Чили"
+  src: /media/destinations/san-rafael-glacier/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Ледник Сан-Рафаэль — новая обложка"
+  alt: "Ледник Сан-Рафаэль — иллюстрация"
 gallery: []
 themes: ["theme_nature"]
 searchAliases:

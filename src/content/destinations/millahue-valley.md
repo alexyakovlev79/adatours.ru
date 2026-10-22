@@ -9,10 +9,10 @@ destinationType: region
 summary: Мильяуэ — винная долина в регионе Качапоаль, где расположено хозяйство VIK. Виноградники расходятся по
   холмам, а поездки сюда объединяют дегустации с отдыхом среди сельских пейзажей центрального Чили.
 hero:
-  src: /media/tours/chile-argentina-private-grand-tour-17-days/millahue-generated-20261011-v1.webp
-  alt: "Ряды виноградников на пологих холмах долины Мильяуэ в вечернем свете, Чили"
+  src: /media/destinations/millahue-valley/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Долина Мильяуэ — иллюстрация"
   status: approved
-  hover: "Мильяуэ: виноградные склоны у гор на закате"
+  hover: "Долина Мильяуэ — новая обложка"
 gallery: []
 themes:
 - theme_gastronomy_wine

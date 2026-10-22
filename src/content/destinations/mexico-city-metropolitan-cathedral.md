@@ -8,10 +8,9 @@ countryId: country_mexico
 destinationType: route_cluster
 summary: Кафедральный собор на Сокало объединяет архитектуру разных эпох, просторные нефы и богато украшенные часовни.
 hero:
-  src: /media/tours/mexico-religious-journey/mexico-city-cathedral-generated-20261011-v1.webp
-  alt: "Кафедральный собор Мехико с двумя колокольнями перед площадью Сокало, Мексика"
-  hover: "Мехико: каменный фасад Кафедрального собора и две башни над площадью"
-  status: approved
+  src: "/media/destinations/mexico-city-metropolitan-cathedral/hero-generated-20261021-dedup-third50-v1.webp"
+  alt: "Кафедральный собор Мехико — иллюстрация"
+  status: "approved"
 gallery: []
 themes:
 - theme_culture

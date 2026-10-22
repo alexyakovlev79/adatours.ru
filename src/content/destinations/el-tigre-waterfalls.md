@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: Четыре водопада среди горного леса рядом с Монтеверде. Тропа ведет вдоль реки, через мостики и участки с камнями
   и перепадами высоты.
 hero:
-  src: /media/destinations/el-tigre-waterfalls/hero-generated-20261011-p105-v1.webp
-  alt: "Узкий водопад среди влажного леса Эль-Тигре у Монтеверде, Коста-Рика"
-  hover: "Эль-Тигре в Коста-Рике: водопад по темной скале в зеленый речной бассейн"
+  src: /media/destinations/el-tigre-waterfalls/hero-generated-20261021-dedup-second50-v1.webp
+  alt: "Водопады Эль-Тигре — иллюстрация"
+  hover: "Водопады Эль-Тигре — новая обложка"
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 searchAliases:

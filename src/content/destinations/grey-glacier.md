@@ -11,9 +11,9 @@ searchAliases:
 - Glaciar Grey
 - lednik-grej
 hero:
-  src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp
-  hover: "Ледник Грей: ледяной фронт под пасмурными горами"
-  alt: "Голубая стена ледника Грей и льдины на темной воде озера, Чили"
+  src: /media/destinations/grey-glacier/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Ледник Грей — новая обложка"
+  alt: "Ледник Грей — иллюстрация"
 gallery: []
 themes: ["theme_nature"]
 facts: []

@@ -8,7 +8,7 @@ countryId: "country_colombia"
 destinationType: "city"
 summary: "Санта-Марта находится на Карибском побережье у гор Сьерра-Невада-де-Санта-Марта. Пляжи, дайвинг и вечерние кафе делают город местом для отдыха у моря."
 searchAliases: []
-hero: {"src":"/media/destinations/santa-marta/hero-enhanced-20261003.webp","alt":"Парусные яхты в гавани Санта-Марты на фоне городских зданий и гор в вечернем свете, Колумбия", hover: "Санта-Марта: яхтенная гавань на закате"}
+hero: {"src":"/media/destinations/santa-marta/hero-generated-20261021-dedup-second50-v1.webp","alt": "Санта-Марта — иллюстрация", hover: "Санта-Марта — новая обложка"}
 gallery:
 - src: /media/destinations/santa-marta/gallery-1-enhanced-20261003.webp
   alt: "Мужчина с музыкальным инструментом в Санта-Марте, Колумбия"

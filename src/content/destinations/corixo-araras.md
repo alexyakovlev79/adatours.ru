@@ -12,12 +12,12 @@ searchAliases:
 - Река Коришу у Araras Eco Lodge
 themes: ["theme_nature"]
 hero:
-  src: /media/tours/brazil-three-ecosystems-8-days/word-5-20261010-enhanced-20261011-doc-v1.webp
-  hover: "Пантанал: лодка отражается в воде у зеленого берега"
-  alt: "Человек в узкой лодке на спокойной воде у лесистого берега, Пантанал, Бразилия"
+  src: /media/destinations/corixo-araras/hero-generated-20261021-dedup50-v1.webp
+  hover: Река Коришу у эколоджа «Арарас» — иллюстрация
+  alt: Река Коришу у эколоджа «Арарас» — иллюстрация
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_corixo_araras.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-21'
 ---
 
 ## Альтернатива при смене природных условий

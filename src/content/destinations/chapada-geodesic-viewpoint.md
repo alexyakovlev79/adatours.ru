@@ -12,12 +12,12 @@ searchAliases:
 - Геодезический центр Южной Америки — Шапада
 themes: ["theme_nature"]
 hero:
-  src: /media/destinations/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns/chapada-park-generated-20261008.webp
-  hover: "Шапада-дус-Гимарайнс: узкий поток падает с красноватого скального уступа"
-  alt: "Высокий водопад в скальном амфитеатре парка Шапада-дус-Гимарайнс, Бразилия"
+  src: /media/destinations/chapada-geodesic-viewpoint/hero-generated-20261021-dedup50-v1.webp
+  hover: Геодезическая смотровая Шапада-дус-Гимарайнс — иллюстрация
+  alt: Геодезическая смотровая Шапада-дус-Гимарайнс — иллюстрация
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_chapada_geodesic_viewpoint.md
-updatedAt: '2026-10-10'
+updatedAt: '2026-10-21'
 ---
 
 ## Панорама плато

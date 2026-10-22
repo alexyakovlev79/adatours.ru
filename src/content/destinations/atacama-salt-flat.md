@@ -12,9 +12,9 @@ searchAliases:
 - solonchak-atakama
 themes: ["theme_wildlife", "theme_nature"]
 hero:
-  src: /media/destinations/destination_chile_laguna_chaksa/hero-generated-20261008-resumed-v1.webp
-  hover: "Чакса в Чили: фламинго на фоне пустынных гор"
-  alt: "Розовые фламинго на мелководье лагуны Чакса среди соляной корки, Чили"
+  src: /media/destinations/atacama-salt-flat/hero-generated-20261021-dedup-second50-v1.webp
+  hover: "Солончак Атакама — новая обложка"
+  alt: "Солончак Атакама — иллюстрация"
 gallery: []
 relatedDestinations: []
 featuredTours: []

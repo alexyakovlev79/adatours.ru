@@ -1,0 +1,51 @@
+name: Validate live AdaTours email form routing
+on:
+  push:
+    branches:
+      - diagnostic/postbox-dkim-dns-20261022
+    paths:
+      - .github/workflows/adatours-live-form-email-20261022.yml
+permissions:
+  contents: read
+jobs:
+  verify-live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Confirm live HTML and script point exclusively to email function
+        shell: bash
+        run: |
+          python - <<'PY'
+          import time
+          import urllib.request
+
+          base = "https://adatours.ru"
+          old_backup = "https://forms-backup.adatours.ru/api/adatours"
+          cloud = "https://functions.yandexcloud.net/d4e9tk1l5e35s0r3j39t"
+          versioned_config = "/form-config.js?v=20261022-postbox-1"
+          pages = ["/", "/brazil/", "/contacts/"]
+
+          def read(path):
+              req = urllib.request.Request(base + path,
+                 headers={"Cache-Control": "no-cache", "Pragma": "no-cache", "User-Agent": "AdaTours-email-route-qa/1"})
+              with urllib.request.urlopen(req,timeout=35) as res:
+                  assert res.status == 200, f"{path}: HTTP {res.status}"
+                  return res.read().decode("utf-8",errors="replace")
+
+          for attempt in range(1,41):
+              try:
+                  config = read(versioned_config)
+                  assert cloud in config, "public config does not contain the Yandex Cloud function"
+                  assert old_backup not in config, "public config still contains Telegram backup"
+                  for page in pages:
+                      html = read(page)
+                      assert versioned_config in html, f"{page} still loads an older form configuration"
+                      assert "data-lead-form" in html, f"{page} has no form markup"
+                  print("ADA_LIVE_EMAIL_ROUTE_PASS: homepage, tour/destination, and contacts pages point to Yandex Cloud Function.")
+                  break
+              except Exception as exc:
+                  print(f"Check {attempt}/40 pending: {type(exc).__name__}: {str(exc)[:220]}",flush=True)
+                  if attempt == 40:
+                      raise
+                  time.sleep(30)
+          PY

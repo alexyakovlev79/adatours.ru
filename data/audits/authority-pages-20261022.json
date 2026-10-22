@@ -6,7 +6,7 @@
     "/webinars/",
     "/partners/"
   ],
-  "status": "published-with-typography-fix-pending",
+  "status": "published-and-verified",
   "baselineCommit": "a5ccfb99f2bb3b1b962a438289deaf752ec753c2",
   "copyRulesSource": "Project attachment: 08-writing-rules.md — Правила написания любых текстов",
   "entitySourceRegistry": "data/external-identity/entity-authority-20261022.json",
@@ -1425,7 +1425,7 @@
     {
       "check": "authority-inline-typography-ssr",
       "status": "passed",
-      "deploymentStatus": "pending",
+      "deploymentStatus": "published-and-verified",
       "component": "src/components/authority/AuthorityInline.astro",
       "reportPath": "research/authority-inline-ssr-report.json",
       "mode": "Focused real AuthorityInline SSR via compiler-rs and AstroContainer",
@@ -1440,22 +1440,91 @@
         "unbalanced formatting",
         "anchor links and unsupported external markdown links"
       ],
-      "note": "Previously completed focused real-component SSR; no tests were rerun while updating this audit."
+      "note": "Local SSR evidence is supplemented by the successful follow-up CI and post-deploy HTTP check below."
+    },
+    {
+      "check": "typography-follow-up-ci",
+      "status": "passed",
+      "releaseCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
+      "run": 39810582959,
+      "deployJob": 119941920428,
+      "testsPassed": 297,
+      "builtPages": 6132,
+      "schemaErrors": 0,
+      "indexedPages": 1818,
+      "evidence": "GitHub Actions build job 119936672705 logs and deploy job success."
+    },
+    {
+      "check": "published-inline-typography",
+      "status": "passed",
+      "report": {
+        "checkedAt": "2026-10-22T16:16:19.892264+00:00",
+        "releaseCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
+        "deploymentRun": 39810582959,
+        "scope": "Narrow post-deploy check of inline punctuation and preservation of the existing JSON-LD on the three authority pages.",
+        "pages": [
+          {
+            "path": "/press/",
+            "url": "https://adatours.ru/press/",
+            "status": 200,
+            "inlineFragments": 23,
+            "punctuationErrors": [],
+            "expectedPressTextPresent": true,
+            "jsonLdScripts": 1,
+            "jsonLdUnchangedFromFirstRelease": true,
+            "htmlSha256": "6dd1b3ab9d8593b2b2f780dbc1606642f009418e4319d6f0c0e31d6815a5aeed",
+            "lastModified": "Thu, 22 Oct 2026 16:15:29 GMT",
+            "passed": true
+          },
+          {
+            "path": "/webinars/",
+            "url": "https://adatours.ru/webinars/",
+            "status": 200,
+            "inlineFragments": 17,
+            "punctuationErrors": [],
+            "expectedPressTextPresent": true,
+            "jsonLdScripts": 1,
+            "jsonLdUnchangedFromFirstRelease": true,
+            "htmlSha256": "18b47828b7cd1ce3152120264e329694bf3a596ed41253ceea8d5a732f6159f9",
+            "lastModified": "Thu, 22 Oct 2026 16:15:29 GMT",
+            "passed": true
+          },
+          {
+            "path": "/partners/",
+            "url": "https://adatours.ru/partners/",
+            "status": 200,
+            "inlineFragments": 14,
+            "punctuationErrors": [],
+            "expectedPressTextPresent": true,
+            "jsonLdScripts": 1,
+            "jsonLdUnchangedFromFirstRelease": true,
+            "htmlSha256": "99d19bf1739f8a5948e5bfe88f26e4dfd9b5e9ae9f11f6d4d38c91f1deb23aef",
+            "lastModified": "Thu, 22 Oct 2026 16:15:29 GMT",
+            "passed": true
+          }
+        ],
+        "passed": true
+      }
     }
   ],
   "releaseCommit": "8a068ca8ebcf7cc9e2f3f097788c71f4b3ea45d0",
   "deploymentRun": 39806119109,
-  "updatedAt": "2026-10-22T16:02:04Z",
+  "updatedAt": "2026-10-22T16:19:00.274388+00:00",
   "deploymentJob": 119927127311,
   "deploymentStatus": "success",
   "deploymentRunUpdatedAt": "2026-10-22T15:49:52Z",
-  "pendingFollowUp": {
-    "status": "prepared-awaiting-deployment",
+  "latestContentReleaseCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
+  "latestDeploymentRun": 39810582959,
+  "latestDeploymentJob": 119941920428,
+  "latestDeploymentStatus": "success",
+  "completedFollowUp": {
+    "status": "published-and-verified",
     "file": "src/components/authority/AuthorityInline.astro",
     "change": "Remove extra whitespace before punctuation adjacent to inline links.",
     "localCheck": "authority-inline-typography-ssr: 6/6 passed",
-    "releaseCommit": null,
-    "deploymentRun": null,
-    "note": "The live and regression checks above describe the first published release; they do not claim that this local typography correction is published."
+    "releaseCommit": "5b4a86deaf6db1f4267bb5d7aebec5b9ac578b7a",
+    "deploymentRun": 39810582959,
+    "note": "The follow-up deploy succeeded; HTTP checks of all three pages confirm corrected punctuation and JSON-LD identical to the first release.",
+    "deploymentJob": 119941920428
   }
 }

@@ -9,10 +9,10 @@ destinationType: natural_area
 summary: Два водопада в Канайме, к которым можно добавить отдельную поездку в свободный день. Невысокие широкие каскады
   открывают другую сторону речного пейзажа парка.
 hero:
-  src: /media/tours/canaima-angel-falls-4-days/yuri-generated-20261010-p034-v1.webp
-  alt: "Широкие невысокие каскады Юри и Юрилу перед столовыми горами Канаймы, Венесуэла"
+  src: /media/destinations/yuri-yurilu-falls/hero-generated-20261021-dedup4-v1.webp
+  alt: "Невысокие речные каскады Юри и Юрилу среди лесов Канаймы — иллюстрация"
   status: approved
-  hover: "Канайма в Венесуэле: речные каскады среди темных камней и тропической зелени"
+  hover: "Невысокие речные каскады Юри и Юрилу среди лесов Канаймы"
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_yuri_yurilu_falls.md

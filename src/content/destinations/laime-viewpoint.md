@@ -9,9 +9,9 @@ destinationType: natural_area
 summary: Вид на водопад Анхель после пешего перехода через тропический лес. Лайме — главная цель прогулки после высадки
   у Ратонсито.
 hero:
-  src: /media/destinations/canaima-and-angel-falls/gallery-3-enhanced-20261003.webp
-  alt: Высокий водопад падает с отвесной скалы среди облаков, Канайма, Венесуэла
-  hover: 'Канайма, Венесуэла: высокий водопад падает с отвесной скалы среди облаков'
+  src: /media/destinations/laime-viewpoint/hero-generated-20261021-dedup4-v1.webp
+  alt: "Вид на Анхель и тропический лес со смотровой Лайме — иллюстрация"
+  hover: "Вид на Анхель и тропический лес со смотровой Лайме"
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_laime_viewpoint.md

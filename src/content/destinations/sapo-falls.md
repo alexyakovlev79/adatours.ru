@@ -9,10 +9,10 @@ destinationType: natural_area
 summary: Широкая завеса воды в Канайме и скальный проход за падающим потоком. К Сапо отправляются на лодке через лагуну
   и продолжают путь пешком.
 hero:
-  src: /media/tours/canaima-angel-falls-4-days/sapo-generated-20261010-p034-v1.webp
-  alt: "Проход под скальным навесом за водяной завесой Сапо, Канайма, Венесуэла"
+  src: /media/destinations/sapo-falls/hero-generated-20261021-dedup4-v1.webp
+  alt: "Широкая водяная завеса Сапо и скалистый берег в Канайме — иллюстрация"
   status: approved
-  hover: "Водопад Сапо в Венесуэле: поток воды перед каменным проходом"
+  hover: "Широкая водяная завеса Сапо и скалистый берег в Канайме"
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_sapo_falls.md

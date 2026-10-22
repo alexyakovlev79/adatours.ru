@@ -40,7 +40,7 @@ test('photo queue excludes archive before limit, including forced stale statuses
 });
 test('ready assets are reused, not generated twice; source-only entries are not photo jobs', () => {
   const entry = { id: 'active', type: 'tour', contentPath: 'a.md' }, contents = new Map([['active', { status: 'published', hero: { src: 'old.jpg' }, gallery: [{ src: 'old.jpg' }] }]]);
-  const result = buildPhotoQueue({ entries: [entry, { id: 'source_only', type: 'tour' }], contents, enhancements: [{ source: 'old.jpg', enhanced: '/media/already.webp' }] });
+  const result = buildPhotoQueue({ entries: [entry, { id: 'source_only', type: 'tour' }], contents, enhancements: [{ source: 'old.jpg', enhanced: '/media/already.webp', method: 'gpt-image' }] });
   assert.equal(result.photos.length, 0); assert.equal(result.reuse.length, 1); assert.equal(result.reuse[0].slots.length, 2);
   assert.deepEqual(result.selectedEntityIds, ['active']);
 });

@@ -22,8 +22,11 @@ export function readPhotoInputs(root = repoRoot) {
 export function buildPhotoQueue({ entries, contents, enhancements = [], type, country, entityIds, after, limit = 10, all = false }) {
   if (!Number.isInteger(limit) || limit < 1) throw new Error('limit must be a positive integer');
   const entryById = new Map(entries.map((entry) => [entry.id, entry]));
-  const enhancedURLs = new Set(enhancements.map((record) => record.enhanced));
-  const bySource = new Map(enhancements.map((record) => [record.source, record]));
+  // Filenames and delivery receipts cannot prove a GPT Image edit.
+  // Keep historical non-GPT transformations in the registry, but leave them queued.
+  const completed = enhancements.filter((record) => record.method === 'gpt-image');
+  const enhancedURLs = new Set(completed.map((record) => record.enhanced));
+  const bySource = new Map(completed.map((record) => [record.source, record]));
   const requested = entityIds ? new Set(entityIds) : undefined;
   let selected = entries.filter((entry) => isPhotoEligible(entry, contents.get(entry.id)))
     .filter((entry) => !type || entry.type === type)
@@ -41,7 +44,7 @@ export function buildPhotoQueue({ entries, contents, enhancements = [], type, co
     const owner = entryById.get(ownerId), data = contents.get(ownerId);
     // Critical: the referenced owner must also be active, before de-duplication/limit.
     if (!owner || !isPhotoEligible(owner, data) || !current || typeof current !== 'string') return;
-    if (current.includes('-enhanced-') || enhancedURLs.has(current)) return;
+    if (enhancedURLs.has(current)) return;
     const slotKey = `${ownerId}:${slot}`;
     if (seenSlots.has(slotKey)) return; seenSlots.add(slotKey);
     const known = bySource.get(current);

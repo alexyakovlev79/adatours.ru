@@ -20,4 +20,23 @@ const { Content } = await render(entry);
 
 <CaseLayout entry={entry}>
   <Content />
+  {entry.data.testimonial && (
+    <section class="case-testimonial" aria-labelledby="case-testimonial-title">
+      <h2 id="case-testimonial-title">Отзыв о поездке</h2>
+      <figure>
+        <blockquote data-case-quotation={entry.data.id}>
+          <p>{entry.data.testimonial.quote}</p>
+        </blockquote>
+        <figcaption>{entry.data.testimonial.caption}</figcaption>
+      </figure>
+    </section>
+  )}
 </CaseLayout>
+
+<style>
+  .case-testimonial { margin-top: clamp(36px, 5vw, 64px); padding-top: clamp(24px, 3vw, 40px); border-top: 1px solid var(--color-line); }
+  .case-testimonial figure { margin: 24px 0 0; }
+  .case-testimonial blockquote { margin: 0; padding: 0 0 0 clamp(18px, 3vw, 32px); border-left: 2px solid var(--color-gold-deep); }
+  .case-testimonial blockquote p { margin: 0; white-space: pre-line; }
+  .case-testimonial figcaption { margin-top: 20px; color: color-mix(in srgb, var(--color-ink) 65%, transparent); font-size: .9rem; }
+</style>

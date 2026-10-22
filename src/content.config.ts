@@ -262,6 +262,10 @@ const cases = defineCollection({
     hero: media,
     gallery: z.array(mediaObject).default([]),
     proof: z.array(z.string()).default([]),
+    testimonial: z.object({
+      quote: z.string().min(1),
+      caption: z.string().min(1),
+    }).optional(),
     relatedServices: z.array(z.string()).default([]),
   }),
 });

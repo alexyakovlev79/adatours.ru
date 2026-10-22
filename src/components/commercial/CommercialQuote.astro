@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import { withBase } from '../../lib/paths';
+interface Props { caseId: string; title?: string; }
+const { caseId, title = 'Поездка, которую хочется повторить' } = Astro.props;
+const entry = (await getCollection('cases')).find(({ data }) => data.id === caseId);
+if (!entry?.data.testimonial) throw new Error(`Case testimonial missing: ${caseId}`);
+const { testimonial } = entry.data;
+---
+
+<section class="commercial-quote section" aria-labelledby={`${caseId}-quote-title`}>
+  <div class="container commercial-quote__grid">
+    <div><p class="eyebrow">После путешествия</p><h2 id={`${caseId}-quote-title`}>{title}</h2><a href={withBase(`/cases/${entry.data.slug}/`)}>Как была устроена эта поездка <span aria-hidden="true">↗</span></a></div>
+    <figure>
+      <blockquote data-case-quotation={caseId}><p>{testimonial.quote}</p></blockquote>
+      <figcaption>{testimonial.caption}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<style>
+  .commercial-quote { background: var(--color-bg); }
+  .commercial-quote__grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(30px, 6vw, 90px); align-items: start; }
+  h2 { max-width: 21ch; margin: 12px 0 24px; font-size: clamp(1.9rem, 3vw, 3.2rem); line-height: 1.15; }
+  a { color: var(--color-brand-deep); font-size: .95rem; text-underline-offset: .2em; }
+  figure { margin: 0; padding: 8px 0 8px 30px; border-left: 2px solid var(--color-gold-deep); }
+  blockquote { margin: 0; }
+  blockquote p { margin: 0; white-space: pre-line; font-size: clamp(1.04rem, 1.4vw, 1.35rem); line-height: 1.75; }
+  figcaption { margin-top: 20px; color: var(--color-text-muted); font-size: .82rem; }
+  @media (max-width: 760px) { .commercial-quote__grid { grid-template-columns: 1fr; } figure { padding-left: 20px; } }
+</style>

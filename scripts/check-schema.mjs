@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { inspectHtml } from '../src/lib/structured-data-html.mjs';
-import { hasType, types, logicalPath, cleanText, SCHEMA_VERSION } from '../src/lib/structured-data.mjs';
+import { hasType, types, logicalPath, cleanText, quotationText, SCHEMA_VERSION } from '../src/lib/structured-data.mjs';
 import { getAuthorityPageSources, getAuthorityPartners, getVisibleAuthoritySources, getVisibleAuthorityPartners } from '../src/lib/entity-authority.mjs';
 import { isArchivedPath } from '../src/lib/archive.mjs';
 import { validateDirectAssetLedger } from './lib/direct-media-ledger.mjs';
@@ -24,7 +24,7 @@ function* objects(value) {
   else if (value && typeof value === 'object') { yield value; for (const v of Object.values(value)) yield* objects(v); }
 }
 const pageTypes = new Set(['WebPage', 'CollectionPage', 'AboutPage', 'ContactPage', 'ProfilePage', 'FAQPage']);
-const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'GeoCoordinates', 'Country', 'AdministrativeArea', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'AggregateOffer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'NewsArticle', 'EducationEvent', 'VirtualLocation', 'Review', 'AggregateRating', 'WebPageElement', 'Table', 'Question', 'Answer']);
+const allowedTypes = new Set([...pageTypes, 'Organization', 'TravelAgency', 'WebSite', 'ImageObject', 'ContactPoint', 'PostalAddress', 'PropertyValue', 'GeoCoordinates', 'Country', 'AdministrativeArea', 'City', 'Place', 'TouristDestination', 'TouristTrip', 'Trip', 'Service', 'Offer', 'AggregateOffer', 'PriceSpecification', 'ItemList', 'ListItem', 'BreadcrumbList', 'DefinedTerm', 'DefinedTermSet', 'Person', 'Article', 'NewsArticle', 'EducationEvent', 'VirtualLocation', 'Quotation', 'Review', 'AggregateRating', 'WebPageElement', 'Table', 'Question', 'Answer']);
 const report = { schemaVersion: SCHEMA_VERSION, root, totalHtml: 0, contentPages: 0, redirects: 0, archives: 0, withSchema: 0, catalogPages: 0, faqPages: 0, offerPages: 0, editorialArticles: 0, editorialSections: 0, editorialTables: 0, subjectOfLinks: 0, pageTypes: {}, mainEntityTypes: {}, errors: [], pages: [] };
 const definitions = new Set();
 const references = [];
@@ -179,6 +179,14 @@ for (const file of files.sort()) {
         assert.ok(inspected.facts.text.includes(cleanText(q.acceptedAnswer?.text)), `Visible FAQ answer: ${q.name}`);
       }
       if (hasType(node, 'Review')) assert.ok(inspected.facts.text.includes(cleanText(node.reviewBody)), 'Visible review');
+      if (hasType(node, 'Quotation')) {
+        const article = byId.get(node.isPartOf?.['@id']);
+        assert.ok(article && hasType(article, 'Article'), 'Case quotation belongs to an Article');
+        assert.ok(inspected.facts.caseQuotations.some((item) => item.entityId === article.identifier
+          && item.text === quotationText(node.text)), 'Exact case quotation is visible in a marked blockquote');
+        assert.ok(article.hasPart?.some((item) => item['@id'] === node['@id']), 'Article links to its quotation');
+        for (const key of ['author', 'creator', 'reviewRating', 'aggregateRating']) assert.equal(node[key], undefined, `Anonymous quotation has no ${key}`);
+      }
       if (hasType(node, 'AggregateRating')) {
         assert.ok(['/', '/reviews/'].includes(inferredPath), 'AggregateRating only when reviews are visible');
         assert.ok(Number(node.ratingValue) > 0, 'AggregateRating has a positive ratingValue');
@@ -223,6 +231,26 @@ for (const file of files.sort()) {
       assert.deepEqual(list.itemListElement.map((n) => n.url), [...new Set(group.links.map((n) => n.href))], 'Actual card URLs and order');
       assert.equal(page.mainEntity?.['@id'], list['@id'], 'CollectionPage is connected to its list');
       report.catalogPages++;
+    }
+    if (inferredPath === '/mice/programmes/' && !inspected.metadata.redirect) {
+      assert.ok(hasType(page, 'CollectionPage'), 'B2B programme index is a CollectionPage');
+      assert.ok(inspected.facts.programmeLinks?.length, 'B2B programme cards have their explicit visible container');
+      const lists = nodes.filter((node) => hasType(node, 'ItemList'));
+      assert.equal(lists.length, 1, 'B2B programme index has one card list');
+      const list = byId.get(`${canonical}#programmes`);
+      assert.ok(list && hasType(list, 'ItemList'), 'B2B programme index has its own canonical list');
+      assert.equal(page.mainEntity?.['@id'], list['@id'], 'Programme list is the page main entity');
+      const expected = [...new Set(inspected.facts.programmeLinks.map((link) => link.href))];
+      assert.deepEqual(list.itemListElement.map((item) => item.url), expected, 'Programme list follows actual card links and order');
+      assert.deepEqual(list.itemListElement.map((item) => item.position), expected.map((_, index) => index + 1), 'Programme list positions');
+      for (const item of list.itemListElement) assert.ok(hasType(byId.get(item.item?.['@id']), 'TouristTrip'), 'Programme cards link to real trips');
+      const visibleUrls = new Set(inspected.facts.groups.flatMap((group) => group.links || []).map((link) => link.href));
+      for (const citation of page.citation || []) assert.ok(typeof citation === 'string' && /^https:\/\//.test(citation)
+        && visibleUrls.has(citation), 'Programme citation is a real visible external source URL');
+    }
+    for (const displayed of inspected.facts.caseQuotations) {
+      assert.ok(nodes.some((node) => hasType(node, 'Quotation') && quotationText(node.text) === displayed.text
+        && byId.get(node.isPartOf?.['@id'])?.identifier === displayed.entityId), 'Every marked visible case quotation is represented');
     }
     const authoritySources = getAuthorityPageSources(inferredPath);
     if (authoritySources.length && !inspected.metadata.redirect) {

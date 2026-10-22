@@ -1,4 +1,6 @@
 ---
+import AuthorityInline from '../authority/AuthorityInline.astro';
+
 interface Item {
   question: string;
   answer: string;
@@ -18,10 +20,10 @@ const { title = 'Вопросы о работе с Ada Tours', items } = Astro.p
       {items.map((item) => (
         <details>
           <summary>
-            <span>{item.question}</span>
+            <h3>{item.question}</h3>
             <b aria-hidden="true">+</b>
           </summary>
-          <p>{item.answer}</p>
+          <p><AuthorityInline text={item.answer} /></p>
         </details>
       ))}
     </div>
@@ -59,6 +61,8 @@ const { title = 'Вопросы о работе с Ada Tours', items } = Astro.p
   .dmc-faq summary::-webkit-details-marker {
     display: none;
   }
+
+  .dmc-faq summary h3 { margin: 0; font: inherit; }
 
   .dmc-faq summary b {
     color: var(--color-gold-deep);

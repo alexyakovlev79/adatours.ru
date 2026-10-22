@@ -1,0 +1,27 @@
+---
+import { withBase } from '../../lib/paths';
+
+interface Props {
+  id: string;
+  title: string;
+  description: string;
+  keywords?: string[];
+  image?: string;
+  typeLabel?: string;
+}
+const { id, title, description, keywords = [], image, typeLabel = 'Для бизнеса' } = Astro.props;
+---
+
+<section class="commercial-search-record" data-pagefind-body data-commercial-record={id} aria-hidden="true">
+  <span data-pagefind-meta="title" data-pagefind-filter="search_title">{title}</span>
+  <p data-pagefind-meta="summary">{description}</p>
+  <span data-pagefind-meta="entity_type" data-pagefind-filter="entity_type">page</span>
+  <span data-pagefind-meta="type_label">{typeLabel}</span>
+  <span data-pagefind-meta="subtitle">Бразилия и Латинская Америка</span>
+  {keywords.length > 0 && <span data-pagefind-meta="aliases">{[...new Set(keywords)].join(' | ')}</span>}
+  {image && <span data-pagefind-meta="image[data-search-image]" data-search-image={withBase(image)}></span>}
+</section>
+
+<style>
+  .commercial-search-record { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); white-space: nowrap; border: 0; pointer-events: none; }
+</style>

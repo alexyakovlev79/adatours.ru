@@ -1,11 +1,12 @@
 import { selectVipTours } from './vip-tours.mjs';
 import { mergeGeoPassport } from './geo-knowledge.mjs';
 import { getAuthorityEntity, getAuthorityPageSources, getVisibleAuthoritySources, getVisibleAuthorityPartners } from './entity-authority.mjs';
+import programmeExamples from '../data/commercial/mice-programme-examples.json' with { type: 'json' };
 
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
  * Facts come from the content model and the rendered page, never SEO inventions.
  */
-export const SCHEMA_VERSION = '2026-10-22.2';
+export const SCHEMA_VERSION = '2026-10-22.3';
 export const types = (node) => [node?.['@type'] ?? []].flat();
 export const hasType = (node, type) => types(node).includes(type);
 export const ref = (id) => ({ '@id': id });
@@ -13,6 +14,9 @@ export const cleanText = (value = '') => String(value)
   .replace(/<[^>]+>/g, ' ').replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1')
   .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`#]+/g, '')
   .replace(/\s+/g, ' ').trim();
+// Testimonials are already plain text. Preserve punctuation and literal angle
+// brackets; HTML/script escaping belongs to the template and safeJsonLd.
+export const quotationText = (value = '') => String(value).replace(/\s+/g, ' ').trim();
 const compact = (value) => {
   if (Array.isArray(value)) return value.map(compact).filter((x) => x !== undefined);
   if (value && typeof value === 'object') {
@@ -72,7 +76,7 @@ const servicePages = {
     serviceType: 'Организация поездок деловых делегаций',
   },
 };
-const collectionPaths = new Set(['/country/', '/tours/', '/places/', '/excursions/', '/interests/', '/team/', '/cases/', '/reviews/', '/articles/', '/press/', '/webinars/', '/partners/']);
+const collectionPaths = new Set(['/country/', '/tours/', '/places/', '/excursions/', '/interests/', '/team/', '/cases/', '/reviews/', '/articles/', '/press/', '/webinars/', '/partners/', '/mice/programmes/']);
 const dateValue = (value) => {
   if (!value) return undefined;
   const date = new Date(value);
@@ -138,6 +142,8 @@ export function buildStructuredData({ root, organization, records, page, documen
   // Only exact, approved independent coverage is a subjectOf relation. A directory
   // profile is a sameAs identity, not an editorial article or a rating source.
   const visibleSourceUrls = new Set((document.groups || []).flatMap((group) => group.links || []).map((link) => link.href));
+  const visibleLocalPaths = new Set([...visibleSourceUrls].map((href) => absoluteUrl(href, root))
+    .filter((url) => url && new URL(url).origin === new URL(root).origin).map((url) => logicalPath(url, root)));
   const independentWorks = (organization.externalMentions || []).filter((item) =>
     /^https:\/\//.test(item.url || '') && item.name && visibleSourceUrls.has(item.url)).map((item) =>
     add({ '@type': 'Article', '@id': item.url + '#article', url: item.url,
@@ -162,6 +168,30 @@ export function buildStructuredData({ root, organization, records, page, documen
     dateModified: dateValue(current?.data.updatedAt), hasPart: [], mentions: [] };
   add(webPage);
   const publicRecord = (record) => record && !record.archived && record.data.status !== 'draft';
+  function ensureService(path) {
+    const config = servicePages[path];
+    if (!config) return undefined;
+    const url = absoluteUrl(path, root);
+    const id = `${url}#service`;
+    if (nodes.has(id)) return ref(id);
+    return add({ '@type': 'Service', '@id': id, name: config.serviceType,
+      serviceType: config.serviceType, category: config.category, url,
+      provider: ref(orgId), areaServed: organization.areaServed,
+      mainEntityOfPage: ref(`${url}#webpage`) });
+  }
+  function connectCaseService(article, service) {
+    const node = nodes.get(service['@id']);
+    const subjectOf = new Map((node.subjectOf || []).map((item) => [item['@id'], item]));
+    subjectOf.set(article['@id'], article);
+    add({ ...node, subjectOf: [...subjectOf.values()] });
+  }
+  function visibleCaseQuotation(record, about) {
+    const quote = quotationText(record.data.testimonial?.quote);
+    if (!quote || !(document.caseQuotations || []).some((item) => item.entityId === record.data.id && item.text === quote)) return undefined;
+    return add({ '@type': 'Quotation', '@id': `${absoluteUrl(record.path, root)}#testimonial`,
+      text: quote, inLanguage: page.lang, isPartOf: ref(recordId(record, root)),
+      about: about.length ? about : [ref(orgId)] });
+  }
   function ensureRecord(record, full = false) {
     const d = record.data;
     const id = recordId(record, root);
@@ -269,6 +299,18 @@ export function buildStructuredData({ root, organization, records, page, documen
         if (publicRecord(author) && document.text?.includes(recordName(author))) node.author = ensureRecord(author);
       }
     }
+    if (record.kind === 'case' && full && (d.projectStatus || 'completed') === 'completed') {
+      const services = [...new Set(d.relatedServices || [])].filter((path) => visibleLocalPaths.has(path))
+        .map(ensureService).filter(Boolean);
+      node.about = [ref(orgId), ...services];
+      node.spatialCoverage = [...new Set(d.countries || [])].map((key) => byId.get(key))
+        .filter((country) => publicRecord(country) && country.kind === 'country').map((country) => ensureRecord(country));
+      for (const service of services) connectCaseService(ref(id), service);
+      // An anonymous customer's supplied words remain a quotation, without an
+      // invented author or rating. Only an actual visible blockquote qualifies.
+      const quote = visibleCaseQuotation(record, services);
+      if (quote) node.hasPart = [quote];
+    }
     return add(mergeGeoPassport(node, record, geoKnowledge));
   }
   // The company's existing service geography reuses canonical country nodes and
@@ -368,7 +410,9 @@ export function buildStructuredData({ root, organization, records, page, documen
     const service = add({ '@type': 'Service', '@id': `${page.url}#service`, name: cleanText(document.h1 || page.title),
       description: cleanText(page.description), serviceType: serviceConfig.serviceType, category: serviceConfig.category,
       url: page.url, provider: ref(orgId), areaServed: organization.areaServed,
-      mainEntityOfPage: ref(pageId), image: imageRef });
+      mainEntityOfPage: ref(pageId), image: imageRef,
+      termsOfService: page.path.startsWith('/dmc/') && visibleLocalPaths.has('/dmc/terms/')
+        ? absoluteUrl('/dmc/terms/', root) : undefined });
     webPage.mainEntity = service; webPage.about = service;
   } else if (['/', '/about/', '/contacts/'].includes(page.path)) {
     webPage.mainEntity = ref(orgId); webPage.about = ref(orgId);
@@ -383,7 +427,34 @@ export function buildStructuredData({ root, organization, records, page, documen
   // Collections describe only rendered cards, in their rendered order, never the entire DB.
   const groupData = document.groups || [];
   const listedUrls = new Set();
-  for (const [index, group] of groupData.entries()) {
+  if (page.path === '/mice/programmes/') {
+    webPage.citation = [...new Set(programmeExamples.filter((item) => item.status === 'published_programme_example')
+      .map((item) => absoluteUrl(item.url, root))
+      .filter((url) => url && /^https:\/\//.test(url) && visibleSourceUrls.has(url)))];
+  }
+  // This editorial programme index has one deliberate list of its cards. Links
+  // repeated in explanations must not create competing or duplicate lists.
+  if (page.path === '/mice/programmes/' && Array.isArray(document.programmeLinks)) {
+    const programmeRecords = new Map();
+    for (const link of document.programmeLinks) {
+      const url = absoluteUrl(link.href, root);
+      if (!url || new URL(url).origin !== new URL(root).origin) continue;
+      const record = byPath.get(logicalPath(url, root));
+      if (publicRecord(record) && record.kind === 'tour' && record.data.audiences?.includes('b2b')) {
+        programmeRecords.set(recordId(record, root), record);
+      }
+    }
+    if (programmeRecords.size) {
+      webPage.mainEntity = add({ '@type': 'ItemList', '@id': `${page.url}#programmes`,
+        name: cleanText(document.h1 || page.title), numberOfItems: programmeRecords.size,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: [...programmeRecords.values()].map((record, index) => ({
+          '@type': 'ListItem', position: index + 1, name: recordName(record),
+          url: absoluteUrl(record.path, root), item: ensureRecord(record),
+        })) });
+    }
+  }
+  for (const [index, group] of (page.path === '/mice/programmes/' ? [] : groupData).entries()) {
     const items = []; const seen = new Set();
     for (const link of group.links || []) {
       const url = absoluteUrl(link.href, root);
@@ -409,6 +480,39 @@ export function buildStructuredData({ root, organization, records, page, documen
     if (group.catalog || (!webPage.mainEntity && pageType === 'CollectionPage')) webPage.mainEntity = list;
     // ItemList is Intangible, not CreativeWork: hasPart is reserved for page content.
     else webPage.mentions.push(list);
+  }
+  if (serviceConfig) {
+    const service = ref(`${page.url}#service`);
+    for (const record of records.filter((item) => publicRecord(item) && item.kind === 'case'
+      && (item.data.projectStatus || 'completed') === 'completed'
+      && item.data.relatedServices?.includes(page.path) && visibleLocalPaths.has(item.path))) {
+      const article = ensureRecord(record);
+      const existing = nodes.get(article['@id']);
+      const about = new Map((existing.about || []).map((item) => [item['@id'], item]));
+      about.set(orgId, ref(orgId)); about.set(service['@id'], service);
+      add({ ...existing, about: [...about.values()] });
+      connectCaseService(article, service);
+    }
+  }
+  // A quotation can also be displayed on a supporting page (for example the
+  // partnership terms). Its real case/service relations do not change there.
+  for (const displayed of document.caseQuotations || []) {
+    const record = byId.get(displayed.entityId);
+    if (!publicRecord(record) || record.kind !== 'case'
+      || (record.data.projectStatus || 'completed') !== 'completed'
+      || !visibleLocalPaths.has(record.path)
+      || displayed.text !== quotationText(record.data.testimonial?.quote)) continue;
+    const services = [...new Set(record.data.relatedServices || [])]
+      .filter((path) => path === page.path || visibleLocalPaths.has(path)).map(ensureService).filter(Boolean);
+    const article = ensureRecord(record);
+    const existing = nodes.get(article['@id']);
+    const about = new Map((existing.about || []).map((item) => [item['@id'], item]));
+    for (const item of [ref(orgId), ...services]) about.set(item['@id'], item);
+    const quote = visibleCaseQuotation(record, services);
+    const parts = new Map((existing.hasPart || []).map((item) => [item['@id'], item]));
+    if (quote) parts.set(quote['@id'], quote);
+    add({ ...existing, about: [...about.values()], hasPart: [...parts.values()] });
+    for (const service of services) connectCaseService(article, service);
   }
   // Only actually rendered links contribute. Prices are starting quotes, not maximum trip costs.
   // Tours and excursions and their currencies stay separate; countries advertise tours only.
@@ -458,7 +562,7 @@ export function buildStructuredData({ root, organization, records, page, documen
   }
   // Keep authored reviews only when their text and author are actually on this page.
   const authored = [extra].flat().flatMap((n) => n?.['@graph'] || [n]).filter(Boolean);
-  const reviews = authored.filter((n) => hasType(n, 'Review') && cleanText(n.reviewBody)
+  const reviews = authored.filter((n) => hasType(n, 'Review') && cleanText(n.reviewBody) && cleanText(n.author?.name)
     && document.text?.includes(cleanText(n.reviewBody)) && document.text?.includes(cleanText(n.author?.name)));
   if (reviews.length) {
     const refs = reviews.map((n, i) => add({ '@type': 'Review', '@id': `${page.url}#review-${i + 1}`,

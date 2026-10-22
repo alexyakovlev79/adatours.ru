@@ -2,72 +2,140 @@
 import { getCollection } from 'astro:content';
 import { isActiveEntity } from '../../../lib/archive.mjs';
 import { tourPath } from '../../../lib/routes';
+import { withBase } from '../../../lib/paths';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Hero from '../../../components/editorial/Hero.astro';
-import EditorialStatement from '../../../components/editorial/EditorialStatement.astro';
-import DestinationBand from '../../../components/editorial/DestinationBand.astro';
 import MiceNav from '../../../components/commercial/MiceNav.astro';
 import CommercialDetails from '../../../components/commercial/CommercialDetails.astro';
+import CommercialCaseGrid from '../../../components/commercial/CommercialCaseGrid.astro';
+import CommercialSearchRecord from '../../../components/commercial/CommercialSearchRecord.astro';
 import DmcFaq from '../../../components/commercial/DmcFaq.astro';
+import imexExamples from '../../../data/commercial/mice-programme-examples.json';
 
 const firstProgrammes = ['tour_panama_mice_7_days', 'tour_brazil_mice_7_days', 'tour_argentina_agricultural_11_days'];
 const programmeOrder = new Map(firstProgrammes.map((id, index) => [id, index]));
 const programmes = (await getCollection('tours', ({ data }) =>
   data.locale === 'ru' && isActiveEntity(data) && data.audiences.includes('b2b')
 )).sort((a, b) => (programmeOrder.get(a.data.id) ?? 999) - (programmeOrder.get(b.data.id) ?? 999) || b.data.priority - a.data.priority || a.data.title.localeCompare(b.data.title, 'ru'));
+const copy: Record<string, {title: string; format: string; text: string}> = {
+  tour_panama_mice_7_days: {
+    title: 'Панама: прием корпоративной группы', format: 'Корпоративная поездка',
+    text: 'Раздельные встречи прибывающих, автомобили и групповые автобусы, Панамский канал, прогулки по столице и гастрономия. Подойдет как основа для группы с разными рейсами и общей программой на месте.',
+  },
+  tour_brazil_mice_7_days: {
+    title: 'Бразилия: деловая программа и главные впечатления', format: 'MICE и конференции',
+    text: 'Сан-Паулу, Игуасу, Манаус и Рио-де-Жанейро. Пример сочетает конференционную часть и экскурсии; при подготовке новой поездки согласуем участие гостей, перелеты и время для каждого этапа.',
+  },
+  tour_argentina_agricultural_11_days: {
+    title: 'Аргентина: аграрная делегация', format: 'Профессиональные визиты',
+    text: 'No-Till, агротехнологии, хозяйства и исследовательские учреждения, перевод и культурная программа. Конкретные посещения согласуем с принимающими организациями под цели делегации.',
+  },
+};
+const hero = '/media/countries/panama/featureBands-1-enhanced-20261002.webp';
+const title = 'MICE и B2B-программы по Латинской Америке | Ada Tours';
+const description = 'Программы для корпоративных групп и делегаций: Панама, Бразилия, Аргентина, Игуасу и Коста-Верде. Маршруты по дням и примеры для расчета поездки с Ada Tours.';
 ---
 
-<BaseLayout
-  title="B2B-программы Ada Tours: корпоративные поездки и деловые группы"
-  description="Примеры B2B-программ Ada Tours с маршрутом по дням, транспортом, сопровождением и экскурсиями. Адаптируем поездку под даты, состав и рабочее расписание вашей группы."
-  image="/media/countries/panama/featureBands-1-enhanced-20261002.webp"
-  leadTitle="Рассчитать программу для нашей группы"
-  leadEntityId="b2b-programmes"
->
-  <Hero
-    eyebrow="B2B · MICE · Деловые группы"
-    title="Программы, с которых начинается поездка вашей команды"
-    intro="Подробные примеры поездок для корпоративных групп и делегаций: транспорт, сопровождение, деловые встречи и экскурсии по дням. Это программы для обсуждения, а не отчеты о проведенных проектах."
-    image="/media/countries/panama/featureBands-1-enhanced-20261002.webp"
-    ctaHref="#request"
-    ctaLabel="Рассчитать для нашей группы"
-  />
-
+<BaseLayout title={title} description={description} image={hero} leadTitle="Рассчитать программу для нашей группы" leadEntityId="b2b-programmes">
+  <CommercialSearchRecord id="b2b-programmes" title="MICE и B2B-программы для групп" description={description} image={hero} keywords={['MICE программы', 'B2B', 'корпоративные туры', 'Панама', 'Бразилия', 'Аргентина', 'конгресс', 'Игуасу', 'аграрные делегации']} />
+  <Hero compact compactCta mobilePhotoLead eyebrow="MICE · Примеры программ"
+    title="MICE и B2B-программы для вашей команды"
+    intro="Корпоративный прием, конференция, поощрительное путешествие или профессиональные визиты. Здесь можно сравнить форматы и открыть подробный маршрут. Даты, состав услуг и расчет адаптируем под вашу группу."
+    image={hero} ctaHref="#request" ctaLabel="Рассчитать выбранную программу" />
   <MiceNav active="programmes" />
 
-  <EditorialStatement
-    eyebrow="Примеры программ"
-    text="Здесь собраны предложения для новых B2B-запросов. Три свежие программы показывают разные задачи: прием группы в Панаме, конференционную поездку по Бразилии и профессиональные визиты в Аргентине. Выполненные проекты отдельно представлены в разделе кейсов."
-  />
+  <section class="programme-catalogue section" aria-labelledby="programme-catalogue-title">
+    <div class="container">
+      <header class="programme-heading">
+        <p class="eyebrow">Маршруты по дням</p>
+        <h2 id="programme-catalogue-title">Три задачи, три подробные программы</h2>
+        <p>Выберите ближайший к вашей задаче пример. Внутри каждой программы указаны маршрут, транспорт, сопровождение и известные включения. На их основе удобно обсуждать новый запрос.</p>
+      </header>
+      <div class="programme-grid" data-schema-programmes>
+        {programmes.map(({ data }) => (
+          <article class="programme-card">
+            <a class="programme-card__photo" href={withBase(tourPath(data))} tabindex="-1" aria-hidden="true">
+              {data.hero?.src && <img src={withBase(data.hero.src)} alt="" width="960" height="640" loading="lazy" decoding="async" />}
+            </a>
+            <div class="programme-card__body">
+              <p class="programme-card__meta">{copy[data.id]?.format ?? data.format} · {data.durationDays} дней</p>
+              <h3><a href={withBase(tourPath(data))}>{copy[data.id]?.title ?? data.title}</a></h3>
+              <p>{copy[data.id]?.text ?? data.lead}</p>
+              <a class="programme-link" href={withBase(tourPath(data))}>Смотреть программу по дням <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
 
-  <CommercialDetails
-    id="programmes-formats"
-    eyebrow="Три формата"
-    title="От корпоративного приема до отраслевой делегации"
-    intro="Показанные программы собраны из подробных маршрутов. Их окончательные даты, объем услуг, встречи и стоимость определяются при согласовании конкретной поездки."
+  <section class="imex-examples section" aria-labelledby="imex-examples-title">
+    <div class="container">
+      <header class="programme-heading">
+        <p class="eyebrow">Еще идеи для группы</p>
+        <h2 id="imex-examples-title">Программы Ada Tours в каталоге IMEX</h2>
+        <p>Эти предложения показывают другие сочетания деловой программы и отдыха. Выберите подходящий формат и расскажите, что хотите сохранить или изменить для своей команды.</p>
+      </header>
+      <div class="imex-grid">
+        {imexExamples.map(example => (
+          <article>
+            <p class="programme-card__meta">Пример программы · {example.duration}</p>
+            <h3>{example.title}</h3>
+            <p>{example.summary}</p>
+            <a class="programme-link" href={example.url} target="_blank" rel="noopener noreferrer">Программа Ada Tours на IMEX <span aria-hidden="true">↗</span></a>
+          </article>
+        ))}
+      </div>
+      <p class="imex-note">Состав и доступность услуг уточняем для ваших дат. Профессиональные профили компании собраны в разделе <a href={withBase('/partners/')}>партнеров Ada Tours</a>.</p>
+    </div>
+  </section>
+
+  <CommercialDetails id="programme-adaptation" eyebrow="Под вашу задачу" title="Что меняем при подготовке новой поездки"
     rows={[
-      { title: 'Панама · 7 дней', text: 'Раздельные встречи прибывающих, автомобили и групповые автобусы, Панамский канал, прогулки по столице, гастрономия и англоязычное сопровождение. Численность группы в исходном примере не указана.', href: '/panama/tour/panama-mice-7-days/', linkLabel: 'Открыть программу Панамы' },
-      { title: 'Бразилия · 7 дней', text: 'Сан-Паулу, Игуасу, Манаус и Рио-де-Жанейро. В примере есть конференционная часть и экскурсии; участие гостей и временные окна деловой и свободной программы требуется согласовать.', href: '/brazil/tour/brazil-mice-7-days/', linkLabel: 'Открыть программу Бразилии' },
-      { title: 'Аргентина · 11 дней', text: 'Аграрные хозяйства, исследовательские учреждения и профессиональные визиты в провинции Буэнос-Айрес, с переводом, транспортом и культурной частью. Посещение конкретных организаций зависит от их подтверждения.', href: '/argentina/tour/argentina-agricultural-11-days/', linkLabel: 'Открыть аграрную программу' },
-    ]}
-  />
+      { title: 'Города и продолжительность', text: 'Сохраняем обязательные точки, сопоставляем их с перелетами и временем в дороге. Можно сократить маршрут, добавить отдых или продолжить поездку в другой стране с нашей [принимающей командой](/dmc/).' },
+      { title: 'Рабочая и свободная программа', text: 'Фиксируем встречи, сессии и мероприятия с точным временем. Экскурсии и ужины размещаем вокруг них. Для [профессиональных визитов](/mice/business-delegations/) уточняем цели и получаем согласие принимающих организаций.' },
+      { title: 'Состав группы и услуги', text: 'Пересчитываем транспорт, размещение, питание и сопровождение под участников и их языки. Если прилеты различаются или сопровождающим нужна отдельная программа, учитываем это в маршруте.' },
+      { title: 'Стоимость и подтверждение', text: 'В предложении показываем включенные и исключенные услуги, допущения расчета, срок действия и статус бронирований. Для агентств действуют [согласованные условия работы](/dmc/terms/) с нетто-тарифом или подходящей комиссионной моделью.' },
+    ]} />
 
-  {programmes.map((entry, index) => (
-    <DestinationBand
-      eyebrow={`${entry.data.format} · ${entry.data.durationDays} дней`}
-      title={entry.data.title}
-      text={entry.data.lead}
-      image={entry.data.hero?.src}
-      href={tourPath(entry.data)}
-      align={index % 2 === 1 ? 'right' : 'left'}
-    />
-  ))}  <DmcFaq
-    title="Что важно при выборе программы"
-    items={[
-      { question: 'Это уже проведенные поездки Ada Tours?', answer: 'На этой странице представлены примеры подробных B2B-программ, которые можно использовать при подготовке нового запроса. Подтвержденные выполненные проекты опубликованы отдельно в разделе «Кейсы».' },
-      { question: 'Какие услуги входят в стоимость?', answer: 'В каждой программе указаны известные включенные и исключенные услуги. Размещение, билеты, конференции и отдельные визиты нельзя считать включенными, если это прямо не предусмотрено условиями выбранного маршрута.' },
-      { question: 'Можно ли изменить города, транспорт или деловой график?', answer: 'Да, цель раздела — дать основу для индивидуального обсуждения. При перерасчете определяются новые даты, размер группы, доступность поставщиков и подтверждаемые встречи.' },
-      { question: 'Где посмотреть опыт уже проведенных корпоративных поездок?', answer: 'В разделе кейсов есть две опубликованные программы работы Ada Tours с группами на 30 и 8 человек в Бразилии.' },
-    ]}
-  />
+  <CommercialCaseGrid id="programme-cases" title="А так прошли выполненные поездки"
+    intro="Посмотрите, как Ada Tours организовала работу с реальными группами в Бразилии: от катамарана и вечернего мероприятия до деловых визитов с переводчиком."
+    caseIds={['case_mice_corporate_group_rio_angra_2026', 'case_mice_business_delegation_sao_paulo_2026']}
+    summaries={{
+      case_mice_corporate_group_rio_angra_2026: 'Корпоративная группа из 30 гостей в Рио и Ангре: транспорт, гиды, 6-часовой катамаран с питанием, гала-ужин и ночной трансфер.',
+      case_mice_business_delegation_sao_paulo_2026: 'Делегация из 8 участников: Сан-Паулу, Кампинас и Гуаружа, рабочие переезды и перевод на русском, португальском и английском.',
+    }} />
+
+  <DmcFaq title="Как выбрать и адаптировать программу" items={[
+    { question: 'Можно ли использовать программу как основу и изменить половину маршрута?', answer: 'Да. Пришлите выбранный пример, даты, число участников, бюджет и обязательные пункты. Обсудим изменения, проверим логистику и подготовим новый состав услуг с расчетом.' },
+    { question: 'Какая программа подойдет для конференции?', answer: 'Посмотрите пример Бразилии и конгрессную программу Буэнос-Айреса. Для вашего события понадобятся место проведения, расписание сессий, состав участников и пожелания по свободной части. По ним соберем размещение, трансферы и программу.' },
+    { question: 'Где показаны профессиональные и аграрные визиты?', answer: 'В [программе Аргентины на 11 дней](/argentina/tour/argentina-agricultural-11-days/). Она дает основу отраслевой поездки. Список организаций и содержание встреч согласуем под вашу делегацию; каждое посещение подтверждает принимающая сторона.' },
+    { question: 'Все перечисленные услуги входят в стоимость новой поездки?', answer: 'Итоговый состав включений указан в предложении по вашему запросу. При изменении дат, маршрута и группы пересчитываем затронутые услуги. Отдельно обозначаем исключения, дополнительные опции и позиции, ожидающие подтверждения.' },
+    { question: 'Есть ли примеры уже выполненных проектов?', answer: 'Да. На странице показаны корпоративная группа из 30 гостей и делегация из 8 участников. В [разделе кейсов](/cases/) можно изучить их задачи и работу команды, а также индивидуальную поездку по Перу и Боливии.' },
+    { question: 'Можно ли получить предложение под брендом нашего агентства?', answer: 'Да. Адаптируем программу и практические материалы под бренд партнера. Формат ваучеров, встречающую табличку и представление гида согласуем для бронирования. Подробности — на странице [для турагентств](/dmc/travel-agencies/).' },
+  ]} />
 </BaseLayout>
+
+<style>
+  .programme-catalogue { background: var(--color-bg); }
+  .programme-heading { max-width: 920px; margin-bottom: 34px; }
+  .programme-heading h2 { margin: 10px 0 20px; font-size: clamp(2rem, 3.3vw, 3.6rem); line-height: 1.1; }
+  .programme-heading > p:last-child { max-width: 820px; color: var(--color-text-muted); }
+  .programme-grid, .imex-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 2.4vw, 34px); }
+  .programme-card { display: flex; flex-direction: column; border: 1px solid var(--color-line); }
+  .programme-card__photo { display: block; }
+  .programme-card__photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+  .programme-card__body { display: flex; flex: 1; flex-direction: column; padding: clamp(20px, 2vw, 28px); }
+  .programme-card__meta { margin: 0 0 12px; color: var(--color-brand-deep); font-size: .76rem; line-height: 1.5; }
+  h3 { margin: 0 0 18px; font-size: clamp(1.35rem, 1.75vw, 1.85rem); line-height: 1.2; }
+  h3 a { color: inherit; text-decoration: none; }
+  h3 a:hover { color: var(--color-brand-deep); }
+  .programme-card__body > p:not(.programme-card__meta), .imex-grid article > p:not(.programme-card__meta) { margin: 0 0 24px; color: var(--color-text-muted); line-height: 1.6; }
+  .programme-link { display: inline-flex; gap: 9px; align-items: baseline; margin-top: auto; font-size: .88rem; color: var(--color-brand-deep); text-underline-offset: .2em; }
+  .imex-examples { background: var(--color-bg-alt, #f4f2ec); }
+  .imex-grid article { display: flex; flex-direction: column; padding: 26px 0 0; border-top: 2px solid var(--color-gold-deep); }
+  .imex-note { max-width: 850px; margin: 30px 0 0; color: var(--color-text-muted); font-size: .87rem; }
+  .imex-note a { color: var(--color-brand-deep); text-underline-offset: .2em; }
+  @media (max-width: 1050px) { .programme-grid, .imex-grid { grid-template-columns: 1fr; } .programme-card { display: grid; grid-template-columns: minmax(220px, .7fr) 1fr; } .programme-card__photo img { height: 100%; } .imex-grid { gap: 12px; } .imex-grid article { padding-bottom: 15px; } }
+  @media (max-width: 620px) { .programme-card { display: flex; } .programme-card__photo img { height: auto; } }
+</style>

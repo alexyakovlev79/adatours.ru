@@ -18,6 +18,8 @@ const stats = [
 ].filter(Boolean);
 
 const serviceLabels: Record<string, string> = {
+  '/dmc/': 'Принимающий туроператор Ada Tours',
+  '/dmc/travel-agencies/': 'Сотрудничество с турагентствами',
   '/mice/': 'MICE и корпоративные поездки',
   '/mice/business-delegations/': 'Деловые делегации',
 };
@@ -33,6 +35,8 @@ const serviceLabels: Record<string, string> = {
     title={d.title}
     intro={d.summary ?? (d.cities.length ? d.cities.join(' · ') : d.segment)}
     image={d.hero?.src} video={d.heroVideo}
+    compact compactCta mobilePhotoLead
+    ctaHref="#request"
     ctaLabel="Обсудить похожую задачу"
   />
 

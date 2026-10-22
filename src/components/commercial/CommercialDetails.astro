@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import AuthorityInline from '../authority/AuthorityInline.astro';
 
 interface DetailRow {
   title: string;
@@ -21,13 +22,13 @@ const { id, eyebrow, title, intro, rows } = Astro.props;
   <div class="container">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
     <h2 id={id}>{title}</h2>
-    {intro && <p class="commercial-details__intro">{intro}</p>}
+    {intro && <p class="commercial-details__intro"><AuthorityInline text={intro} /></p>}
     <div class="commercial-details__rows">
       {rows.map((row) => (
         <article class="commercial-details__row">
           <h3>{row.title}</h3>
           <div>
-            <p>{row.text}</p>
+            <p><AuthorityInline text={row.text} /></p>
             {row.href && (
               <a href={withBase(row.href)}>{row.linkLabel ?? 'Подробнее'} <span aria-hidden="true">↗</span></a>
             )}

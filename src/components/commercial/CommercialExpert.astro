@@ -1,0 +1,9 @@
+---
+import AuthoritySpeaker from '../authority/AuthoritySpeaker.astro';
+interface Props { title?: string; text?: string; }
+const { title = 'Обсудите задачу с командой, которая работает на месте', text = 'Ada Tours работает из Рио-де-Жанейро. Основатель компании Анна Аванесова знакомит партнеров с направлениями и практикой организации поездок на [вебинарах для турагентств](/webinars/). Пришлите вашу задачу: команда свяжет пожелания гостей с маршрутом и условиями местных поставщиков.' } = Astro.props;
+---
+<AuthoritySpeaker
+  section={{ id: 'commercial-expert', eyebrow: 'Экспертиза Ada Tours', heading: title, paragraphsMarkdown: [text] }}
+  speaker={{ name: 'Анна Аванесова', role: 'Основатель и руководитель Ada Tours', photo: '/media/people/anna-avanesova/photo-enhanced-20261022-v2.webp', photoAlt: 'Анна Аванесова, основатель Ada Tours', href: '/team/anna-avanesova/', linkLabel: 'Опыт и выступления Анны' }}
+/>

@@ -1,5 +1,5 @@
 import { parse, parseFragment } from 'parse5';
-import { absoluteUrl, cleanText } from './structured-data.mjs';
+import { absoluteUrl, cleanText, quotationText } from './structured-data.mjs';
 export const attr = (node, name) => node?.attrs?.find((a) => a.name === name)?.value;
 export const hasAttr = (node, name) => node?.attrs?.some((a) => a.name === name) || false;
 export function* walk(node) { yield node; for (const child of node.childNodes || []) yield* walk(child); }
@@ -42,6 +42,11 @@ export function inspectHtml(html, { root, pageUrl, fullDocument = false } = {}) 
       name: text(heading(n)) || attr(n, 'aria-label') || text(n).slice(0, 180) };
   };
   const linksFor = (n) => [...walk(n)].filter((c) => c.tagName === 'a' && visible(c)).map(linkData).filter((l) => l.href);
+  const programmeContainer = elements.find((n) => hasAttr(n, 'data-schema-programmes'));
+  const programmeLinks = programmeContainer ? linksFor(programmeContainer) : undefined;
+  const caseQuotations = elements.filter((n) => n.tagName === 'blockquote' && hasAttr(n, 'data-case-quotation'))
+    .map((n) => ({ entityId: attr(n, 'data-case-quotation'), text: quotationText(textContent(n)) }))
+    .filter((item) => item.entityId && item.text);
   const catalog = elements.find((n) => hasAttr(n, 'data-catalog-root'));
   const catalogItems = elements.find((n) => hasAttr(n, 'data-catalog-items'));
   const groups = [];
@@ -89,7 +94,7 @@ export function inspectHtml(html, { root, pageUrl, fullDocument = false } = {}) 
   }
   const uniqueFaq = [...new Map(faq.map((q) => [q.question, q])).values()];
   return { dom, legacy, html: cleanHtml, facts: { text: text(content), h1: text(elements.find((n) => n.tagName === 'h1')),
-    images, primaryImage: images[0], catalog: Boolean(catalog), groups, sections, faq: uniqueFaq,
+    images, primaryImage: images[0], catalog: Boolean(catalog), groups, sections, faq: uniqueFaq, programmeLinks, caseQuotations,
     priceVisible: elements.some((n) => /(?:^|\s)(?:tour-pricing|pricing)(?:\s|$)/.test(attr(n, 'class') || '')) },
     metadata: { canonical: attr(all.find((n) => n.tagName === 'link' && attr(n, 'rel') === 'canonical'), 'href'),
       robots: attr(all.find((n) => n.tagName === 'meta' && attr(n, 'name') === 'robots'), 'content') || '',

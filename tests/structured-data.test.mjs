@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { buildStructuredData, absoluteUrl, logicalPath, hasType, safeJsonLd } from '../src/lib/structured-data.mjs';
+import { inspectHtml } from '../src/lib/structured-data-html.mjs';
+import programmeExamples from '../src/data/commercial/mice-programme-examples.json' with { type: 'json' };
 const root = 'https://adatours.ru/';
 const organization = {
   name: 'Ada Tours', url: root, legalName: 'Ada Tours 2007 - Operadora de Turismo LTDA',
@@ -23,6 +25,137 @@ function build(path = tour.path, options = {}) {
 }
 const nodes = (graph, type) => graph['@graph'].filter((node) => hasType(node, type));
 const entity = (graph) => graph['@graph'].find((node) => node['@id'] === `${root}brazil/tour/trip/#tour`);
+
+const peru = record('country', 'country_peru', '/peru/', { name: 'Перу' });
+const bolivia = record('country', 'country_bolivia', '/bolivia/', { name: 'Боливия' });
+const fitCase = record('case', 'case_fit_peru_bolivia_complex_trip', '/cases/peru-bolivia-complex-trip/', {
+  name: undefined, title: 'Перу и Боливия: выполненная поездка', projectStatus: 'completed',
+  countries: ['country_peru', 'country_bolivia'], relatedServices: ['/dmc/', '/dmc/travel-agencies/'],
+  testimonial: { quote: 'Спасибо за <Перу> & Боливию!\nВсё прошло отлично.', caption: 'Отзыв о поездке' },
+});
+const quoteMarkup = `<blockquote data-case-quotation="${fitCase.data.id}"><p>Спасибо за &lt;Перу&gt; &amp; Боливию!<br>Всё прошло отлично.</p></blockquote>`;
+function buildCasePage(path, html, data = fitCase) {
+  return build(path, { records: [peru, bolivia, data], document: inspectHtml(html, { root, pageUrl: absoluteUrl(path, root) }).facts });
+}
+
+test('completed FIT case links its real countries and DMC services to an anonymous visible quotation', () => {
+  const graph = buildCasePage(fitCase.path, `<h1>Перу и Боливия</h1>${quoteMarkup}<a href="/dmc/">DMC</a><a href="/dmc/travel-agencies/">Турагентствам</a>`);
+  const article = nodes(graph, 'Article')[0];
+  const quote = nodes(graph, 'Quotation')[0];
+  assert.equal(quote['@id'], `${root}cases/peru-bolivia-complex-trip/#testimonial`);
+  assert.equal(quote.text, 'Спасибо за <Перу> & Боливию! Всё прошло отлично.');
+  assert.equal(quote.isPartOf['@id'], article['@id']);
+  assert.deepEqual(article.hasPart, [{ '@id': quote['@id'] }]);
+  assert.deepEqual(article.spatialCoverage.map((item) => item['@id']), [`${root}peru/#country`, `${root}bolivia/#country`]);
+  assert.equal(nodes(graph, 'Country').length, 2);
+  assert.equal(nodes(graph, 'Service').length, 2);
+  for (const service of nodes(graph, 'Service')) {
+    assert.equal(service.provider['@id'], `${root}#organization`);
+    assert.ok(service.subjectOf.some((item) => item['@id'] === article['@id']));
+    assert.ok(article.about.some((item) => item['@id'] === service['@id']));
+    assert.ok(quote.about.some((item) => item['@id'] === service['@id']));
+  }
+  for (const field of ['author', 'creator', 'reviewRating', 'aggregateRating', 'datePublished']) assert.equal(quote[field], undefined);
+  assert.equal(nodes(graph, 'Person').length, 0);
+  assert.equal(nodes(graph, 'Review').length, 0);
+  assert.equal(nodes(graph, 'AggregateRating').length, 0);
+  assert.equal(article.datePublished, undefined);
+  assert.ok(!safeJsonLd(graph).includes('<Перу>'));
+  assert.equal(JSON.parse(safeJsonLd(graph))['@graph'].find((item) => hasType(item, 'Quotation')).text, quote.text);
+});
+
+test('hidden, mismatched and unmarked case text never becomes a quotation', () => {
+  for (const html of [
+    quoteMarkup.replace('<blockquote ', '<blockquote hidden '),
+    quoteMarkup.replace(fitCase.data.id, 'case_someone_else'),
+    quoteMarkup.replace('Всё прошло отлично.', 'Другая формулировка.'),
+    quoteMarkup.replace(/blockquote/g, 'div'),
+  ]) {
+    assert.equal(nodes(buildCasePage(fitCase.path, html), 'Quotation').length, 0);
+  }
+  const planned = { ...fitCase, data: { ...fitCase.data, projectStatus: 'planned' } };
+  const graph = buildCasePage(fitCase.path, `${quoteMarkup}<a href="/dmc/">DMC</a>`, planned);
+  assert.equal(nodes(graph, 'Quotation').length, 0);
+  assert.equal(nodes(graph, 'Service').length, 0);
+});
+
+test('DMC proof follows a visible completed case link and does not turn the FIT case into MICE evidence', () => {
+  const html = `<h1>Для турагентств</h1><a href="${fitCase.path}">Перу и Боливия</a>${quoteMarkup}<a href="/dmc/terms/">Условия работы</a>`;
+  const graph = buildCasePage('/dmc/travel-agencies/', html);
+  const service = nodes(graph, 'Service')[0];
+  const article = nodes(graph, 'Article')[0];
+  assert.equal(service['@id'], `${root}dmc/travel-agencies/#service`);
+  assert.equal(service.termsOfService, `${root}dmc/terms/`);
+  assert.equal(nodes(graph, 'WebPage')[0].mainEntity['@id'], service['@id']);
+  assert.deepEqual(service.subjectOf, [{ '@id': article['@id'] }]);
+  assert.equal(nodes(graph, 'Quotation').length, 1);
+  assert.deepEqual(nodes(graph, 'Quotation')[0].about, [{ '@id': service['@id'] }]);
+  const absent = buildCasePage('/dmc/', '<h1>DMC</h1>');
+  assert.equal(nodes(absent, 'Service')[0].subjectOf, undefined);
+  assert.equal(nodes(absent, 'Article').length, 0);
+  const mice = buildCasePage('/mice/', `<h1>MICE</h1><a href="${fitCase.path}">Пример логистики</a>`);
+  assert.equal(nodes(mice, 'Service')[0].subjectOf, undefined);
+  assert.equal(nodes(mice, 'Quotation').length, 0);
+});
+
+test('a visible quotation on partnership terms keeps only the case actual service relations', () => {
+  const graph = buildCasePage('/dmc/terms/', `<h1>Условия сотрудничества</h1>
+    <a href="${fitCase.path}">Кейс Перу и Боливии</a>${quoteMarkup}
+    <a href="/dmc/">DMC</a><a href="/dmc/travel-agencies/">Турагентствам</a>`);
+  const services = nodes(graph, 'Service');
+  const terms = services.find((item) => item['@id'] === `${root}dmc/terms/#service`);
+  const quote = nodes(graph, 'Quotation')[0];
+  const article = nodes(graph, 'Article')[0];
+  assert.equal(terms.subjectOf, undefined);
+  assert.equal(nodes(graph, 'Quotation').length, 1);
+  assert.deepEqual(quote.about.map((item) => item['@id']), [`${root}dmc/#service`, `${root}dmc/travel-agencies/#service`]);
+  assert.deepEqual(article.hasPart, [{ '@id': quote['@id'] }]);
+  assert.ok(!article.about.some((item) => item['@id'] === terms['@id']));
+  for (const service of services.filter((item) => item !== terms)) {
+    assert.deepEqual(service.subjectOf, [{ '@id': article['@id'] }]);
+  }
+});
+
+test('B2B programme collection describes one ordered list of actual cards, excluding repeated and hidden links', () => {
+  const first = { ...tour, data: { ...tour.data, audiences: ['b2b'], priceFrom: null } };
+  const second = { ...multiTour, data: { ...multiTour.data, audiences: ['b2b'] } };
+  const hidden = { ...vipTour, data: { ...vipTour.data, audiences: ['b2b'] } };
+  const html = `<h1>B2B-программы</h1><section><a href="${first.path}">Пояснение</a><a href="${hidden.path}">Дополнительная ссылка</a></section>
+    <div data-schema-programmes><section><a href="${second.path}">Вторая программа</a></section><section><a href="${first.path}">Первая программа</a><a href="${first.path}">Подробнее</a></section><section hidden><a href="${hidden.path}">Скрыта</a></section></div>`;
+  const document = inspectHtml(html, { root, pageUrl: `${root}mice/programmes/` }).facts;
+  const graph = build('/mice/programmes/', { records: [brazil, argentina, first, second, hidden], document });
+  const page = nodes(graph, 'CollectionPage')[0];
+  const lists = nodes(graph, 'ItemList');
+  assert.equal(lists.length, 1);
+  assert.equal(page.mainEntity['@id'], `${root}mice/programmes/#programmes`);
+  assert.equal(lists[0].numberOfItems, 2);
+  assert.deepEqual(lists[0].itemListElement.map((item) => item.url), [absoluteUrl(second.path, root), absoluteUrl(first.path, root)]);
+  assert.deepEqual(lists[0].itemListElement.map((item) => item.position), [1, 2]);
+  assert.equal(nodes(graph, 'TouristTrip').length, 2);
+  const missing = build('/mice/programmes/', { document: { groups: document.groups } });
+  assert.equal(nodes(missing, 'ItemList').length, 0);
+  assert.equal(nodes(missing, 'CollectionPage')[0].mainEntity, undefined);
+});
+
+test('a legacy review without an author is ignored safely', () => {
+  const graph = build('/dmc/', { extra: { '@type': 'Review', reviewBody: 'Спасибо!' }, document: { text: 'Спасибо!' } });
+  assert.equal(nodes(graph, 'Review').length, 0);
+});
+
+test('programme citations include only visible registered sources without creating products or identity links', () => {
+  const [first, second, third] = programmeExamples;
+  const html = `<h1>Примеры программ</h1><section>
+    <a href="${first.url}">${first.title}</a><a href="${first.url}">Повторная ссылка</a>
+    <a href="${second.url}">${second.title}</a>
+    <div hidden><a href="${third.url}">${third.title}</a></div>
+    <a href="https://example.com/unregistered">Другой материал</a></section>`;
+  const document = inspectHtml(html, { root, pageUrl: `${root}mice/programmes/` }).facts;
+  const graph = build('/mice/programmes/', { document });
+  assert.deepEqual(nodes(graph, 'CollectionPage')[0].citation, [first.url, second.url]);
+  for (const type of ['TouristTrip', 'Product', 'Article']) assert.equal(nodes(graph, type).length, 0);
+  assert.ok(!graph['@graph'].some((node) => node.sameAs?.some((url) => programmeExamples.some((item) => item.url === url))));
+  assert.equal(nodes(build('/mice/', { document }), 'WebPage')[0].citation, undefined);
+});
 
 test('production and preview paths have one base prefix and reject non-web protocols', () => {
   const preview = 'https://alexyakovlev79.github.io/adatours.ru/';

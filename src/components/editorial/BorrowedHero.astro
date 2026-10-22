@@ -1,0 +1,8 @@
+---
+import HeroVideo from './HeroVideo.astro';
+import { videoForBorrowedHero } from '../../lib/hero-video-catalog.ts';
+interface Props { image?: string; layer?: 'background' | 'foreground' }
+const { image, layer = 'background' } = Astro.props;
+const video = await videoForBorrowedHero(image, Astro.url.pathname);
+---
+{video ? <HeroVideo {...video} lazy placement="cover" selection="orientation" controls={false} layer={layer}><slot /></HeroVideo> : <slot />}

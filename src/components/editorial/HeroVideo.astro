@@ -5,14 +5,18 @@ interface Props {
   src?: string; mobileSrc?: string; poster?: string; mobilePoster?: string;
   lazy?: boolean;
   controlsPosition?: 'hero' | 'cover';
+  selection?: 'device' | 'orientation';
+  placement?: 'hero' | 'cover';
+  controls?: boolean;
+  layer?: 'background' | 'foreground';
 }
-const { src, mobileSrc, poster, mobilePoster, lazy = false, controlsPosition = 'hero' } = Astro.props;
+const { src, mobileSrc, poster, mobilePoster, lazy = false, controlsPosition = 'hero', selection = 'device', placement = 'hero', controls = true, layer = 'background' } = Astro.props;
 const firstFrameFor = (source?: string) => videoPosters.items.find((item) => item.src === source)?.poster;
 const desktopPoster = poster ?? firstFrameFor(src);
 const phonePoster = mobilePoster ?? firstFrameFor(mobileSrc);
 ---
 
-<hero-background-video data-lazy={lazy ? '' : undefined} data-controls-position={controlsPosition}>
+<hero-background-video data-lazy={lazy ? '' : undefined} data-controls-position={controlsPosition} data-selection={selection} data-placement={placement} data-layer={layer}>
   <!-- Inert even to the preload scanner: activate ONLY for a photo device branch. -->
   <template data-static-hero><slot /></template>
   <noscript><slot /></noscript>
@@ -24,111 +28,14 @@ const phonePoster = mobilePoster ?? firstFrameFor(mobileSrc);
     data-poster={desktopPoster ? withBase(desktopPoster) : undefined}
     data-mobile-poster={phonePoster ? withBase(phonePoster) : undefined}
     muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
-  <button class="hero-video-toggle" type="button" hidden aria-label="Приостановить видео">
+  {controls && <button class="hero-video-toggle" type="button" hidden aria-label="Приостановить видео">
     <span aria-hidden="true">Ⅱ</span>
-  </button>
+  </button>}
 </hero-background-video>
 
 <script>
-  import { selectHeroVideo } from '../../lib/hero-video-selection.mjs';
-  import { observeMediaLoadingWindow } from '../../lib/media-loading-window.mjs';
-  class HeroBackgroundVideo extends HTMLElement {
-    cleanup?: () => void;
-    connectedCallback() {
-      this.cleanup?.();
-      const video = this.querySelector('video');
-      const button = this.querySelector('button');
-      if (!video || !button) return;
-      const selected = selectHeroVideo(video.dataset, navigator);
-      const surface = this.closest('[data-video-surface]') ?? this.parentElement!;
-      const lazy = this.hasAttribute('data-lazy');
-      let ready = !lazy || this.dataset.loadState === 'loaded';
-      let stopLoading: (() => void) | undefined;
-      const showPhoto = () => {
-        if (this.dataset.mode === 'photo') return;
-        this.dataset.mode = 'photo';
-        const template = this.querySelector<HTMLTemplateElement>('template[data-static-hero]');
-        if (template) this.append(template.content.cloneNode(true));
-      };
-      if (!selected) {
-        const activatePhoto = () => { this.dataset.loadState = 'loaded'; showPhoto(); };
-        if (ready) activatePhoto();
-        else {
-          this.dataset.loadState = 'pending';
-          stopLoading = observeMediaLoadingWindow(surface, activatePhoto);
-        }
-        this.cleanup = () => stopLoading?.();
-        return;
-      }
-      this.dataset.mode = 'video';
-      const showFrame = () => {
-        // Only the chosen movie's first frame is requested; the photo stays inert.
-        if (!selected.poster || this.querySelector('.hero-video-poster')) return;
-        const template = this.querySelector<HTMLTemplateElement>('template[data-first-frame]');
-        const frame = template?.content.cloneNode(true) as DocumentFragment | undefined;
-        const image = frame?.querySelector('img');
-        if (frame && image) { image.src = selected.poster; this.insertBefore(frame, video); }
-      };
-      let visible = false;
-      let pausedByUser = false;
-      let failed = false;
-      const events = new AbortController();
-      const updateButton = () => {
-        button.setAttribute('aria-label', video.paused ? 'Воспроизвести видео' : 'Приостановить видео');
-        button.firstElementChild!.textContent = video.paused ? '▶' : 'Ⅱ';
-      };
-      const play = () => {
-        if (!ready || failed || pausedByUser || !visible || document.hidden) return;
-        if (!video.getAttribute('src')) video.src = selected.src;
-        video.muted = true;
-        void video.play().catch(() => { button.hidden = false; updateButton(); });
-      };
-      video.addEventListener('playing', () => {
-        video.classList.add('is-playing');
-        button.hidden = false;
-        updateButton();
-      }, { signal: events.signal });
-      video.addEventListener('pause', updateButton, { signal: events.signal });
-      video.addEventListener('error', () => {
-        failed = true;
-        video.classList.remove('is-playing');
-        button.hidden = true;
-        // A failed movie keeps its matching frame. With no frame, the photo is now visible.
-        if (!selected.poster) showPhoto();
-      }, { signal: events.signal });
-      button.addEventListener('click', () => {
-        if (!video.paused) { pausedByUser = true; video.pause(); }
-        else { pausedByUser = false; play(); }
-      }, { signal: events.signal });
-      const onVisibility = () => document.hidden ? video.pause() : play();
-      document.addEventListener('visibilitychange', onVisibility, { signal: events.signal });
-      const activateVideo = () => {
-        ready = true;
-        this.dataset.loadState = 'loaded';
-        showFrame();
-        if (lazy && !video.getAttribute('src')) {
-          // Prefetch near the viewport, but play only while actually visible.
-          video.preload = 'auto';
-          video.src = selected.src;
-          video.load();
-        }
-        play();
-      };
-      if (ready) activateVideo();
-      else {
-        this.dataset.loadState = 'pending';
-        stopLoading = observeMediaLoadingWindow(surface, activateVideo);
-      }
-      const observer = new IntersectionObserver(([entry]) => {
-        visible = entry.isIntersecting && entry.intersectionRatio > 0;
-        if (visible) play(); else video.pause();
-      }, { threshold: [0, Number.EPSILON] });
-      observer.observe(surface);
-      this.cleanup = () => { stopLoading?.(); observer.disconnect(); events.abort(); video.pause(); };
-    }
-    disconnectedCallback() { this.cleanup?.(); }
-  }
-  if (!customElements.get('hero-background-video')) customElements.define('hero-background-video', HeroBackgroundVideo);
+  import { initializeVideoCovers } from '../../scripts/video-covers.mjs';
+  initializeVideoCovers();
 </script>
 
 <style>
@@ -144,6 +51,8 @@ const phonePoster = mobilePoster ?? firstFrameFor(mobileSrc);
     object-position: center;
     pointer-events: none;
   }
+  hero-background-video[data-layer="foreground"] .hero-video,
+  hero-background-video[data-layer="foreground"] .hero-video-poster { z-index: 0; }
   .hero-video { opacity: 0; }
   .hero-video.is-playing { opacity: 1; }
   .hero-video-toggle {

@@ -2,6 +2,7 @@
 import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import HeroVideo from './HeroVideo.astro';
+import { videoForBorrowedHero } from '../../lib/hero-video-catalog.ts';
 import VipBadge from '../tour/VipBadge.astro';
 import { getVipTourPaths } from '../../lib/vip-catalog';
 
@@ -30,7 +31,7 @@ const {
   href,
   image,
   mobileCover,
-  video,
+  video: explicitVideo,
   align = 'left',
   imageTextAlign,
   mediaStatus,
@@ -39,6 +40,7 @@ const {
   strongOverlay = false,
 } = Astro.props;
 
+const video = explicitVideo ?? await videoForBorrowedHero(image, Astro.url.pathname);
 const resolvedImage = image ? withBase(image) : undefined;
 const style = resolvedImage ? `--band-image: url("${resolvedImage}")${mobileCover ? `;--band-mobile-image: url("${withBase(mobileCover.src)}");--band-mobile-position: ${mobileCover.position}` : ''}` : undefined;
 const resolvedHref = withBase(href);
@@ -54,7 +56,7 @@ const vip = (await getVipTourPaths()).has(href);
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
   >
-    {resolvedImage
+    {video ? <span class="band-card__video-surface" data-video-surface><HeroVideo {...video} lazy placement="cover" selection="orientation" controls={false} layer="foreground"><img class="band-card__media" src={resolvedImage} alt="" aria-hidden="true" loading="lazy" /></HeroVideo></span> : resolvedImage
       ? <img class="band-card__media" src={resolvedImage} alt="" aria-hidden="true" loading="lazy" referrerpolicy="no-referrer" />
       : <span class="band-card__media" aria-hidden="true"></span>}
     <span class="band-card__overlay" aria-hidden="true"></span>
@@ -71,7 +73,7 @@ const vip = (await getVipTourPaths()).has(href);
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}
   >
-    <HeroVideo {...video} lazy controlsPosition="cover">
+    <HeroVideo {...video} lazy controlsPosition="cover" placement="cover" selection="orientation">
       <span class="band__photo" style={style} data-mobile-cover={mobileCover ? 'home-p02' : undefined} aria-hidden="true"></span>
     </HeroVideo>
     <div class="band__overlay"></div>
@@ -124,10 +126,13 @@ const vip = (await getVipTourPaths()).has(href);
   }
 
   .band-card__media,
+  .band-card__video-surface,
   .band-card__overlay {
     position: absolute;
     inset: 0;
   }
+
+  .band-card__video-surface { z-index: -2; overflow: hidden; isolation: isolate; }
 
   .band-card__media {
     z-index: -2;
@@ -314,12 +319,15 @@ const vip = (await getVipTourPaths()).has(href);
     }
 
     .band-card__media,
+    .band-card__video-surface,
     .band-card__overlay {
       position: static;
       grid-column: 1 / -1;
       grid-row: 1;
       inset: auto;
     }
+
+    .band-card__video-surface { position: relative; z-index: 0; }
 
     .band-card__media {
       z-index: 0;

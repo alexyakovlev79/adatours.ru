@@ -150,7 +150,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     vip={vip}
     eyebrow={archived ? "Архивный тур" : b2b ? "B2B-программа" : d.format === "Сборный" ? "Сборный тур" : "Индивидуальный тур"}
     title={d.title}
-    image={d.hero?.src}
+    image={d.hero?.src} video={d.heroVideo}
     imageTextAlign={d.imageTextAlign}
     mediaStatus={d.hero?.status}
     replacementReason={d.hero?.replacementReason}

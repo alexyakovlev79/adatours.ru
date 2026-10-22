@@ -32,7 +32,7 @@ const serviceLabels: Record<string, string> = {
     eyebrow={d.projectStatus === 'planned' ? 'Запланированная программа' : isProgramme ? 'Пример программы Ada Tours' : d.nda ? 'Анонимный кейс' : 'Кейс Ada Tours'}
     title={d.title}
     intro={d.summary ?? (d.cities.length ? d.cities.join(' · ') : d.segment)}
-    image={d.hero?.src}
+    image={d.hero?.src} video={d.heroVideo}
     ctaLabel="Обсудить похожую задачу"
   />
 

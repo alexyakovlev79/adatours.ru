@@ -1,4 +1,5 @@
 ---
+import HeroImage from '../editorial/HeroImage.astro';
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
@@ -45,7 +46,7 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
                 </details>
 
                 <div class="highlight__media">
-                  <img
+                  <HeroImage fill
                     src={withBase(image.src)}
                     alt={imageCaption(image.src, image).alt}
                     title={imageCaption(image.src, image).hover}
@@ -179,6 +180,7 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
   }
 
   .highlight__media {
+    position: relative;
     width: 100%;
     margin-top: 18px;
     overflow: hidden;
@@ -189,7 +191,7 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
     margin-top: 22px;
   }
 
-  .highlight__media img {
+  .highlight__media :global(img[data-cover-photo]) {
     display: block;
     width: 100%;
     height: 100%;
@@ -253,7 +255,7 @@ const mediaMode = items.length > 0 && items.every((item) => Boolean(item.image?.
       aspect-ratio: 16 / 9;
     }
 
-    .highlight__details[open] + .highlight__media img {
+    .highlight__details[open] + .highlight__media :global(img[data-cover-photo]) {
       min-height: 0;
       aspect-ratio: auto;
     }

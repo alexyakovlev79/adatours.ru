@@ -3,6 +3,7 @@ import PrimaryCTA from '../global/PrimaryCTA.astro';
 import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import HeroVideo from './HeroVideo.astro';
+import { videoForBorrowedHero } from '../../lib/hero-video-catalog.ts';
 import VipBadge from '../tour/VipBadge.astro';
 import mobileHeroPilot from '../../data/media/mobile-hero-pilot-20261021.json';
 
@@ -52,7 +53,9 @@ const {
 
 const resolvedImage = image ? withBase(image) : undefined;
 // The wrapper keeps the ordinary photograph inert until the device branch is known.
-const MediaWrapper = video ? HeroVideo : 'div';
+const borrowedVideo = video ? undefined : await videoForBorrowedHero(image, Astro.url.pathname);
+const coverVideo = video ?? borrowedVideo;
+const MediaWrapper = coverVideo ? HeroVideo : 'div';
 const hasBreadcrumbs = Astro.slots.has('breadcrumbs');
 // Deliberately scoped to the pilot page AND its unchanged original hero.
 const mobileHero = !mobilePhotoLead ? mobileHeroPilot.items.find((item) =>
@@ -65,13 +68,13 @@ const mobileSrcset = mobileHero?.variants.map((v) => `${withBase('/' + v.key)} $
 <section
   class:list={['hero', { 'hero--compact': compact, 'hero--home': home, 'hero--image': image, 'hero--tour': tour, 'hero--content-sized': contentSized, 'hero--compact-cta': compactCta, 'hero--photo-lead': mobilePhotoLead, 'hero--with-breadcrumbs': hasBreadcrumbs }]}
   style={imagePositionMobile ? { '--hero-image-position-mobile': imagePositionMobile } : undefined}
-  data-video-surface={video ? "" : undefined}
+  data-video-surface={coverVideo ? "" : undefined}
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
 >
-  {(resolvedImage || video) && (
-    <MediaWrapper {...(video ?? {})} style="display: contents">
+  {(resolvedImage || coverVideo) && (
+    <MediaWrapper {...(coverVideo ?? {})} selection={borrowedVideo ? "orientation" : "device"} placement="hero" style="display: contents">
     {resolvedImage && <picture style="display: contents">
     {mobileHero && <source media={mobileHeroPilot.media} srcset={mobileSrcset} sizes="100vw" type="image/webp" width={mobileHero.variants[0].width} height={mobileHero.variants[0].height} />}
     <img

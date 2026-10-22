@@ -1,4 +1,5 @@
 ---
+import HeroImage from './HeroImage.astro';
 import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
 
@@ -62,7 +63,7 @@ const orientation = layout === 'orientation';
                 : undefined
             }
           >
-            <img width={item.sourceWidth} height={item.sourceHeight} src={withBase(item.src)} alt={imageCaption(item.src, item).alt} title={imageCaption(item.src, item).hover} loading="lazy" />
+            <HeroImage fill width={item.sourceWidth} height={item.sourceHeight} src={withBase(item.src)} alt={imageCaption(item.src, item).alt} title={imageCaption(item.src, item).hover} loading="lazy" />
             {item.caption && <figcaption>{item.caption}</figcaption>}
           </figure>
         ))}
@@ -109,7 +110,7 @@ const orientation = layout === 'orientation';
     aspect-ratio: 16 / 9;
   }
 
-  .media-gallery__item img {
+  .media-gallery__item :global(img[data-cover-photo]) {
     position: absolute;
     inset: 0;
     display: block;
@@ -174,7 +175,7 @@ const orientation = layout === 'orientation';
 <script>
   const classifyGalleryImages = () => {
     document.querySelectorAll('.media-gallery--orientation .media-gallery__item').forEach((item) => {
-      const img = item.querySelector('img');
+      const img = item.querySelector('img[data-cover-photo]');
       if (!(img instanceof HTMLImageElement)) return;
 
       const applyOrientation = () => {

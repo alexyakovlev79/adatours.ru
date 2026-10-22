@@ -1,4 +1,5 @@
 ---
+import BorrowedHero from '../components/editorial/BorrowedHero.astro';
 import { interestsForCountry } from '../lib/interest-model.mjs';
 import { seoCountryTitle, seoAttractionsDescription } from '../lib/seo-page.mjs';
 import { seoCountryCase, seoCountryDirection } from '../lib/seo-grammar.mjs';
@@ -166,14 +167,15 @@ const featureBandImageTextAlign = (href: string) => {
             return (
               <a
                 class:list={['destination-card', { 'destination-card--wide': index % 5 === 0 }]}
+                data-video-surface
                 data-image-text-align={item.data.imageTextAlign}
                 href={href}
               >
-                <span
+                <BorrowedHero image={item.data.hero?.src}><span
                   class="destination-card__media"
                   style={image ? `--entity-image: url("${image}")` : undefined}
                   aria-hidden="true"
-                ></span>
+                ></span></BorrowedHero>
                 <span class="destination-card__shade" aria-hidden="true"></span>
                 <span class="destination-card__meta">
                   {destinationTypeLabel[item.data.destinationType]}
@@ -258,10 +260,11 @@ const featureBandImageTextAlign = (href: string) => {
             return (
               <a
                 class:list={['entity-poster', { 'entity-poster--wide': index % 5 === 0 }]}
+                data-video-surface
                 data-image-text-align={item.data.imageTextAlign}
                 href={withBase(excursionPath(item.data))}
-                style={image ? `--entity-image: url("${image}")` : undefined}
               >
+                <BorrowedHero image={item.data.hero?.src}><span class="entity-poster__photo" style={image ? `--entity-image: url("${image}")` : undefined} aria-hidden="true"></span></BorrowedHero>
                 <span class="entity-poster__shade" aria-hidden="true"></span>
                 <span class="entity-poster__content">
                   {meta && <span class="entity-poster__meta">{meta}</span>}
@@ -596,6 +599,8 @@ const featureBandImageTextAlign = (href: string) => {
     background-size: cover;
     isolation: isolate;
   }
+
+  .entity-poster__photo { position: absolute; inset: 0; z-index: -2; background-image: var(--entity-image); background-size: cover; background-position: center; }
 
   .entity-poster--wide {
     grid-column: 1 / -1;

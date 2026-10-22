@@ -36,8 +36,15 @@ const mediaObject = z.object({
 });
 const media = mediaObject.optional();
 
+const heroVideo = z.object({
+  src: z.string().regex(/^\/media\/.+\.(mp4|webm)$/).optional(),
+  mobileSrc: z.string().regex(/^\/media\/.+\.(mp4|webm)$/).optional(),
+  sourceUrl: z.string().url().optional(),
+}).optional();
+
 const common = {
   id: z.string(),
+  heroVideo,
   locale,
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'Use the approved lowercase English URL slug.'),
   status,
@@ -80,7 +87,6 @@ const countries = defineCollection({
     summary: z.string(),
     imageTextAlign,
     hero: media,
-    heroVideo: z.object({ src: z.string().regex(/^\/media\/.+\.mp4$/), sourceUrl: z.string().url() }).optional(),
     gallery: z.array(mediaObject).default([]),
     regions: z.array(z.string()).default([]),
     bestTime: z.string().optional(),

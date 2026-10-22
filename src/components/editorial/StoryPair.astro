@@ -1,4 +1,5 @@
 ---
+import BorrowedHero from './BorrowedHero.astro';
 import { withBase } from '../../lib/paths';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 
@@ -22,18 +23,19 @@ const resolvedImage = image ? withBase(image) : undefined;
 
 <section
   class:list={['story', `story--${align}`]}
+  data-video-surface
   data-image-text-align={imageTextAlign}
   data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
   data-replacement-reason={replacementReason}
 >
-  <div
+  <BorrowedHero image={image}><div
     class="story__media"
     style={[
       resolvedImage ? `background-image:url("${resolvedImage}")` : "",
       imagePosition ? `--story-image-position:${imagePosition}` : "",
       imagePositionMobile ? `--story-image-position-mobile:${imagePositionMobile}` : "",
     ].filter(Boolean).join(";") || undefined}
-  ></div>
+  ></div></BorrowedHero>
   <div class="story__copy">
     {eyebrow && <p class="eyebrow">{eyebrow}</p>}
     <h2>{title}</h2>

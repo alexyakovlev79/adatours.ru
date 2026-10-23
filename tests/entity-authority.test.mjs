@@ -123,7 +123,7 @@ test('incidental press mentions remain distinct from interviews and internal evi
 test('implemented authority pages activate the seven saved sources while preserving the evidence decisions',()=>{
   assert.equal(getAuthorityPageSources('/press/').length,15);
   assert.equal(getAuthorityPageSources('/webinars/').length,7);
-  assert.equal(getAuthorityPageSources('/partners/').length,6);
+  assert.equal(getAuthorityPageSources('/partners/').length,7);
   assert.equal(getAuthorityPageSources('/unregistered/').length,0);
   assert.ok(authorityRegistry.futurePages.every((page)=>page.status==='implemented'));
   assert.equal(authorityRegistry.sources.filter((source)=>source.deployment==='saved_for_future_page').length,0);
@@ -138,7 +138,7 @@ test('press is a collection of fifteen visible articles plus trade-show evidence
   assert.equal(list.numberOfItems,15);
   assert.deepEqual(list.itemListElement.map((item)=>item.url),getAuthorityPageSources('/press/').map((source)=>source.url));
   assert.equal(nodes.filter((node)=>hasType(node,'Article')||hasType(node,'NewsArticle')).length,15);
-  assert.equal(page.citation.length,23);
+  assert.equal(page.citation.length,24);
   const photoReport=authorityRegistry.sources.find((source)=>source.id==='anna-me-wtm-2024');
   const report=entity(nodes,photoReport.url+'#article');
   assert.ok(report.mentions.some((item)=>item['@id']===annaId));
@@ -172,8 +172,8 @@ test('partner organizations have separate identities and the general directory o
   const page=entity(nodes,root+'partners/#webpage');
   const list=entity(nodes,page.mainEntity['@id']);
   assert.ok(hasType(page,'CollectionPage'));
-  assert.equal(list.numberOfItems,5);
-  assert.equal(nodes.filter((node)=>hasType(node,'Organization')).length,6);
+  assert.equal(list.numberOfItems,6);
+  assert.equal(nodes.filter((node)=>hasType(node,'Organization')).length,7);
   assert.equal(new Set(nodes.map((node)=>node['@id'])).size,nodes.length);
   const company=entity(nodes,orgId);
   assert.deepEqual(company.memberOf,[{'@id':'https://abavrio.com.br/#organization'}]);
@@ -184,7 +184,12 @@ test('partner organizations have separate identities and the general directory o
   assert.equal(directory.mainEntity,undefined);
   assert.equal(directory.publisher['@id'],'https://www.globaldestinations.in/#organization');
   assert.ok(!company.sameAs.includes(directoryUrl));
-  assert.equal(page.citation.length,6);
+  assert.equal(page.citation.length,7);
+  const uniqueDirectory=entity(nodes,'https://uniquepromotion.ru/#rec41300494#webpage');
+  assert.ok(hasType(uniqueDirectory,'CollectionPage'));
+  assert.deepEqual(uniqueDirectory.mentions,[{'@id':orgId}]);
+  assert.equal(uniqueDirectory.publisher['@id'],'https://uniquepromotion.ru/#organization');
+  assert.ok(!company.sameAs.includes(uniqueDirectory.url));
   for (const partner of getAuthorityPartners()) {
     assert.ok(entity(nodes,partner.schemaId));
     assert.ok(!company.sameAs.includes(partner.url));
@@ -229,7 +234,7 @@ test('trade-show proof distinguishes exhibition profiles, official directories, 
   const nodes=graph('/press/',collectionFacts('/press/'));
   const page=entity(nodes,root+'press/#webpage');
   const exhibitions=entity(nodes,root+'press/#exhibition-list');
-  assert.equal(exhibitions.numberOfItems,9);
+  assert.equal(exhibitions.numberOfItems,10);
   assert.ok(page.hasPart.some((ref)=>ref['@id']===exhibitions['@id']));
   const unique=entity(nodes,'https://utf-workshops.ru/uchastniki-mow-en#webpage');
   assert.ok(hasType(unique,'CollectionPage'));
@@ -243,5 +248,12 @@ test('trade-show proof distinguishes exhibition profiles, official directories, 
   const report=entity(nodes,'https://embratur.com.br/wp-content/uploads/2025/07/Relatorio_de_Desempenho_Consolidado_2024.pdf#article');
   assert.ok(hasType(report,'Report'));
   assert.deepEqual(report.mentions,[{'@id':orgId}]);
+  const china=entity(nodes,'https://platform.itb-china.com/#/showFloor#webpage');
+  assert.ok(hasType(china,'CollectionPage'));
+  assert.deepEqual(china.mentions,[{'@id':orgId}]);
+  assert.equal(china.mainEntity,undefined);
+  assert.ok(!entity(nodes,orgId).sameAs.includes(china.url));
+  assert.ok(!entity(nodes,annaId).sameAs.includes(china.url));
+  assert.equal(entity(graph('/press/',facts('/press/','<h1>Без источников</h1>')),china['@id']),undefined);
   assert.equal(entity(nodes,orgId).memberOf.length,1);
 });

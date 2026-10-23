@@ -39,6 +39,11 @@
       "name": "Majunke International Sales",
       "schemaId": "https://www.majunkeinternationalsales.com/#organization",
       "url": "https://www.majunkeinternationalsales.com/"
+    },
+    "organization_unique_promotion": {
+      "name": "Unique Promotion",
+      "schemaId": "https://uniquepromotion.ru/#organization",
+      "url": "https://uniquepromotion.ru/"
     }
   },
   "claims": [
@@ -1836,7 +1841,12 @@
         "/press/"
       ],
       "label": "Ada Tours в отчете Embratur: IMEX Frankfurt 2024",
-      "summary": "В отчете Embratur за 2024 год Ada Tours указана среди соэкспонентов IMEX Frankfurt."
+      "summary": "В отчете Embratur за 2024 год Ada Tours указана среди соэкспонентов IMEX Frankfurt.",
+      "evidenceUrls": [
+        "https://embratur.com.br/wp-content/uploads/2025/07/Relatorio_de_Desempenho_Consolidado_2024.pdf",
+        "https://embratur.com.br/arquivo/t/30/Relatorio-de-Desempenho-Consolidado-2024-Errata-1-1.pdf"
+      ],
+      "notes": "Повторная проверка 23.10.2026: альтернативный официальный PDF Errata-1-1 содержит индексируемую строку ADA TOURS INCOMING TOUR OPERATOR в разделе IMEX Frankfurt 2024. Оба адреса дают 403 при прямом чтении. verificationMode остается search_index; новый source и sameAs не создаются."
     },
     {
       "id": "itb-berlin-2023-mercado",
@@ -1866,6 +1876,72 @@
       "label": "Ada Tours на ITB Berlin 2023",
       "summary": "Репортаж со стенда Embratur на ITB Berlin 2023 включает Ada Tours в список компаний.",
       "datePublished": "2023-03-07"
+    },
+    {
+      "id": "itb-china-2026-directory",
+      "url": "https://platform.itb-china.com/#/showFloor",
+      "name": "ITB China 2026 — Exhibitor List",
+      "publisher": {
+        "name": "ITB China / Messe Berlin",
+        "url": "https://www.itb-china.com/"
+      },
+      "kind": "directory",
+      "schemaType": "CollectionPage",
+      "language": "en",
+      "status": "verified",
+      "probability": 98,
+      "checkedAt": "2026-10-23",
+      "verificationMode": "page_read",
+      "evidence": "Cloud Browser: Platform 2026 → Exhibitor List → буква A содержит ADA TOURS BRAZIL & LATIN AMERICA DMC (отдельно от ADA ANATOLIA TOUR). Нажатие переводит на /#/login; отдельный профиль и контакты без входа недоступны. Подтвержден официальный список экспонентов, не личный профиль Анны и не факт посещения.",
+      "relations": {
+        "mentions": [
+          "organization"
+        ]
+      },
+      "displayGroup": "appearances",
+      "displayOn": [
+        "/press/"
+      ],
+      "label": "Ada Tours в официальном каталоге ITB China 2026",
+      "summary": "Ada Tours Brazil & Latin America DMC указана в открытом списке экспонентов ITB China 2026.",
+      "evidenceUrls": [
+        "https://platform.itb-china.com/#/showFloor",
+        "https://www.itb-china.com/"
+      ],
+      "notes": "Требуется JavaScript. Публичный список прочитан в Cloud Browser. Отдельная карточка требует входа; sameAs и Person-связи не добавляются."
+    },
+    {
+      "id": "unique-promotion-clients",
+      "url": "https://uniquepromotion.ru/#rec41300494",
+      "name": "Unique Promotion — Наши клиенты",
+      "publisher": {
+        "name": "Unique Promotion",
+        "url": "https://uniquepromotion.ru/"
+      },
+      "kind": "directory",
+      "schemaType": "CollectionPage",
+      "language": "ru",
+      "status": "verified",
+      "probability": 96,
+      "checkedAt": "2026-10-23",
+      "verificationMode": "page_read",
+      "evidence": "Cloud Browser: раздел «Наши клиенты» официального сайта представительства Hotels,DMC & Tourism Boards Representation показывает логотип Ada Tours (второй ряд, четвертая колонка) со ссылкой, содержащей www.adatours.com. Ссылка ошибочно относительная: https://uniquepromotion.ru/www.adatours.com; целевой сайт не заявляется успешно открытым. Подтверждена клиентская связь с компанией продвижения в России и СНГ; даты договора, эксклюзивность и полный объем услуг не установлены.",
+      "relations": {
+        "mentions": [
+          "organization"
+        ]
+      },
+      "displayGroup": "partners",
+      "displayOn": [
+        "/partners/"
+      ],
+      "label": "Ada Tours среди клиентов Unique Promotion",
+      "summary": "Официальный сайт Unique Promotion включает Ada Tours в раздел клиентов представительства.",
+      "evidenceUrls": [
+        "https://uniquepromotion.ru/#rec41300494",
+        "https://uniquepromotion.ru/en"
+      ],
+      "notes": "Текстовая выгрузка не передает логотипы. Логотип и домен проверены в Cloud Browser. Общий список клиентов не включается в sameAs."
     }
   ],
   "candidates": [
@@ -1951,7 +2027,8 @@
         "atm-company",
         "imex-frankfurt-2024-embratur",
         "unique-travel-fair-moscow-directory",
-        "unique-travel-fair-moscow-2018"
+        "unique-travel-fair-moscow-2018",
+        "itb-china-2026-directory"
       ]
     },
     {
@@ -1989,7 +2066,8 @@
         "global-destinations-partners",
         "ettravelworld-india-2025",
         "abav-rj-company",
-        "majunke-germany-company"
+        "majunke-germany-company",
+        "unique-promotion-clients"
       ],
       "schema": [
         "CollectionPage",
@@ -2073,6 +2151,18 @@
       "probability": 100,
       "checkedAt": "2026-10-23",
       "evidence": "Официальный профиль Ada Tours на сайте Majunke International Sales. На странице указаны Ada Tours, Latin America & Brazil и немецкие контакты Claudia Majunke."
+    },
+    {
+      "entity": "organization_unique_promotion",
+      "role": "Продвижение и представительство · Россия",
+      "description": "Unique Promotion работает с отелями и принимающими компаниями на российском рынке. Ada Tours указана среди клиентов представительства на его официальном сайте.",
+      "sourceIds": [
+        "unique-promotion-clients"
+      ],
+      "status": "verified",
+      "probability": 96,
+      "checkedAt": "2026-10-23",
+      "evidence": "Cloud Browser: раздел «Наши клиенты» официального сайта представительства Hotels,DMC & Tourism Boards Representation показывает логотип Ada Tours (второй ряд, четвертая колонка) со ссылкой, содержащей www.adatours.com. Ссылка ошибочно относительная: https://uniquepromotion.ru/www.adatours.com; целевой сайт не заявляется успешно открытым. Подтверждена клиентская связь с компанией продвижения в России и СНГ; даты договора, эксклюзивность и полный объем услуг не установлены."
     }
   ]
 }

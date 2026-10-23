@@ -116,12 +116,13 @@ export async function collectMobileHeroSwarm({manifest,packets,currentInventory,
   for(const item of items){check(!occupied.has(key(item)),'Duplicate existing page/source/profile registry row');occupied.set(key(item),item);}
   const byUsage=new Map(), bySource=new Map(currentInventory.assets.map(asset=>[asset.source,asset]));
   for(const usage of currentInventory.usages){const id=key(usage);byUsage.set(id,[...(byUsage.get(id)??[]),usage]);}
+  const selectedMetas=selectedPacketIds===null?manifest.packets:manifest.packets.filter(meta=>selectedPacketIds.includes(meta.id));
+  check(selectedPacketIds===null||(selectedMetas.length===selectedPacketIds.length&&new Set(selectedPacketIds).size===selectedPacketIds.length),'Unknown or duplicate batch packet IDs');
   const report={version:1,collectedAt:now,currentMain,frozenSourceCommit:manifest.sourceCommit,
     packets:[],preparedRows:[],alreadyPresent:[],unpublished:[],staleUsages:[],verified:[],verifiedSources:[],
     counts:{packets:selectedMetas.length,completedPackets:0,readyAssets:0,addedRows:0,staleUsages:0,verificationFailures:0}};
   const entries=new Map(packets.map(entry=>[entry.meta.id,entry]));
-  const selectedMetas=selectedPacketIds===null?manifest.packets:manifest.packets.filter(meta=>selectedPacketIds.includes(meta.id));
-  check(selectedPacketIds===null||(selectedMetas.length===selectedPacketIds.length&&new Set(selectedPacketIds).size===selectedPacketIds.length),'Unknown or duplicate batch packet IDs');
+
   const verificationCache=verifiedVariants??new Map();
   const sourceVerificationCache=verifiedSources??new Map();
   for(const meta of selectedMetas){

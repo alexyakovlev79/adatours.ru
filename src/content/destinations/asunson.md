@@ -10,17 +10,17 @@ summary: "Столица Парагвая с сувенирным квартал
 searchAliases: []
 hero: {"src": "/media/countries/paraguay/featureBands-1-enhanced-20261002.webp", "alt": "Белая церковь с высоким шпилем среди зеленых деревьев и невысоких домов", "hover": "Церковная башня и зеленая городская застройка с высоты"}
 gallery:
-- src: /media/destinations/asuncion/gallery-1-enhanced-20261005.webp
+- src: /media/destinations/asuncion/gallery-1-enhanced-20261023-v2.webp
   alt: "Мужчина несёт свёрток на голове мимо розовых колонн в Асунсьоне, Парагвай"
   hover: "Асунсьон: прохожий со свёртком на голове у розового здания"
-- src: /media/destinations/asuncion/gallery-2-enhanced-20261005.webp
+- src: /media/destinations/asuncion/gallery-2-enhanced-20261023-v2.webp
   alt: "Светлый собор с двумя башнями в Асунсьоне, Парагвай"
   hover: "Асунсьон: фасад собора с двумя башнями и арочными входами"
 - src: /media/destinations/asuncion/gallery-3-enhanced-20261023-v2.webp
   alt: "Белая церковь с остроконечными башнями за оградой в Асунсьоне, Парагвай"
   hover: "Асунсьон: светлые шпили церкви среди деревьев"
-- {"src":"/media/destinations/asuncion/gallery-4-enhanced-20261005.webp","alt":"Жёлтые стены памятника с рельефами и статуей, Асунсьон, Парагвай","hover":"Асунсьон, Парагвай: жёлтые стены памятника с рельефами и статуей"}
-- {"src":"/media/destinations/asuncion/gallery-5-enhanced-20261005.webp","alt":"Купол кирпичной церкви среди пальм, Асунсьон, Парагвай","hover":"Асунсьон, Парагвай: купол кирпичной церкви среди пальм"}
+- {"src":"/media/destinations/asuncion/gallery-4-enhanced-20261023-v2.webp","alt":"Жёлтые стены памятника с рельефами и статуей, Асунсьон, Парагвай","hover":"Асунсьон, Парагвай: жёлтые стены памятника с рельефами и статуей"}
+- {"src":"/media/destinations/asuncion/gallery-5-enhanced-20261023-v2.webp","alt":"Купол кирпичной церкви среди пальм, Асунсьон, Парагвай","hover":"Асунсьон, Парагвай: купол кирпичной церкви среди пальм"}
 - src: /media/excursions/siti-tur-v-asunsone/gallery-1-src-enhanced-20261007.webp
   hover: "Асунсьон: огни городских улиц на фоне оранжевого неба"
   alt: "Высотные здания и освещённые улицы Асунсьона под оранжевым небом, Парагвай"

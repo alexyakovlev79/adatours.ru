@@ -16,7 +16,7 @@ language:
 priceFrom: null
 priceNote: Стоимость отдельной экскурсии рассчитывается по запросу.
 hero:
-  src: /media/destinations/leon/gallery-9-enhanced-20261005.webp
+  src: /media/destinations/leon/gallery-9-enhanced-20261023-v2.webp
   alt: Скульптура льва с открытой пастью перед фасадом собора в Леоне, Никарагуа
   hover: 'Леон: каменный лев у стен собора'
 gallery: []

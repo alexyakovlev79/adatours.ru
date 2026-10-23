@@ -163,7 +163,7 @@ itinerary:
 
     После посещения плотины возвращаемся в Асунсьон и едем в отель 4*/5* с завтраком.
   images:
-  - src: /media/destinations/asuncion/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/asuncion/gallery-1-enhanced-20261023-v2.webp
     alt: "Мужчина несёт свёрток на голове мимо розовых колонн в Асунсьоне, Парагвай"
     hover: "Асунсьон: прохожий со свёртком на голове у розового здания"
 - day: 8
@@ -172,7 +172,7 @@ itinerary:
   - Асунсьон
   text: В соответствии со временем вылета трансфер в аэропорт Асунсьона.
   images:
-  - src: /media/destinations/asuncion/gallery-2-enhanced-20261005.webp
+  - src: /media/destinations/asuncion/gallery-2-enhanced-20261023-v2.webp
     alt: "Светлый собор с двумя башнями в Асунсьоне, Парагвай"
     hover: "Асунсьон: фасад собора с двумя башнями и арочными входами"
 included:

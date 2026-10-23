@@ -34,7 +34,7 @@ gallery:
 - src: /media/destinations/leon/gallery-8-enhanced-20261023-v2.webp
   alt: "Церковная башня и черепичные крыши на фоне холмов в золотистом свете"
   hover: "Золотистый свет над церковной башней и городскими крышами"
-- src: /media/destinations/leon/gallery-9-enhanced-20261005.webp
+- src: /media/destinations/leon/gallery-9-enhanced-20261023-v2.webp
   alt: "Скульптура льва с открытой пастью перед фасадом собора в Леоне, Никарагуа"
   hover: "Леон: каменный лев у стен собора"
 - src: /media/destinations/leon/gallery-10-enhanced-20261023-v2.webp

@@ -215,7 +215,7 @@ async function runRelease(){
   run('git',['config','user.name','ADA Tours release bot'],stage);
   run('git',['config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],stage);
   run('git',['add',root+'/release-dispatch.json'],stage);
-  run('git',['commit','-m','release(hero): dispatch next verified crop batch '+nextFrom+' [skip ci]'],stage);
+  run('git',['commit','-m','release(hero): dispatch next verified crop batch '+nextFrom],stage);
   run('git',['push','origin','HEAD:'+stagingRef],stage);
   meta.state='next_batch_dispatched';meta.nextFrom=nextFrom;saveMeta(meta);
   console.log('NEXT MOBILE HERO BATCH DISPATCHED from '+nextFrom);

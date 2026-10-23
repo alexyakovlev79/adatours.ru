@@ -1,15 +1,18 @@
 {
   "version": 2,
   "action": "publish-verified-mobile-hero-batches",
-  "swarmHead": "26b4e8d9a8c79f3d4d7e49091fe9d98e5599a8e2",
+  "swarmHead": "4870342f1aeba3cd655b5eb094e1077544da2405",
   "batchFrom": 144,
   "batchCount": 24,
   "frozenSourceCommit": "197b0b09286653ba3cbb8881306040e97caef39b",
-  "requestedAt": "2026-10-23T15:25:53.946Z",
+  "requestedAt": "2026-10-23T16:26:55.200Z",
   "policy": "publish up to 24 completed packets with GET+SHA256 verification, Pages deploy and automatic next-batch dispatch",
   "generation": 3,
   "completedBatchId": "b121-b144",
   "previousReleaseCommit": "9545dd73bf201ffc6313dddad24b493906413278",
   "previousPagesRunId": 39959799641,
-  "continuation": "Resumed from certified batch b121-b144 after unrelated diagnostic commits moved staging head"
+  "continuation": "Resumed from certified batch b121-b144 after unrelated diagnostic commits moved staging head",
+  "mainMoveRetries": 0,
+  "lastFailure": "main moved during verification; CSV check on main repaired",
+  "retryPolicy": "bounded automatic re-dispatch up to 4 main-head conflicts"
 }

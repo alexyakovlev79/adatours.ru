@@ -185,7 +185,7 @@ test('partner organizations have separate identities and the general directory o
   assert.equal(directory.publisher['@id'],'https://www.globaldestinations.in/#organization');
   assert.ok(!company.sameAs.includes(directoryUrl));
   assert.equal(page.citation.length,7);
-  const uniqueDirectory=entity(nodes,'https://uniquepromotion.ru/#rec41300494#webpage');
+  const uniqueDirectory=entity(nodes,'https://uniquepromotion.ru/#rec41300494-webpage');
   assert.ok(hasType(uniqueDirectory,'CollectionPage'));
   assert.deepEqual(uniqueDirectory.mentions,[{'@id':orgId}]);
   assert.equal(uniqueDirectory.publisher['@id'],'https://uniquepromotion.ru/#organization');
@@ -248,12 +248,13 @@ test('trade-show proof distinguishes exhibition profiles, official directories, 
   const report=entity(nodes,'https://embratur.com.br/wp-content/uploads/2025/07/Relatorio_de_Desempenho_Consolidado_2024.pdf#article');
   assert.ok(hasType(report,'Report'));
   assert.deepEqual(report.mentions,[{'@id':orgId}]);
-  const china=entity(nodes,'https://platform.itb-china.com/#/showFloor#webpage');
+  const china=entity(nodes,'https://platform.itb-china.com/#/showFloor-webpage');
   assert.ok(hasType(china,'CollectionPage'));
   assert.deepEqual(china.mentions,[{'@id':orgId}]);
   assert.equal(china.mainEntity,undefined);
   assert.ok(!entity(nodes,orgId).sameAs.includes(china.url));
   assert.ok(!entity(nodes,annaId).sameAs.includes(china.url));
   assert.equal(entity(graph('/press/',facts('/press/','<h1>Без источников</h1>')),china['@id']),undefined);
+  for (const node of nodes) assert.ok(/^[^#]*(?:#[^#]*)?$/.test(node['@id']), `Valid single-fragment IRI: ${node['@id']}`);
   assert.equal(entity(nodes,orgId).memberOf.length,1);
 });

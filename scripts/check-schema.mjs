@@ -4,7 +4,7 @@ import { readFileSync, readdirSync, existsSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { inspectHtml } from '../src/lib/structured-data-html.mjs';
 import { hasType, types, logicalPath, cleanText, quotationText, SCHEMA_VERSION } from '../src/lib/structured-data.mjs';
-import { getAuthorityPageSources, getAuthorityPartners, getVisibleAuthoritySources, getVisibleAuthorityPartners } from '../src/lib/entity-authority.mjs';
+import { authoritySourceId, getAuthorityPageSources, getAuthorityPartners, getVisibleAuthoritySources, getVisibleAuthorityPartners } from '../src/lib/entity-authority.mjs';
 import { isArchivedPath } from '../src/lib/archive.mjs';
 import { validateDirectAssetLedger } from './lib/direct-media-ledger.mjs';
 const output = 'dist';
@@ -270,7 +270,7 @@ for (const file of files.sort()) {
       if (inferredPath === '/partners/') {
         assert.equal(partners.length, getAuthorityPartners().length, 'Every partner has a visible homepage and supporting source');
         for (const source of authoritySources.filter((source) => source.kind === 'directory')) {
-          const directory = byId.get(source.url + '#webpage');
+          const directory = byId.get(authoritySourceId(source, 'webpage'));
           assert.ok(directory && hasType(directory, 'CollectionPage'), 'Generic partner directory stays a CollectionPage');
           assert.ok(directory.mentions?.some((item) => item['@id'] === 'https://adatours.ru/#organization'), 'Directory mentions Ada Tours');
           assert.ok(!byId.get('https://adatours.ru/#organization').sameAs?.includes(source.url), 'Generic directory is not an identity URL');

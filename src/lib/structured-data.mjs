@@ -1,6 +1,6 @@
 import { selectVipTours } from './vip-tours.mjs';
 import { mergeGeoPassport } from './geo-knowledge.mjs';
-import { getAuthorityEntity, getAuthorityPageSources, getAuthorityExhibitionSources, getVisibleAuthoritySources, getVisibleAuthorityPartners } from './entity-authority.mjs';
+import { authoritySourceId, getAuthorityEntity, getAuthorityPageSources, getAuthorityExhibitionSources, getVisibleAuthoritySources, getVisibleAuthorityPartners } from './entity-authority.mjs';
 import programmeExamples from '../data/commercial/mice-programme-examples.json' with { type: 'json' };
 
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
@@ -832,7 +832,7 @@ export function buildStructuredData({ root, organization, records, page, documen
     const relationRefs = (property) => (source.relations?.[property] || []).map(authorityRef).filter(Boolean);
     const publisher = visiblePartners.find((partner) => partner.url === source.publisher?.url);
     const work = add({
-      '@id': source.url + (event || tradeEvent ? '#event' : profile || directory ? '#webpage' : '#article'),
+      '@id': authoritySourceId(source, event || tradeEvent ? 'event' : profile || directory ? 'webpage' : 'article'),
       '@type': event ? 'EducationEvent' : tradeEvent ? 'Event' : report ? 'Report'
         : directory ? (source.schemaType === 'WebPage' ? 'WebPage' : 'CollectionPage')
         : profile ? 'ProfilePage' : source.schemaType === 'NewsArticle' ? 'NewsArticle' : 'Article',

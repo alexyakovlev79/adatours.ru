@@ -4,6 +4,8 @@ import registry from '../../data/external-identity/entity-authority-20261022.jso
 // It is separate from the geographic passport queue and has no runtime requests.
 export const authorityRegistry = registry;
 export const AUTHORITY_MIN_PROBABILITY = 70;
+// Fragment routes and section anchors must retain a single IRI fragment delimiter.
+export const authoritySourceId = (source, suffix) => `${source.url}${source.url.includes('#') ? '-' : '#'}${suffix}`;
 const https = (value) => {
   try {
     const url = new URL(value);

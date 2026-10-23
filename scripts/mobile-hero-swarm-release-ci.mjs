@@ -206,10 +206,10 @@ async function runRelease(){
   // Every successful batch triggers the next independent GitHub Actions execution.
   const nextFrom=batchFrom+selectedMetas.length;
   const stagingRef='refs/heads/feature/mobile-hero-swarm-20261023';
-  const stagingRemote=capture('git',['ls-remote','origin',stagingRef],stage).split(/\s+/)[0];
-  assert(stagingRemote===queueHead,'Staging branch changed during batch, refuse competing continuation');
-  const nextDispatch={...dispatch,swarmHead:queueHead,batchFrom:nextFrom,batchCount,
-    completedBatchId:batchId,previousReleaseCommit:releaseSha,
+  const latestStage=refreshStagingForSameBatch(batchFrom);
+  const currentDispatch=read(get(stage,root+'/release-dispatch.json'));
+  const nextDispatch={...currentDispatch,swarmHead:latestStage,batchFrom:nextFrom,batchCount,
+    mainMoveRetries:0,completedBatchId:batchId,previousReleaseCommit:releaseSha,
     previousPagesRunId:deployment.id,requestedAt:new Date().toISOString()};
   fs.writeFileSync(get(stage,root+'/release-dispatch.json'),JSON.stringify(nextDispatch,null,2)+'\n');
   run('git',['config','user.name','ADA Tours release bot'],stage);
@@ -227,7 +227,54 @@ async function runRelease(){
 function readFromGh(apiPath){
   return JSON.parse(capture('gh',['api',apiPath],main));
 }
+/** Only advance the staging dispatcher; never change frozen jobs or another batch. */
+function refreshStagingForSameBatch(expectedFrom){
+  const stageBranch='feature/mobile-hero-swarm-20261023';
+  run('git',['fetch','--no-tags','origin',
+    '+refs/heads/'+stageBranch+':refs/remotes/origin/'+stageBranch],stage);
+  const latest=capture('git',['rev-parse','refs/remotes/origin/'+stageBranch],stage);
+  if(latest!==queueHead){
+    const changed=capture('git',['diff','--name-only',queueHead,latest],stage).split('\n').filter(Boolean);
+    const frozenChanged=changed.filter(p=>p===root+'/manifest.json'||
+      [root+'/packets/',root+'/jobs/',root+'/results/',root+'/receipts/'].some(prefix=>p.startsWith(prefix)));
+    assert(!frozenChanged.length,'Frozen worker packets changed during release: '+frozenChanged.slice(0,10).join(', '));
+    console.log('Refreshing staging dispatcher after independent non-worker changes: '+changed.length+' paths');
+  }
+  run('git',['reset','--hard',latest],stage);
+  const current=read(get(stage,root+'/release-dispatch.json'));
+  assert(current.batchFrom===expectedFrom && current.batchCount===batchCount,
+    'Another release has already advanced the batch dispatcher');
+  return latest;
+}
+/** Restart an unchanged batch from fresh main if parallel writers advanced main during validation. */
+function scheduleRetryAfterMainMove(error){
+  if(!String(error?.message??error).includes('main moved during verification'))return false;
+  const retries=Number(dispatch.mainMoveRetries??0);
+  if(!Number.isSafeInteger(retries)||retries<0||retries>=4){
+    console.error('Automatic main-move retries exhausted; no incorrect publication attempted');
+    return false;
+  }
+  const latest=refreshStagingForSameBatch(batchFrom);
+  const current=read(get(stage,root+'/release-dispatch.json'));
+  const retry={...current,swarmHead:latest,mainMoveRetries:retries+1,
+    lastRetryReason:'main_moved_during_verification',
+    lastFailedRunId:process.env.GITHUB_RUN_ID,requestedAt:new Date().toISOString()};
+  fs.writeFileSync(get(stage,root+'/release-dispatch.json'),JSON.stringify(retry,null,2)+'\n');
+  run('git',['config','user.name','ADA Tours release bot'],stage);
+  run('git',['config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],stage);
+  run('git',['add',root+'/release-dispatch.json'],stage);
+  run('git',['commit','-m','release(hero): retry '+batchId+' against fresh main'],stage);
+  run('git',['push','origin','HEAD:refs/heads/feature/mobile-hero-swarm-20261023'],stage);
+  run('gh',['workflow','run','mobile-hero-swarm-release.yml','--ref','feature/mobile-hero-swarm-20261023'],stage);
+  console.log('REQUEUED SAME BATCH '+batchId+' (fresh main, retry '+(retries+1)+'/4)');
+  return true;
+}
 runRelease().catch(error=>{
   console.error('MOBILE HERO MASTER RELEASE BLOCKED: '+(error.stack||String(error)));
+  try {
+    if(scheduleRetryAfterMainMove(error))return;
+  }catch(retryError){
+    console.error('AUTOMATIC MAIN-MOVE RECOVERY FAILED: '+(retryError.stack||String(retryError)));
+  }
   process.exitCode=1;
 });

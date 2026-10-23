@@ -14,7 +14,7 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 100
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: alexyakovlev79/adatours.ru

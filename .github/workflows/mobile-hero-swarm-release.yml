@@ -1,5 +1,6 @@
 name: Publish mobile hero swarm (master)
 on:
+  workflow_dispatch:
   push:
     branches:
       - feature/mobile-hero-swarm-20261023
@@ -13,6 +14,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   release:
+    if: github.ref == 'refs/heads/feature/mobile-hero-swarm-20261023'
     runs-on: ubuntu-latest
     timeout-minutes: 100
     env:

@@ -1,0 +1,62 @@
+name: Publish mobile hero swarm (master)
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/mobile-hero-swarm-20261023
+    paths:
+      - data/media/hero-mobile-swarm-20261023/release-dispatch.json
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: mobile-hero-swarm-master-batched-v2
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.ref == 'refs/heads/feature/mobile-hero-swarm-20261023'
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: alexyakovlev79/adatours.ru
+      ASTRO_TELEMETRY_DISABLED: '1'
+      SITE_ORIGIN: https://adatours.ru
+      SITE_BASE: /
+      MEDIA_CDN_ORIGIN: https://img.adatours.ru
+      SOCIAL_PREVIEW_REQUIRED: '0'
+    steps:
+      - name: Freeze the completed swarm
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          path: queue
+          fetch-depth: 2
+          filter: blob:none
+          sparse-checkout: |
+            scripts
+            data/media/hero-mobile-swarm-20261023
+      - name: Checkout current production source
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          path: current
+          fetch-depth: 1
+          filter: blob:none
+          persist-credentials: true
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Install production dependencies
+        run: npm --prefix current install --no-audit --no-fund
+      - name: Verify, collect, publish and confirm deployment
+        run: node queue/scripts/mobile-hero-swarm-release-ci.mjs
+      - name: Preserve master diagnostic report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-hero-master-release-report
+          path: |
+            /tmp/mobile-hero-release-meta.json
+            /tmp/mobile-hero-release/data/media/hero-mobile-swarm-20261023/collection-report.json
+          if-no-files-found: ignore

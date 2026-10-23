@@ -1,6 +1,6 @@
 import { selectVipTours } from './vip-tours.mjs';
 import { mergeGeoPassport } from './geo-knowledge.mjs';
-import { getAuthorityEntity, getAuthorityPageSources, getVisibleAuthoritySources, getVisibleAuthorityPartners } from './entity-authority.mjs';
+import { getAuthorityEntity, getAuthorityPageSources, getAuthorityExhibitionSources, getVisibleAuthoritySources, getVisibleAuthorityPartners } from './entity-authority.mjs';
 import programmeExamples from '../data/commercial/mice-programme-examples.json' with { type: 'json' };
 
 /** Schema.org graph builder. Pure, deterministic, no network and no browser JS.
@@ -822,17 +822,21 @@ export function buildStructuredData({ root, organization, records, page, documen
   const citations = [];
   const authorityWorks = new Map();
   for (const source of visibleAuthoritySources) {
-    const profile = page.path === '/partners/' && source.kind === 'profile';
-    const directory = page.path === '/partners/' && source.kind === 'directory';
-    if (!['article', 'event'].includes(source.kind) && !profile && !directory) continue;
+    const inProofCollection = ['/partners/', '/press/'].includes(page.path);
+    const profile = inProofCollection && source.kind === 'profile';
+    const directory = inProofCollection && source.kind === 'directory';
+    const tradeEvent = page.path === '/press/' && source.kind === 'trade_event';
+    const report = page.path === '/press/' && source.kind === 'report';
+    if (!['article', 'event'].includes(source.kind) && !profile && !directory && !tradeEvent && !report) continue;
     const event = source.kind === 'event';
     const relationRefs = (property) => (source.relations?.[property] || []).map(authorityRef).filter(Boolean);
     const publisher = visiblePartners.find((partner) => partner.url === source.publisher?.url);
     const work = add({
-      '@id': source.url + (event ? '#event' : profile || directory ? '#webpage' : '#article'),
-      '@type': event ? 'EducationEvent' : directory ? 'CollectionPage' : profile ? 'ProfilePage'
-        : source.schemaType === 'NewsArticle' ? 'NewsArticle' : 'Article',
-      url: source.url, name: cleanText(source.name), headline: source.kind === 'article' ? cleanText(source.name) : undefined,
+      '@id': source.url + (event || tradeEvent ? '#event' : profile || directory ? '#webpage' : '#article'),
+      '@type': event ? 'EducationEvent' : tradeEvent ? 'Event' : report ? 'Report'
+        : directory ? (source.schemaType === 'WebPage' ? 'WebPage' : 'CollectionPage')
+        : profile ? 'ProfilePage' : source.schemaType === 'NewsArticle' ? 'NewsArticle' : 'Article',
+      url: source.url, name: cleanText(source.name), headline: source.kind === 'article' || report ? cleanText(source.name) : undefined,
       description: cleanText(source.summary) || undefined, inLanguage: source.language,
       publisher: event ? undefined : publisher ? partnerRefs.get(publisher.id)
         : { '@type': 'Organization', name: source.publisher.name, url: source.publisher.url },
@@ -843,15 +847,17 @@ export function buildStructuredData({ root, organization, records, page, documen
       mainEntity: profile ? relationRefs('sameAs')[0] : undefined,
       performer: event ? relationRefs('performer') : undefined,
       organizer: event ? relationRefs('organizer') : undefined,
-      startDate: event ? source.startDate : undefined,
+      startDate: event || tradeEvent ? source.startDate : undefined,
+      attendee: tradeEvent ? relationRefs('attendee') : undefined,
       eventAttendanceMode: event ? source.eventAttendanceMode : undefined,
-      location: event && source.eventAttendanceMode === 'https://schema.org/OnlineEventAttendanceMode'
-        ? { '@type': 'VirtualLocation', url: source.url } : undefined,
+      location: tradeEvent ? source.locationName : undefined,
+      ...(event && source.eventAttendanceMode === 'https://schema.org/OnlineEventAttendanceMode'
+        ? { location: { '@type': 'VirtualLocation', url: source.url } } : {}),
     });
     authorityWorks.set(source.id, work);
     for (const key of source.relations?.subjectOf || []) appendRelation(key, 'subjectOf', work);
-    if (event) {
-      for (const key of source.relations?.performer || []) appendRelation(key, 'performerIn', work);
+    if (event || tradeEvent) {
+      if (event) for (const key of source.relations?.performer || []) appendRelation(key, 'performerIn', work);
       webPage.mentions.push(work);
     } else citations.push(work);
   }
@@ -874,6 +880,19 @@ export function buildStructuredData({ root, organization, records, page, documen
         itemListElement: listEntries.map((entry, index) => ({ '@type': 'ListItem', position: index + 1,
           name: cleanText(entry.name), url: entry.url, item: entry.item })),
       });
+    }
+  }
+  // Cited trade-show listings form a separate visible evidence collection.
+  if (page.path === '/press/') {
+    const curated = new Set(getAuthorityExhibitionSources(page.path, authority).map((s) => s.id));
+    const entries = visibleAuthoritySources.filter((s) => curated.has(s.id) && authorityWorks.has(s.id));
+    if (entries.length) {
+      const list = add({ '@type': 'ItemList', '@id': `${page.url}#exhibition-list`,
+        name: 'Ada Tours на профессиональных выставках', numberOfItems: entries.length,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: entries.map((s, i) => ({ '@type': 'ListItem', position: i + 1,
+          name: cleanText(s.label || s.name), url: s.url, item: authorityWorks.get(s.id) })) });
+      webPage.hasPart.push(list);
     }
   }
   add(webPage);

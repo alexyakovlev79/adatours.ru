@@ -33,6 +33,14 @@ export function getAuthorityPageSources(path, data = registry) {
     .filter((source) => source?.displayOn?.includes(path));
 }
 
+// Exhibition profiles, official rosters and dated reports are curated separately from press articles.
+export function getAuthorityExhibitionSources(path, data = registry) {
+  const page = data?.futurePages?.find((entry) => entry.path === path);
+  const byId = new Map(acceptedAuthoritySources(data).map((source) => [source.id, source]));
+  return [...new Set(page?.exhibitionSourceIds || [])].map((id) => byId.get(id))
+    .filter((source) => source?.displayOn?.includes(path));
+}
+
 export function getAuthorityPartners(data = registry) {
   const sources = new Map(acceptedAuthoritySources(data).map((source) => [source.id, source]));
   return (data?.partners || []).filter((partner) => accepted(partner)

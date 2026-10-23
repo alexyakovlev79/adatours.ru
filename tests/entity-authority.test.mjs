@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { authorityRegistry, acceptedAuthoritySources, getAuthoritySources, getAuthorityEntity,
-  getAuthorityPageSources, getAuthorityPartners, getVisibleAuthorityPartners } from '../src/lib/entity-authority.mjs';
+  getAuthorityPageSources, getAuthorityExhibitionSources, getAuthorityPartners, getVisibleAuthorityPartners } from '../src/lib/entity-authority.mjs';
 import { buildStructuredData, hasType } from '../src/lib/structured-data.mjs';
 import { inspectHtml } from '../src/lib/structured-data-html.mjs';
 
@@ -32,7 +32,7 @@ function graph(path, document=visible(path), extra={}) {
 const entity = (nodes,id) => nodes.find((n)=>n['@id']===id);
 const sourceLink = (source) => `<a data-authority-source="${source.id}" href="${source.url}">${source.label || source.name}</a>`;
 const facts = (path, html) => inspectHtml(html, { root, pageUrl: new URL(path, root).href }).facts;
-const collectionFacts = (path) => facts(path, `<section><h1>Материалы Ada Tours</h1>${getAuthorityPageSources(path).map(sourceLink).join('')}</section>`);
+const collectionFacts = (path) => facts(path, `<section><h1>Материалы Ada Tours</h1>${[...getAuthorityPageSources(path),...getAuthorityExhibitionSources(path)].map(sourceLink).join('')}</section>`);
 const partnersFacts = () => facts('/partners/', getAuthorityPartners().map((partner) =>
   `<section><h2>${partner.name}</h2><a href="${partner.url}">${partner.name}</a><p>${partner.description}</p>${partner.sources.map(sourceLink).join('')}</section>`).join(''));
 
@@ -121,24 +121,24 @@ test('incidental press mentions remain distinct from interviews and internal evi
 });
 
 test('implemented authority pages activate the seven saved sources while preserving the evidence decisions',()=>{
-  assert.equal(getAuthorityPageSources('/press/').length,13);
+  assert.equal(getAuthorityPageSources('/press/').length,15);
   assert.equal(getAuthorityPageSources('/webinars/').length,7);
-  assert.equal(getAuthorityPageSources('/partners/').length,5);
+  assert.equal(getAuthorityPageSources('/partners/').length,6);
   assert.equal(getAuthorityPageSources('/unregistered/').length,0);
   assert.ok(authorityRegistry.futurePages.every((page)=>page.status==='implemented'));
   assert.equal(authorityRegistry.sources.filter((source)=>source.deployment==='saved_for_future_page').length,0);
   for (const source of authorityRegistry.sources) assert.ok(source.displayOn.length);
 });
 
-test('press is a collection of thirteen visible works without turning incidental mentions into subjectOf',()=>{
+test('press is a collection of fifteen visible articles plus trade-show evidence without turning incidental mentions into subjectOf',()=>{
   const nodes=graph('/press/',collectionFacts('/press/'));
   const page=entity(nodes,root+'press/#webpage');
   const list=entity(nodes,page.mainEntity['@id']);
   assert.ok(hasType(page,'CollectionPage'));
-  assert.equal(list.numberOfItems,13);
+  assert.equal(list.numberOfItems,15);
   assert.deepEqual(list.itemListElement.map((item)=>item.url),getAuthorityPageSources('/press/').map((source)=>source.url));
-  assert.equal(nodes.filter((node)=>hasType(node,'Article')||hasType(node,'NewsArticle')).length,13);
-  assert.equal(page.citation.length,13);
+  assert.equal(nodes.filter((node)=>hasType(node,'Article')||hasType(node,'NewsArticle')).length,15);
+  assert.equal(page.citation.length,23);
   const photoReport=authorityRegistry.sources.find((source)=>source.id==='anna-me-wtm-2024');
   const report=entity(nodes,photoReport.url+'#article');
   assert.ok(report.mentions.some((item)=>item['@id']===annaId));
@@ -172,8 +172,8 @@ test('partner organizations have separate identities and the general directory o
   const page=entity(nodes,root+'partners/#webpage');
   const list=entity(nodes,page.mainEntity['@id']);
   assert.ok(hasType(page,'CollectionPage'));
-  assert.equal(list.numberOfItems,4);
-  assert.equal(nodes.filter((node)=>hasType(node,'Organization')).length,5);
+  assert.equal(list.numberOfItems,5);
+  assert.equal(nodes.filter((node)=>hasType(node,'Organization')).length,6);
   assert.equal(new Set(nodes.map((node)=>node['@id'])).size,nodes.length);
   const company=entity(nodes,orgId);
   assert.deepEqual(company.memberOf,[{'@id':'https://abavrio.com.br/#organization'}]);
@@ -184,7 +184,7 @@ test('partner organizations have separate identities and the general directory o
   assert.equal(directory.mainEntity,undefined);
   assert.equal(directory.publisher['@id'],'https://www.globaldestinations.in/#organization');
   assert.ok(!company.sameAs.includes(directoryUrl));
-  assert.equal(page.citation.length,5);
+  assert.equal(page.citation.length,6);
   for (const partner of getAuthorityPartners()) {
     assert.ok(entity(nodes,partner.schemaId));
     assert.ok(!company.sameAs.includes(partner.url));
@@ -223,4 +223,25 @@ test('separate partner nodes require visible homepages, supporting links and acc
   const missingProof=structuredClone(authorityRegistry);
   missingProof.sources=missingProof.sources.filter((source)=>source.id!==partner.sourceIds[0]);
   assert.ok(!getAuthorityPartners(missingProof).some((entry)=>entry.id===partner.id));
+});
+
+test('trade-show proof distinguishes exhibition profiles, official directories, reports and a dated event',()=>{
+  const nodes=graph('/press/',collectionFacts('/press/'));
+  const page=entity(nodes,root+'press/#webpage');
+  const exhibitions=entity(nodes,root+'press/#exhibition-list');
+  assert.equal(exhibitions.numberOfItems,9);
+  assert.ok(page.hasPart.some((ref)=>ref['@id']===exhibitions['@id']));
+  const unique=entity(nodes,'https://utf-workshops.ru/uchastniki-mow-en#webpage');
+  assert.ok(hasType(unique,'CollectionPage'));
+  assert.deepEqual(unique.mentions,[{'@id':orgId}]);
+  assert.ok(!entity(nodes,orgId).sameAs.includes(unique.url));
+  const event=entity(nodes,'https://profi.travel/events/workshops/show/158634#event');
+  assert.ok(hasType(event,'Event'));
+  assert.equal(event.startDate,'2018-09-25');
+  assert.deepEqual(event.attendee,[{'@id':orgId}]);
+  assert.equal(event.organizer,undefined);
+  const report=entity(nodes,'https://embratur.com.br/wp-content/uploads/2025/07/Relatorio_de_Desempenho_Consolidado_2024.pdf#article');
+  assert.ok(hasType(report,'Report'));
+  assert.deepEqual(report.mentions,[{'@id':orgId}]);
+  assert.equal(entity(nodes,orgId).memberOf.length,1);
 });

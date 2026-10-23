@@ -98,7 +98,8 @@ test('footer messenger icons keep WhatsApp green and Telegram blue, including on
   for (const style of [normal, hovered]) {
     assert.match(style, /color: #fff;/);
     assert.match(style, /background: var\(--messenger-color\);/);
-    assert.match(style, /border-color: var\(--messenger-color\);/);
   }
+  assert.match(normal, /border: 1px solid var\(--messenger-color\);/);
+  assert.match(hovered, /border-color: var\(--messenger-color\);/);
   assert.doesNotMatch(hovered, /var\(--color-brand-deep\)/);
 });

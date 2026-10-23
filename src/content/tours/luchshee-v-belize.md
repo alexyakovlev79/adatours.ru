@@ -171,17 +171,19 @@ notIncluded:
 - Международные авиаперелеты.
 - Чаевые носильщикам, гидам и водителям.
 notes:
+- Цены действительны до 15 декабря 2027 года.
+- Тарифы на Пасху, День благодарения и рождественские праздники предоставляются по запросу.
 - Ada Tours может заменить указанные отели другими отелями той же категории и изменить порядок экскурсий, сохранив программу
   тура.
 - Ada Tours не несет ответственности за пропущенный завтрак при раннем выселении из отеля из-за раннего перелета или экскурсии.
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-23'
 sourceUrl: https://brasiltours.ru/luchshee-v-belize
-sourceSnapshot: https://drive.google.com/file/d/11o2mCNEWqKiSHi1psCwZLD_oHWfOImMo/view?usp=drivesdk
+sourceSnapshot: https://docs.google.com/document/d/1GUX4I3ummOv_b3JG7ZTVPljSEkDwIU-U/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true
 durationDays: 8
 durationNights: 7
 priceFrom: 3853
 currency: USD
-priceNote: $3853
+priceNote: "Lamanai Outpost Lodge 2 ночи + Cahal Pech Village 2 ночи + Sunbreeze Hotel 3 ночи. SGL — $6 292; DBL — $3 853; TPL — $3 136 на человека."
 hero:
   src: /media/tours/luchshee-v-belize/hero-enhanced-20261006.webp
   alt: "Вход в пещеру через скальную арку над густым зеленым лесом, Белиз"
@@ -203,3 +205,13 @@ themes: ["theme_beach", "theme_nature"]
 
 
 Белизский барьерный риф, джунгли и наследие майя здесь оказываются частью одной поездки. В Ламанай можно выбрать природные и культурные активности лоджа, в Кайо увидеть Шунантунтич, на день пересечь границу с Гватемалой ради Тикаля, а финал провести у моря на Сан-Педро. Для тех, кто хочет добавить больше воды, на Амбергрис-Кайе доступны снорклинг в Hol Chan и Shark Ray Alley, Mexico Rocks, Coral Gardens и прогулки на закате.
+
+## Отели и стоимость
+
+Размещение: 2 ночи в Lamanai Outpost Lodge, 2 ночи в Cahal Pech Village и 3 ночи в Sunbreeze Hotel. Питание и налоги — по программе.
+
+| Размещение | Стоимость на человека |
+|---|---:|
+| SGL, 1 гость | $6 292 |
+| DBL, 2 гостя | $3 853 |
+| TPL, 3 гостя | $3 136 |

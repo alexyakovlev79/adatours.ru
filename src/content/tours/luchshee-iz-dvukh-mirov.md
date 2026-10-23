@@ -143,14 +143,14 @@ notes:
 - Ada Tours может заменить указанные отели на другие отели той же категории.
 - Ada Tours может изменить порядок экскурсий, сохранив программу тура.
 - Ada Tours не несет ответственности за пропущенные завтраки в отелях при раннем выселении из-за раннего перелета или экскурсии.
-updatedAt: '2026-10-02'
+updatedAt: '2026-10-23'
 sourceUrl: https://brasiltours.ru/luchshee-iz-dvukh-mirov
-sourceSnapshot: https://drive.google.com/file/d/1Fs-xkJoFy8ZKdWRzhy5GpwQzuU8c8REP/view?usp=drivesdk
+sourceSnapshot: https://docs.google.com/document/d/1DMMz4N6h5_STB3gI6GnrKauiAUON10qR/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true
 durationDays: 9
 durationNights: 8
 priceFrom: 4910
 currency: USD
-priceNote: $4910
+priceNote: "San Ignacio Resort Hotel 5 ночей + Ramon’s Village 3 ночи. SGL — $8 404; DBL — $4 910; TPL — $4 103 на человека."
 hero:
   src: /media/tours/luchshee-iz-dvukh-mirov/hero-enhanced-20261006.webp
   hover: "Коралловый риф с рыбами, скатами, черепахой и пловцом в маске"
@@ -168,4 +168,14 @@ routeDestinations:
 primaryThemes: ["theme_adventure", "theme_culture"]
 themes: ["theme_beach", "theme_nature"]
 ---
+
+## Отели и стоимость
+
+Размещение: 5 ночей в San Ignacio Resort Hotel, номер Garden View; 3 ночи в Ramon’s Village, каюта Jungle Deluxe. Налоги и завтраки включены.
+
+| Размещение | Стоимость на человека |
+|---|---:|
+| SGL, 1 гость | $8 404 |
+| DBL, 2 гостя | $4 910 |
+| TPL, 3 гостя | $4 103 |
 

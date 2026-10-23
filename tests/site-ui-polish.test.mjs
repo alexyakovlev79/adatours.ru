@@ -63,4 +63,13 @@ test('footer puts Contacts before About and stays two-column on phones', () => {
   const footer = source('src/components/global/SiteFooter.astro');
   assert.match(footer, /primary: \[NAV_LINKS\[8\], NAV_LINKS\[7\]\]/);
   assert.match(footer, /@media \(max-width: 480px\)[\s\S]*?\.footer__navigation \{\s*grid-template-columns: repeat\(2, minmax\(0, 1fr\)\);/);
+  assert.match(footer, /footerRails\.map/);
+  assert.match(footer, /columns\.filter\(\(column\) => column\.rail === rail\)/);
+  assert.match(footer, /\.footer__rail \{[\s\S]*?display: flex;[\s\S]*?flex-direction: column;/);
+  assert.match(footer, /\.footer__heading \{ display: none; \}/);
+  assert.match(footer, /\.footer__rail \{ gap: 17px; \}/);
+  assert.match(footer, /id: 'travel', rail: 'left'/);
+  assert.match(footer, /id: 'agencies', rail: 'left'/);
+  assert.match(footer, /id: 'mice', rail: 'right'/);
+  assert.match(footer, /id: 'about', rail: 'right'/);
 });

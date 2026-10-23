@@ -43,10 +43,66 @@ export async function verifyCollectedSource(result,{fetchImpl=globalThis.fetch}=
   return {source:result.source,bytes:bytes.length,sha256:result.sourceSha256,method:'GET+SHA-256'};
 }
 
+/** Verify every immutable original and variant concurrently (bounded), returning only hashes/metadata.
+ * The final collector still validates job membership, usage geometry, receipts and provenance.
+ * These caches are populated ONLY after GET, bytes and SHA-256 checks succeed. */
+export async function preverifyMobileHeroFiles(packets,{maxConcurrent=16,fetchImpl=globalThis.fetch}={}) {
+  check(Number.isSafeInteger(maxConcurrent)&&maxConcurrent>=1&&maxConcurrent<=32,'Invalid verification concurrency');
+  const sources=new Map(),variants=new Map();
+  for(const entry of packets){
+    if(entry.packet.status!=='completed')continue;
+    const receipts=new Map((entry.receipt?.assets??[]).map(row=>[row.key,row]));
+    for(const result of entry.resultsDocument?.results??[]){
+      if(result.status!=='ready')continue;
+      const sourceId=canonical([result.source,result.sourceSha256]);
+      if(!sources.has(sourceId))sources.set(sourceId,()=>verifyCollectedSource(result,{fetchImpl}));
+      for(const recipe of result.recipes??[])for(const variant of recipe.variants??[]){
+        const variantId=canonical([variant.key,variant.sha256,variant.bytes]);
+        if(!variants.has(variantId))variants.set(variantId,()=>verifyCollectedVariant(variant,receipts.get(variant.key),{fetchImpl}));
+      }
+    }
+  }
+  const tasks=[
+    ...[...sources].map(([key,verify])=>({key,verify,type:'source'})),
+    ...[...variants].map(([key,verify])=>({key,verify,type:'variant'}))
+  ];
+  console.log('Mobile hero parallel proof: '+sources.size+' unique source objects and '+variants.size+' unique mobile variants; concurrency='+maxConcurrent);
+  const verifiedSources=new Map(),verifiedVariants=new Map(),failures=[];
+  let cursor=0,done=0;
+  async function verifyWithRetry(task){
+    for(let attempt=0;attempt<3;attempt++){
+      try{return await task.verify();}
+      catch(error){
+        const message=String(error?.message??error);
+        const temporary=/HTTP\s+(?:429|5\d\d)|fetch failed|ECONNRESET|ETIMEDOUT|EAI_AGAIN|AbortError|TimeoutError|timed out|socket hang up/i.test(message);
+        if(!temporary||attempt===2)throw error;
+        await new Promise(resolve=>setTimeout(resolve,600*(attempt+1)*(attempt+1)));
+      }
+    }
+  }
+  const worker=async()=>{
+    while(true){
+      const index=cursor++;
+      if(index>=tasks.length)return;
+      const task=tasks[index];
+      try{
+        const record=await verifyWithRetry(task);
+        (task.type==='source'?verifiedSources:verifiedVariants).set(task.key,record);
+      }catch(error){
+        failures.push({type:task.type,key:task.key,error:String(error?.message??error)});
+      }
+      done++;
+      if(done%200===0||done===tasks.length)console.log('Mobile hero verified '+done+'/'+tasks.length+' objects; failures='+failures.length);
+    }
+  };
+  await Promise.all(Array.from({length:Math.min(maxConcurrent,tasks.length)},()=>worker()));
+  return{verifiedSources,verifiedVariants,failures,total:tasks.length,sourceCount:sources.size,variantCount:variants.size};
+}
+
 /** fetchImpl is injectable only for tests; the CLI has no offline/skip-verification flag. */
 export async function collectMobileHeroSwarm({manifest,packets,currentInventory,currentMain,
   existingRegistry={version:1,media:'(max-width: 479px)',items:[]},ledger={version:1,assets:[]},
-  fetchImpl=globalThis.fetch,now=new Date().toISOString()}={}) {
+  fetchImpl=globalThis.fetch,verifiedSources=null,verifiedVariants=null,now=new Date().toISOString()}={}) {
   check(/^[a-f0-9]{40}$/.test(currentMain??''),'A full --current-main SHA is required');
   check(currentInventory?.sourceCommit===currentMain,'Current rendered inventory sourceCommit does not match current main');
   check(currentInventory?.schemaVersion===1 && Array.isArray(currentInventory.usages) && Array.isArray(currentInventory.assets),'Invalid current rendered inventory');
@@ -64,8 +120,8 @@ export async function collectMobileHeroSwarm({manifest,packets,currentInventory,
     packets:[],preparedRows:[],alreadyPresent:[],unpublished:[],staleUsages:[],verified:[],verifiedSources:[],
     counts:{packets:manifest.packets.length,completedPackets:0,readyAssets:0,addedRows:0,staleUsages:0,verificationFailures:0}};
   const entries=new Map(packets.map(entry=>[entry.meta.id,entry]));
-  const verificationCache=new Map();
-  const sourceVerificationCache=new Map();
+  const verificationCache=verifiedVariants??new Map();
+  const sourceVerificationCache=verifiedSources??new Map();
   for(const meta of manifest.packets){
     const entry=entries.get(meta.id);
     if(!entry || entry.packet.status!=='completed'){report.packets.push({packetId:meta.id,status:entry?.packet.status??'missing'});continue;}
@@ -194,7 +250,10 @@ async function main(argv) {
   check(options.currentInventory,'--current-inventory is required; collection needs a fresh main render');
   check(options.currentMain,'--current-main is required');
   const root=path.resolve(options.root), manifest=await readJson(path.resolve(root,options.queueRoot,'manifest.json'));
-  const result=await collectMobileHeroSwarm({manifest,packets:await loadCollectionPackets(root,manifest),
+  const packets=await loadCollectionPackets(root,manifest);
+  const proof=await preverifyMobileHeroFiles(packets,{maxConcurrent:16});
+  if(proof.failures.length)throw Error('S3 GET+SHA256 preflight failed for '+proof.failures.length+' objects (first 20): '+JSON.stringify(proof.failures.slice(0,20)));
+  const result=await collectMobileHeroSwarm({manifest,packets,verifiedSources:proof.verifiedSources,verifiedVariants:proof.verifiedVariants,
     currentInventory:await readJson(path.resolve(root,options.currentInventory)),currentMain:options.currentMain,
     existingRegistry:await readJson(path.resolve(root,options.registry??'src/data/media/mobile-hero-registry.json'),{version:1,media:'(max-width: 479px)',items:[]}),
     ledger:await readJson(path.resolve(root,options.ledger??'src/data/media/direct-s3-uploads.json'),{version:1,assets:[]})});

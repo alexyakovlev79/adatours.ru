@@ -101,7 +101,7 @@ itinerary:
   - src: "/media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-3-images-0-src-enhanced-20261007.webp"
     hover: "Ика: зеленый оазис среди золотистых дюн"
     alt: "Оазис с озером, пальмами и низкими домами среди высоких песчаных дюн у Ики, Перу"
-  - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261005.webp
+  - src: /media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261023-v2.webp
     hover: "Наска: рисунок колибри на поверхности пустыни"
     alt: "Геоглиф колибри с длинным клювом и расправленными крыльями в пустыне Наска, Перу"
 - day: 5

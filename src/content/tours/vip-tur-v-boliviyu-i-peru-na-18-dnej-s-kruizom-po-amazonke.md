@@ -318,7 +318,7 @@ itinerary:
 
     Затем перелет в Лиму, встреча и трансфер в Belmond Miraflores Park. Ночь в отеле.
   images:
-  - src: /media/destinations/nazca-lines-and-ballestas-islands/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/nazca-lines-and-ballestas-islands/gallery-1-enhanced-20261023-v2.webp
     alt: "Прямые линии на сухой поверхности пустыни Наска, Перу, вид сверху"
     hover: "Наска: пересекающиеся светлые линии среди пустынных склонов"
 - day: 18

@@ -1,0 +1,36 @@
+name: Read-only verify published mobile interest cards
+on:
+  push:
+    branches: [feature/mobile-hero-swarm-20261023]
+    paths: [.github/workflows/mobile-hero-inner-cards-probe.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Assert the actual published internal cards reference shifted mobile crops
+        run: |
+          node --input-type=module <<'NODE'
+          const probes=[["Приключения","adventure","hero-6b6842168ca3180fc871c70f-compact-429a66e5cc1f39e2aa95-636-20261023-v1.webp"],["Свадьбы","weddings-and-romance","hero-2fe523a2342f0bc5e44fffbe-compact-c322e7e04617d83a33a9-688-20261023-v1.webp"],["Культура","culture-and-history","hero-7da242e97a32a15707459507-compact-a336f10b5fecf30500d1-648-20261023-v1.webp"],["Праздники","events-and-festivals","hero-7513957725a69e784c2f769c-compact-54d909f590787955e04b-648-20261023-v1.webp"],["Животные","wildlife","hero-106360770413e342e2ab1acd-compact-b39513f71ab9acd4986a-648-20261023-v1.webp"]];
+          const page='https://adatours.ru/interests/';
+          const response=await fetch(page,{cache:'no-store',signal:AbortSignal.timeout(45000)});
+          if(!response.ok)throw Error('Internal page returned HTTP '+response.status);
+          const html=await response.text();
+          console.log('HTML bytes:',Buffer.byteLength(html),'source:',page);
+          const tags=[...html.matchAll(/<a\\b[^>]*>/gi)].map(m=>m[0]);
+          let passes=0;for(const [name,slug,file] of probes){
+           const pagePath='/interests/'+slug+'/';
+           const match=tags.find(t=>t.includes('href="'+pagePath+'"')&&t.includes(file));
+           const specific=tags.filter(t=>t.includes('href="'+pagePath+'"'));
+           const cover=!!match && match.includes('data-mobile-cover="home-p06"') && match.includes('--band-mobile-image:');
+           console.log('INNER_CARD '+JSON.stringify({name,pagePath,foundCard:!!match,mobileSourceInCorrectCard:cover,matchingCardCount:specific.length,tagPreview:match?.slice(0,500)}));
+           if(cover)passes++;
+          }
+          console.log('INNER_CARD_SUMMARY '+JSON.stringify({checked:probes.length,passed:passes,failed:probes.length-passes}));
+          if(passes!==probes.length)process.exitCode=1;
+          NODE

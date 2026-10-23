@@ -217,6 +217,10 @@ async function runRelease(){
   run('git',['add',root+'/release-dispatch.json'],stage);
   run('git',['commit','-m','release(hero): dispatch next verified crop batch '+nextFrom],stage);
   run('git',['push','origin','HEAD:'+stagingRef],stage);
+  // Pushes made with GITHUB_TOKEN do NOT trigger other push-based workflows.
+  // A workflow_dispatch is allowed to trigger downstream jobs, provided the
+  // workflow is registered on the default branch.
+  run('gh',['workflow','run','mobile-hero-swarm-release.yml','--ref','feature/mobile-hero-swarm-20261023'],stage);
   meta.state='next_batch_dispatched';meta.nextFrom=nextFrom;saveMeta(meta);
   console.log('NEXT MOBILE HERO BATCH DISPATCHED from '+nextFrom);
 }

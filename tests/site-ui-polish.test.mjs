@@ -73,3 +73,16 @@ test('footer puts Contacts before About and stays two-column on phones', () => {
   assert.match(footer, /id: 'mice', rail: 'right'/);
   assert.match(footer, /id: 'about', rail: 'right'/);
 });
+
+test('footer uses compact accessible WhatsApp and Telegram icons instead of text links', () => {
+  const footer = source('src/components/global/SiteFooter.astro');
+  assert.match(footer, /class="footer__messengers" role="group" aria-label="Мессенджеры"/);
+  for (const platform of ['whatsapp', 'telegram']) {
+    const label = platform === 'whatsapp' ? 'WhatsApp' : 'Telegram';
+    assert.match(footer, new RegExp(`href=\\{ORG\\.${platform}Href\\}[^>]*aria-label="${label}"`));
+  }
+  assert.match(footer, /\.footer__messengers a svg \{[\s\S]*?width: 22px;/);
+  assert.equal((footer.match(/<svg viewBox="0 0 24 24" fill="currentColor"/g) ?? []).length, 2);
+  assert.doesNotMatch(footer, />WhatsApp ↗<|>Telegram ↗</);
+  assert.match(footer, /\.footer__messengers a \{[\s\S]*?width: 42px;[\s\S]*?height: 42px;/);
+});

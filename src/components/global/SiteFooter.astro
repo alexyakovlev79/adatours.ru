@@ -56,9 +56,17 @@ const footerRails = ['left', 'right'] as const;
       <a href={ORG.phoneHref}>{ORG.phoneDisplay}</a>
       <a href={`mailto:${ORG.email}`}>{ORG.email}</a>
     </div>
-    <div class="footer__messengers">
-      <a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
-      <a href={ORG.telegramHref} target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+    <div class="footer__messengers" role="group" aria-label="Мессенджеры">
+      <a href={ORG.whatsappHref} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.96L0 24l6.33-1.67a11.86 11.86 0 0 0 5.73 1.46h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.4ZM12.07 21.8a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.86 9.86 0 1 1 8.39 4.64Zm5.41-7.38c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.23-.65.08-.3-.15-1.28-.47-2.43-1.49-.9-.8-1.5-1.79-1.67-2.09-.18-.3-.02-.47.13-.62.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.64-.94-2.24-.25-.6-.5-.52-.68-.53h-.58c-.2 0-.53.08-.8.38-.28.3-1.05 1.03-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.23 5.14 4.53.72.31 1.29.5 1.73.64.73.23 1.4.2 1.93.12.59-.09 1.78-.73 2.03-1.44.25-.7.25-1.31.18-1.44-.08-.13-.28-.2-.58-.35Z" />
+        </svg>
+      </a>
+      <a href={ORG.telegramHref} target="_blank" rel="noopener noreferrer" aria-label="Telegram" title="Telegram">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0Zm5.89 8.22-1.97 9.3c-.15.66-.54.82-1.09.51l-3.02-2.23-1.46 1.4c-.16.16-.3.3-.6.3l.21-3 5.47-4.94c.24-.21-.05-.33-.37-.12l-6.76 4.26-2.91-.91c-.63-.2-.64-.63.13-.93l11.37-4.38c.53-.19.99.13.82.94Z" />
+        </svg>
+      </a>
     </div>
   </div>
 
@@ -197,8 +205,37 @@ const footerRails = ['left', 'right'] as const;
     font-size: clamp(1rem, 1.6vw, 1.3rem);
     overflow-wrap: anywhere;
   }
-  .footer__messengers { display: flex; flex-wrap: wrap; gap: 16px 30px; }
-  .footer__messengers a { font-size: .9rem; color: var(--color-ink); }
+  .footer__messengers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  .footer__messengers a {
+    display: grid;
+    place-items: center;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--color-line);
+    border-radius: 50%;
+    color: var(--color-ink);
+    background: transparent;
+    transition: color 180ms ease, border-color 180ms ease, background 180ms ease;
+  }
+  .footer__messengers a svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+  .footer__messengers a:hover {
+    color: var(--color-brand-deep);
+    border-color: var(--color-brand-deep);
+    background: color-mix(in srgb, var(--color-brand-deep) 6%, transparent);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .footer__messengers a { transition: none; }
+  }
   .footer__legal {
     display: flex;
     justify-content: space-between;

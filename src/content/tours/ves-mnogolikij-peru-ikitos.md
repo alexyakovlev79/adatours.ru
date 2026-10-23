@@ -371,7 +371,7 @@ itinerary:
 
     После возвращения в лодж ужин, музыка и рассказы местных гидов.
   images:
-  - src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/iquitos/gallery-1-enhanced-20261023-v2.webp
     hover: "Икитос в Перу: лодки у домов с соломенными крышами"
     alt: "Дома с соломенными крышами и лодки на воде, Икитос, Перу"
 - day: 13
@@ -395,7 +395,7 @@ itinerary:
 
     Ночная программа проходит на каноэ по озеру и притокам в джунглях. Главная цель - наблюдение за **кайманами**.
   images:
-  - src: /media/destinations/iquitos/gallery-2-enhanced-20261005.webp
+  - src: /media/destinations/iquitos/gallery-2-enhanced-20261023-v2.webp
     hover: "Бабочка с расправленными узорчатыми крыльями среди листьев"
     alt: "Крупная оранжево-коричневая бабочка на фоне листвы"
 - day: 14

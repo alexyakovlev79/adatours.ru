@@ -304,7 +304,7 @@ itinerary:
   text: Трансфер в аэропорт Лимы с русскоязычным гидом. Перелет в Икитос и начало круиза по Амазонке на судне Aqua
     Nera 5D/4N
   images:
-  - src: /media/destinations/iquitos/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/iquitos/gallery-1-enhanced-20261023-v2.webp
     alt: Дома с соломенными крышами и лодки на воде, Икитос, Перу
 - excursionRef: excursion_aqua_nera_amazon_five_days
   places:

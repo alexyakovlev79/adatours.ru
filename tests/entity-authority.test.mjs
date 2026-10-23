@@ -42,7 +42,7 @@ test('evidence register has unique URLs, known entities, and no accepted low-con
   assert.equal(new Set(accepted.map((s)=>s.id)).size,accepted.length);
   for (const source of accepted) {
     assert.ok(source.probability>=70 && source.evidence && source.checkedAt);
-    assert.ok(['page_read','search_index','official_outlink'].includes(source.verificationMode));
+    assert.ok(['page_read','search_index','official_outlink','provided_document'].includes(source.verificationMode));
     for (const keys of Object.values(source.relations)) for (const key of keys) assert.ok(authorityRegistry.entities[key]);
     if (source.kind==='article' && source.displayOn.length) assert.ok(source.summary && source.publisher.name);
   }
@@ -234,7 +234,7 @@ test('trade-show proof distinguishes exhibition profiles, official directories, 
   const nodes=graph('/press/',collectionFacts('/press/'));
   const page=entity(nodes,root+'press/#webpage');
   const exhibitions=entity(nodes,root+'press/#exhibition-list');
-  assert.equal(exhibitions.numberOfItems,10);
+  assert.equal(exhibitions.numberOfItems,11);
   assert.ok(page.hasPart.some((ref)=>ref['@id']===exhibitions['@id']));
   const unique=entity(nodes,'https://utf-workshops.ru/uchastniki-mow-en#webpage');
   assert.ok(hasType(unique,'CollectionPage'));
@@ -255,6 +255,16 @@ test('trade-show proof distinguishes exhibition profiles, official directories, 
   assert.ok(!entity(nodes,orgId).sameAs.includes(china.url));
   assert.ok(!entity(nodes,annaId).sameAs.includes(china.url));
   assert.equal(entity(graph('/press/',facts('/press/','<h1>Без источников</h1>')),china['@id']),undefined);
+  // Organizer-signed agreement confirms a contracted exhibitor role, not physical attendance.
+  const ltm=entity(nodes,'https://profi.travel/events/exhibitions/show/166156#event');
+  assert.ok(hasType(ltm,'Event'));
+  assert.equal(ltm.startDate,'2026-09-24');
+  assert.equal(ltm.endDate,'2026-09-25');
+  assert.equal(ltm.organizer.name,'Travel Media Middle East FZCO');
+  assert.deepEqual(ltm.contributor,[{'@id':orgId}]);
+  assert.equal(ltm.attendee,undefined);
+  assert.ok(page.mentions.some((item)=>item['@id']===ltm['@id']));
+  assert.ok(!entity(nodes,orgId).sameAs.includes('https://profi.travel/events/exhibitions/show/166156'));
   for (const node of nodes) assert.ok(/^[^#]*(?:#[^#]*)?$/.test(node['@id']), `Valid single-fragment IRI: ${node['@id']}`);
   assert.equal(entity(nodes,orgId).memberOf.length,1);
 });

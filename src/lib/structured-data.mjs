@@ -846,9 +846,12 @@ export function buildStructuredData({ root, organization, records, page, documen
       // A dedicated Ada profile identifies Ada. A general partner directory only mentions it.
       mainEntity: profile ? relationRefs('sameAs')[0] : undefined,
       performer: event ? relationRefs('performer') : undefined,
-      organizer: event ? relationRefs('organizer') : undefined,
+      organizer: event ? relationRefs('organizer') : tradeEvent && source.organizerName
+        ? { '@type': 'Organization', name: cleanText(source.organizerName) } : undefined,
       startDate: event || tradeEvent ? source.startDate : undefined,
+      endDate: tradeEvent ? source.endDate : undefined,
       attendee: tradeEvent ? relationRefs('attendee') : undefined,
+      contributor: tradeEvent ? relationRefs('contributor') : undefined,
       eventAttendanceMode: event ? source.eventAttendanceMode : undefined,
       location: tradeEvent ? source.locationName : undefined,
       ...(event && source.eventAttendanceMode === 'https://schema.org/OnlineEventAttendanceMode'

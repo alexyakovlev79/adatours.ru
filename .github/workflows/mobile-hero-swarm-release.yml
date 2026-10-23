@@ -46,7 +46,7 @@ jobs:
         with:
           node-version: 24
       - name: Install production dependencies
-        run: npm --prefix current ci --no-audit --no-fund
+        run: npm --prefix current install --no-audit --no-fund
       - name: Verify, collect, publish and confirm deployment
         run: node queue/scripts/mobile-hero-swarm-release-ci.mjs
       - name: Preserve master diagnostic report

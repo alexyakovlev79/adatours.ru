@@ -22,7 +22,7 @@ jobs:
           if(!response.ok)throw Error('Internal page returned HTTP '+response.status);
           const html=await response.text();
           console.log('HTML bytes:',Buffer.byteLength(html),'source:',page);
-          const tags=[...html.matchAll(/<a\\b[^>]*>/gi)].map(m=>m[0]);
+          const tags=[...html.matchAll(/<a\b[^>]*>/gi)].map(m=>m[0]);
           let passes=0;for(const [name,slug,file] of probes){
            const pagePath='/interests/'+slug+'/';
            const match=tags.find(t=>t.includes('href="'+pagePath+'"')&&t.includes(file));

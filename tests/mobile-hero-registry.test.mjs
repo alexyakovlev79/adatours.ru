@@ -13,3 +13,18 @@ test('empty scaffolding changes no photo; incomplete and duplicate mappings fail
   assert.throws(()=>createMobileHeroSelector(registry([row,row])),/Duplicate/);
   assert.throws(()=>createMobileHeroSelector(registry([{...row,variants:[]}])),/without variants/);
 });
+
+test('borrowed cards select only immutable, consistent previously verified crops',()=>{
+  const base={...row,pagePath:'/interest/',source:'/media/themes/example/hero.webp',
+    sourceSha256:'a'.repeat(64),profile:'compact',manualObjectPosition:null,
+    crop:{left:150,top:0,width:688,height:918},objectPosition:'center top',
+    variants:[{key:'media/hero-mobile-swarm/example-480.webp',width:480,height:640},
+      {key:'media/hero-mobile-swarm/example-688.webp',width:688,height:918}]};
+  const second={...base,pagePath:'/interest/related/'};
+  const select=createMobileHeroSelector(registry([base,second]));
+  assert.equal(select.borrowed({source:base.source})?.src,'/media/hero-mobile-swarm/example-688.webp');
+  assert.equal(select.borrowed({source:base.source})?.position,'center top');
+  assert.equal(select.borrowed({source:'/media/not-present.webp'}),undefined);
+  assert.equal(createMobileHeroSelector(registry([base,{...second,sourceSha256:'b'.repeat(64)}])).borrowed({source:base.source}),undefined);
+  assert.equal(createMobileHeroSelector(registry([base,{...second,crop:{...base.crop,left:250}}])).borrowed({source:base.source}),undefined);
+});

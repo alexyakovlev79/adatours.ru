@@ -1,5 +1,7 @@
 ---
 import { withBase } from '../../lib/paths';
+import mobileHeroRegistry from '../../data/media/mobile-hero-registry.json';
+import { createMobileHeroSelector } from '../../lib/mobile-hero-registry.mjs';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import HeroVideo from './HeroVideo.astro';
 import { videoForBorrowedHero } from '../../lib/hero-video-catalog.ts';
@@ -44,7 +46,8 @@ const {
 
 const video = explicitVideo ?? await videoForBorrowedHero(image, Astro.url.pathname);
 const resolvedImage = image ? withBase(image) : undefined;
-const style = resolvedImage ? `--band-image: url("${resolvedImage}")${mobileCover ? `;--band-mobile-image: url("${withBase(mobileCover.src)}");--band-mobile-position: ${mobileCover.position}` : ''}` : undefined;
+const resolvedMobileCover = mobileCover ?? createMobileHeroSelector(mobileHeroRegistry).borrowed({source:image,preferredProfile:'compact'});
+const style = resolvedImage ? `--band-image: url("${resolvedImage}")${resolvedMobileCover ? `;--band-mobile-image: url("${withBase(resolvedMobileCover.src)}");--band-mobile-position: ${resolvedMobileCover.position}` : ''}` : undefined;
 const resolvedHref = withBase(href);
 const resolvedAlign = imageTextAlign ?? align;
 const vip = (await getVipTourPaths()).has(href);
@@ -76,7 +79,7 @@ const vip = (await getVipTourPaths()).has(href);
     data-replacement-reason={replacementReason}
   >
     <HeroVideo {...video} lazy controlsPosition="cover" placement="cover" selection="orientation">
-      <span class="band__photo" style={style} data-mobile-cover={mobileCover ? mobileCover.narrow ? 'home-p06' : 'home-p02' : undefined} aria-hidden="true"></span>
+      <span class="band__photo" style={style} data-mobile-cover={mobileCover ? resolvedMobileCover.narrow ? 'home-p06' : 'home-p02' : undefined} aria-hidden="true"></span>
     </HeroVideo>
     <div class="band__overlay"></div>
     {vip && <VipBadge overlay />}
@@ -91,7 +94,7 @@ const vip = (await getVipTourPaths()).has(href);
   </div>
 ) : (
   <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image, 'band--strong-overlay': strongOverlay, 'band--no-overlay': noOverlay }]} href={resolvedHref} style={style}
-    data-mobile-cover={mobileCover ? mobileCover.narrow ? 'home-p06' : 'home-p02' : undefined}
+    data-mobile-cover={mobileCover ? resolvedMobileCover.narrow ? 'home-p06' : 'home-p02' : undefined}
     data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
     data-replacement-reason={replacementReason}

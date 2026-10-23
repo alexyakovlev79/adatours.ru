@@ -1,6 +1,8 @@
 ---
 import { withBase } from '../../lib/paths';
 import BorrowedHero from './BorrowedHero.astro';
+import mobileHeroRegistry from '../../data/media/mobile-hero-registry.json';
+import { createMobileHeroSelector } from '../../lib/mobile-hero-registry.mjs';
 import VipBadge from '../tour/VipBadge.astro';
 import { getVipTourPaths } from '../../lib/vip-catalog';
 interface Props {
@@ -10,11 +12,12 @@ interface Props {
 }
 const { entityId, title, text, href, image, mobileCover, eyebrow, meta, imageTextAlign = 'left', large = false } = Astro.props;
 const vip = (await getVipTourPaths()).has(href);
+const resolvedMobileCover = mobileCover ?? createMobileHeroSelector(mobileHeroRegistry).borrowed({source:image,preferredProfile:large?'content-sized':'compact'});
 ---
 <article class:list={['interest-card', { 'interest-card--large': large }]} data-interest-item={entityId}>
   <a href={withBase(href)} class="interest-card__link">
-    {image && <div class="interest-card__image" data-video-surface><BorrowedHero image={image} layer="foreground">{mobileCover
-      ? <span class="interest-card__responsive-image" data-mobile-cover={mobileCover.narrow ? 'home-p06' : 'home-p02'} aria-hidden="true" style={`--interest-image: url("${withBase(image)}");--interest-mobile-image: url("${withBase(mobileCover.src)}");--interest-mobile-position: ${mobileCover.position}`} />
+    {image && <div class="interest-card__image" data-video-surface><BorrowedHero image={image} layer="foreground">{resolvedMobileCover
+      ? <span class="interest-card__responsive-image" data-mobile-cover={resolvedMobileCover.narrow ? 'home-p06' : 'home-p02'} aria-hidden="true" style={`--interest-image: url("${withBase(image)}");--interest-mobile-image: url("${withBase(resolvedMobileCover.src)}");--interest-mobile-position: ${resolvedMobileCover.position}`} />
       : <img src={withBase(image)} alt="" loading="lazy" decoding="async" />}</BorrowedHero>{vip && <VipBadge overlay />}</div>}
     <div class="interest-card__copy" data-text-align={imageTextAlign}>
       {eyebrow && eyebrow !== 'По интересам' && <p class="eyebrow">{eyebrow}</p>}

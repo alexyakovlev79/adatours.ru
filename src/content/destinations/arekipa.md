@@ -26,19 +26,19 @@ gallery:
 - src: /media/destinations/arequipa/gallery-3-enhanced-20261023-v2.webp
   alt: "Светлая церковь с двумя башнями в Арекипе, Перу"
   hover: "Арекипа: белый фасад церкви с двумя высокими башнями"
-- src: /media/destinations/arequipa/gallery-4-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-4-enhanced-20261023-v2.webp
   alt: "Красная стена с каменной надписью и растением в нише в Арекипе, Перу"
   hover: "Арекипа: каменная надпись над нишей в красной стене"
-- src: /media/destinations/arequipa/gallery-5-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-5-enhanced-20261023-v2.webp
   hover: "Арекипа: снежная вершина вулкана над городом"
   alt: "Высокий заснеженный вулкан над городской застройкой Арекипы под темно-синим небом, Перу"
-- src: /media/destinations/arequipa/gallery-6-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-6-enhanced-20261023-v2.webp
   alt: "Продавщица за прилавком с разноцветными фруктами в Арекипе, Перу"
   hover: "Арекипа: фруктовый прилавок с продавщицей"
-- src: /media/destinations/arequipa/gallery-7-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-7-enhanced-20261023-v2.webp
   alt: "Площадь с пальмами, дорожками и фонарями в Арекипе, Перу"
   hover: "Арекипа: освещённые дорожки и высокие пальмы на городской площади"
-- src: /media/destinations/arequipa/gallery-8-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-8-enhanced-20261023-v2.webp
   alt: "Расписная статуя Христа в терновом венце рядом с другими религиозными фигурками"
   hover: "Фигурка Христа в терновом венце крупным планом"
 - src: /media/excursions/arekipa-tur-v-belom-gorode/gallery-1-src-regenerated-20261011-v2.webp

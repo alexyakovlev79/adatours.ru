@@ -49,11 +49,11 @@ test('editorial icons add mobile landmarks without external media requests', () 
   }
 });
 
-test('Multi-country home banner has a daylight image without its dark overlay', () => {
+test('Multi-country home banner keeps its original image without a dark overlay', () => {
   const home = source('src/pages/index.astro');
   const band = source('src/components/editorial/DestinationBand.astro');
   const multi = home.match(/<DestinationBand[\s\S]*?eyebrow="Multi-country"[\s\S]*?\/>/)?.[0] ?? '';
-  assert.match(multi, /image="\/media\/home\/hero-rio-generated-20261008-v2\.webp"/);
+  assert.match(multi, /image="\/media\/home\/rio-night-enhanced-20260930\.webp"/);
   assert.match(multi, /noOverlay/);
   assert.doesNotMatch(multi, /strongOverlay/);
   assert.match(band, /\.band--no-overlay \.band__overlay \{ background: none; \}/);

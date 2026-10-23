@@ -86,3 +86,19 @@ test('footer uses compact accessible WhatsApp and Telegram icons instead of text
   assert.doesNotMatch(footer, />WhatsApp ↗<|>Telegram ↗</);
   assert.match(footer, /\.footer__messengers a \{[\s\S]*?width: 42px;[\s\S]*?height: 42px;/);
 });
+
+test('footer messenger icons keep WhatsApp green and Telegram blue, including on hover', () => {
+  const footer = source('src/components/global/SiteFooter.astro');
+  assert.match(footer, /class="footer__messenger--whatsapp"[^>]*aria-label="WhatsApp"/);
+  assert.match(footer, /class="footer__messenger--telegram"[^>]*aria-label="Telegram"/);
+  assert.ok(footer.includes('.footer__messenger--whatsapp { --messenger-color: #25d366; }'));
+  assert.ok(footer.includes('.footer__messenger--telegram { --messenger-color: #229ed9; }'));
+  const normal = footer.split('  .footer__messengers a {')[1].split('  .footer__messengers a svg {')[0];
+  const hovered = footer.split('  .footer__messengers a:hover,')[1].split('  @media (prefers-reduced-motion: reduce)')[0];
+  for (const style of [normal, hovered]) {
+    assert.match(style, /color: #fff;/);
+    assert.match(style, /background: var\(--messenger-color\);/);
+    assert.match(style, /border-color: var\(--messenger-color\);/);
+  }
+  assert.doesNotMatch(hovered, /var\(--color-brand-deep\)/);
+});

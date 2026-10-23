@@ -102,7 +102,7 @@ export async function preverifyMobileHeroFiles(packets,{maxConcurrent=16,fetchIm
 /** fetchImpl is injectable only for tests; the CLI has no offline/skip-verification flag. */
 export async function collectMobileHeroSwarm({manifest,packets,currentInventory,currentMain,
   existingRegistry={version:1,media:'(max-width: 479px)',items:[]},ledger={version:1,assets:[]},
-  fetchImpl=globalThis.fetch,verifiedSources=null,verifiedVariants=null,now=new Date().toISOString()}={}) {
+  fetchImpl=globalThis.fetch,verifiedSources=null,verifiedVariants=null,selectedPacketIds=null,now=new Date().toISOString()}={}) {
   check(/^[a-f0-9]{40}$/.test(currentMain??''),'A full --current-main SHA is required');
   check(currentInventory?.sourceCommit===currentMain,'Current rendered inventory sourceCommit does not match current main');
   check(currentInventory?.schemaVersion===1 && Array.isArray(currentInventory.usages) && Array.isArray(currentInventory.assets),'Invalid current rendered inventory');
@@ -118,11 +118,13 @@ export async function collectMobileHeroSwarm({manifest,packets,currentInventory,
   for(const usage of currentInventory.usages){const id=key(usage);byUsage.set(id,[...(byUsage.get(id)??[]),usage]);}
   const report={version:1,collectedAt:now,currentMain,frozenSourceCommit:manifest.sourceCommit,
     packets:[],preparedRows:[],alreadyPresent:[],unpublished:[],staleUsages:[],verified:[],verifiedSources:[],
-    counts:{packets:manifest.packets.length,completedPackets:0,readyAssets:0,addedRows:0,staleUsages:0,verificationFailures:0}};
+    counts:{packets:selectedMetas.length,completedPackets:0,readyAssets:0,addedRows:0,staleUsages:0,verificationFailures:0}};
   const entries=new Map(packets.map(entry=>[entry.meta.id,entry]));
+  const selectedMetas=selectedPacketIds===null?manifest.packets:manifest.packets.filter(meta=>selectedPacketIds.includes(meta.id));
+  check(selectedPacketIds===null||(selectedMetas.length===selectedPacketIds.length&&new Set(selectedPacketIds).size===selectedPacketIds.length),'Unknown or duplicate batch packet IDs');
   const verificationCache=verifiedVariants??new Map();
   const sourceVerificationCache=verifiedSources??new Map();
-  for(const meta of manifest.packets){
+  for(const meta of selectedMetas){
     const entry=entries.get(meta.id);
     if(!entry || entry.packet.status!=='completed'){report.packets.push({packetId:meta.id,status:entry?.packet.status??'missing'});continue;}
     report.counts.completedPackets++;
@@ -225,8 +227,8 @@ export async function collectMobileHeroSwarm({manifest,packets,currentInventory,
 }
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'));}catch(error){if(error.code==='ENOENT' && fallback!==undefined)return fallback;throw error;}}
-export async function loadCollectionPackets(rootDir,manifest) {
-  return Promise.all(manifest.packets.map(async meta=>{
+export async function loadCollectionPackets(rootDir,manifest,selectedMetas=manifest.packets) {
+  return Promise.all(selectedMetas.map(async meta=>{
     const packet=await readJson(path.resolve(rootDir,meta.path));
     if(packet.status!=='completed')return {meta,packet};
     const jobsPath=meta.jobsPath??packet.jobsPath;
@@ -242,7 +244,7 @@ export async function loadCollectionPackets(rootDir,manifest) {
 
 async function main(argv) {
   const options={root:ROOT,queueRoot:QUEUE};
-  const flags={'--root':'root','--queue-root':'queueRoot','--current-inventory':'currentInventory','--current-main':'currentMain','--out-dir':'outDir','--registry':'registry','--ledger':'ledger'};
+  const flags={'--root':'root','--queue-root':'queueRoot','--current-inventory':'currentInventory','--current-main':'currentMain','--out-dir':'outDir','--registry':'registry','--ledger':'ledger','--packet-from':'packetFrom','--packet-count':'packetCount'};
   for(let i=0;i<argv.length;i++){
     if(argv[i]==='--help'){console.log('node scripts/mobile-hero-swarm-collect.mjs --current-inventory <fresh-main-inventory.json> --current-main <40-char SHA> [--queue-root '+QUEUE+'] [--out-dir <staged-output-directory>] [--root <repository>]\nDefault: verify network objects and print dry-run report. Writes only inside --out-dir; never publishes.');return;}
     check(flags[argv[i]] && argv[i+1] && !argv[i+1].startsWith('--'),'Unknown or missing option: '+argv[i]);options[flags[argv[i]]]=argv[++i];
@@ -250,10 +252,15 @@ async function main(argv) {
   check(options.currentInventory,'--current-inventory is required; collection needs a fresh main render');
   check(options.currentMain,'--current-main is required');
   const root=path.resolve(options.root), manifest=await readJson(path.resolve(root,options.queueRoot,'manifest.json'));
-  const packets=await loadCollectionPackets(root,manifest);
+  const from=Number(options.packetFrom??0),count=Number(options.packetCount??manifest.packets.length);
+  check(Number.isSafeInteger(from)&&from>=0&&from<manifest.packets.length&&Number.isSafeInteger(count)&&count>0&&count<=32,'Invalid bounded packet batch');
+  const selectedMetas=manifest.packets.slice(from,from+count);
+  check(selectedMetas.length>0,'Empty packet slice');
+  console.log('Mobile hero batch '+selectedMetas[0].id+'–'+selectedMetas.at(-1).id+' ('+selectedMetas.length+' packets)');
+  const packets=await loadCollectionPackets(root,manifest,selectedMetas);
   const proof=await preverifyMobileHeroFiles(packets,{maxConcurrent:16});
   if(proof.failures.length)throw Error('S3 GET+SHA256 preflight failed for '+proof.failures.length+' objects (first 20): '+JSON.stringify(proof.failures.slice(0,20)));
-  const result=await collectMobileHeroSwarm({manifest,packets,verifiedSources:proof.verifiedSources,verifiedVariants:proof.verifiedVariants,
+  const result=await collectMobileHeroSwarm({manifest,packets,selectedPacketIds:selectedMetas.map(p=>p.id),verifiedSources:proof.verifiedSources,verifiedVariants:proof.verifiedVariants,
     currentInventory:await readJson(path.resolve(root,options.currentInventory)),currentMain:options.currentMain,
     existingRegistry:await readJson(path.resolve(root,options.registry??'src/data/media/mobile-hero-registry.json'),{version:1,media:'(max-width: 479px)',items:[]}),
     ledger:await readJson(path.resolve(root,options.ledger??'src/data/media/direct-s3-uploads.json'),{version:1,assets:[]})});

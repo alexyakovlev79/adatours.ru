@@ -21,6 +21,7 @@ interface Props {
   replacementReason?: string;
   descriptionBelow?: boolean;
   strongOverlay?: boolean;
+  noOverlay?: boolean;
 }
 
 const {
@@ -38,6 +39,7 @@ const {
   replacementReason,
   descriptionBelow = false,
   strongOverlay = false,
+  noOverlay = false,
 } = Astro.props;
 
 const video = explicitVideo ?? await videoForBorrowedHero(image, Astro.url.pathname);
@@ -67,7 +69,7 @@ const vip = (await getVipTourPaths()).has(href);
     <span class="band-card__link">Смотреть <span aria-hidden="true">↗</span></span>
   </a>
 ) : video ? (
-  <div class:list={['band', 'band--video', `band--${resolvedAlign}`, { 'band--strong-overlay': strongOverlay }]}
+  <div class:list={['band', 'band--video', `band--${resolvedAlign}`, { 'band--strong-overlay': strongOverlay, 'band--no-overlay': noOverlay }]}
     data-video-surface
     data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
@@ -88,7 +90,7 @@ const vip = (await getVipTourPaths()).has(href);
     </a>
   </div>
 ) : (
-  <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image, 'band--strong-overlay': strongOverlay }]} href={resolvedHref} style={style}
+  <a class:list={['band', `band--${resolvedAlign}`, { 'band--image': image, 'band--strong-overlay': strongOverlay, 'band--no-overlay': noOverlay }]} href={resolvedHref} style={style}
     data-mobile-cover={mobileCover ? mobileCover.narrow ? 'home-p06' : 'home-p02' : undefined}
     data-image-text-align={imageTextAlign}
     data-media-status={mediaStatus ?? (image ? 'legacy' : undefined)}
@@ -262,6 +264,13 @@ const vip = (await getVipTourPaths()).has(href);
   /* Explicitly requested darker text zone, without changing the original photo. */
   .band--strong-overlay .band__overlay {
     background: linear-gradient(90deg, rgba(10,10,9,.44), rgba(10,10,9,.70) 48%, rgba(10,10,9,.80));
+  }
+
+  /* Opt-in daylight editorial banner. Keep the photograph completely clear;
+     text shadow preserves legibility without dimming any part of the image. */
+  .band--no-overlay .band__overlay { background: none; }
+  .band--no-overlay .band__content {
+    text-shadow: 0 2px 12px rgb(0 0 0 / 75%), 0 1px 3px rgb(0 0 0 / 90%);
   }
 
   .band__content {

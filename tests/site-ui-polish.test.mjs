@@ -48,3 +48,19 @@ test('editorial icons add mobile landmarks without external media requests', () 
     assert.doesNotMatch(html, /https:\/\/.*\.svg/i);
   }
 });
+
+test('Multi-country home banner has a daylight image without its dark overlay', () => {
+  const home = source('src/pages/index.astro');
+  const band = source('src/components/editorial/DestinationBand.astro');
+  const multi = home.match(/<DestinationBand[\s\S]*?eyebrow="Multi-country"[\s\S]*?\/>/)?.[0] ?? '';
+  assert.match(multi, /image="\/media\/home\/hero-rio-generated-20261008-v2\.webp"/);
+  assert.match(multi, /noOverlay/);
+  assert.doesNotMatch(multi, /strongOverlay/);
+  assert.match(band, /\.band--no-overlay \.band__overlay \{ background: none; \}/);
+});
+
+test('footer puts Contacts before About and stays two-column on phones', () => {
+  const footer = source('src/components/global/SiteFooter.astro');
+  assert.match(footer, /primary: \[NAV_LINKS\[8\], NAV_LINKS\[7\]\]/);
+  assert.match(footer, /@media \(max-width: 480px\)[\s\S]*?\.footer__navigation \{\s*grid-template-columns: repeat\(2, minmax\(0, 1fr\)\);/);
+});

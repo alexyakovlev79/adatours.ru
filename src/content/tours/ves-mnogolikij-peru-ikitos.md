@@ -307,7 +307,7 @@ itinerary:
 
     Прибытие и размещение в отеле **Conde de Lemos Inn 3*** или отеле той же категории. Свободное время в Арекипе.
   images:
-  - src: /media/destinations/arequipa/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/arequipa/gallery-1-enhanced-20261023-v2.webp
     alt: "Подсвеченная церковь с колокольней и пальмы в Арекипе, Перу"
     hover: "Арекипа ночью: освещённая церковь среди пальм"
 - day: 10

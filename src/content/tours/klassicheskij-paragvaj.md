@@ -144,7 +144,7 @@ itinerary:
 
     Прибытие и размещение в отеле 4*.
   images:
-  - src: /media/destinations/ciudad-del-este/gallery-1-enhanced-20261005.webp
+  - src: /media/destinations/ciudad-del-este/gallery-1-enhanced-20261023-v2.webp
     alt: "Ярко раскрашенный автобус на улице Сьюдад-дель-Эсте, Парагвай"
     hover: "Сьюдад-дель-Эсте: передняя часть цветного городского автобуса"
 - day: 7

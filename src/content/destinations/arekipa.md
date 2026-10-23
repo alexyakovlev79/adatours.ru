@@ -13,17 +13,17 @@ destinationType: city
 summary: >-
   Арекипа на юге Перу известна историческим центром из светлого вулканического камня, монастырем Санта-Каталина, Пласа-де-Армас и маршрутами к каньону Колка.
 hero:
-  src: /media/destinations/arequipa/hero-enhanced-20261005.webp
+  src: /media/destinations/arequipa/hero-enhanced-20261023-v2.webp
   hover: "Арекипа: башня церкви на фоне вулкана"
   alt: "Церковная башня перед высоким вулканическим склоном в Арекипе, Перу"
 gallery:
-- src: /media/destinations/arequipa/gallery-1-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-1-enhanced-20261023-v2.webp
   alt: "Подсвеченная церковь с колокольней и пальмы в Арекипе, Перу"
   hover: "Арекипа ночью: освещённая церковь среди пальм"
-- src: /media/destinations/arequipa/gallery-2-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-2-enhanced-20261023-v2.webp
   alt: "Собака на мощёной улице со старинными фасадами в Арекипе, Перу"
   hover: "Арекипа: собака у фонаря на улице между каменными зданиями"
-- src: /media/destinations/arequipa/gallery-3-enhanced-20261005.webp
+- src: /media/destinations/arequipa/gallery-3-enhanced-20261023-v2.webp
   alt: "Светлая церковь с двумя башнями в Арекипе, Перу"
   hover: "Арекипа: белый фасад церкви с двумя высокими башнями"
 - src: /media/destinations/arequipa/gallery-4-enhanced-20261005.webp
@@ -68,7 +68,7 @@ featureBands:
     title: Монастыри, церкви и колониальный центр
     text: >-
       В центре Арекипы находятся монастырь Санта-Каталина, кафедральный собор, церковь Ла-Кампанья, церкви Сан-Франциско и Санто-Доминго, Пласа-де-Армас, Каса-де-ла-Монеда и Каса-Морал.
-    image: /media/destinations/arequipa/gallery-2-enhanced-20261005.webp
+    image: /media/destinations/arequipa/gallery-2-enhanced-20261023-v2.webp
   - eyebrow: За городом
     title: Инкские террасы и каньон Колка
     text: >-

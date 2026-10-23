@@ -1,0 +1,73 @@
+name: Ada Tours read-only storage usage snapshot
+on:
+  push:
+    branches: [feature/mobile-hero-swarm-20261023]
+    paths: ['.github/workflows/yandex-bucket-stats-readonly.yml']
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  inspect:
+    name: Read Yandex bucket bytes and mobile S3 receipts
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - name: Snapshot worker S3 receipt JSON
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          path: queue
+          sparse-checkout: data/media/hero-mobile-swarm-20261023/receipts
+          fetch-depth: 1
+      - name: Snapshot direct S3 upload ledger
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          path: current
+          sparse-checkout: src/data/media/direct-s3-uploads.json
+          fetch-depth: 1
+      - name: Calculate unique verified file volumes without downloading binaries
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('node:fs'),path=require('node:path');
+          function bytesReport(rows){return {objects:rows.length,bytes:rows.reduce((s,x)=>s+Number(x.bytes||0),0),gib:rows.reduce((s,x)=>s+Number(x.bytes||0),0)/1073741824}}
+          const dir='queue/data/media/hero-mobile-swarm-20261023/receipts';
+          const names=fs.readdirSync(dir).filter(x=>/^b\d+\.json$/.test(x));
+          const unique=new Map(),duplicate=[];
+          for(const name of names){
+            const entries=JSON.parse(fs.readFileSync(path.join(dir,name))).assets||[];
+            for(const item of entries){
+              const prior=unique.get(item.key);
+              if(prior && (prior.bytes!==item.bytes || prior.sha256!==item.sha256))throw Error('Conflicting S3 receipt for '+item.key);
+              if(prior)duplicate.push(item.key);else unique.set(item.key,item);
+            }
+          }
+          const ledger=JSON.parse(fs.readFileSync('current/src/data/media/direct-s3-uploads.json')).assets||[];
+          const types={};
+          for(const v of unique.values()){
+            const ext=v.key.split('.').at(-1);types[ext]??={count:0,bytes:0};types[ext].count++;types[ext].bytes+=Number(v.bytes||0);
+          }
+          console.log('ADA_S3_RECEIPT_SUMMARY '+JSON.stringify({workerPackets:names.length,worker:bytesReport([...unique.values()]),duplicateReceiptKeys:duplicate.length,workerExt:types,directLedger:bytesReport(ledger)}));
+          NODE
+      - name: Read true bucket size by Yandex Object Storage API (no mutation)
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing read-capable YC_MEDIA_SA_ID"; exit 1; }
+          oidc_response="$(curl --fail --silent --show-error --connect-timeout 15 --max-time 45 --get             -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}"             --data-urlencode "audience=https://github.com/alexyakovlev79"             "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er .value <<< "${oidc_response}")"
+          echo "::add-mask::${oidc_token}"
+          iam_response="$(curl --fail --silent --show-error --connect-timeout 15 --max-time 45             -X POST 'https://auth.yandex.cloud/oauth/token'             -H 'Content-Type: application/x-www-form-urlencoded'             --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange'             --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token'             --data-urlencode "audience=${YC_SA_ID}"             --data-urlencode "subject_token=${oidc_token}"             --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er .access_token <<< "${iam_response}")"
+          echo "::add-mask::${iam_token}"
+          curl --fail --silent --show-error --connect-timeout 15 --max-time 40             -H "Authorization: Bearer ${iam_token}"             "https://storage.api.cloud.yandex.net/storage/v1/buckets/img.adatours.ru:getStats"             | jq -c '{
+              name,
+              usedSize,
+              gib:(.usedSize|tonumber/1073741824),
+              storageClassUsedSizes,
+              storageClassCounters,
+              updatedAt
+            } | {ADA_YANDEX_STORAGE_SNAPSHOT:.}'

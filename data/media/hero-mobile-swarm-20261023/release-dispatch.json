@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "action": "publish-all-verified-mobile-heroes",
-  "swarmHead": "6ecde48cc31fab00a739fe170159edc3768e4503",
-  "requestedAt": "2026-10-23T09:53:05.273Z",
-  "requireCompletedPackets": 206,
-  "requireReadySources": 2053,
-  "attempt": 3,
-  "note": "Publish all currently valid mobile heroes with concurrent immutable GET+SHA256 preverification; report changed/stale usages without blocking unaffected results."
+  "version": 2,
+  "action": "publish-verified-mobile-hero-batches",
+  "swarmHead": "def3d50ffd4a2c7f21b7a86709d4e9644d15ebc7",
+  "batchFrom": 0,
+  "batchCount": 24,
+  "frozenSourceCommit": "197b0b09286653ba3cbb8881306040e97caef39b",
+  "requestedAt": "2026-10-23T10:07:51.491Z",
+  "policy": "publish up to 24 completed packets with GET+SHA256 verification, Pages deploy and automatic next-batch dispatch"
 }

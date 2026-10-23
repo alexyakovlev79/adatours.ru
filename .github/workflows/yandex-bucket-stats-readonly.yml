@@ -63,13 +63,40 @@ jobs:
           iam_response="$(curl --fail --silent --show-error --connect-timeout 15 --max-time 45             -X POST 'https://auth.yandex.cloud/oauth/token'             -H 'Content-Type: application/x-www-form-urlencoded'             --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange'             --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token'             --data-urlencode "audience=${YC_SA_ID}"             --data-urlencode "subject_token=${oidc_token}"             --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
           iam_token="$(jq -er .access_token <<< "${iam_response}")"
           echo "::add-mask::${iam_token}"
-          curl --fail --silent --show-error --connect-timeout 15 --max-time 40             -H "Authorization: Bearer ${iam_token}"             "https://storage.api.cloud.yandex.net/storage/v1/buckets/img.adatours.ru:getStats"             | jq -c '{
-              name,
-              usedSize,
-              gib:(.usedSize|tonumber/1073741824),
-              storageClassUsedSizes,
-              storageClassCounters,
-              updatedAt
-            } | {ADA_YANDEX_STORAGE_SNAPSHOT:.}'
-
-# Read-only metrics run requested on 2026-10-23.
+          YC_IAM_TOKEN="${iam_token}" python3 <<'PY'
+          import os, urllib.request, urllib.parse, urllib.error
+          from collections import defaultdict
+          from xml.etree import ElementTree as ET
+          token=os.environ["YC_IAM_TOKEN"]
+          totals=defaultdict(lambda: {"objects":0,"bytes":0})
+          by_ext=defaultdict(lambda: {"objects":0,"bytes":0})
+          objects=bytes_total=pages=0
+          continuation=None
+          for step in range(100):
+              params={"list-type":"2","max-keys":"1000"}
+              if continuation: params["continuation-token"]=continuation
+              url="https://storage.yandexcloud.net/img.adatours.ru/?"+urllib.parse.urlencode(params)
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={"Authorization":"Bearer "+token}),timeout=45) as response:
+                      data=response.read()
+              except urllib.error.HTTPError as exc:
+                  print("S3 ListObjectsV2 read-only request denied (HTTP "+str(exc.code)+")")
+                  raise SystemExit(4)
+              root=ET.fromstring(data)
+              entries=root.findall(".//{*}Contents")
+              for entry in entries:
+                  key=entry.findtext("{*}Key") or ""
+                  size=int(entry.findtext("{*}Size") or "0")
+                  parts=key.split("/")
+                  group="/".join(parts[:2]) if len(parts)>1 else "(root)"
+                  ext=key.rsplit(".",1)[-1].lower() if "." in key else "(none)"
+                  totals[group]["objects"]+=1;totals[group]["bytes"]+=size
+                  by_ext[ext]["objects"]+=1;by_ext[ext]["bytes"]+=size
+                  objects+=1;bytes_total+=size
+              pages+=1
+              continuation=root.findtext(".//{*}NextContinuationToken")
+              if not continuation:break
+          else:raise SystemExit("Unbounded pagination rejected; check bucket inventory.")
+          import json
+          print("ADA_S3_ACTUAL_LISTED_USAGE "+json.dumps({"objects":objects,"bytes":bytes_total,"gib":bytes_total/1073741824,"pages":pages,"byExtension":dict(by_ext),"byPrefix":dict(totals)},ensure_ascii=False))
+          PY

@@ -95,10 +95,6 @@ const vip = (await getVipTourPaths()).has(href);
     /* Keep the hikers visible when the horizontal adventure photo is cropped on phones. */
     .interest-card[data-interest-item="theme_adventure"] { --interest-original-position: 92% center; }
     .interest-card[data-interest-item="theme_adventure"] .interest-card__image img { object-position: 92% center; }
-    /* This landscape wedding photo has the couple in its left third. In a two-column phone tile,
-       a centered cover cuts off the groom and bride. Scope the correction to this card only. */
-    .interest-card[data-interest-item="theme_weddings_romance"] { --interest-original-position: 20% center; }
-    .interest-card[data-interest-item="theme_weddings_romance"] .interest-card__image img { object-position: 20% center; }
   }
   @media (max-width: 760px) {
     .interest-card__responsive-image[data-mobile-cover="home-p02"] {

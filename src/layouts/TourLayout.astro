@@ -247,7 +247,7 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     />
   )}
 
-  {!archived && <TourPricing price={money} />}
+  {!archived && <TourPricing price={money} basis={d.priceBasis} />}
   {(d.included.length > 0 || d.notIncluded.length > 0 || d.notes.length > 0) && (
     <IncludedExcluded included={d.included} notIncluded={d.notIncluded} notes={d.notes} />
   )}

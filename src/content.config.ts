@@ -152,6 +152,7 @@ const tours = defineCollection({
     priceFrom: z.number().nonnegative().nullable().optional(),
     currency: z.string().optional(),
     priceNote: z.string().optional(),
+    priceBasis: z.string().optional(),
     dates: z.array(z.string()).default([]),
     hero: media,
     gallery: z.array(mediaObject).default([]),

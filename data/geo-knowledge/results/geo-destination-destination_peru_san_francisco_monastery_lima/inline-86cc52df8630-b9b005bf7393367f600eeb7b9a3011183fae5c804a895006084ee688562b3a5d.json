@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_peru_san_francisco_monastery_lima",
+  "stableId": "destination_peru_san_francisco_monastery_lima",
+  "kind": "destination",
+  "canonicalPath": "/peru/place/san-francisco-monastery-lima/",
+  "sourceFingerprint": "74e44321bf0c1eb078b24878919d059d875bc320d35a6bd3c79f045fe147541b",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "officialUrl": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "containedInPlace",
+      "targetId": "destination_peru_lima"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Точное самостоятельное место и страна сверены с официальным источником, утверждённым резервом и текущим MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Независимые тип и навигационная роль сохранены из утверждённого каталога; текст описывает тот же объект."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Официальная страница описывает именно этот именованный объект."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Географическая связь проверена по источнику и каноническим ID."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "sourceUrl": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Географическая связь проверена по источнику и каноническим ID."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Монастырь Сан-Франциско в Лиме",
+      "reason": "Точное самостоятельное место и страна сверены с официальным источником, утверждённым резервом и текущим MD."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "religious_site",
+      "reason": "Класс соответствует реальному объекту и закрытому справочнику сайта."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs",
+      "reason": "Подтверждён точный объект, не более широкий парк, район или государственный орган."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Связь прямо подтверждена текущим источником."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "probability": 99,
+      "selected": "destination_peru_lima",
+      "reason": "Связь прямо подтверждена текущим источником."
+    }
+  ],
+  "reviewNote": "Паспорт текущей редакции P172. Координаты и непроверенные внешние ID не добавлены; отсутствие этих полей не мешает подтверждённой идентичности. Не является заявлением об уже выполненной публикации.",
+  "entityClass": "religious_site"
+}

@@ -11,26 +11,14 @@ countries:
 - country_peru
 destinations:
 - destination_brazil_rio
-- destination_brazil_iguacu
-- destination_argentina_puerto_iguasu
-- destination_argentina_buenos_aires
-- destination_chile_santyago_de_chili
-- destination_chile_valparaiso_i_vinya_del_mar
-- destination_peru_lima
-- destination_peru_cusco
-- destination_peru_svyaschennaya_dolina_inkov
-- destination_peru_chinchero
-- destination_peru_olyantajtambo
-- destination_peru_machu_picchu
-- destination_peru_auanakancha
-- destination_peru_pisak
-- destination_peru_moraj
-- destination_peru_aguas_kalentes
-- destination_brazil_corcovado_christ_the_redeemer
 - destination_brazil_tijuca_national_park
+- destination_brazil_corcovado_christ_the_redeemer
 - destination_brazil_morro_da_urca
 - destination_brazil_sugarloaf_mountain
+- destination_brazil_iguacu
+- destination_argentina_puerto_iguasu
 - destination_argentina_garganta_del_diablo
+- destination_argentina_buenos_aires
 - destination_argentina_buenos_aires_obelisk
 - destination_argentina_plaza_de_mayo
 - destination_argentina_casa_rosada
@@ -41,26 +29,38 @@ destinations:
 - destination_argentina_palermo
 - destination_argentina_recoleta
 - destination_argentina_puerto_madero
+- destination_chile_santyago_de_chili
 - destination_chile_santiago_plaza_de_armas
 - destination_chile_santiago_metropolitan_cathedral
 - destination_chile_santiago_central_post_office
 - destination_chile_santiago_city_hall
 - destination_chile_la_moneda_palace
 - destination_chile_santa_lucia_hill
+- destination_chile_valparaiso_i_vinya_del_mar
+- destination_chile_quinta_vergara_amphitheater
 - destination_chile_plaza_sotomayor
+- destination_chile_el_peral_funicular
+- destination_chile_paseo_yugoslavo
+- destination_peru_cusco
+- destination_peru_svyaschennaya_dolina_inkov
 - destination_peru_urubamba
+- destination_peru_pisak
+- destination_peru_olyantajtambo
+- destination_peru_chinchero
+- destination_peru_moraj
+- destination_peru_auanakancha
+- destination_peru_aguas_kalentes
+- destination_peru_machu_picchu
 - destination_peru_sacsayhuaman
 - destination_peru_coricancha
 - destination_peru_tambomachay
 - destination_peru_puka_pukara
+- destination_peru_lima
 - destination_peru_lima_plaza_mayor
 - destination_peru_lima_cathedral
-- destination_peru_lima_miraflores
-- destination_chile_quinta_vergara_amphitheater
-- destination_chile_el_peral_funicular
-- destination_chile_paseo_yugoslavo
 - destination_peru_san_francisco_monastery_lima
 - destination_peru_san_isidro_lima
+- destination_peru_lima_miraflores
 audiences: []
 route:
 - Рио-де-Жанейро, 3 ночи
@@ -384,26 +384,14 @@ routeCountries:
 - country_peru
 routeDestinations:
 - destination_brazil_rio
-- destination_brazil_iguacu
-- destination_argentina_puerto_iguasu
-- destination_argentina_buenos_aires
-- destination_chile_santyago_de_chili
-- destination_chile_valparaiso_i_vinya_del_mar
-- destination_peru_lima
-- destination_peru_cusco
-- destination_peru_svyaschennaya_dolina_inkov
-- destination_peru_chinchero
-- destination_peru_olyantajtambo
-- destination_peru_machu_picchu
-- destination_peru_auanakancha
-- destination_peru_pisak
-- destination_peru_moraj
-- destination_peru_aguas_kalentes
-- destination_brazil_corcovado_christ_the_redeemer
 - destination_brazil_tijuca_national_park
+- destination_brazil_corcovado_christ_the_redeemer
 - destination_brazil_morro_da_urca
 - destination_brazil_sugarloaf_mountain
+- destination_brazil_iguacu
+- destination_argentina_puerto_iguasu
 - destination_argentina_garganta_del_diablo
+- destination_argentina_buenos_aires
 - destination_argentina_buenos_aires_obelisk
 - destination_argentina_plaza_de_mayo
 - destination_argentina_casa_rosada
@@ -414,26 +402,38 @@ routeDestinations:
 - destination_argentina_palermo
 - destination_argentina_recoleta
 - destination_argentina_puerto_madero
+- destination_chile_santyago_de_chili
 - destination_chile_santiago_plaza_de_armas
 - destination_chile_santiago_metropolitan_cathedral
 - destination_chile_santiago_central_post_office
 - destination_chile_santiago_city_hall
 - destination_chile_la_moneda_palace
 - destination_chile_santa_lucia_hill
+- destination_chile_valparaiso_i_vinya_del_mar
+- destination_chile_quinta_vergara_amphitheater
 - destination_chile_plaza_sotomayor
+- destination_chile_el_peral_funicular
+- destination_chile_paseo_yugoslavo
+- destination_peru_cusco
+- destination_peru_svyaschennaya_dolina_inkov
 - destination_peru_urubamba
+- destination_peru_pisak
+- destination_peru_olyantajtambo
+- destination_peru_chinchero
+- destination_peru_moraj
+- destination_peru_auanakancha
+- destination_peru_aguas_kalentes
+- destination_peru_machu_picchu
 - destination_peru_sacsayhuaman
 - destination_peru_coricancha
 - destination_peru_tambomachay
 - destination_peru_puka_pukara
+- destination_peru_lima
 - destination_peru_lima_plaza_mayor
 - destination_peru_lima_cathedral
-- destination_peru_lima_miraflores
-- destination_chile_quinta_vergara_amphitheater
-- destination_chile_el_peral_funicular
-- destination_chile_paseo_yugoslavo
 - destination_peru_san_francisco_monastery_lima
 - destination_peru_san_isidro_lima
+- destination_peru_lima_miraflores
 primaryThemes: ["theme_culture", "theme_nature"]
 themes: []
 ---
@@ -444,6 +444,8 @@ themes: []
 После природной части путешествие продолжается в Буэнос-Айресе и Сантьяго-де-Чили. В столице Аргентины предусмотрены обзорная экскурсия и свободный день, а в Чили, знакомство с историческим и современным Сантьяго, Винья-дель-Маром и Вальпараисо.
 
 Финальные дни проходят в Перу. Вы отправитесь в Священную долину инков, посетите Писак, Ольянтайтамбо, Чинчеро, Морай и Ауанаканчу, затем на поезде доберетесь до Мачу-Пикчу. Перед вылетом в Лиму программа продолжается в Куско, Саксайуамане, Кориканче, Тамбомачае и Пука-Пукаре.
+
+В последний день вы познакомитесь с колониальным центром Лимы, [монастырём Сан-Франциско](/peru/place/san-francisco-monastery-lima/), [Сан-Исидро](/peru/place/san-isidro-lima/) и Мирафлоресом. После обзорной экскурсии предусмотрены возвращение в отель и трансфер в аэропорт для международного вылета.
 
 Маршрут построен так, чтобы за одну поездку показать разные стороны континента. Бразилия дает океан, тропический лес и водопады, Аргентина, большой южноамериканский мегаполис и танго, Чили, тихоокеанское побережье и современный Сантьяго, Перу, наследие инков и высокогорные долины. Поэтому каждые несколько дней полностью меняются архитектура, климат и культурный фон.
 

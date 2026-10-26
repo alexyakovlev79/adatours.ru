@@ -62,11 +62,13 @@ jobs:
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           GH_TOKEN: ${{ github.token }}
-        run: gh issue comment "$ISSUE_NUMBER" --body "Проверено: запрошенные значения уже установлены. Новый коммит и деплой не требуются."
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Проверено: запрошенные значения уже установлены. Новый коммит и деплой не требуются."
       - name: Failure acknowledgement
         if: failure()
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           GH_TOKEN: ${{ github.token }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        run: gh issue comment "$ISSUE_NUMBER" --body "Правка НЕ опубликована. Ошибка авторизации, данных, сборки или безопасной записи: ${RUN_URL}."
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Правка НЕ опубликована. Ошибка авторизации, данных, сборки или безопасной записи: ${RUN_URL}."

@@ -3784,7 +3784,7 @@
         "tour_source_braziliya_i_argentina_v_sentyabre"
       ],
       "candidateEntityIds": [],
-      "comparisonNote": "Решение пользователя 2026-10-15: P067 — достоверный основной Word активного тура; расхождения сайта заменены данными Word. Архивные соответствия сохранены только для истории.",
+      "comparisonNote": "Решение 15.10 сохранено в истории; 26.10.2026 Алексей передал ответ Анны: P068 заменяет P067 для действующего тура.",
       "work": {
         "state": "done",
         "updatedAt": "2026-10-15",
@@ -3804,10 +3804,8 @@
           }
         ]
       },
-      "sourceRole": "primary",
-      "primaryForEntityIds": [
-        "tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej"
-      ],
+      "sourceRole": "superseded_edition",
+      "primaryForEntityIds": [],
       "primaryFileDriveId": "1oggKMDakULVfSUlKKWdxVYrZn2KMLoBE",
       "primaryFileSelectionBasis": "Одинаковый извлечённый текст; сохраняется стабильный первый файл. Изображения не сравнивались.",
       "workHistory": [
@@ -3832,8 +3830,8 @@
           "url": "https://docs.google.com/document/d/1cDyQGEPklh2ckz6-JzwRmgE8O597QWwG/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
           "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
           "folder": "Brazil 2027",
-          "modifiedTime": "2026-10-01T12:51:21.204Z",
-          "textSha256": "11531b1e1d1f5b168e80aab5ff40a9e444e618d87f0712cbdb003c745804447b",
+          "modifiedTime": "2026-10-19T14:36:45.682Z",
+          "textSha256": "0813083a838775786037b95d98768afbacb4a0db933b61f51ed2f54dff3c0d24",
           "role": "primary"
         }
       ],
@@ -3842,11 +3840,11 @@
         "tour_source_braziliya_i_argentina_v_sentyabre"
       ],
       "candidateEntityIds": [],
-      "comparisonNote": "Сопоставление продукта по маршруту и длительности; полнота переноса текста и услуг не проверена. Основной Word этой страницы изменён на P067 по более позднему прямому поручению Алексея 15.10.2026.",
+      "comparisonNote": "26.10.2026: явная замена P067 на P068; фактические тарифы Word перенесены. Заявление о снижении не совпадает с ценами источника, требуется уточнение.",
       "work": {
-        "state": "not_started",
-        "note": "",
-        "updatedAt": null
+        "state": "reviewed",
+        "updatedAt": "2026-10-26",
+        "note": "Ответ Анны передан Алексеем 26.10.2026; data/audits/anna-review-resolutions-20261026.json. Контент подготовлен, deploy и Sheets ещё не подтверждены."
       },
       "key": "P068",
       "priceAudit": {
@@ -3868,9 +3866,25 @@
           }
         ]
       },
-      "primaryForEntityIds": [],
+      "primaryForEntityIds": [
+        "tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej"
+      ],
       "primaryFileDriveId": "1cDyQGEPklh2ckz6-JzwRmgE8O597QWwG",
-      "sourceRole": "alternative_edition"
+      "sourceRole": "primary",
+      "workHistory": [
+        {
+          "state": "not_started",
+          "note": "",
+          "updatedAt": null
+        }
+      ],
+      "annaClarification20261026": {
+        "replaces": "P067",
+        "primaryWordDriveFileId": "1cDyQGEPklh2ckz6-JzwRmgE8O597QWwG",
+        "priceClaim": "она подешевела",
+        "priceClaimVerified": false,
+        "priceDiscrepancy": "Current replacement Word 3star DBL 3173 USD versus old P067 2815 USD. Apply literal Word tariffs, do not invent a reduction."
+      }
     },
     {
       "id": "drive_program_1moIDf9Rpu00YiTMcY3MfxmfLGRubW5kP",
@@ -7456,9 +7470,9 @@
       "candidateEntityIds": [],
       "comparisonNote": "Сопоставление продукта по маршруту и длительности; полнота переноса текста и услуг не проверена.",
       "work": {
-        "state": "not_started",
-        "note": "",
-        "updatedAt": null
+        "state": "reviewed",
+        "updatedAt": "2026-10-26",
+        "note": "Ответ Анны передан Алексеем 26.10.2026; data/audits/anna-review-resolutions-20261026.json. Контент подготовлен, deploy и Sheets ещё не подтверждены."
       },
       "key": "P135",
       "priceAudit": {
@@ -7477,7 +7491,18 @@
       "primaryForEntityIds": [
         "tour_source_mechty_sbyvayutsya_na_novyj_god"
       ],
-      "primaryFileDriveId": "1Kjvbso56c2nJhFSZq5crWwga8anymdnP"
+      "primaryFileDriveId": "1Kjvbso56c2nJhFSZq5crWwga8anymdnP",
+      "workHistory": [
+        {
+          "state": "not_started",
+          "note": "",
+          "updatedAt": null
+        }
+      ],
+      "annaClarification20261026": {
+        "guideLanguage": "ru",
+        "authority": "Word remains authoritative; PDF English guide wording overridden by Anna clarification relayed by Alexey"
+      }
     },
     {
       "id": "drive_program_1ZaAXBy_tbSigYKnqCeScyDRNE0qRri5d",
@@ -8456,11 +8481,9 @@
       "candidateEntityIds": [],
       "comparisonNote": "Подтверждено соответствие текущему Word 2027 и действующему Tour; полная адресная сверка содержания завершена 16.10.2026. Дополнительные редакции сохранены в files.",
       "work": {
-        "state": "done",
-        "note": "09.10.2026: опубликован точный выбранный V2 тура с уточнением Анны «Инкауаси». Полная сверка Word-варианта из этой описи не выполнялась; статус Word не закрывается автоматически.\n16.10.2026: сверены все 18 дней и 17 ночей текущего Word; добавлены 6 тарифов 4★/5★ SGL/DBL/TPL, год заезда, сектор 9 или аналогичный, условия цены/SGL-трансфера и высокогорья. Сохранены фото и ID; дополнены географические связи, альтернативы собор/MALI и платные места не объявлены обязательными. Перелет Уюни–Ла-Пас требует подтверждения включения. Подготовлено к публикации.\n16.10.2026: проход завершен. Content 90f2b578b87f4f714b09a5851acd03ae0d6ffa9c; Actions 38874668209 — media/build/deploy success. Строки Страницы и Подтверждение туров обновлены и прочитаны повторно. Копии сохранены без новых Tour ID.",
-        "updatedAt": "2026-10-16",
-        "deployRun": 38874668209,
-        "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c"
+        "state": "needs_update",
+        "updatedAt": "2026-10-26",
+        "note": "Ответ Анны передан Алексеем 26.10.2026; data/audits/anna-review-resolutions-20261026.json. Контент подготовлен, deploy и Sheets ещё не подтверждены."
       },
       "key": "P153",
       "priceAudit": {
@@ -8480,7 +8503,40 @@
         "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala"
       ],
       "primaryFileDriveId": "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
-      "durationNights": 17
+      "durationNights": 17,
+      "workHistory": [
+        {
+          "state": "done",
+          "note": "09.10.2026: опубликован точный выбранный V2 тура с уточнением Анны «Инкауаси». Полная сверка Word-варианта из этой описи не выполнялась; статус Word не закрывается автоматически.\n16.10.2026: сверены все 18 дней и 17 ночей текущего Word; добавлены 6 тарифов 4★/5★ SGL/DBL/TPL, год заезда, сектор 9 или аналогичный, условия цены/SGL-трансфера и высокогорья. Сохранены фото и ID; дополнены географические связи, альтернативы собор/MALI и платные места не объявлены обязательными. Перелет Уюни–Ла-Пас требует подтверждения включения. Подготовлено к публикации.\n16.10.2026: проход завершен. Content 90f2b578b87f4f714b09a5851acd03ae0d6ffa9c; Actions 38874668209 — media/build/deploy success. Строки Страницы и Подтверждение туров обновлены и прочитаны повторно. Копии сохранены без новых Tour ID.",
+          "updatedAt": "2026-10-16",
+          "deployRun": 38874668209,
+          "contentCommit": "90f2b578b87f4f714b09a5851acd03ae0d6ffa9c"
+        }
+      ],
+      "annaClarification20261026": {
+        "guideLanguage": "ru",
+        "uyuniLaPazFlightIncluded": true,
+        "unresolved": [
+          "tariffs: Word or PDF",
+          "Lima museum: Larco plus cathedral/MALI alternative in Word versus Gold Museum in PDF"
+        ],
+        "wordTariffsUSD": [
+          11848,
+          9562,
+          8980,
+          13544,
+          10545,
+          9725
+        ],
+        "pdfTariffsUSD": [
+          12048,
+          9712,
+          9130,
+          13744,
+          10695,
+          9875
+        ]
+      }
     },
     {
       "id": "drive_program_1wm4F-nqVlb_latC4I9kxI4NGR2we-e8l",
@@ -9566,16 +9622,29 @@
         "tour_source_braziliya_argentina_chili_peru_ru"
       ],
       "candidateEntityIds": [],
-      "comparisonNote": "Новый Drive-файл соответствует существующему активному туру по маршруту и длительности, но коммерческий источник противоречив: название и заголовок указывают 2027 год, а таблица тарифов повторяет 2026. Без подтверждения года тарифов публикация цен небезопасна.",
+      "comparisonNote": "26.10.2026: Анна через Алексея подтвердила год 2027; 2026 в таблице — опечатка.",
       "work": {
-        "state": "review",
-        "note": "24.10.2026: реальный текст Word прочитан; зафиксированы тарифы SGL/DBL/TRP, но год таблицы конфликтует с названием. Существующий Tour и цены не изменены.",
-        "updatedAt": "2026-10-24"
+        "state": "reviewed",
+        "updatedAt": "2026-10-26",
+        "note": "Ответ Анны передан Алексеем 26.10.2026; data/audits/anna-review-resolutions-20261026.json. Контент подготовлен, deploy и Sheets ещё не подтверждены."
       },
       "key": "P172",
-      "primaryForEntityIds": [],
+      "primaryForEntityIds": [
+        "tour_source_braziliya_argentina_chili_peru_ru"
+      ],
       "primaryFileDriveId": "1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS",
-      "sourceRole": "commercial_conflict_candidate"
+      "sourceRole": "primary",
+      "workHistory": [
+        {
+          "state": "review",
+          "note": "24.10.2026: реальный текст Word прочитан; зафиксированы тарифы SGL/DBL/TRP, но год таблицы конфликтует с названием. Существующий Tour и цены не изменены.",
+          "updatedAt": "2026-10-24"
+        }
+      ],
+      "annaClarification20261026": {
+        "tariffYear": 2027,
+        "year2026InTableIsTypo": true
+      }
     },
     {
       "id": "drive2026_1ADQQeg93JexEivjnmM120229N1Z6NFBk",

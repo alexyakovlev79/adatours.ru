@@ -131,3 +131,47 @@ test('Sheets outage preserves immutable result as PENDING; retry completes witho
  assert.equal(x.state().jobs[job.jobId].geoSheetSync.status,'SYNCED');
  assert.equal(x.sheets[16001610].length,2);assert.equal(x.sheets[16001611].length,2);
 });
+
+test('current codex_apps Sheets names and structuredContent retry the same committed result without duplicates',async()=>{
+ const x=mock({failFirstSheets:true}),job=buildNewObjectJob(entry,sha,0,core);
+ const oldRead=x.tools.mcp__Google_Drive__get_spreadsheet_range;
+ const oldBatch=x.tools.mcp__Google_Drive__batch_update_spreadsheet;
+ delete x.tools.mcp__Google_Drive__get_spreadsheet_range;
+ delete x.tools.mcp__Google_Drive__batch_update_spreadsheet;
+ x.tools.mcp__codex_apps__google_drive_get_spreadsheet_range=async args=>{
+  assert.equal(args.spreadsheet_id,'1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc');
+  assert.equal(args.range,'A1:A7000');
+  assert.ok(['GEO очередь','GEO результаты'].includes(args.sheet_name));
+  return {structuredContent:(await oldRead(args)).result};
+ };
+ x.tools.mcp__codex_apps__google_drive_batch_update_spreadsheet=async args=>{
+  assert.ok(Array.isArray(args.requests));assert.equal(args.requests.length,2);
+  for(const request of args.requests){
+   assert.equal(Object.keys(request).length,1);
+   assert.ok(request.appendCells||request.updateCells);
+  }
+  return {structuredContent:(await oldBatch(args)).result};
+ };
+ const request={stableId:id,creationCommit:created,ownerId:'current-connector-worker',result:sample(job)};
+ await assert.rejects(()=>collectNewGeoObject(x.tools,core,request),/Sheets PENDING/);
+ const firstHash=x.state().jobs[job.jobId].resultHash;
+ assert.equal(x.state().jobs[job.jobId].geoSheetSync.status,'PENDING');
+ assert.equal((await collectNewGeoObject(x.tools,core,request)).status,'collected_and_synced');
+ assert.equal(x.state().jobs[job.jobId].resultHash,firstHash);
+ assert.equal(x.state().jobs[job.jobId].geoSheetSync.status,'SYNCED');
+ assert.equal(x.queue().jobs.length,1);
+ assert.equal(x.sheets[16001610].length,2);assert.equal(x.sheets[16001611].length,2);
+ assert.equal((await collectNewGeoObject(x.tools,core,request)).status,'already_collected_and_synced');
+ assert.equal(x.writeCount(),2,'one failed batch, one successful exact retry, no duplicate third write');
+});
+
+test('an unrecognized Sheets read envelope cannot be mistaken for an empty sheet and append duplicates',async()=>{
+ const x=mock(),job=buildNewObjectJob(entry,sha,0,core);
+ delete x.tools.mcp__Google_Drive__get_spreadsheet_range;
+ x.tools.mcp__codex_apps__google_drive_get_spreadsheet_range=async()=>({structuredContent:{unexpected:[]}});
+ const request={stableId:id,creationCommit:created,ownerId:'bad-envelope-worker',result:sample(job)};
+ await assert.rejects(()=>collectNewGeoObject(x.tools,core,request),/range response is not a values array/);
+ assert.equal(x.state().jobs[job.jobId].geoSheetSync.status,'PENDING');
+ assert.equal(x.writeCount(),0);
+ assert.equal(x.sheets[16001610].length,1);assert.equal(x.sheets[16001611].length,1);
+});

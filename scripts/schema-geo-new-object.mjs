@@ -209,8 +209,10 @@ async function confirmGeoSheetSync(tools,jobId,hash){
 export async function syncNewGeoSheets(tools,core,saved,result){
  if(!saved?.job||!saved.resultHash||!saved.resultPath)
   throw Error('A committed GEO result is required before Sheets');
- const sheetRead=tools.mcp__Google_Drive__get_spreadsheet_range;
- const sheetBatch=tools.mcp__Google_Drive__batch_update_spreadsheet;
+ const sheetRead=tools.mcp__Google_Drive__get_spreadsheet_range
+  ||tools.mcp__codex_apps__google_drive_get_spreadsheet_range;
+ const sheetBatch=tools.mcp__Google_Drive__batch_update_spreadsheet
+  ||tools.mcp__codex_apps__google_drive_batch_update_spreadsheet;
  if(typeof sheetRead!=='function'||typeof sheetBatch!=='function')
   throw Error('GEO Sheet mirror PENDING: connect Google Drive/Sheets before finishing object creation');
  if(core.digest(result)!==saved.resultHash)throw Error('GEO result hash changed before Sheets');
@@ -224,8 +226,11 @@ export async function syncNewGeoSheets(tools,core,saved,result){
   sheetRead({spreadsheet_id:GEO_SHEET_ID,sheet_name:'GEO очередь',range:'A1:A7000'}),
   sheetRead({spreadsheet_id:GEO_SHEET_ID,sheet_name:'GEO результаты',range:'A1:A7000'})
  ]);
- const queueIndex=findGeoSheetRow(unwrap(existing[0]).values,saved.job.jobId);
- const resultsIndex=findGeoSheetRow(unwrap(existing[1]).values,saved.job.jobId);
+ const ranges=existing.map(unwrap);
+ if(ranges.some(range=>!Array.isArray(range?.values)))
+  throw Error('GEO Sheet range response is not a values array; no rows were appended');
+ const queueIndex=findGeoSheetRow(ranges[0].values,saved.job.jobId);
+ const resultsIndex=findGeoSheetRow(ranges[1].values,saved.job.jobId);
  const requests=[
   geoSheetWriteRequest(16001610,queueIndex,rows.queue),
   geoSheetWriteRequest(16001611,resultsIndex,rows.results)

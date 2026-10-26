@@ -7,7 +7,8 @@ title: 'Сахарная Голова: подъем по канатной дор
 country: country_brazil
 destination: destination_brazil_rio
 destinationName: Рио-де-Жанейро
-relatedDestinations: []
+relatedDestinations:
+- destination_brazil_sugarloaf_mountain
 themes:
 - theme_culture
 duration: 4 часа

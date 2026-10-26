@@ -18,6 +18,7 @@ import IncludedExcluded from '../components/tour/IncludedExcluded.astro';
 import StoryPair from '../components/editorial/StoryPair.astro';
 import SearchIndexRecord from '../components/global/SearchIndexRecord.astro';
 import InlineMarkdown from '../components/global/InlineMarkdown.astro';
+import { splitTourIntroHtml } from '../lib/tour-intro-heading.mjs';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
 import { countryPath, destinationPath, themePath, tourBreadcrumbs, tourPath } from '../lib/routes';
@@ -123,9 +124,7 @@ const heroMeta = durationLabel || undefined;
 // Treat the lead as the opening paragraph of the description, not hero text.
 // Only move its display position; do not edit the authored body or deduplicate.
 const tourBodyHtml = await Astro.slots.render('default');
-const firstHeadingMatch = tourBodyHtml.match(/^(\s*(?:<!--[\s\S]*?-->\s*)*<h2\b[^>]*>[\s\S]*?<\/h2>)/i);
-const firstHeadingHtml = firstHeadingMatch?.[1] ?? '';
-const remainingBodyHtml = firstHeadingHtml ? tourBodyHtml.slice(firstHeadingHtml.length) : tourBodyHtml;
+const { introHeadingHtml, descriptionHtml } = splitTourIntroHtml(tourBodyHtml);
 const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
@@ -166,10 +165,10 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   {hasTourDescription && (
     <section class="tour-copy">
       <div class="container prose" data-tour-description>
-        {firstHeadingHtml && <Fragment set:html={firstHeadingHtml} />}
+        <Fragment set:html={introHeadingHtml} />
         <div class="tour-copy__text" id={`tour-description-${d.id}`} data-tour-description-text>
           {d.lead?.trim() && <p class="tour-lead"><InlineMarkdown text={d.lead} /></p>}
-          {remainingBodyHtml && <Fragment set:html={remainingBodyHtml} />}
+          {descriptionHtml && <Fragment set:html={descriptionHtml} />}
         </div>
         <button class="tour-copy__toggle" type="button" aria-expanded="false" aria-controls={`tour-description-${d.id}`} data-tour-description-toggle hidden>
           <span data-tour-description-label>Подробнее о путешествии</span>
@@ -317,6 +316,17 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
   .tour-copy { background: var(--color-bg); padding: 0 0 var(--section-y-tight); }
   .tour-copy :global(.prose) { padding-top: 0; padding-bottom: 0; }
   .tour-copy :global(.prose:empty) { display: none; }
+  /* The only H1 is in the hero: intro headlines stay at H2 scale. */
+  .tour-copy :global(h2) {
+    font-size: clamp(2rem, 1.5rem + 1.4vw, 3rem) !important;
+    line-height: 1.13;
+    margin: 0 0 24px;
+  }
+  .tour-copy__text :global(h3) {
+    font-size: clamp(1.25rem, 1rem + .7vw, 1.7rem);
+    line-height: 1.3;
+    margin: 20px 0 14px;
+  }
   .tour-copy .tour-lead {
     font-weight: 600;
   }

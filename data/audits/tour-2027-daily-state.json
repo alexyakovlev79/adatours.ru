@@ -147,44 +147,6 @@
         "deployRun": 40312537725,
         "sheetRowsVerified": true
       }
-    },
-    {
-      "programKey": "P172",
-      "driveFileId": "1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS",
-      "name": "Brazil, Argentina, Chile & Peru 2027 15d14n RUS com 20%.docx",
-      "tourId": "tour_source_braziliya_argentina_chili_peru_ru",
-      "canonicalUrl": "/multi-country/tour/brazil-argentina-chile-peru-15-days/",
-      "queueType": "post_import_dependency_review",
-      "classification": "historical_programme_dependency_repair",
-      "status": "IN_PROGRESS",
-      "stage": "catalogues_ready",
-      "detectedAt": "2026-10-26T16:48:42Z",
-      "sourceVersion": {
-        "modifiedTime": "2026-10-23T15:10:04Z",
-        "bytes": 10506009
-      },
-      "readableTextSha256": "009e0349b15e127f23e3dc674d909bfb2125002de57fcf9df2220c25b613e138",
-      "embeddedMediaSha256": "aeb746c303595caa00cd35c2cfe731831a03954e24a375eebc6387b7cbfa2729",
-      "auditPath": "data/audits/tour-pipeline-audit-20261026.json",
-      "confirmedRepairs": {
-        "day15LimaRestored": true,
-        "restoredExistingPlaceLinks": 30,
-        "newExcursions": 3,
-        "reusedExcursions": 8,
-        "newMobileDerivatives": 2,
-        "contentCommit": null,
-        "deployRun": null,
-        "excursionRefs": 11,
-        "gptImageSources": 28,
-        "mobileMappings": 7
-      },
-      "reason": "Five standalone places, current route projection, media/mobile and 25 SEO materials prepared; content/GEO deployment and Sheets readback pending.",
-      "unresolvedDestinationIds": [],
-      "unresolvedExcursionDays": [],
-      "nextStep": "Publish this exact prepared content, collect/publish 9 addressed GEO passports, finalize SEO and verify all mirrors. Never reimport or regenerate completed assets.",
-      "resolvedExcursionVariantsEvidence": "data/audits/tour-pipeline-p172-excursion-variants-20261026.json",
-      "lifecyclePath": "data/audits/tour-lifecycle/P172-completion-20261027.json",
-      "sourceFingerprint": "1c26bc61ec76e389e77a4400f36510e6abd46b35a94a563919c5e410a45314c7"
     }
   ],
   "runs": [
@@ -2237,6 +2199,64 @@
       "newEntities": 0,
       "newImages": 0,
       "s3Uploads": 0
+    },
+    {
+      "programKey": "P172",
+      "driveFileId": "1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS",
+      "name": "Brazil, Argentina, Chile & Peru 2027 15d14n RUS com 20%.docx",
+      "tourId": "tour_source_braziliya_argentina_chili_peru_ru",
+      "canonicalUrl": "/multi-country/tour/brazil-argentina-chile-peru-15-days/",
+      "queueType": "post_import_dependency_review",
+      "classification": "historical_programme_dependency_repair",
+      "status": "DONE",
+      "stage": "sheets_synced",
+      "detectedAt": "2026-10-26T16:48:42Z",
+      "sourceVersion": {
+        "modifiedTime": "2026-10-23T15:10:04Z",
+        "bytes": 10506009
+      },
+      "readableTextSha256": "009e0349b15e127f23e3dc674d909bfb2125002de57fcf9df2220c25b613e138",
+      "embeddedMediaSha256": "aeb746c303595caa00cd35c2cfe731831a03954e24a375eebc6387b7cbfa2729",
+      "auditPath": "data/audits/tour-pipeline-audit-20261026.json",
+      "confirmedRepairs": {
+        "day15LimaRestored": true,
+        "excursionRefs": 11,
+        "newExcursions": 3,
+        "reusedExcursions": 8,
+        "routeDestinations": 51,
+        "standalonePlacesCompleted": 5,
+        "mediaSources": 36,
+        "mobileHeroUsages": 18,
+        "seoCurrent": 25,
+        "geoPassports": 9,
+        "sheetReadbacks": 9,
+        "contentCommit": "86cc52df8630192a0b3ff13fdf50dbe443d245ba",
+        "deployRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/40409707027"
+      },
+      "reason": "Full source-bound lifecycle completed: 51 places, 11 excursions, five standalone destination pages, 25 current SEO articles, nine published GEO passports and nine verified Sheet mirrors.",
+      "unresolvedDestinationIds": [],
+      "unresolvedExcursionDays": [],
+      "nextStep": null,
+      "resolvedExcursionVariantsEvidence": "data/audits/tour-pipeline-p172-excursion-variants-20261026.json",
+      "lifecyclePath": "data/audits/tour-lifecycle/P172-completion-20261027.json",
+      "sourceFingerprint": "1c26bc61ec76e389e77a4400f36510e6abd46b35a94a563919c5e410a45314c7",
+      "completedAt": "2026-10-26T22:53:23.667Z",
+      "contentCommit": "86cc52df8630192a0b3ff13fdf50dbe443d245ba",
+      "deployRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/40409707027",
+      "geoCommit": "d0ef70d554e8d7199093707c2525f545ac967016",
+      "geoRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/40410500155",
+      "preparedRepairsHistory": {
+        "day15LimaRestored": true,
+        "restoredExistingPlaceLinks": 30,
+        "newExcursions": 3,
+        "reusedExcursions": 8,
+        "newMobileDerivatives": 2,
+        "contentCommit": null,
+        "deployRun": null,
+        "excursionRefs": 11,
+        "gptImageSources": 28,
+        "mobileMappings": 7
+      }
     }
   ],
   "auxiliaryDocumentReviews": [

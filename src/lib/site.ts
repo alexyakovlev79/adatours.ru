@@ -32,8 +32,8 @@ export const ABOUT_NAV_LINKS = [
 ] as const;
 
 export const NAV_LINKS = [
-  { href: '/country/', label: 'Страны' },
   { href: '/tours/', label: 'Туры' },
+  { href: '/country/', label: 'Страны' },
   { href: '/multi-country/', label: 'Multi-country' },
   { href: '/interests/', label: 'По интересам' },
   { href: '/vip/', label: 'VIP' },

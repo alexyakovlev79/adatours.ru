@@ -1,5 +1,6 @@
 ---
 import { isActiveEntity } from '../lib/archive.mjs';
+import { destinationSectionOrder } from '../lib/destination-taxonomy.mjs';
 import { seoDestinationTitle, seoRelatedToursDescription } from '../lib/seo-page.mjs';
 import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
@@ -186,29 +187,8 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     </section>
   )}
 
-  {d.featureBands.map((band, index) => (
-    <StoryPair
-      eyebrow={band.eyebrow}
-      title={band.title}
-      text={band.text}
-      image={band.image}
-      mediaStatus={band.imageStatus}
-      replacementReason={band.imageReplacementReason}
-      imageTextAlign={d.imageTextAlign}
-      reverse={index % 2 === 1}
-    />
-  ))}
-
-  {visibleGallery.length > 0 && (
-    <MediaGallery
-      items={visibleGallery}
-      imageTextAlign={d.imageTextAlign}
-      eyebrow="Фотографии"
-      title={`${d.name} в фотографиях`}
-      layout="orientation"
-    />
-  )}
-
+  {destinationSectionOrder(d).map((section) => section === 'tours' ? (
+    <>
   {relatedTours.length > 0 && (
     <>
       <EditorialStatement eyebrow="Маршруты" text={`Туры через ${d.name}`} />
@@ -254,6 +234,9 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     </>
   )}
 
+    </>
+  ) : (
+    <>
   {relatedExcursions.length > 0 && (
     <>
       <EditorialStatement eyebrow="Экскурсии" text={`Экскурсии: ${d.name}`} />
@@ -277,6 +260,32 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
         />
       )}
     </>
+  )}
+
+    </>
+  ))}
+
+  {d.featureBands.map((band, index) => (
+    <StoryPair
+      eyebrow={band.eyebrow}
+      title={band.title}
+      text={band.text}
+      image={band.image}
+      mediaStatus={band.imageStatus}
+      replacementReason={band.imageReplacementReason}
+      imageTextAlign={d.imageTextAlign}
+      reverse={index % 2 === 1}
+    />
+  ))}
+
+  {visibleGallery.length > 0 && (
+    <MediaGallery
+      items={visibleGallery}
+      imageTextAlign={d.imageTextAlign}
+      eyebrow="Фотографии"
+      title={`${d.name} в фотографиях`}
+      layout="orientation"
+    />
   )}
 
   {geoMapData && relatedDestinations.length === 0 && (

@@ -118,25 +118,26 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
 
   <section id="home-start" class="home-start section--tight" aria-labelledby="home-start-title">
     <div class="container">
+      <a class="home-start__catalog-link" href={withBase('/tours/')}>Все туры Ada Tours <span aria-hidden="true">↗</span></a>
       <p class="eyebrow">С чего начать</p>
       <h2 id="home-start-title">У каждого путешествия своя точка отправления</h2>
       <nav class="home-start__links" aria-label="Как выбрать путешествие">
-        <a href="#home-countries">
+        <a href={withBase('/tours/')}>
           <span class="home-start__num">01</span>
+          <span class="home-start__label">Хочу готовый маршрут</span>
+          <span class="home-start__desc">Программы по одной или нескольким странам</span>
+          <span class="home-start__arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="#home-countries">
+          <span class="home-start__num">02</span>
           <span class="home-start__label">Знаю страну</span>
           <span class="home-start__desc">Бразилия, Аргентина, Перу и другие направления</span>
           <span class="home-start__arrow" aria-hidden="true">↗</span>
         </a>
         <a href="#home-interests">
-          <span class="home-start__num">02</span>
+          <span class="home-start__num">03</span>
           <span class="home-start__label">Выбираю впечатления</span>
           <span class="home-start__desc">Природа, культура, приключения, океан и другое</span>
-          <span class="home-start__arrow" aria-hidden="true">↗</span>
-        </a>
-        <a href="#home-tours">
-          <span class="home-start__num">03</span>
-          <span class="home-start__label">Хочу готовый маршрут</span>
-          <span class="home-start__desc">Программы по одной или нескольким странам</span>
           <span class="home-start__arrow" aria-hidden="true">↗</span>
         </a>
         <a href="#home-services">
@@ -415,6 +416,8 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
   .home-heading > p { max-width: 480px; margin: 0; color: color-mix(in srgb, var(--color-ink) 73%, transparent); font-size: var(--text-lg); line-height: 1.5; }
 
   .home-start { background: #f6f2eb; }
+  .home-start__catalog-link { display: inline-flex; align-items: center; gap: 16px; margin-bottom: clamp(22px, 3vw, 36px); padding-bottom: 8px; border-bottom: 1px solid currentColor; font-family: var(--font-display); font-size: clamp(1rem, 1.6vw, 1.3rem); }
+  .home-start__catalog-link:hover { opacity: .65; }
   .home-start .eyebrow { margin: 0 0 16px; }
   .home-start h2 { max-width: 1050px; margin: 0 0 var(--heading-gap); font-size: var(--text-h2); line-height: 1.04; }
   .home-start__links { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(28px, 5vw, 72px); }

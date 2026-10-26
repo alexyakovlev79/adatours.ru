@@ -26,6 +26,9 @@ export const isNavigationRole=value=>roleSet.has(value);
 export const destinationTypeLabel=value=>TYPE_LABELS[value]??'Место';
 export const isNavigationHub=place=>(place?.data??place)?.navigationRole==='hub';
 export const isNavigationSight=place=>(place?.data??place)?.navigationRole==='sight';
+/** Commercial selection is first on a hub; a specific sight starts with excursions. */
+export const destinationSectionOrder=place=>isNavigationSight(place)
+ ? ['excursions','tours'] : ['tours','excursions'];
 /** A hub/sight decision is independent of geographic type. */
 export function compareDestinationsForNavigation(a,b,fallback=()=>0){
  const x=a?.data??a,y=b?.data??b;

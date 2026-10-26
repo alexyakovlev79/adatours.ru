@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_alagoas.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Алагоас в выбранной программе представлен пляжной частью маршрута после Рио-де-Жанейро и Игуасу. Здесь путешественники отдыхают у моря и самостоятельно планируют свободные дни.

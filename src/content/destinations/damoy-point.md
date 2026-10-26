@@ -20,6 +20,7 @@ searchAliases:
 - Мыс Дамуа
 sourceSnapshot: data/source-index/materials/destination_antarctica_damoy_point.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Мыс Дамой находится на западном берегу острова Винке, у бухты Дориан. Каменистый берег, пингвины папуа и ледниковые склоны окружают исторический деревянный домик. Выше по склону сохранилось место бывшей снежной взлетно-посадочной полосы.

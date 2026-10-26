@@ -5,7 +5,7 @@ slug: santa-lucia-hill
 status: approved
 name: Холм Санта-Лючия
 countryId: country_chile
-destinationType: natural_area
+destinationType: mountain
 summary: Санта-Лючия — зелёный холм прямо в центре Сантьяго. Лестницы, террасы и небольшие архитектурные сооружения
   превращают подъём в прогулку с меняющимися видами на город. У подножия особенно заметна терраса Нептуна с фонтаном.
 hero:
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_chile_santa_lucia_hill.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 После оживлённых улиц здесь приятно пройти между деревьями и подняться к обзорным точкам. Каменные ступени требуют удобной обуви; выбранный маршрут подъёма зависит от времени экскурсии и открытых участков парка.

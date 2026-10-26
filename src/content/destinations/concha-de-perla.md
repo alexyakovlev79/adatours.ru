@@ -5,7 +5,7 @@ name: Бухта Конча-Перла
 slug: concha-de-perla
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: bay
 summary: Конча-Перла — прибрежная бухта на острове Исабела. Прозрачная вода, вулканические берега и мангровая растительность делают её частью знакомства с морским пейзажем Галапагосов.
 hero:
   src: /media/destinations/concha-de-perla/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_buhta_koncha_perla.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Прозрачная вода, вулканические берега и мангровая растительность делают её частью знакомства с морским пейзажем Галапагосов.

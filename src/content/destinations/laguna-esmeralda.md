@@ -5,7 +5,7 @@ slug: "laguna-esmeralda"
 status: "approved"
 name: "Лагуна Эсмеральда"
 countryId: "country_argentina"
-destinationType: "natural_area"
+destinationType: lake
 summary: "Лагуна Эсмеральда — одно из самых красивых природных мест в окрестностях Ушуайи, на аргентинской стороне Огненной Земли. Озеро расположено среди суровых гор, древних буковых лесов и торфяников, создавая пейзаж, в котором сочетаются все характерные черты далёкого юга Патагонии."
 searchAliases: []
 themes: ["theme_nature", "theme_adventure"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_laguna_esmeralda.md"
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Своё название — «Изумрудная лагуна» — водоём получил благодаря необычному зелёно-бирюзовому оттенку воды. Цвет особенно выразителен в солнечную погоду и создаёт яркий контраст с тёмными лесами и заснеженными вершинами окружающих гор.

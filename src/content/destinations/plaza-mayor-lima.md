@@ -5,7 +5,7 @@ slug: plaza-mayor-lima
 status: approved
 name: Пласа-Майор в Лиме
 countryId: country_peru
-destinationType: natural_area
+destinationType: square
 summary: Пласа-Майор, или Пласа-де-Армас, — главная площадь исторической Лимы. Вокруг нее находятся Кафедральный
   собор, Дворец правительства и здания городской власти. Это одна из основных точек знакомства с колониальным центром
   столицы Перу.
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_peru_lima_plaza_mayor.md
 updatedAt: '2026-10-15'
+navigationRole: sight
 ---
 
 Площадь объединяет открытое пространство, зеленые участки и фасады исторических зданий. Отсюда городская прогулка продолжается по улицам старой Лимы, в том числе к монастырю Санто-Доминго.

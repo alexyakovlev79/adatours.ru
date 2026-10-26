@@ -22,6 +22,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oruro-v-bolivii
 sourceSnapshot: https://drive.google.com/file/d/1BNJzpLAxtMnofyhiHHw2gxtzj3DQgBvL/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_culture","theme_events"]
+navigationRole: hub
 ---
 
 Столица департамента Оруро. Оруро был назван в честь родового имени племени "Уру Уру". Город был основан в 1606 году как центр добычи серебра в районе Урус. После истощения месторождения серебра, город был фактически забыт и восстановлен только в конце 19 века, как центр добычи олова.. Какое-то время олово с месторождения La-Salvador было важнейшим источником олова в мире. После истощения запасов олова Ороро снова впал в забытие.

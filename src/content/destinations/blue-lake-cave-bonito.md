@@ -5,7 +5,7 @@ slug: blue-lake-cave-bonito
 status: approved
 name: Голубая пещера (Бонито)
 countryId: country_brazil
-destinationType: natural_area
+destinationType: cave
 summary: Голубая пещера Бонито, Gruta do Lago Azul, известна подземным озером насыщенного синего цвета.
 searchAliases:
 - Gruta do Lago Azul
@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_golubaya_peschera_bonito.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 К подземному озеру Голубой пещеры ведет спуск по каменным ступеням. Свет у входа и глубина пещеры создают выраженный синий оттенок воды.

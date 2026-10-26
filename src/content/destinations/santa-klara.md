@@ -5,7 +5,7 @@ slug: santa-clara
 status: "approved"
 name: "Санта Клара"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Санта Клара хранит память о Че Геваре и колониальной истории Кубы. В центре города находится пешеходный парк Леонсио Видаля, а на табачной фабрике производят знаменитые кубинские сигары."
 searchAliases: []
 hero: {"src":"/media/destinations/santa-clara/hero-enhanced-20261004.webp","alt":"Женщина в оранжевом наряде несет корзину ярких цветов в Санта-Кларе, Куба", hover: "Санта-Клара: корзина цветов у каменного фасада на городской улице"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-santa-klara-na-ostr
 sourceSnapshot: "https://drive.google.com/file/d/14DJEUo3CMWsn_FNn8M_9HfmREzCk_yUh/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Санта Клара - столица провинции Вилья-Клара. В этом кубинском городе хранится память о славном прошлом выдающегося борца за свободу, Эрнесто Че Геваре. Известные всему миру кубинские сигары производятся на здешней табачной фабрике полного цикла. Именно здесь производится высококачественный табак "Montecristo", "Partagas", "Romeo и Julieta", и сигары "Robaina".

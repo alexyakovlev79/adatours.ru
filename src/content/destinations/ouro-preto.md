@@ -44,6 +44,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-oru-pretu-braziliya__226a4f58.md
 updatedAt: '2026-10-21'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Площадь Тирадентис остается одной из основных точек прогулки. От нее удобно продолжать маршрут по историческим улицам, музеям и религиозным памятникам. Отдельный блок поездки можно посвятить старым золотым шахтам, которые показывают другую сторону истории региона.

@@ -5,7 +5,7 @@ slug: puerto-escondido
 status: "approved"
 name: "Пуэрто Эскандидо"
 countryId: "country_mexico"
-destinationType: "resort"
+destinationType: resort
 summary: "Курорт в штате Оахака привлекает серферов пляжами и бухтами с волнами разной сложности. Для спокойного отдыха здесь есть тихая лагуна, а на Авениде Перес Гасга работают бары, кафе и магазины."
 searchAliases: []
 hero: {"src":"/media/destinations/puerto-escondido/hero-enhanced-20261004.webp","alt":"Вечерние волны и белая пена у пляжа Пуэрто-Эскандидо, Мексика", hover: "Пуэрто-Эскандидо: океанский прибой в закатном свете"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-puerto-escondido-
 sourceSnapshot: "https://drive.google.com/file/d/1Euc0lIWoG6I64WxN72vvpoNsftRUcaaK/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_adventure"]
+navigationRole: hub
 ---
 
 ## Пуэрто Эскандидо - городок уютных пляжей!

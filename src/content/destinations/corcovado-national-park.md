@@ -18,6 +18,7 @@ searchAliases:
 - nacionalnyj-park-korkovado
 sourceSnapshot: data/source-index/materials/destination_costa_rica_nacionalnyj_park_korkovado.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Корковадо находится на юге Коста-Рики и охраняет тропические природные территории. Здесь лес соседствует с Тихим океаном, поэтому знакомство с парком объединяет лесные тропы и прибрежные участки. Один из известных районов для прогулок связан со станцией рейнджеров Сирена.

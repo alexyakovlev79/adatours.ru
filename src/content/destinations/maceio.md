@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_masejo.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 В Масейо прилетают для продолжения путешествия у моря. Город связан с курортными маршрутами по побережью Алагоаса.

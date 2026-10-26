@@ -17,6 +17,7 @@ searchAliases:
 - nacionalnyj-morskoj-park-chirikskogo-zaliva
 sourceSnapshot: data/source-index/materials/destination_panama_nacionalnyj_morskoj_park_chirikskogo_zaliva.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Морской парк Чирикского залива находится на западном тихоокеанском побережье Панамы. Он объединяет островные и прибрежные природные территории. Белые пляжи, мангровые участки и морская вода создают разные пейзажи в пределах одного района.

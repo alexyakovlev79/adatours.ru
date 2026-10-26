@@ -2,34 +2,157 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Destination reservation request: one object or an all-or-nothing batch",
   "oneOf": [
-    { "$ref": "#/$defs/request" },
-    { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/request" } }
+    {
+      "$ref": "#/$defs/request"
+    },
+    {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/request"
+      }
+    }
   ],
   "$defs": {
     "request": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["countryId", "name", "discoveredIn"],
+      "required": [
+        "countryId",
+        "name",
+        "discoveredIn"
+      ],
       "properties": {
-        "countryId": { "type": "string", "pattern": "^country_[a-z0-9_]+$" },
-        "name": { "type": "string", "minLength": 1 },
-        "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "description": "Explicit English URL segment. Required for a new destination unless englishName is supplied; an existing match keeps its recorded slug." },
-        "englishName": { "type": "string", "minLength": 1, "description": "Established English exonym or accepted proper name in the Latin alphabet; accents are allowed and stripped for the slug. Russian transliteration is forbidden. Required for a new destination unless slug is supplied; also recorded as a known name alias." },
-        "aliases": { "type": "array", "items": { "type": "string", "minLength": 1 } },
-        "destinationId": { "type": "string", "pattern": "^destination_[a-z0-9_]+$", "description": "Select an existing canonical ID; never supply a new invented ID. Existing matches, including name/alias matches without this field, do not require slug or englishName." },
+        "countryId": {
+          "type": "string",
+          "pattern": "^country_[a-z0-9_]+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Explicit English URL segment. Required for a new destination unless englishName is supplied; an existing match keeps its recorded slug."
+        },
+        "englishName": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Established English exonym or accepted proper name in the Latin alphabet; accents are allowed and stripped for the slug. Russian transliteration is forbidden. Required for a new destination unless slug is supplied; also recorded as a known name alias."
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "destinationId": {
+          "type": "string",
+          "pattern": "^destination_[a-z0-9_]+$",
+          "description": "Select an existing canonical ID; never supply a new invented ID. Existing matches, including name/alias matches without this field, do not require slug or englishName."
+        },
         "discoveredIn": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["entityType", "evidence"],
+          "required": [
+            "entityType",
+            "evidence"
+          ],
           "allOf": [
-            { "if": { "properties": { "entityType": { "enum": ["tour", "excursion"] } } }, "then": { "required": ["entityId"] } }
+            {
+              "if": {
+                "properties": {
+                  "entityType": {
+                    "enum": [
+                      "tour",
+                      "excursion"
+                    ]
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "entityId"
+                ]
+              }
+            }
           ],
           "properties": {
-            "entityType": { "enum": ["tour", "excursion", "user_request"] },
-            "entityId": { "type": "string", "minLength": 1 },
-            "sourceUrl": { "type": ["string", "null"], "format": "uri" },
-            "evidence": { "type": "string", "minLength": 1 }
+            "entityType": {
+              "enum": [
+                "tour",
+                "excursion",
+                "user_request"
+              ]
+            },
+            "entityId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sourceUrl": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "format": "uri"
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1
+            }
           }
+        },
+        "destinationType": {
+          "type": "string",
+          "enum": [
+            "city",
+            "town",
+            "village",
+            "district",
+            "region",
+            "island",
+            "national_park",
+            "resort",
+            "natural_area",
+            "route_cluster",
+            "mountain",
+            "volcano",
+            "glacier",
+            "waterfall",
+            "lake",
+            "river",
+            "beach",
+            "canyon",
+            "cave",
+            "desert",
+            "valley",
+            "forest",
+            "wetland",
+            "archaeological_site",
+            "historic_site",
+            "museum",
+            "monument",
+            "religious_site",
+            "viewpoint",
+            "square",
+            "building",
+            "garden",
+            "peninsula",
+            "bay",
+            "attraction",
+            "other_landmark"
+          ],
+          "description": "Required when new; existing matches reuse canonical type"
+        },
+        "navigationRole": {
+          "type": "string",
+          "enum": [
+            "hub",
+            "sight"
+          ],
+          "description": "Required when new; existing matches reuse canonical role"
         }
       }
     }

@@ -5,7 +5,7 @@ slug: chapada-geodesic-viewpoint
 status: approved
 name: Геодезическая смотровая Шапада-дус-Гимарайнс
 countryId: country_brazil
-destinationType: natural_area
+destinationType: viewpoint
 summary: Смотровая у Шапада-дус-Гимарайнс с широким видом на равнины и песчаниковые ландшафты Мату-Гросу.
 searchAliases:
 - Mirante do Centro Geodésico
@@ -18,6 +18,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_chapada_geodesic_viewpoint.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 ## Панорама плато

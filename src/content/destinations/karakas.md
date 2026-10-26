@@ -52,6 +52,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-venesuehly-gorod-k
 sourceSnapshot: https://drive.google.com/file/d/1UyiR1ld6Z0HnssjHhVUoPlx5t1950rfb/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Каракас - буйный и красивый город, столица страны. Это одна из относительно “молодых” и современных столиц на карте Южной Америки.

@@ -5,7 +5,7 @@ name: "Кальдерон"
 slug: "calderon"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "city"
+destinationType: district
 summary: "Кальдерон на севере Кито известен фигурками из теста: местные мастера превращают простую основу в яркие миниатюры."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_calderon/hero-generated-20261010-next-ten-v1.webp", "alt": "Мастер расписывает маленькую фигурку среди цветных сувениров в Кальдероне, Эквадор", hover: "Кальдерон: роспись фигурки за столом с кистями и готовыми миниатюрами"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_calderon.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Кальдероне интереснее всего задержаться у рабочего стола мастера. В этом районе на севере Кито сохраняют искусство изготовления фигурок, которые здесь называют mazapán. Из мучной массы рождаются маленькие персонажи, цветы и животные, а тонкая роспись добавляет им детали. Это декоративные изделия: название относится к местной ремесленной традиции.

@@ -5,7 +5,7 @@ slug: confluencia
 status: approved
 name: Лагерь Конфлуэнсия
 countryId: country_argentina
-destinationType: natural_area
+destinationType: attraction
 summary: Первые палатки на подходе к Аконкагуа, каменистая долина и открытые виды на Анды. Конфлуэнсия знакомит
   с экспедиционной жизнью на высоте свыше 3000 метров.
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_adventure
 sourceSnapshot: data/source-index/materials/destination_argentina_confluencia.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 У Конфлуэнсии горы занимают почти весь горизонт. Палатки стоят на каменистом дне долины, вокруг поднимаются склоны охристых и серых оттенков, а вдали белеют высокие вершины. После подхода особенно приятно снять рюкзак, налить горячий напиток и посмотреть на пройденную дорогу. Здесь начинается знакомство с жизнью андской экспедиции.

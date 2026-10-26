@@ -5,7 +5,7 @@ slug: neko-harbour
 status: approved
 name: Бухта Неко
 countryId: country_antarctica
-destinationType: natural_area
+destinationType: bay
 summary: Участок материкового берега в заливе Андворд с пингвинами и мощными ледниками.
 hero:
   src: /media/destinations/neko-harbour/hero-gpt-20261011-v1.webp
@@ -22,6 +22,7 @@ searchAliases:
 - Бухта Неко
 sourceSnapshot: data/source-index/materials/destination_antarctica_neko_harbour.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Бухта Неко находится на материковом берегу Антарктического полуострова, в заливе Андворд. Небольшой пляж и скальные участки здесь окружены высокими горными вершинами и сильно растрескавшимися ледниками. Ледниковые обрывы и плавающий лёд создают один из характерных пейзажей западной стороны полуострова.

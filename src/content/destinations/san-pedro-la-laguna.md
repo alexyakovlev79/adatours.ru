@@ -5,7 +5,7 @@ slug: san-pedro-la-laguna
 status: approved
 name: "Сан Педро ла Лагуна"
 countryId: "country_guatemala"
-destinationType: city
+destinationType: town
 summary: "Поселок на берегу озера с кафе, занятиями испанским языком и восхождениями на вулканы в окрестностях."
 searchAliases: []
 hero:
@@ -40,6 +40,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-san-pedro-la-laguna-v-gva
 sourceSnapshot: "https://drive.google.com/file/d/1-4tBBLApb11cohdyBW8wiLSvLCA7_wzD/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_adventure", "theme_nature"]
+navigationRole: hub
 ---
 
 Великолепный поселок на берегу озера, привлекающих любителей здорового образа жизни. Здесь можно попрактиковаться в испанском языке, научиться играть на африканских барабанах или просто поваляться в гамаке.

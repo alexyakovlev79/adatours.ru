@@ -5,7 +5,7 @@ slug: mimoso-river-waterfalls
 status: approved
 name: Водопады реки Мимозо
 countryId: country_brazil
-destinationType: natural_area
+destinationType: waterfall
 summary: Водопады реки Мимозо входят в природный маршрут Estancia Mimosa в районе Бонито.
 searchAliases:
 - Estância Mimosa
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_vodopady_reki_mimozo.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 На территории Estancia Mimosa лесная тропа идет вдоль реки Мимозо. Деревянные настилы и смотровые площадки соединяют водопады и природные бассейны.

@@ -5,7 +5,7 @@ name: Гора Меса
 slug: cerro-mesa
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: mountain
 summary: Гора Меса упоминается среди пейзажей обзорного маршрута к Торрес-дель-Пайне. Здесь горы соседствуют с озерами
   и открытой патагонской степью, а дорога каждый раз открывает новый вид на окружающие склоны.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Гора Меса
 sourceSnapshot: data/source-index/materials/destination_chile_cerro_mesa.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Это часть автомобильного путешествия с панорамными остановками. Подъем на вершину в обычной обзорной программе отдельно не заявлен. 

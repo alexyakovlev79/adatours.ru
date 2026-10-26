@@ -5,7 +5,7 @@ slug: trujillo
 status: approved
 name: "Трухильо"
 countryId: "country_peru"
-destinationType: "city"
+destinationType: city
 summary: "Трухильо: колониальная архитектура, древний Чан Чан и храмы Солнца и Луны. В бухте Уанчако катаются на серфе и тростниковых лодках."
 searchAliases: []
 hero:
@@ -43,6 +43,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-truhilo-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1ldwmxI9HJSP-cdel3_tNeXs0M6h5iM7U/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture","theme_adventure"]
+navigationRole: hub
 ---
 
 ### Трухильо - курорт в Перу!

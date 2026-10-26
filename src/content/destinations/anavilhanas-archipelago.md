@@ -26,6 +26,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_arhipelag_anavianas.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Маршрут зависит от уровня воды. В сухой сезон в программе встречаются общины Santo Antonio и Tiririca и пляж Tiririca. В период высокой воды посещают Sobrado и лесные участки в районе Parana das Araras.

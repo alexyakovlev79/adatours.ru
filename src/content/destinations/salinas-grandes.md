@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_salinas_grandes.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Посещение солончака входит в маршруты из Сальты и Пурмамарки. Здесь делают остановку для прогулки и фотографий, а по дороге знакомятся с андскими поселениями. Состояние дороги и доступные участки уточняются по программе поездки.

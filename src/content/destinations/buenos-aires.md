@@ -44,6 +44,7 @@ sourceUrl: https://brasiltours.ru/stolica-argentiny-gorod-buehnos-ajres
 sourceSnapshot: page_texts_original/stolica-argentiny-gorod-buehnos-ajres__3e2ffb79.md
 updatedAt: '2026-10-21'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Буэнос-Айрес лучше смотреть по районам. Ла-Бока и Сан-Тельмо, Пласа-де-Майо и Каса-Росада, Обелиск и Корриентес, музеи, галереи и театры легко распределить на 2–3 дня в зависимости от интересов.

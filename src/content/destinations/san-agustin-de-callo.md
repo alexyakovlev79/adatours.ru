@@ -5,7 +5,7 @@ name: "Асьенда Сан-Агустин-де-Кальо"
 slug: "san-agustin-de-callo"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "resort"
+destinationType: building
 summary: "Асьенда Сан-Агустин-де-Кальо у Котопакси: каменные стены инков, колониальный двор и сельская жизнь эквадорских Анд."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_san_agustin_de_callo/hero-generated-20261010-final-v1.webp", "alt": "Ламы в каменном дворе асьенды Сан-Агустин-де-Кальо перед Котопакси, Эквадор", "hover": "Сан-Агустин-де-Кальо: двор с ламами и видом на снежный вулкан"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_san_agustin_de_callo.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 У асьенды Сан-Агустин-де-Кальо хочется задержаться у каменной стены. Темные вулканические блоки тщательно подогнаны друг к другу: это сохранившаяся кладка инков. Над ней поднимаются колониальные стены, а во дворе зелень и цветы соседствуют со старинными дверями. Здесь легко рассматривать историю через детали, которые до сих пор окружают повседневную жизнь.

@@ -5,7 +5,7 @@ slug: san-pedro-de-atacama
 status: approved
 name: "Сан-Педро-де-Атакама"
 countryId: "country_chile"
-destinationType: "city"
+destinationType: town
 summary: "Сан-Педро-де-Атакама: Лунная долина, гейзеры Татио, лагуны Альтиплано, Атакамский солончак и археологический район Тулор."
 searchAliases: []
 hero:
@@ -27,6 +27,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-pustynyu-san-pedro-de-ata
 sourceSnapshot: "https://drive.google.com/file/d/1_t_aFz7xrxZ3VRQ_7K7cme8cit2zJnpe/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_nature", "theme_culture"]
+navigationRole: hub
 ---
 
 ## Лунная долина и гейзеры Татио: что посмотреть в Сан-Педро-де-Атакама, Чили

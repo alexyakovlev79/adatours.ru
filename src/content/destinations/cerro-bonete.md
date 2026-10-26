@@ -5,7 +5,7 @@ slug: cerro-bonete
 status: approved
 name: "Пик Бонете"
 countryId: country_argentina
-destinationType: natural_area
+destinationType: mountain
 summary: "Каменистая вершина у Пласа-де-Мулас с панорамой Аконкагуа. Выход на Бонете соединяет акклиматизацию и отдельный день знакомства с высокими Андами."
 hero:
   src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-07-generated-20261008-v1.webp
@@ -14,6 +14,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_cerro_bonete.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На подъеме к Бонете все чаще хочется обернуться. Палатки Пласа-де-Мулас остаются внизу, долина раскрывается все шире, а Аконкагуа занимает большую часть вида. Под ногами камень и осыпь, вокруг открытые склоны. Такой выход дает возможность почувствовать высокие Анды за пределами лагерной площадки и увидеть будущий маршрут со стороны.

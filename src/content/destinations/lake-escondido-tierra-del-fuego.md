@@ -5,7 +5,7 @@ slug: "lake-escondido-tierra-del-fuego"
 status: "approved"
 name: "Озеро Эскондидо (Огненная Земля)"
 countryId: "country_argentina"
-destinationType: "natural_area"
+destinationType: lake
 summary: "Озеро Эскондидо спрятано среди горных хребтов Огненной Земли, словно природный секрет, открывающийся тем, кто отправляется вглубь острова. Его название с испанского переводится как «скрытое», и оно прекрасно передаёт характер этого места: озеро находится вдали от городов, окружённое густыми лесами, суровыми склонами Анд и почти нетронутой природой."
 searchAliases: ["ozero-eskondido-ognennaya-zemlya"]
 themes: ["theme_nature"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_ozero_eskondido_ognennaya_zemlya.md"
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Озеро вытянулось в живописной долине между горными массивами и особенно впечатляет своими спокойными водами, в которых отражаются окружающие вершины и леса. Пейзаж здесь меняется в зависимости от погоды: солнечные дни подчёркивают глубокие оттенки воды, а туман и облака придают озеру почти мистический облик.

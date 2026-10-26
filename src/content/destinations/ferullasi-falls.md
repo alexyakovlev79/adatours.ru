@@ -5,7 +5,7 @@ name: Водопады Ферулласи
 slug: ferullasi-falls
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: waterfall
 summary: Ферулласи — речные пороги в лесном районе Суринама. Их посещение входит в водные поездки по верховьям реки, где открываются
   пейзажи тропического леса и скалистого русла.
 hero:
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_vodopady_ferullasi.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Их посещение входит в водные поездки по верховьям реки, где открываются пейзажи тропического леса и скалистого русла.

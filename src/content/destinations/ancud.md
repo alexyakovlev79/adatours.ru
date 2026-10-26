@@ -19,6 +19,7 @@ searchAliases:
 - Анкуд
 sourceSnapshot: data/source-index/materials/destination_chile_ancud.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В P109 Анкуд посещают после переправы через пролив Чакао. Экскурсия знакомит с историей города и культурой Чилоэ; при подходящей погоде маршрут продолжается к пингвинам Пуньиуиля.

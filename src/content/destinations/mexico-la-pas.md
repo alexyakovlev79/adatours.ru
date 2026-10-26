@@ -5,7 +5,7 @@ slug: la-paz
 status: "approved"
 name: "Ла Пас"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Ла Пас расположен на берегу Калифорнийского залива. Город привлекает пляжами, набережной и спортивной рыбалкой, а рядом находятся Пуэрто Баландра и заповедник Сьерра-де-ла-Лагуна."
 searchAliases: []
 hero: {"src":"/media/destinations/la-paz/hero-enhanced-20261004.webp","alt":"Красные прибрежные скалы, кактусы и песчаная бухта у Ла-Паса, Мексика", hover: "Ла-Пас: пустынный скалистый берег у бирюзового моря"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-la-pas-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1owVpHMXu5DEfpUEDQZ3W33XVQQR1ljcd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Ла Пас- райский город Мексики!

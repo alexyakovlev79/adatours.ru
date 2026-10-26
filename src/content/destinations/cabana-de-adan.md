@@ -5,7 +5,7 @@ slug: cabana-de-adan
 status: approved
 name: "Лагерь Кабанья-де-Адан"
 countryId: country_colombia
-destinationType: natural_area
+destinationType: attraction
 summary: "Первая лагерная остановка на треке к Затерянному городу. Кабанья-де-Адан знакомит с пешим путешествием по влажным лесам Сьерра-Невада-де-Санта-Марта."
 hero:
   src: /media/destinations/cabana-de-adan/hero-generated-20261010-last8-v1.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_colombia_cabana_de_adan.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 После первого дня на тропе в Кабанье-де-Адан особенно приятно опустить рюкзак и устроиться под крышей лагеря. Вокруг влажный зеленый лес, за склонами продолжаются горы Сьерра-Невада-де-Санта-Марта. Вечер проходит за ужином и разговорами о пройденном пути, а впереди еще несколько дней пешком к древним террасам Затерянного города.

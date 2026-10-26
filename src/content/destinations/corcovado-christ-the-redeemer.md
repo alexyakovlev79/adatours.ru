@@ -5,7 +5,7 @@ slug: corcovado-christ-the-redeemer
 status: approved
 name: Корковаду и статуя Христа-Искупителя
 countryId: country_brazil
-destinationType: natural_area
+destinationType: monument
 summary: На вершине Корковаду над Рио-де-Жанейро возвышается статуя Христа-Искупителя. Поезд проходит через лес
   Тижука, а со смотровой площадки видны город, океан и горы, между которыми лежат кварталы Рио.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_brazil_rio
 sourceSnapshot: data/source-index/materials/destination_brazil_corcovado_christ_the_redeemer.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 Подъем по железной дороге знакомит с зеленой стороной города. За окнами сменяются деревья леса Тижука, затем открывается пространство вершины. Статуя Христа-Искупителя, установленная в 1931 году, стала узнаваемым символом Рио.

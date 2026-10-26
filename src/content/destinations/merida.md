@@ -5,7 +5,7 @@ slug: "merida"
 status: "approved"
 name: "Мерида"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Исторический город Юкатана с цветными фасадами и местной кухней."
 searchAliases: []
 themes: ["theme_culture","theme_gastronomy_wine"]
@@ -21,6 +21,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_merida.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Мерида — город на мексиканском полуострове Юкатан. Исторический центр знакомит с площадями, колониальной застройкой и улицами, где невысокие дома окрашены в теплые и яркие цвета. Прогулки здесь позволяют дополнить археологические памятники региона современной городской жизнью и юкатанской кухней.

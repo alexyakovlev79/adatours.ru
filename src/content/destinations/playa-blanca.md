@@ -21,6 +21,7 @@ searchAliases:
 - Плайя Бланка
 sourceSnapshot: data/source-index/materials/destination_panama_playa_blanca.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Плайя-Бланка — пляжный курорт на тихоокеанском побережье Панамы. Здесь можно провести несколько спокойных дней у океана после поездки по странам Центральной Америки.

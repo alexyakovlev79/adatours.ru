@@ -5,7 +5,7 @@ name: Атьони
 slug: atjoni
 status: approved
 countryId: country_suriname
-destinationType: city
+destinationType: village
 summary: Атьони — отправная точка водных маршрутов по верховьям реки Суринам. Отсюда на каноэ добираются к лесным лоджам и
   поселениям местных общин.
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_atoni.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Отсюда на каноэ добираются к лесным лоджам и поселениям местных общин.

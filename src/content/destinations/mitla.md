@@ -5,7 +5,7 @@ name: "Митла"
 slug: "mitla"
 status: "approved"
 countryId: "country_mexico"
-destinationType: "natural_area"
+destinationType: archaeological_site
 summary: "Митла в долине Оахаки известна сапотекскими дворцами с геометрическими каменными мозаиками и залом монолитных колонн."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_mexico_mitla/hero-generated-20261010-batch-four-v1.webp", "alt": "Геометрические каменные орнаменты на стенах древних построек Митлы", "hover": "Митла: резные каменные узоры над входом"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_mitla.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Митле хочется подойти ближе к стенам. Дворцы древнего сапотекского центра украшены геометрическими мозаиками из небольших обработанных камней. Ступенчатые линии, повороты и повторяющиеся узоры занимают целые панели. Когда свет ложится сбоку, особенно хорошо видны точность соединений и глубина рисунка.

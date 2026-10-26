@@ -5,7 +5,7 @@ slug: coroico
 status: approved
 name: Коройко
 countryId: country_bolivia
-destinationType: city
+destinationType: town
 summary: Коройко расположен в регионе Юнгас, где высокие Анды спускаются к бассейну Амазонки. Из города можно отправиться к водопадам, на цитрусовые и кофейные плантации.
 searchAliases: []
 hero:
@@ -29,6 +29,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-korojko-v-bolivii-i-doroga
 sourceSnapshot: https://drive.google.com/file/d/17_lWe09tBj77iqwT8WoFK20gGh3jTnIW/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_nature", "theme_gastronomy_wine"]
+navigationRole: hub
 ---
 
 Это самый большой город в регионе Юнгас, где высокие Анды спускаются к бассейну реки Амазонка. Коройко имеет прекрасный климат. Здесь дни теплые, а ночи комфортно прохладные. В городе нет почти никакой разницы между сухим сезоном (с мая по декабрь) и дождливым сезоном (с января по апрель). Во время сезона дождей, дождь идет почти каждую ночь, утром солнце пробивается через облака и небо синеет. Это создает прекрасные условия для прогулок в городе и окрестностях.

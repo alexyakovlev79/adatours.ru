@@ -5,7 +5,7 @@ slug: montevideo-old-town
 status: approved
 name: Старый город Монтевидео
 countryId: country_uruguay
-destinationType: region
+destinationType: district
 summary: Сьюдад-Вьеха, историческая часть Монтевидео со старинными фасадами, музеями и пешеходными улицами.
 hero:
   src: /media/tours/best-of-argentina-14-days/oldcity-generated-20261011-v1.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_uruguay_montevideo_old_town.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Старый город Монтевидео называют Сьюдад-Вьеха. Здесь находился укрепленный колониальный город; сохранившиеся ворота Сьюдаделы обозначают переход от площади Независимости к историческим улицам.

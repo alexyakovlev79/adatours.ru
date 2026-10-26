@@ -46,6 +46,7 @@ facts: []
 sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-merida-v-venesuehle
 sourceSnapshot: https://drive.google.com/file/d/1e8fxVb64fsMmEHT429lPv8DsWsI5_H2r/view?usp=drivesdk
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Среди достопримечательностей Мериды — старый район Ла-Пароккиа, церковь на площади Рангель-дель-Льяно, университет, Цветочные часы и колоритный уличный рынок Меркада-Принсипаль-де-Мерида. В городе и его окрестностях много церквей и часовен.

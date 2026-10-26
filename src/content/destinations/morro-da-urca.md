@@ -5,7 +5,7 @@ slug: morro-da-urca
 status: approved
 name: Гора Урка
 countryId: country_brazil
-destinationType: natural_area
+destinationType: mountain
 summary: Урка, первая вершина на пути к Сахарной Голове, дает широкий обзор бухт и побережья Рио-де-Жанейро. Здесь
   делают остановку между двумя участками канатной дороги и рассматривают город со смотровых площадок.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_brazil_rio
 sourceSnapshot: data/source-index/materials/destination_brazil_morro_da_urca.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 На Урку поднимаются от Прая-Вермелья, после чего можно продолжить поездку к Сахарной Голове. Эта остановка заслуживает собственного времени: перед глазами раскрываются вода, яхты, зеленые склоны и плотная городская застройка.

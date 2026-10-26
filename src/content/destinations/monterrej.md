@@ -5,7 +5,7 @@ slug: monterrey
 status: "approved"
 name: "Монтеррей"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Монтеррей окружен горами Сьерра-Мадре. В городе работают музеи, рестораны и торговые центры, а близлежащие горы, каньоны и пещеры подходят для активного отдыха."
 searchAliases: []
 hero: {"src":"/media/destinations/monterrey/hero-enhanced-20261004.webp","alt":"Человек на скальном выступе над панорамой Монтеррея, Мексика","hover":"Монтеррей в Мексике: вид на город с высокой каменистой вершины"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-monterrej-v-meksike
 sourceSnapshot: "https://drive.google.com/file/d/18arj2sOETjxZBVEKiAkqWPMGThI-2SEG/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_adventure"]
+navigationRole: hub
 ---
 
 ## Монтеррей - "Северный Султан" Мексики!

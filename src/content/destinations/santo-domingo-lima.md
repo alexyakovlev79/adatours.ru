@@ -5,7 +5,7 @@ name: Монастырь Санто-Доминго в Лиме
 slug: santo-domingo-lima
 status: approved
 countryId: country_peru
-destinationType: route_cluster
+destinationType: religious_site
 summary: Монастырь Санто-Доминго в исторической части Лимы известен внутренними дворами, старинной библиотекой и
   произведениями искусства.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Монастырь Санто-Доминго в Лиме
 sourceSnapshot: data/source-index/materials/destination_peru_santo_domingo_lima.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Аркады окружают внутренние дворы, а библиотека и художественные произведения раскрывают историю монастырского комплекса. Это Санто-Доминго в Лиме: одноименный храм в Куско связан с Кориканчей и относится к другому месту.

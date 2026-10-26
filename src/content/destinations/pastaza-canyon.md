@@ -5,7 +5,7 @@ name: Каньон Пастаса
 slug: pastaza-canyon
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: canyon
 summary: Каньон Пастаса проходит по влажным горным долинам к востоку от Баньоса. Быстрая река, крутые лесистые склоны
   и водопады показывают переход от Анд к тропическим низменностям.
 hero:
@@ -21,6 +21,7 @@ facts: []
 featureBands: []
 sourceSnapshot: https://drive.google.com/file/d/1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x/view
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Вдоль ущелья проходит «Дорога водопадов». Смотровые точки, канатные переправы и пешеходные участки открывают разные виды на реку и её скальные берега. В окрестностях также организуют активные развлечения, состав которых зависит от конкретной поездки.

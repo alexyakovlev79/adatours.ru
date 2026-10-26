@@ -20,6 +20,7 @@ searchAliases:
 - Fish Islands
 sourceSnapshot: data/source-index/materials/destination_antarctica_fish_islands.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Рыбные острова лежат у мыса Проспект, возле побережья Земли Грейама. Группа включает несколько небольших островов и скал. Холодные воды, открытые каменистые берега и плавучий лед определяют здешний пейзаж.

@@ -5,7 +5,7 @@ slug: parque-lezama
 status: approved
 name: Парк Лезама
 countryId: country_argentina
-destinationType: natural_area
+destinationType: garden
 summary: Парк Лезама в Сан-Тельмо сохранил старые деревья, естественный склон и прогулочные дорожки. Ротонда, скульптуры
   и близость Национального исторического музея делают его интересной остановкой в южной части Буэнос-Айреса.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_argentina_buenos_aires
 sourceSnapshot: data/source-index/materials/destination_argentina_parque_lezama.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 Под кронами деревьев здесь легко отвлечься от движения на соседних улицах. В парке есть ротонда, скульптуры, фонтан и смотровые участки; дорожки подчеркивают естественный перепад высоты. Именно сочетание зелени и рельефа отличает Лезама от многих городских площадей.

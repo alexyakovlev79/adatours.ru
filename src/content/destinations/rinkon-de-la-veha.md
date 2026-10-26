@@ -5,7 +5,7 @@ slug: rincon-de-la-vieja
 status: "approved"
 name: "Ринкон-де-ла-Вьеха"
 countryId: "country_costa_rica"
-destinationType: "national_park"
+destinationType: national_park
 summary: "Национальный парк Ринкон-де-ла-Вьеха находится на северо-западе Коста-Рики. Вулканические пейзажи, пешие и конные маршруты дополняют рафтинг и скалолазание."
 searchAliases: []
 hero: {"src":"/media/destinations/rincon-de-la-vieja/hero-enhanced-20261004.webp","alt":"Скальные стены и пар внутри кратера Ринкон-де-ла-Вьехи, Коста-Рика", hover: "Ринкон-де-ла-Вьеха в Коста-Рике: вулканический кратер под облаками"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-vulkan-rinkon-de-la-vekh
 sourceSnapshot: "https://drive.google.com/file/d/1Z33ouUu6HOntofe3_uwGQuAWUsyDiFbE/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_nature", "theme_adventure"]
+navigationRole: hub
 ---
 
 ## Вулкан, грязи и рафтинг: что посмотреть в Ринкон-де-ла-Вьеха, Коста-Рика

@@ -9,7 +9,7 @@ searchAliases:
 - Lake Coatepeque
 - Коатепеке
 countryId: country_el_salvador
-destinationType: natural_area
+destinationType: lake
 summary: Коатепеке — вулканическое озеро на западе Эль-Сальвадора с синими водами и зелеными берегами. Сюда приезжают
   ради панорам, отдыха у воды и лодочных прогулок, которые можно совместить с поездкой к вулканам.
 hero:
@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_lake_coatepeque.md
 updatedAt: '2026-10-14'
+navigationRole: hub
 ---
 
 ## Озеро вулканического происхождения

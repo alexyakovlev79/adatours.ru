@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_el_pedral.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Поездка из Пуэрто-Мадрина позволяет соединить прогулку у колонии с посещением района Пунта-Нинфас и знакомством с патагонской кухней. Сезонная программа и условия посещения уточняются при выборе экскурсии.

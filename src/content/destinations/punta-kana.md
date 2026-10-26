@@ -22,6 +22,7 @@ sourceUrl: "https://brasiltours.ru/plyazhnye-tury-na-morskoj-kurort-punta-kana-v
 sourceSnapshot: "https://drive.google.com/file/d/17qLiAQp_UzjkVbbuCndil1Wp7vG2-nJP/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_family"]
+navigationRole: hub
 ---
 
 ### Пунта-Кана — райское наслаждение!

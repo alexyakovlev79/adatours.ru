@@ -21,6 +21,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_ernesto_tornquist_provincial_park.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Парк Эрнесто-Торнкист охраняет участок горной системы Вентания в провинции Буэнос-Айрес. Его характерный пейзаж — скалистые гребни и травянистые склоны, которые заметно отличаются от окружающих сельскохозяйственных равнин.

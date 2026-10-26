@@ -5,7 +5,7 @@ name: Площадь Сотомайор
 slug: plaza-sotomayor
 status: approved
 countryId: country_chile
-destinationType: route_cluster
+destinationType: square
 summary: Площадь Сотомайор знакомит с портовой стороной Вальпараисо. Исторические здания окружают открытое городское
   пространство, а прогулка отсюда продолжается к холмам, лестницам и обзорным дорожкам.
 hero:
@@ -20,6 +20,7 @@ searchAliases:
 - Площадь Сотомайор
 sourceSnapshot: data/source-index/materials/destination_chile_plaza_sotomayor.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Площадь удобно включать в начало экскурсии по городу. Здесь можно рассмотреть фасады и понять связь Вальпараисо с морем. 

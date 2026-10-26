@@ -22,6 +22,7 @@ searchAliases:
 - Канал Лемэр
 sourceSnapshot: data/source-index/materials/destination_antarctica_lemaire_channel.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Пролив Лемэр отделяет остров Бут от побережья Земли Грейама. С судна видны крутые горные склоны, снежные вершины и лед у воды. Проход связывает участки экспедиционного маршрута вдоль западного берега Антарктического полуострова.

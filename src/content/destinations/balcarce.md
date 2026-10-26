@@ -23,6 +23,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_balcarce.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Балькарсе расположен во внутренней части юго-востока провинции Буэнос-Айрес, среди невысоких холмов. Сюда можно приехать из Мар-дель-Платы, чтобы дополнить прибрежную часть поездки знакомством с сельскохозяйственной Аргентиной.

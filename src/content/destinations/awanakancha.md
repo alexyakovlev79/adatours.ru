@@ -5,7 +5,7 @@ slug: "awanakancha"
 status: "approved"
 name: "Ауанаканча"
 countryId: "country_peru"
-destinationType: "natural_area"
+destinationType: attraction
 summary: "Андские животные и традиционное ткачество на дороге между Куско и Писаком."
 searchAliases: ["Awanakancha","auanakancha"]
 themes: ["theme_culture"]
@@ -21,6 +21,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_peru_auanakancha.md"
 updatedAt: "2026-10-09"
+navigationRole: sight
 ---
 
 Ауанаканча знакомит с животными и ремеслами перуанских Анд. Центр находится на дороге из Куско в сторону Писака и подходит для остановки по пути в Священную долину. Здесь можно увидеть лам, альпак, викуний и гуанако и узнать, чем отличаются эти южноамериканские верблюдовые.

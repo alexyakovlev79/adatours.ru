@@ -5,7 +5,7 @@ slug: socaire
 status: approved
 name: Сокайре
 countryId: country_chile
-destinationType: city
+destinationType: village
 summary: Сокайре — деревня на пути из Сан-Педро-де-Атакама к высокогорным лагунам Мисканти и Миньикес.
 searchAliases:
 - Сакайре
@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_sokajre.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 В Сокайре делают остановку во время поездки к высокогорным лагунам. В выбранной программе здесь проходит обед между знакомством с лагунами и продолжением пути к солончаку Атакама.

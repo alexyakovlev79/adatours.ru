@@ -70,6 +70,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-margarita-v-venes
 sourceSnapshot: "https://drive.google.com/file/d/1xh_nMMcvzRw-sNi6HA3cw-m44N3peUZg/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_adventure"]
+navigationRole: hub
 ---
 
 ### Остров Маргарита -жемчужина Венесуэлы!

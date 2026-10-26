@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_kabalebo.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Программы здесь посвящены прогулкам по тропическому лесу, поездкам на лодках и наблюдению за животными и птицами.

@@ -5,7 +5,7 @@ name: "Озеро Сан-Пабло"
 slug: "san-pablo-lake"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: lake
 summary: "Озеро Сан-Пабло возле Отавало лежит у подножия вулкана Имбабура и приглашает остановиться ради широкого андского пейзажа."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_san_pablo_lake/hero-generated-20261010-next-ten-v1.webp", "alt": "Озеро Сан-Пабло и вулкан Имбабура в Андах — иллюстрация"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_san_pablo_lake.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 У Сан-Пабло хочется остановить дорогу и выйти к воде. Озеро находится возле Отавало в провинции Имбабура, на севере Эквадора. Над ним поднимается одноименный вулкан: широкий склон занимает большую часть горизонта, а облака то открывают, то закрывают его верхнюю часть.

@@ -21,6 +21,7 @@ searchAliases:
 - Остров Петерманн
 sourceSnapshot: data/source-index/materials/destination_antarctica_petermann_island.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Петерман расположен у западной стороны пролива Пенола, между островом Ховгорд и Аргентинскими островами. На небольшом острове сочетаются каменистые участки и снег, а за водой поднимаются горы Антарктического полуострова.

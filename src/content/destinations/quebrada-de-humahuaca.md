@@ -5,7 +5,7 @@ slug: "quebrada-de-humahuaca"
 status: "approved"
 name: "Кебрада-де-Умауака"
 countryId: "country_argentina"
-destinationType: "natural_area"
+destinationType: valley
 summary: "Кебрада-де-Умауака — живописная горная долина на северо-западе Аргентины, в провинции Жужуй, протянувшаяся вдоль реки Рио-Гранде. Это один из самых узнаваемых ландшафтов страны, где разноцветные горы, глубокие ущелья и древние поселения создают удивительный образ Андской Аргентины."
 searchAliases: ["Кебрада-дель-Хумауака", "kebrada-de-umauaka"]
 themes: ["theme_nature", "theme_culture"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_kebrada_de_umauaka.md"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 На протяжении веков долина была важным природным коридором, связывавшим высокогорья Анд с равнинами. По этим маршрутам проходили торговые пути, а сегодня небольшие города и деревни Кебрады сохраняют традиции коренных народов, старинную архитектуру, ремёсла и особенности местной кухни.

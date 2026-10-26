@@ -5,7 +5,7 @@ slug: xel-ha-park
 status: approved
 name: Парк Шель-Ха
 countryId: country_mexico
-destinationType: natural_area
+destinationType: attraction
 summary: Парк Шель-Ха включают в программу отдыха на мексиканском побережье как отдельную дневную поездку.
 searchAliases:
 - park-shel-ha
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_mexico_park_shel_ha.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Знакомство с парком дополняет пляжный отдых. Конкретный набор развлечений и услуг зависит от выбранной экскурсии; в туре предусмотрен вариант посещения в формате «все включено».

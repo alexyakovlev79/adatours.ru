@@ -24,6 +24,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_morskoj_park_fransisko_koloane.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 Морской парк Франсиско Колоане находится в Магеллановом проливе, среди островов и фьордов южной Чилийской Патагонии. Это охраняемое место кормления китов.
 

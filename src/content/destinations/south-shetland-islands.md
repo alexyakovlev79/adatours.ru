@@ -5,7 +5,7 @@ slug: "south-shetland-islands"
 status: "approved"
 name: "Южные Шетландские острова"
 countryId: "country_antarctica"
-destinationType: "island"
+destinationType: region
 summary: "Архипелаг включает множество островов, крупнейший из которых — Кинг-Джордж. Здесь расположены международные научные станции, служащие базами для исследований климата, океана, ледников и уникальных полярных экосистем. Другие острова архипелага практически не затронуты человеческой деятельностью и сохраняют свою суровую, почти нетронутую природу."
 searchAliases: ["yuzhnye-shetlandskie-ostrova"]
 themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_antarctica_yuzhnye_shetlandskie_ostrova.md"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Южные Шетландские острова известны многочисленными колониями пингвинов, среди которых встречаются антарктические пингвины, пингвины Адели и субантарктические пингвины. На прибрежных скалах гнездятся морские птицы, а на пляжах отдыхают тюлени. В окружающих водах можно встретить китов, особенно в летние месяцы Южного полушария, когда жизнь в океане становится особенно активной.

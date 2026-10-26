@@ -6,7 +6,7 @@ countryId: country_peru
 name: Морай
 summary: Круговые земледельческие террасы инков в районе Марас, среди холмов Священной
   долины Перу.
-destinationType: natural_area
+destinationType: archaeological_site
 status: approved
 hero:
   src: /media/tours/braziliya-argentina-chili-peru-ru/itinerary-day-12-generated-20261008-v1.webp
@@ -19,6 +19,7 @@ gallery:
 - src: /media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-1-src-enhanced-20261008.webp
   alt: "Круговые террасы Морая на зелёном горном склоне, Перу"
   hover: "Морай в Перу: концентрические террасы среди зелёных холмов"
+navigationRole: sight
 ---
 
 Морай — археологический комплекс в районе Марас, в перуанской области Куско. Он входит в маршруты по Священной долине инков и известен круговыми земледельческими террасами. Каменные подпорные стены образуют ступени, которые спускаются к центру естественной впадины. С верхнего края хорошо видны концентрические круги и окружающие холмы.

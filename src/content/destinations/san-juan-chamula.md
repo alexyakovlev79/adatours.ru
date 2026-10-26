@@ -5,7 +5,7 @@ name: Сан-Хуан-Чамула
 slug: san-juan-chamula
 status: approved
 countryId: country_mexico
-destinationType: city
+destinationType: village
 summary: Сан-Хуан-Чамула в Чьяпасе, поселение с церковью Святого Иоанна и местными религиозными традициями.
 hero:
   src: /media/tours/meksika-fantasticheskaya/san-juan-chamula-place-generated-20261009-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - san-huan-chamula
 sourceSnapshot: data/source-index/materials/destination_mexico_san_huan_chamula.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Сан-Хуан-Чамула находится в мексиканском Чьяпасе, в районе высокогорных общин возле Сан-Кристобаля. Особое значение имеет церковь Святого Иоанна. Ее жизнь связана с местными обрядами, в которых католические элементы соседствуют с более древними верованиями.

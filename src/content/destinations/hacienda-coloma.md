@@ -5,7 +5,7 @@ slug: hacienda-coloma
 status: approved
 name: Кофейная асьенда Колома
 countryId: country_colombia
-destinationType: natural_area
+destinationType: attraction
 summary: Кофейные кусты в тени деревьев, цветущий сад и старинная асьенда близ Боготы. Колома знакомит с колумбийским
   кофе там, где его выращивают и обжаривают.
 hero:
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_gastronomy_wine", "theme_culture", "theme_coffee"]
 sourceSnapshot: data/source-index/materials/destination_colombia_hacienda_coloma.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 В Коломе кофе растет среди цветов и высоких деревьев. Здесь хочется рассматривать красные ягоды на ветках, искать орхидеи в саду и задержаться у старого дома с черепичной крышей. Поездка из Боготы приводит в теплые зеленые окрестности Фусагасуги, где начинается знакомство с одной из главных традиций Колумбии.

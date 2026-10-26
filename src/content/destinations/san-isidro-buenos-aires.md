@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_san_isidro_buenos_ajres.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Среди городских достопримечательностей находятся музей Кинта-де-лос-Омбуэс и музей Пуэйрредон. Сан-Исидро удобно включить в поездку по северным окрестностям Буэнос-Айреса вместе с посещением Тигре.

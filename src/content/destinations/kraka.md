@@ -5,7 +5,7 @@ slug: "kraka"
 status: "approved"
 name: "Крака"
 countryId: "country_suriname"
-destinationType: "natural_area"
+destinationType: village
 summary: "Крака — небольшое поселение в Суринаме, расположенное в окружении пышных тропических лесов и живописных речных пейзажей."
 searchAliases: []
 themes: ["theme_nature", "theme_culture"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_suriname_kraka.md"
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Это место позволяет познакомиться с природной стороной страны, где жизнь тесно связана с реками, лесами и многовековыми традициями местных общин.

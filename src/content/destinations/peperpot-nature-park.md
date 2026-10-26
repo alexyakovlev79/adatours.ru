@@ -5,7 +5,7 @@ name: Природный парк Пеперпот
 slug: peperpot-nature-park
 status: approved
 countryId: country_suriname
-destinationType: national_park
+destinationType: natural_area
 summary: Пеперпот — природный парк рядом с Парамарибо, на территории бывшей кофейной плантации. Здесь прогулки по тропам сочетаются
   с наблюдением за птицами и другими обитателями тропического леса.
 hero:
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_prirodnyj_park_peperpot.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Здесь прогулки по тропам сочетаются с наблюдением за птицами и другими обитателями тропического леса.

@@ -5,7 +5,7 @@ slug: samana
 status: approved
 name: "Самана"
 countryId: "country_dominican_republic"
-destinationType: region
+destinationType: peninsula
 summary: "Полуостров с кокосовыми рощами, пляжами и водопадами. С января по март в море наблюдают горбатых китов."
 searchAliases: []
 hero:
@@ -22,6 +22,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-na-poluostrov-samana-v-domi
 sourceSnapshot: "https://drive.google.com/file/d/1XXVPKDVY0st0bGT3xqNJ39du3aCxvTy0/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_wildlife", "theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 ### Полуостров Самана- девственная природа!

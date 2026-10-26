@@ -5,7 +5,7 @@ slug: acajatuba-village
 status: approved
 name: Деревня Акажатуба
 countryId: country_brazil
-destinationType: city
+destinationType: village
 summary: Акажатуба, деревня в районе Рио-Негро, знакомит с повседневной жизнью жителей бразильской Амазонии.
 searchAliases:
 - Acajatuba
@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_derevnya_akazhatuba.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 В деревне Акажатуба местные жители занимаются рыболовством и сельским хозяйством. Здесь выращивают маниок и другие растения, связанные с повседневной жизнью Амазонии.

@@ -5,7 +5,7 @@ name: Каньон Колка
 slug: colca-canyon
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: canyon
 summary: Каньон Колка в Перу, горная долина с глубокими склонами и наблюдением за андскими кондорами.
 hero:
   src: "/media/destinations/colca-canyon/hero-generated-20261021-dedup-third50-v1.webp"
@@ -19,6 +19,7 @@ searchAliases:
 - kanon-kolka
 sourceSnapshot: data/source-index/materials/destination_peru_kanon_kolka.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Колка известен глубоким каньоном и горными панорамами. Рельеф раскрывается со смотровых площадок, где можно рассмотреть склоны и долину. Путешествие по этому району показывает другую сторону Анд, с открытыми видами и большим перепадом высоты между участками пейзажа.

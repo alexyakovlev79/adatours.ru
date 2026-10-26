@@ -19,6 +19,7 @@ searchAliases:
 - uanchako
 sourceSnapshot: data/source-index/materials/destination_peru_uanchako.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Его узнаваемая черта — традиционные тростниковые лодки кабальитос-де-тотора. Пляж, океанский прибой и рыбацкие традиции определяют характер этого места.

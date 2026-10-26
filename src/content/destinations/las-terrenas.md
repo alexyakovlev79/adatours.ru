@@ -22,6 +22,7 @@ sourceUrl: "https://brasiltours.ru/plyazhnye-tury-na-morskoj-kurort-las-terrenas
 sourceSnapshot: "https://drive.google.com/file/d/1tI-qSuzDAMNj1JcPw7QZOlPdy5EH0N2A/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_diving"]
+navigationRole: hub
 ---
 
 ### Лас-Терренас - курортная деревушка в Доминикане

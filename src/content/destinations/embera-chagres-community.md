@@ -19,6 +19,7 @@ searchAliases:
 - embera-chagres-community
 sourceSnapshot: data/source-index/materials/destination_panama_embera_chagres_community.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 До общины эмбера добираются на традиционном каноэ через тропический лес. На берегу начинается знакомство с местными жителями, их традициями и тесной связью с природой.

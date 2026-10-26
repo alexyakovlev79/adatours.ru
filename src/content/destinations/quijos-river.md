@@ -5,7 +5,7 @@ name: Река Кихос
 slug: quijos-river
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: river
 summary: Кихос — река на восточной стороне эквадорских Анд. В активных маршрутах её посещение связано с рафтингом и пейзажами быстрых горных потоков.
 hero:
   src: /media/destinations/quijos-river/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_reka_kihos.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В активных маршрутах её посещение связано с рафтингом и пейзажами быстрых горных потоков.

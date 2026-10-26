@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_los_volcanes_national_park.md
 updatedAt: '2026-10-14'
+navigationRole: hub
 ---
 
 ## Три вулкана западного Эль-Сальвадора

@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_cayambe.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В маршрутах из Кито к Отавало здесь знакомятся с местной жизнью и сельскохозяйственным пейзажем высокогорья.

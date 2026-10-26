@@ -5,7 +5,7 @@ name: "Озеро Пилчикоча"
 slug: "pilchicocha-lake"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: lake
 summary: "Озеро Пилчикоча в эквадорской Амазонии окружено дождевым лесом; на его темной воде особенно красивы отражения крон и неба."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_pilchicocha_lake/hero-generated-20261010-next-ten-v1.webp", "alt": "Деревянное каноэ у лесного берега озера Пильчикоча, Эквадор", hover: "Пильчикоча: тихое озеро и отражения тропического леса"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_pilchicocha_lake.md"
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Пилчикоча встречает темной водой и отражениями дождевого леса. Озеро находится в эквадорской Амазонии, в районе реки Напо, рядом с Сача Лодж. После дороги по реке и лесу открытый плес кажется просторным: над водой можно рассмотреть кроны целиком и заметить, как облака меняют их отражения.

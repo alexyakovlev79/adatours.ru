@@ -5,7 +5,7 @@ name: Глаза воды
 slug: ojos-del-salar
 status: approved
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: attraction
 summary: «Глаза воды», или Ojos del Salar, — природная остановка на маршруте по солончаку Уюни в Боливии. Это небольшие водяные отверстия в соляной поверхности, которые контрастируют с окружающей белой равниной.
 hero:
   src: /media/destinations/ojos-del-salar/hero-generated-20261009-followup-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_ojos_del_salar.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В джиповых программах посещение соседствует с Кольчани и другими точками солончака. Здесь удобно увидеть не только масштаб Уюни, но и детали его поверхности: кромку соли и воду внутри отдельных углублений.

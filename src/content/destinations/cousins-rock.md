@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_ecuador_cousins_rock.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Казенс-Рок находится к северо-востоку от Сантьяго, недалеко от Бартоломе. Под водой маршрут проходит то над рифом, то вдоль стены. Черные кораллы и небольшие обитатели рифа дают повод рассматривать детали, а открытая вода привлекает более крупных животных.

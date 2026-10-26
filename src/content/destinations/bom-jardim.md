@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_bom_zhardim.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Бом-Жардим находится в переходной зоне между саванной и амазонским дождевым лесом. Район известен прозрачными реками, озерами и пещерами.

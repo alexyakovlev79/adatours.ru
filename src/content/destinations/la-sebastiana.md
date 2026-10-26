@@ -5,7 +5,7 @@ name: Дом-музей Ла-Себастьяна
 slug: la-sebastiana
 status: approved
 countryId: country_chile
-destinationType: route_cluster
+destinationType: museum
 summary: Ла-Себастьяна знакомит с Вальпараисо через дом поэта Пабло Неруды. Дом-музей находится на холме Бельявиста,
   откуда город раскрывается в панорамах крыш, портовых кварталов и бухты.
 hero:
@@ -20,6 +20,7 @@ searchAliases:
 - Дом-музей Ла-Себастьяна
 sourceSnapshot: data/source-index/materials/destination_chile_la_sebastiana.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Посещение дополняет прогулку по холмам и историческому центру. Здесь интересно соединить рассказы о поэте с впечатлением от самого города. Время посещения и входные билеты согласуются заранее. 

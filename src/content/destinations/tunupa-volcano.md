@@ -5,7 +5,7 @@ slug: tunupa-volcano
 status: approved
 name: Вулкан Тунупа
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: volcano
 summary: Вулкан Тунупа дополняет маршрут по солончаку Уюни горными видами северной части региона.
 searchAliases:
 - vulkan-tunupa
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_vulkan_tunupa.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Вулкан Тунупа включен в программу путешествия по району солончака Уюни. Его посещение соединяют с остановками в поселениях у солончака.

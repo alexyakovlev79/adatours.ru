@@ -5,7 +5,7 @@ name: Реди-Доти
 slug: redi-doti
 status: approved
 countryId: country_suriname
-destinationType: city
+destinationType: village
 summary: Реди-Доти — деревня в Суринаме, которую посещают вместе с исторической Йоденсаванной. Знакомство с поселением дополняет
   рассказ о местных общинах и жизни за пределами столицы.
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_redi_doti.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Знакомство с поселением дополняет рассказ о местных общинах и жизни за пределами столицы.

@@ -21,6 +21,7 @@ searchAliases:
 - nacionalnyj-park-tajrona
 sourceSnapshot: data/source-index/materials/destination_colombia_nacionalnyj_park_tajrona.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Тайрона находится на Карибском побережье Колумбии в окрестностях Санта-Марты. В парке тропическая растительность выходит к морю, а лесные тропы соединяют отдельные участки побережья. Природный пейзаж связан с историей коренных культур региона, поэтому посещение интересно и за пределами пляжного отдыха.

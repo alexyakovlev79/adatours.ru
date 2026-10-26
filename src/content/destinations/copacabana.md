@@ -5,7 +5,7 @@ slug: copacabana
 status: approved
 name: Копакабана
 countryId: country_bolivia
-destinationType: city
+destinationType: town
 summary: Копакабана на боливийском берегу Титикаки служит отправной точкой лодочной поездки на остров Солнца.
 searchAliases:
 - kopakabana
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_kopakabana.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Копакабана находится на боливийском берегу озера Титикака. Сюда приезжают из Ла-Паса через плато Альтиплано.

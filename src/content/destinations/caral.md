@@ -5,7 +5,7 @@ name: Караль
 slug: caral
 status: approved
 countryId: country_peru
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Караль в Перу, древний город в долине Супе с монументальными сооружениями ранней андской цивилизации.
 hero:
   src: /media/tours/manyashchij-peru-i-ikitos/caral-place-generated-20261009-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - karal
 sourceSnapshot: data/source-index/materials/destination_peru_karal.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Караль находится на сухой террасе над зеленой долиной реки Супе. Археологический комплекс связан с одной из древнейших цивилизаций Америки. Сохранившиеся монументальные сооружения помогают представить устройство раннего городского центра задолго до времени инков.

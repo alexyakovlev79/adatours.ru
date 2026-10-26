@@ -19,6 +19,7 @@ searchAliases:
 - Parque Natural Chicaque
 sourceSnapshot: data/source-index/materials/destination_colombia_chicaque_park.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 Утром облака опускаются между кронами, влажные стволы покрыты мхом, а тропа уходит в зеленую глубину. Чикаке позволяет провести день в андском облачном лесу совсем рядом с Боготой. Здесь гуляют пешком, наблюдают за птицами и выходят к естественным смотровым площадкам.

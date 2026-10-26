@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_ostrov_meangera_del_golfo.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Морская поездка сюда знакомит с островными берегами и жизнью прибрежных поселений Сальвадора.

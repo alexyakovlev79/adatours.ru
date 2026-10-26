@@ -5,7 +5,7 @@ name: Священная долина инков
 slug: sacred-valley-of-the-incas
 status: approved
 countryId: country_peru
-destinationType: region
+destinationType: valley
 summary: Священная долина инков в Перу объединяет горные пейзажи, сельскохозяйственные террасы и исторические поселения возле
   Куско.
 hero:
@@ -20,6 +20,7 @@ searchAliases:
 - svyaschennaya-dolina-inkov
 sourceSnapshot: data/source-index/materials/destination_peru_svyaschennaya_dolina_inkov.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 В Священной долине инков возле Куско река проходит среди гор и сельскохозяйственных полей. Земледелие, древние сооружения и современные поселения здесь тесно связаны с ландшафтом. Каменные террасы показывают, как жители использовали склоны для выращивания продуктов и организации поселений.

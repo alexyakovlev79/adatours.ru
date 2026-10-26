@@ -5,7 +5,7 @@ slug: cuevas-pintadas-guachipas
 status: approved
 name: Куэвас-Пинтадас-де-Гуачипас
 countryId: country_argentina
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Красные скальные укрытия Лас-Хунтас хранят наскальные рисунки с изображениями животных и людей-щитов.
 hero:
   src: /media/destinations/cuevas-pintadas-guachipas/hero-generated-20261021-dedup50-v1.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_argentina_cuevas_pintadas_guachipas.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Куэвас-Пинтадас-де-Гуачипас — археологический памятник в районе Лас-Хунтас, в провинции Сальта. В красных песчаниковых скалах расположены естественные укрытия, где сохранилась живопись древних жителей северо-запада Аргентины. Особенно узнаваемы «люди-щиты»: человеческие фигуры с широкими узорчатыми телами. Рядом встречаются изображения верблюдовых, птиц и других животных.

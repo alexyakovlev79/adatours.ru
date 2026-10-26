@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_bolshaya_golubaya_dyra.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В программах по Белизу можно выбрать полет над Голубой дырой. Морские поездки знакомят с рифом с воды; конкретный формат зависит от выбранной экскурсии.

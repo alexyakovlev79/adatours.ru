@@ -5,7 +5,7 @@ name: Каапуку
 slug: caapucu
 status: approved
 countryId: country_paraguay
-destinationType: city
+destinationType: town
 summary: Каапуку в Парагвае, городская остановка с историческим музеем Casa-Oratorio Cabanas.
 hero:
   src: /media/tours/klassicheskij-paragvaj/caapucu-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - kaapuku
 sourceSnapshot: data/source-index/materials/destination_paraguay_kaapuku.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Каапуку находится на маршрутах южнее Асунсьона. С городом связано посещение Casa-Oratorio Cabanas, исторического места, где знакомятся с документами и колониальным прошлым Парагвая. Музей дополняет дорогу содержательной остановкой перед другими культурными центрами страны.

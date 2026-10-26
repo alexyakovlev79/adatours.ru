@@ -5,7 +5,7 @@ slug: cartagena
 status: "approved"
 name: "Картахена"
 countryId: "country_colombia"
-destinationType: "city"
+destinationType: city
 summary: "Картахена стоит на берегу Карибского моря. Старый центр города входит в список Всемирного наследия ЮНЕСКО, а пляжи и коралловые рифы привлекают любителей дайвинга."
 searchAliases: []
 hero: {"src":"/media/destinations/cartagena/hero-enhanced-20261003.webp","alt":"Улыбающаяся женщина в ярком платье с чашей фруктов на голове на фоне синей стены, Колумбия", hover: "Женщина с фруктами в ярком колумбийском костюме"}
@@ -49,6 +49,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kartahena-v-kolumbi
 sourceSnapshot: "https://drive.google.com/file/d/1aT9pixhPx7CbKLwgsVTWeZaz52-4brNT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_beach","theme_diving"]
+navigationRole: hub
 ---
 
 ## Старый центр ЮНЕСКО и крепость Сан-Фелипе: что посмотреть в Картахене

@@ -5,7 +5,7 @@ name: Сан-Франциско-де-Юруани
 slug: san-francisco-de-yuruani
 status: approved
 countryId: country_venezuela
-destinationType: city
+destinationType: village
 summary: Поселение Гран-Сабаны, связанное с подготовкой маршрутов к Рорайме и путешествиями по юго-востоку Венесуэлы.
 hero:
   src: /media/tours/aktivnaya-venesuela-akvapark-yurskogo-perioda/itinerary-day-02-generated-20261008-next20.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_venezuela_san_francisko_de_yuruani.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Сан-Франциско-де-Юруани находится в Гран-Сабане на юго-востоке Венесуэлы. Открытые пространства саванны и горные горизонты определяют природное окружение поселения. В маршрутах к Рорайме оно служит местом остановки перед переходом к пешей части путешествия.

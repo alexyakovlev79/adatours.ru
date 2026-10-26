@@ -5,7 +5,7 @@ name: Ушмаль
 slug: uxmal
 status: approved
 countryId: country_mexico
-destinationType: city
+destinationType: archaeological_site
 summary: Ушмаль на Юкатане в Мексике, древний город майя с пирамидами и каменными дворцовыми сооружениями.
 hero:
   src: "/media/destinations/uxmal/hero-generated-20261021-dedup-third50-v1.webp"
@@ -20,6 +20,7 @@ searchAliases:
 - ushmal
 sourceSnapshot: data/source-index/materials/destination_mexico_ushmal.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Ушмаль относится к крупным археологическим комплексам майя на Юкатане. Его каменная архитектура связана с традицией Пуук. Среди известных сооружений Пирамида Волшебника, Дворец Правителя и Дом Черепах. Фасады и расположение зданий помогают представить устройство древнего города.

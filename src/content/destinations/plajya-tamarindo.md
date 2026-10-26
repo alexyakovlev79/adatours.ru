@@ -5,7 +5,7 @@ slug: playa-tamarindo
 status: "approved"
 name: "Плайя Тамариндо"
 countryId: "country_costa_rica"
-destinationType: "resort"
+destinationType: resort
 summary: "Плайя Тамариндо предлагает пляжный отдых, серфинг, рыбалку и прогулки под парусом. В городке есть рестораны, художественные галереи и лавки ремесленников."
 searchAliases: []
 hero: {"src": "/media/destinations/playa-tamarindo/hero-enhanced-20261003.webp", "alt": "Пальма и полоса прибоя на пляже Тамариндо, Коста-Рика", "hover": "Тамариндо в Коста-Рике: волны у тропического берега"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-plyazh-tamarindo-v-kosta
 sourceSnapshot: "https://drive.google.com/file/d/1j05Yf_2pgat9-yywdlMG1Om7-4NxasdQ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_adventure","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Серфинг, дайвинг и ночная жизнь: что посмотреть в Тамариндо, Коста-Рика

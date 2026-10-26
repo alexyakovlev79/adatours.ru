@@ -5,7 +5,7 @@ name: Колония Товар
 slug: colonia-tovar
 status: approved
 countryId: country_venezuela
-destinationType: city
+destinationType: town
 summary: Горное поселение с немецко-венесуэльским наследием, фахверковыми домами и традициями местной кухни.
 hero:
   src: /media/tours/populyarnye-napravleniya-venesuely/colonia-tovar-place-generated-20261008.webp
@@ -17,6 +17,7 @@ themes:
 - theme_gastronomy_wine
 sourceSnapshot: data/source-index/materials/destination_venezuela_koloniya_tovar.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Колония Товар — горное поселение в Венесуэле, основанное немецкими переселенцами в 1843 году. Узнаваемая фахверковая архитектура, наклонные крыши и зеленые окрестные склоны отличают его от других городов региона. История переселения до сих пор заметна в облике улиц и культурных традициях.

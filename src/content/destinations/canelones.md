@@ -18,6 +18,7 @@ searchAliases:
 - kanelones
 sourceSnapshot: data/source-index/materials/destination_uruguay_kanelones.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Канелонес связан с винодельческой культурой Уругвая. В регионе работают семейные хозяйства, где знакомятся с виноградниками, сортами и приготовлением вина. Холмистые сельские пейзажи позволяют увидеть производство в его природном окружении.

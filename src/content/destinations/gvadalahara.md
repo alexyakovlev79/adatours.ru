@@ -5,7 +5,7 @@ slug: guadalajara
 status: "approved"
 name: "Гвадалахара"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Столица штата Халиско знакомит с колониальными церквями, музеями и традициями Мексики. Гвадалахару называют «Городом Роз» за ее парки и сады."
 searchAliases: []
 hero: {"src":"/media/destinations/guadalajara/hero-enhanced-20261004.webp","alt":"Шпили собора Гвадалахары за фонтаном на закате, Мексика","hover":"Гвадалахара в Мексике: фонтан и собор на фоне вечернего неба"}
@@ -46,6 +46,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-gvadalahara-v-meksi
 sourceSnapshot: "https://drive.google.com/file/d/1Jfjc1pGwW1J0Qdqu-tN6unUMX_hZBjw8/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Гвадалахара - "город роз" Мексики

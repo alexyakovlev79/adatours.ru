@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_zapovednik_san_lorenso.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Посещение Сан-Лоренсо сочетают с поездкой по полуострову и морской прогулкой из Пуэрто-Пирамидес. Наличие пингвинов зависит от сезона, поэтому конкретную программу выбирают с учетом времени путешествия.

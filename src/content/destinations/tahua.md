@@ -5,7 +5,7 @@ slug: tahua
 status: approved
 name: Тахуа
 countryId: country_bolivia
-destinationType: city
+destinationType: village
 summary: Тахуа входит в маршрут по району солончака Уюни и служит одной из остановок высокогорной экспедиции.
 searchAliases: []
 themes:
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_tahua.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Тахуа, поселение в районе солончака Уюни, включено в программу высокогорного путешествия по Боливии. Здесь делают остановку во время поездки через соляную равнину и окружающие ее населенные места.

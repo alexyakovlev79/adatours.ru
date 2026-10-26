@@ -5,7 +5,7 @@ name: "Город Гуатавита"
 slug: guatavita-town
 status: approved
 countryId: country_colombia
-destinationType: city
+destinationType: town
 summary: 'Гуатавита в окрестностях Боготы: белые дома, мощеные улицы и прогулка по небольшому андскому городку, которую
   сочетают с посещением озера Гуатавита.'
 hero:
@@ -20,6 +20,7 @@ searchAliases:
 - Guatavita town
 sourceSnapshot: data/source-index/materials/destination_colombia_guatavita_town.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В Гуатавите приятно сделать паузу после прогулки к одноименному озеру. Белые фасады, черепичные крыши и небольшие площади создают цельный облик городка. Здесь можно пройтись по улицам и заглянуть в местные лавки, прежде чем продолжить поездку по окрестностям Боготы.

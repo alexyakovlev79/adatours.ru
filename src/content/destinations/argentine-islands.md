@@ -20,6 +20,7 @@ searchAliases:
 - Argentine Islands
 sourceSnapshot: data/source-index/materials/destination_antarctica_argentine_islands.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Аргентинские острова находятся у западного побережья Антарктического полуострова. От Земли Грейама их отделяет пролив Пенола. В группе много небольших островов и скал, между которыми проходят морские протоки.

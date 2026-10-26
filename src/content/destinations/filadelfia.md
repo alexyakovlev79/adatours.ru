@@ -5,7 +5,7 @@ name: Филадельфия
 slug: filadelfia
 status: approved
 countryId: country_paraguay
-destinationType: city
+destinationType: town
 summary: Филадельфия в парагвайском Чако, город меннонитских общин и база поездок по региону.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/filadelfia-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - filadelfiya
 sourceSnapshot: data/source-index/materials/destination_paraguay_filadelfiya.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Филадельфия находится в Чако и связана с историей меннонитских поселений. Из города отправляются знакомиться с лагунами, природными территориями и соседними общинами. Городская остановка позволяет задержаться в регионе и увидеть его повседневную жизнь.

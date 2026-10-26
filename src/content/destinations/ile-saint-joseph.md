@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_french_guiana_ostrov_sen_zhozef.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Сохранившиеся сооружения бывшей колонии позволяют представить ее историю, а тропическая растительность постепенно возвращает себе пространство.

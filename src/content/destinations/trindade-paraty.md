@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_trindadi_parati.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 В Триндаде пляжные прогулки переходят в лесные тропы. У Praia do Meio начинается путь к Praia do Caixa d’Aco и природному бассейну, где морская вода окружена крупными скалами.

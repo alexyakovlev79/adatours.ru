@@ -5,7 +5,7 @@ slug: tacna
 status: approved
 name: "Такна"
 countryId: "country_peru"
-destinationType: "city"
+destinationType: city
 summary: "Такна на юге Перу: собор по проекту Эйфеля, европейская архитектура и поездки к курорту Покойай и лагуне Арикота."
 searchAliases: []
 hero:
@@ -37,6 +37,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-takna-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/10EJFBlna8xNo-3XKAKGQcEuCktVKc3pd/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Такна - южный город Перу!

@@ -5,7 +5,7 @@ slug: concha-y-toro
 status: approved
 name: Винодельня Конча-и-Торо
 countryId: country_chile
-destinationType: natural_area
+destinationType: attraction
 summary: Виноградники долины Майпо, сады старой усадьбы и легенда Casillero del Diablo. Конча-и-Торо приглашает
   познакомиться с чилийским вином рядом с Сантьяго.
 hero:
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_chile_concha_y_toro.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 У Конча-и-Торо знакомство с Чили начинается с виноградных рядов и прогулки по усадебному парку. Пирке лежит в долине Майпо, рядом с Сантьяго: после городских улиц здесь особенно приятно смотреть на зелень садов и горы за виноградниками. В бокале местное вино получает вполне зримое окружение.

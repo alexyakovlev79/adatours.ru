@@ -5,7 +5,7 @@ slug: banos
 status: approved
 name: "Баньос"
 countryId: "country_ecuador"
-destinationType: "city"
+destinationType: city
 summary: "Баньос у подножья вулкана Тунгурагуа: термальные источники, водопады в окрестностях и базилика из вулканического камня на центральной площади."
 searchAliases: []
 hero:
@@ -37,6 +37,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-banos-v-ehkvadore-t
 sourceSnapshot: "https://drive.google.com/file/d/1ti0yUSUiv0WXAX_7DhsxmZG0m97dpsWb/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_spa", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Термальные источники и качели на краю света: что посмотреть в Баньосе

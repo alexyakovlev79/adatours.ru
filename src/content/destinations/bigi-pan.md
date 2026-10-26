@@ -5,7 +5,7 @@ name: Биги-Пан
 slug: bigi-pan
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: wetland
 summary: Биги-Пан — водно-болотный район на западе Суринама, с мангровыми лесами и водными протоками. Сюда приезжают ради
   прогулок на лодках и наблюдения за птицами.
 hero:
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_bigi_pan.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Сюда приезжают ради прогулок на лодках и наблюдения за птицами.

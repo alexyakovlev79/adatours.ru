@@ -5,7 +5,7 @@ slug: rio-claro-jardim-amazonia
 status: approved
 name: Река Клару у лоджа «Жардим-да-Амазония»
 countryId: country_brazil
-destinationType: natural_area
+destinationType: river
 summary: Река Клару на амазонском участке Мату-Гросу — маршрут каноэ из лоджа «Жардим-да-Амазония» к озеру Анаконда.
 searchAliases:
 - Rio Claro — Jardim da Amazônia
@@ -18,6 +18,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_rio_claro_jardim_amazonia.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 ## Каноэ вдоль лесных берегов

@@ -5,7 +5,7 @@ slug: santiago-de-cuba
 status: "approved"
 name: "Сантьяго де Куба"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Сантьяго де Куба знакомит с карнавалами, крепостью Кастильо-дель-Моро и площадью Сеспедес. Город стоит на холмах; из окрестностей можно отправиться к базилике Эль-Кобре и в парк Баконао."
 searchAliases: []
 hero: {"src":"/media/destinations/santiago-de-cuba/hero-enhanced-20261004.webp","alt":"Две церковные башни Сантьяго-де-Кубы в закатном свете, Куба", hover: "Сантьяго-де-Куба: колокольни перед вечерним солнцем"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-santyago-de-kuba-na
 sourceSnapshot: "https://drive.google.com/file/d/1YaERS5Na29yeB8RW2bnvbTzU971s1WrZ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_events"]
+navigationRole: hub
 ---
 
 ## Сантьяго де Куба - город карнавалов!

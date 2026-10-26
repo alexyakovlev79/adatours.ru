@@ -42,6 +42,7 @@ sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-i
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-morskoj-kurort-itakare__2bb91022.md
 updatedAt: '2026-10-11'
 themes: ["theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 Пляжную часть здесь удобно чередовать с прогулками и короткими выездами в Мата-Атлантику. Для спокойной поездки лучше выбрать несколько любимых пляжей, а не пытаться объехать все побережье.

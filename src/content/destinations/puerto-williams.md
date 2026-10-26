@@ -5,7 +5,7 @@ slug: "puerto-williams"
 status: "approved"
 name: "Пуэрто-Вильямс"
 countryId: "country_chile"
-destinationType: "city"
+destinationType: town
 summary: "Южный город на острове Наварино у пролива Бигль."
 searchAliases: ["puerto-vilyams"]
 themes: ["theme_cruises","theme_adventure"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_chile_puerto_vilyams.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Пуэрто-Вильямс расположен на чилийском острове Наварино, на берегу пролива Бигль. Небольшая гавань, невысокие дома и лесистые склоны создают облик удаленного южного поселения. За городской застройкой начинается горный ландшафт острова, с которым связаны пешие маршруты района Дьентес-де-Наварино.

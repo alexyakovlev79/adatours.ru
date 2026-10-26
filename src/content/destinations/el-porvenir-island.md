@@ -19,6 +19,7 @@ searchAliases:
 - ostrov-porvenir
 sourceSnapshot: data/source-index/materials/destination_panama_ostrov_porvenir.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Порвенир входит в островной район Сан-Бласа, связанный с народом гуна. Небольшой остров появляется на яхтенных маршрутах по карибской части Панамы. Его берег позволяет выйти с судна и рассмотреть островное окружение с суши.

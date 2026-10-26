@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_cotacachi.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Его посещение сочетают с Отавало и природными маршрутами соседнего горного района.

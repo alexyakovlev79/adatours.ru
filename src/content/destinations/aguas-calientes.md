@@ -5,7 +5,7 @@ name: Агуас-Кальентес
 slug: aguas-calientes
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: town
 summary: Агуас-Кальентес, также Мачу-Пикчу-Пуэбло, город у подножия Мачу-Пикчу с железнодорожной станцией и термальными источниками.
 hero:
   src: /media/tours/manyashchij-peru-kolumbiya/aguas-calientes-place-generated-20261009-v1.webp
@@ -20,6 +20,7 @@ searchAliases:
 - aguas-kalentes
 sourceSnapshot: data/source-index/materials/destination_peru_aguas_kalentes.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Агуас-Кальентес, известный также как Мачу-Пикчу-Пуэбло, находится в горной долине у Мачу-Пикчу. Сюда прибывают поезда, а затем путешественники продолжают путь к археологическому комплексу. Город позволяет остановиться рядом с памятником и познакомиться с окружающим пейзажем высокогорных склонов и влажной растительности.

@@ -5,7 +5,7 @@ slug: "cambara-do-sul"
 status: "approved"
 name: "Камбара-ду-Сул"
 countryId: "country_brazil"
-destinationType: "city"
+destinationType: town
 summary: "Город на высокогорном плато у каньонов юга Бразилии."
 searchAliases: ["Cambará do Sul","kambara-du-sul"]
 themes: ["theme_adventure", "theme_nature"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_kambara_du_sul.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Камбара-ду-Сул находится на высокогорном плато штата Риу-Гранди-ду-Сул. Его окрестности — это открытые луга, сельские дороги, прохладные туманы и араукарии с характерными зонтичными кронами. Город служит отправной точкой для знакомства с каньонами юга Бразилии.

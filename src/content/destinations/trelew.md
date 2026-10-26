@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_treleu.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В палеонтологическом музее Эгидио Ферульо представлены находки, сделанные в Патагонии. В маршрутах по побережью Трелеу сочетается с Гайманом, Пуэрто-Мадрином и полуостровом Вальдес.

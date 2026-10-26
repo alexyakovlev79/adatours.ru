@@ -5,7 +5,7 @@ slug: coba
 status: approved
 name: Коба
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: archaeological_site
 summary: Коба входит в маршруты по археологическим памятникам полуострова Юкатан и знакомит с наследием майя.
 searchAliases:
 - koba
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_mexico_koba.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Кобу рассматривают как отдельную остановку путешествия по региону. Состав осмотра и условия посещения уточняют по программе выбранного тура.

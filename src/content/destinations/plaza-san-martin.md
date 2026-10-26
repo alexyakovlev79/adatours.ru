@@ -5,7 +5,7 @@ slug: plaza-san-martin
 status: approved
 name: Площадь Сан-Мартин
 countryId: country_argentina
-destinationType: natural_area
+destinationType: square
 summary: Площадь Сан-Мартин в Буэнос-Айресе сочетает густую зелень, прогулочные дорожки и памятники. Название напоминает
   о генерале Хосе де Сан-Мартине, а конная статуя делает эту городскую площадь узнаваемой.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_argentina_buenos_aires
 sourceSnapshot: data/source-index/materials/destination_argentina_plaza_san_martin.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 В тени крупных деревьев площадь воспринимается как небольшой парк среди городских фасадов. Здесь можно задержаться у памятника генералу Сан-Мартину, пройти по дорожкам и рассмотреть, как зеленое пространство встроено в окружающую застройку.

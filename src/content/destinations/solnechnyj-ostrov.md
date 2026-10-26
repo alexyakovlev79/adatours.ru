@@ -31,6 +31,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-solnechnyj-ostrov-boliviy
 sourceSnapshot: https://drive.google.com/file/d/1PpYMcMdVku0Wy2gTfibboRuVJOrAc83P/view?usp=drivesdk
 updatedAt: '2026-10-11'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Если пройти по широкой священной лестнице, можно увидеть Фонтан Инков, являющийся местом ритуалов и обрядов. И конечно надо попробовать форель из самого высокогорного озера на свете.

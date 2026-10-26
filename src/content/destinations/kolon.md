@@ -5,7 +5,7 @@ slug: colon
 status: "approved"
 name: "Город Колон"
 countryId: "country_panama"
-destinationType: "city"
+destinationType: city
 summary: "Город на берегу океана с пляжами, барами и окружающими тропическими лесами. Колон предлагает спокойный отдых и вечерние развлечения."
 searchAliases:
 - "Колон"
@@ -20,6 +20,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kolon-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1A6wfGcpW-l3ubodUTT-Ww_MM1XPgM2p4/view?usp=drivesdk"
 updatedAt: '2026-10-11'
 themes: ["theme_beach"]
+navigationRole: hub
 ---
 
 ## Колон- колониальное очарование Панамы!

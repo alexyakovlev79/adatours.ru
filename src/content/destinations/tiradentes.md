@@ -5,7 +5,7 @@ slug: tiradentes
 status: approved
 name: Тирадентис
 countryId: country_brazil
-destinationType: city
+destinationType: town
 summary: Тирадентис входит в маршруты по внутренним районам Минас-Жерайса с обзорной прогулкой по городу.
 searchAliases:
 - Тирадентиш
@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_tiradentis.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 В Тирадентисе делают остановку во время путешествия по штату Минас-Жерайс. Обзорная экскурсия знакомит с городом перед продолжением пути к Капитолио.

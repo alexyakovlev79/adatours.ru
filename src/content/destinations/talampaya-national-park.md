@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_nacionalnyj_park_talampajya.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Талампайю посещают вместе с Исчигуалясто в маршрутах по древней природе Аргентины. Парк известен геологическим и палеонтологическим наследием. Внутри каньона каменные стены соседствуют с отдельными участками растительности.

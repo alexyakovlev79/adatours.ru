@@ -5,7 +5,7 @@ slug: abismo-anhumas-cave
 status: approved
 name: Бездна Аньюмас
 countryId: country_brazil
-destinationType: natural_area
+destinationType: cave
 summary: Бездна Аньюмас дополняет маршруты по Бонито знакомством с подземным озером и известняковым рельефом.
 searchAliases:
 - Abismo Anhumas
@@ -26,6 +26,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_peschera_abismo_anhumas.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Аньюмас входит в природные маршруты района Бонито в Бразилии. Подземное озеро и каменные формы пещеры выделяют эту остановку среди прогулок по рекам и лесным тропам.

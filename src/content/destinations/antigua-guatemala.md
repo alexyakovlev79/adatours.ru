@@ -38,6 +38,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-antigua-guatemala-v
 sourceSnapshot: "https://drive.google.com/file/d/1BaqnC-yCVnS4Jc2pu8xTltCaaaGlS_MG/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Антигуа Гватемала - свидетель колониального величия!

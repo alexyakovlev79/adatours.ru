@@ -5,7 +5,7 @@ slug: easter-island
 status: approved
 name: "Остров Пасхи"
 countryId: "country_chile"
-destinationType: "island"
+destinationType: island
 summary: "Остров Пасхи: статуи моаи, Аху Тонгарики, вулкан Рано-Рараку, пляж Анакена и знакомство с культурой островитян."
 searchAliases: []
 hero:
@@ -40,6 +40,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-paskhi-v-chili-ea
 sourceSnapshot: "https://drive.google.com/file/d/1uUVlUrN75IZe2TZ5WCKisI3ebCh9c8o5/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture", "theme_nature", "theme_beach"]
+navigationRole: hub
 ---
 
 ## Статуи моаи и вулкан Рано-Рараку: что посмотреть на Острове Пасхи, Чили

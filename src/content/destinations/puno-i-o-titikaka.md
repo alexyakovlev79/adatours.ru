@@ -5,7 +5,7 @@ slug: puno-and-lake-titicaca
 status: approved
 name: "Пуно и о.Титикака"
 countryId: "country_peru"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Пуно и озеро Титикака: плавучие острова Урош, жизнь местных общин и прогулки на тростниковых лодках."
 searchAliases: []
 hero:
@@ -39,6 +39,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-titikaka-i-puno-v-
 sourceSnapshot: "https://drive.google.com/file/d/1oHNNkrMFj1j7DkWF7Zkc_mgLVH5dFHvm/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Плавучие острова Урос и лодки из тоторы: что посмотреть на озере Титикака

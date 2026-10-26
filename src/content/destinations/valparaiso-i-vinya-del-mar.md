@@ -5,7 +5,7 @@ slug: valparaiso-vina-del-mar
 status: approved
 name: "Вальпараисо и Винья дель Мар"
 countryId: "country_chile"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Вальпараисо с фуникулерами и домами на холмах и пляжный Винья дель Мар: морское побережье Чили, музеи, парки и ботанический сад."
 searchAliases: []
 hero:
@@ -46,6 +46,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-goroda-valparaiso-i-vinya
 sourceSnapshot: "https://drive.google.com/file/d/1_LzuaUko7o8fuwaMfQb42yBABL4ogKwP/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture","theme_beach"]
+navigationRole: hub
 ---
 
 ## Фуникулеры и цветные дома: что посмотреть в Вальпараисо и Винья-дель-Мар, Чили

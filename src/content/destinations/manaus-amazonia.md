@@ -46,6 +46,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-brazilskuyu-amazonku-i-v-gorod-manaus__791a2ef7.md
 updatedAt: '2026-10-21'
 themes: ["theme_wildlife", "theme_nature", "theme_fishing", "theme_culture"]
+navigationRole: hub
 ---
 
 Манаус вырос в XIX веке во время резинового бума. Один из самых заметных памятников этого периода – театр Амазонас с неоклассической архитектурой и цветным куполом.

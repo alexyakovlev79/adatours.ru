@@ -5,7 +5,7 @@ slug: mancora
 status: approved
 name: "Манкора"
 countryId: "country_peru"
-destinationType: "resort"
+destinationType: resort
 summary: "Манкора на тихоокеанском побережье Перу: серфинг, пляжи и ночная жизнь. В окрестностях находятся археологические памятники инков."
 searchAliases: []
 hero:
@@ -26,6 +26,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-mankora-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1fmvj8OcntwWBO-yzbOQQzutP6jQ34_xi/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_beach","theme_adventure"]
+navigationRole: hub
 ---
 
 ## Серфинг, волны и ночная жизнь: что посмотреть в Манкоре, Перу

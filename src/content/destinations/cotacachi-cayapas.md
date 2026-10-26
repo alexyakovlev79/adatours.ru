@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_cotacachi_cayapas.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В высокогорных маршрутах знакомство с этим районом дополняет поездки к Отавало и Котакачи.

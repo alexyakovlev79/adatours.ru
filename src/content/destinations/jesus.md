@@ -5,7 +5,7 @@ name: Хесус
 slug: jesus
 status: approved
 countryId: country_paraguay
-destinationType: natural_area
+destinationType: historic_site
 summary: Хесус в Парагвае, историческое место с руинами иезуитской миссии Хесус-де-Таваранге.
 hero:
   src: /media/tours/klassicheskij-paragvaj/jesus-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - hesus
 sourceSnapshot: data/source-index/materials/destination_paraguay_hesus.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Хесус связан с иезуитской миссией, которая стала частью истории Парагвая и народа гуарани. Сохранившиеся сооружения позволяют рассмотреть устройство религиозного и общественного центра. Каменные стены и пространства миссии напоминают о жизни организованной общины.

@@ -5,7 +5,7 @@ slug: eduardo-avaroa-national-reserve
 status: approved
 name: Национальный заповедник Эдуардо-Авароа
 countryId: country_bolivia
-destinationType: national_park
+destinationType: natural_area
 summary: Заповедник Эдуардо-Авароа включен в маршруты по высокогорным лагунам и вулканическим ландшафтам Боливии.
 searchAliases:
 - Эдуардо Авароа
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_nacionalnyj_zapovednik_eduardo_avaroa.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Национальный заповедник Эдуардо-Авароа входит в высокогорную программу после пересечения солончака Уюни. Маршрут ведет через вулканические ландшафты региона Липес.

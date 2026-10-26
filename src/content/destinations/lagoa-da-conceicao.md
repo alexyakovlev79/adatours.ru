@@ -5,7 +5,7 @@ slug: lagoa-da-conceicao
 status: approved
 name: Лагуна Лагоа-да-Консейсан
 countryId: country_brazil
-destinationType: natural_area
+destinationType: lake
 summary: Большая лагуна между зелеными холмами и дюнами Санта-Катарины. Лагоа-да-Консейсан показывает Флорианополис
   со стороны воды и старых островных поселений.
 hero:
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_nature", "theme_culture"]
 sourceSnapshot: data/source-index/materials/destination_brazil_lagoa_da_conceicao.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Лагоа-да-Консейсан приятно увидеть сверху: за зелеными склонами раскрывается большая вода, на берегах стоят дома, а дальше светлеют дюны и начинается океанская сторона острова. Затем стоит спуститься к лагуне и прогуляться там, где Флорианополис живет рядом с водой. Здесь удачно сочетаются широкий пейзаж и небольшие детали старого поселения.

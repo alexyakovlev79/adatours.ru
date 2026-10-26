@@ -5,7 +5,7 @@ slug: moon-valley-atacama
 status: approved
 name: Лунная долина (Атакама)
 countryId: country_chile
-destinationType: natural_area
+destinationType: valley
 summary: Долина Луны рядом с Сан-Педро-де-Атакама объединяет соляные участки, песчаные дюны и скальные формы.
 searchAliases:
 - Долина Луны
@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_lunnaya_dolina_atakama.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Во время прогулок знакомятся с пустынными ландшафтами и соляными образованиями. На закате освещение меняет оттенки скал и песка; посещение долины соединяют с другими поездками по Атакаме.

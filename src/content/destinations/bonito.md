@@ -5,7 +5,7 @@ name: Бонито
 slug: bonito
 status: approved
 countryId: country_brazil
-destinationType: natural_area
+destinationType: town
 summary: >-
   Бонито в штате Мату-Гросу-ду-Сул выбирают ради прозрачных рек, пещер, водопадов и активного экотуризма: снорклинга, рафтинга, треккинга и поездок по природным маршрутам.
 hero:
@@ -47,6 +47,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-bonito-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-bonito-v-brazilii__fe15cf30.md
 updatedAt: '2026-10-21'
 themes: ["theme_adventure", "theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 

@@ -5,7 +5,7 @@ slug: doka-estate
 status: approved
 name: Кофейная плантация Дока
 countryId: country_costa_rica
-destinationType: natural_area
+destinationType: attraction
 summary: Кофейные ягоды на зеленых склонах Поаса, старинная обработка зерна и аромат обжарки. На плантации Дока
   чашка кофе становится маленьким путешествием по Коста-Рике.
 hero:
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_gastronomy_wine", "theme_culture", "theme_coffee"]
 sourceSnapshot: data/source-index/materials/destination_costa_rica_doka_estate.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Утро на плантации Дока начинается среди блестящих кофейных листьев и красных ягод. Зеленые склоны поднимаются к вулкану Поас, а между посадками видны постройки старого хозяйства. Здесь приятно замедлиться, пройти вдоль кустов и посмотреть на кофе задолго до того, как он попадет в чашку.

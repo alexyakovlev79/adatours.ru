@@ -5,7 +5,7 @@ name: Якша
 slug: yaxha
 status: approved
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Якша, древний город майя в гватемальском Петене, окружен тропическим лесом и лагунами. Здесь сохранились храмы, акрополи, площади и дороги, связывающие разные части поселения.
 hero:
   src: "/media/destinations/yaxha/hero-generated-20261021-dedup-third50-v1.webp"
@@ -19,6 +19,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_yaksha.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Во время прогулки можно рассматривать руины, слушать птиц и звуки леса. С верхних точек комплекса открывается вид на окружающую зелень; поездку часто соединяют с Флоресом или переходом к границе Белиза.

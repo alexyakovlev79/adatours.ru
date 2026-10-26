@@ -17,6 +17,7 @@ searchAliases:
 - nacionalnyj-park-braulio-karrilo
 sourceSnapshot: data/source-index/materials/destination_costa_rica_nacionalnyj_park_braulio_karrilo.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Национальный парк Браулио-Каррильо охраняет густые вечнозеленые леса в горной части Коста-Рики. Его территория охватывает разные высотные пояса, поэтому растительность меняется от влажного тропического леса до прохладных горных участков. Уже дорога между Сан-Хосе и карибской стороной страны показывает эту смену пейзажей.

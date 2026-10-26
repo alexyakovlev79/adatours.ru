@@ -5,7 +5,7 @@ name: Итайпу
 slug: itaipu
 status: approved
 countryId: country_paraguay
-destinationType: natural_area
+destinationType: attraction
 summary: Итайпу на границе Парагвая и Бразилии, гидроэлектростанция с большой плотиной на реке Парана.
 hero:
   src: /media/tours/klassicheskij-paragvaj/itaipu-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - itajpu
 sourceSnapshot: data/source-index/materials/destination_paraguay_itajpu.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Итайпу связана с гидроэнергетикой Парагвая и Бразилии. Плотина удерживает воду и создает перепад, который используется для работы турбин. Знакомство с комплексом позволяет увидеть, как речная система превращается в источник электричества.

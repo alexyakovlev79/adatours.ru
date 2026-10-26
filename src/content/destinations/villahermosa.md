@@ -18,6 +18,7 @@ searchAliases:
 - vilyaermosa
 sourceSnapshot: data/source-index/materials/destination_mexico_vilyaermosa.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Вильяэрмоса является столицей Табаско, региона с реками и влажными природными территориями. Город связан с воздушными маршрутами и дорогами к археологическим районам соседних штатов. Здесь современная городская жизнь соседствует с парками и водными участками.

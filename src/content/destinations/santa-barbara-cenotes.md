@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_mexico_santa_barbara_cenotes.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Сеноты Санта-Барбара находятся недалеко от деревни Хомун на полуострове Юкатан. Здесь есть открытые природные водоемы и бассейны внутри известняковых пещер. Вода и скальные стены каждого сенота выглядят по-разному.

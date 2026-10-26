@@ -5,7 +5,7 @@ slug: el-tigre-waterfalls
 status: approved
 name: Водопады Эль-Тигре
 countryId: country_costa_rica
-destinationType: natural_area
+destinationType: waterfall
 summary: Четыре водопада среди горного леса рядом с Монтеверде. Тропа ведет вдоль реки, через мостики и участки с камнями
   и перепадами высоты.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Водопады Эль Тигре
 sourceSnapshot: data/source-index/materials/destination_costa_rica_el_tigre_waterfalls.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Эль-Тигре находится в горах за пределами Санта-Елены, в районе Монтеверде. Здесь лесная река образует четыре водопада. Дорожки проходят через влажный лес, вдоль воды и по мостикам; это место для активной прогулки по пересеченной местности.

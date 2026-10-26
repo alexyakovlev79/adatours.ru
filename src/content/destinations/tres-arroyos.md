@@ -23,6 +23,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_tres_arroyos.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Трес-Арройос соединяет городскую жизнь с сельскими окрестностями и атлантическим побережьем одноименного муниципалитета. За пределами города расположены небольшие поселения и сельские ландшафты, а дальше маршрут можно продолжить к морю.

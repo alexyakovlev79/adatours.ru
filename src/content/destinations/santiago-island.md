@@ -5,7 +5,7 @@ name: "Остров Сантьяго"
 slug: "santiago-island"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: island
 summary: "Сантьяго соединяет лавовые поля, каменные бухты и пляжи, где можно наблюдать морских котиков, игуан и птиц Галапагосов."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_santiago_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские котики на камнях возле прибрежных заводей острова Сантьяго", "hover": "Сантьяго: морские котики на вулканическом берегу"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_santiago_island.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 На Сантьяго интересно читать историю острова по камню. В бухте Салливан застывшая лава складывается в волны и веревочные узоры. Под ногами видны трещины и складки, оставленные потоком при остывании. Стоит замедлить шаг, чтобы рассмотреть, сколько разных форм помещается в одном темном лавовом поле.

@@ -5,7 +5,7 @@ name: "Темпло-Майор"
 slug: "templo-mayor"
 status: "approved"
 countryId: "country_mexico"
-destinationType: "natural_area"
+destinationType: archaeological_site
 summary: "Темпло-Майор у площади Сокало показывает остатки главного храма Теночтитлана. Археологическая зона и музей помогают увидеть древний город под современным Мехико."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_mexico_templo_mayor/hero-generated-20261010-twenty-v1.webp", "alt": "Каменные основания Темпло-Майор на фоне исторических зданий центра Мехико", "hover": "Мехико: раскопанные сооружения Темпло-Майор"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_templo_mayor.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 У Темпло-Майор современный Мехико словно приоткрывает землю под своими улицами. Рядом с кафедральным собором и площадью Сокало видны каменные основания, лестницы и стены древнего храмового комплекса. Здесь находился главный храм Теночтитлана, столицы мешиков, которых обычно называют ацтеками.

@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_zapovednik_koksskomb_bejsin.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Сюда приезжают для прогулок с гидом и наблюдения за природой. Возможность встретить животное зависит от его поведения: главным содержанием поездки остаются лес и его естественная жизнь.

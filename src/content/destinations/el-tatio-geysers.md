@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_gejzery_el_tatio.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Утром в Эль-Татио белый пар поднимается над сухим высокогорным ландшафтом. Фумаролы и бассейны с горячей водой показывают геотермальную активность района.

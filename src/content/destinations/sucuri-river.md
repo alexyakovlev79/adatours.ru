@@ -5,7 +5,7 @@ slug: sucuri-river
 status: approved
 name: Река Сукури
 countryId: country_brazil
-destinationType: natural_area
+destinationType: river
 summary: Река Сукури в районе Бонито подходит для снорклинга среди рыб и подводных растений.
 searchAliases:
 - Рио-Сукури
@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_reka_sukuri.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 В Рио-Сукури знакомятся с речным ландшафтом во время спокойного движения по течению. Прозрачная вода позволяет наблюдать рыб, растения и светлое дно.

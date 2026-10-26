@@ -5,7 +5,7 @@ slug: barreirinhas
 status: approved
 name: Баррейриньяс
 countryId: country_brazil
-destinationType: city
+destinationType: town
 summary: Баррейриньяс стоит на реке Прегисас и служит базой для поездок к дюнам Ленсойс-Мараньенсес.
 searchAliases:
 - barrejrinyas
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_barrejrinyas.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Баррейриньяс связан с двумя главными направлениями путешествий по Мараньяну: песчаными дюнами Ленсойс-Мараньенсес и водными маршрутами по реке Прегисас.

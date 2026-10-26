@@ -5,7 +5,7 @@ slug: monteverde-santa-elena
 status: "approved"
 name: "Монтеверде & Санта Елена"
 countryId: "country_costa_rica"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Монтеверде известен облачным лесом, тропическими птицами и заповедником бабочек. В зеленых окрестностях городка можно встретить редкую птицу кетцаль."
 searchAliases: []
 hero: {"src":"/media/countries/costa-rica/featureBands-2-enhanced-20261002.webp","alt":"Зеленые лесные склоны Монтеверде с высоты, Коста-Рика", hover: "Монтеверде: густая растительность на холмистой местности"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-monteverde-oblachnye-lesa
 sourceSnapshot: "https://drive.google.com/file/d/144kNfv-7h6eiMElu3WL_b7VkaUjDdfNh/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Облачный лес и птица кетцаль: что посмотреть в Монтеверде, Коста-Рика

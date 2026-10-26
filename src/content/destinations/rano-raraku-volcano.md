@@ -5,7 +5,7 @@ name: Вулкан Рано-Рараку
 slug: rano-raraku-volcano
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: volcano
 summary: Рано-Рараку на острове Пасхи был каменоломней, где вырезали большинство моаи. На склонах потухшего вулкана сохранилось множество каменных фигур.
 searchAliases:
 - vulkan-rano-raraku
@@ -23,6 +23,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_vulkan_rano_raraku.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 Рано-Рараку находится на острове Пасхи, Рапа-Нуи. На склонах потухшего вулкана работала каменоломня, где вырезали большинство моаи. Многие фигуры остались здесь: часть стоит на склонах, другие лежат среди камня и травы.
 

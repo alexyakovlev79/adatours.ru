@@ -5,7 +5,7 @@ slug: vila-da-maromba
 status: approved
 name: Вила-да-Маромба
 countryId: country_brazil
-destinationType: city
+destinationType: village
 summary: Вила-да-Маромба в районе Висконди-де-Мауа связана с прогулками к водопадам и природным бассейнам.
 searchAliases:
 - Маромба
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_vila_da_maromba.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Знакомство с деревней соединяют с Марингой и другими остановками района. Водопады и естественные бассейны дают возможность провести часть дня у воды, а затем вернуться к небольшим поселениям среди зеленых склонов.

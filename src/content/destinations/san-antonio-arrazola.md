@@ -5,7 +5,7 @@ name: "Сан-Антонио-Арразола"
 slug: "san-antonio-arrazola"
 status: "approved"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: village
 summary: "Сан-Антонио-Арразола у подножия Монте-Альбана знакомит с алебрихе: фантастическими животными, которых местные мастера вырезают из дерева и расписывают вручную."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_mexico_san_antonio_arrazola/hero-generated-20261010-twenty-v1.webp", "alt": "Мастер расписывает деревянного алебрихе в Сан-Антонио-Арразоле, Мексика", "hover": "Арразола: яркая фигурка животного у красок и резных заготовок"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_san_antonio_arrazola.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Сан-Антонио-Арразоле знакомство с Оахакой продолжается в небольших мастерских. Поселок находится у подножия холма Монте-Альбан, а его знаменитые жители совсем маленькие: яркие деревянные звери с узорами на спинах, лапах и крыльях. Алебрихе рождаются из воображения мастеров, поэтому среди них встречаются и знакомые животные, и существа, для которых трудно подобрать название.

@@ -5,7 +5,7 @@ name: "Остров Марта (Магелланов пролив)"
 slug: "marta-island-strait-of-magellan"
 status: "approved"
 countryId: "country_chile"
-destinationType: "island"
+destinationType: island
 summary: "Остров Марта в Магеллановом проливе: колонии морских львов и морские птицы. Животных наблюдают с лодки во время прогулки из Пунта-Аренаса."
 searchAliases: ["остров Марта", "ostrov-marta-magellanov-proliv"]
 hero: {"src": "/media/destinations/destination_chile_ostrov_marta_magellanov_proliv/hero-generated-20261010-final-v1.webp", "alt": "Морские львы на низком скалистом берегу острова Марта в Магеллановом проливе, Чили", "hover": "Остров Марта: морские львы отдыхают на камнях у прибоя"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_chile_ostrov_marta_magellanov_proliv.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 Расположенный в водах Магелланова пролива на крайнем юге Чили, остров Марта — одно из интересных мест для знакомства с морской фауной Патагонии. Среди холодных океанических течений, суровых ветров и бескрайних водных просторов этот небольшой остров стал важным убежищем для многочисленных морских животных и птиц.

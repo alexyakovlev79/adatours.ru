@@ -5,7 +5,7 @@ name: Хуатахата
 slug: huatajata
 status: approved
 countryId: country_bolivia
-destinationType: city
+destinationType: village
 summary: Хуатахата — остановка на боливийском берегу озера Титикака. В маршрутах она связана со знакомством с озёрным побережьем и местными традициями.
 hero:
   src: /media/destinations/huatajata/hero-generated-20261009-followup-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_huatajata.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Поездка через Хуатахату дополняет посещение островов Титикаки и археологических объектов Боливии. Здесь главное впечатление создаёт береговая жизнь озера: вода, причалы и традиционные лодки. Состав посещений уточняется в программе конкретного тура.

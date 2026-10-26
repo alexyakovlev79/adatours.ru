@@ -5,7 +5,7 @@ slug: puerto-madero
 status: approved
 name: Пуэрто-Мадеро
 countryId: country_argentina
-destinationType: natural_area
+destinationType: district
 summary: Пуэрто-Мадеро показывает современную сторону Буэнос-Айреса. Старые доки и кирпичные складские здания соседствуют
   здесь с новыми домами, ресторанами и прогулочными набережными. Одним из заметных ориентиров стал мост Пуэнте-де-ла-Мухер.
 hero:
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_argentina_puerto_madero.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Прогулка вдоль воды даёт хороший контраст после старых кварталов Ла-Боки и Сан-Тельмо. Здесь можно рассматривать отражения зданий, переходить от одного берега дока к другому и выбрать кафе для остановки после экскурсии.

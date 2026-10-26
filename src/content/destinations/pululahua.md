@@ -5,7 +5,7 @@ name: Пулулагуа
 slug: pululahua
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: volcano
 summary: Пулулагуа — вулканический кратер недалеко от Кито. С обзорных точек видны внутренние склоны и зелёная долина, что делает его отдельной природной остановкой в поездке.
 hero:
   src: /media/destinations/pululahua/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_pululagua.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 С обзорных точек видны внутренние склоны и зелёная долина, что делает его отдельной природной остановкой в поездке.

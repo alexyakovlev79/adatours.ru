@@ -5,7 +5,7 @@ name: Дом Каса-Алиага в Лиме
 slug: casa-aliaga-lima
 status: approved
 countryId: country_peru
-destinationType: route_cluster
+destinationType: building
 summary: 'Каса-Алиага в Лиме знакомит с жилой архитектурой колониального города: историческими залами, антикварной
   мебелью и внутренними дворами.'
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Дом Каса-Алиага в Лиме
 sourceSnapshot: data/source-index/materials/destination_peru_casa_aliaga_lima.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Дом расположен в старой части перуанской столицы. В его интерьерах сохранились предметы обстановки и декоративные детали прошлых эпох. Посещение входит в обзорную программу по историческому центру Лимы.

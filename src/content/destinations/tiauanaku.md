@@ -5,7 +5,7 @@ slug: tiwanaku
 status: approved
 name: Тиауанаку
 countryId: country_bolivia
-destinationType: region
+destinationType: archaeological_site
 summary: Тиауанаку — древний город в Андах, духовный и политический центр одноименной цивилизации. Здесь можно увидеть Ворота Солнца, пирамиду Акапана и Каласасайю.
 searchAliases: []
 hero:
@@ -25,6 +25,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-tivanaku-tiauanaku-v
 sourceSnapshot: https://drive.google.com/file/d/1N7aAcLPUJXWl4BWveZ5NIg9_vi3WR9yp/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Тиванаку(Тиауанаку) – это руины одного из самых загадочных городов расположенных в Андах. До сих пор не смолкают споры о его назначении. Здесь Вы увидите единственные в своем роде знаменитые Ворота Солнца, пирамиду Акапана, "стоячий камень" Каласасайя и многие другие свидетельства древней культуры.

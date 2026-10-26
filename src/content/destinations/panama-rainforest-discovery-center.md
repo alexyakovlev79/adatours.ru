@@ -5,7 +5,7 @@ slug: panama-rainforest-discovery-center
 status: approved
 name: Центр изучения тропического леса Панамы
 countryId: country_panama
-destinationType: natural_area
+destinationType: attraction
 summary: Лесные тропы и смотровая башня над кронами деревьев возле Гамбоа. Центр помогает познакомиться с птицами
   и природой тропического леса.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Rainforest Discovery Center
 sourceSnapshot: data/source-index/materials/destination_panama_panama_rainforest_discovery_center.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 В Центре изучения тропического леса Панамы тропический лес можно рассмотреть на разных высотах. Сначала идут по тропам среди деревьев, затем поднимаются на смотровую башню. С верхней площадки открывается зеленый полог леса.

@@ -5,7 +5,7 @@ slug: larco-museum
 status: approved
 name: Музей Ларко
 countryId: country_peru
-destinationType: route_cluster
+destinationType: museum
 summary: 'Доколумбовое искусство Перу в Лиме: керамика моче, ткани, золотые и серебряные изделия в колониальном
   особняке.'
 hero:
@@ -20,6 +20,7 @@ searchAliases:
 - Larco Museum
 sourceSnapshot: data/source-index/materials/destination_peru_larco_museum.md
 updatedAt: '2026-10-13'
+navigationRole: sight
 ---
 
 Музей Ларко в Лиме знакомит с культурами Перу, существовавшими задолго до инков. Археолог Рафаэль Ларко Ойле основал музей в 1926 году. Коллекция размещена в колониальном особняке XVIII века, построенном на месте более раннего доколумбового сооружения.

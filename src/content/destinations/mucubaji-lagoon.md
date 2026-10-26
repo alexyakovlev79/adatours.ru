@@ -5,7 +5,7 @@ name: Лагуна Мукумбахи
 slug: mucubaji-lagoon
 status: approved
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: lake
 summary: Высокогорная лагуна Мукубажи в венесуэльских Андах, окруженная ландшафтами парамо и растениями фрайлехон.
 hero:
   src: /media/tours/venesuela-novye-konkistadory/itinerary-day-10-generated-20261008-next20.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_laguna_mukumbahi.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Лагуна Мукумбахи, также известная как Мукубажи, находится в горном районе штата Мерида. Озеро окружено открытыми ландшафтами парамо: травянистыми склонами, низкой растительностью и характерными розетками фрайлехона. Прохладный горный пейзаж заметно отличается от тропической саванны и побережья Венесуэлы.

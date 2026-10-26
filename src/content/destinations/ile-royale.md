@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_french_guiana_ostrov_royal.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Здесь природные пейзажи соседствуют с постройками бывшей каторжной колонии.

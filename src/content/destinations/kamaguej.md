@@ -5,7 +5,7 @@ slug: camaguey
 status: "approved"
 name: "Камагуэй"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Камагуэй известен площадями, лабиринтом узких улиц и глиняными кувшинами тинахонами. В городе сохранились исторические здания, работают музеи и театр."
 searchAliases: []
 hero: {"src":"/media/destinations/camaguey/hero-enhanced-20261004.webp","alt":"Узкая улица с разноцветными домами и церковной башней в Камагуэе, Куба", hover: "Камагуэй: яркие фасады вдоль улицы к церкви"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kamaguehj-na-ostrov
 sourceSnapshot: "https://drive.google.com/file/d/1FajpM3vODpWC_Egq433Yvoeqbv3DoHAo/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Камагуэй -красивый уголок Кубы

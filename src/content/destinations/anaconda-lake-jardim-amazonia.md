@@ -5,7 +5,7 @@ slug: anaconda-lake-jardim-amazonia
 status: approved
 name: Озеро Анаконда у лоджа «Жардим-да-Амазония»
 countryId: country_brazil
-destinationType: natural_area
+destinationType: lake
 summary: Озеро Анаконда — направление прогулки на каноэ по реке Клару в программе лоджа «Жардим-да-Амазония».
 searchAliases:
 - Anaconda Lake — Jardim da Amazônia
@@ -18,6 +18,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_anaconda_lake_jardim_amazonia.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 ## Водный маршрут из лесного лоджа

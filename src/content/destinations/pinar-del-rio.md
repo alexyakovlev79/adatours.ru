@@ -5,7 +5,7 @@ slug: pinar-del-rio
 status: "approved"
 name: "Пинар-дель-Рио"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Пинар-дель-Рио находится в табачном районе Кубы. Здесь знакомятся с производством сигар, а в окрестностях едут к известняковым горам, долине Виньялес и «Пещере индейцев»."
 searchAliases: []
 hero: {"src":/media/countries/cuba/featureBands-2-enhanced-20261002.webp,"alt":"Зеленая долина Виньялес с полями и округлыми скальными холмами, Куба", hover: "Виньялес: пальмы и сельские поля у высоких известняковых холмов"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/tury-v-provinciyu-pinar-del-rio-i-dolinu-viny
 sourceSnapshot: "https://drive.google.com/file/d/1_BG-4XTRKIhFpvLLoItJd7qjlkPYluPa/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Пинар-дель-Рио - живописный уголок Кубы

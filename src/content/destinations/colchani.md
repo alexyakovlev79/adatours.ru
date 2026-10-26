@@ -5,7 +5,7 @@ slug: colchani
 status: approved
 name: Кольчани
 countryId: country_bolivia
-destinationType: city
+destinationType: village
 summary: Кольчани знакомит с добычей и переработкой соли перед выездом на солончак Уюни.
 searchAliases:
 - Колчани
@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_kolchani.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Кольчани, поселок на маршруте к солончаку Уюни, связан с добычей и переработкой соли. Путешественники останавливаются здесь после знакомства с Уюни и Кладбищем поездов.

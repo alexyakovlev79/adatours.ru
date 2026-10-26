@@ -5,7 +5,7 @@ slug: san-juan-del-sur
 status: "approved"
 name: "Сан Хуан дель Сур"
 countryId: "country_nicaragua"
-destinationType: "resort"
+destinationType: resort
 summary: "Городок у тихоокеанских пляжей с видами с окружающих холмов. В Сан Хуан дель Сур приезжают ради серфинга, рыбалки и спокойного отдыха."
 searchAliases: []
 hero: {"src":/media/countries/nicaragua/featureBands-3-enhanced-20261002.webp,"alt":"Темные силуэты гамака и прибрежной пальмы на фоне оранжевого морского заката, Никарагуа", hover: "Никарагуа: гамак у моря в закатном свете"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-huan-del-sur-v-
 sourceSnapshot: "https://drive.google.com/file/d/1DjcbAD-LQ0M_1xZsM5U_4-BvcgkKy8Pv/view?usp=drivesdk"
 updatedAt: '2026-10-11'
 themes: ["theme_beach","theme_adventure","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Сан Хуан дель Сур - все для спокойного отдыха!

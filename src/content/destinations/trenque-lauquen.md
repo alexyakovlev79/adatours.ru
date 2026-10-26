@@ -22,6 +22,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_trenque_lauquen.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Тренке-Лаукен расположен на западе провинции Буэнос-Айрес. В путешествии по внутренним районам страны он дает возможность сменить ритм длинных переездов на городской вечер и знакомство с местной жизнью.

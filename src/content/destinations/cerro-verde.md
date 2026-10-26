@@ -9,7 +9,7 @@ searchAliases:
 - Серро Верде
 - Cuntetepeque
 countryId: country_el_salvador
-destinationType: natural_area
+destinationType: volcano
 summary: Серро-Верде — лесистый вулканический массив в Эль-Сальвадоре с прогулочными тропами и смотровыми площадками
   на Исалько и Санта-Ану. Это удобная остановка для знакомства с горными пейзажами Лос-Вулканес.
 hero:
@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_cerro_verde.md
 updatedAt: '2026-10-14'
+navigationRole: sight
 ---
 
 ## Лес над вулканами

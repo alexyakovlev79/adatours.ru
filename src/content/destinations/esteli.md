@@ -5,7 +5,7 @@ slug: esteli
 status: "approved"
 name: "Эстели"
 countryId: "country_nicaragua"
-destinationType: "city"
+destinationType: city
 summary: "Город премиальных сигар и археологических памятников. В окрестностях Эстели находятся наскальные рисунки Лас Пинтас и водопад La Estanzuela."
 searchAliases: []
 hero:
@@ -21,6 +21,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-ehsteli-v-nikaragua
 sourceSnapshot: "https://drive.google.com/file/d/1d-CxLYj9LEfOXOB_usehiVJMUiFJ34iD/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Эстели - археологический центр Никарагуа!

@@ -25,6 +25,7 @@ searchAliases:
 - "Inland Blue Hole"
 - "St. Herman’s Blue Hole National Park"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Прогулку по парку соединяют с посещением пещеры Святого Германа. Голубая дыра в парке Святого Германа и Большая голубая дыра на морском рифе являются разными объектами.

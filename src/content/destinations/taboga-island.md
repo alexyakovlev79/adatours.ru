@@ -19,6 +19,7 @@ searchAliases:
 - ostrov-taboga
 sourceSnapshot: data/source-index/materials/destination_panama_ostrov_taboga.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Табога находится в Панамском заливе и связан с морскими поездками из столицы. Остров объединяет пляжный отдых и прогулки по небольшим улицам, где сохранились следы колониальной застройки. Побережье и городская часть дополняют друг друга в пределах одного места.

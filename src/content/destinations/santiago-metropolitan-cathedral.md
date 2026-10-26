@@ -5,7 +5,7 @@ slug: santiago-metropolitan-cathedral
 status: approved
 name: Кафедральный собор Сантьяго
 countryId: country_chile
-destinationType: natural_area
+destinationType: religious_site
 summary: Кафедральный собор Сантьяго стоит у Пласа-де-Армас, в историческом центре столицы Чили. Его монументальный
   фасад и две башни образуют одну из самых узнаваемых архитектурных сторон главной городской площади.
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_chile_santiago_metropolitan_cathedral.md
 updatedAt: '2026-10-15'
+navigationRole: sight
 ---
 
 Собор — действующий католический храм и важный памятник истории Сантьяго. Знакомство с ним обычно сочетают с осмотром соседних исторических зданий, Центральной почты и муниципалитета.

@@ -5,7 +5,7 @@ slug: laguna-honda
 status: approved
 name: Лагуна Хонда
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Хонда входит в высокогорный маршрут по Боливии вместе с лагунами Каньяпа и Хедионда.
 searchAliases:
 - Лагуна Онда
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_laguna_honda.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Лагуна Хонда включена в программу по высокогорью Боливии. Ее посещают во время переезда через регион Липес по дороге к пустыне Силоли.

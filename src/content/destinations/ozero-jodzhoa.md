@@ -5,7 +5,7 @@ slug: lake-yojoa
 status: approved
 name: "Озеро Йоджоа"
 countryId: "country_honduras"
-destinationType: natural_area
+destinationType: lake
 summary: "Озеро вулканического происхождения между Тегусигальпой и Сан-Педро-Сулой, с птицами, прибрежными ресторанами и национальными парками."
 searchAliases: []
 hero:
@@ -28,6 +28,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-jodzhoa-johoa-v-go
 sourceSnapshot: "https://drive.google.com/file/d/1mUQZ0H29HUzPI8F4uCXskXSuIjXUzgtO/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_nature"]
+navigationRole: hub
 ---
 
 ### Озеро Йоджоа - самое большое озеро в Гондурасе!

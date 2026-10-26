@@ -5,7 +5,7 @@ slug: "congonhas"
 status: "approved"
 name: "Конгоньяс"
 countryId: "country_brazil"
-destinationType: "city"
+destinationType: city
 summary: "Исторический город Минас-Жерайса с памятниками бразильского колониального искусства."
 searchAliases: ["kongonyas"]
 themes: ["theme_culture"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_kongonyas.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Конгоньяс — одна из остановок на исторических маршрутах по штату Минас-Жерайс. Город связан с эпохой добычи золота, когда в глубине Бразилии возникали поселения с каменными улицами, храмами и домами под черепичными крышами. Его архитектура и религиозное искусство раскрывают другую сторону страны, вдали от пляжных курортов.

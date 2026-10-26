@@ -5,7 +5,7 @@ name: Чивай
 slug: chivay
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: town
 summary: Чивай в Перу, город в районе каньона Колка с горным окружением и горячими источниками.
 hero:
   src: /media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/chivay-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - chivaj
 sourceSnapshot: data/source-index/materials/destination_peru_chivaj.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Чивай связан с путешествиями к каньону Колка. Город позволяет остановиться в горном районе перед поездками к смотровым площадкам. Его окружение раскрывает андский пейзаж, который отличается от прибрежной Лимы и крупных городов страны.

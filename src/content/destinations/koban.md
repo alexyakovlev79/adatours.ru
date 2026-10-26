@@ -26,6 +26,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kaban-v-gvatemale"
 sourceSnapshot: "https://drive.google.com/file/d/1brM55rY5FyWDa3N2JWDdw1VPeI913GFa/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_gastronomy_wine", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Кобан - центр Альта-Верапаса

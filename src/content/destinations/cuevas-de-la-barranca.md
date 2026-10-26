@@ -5,7 +5,7 @@ name: Куэвас-де-ла-Барранка
 slug: cuevas-de-la-barranca
 status: approved
 countryId: country_el_salvador
-destinationType: natural_area
+destinationType: cave
 summary: Куэвас-де-ла-Барранка — прибрежные пещеры, которые осматривают в морских программах по заливу Фонсека. С воды они дополняют пейзаж скальных берегов восточного Сальвадора.
 hero:
   src: /media/destinations/cuevas-de-la-barranca/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_kuevas_de_la_barranka.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 С воды они дополняют пейзаж скальных берегов восточного Сальвадора.

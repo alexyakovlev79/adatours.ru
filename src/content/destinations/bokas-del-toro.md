@@ -5,7 +5,7 @@ slug: bocas-del-toro
 status: "approved"
 name: "Бокас-дель-Торо"
 countryId: "country_panama"
-destinationType: "island"
+destinationType: island
 summary: "Архипелаг Панамы с пальмовыми лесами, пляжами и коралловыми рифами. В прозрачной воде можно наблюдать скатов, омаров и тропических рыб."
 searchAliases: []
 hero: {"src": "/media/destinations/bocas-del-toro/hero-enhanced-20261005.webp", "alt": "Зеленый остров Бокас-дель-Торо в окружении бирюзовых рифов и синего моря, Панама", "hover": "Бокас-дель-Торо в Панаме: остров с воздуха и облако над лесом"}
@@ -39,6 +39,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-arhipelag-bokas-del-toro
 sourceSnapshot: "https://drive.google.com/file/d/1zJkidIhT86FM3pF_tZ99nnb58N72m-S9/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach", "theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Коралловые рифы и дельфины: что посмотреть на Бокас-дель-Торо, Панама

@@ -10,7 +10,7 @@ searchAliases:
 - Ataco
 - Консепсьон-де-Атако
 countryId: country_el_salvador
-destinationType: city
+destinationType: town
 summary: Атако — горный город на Дороге цветов в Эль-Сальвадоре, известный муралами, мощеными улицами и текстильными
   ремеслами. В окрестностях выращивают кофе, а прогулки по центру удобно сочетать с знакомством с местной кухней.
 hero:
@@ -29,6 +29,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_concepcion_de_ataco.md
 updatedAt: '2026-10-14'
+navigationRole: hub
 ---
 
 ## Цветной город Дороги цветов

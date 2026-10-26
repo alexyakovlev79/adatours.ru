@@ -5,7 +5,7 @@ slug: araras-eco-lodge
 status: approved
 name: Эколодж «Арарас»
 countryId: country_brazil
-destinationType: natural_area
+destinationType: resort
 summary: Эколодж «Арарас» — база природных маршрутов Северного Пантанала у Транспантанейры.
 searchAliases:
 - Araras Pantanal Eco Lodge
@@ -18,6 +18,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_araras_eco_lodge.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 ## Несколько дней среди природы Пантанала

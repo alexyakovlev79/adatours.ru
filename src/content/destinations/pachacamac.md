@@ -5,7 +5,7 @@ slug: "pachacamac"
 status: "approved"
 name: "Пачакамак"
 countryId: "country_peru"
-destinationType: "natural_area"
+destinationType: archaeological_site
 summary: "Пачакамак — один из важнейших археологических комплексов Перу, расположенный примерно в 30 километрах к юго-востоку от Лимы, неподалёку от побережья Тихого океана."
 searchAliases: ["pachakamak"]
 themes: ["theme_culture"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_peru_pachakamak.md"
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 На протяжении многих столетий это место служило крупным религиозным центром, куда стекались паломники из разных уголков древнего Андского мира.

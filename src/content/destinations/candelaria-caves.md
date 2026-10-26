@@ -5,7 +5,7 @@ name: Пещера Канделярия
 slug: candelaria-caves
 status: approved
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: cave
 summary: Пещера Канделярия в Гватемале, подземная система с просторными галереями и духовным значением для культуры майя.
 hero:
   src: /media/tours/luchshee-v-gvatemale/candelaria-cave-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - peschera-kandelyariya
 sourceSnapshot: data/source-index/materials/destination_guatemala_peschera_kandelyariya.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 В пещерной системе Канделярия в Гватемале природные подземные пространства связаны с культурой майя. В традиционных представлениях пещеры служили входом в Шибальбу, подземный мир. Это придает прогулке смысл за пределами осмотра известняка: место связано с обрядами и отношением человека к скрытому под землей пространству.

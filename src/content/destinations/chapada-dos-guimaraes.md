@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_gorod_shapada_dus_gimarajns.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Город Шапада-дус-Гимарайнс посещают во время поездок из района Куябы. В программах предусмотрено знакомство с историческим центром и Геодезической меткой Южной Америки.

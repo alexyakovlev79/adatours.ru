@@ -5,7 +5,7 @@ name: Серро-Кастильо (Айсен)
 slug: cerro-castillo
 status: approved
 countryId: country_chile
-destinationType: route_cluster
+destinationType: region
 summary: 'Горный район Айсена на Карретера-Аустраль: темные скальные вершины, лесистые склоны и долина реки Ибаньес.
   Поселок Вилья-Серро-Кастильо лежит у дороги и служит отправной точкой для пеших маршрутов.'
 hero:
@@ -23,6 +23,7 @@ searchAliases:
 sourceUrl: https://chile.travel/en/attractions/cerro-castillo/
 sourceSnapshot: data/source-index/materials/destination_chile_cerro_castillo.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Серро-Кастильо находится в регионе Айсен на юге Чили, рядом с долиной реки Ибаньес и дорогой Карретера-Аустраль. Название объединяет горный массив, национальный парк и расположенный у дороги поселок Вилья-Серро-Кастильо. Эта страница посвящена району как остановке на автомобильном маршруте.

@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_ostrov_isabela.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В маршрутах здесь сочетаются морские прогулки, прибрежные природные участки и знакомство с вулканическим ландшафтом.

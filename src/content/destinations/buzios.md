@@ -48,6 +48,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-buzios-v-b
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-na-morskoj-kurort-buzios-v-brazilii__24ce5ef5.md
 updatedAt: 2026-09-24
 themes: ["theme_beach","theme_diving","theme_adventure"]
+navigationRole: hub
 ---
 
 

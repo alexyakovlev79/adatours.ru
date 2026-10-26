@@ -5,7 +5,7 @@ slug: tulpetlac
 status: approved
 name: Тульпетлак
 countryId: country_mexico
-destinationType: city
+destinationType: district
 summary: Тульпетлак в Экатепеке известен святилищем Пятого явления Богоматери Гваделупской и паломнической традицией.
 hero:
   src: /media/tours/mexico-religious-journey/tulpetlac-corrected-generated-20261011-v1.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_tulpetlac.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Санта-Мария-Тульпетлак находится в Экатепеке, в штате Мехико. Паломническая история этого места связана с Хуаном Бернардино, дядей Хуана Диего: по гваделупскому преданию, Богоматерь явилась ему и исцелила от болезни.

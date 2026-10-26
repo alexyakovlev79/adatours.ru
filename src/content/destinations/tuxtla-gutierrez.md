@@ -19,6 +19,7 @@ searchAliases:
 - tustla-guterres
 sourceSnapshot: data/source-index/materials/destination_mexico_tustla_guterres.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Тустла-Гутьеррес является столицей Чьяпаса и важной точкой поездок по штату. Город связан с воздушными маршрутами и дальнейшими дорогами к каньону Сумидеро и высокогорным поселениям. Его центр включает площади, парки и культурные учреждения.

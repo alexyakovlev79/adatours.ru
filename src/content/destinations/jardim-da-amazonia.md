@@ -5,7 +5,7 @@ slug: jardim-da-amazonia
 status: approved
 name: Лодж «Жардим-да-Амазония»
 countryId: country_brazil
-destinationType: natural_area
+destinationType: resort
 summary: «Жардим-да-Амазония» — лесной лодж и природная территория на южной границе Амазонии в Мату-Гросу.
 searchAliases:
 - Jardim d’Amazonia
@@ -20,6 +20,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_jardim_da_amazonia.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 ## Лес и вода южной Амазонии

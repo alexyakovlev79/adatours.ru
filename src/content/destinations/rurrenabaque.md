@@ -5,7 +5,7 @@ slug: rurrenabaque
 status: approved
 name: Рурренабак
 countryId: country_bolivia
-destinationType: city
+destinationType: town
 summary: Рурренабак, отправная точка путешествия по боливийской Амазонии, соединяет авиаперелет с лодочными маршрутами по Бени.
 searchAliases:
 - rurrenabak
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_rurrenabak.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Рурренабак входит в программу по боливийской Амазонии. После прибытия путешественники проходят через центр города к речному порту.

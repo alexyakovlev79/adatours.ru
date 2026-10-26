@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_nacionalnyj_park_madidi.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Национальный парк Мадиди включен в маршруты по боливийской Амазонии. Из района Сан-Мигель-дель-Бала к нему отправляются на лодке по Бени, затем путешествие продолжается по реке Туичи. На берегах наблюдают птиц и млекопитающих тропического леса.

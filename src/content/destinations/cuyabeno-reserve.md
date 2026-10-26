@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_zapovednik_kuyabeno.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Затопленные леса, лагуны и речные переходы определяют характер знакомства с этой частью страны.

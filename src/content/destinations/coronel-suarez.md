@@ -23,6 +23,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_coronel_suarez.md
 updatedAt: '2026-10-20'
+navigationRole: hub
 ---
 
 Коронель-Суарес находится в провинции Буэнос-Айрес. В аграрном путешествии он помогает связать знакомство с внутренними земледельческими районами и дальнейший выезд к Сьерра-де-ла-Вентана.

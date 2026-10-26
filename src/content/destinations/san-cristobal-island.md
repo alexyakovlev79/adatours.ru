@@ -5,7 +5,7 @@ name: "Остров Сан-Кристобаль"
 slug: "san-cristobal-island"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: island
 summary: "Сан-Кристобаль на Галапагосах соединяет морских львов у берега, зеленые возвышенности и морские выходы к скалам Леон-Дормидо."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_san_cristobal_island/hero-generated-20261010-editorial-v1.webp", "alt": "Две скальные части Леон-Дормидо в океане у острова Сан-Кристобаль", "hover": "Сан-Кристобаль: скалы Леон-Дормидо среди синей воды"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_san_cristobal_island.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 Сан-Кристобаль знакомит с Галапагосами через море и островную жизнь. В Пуэрто-Бакерисо-Морено, столице архипелага, можно гулять у воды и наблюдать морских львов. Они стали одними из самых узнаваемых обитателей местного побережья. Дальше за городом начинаются пляжи, природные тропы и зеленые возвышенности.

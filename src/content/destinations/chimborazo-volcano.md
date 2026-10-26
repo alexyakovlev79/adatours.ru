@@ -5,7 +5,7 @@ name: Вулкан Чимборасо
 slug: chimborazo-volcano
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: volcano
 summary: Чимборасо — один из наиболее узнаваемых вулканов Эквадора. В поездках по высокогорью его окрестности представляют пейзажи открытых склонов и заснеженной вершины.
 hero:
   src: /media/destinations/chimborazo-volcano/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_chimboraso.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В поездках по высокогорью его окрестности представляют пейзажи открытых склонов и заснеженной вершины.

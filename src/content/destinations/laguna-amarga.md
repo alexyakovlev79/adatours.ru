@@ -5,7 +5,7 @@ name: Лагуна Амарга
 slug: laguna-amarga
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Амарга входит в маршруты по национальному парку Торрес-дель-Пайне и знакомит с озерными пейзажами
   Патагонии.
 hero:
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_laguna_amarga.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Лагуна Амарга находится в районе национального парка Торрес-дель-Пайне. Остановка у воды входит в автомобильные маршруты по его озерам и горным пейзажам.

@@ -5,7 +5,7 @@ slug: san-jose
 status: "approved"
 name: "Сан Хосе"
 countryId: "country_costa_rica"
-destinationType: "city"
+destinationType: city
 summary: "Сан-Хосе, столица Коста-Рики, знакомит с Национальным театром, музеями золота и нефрита. В окрестностях находятся кофейные плантации, фермы бабочек и вулканы."
 searchAliases: []
 hero: {"src": "/media/destinations/san-jose/hero-enhanced-20261004.webp", "alt": "Часовая башня с белым циферблатом на фоне синего неба, Сан-Хосе, Коста-Рика", "hover": "Сан-Хосе в Коста-Рике: крупный план часов на каменной башне"}
@@ -37,6 +37,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-hose-stolicu-ko
 sourceSnapshot: "https://drive.google.com/file/d/105Xdj4lmpqMSIezWtP8eUQiTYP1YzJsa/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_gastronomy_wine", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Театры, музеи и колониальные здания: что посмотреть в Сан-Хосе

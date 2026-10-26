@@ -5,7 +5,7 @@ slug: el-penol
 status: approved
 name: Реплика старого Эль-Пеньола
 countryId: country_colombia
-destinationType: route_cluster
+destinationType: attraction
 summary: 'Эль-Пеньол в окрестностях Гуатапе: история старого поселения и воссозданная колониальная архитектура.'
 hero:
   src: /media/destinations/el-penol/hero-generated-20261015-y26-005-v1.webp
@@ -17,6 +17,7 @@ relatedDestinations:
 - destination_colombia_el_penon_de_guatape
 sourceSnapshot: data/source-index/materials/destination_colombia_el_penol.md
 updatedAt: '2026-10-15'
+navigationRole: sight
 ---
 
 Эль-Пеньол входит в экскурсионный маршрут из Медельина в Гуатапе. Здесь знакомятся с историей поселения и осматривают копию старого города с его колониальной архитектурой.

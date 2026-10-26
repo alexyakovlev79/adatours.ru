@@ -5,7 +5,7 @@ name: "Остров Эспаньола"
 slug: "espanola-island"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: island
 summary: "Эспаньола на юге Галапагосов привлекает галапагосскими альбатросами, морскими игуанами и белым пляжем залива Гарднер."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_espanola_island/hero-generated-20261010-editorial-v1.webp", "alt": "Галапагосский альбатрос на низком скалистом побережье Эспаньолы — иллюстрация"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_espanola_island.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 Эспаньола — один из островов Галапагосов, где прогулка превращается в наблюдение за животными почти с первых шагов. Это старый, низкий и сухой остров на юге архипелага. Его скалистые берега, небольшие участки растительности и океан служат домом для птиц, морских игуан и морских львов.

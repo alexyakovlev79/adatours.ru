@@ -17,6 +17,7 @@ themes: ["theme_nature"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_masaya_volcano_national_park.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Масая — встреча с вулканом с близкого расстояния. Над кратером поднимается газовый шлейф, а открытые склоны показывают, как вулкан меняет окружающий ландшафт. Вместо густого леса здесь видны камень, застывшие вулканические породы и широкая чаша кратера.

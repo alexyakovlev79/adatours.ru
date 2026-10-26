@@ -5,7 +5,7 @@ slug: "ibera"
 status: "approved"
 name: "Ибера"
 countryId: "country_argentina"
-destinationType: "natural_area"
+destinationType: wetland
 summary: "Ибера — один из крупнейших и наиболее впечатляющих природных регионов Аргентины, расположенный на северо-востоке страны, в провинции Корриентес. Бескрайние болота, лагуны, небольшие острова и водные протоки образуют уникальную экосистему, которую часто называют одним из главных природных сокровищ Аргентины."
 searchAliases: ["Iberá", "Esteros del Iberá"]
 themes: ["theme_wildlife", "theme_nature"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_ibera.md"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Название Ибера происходит из языка гуарани и означает «сверкающие воды» — точное и поэтичное описание этого края. Под лучами солнца поверхность многочисленных лагун переливается серебром и золотом, отражая небо, тростники и окружающую растительность.

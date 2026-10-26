@@ -5,7 +5,7 @@ slug: puerto-natales-torres-del-paine
 status: approved
 name: "Пуэрто Наталес & Торрес дель Пайне"
 countryId: "country_chile"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Пуэрто Наталес и Торрес дель Пайне: фьорд Ультима Эсперанса, пещера Милодон, горные озера, ледники и водопады Чилийской Патагонии."
 searchAliases: []
 hero:
@@ -36,6 +36,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-v-patagonii-chili-torres-del-pajne
 sourceSnapshot: "https://drive.google.com/file/d/1w8znxirsdWhM77M5csL9oU5Sg1oUJenx/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_nature", "theme_adventure"]
+navigationRole: hub
 ---
 
 ## Гранитные башни и ледник Грей: что посмотреть в Торрес-дель-Пайне, Чили

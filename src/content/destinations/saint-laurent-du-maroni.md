@@ -20,6 +20,7 @@ searchAliases:
 - sen-loran-dyu-maroni
 sourceSnapshot: data/source-index/materials/destination_french_guiana_sen_loran_dyu_maroni.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Сен-Лоран-дю-Марони находится на французской стороне реки, которая отделяет Французскую Гвиану от Суринама. Напротив расположен суринамский город Альбина. Речная переправа связывает 2 страны, поэтому город часто появляется в путешествиях по Гвианскому региону.

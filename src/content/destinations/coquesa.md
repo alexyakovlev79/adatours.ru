@@ -5,7 +5,7 @@ slug: coquesa
 status: approved
 name: Кокеса
 countryId: country_bolivia
-destinationType: city
+destinationType: village
 summary: Кокеса входит в маршрут по району солончака Уюни и вулкана Тунупа.
 searchAliases:
 - kokesa
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_kokesa.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Кокеса, поселение в районе солончака Уюни, включено в маршрут по высокогорной Боливии. Посещение этой остановки соединяют со знакомством с местными горными и соляными ландшафтами.

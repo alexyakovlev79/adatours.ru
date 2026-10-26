@@ -5,7 +5,7 @@ slug: montezuma
 status: "approved"
 name: "Монтесума"
 countryId: "country_costa_rica"
-destinationType: "resort"
+destinationType: resort
 summary: "Монтесума, деревушка на берегу океана, известна пляжами, водопадами и богемной атмосферой. Ее старинные деревянные дома привлекают художников и путешественников."
 searchAliases: []
 hero: {"src":"/media/destinations/montezuma/hero-enhanced-20261003.webp","alt":"Два капуцина с темной шерстью и светлыми лицами в Монтесуме, Коста-Рика", hover: "Монтесума: пара обезьян среди тропических листьев"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-montesuma-v-kosta-rike-po
 sourceSnapshot: "https://drive.google.com/file/d/1l__E6-3qQ1OCnBJ1NSfGYb3o_t-T67Tm/view?usp=drivesdk"
 updatedAt: '2026-10-11'
 themes: ["theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Монтесума -живописная деревушка в Коста Рике

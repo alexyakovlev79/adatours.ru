@@ -5,7 +5,7 @@ name: Река Петроуэ
 slug: petrohue-river
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: river
 summary: Река Петроуэ протекает среди лесов и вулканических ландшафтов Озерного края Чили. Ее прозрачная вода образует
   пороги и каскады.
 hero:
@@ -18,6 +18,7 @@ searchAliases:
 - Река Петроуэ
 sourceSnapshot: data/source-index/materials/destination_chile_petrohue_river.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Участок у водопадов входит в природные маршруты национального парка Висенте-Перес-Росалес. В программе P109 рекой любуются с оборудованных троп во время поездки из Пуэрто-Вараса.

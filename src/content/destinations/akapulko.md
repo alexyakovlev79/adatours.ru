@@ -5,7 +5,7 @@ slug: acapulco
 status: "approved"
 name: "Акапулько"
 countryId: "country_mexico"
-destinationType: "resort"
+destinationType: city
 summary: "Акапулько предлагает пляжи, морские прогулки и вечерние шоу. Здесь можно увидеть форт Сан-Диего, площадь Сокало и ныряльщиков со скалы Ла-Кебрада."
 searchAliases: []
 hero: {"src":"/media/destinations/acapulco/hero-enhanced-20261004.webp","alt":"Прогулочное судно и небольшие лодки в синей бухте перед прибрежными кварталами Акапулько, Мексика", hover: "Акапулько: лодки в бухте перед городским берегом"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-akapulko-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1PUHD0aM9wUq6b-1wpJndMhVLIEqk_yTz/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_culture"]
+navigationRole: hub
 ---
 
 ## Акапулько - туристический центр Мексики

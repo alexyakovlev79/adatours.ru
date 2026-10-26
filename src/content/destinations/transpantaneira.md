@@ -18,6 +18,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_transpantaneira.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 ## Дорога через водно-болотные угодья

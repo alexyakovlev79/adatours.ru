@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_vassuoras_lensojs_maranenses.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Вассуорас посещают во время лодочной поездки по реке Прегисас. Этот район в программе также называют «Маленькими Ленсойсами».

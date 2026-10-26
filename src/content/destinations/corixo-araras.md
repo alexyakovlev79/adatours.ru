@@ -5,7 +5,7 @@ slug: corixo-araras
 status: approved
 name: Река Коришу у эколоджа «Арарас»
 countryId: country_brazil
-destinationType: natural_area
+destinationType: river
 summary: Коришу — альтернативный водный маршрут эколоджа «Арарас», который используют при недоступности лагеря Sentinela.
 searchAliases:
 - Corixo River — Araras
@@ -18,6 +18,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_corixo_araras.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 ## Альтернатива при смене природных условий

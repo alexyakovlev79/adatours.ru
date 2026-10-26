@@ -23,6 +23,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_general_arenales.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Хенераль-Ареналес — город и одноименный муниципалитет провинции Буэнос-Айрес. В деловом путешествии сюда едут за пределы столичной Аргентины: к полям, хозяйствам и практической работе аграриев.

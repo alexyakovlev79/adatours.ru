@@ -5,7 +5,7 @@ name: Рорайма
 slug: mount-roraima
 status: approved
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: mountain
 summary: Столовая гора Гвианского нагорья с отвесными стенами, облаками у края плато и необычными скальными ландшафтами
   наверху.
 hero:
@@ -26,6 +26,7 @@ gallery:
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_rorajma.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Рорайма — одна из узнаваемых столовых гор Гвианского нагорья. Плоская вершина поднята над саванной отвесными скальными стенами, а облака часто скрывают часть уступов. Снизу гора выглядит как отдельный мир, резко отличающийся от открытых пространств вокруг.

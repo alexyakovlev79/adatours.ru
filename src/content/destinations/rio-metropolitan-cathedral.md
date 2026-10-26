@@ -5,7 +5,7 @@ slug: rio-metropolitan-cathedral
 status: approved
 name: Кафедральный собор Сан-Себастьян
 countryId: country_brazil
-destinationType: natural_area
+destinationType: religious_site
 summary: Кафедральный собор Сан-Себастьян в центре Рио-де-Жанейро узнают по конусообразному зданию и высоким витражам.
   Его современная архитектура заметно отличается от колониальных церквей старого города.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_brazil_rio
 sourceSnapshot: data/source-index/materials/destination_brazil_rio_metropolitan_cathedral.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 Снаружи собор напоминает большой бетонный конус. Внутри впечатление меняется: вертикальные полосы витражей поднимаются к верхней части здания, а естественный свет наполняет пространство цветом. Круглая планировка позволяет воспринимать интерьер как единый зал.

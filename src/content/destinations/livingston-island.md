@@ -18,6 +18,7 @@ searchAliases:
 - Livingston Island
 sourceSnapshot: data/source-index/materials/destination_antarctica_livingston_island.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Ливингстон входит в Южные Шетландские острова, между островами Сноу и Гринвич. Большую часть острова занимают снег и лед. У побережья открываются скалистые участки, куда выходят морские животные.

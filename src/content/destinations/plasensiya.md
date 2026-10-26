@@ -37,6 +37,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-kurort-plasensiya-v-beliz
 sourceSnapshot: https://drive.google.com/file/d/1PVL85ihPpf8cnI5YcgjkJl-YHYOw5ePw/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 Этот морской курорт расположен в 75 км южнее города Дангрига на небольшом полуострове и известен своей живописной лагуной, вдоль которой протянулось 5 км песчаных пляжей - это лучшие пляжи в Белизе.

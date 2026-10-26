@@ -20,6 +20,7 @@ searchAliases:
 - Hannah Point
 sourceSnapshot: data/source-index/materials/destination_antarctica_hannah_point.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Мыс Ханна расположен на южном берегу острова Ливингстон. Узкий каменистый выступ поднимается над морем; рядом лежат пляжи бухты Уокер. На небольшом участке соседствуют скалы, вулканический пепел и прибрежная растительность.

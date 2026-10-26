@@ -5,7 +5,7 @@ name: "Койоакан"
 slug: "coyoacan"
 status: "approved"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: district
 summary: "Койоакан на юге Мехико приглашает гулять между старыми площадями, колониальными домами, музеями и небольшими кафе."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_mexico_coyoacan/hero-generated-20261010-batch-four-v1.webp", "alt": "Тенистая мощёная площадь и цветные фасады Койоакана", "hover": "Койоакан: деревья и колониальные дома вокруг площади"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_coyoacan.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 В Койоакане приятно уйти с большой городской улицы к площади и продолжить знакомство с Мехико пешком. Старые дома, тенистые деревья и небольшие кафе создают уютные места для остановки. В центре района соседствуют площадь Идальго и сад Сентенарио. Вокруг них удобно начать прогулку и выбрать, куда идти дальше.

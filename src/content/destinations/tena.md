@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_tena.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Здесь начинаются речные и лесные программы, в том числе маршруты с рафтингом.

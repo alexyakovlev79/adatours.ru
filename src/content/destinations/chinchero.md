@@ -5,7 +5,7 @@ name: Чинчеро
 slug: chinchero
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: town
 summary: Чинчеро в Священной долине Перу, поселение с инкским наследием, традиционными ремеслами и ярмаркой.
 hero:
   src: /media/excursions/svyashchennaya-dolina-premium-gruppovoj-tur/gallery-0-src-enhanced-20261008.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_peru_chinchero.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Чинчеро находится в районе Священной долины инков возле Куско. Поселение известно традиционными ремеслами и археологическим наследием. Здесь сохранились основания и остатки дворца инки Тупака Юпанки, поверх которых позднее возникли колониальные здания. Такое соседство помогает проследить несколько этапов истории одного места.

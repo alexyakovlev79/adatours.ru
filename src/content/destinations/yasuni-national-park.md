@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_nacionalnyj_park_yasuni.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В маршрутах по этому району знакомство с природой связано с речными переходами и прогулками в тропическом лесу.

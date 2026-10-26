@@ -5,7 +5,7 @@ slug: french-guiana-amazon-rainforest
 status: approved
 name: "Гвианская Амазония"
 countryId: "country_french_guiana"
-destinationType: "natural_area"
+destinationType: national_park
 summary: "Национальный парк Гвианская Амазония во Французской Гвиане: тропические леса, реки и богатый животный мир. Доступ в парк по воде или по воздуху."
 searchAliases: []
 hero:
@@ -22,6 +22,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-park-gvianskaya-amazoniya
 sourceSnapshot: "https://drive.google.com/file/d/1Cri43PRjUmLjCqjJxdH9IxP-knu4ygCk/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_nature"]
+navigationRole: hub
 ---
 
 ## Парк Гвианская Амазония — самый большой парк во Французской Гвиане

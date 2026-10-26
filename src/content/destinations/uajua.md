@@ -8,7 +8,7 @@ searchAliases:
   - Хвайуа
   - Juayua
 countryId: country_el_salvador
-destinationType: city
+destinationType: town
 summary: >-
   Уайуа — небольшой горный город Эль-Сальвадора, основанный в 1577 году. Он известен колониальной архитектурой, собором со статуей «Черного Христа», гастрономическим фестивалем и маршрутами к водопадам и кофейным плантациям.
 hero:
@@ -51,6 +51,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-uajua-v-ehl-salvador
 sourceSnapshot: https://drive.google.com/file/d/1HzFg1IPvZrWBO3zHAYBoGGCLofi6Pd7T/view?usp=drivesdk
 updatedAt: 2026-10-02
 themes: ["theme_culture", "theme_events", "theme_gastronomy_wine", "theme_nature"]
+navigationRole: hub
 ---
 
 Уайуа, который местные жители называют Хвайуа, — небольшой город в горах Эль-Сальвадора. Он основан в 1577 году.

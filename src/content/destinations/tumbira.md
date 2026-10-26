@@ -5,7 +5,7 @@ slug: tumbira
 status: approved
 name: Тумбира
 countryId: country_brazil
-destinationType: city
+destinationType: village
 summary: Тумбира, прибрежная община в Амазонии, входит в маршруты по Риу-Негру со знакомством с местной жизнью.
 searchAliases: []
 themes:
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_tumbira.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Общину Тумбира посещают вместе с гидом во время путешествия по Риу-Негру. Эта остановка позволяет увидеть населенные берега реки и познакомиться с жизнью местных жителей.

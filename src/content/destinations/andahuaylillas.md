@@ -5,7 +5,7 @@ name: Андагуаилильяс
 slug: andahuaylillas
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: village
 summary: Небольшое поселение возле Куско, известное церковью Сан-Педро и ее богатым внутренним убранством.
 hero:
   src: /media/tours/tur-v-peru-i-braziliyu/andahuaylillas-place-generated-20261008.webp
@@ -16,6 +16,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_peru_andaguaililyas.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Андагуаилильяс находится на дороге из Куско в сторону Пуно. Главный памятник поселения — церковь Сан-Педро-Апостол на центральной площади. Скромный внешний облик здания контрастирует с насыщенным внутренним убранством: росписями, декоративными деталями и алтарями.

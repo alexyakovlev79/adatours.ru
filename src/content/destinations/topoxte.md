@@ -5,7 +5,7 @@ name: Топоксте
 slug: topoxte
 status: approved
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Топоксте, археологический памятник майя в Петене, находится на острове в лагуне Якша. Руины среди деревьев дополняют знакомство с более крупным комплексом Якша на соседнем берегу.
 hero:
   src: /media/destinations/topoxte/hero-generated-20261008.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_topokste.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 До острова добираются на лодке, затем гуляют по археологической территории. Такое посещение соединяет древние постройки с озерным пейзажем северной Гватемалы.

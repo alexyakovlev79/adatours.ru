@@ -5,7 +5,7 @@ name: "Пунта-Эспиноза"
 slug: "punta-espinoza"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: natural_area
 summary: "Пунта-Эспиноза на Фернандине позволяет пройти по лавовому берегу среди морских игуан и увидеть нелетающих бакланов."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_fernandina_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские игуаны у воды на Пунта-Эспинозе — иллюстрация", "hover": "Пунта-Эспиноза на Фернандине позволяет пройти по лавовому берегу среди морских игуан и увидеть нелетающих бакланов."}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_punta_espinoza.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 На Пунта-Эспинозе сначала приходится научиться различать игуан и камни. Темные ящерицы лежат на лаве у воды, сбиваются в группы и поднимают головы к солнцу. Этот мыс на северо-востоке Фернандины позволяет наблюдать за морскими игуанами прямо на их прибрежной территории.

@@ -5,7 +5,7 @@ slug: monserrat
 status: approved
 name: Монсеррат
 countryId: country_argentina
-destinationType: route_cluster
+destinationType: district
 summary: Монсеррат, исторический район Буэнос-Айреса, знакомит с ранней застройкой столицы, церквями и общественными
   зданиями. Здесь история города читается в фасадах, старых кварталах и небольших деталях улиц.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_argentina_buenos_aires
 sourceSnapshot: data/source-index/materials/destination_argentina_monserrat.md
 updatedAt: '2026-10-12'
+navigationRole: hub
 ---
 
 В Монсеррате стоит смотреть по сторонам: декоративные решетки, каменные порталы и церковные фасады помогают почувствовать возраст города. В историческом квартале находятся Мансана-де-лас-Лусес, церковь Сан-Игнасио и комплекс Сан-Франсиско.

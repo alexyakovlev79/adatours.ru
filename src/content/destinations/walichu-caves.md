@@ -5,7 +5,7 @@ slug: walichu-caves
 status: approved
 name: Пещеры Валичу
 countryId: country_argentina
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Пещеры и скальные укрытия Валичу у озера Архентино знакомят с древней историей Патагонии неподалеку от Эль-Калафате.
 hero:
   src: /media/destinations/walichu-caves/hero-word-20261011-p107-v1-enhanced-20261011-next50-v1.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_argentina_walichu_caves.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Пещеры Валичу находятся у озера Архентино, в окрестностях Эль-Калафате. Скальные укрытия и утесы на берегу сохраняют следы древних обитателей Патагонии. Здесь история людей читается на фоне открытого степного пространства, светлого камня и воды большого ледникового озера.

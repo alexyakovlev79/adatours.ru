@@ -5,7 +5,7 @@ name: Мачачи
 slug: machachi
 status: approved
 countryId: country_ecuador
-destinationType: city
+destinationType: town
 summary: Мачачи находится в межгорной долине к югу от Кито. Город служит ориентиром в маршрутах к вулканам и высокогорным природным районам Эквадора.
 hero:
   src: /media/destinations/machachi/hero-generated-20261009-root-v1.webp
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_machachi.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Город служит ориентиром в маршрутах к вулканам и высокогорным природным районам Эквадора.

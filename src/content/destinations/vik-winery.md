@@ -5,7 +5,7 @@ name: "Винодельня «Вик»"
 slug: vik-winery
 status: approved
 countryId: country_chile
-destinationType: region
+destinationType: attraction
 summary: VIK находится среди холмов долины Мильяуэ в центральном Чили. Знакомство с хозяйством соединяет виноградники,
   современную архитектуру и дегустацию вин. Здесь интересно услышать, как создается вино, и затем сравнить вкусы выбранных
   образцов.
@@ -21,6 +21,7 @@ searchAliases:
 - Винодельня VIK
 sourceSnapshot: data/source-index/materials/destination_chile_vik_winery.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Поездку из Сантьяго можно дополнить обедом с видом на долину. Конкретные вина, меню и формат посещения определяются бронированием. Винодельня и отель VIK являются разными частями комплекса: состав экскурсии подтверждают отдельно. 

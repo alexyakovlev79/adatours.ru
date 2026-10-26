@@ -5,7 +5,7 @@ name: Рио-Селесте
 slug: rio-celeste
 status: approved
 countryId: country_costa_rica
-destinationType: city
+destinationType: river
 summary: Рио-Селесте в Коста-Рике, голубая река с водопадом и лесными тропами в национальном парке Тенорио.
 hero:
   src: /media/destinations/rio-celeste/hero-generated-20261021-dedup-second50-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - rio-seleste
 sourceSnapshot: data/source-index/materials/destination_costa_rica_rio_seleste.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Рио-Селесте привлекает необычным голубым цветом воды. Река проходит через влажный лес в районе национального парка Тенорио. Местная легенда объясняет ее оттенок так: после создания неба Бог вымыл в реке кисти. Рассказ сопровождает знакомство с природным явлением, которое особенно хорошо видно у Лос-Теньидерос.

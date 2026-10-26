@@ -5,7 +5,7 @@ slug: huaca-huallamarca
 status: approved
 name: Уака-Уальямарка
 countryId: country_peru
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Уака-Уальямарка — доиспанский археологический комплекс в районе Сан-Исидро в Лиме. Его ступенчатая глинобитная
   пирамида выделяется среди современных городских кварталов и напоминает о древней истории перуанского побережья.
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_peru_huaca_huallamarca.md
 updatedAt: '2026-10-15'
+navigationRole: sight
 ---
 
 Памятник связан с церемониальными и погребальными традициями древних культур региона. В облике комплекса особенно заметны теплый цвет земли, ступенчатые объемы и широкие наклонные поверхности.

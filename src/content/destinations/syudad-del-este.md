@@ -5,7 +5,7 @@ slug: ciudad-del-este
 status: "approved"
 name: "Сьюдад-дель-Эсте"
 countryId: "country_paraguay"
-destinationType: "city"
+destinationType: city
 summary: "Город в «районе трех границ», известный магазинами и беспошлинной торговлей. Мост дружбы через Парану соединяет его с Фос-ду-Игуасу."
 searchAliases: []
 hero: {"src": "/media/countries/paraguay/featureBands-3-enhanced-20261002.webp", "alt": "Высотные здания и огни большого города в вечерних сумерках", "hover": "Вечерняя городская панорама с освещенными окнами и вывесками"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-syudad-del-ehste-v-
 sourceSnapshot: "https://drive.google.com/file/d/17ld0WwjTbM22ifCNGmWOyyT1zOrVNy0G/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: []
+navigationRole: hub
 ---
 
 ## Сьюдад-дель-Эсте -центр беспошлинной торговли!

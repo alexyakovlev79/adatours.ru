@@ -5,7 +5,7 @@ slug: laguna-hedionda
 status: approved
 name: Лагуна Хедионда
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Хедионда, одна из остановок высокогорной Боливии, входит в маршрут через регион Липес к пустыне Силоли.
 searchAliases:
 - Эдионда
@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_laguna_hedionda.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Лагуна Хедионда входит в маршрут по высокогорным водоемам Боливии. В программе ее посещение соединено с лагунами Каньяпа и Хонда.

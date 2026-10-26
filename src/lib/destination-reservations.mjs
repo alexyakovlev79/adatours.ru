@@ -1,3 +1,4 @@
+import { isDestinationType, isNavigationRole } from './destination-taxonomy.mjs';
 /** Offline destination identity and preparation queue; no content or network I/O. */
 const nonempty = (value) => typeof value === 'string' && Boolean(value.trim());
 const cachePath = /\/image\/cache\//i;
@@ -70,6 +71,8 @@ export function validateDestinationReservations(catalog, queue, options = {}) {
     for (const field of ['id', 'name', 'slug', 'countryId', 'countrySlug', 'url']) {
       if (!nonempty(item[field])) errors.push(`${label}: missing ${field}.`);
     }
+    if (!isDestinationType(item.destinationType)) errors.push(label+': invalid destinationType.');
+    if (!isNavigationRole(item.navigationRole)) errors.push(label+': invalid navigationRole.');
     if (!/^destination_[a-z0-9_]+$/.test(item.id)) errors.push(`${label}: invalid ID.`);
     if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.slug)) errors.push(`${label}: invalid slug.`);
     if (ids.has(item.id)) errors.push(`${label}: duplicate canonical ID.`);
@@ -188,7 +191,9 @@ export function reserveDestinations({ catalog, reservations, countries, publishe
     } else destination = matches[0];
 
     let outcome = 'existing';
+    if (destination && ((request.destinationType && request.destinationType !== destination.destinationType) || (request.navigationRole && request.navigationRole !== destination.navigationRole))) return fail({outcome:'invalid',requestIndex,errors:['Existing classification must be preserved.']});
     if (!destination) {
+      if (!isDestinationType(request.destinationType) || !isNavigationRole(request.navigationRole)) return fail({outcome:'invalid',requestIndex,errors:['New place requires destinationType and navigationRole.']});
       // A short unqualified name may denote an existing qualified object. Do
       // not create a second object merely because its qualifier was omitted.
       const partials = inCountry.filter((item) => [item.name, ...(item.aliases ?? [])].map(coreName).some((alias) => variants.map(coreName).some((name) =>
@@ -200,7 +205,7 @@ export function reserveDestinations({ catalog, reservations, countries, publishe
       const url = `/${country.slug}/place/${slug}/`;
       const collisions = nextCatalog.filter((item) => item.id === id || item.url === url);
       if (collisions.length) return fail({ outcome: 'ambiguous', requestIndex, candidates: collisions, reason: 'The derived ID/URL is already reserved; arbitrary suffixes are forbidden.' });
-      destination = { id, name: request.name.trim(), slug, countryId: country.id, countrySlug: country.slug, url, sourceUrl: null };
+      destination = { id, name: request.name.trim(), slug, countryId: country.id, countrySlug: country.slug, url, sourceUrl: null, destinationType: request.destinationType, navigationRole: request.navigationRole };
       nextCatalog.push(destination);
       outcome = 'reserved';
     }

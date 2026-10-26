@@ -17,6 +17,7 @@ searchAliases:
 - zapovednik-fortin-toledo
 sourceSnapshot: data/source-index/materials/destination_paraguay_zapovednik_fortin_toledo.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Фортин-Толедо связан с природоохранной работой в Чако. В местном центре занимаются изучением и сохранением тагуа, чакского пекари. Знакомство с ним помогает увидеть отдельного обитателя сухих лесов и понять, почему сохранению природных территорий региона уделяют внимание.

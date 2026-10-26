@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_nacionalnyj_park_san_rafael.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 Национальный парк Сан-Рафаэль находится в Чилийской Патагонии, у Северного Ледяного поля. Ледник спускается к лагуне, где у его края видны отколовшиеся льдины. Над водой поднимаются лесистые склоны и заснеженные горы.
 

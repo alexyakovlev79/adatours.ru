@@ -5,7 +5,7 @@ slug: "king-george-island"
 status: "approved"
 name: "Остров Кинг-Джордж"
 countryId: "country_antarctica"
-destinationType: "island"
+destinationType: island
 summary: "Пейзажи острова поражают первозданной красотой и необычным сочетанием природы и человеческого присутствия. Белоснежные ледники спускаются к океану, вдоль каменистых берегов плавают айсберги, а на прибрежных участках шумят колонии пингвинов. Здесь также можно встретить тюленей и разнообразных морских птиц, наблюдая за животными в их естественной среде обитания."
 searchAliases: ["ostrov-king-dzhordzh"]
 themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_antarctica_ostrov_king_dzhordzh.md"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Кинг-Джордж играет важную роль в международных научных исследованиях. На его территории расположены полярные станции, где учёные изучают климат, атмосферу, ледники, океан и уникальные антарктические экосистемы. Благодаря относительно доступному расположению остров служит одной из ключевых отправных точек для экспедиций в Антарктиду.

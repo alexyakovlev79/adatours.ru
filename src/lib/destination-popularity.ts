@@ -1,4 +1,5 @@
 import { isActiveEntity } from './archive.mjs';
+import { compareDestinationsForNavigation } from './destination-taxonomy.mjs';
 import type { CollectionEntry } from 'astro:content';
 
 type TourEntry = CollectionEntry<'tours'>;
@@ -20,8 +21,8 @@ export const buildDestinationTourCounts = (tours: TourEntry[]) => {
 export const compareDestinationsByPopularity = (
   counts: ReadonlyMap<string, number>
 ) => (a: DestinationEntry, b: DestinationEntry) => {
-  const countDifference =
-    (counts.get(b.data.id) ?? 0) - (counts.get(a.data.id) ?? 0);
-
-  return countDifference || a.data.name.localeCompare(b.data.name, 'ru');
+  return compareDestinationsForNavigation(a, b, (left, right) => {
+    const countDifference = (counts.get(right.data.id) ?? 0) - (counts.get(left.data.id) ?? 0);
+    return countDifference || left.data.name.localeCompare(right.data.name, 'ru');
+  });
 };

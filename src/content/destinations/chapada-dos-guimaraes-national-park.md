@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_nacionalnyj_park_shapada_dus_gimarajns.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 В национальном парке Шапада-дус-Гимарайнс маршруты проходят среди песчаниковых скал и каньонов. Вода и ветер сформировали характерные формы рельефа, а природные тропы соединяют участки растительности и водопады.

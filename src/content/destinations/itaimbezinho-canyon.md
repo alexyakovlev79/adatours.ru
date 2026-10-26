@@ -5,7 +5,7 @@ slug: "itaimbezinho-canyon"
 status: "approved"
 name: "Каньон Итаимбезинью"
 countryId: "country_brazil"
-destinationType: "natural_area"
+destinationType: canyon
 summary: "Узкое лесистое ущелье с отвесными скальными стенами в Апарадус-да-Серра."
 searchAliases: ["Itaimbezinho","kanon-itaimbezinyu"]
 themes: ["theme_adventure", "theme_nature"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_kanon_itaimbezinyu.md"
 updatedAt: "2026-10-09"
+navigationRole: sight
 ---
 
 Итаимбезинью — каньон национального парка Апарадус-да-Серра на юге Бразилии. С края плато видны почти отвесные стены, уходящие к покрытому лесом дну ущелья. Узкая форма каньона делает особенно выразительным контраст между открытыми верхними лугами и темной глубиной долины.

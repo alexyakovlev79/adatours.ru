@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_nacionalnyj_park_serra_da_bokajna.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 В национальном парке Серра-да-Бокайна горный лес встречается с побережьем. Природные маршруты знакомят с реками, водопадами и лесными тропами.

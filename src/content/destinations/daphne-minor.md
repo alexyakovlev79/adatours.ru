@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_ecuador_daphne_minor.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Малый Дафне выглядит с моря как небольшой оголенный вулканический остров. Его дайв-сайт расположен к северу от Санта-Крус: каменистые и песчаные участки дна сменяются подводными скалами.

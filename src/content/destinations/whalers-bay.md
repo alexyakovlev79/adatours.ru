@@ -5,7 +5,7 @@ slug: whalers-bay
 status: approved
 name: Бухта Уэйлерс
 countryId: country_antarctica
-destinationType: natural_area
+destinationType: bay
 summary: Пляж вулканического пепла и остатки китобойной станции внутри кальдеры острова Десепшен.
 hero:
   src: /media/destinations/whalers-bay/hero-gpt-20261011-v1.webp
@@ -20,6 +20,7 @@ searchAliases:
 - Whalers Bay
 sourceSnapshot: data/source-index/materials/destination_antarctica_whalers_bay.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Бухта Уэйлерс находится на острове Десепшен, внутри затопленной вулканической кальдеры. Пологий пляж из темного пепла тянется вдоль воды. За ним видны вулканические склоны и остатки сооружений старой китобойной станции.

@@ -5,7 +5,7 @@ slug: puebla-santo-domingo-rosary-chapel
 status: approved
 name: Санто-Доминго и часовня Розария в Пуэбле
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: religious_site
 summary: Церковь Санто-Доминго в Пуэбле хранит часовню Розария с богатой золоченой отделкой мексиканского барокко.
 hero:
   src: /media/tours/mexico-religious-journey/puebla-rosary-chapel-generated-20261011-v1.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_puebla_santo_domingo_rosary_chapel.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В церкви Санто-Доминго в Пуэбле находится часовня Розария, где золоченые детали покрывают своды, колонны и алтарное пространство. Свет выделяет резьбу и помогает постепенно рассматривать образы, которым посвящено убранство.

@@ -5,7 +5,7 @@ name: Сочимилько
 slug: xochimilco
 status: approved
 countryId: country_mexico
-destinationType: city
+destinationType: district
 summary: Сочимилько знакомит с каналами южной части Мехико и традиционными прогулочными лодками.
 hero:
   src: "/media/destinations/xochimilco/hero-generated-20261021-dedup-third50-v1.webp"
@@ -15,6 +15,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_xochimilco.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 В Сочимилько городские улицы сменяются каналами и зелеными берегами. Здесь путешествуют на трахинерах, широких лодках с ярко расписанными бортами и навесами. С воды видны сады и повседневная жизнь этого района Мехико.

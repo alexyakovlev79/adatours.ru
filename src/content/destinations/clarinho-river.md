@@ -5,7 +5,7 @@ slug: clarinho-river
 status: approved
 name: Река Кларинью
 countryId: country_brazil
-destinationType: natural_area
+destinationType: river
 summary: Река Кларинью — направление прогулки на каноэ из эколоджа «Арарас» в Северном Пантанале.
 searchAliases:
 - Clarinho River
@@ -17,6 +17,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_clarinho_river.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 ## Тихая прогулка по воде

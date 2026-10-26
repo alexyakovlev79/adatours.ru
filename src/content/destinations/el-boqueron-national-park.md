@@ -26,6 +26,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_el_boqueron_national_park.md
 updatedAt: '2026-10-14'
+navigationRole: sight
 ---
 
 ## Кратер над столицей

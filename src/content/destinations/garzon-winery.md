@@ -5,7 +5,7 @@ name: Винодельня Гарсон
 slug: garzon-winery
 status: approved
 countryId: country_uruguay
-destinationType: region
+destinationType: attraction
 summary: Винодельня Гарсон объединяет прогулку по винному хозяйству, дегустации и знакомство с сезонной кухней Уругвая.
 hero:
   src: /media/destinations/garzon-winery/hero-generated-20261009-v3.webp
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_uruguay_vinodelnya_garson.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Гарсон входит в винные маршруты Уругвая из Пунта-дель-Эсте. Посещение хозяйства знакомит с местными винами и работой винодельни.

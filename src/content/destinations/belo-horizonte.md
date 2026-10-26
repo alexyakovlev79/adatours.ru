@@ -45,6 +45,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-belu-orizonte-v-braz
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-belu-orizonte-v-brazilii__b4f01d5a.md
 updatedAt: 2026-09-25
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Белу-Оризонти, столица штата Минас-Жерайс, сочетает зеленые районы, музеи и современную архитектуру. Самая узнаваемая часть городской программы связана с Пампульей и работами Оскара Нимейера.

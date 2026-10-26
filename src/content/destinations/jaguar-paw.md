@@ -22,6 +22,7 @@ sourceSnapshot: data/source-index/materials/destination_belize_jaguar_paw.md
 searchAliases:
 - "Jaguar Paw"
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Cave Tubing проходит на надувных кругах с гидом. Эта остановка входит в программы переезда из западного Белиза к Белиз-Сити и Карибскому побережью.

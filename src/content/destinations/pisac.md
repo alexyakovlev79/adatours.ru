@@ -5,7 +5,7 @@ name: Писак
 slug: pisac
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: town
 summary: Писак в Священной долине Перу, поселение с ремесленным рынком и инкским комплексом на горных склонах.
 hero:
   src: /media/tours/manyashchij-peru-kolumbiya/pisac-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - pisak
 sourceSnapshot: data/source-index/materials/destination_peru_pisak.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Писак расположен в Священной долине инков в районе Куско. Его археологический комплекс включает сельскохозяйственные террасы, жилые сооружения и церемониальные пространства. Постройки расположены на склонах и связаны с окружающим рельефом, а с отдельных участков открывается широкий вид на долину.

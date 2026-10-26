@@ -17,6 +17,7 @@ searchAliases:
 - ostrov-kolon
 sourceSnapshot: data/source-index/materials/destination_panama_ostrov_kolon.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Колон находится в архипелаге Бокас-дель-Торо в Карибском море. С материка сюда прибывают из Альмиранте, продолжая путешествие по островной части Панамы. Остров позволяет остановиться у воды и познакомиться с окружающими морскими территориями.

@@ -5,7 +5,7 @@ name: Лагуна Чиаркота
 slug: laguna-chiar-khota-potosi
 status: approved
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Чиаркота входит в высокогорный маршрут по боливийскому Альтиплано. Ее посещают вместе с другими лагунами, где цвет воды и окружающих склонов создает контрастные пейзажи.
 hero:
   src: /media/destinations/laguna-chiar-khota-potosi/hero-generated-20261021-dedup50-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_laguna_chiarkota.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 На джип-экскурсии делают остановку у берега, чтобы увидеть озеро и горы. В программе региона Чиаркота сочетается с лагуной Каньяпа и дальнейшим переездом к солончаку Уюни.

@@ -5,7 +5,7 @@ slug: "caleta-tortel"
 status: "approved"
 name: "Калета Тортель"
 countryId: "country_chile"
-destinationType: "city"
+destinationType: village
 summary: "Деревянные дорожки и дома на сваях у воды в чилийской Патагонии."
 searchAliases: ["kaleta-tortel"]
 themes: ["theme_culture","theme_cruises"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_chile_kaleta_tortel.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Калета Тортель — небольшое прибрежное поселение региона Айсен в чилийской Патагонии. Оно расположено среди воды, крутых лесистых склонов и влажного южного леса, неподалеку от устья реки Бейкер. Вместо привычной прогулки по улицам здесь идут по деревянным дорожкам, лестницам и настилам, соединяющим дома на берегу.

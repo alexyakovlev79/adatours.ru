@@ -49,6 +49,7 @@ sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-gran
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-ostrov-ilya-grandi__6bfbc8fb.md
 updatedAt: '2026-10-21'
 themes: ["theme_beach", "theme_diving", "theme_adventure", "theme_nature"]
+navigationRole: hub
 ---
 
 На Илья-Гранди добираются по морю, в том числе из Ангра-дус-Рейс. На острове почти нет привычных автомобильных переездов: между пляжами и поселениями ходят пешком или перемещаются на лодке.

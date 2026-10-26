@@ -5,7 +5,7 @@ slug: "los-glaciares-national-park"
 status: "approved"
 name: "Национальный парк Лос-Гласьярес"
 countryId: "country_argentina"
-destinationType: "national_park"
+destinationType: national_park
 summary: "Национальный парк Лос-Гласьярес"
 searchAliases: ["Лос-Гласьярес", "nacionalnyj-park-los-glasyares"]
 themes: ["theme_nature", "theme_adventure"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_nacionalnyj_park_los_glasyares.md"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 На юге Аргентины, в бескрайних просторах Патагонии, находится национальный парк Лос-Гласьярес — удивительный мир ледников, горных вершин, бирюзовых озёр и дикой природы. Здесь суровая красота Анд соединяется с первозданным очарованием ледяных ландшафтов, создавая пейзажи, которые надолго остаются в памяти путешественников.

@@ -32,6 +32,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-gajany-gorod-dzho
 sourceSnapshot: "https://drive.google.com/file/d/1ugG4u50XHbonXGX5phR_j4kgPn80OPZ2/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Джорджтаун- город -сад Гайаны!

@@ -5,7 +5,7 @@ name: Каньон Сумидеро
 slug: sumidero-canyon
 status: approved
 countryId: country_mexico
-destinationType: natural_area
+destinationType: canyon
 summary: Каньон Сумидеро в мексиканском Чьяпасе, речное ущелье с высокими скальными стенами и лодочными маршрутами.
 hero:
   src: /media/tours/meksika-fantasticheskaya/sumidero-canyon-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - kanon-sumidero
 sourceSnapshot: data/source-index/materials/destination_mexico_kanon_sumidero.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Сумидеро находится в Чьяпасе и известен высокими стенами, между которыми проходит река. Лодочная прогулка раскрывает каньон снизу: вода занимает передний план, а скальные склоны поднимаются по обеим сторонам. Такое положение позволяет рассмотреть формы ущелья и его растительность.

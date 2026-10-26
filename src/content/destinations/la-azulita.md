@@ -5,7 +5,7 @@ name: Ла-Асулита
 slug: la-azulita
 status: approved
 countryId: country_venezuela
-destinationType: city
+destinationType: town
 summary: Ла-Асулита в венесуэльских Андах, горное поселение штата Мерида с видами на окружающие склоны.
 hero:
   src: /media/tours/krasota-venesuely/itinerary-day-09-generated-20261008-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - la-asulita
 sourceSnapshot: data/source-index/materials/destination_venezuela_la_asulita.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Ла-Асулита находится в штате Мерида, среди венесуэльских Анд. Поселение окружено горными склонами и связано с дорогами через районы облачного леса. Здесь интересно само соседство деревенской застройки и зеленых гор, которое раскрывается во время остановки на андском маршруте.

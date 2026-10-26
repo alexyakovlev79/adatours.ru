@@ -5,7 +5,7 @@ slug: chichen-itza
 status: approved
 name: Чичен-Ица
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: archaeological_site
 summary: Чичен-Ица, археологический комплекс на Юкатане, знакомит с архитектурой майя и следами тольтекского влияния.
 searchAliases:
 - chichen-ica
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_mexico_chichen_ica.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Чичен-Ица находится на полуострове Юкатан в Мексике. Археологическая зона включена в список Всемирного наследия ЮНЕСКО. В разные периоды комплекс был важным центром майя, а позднее испытал влияние тольтеков.

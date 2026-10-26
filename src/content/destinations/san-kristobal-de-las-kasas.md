@@ -5,7 +5,7 @@ slug: san-cristobal-de-las-casas
 status: "approved"
 name: "Сан Кристобал де Лас Касас"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Горный город в штате Чьяпас на высоте 2100 м: традиции майя, собор XVII века и пешеходная улица 20 ноября с сувенирными лавками и кафе."
 searchAliases: []
 hero: {"src":"/media/destinations/san-cristobal-de-las-casas/hero-enhanced-20261004.webp","alt":"Красный автомобиль у расписанной стены на улице Сан-Кристобаль-де-лас-Касаса, Мексика","hover":"Сан-Кристобаль-де-лас-Касас: красный автомобиль на мощеной улице"}
@@ -30,6 +30,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-san-kristobal-de-la
 sourceSnapshot: "https://drive.google.com/file/d/17gVkSxm5ToRKy1mAh_09gnST3jp6tpMi/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Сан Кристобал де Лас Касас - колорит Мексики!

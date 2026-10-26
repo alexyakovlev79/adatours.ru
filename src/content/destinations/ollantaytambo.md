@@ -5,7 +5,7 @@ name: Ольянтайтамбо
 slug: ollantaytambo
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: town
 summary: Ольянтайтамбо в Священной долине Перу, город с инкскими улицами, каменными террасами и археологическим комплексом.
 hero:
   src: /media/tours/21-dnevnoe-priklyuchenie-v-peru/itinerary-12-images-0-src-enhanced-20261007.webp
@@ -18,6 +18,7 @@ searchAliases:
 - olyantajtambo
 sourceSnapshot: data/source-index/materials/destination_peru_olyantajtambo.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Ольянтайтамбо находится в Священной долине инков и сохраняет следы древнего городского устройства. Улицы и водные каналы связаны с инкским наследием, а над жилой частью поднимаются каменные террасы археологического комплекса. Исторический пейзаж здесь продолжается за пределами отдельного памятника, в самом поселении.

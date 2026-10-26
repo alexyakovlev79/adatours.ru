@@ -5,7 +5,7 @@ name: Смотровая площадка Мирадор-Сармьенто
 slug: mirador-sarmiento
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: viewpoint
 summary: Мирадор-Сармьенто входит в последовательность обзорных остановок Торрес-дель-Пайне. После озер, водопада Сальто-Гранде
   и лагуны Амарга путешествие завершается еще одним взглядом на открытые пространства Патагонии.
 hero:
@@ -18,6 +18,7 @@ searchAliases:
 - Смотровая площадка Мирадор-Сармьенто
 sourceSnapshot: data/source-index/materials/destination_chile_mirador_sarmiento.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Смотровая площадка позволяет задержаться ради панорамы и фотографий. Длительность остановки определяется общей программой дня. На обложке показано озеро Сармьенто в этой части национального парка.

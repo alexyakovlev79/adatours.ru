@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_ischigualyasto.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Особое значение имеют палеонтологические находки: здесь изучают останки древних животных и динозавров. Поездку в парк соединяют с Талампайей, чтобы познакомиться с разными ландшафтами и природным наследием западной части страны.

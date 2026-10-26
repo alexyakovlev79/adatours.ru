@@ -5,7 +5,7 @@ slug: varadero
 status: "approved"
 name: "Варадеро"
 countryId: "country_cuba"
-destinationType: "resort"
+destinationType: resort
 summary: "Варадеро находится на полуострове Икакос и известен песчаными пляжами. Здесь можно заниматься дайвингом, играть в гольф и посетить пещеру Амбросио."
 searchAliases: []
 hero: {"src":/media/countries/cuba/featureBands-3-enhanced-20261002.webp,"alt":"Парусные яхты и катер на бирюзовой воде у Варадеро, Куба", hover: "Варадеро: яхты у причала под голубым небом"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-plyazh-varadero-na-ostro
 sourceSnapshot: "https://drive.google.com/file/d/1xvBtSAWa8_8pOoAN6O04-H3dSS0V4yVw/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_diving"]
+navigationRole: hub
 ---
 
 ## Варадеро - классные пляжи Кубы!

@@ -5,7 +5,7 @@ slug: tiririca-amazon
 status: approved
 name: Тиририка (Амазония)
 countryId: country_brazil
-destinationType: natural_area
+destinationType: beach
 summary: Тиририка в Амазонии входит в маршруты по Рио-Негро с посещением речного пляжа и местной общины.
 searchAliases:
 - Тиририка
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_tiririka_amazoniya.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Эта часть поездки знакомит с протоками, темной водой Рио-Негро и лесными берегами. Пляжная остановка дополняет прогулку по экваториальному лесу и знакомство с местной жизнью.

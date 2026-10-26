@@ -5,7 +5,7 @@ slug: weg-naar-zee
 status: approved
 name: "Побережье Вег-нар-Зе"
 countryId: country_suriname
-destinationType: natural_area
+destinationType: wetland
 summary: "Илистые отмели Атлантики, мангры и алые ибисы у Парамарибо. Вег-нар-Зе показывает Суринам со стороны его живого приливного побережья."
 hero:
   src: /media/destinations/weg-naar-zee/hero-generated-20261010-last8-v1.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_suriname_weg_naar_zee.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На Вег-нар-Зе взгляд сразу ищет красные пятна среди воды и темного ила. Во время отлива птицы кормятся на открывшихся отмелях, вдоль берега тянутся мангры, а над ними проходит широкое атлантическое небо. Когда алые ибисы поднимаются в воздух, их стая на несколько секунд становится главным событием всей прогулки.

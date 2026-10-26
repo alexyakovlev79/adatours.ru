@@ -5,7 +5,7 @@ name: Панама-Вьехо
 slug: panama-viejo
 status: approved
 countryId: country_panama
-destinationType: route_cluster
+destinationType: archaeological_site
 summary: 'Руины первой испанской Панамы на Тихоокеанском побережье: каменная башня собора, остатки монастырей, улиц
   и площадей.'
 hero:
@@ -21,6 +21,7 @@ searchAliases:
 - Панама-Виехо
 sourceSnapshot: data/source-index/materials/destination_panama_panama_viejo.md
 updatedAt: '2026-10-20'
+navigationRole: sight
 ---
 
 ## Первая Панама на берегу Тихого океана

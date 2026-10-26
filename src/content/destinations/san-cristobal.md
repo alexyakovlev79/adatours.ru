@@ -5,7 +5,7 @@ slug: san-cristobal
 status: approved
 name: Сан-Кристобаль
 countryId: country_bolivia
-destinationType: city
+destinationType: village
 summary: Сан-Кристобаль, поселение на высокогорном маршруте Боливии, дополняет природные остановки знакомством с местной жизнью.
 searchAliases:
 - san-kristobal
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_san_kristobal.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Сан-Кристобаль включен в высокогорный маршрут по Боливии. Посещение поселения дополняет поездку через пустыню Силоли, лагуны и геотермальные участки.

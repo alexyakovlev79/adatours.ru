@@ -32,6 +32,7 @@ sourceUrl: https://brasiltours.ru/plyazhnye-tury-v-braziliyu-na-more-v-gorod-for
 sourceSnapshot: page_texts_original/plyazhnye-tury-v-braziliyu-na-more-v-gorod-fortaleza__045aa410.md
 updatedAt: 2026-09-25
 themes: ["theme_beach","theme_adventure","theme_diving"]
+navigationRole: hub
 ---
 
 Форталеза находится на северо-восточном побережье Бразилии и является столицей штата Сеара. Город связан с Атлантикой, пляжами, дюнами и историческим фортом, от которого произошло его название.

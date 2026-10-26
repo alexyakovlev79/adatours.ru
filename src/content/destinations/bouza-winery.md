@@ -5,7 +5,7 @@ name: Винодельня Боуза
 slug: bouza-winery
 status: approved
 countryId: country_uruguay
-destinationType: region
+destinationType: attraction
 summary: Боуза, бутиковая винодельня рядом с Монтевидео, знакомит с уругвайским вином и его сочетаниями с местной
   кухней.
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_uruguay_vinodelnya_bouza.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Винодельня Боуза находится в окрестностях Монтевидео. Здесь можно увидеть виноградники и познакомиться с производством вина на небольшом хозяйстве.

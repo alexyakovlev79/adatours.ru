@@ -5,7 +5,7 @@ slug: orinoco-delta
 status: approved
 name: Дельта реки Ориноко
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: wetland
 summary: Дельта реки Ориноко знакомит с тропическими лесами, мангровыми зарослями и жизнью индейцев варао. По протокам путешествуют на лодках, наблюдая за обитателями реки и берегов.
 searchAliases: []
 hero:
@@ -34,6 +34,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-deltu-reki-orinoko-v-venes
 sourceSnapshot: https://drive.google.com/file/d/1mO7cXkfd7JjHS_bnttPrK8nnSWSVBTJC/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_wildlife", "theme_culture", "theme_nature"]
+navigationRole: hub
 ---
 
 Богатая своими достопримечательностями Венесуэла представляет Вам дельту реки Ориноко! Её воды спускаются с предгорий Анд бурным потоком, образуя одно из прекраснейших мест во всей стране. Здесь можно увидеть тропический лес, мангровые заросли. Разнообразие цвета воды, ее состава и экосистемы делят на протоки на "белые" и "черные". Вокруг "чёрных рек" почти нет москитов и в их водах не водятся кайманы. "Белые" же реки наоборот кишат живностью и насекомыми.

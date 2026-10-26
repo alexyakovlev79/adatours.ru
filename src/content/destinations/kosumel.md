@@ -5,7 +5,7 @@ slug: cozumel
 status: "approved"
 name: "Косумель"
 countryId: "country_mexico"
-destinationType: "island"
+destinationType: island
 summary: "Косумель находится к востоку от полуострова Юкатан. Остров известен коралловыми рифами и дайвингом; отели и дайвинг-клубы сосредоточены на его западном побережье."
 searchAliases: []
 hero: {"src":"/media/destinations/cozumel/hero-enhanced-20261005.webp","alt":"Каменистый берег Косумеля с соломенным зонтом у прозрачного бирюзового моря, Мексика", hover: "Косумель: соломенный зонт на скалистом берегу"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-kosumel-v
 sourceSnapshot: "https://drive.google.com/file/d/1YPiGZDs0yvv8stZu4w28vGBowvy8OzFN/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_diving"]
+navigationRole: hub
 ---
 
 ## Косумель - остров - курорт Мексики!

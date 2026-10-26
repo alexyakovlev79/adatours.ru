@@ -27,6 +27,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_tijuca_national_park.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 Тижука — национальный парк в пределах Рио-де-Жанейро. Лесные склоны, водопады и смотровые площадки соседствуют здесь с городскими кварталами. Его можно включить в путешествие по Рио отдельной природной прогулкой.

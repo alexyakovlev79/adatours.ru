@@ -5,7 +5,7 @@ name: Вулкан Сьерра-Негра
 slug: sierra-negra-volcano
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: volcano
 summary: Сьерра-Негра — вулкан на Исабеле. Прогулка к его кратеру показывает масштаб вулканического рельефа острова и дополняет морскую часть путешествия по Галапагосам.
 hero:
   src: /media/destinations/sierra-negra-volcano/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_serra_negra.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Прогулка к его кратеру показывает масштаб вулканического рельефа острова и дополняет морскую часть путешествия по Галапагосам.

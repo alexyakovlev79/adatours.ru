@@ -5,7 +5,7 @@ name: Горный массив Прат
 slug: cerro-prat
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: mountain
 summary: Горный массив Прат входит в панорамы на пути из Пуэрто-Наталеса к Торрес-дель-Пайне. Открытые пространства,
   озера и горные склоны делают этот участок дороги интересным еще до прибытия к главным смотровым площадкам.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Горный массив Прат
 sourceSnapshot: data/source-index/materials/destination_chile_cerro_prat.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В обзорной программе массив осматривают по пути. Отдельный горный поход требует самостоятельного согласования; точные остановки выбирают по погоде и времени. 

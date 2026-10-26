@@ -5,7 +5,7 @@ slug: lapataia-bay
 status: approved
 name: Бухта Лапатайя
 countryId: country_argentina
-destinationType: natural_area
+destinationType: bay
 summary: Бухта Лапатайя в национальном парке Тьерра-дель-Фуэго соединяет морской берег, леса и горы.
 hero:
   src: /media/tours/best-of-argentina-14-days/lapataia-generated-20261011-v1.webp
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_lapataia_bay.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Бухта Лапатайя находится в аргентинской части Огненной Земли, на территории национального парка Тьерра-дель-Фуэго. К берегу подходят леса, а дальше открывается спокойная вода и горные склоны.

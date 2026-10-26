@@ -5,7 +5,7 @@ name: Река Лимай
 slug: limay-river
 status: approved
 countryId: country_argentina
-destinationType: natural_area
+destinationType: river
 summary: Река Лимай — одно из направлений спортивной рыбалки в озёрном районе аргентинской Патагонии. В программах
   из Барилоче её верхние участки связаны с нахлыстом, сплавами и ловлей форели.
 hero:
@@ -24,6 +24,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_limay_river.md
 updatedAt: '2026-10-15'
+navigationRole: hub
 ---
 
 На Лимае рыбалка становится способом увидеть речные ландшафты Патагонии: прозрачную воду, галечные берега, плёсы и участки быстрого течения. В программе с размещением в Lakeshore Chalet на реку отведено пять полных дней.

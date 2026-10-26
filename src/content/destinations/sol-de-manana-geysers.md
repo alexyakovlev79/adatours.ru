@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_gejzery_sol_de_manyana.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Поле посещают во время джип-поездок между лагунами и Уюни. Остановка позволяет рассмотреть геотермальный пейзаж с безопасного расстояния по указаниям гида. Конкретный маршрут определяется условиями посещения.

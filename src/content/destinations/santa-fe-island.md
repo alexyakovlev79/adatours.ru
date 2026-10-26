@@ -16,6 +16,7 @@ themes:
 - theme_diving
 sourceSnapshot: data/source-index/materials/destination_ecuador_santa_fe_island.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Санта-Фе находится к юго-востоку от Санта-Крус. В описанной дайвинг-программе у острова указаны 2 дайв-сайта; дорога на лодке от базы занимает около 1 часа.

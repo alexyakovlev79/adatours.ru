@@ -5,7 +5,7 @@ slug: montevideo
 status: approved
 name: "Монтевидео"
 countryId: "country_uruguay"
-destinationType: "city"
+destinationType: city
 summary: "Монтевидео: площадь Независимости, старый город и порт, дворец Сальво и музеи, посвященные истории Уругвая и культуре гаучо."
 searchAliases: []
 hero:
@@ -37,6 +37,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-montevideo-v-urug
 sourceSnapshot: "https://drive.google.com/file/d/1QY_x4mfgp982UJk8rz7ngt0dgdUqhody/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Монтевидео - столица Уругвая!

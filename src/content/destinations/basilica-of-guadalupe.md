@@ -5,7 +5,7 @@ name: "Сантуарио Гваделупы"
 slug: "basilica-of-guadalupe"
 status: "approved"
 countryId: "country_mexico"
-destinationType: "natural_area"
+destinationType: religious_site
 summary: "Святилище Девы Гваделупской в Мехико объединяет старую базилику и современный круглый храм. Это место паломничества и знакомства с религиозной культурой Мексики."
 searchAliases: []
 hero:
@@ -20,6 +20,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_basilica_of_guadalupe.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В святилище Гваделупы в Мехико интересно смотреть и на архитектуру, и на людей. Паломники приходят к образу Девы Гваделупской, вокруг которого сложилась важная часть религиозной жизни страны. Большая площадь объединяет несколько храмовых зданий, поэтому знакомство с комплексом постепенно раскрывает разные эпохи его истории.

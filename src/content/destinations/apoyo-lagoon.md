@@ -5,7 +5,7 @@ name: Лагуна Апойо
 slug: apoyo-lagoon
 status: approved
 countryId: country_nicaragua
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Апойо в Никарагуа, пресноводное озеро в вулканическом кратере среди зеленых склонов.
 hero:
   src: /media/tours/vip-kosta-rika-nikaragua/apoyo-lagoon-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - laguna-apojo
 sourceSnapshot: data/source-index/materials/destination_nicaragua_laguna_apojo.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Апойо занимает вулканический кратер в Никарагуа. Пресноводное озеро окружено зелеными склонами, поэтому виды на воду соединяются с горным пейзажем. Место позволяет задержаться у берега после знакомства с городами и вулканическими территориями страны.

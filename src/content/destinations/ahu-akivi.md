@@ -5,7 +5,7 @@ name: Аху-Акиви
 slug: ahu-akivi
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Аху-Акиви на острове Пасхи известна рядом из 7 восстановленных моаи. Церемониальная платформа входит в экскурсионные маршруты по памятникам Рапа-Нуи.
 searchAliases: []
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_ahu_akivi.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 С этими статуями связана легенда о 7 исследователях, которых король Хоту-Матуа отправил к Рапа-Нуи. На экскурсии знакомятся с каменными фигурами и историей островной культуры.

@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_ostrov_ardli.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Ардли входит в прибрежные маршруты с острова Кинг-Джордж. К небольшому острову подходят на лодках Zodiac, чтобы увидеть антарктическое побережье и колонии пингвинов.

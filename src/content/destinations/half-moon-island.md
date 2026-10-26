@@ -21,6 +21,7 @@ searchAliases:
 - Isla Media Luna
 sourceSnapshot: data/source-index/materials/destination_antarctica_half_moon_island.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Хаф-Мун, или остров Полумесяца, лежит между островами Гринвич и Ливингстон в Южном Шетландском архипелаге. Остров длиной около 2 км имеет галечные пляжи, невысокие холмы и выходы вулканических пород. На скалах встречаются лишайники, а среди камней растут мхи и антарктические цветковые растения.

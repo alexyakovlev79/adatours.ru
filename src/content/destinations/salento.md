@@ -5,7 +5,7 @@ name: Саленто
 slug: salento
 status: approved
 countryId: country_colombia
-destinationType: city
+destinationType: town
 summary: Саленто в кофейном регионе Колумбии, город с колониальными улицами, ремесленными мастерскими и дорогой к долине Кокора.
 hero:
   src: /media/tours/vivat-kolumbiya/salento-place-generated-20261009-v1.webp
@@ -16,6 +16,7 @@ themes: ["theme_culture", "theme_gastronomy_wine", "theme_coffee"]
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_colombia_salento.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Саленто сохраняет колониальные улицы и связан с кофейной культурой Колумбии. Во время прогулки можно заглянуть в ремесленные мастерские и остановиться на местный кофе. Город показывает повседневную сторону кофейного региона: здесь природные поездки соседствуют с работой мастеров и небольших заведений.

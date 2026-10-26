@@ -5,7 +5,7 @@ name: Глотка Дьявола в Игуасу
 slug: garganta-del-diablo
 status: approved
 countryId: country_argentina
-destinationType: natural_area
+destinationType: waterfall
 summary: Мощные каскады Игуасу и смотровые дорожки над водой. С аргентинской стороны к Глотке Дьявола подходят близко, чтобы
   увидеть падающие потоки и поднявшееся над ущельем облако брызг.
 hero:
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_garganta_del_diablo.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Глотка Дьявола, или Garganta del Diablo, — один из главных участков водопадов Игуасу. Потоки воды обрушиваются в ущелье и поднимают густые брызги. В солнечную погоду над каскадами появляются радуги.

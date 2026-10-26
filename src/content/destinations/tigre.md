@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_tigre.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Во время поездки из Буэнос-Айреса прогулку по городу дополняют навигацией по дельте. С воды видны зеленые берега, причалы и дома у проток. Тигре часто посещают вместе с северными пригородами столицы, включая Сан-Исидро.

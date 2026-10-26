@@ -5,7 +5,7 @@ slug: toconao
 status: approved
 name: Токонао
 countryId: country_chile
-destinationType: city
+destinationType: village
 summary: Токонао — поселение Атакамы, где природный маршрут дополняют знакомством с местной архитектурой.
 searchAliases:
 - tokonao
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_tokonao.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 В Токонао останавливаются после поездок по высокогорным лагунам и солончаку Атакама. Городская часть маршрута знакомит с церковью Сан-Лукас и башней Кампанарио.

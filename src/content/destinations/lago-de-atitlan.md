@@ -5,7 +5,7 @@ slug: lake-atitlan
 status: approved
 name: "Лаго де Атитлан"
 countryId: "country_guatemala"
-destinationType: natural_area
+destinationType: lake
 summary: "Озеро среди вулканических склонов и поселений майя. На его берегах находятся Панахачель, Сан-Педро-ла-Лагуна и Сан-Маркос-ла-Лагуна."
 searchAliases: []
 hero:
@@ -22,6 +22,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ozero-atitlan-v-gvatemal
 sourceSnapshot: "https://drive.google.com/file/d/1CKQm86edIHSKtWPay8IvPtPl_m8Fg693/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_nature", "theme_culture"]
+navigationRole: hub
 ---
 
 ### Атитлан - самое красивое озеро Гватемалы

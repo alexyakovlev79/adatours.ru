@@ -18,6 +18,7 @@ searchAliases:
 - san-migel-de-alende
 sourceSnapshot: data/source-index/materials/destination_mexico_san_migel_de_alende.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Сан-Мигель-де-Альенде известен мощеными улицами, домами из розового камня и художественной жизнью. В центре находится приходская церковь Сан-Мигель-Аркангель с заметным высоким фасадом. Прогулка по городу объединяет архитектуру, небольшие площади и работы местных мастеров.

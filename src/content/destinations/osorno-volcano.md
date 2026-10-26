@@ -5,7 +5,7 @@ name: Вулкан Осорно
 slug: osorno-volcano
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: volcano
 summary: Вулкан Осорно возвышается над озерами юга Чили. Его заснеженная вершина видна из Пуэрто-Вараса и со многих
   маршрутов Озерного края.
 hero:
@@ -18,6 +18,7 @@ searchAliases:
 - Вулкан Осорно
 sourceSnapshot: data/source-index/materials/destination_chile_osorno_volcano.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Осорно входит в природную программу после поездки к водопадам Петроуэ. В ясную погоду с маршрута открываются виды на вулкан и окружающие озера. Восхождение на вершину в P109 не заявлено.

@@ -5,7 +5,7 @@ slug: inca-cueva
 status: approved
 name: Инка-Куэва
 countryId: country_argentina
-destinationType: natural_area
+destinationType: archaeological_site
 summary: 'Ущелье и археологические скальные укрытия Инка-Куэва в Хухуе: красный камень, высокогорные пейзажи и древняя наскальная живопись.'
 hero:
   src: /media/destinations/inca-cueva/hero-generated-20261011-p107-v1.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_argentina_inca_cueva.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Инка-Куэва — археологический комплекс в высокогорной части провинции Хухуй. Его скальные укрытия расположены в ущелье среди красных песчаников и сухих ландшафтов Пуны. На стенах сохранились наскальные рисунки разных эпох, а находки археологов рассказывают о многотысячелетней истории людей, живших на севере Аргентины.

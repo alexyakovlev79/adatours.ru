@@ -5,7 +5,7 @@ slug: machuca
 status: approved
 name: Мачука
 countryId: country_chile
-destinationType: city
+destinationType: village
 summary: Мачука — небольшое высокогорное поселение на обратном пути от гейзеров Эль-Татио.
 searchAliases:
 - machuka
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_machuka.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 В Мачуке сохранились небольшие дома из самана с использованием соломы и кактусового дерева. Поселение посещают после утренней поездки к гейзерам Эль-Татио.

@@ -17,6 +17,7 @@ searchAliases:
 - santa-rosa-de-kabal
 sourceSnapshot: data/source-index/materials/destination_colombia_santa_rosa_de_kabal.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Санта-Роса-де-Кабаль связана с кофейными хозяйствами в колумбийских Андах. На плантациях знакомятся с выращиванием кофе, ручным сбором и обработкой зерен. Рассказ продолжается на сельской кухне, где показывают обжарку, а со смотровых площадок видны окружающие поля и склоны.

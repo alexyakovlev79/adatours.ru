@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_paraguay_aregua.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Арегуа находится на маршрутах из Асунсьона к озерным и холмистым районам Парагвая. Город известен ремесленными лавками, где знакомятся с местными изделиями. Улицы и небольшие городские пространства дополняют окружающий зеленый пейзаж.

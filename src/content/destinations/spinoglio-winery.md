@@ -5,7 +5,7 @@ name: Винодельня Спиноглио
 slug: spinoglio-winery
 status: approved
 countryId: country_uruguay
-destinationType: region
+destinationType: attraction
 summary: Винодельня Спиноглио к северу от Монтевидео сохранила исторический погреб и окружена виноградниками и парком.
 hero:
   src: /media/destinations/spinoglio-winery/hero-generated-20261009-v3.webp
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_uruguay_vinodelnya_spinoglio.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Спиноглио, винодельня XIX века, расположена к северу от Монтевидео. Виноградники и парк окружают исторические помещения, в которых сегодня работает современное производство.

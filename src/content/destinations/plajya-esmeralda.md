@@ -5,7 +5,7 @@ slug: playa-esmeralda
 status: "approved"
 name: "Плайя Эсмеральда"
 countryId: "country_cuba"
-destinationType: "resort"
+destinationType: beach
 summary: "Плайя Эсмеральда находится в провинции Ольгин, рядом с бухтой Наранхо. Белый песок, морские рифы и прозрачная вода подходят для пляжного отдыха, погружений и водного спорта."
 searchAliases: []
 hero: {"src":"/media/destinations/playa-esmeralda/hero-enhanced-20261004.webp","alt":"Песчаный берег и мелкие волны на пляже Эсмеральда, Куба", hover: "Плайя Эсмеральда: светлый песок вдоль бирюзовой воды"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/plyazhnye-tury-na-plajya-ehsmeralda-na-ostrov
 sourceSnapshot: "https://drive.google.com/file/d/1LsZFlgYR2uXEx1ODP0Z4hDc3wrCbD8ho/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_diving"]
+navigationRole: sight
 ---
 
 ## Плайя Эсмеральда -"изумрудный берег" Кубы!

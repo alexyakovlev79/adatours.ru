@@ -5,7 +5,7 @@ name: Виникунка
 slug: vinicunca
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: mountain
 summary: Виникунка в Перу, андская гора с естественными цветными полосами осадочных пород.
 hero:
   src: /media/destinations/vinicunca/hero-generated-20261021-dedup4-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - vinikunka
 sourceSnapshot: data/source-index/materials/destination_peru_vinikunka.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Виникунка известна цветными участками склонов, которые связаны с составом горных пород. Полосы идут по поверхности горы и создают пейзаж, отличающийся от однотонных каменистых склонов. Место находится в андском высокогорье и раскрывает геологическую сторону путешествия по Перу.

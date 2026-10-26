@@ -48,6 +48,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-parati-v-brazilii
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-parati-v-brazilii__1096e90c.md
 updatedAt: 2026-09-24
 themes: ["theme_culture", "theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 

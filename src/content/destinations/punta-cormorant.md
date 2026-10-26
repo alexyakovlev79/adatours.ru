@@ -5,7 +5,7 @@ name: "Мыс Корморан"
 slug: "punta-cormorant"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: natural_area
 summary: "Мыс Корморан на Флорене знакомит с лагуной фламинго и пляжами зеленоватого и светлого оттенков."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_punta_cormorant/hero-generated-20261010-next-ten-v1.webp", "alt": "Розовые фламинго на мелководье у мыса Корморан, Галапагосы, Эквадор", hover: "Мыс Корморан: фламинго в прибрежной лагуне"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_punta_cormorant.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 На мысе Корморан на Флорене прогулка начинается с необычного цвета песка. Мелкие кристаллы оливина придают берегу зеленоватый оттенок. Дальше тропа выводит к лагуне с солоноватой водой, где можно наблюдать фламинго. Птицы медленно перебирают ногами на мелководье, наклоняются к воде и оставляют за собой едва заметные круги.

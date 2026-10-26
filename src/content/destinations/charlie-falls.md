@@ -5,7 +5,7 @@ name: Водопад Чарли
 slug: charlie-falls
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: waterfall
 summary: Водопад Чарли расположен у Туманной горы в районе Кабалебо. Его посещение входит в пешие программы по тропическому лесу и дополняет знакомство с речным ландшафтом.
 hero:
   src: /media/destinations/charlie-falls/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_vodopad_charli.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Его посещение входит в пешие программы по тропическому лесу и дополняет знакомство с речным ландшафтом.

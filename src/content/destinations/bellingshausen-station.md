@@ -5,7 +5,7 @@ name: Станция Беллинсгаузен
 slug: bellingshausen-station
 status: approved
 countryId: country_antarctica
-destinationType: region
+destinationType: building
 summary: Станция Беллинсгаузен на острове Кинг-Джордж входит в маршруты знакомства с российским присутствием в Антарктиде.
 hero:
   src: /media/destinations/bellingshausen-station/hero-generated-20261009-v3.webp
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_stanciya_bellinsgauzen.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Беллинсгаузен, российская антарктическая станция на острове Кинг-Джордж, находится в районе, который посещают во время коротких поездок из Пунта-Аренаса.

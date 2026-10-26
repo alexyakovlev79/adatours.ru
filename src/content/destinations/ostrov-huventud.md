@@ -5,7 +5,7 @@ slug: isla-de-la-juventud
 status: "approved"
 name: "Остров Хувентуд"
 countryId: "country_cuba"
-destinationType: "island"
+destinationType: island
 summary: "Второй по величине остров Кубы привлекает пляжами и подводным миром. Здесь можно заниматься дайвингом, посетить старинную Нуэва-Херону, пещеры с пиктограммами и природные заповедники."
 searchAliases: []
 hero: {"src":"/media/destinations/isla-de-la-juventud/hero-enhanced-20261004.webp","alt":"Двое людей стоят на руках на песчаном пляже острова Хувентуд у бирюзового моря, Куба", hover: "Хувентуд: стойки на руках на морском пляже"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-na-ostrov-huventu
 sourceSnapshot: "https://drive.google.com/file/d/1LAFl_dC4h7cjdBL11DdryTC79y6FN4t5/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach", "theme_diving", "theme_culture", "theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Остров Хувентуд - место тусовок для молодежи!

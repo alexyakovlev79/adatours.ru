@@ -5,7 +5,7 @@ name: "Аху-Ханга-Пукуре"
 slug: "ahu-hanga-poukura"
 status: "approved"
 countryId: "country_chile"
-destinationType: "natural_area"
+destinationType: archaeological_site
 summary: "Аху-Ханга-Пукуре на южном побережье Рапа-Нуи хранит древнюю каменную платформу и поваленных моаи среди травы и океанского ветра."
 searchAliases: ["ahu-hanga-pukure"]
 hero: {"src": "/media/destinations/destination_chile_ahu_hanga_pukure/hero-generated-20261010-editorial-v1.webp", "alt": "Поваленные моаи и каменная платформа Ханга-Пукуре у океана", "hover": "Ханга-Пукуре: поваленные статуи на прибрежной платформе"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_chile_ahu_hanga_pukure.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 У Ханга-Пукуре океан подходит к темным камням южного побережья Рапа-Нуи. Над низкой травой видны остатки древней церемониальной платформы, а рядом лежат поваленные моаи. Их вытянутые лица и тяжелые каменные тела сохранили следы времени. Такое место лучше открывать медленно, рассматривая отдельные детали и слушая рассказ местного гида.

@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_barra_du_pirai.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Посещение фазенд посвящено истории кофе, устройству плантаций и обработке зерен. Экскурсии соединяют с прогулкой по территории усадьбы и дегустацией.

@@ -5,7 +5,7 @@ slug: granada
 status: "approved"
 name: "Гранада"
 countryId: "country_nicaragua"
-destinationType: "city"
+destinationType: city
 summary: "Колониальный город Никарагуа, основанный в 1524 году. Старинные церкви, крепость Ла-Польвора, сувенирные лавки и кофейни на улицах старого города."
 searchAliases: []
 hero: {"src":/media/countries/nicaragua/featureBands-2-enhanced-20261002.webp,"alt":"Старинная каменная церковь с несколькими башнями и высокими островерхими крышами, Гранада, Никарагуа", hover: "Гранада: каменные башни церкви под голубым небом"}
@@ -49,6 +49,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-granada-v-nikaragua
 sourceSnapshot: "https://drive.google.com/file/d/1056cAKPJ6xwUVR2we_4KvQ5kFvIw8YBV/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Гранада- один из самых старых городов Никарагуа

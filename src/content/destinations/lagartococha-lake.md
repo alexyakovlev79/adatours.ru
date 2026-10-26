@@ -5,7 +5,7 @@ name: "Озеро Лагартокоча"
 slug: "lagartococha-lake"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: lake
 summary: "Лагартокоча в районе Сача Лодж открывает Амазонию через тихую прогулку на каноэ среди заболоченного и затопленного леса."
 searchAliases: []
 hero: {"src": "/media/destinations/sacha-reserve/gallery-generated-20261009-root-v1.webp", "alt": "Нос каноэ на темной воде затопленного леса заповедника Сача, Эквадор", hover: "Сача: нос каноэ между деревьями и их отражениями в воде"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_lagartococha_lake.md"
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 У Лагартокочи эквадорскую Амазонию удобнее рассматривать с каноэ. Озеро и прилегающие заболоченные участки входят в природные маршруты района Сача Лодж у реки Напо. Между водой и лесом трудно провести четкую границу: стволы отражаются в темной поверхности, корни уходят к берегу, а за поворотом открывается новая полоса зелени.

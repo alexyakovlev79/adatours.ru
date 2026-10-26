@@ -5,7 +5,7 @@ name: Ла-Макарена
 slug: la-macarena
 status: approved
 countryId: country_colombia
-destinationType: city
+destinationType: town
 summary: Ла-Макарена, колумбийский город, из которого отправляются к Каньо-Кристалес и на природные маршруты региона.
 hero:
   src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/la-macarena-town-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - la-makarena
 sourceSnapshot: data/source-index/materials/destination_colombia_la_makarena.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Ла-Макарена служит базой для знакомства с Каньо-Кристалес и окружающими речными ландшафтами. Здесь начинается наземная и лодочная часть путешествия: группа знакомится с местными правилами посещения природных территорий, затем отправляется к выбранному участку маршрута. Город связан с природой региона и с работой местных проводников.

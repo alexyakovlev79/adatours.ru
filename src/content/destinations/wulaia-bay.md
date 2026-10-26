@@ -5,7 +5,7 @@ name: Бухта Вулайя
 slug: wulaia-bay
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: bay
 summary: Бухта Вулайя находится на острове Наварино в чилийской Огненной Земле. Ее история связана с народом ямана и путешествиями экспедиции «Бигля».
 hero:
   src: /media/destinations/wulaia-bay/hero-generated-20261008.webp
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_buhta_vulajya.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В старом здании радиостанции работает музей, посвященный истории района. От берега тропы проходят через магелланов лес к смотровой площадке над бухтой. Посещение соединяет знакомство с культурным наследием и прогулку среди южных лесов.

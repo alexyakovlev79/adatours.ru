@@ -5,7 +5,7 @@ name: "Бухта Тагус"
 slug: "tagus-cove"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: bay
 summary: "Бухта Тагус на Исабеле соединяет прогулку к озеру Дарвина с наблюдением за пингвинами и бакланами у вулканических берегов."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_tagus_cove/hero-generated-20261010-third-ten-v1.webp", "alt": "Два галапагосских пингвина и баклан на камнях у воды бухты Тагус", "hover": "Бухта Тагус: пингвины и баклан на скалистом берегу"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_tagus_cove.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 Бухта Тагус укрыта вулканическими берегами на западной стороне Исабелы, напротив Фернандины. Корабли использовали ее как место стоянки еще в XIX веке. С воды хорошо видны склоны и очертания бухты, а у самого берега внимание переключается на птиц. Галапагосские пингвины и нелетающие бакланы делают каменные уступы особенно интересными для наблюдения.

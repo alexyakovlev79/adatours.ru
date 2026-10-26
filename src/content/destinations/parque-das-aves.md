@@ -5,7 +5,7 @@ name: Парк птиц в Игуасу
 slug: parque-das-aves
 status: approved
 countryId: country_brazil
-destinationType: natural_area
+destinationType: attraction
 summary: Тропическая зелень и просторные вольеры рядом с Национальным парком Игуасу. Здесь можно пройти среди ярких птиц Южной
   Америки и понаблюдать за ними с близкого расстояния.
 hero:
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_brazil_parque_das_aves.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Здесь особенно интересно задержаться у птиц с ярким оперением: одни свободно перелетают между ветвями, другие передвигаются по земле и ограждениям. За время прогулки можно познакомиться с разными представителями южноамериканской фауны.

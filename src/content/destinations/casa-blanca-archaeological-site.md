@@ -9,7 +9,7 @@ searchAliases:
 - Parque Arqueológico Casa Blanca
 - Каса Бланка
 countryId: country_el_salvador
-destinationType: route_cluster
+destinationType: archaeological_site
 summary: Каса-Бланка — археологический парк в Чальчуапе с доколумбовыми сооружениями, музеем и традицией работы
   с красителем индиго. Его посещают вместе с Тасумалем, чтобы познакомиться с разными этапами истории города.
 hero:
@@ -26,6 +26,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_casa_blanca_archaeological_site.md
 updatedAt: '2026-10-14'
+navigationRole: sight
 ---
 
 ## Ранний церемониальный центр Чальчуапы

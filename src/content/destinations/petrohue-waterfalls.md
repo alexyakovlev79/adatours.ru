@@ -5,7 +5,7 @@ name: Водопады Петроуэ
 slug: petrohue-waterfalls
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: waterfall
 summary: На водопадах Петроуэ бирюзовые потоки проходят между темными вулканическими скалами. Каскады находятся
   в Озерном крае Чили.
 hero:
@@ -18,6 +18,7 @@ searchAliases:
 - Водопады Петроуэ
 sourceSnapshot: data/source-index/materials/destination_chile_petrohue_waterfalls.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Контраст лавовых пород, прозрачной воды и зеленого леса определяет пейзаж этого участка национального парка Висенте-Перес-Росалес. В P109 посещение соединено с прогулкой по тропам и поездкой к вулкану Осорно.

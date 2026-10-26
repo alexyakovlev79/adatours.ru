@@ -5,7 +5,7 @@ name: Зоопарк Белиза
 slug: belize-zoo
 status: approved
 countryId: country_belize
-destinationType: natural_area
+destinationType: attraction
 summary: Зоопарк Белиза знакомит с животными страны. Его посещение помогает дополнить поездку по тропическим лесам наблюдением за их обитателями.
 hero:
   src: /media/destinations/belize-zoo/hero-generated-20261008.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_zoopark_beliza.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В маршрутах между Белиз-Сити и Сан-Игнасио зоопарк становится самостоятельной остановкой. Его часто посещают в один день с руинами Шунаантуньича, соединяя знакомство с природой и историей майя.

@@ -5,7 +5,7 @@ slug: laguna-miscanti
 status: approved
 name: Лагуна Мисканти
 countryId: country_chile
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Мисканти в Атакаме лежит среди сухих высокогорных плато и вулканических склонов.
 searchAliases:
 - laguna-miskanti
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_laguna_miskanti.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 У Мисканти темная вода контрастирует с сухими склонами Анд. Лагуну посещают вместе с соседней Миньикес во время поездок из Сан-Педро-де-Атакама.

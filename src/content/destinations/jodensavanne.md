@@ -5,7 +5,7 @@ name: Йоденсаванна
 slug: jodensavanne
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: historic_site
 summary: Йоденсаванна — историческое поселение на берегу реки Суринам, связанное с еврейской общиной страны. Сохранившиеся
   руины и кладбища рассказывают о жизни поселения и его плантационном прошлом.
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_jodensavanna.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Сохранившиеся руины и кладбища рассказывают о жизни поселения и его плантационном прошлом.

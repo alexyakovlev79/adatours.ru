@@ -5,7 +5,7 @@ slug: los-roques
 status: approved
 name: Лос Рокес
 countryId: country_venezuela
-destinationType: island
+destinationType: region
 summary: Лос Рокес — архипелаг из 346 крупных и мелких островов. Его коралловый риф охраняется национальным парком; путешественников ждут подводное плавание и прогулки на лодках.
 searchAliases: []
 hero:
@@ -46,6 +46,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-arhipelag-los-rokes-v-ven
 sourceSnapshot: https://drive.google.com/file/d/13xTxvdRL9dx2DMXz_o1VnUZjRfrHXXsX/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_wildlife", "theme_diving", "theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 Лос Рокес - это архипелаг, состоящий из 346 крупных и мелких островов. В 1972 году на базе архипелага создан Национальный парк и 24-ти километровый коралловый риф попал под охрану государства.

@@ -5,7 +5,7 @@ slug: plaza-francia
 status: approved
 name: "Пласа-Франсия"
 countryId: country_argentina
-destinationType: natural_area
+destinationType: viewpoint
 summary: "Южная стена Аконкагуа, висячие ледники и каменистая долина Хорконес. Пласа-Франсия дает возможность увидеть большую гору с ее самой суровой стороны."
 hero:
   src: /media/destinations/plaza-francia/hero-generated-20261010-last8-v1.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_plaza_francia.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 У Пласа-Франсия хочется остановиться и долго смотреть вверх. Южная стена Аконкагуа поднимается над каменистой долиной: темные скалы прорезаны снежными полосами, выше лежат висячие ледники. На этом фоне человек с рюкзаком выглядит крошечным. Сюда идут ради близкого знакомства с горой, которая обычно остается далекой вершиной на горизонте.

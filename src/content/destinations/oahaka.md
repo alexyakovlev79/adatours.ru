@@ -5,7 +5,7 @@ slug: oaxaca
 status: "approved"
 name: "Оахака"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Оахака находится в горах Сьерра-Мадре-дель-Сур на юге Мексики. Город привлекает археологическими памятниками, местной кухней и изделиями ремесленников."
 searchAliases: []
 hero: {"src":/media/countries/mexico/featureBands-3-enhanced-20261002.webp,"alt":"Разноцветные тканые изделия с геометрическими узорами на рынке Оахаки, Мексика", hover: "Оахака: яркие узорчатые ткани и бахрома на рыночном прилавке"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-oahaka-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1H_FheTmSZMLyhuU1z_9icBhWPz_lUdPP/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_gastronomy_wine"]
+navigationRole: hub
 ---
 
 ## Оахака - история Мексики!

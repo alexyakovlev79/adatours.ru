@@ -5,7 +5,7 @@ slug: valdivia-puerto-montt
 status: approved
 name: "Вальдивия и Пуэрто Монт"
 countryId: "country_chile"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Вальдивия, Пуэрто Варас и Пуэрто Монт: озерный район Чили, речные прогулки, водные лыжи и рафтинг. В Вальдивии сохранились испанские форты."
 searchAliases: []
 hero:
@@ -40,6 +40,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-valdiviyu-puehrto-varas-p
 sourceSnapshot: "https://drive.google.com/file/d/1LbcEmDowoHF5R_Jmf5KDihiJJvJCYqIz/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_wildlife", "theme_adventure", "theme_culture", "theme_nature"]
+navigationRole: hub
 ---
 
 ### Вальдивия

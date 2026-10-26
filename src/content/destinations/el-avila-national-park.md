@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_nacionalnyj_park_avila.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Национальный парк Авила расположен на горном массиве, поднимающемся над Каракасом. Лесистые склоны отделяют городскую долину от карибского побережья и создают заметный природный фон столицы. С высоты видны плотная застройка внизу и последовательность горных хребтов.

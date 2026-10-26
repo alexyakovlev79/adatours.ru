@@ -5,7 +5,7 @@ name: Бока-Чика
 slug: boca-chica
 status: approved
 countryId: country_panama
-destinationType: city
+destinationType: village
 summary: Бока-Чика в Панаме, тихоокеанское поселение и база морских поездок по Чирикскому заливу.
 hero:
   src: /media/tours/lyuksovyj-tur-v-panamu-s-plyazhnym-otdyhom-na-ostrove-baru/itinerary-3-images-0-src-regenerated-20261011-v2.webp
@@ -22,6 +22,7 @@ searchAliases:
 - boka-chika
 sourceSnapshot: data/source-index/materials/destination_panama_boka_chika.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Бока-Чика находится в тихоокеанской части Панамы, возле Чирикского залива. Поселение связано с выходами к островам и морскими поездками. Вода, береговая растительность и небольшие суда определяют главное впечатление от прибрежного места.

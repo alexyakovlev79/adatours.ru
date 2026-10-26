@@ -5,7 +5,7 @@ slug: sugarloaf-mountain
 status: approved
 name: Сахарная Голова
 countryId: country_brazil
-destinationType: natural_area
+destinationType: mountain
 summary: Сахарная Голова, гранитная вершина у входа в залив Гуанабара, открывает Рио-де-Жанейро с высоты. Подъем
   по канатной дороге проходит через Урку, а перед окнами кабины появляются бухты, пляжи и городские кварталы.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_brazil_rio
 sourceSnapshot: data/source-index/materials/destination_brazil_sugarloaf_mountain.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 Путешествие к вершине начинается у Прая-Вермелья. Первая кабина поднимается на Урку, вторая продолжает путь на Сахарную Голову. Уже во время подъема видно, как город огибает зеленые склоны и выходит к воде.

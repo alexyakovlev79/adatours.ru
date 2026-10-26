@@ -31,6 +31,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_petropolis.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Осмотр включает Императорский музей и Кристальный дворец. Поездка позволяет увидеть другую сторону региона Рио: городские улицы и исторические здания среди горных окрестностей.

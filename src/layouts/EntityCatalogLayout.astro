@@ -1,4 +1,5 @@
 ---
+import { destinationTypeLabel } from '../lib/destination-taxonomy.mjs';
 import catalogHeroOverrides from '../data/media/catalog-hero-overrides.json';
 import { countLabel, countryMembership } from '../lib/interest-model.mjs';
 import { seoPaginatedTitle } from '../lib/seo-page.mjs';
@@ -136,7 +137,7 @@ const cards = entries.map((entry) => {
     return { data: d, title: d.title, text: d.lead, href: excursionPath(d), meta: [d.duration, d.format].filter(Boolean).join(' · ') };
   }
   const d = (entry as CollectionEntry<'destinations'>).data;
-  return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: variant === 'global-places' ? countryRoute(d.countryId).name : '' };
+  return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: [variant === 'global-places' ? countryRoute(d.countryId).name : '', destinationTypeLabel(d.destinationType)].filter(Boolean).join(' · ') };
 });
 const absoluteUrl = (path: string) => new URL(withBase(path), Astro.site ?? 'https://adatours.ru/').toString();
 const listSchema = {

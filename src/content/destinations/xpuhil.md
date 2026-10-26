@@ -5,7 +5,7 @@ name: Шпухиль
 slug: xpuhil
 status: approved
 countryId: country_mexico
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Шпухиль в мексиканском Кампече, археологический комплекс майя с сооружениями архитектурного стиля Рио-Бек.
 hero:
   src: /media/tours/cancun-palenque-cenot/xpuhil-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - shpuhil
 sourceSnapshot: data/source-index/materials/destination_mexico_shpuhil.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Шпухиль находится в Кампече и связан с древними поселениями майя. Его архитектура относится к региону Рио-Бек. Особенно заметно сооружение с 3 высокими каменными башнями, которые поднимаются над нижней частью здания и показывают местный прием оформления монументальных фасадов.

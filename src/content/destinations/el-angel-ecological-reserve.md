@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_el_angel_ecological_reserve.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Его узнаваемая растительность — фрайлехоны, характерные для прохладного и влажного парамо.

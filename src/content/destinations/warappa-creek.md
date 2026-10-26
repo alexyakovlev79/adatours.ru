@@ -5,7 +5,7 @@ name: Ручей Вараппа
 slug: warappa-creek
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: river
 summary: Ручей Вараппа проходит среди мангровых зарослей прибрежного Суринама. Поездки по воде знакомят с болотными ландшафтами
   и окрестностями старых плантаций.
 hero:
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_ruchej_varappa.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Поездки по воде знакомят с болотными ландшафтами и окрестностями старых плантаций.

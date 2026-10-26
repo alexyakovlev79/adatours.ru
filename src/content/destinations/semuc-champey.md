@@ -17,6 +17,7 @@ searchAliases:
 - semuk-champej
 sourceSnapshot: data/source-index/materials/destination_guatemala_semuk_champej.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Семук-Чампей известен естественными бассейнами над руслом реки Кахабон. Река уходит под природный известняковый мост и затем снова появляется на поверхности. Над подземным участком вода образует отдельные чаши и небольшие каскады, которые вместе создают необычный речной пейзаж.

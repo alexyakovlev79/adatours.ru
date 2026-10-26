@@ -17,6 +17,7 @@ searchAliases:
 - solonchak-chiguana
 sourceSnapshot: data/source-index/materials/destination_bolivia_solonchak_chiguana.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Чигуана находится в боливийской части Альтиплано. Солончак показывает сухой высокогорный ландшафт: открытая поверхность земли и дальние горы оставляют широкий обзор. Его посещают на маршрутах по юго-западу страны вместе с лагунами и вулканическими районами.

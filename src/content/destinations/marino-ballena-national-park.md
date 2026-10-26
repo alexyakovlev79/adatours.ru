@@ -17,6 +17,7 @@ searchAliases:
 - nacionalnyj-park-marino-ballena
 sourceSnapshot: data/source-index/materials/destination_costa_rica_nacionalnyj_park_marino_ballena.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Марино-Баллена расположен на южном тихоокеанском побережье Коста-Рики. Парк связан с морскими прогулками и наблюдением за животными в естественной среде. В местных водах встречаются горбатые киты, дельфины и морские черепахи; возможность увидеть их зависит от природных условий.

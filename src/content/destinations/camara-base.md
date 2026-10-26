@@ -5,7 +5,7 @@ slug: camara-base
 status: approved
 name: База Камара
 countryId: country_antarctica
-destinationType: natural_area
+destinationType: building
 summary: Аргентинская сезонная антарктическая станция на острове Хаф-Мун.
 hero:
   src: /media/destinations/half-moon-island/hero-gpt-20261011-v1.webp
@@ -24,6 +24,7 @@ searchAliases:
 - База Камара
 sourceSnapshot: data/source-index/materials/destination_antarctica_camara_base.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 База Камара расположена на острове Хаф-Мун в Южных Шетландских островах. Аргентинская станция была основана 1 апреля 1953 года под названием «Баия-Луна», а в 1955 году получила имя морского офицера Хуана Камары. После антарктической кампании 1959–1960 годов база стала сезонной.

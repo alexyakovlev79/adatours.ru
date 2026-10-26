@@ -5,7 +5,7 @@ slug: david
 status: "approved"
 name: "Давид"
 countryId: "country_panama"
-destinationType: "city"
+destinationType: city
 summary: "Город Панамы, откуда начинаются туристические маршруты. В Давиде соседствуют старые кварталы и современная часть с магазинами, кафе и ресторанами."
 searchAliases: []
 hero: {"src":"/media/destinations/david/hero-enhanced-20261023-v2.webp","alt":"Закатное солнце между высотными зданиями большого города","hover":"Солнечные лучи среди темных силуэтов современных небоскребов"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-david-v-paname"
 sourceSnapshot: "https://drive.google.com/file/d/1FoaM45CbloAG8rki3O25TMir9k1wk38T/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Город Давид

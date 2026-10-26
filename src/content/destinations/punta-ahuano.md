@@ -5,7 +5,7 @@ name: Пунта-Ауано
 slug: punta-ahuano
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: attraction
 summary: Пунта-Ауано — речная остановка в районе Ауано, связанная с поездками по Напо. Здесь наземная часть маршрута переходит в знакомство с водой и тропическим лесом.
 hero:
   src: /media/destinations/punta-ahuano/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_punta_auano.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Здесь наземная часть маршрута переходит в знакомство с водой и тропическим лесом.

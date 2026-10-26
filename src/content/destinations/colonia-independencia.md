@@ -17,6 +17,7 @@ searchAliases:
 - koloniya-independensiya
 sourceSnapshot: data/source-index/materials/destination_paraguay_koloniya_independensiya.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Колония-Индепенденсия находится в регионе Гуайра. Ее окрестности связаны с лесами, холмами и водопадами, по которым проходят прогулочные маршруты. Природное окружение позволяет остановиться вне столицы и познакомиться с более зеленой частью Парагвая.

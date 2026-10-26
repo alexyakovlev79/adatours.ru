@@ -5,7 +5,7 @@ slug: "corrientes"
 status: "approved"
 name: "Корриентес"
 countryId: "country_argentina"
-destinationType: "city"
+destinationType: city
 summary: "Город на реке Парана и удобная остановка на пути к водно-болотным угодьям Ибера."
 searchAliases: ["korrientes"]
 themes: ["theme_culture"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_korrientes.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Корриентес — город на северо-востоке Аргентины, на берегу реки Парана. Его набережная обращена к широкой реке, а городской центр знакомит с жизнью аргентинского Литораля. Прогулка вдоль воды дает возможность увидеть простор речного ландшафта и сменить темп после переезда или перелета.

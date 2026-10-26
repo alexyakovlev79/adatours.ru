@@ -5,7 +5,7 @@ slug: monterrico-mangroves
 status: approved
 name: Мангровые заросли Монтеррико
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: wetland
 summary: Водные каналы среди переплетенных корней и зеленых крон показывают другую сторону тихоокеанского побережья
   Гватемалы.
 hero:
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_guatemala_monterrico_mangroves.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 За открытым океанским берегом Монтеррико начинается мир спокойной воды. Каналы проходят между мангровыми деревьями, их корни стоят у самой поверхности, а зелень отражается в воде. С лодки удобно рассматривать этот прибрежный лес и наблюдать птиц.

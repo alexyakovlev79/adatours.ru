@@ -5,7 +5,7 @@ slug: san-andres
 status: "approved"
 name: "Сан-Андрес"
 countryId: "country_colombia"
-destinationType: "island"
+destinationType: island
 summary: "Сан-Андрес, колумбийский остров в Карибском море, привлекает пляжами, коралловыми рифами и дайвингом. В пещере Морганс-Кейв живут легенды о пиратских сокровищах."
 searchAliases: []
 hero: {"src":"/media/destinations/san-andres/hero-enhanced-20261003.webp","alt":"Бирюзовая морская бухта с пальмами на Сан-Андресе, Колумбия","hover":"Сан-Андрес в Колумбии: пальмы над прозрачной водой и островной бухтой"}
@@ -32,6 +32,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-san-andres-i-prov
 sourceSnapshot: "https://drive.google.com/file/d/1unHNok8rwJSHO5RkIUTzcpIzMr4Buc09/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_diving"]
+navigationRole: hub
 ---
 
 ## Сан-Андрес - таинственный остров Карибов

@@ -5,7 +5,7 @@ slug: guachipas
 status: approved
 name: Гуачипас
 countryId: country_argentina
-destinationType: city
+destinationType: town
 summary: Гуачипас — тихий поселок долины Лерма и отправная точка к древней наскальной живописи провинции Сальта.
 hero:
   src: /media/destinations/guachipas/hero-generated-20261011-p107-v1.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_argentina_guachipas.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Гуачипас лежит в долине Лерма, к югу от Сальты. Здесь маршрут по северу Аргентины проходит через небольшой сельский поселок: низкие дома, главную площадь и церковь Непорочного Зачатия. За жилыми кварталами открываются холмы и долина, а местная жизнь по-прежнему тесно связана с землей и традициями региона.

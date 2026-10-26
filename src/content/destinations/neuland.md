@@ -5,7 +5,7 @@ name: Нюланд
 slug: neuland
 status: approved
 countryId: country_paraguay
-destinationType: city
+destinationType: town
 summary: Нюланд в парагвайском Чако, меннонитская колония с историей переселенцев и сельских общин.
 hero:
   src: /media/tours/klassicheskij-paragvaj/neuland-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - nyuland
 sourceSnapshot: data/source-index/materials/destination_paraguay_nyuland.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Нюланд входит в район меннонитских колоний Чако. Поселение связано с историей общин, которые создавали хозяйства и налаживали жизнь в сухом природном окружении. Знакомство с ним дополняет посещение Филадельфии и рассказ о переселенцах в музее Якоба Унгера.

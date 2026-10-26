@@ -19,6 +19,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_zapovednik_mashpi.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Программы здесь посвящены прогулкам среди влажной растительности и наблюдению за природой лесных склонов.

@@ -5,7 +5,7 @@ name: Водопад Котел Дьявола (Баньос)
 slug: pailon-del-diablo-waterfall
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: waterfall
 summary: Пайлон-дель-Дьябло, или «Котёл дьявола», — мощный водопад у Рио-Верде в окрестностях Баньоса. Вода падает
   в скальную чашу, поднимая брызги над каменными уступами.
 hero:
@@ -21,6 +21,7 @@ facts: []
 featureBands: []
 sourceSnapshot: https://drive.google.com/file/d/1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x/view
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Пешеходные дорожки и смотровые площадки позволяют увидеть каскад с разных сторон. Влажный лес, шум воды и узкое ущелье создают здесь особую атмосферу. Дорожки возле водопада бывают мокрыми, поэтому для прогулки подходит обувь с нескользящей подошвой.

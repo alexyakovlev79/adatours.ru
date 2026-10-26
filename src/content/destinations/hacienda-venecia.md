@@ -5,7 +5,7 @@ name: Асьенда Венесия
 slug: hacienda-venecia
 status: approved
 countryId: country_colombia
-destinationType: natural_area
+destinationType: attraction
 summary: Асьенда Венесия возле Манисалеса в Колумбии, действующая кофейная ферма с экскурсиями по производству и приготовлению
   кофе.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Hacienda Venecia
 sourceSnapshot: data/source-index/materials/destination_colombia_hacienda_venecia.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Асьенда Венесия находится в сельских окрестностях Манисалеса, в кофейном регионе Колумбии. Это действующая ферма, где знакомятся с выращиванием, сбором и обработкой зерна. Плантации и традиционные дома позволяют увидеть производство в его естественном окружении, за пределами городской кофейни.

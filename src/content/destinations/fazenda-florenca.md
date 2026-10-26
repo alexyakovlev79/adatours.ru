@@ -5,7 +5,7 @@ slug: fazenda-florenca
 status: approved
 name: Фазенда Флоренса
 countryId: country_brazil
-destinationType: route_cluster
+destinationType: historic_site
 summary: Фазенда Флоренса, кофейная усадьба с историей с 1852 года, входит в маршруты по Долине кофе.
 searchAliases:
 - "Fazenda Florença"
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_fazenda_florenca.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Фазенда Флоренса представлена в программе как кофейная плантация, работающая с 1852 года. Посещение посвящено истории усадьбы и кофейного хозяйства.

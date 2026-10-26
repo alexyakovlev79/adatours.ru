@@ -5,7 +5,7 @@ slug: san-blas-islands
 status: "approved"
 name: "Архипелаг Сан-Блас"
 countryId: "country_panama"
-destinationType: "island"
+destinationType: island
 summary: "Архипелаг вдоль карибского побережья Панамы. Туры с посещением деревень куна, рыбалка и дайвинг знакомят с островами Сан-Блас."
 searchAliases: []
 hero: {"src":/media/countries/panama/featureBands-3-enhanced-20261002.webp,"alt":"Небольшая лодка под пальмами на песчаном берегу островов Сан-Блас у бирюзовой воды, Панама", hover: "Сан-Блас: лодка и пальмы на морском берегу"}
@@ -40,6 +40,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-arhipelag-san-blas-v-pan
 sourceSnapshot: "https://drive.google.com/file/d/1kNHUsa9ipvi2GUeQ9caudUoTz_VNdIzU/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_culture","theme_diving","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Острова Сан-Блас!

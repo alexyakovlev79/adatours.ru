@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import { countLabel } from '../../lib/interest-model.mjs';
 import { nextMultiCountryOptions } from '../../lib/multi-country-combinations.mjs';
 
 import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
@@ -10,7 +11,8 @@ interface Props { selected?: string[]; themeId?: string; }
 const { selected = [], themeId } = Astro.props;
 const index = await getMultiCountryCatalog();
 const { countries, combinations, interests, allInterestsHref } = multiCountryPickerOptions(index, selected, themeId);
-const themeSlug = interests.find((option) => option.id === themeId)?.slug;
+const selectedInterest = interests.find((option) => option.id === themeId);
+const themeSlug = selectedInterest?.slug;
 const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
 const nextOptions = (prefix: string[]): CountryOption[] =>
   nextMultiCountryOptions(combinations, prefix)
@@ -91,10 +93,10 @@ const descriptions = ['Первая страна', 'Вторая страна', 
             selected={interest.id === themeId}
             data-filter-option={interest.id}
             data-href={withBase(interest.href)}
-          >{interest.label}</option>
+          >{interest.label} · {countLabel(interest.count)}</option>
         ))}
       </select>
-      <span class="mc-picker__placeholder-text" aria-hidden="true">Выбрать интерес</span>
+      <span class="mc-picker__placeholder-text" aria-hidden="true">{selectedInterest?.label ?? 'Выбрать интерес'}</span>
       <svg class="mc-picker__select-arrow" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
         <path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
       </svg>
@@ -222,6 +224,11 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   .mc-picker__field select.mc-picker__select--placeholder + .mc-picker__placeholder-text,
   .mc-picker__interest select.mc-picker__select--placeholder + .mc-picker__placeholder-text {
     display: block;
+  }
+  /* Popup options retain tour counts; the closed control displays only the chosen name. */
+  .mc-picker__interest select:not(.mc-picker__select--placeholder) + .mc-picker__placeholder-text {
+    display: block;
+    color: var(--color-ink);
   }
   .mc-picker__field select option,
   .mc-picker__interest select option { color: var(--color-ink); }

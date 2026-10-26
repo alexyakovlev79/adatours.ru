@@ -172,11 +172,11 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   interestSelect?.addEventListener('change', () => {
     const href = interestSelect.selectedOptions[0]?.dataset.href;
     if (!href) return;
-    try {
-      if (selected.length === 1) window.sessionStorage.setItem(firstCountryState, selected[0]);
-    } catch { /* Optional ephemeral first-country persistence. */ }
     const destination = new URL(href, window.location.origin);
     if (window.location.pathname !== destination.pathname) {
+      try {
+        if (selected.length === 1) window.sessionStorage.setItem(firstCountryState, selected[0]);
+      } catch { /* Optional ephemeral first-country persistence. */ }
       navigateKeepingPicker(destination);
     } else {
       // Selecting "Все интересы" on an already unfiltered page is a no-op.

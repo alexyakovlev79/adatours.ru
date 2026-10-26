@@ -164,6 +164,8 @@ test('multi-country uses matching native country and interest selectors without 
   assert.ok(multi.includes('<option value="" disabled selected={!themeId} data-mc-interest-placeholder>'));
   assert.ok(multi.includes('data-mc-interest-reset'), 'Can reset just interest');
   assert.ok(multi.includes('mc-picker__interest-fallback'), 'Preserve crawlable navigation without JavaScript');
+  assert.ok(multi.includes('countLabel(interest.count)'), 'Keep tour counts in the opened interest list');
+  assert.ok(multi.includes("selectedInterest?.label ?? 'Выбрать интерес'"), 'Keep only the interest name in the closed field');
   assert.ok(multi.includes('.mc-picker__field select,\n  .mc-picker__interest select'), 'Share exact same visual select CSS');
   assert.ok(client.includes('interestSelect?.addEventListener(\'change\''), 'Native dropdown navigates');
   assert.ok(client.includes('sessionStorage.setItem(firstCountryState, selected[0])'), 'Keep first country during interest changes');

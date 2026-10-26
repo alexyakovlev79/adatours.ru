@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_paseo_yugoslavo",
+  "stableId": "destination_chile_paseo_yugoslavo",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/paseo-yugoslavo/",
+  "sourceFingerprint": "960f7a89c0637189690629c72350867922491d3f5cfa481ea0ab205736eb9f45",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {
+    "officialUrl": "https://www.mhnv.gob.cl/espacios/paseo-yugoslavo"
+  },
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://www.mhnv.gob.cl/espacios/paseo-yugoslavo",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Точное самостоятельное место и страна сверены с официальным источником, утверждённым резервом и текущим MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://www.mhnv.gob.cl/espacios/paseo-yugoslavo",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Независимые тип и навигационная роль сохранены из утверждённого каталога; текст описывает тот же объект."
+    },
+    {
+      "field": "external.officialUrl",
+      "sourceUrl": "https://www.mhnv.gob.cl/espacios/paseo-yugoslavo",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Официальная страница описывает именно этот именованный объект."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://www.mhnv.gob.cl/espacios/paseo-yugoslavo",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Географическая связь проверена по источнику и каноническим ID."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Пасео-Югославо",
+      "reason": "Точное самостоятельное место и страна сверены с официальным источником, утверждённым резервом и текущим MD."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "viewpoint",
+      "reason": "Класс соответствует реальному объекту и закрытому справочнику сайта."
+    },
+    {
+      "field": "external.officialUrl",
+      "probability": 99,
+      "selected": "https://www.mhnv.gob.cl/espacios/paseo-yugoslavo",
+      "reason": "Подтверждён точный объект, не более широкий парк, район или государственный орган."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Связь прямо подтверждена текущим источником."
+    }
+  ],
+  "reviewNote": "Паспорт текущей редакции P172. Координаты и непроверенные внешние ID не добавлены; отсутствие этих полей не мешает подтверждённой идентичности. Не является заявлением об уже выполненной публикации.",
+  "entityClass": "viewpoint"
+}

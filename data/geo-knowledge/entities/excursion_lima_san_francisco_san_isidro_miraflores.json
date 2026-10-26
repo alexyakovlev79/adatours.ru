@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-excursion-excursion_lima_san_francisco_san_isidro_miraflores",
+  "stableId": "excursion_lima_san_francisco_san_isidro_miraflores",
+  "kind": "excursion",
+  "canonicalPath": "/peru/lima/san-francisco-san-isidro-miraflores/",
+  "sourceFingerprint": "732f26da6bbb4ff37e976807e2b308dd652b713744c08432735e18442c5dee10",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "composite",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_peru"
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_peru_lima",
+      "position": 1
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_peru_lima_plaza_mayor",
+      "position": 2
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_peru_lima_cathedral",
+      "position": 3
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_peru_san_francisco_monastery_lima",
+      "position": 4
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_peru_san_isidro_lima",
+      "position": 5
+    },
+    {
+      "type": "visits",
+      "targetId": "destination_peru_lima_miraflores",
+      "position": 6
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Точный продукт P172/самостоятельный экскурсионный модуль проверен по свежему полному Word; чужие варианты и дополнительные услуги не перенесены."
+    },
+    {
+      "field": "relationships.country_peru",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Географическая связь проверена по источнику и каноническим ID."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Обязательное посещение по точной программе Word и текущему MD; номер — порядок первого появления в маршруте."
+    },
+    {
+      "field": "relationships.destination_peru_lima_plaza_mayor",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Обязательное посещение по точной программе Word и текущему MD; номер — порядок первого появления в маршруте."
+    },
+    {
+      "field": "relationships.destination_peru_lima_cathedral",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Обязательное посещение по точной программе Word и текущему MD; номер — порядок первого появления в маршруте."
+    },
+    {
+      "field": "relationships.destination_peru_san_francisco_monastery_lima",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Обязательное посещение по точной программе Word и текущему MD; номер — порядок первого появления в маршруте."
+    },
+    {
+      "field": "relationships.destination_peru_san_isidro_lima",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Обязательное посещение по точной программе Word и текущему MD; номер — порядок первого появления в маршруте."
+    },
+    {
+      "field": "relationships.destination_peru_lima_miraflores",
+      "sourceUrl": "https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Обязательное посещение по точной программе Word и текущему MD; номер — порядок первого появления в маршруте."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Лима: Сан-Франциско, Сан-Исидро и Мирафлорес",
+      "reason": "Точный продукт P172/самостоятельный экскурсионный модуль проверен по свежему полному Word; чужие варианты и дополнительные услуги не перенесены."
+    },
+    {
+      "field": "relationships.country_peru",
+      "probability": 99,
+      "selected": "country_peru",
+      "reason": "Связь прямо подтверждена текущим источником."
+    },
+    {
+      "field": "relationships.destination_peru_lima",
+      "probability": 99,
+      "selected": "destination_peru_lima",
+      "reason": "Связь прямо подтверждена текущим источником."
+    },
+    {
+      "field": "relationships.destination_peru_lima_plaza_mayor",
+      "probability": 99,
+      "selected": "destination_peru_lima_plaza_mayor",
+      "reason": "Связь прямо подтверждена текущим источником."
+    },
+    {
+      "field": "relationships.destination_peru_lima_cathedral",
+      "probability": 99,
+      "selected": "destination_peru_lima_cathedral",
+      "reason": "Связь прямо подтверждена текущим источником."
+    },
+    {
+      "field": "relationships.destination_peru_san_francisco_monastery_lima",
+      "probability": 99,
+      "selected": "destination_peru_san_francisco_monastery_lima",
+      "reason": "Связь прямо подтверждена текущим источником."
+    },
+    {
+      "field": "relationships.destination_peru_san_isidro_lima",
+      "probability": 99,
+      "selected": "destination_peru_san_isidro_lima",
+      "reason": "Связь прямо подтверждена текущим источником."
+    },
+    {
+      "field": "relationships.destination_peru_lima_miraflores",
+      "probability": 99,
+      "selected": "destination_peru_lima_miraflores",
+      "reason": "Связь прямо подтверждена текущим источником."
+    }
+  ],
+  "reviewNote": "Паспорт текущей редакции P172. Координаты и непроверенные внешние ID не добавлены; отсутствие этих полей не мешает подтверждённой идентичности. Не является заявлением об уже выполненной публикации."
+}

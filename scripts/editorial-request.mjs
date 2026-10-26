@@ -97,14 +97,40 @@ function resolveContent(root,type,entry){
     fs.lstatSync(file).isSymbolicLink())fail('Invalid or missing content file');
  return file;
 }
+// Existing source entries are authoritative. Themes are additionally registered
+// by stable ID in interest-registry.json and may lack source-index entries.
+function resolveEditorialEntry(root,type,id){
+ const entryPath=path.join(root,'data/source-index/entries',id+'.json');
+ if(fs.existsSync(entryPath)){
+   const entry=JSON.parse(fs.readFileSync(entryPath,'utf8'));
+   if(entry.id!==id||entry.type!==type)fail('Source-index identity mismatch');
+   return entry;
+ }
+ if(type!=='theme')fail('Unknown canonical entity ID');
+ const registryPath=path.join(root,'src/data/interest-registry.json');
+ if(!fs.existsSync(registryPath))fail('Missing canonical interest registry');
+ const registry=JSON.parse(fs.readFileSync(registryPath,'utf8'));
+ const matches=Array.isArray(registry)?registry.filter(row=>isObject(row)&&row.id===id):[];
+ if(matches.length!==1||typeof matches[0].slug!=='string')
+   fail('Theme ID is not unique in canonical interest registry');
+ const dir=path.join(root,'src/content/themes');
+ const found=[];
+ for(const item of fs.readdirSync(dir,{withFileTypes:true})){
+   if(!item.isFile()||!/^[A-Za-z0-9_.-]+\.md$/u.test(item.name))continue;
+   const raw=fs.readFileSync(path.join(dir,item.name),'utf8');
+   let frontmatter;
+   try{frontmatter=yaml.load(splitContent(raw).fm,{json:false});}catch{continue;}
+   if(isObject(frontmatter)&&frontmatter.id===id&&frontmatter.slug===matches[0].slug)
+     found.push({id,type,contentPath:'src/content/themes/'+item.name});
+ }
+ if(found.length!==1)fail('Theme is not uniquely mapped to canonical Markdown');
+ return found[0];
+}
 export function applyEditorialRequest(root,actor,r,{write=false}={}){
  const access=JSON.parse(fs.readFileSync(path.join(root,'data/editorial/authorized-users.json'),'utf8'));
  if(!Array.isArray(access.allowedGithubLogins)||!access.allowedGithubLogins.includes(actor))
    fail('GitHub issue author not authorized: '+String(actor));
- const entryPath=path.join(root,'data/source-index/entries',r.entityId+'.json');
- if(!fs.existsSync(entryPath))fail('Unknown canonical entity ID');
- const entry=JSON.parse(fs.readFileSync(entryPath,'utf8'));
- if(entry.id!==r.entityId||entry.type!==r.entityType)fail('Source-index identity mismatch');
+ const entry=resolveEditorialEntry(root,r.entityType,r.entityId);
  const file=resolveContent(root,r.entityType,entry);
  const original=fs.readFileSync(file,'utf8');
  if(gitBlobSha(original)!==r.expectedBlobSha)fail('Stale content SHA; read latest file before resubmitting');

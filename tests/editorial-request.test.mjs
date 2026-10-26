@@ -68,3 +68,40 @@ test('identical edit is a no-op; new YAML fields cannot be created',()=>{
  assert.equal(applyEditorialRequest(root,'anna-account',request([{field:'title',value:'Пять стран'}])).changed,false);
  assert.throws(()=>applyEditorialRequest(root,'anna-account',request([{field:'priceBasis',value:'group'}])),/Cannot create/);
 });
+
+test('canonical interest registry allows theme edits without source-index entries',()=>{
+ const root=setup();
+ fs.mkdirSync(path.join(root,'src/content/themes'),{recursive:true});
+ fs.mkdirSync(path.join(root,'src/data'),{recursive:true});
+ fs.writeFileSync(path.join(root,'src/data/interest-registry.json'),
+   JSON.stringify([{id:'theme_spa',slug:'spa',name:'SPA и wellness'}]));
+ const theme=['---','id: theme_spa','slug: spa','locale: ru','status: approved',
+   'name: SPA и wellness','summary: Первоначальное описание','---',
+   '## Вступление','','Абзац.',''].join('\n');
+ const themePath=path.join(root,'src/content/themes/spa.md');
+ fs.writeFileSync(themePath,theme);
+ const req=parseEditorRequest(JSON.stringify({
+   version:1,entityType:'theme',entityId:'theme_spa',expectedBlobSha:gitBlobSha(theme),
+   changes:[{field:'summary',value:'Исправленное описание'}]
+ }));
+ const result=applyEditorialRequest(root,'anna-account',req,{write:true});
+ assert.equal(result.path,'src/content/themes/spa.md');
+ assert.match(fs.readFileSync(themePath,'utf8'),/summary: Исправленное описание/);
+ assert.throws(()=>applyEditorialRequest(root,'outsider',req),/not authorized/);
+});
+
+test('themes missing canonical registry identity cannot be edited',()=>{
+ const root=setup();
+ fs.mkdirSync(path.join(root,'src/content/themes'),{recursive:true});
+ fs.mkdirSync(path.join(root,'src/data'),{recursive:true});
+ fs.writeFileSync(path.join(root,'src/data/interest-registry.json'),
+   JSON.stringify([{id:'theme_spa',slug:'spa',name:'SPA'}]));
+ const theme=['---','id: theme_spa','slug: wrong-spa','locale: ru','status: approved',
+   'name: SPA','summary: Старый текст','---','Тело',''].join('\n');
+ fs.writeFileSync(path.join(root,'src/content/themes/spa.md'),theme);
+ const req=parseEditorRequest(JSON.stringify({
+   version:1,entityType:'theme',entityId:'theme_spa',expectedBlobSha:gitBlobSha(theme),
+   changes:[{field:'summary',value:'Новый текст'}]
+ }));
+ assert.throws(()=>applyEditorialRequest(root,'anna-account',req),/not uniquely mapped/);
+});

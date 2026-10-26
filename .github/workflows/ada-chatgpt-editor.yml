@@ -17,6 +17,8 @@ jobs:
       github.event.issue.pull_request == null
     runs-on: ubuntu-latest
     timeout-minutes: 50
+    env:
+      MEDIA_CDN_ORIGIN: https://img.adatours.ru
     steps:
       - uses: actions/checkout@v6
         with:

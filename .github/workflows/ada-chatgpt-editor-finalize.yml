@@ -1,0 +1,33 @@
+name: ADA editorial deployment confirmation
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types: [completed]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  confirm:
+    if: github.repository == 'alexyakovlev79/adatours.ru'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm exact editorial release once
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.event.workflow_run.head_sha }}
+          DEPLOY_RESULT: ${{ github.event.workflow_run.conclusion }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          message="$(gh api "repos/${GITHUB_REPOSITORY}/commits/${SHA}" --jq '.commit.message' | head -n 1)"
+          if [[ ! "$message" =~ ^content\(editor\):\ issue\ \#([0-9]+)$ ]]; then exit 0; fi
+          issue="${BASH_REMATCH[1]}"
+          marker="<!-- ada-editor-final:${issue}:${SHA} -->"
+          if gh api --paginate "repos/${GITHUB_REPOSITORY}/issues/${issue}/comments" --jq '.[].body' | grep -Fq "$marker"; then exit 0; fi
+          if [[ "$DEPLOY_RESULT" == success ]]; then
+            body="Опубликовано: Pages deploy успешно завершен для commit ${SHA}. ${RUN_URL}"
+          else
+            body="НЕ опубликовано: Pages deploy дал результат ${DEPLOY_RESULT} для commit ${SHA}. ${RUN_URL}"
+          fi
+          gh issue comment "$issue" --body "$body"$'\n\n'"$marker"

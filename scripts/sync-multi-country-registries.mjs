@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { buildMultiCountryCatalog } from '../src/lib/multi-country-catalog.mjs';
 import { multiCountrySnapshot, reconcileMultiCountryRegistries, multiCountrySeoSheetRow, multiCountryTypeLabel, csvText } from '../src/lib/multi-country-registry.mjs';
 import { reconcileInterestRegistries } from '../src/lib/interest-registry-projection.mjs';
+import { reconcileRuntimeRegistries } from '../src/lib/runtime-seo-registry.mjs';
 
 const json = (path) => JSON.parse(readFileSync(path, 'utf8'));
 export const PHASE_FILES = ['01-countries.json', '02-interests.json', '03-country-interest.json', '04-country-interest-vip.json', '05-tours.json', '06-places.json', '07-excursions.json'];
@@ -33,7 +34,8 @@ export async function syncMultiCountryRegistries({ root = process.cwd(), content
     covers: json(join(root, 'src/data/media/multi-country-heroes.json')).covers });
   const registryRoot = join(root, 'data/seo-geo/registry');
   const before = PHASE_FILES.map((name) => json(join(registryRoot, name)));
-  const interests = reconcileInterestRegistries(before, source);
+  const runtime = reconcileRuntimeRegistries(before, source, json(join(root, 'src/data/catalog/destinations.json')));
+  const interests = reconcileInterestRegistries(runtime, source);
   const reconciled = reconcileMultiCountryRegistries(interests, json(join(registryRoot, 'index.json')), snapshot);
   const outputs = new Map();
   PHASE_FILES.forEach((name, i) => {

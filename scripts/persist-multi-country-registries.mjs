@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { reconcileMultiCountryRegistries } from '../src/lib/multi-country-registry.mjs';
 import { PHASE_FILES, compactRegistry, readCatalogContent } from './sync-multi-country-registries.mjs';
 import { reconcileInterestRegistries } from '../src/lib/interest-registry-projection.mjs';
+import { reconcileRuntimeRegistries } from '../src/lib/runtime-seo-registry.mjs';
 
 const repo = process.env.GITHUB_REPOSITORY;
 const token = process.env.GH_TOKEN;
@@ -11,6 +12,7 @@ const sourceSha = process.env.CATALOG_SOURCE_SHA ?? process.env.GITHUB_SHA;
 if (!repo || !token || !sourceSha) throw new Error('GitHub repository, runtime token and source SHA are required');
 const snapshot = JSON.parse(readFileSync('data/catalogues/multi-country.json', 'utf8'));
 const interestContent = await readCatalogContent();
+const destinationCatalog = JSON.parse(readFileSync('src/data/catalog/destinations.json', 'utf8'));
 const base = 'https://api.github.com/repos/' + repo;
 const request = async (path, method = 'GET', body) => {
   const response = await fetch(base + path, { method, headers: {
@@ -31,7 +33,7 @@ const inputsChanged = async (head) => {
   if (head === sourceSha) return false;
   const result = await request('/compare/' + sourceSha + '...' + head);
   if (!['ahead', 'identical'].includes(result.status) || result.files?.length >= 250) return true;
-  return result.files.some((file) => /^(?:src\/content\/(?:tours|countries|themes|destinations|excursions)\/|src\/data\/interest-registry\.json|data\/catalog-archive\.json|src\/lib\/multi-country)/.test(file.filename));
+  return result.files.some((file) => /^(?:src\/content\/(?:tours|countries|themes|destinations|excursions)\/|src\/data\/(?:interest-registry\.json|catalog\/destinations\.json|media\/multi-country-heroes\.json)|data\/(?:catalog-archive\.json|source-index\/catalogs\/)|src\/(?:lib|pages)\/|scripts\/(?:sync-multi-country-registries|persist-multi-country-registries)\.mjs)/.test(file.filename));
 };
 for (const branch of ['main', 'seo-geo/staging']) {
   let completed = false;
@@ -43,7 +45,8 @@ for (const branch of ['main', 'seo-geo/staging']) {
       completed = true; break;
     }
     const sourceFiles = await Promise.all([...PHASE_FILES, 'index.json'].map((name) => fileAt('data/seo-geo/registry/' + name, head)));
-    const interests = reconcileInterestRegistries(sourceFiles.slice(0, -1).map((file) => file.json), interestContent);
+    const runtime = reconcileRuntimeRegistries(sourceFiles.slice(0, -1).map((file) => file.json), interestContent, destinationCatalog);
+    const interests = reconcileInterestRegistries(runtime, interestContent);
     const updated = reconcileMultiCountryRegistries(interests, sourceFiles.at(-1).json, snapshot);
     const changes = [];
     for (let i = 0; i < PHASE_FILES.length; i++) if (JSON.stringify(updated.phases[i]) !== JSON.stringify(sourceFiles[i].json))

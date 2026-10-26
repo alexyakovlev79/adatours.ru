@@ -147,17 +147,42 @@ export function complete(queue,state,{ownerId,token,result,now}){
   state.jobs[j.jobId]={...previous,status:result.status,resultHash:hash,resultPath:path,completedToken:token,completedBy:ownerId,completedAt:new Date(now).toISOString()};delete state.leases[j.jobId];
   return {hash,path};
 }
-export function beginPublication(queue,state,{batchId,ownerId,now}){
+export function geoPublicationScope({jobIds,contentCommit}={}){
+  if(jobIds===undefined){if(contentCommit!==undefined)throw Error('Addressed publication requires explicit jobIds');return null;}
+  if(!Array.isArray(jobIds)||!jobIds.length||new Set(jobIds).size!==jobIds.length
+    ||jobIds.some(id=>typeof id!=='string'||!/^geo-(?:country|destination|tour|excursion)-[a-z0-9_]+$/.test(id))
+    ||typeof contentCommit!=='string'||!/^[a-f0-9]{40}$/.test(contentCommit))
+    throw Error('Addressed GEO publication requires unique canonical jobIds and the Word contentCommit');
+  return {jobIds:[...jobIds].sort(),contentCommit};
+}
+export function geoPublicationScopeMatches(publication,scope){
+  return !!publication&&(!scope||publication.contentCommit===scope.contentCommit
+    &&stable(publication.jobs.map(row=>row.jobId).sort())===stable(scope.jobIds));
+}
+export function beginPublication(queue,state,{batchId,ownerId,now,jobIds,contentCommit}){
+  const scope=geoPublicationScope({jobIds,contentCommit});
   const active=state.publication;
   if(active&&!['PUBLISHED','FAILED'].includes(active.status)){
-    if(active.ownerId===ownerId&&active.batchId===batchId)return active;
+    if(active.ownerId===ownerId&&active.batchId===batchId&&geoPublicationScopeMatches(active,scope))return active;
     throw Error('Publication already in progress; reconcile commit/deploy before taking over');
   }
-  // The publisher takes every READY result from this fixed snapshot. Collector batchSize is separate.
-  const jobs=queue.jobs.filter(j=>statusOf(state,j)==='READY')
+  // Default still takes every READY result. Explicit Word scope never expands into that backlog.
+  if(scope)for(const id of scope.jobIds){
+    const matches=queue.jobs.filter(j=>j.jobId===id),row=state.jobs[id];
+    if(matches.length!==1||statusOf(state,matches[0])!=='READY')throw Error('Addressed GEO job is not uniquely READY: '+id);
+    if((row.wordRevisionCommit||row.inlineCreationCommit)!==scope.contentCommit)
+      throw Error('Addressed GEO job does not belong to the Word content commit: '+id);
+    if(row.geoSheetSync?.status!=='SYNCED')throw Error('Addressed GEO Sheets are not SYNCED: '+id);
+    if(state.leases?.[id])throw Error('Addressed GEO job still has a worker lease: '+id);
+    if(!/^[a-f0-9]{64}$/.test(row.resultHash||'')||!row.resultPath?.startsWith('data/geo-knowledge/results/'+id+'/'))
+      throw Error('Addressed GEO immutable result receipt missing: '+id);
+  }
+  const jobs=queue.jobs.filter(j=>statusOf(state,j)==='READY'&&(!scope||scope.jobIds.includes(j.jobId)))
     .sort((a,b)=>a.stage-b.stage||a.sourceOrder-b.sourceOrder||a.jobId.localeCompare(b.jobId));
   if(!jobs.length)return null;
-  state.publication={batchId,ownerId,status:'PUBLISHING',startedAt:new Date(now).toISOString(),jobs:jobs.map(j=>({jobId:j.jobId,resultHash:state.jobs[j.jobId].resultHash,resultPath:state.jobs[j.jobId].resultPath,sourceFingerprint:j.sourceFingerprint}))};
+  state.publication={batchId,ownerId,status:'PUBLISHING',startedAt:new Date(now).toISOString(),
+    ...(scope?{scope:'word_content_revision',contentCommit:scope.contentCommit}:{}),
+    jobs:jobs.map(j=>({jobId:j.jobId,resultHash:state.jobs[j.jobId].resultHash,resultPath:state.jobs[j.jobId].resultPath,sourceFingerprint:j.sourceFingerprint}))};
   for(const j of jobs)state.jobs[j.jobId].status='PUBLISHING';
   return state.publication;
 }

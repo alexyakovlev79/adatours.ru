@@ -13,6 +13,8 @@ import { excursionDestinationIds } from '../src/lib/destination-links.mjs';
 import { excursionIdsForTour } from '../src/lib/excursion-popularity.ts';
 import { buildInterestHub, interestsForCountry, interestTourCatalogPath, interestDestinationCatalogPath, interestExcursionCatalogPath, relatedInterestCatalogPath, themeIds } from '../src/lib/interest-model.mjs';
 import { tourHasMainCountry, tourHasMainDestination, tourHasOptionalDestination } from '../src/lib/tour-relations.ts';
+import { compactCatalogById } from './lib/compact-catalog-map.mjs';
+import { validateDestinationProjection } from './lib/destination-projection.mjs';
 
 const dataOnly = process.argv.includes('--data-only');
 const output = resolve('dist');
@@ -31,6 +33,7 @@ const excursionById = new Map(excursions.map((data) => [data.id, data]));
 const compactExcursionById = new Map(JSON.parse(read('data/source-index/catalogs/excursions.json')).entries.map((data) => [data.id, data]));
 const countryById = new Map(countries.map((data) => [data.id, data]));
 const destinationById = new Map(destinations.map((data) => [data.id, data]));
+const compactDestinationById = compactCatalogById(JSON.parse(read('data/source-index/catalogs/destinations.json')));
 const plannedById = new Map(JSON.parse(read('src/data/catalog/destinations.json')).map((data) => [data.id, data]));
 const compactById = new Map(JSON.parse(read('data/source-index/catalogs/tours.json')).entries.map((data) => [data.id, data]));
 const indexById = new Map(JSON.parse(read('data/source-index/index.json')).entries.map((data) => [data.id, data]));
@@ -108,6 +111,11 @@ for (const country of countries) {
   exactCatalogue(excursionCountryPath(country), excursions.filter((excursion) => excursionGeography(excursion).country.id === country.id).map((excursion) => excursion.id));
 }
 for (const place of destinations) {
+  const entry = JSON.parse(read(`data/source-index/entries/${place.id}.json`));
+  assert.deepEqual(validateDestinationProjection(place, {
+    catalog: plannedById.get(place.id), entry, compact: compactDestinationById.get(place.id),
+    canonicalUrl: destinationPath(place),
+  }), [], `${place.id}: canonical destination records must stay synchronized`);
   exactCatalogue(tourDestinationPath(place), tours.filter((tour) => tourHasMainDestination(tour, place.id)).map((tour) => tour.id));
   exactCatalogue(optionalTourDestinationPath(place), tours.filter((tour) => tourHasOptionalDestination(tour, place.id)).map((tour) => tour.id));
   const country = countryById.get(place.countryId);

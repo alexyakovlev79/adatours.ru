@@ -147,6 +147,48 @@
         "deployRun": 40312537725,
         "sheetRowsVerified": true
       }
+    },
+    {
+      "programKey": "P172",
+      "driveFileId": "1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS",
+      "name": "Brazil, Argentina, Chile & Peru 2027 15d14n RUS com 20%.docx",
+      "tourId": "tour_source_braziliya_argentina_chili_peru_ru",
+      "canonicalUrl": "/multi-country/tour/brazil-argentina-chile-peru-15-days/",
+      "queueType": "post_import_dependency_review",
+      "classification": "historical_programme_dependency_repair",
+      "status": "REVIEW",
+      "stage": "confirmed_repairs_prepared",
+      "detectedAt": "2026-10-26T16:48:42Z",
+      "sourceVersion": {
+        "modifiedTime": "2026-10-23T15:10:04Z",
+        "bytes": 10506009
+      },
+      "readableTextSha256": "009e0349b15e127f23e3dc674d909bfb2125002de57fcf9df2220c25b613e138",
+      "embeddedMediaSha256": "aeb746c303595caa00cd35c2cfe731831a03954e24a375eebc6387b7cbfa2729",
+      "auditPath": "data/audits/tour-pipeline-audit-20261026.json",
+      "confirmedRepairs": {
+        "day15LimaRestored": true,
+        "restoredExistingPlaceLinks": 30,
+        "newExcursions": 3,
+        "reusedExcursions": 8,
+        "newMobileDerivatives": 2,
+        "contentCommit": null,
+        "deployRun": null,
+        "excursionRefs": 11,
+        "gptImageSources": 28,
+        "mobileMappings": 7
+      },
+      "reason": "Пять новых мест имеют точную географию/тип/роль и связи, но требуют самостоятельных материалов. Все11 экскурсионных связей подготовлены: варианты дней3/6/9/12 сохраняют точный Word через override; день5 связан с подтверждённым базовым маршрутом. Полные исходные блоки и условия пакета сохранены.",
+      "unresolvedDestinationIds": [
+        "destination_chile_quinta_vergara_amphitheater",
+        "destination_chile_el_peral_funicular",
+        "destination_chile_paseo_yugoslavo",
+        "destination_peru_san_francisco_monastery_lima",
+        "destination_peru_san_isidro_lima"
+      ],
+      "unresolvedExcursionDays": [],
+      "nextStep": "После подтверждения content/GEO/Sheets продолжить только5 незаполненных мест по сохранённым источникам и резервам. Не возвращать разрешённую Анной опечатку2026→2027 вREVIEW, не пересоздавать11 связанных экскурсий/28готовых кадров/мобильныеварианты. До полного evidence всех стадий v2 не переноситьP172 вcompletedQueue повторно.",
+      "resolvedExcursionVariantsEvidence": "data/audits/tour-pipeline-p172-excursion-variants-20261026.json"
     }
   ],
   "runs": [
@@ -1733,6 +1775,19 @@
       "errors": [],
       "pendingFolderIds": [],
       "nextStep": "Retain five unresolved reviews: two conflicting PDFs, changed alternative Word P068, conflicting P153 brochure, and P172 tariff-year conflict (2027 heading versus 2026 table). No confirmed source replacement was detected."
+    },
+    {
+      "id": "tour-pipeline-audit-20261026",
+      "type": "user_requested_architecture_audit",
+      "checkedAt": "2026-10-26T16:48:42Z",
+      "scanStatus": "complete",
+      "foldersScanned": 28,
+      "filesObserved": 219,
+      "wordFiles": 212,
+      "pdfFiles": 7,
+      "auditPath": "data/audits/tour-pipeline-audit-20261026.json",
+      "publicationStatus": "prepared_pending_deploy",
+      "note": "No new source claimed; currentP172 used for real update/dependency regression test."
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",
@@ -5341,5 +5396,101 @@
       "finishedAtMoscow": "2026-10-26T14:27:12.655644+03:00",
       "remainingReview": 2
     }
-  ]
+  ],
+  "lifecyclePolicy": {
+    "version": "2026-10-26.v2",
+    "enforcedFrom": "2026-10-26T16:13:36Z",
+    "workflow": "docs/workflows/tour-2027-daily.md",
+    "automationId": "6acfa67a04c481919b8db6c320e4ef40",
+    "timezone": "Europe/Moscow",
+    "localRunTime": "04:00",
+    "scheduleEffectiveFrom": "2026-10-27",
+    "historicalCompletions": [
+      {
+        "programKey": "P117",
+        "driveFileId": "1CjiOSoQOYw57N_BEWBLto6w4aEU5KJDB",
+        "tourId": "tour_source_chili_argentina",
+        "completedAt": "2026-10-16T08:45:18.639748+00:00"
+      },
+      {
+        "programKey": "P153",
+        "driveFileId": "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
+        "tourId": "tour_source_5_stran_latinskoj_ameriki_i_parad_chempionov_karnavala",
+        "completedAt": "2026-10-16T08:45:18.639748+00:00"
+      },
+      {
+        "programKey": "P171",
+        "driveFileId": "1FO7BcjDJgArdLqmabhS5L9LW5Y4VmK0i",
+        "tourId": "tour_peru_bolivia_uyuni_lakes_15_days",
+        "completedAt": "2026-10-16T08:45:18.639748+00:00"
+      },
+      {
+        "programKey": "P170",
+        "driveFileId": "1S8O23p3rfd15P5ihSppvW2C-1cYmM57S",
+        "tourId": "tour_peru_bolivia_uyuni_12_days",
+        "completedAt": "2026-10-16T08:45:18.639748+00:00"
+      },
+      {
+        "programKey": "P100",
+        "driveFileId": "1oY-NYx09AKB4GytwNQwIDs7B0l4OYIDo",
+        "tourId": "tour_source_ves_mnogolikij_peru_ikitos",
+        "completedAt": "2026-10-21T02:22:06.627Z"
+      },
+      {
+        "programKey": "P115",
+        "driveFileId": "1mT6CCTXmmiOg8ebri3Yx_FDnwrsczLwz",
+        "tourId": "tour_source_vlyubites_v_argentinu",
+        "completedAt": "2026-10-21T02:22:06.627Z"
+      },
+      {
+        "programKey": "P114",
+        "driveFileId": "1XH94LwW3ziRhm3ueKHR2biMbg97e_PX1",
+        "tourId": "tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu",
+        "completedAt": "2026-10-22T02:37:29.129Z"
+      },
+      {
+        "programKey": "P025",
+        "driveFileId": "1DMMz4N6h5_STB3gI6GnrKauiAUON10qR",
+        "tourId": "tour_source_luchshee_iz_dvukh_mirov",
+        "completedAt": "2026-10-23T02:27:59.264Z"
+      },
+      {
+        "programKey": "P026",
+        "driveFileId": "1GUX4I3ummOv_b3JG7ZTVPljSEkDwIU-U",
+        "tourId": "tour_source_luchshee_v_belize",
+        "completedAt": "2026-10-23T02:27:59.264Z"
+      },
+      {
+        "programKey": "P150",
+        "driveFileId": "1hAdDKTlkxET9-5FnjPukSbHpGTwF9JTk",
+        "tourId": "tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii",
+        "completedAt": "2026-10-24T02:20:48.162Z"
+      },
+      {
+        "programKey": "P160",
+        "driveFileId": "1Q8HxqYQ1_9pYUyvD8Ksx9xfJCBO9xpJE",
+        "tourId": "tour_source_ekzoticheskij_karnaval_v_brazilii",
+        "completedAt": "2026-10-24T02:20:48.162Z"
+      },
+      {
+        "programKey": "P135",
+        "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
+        "tourId": "tour_source_mechty_sbyvayutsya_na_novyj_god",
+        "completedAt": "2026-10-26T11:27:12.655644+00:00"
+      },
+      {
+        "programKey": "P068",
+        "driveFileId": "1cDyQGEPklh2ckz6-JzwRmgE8O597QWwG",
+        "tourId": "tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej",
+        "completedAt": "2026-10-26T11:27:12.655644+00:00"
+      },
+      {
+        "programKey": "P172",
+        "driveFileId": "1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS",
+        "tourId": "tour_source_braziliya_argentina_chili_peru_ru",
+        "completedAt": "2026-10-26T11:27:12.655644+00:00"
+      }
+    ],
+    "note": "Historical completion receipts are preserved without retroactive v2 approval. New completions require a current source-bound lifecycle receipt."
+  }
 }

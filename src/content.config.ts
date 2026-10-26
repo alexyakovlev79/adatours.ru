@@ -2,6 +2,7 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { contentIdentity } from './lib/content-identity.mjs';
+import { DESTINATION_TYPES, NAVIGATION_ROLES } from './lib/destination-taxonomy.mjs';
 
 const contentLoader = (collection: string) => glob({
   base: `./src/content/${collection}`,
@@ -107,45 +108,8 @@ const destinations = defineCollection({
     ...common,
     name: z.string(),
     countryId: z.string(),
-    destinationType: z.enum([
-      'city',
-      'town',
-      'village',
-      'district',
-      'region',
-      'island',
-      'national_park',
-      'resort',
-      'natural_area',
-      'route_cluster',
-      'mountain',
-      'volcano',
-      'glacier',
-      'waterfall',
-      'lake',
-      'river',
-      'beach',
-      'canyon',
-      'cave',
-      'desert',
-      'valley',
-      'forest',
-      'wetland',
-      'archaeological_site',
-      'historic_site',
-      'museum',
-      'monument',
-      'religious_site',
-      'viewpoint',
-      'square',
-      'building',
-      'garden',
-      'peninsula',
-      'bay',
-      'attraction',
-      'other_landmark'
-    ]),
-    navigationRole: z.enum(['hub', 'sight']),
+    destinationType: z.enum(DESTINATION_TYPES),
+    navigationRole: z.enum(NAVIGATION_ROLES),
     summary: z.string(),
     imageTextAlign,
     hero: media,
@@ -214,6 +178,7 @@ const tours = defineCollection({
         z.object({
           type: z.literal('excursion'),
           excursionRef: z.string(),
+          title: z.string().optional(),
           text: z.string().optional(),
         }),
       ])).default([]),

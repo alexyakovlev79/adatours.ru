@@ -8,6 +8,7 @@ import { countryMembership, themeIds } from './interest-model.mjs';
 import { selectVipTours, vipTourPriceLabel } from './vip-tours.mjs';
 import { tourHasMainDestination, tourHasOptionalDestination } from './tour-relations';
 import { excursionDestinationIds } from './destination-links.mjs';
+import { excursionPlaceCatalogScope } from './excursion-catalog-scope.mjs';
 import { excursionIdsForTour } from './excursion-popularity';
 import {
   countryPath, destinationPath, tourPath, excursionPath, tourExcursionPath,
@@ -150,13 +151,10 @@ export function seoGeoScope(path, data) {
       destinations.filter((place) => place.data.countryId === country.id);
     if (country && path === excursionCountryPath(country)) scopedExcursions =
       excursions.filter((exc) => countryOfExcursion(exc.data, destinationById) === country.id);
-    const excursionPlace = destinations.find((place) =>
-      excursionDestinationPath({ ...place.data, countrySlug: countries.find((c) =>
-        c.data.id === place.data.countryId)?.data.slug ?? '' }) === path);
+    const excursionPlace = excursionPlaceCatalogScope(path, { destinations, excursions, countries });
     if (excursionPlace) {
-      scopedPlaces = [excursionPlace];
-      scopedExcursions = excursions.filter((exc) =>
-        excursionDestinationIds(exc.data).includes(excursionPlace.data.id));
+      scopedPlaces = excursionPlace.places;
+      scopedExcursions = excursionPlace.excursions;
     }
   }
 

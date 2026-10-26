@@ -8,20 +8,31 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { canonicalPath } from '../src/lib/routes.ts';
 import { validateGeneratedSourceMaterials } from '../src/lib/generated-source-materials.mjs';
+import { isDestinationType, isNavigationRole } from '../src/lib/destination-taxonomy.mjs';
+import { validateDirectAssetLedger } from './lib/direct-media-ledger.mjs';
 
-const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const defaultRepoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// Explicit repoRoot is for isolated fixtures; the CLI continues to use this checkout.
+// Validate the complete input before writing any index/catalog file.
+export function syncSourceCatalogs({ repoRoot = defaultRepoRoot } = {}) {
 const sourceRoot = path.join(repoRoot, 'data', 'source-index');
 const collections = { country: 'countries', destination: 'destinations', tour: 'tours', excursion: 'excursions' };
 const compactKeys = ['id', 'type', 'name', 'url', 'slug', 'contentPath', 'countryIds', 'destinationIds', 'sourceUrl'];
+const ledger = JSON.parse(fs.readFileSync(path.join(repoRoot, 'src/data/media/direct-s3-uploads.json'), 'utf8'));
+const ledgerCheck = validateDirectAssetLedger(ledger);
+if (ledgerCheck.errors.length) throw new Error('direct-s3-uploads.json: ' + ledgerCheck.errors.join('; '));
+const directAssets = new Set(ledgerCheck.byPath.keys());
 const files = fs.readdirSync(path.join(sourceRoot, 'entries')).filter(name => name.endsWith('.json')).sort();
 const records = files.map(filename => {
   const record = JSON.parse(fs.readFileSync(path.join(sourceRoot, 'entries', filename), 'utf8'));
-  const generatedErrors = validateGeneratedSourceMaterials(record, { repoRoot });
+  const generatedErrors = validateGeneratedSourceMaterials(record, { repoRoot, directAssets });
   if (generatedErrors.length) throw new Error(generatedErrors.join('\n'));
   if (filename !== `${record.id}.json` || !collections[record.type]) throw new Error(`Invalid source entry: ${filename}`);
   for (const key of compactKeys) {
     if (!(key in record)) throw new Error(`Missing ${key}: ${filename}`);
   }
+  if (record.type === 'destination' && (!isDestinationType(record.destinationType) || !isNavigationRole(record.navigationRole)))
+    throw new Error(`Missing/invalid destinationType or navigationRole: ${filename}`);
   return record;
 });
 records.sort((a, b) => (a.sheet?.row ?? Number.MAX_SAFE_INTEGER) - (b.sheet?.row ?? Number.MAX_SAFE_INTEGER) || a.id.localeCompare(b.id));
@@ -38,9 +49,11 @@ for (const record of records) {
 const entries = records.map(record => {
   const compact = Object.fromEntries(compactKeys.map(key => [key, record[key]]));
   compact.entryPath = `data/source-index/entries/${record.id}.json`;
-  for (const key of ['primaryThemes', 'themes']) { if (record[key] !== undefined) compact[key] = record[key]; }
+  for (const key of ['destinationType', 'navigationRole', 'primaryThemes', 'themes', 'routeCountryIds', 'routeDestinationIds', 'relatedDestinationIds']) {
+    if (record[key] !== undefined) compact[key] = record[key];
+  }
   for (const key of ['status', 'archivedAt', 'archiveReason', 'archiveDuplicateOf']) { if (record[key] !== undefined) compact[key] = record[key]; }
-  for (const key of ['aliases', 'routeCountryIds', 'routeDestinationIds', 'relatedDestinationIds', 'legacyUrls']) {
+  for (const key of ['aliases', 'legacyUrls']) {
     if (record[key]?.length) compact[key] = record[key];
   }
   return compact;
@@ -81,5 +94,10 @@ for (const [type, collection] of Object.entries(collections)) {
     entries: entries.filter(record => record.type === type),
   });
 }
-console.log(JSON.stringify({ entries: entries.length, catalogs: 4, networkRequests: 0, counts }, null, 2));
+return { entries: entries.length, catalogs: 4, networkRequests: 0, counts };
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  console.log(JSON.stringify(syncSourceCatalogs(), null, 2));
+}
 

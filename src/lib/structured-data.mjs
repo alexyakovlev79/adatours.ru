@@ -1,5 +1,6 @@
 import { selectVipTours } from './vip-tours.mjs';
 import { mergeGeoPassport } from './geo-knowledge.mjs';
+import { excursionBlockContent } from './excursion-block-content.mjs';
 import { authoritySourceId, getAuthorityEntity, getAuthorityPageSources, getAuthorityExhibitionSources, getVisibleAuthoritySources, getVisibleAuthorityPartners } from './entity-authority.mjs';
 import programmeExamples from '../data/commercial/mice-programme-examples.json' with { type: 'json' };
 
@@ -244,7 +245,12 @@ export function buildStructuredData({ root, organization, records, page, documen
         const days = (d.itinerary || []).filter((day) => Number.isInteger(day.day) && day.day > 0);
         if (days.length) node.subTrip = days.map((day, index) => {
           const texts = day.contentBlocks?.length ? day.contentBlocks.flatMap((block) => {
-            if (block.type === 'excursion') { const ex = byId.get(block.excursionRef); return publicRecord(ex) ? [ex.data.title, ex.data.lead] : []; }
+            if (block.type === 'excursion') {
+              const ex = byId.get(block.excursionRef);
+              if (!publicRecord(ex)) return [];
+              const { title, summary } = excursionBlockContent(block, ex.data);
+              return [title, summary];
+            }
             return [block.title, block.text];
           }) : [day.text, ...(day.subsections || []).flatMap((part) => [part.title, part.text])];
           return add({ '@type': 'Trip', '@id': `${url}#day-${day.day}-${index + 1}`,

@@ -6,6 +6,7 @@ import { withBase } from '../../lib/paths';
 import { imageCaption } from '../../lib/image-captions.mjs';
 import { excursionPath } from '../../lib/routes';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+import { excursionBlockContent } from '../../lib/excursion-block-content.mjs';
 
 interface MediaItem {
   src: string;
@@ -19,7 +20,7 @@ interface MediaItem {
 type ContentBlock =
   | { type: 'text'; text: string }
   | { type: 'section'; title: string; text: string }
-  | { type: 'excursion'; excursionRef: string; text?: string };
+  | { type: 'excursion'; excursionRef: string; title?: string; text?: string };
 
 interface Day {
   day?: number;
@@ -216,6 +217,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 
                     const excursion = block.excursion;
                     if (!excursion) return null;
+                    const presentation = excursionBlockContent(block, excursion);
 
                     return (
                       <section
@@ -223,9 +225,9 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                         data-excursion-ref={excursion.id}
                         data-image-text-align={excursion.imageTextAlign}
                       >
-                        <h3><a class="day__excursion-link" href={withBase(excursion.href)}>{excursion.title}</a></h3>
-                        {block.text?.trim()
-                          ? <div class="excursion-embed__body">{splitParagraphs(block.text).map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}</div>
+                        <h3><a class="day__excursion-link" href={withBase(excursion.href)}>{presentation.title}</a></h3>
+                        {presentation.overrideText
+                          ? <div class="excursion-embed__body">{splitParagraphs(presentation.overrideText).map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}</div>
                           : excursion.bodyHtml
                           ? <div class="excursion-embed__body" set:html={excursion.bodyHtml} />
                           : <p><InlineMarkdown text={excursion.lead} /></p>

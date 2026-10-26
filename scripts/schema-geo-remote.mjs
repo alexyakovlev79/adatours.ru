@@ -92,7 +92,13 @@ export async function runSchemaGeo(tools, core, request) {
   else if(request.action==='confirmDeploy'||request.action==='resumePublication'){
    let p=state.publication, run;
    if(request.action==='resumePublication'){
+    const scope=request.jobIds===undefined&&request.contentCommit===undefined?null:core.geoPublicationScope(request);
+    if(scope&&p?.status==='PUBLISHED'&&core.geoPublicationScopeMatches(p,scope))return {
+     status:'scope_already_published',head,batchId:p.batchId,commit:p.commit,runUrl:p.runUrl,jobIds:scope.jobIds};
     if(!p||p.status==='PUBLISHED')return {status:'no_pending_deploy',head};
+    if(scope&&!core.geoPublicationScopeMatches(p,scope))return {
+     status:'scope_blocked_by_publication',head,batchId:p.batchId,phase:p.status,
+     note:'Finish the existing publication separately; addressed Word scope cannot dispatch another batch'};
     if(p.status!=='DEPLOYING'||!p.commit)return {status:'publication_requires_recovery',head,batchId:p.batchId,ownerId:p.ownerId,phase:p.status};
     const runs=await fetch(api+'/actions/runs?head_sha='+p.commit+'&per_page=15');
     const candidate=(runs.workflow_runs||[]).find(x=>x.head_sha===p.commit&&x.status==='completed'&&x.conclusion==='success'&&x.path==='.github/workflows/deploy.yml'&&x.head_branch==='main');

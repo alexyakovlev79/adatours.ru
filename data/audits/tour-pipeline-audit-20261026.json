@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "id": "tour-pipeline-audit-20261026",
+  "checkedAt": "2026-10-26T17:10:34Z",
+  "status": "prepared_pending_content_deploy",
+  "baselineCommit": "a30b7bd742598d4c44bec354c456c569eb751146",
+  "schedule": {
+    "automationId": "6acfa67a04c481919b8db6c320e4ef40",
+    "timezone": "Europe/Moscow",
+    "previousTime": "05:00",
+    "localTime": "04:00",
+    "enabled": true,
+    "effectiveFrom": "2026-10-27",
+    "confirmedScheduleWriteAt": "2026-10-26T16:05:53Z"
+  },
+  "driveScan": {
+    "checkedAtUTC": "2026-10-26 16:06:52 UTC",
+    "root": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
+    "previousCompleteScanAt": "2026-10-26T02:01:10.569Z",
+    "folderCount": 28,
+    "fileCount": 219,
+    "wordCount": 212,
+    "pdfCount": 7,
+    "complete": true,
+    "listingMethod": "list_folder top_k=500; every direct listing below 100 children, largest 59. Root plus every child folder recursively.",
+    "diff": {
+      "new": [],
+      "changed": [],
+      "missing": []
+    }
+  },
+  "controlTour": {
+    "programKey": "P172",
+    "tourId": "tour_source_braziliya_argentina_chili_peru_ru",
+    "canonicalUrl": "/multi-country/tour/brazil-argentina-chile-peru-15-days/",
+    "sourceEvidence": "data/audits/p172-source-evidence-20261026.json",
+    "ordinaryDays": 15,
+    "countries": 4,
+    "destinationsBefore": 16,
+    "destinationsAfter": 51,
+    "restoredExistingPlaceLinks": 30,
+    "newReservations": 5,
+    "reusedExcursions": 8,
+    "newExcursions": 3,
+    "excursionRefs": 11,
+    "gptImageSources": 28,
+    "uniqueMediaSources": 28,
+    "newPhotographs": 0,
+    "primaryThemes": [
+      "theme_culture",
+      "theme_nature"
+    ],
+    "additionalThemes": [],
+    "interestDecision": "Ауанаканча — центр животных и ремёсел; по принятому split-контракту зоопарк не является wildlife в естественной среде. Новый справочник из15 интересов проверен, тема wildlife не добавлена ради теста.",
+    "variantEvidence": "data/audits/tour-pipeline-p172-excursion-variants-20261026.json"
+  },
+  "seo": {
+    "correctedArticles": 3,
+    "newArticles": 12,
+    "factsAndVoiceIndependentlyReviewed": true,
+    "reviewEvidence": "data/audits/p172-seo-review-20261026.json",
+    "historicalEntityRegistrationsRestored": 58,
+    "derivedCatalogueRegistrationsRestored": 217,
+    "backlogStatus": "270 historical targets queued; 5 of the 217 discovered catalogue gaps belong to this Word repair and receive current-cycle articles, plus the new D5 tour catalogue",
+    "reviewStatus": "15_articles_passed_facts_voice_and_independent_runtime_scope_review",
+    "historicalDerivedCatalogueRegistrationsRestored": 212,
+    "historicalQueueRegistrations": 270,
+    "newScopeCatalogues": 9,
+    "referringArticleEvidence": "data/audits/tour-pipeline-p172-seo-referring-review-20261026.json",
+    "canonicalCoverage": {
+      "entities": 1833,
+      "catalogues": 4015,
+      "total": 5848,
+      "errors": 0
+    }
+  },
+  "mediaEvidence": "data/audits/tour-pipeline-p172-mobile-20261026.json",
+  "geo": {
+    "expectedEntityPassports": 4,
+    "status": "prepared_waiting_actual_content_commit",
+    "runtimeNote": "Trip schema uses canonical MD and live Destination pages; passports provide independently recorded semantic evidence. No fabricated external sameAs or public IDs for reservations."
+  },
+  "tables": {
+    "status": "planned_after_confirmed_deploy",
+    "historicalPublishedPagesMissing": 181,
+    "legacyGithubPageHosts": 107,
+    "multiCountryLastSyncedAtBeforeAudit": "2026-10-16T12:25:36.852Z",
+    "catalogAutomationEnabled": false
+  },
+  "publication": {
+    "contentCommit": null,
+    "contentRun": null,
+    "geoCommit": null,
+    "geoRun": null
+  },
+  "remainingReview": {
+    "destinationReservations": [
+      {
+        "day": 10,
+        "id": "destination_chile_quinta_vergara_amphitheater",
+        "name": "Амфитеатр Кинта-Вергара",
+        "slug": "quinta-vergara-amphitheater",
+        "countryId": "country_chile",
+        "countrySlug": "chile",
+        "url": "/chile/place/quinta-vergara-amphitheater/",
+        "sourceUrl": null,
+        "destinationType": "other_landmark",
+        "navigationRole": "sight",
+        "aliases": [
+          "Anfiteatro de la Quinta Vergara",
+          "Quinta Vergara Amphitheater"
+        ],
+        "status": "reserved_needs_content",
+        "classificationReason": "other_landmark: именованная открытая концертная площадка; отдельного theatre/amphitheater в закрытом справочнике нет. sight: конкретный объект осмотра, не база выбора маршрутов.",
+        "nameVerificationUrl": "https://chile.travel/en/blog/what-to-do-in-valparaiso-and-vina-del-mar-7-must-sees/",
+        "sourceEvidence": "День 10 Word P172: «Мы посетим амфитеатр Кинта-Вергара, где ежегодно проводится Международный фестиваль песни Винья-дель-Мар». Резервируется именно амфитеатр, а не весь парк Кинта-Вергара."
+      },
+      {
+        "day": 10,
+        "id": "destination_chile_el_peral_funicular",
+        "name": "Фуникулёр Эль-Пераль",
+        "slug": "el-peral-funicular",
+        "countryId": "country_chile",
+        "countrySlug": "chile",
+        "url": "/chile/place/el-peral-funicular/",
+        "sourceUrl": null,
+        "destinationType": "other_landmark",
+        "navigationRole": "sight",
+        "aliases": [
+          "Ascensor El Peral",
+          "Фуникулер Эль-Перал",
+          "El Peral Funicular"
+        ],
+        "status": "reserved_needs_content",
+        "classificationReason": "other_landmark: исторический фуникулер; отдельного transport/funicular в закрытом справочнике нет. sight: самостоятельный точечный объект посещения.",
+        "nameVerificationUrl": "https://chile.travel/en/itineraries/valparaiso-funicular-route-2-day-itinerary/",
+        "sourceEvidence": "День 10 Word P172 включает фуникулер Эль-Перал в программе Вальпараисо после площади Сотомайор."
+      },
+      {
+        "day": 10,
+        "id": "destination_chile_paseo_yugoslavo",
+        "name": "Пасео-Югославо",
+        "slug": "paseo-yugoslavo",
+        "countryId": "country_chile",
+        "countrySlug": "chile",
+        "url": "/chile/place/paseo-yugoslavo/",
+        "sourceUrl": null,
+        "destinationType": "viewpoint",
+        "navigationRole": "sight",
+        "aliases": [
+          "Югославский коридор",
+          "Yugoslavo Promenade",
+          "Paseo Yugoslavo"
+        ],
+        "status": "reserved_needs_content",
+        "classificationReason": "viewpoint: прогулочная терраса с обзором порта. sight: конкретная площадка осмотра, не район/географический центр маршрута.",
+        "nameVerificationUrl": "https://chile.travel/en/itineraries/tour-the-hills-of-valparaiso-2-day-itinerary/",
+        "sourceEvidence": "День 10 Word P172: после фуникулера Эль-Перал назван «Югославский коридор»; официальный Chile Travel связывает El Peral с Paseo Yugoslavo/Yugoslavo Promenade в Вальпараисо."
+      },
+      {
+        "day": 15,
+        "id": "destination_peru_san_francisco_monastery_lima",
+        "name": "Монастырь Сан-Франциско в Лиме",
+        "slug": "san-francisco-monastery-lima",
+        "countryId": "country_peru",
+        "countrySlug": "peru",
+        "url": "/peru/place/san-francisco-monastery-lima/",
+        "sourceUrl": null,
+        "destinationType": "religious_site",
+        "navigationRole": "sight",
+        "aliases": [
+          "San Francisco Church and Convent",
+          "Монастырь Сан-Франциско",
+          "San Francisco Monastery"
+        ],
+        "status": "reserved_needs_content",
+        "classificationReason": "religious_site: монастырский религиозный комплекс. sight: конкретный объект обзорной экскурсии.",
+        "nameVerificationUrl": "https://www.peru.travel/attractions/san-francisco-church-monastery-catacombs",
+        "sourceEvidence": "День 15 Word P172 прямо включает «монастырь Сан-Франциско» в обзор основных колониальных достопримечательностей Лимы. Не Санто-Доминго и не Каса-Алиага; посещение катакомб отдельно в туре не обещается."
+      },
+      {
+        "day": 15,
+        "id": "destination_peru_san_isidro_lima",
+        "name": "Сан-Исидро в Лиме",
+        "slug": "san-isidro-lima",
+        "countryId": "country_peru",
+        "countrySlug": "peru",
+        "url": "/peru/place/san-isidro-lima/",
+        "sourceUrl": null,
+        "destinationType": "district",
+        "navigationRole": "hub",
+        "aliases": [
+          "Сан-Исидро",
+          "San Isidro"
+        ],
+        "status": "reserved_needs_content",
+        "classificationReason": "district: городской район Лимы. hub: территориальное объединение нескольких посещаемых объектов, а не отдельная достопримечательность.",
+        "nameVerificationUrl": "https://msi.gob.pe/portal/",
+        "sourceEvidence": "День 15 Word P172: «жилые районы Лимы: Сан-Исидро с его оливковой рощей, Кантри-клубом и гольф-полем». Страна Перу; не существующий Сан-Исидро в Буэнос-Айресе."
+      }
+    ],
+    "note": "Only the five reserved Destination objects still need standalone authored content. Eleven excursion associations now preserve the exact Word variants. P172 remains open until full lifecycle evidence."
+  },
+  "limits": [
+    "No Word added or modified on26.10 was found in the complete authorized folder scan; control uses currentP172, not a fabricated newTour.",
+    "Existing GPT Image assets were reused; a fresh image-generation call was not required or claimed.",
+    "The future scheduled04:00 invocation is not a past successful run.",
+    "Machine receipts validate exact recorded evidence/coverage; they do not replace semantic source or visual review."
+  ],
+  "resolvedExcursionVariantReview": {
+    "status": "resolved_in_prepared_content",
+    "evidence": "data/audits/tour-pipeline-p172-excursion-variants-20261026.json",
+    "previousCandidates": [
+      {
+        "day": 3,
+        "module": "Сахарная Голова через Урку и обзор Рио",
+        "candidateIds": [
+          "excursion_rio_sugarloaf_city_four_hours",
+          "excursion_source_ekskursiya_na_sakharnuyu_golovu",
+          "excursion_rio_sugarloaf_city_half_day_english"
+        ],
+        "candidatePaths": [
+          "src/content/excursions/sugarloaf-rio-city-four-hours.md",
+          "src/content/excursions/ekskursiya-na-sakharnuyu-golovu.md",
+          "src/content/excursions/sugarloaf-rio-city-half-day-english.md"
+        ],
+        "match": "tour_variant_review",
+        "reason": "Первый кандидат совпадает по Урке, канатной дороге и городу, но его текст добавляет собор/церкви; второй включает обед и иной тариф; третий обещает английский язык и обед. Эти услуги Word не подтверждает.",
+        "nextAction": "Не копировать общий текст; выбрать подтвержденный базовый продукт и сохранить точный вариант P172 через поддерживаемый override либо создать отдельный модуль из Word.",
+        "status": "REVIEW_variant_unresolved",
+        "currentExcursionRefs": [],
+        "fullTourTextPresent": true
+      },
+      {
+        "day": 5,
+        "module": "Бразильская сторона Игуасу",
+        "candidateIds": [
+          "excursion_source_brazilskaya_storona_vodopadov_iguasu",
+          "excursion_iguazu_brazil_panorama_private_program"
+        ],
+        "candidatePaths": [
+          "src/content/excursions/brazilskaya-storona-vodopadov-iguasu.md",
+          "src/content/excursions/iguazu-brazil-panorama-private-program.md"
+        ],
+        "match": "same_core_route_with_tour_terms",
+        "reason": "Первый кандидат подтверждает прогулку по каньону к Глотке Дьявола и возврат с гидом; отдельный продукт имеет 6 часов/цену80USD. Word не выделяет отдельную цену и включает входные билеты. Второй кандидат дополнительно описывает Macuco и Парк птиц, которых нет в P172.",
+        "nextAction": "Связать только первый подходящий базовый маршрут с сохранением условий пакета; не переносить Macuco/Парк птиц.",
+        "status": "REVIEW_variant_unresolved",
+        "currentExcursionRefs": [],
+        "fullTourTextPresent": true
+      },
+      {
+        "day": 6,
+        "module": "Аргентинская сторона Игуасу: три пешеходных маршрута",
+        "candidateIds": [
+          "excursion_source_jekskursija_na_argentinskie_vodopady",
+          "excursion_iguazu_argentina_private_walkways_program",
+          "excursion_iguazu_argentina_group_russian_program"
+        ],
+        "candidatePaths": [
+          "src/content/excursions/jekskursija-na-argentinskie-vodopady.md",
+          "src/content/excursions/iguazu-argentina-private-walkways-program.md",
+          "src/content/excursions/iguazu-argentina-group-russian-program.md"
+        ],
+        "match": "tour_variant_review",
+        "reason": "Основной источник экскурсии обещает6часов/русского гида и исключает вход40USD при отдельной цене123USD; Word задает полный день и включенные входные билеты, без языка/приватности. Альтернативы закреплены как private/group и не являются доказанно тем же вариантом.",
+        "nextAction": "Подтвердить базовый ID, сохранив точные три маршрута и включенные билеты P172 через override; не подставлять отдельные тарифы, язык и формат.",
+        "status": "REVIEW_variant_unresolved",
+        "currentExcursionRefs": [],
+        "fullTourTextPresent": true
+      },
+      {
+        "day": 9,
+        "module": "Исторический центр и восточный Сантьяго",
+        "candidateIds": [
+          "excursion_santiago_private_historic_centre_east",
+          "excursion_santiago_historic_east_russian_group"
+        ],
+        "candidatePaths": [
+          "src/content/excursions/santiago-private-historic-centre-east.md",
+          "src/content/excursions/santiago-historic-east-russian-group.md"
+        ],
+        "match": "tour_variant_review",
+        "reason": "Первый совпадает по центру, Ла-Монеде, Санта-Лусии и восточной части, но в ID/происхождении private, а собор не перечислен. Второй закрепляет русскоязычную группу и называет конкретные современные районы, которых Word не специфицирует.",
+        "nextAction": "Не терять собор/почту/Ратушу; явно решить идентичность базового продукта и сохранить вариант Word.",
+        "status": "REVIEW_variant_unresolved",
+        "currentExcursionRefs": [],
+        "fullTourTextPresent": true
+      },
+      {
+        "day": 12,
+        "module": "Священная долина с Ауанаканчей и Inka House",
+        "candidateIds": [
+          "excursion_peru_sacred_valley_full_day",
+          "excursion_source_svyashchennaya_dolina_premium_gruppovoj_tur",
+          "excursion_peru_sacred_valley_pisac_awanakancha_ollantaytambo"
+        ],
+        "candidatePaths": [
+          "src/content/excursions/svyashchennaya-dolina-inkov.md",
+          "src/content/excursions/svyashchennaya-dolina-premium-gruppovoj-tur.md",
+          "src/content/excursions/sacred-valley-pisac-awanakancha-ollantaytambo.md"
+        ],
+        "match": "tour_variant_review",
+        "reason": "Первый кандидат совпадает по шести местам, но у него обедTunupa вместо подтвержденного Inka House. Второй не покрывает полный набор мест и задаетpremiumгруппу/язык; третий ограничен Писаком, Ауанаканчей и Ольянтайтамбо.",
+        "nextAction": "Для первого ID допустим только подтвержденный вариант текста P172 с Inka House; не менять ресторан или удалять Чинчеро/Морай.",
+        "status": "REVIEW_variant_unresolved",
+        "currentExcursionRefs": [],
+        "fullTourTextPresent": true
+      }
+    ]
+  },
+  "registryPreservation": {
+    "verifiedAt": "2026-10-26T17:14:25Z",
+    "baselineCommit": "a30b7bd742598d4c44bec354c456c569eb751146",
+    "mobileHero": {
+      "before": 5580,
+      "after": 5587,
+      "added": 7,
+      "changedExisting": 0,
+      "removed": 0,
+      "formattingOnlyForExistingItems": true
+    },
+    "directS3": {
+      "before": 6183,
+      "after": 6185,
+      "added": 2,
+      "changedExisting": 0,
+      "removed": 0
+    },
+    "sourceIndex": {
+      "before": 1855,
+      "after": 1858,
+      "added": 3,
+      "changedExisting": [
+        "tour_source_braziliya_argentina_chili_peru_ru"
+      ],
+      "removed": 0
+    }
+  }
+}

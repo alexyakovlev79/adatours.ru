@@ -1725,3 +1725,27 @@ Tour `tour_latin_america_six_countries_20_days_2026`; источник https://d
 | 17 | `excursion_source_ekskursiya_v_zateryannyj_gorod_machu_pikchu` |
 | 18 | `excursion_cusco_archaeological_sites_russian_guide` |
 | 19 | `excursion_lima_huallamarca_cathedral_santo_domingo` |
+
+## P172 — полный Word-контроль 26.10.2026
+
+Тур `tour_source_braziliya_argentina_chili_peru_ru`, строка 451. Источник: https://drive.google.com/file/d/1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS/view. Полный Word сверён по 15 дням; тарифный год 2027 сохранён по уточнению Анны. Эта запись — адресное исправление ранее опубликованного тура. Ранний исторический снимок строки 451 выше сохраняет исходное состояние до этой ревизии.
+
+| День / после дня | Каноническая экскурсия | Результат |
+|---|---|---|
+| 2 | `excursion_rio_corcovado_train_christ` | Существующий точный продукт |
+| 3 | `excursion_rio_sugarloaf_city_four_hours` | Существующий основной маршрут; Word title/text override сохраняет полдня и не обещает кафедральный собор |
+| 5 | `excursion_source_brazilskaya_storona_vodopadov_iguasu` | Существующий точный маршрут; завтрак и включённые входные билеты остаются отдельным текстом тура |
+| 6 | `excursion_source_jekskursija_na_argentinskie_vodopady` | Существующий основной маршрут; Word text override сохраняет полный день и включённые билеты, без переноса языка и отдельных тарифов карточки |
+| 7 | `excursion_buenos_aires_panoramic_half_day` | Существующий точный продукт |
+| 9 | `excursion_santiago_private_historic_centre_east` | Существующий основной маршрут; Word text override сохраняет исторический центр, Санта-Люсию и восточный Сантьяго без неподтверждённого формата |
+| 10 | `excursion_vina_valparaiso_quinta_vergara_el_peral` | Новый продукт из точного блока Word |
+| 12 | `excursion_peru_sacred_valley_full_day` | Существующий основной маршрут; Word text override сохраняет все названные объекты, Ауанаканчу и обед в Inka House |
+| 13 | `excursion_machu_picchu_from_aguas_calientes` | Существующий точный продукт |
+| 14 | `excursion_cusco_sacsayhuaman_coricancha_tambomachay` | Новый продукт из точного блока Word |
+| 15 | `excursion_lima_san_francisco_san_isidro_miraflores` | Новый продукт из точного блока Word |
+
+**Состояние: подготовлено, deploy ещё не подтверждён.** Связаны все 11 самостоятельных модулей: 8 существующих карточек и 3 новых продукта. Первичная проверка оставляла дни 3, 5, 6, 9 и 12 на REVIEW; полный поиск и сопоставление Word завершили их без дубликатов. Полный текст вариантов хранится в `contentBlocks.text`, а для дня 3 также задан точный `contentBlocks.title`. Логистика до и после экскурсии остаётся в обычном дне. Точный source, основания совпадений, ограничения и прежние причины REVIEW сохранены в `text.verification.wordBodyReview20261026` exact entry и в `data/audits/tour-pipeline-p172-excursion-variants-20261026.json`. Этот receipt привязан к текущему Tour MD и каноническим продуктам; исключение неподтверждённого собора дня 3 не превращается в дополнительное посещение.
+
+Все 15 обычных дней и порядок сохранены. Vistadome, обед и железнодорожные/авиационные переезды остаются в туре; собственные услуги экскурсии не заменяются тарифами другого продукта. Всего 28 уникальных фотослотов с учётом исходных и улучшенных цепочек. Обложки трёх новых Excursion переиспользуют доказанные GPT Image ассеты; их мобильные версии и GEO/SEO проходят в этой же задаче. В обычных днях 10, 13 и 15 использованы свободные готовые фото соответствующих мест, чтобы переданные hero не повторялись. Последующие пять связей не потребовали замены обычных дневных фото.
+
+Основной маршрут: 51 canonical Destination ID, включая 5 новых резервов `needs_content`; пустые Destination MD не создавались. Материалы и собственные фото этих пяти мест остаются открытой очередью. Дополнительно возникли 4 непустых каталога Excursion → Tour (три новых продукта и бразильская сторона Игуасу) и 5 каталогов экскурсий новых резервов; они проходят самостоятельную SEO-проверку. Контрольный SHA-256 Tour MD: `2d26e6d32447a8c6637cd3ab1c1ddde3317ff81e2b1edfa9b6613bd14d7162aa`.

@@ -185,6 +185,30 @@ test('from price is rounded to the UI and not presented as an exact fixed price'
   assert.equal(offer.priceCurrency, 'USD');
   assert.equal(offer.offeredBy['@id'], `${root}#organization`);
 });
+test('tour day schema uses its confirmed Word excursion variant without changing the canonical product', () => {
+  const excursion = record('excursion', 'exc_word', '/brazil/excursion/canonical/', {
+    title: 'Четыре часа и музей', lead: 'Канонический маршрут включает музей и обед.',
+    country: 'br', destination: 'rio', priceFrom: 100, currency: 'USD',
+  });
+  const variant = { ...tour, data: { ...tour.data, itinerary: [
+    { day: 1, title: 'Рио', contentBlocks: [{ type: 'excursion', excursionRef: excursion.data.id,
+      title: 'Сахарная Голова: полдня', text: 'По Word посещаем только гору и городской центр.' }] },
+    { day: 2, title: 'Канонический вариант', contentBlocks: [{ type: 'excursion', excursionRef: excursion.data.id, title: ' ', text: '  ' }] },
+    { day: 3, title: 'Неопубликованная экскурсия', contentBlocks: [{ type: 'excursion', excursionRef: 'missing',
+      title: 'Не создавать продукт', text: 'Этот блок UI не отображает.' }] },
+  ] } };
+  const before = JSON.stringify(excursion);
+  const graph = build(tour.path, { records: [brazil, rio, variant, excursion] });
+  const days = nodes(graph, 'Trip');
+  assert.equal(days[0].description, 'Сахарная Голова: полдня По Word посещаем только гору и городской центр.');
+  assert.doesNotMatch(days[0].description, /музей|обед|Четыре часа/);
+  assert.equal(days[1].description, 'Четыре часа и музей Канонический маршрут включает музей и обед.');
+  assert.equal(days[2].description, undefined);
+  assert.equal(JSON.stringify(excursion), before);
+  const canonical = build(excursion.path, { records: [brazil, rio, excursion] });
+  assert.match(nodes(canonical, 'TouristTrip')[0].description, /музей и обед/);
+  assert.doesNotMatch(nodes(canonical, 'TouristTrip')[0].description, /По Word/);
+});
 test('missing, zero, hidden and archived prices do not create offers', () => {
   for (const priceFrom of [0, null, undefined, NaN]) {
     const altered = { ...tour, data: { ...tour.data, priceFrom } };

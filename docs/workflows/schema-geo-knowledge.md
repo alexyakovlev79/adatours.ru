@@ -1,6 +1,6 @@
 # Ada Tours — Schema.org / GEO: сбор данных и публикация
 
-Версия 2.5 · 17.10.2026 (сбор нового объекта и немедленные GEO-таблицы). Репозиторий `alexyakovlev79/adatours.ru`.
+Версия 2.6 · 26.10.2026 (адресная ревизия после Word, scoped publication и немедленные GEO-таблицы). Репозиторий `alexyakovlev79/adatours.ru`.
 Команды: **«собирай данные»** (один сборщик, целевой объём 50 паспортов за чат) и **«публикуй данные»** (единственный мастер).
 
 **Режим 17.10.2026:** одна команда «собирай данные» запускает **до 50 GEO-паспортов в одном чате**, без ожидания дополнительной команды «дальше». Обрабатывать их последовательно **пятью резервами по максимум 10 задач**, каждый с немедленной фиксацией результатов в staging. `manifest.collectorChatTarget: 50` задаёт цель чата; `manifest.batchSize: 10` ограничивает только одновременный резерв (90 минут), чтобы при зависании не блокировать 50 чужих задач. Сохраняются stage gates, проверка каждого поля по порогу 70%, точные evidence и индивидуальная проверка всех 50 результатов. Если доступных задач меньше, завершить фактическим числом, не выходя за открытый этап.
@@ -165,6 +165,61 @@ text({status:saved.status,jobId:stableId,
 
 Для нового объекта **не вызывать** общий \`claim(limit:10)\`, \`beginPublication\` или \`dispatchPublication\`; не брать соседние задания и не менять \`manifest.maxStage\`. \`collectNewGeoObject\` делает адресную фиксацию и запись обеих таблиц после исследования. Встроенный результат имеет токен \`inline-<creationSHA>\` вместо lease; активные чужие leases сохраняются. Два независимых хранилища (GitHub и Sheets) не могут образовывать одну техническую транзакцию; точное состояние \`PENDING\`/\`SYNCED\` и идемпотентный повтор обеспечивают **одну логическую операцию с одним объектом**.
 
+### 3.5. Существенное изменение существующей страницы по Word
+
+Ежедневное задание 2027 имеет постоянное прямое поручение довести подтверждённое изменение до публикации и таблиц. Для существующего MD используется `scripts/schema-geo-word-revision.mjs`, а не исключение «новый объект». Scope задаётся точным stable ID и фактическим `contentCommit`, в котором изменён этот MD; произвольный старый backlog этим путём не обновляется. Ревизия поддерживает активные Country/Destination/Tour/Excursion, действительно изменённые данным Word-проходом. Пустой резерв места не получает ни MD, ни отдельный GEO-паспорт.
+
+1. После content commit вызвать `inspectWordGeoRevision`. Он проверяет принадлежность коммита текущему main, наличие того же stable ID в родительском MD, изменение его blob в указанном коммите и совпадение с текущим main. Точная source-index entry не должна измениться после этого коммита; точная строка компактного каталога тоже сравнивается с версией в коммите. ID, slug, география, основные/дополнительные интересы, маршрутные ID и классификация места сверяются с актуальным MD. Неподдерживаемая запись YAML в служебных ID-полях останавливает проверку, а не угадывается.
+2. Исследовать обновлённую программу по §3.2 и составить новый результат с `decisionPolicy: probability-70-v1` и **полученным** `sourceFingerprint`. Для Trip поле `relationships.visits` покрывает гарантированный маршрут из MD; очередность подтверждается программой, а не порядком добавления ID в общий массив связей. Уже закреплённые ID резервов допустимы как внутренние отношения, без выдуманного URL опубликованной страницы или внешнего sameAs. Дополнительные опции не выдавать за включённые посещения.
+3. `collectWordGeoRevision` сохраняет результат в канонический job `geo-<kind>-<stableId>` и immutable `results/<jobId>/word-<contentCommit>-<hash>.json`, обновляет только его queue/inventory/state через CAS staging. Старый immutable JSON остаётся на месте; прежняя запись, исходный fingerprint, истёкший lease и публикационные сведения сохраняются в `revisionHistory`, общий журнал `publications` не меняется. Новый READY не наследует `publishedCommit` старой ревизии.
+4. Активный lease, `PUBLISHING`/`DEPLOYING` этого объекта или конфликтующий результат той же Word-редакции останавливают запись. Чужой claim не перехватывать. При гонке CAS повторно читается staging и current main; изменения соседних сборщиков сохраняются. Если current source уже имеет другой собранный результат, переиспользовать/согласовать его, не заменять молча.
+5. Тем же существующим `syncNewGeoSheets` адресно записать две строки по jobId и подтвердить `geoSheetSync: SYNCED`. При ошибке `PENDING` повторить **тот же** result/contentCommit без нового сбора. Проверки редакционного содержания и media не заменяются этим helper.
+6. Для полностью подготовленного адресного Word-пакета вызвать мастер из §4.1 с **явными** `jobIds` и `contentCommit`. Он принимает только READY с SYNCED, созданные/пересобранные этим content commit, и использует общий lock, immutable hash/source проверки, Actions publisher и Pages finalize. Остальные READY остаются нетронутыми. Незавершённая чужая публикация возвращает `scope_blocked_by_publication`; её не запускать под видом текущего Word-задания. `PUBLISHED` и зеркалирование `GEO публикации` подтверждаются по §4.2–4.3.
+
+**Граница schema renderer.** `Tour`/`Excursion` паспорта — опубликованный проверенный реестр семантических связей. Сейчас `mergeGeoPassport` подключает внешние факты только Country/Destination; Trip/itinerary строит единственный `structured-data.mjs` из canonical MD и живых объектов. Публикация Trip-паспорта сама по себе не включает второй renderer и не заставляет JSON-LD читать `relationships`. Резерв без MD не становится публичным узлом с выдуманным `@id`; в видимой программе допускается обычная подпись Place. Материалы незаполненных мест и самостоятельных экскурсий остаются отдельными незавершёнными стадиями Word-прохода.
+
+**Исполняемый Code Mode после реального content commit:**
+
+~~~javascript
+const repo='alexyakovlev79/adatours.ru';
+const stableId='ТОЧНЫЙ_STABLE_ID';
+const contentCommit='40_HEX_SHA_COMMIT_ИЗМЕНИВШЕГО_MD';
+const un=r=>{if(r.isError)throw Error(JSON.stringify(r));return r.result||r.structuredContent||r;};
+const ghFetch=tools.mcp__GitHub__fetch||tools.mcp__codex_apps__github_fetch;
+const ghFile=tools.mcp__GitHub__fetch_file||tools.mcp__codex_apps__github_fetch_file;
+const ghBlob=tools.mcp__GitHub__fetch_blob||tools.mcp__codex_apps__github_fetch_blob;
+const head=JSON.parse(un(await ghFetch({
+ url:'https://api.github.com/repos/'+repo+'/git/ref/heads/main'
+})).content).object.sha;
+async function load(path){
+ const f=un(await ghFile({repository_full_name:repo,path,ref:head}));
+ return f.content||un(await ghBlob({repository_full_name:repo,blob_sha:f.sha})).content;
+}
+const paths=['schema-geo-core','schema-geo-new-object','schema-geo-word-revision','schema-geo-remote','schema-geo-publisher'];
+const src=await Promise.all(paths.map(name=>load('scripts/'+name+'.mjs')));
+const evaluate=(source,names)=>new Function(source.replace(/^export /gm,'')+';return {'+names+'};')();
+const core=evaluate(src[0],'statusOf,digest,validateResult,claim,renew,release,complete,beginPublication,abortUncommittedPublication,recordCommit,confirmDeploy,stable,geoPublicationScope,geoPublicationScopeMatches');
+const inline=evaluate(src[1],'buildNewObjectJob,syncNewGeoSheets');
+const revision=evaluate(src[2],'inspectWordGeoRevision,collectWordGeoRevision');
+const remote=evaluate(src[3],'runSchemaGeo').runSchemaGeo;
+const publish=evaluate(src[4],'publishSchemaGeoAll').publishSchemaGeoAll;
+const inspected=await revision.inspectWordGeoRevision(tools,core,inline,{stableId,contentCommit});
+text(inspected); // Read-only: inspect first, then research/verify the exact source.
+// Preserve the inspected sourceFingerprint and fully verified result between Code Mode calls.
+// const result = ...; // Complete v2 passport, checked by validateResult and the route coverage gate.
+// const saved=await revision.collectWordGeoRevision(tools,core,inline,{
+//  stableId,contentCommit,ownerId:'geo-word-PROGRAM-REVISION',result
+// });
+// text({status:saved.status,resultHash:saved.saved.resultHash,sheet:saved.sheet?.status});
+// When this addressed Word scope is READY and SYNCED, use the same master:
+// text(await publish(tools,core,remote,{
+//  ownerId:'geo-word-master-PROGRAM',batchId:'geo-word-PROGRAM-REVISION',
+//  jobIds:[inspected.job.jobId],contentCommit
+// }));
+~~~
+
+Новый объект того же Word-пакета по-прежнему собирается через §3.4 с `creationCommit`. В адресный мастер можно передать несколько точных jobIds с одинаковым `contentCommit`: у новых записей проверяется `inlineCreationCommit`, у ревизий — последний `wordRevisionCommit`. Ни helper, ни явный список публикации не меняют массовый `manifest.maxStage`.
+
 ## 4. «Публикуй данные»: все READY, один логический пакет
 
 **Мастер не переносит JSON через ChatGPT.** В Code Mode есть ограничение на количество GitHub-вызовов в одном действии, поэтому даже параллельное чтение 80 результатов может оборваться после CAS-захвата. Тяжелая работа перенесена в GitHub Actions. **Нет искусственного ограничения числа паспортов, 20 и 10 к мастеру не относятся.** `manifest.batchSize:10` ограничивает **одновременный резерв**, а `manifest.collectorChatTarget:50` задаёт цель **одного чата-сборщика** (до пяти последовательных десяток); к мастеру оба ограничения не относятся.
@@ -184,13 +239,15 @@ const src=await Promise.all(paths.map(async path=>un(await tools.mcp__GitHub__fe
  repository_full_name:repo,path,ref:head
 })).content));
 const core=new Function(src[0].replace(/^export /gm,'')+
- ';return {statusOf,digest,validateResult,claim,renew,release,complete,beginPublication,abortUncommittedPublication,recordCommit,confirmDeploy,stable};')();
+ ';return {statusOf,digest,validateResult,claim,renew,release,complete,beginPublication,abortUncommittedPublication,recordCommit,confirmDeploy,stable,geoPublicationScope,geoPublicationScopeMatches};')();
 const remote=new Function(src[1].replace(/^export /gm,'')+';return runSchemaGeo;')();
 const publish=new Function(src[2].replace(/^export /gm,'')+';return publishSchemaGeoAll;')();
 text(await publish(tools,core,remote));
 ~~~
 
 `publishSchemaGeoAll` выполняет только быстрые шаги: попытка восстановить ранее успешный `DEPLOYING` → единый атомарный `beginPublication`, захватывающий **все** `READY` на фиксированном SHA → запись `data/geo-knowledge/dispatch.json` в **том же** CAS-коммите staging. Это несколько служебных GitHub-запросов, независимо от числа готовых паспортов. Никакого цикла по паспортам в ChatGPT, локальных сборок, ожидания Actions или таблиц Sheets до запуска.
+
+Это поведение по умолчанию сохранено. Только для конкретного уже проверенного Word content commit аргументы `{jobIds:[...],contentCommit}` из §3.5 ограничивают замороженную партию указанными каноническими заданиями. Пустой список, неизвестный ID, чужой commit, STALE/REVIEW/BLOCKED или неподтверждённые GEO Sheets дают ошибку **до** изменения состояний; автоматически расширять такой запрос до всех READY запрещено.
 
 Если `PUBLISHING` уже зарезервирован прежним мастер-чатом, не захватывать READY повторно. `resumePublication` возвращает первоначальные `batchId` и `ownerId`, и новый мастер автоматически делает `dispatchPublication` именно для этой партии без второго claim. Перед возобновлением проверять сохраненный main release receipt. **Важно:** коммиты `beginPublication` и `dispatchPublication` с измененным `dispatch.json` НЕ содержат `[skip ci]` и действительно запускают GitHub Actions; для worker-claims и status-commits `[skip ci]` остается.
 

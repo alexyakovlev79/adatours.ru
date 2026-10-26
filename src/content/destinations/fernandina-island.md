@@ -5,7 +5,7 @@ name: "Остров Фернандина"
 slug: "fernandina-island"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: island
 summary: "Фернандина на западе Галапагосов знакомит с лавовыми берегами и животными, чья жизнь связана с холодными океанскими водами."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_fernandina_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские игуаны на лавовом берегу Фернандины — иллюстрация", "hover": "Фернандина на западе Галапагосов знакомит с лавовыми берегами и животными, чья жизнь связана с холодными океанскими водами."}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_fernandina_island.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 На Фернандине темная лава подходит почти к самой воде. За берегом поднимается широкий вулкан, а среди камня растут кактусы и мангры. Остров находится на западе Галапагосского архипелага, напротив Исабелы через пролив Боливар. Здесь особенно ясно видно, как вулканы создают землю, которую постепенно осваивают растения и животные.

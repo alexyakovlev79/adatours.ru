@@ -5,7 +5,7 @@ name: "Вальядолид"
 slug: "valladolid"
 status: "approved"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Вальядолид на Юкатане приглашает гулять по колониальным улицам, увидеть монастырь Сан-Бернардино и познакомиться с местными ремеслами и кухней."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_mexico_valladolid/hero-generated-20261010-twenty-v1.webp", "alt": "Цветные колониальные дома и цветущие растения на улице Вальядолида", "hover": "Вальядолид: мощёная улица с разноцветными фасадами"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_valladolid.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 В Вальядолиде хочется идти пешком и заглядывать за очередной поворот. Невысокие дома сохраняют колониальные детали, цветные стены чередуются с деревянными дверями, а солнечная улица выводит к площади. Этот город Юкатана удобно превращает остановку между Меридой и Канкуном в самостоятельную часть путешествия.

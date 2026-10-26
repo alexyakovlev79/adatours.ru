@@ -5,7 +5,7 @@ name: Ангра-дус-Рейс
 slug: angra-dos-reis
 status: approved
 countryId: country_brazil
-destinationType: resort
+destinationType: city
 summary: 'Ангра-дус-Рейс на Коста-Верде подходит для отдыха у моря после Рио: острова и бухты, пляжи, катамараны, небольшие катера и яхты, спокойные отели и поездки по побережью.'
 hero:
   src: /media/destinations/angra-dos-reis/hero-generated-20261021-dedup50-v1.webp
@@ -52,6 +52,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-b
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-angra-dush-rejsh-v-brazilii__37f42b69.md
 updatedAt: '2026-10-21'
 themes: ["theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 Ангра-дус-Рейс находится на атлантическом побережье штата Рио-де-Жанейро, примерно в 155 км к югу от Рио. Сюда едут ради Коста-Верде: зеленые склоны подходят к морю, а в заливе много островов и небольших бухт.

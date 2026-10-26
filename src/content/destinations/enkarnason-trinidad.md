@@ -5,7 +5,7 @@ slug: encarnacion-and-trinidad
 status: "approved"
 name: "Энкарнасьон & Тринидад"
 countryId: "country_paraguay"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Энкарнасьон на границе с Аргентиной, ежегодный карнавал и прогулочная аллея у реки. Из города можно добраться к миссиям в Тринидаде и Хесусе."
 searchAliases: []
 hero: {"src":/media/countries/paraguay/featureBands-2-enhanced-20261002.webp,"alt":"Старинные каменные стены и арочный проем руин Тринидада в теплом вечернем свете, Парагвай", hover: "Тринидад: каменные руины на закате"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-ehnkarnason-trinida
 sourceSnapshot: "https://drive.google.com/file/d/1MSeA0qEhxtT1ojrArnEttKEz82t0SwG4/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_events"]
+navigationRole: hub
 ---
 
 ## Энкарнасьон & Тринидад- культурный центр Парагвая!

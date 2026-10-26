@@ -5,7 +5,7 @@ slug: san-juan-la-laguna
 status: approved
 name: Сан-Хуан-ла-Лагуна
 countryId: country_guatemala
-destinationType: city
+destinationType: town
 summary: Сан-Хуан-ла-Лагуна входит в лодочные маршруты по озеру Атитлан и знакомит с жизнью приозерных поселений Гватемалы.
 searchAliases:
 - San Juan La Laguna
@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_san_huan_la_laguna.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Поездка позволяет соединить виды вулканов и водной поверхности Атитлана со знакомством с местной жизнью. К Сан-Хуан-ла-Лагуна добираются по воде в составе программы по приозерным поселениям.

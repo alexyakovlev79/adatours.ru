@@ -5,7 +5,7 @@ slug: corn-islands
 status: "approved"
 name: "Острова Корн"
 countryId: "country_nicaragua"
-destinationType: "island"
+destinationType: island
 summary: "Карибские острова у побережья Никарагуа: белые песчаные пляжи, рыбалка и рифы с подводной жизнью вокруг Биг Корн и Литл Корн."
 searchAliases: []
 hero: {"src":"/media/destinations/corn-islands/hero-enhanced-20261005.webp","alt":"Веерный коралл и мелкие желтые рыбы у островов Корн, Никарагуа", hover: "Острова Корн: подводный коралл среди разноцветных рыб"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-korn-v-nikaragua"
 sourceSnapshot: "https://drive.google.com/file/d/1HifBGSSBCHExrIa--_Us9Kr_9rqRNVHd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach", "theme_wildlife", "theme_fishing", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Острова Корн- в Карибском море

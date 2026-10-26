@@ -43,6 +43,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-portu-alegri-v-brazi
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-portu-alegri-v-brazilii__67a33061.md
 updatedAt: '2026-10-21'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Порту-Алегри находится в штате Риу-Гранди-ду-Сул, на юге Бразилии. Город расположен у Гуаибы и отличается зелеными районами, холмистым рельефом и более умеренным климатом.

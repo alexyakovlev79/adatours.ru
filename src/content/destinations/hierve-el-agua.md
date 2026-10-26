@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_mexico_hierve_el_agua.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Хьерве-эль-Агуа находится в горных окрестностях Оахаки. Минеральные отложения на склонах напоминают застывшие водопады. Над долиной расположены естественные бассейны, с которых открываются виды на горы.

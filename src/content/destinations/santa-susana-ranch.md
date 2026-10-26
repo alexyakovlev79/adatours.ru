@@ -5,7 +5,7 @@ name: Ранчо Санта-Сусана
 slug: santa-susana-ranch
 status: approved
 countryId: country_argentina
-destinationType: natural_area
+destinationType: attraction
 summary: 'Аргентинская эстансия у Лос-Кардалеса: сельские пейзажи, традиции гаучо, фольклорные развлечения и обед
   с барбекю во время поездки из Буэнос-Айреса.'
 hero:
@@ -23,6 +23,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_santa_susana.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Санта-Сусана — аргентинская эстансия рядом с Лос-Кардалесом, в округе Кампана провинции Буэнос-Айрес. На её территории сельское хозяйство соседствует с приёмом путешественников: сюда приезжают провести день за городом и познакомиться с традициями гаучо.

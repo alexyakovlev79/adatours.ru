@@ -5,7 +5,7 @@ name: Рио-Дульсе
 slug: rio-dulce
 status: approved
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: river
 summary: Рио-Дульсе в Гватемале проходит среди тропического леса и скальных берегов. Во время лодочной поездки речной пейзаж сменяется каньоном ближе к Карибскому побережью.
 hero:
   src: /media/destinations/rio-dulce/hero-generated-20261008.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_rio_dulse.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Круиз по реке дает время для наблюдения за растительностью и животными. В маршрутах Рио-Дульсе соединяют с Ливингстоном и последующим переездом в Петен, к Флоресу и городам майя.

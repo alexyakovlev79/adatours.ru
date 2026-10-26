@@ -5,7 +5,7 @@ slug: chichicastenango
 status: approved
 name: "Чичикастенанго"
 countryId: "country_guatemala"
-destinationType: city
+destinationType: town
 summary: "Торговый городок в 120 км от столицы Гватемалы. По четвергам и воскресеньям здесь работает рынок «Чичи» с ремесленными изделиями и сувенирами."
 searchAliases: []
 hero:
@@ -32,6 +32,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-chichikastenango-v-
 sourceSnapshot: "https://drive.google.com/file/d/1bvsZFVET7q-LzTYbOlxHMOkqTO0uVfZi/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Чичикастенанго - торговый городок с рынком!

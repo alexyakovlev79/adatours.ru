@@ -5,7 +5,7 @@ slug: copan-ruinas
 status: approved
 name: "Копан Руинас"
 countryId: "country_honduras"
-destinationType: city
+destinationType: town
 summary: "Копан известен резными каменными скульптурами, пирамидами и храмами майя. В городе есть небольшие улицы, кафе и дома среди зелени."
 searchAliases: []
 hero:
@@ -46,6 +46,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gondurase-na-ruiny-goroda
 sourceSnapshot: "https://drive.google.com/file/d/1k1Mr1HWSg3w8bLmS7_oaa1DF6aJXD3Th/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Копан- один из красивых городов Майя!

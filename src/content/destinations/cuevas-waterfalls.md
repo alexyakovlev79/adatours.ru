@@ -5,7 +5,7 @@ slug: cuevas-waterfalls
 status: approved
 name: Водопады Куэвас
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: waterfall
 summary: Водопады Куэвас входят в природную часть путешествия по району Самаипаты в Боливии.
 searchAliases:
 - vodopady-kuevas
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_vodopady_kuevas.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Водопады Куэвас включены в маршрут по Боливии вместе с Самаипатой. Их посещение дополняет знакомство с окрестностями города природной остановкой.

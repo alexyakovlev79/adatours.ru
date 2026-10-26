@@ -5,7 +5,7 @@ slug: mombacho-volcano
 status: approved
 name: Вулкан Момбачо
 countryId: country_nicaragua
-destinationType: natural_area
+destinationType: volcano
 summary: 'Облачный лес возле Гранады: влажная зелень, лесные тропы и панорамы озера Никарагуа.'
 hero:
   src: /media/tours/best-of-nicaragua-10-days/mombacho-generated-20261010-p020-v1.webp
@@ -16,6 +16,7 @@ themes: ["theme_nature", "theme_adventure"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_mombacho_volcano.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Момбачо поднимается над окрестностями Гранады и озера Никарагуа. Склоны покрыты лесом, а облачная влага создает другую атмосферу, чем на солнечных улицах города: под деревьями прохладнее, листья блестят после тумана, тропы уходят между густой зеленью.

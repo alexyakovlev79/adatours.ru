@@ -5,7 +5,7 @@ name: Мыс Каррион
 slug: punta-carrion
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: other_landmark
 summary: Мыс Каррион — прибрежный участок острова Санта-Крус, который посещают во время морских экскурсий по Галапагосам.
   Вулканические скалы окружают прозрачную воду и небольшие защищённые участки побережья.
 hero:
@@ -21,6 +21,7 @@ facts: []
 featureBands: []
 sourceSnapshot: https://drive.google.com/file/d/1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x/view
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Место известно остановками для снорклинга. Здесь наблюдают рыб и других морских животных, сохраняя дистанцию и соблюдая указания гида. Поездку к мысу часто совмещают с прогулкой на острове Пласа-Сур.

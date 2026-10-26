@@ -5,7 +5,7 @@ slug: "perito-moreno-glacier"
 status: "approved"
 name: "Ледник Перито-Морено"
 countryId: "country_argentina"
-destinationType: "natural_area"
+destinationType: glacier
 summary: "Ледник спускается со склонов Анд к озеру Архентино, образуя гигантскую стену льда высотой до нескольких десятков метров над поверхностью воды. Его протяжённость составляет около 30 километров, а ширина ледяного фронта достигает примерно пяти километров. В солнечные дни лёд переливается оттенками белого, серебристого и насыщенного голубого, создавая поистине завораживающее зрелище."
 searchAliases: ["lednik-perito-moreno"]
 themes: ["theme_nature"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_lednik_perito_moreno.md"
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Особое впечатление производит постоянное движение ледника. Огромные ледяные глыбы постепенно откалываются от его края и с грохотом падают в озеро, поднимая волны и напоминая о могуществе природных сил. Это редкое зрелище позволяет увидеть, как меняется и живёт ледниковый ландшафт.

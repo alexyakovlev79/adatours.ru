@@ -5,7 +5,7 @@ slug: matagalpa
 status: "approved"
 name: "Матагальпа"
 countryId: "country_nicaragua"
-destinationType: "city"
+destinationType: city
 summary: "Горные ландшафты Никарагуа, кофейная Хинотега и реликтовые леса Сельва-Негра. Матагальпа и ее окрестности знакомят с природой и историей региона."
 searchAliases: []
 hero: {"src":"/media/destinations/matagalpa/hero-enhanced-20261005.webp","alt":"Зеленые холмы и высокие травы под облачным небом, Никарагуа","hover":"Никарагуа: волнистые травянистые склоны в солнечном свете"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-gorod-matagalpa-v
 sourceSnapshot: "https://drive.google.com/file/d/1B12l1p2Z1_uSKkWdL0MaqeH_cLIxyvcm/view?usp=drivesdk"
 updatedAt: '2026-10-11'
 themes: ["theme_nature", "theme_gastronomy_wine", "theme_culture"]
+navigationRole: hub
 ---
 
 ## Матагальпа в Никарагуа!

@@ -17,6 +17,7 @@ themes:
 - theme_diving
 sourceSnapshot: data/source-index/materials/destination_ecuador_north_plaza_island.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Северная Пласа находится у восточного побережья Санта-Крус. Подводный маршрут идет вдоль каменистого склона, который постепенно переходит в песчаное дно. На песчаных участках наблюдают садовых угрей, а над камнями плывут рифовые рыбы.

@@ -12,7 +12,7 @@ searchAliases:
 - Сучитлян
 - Серрон-Гранде
 countryId: country_el_salvador
-destinationType: natural_area
+destinationType: lake
 summary: Сучитлан — большое водохранилище Серрон-Гранде в Эль-Сальвадоре с островами и зелеными берегами. Лодочную
   прогулку здесь удобно совместить с посещением исторического города Сучитото.
 hero:
@@ -28,6 +28,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_lake_suchitlan.md
 updatedAt: '2026-10-14'
+navigationRole: hub
 ---
 
 ## Водохранилище среди зеленых холмов

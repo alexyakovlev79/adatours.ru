@@ -5,7 +5,7 @@ name: Шлюзы Агуа-Клара
 slug: agua-clara-locks
 status: approved
 countryId: country_panama
-destinationType: natural_area
+destinationType: other_landmark
 summary: Шлюзы Агуа-Клара на карибской стороне Панамского канала, инженерный комплекс для перехода крупных судов.
 hero:
   src: /media/tours/vsya-panama-natsionalnye-parki-ostrova-i-doliny/agua-clara-locks-place-generated-20261009-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - shlyuzy-agua-klara
 sourceSnapshot: data/source-index/materials/destination_panama_shlyuzy_agua_klara.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Агуа-Клара находится на карибской стороне Панамского канала. Шлюзовой комплекс поднимает и опускает суда между уровнем моря и внутренней водной частью маршрута. Наблюдение позволяет увидеть, как камеры и ворота помогают большим кораблям проходить через перешеек.

@@ -5,7 +5,7 @@ slug: rio-frio-cave
 status: approved
 name: Пещера Рио-Фрио
 countryId: country_belize
-destinationType: natural_area
+destinationType: cave
 summary: Рио-Фрио, пещера на маршруте через заповедник Маунтин-Пайн-Ридж, дополняет знакомство с природой материкового Белиза.
 searchAliases:
 - peschera-rio-frio
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_belize_peschera_rio_frio.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Пещера Рио-Фрио находится на маршруте через заповедник Маунтин-Пайн-Ридж в Белизе. Ее посещают во время поездки к Караколю вместе с природными бассейнами Рио-Он.

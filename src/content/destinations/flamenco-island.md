@@ -18,6 +18,7 @@ searchAliases:
 - ostrov-flamenko
 sourceSnapshot: data/source-index/materials/destination_panama_ostrov_flamenko.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Фламенко находится у Панама-Сити и связан с тихоокеанскими морскими маршрутами. На острове расположен порт, где начинается посадка на суда и яхты. Причалы и стоянки позволяют рассмотреть морскую сторону столицы после знакомства с ее городскими кварталами.

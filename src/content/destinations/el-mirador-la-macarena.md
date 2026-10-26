@@ -5,7 +5,7 @@ name: Смотровая Эль-Мирадор (Ла-Макарена)
 slug: el-mirador-la-macarena
 status: approved
 countryId: country_colombia
-destinationType: natural_area
+destinationType: viewpoint
 summary: Панорама реки Гуаяберо и равнин восточной Колумбии со смотровой на маршруте к Каньо-Кристалитос.
 hero:
   src: /media/destinations/el-mirador-la-macarena/hero-generated-20261010-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - El Mirador La Macarena
 sourceSnapshot: data/source-index/materials/destination_colombia_el_mirador_la_macarena.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 После лодочного перехода по Гуаяберо начинается подъем по лесной тропе. На смотровой Эль-Мирадор пространство раскрывается сразу: внизу изгибается река, за ней уходят вдаль равнины, а по другую сторону видны зеленые склоны Сьерра-де-ла-Макарена.

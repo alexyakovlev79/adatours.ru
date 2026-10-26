@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_kalama.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В путешествии к Уюни переезд из Каламы продолжается к границе Хито-Кахон. Дальше начинаются лагуны, геотермальные поля и открытые пейзажи плато. Калама помогает связать этот участок с другими регионами Чили.

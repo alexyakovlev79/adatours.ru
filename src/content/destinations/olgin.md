@@ -5,7 +5,7 @@ slug: holguin
 status: "approved"
 name: "Ольгин"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Ольгин известен парками и площадями в тени деревьев. Рядом с городом находится парк Баиа де Наранхо, а на побережье можно отдыхать на пляжах с теплой океанской водой."
 searchAliases: []
 hero: {"src":"/media/destinations/holguin/hero-enhanced-20261004.webp","alt":"Пальмы на открытом морском берегу в районе Ольгина, Куба", hover: "Ольгин: пальмы и сухой газон перед синим морем"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-na-kurort-olgin-n
 sourceSnapshot: "https://drive.google.com/file/d/1jq6GlVz-w4Pj9PYawskQTE3oYIT2HOHQ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_beach"]
+navigationRole: hub
 ---
 
 ## Ольгин — город парков на Кубе!

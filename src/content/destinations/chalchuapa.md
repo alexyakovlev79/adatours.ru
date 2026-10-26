@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_chalchuapa.md
 updatedAt: '2026-10-14'
+navigationRole: hub
 ---
 
 ## Город и его древняя история

@@ -5,7 +5,7 @@ slug: monterrico
 status: approved
 name: Монтеррико
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: resort
 summary: Темный вулканический песок, пальмы и волны Тихого океана. Монтеррико завершает путешествие по городам и
   озерам Гватемалы двумя ночами у моря.
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_beach
 sourceSnapshot: data/source-index/materials/destination_guatemala_monterrico.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 В Монтеррико хочется снять обувь и выйти к океану: вдоль берега лежит темный вулканический песок, над пляжем поднимаются пальмы, а волны идут к суше длинными белыми полосами. Сюда приезжают за отдыхом после высокогорных дорог, рынков и колониальных городов.

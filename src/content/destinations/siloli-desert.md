@@ -5,7 +5,7 @@ slug: siloli-desert
 status: approved
 name: Пустыня Силоли
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: desert
 summary: Пустыня Силоли входит в высокогорные маршруты Боливии вместе с лагунами и вулканическими ландшафтами региона Липес.
 searchAliases:
 - pustynya-siloli
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_pustynya_siloli.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Пустыня Силоли, остановка высокогорного путешествия по Боливии, входит в маршруты между солончаком Уюни и лагунами региона Липес. Здесь путешественники видят открытые пустынные пространства и каменные образования.

@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_imbabura_province.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Она входит в маршруты, соединяющие природу Анд и местные ремесленные традиции.

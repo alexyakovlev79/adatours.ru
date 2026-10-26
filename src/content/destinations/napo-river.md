@@ -5,7 +5,7 @@ name: Река Напо
 slug: napo-river
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: river
 summary: Напо — одна из главных рек эквадорской Амазонии. Речные переходы по ней соединяют населённые пункты, лесные лоджи и природные участки путешествия.
 hero:
   src: /media/destinations/napo-river/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_reka_napo.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Речные переходы по ней соединяют населённые пункты, лесные лоджи и природные участки путешествия.

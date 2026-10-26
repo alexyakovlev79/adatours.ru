@@ -5,7 +5,7 @@ name: Сако-ду-Мамангуа
 slug: saco-do-mamangua
 status: approved
 countryId: country_brazil
-destinationType: natural_area
+destinationType: bay
 summary: Длинная морская бухта возле Парати с лесистыми склонами, небольшими пляжами и тихими прибрежными поселениями.
 hero:
   src: /media/tours/brazilskaya-mechta/saco-do-mamangua-place-generated-20261008.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_beach", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_brazil_sako_du_mamangua.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Сако-ду-Мамангуа — узкая морская бухта в окрестностях Парати. Вода глубоко входит между покрытыми атлантическим лесом холмами, а небольшие пляжи чередуются с зелеными склонами. Такой береговой рельеф называют рией: его протяженная форма особенно хорошо видна с возвышенных точек.

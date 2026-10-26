@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_pujo.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В маршрутах через Баньос и лесные районы здесь меняется характер природы и городской жизни.

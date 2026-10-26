@@ -5,7 +5,7 @@ slug: palermo
 status: approved
 name: Палермо
 countryId: country_argentina
-destinationType: route_cluster
+destinationType: district
 summary: Палермо объединяет зеленые пространства и городские кварталы Буэнос-Айреса. Здесь находятся Боски-де-Палермо,
   озера, планетарий и прогулочные аллеи, где после шумного центра легко провести несколько спокойных часов.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_argentina_buenos_aires
 sourceSnapshot: data/source-index/materials/destination_argentina_palermo.md
 updatedAt: '2026-10-12'
+navigationRole: hub
 ---
 
 Начать знакомство с районом можно у озер и деревьев парка Трес-де-Фебреро. Купол планетария Галилео Галилея появляется между кронами, а дорожки вдоль воды подходят для неспешной прогулки. Палермо позволяет увидеть столицу с другой стороны: большие зеленые пространства здесь соседствуют с плотной городской застройкой.

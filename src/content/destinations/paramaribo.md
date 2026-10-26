@@ -5,7 +5,7 @@ slug: paramaribo
 status: approved
 name: "Парамарибо"
 countryId: "country_suriname"
-destinationType: "city"
+destinationType: city
 summary: "Парамарибо: голландская колониальная архитектура, исторический центр ЮНЕСКО, городские парки и район художников Марон."
 searchAliases: []
 hero:
@@ -36,6 +36,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-paramaribo-v-surina
 sourceSnapshot: "https://drive.google.com/file/d/1Hbh-6XuiwlGWOU12lZldRvKk8G9SgtW8/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Парамарибо-яркий город Суринама!

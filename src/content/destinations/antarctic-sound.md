@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_antarkticheskij_proliv.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Это морской участок экспедиционных маршрутов, где с борта наблюдают прибрежные льды и айсберги.

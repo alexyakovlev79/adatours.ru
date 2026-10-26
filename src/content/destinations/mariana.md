@@ -5,7 +5,7 @@ slug: "mariana"
 status: "approved"
 name: "Мариана"
 countryId: "country_brazil"
-destinationType: "city"
+destinationType: city
 summary: "Колониальная архитектура и история золотодобычи в Минас-Жерайсе."
 searchAliases: []
 themes: ["theme_culture"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_mariana.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Мариана — исторический город в бразильском штате Минас-Жерайс, который часто посещают вместе с Ору-Прету. Его улицы, площади, старые дома и храмы сохраняют атмосферу поселений, выросших в эпоху добычи золота. Прогулка по центру позволяет увидеть колониальную Бразилию в спокойном городском масштабе.

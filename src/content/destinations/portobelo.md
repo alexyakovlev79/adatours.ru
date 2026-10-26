@@ -5,7 +5,7 @@ slug: portobelo
 status: "approved"
 name: "Портобело"
 countryId: "country_panama"
-destinationType: "city"
+destinationType: town
 summary: "Старинный испанский порт с колониальной архитектурой и фортами в окрестностях. В одной из церквей Портобело хранится статуя «черного Иисуса»."
 searchAliases: []
 hero: {"src":"/media/destinations/portobelo/hero-enhanced-20261023-v2.webp","alt":"Парусное судно у спокойного морского берега за силуэтами пальм в Портобело, Панама", hover: "Портобело: парусное судно за прибрежными пальмами"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-portobelo-v-panam
 sourceSnapshot: "https://drive.google.com/file/d/1W5Z6v5O_H5ASSAezTwIpozm_wiQsaZNi/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Портобело - образец колониальной эпохи в Панаме!

@@ -18,6 +18,7 @@ searchAliases:
 - Пролив Чакао
 sourceSnapshot: data/source-index/materials/destination_chile_chacao_strait.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В P109 через пролив переправляются по дороге из Пуэрто-Вараса в Анкуд и на обратном пути. С парома открываются виды на воду и низкие зеленые берега; самостоятельная морская экскурсия в программе не заявлена.

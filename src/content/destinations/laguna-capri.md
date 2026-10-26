@@ -5,7 +5,7 @@ slug: laguna-capri
 status: approved
 name: Лагуна-Капри
 countryId: country_argentina
-destinationType: natural_area
+destinationType: lake
 summary: Синяя вода, лес ленги и Фицрой над дальним берегом. Лагуна-Капри дает возможность увидеть патагонские вершины
   в походе на полдня из Эль-Чалтена.
 hero:
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_laguna_capri.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На берегу Лагуны-Капри хочется поставить рюкзак, присесть у воды и дождаться, когда облака откроют Фицрой. Синяя лагуна лежит среди патагонского леса, а гранитные вершины поднимаются за дальним берегом. В спокойную погоду их силуэты отражаются в воде; ветер за несколько минут превращает зеркало в мелкую рябь.

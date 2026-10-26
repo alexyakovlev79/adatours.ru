@@ -5,7 +5,7 @@ name: Каменное Дерево
 slug: arbol-de-piedra
 status: approved
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: other_landmark
 summary: 'Каменное Дерево — скальное образование на высокогорном джиповом маршруте Боливии. Его узнаваемый силуэт напоминает дерево: узкая нижняя часть поддерживает широкую неровную вершину.'
 hero:
   src: /media/destinations/arbol-de-piedra/hero-generated-20261009-followup-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_arbol_de_piedra.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В программе поездки через лагуны и пустыню Силоли это самостоятельная остановка среди открытых пустынных пейзажей. Рядом с широкими панорамами лагун здесь важен отдельный природный объект — форма камня и её контраст с окружающей равниной.

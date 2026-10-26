@@ -5,7 +5,7 @@ name: Ишимче
 slug: iximche
 status: approved
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Ишимче возле Текпана в Гватемале, археологический комплекс бывшей столицы майя-какчикель.
 hero:
   src: /media/tours/mir-majya/iximche-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - ishimche
 sourceSnapshot: data/source-index/materials/destination_guatemala_ishimche.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Археологический комплекс Ишимче находится возле Текпана в Гватемале. Здесь находилась столица майя-какчикель. Место позволяет познакомиться с историей народа, чьи традиции продолжают существовать в регионе, и увидеть следы городской жизни майя за пределами самых известных комплексов Петена.

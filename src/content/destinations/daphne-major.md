@@ -5,7 +5,7 @@ name: "Большой Дафне"
 slug: "daphne-major"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: island
 summary: "Большой Дафне, небольшой вулканический остров возле Санта-Крус, известен многолетними исследованиями дарвиновых вьюрков."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_daphne_major/hero-generated-20261010-third-ten-v1.webp", "alt": "Вулканический остров Большой Дафне среди синей океанской воды", "hover": "Большой Дафне: скалистый вулканический остров с моря"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_daphne_major.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 Большой Дафне поднимается из океана сухим вулканическим конусом. Остров расположен к северу от Санта-Крус и сложен туфом, породой из вулканического пепла. С моря хорошо видны его склоны и неровный край кратера. Над каменным берегом летают морские птицы, и этот небольшой участок суши постепенно начинает притягивать взгляд.

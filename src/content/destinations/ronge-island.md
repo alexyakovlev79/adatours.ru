@@ -20,6 +20,7 @@ searchAliases:
 - Rongé Island
 sourceSnapshot: data/source-index/materials/destination_antarctica_ronge_island.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Ронже лежит у западного побережья Земли Грейама и образует западную сторону пролива Эррера. Высокие склоны и ледники хорошо видны с моря. Между заснеженными участками выступают темные скалы.

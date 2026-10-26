@@ -5,7 +5,7 @@ slug: ica
 status: "approved"
 name: "Ика"
 countryId: "country_peru"
-destinationType: "city"
+destinationType: city
 summary: "Город на юге Перу, откуда отправляются к рисункам Наска и оазису Уакачина. Озеро среди дюн и катание по песку дополняют поездку в Ику."
 searchAliases: []
 hero: {"src":"/media/destinations/ica/hero-enhanced-20261023-v2.webp","alt":"Оазис Уакачина с озером и домами среди песчаных дюн у Ики, Перу", hover: "Уакачина: вид сверху на зеленый оазис среди пустыни"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-ika-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1agv15vXg8WYTfmvtsK0Gd6ohqB5urO-H/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_nature", "theme_adventure", "theme_culture"]
+navigationRole: hub
 ---
 
 ## Камни Ики и оазис Уакачина: что посмотреть в Ике, Перу

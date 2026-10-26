@@ -5,7 +5,7 @@ name: Долина Куракави
 slug: curacavi-valley
 status: approved
 countryId: country_chile
-destinationType: region
+destinationType: valley
 summary: Долина Куракави встречается на пути из Сантьяго к тихоокеанскому побережью. После городских кварталов за окном
   появляются сельские пейзажи, сады и возделанные склоны. Этот переезд помогает увидеть центральное Чили между столицей
   и портовыми городами.
@@ -21,6 +21,7 @@ searchAliases:
 - Долина Куракави
 sourceSnapshot: data/source-index/materials/destination_chile_curacavi_valley.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В программе Вальпараисо и Винья-дель-Мар долина относится к дороге, а отдельная дегустация или прогулка по хозяйству согласуется дополнительно. 

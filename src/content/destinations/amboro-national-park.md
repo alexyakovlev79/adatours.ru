@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_park_amboro.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Парк Амборо включен в программу путешествия по Боливии вместе с Санта-Крусом и Самаипатой. В туре эта часть маршрута посвящена природным ландшафтам и прогулке среди леса.

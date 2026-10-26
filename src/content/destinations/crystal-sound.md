@@ -20,6 +20,7 @@ searchAliases:
 - Crystal Sound
 sourceSnapshot: data/source-index/materials/destination_antarctica_crystal_sound.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Кристал-Саунд находится у западной стороны Антарктического полуострова, в районе Южного полярного круга. Это морская акватория с островами, плавающим льдом и видами на заснеженное побережье.

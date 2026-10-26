@@ -5,7 +5,7 @@ name: Водопад Фата Невесты (Баньос)
 slug: manto-de-la-novia-waterfall
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: waterfall
 summary: Манто-де-ла-Новия, или «Фата невесты», — водопад на «Дороге водопадов» в окрестностях Баньоса. Светлая
   полоса падающей воды выделяется на зелёном склоне над ущельем Пастасы.
 hero:
@@ -21,6 +21,7 @@ facts: []
 featureBands: []
 sourceSnapshot: https://drive.google.com/file/d/1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x/view
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Название связано с формой каскада, напоминающей длинную фату. Посещение часто совмещают с переправой по канатной дороге через долину. С высоты можно увидеть сам водопад, реку и покрытые лесом склоны.

@@ -5,7 +5,7 @@ name: Марас
 slug: maras
 status: approved
 countryId: country_peru
-destinationType: natural_area
+destinationType: town
 summary: Марас в Священной долине Перу, поселение с соляными бассейнами на горном склоне.
 hero:
   src: /media/tours/vip-puteshestvie-v-imperiyu-inkov-na-8-dnej/maras-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_peru_maras.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Марас известен соляными бассейнами, которые расположены на склоне в районе Священной долины. Небольшие водные чаши образуют плотный рисунок террас. Их светлая поверхность отличается от окружающих горных склонов и сельскохозяйственных пейзажей.

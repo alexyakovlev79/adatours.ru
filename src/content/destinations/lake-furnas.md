@@ -5,7 +5,7 @@ slug: lake-furnas
 status: approved
 name: Озеро Фурнаш
 countryId: country_brazil
-destinationType: natural_area
+destinationType: lake
 summary: Озеро Фурнаш в районе Капитолио входит в лодочные маршруты по каньонам и водопадам.
 searchAliases:
 - ozero-furnash
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_ozero_furnash.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Водоем Фурнаш связан с одноименной гидроэлектростанцией и маршрутом через регион Капитолио. С воды знакомятся с каньонами и прибрежными скальными ландшафтами.

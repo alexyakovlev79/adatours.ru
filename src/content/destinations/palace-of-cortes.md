@@ -5,7 +5,7 @@ slug: palace-of-cortes
 status: approved
 name: Дворец Кортеса в Куэрнаваке
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: building
 summary: Дворец Кортеса в центре Куэрнаваки, каменное здание колониальной эпохи и музей народов Морелоса.
 hero:
   src: /media/destinations/cuernavaca/gallery-3-enhanced-20261004.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_palace_of_cortes.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Дворец Кортеса выделяется в центре Куэрнаваки тяжелыми каменными стенами и видом укрепленного здания. Его история связана с Эрнаном Кортесом и ранней колониальной эпохой, а расположение делает дворец удобной отправной точкой для городской прогулки.

@@ -5,7 +5,7 @@ name: Гуайябамба
 slug: guayllabamba
 status: approved
 countryId: country_ecuador
-destinationType: city
+destinationType: town
 summary: Гуайябамба находится в межгорной долине недалеко от Кито. В поездке к северным районам страны здесь меняются высота, растительность и характер сельского пейзажа.
 hero:
   src: /media/destinations/guayllabamba/hero-generated-20261009-root-v1.webp
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_guayllabamba.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В поездке к северным районам страны здесь меняются высота, растительность и характер сельского пейзажа.

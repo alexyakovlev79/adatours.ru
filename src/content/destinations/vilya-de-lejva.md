@@ -5,7 +5,7 @@ slug: villa-de-leyva
 status: "approved"
 name: "Вилья-де-Лейва"
 countryId: "country_colombia"
-destinationType: "city"
+destinationType: town
 summary: "Вилья-де-Лейва сохранила побеленные дома, мощеные улицы и терракотовые крыши колониальной эпохи. Вокруг главной площади находятся церкви, музеи и старинные здания."
 searchAliases: []
 hero: {"src":"/media/destinations/villa-de-leyva/hero-enhanced-20261003.webp","alt":"Мощеная улица с белыми стенами и цветами в Вилья-де-Лейве, Колумбия", hover: "Вилья-де-Лейва: солнечная улица вдоль белых домов"}
@@ -43,6 +43,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-villa-de-lejva-v-ko
 sourceSnapshot: "https://drive.google.com/file/d/1N1tUDC7LNzZeA5YqxEminJzZgLKkiJ3X/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Беленые дома и мощеные улицы: что посмотреть в Вилья-де-Лейве

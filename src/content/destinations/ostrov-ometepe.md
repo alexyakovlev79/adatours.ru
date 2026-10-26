@@ -5,7 +5,7 @@ slug: ometepe-island
 status: "approved"
 name: "Остров Ометепе"
 countryId: "country_nicaragua"
-destinationType: "island"
+destinationType: island
 summary: "Вулканы Концепсьон и Мадерас, панорамные виды и природа биосферного заповедника. Ометепе привлекает путешественников маршрутами восхождений."
 searchAliases: []
 hero: {"src":/media/countries/nicaragua/featureBands-1-enhanced-20261002.webp,"alt":"Конус вулкана на острове Ометепе над деревьями и сухой травой, Никарагуа", hover: "Ометепе: вулканическая вершина за деревьями"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-ometepe-v-nikarag
 sourceSnapshot: "https://drive.google.com/file/d/1Ayc3e9tT7jO7QyA-tRuBv1AOEIiyIkZ4/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_nature", "theme_adventure"]
+navigationRole: hub
 ---
 
 ## Ометепе - вулканический остров Никарагуа

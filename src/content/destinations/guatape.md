@@ -5,7 +5,7 @@ name: Гуатапе
 slug: guatape
 status: approved
 countryId: country_colombia
-destinationType: city
+destinationType: town
 summary: Гуатапе, колумбийский город с яркими фасадами, рельефными цоколями домов и видами на воду у скалы Эль-Пеньон.
 hero:
   src: /media/excursions/penol-i-guatape/gallery-0-src-enhanced-20261007.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_colombia_guatape.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Гуатапе известен домами с яркими фасадами и рельефами в нижней части стен. Эти декоративные цоколи изображают сцены повседневной жизни и делают обычную прогулку по улицам самостоятельной достопримечательностью. Детали лучше рассматривать вблизи: у каждого дома свое сочетание цветов и сюжетов.

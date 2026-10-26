@@ -5,7 +5,7 @@ name: Вулкан Пасочоа
 slug: pasochoa-volcano
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: volcano
 summary: Пасочоа — вулканический район в окрестностях Кито. В активных программах его посещают ради треккинга и знакомства с горной растительностью и рельефом.
 hero:
   src: /media/destinations/pasochoa-volcano/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_pasochoa.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В активных программах его посещают ради треккинга и знакомства с горной растительностью и рельефом.

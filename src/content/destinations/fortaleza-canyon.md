@@ -5,7 +5,7 @@ slug: "fortaleza-canyon"
 status: "approved"
 name: "Каньон Форталеза"
 countryId: "country_brazil"
-destinationType: "natural_area"
+destinationType: canyon
 summary: "Широкая панорама скальных стен и зеленых долин в Серра-Жерал."
 searchAliases: ["Cânion Fortaleza","kanon-fortaleza"]
 themes: ["theme_adventure", "theme_nature"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_kanon_fortaleza.md"
 updatedAt: "2026-10-09"
+navigationRole: sight
 ---
 
 Каньон Форталеза расположен в национальном парке Серра-Жерал на юге Бразилии, в районе Камбара-ду-Сул. Его пейзаж раскрывается широкой панорамой: протяженные скальные стены обрамляют зеленые долины, а край травянистого плато открывает виды на глубину ущелья.

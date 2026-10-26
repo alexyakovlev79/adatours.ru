@@ -5,7 +5,7 @@ slug: carrao-river
 status: approved
 name: Река Каррао
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: river
 summary: Речная дорога из Канаймы к водопаду Анхель. Моторные куриара идут между лесными берегами, саванной и столовыми
   горами.
 hero:
@@ -17,6 +17,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_carrao_river.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На Каррао начинается длинная водная часть путешествия к Анхелю. По реке идут моторные куриара — узкие традиционные лодки. Лесные берега и участки саванны сменяют друг друга, а дальше открываются высокие скалы.

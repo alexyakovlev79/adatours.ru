@@ -5,7 +5,7 @@ slug: biomuseo
 status: approved
 name: Биомузей
 countryId: country_panama
-destinationType: city
+destinationType: museum
 summary: Цветные крыши Фрэнка Гери на Амадоре и история природы Панамы. В Биомузее знакомятся с биоразнообразием
   страны и формированием перешейка.
 hero:
@@ -20,6 +20,7 @@ searchAliases:
 - Музей биоразнообразия Biomuseo
 sourceSnapshot: data/source-index/materials/destination_panama_biomuseo.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Биомузей узнается по ярким угловатым крышам. Здание Фрэнка Гери стоит на Амадоре, у тихоокеанского входа в Панамский канал. Открытый атриум укрыт цветными металлическими навесами.

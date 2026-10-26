@@ -5,7 +5,7 @@ slug: ojo-de-agua
 status: approved
 name: Охо-де-Агуа
 countryId: country_nicaragua
-destinationType: natural_area
+destinationType: attraction
 summary: Прозрачная родниковая вода в тени тропических деревьев на острове Ометепе.
 hero:
   src: /media/tours/best-of-nicaragua-10-days/ojo-de-agua-generated-20261010-p020-v1.webp
@@ -16,6 +16,7 @@ themes: ["theme_nature"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_ojo_de_agua.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Охо-де-Агуа на Ометепе — место для остановки у прохладной пресной воды среди тропической зелени. Бассейны питаются природным подземным источником, а высокие деревья дают тень над берегом. Здесь приятно сменить дорогу и паромную переправу на отдых у воды.

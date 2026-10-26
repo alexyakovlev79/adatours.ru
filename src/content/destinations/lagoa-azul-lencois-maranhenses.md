@@ -5,7 +5,7 @@ slug: lagoa-azul-lencois-maranhenses
 status: approved
 name: Лагуна Азул (Ленсойс-Мараньенсес)
 countryId: country_brazil
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Азул находится среди белых дюн Ленсойс-Мараньенсес и входит в маршруты из Баррейриньяса.
 searchAliases:
 - laguna-azul-lensojs-maranenses
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_laguna_azul_lensojs_maranenses.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 К Лагуне Азул едут из Баррейриньяса через район песчаных дюн Ленсойс-Мараньенсес. Вода в понижениях между дюнами собирается после дождей.

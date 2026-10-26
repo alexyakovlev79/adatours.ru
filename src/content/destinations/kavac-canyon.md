@@ -5,7 +5,7 @@ name: Каньон Кавак
 slug: kavac-canyon
 status: approved
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: canyon
 summary: Узкий скальный каньон в районе Ауян-Тепуя, где вода проходит между высокими стенами и образует каскады.
 hero:
   src: /media/tours/venesuela-novye-konkistadory/kavac-canyon-place-generated-20261008.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_kanon_kavak.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Кавак — каньон в районе Ауян-Тепуя, в природном пространстве Канаймы. Его характер определяют тесный проход между скальными стенами, вода и участки тропической растительности над ущельем. Внутри каньона окружающий открытый пейзаж сменяется камерным пространством камня и воды.

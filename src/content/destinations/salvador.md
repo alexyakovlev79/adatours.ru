@@ -47,6 +47,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-salvador-de-baiya-br
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-salvador-de-baiya-braziliya__78c919ac.md
 updatedAt: 2026-09-24
 themes: ["theme_culture","theme_beach"]
+navigationRole: hub
 ---
 
 

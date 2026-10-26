@@ -25,6 +25,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gajanu-v-nacionalnyj-park
 sourceSnapshot: "https://drive.google.com/file/d/1XQVWFDsrqKONYeG0feedxK7iUjfZCUii/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_nature"]
+navigationRole: hub
 ---
 
 Национальный парк Кайетур является одним из самых старейших парков Гайаны. Он расположен недалеко от столицы страны - Джорджтауна. Парк был создан в 1929 году по решению британской колониальной администрации, и был назван в честь водопада Кайетур – одного из самых красивых водопадов мира. Высота представленного водопада составляет двести семьдесят метров.

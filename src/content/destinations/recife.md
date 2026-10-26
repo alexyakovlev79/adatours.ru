@@ -33,6 +33,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-resife-braziliya
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-resife-braziliya__2a4f3544.md
 updatedAt: 2026-09-24
 themes: ["theme_culture","theme_beach"]
+navigationRole: hub
 ---
 
 Ресифи вырос у воды. Река Капибариби, каналы и мосты делят центральную часть города на отдельные участки, за что его часто сравнивают с Венецией. К городской прогулке легко добавить атлантическое побережье.

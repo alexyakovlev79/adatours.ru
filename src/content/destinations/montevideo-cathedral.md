@@ -5,7 +5,7 @@ slug: montevideo-cathedral
 status: approved
 name: Кафедральный собор Монтевидео
 countryId: country_uruguay
-destinationType: route_cluster
+destinationType: religious_site
 summary: Неоклассический кафедральный собор Монтевидео, один из исторических храмов Сьюдад-Вьеха.
 hero:
   src: /media/tours/best-of-argentina-14-days/cathedral-generated-20261011-v1.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_uruguay_montevideo_cathedral.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Кафедральный собор Монтевидео стоит в старой части столицы Уругвая. Светлый фасад с двумя башнями обращен к городской площади; строгие пропорции напоминают о неоклассической архитектуре.

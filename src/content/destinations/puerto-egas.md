@@ -5,7 +5,7 @@ name: "Пуэрто-Эгас"
 slug: "puerto-egas"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: natural_area
 summary: "Пуэрто-Эгас на Сантьяго ведет вдоль лавового побережья к гротам морских котиков и небольшим приливным водоемам."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_puerto_egas/hero-generated-20261010-batch-four-v1.webp", "alt": "Галапагосские морские котики под скальным навесом у заводи Пуэрто-Эгас", "hover": "Пуэрто-Эгас: морские котики у воды под вулканической скалой"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_puerto_egas.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Пуэрто-Эгас интересно идти вдоль самой воды. На западном берегу Сантьяго черная лава образует неровные уступы, небольшие водоемы и гроты. Прибой то заполняет углубления, то открывает новые участки камня. На таком берегу легко провести много времени, рассматривая крабов и животных между волнами.

@@ -19,6 +19,7 @@ searchAliases:
 - 'Пуньиуиль: колония пингвинов'
 sourceSnapshot: data/source-index/materials/destination_chile_punihuil_penguin_colony.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Лодочная поездка позволяет наблюдать за птицами с воды. В программе P109 посещение Пуньиуиля проводится при благоприятной погоде, поэтому эта остановка относится к условной части маршрута.

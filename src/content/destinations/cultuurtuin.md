@@ -5,7 +5,7 @@ slug: cultuurtuin
 status: approved
 name: "Ботанический сад Култюртуин"
 countryId: country_suriname
-destinationType: natural_area
+destinationType: garden
 summary: "Тенистые тропы и зрелые тропические деревья в Парамарибо. Култюртуин дает возможность наблюдать лесных птиц рядом с городом."
 hero:
   src: /media/destinations/cultuurtuin/hero-generated-20261010-last8-v1.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_suriname_cultuurtuin.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 В Култюртуине достаточно замедлить шаг, чтобы прогулка превратилась в наблюдение за птицами. Под кронами крупных деревьев свет ложится пятнами, среди ветвей слышны перекликающиеся голоса. Гид останавливается, показывает движение в листве, и обычная зеленая крона вдруг оказывается полна жизни. Такая прогулка хорошо дополняет знакомство с Парамарибо.

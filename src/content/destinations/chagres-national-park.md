@@ -21,6 +21,7 @@ searchAliases:
 - nacionalnyj-park-chagres
 sourceSnapshot: data/source-index/materials/destination_panama_nacionalnyj_park_chagres.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Чагрес охраняет лесные территории, связанные с одноименной рекой. Речные маршруты показывают берега и тропическую растительность, а поездка на пироге делает воду основной частью знакомства с парком. Природа здесь соседствует с жизнью местных общин.

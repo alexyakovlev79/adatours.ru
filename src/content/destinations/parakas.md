@@ -5,7 +5,7 @@ slug: paracas
 status: approved
 name: "Паракас"
 countryId: "country_peru"
-destinationType: "resort"
+destinationType: peninsula
 summary: "Полуостров Паракас: скалистое побережье, морские львы, птицы и прогулки на моторных лодках к островам Баллестас."
 searchAliases: []
 hero:
@@ -30,6 +30,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-poluostrov-parakas-v-per
 sourceSnapshot: "https://drive.google.com/file/d/1yk7W5_DSVG2Bsj1s8yn6ev7pJwoPhA9-/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Острова Бальестас и морские львы: что посмотреть на полуострове Паракас

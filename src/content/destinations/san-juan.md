@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_san_huan.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Из Сан-Хуана продолжают путешествия по горным и пустынным районам региона. В маршрутах по природному наследию его посещение сочетают с поездками в Исчигуалясто и Талампайю.

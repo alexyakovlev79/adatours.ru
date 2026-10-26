@@ -5,7 +5,7 @@ name: "Миралаго"
 slug: "miralago"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: viewpoint
 summary: "Миралаго у Отавало открывает панораму озера Сан-Пабло и вулкана Имбабура. Здесь приятно сделать остановку по дороге через северные Анды."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_san_pablo_lake/hero-generated-20261010-next-ten-v1.webp", "alt": "Озеро Сан-Пабло у подножия Имбабуры в окрестностях Миралаго — иллюстрация", "hover": "Миралаго у Отавало открывает панораму озера Сан-Пабло и вулкана Имбабура. Здесь приятно сделать остановку по дороге через северные Анды."}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_miralago.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Миралаго дорога к Отавало получает хороший повод для остановки. Перед вами озеро Сан-Пабло, над которым поднимается Имбабура. Поля и поселения занимают нижние склоны, выше зелень сменяется темной горной породой. Облака то закрывают вершину, то оставляют ее на несколько минут полностью открытой.

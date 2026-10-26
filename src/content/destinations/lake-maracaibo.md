@@ -5,7 +5,7 @@ name: Озеро Маракайбо
 slug: lake-maracaibo
 status: approved
 countryId: country_venezuela
-destinationType: city
+destinationType: lake
 summary: Озеро Маракайбо в Венесуэле, большой водоем с прибрежными болотами и районами наблюдения за молниями Кататумбо.
 hero:
   src: /media/tours/krasota-venesuely/itinerary-day-08-generated-20261008-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - ozero-marakajbo
 sourceSnapshot: data/source-index/materials/destination_venezuela_ozero_marakajbo.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Большой водоем Маракайбо находится на западе Венесуэлы. Его юго-западная часть связана с влажными прибрежными ландшафтами и районом Кататумбо. Вода, речные участки и растительность берегов формируют природное окружение, которое удобнее всего рассматривать во время лодочной прогулки.

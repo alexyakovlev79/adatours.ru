@@ -5,7 +5,7 @@ slug: santo-antonio-amazon
 status: approved
 name: Санту-Антониу (Амазония)
 countryId: country_brazil
-destinationType: natural_area
+destinationType: village
 summary: Община Санту-Антониу входит в водные маршруты по Амазонии с посещением местных деревень.
 searchAliases:
 - Санту-Антониу
@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_santu_antoniu_amazoniya.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 В Санту-Антониу знакомятся с жизнью амазонской общины. Посещение деревни соединяют с прогулкой по экваториальному лесу и поездкой на катере.

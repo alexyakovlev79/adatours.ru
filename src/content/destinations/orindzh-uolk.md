@@ -5,7 +5,7 @@ slug: orange-walk
 status: approved
 name: Ориндж-Уолк
 countryId: country_belize
-destinationType: city
+destinationType: town
 summary: Ориндж-Уолк знакомит с руинами майя Ламанаи и Куэлло. В окрестных джунглях можно наблюдать птиц, а дальше на север отправиться в приграничный Коросал.
 searchAliases: []
 hero:
@@ -28,6 +28,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-orindzh-uolk-holpati
 sourceSnapshot: https://drive.google.com/file/d/1hvHgkDlqsV_Qm_0sqKQ3o7en8gsT3SBC/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_culture","theme_wildlife"]
+navigationRole: hub
 ---
 
 Ориндж-Уолк - один из 6 округов Белиза с населением чуть более сорока тысяч человек, ласково называют "сахарный город". Этот округ также хорошо известен своим скотоводством и производством рома.

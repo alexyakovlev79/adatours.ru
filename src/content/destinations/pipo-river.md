@@ -5,7 +5,7 @@ slug: pipo-river
 status: approved
 name: Река Пипо
 countryId: country_argentina
-destinationType: natural_area
+destinationType: river
 summary: Река Пипо течет среди лесов Огненной Земли возле Ушуайи и национального парка Тьерра-дель-Фуэго.
 hero:
   src: /media/tours/best-of-argentina-14-days/pipo-generated-20261011-v1.webp
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_pipo_river.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В долине реки Пипо вода идет по каменистому руслу среди южных лесов. Река относится к природным участкам, с которыми знакомят экскурсии в национальный парк Тьерра-дель-Фуэго.

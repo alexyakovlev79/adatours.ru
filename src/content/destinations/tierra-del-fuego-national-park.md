@@ -5,7 +5,7 @@ slug: "tierra-del-fuego-national-park"
 status: "approved"
 name: "Национальный парк Тьерра-дель-Фуэго"
 countryId: "country_argentina"
-destinationType: "national_park"
+destinationType: national_park
 summary: "Национальный парк Тьерра-дель-Фуэго"
 searchAliases: ["Национальный парк Тьерра-дель-Фуего", "Национальный парк Огненная Земля", "nacionalnyj-park-terra-del-fuego"]
 themes: ["theme_nature", "theme_adventure"]
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_nacionalnyj_park_terra_del_fuego.md"
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 На самом юге Аргентины, на острове Огненная Земля, начинается территория, где горы встречаются с морем, густые леса спускаются к берегам холодных заливов, а тишину нарушают лишь ветер и крики морских птиц. Национальный парк Тьерра-дель-Фуэго — одно из самых живописных мест Патагонии и самая южная охраняемая природная территория Аргентины.

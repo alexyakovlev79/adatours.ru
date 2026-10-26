@@ -21,6 +21,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-majya-ehl-peten-v-g
 sourceSnapshot: "https://drive.google.com/file/d/1JYuBsakTihAlAv0DeHLFqfhVYn_-Qbst/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_nature"]
+navigationRole: hub
 ---
 
 ### Петен-остров с городом Флорес

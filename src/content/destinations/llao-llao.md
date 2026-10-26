@@ -24,6 +24,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_llao_llao.md
 updatedAt: '2026-10-15'
+navigationRole: hub
 ---
 
 Льяо-Льяо подходит для знакомства с природой озёрного района в спокойном пешем темпе. Официальная туристическая служба Барилоче отмечает муниципальный парк среди остановок маршрута «Малое кольцо» и предлагает прогулки по его лесу.

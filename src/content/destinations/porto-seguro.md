@@ -33,6 +33,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-v-portu-seguru-bra
 sourceSnapshot: page_texts_original/ehkskursii-i-plyazhnye-tury-v-portu-seguru-braziliya__ec39380d.md
 updatedAt: '2026-10-11'
 themes: ["theme_beach","theme_culture"]
+navigationRole: hub
 ---
 
 В историческом центре сохранились церкви и здания колониального периода. Среди основных точек – церковь Носса-Сеньора-да-Пена, городской музей и мемориальные объекты, связанные с португальским освоением побережья.

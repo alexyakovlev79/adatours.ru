@@ -5,7 +5,7 @@ slug: "puerto-cisnes"
 status: "approved"
 name: "Пуэрто-Сиснес"
 countryId: "country_chile"
-destinationType: "city"
+destinationType: town
 summary: "Небольшой рыбацкий порт региона Айсен среди лесистых берегов Патагонии."
 searchAliases: ["puerto-sisnes"]
 themes: ["theme_cruises","theme_culture"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_chile_puerto_sisnes.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Пуэрто-Сиснес — прибрежный город в регионе Айсен, на берегу канала Пуюуапи. Рыбацкие лодки, небольшая гавань и невысокая застройка соседствуют здесь с покрытыми лесом склонами. Это остановка для знакомства с повседневной жизнью чилийской Патагонии, где поселения тесно связаны с водой.

@@ -5,7 +5,7 @@ name: "Остров Москера"
 slug: "mosquera-islet"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: island
 summary: "Москера между Балтрой и Северным Сеймуром приглашает на песчаный берег, где живет большая колония морских львов."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_mosquera_islet/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские львы на светлом песке среди прибрежных камней островка Москера", "hover": "Островок Москера: морские львы у бирюзовой воды"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_mosquera_islet.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 Москера выглядит как светлая полоска песка среди океана. Этот низкий островок находится между Балтрой и Северным Сеймуром; на нем мало растительности, зато много морских львов. У воды они возвращаются из плавания, отдыхают рядом друг с другом и перекликаются. Их обычный день становится главным впечатлением от высадки.

@@ -5,7 +5,7 @@ slug: el-valle-de-anton
 status: "approved"
 name: "Эль Валле"
 countryId: "country_panama"
-destinationType: "city"
+destinationType: town
 summary: "Город в кратере потухшего вулкана, окруженный лесами и горами. В Эль Валле приезжают ради пеших маршрутов, верховой езды и водопадов."
 searchAliases: []
 hero: {"src":"/media/destinations/el-valle-de-anton/hero-enhanced-20261023-v2.webp","alt":"Зеленая горная долина Эль-Валле-де-Антон под низкими облаками, Панама", hover: "Эль-Валле-де-Антон: вид на горные склоны сквозь лесную зелень"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-ehl-valle-v-panam
 sourceSnapshot: "https://drive.google.com/file/d/1xv7Pzs-WJPo02iOF0dPj3A3cQBD-mDcs/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Кальдера вулкана и золотые лягушки: что посмотреть в Эль-Валле, Панама

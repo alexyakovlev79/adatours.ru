@@ -5,7 +5,7 @@ name: "Озеро Дарвина"
 slug: "darwin-lake"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: lake
 summary: "Озеро Дарвина на Исабеле лежит внутри вулканического конуса: соленая вода, сухие склоны и виды над бухтой Тагус."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_darwin_lake/hero-generated-20261010-batch-four-v1.webp", "alt": "Озеро Дарвина среди сухих вулканических склонов острова Исабела", "hover": "Исабела: озеро Дарвина в вулканическом углублении"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_darwin_lake.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 Озеро Дарвина открывается после подъема над бухтой Тагус на острове Исабела. Вода лежит внутри вулканического конуса, среди сухих склонов и невысокой растительности. Сверху хорошо видна форма водоема: замкнутая чаша резко отличается от открытого океана по другую сторону берега.

@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_pokone.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Через Поконе проходят маршруты из Куябы в Северный Пантанал. После города начинается Транспантанейра — дорога, по которой продолжают путешествие к природным лоджам.

@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_itakurusa.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Итакуруса находится на побережье в районе Мангаратиба. Местная жизнь связана с рыболовством, туризмом и сельским хозяйством; на берегу сохранились небольшие дома рыбаков.

@@ -5,7 +5,7 @@ slug: ensenada-zaratiegui
 status: approved
 name: Бухта Энсенада-Саратьеги
 countryId: country_argentina
-destinationType: natural_area
+destinationType: bay
 summary: Энсенада-Саратьеги, бухта пролива Бигль у лесистых берегов национального парка Тьерра-дель-Фуэго.
 hero:
   src: /media/tours/best-of-argentina-14-days/ensenada-generated-20261011-v1.webp
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_ensenada_zaratiegui.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В бухте Энсенада-Саратьеги леса Огненной Земли выходят к берегу пролива Бигль. Каменистая пляжная полоса и вода на фоне гор дают представление о морской природе национального парка.

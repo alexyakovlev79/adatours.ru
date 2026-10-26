@@ -5,7 +5,7 @@ slug: churun-river
 status: approved
 name: Река Чурун
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: river
 summary: Узкая река, по которой куриара подходят к скалам Ауянтепуя и водопаду Анхель. Зеленые берега постепенно уступают
   место высоким стенам каньона.
 hero:
@@ -17,6 +17,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_churun_river.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Чурун — следующий речной этап после Каррао на пути к водопаду Анхель. Здесь водный путь становится уже, а над лесом поднимаются отвесные стены. По реке проходят к Каньону Дьявола и острову Ратонсито.

@@ -5,7 +5,7 @@ slug: monserrate-bogota
 status: approved
 name: Монсеррат в Боготе
 countryId: country_colombia
-destinationType: natural_area
+destinationType: mountain
 summary: Высокий холм над Боготой, подъем на который дополняет знакомство с историческим центром столицы Колумбии.
 hero:
   src: /media/destinations/monserrate-bogota/hero-generated-20261015-y26-005-v1.webp
@@ -16,6 +16,7 @@ relatedDestinations:
 - destination_colombia_bogota
 sourceSnapshot: data/source-index/materials/destination_colombia_monserrate_bogota.md
 updatedAt: '2026-10-15'
+navigationRole: sight
 ---
 
 Монсеррат — холм над Боготой, который посещают ради панорамы столицы. Отсюда видны городские кварталы и окружающие горные склоны. В обзорных программах подъем на Монсеррат часто завершает прогулку по историческому центру.

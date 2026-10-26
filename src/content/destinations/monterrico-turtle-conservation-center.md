@@ -5,7 +5,7 @@ slug: monterrico-turtle-conservation-center
 status: approved
 name: Центр охраны черепах Монтеррико
 countryId: country_guatemala
-destinationType: natural_area
+destinationType: attraction
 summary: 'Знакомство с охраной морских черепах на тихоокеанском берегу: от сохранения яиц до возвращения маленьких
   черепах в океан.'
 hero:
@@ -15,6 +15,7 @@ gallery: []
 themes: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_monterrico_turtle_conservation_center.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 В центре охраны черепах Монтеррико можно узнать, как защищают морских животных на берегу Тихого океана. Яйца переносят в подготовленные участки для инкубации, а после вылупления маленьких черепах выпускают на пляж, откуда они сами добираются до воды.

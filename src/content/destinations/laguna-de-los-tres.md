@@ -5,7 +5,7 @@ slug: laguna-de-los-tres
 status: approved
 name: Лагуна-де-лос-Трес
 countryId: country_argentina
-destinationType: natural_area
+destinationType: lake
 summary: Холодная бирюзовая вода под гранитными стенами Фицроя. Лагуна-де-лос-Трес становится наградой за большой
   пеший день в аргентинской Патагонии.
 hero:
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_laguna_de_los_tres.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Последний подъем к Лагуне-де-лос-Трес хочется пройти ради момента, когда за каменистой кромкой появляется бирюзовая вода. Над озером стоят гранитные стены Фицроя и соседние острые вершины, ниже белеют ледники. Деревья остаются позади, и на берегу особенно заметны холодный ветер, камень и близость высоких гор.

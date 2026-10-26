@@ -5,7 +5,7 @@ name: Водопады Агуа-Асуль
 slug: agua-azul-waterfalls
 status: approved
 countryId: country_mexico
-destinationType: natural_area
+destinationType: waterfall
 summary: Водопады Агуа-Асуль в Чьяпасе, каскады с бирюзово-голубой водой среди тропической растительности.
 hero:
   src: /media/tours/meksika-fantasticheskaya/agua-azul-waterfalls-place-generated-20261009-v1.webp
@@ -20,6 +20,7 @@ searchAliases:
 - vodopady-agua-asul
 sourceSnapshot: data/source-index/materials/destination_mexico_vodopady_agua_asul.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Агуа-Асуль находится в Чьяпасе и известен бирюзово-голубыми оттенками воды. Каскады проходят по каменистым уступам, а окружающая растительность создает зеленый фон для речного пейзажа. Здесь интересны отдельные потоки и общая цепочка падения воды.

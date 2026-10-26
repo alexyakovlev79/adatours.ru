@@ -5,7 +5,7 @@ slug: los-flamencos-national-reserve
 status: approved
 name: Национальный заповедник Лос-Фламенкос
 countryId: country_chile
-destinationType: national_park
+destinationType: natural_area
 summary: 'Лос-Фламенкос объединяет отдельные участки Атакамы: высокогорные лагуны, солончак и Долину Луны.'
 searchAliases:
 - Лос-Фламенкос
@@ -29,6 +29,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_nacionalnyj_zapovednik_los_flamenkos.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Национальный заповедник Лос-Фламенкос состоит из нескольких природных участков. Среди них лагуны Мисканти и Миньикес, район Чаксы на солончаке Атакама и Долина Луны.

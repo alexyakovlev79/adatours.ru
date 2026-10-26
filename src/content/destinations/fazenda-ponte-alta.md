@@ -5,7 +5,7 @@ slug: fazenda-ponte-alta
 status: approved
 name: Фазенда Понте-Альта
 countryId: country_brazil
-destinationType: route_cluster
+destinationType: historic_site
 summary: Фазенда Понте-Альта — историческая кофейная усадьба, где знакомятся с жизнью поместья и историей производства кофе.
 searchAliases:
 - "Fazenda Ponte Alta"
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_fazenda_ponte_alta.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На фазенде Понте-Альта знакомятся с историей усадьбы и кофейного хозяйства. Согласно программе посещения, плантацию создал барон де Мамбукаба.

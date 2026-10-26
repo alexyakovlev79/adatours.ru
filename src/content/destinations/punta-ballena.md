@@ -5,7 +5,7 @@ name: Пунта-Бальена
 slug: punta-ballena
 status: approved
 countryId: country_uruguay
-destinationType: natural_area
+destinationType: peninsula
 summary: Пунта-Бальена, прибрежный мыс рядом с Пунта-дель-Эсте, известен панорамами воды и закатами.
 hero:
   src: /media/destinations/punta-ballena/hero-generated-20261009-v3.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_uruguay_punta_balena.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 На мысе расположен Casapueblo, музей и мастерская художника Карлоса Паэс Виларо. Посещение музея позволяет совместить прогулку у воды со знакомством с творчеством уругвайского художника.

@@ -5,7 +5,7 @@ name: Лагуна Колорада
 slug: laguna-colorada
 status: approved
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Колорада находится на боливийском Альтиплано. Красноватая вода и присутствие фламинго делают ее одной из заметных природных остановок на маршруте к Уюни.
 hero:
   src: /media/destinations/laguna-colorada/hero-generated-20261008.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_laguna_kolorada.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Озеро посещают во время поездки по высокогорным лагунам. Его пейзаж меняется в зависимости от света и состояния воды: на фоне сухих горных склонов видны цветные участки озера и светлые берега.

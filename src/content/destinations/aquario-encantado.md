@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_zacharovannyj_akvarium.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 К Зачарованному Аквариуму подходят пешком во время поездки по району Бом-Жардима. Этот природный водоем входит в программу снорклинга среди рыб и водной растительности.

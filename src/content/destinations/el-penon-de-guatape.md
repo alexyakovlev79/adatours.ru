@@ -5,7 +5,7 @@ slug: el-penon-de-guatape
 status: approved
 name: Скала Эль-Пеньон-де-Гуатапе
 countryId: country_colombia
-destinationType: natural_area
+destinationType: mountain
 summary: 'Скала высотой около 220 метров у Гуатапе: панорама водохранилища, зеленых холмов и островов в колумбийской
   Антьокии.'
 hero:
@@ -18,6 +18,7 @@ relatedDestinations:
 - destination_colombia_guatape
 sourceSnapshot: data/source-index/materials/destination_colombia_el_penon_de_guatape.md
 updatedAt: '2026-10-19'
+navigationRole: sight
 ---
 
 Эль-Пеньон-де-Гуатапе, также известный как Ла-Пьедра-дель-Пеньоль, возвышается над водохранилищем в колумбийской Антьокии. Высота монолита над окружающим ландшафтом составляет около 220 метров. Скала дает возможность увидеть пейзаж, ради которого путешественники приезжают в окрестности Гуатапе.

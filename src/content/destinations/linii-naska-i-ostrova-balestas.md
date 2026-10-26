@@ -5,7 +5,7 @@ slug: nazca-lines-and-ballestas-islands
 status: "approved"
 name: "Линии Наска и Острова Бальестас"
 countryId: "country_peru"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Геоглифы плато Наска, морские животные и птицы островов Бальестас, гигантский Канделябр Паракаса. Воздушные и лодочные экскурсии по Перу."
 searchAliases: []
 hero: {"src":"/media/destinations/nazca-lines-and-ballestas-islands/hero-enhanced-20261023-v2.webp","alt":"Геоглиф колибри с длинным клювом и расправленными крыльями в пустыне Наска, Перу", hover: "Наска: рисунок колибри на поверхности пустыни"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-k-zagadochnym-liniyam-naska
 sourceSnapshot: "https://drive.google.com/file/d/1YRM5C4ku2odRh-Plseu-MrFxgTgVxbD7/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_wildlife"]
+navigationRole: hub
 ---
 
 ## Геоглифы и андский канделябр: что посмотреть на плато Наска, Перу

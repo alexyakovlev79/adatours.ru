@@ -5,7 +5,7 @@ name: Атинс
 slug: atins
 status: approved
 countryId: country_brazil
-destinationType: resort
+destinationType: village
 summary: Прибрежное поселение на краю Ленсойс-Мараньенсис, где песчаные улицы и пальмы соседствуют с дюнами и морем.
 hero:
   src: /media/tours/udivitelnaya-braziliya/atins-place-generated-20261008.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_beach", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_brazil_atins.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Атинс — небольшое прибрежное поселение в штате Мараньян, у края дюнного района Ленсойс-Мараньенсис. Песчаные улицы, невысокие дома и пальмы создают спокойную атмосферу, а окрестности объединяют морской берег и большие пространства светлого песка.

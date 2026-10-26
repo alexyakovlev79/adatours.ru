@@ -5,7 +5,7 @@ name: Пляжи Бачас
 slug: bachas-beaches
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: beach
 summary: Бачас — белые песчаные пляжи на северном побережье Санта-Крус. Светлый песок, тёмные вулканические камни
   и бирюзовая вода образуют характерный пейзаж Галапагосов.
 hero:
@@ -21,6 +21,7 @@ facts: []
 featureBands: []
 sourceSnapshot: https://drive.google.com/file/d/1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x/view
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 За береговой полосой находятся небольшие лагуны, где можно наблюдать птиц; появление фламинго зависит от природных условий. Пляжи посещают во время морских экскурсий, часто вместе с Сеймур-Норте. Программа может включать отдых у воды и снорклинг.

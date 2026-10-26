@@ -5,7 +5,7 @@ slug: chantani-museum
 status: approved
 name: Музей Чантани
 countryId: country_bolivia
-destinationType: route_cluster
+destinationType: museum
 summary: 'Местный музей в поселении Чантани на северной стороне Уюни: культурное наследие альтиплано и жизнь селений
   у Тунупы.'
 hero:
@@ -22,6 +22,7 @@ searchAliases:
 - Museo de Chantani
 sourceSnapshot: data/source-index/materials/destination_bolivia_chantani_museum.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Музей Чантани находится в одноименном поселении на северной стороне солончака Уюни, между Тахуа и Кокесой. Это небольшой местный музей, посвященный природному и культурному наследию региона. Посещение дополняет поездку по солончаку и знакомство с поселениями у подножия Тунупы.

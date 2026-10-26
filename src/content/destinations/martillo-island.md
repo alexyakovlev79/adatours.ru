@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_argentina_ostrov_martilo.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Остров Мартильо входит в дополнительные поездки из района Ушуайи. К нему отправляются по воде, чтобы увидеть колонию пингвинов.

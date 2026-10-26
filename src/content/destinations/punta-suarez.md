@@ -5,7 +5,7 @@ name: "Мыс Суарес"
 slug: "punta-suarez"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: natural_area
 summary: "Мыс Суарес на Эспаньоле приглашает на прогулку среди морских игуан и птиц к скалам, где волны поднимают фонтан брызг."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_espanola_island/hero-generated-20261010-editorial-v1.webp", "alt": "Галапагосский альбатрос на скалистом берегу Эспаньолы — иллюстрация"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_punta_suarez.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 На мысе Суарес на острове Эспаньола стоит смотреть под ноги и по сторонам: каменная тропа проходит через места обитания животных. У берега отдыхают морские львы, на лаве греются морские игуаны. Дальше внимание привлекают колонии олуш, а над океаном мелькают силуэты других морских птиц.

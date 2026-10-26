@@ -5,7 +5,7 @@ slug: manuel-antonio
 status: "approved"
 name: "Мануэль Антонио"
 countryId: "country_costa_rica"
-destinationType: "national_park"
+destinationType: resort
 summary: "Мануэль Антонио объединяет пляжный курорт и национальный парк на тихоокеанском побережье Коста-Рики. Здесь можно гулять среди джунглей и знакомиться с подводным миром."
 searchAliases: []
 hero: {"src": "/media/countries/costa-rica/featureBands-3-enhanced-20261002.webp", "alt": "Зеленый полуостров Мануэль-Антонио над бирюзовой водой, Коста-Рика", "hover": "Мануэль-Антонио в Коста-Рике: лесистый мыс и прибой у скал с воздуха"}
@@ -32,6 +32,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-manuehl-antonio-v
 sourceSnapshot: "https://drive.google.com/file/d/1gI1u4yZtz3_WnnRag163KUF7yglf80tT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach", "theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Пляжи, джунгли и ленивцы: что посмотреть в Мануэль-Антонио, Коста-Рика

@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_proliv_gerlashe.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Вода, ледники и горные берега образуют пейзаж, ради которого сюда заходят экспедиционные суда.

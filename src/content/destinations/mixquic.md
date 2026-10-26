@@ -5,7 +5,7 @@ name: Микскик
 slug: mixquic
 status: approved
 countryId: country_mexico
-destinationType: city
+destinationType: village
 summary: Микскик в районе Мехико, поселение с семейными традициями Дня мертвых и праздничными алтарями.
 hero:
   src: /media/tours/meksika-den-mertvykh/mixquic-place-generated-20261009-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - mikskik
 sourceSnapshot: data/source-index/materials/destination_mexico_mikskik.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Микскик известен традициями Дня мертвых. Во время праздника семьи украшают алтари и могилы цветами, свечами и предметами, связанными с умершими близкими. Память о семье здесь выражается через совместное присутствие, еду и заботу о местах захоронения.

@@ -5,7 +5,7 @@ slug: leon-viejo
 status: approved
 name: Леон-Вьехо
 countryId: country_nicaragua
-destinationType: natural_area
+destinationType: archaeological_site
 summary: 'Руины первого Леона: улицы, фундаменты храмов и домов испанского города XVI века возле озера Манагуа.'
 hero:
   src: /media/destinations/leon/gallery-11-enhanced-20261023-v2.webp
@@ -17,6 +17,7 @@ themes:
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_leon_viejo.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Леон-Вьехо позволяет увидеть Никарагуа первых десятилетий испанской колонизации. Город основали в 1524 году; после природных катастроф жители перенесли его на другое место в 1610 году. Сегодня по низким стенам и сохранившимся фундаментам можно прочитать план старого поселения: где стояли дома, где проходили улицы и какие здания занимали центральное место.

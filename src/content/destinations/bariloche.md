@@ -55,6 +55,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-argentinskij-kurort-baril
 sourceSnapshot: https://drive.google.com/file/d/1uxXs54TV0fZmXC_ac_WQI9MEEKrGzEox/view?usp=drivesdk
 updatedAt: 2026-10-02
 themes: ["theme_adventure", "theme_nature", "theme_gastronomy_wine"]
+navigationRole: hub
 ---
 
 Барилоче, полное название Сан-Карлос-де-Барилоче, расположен на берегу озера Науэль-Уапи в центральной части Патагонских Анд. Вокруг города находятся горные вершины, озера и леса национального парка Науэль-Уапи.

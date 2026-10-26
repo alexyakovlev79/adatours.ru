@@ -17,6 +17,7 @@ searchAliases:
 - ostrov-zopango
 sourceSnapshot: data/source-index/materials/destination_nicaragua_ostrov_zopango.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Зопанго находится на озере Никарагуа и входит в островной район возле Гранады. Поездка сюда связана с лодочной прогулкой между небольшими островами. Водный пейзаж дополняется видом на вулкан Момбачо, который служит заметным ориентиром в этой части страны.

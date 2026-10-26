@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_dolina_kofe_rio_de_zhanejro.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В маршруты включают фазенды Понте-Альта, Такуара и Флоренса. Каждая усадьба рассматривается как самостоятельная остановка со своей историей. Во время поездки знакомятся также с историей рабского труда, на котором строилась экономика многих плантаций.

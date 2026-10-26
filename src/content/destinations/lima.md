@@ -40,6 +40,7 @@ sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-stolicu-peru-gorod-limu_
 updatedAt: 2026-10-02
 themes:
 - theme_culture
+navigationRole: hub
 ---
 
 Лима была основана Франсиско Писарро в 1535 году и позже стала столицей независимого Перу. Первое знакомство с городом обычно начинается с исторического центра и Пласа-Майор.

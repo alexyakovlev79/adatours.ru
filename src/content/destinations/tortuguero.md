@@ -5,7 +5,7 @@ slug: tortuguero
 status: "approved"
 name: "Тортугуэро"
 countryId: "country_costa_rica"
-destinationType: "national_park"
+destinationType: national_park
 summary: "Тортугуэро, Земля черепах, охраняет места гнездования морских черепах. Во время прогулок на лодках по каналам можно увидеть тропических птиц, игуан и крокодилов."
 searchAliases: []
 hero: {"src":"/media/destinations/tortuguero/hero-enhanced-20261004.webp","alt":"Женщина в каяке на лесном канале Тортугеро, Коста-Рика","hover":"Тортугеро в Коста-Рике: прогулка на каяке по тихому каналу среди леса"}
@@ -25,6 +25,7 @@ sourceUrl: "https://brasiltours.ru/tury-v-nacionalnyj-park-torgurego-v-kosta-rik
 sourceSnapshot: "https://drive.google.com/file/d/1KuhWnwXaFuagtKCCM7ZxUgTFSq4OnWBe/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Черепахи, каналы и туканы: что посмотреть в Тортугеро

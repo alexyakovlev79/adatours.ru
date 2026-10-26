@@ -5,7 +5,7 @@ slug: plaza-del-congreso
 status: approved
 name: Площадь Конгресса
 countryId: country_argentina
-destinationType: natural_area
+destinationType: square
 summary: Площадь Конгресса перед парламентом Аргентины известна монументом Двух конгрессов, фонтанами и зелеными
   участками. Она связывает прогулку по Буэнос-Айресу с историей независимости страны.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_argentina_buenos_aires
 sourceSnapshot: data/source-index/materials/destination_argentina_plaza_del_congreso.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 Главная деталь площади, монумент Двух конгрессов, напоминает об Ассамблее 1813 года и конгрессе в Тукумане 1816 года. Каменный постамент, скульптуры и фонтан создают большую композицию, которую лучше рассматривать с нескольких сторон.

@@ -42,6 +42,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kusko-v-peru
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-kusko-v-peru__f2854c27.md
 updatedAt: 2026-10-02
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Куско был столицей империи инков. В городе сохранилось характерное сочетание инкской и испанской архитектуры: многие здания колониального периода появились на месте более ранних культовых и административных сооружений.

@@ -5,7 +5,7 @@ slug: chiclayo
 status: approved
 name: "Чиклайо"
 countryId: "country_peru"
-destinationType: "city"
+destinationType: city
 summary: "Чиклайо: современный торговый город Перу в плодородной долине среди сахарных и рисовых плантаций, в 13 км от Тихого океана."
 searchAliases: []
 hero:
@@ -37,6 +37,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-chiklajo-v-peru"
 sourceSnapshot: "https://drive.google.com/file/d/1db2YPcc2uF7jZpP_4CZM4FX9cC1JGE0i/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Город в Перу, расположен в 13 километрах от тихоокеанского побережья.Чиклайо основан в основан в 1720 году францисканскими монахами.

@@ -5,7 +5,7 @@ name: Мачу-Пикчу
 slug: machu-picchu
 status: approved
 countryId: country_peru
-destinationType: region
+destinationType: archaeological_site
 summary: >-
   Мачу-Пикчу – инкская цитадель XV века в горах Перу. В центре посещения находятся террасы и каменные сооружения, Храм Солнца, Храм трех окон, Главный храм и камень Интиуатана.
 hero:
@@ -52,6 +52,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-inkov-machu-pikchu-v
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-gorod-inkov-machu-pikchu-v-peru__75c9afab.md
 updatedAt: 2026-10-02
 themes: ["theme_culture","theme_adventure"]
+navigationRole: hub
 ---
 
 Мачу-Пикчу – инкская цитадель XV века, связанная с именем правителя Пачакутека. Комплекс входит в Список Всемирного наследия ЮНЕСКО.

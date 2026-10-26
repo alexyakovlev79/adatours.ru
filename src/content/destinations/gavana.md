@@ -5,7 +5,7 @@ slug: havana
 status: "approved"
 name: "Гавана"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Гавана соединяет колониальную архитектуру, набережную Малекон и кубинскую музыку. В городе можно увидеть старинные крепости, Капитолий и дом-музей Эрнеста Хемингуэя."
 searchAliases: []
 hero: {"src": "/media/countries/cuba/featureBands-1-enhanced-20261002.webp", "alt": "Розовый ретро-кабриолет с пассажирами перед цветными фасадами Гаваны, Куба", "hover": "Гавана на Кубе: старинный автомобиль на городской улице"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-v-stolicu-ostrova-kuby-gorod-gavan
 sourceSnapshot: "https://drive.google.com/file/d/1uOAnotQ5X-8IqgN2TIyR2mH2yT6r3Glv/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Гавана - столица Острова Свободы!

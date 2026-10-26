@@ -5,7 +5,7 @@ slug: "gramado"
 status: "approved"
 name: "Грамаду"
 countryId: "country_brazil"
-destinationType: "city"
+destinationType: city
 summary: "В горах Серра-Гауша, на юге Бразилии, находится Грамаду — город, который удивляет с первого взгляда."
 searchAliases: ["gramadu"]
 themes: ["theme_culture", "theme_events", "theme_gastronomy_wine"]
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_gramadu.md"
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Здесь бразильская природа встречается с европейским наследием: деревянные шале, ухоженные сады, уютные площади и архитектура с заметными немецкими и итальянскими мотивами создают совершенно необычный для страны облик.

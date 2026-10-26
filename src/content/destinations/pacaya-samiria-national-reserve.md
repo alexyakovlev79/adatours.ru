@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_peru_nacionalnyj_zapovednik_pakaya_samiriya.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Речные круизы и прогулки по воде знакомят с затопленными лесами, животными и жизнью амазонских берегов.

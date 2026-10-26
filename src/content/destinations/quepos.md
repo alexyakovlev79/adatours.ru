@@ -5,7 +5,7 @@ name: Кепос
 slug: quepos
 status: approved
 countryId: country_costa_rica
-destinationType: city
+destinationType: town
 summary: Кепос на центральном тихоокеанском побережье Коста-Рики, туристический город рядом с национальным парком Мануэль-Антонио.
 hero:
   src: /media/tours/gvatemala-kosta-rika/quepos-place-generated-20261009-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - kepos
 sourceSnapshot: data/source-index/materials/destination_costa_rica_kepos.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Кепос находится на центральном тихоокеанском побережье Коста-Рики, рядом с национальным парком Мануэль-Антонио. Город дает возможность объединить отдых у океана с лесными прогулками в окрестностях. Здесь сосредоточены туристические услуги и местные заведения, а близость природных территорий определяет многие занятия путешественников.

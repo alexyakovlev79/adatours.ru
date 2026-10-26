@@ -5,7 +5,7 @@ slug: old-archbishop-palace
 status: approved
 name: Старый дворец архиепископа в Мехико
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: building
 summary: Старый дворец архиепископа на улице Монеда соединяет колониальную архитектуру Мехико и музейное искусство.
 hero:
   src: /media/tours/mexico-religious-journey/old-archbishop-palace-generated-20261011-v1.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_old_archbishop_palace.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Рядом с Сокало, на улице Монеда, находится бывшая резиденция архиепископов Мехико. Красный фасад и резные детали портала обращают внимание на архитектуру колониального центра, где церковные и государственные здания расположены совсем близко.

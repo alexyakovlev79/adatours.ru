@@ -5,7 +5,7 @@ slug: puebla-cathedral
 status: approved
 name: Кафедральный собор Пуэблы
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: religious_site
 summary: Кафедральный собор Пуэблы возвышается рядом с Сокало и определяет облик исторического центра города.
 hero:
   src: /media/tours/mexico-religious-journey/puebla-cathedral-generated-20261011-v1.webp
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_puebla_cathedral.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Каменные башни кафедрального собора поднимаются над центральной площадью Пуэблы. Его фасад и просторный атриум помогают увидеть, насколько важную роль храм играл в колониальном городе.

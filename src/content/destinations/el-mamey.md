@@ -5,7 +5,7 @@ name: Мамей
 slug: el-mamey
 status: approved
 countryId: country_colombia
-destinationType: city
+destinationType: village
 summary: Мамей, деревня на пешем маршруте к Затерянному городу в Колумбии и точка перехода от автомобильной дороги к тропе.
 hero:
   src: /media/tours/zateryannyj-gorod-v-santa-marte/mamey-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - mamej
 sourceSnapshot: data/source-index/materials/destination_colombia_mamej.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Мамей появляется на маршруте к Затерянному городу в Колумбии как место начала и завершения пешего участка. Сюда приезжают на автомобиле, затем продолжают путь вдоль реки к лесным лагерям. Деревня связывает дорожную часть путешествия с тропами, где дальше передвигаются пешком.

@@ -5,7 +5,7 @@ name: Озеро Льянкиуэ
 slug: llanquihue-lake
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: lake
 summary: Озеро Льянкиуэ находится в Озерном крае Чили. На его берегу расположен Пуэрто-Варас, а над водой видна
   вершина вулкана Осорно.
 hero:
@@ -18,6 +18,7 @@ searchAliases:
 - Озеро Льянкиуэ
 sourceSnapshot: data/source-index/materials/destination_chile_llanquihue_lake.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Озерный пейзаж соединяет открытую воду, зеленые берега и вулканические горы. В программе P109 знакомство с озером начинается после переезда из Пуэрто-Монта в Пуэрто-Варас.

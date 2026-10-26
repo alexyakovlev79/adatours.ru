@@ -5,7 +5,7 @@ slug: "atuel-canyon"
 status: "approved"
 name: "Каньон Атуэль"
 countryId: "country_argentina"
-destinationType: "natural_area"
+destinationType: canyon
 summary: "Извилистая река и каменные формы в сухом ландшафте провинции Мендоса."
 searchAliases: ["kanon-atuel"]
 themes: ["theme_adventure", "theme_nature"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_kanon_atuel.md"
 updatedAt: "2026-10-09"
+navigationRole: sight
 ---
 
 Каньон Атуэль находится в аргентинской провинции Мендоса, в районе Сан-Рафаэля. Здесь река проходит между скалами, которые вода и выветривание превратили в череду уступов и необычных каменных форм. Сухие склоны и редкая растительность подчеркивают цвет воды и слоистую структуру пород.

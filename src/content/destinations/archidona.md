@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_archidona.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Здесь горные маршруты сменяются поездками по речным и лесным районам восточной части страны.

@@ -5,7 +5,7 @@ slug: casa-rosada
 status: approved
 name: Каса-Росада
 countryId: country_argentina
-destinationType: natural_area
+destinationType: building
 summary: Каса-Росада — президентский дворец на Пласа-де-Майо. Розовый фасад сделал его одним из самых узнаваемых
   зданий Буэнос-Айреса, а само место связано с историей национальной власти.
 hero:
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_argentina_casa_rosada.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Во время обзорной экскурсии дворец обычно рассматривают со стороны площади: так хорошо видны симметрия фасада и его связь с окружающим пространством. Посещение внутренних помещений согласуется отдельно и зависит от режима доступа в действующее государственное здание.

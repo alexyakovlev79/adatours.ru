@@ -16,6 +16,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_venezuela_puerto_ordas.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Пуэрто-Ордас находится в штате Боливар и вместе с Сан-Феликсом входит в город Сьюдад-Гуаяна. Его географическое положение связано с устьем Карони, впадающей в Ориноко. Большие реки и городская застройка формируют характер этого восточного района Венесуэлы.

@@ -5,7 +5,7 @@ slug: nido-de-condores
 status: approved
 name: "Лагерь Нидо-де-Кондорес"
 countryId: country_argentina
-destinationType: natural_area
+destinationType: other_landmark
 summary: "Высотный лагерь Аконкагуа среди осыпей и снежных полей. Из Нидо-де-Кондорес открываются широкие виды на окружающие хребты Анд."
 hero:
   src: /media/tours/argentina-and-south-patagonia-in-the-footsteps-of-darwin/itinerary-day-11-generated-20261008-v1.webp
@@ -14,6 +14,7 @@ gallery: []
 themes: ["theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_argentina_nido_de_condores.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 В Нидо-де-Кондорес палатки стоят высоко над долинами, среди осыпей и снежных участков. За площадками лагеря уходят вдаль хребты Анд. Воздух здесь холоднее, движения становятся медленнее, а короткая прогулка за водой ощущается совсем иначе, чем внизу. Вечером особенно хочется устроиться в палатке с горячей кружкой и смотреть, как свет уходит с гор.

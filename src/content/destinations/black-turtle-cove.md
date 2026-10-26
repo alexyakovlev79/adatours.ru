@@ -5,7 +5,7 @@ name: "Бухта Тортуга-Негра"
 slug: "black-turtle-cove"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: bay
 summary: "Бухта Тортуга-Негра на Санта-Крус приглашает на тихую лодочную прогулку среди мангров, морских черепах и скатов."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_black_turtle_cove/hero-generated-20261010-batch-four-v1.webp", "alt": "Морская черепаха в прозрачной воде у мангров бухты Тортуга-Негра, Галапагосы, Эквадор", hover: "Тортуга-Негра: черепаха у ветвистых мангровых корней"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_black_turtle_cove.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В бухте Тортуга-Негра взгляд большую часть времени направлен в воду. На северном берегу Санта-Крус мангровые деревья окружают спокойные протоки. Их корни уходят к поверхности, ветви нависают над лодкой, а прозрачные участки позволяют заметить движение под ней.

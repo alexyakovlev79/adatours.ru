@@ -22,6 +22,7 @@ searchAliases:
 - Остров Деталь
 sourceSnapshot: data/source-index/materials/destination_antarctica_detaille_island.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Остров Детайль расположен во фьорде Лаллеман у побережья Лубе. На каменистом берегу стоит исторический домик базы W, за которым видны высокие горы и ледники. База работала с 1956 по 1959 год.

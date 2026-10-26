@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_belize_prirodnye_bassejny_rio_on.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Рио-Он, природные речные бассейны в заповеднике Маунтин-Пайн-Ридж, входят в маршруты по материковому Белизу. Их посещение соединяют с Караколем и пещерой Рио-Фрио.

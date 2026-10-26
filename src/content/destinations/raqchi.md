@@ -5,7 +5,7 @@ name: Ракчи
 slug: raqchi
 status: approved
 countryId: country_peru
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Археологический комплекс к югу от Куско, известный монументальной стеной храма Виракочи и круглыми складскими
   постройками.
 hero:
@@ -16,6 +16,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_peru_rakchi.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Ракчи — археологический комплекс в долине Вильканоты к югу от Куско. Его главная достопримечательность — храм Виракочи с высокой центральной стеной: каменное основание сочетается с глинобитной верхней частью. Остатки колонн помогают представить устройство большого крытого здания.

@@ -5,7 +5,7 @@ slug: colonia-del-sacramento
 status: approved
 name: "Колония дель Сакраменто"
 countryId: "country_uruguay"
-destinationType: "city"
+destinationType: city
 summary: "Колония дель Сакраменто: мощеные улочки, старые церкви и виды на Рио-де-ла-Плата. Вечером открыты бары, рестораны и небольшие кафе."
 searchAliases: []
 hero:
@@ -28,6 +28,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-koliniya-del-sakram
 sourceSnapshot: "https://drive.google.com/file/d/1fjcY80qkxh7uRv0zpMw6AufXDv_pV4Wt/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Колония дель Сакраменто -романтика Уругвая!

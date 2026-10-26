@@ -5,7 +5,7 @@ name: Долина Кокора
 slug: cocora-valley
 status: approved
 countryId: country_colombia
-destinationType: natural_area
+destinationType: valley
 summary: Долина Кокора в колумбийских Андах известна зелеными склонами, облачным лесом и высокими восковыми пальмами.
 hero:
   src: /media/tours/vivat-kolumbiya/hero-src-enhanced-20261007.webp
@@ -29,6 +29,7 @@ searchAliases:
 - dolina-kokora
 sourceSnapshot: data/source-index/materials/destination_colombia_dolina_kokora.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Долина Кокора находится в центральной горной цепи колумбийских Анд, в кофейном регионе рядом с Саленто. На зеленых склонах растут восковые пальмы Киндио, национальное дерево Колумбии. Их тонкие стволы поднимаются над пастбищами и участками влажного леса, поэтому пальмы хорошо видны уже из долины.

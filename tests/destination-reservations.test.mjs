@@ -6,7 +6,7 @@ import { excursionPath } from '../src/lib/routes.ts';
 
 const countries = [{ id: 'country_argentina', slug: 'argentina' }, { id: 'country_brazil', slug: 'brazil' }, { id: 'country_chile', slug: 'chile' }];
 const discovery = { entityType: 'tour', entityId: 'tour_fixture', sourceUrl: 'https://brasiltours.ru/fixture', evidence: 'День 2: поездка в указанное место.' };
-const request = (name, extra = {}) => ({ countryId: 'country_argentina', name, discoveredIn: discovery, ...extra });
+const request = (name, extra = {}) => ({ countryId: 'country_argentina', name, destinationType: 'city', navigationRole: 'hub', discoveredIn: discovery, ...extra });
 const newRequest = (name, englishName, extra = {}) => request(name, { englishName, ...extra });
 const empty = () => ({ catalog: [], reservations: { version: 1, entries: [] }, countries, publishedDestinationIds: [] });
 const continueWith = (result, extra = {}) => ({ catalog: result.catalog, reservations: result.reservations, countries, publishedDestinationIds: [], ...extra });
@@ -24,7 +24,8 @@ test('repeat request keeps ID/slug/URL and does not duplicate evidence or mutate
   assert.equal(repeated.reservations.entries[0].discoveredIn.length, 1);
   assert.deepEqual(state, empty());
   assert.equal(first.catalog[0].sourceUrl, null);
-  assert.equal(first.catalog[0].destinationType, undefined);
+  assert.equal(first.catalog[0].destinationType, 'city');
+  assert.equal(first.catalog[0].navigationRole, 'hub');
   assert.equal(first.reservations.entries[0].name, undefined);
 });
 
@@ -156,7 +157,7 @@ test('unknown country, empty names and unsafe raw media URLs do not write state'
 
 test('ordinary aliases preserve a prepared canonical record without opening a new preparation task', () => {
   const state = empty();
-  state.catalog.push({ id: 'destination_argentina_el_chalten', name: 'Эль-Чалтен', slug: 'el-chalten', countryId: 'country_argentina', countrySlug: 'argentina', url: '/argentina/place/el-chalten/', sourceUrl: 'https://brasiltours.ru/existing', aliases: ['El Chaltén'] });
+  state.catalog.push({ id: 'destination_argentina_el_chalten', name: 'Эль-Чалтен', slug: 'el-chalten', countryId: 'country_argentina', countrySlug: 'argentina', url: '/argentina/place/el-chalten/', sourceUrl: 'https://brasiltours.ru/existing', destinationType: 'city', navigationRole: 'hub', aliases: ['El Chaltén'] });
   const result = reserveDestinations(state, request('El Chalten'));
   assert.equal(result.results[0].outcome, 'existing');
   assert.equal(result.changed, false);
@@ -212,4 +213,18 @@ test('adding a secondary future place activates the reverse match without moving
   assert.equal(excursionHasDestination(excursion, 'destination_argentina_tigre'), false);
   assert.equal(excursionHasDestination(linked, 'destination_argentina_tigre'), true);
   assert.equal(excursionHasDestination(linked, excursion.destination), true);
+});
+
+test('new places require two independently validated taxonomy fields', () => {
+  for (const override of [{ destinationType: undefined }, { navigationRole: undefined }, { destinationType: 'unknown' }, { navigationRole: 'maybe' }]) {
+    const result = reserveDestinations(empty(), newRequest('Тигре', 'Tigre', override));
+    assert.equal(result.ok, false);
+    assert.equal(result.results[0].outcome, 'invalid');
+  }
+  const w = reserveDestinations(empty(), newRequest('Водопад Тест', 'Test Falls', { destinationType: 'waterfall', navigationRole: 'sight' }));
+  assert.equal(w.ok, true);
+  assert.equal(w.catalog[0].destinationType, 'waterfall');
+  assert.equal(w.catalog[0].navigationRole, 'sight');
+  assert.equal(reserveDestinations(continueWith(w), request('Водопад Тест', { destinationType: 'city', navigationRole: 'hub' })).ok, false);
+  assert.equal(reserveDestinations(continueWith(w), request('Водопад Тест', { destinationType: undefined, navigationRole: undefined })).changed, false);
 });

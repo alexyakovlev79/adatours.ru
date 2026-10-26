@@ -22,6 +22,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-santo-domingo-v-dom
 sourceSnapshot: "https://drive.google.com/file/d/1Fz3jufIcfEE_85bor_9c5NOY-R33nuXg/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Санто Доминго - ворота в Карибское море!

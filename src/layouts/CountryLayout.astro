@@ -1,4 +1,5 @@
 ---
+import { destinationTypeLabel } from '../lib/destination-taxonomy.mjs';
 import BorrowedHero from '../components/editorial/BorrowedHero.astro';
 import { interestsForCountry } from '../lib/interest-model.mjs';
 import { seoCountryTitle, seoAttractionsDescription } from '../lib/seo-page.mjs';
@@ -66,15 +67,7 @@ excursionEntries.sort(compareExcursionsByPopularity(excursionTourCounts));
 
 const themeEntries = interestsForCountry(d.id, allTourEntries, allThemeEntries).map((row) => row.entry);
 
-const destinationTypeLabel = {
-  city: 'Город',
-  region: 'Регион',
-  island: 'Остров',
-  national_park: 'Национальный парк',
-  resort: 'Курорт',
-  natural_area: 'Природная территория',
-  route_cluster: 'Маршрут',
-};
+
 
 // A linked place banner represents that place; other editorial bands belong
 // to this country. An unset property keeps the banner's original alternation.
@@ -178,7 +171,7 @@ const featureBandImageTextAlign = (href: string) => {
                 ></span></BorrowedHero>
                 <span class="destination-card__shade" aria-hidden="true"></span>
                 <span class="destination-card__meta">
-                  {destinationTypeLabel[item.data.destinationType]}
+                  {destinationTypeLabel(item.data.destinationType)}
                 </span>
                 <strong class="destination-card__title">{item.data.name}</strong>
                 <span class="destination-card__description">{item.data.summary}</span>

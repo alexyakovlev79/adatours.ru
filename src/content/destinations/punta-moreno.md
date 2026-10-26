@@ -5,7 +5,7 @@ name: "Пунта-Морено"
 slug: "punta-moreno"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: natural_area
 summary: "На Пунта-Морено на Исабеле темные лавовые поля скрывают небольшие лагуны, где кормятся фламинго и другие водные птицы."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_punta_moreno/hero-generated-20261010-third-ten-v1.webp", "alt": "Фламинго в небольшой лагуне среди тёмных лавовых полей Пунта-Морено", "hover": "Пунта-Морено: фламинго в лагуне на вулканическом берегу"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_punta_moreno.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Пунта-Морено сначала видишь темную лаву, уходящую к подножию Серро-Асуль на Исабеле. Поверхность покрыта складками и неровностями, среди которых приживаются первые растения. Затем в каменном пейзаже открываются лагуны. Вода отражает небо, и взгляд сразу начинает искать движение у ее края.

@@ -5,7 +5,7 @@ name: Зинакантан
 slug: zinacantan
 status: approved
 countryId: country_mexico
-destinationType: city
+destinationType: village
 summary: Зинакантан в мексиканском Чьяпасе, поселение народа цоциль с ткачеством и вышивкой.
 hero:
   src: /media/tours/meksika-fantasticheskaya/zinacantan-place-generated-20261009-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - zinakantan
 sourceSnapshot: data/source-index/materials/destination_mexico_zinakantan.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Зинакантан, также встречающийся в русских текстах как Синакантан, связан с культурой народа цоциль. Поселение известно тканями, вышивкой и работой местных мастеров. Изделия ручной работы помогают увидеть традиции сообщества через вещи, которые продолжают создавать и использовать жители.

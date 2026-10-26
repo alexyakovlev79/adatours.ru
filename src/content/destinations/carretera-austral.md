@@ -20,6 +20,7 @@ searchAliases:
 - Карретера-Аустраль
 sourceSnapshot: data/source-index/materials/destination_chile_carretera_austral.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В этой части маршрута стоит оставлять время на пейзажи и остановки. Дальние переезды помогают почувствовать расстояния Патагонии; состав прогулок и точное время в пути зависят от выбранного участка. 

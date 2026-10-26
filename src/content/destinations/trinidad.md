@@ -5,7 +5,7 @@ slug: trinidad
 status: "approved"
 name: "Тринидад"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Тринидад на Кубе сохранил мощеные улицы и колониальные дома. В городе работают исторический, археологический и романтический музеи, а в долине Сан Луис сохранились следы сахарных плантаций."
 searchAliases: []
 hero: {"src":"/media/destinations/trinidad/hero-enhanced-20261004.webp","alt":"Бирюзовые и желтые колониальные здания с аркадой и башней в Тринидаде, Куба", hover: "Тринидад: яркие фасады, аркада и башня"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-trinidad-na-ostrove
 sourceSnapshot: "https://drive.google.com/file/d/17-PaukMkFlSvPvpOz43HSlD7t-aQrdrp/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Тринидад - самый красивый город Кубы!

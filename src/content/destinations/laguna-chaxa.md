@@ -5,7 +5,7 @@ slug: laguna-chaxa
 status: approved
 name: Лагуна Чакса
 countryId: country_chile
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Чакса на солончаке Атакама известна мелководьем, соляной коркой и фламинго.
 searchAliases:
 - Озеро Чакса
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_laguna_chaksa.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 У Чаксы светлая соляная поверхность соседствует с мелководьем. Здесь наблюдают фламинго, для которых лагуны солончака служат природной средой.

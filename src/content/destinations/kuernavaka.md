@@ -5,7 +5,7 @@ slug: cuernavaca
 status: "approved"
 name: "Куэрнавака"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Куэрнавака сочетает колониальные улочки, цветущие балконы и субтропические сады. Здесь можно посетить музеи, Кафедральный собор, монастырь францисканцев и старинные асьенды."
 searchAliases: []
 hero: {"src":"/media/destinations/cuernavaca/hero-enhanced-20261004.webp","alt":"Карнавальная маска с зеленым усом и яркой бисерной отделкой, крупный план","hover":"Разноцветный головной убор и украшенная маска на празднике"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kuehrnavaka-v-meksi
 sourceSnapshot: "https://drive.google.com/file/d/1VCR_NAPIffyGDy6NivpS1P8B03--vsGJ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Куэрнавака - город вечной весны!

@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_guatemala_puerto_barrios.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Здесь путешественники делают паузу перед продолжением дороги к воде. Такая остановка помогает соединить в одном маршруте наследие майя и карибское побережье.

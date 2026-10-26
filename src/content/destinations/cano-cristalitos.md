@@ -5,7 +5,7 @@ name: Каньо-Кристалитос
 slug: cano-cristalitos
 status: approved
 countryId: country_colombia
-destinationType: natural_area
+destinationType: river
 summary: 'Небольшой цветной ручей возле Ла-Макарены: прозрачная вода, каменное русло и природные бассейны.'
 hero:
   src: /media/destinations/cano-cristalitos/hero-generated-20261010-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - Каньо Кристалитос
 sourceSnapshot: data/source-index/materials/destination_colombia_cano_cristalitos.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Каньо-Кристалитос показывает красоту цветных рек Колумбии в небольшом, почти камерном пейзаже. Прозрачная вода скользит по каменному дну, между участками русла появляются природные бассейны, а водная растительность добавляет розовые и красные оттенки.

@@ -5,7 +5,7 @@ slug: "garibaldi-fjord"
 status: "approved"
 name: "Фьорд Гарибальди"
 countryId: "country_chile"
-destinationType: "natural_area"
+destinationType: bay
 summary: "Ледниковый фьорд Огненной Земли среди лесистых и скалистых гор."
 searchAliases: ["ford-garibaldi"]
 themes: ["theme_nature", "theme_cruises"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_chile_ford_garibaldi.md"
 updatedAt: "2026-10-09"
+navigationRole: sight
 ---
 
 Фьорд Гарибальди находится в чилийской части Огненной Земли, в районе пролива Бигль и гор Кордильера-Дарвин. Узкий водный проход окружен крутыми берегами, южным лесом и скальными склонами. В глубине фьорда ледник спускается к холодной воде, создавая характерный для этого края контраст синего льда и темных гор.

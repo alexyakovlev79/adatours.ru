@@ -1,0 +1,73 @@
+name: Prepare Ada Tours destination taxonomy
+on:
+  push:
+    branches:
+      - feature/destination-taxonomy-swarm-20261026
+    paths:
+      - data/migrations/destination-taxonomy-20261026/swarm/release-dispatch.json
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ada-destination-taxonomy-release-20261026
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/feature/destination-taxonomy-swarm-20261026'
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          persist-credentials: true
+      - name: Confirm production baseline before safe merge
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin main
+          test "$(git rev-parse origin/main)" = "a0b7277ec5758c0443e32f9d81d3acd9e43475ea"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git merge --no-edit origin/main
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Check all sealed immutable jobs and result receipts
+        run: node scripts/destination-taxonomy-finalize.mjs
+      - name: Prepare 1018 classified places and validate each identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/destination-taxonomy-finalize.mjs --apply
+          node scripts/destination-taxonomy-release-adjustments.mjs
+          git diff --check
+      - name: Test reservation, navigation role and swarm correctness
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --test tests/destination-reservations.test.mjs tests/destination-taxonomy-swarm.test.mjs
+      - name: Commit prepared data on feature branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- src/data/catalog/destinations.json data/source-index/catalogs/destinations.json data/source-index/entries src/content/destinations src/content.config.ts
+          git add -- data/source-index/entry.schema.json data/schemas/destination-reservation-request.schema.json src/lib/destination-reservations.mjs src/lib/destination-popularity.ts
+          git add -- src/layouts/CountryLayout.astro src/layouts/EntityCatalogLayout.astro tests/destination-reservations.test.mjs
+          git add -- docs/workflows/destinations.md docs/workflows/destination-reservations.md docs/workflows/master.md AGENTS.md
+          git add -- data/migrations/destination-taxonomy-20261026/swarm/manifest.json
+          git add -- data/migrations/destination-taxonomy-20261026/swarm/cutover-preview.json data/migrations/destination-taxonomy-20261026/swarm/cutover-validation.json
+          git diff --cached --check
+          test "$(git diff --cached --name-only | wc -l)" -gt 100
+          git commit -m "feat(destinations): integrate 1018 taxonomy classifications"
+          git push origin HEAD:refs/heads/feature/destination-taxonomy-swarm-20261026
+      - name: Preserve acceptance report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: destination-taxonomy-master-acceptance
+          path: |
+            data/migrations/destination-taxonomy-20261026/swarm/cutover-preview.json
+            data/migrations/destination-taxonomy-20261026/swarm/cutover-validation.json
+          if-no-files-found: ignore

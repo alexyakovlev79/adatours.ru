@@ -5,7 +5,7 @@ name: Термальные источники Полкес
 slug: polques-hot-springs
 status: approved
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: attraction
 summary: Термальные источники Полкес находятся на высокогорном плато Боливии. Теплая вода здесь контрастирует с холодным воздухом и сухими горными пейзажами Альтиплано.
 hero:
   src: /media/destinations/polques-hot-springs/hero-generated-20261008.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_termalnye_istochniki_polkes.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Посещение источников соединяют с поездкой к Лагуне Верде, геотермальному полю Соль-де-Маньяна и лагуне Колорада. Возможность купания и конкретная остановка уточняются по программе и условиям дня.

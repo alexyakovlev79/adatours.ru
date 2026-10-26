@@ -19,6 +19,7 @@ searchAliases:
 - ostrov-koko-bandero
 sourceSnapshot: data/source-index/materials/destination_panama_ostrov_koko_bandero.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Коко-Бандеро находится в районе Сан-Бласа и связан с островными морскими поездками. Прозрачная вода и рифовые участки позволяют знакомиться с подводным миром у берега. Здесь встречаются разноцветные рыбы и кораллы, которые дополняют вид на сам остров.

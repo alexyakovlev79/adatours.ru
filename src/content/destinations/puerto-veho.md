@@ -5,7 +5,7 @@ slug: puerto-viejo
 status: "approved"
 name: "Пуэрто Вьехо"
 countryId: "country_costa_rica"
-destinationType: "resort"
+destinationType: resort
 summary: "Пуэрто Вьехо находится на Карибском побережье Коста-Рики. Пляжи, пальмы и тропический лес сочетаются здесь с серфингом, снорклингом и дайвингом."
 searchAliases: []
 hero: {"src":"/media/destinations/puerto-viejo/hero-enhanced-20261003.webp","alt":"Бирюзовые волны у темного песчаного берега Пуэрто-Вьехо, Коста-Рика", hover: "Пуэрто-Вьехо: морская пена вдоль темной полосы пляжа"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-puehrto-vekho-de-talamank
 sourceSnapshot: "https://drive.google.com/file/d/1EOUDtlg6srhAEg8ytT8luCPY-PXE2rCB/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach", "theme_wildlife", "theme_diving", "theme_adventure", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Курорт Карибского побережья

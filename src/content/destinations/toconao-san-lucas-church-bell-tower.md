@@ -5,7 +5,7 @@ slug: toconao-san-lucas-church-bell-tower
 status: approved
 name: Церковь Сан-Лукас и колокольня Токонао
 countryId: country_chile
-destinationType: route_cluster
+destinationType: religious_site
 summary: Сан-Лукас и отдельно стоящая колокольня — архитектурные ориентиры Токонао на краю солончака Атакама.
 themes:
 - theme_culture
@@ -16,6 +16,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_chile_toconao_san_lucas_church_bell_tower.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Церковь Сан-Лукас и колокольня находятся в Токонао, в чилийском регионе Антофагаста. Небольшой храм и отделенная от него башня образуют узнаваемую часть поселения. Здесь путешествие по высокогорным лагунам и солончаку получает другой масштаб: вместо открытых природных пространств — местная каменная архитектура и площадь.

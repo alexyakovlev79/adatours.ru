@@ -5,7 +5,7 @@ slug: teotihuacan
 status: "approved"
 name: "Теотиуакан"
 countryId: "country_mexico"
-destinationType: "region"
+destinationType: archaeological_site
 summary: "Древний археологический комплекс в 40 км к северо-востоку от Мехико. Главные сооружения Теотиуакана — Пирамида Солнца и Пирамида Луны."
 searchAliases: []
 hero: {"src":/media/countries/mexico/featureBands-1-enhanced-20261002.webp,"alt":"Ступенчатая каменная пирамида с крутой лестницей и храмом наверху, Мексика", hover: "Мексика: каменная пирамида с верхним храмом под облачным небом"}
@@ -26,6 +26,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-piramidy-teotiuakan-v-me
 sourceSnapshot: "https://drive.google.com/file/d/1lZIMcKHva_R2galrdaVGvWL_qA4kmFmM/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: sight
 ---
 
 ## Теотиуакан - "место, где рождаются боги”!

@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_ostrov_tintoreras.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Морская прогулка сюда знакомит с лавовыми берегами и прибрежной природой Галапагосов.

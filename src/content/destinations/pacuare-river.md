@@ -5,7 +5,7 @@ name: Река Пакуаре
 slug: pacuare-river
 status: approved
 countryId: country_costa_rica
-destinationType: natural_area
+destinationType: river
 summary: Река Пакуаре в Коста-Рике, водный маршрут для рафтинга среди тропического леса.
 hero:
   src: /media/tours/ekstrim-v-kosta-rike/pacuare-river-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - reka-pakuare
 sourceSnapshot: data/source-index/materials/destination_costa_rica_reka_pakuare.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Пакуаре известна сплавами по бурной воде в окружении тропического леса. На речных маршрутах чередуются пороги и более спокойные участки, где можно рассмотреть берега и растительность. Река позволяет увидеть природную Коста-Рику непосредственно с воды.

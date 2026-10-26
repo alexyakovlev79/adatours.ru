@@ -5,7 +5,7 @@ slug: san-miguel-del-bala
 status: approved
 name: Сан-Мигель-дель-Бала
 countryId: country_bolivia
-destinationType: city
+destinationType: village
 summary: Сан-Мигель-дель-Бала знакомит с амазонским лесом и традициями народа такана. К поселению и эколоджу добираются на лодке по реке Бени.
 searchAliases:
 - san-migel-del-bala
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_san_migel_del_bala.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Сан-Мигель-дель-Бала находится в боливийской Амазонии. Из Рурренабака сюда добираются на моторной лодке по реке Бени. Посещение поселения соединяет знакомство с тропическим лесом и повседневной жизнью народа такана.

@@ -5,7 +5,7 @@ name: "Остров Флорена (Галапагосы)"
 slug: "floreana-island"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: island
 summary: "Флорена соединяет пляжи Галапагосов, лагуну с фламинго и истории первых поселенцев. Здесь до сих пор отправляют открытки через старую почтовую бочку."
 searchAliases: ["остров Флорена", "ostrov-florena-galapagosy"]
 hero: {"src": "/media/destinations/floreana-island/hero-generated-20261021-dedup-second50-v1.webp", "alt": "Остров Флорена (Галапагосы) — иллюстрация", hover: "Остров Флорена (Галапагосы) — новая обложка"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_ostrov_florena_galapagosy.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 На Флорене история островитян соседствует с жизнью морских птиц и животных. Это один из обитаемых островов Галапагосского архипелага, с маленьким поселением Пуэрто-Веласко-Ибарра, зелеными возвышенностями и открытым океаном у берегов. Сюда приезжают за прогулками по природным тропам и рассказами о моряках, переселенцах и первых попытках освоить вулканическую землю.

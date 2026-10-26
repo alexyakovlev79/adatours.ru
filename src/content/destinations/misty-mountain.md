@@ -5,7 +5,7 @@ name: Туманная гора
 slug: misty-mountain
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: mountain
 summary: Туманная гора находится в районе Кабалебо. Поход к ней соединяет тропический лес, горные склоны и виды на окружающий лесной ландшафт Суринама.
 hero:
   src: /media/destinations/misty-mountain/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_tumannaya_gora.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Поход к ней соединяет тропический лес, горные склоны и виды на окружающий лесной ландшафт Суринама.

@@ -5,7 +5,7 @@ slug: cabo-san-lucas
 status: "approved"
 name: "Кабо-Сан-Лукас"
 countryId: "country_mexico"
-destinationType: "resort"
+destinationType: resort
 summary: "Кабо-Сан-Лукас расположен на оконечности полуострова Байа. Здесь можно заниматься дайвингом и серфингом, выходить на каяках в море, ловить рыбу и наблюдать за китами."
 searchAliases: []
 hero: {"src":"/media/destinations/cabo-san-lucas/hero-enhanced-20261004.webp","alt":"Скальная арка и высокие отдельные каменные утесы в бирюзовом море Кабо-Сан-Лукаса, Мексика", hover: "Кабо-Сан-Лукас: скалы и арка среди морской воды"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kabo-san-lukas-v-me
 sourceSnapshot: "https://drive.google.com/file/d/1eyxRZYKMBMugWXDt3n7QKfZo7M67NbRb/view?usp=drivesdk"
 updatedAt: '2026-10-11'
 themes: ["theme_diving","theme_adventure","theme_wildlife","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Кабо-Сан-Лукас - рай Мексики!

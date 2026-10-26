@@ -5,7 +5,7 @@ name: "Канела"
 slug: "canela"
 status: "approved"
 countryId: "country_brazil"
-destinationType: "city"
+destinationType: city
 summary: "Канела в горах Серра-Гауша: прогулки по уютным улицам, шоколадные лавки, водопад Караколь и виды на лесные долины юга Бразилии."
 searchAliases: ["kanela"]
 hero: {"src": "/media/tours/south-brazil-12d/itinerary/day-07-enhanced-20260930.webp", "alt": "Стеклянная смотровая платформа Skyglass над лесным ущельем в Канеле, Бразилия", "hover": "Канела: подвесная платформа над рекой между зелеными склонами"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_kanela.md"
 updatedAt: "2026-10-10"
+navigationRole: hub
 ---
 
 Канела — уютный горный город на юге Бразилии, расположенный в живописном регионе Серра-Гауша. Окруженная хвойными лесами, цветущими садами и зелеными холмами, она заметно отличается от привычного образа тропической Бразилии.

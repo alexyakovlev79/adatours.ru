@@ -5,7 +5,7 @@ name: Бухта Эксплорадорес
 slug: exploradores-bay
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: bay
 summary: Бухта Эксплорадорес служит местом перехода с наземного маршрута на водный. После дороги из Пуэрто-Рио-Транкило
   путешественники садятся здесь на лодку и продолжают экскурсию к лагуне Сан-Рафаэль.
 hero:
@@ -18,6 +18,7 @@ searchAliases:
 - Бухта Эксплорадорес
 sourceSnapshot: data/source-index/materials/destination_chile_exploradores_bay.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В этот момент лесные и горные виды уступают место открытой воде и ледниковым пейзажам. Время отправления и точное место посадки сообщает принимающая сторона. 

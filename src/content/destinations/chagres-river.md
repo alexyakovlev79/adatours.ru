@@ -5,7 +5,7 @@ slug: chagres-river
 status: approved
 name: Река Чагрес
 countryId: country_panama
-destinationType: natural_area
+destinationType: river
 summary: Тропические берега и путь на каноэ к общинам эмбера. У Гамбоа Чагрес встречается с водами Панамского канала.
 hero:
   src: "/media/destinations/chagres-river/hero-generated-20261021-dedup-third50-v1.webp"
@@ -16,6 +16,7 @@ searchAliases:
 - chagres-river
 sourceSnapshot: data/source-index/materials/destination_panama_chagres_river.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 Путешествие по Чагрес начинается с воды и лесных берегов. Традиционное каноэ ведет к общинам эмбера, где знакомятся с музыкой, ремеслами и повседневной жизнью местных жителей.

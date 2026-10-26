@@ -5,7 +5,7 @@ slug: puerto-vallarta
 status: "approved"
 name: "Пуэрто Вальярта"
 countryId: "country_mexico"
-destinationType: "resort"
+destinationType: resort
 summary: "Пуэрто Вальярта расположен на берегу залива Бандерас в штате Халиско. Здесь сочетаются колониальные улицы и пляжный отдых, а с декабря по март можно увидеть горбатых китов."
 searchAliases: []
 hero: {"src":"/media/destinations/puerto-vallarta/hero-enhanced-20261004.webp","alt":"Панорама Пуэрто-Вальярты с бухтой, зелеными холмами и пальмами, Мексика", hover: "Пуэрто-Вальярта: город у морской бухты в закатном свете"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-puehrto-valyarta-
 sourceSnapshot: "https://drive.google.com/file/d/12VNbdpDdC2BsUNwQ2sAezUbWfAZPlfiT/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach", "theme_culture"]
+navigationRole: hub
 ---
 
 ## Пуэрто-Вальярта - город-курорт!

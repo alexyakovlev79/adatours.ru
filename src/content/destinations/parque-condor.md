@@ -5,7 +5,7 @@ name: "Парк Кондор"
 slug: "parque-condor"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: attraction
 summary: "Парк Кондор возле Отавало знакомит с хищными птицами и работой центра спасения. С холма открываются виды на вулканы эквадорских Анд."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_parque_condor/hero-generated-20261010-editorial-v1.webp", "alt": "Андский кондор на камне на фоне зелёных склонов возле Отавало", "hover": "Отавало: кондор над зелёной горной долиной"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_parque_condor.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Парке Кондор над Отавало можно увидеть хищных птиц вблизи и понять, как работает их спасение. Центр находится на холме Пукара-де-Курилома в эквадорских Андах. С его территории открываются виды на вулканы Имбабура и Котакачи: прогулку между птицами сопровождает широкая горная панорама.

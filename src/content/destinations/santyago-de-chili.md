@@ -5,7 +5,7 @@ slug: santiago-de-chile
 status: approved
 name: "Сантьяго-де-Чили"
 countryId: "country_chile"
-destinationType: "city"
+destinationType: city
 summary: "Сантьяго-де-Чили: площадь Пласа-де-Армас, дворец Ла-Монеда, городские музеи и район Беллависта. Из столицы можно поехать к виноградникам Конча Торо."
 searchAliases: []
 hero:
@@ -38,6 +38,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-chili-gorod-santy
 sourceSnapshot: "https://drive.google.com/file/d/1PPhm9bIJmkatTpBtRFi2cvY7opZ1Wman/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture","theme_gastronomy_wine"]
+navigationRole: hub
 ---
 
 ## Пласа-де-Армас и дворец Ла-Монеда: что посмотреть в Сантьяго, Чили

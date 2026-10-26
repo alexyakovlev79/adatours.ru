@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_belize_zapovednik_mauntin_pajn_ridzh.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 На обратном пути путешественники останавливаются у пещеры Рио-Фрио и природных бассейнов Рио-Он. Лесные дороги, каменные берега и участки реки позволяют увидеть несколько разных природных ландшафтов за одну поездку.

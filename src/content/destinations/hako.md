@@ -5,7 +5,7 @@ slug: jaco
 status: "approved"
 name: "Хако"
 countryId: "country_costa_rica"
-destinationType: "resort"
+destinationType: resort
 summary: "Хако, курортный город Коста-Рики, известен протяженными пляжами, серфингом и рыбалкой. Здесь работают кафе, бары и магазины, а из города отправляются на экскурсии."
 searchAliases: []
 hero: {"src": "/media/destinations/jaco/hero-enhanced-20261004.webp", "alt": "Отдыхающие на песчаном пляже Хако перед океанскими волнами, Коста-Рика", "hover": "Хако в Коста-Рике: люди на берегу и полоса прибоя в теплом свете"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-hako-jaco-v-kosta-r
 sourceSnapshot: "https://drive.google.com/file/d/1ktFfo3mdEw8chK1XJKhxL0E_nqO7E4Ke/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_adventure","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Хако -городок с классными пляжами!

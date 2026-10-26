@@ -5,7 +5,7 @@ slug: gamboa
 status: approved
 name: Гамбоа
 countryId: country_panama
-destinationType: city
+destinationType: town
 summary: Две ночи среди тропической природы у Чагрес и Панамского канала. Из Гамбоа отправляются в Соберанию и на
   лодочные прогулки по Гатуну.
 hero:
@@ -17,6 +17,7 @@ searchAliases:
 - Gamboa
 sourceSnapshot: data/source-index/materials/destination_panama_gamboa.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 Гамбоа расположен там, где река Чагрес встречается с Панамским каналом. Лесные берега и вода окружают природную часть маршрута. Отсюда удобно продолжить знакомство с тропическими экосистемами бассейна канала.

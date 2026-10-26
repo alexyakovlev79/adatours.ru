@@ -45,6 +45,7 @@ sourceUrl: https://brasiltours.ru/zolotoj-put-brazilii
 sourceSnapshot: page_texts_original/zolotoj-put-brazilii__7e6b89a6.md
 updatedAt: '2026-10-21'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Золотой путь Бразилии - исторический маршрут по штату Минас-Жерайс, который вырос вокруг старых центров добычи золота и драгоценных камней. Для путешествия важнее всего не отдельная дорога, а связка городов и мест, где история региона читается в архитектуре, музеях и шахтах.

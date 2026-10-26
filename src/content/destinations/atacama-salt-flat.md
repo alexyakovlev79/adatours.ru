@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_solonchak_atakama.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 На солончаке Атакама ландшафт меняется от грубой соляной корки до участков мелководья. Одной из остановок становится лагуна Чакса, где можно наблюдать фламинго.

@@ -33,6 +33,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-brazilskij-gorod-natal-bra
 sourceSnapshot: page_texts_original/ehkskursii-i-tury-v-brazilskij-gorod-natal-braziliya__f8409995.md
 updatedAt: 2026-09-25
 themes: ["theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 Натал находится на северо-востоке Бразилии и является столицей штата Риу-Гранди-ду-Норти. Океанское побережье здесь соседствует с песчаными дюнами, рифами и озерами.

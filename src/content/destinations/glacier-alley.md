@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_glacier_alley.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Главное впечатление создаёт смена ледниковых панорам во время движения судна. Это часть самого водного перехода; высадку или отдельную пешую экскурсию здесь не следует считать обязательной, если она не указана в программе.

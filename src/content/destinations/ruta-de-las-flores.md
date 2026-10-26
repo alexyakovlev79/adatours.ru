@@ -28,6 +28,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_el_salvador_ruta_de_las_flores.md
 updatedAt: '2026-10-14'
+navigationRole: hub
 ---
 
 ## Города среди кофейных плантаций

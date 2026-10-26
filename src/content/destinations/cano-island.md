@@ -17,6 +17,7 @@ searchAliases:
 - ostrov-kano
 sourceSnapshot: data/source-index/materials/destination_costa_rica_ostrov_kano.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Каньо находится у тихоокеанского побережья Коста-Рики и известен биологическим и археологическим значением. Остров окружен морскими территориями, где кораллы соседствуют с подводными вулканическими породами. В этих водах собираются рыбы и другие морские организмы.

@@ -5,7 +5,7 @@ slug: cayenne
 status: approved
 name: "Кайенна"
 countryId: "country_french_guiana"
-destinationType: "city"
+destinationType: city
 summary: "Кайенна: колониальные здания и рынки, площади де Гренобль и де Пальмистес, ботанический сад и музей культуры Французской Гвианы."
 searchAliases: []
 hero:
@@ -26,6 +26,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-kajenna-vo-francuzs
 sourceSnapshot: "https://drive.google.com/file/d/1R7sO0ZEskmNTvQuviLHwvysuv3fhjOdY/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Кайенна - город с многовековой историей

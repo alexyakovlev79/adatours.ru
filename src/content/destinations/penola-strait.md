@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_proliv_penola.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Поездка сюда связана с морским знакомством с Антарктикой: с воды видны заснеженные берега и острова.

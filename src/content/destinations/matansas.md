@@ -5,7 +5,7 @@ slug: matanzas
 status: "approved"
 name: "Матансас"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Матансас называют Кубинской Венецией за мосты через реки Юмури и Сан-Хуан. Здесь можно посетить Фармацевтический музей и карстовые пещеры Бельямар."
 searchAliases: []
 hero: {"src":"/media/destinations/matanzas/hero-enhanced-20261004.webp","alt":"Посетитель среди каменных натеков и сводов пещеры Матансаса, Куба", hover: "Матансас: сталактиты и свет у выхода из пещеры"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-matansas-na-ostrove
 sourceSnapshot: "https://drive.google.com/file/d/10T-tS-MgLPuIJITIsptBpN0cHj_V7GKI/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Матантас - "Кубинская Венеция"

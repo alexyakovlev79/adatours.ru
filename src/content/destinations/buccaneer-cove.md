@@ -5,7 +5,7 @@ name: "Бухта Буканеро"
 slug: "buccaneer-cove"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: bay
 summary: "Бухта Буканеро на Сантьяго открывает вулканические скалы, морских птиц и историю старой стоянки мореплавателей."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_buccaneer_cove/hero-generated-20261010-batch-four-v1.webp", "alt": "Выветренные вулканические скалы бухты Буканеро над синей водой", "hover": "Бухта Буканеро: прибрежные скалы со стороны моря"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_buccaneer_cove.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 Бухту Буканеро лучше рассматривать с воды. На северо-западном берегу Сантьяго над океаном поднимаются скалы, в которых ветер и волны выточили ниши и выступы. Рядом стоят отдельные каменные останцы. Лодка постепенно меняет точку обзора, и знакомый участок берега каждый раз выглядит по-другому.

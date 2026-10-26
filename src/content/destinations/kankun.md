@@ -5,7 +5,7 @@ slug: cancun
 status: "approved"
 name: "Канкун"
 countryId: "country_mexico"
-destinationType: "resort"
+destinationType: resort
 summary: "Канкун на полуострове Юкатан предлагает отдых у Карибского моря, песчаные пляжи и развитую туристическую инфраструктуру. Из курорта можно отправиться к памятникам майя в Чичен-Итце."
 searchAliases: []
 hero: {"src":"/media/destinations/cancun/hero-enhanced-20261005.webp","alt":"Ярко-розовые цветы перед белым пляжем и бирюзовыми морскими волнами в Канкуне, Мексика", hover: "Канкун: розовые цветы на фоне пляжа и моря"}
@@ -55,6 +55,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-morskoj-kurort-kankun-v-
 sourceSnapshot: "https://drive.google.com/file/d/1DptxxcJ36YOfDvqtflFQyarYqjHRwXN3/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_culture"]
+navigationRole: hub
 ---
 
 ## Канкун -один из лучших курортов Мексики

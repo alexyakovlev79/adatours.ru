@@ -5,7 +5,7 @@ slug: baracoa
 status: "approved"
 name: "Баракоа"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Баракоа знакомит с одной из старейших европейских колоний Кубы. В окрестностях находятся гора Юнке, пляжи и национальный парк имени Александра Гумбольдта."
 searchAliases: []
 hero: {"src":"/media/destinations/baracoa/hero-enhanced-20261004.webp","alt":"Плотная застройка разноцветных домов на зеленом склоне", hover: "Невысокие разноцветные дома среди зелени на холме"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-barakoa-na-ostrove-
 sourceSnapshot: "https://drive.google.com/file/d/15SB7MKjoZ7yhcHh74QzZGSmF-VFfQ0Ez/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_nature", "theme_beach"]
+navigationRole: hub
 ---
 
 ## Баракоа - живописный уголок Кубы

@@ -44,6 +44,7 @@ sourceUrl: https://brasiltours.ru/argentinskaya-patagoniya-i-gorod-ehl-kalafate
 sourceSnapshot: page_texts_original/argentinskaya-patagoniya-i-gorod-ehl-kalafate__cf077830.md
 updatedAt: '2026-10-21'
 themes: ["theme_nature", "theme_adventure"]
+navigationRole: hub
 ---
 
 Ледники можно осматривать с воды во время прогулки на небольшом судне. Для активного дня подойдет пешая прогулка по леднику в сопровождении профильной команды.

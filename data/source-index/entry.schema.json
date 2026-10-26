@@ -117,7 +117,45 @@
       }
     },
     "destinationType": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "city",
+        "town",
+        "village",
+        "district",
+        "region",
+        "island",
+        "national_park",
+        "resort",
+        "natural_area",
+        "route_cluster",
+        "mountain",
+        "volcano",
+        "glacier",
+        "waterfall",
+        "lake",
+        "river",
+        "beach",
+        "canyon",
+        "cave",
+        "desert",
+        "valley",
+        "forest",
+        "wetland",
+        "archaeological_site",
+        "historic_site",
+        "museum",
+        "monument",
+        "religious_site",
+        "viewpoint",
+        "square",
+        "building",
+        "garden",
+        "peninsula",
+        "bay",
+        "attraction",
+        "other_landmark"
+      ]
     },
     "destinationName": {
       "type": [
@@ -355,6 +393,13 @@
           "minimum": 2
         }
       }
+    },
+    "navigationRole": {
+      "type": "string",
+      "enum": [
+        "hub",
+        "sight"
+      ]
     }
   },
   "$defs": {
@@ -761,6 +806,24 @@
             }
           }
         }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "destination"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "required": [
+          "destinationType",
+          "navigationRole"
+        ]
       }
     }
   ]

@@ -5,7 +5,7 @@ slug: campeche
 status: "approved"
 name: "Кампече"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Кампече на западном побережье Юкатана сохранил облик города-крепости. Здесь гуляют по набережной и историческим улицам, а в окрестностях знакомятся с природой и археологическими памятниками."
 searchAliases: []
 hero: {"src":"/media/destinations/campeche/hero-enhanced-20261005.webp","alt":"Белый церковный фронтон с красной отделкой и крестом под голубым небом, Кампече, Мексика", hover: "Кампече: красно-белый фронтон церкви"}
@@ -28,6 +28,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kampeche-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1tP3sJi1I8cLcN253_UcoQswD-cf0rO16/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Кампече - город-крепость в Мексике

@@ -5,7 +5,7 @@ slug: santa-marta
 status: "approved"
 name: "Санта-Марта"
 countryId: "country_colombia"
-destinationType: "city"
+destinationType: city
 summary: "Санта-Марта находится на Карибском побережье у гор Сьерра-Невада-де-Санта-Марта. Пляжи, дайвинг и вечерние кафе делают город местом для отдыха у моря."
 searchAliases: []
 hero: {"src":"/media/destinations/santa-marta/hero-generated-20261021-dedup-second50-v1.webp","alt": "Санта-Марта — иллюстрация", hover: "Санта-Марта — новая обложка"}
@@ -49,6 +49,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-plyazhnye-tury-na-kurort-santa-m
 sourceSnapshot: "https://drive.google.com/file/d/1cq88YjJfzJPuEQ9-cktZ5oO-Tf1hQECD/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_diving"]
+navigationRole: hub
 ---
 
 ## Парк Тайрона и Затерянный город: что посмотреть в Санта-Марте

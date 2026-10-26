@@ -5,7 +5,7 @@ name: "Кратеры-Близнецы"
 slug: "los-gemelos"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: other_landmark
 summary: "Кратеры-Близнецы в высокогорье Санта-Крус — глубокие вулканические провалы, окруженные зеленым лесом скалезии."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_los_gemelos/hero-generated-20261010-next-ten-v1.webp", "alt": "Зелёный лес по краю глубокого вулканического провала Лос-Гемелос", "hover": "Лос-Гемелос: лесистые стенки вулканического провала"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_los_gemelos.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 По дороге через высокогорье Санта-Крус пейзаж становится влажным и зеленым. Здесь находятся Лос-Гемелос, или Кратеры-Близнецы: две большие впадины по сторонам дороги. Они образовались при обрушении породы над опустевшими магматическими полостями. От края хорошо видно, как крутые стенки уходят вниз, а растительность постепенно закрывает темный вулканический камень.

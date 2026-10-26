@@ -5,7 +5,7 @@ slug: salobra-river
 status: approved
 name: Река Салобра
 countryId: country_brazil
-destinationType: natural_area
+destinationType: river
 summary: Река Салобра в районе Бом-Жардима входит в маршруты для наблюдения за рыбами и водной растительностью.
 searchAliases:
 - reka-salobra
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_reka_salobra.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Реку Салобра посещают вместе с природными водоемами Бом-Жардима. Главная часть программы здесь — снорклинг в прозрачной воде.

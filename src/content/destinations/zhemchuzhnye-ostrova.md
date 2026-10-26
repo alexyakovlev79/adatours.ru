@@ -5,7 +5,7 @@ slug: pearl-islands
 status: "approved"
 name: "Жемчужные Острова"
 countryId: "country_panama"
-destinationType: "island"
+destinationType: island
 summary: "Острова Панамы с белым песком и бирюзовой водой. На Контадоре и в водах архипелага доступны рыбалка, дайвинг и подводное плавание."
 searchAliases: []
 hero: {"src":"/media/destinations/pearl-islands/hero-enhanced-20261023-v2.webp","alt":"Пальмы и лодка у прозрачной воды Жемчужных островов, Панама","hover":"Жемчужные острова в Панаме: песчаный берег в тени пальм"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-more-na-ostrova-pearl-is
 sourceSnapshot: "https://drive.google.com/file/d/1Pv0oGfhxB5831HoFkabvUFAydR7O1Ocx/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_diving","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Жемчужные острова -жемчужина Панамы!

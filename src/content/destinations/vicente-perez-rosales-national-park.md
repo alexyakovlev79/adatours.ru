@@ -18,6 +18,7 @@ searchAliases:
 - Национальный парк Висенте-Перес-Росалес
 sourceSnapshot: data/source-index/materials/destination_chile_vicente_perez_rosales_national_park.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В программе P109 главной остановкой становятся водопады Петроуэ. Прогулки проходят по оборудованным тропам среди леса и водных ландшафтов; затем маршрут продолжается к вулкану Осорно.

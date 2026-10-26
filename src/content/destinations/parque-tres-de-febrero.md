@@ -5,7 +5,7 @@ slug: parque-tres-de-febrero
 status: approved
 name: Парк Трес-де-Фебреро
 countryId: country_argentina
-destinationType: natural_area
+destinationType: garden
 summary: Парк Трес-де-Фебреро, известный как Боски-де-Палермо, объединяет озера, деревья и прогулочные зоны Буэнос-Айреса.
   У воды видны белые мостики, а в глубине парка находятся розарий и другие зеленые пространства.
 hero:
@@ -19,6 +19,7 @@ relatedDestinations:
 - destination_argentina_buenos_aires
 sourceSnapshot: data/source-index/materials/destination_argentina_parque_tres_de_febrero.md
 updatedAt: '2026-10-12'
+navigationRole: sight
 ---
 
 Лучший способ почувствовать парк, пройти вдоль одного из озер и посмотреть на отражения деревьев в воде. Дорожки ведут к разным частям зеленой территории, где горожане гуляют, занимаются спортом и отдыхают под кронами.

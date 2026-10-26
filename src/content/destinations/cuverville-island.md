@@ -20,6 +20,7 @@ searchAliases:
 - Cuverville Island
 sourceSnapshot: data/source-index/materials/destination_antarctica_cuverville_island.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Кувервиль расположен в северной части пролива Эррера у Антарктического полуострова. Крутой остров поднимается над каменистым берегом, а вокруг дрейфуют льдины и айсберги. На свободных от снега участках живет большая колония папуанских пингвинов.

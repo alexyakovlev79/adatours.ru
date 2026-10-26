@@ -5,7 +5,7 @@ slug: playa-blanca-salt-museum
 status: approved
 name: Музей соли Плайя-Бланка
 countryId: country_bolivia
-destinationType: route_cluster
+destinationType: museum
 summary: 'Музей соли на солончаке Уюни: бывшее здание соляного отеля и знакомство с солью как строительным
   материалом.'
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_bolivia_playa_blanca_salt_museum.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Плайя-Бланка находится на солончаке Уюни в Боливии. В маршрутах по соляной равнине этот объект известен как музей соли: прежнее здание соляного отеля стало остановкой для знакомства с использованием соли в строительстве.

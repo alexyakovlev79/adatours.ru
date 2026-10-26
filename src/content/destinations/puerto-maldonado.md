@@ -16,6 +16,7 @@ themes: ["theme_wildlife", "theme_nature"]
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_peru_puerto_maldonado.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Здесь горная часть путешествия по Перу сменяется влажной низменной природой: речными берегами, густой растительностью и лодочными переходами. Город служит отправной точкой для поездок к лесным лоджам и природным маршрутам.

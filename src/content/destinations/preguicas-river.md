@@ -5,7 +5,7 @@ slug: preguicas-river
 status: approved
 name: Река Прегиас
 countryId: country_brazil
-destinationType: natural_area
+destinationType: river
 summary: Река Прегисас соединяет Баррейриньяс с поселениями, дюнами и растительностью нижнего течения.
 searchAliases:
 - Прегисас
@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_reka_pregias.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 По реке Прегисас отправляются на моторных лодках из Баррейриньяса. Маршрут дает возможность увидеть берега, растительность и жизнь прибрежных поселений.

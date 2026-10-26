@@ -5,7 +5,7 @@ name: Сьерра-де-ла-Вентана
 slug: sierra-de-la-ventana
 status: approved
 countryId: country_argentina
-destinationType: city
+destinationType: town
 summary: 'Горный отдых в провинции Буэнос-Айрес: невысокие хребты Вентании, прогулки и природная пауза в путешествии
   по пампе.'
 searchAliases:
@@ -22,6 +22,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_sierra_de_la_ventana.md
 updatedAt: '2026-10-20'
+navigationRole: hub
 ---
 
 Сьерра-де-ла-Вентана — один из центров горного отдыха в муниципалитете Торнкист. Вместо ровного горизонта пампы здесь появляются скалистые склоны, долины и тропы системы Вентания.

@@ -5,7 +5,7 @@ name: "Мирадор-де-ла-Баронесса"
 slug: "baroness-lookout"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: viewpoint
 summary: "Мирадор-де-ла-Баронесса на Флорене открывает бухту с манграми и напоминает о загадочных событиях острова в 1930-х годах."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_baroness_lookout/hero-generated-20261010-batch-four-v1.webp", "alt": "Бирюзовая бухта и сухие вулканические склоны Флорены со смотровой точки Баронессы", "hover": "Смотровая Баронессы на Флорене: бухта среди вулканических берегов"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_baroness_lookout.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 На Мирадор-де-ла-Баронесса стоит подняться ради вида на северное побережье Флорены. С небольшого холма открывается бирюзовая бухта, окруженная манграми. Темные участки берега и сухая растительность подчеркивают цвет воды. Короткая тропа заканчивается более крутыми ступенями, после которых особенно приятно остановиться у панорамы.

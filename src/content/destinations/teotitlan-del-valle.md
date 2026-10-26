@@ -5,7 +5,7 @@ name: "Теотитлан-дель-Валье"
 slug: "teotitlan-del-valle"
 status: "approved"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: village
 summary: "Теотитлан-дель-Валье в Оахаке знакомит с сапотекским ткачеством: шерстяными коврами, деревянными станками и природными красителями."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_mexico_teotitlan_del_valle/hero-generated-20261010-batch-four-v1.webp", "alt": "Ткач за деревянным станком с узорчатым ковром в Теотитлане-дель-Валье, Мексика", hover: "Теотитлан-дель-Валье: геометрические узоры ковра на ручном станке"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_mexico_teotitlan_del_valle.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 В Теотитлане-дель-Валье интересно посмотреть, как появляется ткань. В семейных мастерских стоят деревянные ткацкие станки, рядом лежат шерсть и готовые изделия. Работа мастера постепенно превращает отдельные нити в рисунок. Когда наблюдаешь этот процесс вблизи, иначе воспринимаешь даже небольшой ковер на стене.

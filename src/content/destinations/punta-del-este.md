@@ -5,7 +5,7 @@ slug: punta-del-este
 status: approved
 name: "Пунта дель Эсте"
 countryId: "country_uruguay"
-destinationType: "resort"
+destinationType: resort
 summary: "Пунта дель Эсте: пляжный и активный отдых на курорте Уругвая. Вечером гостей ждут ночные клубы, рестораны и уличные кафе."
 searchAliases: []
 hero:
@@ -36,6 +36,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-punta-del-ehste-v-u
 sourceSnapshot: "https://drive.google.com/file/d/1j4hteqGcwQ9DrWN-TWLRc1N611u-RjBf/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_beach"]
+navigationRole: hub
 ---
 
 ### Пунта дель Эсте- город-курорт Уругвая!

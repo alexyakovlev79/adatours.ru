@@ -5,7 +5,7 @@ slug: livingston
 status: approved
 name: "Ливингстон"
 countryId: "country_guatemala"
-destinationType: city
+destinationType: town
 summary: "Город в устье Рио-Дульче с деревянными домами, кокосовыми рощами и культурой гарифуна. Отсюда отправляются на лодочные экскурсии."
 searchAliases: []
 hero:
@@ -37,6 +37,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-livingston-v-gvatem
 sourceSnapshot: "https://drive.google.com/file/d/1RBZT2FBMH2ftWKUVzYMn7Ahnst1pW64b/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Ливингстон-городок на реке Рио-Дульче

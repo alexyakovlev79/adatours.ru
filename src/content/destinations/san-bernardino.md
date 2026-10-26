@@ -5,7 +5,7 @@ name: Сан-Бернардино
 slug: san-bernardino
 status: approved
 countryId: country_paraguay
-destinationType: city
+destinationType: town
 summary: Сан-Бернардино в Парагвае, приозерный город среди зеленых холмов.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/san-bernardino-place-generated-20261009-v1.webp
@@ -16,6 +16,7 @@ themes: ["theme_nature"]
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_paraguay_san_bernardino.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Сан-Бернардино связан с приозерной частью Парагвая. Город находится среди зеленого окружения, где прогулки дополняют виды на воду и холмы. Его посещают на маршрутах из Асунсьона, соединяя городскую остановку с природными пейзажами.

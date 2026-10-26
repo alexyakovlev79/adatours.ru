@@ -5,7 +5,7 @@ slug: osa-peninsula
 status: "approved"
 name: "Полуостров Оса"
 countryId: "country_costa_rica"
-destinationType: "region"
+destinationType: peninsula
 summary: "Полуостров Оса находится на тихоокеанском побережье Коста-Рики. В национальном парке Корковадо и у бухты Дрейк-Бей можно наблюдать за природой и отдыхать у океана."
 searchAliases: []
 hero: {"src":"/media/destinations/osa-peninsula/hero-enhanced-20261003.webp","alt":"Красно-черная бабочка на влажном зеленом листе полуострова Оса, Коста-Рика", hover: "Полуостров Оса: бабочка среди листьев с каплями воды"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-poluostrov-osa-v-kosta-r
 sourceSnapshot: "https://drive.google.com/file/d/1KWLiXjmqA8LiGwW5XCBTs7vT_gYnTfZN/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_wildlife", "theme_beach", "theme_nature"]
+navigationRole: hub
 ---
 
 На южном побережье Тихого океана Коста-Рики расположен один из самых красивых и экзотических уголков нашей планеты – полуостров Оса. Природа полуострова является самой биологически насыщенной из всех известных мировых экосистем. Уникальные климатические и географические условия не имеют аналогов не только в странах Центральной Америки, но и во всем мире.

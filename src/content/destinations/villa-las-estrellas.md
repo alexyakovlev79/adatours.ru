@@ -5,7 +5,7 @@ name: Вилла-Лас-Эстреллас
 slug: villa-las-estrellas
 status: approved
 countryId: country_antarctica
-destinationType: city
+destinationType: village
 summary: Вилла-Лас-Эстреллас, чилийское поселение на острове Кинг-Джордж, показывает повседневную жизнь людей в
   Антарктиде.
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_antarctica_villa_las_estrellas.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Здесь антарктические пейзажи соседствуют с жилыми и служебными зданиями. Посещение поселения дополняет прогулки к колониям пингвинов и леднику Коллинз рассказом о жизни людей в полярных условиях.

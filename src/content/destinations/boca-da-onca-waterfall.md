@@ -5,7 +5,7 @@ name: Водопад Бока-да-Онса
 slug: boca-da-onca-waterfall
 status: approved
 countryId: country_brazil
-destinationType: natural_area
+destinationType: waterfall
 summary: Высокий водопад Серра-да-Бодокена с лесными тропами и природными водоемами в окрестностях.
 hero:
   src: /media/tours/udivitelnaya-braziliya/boca-da-onca-waterfall-place-generated-20261008.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_brazil_vodopad_boka_da_onsa.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Бока-да-Онса — водопад в горном районе Серра-да-Бодокена в штате Мату-Гросу-ду-Сул. Узкая струя падает с высокого скального уступа, окруженного густой растительностью. Сочетание отвесного рельефа, леса и воды делает его одним из заметных природных объектов этого района.

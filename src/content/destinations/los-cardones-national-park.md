@@ -5,7 +5,7 @@ slug: "los-cardones-national-park"
 status: "approved"
 name: "Национальный парк Лос-Кардонес"
 countryId: "country_argentina"
-destinationType: "national_park"
+destinationType: national_park
 summary: "Национальный парк Лос-Кардонес"
 searchAliases: ["Лос-Кардонес", "Los Cardones", "nacionalnyj-park-los-kardones"]
 themes: ["theme_nature"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_argentina_nacionalnyj_park_los_kardones.md"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В северо-западной части Аргентины, среди засушливых долин и величественных гор Анд, раскинулся национальный парк Лос-Кардонес — необыкновенный природный мир, где господствуют кактусы-гиганты, каменистые склоны и бескрайние высокогорные равнины. Расположенный преимущественно на территории провинции Сальта, парк поражает контрастами ландшафтов и атмосферой первозданной тишины.

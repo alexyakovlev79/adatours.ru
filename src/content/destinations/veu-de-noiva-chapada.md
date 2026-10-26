@@ -5,7 +5,7 @@ slug: veu-de-noiva-chapada
 status: approved
 name: Водопад Фата Невесты в Шапада-дус-Гимарайнс
 countryId: country_brazil
-destinationType: natural_area
+destinationType: waterfall
 summary: Véu de Noiva — водопад национального парка Шапада-дус-Гимарайнс, который наблюдают со смотровой площадки.
 searchAliases:
 - Véu de Noiva — Chapada dos Guimarães
@@ -18,6 +18,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_brazil_veu_de_noiva_chapada.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 ## Водопад и песчаниковые скалы

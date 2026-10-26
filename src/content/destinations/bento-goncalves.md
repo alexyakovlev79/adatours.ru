@@ -5,7 +5,7 @@ slug: "bento-goncalves"
 status: "approved"
 name: "Бенту-Гонсалвис"
 countryId: "country_brazil"
-destinationType: "city"
+destinationType: city
 summary: "Виноградники и винодельческая культура юга Бразилии."
 searchAliases: ["Bento Gonçalves","bentu-gonsalvis"]
 themes: ["theme_gastronomy_wine"]
@@ -18,6 +18,7 @@ featureBands: []
 facts: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_bentu_gonsalvis.md"
 updatedAt: "2026-10-09"
+navigationRole: hub
 ---
 
 Бенту-Гонсалвис — город винодельческого региона на юге Бразилии. Холмы, виноградники и небольшие хозяйства формируют его окрестности и задают характер поездки. Здесь природный ландшафт тесно связан с местной гастрономией и культурой производства вина.

@@ -5,7 +5,7 @@ name: Река Гуаяберо
 slug: guayabero-river
 status: approved
 countryId: country_colombia
-destinationType: natural_area
+destinationType: river
 summary: Река Гуаяберо у Ла-Макарены в Колумбии, лодочный участок природных маршрутов к Каньо-Кристалес.
 hero:
   src: /media/tours/puteshestvie-k-raduzhnoj-reke-kolumbii/guayabero-river-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - Rio Guayabero
 sourceSnapshot: data/source-index/materials/destination_colombia_guayabero_river.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Река Гуаяберо находится в районе Ла-Макарены, на пути к Каньо-Кристалес. По ней проходят лодочные участки природных экскурсий. С воды видны речные берега и окружающая растительность, поэтому сама переправа становится частью знакомства с ландшафтом региона.

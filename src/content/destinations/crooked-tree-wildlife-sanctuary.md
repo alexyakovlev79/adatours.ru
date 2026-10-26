@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_zapovednik_kruked_tri.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 На экскурсию сюда приезжают с гидом и уделяют время поиску и наблюдению птиц. Посещение заповедника можно соединить с археологическим комплексом Альтун-Ха.

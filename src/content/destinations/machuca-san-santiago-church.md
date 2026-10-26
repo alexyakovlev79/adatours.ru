@@ -5,7 +5,7 @@ slug: machuca-san-santiago-church
 status: approved
 name: Церковь Сан-Сантьяго в Мачуке
 countryId: country_chile
-destinationType: route_cluster
+destinationType: religious_site
 summary: Небольшая церковь Сан-Сантьяго знакомит с религиозной традицией высокогорной Мачуки.
 themes:
 - theme_culture
@@ -16,6 +16,7 @@ hero:
 gallery: []
 sourceSnapshot: data/source-index/materials/destination_chile_machuca_san_santiago_church.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Церковь Сан-Сантьяго находится в Мачуке, небольшом высокогорном поселении чилийской Атакамы. Храм посвящен святому покровителю деревни и относится к XIX веку. Его стены из самана и соломенная крыша продолжают строительную традицию окружающих домов: простые природные материалы здесь становятся частью архитектуры.

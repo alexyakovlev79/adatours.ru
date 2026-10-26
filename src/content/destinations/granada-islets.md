@@ -5,7 +5,7 @@ slug: granada-islets
 status: approved
 name: Островки Гранады — Лас-Ислетас
 countryId: country_nicaragua
-destinationType: natural_area
+destinationType: island
 summary: 'Зеленые островки на озере Никарагуа у Гранады: лодочные проходы, птицы и виды в сторону вулкана Момбачо.'
 hero:
   src: "/media/destinations/granada-islets/hero-generated-20261021-dedup-third50-v1.webp"
@@ -15,6 +15,7 @@ themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_granada_islets.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Лас-Ислетас — россыпь небольших островов возле Гранады на озере Никарагуа. Их около 365: между зелеными берегами проходят узкие водные коридоры, а за островками открывается широкий озерный простор. Из лодки удобно рассматривать растительность и наблюдать за птицами, не прерывая спокойную прогулку.

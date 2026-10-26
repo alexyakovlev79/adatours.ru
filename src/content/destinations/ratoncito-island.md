@@ -17,6 +17,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_ratoncito_island.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На острове Ратонсито заканчивается речная часть подхода к Анхелю. Отсюда начинается тропа через тропическую растительность: ручьи, большие деревья, орхидеи, бромелии и покрытые мхом камни.

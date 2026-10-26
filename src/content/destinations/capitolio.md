@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_kapitolio.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Капитолио в программах называют «Морем Минаса». Этот район связан с озером Фурнаш и поездками среди скальных ландшафтов.

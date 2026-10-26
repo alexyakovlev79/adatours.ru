@@ -5,7 +5,7 @@ slug: mali-lima-art-museum
 status: approved
 name: Музей искусства Лимы — MALI
 countryId: country_peru
-destinationType: natural_area
+destinationType: museum
 summary: MALI — Музей искусства Лимы, расположенный во Дворце выставки в Парке выставки. Музей знакомит с художественным
   наследием Перу, а само историческое здание составляет заметную часть культурного ландшафта столицы.
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_peru_mali_lima.md
 updatedAt: '2026-10-15'
+navigationRole: sight
 ---
 
 Коллекции музея позволяют рассматривать искусство Перу в историческом контексте — от доколумбовых традиций до более поздних художественных направлений. Конкретные выставки и доступность залов зависят от музейной программы.

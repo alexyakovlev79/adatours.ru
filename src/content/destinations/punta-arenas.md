@@ -5,7 +5,7 @@ slug: punta-arenas
 status: approved
 name: "Пунта Аренас"
 countryId: "country_chile"
-destinationType: "city"
+destinationType: city
 summary: "Пунта Аренас на берегу Магелланова пролива: исторический центр, памятник Магеллану и виды на город, пролив и Огненную Землю с холма Ла-Крус."
 searchAliases: []
 hero:
@@ -37,6 +37,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-v-patagonii-v-chili-punta-arenas-i
 sourceSnapshot: "https://drive.google.com/file/d/1SHjV6jtfTMtdQGVCNX13aNbzEqgWNN1n/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Магелланов пролив и пингвины: что посмотреть в Пунта-Аренасе, Чили

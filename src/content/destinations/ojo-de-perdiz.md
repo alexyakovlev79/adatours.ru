@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_ojo_de_perdiz.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Открытые пространства и редкие поселения здесь сменяют друг друга между природными остановками. Эта точка помогает связать отдельные лагуны и пустыню в последовательный маршрут; размещение и дальнейший переход определяются конкретной программой тура.

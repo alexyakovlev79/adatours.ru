@@ -5,7 +5,7 @@ slug: san-jorge
 status: approved
 name: Сан-Хорхе
 countryId: country_nicaragua
-destinationType: city
+destinationType: town
 summary: Портовый город на берегу озера Никарагуа, откуда начинается паромная дорога на Ометепе.
 hero:
   src: /media/destinations/ometepe-island/gallery-1-enhanced-20261005.webp
@@ -15,6 +15,7 @@ themes: []
 relatedDestinations: []
 sourceSnapshot: data/source-index/materials/destination_nicaragua_san_jorge.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 Сан-Хорхе находится в департаменте Ривас на берегу озера Никарагуа, которое также называют Кокиболка. Для путешественников это прежде всего начало переправы на Ометепе: у причалов встречаются паромы, пассажиры и повседневная жизнь небольшого озерного порта.

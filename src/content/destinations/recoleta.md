@@ -5,7 +5,7 @@ slug: recoleta
 status: approved
 name: Реколета
 countryId: country_argentina
-destinationType: natural_area
+destinationType: district
 summary: Реколета — район Буэнос-Айреса с парадной архитектурой, зелёными площадями и известным кладбищем. Рядом
   находятся базилика Эль-Пилар и культурные пространства, поэтому здесь удобно знакомиться сразу с несколькими сторонами
   городской истории.
@@ -19,6 +19,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_argentina_recoleta.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Прогулка по району проходит среди старых фасадов, кафе и тенистых участков. Кладбище и храм можно включить в отдельный осмотр, а улицы вокруг подходят для спокойного знакомства с аргентинской столицей.

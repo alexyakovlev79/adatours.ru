@@ -5,7 +5,7 @@ slug: janauaca-lake
 status: approved
 name: Озеро Жанауака
 countryId: country_brazil
-destinationType: natural_area
+destinationType: lake
 summary: Рассвет над амазонским озером, каноэ у лесного берега и голоса птиц. Жанауака открывает спокойную водную
   сторону путешествия по Амазонии.
 hero:
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_wildlife", "theme_cruises", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_brazil_janauaca_lake.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На Жанауаке стоит проснуться раньше завтрака. Каноэ выходит на тихую воду, лес постепенно наполняется голосами птиц, а в отражении берега видны переплетенные ветви. С небольшой лодки Амазония выглядит совсем иначе, чем с палубы: внимание притягивают отдельная птица, движение у кромки воды и узкая протока между деревьями.

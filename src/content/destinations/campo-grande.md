@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_kampo_grande.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Кампо-Гранде включают в маршруты по Бразилии как пункт прибытия перед поездкой в Пантанал. После перелета отсюда организуют переезд к выбранному отелю или природному лоджу.

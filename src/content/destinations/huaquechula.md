@@ -5,7 +5,7 @@ name: Уакечула
 slug: huaquechula
 status: approved
 countryId: country_mexico
-destinationType: city
+destinationType: town
 summary: Уакечула в Мексике, поселение с традициями семейных алтарей в дни памяти умерших.
 hero:
   src: /media/tours/meksika-den-mertvykh/huaquechula-place-generated-20261009-v1.webp
@@ -19,6 +19,7 @@ searchAliases:
 - uakechula
 sourceSnapshot: data/source-index/materials/destination_mexico_uakechula.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Уакечула известна семейными алтарями, которые создают в память об умерших близких. Их украшают цветами, свечами и фотографиями. В оформлении используют любимую еду и личные вещи тех, кого вспоминает семья, поэтому каждый алтарь связан с конкретной историей.

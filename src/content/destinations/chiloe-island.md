@@ -18,6 +18,7 @@ searchAliases:
 - Остров Чилоэ
 sourceSnapshot: data/source-index/materials/destination_chile_chiloe_island.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В программе P109 поездка включает Анкуд и знакомство с историей, ремеслами и островными легендами. Деревянные церкви, изделия из шерсти и блюда из морепродуктов относятся к культурному наследию архипелага.

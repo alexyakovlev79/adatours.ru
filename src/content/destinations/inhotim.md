@@ -5,7 +5,7 @@ name: Иньотим
 slug: inhotim
 status: approved
 countryId: country_brazil
-destinationType: natural_area
+destinationType: museum
 summary: Иньотим соединяет музей современного искусства с ботаническим садом. Между выставочными павильонами посетители гуляют по садам и участкам тропического леса.
 searchAliases:
 - Inhotim
@@ -24,6 +24,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_brazil_inhotim.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 Иньотим в бразильском штате Минас-Жерайс соединяет музей современного искусства под открытым небом с ботаническим садом. Выставочные павильоны расположены среди тропической зелени, садов и озер.
 

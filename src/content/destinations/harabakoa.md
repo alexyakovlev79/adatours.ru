@@ -5,7 +5,7 @@ slug: jarabacoa
 status: "approved"
 name: "Харабакоа"
 countryId: "country_dominican_republic"
-destinationType: "city"
+destinationType: city
 summary: "Харабакоа находится в горной долине реки Jimenoa. Здесь можно увидеть водопады, отправиться на пешую или конную прогулку и подняться на вершину Pico Duarte."
 searchAliases: []
 hero: {"src":"/media/destinations/jarabacoa/hero-enhanced-20261003.webp","alt":"Дом с деревянными балконами среди зеленых горных склонов", hover: "Горный пейзаж с домом, дорожками и деревьями"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-kurort-harabakoa-v-domin
 sourceSnapshot: "https://drive.google.com/file/d/1OKZStXCXIwG2oTruSTAmCdSlpjT9Zhcd/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_adventure", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Харабакоа - место приключений!

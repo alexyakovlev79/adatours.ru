@@ -17,6 +17,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_pozo_azul_canaima.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Посо-Асул скрывается среди зелени Канаймы. Небольшой поток наполняет естественный водоем, а при солнечном свете вода приобретает голубоватый оттенок. Здесь можно задержаться у берега после прогулки.

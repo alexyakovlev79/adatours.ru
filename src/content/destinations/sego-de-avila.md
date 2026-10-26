@@ -5,7 +5,7 @@ slug: ciego-de-avila
 status: "approved"
 name: "Сьего де Авила"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Город и одноименная провинция находятся в центральной части Кубы. На островах у северного побережья устроены пляжные курорты, а в городе можно увидеть театр «Принсипаль» и Кафедральный собор."
 searchAliases: []
 hero: {"src":"/media/destinations/ciego-de-avila/hero-enhanced-20261004.webp","alt":"Синий деревянный проход с белыми перилами к пляжу Кайо-Коко, Куба", hover: "Кайо-Коко: дорожка под пальмами к бирюзовому морю"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/plyazhnye-tury-na-kajo-koko-i-kajo-gilermo-se
 sourceSnapshot: "https://drive.google.com/file/d/1uznh9HRyWqR585yWu3x4Klhcg1g_sxkF/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach","theme_culture"]
+navigationRole: hub
 ---
 
 ## Сьего де Авила - пляжный курорт Кубы

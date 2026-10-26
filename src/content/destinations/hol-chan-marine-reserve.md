@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_morskoj_zapovednik_hol_chan.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Морские экскурсии отправляются из Сан-Педро. Выход в Хол-Чан часто объединяют со снорклингом в районе Shark Ray Alley; группу сопровождает местный гид. Подводные наблюдения здесь становятся главным впечатлением дня.

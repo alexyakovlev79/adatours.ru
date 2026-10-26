@@ -5,7 +5,7 @@ name: "Озеро Акажатуба"
 slug: "lake-acajatuba"
 status: "approved"
 countryId: "country_brazil"
-destinationType: "natural_area"
+destinationType: lake
 summary: "Озеро Акажатуба в бассейне Риу-Негру открывает Амазонию с воды: лесные протоки, зеркальные отражения и прибрежные поселения."
 searchAliases: ["ozero-akazhatuba"]
 hero: {"src": "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp", "alt": "Поселение Акажатуба на берегу амазонского водоема — иллюстрация"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_brazil_ozero_akazhatuba.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 У озера Акажатуба Амазонию хочется рассматривать с лодки. Темная вода отражает кроны, зеленая стена леса подступает к берегам, а за широкими плесами открываются узкие протоки. Озеро относится к речному миру Риу-Негру в окрестностях Манауса. Здесь вода связывает лес, небольшие поселения и лодочные причалы.

@@ -5,7 +5,7 @@ name: Миндо
 slug: mindo
 status: approved
 countryId: country_ecuador
-destinationType: city
+destinationType: natural_area
 summary: Миндо — район облачных лесов на западных склонах эквадорских Анд. Лесные прогулки, реки и наблюдение за птицами дополняют здесь городскую и вулканическую программу поездки.
 hero:
   src: /media/destinations/mindo/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_mindo.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Лесные прогулки, реки и наблюдение за птицами дополняют здесь городскую и вулканическую программу поездки.

@@ -5,7 +5,7 @@ name: Церковь Сан-Хосе и Золотой алтарь
 slug: san-jose-church
 status: approved
 countryId: country_panama
-destinationType: city
+destinationType: religious_site
 summary: Церковь в Каско-Антигуо с резным позолоченным алтарем. Короткая остановка здесь дополняет прогулку по историческому
   центру Панама-Сити.
 hero:
@@ -21,6 +21,7 @@ searchAliases:
 - Golden Altar
 sourceSnapshot: data/source-index/materials/destination_panama_san_jose_church.md
 updatedAt: '2026-10-20'
+navigationRole: sight
 ---
 
 ## Золотой алтарь в Каско-Антигуо

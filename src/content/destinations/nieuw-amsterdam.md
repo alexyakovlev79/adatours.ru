@@ -5,7 +5,7 @@ name: Ньив-Амстердам
 slug: nieuw-amsterdam
 status: approved
 countryId: country_suriname
-destinationType: city
+destinationType: town
 summary: Ньив-Амстердам находится у рек Суринам и Коммевейне. В путешествии сюда приезжают по суше или по воде, знакомясь
   с прибрежным ландшафтом и историей этого района.
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_niv_amsterdam.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В путешествии сюда приезжают по суше или по воде, знакомясь с прибрежным ландшафтом и историей этого района.

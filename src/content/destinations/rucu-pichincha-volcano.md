@@ -5,7 +5,7 @@ name: Вулкан Руко-Пичинча
 slug: rucu-pichincha-volcano
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: volcano
 summary: Руко-Пичинча — вершина в горном районе Кито. Треккинг сюда добавляет к городской программе прогулку по высокогорным склонам и видам на окружающие Анды.
 hero:
   src: /media/destinations/rucu-pichincha-volcano/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_vulkan_ruko_pichincha.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Треккинг сюда добавляет к городской программе прогулку по высокогорным склонам и видам на окружающие Анды.

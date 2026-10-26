@@ -12,7 +12,7 @@ searchAliases:
   - Cotopaxi
   - Середина мира
 countryId: country_ecuador
-destinationType: region
+destinationType: route_cluster
 summary: >-
   Кито лежит в андской долине на высоте 2850 м. Исторический центр, линия экватора, Пулулахуа и вулкан Котопахи позволяют соединить городскую архитектуру и высокогорную природу в одном направлении.
 hero:
@@ -73,6 +73,7 @@ sourceUrl: https://brasiltours.ru/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-eh
 sourceSnapshot: page_texts_original/tury-i-ehkskursii-v-kito-vulkan-kotopaksi-v-ehkvadore__9359a33c.md
 updatedAt: 2026-10-02
 themes: ["theme_culture", "theme_nature"]
+navigationRole: hub
 ---
 
 Кито расположен в андской долине на высоте 2850 м. Старый город сохраняет колониальную архитектуру, церкви и монастыри, а современная часть столицы развивается среди гор и вулканических массивов.

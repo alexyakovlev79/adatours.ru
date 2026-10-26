@@ -5,7 +5,7 @@ slug: panama-canal
 status: approved
 name: Панамский канал
 countryId: country_panama
-destinationType: route_cluster
+destinationType: other_landmark
 summary: Шлюзы, озеро Гатун и суда на пути между океанами. В Панаме канал можно увидеть с площадок Мирафлорес и
   с лодки у лесных берегов.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - panama-canal
 sourceSnapshot: data/source-index/materials/destination_panama_panama_canal.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 Панамский канал объединяет два впечатления от поездки. У Мирафлорес наблюдают за проходом судов через шлюзы и узнают, как устроен водный путь. На озере Гатун оказываются среди лесных берегов, рядом с движением больших судов.

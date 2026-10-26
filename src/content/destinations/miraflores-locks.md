@@ -5,7 +5,7 @@ slug: miraflores-locks
 status: approved
 name: Шлюзы Мирафлорес
 countryId: country_panama
-destinationType: natural_area
+destinationType: attraction
 summary: Посмотрите, как суда проходят через шлюзы Панамского канала. Центр посетителей Мирафлорес знакомит с историей
   канала и принципом его работы.
 hero:
@@ -18,6 +18,7 @@ searchAliases:
 - Miraflores
 sourceSnapshot: data/source-index/materials/destination_panama_miraflores_locks.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Здесь знакомятся с историей строительства и устройством канала. В программе «Панама-Сити и Гамбоа» посещение Мирафлорес объединено с Биомузеем и прогулкой по Каско-Вьехо.

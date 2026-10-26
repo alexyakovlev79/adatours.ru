@@ -23,6 +23,7 @@ searchAliases:
 - Остров Плено
 sourceSnapshot: data/source-index/materials/destination_antarctica_pleneau_island.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Остров Плено находится к северо-востоку от острова Ховгорд у побережья Земли Грейама. Невысокие каменистые берега окружают холодные антарктические воды. В этой части маршрута лед и айсберги часто определяют доступный путь судна и лодок.

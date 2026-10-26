@@ -5,7 +5,7 @@ slug: liberia
 status: "approved"
 name: "Либерия"
 countryId: "country_costa_rica"
-destinationType: "city"
+destinationType: city
 summary: "Либерию называют Белым городом за дома колониальной эпохи. Отсюда отправляются к вулкану Ринкон-де-ла-Вьеха, в парк Санта-Роса и на пляжи Никоя."
 searchAliases: []
 hero: {"src": "/media/destinations/liberia/hero-enhanced-20261003.webp", "alt": "Растрескавшийся грязевой бассейн среди тропической зелени, Коста-Рика", "hover": "Коста-Рика: сухая серая поверхность грязевого бассейна у леса"}
@@ -28,6 +28,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-liberiya-v-kosta-ri
 sourceSnapshot: "https://drive.google.com/file/d/1xNU7XbKu8PQYb6jer-RDM_BaPA1MeCZZ/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_nature", "theme_beach"]
+navigationRole: hub
 ---
 
 ## Белый город и сухой тропический рай: что посмотреть в Либерии, Коста-Рика

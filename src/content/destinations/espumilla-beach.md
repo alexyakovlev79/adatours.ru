@@ -5,7 +5,7 @@ name: "Пляж Эспумилья"
 slug: "espumilla-beach"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: beach
 summary: "Пляж Эспумилья на Сантьяго знакомит с песчаным берегом, манграми и местами гнездования морских черепах."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_espumilla_beach/hero-generated-20261010-batch-four-v1.webp", "alt": "Песчаный пляж Эспумилья, прибрежная птица и вулканические камни у воды", "hover": "Эспумилья: песчаный берег и птица у прибоя"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_espumilla_beach.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 На пляже Эспумилья хочется прислушаться к прибою и пройти вдоль песчаного берега. Он находится у бухты Джеймс на острове Сантьяго. За полосой песка растут мангры и пало-санто, а прогулка соединяет открытый морской вид с небольшими участками островной растительности.

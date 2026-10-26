@@ -5,7 +5,7 @@ slug: samaipata
 status: approved
 name: Самаипата
 countryId: country_bolivia
-destinationType: city
+destinationType: town
 summary: 'Город в предгорьях Анд рядом с археологическим комплексом Эль-Фуэрте: зеленые холмы, местная жизнь и боливийская
   кухня.'
 searchAliases: []
@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_samaipata.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Самаипата находится примерно в 120 км от Санта-Круса, в предгорьях Анд. Город окружают зеленые долины и холмы. Сюда приезжают, чтобы познакомиться с местной жизнью и посетить археологический комплекс Эль-Фуэрте.

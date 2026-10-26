@@ -18,6 +18,7 @@ searchAliases:
 - dolores-idalgo
 sourceSnapshot: data/source-index/materials/destination_mexico_dolores_idalgo.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Долорес-Идальго связан с началом борьбы Мексики за независимость. Здесь священник Мигель Идальго произнес призыв к восстанию против испанского владычества. История города делает его важной остановкой на маршрутах по центральной части страны.

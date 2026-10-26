@@ -5,7 +5,7 @@ slug: guayaquil
 status: approved
 name: "Гуаякиль"
 countryId: "country_ecuador"
-destinationType: "city"
+destinationType: city
 summary: "Гуаякиль: колониальная архитектура, ботанические сады, фонтаны и исторический парк с зоопарком и этнографическим музеем."
 searchAliases: []
 hero:
@@ -34,6 +34,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-v-gorod-guayakil-v-ehkvador
 sourceSnapshot: "https://drive.google.com/file/d/1V27NT_iuWZdGRq4sqyjLobmMHNjGzHBo/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_culture", "theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Малекон 2000 и Лас-Пеньяс: что посмотреть в Гуаякиле, Эквадор

@@ -5,7 +5,7 @@ name: Кабах
 slug: kabah
 status: approved
 countryId: country_mexico
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Кабах на мексиканском Юкатане, древний город майя с аркой и храмом, украшенным каменными масками.
 hero:
   src: /media/tours/meksika-lindo/kabah-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_mexico_kabah.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Кабах относится к археологическим комплексам региона Пуук на Юкатане. Здесь известны каменная арка и Храм Масок с многочисленными изображениями бога дождя Чаака. Декор позволяет рассмотреть архитектурные приемы, которые связывают разные древние города этой части Мексики.

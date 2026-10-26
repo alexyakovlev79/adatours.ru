@@ -5,7 +5,7 @@ name: Озеро Сармьенто
 slug: lake-sarmiento
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: lake
 summary: Озеро Сармьенто, одна из остановок в Торрес-дель-Пайне, открывает вид на водные и горные пейзажи чилийской
   Патагонии.
 hero:
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_ozero_sarmento.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Озеро Сармьенто входит в экскурсионные маршруты по Торрес-дель-Пайне. Его берега позволяют увидеть широкие водные пространства рядом с патагонской степью.

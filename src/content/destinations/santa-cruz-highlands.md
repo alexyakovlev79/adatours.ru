@@ -16,6 +16,7 @@ themes:
 - theme_wildlife
 sourceSnapshot: data/source-index/materials/destination_ecuador_santa_cruz_highlands.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 В глубине Санта-Крус путешественники встречают гигантских сухопутных черепах среди зелени. Наблюдать за ними можно с земли: хорошо видны тяжелый панцирь, движения лап и то, как животное выбирает траву.

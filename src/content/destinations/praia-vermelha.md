@@ -5,7 +5,7 @@ slug: praia-vermelha
 status: approved
 name: Пляж Прайя-Вермелья
 countryId: country_brazil
-destinationType: natural_area
+destinationType: beach
 summary: Небольшая бухта Урки с теплым песком и видом на Сахарную голову. Прайя-Вермелья соединяет пляжную прогулку
   с одним из самых узнаваемых пейзажей Рио.
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_beach
 sourceSnapshot: data/source-index/materials/destination_brazil_praia_vermelha.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 На Прайя-Вермелье Рио помещается в одну небольшую бухту: полоса песка, сине-зеленая вода и гранитные горы над берегом. Можно пройти вдоль прибоя, остановиться ради фотографии и посмотреть, как над склонами движутся кабины канатной дороги. Близость Сахарной головы делает даже короткую остановку у воды частью большого знакомства с городом.

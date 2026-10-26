@@ -5,7 +5,7 @@ name: Кордильера-дель-Йбитурусу
 slug: ybytyruzu-mountain-range
 status: approved
 countryId: country_paraguay
-destinationType: natural_area
+destinationType: mountain
 summary: Кордильера-дель-Йбитурусу в Парагвае, горный район с лесными тропами, водопадами и смотровыми точками.
 hero:
   src: /media/tours/tur-po-uruguayu-i-paragvayu-16-dnej/ybytyruzu-mountain-range-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - kordilera-del-jbiturusu
 sourceSnapshot: data/source-index/materials/destination_paraguay_kordilera_del_jbiturusu.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Йбитурусу связан с горными и лесными пейзажами Парагвая. Тропы проходят по склонам и ведут к водопадам и открытым видам на окружающую зелень. Район дополняет представление о стране, где кроме равнин есть выраженные холмистые и горные территории.

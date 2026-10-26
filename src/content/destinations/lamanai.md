@@ -5,7 +5,7 @@ name: Ламанай
 slug: lamanai
 status: approved
 countryId: country_belize
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Ламанай, древний город майя в Белизе, расположен среди тропического леса рядом с водой. Археологические постройки здесь соседствуют с живой природой.
 hero:
   src: /media/destinations/lamanai/hero-generated-20261008.webp
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_belize_lamanaj.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Посещение руин соединяют с речными прогулками и наблюдением за птицами. В этой части Белиза можно остановиться в джунглевом лодже и посвятить несколько дней прогулкам по лесу и знакомству с местными общинами.

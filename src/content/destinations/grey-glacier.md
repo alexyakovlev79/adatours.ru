@@ -5,7 +5,7 @@ name: Ледник Грей
 slug: grey-glacier
 status: approved
 countryId: country_chile
-destinationType: natural_area
+destinationType: glacier
 summary: Ледник Грей находится в национальном парке Торрес-дель-Пайне. Во время лодочной прогулки его ледяную стену рассматривают с воды на фоне патагонских гор.
 searchAliases:
 - Glaciar Grey
@@ -23,6 +23,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_chile_lednik_grej.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 Ледник Грей находится в национальном парке Торрес-дель-Пайне в Чилийской Патагонии. Его широкая ледяная стена выходит к озеру, по которому плавают отколовшиеся льдины.
 

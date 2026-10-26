@@ -40,6 +40,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-utila-v-gondurase
 sourceSnapshot: "https://drive.google.com/file/d/11mgOBS1wMNIdW1MOBnthhk_pCt0M9U6s/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_diving"]
+navigationRole: hub
 ---
 
 ### Остров Утила

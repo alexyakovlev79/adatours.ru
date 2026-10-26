@@ -24,6 +24,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_kuyaba.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Куяба служит исходной и завершающей остановкой в программах по Северному Пантаналу. Отсюда отправляются через Поконе к Транспантанейре и природным лоджам.

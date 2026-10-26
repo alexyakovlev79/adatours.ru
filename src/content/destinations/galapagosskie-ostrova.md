@@ -5,7 +5,7 @@ slug: galapagos-islands
 status: approved
 name: "Галапагосские острова"
 countryId: "country_ecuador"
-destinationType: "island"
+destinationType: region
 summary: "Галапагосские острова: эндемичная флора и фауна, гигантские черепахи, морские котики и водные развлечения у песчаных пляжей."
 searchAliases: []
 hero:
@@ -31,6 +31,7 @@ sourceUrl: "https://brasiltours.ru/tury-i-ehkskursii-na-galapagosskie-ostrova-v-
 sourceSnapshot: "https://drive.google.com/file/d/1bjUlrA_eHw50CWvpFbMeKl_p6UCxg0uj/view?usp=drivesdk"
 updatedAt: '2026-10-02'
 themes: ["theme_wildlife","theme_diving"]
+navigationRole: hub
 ---
 
 ### Галапагосские острова - уникальный край Эквадора!

@@ -34,6 +34,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-gorod-potosi-potos-v-boliv
 sourceSnapshot: https://drive.google.com/file/d/1b5MCwdsECUxzcVCadG-CLRK6NbuwYQd1/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Столица департамента Потоси в Боливии. Считается, что это самый высокогорный город в мире. Город расположен у подножья горы Серро-де-Потоси на богатом месторождении серебра , которое в течение длительного времени являлся основным источником существования города.

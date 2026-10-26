@@ -5,7 +5,7 @@ name: Коронель-Доррего
 slug: coronel-dorrego
 status: approved
 countryId: country_argentina
-destinationType: city
+destinationType: region
 summary: Сельскохозяйственный район юго-запада провинции Буэнос-Айрес, интересный для изучения технологий работы
   при ограниченных осадках.
 searchAliases:
@@ -23,6 +23,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_coronel_dorrego.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Коронель-Доррего расположен на юго-западе провинции Буэнос-Айрес. Одноименный муниципалитет соседствует с Трес-Арройосом и выходит к Аргентинскому морю, соединяя внутренние сельские районы и атлантическое направление.

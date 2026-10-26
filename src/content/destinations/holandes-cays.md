@@ -5,7 +5,7 @@ name: Архипелаг Холандес
 slug: holandes-cays
 status: approved
 countryId: country_panama
-destinationType: natural_area
+destinationType: island
 summary: Архипелаг Холандес в панамском Сан-Бласе, небольшие карибские острова с рифами и прозрачной водой.
 hero:
   src: /media/tours/ostrova-san-blas-na-yakhte-lyuks-klassa/holandes-cays-place-generated-20261009-v1.webp
@@ -20,6 +20,7 @@ searchAliases:
 - arhipelag-holandes
 sourceSnapshot: data/source-index/materials/destination_panama_arhipelag_holandes.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Холандес входит в островной район Сан-Бласа в Панаме. Небольшие острова окружены карибской водой и барьерным рифом. Морской пейзаж здесь строится из белых берегов, зелени и оттенков бирюзы на мелководье.

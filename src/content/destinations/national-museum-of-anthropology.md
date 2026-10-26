@@ -5,7 +5,7 @@ slug: national-museum-of-anthropology
 status: approved
 name: Национальный музей антропологии
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: museum
 summary: Национальный музей антропологии в Мехико знакомит с цивилизациями Мезоамерики и культурой народов современной
   Мексики.
 hero:
@@ -17,6 +17,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_national_museum_of_anthropology.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В Национальном музее антропологии встречаются истории народов, живших на территории Мексики задолго до появления колониальных городов. Археологические коллекции помогают понять, как создавались храмы, какие образы почитали и что сопровождало повседневную жизнь.

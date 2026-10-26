@@ -17,6 +17,7 @@ searchAliases:
 - monkey-island-gatun
 sourceSnapshot: data/source-index/materials/destination_panama_monkey_island_gatun.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 В зеленых ветвях можно встретить белолицых обезьян и других обитателей леса. Животные живут свободно, поэтому встреча с ними зависит от условий поездки и их поведения. В программе «Панама-Сити и Гамбоа» эта остановка завершает водную экскурсию перед возвращением в столицу.

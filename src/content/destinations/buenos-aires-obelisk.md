@@ -5,7 +5,7 @@ slug: buenos-aires-obelisk
 status: approved
 name: Обелиск Буэнос-Айреса
 countryId: country_argentina
-destinationType: natural_area
+destinationType: monument
 summary: Обелиск стоит в центре Буэнос-Айреса, у пересечения авеню Корриентес и 9 июля. Его лаконичный каменный
   силуэт виден издалека и стал одним из главных символов аргентинской столицы.
 hero:
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_argentina_buenos_aires_obelisk.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Вокруг особенно хорошо чувствуется большой город: широкие полосы движения, пешеходы, свет вывесок и длинные перспективы улиц. Остановка у памятника дополняет обзорную поездку и позволяет увидеть центральные проспекты с близкого расстояния.

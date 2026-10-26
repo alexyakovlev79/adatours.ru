@@ -17,6 +17,7 @@ themes:
 - theme_diving
 sourceSnapshot: data/source-index/materials/destination_ecuador_enderby_islet.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Эндерби, небольшой островок возле Флореаны, знакомит с океанской стороной Галапагосов. Главные впечатления здесь связаны с водой, рифовой фауной и животными, которых встречают во время морского выхода.

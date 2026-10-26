@@ -5,7 +5,7 @@ slug: cali
 status: "approved"
 name: "Кали"
 countryId: "country_colombia"
-destinationType: "city"
+destinationType: city
 summary: "Кали известен колониальной архитектурой, музеями и танцевальными залами сальсы. Среди достопримечательностей города есть старинные церкви и Башня Кали."
 searchAliases: []
 hero: {"src":"/media/destinations/cali/hero-enhanced-20261003.webp","alt":"Небольшая белая церковь перед современными высотными зданиями Кали, Колумбия","hover":"Кали в Колумбии: белая колокольня и черепичная крыша на фоне небоскребов"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-kali-v-kolumbii"
 sourceSnapshot: "https://drive.google.com/file/d/1pvvml_DUe-oY3U90M6OPL5yVsEgB0cP3/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Кали -город сальси, музеев и колониальной архитектуры

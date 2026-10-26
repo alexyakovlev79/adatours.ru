@@ -25,6 +25,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_viskondi_de_maua.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 В населенных местах работают небольшие гостиницы, рестораны и ремесленные магазины. Поездку сюда включают в маршруты по внутренним районам Бразилии, сочетая прогулки по окрестностям с отдыхом у воды.

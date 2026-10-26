@@ -30,6 +30,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_portu_zhofri.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 В районе Порту-Жофри путешественники отправляются на водные прогулки и сафари. Одно из главных направлений программы — наблюдение за ягуарами у берегов и участков растительности.

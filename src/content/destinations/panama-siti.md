@@ -5,7 +5,7 @@ slug: panama-city
 status: "approved"
 name: "Панама-Сити"
 countryId: "country_panama"
-destinationType: "city"
+destinationType: city
 summary: "Столица Панамы с колониальными кварталами и небоскребами. Панама-Вьехо, Сан-Фелип, Авенида-Бальбоа и парки входят в знакомство с городом."
 searchAliases: []
 hero:
@@ -43,6 +43,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-strany-gorod-pana
 sourceSnapshot: "https://drive.google.com/file/d/1Cja5HlpAedVZWLOrUCZokTdU1FAcv2x4/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Панамский канал и Casco Viejo: что посмотреть в столице Панамы

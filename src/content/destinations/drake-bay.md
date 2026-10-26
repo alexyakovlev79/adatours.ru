@@ -5,7 +5,7 @@ name: Залив Дрейк
 slug: drake-bay
 status: approved
 countryId: country_costa_rica
-destinationType: city
+destinationType: bay
 summary: Залив Дрейк на юге Коста-Рики, тихоокеанский берег и база для поездок в Корковадо.
 hero:
   src: /media/tours/lyuksovyj-tur-v-kosta-riku-na-16-dnej/itinerary-day-7-enhanced-20261006.webp
@@ -18,6 +18,7 @@ searchAliases:
 - zaliv-drejk
 sourceSnapshot: data/source-index/materials/destination_costa_rica_zaliv_drejk.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Залив Дрейк расположен на юге тихоокеанского побережья Коста-Рики. Здесь морской берег соседствует с тропическим лесом. Район связан с природными поездками: от побережья отправляются на лодках к отдельным участкам Корковадо и к островным территориям.

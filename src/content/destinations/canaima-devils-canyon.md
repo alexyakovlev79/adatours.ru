@@ -5,7 +5,7 @@ slug: canaima-devils-canyon
 status: approved
 name: Каньон Дьявола в Канайме
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: canyon
 summary: Ущелье с высокими отвесными стенами на речном пути к Анхелю. Влажные скалы и небольшие каскады поднимаются над
   тропическим лесом.
 hero:
@@ -17,6 +17,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_canaima_devils_canyon.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 В Каньоне Дьявола путешествие по реке оказывается среди высоких вертикальных стен. По их склонам спускаются каскады, а у воды сохраняется густая тропическая растительность. С лодки скалы видны снизу, во всю высоту.

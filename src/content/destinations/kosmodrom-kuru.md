@@ -5,7 +5,7 @@ slug: guiana-space-centre
 status: approved
 name: Космодром Куру
 countryId: country_french_guiana
-destinationType: region
+destinationType: attraction
 summary: 'Космодром Куру во Французской Гвиане: космический центр, запускающий спутники и другие аппараты, и Le Vieux Бург для отдыха и знакомства с местной кухней.'
 searchAliases: []
 hero:
@@ -41,6 +41,7 @@ sourceSnapshot: https://drive.google.com/file/d/1kpdmYEvTMcwRNep-fLhk62_5LaTlwEE
 updatedAt: '2026-10-02'
 themes:
 - theme_culture
+navigationRole: sight
 ---
 
 ### Космодром Куру - туристический объект Французской Гвианы

@@ -5,7 +5,7 @@ name: Тепуй Куравайна
 slug: kuravaina-tepui
 status: approved
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: mountain
 summary: Тепуй возле Канаймы с панорамами саванны, долины Кураупа и соседних столовых гор.
 hero:
   src: /media/tours/venesuela-novye-konkistadory/kuravaina-tepui-place-generated-20261008.webp
@@ -15,6 +15,7 @@ gallery: []
 themes: ["theme_adventure", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_tepuj_kuravajna.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Куравайна, также встречающаяся под названием Куравейна, — тепуй возле Канаймы. С его возвышенных участков открываются виды на саванну, лесистую долину Кураупа и соседние столовые горы. Здесь особенно хорошо читается сочетание открытых равнин и плоских скальных вершин.

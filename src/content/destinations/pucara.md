@@ -5,7 +5,7 @@ name: Пукара
 slug: pucara
 status: approved
 countryId: country_peru
-destinationType: city
+destinationType: town
 summary: Поселение высокогорного региона Пуно с доинкским археологическим комплексом и традицией керамических быков.
 hero:
   src: /media/tours/tur-v-peru-i-braziliyu/pucara-place-generated-20261008.webp
@@ -16,6 +16,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_peru_pukara.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Пукара находится в высокогорном регионе Пуно и связана с одноименной культурой, существовавшей до государства инков. Археологический комплекс с храмом Каласая знакомит с древней каменной архитектурой этого района. Местный музей дополняет осмотр памятника находками и историческим контекстом.

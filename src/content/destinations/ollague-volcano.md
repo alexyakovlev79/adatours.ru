@@ -5,7 +5,7 @@ name: Вулкан Оллагуэ
 slug: ollague-volcano
 status: approved
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: volcano
 summary: Вулкан Оллагуэ на границе Боливии и Чили, горный массив над открытыми ландшафтами Альтиплано.
 hero:
   src: /media/tours/vip-tur-v-boliviyu-i-peru-na-18-dnej-s-kruizom-po-amazonke/ollague-volcano-place-generated-20261009-v1.webp
@@ -22,6 +22,7 @@ searchAliases:
 - vulkan-ollague
 sourceSnapshot: data/source-index/materials/destination_bolivia_vulkan_ollague.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Оллагуэ расположен на границе Боливии и Чили и входит в горные пейзажи Альтиплано. Его массив поднимается над сухими открытыми территориями. На боливийских маршрутах вулкан рассматривают вместе с высокогорными лагунами и солончаком Чигуана.

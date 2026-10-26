@@ -5,7 +5,7 @@ name: Вулкан Бару
 slug: baru-volcano
 status: approved
 countryId: country_panama
-destinationType: natural_area
+destinationType: volcano
 summary: Вулкан Бару в Панаме, высокий горный массив с панорамами западной части страны.
 hero:
   src: /media/tours/luchshee-v-tsentralnoj-amerike/baru-volcano-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - vulkan-baru
 sourceSnapshot: data/source-index/materials/destination_panama_vulkan_baru.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Бару является самой высокой точкой Панамы. Его склоны и вершина раскрывают горную сторону страны, которая заметно отличается от карибских островов и тихоокеанских пляжей. Подъем к верхней части связан с дорогами по пересеченной местности.

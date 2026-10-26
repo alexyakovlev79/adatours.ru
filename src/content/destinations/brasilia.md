@@ -32,6 +32,7 @@ sourceUrl: https://brasiltours.ru/brasilia-brazil
 sourceSnapshot: page_texts_original/brasilia-brazil__83d89e80.md
 updatedAt: 2026-09-25
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 Бразилиа находится в центральной части страны на Центральном плоскогорье. Город был создан в XX веке как новая столица Бразилии и известен своей модернистской архитектурой и продуманной планировкой.

@@ -5,7 +5,7 @@ name: Чорони
 slug: choroni
 status: approved
 countryId: country_venezuela
-destinationType: resort
+destinationType: town
 summary: Прибрежное поселение у лесистых гор национального парка Анри-Питтье с историческим центром и пляжами Карибского
   моря.
 hero:
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_venezuela_choroni.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 
 Чорони находится на карибском побережье Венесуэлы, у лесистых склонов национального парка Анри-Питтье. Историческая застройка поселения и рыбацкая жизнь соседствуют здесь с тропическим лесом и морем. Дорога к побережью проходит через горный район.

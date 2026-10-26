@@ -5,7 +5,7 @@ slug: lake-sofia
 status: approved
 name: Озеро София
 countryId: country_chile
-destinationType: natural_area
+destinationType: lake
 summary: Озеро София входит в озёрные пейзажи окрестностей Пуэрто-Наталеса. Вода, холмы и открытое небо делают его
   приятной остановкой на пути к южной части Торрес-дель-Пайне. На берегах хорошо видно, как лесистые участки Патагонии
   сменяются более открытыми пространствами.
@@ -18,6 +18,7 @@ gallery: []
 themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_chile_lake_sofia.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Здесь хочется задержаться ради спокойного вида на воду и фотографий. Поездка к озеру обычно сочетается с другими природными остановками региона; конкретный берег и возможность прогулки определяются маршрутом.

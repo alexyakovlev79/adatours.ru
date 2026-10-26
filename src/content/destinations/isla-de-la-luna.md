@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_isla_de_la_luna.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Островной маршрут соединяет озёрные панорамы и знакомство с историческими памятниками. Каменные сооружения и открытые виды на Титикаку дают здесь иной опыт, чем прогулка по прибрежному городу. Порядок островных остановок и условия поездки определяются выбранной программой.

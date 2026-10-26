@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_biologicheskij_zapovednik_limonkocha.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Озёрный и лесной ландшафт отличает его от высокогорных природных районов страны.

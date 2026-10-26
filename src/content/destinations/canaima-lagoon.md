@@ -5,7 +5,7 @@ slug: canaima-lagoon
 status: approved
 name: Лагуна Канайма
 countryId: country_venezuela
-destinationType: natural_area
+destinationType: lake
 summary: Песчаный берег, пальмы и каскады вокруг спокойной воды. Лагуна Канайма служит отправной точкой лодочных прогулок
   к водопадам Ача и Сапо.
 hero:
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_nature", "theme_adventure"]
 sourceSnapshot: data/source-index/materials/destination_venezuela_canaima_lagoon.md
 updatedAt: '2026-10-10'
+navigationRole: hub
 ---
 
 У лагуны Канайма можно увидеть, как широкая спокойная вода соседствует с мощными каскадами. На берегу растут пальмы, а над водой слышен шум водопадов. Сюда выходят после перелета и возвращаются с речных экскурсий.

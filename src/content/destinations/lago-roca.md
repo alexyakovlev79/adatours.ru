@@ -5,7 +5,7 @@ slug: lago-roca
 status: approved
 name: Озеро Рока (Ацигами)
 countryId: country_argentina
-destinationType: natural_area
+destinationType: lake
 summary: Озеро Рока в национальном парке Тьерра-дель-Фуэго окружено лесами и горами Огненной Земли.
 hero:
   src: /media/tours/best-of-argentina-14-days/roca-generated-20261011-v1.webp
@@ -16,6 +16,7 @@ gallery: []
 themes: ["theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_argentina_lago_roca.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 У берега озера Рока горы поднимаются над холодной водой, а лес подходит к каменистым отмелям. Это одна из остановок при знакомстве с национальным парком Тьерра-дель-Фуэго рядом с Ушуайей. В туристических материалах встречается и название Ацигами.

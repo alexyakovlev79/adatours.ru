@@ -23,6 +23,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_mar_del_plata.md
 updatedAt: '2026-10-20'
+navigationRole: hub
 ---
 
 Мар-дель-Плата расположен на Атлантическом океане, к югу от Буэнос-Айреса. Протяженное побережье, пляжи и городские прогулки делают его подходящей остановкой после нескольких дней в сельскохозяйственных районах страны.

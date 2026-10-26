@@ -5,7 +5,7 @@ slug: puerto-limon
 status: "approved"
 name: "Пуэрто Лимон"
 countryId: "country_costa_rica"
-destinationType: "city"
+destinationType: city
 summary: "Пуэрто Лимон, центр афрокарибской культуры Коста-Рики, привлекает пляжами и карнавалом. В окрестностях можно заниматься серфингом, дайвингом и морской рыбалкой."
 searchAliases: []
 hero: {"src":"/media/destinations/puerto-limon/hero-enhanced-20261004.webp","alt":"Прибой у зеленого побережья Пуэрто-Лимона с высоты, Коста-Рика", hover: "Пуэрто-Лимон: морские волны вдоль лесистого берега"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-puehrto-limon-v-kos
 sourceSnapshot: "https://drive.google.com/file/d/1wALxP3YUjn1Xa8PwlSWJYxzg-2-u75CW/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_beach","theme_events","theme_adventure","theme_diving","theme_fishing"]
+navigationRole: hub
 ---
 
 ## Карибское побережье Коста Рики

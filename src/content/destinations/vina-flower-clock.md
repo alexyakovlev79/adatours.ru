@@ -5,7 +5,7 @@ name: Цветочные часы Винья-дель-Мар
 slug: vina-flower-clock
 status: approved
 countryId: country_chile
-destinationType: route_cluster
+destinationType: attraction
 summary: Цветочные часы относятся к самым узнаваемым остановкам Винья-дель-Мар. Клумба с часовым механизмом соединяет
   городские сады с прогулкой у тихоокеанского побережья. Здесь удобно сделать короткую остановку между другими достопримечательностями
   курорта.
@@ -21,6 +21,7 @@ searchAliases:
 - Цветочные часы Винья-дель-Мар
 sourceSnapshot: data/source-index/materials/destination_chile_vina_flower_clock.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Посещение часто входит в обзорный маршрут вместе с набережной и пляжами. Время у часов зависит от программы дня. На обложке показана прибрежная часть Винья-дель-Мар, где продолжается эта прогулка.

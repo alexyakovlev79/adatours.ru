@@ -5,7 +5,7 @@ name: "Корона Дьявола"
 slug: "devils-crown"
 status: "approved"
 countryId: "country_ecuador"
-destinationType: "natural_area"
+destinationType: natural_area
 summary: "Корона Дьявола у Флорены — остатки затопленного вулканического кратера с морскими птицами над водой и богатой подводной жизнью."
 searchAliases: []
 hero: {"src": "/media/destinations/destination_ecuador_devils_crown/hero-generated-20261010-next-ten-v1.webp", "alt": "Тёмные вулканические скалы Короны Дьявола вокруг бирюзовой воды у Флорены", "hover": "Флорена: скальный обод Короны Дьявола в океане"}
@@ -18,6 +18,7 @@ facts: []
 featureBands: []
 sourceSnapshot: "data/source-index/materials/destination_ecuador_devils_crown.md"
 updatedAt: "2026-10-10"
+navigationRole: sight
 ---
 
 У побережья Флорены из океана выступают темные зубцы Короны Дьявола. Это остатки вулканического кратера, разрушенного волнами. С лодки видны отдельные скалы и вода между ними; особенно интересно представить, как прежняя вулканическая форма постепенно стала морским пейзажем.

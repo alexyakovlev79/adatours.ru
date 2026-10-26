@@ -21,6 +21,7 @@ facts: []
 featureBands: []
 sourceSnapshot: https://drive.google.com/file/d/1lAlPZq9lDvk6DYF09CER7Djq9A_vXj4x/view
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Остров известен наземными игуанами, морскими львами и птицами. Пешеходный маршрут проходит через открытые ландшафты и выходит к утёсам с видами на океан. Морскую экскурсию на Пласа-Сур часто объединяют со снорклингом у мыса Каррион.

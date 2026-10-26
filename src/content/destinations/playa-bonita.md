@@ -5,7 +5,7 @@ name: Плайя-Бонита
 slug: playa-bonita
 status: approved
 countryId: country_argentina
-destinationType: natural_area
+destinationType: beach
 summary: Плайя-Бонита, или пляж Бонита, — прибрежная остановка в озёрном районе Барилоче. Отсюда открывается вид на остров Уемуль.
 hero:
   src: /media/destinations/playa-bonita/hero-generated-20261009-followup-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_playa_bonita.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Пляж входит в программу знакомства с окрестностями города вместе с Серро-Кампанарио и другими панорамными точками. Здесь впечатление создаёт сам озёрный пейзаж: открытая вода, берег и острова. Посещение позволяет увидеть район с уровня берега, дополняя виды с горных смотровых.

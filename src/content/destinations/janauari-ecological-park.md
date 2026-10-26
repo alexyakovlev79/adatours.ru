@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_ekologicheskij_park_zhanauari.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Экологический парк Жанауари посещают во время водных путешествий из Манауса. В программах его соединяют с поездкой к месту слияния рек и знакомством с природой Амазонии.

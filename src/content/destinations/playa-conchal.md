@@ -5,7 +5,7 @@ slug: "playa-conchal"
 status: "approved"
 name: "Плайя-Кончаль"
 countryId: "country_costa_rica"
-destinationType: "resort"
+destinationType: beach
 summary: "Плайя-Кончаль — один из самых живописных пляжей Коста-Рики, расположенный на тихоокеанском побережье провинции Гуанакасте, неподалёку от курортного городка Брасилито."
 searchAliases: ["plajya-konchal"]
 themes: ["theme_beach"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_costa_rica_plajya_konchal.md"
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Это удивительное место славится прозрачными бирюзовыми водами, пышной тропической растительностью и необычным берегом, покрытым миллионами мелких белых и розоватых ракушек вместо привычного песка.

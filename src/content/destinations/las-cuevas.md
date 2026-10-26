@@ -5,7 +5,7 @@ name: Лас-Куэвас
 slug: las-cuevas
 status: approved
 countryId: country_argentina
-destinationType: city
+destinationType: village
 summary: Лас-Куэвас, высокогорный поселок в аргентинских Андах, входит в маршрут из Мендосы к границе с Чили. Его окружают сухие горные склоны и открытые долины.
 hero:
   src: /media/destinations/las-cuevas/hero-generated-20261008.webp
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_las_kuevas.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Остановку в Лас-Куэвас соединяют с посещением Успальяты, Лос-Пенитентес и района Аконкагуа. Здесь завершается один из горных экскурсионных маршрутов из Мендосы, перед возвращением через предгорья.

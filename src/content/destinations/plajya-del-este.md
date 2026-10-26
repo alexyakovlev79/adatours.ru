@@ -5,7 +5,7 @@ slug: playas-del-este
 status: "approved"
 name: "Плайя дель Эсте"
 countryId: "country_cuba"
-destinationType: "resort"
+destinationType: beach
 summary: "Пляжи к востоку от Гаваны тянутся от Бакуранао до Гуанабо. Здесь отдыхают на белом песке под кокосовыми пальмами, купаются в прозрачной воде и любуются коралловыми рифами."
 searchAliases: []
 hero: {"src": "/media/destinations/playas-del-este/hero-enhanced-20261004.webp", "alt": "Светлый песчаный пляж и бирюзовое море под темными облаками, Куба", "hover": "Куба: широкая песчаная полоса и волны у тропического берега"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/plyazhnye-tura-na-plyazh-plajya-del-ehste-na-
 sourceSnapshot: "https://drive.google.com/file/d/1etR5ujWJe5tcffQZllL8k66kfL6Vq986/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_beach"]
+navigationRole: hub
 ---
 
 ## Плайя дель Эсте- райские пляжи!

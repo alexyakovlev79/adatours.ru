@@ -5,7 +5,7 @@ name: Кладбище поездов в Уюни
 slug: uyuni-train-cemetery
 status: approved
 countryId: country_bolivia
-destinationType: route_cluster
+destinationType: historic_site
 summary: На кладбище поездов у Уюни сохранились старые локомотивы и вагоны. Железнодорожные конструкции стоят среди
   открытого сухого ландшафта.
 hero:
@@ -19,6 +19,7 @@ searchAliases:
 - Кладбище поездов в Уюни
 sourceSnapshot: data/source-index/materials/destination_bolivia_uyuni_train_cemetery.md
 updatedAt: '2026-10-21'
+navigationRole: sight
 ---
 
 Ржавые корпуса и рельсы напоминают о транспортной и промышленной истории региона. Посещение обычно соединяют с поездкой по солончаку; в P109 эта остановка включена в день на внедорожниках по окрестностям Уюни.

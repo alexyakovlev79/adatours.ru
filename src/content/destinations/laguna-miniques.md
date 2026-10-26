@@ -5,7 +5,7 @@ slug: laguna-miniques
 status: approved
 name: Лагуна Миньикес
 countryId: country_chile
-destinationType: natural_area
+destinationType: lake
 summary: Лагуна Миньикес — высокогорное озеро Атакамы, которое посещают вместе с лагуной Мисканти.
 searchAliases:
 - Озеро Минике
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_chile_laguna_minikes.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 У лагуны Миньикес вода окружена сухим высокогорным ландшафтом. Светлые берега и вулканические склоны выделяют ее среди пустынных пейзажей Атакамы.

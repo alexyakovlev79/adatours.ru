@@ -5,7 +5,7 @@ name: Калакмуль
 slug: calakmul
 status: approved
 countryId: country_mexico
-destinationType: natural_area
+destinationType: archaeological_site
 summary: Калакмуль в Кампече, древний город майя с крупными пирамидами среди тропического леса.
 hero:
   src: /media/tours/cancun-palenque-cenot/calakmul-place-generated-20261009-v1.webp
@@ -17,6 +17,7 @@ searchAliases:
 - kalakmul
 sourceSnapshot: data/source-index/materials/destination_mexico_kalakmul.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Калакмуль был влиятельным городом майя и политическим соперником Тикаля. Его сооружения находятся в лесном окружении Кампече. Крупные пирамиды и остатки городской застройки позволяют представить размер поселения и роль монументальных построек в его жизни.

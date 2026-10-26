@@ -5,7 +5,7 @@ slug: port-lockroy
 status: approved
 name: Порт-Локрой
 countryId: country_antarctica
-destinationType: natural_area
+destinationType: historic_site
 summary: Историческая британская база с музеем и почтой в защищенной бухте у острова Винке.
 hero:
   src: /media/destinations/port-lockroy/hero-gpt-20261011-v1.webp
@@ -21,6 +21,7 @@ searchAliases:
 - Base A
 sourceSnapshot: data/source-index/materials/destination_antarctica_port_lockroy.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Порт-Локрой расположен в защищенной бухте у западного берега острова Винке. На небольшом острове Гудье стоит британская база А, основанная 11 февраля 1944 года во время операции «Табарин». В окружении ледников и снежных гор сохранились здания, в которых полярники жили и проводили атмосферные исследования до 1962 года.

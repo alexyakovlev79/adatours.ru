@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_uruguay_fraj_bentos.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 История Фрай-Бентоса тесно связана с предприятием Liebig и холодильным производством Anglo Uruguay. Сохранившийся промышленный комплекс показывает, как работа завода повлияла на город и весь регион.

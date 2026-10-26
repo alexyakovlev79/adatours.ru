@@ -43,6 +43,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-na-ostrov-kej-kolker-v-beliz
 sourceSnapshot: https://drive.google.com/file/d/1Wke3_TOU7uf8RsTEV2vk3C4Q-3aZfwlZ/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_beach","theme_diving"]
+navigationRole: hub
 ---
 
 Это небольшой коралловый остров в Карибском море недалеко от берега Белиза, примерно в 15 км от Белиз-Сити. Экзотика тропических джунглей, необычайно замысловатые пещеры, переходящие в гроты, качественный сервис, великолепная кухня весьма привлекательны для безмятежного отдыха.

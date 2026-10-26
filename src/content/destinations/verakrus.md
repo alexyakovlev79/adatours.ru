@@ -5,7 +5,7 @@ slug: veracruz
 status: "approved"
 name: "Веракрус"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Портовый город на берегу Мексиканского залива известен историческим центром, кофейнями и карнавалом. У порта можно заглянуть в старинное Gran Cafe del Portal."
 searchAliases: []
 hero: {"src":"/media/destinations/veracruz/hero-enhanced-20261004.webp","alt":"Рыбацкие лодки у каменного причала в Веракрусе, Мексика", hover: "Веракрус: небольшие лодки у морского причала"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-verakrus-v-meksike"
 sourceSnapshot: "https://drive.google.com/file/d/1H5uvbcgPflFGa1ykuy6GHIm0vvMN0Mgo/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture","theme_events","theme_gastronomy_wine"]
+navigationRole: hub
 ---
 
 ## Веракрус - портовый город Мексики

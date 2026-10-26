@@ -5,7 +5,7 @@ slug: cachi
 status: approved
 name: Качи
 countryId: country_argentina
-destinationType: city
+destinationType: town
 summary: Белые дома, мощеные улицы и церковь Сан-Хосе в историческом поселке Качи среди гор долины Кальчаки.
 hero:
   src: /media/destinations/cachi/hero-generated-20261021-dedup50-v1.webp
@@ -17,6 +17,7 @@ themes:
 searchAliases: []
 sourceSnapshot: data/source-index/materials/destination_argentina_cachi.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Качи находится в долине Кальчаки, в провинции Сальта, на высоте 2210 метров. Белые дома из самана стоят вдоль мощеных улиц, за которыми поднимаются сухие горные склоны. Исторический центр сохранил небольшой масштаб и неспешный ритм: здесь приятно пройти пешком от тихих переулков к главной площади.

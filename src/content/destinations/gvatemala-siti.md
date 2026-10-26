@@ -39,6 +39,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-gvatemala-siti-stol
 sourceSnapshot: "https://drive.google.com/file/d/1W5cRUODYUcD8HkzEJWl7LyxZxYVuth26/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ### Гватемала-Сити- визитная карточка Гватемалы!

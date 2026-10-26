@@ -5,7 +5,7 @@ name: Эль-Чалтен
 slug: el-chalten
 status: approved
 countryId: country_argentina
-destinationType: city
+destinationType: town
 summary: Эль-Чалтен в аргентинской Патагонии привлекает путешественников пешими маршрутами и видами на горные вершины. В окрестностях поселка проходят тропы к панорамам Фицроя.
 searchAliases:
 - El Chaltén
@@ -23,6 +23,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_el_chalten.md
 updatedAt: '2026-10-08'
+navigationRole: hub
 ---
 На краю света, среди бескрайних патагонских просторов, находится Эль-Чальтен — небольшой горный городок, который часто называют национальной столицей треккинга Аргентины. Здесь дороги буквально заканчиваются у подножия гор, а главным ориентиром становится силуэт величественного Фицроя, возвышающегося над долиной.
 

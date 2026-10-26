@@ -5,7 +5,7 @@ slug: cuernavaca-cathedral
 status: approved
 name: Кафедральный собор Куэрнаваки
 countryId: country_mexico
-destinationType: route_cluster
+destinationType: religious_site
 summary: Собор Успения в Куэрнаваке вырос из францисканского монастыря XVI века и входит в объект Всемирного наследия
   ЮНЕСКО.
 hero:
@@ -18,6 +18,7 @@ themes:
 - theme_culture
 sourceSnapshot: data/source-index/materials/destination_mexico_cuernavaca_cathedral.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Соборный комплекс Куэрнаваки сохраняет память о францисканском монастыре XVI века. Его территория помогает увидеть раннюю церковную архитектуру Морелоса, от открытого атриума до здания бывшей монастырской церкви.

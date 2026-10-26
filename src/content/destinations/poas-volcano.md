@@ -5,7 +5,7 @@ name: Вулкан Поас
 slug: poas-volcano
 status: approved
 countryId: country_costa_rica
-destinationType: city
+destinationType: volcano
 summary: Вулкан Поас в Коста-Рике известен большим кратером, сернистыми фумаролами и сменой растительности на горных склонах.
 hero:
   src: /media/tours/zhemchuzhiny-kosta-riki-za-10-dnej/poas-crater-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - vulkan-poas
 sourceSnapshot: data/source-index/materials/destination_costa_rica_vulkan_poas.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Вокруг вулкана Поас в Коста-Рике создан национальный парк. Главной природной достопримечательностью стал кратер с сернистыми фумаролами. Вулканический пейзаж позволяет увидеть процессы, которые продолжают формировать поверхность земли, и рассмотреть горные участки, заметно отличающиеся от низинного тропического леса.

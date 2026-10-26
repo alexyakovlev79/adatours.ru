@@ -16,6 +16,7 @@ themes:
 - theme_diving
 sourceSnapshot: data/source-index/materials/destination_ecuador_gordon_rocks.md
 updatedAt: '2026-10-10'
+navigationRole: sight
 ---
 
 Скалы Гордон-Рокс находятся у Санта-Крус. Под водой здесь открывается пространство, где встречаются акулы-молоты, галапагосские и белоперые рифовые акулы, мобулы, черепахи и скаты-орляки. Наблюдение за ними зависит от условий в океане.

@@ -5,7 +5,7 @@ name: Перевал Ла-Рая
 slug: la-raya-pass
 status: approved
 countryId: country_peru
-destinationType: natural_area
+destinationType: other_landmark
 summary: Высокогорный перевал на маршруте Куско — Пуно с открытыми пастбищами и видами на андские хребты.
 hero:
   src: "/media/destinations/la-raya-pass/hero-generated-20261021-dedup-third50-v1.webp"
@@ -15,6 +15,7 @@ themes:
 - theme_adventure
 sourceSnapshot: data/source-index/materials/destination_peru_pereval_la_raya.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Перевал Ла-Рая расположен на дороге между Куско и Пуно и отмечает переход между двумя регионами. Здесь маршрут выходит в открытый высокогорный ландшафт: пастбища, широкая долина и горные хребты формируют панораму андского плато.

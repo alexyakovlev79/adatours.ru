@@ -5,7 +5,7 @@ name: Река Суринам
 slug: suriname-river
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: river
 summary: Река Суринам связывает столицу с лесными районами в глубине страны. Поездки по воде позволяют увидеть прибрежные
   поселения, тропическую растительность и жизнь на реке.
 hero:
@@ -21,6 +21,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_reka_surinam.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Поездки по воде позволяют увидеть прибрежные поселения, тропическую растительность и жизнь на реке.

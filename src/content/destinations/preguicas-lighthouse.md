@@ -5,7 +5,7 @@ slug: preguicas-lighthouse
 status: approved
 name: Маяк Пергула
 countryId: country_brazil
-destinationType: natural_area
+destinationType: building
 summary: Маяк Прегисас в Мандакару входит в речные маршруты из Баррейриньяса.
 searchAliases:
 - mayak-pergula
@@ -23,6 +23,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_brazil_mayak_pergula.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Маяк Прегисас находится в поселении Мандакару в штате Мараньян. В программе тура он обозначен как «Маяк Пергула».

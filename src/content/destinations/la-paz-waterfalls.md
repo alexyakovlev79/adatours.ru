@@ -5,7 +5,7 @@ name: Водопады Ла-Пас
 slug: la-paz-waterfalls
 status: approved
 countryId: country_costa_rica
-destinationType: natural_area
+destinationType: waterfall
 summary: Водопады Ла-Пас в Коста-Рике, каскады среди влажного горного леса с прогулочными тропами и природным парком.
 hero:
   src: /media/tours/3-vzglyada-na-kosta-riku/la-paz-waterfall-place-generated-20261009-v1.webp
@@ -18,6 +18,7 @@ searchAliases:
 - vodopady-la-pas
 sourceSnapshot: data/source-index/materials/destination_costa_rica_vodopady_la_pas.md
 updatedAt: '2026-10-09'
+navigationRole: sight
 ---
 
 Водопады Ла-Пас расположены на одноименной реке в Коста-Рике. В природном парке La Paz Waterfall Gardens тропы проходят через влажный лес и выводят к 5 водопадам. Ступени и смотровые точки позволяют увидеть каскады с разных сторон, проследить движение воды и рассмотреть растительность у русла.

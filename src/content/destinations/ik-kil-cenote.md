@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_mexico_senot_ik_kil.md
 updatedAt: '2026-10-08'
+navigationRole: sight
 ---
 
 Ик-Киль, сенот на полуострове Юкатан, входит в экскурсионный маршрут к Чичен-Ице. Остановка у водоема позволяет после осмотра археологического комплекса познакомиться с другой стороной мексиканского ландшафта.

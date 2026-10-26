@@ -17,6 +17,7 @@ searchAliases:
 - nacionalnyj-park-soberania
 sourceSnapshot: data/source-index/materials/destination_panama_nacionalnyj_park_soberania.md
 updatedAt: '2026-10-09'
+navigationRole: hub
 ---
 
 Собераниа находится рядом с Панамским каналом и сохраняет тропические лесные территории. В этой части страны природа особенно близко соседствует с инженерным маршрутом между океанами. Лесные прогулки раскрывают растительность и позволяют наблюдать за птицами.

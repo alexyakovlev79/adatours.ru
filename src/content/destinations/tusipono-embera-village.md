@@ -5,7 +5,7 @@ slug: tusipono-embera-village
 status: approved
 name: Тусипоно — деревня эмбера
 countryId: country_panama
-destinationType: route_cluster
+destinationType: village
 summary: Община эмбера в бассейне реки Чагрес. Знакомство с местными жителями проходит через музыку, танцы и традиционные
   ремесла.
 hero:
@@ -22,6 +22,7 @@ searchAliases:
 - Тусипоно
 sourceSnapshot: data/source-index/materials/destination_panama_tusipono_embera_village.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Тусипоно — одна из общин эмбера в бассейне реки Чагрес, в Панаме. Речной путь связывает посещение деревни с окружающим тропическим лесом.

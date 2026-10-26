@@ -5,7 +5,7 @@ slug: lake-titicaca-bolivia
 status: approved
 name: Озеро Титикака (Боливия)
 countryId: country_bolivia
-destinationType: natural_area
+destinationType: lake
 summary: Боливийская часть озера Титикака входит в маршруты через Копакабану и остров Солнца.
 searchAliases:
 - ozero-titikaka-boliviya
@@ -22,6 +22,7 @@ featureBands: []
 facts: []
 sourceSnapshot: data/source-index/materials/destination_bolivia_ozero_titikaka_boliviya.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Боливийский берег озера Титикака посещают во время путешествия из Ла-Паса через Альтиплано. Наземный маршрут ведет к Копакабане, откуда на лодке отправляются к острову Солнца.

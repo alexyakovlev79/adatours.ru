@@ -5,7 +5,7 @@ slug: mexico-city-and-teotihuacan
 status: "approved"
 name: "Мехико Сити (руины Теотихуакана)"
 countryId: "country_mexico"
-destinationType: "route_cluster"
+destinationType: route_cluster
 summary: "Мехико знакомит с музеями, Национальным дворцом и наследием ацтеков. В 50 км от столицы находятся руины Теотиуакана, а в окрестностях можно увидеть вулканы и места зимовки бабочек."
 searchAliases: []
 hero: {"src":/media/countries/mexico/block-063-generated-20261011-dedup-v1.webp,"alt":"На фото: столица, город Мехико Сити в Мексике"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-stolicu-mekhiko-siti-v-me
 sourceSnapshot: "https://drive.google.com/file/d/1GvrAEiziITM3-7ETCYTA3yNxXI1-T81X/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture", "theme_wildlife", "theme_nature"]
+navigationRole: hub
 ---
 
 ## Мехико — город контрастов!

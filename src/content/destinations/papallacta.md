@@ -5,7 +5,7 @@ name: Папаякта
 slug: papallacta
 status: approved
 countryId: country_ecuador
-destinationType: natural_area
+destinationType: resort
 summary: Папаякта известна термальными источниками в горном районе к востоку от Кито. Остановка здесь соединяет отдых у тёплой воды и пейзажи влажных андских склонов.
 hero:
   src: /media/destinations/papallacta/hero-generated-20261009-root-v1.webp
@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_papayakta.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Остановка здесь соединяет отдых у тёплой воды и пейзажи влажных андских склонов.

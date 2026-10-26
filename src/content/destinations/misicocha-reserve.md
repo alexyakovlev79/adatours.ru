@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_ecuador_zapovednik_misikocha.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Прогулка здесь показывает растительность и природную среду эквадорской Амазонии.

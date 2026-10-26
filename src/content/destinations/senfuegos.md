@@ -5,7 +5,7 @@ slug: cienfuegos
 status: "approved"
 name: "Сьенфуэгос"
 countryId: "country_cuba"
-destinationType: "city"
+destinationType: city
 summary: "Сьенфуэгос расположен на берегу Карибского моря. Город с классическими фасадами, тонкими колоннами и парком Хосе Марти входит в список Всемирного наследия ЮНЕСКО."
 searchAliases: []
 hero: {"src":"/media/destinations/cienfuegos/hero-enhanced-20261004.webp","alt":"Купола и городские крыши Сьенфуэгоса на закате, Куба", hover: "Сьенфуэгос: вечернее солнце за башнями и красными крышами"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-senfuehgos-na-ostro
 sourceSnapshot: "https://drive.google.com/file/d/17neQ1EXs6YQVuLpQ6pC0jmrdzZS_nAAV/view?usp=drivesdk"
 updatedAt: "2026-10-02"
 themes: ["theme_culture"]
+navigationRole: hub
 ---
 
 ## Сьенфуэгос - “Жемчужина юга Кубы”

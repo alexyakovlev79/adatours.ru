@@ -28,6 +28,7 @@ sourceUrl: https://brasiltours.ru/ehkskursii-i-tury-v-okrug-kajo-i-ruiny-shunant
 sourceSnapshot: https://drive.google.com/file/d/19XwJ1xcXSBjGpO9z8eoelM8Lm5bhOtrn/view?usp=drivesdk
 updatedAt: '2026-10-02'
 themes: ["theme_wildlife", "theme_adventure", "theme_nature"]
+navigationRole: hub
 ---
 
 На территории курорта Кайо находятся прекрасные природные достопримечательности – бабуиновый обезьяний заповедник, ягуаровый заповедник, джунгли, тропические леса, водопады, зоопарк, пещеры с подземными реками.

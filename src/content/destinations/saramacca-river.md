@@ -5,7 +5,7 @@ slug: "saramacca-river"
 status: "approved"
 name: "Река Сарамакка"
 countryId: "country_suriname"
-destinationType: "natural_area"
+destinationType: river
 summary: "Река Сарамакка — одна из заметных водных артерий Суринама, протекающая через живописные тропические ландшафты северной части страны."
 searchAliases: ["reka-saramakka"]
 themes: ["theme_nature"]
@@ -18,6 +18,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: "data/source-index/materials/destination_suriname_reka_saramakka.md"
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 Беря начало во внутренних районах, покрытых густыми лесами, она направляется к Атлантическому побережью, формируя природные пространства, тесно связанные с жизнью местных общин.

@@ -5,7 +5,7 @@ name: Плантация Бакки
 slug: bakkie-plantation
 status: approved
 countryId: country_suriname
-destinationType: natural_area
+destinationType: historic_site
 summary: Бакки — поселение в районе старых плантаций Суринама. Его посещение связывает историю сельского хозяйства с прогулками
   по прибрежным водным путям и мангровым зарослям.
 hero:
@@ -22,6 +22,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_suriname_plantaciya_bakki.md
 updatedAt: '2026-10-11'
+navigationRole: sight
 ---
 
 Его посещение связывает историю сельского хозяйства с прогулками по прибрежным водным путям и мангровым зарослям.

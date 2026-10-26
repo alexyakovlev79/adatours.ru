@@ -22,6 +22,7 @@ facts: []
 featureBands: []
 sourceSnapshot: data/source-index/materials/destination_argentina_necochea.md
 updatedAt: '2026-10-21'
+navigationRole: hub
 ---
 
 Некочеа находится на Атлантическом побережье провинции Буэнос-Айрес. Для путешественника это морское направление, а для аграрной делегации — возможность рассмотреть связь сельскохозяйственной пампы и экспортной логистики.

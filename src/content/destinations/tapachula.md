@@ -5,7 +5,7 @@ slug: tapachula
 status: "approved"
 name: "Тапачула"
 countryId: "country_mexico"
-destinationType: "city"
+destinationType: city
 summary: "Торговый город, связанный с Соконуско и Гватемалой. История переселенцев отражается в архитектуре Тапачулы, ее ресторанах и фестивалях."
 searchAliases: []
 hero: {"src": "/media/destinations/tapachula/hero-enhanced-20261004.webp", "alt": "Деревянная дверь, кактусы и горшечные растения у желтой стены мексиканского дома", "hover": "Мексика: ярко-желтый фасад с дверью и высокими кактусами"}
@@ -19,6 +19,7 @@ sourceUrl: "https://brasiltours.ru/ehkskursii-i-tury-v-gorod-tapachula-v-meksike
 sourceSnapshot: "https://drive.google.com/file/d/1KkRjYQ5VduvoVuQThgtT9BimdECmPKMk/view?usp=drivesdk"
 updatedAt: '2026-10-11'
 themes: ["theme_culture","theme_events"]
+navigationRole: hub
 ---
 
 ## Тапачула - культурный центр Мексики!

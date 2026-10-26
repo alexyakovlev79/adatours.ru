@@ -20,6 +20,7 @@ featuredTours: []
 featuredExcursions: []
 sourceSnapshot: data/source-index/materials/destination_argentina_kanal_bigl.md
 updatedAt: '2026-10-11'
+navigationRole: hub
 ---
 
 На прогулках из туристического порта Ушуайи посещают район острова Лос-Лобос и маяка Ле-Эклер. По пути можно наблюдать бакланов и другие виды морских птиц. Маршрут и выход судна зависят от погодных условий.

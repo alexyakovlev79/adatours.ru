@@ -28,11 +28,15 @@ for (const row of rows.filter((item) => item.themeId)) {
     assert.ok(html.includes(row.theme.name), 'Interest name: ' + path);
     const picker = html.match(/<section\b[^>]*data-multi-country-picker[^>]*>[\s\S]*?<\/section>/)?.[0];
     assert.ok(picker, 'Country + interest selector: ' + path);
-    assert.ok(picker.indexOf('data-mc-select=') < picker.indexOf('data-filter-context="multi-country"'));
-    assert.ok(picker.indexOf('data-filter-context="multi-country"') < picker.indexOf('data-mc-reset'));
+    assert.ok(picker.indexOf('data-mc-select=') < picker.indexOf('data-mc-interest-select'));
+    assert.ok(picker.indexOf('data-mc-interest-select') < picker.indexOf('data-mc-reset'));
+    assert.ok(picker.includes('data-mc-interest-reset'), 'Interest reset option exists');
     assert.ok(!picker.includes('data-tour-vip-toggle'), 'No VIP toggle: ' + path);
     assert.ok(picker.includes('href="' + multiCountryCatalogPath(row.slugs) + '"'), 'Interest reset preserves countries');
-    for (const option of p.interests) assert.ok(picker.includes('href="' + option.href + '"'), 'Interest link: ' + option.href);
+    for (const option of p.interests) {
+      assert.ok(picker.includes('href="' + option.href + '"'), 'No-JS interest link: ' + option.href);
+      assert.ok(picker.includes('data-href="' + option.href + '"'), 'Native interest destination: ' + option.href);
+    }
     const found = [...html.matchAll(/data-catalog-item="([^"]+)"/g)].map((match) => match[1]);
     assert.deepEqual(found, row.tours.slice((page - 1) * CATALOG_PAGE_SIZE, page * CATALOG_PAGE_SIZE).map((entry) => entry.data.id));
     ids.push(...found); checked++;

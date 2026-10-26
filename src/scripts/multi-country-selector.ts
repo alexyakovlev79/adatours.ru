@@ -12,7 +12,10 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   const currentRootHref = picker.dataset.currentRootHref ?? rootHref;
   const rootPath = new URL(currentRootHref, window.location.origin).pathname;
   const interestOptions = JSON.parse(picker.dataset.interestOptions ?? '[]') as Array<{ id: string; countries: string[] }>;
-  const interestMenu = picker.querySelector<HTMLElement>('[data-filter-context="multi-country"]');
+  const interestSelect = picker.querySelector<HTMLSelectElement>('[data-mc-interest-select]');
+  const interestPlaceholder = interestSelect?.querySelector<HTMLOptionElement>('[data-mc-interest-placeholder]');
+  const interestReset = interestSelect?.querySelector<HTMLOptionElement>('[data-mc-interest-reset]');
+  const interestChoices = [...(interestSelect?.querySelectorAll<HTMLOptionElement>('[data-filter-option]') ?? [])];
   const fields = [...picker.querySelectorAll<HTMLElement>('[data-mc-field]')];
   const selects = [...picker.querySelectorAll<HTMLSelectElement>('[data-mc-select]')];
   const removeButtons = [...picker.querySelectorAll<HTMLButtonElement>('[data-mc-remove]')];
@@ -69,12 +72,19 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   };
 
   const render = () => {
-    // Before a pair has been completed, show only interests that can include
-    // the first country. Counts continue to describe each destination catalogue.
-    interestMenu?.querySelectorAll<HTMLElement>('[data-filter-option]').forEach((item) => {
-      const option = interestOptions.find((row) => row.id === item.dataset.filterOption);
-      item.hidden = selected.length === 1 && !option?.countries.includes(selected[0]);
-    });
+    // Restore only the interests applicable to a temporary first-country choice.
+    // Rebuild the native option list because Firefox may ignore option[hidden].
+    if (interestSelect && interestPlaceholder && interestReset) {
+      const choices = interestChoices.filter((item) => {
+        const option = interestOptions.find((row) => row.id === item.dataset.filterOption);
+        return selected.length !== 1 || Boolean(option?.countries.includes(selected[0]));
+      });
+      interestSelect.replaceChildren(interestPlaceholder, interestReset, ...choices);
+      interestSelect.value = interestChoices.find((option) => option.defaultSelected)?.value ?? '';
+      // Preserve the exact stable ID of the currently selected theme.
+      if (interestSelect.value === 'all') interestSelect.value = '';
+      interestSelect.classList.toggle('mc-picker__select--placeholder', !interestSelect.value);
+    }
     const reset = picker.querySelector<HTMLElement>('[data-mc-reset]');
     if (reset) reset.hidden = !selected.length && !theme;
     for (let index = 0; index < selects.length; index++) {
@@ -159,13 +169,20 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
     });
   });
 
-  interestMenu?.addEventListener('click', (event) => {
-    const link = event.target instanceof Element ? event.target.closest('a') : null;
-    if (!link || event instanceof MouseEvent && (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey)) return;
+  interestSelect?.addEventListener('change', () => {
+    const href = interestSelect.selectedOptions[0]?.dataset.href;
+    if (!href) return;
     try {
       if (selected.length === 1) window.sessionStorage.setItem(firstCountryState, selected[0]);
-      window.sessionStorage.setItem(pickerScrollState, '1');
-    } catch { /* Ordinary links work without storage or JavaScript. */ }
+    } catch { /* Optional ephemeral first-country persistence. */ }
+    const destination = new URL(href, window.location.origin);
+    if (window.location.pathname !== destination.pathname) {
+      navigateKeepingPicker(destination);
+    } else {
+      // Selecting "Все интересы" on an already unfiltered page is a no-op.
+      interestSelect.value = interestChoices.find((option) => option.defaultSelected)?.value ?? '';
+      interestSelect.classList.toggle('mc-picker__select--placeholder', !interestSelect.value);
+    }
   });
 
   picker.querySelector<HTMLAnchorElement>('[data-mc-reset]')?.addEventListener('click', () => {

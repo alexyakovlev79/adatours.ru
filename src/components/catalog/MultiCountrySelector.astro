@@ -4,7 +4,6 @@ import { nextMultiCountryOptions } from '../../lib/multi-country-combinations.mj
 
 import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
 import { multiCountryPickerOptions, multiCountryCatalogPath } from '../../lib/multi-country-catalog.mjs';
-import CatalogFilterMenu from './CatalogFilterMenu.astro';
 
 interface CountryOption { slug: string; name: string; }
 interface Props { selected?: string[]; themeId?: string; }
@@ -75,9 +74,37 @@ const descriptions = ['Первая страна', 'Вторая страна', 
       </div>
     ))}
   </div>
-  <div class="mc-picker__interest">
-    <CatalogFilterMenu label="Интерес" placeholder="Выбрать интерес" selected={themeId}
-      options={interests} reset="Все интересы" resetHref={allInterestsHref} context="multi-country" />
+  <div class="mc-picker__interest" data-filter-context="multi-country">
+    <label class="mc-picker__interest-label" for="mc-interest">Интерес</label>
+    <div class="mc-picker__select-wrap">
+      <select
+        id="mc-interest"
+        class:list={{ 'mc-picker__select--placeholder': !themeId }}
+        data-mc-interest-select
+        autocomplete="off"
+      >
+        <option value="" disabled selected={!themeId} data-mc-interest-placeholder>Выбрать интерес</option>
+        <option value="all" data-href={withBase(allInterestsHref)} data-mc-interest-reset>Все интересы</option>
+        {interests.map((interest) => (
+          <option
+            value={interest.id}
+            selected={interest.id === themeId}
+            data-filter-option={interest.id}
+            data-href={withBase(interest.href)}
+          >{interest.label}</option>
+        ))}
+      </select>
+      <span class="mc-picker__placeholder-text" aria-hidden="true">Выбрать интерес</span>
+      <svg class="mc-picker__select-arrow" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+        <path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
+      </svg>
+    </div>
+    <noscript>
+      <nav class="mc-picker__interest-fallback" aria-label="Подобрать по интересу">
+        <a href={withBase(allInterestsHref)}>Все интересы</a>
+        {interests.map((interest) => <a href={withBase(interest.href)}>{interest.label}</a>)}
+      </nav>
+    </noscript>
   </div>
     <a class="mc-picker__reset" href={withBase('/multi-country/')} data-mc-reset hidden={!selected.length && !themeId}>
       <span>Сбросить и показать</span>
@@ -92,7 +119,17 @@ const descriptions = ['Первая страна', 'Вторая страна', 
 
 <style>
   .mc-picker { padding-block: 0 38px; scroll-margin-top: 100px; }
-  .mc-picker__interest { width: min(100%, 560px); margin-top: 24px; }
+  .mc-picker__interest { width: min(100%, 340px); margin-top: 24px; }
+  .mc-picker__interest-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: .78rem;
+    line-height: 1.5;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+  .mc-picker__interest-fallback { display: grid; gap: 12px; padding-block: 14px; }
+  .mc-picker__interest-fallback a { color: var(--color-ink); text-decoration: underline; }
   .mc-picker__reset[hidden] { display: none; }
   .mc-picker__intro { max-width: 700px; }
   .mc-picker__intro .eyebrow { margin-bottom: 8px; }
@@ -144,7 +181,8 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     pointer-events: none;
     color: var(--color-ink);
   }
-  .mc-picker__field select {
+  .mc-picker__field select,
+  .mc-picker__interest select {
     display: block;
     width: 100%;
     min-width: 0;
@@ -181,14 +219,21 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     text-overflow: ellipsis;
     pointer-events: none;
   }
-  .mc-picker__field select.mc-picker__select--placeholder + .mc-picker__placeholder-text {
+  .mc-picker__field select.mc-picker__select--placeholder + .mc-picker__placeholder-text,
+  .mc-picker__interest select.mc-picker__select--placeholder + .mc-picker__placeholder-text {
     display: block;
   }
-  .mc-picker__field select option { color: var(--color-ink); }
-  .mc-picker__field select option[value=""]:disabled {
+  .mc-picker__field select option,
+  .mc-picker__interest select option { color: var(--color-ink); }
+  .mc-picker__field select option[value=""]:disabled,
+  .mc-picker__interest select option[value=""]:disabled {
     color: color-mix(in srgb, var(--color-ink) 42%, var(--color-bg));
   }
-  .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
+  .mc-picker__field select:focus-visible,
+  .mc-picker__interest select:focus-visible {
+    outline: 2px solid var(--color-gold-deep);
+    outline-offset: 3px;
+  }
   .mc-picker__remove {
     display: flex;
     flex: 0 0 44px;
@@ -237,7 +282,8 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   .mc-picker__reset:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }
   @media (max-width: 600px) {
     .mc-picker { padding-bottom: 30px; }
-    .mc-picker__field select { font-size: 1rem; }
+    .mc-picker__field select,
+    .mc-picker__interest select { font-size: 1rem; }
     .mc-picker__placeholder-text { font-size: 1rem; }
     .mc-picker__reset { width: min(100%, 480px); font-size: .9rem; }
   }

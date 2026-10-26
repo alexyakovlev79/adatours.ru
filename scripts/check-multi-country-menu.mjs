@@ -47,6 +47,12 @@ assert.ok(!/data-mc-pair-link|data-mc-extended-link|data-mc-alternative-link/.te
   'All combination link collections must be moved into the header');
 assert.ok(!picker.includes('>Выберите страну</option>'), 'Selector placeholder must name the country position');
 assert.ok(picker.includes('>Первая страна</option>'), 'First dropdown must have an ordinal placeholder');
+const interests = picker.match(/<select\\b[^>]*data-mc-interest-select[^>]*>[\\s\\S]*?<\\/select>/)?.[0];
+assert.ok(interests, 'Interest control must be a native select like country controls');
+assert.match(interests, /<option[^>]*value=""[^>]*disabled[^>]*>Выбрать интерес<\\/option>/,
+  'Interest placeholder must be disabled and muted in Firefox dropdown');
+assert.ok(interests.includes('data-mc-interest-reset'), 'Reset interest must stay available');
+assert.ok(picker.includes('mc-picker__interest-fallback'), 'Interest links must remain usable without JavaScript');
 for (const label of ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна']) {
   assert.match(picker, new RegExp('<option[^>]*value=""[^>]*\\bdisabled\\b[^>]*>' + label + '</option>'),
     'Native popup placeholder must be disabled and therefore muted: ' + label);

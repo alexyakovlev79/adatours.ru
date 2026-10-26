@@ -152,13 +152,22 @@ test('same source content gives reproducible graph and registry fingerprints ind
   assert.deepEqual(two, one);
 });
 
-test('ordinary and multi-country filters render exactly the same shared menu component, without a VIP checkbox in multi-country', () => {
+test('multi-country uses matching native country and interest selectors without changing ordinary filters', () => {
   const ordinary = readFileSync('src/components/catalog/TourFilters.astro', 'utf8');
   const multi = readFileSync('src/components/catalog/MultiCountrySelector.astro', 'utf8');
-  assert.ok(ordinary.includes('<CatalogFilterMenu'));
-  assert.ok(multi.includes('<CatalogFilterMenu'));
-  assert.ok(multi.indexOf('data-mc-select=') < multi.indexOf('<CatalogFilterMenu'));
-  assert.ok(multi.indexOf('<CatalogFilterMenu') < multi.indexOf('data-mc-reset'));
+  const client = readFileSync('src/scripts/multi-country-selector.ts', 'utf8');
+  assert.ok(ordinary.includes('<CatalogFilterMenu'), 'Ordinary catalogue menu stays unchanged');
+  assert.ok(!multi.includes('<CatalogFilterMenu'), 'Multi-country interest should not use a separate details popup');
+  assert.ok(multi.includes('data-mc-interest-select'), 'Interest is a native dropdown');
+  assert.ok(multi.indexOf('data-mc-select=') < multi.indexOf('data-mc-interest-select'));
+  assert.ok(multi.indexOf('data-mc-interest-select') < multi.indexOf('data-mc-reset'));
+  assert.ok(multi.includes('<option value="" disabled selected={!themeId} data-mc-interest-placeholder>'));
+  assert.ok(multi.includes('data-mc-interest-reset'), 'Can reset just interest');
+  assert.ok(multi.includes('mc-picker__interest-fallback'), 'Preserve crawlable navigation without JavaScript');
+  assert.ok(multi.includes('.mc-picker__field select,\n  .mc-picker__interest select'), 'Share exact same visual select CSS');
+  assert.ok(client.includes('interestSelect?.addEventListener(\'change\''), 'Native dropdown navigates');
+  assert.ok(client.includes('sessionStorage.setItem(firstCountryState, selected[0])'), 'Keep first country during interest changes');
+  assert.ok(client.includes('interestSelect.replaceChildren(interestPlaceholder, interestReset, ...choices)'), 'Re-filter native options');
   assert.ok(!multi.includes('data-tour-vip-toggle'));
 });
 

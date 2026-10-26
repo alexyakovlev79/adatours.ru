@@ -25,6 +25,16 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: 24
+      - name: Reject unknown issue authors before installing dependencies
+        env:
+          EDITOR_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          node --input-type=module -e "
+            import fs from 'node:fs';
+            const cfg=JSON.parse(fs.readFileSync('data/editorial/authorized-users.json','utf8'));
+            if(!Array.isArray(cfg.allowedGithubLogins)||!cfg.allowedGithubLogins.includes(process.env.EDITOR_ISSUE_AUTHOR))
+              throw Error('ADA_EDITOR_REJECTED: actor is not authorized');
+          "
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
       - name: Validate issue author, exact SHA and allowed content fields

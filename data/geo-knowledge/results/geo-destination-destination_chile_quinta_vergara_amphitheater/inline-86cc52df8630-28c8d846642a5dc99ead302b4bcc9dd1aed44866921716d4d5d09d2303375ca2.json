@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "jobId": "geo-destination-destination_chile_quinta_vergara_amphitheater",
+  "stableId": "destination_chile_quinta_vergara_amphitheater",
+  "kind": "destination",
+  "canonicalPath": "/chile/place/quinta-vergara-amphitheater/",
+  "sourceFingerprint": "bb60ab88703f5e218d84f881e3f5bcd8a25e3b633dd46abad9d1335253a5f3e3",
+  "status": "READY",
+  "decisionPolicy": "probability-70-v1",
+  "identityScope": "single",
+  "confidence": "high",
+  "external": {},
+  "relationships": [
+    {
+      "type": "containedInPlace",
+      "targetId": "country_chile"
+    }
+  ],
+  "evidence": [
+    {
+      "field": "identity",
+      "sourceUrl": "https://chile.travel/atractivos/quinta-vergara/",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Точное самостоятельное место и страна сверены с официальным источником, утверждённым резервом и текущим MD."
+    },
+    {
+      "field": "entityClass",
+      "sourceUrl": "https://chile.travel/atractivos/quinta-vergara/",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Независимые тип и навигационная роль сохранены из утверждённого каталога; текст описывает тот же объект."
+    },
+    {
+      "field": "relationships.country_chile",
+      "sourceUrl": "https://chile.travel/atractivos/quinta-vergara/",
+      "checkedAt": "2026-10-26T21:54:55.097Z",
+      "note": "Географическая связь проверена по источнику и каноническим ID."
+    }
+  ],
+  "assessments": [
+    {
+      "field": "identity",
+      "probability": 99,
+      "selected": "Амфитеатр Кинта-Вергара",
+      "reason": "Точное самостоятельное место и страна сверены с официальным источником, утверждённым резервом и текущим MD."
+    },
+    {
+      "field": "entityClass",
+      "probability": 99,
+      "selected": "other_landmark",
+      "reason": "Класс соответствует реальному объекту и закрытому справочнику сайта."
+    },
+    {
+      "field": "relationships.country_chile",
+      "probability": 99,
+      "selected": "country_chile",
+      "reason": "Связь прямо подтверждена текущим источником."
+    }
+  ],
+  "reviewNote": "Паспорт текущей редакции P172. Координаты и непроверенные внешние ID не добавлены; отсутствие этих полей не мешает подтверждённой идентичности. Не является заявлением об уже выполненной публикации.",
+  "entityClass": "other_landmark"
+}

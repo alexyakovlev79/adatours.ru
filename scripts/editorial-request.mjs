@@ -116,7 +116,7 @@ function resolveEditorialEntry(root,type,id){
  const dir=path.join(root,'src/content/themes');
  const found=[];
  for(const item of fs.readdirSync(dir,{withFileTypes:true})){
-   if(!item.isFile()||!/^[A-Za-z0-9_.-]+\\.md$/u.test(item.name))continue;
+   if(!item.isFile()||!/^[A-Za-z0-9_.-]+\.md$/u.test(item.name))continue;
    const raw=fs.readFileSync(path.join(dir,item.name),'utf8');
    let frontmatter;
    try{frontmatter=yaml.load(splitContent(raw).fm,{json:false});}catch{continue;}

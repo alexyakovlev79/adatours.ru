@@ -83,7 +83,11 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
         : selected[index - 1] ? compatible(selected.slice(0, index)) : [];
       const select = selects[index];
       const value = selected[index] ?? '';
-      select.replaceChildren(new Option(placeholders[index], ''));
+      // Native popup option colors are not reliable (notably in Firefox).
+      // Disabled placeholder renders muted; × and Reset retain clearing.
+      const placeholderOption = new Option(placeholders[index], '', !value, !value);
+      placeholderOption.disabled = true;
+      select.replaceChildren(placeholderOption);
       for (const country of options) select.add(new Option(country.name, country.slug));
       if (value && options.some((country) => country.slug === value)) {
         select.value = value;

@@ -47,6 +47,22 @@ assert.ok(!/data-mc-pair-link|data-mc-extended-link|data-mc-alternative-link/.te
   'All combination link collections must be moved into the header');
 assert.ok(!picker.includes('>Выберите страну</option>'), 'Selector placeholder must name the country position');
 assert.ok(picker.includes('>Первая страна</option>'), 'First dropdown must have an ordinal placeholder');
+for (const label of ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна']) {
+  assert.match(picker, new RegExp('<option[^>]*value=""[^>]*\\bdisabled\\b[^>]*>' + label + '</option>'),
+    'Native popup placeholder must be disabled and therefore muted: ' + label);
+}
+const pickerSource = readFileSync('src/components/catalog/MultiCountrySelector.astro', 'utf8');
+const pickerClient = readFileSync('src/scripts/multi-country-selector.ts', 'utf8');
+assert.match(pickerSource, /option value="" disabled selected=\{!step\.value\}/,
+  'SSR must keep the empty disabled option selected instead of auto-selecting a country');
+assert.match(pickerClient, /placeholderOption\.disabled = true;/,
+  'JS render must preserve the muted disabled option after replacing dropdown choices');
+assert.match(pickerClient, /new Option\(placeholders\[index\], '', !value, !value\)/,
+  'JS render must retain selected placeholder for every empty country position');
+assert.match(pickerClient, /data-mc-remove/,
+  'Country controls must keep the explicit removal action');
+assert.match(pickerSource, /data-mc-reset/,
+  'The whole selection must remain resettable');
 if (names.length) {
 const combinationHtml = readFileSync(join(root, names[0], 'index.html'), 'utf8');
 assert.ok(combinationHtml.includes('data-mc-remove="1"'),

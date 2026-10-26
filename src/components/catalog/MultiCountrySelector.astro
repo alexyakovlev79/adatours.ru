@@ -52,7 +52,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
         <div class="mc-picker__control">
           <div class="mc-picker__select-wrap">
             <select class={step.value ? undefined : 'mc-picker__select--placeholder'} id={'mc-country-' + (step.index + 1)} data-mc-select={step.index} autocomplete="off">
-              <option value="">{descriptions[step.index]}</option>
+              <option value="" disabled selected={!step.value}>{descriptions[step.index]}</option>
               {step.options.map((country) => (
                 <option value={country.slug} selected={step.value === country.slug}>{country.name}</option>
               ))}
@@ -160,8 +160,9 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     font-size: 1.1rem;
     cursor: pointer;
   }
-  /* Keep the native option list dark. A pale placeholder is painted only
-     over the closed, empty control, so the dropdown never inherits its color. */
+  /* Native Firefox popup options ignore placeholder CSS colors. The empty
+     option is disabled in both SSR and JS so it appears muted in the open
+     OS-native list; the overlay handles only the closed empty control. */
   .mc-picker__placeholder-text {
     display: none;
     position: absolute;
@@ -184,8 +185,8 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     display: block;
   }
   .mc-picker__field select option { color: var(--color-ink); }
-  .mc-picker__field select option[value=""] {
-    color: color-mix(in srgb, var(--color-ink) 55%, var(--color-bg));
+  .mc-picker__field select option[value=""]:disabled {
+    color: color-mix(in srgb, var(--color-ink) 42%, var(--color-bg));
   }
   .mc-picker__field select:focus-visible { outline: 2px solid var(--color-gold-deep); outline-offset: 3px; }
   .mc-picker__remove {

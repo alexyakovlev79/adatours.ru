@@ -1,0 +1,84 @@
+name: ADA ChatGPT editorial requests
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  actions: write
+  issues: write
+concurrency:
+  group: ada-editorial-requests
+  cancel-in-progress: false
+jobs:
+  editorial:
+    if: >-
+      github.repository == 'alexyakovlev79/adatours.ru' &&
+      startsWith(github.event.issue.title, '[ADA-EDIT] ') &&
+      github.event.issue.pull_request == null
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Reject unknown issue authors before installing dependencies
+        env:
+          EDITOR_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          node --input-type=module -e "
+            import fs from 'node:fs';
+            const cfg=JSON.parse(fs.readFileSync('data/editorial/authorized-users.json','utf8'));
+            if(!Array.isArray(cfg.allowedGithubLogins)||!cfg.allowedGithubLogins.includes(process.env.EDITOR_ISSUE_AUTHOR))
+              throw Error('ADA_EDITOR_REJECTED: actor is not authorized');
+          "
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Validate issue author, exact SHA and allowed content fields
+        id: edit
+        env:
+          EDITOR_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          EDITOR_ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node scripts/editorial-request.mjs
+      - name: Check content before publishing
+        if: steps.edit.outputs.changed == 'true'
+        run: |
+          node --test tests/editorial-request.test.mjs
+          npm run build > /tmp/ada-editor-build.log 2>&1 || { tail -70 /tmp/ada-editor-build.log; exit 1; }
+      - name: Commit only the approved Markdown file and start Pages
+        if: steps.edit.outputs.changed == 'true'
+        env:
+          EDIT_PATH: ${{ steps.edit.outputs.path }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$EDIT_PATH"
+          changed="$(git diff --cached --name-only)"
+          test "$changed" = "$EDIT_PATH"
+          git commit -m "content(editor): issue #${ISSUE_NUMBER}"
+          git push origin HEAD:main
+          sha="$(git rev-parse HEAD)"
+          gh workflow run deploy.yml --ref main
+          gh issue comment "$ISSUE_NUMBER" --body "Правка проверена и записана в main: ${sha}. Публикация запущена и пока не подтверждена."
+      - name: No-op acknowledgement
+        if: steps.edit.outcome == 'success' && steps.edit.outputs.changed == 'false'
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Проверено: запрошенные значения уже установлены. Новый коммит и деплой не требуются."
+      - name: Failure acknowledgement
+        if: failure()
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Правка НЕ опубликована. Ошибка авторизации, данных, сборки или безопасной записи: ${RUN_URL}."

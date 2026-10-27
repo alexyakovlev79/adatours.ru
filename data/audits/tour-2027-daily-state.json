@@ -4,8 +4,8 @@
   "repository": "alexyakovlev79/adatours.ru",
   "driveRootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
-  "lastAttempt": "2026-10-26T02:01:10.569Z",
-  "lastCompleteScanAt": "2026-10-26T02:01:10.569Z",
+  "lastAttempt": "2026-10-27T01:03:46.051Z",
+  "lastCompleteScanAt": "2026-10-27T01:03:46.051Z",
   "lastSuccessfulBatchAt": "2026-10-26T11:27:12.655644+00:00",
   "openQueue": [
     {
@@ -26,8 +26,8 @@
       "publicationAllowed": false,
       "detectedAt": "2026-10-17T07:07:13.876Z",
       "reasonForNoPublication": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
-      "lastCheckedAt": "2026-10-26T02:01:10.569Z",
-      "lastCheckedInRun": "daily-word-2027-20261026-20261026015938000",
+      "lastCheckedAt": "2026-10-27T01:03:46.051Z",
+      "lastCheckedInRun": "daily-word-2027-20261027-20261027010037906",
       "sourceVersion": {
         "modifiedTime": "2026-10-09T13:30:40.492Z",
         "bytes": 6051218,
@@ -35,7 +35,13 @@
       },
       "readableTextSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1",
       "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline",
-      "resolutionStatus": "unchanged_source_conflict_no_confirmed_replacement"
+      "resolutionStatus": "unchanged_source_conflict_no_confirmed_replacement",
+      "lastCheckEvidence": {
+        "sourceMetadataUnchanged": true,
+        "comparedToSnapshotAt": "2026-10-26T02:01:10.569Z",
+        "annaResolutionsPath": "data/audits/anna-review-resolutions-20261026.json",
+        "newPdfIsUnrelated": true
+      }
     },
     {
       "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
@@ -98,8 +104,8 @@
       "sourceEntryBlobSha": "7618151395191483f3b40e5f937ee39949134fd7",
       "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить.",
       "detectedAt": "2026-10-20T02:07:38.331Z",
-      "lastCheckedAt": "2026-10-26T02:01:10.569Z",
-      "lastCheckedInRun": "daily-word-2027-20261026-20261026015938000",
+      "lastCheckedAt": "2026-10-27T01:03:46.051Z",
+      "lastCheckedInRun": "daily-word-2027-20261027-20261027010037906",
       "resolutionStatus": "partially_resolved_by_anna",
       "reviewHistory": [
         {
@@ -146,7 +152,60 @@
         "contentCommit": "fb15ee0c6f61ceedb6127fc857b49d3bb07c54cb",
         "deployRun": 40312537725,
         "sheetRowsVerified": true
+      },
+      "lastCheckEvidence": {
+        "sourceMetadataUnchanged": true,
+        "comparedToSnapshotAt": "2026-10-26T02:01:10.569Z",
+        "annaResolutionsPath": "data/audits/anna-review-resolutions-20261026.json",
+        "newPdfIsUnrelated": true
       }
+    },
+    {
+      "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+      "name": "Costa Rica Panama Jamaica 20d19n RU 20com.pdf",
+      "url": "https://drive.google.com/file/d/1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY/view?usp=drivesdk",
+      "folderId": "1E6OtMInFdGcgYNXfX6RvshAcYaXw7_9i",
+      "folderPath": "Costa Rica 2027",
+      "classification": "needs_pdf_review",
+      "queueType": "pdf_source_review",
+      "status": "REVIEW",
+      "stage": "pdf_text_reviewed",
+      "identityStatus": "unregistered_pdf_program_no_corresponding_word_in_2027_tree",
+      "publicationAllowed": false,
+      "observedModifiedTime": "2026-10-26T19:35:37.528Z",
+      "sourceVersion": {
+        "modifiedTime": "2026-10-26T19:35:37.528Z",
+        "bytes": 8272005,
+        "version": null,
+        "checksum": null
+      },
+      "readableTextSha256": "40955683856a1a2a2ea16949d2ba2c9a379bfc362978eecaf7a108c593906d12",
+      "textHashMethod": "sha256 of exact UTF-8 connected Drive readable text, no added newline",
+      "detectedAt": "2026-10-27T01:03:46.051Z",
+      "lastCheckedAt": "2026-10-27T01:03:46.051Z",
+      "lastCheckedInRun": "daily-word-2027-20261027-20261027010037906",
+      "sourceFacts": {
+        "durationDays": 20,
+        "nights": 19,
+        "startDate": "2027-07-05",
+        "endDate": "2027-07-24",
+        "countries": [
+          "Costa Rica",
+          "Panama",
+          "Jamaica"
+        ],
+        "partyAdults": 6,
+        "pricePerPersonUSD": 27868,
+        "excluded": [
+          "international and regional flights",
+          "Jamaica excursions",
+          "optional Quepos scenic flight"
+        ],
+        "costaRicaGuideLanguage": "Spanish",
+        "childDiscount": "under 10, amount by age and child count on request"
+      },
+      "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+      "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
     }
   ],
   "runs": [
@@ -1746,6 +1805,153 @@
       "auditPath": "data/audits/tour-pipeline-audit-20261026.json",
       "publicationStatus": "prepared_pending_deploy",
       "note": "No new source claimed; currentP172 used for real update/dependency regression test."
+    },
+    {
+      "id": "daily-word-2027-20261027-20261027010037906",
+      "startedAt": "2026-10-27T01:00:37.906Z",
+      "finishedAt": "2026-10-27T01:03:46.051Z",
+      "scanStatus": "complete",
+      "outcome": "no_word_changes_new_pdf_source_review",
+      "foldersScanned": 29,
+      "rootChildren": 27,
+      "filesObserved": 220,
+      "uniqueFilesObserved": 220,
+      "wordFilesObserved": 212,
+      "pdfFilesObserved": 8,
+      "registeredTourWordFiles": 199,
+      "excludedAuxiliaryWordFiles": 13,
+      "newFileIds": [
+        "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY"
+      ],
+      "newWordFileIds": [],
+      "candidateChangedFileIds": [],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 0,
+      "missingFileIds": [],
+      "movedFileIds": [],
+      "renamedFileIds": [],
+      "comparison": {
+        "baselineMainCommit": "56b211a5c8e26c428851ab72568e4ef694c2a23a",
+        "workflowVersion": "2.0",
+        "workflowBlobSha": "d35f1f89129469a5142c605598c3d3f9901ae072",
+        "inventoryBlobSha": "144322530e0a3e8069442945cd215e6a2046e2db",
+        "previousSnapshotAt": "2026-10-26T02:01:10.569Z",
+        "method": "All recursive Drive IDs, names, parent folder IDs, modifiedTime and byte sizes compared with previous complete snapshot and canonical inventory IDs. Every 212 Word retains its previously recorded metadata; no changed DOCX binary version detected. Only the new PDF text read; unchanged Word full texts/media not reread.",
+        "versionAndChecksumAvailability": "Connected list_folder and requested get_file_metadata do not expose version/md5Checksum in their normalized results; no version/checksum verification claimed. Existing source hashes preserved, no invented media replacement.",
+        "folderPagination": "29 complete direct listings with top_k=100; every response below 100 (maximum 59); pending folder queue empty. Six sequential batches of 3–5 folders after root; no truncated listing."
+      },
+      "existingOpenQueueAtStart": 2,
+      "sourceReviewQueueRemaining": 3,
+      "newPdfReviews": [
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "name": "Costa Rica Panama Jamaica 20d19n RU 20com.pdf",
+          "url": "https://drive.google.com/file/d/1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY/view?usp=drivesdk",
+          "folderId": "1E6OtMInFdGcgYNXfX6RvshAcYaXw7_9i",
+          "folderPath": "Costa Rica 2027",
+          "classification": "needs_pdf_review",
+          "queueType": "pdf_source_review",
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "identityStatus": "unregistered_pdf_program_no_corresponding_word_in_2027_tree",
+          "publicationAllowed": false,
+          "observedModifiedTime": "2026-10-26T19:35:37.528Z",
+          "sourceVersion": {
+            "modifiedTime": "2026-10-26T19:35:37.528Z",
+            "bytes": 8272005,
+            "version": null,
+            "checksum": null
+          },
+          "readableTextSha256": "40955683856a1a2a2ea16949d2ba2c9a379bfc362978eecaf7a108c593906d12",
+          "textHashMethod": "sha256 of exact UTF-8 connected Drive readable text, no added newline",
+          "detectedAt": "2026-10-27T01:03:46.051Z",
+          "lastCheckedAt": "2026-10-27T01:03:46.051Z",
+          "lastCheckedInRun": "daily-word-2027-20261027-20261027010037906",
+          "sourceFacts": {
+            "durationDays": 20,
+            "nights": 19,
+            "startDate": "2027-07-05",
+            "endDate": "2027-07-24",
+            "countries": [
+              "Costa Rica",
+              "Panama",
+              "Jamaica"
+            ],
+            "partyAdults": 6,
+            "pricePerPersonUSD": 27868,
+            "excluded": [
+              "international and regional flights",
+              "Jamaica excursions",
+              "optional Quepos scenic flight"
+            ],
+            "costaRicaGuideLanguage": "Spanish",
+            "childDiscount": "under 10, amount by age and child count on request"
+          },
+          "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        }
+      ],
+      "queueActions": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "status": "REVIEW",
+          "action": "unchanged_source_conflict_no_new_resolution"
+        },
+        {
+          "programKey": "P153",
+          "status": "REVIEW",
+          "action": "preserved_only_tariff_and_Lima_museum_questions_confirmed_services_not_repeated"
+        },
+        {
+          "programKey": "P172",
+          "action": "verified_prior_full_completion_do_not_reimport",
+          "lifecyclePath": "data/audits/tour-lifecycle/P172-completion-20261027.json",
+          "priorContentCommit": "86cc52df8630192a0b3ff13fdf50dbe443d245ba",
+          "priorDeployRun": 40409707027
+        }
+      ],
+      "publicationStatus": "not_required_no_confirmed_word_changes",
+      "contentCommit": null,
+      "deployRun": null,
+      "siteChanges": {
+        "newTours": 0,
+        "updatedTours": 0,
+        "newDestinations": 0,
+        "updatedDestinations": 0,
+        "newExcursions": 0,
+        "updatedExcursions": 0,
+        "newPhotographs": 0,
+        "replacedPhotographs": 0,
+        "newOtherObjects": 0,
+        "updatedOtherObjects": 0
+      },
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_content_publication",
+      "emailStatus": "not_required_no_site_changes",
+      "emailReason": "No production pages/entities published by this run. Prior independent P172/manual deployments excluded under §4.1.",
+      "errors": [],
+      "blockers": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "status": "REVIEW",
+          "reason": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "status": "REVIEW",
+          "reason": "Русский язык гидов и включение Уюни–Ла-Пас подтверждены. Открыты только выбор тарифов Word/PDF и музей в Лиме.",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "status": "REVIEW",
+          "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        }
+      ],
+      "nextStep": "Continue daily full discovery; resume the three concrete source reviews only when authoritative source/clarification changes. Do not reimport completed P172 or repeat images/uploads/deploys."
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",
@@ -2198,7 +2404,20 @@
       "completedAtMoscow": "2026-10-26T14:27:12.655644+03:00",
       "newEntities": 0,
       "newImages": 0,
-      "s3Uploads": 0
+      "s3Uploads": 0,
+      "lifecyclePath": "data/audits/tour-lifecycle/P172-completion-20261027.json",
+      "latestLifecycleVerification": {
+        "checkedAt": "2026-10-27T01:03:46.051Z",
+        "status": "complete",
+        "completedAt": "2026-10-26T22:53:23.667Z",
+        "sourceUnchanged": true,
+        "independentPriorCompletion": true,
+        "contentCommit": "86cc52df8630192a0b3ff13fdf50dbe443d245ba",
+        "contentDeployRun": 40409707027,
+        "geoCommit": "d0ef70d554e8d7199093707c2525f545ac967016",
+        "geoDeployRun": 40410500155,
+        "note": "Referenced existing full completion from another task; not a publication, new source or new completion performed in this daily run. Historical receipt retained."
+      }
     },
     {
       "programKey": "P172",
@@ -2381,17 +2600,70 @@
       "lastCheckedInRun": "daily-word-2027-20261020-20261020020253069",
       "reviewedAt": "2026-10-20T02:07:38.331Z",
       "extractedTextCharacters": 14588
+    },
+    {
+      "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+      "name": "Costa Rica Panama Jamaica 20d19n RU 20com.pdf",
+      "url": "https://drive.google.com/file/d/1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY/view?usp=drivesdk",
+      "folderId": "1E6OtMInFdGcgYNXfX6RvshAcYaXw7_9i",
+      "folderPath": "Costa Rica 2027",
+      "classification": "needs_pdf_review",
+      "queueType": "pdf_source_review",
+      "status": "REVIEW",
+      "stage": "pdf_text_reviewed",
+      "identityStatus": "unregistered_pdf_program_no_corresponding_word_in_2027_tree",
+      "publicationAllowed": false,
+      "observedModifiedTime": "2026-10-26T19:35:37.528Z",
+      "sourceVersion": {
+        "modifiedTime": "2026-10-26T19:35:37.528Z",
+        "bytes": 8272005,
+        "version": null,
+        "checksum": null
+      },
+      "readableTextSha256": "40955683856a1a2a2ea16949d2ba2c9a379bfc362978eecaf7a108c593906d12",
+      "textHashMethod": "sha256 of exact UTF-8 connected Drive readable text, no added newline",
+      "detectedAt": "2026-10-27T01:03:46.051Z",
+      "lastCheckedAt": "2026-10-27T01:03:46.051Z",
+      "lastCheckedInRun": "daily-word-2027-20261027-20261027010037906",
+      "sourceFacts": {
+        "durationDays": 20,
+        "nights": 19,
+        "startDate": "2027-07-05",
+        "endDate": "2027-07-24",
+        "countries": [
+          "Costa Rica",
+          "Panama",
+          "Jamaica"
+        ],
+        "partyAdults": 6,
+        "pricePerPersonUSD": 27868,
+        "excluded": [
+          "international and regional flights",
+          "Jamaica excursions",
+          "optional Quepos scenic flight"
+        ],
+        "costaRicaGuideLanguage": "Spanish",
+        "childDiscount": "under 10, amount by age and child count on request"
+      },
+      "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+      "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
     }
   ],
   "latestDriveSnapshot": {
-    "at": "2026-10-26T02:01:10.569Z",
+    "at": "2026-10-27T01:03:46.051Z",
     "rootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
     "scanStatus": "complete",
     "folders": [
       {
         "folderId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
         "path": "2027 Russian Programs",
-        "directChildren": 26,
+        "directChildren": 27,
+        "complete": true
+      },
+      {
+        "folderId": "1E6OtMInFdGcgYNXfX6RvshAcYaXw7_9i",
+        "path": "Costa Rica 2027",
+        "directChildren": 1,
         "complete": true
       },
       {
@@ -2558,6 +2830,18 @@
       }
     ],
     "files": [
+      {
+        "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+        "name": "Costa Rica Panama Jamaica 20d19n RU 20com.pdf",
+        "mimeType": "application/pdf",
+        "folderId": "1E6OtMInFdGcgYNXfX6RvshAcYaXw7_9i",
+        "folderPath": "Costa Rica 2027",
+        "modifiedTime": "2026-10-26T19:35:37.528Z",
+        "version": null,
+        "checksum": null,
+        "bytes": 8272005,
+        "classification": "needs_pdf_review"
+      },
       {
         "driveFileId": "19vlht5vKeMR5iUtBjjWLHp1JEfxWawo2",
         "name": "Carnival Flavors of Rio de Janeiro, Angra, Historical Paraty & islands champions parade RUS.docx",
@@ -3207,6 +3491,19 @@
         "programKey": "P046",
         "classification": "registered_program_word",
         "bytes": 4769342
+      },
+      {
+        "driveFileId": "1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS",
+        "name": "Brazil, Argentina, Chile & Peru 2027 15d14n RUS com 20%.docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
+        "folderPath": "Brazil 2027",
+        "modifiedTime": "2026-10-23T15:10:04.000Z",
+        "version": "0B8mCj3IF426yREh5Uzc1bFF4cUdsN0dZVjdLQ3ZlTnV2bWpVPQ",
+        "checksum": "009e0349b15e127f23e3dc674d909bfb2125002de57fcf9df2220c25b613e138",
+        "classification": "new_word_existing_tour_commercial_conflict",
+        "bytes": 10506009,
+        "programKey": "P172"
       },
       {
         "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
@@ -4894,6 +5191,19 @@
         "bytes": 13689337
       },
       {
+        "driveFileId": "1hAdDKTlkxET9-5FnjPukSbHpGTwF9JTk",
+        "name": "Exotic_Champions_Parade_11D10N_12-22_Feb_2027_Ada_Tours_RU com 20%.docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "folderId": "1GxlRe9_8c04IEcSo_t9t2yNS3kA1bTTf",
+        "folderPath": "Carnaval Champions Parade Rio 2027",
+        "modifiedTime": "2026-10-23T15:21:59.336Z",
+        "version": "0B6XjLwqoWKp2a0xzdURLWElVdnJDcnRyK01oU3hURURlL21RPQ",
+        "checksum": "bd1cf51c00524d9ece092ac5f570d68bca8460eaab1c94b21ad9c599a3e48fc8",
+        "classification": "registered_program_word",
+        "bytes": 11024384,
+        "programKey": "P150"
+      },
+      {
         "driveFileId": "1Ok-Q_Wioya_QrRaq-igKqTWCaRbNaPjX",
         "name": "5 countries Carnival Champion 18d17n 2027 RUS  500.docx",
         "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -5021,6 +5331,19 @@
         "programKey": "P152",
         "classification": "registered_program_word",
         "bytes": 1070930
+      },
+      {
+        "driveFileId": "1Q8HxqYQ1_9pYUyvD8Ksx9xfJCBO9xpJE",
+        "name": "Exotic_Carnival_in_Brazil_12D11N_5-16_Feb_2027_Ada_Tours_RU com20%.docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "folderId": "1cJHtQp_qoidGorxxau5I3GToal5nrbje",
+        "folderPath": "Carnaval Rio 2027",
+        "modifiedTime": "2026-10-23T15:21:59.864Z",
+        "version": "0B6XjLwqoWKp2TVdWNExCL2pOaHBMOEt6eGFCcHc5NGQ5RW9RPQ",
+        "checksum": "e6130ee2ced2c3763960c91ea384606ef84b2b02d657811b56945a72beaf8924",
+        "classification": "registered_program_word",
+        "bytes": 12134970,
+        "programKey": "P160"
       },
       {
         "driveFileId": "1HI1vzOx4WDYCTLmxZAfUou4ueUdgbIQt",
@@ -5355,45 +5678,6 @@
         "checksum": null,
         "classification": "excluded_non_2027_or_auxiliary_word",
         "bytes": 50433
-      },
-      {
-        "driveFileId": "1Y_dxhwu5VNeYVsia6bjhVNgOC4oTi5FS",
-        "name": "Brazil, Argentina, Chile & Peru 2027 15d14n RUS com 20%.docx",
-        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-        "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
-        "folderPath": "Brazil 2027",
-        "modifiedTime": "2026-10-23T15:10:04.000Z",
-        "version": "0B8mCj3IF426yREh5Uzc1bFF4cUdsN0dZVjdLQ3ZlTnV2bWpVPQ",
-        "checksum": "009e0349b15e127f23e3dc674d909bfb2125002de57fcf9df2220c25b613e138",
-        "classification": "new_word_existing_tour_commercial_conflict",
-        "bytes": 10506009,
-        "programKey": "P172"
-      },
-      {
-        "driveFileId": "1hAdDKTlkxET9-5FnjPukSbHpGTwF9JTk",
-        "name": "Exotic_Champions_Parade_11D10N_12-22_Feb_2027_Ada_Tours_RU com 20%.docx",
-        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-        "folderId": "1GxlRe9_8c04IEcSo_t9t2yNS3kA1bTTf",
-        "folderPath": "Carnaval Champions Parade Rio 2027",
-        "modifiedTime": "2026-10-23T15:21:59.336Z",
-        "version": "0B6XjLwqoWKp2a0xzdURLWElVdnJDcnRyK01oU3hURURlL21RPQ",
-        "checksum": "bd1cf51c00524d9ece092ac5f570d68bca8460eaab1c94b21ad9c599a3e48fc8",
-        "classification": "registered_program_word",
-        "bytes": 11024384,
-        "programKey": "P150"
-      },
-      {
-        "driveFileId": "1Q8HxqYQ1_9pYUyvD8Ksx9xfJCBO9xpJE",
-        "name": "Exotic_Carnival_in_Brazil_12D11N_5-16_Feb_2027_Ada_Tours_RU com20%.docx",
-        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-        "folderId": "1cJHtQp_qoidGorxxau5I3GToal5nrbje",
-        "folderPath": "Carnaval Rio 2027",
-        "modifiedTime": "2026-10-23T15:21:59.864Z",
-        "version": "0B6XjLwqoWKp2TVdWNExCL2pOaHBMOEt6eGFCcHc5NGQ5RW9RPQ",
-        "checksum": "e6130ee2ced2c3763960c91ea384606ef84b2b02d657811b56945a72beaf8924",
-        "classification": "registered_program_word",
-        "bytes": 12134970,
-        "programKey": "P160"
       }
     ],
     "pendingFolderIds": [],

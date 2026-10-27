@@ -11,6 +11,7 @@ import { inspectSeoGeoArticle } from './seo-geo-schema.mjs';
 import externalProfiles from '../../data/external-identity/external-profiles.json';
 import confirmedEnglishPairs from '../../data/external-identity/adatours-com-correspondences.json';
 import { collectSeoPagePrices, enrichSeoPriceMetadata, formatSeoMoney } from './seo-price-meta.mjs';
+import { russianGuideSeoMetadata } from './russian-guide-seo.mjs';
 const geoModules = import.meta.glob('../../data/geo-knowledge/entities/*.json', { eager: true, import: 'default' });
 const geoKnowledge = new Map<string, any>(Object.values(geoModules).map((v: any) => [v.stableId, v]));
 
@@ -159,14 +160,18 @@ export async function pageStructuredData(input: {
     else if (seo.changed) priceSummaries.push(text);
   }
   const priceSummary = priceSummaries.join(' ');
-  const metaDescription = priceSummary ? priceSummary + ' ' + seo.description : seo.description;
+  const pricedDescription = priceSummary ? priceSummary + ' ' + seo.description : seo.description;
+  // Geography-based RU SEO after price enrichment; reuse for OG/Twitter and WebPage.
+  const guideSeo = russianGuideSeoMetadata({
+    path: input.path, lang: input.lang, records, title: seo.title, description: pricedDescription,
+  });
   const currentPage = graph['@graph'].find((node: any) => node['@id'] === input.url + '#webpage');
   if (currentPage) {
-    currentPage.name = seo.title;
-    currentPage.description = metaDescription;
+    currentPage.name = guideSeo.title;
+    currentPage.description = guideSeo.description;
   }
   return {
     html: inspected.html, graph, priceSummaries, priceSummary,
-    metaTitle: seo.title, metaDescription,
+    metaTitle: guideSeo.title, metaDescription: guideSeo.description,
   };
 }

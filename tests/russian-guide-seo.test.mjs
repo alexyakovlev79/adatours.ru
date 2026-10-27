@@ -41,7 +41,7 @@ test('a selected city, its products and scoped catalogues receive the keyword', 
   const a = russianGuideSeoMetadata({ path: '/brazil/tour/rio/',
     title: 'Тур по Рио | Ada Tours', description: 'Путешествие в Рио.', records });
   assert.equal(a.title, 'Тур по Рио, русский гид | Ada Tours');
-  assert.match(a.description, /^Русский гид: /);
+  assert.ok(a.description.startsWith('Русский гид: Ada Tours организует экскурсии и сопровождение на русском языке.'), a.description);
   assert.match(a.description, /Путешествие в Рио\./);
   assert.deepEqual(russianGuideSeoMetadata({ path: '/brazil/tour/rio/',
     title: a.title, description: a.description, records }), a);

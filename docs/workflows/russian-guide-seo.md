@@ -29,6 +29,6 @@
 
 `src/lib/russian-guide-seo.mjs` вызывается из `src/lib/page-schema.ts` **после** расчета цен в SEO-title и description. Оно синхронизирует title/meta description с OG/Twitter и `WebPage` JSON-LD. H1, canonical, цены, тела SEO/GEO-статей, тексты, маршруты, фотографии и связи не редактируются.
 
-Пример: `Тур по Рио, русский гид | Ada Tours`. Для старых SEO-title с конечным `Ada Tours` без `|` подпись нормализуется в одно конечное ` | Ada Tours`.
+Пример: `Тур по Рио, русский гид | Ada Tours`. Для старых SEO-title с конечным `Ada Tours` без `|` конечная атрибуция (например, `туроператора Ada Tours` или `с Ada Tours`) заменяется одним ` | Ada Tours` без грамматического обрыва.
 
 Запуск проверки: `node --test tests/russian-guide-seo.test.mjs`. Тест входит в штатный `npm run build`. Для применения нового списка нужна очередная статическая сборка/deploy.

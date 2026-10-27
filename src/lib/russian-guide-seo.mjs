@@ -82,8 +82,13 @@ export function russianGuideSeoMetadata({ path, title, description, lang = 'ru',
   const brand = config.brandSuffix || ' | Ada Tours';
   const suffix = config.titleSuffix || ', русский гид';
   let stem = String(title || '').trim().replace(/\s*\|\s*Ada Tours\s*$/iu, '').trim();
-  // Some current formulae end in bare "Ada Tours"; normalize to one terminal brand.
-  stem = stem.replace(/\s+Ada Tours$/iu, '').trim();
+  // Strip the complete obsolete brand attribution, avoiding dangling
+  // phrases like "цены туроператора, русский гид" or "туры с, русский гид".
+  stem = stem
+    .replace(/\s+(?:принимающего\s+)?туроператора\s+Ada Tours$/iu, '')
+    .replace(/\s+(?:с|со|у|от|через|для)\s+Ada Tours$/iu, '')
+    .replace(/\s+Ada Tours$/iu, '')
+    .trim();
   if (!stem.toLocaleLowerCase('ru').endsWith(suffix.toLocaleLowerCase('ru'))) stem += suffix;
   const cleanDescription = String(description || '').trim();
   const prefix = String(config.descriptionPrefix || '').trim();

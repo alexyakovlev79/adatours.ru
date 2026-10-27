@@ -73,8 +73,11 @@ test('RU only, archive excluded, price copy retained, bare brand normalized once
   const a = russianGuideSeoMetadata({ path: '/bolivia/', records,
     title: 'Боливия: цены от $1 250 туроператора Ada Tours',
     description: 'Стартовые цены: от $1 250. Туры по Боливии.' });
-  assert.equal(a.title, 'Боливия: цены от $1 250 туроператора, русский гид | Ada Tours');
+  assert.equal(a.title, 'Боливия: цены от $1 250, русский гид | Ada Tours');
   assert.match(a.description, /Стартовые цены: от \$1 250/);
+  const b = russianGuideSeoMetadata({ path: '/bolivia/', records,
+    title: 'Поездки с Ada Tours', description: 'Описание.' });
+  assert.equal(b.title, 'Поездки, русский гид | Ada Tours');
   assert.equal(russianGuideSeoMetadata({ path: '/country/', title: 'Страны | Ada Tours',
     description: 'Все страны.', records }).title, 'Страны | Ada Tours');
 });

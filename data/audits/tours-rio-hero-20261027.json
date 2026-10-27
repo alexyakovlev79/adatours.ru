@@ -3,7 +3,7 @@
   "pagePath": "/tours/",
   "entityId": "index_tours",
   "preparedAt": "2026-10-27T05:35:53.319Z",
-  "status": "prepared_verified_s3_waiting_deploy",
+  "status": "published",
   "request": "Создать заново hero: вид на Рио-де-Жанейро с воздуха, пляж и город.",
   "previousSource": "/media/catalog/tury/hero-enhanced-20260930.webp",
   "newSource": "/media/catalog-heroes/tours-rio-aerial/hero-generated-20261027-v1.webp",
@@ -135,5 +135,36 @@
     "path": "data/audits/tour-2027-daily-state.json",
     "reason": "Historical commercial review predates the complete P172 lifecycle. Preserve its later receipt link as laterFullLifecyclePath, avoiding a second active binding and completedAt-before-evidence build failures.",
     "historicalDatesAndApprovalPreserved": true
+  },
+  "publication": {
+    "contentCommit": "83b9d82498850e25a1e9e14082f6352ee2ec9e4f",
+    "runId": 40456517176,
+    "runUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/40456517176",
+    "workflowStatus": "completed",
+    "workflowConclusion": "success",
+    "workflowCompletedAt": "2026-10-27T05:58:32Z",
+    "pagesConfirmedAt": "2026-10-27T05:58:17.359Z",
+    "observedAt": "2026-10-27T06:00:01.619Z"
+  },
+  "photoSheet": {
+    "spreadsheetId": "1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc",
+    "sheetName": "Фото",
+    "range": "A7895:AB7895",
+    "photoRecordId": "index_tours__hero",
+    "status": "REPLACED",
+    "readBack": true,
+    "columnsVerified": 28,
+    "previousRowsPreserved": true
+  },
+  "checks": {
+    "targetedTestsPassed": 13,
+    "exactPageOverride": true,
+    "captionLookup": true,
+    "mobileMapping": true,
+    "immutablePriorReceiptsPreserved": true,
+    "verifiedS3Objects": 3,
+    "previewsViewed": 9,
+    "newGitBinaryAssets": 0,
+    "lifecycleBuildGate": true
   }
 }

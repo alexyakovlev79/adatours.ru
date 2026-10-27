@@ -7,6 +7,7 @@ import { INTERESTS, buildInterestHub, buildInterestIndex, interestTourCatalogPat
 import { interestCopy, interestTourCount, relatedInterestCount } from '../src/lib/interest-copy.mjs';
 import { seoThemeCatalogTitle, seoPaginatedTitle } from '../src/lib/seo-page.mjs';
 import { enrichSeoPriceMetadata } from '../src/lib/seo-price-meta.mjs';
+import { russianGuideSeoMetadata } from '../src/lib/russian-guide-seo.mjs';
 import { tourFilterTitle, tourFilterDescription } from '../src/lib/vip-copy.mjs';
 import { countryPath, themePath } from '../src/lib/routes.ts';
 const collections = Object.fromEntries(['tours','countries','destinations','excursions','themes'].map(collection => [collection,
@@ -18,10 +19,12 @@ const text=html=>html.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ');
 const heroSection=html=>html.match(/<section\b[^>]*class="[^"]*\bhero\b[^"]*"[\s\S]*?<\/section>/)?.[0]??'';
 const heading=html=>text(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1]??'').trim();
 const title=html=>text(html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/)?.[1]??'').trim();
-const pricedTitle = (baseTitle, tours) => {
+const countrySeoRecords = collections.countries.map(({data}) => ({ kind: 'country', path: countryPath(data), data }));
+const expectedSeoTitle = (baseTitle, tours, path) => {
   const prices = tours.filter(({data}) => typeof data.priceFrom === 'number' && Number.isFinite(data.priceFrom) && data.priceFrom > 0 && /^[A-Z]{3}$/.test(data.currency ?? ''))
     .map(({data}) => ({ id: data.id, kind: 'tour', currency: data.currency, amount: Math.round(data.priceFrom) })).filter(row => row.amount > 0);
-  return text(enrichSeoPriceMetadata({ title: baseTitle, description: '', prices }).title).trim();
+  const priced = enrichSeoPriceMetadata({ title: baseTitle, description: '', prices });
+  return text(russianGuideSeoMetadata({ path, ...priced, records: countrySeoRecords }).title).trim();
 };
 const expectedThemeAlign=new Map([['motorcycle-tours','left'],['adventure','left'],['weddings-and-romance','right'],['wildlife','right']]);
 const index=at('/interests/'), expected=buildInterestIndex(collections.themes,collections.tours);
@@ -65,7 +68,7 @@ for (const {id,slug} of INTERESTS) {
     for(let page=1;page<=Math.ceil(hub.allTours.length/CATALOG_PAGE_SIZE);page++) {
       const pageHtml=at(`${interestTourCatalogPath({slug})}${page>1?`page/${page}/`:''}`);
       assert.equal(heading(pageHtml),`${tourFilterTitle(undefined,theme.data)}${page>1?` — страница ${page}`:''}`,`${slug}: short catalog H1`);
-      assert.equal(title(pageHtml),pricedTitle(seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,hub.allTours.length),page),hub.allTours),`${slug}: separate SEO title`);
+      assert.equal(title(pageHtml),expectedSeoTitle(seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,hub.allTours.length),page),hub.allTours,`${interestTourCatalogPath({slug})}${page>1?`page/${page}/`:''}`),`${slug}: separate SEO title`);
     }
   }
   for(const row of hub.allCountries) {
@@ -76,7 +79,7 @@ for (const {id,slug} of INTERESTS) {
     for(let page=1;page<=Math.ceil(row.tours.length/CATALOG_PAGE_SIZE);page++) {
       const pageHtml=at(`${countryRoot}${page>1?`page/${page}/`:''}`);
       assert.equal(heading(pageHtml),`${tourFilterTitle(row.entry.data,theme.data)}${page>1?` — страница ${page}`:''}`,`${slug}: ${row.entry.data.id} short country H1`);
-      assert.equal(title(pageHtml),pricedTitle(seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,row.tourCount,row.entry.data.name),page),row.tours),`${slug}: ${row.entry.data.id} separate SEO title`);
+      assert.equal(title(pageHtml),expectedSeoTitle(seoPaginatedTitle(seoThemeCatalogTitle(theme.data.name,row.tourCount,row.entry.data.name),page),row.tours,`${countryRoot}${page>1?`page/${page}/`:''}`),`${slug}: ${row.entry.data.id} separate SEO title`);
       const nav=pageHtml.match(/<nav\b[^>]*class="[^"]*\bcatalog-navigation\b[^"]*"[\s\S]*?<\/nav>/)?.[0]??'';
       assert.equal((nav.match(/<a\b/g)??[]).length,3,`${slug}: ${row.entry.data.id} three navigation links`);
       for(const href of [countryPath(row.entry.data),themePath(theme.data),interestTourCatalogPath({slug})]) assert.ok(nav.includes(`href="${href}"`),`${slug}: ${row.entry.data.id} navigation to ${href}`);

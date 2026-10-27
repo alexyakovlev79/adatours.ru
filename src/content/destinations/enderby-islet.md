@@ -8,9 +8,9 @@ countryId: country_ecuador
 destinationType: island
 summary: Эндерби возле Флореаны входит в южные морские маршруты Галапагосов для дайвинга и наблюдения за животными.
 hero:
-  src: /media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp
-  hover: "Галапагосы: морские львы отдыхают у бирюзового океана"
-  alt: "Морские львы на светлом песчаном пляже Галапагосских островов, Эквадор"
+  src: /media/destinations/enderby-islet/hero-generated-20261026-dedup-v1.webp
+  hover: Скалистый вулканический островок Эндерби у Флореаны — иллюстрация
+  alt: Скалистый вулканический островок Эндерби у Флореаны — иллюстрация
 gallery: []
 themes:
 - theme_wildlife

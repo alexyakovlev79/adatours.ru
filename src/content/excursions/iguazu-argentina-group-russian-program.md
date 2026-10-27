@@ -9,9 +9,9 @@ relatedDestinations:
 themes: ["theme_nature"]
 lead: Переезд через мост Танкредо-Невес и прогулка по аргентинской стороне Игуасу с русскоговорящим гидом.
 hero:
-  src: /media/excursions/jekskursija-na-argentinskie-vodopady/hero-src-enhanced-20261008.webp
-  hover: "Игуасу: вид сверху на площадку между падающими потоками воды"
-  alt: "Туристы на выступающей смотровой площадке над потоками водопадов Игуасу"
+  src: /media/excursions/iguazu-argentina-group-russian-program/hero-generated-20261026-dedup-v1.webp
+  hover: Пешеходный мост к Глотке Дьявола на аргентинской стороне Игуасу — иллюстрация
+  alt: Пешеходный мост к Глотке Дьявола на аргентинской стороне Игуасу — иллюстрация
 locale: ru
 status: approved
 format: Групповая экскурсия

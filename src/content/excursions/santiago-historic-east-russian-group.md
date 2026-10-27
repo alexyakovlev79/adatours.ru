@@ -14,9 +14,9 @@ themes:
 - theme_culture
 lead: Ла-Монеда, Пласа-де-Армас, Санта-Лючия, Витакура, Лас-Кондес и Провиденсия с русскоговорящим гидом.
 hero:
-  src: /media/excursions/obzornaja-jekskursija-po-sant-jago/hero-src-enhanced-20261007.webp
-  hover: "Сантьяго в Чили: город под длинным снежным хребтом"
-  alt: "Панорама Сантьяго с высокой башней на фоне заснеженных Анд, Чили"
+  src: /media/excursions/santiago-historic-east-russian-group/hero-generated-20261026-dedup-v1.webp
+  hover: Дворец Ла-Монеда и площадь Гражданства в Сантьяго — иллюстрация
+  alt: Дворец Ла-Монеда и площадь Гражданства в Сантьяго — иллюстрация
 locale: ru
 status: approved
 format: Групповая экскурсия

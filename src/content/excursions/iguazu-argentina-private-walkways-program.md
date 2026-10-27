@@ -10,9 +10,9 @@ relatedDestinations:
 - destination_argentina_garganta_del_diablo
 themes: ["theme_nature"]
 hero:
-  src: /media/excursions/jekskursija-na-argentinskie-vodopady/hero-src-enhanced-20261008.webp
-  hover: "Игуасу: вид сверху на площадку между падающими потоками воды"
-  alt: "Туристы на выступающей смотровой площадке над потоками водопадов Игуасу"
+  src: /media/excursions/iguazu-argentina-private-walkways-program/hero-generated-20261026-dedup-v1.webp
+  hover: Лесная тропа и водопад на нижнем маршруте Игуасу — иллюстрация
+  alt: Лесная тропа и водопад на нижнем маршруте Игуасу — иллюстрация
   status: approved
 gallery: []
 lead: Приватная экскурсия по аргентинской стороне Игуасу с переездом из Бразилии через мост Танкредо-Невес.

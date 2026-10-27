@@ -38,9 +38,9 @@ route:
 - Лагуна Амарга
 - Озеро Сармьенто
 hero:
-  src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-07-generated-20261008-v1.webp
-  hover: "Ледник Грей: ледяной фронт под пасмурными горами"
-  alt: "Голубая стена ледника Грей и льдины на темной воде озера, Чили"
+  src: /media/excursions/grey-glacier-boat-paine-full-day/hero-generated-20261026-dedup-v1.webp
+  hover: Голубой айсберг на озере Грей в Патагонии — иллюстрация
+  alt: Голубой айсберг на озере Грей в Патагонии — иллюстрация
 gallery: []
 included:
 - Входные билеты в национальный парк Торрес-дель-Пайне

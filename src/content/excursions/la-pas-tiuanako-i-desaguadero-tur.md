@@ -15,9 +15,9 @@ priceFrom: 253
 currency: USD
 priceNote: "Стоимость — $664. При 2 участниках — $331 на человека; при 3 участниках — $253 на человека."
 hero:
-  src: /media/countries/bolivia/featureBands-3-enhanced-20261002.webp
-  hover: "Тиуанако в Боливии: каменная стена с резными головами"
-  alt: "Каменные головы в стене комплекса Тиуанако, Боливия"
+  src: /media/excursions/la-pas-tiuanako-i-desaguadero-tur/hero-generated-20261026-dedup-v1.webp
+  hover: Ворота Солнца в Тиуанако на Боливийском Альтиплано — иллюстрация
+  alt: Ворота Солнца в Тиуанако на Боливийском Альтиплано — иллюстрация
 gallery:
   - src: "/media/excursions/la-pas-siti-tur/gallery-2-src-enhanced-20261007.webp"
     hover: "Ла-Пас: украшенный фасад с куполом и боливийскими флагами"

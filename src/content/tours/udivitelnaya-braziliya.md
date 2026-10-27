@@ -257,9 +257,9 @@ priceNote: $7001.
 durationDays: 14
 durationNights: 13
 hero:
-  src: /media/tours/pantanal-4dnya-3-nochi/itinerary-day-1-enhanced-20261006.webp
-  hover: "Пантанал: ягуар выглядывает из густой растительности"
-  alt: "Ягуар среди зеленой листвы в Пантанале, Бразилия"
+  src: /media/tours/udivitelnaya-braziliya/hero-generated-20261026-dedup-v1.webp
+  hover: Белые дюны и пресноводные лагуны Ленсойс-Мараньенсис — иллюстрация
+  alt: Белые дюны и пресноводные лагуны Ленсойс-Мараньенсис — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

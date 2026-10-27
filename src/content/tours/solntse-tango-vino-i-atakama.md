@@ -315,9 +315,9 @@ priceFrom: 8636
 currency: USD
 priceNote: $8636
 hero:
-  src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
-  hover: "Игуасу: радуга в водяной пыли у мостиков"
-  alt: "Радуга над водопадами Игуасу и смотровыми мостиками с туристами"
+  src: /media/tours/solntse-tango-vino-i-atakama/hero-generated-20261026-dedup-v1.webp
+  hover: Дюна и соляные хребты Лунной долины в Атакаме — иллюстрация
+  alt: Дюна и соляные хребты Лунной долины в Атакаме — иллюстрация
 routeCountries:
 - country_brazil
 - country_argentina

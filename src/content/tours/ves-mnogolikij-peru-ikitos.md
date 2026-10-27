@@ -470,9 +470,9 @@ priceFrom: 3910
 currency: USD
 priceNote: $3910
 hero:
-  src: /media/countries/peru/hero-enhanced-20260930.webp
-  hover: "Перу: девочка и альпака крупным планом"
-  alt: "Девочка в традиционной цветной шляпе рядом с альпакой в Перу"
+  src: /media/tours/ves-mnogolikij-peru-ikitos/hero-generated-20261026-dedup-v1.webp
+  hover: Красный ара в амазонском лесу Перу — иллюстрация
+  alt: Красный ара в амазонском лесу Перу — иллюстрация
 routeCountries:
 - country_peru
 routeDestinations:

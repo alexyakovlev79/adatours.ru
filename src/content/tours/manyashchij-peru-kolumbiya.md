@@ -311,9 +311,9 @@ priceFrom: 3833
 currency: USD
 priceNote: $3833
 hero:
-  src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-  hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
-  alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
+  src: /media/tours/manyashchij-peru-kolumbiya/hero-generated-20261026-dedup-v1.webp
+  hover: Лодка из тростника тотора у плавучего острова Урос — иллюстрация
+  alt: Лодка из тростника тотора у плавучего острова Урос — иллюстрация
 routeCountries:
 - country_peru
 - country_colombia

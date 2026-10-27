@@ -8,9 +8,9 @@ countryId: country_ecuador
 destinationType: island
 summary: Малый Дафне к северу от Санта-Крус интересен подводными скалами, черными кораллами и рифовой фауной.
 hero:
-  src: /media/excursions/ostrov-santa-krus/hero-enhanced-20261001.webp
-  hover: "Галапагосы: морские львы в бирюзовой воде"
-  alt: "Морские львы плывут под поверхностью прозрачной воды у песчаного дна, Галапагосы, Эквадор"
+  src: /media/destinations/daphne-minor/hero-generated-20261026-dedup-v1.webp
+  hover: Подводная вулканическая стенка и ветвистые кораллы у Малого Дафне — иллюстрация
+  alt: Подводная вулканическая стенка и ветвистые кораллы у Малого Дафне — иллюстрация
 gallery: []
 themes: ["theme_wildlife", "theme_diving", "theme_nature"]
 sourceSnapshot: data/source-index/materials/destination_ecuador_daphne_minor.md

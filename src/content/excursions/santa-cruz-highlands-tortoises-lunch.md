@@ -14,8 +14,9 @@ language:
 - Английский
 format: Групповая экскурсионная программа
 hero:
-  src: /media/tours/complete-ecuador-new-year/word-08-20261009-v1-enhanced-20261011-doc-v1.webp
-  alt: Гигантская сухопутная черепаха на траве и путешественница позади нее
+  src: /media/excursions/santa-cruz-highlands-tortoises-lunch/hero-generated-20261026-dedup-v1.webp
+  alt: Гигантская черепаха в зелёных высокогорьях Санта-Крус — иллюстрация
+  hover: Гигантская черепаха в зелёных высокогорьях Санта-Крус — иллюстрация
 gallery: []
 lead: Знакомство с гигантскими черепахами с гидом и включенный обед в высокогорьях Санта-Крус.
 included:

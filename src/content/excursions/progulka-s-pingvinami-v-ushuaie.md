@@ -14,9 +14,9 @@ language:
 priceFrom: 350
 currency: USD
 hero:
-  src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-  hover: "Ушуайя: птицы на прибрежных скалах рядом с полосатым маяком"
-  alt: "Красно-белый маяк и морские птицы на скалистом островке у Ушуайи, Аргентина"
+  src: /media/excursions/progulka-s-pingvinami-v-ushuaie/hero-generated-20261026-dedup-v1.webp
+  hover: Магеллановы пингвины на берегу пролива Бигль — иллюстрация
+  alt: Магеллановы пингвины на берегу пролива Бигль — иллюстрация
 gallery: []
 route:
   - "Ушуайя"

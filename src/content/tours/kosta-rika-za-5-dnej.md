@@ -119,9 +119,9 @@ priceFrom: 2226
 currency: USD
 priceNote: $2226
 hero:
-  src: /media/tours/kosta-rika-korotkaya-no-polnaya-programma/itinerary-2-images-0-src-enhanced-20261007.webp
-  hover: "Рио-Селесте: лесной водопад перед смотровой площадкой"
-  alt: "Туристы у водопада Рио-Селесте с голубой водой в тропическом лесу, Коста-Рика"
+  src: /media/tours/kosta-rika-za-5-dnej/hero-generated-20261026-dedup-v1.webp
+  hover: Лесной канал Тортугеро в Коста-Рике — иллюстрация
+  alt: Лесной канал Тортугеро в Коста-Рике — иллюстрация
 routeCountries:
 - country_costa_rica
 routeDestinations:

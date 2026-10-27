@@ -31,8 +31,9 @@ priceNote: От $1564 на человека при трехместном раз
   от $1886. Все 9 тарифов на 2027 год приведены в таблице.
 dates: []
 hero:
-  src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
-  alt: Рио-де-Жанейро вечером
+  src: /media/tours/best-of-rio-express-six-days/hero-generated-20261026-dedup-v1.webp
+  alt: Пляж Лопес-Мендес на Илья-Гранди и Атлантический лес — иллюстрация
+  hover: Пляж Лопес-Мендес на Илья-Гранди и Атлантический лес — иллюстрация
 gallery: []
 featured: false
 priority: 0

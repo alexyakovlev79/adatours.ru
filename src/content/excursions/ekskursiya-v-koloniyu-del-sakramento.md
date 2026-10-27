@@ -15,9 +15,9 @@ priceFrom: 953
 currency: USD
 priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477."
 hero:
-  src: /media/countries/uruguay/featureBands-1-enhanced-20261002.webp
-  hover: "Уругвай: здание с башнями и арочными окнами"
-  alt: "Здание с арочными окнами и зубчатыми башнями, Уругвай"
+  src: /media/excursions/ekskursiya-v-koloniyu-del-sakramento/hero-generated-20261026-dedup-v1.webp
+  hover: Маяк и каменные руины в Колонии-дель-Сакраменто — иллюстрация
+  alt: Маяк и каменные руины в Колонии-дель-Сакраменто — иллюстрация
 gallery:
   - src: "/media/excursions/ekskursiya-v-koloniyu-del-sakramento/gallery-0-src-enhanced-20261007.webp"
     alt: "Дома, деревья и церковные башни Колонии-дель-Сакраменто с высоты, Уругвай"

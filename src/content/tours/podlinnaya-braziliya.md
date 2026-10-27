@@ -219,9 +219,9 @@ durationNights: 12
 currency: USD
 priceNote: 5 576 USD на человека, 4*, DBL; внутренние авиабилеты — 1 590 USD NET дополнительно.
 hero:
-  src: /media/tours/argentina-brazil-pipa-11d/itinerary/day-07-enhanced-20261001.webp
-  hover: "Игуасу: радуга в водяной пыли у мостиков"
-  alt: "Радуга над водопадами Игуасу и смотровыми мостиками с туристами"
+  src: /media/tours/podlinnaya-braziliya/hero-generated-20261026-dedup-v1.webp
+  hover: Маяк Барра и атлантический берег Сальвадора — иллюстрация
+  alt: Маяк Барра и атлантический берег Сальвадора — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

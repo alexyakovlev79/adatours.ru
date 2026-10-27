@@ -410,9 +410,9 @@ priceFrom: 4129
 currency: USD
 priceNote: $4129
 hero:
-  src: /media/tours/peru-8d/hero-enhanced-20260930.webp
-  hover: "Лима: цветочная надпись у площади с пальмами и старинными фасадами"
-  alt: "Цветники с надписью Lima и исторические здания на площади Лимы, Перу"
+  src: /media/tours/ves-mnogolikij-peru-plyazhi-tumbesa/hero-generated-20261026-dedup-v1.webp
+  hover: Пляж и пальмы тихоокеанского побережья Тумбеса в Перу — иллюстрация
+  alt: Пляж и пальмы тихоокеанского побережья Тумбеса в Перу — иллюстрация
 routeCountries:
 - country_peru
 routeDestinations:

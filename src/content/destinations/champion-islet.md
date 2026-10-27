@@ -8,9 +8,9 @@ countryId: country_ecuador
 destinationType: island
 summary: Островок Чемпион у Флореаны входит в число мест для знакомства с подводным миром южной части Галапагосов.
 hero:
-  src: /media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp
-  hover: "Галапагосы: морские львы отдыхают у бирюзового океана"
-  alt: "Морские львы на светлом песчаном пляже Галапагосских островов, Эквадор"
+  src: /media/destinations/champion-islet/hero-generated-20261026-dedup-v1.webp
+  hover: Морской лев у вулканического рифа островка Чемпион — иллюстрация
+  alt: Морской лев у вулканического рифа островка Чемпион — иллюстрация
 gallery: []
 themes:
 - theme_wildlife

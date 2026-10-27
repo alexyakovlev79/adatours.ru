@@ -86,9 +86,9 @@ priceNote: От $5208 на человека при трехместном раз
 dates:
 - Парад чемпионов Карнавала 2027; заезд 12–21 февраля требует подтверждения
 hero:
-  src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/hero-enhanced-20261006.webp
-  hover: "Синий карнавальный костюм и перья во время уличного шествия"
-  alt: "Участница уличного карнавала в синем костюме с большими перьями"
+  src: /media/tours/brazil-argentina-chile-champions-parade-10-days-2027/hero-generated-20261026-dedup-v1.webp
+  hover: Пара танцует аргентинское танго на сцене в Буэнос-Айресе — иллюстрация
+  alt: Пара танцует аргентинское танго на сцене в Буэнос-Айресе — иллюстрация
 gallery: []
 featured: false
 priority: 0

@@ -190,9 +190,9 @@ priceFrom: 2577
 currency: USD
 priceNote: $2577
 hero:
-  src: "/media/tours/chili-zagadki-chelovechestva/hero-src-enhanced-20261007.webp"
-  hover: "Остров Пасхи: моаи в свете заходящего солнца"
-  alt: "Темные силуэты четырех моаи на острове Пасхи на фоне золотого заката, Чили"
+  src: /media/tours/koloritnyj-santyago-i-zagadochnyj-ostrov-paskhi/hero-generated-20261026-dedup-v1.webp
+  hover: Панорама Сантьяго-де-Чили на фоне снежных Анд — иллюстрация
+  alt: Панорама Сантьяго-де-Чили на фоне снежных Анд — иллюстрация
 routeCountries:
 - country_chile
 routeDestinations:

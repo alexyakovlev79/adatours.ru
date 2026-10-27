@@ -46,9 +46,9 @@ priceFrom: 2563
 currency: USD
 dates: []
 hero:
-  src: /media/excursions/glaciares-gourmet/hero-enhanced-20261006.webp
-  hover: "Перито-Морено: ледник на фоне леса и гор"
-  alt: "Голубая ледяная стена Перито-Морено перед зелеными склонами и горными вершинами, Аргентина"
+  src: /media/tours/argentina-ot-lda-k-vodopadam/hero-generated-20261026-dedup-v1.webp
+  hover: Каскады аргентинской стороны Игуасу среди субтропического леса — иллюстрация
+  alt: Каскады аргентинской стороны Игуасу среди субтропического леса — иллюстрация
 gallery: []
 featured: false
 priority: 0

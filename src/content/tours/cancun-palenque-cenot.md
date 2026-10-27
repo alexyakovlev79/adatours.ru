@@ -177,9 +177,9 @@ priceFrom: 3846
 currency: USD
 priceNote: $3846
 hero:
-  src: /media/destinations/cozumel/hero-enhanced-20261005.webp
-  hover: "Косумель: соломенный зонт на скалистом берегу"
-  alt: "Каменистый берег Косумеля с соломенным зонтом у прозрачного бирюзового моря, Мексика"
+  src: /media/tours/cancun-palenque-cenot/hero-generated-20261026-dedup-v1.webp
+  hover: Храм майя в Паленке среди тропического леса Чьяпаса — иллюстрация
+  alt: Храм майя в Паленке среди тропического леса Чьяпаса — иллюстрация
 routeCountries:
 - country_mexico
 routeDestinations:

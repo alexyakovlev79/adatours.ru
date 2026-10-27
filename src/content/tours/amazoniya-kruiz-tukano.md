@@ -97,9 +97,9 @@ priceFrom: 6225
 currency: USD
 priceNote: $6225
 hero:
-  src: /media/tours/amazoniya/hero-enhanced-20261006.webp
-  hover: "Амазония в Бразилии: след лодки на воде между лесистыми берегами"
-  alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
+  src: /media/tours/amazoniya-kruiz-tukano/hero-generated-20261026-dedup-v1.webp
+  hover: Экспедиционное речное судно на Риу-Негру в Амазонии — иллюстрация
+  alt: Экспедиционное речное судно на Риу-Негру в Амазонии — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

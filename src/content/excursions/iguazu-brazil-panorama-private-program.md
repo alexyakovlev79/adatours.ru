@@ -9,9 +9,9 @@ destination: destination_brazil_iguacu
 relatedDestinations: []
 themes: ["theme_nature"]
 hero:
-  src: /media/excursions/jekskursija-na-brazil-skuju-storonu-vodopadov/hero-src-enhanced-20261008.webp
-  hover: "Игуасу: мостки у мощных потоков падающей воды"
-  alt: "Туристы на деревянной площадке перед широкими каскадами Игуасу"
+  src: /media/excursions/iguazu-brazil-panorama-private-program/hero-generated-20261026-dedup-v1.webp
+  hover: Вид сверху на речные острова и водопады Игуасу — иллюстрация
+  alt: Вид сверху на речные острова и водопады Игуасу — иллюстрация
   status: approved
 gallery: []
 lead: Экскурсия к бразильской стороне водопадов Игуасу на территории национального парка.

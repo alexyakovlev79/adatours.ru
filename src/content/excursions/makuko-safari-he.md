@@ -15,9 +15,9 @@ priceFrom: 178
 currency: "USD"
 priceNote: "Стоимость — $178 на человека. Возможны скидки для более чем одного человека, свяжитесь с нами для обсуждения."
 hero:
-  src: "/media/excursions/macuco-safari-group-add-on/hero-enhanced-20261005.webp"
-  hover: "Красная лодка с людьми в бурном потоке"
-  alt: "Люди в красной надувной лодке среди бурлящей воды и небольших водопадов, Бразилия"
+  src: /media/excursions/makuko-safari-he/hero-generated-20261026-dedup-v1.webp
+  hover: Поездка на открытом сафари-электрокаре в лесу Игуасу — иллюстрация
+  alt: Поездка на открытом сафари-электрокаре в лесу Игуасу — иллюстрация
 gallery:
   - src: "/media/excursions/makuko-safari-he/gallery-0-src-enhanced-20261007.webp"
     hover: "Макуко Сафари: лодочная прогулка у водопадов"

@@ -10,9 +10,9 @@ destinationName: Виникунка
 relatedDestinations: []
 themes: ["theme_adventure", "theme_nature"]
 hero:
-  src: /media/excursions/ekskursiya-na-raduzhnuyu-goru-vinikunka/hero-src-enhanced-20261007.webp
-  hover: "Виникунка в Перу: полосатые горные гребни под облаками"
-  alt: "Разноцветные минеральные полосы на склонах Радужной горы Виникунка, Перу"
+  src: /media/excursions/vinicunca-helicopter-flight/hero-generated-20261026-dedup-v1.webp
+  hover: Минеральные полосы Радужной горы Виникунка с воздуха — иллюстрация
+  alt: Минеральные полосы Радужной горы Виникунка с воздуха — иллюстрация
 gallery: []
 lead: Ранним утром — захватывающий полет на вертолете над величественными Андами к Виникунке, знаменитой Радужной
   горе. С высоты открываются панорамные виды на разноцветные горные склоны, заснеженные вершины и глубокие долины

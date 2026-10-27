@@ -18,9 +18,9 @@ priceFrom: 258
 currency: USD
 priceNote: "Основная стоимость — $258. Для 2 человек — $156 на человека, для 3 человек — $141 на человека, для 4 человек — $102 на человека."
 hero:
-  src: /media/destinations/medellin/hero-enhanced-20261003.webp
-  hover: "Медельин в Колумбии: городская застройка на фоне гор"
-  alt: "Панорама Медельина с высотными домами и горами, Колумбия"
+  src: /media/excursions/medelin-siti-tur-i-eskobar/hero-generated-20261026-dedup-v1.webp
+  hover: Площадь Пьеблито-Пайса на холме Нутибара в Медельине — иллюстрация
+  alt: Площадь Пьеблито-Пайса на холме Нутибара в Медельине — иллюстрация
 gallery:
   - src: /media/excursions/medelin-siti-tur-i-eskobar/gallery-0-src-enhanced-20261008.webp
     hover: "Картина Ботеро: всадник на рыжей лошади"

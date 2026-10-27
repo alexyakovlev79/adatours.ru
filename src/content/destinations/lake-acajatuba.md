@@ -8,7 +8,10 @@ countryId: "country_brazil"
 destinationType: lake
 summary: "Озеро Акажатуба в бассейне Риу-Негру открывает Амазонию с воды: лесные протоки, зеркальные отражения и прибрежные поселения."
 searchAliases: ["ozero-akazhatuba"]
-hero: {"src": "/media/destinations/destination_brazil_derevnya_akazhatuba/hero-generated-20261008-resumed.webp", "alt": "Поселение Акажатуба на берегу амазонского водоема — иллюстрация"}
+hero:
+  src: /media/destinations/lake-acajatuba/hero-generated-20261026-dedup-v1.webp
+  alt: Зеркальная гладь озера Акажатуба и амазонский лес — иллюстрация
+  hover: Зеркальная гладь озера Акажатуба и амазонский лес — иллюстрация
 gallery: []
 themes: ["theme_nature", "theme_adventure"]
 relatedDestinations: []

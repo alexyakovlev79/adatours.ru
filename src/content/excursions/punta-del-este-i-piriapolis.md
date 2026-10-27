@@ -17,9 +17,9 @@ priceFrom: 953
 currency: USD
 priceNote: "Основная стоимость — $953. Для группы из 2–4 человек — $477 на человека."
 hero:
-  src: /media/countries/uruguay/featureBands-3-enhanced-20261002.webp
-  hover: "Скалистый берег и белые террасы здания в Уругвае"
-  alt: "Белое здание с террасами на скалистом берегу, Уругвай"
+  src: /media/excursions/punta-del-este-i-piriapolis/hero-generated-20261026-dedup-v1.webp
+  hover: Белые террасы Касапуэбло над морем в Пунта-Бальене — иллюстрация
+  alt: Белые террасы Касапуэбло над морем в Пунта-Бальене — иллюстрация
 gallery:
   - src: /media/excursions/punta-del-este-i-piriapolis/gallery-0-src-enhanced-20261008.webp
     alt: "Морская бухта, пляж и прибрежная застройка Пириаполиса, Уругвай"

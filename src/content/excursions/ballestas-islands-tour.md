@@ -17,9 +17,9 @@ priceFrom: 672
 currency: "USD"
 priceNote: "Стоимость — $1219. 2 участника — $855 на человека. 3 участника — $733 на человека. 4 участника — $672 на человека."
 hero:
-  src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
-  hover: "Наска: самолет над светлыми линиями рисунка на сухой равнине"
-  alt: "Небольшой самолет над геоглифом птицы в пустыне Наска, Перу"
+  src: /media/excursions/ballestas-islands-tour/hero-generated-20261026-dedup-v1.webp
+  hover: Пингвины Гумбольдта на скалах островов Бальестас — иллюстрация
+  alt: Пингвины Гумбольдта на скалах островов Бальестас — иллюстрация
 gallery:
   - src: "/media/excursions/ballestas-islands-tour/gallery-0-src-enhanced-20261007.webp"
     alt: "Каменная арка островов Бальестас над морем, Перу"

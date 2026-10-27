@@ -21,9 +21,9 @@ themes:
 - theme_culture
 format: Индивидуальная экскурсия
 hero:
-  src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/hero-src-enhanced-20261008.webp
-  hover: "Буэнос-Айрес: раскрытые стальные лепестки Флоралис Хенерика"
-  alt: "Металлический цветок Флоралис Хенерика над круглым бассейном в Буэнос-Айресе, Аргентина"
+  src: /media/excursions/buenos-aires-private-historic-neighbourhoods/hero-generated-20261026-dedup-v1.webp
+  hover: Исторические мавзолеи и каменный проход Реколеты — иллюстрация
+  alt: Исторические мавзолеи и каменный проход Реколеты — иллюстрация
   status: approved
 gallery: []
 lead: Обзорная экскурсия по главным районам Буэнос-Айреса в индивидуальной программе путешествия.

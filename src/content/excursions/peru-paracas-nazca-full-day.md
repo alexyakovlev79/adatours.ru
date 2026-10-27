@@ -20,9 +20,9 @@ relatedDestinations:
 duration: Полный день
 sourceSnapshot: https://drive.google.com/file/d/1RQrUA0MJJcXtAk5TRTJ1qsLE7KBHUf3p/view?usp=drivesdk
 hero:
-  src: /media/excursions/polet-nad-liniyami-naska/hero-enhanced-20261001.webp
-  hover: "Наска: самолет над светлыми линиями рисунка на сухой равнине"
-  alt: "Небольшой самолет над геоглифом птицы в пустыне Наска, Перу"
+  src: /media/excursions/peru-paracas-nazca-full-day/hero-generated-20261026-dedup-v1.webp
+  hover: Геоглиф Канделябр на пустынном берегу Паракаса — иллюстрация
+  alt: Геоглиф Канделябр на пустынном берегу Паракаса — иллюстрация
 themes: ["theme_wildlife", "theme_culture", "theme_nature"]
 ---
 

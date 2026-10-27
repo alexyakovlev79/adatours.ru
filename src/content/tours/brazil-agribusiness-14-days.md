@@ -51,9 +51,9 @@ priceNote: Стоимость по запросу. Мероприятие в Р�
   перед бронированием.
 dates: []
 hero:
-  src: /media/tours/braziliya-s-san-paulo/hero-enhanced-20261006.webp
-  hover: "Сан-Паулу: мост с перекрещенными опорами и городские высотки"
-  alt: "Вантовый мост Октавио Фриас де Оливейра над рекой в Сан-Паулу, Бразилия"
+  src: /media/tours/brazil-agribusiness-14-days/hero-generated-20261026-dedup-v1.webp
+  hover: Плантации сахарного тростника в районе Рибейран-Прету — иллюстрация
+  alt: Плантации сахарного тростника в районе Рибейран-Прету — иллюстрация
 gallery: []
 featured: false
 priority: 0

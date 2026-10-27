@@ -13,8 +13,9 @@ themes:
 lead: Индивидуальная обзорная экскурсия от парка Ибирапуэра через Жардинс, Беко-ду-Бэтмен и авениду Паулиста к историческому
   центру.
 hero:
-  src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
-  alt: Панорама Сан-Паулу, Бразилия
+  src: /media/excursions/sao-paulo-ibirapuera-jardins-batman/hero-generated-20261026-dedup-v1.webp
+  alt: Яркие граффити переулка Беко-ду-Бэтмен в Сан-Паулу — иллюстрация
+  hover: Яркие граффити переулка Беко-ду-Бэтмен в Сан-Паулу — иллюстрация
 gallery: []
 language: []
 included:

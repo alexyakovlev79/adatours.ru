@@ -244,9 +244,9 @@ priceFrom: 4953
 currency: USD
 priceNote: $4953
 hero:
-  src: /media/excursions/uyuni-na-2-dnya/hero-enhanced-20261006.webp
-  hover: "Уюни: прыжок над бескрайней соляной равниной"
-  alt: "Человек в прыжке над белой поверхностью солончака Уюни под ярко-синим небом, Боливия"
+  src: /media/tours/sokrovishcha-bolivii/hero-generated-20261026-dedup-v1.webp
+  hover: Белые колониальные улицы Сукре в Боливии — иллюстрация
+  alt: Белые колониальные улицы Сукре в Боливии — иллюстрация
 routeCountries:
 - country_bolivia
 routeDestinations:

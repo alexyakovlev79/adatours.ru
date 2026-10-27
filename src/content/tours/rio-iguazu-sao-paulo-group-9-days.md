@@ -33,9 +33,9 @@ priceNote: '$4640 на человека в DBL, $7140 в SGL для первой
   в предложении.'
 dates: []
 hero:
-  src: /media/catalog/tury/hero-enhanced-20260930.webp
-  hover: 'Рио-де-Жанейро: залив и Сахарная Голова среди городских кварталов'
-  alt: Панорама Рио-де-Жанейро с заливом, горой Сахарная Голова и городской застройкой, Бразилия
+  src: /media/tours/rio-iguazu-sao-paulo-group-9-days/hero-generated-20261026-dedup-v1.webp
+  hover: Авенида Паулиста в Сан-Паулу — иллюстрация
+  alt: Авенида Паулиста в Сан-Паулу — иллюстрация
 gallery: []
 featured: false
 priority: 0

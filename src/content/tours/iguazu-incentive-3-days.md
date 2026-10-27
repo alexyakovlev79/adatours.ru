@@ -35,8 +35,9 @@ priceNote: Стоимость рассчитывается по запросу. 
 lead: Панорамные тропы над каскадами, поездка на катере к падающей воде и прогулка среди тропических птиц. За 3 дня вы увидите
   бразильскую и аргентинскую стороны Игуасу, побываете на шоу Rafain и познакомитесь с аргентинским асадо.
 hero:
-  src: /media/destinations/foz-do-iguacu/hero-enhanced-20261001.webp
-  alt: Водопады Игуасу со стороны Бразилии
+  src: /media/tours/iguazu-incentive-3-days/hero-generated-20261026-dedup-v1.webp
+  alt: Лодка Macuco Safari на реке у водопадов Игуасу — иллюстрация
+  hover: Лодка Macuco Safari на реке у водопадов Игуасу — иллюстрация
 gallery: []
 itinerary:
 - day: 1

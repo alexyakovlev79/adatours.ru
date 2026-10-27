@@ -14,9 +14,9 @@ relatedDestinations:
 - destination_chile_osorno_volcano
 themes: ["theme_nature"]
 hero:
-  src: /media/excursions/peujja-i-vodopady-petroje/hero-regenerated-20261011-v1.webp
-  hover: "Петроуэ: бурная вода на скалистых уступах среди лесистых берегов"
-  alt: "Бирюзовые каскады Петроуэ между темными скалами и зеленым лесом, Чили"
+  src: /media/excursions/petrohue-osorno-private-nature-day/hero-generated-20261026-dedup-v1.webp
+  hover: Бирюзовые каскады Петроуэ и вулкан Осорно — иллюстрация
+  alt: Бирюзовые каскады Петроуэ и вулкан Осорно — иллюстрация
 gallery: []
 lead: После завтрака — индивидуальная поездка в Национальный парк Висенте-Перес-Росалес, расположенный в самом сердце
   Озерного края. Маршрут пройдет среди вечнозеленых лесов, горных пейзажей и озер с кристально чистой водой. Главной

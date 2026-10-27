@@ -135,9 +135,9 @@ priceFrom: 1960
 currency: USD
 priceNote: $1960
 hero:
-  src: "/media/excursions/ostrov-plasa/hero-src-enhanced-20261007.webp"
-  alt: "Морской лев на белом песке у прибоя, Галапагосские острова, Эквадор"
-  hover: "Галапагосы в Эквадоре: сидящий морской лев и отдыхающие животные у воды"
+  src: /media/tours/ekvador-i-galapagosskie-ostrova-v-iyule/hero-generated-20261026-dedup-v1.webp
+  alt: Кратерное озеро Килотоа и вулканические склоны в Эквадоре — иллюстрация
+  hover: Кратерное озеро Килотоа и вулканические склоны в Эквадоре — иллюстрация
 routeCountries:
 - country_ecuador
 routeDestinations:

@@ -8,7 +8,10 @@ countryId: "country_ecuador"
 destinationType: natural_area
 summary: "Пунта-Эспиноза на Фернандине позволяет пройти по лавовому берегу среди морских игуан и увидеть нелетающих бакланов."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_fernandina_island/hero-generated-20261010-third-ten-v1.webp", "alt": "Морские игуаны у воды на Пунта-Эспинозе — иллюстрация", "hover": "Пунта-Эспиноза на Фернандине позволяет пройти по лавовому берегу среди морских игуан и увидеть нелетающих бакланов."}
+hero:
+  src: /media/destinations/punta-espinoza/hero-generated-20261026-dedup-v1.webp
+  alt: Морская игуана на черной лаве Пунта-Эспинозы — иллюстрация
+  hover: Морская игуана на черной лаве Пунта-Эспинозы — иллюстрация
 gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []

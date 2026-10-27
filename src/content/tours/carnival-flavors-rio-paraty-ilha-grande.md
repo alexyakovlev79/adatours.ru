@@ -42,9 +42,9 @@ priceNote: От $1940 на человека в двухместном номер
   6 тарифов приведены в таблице.
 dates: []
 hero:
-  src: /media/tours/3-strany-latinskoj-ameriki-na-karnaval-v-rio/hero-enhanced-20261006.webp
-  hover: "Синий карнавальный костюм и перья во время уличного шествия"
-  alt: "Участница уличного карнавала в синем костюме с большими перьями"
+  src: /media/tours/carnival-flavors-rio-paraty-ilha-grande/hero-generated-20261026-dedup-v1.webp
+  hover: Историческая набережная Парати с церковью Санта-Рита и лодками — иллюстрация
+  alt: Историческая набережная Парати с церковью Санта-Рита и лодками — иллюстрация
 gallery: []
 featured: false
 priority: 0

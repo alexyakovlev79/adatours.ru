@@ -34,9 +34,9 @@ priceFrom: 3939
 currency: USD
 dates: []
 hero:
-  src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-  hover: "Аргентинская Патагония: озерная бухта среди леса и гор"
-  alt: "Лесистые берега голубого озера на фоне гор Патагонии, Аргентина"
+  src: /media/tours/prostory-patagonii-chili-i-argentina-v-odnom-puteshestvii/hero-generated-20261026-dedup-v1.webp
+  hover: Гуанако в степях Торрес-дель-Пайне на фоне гор — иллюстрация
+  alt: Гуанако в степях Торрес-дель-Пайне на фоне гор — иллюстрация
 gallery: []
 featured: false
 priority: 0

@@ -12,9 +12,9 @@ themes: ["theme_nature", "theme_culture"]
 language: []
 lead: Водные пути, острова и дома у берега в Тигре и дельте Параны. Полудневная экскурсия с гидом, билетами и обедом.
 hero:
-  src: /media/excursions/jekskursija-v-tigre/hero-enhanced-20261001.webp
-  hover: "Тигре: здание с башней в окружении пальм"
-  alt: "Здание с башней и декоративным фахверком за пальмами и газонами в Тигре, Аргентина"
+  src: /media/excursions/tigre-parana-delta-half-day-lunch/hero-generated-20261026-dedup-v1.webp
+  hover: Деревянный дом и причал среди проток дельты Параны — иллюстрация
+  alt: Деревянный дом и причал среди проток дельты Параны — иллюстрация
 gallery: []
 route:
 - Тигре

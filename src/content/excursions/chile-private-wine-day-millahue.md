@@ -11,10 +11,10 @@ themes:
 - theme_gastronomy_wine
 format: Индивидуальная экскурсия
 hero:
-  src: /media/tours/chile-argentina-private-grand-tour-17-days/colchagua-generated-20261011-v1.webp
-  alt: "Ряды виноградников на фоне холмов долины Кольчагуа, Чили"
+  src: /media/excursions/chile-private-wine-day-millahue/hero-generated-20261026-dedup-v1.webp
+  alt: Дегустационный стол и дубовые бочки на винодельне Чили — иллюстрация
   status: approved
-  hover: "Долина Кольчагуа в Чили: виноградные ряды в теплом вечернем свете"
+  hover: Дегустационный стол и дубовые бочки на винодельне Чили — иллюстрация
 gallery: []
 lead: Персональные дегустации в закрытых залах виноделен, прогулки на лошадях по виноградникам и частный ужин среди
   бочек.

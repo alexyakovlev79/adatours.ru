@@ -14,9 +14,9 @@ relatedDestinations:
   - destination_argentina_buenos_aires
 language: []
 hero:
-  src: /media/countries/uruguay/featureBands-2-enhanced-20261002.webp
-  hover: "Колония-дель-Сакраменто: цветущий куст возле арочного входа"
-  alt: "Деревянная дверь и красные цветы у старого фасада Колонии-дель-Сакраменто, Уругвай"
+  src: /media/excursions/koloniya-del-sakramento-iz-buenos-ajresa/hero-generated-20261026-dedup-v1.webp
+  hover: Набережная и лодки Колонии-дель-Сакраменто — иллюстрация
+  alt: Набережная и лодки Колонии-дель-Сакраменто — иллюстрация
 gallery: []
 route:
   - "Буэнос-Айрес"

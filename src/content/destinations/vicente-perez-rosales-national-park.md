@@ -9,9 +9,9 @@ destinationType: national_park
 summary: Висенте-Перес-Росалес — национальный парк Озерного края Чили. Его пейзажи объединяют вечнозеленые леса,
   вулканические горы и прозрачную воду.
 hero:
-  src: /media/tours/south-america-luxury-33-days/pdf-x722-20261011-v1-enhanced-20261011-pass2324-v1.webp
-  hover: "Петроуэ: зеленые ветви над яркой водой реки"
-  alt: "Бирюзовая вода Петроуэ под нависающей веткой среди лесистых берегов, Чили"
+  src: /media/destinations/vicente-perez-rosales-national-park/hero-generated-20261026-dedup-v1.webp
+  hover: Лесная тропа и ручей в парке Висенте-Перес-Росалес — иллюстрация
+  alt: Лесная тропа и ручей в парке Висенте-Перес-Росалес — иллюстрация
 gallery: []
 themes: ["theme_nature"]
 searchAliases:

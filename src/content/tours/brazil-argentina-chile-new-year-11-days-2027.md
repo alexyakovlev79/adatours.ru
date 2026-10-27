@@ -77,9 +77,9 @@ priceNote: От $5008 на человека в трехместном номер
 dates:
 - 30.12.2026–09.01.2027
 hero:
-  src: /media/tours/mechty-sbyvayutsya-na-novyj-god/hero-enhanced-20261006.webp
-  alt: "Разноцветные вспышки фейерверка на фоне черного ночного неба"
-  hover: "Красные, зеленые и синие огни салюта в ночном небе"
+  src: /media/tours/brazil-argentina-chile-new-year-11-days-2027/hero-generated-20261026-dedup-v1.webp
+  alt: Новогодний салют над Атлантическим океаном у Копакабаны — иллюстрация
+  hover: Новогодний салют над Атлантическим океаном у Копакабаны — иллюстрация
 gallery: []
 featured: false
 priority: 0

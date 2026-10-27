@@ -296,9 +296,9 @@ priceFrom: 4300
 currency: USD
 priceNote: От $4300 на человека при трехместном размещении в отелях 3*. DBL от $4306. Внутренние перелеты включены.
 hero:
-  src: /media/tours/parad-chempionov-v-rio-de-zhanejro-vodopady/archive-16-src-enhanced-20261008.webp
-  hover: "Карнавал в Рио: сине-золотые костюмы и флаг перед трибунами"
-  alt: "Участники карнавала в сине-золотых костюмах с перьями и флагом на Самбадроме Рио, Бразилия"
+  src: /media/tours/mechty-sbyvayutsya-na-parad-chempionov-karnavala/hero-generated-20261026-dedup-v1.webp
+  hover: Исторические доки Пуэрто-Мадеро в Буэнос-Айресе — иллюстрация
+  alt: Исторические доки Пуэрто-Мадеро в Буэнос-Айресе — иллюстрация
 routeCountries:
 - country_brazil
 - country_argentina

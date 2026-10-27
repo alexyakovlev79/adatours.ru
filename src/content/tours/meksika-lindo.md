@@ -184,9 +184,9 @@ priceFrom: 1475
 currency: USD
 priceNote: $1475
 hero:
-  src: /media/countries/mexico/featureBands-2-enhanced-20261002.webp
-  hover: "Пальма над бирюзовым морем у скалистого берега Мексики"
-  alt: "Скалистый морской берег с наклоненной пальмой и густой зеленью у бирюзовой воды, Мексика"
+  src: /media/tours/meksika-lindo/hero-generated-20261026-dedup-v1.webp
+  hover: Пирамида Волшебника в Ушмале на Юкатане — иллюстрация
+  alt: Пирамида Волшебника в Ушмале на Юкатане — иллюстрация
 routeCountries:
 - country_mexico
 routeDestinations:

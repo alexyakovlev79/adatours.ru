@@ -9,9 +9,9 @@ destinationType: museum
 summary: Музей Фонка входит в культурную часть знакомства с Винья-дель-Мар. После побережья и садов эта остановка переключает
   внимание на историю и музейные коллекции города.
 hero:
-  src: /media/excursions/vin-ja-del-mar-i-val-paraiso/gallery-2-src-enhanced-20261007.webp
-  alt: Пляж и прибрежные здания Винья-дель-Мар, Чили
-  hover: Пляж и прибрежные здания Винья-дель-Мар, Чили
+  src: /media/destinations/fonck-museum/hero-generated-20261026-dedup-v1.webp
+  alt: Каменный моаи у музея Фонка в Винья-дель-Мар — иллюстрация
+  hover: Каменный моаи у музея Фонка в Винья-дель-Мар — иллюстрация
   status: approved
 gallery: []
 themes:

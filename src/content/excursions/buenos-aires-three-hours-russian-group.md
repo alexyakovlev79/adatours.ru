@@ -19,9 +19,9 @@ themes:
 - theme_culture
 lead: Ла-Бока, Сан-Тельмо, Пласа-де-Майо, Реколета и Пуэрто-Мадеро с русскоговорящим гидом.
 hero:
-  src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/hero-src-enhanced-20261008.webp
-  hover: "Буэнос-Айрес: раскрытые стальные лепестки Флоралис Хенерика"
-  alt: "Металлический цветок Флоралис Хенерика над круглым бассейном в Буэнос-Айресе, Аргентина"
+  src: /media/excursions/buenos-aires-three-hours-russian-group/hero-generated-20261026-dedup-v1.webp
+  hover: Площадь Мая и розовый фасад Каса-Росада — иллюстрация
+  alt: Площадь Мая и розовый фасад Каса-Росада — иллюстрация
 locale: ru
 status: approved
 format: Групповая экскурсия

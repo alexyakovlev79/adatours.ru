@@ -240,9 +240,9 @@ priceFrom: null
 priceNote: Стоимость и даты путешествия по запросу.
 dates: []
 hero:
-  src: /media/destinations/machu-picchu/hero-enhanced-20260930.webp
-  hover: "Мачу-Пикчу: древние террасы над глубокой горной долиной"
-  alt: "Каменные постройки и террасы Мачу-Пикчу среди гор и облаков, Перу"
+  src: /media/tours/south-america-luxury-33-days/hero-generated-20261026-dedup-v1.webp
+  hover: Дома палафитос в Кастро на острове Чилоэ — иллюстрация
+  alt: Дома палафитос в Кастро на острове Чилоэ — иллюстрация
 gallery: []
 featured: false
 lead: За 33 дня вы пройдете от перуанской Амазонии до чилийской Патагонии. Круиз Aqua Nera, поезда Hiram Bingham

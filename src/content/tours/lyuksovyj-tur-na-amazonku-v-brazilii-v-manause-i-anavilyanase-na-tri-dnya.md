@@ -236,8 +236,9 @@ priceFrom: 4270
 currency: USD
 priceNote: $4270
 hero:
-  src: "/media/home/amazon-enhanced-20260930.webp"
-  alt: "Лодка движется по реке среди тропического леса, Амазония, Бразилия"
+  src: /media/tours/lyuksovyj-tur-na-amazonku-v-brazilii-v-manause-i-anavilyanase-na-tri-dnya/hero-generated-20261026-dedup-v1.webp
+  alt: Острова Анавильянас и протоки Риу-Негру с высоты — иллюстрация
+  hover: Острова Анавильянас и протоки Риу-Негру с высоты — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

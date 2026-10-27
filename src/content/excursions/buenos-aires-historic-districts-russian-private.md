@@ -17,9 +17,9 @@ relatedDestinations:
 themes:
 - theme_culture
 hero:
-  src: /media/excursions/buenos-ajres-sochetanie-istorii-i-iskusstva/hero-src-enhanced-20261008.webp
-  hover: "Буэнос-Айрес: раскрытые стальные лепестки Флоралис Хенерика"
-  alt: "Металлический цветок Флоралис Хенерика над круглым бассейном в Буэнос-Айресе, Аргентина"
+  src: /media/excursions/buenos-aires-historic-districts-russian-private/hero-generated-20261026-dedup-v1.webp
+  hover: Обелиск на авениде 9 Июля в Буэнос-Айресе — иллюстрация
+  alt: Обелиск на авениде 9 Июля в Буэнос-Айресе — иллюстрация
 gallery: []
 lead: Знакомство с Буэнос-Айресом проходит с русскоговорящим гидом. Вы увидите Обелиск, прогуляетесь по Ла-Бока
   с ее яркими домами и по Сан-Тельмо, где исторические улицы соседствуют с кафе и ресторанами. На Пласа-Доррего

@@ -36,9 +36,9 @@ priceFrom: 5995
 currency: USD
 dates: []
 hero:
-  src: /media/tours/argentina-chili-i-prekrasnaya-patagoniya/hero-enhanced-20261006.webp
-  hover: "Аргентинская Патагония: озерная бухта среди леса и гор"
-  alt: "Лесистые берега голубого озера на фоне гор Патагонии, Аргентина"
+  src: /media/tours/patagoniya-i-chilijskie-fordy/hero-generated-20261026-dedup-v1.webp
+  hover: Деревянные настилы и дома Калета-Тортель над фьордом — иллюстрация
+  alt: Деревянные настилы и дома Калета-Тортель над фьордом — иллюстрация
 gallery: []
 featured: false
 priority: 0

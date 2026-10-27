@@ -15,9 +15,9 @@ relatedDestinations:
 themes:
 - theme_culture
 hero:
-  src: /media/excursions/obzornaja-jekskursija-po-sant-jago/hero-src-enhanced-20261007.webp
-  hover: "Сантьяго в Чили: город под длинным снежным хребтом"
-  alt: "Панорама Сантьяго с высокой башней на фоне заснеженных Анд, Чили"
+  src: /media/excursions/santiago-private-historic-centre-east/hero-generated-20261026-dedup-v1.webp
+  hover: Терраса Нептуна на холме Санта-Лючия в Сантьяго — иллюстрация
+  alt: Терраса Нептуна на холме Санта-Лючия в Сантьяго — иллюстрация
   status: approved
 gallery: []
 lead: После размещения в отеле — обзорная экскурсия по историческому центру Сантьяго.

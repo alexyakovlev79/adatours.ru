@@ -16,8 +16,9 @@ language:
 - английский
 lead: Обзорная экскурсия с англоговорящим гидом по улицам и проспектам Сан-Паулу, включая авениду Паулиста.
 hero:
-  src: /media/destinations/sao-paulo/hero-enhanced-20261001.webp
-  alt: Панорама Сан-Паулу, Бразилия
+  src: /media/excursions/sao-paulo-paulista-four-hours/hero-generated-20261026-dedup-v1.webp
+  alt: Велосипедная дорожка и городская жизнь авениды Паулиста — иллюстрация
+  hover: Велосипедная дорожка и городская жизнь авениды Паулиста — иллюстрация
 gallery: []
 route:
 - Сан-Паулу

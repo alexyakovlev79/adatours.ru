@@ -301,9 +301,9 @@ priceFrom: 6669
 currency: USD
 priceNote: $6669
 hero:
-  src: /media/tours/brazil-northeast-recife-porto-noronha-10d/itinerary/day-05-enhanced-20260930.webp
-  hover: "Порту-де-Галиньяс: лодки между природными бассейнами у рифа"
-  alt: "Лодки на бирюзовом мелководье среди рифовых бассейнов Порту-де-Галиньяс, Бразилия"
+  src: /media/tours/rajskaya-braziliya/hero-generated-20261026-dedup-v1.webp
+  hover: Бухта Саншу на Фернанду-ди-Норонья — иллюстрация
+  alt: Бухта Саншу на Фернанду-ди-Норонья — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

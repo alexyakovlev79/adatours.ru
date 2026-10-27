@@ -16,9 +16,9 @@ route:
 - Отель
 lead: Вечер на Самбодроме с выступлениями школ самбы и трансфером из отеля.
 hero:
-  src: /media/tours/ekzoticheskij-karnaval-parad-chempionov-v-brazilii/hero-enhanced-20261007.webp
-  hover: "Карнавал в Рио-де-Жанейро: разноцветные юбки и пышные головные уборы"
-  alt: "Участницы карнавала в Рио в ярких костюмах с перьями, Бразилия"
+  src: /media/excursions/carnival-sambadrome-transfer/hero-generated-20261026-dedup-v1.webp
+  hover: Барабанщики школы самбы на карнавале в Рио — иллюстрация
+  alt: Барабанщики школы самбы на карнавале в Рио — иллюстрация
 gallery: []
 language: []
 included: []

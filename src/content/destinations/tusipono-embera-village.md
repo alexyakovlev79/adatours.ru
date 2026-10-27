@@ -9,9 +9,9 @@ destinationType: village
 summary: Община эмбера в бассейне реки Чагрес. Знакомство с местными жителями проходит через музыку, танцы и традиционные
   ремесла.
 hero:
-  src: /media/tours/panama-city-gamboa-6-days/word-5-20261010-enhanced-20261011-pass2324-v1.webp
-  hover: "Эмбера на Чагресе: музыканты на речном берегу"
-  alt: "Мужчины и мальчики эмбера играют на барабанах и других инструментах у реки Чагрес, Панама"
+  src: /media/destinations/tusipono-embera-village/hero-generated-20261026-dedup-v1.webp
+  hover: Мастерица эмбера плетет корзину в деревне Тусипоно — иллюстрация
+  alt: Мастерица эмбера плетет корзину в деревне Тусипоно — иллюстрация
 gallery: []
 themes:
 - theme_culture

@@ -23,9 +23,9 @@ route:
 lead: Экскурсия к Саксайуаману, Храму Солнца Кориканча и Тамбомачаю с видом на соседнюю Пука-Пукару знакомит с крепостной,
   религиозной и водной архитектурой инков.
 hero:
-  src: /media/excursions/obzornaya-ekskursiya-po-gorodu-i-arkheologicheskij-park-saksajuaman/gallery-0-src-enhanced-20261007.webp
-  hover: 'Саксайуаман: массивная каменная кладка и лестница'
-  alt: Проем и каменная лестница в стенах из крупных блоков Саксайуамана, Куско, Перу
+  src: /media/excursions/sacsayhuaman-coricancha-tambomachay/hero-generated-20261026-dedup-v1.webp
+  hover: Каменные террасы и водные каналы Тамбомачая у Куско — иллюстрация
+  alt: Каменные террасы и водные каналы Тамбомачая у Куско — иллюстрация
 gallery: []
 language: []
 included: []

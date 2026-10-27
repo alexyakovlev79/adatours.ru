@@ -11,9 +11,9 @@ relatedDestinations: []
 themes:
 - theme_culture
 hero:
-  src: /media/tours/otkryvaya-gvatemalu/itinerary-4-images-0-src-enhanced-20261007.webp
-  alt: Ступенчатый храм Тикаля среди руин и тропического леса, Гватемала
-  hover: 'Тикаль в Гватемале: каменный храм над зелёной площадью'
+  src: /media/excursions/tikal-optional-excursion-from-antigua/hero-generated-20261026-dedup-v1.webp
+  alt: Храм I в Тикале среди тропического леса Гватемалы — иллюстрация
+  hover: Храм I в Тикале среди тропического леса Гватемалы — иллюстрация
 gallery: []
 lead: Знакомство с древним городом майя Тикалем как дополнительный вариант свободного дня в Антигуа.
 included: []

@@ -135,9 +135,9 @@ priceFrom: 4145
 currency: USD
 priceNote: $4145
 hero:
-  src: "/media/tours/ekzoticheskij-koktejl-na-parad-chempionov-karnavala/itinerary-day-7-enhanced-20261006.webp"
-  hover: "Пантанал: плавающие листья кувшинок на фоне зеленых гор"
-  alt: "Крупные круглые листья водных кувшинок и белый цветок в Пантанале, Бразилия"
+  src: /media/tours/pantanal-za-5-dnej/hero-generated-20261026-dedup-v1.webp
+  hover: Ягуар на речном берегу в Пантанале — иллюстрация
+  alt: Ягуар на речном берегу в Пантанале — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

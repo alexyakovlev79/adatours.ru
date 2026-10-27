@@ -8,9 +8,9 @@ countryId: country_ecuador
 destinationType: island
 summary: Северная Пласа у восточного побережья Санта-Крус знакомит с подводными склонами и морскими животными Галапагосов.
 hero:
-  src: /media/excursions/tur-na-ostrov-florena/hero-enhanced-20261001.webp
-  hover: "Галапагосы: морские львы отдыхают у бирюзового океана"
-  alt: "Морские львы на светлом песчаном пляже Галапагосских островов, Эквадор"
+  src: /media/destinations/north-plaza-island/hero-generated-20261026-dedup-v1.webp
+  hover: Морская черепаха у подводного склона Северной Пласы — иллюстрация
+  alt: Морская черепаха у подводного склона Северной Пласы — иллюстрация
 gallery: []
 themes:
 - theme_wildlife

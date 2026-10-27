@@ -8,7 +8,10 @@ countryId: "country_ecuador"
 destinationType: natural_area
 summary: "Мыс Суарес на Эспаньоле приглашает на прогулку среди морских игуан и птиц к скалам, где волны поднимают фонтан брызг."
 searchAliases: []
-hero: {"src": "/media/destinations/destination_ecuador_espanola_island/hero-generated-20261010-editorial-v1.webp", "alt": "Галапагосский альбатрос на скалистом берегу Эспаньолы — иллюстрация"}
+hero:
+  src: /media/destinations/punta-suarez/hero-generated-20261026-dedup-v1.webp
+  alt: Олуша Наска на скалистом мысе Суарес — иллюстрация
+  hover: Олуша Наска на скалистом мысе Суарес — иллюстрация
 gallery: []
 themes: ["theme_wildlife", "theme_nature"]
 relatedDestinations: []

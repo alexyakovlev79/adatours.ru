@@ -283,9 +283,9 @@ priceFrom: 3665
 currency: USD
 priceNote: 3665 USD — трёхместное; 3745 USD — двухместное; 4565 USD — одноместное размещение. Цена на человека.
 hero:
-  src: "/media/countries/ekvador/featureBands-2-enhanced-20261002.webp"
-  hover: "Галапагосские острова: красные крабы на лавовой скале"
-  alt: "Яркие красные крабы на черной прибрежной скале, Галапагосы, Эквадор"
+  src: /media/tours/ves-ekvador-i-gorbatye-kity/hero-generated-20261026-dedup-v1.webp
+  hover: Горбатый кит в Тихом океане у побережья Эквадора — иллюстрация
+  alt: Горбатый кит в Тихом океане у побережья Эквадора — иллюстрация
 routeCountries:
 - country_ecuador
 routeDestinations:

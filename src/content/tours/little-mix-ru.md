@@ -346,9 +346,9 @@ priceFrom: 3510
 currency: USD
 priceNote: $3510
 hero:
-  src: /media/tours/brazil-gems-14d/hero-enhanced-20260930.webp
-  hover: "Рио-де-Жанейро: океанский пляж у подножия зеленых гор"
-  alt: "Длинный пляж Рио-де-Жанейро у океана под зелеными скалистыми вершинами, Бразилия"
+  src: /media/tours/little-mix-ru/hero-generated-20261026-dedup-v1.webp
+  hover: Цветные колониальные дома Пелуринью в Сальвадоре — иллюстрация
+  alt: Цветные колониальные дома Пелуринью в Сальвадоре — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

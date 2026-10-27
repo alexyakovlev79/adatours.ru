@@ -135,9 +135,9 @@ priceFrom: 919
 currency: USD
 priceNote: $919
 hero:
-  src: /media/countries/peru/hero-enhanced-20260930.webp
-  hover: "Перу: девочка и альпака крупным планом"
-  alt: "Девочка в традиционной цветной шляпе рядом с альпакой в Перу"
+  src: /media/tours/peru-strana-inkov/hero-generated-20261026-dedup-v1.webp
+  hover: Каменный город Мачу-Пикчу среди облачных Анд — иллюстрация
+  alt: Каменный город Мачу-Пикчу среди облачных Анд — иллюстрация
 routeCountries:
 - country_peru
 routeDestinations:

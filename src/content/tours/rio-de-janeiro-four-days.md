@@ -30,8 +30,9 @@ priceNote: От $1255 на человека при трехместном раз
   от $1447. Все 9 тарифов на 2027 год приведены в таблице.
 dates: []
 hero:
-  src: /media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp
-  alt: Рио-де-Жанейро вечером
+  src: /media/tours/rio-de-janeiro-four-days/hero-generated-20261026-dedup-v1.webp
+  alt: Канатная дорога Сахарной Головы над заливом Гуанабара — иллюстрация
+  hover: Канатная дорога Сахарной Головы над заливом Гуанабара — иллюстрация
 gallery: []
 featured: false
 priority: 0

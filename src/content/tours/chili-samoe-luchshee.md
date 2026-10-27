@@ -300,9 +300,9 @@ priceFrom: 6174
 currency: USD
 priceNote: $6174
 hero:
-  src: /media/tours/chili-i-argentina-vip/hero-enhanced-20261006.webp
-  hover: "Торрес-дель-Пайне: горные пики и бирюзовое озеро на закате"
-  alt: "Скалистые вершины Торрес-дель-Пайне над бирюзовым озером под розовыми облаками, Чили"
+  src: /media/tours/chili-samoe-luchshee/hero-generated-20261026-dedup-v1.webp
+  hover: Массив Куэрнос-дель-Пайне и озеро Пеое в Чили — иллюстрация
+  alt: Массив Куэрнос-дель-Пайне и озеро Пеое в Чили — иллюстрация
 routeCountries:
 - country_chile
 routeDestinations:

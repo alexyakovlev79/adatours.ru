@@ -17,9 +17,9 @@ lead: Чичен-Ица, сенот и Вальядолид с трансфер�
 themes:
 - theme_culture
 hero:
-  src: /media/destinations/destination_mexico_chichen_ica/hero-generated-20261008.webp
-  hover: "Чичен-Ица в Мексике: древняя пирамида над травянистой площадью"
-  alt: "Ступенчатая пирамида с длинной лестницей на зеленой площади Чичен-Ицы, Мексика"
+  src: /media/excursions/chichen-itza-valladolid-caribbean-transfer/hero-generated-20261026-dedup-v1.webp
+  hover: Сенот Юкатана с прозрачной водой и свисающими корнями — иллюстрация
+  alt: Сенот Юкатана с прозрачной водой и свисающими корнями — иллюстрация
 duration: Полный день
 language:
 - английский

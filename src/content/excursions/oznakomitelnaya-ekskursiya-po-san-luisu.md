@@ -13,9 +13,9 @@ duration: около 3 часов
 language:
   - Английский
 hero:
-  src: /media/excursions/oznakomitelnaya-ekskursiya-po-san-luisu/hero-enhanced-20261001.webp
-  hover: "Сан-Луис: узорчатая плитка вокруг окон с балконами"
-  alt: "Красные окна и металлические балконы на фасаде с сине-белой плиткой в Сан-Луисе, Бразилия"
+  src: /media/excursions/oznakomitelnaya-ekskursiya-po-san-luisu/hero-generated-20261026-dedup-v1.webp
+  hover: Улица Сан-Луиса с фасадами из португальских азулежу — иллюстрация
+  alt: Улица Сан-Луиса с фасадами из португальских азулежу — иллюстрация
 gallery: []
 route:
   - Сан-Луис

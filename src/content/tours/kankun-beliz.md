@@ -225,9 +225,9 @@ priceFrom: 5530
 currency: USD
 priceNote: $5530
 hero:
-  src: /media/tours/bolshie-meksikanskie-kanikuly/hero-enhanced-20261006.webp
-  hover: "Канкун: бассейны у белого пляжа и бирюзового моря"
-  alt: "Вид сверху на бассейны отеля, широкий песчаный пляж и морской прибой в Канкуне, Мексика"
+  src: /media/tours/kankun-beliz/hero-generated-20261026-dedup-v1.webp
+  hover: Деревянный пирс и бирюзовая вода у Амбергрис-Кайе в Белизе — иллюстрация
+  alt: Деревянный пирс и бирюзовая вода у Амбергрис-Кайе в Белизе — иллюстрация
 routeCountries:
 - country_mexico
 - country_belize

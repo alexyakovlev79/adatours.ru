@@ -51,9 +51,9 @@ currency: USD
 priceNote: "Отели 4*: 474 Buenos Aires (4 ночи), Calafate Parque (2 ночи), Wyndham Garden Ushuaia (2 ночи), Mercure Iguazu (3 ночи). 1 гость SGL — $7 568; 2 гостя SGL — $5 651; 2 гостя DBL — $4 036; 3 гостя SGL — $5 265; 3 гостя DBL — $3 650; 3 гостя TRL — $3 578."
 dates: []
 hero:
-  src: /media/excursions/polet-na-vertolete-nad-ushuajej/hero-enhanced-20261006.webp
-  hover: "Ушуайя: птицы на прибрежных скалах рядом с полосатым маяком"
-  alt: "Красно-белый маяк и морские птицы на скалистом островке у Ушуайи, Аргентина"
+  src: /media/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu/hero-generated-20261026-dedup-v1.webp
+  hover: Ушуайя у пролива Бигл на фоне гор Огненной Земли — иллюстрация
+  alt: Ушуайя у пролива Бигл на фоне гор Огненной Земли — иллюстрация
 gallery: []
 featured: false
 priority: 0

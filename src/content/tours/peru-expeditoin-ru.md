@@ -201,9 +201,9 @@ priceFrom: 1245
 currency: USD
 priceNote: $1245
 hero:
-  src: "/media/excursions/odnodnevnyj-tur-dlya-issledovaniya-ozera-titikaka/hero-src-enhanced-20261007.webp"
-  hover: "Урос: цветные наряды жителей и лодка у тростникового берега"
-  alt: "Тростниковая лодка и жители плавучего острова Урос, озеро Титикака, Перу"
+  src: /media/tours/peru-expeditoin-ru/hero-generated-20261026-dedup-v1.webp
+  hover: Улица Куско с инкской каменной кладкой — иллюстрация
+  alt: Улица Куско с инкской каменной кладкой — иллюстрация
 routeCountries:
 - country_peru
 routeDestinations:

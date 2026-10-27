@@ -12,9 +12,9 @@ searchAliases:
 - park-amboro
 themes: ["theme_nature", "theme_adventure"]
 hero:
-  src: /media/tours/krasivaya-boliviya/hero-enhanced-20261006.webp
-  hover: "Пустынный пейзаж между охристыми скалами"
-  alt: "Песчаный склон и далекие горы между охристыми скальными стенами"
+  src: /media/destinations/amboro-national-park/hero-generated-20261026-dedup-v1.webp
+  hover: Облачный лес с древовидными папоротниками в парке Амборо — иллюстрация
+  alt: Облачный лес с древовидными папоротниками в парке Амборо — иллюстрация
 gallery: []
 relatedDestinations: []
 featuredTours: []

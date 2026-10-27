@@ -14,9 +14,9 @@ themes:
 - theme_culture
 format: Индивидуальная экскурсия
 hero:
-  src: /media/tours/programma-dlya-aktivnykh-lyudej/itinerary-day-09-generated-20261008-v1.webp
-  hover: "Аху-Акиви: статуи моаи на травянистом склоне"
-  alt: "Ряд каменных моаи на платформе Аху-Акиви, остров Пасхи, Чили"
+  src: /media/excursions/easter-island-akivi-puna-pau-tahai/hero-generated-20261026-dedup-v1.webp
+  hover: Красные каменные пукао в карьере Пуна-Пау на Рапа-Нуи — иллюстрация
+  alt: Красные каменные пукао в карьере Пуна-Пау на Рапа-Нуи — иллюстрация
 gallery: []
 lead: 'Утренняя экскурсия к 3 памятникам Рапа-Нуи: Аху-Акиви, Пуна-Пау и Тахаи.'
 included: []

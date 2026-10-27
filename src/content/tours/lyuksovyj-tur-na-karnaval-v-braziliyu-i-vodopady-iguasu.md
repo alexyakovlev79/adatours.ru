@@ -342,9 +342,9 @@ priceFrom: 26780
 currency: USD
 priceNote: $26780
 hero:
-  src: /media/tours/ekzoticheskij-karnaval-v-brazilii/hero-enhanced-20261006.webp
-  hover: "Карнавал в Рио: яркие костюмы и пышные головные уборы участниц"
-  alt: "Участницы карнавала Рио в желтых костюмах с синими и розовыми перьями, Бразилия"
+  src: /media/tours/lyuksovyj-tur-na-karnaval-v-braziliyu-i-vodopady-iguasu/hero-generated-20261026-dedup-v1.webp
+  hover: Участница карнавала в Рио в фиолетово-золотом костюме — иллюстрация
+  alt: Участница карнавала в Рио в фиолетово-золотом костюме — иллюстрация
 routeCountries:
 - country_brazil
 routeDestinations:

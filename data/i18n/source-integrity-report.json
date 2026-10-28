@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-28",
+  "repositoryCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+  "checks": {
+    "sourceIdsUnique": true,
+    "tourIdsUnique": true,
+    "tourPathsUnique": true,
+    "tourIdsAgreeWithGitBaseline": true,
+    "allCandidateReferencesResolve": true,
+    "allCandidateYearsAgree": true,
+    "all34ArchivedExcluded": true,
+    "allAiOnlyFalse": true,
+    "pilotIdsUnique": true,
+    "all8PilotToursExistAndActive": true,
+    "all8PilotSourceReferencesResolve": true,
+    "all8PilotHashesAgreeWithGitBaseline": true,
+    "all8SelectedSourcesAgreeWithPilot": true,
+    "noPilotPublicationAllowed": true,
+    "noClaimOfCompleteSemanticMatching": true,
+    "allPublicGoogleUrlsHaveNoQueryOrFragment": true,
+    "noSignedUrlsCredentialsOrAccountQueryHits": true,
+    "sourceManifestFingerprintAgrees": true,
+    "pilotFingerprintAgrees": true
+  },
+  "allPassed": true,
+  "counts": {
+    "sourceDocuments": 732,
+    "tours": 392,
+    "activeTours": 358,
+    "archivedTours": 34,
+    "pilotPairs": 8,
+    "candidateReferenceOccurrences": 1858,
+    "googleUrlOccurrences": 742,
+    "urlQueryOccurrencesRemoved": 740
+  },
+  "reproducibility": {
+    "commandRan": true,
+    "rowsCompared": 392,
+    "rowDifferences": 0,
+    "method": "Public builder from safe source manifest + exact local Git baseline + pilot JSON; no private snapshots or DOCX required."
+  },
+  "privacyPatternHits": [],
+  "scopeLimit": "Integrity, reference resolution and observed privacy-pattern checks only. This is not complete semantic matching, full translation acceptance or release approval.",
+  "artifactSha256": {
+    "WORD_SOURCE_INVENTORY.md": "98f97099b55d150a2cd209297e9d28c423710a8e5492e337e3d4f0cd190d88cd",
+    "build-candidate-matches.py": "b64a54a9e6e7c1872cd3331b747b0c8080a930f8fa8bb8a77f3b4d5cc83f8bf3",
+    "extract-word-segments.py": "b630d887cb1438206a7456350b4ef9ec91054c2cc7e24dc4f098e2ecb7cf241c",
+    "programme-sources.json": "5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11",
+    "tour-word-matches.json": "8109c5e8a5487e13307e7b92c43a8564ec2f6711b23c42e07cfe63915ee8d1db",
+    "word-pilot-review.json": "9c6191989256139e51e610a75a4cd17e716feabbc8cf4e2cd471308c05cfe39e"
+  }
+}

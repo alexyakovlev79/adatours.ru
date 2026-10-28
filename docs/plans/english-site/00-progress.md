@@ -2,7 +2,8 @@
 
 Date: 2026-10-28 (Europe/Moscow). Working branch: `feat/english-site-foundation`.
 Baseline: `b1b14ed3a8abab9773053f836fed28c2ff77204f`.
-Status: architecture and foundation in progress; English production is not enabled.
+Status: architecture/source preparation saved; isolated foundation verification in
+progress. English production and automatic translation workers are not enabled.
 
 ## Commission
 
@@ -52,10 +53,25 @@ worker-ready, a commit, or an unverified build as a published English page.
 Continue from the most recent checkpoint; do not start a translator swarm until
 its manifest, field/block mapping and operational pilot gates are complete.
 
-## Remaining at checkpoint 1
+## Checkpoint 2: architecture and source preparation
 
-1. Complete the code, static/dynamic metadata and source inventory audit.
-2. Save the target architecture and precise translation/swarm contracts.
-3. Implement and test safe initial i18n modules and translate the small UI copy.
-4. Save final deliverables and test results in this branch, open a reviewable PR,
-   and send the final report to the requesting user.
+- Full observed Drive metadata inventory: 1,112 files in 95 folders; 732
+  candidate programme documents (344 in 2027, 388 in 2026), 380 excluded from
+  automatic selection. Exclusion is not proof that an allowed alternative
+  programme source cannot exist there.
+- Current Tour roster: 392, including 358 active and 34 archived. Candidate
+  matching remains incomplete; eight product identities checked against full
+  DOCX, none approved for automatic publication or AI-only.
+- Prepared architecture, editorial contract, swarm runbook, runtime SEO/schema
+  audit and a step-by-step implementation plan.
+- Prepared EN metadata specification with exact source hashes; source extractor
+  and reproducible candidate builder, with integrity checks.
+
+## Remaining after checkpoint 2
+
+1. Finish verification/checkpoint of the isolated i18n modules, UI copy and
+   initial source tools; do not wire incomplete English output into production.
+2. Save a self-contained final report and reviewable PR; send the requested email.
+3. The next implementation session completes semantic matching/block maps,
+   connects the locale adapter/runtime and builds the dispatcher/pilot. The
+   roadmap defines subsequent mass translation and dual deployment gates.

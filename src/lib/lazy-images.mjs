@@ -80,7 +80,9 @@ export function deferImages(html) {
     for (const child of node.childNodes || []) walk(child, inDeferredPicture);
   };
   walk(root);
-  for (const edit of edits.sort((a, b) => b.start - a.start)) {
+  // A picture fallback can share its offset with the next sibling's opening
+  // tag. Replace that tag first, then insert the fallback before it.
+  for (const edit of edits.sort((a, b) => b.start - a.start || b.end - a.end)) {
     html = html.slice(0, edit.start) + edit.value + html.slice(edit.end);
   }
   return html;

@@ -182,10 +182,10 @@ Hreflang лучше выпускать одним способом из обще
 
 ## Первичные внешние источники
 
-- **S1:** [Google Search Central: Localized versions](https://developers.google.com/search/docs/specialty/international/localized-versions), проверено 28.10.2026; self/reciprocal hreflang, абсолютные URL, разные домены, x-default, эквивалентность способов. Retrieval refs: `turn1view1`, `turn2view1`.
-- **S2:** [Google Search Central: Canonical URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls), проверено 28.10.2026; self-canonical и canonical того же языка. Ref `turn1view2`.
-- **S3:** [Schema.org: translationOfWork](https://schema.org/translationOfWork), проверено 28.10.2026; связь переведенного CreativeWork с исходным. Ref `turn0search3`.
-- **S4:** [Schema.org: workTranslation](https://schema.org/workTranslation), проверено 28.10.2026; обратная связь к переводу. Ref `turn0search2`.
-- **S5:** [Schema.org: sameAs](https://schema.org/sameAs), проверено 28.10.2026; идентичность сущности. Ref `turn1view0`.
+- **S1:** [Google Search Central: Localized versions](https://developers.google.com/search/docs/specialty/international/localized-versions), проверено 28.10.2026; self/reciprocal hreflang, абсолютные URL, разные домены, x-default, эквивалентность способов.
+- **S2:** [Google Search Central: Canonical URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls), проверено 28.10.2026; self-canonical и canonical того же языка.
+- **S3:** [Schema.org: translationOfWork](https://schema.org/translationOfWork), проверено 28.10.2026; связь переведенного CreativeWork с исходным.
+- **S4:** [Schema.org: workTranslation](https://schema.org/workTranslation), проверено 28.10.2026; обратная связь к переводу.
+- **S5:** [Schema.org: sameAs](https://schema.org/sameAs), проверено 28.10.2026; идентичность сущности.
 
-Рекомендации об общей модели, блоковых ревизиях, принятии перевода и публикации — архитектурные выводы этого аудита, а не обещания Google о ранжировании. Для использования web citations в финальном ответе родителю следует самостоятельно открыть соответствующие первичные URL согласно правилам цитирования.
+Рекомендации об общей модели, блоковых ревизиях, принятии перевода и публикации — архитектурные выводы этого аудита, а не обещания Google о ранжировании.

@@ -1,0 +1,60 @@
+{
+  "baselineCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+  "sourceFiles": [
+    {
+      "path": "src/lib/site.ts",
+      "sha256": "40ed21db7f6b7e191c508391a29902f40c100ed0a9191132975735e5ef47a38d"
+    },
+    {
+      "path": "src/components/global/SiteHeader.astro",
+      "sha256": "9b4ed49414879b7dbc9bee01f22a206b734c2c7f8ddec5e89e222a3587a7951f"
+    },
+    {
+      "path": "src/components/global/SiteFooter.astro",
+      "sha256": "72283eb20f7d5a4080cb44af56d0688595cb9aafec3c1a6fc0fea821fd85995e"
+    },
+    {
+      "path": "src/components/global/SearchOverlay.astro",
+      "sha256": "4ff480fe22ade6829c65682cf823a3a03ab5afcc06f43e1e81815e3d6eb45040"
+    },
+    {
+      "path": "src/components/global/CookieNotice.astro",
+      "sha256": "3e0b7d993c71c8359439da0c843373e0e12b366ac1ad255fc9384bfeaaccf429"
+    },
+    {
+      "path": "src/components/forms/LeadForm.astro",
+      "sha256": "0d9a9089c6ade225ea6ff1aaccc075d48f212f66274a66c2e4bd947d4430734b"
+    },
+    {
+      "path": "src/components/forms/PhoneField.astro",
+      "sha256": "08e11632c0eae2f84f2718ad1d7bf6d1b52ae09fb775cf58dfa1d343f857a3aa"
+    },
+    {
+      "path": "src/components/catalog/CatalogPagination.astro",
+      "sha256": "b3c2524559ef2a2edb3129dde720549f37a11b6579e10e2794ae117a1e99d1c9"
+    },
+    {
+      "path": "src/components/catalog/MultiCountrySelector.astro",
+      "sha256": "2ab158eb251f170a3a095391538442ed093dadf379552d2dce72ceddc8444fda"
+    },
+    {
+      "path": "src/scripts/catalog-load-more.ts",
+      "sha256": "98ffd7d9e2ac741ebe25d5b5a05c1cd878356298aafaf1322c4099a06283c735"
+    },
+    {
+      "path": "src/scripts/multi-country-menu.ts",
+      "sha256": "11bca356d0858070c608fa6831bc575a88eaecc95debde06fc7be8059faff7f0"
+    },
+    {
+      "path": "src/data/interest-registry.json",
+      "sha256": "d0ae20e0ff3f45e934fc64cfd75f663b7e7e90e9ca1f2e80a8c72be156fc2364"
+    }
+  ],
+  "limitations": [
+    "Dictionary is authored and checked, but not yet wired into every client script, component or generated shell.",
+    "Country/person/place names come from entity overlays, not global search-and-replace.",
+    "Consent text preserves current meaning; market-specific legal changes require their own substantive review.",
+    "Call-to-action is an enquiry, not a confirmed booking or payment.",
+    "Exact RU literals can differ by context; use semantic keys and preserve existing text during integration."
+  ]
+}

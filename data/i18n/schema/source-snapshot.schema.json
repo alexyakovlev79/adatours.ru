@@ -1,0 +1,481 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ada Tours stable source snapshot v1",
+  "description": "Generated from canonical facts/media plus source-locale text and an approved stable block map. Array ordinals are not identities. Never publish source text through a missing locale overlay.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "entityId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entityType": {
+      "enum": [
+        "tour",
+        "excursion",
+        "country",
+        "destination",
+        "theme",
+        "seoArticle",
+        "page"
+      ]
+    },
+    "locale": {
+      "enum": [
+        "ru",
+        "en"
+      ]
+    },
+    "shared": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "facts": {
+          "type": "object",
+          "propertyNames": {
+            "not": {
+              "enum": [
+                "__proto__",
+                "prototype",
+                "constructor"
+              ]
+            }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        },
+        "media": {
+          "type": "object",
+          "propertyNames": {
+            "not": {
+              "enum": [
+                "__proto__",
+                "prototype",
+                "constructor"
+              ]
+            }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        }
+      },
+      "required": [
+        "facts",
+        "media"
+      ]
+    },
+    "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "blockId": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]{0,159}$"
+          },
+          "field": {
+            "enum": [
+              "body",
+              "seo.title",
+              "seo.description",
+              "searchAlias",
+              "media.alt",
+              "media.hover",
+              "media.caption",
+              "title",
+              "lead",
+              "priceNote",
+              "priceBasis",
+              "formatLabel",
+              "highlight.title",
+              "highlight.text",
+              "itinerary.label",
+              "itinerary.title",
+              "itinerary.text",
+              "contentBlock.title",
+              "contentBlock.text",
+              "subsection.title",
+              "subsection.text",
+              "included",
+              "notIncluded",
+              "note",
+              "faq.question",
+              "faq.answer",
+              "destinationName",
+              "durationText",
+              "languageLabel",
+              "featureBand.eyebrow",
+              "featureBand.title",
+              "featureBand.text",
+              "name",
+              "summary",
+              "bestTime",
+              "entryNotes",
+              "fact.label",
+              "heading",
+              "paragraph",
+              "table.label",
+              "table.text"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "dependsOn": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^/(facts|media)/"
+            }
+          }
+        },
+        "required": [
+          "blockId",
+          "field",
+          "text",
+          "dependsOn"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "entityId",
+    "entityType",
+    "locale",
+    "shared",
+    "blocks"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "tour"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "priceNote",
+                    "priceBasis",
+                    "formatLabel",
+                    "highlight.title",
+                    "highlight.text",
+                    "itinerary.label",
+                    "itinerary.title",
+                    "itinerary.text",
+                    "contentBlock.title",
+                    "contentBlock.text",
+                    "subsection.title",
+                    "subsection.text",
+                    "included",
+                    "notIncluded",
+                    "note",
+                    "faq.question",
+                    "faq.answer"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "excursion"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "destinationName",
+                    "durationText",
+                    "formatLabel",
+                    "languageLabel",
+                    "priceNote",
+                    "included",
+                    "notIncluded",
+                    "note"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "country"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "featureBand.eyebrow",
+                    "featureBand.title",
+                    "featureBand.text",
+                    "name",
+                    "summary",
+                    "bestTime",
+                    "entryNotes"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "destination"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "featureBand.eyebrow",
+                    "featureBand.title",
+                    "featureBand.text",
+                    "name",
+                    "summary",
+                    "fact.label"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "theme"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "name",
+                    "summary"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "seoArticle"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "heading",
+                    "paragraph",
+                    "table.label",
+                    "table.text",
+                    "faq.question",
+                    "faq.answer"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "page"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "heading",
+                    "paragraph"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "jsonValue": {
+      "anyOf": [
+        {
+          "type": [
+            "null",
+            "boolean",
+            "number",
+            "string"
+          ]
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "not": {
+              "enum": [
+                "__proto__",
+                "prototype",
+                "constructor"
+              ]
+            }
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          }
+        }
+      ]
+    }
+  }
+}

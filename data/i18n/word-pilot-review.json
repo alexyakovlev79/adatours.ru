@@ -1,0 +1,1355 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-28",
+  "repositoryCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+  "scope": "8 DOCX downloaded and fully extracted; title, route, day order and commercial terms compared with current RU Tour. Identity confirmation is not full translation acceptance or an authority to overwrite facts. No tour changed.",
+  "counts": {
+    "verifiedEntityPairs": 8,
+    "fullDocxDownloads": 8,
+    "allByteSizesVerified": true,
+    "verifiedTitles": 7,
+    "titleWithMinimalExtraction": 1,
+    "fullyTranslatedTours": 0,
+    "publishedTours": 0,
+    "aiOnlyDecisions": 0
+  },
+  "reviews": [
+    {
+      "entityId": "tour_brazil_rio_four_days",
+      "ruContentPath": "src/content/tours/rio-de-janeiro-four-days.md",
+      "ruBlobSHA256": "ff8bd1d6162e1e20ea11dd758fdeaa9389b84c40272391294d5714462cca09bb",
+      "source": {
+        "driveFileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+        "sourceYearFolder": 2027,
+        "name": "4 Days In Rio de Janeiro 4d3n 2027 ENG com 20%.docx",
+        "folderPath": "2027/Brazil 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-10-21T20:19:00.892Z",
+        "url": "https://docs.google.com/document/d/1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+        "sourceBytes": 1516706,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 17,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 4 days/3 nights in Rio; Sugar Loaf on day 2, Corcovado on day 3; optional night show and Rocinha.",
+        "All nine main tariffs match the current RU pricing table."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "4 Days in Rio de Janeiro",
+        "sourceRef": "word/document.xml#p0002",
+        "sourceTextSha256": "e593fff9fbbeb54acb7558afbd011e4b206554df92444035418647632f1aa0a9",
+        "transformation": "verbatim_word"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "d6ed0784e564bf1d03c6584ef7f0c88a8bb14bcae55fc29b50bd2a8a60df315f",
+          "dependentExcursionIds": [
+            "excursion_rio_night_show_churrascaria_dinner"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0066",
+            "word/document.xml#p0067"
+          ],
+          "sourceSegmentHashes": [
+            "b4e9f89f2b624acf011ee5f13c075d89643442a8dd51f26218393d4ddebd0c62",
+            "04fb1f2f3179ac5ffff105aa0f4e38b3cabefedb04093cd696133fc8658db5a1"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/2/text",
+          "ruTextSha256": "323f0c5f400dfc736886f0adc1c45d32d0a6d9bf41ee8f944c02d2d1a53e5c4b",
+          "dependentExcursionIds": [
+            "excursion_rio_sugarloaf_urca_four_hours"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0077",
+            "word/document.xml#p0078"
+          ],
+          "sourceSegmentHashes": [
+            "f97bcb1c9381a4660dbda8d61a3e2145ae46e57916677e4726255d036e69422e",
+            "82d523d9bbb50ada05635285d0bf315553b779baf8221ead455e8d889ef3d285"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/4/text",
+          "ruTextSha256": "4f0e2fdde7121d4e4e3da4ed537214371f6d902d13b725f5217fbc51a07e93e8",
+          "dependentExcursionIds": [
+            "excursion_rio_corcovado_tijuca_four_hours",
+            "excursion_rio_rocinha_private_walk"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0089"
+          ],
+          "sourceSegmentHashes": [
+            "89ae8708ef870eae31c5a979d4588ac428c7faf47d4548e6e6e78169ec45c94c"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 4,
+          "ruFieldPath": "/itinerary/7/text",
+          "ruTextSha256": "a6769611e8b7a909cca08a8f50cb2b9e8ae3bda95ed4efdde17b204c8c077d15",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0090"
+          ],
+          "sourceSegmentHashes": [
+            "d2d3611e3b96ddcfb03ec3d3eb58787914854e2d153595e0b137f6f97efe6218"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "SERVICE_LANGUAGE_DIFFERS",
+          "fields": [
+            "included",
+            "itinerary.day2",
+            "itinerary.day3"
+          ],
+          "details": "Current RU includes a Russian-speaking guide; EN Word says English- or Spanish-speaking. Preserve a shared service/offer model; do not replace service language in a translation patch."
+        },
+        {
+          "code": "TIME_SENSITIVE_TRAVEL_ADVICE",
+          "fields": [
+            "word.paragraph57"
+          ],
+          "details": "EN Word includes nationality-specific visa and vaccination advice; do not publish it from an unverified document snapshot."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0090"
+        ],
+        "text": "Day 4 · After breakfast, free time until your scheduled private transfer to Rio de Janeiro International Airport. End of services."
+      }
+    },
+    {
+      "entityId": "tour_brazil_foz_iguazu_three_days",
+      "ruContentPath": "src/content/tours/foz-do-iguacu-three-days.md",
+      "ruBlobSHA256": "5de9835018e7a36ed7e0a8ba822cb69b4090c4d688372c7069c464cbeee8de0e",
+      "source": {
+        "driveFileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+        "sourceYearFolder": 2027,
+        "name": "3 Days in Foz do Iguazu 3d2n 2027 ENG com 20%.docx",
+        "folderPath": "2027/Brazil 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-10-21T20:18:08.369Z",
+        "url": "https://docs.google.com/document/d/1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+        "sourceBytes": 1119074,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 16,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 3 days/2 nights; Brazilian falls and Bird Park on day 1, Argentine falls on day 2, airport transfer on day 3.",
+        "Same Vivaz Cataratas 4-star Luxury room; same three tariffs."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "3 Days in Foz do Iguazu",
+        "sourceRef": "word/document.xml#p0002",
+        "sourceTextSha256": "37fe9027fa8996498fba21f82507be749f13a9c5786ac59e2a977974b556a4f2",
+        "transformation": "verbatim_word"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "ce9c14fb8c9b619a75d7aa4c9c68ebf9d53aa7bd3ecc3d1c911c2f763cf6c179",
+          "dependentExcursionIds": [
+            "excursion_source_jekskursija_na_brazil_skuju_storonu_vodopadov",
+            "excursion_source_park_jekzoticheskih_ptic_v_iguasu",
+            "excursion_source_makuko_safari_he"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0066",
+            "word/document.xml#p0067",
+            "word/document.xml#p0068"
+          ],
+          "sourceSegmentHashes": [
+            "9f047b0b67d5e00e0e40984324ec8b407d55c48154f822c1a14438e7949890f4",
+            "f5c80115f9b57124756d0f06a7686816bb90e2e2c5ef4b36f4c2f3052c4e8b45",
+            "46d905bab82a7cd7b639967d39e7ca5325323ff2593f4bf4a8e8737745142f53"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/4/text",
+          "ruTextSha256": "c71616f53e606a080f8a5ee32d846fa99b0f60877b15a55a8d0c4c0fda71b171",
+          "dependentExcursionIds": [
+            "excursion_source_jekskursija_na_argentinskie_vodopady"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0079"
+          ],
+          "sourceSegmentHashes": [
+            "172e7c49207fb1c03f3dbc78d14f54e08b138bfb74a60f16785e71d62fb534e0"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/6/text",
+          "ruTextSha256": "2d8d021e23fdbdaaf4e586a472ba3e27b90d33c00374955e8654fd8debbc207c",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0080"
+          ],
+          "sourceSegmentHashes": [
+            "c4f02f7d0b3e681a3c2de5004096d78f967e3aa3d1c0ab907d19f33c4d4c91e7"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "SERVICE_LANGUAGE_DIFFERS",
+          "fields": [
+            "included"
+          ],
+          "details": "Current RU includes Russian-speaking guides; EN Word says English- or Spanish-speaking."
+        },
+        {
+          "code": "TIME_SENSITIVE_TRAVEL_ADVICE",
+          "fields": [
+            "word.paragraph57"
+          ],
+          "details": "Border/visa/vaccination advice requires current authoritative verification before publishing."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0080"
+        ],
+        "text": "Day 3 · After breakfast, private transfer to Foz do Iguaçu International Airport, or continue your journey to your next destination. End of services."
+      }
+    },
+    {
+      "entityId": "tour_brazil_best_rio_express_six_days",
+      "ruContentPath": "src/content/tours/best-of-rio-express-six-days.md",
+      "ruBlobSHA256": "0bb1bd8155fb8164c10c13632666382285c50afe3d01cef2d580b51af5077371",
+      "source": {
+        "driveFileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+        "sourceYearFolder": 2027,
+        "name": "Best of Rio 6d5n 2027 ENG com 20%.docx",
+        "folderPath": "2027/Brazil 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-10-21T20:34:03.486Z",
+        "url": "https://docs.google.com/document/d/1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+        "sourceBytes": 1099139,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 13,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 6 days/5 nights; Corcovado day 2, Sugar Loaf day 3, Angra/Ilha Grande day 4, free day 5, departure day 6.",
+        "Same nine tariffs for 3-/4-/5-star hotel options."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "Best of Rio de Janeiro Express",
+        "sourceRef": "word/document.xml#p0002",
+        "sourceTextSha256": "4146ecd294f2f19514b5cf1c09bd4d4381730271fb52f546bb49b3fbe5935e49",
+        "transformation": "verbatim_word"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "a06ff6eacac47667e50943cd0dfe8c6cf8c55b4d978ab9e0bbdfef8e4b86d735",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0066",
+            "word/document.xml#p0067"
+          ],
+          "sourceSegmentHashes": [
+            "c5e90ebc182b96f32bac3a6706a507d041bc6e075c89f6f21dbec8cb1b5ef7fd",
+            "fd7178f43282b5167422aa0a68af8a64e9bb71f1266f9f91ad85837203e1af1d"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/1/text",
+          "ruTextSha256": "55479a524ca07025c813a09304816d8f7871dc5a1e32e723d8e119534ae7e4dc",
+          "dependentExcursionIds": [
+            "excursion_rio_corcovado_train_christ"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0075",
+            "word/document.xml#p0076"
+          ],
+          "sourceSegmentHashes": [
+            "2f5533b1d70b2b135a2bbfd2ca009554217f3210b14af415fccaaa56dae79964",
+            "dde5859fc9d7762c10e90222bf68b86431adf3300b4a164359a9797be9407e8f"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/3/text",
+          "ruTextSha256": "49e969551f0d64b591f46d16c1891c676e9cd88ab233bdd409f2e46695956132",
+          "dependentExcursionIds": [
+            "excursion_rio_sugarloaf_urca_four_hours"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0084",
+            "word/document.xml#p0085"
+          ],
+          "sourceSegmentHashes": [
+            "6fb1ec40cbd1808d33b595da4f800015c60e4ca6c42eb7d1e6046a654e7a0089",
+            "c2eddd63ac70144ad21a5c9b9f1f037b05ce5e8f7b1ad34bcd98786cd85ab606"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 4,
+          "ruFieldPath": "/itinerary/5/text",
+          "ruTextSha256": "efdfde64296efa94c1275c5bdb307241510a71e2bef6f13b9ea91ff372e8347e",
+          "dependentExcursionIds": [
+            "excursion_angra_ilha_grande_day_trip_from_rio"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0095"
+          ],
+          "sourceSegmentHashes": [
+            "8322a3f2a8edaadce62406900c54bc04b9d23561e4db634fbc2630446d5bb32b"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 5,
+          "ruFieldPath": "/itinerary/7/text",
+          "ruTextSha256": "95fd93c485681174f4247b43dc2de5158e35d9c23d7a0b0cc9cc2d2e20530e15",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0096"
+          ],
+          "sourceSegmentHashes": [
+            "37d9222f2c95d0aee975602f177e0c35e43c5765a2eb3fffd815144d7054312c"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 6,
+          "ruFieldPath": "/itinerary/8/text",
+          "ruTextSha256": "0ea9ecc08a396c578c36d4d9fd856319d2605262d34edd848eedfb882d41a014",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0097"
+          ],
+          "sourceSegmentHashes": [
+            "70e6026cb8babebfca4d9603baf63c5cc3acab2ff583f68a2aa10f8bc3fc49d0"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "SERVICE_LANGUAGE_DIFFERS",
+          "fields": [
+            "included",
+            "itinerary.days2-4"
+          ],
+          "details": "RU private tours specify Russian-speaking guides, EN Word specifies English/Spanish. Shared tour day 4 language also needs service-level alignment."
+        },
+        {
+          "code": "TIME_SENSITIVE_TRAVEL_ADVICE",
+          "fields": [
+            "word.paragraph57"
+          ],
+          "details": "Visa/vaccination advice is not accepted merely because it appears in the English brochure."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0097"
+        ],
+        "text": "Day 6 · Transfer to the airport with a driver for your flight home. End of services."
+      }
+    },
+    {
+      "entityId": "tour_guatemala_discover_8_days",
+      "ruContentPath": "src/content/tours/discover-guatemala-8-days.md",
+      "ruBlobSHA256": "8c83ac340cb63a22dca92ced6c2387f7b5bb4cf4742141e5ac4056870e880ad8",
+      "source": {
+        "driveFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+        "sourceYearFolder": 2027,
+        "name": "Discover Guatemala 8d7n 2027 eng com 20.docx",
+        "folderPath": "2027/Guatemala 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-10-28T14:31:32.157Z",
+        "url": "https://docs.google.com/document/d/1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+        "sourceBytes": 787459,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 11,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 8 days/7 nights; Guatemala City 1, Atitlan 2, Antigua 2, Monterrico 2.",
+        "Saturday departures, Chichicastenango Sunday, Iximche, hotel names and optional Pacaya/Tikal agree."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "Discover Guatemala",
+        "sourceRef": "word/document.xml#p0002",
+        "sourceTextSha256": "ed036f3959356b5a08df261f5802c35b1a4995be863deb96e297029b692fd279",
+        "transformation": "verbatim_word"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "795d21baf067fe9a7f70759e9c554e755d3d815d48a4fe6a1e059f90adfbd822",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0066"
+          ],
+          "sourceSegmentHashes": [
+            "c78ca427926e184e1431d85bea58fc19fd9edef63fc0831fb1e83902b2a1c800"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/1/text",
+          "ruTextSha256": "995b26fa260765153d90ea62d5b2ef451ee40bf72da241098ac0bd908ae63063",
+          "dependentExcursionIds": [
+            "excursion_guatemala_chichicastenango_corn_cultivation"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0067"
+          ],
+          "sourceSegmentHashes": [
+            "d8604ff99d1b647c49c047a3c10f2a30086a518529feda7c7ebdff86a9b3e234"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/2/text",
+          "ruTextSha256": "5ab27506903ad0ff9733da965b872ddc06c57d96392744d4a7aa4a68b7550239",
+          "dependentExcursionIds": [
+            "excursion_guatemala_atitlan_san_juan_santiago_boat"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0068"
+          ],
+          "sourceSegmentHashes": [
+            "aa0794e51b0128f10665ceb6c9508ccd0bb1374c73187176983b0e46bfa39541"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 4,
+          "ruFieldPath": "/itinerary/3/text",
+          "ruTextSha256": "bf683fafcd1ea16872649bcf5b3c919521da8de081fa04a8b6468d303652230a",
+          "dependentExcursionIds": [
+            "excursion_guatemala_iximche_antigua_visit"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0076"
+          ],
+          "sourceSegmentHashes": [
+            "b4e3edfd947374e28eea9611bbd592f7ace4b7becc2df4f7fb0c54d41b4c3165"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 5,
+          "ruFieldPath": "/itinerary/4/text",
+          "ruTextSha256": "36fd18fffd43b58bb8f85cb65591ece7a2a2bd1a1b36b1eadbfe5bca1ff4c7b1",
+          "dependentExcursionIds": [
+            "excursion_guatemala_pacaya_optional_morning",
+            "excursion_guatemala_tikal_optional_from_antigua"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0077"
+          ],
+          "sourceSegmentHashes": [
+            "71901c5a254a3190c177b932c11af3a978d2c1442c9d05f38d5f47ae5392839f"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 6,
+          "ruFieldPath": "/itinerary/5/text",
+          "ruTextSha256": "0ccf188b62d6f0e1cd760719f5da7814cfe568255723fa3570e3511127dbfcb6",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0085"
+          ],
+          "sourceSegmentHashes": [
+            "5f0f9327e82c8505e83e06cfdd1664eb0c6dc692a1128be5c2139c99551a98dd"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 7,
+          "ruFieldPath": "/itinerary/6/text",
+          "ruTextSha256": "55e7810fa8733a715480c2ef637dcbb3b03623b59250e97d16ba461ced0400d6",
+          "dependentExcursionIds": [
+            "excursion_guatemala_monterrico_mangroves",
+            "excursion_guatemala_monterrico_turtle_center"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0086"
+          ],
+          "sourceSegmentHashes": [
+            "fda40f9f2ea78ea9cc0d865127b9bdc6dc7f5e55abacf628cf4b6a3fb0f79b7d"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 8,
+          "ruFieldPath": "/itinerary/7/text",
+          "ruTextSha256": "e4e211cf5736eda351be6224b738eef66b16ea789b26e768efc3e13696582d9e",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0087"
+          ],
+          "sourceSegmentHashes": [
+            "964ee52be20cb3a56666bd8804c43986884c79ea516dad1bd90c92035849fb4b"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "COMMERCIAL_CONDITIONS_EXPANDED",
+          "fields": [
+            "priceNote",
+            "included",
+            "notes",
+            "notIncluded"
+          ],
+          "details": "EN adds per-person/minimum-two wording and a not-included list. Current RU explicitly keeps calculation basis and exclusions unresolved. English copy must not silently settle those facts."
+        },
+        {
+          "code": "GUIDE_SCOPE_CONTRADICTION",
+          "fields": [
+            "word.cover.guide",
+            "included"
+          ],
+          "details": "EN cover says English guides throughout the trip, but transfers Antigua–Monterrico–airport are driver-only. Current RU retains multi-language/regular-vs-private ambiguity; preserve these confirmed constraints."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0087"
+        ],
+        "text": "Day 8 (Saturday) · Transfer to Guatemala City airport. End of services. (B)"
+      }
+    },
+    {
+      "entityId": "tour_panama_city_gamboa_6_days",
+      "ruContentPath": "src/content/tours/panama-city-gamboa-6-days.md",
+      "ruBlobSHA256": "d2a07d5cb1a01b3def6259047707231268d3d1ac71be81ecc191e6e0b8279193",
+      "source": {
+        "driveFileId": "1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5",
+        "sourceYearFolder": 2027,
+        "name": "Panama City & Gamboa 6d5n 2027 ENG com 20%.docx",
+        "folderPath": "2027/Panama 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-09-21T18:09:03.937Z",
+        "url": "https://docs.google.com/document/d/1HnTH31aTzR6Bf1DRdWZXhwD4vQlL7s-5/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "889a66c6df446e6fa4af27fd16ee85812713e1018a6117f613e565d086cac644",
+        "sourceBytes": 3588731,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 13,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 6 days/5 nights; Panama City 3 nights, Gamboa 2; Miraflores/Biomuseo/Casco Viejo, Embera, Soberania and Gatun route.",
+        "Same six tariffs for 4-/5-star accommodation."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "Panama City & Gamboa",
+        "sourceRef": "word/document.xml#p0013",
+        "sourceTextSha256": "fd8a81acc5294c3ca5c31600af5dec8155d21a7d3cf24a166940e3bed4f58cfb",
+        "transformation": "extract_programme_name_and_normalize_whitespace_from_rate_heading"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "366902dffb61dc46e7e4012d59277b995ee849598d68bbd45a5be73cf239ca5f",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0031"
+          ],
+          "sourceSegmentHashes": [
+            "1823b3b1e72086be7e7007f6afb9f3d39549bda58e6b585f3d7023198521f8a1"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/1/text",
+          "ruTextSha256": "8f2b2ed529670b8b84d4d595ec0b3daa4fdb81a79fe5fade57f59c108c864492",
+          "dependentExcursionIds": [
+            "excursion_panama_miraflores_biomuseo_casco_viejo"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0043",
+            "word/document.xml#p0044",
+            "word/document.xml#p0045",
+            "word/document.xml#p0046"
+          ],
+          "sourceSegmentHashes": [
+            "7b5dc65323a240f32d3ddc9fd3dabc8ca9190b2f7aac09bf7eb1facf2fe398dc",
+            "3287bbd220c4ff7e5ab668ebe0bda855ce8ac97e22a8d0ba5a9b1037e2f527e4",
+            "1e564f9bd3d55bfc76590519fb2caf42bdf675be93ce8f5cce49ba89c7c2b679",
+            "26eac1e9ece0fb44897f3fe35a3f2fa1d56f38859c80702bb5c2e630694456aa"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/2/text",
+          "ruTextSha256": "72e234d983c7925de7b5b045a14a658b00a4769634479468596f5075583e353c",
+          "dependentExcursionIds": [
+            "excursion_chagres_embera_cultural_visit"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0053",
+            "word/document.xml#p0055",
+            "word/document.xml#p0056"
+          ],
+          "sourceSegmentHashes": [
+            "780be6dc5d9995a12991879af27e508990aa01cee7fe022fd1f95a04118fcef6",
+            "8849080b9f854af9805c72a50b779b38ab9bb496add175fafeff8046ba643000",
+            "e974ee2f5309e03b770aa1e331206ee3e0f7e1e079d6e1a4d476ad964c80d5c3"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 4,
+          "ruFieldPath": "/itinerary/3/text",
+          "ruTextSha256": "f703af8733f9924a8f9cd1be1f3328a6e54b1d907c44079c21c6a1eaed792869",
+          "dependentExcursionIds": [
+            "excursion_soberania_rainforest_discovery_gamboa"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0066",
+            "word/document.xml#p0068",
+            "word/document.xml#p0069",
+            "word/document.xml#p0070"
+          ],
+          "sourceSegmentHashes": [
+            "c220aede5be8676b655ed322341bcddd36276f0dcfe41bd14acff1cf85774694",
+            "fca04fdb84f5a5e44889a5d5b7bd8b4994a9d932ad6197473da93979e2858e42",
+            "db5ddfb334b15445b7ecf61e12f5fed36c756965ea288ab76f48bcfe177d85d3",
+            "bb697bd266020c3cdcd6d87cc38dad7923a7d17afc13e7bf340448f8f2f13d26"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 5,
+          "ruFieldPath": "/itinerary/4/text",
+          "ruTextSha256": "4b4b16ad6c171f6214ac1fb056abeb66a68a93b764cf39d9ad3936ce8234b0cc",
+          "dependentExcursionIds": [
+            "excursion_gatun_lake_monkey_island_boat"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0080",
+            "word/document.xml#p0082",
+            "word/document.xml#p0083"
+          ],
+          "sourceSegmentHashes": [
+            "afee7c629ca948e7d0bf9410378dd84d9122529847e1146bbb24a39cf72888ae",
+            "352d2cc68c2bebf8f4f401288357316f608d54a9f51f4ee6cfbe88e0b40d40d8",
+            "c593d9423476137dad838f75b82f643d9eeb4b5ad05885098c5ff10b6ee2571e"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 6,
+          "ruFieldPath": "/itinerary/5/text",
+          "ruTextSha256": "501ef040625c5b6a6c11d91917d2ba9fdb0a8415119fe640be1ec4f1708dd96f",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0090"
+          ],
+          "sourceSegmentHashes": [
+            "b3252d0b672f3f1c6624d9133cd9f5fae0175b4bd7ca4fe741629d1d40457cbf"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "EXISTING_LANGUAGE_AND_MEAL_AMBIGUITIES",
+          "fields": [
+            "included",
+            "notes",
+            "itinerary.days1-3"
+          ],
+          "details": "The EN source retains English/Russian/Portuguese in rate heading versus English in inclusions; lunches appear in prose while rate basis is BB. Current RU already qualifies these facts; do not discard the qualifications."
+        },
+        {
+          "code": "SOURCE_PROSE_CLEANUP_REVIEW",
+          "fields": [
+            "word.paragraph5",
+            "word.paragraph31",
+            "word.paragraph80"
+          ],
+          "details": "Source contains double punctuation, awkward grammar and a day-5 departure-for-Gamboa phrase despite already staying in Gamboa. Preserve owner-approved facts and record any minimal edit."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0090"
+        ],
+        "text": "Breakfast at the hotel. Depending on the international flight schedule, enjoy some final free time in Panama City. At the scheduled time, private transfer to Tocumen International Airport for your departure flight."
+      }
+    },
+    {
+      "entityId": "tour_mexico_lindo_eight_days",
+      "ruContentPath": "src/content/tours/mexico-lindo-eight-days.md",
+      "ruBlobSHA256": "cd3e51e0570999bef13226207c65630a9661266f6ccbe71ff64d1e018ccbc1bc",
+      "source": {
+        "driveFileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+        "sourceYearFolder": 2027,
+        "name": "Mexico Lindo 2027_8d7n_20%COM(ENG).docx",
+        "folderPath": "2027/Mexico 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-10-08T14:01:21.046Z",
+        "url": "https://docs.google.com/document/d/1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+        "sourceBytes": 13597251,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 1,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 8 days/7 nights; Mexico City 4 nights and Merida 3; Teotihuacan/Guadalupe, Xochimilco, Uxmal/Kabah, Santa Barbara, Chichen Itza/Valladolid/Riviera Maya.",
+        "English/Spanish guiding, excluded domestic flight, day-8 lunch and excluded Riviera Maya overnight agree.",
+        "The itinerary identity agrees but all three main tariffs differ; a commercial review is mandatory."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "Mexico Lindo 2027",
+        "sourceRef": "word/document.xml#p0000",
+        "sourceTextSha256": "98db618f52e81981cf30010ab0f2aaf79e394a39bc51c0daab5b02af0e3c1850",
+        "transformation": "verbatim_word"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "a02af34ac043b83d0663df73e6342d5e7923328bef1968ed3726767529c3ba4a",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0013",
+            "word/document.xml#p0014",
+            "word/document.xml#p0015",
+            "word/document.xml#p0016"
+          ],
+          "sourceSegmentHashes": [
+            "ccc06574af3ecb1da2573ebf9aeb19ba1c872c0ca5dfcff4a3289a30151d47ab",
+            "6f783c05613bdfa5d4b869c730ff9c99980a5078ffc99b7bf7f6a0f2e74b34fb",
+            "a32552f2c8db9fdf37a589fcddd6f6e89cc7f53d9e3c7d3ba3e0aa9867572983",
+            "7ea31f3ca50510f522307475ad80746eb96738c042d3e41f66d99b3c7c00a6dc"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/1/text",
+          "ruTextSha256": "4221374deef617c42854ca715d54515de8602edc13c2cf1a7e87a6a2edff2236",
+          "dependentExcursionIds": [
+            "excursion_mexico_mexico_city_history_anthropology"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0019",
+            "word/document.xml#p0020",
+            "word/document.xml#p0021",
+            "word/document.xml#p0022",
+            "word/document.xml#p0023",
+            "word/document.xml#p0024",
+            "word/document.xml#p0025",
+            "word/document.xml#p0026",
+            "word/document.xml#p0027",
+            "word/document.xml#p0028",
+            "word/document.xml#p0029"
+          ],
+          "sourceSegmentHashes": [
+            "2cde8ff0195c2d262ed84013f3346c44a4833fdad8812a51b91fd5a450996479",
+            "3e5818f57578f2428116b81f79d1a7cf1ee9e12637263008c87fc4aa5ecb6ec8",
+            "7d0d4fa31582d9464f93255a60dd9a7a7d1a24e99e57f549017f6b807469122b",
+            "fac00c727477ab1731c518648f5831785670094d44608f07a1e917160c15a4a9",
+            "bdae86d75d1deda03bb051c3edbf49b6385c392cf8f74d5989f16d7a1ab754fd",
+            "1fab9a621a50a973157ed802c41af7f64b957bee7c7455b97c0c5dfdf5d23354",
+            "42d05446c60239172fed0073ae66f631fb0467445a80132cf8a4183cf9f9d49c",
+            "b5ad74160483648eb31eaa35b3c8a1b1abfc601bc26b6fb953ee764ec482be29",
+            "9b12a2a8f1dd53967dc90eb033a7a16f89572cc7a9d37f46ae002248fe350181",
+            "ecc7a364e12cc7ba13ebc6cf31569d8e54f9e2e82f78e32fc73548ed58ffb7dc",
+            "8cddb9b65f80f561e6cd245434c0bd4f0e5b2eb3019af3233b96cc15375b3223"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/3/text",
+          "ruTextSha256": "51473a9f85a9a31d0f8a968348b6dbf915950298732de05b19cbfd05df05ef8f",
+          "dependentExcursionIds": [
+            "excursion_mexico_teotihuacan_guadalupe"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0032",
+            "word/document.xml#p0033",
+            "word/document.xml#p0034",
+            "word/document.xml#p0035",
+            "word/document.xml#p0036",
+            "word/document.xml#p0037",
+            "word/document.xml#p0038",
+            "word/document.xml#p0039",
+            "word/document.xml#p0040"
+          ],
+          "sourceSegmentHashes": [
+            "ef24d7f2cad2f788fe69ed2fe11ae7264b22af272f8879b4b53f353597bef9b5",
+            "72f90aaf8b4b8d2b16c5e2c3b3a897318baf37ba5c69181417d25f15dfac03c5",
+            "61acf9e5526254d6231dd628d844338e01677ee00ad46fae1a72786df79c8305",
+            "e9028c9ee8d6e519ea46a8243cc374874dac904c89c28d79d05b586c695c7bd1",
+            "03788ca023aca4113452629d94999e03587dcdd350be8c0582cd84cf8c922a2d",
+            "42d05446c60239172fed0073ae66f631fb0467445a80132cf8a4183cf9f9d49c",
+            "84f134fd6daee591907e10952e889ff12683b2ae945b222e19b46bcd21ead794",
+            "925ab38985e6da7107e535839ba19185a8b7c9f3516bc05c01423931e8c6a379",
+            "8cddb9b65f80f561e6cd245434c0bd4f0e5b2eb3019af3233b96cc15375b3223"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 4,
+          "ruFieldPath": "/itinerary/5/text",
+          "ruTextSha256": "3b2c1a05da04ede9723ea3f7affcef17e7797dd17c4ca55faf3e17587dd1fc5c",
+          "dependentExcursionIds": [
+            "excursion_mexico_xochimilco_south_twelve_hours"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0043",
+            "word/document.xml#p0044",
+            "word/document.xml#p0045",
+            "word/document.xml#p0046",
+            "word/document.xml#p0047",
+            "word/document.xml#p0048",
+            "word/document.xml#p0049",
+            "word/document.xml#p0050",
+            "word/document.xml#p0051"
+          ],
+          "sourceSegmentHashes": [
+            "70dedf69fc4bb04c0889b3a95eac3a544ba99aab9c874a9c4fa7676bd64f36db",
+            "007da585ccea96637a68d06b30210f1b3e82ed54cb6a2527771bdcfa90d00712",
+            "ca0271e05eb1c2031167ced08cc21b11d7b8c91305921a5ef1f0721944657647",
+            "5fd7f9918333dc325da90db697695027f0ac53b531ff283262df13fac6138f23",
+            "3ed291fcc8b0414b52b870bf61b3393b16d71a9c5ab92ea6362008e9ae27bc81",
+            "42d05446c60239172fed0073ae66f631fb0467445a80132cf8a4183cf9f9d49c",
+            "0a0ca4c1d10ef845141043d281a4ce90ee5b96bec4868cfb87c0abb39e40b5ad",
+            "6fa671c605d43ea06aef86d369c8dac535d55de2431212dbf20f3d6351158277",
+            "21808a6a4fb385a96f5ee9c91151012780dd9bd28d176e22ab085e27b73ce0e6"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 5,
+          "ruFieldPath": "/itinerary/7/text",
+          "ruTextSha256": "2f6464a68ae17f47b8574fd0ce69d0533a6b0d070911fded6a67c29c2f6ec4c6",
+          "dependentExcursionIds": [
+            "excursion_mexico_merida_walking"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0054",
+            "word/document.xml#p0055",
+            "word/document.xml#p0056",
+            "word/document.xml#p0057",
+            "word/document.xml#p0058",
+            "word/document.xml#p0059",
+            "word/document.xml#p0060",
+            "word/document.xml#p0061",
+            "word/document.xml#p0062"
+          ],
+          "sourceSegmentHashes": [
+            "a44a0b27002063a23b89cd9344218656e6b6c73c68fc4f4f729ea813035cb387",
+            "ad8db8ddb7e08c593b1a6cee5b3b11ad8eeb203d4984a90a63679592d1a6cf2d",
+            "95c0bac047ee93e9a93a743b693b42f52a5567d61cdc24a288ba8b8f0bc3c306",
+            "78928edc942d9f8b3cae35eab4a87524dd0c51d8701719100dd27874969803e4",
+            "37771bbbe5c76a94dae59e5f51cd35616a40d4a98e8e4edb8969113ae2c6edbb",
+            "42d05446c60239172fed0073ae66f631fb0467445a80132cf8a4183cf9f9d49c",
+            "599dc94c42638407f4ed69230225929fc7e87032932277d6713b106d9c33d34e",
+            "dd2b0ff41ffe810ef8f6209b64eebaac3975d83a85b17ac08313e0766c3bb31b",
+            "6efd7ddc74386b13da774a06e176319ed4fb04c3e1db9950fde5a5c9eec4fdff"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 6,
+          "ruFieldPath": "/itinerary/9/text",
+          "ruTextSha256": "d5adbe31930e4b7807c4835f66e75c6cf54ddb14d807b747e85085c9f220e04f",
+          "dependentExcursionIds": [
+            "excursion_mexico_uxmal_kabah_cenote"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0065",
+            "word/document.xml#p0066",
+            "word/document.xml#p0067",
+            "word/document.xml#p0068",
+            "word/document.xml#p0069",
+            "word/document.xml#p0070",
+            "word/document.xml#p0071",
+            "word/document.xml#p0072",
+            "word/document.xml#p0073"
+          ],
+          "sourceSegmentHashes": [
+            "3aa991d237b50adb77221b2a74c1906a07f475e9028322466f2a798cdfd51ecf",
+            "7e62c3ac721f657b3c3ac6a0817a8107047bb65cc18f3cff4e842fac7105f960",
+            "14925bc4619a01abdfa982be6f8359c13359207423c015dc0fcc7e408f331454",
+            "16f69df231e3dde656aeff1bcadf9c1a5deafb12c295168c4005caa26af70dfd",
+            "c7eafc4cc0616f9f9e105f20fae00e55dd682faf73ad6b6f1b18efebc40398f3",
+            "42d05446c60239172fed0073ae66f631fb0467445a80132cf8a4183cf9f9d49c",
+            "288d9459b23541c62326ec2dc706623816f1854182e0acf99a15cbd2b7aba4df",
+            "5741dbf4198c17e52b8b3504738b10940060dc793ea671c74f24e897e5ab3c0b",
+            "fdf3876ad80b1fe78d6b17a0240271cda2263dea7f129cce89c2cad82f028a86"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 7,
+          "ruFieldPath": "/itinerary/11/text",
+          "ruTextSha256": "6fcff22f3eebd4b487430edc92b97435d1ee2bb17463ac6e0c8e8cf1f57431fb",
+          "dependentExcursionIds": [
+            "excursion_mexico_santa_barbara_cenotes"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0076",
+            "word/document.xml#p0077",
+            "word/document.xml#p0078",
+            "word/document.xml#p0079",
+            "word/document.xml#p0080",
+            "word/document.xml#p0081",
+            "word/document.xml#p0082",
+            "word/document.xml#p0083",
+            "word/document.xml#p0084"
+          ],
+          "sourceSegmentHashes": [
+            "64d62da44a164dcef53acc7ed7db5958730409fd34089eace3e1a78363cba309",
+            "4aa13e432ac8c0ffe6e804d8028dd703a31d836dcf4129f81a02d0fd442d0707",
+            "b78dbc9dbb8c84b2780904293fccb20f7fc51342ee699ff52621b52f697c6b32",
+            "ddc7ee183bc2809269418a0432e55148209fd9f3fd2abc5584c18a88e8633850",
+            "dcea4e2c9fcff2fc5ab716135e5fdd28c6d8810d1a424be37a366bac8f05fd8b",
+            "42d05446c60239172fed0073ae66f631fb0467445a80132cf8a4183cf9f9d49c",
+            "9326a8aa431b1a60477239f20483d437ff32a4186013bc004322d548603c055d",
+            "47f313e06ebbc65d47a2d752f693ece1a1d12a0b4304797a2ab8a654443760e2",
+            "fdf3876ad80b1fe78d6b17a0240271cda2263dea7f129cce89c2cad82f028a86"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 8,
+          "ruFieldPath": "/itinerary/13/text",
+          "ruTextSha256": "57d70d5f31261d277c0a3daad3a78d3963f5a98a5daeb624c14ec65e9ad7f1e5",
+          "dependentExcursionIds": [
+            "excursion_mexico_chichen_itza_valladolid_caribbean"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0088",
+            "word/document.xml#p0089",
+            "word/document.xml#p0090",
+            "word/document.xml#p0091",
+            "word/document.xml#p0092",
+            "word/document.xml#p0093",
+            "word/document.xml#p0094",
+            "word/document.xml#p0095",
+            "word/document.xml#p0096",
+            "word/document.xml#p0097",
+            "word/document.xml#p0098"
+          ],
+          "sourceSegmentHashes": [
+            "321ac394ff00a6f701062727452119cf012c14acd6842930e7873850720bbc3a",
+            "ae4a2fe5983ee590c1bee190b8470b6ed81cca0a474b51fcca4550e2583974e4",
+            "a08001235b5ad8b645f5c55099af0b4300f0b5dc030fdb84bddcb3ce5da0078e",
+            "25a164700f8d91f3d7fc2e7ac1d17265b7e52f633a3a90e37485e874899e9c00",
+            "76891b30fe5dafbd27a92f047e3d402e854b527d4e99ba8134abfa04e27b6d03",
+            "e5066f252a998c47704a3be4bde67ce6584763bf9b00545073cd9f718775ca5f",
+            "65d9218af05f817d1117669dcc26fadb5545f66a0d872f3d4b8cf06e06b78de1",
+            "6e517828c3d88ea3e62b2169a626c32e39be2e7cf52e99f7e9d764af6859bbd0",
+            "4aa7845e549757cc4bcc0340154fa70536b2d6a042cbc723d2c5a5fc2729c5b4",
+            "d368dcbc462e20627e7e13a847b16b3fd2e50ae6cc56589dbedcb8b547971797",
+            "3286e980edcf430a293e7748f296b5cbb3732804bf43ca6e7127c963e9a7e40e"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "COMMERCIAL_PRICE_CONFLICT",
+          "fields": [
+            "priceFrom",
+            "priceNote",
+            "body.priceTable"
+          ],
+          "details": "EN Word SGL/DBL/TPL tariffs are USD 2372/1908/1855; current RU tariffs are USD 5870/5336/5219. No price may be copied into shared data or treated as a locale conversion. Determine the approved offer and market scope."
+        },
+        {
+          "code": "SHARED_EXCURSION_DEPENDENCIES",
+          "fields": [
+            "itinerary.excursionRef"
+          ],
+          "details": "Much of the descriptive day text is already rendered through seven independent Excursion entities. Reuse Word fragments in those shared EN translations where scope matches; do not duplicate the same description into Tour day text or change global service inclusion from tour context."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0088",
+          "word/document.xml#p0089",
+          "word/document.xml#p0090",
+          "word/document.xml#p0091",
+          "word/document.xml#p0092",
+          "word/document.xml#p0093",
+          "word/document.xml#p0094",
+          "word/document.xml#p0095",
+          "word/document.xml#p0096",
+          "word/document.xml#p0097",
+          "word/document.xml#p0098"
+        ],
+        "text": "(PT) Private Transfer Mérida to Chichén Itzá and Shared Day Tour\nDuration: Full Day\nPick-Up: 9:00 – 9:30 AM\nLanguages: English and Spanish\n\nToday’s journey connects the ancient world of the Maya with the turquoise waters of the Caribbean coast.\n\nYour day begins with a private transfer from Mérida to Chichén Itzá, one of the most famous archaeological sites in the world and a UNESCO World Heritage Site. Upon arrival, join a shared guided tour to explore the site’s most remarkable landmarks, including the iconic Temple of Kukulkán, the mysterious Sacred Cenote, and the impressive Great Ball Court, one of the largest ever built in Mesoamerica.\n\nAfter exploring the ruins, cool off with a refreshing swim in a nearby cenote, followed by a traditional Yucatecan lunch featuring regional flavors.\n\nThe journey continues with a stop in the charming colonial town of Valladolid, where you can stroll through colorful streets, admire historic architecture, and experience the relaxed atmosphere of this picturesque town.\n\nFinally, travel onward to the Riviera Maya, where you will be dropped off in Cancún, Playa del Carmen, or Tulum town. (Drop-off in Tulum hotel zone and Bahía Petempich is not included.)\n\nOnce you arrive, the rest of your Caribbean stay is yours to enjoy—relax on the beach or inquire about optional extensions to continue your adventure.\n\nHighlights\n\n• Private transfer from Mérida to Chichén Itzá.\n• Guided visit to Chichén Itzá (UNESCO World Heritage Site).\n• Swim in a sacred cenote and enjoy a traditional Yucatecan lunch.\n• Explore the colorful colonial town of Valladolid.\n• Arrival and drop-off in Cancún, Playa del Carmen, or Tulum town.\n• Optional extensions available to continue your Caribbean stay.\n\nIncluded:\n• Transportation\n• Guided tour at Chichén Itzá\n• Entrance fees\n• Lunch\n• Cenote visit\n• Drop-off in Riviera Maya\n\nNot Included:\n• Tips\n• Personal expenses\n• Overnight stay in Riviera Maya (optional)"
+      }
+    },
+    {
+      "entityId": "tour_colombia_essential_5_days",
+      "ruContentPath": "src/content/tours/colombia-essential-5-days.md",
+      "ruBlobSHA256": "fbe342e05c3a4d69cf3fb0067aec41b03e374fc745d507a40138e27f0e946bed",
+      "source": {
+        "driveFileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+        "sourceYearFolder": 2027,
+        "name": "Colombia_Essential_5d4n_-_Bogota___Cartagena_2027_ENG_com_20_.docx",
+        "folderPath": "2027/Colombia 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-10-26T18:00:11.436Z",
+        "url": "https://docs.google.com/document/d/1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+        "sourceBytes": 1259866,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 13,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 5 days/4 nights; Bogota 2 and Cartagena 2; Guatavita/Zipaquira, Cartagena city, Rosario excursion.",
+        "English-speaking private guides, shared Rosario speedboat, day-4 lunch, private transfers and six tariffs agree."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "Colombia Essential",
+        "sourceRef": "word/document.xml#p0002",
+        "sourceTextSha256": "35335478dfa34f4ac675592600606aa798b6f38d9a19adb61ab754809826f6c6",
+        "transformation": "verbatim_word"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "b0b3d6392627e1d7b53cc9ebe80cb0262b6409001f712bcfb57dafb7f2cc2fe3",
+          "dependentExcursionIds": [
+            "excursion_source_siti_tur_v_bogote"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0066",
+            "word/document.xml#p0067"
+          ],
+          "sourceSegmentHashes": [
+            "206fdcdb1352e3c25f24c5d28f65eb9d233cb4a11aee1be04f9cf9f4cb55ec9b",
+            "d60b58cd650b5c93ba8214c9532076fc9eaaedfd39f58e2782ebc85925f31d33"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/1/text",
+          "ruTextSha256": "da639e1ab17378ded8e2ee18583c00d3ee04b8c49557bcf87db57e8e66242c3b",
+          "dependentExcursionIds": [
+            "excursion_source_colombia_bogota_zipaquira_con_guatavita"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0068",
+            "word/document.xml#p0069"
+          ],
+          "sourceSegmentHashes": [
+            "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a",
+            "e5ca47d9028588bdb31f1800fa7fd9a7dac1cbda5673319f0b6169a4fd9097cb"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/2/text",
+          "ruTextSha256": "992ba87abc773e711c572bb6d990c919a28393efa8874f424f924518b9d35dee",
+          "dependentExcursionIds": [
+            "excursion_source_siti_tur_po_kartakhene"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0077",
+            "word/document.xml#p0078",
+            "word/document.xml#p0079"
+          ],
+          "sourceSegmentHashes": [
+            "00c75aa31c0d591680d16798edb8cfe9a0b0c8a6e810b2bba4e4944a2f08b08e",
+            "f85d408a3c05f98db05036cb9a0ee8ae5789a1710c1672f762420e634dfd1316",
+            "30466074a086d7736ef8d5c9f911e51647cfd6354e96ff20b037633a01500045"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 4,
+          "ruFieldPath": "/itinerary/3/text",
+          "ruTextSha256": "b77c00c3facd81f959a124367bff43b4dc0e1773860e0991b621c3f496a3905a",
+          "dependentExcursionIds": [
+            "excursion_colombia_san_pedro_majagua_day_trip"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0088",
+            "word/document.xml#p0089"
+          ],
+          "sourceSegmentHashes": [
+            "3adb4d7dae6ca098bb970a5ebad48808379c09d61bf63b4ffdd53c9b1966f37d",
+            "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 5,
+          "ruFieldPath": "/itinerary/4/text",
+          "ruTextSha256": "ab1db1ca71fffa8ddeabfb69003d8ec297361ad67e0c8b6875d33c268e7bd4f0",
+          "dependentExcursionIds": [],
+          "sourceRefs": [
+            "word/document.xml#p0090"
+          ],
+          "sourceSegmentHashes": [
+            "781d10faac6b95e9fda2a372687d5359e8cb582dfe5c6cc39cb85ec78172e526"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "PRESERVE_CURRENT_IDENTITY_CORRECTION",
+          "fields": [
+            "itinerary.day4",
+            "word.paragraph88"
+          ],
+          "details": "Current RU correctly names San Pedro de Majagua on Isla Grande. English Word calls it Isla Majagua. Preserve the current mapped place identity and any Anna resolution, with an explicit adaptation record."
+        },
+        {
+          "code": "OWNER_VOICE_REQUIRED",
+          "fields": [
+            "word.paragraph142"
+          ],
+          "details": "The tour operator may substitute... is third-person source wording. The localization rule requires direct Ada Tours voice; log the minimal voice edit instead of passing it through or rewriting the entire brochure."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0090"
+        ],
+        "text": "Day 5 · Breakfast at the hotel. Depending on the international flight schedule, enjoy some final free time in Cartagena. Private transfer to Rafael Núñez International Airport for the departure flight."
+      }
+    },
+    {
+      "entityId": "tour_chile_easter_island_3_days_2027",
+      "ruContentPath": "src/content/tours/easter-island-3-days.md",
+      "ruBlobSHA256": "dff477b034f6df40aadf69ad4464d46d342338281137cf3c56546e0da486aa42",
+      "source": {
+        "driveFileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+        "sourceYearFolder": 2027,
+        "name": "Easter_Island_3d2n_2027_ENG__20_.docx",
+        "folderPath": "2027/Chile 2027",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "modifiedTime": "2026-10-22T14:03:05.061Z",
+        "url": "https://docs.google.com/document/d/1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5/edit",
+        "editionYearConflict": false,
+        "formatRole": "word",
+        "sourceSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+        "sourceBytes": 607272,
+        "extractorVersion": "docx-segments-v1",
+        "tableCount": 14,
+        "trackedChangeCount": 0
+      },
+      "matchDecision": "confirmed_entity_identity",
+      "matchEvidence": [
+        "Same 3 days/2 nights, 4-star accommodation; Orongo day 1, south coast/moai/Anakena day 2, Ahu Akivi/Puna Pau/Tahai day 3.",
+        "Private English-speaking guides, day-2 box lunch and national-park ticket agree.",
+        "Same six tariffs by party size/room occupancy; same lowest triple-room tariff."
+      ],
+      "translationState": "block_alignment_required",
+      "canAutoPublish": false,
+      "protectedTitle": {
+        "text": "Easter Island",
+        "sourceRef": "word/document.xml#p0002",
+        "sourceTextSha256": "82acd933d9a86d48a13194e9fe1f19467c515033fd067dfc021f91e880939abb",
+        "transformation": "verbatim_word"
+      },
+      "dayAlignment": [
+        {
+          "day": 1,
+          "ruFieldPath": "/itinerary/0/text",
+          "ruTextSha256": "a3bc80e2043d537c4eabd7993eb9dd37e92c10d0d1023ae3cbbd234c48c454b4",
+          "dependentExcursionIds": [
+            "excursion_easter_island_orongo_rano_kau"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0066",
+            "word/document.xml#p0067"
+          ],
+          "sourceSegmentHashes": [
+            "8f4c4dd0d8896941267513b757a15d8263fd58d3ebcc2b217599b8836be34855",
+            "048b555fc680be79d5f002ecefba95638a8cfa7a6dc8aac98090cf1629f7df98"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 2,
+          "ruFieldPath": "/itinerary/2/text",
+          "ruTextSha256": "abebf02803ad7b2f4ad0bb36c6a63d9dd05af83b8dc733ccae35b853d4be30aa",
+          "dependentExcursionIds": [
+            "excursion_chile_easter_island_south_coast_anakena_private"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0075",
+            "word/document.xml#p0076"
+          ],
+          "sourceSegmentHashes": [
+            "c4377f627ebda9c58e68c2e9506af813ea7e71c2f550b316584a797d802623bb",
+            "9358dd6741d96e073aebb304ef9729e6d74a951a436ec02724ae730fe62cf315"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        },
+        {
+          "day": 3,
+          "ruFieldPath": "/itinerary/4/text",
+          "ruTextSha256": "24f82584ef384e6b29892bc253c2dc601e82b414ecf9c874a5c39652380f1796",
+          "dependentExcursionIds": [
+            "excursion_chile_easter_island_akivi_hanga_pukure_puna_pau_tahai_private"
+          ],
+          "sourceRefs": [
+            "word/document.xml#p0086",
+            "word/document.xml#p0087"
+          ],
+          "sourceSegmentHashes": [
+            "4994cade04499467668172eb8e1e710c8c5b668d51a15a27ae96787c6d33af70",
+            "14350da2b8348a2f3b4dc30f016c4d56b9d38567cdce7a1452649af22d9af329"
+          ],
+          "decision": "semantic_day_correspondence_confirmed; field-level alignment and gap coverage required before copy",
+          "allDayDescriptionMayBeCopiedToTourText": false
+        }
+      ],
+      "reviewItems": [
+        {
+          "code": "SHARED_EXCURSION_DEPENDENCIES",
+          "fields": [
+            "itinerary.excursionRef"
+          ],
+          "details": "Route descriptions are shared Excursion dependencies, so assign one owner per entity/segment before bulk translation."
+        }
+      ],
+      "sampleSourceBlock": {
+        "purpose": "Last-day reference example; not an applied or approved target translation",
+        "sourceRefs": [
+          "word/document.xml#p0086",
+          "word/document.xml#p0087"
+        ],
+        "text": "Day 3 · Breakfast, then drive to the restored Ahu Akivi platform in the centre of the island, whose seven Moai are said to represent the seven explorers sent to Rapa Nui by King Hotu Matua. See the unrestored Ahu Hanga Puku Riki, then visit Puna Pau, a green and picturesque site whose red tuff, quarried from the slope of the extinct volcano, was used to carve the topknots of the stone giants.\n\nEnd at the Tahai ceremonial complex, with its three platforms from north to south: Ko Te Riku, with restored eyes, Tahai and Vai Uri, part of Rapa Nui National Park, a UNESCO World Heritage Site. Duration: 4 hours. Transfer to the airport."
+      }
+    }
+  ]
+}

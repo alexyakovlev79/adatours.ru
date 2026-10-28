@@ -1,0 +1,615 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ada Tours locale overlay v1",
+  "description": "Translation-only prepared input. Publication requires separate deploy receipts. Runtime assessment additionally checks identity, source and Word hashes, dependencies and full block coverage.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "entityId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entityType": {
+      "enum": [
+        "tour",
+        "excursion",
+        "country",
+        "destination",
+        "theme",
+        "seoArticle",
+        "page"
+      ]
+    },
+    "locale": {
+      "enum": [
+        "ru",
+        "en"
+      ]
+    },
+    "sourceLocale": {
+      "enum": [
+        "ru",
+        "en"
+      ]
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "blockId": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_.:-]{0,159}$"
+          },
+          "field": {
+            "enum": [
+              "body",
+              "seo.title",
+              "seo.description",
+              "searchAlias",
+              "media.alt",
+              "media.hover",
+              "media.caption",
+              "title",
+              "lead",
+              "priceNote",
+              "priceBasis",
+              "formatLabel",
+              "highlight.title",
+              "highlight.text",
+              "itinerary.label",
+              "itinerary.title",
+              "itinerary.text",
+              "contentBlock.title",
+              "contentBlock.text",
+              "subsection.title",
+              "subsection.text",
+              "included",
+              "notIncluded",
+              "note",
+              "faq.question",
+              "faq.answer",
+              "destinationName",
+              "durationText",
+              "languageLabel",
+              "featureBand.eyebrow",
+              "featureBand.title",
+              "featureBand.text",
+              "name",
+              "summary",
+              "bestTime",
+              "entryNotes",
+              "fact.label",
+              "heading",
+              "paragraph",
+              "table.label",
+              "table.text"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "draft",
+              "review",
+              "approved"
+            ]
+          },
+          "sourceTextHash": {
+            "type": "string",
+            "pattern": "^sha256:[a-f0-9]{64}$"
+          },
+          "dependencyHashes": {
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^/(facts|media)/"
+            },
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            }
+          },
+          "provenance": {
+            "oneOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "const": "word_exact"
+                  },
+                  "fileId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "documentHash": {
+                    "type": "string",
+                    "pattern": "^sha256:[a-f0-9]{64}$"
+                  },
+                  "locator": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "textHash": {
+                    "type": "string",
+                    "pattern": "^sha256:[a-f0-9]{64}$"
+                  }
+                },
+                "required": [
+                  "kind",
+                  "fileId",
+                  "revision",
+                  "documentHash",
+                  "locator",
+                  "textHash"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "const": "ai_translation"
+                  },
+                  "model": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "runId": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "model",
+                  "runId"
+                ]
+              },
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "kind": {
+                    "const": "editorial"
+                  },
+                  "editorId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "kind",
+                  "editorId",
+                  "reason"
+                ]
+              }
+            ]
+          },
+          "approval": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "reviewerId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reviewedAt": {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T"
+              },
+              "checks": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "meaning": {
+                    "const": true
+                  },
+                  "voice": {
+                    "const": true
+                  },
+                  "facts": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "meaning",
+                  "voice",
+                  "facts"
+                ]
+              },
+              "approvedContentHash": {
+                "type": "string",
+                "pattern": "^sha256:[a-f0-9]{64}$",
+                "description": "Exact hash from translationApprovalHash(block); any text/source/dependency/provenance edit requires a new review."
+              }
+            },
+            "required": [
+              "reviewerId",
+              "reviewedAt",
+              "checks",
+              "approvedContentHash"
+            ]
+          }
+        },
+        "required": [
+          "blockId",
+          "field",
+          "text",
+          "state",
+          "sourceTextHash",
+          "dependencyHashes",
+          "provenance"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "state": {
+                  "const": "approved"
+                }
+              },
+              "required": [
+                "state"
+              ]
+            },
+            "then": {
+              "required": [
+                "approval"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "entityId",
+    "entityType",
+    "locale",
+    "sourceLocale",
+    "blocks"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "tour"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "priceNote",
+                    "priceBasis",
+                    "formatLabel",
+                    "highlight.title",
+                    "highlight.text",
+                    "itinerary.label",
+                    "itinerary.title",
+                    "itinerary.text",
+                    "contentBlock.title",
+                    "contentBlock.text",
+                    "subsection.title",
+                    "subsection.text",
+                    "included",
+                    "notIncluded",
+                    "note",
+                    "faq.question",
+                    "faq.answer"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "excursion"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "destinationName",
+                    "durationText",
+                    "formatLabel",
+                    "languageLabel",
+                    "priceNote",
+                    "included",
+                    "notIncluded",
+                    "note"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "country"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "featureBand.eyebrow",
+                    "featureBand.title",
+                    "featureBand.text",
+                    "name",
+                    "summary",
+                    "bestTime",
+                    "entryNotes"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "destination"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "featureBand.eyebrow",
+                    "featureBand.title",
+                    "featureBand.text",
+                    "name",
+                    "summary",
+                    "fact.label"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "theme"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "name",
+                    "summary"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "seoArticle"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "heading",
+                    "paragraph",
+                    "table.label",
+                    "table.text",
+                    "faq.question",
+                    "faq.answer"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "entityType": {
+            "const": "page"
+          }
+        },
+        "required": [
+          "entityType"
+        ]
+      },
+      "then": {
+        "properties": {
+          "blocks": {
+            "items": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "body",
+                    "seo.title",
+                    "seo.description",
+                    "searchAlias",
+                    "media.alt",
+                    "media.hover",
+                    "media.caption",
+                    "title",
+                    "lead",
+                    "heading",
+                    "paragraph"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "locale": {
+            "const": "en"
+          }
+        },
+        "required": [
+          "locale"
+        ]
+      },
+      "then": {
+        "properties": {
+          "sourceLocale": {
+            "const": "ru"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "locale": {
+            "const": "ru"
+          }
+        },
+        "required": [
+          "locale"
+        ]
+      },
+      "then": {
+        "properties": {
+          "sourceLocale": {
+            "const": "en"
+          }
+        }
+      }
+    }
+  ]
+}

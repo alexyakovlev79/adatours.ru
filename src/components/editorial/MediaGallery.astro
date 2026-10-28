@@ -177,6 +177,9 @@ const orientation = layout === 'orientation';
     document.querySelectorAll('.media-gallery--orientation .media-gallery__item').forEach((item) => {
       const img = item.querySelector('img[data-cover-photo]');
       if (!(img instanceof HTMLImageElement)) return;
+      // Keep the original slot geometry when a phone derivative is selected.
+      // Its 3:4 intrinsic ratio must not reclassify a landscape gallery slot.
+      if (img.closest?.('picture[data-mobile-cover]')) return;
 
       const applyOrientation = () => {
         if (img.hasAttribute('data-lazy-src') || !img.naturalWidth || !img.naturalHeight) return;

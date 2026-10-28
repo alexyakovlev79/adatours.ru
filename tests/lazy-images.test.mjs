@@ -44,6 +44,52 @@ test('backgrounds are deferred along with custom properties without losing posit
   assert.ok(output.includes('[data-lazy-background="1"]{--band-image: url("/band.webp")}'));
   assert.equal(attr(nodes[1], 'style'), '--story-image-position:20% 50%');
 });
+
+test('responsive picture waits as one unit and keeps a complete mobile no-JS fallback', () => {
+  const picture = '<picture class="hero-image-responsive"><source media="(max-width: 479px)" srcset="/phone.webp" type="image/webp"><img src="/original.webp" width="1200" height="800" alt="Река" title="Вид на реку"></picture>';
+  const output = deferImages(picture);
+  const nodes = elements(output);
+  assert.equal(attr(nodes.find((n) => n.tagName === 'picture'), 'data-lazy-picture'), '');
+  const source = nodes.find((n) => n.tagName === 'source');
+  assert.equal(attr(source, 'srcset'), undefined);
+  assert.equal(attr(source, 'data-lazy-srcset'), '/phone.webp');
+  assert.equal(attr(source, 'media'), '(max-width: 479px)');
+  assert.equal(nodes.filter((n) => n.tagName === 'img').length, 1);
+  assert.equal(attr(nodes.find((n) => n.tagName === 'img'), 'data-lazy-src'), '/original.webp');
+  assert.ok(output.endsWith(`<noscript>${picture}</noscript>`));
+  assert.equal(deferImages(output), output);
+  const lcp = picture.replace('width="1200"', 'fetchpriority="high" width="1200"');
+  assert.equal(deferImages(lcp), lcp, 'first-screen hero source selection stays eager');
+});
+
+test('responsive sources activate before img.src and remain untouched outside the load window', () => {
+  const keys = ['window', 'document', 'MutationObserver'];
+  const saved = Object.fromEntries(keys.map((key) => [key, globalThis[key]]));
+  const requests = [], listeners = {};
+  const source = { dataset: { lazySrcset: '/phone.webp' }, setAttribute(name, value) { requests.push([name, value]); } };
+  const picture = { querySelectorAll: () => [source], removeAttribute(name) { this.removed = name; } };
+  const image = { dataset: { lazySrc: '/original.webp' }, top: 2000, isConnected: true,
+    closest: () => picture, hasAttribute: () => false,
+    getClientRects() { return [this.getBoundingClientRect()]; },
+    getBoundingClientRect() { return { top: this.top, bottom: this.top + 300, left: 0, right: 390, width: 390, height: 300 }; },
+    setAttribute(name, value) { requests.push([name, value]); } };
+  globalThis.window = { innerWidth: 390, innerHeight: 800, addEventListener: (name, fn) => listeners[name] = fn, requestAnimationFrame: (fn) => { fn(); return 1; } };
+  globalThis.document = { body: {}, querySelectorAll: () => image.dataset.lazySrc ? [image] : [], addEventListener() {} };
+  globalThis.MutationObserver = class { observe() {} };
+  try {
+    initializeLazyImages();
+    assert.deepEqual(requests, []);
+    image.top = 1200;
+    listeners.resize();
+    assert.ok(requests.findIndex(([name]) => name === 'srcset') < requests.findIndex(([name]) => name === 'src'));
+    assert.deepEqual(requests.filter(([name]) => name === 'srcset' || name === 'src'), [['srcset', '/phone.webp'], ['src', '/original.webp']]);
+    assert.equal(source.dataset.lazySrcset, undefined);
+    assert.equal(image.dataset.lazySrc, undefined);
+    assert.equal(picture.removed, 'data-lazy-picture');
+  } finally {
+    for (const [key, value] of Object.entries(saved)) value === undefined ? delete globalThis[key] : globalThis[key] = value;
+  }
+});
 test('window includes partial second screen and one screen above, excludes boundary and hidden elements', () => {
   const rect = (top, bottom, left = 0, right = 390) => ({ top, bottom, left, right, width: right - left, height: bottom - top });
   assert.ok(isWithinImageWindow(rect(0, 600), 390, 844));
@@ -214,4 +260,16 @@ test('gallery orientation ignores the placeholder and updates when the original 
   img.naturalWidth = 2200; img.naturalHeight = 900; img.listener();
   assert.equal(attributes['data-orientation'], 'landscape');
   assert.equal(attributes['data-mobile-panorama'], 'true');
+});
+
+test('a portrait phone derivative cannot change the original gallery slot orientation', () => {
+  const script = readFileSync(new URL('../src/components/editorial/MediaGallery.astro', import.meta.url), 'utf8').match(/<script>([\s\S]*?)<\/script>/)[1];
+  class Image {
+    complete = true; naturalWidth = 480; naturalHeight = 640;
+    closest() { return {}; }
+    addEventListener() { assert.fail('crop dimensions must not drive gallery orientation'); }
+  }
+  const item = { querySelector: () => new Image(), setAttribute() { assert.fail('retain server slot orientation'); } };
+  runInNewContext(script, { HTMLImageElement: Image,
+    document: { querySelectorAll: () => [item], addEventListener() {} } });
 });

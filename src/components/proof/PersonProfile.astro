@@ -21,12 +21,13 @@ const {
 } = Astro.props;
 
 const resolvedPhoto = photo?.src ? withBase(photo.src) : undefined;
+const photoCaption = photo?.src ? imageCaption(photo.src, { ...photo, alt: photo.alt || name }) : undefined;
 ---
 
 <section class="person section">
   <div class="person__media">
     {resolvedPhoto ? (
-      <img src={resolvedPhoto} alt={imageCaption(photo.src, { ...photo, alt: photo.alt || name }).alt} title={imageCaption(photo.src, photo).hover} loading="lazy" />
+      <img src={resolvedPhoto} alt={photoCaption.alt} title={photoCaption.hover} loading="lazy" />
     ) : (
       <div class="person__placeholder" aria-hidden="true"></div>
     )}

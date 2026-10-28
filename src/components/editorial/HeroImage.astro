@@ -5,29 +5,35 @@ import { videoForBorrowedHero } from '../../lib/hero-video-catalog.ts';
 import { withBase } from '../../lib/paths';
 import mobileHeroRegistry from '../../data/media/mobile-hero-registry.json';
 import { createMobileHeroSelector } from '../../lib/mobile-hero-registry.mjs';
+import { hoverFromAlt } from '../../../scripts/lib/image-captions.mjs';
 interface Props extends HTMLAttributes<'img'> { fill?: boolean; background?: boolean; mobileCover?: { src: string; position: string } }
 const { fill = false, background = false, mobileCover, ...attributes } = Astro.props;
+const meaningful = Boolean(attributes.alt?.trim()) && attributes['aria-hidden'] !== 'true' && attributes['aria-hidden'] !== true;
+attributes.title = meaningful ? attributes.title?.trim() ? attributes.title : hoverFromAlt(attributes.alt) : undefined;
 const video = await videoForBorrowedHero(typeof attributes.src === 'string' ? attributes.src : undefined, Astro.url.pathname);
 const resolvedMobileCover = mobileCover ?? createMobileHeroSelector(mobileHeroRegistry).borrowed({source:typeof attributes.src === 'string' ? attributes.src : undefined,preferredProfile:'compact'});
 ---
 {video ? (
-  <span class:list={['hero-image-cover', { 'hero-image-cover--fill': fill, 'hero-image-cover--background': background }]} data-video-surface role={attributes.alt ? "img" : undefined} aria-label={attributes.alt || undefined}
+  <span class:list={['hero-image-cover', { 'hero-image-cover--fill': fill, 'hero-image-cover--background': background }]} data-video-surface role={attributes.alt ? "img" : undefined} aria-label={attributes.alt || undefined} title={attributes.title}
     style={attributes.width && attributes.height ? `--cover-image-ratio:${attributes.width}/${attributes.height}` : undefined}>
     <HeroVideo {...video} lazy placement="cover" selection="orientation" controls={false} layer="foreground">
       <img {...attributes} data-cover-photo />
     </HeroVideo>
   </span>
 ) : resolvedMobileCover ? (
-  <span class:list={['hero-image-responsive', { 'hero-image-cover--fill': fill, 'hero-image-cover--background': background }]}
-    data-mobile-cover="home-p06" role={attributes.alt ? 'img' : undefined} aria-label={attributes.alt || undefined} aria-hidden={attributes.alt ? undefined : 'true'} title={attributes.title}
-    style={`--cover-original-image:url("${attributes.src}");--cover-phone-image:url("${withBase(resolvedMobileCover.src)}");--cover-phone-position:${resolvedMobileCover.position}`} />
+  <picture class:list={['hero-image-responsive', { 'hero-image-cover--fill': fill, 'hero-image-cover--background': background }]}
+    data-mobile-cover="home-p06" style={`--cover-phone-position:${resolvedMobileCover.position}`}>
+    <source media={mobileHeroRegistry.media} srcset={withBase(resolvedMobileCover.src)} type="image/webp" />
+    <img {...attributes} data-cover-photo />
+  </picture>
 ) : <img {...attributes} data-cover-photo />}
 <style>
   .hero-image-cover { position: relative; display: block; width: 100%; height: 100%; min-width: 0; overflow: hidden; isolation: isolate; aspect-ratio: var(--cover-image-ratio, 4/3); }
   .hero-image-cover--background { z-index: -2; }
   .hero-image-cover--fill { position: absolute; inset: 0; aspect-ratio: auto; }
-  .hero-image-responsive { display: block; width: 100%; height: 100%; background-image: var(--cover-original-image); background-size: cover; background-position: center; transition: transform 700ms var(--ease-out); }
+  .hero-image-responsive { display: block; width: 100%; height: 100%; transition: transform 700ms var(--ease-out); }
+  .hero-image-responsive img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center; }
   @media (max-width: 479px) {
-    .hero-image-responsive { background-image: var(--cover-phone-image, var(--cover-original-image)); background-position: var(--cover-phone-position, center); }
+    .hero-image-responsive img { object-position: var(--cover-phone-position, center); }
   }
 </style>

@@ -7,6 +7,11 @@ const set = (node, name, value) => {
   node.attrs = node.attrs.filter((item) => item.name !== name);
   node.attrs.push({ name, value });
 };
+const shouldDefer = (node) => {
+  const src = attribute(node, 'src');
+  return src && !src.startsWith('data:') && !attribute(node, 'data-lazy-src')
+    && attribute(node, 'fetchpriority') !== 'high';
+};
 
 /** Transform before the browser preload scanner can discover offscreen URLs.
  * Keep the high-priority LCP cover and provide ordinary HTML when JS is disabled.
@@ -16,16 +21,30 @@ export function deferImages(html) {
   const root = parseFragment(html, { sourceCodeLocationInfo: true });
   const edits = [];
   let backgroundIndex = 0;
-  const walk = (node) => {
+  const walk = (node, inDeferredPicture = false) => {
     if (['script', 'style', 'noscript', 'template'].includes(node.tagName)) return;
     const location = node.sourceCodeLocation?.startTag;
     if (location && node.attrs) {
       const original = html.slice(location.startOffset, location.endOffset);
       let changed = false;
       let fallback = '';
+      const pictureImage = node.tagName === 'picture' && node.childNodes.find((child) => child.tagName === 'img');
+      if (pictureImage && shouldDefer(pictureImage)) {
+        inDeferredPicture = true;
+        set(node, 'data-lazy-picture', '');
+        changed = true;
+        // One complete picture is the no-JS fallback. A per-img fallback would
+        // lose the phone source and create duplicate grid items.
+        const end = node.sourceCodeLocation.endOffset;
+        edits.push({ start: end, end, value: `<noscript>${html.slice(node.sourceCodeLocation.startOffset, end)}</noscript>` });
+      }
+      if (node.tagName === 'source' && inDeferredPicture && attribute(node, 'srcset')) {
+        set(node, 'data-lazy-srcset', attribute(node, 'srcset'));
+        node.attrs = node.attrs.filter((item) => item.name !== 'srcset');
+        changed = true;
+      }
       const src = attribute(node, 'src');
-      if (node.tagName === 'img' && src && !src.startsWith('data:') && !attribute(node, 'data-lazy-src')
-        && attribute(node, 'fetchpriority') !== 'high') {
+      if (node.tagName === 'img' && shouldDefer(node)) {
         set(node, 'data-lazy-src', src);
         const srcset = attribute(node, 'srcset');
         if (srcset) {
@@ -41,7 +60,7 @@ export function deferImages(html) {
         const meta = attribute(node, 'data-pagefind-meta');
         if (meta) set(node, 'data-pagefind-meta', meta.replaceAll('[src]', '[data-lazy-src]'));
         // Hidden search-index images are metadata only: never fetch them.
-        fallback = meta ? '' : `<noscript>${original}</noscript>`;
+        fallback = meta || inDeferredPicture ? '' : `<noscript>${original}</noscript>`;
         changed = true;
       }
       const style = attribute(node, 'style');
@@ -58,7 +77,7 @@ export function deferImages(html) {
       }
       if (changed) edits.push({ start: location.startOffset, end: location.endOffset, value: openingTag(node) + fallback });
     }
-    for (const child of node.childNodes || []) walk(child);
+    for (const child of node.childNodes || []) walk(child, inDeferredPicture);
   };
   walk(root);
   for (const edit of edits.sort((a, b) => b.start - a.start)) {

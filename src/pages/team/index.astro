@@ -87,8 +87,8 @@ const colleagues = team.members;
           <img
             class="team-member__photo"
             src={withBase(person.photo.src)}
-            alt={person.photo.alt}
-            title={person.photo.hover}
+            alt={imageCaption(person.photo.src, person.photo).alt}
+            title={imageCaption(person.photo.src, person.photo).hover}
             width={person.photo.width}
             height={person.photo.height}
             loading="lazy"

@@ -23,8 +23,18 @@ test('reused and string media get the exact override; decorative images stay emp
   assert.deepEqual(lookup('/media/a.webp'), { alt: 'Река и лес', hover: 'Лес у реки' });
   assert.deepEqual(lookup('https://img.adatours.ru/media/a.webp', { alt: 'Ошибочный маршрут' }), lookup('/media/a.webp'));
   assert.deepEqual(lookup('/media/a.webp', {}, { decorative: true }), { alt: '', hover: undefined });
-  assert.deepEqual(lookup('https://other.test/a.webp', { alt: 'Исходная подпись' }), { alt: 'Исходная подпись', hover: undefined });
+  assert.deepEqual(lookup('https://other.test/a.webp', { alt: 'Исходная подпись' }), { alt: 'Исходная подпись', hover: 'Исходная подпись' });
   assert.deepEqual(lookup('/media/unknown.webp'), { alt: '', hover: undefined });
+});
+
+test('new image paths get hover from their own alt without borrowing another scene', () => {
+  const lookup = createCaptionLookup([]);
+  assert.deepEqual(lookup('/media/new-scene.webp', { alt: 'Панорама Рио-де-Жанейро' }),
+    { alt: 'Панорама Рио-де-Жанейро', hover: 'Панорамный вид Рио-де-Жанейро' });
+  assert.equal(lookup('/media/new-scene.webp', { alt: 'Река', hover: 'Существующая подсказка' }).hover, 'Существующая подсказка');
+  assert.equal(lookup('/media/new-scene.webp', { alt: 'Река', hover: '  ' }).hover, 'Река');
+  assert.deepEqual(lookup('/media/background.webp', { alt: '', hover: 'Лишняя подсказка' }), { alt: '', hover: undefined });
+  assert.deepEqual(lookup('/media/background.webp', { alt: 'Река' }, { decorative: true }), { alt: '', hover: undefined });
 });
 
 test('image identity unifies our CDN only and preserves exact donor URLs', () => {

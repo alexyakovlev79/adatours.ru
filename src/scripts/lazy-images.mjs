@@ -27,6 +27,14 @@ export function initializeLazyImages() {
       // Runtime-inserted images can still carry native loading="lazy".
       // Our geometry window owns scheduling, so do not defer a second time.
       element.setAttribute('loading', 'eager');
+      // A picture's source has no layout box to observe. Activate all of its
+      // candidates only when the fallback img enters the existing load window.
+      const picture = element.closest?.('picture[data-lazy-picture]');
+      picture?.querySelectorAll('source[data-lazy-srcset]').forEach((source) => {
+        source.setAttribute('srcset', source.dataset.lazySrcset);
+        delete source.dataset.lazySrcset;
+      });
+      picture?.removeAttribute('data-lazy-picture');
       // Set sizes/srcset before src so a responsive image makes one request.
       if (element.dataset.lazySrcset) {
         element.setAttribute('srcset', element.dataset.lazySrcset);

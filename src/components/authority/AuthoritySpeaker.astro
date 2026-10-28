@@ -1,6 +1,7 @@
 ---
 import AuthorityInline from './AuthorityInline.astro';
 import { withBase } from '../../lib/paths';
+import { imageCaption } from '../../lib/image-captions.mjs';
 import type { AuthoritySectionCopy } from './content';
 
 interface Props {
@@ -8,13 +9,14 @@ interface Props {
   speaker: { name: string; role: string; photo: string; photoAlt: string; href: string; linkLabel: string };
 }
 const { section, speaker } = Astro.props;
+const photoCaption = imageCaption(speaker.photo, { alt: speaker.photoAlt });
 ---
 
 <section id={section.id} class="authority-speaker section" aria-labelledby={`${section.id}-title`}>
   <div class="container authority-speaker__grid">
     <figure>
       <div class="authority-speaker__photo">
-        <img src={withBase(speaker.photo)} alt={speaker.photoAlt} width="1254" height="1254" loading="lazy" decoding="async" />
+        <img src={withBase(speaker.photo)} alt={photoCaption.alt} title={photoCaption.hover} width="1254" height="1254" loading="lazy" decoding="async" />
       </div>
       <figcaption><span>{speaker.name}</span><small>{speaker.role}</small></figcaption>
     </figure>

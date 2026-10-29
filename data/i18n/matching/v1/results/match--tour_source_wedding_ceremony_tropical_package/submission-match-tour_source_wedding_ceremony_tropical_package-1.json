@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_wedding_ceremony_tropical_package",
+  "result": {
+    "entityId": "tour_source_wedding_ceremony_tropical_package",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_wedding_ceremony_tropical_package",
+    "outcome": "not_found_both",
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "selectedSource": null,
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU identity is a one-day Tropical wedding ceremony in Rio de Janeiro (package USD 4063), not an ordinary sightseeing itinerary or a New Year holiday. RU source has no detailed ceremony itinerary to justify substituting a different service.",
+      "2027: inspected the actual Brazil folder 1ifpwDaNUDBUStt1XuYJeEuBpT5QhF7C5 (71 files), current programme manifest, VIP and one-page leaflet catalogues. Only proposed candidate 1YQFyMAxRPSIGot2B4bobRMxfFZH7_hcL is Tropical New Year 2027 Group ENG com20%.docx, modified 2026-05-22; its New Year identity contradicts a wedding ceremony. It is rejected, not matched on the word Tropical.",
+      "2026: inspected actual Brazil folder 1BFjrV-dL41ZfNKI7mfXwyrT3VW9wsbR4 (84 files), VIP folder 1pjVZJ6K-6b8E3jJYjfqyhX6VTywLe2Zx (41 files), and year root. No named wedding ceremony programme was present. Complete 2026 Rio excursion collection 1yhVdfqApuvyAYufmIEAHi4ZdHCY1Nn7i was read: 184 paragraphs in document.xml list sightseeing, sailing, Carnival, cooking and adventure activities, with no wedding, marriage, ceremony, bride or groom service.",
+      "2027 excursion collection 14Wabl_yEZmvwGPjZzwtHrixu5gaNdBlS was read completely (304 document paragraphs, 18 Rio/Iguazu excursions plus full rate table and conditions). No wedding ceremony service occurs. Its ordinary excursion prices cannot replace the RU wedding package price.",
+      "Expanded quarantined/alternate-source checks: OldDesign Brazil folder 1VnklE01fWjUf5ysM9QZw1qEz3tNdTIqq (64 files), MICE root 19nS5yaXTD26-QJOcN9-0Lh-rPhnS7UF7 (95 entries) and its 10-file Cases child, plus 8-file English leaflet child 1tcgHECqs7Gj54RePkraiZB6LsJabG4N0. No relevant English wedding Word found. Drive wedding search returned Markdown webpage exports and planning assets, not an English programme Word. Programme manifest search for wedding/ceremony/casamento had no relevant source (Weddell Sea is unrelated).",
+      "Both examined excursion DOCX files include inspected headers/footers and any footnote/endnote XML; no wedding matches and no tracked insertions/deletions were found. No translation or price amendments are proposed."
+    ],
+    "checkedSupplementarySources": [
+      {
+        "driveFileId": "1yhVdfqApuvyAYufmIEAHi4ZdHCY1Nn7i",
+        "sourceYearFolder": 2026,
+        "name": "1. Tours in Rio english.docx",
+        "sourceSha256": "bc574ae8f307c43b33039f1f32a29e92787f4fe4813a610dad3d86cf2b35da7a",
+        "modifiedTime": "2026-06-12T18:41:13.268Z",
+        "rejectionReason": "No wedding service in complete Rio excursion collection."
+      },
+      {
+        "driveFileId": "14Wabl_yEZmvwGPjZzwtHrixu5gaNdBlS",
+        "sourceYearFolder": 2027,
+        "name": "Excursions AdaTours Rio Iguazu 2027 ENG com 20%.docx",
+        "sourceSha256": "00f2b7b57b954445eefacb7b7a9b08c3ff7bfcdbf4ef92397d0a235bdc37f839",
+        "modifiedTime": "2026-10-21T20:45:27.537Z",
+        "rejectionReason": "No wedding service among 18 excursions."
+      }
+    ]
+  }
+}

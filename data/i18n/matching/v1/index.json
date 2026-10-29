@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:49:44.627Z",
+  "updatedAt": "2026-10-29T17:49:50.742Z",
   "counts": {
     "held": 0,
-    "queued": 306,
-    "leased": 5,
+    "queued": 305,
+    "leased": 6,
     "ready": 47,
     "retryable": 0,
     "blocked_external": 0,
@@ -21,15 +21,15 @@
     "00": {
       "counts": {
         "held": 0,
-        "queued": 12,
-        "leased": 0,
+        "queued": 11,
+        "leased": 1,
         "ready": 10,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:49:50.742Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -275,6 +275,11 @@
       "token": "lease-mvtu0x51-kffn6cb1",
       "jobId": "match:tour_source_fantasticheskaya_kolumbiya",
       "expiresAt": "2026-10-29T18:49:20.148Z"
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_source_luchshee_v_belize_za_11_dnej",
+      "expiresAt": "2026-10-29T18:49:50.742Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -360,7 +365,8 @@
       "jobIds": [
         "match:tour_source_kankun_beliz",
         "match:tour_source_klassicheskij_paragvaj",
-        "match:tour_source_kolumbiya_bogota_ekhe_kafetero_kartakhena"
+        "match:tour_source_kolumbiya_bogota_ekhe_kafetero_kartakhena",
+        "match:tour_source_luchshee_v_belize_za_11_dnej"
       ],
       "completedJobIds": [
         "match:tour_source_kankun_beliz",

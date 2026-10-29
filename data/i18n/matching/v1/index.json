@@ -4,7 +4,7 @@
   "jobCount": 358,
   "pilotJobCount": 5,
   "pilotOnly": true,
-  "matchingEnabled": false,
+  "matchingEnabled": true,
   "translationEnabled": false,
   "updatedAt": "2026-10-29T00:00:00.000Z",
   "counts": {
@@ -242,5 +242,12 @@
       "earliestExpiryAt": null,
       "earliestRetryAt": null
     }
+  },
+  "pilotGate": {
+    "mode": "two_chat_pilot",
+    "allowedJobs": 5,
+    "translationEnabled": false,
+    "evidence": "Node24 Actions 40833361987 success, remote CAS smoke branch i18n/matching-smoke-20261029",
+    "date": "2026-10-29"
   }
 }

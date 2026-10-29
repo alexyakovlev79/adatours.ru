@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_kosta_rika_za_5_dnej",
+  "result": {
+    "entityId": "tour_source_kosta_rika_za_5_dnej",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_kosta_rika_za_5_dnej",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+      "modifiedTime": "2026-10-26T18:20:11.504Z",
+      "name": "Basic_Costa_Rica_2027_5d4n_Eng_20___1_.docx"
+    },
+    "evidence": [
+      "Full DOCX confirms 5D/4N San Jose 1N → Tortuguero/Pachira 2N → San Jose 1N, Braulio Carrillo/banana plantations/Cano Blanco boat on day 2, Tortuguero canals day 3, included return flight day 4 and La Paz gardens/lunch, departure day 5. Combination of geography, nights, included flight and lodge establishes same product.",
+      "2027 revises day 4 from RU Poas volcano to Doka coffee plantation; day 3 is dawn wildlife plus free time rather than afternoon walk. EN follows complete selected Word, without inventing Poas inclusion. Palma Real replaces Barcelo and guide is English/bilingual naturalist rather than RU Russian; differences retained explicitly.",
+      "Full nested tariff table body child 45 provides USD 2055 SGL and USD 1897 DBL per person, minimum two travellers, excluding Christmas/Easter/New Year. USD 17 Tortuguero entrance remains excluded; not included in package totals. RU old USD 2226 not preserved as authoritative."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml /w:document/w:body/*[23] (body child numbers)"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml /w:document/w:body/*[24] (body child numbers)"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml /w:document/w:body/*[25] (body child numbers)"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml /w:document/w:body/*[34 and 36; 2027 Doka replaces Poas, La Paz retained] (body child numbers)"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml /w:document/w:body/*[35] (body child numbers)"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 2055,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "roomType": "SGL",
+        "minimumGroup": 2,
+        "validity": "2027, any arrival except Christmas, Easter, New Year",
+        "accommodation": "Palma Real 1+1N; Pachira Lodge 2N full board",
+        "includedFlight": "Tortuguero–San Jose",
+        "sourceLocator": "word/document.xml /w:document/w:body/*[45] (nested tariff table); accommodation *[42]"
+      },
+      {
+        "amount": 1897,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "roomType": "DBL",
+        "minimumGroup": 2,
+        "validity": "2027, any arrival except Christmas, Easter, New Year",
+        "accommodation": "Palma Real 1+1N; Pachira Lodge 2N full board",
+        "includedFlight": "Tortuguero–San Jose",
+        "sourceLocator": "word/document.xml /w:document/w:body/*[45] (nested tariff table); accommodation *[42]"
+      },
+      {
+        "amount": 17,
+        "currency": "USD",
+        "priceBasis": "per person; excluded entrance",
+        "service": "Tortuguero National Park",
+        "sourceLocator": "word/document.xml /w:document/w:body/*[48]",
+        "validity": "2027"
+      }
+    ]
+  }
+}

@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:44:56.724Z",
+  "updatedAt": "2026-10-29T17:45:03.129Z",
   "counts": {
     "held": 0,
-    "queued": 322,
-    "leased": 6,
+    "queued": 321,
+    "leased": 7,
     "ready": 30,
     "retryable": 0,
     "blocked_external": 0,
@@ -49,15 +49,15 @@
     "02": {
       "counts": {
         "held": 0,
-        "queued": 18,
-        "leased": 0,
+        "queued": 17,
+        "leased": 1,
         "ready": 7,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:45:03.129Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -280,6 +280,11 @@
       "token": "lease-mvtu0yxx-zfzi6gxa",
       "jobId": "match:tour_argentina_experience_6_days",
       "expiresAt": "2026-10-29T18:44:17.158Z"
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobId": "match:tour_source_buenos_ajres_salta_iguasu",
+      "expiresAt": "2026-10-29T18:45:03.129Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -375,7 +380,8 @@
     "ada-match-mvtu0mg2-9xr9js30": {
       "token": "lease-mvtu0mg2-62anan55",
       "jobIds": [
-        "match:tour_source_braziliya_argentina_i_chili"
+        "match:tour_source_braziliya_argentina_i_chili",
+        "match:tour_source_buenos_ajres_salta_iguasu"
       ],
       "completedJobIds": [
         "match:tour_source_braziliya_argentina_i_chili"

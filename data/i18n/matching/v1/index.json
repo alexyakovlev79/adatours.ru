@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T19:38:37.976Z",
+  "updatedAt": "2026-10-29T19:38:47.930Z",
   "counts": {
     "held": 0,
-    "queued": 122,
-    "leased": 9,
+    "queued": 121,
+    "leased": 10,
     "ready": 227,
     "retryable": 0,
     "blocked_external": 0,
@@ -231,15 +231,15 @@
     "0f": {
       "counts": {
         "held": 0,
-        "queued": 25,
-        "leased": 0,
+        "queued": 24,
+        "leased": 1,
         "ready": 2,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T20:38:47.930Z",
       "earliestRetryAt": null
     }
   },
@@ -295,6 +295,11 @@
       "token": "lease-mvty1gk9-04eu14wjk9ii",
       "jobId": "match:tour_source_manyashchij_peru_kolumbiya",
       "expiresAt": "2026-10-29T20:38:32.141Z"
+    },
+    "ada-match-mvty1i4m-teplmvhn": {
+      "token": "lease-mvty1i4m-jqd2y8f2",
+      "jobId": "match:tour_chile_argentina_private_grand_tour_17_days",
+      "expiresAt": "2026-10-29T20:38:47.930Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -846,7 +851,8 @@
       "token": "lease-mvty1i4m-jqd2y8f2",
       "jobIds": [
         "match:tour_brazil_little_mix_ten_days",
-        "match:tour_central_america_eight_countries_26_days"
+        "match:tour_central_america_eight_countries_26_days",
+        "match:tour_chile_argentina_private_grand_tour_17_days"
       ],
       "completedJobIds": [
         "match:tour_brazil_little_mix_ten_days",

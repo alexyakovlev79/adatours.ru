@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_brazil_carnival_flavors_rio_paraty_ilha_grande",
+  "result": {
+    "entityId": "tour_brazil_carnival_flavors_rio_paraty_ilha_grande",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_brazil_carnival_flavors_rio_paraty_ilha_grande",
+    "outcome": "not_found_both",
+    "selectedSource": null,
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU snapshot has 9 days/8 nights, Rio 4n → Paraty 2n (jeep waterfalls/cachaca day5, Trindade day6) → Angra/Ilha Grande 2n (boat day7, Lopes Mendes day8), Sambadrome night day4; group prices 8+1/10+1/12+1. No examined English programme matches this distinctive complete sequence.",
+      "2027 nominated full DOCX 14I_Mhf-pvli5ZujSRs0i-WvurRYuD7JK, SHA256 5022a6f1e0758a17462f3fc9f4cb503f0e9036f6be604e4d0ee8e5f539d384ac, modified 2026-10-23T18:17:42.203Z, is 7d6n 6–12 Feb, Rio3n/Paraty3n, group7. document.xml body p17–18,p26,p33–36: no Ilha Grande or Trindade; day6 is Mamangua. This is a different tour, so its 8100/5150 prices must not amend this RU Tour.",
+      "2026 nominated full DOCX 1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N, SHA256 0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384, modified 2026-02-23T17:28:46.426Z, is 8d7n Rio3n → Ilha Grande2n → Paraty2n (body p23–34), not RU Rio→Paraty→Ilha. Day5 Blue Lagoon, no Sambadrome; body p55 explicitly excludes Carnival validity. Suitable partial descriptions do not establish identity of the 9-day carnival programme.",
+      "Checked complete safe programme manifest (344 files 2027,388 files2026) by Rio/Paraty/Ilha/Angra/Flavors/Flavours/Carnival, and live listings 2027 Carnival 1XOlJnBve3AtGVqJ1i_ADUXpRjrDnrIg4, 2026 Brazil 1BFjrV-dL41ZfNKI7mfXwyrT3VW9wsbR4 (84 entries) and Carnaval 10LcCKImUHRECdhh8Rwtd5dv-Hs_Dh1zt (12 entries). Other event products go to Iguazu/Buzios/Angra or are Rio-only, not this complete route.",
+      "Quarantine checked: Old Designs/Carnival folder 1RFiFNRZRaGX0DsE_M1VmPxwiba8wm598 and Old Designs/Brazil 1VnklE01fWjUf5ysM9QZw1qEz3tNdTIqq; former has only the same 7-day Rio/Paraty source 18MIoiLCp652jqkq0wzHct0RfbIAMyABj (readable full itinerary inspected), latter has no Flavors/Paraty/Ilha candidate. MICE folder 19nS5yaXTD26-QJOcN9-0Lh-rPhnS7UF7 and its MICE Cases checked; contracts excluded.",
+      "Quarantine full itinerary 1BSpEDiwIdd6HYxEPF2Xxc5Kpu8Thaf3Y is 9d8n but Rio→Angra→Paraty, group30, free day4 and samba factory day2, no overnight Ilha Grande or Sambadrome. MICE sources 1c_FP-paIQnnwL2S5HLEWOgNL6Oir9DYE and 1JWuPw5v7vzDos40wd1Zh-UEIvZ1vr39G are 7d6n Rio/Angra or Rio/Paraty, no island stay; 1O6qCoe_xx9pRMJreQvVoS2vZeRToGBvT is 11d10n with return to Rio day6, not this tour. MICE Carnival 1ENsxRK_GxCbGywGbg9U7VorAfH0QTxcc is same 7-day group7 itinerary, inspected.",
+      "Alternative 2026 1-58PjXNqY64Za9uRWGVyg-fXi4BVbva0 inspected: Brazilian Dream 7d6n, Rio→Angra day4→Paraty days4–7, jeep day5/Mamangua day6, no overnight Ilha Grande or Sambadrome. MICE 14d13n Flavors PDFs add Iguassu/Sao Paulo and are not the claimed 9-day tour."
+    ],
+    "candidateChecks": [
+      {
+        "driveFileId": "14I_Mhf-pvli5ZujSRs0i-WvurRYuD7JK",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "5022a6f1e0758a17462f3fc9f4cb503f0e9036f6be604e4d0ee8e5f539d384ac",
+        "modifiedTime": "2026-10-23T18:17:42.203Z",
+        "decision": "rejected_different_tour",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body/w:tbl[2]/w:tr/w:tc[1]/w:p[1]",
+          "word/document.xml:/w:document/w:body/w:p[33]",
+          "word/document.xml:/w:document/w:body/w:p[35]"
+        ]
+      },
+      {
+        "driveFileId": "1CnszCcA_3tPg0-ovGbQzDwMWzsFxAy2N",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "0a4f70d6b10a0a16b87245b834bcc787f4846ada03fa768e140532b2087eb384",
+        "modifiedTime": "2026-02-23T17:28:46.426Z",
+        "decision": "rejected_different_tour",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body/w:p[23]",
+          "word/document.xml:/w:document/w:body/w:p[29]",
+          "word/document.xml:/w:document/w:body/w:p[55]"
+        ]
+      },
+      {
+        "driveFileId": "1BSpEDiwIdd6HYxEPF2Xxc5Kpu8Thaf3Y",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "77e4d4d571a34cd42729aa2585a8271d19429bedfb88ac972ea48b78fd6cd65f",
+        "modifiedTime": "2026-07-17T18:42:57.000Z",
+        "decision": "rejected_different_tour",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body/w:p[3]"
+        ]
+      }
+    ]
+  }
+}

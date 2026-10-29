@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:51:52.848Z",
+  "updatedAt": "2026-10-29T18:51:59.289Z",
   "counts": {
     "held": 0,
-    "queued": 156,
-    "leased": 3,
+    "queued": 155,
+    "leased": 4,
     "ready": 199,
     "retryable": 0,
     "blocked_external": 0,
@@ -161,15 +161,15 @@
     "0a": {
       "counts": {
         "held": 0,
-        "queued": 18,
-        "leased": 0,
+        "queued": 17,
+        "leased": 1,
         "ready": 3,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:51:59.289Z",
       "earliestRetryAt": null
     },
     "0b": {
@@ -265,6 +265,11 @@
       "token": "lease-mvtu1h9z-d3rjhcq7",
       "jobId": "match:tour_source_ves_ekvador_i_galapagosskie_ostrova",
       "expiresAt": "2026-10-29T19:51:43.715Z"
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_source_antarktida_programma_na_ves_den",
+      "expiresAt": "2026-10-29T19:51:59.289Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -405,7 +410,8 @@
         "match:tour_source_ves_ekvador_i_gorbatye_kity",
         "match:tour_brazil_recife_porto_noronha_10d",
         "match:tour_colombia_cano_cristales_8_days",
-        "match:tour_peru_bolivia_enchanted_10_days"
+        "match:tour_peru_bolivia_enchanted_10_days",
+        "match:tour_source_antarktida_programma_na_ves_den"
       ],
       "completedJobIds": [
         "match:tour_source_kankun_beliz",

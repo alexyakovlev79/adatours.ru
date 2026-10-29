@@ -218,3 +218,26 @@ pipeline. Mass translation remains prohibited.
 - Up to four parallel Work matching chats in first mass wave; six
   distinct jobs maximum per worker. Translation and EN deployment remain
   disabled; Astro locale adapter is not yet connected to all layouts.
+
+## Checkpoint 7 — 29.10.2026: ten automatic matching batches per chat
+
+- User authorized ten successive batches of six Tours per Work chat (60 distinct
+  jobs maximum), automatically continuing without another message. Pilot cap 3
+  unchanged. Six completed Tours no longer stop a bulk worker.
+- New reservations last 60 minutes; renew/checkpoint every 20 minutes. Logical
+  batches do not reserve future Tours. Existing valid leases are preserved.
+- Progress and quota are persistent in ownerAssignments; replay never counts a
+  completed result twice. Claim/resume returns the saved checkpoint receipt.
+- CAS writes retry up to 12 times with jitter and fresh snapshots/timestamps.
+  Provider throttling returns a bounded pause, respecting Retry-After; permission
+  errors remain errors. No new result or lease is fabricated on failure.
+- Node 24 focused tests cover the full 60-job cycle, 20 simultaneous workers on
+  358 mock jobs, duplicate/lost-response completion, expiry/fencing/checkpoint,
+  renewal, repeated contention and provider throttling. This is a protocol stress
+  test, not a live 20-chat API throughput measurement.
+- Migration changes only dispatcher policy/progress in the live index; completed
+  results, source fingerprints and all shard states remain unchanged. Public
+  RU/EN content, prices, translation gates and main remain unchanged.
+- New worker command: 14-matching-bulk.md v1.3. Already open workers must reload
+  the same new code SHA for core+remote and preserve their existing owner/token.
+

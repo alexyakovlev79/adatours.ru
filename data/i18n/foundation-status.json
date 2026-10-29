@@ -28,11 +28,11 @@
     "matchingPilotQueued": 0,
     "matchingMassHeld": 0,
     "newEnglishContentReady": 0,
-    "matchingMassQueued": 353,
-    "matchingReady": 5
+    "matchingMassQueued": 329,
+    "matchingReady": 29
   },
   "nextGates": [
-    "complete_bulk_semantic_matching_of_remaining_353",
+    "complete_bulk_semantic_matching_of_remaining_active_tours",
     "apply_confirmed_word_2027_price_amendments_to_shared_ru_and_en_source",
     "finish_stable_complete_block_maps_and_shared_excursion_ownership",
     "connect_locale_adapter_to_astro_runtime_and_ui_seo",
@@ -45,7 +45,7 @@
   "matchingPilotEnabled": false,
   "matchingPilotBranch": "i18n/matching-staging",
   "matchingPilotJobs": 5,
-  "matchingJobsHeld": 353,
+  "matchingJobsHeld": 0,
   "matchingReaperCronActive": false,
   "matchingSmokeVerified": true,
   "matchingSmokeBranch": "i18n/matching-smoke-20261029",
@@ -58,5 +58,13 @@
   "matchingMassEnabled": true,
   "matchingMassBranch": "i18n/matching-staging",
   "matchingMassActivationCommit": "bf04211267744431363a1e3dc3e13eb75c064f47",
-  "matchingOwnerLimit": 6
+  "matchingOwnerLimit": 60,
+  "matchingWorkerBatchSize": 6,
+  "matchingWorkerMaxBatches": 10,
+  "matchingLeaseMinutes": 60,
+  "matchingRenewAfterMinutes": 20,
+  "matchingCasMaxAttempts": 12,
+  "matchingProtocolStressWorkers": 20,
+  "matchingLive20WorkerThroughputVerified": false
 }
+

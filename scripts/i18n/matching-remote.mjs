@@ -12,6 +12,20 @@
 const REPO='alexyakovlev79/adatours.ru';
 const BRANCH='i18n/matching-staging';
 const ROOT='data/i18n/matching/v1';
+const BULK_BATCH_SIZE=6;
+const BULK_MAX_BATCHES=10;
+const CAS_ATTEMPTS=12;
+const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+function workerProgress(index,ownerId) {
+ const entry=index.ownerAssignments?.[ownerId];
+ const assignedCount=entry?.jobIds?.length||0;
+ const completedCount=entry?.completedJobIds?.length||0;
+ const limit=index.pilotOnly===true?3:BULK_BATCH_SIZE*BULK_MAX_BATCHES;
+ return {limit,batchSize:index.pilotOnly===true?3:BULK_BATCH_SIZE,
+   maxBatches:index.pilotOnly===true?1:BULK_MAX_BATCHES,assignedCount,completedCount,
+   completedBatches:Math.floor(completedCount/(index.pilotOnly===true?3:BULK_BATCH_SIZE)),
+   nextBatch:assignedCount>=limit?null:Math.floor(assignedCount/BULK_BATCH_SIZE)+1};
+}
 function un(r) { if(r?.isError) throw new Error(JSON.stringify(r));return r?.result||r?.structuredContent||r; }
 const validId=x=>typeof x==='string'&&/^[a-zA-Z0-9_.:-]{2,180}$/.test(x);
 const format=v=>JSON.stringify(v,null,2)+'\n';
@@ -35,7 +49,12 @@ async function update(tools,{baseHead,files,message}) {
  if(r.success!==true)throw new Error('CAS update did not succeed');
  return c;
 }
-function hotRateLimit(e){return /rate.limit|too many|429|403|retry.after|secondary limit/i.test(String(e));}
+function hotRateLimit(e){return /rate.limit|too many|429|retry.after|secondary limit/i.test(String(e));}
+function throttlePause(e) {
+ const text=String(e);
+ const seconds=text.match(/retry[-_ ]?after["'\s:=>]+(\d+)/i)?.[1];
+ return Math.max(60000,Number(seconds||0)*1000);
+}
 function retryableContention(e){return /expected.sha|conflict|reference update|non.fast.forward|422|409|changed|mismatch/i.test(String(e));}
 function pathFor(kind,shardId) {return ROOT+'/'+kind+'/'+shardId+'.json';}
 async function readSnapshot(tools, core, sha, args) {
@@ -51,8 +70,8 @@ async function readSnapshot(tools, core, sha, args) {
      sid=core.shardFor(mine.jobId);
    } else {
      // An owner is one Work chat, identified by its persistent ownerId/token.
-     // A hard quota prevents one chat consuming an entire pilot or bulk queue.
-     const quota = index.pilotOnly === true ? 3 : 6;
+     // Six consecutive one-Tour reservations form a logical batch; ten per chat.
+     const quota = workerProgress(index,args.ownerId).limit;
      const assigned = index.ownerAssignments?.[args.ownerId];
      if(assigned && assigned.token !== args.token) return {index,ownedByOtherToken:true};
      if((assigned?.jobIds?.length||0) >= quota) {
@@ -121,22 +140,28 @@ export async function runEnMatching(tools,core,args={}) {
  if(!['claim','renew','checkpoint','complete','release','fail','status','reap'].includes(args.action))throw new Error('Unsupported matching action');
  if(args.branch && args.branch!==BRANCH)throw new Error('Wrong matching branch');
  if(Object.hasOwn(args,'now'))throw new Error('Matching dispatcher uses its own clock; user supplied now is forbidden');
- const now=new Date().toISOString();
  if(args.action==='status') {
    const sha=await head(tools,BRANCH);
    const idx=await jsonFile(tools,ROOT+'/index.json',sha);
    return {status:'snapshot',head:sha,pilotOnly:idx.pilotOnly,matchingEnabled:idx.matchingEnabled,
      translationEnabled:idx.translationEnabled,counts:idx.counts,pilotJobCount:idx.pilotJobCount,
-     updatedAt:idx.updatedAt,ownerQuota:idx.pilotOnly===true?3:6,activeOwners:Object.fromEntries(Object.entries(idx.activeOwners||{}).map(([id,lease])=>[id,{jobId:lease.jobId,expiresAt:lease.expiresAt}])),earliestExpiryAt:Object.values(idx.shards).map(s=>s.earliestExpiryAt).filter(Boolean).sort()[0]||null};
+     updatedAt:idx.updatedAt,ownerQuota:workerProgress(idx,args.ownerId).limit,
+     workerProgress:workerProgress(idx,args.ownerId),leaseMinutes:60,renewAfterMinutes:20,
+     activeOwners:Object.fromEntries(Object.entries(idx.activeOwners||{}).map(([id,lease])=>[id,{jobId:lease.jobId,expiresAt:lease.expiresAt}])),earliestExpiryAt:Object.values(idx.shards).map(s=>s.earliestExpiryAt).filter(Boolean).sort()[0]||null};
  }
  if(args.action!=='reap')requireOwner(args);
- for(let attempt=0;attempt<3;attempt++){
+ let preparedBlob=null;
+ for(let attempt=0;attempt<CAS_ATTEMPTS;attempt++){
+  try {
+   // Refresh after every backoff so a delayed retry cannot write an expired lease.
+   const now=new Date().toISOString();
    const baseHead=await head(tools,BRANCH);
    const snap=await readSnapshot(tools,core,baseHead,{...args,now});
    if(snap.closed)return {status:'gate_closed',matchingEnabled:false,head:baseHead};
    if(snap.ownedByOtherToken)return {status:'active_owner_has_other_token',head:baseHead};
    if(snap.quotaReached)return {status:'worker_quota_reached',head:baseHead,
-      limit:snap.quota,assignedCount:snap.assignedCount,counts:snap.index.counts};
+      limit:snap.quota,assignedCount:snap.assignedCount,counts:snap.index.counts,
+      workerProgress:workerProgress(snap.index,args.ownerId)};
    if(snap.empty)return {status:'empty_or_busy',head:baseHead,counts:snap.index.counts};
    const {sid,packet,shard,index}=snap;
    let mutation,outcome='saved',job=null,extra=[];
@@ -145,7 +170,8 @@ export async function runEnMatching(tools,core,args={}) {
      mutation=c;outcome=c.status;
      if(!c.job)return {status:'empty_or_busy',head:baseHead,counts:index.counts};
      if(c.status==='resumed')return {status:'resumed',head:baseHead,jobId:c.job.jobId,
-       job:pickJob(packet,c.job.jobId),lease:c.job.lease,generation:c.job.generation};
+       job:pickJob(packet,c.job.jobId),lease:c.job.lease,generation:c.job.generation,
+       checkpoint:c.job.checkpoint,workerProgress:workerProgress(index,args.ownerId)};
      job=pickJob(packet,c.job.jobId);
      if(c.job.sourceFingerprint!==job.sourceFingerprint)throw new Error('Job source fingerprint changed');
    } else if(args.action==='reap'){
@@ -161,7 +187,7 @@ export async function runEnMatching(tools,core,args={}) {
      if(args.action==='checkpoint') {
        if(!validId(args.checkpointId))throw new Error('Invalid checkpointId');
        const checkpointText=format({schemaVersion:1,jobId:job.jobId,sourceFingerprint:job.sourceFingerprint,checkpointId:args.checkpointId,partial:args.partial});
-       const id=await blob(tools,checkpointText);
+       const id=preparedBlob||(preparedBlob=await blob(tools,checkpointText));
        const path=ROOT+'/checkpoints/'+job.jobId.replace(':','--')+'/'+args.checkpointId+'.json';
        mutation=core.checkpointMatch(shard,{...lease,checkpointId:args.checkpointId,checkpointBlobSha:id});
        if(mutation.status==='saved')extra.push({path,sha:id});
@@ -169,7 +195,7 @@ export async function runEnMatching(tools,core,args={}) {
      }
      if(args.action==='complete') {
        const resultText=format({schemaVersion:1,jobId:job.jobId,result:args.result});
-       const id=await blob(tools,resultText);
+       const id=preparedBlob||(preparedBlob=await blob(tools,resultText));
        const path=immutableResultPath(args);
        mutation=core.completeMatch(shard,{...lease,submissionId:args.submissionId,resultBlobSha:id,
          resultPath:path,result:args.result,job});
@@ -180,7 +206,8 @@ export async function runEnMatching(tools,core,args={}) {
        outcome=mutation.status;
      }
    }
-   if(outcome==='already_saved')return {status:'already_saved',head:baseHead,jobId:job?.jobId};
+   if(outcome==='already_saved')return {status:'already_saved',head:baseHead,jobId:job?.jobId,
+     workerProgress:workerProgress(index,args.ownerId)};
    if(outcome==='no_expired')return {status:outcome,head:baseHead};
    const nextIndex=touchIndex(core,index,sid,mutation.shard,now);
    if(args.action==='claim'){
@@ -192,6 +219,13 @@ export async function runEnMatching(tools,core,args={}) {
      nextIndex.ownerAssignments[args.ownerId]=existing;
    }
    if(args.action==='renew' && nextIndex.activeOwners[args.ownerId])nextIndex.activeOwners[args.ownerId].expiresAt=mutation.expiresAt;
+   if(args.action==='complete') {
+     const assignment=nextIndex.ownerAssignments?.[args.ownerId];
+     if(assignment?.token===args.token) {
+       if(!assignment.completedJobIds)assignment.completedJobIds=[];
+       if(!assignment.completedJobIds.includes(args.jobId))assignment.completedJobIds.push(args.jobId);
+     }
+   }
    if(['release','fail','complete'].includes(args.action)) {
      const own=nextIndex.activeOwners[args.ownerId];
      if(own?.jobId===args.jobId && own.token===args.token)delete nextIndex.activeOwners[args.ownerId];
@@ -206,17 +240,21 @@ export async function runEnMatching(tools,core,args={}) {
       {path:pathFor('state',sid),content:format(mutation.shard)},
       {path:ROOT+'/index.json',content:format(nextIndex)},...extra
    ];
-   try {
       const sha=await update(tools,{baseHead,files,
         message:'[skip ci] i18n-match '+args.action+' '+(job?.jobId||sid)});
       return {status:outcome,head:sha,jobId:job?.jobId,
-        ...(args.action==='claim'?{job,lease:mutation.job.lease,generation:mutation.job.generation}:{}),
-        counts:nextIndex.counts};
+        ...(args.action==='claim'?{job,lease:mutation.job.lease,generation:mutation.job.generation,checkpoint:mutation.job.checkpoint}:{}),
+        workerProgress:workerProgress(nextIndex,args.ownerId),
+        ...(args.action==='renew'?{expiresAt:mutation.expiresAt}:{}),counts:nextIndex.counts};
    }catch(e){
-      if(hotRateLimit(e))throw e;
-      if(attempt===2 || !retryableContention(e))throw e;
+      // A provider throttle is a bounded pause, never a hot retry or failed job.
+      if(hotRateLimit(e))return {status:'rate_limited',retryAfterMs:throttlePause(e),
+        action:args.action,jobId:args.jobId||null,message:String(e)};
+      if(attempt===CAS_ATTEMPTS-1 || !retryableContention(e))throw e;
+      await delay(Math.floor(250+Math.random()*Math.min(8000,500*2**attempt)));
       // On CAS contention re-read fresh state; never reuse an old lease/version.
    }
  }
  throw new Error('CAS retry exhausted');
 }
+

@@ -4,7 +4,7 @@
  */
 export const MATCH_STATE_VERSION = 1;
 export const MATCH_SHARD_COUNT = 16;
-export const MATCH_LEASE_MS = 90 * 60 * 1000;
+export const MATCH_LEASE_MS = 60 * 60 * 1000;
 export const MATCH_MAX_ATTEMPTS = 5;
 const STATES = ['held','queued','leased','ready','retryable','blocked_external','stale_source','failed_final'];
 const HEX64 = /^[0-9a-f]{64}$/i;
@@ -196,3 +196,4 @@ export function releaseMatch(shard,args) {
  const next=clone(shard),item=owned(next,args.jobId,args);
  item.status='queued';item.lease=null;return {shard:next,status:'released'};
 }
+

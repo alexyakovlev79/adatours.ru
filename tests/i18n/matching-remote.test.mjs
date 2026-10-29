@@ -237,29 +237,128 @@ test('one Work chat may claim only 3 pilot jobs; second chat receives remaining 
  assert.equal(status.counts.ready,5);
  assert.equal(status.counts.queued,0);
 });
-test('bulk owner limit is 6 completed jobs and a different chat gets the rest',async()=>{
- const env=sandbox({total:9,pilots:9});
+test('bulk worker continues through ten batches of six and stops at 60 distinct Tours',async()=>{
+ const env=sandbox({total:63,pilots:63});
  await env.mutateFile(ROOT+'/index.json',idx=>{idx.pilotOnly=false;return idx});
  const a=owner('bulk-a'),b=owner('bulk-b');
  let ids=[];
- for(let i=0;i<6;i++){
+ for(let i=0;i<60;i++){
   const claim=await runEnMatching(env.tools,core,{action:'claim',...a});
   assert.equal(claim.status,'claimed');
   ids.push(claim.jobId);
   const done=await runEnMatching(env.tools,core,{action:'complete',...a,jobId:claim.jobId,
     generation:claim.generation,submissionId:'done-bulk-'+i,result:match(claim.job)});
   assert.equal(done.status,'saved');
+  assert.equal(done.workerProgress.completedCount,i+1);
+  assert.equal(done.workerProgress.completedBatches,Math.floor((i+1)/6));
+  // Code-mode workers reload the module between calls; all quota/progress is CAS-persisted.
+  if((i+1)%6===0) {
+    const status=await runEnMatching(env.tools,core,{action:'status',...a});
+    assert.equal(status.workerProgress.completedBatches,(i+1)/6);
+    assert.equal(status.ownerQuota,60);
+  }
  }
- assert.equal(new Set(ids).size,6);
+ assert.equal(new Set(ids).size,60);
  const stop=await runEnMatching(env.tools,core,{action:'claim',...a});
  assert.equal(stop.status,'worker_quota_reached');
- assert.equal(stop.limit,6);
+ assert.equal(stop.limit,60);
  const idx=await env.index();
- assert.equal(idx.ownerAssignments[a.ownerId].jobIds.length,6);
+ assert.equal(idx.ownerAssignments[a.ownerId].jobIds.length,60);
+ assert.equal(idx.ownerAssignments[a.ownerId].completedJobIds.length,60);
  assert.equal(idx.ownerAssignments[a.ownerId].token,a.token);
  const other=await runEnMatching(env.tools,core,{action:'claim',...b});
  assert.equal(other.status,'claimed');
  assert.ok(!ids.includes(other.jobId));
+});
+
+test('20 simultaneous workers claim and complete distinct jobs without losing receipts',async()=>{
+ const env=sandbox({total:358,pilots:358});
+ await env.mutateFile(ROOT+'/index.json',idx=>{idx.pilotOnly=false;return idx;});
+ const workers=Array.from({length:20},(_,i)=>owner('stress-'+i));
+ const claims=await Promise.all(workers.map(o=>runEnMatching(env.tools,core,{action:'claim',...o})));
+ assert.ok(claims.every(c=>c.status==='claimed'));
+ assert.equal(new Set(claims.map(c=>c.jobId)).size,20);
+ const completions=await Promise.all(claims.map((c,i)=>runEnMatching(env.tools,core,{
+   action:'complete',...workers[i],jobId:c.jobId,generation:c.generation,
+   submissionId:'stress-submit-'+i,result:match(c.job)})));
+ assert.ok(completions.every(c=>c.status==='saved'));
+ const idx=await env.index();
+ assert.equal(idx.counts.ready,20);
+ assert.equal(idx.counts.queued,338);
+ assert.equal(idx.counts.leased,0);
+ assert.equal(Object.keys(idx.activeOwners).length,0);
+ for(let i=0;i<20;i++) {
+   const replay=await runEnMatching(env.tools,core,{action:'complete',...workers[i],
+     jobId:claims[i].jobId,generation:claims[i].generation,
+     submissionId:'stress-submit-'+i,result:match(claims[i].job)});
+   assert.equal(replay.status,'already_saved');
+   assert.equal(replay.workerProgress.completedCount,1);
+ }
+ console.log('20-worker CAS metrics',JSON.stringify(env.metrics()));
+});
+
+test('throttled complete pauses without releasing or double-counting the result',async()=>{
+ const env=sandbox({pilots:1}),o=owner('throttle');
+ const c=await runEnMatching(env.tools,core,{action:'claim',...o});
+ let attempts=0;
+ const throttled={...env.tools,mcp__GitHub__create_tree:async()=>{attempts++;throw Error('429 secondary rate limit');}};
+ const args={action:'complete',...o,jobId:c.jobId,generation:c.generation,
+   submissionId:'throttled-submit',result:match(c.job)};
+ const wait=await runEnMatching(throttled,core,args);
+ assert.equal(wait.status,'rate_limited');
+ assert.equal(wait.retryAfterMs,60000);
+ assert.equal(attempts,1);
+ assert.equal((await env.index()).counts.leased,1);
+ assert.equal((await env.index()).counts.ready,0);
+ assert.equal((await runEnMatching(env.tools,core,args)).status,'saved');
+ assert.equal((await runEnMatching(env.tools,core,args)).status,'already_saved');
+});
+
+test('one-hour lease, renew and checkpoint survive resume without claiming future Tours',async()=>{
+ const env=sandbox({pilots:2}),o=owner('heartbeat');
+ const c=await runEnMatching(env.tools,core,{action:'claim',...o});
+ assert.equal(Date.parse(c.lease.expiresAt)-Date.parse(c.lease.claimedAt),3600000);
+ const checkpoint=await runEnMatching(env.tools,core,{action:'checkpoint',...o,
+   jobId:c.jobId,generation:c.generation,checkpointId:'heartbeat-checkpoint',partial:{fileIds:['real-source']}});
+ assert.equal(checkpoint.status,'saved');
+ const resumed=await runEnMatching(env.tools,core,{action:'claim',...o});
+ assert.equal(resumed.status,'resumed');
+ assert.equal(resumed.checkpoint.checkpointId,'heartbeat-checkpoint');
+ const renewed=await runEnMatching(env.tools,core,{action:'renew',...o,jobId:c.jobId,generation:c.generation});
+ assert.ok(Date.parse(renewed.expiresAt)>=Date.parse(c.lease.expiresAt));
+ const idx=await env.index();
+ assert.equal(idx.counts.leased,1);
+ assert.equal(idx.counts.queued,1);
+ assert.equal(idx.ownerAssignments[o.ownerId].jobIds.length,1);
+});
+
+test('provider Retry-After is honored and access denial is not called throttling',async()=>{
+ const env=sandbox({pilots:1}),o=owner('retry-after');
+ const base=env.tools.mcp__GitHub__fetch_file;
+ const throttled={...env.tools,mcp__GitHub__fetch_file:async()=>{throw Error('429 Retry-After: 120');}};
+ const pause=await runEnMatching(throttled,core,{action:'claim',...o});
+ assert.equal(pause.status,'rate_limited');
+ assert.equal(pause.retryAfterMs,120000);
+ const denied={...env.tools,mcp__GitHub__fetch_file:async a=>{
+   if(a.path.endsWith('index.json'))throw Error('403 Resource not accessible by integration');
+   return base(a);
+ }};
+ await assert.rejects(()=>runEnMatching(denied,core,{action:'claim',...o}),/not accessible/);
+ assert.equal((await env.index()).counts.leased,0);
+});
+
+test('a fourth CAS collision still recovers with a fresh snapshot and one reservation',async()=>{
+ const env=sandbox({pilots:1}),o=owner('contention');
+ let conflicts=0;
+ const original=env.tools.mcp__GitHub__update_ref;
+ const raced={...env.tools,mcp__GitHub__update_ref:async a=>{
+   if(conflicts++<4)throw Error('expected_sha reference update conflict');
+   return original(a);
+ }};
+ const result=await runEnMatching(raced,core,{action:'claim',...o});
+ assert.equal(result.status,'claimed');
+ assert.equal((await env.index()).ownerAssignments[o.ownerId].jobIds.length,1);
+ assert.equal((await env.index()).counts.leased,1);
 });
 
 
@@ -283,3 +382,4 @@ test('an expired third lease cannot bypass the three-job pilot limit',async()=>{
  assert.equal(attempt.status,'worker_quota_reached');
  assert.equal(attempt.assignedCount,3);
 });
+

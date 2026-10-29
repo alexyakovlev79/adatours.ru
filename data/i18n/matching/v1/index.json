@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:46:43.978Z",
+  "updatedAt": "2026-10-29T17:46:49.683Z",
   "counts": {
     "held": 0,
-    "queued": 316,
-    "leased": 5,
+    "queued": 315,
+    "leased": 6,
     "ready": 37,
     "retryable": 0,
     "blocked_external": 0,
@@ -77,15 +77,15 @@
     "04": {
       "counts": {
         "held": 0,
-        "queued": 24,
-        "leased": 0,
+        "queued": 23,
+        "leased": 1,
         "ready": 2,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:46:49.683Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -275,6 +275,11 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobId": "match:tour_argentina_grand_tour_15_days_2027",
       "expiresAt": "2026-10-29T18:46:27.578Z"
+    },
+    "ada-match-mvtu0x51-9l4jrc5m": {
+      "token": "lease-mvtu0x51-kffn6cb1",
+      "jobId": "match:tour_source_braziliya_gruppovoj_tur_na_13_dnej",
+      "expiresAt": "2026-10-29T18:46:49.683Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -397,7 +402,8 @@
       "token": "lease-mvtu0x51-kffn6cb1",
       "jobIds": [
         "match:tour_brazil_mice_7_days",
-        "match:tour_source_3_shaga_po_kosta_rike"
+        "match:tour_source_3_shaga_po_kosta_rike",
+        "match:tour_source_braziliya_gruppovoj_tur_na_13_dnej"
       ],
       "completedJobIds": [
         "match:tour_brazil_mice_7_days",

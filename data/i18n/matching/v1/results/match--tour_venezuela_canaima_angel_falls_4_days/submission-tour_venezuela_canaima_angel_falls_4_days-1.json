@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_venezuela_canaima_angel_falls_4_days",
+  "result": {
+    "entityId": "tour_venezuela_canaima_angel_falls_4_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_venezuela_canaima_angel_falls_4_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1tHIW9z-qNCjM-DWY_dFZ5mjV1KtslBh9",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "29a97c9ab88c3704dacaec1af332ab623ca371e1b777ea21b79cdf1a53f6d6fa",
+      "modifiedTime": "2026-09-30T16:07:51.522Z"
+    },
+    "evidence": [
+      "Full VenezuelanBeauty2027 DOCX checked:4d3nCanaima, day1HachaSapo, day2CarraoChurunDevilsCanyonRatoncitoLaimeAngelFalls, day3free/kayak, day4Caracas9am; all four RUdays align. Tapuy/Waku discrepancy in day2Waku wording preserved as source fact.",
+      "Two lodge prices remain2293/2581USD perperson, occupancyunspecified; Word2027 updates all five additional experiences to676/108/151/115/4744USD versus RU562/88/125/89/4125. Helicopter explicitly group6. Parkfee40 excluded. Alleight numeric tariff items captured with precise locators; no site prices directly changed."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[5]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[8]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[13]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[17]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 2293,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "category": "Tapuy Lodge",
+        "conditions": "2027;3N;room occupancy/dates not specified; flights Caracas–Canaima–Caracas and meals BLDdays1–3,Bday4 included",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[21]"
+      },
+      {
+        "amount": 2581,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "category": "Waku Lodge",
+        "conditions": "2027;3N;room occupancy/dates not specified; flights and stated meals included",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[21]"
+      },
+      {
+        "amount": 40,
+        "currency": "USD",
+        "priceBasis": "excluded park fee",
+        "category": "Canaima Park",
+        "conditions": "Separate, not in package",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[19]"
+      },
+      {
+        "amount": 676,
+        "currency": "USD",
+        "priceBasis": "optional excursion; unit not explicitly restated",
+        "category": "Full day Kavac with Angel Falls fly-by",
+        "conditions": "Additional experience, not included; do not treat group helicopter price as per person",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[24]"
+      },
+      {
+        "amount": 108,
+        "currency": "USD",
+        "priceBasis": "optional excursion; unit not explicitly restated",
+        "category": "Pozo Azul",
+        "conditions": "Additional experience, not included; do not treat group helicopter price as per person",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[25]"
+      },
+      {
+        "amount": 151,
+        "currency": "USD",
+        "priceBasis": "optional excursion; unit not explicitly restated",
+        "category": "Kuravaina Trek and Pozo Azul",
+        "conditions": "Additional experience, not included; do not treat group helicopter price as per person",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[26]"
+      },
+      {
+        "amount": 115,
+        "currency": "USD",
+        "priceBasis": "optional excursion; unit not explicitly restated",
+        "category": "Yuri-Yuri Lu",
+        "conditions": "Additional experience, not included; do not treat group helicopter price as per person",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[27]"
+      },
+      {
+        "amount": 4744,
+        "currency": "USD",
+        "priceBasis": "per group of 6",
+        "category": "Helicopter tour group of6",
+        "conditions": "Additional experience, not included; do not treat group helicopter price as per person",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[28]"
+      }
+    ]
+  }
+}

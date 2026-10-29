@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T20:53:04.087Z",
+  "updatedAt": "2026-10-29T20:53:13.952Z",
   "counts": {
     "held": 0,
-    "queued": 0,
-    "leased": 8,
+    "queued": 2,
+    "leased": 6,
     "ready": 350,
     "retryable": 0,
     "blocked_external": 0,
@@ -77,15 +77,15 @@
     "04": {
       "counts": {
         "held": 0,
-        "queued": 0,
-        "leased": 3,
+        "queued": 2,
+        "leased": 1,
         "ready": 23,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T20:36:25.166Z",
+      "earliestExpiryAt": "2026-10-29T21:53:13.952Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -251,21 +251,6 @@
     "date": "2026-10-29"
   },
   "activeOwners": {
-    "ada-match-bde6d2b9cee1": {
-      "token": "lease-bde6d2b9cee1-mvty148e",
-      "jobId": "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
-      "expiresAt": "2026-10-29T20:36:25.166Z"
-    },
-    "ada-match-mvty1o5j-hdona4da": {
-      "token": "lease-mvty1o5j-o4gsmjnc",
-      "jobId": "match:tour_source_gvatemala_kosta_rika",
-      "expiresAt": "2026-10-29T20:36:43.131Z"
-    },
-    "ada-match-dbe665269419": {
-      "token": "lease-dbe665269419-mvtyl05s",
-      "jobId": "match:tour_source_iguacu_falls",
-      "expiresAt": "2026-10-29T20:51:12.439Z"
-    },
     "ada-match-mvtyk2h9-rex22lf4": {
       "token": "lease-mvtyk2h9-oqfnz1ro",
       "jobId": "match:tour_source_ves_mnogolikij_peru_i_senor_sipan",
@@ -290,6 +275,11 @@
       "token": "lease-mvu0qlpg-xpfe5piv",
       "jobId": "match:tour_source_kolumbiya_metropoliten",
       "expiresAt": "2026-10-29T21:52:53.310Z"
+    },
+    "ada-match-mvu0qu8j-i4e8b9eh": {
+      "token": "lease-mvu0qu8j-52skzt1u",
+      "jobId": "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+      "expiresAt": "2026-10-29T21:53:13.952Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -1194,7 +1184,8 @@
     "ada-match-mvu0qu8j-i4e8b9eh": {
       "token": "lease-mvu0qu8j-52skzt1u",
       "jobIds": [
-        "match:tour_source_vazhnoe_brazilii"
+        "match:tour_source_vazhnoe_brazilii",
+        "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle"
       ],
       "completedJobIds": [
         "match:tour_source_vazhnoe_brazilii"

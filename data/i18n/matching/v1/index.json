@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:58:23.801Z",
+  "updatedAt": "2026-10-29T17:58:29.548Z",
   "counts": {
     "held": 0,
-    "queued": 282,
-    "leased": 4,
+    "queued": 281,
+    "leased": 5,
     "ready": 72,
     "retryable": 0,
     "blocked_external": 0,
@@ -35,15 +35,15 @@
     "01": {
       "counts": {
         "held": 0,
-        "queued": 14,
-        "leased": 0,
+        "queued": 13,
+        "leased": 1,
         "ready": 16,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:58:29.548Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu0g8g-dpyvxbzq",
       "jobId": "match:tour_source_ves_mnogolikij_peru_plyazhi_tumbesa",
       "expiresAt": "2026-10-29T18:58:16.397Z"
+    },
+    "ada-match-2ff03f-mvtu1h9z": {
+      "token": "lease-mvtu1h9z-d3rjhcq7",
+      "jobId": "match:tour_source_kraski_venesuely",
+      "expiresAt": "2026-10-29T18:58:29.548Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -463,7 +468,8 @@
         "match:tour_source_chudesa_gvatemaly_beliza",
         "match:tour_source_ekvador_s_udovolstviem",
         "match:tour_source_ekzoticheskij_karnaval_v_brazilii",
-        "match:tour_source_klassicheskaya_programma_po_gvatemale"
+        "match:tour_source_klassicheskaya_programma_po_gvatemale",
+        "match:tour_source_kraski_venesuely"
       ],
       "completedJobIds": [
         "match:tour_argentina_best_14_days",

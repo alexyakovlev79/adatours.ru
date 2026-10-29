@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:45:18.855Z",
+  "updatedAt": "2026-10-29T17:45:28.344Z",
   "counts": {
     "held": 0,
-    "queued": 321,
-    "leased": 5,
+    "queued": 320,
+    "leased": 6,
     "ready": 32,
     "retryable": 0,
     "blocked_external": 0,
@@ -77,15 +77,15 @@
     "04": {
       "counts": {
         "held": 0,
-        "queued": 25,
-        "leased": 0,
+        "queued": 24,
+        "leased": 1,
         "ready": 1,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:45:28.344Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -275,6 +275,11 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobId": "match:tour_source_buenos_ajres_salta_iguasu",
       "expiresAt": "2026-10-29T18:45:03.129Z"
+    },
+    "ada-match-mvtu0x51-9l4jrc5m": {
+      "token": "lease-mvtu0x51-kffn6cb1",
+      "jobId": "match:tour_source_3_shaga_po_kosta_rike",
+      "expiresAt": "2026-10-29T18:45:28.344Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -386,7 +391,8 @@
     "ada-match-mvtu0x51-9l4jrc5m": {
       "token": "lease-mvtu0x51-kffn6cb1",
       "jobIds": [
-        "match:tour_brazil_mice_7_days"
+        "match:tour_brazil_mice_7_days",
+        "match:tour_source_3_shaga_po_kosta_rike"
       ],
       "completedJobIds": [
         "match:tour_brazil_mice_7_days"

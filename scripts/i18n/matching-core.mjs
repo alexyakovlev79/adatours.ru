@@ -5,6 +5,7 @@
 export const MATCH_STATE_VERSION = 1;
 export const MATCH_SHARD_COUNT = 16;
 export const MATCH_LEASE_MS = 90 * 60 * 1000;
+export const MATCH_MAX_ATTEMPTS = 5;
 const STATES = ['held','queued','leased','ready','retryable','blocked_external','stale_source','failed_final'];
 const HEX64 = /^[0-9a-f]{64}$/i;
 const safe = (s) => typeof s === 'string' && /^[A-Za-z0-9_.:-]{2,180}$/.test(s);
@@ -93,7 +94,10 @@ export function reclaimExpired(shard, now) {
  const next=clone(shard);const ms=iso(now);let count=0;
  for(const item of next.items) {
    if(item.status==='leased'&&item.lease&&iso(item.lease.expiresAt)<=ms) {
-     item.status='queued';item.lease=null;item.attempts++;count++;
+     item.lease=null;item.attempts++;
+     item.status=item.attempts>=MATCH_MAX_ATTEMPTS?'failed_final':'queued';
+     if(item.status==='failed_final')item.lastFailure='lease_expired_retry_limit';
+     count++;
    } else if(item.status==='retryable'&&item.nextAttemptAt&&iso(item.nextAttemptAt)<=ms) {
      item.status='queued';item.nextAttemptAt=null;count++;
    }
@@ -182,7 +186,10 @@ export function failMatch(shard,args) {
  const next=clone(shard),item=owned(next,args.jobId,args);
  requireOk(['retryable','blocked_external','stale_source','failed_final'].includes(args.status),'Invalid failure status');
  item.status=args.status;item.lease=null;item.attempts++;
- item.nextAttemptAt=args.status==='retryable'?stamp(iso(args.now)+Math.min(1800000,60000*Math.pow(2,Math.min(item.attempts,5)))):null;
+ if(item.status==='retryable' && item.attempts>=MATCH_MAX_ATTEMPTS){
+   item.status='failed_final';item.lastFailure='retry_attempt_limit';
+ }
+ item.nextAttemptAt=item.status==='retryable'?stamp(iso(args.now)+Math.min(1800000,60000*Math.pow(2,Math.min(item.attempts,5)))):null;
  return {shard:next,status:item.status};
 }
 export function releaseMatch(shard,args) {

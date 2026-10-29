@@ -145,3 +145,27 @@ test('changing a price does not authorize a Word 2026 rollback',()=>{
    priceAmendments:[{amount:35,currency:'USD',priceBasis:'per_person',sourceLocator:'word/document.xml#tbl0004'}]};
   assert.throws(()=>m.validateMatchResult(result,job),/Price amendments require 2027/);
 });
+
+
+test('repeated expired leases become a recorded terminal failure after five attempts',()=>{
+ let q=make(1,1),sh=Object.values(q.shards).find(v=>v.items.length);
+ for(let n=0;n<5;n++){
+  const a=m.claimMatch(sh,{ownerId:'owner-'+n,token:'lease-'+n,now:'2026-10-29T10:00:00.000Z'});
+  assert.equal(a.status,'claimed');
+  const next=m.reclaimExpired(a.shard,'2026-10-29T12:00:00.000Z');
+  sh=next.shard;
+ }
+ assert.equal(sh.items[0].status,'failed_final');
+ assert.equal(sh.items[0].attempts,5);
+ assert.equal(m.claimMatch(sh,{ownerId:'owner-z',token:'token-z',now:'2026-10-29T13:00:00.000Z'}).status,'empty_or_busy');
+});
+test('repeated retryable failures stop after bounded attempts',()=>{
+ let q=make(1,1),sh=Object.values(q.shards).find(v=>v.items.length);
+ for(let n=0;n<5;n++){
+  const a=m.claimMatch(sh,{ownerId:'owner-'+n,token:'lease-'+n,now:'2026-10-29T10:00:00.000Z'});
+  const f=m.failMatch(a.shard,{jobId:a.job.jobId,ownerId:'owner-'+n,token:'lease-'+n,generation:a.job.generation,now:'2026-10-29T10:10:00.000Z',status:'retryable'});
+  sh=m.reclaimExpired(f.shard,'2026-10-29T14:00:00.000Z').shard;
+ }
+ assert.equal(sh.items[0].status,'failed_final');
+ assert.equal(sh.items[0].lastFailure,'retry_attempt_limit');
+});

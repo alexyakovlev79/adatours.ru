@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_chile_easter_island_3_days_2027",
+  "result": {
+    "entityId": "tour_chile_easter_island_3_days_2027",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_chile_easter_island_3_days_2027",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "confidence": "high",
+    "selectedSource": {
+      "driveFileId": "1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "e8797275b1b80fec09e917a42a64128fccde97924b970f75f592f0cbcb149492",
+      "modifiedTime": "2026-10-22T14:03:05.061Z",
+      "filename": "Easter_Island_3d2n_2027_ENG__20_.docx",
+      "sizeBytes": 607272,
+      "url": "https://docs.google.com/document/d/1zUNi_nTIgTJ0v2CQiDYg3A4tsff1HaQ5/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true"
+    },
+    "evidence": [
+      "Full DOCX word/document.xml, including all tables, confirms 3D/2N on Rapa Nui, private English-speaking excursions, 4-star hotel, national park ticket, breakfasts on days 2–3 and box lunch on day 2, matching the claimed active Tour.",
+      "Day 1 airport–Rano Kau–Orongo (4 hours); day 2 Vaihu–Akahanga–Rano Raraku–Tongariki–Te Pito Kura–Anakena–Hanga Roa; day 3 Akivi–Hanga Puku Riki–Puna Pau–Tahai (4 hours) and departure match all three itinerary days.",
+      "The competing 2027 candidate 1R7vGukYEs1KtuFdB3ugkR_BDSej2GtjT is named VIP Amazon 2027 3d2n ENG com 20.docx and concerns Amazon, not Chile/Rapa Nui; shared duration alone is not an identity match.",
+      "The complete six-cell 2027 USD per-person table matches current RU values exactly: 3279, 2151, 1701, 1959, 1509, 1492. No numerical price amendment is required; 1492 is per person for three guests in a triple room, not a group total."
+    ],
+    "sourceLocatorConvention": "XPath with w=http://schemas.openxmlformats.org/wordprocessingml/2006/main; /w:document/w:body/*[n] uses 1-based index over ALL body children.",
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[20]–*[25]",
+        "sourceTextLocators": [
+          "/w:document/w:body/*[23]",
+          "/w:document/w:body/*[24]",
+          "/w:document/w:body/*[25]"
+        ],
+        "ruItineraryDay": 1,
+        "match": "Rano Kau, Orongo, arrival transfer, 4-hour private excursion"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[29]–*[34]",
+        "sourceTextLocators": [
+          "/w:document/w:body/*[32]",
+          "/w:document/w:body/*[33]",
+          "/w:document/w:body/*[34]"
+        ],
+        "ruItineraryDay": 2,
+        "match": "Vaihu, Akahanga, Rano Raraku, Tongariki, Te Pito Kura, Nau Nau, Anakena, Hanga Roa; full day and box lunch"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[40]–*[45]",
+        "sourceTextLocators": [
+          "/w:document/w:body/*[43]",
+          "/w:document/w:body/*[44]",
+          "/w:document/w:body/*[45]"
+        ],
+        "ruItineraryDay": 3,
+        "match": "Akivi, Hanga Puku Riki (RU Hanga Pukure), Puna Pau, Tahai, airport transfer, 4 hours"
+      }
+    ],
+    "priceAmendments": [],
+    "verifiedPriceTable": [
+      {
+        "amount": 3279,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "travellers": 1,
+        "occupancy": "SGL",
+        "travelYear": 2027,
+        "hotelCategory": "4-star",
+        "serviceType": "private",
+        "nights": 2,
+        "ruAmount": 3279,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[52]/w:tr[3]/w:tc[2]"
+      },
+      {
+        "amount": 2151,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "travellers": 2,
+        "occupancy": "SGL",
+        "travelYear": 2027,
+        "hotelCategory": "4-star",
+        "serviceType": "private",
+        "nights": 2,
+        "ruAmount": 2151,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[52]/w:tr[3]/w:tc[3]"
+      },
+      {
+        "amount": 1701,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "travellers": 2,
+        "occupancy": "DBL",
+        "travelYear": 2027,
+        "hotelCategory": "4-star",
+        "serviceType": "private",
+        "nights": 2,
+        "ruAmount": 1701,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[52]/w:tr[3]/w:tc[4]"
+      },
+      {
+        "amount": 1959,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "travellers": 3,
+        "occupancy": "SGL",
+        "travelYear": 2027,
+        "hotelCategory": "4-star",
+        "serviceType": "private",
+        "nights": 2,
+        "ruAmount": 1959,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[52]/w:tr[3]/w:tc[5]"
+      },
+      {
+        "amount": 1509,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "travellers": 3,
+        "occupancy": "DBL",
+        "travelYear": 2027,
+        "hotelCategory": "4-star",
+        "serviceType": "private",
+        "nights": 2,
+        "ruAmount": 1509,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[52]/w:tr[3]/w:tc[6]"
+      },
+      {
+        "amount": 1492,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "travellers": 3,
+        "occupancy": "TRP",
+        "travelYear": 2027,
+        "hotelCategory": "4-star",
+        "serviceType": "private",
+        "nights": 2,
+        "ruAmount": 1492,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[52]/w:tr[3]/w:tc[7]"
+      }
+    ],
+    "contentObservations": [
+      "Use Word's Ahu Hanga Puku Riki and guide-language wording in EN. The RU Hanga Pukure spelling and Russian-guide surcharge wording do not block the match.",
+      "Additional island services are price on request. USD 1500 airfare is excluded and must not be added to base programme price.",
+      "2026 fallback not needed: a complete, high-confidence 2027 source has been verified."
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_kosta_rika",
+  "result": {
+    "entityId": "tour_source_kosta_rika",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_kosta_rika",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "307d24d8cdd6e9f65c97d04760c1ba1d5e8c31186c842d305e0835f24edda35b",
+      "modifiedTime": "2026-10-26T18:20:11.504Z"
+    },
+    "evidence": [
+      "Full DOCX 2027 Basic Costa Rica, 5d/4n, matches RU Basic Costa Rica exactly in route and daily sequence: San Jose arrival; day2 Braulio Carrillo/Selva Tropical/Caño Blanco boat/Tortuguero; day3 dawn canal wildlife; day4 flight to San Jose, Doka coffee and La Paz waterfalls; day5 airport. Two nights Tortuguero and two San Jose align.",
+      "Same included bilingual naturalist/English guide, transport, Tortuguero–San Jose flight and meals; Word changes San Jose hotel to Palma Real from old RU Exe San Jose Center, which is an allowed updated programme detail. Authentic Costa Rican Jewels candidate is Corcovado/Cano Island and not this tour. Full XML tables10/12 preserve all SGL/DBL prices and USD17 park entrance exclusion; old RU priceFrom1709 is superseded for master application."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml//w:p[67]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml//w:p[68]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml//w:p[69]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml//w:p[78]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml//w:p[79]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 2055,
+        "occupancy": "SGL",
+        "sourceLocator": "word/document.xml//w:tbl[10]/w:tr[2]/w:tc[2]",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "minimumGroup": 2,
+        "validity": "Any arrival except Christmas, Easter and New Year",
+        "duration": "5d/4n",
+        "accommodation": "San Jose Hotel Palma Real; Tortuguero Pachira Lodge full board",
+        "sourceDriveFileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs"
+      },
+      {
+        "amount": 1897,
+        "occupancy": "DBL",
+        "sourceLocator": "word/document.xml//w:tbl[10]/w:tr[2]/w:tc[3]",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "minimumGroup": 2,
+        "validity": "Any arrival except Christmas, Easter and New Year",
+        "duration": "5d/4n",
+        "accommodation": "San Jose Hotel Palma Real; Tortuguero Pachira Lodge full board",
+        "sourceDriveFileId": "1_Pxh5u8hGNjFr_g_4esLJPjEDWxYXgDs"
+      }
+    ],
+    "supplements": [
+      {
+        "amount": 17,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "name": "Tortuguero National Park entrance fee",
+        "included": false,
+        "sourceLocator": "word/document.xml//w:tbl[12]"
+      }
+    ]
+  }
+}

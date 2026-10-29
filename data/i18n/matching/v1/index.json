@@ -6,12 +6,12 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:48:22.778Z",
+  "updatedAt": "2026-10-29T17:48:28.459Z",
   "counts": {
     "held": 0,
     "queued": 310,
-    "leased": 6,
-    "ready": 42,
+    "leased": 5,
+    "ready": 43,
     "retryable": 0,
     "blocked_external": 0,
     "stale_source": 0,
@@ -106,14 +106,14 @@
       "counts": {
         "held": 0,
         "queued": 16,
-        "leased": 1,
-        "ready": 1,
+        "leased": 0,
+        "ready": 2,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T18:47:41.522Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "07": {
@@ -265,11 +265,6 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobId": "match:tour_brazil_adventure_17d",
       "expiresAt": "2026-10-29T18:47:14.762Z"
-    },
-    "ada-match-mvtu0yxx-s9nvss8z": {
-      "token": "lease-mvtu0yxx-zfzi6gxa",
-      "jobId": "match:tour_brazil_argentina_peru_14d",
-      "expiresAt": "2026-10-29T18:47:41.522Z"
     },
     "ada-match-2ff03f-mvtu1h9z": {
       "token": "lease-mvtu1h9z-d3rjhcq7",
@@ -437,7 +432,8 @@
         "match:tour_brazil_argentina_peru_14d"
       ],
       "completedJobIds": [
-        "match:tour_argentina_experience_6_days"
+        "match:tour_argentina_experience_6_days",
+        "match:tour_brazil_argentina_peru_14d"
       ]
     }
   },

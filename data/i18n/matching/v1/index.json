@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:32:46.304Z",
+  "updatedAt": "2026-10-29T18:32:52.018Z",
   "counts": {
     "held": 0,
-    "queued": 201,
-    "leased": 3,
+    "queued": 200,
+    "leased": 4,
     "ready": 154,
     "retryable": 0,
     "blocked_external": 0,
@@ -133,15 +133,15 @@
     "08": {
       "counts": {
         "held": 0,
-        "queued": 12,
-        "leased": 0,
+        "queued": 11,
+        "leased": 1,
         "ready": 13,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:32:52.018Z",
       "earliestRetryAt": null
     },
     "09": {
@@ -265,6 +265,11 @@
       "token": "lease-mvtu0g8g-dpyvxbzq",
       "jobId": "match:tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej",
       "expiresAt": "2026-10-29T19:32:23.799Z"
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobId": "match:tour_source_mir_majya",
+      "expiresAt": "2026-10-29T19:32:52.018Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -486,7 +491,8 @@
         "match:tour_source_solonchak_uyuni",
         "match:tour_source_vpechatlenie_ot_surinama",
         "match:tour_argentina_brazil_pipa_11d",
-        "match:tour_bolivia_chile_hidden_treasures_16_days"
+        "match:tour_bolivia_chile_hidden_treasures_16_days",
+        "match:tour_source_mir_majya"
       ],
       "completedJobIds": [
         "match:tour_source_braziliya_argentina_i_chili",

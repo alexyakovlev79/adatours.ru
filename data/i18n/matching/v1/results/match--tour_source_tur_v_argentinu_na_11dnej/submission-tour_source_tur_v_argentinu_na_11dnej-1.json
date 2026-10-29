@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_tur_v_argentinu_na_11dnej",
+  "result": {
+    "entityId": "tour_source_tur_v_argentinu_na_11dnej",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_tur_v_argentinu_na_11dnej",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1YQY3Iv_TkB5nRtwq1dxB6FlgIpk3UeNf",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "1b9106131b1da5900bfbfa3e1a4e2ca66b0447f7f0d7d66e7f96309da6c4fa3a",
+      "modifiedTime": "2026-09-24T20:39:12.844Z",
+      "filenameEditionYear": 2027,
+      "bodyEditionHeading": "DELUXE ARGENTINA 2025"
+    },
+    "evidence": [
+      "All 11 RU days match the complete Argentina Deluxe 11D10N Word: Buenos Aires 1–3, El Calafate 4–5, Ushuaia 6–7, Iguazú 8–10, Buenos Aires departure 11. Hotel/room identities are exact: Four Seasons city-view BB, Eolo Superior FB, Arakur Superior BB, Belmond das Cataratas Deluxe BB.",
+      "National-park tours, optional ice trek/Martillo/Colonia/Tigre, private Mercedes Vito-class transfers and 5-star accommodation establish high-confidence identity. Word English-guided content supersedes old RU guide wording without a review gate.",
+      "Source filename and folder identify 2027, but opening body heading still says DELUXE ARGENTINA 2025. This discrepancy is preserved explicitly; no unsupported validity date is invented. Exact source price line body child 126 states USD 8958 per person in half DBL; internal flights from USD 950 at child 138 are excluded from base. Numeric facts are retained for master rather than copied into production by this worker."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=4 and position()<=6]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=9 and position()<=19]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=23 and position()<=47]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=52 and position()<=55]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=59 and position()<=66]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=69 and position()<=70]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=73 and position()<=78]"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=82 and position()<=84]"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=88 and position()<=103]"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=107 and position()<=120]"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=122 and position()<=123]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 8958,
+        "currency": "USD",
+        "priceBasis": "per person in 1/2 DBL, full 11D10N programme",
+        "occupancy": "DBL",
+        "accommodation": "Four Seasons city view BB; Eolo Superior FB; Arakur Superior BB; Belmond das Cataratas Deluxe BB",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[126]",
+        "sourceFolderYear": 2027,
+        "filenameYear": 2027,
+        "bodyEditionHeading": "DELUXE ARGENTINA 2025",
+        "validity": "No dated tariff validity stated next to amount; source heading discrepancy preserved",
+        "included": "Hotels and taxes, Eolo full board, private transfers/excursions, park entries"
+      },
+      {
+        "amount": 950,
+        "currency": "USD",
+        "priceBasis": "domestic flights from, per person; excluded from programme price",
+        "component": "excluded_domestic_flights",
+        "isFrom": true,
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[138]",
+        "sourceFolderYear": 2027,
+        "bodyEditionHeading": "DELUXE ARGENTINA 2025"
+      }
+    ]
+  }
+}

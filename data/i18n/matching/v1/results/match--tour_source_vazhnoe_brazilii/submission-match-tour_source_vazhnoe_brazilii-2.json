@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_vazhnoe_brazilii",
+  "result": {
+    "entityId": "tour_source_vazhnoe_brazilii",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_vazhnoe_brazilii",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1LDDLAWCLpBzkP5uHZ7SIdD3x2oiuW1fi",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "7ac1c63faa1a22804539a45ebc0d970f3554d6a396b71b6bc67cf2f0d9e7398b",
+      "modifiedTime": "2026-10-21T20:44:55.387Z",
+      "name": "Essential Brazil 7d6n 2027 ENG com 20% (1).docx"
+    },
+    "evidence": [
+      "Full DOCX confirms the same 7 days / 6 nights: Rio 2N, Amazon/Manaus 2N and Foz do Iguacu 2N; Brazil with Argentine side of Iguazu matches the RU Tour geography and sequence.",
+      "Semantic programme matches all seven RU days: arrival Rio; private six-hour Sugar Loaf/city/Corcovado tour; flight Manaus and lodge full board with caimans, caboclo visit and fishing; lodge day; flight Foz and Brazilian falls; Argentine falls; airport departure.",
+      "The English Word 2027 specifies English-speaking guides and the same private transfers, Amazon shared lodge activities, hotels and excluded domestic flights. These editorial/service clarifications do not undermine Tour identity.",
+      "All main programme tariff cells were read from the nested DOCX table: SGL 5525, DBL 3566, TRP 3338 USD per person for 4-star services in 2027. Domestic flights are separately excluded, from USD 1100 per person; not part of the programme total."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[20]–*[25]",
+        "semanticMatch": "Rio arrival, hotel transfer and city/beaches introduction"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[31]–*[36]",
+        "semanticMatch": "Sugar Loaf, old centre and Corcovado, private 6h tour"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[45]–*[46]",
+        "semanticMatch": "Rio to Manaus and Amazon lodge; caiman boat ride, caboclo family and fishing"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[47]–*[49]",
+        "semanticMatch": "Lodge activities and full board"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[58]",
+        "semanticMatch": "Manaus to Foz and Brazilian Iguazu falls"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[59]",
+        "semanticMatch": "Tancredo Neves bridge and Argentine falls"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[60]–*[62]",
+        "semanticMatch": "Airport transfer and end of services"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 5525,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "SGL",
+        "accommodation": "4-star hotels and Amazon ecolodge, standard rooms",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[2]",
+        "year": 2027,
+        "season": "2027; no narrower date range specified",
+        "minimumGroup": null,
+        "supplements": "Domestic flights excluded, from USD 1100 per person",
+        "hotels": [
+          {
+            "city": "Rio de Janeiro",
+            "nights": 2,
+            "name": "Arena Leme",
+            "room": "Standard",
+            "meals": "Breakfast"
+          },
+          {
+            "city": "Amazon (Manaus)",
+            "nights": 2,
+            "name": "Evolução Ecolodge",
+            "room": "Standard",
+            "meals": "Full board"
+          },
+          {
+            "city": "Foz do Iguaçu",
+            "nights": 2,
+            "name": "Vivaz Cataratas",
+            "room": "Standard",
+            "meals": "Breakfast"
+          }
+        ],
+        "hotelSubstitution": "Similar-class hotels permitted"
+      },
+      {
+        "amount": 3566,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "DBL",
+        "accommodation": "4-star hotels and Amazon ecolodge, standard rooms",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[3]",
+        "year": 2027,
+        "season": "2027; no narrower date range specified",
+        "minimumGroup": null,
+        "supplements": "Domestic flights excluded, from USD 1100 per person",
+        "hotels": [
+          {
+            "city": "Rio de Janeiro",
+            "nights": 2,
+            "name": "Arena Leme",
+            "room": "Standard",
+            "meals": "Breakfast"
+          },
+          {
+            "city": "Amazon (Manaus)",
+            "nights": 2,
+            "name": "Evolução Ecolodge",
+            "room": "Standard",
+            "meals": "Full board"
+          },
+          {
+            "city": "Foz do Iguaçu",
+            "nights": 2,
+            "name": "Vivaz Cataratas",
+            "room": "Standard",
+            "meals": "Breakfast"
+          }
+        ],
+        "hotelSubstitution": "Similar-class hotels permitted"
+      },
+      {
+        "amount": 3338,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "TRP",
+        "accommodation": "4-star hotels and Amazon ecolodge, standard rooms",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[4]",
+        "year": 2027,
+        "season": "2027; no narrower date range specified",
+        "minimumGroup": null,
+        "supplements": "Domestic flights excluded, from USD 1100 per person",
+        "hotels": [
+          {
+            "city": "Rio de Janeiro",
+            "nights": 2,
+            "name": "Arena Leme",
+            "room": "Standard",
+            "meals": "Breakfast"
+          },
+          {
+            "city": "Amazon (Manaus)",
+            "nights": 2,
+            "name": "Evolução Ecolodge",
+            "room": "Standard",
+            "meals": "Full board"
+          },
+          {
+            "city": "Foz do Iguaçu",
+            "nights": 2,
+            "name": "Vivaz Cataratas",
+            "room": "Standard",
+            "meals": "Breakfast"
+          }
+        ],
+        "hotelSubstitution": "Similar-class hotels permitted"
+      }
+    ]
+  }
+}

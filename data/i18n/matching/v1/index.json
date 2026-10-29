@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:30:52.573Z",
+  "updatedAt": "2026-10-29T18:30:59.545Z",
   "counts": {
     "held": 0,
-    "queued": 206,
-    "leased": 4,
+    "queued": 205,
+    "leased": 5,
     "ready": 148,
     "retryable": 0,
     "blocked_external": 0,
@@ -119,15 +119,15 @@
     "07": {
       "counts": {
         "held": 0,
-        "queued": 14,
-        "leased": 0,
+        "queued": 13,
+        "leased": 1,
         "ready": 13,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:30:59.545Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu1h9z-d3rjhcq7",
       "jobId": "match:tour_source_meksika_treugolnik_solntsa",
       "expiresAt": "2026-10-29T19:30:37.446Z"
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_source_luchshee_v_brazilii_rio_iguasu_buzios",
+      "expiresAt": "2026-10-29T19:30:59.545Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -390,7 +395,8 @@
         "match:tour_source_issledovanie_argentiny",
         "match:tour_source_karnaval_v_rio_de_zhanejro",
         "match:tour_source_kostarikanskie_sokrovishcha",
-        "match:tour_source_krasivaya_kosta_rika"
+        "match:tour_source_krasivaya_kosta_rika",
+        "match:tour_source_luchshee_v_brazilii_rio_iguasu_buzios"
       ],
       "completedJobIds": [
         "match:tour_source_kankun_beliz",

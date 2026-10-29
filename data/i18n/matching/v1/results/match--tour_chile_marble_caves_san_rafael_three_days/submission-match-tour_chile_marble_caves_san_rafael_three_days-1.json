@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_chile_marble_caves_san_rafael_three_days",
+  "result": {
+    "entityId": "tour_chile_marble_caves_san_rafael_three_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_chile_marble_caves_san_rafael_three_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+      "sourceYearFolder": 2027,
+      "name": "MarbleCaves_2027_3D2N.docx",
+      "sourceSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+      "modifiedTime": "2026-10-22T14:06:52.263Z",
+      "sizeBytes": 1257719,
+      "url": "https://docs.google.com/document/d/1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx/edit",
+      "fullDocxRead": true
+    },
+    "evidence": [
+      "Полный DOCX 2027 подтверждает Chile/Aysén, 3D/2N, начало и конец Balmaceda Airport, две ночи El Puesto Patagonia в Puerto Río Tranquilo; совпадает с RU Tour.",
+      "День 1: Balmaceda—Carretera Austral—Lago General Carrera—Puerto Río Tranquilo, 220 км/4 ч; день 2: Valle/Bahía Exploradores и лодка к San Rafael Glacier; день 3: Marble Caves private boat и Cerro Castillo по дороге в Balmaceda.",
+      "Существенные услуги совпадают: English-speaking driver-guide, наземные трансферы, две ночи и обе лодочные экскурсии. Word уточняет невключённые авиабилеты и зависимость лодок от погоды; эти отличия не блокируют EN.",
+      "Вложенная тарифная таблица tbl[10]/tr[1]/tc[1]/tbl[1]/tr[2]/tc[2] содержит USD 2,000 per person, base 2 travellers. Совпадает с RU priceFrom=2000; новая денежная сумма отсутствует. Room type и meal plan остаются to be confirmed."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[14]",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[17]",
+          "word/document.xml:/w:document/w:body[1]/w:p[18]"
+        ],
+        "ruDay": 1,
+        "match": "Balmaceda airport → Carretera Austral → Puerto Río Tranquilo; El Puesto Patagonia"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[23]",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[26]",
+          "word/document.xml:/w:document/w:body[1]/w:p[27]"
+        ],
+        "ruDay": 2,
+        "excursionRefs": [
+          "excursion_san_rafael_exploradores_boat_full_day"
+        ],
+        "match": "Full-day San Rafael Glacier via Valle/Bahía Exploradores; return to same hotel"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[32]",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[35]",
+          "word/document.xml:/w:document/w:body[1]/w:p[36]",
+          "word/document.xml:/w:document/w:body[1]/w:p[37]"
+        ],
+        "ruDay": 3,
+        "excursionRefs": [
+          "excursion_marble_caves_private_boat_two_half_hours"
+        ],
+        "match": "Private Marble Caves boat; Cerro Castillo; return towards Balmaceda airport"
+      }
+    ],
+    "priceAmendments": [],
+    "verifiedPriceRows": [
+      {
+        "amount": 2000,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "groupSize": 2,
+        "accommodation": "El Puesto Patagonia, 2 nights; room type and meal plan to be confirmed",
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:tbl[10]/w:tr[1]/w:tc[1]/w:tbl[1]/w:tr[2]",
+        "unchangedFromRu": true
+      }
+    ],
+    "contentDifferences": [
+      {
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:tbl[11]/w:tr[1]/w:tc[3]",
+        "detail": "Word explicitly excludes flights to/from Balmaceda; use Word for EN."
+      }
+    ]
+  }
+}

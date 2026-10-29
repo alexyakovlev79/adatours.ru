@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_brazil_little_mix_ten_days",
+  "result": {
+    "entityId": "tour_brazil_little_mix_ten_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_brazil_little_mix_ten_days",
+    "outcome": "selected_2027",
+    "selectedSource": {
+      "driveFileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+      "modifiedTime": "2026-10-21T20:49:10.129Z"
+    },
+    "evidence": [
+      "Full DOCX matches 10D/9N route Sao Paulo 2 nights, Rio 3, Salvador 1, Praia do Forte 3 and the same four city/Corcovado/Sugar Loaf/Salvador excursions.",
+      "All ten days align. Current English 2027 clarifies day 7 transfer to Praia do Forte and English-speaking guides; these are authoritative EN content differences, not identity conflicts.",
+      "Programme prices USD 6250 SGL/3289 DBL/3089 TRP equal current RU; domestic flights from USD 800 per person excluded. All table rows preserved for master."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[23]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[24]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[35]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[36]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[47]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[58]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[59]"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[68]"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[68]"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[69]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 6250,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "SGL",
+        "travellers": 1,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[79]",
+        "year": 2027,
+        "hotels": "Slaviero Sao Paulo Ibirapuera 2n; Arena Leme 3n; Vila Gale Salvador 1n; Pousada Casa do Forte 3n; standard rooms, breakfast; or similar",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 3289,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "DBL",
+        "travellers": 2,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[79]",
+        "year": 2027,
+        "hotels": "Slaviero Sao Paulo Ibirapuera 2n; Arena Leme 3n; Vila Gale Salvador 1n; Pousada Casa do Forte 3n; standard rooms, breakfast; or similar",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 3089,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "TRP",
+        "travellers": 3,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[79]",
+        "year": 2027,
+        "hotels": "Slaviero Sao Paulo Ibirapuera 2n; Arena Leme 3n; Vila Gale Salvador 1n; Pousada Casa do Forte 3n; standard rooms, breakfast; or similar",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 800,
+        "currency": "USD",
+        "priceBasis": "per person, from; excluded domestic flights",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[81]",
+        "route": "Sao Paulo–Rio–Salvador"
+      }
+    ]
+  }
+}

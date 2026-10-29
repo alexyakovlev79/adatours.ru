@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T16:33:11.972Z",
+  "updatedAt": "2026-10-29T17:43:20.962Z",
   "counts": {
     "held": 0,
-    "queued": 329,
-    "leased": 0,
+    "queued": 328,
+    "leased": 1,
     "ready": 29,
     "retryable": 0,
     "blocked_external": 0,
@@ -21,15 +21,15 @@
     "00": {
       "counts": {
         "held": 0,
-        "queued": 15,
-        "leased": 0,
+        "queued": 14,
+        "leased": 1,
         "ready": 7,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:43:20.962Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -250,7 +250,13 @@
     "evidence": "Node24 Actions 40833361987 success, remote CAS smoke branch i18n/matching-smoke-20261029",
     "date": "2026-10-29"
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_source_kankun_beliz",
+      "expiresAt": "2026-10-29T18:43:20.962Z"
+    }
+  },
   "activationPhase": "bulk_open",
   "ownerAssignments": {
     "ada-match-mvto009g-e0ddwpix": {
@@ -327,6 +333,12 @@
         "match:tour_patagonia_lakes_lakeshore_chalet_10_days",
         "match:tour_source_antarktida_programma_s_nochevkoj",
         "match:tour_source_ekzoticheskij_novyj_god_ru"
+      ]
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobIds": [
+        "match:tour_source_kankun_beliz"
       ]
     }
   },

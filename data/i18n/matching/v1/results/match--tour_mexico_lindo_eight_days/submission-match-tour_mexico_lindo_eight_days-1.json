@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_mexico_lindo_eight_days",
+  "result": {
+    "entityId": "tour_mexico_lindo_eight_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_mexico_lindo_eight_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1r_kV3bsX5sSfHUwMz0xU-JEbsqip1rrP",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "3fd6de603bf6026e3da714c70cba5b5c358b4895dbde0fc7c9545eb52d6a6d9b",
+      "modifiedTime": "2026-10-08T14:01:21.046Z",
+      "filename": "Mexico Lindo 2027_8d7n_20%COM(ENG).docx",
+      "sizeBytes": 13597251,
+      "fullDocxRead": true,
+      "xmlPart": "word/document.xml"
+    },
+    "evidence": [
+      "Сопоставлен полный Word Mexico Lindo 2027: 8 дней/7 ночей, 4 ночи Mexico City и 3 Merida; каждый из восьми дней совпадает по маршруту, экскурсиям, длительности и характеру трансферов.",
+      "Совпадают редкие отличительные условия: Xochimilco по средам/пятницам/воскресеньям; перелёт Mexico City–Merida не включён; в день 8 частный трансфер до Chichen Itza, затем shared tour, обед и высадка Cancun/Playa del Carmen/Tulum town.",
+      "Таблица Word прямо обозначает USD per person SGL 2372, DBL 1908, TPL 1855. RU содержит 5870/5336/5219; это устаревшие цены того же тура. Сохраняются три адресные поправки 2027 для общих RU/EN цен, без нового offer или review."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[6]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[12]",
+        "ruRef": "frontmatter.itinerary[day=1]",
+        "summary": "Arrival Mexico City; private transfer; overnight",
+        "match": "same_day"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[13]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[25]",
+        "ruRef": "frontmatter.itinerary[day=2]",
+        "summary": "Historic centre and Anthropology Museum; 6h; English/Spanish",
+        "match": "same_day"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[26]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[36]",
+        "ruRef": "frontmatter.itinerary[day=3]",
+        "summary": "Teotihuacan and Guadalupe; 10h; English/Spanish",
+        "match": "same_day"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[37]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[47]",
+        "ruRef": "frontmatter.itinerary[day=4]",
+        "summary": "Xochimilco and southern districts; 12h; Wed/Fri/Sun",
+        "match": "same_day"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[48]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[58]",
+        "ruRef": "frontmatter.itinerary[day=5]",
+        "summary": "Private transfers; flight excluded; Merida walking tour",
+        "match": "same_day"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[59]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[69]",
+        "ruRef": "frontmatter.itinerary[day=6]",
+        "summary": "Uxmal, Kabah and cenote; 8–9h",
+        "match": "same_day"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[70]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[80]",
+        "ruRef": "frontmatter.itinerary[day=7]",
+        "summary": "Santa Barbara cenotes; life vest, bicycle or truk",
+        "match": "same_day"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[82]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[94]",
+        "ruRef": "frontmatter.itinerary[day=8]",
+        "summary": "Chichen Itza, cenote/lunch, Valladolid; Riviera Maya drop-off",
+        "match": "same_day"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 2372,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "SGL",
+        "durationDays": 8,
+        "nights": 7,
+        "year": 2027,
+        "hotelNights": [
+          {
+            "city": "Mexico City",
+            "nights": 4
+          },
+          {
+            "city": "Merida",
+            "nights": 3
+          }
+        ],
+        "hotelCategory": null,
+        "hotelNames": null,
+        "breakfastIncluded": null,
+        "minimumGroupSize": null,
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[4]/w:tr[1]/w:tc[2]",
+        "sourceLabel": "Price per person in SGL Occupancy in USD $",
+        "sourceRawAmount": "2’372",
+        "currentRuAmount": 5870,
+        "changeRequired": true,
+        "targetLocales": [
+          "ru",
+          "en"
+        ],
+        "notIncluded": [
+          "Domestic Mexico City–Merida flight",
+          "Riviera Maya overnight stay",
+          "Tulum hotel-zone and Bahia Petempich drop-off"
+        ],
+        "includedMeals": [
+          {
+            "day": 8,
+            "meal": "Yucatecan lunch"
+          }
+        ]
+      },
+      {
+        "amount": 1908,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "DBL",
+        "durationDays": 8,
+        "nights": 7,
+        "year": 2027,
+        "hotelNights": [
+          {
+            "city": "Mexico City",
+            "nights": 4
+          },
+          {
+            "city": "Merida",
+            "nights": 3
+          }
+        ],
+        "hotelCategory": null,
+        "hotelNames": null,
+        "breakfastIncluded": null,
+        "minimumGroupSize": null,
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[4]/w:tr[2]/w:tc[2]",
+        "sourceLabel": "Price per person in DBL Occupancy in USD $",
+        "sourceRawAmount": "1’908",
+        "currentRuAmount": 5336,
+        "changeRequired": true,
+        "targetLocales": [
+          "ru",
+          "en"
+        ],
+        "notIncluded": [
+          "Domestic Mexico City–Merida flight",
+          "Riviera Maya overnight stay",
+          "Tulum hotel-zone and Bahia Petempich drop-off"
+        ],
+        "includedMeals": [
+          {
+            "day": 8,
+            "meal": "Yucatecan lunch"
+          }
+        ]
+      },
+      {
+        "amount": 1855,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "TPL",
+        "durationDays": 8,
+        "nights": 7,
+        "year": 2027,
+        "hotelNights": [
+          {
+            "city": "Mexico City",
+            "nights": 4
+          },
+          {
+            "city": "Merida",
+            "nights": 3
+          }
+        ],
+        "hotelCategory": null,
+        "hotelNames": null,
+        "breakfastIncluded": null,
+        "minimumGroupSize": null,
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[4]/w:tr[3]/w:tc[2]",
+        "sourceLabel": "Price per person in TPL Occupancy in USD $",
+        "sourceRawAmount": "1’855",
+        "currentRuAmount": 5219,
+        "changeRequired": true,
+        "targetLocales": [
+          "ru",
+          "en"
+        ],
+        "notIncluded": [
+          "Domestic Mexico City–Merida flight",
+          "Riviera Maya overnight stay",
+          "Tulum hotel-zone and Bahia Petempich drop-off"
+        ],
+        "includedMeals": [
+          {
+            "day": 8,
+            "meal": "Yucatecan lunch"
+          }
+        ]
+      }
+    ],
+    "priceComparison": {
+      "status": "amendment_required",
+      "rowsCompared": 3,
+      "changedRows": 3,
+      "currentRuPriceFrom": 5219,
+      "sourcePriceFrom": 1855
+    },
+    "sharedPricePatch": {
+      "targetPath": "src/content/tours/mexico-lindo-eight-days.md",
+      "fields": [
+        {
+          "path": "frontmatter.priceFrom",
+          "before": 5219,
+          "after": 1855
+        },
+        {
+          "path": "frontmatter.currency",
+          "before": "USD",
+          "after": "USD"
+        },
+        {
+          "path": "frontmatter.priceNote",
+          "replacements": [
+            {
+              "before": 5219,
+              "after": 1855,
+              "occupancy": "TPL"
+            },
+            {
+              "before": 5336,
+              "after": 1908,
+              "occupancy": "DBL"
+            },
+            {
+              "before": 5870,
+              "after": 2372,
+              "occupancy": "SGL"
+            }
+          ]
+        },
+        {
+          "path": "body/Стоимость на 2027 год/table",
+          "rows": [
+            {
+              "occupancy": "SGL",
+              "before": 5870,
+              "after": 2372
+            },
+            {
+              "occupancy": "DBL",
+              "before": 5336,
+              "after": 1908
+            },
+            {
+              "occupancy": "TPL",
+              "before": 5219,
+              "after": 1855
+            }
+          ]
+        }
+      ],
+      "masterInstructions": "Apply to shared RU/EN price source; recompute derivative cards, catalog, SEO and Offer JSON-LD; retain per-person basis and flight/coast exclusions. No production changes by matching worker."
+    },
+    "sourceAnchors": {
+      "title": "word/document.xml#/w:document/w:body/*[1]",
+      "duration": "word/document.xml#/w:document/w:body/*[2]",
+      "prices": "word/document.xml#/w:document/w:body/*[4]",
+      "domesticFlightExcluded": "word/document.xml#/w:document/w:body/*[58]",
+      "lastDayIncluded": "word/document.xml#/w:document/w:body/*[93]",
+      "coastOvernightExcluded": "word/document.xml#/w:document/w:body/*[94]"
+    },
+    "sourcePriceTableSnapshot": [
+      {
+        "label": "Price per person in SGL Occupancy in USD $",
+        "value": "$ 2’372"
+      },
+      {
+        "label": "Price per person in DBL Occupancy in USD $",
+        "value": "$ 1’908"
+      },
+      {
+        "label": "Price per person in TPL Occupancy in USD $",
+        "value": "$ 1’855"
+      }
+    ],
+    "selectionReason": "Full 2027 itinerary matches confidently; 2026 fallback unnecessary; stale historical review flag superseded by english-site.md v1.1."
+  }
+}

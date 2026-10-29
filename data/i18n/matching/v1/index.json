@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T20:51:33.026Z",
+  "updatedAt": "2026-10-29T20:51:45.168Z",
   "counts": {
     "held": 0,
-    "queued": 0,
-    "leased": 12,
+    "queued": 1,
+    "leased": 11,
     "ready": 346,
     "retryable": 0,
     "blocked_external": 0,
@@ -63,15 +63,15 @@
     "03": {
       "counts": {
         "held": 0,
-        "queued": 0,
-        "leased": 2,
+        "queued": 1,
+        "leased": 1,
         "ready": 15,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T20:36:15.520Z",
+      "earliestExpiryAt": "2026-10-29T21:51:45.168Z",
       "earliestRetryAt": null
     },
     "04": {
@@ -256,11 +256,6 @@
       "jobId": "match:tour_source_brazilskaya_mechta",
       "expiresAt": "2026-10-29T20:35:39.129Z"
     },
-    "ada-match-mvty120v-x7mwbpn6": {
-      "token": "lease-mvty120v-m4f5uzfe",
-      "jobId": "match:tour_source_luchshee_iz_dvukh_mirov",
-      "expiresAt": "2026-10-29T20:36:15.520Z"
-    },
     "ada-match-bde6d2b9cee1": {
       "token": "lease-bde6d2b9cee1-mvty148e",
       "jobId": "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
@@ -286,11 +281,6 @@
       "jobId": "match:tour_source_kolumbiya_metropoliten",
       "expiresAt": "2026-10-29T20:50:37.406Z"
     },
-    "ada-match-mvtykh0z-ie39e3uu": {
-      "token": "lease-mvtykh0z-4gumt8sp",
-      "jobId": "match:tour_source_vazhnoe_brazilii",
-      "expiresAt": "2026-10-29T20:50:52.662Z"
-    },
     "ada-match-dbe665269419": {
       "token": "lease-dbe665269419-mvtyl05s",
       "jobId": "match:tour_source_iguacu_falls",
@@ -310,6 +300,11 @@
       "token": "lease-mvu0qlpg-xpfe5piv",
       "jobId": "match:tour_source_21_dnevnoe_priklyuchenie_v_peru",
       "expiresAt": "2026-10-29T21:51:33.026Z"
+    },
+    "ada-match-mvu0qmgm-45r3wy5k": {
+      "token": "lease-mvu0qmgm-4eb3cafv",
+      "jobId": "match:tour_source_luchshee_iz_dvukh_mirov",
+      "expiresAt": "2026-10-29T21:51:45.168Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -1191,6 +1186,12 @@
       "token": "lease-mvu0qlpg-xpfe5piv",
       "jobIds": [
         "match:tour_source_21_dnevnoe_priklyuchenie_v_peru"
+      ]
+    },
+    "ada-match-mvu0qmgm-45r3wy5k": {
+      "token": "lease-mvu0qmgm-4eb3cafv",
+      "jobIds": [
+        "match:tour_source_luchshee_iz_dvukh_mirov"
       ]
     }
   },

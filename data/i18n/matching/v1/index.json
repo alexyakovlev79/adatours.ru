@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:25:31.818Z",
+  "updatedAt": "2026-10-29T18:25:37.683Z",
   "counts": {
     "held": 0,
-    "queued": 221,
-    "leased": 3,
+    "queued": 220,
+    "leased": 4,
     "ready": 134,
     "retryable": 0,
     "blocked_external": 0,
@@ -105,15 +105,15 @@
     "06": {
       "counts": {
         "held": 0,
-        "queued": 6,
-        "leased": 0,
+        "queued": 5,
+        "leased": 1,
         "ready": 12,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:25:37.683Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -265,6 +265,11 @@
       "token": "lease-mvtu0g8g-dpyvxbzq",
       "jobId": "match:tour_source_ekvador_krasota_i_priroda",
       "expiresAt": "2026-10-29T19:24:32.241Z"
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobId": "match:tour_source_pantanal_bonito",
+      "expiresAt": "2026-10-29T19:25:37.683Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -462,7 +467,8 @@
         "match:tour_source_fordy_ognennoj_zemli",
         "match:tour_source_gvatemala_gonduras_i_beliz",
         "match:tour_source_ikonicheskaya_kolumbiya",
-        "match:tour_source_kruiznyj_tur_po_luchshim_mestam_argentiny_chili_i_bolivii"
+        "match:tour_source_kruiznyj_tur_po_luchshim_mestam_argentiny_chili_i_bolivii",
+        "match:tour_source_pantanal_bonito"
       ],
       "completedJobIds": [
         "match:tour_source_braziliya_argentina_i_chili",

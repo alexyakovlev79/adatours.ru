@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_populyarnye_napravleniya_venesuely",
+  "result": {
+    "entityId": "tour_source_populyarnye_napravleniya_venesuely",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_populyarnye_napravleniya_venesuely",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1plVC8qsZFrF18IxEFHPNBR30SC37IQ_t",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "8b89afac8d3f74c0ce78fe5fb6992e5f749f67932c133c76fddb175809bbe29c",
+      "modifiedTime": "2026-09-30T12:38:54.086Z",
+      "name": "Venezuela 2027  Popular destinations  12d 11n ENG 20%.docx"
+    },
+    "evidence": [
+      "Full 2027 DOCX confirms 12D11N Caracas–Avila/Humboldt–Colonia Tovar–Canaima/Sapo/Angel Falls–Margarita–Santa Teresa estate, domestic flights included, 4-star/premium camp/all-inclusive Margarita. Exact defining sequence and excursion content match RU product.",
+      "2027 changes final timing: Margarita days8–10, Santa Teresa/Caracas hotel day11, airport departure day12; RU retains Margarita day11 and combines estate/departure day12. Day6 Pemon community is explicit in Word. Same 12D Tour with updated Word day structure, not rejected for old RU differences.",
+      "Word p18 says Russian-speaking arrival guide, while included summary p93 says English guides countrywide; source wording retained for later contextual mapping, no forced reconciliation or review. Full Word tariff4744 USD per person DBL agrees RU starting price; minimum2 and12 exact 2027 departures retained."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml /w:document/w:body/*[17–19] (body child numbers)"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml /w:document/w:body/*[20–26 (historical city portion moved to Word day1 p18)] (body child numbers)"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml /w:document/w:body/*[27–32] (body child numbers)"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml /w:document/w:body/*[33–40] (body child numbers)"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml /w:document/w:body/*[41–48 and dry-season note59] (body child numbers)"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml /w:document/w:body/*[49–59] (body child numbers)"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml /w:document/w:body/*[60–65] (body child numbers)"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml /w:document/w:body/*[66–74] (body child numbers)"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml /w:document/w:body/*[68–74 (island tour on one of days8–10)] (body child numbers)"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml /w:document/w:body/*[66–74] (body child numbers)"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml /w:document/w:body/*[66–74 partial beach context only; Word day11 moved Santa Teresa75–82] (body child numbers)"
+      },
+      {
+        "day": 12,
+        "sourceRef": "word/document.xml /w:document/w:body/*[75–84 (RU combines Word day11 estate and day12 departure)] (body child numbers)"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 4744,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "roomType": "DBL / twin",
+        "minimumGroup": 2,
+        "accommodation": "4-star hotels, posada/premium camp; Margarita all-inclusive",
+        "validity": "Departures 2027: Jan19, Feb16, Mar30, Apr27, May25, Jun22, Jul13, Aug17, Sep14, Oct12, Nov2, Nov30",
+        "singleSupplement": "not included; no amount given",
+        "sourceLocator": "word/document.xml /w:document/w:body/*[85]; minimum/dates *[6–7]; basis/financial charges *[107]"
+      },
+      {
+        "amount": 40,
+        "currency": "USD",
+        "priceBasis": "per person, excluded park entry",
+        "service": "Canaima National Park entrance",
+        "sourceLocator": "word/document.xml /w:document/w:body/*[99]",
+        "validity": "2027"
+      }
+    ]
+  }
+}

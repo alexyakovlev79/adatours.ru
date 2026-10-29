@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_rybalka_v_pantanale",
+  "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_rybalka_v_pantanale",
+  "checkpointId": "checkpoint-1-ada-match-mvtykldj-rtnuk7q9",
+  "partial": {
+    "result": {
+      "entityId": "tour_source_rybalka_v_pantanale",
+      "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_rybalka_v_pantanale",
+      "outcome": "selected_2026",
+      "checkedYears": [
+        2027,
+        2026
+      ],
+      "selectedSource": {
+        "driveFileId": "1NTEhPdIzkMz5ac_AbhtaFRSFkFLyP0ry",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "e8e5cac1da662313e154de08f2615ba05104473e7e9efa7c53ffa8f8a3213eb4",
+        "modifiedTime": "2025-12-19T19:08:45.334Z",
+        "name": "Pantanal fishing Porto Jofre 2025-2026 ENG 20%.docx"
+      },
+      "quarantinedCandidatesChecked": true,
+      "evidence": [
+        "2027 manifest expanded search for fishing/Porto Jofre/Pantanal: only Rio Marie fly-fishing in Amazon, plus Pantanal wildlife/jaguar safaris; claim 2027 candidate1JmTCksrjgeYXyRuH5UD8IdlRan-J-tL9 metadata is Carnaval Tickets, unrelated. Targeted Old Designs/Brazil1VnklE01fWjUf5ysM9QZw1qEz3tNdTIqq listed: Pantanal safaris/combined tours, no Porto Jofre fishing package. No appropriate 2027 edition found.",
+        "Full 2026 DOCX Fishing in the Pantanal at Porto Jofre Lodge matches exact 4-calendar-day/2-fishing-day itinerary: check-in after18:00, fishing days2–3, checkout before09:00 day4. It also contains the same extended3/4/5 fishing-day variants used in RU body.",
+        "High-specificity inclusions match: full-board double accommodation, Pilotero, Marajo19 boat/115Hp, gas, bait, listed drinks/snacks/churrasco; Portuguese guide, optional English guide650/day, cota zero, payment30/70. Historic per-person-per-day tariffs1062/890 and overnight250 agree RU body. No2026 tariffs applied as new commercial prices."
+      ],
+      "dayAlignment": [
+        {
+          "day": 1,
+          "sourceRef": "word/document.xml /w:document/w:body/*[21], 2-DAY FISHING PROGRAM inline Day1"
+        },
+        {
+          "day": 2,
+          "sourceRef": "word/document.xml /w:document/w:body/*[21], 2-DAY FISHING PROGRAM inline Day2"
+        },
+        {
+          "day": 3,
+          "sourceRef": "word/document.xml /w:document/w:body/*[21], 2-DAY FISHING PROGRAM inline Day3"
+        },
+        {
+          "day": 4,
+          "sourceRef": "word/document.xml /w:document/w:body/*[21], 2-DAY FISHING PROGRAM inline Day4"
+        }
+      ],
+      "programmeVariants": [
+        {
+          "fishingDays": 3,
+          "sourceRef": "word/document.xml body child23"
+        },
+        {
+          "fishingDays": 4,
+          "sourceRef": "word/document.xml body child25"
+        },
+        {
+          "fishingDays": 5,
+          "sourceRef": "word/document.xml body child28"
+        }
+      ]
+    },
+    "submissionId": "submission-match-tour_source_rybalka_v_pantanale-1",
+    "reason": "Error: {\"content\":[{\"type\":\"text\",\"text\":\"GithubGraphQLAPIError: [{'message': 'Something went wrong while executing your query on 2026-10-29T20:10:43Z. Please include `BEAF:9A7D4:C8D907B:125C9C52:6AE3A842` when reporting this issue.'}]\"}],\"structuredContent\":{\"error\":\"GithubGraphQLAPIError: [{'message': 'Something went wrong while executing your query on 2026-10-29T20:10:43Z. Please include `BEAF:9A7D4:C8D907B:125C9C52:6AE3A842` when reporting this issue.'}]\",\"error_code\":\"UNKNOWN\"},\"isError\":true}",
+    "completedJobIds": [
+      "match:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+      "match:tour_source_brazil_coffee_tour_ru",
+      "match:tour_source_3_vzglyada_na_kosta_riku",
+      "match:tour_source_ekzoticheskij_karnaval_parad_chempionov_v_brazilii",
+      "match:tour_source_koloritnyj_santyago_i_zagadochnyj_ostrov_paskhi",
+      "match:tour_source_kolumbiya_s_kano_kristales_i_ne_tolko",
+      "match:tour_source_kosta_rika_za_5_dnej",
+      "match:tour_source_luchshee_v_belize",
+      "match:tour_source_lyuksovyj_tur_na_karnaval_v_braziliyu_i_vodopady_iguasu",
+      "match:tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej",
+      "match:tour_source_manyashchij_peru_i_ikitos",
+      "match:tour_source_peru_expeditoin_ru",
+      "match:tour_source_populyarnye_napravleniya_venesuely"
+    ]
+  }
+}

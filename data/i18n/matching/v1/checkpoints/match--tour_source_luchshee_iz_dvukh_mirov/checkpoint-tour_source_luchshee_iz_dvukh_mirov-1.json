@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_luchshee_iz_dvukh_mirov",
+  "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_luchshee_iz_dvukh_mirov",
+  "checkpointId": "checkpoint-tour_source_luchshee_iz_dvukh_mirov-1",
+  "partial": {
+    "result": {
+      "entityId": "tour_source_luchshee_iz_dvukh_mirov",
+      "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_luchshee_iz_dvukh_mirov",
+      "outcome": "selected_2027",
+      "checkedYears": [
+        2027
+      ],
+      "selectedSource": {
+        "driveFileId": "1VPldcG6VH5oQEoimYv6HQEeZOWJ7KsgV",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "6cc23869317ad9157f30949ff034fcdf6b4b4fdc044e96cf95c96b787123113b",
+        "modifiedTime": "2026-10-22T14:17:36.366Z"
+      },
+      "evidence": [
+        "Полный DOCX Best of Both Worlds 2027: 9 дней/8 ночей, 5 ночей San Ignacio Resort (Garden View) и 3 Ramon’s Village (Jungle Deluxe) полностью соответствуют RU.",
+        "Последовательность дней совпадает: прибытие; Каракол; ATM; Бартон-Крик; Тикаль/возврат; перелет Сан-Педро; два свободных дня; перелет в международный аэропорт. Совпадают включенные экскурсии, обеды, местные перелеты и исключенные пограничные сборы.",
+        "Таблица USD на человека: SGL 8404, DBL 4910, TPL 4103. Тарифы совпадают с RU; Word отдельно задает рекламный минимум 4103 для трехместного размещения."
+      ],
+      "dayAlignment": [
+        {
+          "day": 1,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[23]"
+        },
+        {
+          "day": 2,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[24]"
+        },
+        {
+          "day": 3,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[25]"
+        },
+        {
+          "day": 4,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[35]"
+        },
+        {
+          "day": 5,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[36]"
+        },
+        {
+          "day": 6,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[47]"
+        },
+        {
+          "day": 7,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[48]"
+        },
+        {
+          "day": 8,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[48]"
+        },
+        {
+          "day": 9,
+          "sourceRef": "word/document.xml:/w:document/w:body/*[49]"
+        }
+      ],
+      "priceAmendments": [
+        {
+          "amount": 8404,
+          "currency": "USD",
+          "priceBasis": "per_person",
+          "occupancy": "SGL",
+          "travellers": 1,
+          "year": 2027,
+          "accommodation": "5 nights San Ignacio Resort Hotel Garden View + 3 nights Ramon's Village Jungle Deluxe cabana; hotel taxes and breakfast included",
+          "sourceLocator": "word/document.xml:/w:document/w:body/*[59]/w:tr[2]/w:tc[2]",
+          "conditionsSourceLocator": "word/document.xml:/w:document/w:body/*[60]"
+        },
+        {
+          "amount": 4910,
+          "currency": "USD",
+          "priceBasis": "per_person",
+          "occupancy": "DBL",
+          "travellers": 2,
+          "year": 2027,
+          "accommodation": "5 nights San Ignacio Resort Hotel Garden View + 3 nights Ramon's Village Jungle Deluxe cabana; hotel taxes and breakfast included",
+          "sourceLocator": "word/document.xml:/w:document/w:body/*[59]/w:tr[2]/w:tc[3]",
+          "conditionsSourceLocator": "word/document.xml:/w:document/w:body/*[60]"
+        },
+        {
+          "amount": 4103,
+          "currency": "USD",
+          "priceBasis": "per_person",
+          "occupancy": "TPL",
+          "travellers": 3,
+          "year": 2027,
+          "accommodation": "5 nights San Ignacio Resort Hotel Garden View + 3 nights Ramon's Village Jungle Deluxe cabana; hotel taxes and breakfast included",
+          "sourceLocator": "word/document.xml:/w:document/w:body/*[59]/w:tr[2]/w:tc[4]",
+          "conditionsSourceLocator": "word/document.xml:/w:document/w:body/*[60]"
+        }
+      ]
+    },
+    "submissionId": "submission-match-tour_source_luchshee_iz_dvukh_mirov-1",
+    "blocker": "Repeated GitHub update_ref GraphQL internal errors on complete; retry exact submission."
+  }
+}

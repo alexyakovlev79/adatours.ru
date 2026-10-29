@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_brazil_rio_four_days",
+  "result": {
+    "entityId": "tour_brazil_rio_four_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_brazil_rio_four_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "confidence": "high",
+    "selectedSource": {
+      "driveFileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+      "modifiedTime": "2026-10-21T20:19:00.892Z",
+      "filename": "4 Days In Rio de Janeiro 4d3n 2027 ENG com 20%.docx",
+      "sizeBytes": 1516706,
+      "url": "https://docs.google.com/document/d/1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true"
+    },
+    "evidence": [
+      "Complete DOCX including nested tables confirms Rio-only 4D/3N with airport transfers on days 1 and 4, Sugar Loaf via Urca plus city tour on day 2 and Tijuca/Corcovado/Christ on day 3. Both included excursions last 4 hours.",
+      "All three hotel options and room categories match RU exactly: B&B Copacabana Superior 3-star, Windsor Leme Standard 4-star, Miramar by Windsor Standard 5-star, all 3 nights with breakfast and services.",
+      "The nine nested-table 2027 USD per-person values match RU: 2607/1447/1255, 2847/1620/1591, 3219/1912/1755 for SGL/DBL/TRP. No new numerical amendment is required; 1255 is per person in triple occupancy.",
+      "EN Word specifies English- or Spanish-speaking guide instead of RU Russian-speaking guide. Per canonical workflow v1.1 this is source content for EN and does not require human review or invalidate the tour match.",
+      "Other candidate metadata identify CONGRESS_in_Rio_de_Janeiro_45pax_ENG (1).docx (45-person congress), Rio de Janeiro New Year 2027 Group ENG com 20% (New Year group), and D. Marieta - Ada Tours 2027 ENG 4d3n.docx (different named programme). Exact source chosen by full day itinerary, hotel and tariff correspondence, not title similarity."
+    ],
+    "sourceLocatorConvention": "XPath over word/document.xml using w namespace; /w:document/w:body/*[n] is 1-based over all child elements.",
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[20]–*[25]",
+        "sourceTextLocators": [
+          "/w:document/w:body/*[23]",
+          "/w:document/w:body/*[24]",
+          "/w:document/w:body/*[25]"
+        ],
+        "match": "Arrival, private guide transfer, free time, optional evening Rio by Night"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[31]–*[36]",
+        "sourceTextLocators": [
+          "/w:document/w:body/*[34]",
+          "/w:document/w:body/*[35]",
+          "/w:document/w:body/*[36]"
+        ],
+        "match": "4-hour Sugar Loaf via Urca, historic city centre, breakfast"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[45]",
+        "sourceTextLocators": [
+          "/w:document/w:body/*[45]",
+          "/w:document/w:body/*[47]"
+        ],
+        "match": "4-hour Tijuca, Corcovado, Christ; optional afternoon Rocinha"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[46]",
+        "sourceTextLocators": [
+          "/w:document/w:body/*[46]",
+          "/w:document/w:body/*[47]"
+        ],
+        "match": "Breakfast, free time and private airport departure transfer"
+      }
+    ],
+    "priceAmendments": [],
+    "verifiedPriceTable": [
+      {
+        "amount": 2607,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "SGL",
+        "hotelCategory": "3-star",
+        "hotel": "B&B Copacabana",
+        "room": "Superior",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 2607,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[2]/w:tc[2]"
+      },
+      {
+        "amount": 1447,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "DBL",
+        "hotelCategory": "3-star",
+        "hotel": "B&B Copacabana",
+        "room": "Superior",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 1447,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[2]/w:tc[3]"
+      },
+      {
+        "amount": 1255,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "TRP",
+        "hotelCategory": "3-star",
+        "hotel": "B&B Copacabana",
+        "room": "Superior",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 1255,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[2]/w:tc[4]"
+      },
+      {
+        "amount": 2847,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "SGL",
+        "hotelCategory": "4-star",
+        "hotel": "Windsor Leme",
+        "room": "Standard",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 2847,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[3]/w:tc[2]"
+      },
+      {
+        "amount": 1620,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "DBL",
+        "hotelCategory": "4-star",
+        "hotel": "Windsor Leme",
+        "room": "Standard",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 1620,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[3]/w:tc[3]"
+      },
+      {
+        "amount": 1591,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "TRP",
+        "hotelCategory": "4-star",
+        "hotel": "Windsor Leme",
+        "room": "Standard",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 1591,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[3]/w:tc[4]"
+      },
+      {
+        "amount": 3219,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "SGL",
+        "hotelCategory": "5-star",
+        "hotel": "Miramar by Windsor",
+        "room": "Standard",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 3219,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[4]/w:tc[2]"
+      },
+      {
+        "amount": 1912,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "DBL",
+        "hotelCategory": "5-star",
+        "hotel": "Miramar by Windsor",
+        "room": "Standard",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 1912,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[4]/w:tc[3]"
+      },
+      {
+        "amount": 1755,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "TRP",
+        "hotelCategory": "5-star",
+        "hotel": "Miramar by Windsor",
+        "room": "Standard",
+        "nights": 3,
+        "mealPlan": "BB",
+        "servicesIncluded": true,
+        "travelYear": 2027,
+        "ruAmount": 1755,
+        "changeRequired": false,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[56]/w:tr[1]/w:tc[1]/w:tbl/w:tr[4]/w:tc[4]"
+      }
+    ],
+    "contentObservations": [
+      "Use Word's English- or Spanish-speaking guide in EN. Guide-language mismatch against old RU does not block selection.",
+      "Days 3–4 share a section heading but have separate actual paragraphs; dayAlignment maps them separately.",
+      "Show with churrascaria dinner and private Rocinha tour remain optional price-on-request services, excluded from programme base price.",
+      "2026 fallback is unnecessary after verified high-confidence 2027 match."
+    ]
+  }
+}

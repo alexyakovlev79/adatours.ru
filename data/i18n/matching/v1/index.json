@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T19:41:59.308Z",
+  "updatedAt": "2026-10-29T19:42:08.315Z",
   "counts": {
     "held": 0,
-    "queued": 112,
-    "leased": 9,
+    "queued": 111,
+    "leased": 10,
     "ready": 237,
     "retryable": 0,
     "blocked_external": 0,
@@ -189,15 +189,15 @@
     "0c": {
       "counts": {
         "held": 0,
-        "queued": 15,
-        "leased": 0,
+        "queued": 14,
+        "leased": 1,
         "ready": 5,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T20:42:08.315Z",
       "earliestRetryAt": null
     },
     "0d": {
@@ -295,6 +295,11 @@
       "token": "lease-mvty1i4m-jqd2y8f2",
       "jobId": "match:tour_source_nezabyvaemyj_karnaval_s_vodopadami_i_otdykhom_na_poberezhe",
       "expiresAt": "2026-10-29T20:41:30.101Z"
+    },
+    "ada-match-mvty0vix-vfjlp8l4": {
+      "token": "lease-mvty0vix-vdsm8cri",
+      "jobId": "match:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+      "expiresAt": "2026-10-29T20:42:08.315Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -904,7 +909,8 @@
       "token": "lease-mvty0vix-vdsm8cri",
       "jobIds": [
         "match:tour_source_costa_rica",
-        "match:tour_latin_america_six_countries_20_days_2026"
+        "match:tour_latin_america_six_countries_20_days_2026",
+        "match:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio"
       ],
       "completedJobIds": [
         "match:tour_source_costa_rica",

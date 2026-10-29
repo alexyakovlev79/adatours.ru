@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy",
+  "result": {
+    "entityId": "tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy",
+    "outcome": "not_found_both",
+    "selectedSource": null,
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU is a specific guaranteed-departure 11d10n programme: Quito days1–2, Quilotoa/Banos day3, Riobamba day4, Chimborazo/Ingapirca/Cuenca day5, Cuenca day6, Cajas/cacao/Guayaquil day7, Galapagos Santa Cruz/Bartolome/North Seymour-or-Plaza days8–11; group max16.",
+      "2027 both proposed 11-day Word programmes semantically read: 1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG replaces days5–7 with Amazon lodge and Papallacta, omitting Riobamba/Cuenca/Cajas. 1WCzcZYJuiRJW-VIOVzPV5bsM3UzzVq6h goes to Galapagos day5 then coast/whales days8–11. Neither is the complete matching route. Mainland Ecuador 1l9YB4o3qmbgB0wP6CowucZNONmabrZsx is a 9d luxury Amazon-cruise tour, not this route.",
+      "2026 equivalents 1JohfP4utlwNr_Kodtp5XEkaKHVmkSqYu and 1YssBjdQScQvRajCxMbnUQq2iXp-CQyAU were read and have the same Amazon/Papallacta or whale-coast divergence; Economy8d 1gfkNcWihq7EiJGmu5iLxnrYD7uKon_FO has Mindo and only Quito/Galapagos. Other Ecuador manifest entries checked; no complete 11d counterpart with Riobamba/Cuenca/Cajas.",
+      "Quarantine Old Designs Ecuador 17yzJRQ_NCBGJivmuZxC5jH1kfjud_dkD (13 documents) inspected, plus MICE and leaflet listings. Same programme families, no complete matching guaranteed 11d programme. Partial reusable source found: Ecuador Natural 2027 8d7n 1NVeoi4OmqlP-DOGR4jaXbGP3lvWXHXJp has semantically matching mainland days1–7 but departs Guayaquil on day8; separate 4d Galapagos 1vk4iuCdv_Z4tdHAmpRc-6s64PO-B-qef may cover island portion. These are components, not evidence of a complete 11d tariff/programme; preserve for subsequent block-level reuse."
+    ],
+    "partialReuseCandidates": [
+      {
+        "driveFileId": "1NVeoi4OmqlP-DOGR4jaXbGP3lvWXHXJp",
+        "sourceYearFolder": 2027,
+        "targetDays": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "reason": "Matching mainland route, separate 8d programme with no Galapagos package."
+      },
+      {
+        "driveFileId": "1vk4iuCdv_Z4tdHAmpRc-6s64PO-B-qef",
+        "sourceYearFolder": 2027,
+        "targetDays": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "reason": "Separate island extension candidate; needs full DOCX validation before reuse."
+      }
+    ]
+  }
+}

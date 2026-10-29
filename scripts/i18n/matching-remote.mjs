@@ -80,7 +80,7 @@ function touchIndex(core,index,sid,shard,now) {
    if(core.shardFor(lease.jobId)!==sid)continue;
    const row=shard.items.find(item=>item.jobId===lease.jobId);
    if(!row || row.status!=='leased' || row.lease?.ownerId!==owner ||
-      row.lease?.token!==lease.token || row.lease.expiresAt!==lease.expiresAt) {
+      row.lease?.token!==lease.token) {
      delete next.activeOwners[owner];
    }
  }

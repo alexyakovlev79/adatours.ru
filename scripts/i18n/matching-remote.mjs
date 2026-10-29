@@ -142,8 +142,8 @@ export async function runEnMatching(tools,core,args={}) {
      job=pickJob(packet,args.jobId);
      const lease=argsForLease({...args,now});
      if(args.action==='renew')mutation=core.renewMatch(shard,lease);
-     if(args.action==='release')mutation=core.releaseMatch(shard,lease);
-     if(args.action==='fail')mutation=core.failMatch(shard,{...lease,status:args.failureStatus});
+     if(args.action==='release'){mutation=core.releaseMatch(shard,lease);outcome=mutation.status;}
+     if(args.action==='fail'){mutation=core.failMatch(shard,{...lease,status:args.failureStatus});outcome=mutation.status;}
      if(args.action==='checkpoint') {
        if(!validId(args.checkpointId))throw new Error('Invalid checkpointId');
        const checkpointText=format({schemaVersion:1,jobId:job.jobId,sourceFingerprint:job.sourceFingerprint,checkpointId:args.checkpointId,partial:args.partial});

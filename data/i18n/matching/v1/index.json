@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T15:08:50.635Z",
+  "updatedAt": "2026-10-29T15:09:04.270Z",
   "counts": {
     "held": 0,
-    "queued": 330,
-    "leased": 0,
+    "queued": 329,
+    "leased": 1,
     "ready": 28,
     "retryable": 0,
     "blocked_external": 0,
@@ -21,15 +21,15 @@
     "00": {
       "counts": {
         "held": 0,
-        "queued": 16,
-        "leased": 0,
+        "queued": 15,
+        "leased": 1,
         "ready": 6,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T16:39:04.270Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -250,7 +250,13 @@
     "evidence": "Node24 Actions 40833361987 success, remote CAS smoke branch i18n/matching-smoke-20261029",
     "date": "2026-10-29"
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "ada-bulk-722c528fb394-mvto0doi": {
+      "token": "lease-mvto0doi-5s4tdeopx9p",
+      "jobId": "match:tour_source_ekzoticheskij_novyj_god_ru",
+      "expiresAt": "2026-10-29T16:39:04.270Z"
+    }
+  },
   "activationPhase": "bulk_open",
   "ownerAssignments": {
     "ada-match-mvto009g-e0ddwpix": {
@@ -293,7 +299,8 @@
         "match:tour_source_chili_zagadki_chelovechestva",
         "match:tour_guatemala_discover_8_days",
         "match:tour_patagonia_lakes_lakeshore_chalet_10_days",
-        "match:tour_source_antarktida_programma_s_nochevkoj"
+        "match:tour_source_antarktida_programma_s_nochevkoj",
+        "match:tour_source_ekzoticheskij_novyj_god_ru"
       ]
     }
   },

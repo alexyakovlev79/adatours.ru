@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:02:27.826Z",
+  "updatedAt": "2026-10-29T18:02:34.230Z",
   "counts": {
     "held": 0,
-    "queued": 270,
-    "leased": 4,
+    "queued": 269,
+    "leased": 5,
     "ready": 84,
     "retryable": 0,
     "blocked_external": 0,
@@ -91,15 +91,15 @@
     "05": {
       "counts": {
         "held": 0,
-        "queued": 9,
-        "leased": 0,
+        "queued": 8,
+        "leased": 1,
         "ready": 10,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:02:34.230Z",
       "earliestRetryAt": null
     },
     "06": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobId": "match:tour_source_tur_v_braziliyu_na_13_dnej",
       "expiresAt": "2026-10-29T19:02:08.514Z"
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_source_klassicheskaya_antarktida",
+      "expiresAt": "2026-10-29T19:02:34.230Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -368,7 +373,8 @@
         "match:tour_source_vip_tur_v_braziliyu_s_amazoniej_16_dnej",
         "match:tour_source_vkusy_kolumbii",
         "match:tour_source_vsya_panama_natsionalnye_parki_ostrova_i_doliny",
-        "match:tour_source_issleduya_beliz"
+        "match:tour_source_issleduya_beliz",
+        "match:tour_source_klassicheskaya_antarktida"
       ],
       "completedJobIds": [
         "match:tour_source_kankun_beliz",

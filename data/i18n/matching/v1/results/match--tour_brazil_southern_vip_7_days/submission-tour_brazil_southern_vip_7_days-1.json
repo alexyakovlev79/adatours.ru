@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_brazil_southern_vip_7_days",
+  "result": {
+    "entityId": "tour_brazil_southern_vip_7_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_brazil_southern_vip_7_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+      "modifiedTime": "2026-10-19T19:14:32.463Z"
+    },
+    "evidence": [
+      "Full Southern Brazil VIP 2027 DOCX matches all seven RU days and six nights: Porto Alegre/Bento Gonçalves and Spa do Vinho, vineyard quad bikes to Gramado, Gramado to Cambará, Itaimbezinho, balloon/picnic, helicopter to Florianópolis, city tour/departure.",
+      "Distinctive private helicopter transfer, two-traveller basis, English guide, vineyard walk and 1+1+3+1-night allocation agree. New Word accommodation table clarifies breakfast throughout; balloon and helicopter weather dependency and excluded domestic/international flights are preserved as Word conditions.",
+      "Source body child 63 gives USD 10043 per passenger based on private arrangement for 2. There are no separate SGL/DBL/TPL columns and no invented occupancy tariff. Amount agrees with current RU."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[23]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[24]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=34 and position()<=35]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[43]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[44]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[54]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[55]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 10043,
+        "currency": "USD",
+        "priceBasis": "per passenger, private arrangement for 2 passengers",
+        "groupSize": 2,
+        "tariffYear": 2027,
+        "accommodation": "Spa do Vinho 1N; Gramado hotel TBC 1N; Cambará hotel TBC 3N; Florianópolis hotel TBC 1N; breakfast",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[63]",
+        "included": "Private helicopter Cambará–Florianópolis, specified transfers and excursions",
+        "changeAgainstCurrentRu": "same_as_current"
+      }
+    ]
+  }
+}

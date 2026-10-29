@@ -1,10 +1,10 @@
 import { defineConfig } from 'astro/config';
+import { resolveAstroBuildContext } from './src/lib/i18n/build-context.mjs';
 import sitemap from '@astrojs/sitemap';
 import { isLegacyRedirectPath } from './src/lib/routes.ts';
 import { isArchivedPath } from './src/lib/archive.mjs';
 
-const site = process.env.SITE_ORIGIN ?? 'https://adatours.ru';
-const base = process.env.SITE_BASE ?? '/';
+const { site, base } = resolveAstroBuildContext(process.env);
 
 export default defineConfig({
   site,

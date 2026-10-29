@@ -262,3 +262,24 @@ test('bulk owner limit is 6 completed jobs and a different chat gets the rest',a
  assert.ok(!ids.includes(other.jobId));
 });
 
+
+
+test('an expired third lease cannot bypass the three-job pilot limit',async()=>{
+ const env=sandbox({total:5,pilots:5}),a=owner('expiry');
+ for(let i=0;i<2;i++){
+  const c=await runEnMatching(env.tools,core,{action:'claim',...a});
+  assert.equal(c.status,'claimed');
+  const saved=await runEnMatching(env.tools,core,{action:'complete',...a,jobId:c.jobId,
+   generation:c.generation,submissionId:'expiry-done-'+i,result:match(c.job)});
+  assert.equal(saved.status,'saved');
+ }
+ const third=await runEnMatching(env.tools,core,{action:'claim',...a});
+ assert.equal(third.status,'claimed');
+ await env.mutateFile(ROOT+'/index.json',idx=>{
+   idx.activeOwners[a.ownerId].expiresAt='2000-01-01T00:00:00.000Z';
+   return idx;
+ });
+ const attempt=await runEnMatching(env.tools,core,{action:'claim',...a});
+ assert.equal(attempt.status,'worker_quota_reached');
+ assert.equal(attempt.assignedCount,3);
+});

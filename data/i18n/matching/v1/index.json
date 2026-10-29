@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T19:10:33.089Z",
+  "updatedAt": "2026-10-29T19:10:44.076Z",
   "counts": {
     "held": 0,
-    "queued": 145,
-    "leased": 2,
+    "queued": 144,
+    "leased": 3,
     "ready": 211,
     "retryable": 0,
     "blocked_external": 0,
@@ -161,15 +161,15 @@
     "0a": {
       "counts": {
         "held": 0,
-        "queued": 9,
-        "leased": 0,
+        "queued": 8,
+        "leased": 1,
         "ready": 12,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T20:10:44.076Z",
       "earliestRetryAt": null
     },
     "0b": {
@@ -260,6 +260,11 @@
       "token": "lease-mvtu0yxx-zfzi6gxa",
       "jobId": "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
       "expiresAt": "2026-10-29T18:48:39.758Z"
+    },
+    "ada-match-2ff03f-mvtu1h9z": {
+      "token": "lease-mvtu1h9z-d3rjhcq7",
+      "jobId": "match:tour_source_kolumbiya_stolitsy",
+      "expiresAt": "2026-10-29T20:10:44.076Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -688,7 +693,8 @@
         "match:tour_source_chili_argentina",
         "match:tour_source_ekonomichnaya_kosta_rika",
         "match:tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh",
-        "match:tour_source_galapagosskie_ostrova_na_vip_yakhte"
+        "match:tour_source_galapagosskie_ostrova_na_vip_yakhte",
+        "match:tour_source_kolumbiya_stolitsy"
       ],
       "completedJobIds": [
         "match:tour_argentina_best_14_days",

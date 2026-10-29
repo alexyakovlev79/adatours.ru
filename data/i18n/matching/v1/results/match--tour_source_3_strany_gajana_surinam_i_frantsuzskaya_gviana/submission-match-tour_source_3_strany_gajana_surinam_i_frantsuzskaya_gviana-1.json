@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+  "result": {
+    "entityId": "tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_3_strany_gajana_surinam_i_frantsuzskaya_gviana",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1jOAdX3xwKS77t94TltdfdVmvm4Pzvi8q",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "b4a644d26299ef83ee92909b9ee0b2ef2c12026c26b1b91ad10dfe650db0ac7e",
+      "modifiedTime": "2026-10-28T14:36:32.313Z",
+      "name": "Guianas highlights 2027 7d6n ENG 20%.docx"
+    },
+    "evidence": [
+      "Full DOCX word/document.xml inspected including every table: same 7 days / 6 nights and three countries, Paramaribo/Peperpot, Albina/Maroni crossing, Cayenne, Kourou spaceport, Iles du Salut and Georgetown/Kaieteur flight; identifies P018 independent of title similarity.",
+      "2027 programme reorders Guyana to the beginning (Georgetown to Paramaribo), retains all defining visits and English-speaking guide/3-star breakfast accommodation. Word explicitly excludes Guyana–Suriname flight whereas RU includes it; EN must follow this 2027 Word, no identity-blocking review required.",
+      "The 2027 accommodation table has Georgetown 1 night, Paramaribo 2 + 1 nights, Kourou 2 nights. Table 54 lists USD 5119 per person, minimum 2 travellers, excluding Christmas/New Year/Easter: same starting amount as RU, but precise 2027 conditions retained."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml /w:document/w:body/w:p[preceding-sibling::* count=23] (body child 24), EN day 2 arrival Paramaribo; EN day 1 Georgetown is reordered RU day 6 arrival context",
+        "note": "RU Suriname arrival moves to end of EN day 2"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml body child 33 (w:p), EN day 3 Paramaribo/Peperpot/dolphins"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml body child 34 and 43 (w:p), EN day 4 Albina–Saint-Laurent–Cayenne–Kourou and EN day 6 Space Centre"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml body child 42 (w:p), EN day 5 Iles du Salut"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml body child 34 and 43 (w:p), Cayenne/Saint-Laurent on EN day 4; return Suriname EN day 6"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml body child 24 (w:p), EN day 2 Kaieteur flight and Georgetown city tour"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml body child 44 (w:p), EN day 7 airport departure from Suriname, RU departure Guyana changed"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 5119,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "sourceLocator": "word/document.xml /w:document/w:body/*[54] (w:tbl)",
+        "minimumGroup": 2,
+        "accommodation": "3-star or best available, breakfast; hotel names confirmed at booking",
+        "validity": "2027; not valid Christmas, New Year and Easter",
+        "roomType": "not specified",
+        "amountChangedFromRu": false,
+        "notes": "Includes hotels, Kaieteur return flight, guided tours, overland transfers and river crossing; excludes Guyana–Suriname flight. All corresponding tariff rows: one from-price, no SGL/DBL/TPL table in document."
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_amazoniya",
+  "result": {
+    "entityId": "tour_source_amazoniya",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_amazoniya",
+    "outcome": "not_found_both",
+    "selectedSource": null,
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU identity is a four-day/three-night standalone Manaus/Amazon extension: 1 night in Manaus city then2 nights Evolution Eco Lodge, Meeting of Waters and pink dolphins on day2, jungle/caboclo/cassava/Acajatuba and night caimans on day3, return Manaus/Rio day4. No full corresponding standalone English programme found; partial English blocks ARE recorded below and must not be discarded.",
+      "Checked safe manifest all2027/2026 programme metadata for Amazon/Manaus/Evolucao/Evolution/Acajatuba/lodge/survival/4d3n; live2027Brazil folder1ifpwDaNUDBUStt1XuYJeEuBpT5QhF7C5 (70 entries),2027VIP1UzVWk8dyCaes7ivAQn9iHfc47X6t3THB (46 entries),2026Brazil1BFjrV-dL41ZfNKI7mfXwyrT3VW9wsbR4 (84 entries). No standalone4day2027Evolution+Manaus1night programme; empty dispatcher candidates alone were not used as evidence.",
+      "Full2027VIP DOCX1R7vGukYEs1KtuFdB3ugkR_BDSej2GtjT, SHA25687652d54eed7f53278892226559d7d615d8b3f0390ad417a8985975c8059f494, modified2026-09-24T20:33:32.110Z:3d2n Mirante do Gaviao with seaplane, Anavilhanas, excursions and meals, not Evolution/Manaus1n. Its4270DBL/6688SGL rates must not amend this tour. Four-day Amazon cruise PDFs and five-day/AquaNera boat programmes are different accommodation/transport products.",
+      "Full2026Manaus DOCX1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0, SHA256af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6, modified2026-02-03T20:34:41.157Z:4d3n but all3 nights atEvolucao lodge, direct lodge transfer day1, caimans day2 and igapo/piranhas day3. Pink dolphins100USD and Meeting of Waters270USD are optional add-ons, not RUincludedday2. This is a related lodge package, not confident identity of RUcity1n/lodge2n itinerary. No2026tariffs imported.",
+      "Full2027Rio-Manaus-Iguazu DOCX1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i, SHA2563df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72, modified2026-10-21T20:55:09.621Z, provides exact semantic description for RUday3 at document.xml#p0085: jungle,caboclo,cassava,Acajatuba seeds/fruit,and nightcaimans. Other Amazon blockdays3–5 only partly coverRUdays2/4, omit citynight and includedpinkdolphins, and departtoIguazu ratherthanRio. Preserve aspartialSource, not complete matching or transferable whole-tour price.",
+      "Other2027multi-city Amazon blocks read:1bgDiMxGpFdNVE6ntXghjQH24X3sp6gHX has2nightEvolution segment thenSalvador;17NnL3w_rDYEiXXG1EslfyusClEqpZaE9 has2nightjungle segment amidSaoPaulo/Rio/Iguazu, dolphins/MeetingofWaters optional.2026Survival1fQeUg8KUAlg82xnLeTP8yKSgBEWBYuNC read:basecamp/hammocknights, survival training, day4dolphins, notEvolutionlodge package.",
+      "Quarantine checked OldDesignsBrazil1VnklE01fWjUf5ysM9QZw1qEz3tNdTIqq (63entries, noManaus4d/Amazonstandalone),MICE19nS5yaXTD26-QJOcN9-0Lh-rPhnS7UF7 andMICECases1gxyDF6lMhOBe9W6at6Y08tu6Tq5aFu-3:Amazon entries are8daystudent3ecosystems and25paxmulti-region programme, not4daycity/lodge extension. No contracts read or used. Related descriptions retained without declaring a full match from generic lodge/region overlap."
+    ],
+    "partialSources": [
+      {
+        "driveFileId": "1YPIJivG5ng3A6_Mj3-k1JvCcvcum977i",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "3df5264bf3145f91aa1d7bddc661e7bc002604bc171f91955e9591fcfe9c0f72",
+        "modifiedTime": "2026-10-21T20:55:09.621Z",
+        "coverage": "Partial semantic block only; not identity of entire4day tour and not a standalone tariff",
+        "dayAlignment": [
+          {
+            "day": 2,
+            "sourceDay": 3,
+            "sourceRef": "word/document.xml#p0084",
+            "coverage": "partial",
+            "differences": "MeetingofWaters optional; noincludedpinkdolphins; lodge description not present"
+          },
+          {
+            "day": 3,
+            "sourceDay": 4,
+            "sourceRef": "word/document.xml#p0085",
+            "coverage": "samejungle/caboclo/Acajatuba/nightcaimancontent"
+          },
+          {
+            "day": 4,
+            "sourceDay": 5,
+            "sourceRef": "word/document.xml#p0086",
+            "coverage": "lodge→Manausairporttransferonly; onwardIguazudoesnotmatchRUonwardRio"
+          }
+        ],
+        "priceUse": "forbidden:amounts5435/3453/3304price8dayRioAmazonIguazu,not4dayextension"
+      },
+      {
+        "driveFileId": "1F-Ti9HJaf9sH3TqOTfKu2yyF7-GdS9v0",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "af0732f00ce4704b2e56783e9d2dbe2a71e6c2ce1908335eff5a47f04b255eb6",
+        "modifiedTime": "2026-02-03T20:34:41.157Z",
+        "coverage": "RelatedEvolutionlodgepackage; different3lodgenightsandoptionalactivities",
+        "sourceRefs": [
+          "word/document.xml#p0071",
+          "word/document.xml#p0089",
+          "word/document.xml#p0094"
+        ],
+        "priceUse": "no2026priceimport"
+      }
+    ]
+  }
+}

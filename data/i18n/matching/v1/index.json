@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T15:01:11.428Z",
+  "updatedAt": "2026-10-29T15:01:25.866Z",
   "counts": {
     "held": 0,
-    "queued": 339,
-    "leased": 2,
+    "queued": 338,
+    "leased": 3,
     "ready": 17,
     "retryable": 0,
     "blocked_external": 0,
@@ -35,15 +35,15 @@
     "01": {
       "counts": {
         "held": 0,
-        "queued": 23,
-        "leased": 0,
+        "queued": 22,
+        "leased": 1,
         "ready": 7,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T16:31:25.866Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -260,6 +260,11 @@
       "token": "lease-mvto0ji3-pste4zxa",
       "jobId": "match:tour_source_5_chudes_kosta_riki",
       "expiresAt": "2026-10-29T16:30:51.596Z"
+    },
+    "ada-bulk-722c528fb394-mvto0doi": {
+      "token": "lease-mvto0doi-5s4tdeopx9p",
+      "jobId": "match:tour_guatemala_discover_8_days",
+      "expiresAt": "2026-10-29T16:31:25.866Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -295,7 +300,8 @@
       "token": "lease-mvto0doi-5s4tdeopx9p",
       "jobIds": [
         "match:tour_chile_marble_caves_san_rafael_three_days",
-        "match:tour_source_chili_zagadki_chelovechestva"
+        "match:tour_source_chili_zagadki_chelovechestva",
+        "match:tour_guatemala_discover_8_days"
       ]
     }
   },

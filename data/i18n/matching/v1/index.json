@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T15:02:16.750Z",
+  "updatedAt": "2026-10-29T15:02:29.305Z",
   "counts": {
     "held": 0,
-    "queued": 335,
-    "leased": 3,
+    "queued": 334,
+    "leased": 4,
     "ready": 20,
     "retryable": 0,
     "blocked_external": 0,
@@ -35,15 +35,15 @@
     "01": {
       "counts": {
         "held": 0,
-        "queued": 22,
-        "leased": 0,
+        "queued": 21,
+        "leased": 1,
         "ready": 8,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T16:32:29.305Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -265,6 +265,11 @@
       "token": "lease-mvto08uk-qo2u2nkf",
       "jobId": "match:tour_source_kolumbiya_2024",
       "expiresAt": "2026-10-29T16:32:01.352Z"
+    },
+    "ada-bulk-722c528fb394-mvto0doi": {
+      "token": "lease-mvto0doi-5s4tdeopx9p",
+      "jobId": "match:tour_patagonia_lakes_lakeshore_chalet_10_days",
+      "expiresAt": "2026-10-29T16:32:29.305Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -304,7 +309,8 @@
       "jobIds": [
         "match:tour_chile_marble_caves_san_rafael_three_days",
         "match:tour_source_chili_zagadki_chelovechestva",
-        "match:tour_guatemala_discover_8_days"
+        "match:tour_guatemala_discover_8_days",
+        "match:tour_patagonia_lakes_lakeshore_chalet_10_days"
       ]
     }
   },

@@ -237,21 +237,28 @@ test('one Work chat may claim only 3 pilot jobs; second chat receives remaining 
  assert.equal(status.counts.ready,5);
  assert.equal(status.counts.queued,0);
 });
-test('bulk owner limit is 6 jobs and quota persists after release',async()=>{
+test('bulk owner limit is 6 completed jobs and a different chat gets the rest',async()=>{
  const env=sandbox({total:9,pilots:9});
  await env.mutateFile(ROOT+'/index.json',idx=>{idx.pilotOnly=false;return idx});
- const a=owner('bulk');
+ const a=owner('bulk-a'),b=owner('bulk-b');
+ let ids=[];
  for(let i=0;i<6;i++){
-  const claimed=await runEnMatching(env.tools,core,{action:'claim',...a});
-  assert.equal(claimed.status,'claimed');
-  const released=await runEnMatching(env.tools,core,{action:'release',...a,
-    jobId:claimed.jobId,generation:claimed.generation});
-  assert.equal(released.status,'released');
+  const claim=await runEnMatching(env.tools,core,{action:'claim',...a});
+  assert.equal(claim.status,'claimed');
+  ids.push(claim.jobId);
+  const done=await runEnMatching(env.tools,core,{action:'complete',...a,jobId:claim.jobId,
+    generation:claim.generation,submissionId:'done-bulk-'+i,result:match(claim.job)});
+  assert.equal(done.status,'saved');
  }
- // Releasing and recapturing same item does not consume further unique slots,
- // but the queue contains nine distinct tours. The cap is per unique assignment.
+ assert.equal(new Set(ids).size,6);
+ const stop=await runEnMatching(env.tools,core,{action:'claim',...a});
+ assert.equal(stop.status,'worker_quota_reached');
+ assert.equal(stop.limit,6);
  const idx=await env.index();
- const assigned=idx.ownerAssignments[a.ownerId].jobIds.length;
- assert.ok(assigned<=6);
+ assert.equal(idx.ownerAssignments[a.ownerId].jobIds.length,6);
  assert.equal(idx.ownerAssignments[a.ownerId].token,a.token);
+ const other=await runEnMatching(env.tools,core,{action:'claim',...b});
+ assert.equal(other.status,'claimed');
+ assert.ok(!ids.includes(other.jobId));
 });
+

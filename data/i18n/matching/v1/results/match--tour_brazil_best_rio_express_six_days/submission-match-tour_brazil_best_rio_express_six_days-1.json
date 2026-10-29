@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_brazil_best_rio_express_six_days",
+  "result": {
+    "entityId": "tour_brazil_best_rio_express_six_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_brazil_best_rio_express_six_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+      "modifiedTime": "2026-10-21T20:34:03.486Z",
+      "filename": "Best of Rio 6d5n 2027 ENG com 20%.docx",
+      "sizeBytes": 1099139,
+      "fullDocxRead": true,
+      "xmlPart": "word/document.xml"
+    },
+    "evidence": [
+      "Полный DOCX подтверждает 6D/5N в Rio de Janeiro: прибытие, Corcovado поездом через Tijuca, Sugar Loaf через Urca, Angra dos Reis/Ilha Grande, свободный день, вылет; последовательность совпадает с RU Tour.",
+      "Word содержит те же три экскурсии, пять ночей и завтраки. В Word английский/испанский гид, private Corcovado/Sugar Loaf и shared islands; эти уточнения принимаются для EN без review.",
+      "Все девять цен USD per person по SGL/DBL/TRP для трёх отелей уже равны действующему RU. priceFrom 1564 соответствует 3-star TRP; изменения сумм не требуются."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[20]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[25]",
+        "ruRef": "frontmatter.itinerary[day=1]",
+        "summary": "Arrival; airport-hotel driver transfer",
+        "match": "same_day"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[29]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[34]",
+        "ruRef": "frontmatter.itinerary[day=2]",
+        "summary": "Corcovado train through Tijuca; private EN/ES guide",
+        "match": "same_day"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[38]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[43]",
+        "ruRef": "frontmatter.itinerary[day=3]",
+        "summary": "Sugar Loaf cable car via Urca; private EN/ES guide",
+        "match": "same_day"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[52]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[52]",
+        "ruRef": "frontmatter.itinerary[day=4]",
+        "summary": "Angra dos Reis and Ilha Grande boat 10:00–16:00; shared EN/ES guide",
+        "match": "same_day"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[53]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[53]",
+        "ruRef": "frontmatter.itinerary[day=5]",
+        "summary": "Free day in Rio",
+        "match": "same_day"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[54]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[54]",
+        "ruRef": "frontmatter.itinerary[day=6]",
+        "summary": "Driver transfer to airport; end of services",
+        "match": "same_day"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 3225,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "SGL",
+        "hotel": "B&B Copacabana",
+        "hotelCategory": 3,
+        "room": "Superior room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[2]",
+        "currentRuAmount": 3225,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 1886,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "DBL",
+        "hotel": "B&B Copacabana",
+        "hotelCategory": 3,
+        "room": "Superior room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[3]",
+        "currentRuAmount": 1886,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 1564,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "TRP",
+        "hotel": "B&B Copacabana",
+        "hotelCategory": 3,
+        "room": "Superior room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[4]",
+        "currentRuAmount": 1564,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 3775,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "SGL",
+        "hotel": "Arena Leme",
+        "hotelCategory": 4,
+        "room": "Standard room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[3]/w:tc[2]",
+        "currentRuAmount": 3775,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 2055,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "DBL",
+        "hotel": "Arena Leme",
+        "hotelCategory": 4,
+        "room": "Standard room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[3]/w:tc[3]",
+        "currentRuAmount": 2055,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 2010,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "TRP",
+        "hotel": "Arena Leme",
+        "hotelCategory": 4,
+        "room": "Standard room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[3]/w:tc[4]",
+        "currentRuAmount": 2010,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 4344,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "SGL",
+        "hotel": "Miramar by Windsor",
+        "hotelCategory": 5,
+        "room": "Standard room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[4]/w:tc[2]",
+        "currentRuAmount": 4344,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 2374,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "DBL",
+        "hotel": "Miramar by Windsor",
+        "hotelCategory": 5,
+        "room": "Standard room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[4]/w:tc[3]",
+        "currentRuAmount": 2374,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 2049,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "TRP",
+        "hotel": "Miramar by Windsor",
+        "hotelCategory": 5,
+        "room": "Standard room",
+        "nights": 5,
+        "durationDays": 6,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[4]/w:tc[4]",
+        "currentRuAmount": 2049,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      }
+    ],
+    "priceComparison": {
+      "status": "already_current",
+      "currentRuPriceFrom": 1564,
+      "sourcePriceFrom": 1564,
+      "rowsCompared": 9,
+      "changedRows": 0
+    },
+    "acceptedContentDifferences": [
+      {
+        "field": "guideLanguage",
+        "ru": "Russian",
+        "word": "English or Spanish",
+        "resolution": "use Word for EN"
+      },
+      {
+        "field": "excursionFormat",
+        "word": "private Corcovado and Sugar Loaf; shared Angra/Ilha Grande",
+        "resolution": "preserve source context"
+      }
+    ],
+    "sourceAnchors": {
+      "duration": "word/document.xml#/w:document/w:body/*[4]",
+      "hotels": "word/document.xml#/w:document/w:body/*[59]",
+      "prices": "word/document.xml#/w:document/w:body/*[62]",
+      "includedExcluded": "word/document.xml#/w:document/w:body/*[67]"
+    },
+    "quarantinedCandidatesChecked": false,
+    "selectionReason": "Exact itinerary and duration confirmed from full highest-priority 2027 source; no 2026 fallback needed."
+  }
+}

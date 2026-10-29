@@ -241,3 +241,14 @@ pipeline. Mass translation remains prohibited.
 - New worker command: 14-matching-bulk.md v1.3. Already open workers must reload
   the same new code SHA for core+remote and preserve their existing owner/token.
 
+
+Verified receipts for checkpoint 7:
+- Code commit: d9ceebeba691181482efb87b028328dfd8d5e650.
+- Live policy CAS commit: 6bc68f0b433bb8ccaa9ab0130ea224a564898c8e;
+  compare confirms only data/i18n/matching/v1/index.json changed, no shards/results.
+- Local Node 24.22.1: 29 focused matching tests passed. GitHub Actions
+  https://github.com/alexyakovlev79/adatours.ru/actions/runs/40912588806
+  completed successfully for the code commit.
+- Actual remote status read-back: ownerQuota=60, leaseMinutes=60,
+  renewAfterMinutes=20; existing owner assigned=6/completed=6/nextBatch=2.
+  Queue remained 29 ready, 329 queued, zero leases/errors.

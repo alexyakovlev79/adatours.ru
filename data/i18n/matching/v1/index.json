@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:48:28.459Z",
+  "updatedAt": "2026-10-29T17:48:39.758Z",
   "counts": {
     "held": 0,
-    "queued": 310,
-    "leased": 5,
+    "queued": 309,
+    "leased": 6,
     "ready": 43,
     "retryable": 0,
     "blocked_external": 0,
@@ -77,15 +77,15 @@
     "04": {
       "counts": {
         "held": 0,
-        "queued": 22,
-        "leased": 0,
+        "queued": 21,
+        "leased": 1,
         "ready": 4,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:48:39.758Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -275,6 +275,11 @@
       "token": "lease-mvtu0x51-kffn6cb1",
       "jobId": "match:tour_source_ekvador_kito_galapagosskie_ostrova",
       "expiresAt": "2026-10-29T18:48:22.778Z"
+    },
+    "ada-match-mvtu0yxx-s9nvss8z": {
+      "token": "lease-mvtu0yxx-zfzi6gxa",
+      "jobId": "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+      "expiresAt": "2026-10-29T18:48:39.758Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -429,7 +434,8 @@
       "token": "lease-mvtu0yxx-zfzi6gxa",
       "jobIds": [
         "match:tour_argentina_experience_6_days",
-        "match:tour_brazil_argentina_peru_14d"
+        "match:tour_brazil_argentina_peru_14d",
+        "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle"
       ],
       "completedJobIds": [
         "match:tour_argentina_experience_6_days",

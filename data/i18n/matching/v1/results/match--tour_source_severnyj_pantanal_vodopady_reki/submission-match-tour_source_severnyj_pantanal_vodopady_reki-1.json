@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_severnyj_pantanal_vodopady_reki",
+  "result": {
+    "entityId": "tour_source_severnyj_pantanal_vodopady_reki",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_severnyj_pantanal_vodopady_reki",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "22ca391449189ab36e8ba2ab4a6620f42ef89e368520ece236d8b74fa123bfa8",
+      "modifiedTime": "2026-10-21T20:52:09.414Z"
+    },
+    "evidence": [
+      "Full DOCX Northern Pantanal Waterfalls & Rivers2027 5d4n matches distinctive Cuiaba–PortoJofre wildlife/jaguar boatsafaris–Nobres/BomJardim transparent rivers/AquarioEncantado–Chapada waterfalls circuit. Same5d4n and oldRUDBL4595 confirm identity beyondfilename.",
+      "Updated Word reverses oldRU order and adds explicit firstnightCuiaba: Wordday1Cuiaba,2–3PortoJofre,4Nobres/AquarioEncantado+Chapada,5waterfall+airport. Map activitiessemantically, not daynumbers blindly. Word hotels DevilleCuiaba/SantaRosaLodge/CasaDaQuinera; fullboardPantanal,breakfastelsewhere, Englishnaturalists,airconditionedtransfers; flights excluded. Table11 has all2ratesDBL4595/TRP3927."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceDay": 4,
+        "sourceRef": "word/document.xml//w:p[80]"
+      },
+      {
+        "day": 2,
+        "sourceDay": 5,
+        "sourceRef": "word/document.xml//w:p[81]"
+      },
+      {
+        "day": 3,
+        "sourceDay": 2,
+        "sourceRef": "word/document.xml//w:p[68]"
+      },
+      {
+        "day": 4,
+        "sourceDay": 3,
+        "sourceRef": "word/document.xml//w:p[69]"
+      },
+      {
+        "day": 5,
+        "sourceDay": 5,
+        "relation": "departure_component_only",
+        "sourceRef": "word/document.xml//w:p[81]"
+      }
+    ],
+    "editionChanges": {
+      "routeOrderChanged": true,
+      "wordDay1": "Cuiaba arrival/Deville",
+      "ruDay1": "Nobres/BomJardim",
+      "wordNightAllocation": "Cuiaba1/PortoJofre2/Chapada1"
+    },
+    "priceAmendments": [
+      {
+        "amount": 4595,
+        "occupancy": "DBL",
+        "sourceLocator": "word/document.xml//w:tbl[11]/w:tr[2]/w:tc[2]",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "duration": "5d/4n",
+        "validity": "2027",
+        "hotelMatrixLocator": "word/document.xml//w:tbl[9]",
+        "serviceBasis": "fullboardPantanal/breakfastelsewhere; Englishnaturalist; ACtransfers",
+        "sourceDriveFileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do"
+      },
+      {
+        "amount": 3927,
+        "occupancy": "TRP",
+        "sourceLocator": "word/document.xml//w:tbl[11]/w:tr[2]/w:tc[3]",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "duration": "5d/4n",
+        "validity": "2027",
+        "hotelMatrixLocator": "word/document.xml//w:tbl[9]",
+        "serviceBasis": "fullboardPantanal/breakfastelsewhere; Englishnaturalist; ACtransfers",
+        "sourceDriveFileId": "12B8AmJo7IH3IyYljmTlI_53tZZgy28Do"
+      }
+    ]
+  }
+}

@@ -48,6 +48,12 @@ async function readSnapshot(tools, core, sha, args) {
      if(mine.token!==args.token)return {index,ownedByOtherToken:true};
      sid=core.shardFor(mine.jobId);
    } else sid=core.pickShard(index,args.now);
+ }else if(args.action==='reap'){
+   const nowMs=Date.parse(args.now);
+   const eligible=Object.entries(index.shards).filter(([,s])=>
+     (s.earliestExpiryAt&&Date.parse(s.earliestExpiryAt)<=nowMs)||
+     (s.earliestRetryAt&&Date.parse(s.earliestRetryAt)<=nowMs));
+   sid=eligible.sort((a,b)=>a[0].localeCompare(b[0]))[0]?.[0]??null;
  }else{
    if(!validId(args.jobId))throw new Error('jobId required');
    sid=core.shardFor(args.jobId);
@@ -100,7 +106,7 @@ export async function runEnMatching(tools,core,args={}) {
      translationEnabled:idx.translationEnabled,counts:idx.counts,pilotJobCount:idx.pilotJobCount,
      updatedAt:idx.updatedAt,activeOwners:idx.activeOwners||{},earliestExpiryAt:Object.values(idx.shards).map(s=>s.earliestExpiryAt).filter(Boolean).sort()[0]||null};
  }
- requireOwner(args);
+ if(args.action!=='reap')requireOwner(args);
  for(let attempt=0;attempt<3;attempt++){
    const baseHead=await head(tools,BRANCH);
    const snap=await readSnapshot(tools,core,baseHead,{...args,now});
@@ -113,6 +119,8 @@ export async function runEnMatching(tools,core,args={}) {
      const c=core.claimMatch(shard,{ownerId:args.ownerId,token:args.token,now,limit:1});
      mutation=c;outcome=c.status;
      if(!c.job)return {status:'empty_or_busy',head:baseHead,counts:index.counts};
+     if(c.status==='resumed')return {status:'resumed',head:baseHead,jobId:c.job.jobId,
+       job:pickJob(packet,c.job.jobId),lease:c.job.lease,generation:c.job.generation};
      job=pickJob(packet,c.job.jobId);
      if(c.job.sourceFingerprint!==job.sourceFingerprint)throw new Error('Job source fingerprint changed');
    } else if(args.action==='reap'){

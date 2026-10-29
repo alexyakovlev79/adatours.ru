@@ -1,0 +1,30 @@
+name: EN matching foundation tests
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/**'
+      - 'src/lib/i18n/**'
+      - 'data/i18n/matching/**'
+      - 'tests/i18n/**'
+      - '.github/workflows/i18n-foundation-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Check modules
+        run: |
+          node --check scripts/i18n/matching-core.mjs
+          node --check scripts/i18n/matching-remote.mjs
+      - name: Test foundation and matching state machine
+        run: node --test tests/i18n/*.test.mjs
+      - name: Verify all frozen matching jobs and shards
+        run: node scripts/i18n/verify-matching-queue.mjs

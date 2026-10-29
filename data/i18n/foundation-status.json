@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotDate": "2026-10-28",
+  "snapshotDate": "2026-10-29",
   "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
-  "phase": "foundation_prelaunch",
+  "phase": "matching_pilot_enabled",
   "massLaunchAllowed": false,
   "operationalDispatcherReady": false,
   "automaticTextSynchronizationRunning": false,
@@ -23,15 +23,31 @@
     "aiOnlyEligibleTours": 0,
     "newPublishedEnglishTours": 0,
     "uiMessagesTranslated": 218,
-    "interestCopySetsTranslated": 15
+    "interestCopySetsTranslated": 15,
+    "matchingJobsTotal": 358,
+    "matchingPilotQueued": 5,
+    "matchingMassHeld": 353,
+    "newEnglishContentReady": 0
   },
   "nextGates": [
-    "complete_semantic_tour_word_matching",
-    "stable_complete_block_maps_and_shared_excursion_ownership",
-    "resolve_or_isolate_commercial_conflicts",
-    "connect_locale_adapter_and_all_runtime_text_surfaces",
-    "distributed_dispatcher_and_recovery_pilot",
-    "confirmed_english_deployment_target_and_domain"
+    "complete_five_real_matching_pilot_jobs_and_review_receipts",
+    "open_remaining_matching_jobs_after_pilot",
+    "finish_stable_complete_block_maps_and_shared_excursion_ownership",
+    "connect_locale_adapter_to_astro_runtime_and_ui_seo",
+    "implement_and_pilot_independent_translation_dispatcher",
+    "activate_scheduled_reaper_workflow_on_default_branch",
+    "confirm_english_deployment_target_and_dual_release"
   ],
-  "note": "Static foundation snapshot, not an operational live queue. Read source/pilot reports for evidence and limitations."
+  "note": "Static feature-branch checkpoint only. Live matching index on i18n/matching-staging is authoritative; pilot only, no bulk matching, translation or EN deploy.",
+  "matchingDispatcherReady": true,
+  "matchingPilotEnabled": true,
+  "matchingPilotBranch": "i18n/matching-staging",
+  "matchingPilotJobs": 5,
+  "matchingJobsHeld": 353,
+  "matchingReaperCronActive": false,
+  "matchingSmokeVerified": true,
+  "matchingSmokeBranch": "i18n/matching-smoke-20261029",
+  "matchingCiRunUrl": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/40833992976",
+  "localeContentAdapterImplemented": true,
+  "localeContentAdapterConnectedToAstro": false
 }

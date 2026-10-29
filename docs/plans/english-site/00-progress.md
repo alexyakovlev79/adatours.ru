@@ -149,3 +149,16 @@ historical audit or candidate records.
 
 The final report and requested email are a hand-off of preparation, not a claim
 that a new website or automatic synchronization has been launched.
+
+## Checkpoint 4 — 29.10.2026: matching pilot live
+
+- Source-authority correction: commit `852ea73444b603b51b514b36b209cd01ea33bb40`.
+- 358 matching jobs, 16 shards, 5 pilot and 353 held: `f36454c61c4c59aaf0f3c99ecdb37531032ca31c`.
+- Matching CAS remote: `f21ed2436f00d6cbf2210b72a369320710d050d6`; connector race/recovery tests: `8e9b7c01103e06fb99c844c3e056d3cdd2423558`.
+- Astro content overlay adapter exists and has focused tests: `627b0dd3d92617750a394a0d1a5e6dcafbc203ff`; it is **NOT yet connected** to full Astro runtime.
+- Scheduler script and workflow prepared: `f4a34c78954459f80b5aba0d873d5224180c8da7`. Cron will be active only once the workflow is on default main; before that recovery happens on claim/reap.
+- Live matching CAS tested in isolated `i18n/matching-smoke-20261029`: claim, renew, checkpoint, replay, release, expiry/reap, stale owner rejection, complete and replay. Test-only state never enters live matching.
+- Live pilot branch `i18n/matching-staging` explicitly enabled and read-back verified at `eaf287b3fbb659082408f497546b4c30b93dc26e`: matchingEnabled true, pilotOnly true, translationEnabled false; initially 5 queued / 353 held.
+- Node24 [Actions run 40833992976](https://github.com/alexyakovlev79/adatours.ru/actions/runs/40833992976) succeeded.
+- Two pilot matching chats are now authorized with command `docs/plans/english-site/12-matching-pilot.md`; mass matching, text translation, EN deployment are not.
+- Confirmed EN pages: 0; completed matching jobs in live staging at activation: 0. Main/public RU content unchanged.

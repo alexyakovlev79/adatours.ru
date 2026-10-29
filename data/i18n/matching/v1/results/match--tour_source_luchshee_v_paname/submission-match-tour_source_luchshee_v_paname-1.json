@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_luchshee_v_paname",
+  "result": {
+    "entityId": "tour_source_luchshee_v_paname",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_luchshee_v_paname",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1x3uuaoD0CVKvdDyFDQUVjWNvBPnH2nFF",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "c687cab36cc12bd7a608fc4fac85bbb0f2688469af3f424398ec10c8dcb86395",
+      "modifiedTime": "2026-10-05T17:36:15.406Z",
+      "name": "Panama Grand Journey 11d10n 2027 ENG com 20%.docx"
+    },
+    "evidence": [
+      "Full DOCX The Best Of Panama 2027 11D10N confirms the same core Panama City/Canal–Embera/Chagres–David/Chiriqui–Boquete/Baru/coffee–Bocas del Toro–Panama City route and 10 nights. Source itinerary and hotels are the newer EN programme; ordinary route-order/service differences are accepted under english-site.md.",
+      "Word schedules Chiriqui boat trip day6 and Baru/coffee day5, versus RU Chiriqui day4 and canopy/coffee day5/Baru day6. Source day4 adds Soberania/Gatun then David. Canopy is not present in Word; later EN must follow Word content, without duplicating old RU days. RU has duplicated return-flight text days9/10; Word explicitly returns evening day10.",
+      "Complete tariff table0001 read: SGL $6.130, DBL $3.458, TRP 3.148, all English-speaking guide rates for Tryp by Wyndham Panama Centro 4n + Ladera 3n + Bocas Paradise 3n, BB+services. All three rows supplied for master; DBL equals existing priceFrom 3458, no automatic application by this worker."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#p0029–p0033"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#p0044–p0049"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#p0056–p0061"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#p0068–p0073; word/document.xml#p0092–p0096",
+        "note": "RU arrival in Chiriqui day4; source boat excursion day6."
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#p0080–p0084",
+        "note": "Coffee source day5, canopy absent."
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#p0080–p0084; word/document.xml#p0092–p0096",
+        "note": "Baru source day5; source actual day6 Chiriqui excursion."
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#p0105–p0107"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml#p0114–p0118"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml#p0114–p0118"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml#p0114–p0119"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml#p0126"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 6130,
+        "currency": "USD",
+        "priceBasis": "per person in SGL room; inferred from room occupancy rate columns",
+        "roomOccupancy": "SGL",
+        "sourceLocator": "word/document.xml#table0001; p0024–p0027",
+        "rawAmount": "$6.130",
+        "accommodation": "Tryp By Wyndham Panama Centro 4n + Ladera Hotel 3n + Bocas Paradise Hotel 3n; BB + services",
+        "guideLanguage": "English",
+        "rateYear": 2027,
+        "currencyEvidence": "Dollar sign in SGL/DBL source; USD currency retained from matching Tour."
+      },
+      {
+        "amount": 3458,
+        "currency": "USD",
+        "priceBasis": "per person in DBL room; inferred from room occupancy rate columns",
+        "roomOccupancy": "DBL",
+        "sourceLocator": "word/document.xml#table0001; p0024–p0027",
+        "rawAmount": "$3.458",
+        "accommodation": "Tryp By Wyndham Panama Centro 4n + Ladera Hotel 3n + Bocas Paradise Hotel 3n; BB + services",
+        "guideLanguage": "English",
+        "rateYear": 2027,
+        "currencyEvidence": "Dollar sign in SGL/DBL source; USD currency retained from matching Tour."
+      },
+      {
+        "amount": 3148,
+        "currency": "USD",
+        "priceBasis": "per person in TRP room; inferred from room occupancy rate columns",
+        "roomOccupancy": "TRP",
+        "sourceLocator": "word/document.xml#table0001; p0024–p0027",
+        "rawAmount": "3.148",
+        "accommodation": "Tryp By Wyndham Panama Centro 4n + Ladera Hotel 3n + Bocas Paradise Hotel 3n; BB + services",
+        "guideLanguage": "English",
+        "rateYear": 2027,
+        "currencyEvidence": "Dollar sign in SGL/DBL source; USD currency retained from matching Tour."
+      }
+    ]
+  }
+}

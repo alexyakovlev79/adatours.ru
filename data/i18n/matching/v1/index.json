@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T14:54:59.652Z",
+  "updatedAt": "2026-10-29T14:55:07.056Z",
   "counts": {
     "held": 0,
-    "queued": 352,
-    "leased": 1,
+    "queued": 351,
+    "leased": 2,
     "ready": 5,
     "retryable": 0,
     "blocked_external": 0,
@@ -35,15 +35,15 @@
     "01": {
       "counts": {
         "held": 0,
-        "queued": 28,
-        "leased": 0,
+        "queued": 27,
+        "leased": 1,
         "ready": 2,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T16:25:07.056Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -255,6 +255,11 @@
       "token": "lease-mvto009g-wht8psbx",
       "jobId": "match:tour_brazil_carnival_flavors_rio_paraty_ilha_grande",
       "expiresAt": "2026-10-29T16:24:59.652Z"
+    },
+    "ada-match-mvto08uk-mo6zjh5b": {
+      "token": "lease-mvto08uk-qo2u2nkf",
+      "jobId": "match:tour_antarctica_whale_watching_learning_11_days",
+      "expiresAt": "2026-10-29T16:25:07.056Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -263,6 +268,12 @@
       "token": "lease-mvto009g-wht8psbx",
       "jobIds": [
         "match:tour_brazil_carnival_flavors_rio_paraty_ilha_grande"
+      ]
+    },
+    "ada-match-mvto08uk-mo6zjh5b": {
+      "token": "lease-mvto08uk-qo2u2nkf",
+      "jobIds": [
+        "match:tour_antarctica_whale_watching_learning_11_days"
       ]
     }
   },

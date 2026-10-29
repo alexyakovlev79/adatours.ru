@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:47:58.055Z",
+  "updatedAt": "2026-10-29T17:48:03.813Z",
   "counts": {
     "held": 0,
-    "queued": 312,
-    "leased": 5,
+    "queued": 311,
+    "leased": 6,
     "ready": 41,
     "retryable": 0,
     "blocked_external": 0,
@@ -35,15 +35,15 @@
     "01": {
       "counts": {
         "held": 0,
-        "queued": 20,
-        "leased": 0,
+        "queued": 19,
+        "leased": 1,
         "ready": 10,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:48:03.813Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -275,6 +275,11 @@
       "token": "lease-mvtu0yxx-zfzi6gxa",
       "jobId": "match:tour_brazil_argentina_peru_14d",
       "expiresAt": "2026-10-29T18:47:41.522Z"
+    },
+    "ada-match-2ff03f-mvtu1h9z": {
+      "token": "lease-mvtu1h9z-d3rjhcq7",
+      "jobId": "match:tour_source_argentina_2024",
+      "expiresAt": "2026-10-29T18:48:03.813Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -414,7 +419,8 @@
       "jobIds": [
         "match:tour_argentina_best_14_days",
         "match:tour_source_chili_argentina_braziliya",
-        "match:tour_source_ekstrim_v_kosta_rike"
+        "match:tour_source_ekstrim_v_kosta_rike",
+        "match:tour_source_argentina_2024"
       ],
       "completedJobIds": [
         "match:tour_argentina_best_14_days",

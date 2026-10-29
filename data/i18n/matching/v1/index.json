@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:47:08.336Z",
+  "updatedAt": "2026-10-29T17:47:14.762Z",
   "counts": {
     "held": 0,
-    "queued": 314,
-    "leased": 5,
+    "queued": 313,
+    "leased": 6,
     "ready": 39,
     "retryable": 0,
     "blocked_external": 0,
@@ -91,15 +91,15 @@
     "05": {
       "counts": {
         "held": 0,
-        "queued": 16,
-        "leased": 0,
+        "queued": 15,
+        "leased": 1,
         "ready": 3,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:47:14.762Z",
       "earliestRetryAt": null
     },
     "06": {
@@ -275,6 +275,11 @@
       "token": "lease-mvtu1h9z-d3rjhcq7",
       "jobId": "match:tour_source_ekstrim_v_kosta_rike",
       "expiresAt": "2026-10-29T18:47:02.393Z"
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobId": "match:tour_brazil_adventure_17d",
+      "expiresAt": "2026-10-29T18:47:14.762Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -376,7 +381,8 @@
       "jobIds": [
         "match:tour_source_braziliya_argentina_i_chili",
         "match:tour_source_buenos_ajres_salta_iguasu",
-        "match:tour_argentina_grand_tour_15_days_2027"
+        "match:tour_argentina_grand_tour_15_days_2027",
+        "match:tour_brazil_adventure_17d"
       ],
       "completedJobIds": [
         "match:tour_source_braziliya_argentina_i_chili",

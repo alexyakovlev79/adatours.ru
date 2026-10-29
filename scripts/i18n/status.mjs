@@ -16,6 +16,8 @@ console.log(JSON.stringify({
   massLaunchAllowed: status.massLaunchAllowed,
   matchingPilotEnabled: status.matchingPilotEnabled,
   matchingDispatcherReady: status.matchingDispatcherReady,
+  englishBuildSafetyGateInstalled: status.englishBuildSafetyGateInstalled,
+  englishBuildRuntimeReady: status.englishBuildRuntimeReady,
   matchingPilotBranch: status.matchingPilotBranch,
   matchingReaperCronActive: status.matchingReaperCronActive,
   runtimeLocaleAdapterConnected: status.runtimeLocaleAdapterConnected,

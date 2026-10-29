@@ -162,3 +162,36 @@ that a new website or automatic synchronization has been launched.
 - Node24 [Actions run 40833992976](https://github.com/alexyakovlev79/adatours.ru/actions/runs/40833992976) succeeded.
 - Two pilot matching chats are now authorized with command `docs/plans/english-site/12-matching-pilot.md`; mass matching, text translation, EN deployment are not.
 - Confirmed EN pages: 0; completed matching jobs in live staging at activation: 0. Main/public RU content unchanged.
+
+## Checkpoint 5 — 29.10.2026: EN build safety and bounded recovery
+
+- The real matching pilot is enabled **only** in `i18n/matching-staging`:
+  five pending jobs, 353 held, no general translation or publication permission.
+  The exact two-worker command is in `docs/plans/english-site/12-matching-pilot.md`.
+- The independent realistic CAS mock tests exercise two competing claims,
+  renewal, release, expired-lease recovery, lost response after successful
+  commit, duplicate submission and clock tampering. Latest successful Node24
+  run: [40834975157](https://github.com/alexyakovlev79/adatours.ru/actions/runs/40834975157).
+- Source code checkpoint `e463496fd9fbe26113b47a602939fc9c58217eac`
+  caps repeated failed leases/retries at five attempts; exhausted jobs become
+  `failed_final` instead of cycling forever.
+- `astro.config.mjs` now routes through
+  `src/lib/i18n/build-context.mjs`. The RU build retains its existing
+  origin and GitHub Pages preview base. A bare change of `SITE_ORIGIN`
+  to the configured EN domain cannot publish Russian pages there;
+  `SITE_LOCALE=en` fails closed until explicit English readiness gates
+  and release policy pass. This is *build protection*, not finished EN rendering.
+- The source-to-overlay content adapter exists with tests but is **not**
+  integrated into all Astro layouts or routes yet. The English site
+  and automatic text synchronisation remain disabled.
+- Scheduled lease recovery workflow exists in the feature branch, but its
+  cron is not active until it is on default `main`; pilot workers can
+  recover via claim/reap. Do not claim unattended workers are running.
+- English Word 2027 still defines EN content and updated shared RU/EN
+  tariffs for confident Tour matches. No actual production tariff or
+  public English page was updated by this checkpoint.
+
+Next: two real Word-matching pilot workers; inspect evidence and price
+amendments before opening the other 353 matching jobs. In parallel connect
+the content adapter, menus, SEO/schema, forms, search and English build
+pipeline. Mass translation remains prohibited.

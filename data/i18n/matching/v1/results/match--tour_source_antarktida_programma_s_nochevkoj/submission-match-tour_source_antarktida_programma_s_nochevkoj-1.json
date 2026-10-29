@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_antarktida_programma_s_nochevkoj",
+  "result": {
+    "entityId": "tour_source_antarktida_programma_s_nochevkoj",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_antarktida_programma_s_nochevkoj",
+    "outcome": "not_found_both",
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "selectedSource": null,
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU Tour — наземная fly-in overnight programme: 5D/4N общий пакет (3 ночи Punta Arenas + 1 ледовый лагерь Collins на King George), два полевых дня: Villa Las Estrellas/Bellingshausen/Ardley/Collins, затем Elefanteras/Great Wall и обратный перелёт. Не морской круиз.",
+      "2027: полностью прочитан A Day In Antarctica DOCX 1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9. tbl[1] и p[17] прямо задают около 5 часов на острове и возврат в тот же день; p[28] — четыре ночи только в Punta Arenas. Ночёвки в Collins Ice Camp и отдельного второго дня нет. Совпадающая география не делает его тем же туром.",
+      "2027: полностью прочитан First Encounter Cruise-Air 6D/5N 1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH: p[8–19] начинаются морской посадкой в Ushuaia, переходом Drake и возвратом самолётом из King George. Это другой транспорт, длительность и ночёвки, без ледового лагеря.",
+      "2026: полностью прочитаны Classic Antarctica Air-Cruise 8D/7N 1H1oaCuxL6aHc7C60-HebAI9CKZq18kdw и Antarctica Express Air-Cruise 6D/5N 1NJbY8mbs7Y07IrAMfAiZw8L7EFq28QU7. Первый предусматривает четыре дня круиза по Shetlands/Peninsula и return flight day 7; второй стартует кораблём из Ushuaia и летит обратно day 5. Ни один не соответствует 3 ночам Punta Arenas + 1 Collins camp.",
+      "Проверены свежие прямые листинги обеих годовых папок Antarctica, все шесть дочерних папок 2027, а также Chile 2026; остальные английские антарктические имена — Polar Circle 10D/9N, Small ship expedition 10D/9N, Patagonia/Chilean Fjords 9D/8N, Discovery 8D/7N, Air-Cruise 7D/6N, Into the White 12D/11N и Weddell 14D/12N. Другая длительность/круизный формат, источника overnight camp не найдено.",
+      "Проверены отложенные материалы: Old Designs root не имеет Antarctica, в Old Designs/Chile 22 программных документа без overnight Antarctica; MICE root и MICE Cases не содержат Antarctica/King George/Collins overnight; single page leaflets также не дали такого кандидата. Контракты исключены. Поиск вне manifest не заменён пустым candidates.2027.",
+      "Единственный предложенный manifest-кандидат 2026 1uV8V-KD8kob359i-aNjJh0S6NyGrLS75 — Amazon Aqua Nera Program 2026, папка Ecuador 2026; отвергнут по иной географии и продукту. $7060 из полного однодневного Word 2027 не переносится в overnight Tour с RU priceFrom=8220."
+    ],
+    "checkedSources": [
+      {
+        "driveFileId": "1WxGzPjLKtDYBnLn0Kp9BorI9DpK7ETG9",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "c05d85caeb7b923485fdaabb7a85c708827f10ab7b99166b33d2120861021021",
+        "modifiedTime": "2026-09-01T20:40:10.732Z",
+        "fullDocxRead": true,
+        "decision": "rejected_same_day_no_ice_camp",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:tbl[1]",
+          "word/document.xml:/w:document/w:body[1]/w:tbl[2]/w:tr[1]/w:tc[3]",
+          "word/document.xml:/w:document/w:body[1]/w:p[17]",
+          "word/document.xml:/w:document/w:body[1]/w:p[28]"
+        ]
+      },
+      {
+        "driveFileId": "1gsxGpEHp2PR9rWIjpfwfx9vxUfi8YQTH",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "39adf17441a4caf3c48195e096a5c7d9f65c60d8c0b4c556f214760799c8e27c",
+        "modifiedTime": "2026-08-25T22:07:11.360Z",
+        "fullDocxRead": true,
+        "decision": "rejected_6_day_cruise_from_ushuaia",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[8]",
+          "word/document.xml:/w:document/w:body[1]/w:p[9]",
+          "word/document.xml:/w:document/w:body[1]/w:p[19]"
+        ]
+      },
+      {
+        "driveFileId": "1H1oaCuxL6aHc7C60-HebAI9CKZq18kdw",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "c04f9ea02610d1169d74bdd0ea03a0161552edecc601ab4a8247f2aaec15d0d2",
+        "modifiedTime": "2026-02-02T19:51:06.817Z",
+        "fullDocxRead": true,
+        "decision": "rejected_8_day_air_cruise",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[2]",
+          "word/document.xml:/w:document/w:body[1]/w:p[10]",
+          "word/document.xml:/w:document/w:body[1]/w:p[12]",
+          "word/document.xml:/w:document/w:body[1]/w:p[15]"
+        ]
+      },
+      {
+        "driveFileId": "1NJbY8mbs7Y07IrAMfAiZw8L7EFq28QU7",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "32e797d3364c6f403f891bc8d7a50549d8f40eaebabfa927a3b93cee27ab17af",
+        "modifiedTime": "2025-12-19T19:03:31.301Z",
+        "fullDocxRead": true,
+        "decision": "rejected_6_day_express_cruise",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[2]",
+          "word/document.xml:/w:document/w:body[1]/w:p[15]",
+          "word/document.xml:/w:document/w:body[1]/w:p[30]"
+        ]
+      }
+    ],
+    "searchEvidence": {
+      "manifestPath": "data/i18n/programme-sources.json",
+      "manifestCodeRef": "f2bdd847fc21f07db78a08f1324c933b1bb18e9e",
+      "terms": [
+        "Antarctica",
+        "Antarctic",
+        "overnight",
+        "King George",
+        "Collins",
+        "ice camp",
+        "Punta Arenas",
+        "5 days 4 nights"
+      ],
+      "directFolderChecks": [
+        {
+          "year": 2027,
+          "driveFolderId": "1pfWKj_gtaMV_3Dr7DPbUaoH6RINXBgnM",
+          "allSixProgrammeSubfoldersListed": true
+        },
+        {
+          "year": 2026,
+          "driveFolderId": "1zhD4-VltTZZxIWBdG-mJ-cbZMs0l9j0b",
+          "listedFiles": 5
+        },
+        {
+          "year": 2026,
+          "driveFolderId": "1KpeTKgESCQYEjEdRQy0ZYZhGCI2lYInt"
+        }
+      ],
+      "quarantineFolderChecks": [
+        {
+          "driveFolderId": "1CU96tUoDuCen9EVfTlyiYJDPVwK84-cg",
+          "role": "Old Designs root"
+        },
+        {
+          "driveFolderId": "1i6tr_DYC7GC0ChfLrw-L9tS1gTFzxCOT",
+          "role": "Old Designs Chile",
+          "listedFiles": 22
+        },
+        {
+          "driveFolderId": "19nS5yaXTD26-QJOcN9-0Lh-rPhnS7UF7",
+          "role": "MICE root"
+        },
+        {
+          "driveFolderId": "1gxyDF6lMhOBe9W6at6Y08tu6Tq5aFu-3",
+          "role": "MICE Cases",
+          "listedFiles": 10
+        },
+        {
+          "driveFolderId": "1uvk75QvevHIP0VYSZeI00dVa7MXqfCJD",
+          "role": "single page leaflets"
+        },
+        {
+          "driveFolderId": "1tcgHECqs7Gj54RePkraiZB6LsJabG4N0",
+          "role": "leaflet programme folder"
+        }
+      ],
+      "limitation": "No matching English overnight programme in observed 2027/2026 sources and relevant quarantine listings; this does not assert that no document exists anywhere outside supplied roots."
+    },
+    "extractionChecks": {
+      "extractor": "scripts/i18n/extract-word-segments.py",
+      "codeRef": "f2bdd847fc21f07db78a08f1324c933b1bb18e9e",
+      "parts": "document, headers, footers, footnotes/endnotes when present",
+      "trackedChanges": 0
+    }
+  }
+}

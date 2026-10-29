@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_colombia_complete_11_days",
+  "result": {
+    "entityId": "tour_colombia_complete_11_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_colombia_complete_11_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1cTDAAUrOBtW3lO-3mgPoc2ol9xcBKEsc",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "b5f8782bb93c5b312e8f2989c411265e7af671a71e8ed626dfaa8150c12951b2",
+      "modifiedTime": "2026-10-26T17:58:24.563Z"
+    },
+    "evidence": [
+      "Complete 2027 Colombia Complete DOCX matches all eleven RU days: Bogotá/Monserrate, Guatavita/Zipaquirá, Pereira/Cocora/Salento/El Ocaso, canopy/horseback, Cartagena, San Andrés transfer and two free days, Medellín/Comuna13/El Castillo, Guatapé, departure.",
+      "Route and source accommodation summary/table agree on 2 Bogotá + 2 Pereira + 1 Cartagena + 3 San Andrés + 2 Medellín = 10 nights. Latest Word has one Cartagena night at body child 99, so the old RU warning of a two-night table discrepancy is no longer supported by this revision. English private guides, private transfers, San Andrés all-inclusive and excluded internal flights agree.",
+      "Full 2027 tariff table at body child 102 preserves SGL/DBL/TRP for both categories: 4★ 8622/4523/4456 USD; 5★ 9637/5282/4776 USD. All six amounts match RU; retain hotel/room bases and updated one-night Cartagena allocation."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=23 and position()<=24]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=25 and position()<=26]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=34 and position()<=36]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=45 and position()<=46]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=56 and position()<=57]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=58 and position()<=58]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=67 and position()<=69]"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=67 and position()<=69]"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=78 and position()<=79]"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=90 and position()<=91]"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=92 and position()<=92]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 8622,
+        "currency": "USD",
+        "priceBasis": "per person, 11D10N with private English guides and private transfers",
+        "category": "4★",
+        "occupancy": "SGL",
+        "accommodation": "Best Western Plus93 Park 2N; Sonesta Pereira2N; Dann Cartagena1N; Grand Sirenis Standard all-inclusive3N; Poblado Plaza2N",
+        "tariffYear": 2027,
+        "excluded": "Domestic and international flights",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[102]/w:tr[2]/w:tc[2]",
+        "changeAgainstCurrentRu": "same_amount; latest source accommodation table has 1 Cartagena night"
+      },
+      {
+        "amount": 4523,
+        "currency": "USD",
+        "priceBasis": "per person, 11D10N with private English guides and private transfers",
+        "category": "4★",
+        "occupancy": "DBL",
+        "accommodation": "Best Western Plus93 Park 2N; Sonesta Pereira2N; Dann Cartagena1N; Grand Sirenis Standard all-inclusive3N; Poblado Plaza2N",
+        "tariffYear": 2027,
+        "excluded": "Domestic and international flights",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[102]/w:tr[2]/w:tc[3]",
+        "changeAgainstCurrentRu": "same_amount; latest source accommodation table has 1 Cartagena night"
+      },
+      {
+        "amount": 4456,
+        "currency": "USD",
+        "priceBasis": "per person, 11D10N with private English guides and private transfers",
+        "category": "4★",
+        "occupancy": "TRP",
+        "accommodation": "Best Western Plus93 Park 2N; Sonesta Pereira2N; Dann Cartagena1N; Grand Sirenis Standard all-inclusive3N; Poblado Plaza2N",
+        "tariffYear": 2027,
+        "excluded": "Domestic and international flights",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[102]/w:tr[2]/w:tc[4]",
+        "changeAgainstCurrentRu": "same_amount; latest source accommodation table has 1 Cartagena night"
+      },
+      {
+        "amount": 9637,
+        "currency": "USD",
+        "priceBasis": "per person, 11D10N with private English guides and private transfers",
+        "category": "5★",
+        "occupancy": "SGL",
+        "accommodation": "Bogotá Marriott2N; Movich Pereira2N; Hyatt Regency Cartagena1N; Grand Sirenis Balcony Sea View all-inclusive3N; Medellín Marriott2N",
+        "tariffYear": 2027,
+        "excluded": "Domestic and international flights",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[102]/w:tr[3]/w:tc[2]",
+        "changeAgainstCurrentRu": "same_amount; latest source accommodation table has 1 Cartagena night"
+      },
+      {
+        "amount": 5282,
+        "currency": "USD",
+        "priceBasis": "per person, 11D10N with private English guides and private transfers",
+        "category": "5★",
+        "occupancy": "DBL",
+        "accommodation": "Bogotá Marriott2N; Movich Pereira2N; Hyatt Regency Cartagena1N; Grand Sirenis Balcony Sea View all-inclusive3N; Medellín Marriott2N",
+        "tariffYear": 2027,
+        "excluded": "Domestic and international flights",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[102]/w:tr[3]/w:tc[3]",
+        "changeAgainstCurrentRu": "same_amount; latest source accommodation table has 1 Cartagena night"
+      },
+      {
+        "amount": 4776,
+        "currency": "USD",
+        "priceBasis": "per person, 11D10N with private English guides and private transfers",
+        "category": "5★",
+        "occupancy": "TRP",
+        "accommodation": "Bogotá Marriott2N; Movich Pereira2N; Hyatt Regency Cartagena1N; Grand Sirenis Balcony Sea View all-inclusive3N; Medellín Marriott2N",
+        "tariffYear": 2027,
+        "excluded": "Domestic and international flights",
+        "sourceLocator": "word/document.xml#/w:document/w:body/*[102]/w:tr[3]/w:tc[4]",
+        "changeAgainstCurrentRu": "same_amount; latest source accommodation table has 1 Cartagena night"
+      }
+    ]
+  }
+}

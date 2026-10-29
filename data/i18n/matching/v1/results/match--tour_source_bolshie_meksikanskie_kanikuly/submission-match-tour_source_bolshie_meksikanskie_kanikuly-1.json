@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_bolshie_meksikanskie_kanikuly",
+  "result": {
+    "entityId": "tour_source_bolshie_meksikanskie_kanikuly",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_bolshie_meksikanskie_kanikuly",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+      "modifiedTime": "2026-09-28T15:11:35.195Z",
+      "filename": "Big Mexican holiday 2027 6d5n ENG com 20%.docx",
+      "folderPath": "2027/Mexico 2027",
+      "editionYear": 2027,
+      "sourceUrl": "https://docs.google.com/document/d/1NxdGb-AAzfs475TFliH1HR4SZCs03cmP/edit"
+    },
+    "evidence": [
+      "Complete English Word explicitly titled Big Mexican Holidays 2027, 6 days / 5 nights. All six days match the RU route and distances: arrival Mexico City; Teotihuacan / Basilica / City (140 km); flight to Villahermosa / Palenque (145 km); Palenque / Campeche (365 km); Uxmal (160 km) / Merida (85 km); Chichen Itza (130 km) / cenote / Cancun or Riviera Maya (220–280 km). Driver-only airport transfers on days 1 and 3 and conditional National Palace opening also match.",
+      "Full DOCX checked with the canonical extractor: 83 nonempty segments, one tariff table, document/headers/footer/footnotes/endnotes, no tracked changes. The table states USD per person in DBL and minimum group counts 2, 4, 6, 8, 10, 12. All six amounts 4866, 3233, 2495, 2073, 1822, 1654 are saved as priceAmendments. RU only exposes 2093 USD with no group basis; the master must reconcile that old unqualified amount.",
+      "Preserve 2027 validity Jan 5–Dec 15, printed departure-day condition and four excluded periods; Formula 1 dates are explicitly tentative. Quintana Roo environmental fees payable directly to hotels are excluded from package rates; retain per-room-per-night versus per-person-per-stay units. Do not interpret the per-person DBL price as the price of two people or combine group columns.",
+      "The English Word supplies an English-speaking driver/guide on days 2–6 rather than RU's Russian-speaking guide. Included five nights in 4-star hotels, breakfast, private ground transport and entries, plus exclusions for airfare/meals/drinks/taxes, follow the selected Word without mandatory human review. RU's 170 USD domestic flight, 230/280 transfer fees and 100 USD early check-in are absent from the selected Word; they are not verified 2027 Word tariffs.",
+      "Mexico identity is confirmed by the full six-day archaeological circuit, rather than filename similarity alone. No 2026 fallback is required after this confident 2027 match. No translation or main modification performed."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#p0008",
+        "textSha256": "58c71440fac1e7895801c5a8f22d50cb1d8c95ce01ac9933c1992e3a93408767"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#p0011",
+        "sourceRefs": [
+          "word/document.xml#p0011",
+          "word/document.xml#p0012",
+          "word/document.xml#p0013"
+        ],
+        "textSha256": "0a108d04cf4f2066869d333f64baca266cf98bee54437edc8e0d427bbfd98976"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#p0019",
+        "sourceRefs": [
+          "word/document.xml#p0019",
+          "word/document.xml#p0020"
+        ],
+        "textSha256": "c7f9d4872894a9ccb790d544738dd11d2a43fe6a3dddd3decd2e7bf2a567544f"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#p0023",
+        "sourceRefs": [
+          "word/document.xml#p0023",
+          "word/document.xml#p0024"
+        ],
+        "textSha256": "74a7284322a132e6b35569b76589188ee88e9f961707985c4f6cbf7ec72d3de7"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#p0028",
+        "sourceRefs": [
+          "word/document.xml#p0028",
+          "word/document.xml#p0029"
+        ],
+        "textSha256": "c7f0bee8042447dea5b9cec648dcd07e895781d3b79207ff3fa90fbf79153a31"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#p0032",
+        "sourceRefs": [
+          "word/document.xml#p0032",
+          "word/document.xml#p0033",
+          "word/document.xml#p0034"
+        ],
+        "textSha256": "2948763364d734841ee5345ea88952d0d795ea7532cdb801ee64ea2b7429e0ee"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "occupancy": 2,
+        "rateKind": "base",
+        "accommodationCategory": "4-star hotels or similar, 5 nights",
+        "meals": "Daily American breakfast days2–6",
+        "service": "Private transport, English-speaking driver/guide days2–6, itinerary entrance fees, hotel tax",
+        "scope": "shared_RU_EN",
+        "validityYear": 2027,
+        "validFrom": "2027-01-05",
+        "validThrough": "2027-12-15",
+        "validThroughBasis": "15December is day of departure from Mexico as printed",
+        "excludedDateRanges": [
+          {
+            "from": "2027-03-21",
+            "through": "2027-04-04",
+            "reason": "Holy Week and Easter"
+          },
+          {
+            "from": "2027-10-26",
+            "through": "2027-10-29",
+            "reason": "Mexico City Formula1 events",
+            "tentative": true
+          },
+          {
+            "from": "2027-10-30",
+            "through": "2027-11-04",
+            "reason": "Day of the Dead"
+          },
+          {
+            "from": "2027-02-01",
+            "through": "2027-02-07",
+            "reason": "Campeche Carnival"
+          }
+        ],
+        "conditionsSourceRefs": [
+          "word/document.xml#p0051",
+          "word/document.xml#p0052",
+          "word/document.xml#p0055",
+          "word/document.xml#p0056",
+          "word/document.xml#p0057",
+          "word/document.xml#p0058"
+        ],
+        "sourceDriveFileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "sourceSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "sourceModifiedTime": "2026-09-28T15:11:35.195Z",
+        "amount": 4866,
+        "minimumParticipants": 2,
+        "sourceLocator": "word/document.xml#p0045",
+        "columnHeaderSourceLocator": "word/document.xml#p0038"
+      },
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "occupancy": 2,
+        "rateKind": "base",
+        "accommodationCategory": "4-star hotels or similar, 5 nights",
+        "meals": "Daily American breakfast days2–6",
+        "service": "Private transport, English-speaking driver/guide days2–6, itinerary entrance fees, hotel tax",
+        "scope": "shared_RU_EN",
+        "validityYear": 2027,
+        "validFrom": "2027-01-05",
+        "validThrough": "2027-12-15",
+        "validThroughBasis": "15December is day of departure from Mexico as printed",
+        "excludedDateRanges": [
+          {
+            "from": "2027-03-21",
+            "through": "2027-04-04",
+            "reason": "Holy Week and Easter"
+          },
+          {
+            "from": "2027-10-26",
+            "through": "2027-10-29",
+            "reason": "Mexico City Formula1 events",
+            "tentative": true
+          },
+          {
+            "from": "2027-10-30",
+            "through": "2027-11-04",
+            "reason": "Day of the Dead"
+          },
+          {
+            "from": "2027-02-01",
+            "through": "2027-02-07",
+            "reason": "Campeche Carnival"
+          }
+        ],
+        "conditionsSourceRefs": [
+          "word/document.xml#p0051",
+          "word/document.xml#p0052",
+          "word/document.xml#p0055",
+          "word/document.xml#p0056",
+          "word/document.xml#p0057",
+          "word/document.xml#p0058"
+        ],
+        "sourceDriveFileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "sourceSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "sourceModifiedTime": "2026-09-28T15:11:35.195Z",
+        "amount": 3233,
+        "minimumParticipants": 4,
+        "sourceLocator": "word/document.xml#p0046",
+        "columnHeaderSourceLocator": "word/document.xml#p0039"
+      },
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "occupancy": 2,
+        "rateKind": "base",
+        "accommodationCategory": "4-star hotels or similar, 5 nights",
+        "meals": "Daily American breakfast days2–6",
+        "service": "Private transport, English-speaking driver/guide days2–6, itinerary entrance fees, hotel tax",
+        "scope": "shared_RU_EN",
+        "validityYear": 2027,
+        "validFrom": "2027-01-05",
+        "validThrough": "2027-12-15",
+        "validThroughBasis": "15December is day of departure from Mexico as printed",
+        "excludedDateRanges": [
+          {
+            "from": "2027-03-21",
+            "through": "2027-04-04",
+            "reason": "Holy Week and Easter"
+          },
+          {
+            "from": "2027-10-26",
+            "through": "2027-10-29",
+            "reason": "Mexico City Formula1 events",
+            "tentative": true
+          },
+          {
+            "from": "2027-10-30",
+            "through": "2027-11-04",
+            "reason": "Day of the Dead"
+          },
+          {
+            "from": "2027-02-01",
+            "through": "2027-02-07",
+            "reason": "Campeche Carnival"
+          }
+        ],
+        "conditionsSourceRefs": [
+          "word/document.xml#p0051",
+          "word/document.xml#p0052",
+          "word/document.xml#p0055",
+          "word/document.xml#p0056",
+          "word/document.xml#p0057",
+          "word/document.xml#p0058"
+        ],
+        "sourceDriveFileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "sourceSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "sourceModifiedTime": "2026-09-28T15:11:35.195Z",
+        "amount": 2495,
+        "minimumParticipants": 6,
+        "sourceLocator": "word/document.xml#p0047",
+        "columnHeaderSourceLocator": "word/document.xml#p0040"
+      },
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "occupancy": 2,
+        "rateKind": "base",
+        "accommodationCategory": "4-star hotels or similar, 5 nights",
+        "meals": "Daily American breakfast days2–6",
+        "service": "Private transport, English-speaking driver/guide days2–6, itinerary entrance fees, hotel tax",
+        "scope": "shared_RU_EN",
+        "validityYear": 2027,
+        "validFrom": "2027-01-05",
+        "validThrough": "2027-12-15",
+        "validThroughBasis": "15December is day of departure from Mexico as printed",
+        "excludedDateRanges": [
+          {
+            "from": "2027-03-21",
+            "through": "2027-04-04",
+            "reason": "Holy Week and Easter"
+          },
+          {
+            "from": "2027-10-26",
+            "through": "2027-10-29",
+            "reason": "Mexico City Formula1 events",
+            "tentative": true
+          },
+          {
+            "from": "2027-10-30",
+            "through": "2027-11-04",
+            "reason": "Day of the Dead"
+          },
+          {
+            "from": "2027-02-01",
+            "through": "2027-02-07",
+            "reason": "Campeche Carnival"
+          }
+        ],
+        "conditionsSourceRefs": [
+          "word/document.xml#p0051",
+          "word/document.xml#p0052",
+          "word/document.xml#p0055",
+          "word/document.xml#p0056",
+          "word/document.xml#p0057",
+          "word/document.xml#p0058"
+        ],
+        "sourceDriveFileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "sourceSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "sourceModifiedTime": "2026-09-28T15:11:35.195Z",
+        "amount": 2073,
+        "minimumParticipants": 8,
+        "sourceLocator": "word/document.xml#p0048",
+        "columnHeaderSourceLocator": "word/document.xml#p0041"
+      },
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "occupancy": 2,
+        "rateKind": "base",
+        "accommodationCategory": "4-star hotels or similar, 5 nights",
+        "meals": "Daily American breakfast days2–6",
+        "service": "Private transport, English-speaking driver/guide days2–6, itinerary entrance fees, hotel tax",
+        "scope": "shared_RU_EN",
+        "validityYear": 2027,
+        "validFrom": "2027-01-05",
+        "validThrough": "2027-12-15",
+        "validThroughBasis": "15December is day of departure from Mexico as printed",
+        "excludedDateRanges": [
+          {
+            "from": "2027-03-21",
+            "through": "2027-04-04",
+            "reason": "Holy Week and Easter"
+          },
+          {
+            "from": "2027-10-26",
+            "through": "2027-10-29",
+            "reason": "Mexico City Formula1 events",
+            "tentative": true
+          },
+          {
+            "from": "2027-10-30",
+            "through": "2027-11-04",
+            "reason": "Day of the Dead"
+          },
+          {
+            "from": "2027-02-01",
+            "through": "2027-02-07",
+            "reason": "Campeche Carnival"
+          }
+        ],
+        "conditionsSourceRefs": [
+          "word/document.xml#p0051",
+          "word/document.xml#p0052",
+          "word/document.xml#p0055",
+          "word/document.xml#p0056",
+          "word/document.xml#p0057",
+          "word/document.xml#p0058"
+        ],
+        "sourceDriveFileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "sourceSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "sourceModifiedTime": "2026-09-28T15:11:35.195Z",
+        "amount": 1822,
+        "minimumParticipants": 10,
+        "sourceLocator": "word/document.xml#p0049",
+        "columnHeaderSourceLocator": "word/document.xml#p0042"
+      },
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "occupancy": 2,
+        "rateKind": "base",
+        "accommodationCategory": "4-star hotels or similar, 5 nights",
+        "meals": "Daily American breakfast days2–6",
+        "service": "Private transport, English-speaking driver/guide days2–6, itinerary entrance fees, hotel tax",
+        "scope": "shared_RU_EN",
+        "validityYear": 2027,
+        "validFrom": "2027-01-05",
+        "validThrough": "2027-12-15",
+        "validThroughBasis": "15December is day of departure from Mexico as printed",
+        "excludedDateRanges": [
+          {
+            "from": "2027-03-21",
+            "through": "2027-04-04",
+            "reason": "Holy Week and Easter"
+          },
+          {
+            "from": "2027-10-26",
+            "through": "2027-10-29",
+            "reason": "Mexico City Formula1 events",
+            "tentative": true
+          },
+          {
+            "from": "2027-10-30",
+            "through": "2027-11-04",
+            "reason": "Day of the Dead"
+          },
+          {
+            "from": "2027-02-01",
+            "through": "2027-02-07",
+            "reason": "Campeche Carnival"
+          }
+        ],
+        "conditionsSourceRefs": [
+          "word/document.xml#p0051",
+          "word/document.xml#p0052",
+          "word/document.xml#p0055",
+          "word/document.xml#p0056",
+          "word/document.xml#p0057",
+          "word/document.xml#p0058"
+        ],
+        "sourceDriveFileId": "1NxdGb-AAzfs475TFliH1HR4SZCs03cmP",
+        "sourceSha256": "a5e020a85be2435f8d493d7dd2d99c44a87c95641302ff2b6737ff03aec74652",
+        "sourceModifiedTime": "2026-09-28T15:11:35.195Z",
+        "amount": 1654,
+        "minimumParticipants": 12,
+        "sourceLocator": "word/document.xml#p0050",
+        "columnHeaderSourceLocator": "word/document.xml#p0043"
+      }
+    ],
+    "priceIntegrationNotes": {
+      "oldPriceFrom": 2093,
+      "newMinimumListed": 1654,
+      "newMinimumBasis": "USD per person in DBL, minimum12participants; preserve minimum group condition on shared RU/EN priceFrom and offers",
+      "applyAllTariffRows": true
+    },
+    "sourceFees": [
+      {
+        "amount": 25,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "kind": "international_departure_tax",
+        "sourceLocator": "word/document.xml#p0084",
+        "includedInAirlineTicketGenerally": true,
+        "estimateAsPrinted": true
+      },
+      {
+        "amount": 5,
+        "currency": "USD",
+        "priceBasis": "per_room_per_night",
+        "kind": "QuintanaRooSanitaryTax",
+        "sourceLocator": "word/document.xml#p0086",
+        "approximate": true,
+        "payable": "direct to hotel on checkin"
+      },
+      {
+        "amount": 15,
+        "currency": "USD",
+        "priceBasis": "per_person_per_stay",
+        "kind": "QuintanaRooTouristTax",
+        "sourceLocator": "word/document.xml#p0088",
+        "estimateAsPrinted": true,
+        "payable": "at CUN departure or in advance VISITAX"
+      }
+    ],
+    "extraction": {
+      "extractorVersion": "docx-segments-v1",
+      "parts": [
+        "word/document.xml",
+        "word/endnotes.xml",
+        "word/footer1.xml",
+        "word/footnotes.xml",
+        "word/header1.xml"
+      ],
+      "sourceBytes": 5116242,
+      "segmentCount": 83,
+      "tableCount": 1,
+      "trackedChangeCount": 0
+    },
+    "priorResultErrata": [
+      {
+        "jobId": "match:tour_source_amazoniya",
+        "submissionId": "submission-match-tour_source_amazoniya-1",
+        "field": "evidence[6] Old Designs Brazil folder entry count",
+        "previous": 63,
+        "correct": 64,
+        "reason": "Exact count from stored live folder listing; clerical count correction only. No change to candidate exclusions, partial block correspondence or outcome."
+      }
+    ]
+  }
+}

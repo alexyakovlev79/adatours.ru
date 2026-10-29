@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_mexico_oaxaca_city_break_five_days",
+  "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_mexico_oaxaca_city_break_five_days",
+  "checkpointId": "checkpoint-tour_mexico_oaxaca_city_break_five_days-1",
+  "partial": {
+    "completedResult": {
+      "entityId": "tour_mexico_oaxaca_city_break_five_days",
+      "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_mexico_oaxaca_city_break_five_days",
+      "outcome": "selected_2027",
+      "checkedYears": [
+        2027
+      ],
+      "selectedSource": {
+        "driveFileId": "1eCwrLBw7cWE-N7bEIsGFkXMdjqxUw82U",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "c3b9065bd700d1b598b962c01cdb8ab1a9f18082f248d74cf7119e17f840877a",
+        "modifiedTime": "2026-09-22T16:51:20.461Z"
+      },
+      "evidence": [
+        "Full Oaxaca City Break Tour 5d4n 2027 DOCX matches all five RU days and four Oaxaca nights: arrival, Oaxaca city walk, Monte Albán/Arrazola/Coyotepec, Mitla/Teotitlán/Hierve el Agua/mezcal, departure.",
+        "English/Spanish bilingual guide and shared excursions, private arrival/departure, standard accommodation with breakfast and one unspecified lunch all agree. Source body children 27–38 preserve the included/not-included details; meal/transfer wording inconsistency is recorded, without blocking match.",
+        "Full DOCX tariff table body child 6 gives SGL USD 2530, DBL USD 3267, TPL USD 2423 per person. DBL>SGL is as printed and not corrected or swapped; these match the present RU values."
+      ],
+      "dayAlignment": [
+        {
+          "day": 1,
+          "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=8 and position()<=10]"
+        },
+        {
+          "day": 2,
+          "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=12 and position()<=13]"
+        },
+        {
+          "day": 3,
+          "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=14 and position()<=16]"
+        },
+        {
+          "day": 4,
+          "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=18 and position()<=20]"
+        },
+        {
+          "day": 5,
+          "sourceRef": "word/document.xml#/w:document/w:body/*[position()>=23 and position()<=24]"
+        }
+      ],
+      "priceAmendments": [
+        {
+          "amount": 2530,
+          "currency": "USD",
+          "priceBasis": "per person, full 5-day/4-night programme",
+          "occupancy": "SGL",
+          "accommodation": "Standard room, Oaxaca, 4 nights with daily breakfast",
+          "sourceLocator": "word/document.xml#/w:document/w:body/*[6]//w:tr[1]",
+          "tariffYear": 2027,
+          "changeAgainstCurrentRu": "same_as_current"
+        },
+        {
+          "amount": 3267,
+          "currency": "USD",
+          "priceBasis": "per person, full 5-day/4-night programme",
+          "occupancy": "DBL",
+          "accommodation": "Standard room, Oaxaca, 4 nights with daily breakfast",
+          "sourceLocator": "word/document.xml#/w:document/w:body/*[6]//w:tr[2]",
+          "tariffYear": 2027,
+          "changeAgainstCurrentRu": "same_as_current"
+        },
+        {
+          "amount": 2423,
+          "currency": "USD",
+          "priceBasis": "per person, full 5-day/4-night programme",
+          "occupancy": "TPL",
+          "accommodation": "Standard room, Oaxaca, 4 nights with daily breakfast",
+          "sourceLocator": "word/document.xml#/w:document/w:body/*[6]//w:tr[3]",
+          "tariffYear": 2027,
+          "changeAgainstCurrentRu": "same_as_current"
+        }
+      ],
+      "sourceNotes": [
+        "Do not swap DBL and SGL despite unusual order/amounts.",
+        "One lunch is included globally but not assigned to a day; preserve source context."
+      ]
+    },
+    "submissionId": "submission-tour_mexico_oaxaca_city_break_five_days-1",
+    "blocker": "GitHub update_ref internal GraphQL error on complete after three bounded attempts",
+    "codeRef": "e60f3c12ce5535a2ab2c19c843e1dcf7d2b88979"
+  }
+}

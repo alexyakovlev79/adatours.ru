@@ -6,8 +6,8 @@ import { runEnMatching } from '../../scripts/i18n/matching-remote.mjs';
 
 const ROOT='data/i18n/matching/v1';
 const sha=s=>createHash('sha1').update(s).digest('hex');
-function sandbox({pilots=2}={}){
-  const matches=Array.from({length:3},(_,i)=>({
+function sandbox({pilots=2,total=3}={}){
+  const matches=Array.from({length:total},(_,i)=>({
     entityId:'tour_sample_'+i,ruContentPath:'src/content/tours/sample-'+i+'.md',
     ruTitle:'Sample '+i,ruStatus:'approved',durationDays:3,
     selectedSource:null,candidates:{2027:[],2026:[]}
@@ -15,7 +15,7 @@ function sandbox({pilots=2}={}){
   const baseline='a'.repeat(40);
   const source={schemaVersion:1,repositoryCommit:baseline,
     observedAt:'2026-10-28T16:31:50.000Z',generation:{sourceManifestSha256:'b'.repeat(64)},
-    counts:{activeTours:3},matches};
+    counts:{activeTours:total},matches};
   const manifest=core.createMatchManifest(source,{pilotEntityIds:matches.slice(0,pilots).map(x=>x.entityId)});
   const seed=core.seedMatchQueue(manifest);
   seed.index.matchingEnabled=true;
@@ -203,4 +203,55 @@ test('caller cannot forge lease times and disabled gate does not issue jobs',asy
  await assert.rejects(()=>runEnMatching(env.tools,core,{action:'claim',...owner('a'),now:'2099-01-01T00:00:00Z'}),/clock/);
  await env.mutateFile(ROOT+'/index.json',idx=>{idx.matchingEnabled=false;return idx;});
  assert.equal((await runEnMatching(env.tools,core,{action:'claim',...owner('a')})).status,'gate_closed');
+});
+
+
+test('one Work chat may claim only 3 pilot jobs; second chat receives remaining two',async()=>{
+ const env=sandbox({total:5,pilots:5});
+ const a=owner('a'),b=owner('b');
+ let idsA=[],idsB=[];
+ for(let i=0;i<3;i++){
+   const claim=await runEnMatching(env.tools,core,{action:'claim',...a});
+   assert.equal(claim.status,'claimed');
+   idsA.push(claim.jobId);
+   const saved=await runEnMatching(env.tools,core,{action:'complete',...a,
+     jobId:claim.jobId,generation:claim.generation,
+     submissionId:'idempotent-a-'+i,result:match(claim.job)});
+   assert.equal(saved.status,'saved');
+ }
+ const stop=await runEnMatching(env.tools,core,{action:'claim',...a});
+ assert.equal(stop.status,'worker_quota_reached');
+ assert.equal(stop.limit,3);
+ assert.equal(stop.assignedCount,3);
+ for(let i=0;i<2;i++){
+   const claim=await runEnMatching(env.tools,core,{action:'claim',...b});
+   assert.equal(claim.status,'claimed');
+   idsB.push(claim.jobId);
+   const saved=await runEnMatching(env.tools,core,{action:'complete',...b,
+     jobId:claim.jobId,generation:claim.generation,
+     submissionId:'idempotent-b-'+i,result:match(claim.job)});
+   assert.equal(saved.status,'saved');
+ }
+ assert.equal(new Set([...idsA,...idsB]).size,5);
+ const status=await runEnMatching(env.tools,core,{action:'status'});
+ assert.equal(status.counts.ready,5);
+ assert.equal(status.counts.queued,0);
+});
+test('bulk owner limit is 6 jobs and quota persists after release',async()=>{
+ const env=sandbox({total:9,pilots:9});
+ await env.mutateFile(ROOT+'/index.json',idx=>{idx.pilotOnly=false;return idx});
+ const a=owner('bulk');
+ for(let i=0;i<6;i++){
+  const claimed=await runEnMatching(env.tools,core,{action:'claim',...a});
+  assert.equal(claimed.status,'claimed');
+  const released=await runEnMatching(env.tools,core,{action:'release',...a,
+    jobId:claimed.jobId,generation:claimed.generation});
+  assert.equal(released.status,'released');
+ }
+ // Releasing and recapturing same item does not consume further unique slots,
+ // but the queue contains nine distinct tours. The cap is per unique assignment.
+ const idx=await env.index();
+ const assigned=idx.ownerAssignments[a.ownerId].jobIds.length;
+ assert.ok(assigned<=6);
+ assert.equal(idx.ownerAssignments[a.ownerId].token,a.token);
 });

@@ -47,7 +47,17 @@ async function readSnapshot(tools, core, sha, args) {
    if(mine) {
      if(mine.token!==args.token)return {index,ownedByOtherToken:true};
      sid=core.shardFor(mine.jobId);
-   } else sid=core.pickShard(index,args.now);
+   } else {
+     // An owner is one Work chat, identified by its persistent ownerId/token.
+     // A hard quota prevents one chat consuming an entire pilot or bulk queue.
+     const quota = index.pilotOnly === true ? 3 : 6;
+     const assigned = index.ownerAssignments?.[args.ownerId];
+     if(assigned && assigned.token !== args.token) return {index,ownedByOtherToken:true};
+     if((assigned?.jobIds?.length||0) >= quota) {
+       return {index,quotaReached:true,quota,assignedCount:assigned.jobIds.length};
+     }
+     sid=core.pickShard(index,args.now);
+   }
  }else if(args.action==='reap'){
    const nowMs=Date.parse(args.now);
    const eligible=Object.entries(index.shards).filter(([,s])=>
@@ -115,7 +125,7 @@ export async function runEnMatching(tools,core,args={}) {
    const idx=await jsonFile(tools,ROOT+'/index.json',sha);
    return {status:'snapshot',head:sha,pilotOnly:idx.pilotOnly,matchingEnabled:idx.matchingEnabled,
      translationEnabled:idx.translationEnabled,counts:idx.counts,pilotJobCount:idx.pilotJobCount,
-     updatedAt:idx.updatedAt,activeOwners:Object.fromEntries(Object.entries(idx.activeOwners||{}).map(([id,lease])=>[id,{jobId:lease.jobId,expiresAt:lease.expiresAt}])),earliestExpiryAt:Object.values(idx.shards).map(s=>s.earliestExpiryAt).filter(Boolean).sort()[0]||null};
+     updatedAt:idx.updatedAt,ownerQuota:idx.pilotOnly===true?3:6,activeOwners:Object.fromEntries(Object.entries(idx.activeOwners||{}).map(([id,lease])=>[id,{jobId:lease.jobId,expiresAt:lease.expiresAt}])),earliestExpiryAt:Object.values(idx.shards).map(s=>s.earliestExpiryAt).filter(Boolean).sort()[0]||null};
  }
  if(args.action!=='reap')requireOwner(args);
  for(let attempt=0;attempt<3;attempt++){
@@ -123,6 +133,8 @@ export async function runEnMatching(tools,core,args={}) {
    const snap=await readSnapshot(tools,core,baseHead,{...args,now});
    if(snap.closed)return {status:'gate_closed',matchingEnabled:false,head:baseHead};
    if(snap.ownedByOtherToken)return {status:'active_owner_has_other_token',head:baseHead};
+   if(snap.quotaReached)return {status:'worker_quota_reached',head:baseHead,
+      limit:snap.quota,assignedCount:snap.assignedCount,counts:snap.index.counts};
    if(snap.empty)return {status:'empty_or_busy',head:baseHead,counts:snap.index.counts};
    const {sid,packet,shard,index}=snap;
    let mutation,outcome='saved',job=null,extra=[];
@@ -169,7 +181,14 @@ export async function runEnMatching(tools,core,args={}) {
    if(outcome==='already_saved')return {status:'already_saved',head:baseHead,jobId:job?.jobId};
    if(outcome==='no_expired')return {status:outcome,head:baseHead};
    const nextIndex=touchIndex(core,index,sid,mutation.shard,now);
-   if(args.action==='claim')nextIndex.activeOwners[args.ownerId]={token:args.token,jobId:job.jobId,expiresAt:mutation.job.lease.expiresAt};
+   if(args.action==='claim'){
+     nextIndex.activeOwners[args.ownerId]={token:args.token,jobId:job.jobId,expiresAt:mutation.job.lease.expiresAt};
+     if(!nextIndex.ownerAssignments)nextIndex.ownerAssignments={};
+     const existing=nextIndex.ownerAssignments[args.ownerId] || {token:args.token,jobIds:[]};
+     if(existing.token!==args.token)throw new Error('Owner token mismatch for quota');
+     if(!existing.jobIds.includes(job.jobId))existing.jobIds.push(job.jobId);
+     nextIndex.ownerAssignments[args.ownerId]=existing;
+   }
    if(args.action==='renew' && nextIndex.activeOwners[args.ownerId])nextIndex.activeOwners[args.ownerId].expiresAt=mutation.expiresAt;
    if(['release','fail','complete'].includes(args.action)) {
      const own=nextIndex.activeOwners[args.ownerId];

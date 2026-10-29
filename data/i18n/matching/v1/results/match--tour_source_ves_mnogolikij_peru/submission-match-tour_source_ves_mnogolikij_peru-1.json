@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_ves_mnogolikij_peru",
+  "result": {
+    "entityId": "tour_source_ves_mnogolikij_peru",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_ves_mnogolikij_peru",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1mZ4jhPLYLzUFjyOH1D1pe9UINgA601dT",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "698d4b0d33095fd1314e0997e8def9c993a029c02fefffab06a7134a1e5bcd49",
+      "modifiedTime": "2026-10-20T19:47:51.664Z",
+      "name": "The many faces of Peru and Senor de Sipan 2027_14d13n.ENG  com 20%.docx"
+    },
+    "coverageMode": "base_itinerary_inside_extended_programme",
+    "evidence": [
+      "Full Word Many Faces of Peru and Senor de Sipan14d contains the exact base programme of RU12d: Lima city/Casa Aliaga/fountains, Cusco, Machu Picchu, Sacred Valley, bus to Puno, Uros/Titicaca, Colca, Arequipa, Lima. Target days1–11 align directly; target departure day12 aligns source day14.",
+      "This selection covers the base itinerary only. Source days12–13 Trujillo/Chiclayo/Sipan are an extension absent from this Tour and must NOT be added. Source departure14 maps target12. Taquile/new guide conditions in matching Word blocks can be used per workflow; source package duration14d and whole-package tariffs do not belong to this12d Tour.",
+      "Full table0010 quotes extended14d package totals (3/4/5star); no corresponding standalone12d total exists in this Word, so none exported as a replacement for RU2979. Only clearly corresponding optional-service rows table0012 exported: Cathedral30 instead ofRU25, Titicaca train supplement250, Larco65. Paracas/Nazca remains price on request. No tracked changes."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#p0067"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#p0068–p0069"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#p0077"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#p0078"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#p0086–p0087"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#p0095"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#p0096"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml#p0104"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml#p0105"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml#p0115"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml#p0116"
+      },
+      {
+        "day": 12,
+        "sourceRef": "word/document.xml#p0125",
+        "sourceDay": 14,
+        "note": "Departure only; omit source extension days12–13."
+      }
+    ],
+    "excludedSourceBlocks": [
+      {
+        "sourceRef": "word/document.xml#p0123–p0124",
+        "reason": "Sipan extension not part of RU base12d programme."
+      },
+      {
+        "sourceRef": "word/document.xml#table0010; table0011",
+        "reason": "14d package/extension supplements, not verified12d price."
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 30,
+        "currency": "USD",
+        "priceBasis": "optional guided Cathedral of Cusco visit per person",
+        "sourceLocator": "word/document.xml#table0012/row2",
+        "targetDay": 3,
+        "durationMinutes": 40
+      },
+      {
+        "amount": 250,
+        "currency": "USD",
+        "priceBasis": "Titicaca train supplement per person replacing bus",
+        "sourceLocator": "word/document.xml#table0012/row3",
+        "targetDay": 6,
+        "operates": "Wednesday Friday Sunday",
+        "includes": "Three-course lunch; La Raya stop; arrival Puno about19:00"
+      },
+      {
+        "amount": 65,
+        "currency": "USD",
+        "priceBasis": "optional Larco Museum visit per person",
+        "sourceLocator": "word/document.xml#table0012/row5",
+        "targetDay": 12,
+        "sourceDay": 14
+      }
+    ]
+  }
+}

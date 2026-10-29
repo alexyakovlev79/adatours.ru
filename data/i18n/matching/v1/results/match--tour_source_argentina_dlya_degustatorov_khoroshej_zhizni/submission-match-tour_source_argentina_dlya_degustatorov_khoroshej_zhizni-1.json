@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
+  "result": {
+    "entityId": "tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18",
+      "sourceYearFolder": 2027,
+      "editionYear": 2027,
+      "name": "Argentina for good life degustators 7d6n 2027 ENG com 20%.docx",
+      "titleInDocument": "Argentina for Food & Wine Lovers",
+      "sourceSha256": "383a61f01f89c0b60df2c57534d0a89e66ad6a4897bcc8419769295255ddbb4f",
+      "modifiedTime": "2026-10-26T14:27:16.595Z",
+      "sourceBytes": 464105,
+      "url": "https://docs.google.com/document/d/19QSpU6WSt4YyWQ-KulVcyCjdN3-rDg18/edit",
+      "folderPath": "2027/Argentina 2027"
+    },
+    "evidence": [
+      "Exact 7-day/6-night Buenos Aires–Mendoza product confirmed by 4-hour Buenos Aires city tour and tango dinner on day 2, 8-hour Gaucho Fiesta/asado on day 3, Mendoza flight day 4, 2–3 wineries with a specialist day 5, free/options day 6 and airport day 7.",
+      "Accommodation matches Buenos Aires 474 (3 nights), with 3 nights Amerian Executive Mendoza, both 4-star standard BB. Main activities, driver transfers and domestic-flight exclusion from 440 USD per person match current RU.",
+      "Word 2027 has English-speaking Buenos Aires city guide (RU still says Russian); use Word's language without mandatory review. Programme tariff is SGL 4997 / DBL 3025 / TRP 2883 USD per person; old RU priceFrom 3025 matches DBL but omits lower TRP tariff. Optional excursions have price on request; no numbers invented."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[17]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[18]",
+        "sourceRefs": [
+          "word/document.xml#/w:document/w:body/w:p[19]",
+          "word/document.xml#/w:document/w:body/w:p[20]",
+          "word/document.xml#/w:document/w:body/w:p[21]"
+        ],
+        "sharedExcursionRef": "excursion_buenos_aires_tango_show_dinner"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[28]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[37]",
+        "optionalSource": "word/document.xml#/w:document/w:body/w:p[41]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[38]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[39]",
+        "optionalSource": "word/document.xml#/w:document/w:body/w:p[41]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[40]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 4997,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomOccupancy": "SGL",
+        "hotelCategory": "4*",
+        "roomType": "standard",
+        "mealPlan": "BB",
+        "rateType": "programme",
+        "validYear": 2027,
+        "hotels": [
+          "474 Buenos Aires",
+          "Amerian Executive Mendoza"
+        ],
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[2]/w:p"
+      },
+      {
+        "amount": 3025,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomOccupancy": "DBL",
+        "hotelCategory": "4*",
+        "roomType": "standard",
+        "mealPlan": "BB",
+        "rateType": "programme",
+        "validYear": 2027,
+        "hotels": [
+          "474 Buenos Aires",
+          "Amerian Executive Mendoza"
+        ],
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[3]/w:p"
+      },
+      {
+        "amount": 2883,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomOccupancy": "TRP",
+        "hotelCategory": "4*",
+        "roomType": "standard",
+        "mealPlan": "BB",
+        "rateType": "programme",
+        "validYear": 2027,
+        "hotels": [
+          "474 Buenos Aires",
+          "Amerian Executive Mendoza"
+        ],
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[9]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[4]/w:p"
+      },
+      {
+        "amount": 440,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "rateType": "excluded_domestic_flight_estimate",
+        "isFrom": true,
+        "includedInProgramme": false,
+        "service": "Buenos Aires–Mendoza domestic flight",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:p[51]"
+      }
+    ],
+    "priceFromAmendment": {
+      "oldAmount": 3025,
+      "newAmount": 2883,
+      "currency": "USD",
+      "priceBasis": "per_person",
+      "roomOccupancy": "TRP",
+      "hotelCategory": "4*"
+    },
+    "sourceInspection": {
+      "method": "full DOCX OOXML including nested tables and footer",
+      "trackedChangeCount": 0
+    }
+  }
+}

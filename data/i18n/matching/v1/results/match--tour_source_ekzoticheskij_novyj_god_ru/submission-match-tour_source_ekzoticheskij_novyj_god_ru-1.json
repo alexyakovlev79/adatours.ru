@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_ekzoticheskij_novyj_god_ru",
+  "result": {
+    "entityId": "tour_source_ekzoticheskij_novyj_god_ru",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_ekzoticheskij_novyj_god_ru",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY",
+      "sourceYearFolder": 2027,
+      "name": "Exotic New Year 2027 Group ENG com 20% (1).docx",
+      "sourceSha256": "c8ebdd8c617fd65a257104b3da99ffbbbb8d7205cf16ffebfb5cdc209a27853a",
+      "modifiedTime": "2026-05-21T19:56:11.719Z",
+      "sizeBytes": 6865609,
+      "url": "https://docs.google.com/document/d/1jgHNRDGUx9imoBuqYXFJ87xPUwHxZIsY/edit",
+      "fullDocxRead": true
+    },
+    "evidence": [
+      "Полный Word Exotic New Year In Brazil 2027: точные даты 30.12.2026–10.01.2027, 12D/11N, group tour, Rio 4N/Iguazu 3N/Amazon 2N/Búzios 2N и весь гостиничный набор совпадают с RU. Идентичность подтверждена по событию, ночёвкам, датам и тарифам.",
+      "Дни 1–7 совпадают: arrival Rio, 31 December Corcovado/New Year Copacabana, 1 January Sugarloaf/city, free Rio, flight Iguazu, Brazilian then Argentine falls. Days 8–12 — Manaus/Evolucao lodge, Amazon stay, transfer via Rio to Búzios, beach, airport Rio.",
+      "Все шесть SGL/DBL/TPL цен 4*/5* в content-control table совпадают с RU (10351/6401/5846 и 13080/7886/7469 USD per person); priceFrom 5846 не меняется.",
+      "Word 2027 p[84] задаёт English-speaking guide; RU описывает Russian-speaking in Rio/Iguazu. Использовать EN Word, без ручного review.",
+      "Содержательные отличия EN фиксируются: day 9 обозначен free time, а не RU piranha/Caboclo; sentence transfer Manaus→Rio→Búzios находится в p[69] перед day-10 header p[72], при этом dated header и 4/3/2/2 ночи однозначно привязывают переезд к day 10. Сохраняются точные locators и замечание для сборки EN, без перевода.",
+      "Новые доплаты 2027: Macuco Safari 135 USD/person вместо RU 130, Bird Park 65 вместо 50. Отдельные цены рекомендованных ресторанов, вертолётов и excluded domestic flight estimate сохранены с реальной/неуказанной единицей; они не добавляются к базовому priceFrom."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "ruDay": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[12]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[11]",
+        "match": "Arrival Rio"
+      },
+      {
+        "day": 2,
+        "ruDay": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[18]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[17]",
+        "match": "Corcovado 31 Dec; Copacabana New Year",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[19]",
+          "word/document.xml:/w:document/w:body[1]/w:p[25]",
+          "word/document.xml:/w:document/w:body[1]/w:p[26]"
+        ]
+      },
+      {
+        "day": 3,
+        "ruDay": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[36]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[35]",
+        "match": "Sugarloaf and old Rio 1 Jan"
+      },
+      {
+        "day": 4,
+        "ruDay": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[40]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[39]",
+        "match": "Free Rio"
+      },
+      {
+        "day": 5,
+        "ruDay": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[42]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[41]",
+        "match": "Rio → Foz do Iguaçu"
+      },
+      {
+        "day": 6,
+        "ruDay": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[45]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[44]",
+        "match": "Brazilian falls; paid optional activities"
+      },
+      {
+        "day": 7,
+        "ruDay": 7,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[52]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[51]",
+        "match": "Argentine falls"
+      },
+      {
+        "day": 8,
+        "ruDay": 8,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[56]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[55]",
+        "match": "Iguazu → Manaus → Evolucao lodge",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[57]"
+        ]
+      },
+      {
+        "day": 9,
+        "ruDay": 9,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[61]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[60]",
+        "match": "Amazon free time; paid Meeting of the Waters/pink dolphins"
+      },
+      {
+        "day": 10,
+        "ruDay": 10,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[69]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[72]",
+        "match": "Manaus → Rio → Búzios transfer; source paragraph precedes dated day-10 heading",
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[73]"
+        ],
+        "alignmentNote": "p[69] is physically under day 9; no silent claim that OOXML order matches dated itinerary."
+      },
+      {
+        "day": 11,
+        "ruDay": 11,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[75]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[74]",
+        "match": "Búzios free day"
+      },
+      {
+        "day": 12,
+        "ruDay": 12,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[77]",
+        "headingRef": "word/document.xml:/w:document/w:body[1]/w:p[76]",
+        "match": "Búzios → Rio airport"
+      }
+    ],
+    "verifiedPriceRows": [
+      {
+        "amount": 10351,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "SGL",
+        "hotelCategory": "4*",
+        "accommodation": "Windsor Leme / Vivaz Cataratas / Evolucao Ecolodge / Rio Buzios Boutique",
+        "nightSplit": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        },
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:sdt[1]/w:sdtContent[1]/w:tbl[1]/w:tr[3]/w:sdt[2]/w:sdtContent[1]/w:tc[1]/w:p[1]",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 6401,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "hotelCategory": "4*",
+        "accommodation": "Windsor Leme / Vivaz Cataratas / Evolucao Ecolodge / Rio Buzios Boutique",
+        "nightSplit": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        },
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:sdt[1]/w:sdtContent[1]/w:tbl[1]/w:tr[3]/w:sdt[3]/w:sdtContent[1]/w:tc[1]/w:p[1]",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 5846,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "TPL",
+        "hotelCategory": "4*",
+        "accommodation": "Windsor Leme / Vivaz Cataratas / Evolucao Ecolodge / Rio Buzios Boutique",
+        "nightSplit": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        },
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:sdt[1]/w:sdtContent[1]/w:tbl[1]/w:tr[3]/w:sdt[4]/w:sdtContent[1]/w:tc[1]/w:p[1]",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 13080,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "SGL",
+        "hotelCategory": "5*",
+        "accommodation": "Miramar by Windsor / Doubletree by Hilton / Evolucao Ecolodge / Rio Buzios Boutique sea view",
+        "nightSplit": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        },
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:sdt[1]/w:sdtContent[1]/w:tbl[1]/w:tr[4]/w:sdt[2]/w:sdtContent[1]/w:tc[1]/w:p[1]",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 7886,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "DBL",
+        "hotelCategory": "5*",
+        "accommodation": "Miramar by Windsor / Doubletree by Hilton / Evolucao Ecolodge / Rio Buzios Boutique sea view",
+        "nightSplit": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        },
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:sdt[1]/w:sdtContent[1]/w:tbl[1]/w:tr[4]/w:sdt[3]/w:sdtContent[1]/w:tc[1]/w:p[1]",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 7469,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "roomType": "TPL",
+        "hotelCategory": "5*",
+        "accommodation": "Miramar by Windsor / Doubletree by Hilton / Evolucao Ecolodge / Rio Buzios Boutique sea view",
+        "nightSplit": [
+          4,
+          3,
+          2,
+          2
+        ],
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        },
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:sdt[1]/w:sdtContent[1]/w:tbl[1]/w:tr[4]/w:sdt[4]/w:sdtContent[1]/w:tc[1]/w:p[1]",
+        "unchangedFromRu": true
+      },
+      {
+        "amount": 100,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "rateType": "net",
+        "service": "Swimming with pink dolphins",
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[66]",
+        "unchangedFromRu": true
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 135,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "service": "Macuco Safari",
+        "optional": true,
+        "previousAmount": 130,
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[46]",
+        "changeType": "replace_supplement",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      },
+      {
+        "amount": 65,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "service": "Bird Park",
+        "optional": true,
+        "previousAmount": 50,
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[47]",
+        "changeType": "replace_supplement",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      },
+      {
+        "amount": 170,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "service": "Helicopter flight over Iguazu Falls",
+        "optional": true,
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[48]",
+        "changeType": "add_source_supplement",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      },
+      {
+        "amount": 150,
+        "currency": "USD",
+        "priceBasis": "not_specified",
+        "service": "Helicopter over Rio from Sugarloaf",
+        "optional": true,
+        "isFrom": true,
+        "durationMinutes": "10–30",
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[29]",
+        "changeType": "add_source_supplement",
+        "basisNote": "Paragraph does not explicitly state per-person/group; do not infer.",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      },
+      {
+        "amount": 130,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "service": "Marius seafood restaurant",
+        "optional": true,
+        "kind": "restaurant_recommendation",
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[22]",
+        "changeType": "add_source_recommended_meal_price",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      },
+      {
+        "amount": 75,
+        "currency": "USD",
+        "priceBasis": "not_specified",
+        "service": "Fogo de Chao restaurant",
+        "optional": true,
+        "kind": "restaurant_recommendation",
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[32]",
+        "changeType": "add_source_recommended_meal_price",
+        "basisNote": "Source gives 75 U$ without unit.",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      },
+      {
+        "amount": 800,
+        "currency": "USD",
+        "priceBasis": "not_specified",
+        "service": "Domestic flights Rio–Iguaçu–Manaus–Rio",
+        "included": false,
+        "isFrom": true,
+        "kind": "excluded_flight_estimate",
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[90]",
+        "changeType": "record_excluded_flight_estimate",
+        "basisNote": "Do not add to programme priceFrom; no explicit person/group unit.",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      },
+      {
+        "amount": 150,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "service": "Meeting of the Waters",
+        "optional": true,
+        "daytimeLodgeTransfersOnly": true,
+        "rateType": "not_specified",
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:p[63]",
+        "changeType": "clarify_supplement_conditions",
+        "previousAmount": 150,
+        "previousRateType": "RU says netto; EN Word does not label netto",
+        "scope": "shared_RU_EN",
+        "dates": {
+          "start": "2026-12-30",
+          "end": "2027-01-10"
+        }
+      }
+    ],
+    "contentDifferences": [
+      {
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[61]",
+        "detail": "Word day 9 is free time; RU contains piranha fishing/Caboclo. EN uses Word; no claim of exact narrative equality."
+      },
+      {
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[84]",
+        "detail": "English-speaking guide in Word."
+      },
+      {
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[26]",
+        "detail": "New Year dinner/party optional; price on request."
+      }
+    ],
+    "sourceCaveats": [
+      {
+        "sourceRefs": [
+          "word/document.xml:/w:document/w:body[1]/w:p[69]",
+          "word/document.xml:/w:document/w:body[1]/w:p[72]",
+          "word/document.xml:/w:document/w:body[1]/w:p[73]",
+          "word/document.xml:/w:document/w:body[1]/w:p[6]"
+        ],
+        "detail": "Transfer appears before day-10 heading, which explicitly reads Manaus–Rio–Búzios. Align semantic transfer with day 10 and preserve origin; day 9 free/optional text and day 10 leisure sentence remain traceable. Do not fabricate extra lodge night or a second transfer."
+      }
+    ],
+    "extractionChecks": {
+      "extractor": "scripts/i18n/extract-word-segments.py",
+      "codeRef": "f2bdd847fc21f07db78a08f1324c933b1bb18e9e",
+      "allPartsChecked": true,
+      "trackedChanges": 0
+    },
+    "sharedPriceUpdate": {
+      "priceFrom": 5846,
+      "currency": "USD",
+      "priceBasis": "per_person",
+      "roomType": "TPL",
+      "hotelCategory": "4*",
+      "basePriceUnchanged": true,
+      "reconcileFields": [
+        "tour optional supplements",
+        "additional sourced optional prices/estimates",
+        "static supplement amounts",
+        "same programme commercial conditions"
+      ]
+    }
+  }
+}

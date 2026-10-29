@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:43:33.953Z",
+  "updatedAt": "2026-10-29T17:43:38.452Z",
   "counts": {
     "held": 0,
-    "queued": 327,
-    "leased": 2,
+    "queued": 326,
+    "leased": 3,
     "ready": 29,
     "retryable": 0,
     "blocked_external": 0,
@@ -49,15 +49,15 @@
     "02": {
       "counts": {
         "held": 0,
-        "queued": 19,
-        "leased": 0,
+        "queued": 18,
+        "leased": 1,
         "ready": 6,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:43:38.452Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -260,6 +260,11 @@
       "token": "lease-mvtu0t2u-50b900",
       "jobId": "match:tour_source_argentina_2024",
       "expiresAt": "2026-10-29T18:43:33.953Z"
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobId": "match:tour_source_braziliya_argentina_i_chili",
+      "expiresAt": "2026-10-29T18:43:38.452Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -350,6 +355,12 @@
       "token": "lease-mvtu0t2u-50b900",
       "jobIds": [
         "match:tour_source_argentina_2024"
+      ]
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobIds": [
+        "match:tour_source_braziliya_argentina_i_chili"
       ]
     }
   },

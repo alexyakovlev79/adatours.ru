@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_otkryvaya_gvatemalu",
+  "result": {
+    "entityId": "tour_source_otkryvaya_gvatemalu",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_otkryvaya_gvatemalu",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1pmuI71uD2lLGp7hdPNAaKkks9Mzc8Cic",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "5a63f000b01ed69ea1ae4d7ebab08f479e52fb20a10d4b537738759165480dc4",
+      "modifiedTime": "2026-10-28T14:23:36.097Z",
+      "name": "Guatemala Discovery Tour 2027 6d5n ENG 20%.docx"
+    },
+    "evidence": [
+      "Вне пустых auto-candidates найден полный Guatemala Discovery2027 6d5n: те же Antigua/VillaColonial day1, Chichicastenango/Atitlan day2, SanJuan/Santiago byboat day3, flightFlores/VillaMaya day4, Tikal/returnGuatemala day5, departure day6.",
+      "Совпадают длительность, порядок дней, рынок толькоThu/Sun и конкретные отели. Word явно включает domestic flights Guatemala–Flores–Guatemala и дает корректный список исключений; ошибочное дублирование RU included в notIncluded не переносится в EN. Цена3578SGL/3147DBL pp минимум2, кроме Christmas/NewYear/Easter, прочитана в таблице10."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[17]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[18]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[27]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[28]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[36]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[37]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 3578,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "SGL",
+        "minimumGroupSize": 2,
+        "validityYear": 2027,
+        "validityExclusions": [
+          "Christmas",
+          "New Year",
+          "Easter"
+        ],
+        "accommodation": "Villa Colonial1n; Villa Santa Catarina2n; Villa Maya1n; BarceloGuatemala1n, breakfast/local taxes",
+        "domesticFlightsIncluded": "GuatemalaCity–Flores–GuatemalaCity",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[10]"
+      },
+      {
+        "amount": 3147,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "DBL",
+        "minimumGroupSize": 2,
+        "validityYear": 2027,
+        "validityExclusions": [
+          "Christmas",
+          "New Year",
+          "Easter"
+        ],
+        "accommodation": "Villa Colonial1n; Villa Santa Catarina2n; Villa Maya1n; BarceloGuatemala1n, breakfast/local taxes",
+        "domesticFlightsIncluded": "GuatemalaCity–Flores–GuatemalaCity",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[10]"
+      }
+    ],
+    "commercialTextAmendments": [
+      {
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[11]",
+        "change": "Use distinct included/excluded lists; domestic flights included. RU currently repeats included items under notIncluded."
+      }
+    ]
+  }
+}

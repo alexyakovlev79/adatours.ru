@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T19:38:02.996Z",
+  "updatedAt": "2026-10-29T19:38:15.536Z",
   "counts": {
     "held": 0,
-    "queued": 124,
-    "leased": 9,
+    "queued": 123,
+    "leased": 10,
     "ready": 225,
     "retryable": 0,
     "blocked_external": 0,
@@ -203,15 +203,15 @@
     "0d": {
       "counts": {
         "held": 0,
-        "queued": 17,
-        "leased": 0,
+        "queued": 16,
+        "leased": 1,
         "ready": 1,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T20:38:15.536Z",
       "earliestRetryAt": null
     },
     "0e": {
@@ -295,6 +295,11 @@
       "token": "lease-mvty1843-kjdi7g",
       "jobId": "match:tour_brazil_tropical_champions_parade_rio_angra_2027",
       "expiresAt": "2026-10-29T20:38:02.996Z"
+    },
+    "ada-match-493759097a70": {
+      "token": "lease-mvty14hg-w7ume7hr",
+      "jobId": "match:tour_argentina_agricultural_11_days",
+      "expiresAt": "2026-10-29T20:38:15.536Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -819,7 +824,8 @@
     "ada-match-493759097a70": {
       "token": "lease-mvty14hg-w7ume7hr",
       "jobIds": [
-        "match:tour_brazil_pantanal_bonito_lencois_8d"
+        "match:tour_brazil_pantanal_bonito_lencois_8d",
+        "match:tour_argentina_agricultural_11_days"
       ],
       "completedJobIds": [
         "match:tour_brazil_pantanal_bonito_lencois_8d"

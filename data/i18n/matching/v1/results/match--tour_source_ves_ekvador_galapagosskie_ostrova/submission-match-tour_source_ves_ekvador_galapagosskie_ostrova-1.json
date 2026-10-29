@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_ves_ekvador_galapagosskie_ostrova",
+  "result": {
+    "entityId": "tour_source_ves_ekvador_galapagosskie_ostrova",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_ves_ekvador_galapagosskie_ostrova",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1FAu_uKH11zRCdWd-h-4l9OhxTCCnAekG",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "748959185907f90ae151328c9ed1cd6351d3c55b13758bbf4041e8a4e43fa672",
+      "modifiedTime": "2026-10-27T18:27:58.352Z",
+      "name": "Ecuador Amazon and Galapagos 2027 11d10n ENG com 20%.docx"
+    },
+    "evidence": [
+      "Полный Ecuador Amazon and Galapagos 2027: 11 дней/10 ночей, Quito2/Banos2/Casa del Suizo2/Papallacta1/FiestaSantaCruz3, группа до15. Совпадает каждый день RU, включая Quilotoa, Casa del Suizo, Bartolome и выбор Seymour/Plaza.",
+      "Сверены все услуги и тарифная таблица9:7010SGL/4537DBL/4477TPL. Word использует English guide и Finlandia4* вместо старыхRU формулировок; разрешенные содержательные отличия. Внутри Word нет конкретной даты1–11September, поэтому она не приписана источнику; 2027 год указан явно."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[17]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[18]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[26]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[27]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[36]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[37]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[38]"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[46]"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[47]"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[56]"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[57]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 7010,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "SGL",
+        "validityYear": 2027,
+        "maxGroupSize": 15,
+        "accommodation": "Hotels table8;10n and meals by programme",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[9]"
+      },
+      {
+        "amount": 4537,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "DBL",
+        "validityYear": 2027,
+        "maxGroupSize": 15,
+        "accommodation": "Hotels table8;10n and meals by programme",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[9]"
+      },
+      {
+        "amount": 4477,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "TPL",
+        "validityYear": 2027,
+        "maxGroupSize": 15,
+        "accommodation": "Hotels table8;10n and meals by programme",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[9]"
+      },
+      {
+        "amount": 575,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "subjectToChange": true,
+        "supplement": "Flights Quito–Galapagos–Guayaquil, excluded",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[11]"
+      },
+      {
+        "amount": 200,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "service": "Galapagos National Park fee, excluded",
+        "childDiscount": {
+          "ageUnder": 12,
+          "percent": 50
+        },
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[11]"
+      },
+      {
+        "amount": 15,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "optional": true,
+        "service": "Pastaza Canyon zip-line",
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:p[27]"
+      }
+    ],
+    "sourceDateScope": "2027 annual programme; exact 1–11 Sep departure is not stated in selected English Word."
+  }
+}

@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T19:14:37.299Z",
+  "updatedAt": "2026-10-29T19:14:49.888Z",
   "counts": {
     "held": 0,
-    "queued": 142,
-    "leased": 2,
+    "queued": 141,
+    "leased": 3,
     "ready": 214,
     "retryable": 0,
     "blocked_external": 0,
@@ -161,15 +161,15 @@
     "0a": {
       "counts": {
         "held": 0,
-        "queued": 6,
-        "leased": 0,
+        "queued": 5,
+        "leased": 1,
         "ready": 15,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T20:14:49.888Z",
       "earliestRetryAt": null
     },
     "0b": {
@@ -260,6 +260,11 @@
       "token": "lease-mvtu0yxx-zfzi6gxa",
       "jobId": "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
       "expiresAt": "2026-10-29T18:48:39.758Z"
+    },
+    "ada-match-2ff03f-mvtu1h9z": {
+      "token": "lease-mvtu1h9z-d3rjhcq7",
+      "jobId": "match:tour_source_nezabyvaemyj_novyj_god_v_brazilii",
+      "expiresAt": "2026-10-29T20:14:49.888Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -691,7 +696,8 @@
         "match:tour_source_galapagosskie_ostrova_na_vip_yakhte",
         "match:tour_source_kolumbiya_stolitsy",
         "match:tour_source_little_mix_ru",
-        "match:tour_source_na_mototsiklakh_po_brazilii"
+        "match:tour_source_na_mototsiklakh_po_brazilii",
+        "match:tour_source_nezabyvaemyj_novyj_god_v_brazilii"
       ],
       "completedJobIds": [
         "match:tour_argentina_best_14_days",

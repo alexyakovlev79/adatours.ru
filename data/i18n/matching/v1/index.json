@@ -6,7 +6,7 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T15:11:24.028Z",
+  "updatedAt": "2026-10-29T16:33:11.972Z",
   "counts": {
     "held": 0,
     "queued": 329,
@@ -262,11 +262,27 @@
         "match:tour_luxury_brazil_11d",
         "match:tour_source_amazoniya",
         "match:tour_source_bolshie_meksikanskie_kanikuly"
+      ],
+      "completedJobIds": [
+        "match:tour_brazil_carnival_flavors_rio_paraty_ilha_grande",
+        "match:tour_brazil_rio_iguazu_sao_paulo_group_9d",
+        "match:tour_guatemala_belize_maya_world_12_days",
+        "match:tour_luxury_brazil_11d",
+        "match:tour_source_amazoniya",
+        "match:tour_source_bolshie_meksikanskie_kanikuly"
       ]
     },
     "ada-match-mvto08uk-mo6zjh5b": {
       "token": "lease-mvto08uk-qo2u2nkf",
       "jobIds": [
+        "match:tour_antarctica_whale_watching_learning_11_days",
+        "match:tour_brazil_peru_argentina_group_15_days",
+        "match:tour_brazil_three_ecosystems_8_days",
+        "match:tour_chile_hidden_secrets_9_days_2027",
+        "match:tour_colombia_explorer_9_days",
+        "match:tour_source_kolumbiya_2024"
+      ],
+      "completedJobIds": [
         "match:tour_antarctica_whale_watching_learning_11_days",
         "match:tour_brazil_peru_argentina_group_15_days",
         "match:tour_brazil_three_ecosystems_8_days",
@@ -284,6 +300,14 @@
         "match:tour_source_5_chudes_kosta_riki",
         "match:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
         "match:tour_source_beliz_priklyuchenie_materik_ostrov"
+      ],
+      "completedJobIds": [
+        "match:tour_iguazu_incentive_3_days",
+        "match:tour_panama_mice_7_days",
+        "match:tour_peru_8d",
+        "match:tour_source_5_chudes_kosta_riki",
+        "match:tour_source_argentina_dlya_degustatorov_khoroshej_zhizni",
+        "match:tour_source_beliz_priklyuchenie_materik_ostrov"
       ]
     },
     "ada-bulk-722c528fb394-mvto0doi": {
@@ -295,12 +319,39 @@
         "match:tour_patagonia_lakes_lakeshore_chalet_10_days",
         "match:tour_source_antarktida_programma_s_nochevkoj",
         "match:tour_source_ekzoticheskij_novyj_god_ru"
+      ],
+      "completedJobIds": [
+        "match:tour_chile_marble_caves_san_rafael_three_days",
+        "match:tour_source_chili_zagadki_chelovechestva",
+        "match:tour_guatemala_discover_8_days",
+        "match:tour_patagonia_lakes_lakeshore_chalet_10_days",
+        "match:tour_source_antarktida_programma_s_nochevkoj",
+        "match:tour_source_ekzoticheskij_novyj_god_ru"
       ]
     }
   },
   "massMatchingEnabled": true,
-  "maxDistinctJobsPerOwner": 6,
+  "maxDistinctJobsPerOwner": 60,
   "firstWaveWorkers": 4,
   "massOpenAt": "2026-10-29T07:55:31.508Z",
-  "pilotAuditPath": "docs/plans/english-site/13-matching-pilot-audit.md"
+  "pilotAuditPath": "docs/plans/english-site/13-matching-pilot-audit.md",
+  "workerPolicy": {
+    "version": 2,
+    "batchSize": 6,
+    "maxBatchesPerOwner": 10,
+    "maxDistinctJobsPerOwner": 60,
+    "leaseMinutes": 60,
+    "renewAfterMinutes": 20,
+    "casMaxAttempts": 12
+  },
+  "dispatcherCodeRef": "d9ceebeba691181482efb87b028328dfd8d5e650",
+  "recommendedConcurrentWorkers": 8,
+  "protocolStressWorkers": 20,
+  "live20WorkerThroughputVerified": false,
+  "workerPolicyMigration": {
+    "fromMaxDistinctJobsPerOwner": 6,
+    "sourceCodeCommit": "d9ceebeba691181482efb87b028328dfd8d5e650",
+    "countsPreserved": true,
+    "updatedAt": "2026-10-29T16:33:11.972Z"
+  }
 }

@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:02:57.254Z",
+  "updatedAt": "2026-10-29T18:03:18.290Z",
   "counts": {
     "held": 0,
-    "queued": 268,
-    "leased": 4,
+    "queued": 267,
+    "leased": 5,
     "ready": 86,
     "retryable": 0,
     "blocked_external": 0,
@@ -49,15 +49,15 @@
     "02": {
       "counts": {
         "held": 0,
-        "queued": 2,
-        "leased": 0,
+        "queued": 1,
+        "leased": 1,
         "ready": 23,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:03:18.290Z",
       "earliestRetryAt": null
     },
     "03": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobId": "match:tour_source_mototur_cherez_braziliyu",
       "expiresAt": "2026-10-29T19:02:57.254Z"
+    },
+    "ada-match-2ff03f-mvtu1h9z": {
+      "token": "lease-mvtu1h9z-d3rjhcq7",
+      "jobId": "match:tour_source_venesuela_novye_konkistadory",
+      "expiresAt": "2026-10-29T19:03:18.290Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -488,7 +493,8 @@
         "match:tour_source_klassicheskaya_programma_po_gvatemale",
         "match:tour_source_kraski_venesuely",
         "match:tour_source_lyuksovyj_tur_v_panamu_s_plyazhnym_otdyhom_na_ostrove_baru",
-        "match:tour_source_meksika_den_mertvykh"
+        "match:tour_source_meksika_den_mertvykh",
+        "match:tour_source_venesuela_novye_konkistadory"
       ],
       "completedJobIds": [
         "match:tour_argentina_best_14_days",

@@ -74,6 +74,16 @@ function pickJob(packet,jobId) {
 function touchIndex(core,index,sid,shard,now) {
  const next=core.rebuildIndex(index,sid,shard,now);
  if(!next.activeOwners)next.activeOwners={};
+ // Shard transitions can expire leases while the compact owner index still points
+ // at the old holder. Prune only owners whose job lives in this shard.
+ for(const [owner,lease] of Object.entries(next.activeOwners)){
+   if(core.shardFor(lease.jobId)!==sid)continue;
+   const row=shard.items.find(item=>item.jobId===lease.jobId);
+   if(!row || row.status!=='leased' || row.lease?.ownerId!==owner ||
+      row.lease?.token!==lease.token || row.lease.expiresAt!==lease.expiresAt) {
+     delete next.activeOwners[owner];
+   }
+ }
  return next;
 }
 function requireOwner(args){
@@ -98,13 +108,14 @@ function immutableResultPath(args) {
 export async function runEnMatching(tools,core,args={}) {
  if(!['claim','renew','checkpoint','complete','release','fail','status','reap'].includes(args.action))throw new Error('Unsupported matching action');
  if(args.branch && args.branch!==BRANCH)throw new Error('Wrong matching branch');
- const now=args.now||new Date().toISOString();
+ if(Object.hasOwn(args,'now'))throw new Error('Matching dispatcher uses its own clock; user supplied now is forbidden');
+ const now=new Date().toISOString();
  if(args.action==='status') {
    const sha=await head(tools,BRANCH);
    const idx=await jsonFile(tools,ROOT+'/index.json',sha);
    return {status:'snapshot',head:sha,pilotOnly:idx.pilotOnly,matchingEnabled:idx.matchingEnabled,
      translationEnabled:idx.translationEnabled,counts:idx.counts,pilotJobCount:idx.pilotJobCount,
-     updatedAt:idx.updatedAt,activeOwners:idx.activeOwners||{},earliestExpiryAt:Object.values(idx.shards).map(s=>s.earliestExpiryAt).filter(Boolean).sort()[0]||null};
+     updatedAt:idx.updatedAt,activeOwners:Object.fromEntries(Object.entries(idx.activeOwners||{}).map(([id,lease])=>[id,{jobId:lease.jobId,expiresAt:lease.expiresAt}])),earliestExpiryAt:Object.values(idx.shards).map(s=>s.earliestExpiryAt).filter(Boolean).sort()[0]||null};
  }
  if(args.action!=='reap')requireOwner(args);
  for(let attempt=0;attempt<3;attempt++){

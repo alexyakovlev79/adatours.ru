@@ -134,3 +134,14 @@ test('retryable task remains blocked until its due time',()=>{
  assert.equal(m.reclaimExpired(f.shard,'2026-10-29T10:05:30Z').shard.items[0].status,'retryable');
  assert.equal(m.reclaimExpired(f.shard,'2026-10-29T10:07:01Z').shard.items[0].status,'queued');
 });
+
+
+test('changing a price does not authorize a Word 2026 rollback',()=>{
+  const q=make(1,1),job=q.manifest.jobs[0];
+  const result={entityId:job.entityId,sourceFingerprint:job.sourceFingerprint,
+   outcome:'selected_2026',selectedSource:{driveFileId:'old2026file',sourceYearFolder:2026,sourceSha256:HASH,modifiedTime:NOW},
+   checkedYears:[2027,2026], evidence:['2027 edition contains no matching programme','2026 edition has matching days and stops'],
+   dayAlignment:[{day:1,sourceRef:'word/document.xml#p0030'}],
+   priceAmendments:[{amount:35,currency:'USD',priceBasis:'per_person',sourceLocator:'word/document.xml#tbl0004'}]};
+  assert.throws(()=>m.validateMatchResult(result,job),/Price amendments require 2027/);
+});

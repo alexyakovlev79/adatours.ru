@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_iguazu_incentive_3_days",
+  "result": {
+    "entityId": "tour_iguazu_incentive_3_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_iguazu_incentive_3_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+      "modifiedTime": "2026-09-21T19:23:33.768Z",
+      "name": "5-Iguazu incentive3d2n.docx",
+      "url": "https://docs.google.com/document/d/1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al/edit",
+      "folderPath": "2027/Group Incentive and MICE",
+      "sourceBytes": 23484506,
+      "editionYearExplicit": false
+    },
+    "evidence": [
+      "Full English DOCX matches the specific 3-day/2-night incentive: arrival and Rafain show with dinner on day 1; Brazilian falls, Macuco Safari, park lunch, Bird Park, optional 10-minute helicopter and Argentine barbecue with wine on day 2; Argentine falls and airport on day 3.",
+      "Included services agree: hotel accommodation, excursions with English-speaking guide in a group and driver airport transfers. Exclusions agree: optional excursions, food/drinks during transfers, international flights.",
+      "The superficially similar 2027 3 Days in Foz do Iguazu (1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi; SHA256 e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd) is a different regular programme with day-1 Brazilian falls/Bird Park, day-2 Argentina and day-3 departure; rejected in favour of exact incentive Word found in quarantined MICE folder.",
+      "Full matched DOCX contains no numeric programme tariff or price table. No shared tariff update can be inferred from the regular tour; no priceAmendments."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[5]",
+        "sourceRefs": [
+          "word/document.xml#/w:document/w:body/w:p[6]",
+          "word/document.xml#/w:document/w:body/w:p[9]",
+          "word/document.xml#/w:document/w:body/w:p[10]"
+        ],
+        "summary": "Airport arrival, hotel, Rafain show and dinner."
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[13]",
+        "sourceRefs": [
+          "word/document.xml#/w:document/w:body/w:p[15]",
+          "word/document.xml#/w:document/w:body/w:p[17]",
+          "word/document.xml#/w:document/w:body/w:p[18]",
+          "word/document.xml#/w:document/w:body/w:p[21]",
+          "word/document.xml#/w:document/w:body/w:p[26]",
+          "word/document.xml#/w:document/w:body/w:p[27]",
+          "word/document.xml#/w:document/w:body/w:p[28]",
+          "word/document.xml#/w:document/w:body/w:p[34]",
+          "word/document.xml#/w:document/w:body/w:p[35]",
+          "word/document.xml#/w:document/w:body/w:p[40]"
+        ],
+        "summary": "Brazilian falls, Macuco Safari, lunch, Bird Park, helicopter option, asado and wine."
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/w:p[43]",
+        "sourceRefs": [
+          "word/document.xml#/w:document/w:body/w:p[44]",
+          "word/document.xml#/w:document/w:body/w:p[45]"
+        ],
+        "summary": "Argentine falls and airport transfer."
+      }
+    ],
+    "priceAmendments": [],
+    "quarantinedCandidatesChecked": true,
+    "sourceInspection": {
+      "method": "full DOCX OOXML",
+      "priceScope": "No numeric rates; current price on request retained for later master."
+    }
+  }
+}

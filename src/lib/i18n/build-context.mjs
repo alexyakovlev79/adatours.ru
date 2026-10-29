@@ -16,6 +16,7 @@ export function resolveAstroBuildContext(env = {}, status = foundation) {
   const registry = localeSite(locale);
   const site = validateOrigin(env.SITE_ORIGIN ?? registry.origin);
   const base = validateBase(env.SITE_BASE ?? registry.base);
+  if (locale === 'ru' && site === localeSite('en').origin) fail('RU build cannot use the configured English origin');
   if (locale === 'en') {
     const needed = [
       'runtimeLocaleAdapterConnected','automaticTextSynchronizationRunning',

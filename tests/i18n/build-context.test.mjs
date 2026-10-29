@@ -15,6 +15,9 @@ test('legitimate RU preview base remains allowed',()=>{
 test('planned EN build rejects locale switch even when domain matches',()=>{
   assert.throws(()=>resolveAstroBuildContext({SITE_LOCALE:'en',SITE_ORIGIN:'https://adatours.com'}),/readiness gate missing/);
 });
+test('setting only the English domain must not produce a Russian-language build',()=>{
+ assert.throws(()=>resolveAstroBuildContext({SITE_ORIGIN:'https://adatours.com'}),/RU build cannot use/);
+});
 test('EN cannot be enabled by environment flag alone',()=>{
   assert.throws(()=>resolveAstroBuildContext({
     SITE_LOCALE:'en',SITE_ORIGIN:'https://adatours.com',

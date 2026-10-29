@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T19:35:51.464Z",
+  "updatedAt": "2026-10-29T19:35:57.393Z",
   "counts": {
     "held": 0,
-    "queued": 132,
-    "leased": 5,
+    "queued": 131,
+    "leased": 6,
     "ready": 221,
     "retryable": 0,
     "blocked_external": 0,
@@ -217,15 +217,15 @@
     "0e": {
       "counts": {
         "held": 0,
-        "queued": 24,
-        "leased": 0,
+        "queued": 23,
+        "leased": 1,
         "ready": 0,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T20:35:57.393Z",
       "earliestRetryAt": null
     },
     "0f": {
@@ -275,6 +275,11 @@
       "token": "lease-mvty1843-kjdi7g",
       "jobId": "match:tour_antarctica_discovery_long_hikes_11_days",
       "expiresAt": "2026-10-29T20:35:51.464Z"
+    },
+    "ada-match-mvty1deg-y4pida": {
+      "token": "lease-mvty1deg-xkwpkh",
+      "jobId": "match:tour_brazil_gems_14d",
+      "expiresAt": "2026-10-29T20:35:57.393Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -806,6 +811,12 @@
       "token": "lease-mvty1843-kjdi7g",
       "jobIds": [
         "match:tour_antarctica_discovery_long_hikes_11_days"
+      ]
+    },
+    "ada-match-mvty1deg-y4pida": {
+      "token": "lease-mvty1deg-xkwpkh",
+      "jobIds": [
+        "match:tour_brazil_gems_14d"
       ]
     }
   },

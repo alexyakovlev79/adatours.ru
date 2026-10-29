@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:46:17.769Z",
+  "updatedAt": "2026-10-29T17:46:27.578Z",
   "counts": {
     "held": 0,
-    "queued": 317,
-    "leased": 6,
+    "queued": 316,
+    "leased": 7,
     "ready": 35,
     "retryable": 0,
     "blocked_external": 0,
@@ -91,15 +91,15 @@
     "05": {
       "counts": {
         "held": 0,
-        "queued": 17,
-        "leased": 0,
+        "queued": 16,
+        "leased": 1,
         "ready": 2,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:46:27.578Z",
       "earliestRetryAt": null
     },
     "06": {
@@ -280,6 +280,11 @@
       "token": "lease-mvtu0g8g-dpyvxbzq",
       "jobId": "match:tour_source_klassicheskij_paragvaj",
       "expiresAt": "2026-10-29T18:46:17.769Z"
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobId": "match:tour_argentina_grand_tour_15_days_2027",
+      "expiresAt": "2026-10-29T18:46:27.578Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -380,7 +385,8 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobIds": [
         "match:tour_source_braziliya_argentina_i_chili",
-        "match:tour_source_buenos_ajres_salta_iguasu"
+        "match:tour_source_buenos_ajres_salta_iguasu",
+        "match:tour_argentina_grand_tour_15_days_2027"
       ],
       "completedJobIds": [
         "match:tour_source_braziliya_argentina_i_chili",

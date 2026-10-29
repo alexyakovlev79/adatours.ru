@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_ekonomichnaya_kosta_rika",
+  "result": {
+    "entityId": "tour_source_ekonomichnaya_kosta_rika",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_ekonomichnaya_kosta_rika",
+    "outcome": "not_found_both",
+    "selectedSource": null,
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU Budget Costa Rica is a specific7d/6n product: San José1n, Tortuguero1n (canals/turtle museum and dawn tour), Arenal2n with hot springs and combined Mistico/1968 day, then Manuel Antonio2n at San Bada and departure. Day5 RU heading says Monteverde but narrative contains only transfer to Manuel Antonio; no actual Monteverde overnight or tour is present.",
+      "Full Nature Lovers2027 and2026 both6d/5n contain two Tortuguero nights and depart after Arenal, omitting the entire Manuel Antonio segment. Full Treasures2027 and2026 are10d/9n with extra Poás/La Paz, Rio Celeste, Monteverde/Selvatura and Tarcoles; they also replace the RU Arenal Mistico/1968 day. These are distinct established products, not guide-language/hotel revisions.",
+      "Full3 Steps2027 is10d with Poás/La Paz and six North Pacific beach nights, no Tortuguero. Full MICE Costa Rica newest version2026 is8d going Manuel Antonio–El Silencio–Arenal with rafting and no Tortuguero. Complete732-document inventory plus Old Designs Costa Rica20 entries and MICE95 entries checked; no suitable7d Budget English Word found in2027 or2026. The apparent7d candidates are actually Best of Rio Brazil by verified metadata and do not cover Costa Rica."
+    ],
+    "checkedSources": [
+      {
+        "driveFileId": "17KwHPxYdNImB6ul-AYZVovT138-aQ4_R",
+        "year": 2027,
+        "sourceSha256": "3b0ef6bff0eec7d890ae211d952c2ef8ce0c3e31bdb69fee4c9a2be29596b595",
+        "sourceFormat": "docx",
+        "locators": [
+          "/w:document/w:body/w:p[19]",
+          "/w:document/w:body/w:p[28]",
+          "/w:document/w:body/w:p[31]"
+        ],
+        "reason": "Nature Lovers6d: two Tortuguero nights, ends after Arenal; no Manuel Antonio"
+      },
+      {
+        "driveFileId": "1eDUYLk26cuv3cA6tYqwo6h8wDNDU8UpA",
+        "year": 2026,
+        "sourceSha256": "5829ef8caa736ff41218e3066c20e57ce65335d9e3f43bae417fa6692a4c2a5a",
+        "sourceFormat": "docx",
+        "locators": [
+          "/w:document/w:body/w:p[25]",
+          "/w:document/w:body/w:p[30]",
+          "/w:document/w:body/w:p[42]"
+        ],
+        "reason": "Nature Lovers6d: same different two-destination programme"
+      },
+      {
+        "driveFileId": "1R4lP0kbZb6M7bXUL60IyZ1FOh2GppZ_W",
+        "year": 2027,
+        "sourceSha256": "4b7c600d89cbe06817114f2744927605208038e088f41d35c895ea6dd7e79243",
+        "sourceFormat": "docx",
+        "locators": [
+          "/w:document/w:body/w:p[18]",
+          "/w:document/w:body/w:p[38]",
+          "/w:document/w:body/w:p[39]",
+          "/w:document/w:body/w:p[48]"
+        ],
+        "reason": "Treasures10d adds Poas/La Paz, Rio Celeste, Monteverde/Selvatura and Tarcoles; no Arenal Mistico/1968 day"
+      },
+      {
+        "driveFileId": "1WsY-yT1FgDBPtK7Gkq3xWgeKrUFCeBkb",
+        "year": 2026,
+        "sourceSha256": "d5d603002e6642c4715cd530af8d655973950e53ed04ac0e9fce9dd136a49f2d",
+        "sourceFormat": "docx",
+        "locators": [
+          "/w:document/w:body/w:p[18]",
+          "/w:document/w:body/w:p[33]",
+          "/w:document/w:body/w:p[38]",
+          "/w:document/w:body/w:p[43]"
+        ],
+        "reason": "Treasures10d same expanded route; cannot supply standalone7d"
+      },
+      {
+        "driveFileId": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+        "year": 2027,
+        "sourceSha256": "b543819d9370f61575bd1ba5abab88d8452869f2a594999c8b05ed44a5d0897d",
+        "sourceFormat": "docx",
+        "locators": [
+          "/w:document/w:body/w:p[18]",
+          "/w:document/w:body/w:p[37]",
+          "/w:document/w:body/w:p[38]"
+        ],
+        "reason": "3 Steps10d: no Tortuguero, six nights North Pacific rather than Manuel Antonio"
+      },
+      {
+        "driveFileId": "15gsPMWf35G2Pfopddf1UgJZH7HGEKMSS",
+        "year": 2026,
+        "sourceSha256": "ba288e3a8e28dfaeeb200da9ccf483ee1b36a0e7ddfbdb5ab1d0fa08b4af0e6a",
+        "sourceFormat": "docx",
+        "locators": [
+          "/w:document/w:body/w:p[8]",
+          "/w:document/w:body/w:p[15]",
+          "/w:document/w:body/w:p[17]",
+          "/w:document/w:body/w:p[20]"
+        ],
+        "reason": "MICE8d: Manuel Antonio–El Silencio–Arenal, no Tortuguero and different direction/activity structure",
+        "quarantined": true
+      }
+    ],
+    "quarantineSearch": {
+      "oldDesignsCostaRicaFolder": "1RwJTLfh8pOsCvPpix05g412sS21aIeML",
+      "entryCount": 20,
+      "miceFolder": "19nS5yaXTD26-QJOcN9-0Lh-rPhnS7UF7",
+      "miceEntryCount": 95
+    }
+  }
+}

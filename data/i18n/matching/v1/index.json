@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:43:40.274Z",
+  "updatedAt": "2026-10-29T18:43:46.257Z",
   "counts": {
     "held": 0,
-    "queued": 173,
-    "leased": 4,
+    "queued": 172,
+    "leased": 5,
     "ready": 181,
     "retryable": 0,
     "blocked_external": 0,
@@ -119,15 +119,15 @@
     "07": {
       "counts": {
         "held": 0,
-        "queued": 1,
-        "leased": 0,
+        "queued": 0,
+        "leased": 1,
         "ready": 26,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:43:46.257Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobId": "match:tour_source_manyashchaya_kolumbiya_baru",
       "expiresAt": "2026-10-29T19:43:33.633Z"
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_source_viva_meksika",
+      "expiresAt": "2026-10-29T19:43:46.257Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -403,7 +408,8 @@
         "match:tour_source_stolitsy_latinskoj_ameriki",
         "match:tour_source_tur_v_braziliyu_argentinu_i_chili_na_novyj_god",
         "match:tour_source_venesuela_prirodnye_kontrasty_tropikov",
-        "match:tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej"
+        "match:tour_source_vip_tur_v_braziliyu_s_bonito_16_dnej",
+        "match:tour_source_viva_meksika"
       ],
       "completedJobIds": [
         "match:tour_source_kankun_beliz",

@@ -44,7 +44,9 @@ async function readSnapshot(tools, core, sha, args) {
  if(args.action==='claim'){
    if(index.matchingEnabled!==true)return {index,closed:true};
    const mine=index.activeOwners?.[args.ownerId];
-   if(mine) {
+   // Expired ownership cannot bypass the per-chat job quota.
+   // A separate reaper or another eligible worker can requeue its expired job.
+   if(mine && Date.parse(mine.expiresAt)>Date.parse(args.now)) {
      if(mine.token!==args.token)return {index,ownedByOtherToken:true};
      sid=core.shardFor(mine.jobId);
    } else {

@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:53:55.953Z",
+  "updatedAt": "2026-10-29T17:54:01.492Z",
   "counts": {
     "held": 0,
-    "queued": 293,
-    "leased": 5,
+    "queued": 292,
+    "leased": 6,
     "ready": 60,
     "retryable": 0,
     "blocked_external": 0,
@@ -21,15 +21,15 @@
     "00": {
       "counts": {
         "held": 0,
-        "queued": 8,
-        "leased": 0,
+        "queued": 7,
+        "leased": 1,
         "ready": 14,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:54:01.492Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -275,6 +275,11 @@
       "token": "lease-mvtu0mg2-62anan55",
       "jobId": "match:tour_source_braziliya_s_san_paulo",
       "expiresAt": "2026-10-29T18:53:47.454Z"
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_source_priklyucheniya_v_bolivii",
+      "expiresAt": "2026-10-29T18:54:01.492Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -364,7 +369,8 @@
         "match:tour_source_luchshee_v_belize_za_11_dnej",
         "match:tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy",
         "match:tour_source_luchshee_v_paname",
-        "match:tour_source_pantanal_za_5_dnej"
+        "match:tour_source_pantanal_za_5_dnej",
+        "match:tour_source_priklyucheniya_v_bolivii"
       ],
       "completedJobIds": [
         "match:tour_source_kankun_beliz",

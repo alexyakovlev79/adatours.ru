@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:47:26.057Z",
+  "updatedAt": "2026-10-29T18:47:32.170Z",
   "counts": {
     "held": 0,
-    "queued": 163,
-    "leased": 4,
+    "queued": 162,
+    "leased": 5,
     "ready": 191,
     "retryable": 0,
     "blocked_external": 0,
@@ -175,15 +175,15 @@
     "0b": {
       "counts": {
         "held": 0,
-        "queued": 20,
-        "leased": 0,
+        "queued": 19,
+        "leased": 1,
         "ready": 0,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:47:32.170Z",
       "earliestRetryAt": null
     },
     "0c": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu1h9z-d3rjhcq7",
       "jobId": "match:tour_source_aktivnyj_ekvador",
       "expiresAt": "2026-10-29T19:47:12.388Z"
+    },
+    "ada-match-be5acbe28f44-mvtu0g8g": {
+      "token": "lease-mvtu0g8g-dpyvxbzq",
+      "jobId": "match:tour_brazil_recife_porto_noronha_10d",
+      "expiresAt": "2026-10-29T19:47:32.170Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -407,7 +412,8 @@
         "match:tour_source_viva_meksika",
         "match:tour_antarctica_discovery_learning_11_days",
         "match:tour_source_venesuela_treking_v_zateryannyj_i_pervozdannyj_mir_rorajmy",
-        "match:tour_source_ves_ekvador_i_gorbatye_kity"
+        "match:tour_source_ves_ekvador_i_gorbatye_kity",
+        "match:tour_brazil_recife_porto_noronha_10d"
       ],
       "completedJobIds": [
         "match:tour_source_kankun_beliz",

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_brazil_foz_iguazu_three_days",
+  "result": {
+    "entityId": "tour_brazil_foz_iguazu_three_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_brazil_foz_iguazu_three_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
+      "modifiedTime": "2026-10-21T20:18:08.369Z",
+      "filename": "3 Days in Foz do Iguazu 3d2n 2027 ENG com 20%.docx",
+      "sizeBytes": 1119074,
+      "fullDocxRead": true,
+      "xmlPart": "word/document.xml"
+    },
+    "evidence": [
+      "Полный Word 2027 подтверждает тот же тур 3D/2N: день 1 Brazilian Falls и Bird Park после прибытия, день 2 Argentine Falls и Devil's Throat, день 3 завтрак и private airport transfer.",
+      "Совпадают отель Vivaz Cataratas 4-star Luxury room, две ночи и завтраки, включенные входные билеты; Macuco Safari явно факультативен и имеет Price on request, поэтому числовая доплата не придумывается.",
+      "USD per person SGL 1500/DBL 862/TRP 764 совпадают с RU и priceFrom 764. Английский/испанский гид из Word сохраняется для EN вместо русского гида RU, не блокируя match."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[20]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[26]",
+        "ruRef": "frontmatter.itinerary[day=1]",
+        "summary": "Arrival, Brazilian falls, Bird Park; optional Macuco Safari",
+        "match": "same_day"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[35]",
+        "ruRef": "frontmatter.itinerary[day=2]",
+        "summary": "Argentine falls and Devil's Throat with guide/tickets",
+        "match": "same_day"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[36]",
+        "sourceRangeEnd": "word/document.xml#/w:document/w:body/*[37]",
+        "ruRef": "frontmatter.itinerary[day=3]",
+        "summary": "Breakfast; private airport transfer; end of services",
+        "match": "same_day"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 1500,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "SGL",
+        "hotel": "Vivaz Cataratas",
+        "hotelCategory": 4,
+        "room": "Luxury room",
+        "nights": 2,
+        "durationDays": 3,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[10]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[2]",
+        "currentRuAmount": 1500,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 862,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "DBL",
+        "hotel": "Vivaz Cataratas",
+        "hotelCategory": 4,
+        "room": "Luxury room",
+        "nights": 2,
+        "durationDays": 3,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[10]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[3]",
+        "currentRuAmount": 862,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      },
+      {
+        "amount": 764,
+        "currency": "USD",
+        "priceBasis": "per_person_per_programme",
+        "occupancy": "TRP",
+        "hotel": "Vivaz Cataratas",
+        "hotelCategory": 4,
+        "room": "Luxury room",
+        "nights": 2,
+        "durationDays": 3,
+        "mealPlan": "BB",
+        "includes": "programme services",
+        "year": 2027,
+        "hotelOrSimilar": true,
+        "availability": "All services and hotel subject to availability at booking",
+        "sourceLocator": "word/document.xml#/w:document/w:body/w:tbl[10]/w:tr/w:tc[1]/w:tbl/w:tr[2]/w:tc[4]",
+        "currentRuAmount": 764,
+        "changeRequired": false,
+        "targetLocales": [
+          "ru",
+          "en"
+        ]
+      }
+    ],
+    "priceComparison": {
+      "status": "already_current",
+      "currentRuPriceFrom": 764,
+      "sourcePriceFrom": 764,
+      "rowsCompared": 3,
+      "changedRows": 0
+    },
+    "optionalServices": [
+      {
+        "name": "Macuco Safari",
+        "day": 1,
+        "included": false,
+        "priceType": "on_request",
+        "amount": null,
+        "sourceRef": "word/document.xml#/w:document/w:body/*[52]",
+        "ruDisposition": "already correctly marked optional; no numeric price amendment"
+      }
+    ],
+    "acceptedContentDifferences": [
+      {
+        "field": "guideLanguage",
+        "ru": "Russian",
+        "word": "English or Spanish",
+        "resolution": "use Word for EN"
+      }
+    ],
+    "sourceAnchors": {
+      "title": "word/document.xml#/w:document/w:body/*[2]",
+      "duration": "word/document.xml#/w:document/w:body/*[4]",
+      "hotels": "word/document.xml#/w:document/w:body/*[43]",
+      "prices": "word/document.xml#/w:document/w:body/*[46]",
+      "includedExcluded": "word/document.xml#/w:document/w:body/*[57]"
+    },
+    "selectionReason": "Exact route, day sequence, services and duration confirmed using full 2027 DOCX; no 2026 fallback required."
+  }
+}

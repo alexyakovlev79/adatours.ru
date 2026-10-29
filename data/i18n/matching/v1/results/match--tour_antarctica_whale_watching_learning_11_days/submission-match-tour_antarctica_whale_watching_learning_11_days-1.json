@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_antarctica_whale_watching_learning_11_days",
+  "result": {
+    "entityId": "tour_antarctica_whale_watching_learning_11_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_antarctica_whale_watching_learning_11_days",
+    "outcome": "not_found_both",
+    "selectedSource": null,
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU snapshot describes an 11-day Ushuaia–Beagle Channel–Drake Passage–Antarctic Peninsula–Drake–Ushuaia voyage, with Antarctic days 4–8, return days 9–10, disembarkation day 11, departures 7/17 March 2027 and Porthole Twin/Triple/Quad, Twin Window/Deluxe cabins.",
+      "Live listing of English 2027 Antarctica root 1pfWKj_gtaMV_3Dr7DPbUaoH6RINXBgnM has six programme folders: A Day, Discovery, Weddell Sea, First Encounter Cruise-Air, First Encounter Air-Cruise, Into The White. Manifest and current folder metadata cover 1-, 8-, 14-, 6-, 7- and 12-day programmes, with no 11-day Discovery/Learning/Whale Watching.",
+      "Complete 2027 Discovery DOCX 1mmaD6pxncEvotAbC6Sl268WV-VqkCliK is an 8-day Punta Arenas air-cruise: document.xml body p[8]-p[27], flights to/from King George Island, Antarctic days 3–6. It is not the RU Ushuaia round-trip crossing the Drake both ways.",
+      "Complete 2027 Into The White DOCX 1G5AuhlVTm33v_iXl1TlzF_h6wSvpoug- is 12 days with Buenos Aires hotel/economy flights (p[9]-p[18],p[69]-p[71]), Antarctic days 5–9 (p[29]) and HX MS Fridtjof Nansen/490 guests (p[54]-p[61]); RU has 11 days from Ushuaia and a different five-category cabin offer. Superficially similar whale-watching and March dates do not establish the same programme.",
+      "English 2026 Antarctica folder 1zhD4-VltTZZxIWBdG-mJ-cbZMs0l9j0b contains five DOCX: Polar Circle Air-Cruise 10d9n, Patagonia & Chilean Fjords 9d8n, Antarctic Small Ship Expedition 10d9n, Classic Air-Cruise 8d7n, Express Air-Cruise 6d5n. Complete Small Ship DOCX 1ZgSJGgXXJ4f3KnzDUm3r_9ToqPch8llB has Antarctic days 4–7 (p[13]), northbound Drake days 8–9 (p[17]), Ushuaia day 10 (p[19]), and Magellan Explorer tariff for 26 March–4 April 2026 (p[24],tbl/tr[2]); it cannot supply the missing 11-day whale-focused programme.",
+      "Quarantine checked by live listing: 2027 Old Designs root 1CU96tUoDuCen9EVfTlyiYJDPVwK84-cg has 17 country/event folders and no Antarctica folder; Argentina 1mnABeJDVzV4ZspGK_lRp3xTN61HanqLU (25 documents) and Chile 1i6tr_DYC7GC0ChfLrw-L9tS1gTFzxCOT (22 documents) have no Antarctica/Whale/Learning/11-day expedition. Leaflet programme folder 1tcgHECqs7Gj54RePkraiZB6LsJabG4N0 has eight entries, none Antarctic. No matching full English Word was identified in either year or these alternate materials."
+    ],
+    "inspectedSources": [
+      {
+        "driveFileId": "1mmaD6pxncEvotAbC6Sl268WV-VqkCliK",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "81e75777e997386db95e2d386dbec6891d8e0ae6113057d93c97fb4fbdeeda94",
+        "modifiedTime": "2026-10-01T20:50:59.929Z",
+        "decision": "rejected_air_cruise_8_days"
+      },
+      {
+        "driveFileId": "1G5AuhlVTm33v_iXl1TlzF_h6wSvpoug-",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "ac7034d0dc3cbc06bce70125cf5c188fce78cb5c55cba5c36a43e63068868b7e",
+        "modifiedTime": "2026-08-23T20:56:54.798Z",
+        "decision": "rejected_distinct_HX_12_day_package"
+      },
+      {
+        "driveFileId": "1ZgSJGgXXJ4f3KnzDUm3r_9ToqPch8llB",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "7c2183e180c980579bd46d1c44626eb1c3781a8704121a30c2c3a0a2d0e62607",
+        "modifiedTime": "2026-02-03T12:20:49.669Z",
+        "decision": "rejected_distinct_10_day_Magellan_programme"
+      }
+    ]
+  }
+}

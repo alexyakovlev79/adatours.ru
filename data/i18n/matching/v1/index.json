@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T20:52:27.299Z",
+  "updatedAt": "2026-10-29T20:52:36.801Z",
   "counts": {
     "held": 0,
-    "queued": 0,
-    "leased": 10,
+    "queued": 1,
+    "leased": 9,
     "ready": 348,
     "retryable": 0,
     "blocked_external": 0,
@@ -203,15 +203,15 @@
     "0d": {
       "counts": {
         "held": 0,
-        "queued": 0,
-        "leased": 2,
+        "queued": 1,
+        "leased": 1,
         "ready": 16,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T20:50:10.362Z",
+      "earliestExpiryAt": "2026-10-29T21:52:36.801Z",
       "earliestRetryAt": null
     },
     "0e": {
@@ -261,16 +261,6 @@
       "jobId": "match:tour_source_gvatemala_kosta_rika",
       "expiresAt": "2026-10-29T20:36:43.131Z"
     },
-    "ada-match-mvty1i4m-teplmvhn": {
-      "token": "lease-mvty1i4m-jqd2y8f2",
-      "jobId": "match:tour_source_costa_rica_nicaragua_ru",
-      "expiresAt": "2026-10-29T20:50:10.362Z"
-    },
-    "ada-match-mvtyjlz0-j6xa1vmp": {
-      "token": "lease-mvtyjlz0-a6yf4ws4",
-      "jobId": "match:tour_source_kolumbiya_metropoliten",
-      "expiresAt": "2026-10-29T20:50:37.406Z"
-    },
     "ada-match-dbe665269419": {
       "token": "lease-dbe665269419-mvtyl05s",
       "jobId": "match:tour_source_iguacu_falls",
@@ -300,6 +290,11 @@
       "token": "lease-mvu0qmgm-4eb3cafv",
       "jobId": "match:tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
       "expiresAt": "2026-10-29T21:52:20.632Z"
+    },
+    "ada-match-mvu0q9yi-pznbbauv": {
+      "token": "lease-mvu0q9yi-owvnlrp6",
+      "jobId": "match:tour_source_costa_rica_nicaragua_ru",
+      "expiresAt": "2026-10-29T21:52:36.801Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -1174,7 +1169,8 @@
     "ada-match-mvu0q9yi-pznbbauv": {
       "token": "lease-mvu0q9yi-owvnlrp6",
       "jobIds": [
-        "match:tour_brazil_gems_14d"
+        "match:tour_brazil_gems_14d",
+        "match:tour_source_costa_rica_nicaragua_ru"
       ],
       "completedJobIds": [
         "match:tour_brazil_gems_14d"

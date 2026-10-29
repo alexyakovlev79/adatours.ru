@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_brazil_pantanal_bonito_lencois_8d",
+  "result": {
+    "entityId": "tour_brazil_pantanal_bonito_lencois_8d",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_brazil_pantanal_bonito_lencois_8d",
+    "outcome": "not_found_both",
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "selectedSource": null,
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU immutable Tour is 8D7N: Campo Grande–Southern Pantanal (days 1–2), Mimosa waterfalls and Bonito (3), Blue Lake Cave and Rio Sucuri (4), flight to São Luís (5), Barreirinhas/Lençóis (6), Preguiças and return São Luís (7), departure (8).",
+      "2027 Brazil folder 1ifpwDaNUDBUStt1XuYJeEuBpT5QhF7C5 and programme-sources inventory checked. Full Southern Pantanal & Bonito 6d5n DOCX 1cfTow_TCBzO26YpetIhSWUnfoSJvhPuJ (modified 2026-10-19T19:17:11.005Z, SHA256 df408af5119eb7354920dfad624c98dd33bf93d07a5a82d189053145de78d517) body children 20–58 instead end in Campo Grande on day 6; day 5 is Formoso rafting. No São Luís/Lençóis stage, so not the same 8-day tour.",
+      "2026 Brazil folder 1BFjrV-dL41ZfNKI7mfXwyrT3VW9wsbR4 and 2026 inventory checked. Full Lençóis Maranhenses 4D3N DOCX 1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP (modified 2025-12-12T19:00:40.701Z, SHA256 bf9ec2a1ae5280ee15ef00a810aea0d98401c44bfa3113b19f5ee1e5477752c1), body children 7–35, covers only São Luís–Barreirinhas–Preguiças–São Luís, without Pantanal/Bonito. Exotic Cocktail is 13 days with Rio/Iguazú/Búzios and Northern Pantanal/Rio is 8 days in different geography; neither identifies the required combined itinerary.",
+      "Quarantined 2027/Old Designs/Brazil folder 1VnklE01fWjUf5ysM9QZw1qEz3tNdTIqq checked; closest Southern Pantanal & Bonito 1dpxX-g5VIBjWZ4L20pkWM-Eov-pjoGMT read in full (modified 2026-07-27T16:13:38.039Z, SHA256 00b1827aecf8198138a7b16b4d6a48c0b170f4cef52175764626d7a1bc2e5a49): body children 6–69 confirm the same 6-day programme ending Campo Grande, without Lençóis. Partial overlaps were retained as rejected sources, not combined into a fabricated whole-tour match."
+    ],
+    "rejectedSources": [
+      {
+        "driveFileId": "1cfTow_TCBzO26YpetIhSWUnfoSJvhPuJ",
+        "sourceYearFolder": 2027,
+        "reason": "6-day Southern Pantanal/Bonito only; no Lençóis"
+      },
+      {
+        "driveFileId": "1BbRq0vD8yFt8lTVEP2H_Z2PXv1zHGZFP",
+        "sourceYearFolder": 2026,
+        "reason": "4-day Lençóis only; no Pantanal/Bonito"
+      },
+      {
+        "driveFileId": "1dpxX-g5VIBjWZ4L20pkWM-Eov-pjoGMT",
+        "sourceYearFolder": 2027,
+        "reason": "Old Designs: same different 6-day programme"
+      }
+    ]
+  }
+}

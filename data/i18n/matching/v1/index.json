@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T18:06:25.513Z",
+  "updatedAt": "2026-10-29T18:06:33.393Z",
   "counts": {
     "held": 0,
-    "queued": 263,
-    "leased": 4,
+    "queued": 262,
+    "leased": 5,
     "ready": 91,
     "retryable": 0,
     "blocked_external": 0,
@@ -35,15 +35,15 @@
     "01": {
       "counts": {
         "held": 0,
-        "queued": 8,
-        "leased": 0,
+        "queued": 7,
+        "leased": 1,
         "ready": 22,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T19:06:33.393Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu0g8g-dpyvxbzq",
       "jobId": "match:tour_source_kolumbiya_live",
       "expiresAt": "2026-10-29T19:05:46.563Z"
+    },
+    "ada-match-mvtu0mg2-9xr9js30": {
+      "token": "lease-mvtu0mg2-62anan55",
+      "jobId": "match:tour_source_tur_v_braziliyu_k_mestam_sily",
+      "expiresAt": "2026-10-29T19:06:33.393Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -420,7 +425,8 @@
         "match:tour_source_tur_v_braziliyu_na_13_dnej",
         "match:tour_source_mototur_cherez_braziliyu",
         "match:tour_source_patagoniya_i_chilijskie_fordy",
-        "match:tour_source_priroda_i_kultura_venesuely_bolivii"
+        "match:tour_source_priroda_i_kultura_venesuely_bolivii",
+        "match:tour_source_tur_v_braziliyu_k_mestam_sily"
       ],
       "completedJobIds": [
         "match:tour_source_braziliya_argentina_i_chili",

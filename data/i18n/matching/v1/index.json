@@ -6,12 +6,12 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:46:27.578Z",
+  "updatedAt": "2026-10-29T17:46:37.591Z",
   "counts": {
     "held": 0,
     "queued": 316,
-    "leased": 7,
-    "ready": 35,
+    "leased": 6,
+    "ready": 36,
     "retryable": 0,
     "blocked_external": 0,
     "stale_source": 0,
@@ -106,14 +106,14 @@
       "counts": {
         "held": 0,
         "queued": 17,
-        "leased": 1,
-        "ready": 0,
+        "leased": 0,
+        "ready": 1,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T18:44:17.158Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "07": {
@@ -255,11 +255,6 @@
       "token": "lease-mvtu0t2u-50b900",
       "jobId": "match:tour_source_argentina_2024",
       "expiresAt": "2026-10-29T18:43:33.953Z"
-    },
-    "ada-match-mvtu0yxx-s9nvss8z": {
-      "token": "lease-mvtu0yxx-zfzi6gxa",
-      "jobId": "match:tour_argentina_experience_6_days",
-      "expiresAt": "2026-10-29T18:44:17.158Z"
     },
     "ada-match-mvtu0x51-9l4jrc5m": {
       "token": "lease-mvtu0x51-kffn6cb1",
@@ -426,6 +421,9 @@
     "ada-match-mvtu0yxx-s9nvss8z": {
       "token": "lease-mvtu0yxx-zfzi6gxa",
       "jobIds": [
+        "match:tour_argentina_experience_6_days"
+      ],
+      "completedJobIds": [
         "match:tour_argentina_experience_6_days"
       ]
     }

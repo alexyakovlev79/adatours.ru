@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_guatemala_discover_8_days",
+  "result": {
+    "entityId": "tour_guatemala_discover_8_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_guatemala_discover_8_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM",
+      "sourceYearFolder": 2027,
+      "name": "Discover Guatemala 8d7n 2027 eng com 20.docx",
+      "sourceSha256": "ee645e93e335b2b6b12227cd3fd58d1d02d4f94fa686d4dd82bb7de7e97aac48",
+      "modifiedTime": "2026-10-28T14:31:32.157Z",
+      "sizeBytes": 787459,
+      "url": "https://docs.google.com/document/d/1WaOiHI0Rz0sRF5Bf0JnFgQmZtpRmd2EM/edit",
+      "fullDocxRead": true
+    },
+    "evidence": [
+      "Полный Discover Guatemala Word 2027 подтверждает 8D/7N, суббота—суббота и маршрут Guatemala City—Chichicastenango—Atitlán—San Juan/Santiago—Iximché—Antigua—Monterrico—Guatemala City, одинаковый с RU.",
+      "Все 8 дней соответствуют по порядку: corn workshop day 2, Atitlán boat day 3, Iximché/Antigua day 4, свободный day 5, Pacific coast day 6, отдых/optional mangroves/turtles day 7, airport day 8.",
+      "Совпадают 1/2/2/2 ночи Hyatt Centric/Hotel Atitlán/Casa Santo Domingo/Dos Mundos Pacífico, BB, входные билеты и лодка. Трансферы Antigua—Monterrico—airport без гида. Pacaya/Tikal и beach activities optional, не включены.",
+      "Word 2027 явно указывает English-speaking guides, вместо старой RU оговорки Spanish/English/Italian. В EN используется Word; причина для ручного review отсутствует.",
+      "Цена From USD 2085 совпадает с суммой RU, но полный Word раскрывает per person, minimum 2 travellers, в отличие от RU notes с неизвестной единицей цены; сохраняется структурированное уточнение. Отдельных SGL/DBL/TPL тарифов нет."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "ruDay": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[17]",
+        "match": "Arrival Guatemala City"
+      },
+      {
+        "day": 2,
+        "ruDay": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[18]",
+        "match": "Chichicastenango corn workshop; Atitlán"
+      },
+      {
+        "day": 3,
+        "ruDay": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[19]",
+        "match": "Atitlán boat: San Juan and Santiago"
+      },
+      {
+        "day": 4,
+        "ruDay": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[27]",
+        "match": "Iximché and Antigua city tour"
+      },
+      {
+        "day": 5,
+        "ruDay": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[28]",
+        "match": "Free Antigua; optional Pacaya or Tikal"
+      },
+      {
+        "day": 6,
+        "ruDay": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[36]",
+        "match": "Antigua → Monterrico"
+      },
+      {
+        "day": 7,
+        "ruDay": 7,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[37]",
+        "match": "Monterrico free day; optional mangroves/turtle reserve"
+      },
+      {
+        "day": 8,
+        "ruDay": 8,
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:p[38]",
+        "match": "Monterrico → Guatemala airport"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 2085,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "minimumTravellers": 2,
+        "roomType": null,
+        "accommodation": "Standard rooms, listed or similar hotels, 7 nights with breakfast",
+        "departureDay": "Saturday",
+        "season": "2027",
+        "excludedDateRanges": [
+          {
+            "start": "2027-03-20",
+            "end": "2027-03-28"
+          },
+          {
+            "start": "2027-12-15",
+            "end": "2028-01-04"
+          }
+        ],
+        "sourceLocator": "word/document.xml:/w:document/w:body[1]/w:tbl[8]/w:tr[1]/w:tc[1]/w:p[2]",
+        "conditionLocators": [
+          "word/document.xml:/w:document/w:body[1]/w:tbl[8]/w:tr[1]/w:tc[1]/w:p[3]",
+          "word/document.xml:/w:document/w:body[1]/w:tbl[8]/w:tr[1]/w:tc[1]/w:p[4]",
+          "word/document.xml:/w:document/w:body[1]/w:p[46]"
+        ],
+        "changeType": "clarify_shared_tariff_basis_and_minimum_group",
+        "scope": "shared_RU_EN",
+        "previousAmount": 2085,
+        "previousPriceBasis": "RU explicitly says unresolved"
+      }
+    ],
+    "contentDifferences": [
+      {
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:tbl[9]/w:tr[1]/w:tc[1]/w:p[5]",
+        "detail": "EN guides are English-speaking; use current Word."
+      },
+      {
+        "sourceRef": "word/document.xml:/w:document/w:body[1]/w:tbl[9]/w:tr[1]/w:tc[3]",
+        "detail": "Word explicitly excludes international flights, optional excursions, unspecified meals, personal expenses; RU notIncluded empty."
+      }
+    ],
+    "sharedPriceUpdate": {
+      "priceFrom": 2085,
+      "currency": "USD",
+      "priceBasis": "per_person",
+      "minimumTravellers": 2,
+      "reconcileFields": [
+        "priceNote",
+        "notes",
+        "tariff basis and seasonal conditions",
+        "derived offers"
+      ]
+    }
+  }
+}

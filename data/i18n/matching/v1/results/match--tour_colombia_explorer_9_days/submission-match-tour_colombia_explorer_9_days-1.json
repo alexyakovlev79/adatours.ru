@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_colombia_explorer_9_days",
+  "result": {
+    "entityId": "tour_colombia_explorer_9_days",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_colombia_explorer_9_days",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+      "modifiedTime": "2026-10-26T18:01:44.969Z",
+      "documentName": "Colombia_Explorer_9d8n_-_Bogota___Pereira___Medellin___Cartagena_2027_ENG_com_20_.docx",
+      "url": "https://docs.google.com/document/d/1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+      "folderPath": "2027/Colombia 2027",
+      "edition": "2027; brochure prepared 9 October 2026"
+    },
+    "evidence": [
+      "Full English DOCX Colombia Explorer states 9 days/8 nights in 2027; matches RU country and sequence Bogota 2n, Pereira 2n, Medellin 2n, Cartagena 2n. Every day is mapped to its exact XML paragraph.",
+      "Distinctive service matches include Bogota museums/Monserrate day1, Guatavita and Zipaquira day2, Cocora/Salento/El Ocaso coffee tasting day3, canopy and horseback day4, Comuna13/El Castillo day5, Guatape/El Penol day6, Cartagena city tour day7, Rosario shared speedboat/lunch/marina tax day8, Cartagena departure day9.",
+      "All six tariff cells in table12 were read from full DOCX, including SGL/DBL/TRP and 4/5-star hotel categories, USD per person for 2027. Rates exactly equal current RU; store the whole verified tariff as priceAmendments with amountUnchanged for the master, rather than only the USD4041 minimum.",
+      "EN wording Isla Majagua day8 corresponds to RU San Pedro de Majagua experience in Rosario Islands; retain Word wording without an editorial hold. Private local English guides, private land transfers, optional private boat upgrade and excluded international/domestic flights are preserved."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[17]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[19]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[28]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[39]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[49]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[60]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[70]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[80]",
+        "alignment": "same_day"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml:/w:document/w:body/w:p[82]",
+        "alignment": "same_day"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 7830,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "SGL",
+        "sourceOccupancy": "SGL",
+        "hotelCategory": "4 stars",
+        "accommodation": [
+          "Best Western Plus 93 Park Hotel",
+          "Hotel Sonesta Pereira",
+          "Poblado Plaza",
+          "Dann Cartagena"
+        ],
+        "validYear": 2027,
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr[2]/w:tc[2]/w:p",
+        "basisLocator": "word/document.xml:/w:document/w:body/w:p[89]",
+        "conditions": "8 nights, 2 in each city; breakfast; English-speaking guide; private transfers; shared Rosario speedboat with lunch and marina tax. All flights excluded.",
+        "amountUnchanged": true
+      },
+      {
+        "amount": 4058,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "DBL",
+        "sourceOccupancy": "DBL",
+        "hotelCategory": "4 stars",
+        "accommodation": [
+          "Best Western Plus 93 Park Hotel",
+          "Hotel Sonesta Pereira",
+          "Poblado Plaza",
+          "Dann Cartagena"
+        ],
+        "validYear": 2027,
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr[2]/w:tc[3]/w:p",
+        "basisLocator": "word/document.xml:/w:document/w:body/w:p[89]",
+        "conditions": "8 nights, 2 in each city; breakfast; English-speaking guide; private transfers; shared Rosario speedboat with lunch and marina tax. All flights excluded.",
+        "amountUnchanged": true
+      },
+      {
+        "amount": 4041,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "TPL",
+        "sourceOccupancy": "TRP",
+        "hotelCategory": "4 stars",
+        "accommodation": [
+          "Best Western Plus 93 Park Hotel",
+          "Hotel Sonesta Pereira",
+          "Poblado Plaza",
+          "Dann Cartagena"
+        ],
+        "validYear": 2027,
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr[2]/w:tc[4]/w:p",
+        "basisLocator": "word/document.xml:/w:document/w:body/w:p[89]",
+        "conditions": "8 nights, 2 in each city; breakfast; English-speaking guide; private transfers; shared Rosario speedboat with lunch and marina tax. All flights excluded.",
+        "amountUnchanged": true
+      },
+      {
+        "amount": 8913,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "SGL",
+        "sourceOccupancy": "SGL",
+        "hotelCategory": "5 stars",
+        "accommodation": [
+          "Bogota Marriott Hotel",
+          "Movich Hotel",
+          "Medellin Marriott Hotel",
+          "Hyatt Regency Cartagena"
+        ],
+        "validYear": 2027,
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc[2]/w:p",
+        "basisLocator": "word/document.xml:/w:document/w:body/w:p[89]",
+        "conditions": "8 nights, 2 in each city; breakfast; English-speaking guide; private transfers; shared Rosario speedboat with lunch and marina tax. All flights excluded.",
+        "amountUnchanged": true
+      },
+      {
+        "amount": 4836,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "DBL",
+        "sourceOccupancy": "DBL",
+        "hotelCategory": "5 stars",
+        "accommodation": [
+          "Bogota Marriott Hotel",
+          "Movich Hotel",
+          "Medellin Marriott Hotel",
+          "Hyatt Regency Cartagena"
+        ],
+        "validYear": 2027,
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc[3]/w:p",
+        "basisLocator": "word/document.xml:/w:document/w:body/w:p[89]",
+        "conditions": "8 nights, 2 in each city; breakfast; English-speaking guide; private transfers; shared Rosario speedboat with lunch and marina tax. All flights excluded.",
+        "amountUnchanged": true
+      },
+      {
+        "amount": 4399,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "occupancy": "TPL",
+        "sourceOccupancy": "TRP",
+        "hotelCategory": "5 stars",
+        "accommodation": [
+          "Bogota Marriott Hotel",
+          "Movich Hotel",
+          "Medellin Marriott Hotel",
+          "Hyatt Regency Cartagena"
+        ],
+        "validYear": 2027,
+        "sourceLocator": "word/document.xml:/w:document/w:body/w:tbl[12]/w:tr[3]/w:tc[4]/w:p",
+        "basisLocator": "word/document.xml:/w:document/w:body/w:p[89]",
+        "conditions": "8 nights, 2 in each city; breakfast; English-speaking guide; private transfers; shared Rosario speedboat with lunch and marina tax. All flights excluded.",
+        "amountUnchanged": true
+      }
+    ],
+    "priceComparison": {
+      "allAmountsEqualRU": true,
+      "priceFrom": 4041,
+      "priceFromOccupancy": "TPL",
+      "priceFromHotelCategory": "4 stars"
+    }
+  }
+}

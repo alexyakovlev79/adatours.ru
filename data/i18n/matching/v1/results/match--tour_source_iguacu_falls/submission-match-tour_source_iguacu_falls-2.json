@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_iguacu_falls",
+  "result": {
+    "entityId": "tour_source_iguacu_falls",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_iguacu_falls",
+    "outcome": "not_found_both",
+    "selectedSource": null,
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU identity is a private three-day/two-night wedding at Belmond das Cataratas: day 1 arrival/rest/preparation; day 2 bridal makeup, ceremony on the Brazilian falls viewpoint and photoshoot; day 3 airport transfer. Wedding services are the essential product, not generic sightseeing.",
+      "2027 manifest checked beyond empty heuristic candidates, using Iguacu/Iguazu/Foz and wedding/ceremony/romantic variants. Closest programme 1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi, 3 Days in Foz do Iguazu, has Brazilian falls and Bird Park on day 1, Argentine falls on day 2 and departure on day 3, with Vivaz Cataratas hotel. It does not cover the wedding, bridal makeup or Belmond stay.",
+      "2026: inspected the complete direct Brazil 2026 folder 1BFjrV-dL41ZfNKI7mfXwyrT3VW9wsbR4 (84 returned entries) and all 388 eligible 2026 manifest documents for relevant names. No wedding programme found. Read Romantic Brazil 12d11 2026 ENG, file 1JGBdfX8DrOejRKHx7w1kD4gubbTygWtr: Rio 3N, Iguazu 2N, Salvador 2N and Costa do Sauipe 4N with ordinary falls/boat/Bird Park activities, so it is not the three-day ceremony product.",
+      "Quarantine: directly listed Old Designs/Brazil 2027 (64 entries), leaflets/Ada Tours Programs (8 entries) and Group Incentive and MICE (95 entries). Old-design 3 Days in Foz do Iguazu, file 1F5FKKzzRmH5GimNXjHKk1mGrkuyDfLHx, was read and has the same sightseeing programme without wedding services.",
+      "Quarantine closest candidate 1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al, 5-Iguazu incentive3d2n.docx, was fully downloaded (23484506 bytes), SHA256 8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0, modified 2026-09-21T19:23:33.768Z. Full DOCX XML: day 1 Rafain show/dinner; day 2 Brazilian falls, Macuco Safari, lunch, Bird Park, helicopter and Argentine barbecue; day 3 Argentine falls/departure. It contains no ceremony, bridal makeup, Belmond or wedding photoshoot and is rejected.",
+      "Additional Drive filename search across accessible files for Wedding/ceremony/marriage DOCX returned zero; broad wedding search returned historical site Markdown rather than an English programme. Observed-source conclusion is not_found_both, not a claim that no such source could ever exist outside the checked folders."
+    ],
+    "searchAudit": {
+      "manifest": "data/i18n/programme-sources.json",
+      "manifestSha256": "5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11",
+      "eligibleDocumentsByYear": {
+        "2026": 388,
+        "2027": 344
+      },
+      "rejectedSources": [
+        {
+          "driveFileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
+          "sourceYearFolder": 2027,
+          "reason": "Sightseeing itinerary, no wedding services"
+        },
+        {
+          "driveFileId": "1JGBdfX8DrOejRKHx7w1kD4gubbTygWtr",
+          "sourceYearFolder": 2026,
+          "reason": "12-day multi-stop romantic sightseeing, no ceremony"
+        },
+        {
+          "driveFileId": "1F5FKKzzRmH5GimNXjHKk1mGrkuyDfLHx",
+          "sourceYearFolder": 2027,
+          "quarantine": "Old Designs",
+          "reason": "Three-day sightseeing, no ceremony"
+        },
+        {
+          "driveFileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+          "quarantine": "Group Incentive and MICE",
+          "sourceSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+          "reason": "Three-day incentive sightseeing; no bridal services"
+        }
+      ]
+    }
+  }
+}

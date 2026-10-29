@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_ekvador_i_galapagosskie_ostrova_v_iyule",
+  "result": {
+    "entityId": "tour_source_ekvador_i_galapagosskie_ostrova_v_iyule",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_ekvador_i_galapagosskie_ostrova_v_iyule",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1jnGTJB7ctx1fsaxi4EDXaPTa7Xy2kczf",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "9c55e5e668f8b7351c73571695a1cb916701d0c52336fb3c2d935ec1cdab5e29",
+      "modifiedTime": "2026-10-27T18:19:08.603Z"
+    },
+    "evidence": [
+      "Expanded beyond poor filename candidates to Whole Ecuador & Galapagos 2027 8d7n. Exact defining route/duration and first five days align: Quito arrival; colonial Quito+Equator; Mindo cloud forest/chocolate/butterflies; Tigua/Quilotoa; Baltra/Santa Cruz highlands and giant tortoises. Same four Quito nights plus three Santa Cruz nights, final Galapagos departure day8. Candidates Brazil coffee, Mexico Colonial Treasures and Galapagos yacht-only cannot cover mainland itinerary.",
+      "Full DOCX 2027 intentionally replaces old July economy-group offering (confirmed in 2026 Economy July1–8 preview) with private mainland/English guides and shared island services; island excursions day6 Bartolome and day7 North Seymour/South Plaza replace RU Isabela and free day. These are explicit updated Word contents, not silently asserted exact unchanged excursions. Date-specific RU July slug remains stable; no unverified July2027 departure is inferred. Strong route identity supports Word2027 content under current policy.",
+      "All main programme prices in table11 preserved: USD8941 SGL and USD5485 per person sharing double. Galapagos flights fromUSD515, parkUSD200 with50% child-under12 discount, INGALAUSD20 are exclusions with precise source locators; not part of package price. New programme service basis and durations must accompany price amendments; no website price applied."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml//w:p[67]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml//w:p[68]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml//w:p[79]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml//w:p[80]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml//w:p[91]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml//w:p[92]",
+        "relation": "updated_Word_excursion_replaces_old_RU_day"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml//w:p[103]",
+        "relation": "updated_Word_excursion_replaces_old_RU_day"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml//w:p[104]"
+      }
+    ],
+    "editionChanges": {
+      "ruIslandDay6": "Isabela",
+      "wordIslandDay6": "Bartolome",
+      "ruDay7": "free",
+      "wordDay7": "North Seymour or South Plaza",
+      "wordServices": "Private mainland; shared Galapagos; English guides",
+      "ruSource": "July economy group 2026",
+      "departure2027": "No fixed July date stated in selected Word"
+    },
+    "priceAmendments": [
+      {
+        "amount": 8941,
+        "occupancy": "SGL",
+        "sourceLocator": "word/document.xml//w:tbl[11]/w:tr[2]/w:tc[2]",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "sourceDriveFileId": "1jnGTJB7ctx1fsaxi4EDXaPTa7Xy2kczf",
+        "accommodation": "4 Quito nights + 3 Santa Cruz nights; hotels to be confirmed",
+        "serviceBasis": "private mainland English driver-guide; shared Galapagos tours",
+        "duration": "8d/7n",
+        "validity": "2027; no fixed departure date stated"
+      },
+      {
+        "amount": 5485,
+        "occupancy": "1/2 DBL",
+        "sourceLocator": "word/document.xml//w:tbl[11]/w:tr[2]/w:tc[3]",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "sourceDriveFileId": "1jnGTJB7ctx1fsaxi4EDXaPTa7Xy2kczf",
+        "accommodation": "4 Quito nights + 3 Santa Cruz nights; hotels to be confirmed",
+        "serviceBasis": "private mainland English driver-guide; shared Galapagos tours",
+        "duration": "8d/7n",
+        "validity": "2027; no fixed departure date stated"
+      }
+    ],
+    "supplements": [
+      {
+        "amount": 515,
+        "name": "Galapagos return flights",
+        "from": true,
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "included": false,
+        "sourceLocator": "word/document.xml//w:tbl[14]"
+      },
+      {
+        "amount": 200,
+        "name": "Galapagos National Park entry",
+        "childDiscount": "50% under12",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "included": false,
+        "sourceLocator": "word/document.xml//w:tbl[14]"
+      },
+      {
+        "amount": 20,
+        "name": "INGALA transit control card",
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "included": false,
+        "sourceLocator": "word/document.xml//w:tbl[14]"
+      }
+    ]
+  }
+}

@@ -195,3 +195,26 @@ Next: two real Word-matching pilot workers; inspect evidence and price
 amendments before opening the other 353 matching jobs. In parallel connect
 the content adapter, menus, SEO/schema, forms, search and English build
 pipeline. Mass translation remains prohibited.
+
+## Checkpoint 6 — 29.10.2026: matching mass queue opened
+
+- All five pilot Word-2027 matches are `ready`, their exact
+  file IDs, DOCX SHA-256 and modifiedTimes agree with independently
+  extracted original pilot evidence; the core result validator accepts all.
+- Mexico Lindo new tariffs in staged evidence are SGL $2372, DBL $1908
+  and TPL $1855. **Production RU remains unchanged** until price master.
+- Pilot quota error: first chat completed all five and second was idle.
+  Hard per-owner limits now enforced: 3 pilot / 6 bulk, persisted in CAS
+  `ownerAssignments`. Node24 test run
+  https://github.com/alexyakovlev79/adatours.ru/actions/runs/40837594359
+  succeeded.
+- Pilot audit: `docs/plans/english-site/13-matching-pilot-audit.md`.
+  Bulk worker command: `docs/plans/english-site/14-matching-bulk.md`.
+- Matching-staging activation was closed during shard updates; after all
+  16 shards reconciled the final CAS commit
+  `bf04211267744431363a1e3dc3e13eb75c064f47` set
+  `matchingEnabled=true`, `pilotOnly=false`, `translationEnabled=false`.
+  Verified state: 353 queued, five ready, zero held/leased.
+- Up to four parallel Work matching chats in first mass wave; six
+  distinct jobs maximum per worker. Translation and EN deployment remain
+  disabled; Astro locale adapter is not yet connected to all layouts.

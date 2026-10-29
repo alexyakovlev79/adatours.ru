@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "snapshotDate": "2026-10-29",
   "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
-  "phase": "matching_pilot_enabled",
+  "phase": "matching_bulk_enabled_translation_disabled",
   "massLaunchAllowed": false,
   "operationalDispatcherReady": false,
   "automaticTextSynchronizationRunning": false,
@@ -25,22 +25,24 @@
     "uiMessagesTranslated": 218,
     "interestCopySetsTranslated": 15,
     "matchingJobsTotal": 358,
-    "matchingPilotQueued": 5,
-    "matchingMassHeld": 353,
-    "newEnglishContentReady": 0
+    "matchingPilotQueued": 0,
+    "matchingMassHeld": 0,
+    "newEnglishContentReady": 0,
+    "matchingMassQueued": 353,
+    "matchingReady": 5
   },
   "nextGates": [
-    "complete_five_real_matching_pilot_jobs_and_review_receipts",
-    "open_remaining_matching_jobs_after_pilot",
+    "complete_bulk_semantic_matching_of_remaining_353",
+    "apply_confirmed_word_2027_price_amendments_to_shared_ru_and_en_source",
     "finish_stable_complete_block_maps_and_shared_excursion_ownership",
     "connect_locale_adapter_to_astro_runtime_and_ui_seo",
     "implement_and_pilot_independent_translation_dispatcher",
     "activate_scheduled_reaper_workflow_on_default_branch",
     "confirm_english_deployment_target_and_dual_release"
   ],
-  "note": "Static feature-branch checkpoint only. Live matching index on i18n/matching-staging is authoritative; pilot only, no bulk matching, translation or EN deploy.",
+  "note": "Feature checkpoint only; live queue index on i18n/matching-staging is authoritative. Mass matching enabled; EN translation, price master and EN deployment remain closed.",
   "matchingDispatcherReady": true,
-  "matchingPilotEnabled": true,
+  "matchingPilotEnabled": false,
   "matchingPilotBranch": "i18n/matching-staging",
   "matchingPilotJobs": 5,
   "matchingJobsHeld": 353,
@@ -52,5 +54,9 @@
   "localeContentAdapterConnectedToAstro": false,
   "englishBuildSafetyGateInstalled": true,
   "englishBuildRuntimeReady": false,
-  "matchingRetryAttemptLimit": 5
+  "matchingRetryAttemptLimit": 5,
+  "matchingMassEnabled": true,
+  "matchingMassBranch": "i18n/matching-staging",
+  "matchingMassActivationCommit": "bf04211267744431363a1e3dc3e13eb75c064f47",
+  "matchingOwnerLimit": 6
 }

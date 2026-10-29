@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_klassicheskaya_kosta_rika",
+  "result": {
+    "entityId": "tour_source_klassicheskaya_kosta_rika",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_klassicheskaya_kosta_rika",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1woDwUQiVgxpLvB-hYpjQFwVtP2q26FTz",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "a8435cd10817cb389d6e96e34edb109c365c49c56cb4e900a93efbd9ea2ddee8",
+      "modifiedTime": "2026-10-28T19:59:11.889Z"
+    },
+    "evidence": [
+      "Full Classic Costa Rica 2027 DOCX matches all six days: San Jose → coffee/Poas/La Paz/Arenal → Cano Negro → Lake Arenal/Monteverde canopy → cloud forest → airport.",
+      "English guide, two Arenal nights, two Monteverde nights and meals agree. Hotel updates Palma Real/Montana Monteverde are source-authoritative. DBL price in actual XML p128 is '$ 2,2422', an invalid thousands grouping; preserved verbatim as extraction issue, not guessed as 2242 or 22422."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:(//w:body//w:p)[67]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:(//w:body//w:p)[68]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:(//w:body//w:p)[78]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:(//w:body//w:p)[89]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:(//w:body//w:p)[90]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml:(//w:body//w:p)[91]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 2529,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "SGL",
+        "minimumGroupSize": 2,
+        "season": "2027 except Christmas, New Year and Easter",
+        "accommodation": "Palma Real 1N; Arenal Paraiso 2N; Montana Monteverde 2N",
+        "sourceLocator": "word/document.xml:(//w:body//w:p)[127]; p130"
+      }
+    ],
+    "unresolvedCommercialFields": [
+      {
+        "occupancy": "DBL",
+        "currency": "USD",
+        "priceBasis": "per person",
+        "rawSourceText": "$ 2,2422",
+        "sourceLocator": "word/document.xml:(//w:body//w:p)[128]",
+        "reason": "Malformed numeric grouping in original Word; cannot determine amount without inventing a correction",
+        "status": "blocked_numeric_extraction"
+      }
+    ]
+  }
+}

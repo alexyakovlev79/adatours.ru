@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:43:44.381Z",
+  "updatedAt": "2026-10-29T17:43:57.539Z",
   "counts": {
     "held": 0,
-    "queued": 325,
-    "leased": 4,
+    "queued": 324,
+    "leased": 5,
     "ready": 29,
     "retryable": 0,
     "blocked_external": 0,
@@ -77,15 +77,15 @@
     "04": {
       "counts": {
         "held": 0,
-        "queued": 26,
-        "leased": 0,
+        "queued": 25,
+        "leased": 1,
         "ready": 0,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T18:43:57.539Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -270,6 +270,11 @@
       "token": "lease-mvtu0vl2-b7oyttg",
       "jobId": "match:tour_source_krasota_venesuely",
       "expiresAt": "2026-10-29T18:43:44.381Z"
+    },
+    "ada-match-mvtu0x51-9l4jrc5m": {
+      "token": "lease-mvtu0x51-kffn6cb1",
+      "jobId": "match:tour_brazil_mice_7_days",
+      "expiresAt": "2026-10-29T18:43:57.539Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -372,6 +377,12 @@
       "token": "lease-mvtu0vl2-b7oyttg",
       "jobIds": [
         "match:tour_source_krasota_venesuely"
+      ]
+    },
+    "ada-match-mvtu0x51-9l4jrc5m": {
+      "token": "lease-mvtu0x51-kffn6cb1",
+      "jobIds": [
+        "match:tour_brazil_mice_7_days"
       ]
     }
   },

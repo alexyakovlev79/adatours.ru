@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_little_mix_ru",
+  "result": {
+    "entityId": "tour_source_little_mix_ru",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_little_mix_ru",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+      "modifiedTime": "2026-10-21T20:49:10.129Z",
+      "name": "Little Mix 10d9n 2027 ENG com 20%.docx"
+    },
+    "evidence": [
+      "Full2027 LittleMix Word tbl1/2 and p6 explicitly identifies same named product with SaoPaulo,Rio,Salvador andPraiaForte. Exact same four hotels tbl11 (SlavieroIbirapuera,ArenaLeme,VilaGaleSalvador,CasaForte) and distinctive Corcovado/SugarLoaf/Pelourinho/beach sequence confirm updated programme identity.",
+      "2027 route startsSaoPaulo2n thenRio3n instead ofRU Rio3n thenSaoPaulo3n, and omits separate architecture tour. Salvador1n andPraiaForte3n remain. Source10d9n programme is the current edited LittleMix; preserve these differences and Word day sequence, not historical11days."
+    ],
+    "sourceDurationDays": 10,
+    "ruDurationDays": 11,
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "/w:document/w:body/w:p[17]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "/w:document/w:body/w:p[18]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "/w:document/w:body/w:p[28]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "/w:document/w:body/w:p[29]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "/w:document/w:body/w:p[39]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "/w:document/w:body/w:p[49]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "/w:document/w:body/w:p[50]"
+      },
+      {
+        "day": 8,
+        "sourceRef": "/w:document/w:body/w:p[59]",
+        "note": "Source combined Days8–9 free-beach paragraph."
+      },
+      {
+        "day": 9,
+        "sourceRef": "/w:document/w:body/w:p[59]",
+        "note": "Source combined Days8–9 free-beach paragraph."
+      },
+      {
+        "day": 10,
+        "sourceRef": "/w:document/w:body/w:p[60]"
+      }
+    ],
+    "contentDifferences": [
+      "StartSaoPaulo thenRio; source10d9n vsRU11d10n. SaoPaulo reduced3→2n and separate modernist architecture tour absent.",
+      "Day5 SugarLoaf includes historicRio citytour; rest followsSalvador/PraiaForte. Use2027 Word content.",
+      "2027 breakfast/privateEnglish guides; excludeddomesticairfare remainsfrom800USDpp. Word2027 does not explicitly label airfareNET, so historicalRU NET wording not inferred."
+    ],
+    "priceAmendments": [
+      {
+        "amount": 6250,
+        "currency": "USD",
+        "priceBasis": "per person, complete10d9n programme by number of guests travelling together",
+        "room": "SGL",
+        "groupSize": 1,
+        "season": "2027",
+        "sourceLocator": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]",
+        "accommodation": "Standard rooms; hotels tbl11, breakfast"
+      },
+      {
+        "amount": 3289,
+        "currency": "USD",
+        "priceBasis": "per person, complete10d9n programme by number of guests travelling together",
+        "room": "DBL",
+        "groupSize": 2,
+        "season": "2027",
+        "sourceLocator": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]",
+        "accommodation": "Standard rooms; hotels tbl11, breakfast"
+      },
+      {
+        "amount": 3089,
+        "currency": "USD",
+        "priceBasis": "per person, complete10d9n programme by number of guests travelling together",
+        "room": "TRP",
+        "groupSize": 3,
+        "season": "2027",
+        "sourceLocator": "/w:document/w:body/w:tbl[12]/w:tr[1]/w:tc[1]",
+        "accommodation": "Standard rooms; hotels tbl11, breakfast"
+      },
+      {
+        "amount": 800,
+        "currency": "USD",
+        "priceBasis": "from per person, excluded SaoPaulo–Rio–Salvador domestic flights",
+        "included": false,
+        "isFrom": true,
+        "sourceLocator": "/w:document/w:body/w:p[69]",
+        "note": "Not a package fare; availability subject to booking."
+      }
+    ]
+  }
+}

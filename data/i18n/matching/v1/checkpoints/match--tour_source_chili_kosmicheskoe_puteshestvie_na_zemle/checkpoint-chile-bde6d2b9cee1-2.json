@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+  "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+  "checkpointId": "checkpoint-chile-bde6d2b9cee1-2",
+  "partial": {
+    "submissionId": "submission-match-tour_source_chili_kosmicheskoe_puteshestvie_na_zemle-1",
+    "result": {
+      "entityId": "tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+      "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_chili_kosmicheskoe_puteshestvie_na_zemle",
+      "outcome": "selected_2027",
+      "selectedSource": {
+        "driveFileId": "1NU3aFb_Gq2KBAoWRZcdXVASs6zbVSeR6",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "1aee4f0a97d87a378dc73951d82e970facb5258ab73aabb123869cef0e26aa7c",
+        "modifiedTime": "2026-10-22T13:53:03.986Z"
+      },
+      "checkedYears": [
+        2027
+      ],
+      "evidence": [
+        "Full 2027 DOCX matches six days and five nights: Santiago city tour; Valparaiso/Vina; flight north and Moon/Death valleys; Miscanti/Miniques/Chaxa and Toconao/Socaire; El Tatio/Machuca and flight Santiago; departure.",
+        "Included driver transfers,4-star BB hotels,group English excursions,lunch Socaire and geyser breakfast match. DOCX adds updated optional astronomy USD150 versus RU100; programme priceFrom is USD2963 (3 guests DBL), not RU3892 (2 guests DBL).",
+        "Extracted141 nonempty segments and15 tables with no tracked changes. Explicit 2027 six-column matrix preserves group-size and occupancy; no human review required for EN guide changes."
+      ],
+      "dayAlignment": [
+        {
+          "day": 1,
+          "sourceRef": "word/document.xml#p0066"
+        },
+        {
+          "day": 2,
+          "sourceRef": "word/document.xml#p0067"
+        },
+        {
+          "day": 3,
+          "sourceRef": "word/document.xml#p0079"
+        },
+        {
+          "day": 4,
+          "sourceRef": "word/document.xml#p0081"
+        },
+        {
+          "day": 5,
+          "sourceRef": "word/document.xml#p0092"
+        },
+        {
+          "day": 6,
+          "sourceRef": "word/document.xml#p0093"
+        }
+      ],
+      "priceAmendments": [
+        {
+          "amount": 7636,
+          "currency": "USD",
+          "priceBasis": "per person for programme; hotels + BB + services",
+          "groupSize": 1,
+          "occupancy": "SGL",
+          "year": 2027,
+          "accommodation": "4-star Novotel Santiago Providencia and Hotel Kimal",
+          "sourceLocator": "word/document.xml#p0136",
+          "excluded": "Domestic/international flights; optional excursions"
+        },
+        {
+          "amount": 4574,
+          "currency": "USD",
+          "priceBasis": "per person for programme; hotels + BB + services",
+          "groupSize": 2,
+          "occupancy": "SGL",
+          "year": 2027,
+          "accommodation": "4-star Novotel Santiago Providencia and Hotel Kimal",
+          "sourceLocator": "word/document.xml#p0137",
+          "excluded": "Domestic/international flights; optional excursions"
+        },
+        {
+          "amount": 3892,
+          "currency": "USD",
+          "priceBasis": "per person for programme; hotels + BB + services",
+          "groupSize": 2,
+          "occupancy": "DBL",
+          "year": 2027,
+          "accommodation": "4-star Novotel Santiago Providencia and Hotel Kimal",
+          "sourceLocator": "word/document.xml#p0138",
+          "excluded": "Domestic/international flights; optional excursions"
+        },
+        {
+          "amount": 3644,
+          "currency": "USD",
+          "priceBasis": "per person for programme; hotels + BB + services",
+          "groupSize": 3,
+          "occupancy": "SGL",
+          "year": 2027,
+          "accommodation": "4-star Novotel Santiago Providencia and Hotel Kimal",
+          "sourceLocator": "word/document.xml#p0139",
+          "excluded": "Domestic/international flights; optional excursions"
+        },
+        {
+          "amount": 2963,
+          "currency": "USD",
+          "priceBasis": "per person for programme; hotels + BB + services",
+          "groupSize": 3,
+          "occupancy": "DBL",
+          "year": 2027,
+          "accommodation": "4-star Novotel Santiago Providencia and Hotel Kimal",
+          "sourceLocator": "word/document.xml#p0140",
+          "excluded": "Domestic/international flights; optional excursions"
+        },
+        {
+          "amount": 2969,
+          "currency": "USD",
+          "priceBasis": "per person for programme; hotels + BB + services",
+          "groupSize": 3,
+          "occupancy": "TRP",
+          "year": 2027,
+          "accommodation": "4-star Novotel Santiago Providencia and Hotel Kimal",
+          "sourceLocator": "word/document.xml#p0141",
+          "excluded": "Domestic/international flights; optional excursions"
+        },
+        {
+          "amount": 150,
+          "currency": "USD",
+          "priceBasis": "per person optional astronomical group tour in English",
+          "sourceLocator": "word/document.xml#p0080",
+          "availability": "Not available around full moon",
+          "includedInProgrammePrice": false
+        }
+      ]
+    },
+    "reason": "Recovered prior checkpoint with exact matching jobId/sourceFingerprint. Three identical complete attempts failed with GitHub internal GraphQL error at update_ref; last trace D739:3584B8:C68C579:1227159E:6AE3A076. Result not confirmed."
+  }
+}

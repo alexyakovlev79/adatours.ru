@@ -6,11 +6,11 @@
   "pilotOnly": true,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T07:00:00Z",
+  "updatedAt": "2026-10-29T08:31:00Z",
   "counts": {
     "held": 353,
-    "queued": 4,
-    "leased": 1,
+    "queued": 5,
+    "leased": 0,
     "ready": 0,
     "retryable": 0,
     "blocked_external": 0,
@@ -35,15 +35,15 @@
     "01": {
       "counts": {
         "held": 28,
-        "queued": 1,
-        "leased": 1,
+        "queued": 2,
+        "leased": 0,
         "ready": 0,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T08:30:00.000Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "02": {
@@ -244,11 +244,5 @@
     }
   },
   "smokeOnly": true,
-  "activeOwners": {
-    "smoke-worker-b": {
-      "token": "smoke-token-b",
-      "jobId": "match:tour_brazil_best_rio_express_six_days",
-      "expiresAt": "2026-10-29T08:30:00.000Z"
-    }
-  }
+  "activeOwners": {}
 }

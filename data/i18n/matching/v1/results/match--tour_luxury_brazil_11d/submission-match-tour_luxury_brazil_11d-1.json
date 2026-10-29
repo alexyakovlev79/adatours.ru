@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_luxury_brazil_11d",
+  "result": {
+    "entityId": "tour_luxury_brazil_11d",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_luxury_brazil_11d",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+      "modifiedTime": "2026-10-21T20:49:36.876Z",
+      "filename": "Luxury Brazil 11d10n 2027 ENG com 20% (1).docx",
+      "folderPath": "2027/Brazil 2027",
+      "editionYear": 2027,
+      "sourceUrl": "https://docs.google.com/document/d/1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K/edit"
+    },
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml#p0066",
+        "sourceRefs": [
+          "word/document.xml#p0066",
+          "word/document.xml#p0067"
+        ]
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml#p0078",
+        "sourceRefs": [
+          "word/document.xml#p0078",
+          "word/document.xml#p0079",
+          "word/document.xml#p0080"
+        ]
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml#p0091"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml#p0092",
+        "optionalSourceRefs": [
+          "word/document.xml#table0015"
+        ]
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml#p0104"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml#p0105"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml#p0106"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml#p0119"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml#p0120",
+        "sourceDayLabel": "Days 9–10"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml#p0120",
+        "sourceDayLabel": "Days 9–10"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml#p0122"
+      }
+    ],
+    "evidence": [
+      "Identity confirmed by all eleven day numbers and distinctive route Rio→Iguazu→Rio/Buzios: day2 Sugarloaf/city/VIP access; day3 Corcovado/train/Colombo; day4 free/optional islands/helicopter/cocktail; day5 flight; day6 Brazilian falls; day7 Argentine falls; day8 Buzios transfer; days9–10 beach; day11 airport. Argentina is visited for the falls; not an unrelated Brazil/Argentina VIP multi-city product.",
+      "Selected newer full Word 1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K, 21Oct2026, explicitly2027. Compared older VIP copy1Mp11SC8Lbrt3gVTVLZwkFKNlaKnbFMDF, SHA256 be425762e467c3adc4924e6ffdb8a464405401b2fee93799b326fe3818ff1b41, modified24Sep2026: same eleven-day route but Belmond/LaBorie hotels and rates16500/8426. Selected October programme's Miramar/DoubleTree/CasasBrancas package, without mixing older hotel's higher rates.",
+      "Current RU only exposes from4609 and no full tariff table. Newer Word's complete per-person standard-room5-starBB+services SGL8349,DBL4609,TPL4287 is preserved as three structured priceAmendments, each with exact source cell and package/season. DBL matches current4609; missing SGL/TPL must be added, and all repeated amounts reconciled by the master using explicit occupancy.",
+      "EN guide and included Bird Park on day6 follow newer Word; RU lists Russian guide and optional park. These content differences are authorized Word content, not a mandatory review blocker. Macuco remains optional. No content translated and no published price changed in this matching stage.",
+      "Word title says11d10n but accommodation table prints Rio3n/Foz2n/Buzios3n (8 total). Preserve the printed tariff package and flag sourceArithmeticNote; do not invent two extra nights or silently change the itinerary. This does not undermine identity established by all eleven days. Domestic flights remain excluded from700USD perperson; national holidays and major events excluded."
+    ],
+    "priceAmendments": [
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "accommodationCategory": "5-star hotels, standard room, breakfast (BB) + services",
+        "hotelPackage": [
+          {
+            "city": "Rio de Janeiro",
+            "hotel": "Miramar Copacabana",
+            "nightsAsPrinted": 3
+          },
+          {
+            "city": "Foz do Iguacu",
+            "hotel": "DoubleTree by Hilton",
+            "nightsAsPrinted": 2
+          },
+          {
+            "city": "Buzios",
+            "hotel": "Casas Brancas Boutique Spa",
+            "nightsAsPrinted": 3
+          }
+        ],
+        "validityYear": 2027,
+        "seasonConditions": "Except national holidays, major international events and congresses",
+        "sourceDriveFileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "sourceSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "sourceModifiedTime": "2026-10-21T20:49:36.876Z",
+        "scope": "shared_RU_EN",
+        "hotelSourceLocator": "word/document.xml#table0011",
+        "preservePrintedConditions": true,
+        "amount": 8349,
+        "roomType": "SGL",
+        "occupancy": 1,
+        "rateKind": "base",
+        "sourceLocator": "word/document.xml#p0159",
+        "replaces": "missing complete tariff table; existing priceFrom4609 is DBL"
+      },
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "accommodationCategory": "5-star hotels, standard room, breakfast (BB) + services",
+        "hotelPackage": [
+          {
+            "city": "Rio de Janeiro",
+            "hotel": "Miramar Copacabana",
+            "nightsAsPrinted": 3
+          },
+          {
+            "city": "Foz do Iguacu",
+            "hotel": "DoubleTree by Hilton",
+            "nightsAsPrinted": 2
+          },
+          {
+            "city": "Buzios",
+            "hotel": "Casas Brancas Boutique Spa",
+            "nightsAsPrinted": 3
+          }
+        ],
+        "validityYear": 2027,
+        "seasonConditions": "Except national holidays, major international events and congresses",
+        "sourceDriveFileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "sourceSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "sourceModifiedTime": "2026-10-21T20:49:36.876Z",
+        "scope": "shared_RU_EN",
+        "hotelSourceLocator": "word/document.xml#table0011",
+        "preservePrintedConditions": true,
+        "amount": 4609,
+        "roomType": "DBL",
+        "occupancy": 2,
+        "rateKind": "base",
+        "sourceLocator": "word/document.xml#p0160",
+        "replaces": "existing DBL priceFrom4609 confirmed; add explicit full row and basis"
+      },
+      {
+        "currency": "USD",
+        "priceBasis": "per_person",
+        "accommodationCategory": "5-star hotels, standard room, breakfast (BB) + services",
+        "hotelPackage": [
+          {
+            "city": "Rio de Janeiro",
+            "hotel": "Miramar Copacabana",
+            "nightsAsPrinted": 3
+          },
+          {
+            "city": "Foz do Iguacu",
+            "hotel": "DoubleTree by Hilton",
+            "nightsAsPrinted": 2
+          },
+          {
+            "city": "Buzios",
+            "hotel": "Casas Brancas Boutique Spa",
+            "nightsAsPrinted": 3
+          }
+        ],
+        "validityYear": 2027,
+        "seasonConditions": "Except national holidays, major international events and congresses",
+        "sourceDriveFileId": "1L1svAsQRNqNkd-O2liYEnhVhwBso6y6K",
+        "sourceSha256": "5947c8ce2c285823267200b410bcbe27116a71a24d21243d99ddfa78478f1a2f",
+        "sourceModifiedTime": "2026-10-21T20:49:36.876Z",
+        "scope": "shared_RU_EN",
+        "hotelSourceLocator": "word/document.xml#table0011",
+        "preservePrintedConditions": true,
+        "amount": 4287,
+        "roomType": "TPL",
+        "sourceRoomLabel": "TRP",
+        "occupancy": 3,
+        "rateKind": "base",
+        "sourceLocator": "word/document.xml#p0161",
+        "replaces": "missing triple tariff; do not interpret as group total"
+      }
+    ],
+    "priceIntegrationNotes": {
+      "currentPriceFrom": 4609,
+      "currentPriceFromRoomBasis": "DBL",
+      "lowestPublishedWordTariff": {
+        "amount": 4287,
+        "currency": "USD",
+        "roomType": "TPL",
+        "priceBasis": "per_person"
+      },
+      "instruction": "Master must reconcile priceFrom, table, explanatory text and shared RU/EN offer using an explicit room basis; never average/merge distinct hotel packages.",
+      "sourceArithmeticNote": "11d10n itinerary but printed hotel table3+2+3=8n. No invented hotel nights."
+    },
+    "alternatives": [
+      {
+        "driveFileId": "1Mp11SC8Lbrt3gVTVLZwkFKNlaKnbFMDF",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "be425762e467c3adc4924e6ffdb8a464405401b2fee93799b326fe3818ff1b41",
+        "modifiedTime": "2026-09-24T20:36:20.428Z",
+        "reason": "older VIP hotel package; same route, different package rates; newer October edition selected"
+      }
+    ],
+    "extraction": {
+      "extractorVersion": "docx-segments-v1",
+      "parts": [
+        "word/document.xml",
+        "word/endnotes.xml",
+        "word/footer1.xml",
+        "word/footnotes.xml",
+        "word/header1.xml"
+      ],
+      "trackedChangeCount": 0,
+      "sourceBytes": 2858053,
+      "tableCount": 19,
+      "segmentCount": 175
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+  "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+  "checkpointId": "checkpoint-tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro-2",
+  "partial": {
+    "result": {
+      "entityId": "tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+      "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro",
+      "outcome": "selected_2027",
+      "checkedYears": [
+        2027
+      ],
+      "selectedSource": {
+        "driveFileId": "1pI1TfG9Ob6xxrE83eNegogRXO0nZm4N8",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "16f343710ce750f32511845e692f5ea2a138a6660a2ad124fc3b116600c58f69",
+        "modifiedTime": "2026-10-21T20:51:42.705Z"
+      },
+      "evidence": [
+        "Full DOCX 2027 confirms the distinctive 8D/7N Cuiaba–Porto Jofre/Pantanal–Nobres/Aquario Encantado–Chapada–Rio combination, including boat/wildlife safaris and full board in Pantanal.",
+        "The RU programme contains the same component stays: one Cuiaba night, one Chapada night, two Porto Jofre nights and three Rio nights; EN 2027 reorders first five days. Exact Rio Sugar Loaf day 6, Corcovado day 7 and departure day 8 match.",
+        "2027 Word price table carries USD 5,996 DBL and USD 5,292 TRP per person; domestic flights from USD 750 per person explicitly excluded. Accommodation edition differs (Casa da Quinera/Santa Rosa Lodge), accepted per workflow v1.3."
+      ],
+      "dayAlignment": [
+        {
+          "day": 1,
+          "sourceRef": "word/document.xml /w:document/w:body/*[35]",
+          "sourceDay": 4,
+          "note": "RU Bom Jardim/Aquario Encantado and Chapada moved to EN day 4."
+        },
+        {
+          "day": 2,
+          "sourceRef": "word/document.xml /w:document/w:body/*[36]",
+          "sourceDay": 5,
+          "note": "Chapada waterfall and Cuiaba now EN day 5; Cuiaba overnight RU day 2 is EN day 1 at body/*[23]."
+        },
+        {
+          "day": 3,
+          "sourceRef": "word/document.xml /w:document/w:body/*[24]",
+          "sourceDay": 2,
+          "note": "Transfer Cuiaba to Porto Jofre and first boat safari."
+        },
+        {
+          "day": 4,
+          "sourceRef": "word/document.xml /w:document/w:body/*[25]",
+          "sourceDay": 3,
+          "note": "Full day Pantanal wildlife safari."
+        },
+        {
+          "day": 5,
+          "sourceRef": "word/document.xml /w:document/w:body/*[36]",
+          "sourceDay": 5,
+          "note": "Cuiaba airport to Rio; RU morning jaguar safari no longer explicit."
+        },
+        {
+          "day": 6,
+          "sourceRef": "word/document.xml /w:document/w:body/*[47]",
+          "sourceDay": 6
+        },
+        {
+          "day": 7,
+          "sourceRef": "word/document.xml /w:document/w:body/*[48]",
+          "sourceDay": 7
+        },
+        {
+          "day": 8,
+          "sourceRef": "word/document.xml /w:document/w:body/*[49]",
+          "sourceDay": 8
+        }
+      ],
+      "priceAmendments": [
+        {
+          "amount": 5996,
+          "currency": "USD",
+          "priceBasis": "per person",
+          "roomOccupancy": "DBL",
+          "accommodation": "4-star hotels/lodges or similar; Deville Cuiaba 1n, Santa Rosa Lodge 2n, Casa da Quinera 1n, Arena Leme 3n",
+          "year": 2027,
+          "sourceLocator": "word/document.xml /w:document/w:body/*[59]/w:tr[1]/w:tc[1]//w:tbl/w:tr[3]/w:tc[2]"
+        },
+        {
+          "amount": 5292,
+          "currency": "USD",
+          "priceBasis": "per person",
+          "roomOccupancy": "TRP",
+          "accommodation": "4-star hotels/lodges or similar; Deville Cuiaba 1n, Santa Rosa Lodge 2n, Casa da Quinera 1n, Arena Leme 3n",
+          "year": 2027,
+          "sourceLocator": "word/document.xml /w:document/w:body/*[59]/w:tr[1]/w:tc[1]//w:tbl/w:tr[3]/w:tc[3]"
+        }
+      ],
+      "supplements": [
+        {
+          "amountFrom": 750,
+          "currency": "USD",
+          "priceBasis": "per person",
+          "service": "Domestic flights excluded",
+          "sourceLocator": "word/document.xml /w:document/w:body/*[16]"
+        }
+      ]
+    },
+    "submissionId": "submission-match-tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro-1",
+    "blocker": "Error: {\"content\":[{\"type\":\"text\",\"text\":\"GithubGraphQLAPIError: [{'message': 'Something went wrong while executing your query on 2026-10-29T20:53:48Z. Please include `9347:B4D86:CDD4A95:12D36F39:6AE3B25B` when reporting this issue.'}]\"}],\"structuredContent\":{\"error\":\"GithubGraphQLAPIError: [{'message': 'Something went wrong while executing your query on 2026-10-29T20:53:48Z. Please include `9347:B4D86:CDD4A95:12D36F39:6AE3B25B` when reporting this issue.'}]\",\"error_code\":\"UNKNOWN\"},\"isError\":true}",
+    "verifiedAgainSha256": "16f343710ce750f32511845e692f5ea2a138a6660a2ad124fc3b116600c58f69"
+  }
+}

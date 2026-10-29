@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_aktivnyj_ekvador",
+  "result": {
+    "entityId": "tour_source_aktivnyj_ekvador",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_aktivnyj_ekvador",
+    "outcome": "not_found_both",
+    "selectedSource": null,
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU is a specific 9-day adventure: Quito/Mitad del Mundo, Rucu Pichincha, Cotopaxi horse riding, Quilotoa rim, Rio Blanco canyoning at Baños, Tena/Jatunyaku rafting, Papallacta and departure. Full 2027 Mainland 9d DOCX is an Anakonda Amazon cruise itinerary via Coca/Yasuní, not this route.",
+      "Full 2027 Active Ecuador + Cruise 16d DOCX and full 2026 Active Ecuador 13d DOCX instead use Mindo, a five-day Pasochoa/Rumiñahui/Illinizas/Quilotoa/Chimborazo trek and Quijos rafting before Baños. Neither has the defining Rio Blanco canyoning and Tena/Jatunyaku segment; the 2027 also adds Grand Majestic Galápagos cruise. These are distinct products, not merely guide-language or hotel updates.",
+      "Full 2026 Mainland 9d repeats the Anakonda cruise product. Expanded complete 732-document inventory and Old Designs Ecuador folder (13 entries) searched. Full quarantined Active+Cruise 2027 confirms the same different 16-day trekking/cruise programme. MICE folder 95 entries includes Ecuador 6d+Magic Galapagos; full document is Quito+island hopping, not the mainland active 9d route. No suitable English source found for either year."
+    ],
+    "checkedSources": [
+      {
+        "driveFileId": "1l9YB4o3qmbgB0wP6CowucZNONmabrZsx",
+        "year": 2027,
+        "sourceSha256": "7ed8750888b7f18be24f421dc2560253762d9ed3c8eabc271c3bc03c2ccfb178",
+        "locators": [
+          "/w:document/w:body/w:p[18]",
+          "/w:document/w:body/w:p[27]"
+        ],
+        "reason": "9-day Anakonda cruise, not active circuit"
+      },
+      {
+        "driveFileId": "1QmQiAKzIZODaodiZaGBp4o1_K8E2dDo0",
+        "year": 2026,
+        "sourceSha256": "4c3a0c089fa8fd83ce2e50ee9ffcbdfeeec860f8dd9f654eabe18c733ba082df",
+        "locators": [
+          "/w:document/w:body/w:p[15]",
+          "/w:document/w:body/w:p[20]"
+        ],
+        "reason": "Same different luxury Amazon cruise"
+      },
+      {
+        "driveFileId": "1KCNZBRUJc3mXxCUTiij5isFejcpilWNm",
+        "year": 2027,
+        "sourceSha256": "04dd25c9dfc9a29b0c72b701285222dfe308c29b1b67adb51726768145b0e4ae",
+        "locators": [
+          "/w:document/w:body/w:p[18]",
+          "/w:document/w:body/w:p[28]",
+          "/w:document/w:body/w:p[40]"
+        ],
+        "reason": "16 days with five-day Andes trek, Quijos and Galapagos"
+      },
+      {
+        "driveFileId": "1aMNBOgd-6s71uwS-aEM_gfDEmhLQHHzx",
+        "year": 2026,
+        "sourceSha256": "7c5d98482c31f50b5ee1a0833d504bfd399821348a9b7fe122728d6546d59b4d",
+        "locators": [
+          "/w:document/w:body/w:p[15]",
+          "/w:document/w:body/w:p[55]",
+          "/w:document/w:body/w:p[112]"
+        ],
+        "reason": "13-day distinct trek and Quijos route"
+      },
+      {
+        "driveFileId": "11AtlU1KLloJku-ucyctUYQ6vUcEC03rn",
+        "year": 2027,
+        "quarantined": true,
+        "sourceSha256": "56049363592190f960b7b15e4491126de64bd7df51558bb399e51f15a24204b0",
+        "locators": [
+          "/w:document/w:body/w:p[50]",
+          "/w:document/w:body/w:p[109]",
+          "/w:document/w:body/w:p[156]"
+        ],
+        "reason": "Quarantine confirms five-day trek, Quijos and Grand Majestic cruise"
+      },
+      {
+        "driveFileId": "1AbtT9uM94j7Tzjqq1KcvxSf2oOj5tCBb",
+        "year": 2026,
+        "quarantined": true,
+        "sourceSha256": "43492fa65b8d944992e9f88097a84383b428cd64e6bd2786c48356f6cd2e5a97",
+        "locators": [
+          "/w:document/w:body/w:p[16]",
+          "/w:document/w:body/w:p[34]"
+        ],
+        "reason": "MICE 6-day Quito and Galapagos island programme"
+      }
+    ]
+  }
+}

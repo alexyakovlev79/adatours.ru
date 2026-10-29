@@ -1,0 +1,23 @@
+name: Ada EN matching queue reaper
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ada-en-matching-reaper
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Release expired leases and requeue timed retries only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/i18n/matching-maintenance.mjs --apply

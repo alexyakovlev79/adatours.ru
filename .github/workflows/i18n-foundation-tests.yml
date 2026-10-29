@@ -24,6 +24,7 @@ jobs:
         run: |
           node --check scripts/i18n/matching-core.mjs
           node --check scripts/i18n/matching-remote.mjs
+          node --check scripts/i18n/matching-maintenance.mjs
       - name: Test foundation and matching state machine
         run: node --test tests/i18n/*.test.mjs
       - name: Verify all frozen matching jobs and shards

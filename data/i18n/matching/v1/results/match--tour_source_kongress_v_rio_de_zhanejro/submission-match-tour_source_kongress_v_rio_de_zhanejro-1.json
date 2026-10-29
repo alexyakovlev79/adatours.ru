@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_kongress_v_rio_de_zhanejro",
+  "result": {
+    "entityId": "tour_source_kongress_v_rio_de_zhanejro",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_kongress_v_rio_de_zhanejro",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "14nRX0wYh8xtWOCRYW3YxthdOeZdCM3Xh",
+      "sourceYearFolder": 2027,
+      "modifiedTime": "2026-10-07T14:17:04.531Z",
+      "sourceSha256": "cd871686a1930b3d4ded4d5adada17af9400a6a7b6009d6dbf3af08dadb18c42"
+    },
+    "evidence": [
+      "Полный Congress in Rio 2027: 5 дней/4 ночи, базовая группа 45, конгресс дни 2–4 совпадает с RU. Corcovado+Colombo+Scenarium день 2, Sugar Loaf+Caix de Oriente+Marius день 3, Tijuca/Cook in Rio/islands/bay+Assador день 4 и airport день 5.",
+      "Полные таблицы XML [65] и [69] прочитаны. Тарифы по услугам, не общая стоимость тура; групповые трансферы не смешиваются с per person. Fogo de Chao день 1 дополнен источником; on-request активность дня 4 остаётся без вымышленной суммы."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[28]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[36]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[44]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[52]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[58]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 600,
+        "currency": "USD",
+        "priceBasis": "per group",
+        "service": "arrival transfer",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[2]"
+      },
+      {
+        "amount": 100,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "service": "Fogo de Chao dinner transfer",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[3]"
+      },
+      {
+        "amount": 175,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "service": "Corcovado tickets lunch",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[4]"
+      },
+      {
+        "amount": 138,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "service": "Rio Scenarium dinner",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[5]"
+      },
+      {
+        "amount": 155,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "service": "Sugar Loaf lunch",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[6]"
+      },
+      {
+        "amount": 62,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "service": "Sugar Loaf speed access supplement",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[7]"
+      },
+      {
+        "amount": 187,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "service": "Marius dinner transfers",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[8]"
+      },
+      {
+        "amount": 160,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "service": "Assador dinner transfers",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[10]"
+      },
+      {
+        "amount": 600,
+        "currency": "USD",
+        "priceBasis": "per group",
+        "service": "departure transfer",
+        "groupSize": 45,
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[65]/w:tr[11]"
+      },
+      {
+        "amount": 2700,
+        "currency": "USD",
+        "priceBasis": "per room per day; from",
+        "service": "meeting room",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[69]/w:tr[2]"
+      },
+      {
+        "amount": 25,
+        "amountMax": 45,
+        "currency": "USD",
+        "priceBasis": "from; basis not specified",
+        "service": "coffee breaks",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[69]/w:tr[3]"
+      },
+      {
+        "amount": 80,
+        "amountMax": 140,
+        "currency": "USD",
+        "priceBasis": "per person; from; depending on drinks included",
+        "service": "welcome reception drinks and finger food",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[69]/w:tr[4]"
+      },
+      {
+        "amount": 562,
+        "currency": "USD",
+        "priceBasis": "per day; 8 hours",
+        "service": "Passat with driver",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[69]/w:tr[5]"
+      }
+    ]
+  }
+}

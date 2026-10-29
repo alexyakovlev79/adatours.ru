@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_tur_v_kolumbiyu_na_10_dnej",
+  "result": {
+    "entityId": "tour_source_tur_v_kolumbiyu_na_10_dnej",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_tur_v_kolumbiyu_na_10_dnej",
+    "outcome": "selected_2027",
+    "checkedYears": [
+      2027
+    ],
+    "selectedSource": {
+      "driveFileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+      "sourceYearFolder": 2027,
+      "name": "VIP Colombia 2027 ENG com 20.docx",
+      "modifiedTime": "2026-09-24T20:32:48.078Z",
+      "sourceSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628",
+      "sourceFormat": "docx",
+      "editionYearConflict": true,
+      "internalEditionYear": 2024
+    },
+    "evidence": [
+      "Full Word from 2027/VIP Programs inspected and hashed. It matches exactly 10 days/9 nights, Bogotá–Pereira–Cartagena–Baru and the unique Four Seasons Casa Medina/Visus/Sofitel Santa Clara/Las Islas hotel sequence.",
+      "Day 3 Guatavita and Zipaquirá, day 4 Cocora/Salento and El Ocaso coffee farm, day 5 dawn hot-air-balloon, canopy and horse riding, day 7 speedboat to Las Islas and days 8–9 island leisure correspond to RU. Candidate list missed this VIP source; expanded full inventory found it.",
+      "Filename and folder say 2027, but actual internal title explicitly says Luxury Colombia 2024. Content match is retained; the two tariff rows are sourcePriceEvidence only. No automatic 2027 priceAmendment is authorized while actual tariff edition year remains unproven."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "/w:document/w:body/w:p[14]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "/w:document/w:body/w:p[19]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "/w:document/w:body/w:p[33]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "/w:document/w:body/w:p[41]",
+        "additionalSourceRefs": [
+          "/w:document/w:body/w:p[45]",
+          "/w:document/w:body/w:p[46]",
+          "/w:document/w:body/w:p[48]"
+        ]
+      },
+      {
+        "day": 5,
+        "sourceRef": "/w:document/w:body/w:p[53]",
+        "additionalSourceRefs": [
+          "/w:document/w:body/w:p[55]",
+          "/w:document/w:body/w:p[58]",
+          "/w:document/w:body/w:p[60]"
+        ]
+      },
+      {
+        "day": 6,
+        "sourceRef": "/w:document/w:body/w:p[66]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "/w:document/w:body/w:p[75]"
+      },
+      {
+        "day": 8,
+        "sourceRef": "/w:document/w:body/w:p[82]"
+      },
+      {
+        "day": 9,
+        "sourceRef": "/w:document/w:body/w:p[82]"
+      },
+      {
+        "day": 10,
+        "sourceRef": "/w:document/w:body/w:p[84]"
+      }
+    ],
+    "sourcePriceEvidence": [
+      {
+        "amount": 10232,
+        "currency": "USD",
+        "priceBasis": "total per person, Colombia deluxe 10d/9n, SNG",
+        "room": "SNG",
+        "sourceLocator": "/w:document/w:body/w:tbl/w:tr[2]",
+        "internalEditionYear": 2024,
+        "eligibleFor2027Amendment": false
+      },
+      {
+        "amount": 7003,
+        "currency": "USD",
+        "priceBasis": "total per person sharing double room (1/2 DBL), Colombia deluxe 10d/9n",
+        "room": "1/2 DBL",
+        "sourceLocator": "/w:document/w:body/w:tbl/w:tr[2]",
+        "internalEditionYear": 2024,
+        "eligibleFor2027Amendment": false
+      }
+    ],
+    "sourceConflict": {
+      "type": "edition_year",
+      "filenameAndFolderYear": 2027,
+      "internalHeadingYear": 2024,
+      "sourceLocator": "/w:document/w:body/w:p[2]",
+      "resolution": "Use matching English content; retain source tariff evidence without automatic current-price application."
+    }
+  }
+}

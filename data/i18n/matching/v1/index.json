@@ -6,12 +6,12 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T17:44:17.158Z",
+  "updatedAt": "2026-10-29T17:44:56.724Z",
   "counts": {
     "held": 0,
     "queued": 322,
-    "leased": 7,
-    "ready": 29,
+    "leased": 6,
+    "ready": 30,
     "retryable": 0,
     "blocked_external": 0,
     "stale_source": 0,
@@ -50,14 +50,14 @@
       "counts": {
         "held": 0,
         "queued": 18,
-        "leased": 1,
-        "ready": 6,
+        "leased": 0,
+        "ready": 7,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T18:43:38.452Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "03": {
@@ -261,11 +261,6 @@
       "jobId": "match:tour_source_argentina_2024",
       "expiresAt": "2026-10-29T18:43:33.953Z"
     },
-    "ada-match-mvtu0mg2-9xr9js30": {
-      "token": "lease-mvtu0mg2-62anan55",
-      "jobId": "match:tour_source_braziliya_argentina_i_chili",
-      "expiresAt": "2026-10-29T18:43:38.452Z"
-    },
     "ada-match-mvtu0vl2-xol9q4v": {
       "token": "lease-mvtu0vl2-b7oyttg",
       "jobId": "match:tour_source_krasota_venesuely",
@@ -380,6 +375,9 @@
     "ada-match-mvtu0mg2-9xr9js30": {
       "token": "lease-mvtu0mg2-62anan55",
       "jobIds": [
+        "match:tour_source_braziliya_argentina_i_chili"
+      ],
+      "completedJobIds": [
         "match:tour_source_braziliya_argentina_i_chili"
       ]
     },

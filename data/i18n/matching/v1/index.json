@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T19:40:04.193Z",
+  "updatedAt": "2026-10-29T19:40:12.861Z",
   "counts": {
     "held": 0,
-    "queued": 118,
-    "leased": 8,
+    "queued": 117,
+    "leased": 9,
     "ready": 232,
     "retryable": 0,
     "blocked_external": 0,
@@ -189,15 +189,15 @@
     "0c": {
       "counts": {
         "held": 0,
-        "queued": 16,
-        "leased": 0,
+        "queued": 15,
+        "leased": 1,
         "ready": 4,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-29T20:40:12.861Z",
       "earliestRetryAt": null
     },
     "0d": {
@@ -290,6 +290,11 @@
       "token": "lease-mvty14hg-w7ume7hr",
       "jobId": "match:tour_brazil_sao_paulo_rio_ilha_paraty_12d",
       "expiresAt": "2026-10-29T20:39:49.693Z"
+    },
+    "ada-match-mvty0vix-vfjlp8l4": {
+      "token": "lease-mvty0vix-vdsm8cri",
+      "jobId": "match:tour_latin_america_six_countries_20_days_2026",
+      "expiresAt": "2026-10-29T20:40:12.861Z"
     }
   },
   "activationPhase": "bulk_open",
@@ -889,7 +894,8 @@
     "ada-match-mvty0vix-vfjlp8l4": {
       "token": "lease-mvty0vix-vdsm8cri",
       "jobIds": [
-        "match:tour_source_costa_rica"
+        "match:tour_source_costa_rica",
+        "match:tour_latin_america_six_countries_20_days_2026"
       ],
       "completedJobIds": [
         "match:tour_source_costa_rica"

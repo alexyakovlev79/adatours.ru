@@ -6,12 +6,12 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-29T20:52:36.801Z",
+  "updatedAt": "2026-10-29T20:52:44.723Z",
   "counts": {
     "held": 0,
     "queued": 1,
-    "leased": 9,
-    "ready": 348,
+    "leased": 8,
+    "ready": 349,
     "retryable": 0,
     "blocked_external": 0,
     "stale_source": 0,
@@ -232,14 +232,14 @@
       "counts": {
         "held": 0,
         "queued": 0,
-        "leased": 1,
-        "ready": 26,
+        "leased": 0,
+        "ready": 27,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-29T21:51:33.026Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     }
   },
@@ -270,11 +270,6 @@
       "token": "lease-mvtyk2h9-oqfnz1ro",
       "jobId": "match:tour_source_ves_mnogolikij_peru_i_senor_sipan",
       "expiresAt": "2026-10-29T20:54:17.894Z"
-    },
-    "ada-match-mvu0qlpg-0enqguh7": {
-      "token": "lease-mvu0qlpg-xpfe5piv",
-      "jobId": "match:tour_source_21_dnevnoe_priklyuchenie_v_peru",
-      "expiresAt": "2026-10-29T21:51:33.026Z"
     },
     "ada-match-mvu0qu8j-i4e8b9eh": {
       "token": "lease-mvu0qu8j-52skzt1u",
@@ -1179,6 +1174,9 @@
     "ada-match-mvu0qlpg-0enqguh7": {
       "token": "lease-mvu0qlpg-xpfe5piv",
       "jobIds": [
+        "match:tour_source_21_dnevnoe_priklyuchenie_v_peru"
+      ],
+      "completedJobIds": [
         "match:tour_source_21_dnevnoe_priklyuchenie_v_peru"
       ]
     },

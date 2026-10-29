@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_vivat_kolumbiya",
+  "result": {
+    "entityId": "tour_source_vivat_kolumbiya",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_vivat_kolumbiya",
+    "outcome": "not_found_both",
+    "checkedYears": [
+      2027,
+      2026
+    ],
+    "selectedSource": null,
+    "quarantinedCandidatesChecked": true,
+    "evidence": [
+      "RU Vivat Colombia is 10 days Bogota(3) → Medellin/Guatape(2) → Pereira/Cocora/Salento/Hacienda Venecia(2) → Cartagena(3), with domestic flights included.",
+      "Full 2027-folder VIP Colombia and 2026-folder VIP Colombia have identical SHA256 2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628: 10d Luxury Colombia 2024 Bogota–Pereira–Cartagena–Baru; no Medellin/Guatape and 3 island nights. Same duration is insufficient.",
+      "Expanded 2027 Explorer 9d, SHA256 8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3, reverses Medellin/Pereira order, combines Bogota city with arrival, replaces Hacienda Venecia with El Ocaso and adds canopy/horse riding and Rosario island. Not a confirmed same product.",
+      "Full 2027 MICE Colombia for Groups BOG MDE PEI CTG 40 pax, SHA256 05ea40b5b7d98f8adf9402c2b0e1c3c59f6f9dd2efcb89a7b191db8a8f52837d, is 11 days Bogota–Pereira–Medellin–Cartagena, adds Rosario, excludes flights and uses group commercial terms; it does not supply RU itinerary.",
+      "2026 Best of Colombia 12d SHA256 9bfd2c4e13e8a3fedfa0a41d1086cf7efcc0c5e69681bda0bf60642f398283e0 replaces Medellin with Cano Cristales (days4–6); rejected.",
+      "Checked 2027/2026 Colombia and VIP manifest entries plus quarantined Old Designs/Colombia list (Explorer9,Complete11,Live13,Iconic14,etc) and MICE expanded candidate; no confirmed English source covering the 10-day product. No prices inferred from similar tours."
+    ],
+    "rejectedSources": [
+      {
+        "driveFileId": "16XkV3q0y6TBvXtVKl4Oo7f9tLyGNVY-U",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628"
+      },
+      {
+        "driveFileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3"
+      },
+      {
+        "driveFileId": "1zUDA27B99EaFWEYzplah2WjDe2usbukI",
+        "sourceYearFolder": 2027,
+        "sourceSha256": "05ea40b5b7d98f8adf9402c2b0e1c3c59f6f9dd2efcb89a7b191db8a8f52837d"
+      },
+      {
+        "driveFileId": "1I3ZLjRaaRJqXyR-_HWoVW7uLO08X7Ctt",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "2ed8bea56390643528bc6784208bce23af2f32f5c23948d9844e7b2ffa5c0628"
+      },
+      {
+        "driveFileId": "1K9Zer9TqHqs8kkv6rQK7iXdnkcLyKM8i",
+        "sourceYearFolder": 2026,
+        "sourceSha256": "9bfd2c4e13e8a3fedfa0a41d1086cf7efcc0c5e69681bda0bf60642f398283e0"
+      }
+    ]
+  }
+}

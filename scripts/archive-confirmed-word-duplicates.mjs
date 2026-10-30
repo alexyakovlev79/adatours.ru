@@ -19,7 +19,7 @@ const requireOk=(v,msg)=>{if(!v)throw Error('Archive preflight: '+msg);};
 const gitSha=p=>cp.execFileSync('git',['rev-parse','HEAD:'+p],{encoding:'utf8'}).trim();
 const getfm=(x)=>x.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)?.[1];
 const field=(fm,k)=>fm?.match(new RegExp('^'+k+':\\s*(.+)$','m'))?.[1]?.trim().replace(/^['"]|['"]$/g,'');
-requireOk(manifest.duplicates.length===6,'Expected six validated pairs');
+requireOk(manifest.duplicates.length===5,'Expected six validated pairs');
 for(const caseInfo of manifest.duplicates){
  const a=byId.get(caseInfo.loser),b=byId.get(caseInfo.winner);
  requireOk(a&&b&&!already.has(a.id)&&!already.has(b.id),'Missing/archived identity '+caseInfo.loser);
@@ -70,7 +70,7 @@ for(const row of seo.entries){
   '; Word '+d.sourceWord+'; историю публикации сохранить.'].filter(Boolean).join('\n');
  counts.seoRows++;
 }
-requireOk(counts.seoRows===6,'Missing rows in SEO registry');
+requireOk(counts.seoRows===5,'Missing rows in SEO registry');
 const articles=[];
 const walk=folder=>{if(!fs.existsSync(folder))return;for(const e of fs.readdirSync(folder,{withFileTypes:true})){
  const p=path.join(folder,e.name);

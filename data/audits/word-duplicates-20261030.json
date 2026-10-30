@@ -18,15 +18,6 @@
       "reason": "Оба 10 дней: Сан-Хосе, Поас/Ла-Пас, Ареналь, 5 дней Тихоокеанского побережья, возврат в Сан-Хосе. Разница в назывании кофейной остановки Дока и старых ценах, но не в продаваемом маршруте. Сохранена более развернутая версия «3 взгляда» с закрепленными SEO-ссылками."
     },
     {
-      "loser": "tour_source_ekvador_zhivaya_priroda",
-      "winner": "tour_source_kontinentalnyj_ekvador_amazoniya",
-      "oldStatus": "approved",
-      "expectedBlob": "8905dff176dc9fb56bb22d4d3ed7a2a4dc2649c7",
-      "word": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
-      "confidence": 0.99,
-      "reason": "Те же 15 дней с одинаковой ценой: Кито, Отавало, Эль-Анхель, Имбабура, Пулулауа, Бельявиста/Миндо, Котопакси, Килотоа, Sacha Lodge и возвращение. Сохранена содержательно более полная запись с условиями и тарифом."
-    },
-    {
       "loser": "tour_source_tur_v_argentinu_v_patagoniyu",
       "winner": "tour_argentina_best_14_days",
       "oldStatus": "approved",
@@ -63,7 +54,15 @@
       "reason": "Те же 11 дней и подтвержденные отели Four Seasons, Eolo Patagonia, Arakur, премиальное размещение у Игуасу. Совпадают города, экскурсии и продолжительность; различия тарифов и языка описания связаны с редакциями."
     }
   ],
-  "remainingWordCollisionGroups": 16,
+  "remainingWordCollisionGroups": 17,
   "policy": "These are expert semantic assessments based on chronological day-by-day programme identity, not calibrated probabilities. A shared Word filename by itself is not enough.",
-  "publication": "No automatic main deployment; verify CI on isolated branch and Google Sheets synchronization separately."
+  "publication": "No automatic main deployment; verify CI on isolated branch and Google Sheets synchronization separately.",
+  "additionalExclusions": [
+    {
+      "loss": "tour_source_ekvador_zhivaya_priroda",
+      "candidateReplacement": "tour_source_kontinentalnyj_ekvador_amazoniya",
+      "reason": "10.10.2026 Anna accepted a correction removing Quilotoa from current published itinerary. Candidate counterpart still schedules Quilotoa on day 10; material itinerary conflict makes automatic archive unsafe.",
+      "status": "KEEP_BOTH_ACTIVE"
+    }
+  ]
 }

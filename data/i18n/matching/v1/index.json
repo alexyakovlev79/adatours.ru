@@ -6,11 +6,11 @@
   "pilotOnly": false,
   "matchingEnabled": true,
   "translationEnabled": false,
-  "updatedAt": "2026-10-30T05:11:39.655Z",
+  "updatedAt": "2026-10-30T05:13:42.268Z",
   "counts": {
     "held": 0,
-    "queued": 1,
-    "leased": 0,
+    "queued": 0,
+    "leased": 1,
     "ready": 357,
     "retryable": 0,
     "blocked_external": 0,
@@ -203,15 +203,15 @@
     "0d": {
       "counts": {
         "held": 0,
-        "queued": 1,
-        "leased": 0,
+        "queued": 0,
+        "leased": 1,
         "ready": 17,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-30T06:13:42.268Z",
       "earliestRetryAt": null
     },
     "0e": {
@@ -250,7 +250,13 @@
     "evidence": "Node24 Actions 40833361987 success, remote CAS smoke branch i18n/matching-smoke-20261029",
     "date": "2026-10-29"
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "amanda-final-match-20261030": {
+      "token": "lease-final-match-20261030",
+      "jobId": "match:tour_source_costa_rica_nicaragua_ru",
+      "expiresAt": "2026-10-30T06:13:42.268Z"
+    }
+  },
   "activationPhase": "bulk_open",
   "ownerAssignments": {
     "ada-match-mvto009g-e0ddwpix": {
@@ -1177,6 +1183,12 @@
         "match:tour_source_brazilskaya_mechta",
         "match:tour_source_gvatemala_kosta_rika",
         "match:tour_source_severnyj_pantanal_vodopady_reki_i_rio_de_zhanejro"
+      ]
+    },
+    "amanda-final-match-20261030": {
+      "token": "lease-final-match-20261030",
+      "jobIds": [
+        "match:tour_source_costa_rica_nicaragua_ru"
       ]
     }
   },

@@ -193,7 +193,12 @@ const metaDescription = schema.metaDescription;
   </head>
   <body>
     {privatePreview ? (
-      <Fragment set:html={renderedBody} />
+      <>
+        <a class="ada-preview-skip" href="#content">Skip to content</a>
+        <SiteHeader theme="light" privatePreview />
+        <Fragment set:html={renderedBody} />
+        <SiteFooter privatePreview />
+      </>
     ) : (
       <>
     <noscript><div><img src="https://mc.yandex.ru/watch/113586792" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
@@ -222,4 +227,6 @@ const metaDescription = schema.metaDescription;
 </html>
 <style>
   #request { scroll-margin-top: 100px; }
+  .ada-preview-skip { position:absolute; top:0; left:12px; z-index:1000; background:white; padding:12px 18px; transform:translateY(-150%); }
+  .ada-preview-skip:focus { transform:translateY(0); }
 </style>

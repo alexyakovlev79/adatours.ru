@@ -110,23 +110,6 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
 
 ---
 <BaseLayout privatePreview lang="en" noindex title={pageTitle} description={pageDescription} showBreadcrumbs={false}>
-  <a class="pilot-skip" href="#content">Skip to content</a>
-  <header class="pilot-header">
-    <div class="container pilot-nav">
-      <a href={pilotCatalogUrl()} class="pilot-wordmark" aria-label="Ada Tours English pilot home">
-        <img src="/brand/adatours-logo-black.svg" width="158" height="36" alt="Ada Tours" />
-      </a>
-      <nav class="pilot-links" aria-label="Private English pilot navigation">
-        <a href={pilotCatalogUrl()} aria-current={kind==='catalog'?'page':undefined}>Journeys</a>
-        {isTour && <a href="#itinerary">Itinerary</a>}
-        {isTour && <a href="#prices">Prices</a>}
-        {(isTour||isExcursion) && <a href="#included">Inclusions</a>}
-        {isExcursion && <a href="#details">Details</a>}
-        {isExcursion && typeof d.priceFrom==='number' && <a href="#prices">Price</a>}
-      </nav>
-      <span class="pilot-pill">Private EN preview</span>
-    </div>
-  </header>
   <main id="content">
     {kind==='catalog' ? (
       <>
@@ -279,26 +262,9 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
       </div>
     </section>
   </main>
-  <footer class="pilot-footer">
-    <div class="container">
-      <strong>Ada Tours</strong>
-      <p>English language pilot · Internal review copy · Not a public booking website</p>
-      <a href={pilotCatalogUrl()}>Back to journeys</a>
-    </div>
-  </footer>
 </BaseLayout>
 
 <style>
-.pilot-skip{position:absolute;transform:translateY(-180%);background:#fff;padding:.7rem 1.4rem;z-index:1000}
-.pilot-skip:focus{transform:translateY(0)}
-.pilot-header{height:76px;position:relative;z-index:10;background:var(--color-bg);border-bottom:1px solid var(--color-line)}
-.pilot-nav{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;height:100%}
-.pilot-wordmark{display:flex;align-items:center;flex-shrink:0}
-.pilot-wordmark img{object-fit:contain;max-height:40px;width:auto}
-.pilot-links{display:flex;align-items:center;gap:clamp(1rem,2.2vw,2rem);font-size:.92rem;font-weight:520}
-.pilot-links a{padding:.7rem .1rem;border-bottom:2px solid transparent}
-.pilot-links a:hover,.pilot-links a[aria-current="page"]{border-color:var(--color-brand)}
-.pilot-pill{font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-brand-deep);background:var(--color-brand-soft);border-radius:99px;padding:.5rem .8rem;white-space:nowrap}
 .pilot-eyebrow,.pilot-kicker{font-size:.73rem;text-transform:uppercase;letter-spacing:.16em;font-weight:650}
 .pilot-eyebrow{color:var(--color-brand)}
 .pilot-kicker{color:var(--color-brand-deep)}
@@ -357,19 +323,11 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
 .pilot-contact h2{font-size:clamp(2.3rem,4.4vw,4.8rem);font-family:var(--font-display);font-weight:400;line-height:1.1;margin:1rem 0}
 .pilot-contact p{max-width:65ch;line-height:1.65;color:#dbdbdb}
 .pilot-contact .pilot-button{flex-shrink:0}
-.pilot-footer{padding-block:2rem;background:#0a1110;color:white}
-.pilot-footer .container{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;justify-content:space-between}
-.pilot-footer p{margin:0;color:#b7bdbb;font-size:.79rem}.pilot-footer a{text-decoration:underline}
 @media(max-width:960px){
  .pilot-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:700px){
- .pilot-header{height:auto;min-height:68px}
- .pilot-nav{flex-wrap:wrap;padding-block:.7rem}
- .pilot-links{order:3;width:100%;justify-content:space-between;overflow-x:auto;font-size:.8rem}
- .pilot-pill{font-size:.58rem}
  .pilot-cards,.pilot-more,.pilot-excursion-index,.pilot-excursion-gallery{grid-template-columns:1fr}
  .pilot-contact-grid{flex-direction:column;align-items:start}
- .pilot-footer .container{align-items:start;flex-direction:column}
 }
 </style>

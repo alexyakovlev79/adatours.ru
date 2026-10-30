@@ -21,7 +21,7 @@ const pages=[
  'en-pilot-private/tour/colombia-essential-5-days/index.html',
  ...manifest.entries.map(e=>'en-pilot-private/excursion/'+e.slug+'/index.html')
 ];
-const assets=new Set(['brand/adatours-logo-black.svg','favicon.svg']);
+const assets=new Set(['brand/adatours-logo-black.svg','brand/adatours-logo-white.svg','favicon.svg']);
 for(const p of pages){
  copy(p);
  const doc=parse(fs.readFileSync(path.join(src,p),'utf8'));

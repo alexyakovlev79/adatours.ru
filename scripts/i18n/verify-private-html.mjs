@@ -37,6 +37,8 @@ for(const c of cases){
  if(tags(head,'link').some(x=>['canonical','alternate'].includes(attr(x,'rel'))))
    fail('Premature public canonical/hreflang '+c.file);
  if(tags(dom,'main').length!==1||tags(dom,'header').length!==1||tags(dom,'footer').length!==1||
+   attr(tags(dom,'header')[0],'data-ada-preview-header')!=='true'||
+   attr(tags(dom,'footer')[0],'data-ada-preview-footer')!=='true'||
    tags(dom,'form').length||tags(dom,'script').some(x=>attr(x,'type')==='application/ld+json')||
    /googletagmanager|site-analytics\.js|form-config\.js/.test(html))
    fail('Live lead submission/analytics leaked '+c.file);
@@ -50,8 +52,9 @@ for(const c of cases){
  if(tourLinks.length<3)fail('Missing internal Tour navigation '+c.file);
  for(const img of imgs){
   const src=attr(img,'src'),alt=attr(img,'alt');
-  if(!alt||forbidden.test(alt))fail('Missing/untranslated image alt '+c.file);
-  if(src!=='/brand/adatours-logo-black.svg'&&!src?.startsWith('https://img.adatours.ru/media/'))
+  const decorative=(src==='/brand/adatours-logo-black.svg'||src==='/brand/adatours-logo-white.svg')&&alt===''&&attr(img,'aria-hidden')==='true';
+  if((!alt&&!decorative)||forbidden.test(alt))fail('Missing/untranslated image alt '+c.file);
+  if(!decorative&&src!=='/brand/adatours-logo-black.svg'&&!src?.startsWith('https://img.adatours.ru/media/'))
    fail('Image is not a shared CDN asset or official logo: '+src);
  }
  if(!stylesheets.length)fail('Astro stylesheet missing '+c.file);

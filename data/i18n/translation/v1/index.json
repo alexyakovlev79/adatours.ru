@@ -4,7 +4,7 @@
   "jobCount": 5,
   "stage": "word_2027",
   "pilotOnly": true,
-  "dispatcherEnabled": true,
+  "dispatcherEnabled": false,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
   "updatedAt": "2026-10-30T12:10:15.046Z",
@@ -244,10 +244,7 @@
       "earliestRetryAt": null
     }
   },
-  "pilotAllowedJobIds": [
-    "en:tour:tour_colombia_essential_5_days:p1",
-    "en:tour:tour_colombia_essential_5_days:p2"
-  ],
+  "pilotAllowedJobIds": [],
   "pilotPolicy": {
     "status": "Colombia 2027 full Word provenance pilot p1/p2 only",
     "safety": "no main, no mass, no publication",
@@ -301,17 +298,19 @@
       ]
     }
   },
-  "pilotAcceptedAt": "2026-10-30T11:27:46.685Z",
+  "pilotAcceptedAt": "2026-10-30T12:11:37.261Z",
   "pilotResult": {
-    "acceptedPackets": 3,
-    "readyBlocks": 18,
-    "wordExactBlocks": 17,
-    "aiGapBlocks": 1,
-    "uniqueTours": 2,
+    "acceptedPackets": 5,
+    "readyBlocks": 30,
+    "wordExactBlocks": 27,
+    "aiGapBlocks": 3,
+    "uniqueTours": 3,
     "allTourBlocksComplete": false,
-    "translationMassLaunchAllowed": false,
     "published": false,
-    "lastQaCommit": "42bdb79a803e5085c7cd05e77cfc23e26af289fc",
-    "sourceCiRunId": 41047125362
+    "qaCommits": [
+      "72a1ccc283968eb7fe6d1e10fe5163aac96e0a01",
+      "3818b13975a63b9d736ab851f9d0b2b14682f814"
+    ],
+    "noActiveLeases": true
   }
 }

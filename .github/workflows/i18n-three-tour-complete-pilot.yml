@@ -1,0 +1,54 @@
+name: ADA EN three Tour full-block pilot validation
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/compile-three-tour-pilot.mjs'
+      - 'data/i18n/translation/pilot-completion-drafts/**'
+      - '.github/workflows/i18n-three-tour-complete-pilot.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          path: feature
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: production
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/translation-staging
+          path: staging
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install isolated pilot authoring dependencies
+        working-directory: feature
+        run: npm install --no-audit --no-fund
+      - name: Check exact reviewed receipts and 142 additional EN slots
+        run: |
+          node feature/scripts/i18n/compile-three-tour-pilot.mjs feature production staging --output /tmp/ada-en-complete-pilot
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const report=JSON.parse(fs.readFileSync('/tmp/ada-en-complete-pilot/summary.json','utf8'));
+          if(report.failures.length||report.reports.length!==3||
+             report.totalSourceSlots!==172||report.totalReadyPrevious!==30||
+             report.totalAdditional!==142||report.publicationAuthorized!==false||
+             report.reports.some(t=>t.fullCoverage!==true||t.approved!==false||t.state!=='review'))
+            throw Error('Incomplete/unsafe full-block pilot coverage');
+          console.log('All 172 EN text slots have draft text; no missing Word evidence and no public release');
+          NODE
+      - name: Save nonpublishing complete-block review packets
+        uses: actions/upload-artifact@v4
+        with:
+          name: ada-en-three-tour-full-coverage-review
+          path: /tmp/ada-en-complete-pilot/
+          retention-days: 14
+          if-no-files-found: error

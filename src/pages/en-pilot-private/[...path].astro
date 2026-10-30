@@ -147,6 +147,26 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
             ))}
           </div>
         </section>
+        <section class="container pilot-index-section" aria-labelledby="private-geography-title">
+          <div class="pilot-section-heading">
+            <span class="pilot-kicker">DISCOVER THE DESTINATION</span>
+            <h2 id="private-geography-title">Brazil, beginning in Rio</h2>
+            <p>Find the country, city and journeys together, all using shared Ada Tours media and a consistent English presentation.</p>
+          </div>
+          <div class="pilot-geo-tiles">
+            <a href="/en-pilot-private/country/brazil/" class="pilot-geo-tile">
+              <img src={pilotMediaUrl('/media/countries/brazil/hero-src-enhanced-20261001.webp')}
+                alt="Christ the Redeemer above the forested hills of Rio de Janeiro, Brazil"
+                width="900" height="560" loading="lazy" />
+              <span>Brazil <small>Discover the country</small></span>
+            </a>
+            <a href="/en-pilot-private/place/rio-de-janeiro/" class="pilot-geo-tile">
+              <img src={pilotMediaUrl('/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp')}
+                alt="Rio de Janeiro in the evening" width="900" height="560" loading="lazy" />
+              <span>Rio de Janeiro <small>Explore the city</small></span>
+            </a>
+          </div>
+        </section>
         <section class="container pilot-index-section" aria-labelledby="private-excursions-title">
           <div class="pilot-section-heading">
             <span class="pilot-kicker">EXCURSIONS IN THESE JOURNEYS</span>
@@ -295,6 +315,12 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
 .pilot-route h2{font-size:clamp(1.8rem,3vw,3rem)}
 .pilot-route-tags{display:flex;flex-wrap:wrap;gap:.75rem;padding:0;margin:1.5rem 0 0;list-style:none}
 .pilot-route-tags li{border-radius:99px;border:1px solid var(--color-line);padding:.7rem 1.1rem;font-size:.87rem}
+.pilot-geo-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,36px)}
+.pilot-geo-tile{display:flex;align-items:flex-end;position:relative;aspect-ratio:1.45;min-width:0;overflow:hidden;color:#fff;background:var(--color-ink-deep)}
+.pilot-geo-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.66;transition:transform .3s}
+.pilot-geo-tile:hover img{transform:scale(1.035)}
+.pilot-geo-tile span{position:relative;padding:clamp(20px,4vw,40px);font-family:var(--font-display);font-size:clamp(1.7rem,3vw,3.2rem)}
+.pilot-geo-tile small{display:block;font-size:.8rem;margin-top:8px;letter-spacing:.08em;text-transform:uppercase}
 .pilot-excursion-note{font-size:.82rem;line-height:1.5;color:var(--color-text-muted);padding-block:1rem 2rem}
 .pilot-excursion-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:3rem;border-top:1px solid var(--color-line)}
 .pilot-excursion-index__link{display:flex;flex-direction:column;gap:.5rem;padding:1.2rem 0;border-bottom:1px solid var(--color-line)}
@@ -329,7 +355,7 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
  .pilot-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:700px){
- .pilot-cards,.pilot-more,.pilot-excursion-index,.pilot-excursion-gallery{grid-template-columns:1fr}
+ .pilot-cards,.pilot-more,.pilot-excursion-index,.pilot-excursion-gallery,.pilot-geo-tiles{grid-template-columns:1fr}
  .pilot-contact-grid{flex-direction:column;align-items:start}
 }
 </style>

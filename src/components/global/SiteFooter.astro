@@ -11,7 +11,9 @@ const {privatePreview=false}=Astro.props;
 const previewColumns=[
  {id:'travel',rail:'left',title:'Journeys',primary:[
    {href:pilotCatalogUrl(),label:'All journeys'},
-   {href:pilotTourUrl('rio-de-janeiro-four-days'),label:'Rio de Janeiro'},
+   {href:'/en-pilot-private/country/brazil/',label:'Brazil'},
+   {href:'/en-pilot-private/place/rio-de-janeiro/',label:'Rio de Janeiro'},
+   {href:pilotTourUrl('rio-de-janeiro-four-days'),label:'Rio in four days'},
    {href:pilotTourUrl('easter-island-3-days'),label:'Easter Island'},
    {href:pilotTourUrl('colombia-essential-5-days'),label:'Colombia'}],children:[],trailing:[]},
  {id:'mice',rail:'right',title:'Rio experiences',primary:[

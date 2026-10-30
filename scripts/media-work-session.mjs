@@ -40,6 +40,23 @@ export function normalizedBatch(input) {
   });
 }
 
+export function validateReceiptProgress(saved, selected) {
+  if (!saved || saved.version !== 1 || !Array.isArray(saved.assets))
+    throw new Error('Invalid saved receipt progress');
+  const selectedKeys = new Set(selected.map(x => x.key));
+  const result = new Map();
+  for (const receipt of saved.assets) {
+    if (!receipt || !selectedKeys.has(receipt.key) || result.has(receipt.key) ||
+        !/^[a-f0-9]{64}$/.test(receipt.sha256 || '') ||
+        !Number.isInteger(receipt.bytes) || receipt.bytes < 1 ||
+        receipt.source !== 'direct-s3' ||
+        !['uploaded-and-verified','already-matching'].includes(receipt.status))
+      throw new Error('Saved receipt does not belong to the exact batch');
+    result.set(receipt.key, receipt);
+  }
+  return result;
+}
+
 function parseFlags(args) {
   const flags = {};
   for (let index = 0; index < args.length; index += 2) {
@@ -143,14 +160,29 @@ async function main() {
   const envelope = JSON.parse(Buffer.from(flags.envelope, 'base64').toString('utf8'));
   const iamToken = openUploadToken(envelope, request, privatePem);
   const items = normalizedBatch(JSON.parse(await fs.readFile(flags.batch, 'utf8')));
+  let saved;
+  try { saved = JSON.parse(await fs.readFile(flags.receipt, 'utf8')); }
+  catch (e) { if (e.code !== 'ENOENT') throw e; saved = { version: 1, assets: [] }; }
+  const previous = validateReceiptProgress(saved, items);
   const receipts = [];
   for (const asset of items) {
-    const receipt = await pushOne(asset, iamToken);
+    let receipt = previous.get(asset.key);
+    if (receipt) {
+      const bytes = await fs.readFile(asset.file);
+      if (receipt.sha256 !== sha(bytes) || receipt.bytes !== bytes.length ||
+          receipt.contentType !== asset.contentType)
+        throw new Error('Saved receipt does not match current local file: ' + asset.key);
+      console.log('already-verified: /' + receipt.key + ' (' + receipt.bytes + ' B)');
+    } else {
+      receipt = await pushOne(asset, iamToken);
+      console.log(receipt.status + ': /' + receipt.key + ' (' + receipt.bytes + ' B)');
+    }
     receipts.push(receipt);
-    console.log(receipt.status + ': /' + receipt.key + ' (' + receipt.bytes + ' B)');
+    const tmp = flags.receipt + '.pending-' + process.pid;
+    await fs.writeFile(tmp, JSON.stringify({ version: 1, assets: receipts }, null, 2) + '\n',
+      { mode: 0o600, flag: 'wx' });
+    await fs.rename(tmp, flags.receipt);
   }
-  await fs.writeFile(flags.receipt, JSON.stringify({ version: 1, assets: receipts }, null, 2) + '\n',
-    { mode: 0o600, flag: 'wx' });
   console.log('Verified receipt: ' + path.resolve(flags.receipt) +
     '\nCommit only the receipt records and MD/JSON pointers, not the source binaries.');
 }

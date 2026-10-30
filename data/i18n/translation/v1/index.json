@@ -4,7 +4,7 @@
   "jobCount": 5,
   "stage": "word_2027",
   "pilotOnly": true,
-  "dispatcherEnabled": false,
+  "dispatcherEnabled": true,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
   "updatedAt": "2026-10-30T11:27:09.915Z",
@@ -244,12 +244,14 @@
       "earliestRetryAt": null
     }
   },
-  "pilotAllowedJobIds": [],
+  "pilotAllowedJobIds": [
+    "en:tour:tour_colombia_essential_5_days:p1",
+    "en:tour:tour_colombia_essential_5_days:p2"
+  ],
   "pilotPolicy": {
-    "status": "one_mixed_word_plus_ai_gap_packet",
-    "date": "2026-10-30",
-    "unitCI": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/41047779504",
-    "massTranslation": false
+    "status": "Colombia 2027 full Word provenance pilot p1/p2 only",
+    "safety": "no main, no mass, no publication",
+    "proof": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/41048829095"
   },
   "activeOwners": {},
   "ownerAssignments": {

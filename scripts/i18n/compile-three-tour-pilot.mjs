@@ -9,10 +9,9 @@ import {resolve,join} from 'node:path';
 import {spawnSync} from 'node:child_process';
 import yaml from 'js-yaml';
 import {
- sourceBlockEvidence,translationApprovalHash,assessOverlay,
- localizeContentEntry,textFingerprint
+ sourceBlockEvidence,translationApprovalHash,assessOverlay,textFingerprint
 } from '../../src/lib/i18n/content-overlay.mjs';
-import {sourceFromContentEntry} from '../../src/lib/i18n/content-adapter.mjs';
+import {sourceFromContentEntry,localizeContentEntry} from '../../src/lib/i18n/content-adapter.mjs';
 const [feature,production,staging]=process.argv.slice(2,5).map(v=>resolve(v));
 const outArg=process.argv.indexOf('--output');
 const output=outArg>=0?resolve(process.argv[outArg+1]):null;

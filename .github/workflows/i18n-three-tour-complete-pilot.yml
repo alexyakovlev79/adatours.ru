@@ -4,6 +4,8 @@ on:
     branches: [feat/english-site-foundation]
     paths:
       - 'scripts/i18n/compile-three-tour-pilot.mjs'
+      - 'src/lib/i18n/content-adapter.mjs'
+      - 'tests/i18n/content-adapter.test.mjs'
       - 'data/i18n/translation/pilot-completion-drafts/**'
       - '.github/workflows/i18n-three-tour-complete-pilot.yml'
   workflow_dispatch:
@@ -65,7 +67,8 @@ jobs:
             if(item.id!==id||item.locale!=='en'||item.data.id!==id||
               item.data.locale!=='en'||overlay.blocks.some(b=>b.state!=='approved')||
               /[\u0400-\u052F]/u.test(overlay.blocks.map(b=>b.text).join(' '))||
-              item.data.itinerary.some(d=>d.text&&/[\u0400-\u052F]/u.test(d.text)))
+              item.data.itinerary.some(d=>d.text&&/[\u0400-\u052F]/u.test(d.text))||
+              /[\u0400-\u052F]/u.test(JSON.stringify(item.data)))
                throw Error('Russian locale leak or unapproved text: '+id);
             console.log(id+': '+overlay.blocks.length+' approved text blocks, no visible RU fallback');
           }

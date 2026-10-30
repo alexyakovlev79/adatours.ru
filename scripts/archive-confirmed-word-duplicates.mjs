@@ -92,7 +92,10 @@ for(const file of articles){
  });
  for(const d of decided){
   const a=next.split(d.oldUrl);if(a.length>1){hits+=a.length-1;next=a.join(d.newUrl);}
-  const z=next.split(d.id);if(z.length>1){hits+=z.length-1;next=z.join(d.activeId);}
+  // Exact stable ID only: never rewrite a longer active ID with this prefix.
+  const word=new RegExp('(?<![A-Za-z0-9_])'+d.id+'(?![A-Za-z0-9_])','g');
+  const matched=next.match(word)||[];
+  if(matched.length){hits+=matched.length;next=next.replace(word,d.activeId);}
  }
  if(next!==s){
   counts.articleFiles++;counts.articleReplacements+=hits;counts.macros+=macros;
@@ -108,8 +111,10 @@ if(apply){
   const s=fs.readFileSync(file,'utf8');
   const target=s.match(/^targetPath:\s*(.+)$/m)?.[1]?.trim();
   if(!target||archPaths.has(target))continue;
-  for(const d of decided)if(s.includes(d.oldUrl)||s.includes(d.id))
-   errors.push({file:path.relative(root,file),oldId:d.id});
+  for(const d of decided){
+    const exactId=new RegExp('(?<![A-Za-z0-9_])'+d.id+'(?![A-Za-z0-9_])');
+    if(s.includes(d.oldUrl)||exactId.test(s))errors.push({file:path.relative(root,file),oldId:d.id});
+  }
  }
 }
 const summary={...counts,candidates:decided,dualMentionArticles:dual.length,

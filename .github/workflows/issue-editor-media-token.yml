@@ -6,21 +6,53 @@ on:
 
 permissions:
   contents: read
-  id-token: write
-  issues: write
 
 concurrency:
   group: ada-editor-media-token-${{ github.event.issue.number }}
   cancel-in-progress: false
 
 jobs:
-  issue:
+  authorize:
     if: >-
       github.repository == 'alexyakovlev79/adatours.ru' &&
       startsWith(github.event.issue.title, '[ADA-MEDIA-TOKEN] ') &&
-      (github.event.issue.author_association == 'OWNER' ||
-       github.event.issue.author_association == 'COLLABORATOR') &&
       github.event.issue.pull_request == null
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    permissions:
+      contents: read
+    outputs:
+      authorized: ${{ steps.auth.outputs.authorized }}
+    steps:
+      - name: Checkout only trusted uploader allowlist
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+          sparse-checkout: |
+            data/media/authorized-uploaders.json
+          sparse-checkout-cone-mode: false
+      - name: Check exact GitHub login before requesting any cloud token
+        id: auth
+        env:
+          MEDIA_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const allowed = JSON.parse(fs.readFileSync('data/media/authorized-uploaders.json', 'utf8'));
+          if (!Array.isArray(allowed.allowedGithubLogins)) throw Error('Invalid uploader allowlist');
+          const approved = allowed.allowedGithubLogins.includes(process.env.MEDIA_ISSUE_AUTHOR);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, 'authorized=' + String(approved) + '\n');
+          console.log(approved ? 'Uploader author approved' : 'Uploader author not allowed');
+          NODE
+
+  issue:
+    needs: authorize
+    if: needs.authorize.outputs.authorized == 'true'
+    permissions:
+      contents: read
+      id-token: write
+      issues: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
@@ -29,10 +61,10 @@ jobs:
       - name: Checkout only trusted token scripts and GitHub editor allowlist
         uses: actions/checkout@v6
         with:
-          ref: main
+          ref: ${{ github.sha }}
           persist-credentials: false
           sparse-checkout: |
-            data/editorial/authorized-users.json
+            data/media/authorized-uploaders.json
             scripts/issue-media-token.mjs
             scripts/lib/media-token-envelope.mjs
           sparse-checkout-cone-mode: false
@@ -53,7 +85,7 @@ jobs:
           import {validateSessionRequest} from './scripts/lib/media-token-envelope.mjs';
           const check = (ok, reason) => { if (!ok) throw new Error(reason); };
           check(Boolean(process.env.YC_SA_ID), 'Missing YC_MEDIA_SA_ID');
-          const allowed = JSON.parse(fs.readFileSync('data/editorial/authorized-users.json', 'utf8'));
+          const allowed = JSON.parse(fs.readFileSync('data/media/authorized-uploaders.json', 'utf8'));
           check(Array.isArray(allowed.allowedGithubLogins)
             && allowed.allowedGithubLogins.includes(process.env.MEDIA_ISSUE_AUTHOR),
             'Editor GitHub login is not authorized to obtain an upload token');

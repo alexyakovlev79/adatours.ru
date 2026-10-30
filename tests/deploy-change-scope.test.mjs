@@ -26,7 +26,7 @@ test('media receipts and enhanced provenance are append-only',()=>{
   assert.ok(safeReceipts(j(a),j({...a,assets:[...a.assets,{...a.assets[0],key:'media/people/g/next-20261030.webp'}]})));
   assert.equal(safeReceipts(j(a),j({...a,assets:[{...a.assets[0],bytes:101}]})),false);
   const e={version:1,description:'gpt',enhancements:[{source:'/media/old.webp',enhanced:'/media/old.webp'}]};
-  const f={...e,enhancements:[...e.enhancements,{source:'/media/new.webp',enhanced:'/media/new.webp',method:'gpt-image',revision:1,enhancedAt:'2026-10-30'}]};
+  const f={...e,enhancements:[...e.enhancements,{source:'/media/people/geovani/new-20261030.webp',enhanced:'/media/people/geovani/new-20261030.webp',method:'gpt-image',revision:1,enhancedAt:'2026-10-30'}]};
   assert.ok(safeEnhancements(j(e),j(f)));
   f.enhancements[0].enhanced='/media/changed.webp';
   assert.equal(safeEnhancements(j(e),j(f)),false);

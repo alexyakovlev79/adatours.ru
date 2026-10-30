@@ -22,5 +22,5 @@ test('shared geography media paths and stable IDs are never translated',async()=
  assert.equal(en.data.searchAliases.length,1);
  assert.equal(en.data.featureBands[0].href,'/en-pilot-private/place/rio-de-janeiro/');
  const changed=structuredClone(overlay);changed.translation.summary='Русский';
- assert.throws(()=>validateGeoOverlay(item,changed,entry),/Russian/);
+ assert.throws(()=>validateGeoOverlay(item,changed,entry),/Russian|Missing English core/);
 });

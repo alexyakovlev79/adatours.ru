@@ -322,3 +322,12 @@ Verified receipts for checkpoint 7:
 - Реальные артефакты (3 `overlays` + 3 `rendered` + 3 Word evidence + summary) сохранены в [`i18n/three-tour-preview-20261030` коммит `ab272489`](https://github.com/alexyakovlev79/adatours.ru/commit/ab27248954bb71fe6582bf796d73626ea8502d5f). Это английские **JSON-модели**, а не HTML/страницы сайта.
 - **Завершено:** техническое пилотное покрытие трех Tour, source/locale/identity/price guards и nonpublic JSON assembly. **Не завершено:** содержательная редактура 142 новых блоков на уровне готового сайта; Astro EN routing, forms/schema/SEO/Search, независимый двухъязычный build, публичная публикация. `main` EN изменениями не затронут, массовый перевод выключен.
 - Сторонний текущий блокер на `main`: [Pages run #41057093032](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41057093032) failed из-за добавленного `public/media/people/geovani/geovani-20261030.webp` после frozen media cutoff. Это отдельный контур, не ошибка EN preview.
+
+
+## Checkpoint 30.10.2026 — непубличный HTML-пилот Astro
+
+- В `feat/english-site-foundation` добавлены `src/pages/en-pilot-private/[...path].astro`, `src/lib/i18n/pilot-html.mjs`, unit- и HTML-проверки и CI workflow. Базовые RU/EN production templates не менялись; генерируются только четыре EN pilot HTML при специальном env-флаге.
+- [Actions #41063022947](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41063022947) — **success**, source commit `e306205e0642a89e889b75ceb62d2a86cf1a911e`. Прошли реальные Astro build, проверка логотипа/CSS, SEO noindex, английских изображений, цен, маршрутов и HTML-пакет.
+- Download-only artifact `ada-en-three-tour-private-html` ID `12982446139`: 1 каталог + 3 туровых HTML, локальные CSS/логотип/favicon; фото с `img.adatours.ru`. Пользовательской ZIP-копией можно пользоваться через локальный HTTP-сервер (README и START_PREVIEW_WINDOWS.bat).
+- Ни деплоя на `adatours.ru`/`adatours.com`, ни публичного EN canonical, ни новых Google Search URL. Контактная форма в пилоте не активна; есть только явный `mailto:`.
+- **Следующий gate:** содержательная редактура 142 новых блоков, сквозное подключение locale resolver к общим Astro-шаблонам и SEO/Schema/Search/forms, сравнение RU/EN релизов. Массовый перевод и публичный EN остаются выключены.

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "jobId": "match:tour_source_costa_rica_nicaragua_ru",
+  "result": {
+    "entityId": "tour_source_costa_rica_nicaragua_ru",
+    "sourceFingerprint": "git:b1b14ed3a8abab9773053f836fed28c2ff77204f:5bb3df67505788d253b1357c2cbf8a0dce2a9b2c84e8e7162226ccfa02ab8a11:tour_source_costa_rica_nicaragua_ru",
+    "outcome": "selected_2027",
+    "selectedSource": {
+      "driveFileId": "1gaudgT06al-sUxmQcsvu7pghRG1gPpwt",
+      "sourceYearFolder": 2027,
+      "sourceSha256": "e284b6756b5fe364ffe2476b42fb1cefd466ca2e3b645d9af46f8d2fd1120e41",
+      "modifiedTime": "2026-10-26T18:31:40.198Z"
+    },
+    "evidence": [
+      "Full 2027 DOCX confirms 13d12n San Jose–Doka/Poas/La Paz–Tortuguero–Arenal–Viento Fresco/Monteverde–Granada/Masaya/Zopango–Pacific Coast–San Jose, all 13 day slots match.",
+      "Updated EN hotels Palma Real/Montana Monteverde/Real La Merced/Pasatiempo replace RU Barcelo/El Establo/Gran Francia/Wyndham; English guide and revised meals/trail are authoritative programme differences with same tour identity.",
+      "2027 tariffs SGL6568 DBL5260 USD per person, min2 travellers, holidays excluded; current RU priceFrom6688 superseded. Tortuguero park17 USD per person remains excluded.",
+      "Tortuguero National Park entrance USD 17/person is an excluded fee, not an included tour tariff."
+    ],
+    "dayAlignment": [
+      {
+        "day": 1,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[23]"
+      },
+      {
+        "day": 2,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[24]"
+      },
+      {
+        "day": 3,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[34]"
+      },
+      {
+        "day": 4,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[35]"
+      },
+      {
+        "day": 5,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[46]"
+      },
+      {
+        "day": 6,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[48]"
+      },
+      {
+        "day": 7,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[58]"
+      },
+      {
+        "day": 8,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[59]"
+      },
+      {
+        "day": 9,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[60]"
+      },
+      {
+        "day": 10,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[68]"
+      },
+      {
+        "day": 11,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[69]"
+      },
+      {
+        "day": 12,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[69]"
+      },
+      {
+        "day": 13,
+        "sourceRef": "word/document.xml:/w:document/w:body/*[70]"
+      }
+    ],
+    "priceAmendments": [
+      {
+        "amount": 6568,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "SGL",
+        "minimumGroupSize": 2,
+        "season": "Any arrival except Christmas, New Year, Easter",
+        "hotels": "Palma Real2n; Pachira1n full board; Arenal Paraiso2n; Montana Monteverde1n; Real La Merced3n; Pasatiempo3n",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[78]"
+      },
+      {
+        "amount": 5260,
+        "currency": "USD",
+        "priceBasis": "per person",
+        "occupancy": "DBL",
+        "minimumGroupSize": 2,
+        "season": "Any arrival except Christmas, New Year, Easter",
+        "hotels": "Palma Real2n; Pachira1n full board; Arenal Paraiso2n; Montana Monteverde1n; Real La Merced3n; Pasatiempo3n",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[78]"
+      }
+    ],
+    "excludedFees": [
+      {
+        "amount": 17,
+        "currency": "USD",
+        "sourceLocator": "word/document.xml:/w:document/w:body/*[81]",
+        "description": "per person, excluded Tortuguero National Park entrance"
+      }
+    ]
+  }
+}

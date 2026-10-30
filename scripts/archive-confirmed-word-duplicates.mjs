@@ -78,6 +78,7 @@ const walk=folder=>{if(!fs.existsSync(folder))return;for(const e of fs.readdirSy
 }};
 walk('data/seo-geo/articles');
 const archPaths=new Set(archive.entries.map(x=>x.url));
+const activeTourIds=new Set(catalogue.filter(x=>!already.has(x.id)).map(x=>x.id));
 for(const file of articles){
  const s=fs.readFileSync(file,'utf8');
  const target=s.match(/^targetPath:\s*(.+)$/m)?.[1]?.trim();
@@ -86,7 +87,11 @@ for(const file of articles){
  const both=decided.filter(d=>s.includes(d.oldUrl)&&s.includes(d.newUrl));
  next=next.replace(/\{\{catalog\.tourTable:([^}]+)\}\}/g,(whole,value)=>{
   const ids=value.split(',').map(x=>x.trim()).filter(Boolean);
-  const mapped=[...new Set(ids.map(x=>decided.find(d=>d.id===x)?.activeId||x))];
+  // Derived table IDs must refer to active live Tour records; stale historical
+  // IDs (including one unrelated pre-existing typo) may not be published.
+  const mapped=[...new Set(ids.map(x=>decided.find(d=>d.id===x)?.activeId||x))]
+    .filter(id=>activeTourIds.has(id));
+  if(!mapped.length)throw Error('No active Tour remains in SEO table: '+path.relative(root,file));
   if(ids.join(',')===mapped.join(','))return whole;
   macros++;return '{{catalog.tourTable:'+mapped.join(',')+'}}';
  });

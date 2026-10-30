@@ -340,3 +340,11 @@ Confirmed implementation in `feat/english-site-foundation`:
 - External Windows review ZIP derived from that artifact opens without a local server, with internal links and assets verified. This ZIP is a user handoff, not a public deployment receipt.
 
 Resume from `4fb996bc` or later feature head. The **next integration gate** is a real shared RU/EN `TourLayout`/locale collection path with translated linked Country/Destination/Excursion, working localized forms and safe SEO/schema/search. The 142 newly authored pilot fragments still need independent editorial review. Do not restart finished Word matching, translation pilot packets or private artifact generation. Public `main`, release flag, production domains and bulk translation remain unchanged by this continuation.
+
+## Checkpoint 30.10.2026 — shared EN Hero/Pricing/Itinerary verified
+
+- Feature commits: `734ac307` shared `Hero`/`TourPricing`; `b3fcfac0` shared `Itinerary` with strict EN guard; `6003af7f` repair of the synthetic dependency test fixture. Public `main` was not changed by this EN work.
+- Confirmed CI: [foundation #41071602979](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41071602979) and [nonpublic HTML #41071603229](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41071603229), both success. Artifact ID `12986280845`, 4 HTML total, 3 Tour pages, 4/3/5 approved EN numbered days.
+- Canonical Excursion dependencies: 4 Rio + 3 Easter Island + 4 Colombia = 11 unique stable IDs, all found in the shared owner manifest. None is silently translated from RU; independent EN Excursion passages remain a gate.
+- Reusable components now: `BaseLayout`, `Hero`, `TripStats`, `TourPricing`, `Itinerary`, `IncludedExcluded`. Complete shared `TourLayout` and localized geography/catalogue/excursion graph are still pending; no public EN deployment, locale SEO/schema/forms/search activation or mass translation gate change.
+- Resume from the confirmed feature code and 11 EN Excursion dependencies; do not repeat Word matching, previously approved 172-block technical pilot, or regenerate the completed private HTML snapshot.

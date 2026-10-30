@@ -1,0 +1,55 @@
+name: Preview six high-confidence Word duplicate archives
+on:
+  push:
+    branches: [feat/archive-word-duplicates-20261030]
+    paths:
+      - 'data/audits/word-duplicates-20261030.json'
+      - 'scripts/archive-confirmed-word-duplicates.mjs'
+      - '.github/workflows/archive-word-duplicates-preview.yml'
+      - 'package.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+      SITE_ORIGIN: https://adatours.ru
+      SITE_BASE: /
+      SOCIAL_PREVIEW_REQUIRED: '0'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/archive-word-duplicates-20261030
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install --no-audit --no-fund
+      - name: Apply archive into temporary runner checkout only
+        run: node scripts/archive-confirmed-word-duplicates.mjs --apply --report /tmp/ada-archive-preview
+      - name: Check archive/source-index consistency and archive unit tests
+        run: |
+          node --test tests/archive.test.mjs
+          node scripts/sync-archives.mjs
+          node scripts/sync-source-catalogs.mjs
+          git diff --check
+      - name: Full Astro build, sitemap, Pagefind and archived link verification
+        run: npm run build
+      - name: Summarize candidate changes
+        run: git status --short
+      - name: Save exact staged migration changes
+        if: always()
+        run: |
+          mkdir -p /tmp/ada-archive-preview
+          git diff > /tmp/ada-archive-preview/source.patch
+          git status --short > /tmp/ada-archive-preview/files-changed.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ada-archive-six-preview
+          path: /tmp/ada-archive-preview/
+          if-no-files-found: warn
+          retention-days: 30

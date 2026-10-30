@@ -28,7 +28,8 @@
     "audit:tour": "node scripts/audit-tour-dependencies.mjs",
     "test:tour-lifecycle": "node --test tests/tour-2027-lifecycle.test.mjs",
     "check:runtime-seo-coverage": "node scripts/check-runtime-seo-coverage.mjs",
-    "audit:tour-headings": "node scripts/audit-tour-intro-headings.mjs --json"
+    "audit:tour-headings": "node scripts/audit-tour-intro-headings.mjs --json",
+    "build:fast": "npm run sync:multi-country && astro build && node scripts/build-social-previews.mjs && node scripts/prepare-pages-media.mjs && pagefind --site dist && node scripts/dedupe-site-shell.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.2",

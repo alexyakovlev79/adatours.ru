@@ -35,9 +35,18 @@ test('reordering gallery/route preserves content-based IDs',()=>{
  changed.data.route.reverse();
  assert.equal(get(old,'/route/0'),get(map(changed),'/route/1'));
 });
-test('repeated identical semantic list content is blocked, not silently assigned same ID',()=>{
+test('identical route/list items get distinct occurrence IDs without corrupting their text',()=>{
  const changed=structuredClone(tour);
- changed.data.included=['Трансфер','Трансфер'];
+ changed.data.route=['Рио','Рио','Игуасу'];
+ const m=map(changed);
+ const first=get(m,'/route/0'),second=get(m,'/route/1'),third=get(m,'/route/2');
+ assert.notEqual(first,second);
+ assert.ok(second.startsWith(first+':'));
+ assert.notEqual(first,third);
+});
+test('repeated itinerary day identity remains ambiguous and fails closed',()=>{
+ const changed=structuredClone(tour);
+ changed.data.itinerary.push({day:1,title:'Второй первый день',text:'Повтор'});
  assert.throws(()=>map(changed),/Ambiguous repeated semantic block/);
 });
 test('missing semantic owner fails safely',()=>{

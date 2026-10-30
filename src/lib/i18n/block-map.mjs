@@ -66,8 +66,19 @@ export function createStableBlockMap(entry,entityType){
  const paths=[],ids=new Set(),owners=new Map();
  for(const s of slots){
   const semantic=ownerFor(entry,entityType,s.path,s.text);
-  const id=entityType+':'+slug(s.field)+':'+hash(semantic);
-  if(ids.has(id))throw new Error('Ambiguous repeated semantic block '+entityType+' '+semantic);
+  const baseId=entityType+':'+slug(s.field)+':'+hash(semantic);
+  let id=baseId;
+  if(ids.has(id)){
+    // Identical list strings can repeat in the route. Their occurrence
+    // ordinal is stable under insertion/reordering of other *different* items.
+    // Duplicate day or excursion owners, however, remain ambiguous and fail.
+    const group=s.path.split('/')[1];
+    if(!['route','notes','dates','included','notIncluded','regions','languages'].includes(group))
+      throw new Error('Ambiguous repeated semantic block '+entityType+' '+semantic);
+    let occurrence=2;
+    while(ids.has(baseId+':'+occurrence))occurrence++;
+    id=baseId+':'+occurrence;
+  }
   ids.add(id);owners.set(id,semantic);
   paths.push({path:s.path,field:s.field,blockId:id,dependsOn:depends(entry,s.path,s.text)});
  }

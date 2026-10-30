@@ -39,7 +39,7 @@ jobs:
             -X POST 'https://auth.yandex.cloud/oauth/token' \
             -H 'Content-Type: application/x-www-form-urlencoded' \
             --data-urlencode 'grant_type=urn:ietf:params:oauth:token-exchange' \
-            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type=access_token' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
             --data-urlencode "audience=${YC_SA_ID}" \
             --data-urlencode "subject_token=${oidc_token}" \
             --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"

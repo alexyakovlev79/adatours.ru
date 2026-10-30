@@ -89,9 +89,12 @@ for(const file of articles){
   const ids=value.split(',').map(x=>x.trim()).filter(Boolean);
   // Derived table IDs must refer to active live Tour records; stale historical
   // IDs (including one unrelated pre-existing typo) may not be published.
-  const mapped=[...new Set(ids.map(x=>decided.find(d=>d.id===x)?.activeId||x))]
+  // A source Tour may occur in an excursion-specific table where its
+  // duplicate does not have the same canonical excursionRef or theme.
+  // Remove archived members, NEVER inject the replacement blindly.
+  const mapped=[...new Set(ids.filter(x=>!decided.some(d=>d.id===x)))]
     .filter(id=>activeTourIds.has(id));
-  if(!mapped.length)throw Error('No active Tour remains in SEO table: '+path.relative(root,file));
+  if(!mapped.length){macros++;return '';}
   if(ids.join(',')===mapped.join(','))return whole;
   macros++;return '{{catalog.tourTable:'+mapped.join(',')+'}}';
  });

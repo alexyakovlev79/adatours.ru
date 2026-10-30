@@ -9,6 +9,8 @@ on:
       - 'data/i18n/word-block-alignments/pilot/**'
       - 'data/i18n/word-text-evidence/pilot/**'
       - 'scripts/i18n/verify-word-paragraph-evidence.mjs'
+      - 'scripts/i18n/verify-word-review-packets.mjs'
+      - 'data/i18n/translation/review-pilot/**'
       - '.github/workflows/i18n-word-block-alignment.yml'
   workflow_dispatch:
 permissions:
@@ -30,6 +32,10 @@ jobs:
         with:
           ref: main
           path: production
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/translation-staging
+          path: staging
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -41,3 +47,5 @@ jobs:
         run: node feature/scripts/i18n/verify-word-block-alignment.mjs feature matching production
       - name: Check each cited English Word paragraph hash against immutable matching source
         run: node feature/scripts/i18n/verify-word-paragraph-evidence.mjs feature matching
+      - name: Verify two eight-block Word-first review packets are exactly sourced
+        run: node feature/scripts/i18n/verify-word-review-packets.mjs feature staging

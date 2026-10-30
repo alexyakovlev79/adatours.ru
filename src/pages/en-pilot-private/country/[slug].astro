@@ -1,0 +1,19 @@
+---
+import {getCollection} from 'astro:content';
+import {privatePilotEnabled} from '../../../lib/i18n/pilot-html.mjs';
+import {readPrivateGeography} from '../../../lib/i18n/private-geography.mjs';
+import PrivateGeographyPage from '../../../components/i18n/PrivateGeographyPage.astro';
+export async function getStaticPaths(){
+ if(!privatePilotEnabled(process.env))return [];
+ const [countries,destinations]=await Promise.all([
+  getCollection('countries',({data})=>data.locale==='ru'&&data.id==='country_brazil'),
+  getCollection('destinations',({data})=>data.locale==='ru'&&data.id==='destination_brazil_rio')
+ ]);
+ const records=await readPrivateGeography(process.cwd(),[...countries,...destinations]);
+ return records.filter(x=>x.kind==='country').map(record=>({
+  params:{slug:record.data.slug},props:{record}
+ }));
+}
+const {record}=Astro.props;
+---
+<PrivateGeographyPage record={record} />

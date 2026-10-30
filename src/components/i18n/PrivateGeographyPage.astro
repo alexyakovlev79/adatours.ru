@@ -1,0 +1,85 @@
+---
+/** Shared responsive layout for the *private* Brazil/Rio geography visual pilot. */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../editorial/Hero.astro';
+import StoryPair from '../editorial/StoryPair.astro';
+import MediaGallery from '../editorial/MediaGallery.astro';
+import TripStats from '../tour/TripStats.astro';
+import LeadForm from '../forms/LeadForm.astro';
+import { pilotTourUrl, renderPilotMarkdown } from '../../lib/i18n/pilot-html.mjs';
+interface Props { record: any; }
+const {record}=Astro.props as Props;
+if(record?.locale!=='en'||!['country_brazil','destination_brazil_rio'].includes(record.id))
+ throw Error('Unverified private EN geography page');
+const d=record.data,isCountry=record.kind==='country';
+const rioTour=pilotTourUrl('rio-de-janeiro-four-days');
+const countryUrl='/en-pilot-private/country/brazil/';
+const placeUrl='/en-pilot-private/place/rio-de-janeiro/';
+const body=renderPilotMarkdown(record.body);
+---
+<BaseLayout privatePreview lang="en" noindex title={d.name+' | Ada Tours Private English Preview'}
+  description={d.summary} showBreadcrumbs={false}>
+  <main id="content">
+    <Hero tour title={d.name} intro={d.summary} image={d.hero.src} imageAlt={d.hero.alt}
+      eyebrow={isCountry?'ADA TOURS · DESTINATION':'ADA TOURS · RIO DE JANEIRO'}
+      ctaHref="#geo-details" ctaLabel={isCountry?'Discover Brazil':'Explore Rio'} />
+    {!isCountry&&d.facts?.length>0&&<TripStats stats={d.facts.map((x:any)=>({value:x.value,label:x.label}))} />}
+    <section class="private-geo-intro section" id="geo-details" data-pilot-geography={record.id}>
+      <div class="container">
+        <p class="eyebrow">EXPLORE LATIN AMERICA</p>
+        <h2>{isCountry?'The many sides of Brazil':'Discover Rio de Janeiro'}</h2>
+        <div class="private-geo-copy" set:html={body}></div>
+      </div>
+    </section>
+    {isCountry&&d.regions?.length>0&&(
+      <section class="private-geo-regions section">
+        <div class="container">
+          <p class="eyebrow">PLACES TO EXPLORE</p>
+          <h2>Regions and experiences</h2>
+          <ul>{d.regions.map((x:string)=><li>{x}</li>)}</ul>
+        </div>
+      </section>
+    )}
+    {d.featureBands?.map((band:any,i:number)=>(
+      <StoryPair eyebrow={band.eyebrow} title={band.title} text={band.text}
+        image={band.image} reverse={i%2===1} />
+    ))}
+    {d.gallery?.length>0&&<MediaGallery items={d.gallery} eyebrow="GALLERY" title={d.name+' in pictures'} />}
+    <section class="private-geo-more section">
+      <div class="container">
+        <p class="eyebrow">BUILD YOUR JOURNEY</p>
+        <h2>{isCountry?'Start with Rio':'Explore Brazil and the Rio programme'}</h2>
+        <div class="private-geo-links">
+          <a href={isCountry?placeUrl:countryUrl}>
+            <strong>{isCountry?'Discover Rio de Janeiro':'Explore Brazil'}</strong><span aria-hidden="true">↗</span>
+          </a>
+          <a href={rioTour}><strong>Rio de Janeiro in four days</strong><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="private-geo-contact" id="enquiry">
+      <div class="container">
+        <p class="eyebrow">ADA TOURS · HERE FOR YOU</p>
+        <h2>Let us shape your journey.</h2>
+        <p>This design preview does not accept live enquiries.</p>
+      </div>
+    </section>
+    <LeadForm privatePreview locale="en" title="Tell us about the trip you have in mind" />
+  </main>
+</BaseLayout>
+<style>
+.private-geo-intro{padding-block:clamp(50px,7vw,115px)}
+.private-geo-intro h2,.private-geo-regions h2,.private-geo-more h2,.private-geo-contact h2{font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,4vw,4.3rem);line-height:1.08;letter-spacing:-.025em;max-width:970px;margin:12px 0 24px}
+.private-geo-copy{max-width:850px;font-size:clamp(1rem,1.6vw,1.16rem);line-height:1.8}
+.private-geo-copy :global(p){margin:0 0 1.3em}
+.private-geo-regions{background:var(--color-surface-beige)}
+.private-geo-regions ul{padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:12px}
+.private-geo-regions li{padding:12px 20px;border:1px solid var(--color-line);border-radius:99px;background:var(--color-bg)}
+.private-geo-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.private-geo-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:28px;border:1px solid var(--color-line);background:var(--color-surface-beige);font-family:var(--font-display)}
+.private-geo-links a:hover{border-color:var(--color-gold-deep)}
+.private-geo-contact{padding-block:clamp(56px,8vw,110px);background:var(--color-ink-deep);color:white}
+.private-geo-contact h2{color:inherit}
+.private-geo-contact p{max-width:60ch}
+@media(max-width:680px){.private-geo-links{grid-template-columns:1fr}}
+</style>

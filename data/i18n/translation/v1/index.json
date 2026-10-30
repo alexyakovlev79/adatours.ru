@@ -7,10 +7,10 @@
   "dispatcherEnabled": true,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
-  "updatedAt": "2026-10-30T11:20:40.064Z",
+  "updatedAt": "2026-10-30T11:25:33.638Z",
   "counts": {
-    "queued": 3,
-    "leased": 0,
+    "queued": 2,
+    "leased": 1,
     "review": 0,
     "ready": 2,
     "retryable": 0,
@@ -119,8 +119,8 @@
     },
     "07": {
       "counts": {
-        "queued": 1,
-        "leased": 0,
+        "queued": 0,
+        "leased": 1,
         "review": 0,
         "ready": 0,
         "retryable": 0,
@@ -128,7 +128,7 @@
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-30T12:55:33.638Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -253,7 +253,14 @@
     "unitCI": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/41047779504",
     "massTranslation": false
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "en-real-rio-gap-worker-20261030": {
+      "jobId": "en:tour:tour_brazil_rio_four_days:p2",
+      "token": "en-real-rio-gap-token-20261030",
+      "expiresAt": "2026-10-30T12:55:33.638Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-real-rio-worker-20261030": {
       "token": "en-real-rio-token-20261030",
@@ -272,6 +279,13 @@
       "completedJobIds": [
         "en:tour:tour_chile_easter_island_3_days_2027:p1"
       ]
+    },
+    "en-real-rio-gap-worker-20261030": {
+      "token": "en-real-rio-gap-token-20261030",
+      "jobIds": [
+        "en:tour:tour_brazil_rio_four_days:p2"
+      ],
+      "completedJobIds": []
     }
   },
   "pilotAcceptedAt": "2026-10-30T11:21:21.336Z",

@@ -4,7 +4,7 @@
   "jobCount": 5,
   "stage": "word_2027",
   "pilotOnly": true,
-  "dispatcherEnabled": false,
+  "dispatcherEnabled": true,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
   "updatedAt": "2026-10-30T11:20:40.064Z",
@@ -245,19 +245,13 @@
     }
   },
   "pilotAllowedJobIds": [
-    "en:tour:tour_brazil_rio_four_days:p1",
-    "en:tour:tour_chile_easter_island_3_days_2027:p1"
+    "en:tour:tour_brazil_rio_four_days:p2"
   ],
   "pilotPolicy": {
-    "status": "two_source_verified_word_packets_only",
-    "enabledOn": "2026-10-30",
-    "wordEvidenceCi": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/41046016916",
-    "excluded": [
-      "all-other-staged-jobs",
-      "main",
-      "pricing",
-      "public-en"
-    ]
+    "status": "one_mixed_word_plus_ai_gap_packet",
+    "date": "2026-10-30",
+    "unitCI": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/41047779504",
+    "massTranslation": false
   },
   "activeOwners": {},
   "ownerAssignments": {

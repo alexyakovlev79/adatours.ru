@@ -2,7 +2,7 @@
 id: tour_source_3_shaga_po_kosta_rike
 locale: ru
 slug: costa-rica-arenal-san-jose-pacific-beach
-status: published
+status: archived
 title: 'Тур в Коста-Рику: Ареналь, Сан-Хосе и пляжный отдых на Тихом океане'
 countries:
 - country_costa_rica
@@ -211,6 +211,9 @@ routeDestinations:
 - destination_costa_rica_doka_estate
 primaryThemes: ["theme_nature", "theme_beach"]
 themes: ["theme_coffee"]
+archivedAt: "2026-10-30"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_3_vzglyada_na_kosta_riku"
 ---
 
 

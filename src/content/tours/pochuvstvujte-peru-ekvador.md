@@ -2,7 +2,7 @@
 id: tour_source_pochuvstvujte_peru_ekvador
 locale: ru
 slug: experience-peru-ecuador
-status: published
+status: archived
 title: Почувствуйте Перу-Эквадор
 countries:
 - country_peru
@@ -368,6 +368,9 @@ routeDestinations:
 - destination_ecuador_mys_karrion
 primaryThemes: ["theme_nature", "theme_culture"]
 themes: ["theme_cruises", "theme_adventure", "theme_wildlife"]
+archivedAt: "2026-10-30"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej"
 ---
 
 

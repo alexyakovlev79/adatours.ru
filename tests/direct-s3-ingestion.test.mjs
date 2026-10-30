@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { makeSessionRequest, sealUploadToken, openUploadToken, validateSessionRequest } from '../scripts/lib/media-token-envelope.mjs';
 import { validateMediaKey, normalizedBatch } from '../scripts/media-work-session.mjs';
-import { validateDirectAssetLedger, mergeDirectAssetReceipts } from '../scripts/lib/direct-media-ledger.mjs';
+import { validateDirectAssetLedger, mergeDirectAssetReceipts, newlyAddedDirectAssetReceipts } from '../scripts/lib/direct-media-ledger.mjs';
 import { validateGeneratedSourceMaterials } from '../src/lib/generated-source-materials.mjs';
 import fs from 'node:fs';
 
@@ -63,4 +63,19 @@ test('generated destination can use a registered direct-S3 photograph without lo
   assert.deepEqual(validateGeneratedSourceMaterials(entry, {
     repoRoot: process.cwd(), directAssets: new Set([dummyPath]),
   }), []);
+});
+
+test('incremental deployment selects only new S3 receipts, never rechecks unchanged ones', () => {
+  const old = { key: 'media/tours/rio/hero-20261009.webp', sha256: 'a'.repeat(64),
+    bytes: 300, contentType: 'image/webp', uploadedAt: '2026-10-09T10:00:00Z',
+    source: 'direct-s3' };
+  const fresh = { ...old, key: 'media/tours/rio/day-20261030.webp', sha256: 'b'.repeat(64) };
+  const baseline = { version: 1, assets: [old] };
+  const current = { version: 1, assets: [old, fresh] };
+  assert.deepEqual(newlyAddedDirectAssetReceipts(baseline, baseline), []);
+  assert.deepEqual(newlyAddedDirectAssetReceipts(current, baseline), [fresh]);
+  assert.throws(() => newlyAddedDirectAssetReceipts({ version: 1, assets: [fresh] }, baseline), /removed/);
+  assert.throws(() => newlyAddedDirectAssetReceipts({
+    version: 1, assets: [{ ...old, sha256: 'c'.repeat(64) }, fresh],
+  }, baseline), /changed/);
 });

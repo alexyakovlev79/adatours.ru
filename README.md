@@ -1,5 +1,7 @@
 # adatours.ru
 
+**Для ChatGPT, Codex и других агентов:** начни с [AGENTS.md](AGENTS.md). Это актуальный указатель на рабочие инструкции по типу задачи; не ориентируйся на устаревшие копии регламентов.
+
 Official website of Ada Tours — DMC and tour operator for Brazil and Latin America.
 
 ## Stack

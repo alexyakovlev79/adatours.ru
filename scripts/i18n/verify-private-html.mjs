@@ -13,9 +13,16 @@ const attr=(node,key)=>node?.attrs?.find(x=>x.name===key)?.value??null;
 const textOf=n=>{const walk=x=>x.nodeName==='#text'?x.value:(['script','style','template'].includes(x.tagName))?'':(x.childNodes||[]).map(walk).join(' ');
 return walk(n).replace(/\s+/g,' ').trim()};
 const forbidden=/[\u0400-\u052f]/u;
-const allRoutes=new Set([pilotCatalogUrl(),...PILOT_TOURS.map(x=>pilotTourUrl(x.slug))]);
+const manifest=JSON.parse(fs.readFileSync('data/i18n/pilot-excursions/v1/manifest.json','utf8'));
+if(manifest.count!==11||manifest.entries?.length!==11||manifest.publicationAuthorized!==false)
+  fail('Missing private eleven-Excursion source manifest');
+const excursionPath=slug=>'/en-pilot-private/excursion/'+slug+'/';
+const allRoutes=new Set([pilotCatalogUrl(),...PILOT_TOURS.map(x=>pilotTourUrl(x.slug)),
+ ...manifest.entries.map(x=>excursionPath(x.slug))]);
 const cases=[{file:'en-pilot-private/tours/index.html',kind:'catalog'},
- ...PILOT_TOURS.map(x=>({file:'en-pilot-private/tour/'+x.slug+'/index.html',kind:'tour',spec:x}))];
+ ...PILOT_TOURS.map(x=>({file:'en-pilot-private/tour/'+x.slug+'/index.html',kind:'tour',spec:x})),
+ ...manifest.entries.map(x=>({file:'en-pilot-private/excursion/'+x.slug+'/index.html',
+  kind:'excursion',spec:x}))];
 const report=[];
 for(const c of cases){
  if(!fs.existsSync(path.join(root,c.file)))fail('Missing page '+c.file);
@@ -66,18 +73,34 @@ for(const c of cases){
    !text.includes('Not included')||
    !links.some(x=>attr(x,'href')?.startsWith('mailto:adatours@adatours.com?subject=')))
     fail('Tour HTML missing required semantic/price/services/contact elements: '+c.file);
-  const dependencies=find(main,x=>attr(x,'data-pilot-unlocalized-excursions')!==null)[0];
-  if(Number(attr(dependencies,'data-pilot-unlocalized-excursions'))!==t.pendingExcursions)
-   fail('Unaccounted EN Excursion source dependencies '+c.file);
+  const dependencies=find(main,x=>attr(x,'data-pilot-linked-excursions')!==null)[0];
+  if(Number(attr(dependencies,'data-pilot-linked-excursions'))!==t.pendingExcursions)
+   fail('Unaccounted EN Excursion dependencies '+c.file);
+  const linked=links.filter(x=>attr(x,'data-private-excursion-link')!==null);
+  if(new Set(linked.map(x=>attr(x,'data-private-excursion-link'))).size!==t.pendingExcursions||
+     linked.some(x=>!allRoutes.has(attr(x,'href'))))
+   fail('Missing or duplicate source-bound EN excursion link '+c.file);
   const days=find(main,x=>attr(x,'data-pilot-day')!==null).map(x=>Number(attr(x,'data-pilot-day')));
   if(JSON.stringify(days)!==JSON.stringify(Array.from({length:t.days},(_,i)=>i+1)))
    fail('Day sequence wrong '+c.file+': '+days.join(','));
   if(imgs.filter(x=>attr(x,'src')?.includes('/media/')).length<t.days+1)
    fail('Hero or itinerary image missing '+c.file);
+ }else if(c.kind==='excursion'){
+  const t=c.spec,source=find(main,x=>attr(x,'data-pilot-excursion')!==null);
+  if(source.length!==1||attr(source[0],'data-pilot-excursion')!==t.id||
+    tags(main,'h1').length!==1||!tags(main,'h2').length||
+    !find(main,x=>(attr(x,'class')||'').split(' ').includes('hero')).length||
+    !find(main,x=>attr(x,'data-ada-i18n-services')==='en').length||
+    !links.some(x=>attr(x,'href')===pilotCatalogUrl())||
+    !PILOT_TOURS.some(tour=>links.some(x=>attr(x,'href')===pilotTourUrl(tour.slug)))||
+    text.length<160)
+   fail('Standalone EN Excursion incomplete '+c.file);
  }else{
   if(!text.includes('Discover the programmes')||
-   attr(find(main,x=>attr(x,'data-pilot-tour-count')!==null)[0],'data-pilot-tour-count')!=='3')
-   fail('Expected three English catalogue cards '+c.file);
+   attr(find(main,x=>attr(x,'data-pilot-tour-count')!==null)[0],'data-pilot-tour-count')!=='3'||
+   attr(find(main,x=>attr(x,'data-pilot-excursion-count')!==null)[0],'data-pilot-excursion-count')!=='11'||
+   !manifest.entries.every(e=>links.some(x=>attr(x,'href')===excursionPath(e.slug))))
+   fail('Expected three Tours plus eleven Excursions in EN catalogue '+c.file);
  }
  report.push({file:c.file,title,kind:c.kind,images:imgs.length,stylesheets:stylesheets.length,bytes:Buffer.byteLength(html)});
 }
@@ -85,5 +108,5 @@ for(const f of fs.readdirSync(root).filter(x=>/^sitemap.*\.xml$/i.test(x))){
  if(get(f).includes('en-pilot-private'))fail('Private preview is in sitemap '+f);
 }
 if(!fs.existsSync(path.join(root,'brand/adatours-logo-black.svg')))fail('Brand logo missing');
-console.log(JSON.stringify({status:'passed',htmlPages:4,tourPages:3,noindex:true,
+console.log(JSON.stringify({status:'passed',htmlPages:15,tourPages:3,excursionPages:11,noindex:true,
  noPublicHost:true,noPublicEnRelease:true,report}));

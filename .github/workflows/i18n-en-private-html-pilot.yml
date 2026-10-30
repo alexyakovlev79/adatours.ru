@@ -1,11 +1,19 @@
-name: ADA EN three-Tour nonpublic Astro HTML pilot
+name: ADA EN three-Tour and eleven-Excursion nonpublic Astro HTML pilot
 on:
   push:
     branches: [feat/english-site-foundation]
     paths:
       - 'src/pages/en-pilot-private/**'
       - 'src/lib/i18n/pilot-html.mjs'
+      - 'src/lib/i18n/private-excursions.mjs'
+      - 'data/i18n/pilot-excursions/**'
+      - 'src/components/tour/Itinerary.astro'
+      - 'src/components/tour/IncludedExcluded.astro'
+      - 'src/components/tour/TourPricing.astro'
+      - 'src/components/editorial/Hero.astro'
+      - 'src/layouts/BaseLayout.astro'
       - 'tests/i18n/pilot-html.test.mjs'
+      - 'tests/i18n/private-excursions.test.mjs'
       - 'scripts/i18n/verify-private-html.mjs'
       - 'scripts/i18n/package-private-html.mjs'
       - 'astro.config.mjs'
@@ -63,12 +71,23 @@ jobs:
           }
           console.log('Approved EN preview is still bound to the current RU source');
           NODE
+      - name: Verify all eleven canonical Excursions against the feature branch and current main
+        working-directory: website
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import {verifyPrivateExcursionSourceFiles} from './src/lib/i18n/private-excursions.mjs';
+          if(await verifyPrivateExcursionSourceFiles('.')!==11)throw Error('Missing feature sources');
+          if(await verifyPrivateExcursionSourceFiles('../production','.')!==11)throw Error('Stale production sources');
+          console.log('Eleven source Git blobs confirmed in both EN foundation and main');
+          NODE
       - name: Install isolated Astro 7 build dependencies
         working-directory: website
         run: npm install --no-audit --no-fund
       - name: Run pure private preview gates and HTML renderer unit tests
         working-directory: website
-        run: node --test tests/i18n/pilot-html.test.mjs
+        run: node --test tests/i18n/pilot-html.test.mjs tests/i18n/private-excursions.test.mjs
       - name: Build real Astro HTML with explicit private EN flag only
         working-directory: website
         env:
@@ -77,23 +96,23 @@ jobs:
           PUBLIC_EN_RELEASE: '0'
           MEDIA_CDN_ORIGIN: https://img.adatours.ru
         run: npx astro build
-      - name: Verify four actual EN HTML pages, responsive CSS, prices, navigation and noindex
+      - name: Verify fifteen EN HTML pages, all source-bound links, prices and noindex
         working-directory: website
         run: node scripts/i18n/verify-private-html.mjs dist
-      - name: Package four HTML pages and only their required local assets
+      - name: Package fifteen HTML pages and only their required local assets
         working-directory: website
         shell: bash
         run: |
           set -euo pipefail
           node scripts/i18n/package-private-html.mjs dist /tmp/ada-en-html-review
-          test "$(find /tmp/ada-en-html-review/en-pilot-private -name index.html | wc -l)" -eq 4
-          tar -czf /tmp/ada-en-three-tour-private-html.tar.gz -C /tmp/ada-en-html-review .
-          ls -lh /tmp/ada-en-three-tour-private-html.tar.gz
+          test "$(find /tmp/ada-en-html-review/en-pilot-private -name index.html | wc -l)" -eq 15
+          tar -czf /tmp/ada-en-three-tour-eleven-excursions-private-html.tar.gz -C /tmp/ada-en-html-review .
+          ls -lh /tmp/ada-en-three-tour-eleven-excursions-private-html.tar.gz
       - name: Make private HTML preview downloadable for internal QA only
         uses: actions/upload-artifact@v4
         with:
-          name: ada-en-three-tour-private-html
-          path: /tmp/ada-en-three-tour-private-html.tar.gz
+          name: ada-en-three-tour-eleven-excursions-private-html
+          path: /tmp/ada-en-three-tour-eleven-excursions-private-html.tar.gz
           retention-days: 14
           if-no-files-found: error
       - name: Confirm public Russian repo was not written or deployed

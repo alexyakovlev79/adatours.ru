@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "createdDate": "2026-10-30",
+  "matchingSourceBranch": "i18n/matching-staging",
+  "evidence": "GitHub Actions #41018924667, artifact ada-duplicate-archive-preflight",
+  "minConfidenceExclusive": 0.8,
+  "authorisation": "Пользователь: архивировать только очевидные фактические дубли с уверенностью >80%, остальные не трогать",
+  "activeBefore": 358,
+  "archivedBefore": 39,
+  "duplicates": [
+    {
+      "loser": "tour_source_3_shaga_po_kosta_rike",
+      "winner": "tour_source_3_vzglyada_na_kosta_riku",
+      "oldStatus": "published",
+      "expectedBlob": "15b1d99ec0608eb3b06902acb149605f66213924",
+      "word": "1bOZgFqvTQukHOwMcpeAGq-WvbjkX0p7_",
+      "confidence": 0.91,
+      "reason": "Оба 10 дней: Сан-Хосе, Поас/Ла-Пас, Ареналь, 5 дней Тихоокеанского побережья, возврат в Сан-Хосе. Разница в назывании кофейной остановки Дока и старых ценах, но не в продаваемом маршруте. Сохранена более развернутая версия «3 взгляда» с закрепленными SEO-ссылками."
+    },
+    {
+      "loser": "tour_source_ekvador_zhivaya_priroda",
+      "winner": "tour_source_kontinentalnyj_ekvador_amazoniya",
+      "oldStatus": "approved",
+      "expectedBlob": "8905dff176dc9fb56bb22d4d3ed7a2a4dc2649c7",
+      "word": "1h6zf0aPbiU4X6S0Zn9WU9n-bA9xY4gZe",
+      "confidence": 0.99,
+      "reason": "Те же 15 дней с одинаковой ценой: Кито, Отавало, Эль-Анхель, Имбабура, Пулулауа, Бельявиста/Миндо, Котопакси, Килотоа, Sacha Lodge и возвращение. Сохранена содержательно более полная запись с условиями и тарифом."
+    },
+    {
+      "loser": "tour_source_tur_v_argentinu_v_patagoniyu",
+      "winner": "tour_argentina_best_14_days",
+      "oldStatus": "approved",
+      "expectedBlob": "1917f051e9d7485be720bf982609276597efdcb0",
+      "word": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+      "confidence": 0.98,
+      "reason": "14 совпадающих дней в том же порядке: Буэнос-Айрес, Эль-Калафате/Перито-Морено, Ушуайя, Барилоче, обе стороны Игуасу, возвращение в столицу. Различаются устаревшие цены и редакционные формулировки, не маршрут."
+    },
+    {
+      "loser": "tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa",
+      "winner": "tour_source_argentina_and_brazil_ru",
+      "oldStatus": "published",
+      "expectedBlob": "696819ee3ce9d088b560a3a31980bf22e063a56f",
+      "word": "1qnFjgonC-pcu1HwAaelScnMRTg-9gBbx",
+      "confidence": 0.97,
+      "reason": "Полное 10-дневное совпадение: Буэнос-Айрес 2 ночи, Эль-Калафате 2, Игуасу 2, Рио 3; порядок обзорных экскурсий, ледник, обе стороны водопадов, Сахарная Голова и Корковадо."
+    },
+    {
+      "loser": "tour_source_pochuvstvujte_peru_ekvador",
+      "winner": "tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej",
+      "oldStatus": "published",
+      "expectedBlob": "98de001843179014788464ef284fa3b493c40a58",
+      "word": "1Sj5aItIaO-aAPMQjVVzsa7Xxn7LpY3A1",
+      "confidence": 0.96,
+      "reason": "Одинаковые 18 дней и укрупненные многодневные блоки: Лима, четырехдневный Aria Amazon в Икитосе, Священная долина/Мачу-Пикчу/Виникунка, Quito/Mashpi Lodge, Галапагосы/Бартоломе/Сеймур; сохранена более полная VIP-версия."
+    },
+    {
+      "loser": "tour_source_tur_v_argentinu_na_11dnej",
+      "winner": "tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej",
+      "oldStatus": "approved",
+      "expectedBlob": "5e400731cc635a682b003db2d785f333b2a5136b",
+      "word": "1YQY3Iv_TkB5nRtwq1dxB6FlgIpk3UeNf",
+      "confidence": 0.99,
+      "reason": "Те же 11 дней и подтвержденные отели Four Seasons, Eolo Patagonia, Arakur, премиальное размещение у Игуасу. Совпадают города, экскурсии и продолжительность; различия тарифов и языка описания связаны с редакциями."
+    }
+  ],
+  "remainingWordCollisionGroups": 16,
+  "policy": "These are expert semantic assessments based on chronological day-by-day programme identity, not calibrated probabilities. A shared Word filename by itself is not enough.",
+  "publication": "No automatic main deployment; verify CI on isolated branch and Google Sheets synchronization separately."
+}

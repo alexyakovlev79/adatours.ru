@@ -1,0 +1,32 @@
+name: Ada EN shared excursion ownership audit
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/audit-shared-excursion-owners.mjs'
+      - '.github/workflows/i18n-shared-excursions.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install YAML parser
+        run: npm install --ignore-scripts --no-audit --no-fund
+      - name: Build unique translation owners without modifying Tours
+        run: node scripts/i18n/audit-shared-excursion-owners.mjs . --output /tmp/ada-shared-excursions
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ada-shared-excursion-owners
+          path: /tmp/ada-shared-excursions/
+          if-no-files-found: warn
+          retention-days: 30

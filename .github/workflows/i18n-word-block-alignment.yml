@@ -1,0 +1,39 @@
+name: EN Word to stable block pilot verification
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'src/lib/i18n/word-alignment.mjs'
+      - 'scripts/i18n/verify-word-block-alignment.mjs'
+      - 'tests/i18n/word-alignment.test.mjs'
+      - 'data/i18n/word-block-alignments/pilot/**'
+      - '.github/workflows/i18n-word-block-alignment.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          path: feature
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/matching-staging
+          path: matching
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: production
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Verify Word anchor validators and regression tests
+        run: |
+          node --check feature/src/lib/i18n/word-alignment.mjs
+          node --test feature/tests/i18n/word-alignment.test.mjs
+      - name: Verify three Word SHA-grounded Tour alignments against current main
+        run: node feature/scripts/i18n/verify-word-block-alignment.mjs feature matching production

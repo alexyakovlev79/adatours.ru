@@ -4,6 +4,8 @@
  * copied from pinned i18n/three-tour-preview into the CI workspace.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import TripStats from '../../components/tour/TripStats.astro';
+import IncludedExcluded from '../../components/tour/IncludedExcluded.astro';
 import {readFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {
@@ -56,6 +58,12 @@ const pageDescription=kind==='catalog'
 const bodyHtml=kind==='tour'?renderPilotMarkdown(record!.body):'';
 const messageSubject=kind==='tour'?'Enquiry about '+headline+' — Ada Tours':'Travel enquiry — Ada Tours';
 const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageSubject);
+const journeyStats=kind==='tour' ? [
+  {value:String(d.durationDays)+' days',label:'Duration'},
+  {value:String(d.durationNights)+' nights',label:'Accommodation'},
+  {value:String(d.route?.length??0)+' highlights',label:'Route'},
+  {value:formatPilotPrice(d.priceFrom,d.currency),label:'Starting at · Per person · USD'},
+] : [];
 ---
 <BaseLayout privatePreview lang="en" noindex title={pageTitle} description={pageDescription} showBreadcrumbs={false}>
   <a class="pilot-skip" href="#content">Skip to content</a>
@@ -129,12 +137,7 @@ const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageS
             </div>
           </div>
         </section>
-        <section class="pilot-stats container" aria-label="Journey at a glance">
-          <div><span>Duration</span><strong>{d.durationDays} days</strong></div>
-          <div><span>Accommodation</span><strong>{d.durationNights} nights</strong></div>
-          <div><span>Route</span><strong>{d.route?.length??0} highlights</strong></div>
-          <div><span>Starting at</span><strong>{formatPilotPrice(d.priceFrom,d.currency)}</strong><small>Per person · USD</small></div>
-        </section>
+        <TripStats stats={journeyStats} />
         {Array.isArray(d.route)&&d.route.length>0&&(
           <section class="pilot-route container" aria-labelledby="pilot-route-title">
             <p class="pilot-kicker">AT A GLANCE</p>
@@ -178,19 +181,7 @@ const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageS
             <div class="pilot-body-markdown" set:html={bodyHtml} data-pilot-markdown="true"></div>
           </div>
         </section>
-        <section class="pilot-services container" id="included" aria-labelledby="services-title">
-          <div class="pilot-section-heading">
-            <span class="pilot-kicker">TRAVEL DETAILS</span>
-            <h2 id="services-title">What is included</h2>
-          </div>
-          <div class="pilot-services-grid">
-            <div><h3>Included in your journey</h3><ul class="pilot-service-list pilot-list-plus">{d.included?.map((s:string)=><li>{s}</li>)}</ul></div>
-            <div><h3>Not included</h3><ul class="pilot-service-list pilot-list-minus">{d.notIncluded?.map((s:string)=><li>{s}</li>)}</ul></div>
-          </div>
-          {d.notes?.length>0&&(
-            <div class="pilot-notes"><h3>Important information</h3><ul>{d.notes.map((s:string)=><li>{s}</li>)}</ul></div>
-          )}
-        </section>
+        <IncludedExcluded locale="en" sectionId="included" included={d.included??[]} notIncluded={d.notIncluded??[]} notes={d.notes??[]} />
         <section class="pilot-more container" aria-label="Explore other pilot journeys">
           <div><span class="pilot-kicker">KEEP EXPLORING</span><h2>Beyond this journey</h2></div>
           <div class="pilot-other-tours">
@@ -270,11 +261,6 @@ const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageS
 .pilot-button{display:inline-flex;gap:1.3rem;align-items:center;justify-content:space-between;background:var(--color-brand);border:1px solid var(--color-brand);color:#062c2e;font-weight:650;padding:1rem 1.5rem;min-height:52px;border-radius:8px;transition:background .2s}
 .pilot-button:hover{background:#79dce1}
 .pilot-secondary-action{text-decoration:underline;text-underline-offset:4px;font-weight:650}
-.pilot-stats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--color-line);padding-block:2rem;gap:1.2rem}
-.pilot-stats>div{display:flex;flex-direction:column;gap:.4rem;min-width:0}
-.pilot-stats span{font-size:.74rem;color:var(--color-text-muted);letter-spacing:.08em;text-transform:uppercase}
-.pilot-stats strong{font-size:clamp(1.18rem,2.1vw,1.65rem);font-weight:520}
-.pilot-stats small{color:var(--color-text-muted);font-size:.78rem}
 .pilot-route{padding-block:clamp(40px,5vw,75px);border-bottom:1px solid var(--color-line)}
 .pilot-route h2{font-size:clamp(1.8rem,3vw,3rem)}
 .pilot-route-tags{display:flex;flex-wrap:wrap;gap:.75rem;padding:0;margin:1.5rem 0 0;list-style:none}
@@ -303,15 +289,6 @@ const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageS
 .pilot-body-markdown :global(table){width:100%;border-collapse:collapse;text-align:left;min-width:400px;font-size:.9rem}
 .pilot-body-markdown :global(th){font-size:.7rem;text-transform:uppercase;letter-spacing:.05em}
 .pilot-body-markdown :global(th),.pilot-body-markdown :global(td){padding:.78rem .75rem;border-bottom:1px solid var(--color-line);vertical-align:top}
-.pilot-services{padding-block:clamp(65px,7vw,115px)}
-.pilot-services-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem)}
-.pilot-services h3{font-family:var(--font-display);font-size:clamp(1.7rem,2.5vw,2.35rem);font-weight:500;margin:0 0 1rem}
-.pilot-service-list{padding:0;margin:0;list-style:none}
-.pilot-service-list li{position:relative;padding:1rem 1rem 1rem 1.7rem;border-top:1px solid var(--color-line);line-height:1.55}
-.pilot-service-list li::before{content:'+';position:absolute;left:.2rem;color:var(--color-brand-deep);font-weight:700}
-.pilot-list-minus li::before{content:'−'}
-.pilot-notes{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-line);max-width:820px}
-.pilot-notes h3{font-size:1.5rem}.pilot-notes ul{padding-left:1.4rem;line-height:1.75}
 .pilot-more{padding-block:clamp(30px,5vw,80px);border-top:1px solid var(--color-line);display:grid;grid-template-columns:.8fr 1.2fr;gap:2rem}
 .pilot-more h2{font-size:2rem}
 .pilot-other-tours{display:grid;gap:0}
@@ -338,10 +315,9 @@ const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageS
  .pilot-nav{flex-wrap:wrap;padding-block:.7rem}
  .pilot-links{order:3;width:100%;justify-content:space-between;overflow-x:auto;font-size:.8rem}
  .pilot-pill{font-size:.58rem}
- .pilot-cards,.pilot-services-grid,.pilot-day,.pilot-more{grid-template-columns:1fr}
+ .pilot-cards,.pilot-day,.pilot-more{grid-template-columns:1fr}
  .pilot-day:nth-child(even) .pilot-day-image{order:initial}
  .pilot-day-image{aspect-ratio:1.4}
- .pilot-stats{grid-template-columns:repeat(2,1fr)}
  .pilot-hero-content{padding-block:90px 65px}
  .pilot-hero{min-height:650px}
  .pilot-hero h1{font-size:clamp(2.9rem,12vw,4.5rem)}

@@ -57,7 +57,8 @@ for(const c of cases){
  if(c.kind==='tour'){
   const t=c.spec;
   if(!text.includes(formatPilotPrice(t.price))||!tags(main,'h1').length||!tags(main,'h2').length||
-   !tags(main,'table').length||!text.includes('Included in your journey')||
+   !tags(main,'table').length||!tags(main,'h2').some(x=>textOf(x)==='Included')||
+    !find(main,x=>attr(x,'data-ada-i18n-services')==='en').length||
    !text.includes('Not included')||
    !links.some(x=>attr(x,'href')?.startsWith('mailto:adatours@adatours.com?subject=')))
     fail('Tour HTML missing required semantic/price/services/contact elements: '+c.file);

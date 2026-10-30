@@ -252,3 +252,11 @@ Verified receipts for checkpoint 7:
 - Actual remote status read-back: ownerQuota=60, leaseMinutes=60,
   renewAfterMinutes=20; existing owner assigned=6/completed=6/nextBatch=2.
   Queue remained 29 ready, 329 queued, zero leases/errors.
+
+## Checkpoint 7 — 30.10.2026: matching 358/358 complete
+
+- One expired Costa Rica/Nicaragua lease recovered and completed using its immutable checkpoint, current Drive metadata and unchanged RU MD. The USD 17 Tortuguero entrance fee was separated from the two tour tariffs.
+- Full offline GitHub Actions audit completed successfully: [run 41007943083](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41007943083), 358 immutable result blobs verified, zero fatal issues.
+- Outcomes 221 Word 2027, 44 Word 2026, 93 AI-only. 1,465 price rows, only 3 explicitly marked changed; current price reconciliation is not yet complete. 192 non-fatal data-quality warnings in detailed artifact.
+- Mass matching closed; next stage is stable block maps, authoritative Word-source alignment, shared-price reconciliation and independent translator dispatcher. No translation or EN public site deployment.
+- See `docs/plans/english-site/15-matching-complete.md` and `data/i18n/matching-audit-summary.json`.

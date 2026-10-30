@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "snapshotDate": "2026-10-29",
+  "snapshotDate": "2026-10-30",
   "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
-  "phase": "matching_bulk_enabled_translation_disabled",
+  "phase": "matching_complete_translation_preparation",
   "massLaunchAllowed": false,
   "operationalDispatcherReady": false,
   "automaticTextSynchronizationRunning": false,
@@ -28,19 +28,24 @@
     "matchingPilotQueued": 0,
     "matchingMassHeld": 0,
     "newEnglishContentReady": 0,
-    "matchingMassQueued": 329,
-    "matchingReady": 29
+    "matchingMassQueued": 0,
+    "matchingReady": 358,
+    "matchingSelected2027": 221,
+    "matchingSelected2026": 44,
+    "matchingAiOnly": 93,
+    "matchingPriceRows2027": 1465
   },
   "nextGates": [
-    "complete_bulk_semantic_matching_of_remaining_active_tours",
-    "apply_confirmed_word_2027_price_amendments_to_shared_ru_and_en_source",
-    "finish_stable_complete_block_maps_and_shared_excursion_ownership",
-    "connect_locale_adapter_to_astro_runtime_and_ui_seo",
-    "implement_and_pilot_independent_translation_dispatcher",
-    "activate_scheduled_reaper_workflow_on_default_branch",
-    "confirm_english_deployment_target_and_dual_release"
+    "snapshot_complete_matching_decisions",
+    "create_complete_stable_translation_block_maps",
+    "reconcile_all_word_2027_prices_with_live_ru",
+    "integrate_locale_resolver_into_astro",
+    "build_and_test_translation_cas_dispatcher",
+    "confirm_dual_build_and_preview_target",
+    "run_two_worker_translation_pilot",
+    "enable_mass_translation_after_pilot"
   ],
-  "note": "Feature checkpoint only; live queue index on i18n/matching-staging is authoritative. Mass matching enabled; EN translation, price master and EN deployment remain closed.",
+  "note": "Matching 358/358 ready. Live staging branch is source of truth. No mass translation or public EN deployment yet. See docs/plans/english-site/15-matching-complete.md",
   "matchingDispatcherReady": true,
   "matchingPilotEnabled": false,
   "matchingPilotBranch": "i18n/matching-staging",
@@ -55,7 +60,7 @@
   "englishBuildSafetyGateInstalled": true,
   "englishBuildRuntimeReady": false,
   "matchingRetryAttemptLimit": 5,
-  "matchingMassEnabled": true,
+  "matchingMassEnabled": false,
   "matchingMassBranch": "i18n/matching-staging",
   "matchingMassActivationCommit": "bf04211267744431363a1e3dc3e13eb75c064f47",
   "matchingOwnerLimit": 60,
@@ -65,6 +70,10 @@
   "matchingRenewAfterMinutes": 20,
   "matchingCasMaxAttempts": 12,
   "matchingProtocolStressWorkers": 20,
-  "matchingLive20WorkerThroughputVerified": false
+  "matchingLive20WorkerThroughputVerified": false,
+  "matchingComplete": true,
+  "matchingAuditRunId": 41007943083,
+  "matchingAuditArtifactId": 12956670550,
+  "matchingAuditFatalIssues": 0,
+  "matchingAuditWarnings": 192
 }
-

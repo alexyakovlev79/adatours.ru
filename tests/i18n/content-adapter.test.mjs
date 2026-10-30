@@ -5,7 +5,7 @@ import { sourceBlockEvidence,translationApprovalHash } from '../../src/lib/i18n/
 const base={id:'ru:tour_alpha',data:{
  id:'tour_alpha',locale:'ru',slug:'alpha',status:'approved',title:'Путешествие по Рио',lead:'Красивое место',priceFrom:1908,
  currency:'USD',priceBasis:'per_person',priceNote:'Цена на человека',
- countries:['country_brazil'],hero:{src:'/media/hero.webp',alt:'Пляж Рио'},
+ countries:['country_brazil'],searchAliases:['Тур по Рио','Rio Tour 4 days'],hero:{src:'/media/hero.webp',alt:'Пляж Рио'},
  itinerary:[{day:1,title:'Первый день',text:'Встреча с гидом',places:['Рио-де-Жанейро']}],
  included:['Трансфер'],notIncluded:['Перелет'],dates:[],route:['Рио-де-Жанейро'],notes:[]
  },body:'Наша поездка'};
@@ -47,6 +47,8 @@ test('adapter keeps shared price, ID, media and paths while translating all visi
  assert.equal(out.data.itinerary[0].text,'Meet your guide');
  assert.equal(out.data.itinerary[0].places[0],'Rio de Janeiro');
  assert.equal(out.data.locale,'en');
+ assert.deepEqual(out.data.searchAliases,['Rio Tour 4 days']);
+ assert.deepEqual(base.data.searchAliases,['Тур по Рио','Rio Tour 4 days']);
  assert.equal(base.data.title,'Путешествие по Рио');
 });
 test('updated shared price invalidates only price-dependent block, no stale display',()=>{

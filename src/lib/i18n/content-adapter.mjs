@@ -146,6 +146,10 @@ export function localizeContentEntry(entry,entityType,blockMap,overlay,wordSourc
   if(/[\u0400-\u052F]/u.test(text))throw new TypeError('Cyrillic in English field: '+desc.path);
   slotSet(root,desc.path,text);
  }
+ // Search aliases are not visible block-map slots. Never carry Cyrillic RU
+ // query aliases into the English search index or EN metadata by fallback.
+ if(Array.isArray(root.searchAliases))root.searchAliases=root.searchAliases
+   .filter(value=>typeof value==='string'&&value.trim()&&!/[\u0400-\u052F]/u.test(value));
  const body=root.__body;delete root.__body;
  root.locale='en';
  return { ...entry, id:'en:'+entry.data.id, data:root, body,

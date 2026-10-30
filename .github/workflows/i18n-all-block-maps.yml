@@ -1,0 +1,43 @@
+name: Ada EN full Tour block-map audit
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/export-all-tour-block-maps.mjs'
+      - '.github/workflows/i18n-all-block-maps.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install YAML parser
+        run: npm install --ignore-scripts --no-audit --no-fund
+      - name: Check Tour MD changes versus current main
+        shell: bash
+        run: |
+          git fetch origin main --depth=3
+          changed="$(git diff --name-only origin/main -- src/content/tours/)"
+          if [[ -n "$changed" ]]; then
+            echo "::error::Tour MD diverges from main; refresh source before generating block maps"
+            echo "$changed"
+            exit 1
+          fi
+      - name: Check 358 active Tour source maps and save manifest
+        run: node scripts/i18n/export-all-tour-block-maps.mjs . --output /tmp/ada-all-tour-block-maps --write
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ada-all-tour-block-maps
+          path: /tmp/ada-all-tour-block-maps/
+          if-no-files-found: warn
+          retention-days: 30

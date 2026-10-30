@@ -19,7 +19,9 @@ export function validateTranslationJob(job){
  check(job&&isId(job.jobId)&&isId(job.entityId)&&job.entityType==='tour'&&
   job.locale==='en'&&job.stage==='word_2027'&&isSha(job.sourceFingerprint)&&
   job.source&&isId(job.source.driveFileId)&&isSha(job.source.wordSha256)&&
-  isSha(job.source.ruSha256)&&Array.isArray(job.blocks)&&job.blocks.length>0&&job.blocks.length<=8,
+  isSha(job.source.ruSha256)&&typeof job.source.ruContentPath==='string'&&
+  job.source.ruContentPath.startsWith('src/content/tours/')&&
+  /^[a-f0-9]{40}$/.test(job.source.ruGitBlobSha||'')&&Array.isArray(job.blocks)&&job.blocks.length>0&&job.blocks.length<=8,
   'invalid job or >8 blocks');
  const ids=new Set();
  for(const b of job.blocks){

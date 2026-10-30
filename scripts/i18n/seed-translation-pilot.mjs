@@ -20,7 +20,8 @@ for(const id of ids){
  for(let i=0;i<packet.blocks.length;i+=8){
   const blocks=packet.blocks.slice(i,i+8);
   const source={driveFileId:packet.word.driveFileId,wordSha256:packet.word.documentSha256,
-   ruSha256:map.ruBlobSha256};
+   ruSha256:map.ruBlobSha256,ruContentPath:packet.ruContentPath,
+   ruGitBlobSha:packet.ruGitBlobSha};
   jobs.push({jobId:'en:tour:'+id+':p'+(1+Math.floor(i/8)),
    entityId:id,entityType:'tour',locale:'en',stage:'word_2027',
    sourceFingerprint:hash({id,source,blocks}),source,blocks});

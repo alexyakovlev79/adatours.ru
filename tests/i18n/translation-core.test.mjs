@@ -10,7 +10,8 @@ const sha=s=>createHash('sha256').update(s).digest('hex'),at='2026-10-30T10:00:0
 function j(id='tour_test',n=1){
  return{jobId:'en:tour:'+id+':p'+n,entityId:id,entityType:'tour',locale:'en',
  stage:'word_2027',sourceFingerprint:sha(id+n),source:{driveFileId:'f123',wordSha256:sha('word'),
- ruSha256:sha('ru')},blocks:[{blockId:'tour:title:'+n,field:'title',mode:'word_span',
+ ruSha256:sha('ru'),ruContentPath:'src/content/tours/test.md',
+ ruGitBlobSha:'0123456789abcdef0123456789abcdef01234567'},blocks:[{blockId:'tour:title:'+n,field:'title',mode:'word_span',
  paragraphs:[{ref:'word/document.xml#p0002',textSha256:sha('title')}]}]};
 }
 const jobs=[j('tour_alpha'),j('tour_beta'),j('tour_gamma')];
@@ -85,7 +86,8 @@ test('real pilot source packets seed into five disabled jobs covering 30 anchors
   for(let i=0;i<p.blocks.length;i+=8)rows.push({jobId:'en:tour:'+id+':p'+(1+i/8),
    entityId:id,entityType:'tour',locale:'en',stage:'word_2027',
    sourceFingerprint:sha(id+i),source:{driveFileId:p.word.driveFileId,
-   wordSha256:p.word.documentSha256,ruSha256:map.ruBlobSha256},blocks:p.blocks.slice(i,i+8)});
+   wordSha256:p.word.documentSha256,ruSha256:map.ruBlobSha256,ruContentPath:p.ruContentPath,
+ ruGitBlobSha:p.ruGitBlobSha},blocks:p.blocks.slice(i,i+8)});
  }
  const seed=seedTranslationPilot(rows);
  assert.equal(seed.manifest.jobCount,5);

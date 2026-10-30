@@ -291,3 +291,12 @@ Verified receipts for checkpoint 7:
   adapter is not connected to all Astro runtime routes. The independent
   translation dispatcher, full Word-to-block extraction and dual build
   remain future steps. **Mass translation is disabled**.
+
+
+## Checkpoint 30.10.2026 — three real Word alignments and translation CAS smoke
+
+- All 358 historical matching results retained; 5 Tours archived after Pages [#41035427979](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41035427979) and excluded from new EN work.
+- Full Word 2027 downloaded and SHA-verified: Rio 4 days, Easter Island 3 days, Colombia Essential 5 days. **30** stable text blocks aligned with real OOXML paragraph hashes, of which **3** are intentional AI gaps; **142** more visible blocks on those three Tours remain for alignment (52+58+62−30). No public EN content.
+- Source alignment [#41041399838](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41041399838) — success. Pure translation core and GitHub CAS adapter: [#41042928753](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41042928753) — success.
+- Independent closed smoke queue seeded by [#41043098162](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41043098162), two real GitHub workers claimed different jobs, checkpoint replay / lease renew / release tested, final smoke gate closed at [bf701000](https://github.com/alexyakovlev79/adatours.ru/commit/bf70100083134e7da7703248ac8cd318b33262d9). No staged translations and no publication.
+- Continue with alignment of other visible fields; two actual Word-first translation submissions and semantic QA; locale adapter runtime pilot. Do not re-run matching or claim that the smoke proves production EN readiness.

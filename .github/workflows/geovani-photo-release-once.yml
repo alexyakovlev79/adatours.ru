@@ -52,8 +52,12 @@ jobs:
           }
           const ledgerPath='src/data/media/direct-s3-uploads.json';
           const ledger=JSON.parse(fs.readFileSync(ledgerPath,'utf8'));
-          const merged=mergeDirectAssetReceipts(ledger,{version:1,assets});
-          fs.writeFileSync(ledgerPath,JSON.stringify(merged,null,2)+'\n');
+          // Validate the incoming receipts but preserve all existing entry order.
+          // Sorting a 6,580-object ledger generates unrelated large diffs.
+          mergeDirectAssetReceipts(ledger,{version:1,assets});
+          const existing=new Set(ledger.assets.map(item=>item.key));
+          for (const asset of assets) if (!existing.has(asset.key)) ledger.assets.push(asset);
+          fs.writeFileSync(ledgerPath,JSON.stringify(ledger,null,2)+'\n');
           const teamPath='src/data/organization/team.json';
           const team=JSON.parse(fs.readFileSync(teamPath,'utf8'));
           const matches=team.members.filter(m=>m.id==='person_geovani');

@@ -2,6 +2,7 @@ import { isActiveEntity, archiveById, archiveEntries, activeReplacementId } from
 import { validateInterestContent } from './interest-model.mjs';
 import { getCollection } from 'astro:content';
 import { readFile, readdir, stat } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 import { extname, join, resolve, sep } from 'node:path';
 import destinationRecords from '../data/catalog/destinations.json';
 import destinationReservations from '../data/catalog/destination-reservations.json';
@@ -32,6 +33,20 @@ const key = (locale: string, id: string) => `${locale}:${id}`;
 const cachePath = /\/image\/cache\//i;
 let buildValidation: Promise<void> | undefined;
 
+// The old media tree is immutable and was fully migrated to S3. A sparse
+// checkout omits its bytes; Git tree metadata confirms known legacy keys.
+// New objects are covered separately by verified direct-S3 receipts.
+function frozenLegacyMediaKeys(): Set<string> {
+  try {
+    return new Set(execFileSync('git',
+      ['ls-tree', '-r', '--name-only', 'HEAD', '--', 'public/media/'],
+      { encoding: 'utf8', maxBuffer: 2 * 1024 * 1024 })
+      .split('\n').filter(Boolean).map((p) => p.slice('public'.length)));
+  } catch {
+    return new Set();
+  }
+}
+
 /** One offline guard per build. Astro has already parsed YAML and checked its schema. */
 export function validateSiteContent(): Promise<void> {
   if (import.meta.env.DEV) return validateContent();
@@ -49,6 +64,7 @@ async function validateContent(): Promise<void> {
   const ledgerCheck = validateDirectAssetLedger(directLedger);
   errors.push(...ledgerCheck.errors.map((message) => 'direct-s3-uploads.json: ' + message));
   const verifiedCloudFiles = new Set(ledgerCheck.byPath.keys());
+  const frozenLegacyFiles = frozenLegacyMediaKeys();
   const rows = [...countries, ...destinations, ...tours, ...excursions, ...themes, ...cases, ...people, ...articles];
   const publishedRouteById = new Map<string, string>();
   for (const { data } of countries.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, countryPath(data));
@@ -174,7 +190,7 @@ async function validateContent(): Promise<void> {
       return;
     }
     const exists = await stat(path).then((item) => item.isFile(), () => false);
-    if (!exists && !verifiedCloudFiles.has(path.slice(publicRoot.length))) errors.push(`Отсутствует локальное или подтвержденное S3-изображение ${path.slice(publicRoot.length)}.`);
+    if (!exists && !verifiedCloudFiles.has(path.slice(publicRoot.length)) && !frozenLegacyFiles.has(path.slice(publicRoot.length))) errors.push(`Отсутствует локальное или подтвержденное S3-изображение ${path.slice(publicRoot.length)}.`);
   }));
 
   // Source preparation is separate from page creation. Enforce the raw-source
@@ -236,7 +252,7 @@ async function validateContent(): Promise<void> {
             if (image.url.startsWith('/media/')) {
               const relative = decodeURIComponent(new URL(image.url, 'https://adatours.ru').pathname);
               const path = resolve(publicRoot, `.${relative}`);
-              if (!path.startsWith(`${publicRoot}${sep}`) || (!verifiedCloudFiles.has(relative) && !await stat(path).then((file) => file.isFile() && file.size > 0, () => false))) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
+              if (!path.startsWith(`${publicRoot}${sep}`) || (!verifiedCloudFiles.has(relative) && !frozenLegacyFiles.has(relative) && !await stat(path).then((file) => file.isFile() && file.size > 0, () => false))) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
             }
           }
         }

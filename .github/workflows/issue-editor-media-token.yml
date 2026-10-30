@@ -1,0 +1,132 @@
+name: Issue encrypted media token for authorized editors
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  id-token: write
+  issues: write
+
+concurrency:
+  group: ada-editor-media-token-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  issue:
+    if: >-
+      github.repository == 'alexyakovlev79/adatours.ru' &&
+      startsWith(github.event.issue.title, '[ADA-MEDIA-TOKEN] ') &&
+      (github.event.issue.author_association == 'OWNER' ||
+       github.event.issue.author_association == 'COLLABORATOR') &&
+      github.event.issue.pull_request == null
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - name: Checkout only trusted token scripts and GitHub editor allowlist
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: false
+          sparse-checkout: |
+            data/editorial/authorized-users.json
+            scripts/issue-media-token.mjs
+            scripts/lib/media-token-envelope.mjs
+          sparse-checkout-cone-mode: false
+      - name: Node.js 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Authorize GitHub author and validate public X25519 request
+        id: request
+        env:
+          MEDIA_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          MEDIA_ISSUE_TITLE: ${{ github.event.issue.title }}
+          MEDIA_ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import {validateSessionRequest} from './scripts/lib/media-token-envelope.mjs';
+          const check = (ok, reason) => { if (!ok) throw new Error(reason); };
+          check(Boolean(process.env.YC_SA_ID), 'Missing YC_MEDIA_SA_ID');
+          const allowed = JSON.parse(fs.readFileSync('data/editorial/authorized-users.json', 'utf8'));
+          check(Array.isArray(allowed.allowedGithubLogins)
+            && allowed.allowedGithubLogins.includes(process.env.MEDIA_ISSUE_AUTHOR),
+            'Editor GitHub login is not authorized to obtain an upload token');
+          const title = process.env.MEDIA_ISSUE_TITLE || '';
+          const match = /^\[ADA-MEDIA-TOKEN\] ([0-9a-f]{32})$/.exec(title);
+          check(match, 'Use title [ADA-MEDIA-TOKEN] <exact 32-character requestId>');
+          const body = process.env.MEDIA_ISSUE_BODY || '';
+          check(Buffer.byteLength(body, 'utf8') <= 4096, 'Public request is too large');
+          const request = JSON.parse(body);
+          const fields = ['bucket', 'createdAt', 'recipientPublicKey', 'requestId', 'version'];
+          check(request && !Array.isArray(request)
+            && Object.keys(request).sort().join(',') === fields.join(','),
+            'Only five public session fields are allowed');
+          check(request.requestId === match[1], 'Issue title requestId does not match request body');
+          validateSessionRequest(request);
+          const filename = path.join(process.env.RUNNER_TEMP, 'editor-session-' + request.requestId + '.json');
+          fs.writeFileSync(filename, JSON.stringify(request) + '\n', {mode: 0o600, flag: 'wx'});
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,
+            'request_file=' + filename + '\nrequest_id=' + request.requestId + '\n');
+          console.log('Authorized GitHub editor and valid public X25519 request: ' + request.requestId);
+          NODE
+      - name: Exchange repository OIDC token and seal IAM token for this session
+        shell: bash
+        env:
+          MEDIA_REQUEST_FILE: ${{ steps.request.outputs.request_file }}
+        run: |
+          set -euo pipefail
+          oidc_json="$(curl --fail --silent --show-error --connect-timeout 10 --max-time 30 --get \
+            -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            --data-urlencode 'audience=https://github.com/alexyakovlev79' \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL")"
+          oidc_token="$(jq -er '.value' <<< "$oidc_json")"
+          echo "::add-mask::$oidc_token"
+
+          auth_json="$(curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=$YC_SA_ID" \
+            --data-urlencode "subject_token=$oidc_token" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<< "$auth_json")"
+          echo "::add-mask::$iam_token"
+          MEDIA_ENVELOPE_OUTPUT=media-editor-session-envelope.json \
+            YC_MEDIA_IAM_TOKEN="$iam_token" \
+            node scripts/issue-media-token.mjs "$MEDIA_REQUEST_FILE"
+
+      - name: Save only the encrypted token envelope
+        uses: actions/upload-artifact@v4
+        with:
+          name: encrypted-editor-session-${{ steps.request.outputs.request_id }}-${{ github.run_id }}
+          path: media-editor-session-envelope.json
+          if-no-files-found: error
+          retention-days: 1
+
+      - name: Confirm token issuance without publishing credentials
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REQUEST_ID: ${{ steps.request.outputs.request_id }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Зашифрованный временный допуск для запроса $REQUEST_ID выпущен. Возьми SEALED_MEDIA_TOKEN из лога или encrypted-editor-session из артефактов: $RUN_URL . Пакет действителен 10 минут с момента выдачи; приватный X25519-ключ остается только на компьютере редактора. Это НЕ подтверждение загрузки фотографии: после PUT нужны GET + SHA-256, receipt и успешная публикация сайта."
+
+      - name: Report failure without exposing any token
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Зашифрованный S3-допуск НЕ выдан: авторизация, запрос или обмен OIDC-токена не прошли. Проверь запуск $RUN_URL . Не публикуй несуществующую фотографию и не передавай приватный ключ в чат."

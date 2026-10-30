@@ -69,7 +69,7 @@ jobs:
         run: node scripts/verify-direct-s3-assets.mjs --changed-only
 
   build:
-    needs: media
+    # Build and media validation are independent. Both gate Pages deployment.
     runs-on: ubuntu-latest
     env:
       YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
@@ -115,8 +115,14 @@ jobs:
           package-manager: npm@latest
 
   deploy:
-    needs: build
+    needs: [media, build]
+    if: ${{ needs.media.result == 'success' && needs.build.result == 'success' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      statuses: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -127,6 +133,17 @@ jobs:
         with:
           # Allow up to 950 MB of final site files to finish deploying.
           timeout: 1200000
+      - name: Confirm exact SHA immediately after successful Pages deployment
+        # Do not wait for independent SEO/catalogue reconciliation jobs.
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state=success -f context=ada/pages-deploy \
+            -f description="S3 receipts, Astro build and Pages deployment confirmed" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
   report:
     name: Publish deployment result as commit status

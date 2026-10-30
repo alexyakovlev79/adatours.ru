@@ -1,0 +1,97 @@
+name: One-time recovery of Geovani source photo to S3
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/recover-geovani-s3.yml
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  recover:
+    name: Move exact Geovani original to S3 with SHA-256 receipt
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Exchange repository OIDC token for temporary Yandex Cloud token
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+          oidc_json="$(curl --fail --silent --show-error --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
+          oidc_token="$(jq -er '.value' <<< "${oidc_json}")"
+          echo "::add-mask::${oidc_token}"
+          iam_json="$(curl --fail --silent --show-error \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type=access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=${oidc_token}" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          iam_token="$(jq -er '.access_token' <<< "${iam_json}")"
+          echo "::add-mask::${iam_token}"
+          echo "YC_IAM_TOKEN=${iam_token}" >> "${GITHUB_ENV}"
+      - name: Upload and verify exact original; do not claim GPT Image enhancement
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs/promises';
+          import {createHash} from 'node:crypto';
+          const file='public/media/people/geovani/geovani-20261030.webp';
+          const bytes=await fs.readFile(file);
+          const sha=x=>createHash('sha256').update(x).digest('hex');
+          if(!bytes.length||bytes.toString('ascii',0,4)!=='RIFF'||bytes.toString('ascii',8,12)!=='WEBP')
+            throw Error('Invalid source WebP');
+          const digest=sha(bytes);
+          const key='media/people/geovani/geovani-original-20261030-'+digest.slice(0,12)+'.webp';
+          const storage='https://storage.yandexcloud.net/img.adatours.ru/'+key;
+          const publicUrl='https://img.adatours.ru/'+key;
+          const head=await fetch(publicUrl,{method:'HEAD'});
+          let result;
+          if(head.status===200){result='already-existing';}
+          else if(head.status===403||head.status===404){
+            const put=await fetch(storage,{method:'PUT',headers:{
+              Authorization:'Bearer '+process.env.YC_IAM_TOKEN,
+              'If-None-Match':'*','Content-Type':'image/webp',
+              'Content-Length':String(bytes.length),
+              'x-amz-meta-sha256':digest,
+              'Cache-Control':'public, max-age=31536000, immutable'
+            },body:bytes});
+            if(!put.ok)throw Error('S3 PUT failure HTTP '+put.status);
+            result='uploaded';
+          }else throw Error('Unexpected public HEAD HTTP '+head.status);
+          const get=await fetch(publicUrl,{cache:'no-store'});
+          if(!get.ok)throw Error('S3 file not readable HTTP '+get.status);
+          const verify=Buffer.from(await get.arrayBuffer());
+          if(sha(verify)!==digest||verify.length!==bytes.length)
+            throw Error('S3 SHA or byte length mismatch');
+          const receipt={version:1,assets:[{key,sha256:digest,bytes:bytes.length,
+            contentType:'image/webp',uploadedAt:new Date().toISOString(),source:'direct-s3'}],
+            result,githubSha:process.env.GITHUB_SHA};
+          await fs.writeFile('geovani-original-receipt.json',JSON.stringify(receipt,null,2)+'\n');
+          console.log('VERIFIED_GEO_SOURCE='+JSON.stringify(receipt));
+          console.log('SOURCE_PENDING_GPT_IMAGE: original safely stored; no enhancement was performed');
+          NODE
+      - name: Save verified original receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: geovani-original-receipt-${{ github.run_id }}
+          path: geovani-original-receipt.json
+          if-no-files-found: error
+          retention-days: 7

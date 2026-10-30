@@ -7,10 +7,10 @@
   "dispatcherEnabled": true,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
-  "updatedAt": "2026-10-30T10:48:22.893Z",
+  "updatedAt": "2026-10-30T10:49:11.912Z",
   "counts": {
-    "queued": 4,
-    "leased": 1,
+    "queued": 3,
+    "leased": 2,
     "review": 0,
     "ready": 0,
     "retryable": 0,
@@ -105,8 +105,8 @@
     },
     "06": {
       "counts": {
-        "queued": 1,
-        "leased": 0,
+        "queued": 0,
+        "leased": 1,
         "review": 0,
         "ready": 0,
         "retryable": 0,
@@ -114,7 +114,7 @@
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-30T12:19:11.912Z",
       "earliestRetryAt": null
     },
     "07": {
@@ -251,6 +251,12 @@
       "token": "en-smoke-token-a-20261030",
       "expiresAt": "2026-10-30T12:18:22.893Z",
       "generation": 1
+    },
+    "en-smoke-worker-b-20261030": {
+      "jobId": "en:tour:tour_chile_easter_island_3_days_2027:p1",
+      "token": "en-smoke-token-b-20261030",
+      "expiresAt": "2026-10-30T12:19:11.912Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -258,6 +264,13 @@
       "token": "en-smoke-token-a-20261030",
       "jobIds": [
         "en:tour:tour_colombia_essential_5_days:p1"
+      ],
+      "completedJobIds": []
+    },
+    "en-smoke-worker-b-20261030": {
+      "token": "en-smoke-token-b-20261030",
+      "jobIds": [
+        "en:tour:tour_chile_easter_island_3_days_2027:p1"
       ],
       "completedJobIds": []
     }

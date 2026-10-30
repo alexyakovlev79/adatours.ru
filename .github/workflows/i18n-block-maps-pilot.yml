@@ -1,0 +1,45 @@
+name: Ada EN stable block-map pilot
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/export-pilot-block-maps.mjs'
+      - '.github/workflows/i18n-block-maps-pilot.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  maps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install YAML parser without lifecycle scripts
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Verify the pilot against the latest main Tour MDs
+        shell: bash
+        run: |
+          git fetch origin main --depth=2
+          diffstat="$(git diff --name-only origin/main -- src/content/tours/)"
+          if [[ -n "$diffstat" ]]; then
+            echo "::error::Tour source changed versus main; block-map snapshot is stale"
+            echo "$diffstat"
+            exit 1
+          fi
+      - name: Create stable block maps and validate exhaustive slot coverage
+        run: node scripts/i18n/export-pilot-block-maps.mjs . --output data/i18n/block-maps/pilot --write
+      - name: Commit only successful pilot mappings
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/i18n/block-maps/pilot
+          if git diff --cached --quiet; then echo 'No new pilot maps'; exit 0; fi
+          git commit -m 'data(i18n): checkpoint stable semantic block maps for pilot Tours'
+          git push origin HEAD:feat/english-site-foundation

@@ -1,4 +1,4 @@
-name: Issue encrypted media token for authorized editors
+name: Request encrypted S3 session for authorized GitHub editors
 
 on:
   issues:
@@ -24,7 +24,7 @@ jobs:
     outputs:
       authorized: ${{ steps.auth.outputs.authorized }}
     steps:
-      - name: Checkout only trusted uploader allowlist
+      - name: Checkout uploader allowlist at issue event revision
         uses: actions/checkout@v6
         with:
           ref: ${{ github.sha }}
@@ -32,48 +32,45 @@ jobs:
           sparse-checkout: |
             data/media/authorized-uploaders.json
           sparse-checkout-cone-mode: false
-      - name: Check exact GitHub login before requesting any cloud token
+      - name: Check real GitHub author without requesting a cloud token
         id: auth
         env:
           MEDIA_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs';
-          const allowed = JSON.parse(fs.readFileSync('data/media/authorized-uploaders.json', 'utf8'));
-          if (!Array.isArray(allowed.allowedGithubLogins)) throw Error('Invalid uploader allowlist');
-          const approved = allowed.allowedGithubLogins.includes(process.env.MEDIA_ISSUE_AUTHOR);
-          fs.appendFileSync(process.env.GITHUB_OUTPUT, 'authorized=' + String(approved) + '\n');
-          console.log(approved ? 'Uploader author approved' : 'Uploader author not allowed');
+          const cfg = JSON.parse(fs.readFileSync('data/media/authorized-uploaders.json', 'utf8'));
+          if (!Array.isArray(cfg.allowedGithubLogins)) throw Error('Invalid S3 uploader allowlist');
+          const allowed = cfg.allowedGithubLogins.includes(process.env.MEDIA_ISSUE_AUTHOR);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, 'authorized=' + String(allowed) + '\n');
+          console.log(allowed ? 'Uploader authorized' : 'Uploader is not on the allowlist');
           NODE
 
-  issue:
+  request:
     needs: authorize
     if: needs.authorize.outputs.authorized == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: read
-      id-token: write
+      actions: write
       issues: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    env:
-      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
     steps:
-      - name: Checkout only trusted token scripts and GitHub editor allowlist
+      - name: Checkout trusted request validator at issue event revision
         uses: actions/checkout@v6
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
           sparse-checkout: |
             data/media/authorized-uploaders.json
-            scripts/issue-media-token.mjs
             scripts/lib/media-token-envelope.mjs
           sparse-checkout-cone-mode: false
       - name: Node.js 24
         uses: actions/setup-node@v6
         with:
           node-version: 24
-      - name: Authorize GitHub author and validate public X25519 request
-        id: request
+      - name: Validate original GitHub author and strict public request
+        id: validate
         env:
           MEDIA_ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
           MEDIA_ISSUE_TITLE: ${{ github.event.issue.title }}
@@ -83,82 +80,67 @@ jobs:
           import fs from 'node:fs';
           import path from 'node:path';
           import {validateSessionRequest} from './scripts/lib/media-token-envelope.mjs';
-          const check = (ok, reason) => { if (!ok) throw new Error(reason); };
-          check(Boolean(process.env.YC_SA_ID), 'Missing YC_MEDIA_SA_ID');
-          const allowed = JSON.parse(fs.readFileSync('data/media/authorized-uploaders.json', 'utf8'));
-          check(Array.isArray(allowed.allowedGithubLogins)
-            && allowed.allowedGithubLogins.includes(process.env.MEDIA_ISSUE_AUTHOR),
-            'Editor GitHub login is not authorized to obtain an upload token');
-          const title = process.env.MEDIA_ISSUE_TITLE || '';
-          const match = /^\[ADA-MEDIA-TOKEN\] ([0-9a-f]{32})$/.exec(title);
-          check(match, 'Use title [ADA-MEDIA-TOKEN] <exact 32-character requestId>');
+          const check = (ok, why) => { if (!ok) throw Error(why); };
+          const cfg = JSON.parse(fs.readFileSync('data/media/authorized-uploaders.json','utf8'));
+          check(Array.isArray(cfg.allowedGithubLogins)
+            && cfg.allowedGithubLogins.includes(process.env.MEDIA_ISSUE_AUTHOR),
+            'GitHub author is not an authorized S3 uploader');
+          const match = /^\[ADA-MEDIA-TOKEN\] ([0-9a-f]{32})$/.exec(process.env.MEDIA_ISSUE_TITLE || '');
+          check(match, 'Title must be [ADA-MEDIA-TOKEN] <requestId>');
           const body = process.env.MEDIA_ISSUE_BODY || '';
-          check(Buffer.byteLength(body, 'utf8') <= 4096, 'Public request is too large');
-          const request = JSON.parse(body);
-          const fields = ['bucket', 'createdAt', 'recipientPublicKey', 'requestId', 'version'];
-          check(request && !Array.isArray(request)
-            && Object.keys(request).sort().join(',') === fields.join(','),
-            'Only five public session fields are allowed');
-          check(request.requestId === match[1], 'Issue title requestId does not match request body');
-          validateSessionRequest(request);
-          const filename = path.join(process.env.RUNNER_TEMP, 'editor-session-' + request.requestId + '.json');
-          fs.writeFileSync(filename, JSON.stringify(request) + '\n', {mode: 0o600, flag: 'wx'});
+          check(Buffer.byteLength(body, 'utf8') <= 4096, 'Request too large');
+          const req = JSON.parse(body);
+          const fields = ['bucket','createdAt','recipientPublicKey','requestId','version'];
+          check(req && !Array.isArray(req) &&
+            Object.keys(req).sort().join(',') === fields.join(','), 'Unexpected request fields');
+          check(req.requestId === match[1], 'Request ID differs between title and body');
+          validateSessionRequest(req);
+          const file = path.join(process.env.RUNNER_TEMP, 'media-editor-' + req.requestId + '.json');
+          fs.writeFileSync(file, JSON.stringify(req) + '\n', {mode:0o600, flag:'wx'});
           fs.appendFileSync(process.env.GITHUB_OUTPUT,
-            'request_file=' + filename + '\nrequest_id=' + request.requestId + '\n');
-          console.log('Authorized GitHub editor and valid public X25519 request: ' + request.requestId);
+            'file=' + file + '\nrequest_id=' + req.requestId + '\n');
+          console.log('Validated editor upload request ' + req.requestId);
           NODE
-      - name: Exchange repository OIDC token and seal IAM token for this session
-        shell: bash
+
+      - name: Dispatch existing proven OIDC token issuer (no cloud credentials here)
+        id: dispatch
         env:
-          MEDIA_REQUEST_FILE: ${{ steps.request.outputs.request_file }}
+          GH_TOKEN: ${{ github.token }}
+          REQUEST_FILE: ${{ steps.validate.outputs.file }}
+          REQUEST_ID: ${{ steps.validate.outputs.request_id }}
+        shell: bash
         run: |
           set -euo pipefail
-          oidc_json="$(curl --fail --silent --show-error --connect-timeout 10 --max-time 30 --get \
-            -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-            --data-urlencode 'audience=https://github.com/alexyakovlev79' \
-            "$ACTIONS_ID_TOKEN_REQUEST_URL")"
-          oidc_token="$(jq -er '.value' <<< "$oidc_json")"
-          echo "::add-mask::$oidc_token"
+          # The trusted issuer is the ONLY GitHub workflow that exchanges OIDC for S3 IAM.
+          # Skip redispatch of the same requestId, including manual job retries.
+          titles="$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/issue-media-upload-token.yml/runs?event=workflow_dispatch&per_page=100" --jq '.workflow_runs[].display_title')"
+          if grep -Fxq "S3 media session $REQUEST_ID" <<< "$titles"; then
+            echo "dispatch=already-requested" >> "$GITHUB_OUTPUT"
+            echo "An existing issuer run already has this requestId"
+          else
+            gh workflow run issue-media-upload-token.yml --ref main \
+              -f request_json="$(cat "$REQUEST_FILE")" \
+              -f request_id="$REQUEST_ID"
+            echo "dispatch=requested" >> "$GITHUB_OUTPUT"
+            echo "Requested trusted issuer for requestId $REQUEST_ID"
+          fi
 
-          auth_json="$(curl --fail --silent --show-error --connect-timeout 10 --max-time 30 \
-            -X POST 'https://auth.yandex.cloud/oauth/token' \
-            -H 'Content-Type: application/x-www-form-urlencoded' \
-            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
-            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
-            --data-urlencode "audience=$YC_SA_ID" \
-            --data-urlencode "subject_token=$oidc_token" \
-            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
-          iam_token="$(jq -er '.access_token' <<< "$auth_json")"
-          echo "::add-mask::$iam_token"
-          MEDIA_ENVELOPE_OUTPUT=media-editor-session-envelope.json \
-            YC_MEDIA_IAM_TOKEN="$iam_token" \
-            node scripts/issue-media-token.mjs "$MEDIA_REQUEST_FILE"
-
-      - name: Save only the encrypted token envelope
-        uses: actions/upload-artifact@v4
-        with:
-          name: encrypted-editor-session-${{ steps.request.outputs.request_id }}-${{ github.run_id }}
-          path: media-editor-session-envelope.json
-          if-no-files-found: error
-          retention-days: 1
-
-      - name: Confirm token issuance without publishing credentials
+      - name: Report dispatch accurately (not S3 upload success)
         if: success()
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          REQUEST_ID: ${{ steps.request.outputs.request_id }}
-          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          REQUEST_ID: ${{ steps.validate.outputs.request_id }}
+          STATUS: ${{ steps.dispatch.outputs.dispatch }}
         shell: bash
         run: |
-          gh issue comment "$ISSUE_NUMBER" --body "Зашифрованный временный допуск для запроса $REQUEST_ID выпущен. Возьми SEALED_MEDIA_TOKEN из лога или encrypted-editor-session из артефактов: $RUN_URL . Пакет действителен 10 минут с момента выдачи; приватный X25519-ключ остается только на компьютере редактора. Это НЕ подтверждение загрузки фотографии: после PUT нужны GET + SHA-256, receipt и успешная публикация сайта."
+          gh issue comment "$ISSUE_NUMBER" --body "Проверка GitHub-автора пройдена. Запрос $REQUEST_ID передан штатному выпускателю зашифрованных S3-токенов (статус: $STATUS). Найди запуск «S3 media session $REQUEST_ID» в Actions → Issue encrypted short-lived media upload token: https://github.com/$GITHUB_REPOSITORY/actions/workflows/issue-media-upload-token.yml . Только после успешного завершения этого запуска бери SEALED_MEDIA_TOKEN и загружай файл с локальным приватным ключом. Этот комментарий НЕ подтверждает выпуск токена, загрузку фото или Pages deploy."
 
-      - name: Report failure without exposing any token
+      - name: Report failure without publishing secrets
         if: failure()
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-        shell: bash
         run: |
-          gh issue comment "$ISSUE_NUMBER" --body "Зашифрованный S3-допуск НЕ выдан: авторизация, запрос или обмен OIDC-токена не прошли. Проверь запуск $RUN_URL . Не публикуй несуществующую фотографию и не передавай приватный ключ в чат."
+          gh issue comment "$ISSUE_NUMBER" --body "S3-допуск НЕ выдан. Проверка запроса или отправка его штатному выпускателю не удалась: $RUN_URL . Не передавай приватный ключ и не публикуй ссылку на ещё не загруженное фото."

@@ -1,26 +1,34 @@
 ---
 import PrimaryCTA from '../global/PrimaryCTA.astro';
+import { uiText } from '../../lib/i18n/messages.mjs';
 
 interface Props {
   price?: string;
   basis?: string;
   ctaLabel?: string;
+  ctaHref?: string;
+  locale?: 'ru' | 'en';
+  sectionId?: string;
   // Kept for backward compatibility with existing content/component calls.
   // Tour price notes are intentionally not rendered in the public pricing block.
   note?: string;
 }
-const { price = 'По запросу', basis, ctaLabel = 'Заказать этот тур' } = Astro.props;
+const { price, basis, ctaLabel, ctaHref, locale = 'ru', sectionId } = Astro.props;
+const displayedPrice = price ?? uiText(locale, 'tour.onRequest');
+const buttonLabel = ctaLabel ?? (locale === 'en' ? 'Enquire by email' : 'Заказать этот тур');
+const buttonHref = ctaHref ?? (locale === 'en' ? '#enquiry' : '/contacts/');
 ---
 
-<section class="pricing section">
+<section class="pricing section" id={sectionId} data-ada-i18n-pricing={locale === 'en' ? 'en' : undefined}>
   <div class="container pricing__grid">
     <div>
-      <p class="eyebrow">Стоимость</p>
-      <h2>{price}</h2>
+      <p class="eyebrow">{uiText(locale, 'tour.price')}</p>
+      <h2>{displayedPrice}</h2>
       {basis && <p class="pricing__basis">{basis}</p>}
     </div>
     <div class="pricing__copy">
-      <PrimaryCTA href="/contacts/" label={ctaLabel} variant="light" />
+      {Astro.slots.has('default') && <div class="pricing__details"><slot /></div>}
+      <PrimaryCTA href={buttonHref} label={buttonLabel} variant="light" />
     </div>
   </div>
 </section>
@@ -55,6 +63,12 @@ const { price = 'По запросу', basis, ctaLabel = 'Заказать эт�
 
   .pricing__copy {
     max-width: 500px;
+    min-width: 0;
+  }
+
+  .pricing__details {
+    margin-bottom: clamp(20px, 3vw, 40px);
+    min-width: 0;
   }
 
   .pricing :global(.cta) {

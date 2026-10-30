@@ -94,3 +94,29 @@ test('real pilot source packets seed into five disabled jobs covering 30 anchors
  assert.equal(rows.reduce((n,x)=>n+x.blocks.length,0),30);
  assert.equal(seed.index.dispatcherEnabled,false);
 });
+
+test('mixed Word and supported AI gap accepted in review but not publication',()=>{
+ const job=j('tour_rio_gap');
+ job.blocks=[
+  {blockId:'tour:itinerary_title:gap',field:'itinerary.title',mode:'ai_gap',
+   reason:'Word has no separate heading for Day 4'},
+  {blockId:'tour:itinerary_text:word',field:'itinerary.text',mode:'word_span',
+   paragraphs:[{ref:'word/document.xml#p0090',textSha256:sha('day4')}]}
+ ];
+ const result={jobId:job.jobId,entityId:job.entityId,
+ sourceFingerprint:job.sourceFingerprint,locale:'en',state:'review',releaseEligible:false,
+ blocks:[
+  {blockId:job.blocks[0].blockId,field:'itinerary.title',mode:'ai_gap',
+   text:'Departure from Rio de Janeiro',
+   provenance:{kind:'ai_translation',model:'GPT-6',runId:'pilot-rio-ai-gap-title'}},
+  {blockId:job.blocks[1].blockId,field:'itinerary.text',mode:'word_span',
+   text:'After breakfast, private airport transfer.',
+   provenance:{kind:'word_exact',documentSha256:job.source.wordSha256,
+    paragraphs:job.blocks[1].paragraphs}}
+ ]};
+ assert.equal(validateTranslationReview(result,job),true);
+ const bad=structuredClone(result);delete bad.blocks[0].provenance.runId;
+ assert.throws(()=>validateTranslationReview(bad,job),/AI provenance missing/);
+ const invalid=structuredClone(result);invalid.releaseEligible=true;
+ assert.throws(()=>validateTranslationReview(invalid,job),/wrong result\/coverage/);
+});

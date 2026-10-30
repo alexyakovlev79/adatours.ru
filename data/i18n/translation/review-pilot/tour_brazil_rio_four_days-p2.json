@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "jobId": "en:tour:tour_brazil_rio_four_days:p2",
+  "entityId": "tour_brazil_rio_four_days",
+  "locale": "en",
+  "state": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d0467a44c44bc756d4c4965e4568c9816e91423b7db9318e284fc91e90a7d779",
+  "qaStatus": "pending_word_and_ai_gap_qa",
+  "createdBy": "GPT-6 chat session, sequential Rio pilot worker",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "mode": "ai_gap",
+      "text": "Departure from Rio de Janeiro",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "rio-day4-title-pilot-chat-20261030"
+      },
+      "ruSourceEvidence": {
+        "path": "/itinerary/7/title",
+        "sourceRuText": "Отъезд из Рио-де-Жанейро",
+        "sourceGitBlobSha": "b2596730f9b029dc398d9704ea483f1511c80eb8",
+        "mappingReason": "Word combines Days 3–4 and has no standalone Day 4 heading"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "mode": "word_span",
+      "text": "Day 4 · After breakfast, free time until your scheduled private transfer to Rio de Janeiro International Airport. End of services.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+        "revision": "2026-10-21T20:19:00.892Z",
+        "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "d2d3611e3b96ddcfb03ec3d3eb58787914854e2d153595e0b137f6f97efe6218"
+          }
+        ]
+      }
+    }
+  ],
+  "disclosure": "AI-only title is derived faithfully from the current Russian Tour heading. Day-4 body is unchanged approved Word 2027 text. Not a full Tour overlay."
+}

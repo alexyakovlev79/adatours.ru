@@ -1,0 +1,105 @@
+name: ADA EN three-Tour nonpublic Astro HTML pilot
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'src/pages/en-pilot-private/**'
+      - 'src/lib/i18n/pilot-html.mjs'
+      - 'tests/i18n/pilot-html.test.mjs'
+      - 'scripts/i18n/verify-private-html.mjs'
+      - 'scripts/i18n/package-private-html.mjs'
+      - 'astro.config.mjs'
+      - '.github/workflows/i18n-en-private-html-pilot.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ada-en-private-pilot-html
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Check out EN foundation without changing main
+        uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          path: website
+      - name: Check out immutable three-Tour approved EN JSON preview
+        uses: actions/checkout@v4
+        with:
+          ref: ab27248954bb71fe6582bf796d73626ea8502d5f
+          path: source-preview
+      - name: Read current published RU Tour sources
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: production
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Confirm exact private preview receipt and current RU source fingerprints
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git -C source-preview rev-parse HEAD)" = "ab27248954bb71fe6582bf796d73626ea8502d5f"
+          test -f source-preview/data/i18n/pilot-previews/v1/summary.json
+          mkdir -p website/data/i18n/pilot-previews/v1
+          cp -a source-preview/data/i18n/pilot-previews/v1/. website/data/i18n/pilot-previews/v1/
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import {createHash} from 'node:crypto';
+          const tours=[
+            ['tour_brazil_rio_four_days','rio-de-janeiro-four-days.md'],
+            ['tour_chile_easter_island_3_days_2027','easter-island-3-days.md'],
+            ['tour_colombia_essential_5_days','colombia-essential-5-days.md']
+          ];
+          for(const [id,file] of tours){
+            const map=JSON.parse(fs.readFileSync('website/data/i18n/block-maps/tours/'+id+'.json','utf8'));
+            const original=fs.readFileSync('production/src/content/tours/'+file);
+            const sha=createHash('sha256').update(original).digest('hex');
+            if(map.ruBlobSha256!==sha)throw Error('Public RU source changed since approved EN preview: '+id);
+          }
+          console.log('Approved EN preview is still bound to the current RU source');
+          NODE
+      - name: Install isolated Astro 7 build dependencies
+        working-directory: website
+        run: npm install --no-audit --no-fund
+      - name: Run pure private preview gates and HTML renderer unit tests
+        working-directory: website
+        run: node --test tests/i18n/pilot-html.test.mjs
+      - name: Build real Astro HTML with explicit private EN flag only
+        working-directory: website
+        env:
+          SITE_LOCALE: ru
+          EN_PILOT_PREVIEW: '1'
+          PUBLIC_EN_RELEASE: '0'
+          MEDIA_CDN_ORIGIN: https://img.adatours.ru
+        run: npx astro build
+      - name: Verify four actual EN HTML pages, responsive CSS, prices, navigation and noindex
+        working-directory: website
+        run: node scripts/i18n/verify-private-html.mjs dist
+      - name: Package four HTML pages and only their required local assets
+        working-directory: website
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/i18n/package-private-html.mjs dist /tmp/ada-en-html-review
+          test "$(find /tmp/ada-en-html-review/en-pilot-private -name index.html | wc -l)" -eq 4
+          tar -czf /tmp/ada-en-three-tour-private-html.tar.gz -C /tmp/ada-en-html-review .
+          ls -lh /tmp/ada-en-three-tour-private-html.tar.gz
+      - name: Make private HTML preview downloadable for internal QA only
+        uses: actions/upload-artifact@v4
+        with:
+          name: ada-en-three-tour-private-html
+          path: /tmp/ada-en-three-tour-private-html.tar.gz
+          retention-days: 14
+          if-no-files-found: error
+      - name: Confirm public Russian repo was not written or deployed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C production status --porcelain
+          test -z "$(git -C production status --porcelain)"
+          echo "Only the private HTML artifact was generated. No Pages deployment, domain, repository write or real form POST."

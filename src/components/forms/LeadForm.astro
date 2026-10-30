@@ -1,6 +1,8 @@
 ---
 import PhoneField from './PhoneField.astro';
 import { withBase } from '../../lib/paths';
+import { privatePilotEnabled } from '../../lib/i18n/pilot-html.mjs';
+import { uiText } from '../../lib/i18n/messages.mjs';
 
 interface Props {
   title?: string;
@@ -8,6 +10,7 @@ interface Props {
   tourId?: string;
   pageUrl?: string;
   locale?: string;
+  privatePreview?: boolean;
 }
 const {
   title = 'Расскажите, какой маршрут вам нужен',
@@ -15,19 +18,52 @@ const {
   tourId = '',
   pageUrl = Astro.url.toString(),
   locale = 'ru',
+  privatePreview = false,
 } = Astro.props;
 
 const privacyHref = withBase('/privacy/');
 const personalDataHref = withBase('/personal-data/');
+if (privatePreview && (!privatePilotEnabled(process.env) || locale!=='en' ||
+     !Astro.url.pathname.startsWith('/en-pilot-private/'))) {
+  throw new Error('Private English form preview requires explicit nonpublishing build flags');
+}
 ---
 
-<section class="lead section">
+<section class="lead section" id={privatePreview ? "request" : undefined} data-ada-preview-form={privatePreview ? "true" : undefined}>
   <div class="container lead__grid">
     <div>
       <p class="eyebrow">Ada Tours</p>
       <h2>{title}</h2>
     </div>
 
+    {privatePreview ? (
+      <div class="form form--preview" role="group" aria-label="Preview-only enquiry form">
+        <label><span>{uiText('en','form.name')}</span>
+          <input type="text" placeholder={uiText('en','form.namePlaceholder')} disabled />
+        </label>
+        <label><span>{uiText('en','form.contactNumber')}</span>
+          <input type="tel" placeholder="+1 555 000 0000" disabled />
+        </label>
+        <label><span>{uiText('en','form.email')}</span>
+          <input type="email" placeholder="name@example.com" disabled />
+        </label>
+        <fieldset class="contact-method">
+          <legend>{uiText('en','form.contactMethod')}</legend>
+          <div class="contact-method__options">
+            {['Phone','WhatsApp','Telegram','Email'].map(method=>(
+              <label class="contact-method__option">
+                <input type="radio" disabled /><span>{method}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        <label><span>{uiText('en','form.comment')}</span>
+          <textarea rows="3" placeholder={uiText('en','form.commentPlaceholder')} disabled></textarea>
+        </label>
+        <button type="button" disabled>Send an enquiry — preview only <span aria-hidden="true">↗</span></button>
+        <p class="form__consent">{uiText('en','form.unavailable')} This is an internal design preview.</p>
+      </div>
+    ) : (
     <form
       class="form"
       data-lead-form
@@ -115,6 +151,7 @@ const personalDataHref = withBase('/personal-data/');
         <a href={personalDataHref}>обработкой персональных данных</a>.
       </p>
     </form>
+    )}
   </div>
 </section>
 
@@ -508,6 +545,14 @@ const personalDataHref = withBase('/personal-data/');
 </script>
 
 <style>
+  .form--preview :is(input,textarea,button):disabled {
+    opacity: 1;
+    cursor: not-allowed;
+  }
+  .form--preview :is(input,textarea):disabled {
+    color: var(--color-text-muted);
+    background: var(--color-surface-beige);
+  }
   .lead {
     padding-block: var(--section-y-tight);
     color: var(--color-ink);

@@ -37,6 +37,9 @@ for(const c of cases){
  if(tags(head,'link').some(x=>['canonical','alternate'].includes(attr(x,'rel'))))
    fail('Premature public canonical/hreflang '+c.file);
  if(tags(dom,'main').length!==1||tags(dom,'header').length!==1||tags(dom,'footer').length!==1||
+   find(main,x=>attr(x,'data-ada-preview-form')==='true').length!==1||
+   tags(main,'input').some(x=>attr(x,'disabled')===null)||
+   tags(main,'textarea').some(x=>attr(x,'disabled')===null)||
    attr(tags(dom,'header')[0],'data-ada-preview-header')!=='true'||
    attr(tags(dom,'footer')[0],'data-ada-preview-footer')!=='true'||
    tags(dom,'form').length||tags(dom,'script').some(x=>attr(x,'type')==='application/ld+json')||

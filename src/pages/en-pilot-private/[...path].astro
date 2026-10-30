@@ -6,6 +6,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TripStats from '../../components/tour/TripStats.astro';
 import IncludedExcluded from '../../components/tour/IncludedExcluded.astro';
+import LeadForm from '../../components/forms/LeadForm.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import TourPricing from '../../components/tour/TourPricing.astro';
 import Itinerary from '../../components/tour/Itinerary.astro';
@@ -261,6 +262,7 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
         <a class="pilot-button" href={mailto}>Enquire by email <span aria-hidden="true">↗</span></a>
       </div>
     </section>
+    <LeadForm privatePreview locale="en" title="Tell us about the trip you have in mind" />
   </main>
 </BaseLayout>
 

@@ -13,6 +13,8 @@ permissions:
   contents: read
 jobs:
   preview:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
@@ -65,3 +67,31 @@ jobs:
           path: /tmp/ada-archive-preview/
           if-no-files-found: warn
           retention-days: 30
+
+      - name: Record verified archive migration on isolated release branch
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          release_branch=feat/archive-word-duplicates-release-20261030
+          git diff --binary > /tmp/ada-five-archive-release.patch
+          test -s /tmp/ada-five-archive-release.patch || { echo "::error::No archive migration diff"; exit 1; }
+          if git ls-remote --exit-code --heads origin "$release_branch" > /dev/null; then
+            echo "::error::Release branch already exists: review existing commit instead of duplicating it"
+            exit 1
+          fi
+          git reset --hard HEAD
+          git fetch --no-tags origin main:refs/remotes/origin/main
+          git switch --detach refs/remotes/origin/main
+          git apply --index --3way /tmp/ada-five-archive-release.patch
+          git diff --cached --check
+          echo "Validated release file list:"
+          git diff --cached --name-only
+          if git diff --cached --name-only | grep -Ev '^(data/catalog-archive\.json|data/catalogues/|data/external-identity/|data/seo-geo/|data/source-index/|docs/audits/|docs/catalogues/|src/content/tours/)' ; then
+            echo "::error::Unexpected output outside archive migration paths"
+            exit 1
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m "archive: publish five verified duplicate tours with SEO reference cleanup"
+          git push origin HEAD:refs/heads/"$release_branch"
+          echo "Verified migration published to isolated branch $release_branch; main remains unchanged."

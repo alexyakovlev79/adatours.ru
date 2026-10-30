@@ -44,7 +44,7 @@ const body=renderPilotMarkdown(record.body);
       <StoryPair eyebrow={band.eyebrow} title={band.title} text={band.text}
         image={band.image} reverse={i%2===1} />
     ))}
-    {d.gallery?.length>0&&<MediaGallery items={d.gallery} eyebrow="GALLERY" title={d.name+' in pictures'} />}
+    {d.gallery?.length>0&&<MediaGallery items={d.gallery} eyebrow="GALLERY" title={d.name+' in pictures'} locale="en" />}
     <section class="private-geo-more section">
       <div class="container">
         <p class="eyebrow">BUILD YOUR JOURNEY</p>

@@ -59,7 +59,7 @@ for(const c of cases){
  for(const img of imgs){
   const src=attr(img,'src'),alt=attr(img,'alt');
   const decorative=(src==='/brand/adatours-logo-black.svg'||src==='/brand/adatours-logo-white.svg')&&alt===''&&attr(img,'aria-hidden')==='true';
-  if((!alt&&!decorative)||forbidden.test(alt))fail('Missing/untranslated image alt '+c.file);
+  if((!alt&&!decorative)||forbidden.test(alt))fail('Missing/untranslated image alt '+c.file+' src='+src+' alt='+JSON.stringify(alt));
   if(!decorative&&src!=='/brand/adatours-logo-black.svg'&&!src?.startsWith('https://img.adatours.ru/media/'))
    fail('Image is not a shared CDN asset or official logo: '+src);
  }

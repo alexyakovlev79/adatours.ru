@@ -10,7 +10,12 @@ import {resolve,join} from 'node:path';
 const live=resolve(process.argv[2]||'.'),production=resolve(process.argv[3]||'.');
 const output=process.argv.includes('--output')?resolve(process.argv[process.argv.indexOf('--output')+1]):null;
 const read=async (dir,p)=>JSON.parse(await readFile(join(dir,p),'utf8'));
-const rows=[],issues=[];
+const rows=[],issues=[],archivedExcluded=[];
+// A completed historical match must never trigger a new shared-price edit for
+// a Tour now archived in the current main branch.
+const archive=await read(production,'data/catalog-archive.json');
+const archivedTourIds=new Set((archive.entries||[])
+ .filter(x=>x.type==='tour'&&x.status==='archived').map(x=>x.id));
 const note=(id,kind,detail)=>issues.push({entityId:id,kind,detail:String(detail||'')});
 const excludedWords=/^(?:excluded|optional|supplement|not.included|separate|entrance|airfare|flights|domestic.flight)/i;
 const extraKind=/(?:excluded|optional|supplement|airfare|flight_estimate|park_entrance|ticket_extra)/i;
@@ -36,6 +41,10 @@ for(let i=0;i<16;i++){
   const job=def.get(stateRow.jobId);
   const result=await read(live,stateRow.submission.resultPath);
   const r=result.result;
+  if(archivedTourIds.has(job.entityId)){
+   archivedExcluded.push(job.entityId);
+   continue;
+  }
   if(r.outcome!=='selected_2027')continue;
   let ruText;
   try{ruText=await readFile(join(production,job.ruContentPath),'utf8');}
@@ -76,7 +85,7 @@ for(let i=0;i<16;i++){
 }
 const counts=Object.fromEntries([...new Set(rows.map(x=>x.status))].sort().map(k=>[k,rows.filter(x=>x.status===k).length]));
 const summary={schemaVersion:1,source:'Word 2027 only',rows:rows.length,counts,
- changedCandidates:counts.price_change_candidate||0,unambiguous:false,
+ changedCandidates:counts.price_change_candidate||0,archivedExcluded:archivedExcluded.length,unambiguous:false,
  publicPricesUpdated:false,supplementaryRows:rows.reduce((s,x)=>s+x.supplementaryRows.length,0),
  anomalies:issues.length,mainIsSourceOfTruth:true};
 if(output){

@@ -54,3 +54,17 @@ test('missing semantic owner fails safely',()=>{
  changed.data.itinerary.push({text:'День без идентификатора'});
  assert.throws(()=>map(changed),/Ambiguous itinerary owner/);
 });
+
+test('repeated place within a single excursion gets a unique stable occurrence ID',()=>{
+ const modified=structuredClone(tour);
+ modified.data.itinerary[1].places=['Игуасу','Игуасу'];
+ const m=map(modified);
+ const a=get(m,'/itinerary/1/places/0'),b=get(m,'/itinerary/1/places/1');
+ assert.notEqual(a,b);
+ assert.ok(b.startsWith(a+':') || a!==b);
+ const also=structuredClone(modified);
+ also.data.itinerary.unshift({day:99,title:'Вступление',text:'Новый текст',places:['Другое место']});
+ const n=map(also);
+ assert.equal(a,get(n,'/itinerary/2/places/0'));
+ assert.equal(b,get(n,'/itinerary/2/places/1'));
+});

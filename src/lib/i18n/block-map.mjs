@@ -21,7 +21,14 @@ function ownerFor(entry,type,path,text){
     item.title?'title='+hash(item.title):null;
   if(!ident)throw new Error('Ambiguous itinerary owner: '+path);
   let suffix=p.slice(2).join('/');
-  if(p[2]==='places')suffix='places/'+hash(text);
+  if(p[2]==='places'){
+    const all=item.places||[];
+    const itemIndex=Number(p[3]);
+    const repeated=all.slice(0,itemIndex+1).filter(x=>x===text).length;
+    // Same place can occur more than once in one day; its occurrence ID
+    // is invariant under insertion of a *different* place.
+    suffix='places/'+hash(text)+(repeated>1?':'+repeated:'');
+  }
   if(p[2]==='images') {
     const media=item.images?.[Number(p[3])];
     if(!media?.src)throw new Error('Missing image src: '+path);

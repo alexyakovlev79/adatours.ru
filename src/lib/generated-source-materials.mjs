@@ -1,25 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {execFileSync} from 'node:child_process';
-
-// Legacy media is frozen in Git and already copied/validated in Object Storage.
-// Sparse checkout may omit binary bytes; Git tree metadata still proves the
-// exact historical key existed. This is not a fallback for NEW S3 objects.
-const frozenMediaTrees = new Map();
-function frozenLegacyAssetExists(repoRoot, mediaUrl) {
-  let existing=frozenMediaTrees.get(repoRoot);
-  if(!existing) {
-    try {
-      const result=execFileSync('git',['ls-tree','-r','--name-only','HEAD','--','public/media/'],
-        {cwd:repoRoot,encoding:'utf8',maxBuffer:2*1024*1024});
-      existing=new Set(result.split('\n').filter(Boolean));
-    } catch {
-      return false;
-    }
-    frozenMediaTrees.set(repoRoot,existing);
-  }
-  return existing.has('public'+mediaUrl);
-}
+import {migratedLegacyAssetExists} from './frozen-legacy-media.mjs';
 
 // Narrow extension for destinations filled during the tour-day photo workflow.
 // Existing donor and user-provided modes keep their own schema restrictions.
@@ -45,7 +26,7 @@ export function validateGeneratedSourceMaterials(entry, { repoRoot, directAssets
   if (!Array.isArray(images) || !images.length || images.filter((item) => item.role === 'hero').length !== 1) fail('generated media requires exactly one hero');
   for (const item of images ?? []) {
     if (!/^\/media\/[a-zA-Z0-9_/-]+\.webp$/.test(item.url ?? '') || item.url.includes('..') || item.url.includes('/image/cache/') || !['hero', 'gallery'].includes(item.role) || !Number.isInteger(item.order) || item.order < 1 || !item.alt?.trim()) fail('generated images need a local WebP path, role, order and alt');
-    else if (repoRoot && !fs.existsSync(path.join(repoRoot, 'public', item.url)) && !directAssets.has(item.url) && !frozenLegacyAssetExists(repoRoot, item.url)) fail(`missing generated asset ${item.url}`);
+    else if (repoRoot && !fs.existsSync(path.join(repoRoot, 'public', item.url)) && !directAssets.has(item.url) && !migratedLegacyAssetExists(repoRoot, item.url)) fail(`missing generated asset ${item.url}`);
   }
   if (repoRoot && selected?.repositoryPath === expected) {
     const material = path.join(repoRoot, expected);

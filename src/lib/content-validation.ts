@@ -2,7 +2,6 @@ import { isActiveEntity, archiveById, archiveEntries, activeReplacementId } from
 import { validateInterestContent } from './interest-model.mjs';
 import { getCollection } from 'astro:content';
 import { readFile, readdir, stat } from 'node:fs/promises';
-import { execFileSync } from 'node:child_process';
 import { extname, join, resolve, sep } from 'node:path';
 import destinationRecords from '../data/catalog/destinations.json';
 import destinationReservations from '../data/catalog/destination-reservations.json';
@@ -11,6 +10,7 @@ import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from
 import { validateGeneratedSourceMaterials } from './generated-source-materials.mjs';
 import { validateCommissionedSourceMaterials } from './commissioned-source-materials.mjs';
 import { validateDirectAssetLedger } from '../../scripts/lib/direct-media-ledger.mjs';
+import {frozenMediaKeys} from './frozen-legacy-media.mjs';
 import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 
 export interface CatalogDestination {
@@ -33,20 +33,6 @@ const key = (locale: string, id: string) => `${locale}:${id}`;
 const cachePath = /\/image\/cache\//i;
 let buildValidation: Promise<void> | undefined;
 
-// The old media tree is immutable and was fully migrated to S3. A sparse
-// checkout omits its bytes; Git tree metadata confirms known legacy keys.
-// New objects are covered separately by verified direct-S3 receipts.
-function frozenLegacyMediaKeys(): Set<string> {
-  try {
-    return new Set(execFileSync('git',
-      ['ls-tree', '-r', '--name-only', 'HEAD', '--', 'public/media/'],
-      { encoding: 'utf8', maxBuffer: 2 * 1024 * 1024 })
-      .split('\n').filter(Boolean).map((p) => p.slice('public'.length)));
-  } catch {
-    return new Set();
-  }
-}
-
 /** One offline guard per build. Astro has already parsed YAML and checked its schema. */
 export function validateSiteContent(): Promise<void> {
   if (import.meta.env.DEV) return validateContent();
@@ -64,7 +50,7 @@ async function validateContent(): Promise<void> {
   const ledgerCheck = validateDirectAssetLedger(directLedger);
   errors.push(...ledgerCheck.errors.map((message) => 'direct-s3-uploads.json: ' + message));
   const verifiedCloudFiles = new Set(ledgerCheck.byPath.keys());
-  const frozenLegacyFiles = frozenLegacyMediaKeys();
+  const frozenLegacyFiles = frozenMediaKeys(process.cwd());
   const rows = [...countries, ...destinations, ...tours, ...excursions, ...themes, ...cases, ...people, ...articles];
   const publishedRouteById = new Map<string, string>();
   for (const { data } of countries.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, countryPath(data));

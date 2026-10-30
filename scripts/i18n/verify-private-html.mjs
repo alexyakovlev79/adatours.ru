@@ -17,12 +17,15 @@ const manifest=JSON.parse(fs.readFileSync('data/i18n/pilot-excursions/v1/manifes
 if(manifest.count!==11||manifest.entries?.length!==11||manifest.publicationAuthorized!==false)
   fail('Missing private eleven-Excursion source manifest');
 const excursionPath=slug=>'/en-pilot-private/excursion/'+slug+'/';
+const geoRoutes=['/en-pilot-private/country/brazil/','/en-pilot-private/place/rio-de-janeiro/'];
 const allRoutes=new Set([pilotCatalogUrl(),...PILOT_TOURS.map(x=>pilotTourUrl(x.slug)),
- ...manifest.entries.map(x=>excursionPath(x.slug))]);
+ ...manifest.entries.map(x=>excursionPath(x.slug)),...geoRoutes]);
 const cases=[{file:'en-pilot-private/tours/index.html',kind:'catalog'},
  ...PILOT_TOURS.map(x=>({file:'en-pilot-private/tour/'+x.slug+'/index.html',kind:'tour',spec:x})),
  ...manifest.entries.map(x=>({file:'en-pilot-private/excursion/'+x.slug+'/index.html',
-  kind:'excursion',spec:x}))];
+  kind:'excursion',spec:x})),
+ {file:'en-pilot-private/country/brazil/index.html',kind:'geography',id:'country_brazil'},
+ {file:'en-pilot-private/place/rio-de-janeiro/index.html',kind:'geography',id:'destination_brazil_rio'}];
 const report=[];
 for(const c of cases){
  if(!fs.existsSync(path.join(root,c.file)))fail('Missing page '+c.file);
@@ -102,6 +105,15 @@ for(const c of cases){
     !PILOT_TOURS.some(tour=>links.some(x=>attr(x,'href')===pilotTourUrl(tour.slug)))||
     text.length<160)
    fail('Standalone EN Excursion incomplete '+c.file);
+ }else if(c.kind==='geography'){
+  const geo=find(main,x=>attr(x,'data-pilot-geography')!==null);
+  if(geo.length!==1||attr(geo[0],'data-pilot-geography')!==c.id||
+     !find(main,x=>(attr(x,'class')||'').split(' ').includes('hero')).length||
+     !tags(main,'h1').length||!tags(main,'h2').length||
+     !links.some(x=>attr(x,'href')===pilotTourUrl('rio-de-janeiro-four-days'))||
+     !geoRoutes.some(url=>links.some(x=>attr(x,'href')===url))) {
+    fail('Missing connected private geography layout '+c.file);
+  }
  }else{
   if(!text.includes('Discover the programmes')||
    attr(find(main,x=>attr(x,'data-pilot-tour-count')!==null)[0],'data-pilot-tour-count')!=='3'||
@@ -115,5 +127,5 @@ for(const f of fs.readdirSync(root).filter(x=>/^sitemap.*\.xml$/i.test(x))){
  if(get(f).includes('en-pilot-private'))fail('Private preview is in sitemap '+f);
 }
 if(!fs.existsSync(path.join(root,'brand/adatours-logo-black.svg')))fail('Brand logo missing');
-console.log(JSON.stringify({status:'passed',htmlPages:15,tourPages:3,excursionPages:11,noindex:true,
+console.log(JSON.stringify({status:'passed',htmlPages:17,tourPages:3,excursionPages:11,geographyPages:2,noindex:true,
  noPublicHost:true,noPublicEnRelease:true,report}));

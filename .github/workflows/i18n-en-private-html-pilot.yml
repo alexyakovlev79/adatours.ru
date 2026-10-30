@@ -1,4 +1,4 @@
-name: ADA EN three-Tour and eleven-Excursion nonpublic Astro HTML pilot
+name: ADA EN seventeen-page native-shell private visual pilot
 on:
   push:
     branches: [feat/english-site-foundation]
@@ -6,6 +6,12 @@ on:
       - 'src/pages/en-pilot-private/**'
       - 'src/lib/i18n/pilot-html.mjs'
       - 'src/lib/i18n/private-excursions.mjs'
+      - 'src/lib/i18n/private-geography.mjs'
+      - 'data/i18n/pilot-geography/**'
+      - 'src/components/i18n/**'
+      - 'src/components/global/SiteHeader.astro'
+      - 'src/components/global/SiteFooter.astro'
+      - 'src/components/forms/LeadForm.astro'
       - 'data/i18n/pilot-excursions/**'
       - 'src/components/tour/Itinerary.astro'
       - 'src/components/tour/IncludedExcluded.astro'
@@ -14,6 +20,7 @@ on:
       - 'src/layouts/BaseLayout.astro'
       - 'tests/i18n/pilot-html.test.mjs'
       - 'tests/i18n/private-excursions.test.mjs'
+      - 'tests/i18n/private-geography.test.mjs'
       - 'scripts/i18n/verify-private-html.mjs'
       - 'scripts/i18n/package-private-html.mjs'
       - 'astro.config.mjs'
@@ -82,12 +89,23 @@ jobs:
           if(await verifyPrivateExcursionSourceFiles('../production','.')!==11)throw Error('Stale production sources');
           console.log('Eleven source Git blobs confirmed in both EN foundation and main');
           NODE
+      - name: Verify Brazil and Rio source snapshots against EN foundation and main
+        working-directory: website
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import {verifyPrivateGeoSources} from './src/lib/i18n/private-geography.mjs';
+          if(await verifyPrivateGeoSources('.')!==2)throw Error('Incomplete feature geography source');
+          if(await verifyPrivateGeoSources('../production','.')!==2)throw Error('Stale main geography source');
+          console.log('Brazil and Rio immutable source blobs confirmed');
+          NODE
       - name: Install isolated Astro 7 build dependencies
         working-directory: website
         run: npm install --no-audit --no-fund
       - name: Run pure private preview gates and HTML renderer unit tests
         working-directory: website
-        run: node --test tests/i18n/pilot-html.test.mjs tests/i18n/private-excursions.test.mjs
+        run: node --test tests/i18n/pilot-html.test.mjs tests/i18n/private-excursions.test.mjs tests/i18n/private-geography.test.mjs
       - name: Build real Astro HTML with explicit private EN flag only
         working-directory: website
         env:
@@ -96,23 +114,23 @@ jobs:
           PUBLIC_EN_RELEASE: '0'
           MEDIA_CDN_ORIGIN: https://img.adatours.ru
         run: npx astro build
-      - name: Verify fifteen EN HTML pages, all source-bound links, prices and noindex
+      - name: Verify seventeen EN HTML pages, exact source links and private release gates
         working-directory: website
         run: node scripts/i18n/verify-private-html.mjs dist
-      - name: Package fifteen HTML pages and only their required local assets
+      - name: Package seventeen private English pages with local assets
         working-directory: website
         shell: bash
         run: |
           set -euo pipefail
           node scripts/i18n/package-private-html.mjs dist /tmp/ada-en-html-review
-          test "$(find /tmp/ada-en-html-review/en-pilot-private -name index.html | wc -l)" -eq 15
-          tar -czf /tmp/ada-en-three-tour-eleven-excursions-private-html.tar.gz -C /tmp/ada-en-html-review .
-          ls -lh /tmp/ada-en-three-tour-eleven-excursions-private-html.tar.gz
+          test "$(find /tmp/ada-en-html-review/en-pilot-private -name index.html | wc -l)" -eq 17
+          tar -czf /tmp/ada-en-private-visual-17-pages.tar.gz -C /tmp/ada-en-html-review .
+          ls -lh /tmp/ada-en-private-visual-17-pages.tar.gz
       - name: Make private HTML preview downloadable for internal QA only
         uses: actions/upload-artifact@v4
         with:
-          name: ada-en-three-tour-eleven-excursions-private-html
-          path: /tmp/ada-en-three-tour-eleven-excursions-private-html.tar.gz
+          name: ada-en-private-visual-17-pages
+          path: /tmp/ada-en-private-visual-17-pages.tar.gz
           retention-days: 14
           if-no-files-found: error
       - name: Confirm public Russian repo was not written or deployed

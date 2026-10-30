@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Package 15 nonpublic Tour/Excursion HTML pages and referenced local assets. */
+/** Package 17 private EN pages including country, place, Tours and Excursions. */
 import fs from 'node:fs';
 import path from 'node:path';
 import {parse} from 'parse5';
@@ -19,7 +19,9 @@ const pages=[
  'en-pilot-private/tour/rio-de-janeiro-four-days/index.html',
  'en-pilot-private/tour/easter-island-3-days/index.html',
  'en-pilot-private/tour/colombia-essential-5-days/index.html',
- ...manifest.entries.map(e=>'en-pilot-private/excursion/'+e.slug+'/index.html')
+ ...manifest.entries.map(e=>'en-pilot-private/excursion/'+e.slug+'/index.html'),
+ 'en-pilot-private/country/brazil/index.html',
+ 'en-pilot-private/place/rio-de-janeiro/index.html'
 ];
 const assets=new Set(['brand/adatours-logo-black.svg','brand/adatours-logo-white.svg','favicon.svg']);
 for(const p of pages){
@@ -37,7 +39,7 @@ for(const a of assets)copy(a);
 const readme=[
  'Ada Tours — PRIVATE EN HTML PILOT',
  '',
- 'Fifteen working Astro-generated HTML pages (3 Tours, 11 Excursions, 1 catalogue).',
+ 'Seventeen Astro-generated private preview HTML pages (3 Tours, 11 Excursions, 2 geography, 1 catalogue).',
  'These are nonpublic internal preview files, not a live booking site.',
  'Run in this extracted folder (requires Python 3):',
  '',

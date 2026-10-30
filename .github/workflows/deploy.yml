@@ -108,11 +108,17 @@ jobs:
       - name: Warn when social previews use strict reuse-only mode
         if: steps.social_auth.outcome == 'failure'
         run: echo "::warning::Yandex Cloud IAM unavailable; verify only existing S3 social previews; fail build if any is missing."
+      - name: Select conservative safe-content build mode
+        id: scope
+        env:
+          ADA_PUSH_BEFORE_SHA: ${{ github.event.before }}
+        run: node scripts/select-deploy-build.mjs
       - name: Install, build, and upload Astro site
         uses: withastro/action@v6
         with:
           node-version: 24
           package-manager: npm@latest
+          build-cmd: ${{ steps.scope.outputs.build_cmd }}
 
   deploy:
     needs: [media, build]

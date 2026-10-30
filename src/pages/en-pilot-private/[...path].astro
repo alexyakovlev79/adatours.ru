@@ -10,6 +10,8 @@ import Hero from '../../components/editorial/Hero.astro';
 import TourPricing from '../../components/tour/TourPricing.astro';
 import Itinerary from '../../components/tour/Itinerary.astro';
 import {readFile} from 'node:fs/promises';
+import {getCollection} from 'astro:content';
+import {readPrivateExcursionOverlays,pilotExcursionUrl} from '../../lib/i18n/private-excursions.mjs';
 import {resolve,join} from 'node:path';
 import {
  PILOT_TOURS,privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
@@ -24,6 +26,20 @@ export async function getStaticPaths(){
  const summary=await json('summary.json');
  const records=await Promise.all(PILOT_TOURS.map(t=>json('rendered/'+t.id+'.json')));
  assertPilotRenderSource(records,summary);
+ const referencedIds=new Set(records.flatMap(r=>pilotExcursionDependencies(r.data.itinerary)));
+ const ruExcursions=await getCollection('excursions',({data})=>data.locale==='ru'&&referencedIds.has(data.id));
+ const {records:excursions,manifest}=await readPrivateExcursionOverlays(process.cwd(),ruExcursions);
+ if(excursions.length!==11||new Set(excursions.map(x=>x.id)).size!==11||
+    excursions.some(x=>!referencedIds.has(x.id))||referencedIds.size!==11) {
+   throw Error('The three pilot Tours must have exactly eleven source-bound English Excursions');
+ }
+ const englishExcursions=Object.fromEntries(excursions.map(x=>[x.id,x]));
+ const excursionCards=excursions.map(x=>({
+   id:x.id,title:x.data.title,slug:x.data.slug,lead:x.data.lead,
+   photo:x.data.hero?.src,alt:x.data.hero?.alt,
+   price:x.data.priceFrom,currency:x.data.currency,duration:x.data.duration,
+   tourIds:records.filter(t=>pilotExcursionDependencies(t.data.itinerary).includes(x.id)).map(t=>t.id)
+ }));
  const cards=records.map(record=>{
   const d=record.data;
   return {id:record.id,title:d.title,slug:d.slug,lead:d.lead,
@@ -32,9 +48,11 @@ export async function getStaticPaths(){
    alt:d.hero.alt||d.title};
  });
  return [
-  {params:{path:'tours'},props:{kind:'catalog',cards}},
+  {params:{path:'tours'},props:{kind:'catalog',cards,excursionCards,englishExcursions}},
   ...records.map(record=>({params:{path:'tour/'+record.data.slug},
-   props:{kind:'tour',record,cards}}))
+   props:{kind:'tour',record,cards,excursionCards,englishExcursions}})),
+  ...excursions.map(record=>({params:{path:'excursion/'+record.data.slug},
+   props:{kind:'excursion',record,cards,excursionCards,englishExcursions}}))
  ];
 }
 
@@ -42,21 +60,30 @@ interface TourSummary {
  id:string;title:string;slug:string;lead:string;price:number;currency:string;
  days:number;nights?:number;photo:string;alt:string;
 }
+interface ExcursionSummary {
+ id:string;title:string;slug:string;lead:string;photo:string;alt:string;
+ price?:number;currency?:string;duration?:string;tourIds:string[];
+}
 interface Props {
- kind:'catalog'|'tour';
+ kind:'catalog'|'tour'|'excursion';
  cards:TourSummary[];
+ excursionCards:ExcursionSummary[];
+ englishExcursions:Record<string, any>;
  record?:{id:string;locale:string;data:any;body:string};
 }
-const {kind,cards,record}=Astro.props as Props;
+const {kind,cards,record,excursionCards,englishExcursions}=Astro.props as Props;
 const d=record?.data;
-if(kind==='tour'&&!d)throw Error('Private pilot route requires approved EN Tour data');
-const days=Array.isArray(d?.itinerary)?d.itinerary.filter(x=>Number.isInteger(x.day)):[];
-const pendingExcursions=kind==='tour'?pilotExcursionDependencies(d.itinerary):[];
-// Render only approved EN numbered days. Independent Excursion text is gated separately.
-const localizedDays=days.map((day:any)=>({
- day:day.day,title:day.title,text:day.text,places:day.places??[],
+if(kind!=='catalog'&&(!d||record?.locale!=='en'))
+ throw Error('Private pilot route requires source-verified English data');
+const isTour=kind==='tour',isExcursion=kind==='excursion';
+const days=isTour&&Array.isArray(d?.itinerary)?d.itinerary.filter((x:any)=>Number.isInteger(x.day)):[];
+const excursionRefs=isTour?pilotExcursionDependencies(d.itinerary):[];
+// Preserve all approved EN Tour blocks and exact positions of 11 canonical excursion refs.
+const localizedItinerary=isTour ? d.itinerary.map((day:any)=>({
+ ...day,
+ ...(day.image && typeof day.image==='object' ? {image:{...day.image,src:pilotMediaUrl(day.image.src)}} : {}),
  images:(day.images??[]).map((image:any)=>({...image,src:pilotMediaUrl(image.src)}))
-}));
+})) : [];
 const headline=kind==='catalog'?'Three journeys, one Latin America':d.title;
 const pageTitle=kind==='catalog'
  ? 'Latin America — Three Journeys | Ada Tours Internal English Preview'
@@ -64,15 +91,23 @@ const pageTitle=kind==='catalog'
 const pageDescription=kind==='catalog'
  ? 'Three carefully curated Latin American programmes. An internal non-public English language preview from Ada Tours.'
  : String(d.lead).slice(0,160);
-const bodyHtml=kind==='tour'?renderPilotMarkdown(record!.body):'';
-const messageSubject=kind==='tour'?'Enquiry about '+headline+' — Ada Tours':'Travel enquiry — Ada Tours';
+const bodyHtml=record?renderPilotMarkdown(record.body):'';
+const messageSubject=kind==='catalog'?'Travel enquiry — Ada Tours':
+  (isTour?'Enquiry about the journey: ':'Enquiry about the excursion: ')+headline+' — Ada Tours';
 const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageSubject);
-const journeyStats=kind==='tour' ? [
+const journeyStats=isTour ? [
   {value:String(d.durationDays)+' days',label:'Duration'},
   {value:String(d.durationNights)+' nights',label:'Accommodation'},
   {value:String(d.route?.length??0)+' highlights',label:'Route'},
   {value:formatPilotPrice(d.priceFrom,d.currency),label:'Starting at · Per person · USD'},
 ] : [];
+const excursionStats=isExcursion ? [
+  ...(d.duration?[{value:d.duration,label:'Duration'}]:[]),
+  ...(d.format?[{value:d.format,label:'Travel style'}]:[]),
+  ...(typeof d.priceFrom==='number'?[{value:formatPilotPrice(d.priceFrom,d.currency),label:'Excursion price'}]:[]),
+] : [];
+const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id===d.id)?.tourIds.includes(c.id)):[];
+
 ---
 <BaseLayout privatePreview lang="en" noindex title={pageTitle} description={pageDescription} showBreadcrumbs={false}>
   <a class="pilot-skip" href="#content">Skip to content</a>
@@ -83,9 +118,11 @@ const journeyStats=kind==='tour' ? [
       </a>
       <nav class="pilot-links" aria-label="Private English pilot navigation">
         <a href={pilotCatalogUrl()} aria-current={kind==='catalog'?'page':undefined}>Journeys</a>
-        {kind==='tour' && <a href="#itinerary">Itinerary</a>}
-        {kind==='tour' && <a href="#prices">Prices</a>}
-        {kind==='tour' && <a href="#included">Inclusions</a>}
+        {isTour && <a href="#itinerary">Itinerary</a>}
+        {isTour && <a href="#prices">Prices</a>}
+        {(isTour||isExcursion) && <a href="#included">Inclusions</a>}
+        {isExcursion && <a href="#details">Details</a>}
+        {isExcursion && typeof d.priceFrom==='number' && <a href="#prices">Price</a>}
       </nav>
       <span class="pilot-pill">Private EN preview</span>
     </div>
@@ -126,8 +163,23 @@ const journeyStats=kind==='tour' ? [
             ))}
           </div>
         </section>
+        <section class="container pilot-index-section" aria-labelledby="private-excursions-title">
+          <div class="pilot-section-heading">
+            <span class="pilot-kicker">EXCURSIONS IN THESE JOURNEYS</span>
+            <h2 id="private-excursions-title">Explore all 11 excursions</h2>
+            <p>Each excursion uses its own English description and the shared Ada Tours prices and media.</p>
+          </div>
+          <div class="pilot-excursion-index" data-pilot-excursion-count={excursionCards.length}>
+            {excursionCards.map(item=>(
+              <a href={pilotExcursionUrl(item.slug)} class="pilot-excursion-index__link">
+                <span>{item.title}</span>
+                <small>{item.duration??'Excursion'}{typeof item.price==='number'?' · '+formatPilotPrice(item.price,item.currency):''}</small>
+              </a>
+            ))}
+          </div>
+        </section>
       </>
-    ) : (
+    ) : isTour ? (
       <>
         <Hero
           tour eyebrow="ADA TOURS · PRIVATE JOURNEY · 2027"
@@ -144,9 +196,10 @@ const journeyStats=kind==='tour' ? [
             <ul class="pilot-route-tags">{d.route.map((name:string)=><li>{name}</li>)}</ul>
           </section>
         )}
-        <Itinerary locale="en" privatePreview sectionId="itinerary" days={localizedDays} />
-        <p class="container pilot-excursion-note" data-pilot-unlocalized-excursions={pendingExcursions.length}>
-          The {pendingExcursions.length} standalone excursion modules referenced by this programme are tracked separately and are not shown until their English source text is approved.
+        <Itinerary locale="en" privatePreview sectionId="itinerary"
+          days={localizedItinerary} englishExcursions={englishExcursions} />
+        <p class="container pilot-excursion-note" data-pilot-linked-excursions={excursionRefs.length}>
+          {excursionRefs.length} independently translated excursions are linked in their original programme positions.
         </p>
         <TourPricing locale="en" sectionId="prices"
           price={'From '+formatPilotPrice(d.priceFrom,d.currency)}
@@ -160,6 +213,55 @@ const journeyStats=kind==='tour' ? [
             {cards.filter(c=>c.id!==record!.id).map(c=>(
               <a href={pilotTourUrl(c.slug)}>
                 <span>{c.title}</span><small>{c.days} days · From {formatPilotPrice(c.price,c.currency)}</small><span aria-hidden="true">↗</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      </>
+    ) : (
+      <>
+        <Hero tour eyebrow="ADA TOURS · EXCURSION · INTERNAL EN PREVIEW"
+          title={d.title} intro={d.lead} image={d.hero?.src}
+          imageAlt={d.hero?.alt||d.title}
+          meta={d.duration||undefined}
+          ctaHref="#enquiry" ctaLabel="Enquire by email" />
+        {excursionStats.length>0 && <TripStats stats={excursionStats} />}
+        {Array.isArray(d.route)&&d.route.length>0&&(
+          <section class="pilot-route container" aria-label="Excursion route">
+            <p class="pilot-kicker">AT A GLANCE</p>
+            <h2>Places along the way</h2>
+            <ul class="pilot-route-tags">{d.route.map((name:string)=><li>{name}</li>)}</ul>
+          </section>
+        )}
+        <section class="pilot-excursion-body section" id="details" data-pilot-excursion={d.id}>
+          <div class="container prose">
+            <p class="pilot-kicker">THE EXCURSION</p>
+            <h2>What to expect</h2>
+            <div class="pilot-body-markdown" set:html={bodyHtml} />
+          </div>
+        </section>
+        {d.gallery?.length>0&&(
+          <section class="pilot-excursion-gallery container" aria-label="Excursion photographs">
+            {d.gallery.map((photo:any)=>(
+              <figure><img src={photo.src} alt={photo.alt} title={photo.hover}
+                loading="lazy" decoding="async" width="700" height="500" /></figure>
+            ))}
+          </section>
+        )}
+        {typeof d.priceFrom==='number'&&(
+          <TourPricing locale="en" sectionId="prices" price={formatPilotPrice(d.priceFrom,d.currency)}
+            basis={d.priceNote} ctaHref="#enquiry" ctaLabel="Enquire about this excursion" />
+        )}
+        <IncludedExcluded locale="en" sectionId="included"
+          included={d.included??[]} notIncluded={d.notIncluded??[]} notes={d.notes??[]} />
+        <section class="pilot-more container" aria-label="Journeys featuring this excursion">
+          <div><span class="pilot-kicker">EXPLORE MORE</span><h2>Journeys featuring this excursion</h2></div>
+          <div class="pilot-other-tours">
+            {relatedTourCards.map(c=>(
+              <a href={pilotTourUrl(c.slug)}>
+                <span>{c.title}</span>
+                <small>{c.days} days · From {formatPilotPrice(c.price,c.currency)}</small>
+                <span aria-hidden="true">↗</span>
               </a>
             ))}
           </div>
@@ -226,6 +328,15 @@ const journeyStats=kind==='tour' ? [
 .pilot-route-tags{display:flex;flex-wrap:wrap;gap:.75rem;padding:0;margin:1.5rem 0 0;list-style:none}
 .pilot-route-tags li{border-radius:99px;border:1px solid var(--color-line);padding:.7rem 1.1rem;font-size:.87rem}
 .pilot-excursion-note{font-size:.82rem;line-height:1.5;color:var(--color-text-muted);padding-block:1rem 2rem}
+.pilot-excursion-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:3rem;border-top:1px solid var(--color-line)}
+.pilot-excursion-index__link{display:flex;flex-direction:column;gap:.5rem;padding:1.2rem 0;border-bottom:1px solid var(--color-line)}
+.pilot-excursion-index__link>span{font-family:var(--font-display);font-size:clamp(1.25rem,2.1vw,1.65rem)}
+.pilot-excursion-index__link>small{font-size:.83rem;color:var(--color-text-muted)}
+.pilot-excursion-body{padding-block:clamp(54px,6vw,94px)}
+.pilot-excursion-body h2{font-family:var(--font-display);font-weight:400;font-size:clamp(2rem,3vw,3.4rem);margin:.9rem 0 1.5rem}
+.pilot-excursion-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;padding-bottom:3rem}
+.pilot-excursion-gallery figure{margin:0;min-width:0;aspect-ratio:1.4;overflow:hidden}
+.pilot-excursion-gallery img{width:100%;height:100%;object-fit:cover}
 .pilot-body-markdown{min-width:0;font-size:.95rem;line-height:1.7}
 .pilot-body-markdown :global(h2){font-size:1.9rem;font-family:var(--font-display);font-weight:500;margin:0 0 1.3rem}
 .pilot-body-markdown :global(h3){font-size:1.4rem;margin:1.8rem 0 .8rem}
@@ -257,7 +368,7 @@ const journeyStats=kind==='tour' ? [
  .pilot-nav{flex-wrap:wrap;padding-block:.7rem}
  .pilot-links{order:3;width:100%;justify-content:space-between;overflow-x:auto;font-size:.8rem}
  .pilot-pill{font-size:.58rem}
- .pilot-cards,.pilot-more{grid-template-columns:1fr}
+ .pilot-cards,.pilot-more,.pilot-excursion-index,.pilot-excursion-gallery{grid-template-columns:1fr}
  .pilot-contact-grid{flex-direction:column;align-items:start}
  .pilot-footer .container{align-items:start;flex-direction:column}
 }

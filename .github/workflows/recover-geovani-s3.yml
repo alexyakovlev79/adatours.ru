@@ -35,14 +35,24 @@ jobs:
             "${ACTIONS_ID_TOKEN_REQUEST_URL}")"
           oidc_token="$(jq -er '.value' <<< "${oidc_json}")"
           echo "::add-mask::${oidc_token}"
-          iam_json="$(curl --fail --silent --show-error \
+          iam_file="$(mktemp)"
+          status="$(curl --silent --show-error \
+            -o "$iam_file" -w '%{http_code}' \
             -X POST 'https://auth.yandex.cloud/oauth/token' \
             -H 'Content-Type: application/x-www-form-urlencoded' \
-            --data-urlencode 'grant_type=urn:ietf:params:oauth:token-exchange' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
             --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
             --data-urlencode "audience=${YC_SA_ID}" \
             --data-urlencode "subject_token=${oidc_token}" \
             --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token')"
+          if [[ "$status" != 200 ]]; then
+            code="$(jq -r '.error // .code // .error_code // "unknown"' "$iam_file" 2>/dev/null | head -c 80 || true)"
+            detail="$(jq -r '.error_description // .message // "no description"' "$iam_file" 2>/dev/null | head -c 250 | sed -E 's/[A-Za-z0-9_-]{70,}/[redacted]/g' || true)"
+            echo "::error::Yandex OAuth HTTP $status; error=$code; detail=$detail"
+            exit 1
+          fi
+          iam_json="$(cat "$iam_file")"
+          rm -f "$iam_file"
           iam_token="$(jq -er '.access_token' <<< "${iam_json}")"
           echo "::add-mask::${iam_token}"
           echo "YC_IAM_TOKEN=${iam_token}" >> "${GITHUB_ENV}"

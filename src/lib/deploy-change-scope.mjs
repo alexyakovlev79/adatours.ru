@@ -42,19 +42,23 @@ export function safeInterestCopy(before, after) {
 function mdParts(s){
   if(!s.startsWith('---\n'))return null;
   const i=s.indexOf('\n---\n',4);
-  return i<0?null:{front:s.slice(0,i+5),lines:s.slice(i+5).split('\n')};
+  return i<0?null:{front:s.slice(0,i+5),body:s.slice(i+5)};
 }
-function markup(s){
-  if(/^#{1,6}\s/.test(s.trim()))return 'heading:'+s;
-  const markers=s.replace(/[^*_#[\](){}<>|!~\x60]/g,'');
-  const links=[...s.matchAll(/https?:\/\/[^\s)]+|\{\{[^}]+\}\}|\[[^\]]+\]\([^)]+\)|<[^>]+>|\x60[^\x60]*\x60/g)].map(x=>x[0]);
-  const prefix=/^\s*(?:[-*+]\s|\d+\.\s|>\s|\|)/.exec(s)?.[0]||'';
-  return serial([!s.trim(),markers,links,prefix]);
+function markdownSignature(body){
+  const lines=body.split(/\r?\n/);
+  // Headings can generate URL fragments. Keep their exact text and order.
+  const headings=lines.filter(s=>/^\s*#{1,6}\s+\S/.test(s));
+  // Preserve list/quote/table/code-fence structure; prose may be reflowed.
+  const blocks=lines.map(s=>s.match(/^\s*(?:[-*+]\s|\d+\.\s|>\s|\||\x60{3,}|~{3,})/)?.[0]||'').filter(Boolean);
+  // Preserve every Markdown/HTML link, anchor, shortcode, and inline code.
+  const special=body.match(/!?\[[^\]\n]*\]\([^)\n]+\)|\[[^\]\n]+\]\[[^\]\n]*\]|\[[^\]\n]+\]:[^\n]+|\{\{[^}\n]+\}\}|<\/?[a-zA-Z][^>\n]*>|<https?:\/\/[^>\n]+>|https?:\/\/[^\s<>)]+|\x60[^\x60\n]*\x60/g)||[];
+  const style=body.match(/\*\*|__|~~|(?<!\*)\*(?!\*)|(?<!_)_(?!_)/g)||[];
+  return JSON.stringify({headings,blocks,special,style});
 }
 export function safeMarkdown(before,after){
   const a=mdParts(before), b=mdParts(after);
-  return !!a && !!b && a.front===b.front && a.lines.length===b.lines.length
-    && a.lines.every((s,i)=>markup(s)===markup(b.lines[i]));
+  return !!a && !!b && a.front===b.front &&
+    markdownSignature(a.body)===markdownSignature(b.body);
 }
 export function safeReceipts(before,after){
   const a=json(before),b=json(after);

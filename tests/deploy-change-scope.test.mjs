@@ -17,6 +17,8 @@ test('intro copy can change, grammar forms are protected',()=>{
 test('only existing plain Markdown prose is eligible',()=>{
   const a='---\nid: test\n---\n## Same heading\n\nGood **text** with [link](/brazil/).\n';
   assert.ok(safeMarkdown(a,a.replace('Good','Better')));
+  assert.ok(safeMarkdown(a,a.replace('Good **text** with', 'Updated paragraph.\n\nNew **text** with')));
+  assert.equal(safeMarkdown(a,a.replace('## Same heading','## Different heading')),false);
   assert.equal(safeMarkdown(a,a.replace('/brazil/','/argentina/')),false);
   assert.equal(safeMarkdown(a,a.replace('id: test','id: altered')),false);
   assert.equal(safeMarkdown(a,a.replace('Same heading','Other heading')),false);
@@ -28,7 +30,7 @@ test('media receipts and enhanced provenance are append-only',()=>{
   const e={version:1,description:'gpt',enhancements:[{source:'/media/old.webp',enhanced:'/media/old.webp'}]};
   const f={...e,enhancements:[...e.enhancements,{source:'/media/people/geovani/new-20261030.webp',enhanced:'/media/people/geovani/new-20261030.webp',method:'gpt-image',revision:1,enhancedAt:'2026-10-30'}]};
   assert.ok(safeEnhancements(j(e),j(f)));
-  f.enhancements[0].enhanced='/media/changed.webp';
+  f.enhancements[0]={...f.enhancements[0],enhanced:'/media/changed.webp'};
   assert.equal(safeEnhancements(j(e),j(f)),false);
 });
 test('only allowlisted small changes get fast mode',()=>{

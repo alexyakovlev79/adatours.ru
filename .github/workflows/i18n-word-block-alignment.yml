@@ -7,6 +7,8 @@ on:
       - 'scripts/i18n/verify-word-block-alignment.mjs'
       - 'tests/i18n/word-alignment.test.mjs'
       - 'data/i18n/word-block-alignments/pilot/**'
+      - 'data/i18n/word-text-evidence/pilot/**'
+      - 'scripts/i18n/verify-word-paragraph-evidence.mjs'
       - '.github/workflows/i18n-word-block-alignment.yml'
   workflow_dispatch:
 permissions:
@@ -37,3 +39,5 @@ jobs:
           node --test feature/tests/i18n/word-alignment.test.mjs
       - name: Verify three Word SHA-grounded Tour alignments against current main
         run: node feature/scripts/i18n/verify-word-block-alignment.mjs feature matching production
+      - name: Check each cited English Word paragraph hash against immutable matching source
+        run: node feature/scripts/i18n/verify-word-paragraph-evidence.mjs feature matching

@@ -7,11 +7,11 @@
   "dispatcherEnabled": true,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
-  "updatedAt": "2026-10-30T11:13:16.611Z",
+  "updatedAt": "2026-10-30T11:13:49.498Z",
   "counts": {
     "queued": 3,
-    "leased": 1,
-    "review": 1,
+    "leased": 0,
+    "review": 2,
     "ready": 0,
     "retryable": 0,
     "blocked_external": 0,
@@ -106,15 +106,15 @@
     "06": {
       "counts": {
         "queued": 0,
-        "leased": 1,
-        "review": 0,
+        "leased": 0,
+        "review": 1,
         "ready": 0,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-30T12:42:42.679Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "07": {
@@ -259,14 +259,7 @@
       "public-en"
     ]
   },
-  "activeOwners": {
-    "en-real-easter-worker-20261030": {
-      "jobId": "en:tour:tour_chile_easter_island_3_days_2027:p1",
-      "token": "en-real-easter-token-20261030",
-      "expiresAt": "2026-10-30T12:42:42.679Z",
-      "generation": 1
-    }
-  },
+  "activeOwners": {},
   "ownerAssignments": {
     "en-real-rio-worker-20261030": {
       "token": "en-real-rio-token-20261030",
@@ -282,7 +275,9 @@
       "jobIds": [
         "en:tour:tour_chile_easter_island_3_days_2027:p1"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:tour:tour_chile_easter_island_3_days_2027:p1"
+      ]
     }
   }
 }

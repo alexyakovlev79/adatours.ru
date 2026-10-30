@@ -95,3 +95,13 @@ Drive, не переводит и не назначает AI-only. `npm run test
 - [Команда для параллельных чатов сопоставления](14-matching-bulk.md)
 - CAS-ветка `i18n/matching-staging`: пять `ready`, 353 `queued` при активации.
 - Массовый **перевод** по-прежнему закрыт.
+
+## Перевод после закрытия сопоставления (30.10.2026)
+
+- [Весь matching и предупреждения](15-matching-complete.md)
+- `data/i18n/block-maps/tours/` — 358 RU Tour block maps, 31 330 блоков.
+- `data/i18n/shared-excursion-owners/manifest.json` — единый EN-владелец
+  для каждой из 348 общих Excursion; 137 повторно используются.
+- Сопоставление и карты **готовы**. EN overlay/content, отдельный
+  translation dispatcher, Astro runtime и EN deployment **не готовы**.
+  Не запускать массовый рой переводчиков до нового gate.

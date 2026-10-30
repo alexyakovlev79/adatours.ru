@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "snapshotDate": "2026-10-30",
   "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
-  "phase": "matching_complete_translation_preparation",
+  "phase": "all_358_tour_block_maps_ready_translation_dispatcher_pending",
   "massLaunchAllowed": false,
   "operationalDispatcherReady": false,
   "automaticTextSynchronizationRunning": false,
@@ -33,17 +33,20 @@
     "matchingSelected2027": 221,
     "matchingSelected2026": 44,
     "matchingAiOnly": 93,
-    "matchingPriceRows2027": 1465
+    "matchingPriceRows2027": 1465,
+    "blockMapToursReady": 358,
+    "visibleRuTranslationBlocks": 31330,
+    "canonicalReferencedExcursions": 348,
+    "sharedExcursionsReused": 137
   },
   "nextGates": [
-    "snapshot_complete_matching_decisions",
-    "create_complete_stable_translation_block_maps",
-    "reconcile_all_word_2027_prices_with_live_ru",
-    "integrate_locale_resolver_into_astro",
-    "build_and_test_translation_cas_dispatcher",
-    "confirm_dual_build_and_preview_target",
-    "run_two_worker_translation_pilot",
-    "enable_mass_translation_after_pilot"
+    "word_to_block_semantic_alignment_for_pilot",
+    "implement_translation_cas_dispatcher_and_recovery",
+    "run_two_worker_translation_pilot_with_full_word_and_ai_gap",
+    "connect_astro_locale_renderer_seo_search_schema_forms",
+    "safely_classify_and_apply_remaining_word_2027_shared_prices",
+    "confirm_ru_en_preview_build_and_dual_deploy",
+    "authorize_mass_translation_after_pilot"
   ],
   "note": "Matching 358/358 ready. Live staging branch is source of truth. No mass translation or public EN deployment yet. See docs/plans/english-site/15-matching-complete.md",
   "matchingDispatcherReady": true,
@@ -75,5 +78,7 @@
   "matchingAuditRunId": 41007943083,
   "matchingAuditArtifactId": 12956670550,
   "matchingAuditFatalIssues": 0,
-  "matchingAuditWarnings": 192
+  "matchingAuditWarnings": 192,
+  "translationMassLaunchAllowed": false,
+  "mainPriceCommitMexico": "1b4ce4750bc4f1045f79807df0624f97fdee3ca2"
 }

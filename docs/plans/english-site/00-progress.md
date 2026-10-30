@@ -260,3 +260,34 @@ Verified receipts for checkpoint 7:
 - Outcomes 221 Word 2027, 44 Word 2026, 93 AI-only. 1,465 price rows, only 3 explicitly marked changed; current price reconciliation is not yet complete. 192 non-fatal data-quality warnings in detailed artifact.
 - Mass matching closed; next stage is stable block maps, authoritative Word-source alignment, shared-price reconciliation and independent translator dispatcher. No translation or EN public site deployment.
 - See `docs/plans/english-site/15-matching-complete.md` and `data/i18n/matching-audit-summary.json`.
+
+## Checkpoint 8 — 30.10.2026: all stable text blocks and shared Excursion owners
+
+- The first complete `i18n/matching-staging` audit confirmed **358/358** results
+  (221 Word 2027, 44 Word 2026, 93 AI-only), with immutable results.
+  The matching queue is now `matchingEnabled=false` and
+  `matchingComplete=true` at commit `8bf093244e6032056f6a78a99c31031e5c95ed99`.
+- Frozen `data/i18n/block-maps/tours/`: **358** full stable Tour maps,
+  **31,330** visible RU text blocks, zero unsupported/ambiguous maps.
+  Node24 GitHub Actions [41010245491](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41010245491)
+  succeeded and committed them to the feature branch.
+- Frozen `data/i18n/shared-excursion-owners/manifest.json`: **348**
+  canonical Excursions referenced by active Tour programmes, of which
+  **137** are reused by two or more Tours. Every referenced ID maps to
+  an existing RU Excursion; zero unresolved. One future EN owner per
+  Excursion; Tour-specific overrides remain in Tour text maps.
+  Node24 Actions [41010461453](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41010461453)
+  succeeded and persisted the manifest.
+- Side-effect-free price comparison of all 221 selected Word-2027 Tours:
+  [Actions 41008906184](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41008906184).
+  144 initial different-minimum candidates require semantic separation
+  of tour tariff vs supplements; these were **not** bulk-applied.
+- **Mexico Lindo** was an individually source-verified exception: USD
+  SGL 2372, DBL 1908, TPL 1855 with shared minimum 1855.
+  Exact Word 2027 provenance captured; main commit
+  `1b4ce4750bc4f1045f79807df0624f97fdee3ca2`.
+  Production deploy can only be claimed after successful run 41009453022.
+- No real English content/overlay has been approved, and the locale
+  adapter is not connected to all Astro runtime routes. The independent
+  translation dispatcher, full Word-to-block extraction and dual build
+  remain future steps. **Mass translation is disabled**.

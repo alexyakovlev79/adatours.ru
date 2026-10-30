@@ -1,5 +1,7 @@
 # Ada Tours — прямая загрузка новых медиа в S3, без бинарных Git-коммитов
 
+> Для новых фотографий, присланных Анной или другими редакторами через Codex/ChatGPT, применяй `docs/workflows/editor-image-intake.md` и помощник `scripts/editor-photo-publish.mjs`: сначала реальный GPT Image, затем **этот** защищенный S3-протокол. Не вставляй новый бинарный файл в Git.
+
 **Версия 1.0, 09.10.2026.** Страницы остаются на GitHub Pages. Уже существующие файлы Git не удалять. **Все новые WebP/JPG/PNG/AVIF и MP4/WebM — только напрямую в Yandex Object Storage** через существующую OIDC-федерацию. Логические URL в MD/JSON сохраняют формат `/media/...`; production переводит их в `https://img.adatours.ru/media/...`.
 
 ## Защищенный маршрут ChatGPT Work

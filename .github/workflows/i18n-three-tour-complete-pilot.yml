@@ -10,7 +10,7 @@ on:
       - '.github/workflows/i18n-three-tour-complete-pilot.yml'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -80,6 +80,29 @@ jobs:
           path: /tmp/ada-en-approved-pilot/
           retention-days: 14
           if-no-files-found: error
+      - name: Preserve accepted locale overlays on a new isolated preview branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          target=i18n/three-tour-preview-20261030
+          if git -C feature ls-remote --exit-code --heads origin "$target" >/dev/null 2>&1; then
+            echo "::error::Pilot preview branch already exists; do not overwrite a previous QA receipt"
+            exit 1
+          fi
+          git -C feature switch -c "$target"
+          output=feature/data/i18n/pilot-previews/v1
+          mkdir -p "$output"/{overlays,word-sources,rendered}
+          cp /tmp/ada-en-approved-pilot/summary.json "$output/summary.json"
+          cp /tmp/ada-en-approved-pilot/overlays/*.json "$output/overlays/"
+          cp /tmp/ada-en-approved-pilot/word-sources/*.json "$output/word-sources/"
+          cp /tmp/ada-en-approved-pilot/rendered/*.json "$output/rendered/"
+          git -C feature add data/i18n/pilot-previews/v1/
+          files=$(git -C feature diff --cached --name-only | wc -l)
+          test "$files" -eq 10 || { echo "::error::Expected 10 pilot preview files, got $files"; exit 1; }
+          git -C feature diff --cached --check
+          git -C feature -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "i18n: retain three fully verified EN pilot overlays without public deployment"
+          git -C feature push origin HEAD:refs/heads/"$target"
+          echo "Three approved locale overlays preserved on $target. Main and public EN remain unchanged."
       - name: Save nonpublishing complete-block review packets
         uses: actions/upload-artifact@v4
         with:

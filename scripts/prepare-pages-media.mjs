@@ -74,17 +74,27 @@ async function main() {
   }
   if (unresolved.length) throw new Error('Local media URLs remain: ' + unresolved.slice(0, 12).join(', '));
   if (updatedRefs < 1) throw new Error('No media references rewritten: will not remove dist/media');
-  if (!(await fs.stat(media)).isDirectory()) throw new Error('dist/media does not exist');
-  const stats = await fileStats(media);
-  if (stats.count < 100) throw new Error('Too few assets in dist/media');
-  await fs.rm(media, { recursive: true });
-  if (!(await fs.stat(path.resolve('public/media'))).isDirectory())
-    throw new Error('Source public/media unexpectedly absent');
+  // Sparse Git checkout intentionally excludes legacy public/media binaries.
+  // The URLs are always rewritten to verified Yandex Object Storage.
+  let sourceMediaRetained = false;
+  let stats = { count: 0, bytes: 0 };
+  try {
+    if (!(await fs.stat(media)).isDirectory()) throw Error('Invalid dist/media');
+    stats = await fileStats(media);
+    if (stats.count < 100) throw Error('Partially copied legacy dist/media');
+    await fs.rm(media, { recursive: true });
+    sourceMediaRetained = (await fs.stat(path.resolve('public/media')).catch(() => null))?.isDirectory() || false;
+  } catch (e) {
+    if (e.code !== 'ENOENT') throw e;
+    if ((await fs.stat(path.resolve('public/media')).catch(() => null))?.isDirectory())
+      throw Error('Legacy public/media exists but is absent from dist/media');
+    // Fully absent media is expected and skips copying ~1.4 GB into dist.
+  }
   const report = {
     sourceCommit: process.env.GITHUB_SHA || null, mediaOrigin: cdn.origin,
     modifiedTextFiles: changed, redirectedReferences: updatedRefs,
     excludedFiles: stats.count, excludedBytes: stats.bytes,
-    sourceMediaRetained: true,
+    sourceMediaRetained,
   };
   await fs.writeFile(path.join(dist, 'media-offload-report.json'), JSON.stringify(report, null, 2) + '\n');
   console.log('External media deployment: ' + JSON.stringify(report));

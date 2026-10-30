@@ -44,3 +44,12 @@ SEO registry, derived registries и проверенные Google Sheets
 
 Исходный read-only preflight архива и инвентаризации:
 https://github.com/alexyakovlev79/adatours.ru/actions/runs/41018924667
+
+## Итог публикации — 30.10.2026
+
+- Коммит архива в `main`: [`3565368b9813d8adab68d2c4a0ac025e8e75831b`](https://github.com/alexyakovlev79/adatours.ru/commit/3565368b9813d8adab68d2c4a0ac025e8e75831b), [PR #60](https://github.com/alexyakovlev79/adatours.ru/pull/60).
+- Предварительная сборка полного архива: [Actions #41031804510](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41031804510) — success; CI релизной ветки [#41033994814](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41033994814) — success.
+- Штатный [GitHub Pages deploy #41035427979](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41035427979) для указанного коммита — **success**, включая S3 media receipts, Astro build, Pages deploy, статусы публикации, синхронизацию каталогов и SEO finalize.
+- После успешной публикации выполнена пакетная запись в [Google Sheets](https://docs.google.com/spreadsheets/d/1ZPptMdEcIDA3ZFMOQcFuc5jU88LJlFw9R4URCQSBmmc/edit): **5** строк «Страницы» → `Архивная`, **5** строк «SEO-GEO тексты» → `Архив`, **79** строк «Фото» → `ARCHIVED` (77 обновлены, 2 были архивными). Результат проверен повторным чтением всех 89 строк: 0 ошибок.
+- Ключи строк, прежние даты публикаций, фото, материалы Анны и история правок сохранены. Точная карта строк: `data/audits/word-duplicates-20261030-sheets-plan.json`.
+- Программа Эквадора с отдельно принятой редакцией Анны и другие 17 неоднозначных пар **не архивированы**.

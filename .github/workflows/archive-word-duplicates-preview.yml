@@ -1,4 +1,4 @@
-name: Preview six high-confidence Word duplicate archives
+name: Preview five high-confidence Word duplicate archives
 on:
   push:
     branches: [feat/archive-word-duplicates-20261030]
@@ -7,6 +7,7 @@ on:
       - 'scripts/archive-confirmed-word-duplicates.mjs'
       - '.github/workflows/archive-word-duplicates-preview.yml'
       - 'package.json'
+      - 'data/seo-geo/articles/**/index.md'
   workflow_dispatch:
 permissions:
   contents: read
@@ -59,7 +60,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: ada-archive-six-preview
+          name: ada-archive-five-preview
           path: /tmp/ada-archive-preview/
           if-no-files-found: warn
           retention-days: 30

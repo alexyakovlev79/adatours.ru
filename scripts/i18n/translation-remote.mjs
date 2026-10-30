@@ -78,6 +78,9 @@ export async function runEnTranslation(tools,core,args={}){
     if(active&&Date.parse(active.expiresAt)>nowMs){
      if(active.token!==args.token)return{status:'owner_token_conflict',branch};
      sid=core.translationShardFor(active.jobId);
+    }else if(args.jobId){
+     if(!id(args.jobId))throw Error('Invalid explicit pilot jobId');
+     sid=core.translationShardFor(args.jobId);
     }else sid=core.pickTranslationShard(index,time);
    }else if(action==='reap'){
     sid=core.pickTranslationShard(index,time);
@@ -100,6 +103,8 @@ export async function runEnTranslation(tools,core,args={}){
     transition={shard:x.shard,status:'reaped',restored:x.restored};
    }else if(action==='claim'){
     transition=core.claimTranslation(shard,{ownerId:args.ownerId,token:args.token,now:time});
+    if(transition.item&&args.jobId&&transition.item.jobId!==args.jobId)
+     throw Error('Requested pilot job differs from shard claim; refusing wrong assignment');
     if(!transition.item){
      if(!transition.restored)return{status:transition.status,head:sha,counts:index.counts};
     }else{

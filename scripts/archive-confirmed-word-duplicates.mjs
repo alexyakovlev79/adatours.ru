@@ -85,6 +85,27 @@ for(const file of articles){
  if(!target||archPaths.has(target))continue;
  let next=s,hits=0,macros=0;
  const both=decided.filter(d=>s.includes(d.oldUrl)&&s.includes(d.newUrl));
+ // A single active page cannot promote the same confirmed product as two
+ // separate itineraries. Conservatively delete redundant archived mentions
+ // wherever its canonical survivor is already described on that same page.
+ // This preserves the surviving tour's paragraph rather than presenting
+ // invented differences or two prices for one itinerary.
+ if(both.length){
+   let lines=next.split('\n');
+   for(const d of both){
+     lines=lines.flatMap(line=>{
+       if(!line.includes(d.oldUrl))return [line];
+       if(line.trim().startsWith('|'))return []; // duplicated table product
+       if(line.includes(d.newUrl)){
+         const sentences=line.split(/(?<=[.!?])\s+/u);
+         const keep=sentences.filter(text=>!text.includes(d.oldUrl));
+         return keep.length?[keep.join(' ').replace(/^\s*(?:А|Но|Также|Тоже|Другой)\s+/u,'')]:[];
+       }
+       return []; // outdated paragraph; survivor is described elsewhere
+     });
+   }
+   next=lines.join('\n');
+ }
  next=next.replace(/\{\{catalog\.tourTable:([^}]+)\}\}/g,(whole,value)=>{
   const ids=value.split(',').map(x=>x.trim()).filter(Boolean);
   // Derived table IDs must refer to active live Tour records; stale historical

@@ -36,7 +36,8 @@ test('render source requires exact stable identity, prices and sealed 172-block 
  data:{id:x.id,slug:x.slug,locale:'en',currency:'USD',priceFrom:x.price,
  durationDays:x.days,title:'Tour '+x.slug,lead:'English introduction',
  hero:{src:'/media/tours/valid/hero.webp'},
- itinerary:Array.from({length:x.days},(_,i)=>({day:i+1,text:'English day'})),
+ itinerary:[...Array.from({length:x.days},(_,i)=>({day:i+1,text:'English day'})),
+ ...Array.from({length:x.pendingExcursions},(_,i)=>({excursionRef:'excursion_unit_'+i}))],
  included:[],notIncluded:[]}}));
  assert.equal(assertPilotRenderSource(records,summary),true);
  const wrong=structuredClone(records);wrong[0].data.priceFrom=123;

@@ -44,7 +44,7 @@ for(const [id,sid] of ids){
     refs++;return e.text;
    });
    const expected=paragraphTexts.join('\n\n');
-   if(block.text!==expected||/[\\u0400-\\u052F]/u.test(block.text))
+   if(block.text!==expected||/[\u0400-\u052F]/u.test(block.text))
     throw Error('Translation not an exact Word span: '+block.blockId);
    chars+=block.text.length;
   }

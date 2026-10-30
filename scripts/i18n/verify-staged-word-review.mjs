@@ -29,7 +29,7 @@ const packs=[
 const summary=[],errors=[];
 const index=read(staging,'data/i18n/translation/v1/index.json');
 if(index.publicationEnabled!==false||index.translationMassLaunchAllowed!==false||
- index.pilotOnly!==true||index.counts.ready!==0||index.counts.review!==2)
+ index.pilotOnly!==true||(index.counts.ready+index.counts.review)!==2)
  throw Error('Unexpected queue release state');
 for(const cfg of packs)try{
  const id=cfg.entityId,jobId='en:tour:'+id+':p1';
@@ -37,7 +37,7 @@ for(const cfg of packs)try{
  const shard=read(staging,base+'state/'+cfg.shard+'.json');
  const row=shard.items.find(j=>j.jobId===jobId);
  const job=read(staging,base+'jobs/'+cfg.shard+'.json').jobs.find(j=>j.jobId===jobId);
- if(!row||row.status!=='review'||!row.submission||!job||row.lease!==null)
+ if(!row||!['review','ready'].includes(row.status)||!row.submission||!job||row.lease!==null)
   throw Error('Unsaved/nonreview/stale translation state');
  const saved=read(staging,row.submission.resultPath),evidence=
   read(feature,'data/i18n/word-text-evidence/pilot/'+id+'.json');
@@ -55,6 +55,9 @@ for(const cfg of packs)try{
    match.selectedSource.driveFileId!==evidence.sourceFileId||
    match.selectedSource.modifiedTime!==evidence.sourceModifiedTime)
    throw Error('Immutable blob or source revision mismatch');
+ if(row.status==='ready'&&(!row.review||row.review.acceptedBlobSha!==row.submission.blobSha||
+   !['word','meaning','facts','voice','structure','relations'].every(k=>row.review.checks?.[k]===true)))
+   throw Error('Ready result has no independent QA receipt');
  if(saved.blocks.length!==8||job.blocks.length!==8)
    throw Error('Only complete first eight-block pilot packages accepted');
  const fields=new Map(stable.paths.map(p=>[p.blockId,p]));
@@ -85,7 +88,7 @@ for(const cfg of packs)try{
  summary.push({id,jobId,immutableBlob:row.submission.blobSha,
   wordParagraphs:words,blocks:saved.blocks.length,
   checks:{word:true,meaning:true,facts:true,voice:true,structure:true,relations:true},
-  status:'eligible_for_independent_block_QA_only'});
+  status:row.status==='ready'?'word_ready_receipt_verified':'eligible_for_independent_block_QA_only'});
 }catch(e){errors.push({id:cfg.entityId,error:String(e)});}
 console.log(JSON.stringify({status:errors.length?'failed':'review_preflight_passed',
  verified:summary.length,summary,errors}));

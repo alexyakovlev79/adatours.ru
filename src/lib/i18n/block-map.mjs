@@ -33,7 +33,18 @@ function ownerFor(entry,type,path,text){
    const block=item.contentBlocks?.[Number(p[3])];
    const key=block?.excursionRef||block?.title||block?.text;
    if(!key)throw new Error('Missing content-block semantic owner: '+path);
-   suffix='contentBlock/'+hash(block.type+':'+key)+'/'+p.slice(4).join('/');
+   const peers=(item.contentBlocks||[]).filter(x=>(x.excursionRef||x.title||x.text)===key);
+   let identity=key;
+   if(peers.length>1){
+     // Duplicate section titles are common inside one day. Distinguish by
+     // their actual content, not by mutable array position.
+     const content=block?.text||JSON.stringify(block);
+     const same=peers.filter(x=>(x.text||JSON.stringify(x))===content);
+     const ordinal=same.length>1 ? peers.slice(0,peers.indexOf(block)+1)
+        .filter(x=>(x.text||JSON.stringify(x))===content).length : null;
+     identity=key+'|'+hash(content)+(ordinal?':'+ordinal:'');
+   }
+   suffix='contentBlock/'+hash(block.type+':'+identity)+'/'+p.slice(4).join('/');
   }
   return 'itinerary/'+ident+'/'+suffix;
  }

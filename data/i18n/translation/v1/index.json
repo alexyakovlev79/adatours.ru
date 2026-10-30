@@ -7,10 +7,10 @@
   "dispatcherEnabled": true,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
-  "updatedAt": "2026-10-30T11:27:09.915Z",
+  "updatedAt": "2026-10-30T12:05:50.615Z",
   "counts": {
-    "queued": 2,
-    "leased": 0,
+    "queued": 1,
+    "leased": 1,
     "review": 0,
     "ready": 3,
     "retryable": 0,
@@ -35,8 +35,8 @@
     },
     "01": {
       "counts": {
-        "queued": 1,
-        "leased": 0,
+        "queued": 0,
+        "leased": 1,
         "review": 0,
         "ready": 0,
         "retryable": 0,
@@ -44,7 +44,7 @@
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-10-30T13:35:50.615Z",
       "earliestRetryAt": null
     },
     "02": {
@@ -253,7 +253,14 @@
     "safety": "no main, no mass, no publication",
     "proof": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/41048829095"
   },
-  "activeOwners": {},
+  "activeOwners": {
+    "en-colombia-pilot-worker-p1-20261030": {
+      "jobId": "en:tour:tour_colombia_essential_5_days:p1",
+      "token": "en-colombia-pilot-token-p1-20261030",
+      "expiresAt": "2026-10-30T13:35:50.615Z",
+      "generation": 1
+    }
+  },
   "ownerAssignments": {
     "en-real-rio-worker-20261030": {
       "token": "en-real-rio-token-20261030",
@@ -281,6 +288,13 @@
       "completedJobIds": [
         "en:tour:tour_brazil_rio_four_days:p2"
       ]
+    },
+    "en-colombia-pilot-worker-p1-20261030": {
+      "token": "en-colombia-pilot-token-p1-20261030",
+      "jobIds": [
+        "en:tour:tour_colombia_essential_5_days:p1"
+      ],
+      "completedJobIds": []
     }
   },
   "pilotAcceptedAt": "2026-10-30T11:27:46.685Z",

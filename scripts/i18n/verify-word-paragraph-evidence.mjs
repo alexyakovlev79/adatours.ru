@@ -8,7 +8,8 @@ import {resolve,join} from 'node:path';
 const base=resolve(process.argv[2]||'.'),matching=resolve(process.argv[3]||'.');
 const read=(dir,p)=>JSON.parse(readFileSync(join(dir,p),'utf8'));
 const hash=s=>createHash('sha256').update(s,'utf8').digest('hex');
-const ids=['tour_brazil_rio_four_days','tour_chile_easter_island_3_days_2027'];
+const ids=['tour_brazil_rio_four_days','tour_chile_easter_island_3_days_2027',
+ 'tour_colombia_essential_5_days'];
 const results=[],errors=[];
 for(const id of ids)try{
  const evidence=read(base,'data/i18n/word-text-evidence/pilot/'+id+'.json');

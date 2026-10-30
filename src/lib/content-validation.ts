@@ -10,6 +10,7 @@ import { validateSourceTextPointer, validateProvidedMedia, isNonemptyUtf8 } from
 import { validateGeneratedSourceMaterials } from './generated-source-materials.mjs';
 import { validateCommissionedSourceMaterials } from './commissioned-source-materials.mjs';
 import { validateDirectAssetLedger } from '../../scripts/lib/direct-media-ledger.mjs';
+import {frozenMediaKeys} from './frozen-legacy-media.mjs';
 import { canonicalPath, countryPath, destinationPath, tourPath, excursionPath, themePath } from './routes';
 
 export interface CatalogDestination {
@@ -49,6 +50,7 @@ async function validateContent(): Promise<void> {
   const ledgerCheck = validateDirectAssetLedger(directLedger);
   errors.push(...ledgerCheck.errors.map((message) => 'direct-s3-uploads.json: ' + message));
   const verifiedCloudFiles = new Set(ledgerCheck.byPath.keys());
+  const frozenLegacyFiles = frozenMediaKeys(process.cwd());
   const rows = [...countries, ...destinations, ...tours, ...excursions, ...themes, ...cases, ...people, ...articles];
   const publishedRouteById = new Map<string, string>();
   for (const { data } of countries.filter(({ data }) => isPublished(data))) publishedRouteById.set(data.id, countryPath(data));
@@ -174,7 +176,7 @@ async function validateContent(): Promise<void> {
       return;
     }
     const exists = await stat(path).then((item) => item.isFile(), () => false);
-    if (!exists && !verifiedCloudFiles.has(path.slice(publicRoot.length))) errors.push(`Отсутствует локальное или подтвержденное S3-изображение ${path.slice(publicRoot.length)}.`);
+    if (!exists && !verifiedCloudFiles.has(path.slice(publicRoot.length)) && !frozenLegacyFiles.has(path.slice(publicRoot.length))) errors.push(`Отсутствует локальное или подтвержденное S3-изображение ${path.slice(publicRoot.length)}.`);
   }));
 
   // Source preparation is separate from page creation. Enforce the raw-source
@@ -236,7 +238,7 @@ async function validateContent(): Promise<void> {
             if (image.url.startsWith('/media/')) {
               const relative = decodeURIComponent(new URL(image.url, 'https://adatours.ru').pathname);
               const path = resolve(publicRoot, `.${relative}`);
-              if (!path.startsWith(`${publicRoot}${sep}`) || (!verifiedCloudFiles.has(relative) && !await stat(path).then((file) => file.isFile() && file.size > 0, () => false))) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
+              if (!path.startsWith(`${publicRoot}${sep}`) || (!verifiedCloudFiles.has(relative) && !frozenLegacyFiles.has(relative) && !await stat(path).then((file) => file.isFile() && file.size > 0, () => false))) errors.push(`source-index/${name}: предоставленная фотография ${image.url} отсутствует или пуста.`);
             }
           }
         }

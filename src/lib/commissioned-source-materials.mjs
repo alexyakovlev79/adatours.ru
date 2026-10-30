@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {migratedLegacyAssetExists} from './frozen-legacy-media.mjs';
 
 // Explicitly commissioned place descriptions may combine Word photographs,
 // existing tour assets and GPT Images. Keep each image's origin independently.
@@ -21,7 +22,7 @@ export function validateCommissionedSourceMaterials(entry, { repoRoot, directAss
   for (const image of Array.isArray(images) ? images : []) {
     if (!['gpt_image', 'anna_word_embedded', 'existing_archive_tour', 'existing_site_asset'].includes(image.origin)) fail('every image needs its truthful individual origin');
     if (!/^\/media\/[A-Za-z0-9_/-]+\.webp$/.test(image.url ?? '') || image.url.includes('..') || !['hero', 'gallery'].includes(image.role) || !Number.isInteger(image.order) || image.order < 1 || !image.alt?.trim()) fail('selected images need exact WebP path, role, order and alt');
-    else if (repoRoot && !directAssets.has(image.url) && !fs.existsSync(path.join(repoRoot, 'public', image.url))) fail(`missing selected image ${image.url}`);
+    else if (repoRoot && !directAssets.has(image.url) && !fs.existsSync(path.join(repoRoot, 'public', image.url)) && !migratedLegacyAssetExists(repoRoot, image.url)) fail(`missing selected image ${image.url}`);
   }
   if (repoRoot && selected.repositoryPath === expected && (!fs.existsSync(path.join(repoRoot, expected)) || !fs.readFileSync(path.join(repoRoot, expected), 'utf8').trim())) fail('commissioned material is missing or empty');
   return errors;

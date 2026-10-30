@@ -7,7 +7,7 @@ on:
       - '.github/workflows/i18n-shared-excursions.yml'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -22,11 +22,21 @@ jobs:
       - name: Install YAML parser
         run: npm install --ignore-scripts --no-audit --no-fund
       - name: Build unique translation owners without modifying Tours
-        run: node scripts/i18n/audit-shared-excursion-owners.mjs . --output /tmp/ada-shared-excursions
+        run: node scripts/i18n/audit-shared-excursion-owners.mjs . --output data/i18n/shared-excursion-owners
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: ada-shared-excursion-owners
-          path: /tmp/ada-shared-excursions/
+          path: data/i18n/shared-excursion-owners/
           if-no-files-found: warn
           retention-days: 30
+      - name: Save canonical shared-Excursion ownership in feature branch
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/i18n/shared-excursion-owners
+          if git diff --cached --quiet; then echo 'Already checkpointed'; exit 0; fi
+          git commit -m 'data(i18n): freeze unique owners for shared excursion translations'
+          git push origin HEAD:feat/english-site-foundation
+

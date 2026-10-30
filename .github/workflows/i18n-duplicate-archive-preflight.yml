@@ -1,0 +1,49 @@
+name: Ada Tours archive preflight and Word collision evidence
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/audit-word-duplicate-candidates.mjs'
+      - '.github/workflows/i18n-duplicate-archive-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/matching-staging
+          path: matching
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          path: feature
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install existing site tooling
+        working-directory: site
+        run: npm ci --no-audit --no-fund
+      - name: Inventory Word collisions and live article references
+        working-directory: site
+        run: node ../feature/scripts/i18n/audit-word-duplicate-candidates.mjs ../matching /tmp/ada-duplicates
+      - name: Verify current archive lifecycle and source consistency
+        working-directory: site
+        run: |
+          node --test tests/archive.test.mjs
+          node scripts/sync-archives.mjs
+          node scripts/sync-source-catalogs.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ada-duplicate-archive-preflight
+          path: /tmp/ada-duplicates/
+          if-no-files-found: warn
+          retention-days: 30

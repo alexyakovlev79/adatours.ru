@@ -30,7 +30,7 @@ jobs:
           node-version: 24
       - name: Install existing site tooling
         working-directory: site
-        run: npm ci --no-audit --no-fund
+        run: npm install --no-audit --no-fund
       - name: Inventory Word collisions and live article references
         working-directory: site
         run: node ../feature/scripts/i18n/audit-word-duplicate-candidates.mjs ../matching /tmp/ada-duplicates

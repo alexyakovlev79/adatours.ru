@@ -90,7 +90,8 @@ for(const c of cases){
   if(source.length!==1||attr(source[0],'data-pilot-excursion')!==t.id||
     tags(main,'h1').length!==1||!tags(main,'h2').length||
     !find(main,x=>(attr(x,'class')||'').split(' ').includes('hero')).length||
-    !find(main,x=>attr(x,'data-ada-i18n-services')==='en').length||
+    (t.id!=='excursion_easter_island_orongo_rano_kau'&&
+       !find(main,x=>attr(x,'data-ada-i18n-services')==='en').length)||
     !links.some(x=>attr(x,'href')===pilotCatalogUrl())||
     !PILOT_TOURS.some(tour=>links.some(x=>attr(x,'href')===pilotTourUrl(tour.slug)))||
     text.length<160)

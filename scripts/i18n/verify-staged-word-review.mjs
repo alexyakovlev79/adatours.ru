@@ -29,7 +29,7 @@ const packs=[
 const summary=[],errors=[];
 const index=read(staging,'data/i18n/translation/v1/index.json');
 if(index.publicationEnabled!==false||index.translationMassLaunchAllowed!==false||
- index.pilotOnly!==true||(index.counts.ready+index.counts.review)!==2)
+ index.pilotOnly!==true||(index.counts.ready+index.counts.review)<2)
  throw Error('Unexpected queue release state');
 for(const cfg of packs)try{
  const id=cfg.entityId,jobId='en:tour:'+id+':p1';

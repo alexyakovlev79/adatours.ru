@@ -3,9 +3,7 @@
  * authorises a public locale deployment. The three frozen JSON inputs are
  * copied from pinned i18n/three-tour-preview into the CI workspace.
  */
-import '../../styles/tokens.css';
-import '../../styles/typography.css';
-import '../../styles/global.css';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 import {readFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {
@@ -59,21 +57,7 @@ const bodyHtml=kind==='tour'?renderPilotMarkdown(record!.body):'';
 const messageSubject=kind==='tour'?'Enquiry about '+headline+' — Ada Tours':'Travel enquiry — Ada Tours';
 const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageSubject);
 ---
-<!doctype html>
-<html lang="en" data-ada-en-pilot="true" data-public-release="false">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
-  <meta name="referrer" content="no-referrer" />
-  <meta name="description" content={pageDescription} />
-  <meta name="generator" content={Astro.generator} />
-  <meta name="color-scheme" content="light" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <title>{pageTitle}</title>
-  <!-- No canonical/hreflang/production JSON-LD: this is a closed, unhosted pilot artifact. -->
-</head>
-<body>
+<BaseLayout privatePreview lang="en" noindex title={pageTitle} description={pageDescription} showBreadcrumbs={false}>
   <a class="pilot-skip" href="#content">Skip to content</a>
   <header class="pilot-header">
     <div class="container pilot-nav">
@@ -237,8 +221,7 @@ const mailto='mailto:adatours@adatours.com?subject='+encodeURIComponent(messageS
       <a href={pilotCatalogUrl()}>Back to journeys</a>
     </div>
   </footer>
-</body>
-</html>
+</BaseLayout>
 
 <style>
 .pilot-skip{position:absolute;transform:translateY(-180%);background:#fff;padding:.7rem 1.4rem;z-index:1000}

@@ -23,12 +23,15 @@ for(const c of cases){
  const metas=tags(head,'meta'),links=tags(dom,'a'),imgs=tags(dom,'img'),stylesheets=tags(head,'link').filter(x=>attr(x,'rel')==='stylesheet');
  const robots=metas.find(x=>attr(x,'name')==='robots'),title=textOf(tags(head,'title')[0]);
  if(attr(h,'lang')!=='en'||attr(h,'data-ada-en-pilot')!=='true'||
+   attr(h,'data-ada-shell')!=='BaseLayout'||
   attr(h,'data-public-release')!=='false'||!main||!title.includes('Ada Tours')||
   attr(robots,'content')!=='noindex,nofollow,noarchive,nosnippet')
    fail('Missing HTML language/noindex/private gate '+c.file);
  if(tags(head,'link').some(x=>['canonical','alternate'].includes(attr(x,'rel'))))
    fail('Premature public canonical/hreflang '+c.file);
- if(tags(dom,'form').length||/googletagmanager|site-analytics\.js/.test(html))
+ if(tags(dom,'main').length!==1||tags(dom,'header').length!==1||tags(dom,'footer').length!==1||
+   tags(dom,'form').length||tags(dom,'script').some(x=>attr(x,'type')==='application/ld+json')||
+   /googletagmanager|site-analytics\.js|form-config\.js/.test(html))
    fail('Live lead submission/analytics leaked '+c.file);
  if(forbidden.test(textOf(dom)))fail('Cyrillic visible in English HTML '+c.file);
  for(const a of links){

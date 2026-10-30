@@ -19,6 +19,7 @@ import { validateSiteContent } from '../lib/content-validation';
 import { pageStructuredData } from '../lib/page-schema';
 import { deferImages } from '../lib/lazy-images.mjs';
 import { safeJsonLd, SCHEMA_VERSION } from '../lib/structured-data.mjs';
+import { privatePilotEnabled } from '../lib/i18n/pilot-html.mjs';
 
 await validateSiteContent();
 
@@ -33,6 +34,8 @@ interface Props {
   lang?: string;
   headerTheme?: 'light' | 'dark';
   noindex?: boolean;
+  /** Closed EN-only HTML pilot; never authorizes a public translation or release. */
+  privatePreview?: boolean;
   showBreadcrumbs?: boolean;
   breadcrumbsInHero?: boolean;
   hideCurrentBreadcrumbLabel?: boolean;
@@ -45,7 +48,7 @@ const {
   title = SITE.defaultTitle,
   description = SITE.defaultDescription,
   canonical, image, lang = SITE.locale,
-  headerTheme = 'light', noindex = false, showBreadcrumbs = true,
+  headerTheme = 'light', noindex = false, privatePreview = false, showBreadcrumbs = true,
   breadcrumbsInHero = false,
   hideCurrentBreadcrumbLabel = false, breadcrumbs, pageSchema,
 } = Astro.props;
@@ -53,7 +56,7 @@ const {
 const canonicalUrl = canonical
   ? new URL(withBase(canonical), Astro.site ?? SITE.url).toString()
   : new URL(Astro.url.pathname, Astro.site ?? SITE.url).toString();
-const compactTitle = seoCompactTitle(title);
+const compactTitle = privatePreview ? title : seoCompactTitle(title);
 const fullTitle = compactTitle.includes('Ada Tours') ? compactTitle : `${compactTitle} | Ada Tours`;
 const isPreview = import.meta.env.BASE_URL !== '/';
 const faviconSvgUrl = withBase('/favicon.svg');
@@ -71,9 +74,11 @@ const heroTag = (renderedBody.match(/<img\b[^>]*>/gi) || []).find((tag) =>
 const heroSrc = heroTag?.match(/\bsrc=["']([^"']+)["']/i)?.[1];
 const ogSource = image || heroSrc || '/media/home/hero-rio-generated-20261008-v2.webp';
 const ogImageUrl = new URL(withBase(ogSource), Astro.site ?? SITE.url).toString();
-const robotsContent = (isPreview || noindex)
-  ? 'noindex, nofollow'
-  : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+const robotsContent = privatePreview
+  ? 'noindex,nofollow,noarchive,nosnippet'
+  : (isPreview || noindex)
+    ? 'noindex, nofollow'
+    : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 const ogLocale = lang === 'ru' ? 'ru_RU' : lang === 'en' ? 'en_US' : lang === 'cn' ? 'zh_CN' : lang;
 
 const base = import.meta.env.BASE_URL || '/';
@@ -83,6 +88,10 @@ if (normalizedBase !== '/' && logicalPath.startsWith(normalizedBase)) {
   logicalPath = `/${logicalPath.slice(normalizedBase.length)}`;
 }
 if (!logicalPath.startsWith('/')) logicalPath = `/${logicalPath}`;
+if (privatePreview && (!privatePilotEnabled(process.env) || lang !== 'en' || !noindex ||
+    !logicalPath.startsWith('/en-pilot-private/'))) {
+  throw new Error('Closed EN preview requires verified nonpublic Astro build flags and private route');
+}
 const rootUrl = new URL(withBase('/'), Astro.site ?? SITE.url).toString();
 const segments = logicalPath.split('/').filter(Boolean);
 const breadcrumbLabels: Record<string, string> = {
@@ -129,33 +138,39 @@ const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 ||
 
 // Render exactly once. The graph describes this same HTML, including current card slices.
 // Legacy child JSON-LD is consumed and removed, preventing duplicate Person/Trip graphs.
-const schema = await pageStructuredData({
-  root: rootUrl, html: renderedBody, path: logicalPath,
-  url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
-  breadcrumbs: breadcrumbSchemas, extra: pageSchema, seoGeoArticle,
-});
+const schema = privatePreview
+  ? { metaTitle: fullTitle, metaDescription: description, html: renderedBody, graph: null }
+  : await pageStructuredData({
+      root: rootUrl, html: renderedBody, path: logicalPath,
+      url: canonicalUrl, title: fullTitle, description, lang, image: ogImageUrl,
+      breadcrumbs: breadcrumbSchemas, extra: pageSchema, seoGeoArticle,
+    });
 const metaTitle = schema.metaTitle;
 const metaDescription = schema.metaDescription;
 ---
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} data-ada-en-pilot={privatePreview ? 'true' : undefined} data-public-release={privatePreview ? 'false' : undefined} data-ada-shell={privatePreview ? 'BaseLayout' : undefined}>
   <head>
     <!-- Google Analytics 4: Ada Tours -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FM6ZVZH2ZX"></script>
-    <script is:inline defer src={withBase('/site-analytics.js')}></script>
+    {!privatePreview && <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FM6ZVZH2ZX"></script>}
+    {!privatePreview && <script is:inline defer src={withBase('/site-analytics.js')}></script>}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{metaTitle}</title>
     <meta name="description" content={metaDescription} />
-    <link rel="canonical" href={canonicalUrl} />
+    {!privatePreview && <link rel="canonical" href={canonicalUrl} />}
     <link rel="icon" type="image/svg+xml" href={faviconSvgUrl} />
-    <link rel="icon" type="image/png" sizes="48x48" href={favicon48Url} />
-    <link rel="icon" type="image/png" sizes="32x32" href={favicon32Url} />
-    <link rel="icon" type="image/png" sizes="16x16" href={favicon16Url} />
-    <link rel="shortcut icon" href={faviconIcoUrl} />
-    <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIconUrl} />
+    {!privatePreview && <link rel="icon" type="image/png" sizes="48x48" href={favicon48Url} />}
+    {!privatePreview && <link rel="icon" type="image/png" sizes="32x32" href={favicon32Url} />}
+    {!privatePreview && <link rel="icon" type="image/png" sizes="16x16" href={favicon16Url} />}
+    {!privatePreview && <link rel="shortcut icon" href={faviconIcoUrl} />}
+    {!privatePreview && <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIconUrl} />}
     <meta name="robots" content={robotsContent} />
+    {privatePreview && <meta name="referrer" content="no-referrer" />}
+    {privatePreview && <meta name="color-scheme" content="light" />}
+    {!privatePreview && (
+      <>
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:locale" content={ogLocale} />
@@ -167,14 +182,20 @@ const metaDescription = schema.metaDescription;
     <meta name="twitter:title" content={metaTitle} />
     <meta name="twitter:description" content={metaDescription} />
     {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+      </>
+    )}
     <noscript><style is:inline>img[data-lazy-src], picture[data-lazy-picture] { display: none !important; }</style></noscript>
     <meta name="theme-color" content="#fffcf8" />
-    <script is:inline src={withBase('/form-config.js?v=20261022-postbox-1')}></script>
-    <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />
+    {!privatePreview && <script is:inline src={withBase('/form-config.js?v=20261022-postbox-1')}></script>}
+    {!privatePreview && <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />}
     <!-- Yandex.Metrika: Ada Tours, counter 113586792 -->
 
   </head>
   <body>
+    {privatePreview ? (
+      <Fragment set:html={renderedBody} />
+    ) : (
+      <>
     <noscript><div><img src="https://mc.yandex.ru/watch/113586792" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <SiteHeader theme={headerTheme} />
     <SearchOverlay />
@@ -195,6 +216,8 @@ const metaDescription = schema.metaDescription;
     </script>
     <CookieNotice />
     <SiteFooter />
+      </>
+    )}
   </body>
 </html>
 <style>

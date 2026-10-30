@@ -574,14 +574,10 @@
 | `tour_iguazu_incentive_3_days` | [Игуасу за 3 дня: две стороны водопадов и Macuco Safari](https://adatours.ru/brazil/tour/iguazu-incentive-3-days/) | Активная страница | `P009` |
 | `tour_guatemala_belize_maya_world_12_days` | [Гватемала и Белиз — в мир майя: Атитлан, Тикаль и Карибское море](https://adatours.ru/multi-country/tour/guatemala-belize-maya-world-12-days/) | Активная страница | `P022` |
 | `tour_ecuador_galapagos_diving_4_5_days` | [Дайвинг на Галапагосах: 4 или 5 дней с отелем Fiesta](https://adatours.ru/ecuador/tour/galapagos-diving-4-5-days/) | Активная страница | `P027` |
-| `tour_brazil_agribusiness_14_days` | [Агробизнес в Бразилии: Рибейран-Прету, Амазония, Рио и Игуасу](https://adatours.ru/brazil/tour/brazil-agribusiness-14-days/) | Активная страница | `P008` |
-| `tour_brazil_three_ecosystems_8_days` | [Амазония, саванна и Пантанал: три экосистемы за 8 дней](https://adatours.ru/brazil/tour/brazil-three-ecosystems-8-days/) | Активная страница | `P013` |
-| `tour_nicaragua_best_10_days` | [Лучшее в Никарагуа: вулканы, Ометепе и Тихий океан](https://adatours.ru/nicaragua/tour/best-of-nicaragua-10-days/) | Активная страница | `P020` |
 | `tour_venezuela_canaima_angel_falls_4_days` | [Венесуэльская красота: Канайма и водопад Анхель за 4 дня](https://adatours.ru/venezuela/tour/canaima-angel-falls-4-days/) | Активная страница | `P034` |
 | `tour_guatemala_discover_8_days` | [Откройте для себя Гватемалу: Атитлан, Антигуа и пляжи Монтеррико](https://adatours.ru/guatemala/tour/discover-guatemala-8-days/) | Активная страница | `P037` |
 | `tour_colombia_essential_5_days` | [От Анд до Карибского моря: Богота и Картахена за 5 дней](https://adatours.ru/colombia/tour/colombia-essential-5-days/) | Активная страница | `P039` |
 | `tour_panama_city_gamboa_6_days` | [Панама-Сити и Гамбоа: канал, лес и эмбера за 6 дней](https://adatours.ru/panama/tour/panama-city-gamboa-6-days/) | Активная страница | `P036` |
-| `tour_colombia_highlights_7_days` | [Колумбия за 7 дней: Богота, Медельин и Картахена](https://adatours.ru/colombia/tour/colombia-highlights-7-days/) | Активная страница | `P041` |
 | `tour_colombia_cano_cristales_8_days` | [Сезон красок: Богота, Ла-Макарена и Каньо-Кристалес за 8 дней](https://adatours.ru/colombia/tour/colombia-cano-cristales-8-days/) | Активная страница | `P038` |
 | `tour_peru_bolivia_enchanted_10_days` | [Очаровательные Перу и Боливия: 10 дней в Андах](https://adatours.ru/multi-country/tour/enchanted-peru-bolivia-10-days/) | Активная страница | `P043` |
 | `tour_colombia_complete_11_days` | [Многоликая Колумбия: 11 дней от Боготы до Карибского моря](https://adatours.ru/colombia/tour/colombia-complete-11-days/) | Активная страница | `P040` |
@@ -595,8 +591,8 @@
 | `tour_mexico_lindo_eight_days` | [Мексика Линдо: 8 дней от Мехико до Карибского побережья](https://adatours.ru/mexico/tour/mexico-lindo-eight-days/) | Активная страница | `P102` |
 | `tour_mexico_oaxaca_city_break_five_days` | [Оахака: короткое путешествие на 5 дней](https://adatours.ru/mexico/tour/oaxaca-city-break-5-days/) | Активная страница | `P101` |
 | `tour_mexico_religious_journey` | [Религиозное путешествие по Мексике: 7 дней](https://adatours.ru/mexico/tour/mexico-religious-journey/) | Активная страница | `P104` |
-| `tour_central_america_eight_countries_26_days` | [Центральная Америка: 8 стран за 26 дней](https://adatours.ru/multi-country/tour/central-america-8-countries-26-days/) | Активная страница | `P105` |
 | `tour_chile_argentina_private_grand_tour_17_days` | [Чили и Аргентина: гран-тур на 17 дней с Игуасу в Бразилии](https://adatours.ru/multi-country/tour/chile-argentina-private-grand-tour-17-days/) | Активная страница | `P106` |
+| `tour_central_america_eight_countries_26_days` | [Центральная Америка: 8 стран за 26 дней](https://adatours.ru/multi-country/tour/central-america-8-countries-26-days/) | Активная страница | `P105` |
 | `tour_argentina_grand_tour_15_days_2027` | [Аргентина: большое путешествие от Игуасу до Патагонии](https://adatours.ru/multi-country/tour/argentina-grand-tour-15-days/) | Активная страница | `P107` |
 | `tour_bolivia_chile_hidden_treasures_16_days` | [Скрытые сокровища Боливии и Чили: 16 дней от Уюни до Патагонии](https://adatours.ru/multi-country/tour/bolivia-chile-hidden-treasures-16-days/) | Активная страница | `P108` |
 | `tour_chile_easter_island_3_days_2027` | [Остров Пасхи: три дня среди моаи и вулканов](https://adatours.ru/chile/tour/easter-island-3-days/) | Активная страница | `P123` |
@@ -618,9 +614,13 @@
 | `tour_south_america_eight_countries_32_days_2026` | [8 стран Южной Америки за 32 дня: от Рио и Игуасу до Галапагосов и Колумбии](https://adatours.ru/multi-country/tour/south-america-eight-countries-32-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_latin_america_six_countries_20_days_2026` | [6 стран Латинской Америки за 20 дней: от Рио до Мачу-Пикчу](https://adatours.ru/multi-country/tour/latin-america-6-countries-20-days/) | Активная страница | `Y26-008` |
 | `tour_patagonia_lakes_lakeshore_chalet_10_days` | [Озёра Патагонии: рыбалка и отдых в Lakeshore Chalet на 10 дней](https://adatours.ru/argentina/tour/patagonia-lakes-lakeshore-chalet-10-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_panama_mice_7_days` | [Деловой тур в Панаму на 7 дней](https://adatours.ru/panama/tour/panama-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_brazil_mice_7_days` | [Деловой тур в Бразилию на 7 дней: Сан-Паулу, Игуасу, Амазония и Рио](https://adatours.ru/brazil/tour/brazil-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_argentina_agricultural_11_days` | [Деловой тур в Аргентину: No-Till и агротехнологии за 11 дней](https://adatours.ru/argentina/tour/argentina-agricultural-11-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_brazil_agribusiness_14_days` | [Агробизнес в Бразилии: Рибейран-Прету, Амазония, Рио и Игуасу](https://adatours.ru/brazil/tour/brazil-agribusiness-14-days/) | Активная страница | `P008` |
+| `tour_brazil_mice_7_days` | [Деловой тур в Бразилию на 7 дней: Сан-Паулу, Игуасу, Амазония и Рио](https://adatours.ru/brazil/tour/brazil-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_brazil_three_ecosystems_8_days` | [Амазония, саванна и Пантанал: три экосистемы за 8 дней](https://adatours.ru/brazil/tour/brazil-three-ecosystems-8-days/) | Активная страница | `P013` |
+| `tour_colombia_highlights_7_days` | [Колумбия за 7 дней: Богота, Медельин и Картахена](https://adatours.ru/colombia/tour/colombia-highlights-7-days/) | Активная страница | `P041` |
+| `tour_nicaragua_best_10_days` | [Лучшее в Никарагуа: вулканы, Ометепе и Тихий океан](https://adatours.ru/nicaragua/tour/best-of-nicaragua-10-days/) | Активная страница | `P020` |
+| `tour_panama_mice_7_days` | [Деловой тур в Панаму на 7 дней](https://adatours.ru/panama/tour/panama-mice-7-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 
 ## 6. Исключённые файлы
 

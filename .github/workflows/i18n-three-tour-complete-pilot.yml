@@ -45,6 +45,38 @@ jobs:
             throw Error('Incomplete/unsafe full-block pilot coverage');
           console.log('All 172 EN text slots have draft text; no missing Word evidence and no public release');
           NODE
+      - name: Assemble three fully approved nonpublishing locale previews after source checks
+        run: |
+          node feature/scripts/i18n/compile-three-tour-pilot.mjs feature production staging --output /tmp/ada-en-approved-pilot --approve-drafts
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const root='/tmp/ada-en-approved-pilot/';
+          const data=JSON.parse(fs.readFileSync(root+'summary.json','utf8'));
+          if(data.phase!=='approved_nonpublishing_pilot'||data.failures.length||
+            data.totalSourceSlots!==172||data.totalReadyPrevious!==30||
+            data.totalAdditional!==142||data.reports.length!==3||
+            data.reports.some(r=>r.state!=='ready'||r.issues!==0||r.fullCoverage!==true)||
+            data.publicationAuthorized!==false) throw Error('Incomplete approved pilot output');
+          const ids=['tour_brazil_rio_four_days','tour_chile_easter_island_3_days_2027',
+            'tour_colombia_essential_5_days'];
+          for (const id of ids) {
+            const item=JSON.parse(fs.readFileSync(root+'rendered/'+id+'.json','utf8'));
+            const overlay=JSON.parse(fs.readFileSync(root+'overlays/'+id+'.json','utf8'));
+            if(item.id!==id||item.locale!=='en'||item.data.id!==id||
+              item.data.locale!=='en'||overlay.blocks.some(b=>b.state!=='approved')||
+              /[\u0400-\u052F]/u.test(overlay.blocks.map(b=>b.text).join(' '))||
+              item.data.itinerary.some(d=>d.text&&/[\u0400-\u052F]/u.test(d.text)))
+               throw Error('Russian locale leak or unapproved text: '+id);
+            console.log(id+': '+overlay.blocks.length+' approved text blocks, no visible RU fallback');
+          }
+          NODE
+      - name: Save isolated approved EN pilot preview, no main deploy
+        uses: actions/upload-artifact@v4
+        with:
+          name: ada-en-three-tour-locale-preview-qa
+          path: /tmp/ada-en-approved-pilot/
+          retention-days: 14
+          if-no-files-found: error
       - name: Save nonpublishing complete-block review packets
         uses: actions/upload-artifact@v4
         with:

@@ -4,6 +4,8 @@ on:
     branches: [feat/english-site-foundation]
     paths:
       - 'scripts/i18n/export-pilot-block-maps.mjs'
+      - 'src/lib/i18n/block-map.mjs'
+      - 'tests/i18n/block-map.test.mjs'
       - '.github/workflows/i18n-block-maps-pilot.yml'
   workflow_dispatch:
 permissions:

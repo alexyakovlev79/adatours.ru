@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "kind": "word_and_ai_gap_block_qa",
+  "scope": "Rio Day4 title and departure paragraph only; not full Tour",
+  "jobId": "en:tour:tour_brazil_rio_four_days:p2",
+  "entityId": "tour_brazil_rio_four_days",
+  "reviewedAt": "2026-10-30T11:27:09.915Z",
+  "reviewerId": "source-qa-rio-ai-gap-20261030",
+  "acceptedBlobSha": "cdcf44eac4c70c17ade168e0ab014248f17d25d7",
+  "submissionId": "submission-rio-mixed-p2-20261030",
+  "reviewedAiGap": {
+    "sourceRuText": "Отъезд из Рио-де-Жанейро",
+    "targetText": "Departure from Rio de Janeiro",
+    "sourcePath": "/itinerary/7/title",
+    "model": "GPT-6",
+    "logicalRunId": "rio-day4-title-pilot-chat-20261030",
+    "note": "Faithful short heading from current RU; Word 2027 combines days 3–4 and has no independent Day4 heading"
+  },
+  "reviewedWord": {
+    "locator": "word/document.xml#p0090",
+    "textSha256": "d2d3611e3b96ddcfb03ec3d3eb58787914854e2d153595e0b137f6f97efe6218",
+    "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+    "sourceText": "Day 4 · After breakfast, free time until your scheduled private transfer to Rio de Janeiro International Airport. End of services."
+  },
+  "checks": {
+    "word": true,
+    "meaning": true,
+    "facts": true,
+    "voice": true,
+    "structure": true,
+    "relations": true
+  },
+  "releaseEligible": false,
+  "publicationAllowed": false,
+  "fullTourLocalized": false,
+  "unitTestRun": "https://github.com/alexyakovlev79/adatours.ru/actions/runs/41047779504"
+}

@@ -5,7 +5,7 @@
     {
       "jobId": "en:tour:tour_brazil_rio_four_days:p2",
       "sourceFingerprint": "d0467a44c44bc756d4c4965e4568c9816e91423b7db9318e284fc91e90a7d779",
-      "status": "review",
+      "status": "ready",
       "generation": 1,
       "attempts": 0,
       "lease": null,
@@ -16,7 +16,19 @@
         "resultPath": "data/i18n/translation/v1/results/en_tour_tour_brazil_rio_four_days_p2/submission-rio-mixed-p2-20261030.json",
         "at": "2026-10-30T11:26:04.685Z"
       },
-      "review": null,
+      "review": {
+        "reviewerId": "source-qa-rio-ai-gap-20261030",
+        "at": "2026-10-30T11:27:09.915Z",
+        "acceptedBlobSha": "cdcf44eac4c70c17ade168e0ab014248f17d25d7",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
       "nextAttemptAt": null
     }
   ]

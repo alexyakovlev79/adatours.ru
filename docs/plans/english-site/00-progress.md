@@ -348,3 +348,10 @@ Resume from `4fb996bc` or later feature head. The **next integration gate** is a
 - Canonical Excursion dependencies: 4 Rio + 3 Easter Island + 4 Colombia = 11 unique stable IDs, all found in the shared owner manifest. None is silently translated from RU; independent EN Excursion passages remain a gate.
 - Reusable components now: `BaseLayout`, `Hero`, `TripStats`, `TourPricing`, `Itinerary`, `IncludedExcluded`. Complete shared `TourLayout` and localized geography/catalogue/excursion graph are still pending; no public EN deployment, locale SEO/schema/forms/search activation or mass translation gate change.
 - Resume from the confirmed feature code and 11 EN Excursion dependencies; do not repeat Word matching, previously approved 172-block technical pilot, or regenerate the completed private HTML snapshot.
+
+## Checkpoint 30.10.2026 — eleven canonical EN Excursions rendered
+
+- Saved 11 source-bound EN Excursion overlays (4 Rio, 3 Easter Island, 4 Colombia), single manifest `data/i18n/pilot-excursions/v1/manifest.json`, source Git blob receipts verified against current main and feature.
+- Private `getStaticPaths` now emits 15 pages: root catalogue, 3 Tours, 11 independent Excursions; shared `Itinerary` shows their original `excursionRef` modules using EN text and no Russian fallback. Shared prices/media/identity preserved.
+- Passed [foundation #41075627376](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41075627376) and [private HTML #41075627323](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41075627323). Build source SHA `ac206c52a9fd7f4f894a197b942a2cd20bd0e92d`; artifact ID `12987936006`, 15 HTML.
+- Full handoff: `docs/plans/english-site/22-shared-excursions-private-preview.md`. Next: localized Country/Destination graph and real shared `TourLayout`, then form/SEO/Schema/Pagefind/hreflang and independent text QA. Main/public EN untouched; mass translation remains disabled.

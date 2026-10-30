@@ -1,0 +1,59 @@
+name: ADA EN pilot source snapshot export (no publication)
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - '.github/workflows/i18n-pilot-export.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          path: feature
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: production
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/translation-staging
+          path: staging
+      - name: Export the exact three-Tour sources, stable IDs and QA receipts
+        shell: bash
+        run: |
+          set -euo pipefail
+          dest=/tmp/ada-en-pilot-export
+          mkdir -p "$dest"/{ru,maps,alignment,evidence,staging}
+          for id in tour_brazil_rio_four_days tour_chile_easter_island_3_days_2027 tour_colombia_essential_5_days; do
+            cp "feature/data/i18n/block-maps/tours/$id.json" "$dest/maps/"
+            cp "feature/data/i18n/word-block-alignments/pilot/$id.json" "$dest/alignment/"
+            cp "feature/data/i18n/word-text-evidence/pilot/$id.json" "$dest/evidence/"
+          done
+          cp production/src/content/tours/{rio-de-janeiro-four-days,easter-island-3-days,colombia-essential-5-days}.md "$dest/ru/"
+          cp -a staging/data/i18n/translation/v1/. "$dest/staging/"
+          cp feature/data/i18n/foundation-status.json "$dest/foundation-status.json"
+          cp feature/data/i18n/translation/pilot-unmapped-20261030.json "$dest/unmapped.json"
+          git -C feature rev-parse HEAD > "$dest/feature.sha"
+          git -C production rev-parse HEAD > "$dest/main.sha"
+          git -C staging rev-parse HEAD > "$dest/staging.sha"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const idx=JSON.parse(fs.readFileSync('/tmp/ada-en-pilot-export/staging/index.json','utf8'));
+          if(idx.dispatcherEnabled||idx.publicationEnabled||idx.translationMassLaunchAllowed||
+             idx.counts.ready!==5||idx.counts.leased||idx.counts.review||idx.counts.queued)
+             throw new Error('Pilot is not sealed 5/5; export stopped');
+          console.log('Sealed pilot source snapshot: '+JSON.stringify(idx.counts));
+          NODE
+          tar -C /tmp -czf /tmp/ada-en-three-tour-pilot.tar.gz ada-en-pilot-export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ada-en-three-tour-pilot-source
+          path: /tmp/ada-en-three-tour-pilot.tar.gz
+          retention-days: 7
+          if-no-files-found: error

@@ -1,0 +1,93 @@
+name: Publish replacement of existing team portrait via S3
+on:
+  push:
+    branches: [main]
+    paths:
+      - data/media/person-photo-alias-requests/*.json
+permissions:
+  contents: read
+  id-token: write
+  statuses: write
+concurrency:
+  group: ada-person-photo-alias
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: ${{ github.repository == 'alexyakovlev79/adatours.ru' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/publish-person-photo-alias.mjs
+            src/lib/person-photo-alias.mjs
+            src/data/organization/team.json
+            src/data/media/direct-s3-uploads.json
+            data/media/person-photo-alias-requests/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Validate the single immutable request from triggering commit
+        id: request
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import {execFileSync} from 'node:child_process';
+          import {parsePortraitRequest} from './src/lib/person-photo-alias.mjs';
+          const ev=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,'utf8'));
+          if(!/^[a-f0-9]{40}$/.test(ev.before||'')||ev.after!==process.env.GITHUB_SHA)
+            throw Error('Invalid triggering push');
+          const parts=execFileSync('git',['diff','--no-renames','--name-status','-z',
+            ev.before,ev.after],{encoding:'utf8'}).split('\0').filter(Boolean);
+          if(parts.length!==2||parts[0]!=='A'||
+            !/^data\/media\/person-photo-alias-requests\/[a-f0-9]{32}\.json$/.test(parts[1]))
+            throw Error('Must add exactly one immutable request per push');
+          const req=parsePortraitRequest(fs.readFileSync(parts[1],'utf8'));
+          if(parts[1]!=='data/media/person-photo-alias-requests/'+req.requestId+'.json')
+            throw Error('Alias request ID differs from filename');
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,'file='+parts[1]+'\n');
+          console.log('Accepted alias request '+req.requestId);
+          NODE
+      - name: Exchange GitHub OIDC for temporary Yandex cloud IAM
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "${YC_SA_ID:-}" || { echo "::error::Missing YC_MEDIA_SA_ID"; exit 1; }
+          oidc="$(curl -fsS --retry 1 --get \
+            -H "Authorization: bearer ${ACTIONS_ID_TOKEN_REQUEST_TOKEN}" \
+            --data-urlencode "audience=https://github.com/alexyakovlev79" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}" | jq -er '.value')"
+          echo "::add-mask::$oidc"
+          token="$(curl -fsS --retry 2 \
+            -X POST 'https://auth.yandex.cloud/oauth/token' \
+            -H 'Content-Type: application/x-www-form-urlencoded' \
+            --data-urlencode 'grant_type=urn:ietf:params:oauth:grant-type:token-exchange' \
+            --data-urlencode 'requested_token_type=urn:ietf:params:oauth:token-type:access_token' \
+            --data-urlencode "audience=${YC_SA_ID}" \
+            --data-urlencode "subject_token=$oidc" \
+            --data-urlencode 'subject_token_type=urn:ietf:params:oauth:token-type:id_token' | jq -er '.access_token')"
+          echo "::add-mask::$token"
+          echo "YC_IAM_TOKEN=$token" >> "$GITHUB_ENV"
+      - name: Conditional alias update with SHA-256 readback
+        run: node scripts/publish-person-photo-alias.mjs "${{ steps.request.outputs.file }}"
+      - name: Confirm exact request SHA
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state=success -f context=ada/person-photo-alias \
+            -f description="S3 portrait alias and immutable version SHA-256 match" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: portrait-alias-receipt-${{ github.run_id }}
+          path: ${{ runner.temp }}/portrait-alias-receipt.json
+          retention-days: 30

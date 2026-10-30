@@ -6,7 +6,7 @@ import {parse} from 'parse5';
 const src=path.resolve(process.argv[2]||'dist');
 const out=path.resolve(process.argv[3]||'/tmp/ada-en-html-review');
 const copy=relative=>{
- if(!/^[A-Za-z0-9/_.,-]+$/.test(relative)||relative.includes('..'))throw Error('Unsafe output path '+relative);
+ if(!/^[A-Za-z0-9/_.,-]+$/.test(relative)||relative.split('/').some(s=>!s||s==='.'||s==='..'))throw Error('Unsafe output path '+relative);
  const dest=path.join(out,relative);
  fs.mkdirSync(path.dirname(dest),{recursive:true});
  fs.copyFileSync(path.join(src,relative),dest);

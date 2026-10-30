@@ -113,9 +113,9 @@ export async function readPrivateExcursionOverlays(root,ruRecords,verifySources=
  return {manifest,records};
 }
 /** Both production/main and the EN branch must match immutable source fingerprints. */
-export async function verifyPrivateExcursionSourceFiles(root){
+export async function verifyPrivateExcursionSourceFiles(root,manifestRoot=root){
  const base=resolve(root);
- const manifest=JSON.parse(await readFile(join(base,MANIFEST),'utf8'));
+ const manifest=JSON.parse(await readFile(join(resolve(manifestRoot),MANIFEST),'utf8'));
  const entries=validatePrivateExcursionManifest(manifest);
  const errors=[];
  for(const m of entries){

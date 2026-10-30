@@ -9,6 +9,7 @@ import InlineMarkdown from '../global/InlineMarkdown.astro';
 import { excursionBlockContent } from '../../lib/excursion-block-content.mjs';
 import { uiText } from '../../lib/i18n/messages.mjs';
 import { privatePilotEnabled } from '../../lib/i18n/pilot-html.mjs';
+import { pilotExcursionUrl } from '../../lib/i18n/private-excursions.mjs';
 
 interface MediaItem {
   src: string;
@@ -39,16 +40,23 @@ interface Day {
     text: string;
   }>;
 }
-interface Props { days: Day[]; locale?: 'ru' | 'en'; privatePreview?: boolean; sectionId?: string; }
-const { days, locale = 'ru', privatePreview = false, sectionId } = Astro.props;
+interface Props {
+  days: Day[];
+  locale?: 'ru' | 'en';
+  privatePreview?: boolean;
+  sectionId?: string;
+  /** Source-verified localized Excursion records. No RU fallback is allowed. */
+  englishExcursions?: Record<string, any>;
+}
+const { days, locale = 'ru', privatePreview = false, sectionId, englishExcursions } = Astro.props;
 const privateEnglish = locale === 'en' && privatePreview;
 if (locale === 'en') {
   if (!privatePreview || !privatePilotEnabled(process.env) || !Astro.url.pathname.startsWith('/en-pilot-private/')) {
     throw new Error('English itinerary is restricted to the private pilot until locale dependencies are ready');
   }
-  // Do not resolve canonical Excursion refs against the still-RU production collection.
-  if (days.some(day => day.excursionRef || day.contentBlocks?.some(block => block.type === 'excursion'))) {
-    throw new Error('English itinerary cannot resolve an untranslated canonical Excursion');
+  if (!englishExcursions || typeof englishExcursions !== 'object' ||
+      Array.isArray(englishExcursions)) {
+    throw new Error('Private EN itinerary requires verified localized Excursions; RU fallback forbidden');
   }
   for (const day of days) for (const img of day.images ?? []) {
     if (!img.alt?.trim() || /[\u0400-\u052F]/u.test(img.alt) ||
@@ -90,12 +98,22 @@ for (const day of days) {
   }
 }
 
-const excursionEntries = referencedExcursionIds.size > 0
-  ? await getCollection(
-      'excursions',
-      ({ data }) => data.locale === 'ru' && data.status !== 'draft' && referencedExcursionIds.has(data.id),
-    )
-  : [];
+const excursionEntries = privateEnglish
+  ? [...referencedExcursionIds].map(id => {
+      const entry = englishExcursions?.[id];
+      if (!entry || entry.data?.id !== id || entry.data?.locale !== 'en' ||
+          !['approved','published'].includes(entry.data?.status) ||
+          !entry.rendered?.html || !entry.previewUrl) {
+        throw new Error('Private EN itinerary missing source-verified Excursion: '+id);
+      }
+      return entry;
+    })
+  : referencedExcursionIds.size > 0
+    ? await getCollection(
+        'excursions',
+        ({ data }) => data.locale === 'ru' && data.status !== 'draft' && referencedExcursionIds.has(data.id),
+      )
+    : [];
 
 const excursionById = new Map(excursionEntries.map((entry) => [entry.data.id, entry]));
 const missingExcursionIds = [...referencedExcursionIds].filter((id) => !excursionById.has(id));
@@ -115,7 +133,7 @@ const resolveExcursion = (id?: string) => {
   return {
     id: entry.data.id,
     title: entry.data.title,
-    href: excursionPath(entry.data),
+    href: privateEnglish ? pilotExcursionUrl(entry.data.slug) : excursionPath(entry.data),
     lead: entry.data.lead,
     bodyHtml: stripDuplicateLeadingHeading(entry.rendered?.html ?? '', entry.data.title),
     hero: entry.data.hero,
@@ -190,6 +208,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
         <article
           class:list={['day-card', { 'day-card--image': visibleImage }]}
           data-excursion-ref={day.excursion?.id}
+          data-private-excursion-ref={privateEnglish ? day.excursion?.id : undefined}
           data-pilot-day={privateEnglish && typeof day.day === 'number' ? day.day : undefined}
           data-image-text-align={day.excursion?.imageTextAlign}
           data-itinerary-image-count={day.dayImages.length}
@@ -209,10 +228,14 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                     {day.excursion.bodyHtml
                       ? <div class="excursion-embed__body" set:html={day.excursion.bodyHtml} />
                       : <p><InlineMarkdown text={day.excursion.lead} /></p>}
-                    <p><a class="day__excursion-link" href={withBase(day.excursion.href)}>{uiText(locale, 'tour.excursionMore')}</a></p>
+                    <p><a class="day__excursion-link" data-private-excursion-link={privateEnglish ? day.excursion.id : undefined} href={withBase(day.excursion.href)}>{uiText(locale, 'tour.excursionMore')}</a></p>
                   </>
                 ) : day.contentBlocks.length > 0 ? (
-                  day.contentBlocks.map((block) => {
+                  <>
+                  {privateEnglish && day.text?.trim() && <div class="day__content-block">
+                    {splitParagraphs(day.text).map(paragraph => <p><InlineMarkdown text={paragraph} /></p>)}
+                  </div>}
+                  {day.contentBlocks.map((block) => {
                     if (block.type === 'text') {
                       return (
                         <div class="day__content-block">
@@ -244,7 +267,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                         data-excursion-ref={excursion.id}
                         data-image-text-align={excursion.imageTextAlign}
                       >
-                        <h3><a class="day__excursion-link" href={withBase(excursion.href)}>{presentation.title}</a></h3>
+                        <h3><a class="day__excursion-link" data-private-excursion-link={privateEnglish ? excursion.id : undefined} href={withBase(excursion.href)}>{presentation.title}</a></h3>
                         {presentation.overrideText
                           ? <div class="excursion-embed__body">{splitParagraphs(presentation.overrideText).map((paragraph) => <p><InlineMarkdown text={paragraph} /></p>)}</div>
                           : excursion.bodyHtml
@@ -265,7 +288,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                         )}
                       </section>
                     );
-                  })
+                  })}
+                  </>
                 ) : (
                   <>
                     <p><InlineMarkdown text={day.text ?? ''} /></p>

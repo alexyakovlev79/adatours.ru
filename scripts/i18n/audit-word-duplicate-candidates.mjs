@@ -5,7 +5,8 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import yaml from 'js-yaml';
+import { createRequire } from 'node:module';
+const yaml=createRequire(path.join(process.cwd(),'package.json'))('js-yaml');
 const root=process.cwd(),match=path.resolve(process.argv[2]||'../matching');
 const out=path.resolve(process.argv[3]||'/tmp/ada-duplicates');
 fs.mkdirSync(out,{recursive:true});

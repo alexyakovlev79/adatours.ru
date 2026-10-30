@@ -4,7 +4,7 @@
   "jobCount": 5,
   "stage": "word_2027",
   "pilotOnly": true,
-  "dispatcherEnabled": true,
+  "dispatcherEnabled": false,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
   "updatedAt": "2026-10-30T11:27:09.915Z",
@@ -244,9 +244,7 @@
       "earliestRetryAt": null
     }
   },
-  "pilotAllowedJobIds": [
-    "en:tour:tour_brazil_rio_four_days:p2"
-  ],
+  "pilotAllowedJobIds": [],
   "pilotPolicy": {
     "status": "one_mixed_word_plus_ai_gap_packet",
     "date": "2026-10-30",
@@ -283,19 +281,17 @@
       ]
     }
   },
-  "pilotAcceptedAt": "2026-10-30T11:21:21.336Z",
+  "pilotAcceptedAt": "2026-10-30T11:27:46.685Z",
   "pilotResult": {
-    "acceptedPackets": 2,
-    "acceptedWordBlocks": 16,
+    "acceptedPackets": 3,
+    "readyBlocks": 18,
+    "wordExactBlocks": 17,
+    "aiGapBlocks": 1,
     "uniqueTours": 2,
-    "semanticQaScope": "word_first_pilot_blocks_only",
-    "missingOtherTourBlocks": true,
+    "allTourBlocksComplete": false,
+    "translationMassLaunchAllowed": false,
     "published": false,
-    "mainChanged": false,
-    "receiptCommits": [
-      "3244519c393da94cd9719ee36a3fb466b8696751",
-      "c1cc96b78180694098edf787a93b5d18b2381447"
-    ],
-    "sourceCheckRunId": 41047125362
+    "lastQaCommit": "42bdb79a803e5085c7cd05e77cfc23e26af289fc",
+    "sourceCiRunId": 41047125362
   }
 }

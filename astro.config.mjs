@@ -15,5 +15,5 @@ export default defineConfig({
   compressHTML: true,
   trailingSlash: 'always',
   prerenderConflictBehavior: 'error',
-  integrations: [sitemap({ filter: (page) => !isLegacyRedirectPath(new URL(page).pathname, base) && !isArchivedPath(new URL(page).pathname, base) })],
+  integrations: [sitemap({ filter: (page) => !isLegacyRedirectPath(new URL(page).pathname, base) && !isArchivedPath(new URL(page).pathname, base) && !new URL(page).pathname.startsWith('/en-pilot-private/') })],
 });

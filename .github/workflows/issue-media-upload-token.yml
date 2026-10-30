@@ -1,4 +1,5 @@
 name: Issue encrypted short-lived media upload token
+run-name: S3 media session ${{ inputs.request_id || github.sha }}
 
 on:
   push:

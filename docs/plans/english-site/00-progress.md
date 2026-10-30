@@ -312,3 +312,13 @@ Verified receipts for checkpoint 7:
 Из 172 видимых RU-блоков трех Tour: 18 приняты в очереди, 12 уже сопоставлены Word, но их пакеты еще не выдавались (Колумбия), **142 блока еще требуют предметной Word/AI-разметки**. Точная очередь без права автоматического запуска: `data/i18n/translation/pilot-unmapped-20261030.json`.
 
 **Не считать эти 18 блоков тремя полными турами:** ни один Tour не имеет полного английского покрытия; locale adapter не подключен к публичному Astro, EN-сборки и DNS не выпускались. Цены `main` не меняли. Следующий шаг — оставшиеся два пакета Колумбии с Word+AI gap, потом разметка 142 оставшихся полей и пробный RU/EN render после полноты source snapshots.
+
+
+## Checkpoint 30.10.2026 — три полных непубличных EN locale preview
+
+- В `i18n/translation-staging` [`db15586c`](https://github.com/alexyakovlev79/adatours.ru/commit/db15586c3c488954fe12924384fc2540c93c0778) закрыты **5/5** исходных задач, `ready=5, queued=0, leased=0, review=0`. Из них **30 блоков**: 27 `word_exact`, 3 `ai_gap`.
+- Ещё **142** поля Рио/острова Пасхи/Колумбии обработаны как отдельные редакционные EN-черновики, сохранены в `data/i18n/translation/pilot-completion-drafts/`; их provenance НЕ равен `word_exact`, отсутствует независимая внешняя редакторская экспертиза.
+- [Actions #41056311428](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41056311428) — `success`: для всех трёх туров создано **172/172** блоков, `assessment.state=ready`, 0 blocking issues, автоматизированный nonpublishing assembly без русских строк; изолированные цены `priceFrom` 1255 / 1492 / 1863 USD не менялись.
+- Реальные артефакты (3 `overlays` + 3 `rendered` + 3 Word evidence + summary) сохранены в [`i18n/three-tour-preview-20261030` коммит `ab272489`](https://github.com/alexyakovlev79/adatours.ru/commit/ab27248954bb71fe6582bf796d73626ea8502d5f). Это английские **JSON-модели**, а не HTML/страницы сайта.
+- **Завершено:** техническое пилотное покрытие трех Tour, source/locale/identity/price guards и nonpublic JSON assembly. **Не завершено:** содержательная редактура 142 новых блоков на уровне готового сайта; Astro EN routing, forms/schema/SEO/Search, независимый двухъязычный build, публичная публикация. `main` EN изменениями не затронут, массовый перевод выключен.
+- Сторонний текущий блокер на `main`: [Pages run #41057093032](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41057093032) failed из-за добавленного `public/media/people/geovani/geovani-20261030.webp` после frozen media cutoff. Это отдельный контур, не ошибка EN preview.

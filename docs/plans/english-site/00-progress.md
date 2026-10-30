@@ -331,3 +331,12 @@ Verified receipts for checkpoint 7:
 - Download-only artifact `ada-en-three-tour-private-html` ID `12982446139`: 1 каталог + 3 туровых HTML, локальные CSS/логотип/favicon; фото с `img.adatours.ru`. Пользовательской ZIP-копией можно пользоваться через локальный HTTP-сервер (README и START_PREVIEW_WINDOWS.bat).
 - Ни деплоя на `adatours.ru`/`adatours.com`, ни публичного EN canonical, ни новых Google Search URL. Контактная форма в пилоте не активна; есть только явный `mailto:`.
 - **Следующий gate:** содержательная редактура 142 новых блоков, сквозное подключение locale resolver к общим Astro-шаблонам и SEO/Schema/Search/forms, сравнение RU/EN релизов. Массовый перевод и публичный EN остаются выключены.
+
+## Checkpoint 14 — 30.10.2026: shared closed EN Astro shell and Tour blocks
+
+Confirmed implementation in `feat/english-site-foundation`:
+- `e748206c`: EN private route now renders through guarded shared `BaseLayout`. No public analytics, active form, SEO/JSON-LD, canonical or hreflang emitted for the private preview. Astro preview and focused tests [#41067546273](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41067546273) succeeded.
+- `4fb996bc`: common `TripStats` and RU/EN-aware `IncludedExcluded` are reused by the three-Tour pilot. The existing bilingual UI catalog supplies service labels. Tests [#41068342651](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41068342651), private Astro HTML build [#41068342619](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41068342619) succeeded. Four private pages were packaged as Actions artifact `12984666377` with 14-day retention.
+- External Windows review ZIP derived from that artifact opens without a local server, with internal links and assets verified. This ZIP is a user handoff, not a public deployment receipt.
+
+Resume from `4fb996bc` or later feature head. The **next integration gate** is a real shared RU/EN `TourLayout`/locale collection path with translated linked Country/Destination/Excursion, working localized forms and safe SEO/schema/search. The 142 newly authored pilot fragments still need independent editorial review. Do not restart finished Word matching, translation pilot packets or private artifact generation. Public `main`, release flag, production domains and bulk translation remain unchanged by this continuation.

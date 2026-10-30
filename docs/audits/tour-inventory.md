@@ -11,9 +11,9 @@
 | № | Показатель | Сейчас |
 |---|---|---:|
 | 1 | Программы Drive без повторных копий файлов | 173 программ / 204 файлов |
-| 2 | Неархивные страницы туров | 358 |
-| 3 | Архивные страницы туров | 34 |
-| 4 | Страницы без соответствия в снимке Drive | 191 активных + 18 архивных |
+| 2 | Неархивные страницы туров | 353 |
+| 3 | Архивные страницы туров | 39 |
+| 4 | Страницы без соответствия в снимке Drive | 186 активных + 23 архивных |
 | 5 | Программы Drive с архивным соответствием | 18: 0 только в архиве, 18 также с активной страницей |
 | 6 | Программы Drive без активной страницы и без архива | 0; из них 0 уже имеют запись источников |
 
@@ -220,7 +220,7 @@
 
 ## 5. Полная опись сайта и источников
 
-В архивном реестре 39 туров; 5 без страниц. «Нет на Drive» относится только к указанной папке и её снимку, а не ко всему Google Drive. Этот факт не является причиной архивирования или удаления.
+В архивном реестре 44 туров; 5 без страниц. «Нет на Drive» относится только к указанной папке и её снимку, а не ко всему Google Drive. Этот факт не является причиной архивирования или удаления.
 
 | Tour ID | Тур / страница | Статус | Соответствующие программы Drive |
 |---|---|---|---|
@@ -255,13 +255,13 @@
 | `tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej` | [Тур в Аргентину 2026 - 2027: Патагония, Игуасу, Буэнос-Айрес](https://adatours.ru/multi-country/tour/luxury-argentina-buenos-aires-patagonia-iguazu-11-days-2026-2027/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_argentina_dlya_degustatorov_khoroshej_zhizni` | [Тур в Аргентину для любителей красивой жизни и вкусной еды](https://adatours.ru/argentina/tour/argentina-food-fine-living/) | Активная страница | `P121` |
 | `tour_source_tur_v_argentinu_na_dikuyu_prirodu` | [Тур в Аргентину и Буэнос-Айрес: по лучшим заповедным местам](https://adatours.ru/argentina/tour/argentina-wildlife-buenos-aires/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_source_tur_v_argentinu_na_11dnej` | [Тур в Аргентину и Патагонию на 11 дней \| Люксовый тур в Аргентину](https://adatours.ru/multi-country/tour/argentina-patagonia-vip-11-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_source_tur_v_argentinu_na_11dnej` | [Тур в Аргентину и Патагонию на 11 дней \| Люксовый тур в Аргентину](https://adatours.ru/multi-country/tour/argentina-patagonia-vip-11-days/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_neveroyatnaya_argentina` | [Тур в Аргентину и Патагонию по лучшим достопримечательностям](https://adatours.ru/multi-country/tour/incredible-argentina-patagonia/) | Активная страница | `P112` |
 | `tour_source_argentina_buenos_ajres_kalafate_iguasu` | [Тур в Аргентину на 10 дней: Патагония и водопады Игуасу](https://adatours.ru/multi-country/tour/argentina-buenos-aires-el-calafate-iguazu-10-days/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu` | [Тур в Аргентину на 12 дней: Патагония и водопады Игуасу](https://adatours.ru/multi-country/tour/argentina-buenos-aires-el-calafate-ushuaia-iguazu-12-days/) | Активная страница | `P114` |
 | `tour_source_argentina_ot_lda_k_vodopadam` | [Тур в Аргентину с Патагонией (Эль-Калафате) и Водопадами Игуасу](https://adatours.ru/multi-country/tour/argentina-glaciers-to-iguazu-falls/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_issledovanie_argentiny` | [Тур в Аргентину с Патагонией (Эль-Калафате), водопады Игуасу](https://adatours.ru/argentina/tour/explore-argentina-16-days/) | Активная страница | `P116` |
-| `tour_source_tur_v_argentinu_v_patagoniyu` | [Аргентина и Патагония за 14 дней: Ушуайя, Барилоче и водопады Игуасу](https://adatours.ru/argentina/tour/argentina-patagonia-brazil-iguazu-falls/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_source_tur_v_argentinu_v_patagoniyu` | [Аргентина и Патагония за 14 дней: Ушуайя, Барилоче и водопады Игуасу](https://adatours.ru/argentina/tour/argentina-patagonia-brazil-iguazu-falls/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_argentina_2024` | [Тур в Аргентину с Патагонией по лучшим достопримечательностям](https://adatours.ru/argentina/tour/argentina-patagonia-highlights-2024/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_argentina_bariloche_i_buenos_ajres` | [Тур в Аргентину – Барилоче и Буэнос-Айрес, по самым красивым местам](https://adatours.ru/argentina/tour/argentina-bariloche-buenos-aires/) | Активная страница | `P119` |
 | `tour_source_argentina_buenos_ajres_salta_iguasu` | [Тур в Аргентину, Буэнос-Айрес и Водопады Игуасу на 12 дней](https://adatours.ru/argentina/tour/argentina-buenos-aires-salta-iguazu-12-days/) | Архивная страница | `P120` |
@@ -372,7 +372,7 @@
 | `tour_source_tur_v_braziliyu_za_vkusami` | [Тур в Бразилию в Рио де Жанейро, Илья-Гранди, Парати](https://adatours.ru/brazil/tour/brazil-rio-ilha-grande-paraty/) | Архивная страница | `P169` |
 | `tour_source_special_noe_predlozhenie_rio_and_vodopa_dy_iguasu` | [Тур в Бразилию в Рио-де-Жанейро и Водопады Игуасу на 8 дней](https://adatours.ru/brazil/tour/brazil-rio-iguazu-8-days/) | Активная страница | `P073` |
 | `tour_source_mechty_sbyvayutsya_tur_v_braziliyu_i_argentinu_na_9_dnej` | [Бразилия и Аргентина для взрослых: Рио, Игуасу, Буэнос-Айрес за 9 дней](https://adatours.ru/multi-country/tour/brazil-argentina-rio-iguazu-buenos-aires-9-days/) | Активная страница | `P067`; `P068` |
-| `tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa` | [Тур в Бразилию и Аргентину: Водопады Игуасу и ледники Патагонии](https://adatours.ru/multi-country/tour/brazil-argentina-iguazu-patagonia-glaciers/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa` | [Тур в Бразилию и Аргентину: Водопады Игуасу и ледники Патагонии](https://adatours.ru/multi-country/tour/brazil-argentina-iguazu-patagonia-glaciers/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_braziliya_i_argentina_v_sentyabre` | [Тур в Бразилию и Аргентину: Рио-де-Жанейро, Фоз де Игуасу, Буэнос Айрес](https://adatours.ru/multi-country/tour/brazil-argentina-rio-iguazu-buenos-aires-september/) | Архивная страница | `P067`; `P068` |
 | `tour_source_tur_v_braziliyu_s_amazoniej_i_argentinu` | [Тур в Бразилию и Аргентину: от Манауса (Амазонка) до Игуасу](https://adatours.ru/multi-country/tour/brazil-amazon-argentina-manaus-iguazu/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_braziliya_i_peru_na_novyj_god` | [Тур в Бразилию и Перу на празднование Нового Года](https://adatours.ru/multi-country/tour/brazil-peru-new-year/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
@@ -478,7 +478,7 @@
 | `tour_source_panama_i_kosta_rika` | [Панама и Коста Рика](https://adatours.ru/multi-country/tour/panama-costa-rica/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_klassicheskaya_kosta_rika` | [Тур в Коста-Рику, Сан-Хосе, в леса Монтеверде и на вулкан Ареналь](https://adatours.ru/costa-rica/tour/classic-costa-rica-san-jose-monteverde-arenal/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_luchshee_v_kosta_rike` | [Тур в Коста-Рику- лучшее в Коста Рике](https://adatours.ru/costa-rica/tour/best-of-costa-rica/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
-| `tour_source_3_shaga_po_kosta_rike` | [Тур в Коста-Рику: Ареналь, Сан-Хосе и пляжный отдых на Тихом океане](https://adatours.ru/costa-rica/tour/costa-rica-arenal-san-jose-pacific-beach/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_source_3_shaga_po_kosta_rike` | [Тур в Коста-Рику: Ареналь, Сан-Хосе и пляжный отдых на Тихом океане](https://adatours.ru/costa-rica/tour/costa-rica-arenal-san-jose-pacific-beach/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_ekonomichnaya_kosta_rika` | [Экономичная Коста Рика](https://adatours.ru/costa-rica/tour/budget-costa-rica/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_ekstrim_v_kosta_rike` | [Экстремальная Коста-Рика](https://adatours.ru/costa-rica/tour/costa-rica-extreme-adventure/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_bolshie_meksikanskie_kanikuly` | [Большие Мексиканские Каникулы](https://adatours.ru/mexico/tour/grand-mexico-holiday/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
@@ -551,7 +551,7 @@
 | `tour_source_ves_ekvador_i_galapagosskie_ostrova` | [Весь Эквадор и Галапагосские острова](https://adatours.ru/ecuador/tour/complete-ecuador-galapagos-islands/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_ves_ekvador_variant_1` | [Индивидуальный тур в Эквадор (континентальный) на 5 дней](https://adatours.ru/ecuador/tour/mainland-ecuador-private-tour-5-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_luchshee_v_ekvadore_garantirovannye_zaezdy` | [Лучшее в Эквадоре: Гарантированные заезды](https://adatours.ru/ecuador/tour/best-of-ecuador-guaranteed-departures/) | Активная страница | `P031` |
-| `tour_source_pochuvstvujte_peru_ekvador` | [Почувствуйте Перу-Эквадор](https://adatours.ru/multi-country/tour/experience-peru-ecuador/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
+| `tour_source_pochuvstvujte_peru_ekvador` | [Почувствуйте Перу-Эквадор](https://adatours.ru/multi-country/tour/experience-peru-ecuador/) | Архивная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie` | [Тур в Эквадор (континентальный) на 9 дней: лучшее в стране](https://adatours.ru/ecuador/tour/luxury-mainland-ecuador-9-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_ekvador_s_udovolstviem` | [Тур в Эквадор и Галапагосы: по лучшим заповедным местам](https://adatours.ru/ecuador/tour/ecuador-galapagos-nature-discovery/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |
 | `tour_source_ekvador_aktivnyj_tur_s_galapagossom` | [Тур в Эквадор и на Галапагосские острова (активити-тур) на 17 дней](https://adatours.ru/ecuador/tour/ecuador-galapagos-adventure-17-days/) | Активная страница | Нет подтверждённого соответствия в снимке Drive |

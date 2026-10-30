@@ -2,7 +2,7 @@
 id: tour_source_tur_v_argentinu_i_braziliyu_ot_lda_do_solntsa
 locale: ru
 slug: brazil-argentina-iguazu-patagonia-glaciers
-status: published
+status: archived
 title: 'Тур в Бразилию и Аргентину: Водопады Игуасу и ледники Патагонии'
 countries:
 - country_argentina
@@ -231,6 +231,9 @@ routeDestinations:
 - destination_brazil_rio
 primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
+archivedAt: "2026-10-30"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_argentina_and_brazil_ru"
 ---
 
 **Год программы:** 2026

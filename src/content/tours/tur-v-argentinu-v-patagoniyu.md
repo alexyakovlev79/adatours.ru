@@ -2,7 +2,7 @@
 id: tour_source_tur_v_argentinu_v_patagoniyu
 locale: ru
 slug: argentina-patagonia-brazil-iguazu-falls
-status: approved
+status: archived
 title: 'Аргентина и Патагония за 14 дней: Ушуайя, Барилоче и водопады Игуасу'
 countries:
 - country_argentina
@@ -345,6 +345,9 @@ legacyUrls:
 - /tury/tur-v-argentinu-v-patagoniyu/
 - /argentina/tour/tur-v-argentinu-v-patagoniyu/
 - /argentina/tour/argentina-patagonia-brazil-iguazu-falls/
+archivedAt: "2026-10-30"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_argentina_best_14_days"
 ---
 
 # Аргентина и Патагония за 14 дней: Ушуайя, Барилоче и водопады Игуасу

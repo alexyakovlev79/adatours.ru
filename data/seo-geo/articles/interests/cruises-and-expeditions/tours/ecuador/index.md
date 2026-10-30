@@ -19,7 +19,6 @@ lead: >-
 | [Grand Majestic](/ecuador/tour/ecuador-galapagos-wildlife-cruise-18-days/) | Галапагосы, 4 дня круиза |
 | [M/V Anaconda](/ecuador/tour/luxury-mainland-ecuador-9-days/) | Амазония Эквадора |
 | [Aria Amazon](/multi-country/tour/peru-ecuador-galapagos-luxury-18-days/) | Амазония Перу |
-| [Перу — Эквадор](/multi-country/tour/experience-peru-ecuador/) | Речной круиз в Перу |
 
 Один выход на катере к острову не равен многодневному круизу с проживанием на судне. Если важна именно жизнь на борту и последовательное посещение нескольких островов, выбирайте программу, где в днях тура прямо указаны посадка на яхту, каюта и ночевки на судне.
 
@@ -67,7 +66,6 @@ lead: >-
 
 [VIP-путешествие «Перу и Эквадор: Мачу-Пикчу, Амазонка и Галапагосы» на 18 дней](/multi-country/tour/peru-ecuador-galapagos-luxury-18-days/) включает речной круиз Aria Amazon, но **посадка происходит в перуанской части поездки после перелета в Икитос**. Дни 4–6 посвящены круизу и району заповедника Пакая-Самирия. Затем путешественники посещают [Куско](/peru/place/cusco/), [Мачу-Пикчу](/peru/place/machu-picchu/) и уже после этого отправляются в Эквадор, где предусмотрены Кито, Машпи и Галапагосские острова.
 
-[«Почувствуйте Перу — Эквадор»](/multi-country/tour/experience-peru-ecuador/) тоже начинается в Перу. В программе после Икитоса обозначен речной Aria Amazon Discovery Cruise с собственной продолжительностью, затем следуют перуанские Анды, а эквадорский этап включает Кито, Машпи и островные экскурсии. Здесь следует отличать **многодневный круиз на Амазонке в Перу** от **дневных морских экскурсий на Галапагосах**: одинаковое присутствие воды не означает одинаковый формат проживания.
 
 Оба маршрута закономерно появляются в тематической подборке с Эквадором, потому что посещают эту страну и содержат существенную круизную часть. Но искать на их основе речной круиз по эквадорской Амазонии было бы ошибкой. Для этого подходит [9-дневная программа с Anaconda](/ecuador/tour/luxury-mainland-ecuador-9-days/), а для ночевок на яхте у Галапагосов — [Aqua Mare](/ecuador/tour/galapagos-luxury-yacht-cruise-8-days/) или [Grand Majestic](/ecuador/tour/ecuador-galapagos-wildlife-cruise-18-days/).
 
@@ -79,11 +77,10 @@ lead: >-
 | [Grand Majestic, тур 18 дней](/ecuador/tour/ecuador-galapagos-wildlife-cruise-18-days/) | Галапагосы, дни 15–18 |
 | [M/V Anaconda, тур 9 дней](/ecuador/tour/luxury-mainland-ecuador-9-days/) | Амазония Эквадора |
 | [VIP Перу + Эквадор](/multi-country/tour/peru-ecuador-galapagos-luxury-18-days/) | Амазония Перу |
-| [«Почувствуйте Перу — Эквадор»](/multi-country/tour/experience-peru-ecuador/) | Амазония Перу |
 
 Таблица намеренно разделяет **географию круиза** и **географию всего путешествия**. Это полезнее, чем сравнение одних только продолжительностей. Цены и актуальная общая длительность приводятся из опубликованных данных туров:
 
-{{catalog.tourTable:tour_source_galapagosskie_ostrova_na_vip_yakhte,tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh,tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie,tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej,tour_source_pochuvstvujte_peru_ekvador}}
+{{catalog.tourTable:tour_source_galapagosskie_ostrova_na_vip_yakhte,tour_source_ekvador_zhivaya_priroda_s_kruizom_na_galapagosakh,tour_source_kontinentalnyj_ekvador_roskoshnoe_puteshestvie,tour_source_lyuksovyj_tur_v_peru_i_ehkvador_s_galapagosami_na_18_dnej}}
 
 Если цель — увидеть как можно больше островов, изучите фактическую последовательность высадок у [Aqua Mare](/ecuador/tour/galapagos-luxury-yacht-cruise-8-days/). Если хочется сперва пройти лесные и высокогорные маршруты, а затем провести несколько дней на яхте, подойдет [18-дневное путешествие с Grand Majestic](/ecuador/tour/ecuador-galapagos-wildlife-cruise-18-days/). Тем, кто предпочитает реки и Амазонию, стоит смотреть [Anaconda](/ecuador/tour/luxury-mainland-ecuador-9-days/). А [двухстрановый маршрут через Перу](/multi-country/tour/peru-ecuador-galapagos-luxury-18-days/) интереснее сочетанием разных культурных и природных регионов, чем одним галапагосским круизом.
 

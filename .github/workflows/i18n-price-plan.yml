@@ -1,0 +1,38 @@
+name: Ada EN 2027 Word price reconciliation plan
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/plan-word-prices.mjs'
+      - '.github/workflows/i18n-price-plan.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          path: feature
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/matching-staging
+          path: matching-live
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: production
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Compare 2027 Word price rows with live Russian Tour data
+        run: node feature/scripts/i18n/plan-word-prices.mjs matching-live production --output /tmp/ada-prices
+      - name: Upload traceable shared-price change plan
+        uses: actions/upload-artifact@v4
+        with:
+          name: ada-word-2027-price-plan
+          path: /tmp/ada-prices/
+          retention-days: 30

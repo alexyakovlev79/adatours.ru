@@ -117,7 +117,7 @@ for(const [id,file] of ids){
      exactPaths.some(x=>!mappedPaths.has(x)))throw Error('Draft does not cover remaining text slots');
   if(![52,58,62].includes(source.blocks.length))throw Error('Unexpected pilot entity size');
   const sourceById=new Map(source.blocks.map(x=>[x.blockId,x]));
-  const date='2026-10-30T00:00:00.000Z';
+  const date=new Date().toISOString();
   const overlay={schemaVersion:1,entityId:id,entityType:'tour',locale:'en',
    sourceLocale:'ru',blocks:[]};
   const localizedText=[];

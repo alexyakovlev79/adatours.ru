@@ -31,7 +31,7 @@ test('two workers cannot claim one job in same shard',()=>{
  assert.notEqual(one.item.jobId,two.item.jobId);
 });
 test('resume, heartbeat, checkpoint replay and lost submit response are idempotent',()=>{
- const x=sample();const [sid]=Object.entries(x.shards).filter(([,v])=>v.items.length);
+ const x=sample();const sid=Object.entries(x.shards).find(([,v])=>v.items.length)?.[0];
  const first=claimTranslation(x.shards[sid],{ownerId:'worker-a',token:'token-a',now:at});
  const args={jobId:first.item.jobId,ownerId:'worker-a',token:'token-a',generation:first.item.generation,now:at};
  const resumed=claimTranslation(first.shard,{ownerId:'worker-a',token:'token-a',now:at});

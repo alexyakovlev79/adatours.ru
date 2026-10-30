@@ -36,6 +36,16 @@ jobs:
           node scripts/sync-archives.mjs
           node scripts/sync-source-catalogs.mjs
           git diff --check
+      - name: Show exact SEO article migration scope before build
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const dir='/tmp/ada-archive-preview/';
+          for (const name of ['summary','article-changes','dual-mentions']) {
+            const value=JSON.parse(fs.readFileSync(dir+name+'.json','utf8'));
+            console.log('ARCHIVE_PREVIEW_'+name.toUpperCase().replaceAll('-','_')+'='+JSON.stringify(value));
+          }
+          NODE
       - name: Full Astro build, sitemap, Pagefind and archived link verification
         run: npm run build
       - name: Summarize candidate changes

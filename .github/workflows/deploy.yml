@@ -153,15 +153,15 @@ jobs:
             -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
   report:
-    name: Publish deployment result as commit status
-    if: always()
+    name: Report failed deployments only (success recorded in deploy job)
+    if: ${{ always() && (needs.media.result != 'success' || needs.build.result != 'success' || needs.deploy.result != 'success') }}
     needs: [media, build, deploy]
     runs-on: ubuntu-latest
     permissions:
       contents: read
       statuses: write
     steps:
-      - name: Record media, build and Pages result
+      - name: Mirror failed Pages run (best effort; original failure remains authoritative)
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -169,16 +169,12 @@ jobs:
           BUILD_RESULT: ${{ needs.build.result }}
           DEPLOY_RESULT: ${{ needs.deploy.result }}
         run: |
-          if [[ "$MEDIA_RESULT" == "success" && "$BUILD_RESULT" == "success" && "$DEPLOY_RESULT" == "success" ]]; then
-            status="success"
-            note="Incremental S3 receipts, Astro build and Pages deploy succeeded"
-          else
-            status="failure"
-            note="S3=$MEDIA_RESULT, build=$BUILD_RESULT, Pages=$DEPLOY_RESULT"
+          note="S3=$MEDIA_RESULT, build=$BUILD_RESULT, Pages=$DEPLOY_RESULT"
+          if ! gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state=failure -f context="ada/pages-deploy" -f description="$note" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"; then
+            echo "::warning::Could not mirror failure to commit status; original CI failure remains"
           fi
-          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
-            -f state="$status" -f context="ada/pages-deploy" -f description="$note" \
-            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
   catalog-registries:
     name: Persist multi-country catalogue registries

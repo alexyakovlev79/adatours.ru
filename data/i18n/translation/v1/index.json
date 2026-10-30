@@ -4,7 +4,7 @@
   "jobCount": 5,
   "stage": "word_2027",
   "pilotOnly": true,
-  "dispatcherEnabled": true,
+  "dispatcherEnabled": false,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
   "updatedAt": "2026-10-30T10:52:00.829Z",
@@ -261,5 +261,27 @@
       ],
       "completedJobIds": []
     }
+  },
+  "smokeConclusion": {
+    "status": "verified_and_closed",
+    "verifiedDate": "2026-10-30",
+    "testBranch": "i18n/translation-smoke-20261030",
+    "workers": 2,
+    "distinctJobsClaimed": 2,
+    "successfulCheckpoints": 1,
+    "idempotentCheckpointReplay": true,
+    "renews": 1,
+    "releases": 2,
+    "noActiveLeases": true,
+    "noSubmittedTranslations": true,
+    "source": "live_github_connector_cas_smoke",
+    "evidenceCommits": [
+      "fcf7adbf2af1d5d2e5bb74d2e976e224a8f3fab3",
+      "3c324f1651b98af053f5b1772ddfea5a5a1eb0a4",
+      "b31089f2a143",
+      "af39d6ecb6d35e4046ad025b99f7065e0ef04b7d",
+      "fc712f34827bfcd8f540f1493347ac1b99336c88",
+      "4fa9708c1b59ff4be4246c03bc9e24f6a38a57b6"
+    ]
   }
 }

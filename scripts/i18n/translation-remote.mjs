@@ -68,6 +68,10 @@ export async function runEnTranslation(tools,core,args={}){
    if(index.dispatcherEnabled!==true||index.pilotOnly!==true||
       index.publicationEnabled!==false||index.translationMassLaunchAllowed!==false)
     return{status:'gate_closed',head:sha,branch};
+   if(branch==='i18n/translation-staging'&&action==='claim'&&
+      (!id(args.jobId)||!Array.isArray(index.pilotAllowedJobIds)||
+       !index.pilotAllowedJobIds.includes(args.jobId)))
+     return{status:'pilot_job_not_authorized',branch};
    const assignments=index.ownerAssignments||{},mine=assignments[args.ownerId];
    if(mine&&mine.token!==args.token)return{status:'owner_token_conflict',branch};
    const owners=index.activeOwners||{},active=owners[args.ownerId];

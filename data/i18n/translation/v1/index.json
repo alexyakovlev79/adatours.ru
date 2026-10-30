@@ -7,11 +7,11 @@
   "dispatcherEnabled": true,
   "translationMassLaunchAllowed": false,
   "publicationEnabled": false,
-  "updatedAt": "2026-10-30T11:12:42.679Z",
+  "updatedAt": "2026-10-30T11:13:16.611Z",
   "counts": {
     "queued": 3,
-    "leased": 2,
-    "review": 0,
+    "leased": 1,
+    "review": 1,
     "ready": 0,
     "retryable": 0,
     "blocked_external": 0,
@@ -162,15 +162,15 @@
     "0a": {
       "counts": {
         "queued": 0,
-        "leased": 1,
-        "review": 0,
+        "leased": 0,
+        "review": 1,
         "ready": 0,
         "retryable": 0,
         "blocked_external": 0,
         "stale_source": 0,
         "failed_final": 0
       },
-      "earliestExpiryAt": "2026-10-30T12:42:17.211Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0b": {
@@ -260,12 +260,6 @@
     ]
   },
   "activeOwners": {
-    "en-real-rio-worker-20261030": {
-      "jobId": "en:tour:tour_brazil_rio_four_days:p1",
-      "token": "en-real-rio-token-20261030",
-      "expiresAt": "2026-10-30T12:42:17.211Z",
-      "generation": 1
-    },
     "en-real-easter-worker-20261030": {
       "jobId": "en:tour:tour_chile_easter_island_3_days_2027:p1",
       "token": "en-real-easter-token-20261030",
@@ -279,7 +273,9 @@
       "jobIds": [
         "en:tour:tour_brazil_rio_four_days:p1"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:tour:tour_brazil_rio_four_days:p1"
+      ]
     },
     "en-real-easter-worker-20261030": {
       "token": "en-real-easter-token-20261030",

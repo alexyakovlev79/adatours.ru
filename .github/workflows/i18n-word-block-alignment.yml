@@ -10,6 +10,7 @@ on:
       - 'data/i18n/word-text-evidence/pilot/**'
       - 'scripts/i18n/verify-word-paragraph-evidence.mjs'
       - 'scripts/i18n/verify-word-review-packets.mjs'
+      - 'scripts/i18n/verify-staged-word-review.mjs'
       - 'data/i18n/translation/review-pilot/**'
       - '.github/workflows/i18n-word-block-alignment.yml'
   workflow_dispatch:
@@ -49,3 +50,5 @@ jobs:
         run: node feature/scripts/i18n/verify-word-paragraph-evidence.mjs feature matching
       - name: Verify two eight-block Word-first review packets are exactly sourced
         run: node feature/scripts/i18n/verify-word-review-packets.mjs feature staging
+      - name: Verify immutable review submissions in translation-staging against exact Word and current RU
+        run: node feature/scripts/i18n/verify-staged-word-review.mjs feature staging matching production

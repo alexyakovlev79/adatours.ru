@@ -3,9 +3,9 @@
  */
 const PILOT_ROOT='/en-pilot-private/';
 const ids=[
- {id:'tour_brazil_rio_four_days',slug:'rio-de-janeiro-four-days',price:1255,days:4},
- {id:'tour_chile_easter_island_3_days_2027',slug:'easter-island-3-days',price:1492,days:3},
- {id:'tour_colombia_essential_5_days',slug:'colombia-essential-5-days',price:1863,days:5},
+ {id:'tour_brazil_rio_four_days',slug:'rio-de-janeiro-four-days',price:1255,days:4,pendingExcursions:4},
+ {id:'tour_chile_easter_island_3_days_2027',slug:'easter-island-3-days',price:1492,days:3,pendingExcursions:3},
+ {id:'tour_colombia_essential_5_days',slug:'colombia-essential-5-days',price:1863,days:5,pendingExcursions:4},
 ];
 const forbidden=/[\u0400-\u052F]/u;
 export const PILOT_TOURS=Object.freeze(ids.map(x=>Object.freeze({...x})));
@@ -19,6 +19,20 @@ export function pilotTourUrl(slug){
  return PILOT_ROOT+'tour/'+slug+'/';
 }
 export function pilotCatalogUrl(){return PILOT_ROOT+'tours/';}
+/** Stable dependency IDs only; never load untranslated RU Excursion copy. */
+export function pilotExcursionDependencies(itinerary) {
+ if(!Array.isArray(itinerary))throw TypeError('Private pilot itinerary must be an array');
+ const refs=new Set();
+ const add=id=>{
+  if(typeof id!=='string'||!/^excursion_[a-z0-9_]+$/.test(id))throw Error('Invalid pilot Excursion stable ID');
+  refs.add(id);
+ };
+ for(const day of itinerary){
+  if(day.excursionRef!==undefined)add(day.excursionRef);
+  for(const block of day.contentBlocks??[])if(block.type==='excursion')add(block.excursionRef);
+ }
+ return [...refs];
+}
 export function escapePilotHtml(value){
  return String(value??'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
   .replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
@@ -91,6 +105,9 @@ export function assertPilotRenderSource(records,summary){
     (report.alreadyApprovedWordBlocks+report.alreadyApprovedAiBlocks+report.proposedAdditionalBlocks)!==report.sourceVisibleBlocks||
     forbidden.test(JSON.stringify(r)))throw Error('Pilot Tour source or locale text not ready: '+spec.id);
   pilotMediaUrl(d.hero.src);
+  if(pilotExcursionDependencies(d.itinerary).length !== spec.pendingExcursions) {
+   throw Error('Canonical Excursion dependencies changed for private EN pilot: '+spec.id);
+  }
  }
  return true;
 }

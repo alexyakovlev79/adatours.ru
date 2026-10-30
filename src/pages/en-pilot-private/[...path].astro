@@ -8,11 +8,13 @@ import TripStats from '../../components/tour/TripStats.astro';
 import IncludedExcluded from '../../components/tour/IncludedExcluded.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import TourPricing from '../../components/tour/TourPricing.astro';
+import Itinerary from '../../components/tour/Itinerary.astro';
 import {readFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {
  PILOT_TOURS,privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
- assertPilotRenderSource,pilotMediaUrl,formatPilotPrice,renderPilotMarkdown
+ assertPilotRenderSource,pilotMediaUrl,formatPilotPrice,renderPilotMarkdown,
+ pilotExcursionDependencies
 } from '../../lib/i18n/pilot-html.mjs';
 
 export async function getStaticPaths(){
@@ -49,7 +51,12 @@ const {kind,cards,record}=Astro.props as Props;
 const d=record?.data;
 if(kind==='tour'&&!d)throw Error('Private pilot route requires approved EN Tour data');
 const days=Array.isArray(d?.itinerary)?d.itinerary.filter(x=>Number.isInteger(x.day)):[];
-const media=(item?:{src?:string}|null)=>item?.src?pilotMediaUrl(item.src):null;
+const pendingExcursions=kind==='tour'?pilotExcursionDependencies(d.itinerary):[];
+// Render only approved EN numbered days. Independent Excursion text is gated separately.
+const localizedDays=days.map((day:any)=>({
+ day:day.day,title:day.title,text:day.text,places:day.places??[],
+ images:(day.images??[]).map((image:any)=>({...image,src:pilotMediaUrl(image.src)}))
+}));
 const headline=kind==='catalog'?'Three journeys, one Latin America':d.title;
 const pageTitle=kind==='catalog'
  ? 'Latin America — Three Journeys | Ada Tours Internal English Preview'
@@ -137,30 +144,10 @@ const journeyStats=kind==='tour' ? [
             <ul class="pilot-route-tags">{d.route.map((name:string)=><li>{name}</li>)}</ul>
           </section>
         )}
-        <section class="pilot-itinerary container" id="itinerary" aria-labelledby="itinerary-title">
-          <div class="pilot-section-heading">
-            <span class="pilot-kicker">THE JOURNEY</span>
-            <h2 id="itinerary-title">Day by day</h2>
-            <p>Experiences and services follow the matched English Word 2027 programme. Additional excursions are offered only where specified.</p>
-          </div>
-          <div class="pilot-days" data-pilot-day-count={days.length}>
-            {days.map((day:any)=>(
-              <article class="pilot-day" id={'day-'+day.day} data-pilot-day={day.day}>
-                {day.images?.[0]?.src ? (
-                  <div class="pilot-day-image">
-                    <img src={media(day.images[0])} alt={day.images[0].alt||day.title} width="900" height="670" loading="lazy" decoding="async" />
-                  </div>
-                ) : <div class="pilot-day-image pilot-image-empty" aria-hidden="true"></div>}
-                <div class="pilot-day-copy">
-                  <p class="pilot-kicker">DAY {String(day.day).padStart(2,'0')}</p>
-                  <h3>{day.title}</h3>
-                  {day.places?.length>0&&<p class="pilot-day-places">{day.places.join(' · ')}</p>}
-                  <div class="pilot-day-description">{day.text}</div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+        <Itinerary locale="en" privatePreview sectionId="itinerary" days={localizedDays} />
+        <p class="container pilot-excursion-note" data-pilot-unlocalized-excursions={pendingExcursions.length}>
+          The {pendingExcursions.length} standalone excursion modules referenced by this programme are tracked separately and are not shown until their English source text is approved.
+        </p>
         <TourPricing locale="en" sectionId="prices"
           price={'From '+formatPilotPrice(d.priceFrom,d.currency)}
           basis={d.priceNote} ctaHref="#enquiry" ctaLabel="Ask about your dates">
@@ -238,15 +225,7 @@ const journeyStats=kind==='tour' ? [
 .pilot-route h2{font-size:clamp(1.8rem,3vw,3rem)}
 .pilot-route-tags{display:flex;flex-wrap:wrap;gap:.75rem;padding:0;margin:1.5rem 0 0;list-style:none}
 .pilot-route-tags li{border-radius:99px;border:1px solid var(--color-line);padding:.7rem 1.1rem;font-size:.87rem}
-.pilot-itinerary{padding-block:clamp(65px,7vw,110px)}
-.pilot-days{display:grid;gap:clamp(1.5rem,5vw,4.5rem)}
-.pilot-day{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,6rem);align-items:center}
-.pilot-day:nth-child(even) .pilot-day-image{order:2}
-.pilot-day-image{aspect-ratio:1.3;background:var(--color-surface-beige);overflow:hidden}
-.pilot-day-copy{padding-block:1rem}
-.pilot-day-copy h3{font-family:var(--font-display);font-size:clamp(2rem,3.2vw,3.4rem);font-weight:400;letter-spacing:-.025em;line-height:1.1;margin:.9rem 0 1.2rem}
-.pilot-day-places{font-size:.83rem;letter-spacing:.02em;color:var(--color-brand-deep);margin:0 0 1.4rem}
-.pilot-day-description{white-space:pre-line;line-height:1.75;max-width:70ch;color:#373737}
+.pilot-excursion-note{font-size:.82rem;line-height:1.5;color:var(--color-text-muted);padding-block:1rem 2rem}
 .pilot-body-markdown{min-width:0;font-size:.95rem;line-height:1.7}
 .pilot-body-markdown :global(h2){font-size:1.9rem;font-family:var(--font-display);font-weight:500;margin:0 0 1.3rem}
 .pilot-body-markdown :global(h3){font-size:1.4rem;margin:1.8rem 0 .8rem}
@@ -272,16 +251,13 @@ const journeyStats=kind==='tour' ? [
 .pilot-footer p{margin:0;color:#b7bdbb;font-size:.79rem}.pilot-footer a{text-decoration:underline}
 @media(max-width:960px){
  .pilot-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
- .pilot-day{gap:2rem}
 }
 @media(max-width:700px){
  .pilot-header{height:auto;min-height:68px}
  .pilot-nav{flex-wrap:wrap;padding-block:.7rem}
  .pilot-links{order:3;width:100%;justify-content:space-between;overflow-x:auto;font-size:.8rem}
  .pilot-pill{font-size:.58rem}
- .pilot-cards,.pilot-day,.pilot-more{grid-template-columns:1fr}
- .pilot-day:nth-child(even) .pilot-day-image{order:initial}
- .pilot-day-image{aspect-ratio:1.4}
+ .pilot-cards,.pilot-more{grid-template-columns:1fr}
  .pilot-contact-grid{flex-direction:column;align-items:start}
  .pilot-footer .container{align-items:start;flex-direction:column}
 }

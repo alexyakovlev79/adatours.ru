@@ -59,12 +59,16 @@ for(const c of cases){
   if(!text.includes(formatPilotPrice(t.price))||!tags(main,'h1').length||!tags(main,'h2').length||
    !tags(main,'table').length||
    !find(main,x=>attr(x,'data-ada-i18n-pricing')==='en').length||
+   !find(main,x=>attr(x,'data-ada-i18n-itinerary')==='en').length||
    !find(main,x=>(attr(x,'class')||'').split(' ').includes('hero')).length||
    !tags(main,'h2').some(x=>textOf(x)==='Included')||
     !find(main,x=>attr(x,'data-ada-i18n-services')==='en').length||
    !text.includes('Not included')||
    !links.some(x=>attr(x,'href')?.startsWith('mailto:adatours@adatours.com?subject=')))
     fail('Tour HTML missing required semantic/price/services/contact elements: '+c.file);
+  const dependencies=find(main,x=>attr(x,'data-pilot-unlocalized-excursions')!==null)[0];
+  if(Number(attr(dependencies,'data-pilot-unlocalized-excursions'))!==t.pendingExcursions)
+   fail('Unaccounted EN Excursion source dependencies '+c.file);
   const days=find(main,x=>attr(x,'data-pilot-day')!==null).map(x=>Number(attr(x,'data-pilot-day')));
   if(JSON.stringify(days)!==JSON.stringify(Array.from({length:t.days},(_,i)=>i+1)))
    fail('Day sequence wrong '+c.file+': '+days.join(','));

@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {PILOT_TOURS,pilotTourUrl,pilotCatalogUrl,privatePilotEnabled,
- escapePilotHtml,renderPilotMarkdown,pilotMediaUrl,formatPilotPrice,assertPilotRenderSource}
+ escapePilotHtml,renderPilotMarkdown,pilotMediaUrl,formatPilotPrice,assertPilotRenderSource,
+ pilotExcursionDependencies}
  from '../../src/lib/i18n/pilot-html.mjs';
 test('private English routes cannot be emitted by normal RU/public EN builds',()=>{
  assert.equal(privatePilotEnabled({}),false);
@@ -40,4 +41,12 @@ test('render source requires exact stable identity, prices and sealed 172-block 
  assert.equal(assertPilotRenderSource(records,summary),true);
  const wrong=structuredClone(records);wrong[0].data.priceFrom=123;
  assert.throws(()=>assertPilotRenderSource(wrong,summary),/not ready/);
+});
+
+test('canonical Excursion dependencies are accounted for without RU fallback',()=>{
+ const x=[{day:1,contentBlocks:[{type:'excursion',excursionRef:'excursion_one'},{type:'text',text:'hi'}]},
+  {excursionRef:'excursion_two'}, {day:2,contentBlocks:[{type:'excursion',excursionRef:'excursion_one'}]}];
+ assert.deepEqual(pilotExcursionDependencies(x),['excursion_one','excursion_two']);
+ assert.throws(()=>pilotExcursionDependencies([{excursionRef:'../outside'}]),/Invalid/);
+ assert.throws(()=>pilotExcursionDependencies(null),/array/);
 });

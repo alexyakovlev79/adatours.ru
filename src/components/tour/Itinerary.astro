@@ -7,6 +7,8 @@ import { imageCaption } from '../../lib/image-captions.mjs';
 import { excursionPath } from '../../lib/routes';
 import InlineMarkdown from '../global/InlineMarkdown.astro';
 import { excursionBlockContent } from '../../lib/excursion-block-content.mjs';
+import { uiText } from '../../lib/i18n/messages.mjs';
+import { privatePilotEnabled } from '../../lib/i18n/pilot-html.mjs';
 
 interface MediaItem {
   src: string;
@@ -37,8 +39,24 @@ interface Day {
     text: string;
   }>;
 }
-interface Props { days: Day[]; }
-const { days } = Astro.props;
+interface Props { days: Day[]; locale?: 'ru' | 'en'; privatePreview?: boolean; sectionId?: string; }
+const { days, locale = 'ru', privatePreview = false, sectionId } = Astro.props;
+const privateEnglish = locale === 'en' && privatePreview;
+if (locale === 'en') {
+  if (!privatePreview || !privatePilotEnabled(process.env) || !Astro.url.pathname.startsWith('/en-pilot-private/')) {
+    throw new Error('English itinerary is restricted to the private pilot until locale dependencies are ready');
+  }
+  // Do not resolve canonical Excursion refs against the still-RU production collection.
+  if (days.some(day => day.excursionRef || day.contentBlocks?.some(block => block.type === 'excursion'))) {
+    throw new Error('English itinerary cannot resolve an untranslated canonical Excursion');
+  }
+  for (const day of days) for (const img of day.images ?? []) {
+    if (!img.alt?.trim() || /[\u0400-\u052F]/u.test(img.alt) ||
+        !img.src.startsWith('https://img.adatours.ru/media/')) {
+      throw new Error('English itinerary requires approved localized image alt and shared CDN media');
+    }
+  }
+}
 
 const pluralRu = (value: number, one: string, few: string, many: string) => {
   const n = Math.abs(value) % 100;
@@ -158,11 +176,11 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 });
 ---
 
-<section class="itinerary section">
+<section class="itinerary section" id={sectionId} data-ada-i18n-itinerary={privateEnglish ? 'en' : undefined}>
   <div class="container itinerary__container">
     <div class="itinerary__heading">
-      <p class="eyebrow">Маршрут</p>
-      <h2>{itineraryDayCount} {itineraryDayLabel} путешествия</h2>
+      <p class="eyebrow">{privateEnglish ? uiText(locale, 'tour.route') : 'Маршрут'}</p>
+      <h2>{privateEnglish ? `${itineraryDayCount} ${itineraryDayCount === 1 ? 'day' : 'days'} of travel` : `${itineraryDayCount} ${itineraryDayLabel} путешествия`}</h2>
     </div>
 
     <div class="itinerary__days">
@@ -172,6 +190,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
         <article
           class:list={['day-card', { 'day-card--image': visibleImage }]}
           data-excursion-ref={day.excursion?.id}
+          data-pilot-day={privateEnglish && typeof day.day === 'number' ? day.day : undefined}
           data-image-text-align={day.excursion?.imageTextAlign}
           data-itinerary-image-count={day.dayImages.length}
         >
@@ -190,7 +209,7 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                     {day.excursion.bodyHtml
                       ? <div class="excursion-embed__body" set:html={day.excursion.bodyHtml} />
                       : <p><InlineMarkdown text={day.excursion.lead} /></p>}
-                    <p><a class="day__excursion-link" href={withBase(day.excursion.href)}>Подробнее об экскурсии</a></p>
+                    <p><a class="day__excursion-link" href={withBase(day.excursion.href)}>{uiText(locale, 'tour.excursionMore')}</a></p>
                   </>
                 ) : day.contentBlocks.length > 0 ? (
                   day.contentBlocks.map((block) => {
@@ -236,8 +255,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
                           <div class="day__embedded-excursion__media">
                             <HeroImage
                               src={withBase(excursion.hero.src)}
-                              alt={imageCaption(excursion.hero.src, excursion.hero).alt}
-                              title={imageCaption(excursion.hero.src, excursion.hero).hover}
+                              alt={privateEnglish ? excursion.hero.alt : imageCaption(excursion.hero.src, excursion.hero).alt}
+                              title={privateEnglish ? excursion.hero.hover : imageCaption(excursion.hero.src, excursion.hero).hover}
                               loading="lazy"
                               data-media-status={excursion.hero.status ?? 'legacy'}
                               data-replacement-reason={excursion.hero.replacementReason}
@@ -269,8 +288,8 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
               {day.dayImages.map((item) => (
                 <HeroImage
                   src={withBase(item.src)}
-                  alt={imageCaption(item.src, item).alt}
-                  title={imageCaption(item.src, item).hover}
+                  alt={privateEnglish ? item.alt : imageCaption(item.src, item).alt}
+                  title={privateEnglish ? item.hover : imageCaption(item.src, item).hover}
                   loading="lazy"
                   data-media-status={item.status ?? 'legacy'}
                   data-replacement-reason={item.replacementReason}

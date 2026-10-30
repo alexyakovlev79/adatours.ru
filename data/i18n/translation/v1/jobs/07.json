@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "shardId": "07",
+  "jobs": [
+    {
+      "jobId": "en:tour:tour_brazil_rio_four_days:p2",
+      "entityId": "tour_brazil_rio_four_days",
+      "entityType": "tour",
+      "locale": "en",
+      "stage": "word_2027",
+      "sourceFingerprint": "d0467a44c44bc756d4c4965e4568c9816e91423b7db9318e284fc91e90a7d779",
+      "source": {
+        "driveFileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+        "wordSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+        "ruSha256": "ff8bd1d6162e1e20ea11dd758fdeaa9389b84c40272391294d5714462cca09bb",
+        "ruContentPath": "src/content/tours/rio-de-janeiro-four-days.md",
+        "ruGitBlobSha": "b2596730f9b029dc398d9704ea483f1511c80eb8"
+      },
+      "blocks": [
+        {
+          "path": "/itinerary/7/title",
+          "field": "itinerary.title",
+          "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+          "mode": "ai_gap",
+          "reason": "Word combines Days 3–4 and has no standalone Day 4 heading"
+        },
+        {
+          "path": "/itinerary/7/text",
+          "field": "itinerary.text",
+          "blockId": "tour:itinerary_text:ec46e3209ab74818",
+          "mode": "word_span",
+          "paragraphs": [
+            {
+              "ref": "word/document.xml#p0090",
+              "textSha256": "d2d3611e3b96ddcfb03ec3d3eb58787914854e2d153595e0b137f6f97efe6218"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import { hasType, types, logicalPath, cleanText, quotationText, SCHEMA_VERSION }
 import { authoritySourceId, getAuthorityPageSources, getAuthorityPartners, getVisibleAuthoritySources, getVisibleAuthorityPartners } from '../src/lib/entity-authority.mjs';
 import { isArchivedPath } from '../src/lib/archive.mjs';
 import { validateDirectAssetLedger } from './lib/direct-media-ledger.mjs';
+import { migratedLegacyAssetExists } from '../src/lib/frozen-legacy-media.mjs';
 const output = 'dist';
 const origin = process.env.SITE_ORIGIN || 'https://adatours.ru';
 const base = `/${(process.env.SITE_BASE || '/').split('/').filter(Boolean).join('/')}`.replace(/\/$/, '');
@@ -40,8 +41,11 @@ function checkLocalUrl(value) {
   assert.ok(['http:', 'https:'].includes(url.protocol), `Non-web URL: ${value}`);
   if (url.origin !== new URL(root).origin) return;
   const path = logicalPath(url.href, root);
-  // Media can exist only in verified S3 and need not have a GitHub Pages file.
-  if (path.startsWith('/media/') && verifiedCloudMedia.has(path)) return;
+  // Already SHA-verified migrated media are in the frozen Git tree even when
+  // sparse checkout omits the binary files. New media require S3 receipts.
+  // Unknown paths must still fail schema validation, not be silently skipped.
+  if (path.startsWith('/media/') && (verifiedCloudMedia.has(path)
+    || migratedLegacyAssetExists(process.cwd(), path))) return;
   // A Schema.org identifier fragment is not necessarily an HTML anchor.
   const target = path.endsWith('/') ? join(output, decodeURIComponent(path.slice(1)), 'index.html') : join(output, decodeURIComponent(path.slice(1)));
   assert.ok(existsSync(target), `Internal target not built: ${value}`);

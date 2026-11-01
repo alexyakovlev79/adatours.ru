@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import {migratedLegacyAssetExists} from '../src/lib/frozen-legacy-media.mjs';
 import yaml from 'js-yaml';
 import { CATALOG_PAGE_SIZE } from '../src/lib/catalog-pagination.ts';
 import { INTERESTS, buildInterestHub, buildInterestIndex, interestTourCatalogPath, countLabel } from '../src/lib/interest-model.mjs';
@@ -90,7 +91,8 @@ for (const {id,slug} of INTERESTS) {
 const enhancements=JSON.parse(readFileSync('src/data/media/photo-enhancements.json','utf8')).enhancements;
 for (const slug of ['wildlife','culture-and-history','cruises-and-expeditions','events-and-festivals']) {
   const image=`/media/themes/${slug}/hero-enhanced-20261005.webp`;
-  assert.ok(existsSync(`public${image}`));
+  assert.ok(existsSync(`public${image}`) || migratedLegacyAssetExists(process.cwd(),image),
+    `${slug}: generated hero exists in frozen media tree or local checkout`);
   assert.ok(index.includes(image),`${slug}: generated image is actually connected to index`);
   assert.ok(at(`/interests/${slug}/`).includes(image));
   assert.equal(enhancements.filter(r=>r.enhanced===image&&r.method==='gpt-image').length,1);

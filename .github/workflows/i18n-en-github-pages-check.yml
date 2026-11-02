@@ -1,7 +1,7 @@
 name: EN GitHub Pages route and deployment preflight (no upload)
 on:
   push:
-    branches: [main]
+    branches: [main, feat/english-site-foundation]
     paths:
       - 'src/pages/en/**'
       - 'src/pages/en-pilot-private/**'
@@ -23,7 +23,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: en-pages-source-check
+  group: en-pages-source-check-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   check:
@@ -41,7 +41,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
           path: website
       - uses: actions/checkout@v4
         with:
@@ -82,11 +82,12 @@ jobs:
           npm install --no-audit --no-fund
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
-          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs
+          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs
           npx astro build
           node scripts/i18n/verify-en-pages-site.mjs dist
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
-          test "$(find ../en-pages-site/en -name index.html | wc -l)" -eq 22
+          node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
+          test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022
       - name: Confirm this source repository did not deploy or overwrite RU Pages
         run: |
           test ! -e en-pages-site/CNAME

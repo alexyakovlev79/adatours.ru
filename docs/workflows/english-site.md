@@ -276,3 +276,22 @@ Full handoff: [25-astro-locale-collection-bridge.md](../plans/english-site/25-as
 Public `main`, forms, EN DNS, mass translation and release gates remain unchanged.
 Next: actual production-style locale awareness in the full shared
 Tour/Country/Destination/Excursion layouts, then EN SEO/search/forms.
+
+
+## Checkpoint 2026-11-02 — shared Tour/Excursion locale geography
+
+The active RU `TourLayout` and `ExcursionLayout`, plus the closed
+EN Tour/Excursion pilot, now use one stable-ID
+`src/lib/i18n/entity-geography-model.mjs` to project main/optional
+countries and destinations. RU keeps its planned place as unlinked
+text and its original URL helpers; EN only links verified translations
+with no Russian fallback. Source-backed Excursion→Destination links
+are checked in HTML. Code [`94598f46`](https://github.com/alexyakovlev79/adatours.ru/commit/94598f461eb8bdec966af9ccc2f137149b43a608)
+(including the test fix and fail-fast syntax preflight).
+[Foundation #41405918364](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41405918364)
+and [private Astro/HTML #41405918629](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41405918629)
+both **success**, artifact `ada-en-private-visual-22-pages` ID `13123776684`.
+Full handoff: [26-shared-geo-model-tour-excursion.md](../plans/english-site/26-shared-geo-model-tour-excursion.md).
+This is not the full production EN `TourLayout` or public release;
+`main`, common Word prices, form endpoint and mass translation were
+not changed by this work.

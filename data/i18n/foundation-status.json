@@ -135,9 +135,9 @@
   "currentPrivatePilot": {
     "asOf": "2026-11-02",
     "kind": "source_bound_native_shell_nonpublic",
-    "codeCommit": "ef19e29cfd23bca20f11516df8511e83192e5bcc",
-    "ciRunId": 41402962545,
-    "foundationCiRunId": 41402962535,
+    "codeCommit": "94598f461eb8bdec966af9ccc2f137149b43a608",
+    "ciRunId": 41405918629,
+    "foundationCiRunId": 41405918364,
     "verified": true,
     "totalHtmlPages": 22,
     "tours": 3,
@@ -148,7 +148,7 @@
     "cataloguePages": 1,
     "newDestinationOverlays": 3,
     "newGalleryCaptionsTranslated": 26,
-    "artifactId": 13121709827,
+    "artifactId": 13123776684,
     "artifactName": "ada-en-private-visual-22-pages",
     "archiveExpiresOn": "2026-11-16",
     "mainChangedByThisCheckpoint": false,
@@ -156,7 +156,8 @@
     "liveLeadFormEnabled": false,
     "independentEditorialReviewComplete": false,
     "sourceBoundAstroCollectionBridge": true,
-    "sourceBoundAstroCollectionBridgeVerified": true
+    "sourceBoundAstroCollectionBridgeVerified": true,
+    "sharedGeoModelConnectedToRUAndPrivateEN": true
   },
   "privateLocaleCollectionBridge": {
     "implementation": "src/lib/i18n/astro-locale-collection.mjs",
@@ -174,5 +175,22 @@
     },
     "publicRuntimeConnected": false,
     "approvedOverlayPublicRelease": false
+  },
+  "privateSharedGeographyModel": {
+    "verified": true,
+    "asOf": "2026-11-02",
+    "source": "src/lib/i18n/entity-geography-model.mjs",
+    "consumers": [
+      "src/layouts/TourLayout.astro",
+      "src/layouts/ExcursionLayout.astro",
+      "src/pages/en-pilot-private/[...path].astro"
+    ],
+    "codeCommit": "94598f461eb8bdec966af9ccc2f137149b43a608",
+    "ciRunId": 41405918629,
+    "foundationCiRunId": 41405918364,
+    "privatePreviewOnlyForEnglish": true,
+    "productionEnglishLayoutComplete": false,
+    "mainChangedByThisCheckpoint": false,
+    "htmlComparisonToPreviousRUArtifact": false
   }
 }

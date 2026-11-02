@@ -26,7 +26,15 @@ test('staging cannot replace Russian Pages or live English host by environment a
   {...valid,SITE_LOCALE:'ru'}
  ]){
   assert.equal(enStagingSiteEnabled(bad),false);
-  assert.throws(()=>resolveAstroBuildContext(bad),/EN readiness gate|RU build cannot use|not enabled|blocked/);
+  if(bad.SITE_LOCALE==='ru'){
+   // The ordinary RU preview URL remains a legitimate, distinct build;
+   // it must never be mistaken for the English staging exception.
+   const context=resolveAstroBuildContext(bad);
+   assert.equal(context.locale,'ru');
+   assert.equal(context.staging,undefined);
+  }else{
+   assert.throws(()=>resolveAstroBuildContext(bad),/EN readiness gate|RU build cannot use|not enabled|blocked/);
+  }
  }
 });
 test('legacy source-bound local pilot remains isolated and EN is not enabled by default',()=>{

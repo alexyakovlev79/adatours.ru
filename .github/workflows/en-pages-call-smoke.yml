@@ -1,0 +1,8 @@
+name: Ada Tours EN cross-repository reusable workflow diagnostic
+on:
+  workflow_call:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Cross-repository reusable workflow launched"

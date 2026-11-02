@@ -140,6 +140,16 @@ export function validateMassResult(job,result){
     Array.isArray(prov.paragraphs)&&prov.paragraphs.length>0&&
     prov.paragraphs.every(p=>typeof p.ref==='string'&&/^[a-f0-9]{64}$/.test(p.textSha256)),
     'Word source/paragraph evidence mismatch');
+  }else if(prov?.kind==='word_aligned'){
+   check(prov.fileId===job.source.selectedWord.fileId&&
+    prov.documentSha256===job.source.selectedWord.sha256&&
+    Array.isArray(prov.paragraphs)&&prov.paragraphs.length>0&&
+    prov.paragraphs.every(p=>typeof p.ref==='string'&&
+     /^[a-f0-9]{64}$/.test(p.textSha256))&&
+    ['strip_list_marker','compose_route_label','condense_route_label',
+     'compose_tariff_summary','contextual_label'].includes(prov.transformation)&&
+    typeof prov.rationale==='string'&&prov.rationale.trim().length>=16,
+    'Word-aligned transformation requires exact passages and explicit rationale');
   }else{
    check(prov?.kind==='ai_translation'&&valid(prov.runId)&&
     typeof prov.model==='string'&&prov.model.length>=3&&

@@ -99,3 +99,18 @@ test('targeted claim selects exactly that verified job, never a neighbor',()=>{
  const missing=massClaim(shard,{stage:'word_2027',ownerId:'worker4',token:'token4',now:at,jobId:'en:bulk:tour:nonexistent:b001'});
  assert.equal(missing.status,'empty_or_busy');
 });
+
+test('Word-derived label keeps exact paragraph evidence without pretending to be word_exact or absent',()=>{
+ const state=source(),job=Object.values(state.packets).flatMap(x=>x.jobs)[0];
+ const block=job.blocks[0];
+ const output={jobId:job.jobId,stableId:job.stableId,locale:'en',status:'review',releaseEligible:false,
+  sourceFingerprint:job.sourceFingerprint,blocks:[{blockId:block.blockId,field:block.field,
+   text:'Guided Rio journey',sourceTextSha256:block.ruTextSha256,
+   provenance:{kind:'word_aligned',fileId:job.source.selectedWord.fileId,
+    documentSha256:job.source.selectedWord.sha256,
+    paragraphs:[{ref:'word/document.xml#p0020',textSha256:sha('Rio')}],
+    transformation:'contextual_label',rationale:'Short visitor label composed from a longer Word passage'}}]};
+ assert.equal(validateMassResult(job,output),true);
+ output.blocks[0].provenance.paragraphs=[];
+ assert.throws(()=>validateMassResult(job,output),/Word-aligned transformation/);
+});

@@ -9,6 +9,7 @@ import {readFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {createHash} from 'node:crypto';
 import {getLocalizedCollection} from './content-adapter.mjs';
+import {planProgressiveEnglishCollection} from './progressive-locale.mjs';
 import {resolveAstroBuildContext} from './build-context.mjs';
 import {enStagingSiteEnabled} from './en-staging-site.mjs';
 import {PILOT_TOURS,privatePilotEnabled,assertPilotRenderSource,pilotExcursionDependencies} from './pilot-html.mjs';
@@ -136,6 +137,19 @@ export async function readPrivatePilotCollections(readRecords,{root=process.cwd(
  * main release gates and requires complete approved block overlays.
  */
 export async function getAstroLocalizedCollection(collection,locale,readRecords,options={}){
+ // Only the noindex dedicated staging host may preview incremental promotion.
+ // The regular closed 22-page pilot and public EN release gate remain unchanged.
+ if(options.progressivePreview===true){
+  if(locale!=='en'||options.privatePreview===true||
+     !enStagingSiteEnabled({...process.env,...options.env}))
+   fail('Progressive collection requires verified nonpublic staging');
+  const plan=await planProgressiveEnglishCollection(collection,readRecords,
+   options.resolveApprovedEnglish,{
+    dependsOnEnglish:options.dependsOnEnglish,
+    readyExternalIds:options.readyExternalIds
+   });
+  return plan.english;
+ }
  kindFor(collection);
  if(typeof readRecords!=='function')throw new TypeError('Astro getCollection reader required');
  if(locale==='ru')return getLocalizedCollection(collection,'ru',readRecords);

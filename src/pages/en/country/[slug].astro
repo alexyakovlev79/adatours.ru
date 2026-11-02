@@ -3,7 +3,7 @@ import CountryPage,{getStaticPaths as sourcePaths} from '../../en-pilot-private/
 import {enStagingSiteEnabled} from '../../../lib/i18n/en-staging-site.mjs';
 export async function getStaticPaths(){
  if(!enStagingSiteEnabled(process.env))return [];
- return sourcePaths();
+ return sourcePaths({allowStaging:true});
 }
 const props=Astro.props;
 ---

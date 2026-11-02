@@ -21,8 +21,8 @@ import {
  pilotExcursionDependencies
 } from '../../lib/i18n/pilot-html.mjs';
 
-export async function getStaticPaths(){
- if(!privatePilotEnabled(process.env))return [];
+export async function getStaticPaths({allowStaging=false}={}){
+ if(!privatePilotEnabled(process.env)||(enStagingSiteEnabled(process.env)&&!allowStaging))return [];
  // Single private locale adapter: verifies all RU source fingerprints,
  // 21 stable EN identities and the sealed Word-first Tour preview.
  const {tours:records,countries,destinations,excursions}=

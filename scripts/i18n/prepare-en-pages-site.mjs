@@ -20,6 +20,16 @@ for(const folder of ['en','_astro','brand']){
  fs.cpSync(read(folder),path.join(output,folder),{recursive:true});
 }
 const ruFallback=stageRussianFallback({dist,output});
+// Site media are offloaded to Yandex S3 in RU production. EN staging must
+// rewrite bundled CSS/JS references without copying binary media into Git.
+const localMedia=EN_STAGING_BASE+'media/',cdnMedia='https://img.adatours.ru/media/';
+for(const asset of fs.readdirSync(path.join(output,'_astro'),{recursive:true,withFileTypes:true})){
+ if(!asset.isFile()||!/\.(?:css|js|mjs)$/.test(asset.name))continue;
+ const file=path.join(asset.parentPath,asset.name),old=fs.readFileSync(file,'utf8');
+ const next=old.replaceAll(localMedia,cdnMedia);
+ if(old!==next)fs.writeFileSync(file,next);
+ if(next.includes(localMedia))fail('Unresolved media asset URL '+file);
+}
 for(const file of ['favicon.svg','favicon.ico','favicon-48x48.png','favicon-32x32.png','favicon-16x16.png','apple-touch-icon.png']){
  if(fs.existsSync(read(file)))fs.copyFileSync(read(file),path.join(output,file));
 }

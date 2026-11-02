@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import {russianFallbackHtml,discoverRussianPages,stageRussianFallback} from '../../scripts/i18n/ru-fallback.mjs';
 
-const source=route=>'<!doctype html><html lang="ru"><head><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="https://adatours.ru'+route+'"><meta property="og:title" content="RU"><script type="application/ld+json">{"@type":"TouristTrip"}</script></head><body><header>Ада Турс</header><a href="/adatours-en/brazil/">Страна</a><a href="/adatours-en/contacts/">Контакты</a><a href="#request">Оставить заявку</a><form action="/live"><input name="phone"></form><script src="https://www.googletagmanager.com/gtag.js"></script><script src="/adatours-en/_astro/menu.js"></script><img src="/adatours-en/media/home/test.webp" alt="Тур"></body></html>';
+const source=route=>'<!doctype html><html lang="ru"><head><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="https://adatours.ru'+route+'"><meta property="og:title" content="RU"><script type="application/ld+json">{"@type":"TouristTrip"}</script></head><body><header>Ада Турс</header><a href="/adatours-en/brazil/">Страна</a><a href="/adatours-en/contacts/">Контакты</a><a href="#request">Оставить заявку</a><form action="/live"><input name="phone"></form><script src="https://www.googletagmanager.com/gtag.js"></script><script src="/adatours-en/_astro/menu.js"></script><img src="/adatours-en/media/home/test.webp" alt="Тур" style="background:url(/adatours-en/media/home/bg.webp)"></body></html>';
 test('EN fallback keeps RU language, noindex and verified links while disabling forms/analytics',()=>{
  const known=new Set(['/','/brazil/','/contacts/']),html=russianFallbackHtml(source('/'), '/', known);
  assert.match(html,/<html lang="ru" data-ada-ru-fallback="true"/);
@@ -14,6 +14,8 @@ test('EN fallback keeps RU language, noindex and verified links while disabling 
  assert.match(html,/\/adatours-en\/en\/brazil\//);
  assert.match(html,/\/adatours-en\/en\/contacts\//);
  assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/test\.webp/);
+ assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/bg\.webp/);
+ assert.doesNotMatch(html,/\/adatours-en\/media\//);
  assert.match(html,/mailto:info@adatours\.ru/);
  assert.match(html,/_astro\/menu\.js/);
  assert.doesNotMatch(html,/rel="canonical"|application\/ld\+json|<form|googletagmanager/);

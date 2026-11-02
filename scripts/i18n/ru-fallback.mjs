@@ -34,6 +34,7 @@ export function russianFallbackHtml(source,route,known){
  if(walk(head,n=>n.tagName==='meta'&&get(n,'http-equiv')?.toLowerCase()==='refresh').length)return null;
  set(root,'data-ada-ru-fallback','true');
  const unwanted=n=>n.tagName==='form'||n.tagName==='iframe'||n.tagName==='noscript'||
+  n.attrs?.some(a=>a.name==='data-search-overlay'||a.name==='data-search-open')||
   (n.tagName==='script'&&!get(n,'src')?.startsWith(EN_STAGING_BASE+'_astro/'))||
   (n.tagName==='link'&&['canonical','alternate'].includes((get(n,'rel')||'').toLowerCase()))||
   (n.tagName==='meta'&&['og:','twitter:'].some(x=>(get(n,'name')||get(n,'property')||'').startsWith(x)))||
@@ -54,7 +55,8 @@ export function russianFallbackHtml(source,route,known){
   const i=rel.search(/[?#]/),pathname=i===-1?rel:rel.slice(0,i),suffix=i===-1?'':rel.slice(i);
   if(suffix==='#request'||suffix==='#lead-form')return 'mailto:info@adatours.ru';
   const target=normal(pathname);
-  return known.has(target)?EN_STAGING_BASE+'en/'+target.slice(1)+suffix:'https://adatours.ru/'+rel;
+  return target==='/tours/'?EN_STAGING_BASE+'en/tours-ru/'+suffix:
+   known.has(target)?EN_STAGING_BASE+'en/'+target.slice(1)+suffix:'https://adatours.ru/'+rel;
  };
  for(const a of walk(doc,n=>n.tagName==='a')){
   const v=get(a,'href');if(v!==null)set(a,'href',linkTo(v));
@@ -68,7 +70,8 @@ export function russianFallbackHtml(source,route,known){
   }
  if(walk(doc,n=>n.tagName==='form'||n.tagName==='iframe'||n.tagName==='script'&&!get(n,'src')?.startsWith(EN_STAGING_BASE+'_astro/')).length)
   fail('Active form or script');
- const out=serialize(doc);
+ // CSS backgrounds and srcsets must resolve to shared S3, not local Pages media.
+ const out=serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
  if(!out.includes('data-ada-ru-fallback')||!out.includes('data-ada-translation-notice')||!out.includes(ROBOTS))fail('Unsafe transformed output');
  return out;
 }
@@ -88,5 +91,19 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
   if(bytes>maxBytes)fail('Fallback HTML exceeds Pages size budget');
  }
  if(added+existing+redirects!==pages.length||added<minPages-300)fail('Incomplete fallback');
- return {ruSourcePages:pages.length,ruFallbackPages:added,englishPrecedence:existing,redirectAliases:redirects,bytes};
+ // The native EN /tours/ contains three translated journeys. A separate
+ // first page keeps the full canonical RU catalogue reachable.
+ let fullCatalogueAlias=0;
+ const sourceTours=pages.find(x=>x.route==='/tours/');
+ if(sourceTours&&fs.existsSync(path.join(target,'en/tours/index.html'))){
+  const alias=path.join(target,'en/tours-ru/index.html');
+  if(fs.existsSync(alias))fail('Full RU Tour catalogue alias already exists');
+  const content=russianFallbackHtml(fs.readFileSync(sourceTours.file,'utf8'),'/tours/',known);
+  if(!content)fail('Invalid full Russian catalogue');
+  fs.mkdirSync(path.dirname(alias),{recursive:true});fs.writeFileSync(alias,content);
+  fullCatalogueAlias=1;bytes+=Buffer.byteLength(content);
+ }
+ if(bytes>maxBytes)fail('Fallback HTML exceeds Pages budget');
+ return {ruSourcePages:pages.length,ruFallbackPages:added+fullCatalogueAlias,
+  englishPrecedence:existing,redirectAliases:redirects,fullCatalogueAlias,bytes};
 }

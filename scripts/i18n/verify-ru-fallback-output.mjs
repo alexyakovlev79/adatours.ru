@@ -14,6 +14,7 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
  else if(e.name==='index.html'){
   const name=path.join(p,e.name),source=fs.readFileSync(name,'utf8');
   if(source.includes('data-ada-ru-fallback')){
+   if(source.includes(EN_STAGING_BASE+'media/'))fail('Unresolved local media '+name);
    count++;const dom=parse(source),html=find(dom,x=>x.tagName==='html')[0];
    const robots=find(dom,x=>x.tagName==='meta'&&attr(x,'name')==='robots');
    if(attr(html,'lang')!=='ru'||attr(html,'data-ada-ru-fallback')!=='true'||
@@ -28,7 +29,7 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
 }};
 visit(path.join(root,'en'));
 if(count<1000)fail('Missing Russian fallback pages: '+count);
-for(const target of ['en/index.html','en/brazil/index.html','en/about/index.html']){
+for(const target of ['en/index.html','en/brazil/index.html','en/about/index.html','en/tours-ru/index.html']){
  const file=path.join(root,target);
  if(!fs.existsSync(file)||!fs.readFileSync(file,'utf8').includes('data-ada-ru-fallback'))
   fail('Missing expected Russian fallback: '+target);

@@ -4,8 +4,14 @@
   "repository": "alexyakovlev79/adatours.ru",
   "driveRootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
-  "lastAttempt": "2026-11-01T00:59:35.418Z",
-  "lastCompleteScanAt": "2026-11-01T00:59:35.418Z",
+  "lastAttempt": {
+    "id": "daily-word-2027-20261102-20261102005609039",
+    "startedAt": "2026-11-02T00:56:09.039Z",
+    "at": "2026-11-02T01:02:02Z",
+    "scanStatus": "complete",
+    "status": "in_progress"
+  },
+  "lastCompleteScanAt": "2026-11-02T01:02:02Z",
   "lastSuccessfulBatchAt": "2026-10-26T11:27:12.655644+00:00",
   "openQueue": [
     {
@@ -2975,6 +2981,33 @@
         }
       ],
       "nextStep": "Continue daily full discovery. Resume exact source-authority reviews when relevant Word/PDF or confirmed Anna resolution changes; preserve all current queue stages and historical completions."
+    },
+    {
+      "id": "daily-word-2027-20261102-20261102005609039",
+      "startedAt": "2026-11-02T00:56:09.039Z",
+      "checkpointAt": "2026-11-02T01:02:02Z",
+      "scanStatus": "complete",
+      "outcome": "processing_new_word",
+      "foldersScanned": 29,
+      "rootChildren": 27,
+      "filesObserved": 222,
+      "uniqueFilesObserved": 222,
+      "wordFilesObserved": 214,
+      "pdfFilesObserved": 8,
+      "newFileIds": [
+        "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp"
+      ],
+      "newWordFileIds": [
+        "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp"
+      ],
+      "confirmedChangedWordFileIds": [],
+      "existingOpenQueueAtStart": 4,
+      "newWordIdentity": "in_progress",
+      "publicationStatus": "not_published",
+      "contentCommit": null,
+      "deployRun": null,
+      "pendingFolderIds": [],
+      "errors": []
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",
@@ -3737,7 +3770,7 @@
     }
   ],
   "latestDriveSnapshot": {
-    "at": "2026-11-01T00:59:35.418Z",
+    "at": "2026-11-02T01:02:02Z",
     "rootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
     "scanStatus": "complete",
     "folders": [
@@ -3870,7 +3903,7 @@
       {
         "folderId": "1oEwwXWchjG4Ttrfht4fEiHB5HNjIE8fv",
         "path": "Argentina 2027",
-        "directChildren": 20,
+        "directChildren": 21,
         "complete": true
       },
       {
@@ -4598,8 +4631,8 @@
         "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
         "folderPath": "Brazil 2027",
         "modifiedTime": "2026-10-23T15:10:04.000Z",
-        "version": "0B8mCj3IF426yREh5Uzc1bFF4cUdsN0dZVjdLQ3ZlTnV2bWpVPQ",
-        "checksum": "009e0349b15e127f23e3dc674d909bfb2125002de57fcf9df2220c25b613e138",
+        "version": null,
+        "checksum": null,
         "classification": "new_word_existing_tour_commercial_conflict",
         "bytes": 10506009,
         "programKey": "P172"
@@ -5610,6 +5643,83 @@
         "bytes": 6417641
       },
       {
+        "driveFileId": "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp",
+        "name": "Best of Argentina 2027 9D8N RUS com 20%.docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "folderId": "1oEwwXWchjG4Ttrfht4fEiHB5HNjIE8fv",
+        "folderPath": "Argentina 2027",
+        "modifiedTime": "2026-11-01T17:16:26.952Z",
+        "version": null,
+        "checksum": null,
+        "bytes": 4950548,
+        "classification": "new_word_identity_check",
+        "sourceEvidence": {
+          "docxSha256": "b40ab4c22a9da26a5b9b34d2a76c63bcf76e430f304c48b92a87f40d2ffe9e63",
+          "textSha256": "0f537e5bba497d9ec7b3884fa43c4176ad313c437076046e787e6867f5a6b52f",
+          "embeddedMediaSha256": "64df56892cd604079fd6311fc9a0f5ef96cde049675a40ea4360caaabbc14b3c",
+          "embeddedMedia": [
+            {
+              "path": "word/media/image1.jpeg",
+              "bytes": 262130,
+              "sha256": "90958583db629a7c35197084094ea656e93821bbedc92389f78fd9e73f6da15c"
+            },
+            {
+              "path": "word/media/image10.jpeg",
+              "bytes": 93729,
+              "sha256": "fba5495e62eeedbae2945982431936d2243f6753f576f7de176fee58e29c787d"
+            },
+            {
+              "path": "word/media/image11.png",
+              "bytes": 37155,
+              "sha256": "c24d3b6008ee1d5e2e2d334b78902ab606bde48a39fd29d7db0d1bf3309c123b"
+            },
+            {
+              "path": "word/media/image2.jpg",
+              "bytes": 37175,
+              "sha256": "1a64b8786ba53aefa52ca7bdebdd355fca461d972f5a7dc2e6eb7b6ddf6f74e3"
+            },
+            {
+              "path": "word/media/image3.jpg",
+              "bytes": 76289,
+              "sha256": "9d5854ee1a760a0ab670915c643cf7d23acca6a81bdcccda984ff9ac6da56681"
+            },
+            {
+              "path": "word/media/image4.jpeg",
+              "bytes": 166275,
+              "sha256": "3682b0fb18dc1b9df71c61c42e27f2dca6d5cd73fd41455c22d40623529bee87"
+            },
+            {
+              "path": "word/media/image5.jpg",
+              "bytes": 31672,
+              "sha256": "02bfee79564efa359599beb06ff1ee3efafbc1d7d21feee748d177663990a685"
+            },
+            {
+              "path": "word/media/image6.jpeg",
+              "bytes": 865104,
+              "sha256": "9663fb21b37e3dfed797a9084205dcfe1b2573788c7cf1f301752cdc3a5dc796"
+            },
+            {
+              "path": "word/media/image7.jpeg",
+              "bytes": 65873,
+              "sha256": "f21eef06493a0fa07785646b6bf079104797e89e2472c02b7d11dc12ba5d964e"
+            },
+            {
+              "path": "word/media/image8.jpg",
+              "bytes": 37521,
+              "sha256": "6456f982ca8ea413138ab7222d201e24cf2d75f9855555c02db7e0729b4135b6"
+            },
+            {
+              "path": "word/media/image9.jpeg",
+              "bytes": 112202,
+              "sha256": "dc62dc808afb25698ec94e502cc86119c67f9628fb420b832ccbbf3a9e67d46a"
+            }
+          ],
+          "textCharacters": 7029,
+          "docxBytes": 4950548,
+          "method": "DOCX ZIP OOXML paragraphs and ordered table cells, word/media sorted per-file SHA256"
+        }
+      },
+      {
         "driveFileId": "1XH94LwW3ziRhm3ueKHR2biMbg97e_PX1",
         "name": "Argentina Bue Calaf Ushu Igu 12D11N 2027 RUS comm20%.docx",
         "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -6358,8 +6468,8 @@
         "folderId": "1GxlRe9_8c04IEcSo_t9t2yNS3kA1bTTf",
         "folderPath": "Carnaval Champions Parade Rio 2027",
         "modifiedTime": "2026-10-23T15:21:59.336Z",
-        "version": "0B6XjLwqoWKp2a0xzdURLWElVdnJDcnRyK01oU3hURURlL21RPQ",
-        "checksum": "bd1cf51c00524d9ece092ac5f570d68bca8460eaab1c94b21ad9c599a3e48fc8",
+        "version": null,
+        "checksum": null,
         "classification": "registered_program_word",
         "bytes": 11024384,
         "programKey": "P150"
@@ -6502,8 +6612,8 @@
         "folderId": "1cJHtQp_qoidGorxxau5I3GToal5nrbje",
         "folderPath": "Carnaval Rio 2027",
         "modifiedTime": "2026-10-23T15:21:59.864Z",
-        "version": "0B6XjLwqoWKp2TVdWNExCL2pOaHBMOEt6eGFCcHc5NGQ5RW9RPQ",
-        "checksum": "e6130ee2ced2c3763960c91ea384606ef84b2b02d657811b56945a72beaf8924",
+        "version": null,
+        "checksum": null,
         "classification": "registered_program_word",
         "bytes": 12134970,
         "programKey": "P160"

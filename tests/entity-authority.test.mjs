@@ -121,7 +121,7 @@ test('incidental press mentions remain distinct from interviews and internal evi
 });
 
 test('implemented authority pages activate the seven saved sources while preserving the evidence decisions',()=>{
-  assert.equal(getAuthorityPageSources('/press/').length,61);
+  assert.equal(getAuthorityPageSources('/press/').length,73);
   assert.equal(getAuthorityPageSources('/webinars/').length,7);
   assert.equal(getAuthorityPageSources('/partners/').length,7);
   assert.equal(getAuthorityPageSources('/unregistered/').length,0);
@@ -135,10 +135,10 @@ test('press lists verified publications and trade-show evidence without turning 
   const page=entity(nodes,root+'press/#webpage');
   const list=entity(nodes,page.mainEntity['@id']);
   assert.ok(hasType(page,'CollectionPage'));
-  assert.equal(list.numberOfItems,61);
+  assert.equal(list.numberOfItems,73);
   assert.deepEqual(list.itemListElement.map((item)=>item.url),getAuthorityPageSources('/press/').map((source)=>source.url));
-  assert.equal(nodes.filter((node)=>hasType(node,'Article')||hasType(node,'NewsArticle')).length,61);
-  assert.equal(page.citation.length,70);
+  assert.equal(nodes.filter((node)=>hasType(node,'Article')||hasType(node,'NewsArticle')).length,73);
+  assert.equal(page.citation.length,82);
   const photoReport=authorityRegistry.sources.find((source)=>source.id==='anna-me-wtm-2024');
   const report=entity(nodes,photoReport.url+'#article');
   assert.ok(report.mentions.some((item)=>item['@id']===annaId));
@@ -164,6 +164,34 @@ test('rankings mention Ada Tours while dedicated contractor cases describe the c
     assert.equal(work.reviewRating,undefined);
   }
   assert.ok(!nodes.some((n)=>n.url==='https://www.sostav.ru/blogs/292167/107553'));
+});
+
+test('public GitHub README links sit next to their studies and enter schema only when visible',()=>{
+  const pageCopy=JSON.parse(readFileSync(new URL('../src/data/authority-pages.json',import.meta.url),'utf8')).press;
+  const sources=getAuthorityPageSources('/press/');
+  const bySourceId=new Map(sources.map((source)=>[source.id,source]));
+  const expectedOrder=[];
+  for(const entry of [...pageCopy.sourceEntries,...pageCopy.rankingEntries,...pageCopy.researchEntries,...pageCopy.caseEntries]) {
+    expectedOrder.push(entry.sourceId,...(entry.relatedLinks||[]).map((link)=>link.sourceId));
+  }
+  assert.deepEqual(sources.map((source)=>source.id),expectedOrder);
+  assert.equal(pageCopy.researchEntries.length,12);
+  for(const entry of pageCopy.researchEntries) {
+    assert.equal(entry.relatedLinks.length,1);
+    const study=bySourceId.get(entry.sourceId);
+    const repository=bySourceId.get(entry.relatedLinks[0].sourceId);
+    assert.ok(repository.url.startsWith('https://github.com/IndexResearch-ru/'));
+    assert.ok(repository.evidenceUrls.includes(study.url));
+    assert.ok(repository.evidenceUrls.includes(repository.url+'/blob/main/README.md'));
+    const hidden=graph('/press/',facts('/press/',sourceLink(study)+`<span hidden>${sourceLink(repository)}</span>`));
+    assert.equal(entity(hidden,repository.url+'#article'),undefined);
+    const nodes=graph('/press/',facts('/press/',sourceLink(study)+sourceLink(repository)));
+    const work=entity(nodes,repository.url+'#article');
+    assert.ok(hasType(work,'Article'));
+    assert.deepEqual(work.mentions,[{'@id':orgId}]);
+    assert.deepEqual(entity(nodes,root+'press/#authority-list').itemListElement.map((item)=>item.url),[study.url,repository.url]);
+    assert.ok(!entity(nodes,orgId).sameAs.includes(repository.url));
+  }
 });
 
 test('webinar collection lists six events and keeps the visible interview as a separate citation',()=>{

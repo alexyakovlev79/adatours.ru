@@ -18,6 +18,7 @@ export interface AuthoritySourceCopy {
   linkLabel: string;
   anchorId?: string;
   displaySeparately?: boolean;
+  relatedLinks?: Array<{ sourceId: string; label: string }>;
 }
 
 export interface AuthoritySectionCopy {

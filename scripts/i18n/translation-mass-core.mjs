@@ -77,13 +77,13 @@ export function massReap(shard,now){
  }
  return {shard:out,restored};
 }
-export function massClaim(shard,{stage,ownerId,token,now}){
+export function massClaim(shard,{stage,ownerId,token,now,jobId=null}){
  check(STAGES.includes(stage)&&valid(ownerId)&&valid(token),'invalid claim');
  const reaped=massReap(shard,now),out=reaped.shard;
  const mine=out.items.find(x=>x.status==='leased'&&x.lease?.ownerId===ownerId);
  if(mine){check(mine.lease.token===token,'owner token conflict');
   return{status:'resumed',shard:out,item:copy(mine),restored:reaped.restored};}
- const item=out.items.find(x=>x.status==='queued'&&x.stage===stage);
+ const item=out.items.find(x=>x.status==='queued'&&x.stage===stage&&(!jobId||x.jobId===jobId));
  if(!item)return{status:'empty_or_busy',shard:out,item:null,restored:reaped.restored};
  item.status='leased';item.generation++;
  item.lease={ownerId,token,claimedAt:now,expiresAt:offset(now,LEASE_MS)};

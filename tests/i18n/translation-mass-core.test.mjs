@@ -88,3 +88,14 @@ test('checkpoint replay, renewal and stage status reconciliation are idempotent'
 test('remote and planner use exactly the same 32-shard keys',()=>{
  for(const j of source().manifest.jobs)assert.equal(massShard(j.jobId),plannerShard(j.jobId));
 });
+
+test('targeted claim selects exactly that verified job, never a neighbor',()=>{
+ const state=source();
+ const shardId=Object.keys(state.shards).find(k=>state.shards[k].items.length);
+ const shard=state.shards[shardId];
+ const target=shard.items[0].jobId;
+ const result=massClaim(shard,{stage:'word_2027',ownerId:'worker3',token:'token3',now:at,jobId:target});
+ assert.equal(result.item.jobId,target);
+ const missing=massClaim(shard,{stage:'word_2027',ownerId:'worker4',token:'token4',now:at,jobId:'en:bulk:tour:nonexistent:b001'});
+ assert.equal(missing.status,'empty_or_busy');
+});

@@ -105,7 +105,7 @@ export async function runEnMassTranslation(tools,core,args={}){
     transition={shard:value.shard,status:'reaped',restored:value.restored};
    }else if(action==='claim'){
     transition=core.massClaim(shard,{ownerId:args.ownerId,token:args.token,
-     now:time,stage:index.stage});
+     now:time,stage:index.stage,jobId:args.jobId||null});
     if(transition.item&&args.jobId&&transition.item.jobId!==args.jobId)
      return{status:'requested_job_not_available',head};
     if(!transition.item){

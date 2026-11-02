@@ -1,0 +1,42 @@
+name: Ada EN — recover bulk translation leases
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: ada-en-bulk-reaper
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/translation-mass-staging
+          sparse-checkout: |
+            /scripts/i18n/translation-mass-core.mjs
+            /scripts/i18n/reap-mass-translation.mjs
+            /data/i18n/translation-mass/v2/index.json
+            /data/i18n/translation-mass/v2/state/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Recover expired owners and due retry packets without touching results
+        shell: bash
+        run: |
+          set -euo pipefail
+          node scripts/i18n/reap-mass-translation.mjs data/i18n/translation-mass/v2 --write
+          git add data/i18n/translation-mass/v2/index.json data/i18n/translation-mass/v2/state/
+          if git diff --cached --quiet; then
+            echo "No eligible expired leases; no commit."
+            exit 0
+          fi
+          git -c user.name='ada-en-reaper' -c user.email='ada-en-reaper@users.noreply.github.com' \
+            commit -m 'i18n: recover expired EN bulk lease / retry [skip ci]'
+          # Non-forced push is intentionally optimistic CAS: a concurrent worker
+          # update wins, and the next scheduler run retries on fresh source.
+          git push origin HEAD:refs/heads/i18n/translation-mass-staging

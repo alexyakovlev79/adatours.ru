@@ -1,0 +1,127 @@
+---
+/** Shared nonpublic EN geography renderer. All links are resolved by stable IDs. */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../editorial/Hero.astro';
+import StoryPair from '../editorial/StoryPair.astro';
+import MediaGallery from '../editorial/MediaGallery.astro';
+import TripStats from '../tour/TripStats.astro';
+import LeadForm from '../forms/LeadForm.astro';
+import {renderPilotMarkdown} from '../../lib/i18n/pilot-html.mjs';
+import {withBase} from '../../lib/paths';
+import {enStagingSiteEnabled} from '../../lib/i18n/en-staging-site.mjs';
+import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
+
+interface Props { record:any; allGeography:any[]; }
+const {record,allGeography}=Astro.props as Props;
+const allowedIds=new Set([
+ 'country_brazil','country_chile','country_colombia',
+ 'destination_brazil_rio','destination_chile_ostrov_pashi',
+ 'destination_colombia_bogota','destination_colombia_kartahena'
+]);
+if(record?.locale!=='en'||!allowedIds.has(record.id)||
+   !Array.isArray(allGeography)||allGeography.length!==7||
+   !allGeography.some(x=>x.id===record.id&&x.url===privateRouteForId(record.id)))
+ throw Error('Unverified nonpublic EN geography identity');
+
+const d=record.data,isCountry=record.kind==='country';
+const countryId=isCountry?record.id:d.countryId;
+const country=allGeography.find(x=>x.kind==='country'&&x.id===countryId);
+if(!country||country.url!==privateRouteForId(countryId))
+ throw Error('English geography lacks the exact canonical country');
+const nearby=allGeography.filter(x=>x.kind==='destination'&&
+ x.data.countryId===countryId&&x.id!==record.id);
+const featuredTourIds:Record<string,string>={
+ country_brazil:'tour_brazil_rio_four_days',
+ country_chile:'tour_chile_easter_island_3_days_2027',
+ country_colombia:'tour_colombia_essential_5_days',
+ destination_brazil_rio:'tour_brazil_rio_four_days',
+ destination_chile_ostrov_pashi:'tour_chile_easter_island_3_days_2027',
+ destination_colombia_bogota:'tour_colombia_essential_5_days',
+ destination_colombia_kartahena:'tour_colombia_essential_5_days'
+};
+const featuredTourTitles:Record<string,string>={
+ tour_brazil_rio_four_days:'Rio de Janeiro in four days',
+ tour_chile_easter_island_3_days_2027:'Easter Island in three days',
+ tour_colombia_essential_5_days:'Colombia in five days'
+};
+const featuredId=featuredTourIds[record.id];
+const featuredTitle=featuredTourTitles[featuredId];
+const featuredHref=privateRouteForId(featuredId);
+const body=renderPilotMarkdown(record.body);
+const isStaging=enStagingSiteEnabled(process.env);
+---
+<BaseLayout privatePreview lang="en" noindex title={d.name+(isStaging?' | Ada Tours':' | Ada Tours Private English Preview')}
+  description={d.summary} showBreadcrumbs={false}>
+  <main id="content">
+    <Hero tour title={d.name} intro={d.summary} image={d.hero.src} imageAlt={d.hero.alt}
+      eyebrow={isCountry?'ADA TOURS · DESTINATION':'ADA TOURS · PLACE'}
+      ctaHref="#geo-details" ctaLabel={'Discover '+d.name} />
+    {!isCountry&&d.facts?.length>0&&<TripStats stats={d.facts.map((x:any)=>({value:x.value,label:x.label}))} />}
+    <section class="private-geo-intro section" id="geo-details" data-pilot-geography={record.id}>
+      <div class="container">
+        <p class="eyebrow">EXPLORE LATIN AMERICA</p>
+        <h2>{isCountry?'The many sides of '+d.name:'Discover '+d.name}</h2>
+        <div class="private-geo-copy" set:html={body}></div>
+      </div>
+    </section>
+    {isCountry&&d.regions?.length>0&&(
+      <section class="private-geo-regions section">
+        <div class="container">
+          <p class="eyebrow">PLACES TO EXPLORE</p>
+          <h2>Regions and experiences</h2>
+          <ul>{d.regions.map((x:string)=><li>{x}</li>)}</ul>
+        </div>
+      </section>
+    )}
+    {d.featureBands?.map((band:any,i:number)=>(
+      <StoryPair eyebrow={band.eyebrow} title={band.title} text={band.text}
+        image={band.image} reverse={i%2===1} />
+    ))}
+    {d.gallery?.length>0&&<MediaGallery items={d.gallery} eyebrow="GALLERY" title={d.name+' in pictures'} locale="en" />}
+    <section class="private-geo-more section">
+      <div class="container">
+        <p class="eyebrow">BUILD YOUR JOURNEY</p>
+        <h2>{isCountry?'Explore '+d.name+' with Ada Tours':'Continue exploring '+country.data.name}</h2>
+        <div class="private-geo-links">
+          {!isCountry&&(
+            <a href={withBase(country.url)}>
+              <strong>Explore {country.data.name}</strong><span aria-hidden="true">↗</span>
+            </a>
+          )}
+          {nearby.map((place:any)=>(
+            <a href={withBase(privateRouteForId(place.id))}>
+              <strong>Discover {place.data.name}</strong><span aria-hidden="true">↗</span>
+            </a>
+          ))}
+          <a href={withBase(featuredHref)}>
+            <strong>{featuredTitle}</strong><span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="private-geo-contact" id="enquiry">
+      <div class="container">
+        <p class="eyebrow">ADA TOURS · HERE FOR YOU</p>
+        <h2>Let us shape your journey.</h2>
+        <p>Online enquiries are not available yet. Contact our team by email to discuss your trip.</p>
+      </div>
+    </section>
+    <LeadForm privatePreview locale="en" title="Tell us about the trip you have in mind" />
+  </main>
+</BaseLayout>
+<style>
+.private-geo-intro{padding-block:clamp(50px,7vw,115px)}
+.private-geo-intro h2,.private-geo-regions h2,.private-geo-more h2,.private-geo-contact h2{font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,4vw,4.3rem);line-height:1.08;letter-spacing:-.025em;max-width:970px;margin:12px 0 24px}
+.private-geo-copy{max-width:850px;font-size:clamp(1rem,1.6vw,1.16rem);line-height:1.8}
+.private-geo-copy :global(p){margin:0 0 1.3em}
+.private-geo-regions{background:var(--color-surface-beige)}
+.private-geo-regions ul{padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:12px}
+.private-geo-regions li{padding:12px 20px;border:1px solid var(--color-line);border-radius:99px;background:var(--color-bg)}
+.private-geo-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.private-geo-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:28px;border:1px solid var(--color-line);background:var(--color-surface-beige);font-family:var(--font-display)}
+.private-geo-links a:hover{border-color:var(--color-gold-deep)}
+.private-geo-contact{padding-block:clamp(56px,8vw,110px);background:var(--color-ink-deep);color:white}
+.private-geo-contact h2{color:inherit}
+.private-geo-contact p{max-width:60ch}
+@media(max-width:680px){.private-geo-links{grid-template-columns:1fr}}
+</style>

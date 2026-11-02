@@ -1,0 +1,2168 @@
+{
+  "schemaVersion": 1,
+  "title": "Ada Tours RU→EN metadata template specification",
+  "createdAt": "2026-10-28",
+  "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+  "status": "prepared_not_integrated_not_published",
+  "usage": "Translation spec: consume English templates through locale-aware shared renderers. Do not paste rendered counts/prices into content. This is not a claim of complete runtime localization.",
+  "placeholderPolicy": {
+    "protectedSquarePlaceholders": "Retain technical placeholders exactly; grammatical RU endings such as [ов]/[ы]/[й] are intentionally replaced by English pluralization, not executable tokens.",
+    "curlyInputs": "Named placeholders in function specifications are semantic arguments; resolve from the same source fields and conditions as RU.",
+    "singularPlural": "Use English count helpers, including 1 tour/2 tours and zero-clause rules.",
+    "years": "Same Europe/Moscow current-year/next-year rule.",
+    "provenance": "Every source is hashed from the pinned commit, independent of working-tree edits."
+  },
+  "globalSeoTemplates": [
+    {
+      "key": "home",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 3
+      },
+      "ru": {
+        "title": "Ada Tours - [число] тур[ов] в Южную Америку в [2026-2027]: Бразилия, Аргентина и еще [22] стран[ы] - купить по лучшей цене тур в Латинскую Америку напрямую у принимающего туроператора",
+        "description": "Выбирайте путешествия по странам, интересам и готовым маршрутам. Индивидуальные и VIP-туры, экскурсии, MICE и DMC по Бразилии и Латинской Америке с русскоговорящим туроператором Ada Tours."
+      },
+      "en": {
+        "title": "Ada Tours - [число] tours to South America in [2026-2027]: Brazil, Argentina and [22] more countries - book a tour to Latin America at the best price directly with a local tour operator",
+        "description": "Choose your trip by country, interest or itinerary. Tailor-made and VIP tours, excursions, MICE and DMC services in Brazil and Latin America with Russian-speaking tour operator Ada Tours."
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[число]",
+          "[2026-2027]",
+          "[22]"
+        ],
+        "description": []
+      },
+      "notes": [
+        "Contains factual Russian-language service qualifier; do not replace with English without verified product-level facts."
+      ],
+      "status": "translated_template_requires_locale_engine"
+    },
+    {
+      "key": "countriesIndex",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 7
+      },
+      "ru": {
+        "title": "[24] стран[ы] Латинской Америки | Путешествия и [число] тур[ов] в Южную Америку по лучшим ценам с Ada Tours в [2026-2027]",
+        "description": "Бразилия, Аргентина, Перу и другие направления Латинской Америки. Страны Южной Америки, города, маршруты и тематические поездки с локальным туроператором Ada Tours на русском языке."
+      },
+      "en": {
+        "title": "[24] countries in Latin America | Travel and [число] tours to South America at the best prices with Ada Tours in [2026-2027]",
+        "description": "Brazil, Argentina, Peru and other destinations in Latin America. Explore South American countries, cities, itineraries and themed trips with local tour operator Ada Tours in Russian."
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[24]",
+          "[число]",
+          "[2026-2027]"
+        ],
+        "description": []
+      },
+      "notes": [
+        "Contains factual Russian-language service qualifier; do not replace with English without verified product-level facts."
+      ],
+      "status": "translated_template_requires_locale_engine"
+    },
+    {
+      "key": "toursIndex",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 11
+      },
+      "ru": {
+        "title": "Каталог [число] тур[ов] [2026-2027] по Бразилии и Южной Америке - заказать и купить тур в Латинскую Америку по лучшей цене напрямую у принимающего туроператора Ada Tours",
+        "description": "Индивидуальные, VIP и multi-country маршруты Ada Tours по Бразилии, Аргентине, Перу и туры по другим странам Южной (Латинской) Америки с принимающим туроператором."
+      },
+      "en": {
+        "title": "Catalogue of [число] tours in [2026-2027] in Brazil and South America - book a tour to Latin America at the best price directly with local tour operator Ada Tours",
+        "description": "Tailor-made, VIP and multi-country itineraries with Ada Tours in Brazil, Argentina, Peru and other countries in South and Latin America, organised by a local tour operator."
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[число]",
+          "[2026-2027]"
+        ],
+        "description": []
+      },
+      "notes": [],
+      "status": "translated_template_requires_locale_engine"
+    },
+    {
+      "key": "placesIndex",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 15
+      },
+      "ru": {
+        "title": "[число] локаци[й] Южной Америки - что посмотреть и куда поехать с Ada Tours в тур по Латинской Америке",
+        "description": "Рио-де-Жанейро, Игуасу, Амазония, Пантанал, Буэнос-Айрес, Патагония, Мендоса, Лима, Куско и Мачу-Пикчу. Выбирайте туры и экскурсии с Ada Tours."
+      },
+      "en": {
+        "title": "[число] places in South America - what to see and where to go on a Latin America tour with Ada Tours",
+        "description": "Rio de Janeiro, Iguazu Falls, the Amazon, the Pantanal, Buenos Aires, Patagonia, Mendoza, Lima, Cusco and Machu Picchu. Choose your tours and excursions with Ada Tours."
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[число]"
+        ],
+        "description": []
+      },
+      "notes": [],
+      "status": "translated_template_requires_locale_engine"
+    },
+    {
+      "key": "excursionsIndex",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 19
+      },
+      "ru": {
+        "title": "[число] экскурсий по Южной Америке на [2026-2027] - купить по лучшей цене в Ada Tours с русскоговорящим гидом",
+        "description": "Экскурсии Ada Tours по городам и природе Латинской Америки: частные и групповые программы [2026-2027] с прямой заявкой принимающему туроператору в Южной Америке."
+      },
+      "en": {
+        "title": "[число] excursions in South America in [2026-2027] - book at the best price with Ada Tours and a Russian-speaking guide",
+        "description": "Ada Tours excursions exploring the cities and nature of Latin America: private and group programmes in [2026-2027], with direct enquiries to your local tour operator in South America."
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[число]",
+          "[2026-2027]"
+        ],
+        "description": [
+          "[2026-2027]"
+        ]
+      },
+      "notes": [
+        "Contains factual Russian-language service qualifier; do not replace with English without verified product-level facts."
+      ],
+      "status": "translated_template_requires_locale_engine"
+    },
+    {
+      "key": "multiCountry",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 23
+      },
+      "ru": {
+        "title": "[число] Multi-country тур[ов] по Латинской Америке — одна поездка по нескольким странам Южной Америки | Ada Tours",
+        "description": "[Количество туров с формой слова] по нескольким странам Латинской Америки: [Список популярных стран]. Готовые маршруты Ada Tours можно адаптировать под даты и длительность Вашего путешествия по Южной Америке."
+      },
+      "en": {
+        "title": "[число] multi-country tours in Latin America - visit several South American countries in one trip | Ada Tours",
+        "description": "[Количество туров с формой слова] across several Latin American countries: [Список популярных стран]. We can adapt Ada Tours itineraries to the dates and length of your trip to South America."
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[число]"
+        ],
+        "description": [
+          "[Количество туров с формой слова]",
+          "[Список популярных стран]"
+        ]
+      },
+      "notes": [],
+      "status": "translated_template_requires_locale_engine"
+    },
+    {
+      "key": "vip",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 27
+      },
+      "ru": {
+        "title": "[число] VIP и Luxury тур[ов] по Южной Америке. Премиальные поездки и путешествия по [24] странам Латинской Америки с Ada Tours по выгодным ценам",
+        "description": "VIP и Luxury путешествия Ada Tours по Латинской Америке: готовые премиальные маршруты по [списку популярных стран], частный формат и персональная адаптация программ туров по странам Южной Америки."
+      },
+      "en": {
+        "title": "[число] VIP and luxury tours in South America. Premium trips across [24] countries in Latin America with Ada Tours at attractive prices",
+        "description": "VIP and luxury travel with Ada Tours in Latin America: premium itineraries in [списку популярных стран], private travel and programmes adapted to you across South America."
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[число]",
+          "[24]"
+        ],
+        "description": [
+          "[списку популярных стран]"
+        ]
+      },
+      "notes": [],
+      "status": "translated_template_requires_locale_engine"
+    },
+    {
+      "key": "country",
+      "source": {
+        "path": "src/lib/seo-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "75c1f435b1844308538ff24f6801963e202fee3f8c0b4987299b502ef157656e",
+        "gitBlobSha": "c97a18727e46fb1c4b6c09dcc70ad6982116bce7",
+        "line": 31
+      },
+      "ru": {
+        "title": "[страна]: [число] локаци[й] и [число] экскурси[й]. Каталог [2026-2027]: [число] тур[ов] и цены туроператора Ada Tours"
+      },
+      "en": {
+        "title": "[страна]: [число] places and [число] excursions. [2026-2027] catalogue: [число] tours and prices from tour operator Ada Tours"
+      },
+      "protectedPlaceholders": {
+        "title": [
+          "[страна]",
+          "[число]",
+          "[число]",
+          "[2026-2027]",
+          "[число]"
+        ]
+      },
+      "notes": [
+        "Legacy SEO.country constant; active CountryLayout uses seoCountryTitle instead."
+      ],
+      "status": "translated_template_requires_locale_engine"
+    }
+  ],
+  "functionTemplates": [
+    {
+      "key": "seoCompactTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 7
+      },
+      "sourceExpression": "export function seoCompactTitle(title) {\n const endings={ь:'я',и:'и',ей:'й',ям:'ям',ями:'ями',ях:'ях',ью:'ей'};\n return title.replace(/достопримечательност(ями|ям|ях|ей|ью|ь|и)(?!\\p{L})/giu, (word,ending)=>\n  (word[0]==='Д'?'Локаци':'локаци')+endings[ending.toLowerCase()]);\n}\n/** Count only the published places in the corresponding country, catalogue or route. */",
+      "sourceFragmentSha256": "473bc088dfdef57da32b18cd4ecde5458228afba268eafd31fc5321b97c8e218",
+      "kind": "transform",
+      "en": [
+        "Return the approved English title unchanged; no Russian morphological replacement."
+      ],
+      "inputs": [
+        "title"
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoAttractionsDescription",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 13
+      },
+      "sourceExpression": "export function seoAttractionsDescription(description,count,context='') {\n const copy=(description||'').trim();\n if(!(count>0))return copy;\n const label=seoCountLabel(count,['достопримечательность','достопримечательности','достопримечательностей']);\n return label+(context?' '+context:'')+'.'+(copy?' '+copy:'');\n}\nconst quantity=(n,type)=>Number(n)>0?seoCountLabel(n,F[type]):'';\nconst year=()=>seoYearRange();\nconst merchant='купить по лучшей цене напрямую у принимающего туроператора';\nconst combine=(items)=>{const list=items.filter(Boolean);return list.length>1?\n list.slice(0,-1).join(', ')+' и '+list.at(-1):(list[0]||'');};",
+      "sourceFragmentSha256": "6d7917c32febbc974cd4e20feeabdc9aa0608b7fc6a78931117709f133c3eb13",
+      "en": [
+        "{attractionCountLabel}{contextSentence}. {description}",
+        "{description}"
+      ],
+      "inputs": [
+        "description",
+        "count",
+        "context"
+      ],
+      "branches": [
+        "count > 0",
+        "count <= 0; return existing description"
+      ],
+      "notes": [
+        "Translate context and choose singular/plural from count; retain the same published-place scope."
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoCountryTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 24
+      },
+      "sourceExpression": "export function seoCountryTitle(name,attractions,excursions,tours) {\n const visible=combine([quantity(attractions,'attraction'),quantity(excursions,'excursion')])||'путешествия';\n const toursText=tours>0?'Каталог '+year()+': '+quantity(tours,'tour')+' и цены':'Путешествия '+year();\n return name+': '+visible+'. '+toursText+' туроператора Ada Tours';\n}",
+      "sourceFragmentSha256": "da3fde7580d2484fef5d73eba3c500f2cad3dc3a1209e84ba2f58df8ad13e22a",
+      "en": [
+        "{name}: {placesAndExcursions}. {years} catalogue: {tourCountLabel} and prices from tour operator Ada Tours",
+        "{name}: {placesAndExcursionsOrTravel}. Travel in {years} with tour operator Ada Tours"
+      ],
+      "inputs": [
+        "name",
+        "attractions",
+        "excursions",
+        "tours"
+      ],
+      "branches": [
+        "tours > 0",
+        "tours == 0"
+      ],
+      "notes": [
+        "Omit zero count clauses as in RU; no literal 0 tours."
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoDestinationTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 29
+      },
+      "sourceExpression": "export function seoDestinationTitle(name,countryId,excursions,tours) {\n const inCountry=seoCountryCase(countryId,'prepositional');\n const visible=combine(['локации',quantity(excursions,'excursion'),quantity(tours,'tour')]);\n const availability=tours===0?' Пока нет туров в это место.':'';\n const catalogue=tours>0?'Каталог '+year()+': цены':'Путешествия '+year();\n return name+(inCountry?' в '+inCountry:'')+': '+visible+'.'+availability+' '+catalogue+' принимающего туроператора Ada Tours';\n}\nfunction priceFrom(price,currency) {\n const n=Number(price);\n if(!Number.isFinite(n)||n<=0||currency!=='USD')return '';\n const formatted=Math.round(n).toLocaleString('ru-RU',{maximumFractionDigits:0});\n return 'от ' + String.fromCharCode(36) + formatted;\n}",
+      "sourceFragmentSha256": "bb09b29a140d1f1629d7b283dea840e63ab09526431efa9b8a54eac8262e0c61",
+      "en": [
+        "{name} in {country}: places to visit, {excursionCountLabel} and {tourCountLabel}. {years} catalogue: prices from local tour operator Ada Tours",
+        "{name} in {country}: places to visit{excursionClause}. We currently have no tours visiting this place. Travel in {years} with local tour operator Ada Tours"
+      ],
+      "inputs": [
+        "name",
+        "countryId",
+        "excursions",
+        "tours"
+      ],
+      "branches": [
+        "tours > 0",
+        "tours == 0"
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoTourTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 42
+      },
+      "sourceExpression": "export function seoTourTitle(d) {\n const compact=seoCompactTitle(d.title);\n // Match the standalone noun anywhere in the object name, including inflected forms.\n const named=/(?:^|[^\\p{L}])тур(?:а|у|ом|е|ы|ов|ам|ами|ах)?(?!\\p{L})/iu.test(compact)\n  ? compact : 'Тур '+compact;\n const price=priceFrom(d.priceFrom,d.currency);\n return named+(price?' по цене '+price:'')+' в '+year()+\n  ' от туроператора с русскоговорящими гидами | Ada Tours';\n}",
+      "sourceFragmentSha256": "0dfc15259c5da3706ec35d688535766faa6f1bdbb5b4a3db5f395dd3adba1841",
+      "en": [
+        "{namedTour}{priceClause} in {years}, from a tour operator with Russian-speaking guides | Ada Tours"
+      ],
+      "inputs": [
+        "d.title",
+        "d.priceFrom",
+        "d.currency"
+      ],
+      "notes": [
+        "Use the exact approved Word title when matched. Prefix Tour only if the standalone word Tour is absent. priceClause is `, priced from {usdAmount}` only when USD > 0. This deliberately retains the factual Russian-speaking guides qualifier from RU. A neutral EN positioning variant may be separately approved; never silently substitute English-speaking guides."
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoExcursionTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 51
+      },
+      "sourceExpression": "export function seoExcursionTitle(d,countryId,destinationId,destinationName,tours) {\n const where=destinationId&&destinationName?seoPlacePhrase(destinationId,destinationName):'';\n const country=seoCountryName(countryId);\n const price=priceFrom(d.priceFrom,d.currency);\n return seoCompactTitle(d.title)+(where?' '+where:'')+(country?', '+country:'')+(price?', цена '+price:'')+\n  (tours===0?'. Пока нет туров с этой экскурсией':'')+' | Ada Tours';\n}\n/** Only active related tours determine availability; page copy remains independent. */",
+      "sourceFragmentSha256": "0a394cfc306b74a43fc8f0c7207b76b1ccae2039506bf621f7e681fd8dbc38f7",
+      "en": [
+        "{title}{inPlace}{countryClause}{priceClause}{noToursClause} | Ada Tours"
+      ],
+      "inputs": [
+        "d.title",
+        "d.priceFrom",
+        "d.currency",
+        "countryId",
+        "destinationId",
+        "destinationName",
+        "tours"
+      ],
+      "subtemplates": {
+        "inPlace": " in {destinationName}",
+        "countryClause": ", {countryName}",
+        "priceClause": ", price from {usdAmount}",
+        "noToursClause": ". We currently have no tours including this excursion"
+      },
+      "notes": [
+        "Omit unavailable geography and non-USD price exactly as the RU function does. noToursClause applies only when tours === 0."
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoRelatedToursDescription",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 59
+      },
+      "sourceExpression": "export function seoRelatedToursDescription(description,tours,kind) {\n if(tours!==0)return description;\n const copy=(description||'').trim();\n const status=kind==='excursion'?'Пока нет туров с этой экскурсией.':'Пока нет туров в это место.';\n return copy?copy+(/[.!?…]$/u.test(copy)?' ':'. ')+status:status;\n}",
+      "sourceFragmentSha256": "cc1e8fb5e4bc12eb28adece8a2be0ffeae3ae587639e982fe23bf5b2080bd382",
+      "en": [
+        "{description} We currently have no tours including this excursion.",
+        "{description} We currently have no tours visiting this place.",
+        "{description}"
+      ],
+      "inputs": [
+        "description",
+        "tours",
+        "kind"
+      ],
+      "branches": [
+        "tours === 0 and kind === excursion",
+        "tours === 0 and other kind",
+        "tours !== 0"
+      ],
+      "notes": [
+        "Preserve punctuation and do not create a leading empty sentence."
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoThemeHubTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 65
+      },
+      "sourceExpression": "export function seoThemeHubTitle(name,tourCount) {\n if(!(tourCount>0))return name+' — впечатления | Ada Tours';\n const endings=['впечатление','впечатления','впечатлений'];\n return name+' — '+quantity(tourCount,'tour')+' и '+endings[seoPluralIndex(tourCount)]+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "910b253855d53782103bed463364003d07bd08466f7503323066a2438362fc18",
+      "en": [
+        "{name} - {tourCountLabel} and experiences | Ada Tours",
+        "{name} - experiences | Ada Tours"
+      ],
+      "inputs": [
+        "name",
+        "tourCount"
+      ],
+      "branches": [
+        "tourCount > 0",
+        "tourCount <= 0"
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoThemeCatalogTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 70
+      },
+      "sourceExpression": "export function seoThemeCatalogTitle(name,count,countryName='') {\n const title=countryName?countryName+', '+name:name;\n return (countryName?title+': ':title+' — ')+(count>0?quantity(count,'tour')+' ':'')+(countryName?'':'на ')+year()+' - '+merchant+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "76774b021a4b5f57f8c1f990e5b82647ed848ac5fbf98c1abb23b8d769c875b9",
+      "en": [
+        "{countryName}, {name}: {tourCountLabel} in {years} - book at the best price directly with a local tour operator | Ada Tours",
+        "{name} - {tourCountLabel} in {years} - book at the best price directly with a local tour operator | Ada Tours"
+      ],
+      "inputs": [
+        "name",
+        "count",
+        "countryName"
+      ],
+      "notes": [
+        "Omit count label when count <= 0. Do not strengthen best price into a guarantee."
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoCountryTourCatalogTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 74
+      },
+      "sourceExpression": "export function seoCountryTourCatalogTitle(countryId) {\n return 'Каталог туров '+year()+' по '+seoCountryCase(countryId,'dative')+' - '+merchant+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "1a30ae1e8b9278b7280eaffbd2f9f8542ef2c757643a437beb71d2a856105bde",
+      "en": [
+        "{years} tour catalogue for {countryName} - book at the best price directly with a local tour operator | Ada Tours"
+      ],
+      "inputs": [
+        "countryId"
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoCountryPlacesCatalogTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 77
+      },
+      "sourceExpression": "export function seoCountryPlacesCatalogTitle(countryId,total) {\n const phrase=quantity(total,'attraction')||'Локации';\n return phrase+' '+seoCountryCase(countryId,'genitive')+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "a6dafc13faaf7f26951d4aa81db6fe789b43c029f55481914d6351c6959d0b8b",
+      "en": [
+        "{placeCountLabel} in {countryName} | Ada Tours",
+        "Places to visit in {countryName} | Ada Tours"
+      ],
+      "inputs": [
+        "countryId",
+        "total"
+      ],
+      "branches": [
+        "total > 0",
+        "total <= 0"
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoCountryExcursionsCatalogTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 81
+      },
+      "sourceExpression": "export function seoCountryExcursionsCatalogTitle(countryId,total) {\n return (quantity(total,'excursion')||'Экскурсии')+' '+seoCountryDirection(countryId)+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "4889637a67dbc4e611b1068faca11a51573ab9b4672e62f2cd93097537c01f01",
+      "en": [
+        "{excursionCountLabel} in {countryName} | Ada Tours",
+        "Excursions in {countryName} | Ada Tours"
+      ],
+      "inputs": [
+        "countryId",
+        "total"
+      ],
+      "branches": [
+        "total > 0",
+        "total <= 0"
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoDestinationTourCatalogTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 84
+      },
+      "sourceExpression": "export function seoDestinationTourCatalogTitle(destination,total,optional=false) {\n const n=quantity(total,'tour')||'Туры';\n const where=optional?seoPlaceDirectionPhrase(destination.id,destination.name):seoPlacePhrase(destination.id,destination.name);\n const country=seoCountryCase(destination.countryId,'prepositional');\n return n+' '+year()+(optional?' с возможностью заехать ':' ')+where+\n  (country?' ('+country+')':'')+' - '+merchant+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "be13146b0b1d6d65ed498785c087bce54dacca3a30105a6785eed61d58aae174",
+      "en": [
+        "{tourCountLabelOrTours} in {years} visiting {destinationName}{countryClause} - book at the best price directly with a local tour operator | Ada Tours",
+        "{tourCountLabelOrTours} in {years} with an optional visit to {destinationName}{countryClause} - book at the best price directly with a local tour operator | Ada Tours"
+      ],
+      "inputs": [
+        "destination.id",
+        "destination.name",
+        "destination.countryId",
+        "total",
+        "optional"
+      ],
+      "branches": [
+        "optional === false",
+        "optional === true"
+      ],
+      "subtemplates": {
+        "countryClause": " ({countryName})"
+      },
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoExcursionTourCatalogTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 91
+      },
+      "sourceExpression": "export function seoExcursionTourCatalogTitle(excursion,total,countryName,destinationName) {\n const n=quantity(total,'tour')||'Туры';\n const inCountry=[destinationName,countryName].filter(Boolean).join(', ');\n return n+' '+year()+' с экскурсией «'+excursion.title+'»'+\n  (inCountry?' ('+inCountry+')':'')+' - '+merchant+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "ac492c7a7abe533af70349736ed4f506e69742689eae75efa7c7c6ef8ccac117",
+      "en": [
+        "{tourCountLabelOrTours} in {years} with the “{excursionTitle}” excursion{geographyClause} - book at the best price directly with a local tour operator | Ada Tours"
+      ],
+      "inputs": [
+        "excursion.title",
+        "total",
+        "countryName",
+        "destinationName"
+      ],
+      "subtemplates": {
+        "geographyClause": " ({destinationName}, {countryName})"
+      },
+      "notes": [
+        "This is a reference relationship, not a statement that the excursion is included in the base tour price. Preserve inclusion/optional facts elsewhere."
+      ],
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoDestinationExcursionsCatalogTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 97
+      },
+      "sourceExpression": "export function seoDestinationExcursionsCatalogTitle(destination,country,total) {\n return (quantity(total,'excursion')||'Экскурсии')+' '+\n  seoPlacePhrase(destination.id,destination.name)+(country?', '+country:'')+\n  ' - '+merchant+' | Ada Tours';\n}",
+      "sourceFragmentSha256": "4458a03445636b48377ae0a4e8872c93955d66731f570283bc99398dd9e1d514",
+      "en": [
+        "{excursionCountLabelOrExcursions} in {destinationName}{countryClause} - book at the best price directly with a local tour operator | Ada Tours"
+      ],
+      "inputs": [
+        "destination.id",
+        "destination.name",
+        "country",
+        "total"
+      ],
+      "subtemplates": {
+        "countryClause": ", {countryName}"
+      },
+      "status": "translated_spec_requires_integration"
+    },
+    {
+      "key": "seoPaginatedTitle",
+      "source": {
+        "path": "src/lib/seo-page.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d383806b292ed1cd935252acdb7dc3b0cc9f08baa525b53f4b7ded767d468c50",
+        "gitBlobSha": "eefd866ea5922aee5893ca123bdb276f3ae9b084",
+        "line": 102
+      },
+      "sourceExpression": "export function seoPaginatedTitle(title,page) {\n if(page<=1)return title;\n if(title.endsWith(' | Ada Tours'))return title.slice(0,-' | Ada Tours'.length)+' — страница '+page+' | Ada Tours';\n return title+' — страница '+page;\n}",
+      "sourceFragmentSha256": "220dd2f37fefa7c89b12d70942d275a6d2caac1a66081af9592ec2486a89d974",
+      "en": [
+        "{titleWithoutBrand} - page {page} | Ada Tours",
+        "{title} - page {page}",
+        "{title}"
+      ],
+      "inputs": [
+        "title",
+        "page"
+      ],
+      "branches": [
+        "page > 1 and brand suffix present",
+        "page > 1 and no brand suffix",
+        "page <= 1"
+      ],
+      "status": "translated_spec_requires_integration"
+    }
+  ],
+  "staticPageMetadata": [
+    {
+      "key": "404.astro",
+      "source": {
+        "path": "src/pages/404.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "aaf3353e248e88cef746f1ca286e11c340deadb3d5c6786a0ab0d9d4830501e8",
+        "gitBlobSha": "e1e48e0d806510085aebccb3ac04d133393ee1ec"
+      },
+      "ru": {
+        "title": "Страница не найдена",
+        "description": "Страница не найдена. Вернитесь на главную Ada Tours или перейдите к направлениям.",
+        "h1": "Маршрут изменился"
+      },
+      "en": {
+        "title": "Page not found",
+        "description": "Page not found. Return to the Ada Tours home page or explore our destinations.",
+        "h1": "The route has changed"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "about/index.astro",
+      "source": {
+        "path": "src/pages/about/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "05c17152c27cd88e7d75db6ae0d091131a1943dc859780e0deb5c2b2061bbfef",
+        "gitBlobSha": "0c2bf3e7874b438fdab2852acf7eefc78d0d19b2"
+      },
+      "ru": {
+        "title": "Ada Tours: DMC в Бразилии и Латинской Америке",
+        "description": "Ada Tours — DMC и принимающий туроператор из Рио-де-Жанейро. Индивидуальные и VIP-путешествия, MICE и multi-country программы по Латинской Америке.",
+        "h1": "Ada Tours: DMC в Бразилии и Латинской Америке"
+      },
+      "en": {
+        "title": "Ada Tours: DMC in Brazil and Latin America",
+        "description": "Ada Tours is a DMC and local tour operator based in Rio de Janeiro. Tailor-made and VIP travel, MICE and multi-country programmes in Latin America.",
+        "h1": "Ada Tours: DMC in Brazil and Latin America"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "cases/index.astro",
+      "source": {
+        "path": "src/pages/cases/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "4ed9e21668251b6b21917e0ad518a16dcd2aa1a173a3b5401cf1e04694e659b7",
+        "gitBlobSha": "8aeb29bc558319200ffd7c9e100b81dd0bf67dae"
+      },
+      "ru": {
+        "title": "Кейсы Ada Tours: группы, делегации и сложные маршруты",
+        "description": "Выполненные поездки Ada Tours: корпоративные группы и делегации в Бразилии, индивидуальный маршрут по Перу и Боливии. Задачи, логистика и работа команды.",
+        "h1": "Кейсы Ada Tours: группы, делегации и сложные маршруты"
+      },
+      "en": {
+        "title": "Ada Tours case studies: groups, delegations and complex itineraries",
+        "description": "Trips organised by Ada Tours: corporate groups and delegations in Brazil, and a tailor-made itinerary in Peru and Bolivia. The brief, logistics and our team’s work.",
+        "h1": "Ada Tours case studies: groups, delegations and complex itineraries"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "contacts/index.astro",
+      "source": {
+        "path": "src/pages/contacts/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "b87336f8f28cce72b211c286dec129df3ecba68fead010f75cfff2e2ab7cf6d8",
+        "gitBlobSha": "6137028b7d3daf6db0a2cd64a947f4d24eb18b07"
+      },
+      "ru": {
+        "title": "Контакты и адреса Ada Tours",
+        "description": "Связаться с Ada Tours: WhatsApp, Telegram, телефон, email и форма заявки.",
+        "h1": "Обсудить поездку"
+      },
+      "en": {
+        "title": "Ada Tours contact details and addresses",
+        "description": "Contact Ada Tours through WhatsApp, Telegram, phone, email or our enquiry form.",
+        "h1": "Let’s plan your trip"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "dmc/index.astro",
+      "source": {
+        "path": "src/pages/dmc/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "ae77a9b97cf88edb1d90efa54443f1395127138c82ce206b55fdcb7a13995633",
+        "gitBlobSha": "ee71190195f80da4efed76794eba732ce53776b6"
+      },
+      "ru": {
+        "title": "DMC в Бразилии и Латинской Америке для туроператоров | Ada Tours",
+        "description": "Принимающий туроператор Ada Tours: индивидуальные поездки, группы и MICE по Латинской Америке. Маршруты, отели, транспорт и работа с клиентами агентств.",
+        "h1": "DMC в Бразилии и Латинской Америке"
+      },
+      "en": {
+        "title": "DMC in Brazil and Latin America for tour operators | Ada Tours",
+        "description": "Local tour operator Ada Tours: tailor-made trips, groups and MICE in Latin America. Itineraries, hotels, transport and support for your agency’s clients.",
+        "h1": "DMC in Brazil and Latin America"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "dmc/terms/index.astro",
+      "source": {
+        "path": "src/pages/dmc/terms/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "7367cec3b0e08d2dce4f83ec4624d8193992f7647ebe195c7168b88f8cd02a12",
+        "gitBlobSha": "4680bf2ca887d28264d63087a065249a3c218072"
+      },
+      "ru": {
+        "title": "Условия работы с Ada Tours: тарифы и бронирование для агентств",
+        "description": "Как работаем с агентствами: нетто и комиссия, разработка программы, подтверждение услуг, оплата, изменения, отмена и контакты на время поездки.",
+        "h1": "Условия работы с Ada Tours для агентств"
+      },
+      "en": {
+        "title": "Working with Ada Tours: rates and bookings for agencies",
+        "description": "How we work with agencies: net and commissionable rates, programme planning, service confirmation, payment, changes, cancellation and contacts during the trip.",
+        "h1": "Working with Ada Tours: terms for agencies"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "dmc/travel-agencies/index.astro",
+      "source": {
+        "path": "src/pages/dmc/travel-agencies/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "a63d72bb3cc627497313a5d329f877f6bad3d33d1fb41d38e66e354ea18019a8",
+        "gitBlobSha": "6268d031689891ec906ce5b8c0aa29d3171562b2"
+      },
+      "ru": {
+        "title": "DMC для турагентств: Бразилия и Латинская Америка | Ada Tours",
+        "description": "Поездки для клиентов вашего агентства с Ada Tours: нетто или комиссия, документы под ваш бренд, маршруты по Латинской Америке и координация на месте.",
+        "h1": "DMC для турагентств и туроператоров"
+      },
+      "en": {
+        "title": "DMC for travel agencies: Brazil and Latin America | Ada Tours",
+        "description": "Travel for your agency’s clients with Ada Tours: net or commissionable rates, documents with your branding, itineraries in Latin America and coordination on the ground.",
+        "h1": "DMC for travel agencies and tour operators"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "interests/index.astro",
+      "source": {
+        "path": "src/pages/interests/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "dddcb3ce441c16fd355c778732b818b07f1993bac79fc248aa5568cbbefdd990",
+        "gitBlobSha": "93068f1264e1748713af01d5e5d16d3db6ade346"
+      },
+      "ru": {
+        "title": "Тематические туры по интересам в Бразилию и Латинскую Америку | Ada Tours",
+        "h1": "Начните с того, ради чего едете",
+        "description": "${themes.length} тематических интересов: природа, животные и сафари, культура и история, круизы и экспедиции, события и праздники, приключения, пляжи, гастрономия, рыбалка, дайвинг, мото-туры, поездки с детьми, SPA, романтика и кофейные туры по Латинской Америке."
+      },
+      "en": {
+        "title": "Tours by interest in Brazil and Latin America | Ada Tours",
+        "description": "{themes.length} travel interests: nature, wildlife and safaris, culture and history, cruises and expeditions, events and festivals, adventure, beaches, gastronomy, fishing, diving, motorcycle tours, family travel, spa, romance and coffee tours in Latin America.",
+        "h1": "Start with what brings you here"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "mice/business-delegations/index.astro",
+      "source": {
+        "path": "src/pages/mice/business-delegations/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "c1d181f01ff8cc1c2368215134f0de736eb49dda4127eccfad21bd3296275981",
+        "gitBlobSha": "a1d4fb302f3218fcbb6c3da35752d9b9b3f936d6"
+      },
+      "ru": {
+        "title": "Деловые делегации в Бразилию и Латинскую Америку | Ada Tours",
+        "description": "Деловые поездки с Ada Tours: профессиональные визиты, переводчики, транспорт и размещение под график встреч. Кейс делегации из 8 участников и подготовка программы.",
+        "h1": "Деловые делегации в Бразилию и Латинскую Америку"
+      },
+      "en": {
+        "title": "Business delegations to Brazil and Latin America | Ada Tours",
+        "description": "Business travel with Ada Tours: professional visits, interpreters, transport and accommodation around your meeting schedule. A case study of an 8-person delegation and programme planning.",
+        "h1": "Business delegations to Brazil and Latin America"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "mice/index.astro",
+      "source": {
+        "path": "src/pages/mice/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "85719ce0a17b47bd2562d30c224f06c87058a09d2a6b21d964ed96d94b4ad2fc",
+        "gitBlobSha": "090e909ec6fab9a46618984a2c19ad2491a0b254"
+      },
+      "ru": {
+        "title": "MICE в Бразилии и Латинской Америке | Ada Tours",
+        "description": "Корпоративные поездки, incentive и деловые группы с Ada Tours: размещение, транспорт, переводчики и программа на месте. Выполненные кейсы и расчет под вашу задачу.",
+        "h1": "MICE и корпоративные поездки в Латинской Америке"
+      },
+      "en": {
+        "title": "MICE in Brazil and Latin America | Ada Tours",
+        "description": "Corporate trips, incentives and business groups with Ada Tours: accommodation, transport, interpreters and programmes on the ground. Explore our case studies and request a quote for your project.",
+        "h1": "MICE and corporate travel in Latin America"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "mice/programmes/index.astro",
+      "source": {
+        "path": "src/pages/mice/programmes/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "74fc514dc819ee5605bf908327a79795fb8a81a181d530a557657ae5889de3e5",
+        "gitBlobSha": "14d276c93ec77d71cd4e47834e9a1b54a3bef1f7"
+      },
+      "ru": {
+        "title": "MICE и B2B-программы по Латинской Америке | Ada Tours",
+        "description": "Программы для корпоративных групп и делегаций: Панама, Бразилия, Аргентина, Игуасу и Коста-Верде. Маршруты по дням и примеры для расчета поездки с Ada Tours.",
+        "h1": "MICE и B2B-программы для вашей команды"
+      },
+      "en": {
+        "title": "MICE and B2B programmes in Latin America | Ada Tours",
+        "description": "Programmes for corporate groups and delegations: Panama, Brazil, Argentina, Iguazu Falls and Costa Verde. Day-by-day itineraries and examples to help plan your trip with Ada Tours.",
+        "h1": "MICE and B2B programmes for your team"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "personal-data/index.astro",
+      "source": {
+        "path": "src/pages/personal-data/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "309820dbdef0bd90fff053941a091fb928b448900353241037dfbb2dde470e9a",
+        "gitBlobSha": "d97b8d27613d92b6b0cddc690df998581adc04fc"
+      },
+      "ru": {
+        "title": "Обработка персональных данных",
+        "h1": "Обработка персональных данных"
+      },
+      "en": {
+        "title": "Personal data processing",
+        "description": null,
+        "h1": "Personal data processing"
+      },
+      "notes": [
+        "No dedicated RU description: inherits SITE.defaultDescription. EN null means inherit the EN SITE default for strict parity; a purpose-written legal description is a separate improvement."
+      ],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "privacy/index.astro",
+      "source": {
+        "path": "src/pages/privacy/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "8f392a6ae110c16a5b8524a9c26e7ffba611d309f66ec2a974d86474da7c8c9c",
+        "gitBlobSha": "eafe03098196c7402a001259e1ec8203275bfcbb"
+      },
+      "ru": {
+        "title": "Политика конфиденциальности",
+        "h1": "Политика конфиденциальности"
+      },
+      "en": {
+        "title": "Privacy policy",
+        "description": null,
+        "h1": "Privacy policy"
+      },
+      "notes": [
+        "No dedicated RU description: inherits SITE.defaultDescription. EN null means inherit the EN SITE default for strict parity; a purpose-written legal description is a separate improvement."
+      ],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "reviews/index.astro",
+      "source": {
+        "path": "src/pages/reviews/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "3eae8677212ff7c2e04e3aab7004eb7c254c51ba4ab517dea6a96d55a18164fa",
+        "gitBlobSha": "9ce4bb05561669ddec579f4fdb207ddfbf7e748e"
+      },
+      "ru": {
+        "title": "Отзывы об Ada Tours: туристы, агентства и партнеры",
+        "description": "Отзывы туристов, турагентств и партнеров о работе Ada Tours: поездки по Бразилии и Латинской Америке, группы, VIP и multi-country маршруты.",
+        "h1": "Отзывы об Ada Tours"
+      },
+      "en": {
+        "title": "Ada Tours reviews from travellers, agencies and partners",
+        "description": "Travellers, travel agencies and partners share their experience with Ada Tours: trips in Brazil and Latin America, groups, VIP and multi-country itineraries.",
+        "h1": "Ada Tours reviews"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "team/index.astro",
+      "source": {
+        "path": "src/pages/team/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "0215a2fac329ac35feec7183f2054b78a94368921a0f73065d6d79c106271573",
+        "gitBlobSha": "bc54bc019a4839b4dfd9a4342f126d9d082d9cfd"
+      },
+      "ru": {
+        "title": "Команда Ada Tours в Бразилии и Латинской Америке",
+        "description": "Анна Аванесова и команда Ada Tours в Рио-де-Жанейро: менеджеры и координаторы путешествий по Бразилии, Латинской Америке и Карибам.",
+        "h1": "Команда Ada Tours в Бразилии и Латинской Америке"
+      },
+      "en": {
+        "title": "The Ada Tours team in Brazil and Latin America",
+        "description": "Anna Avanesova and the Ada Tours team in Rio de Janeiro: travel managers and coordinators for Brazil, Latin America and the Caribbean.",
+        "h1": "The Ada Tours team in Brazil and Latin America"
+      },
+      "notes": [],
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "press",
+      "source": {
+        "path": "src/data/authority-pages.json",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "7db2b668640507594cb8a3c99cb0eeb05c40720f1fd8af1c009d19ed0ddec037",
+        "gitBlobSha": "358570e463fca0d8c4fea5f9c89b26f157613af1",
+        "jsonPath": "press"
+      },
+      "ru": {
+        "title": "Ada Tours в СМИ: интервью, публикации и международные выставки",
+        "description": "Ada Tours и Анна Аванесова в туристических изданиях: интервью, репортажи с ILTM, ITB и WTM, партнерства и поездки по Бразилии и Латинской Америке.",
+        "h1": "Ada Tours в СМИ и на международных выставках"
+      },
+      "en": {
+        "title": "Ada Tours in the media: interviews, features and international trade shows",
+        "description": "Ada Tours and Anna Avanesova in travel publications: interviews, reports from ILTM, ITB and WTM, partnerships and travel in Brazil and Latin America.",
+        "h1": "Ada Tours in the media and at international trade shows"
+      },
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "webinars",
+      "source": {
+        "path": "src/data/authority-pages.json",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "7db2b668640507594cb8a3c99cb0eeb05c40720f1fd8af1c009d19ed0ddec037",
+        "gitBlobSha": "358570e463fca0d8c4fea5f9c89b26f157613af1",
+        "jsonPath": "webinars"
+      },
+      "ru": {
+        "title": "Вебинары Анны Аванесовой о Латинской Америке | Ada Tours",
+        "description": "Вебинары Ada Tours для турагентов и путешественников: Бразилия, маршруты по нескольким странам, индивидуальные поездки и интервью Анны Аванесовой.",
+        "h1": "Вебинары Анны Аванесовой о Латинской Америке"
+      },
+      "en": {
+        "title": "Anna Avanesova’s webinars on Latin America | Ada Tours",
+        "description": "Ada Tours webinars for travel agents and travellers: Brazil, multi-country itineraries, tailor-made trips and interviews with Anna Avanesova.",
+        "h1": "Anna Avanesova’s webinars on Latin America"
+      },
+      "status": "translated_copy_not_integrated"
+    },
+    {
+      "key": "partners",
+      "source": {
+        "path": "src/data/authority-pages.json",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "7db2b668640507594cb8a3c99cb0eeb05c40720f1fd8af1c009d19ed0ddec037",
+        "gitBlobSha": "358570e463fca0d8c4fea5f9c89b26f157613af1",
+        "jsonPath": "partners"
+      },
+      "ru": {
+        "title": "Международные партнеры и представители Ada Tours",
+        "description": "Партнеры Ada Tours: JAN Tourism Consultancy, REPS Unlimited и Global Destinations. Представительство на зарубежных рынках и членство в ABAV-RJ.",
+        "h1": "Международные партнеры Ada Tours"
+      },
+      "en": {
+        "title": "Ada Tours’ international partners and representatives",
+        "description": "Ada Tours partners: JAN Tourism Consultancy, REPS Unlimited and Global Destinations. Representation in international markets and membership of ABAV-RJ.",
+        "h1": "Ada Tours’ international partners"
+      },
+      "status": "translated_copy_not_integrated"
+    }
+  ],
+  "additionalTemplates": [
+    {
+      "key": "SITE.defaults",
+      "source": {
+        "path": "src/lib/site.ts",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "40ed21db7f6b7e191c508391a29902f40c100ed0a9191132975735e5ef47a38d",
+        "gitBlobSha": "2f04b24d6324b14cb5f9df9983e1fa9fd5cd1a38"
+      },
+      "ru": {
+        "title": "Ada Tours — путешествия по Бразилии и Латинской Америке",
+        "description": "Ada Tours — принимающий туроператор и DMC по Бразилии и Латинской Америке: индивидуальные путешествия, VIP, MICE и программы для турагентств."
+      },
+      "en": {
+        "title": "Ada Tours - travel in Brazil and Latin America",
+        "description": "Ada Tours is a local tour operator and DMC in Brazil and Latin America, offering tailor-made travel, VIP trips, MICE and programmes for travel agencies."
+      }
+    },
+    {
+      "key": "team.person",
+      "source": {
+        "path": "src/pages/team/[slug].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "189c5ba4e20e2fa0af60150b4c77e4c4954dd8bb8cf76de004724cfc809be5a0",
+        "gitBlobSha": "420cd53f01687491c5f5e103ba0c943948e20db1"
+      },
+      "en": {
+        "title": "{name}: {role}",
+        "description": "{name}, {role}. Expertise: {expertiseList}.",
+        "h1": "{name}"
+      },
+      "inputs": [
+        "entry.data.name",
+        "entry.data.role",
+        "entry.data.expertise"
+      ]
+    },
+    {
+      "key": "team.anna",
+      "source": {
+        "path": "src/pages/team/[slug].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "189c5ba4e20e2fa0af60150b4c77e4c4954dd8bb8cf76de004724cfc809be5a0",
+        "gitBlobSha": "420cd53f01687491c5f5e103ba0c943948e20db1"
+      },
+      "en": {
+        "title": "Anna Avanesova: Founder and CEO of Ada Tours",
+        "description": "Anna Avanesova, Founder and CEO of Ada Tours. Tailor-made itineraries in Brazil and Latin America, VIP, MICE and multi-country programmes.",
+        "h1": "Anna Avanesova"
+      }
+    },
+    {
+      "key": "case.detail",
+      "source": {
+        "path": "src/layouts/CaseLayout.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "4b00bd7bf293b90d1fbb45bf60e9469180f3728442587a2d8fc98ada326af504",
+        "gitBlobSha": "b1d6ebc3aa3d869580b7a34d70c9ebc4f63a7427"
+      },
+      "en": {
+        "title": "{entry.data.title}",
+        "description": "{entry.data.summary}",
+        "descriptionFallback": "{entry.data.title}. An Ada Tours case study: the brief, logistics, work completed and results.",
+        "h1": "{entry.data.title}"
+      },
+      "notes": [
+        "Values are translated content fields, not a second static SEO corpus. descriptionFallback applies only when summary is null/undefined, matching the RU nullish operator."
+      ]
+    },
+    {
+      "key": "catalog.global.presentation",
+      "source": {
+        "path": "src/layouts/EntityCatalogLayout.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "e4d16d4b4124193a7712d880a400b8eed1f5ee3d99d29cc7330a241ab5c7068f",
+        "gitBlobSha": "283c166454dc1e0dbc6380b579d2348fe17d0849"
+      },
+      "en": {
+        "toursH1": "Travel in Latin America",
+        "placesH1": "Places worth travelling to Latin America for",
+        "excursionsH1": "Excursions in Latin America",
+        "multiCountryH1": "Multi-country tours in Latin America",
+        "vipH1": "VIP and luxury tours in Latin America"
+      }
+    },
+    {
+      "key": "home.h1",
+      "source": {
+        "path": "src/pages/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "974354f6032ae2955f43f0c5e5688fec66cca4125f9075f2f361b43ca20925ca",
+        "gitBlobSha": "d5997cdcea630dedd8844d38b8df3bb3d38a8916"
+      },
+      "ru": "Латинская Америка. Ваша история путешествия",
+      "en": "Latin America. Your travel story"
+    },
+    {
+      "key": "countries.h1",
+      "source": {
+        "path": "src/pages/country/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "7918749326ef81193af5d3f91057d27dd55003a2665b05a1f0d87a9e088ee352",
+        "gitBlobSha": "6d5b54f8e7638609c87921943957f27cdb6e1318"
+      },
+      "ru": "Латинская Америка на ваших условиях",
+      "en": "Latin America, on your terms"
+    },
+    {
+      "key": "vip.h1",
+      "source": {
+        "path": "src/pages/vip/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "c4e6fa92d785959228d972092bc717ecfabe514f70e02e0038c494f15d5f0a27",
+        "gitBlobSha": "a861dff3d506374e5caa7335a8bcfb86c965f747"
+      },
+      "ru": "Путешествие, устроенное вокруг вас",
+      "en": "A journey planned around you"
+    },
+    {
+      "key": "multiCountry.h1",
+      "source": {
+        "path": "src/pages/multi-country/index.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "8a94cf3ff4bc7b268d1909c714328fccab88a52e2727058bc115a49a9cc633a9",
+        "gitBlobSha": "a06036b285d55eb4cb8c2b1e8a2a8b6f69eef4ed"
+      },
+      "ru": "Туры по нескольким странам Латинской Америки",
+      "en": "Tours across several countries in Latin America"
+    },
+    {
+      "key": "catalog.pagination",
+      "source": {
+        "path": "src/layouts/EntityCatalogLayout.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "e4d16d4b4124193a7712d880a400b8eed1f5ee3d99d29cc7330a241ab5c7068f",
+        "gitBlobSha": "283c166454dc1e0dbc6380b579d2348fe17d0849"
+      },
+      "inputs": [
+        "title",
+        "description",
+        "p.currentPage",
+        "p.totalPages",
+        "p.from",
+        "p.to",
+        "p.totalItems",
+        "kind",
+        "multiCountryCountryText",
+        "vipCountryText"
+      ],
+      "en": {
+        "title": "{title} - page {currentPage} of {totalPages}",
+        "description": "{description} Page {currentPage} of {totalPages}, {entityPlural} {from}–{to} of {totalItems}.",
+        "multiCountryDescription": "Ada Tours multi-country tours - page {currentPage} of {totalPages}. Itineraries {from}–{to} of {totalItems}; countries on this page: {countries}.",
+        "vipDescription": "Ada Tours VIP and luxury tours - page {currentPage} of {totalPages}. Itineraries {from}–{to} of {totalItems}; countries on this page: {countries}. Private travel and a programme adapted to you.",
+        "h1Suffix": " - page {currentPage}"
+      }
+    },
+    {
+      "key": "multiCountry.selection",
+      "source": {
+        "path": "src/lib/multi-country-seo.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "1a5811a7a00e1fe74b2a4d391bdc332fad29329c992d6237b6e603dd1300bd2b",
+        "gitBlobSha": "ee7f9e15868c1057b1cf2ddf48d092bca7ff7b88"
+      },
+      "inputs": [
+        "countries",
+        "tours",
+        "destinations",
+        "theme",
+        "date"
+      ],
+      "en": {
+        "title": "{countryNamesOrMultiCountryTours}{themeClause}: {years} catalogue: {tourCountLabel}{priceClause} from tour operator Ada Tours",
+        "description": "{priceSentence}{attractionsSentence}{placesSentence}{routeCountLabel} visiting the selected countries. Individual trips may also include other countries. We can adapt the dates and hotels.",
+        "themePrefix": "{themeName}. {tourFilterIntro} ",
+        "priceSentence": "Tour prices: from {usdAmount}. ",
+        "priceClause": " and prices from {usdAmount}",
+        "attractionsSentence": "Places to visit in {countryNames}. ",
+        "placesSentence": "You will visit {placeNames}. "
+      },
+      "notes": [
+        "English from exact live route places, not inferred geography. Source currently uses “В программах”; target uses direct voice. Preserve all input selection and mixed-currency conditions."
+      ]
+    },
+    {
+      "key": "social.imageAlt",
+      "source": {
+        "path": "scripts/build-social-previews.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "68ca16771c0383ea2b7ae249f3c500bea444196f2c2ea389e92060f5512c4137",
+        "gitBlobSha": "65577cea715cc63990cf397e26a6f827edfb172e"
+      },
+      "ru": "Ada Tours — изображение страницы",
+      "en": "Ada Tours - page image"
+    },
+    {
+      "key": "destination.description",
+      "source": {
+        "path": "src/layouts/DestinationLayout.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "21d3e6e349a050728e2c106c5defbd752324e94cab8304b187a6e8f4ca7a185b",
+        "gitBlobSha": "640d87a5396749d1032419d525aa979479f7a05f"
+      },
+      "ru": "Достопримечательности и экскурсии: ${d.name}. ${d.summary}",
+      "en": "Places to visit and excursions: {name}. {summary}",
+      "inputs": [
+        "d.name",
+        "d.summary",
+        "allRelatedTourEntries.length"
+      ],
+      "notes": [
+        "Then apply seoRelatedToursDescription, including the zero-tour branch."
+      ]
+    },
+    {
+      "key": "tour.description",
+      "source": {
+        "path": "src/layouts/TourLayout.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "f9991132fdaed131e91c09ba35f4c67facdfcbf1e2b066797282765c7029cebe",
+        "gitBlobSha": "e31600ad6f77cf70836ecf0931086cb992ea805d"
+      },
+      "en": {
+        "default": "{lead}",
+        "attractions": "{publishedMainPlaceCountLabel} on the itinerary. {lead}"
+      },
+      "inputs": [
+        "d.title",
+        "d.lead",
+        "mainPlaces with href"
+      ],
+      "notes": [
+        "Current RU chooses attractions prefix only when /достопримечательност/ matches d.title. Preserve this semantic condition via a shared flag/source-derived semantic key; do not let translating the title silently disable it. Not every active tour receives this prefix."
+      ]
+    },
+    {
+      "key": "catchAll.destinationTours",
+      "source": {
+        "path": "src/pages/[...path].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "80d6511a309b4a89cb6cf77a1d9e93963520fa43ebb526b6b906b2f839baa9eb",
+        "gitBlobSha": "cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3"
+      },
+      "ru": "Туры Ada Tours, в основной маршрут которых входит ${entry.data.name}.",
+      "en": "Ada Tours itineraries with {destinationName} on the main route.",
+      "inputs": [
+        "entry.data.name"
+      ]
+    },
+    {
+      "key": "catchAll.optionalDestinationTours",
+      "source": {
+        "path": "src/pages/[...path].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "80d6511a309b4a89cb6cf77a1d9e93963520fa43ebb526b6b906b2f839baa9eb",
+        "gitBlobSha": "cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3"
+      },
+      "ru": "Маршруты Ada Tours, к которым можно добавить посещение места: ${entry.data.name}.",
+      "en": "Ada Tours itineraries to which you can add a visit to {destinationName}.",
+      "inputs": [
+        "entry.data.name"
+      ]
+    },
+    {
+      "key": "catchAll.excursionTours",
+      "source": {
+        "path": "src/pages/[...path].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "80d6511a309b4a89cb6cf77a1d9e93963520fa43ebb526b6b906b2f839baa9eb",
+        "gitBlobSha": "cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3"
+      },
+      "ru": "Все маршруты Ada Tours, в которых есть экскурсия «${entry.data.title}».",
+      "en": "All Ada Tours itineraries featuring the “{excursionTitle}” excursion.",
+      "inputs": [
+        "entry.data.title"
+      ]
+    },
+    {
+      "key": "catchAll.countryPlaces",
+      "source": {
+        "path": "src/pages/[...path].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "80d6511a309b4a89cb6cf77a1d9e93963520fa43ebb526b6b906b2f839baa9eb",
+        "gitBlobSha": "cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3"
+      },
+      "ru": "Города, регионы и природные места страны: ${country.name}.",
+      "en": "Cities, regions and natural places in {countryName}.",
+      "inputs": [
+        "country.name",
+        "places.length"
+      ],
+      "notes": [
+        "Apply seoAttractionsDescription with translated country context and published place count."
+      ]
+    },
+    {
+      "key": "catchAll.countryExcursions",
+      "source": {
+        "path": "src/pages/[...path].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "80d6511a309b4a89cb6cf77a1d9e93963520fa43ebb526b6b906b2f839baa9eb",
+        "gitBlobSha": "cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3"
+      },
+      "ru": "Экскурсии Ada Tours по стране: ${country.name}.",
+      "en": "Ada Tours excursions in {countryName}.",
+      "inputs": [
+        "country.name"
+      ]
+    },
+    {
+      "key": "catchAll.destinationExcursions",
+      "source": {
+        "path": "src/pages/[...path].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "80d6511a309b4a89cb6cf77a1d9e93963520fa43ebb526b6b906b2f839baa9eb",
+        "gitBlobSha": "cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3"
+      },
+      "ru": "Экскурсии Ada Tours: ${destination.name}, ${country.name}.",
+      "en": "Ada Tours excursions: {destinationName}, {countryName}.",
+      "inputs": [
+        "destination.name",
+        "country.name"
+      ]
+    },
+    {
+      "key": "catchAll.vipPaginationBase",
+      "source": {
+        "path": "src/pages/[...path].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "80d6511a309b4a89cb6cf77a1d9e93963520fa43ebb526b6b906b2f839baa9eb",
+        "gitBlobSha": "cc54ebd925ec20f1b3dae2bf207d1fb0c8535ab3"
+      },
+      "en": {
+        "title": "VIP and luxury tours in Latin America",
+        "description": "VIP and luxury itineraries with Ada Tours in Brazil and Latin America, with private travel and a programme adapted to you."
+      },
+      "notes": [
+        "EntityCatalogLayout subsequently generates pagination title/description from this base; preserve actual final metadata pipeline."
+      ]
+    },
+    {
+      "key": "multiCountry.paginationBase",
+      "source": {
+        "path": "src/pages/multi-country/page/[page].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "65713be2c53a2a0fd82c689443531e7a584088026a14d1a5d290dfd02d5bedee",
+        "gitBlobSha": "31303a24cc7d03a70a2fe652960d3a25c8f7752f"
+      },
+      "en": {
+        "title": "Multi-country tours in Latin America",
+        "description": "Ada Tours itineraries across several Latin American countries. Choose a programme and adapt its dates, duration, hotels and activities."
+      },
+      "notes": [
+        "EntityCatalogLayout subsequently uses the multi-country-tours pagination variant."
+      ]
+    },
+    {
+      "key": "multiCountry.selectionH1",
+      "source": {
+        "path": "src/pages/multi-country/[...selection].astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "1ab9f588c720d657e527b8f632673311c4d2304bfff7654251eb9d3f7457d053",
+        "gitBlobSha": "44490fa1f83c8e620504b93b6073fa2abdcba6c8"
+      },
+      "en": {
+        "withTheme": "{themeName}: {countryNames}",
+        "withoutTheme": "Tours: {countryNames}",
+        "noNamedCountries": "Several countries",
+        "pageSuffix": " - page {currentPage}"
+      },
+      "inputs": [
+        "theme.name",
+        "comboCountries names",
+        "pagination.currentPage"
+      ]
+    },
+    {
+      "key": "filter.catalogDescription",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c"
+      },
+      "ru": "Собрали ${countLabel(count, forms)}${directionFor(country)}. ${intro} Адаптируем поездку под ваши даты и привычный темп.",
+      "en": "Choose from {routeCountLabel}{countryDirection}. {intro} We adapt the trip to your dates and preferred pace.",
+      "inputs": [
+        "country",
+        "theme",
+        "count",
+        "vip"
+      ],
+      "notes": [
+        "routeCountLabel is 1 VIP itinerary/N VIP itineraries or 1 itinerary/N itineraries. countryDirection is empty or in {countryName}."
+      ]
+    },
+    {
+      "key": "filter.genericIntro",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c"
+      },
+      "en": {
+        "noTheme": "Compare programmes, duration and prices.",
+        "unknownThemeFallback": "Compare programmes, duration and trip prices."
+      }
+    },
+    {
+      "key": "vip.countryTitle",
+      "source": {
+        "path": "src/lib/vip-countries.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "5a9f30452b655a7f4b1cf7ab37d13e5f7a49f7f0b6cb6a12f5178bafbc4df1bd",
+        "gitBlobSha": "11988b56e824106d582e5c64f05099f740ff50f3"
+      },
+      "ru": "VIP-туры ${seoCountryDirection(data.id)}",
+      "en": "VIP tours in {countryName}",
+      "inputs": [
+        "country.id"
+      ]
+    },
+    {
+      "key": "redirect.metadata",
+      "source": {
+        "path": "src/layouts/RedirectLayout.astro",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "1378e6a7bfa7a0697b143de073547f5e5a148c5fdbd3e6d310d7b9f3ffeeb54c",
+        "gitBlobSha": "4c67ab4e0ebb7b752afde21b6622024971304c4b"
+      },
+      "en": {
+        "defaultTitle": "Page moved",
+        "title": "{title} | Ada Tours",
+        "schemaWebPageName": "Page moved: {title}",
+        "linkLabel": "Go to page: {title}",
+        "language": "en"
+      },
+      "notes": [
+        "Technical alias page remains noindex,follow; canonical points to actual localized destination; not an hreflang alternative."
+      ]
+    }
+  ],
+  "filterCopyTemplates": [
+    {
+      "key": "theme_adventure",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 6
+      },
+      "ru": {
+        "title": "Приключенческие VIP-туры{country}",
+        "intro": "Выберите активную программу с треккингом, сплавами или другими приключениями."
+      },
+      "en": {
+        "vipTitle": "VIP adventure tours{country}",
+        "standardTitle": "adventure tours{country}",
+        "intro": "Choose an active programme with trekking, rafting or other adventures."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_nature",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 10
+      },
+      "ru": {
+        "title": "VIP-туры{country} для любителей природы",
+        "intro": "Выберите путешествие к водопадам, ледникам, вулканам, озерам и тропическим лесам."
+      },
+      "en": {
+        "vipTitle": "VIP tours{country} for nature lovers",
+        "standardTitle": "tours{country} for nature lovers",
+        "intro": "Choose a journey to waterfalls, glaciers, volcanoes, lakes and tropical forests."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_wildlife",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 14
+      },
+      "ru": {
+        "title": "VIP-туры{country} с наблюдением за животными и сафари",
+        "intro": "Сравните программы с наблюдением за дикими животными и птицами, сафари и бердвотчингом."
+      },
+      "en": {
+        "vipTitle": "VIP wildlife and safari tours{country}",
+        "standardTitle": "wildlife and safari tours{country}",
+        "intro": "Compare programmes with wildlife and birdwatching, safaris and birding."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_culture",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 18
+      },
+      "ru": {
+        "title": "Культурно-исторические VIP-туры{country}",
+        "intro": "Познакомьтесь с историей и местными традициями, посетите древние города и музеи."
+      },
+      "en": {
+        "vipTitle": "VIP cultural and historical tours{country}",
+        "standardTitle": "cultural and historical tours{country}",
+        "intro": "Discover history and local traditions, and visit ancient cities and museums."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_cruises",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 22
+      },
+      "ru": {
+        "title": "VIP-туры{country} с круизами и экспедициями",
+        "intro": "Сравните маршруты круизов и экспедиций, суда и программу на берегу."
+      },
+      "en": {
+        "vipTitle": "VIP tours{country} with cruises and expeditions",
+        "standardTitle": "tours{country} with cruises and expeditions",
+        "intro": "Compare cruise and expedition itineraries, vessels and activities ashore."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_events",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 26
+      },
+      "ru": {
+        "title": "VIP-туры{country} на праздники и фестивали",
+        "intro": "Выберите поездку к карнавалу, фестивалю или другому событию."
+      },
+      "en": {
+        "vipTitle": "VIP tours{country} for festivals and celebrations",
+        "standardTitle": "tours{country} for festivals and celebrations",
+        "intro": "Choose a trip to a carnival, festival or another event."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_beach",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 30
+      },
+      "ru": {
+        "title": "VIP-туры{country} с пляжным отдыхом",
+        "intro": "Выберите маршрут, в котором есть время для отдыха на пляже."
+      },
+      "en": {
+        "vipTitle": "VIP tours{country} with beach time",
+        "standardTitle": "tours{country} with beach time",
+        "intro": "Choose an itinerary with time to relax on the beach."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_gastronomy_wine",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 34
+      },
+      "ru": {
+        "title": "Гастрономические VIP-туры{country}",
+        "intro": "Выберите программу с местной кухней, дегустациями или посещением виноделен."
+      },
+      "en": {
+        "vipTitle": "VIP food tours{country}",
+        "standardTitle": "food tours{country}",
+        "intro": "Choose a programme with local food, tastings or visits to wineries."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_coffee",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 38
+      },
+      "ru": {
+        "title": "Кофейные VIP-туры{country}",
+        "intro": "Посетите кофейные плантации, познакомьтесь с производством и попробуйте кофе у его создателей."
+      },
+      "en": {
+        "vipTitle": "VIP coffee tours{country}",
+        "standardTitle": "coffee tours{country}",
+        "intro": "Visit coffee plantations, learn how coffee is produced and taste it with the people who make it."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_fishing",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 42
+      },
+      "ru": {
+        "title": "Рыболовные VIP-туры{country}",
+        "intro": "Выберите программу по акватории и способу ловли, сравните условия размещения."
+      },
+      "en": {
+        "vipTitle": "VIP fishing tours{country}",
+        "standardTitle": "fishing tours{country}",
+        "intro": "Choose a programme by fishing location and technique, and compare accommodation."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_diving",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 46
+      },
+      "ru": {
+        "title": "VIP-туры{country} с дайвингом",
+        "intro": "Выберите путешествие с погружениями, подходящими вашему опыту."
+      },
+      "en": {
+        "vipTitle": "VIP diving tours{country}",
+        "standardTitle": "diving tours{country}",
+        "intro": "Choose a trip with dives suited to your experience."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_motorcycle",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 50
+      },
+      "ru": {
+        "title": "VIP-туры{country} на мотоциклах",
+        "intro": "Сравните маршруты и дневные переезды, выберите дорогу для следующей поездки."
+      },
+      "en": {
+        "vipTitle": "VIP motorcycle tours{country}",
+        "standardTitle": "motorcycle tours{country}",
+        "intro": "Compare itineraries and daily riding distances, and choose the road for your next trip."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_family",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 54
+      },
+      "ru": {
+        "title": "Семейные VIP-туры{country}",
+        "intro": "Выберите путешествие с детьми с учетом их возраста и интересов всей семьи."
+      },
+      "en": {
+        "vipTitle": "VIP family tours{country}",
+        "standardTitle": "family tours{country}",
+        "intro": "Choose a trip with children that suits their ages and the interests of the whole family."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_spa",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 58
+      },
+      "ru": {
+        "title": "VIP-туры{country} со спа-отдыхом",
+        "intro": "Совместите новые впечатления со спа-процедурами и временем для себя."
+      },
+      "en": {
+        "vipTitle": "VIP tours{country} with spa time",
+        "standardTitle": "tours{country} with spa time",
+        "intro": "Combine new experiences with spa treatments and time for yourself."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    },
+    {
+      "key": "theme_weddings_romance",
+      "source": {
+        "path": "src/lib/vip-copy.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "bc00136d4221657dc7b0555a55541c321d01dc1118359a9241779fe66c6d9ae2",
+        "gitBlobSha": "ace70da04f8343e04d075cf9f26f023b131a211c",
+        "line": 62
+      },
+      "ru": {
+        "title": "Романтические VIP-туры{country}",
+        "intro": "Выберите путешествие для свадьбы, медового месяца или отдыха вдвоем."
+      },
+      "en": {
+        "vipTitle": "Romantic VIP tours{country}",
+        "standardTitle": "Romantic tours{country}",
+        "intro": "Choose a trip for a wedding, honeymoon or time away together."
+      },
+      "protectedPlaceholders": [
+        "{country}"
+      ],
+      "notes": [
+        "country is empty or in {countryName}; these same short intros are used in metadata, so they belong to template localization. No change to VIP eligibility."
+      ]
+    }
+  ],
+  "priceAndGuideRules": [
+    {
+      "key": "money",
+      "source": {
+        "path": "src/lib/seo-price-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "577e775729415d60a3c36c0c86c20c615c81ab523128c0f2474b4f46b4e16b08",
+        "gitBlobSha": "509c048d1cdef0d2098c85bf6b0d24d6690b905d",
+        "line": 19
+      },
+      "inputs": [
+        "amount",
+        "currency"
+      ],
+      "en": {
+        "format": "Intl.NumberFormat(en locale), integer precision matching current RU rounding",
+        "USD": "${amount}",
+        "EUR": "€{amount}",
+        "BRL": "R${amount}",
+        "ARS": "ARS {amount}",
+        "RUB": "{amount} ₽",
+        "other": "{amount} {currency}"
+      },
+      "notes": [
+        "Currency remains unchanged. Never FX-convert. Consider explicit USD in visible copy to avoid dollar ambiguity, but preserve exact currency code in schema."
+      ]
+    },
+    {
+      "key": "priceQuote",
+      "source": {
+        "path": "src/lib/seo-price-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "577e775729415d60a3c36c0c86c20c615c81ab523128c0f2474b4f46b4e16b08",
+        "gitBlobSha": "509c048d1cdef0d2098c85bf6b0d24d6690b905d",
+        "line": 133
+      },
+      "inputs": [
+        "prices",
+        "title",
+        "preferredKind"
+      ],
+      "en": {
+        "multiple": "from {usdAmount}",
+        "single": "{usdAmount}"
+      },
+      "notes": [
+        "Parity: all priced entries of the selected kind must be USD. One price is not prefixed from by this function; tour-specific seoTourTitle still does use its priceFrom field. Pass kind directly in EN instead of Russian substring inference.",
+        "MANDATORY shared-model improvement before EN price aggregation: structured priceBasis (per_person, per_group, per_tour), occupancy and applicable offer conditions must be known and compatible. Current source priceOf/seoPriceQuote checks currency but does not carry a price basis. Do not publish a combined minimum for unknown or mixed bases."
+      ]
+    },
+    {
+      "key": "priceClaimRecognition",
+      "source": {
+        "path": "src/lib/seo-price-meta.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "577e775729415d60a3c36c0c86c20c615c81ab523128c0f2474b4f46b4e16b08",
+        "gitBlobSha": "509c048d1cdef0d2098c85bf6b0d24d6690b905d",
+        "line": 8
+      },
+      "en": {
+        "phrases": [
+          "at the best price",
+          "at the best prices",
+          "at attractive prices",
+          "priced",
+          "prices",
+          "price",
+          "cost",
+          "costs"
+        ],
+        "alreadyPresent": [
+          "from {currencyAmount}",
+          "to {currencyAmount}",
+          "{currencyAmount}"
+        ]
+      },
+      "notes": [
+        "Implementation should preferably use structured price slots rather than regex across translated prose. Must not duplicate an authored amount or add new price claims where the RU version had none."
+      ]
+    },
+    {
+      "key": "priceSummary",
+      "source": {
+        "path": "src/lib/page-schema.ts",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "d356e8e34692371943be49b2f1e76d7dc481b68c10eec22c08fd93a3f3bc168d",
+        "gitBlobSha": "731adbb5a1e0b6fc539fc24d97107a8314e91134",
+        "line": 122
+      },
+      "inputs": [
+        "kind",
+        "count",
+        "lowPrice",
+        "highPrice",
+        "currency",
+        "quote.multiple"
+      ],
+      "en": {
+        "tourSingle": "Starting price for the tour: {fromIfMultiple}{amount}.",
+        "tourMultiple": "Starting tour prices: {fromIfMultiple}{amount}.",
+        "excursionSingle": "Starting price for the excursion: {fromIfMultiple}{amount}.",
+        "excursionMultiple": "Starting excursion prices: {fromIfMultiple}{amount}.",
+        "rangeTours": "Starting tour prices: from {lowAmount} to {highAmount}.",
+        "rangeExcursions": "Starting excursion prices: from {lowAmount} to {highAmount}."
+      },
+      "notes": [
+        "Follows the same full-selection metadata minimum and visible-card JSON-LD separation as current code."
+      ]
+    },
+    {
+      "key": "ruGuideModifier",
+      "source": {
+        "path": "src/lib/russian-guide-seo.mjs",
+        "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+        "sourceSha256": "acfed50eeaa846803390ce77546c51d000e86abdf2d1bb08305232f44d5bd4b2",
+        "gitBlobSha": "7db15c685ab59b5b04cc22287eddc966b7aa1d40",
+        "line": 80
+      },
+      "en": null,
+      "notes": [
+        "Intentionally RU-only, guarded by lang === ru. Do not translate the geography keyword rule to an English guide promise. Existing per-tour Russian-speaking guide facts remain true unless shared product data is updated."
+      ]
+    }
+  ],
+  "remainingIntegrationChecklist": [
+    {
+      "id": "L01",
+      "paths": [
+        "src/lib/site.ts",
+        "src/layouts/BaseLayout.astro"
+      ],
+      "doneWhen": "SITE and BaseLayout receive locale/domain from one build context; EN default title/description, html lang, OG locale, breadcrumbs and robot mode resolve explicitly."
+    },
+    {
+      "id": "L02",
+      "paths": [
+        "src/pages/[...path].astro",
+        "src/layouts/CountryLayout.astro",
+        "src/layouts/DestinationLayout.astro",
+        "src/layouts/TourLayout.astro",
+        "src/layouts/ExcursionLayout.astro",
+        "src/layouts/ThemeLayout.astro"
+      ],
+      "doneWhen": "Replace RU selection with localized view of shared active entities, no duplicate prices/IDs/media; correct EN H1/lead/body and linked cards."
+    },
+    {
+      "id": "L03",
+      "paths": [
+        "src/lib/seo-meta.mjs",
+        "src/lib/seo-page.mjs",
+        "src/lib/seo-grammar.mjs"
+      ],
+      "doneWhen": "Every global/function template in this JSON renders EN counts/names/years, zero-count variants and pagination; RU output remains stable."
+    },
+    {
+      "id": "L04",
+      "paths": [
+        "src/lib/seo-price-meta.mjs",
+        "src/lib/page-schema.ts"
+      ],
+      "doneWhen": "Typed price kind and localized price slots replace RU text inference; mandatory structured priceBasis/occupancy/offer-condition compatibility prevents mixed or unknown-basis minima; title/description/OG/Twitter/WebPage agree and quote current full selection without duplicate amounts."
+    },
+    {
+      "id": "L05",
+      "paths": [
+        "src/lib/russian-guide-seo.mjs",
+        "src/data/seo/russian-guide-targets.json"
+      ],
+      "doneWhen": "RU-only modifier remains unchanged and disabled in EN; per-product service languages are explicitly respected."
+    },
+    {
+      "id": "L06",
+      "paths": [
+        "src/pages/vip/[...country].astro",
+        "src/pages/interests/[...catalog].astro",
+        "src/lib/vip-copy.mjs",
+        "src/lib/vip-countries.mjs",
+        "src/lib/multi-country-seo.mjs",
+        "src/layouts/EntityCatalogLayout.astro"
+      ],
+      "doneWhen": "Filtered/VIP/multi-country catalogs, H1, descriptions and all pagination/empty/singleton branches have EN copy from the same counts and filters."
+    },
+    {
+      "id": "L07",
+      "paths": [
+        "src/lib/seo-geo-articles.ts",
+        "src/lib/seo-geo.mjs",
+        "src/layouts/BaseLayout.astro"
+      ],
+      "doneWhen": "EN SEO/GEO article loader+cache keyed by locale/path; translated page 1 articles, counters, tables and price bases use EN; page 2+ contains no duplicate SEO article."
+    },
+    {
+      "id": "L08",
+      "paths": [
+        "src/lib/seo-geo-faq-format.mjs",
+        "src/lib/seo-geo-schema.mjs",
+        "src/lib/structured-data-html.mjs"
+      ],
+      "doneWhen": "Frequently asked questions is recognized; H3 question/answer extraction returns actual EN answers and no following section is attached."
+    },
+    {
+      "id": "L09",
+      "paths": [
+        "src/lib/page-schema.ts",
+        "src/lib/structured-data.mjs",
+        "src/lib/external-page-sameas.mjs"
+      ],
+      "doneWhen": "One localized graph; shared Organization, reciprocal published language pairs, locale WebPage/Website, sameAs RU, correct optional translation relations, localized labels; no legacy .com self/redirect collisions."
+    },
+    {
+      "id": "L10",
+      "paths": [
+        "src/lib/image-captions.mjs",
+        "src/data/media/image-caption-overrides.json",
+        "scripts/build-social-previews.mjs"
+      ],
+      "doneWhen": "Existing media reused; caption lookup keyed locale; EN og:image:alt; domain-config image resolver cannot replace real hero with fallback merely because host changes."
+    },
+    {
+      "id": "L11",
+      "paths": [
+        "src/lib/geo-map-astro.ts",
+        "src/pages/search-geo-places.json.ts",
+        "src/components/global/SearchOverlay.astro"
+      ],
+      "doneWhen": "Map and search names/aliases/links are EN while stable geo IDs and coordinates remain shared."
+    },
+    {
+      "id": "L12",
+      "paths": [
+        "src/lib/content-validation.ts",
+        "src/lib/runtime-seo-registry.mjs",
+        "scripts/check-runtime-seo-coverage.mjs"
+      ],
+      "doneWhen": "Validation separates shared identity from localized text; locale names not compared to RU name; no collisions by unqualified ID/path; EN coverage uses EN publishing manifest."
+    },
+    {
+      "id": "L13",
+      "paths": [
+        "src/pages/about/index.astro",
+        "src/pages/contacts/index.astro",
+        "src/pages/dmc",
+        "src/pages/mice",
+        "src/pages/team",
+        "src/pages/cases",
+        "src/pages/reviews/index.astro",
+        "src/data/authority-pages.json",
+        "src/pages/privacy/index.astro",
+        "src/pages/personal-data/index.astro",
+        "src/pages/404.astro"
+      ],
+      "doneWhen": "Every static/dynamic metadata record in this file and its H1/body is localized; legal fallback is explicit; confirmed original quotation languages/provenance retained."
+    },
+    {
+      "id": "L14",
+      "paths": [
+        "scripts/dedupe-site-shell.mjs",
+        "src/components/global/SiteHeader.astro",
+        "src/components/global/SiteFooter.astro",
+        "src/components/forms/LeadForm.astro"
+      ],
+      "doneWhen": "Final optimized build, noscript nav and shared shell remain EN; form validation/success/consent messages and request locale/pageUrl use EN, existing transport facts preserved."
+    },
+    {
+      "id": "L15",
+      "paths": [
+        "astro.config.mjs",
+        ".github/workflows/deploy.yml",
+        "src/lib/routes.ts"
+      ],
+      "doneWhen": "Build two hosts from one exact release SHA, self-canonical, reciprocal hreflang only for published pairs, correct host sitemaps, current basePath, preview noindex flag independent of basePath; receipts verify both sites."
+    },
+    {
+      "id": "L16",
+      "paths": [
+        "data/external-identity/site-sameas-20261022.json",
+        "data/external-identity/adatours-com-correspondences.json"
+      ],
+      "doneWhen": "If replacing .com, generate/review old .com to new EN path 301 map; exclude obsolete/self-reference identity targets; do not treat old sameAs counts as completed Word matches."
+    }
+  ],
+  "coverage": {
+    "globalSeoRecords": 8,
+    "functionRecords": 16,
+    "staticPageRecords": 18,
+    "additionalRecords": 27,
+    "filterCopyRecords": 15,
+    "priceGuideRecords": 5,
+    "integrationItems": 16
+  }
+}

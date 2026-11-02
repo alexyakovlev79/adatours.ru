@@ -1,0 +1,55 @@
+name: ADA EN translation CAS smoke seed (isolated only)
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - '.github/workflows/i18n-translation-smoke-seed.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Unit tests and nonpublishing queue preparation
+        run: |
+          node --test tests/i18n/translation-core.test.mjs tests/i18n/translation-remote.test.mjs
+          node scripts/i18n/seed-translation-pilot.mjs . --output /tmp/ada-translation-pilot
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const root='/tmp/ada-translation-pilot/';
+          const idx=JSON.parse(fs.readFileSync(root+'index.json','utf8'));
+          const manifest=JSON.parse(fs.readFileSync(root+'manifest.json','utf8'));
+          if(idx.dispatcherEnabled!==false||idx.publicationEnabled!==false||
+            idx.translationMassLaunchAllowed!==false||
+            idx.jobCount!==5||manifest.activeTourOwners!==3)
+            throw Error('Wrong pilot gate or packet scope');
+          console.log(JSON.stringify({jobs:idx.jobCount,owners:manifest.activeTourOwners,
+            queued:idx.counts.queued,enabled:idx.dispatcherEnabled}));
+          NODE
+      - name: Seed only a new isolated smoke branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          smoke=i18n/translation-smoke-20261030
+          if git ls-remote --exit-code --heads origin "$smoke" >/dev/null; then
+            echo "::error::Smoke branch already exists. Do not reset existing CAS state."
+            exit 1
+          fi
+          git switch -c "$smoke"
+          mkdir -p data/i18n/translation/v1
+          cp -a /tmp/ada-translation-pilot/. data/i18n/translation/v1/
+          git add data/i18n/translation/v1
+          test "$(git diff --cached --name-only | wc -l)" -ge 33
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m "i18n: seed closed five-packet translation smoke queue [skip ci]"
+          git push origin HEAD:refs/heads/"$smoke"
+          echo "Only the isolated smoke branch was created. Dispatcher remains closed."

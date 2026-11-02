@@ -1,11 +1,20 @@
 ---
 import InlineMarkdown from '../global/InlineMarkdown.astro';
+import { uiText } from '../../lib/i18n/messages.mjs';
 interface Props {
   included: string[];
   notIncluded: string[];
   notes?: string[];
+  locale?: 'ru' | 'en';
+  sectionId?: string;
 }
-const { included = [], notIncluded = [], notes = [] } = Astro.props;
+const { included = [], notIncluded = [], notes = [], locale = 'ru', sectionId } = Astro.props;
+const labels = {
+  terms: uiText(locale, 'tour.terms'),
+  included: uiText(locale, 'tour.included'),
+  excluded: uiText(locale, 'tour.excluded'),
+  importantTerms: uiText(locale, 'tour.importantTerms'),
+};
 const includedItems = included.map((item) => item.trim()).filter(Boolean);
 const notIncludedItems = notIncluded.map((item) => item.trim()).filter(Boolean);
 const noteItems = notes.map((item) => item.trim()).filter(Boolean);
@@ -14,19 +23,19 @@ const hasContent = hasServices || noteItems.length > 0;
 ---
 
 {hasContent && (
-<section class="included section">
+<section class="included section" id={sectionId} data-ada-i18n-services={locale === 'en' ? 'en' : undefined}>
   <div class="container">
-    {hasServices && <p class="eyebrow">Условия программы</p>}
+    {hasServices && <p class="eyebrow">{labels.terms}</p>}
     {hasServices && (
       <div class="included__grid">
         {includedItems.length > 0 && <div class="included__column included__column--included">
-          <h2>Включено</h2>
+          <h2>{labels.included}</h2>
           <ul>
             {includedItems.map((item) => <li><InlineMarkdown text={item} /></li>)}
           </ul>
         </div>}
         {notIncludedItems.length > 0 && <div class="included__column included__column--extra">
-          <h2>Оплачивается отдельно</h2>
+          <h2>{labels.excluded}</h2>
           <ul>
             {notIncludedItems.map((item) => <li><InlineMarkdown text={item} /></li>)}
           </ul>
@@ -36,7 +45,7 @@ const hasContent = hasServices || noteItems.length > 0;
 
     {noteItems.length > 0 && (
       <div class:list={["included__notes", { "included__notes--standalone": !hasServices }]}>
-        <h3>Важные условия</h3>
+        <h3>{labels.importantTerms}</h3>
         <ul>
           {noteItems.map((item) => <li><InlineMarkdown text={item} /></li>)}
         </ul>

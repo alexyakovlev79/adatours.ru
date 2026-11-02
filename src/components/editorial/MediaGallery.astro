@@ -21,6 +21,8 @@ interface Props {
   title?: string;
   layout?: 'editorial' | 'flush' | 'orientation';
   imageTextAlign?: 'left' | 'right';
+  /** Prefer approved locale-specific ALT/hover to RU media registry overrides. */
+  locale?: 'ru' | 'en';
 }
 
 const {
@@ -29,6 +31,7 @@ const {
   title = 'Еще несколько кадров',
   layout = 'editorial',
   imageTextAlign,
+  locale = 'ru',
 } = Astro.props;
 
 // Media QA status is metadata, not a visibility switch.
@@ -63,7 +66,7 @@ const orientation = layout === 'orientation';
                 : undefined
             }
           >
-            <HeroImage fill width={item.sourceWidth} height={item.sourceHeight} src={withBase(item.src)} alt={imageCaption(item.src, item).alt} title={imageCaption(item.src, item).hover} loading="lazy" />
+            <HeroImage fill width={item.sourceWidth} height={item.sourceHeight} src={withBase(item.src)} alt={locale === 'en' ? item.alt : imageCaption(item.src, item).alt} title={locale === 'en' ? item.hover : imageCaption(item.src, item).hover} loading="lazy" />
             {item.caption && <figcaption>{item.caption}</figcaption>}
           </figure>
         ))}

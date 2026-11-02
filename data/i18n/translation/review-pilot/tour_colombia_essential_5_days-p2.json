@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "jobId": "en:tour:tour_colombia_essential_5_days:p2",
+  "entityId": "tour_colombia_essential_5_days",
+  "locale": "en",
+  "state": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "81355ba2010f092a91b49060ed7fd61b79a69d2f1bce43f9d989649227a899e5",
+  "qaStatus": "pending_word_and_ai_gap_qa",
+  "createdBy": "GPT-6 word-first pilot",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "mode": "word_span",
+      "text": "A day in the Caribbean",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+        "revision": "2026-10-26T18:00:11.436Z",
+        "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0087",
+            "textSha256": "4b68b1956e5495365d124d201fd92d70c9caf620f492ff724bf4f968a95ce97d"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "mode": "word_span",
+      "text": "Day 4 · Breakfast at the hotel. Today, escape Cartagena for a full-day experience in the Rosario Islands, travelling by private transfer to the marina and then by shared speedboat to Isla Majagua, one of the islands of this beautiful Caribbean archipelago. Surrounded by crystal-clear waters, coral beaches and lush tropical scenery, Isla Majagua offers the perfect setting to enjoy a day by the sea, away from the bustle of Cartagena. Take time to swim, relax and savour the tranquil atmosphere of the island, surrounded by the vibrant colours of the Colombian Caribbean.\n\nThe experience includes private hotel–marina transfers, shared speedboat transportation, a traditional Caribbean lunch, dessert, coffee or tea, and the marina tax. In the afternoon, return by shared speedboat to Cartagena, followed by your private transfer back to the hotel. A private boat experience can also be arranged as an optional upgrade, offering greater flexibility and exclusivity throughout the day.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+        "revision": "2026-10-26T18:00:11.436Z",
+        "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0088",
+            "textSha256": "3adb4d7dae6ca098bb970a5ebad48808379c09d61bf63b4ffdd53c9b1966f37d"
+          },
+          {
+            "ref": "word/document.xml#p0089",
+            "textSha256": "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+      "field": "itinerary.title",
+      "mode": "ai_gap",
+      "text": "Departure from Cartagena",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "colombia-day5-title-pilot-chat-20261030"
+      },
+      "ruSourceEvidence": {
+        "path": "/itinerary/4/title",
+        "sourceRuText": "Отъезд из Картахены",
+        "sourceGitBlobSha": "86bff21d6a1838df290dfff81f517ea88dad78f4",
+        "mappingReason": "English Word groups Days 4–5; no separate Day 5 title exists"
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:b04d5d61d358e759",
+      "field": "itinerary.text",
+      "mode": "word_span",
+      "text": "Day 5 · Breakfast at the hotel. Depending on the international flight schedule, enjoy some final free time in Cartagena. Private transfer to Rafael Núñez International Airport for the departure flight.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1ZeKsI_PyOEZ2mngc35U2xnLmc2OlwuVa",
+        "revision": "2026-10-26T18:00:11.436Z",
+        "documentSha256": "40634c5ebc1297acf5bd25a6fdcbeab712dc367835916a34e35e5f5fd5c42335",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p0090",
+            "textSha256": "781d10faac6b95e9fda2a372687d5359e8cb582dfe5c6cc39cb85ec78172e526"
+          }
+        ]
+      }
+    }
+  ],
+  "disclosure": "Selected Word 2027 copied verbatim where aligned; two missing day headings rendered faithfully from current RU. No full Tour release."
+}

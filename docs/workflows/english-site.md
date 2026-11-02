@@ -1,0 +1,297 @@
+# Английская версия Ada Tours
+
+Версия: 1.5 · 30.10.2026. Исходное поручение: 28.10.2026.
+**Обязательный вход для координатора, переводчиков и мастера публикации.**
+Уточнения Алексея от 29.10.2026 в разделах 1–3 ниже имеют приоритет над
+первоначальными архитектурой, редакционным контрактом, runbook и аудитами
+от 28.10.2026 в `docs/plans/english-site/`.
+
+## 1. Английский Word — источник содержания EN
+
+Если соответствие тура уверенно установлено, названия и содержательные блоки
+английской версии берутся из выбранного английского Word. В том числе из него
+берутся язык гида, названия мест, описания дней, включенные услуги и условия.
+Отличие от текущего русского текста само по себе не является ошибкой Word.
+Не возвращать в EN устаревшую русскую формулировку только ради совпадения версий.
+
+Порядок сохраняется: английские программы 2027 → программы 2026 для туров,
+еще не покрытых 2027 → AI-перевод только отсутствующих частей и туров без
+соответствия в обоих годах. Готовые английские названия и описания сохраняются,
+не переписываются ради стилистической полировки. Содержательно соответствующий
+блок не обязан дословно повторять структуру русского абзаца.
+
+**Никакого обязательного ручного review из-за языка гида, уточненного топонима,
+редакционных отличий или расхождения содержания с устаревшей RU-версией.**
+При понятном соответствии взять Word и продолжить работу. Первая рабочая версия
+предпочтительнее остановки ради идеального совпадения каждого фрагмента.
+Недостающий в Word фрагмент перевести с русского, не выдумывая новые факты.
+Уверенность в идентичности самого тура остается условием использования его Word;
+одной похожей строки названия недостаточно. Это сопоставление выполняет агент,
+а не обязательный дополнительный согласующий человек.
+
+## 2. Цены 2027 обновляют обе версии
+
+Если тур уверенно сопоставлен и в его Word-программе 2027 найдена отличающаяся
+цена, **новая цена из Word считается актуальной и заменяет старую на RU и EN**.
+Не сохранять старый тариф сайта как более авторитетный. Не создавать отдельный
+Tour, коммерческий вариант или ручной review только из-за этого расхождения.
+Это прямое разрешение пользователя актуализировать общие цены по такому Word.
+
+Переносится конкретный тариф вместе с его валютой и основанием: на человека,
+группу или тур; DBL/SGL/TPL, категория размещения, даты/сезон, минимальная группа
+и доплаты — в том виде, в каком они относятся к цене в документе. Различие
+размещения или единицы цены не стирается. Не считать цену за двоих ценой за одного.
+Все найденные соответствующие строки тарифной таблицы обновляются, а не только
+минимальный `priceFrom`.
+
+Запись цены одна, общая. В текущей совместимой архитектуре мастер обновляет
+точный Tour MD/общие ценовые поля и их зависимости; будущий нейтральный источник
+сохраняет этот же принцип. Затем обе языковые версии используют обновленную
+цену. Согласовать `priceFrom`, таблицы, пояснения и статические упоминания сумм;
+производные карточки, каталоги, SEO-метаданные и Offer/JSON-LD пересчитать общим
+механизмом, чтобы на разных поверхностях не оставалась старая сумма.
+
+Word 2026 остается источником английского текста для оставшихся туров;
+он не отменяет уже установленный более новый тариф 2027. Разрешение автоматически
+обновлять цену обеих версий в этом уточнении относится именно к программе 2027.
+
+## 3. Что изменяется в прежнем плане и работе роя
+
+- Отменены прежние общие предписания считать любое отличие Word/RU конфликтом
+  и обязательно отправлять его на ручной `review` до переноса.
+- Отменена презумпция, что текущие цены RU надежнее английского Word 2027.
+  В частности, прежнее рассуждение о Mexico Lindo не является основанием
+  сохранять старые тарифы либо автоматически выделять отдельный offer/variant.
+- В `01-architecture.md` §3.1/§3.3, `03-translation-editorial.md` §1/§4 и
+  `04-swarm-runbook.md` §2/§3 соответствующие старые ограничения заменяются
+  настоящим правилом. Аудиты `02-word-sources-and-matching.md`,
+  `word-pilot-review.json` и первоначальный `10-report.md` сохраняют исторические
+  наблюдения, но их старые решения о review не являются действующими блокерами.
+- При возобновлении переоценить только такие старые флаги: уверенный match +
+  содержание EN из Word → переносить; уверенный match + новая цена Word 2027 →
+  обновлять общую цену для RU/EN. Источники, hashes и прежнюю историю сохранять.
+- Переводчик сохраняет Word-блоки и, при обнаружении новой цены 2027, прикладывает
+  адресное изменение общих цен с точным fileId/редакцией и строками таблицы.
+  Координатор/мастер применяет его без отдельного человеческого согласования.
+  Это отдельное структурированное изменение, а не обход текстового overlay.
+- Сохраняются технические проверки идентичности, правильности извлечения чисел,
+  целевых полей, синтаксиса и актуальности версии; они не превращаются в
+  редакционную очередь ожидания подтверждения Анны или Алексея.
+
+## 4. Архитектура и рабочие входы
+
+Подготовить английское представление того же сайта с общими сущностями, ценами,
+медиа и кодом. Планировать `adatours.com`, сохранив возможность замены домена.
+Рабочая ветка: `feat/english-site-foundation`.
+
+Рабочий вход: [архитектура и состояние](../plans/english-site/README.md).
+Порядок перевода: [runbook](../plans/english-site/04-swarm-runbook.md),
+с приоритетом настоящих разделов 1–3.
+Качество текста: [редакционный контракт](../plans/english-site/03-translation-editorial.md).
+Точка продолжения: [progress](../plans/english-site/00-progress.md).
+
+Stable IDs, пути объектов и media references сохраняются. Самостоятельная
+Excursion имеет одного владельца перевода и переиспользуется в турах; условия
+конкретной программы сохраняются в ее соответствующем контексте.
+Голос Ada Tours проверяется при переводе, без отдельного второго массового
+прохода. Короткие UI/metadata-шаблоны переводит координатор, не рой.
+
+## 5. Сопоставление Word: автоматические партии
+
+Массовое сопоставление разрешено через `i18n/matching-staging`.
+Актуальные counts читать только в `data/i18n/matching/v1/index.json`.
+Режим: matchingEnabled=true, pilotOnly=false, translationEnabled=false.
+Пять пилотных и 24 результата первой массовой волны уже сохранены; не повторять.
+
+По решению Алексея от 29.10.2026 один массовый чат автоматически проходит
+до **10 партий по 6 разных Tour**, максимум **60 уникальных туров**.
+Сохранение каждого тура подтверждается отдельно; после шестого не останавливаться,
+а брать следующую партию без команды пользователя. Квота и число подтверждений
+сохраняются под прежним owner/token в CAS-index. Старый массовый предел 6 отменён;
+пилотный предел 3 остаётся. Рабочая команда и протокол:
+`docs/plans/english-site/14-matching-bulk.md` v1.3.
+
+Один текущий Tour резервируется на **60 минут**; каждые **20 минут**
+незаконченной работы — renew и checkpoint. Партия из шести — единица отчёта,
+не предварительный захват шести резервов. Истёкший резерв подбирается через
+claim/reap с сохранением checkpoint и fencing поколения прежнего владельца.
+Уже выданные действующие leases не сокращаются при смене правил.
+
+CAS-конфликты обрабатываются ограниченными повторами со случайной паузой.
+При лимите API соблюдается Retry-After; при невосстановимом сбое сохраняется
+прогресс и точный остаток. Автоматический запуск нового Work-чата после
+закрытия всех исполнителей пока недоступен; штатный cron не активен на main.
+
+Проверка протокола включает 20 конкурирующих работников и 60 Tour одного
+owner. Это не доказательство текущей пропускной способности живых API;
+увеличение реальной волны до 20 учитывает общую квоту аккаунта.
+
+## 6. Перевод и публикация по-прежнему закрыты
+
+`data/i18n/foundation-status.json: massLaunchAllowed=false` теперь
+относится к **массовому переводу**, а не к самостоятельному
+рою сопоставления. Полные карты переводимых блоков,
+подключённый Astro runtime, отдельный переводческий диспетчер,
+двойная публикация RU/EN и применение общих новых цен ещё
+не завершены. В частности, три тарифные поправки Mexico Lindo
+из Word 2027 сохранены, но старый опубликованный RU не
+обновлён. Сопоставляющий работник не имеет права напрямую
+менять Tour MD, цены, main, шаблоны или домен.
+
+Подтверждения: `docs/plans/english-site/13-matching-pilot-audit.md`,
+staging SHA `bf04211267744431363a1e3dc3e13eb75c064f47`.
+Переводы и публичные релизы требуют отдельных проверок.
+Текущие SEO/GEO/photo очереди сохраняют собственные правила.
+
+
+## 7. Подтверждённое завершение matching (30.10.2026)
+
+GitHub Actions проверил 358 сохранённых результатов: 221 Word 2027,
+44 Word 2026 и 93 AI-only; ноль технически недействительных.
+Рой сопоставления не нужно запускать повторно. Итог и 192 адресных
+предупреждения приведены в
+`docs/plans/english-site/15-matching-complete.md`.
+Тарифы и структура программы Word 2027 определяют актуальные общие
+факты при уверенном соответствии, но извлечённые отдельные доплаты
+нельзя смешивать с базовой ценой тура. Для некорректно напечатанной
+цифры сохранять исходник и не угадывать сумму. Изменение числа дней
+требует обновления общей структуры; это техническая зависимость
+перевода, а не обязательное редакционное согласование Word/RU.
+Массовый **перевод** ещё закрыт до запуска отдельного диспетчера и пилота.
+
+## 8. Полные карты текстов и владельцы общих экскурсий (30.10.2026)
+
+После завершения сопоставления все 358 русских Tour получили
+постоянную карту `data/i18n/block-maps/tours/<stableId>.json`.
+Проверено 31 330 видимых текстовых блоков, все покрыты, ошибок 0.
+Смена порядка дней не должна переносить перевод к чужому `blockId`;
+точный `sourceFingerprint` и семантический владелец проверяются
+до приёмки overlay. Само наличие карты не означает английского текста.
+
+Из действующих 358 туров извлечены связи с 348 каноническими
+экскурсиями. 137 используются в нескольких турах, но имеют
+одного владельца перевода `en:excursion:<stableId>` по реестру
+`data/i18n/shared-excursion-owners/manifest.json`.
+Переводить общую экскурсию заново внутри каждого Tour запрещено;
+варианты, специфичные для одного тура, сохраняются в блоках
+соответствующей программы. Подтверждено 0 отсутствующих MD
+используемых экскурсий.
+
+**Следующий gate перед массовым переводом:** выполнить
+Word → stable block alignment с сохранением точных источников,
+реализовать и проверить отдельный CAS-диспетчер переводчиков и
+подключить locale adapter к реальным шаблонам Astro/SEO/search.
+Тарифы 2027 должны сначала пройти классификацию по условиям
+и основанию; сумму отдельного перелёта или входного билета
+нельзя принимать за `priceFrom`.
+
+
+## 9. Архивные туры и новый ценовой план (30.10.2026)
+
+После успешного [Pages-деплоя #41035427979](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41035427979) в `main` архивированы ровно пять подтвержденных дублей из сопоставленного набора; сохранено 358 исторических matching-решений, но текущий каталог содержит **353 активных Tour из 397**. При выдаче EN-работ проверять текущий статус Tour, не переводить `archived` повторно и не стирать историю их Word/matching evidence. Программа Эквадора с измененным маршрутом Анны остается активной.
+
+Пересчет цен Word 2027 на текущем `main` теперь исключает архивные ID до сравнения. [Проверка #41036643312](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41036643312) прошла: 217 2027 Word результатов, из них 140 кандидатов на правку цены, 39 без изменений, 17 со структурной неоднозначностью, 21 без надежной базовой цены. Это подготовленный план, **не публикация цен**. Не превращать дополнительные экскурсии, билеты и перелеты в базовую цену; сохранять Word XML source locators, валюту, priceBasis, DBL/SGL/TPL, сезон и размер группы.
+
+Точная инструкция следующего этапа: `docs/plans/english-site/16-post-archive-price-reconciliation.md`. Далее Word → stable block alignment, реализация CAS-диспетчера переводчиков, подключение locale adapter Astro и пилот 3–5 программ, затем массовый EN-проход. Ни matching, ни предварительный ценовой план сами по себе не открывают массовую публикацию.
+
+
+## 10. Переводческий диспетчер: изолированный smoke (30.10.2026)
+
+Отдельное ядро `scripts/i18n/translation-core.mjs` и GitHub CAS-адаптер `scripts/i18n/translation-remote.mjs` прошли unit/remote mock проверки, включая [Actions #41042928753](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41042928753) и последующие повторные тесты. Ветка `i18n/translation-smoke-20261030` прошла реальные двухработничные CAS-операции без двойной выдачи, повторной записи checkpoint и потерянных leases. Gate снова закрыт: 5 задач `queued`, 0 `leased`, 0 переводов `review`/`ready`; `main` и `i18n/matching-staging` не затронуты.
+
+**Это завершенный технический smoke, а не смысловой переводческий пилот и не разрешение массового перевода.** Для подробностей и точных receipts: `docs/plans/english-site/18-translation-dispatcher-pilot.md`. При следующем продолжении не пересоздавать ветку, очередь и эти GitHub commits; пилот на настоящих переводах запускать отдельно после дополнительной подготовки источников и проверки CAS обработки результата.
+
+## 11. Первые принятые английские блоки — 30.10.2026
+
+В изолированном `i18n/translation-staging` проведены первые три **реальные** переводческие работы: два Word-first пакета по 8 блоков для Rio/Easter и двухблочный пакет Rio Day4 с одним переводом RU заголовка и одним точным Word-абзацем. Каждая работа была сохранена через GitHub CAS в `review`, затем отдельно прочитана из immutable blob, проверена на соответствие Word, RU и смыслу и принята QA в `ready`. Всего **18 блоков: 17 Word, 1 AI gap**. Пакеты Колумбии ещё не запускались. Полный статус, SHA и планы: `docs/plans/english-site/19-word-first-accepted-pilot.md` и `data/i18n/translation/pilot-unmapped-20261030.json`.
+
+После приёмки [staging head `e8eb14f4`](https://github.com/alexyakovlev79/adatours.ru/commit/e8eb14f42a33a1f0a89931a49efc493498508e49): `ready=3, queued=2, leased=0, review=0`, gates `dispatcherEnabled=false`, `publicationEnabled=false`, `translationMassLaunchAllowed=false`. Даже `ready` здесь означает проверенные **пакеты блоков**, а не готовую страницу. Нет полного Tour overlay, не обновлен Astro runtime и не опубликован EN. Повторно запускать закрытый matching или изолированный smoke нельзя.
+
+
+## 12. Завершение трёхтурового EN JSON-пилота (30.10.2026)
+
+**Технический пилот источников и сборки текстовых моделей завершён.** 5/5 переводческих пакетов с Word-first/AI gaps сохранены в `i18n/translation-staging`; с 142 дополнительными редакционными черновиками получено 172/172 EN блоков. [CI #41056311428](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41056311428) success; точные locale overlays, Word citations и rendered JSON сохранены в `i18n/three-tour-preview-20261030` (commit `ab272489`). Текущие prices/facts/media shared, no public deploy, mass translation disabled.
+
+Не путать `approved` в JSON-компиляторе с независимой внешней смысловой редактурой всех 142 новых блоков. Это проверенное техническое покрытие с автоматическими QA-guardrails, но **не** три действующие английские HTML-страницы и не завершение всего EN проекта. Следующий gate — подключить эти approved JSON snapshots в Astro EN routing, формы/SEO/schema/search, проверить русский регресс и реальный непубличный EN HTML build, затем масштабировать перевод.
+
+
+
+## 13. Реальная непубличная HTML-версия EN — 30.10.2026
+
+**Выполнен технический этап «непубличный HTML-пилот»**, без публикации. Исходные EN `rendered`/overlays из `i18n/three-tour-preview-20261030` (pinned SHA `ab27248954bb71fe6582bf796d73626ea8502d5f`) подключены к отдельному **Astro 7** маршруту `src/pages/en-pilot-private/[...path].astro`. Вход разрешён **только** при `EN_PILOT_PREVIEW=1`, `SITE_LOCALE=ru`, `PUBLIC_EN_RELEASE!=1` и наличии трех источников с точными стабильными ID, валютой, ценами, 172-позиционной QA-сводкой и неизменными SHA RU Tour MD. Без флага новые маршруты не генерируются. Публичный `SITE_LOCALE=en` по-прежнему заблокирован исходными release gates.
+
+Получены **4 работающие статические страницы:** каталог `/en-pilot-private/tours/` и 3 Tour `/en-pilot-private/tour/<slug>/` (Rio 4 дня, Easter Island 3 дня, Colombia 5 дней). Разметка адаптивная, с существующими фирменными CSS-токенами/логотипом, ссылками между программами, фото `img.adatours.ru`, полным маршрутом, включениями, условиями и тарифными таблицами. Контактная кнопка `mailto:`, **без** живого POST/аналитики. HTML `lang=en`, `robots=noindex,nofollow,noarchive,nosnippet`, `canonical/hreflang` отсутствуют намеренно, тестовые адреса исключены из sitemap.
+
+[GitHub Actions #41063022947](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41063022947) — **success**: source fingerprints, unit tests, `npx astro build`, 4 фактических HTML, 4/3/5 дня, цены 1255/1492/1863 USD, сохранённые CSS, навигация, англоязычные ALT, noindex, отсутствие RU fallback, упаковка и подтверждение неизменного `main`. Результат — private GitHub Actions artifact `ada-en-three-tour-private-html` (ID `12982446139`, retention 14 дней) с 4 HTML, необходимыми локальными CSS и логотипом. Сборка скачана и перечитана отдельно; пользовательская ZIP-копия включает инструкцию для Windows и запуск локального HTTP-сервера.
+
+**Статус не следует завышать:** этот пилот использует отдельный закрытый шаблон с реальными данными, но еще не объединён с production `TourLayout`/`BaseLayout`, формами, Pagefind, SEO/Schema/hreflang и не подтверждает полную независимую редактуру 142 новых полей. Это технически работающие страницы для проверки, а не новый публичный EN-сайт и не разрешение массового перевода. `main` не меняли.
+
+## 14. Продолжение закрытого HTML-пилота: общая оболочка и блоки (30.10.2026)
+
+Подтверждено в `feat/english-site-foundation`: EN-пилот теперь рендерится через общий `BaseLayout.astro` в строго закрытом режиме `privatePreview` и повторно использует `TripStats.astro` и `IncludedExcluded.astro`. Заголовки услуг берутся из общего словаря RU/EN. У обычной русской версии сохраняются прежние значения и путь вывода. В закрытом EN не выводятся публичные аналитика, форма, canonical/hreflang и JSON-LD. `EN_PILOT_PREVIEW` по-прежнему не дает разрешения на публичный EN.
+
+Коммиты: [`e748206c`](https://github.com/alexyakovlev79/adatours.ru/commit/e748206c063dcee0b4163a1045e11d10b7791363), [`4fb996bc`](https://github.com/alexyakovlev79/adatours.ru/commit/4fb996bc9f39be97cb7dc9a5e667dd33e049305e). [Private HTML Actions #41068342619](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41068342619) и [foundation tests #41068342651](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41068342651) — `success`. Новый 4-страничный artifact `12984666377`. Следующая работа — полная общая `TourLayout`/locale runtime-интеграция, остальные компоненты и связанные сущности, формы, SEO/Schema/Pagefind/hreflang, редакционный review 142 блоков. Ни `main`, ни массовый перевод, ни домен этой операцией не включались. Подробный handoff — `docs/plans/english-site/21-nonpublic-html-pilot.md`.
+
+## 15. Общие Hero/Pricing/Itinerary в закрытом HTML-пилоте (30.10.2026)
+
+Сохранены [Hero и TourPricing](https://github.com/alexyakovlev79/adatours.ru/commit/734ac307aaf3fb11682570c534e6c5bfbefff4a7) и [общий Itinerary](https://github.com/alexyakovlev79/adatours.ru/commit/b3fcfac0d6357fc2be52ade743e5aca3c416eb75) в `feat/english-site-foundation`. Ранее подключенные `BaseLayout`, `TripStats`, `IncludedExcluded` остаются общими. В `TourPricing` RU-вывод по умолчанию сохранен; EN использует утвержденный `priceFrom` и `priceNote`, таблицы исходной Word-программы и только безопасный `#enquiry` (без отправки формы). Общий `Hero` принимает точный английский ALT. `Itinerary` отображает 4/3/5 утвержденных номерных дня с английскими ALT, без RU fallback.
+
+У трех пилотных туров **11 зависимостей от канонических Excursion: Рио 4, остров Пасхи 3, Колумбия 4**. Все 11 stable ID обнаружены в `data/i18n/shared-excursion-owners/manifest.json`; каждый имеет единственного владельца EN-перевода. Их самостоятельные английские тексты пока не утверждены, поэтому они не рендерятся в пилоте и перечисляются как незавершенная зависимость. Попытка передать `excursionRef` в приватный EN `Itinerary` отклоняется вместо чтения RU Excursion. Исходные ссылки и история сохранены.
+
+Сбой промежуточных unit-тестов с прежними синтетическими данными исправлен [коммитом 6003af7f](https://github.com/alexyakovlev79/adatours.ru/commit/6003af7f58638481465df69a4d6e3041be7ec9a9). Подтверждены [foundation tests #41071602979](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41071602979) и [private HTML build #41071603229](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41071603229), оба `success`. Четыре готовых приватных HTML находятся в artifact `ada-en-three-tour-private-html` ID `12986280845` (retention 14 дней); Windows ZIP собран отдельно и адресно проверен.
+
+**Остаток:** подготовить 11 независимых EN Excursion overlays, потом подать их и локализованные Country/Destination связи в общий `TourLayout` без доступа к RU по умолчанию. Только после этого отдельно подключать формы, Pagefind, SEO/Schema/hreflang, проверять 142 редакционных блока и открывать релизные gates. `main`, публичная EN-версия, домены, массовый перевод и формы этим пакетом не изменялись.
+
+## 16. Одиннадцать английских Excursion и 15 HTML-страниц (30.10.2026)
+
+По прямой команде пользователя подготовлены и адресно проверены 11 самостоятельных EN-переводов канонических Excursion: 4 Рио, 3 остров Пасхи, 4 Колумбия. Источники: текущие RU Excursion MD с точными Git blob SHA; отдельные EN-тексты в `data/i18n/pilot-excursions/v1/`. Переведены title/lead/body, маршрут, условия, языки гида, тарифные пояснения, ALT/hover; коммерческие числа, ссылки медиа и stable ID остаются общими. В трех Tour восстановлены все 11 канонических экскурсионных вставок с переходами на EN-страницы, без RU fallback.
+
+[GitHub Actions #41075627323](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41075627323) и [foundation #41075627376](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41075627376) — `success`. Артефакт `ada-en-three-tour-eleven-excursions-private-html`, ID `12987936006`, содержит 15 HTML (1 каталог + 3 Tour + 11 Excursion), retention 14 дней. Отдельная Windows-копия проверена на локальные ссылки и целостность ZIP. Подробные IDs, QA, сохраненная область работы и блокеры: `docs/plans/english-site/22-shared-excursions-private-preview.md`.
+
+Публичная EN-публикация, `main`, формы, SEO/Schema/hreflang и mass gate остаются закрыты. Готовность HTML-пилота не подтверждает завершения полного `TourLayout`, географических EN-страниц или независимой редакторской оценки.
+
+
+## Checkpoint 2026-11-02 — three-country private EN geography
+
+Extended the source-bound private EN pilot to Chile and Colombia alongside Brazil and Rio. The latest 19-page preview now contains 3 Tours, 11 canonical Excursions, 3 Country pages, one Rio Destination and a catalogue. The country pages and Tours use explicit stable-ID links. First 19-page build [#41397537764](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41397537764) and foundation test [#41397537769](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41397537769) succeeded; latest navigation integration is separately checked by [#41397950430](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41397950430). Full handoff: [23-three-country-private-preview.md](../plans/english-site/23-three-country-private-preview.md). No `main` changes or public EN release; mass translation and tariff synchronization are still gated.
+
+
+## Checkpoint 2026-11-02 — 22 private EN HTML pages and stable-ID routes
+
+Three source-bound English Destination overlays were added for Easter Island, Bogotá and Cartagena (26 gallery captions). The closed pilot now has **22 verified HTML pages**: 3 Tour, 11 canonical Excursion, 3 Country, 4 Destination and one catalogue. A portable stable-ID locale route index rejects missing translations and duplicate/unsafe paths; Tour geography links are derived from canonical country/destination IDs. See [24-22-page-private-source-bound-routes.md](../plans/english-site/24-22-page-private-source-bound-routes.md). Code [`67a99570`](https://github.com/alexyakovlev79/adatours.ru/commit/67a99570a81eecacaf3a7219d7d33dc1df862d81); [foundation CI #41400199246](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41400199246) and [private HTML CI #41400199202](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41400199202) both **success**. Artifact `ada-en-private-visual-22-pages` ID `13121635189` (expires 2026-11-16). Public EN, `main`, live forms, mass translation and pricing remain unchanged; next is production-style common locale collection/layout integration.
+
+
+## Checkpoint 2026-11-02 — private Astro locale collection bridge
+
+Existing strict `getLocalizedCollection()` from `src/lib/i18n/content-adapter.mjs`
+is now connected through `src/lib/i18n/astro-locale-collection.mjs` to the
+22-page nonpublic EN Astro route generators. The adapter reuses RU canonical
+facts and media, verifies the pinned 3 Tour SHA-256 and 11 Excursion plus
+7 geography Git blob fingerprints, retains 21 stable IDs and fails closed
+on missing English or public release. [Code `ef19e29c`](https://github.com/alexyakovlev79/adatours.ru/commit/ef19e29cfd23bca20f11516df8511e83192e5bcc).
+[Foundation #41402962535](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41402962535)
+and [private HTML #41402962545](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41402962545)
+both **success**. Latest 22-page artifact ID `13121709827` expires 2026-11-16.
+Full handoff: [25-astro-locale-collection-bridge.md](../plans/english-site/25-astro-locale-collection-bridge.md).
+Public `main`, forms, EN DNS, mass translation and release gates remain unchanged.
+Next: actual production-style locale awareness in the full shared
+Tour/Country/Destination/Excursion layouts, then EN SEO/search/forms.
+
+
+## Checkpoint 2026-11-02 — shared Tour/Excursion locale geography
+
+The active RU `TourLayout` and `ExcursionLayout`, plus the closed
+EN Tour/Excursion pilot, now use one stable-ID
+`src/lib/i18n/entity-geography-model.mjs` to project main/optional
+countries and destinations. RU keeps its planned place as unlinked
+text and its original URL helpers; EN only links verified translations
+with no Russian fallback. Source-backed Excursion→Destination links
+are checked in HTML. Code [`94598f46`](https://github.com/alexyakovlev79/adatours.ru/commit/94598f461eb8bdec966af9ccc2f137149b43a608)
+(including the test fix and fail-fast syntax preflight).
+[Foundation #41405918364](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41405918364)
+and [private Astro/HTML #41405918629](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41405918629)
+both **success**, artifact `ada-en-private-visual-22-pages` ID `13123776684`.
+Full handoff: [26-shared-geo-model-tour-excursion.md](../plans/english-site/26-shared-geo-model-tour-excursion.md).
+This is not the full production EN `TourLayout` or public release;
+`main`, common Word prices, form endpoint and mass translation were
+not changed by this work.

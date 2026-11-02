@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "entityOrigin": "https://adatours.ru",
+  "mediaOrigin": "https://img.adatours.ru",
+  "sites": {
+    "ru": {
+      "origin": "https://adatours.ru",
+      "base": "/",
+      "htmlLang": "ru",
+      "hreflang": "ru",
+      "formatLocale": "ru-RU",
+      "ogLocale": "ru_RU",
+      "releaseState": "published"
+    },
+    "en": {
+      "origin": "https://adatours.com",
+      "base": "/",
+      "htmlLang": "en",
+      "hreflang": "en",
+      "formatLocale": "en-GB",
+      "ogLocale": "en_GB",
+      "releaseState": "planned"
+    }
+  },
+  "notes": [
+    "The English origin is a configurable planning default, not proof of a new deployment.",
+    "Existing adatours.com is a legacy site; do not replace it or change DNS in the foundation stage.",
+    "Changing language does not change offer currency, guide language, legal identity or media storage.",
+    "Use stable entity IDs and existing logical routes in both builds."
+  ]
+}

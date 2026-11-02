@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-10-28",
+  "sourceCommit": "b1b14ed3a8abab9773053f836fed28c2ff77204f",
+  "scope": "Isolated i18n foundation only; production runtime and content unchanged.",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "tests/i18n/locale-site.test.mjs"
+      ],
+      "exitCode": 0,
+      "summary": [
+        "ℹ tests 13",
+        "ℹ pass 13",
+        "ℹ fail 0"
+      ]
+    },
+    {
+      "command": [
+        "node",
+        "tests/i18n/content-overlay.test.mjs"
+      ],
+      "exitCode": 0,
+      "summary": [
+        "✔ unsafe nested values, duplicate identities and arbitrary field paths fail closed (0.51374ms)",
+        "ℹ tests 22",
+        "ℹ pass 22",
+        "ℹ fail 0"
+      ]
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "src/lib/i18n/locale-site.mjs"
+      ],
+      "exitCode": 0,
+      "summary": []
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "src/lib/i18n/messages.mjs"
+      ],
+      "exitCode": 0,
+      "summary": []
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "src/lib/i18n/content-overlay.mjs"
+      ],
+      "exitCode": 0,
+      "summary": []
+    }
+  ],
+  "jsonParse": "passed",
+  "unitTestsPassed": 35,
+  "fullAstroBuildRun": false,
+  "reasonNoFullBuild": "New modules are not wired to Astro; focused tests cover the actual changed execution surface. No production deploy attempted.",
+  "sourceIntegrityChecks": 19,
+  "sourceIntegrityReport": "data/i18n/source-integrity-report.json",
+  "limitations": [
+    "No operational distributed queue tested or deployed.",
+    "No fully translated Tour or new English deployment.",
+    "No claim of external JSON Schema conformance validation; schema JSON parsed and runtime validators tested."
+  ],
+  "candidateReproduction": {
+    "passed": true,
+    "matchedRows": 392,
+    "source": "Exact baseline Git blobs + public source manifest + pilot review",
+    "command": "python3 scripts/i18n/build-candidate-matches.py --repo . --sources data/i18n/programme-sources.json --pilot data/i18n/word-pilot-review.json --output <scratch-output.json>"
+  },
+  "statusCommand": {
+    "command": "node scripts/i18n/status.mjs",
+    "passed": true,
+    "kind": "read_only_foundation_snapshot_not_live_queue"
+  }
+}

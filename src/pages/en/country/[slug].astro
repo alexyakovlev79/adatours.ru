@@ -1,0 +1,10 @@
+---
+import CountryPage,{getStaticPaths as sourcePaths} from '../../en-pilot-private/country/[slug].astro';
+import {enStagingSiteEnabled} from '../../../lib/i18n/en-staging-site.mjs';
+export async function getStaticPaths(){
+ if(!enStagingSiteEnabled(process.env))return [];
+ return sourcePaths({allowStaging:true});
+}
+const props=Astro.props;
+---
+<CountryPage {...props}/>

@@ -1,0 +1,38 @@
+name: Ada EN matching full-receipt audit
+on:
+  push:
+    branches: [feat/english-site-foundation]
+    paths:
+      - 'scripts/i18n/audit-match-results.mjs'
+      - '.github/workflows/i18n-matching-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout matching audit code
+        uses: actions/checkout@v4
+        with:
+          ref: feat/english-site-foundation
+          path: feature
+      - name: Checkout immutable matching results
+        uses: actions/checkout@v4
+        with:
+          ref: i18n/matching-staging
+          path: matching-live
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Validate full matching ledger and tariff evidence
+        run: node feature/scripts/i18n/audit-match-results.mjs matching-live --output /tmp/ada-match-audit
+      - name: Upload structured audit results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ada-match-audit
+          path: /tmp/ada-match-audit/
+          if-no-files-found: warn
+          retention-days: 30

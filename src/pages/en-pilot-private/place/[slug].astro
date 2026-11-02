@@ -1,0 +1,21 @@
+---
+import {getCollection} from 'astro:content';
+import {privatePilotEnabled} from '../../../lib/i18n/pilot-html.mjs';
+import {getAstroLocalizedCollection} from '../../../lib/i18n/astro-locale-collection.mjs';
+import {enStagingSiteEnabled} from '../../../lib/i18n/en-staging-site.mjs';
+import PrivateGeographyPage from '../../../components/i18n/PrivateGeographyPage.astro';
+export async function getStaticPaths({allowStaging=false}={}){
+ if(!privatePilotEnabled(process.env)||(enStagingSiteEnabled(process.env)&&!allowStaging))return [];
+ const options={privatePreview:true,root:process.cwd(),env:process.env};
+ const [countries,destinations]=await Promise.all([
+  getAstroLocalizedCollection('countries','en',getCollection,options),
+  getAstroLocalizedCollection('destinations','en',getCollection,options)
+ ]);
+ const allGeography=[...countries,...destinations];
+ return destinations.map(record=>({
+  params:{slug:record.data.slug},props:{record,allGeography}
+ }));
+}
+const {record,allGeography}=Astro.props;
+---
+<PrivateGeographyPage record={record} allGeography={allGeography} />

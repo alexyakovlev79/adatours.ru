@@ -10,6 +10,13 @@ const check=(condition,message)=>{if(!condition)throw Error('EN mass CAS: '+mess
 const valid=s=>typeof s==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(s);
 const date=s=>{const t=Date.parse(s);check(Number.isFinite(t),'bad time');return t};
 const offset=(s,ms)=>new Date(date(s)+ms).toISOString();
+/** Same FNV-1a queue key as the immutable v2 planner; tested for parity. */
+export function massShard(jobId){
+ check(valid(jobId),'bad job ID');
+ let h=2166136261;
+ for(let i=0;i<jobId.length;i++){h^=jobId.charCodeAt(i);h=Math.imul(h,16777619)}
+ return ((h>>>0)%32).toString(16).padStart(2,'0');
+}
 export function massIndexShard(index,now){
  check(index?.schemaVersion===2&&index.dispatcherEnabled===true&&
   index.translationMassLaunchAllowed===true&&

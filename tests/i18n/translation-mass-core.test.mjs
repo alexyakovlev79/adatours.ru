@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {planTourTranslation,createMassTranslationState} from '../../src/lib/i18n/translation-mass-plan.mjs';
-import {massIndexShard,massClaim,massReap,massRebuildIndex,massRenew,
+import {planTourTranslation,createMassTranslationState,massShard as plannerShard} from '../../src/lib/i18n/translation-mass-plan.mjs';
+import {massShard,massIndexShard,massClaim,massReap,massRebuildIndex,massRenew,
  massCheckpoint,massSubmit,massApprove,massRelease,massFail,validateMassResult}
  from '../../scripts/i18n/translation-mass-core.mjs';
 const sha=s=>createHash('sha256').update(s).digest('hex'),git='a'.repeat(40);
@@ -83,4 +83,8 @@ test('checkpoint replay, renewal and stage status reconciliation are idempotent'
  assert.equal(index.jobCount,2);
  const released=massRelease(renewed.shard,{...args,now:'2026-11-02T20:10:00Z'});
  assert.equal(released.status,'released');
+});
+
+test('remote and planner use exactly the same 32-shard keys',()=>{
+ for(const j of source().manifest.jobs)assert.equal(massShard(j.jobId),plannerShard(j.jobId));
 });

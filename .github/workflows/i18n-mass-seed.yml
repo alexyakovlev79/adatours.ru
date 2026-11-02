@@ -8,6 +8,8 @@ on:
       - 'tests/i18n/translation-mass-plan.test.mjs'
       - 'tests/i18n/translation-mass-core.test.mjs'
       - 'scripts/i18n/translation-mass-core.mjs'
+      - 'scripts/i18n/translation-mass-remote.mjs'
+      - 'tests/i18n/translation-mass-remote.test.mjs'
       - '.github/workflows/i18n-mass-seed.yml'
   push:
     branches: [main]
@@ -62,7 +64,7 @@ jobs:
           set -euo pipefail
           cd website
           npm install --no-audit --no-fund
-          node --test tests/i18n/translation-mass-plan.test.mjs tests/i18n/translation-mass-core.test.mjs
+          node --test tests/i18n/translation-mass-plan.test.mjs tests/i18n/translation-mass-core.test.mjs tests/i18n/translation-mass-remote.test.mjs
           node scripts/i18n/seed-mass-translation.mjs \
             --source "$PWD" \
             --matching "$PWD/../matching" \

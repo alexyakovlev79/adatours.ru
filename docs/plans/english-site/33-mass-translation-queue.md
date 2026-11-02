@@ -58,3 +58,13 @@ production, медиа, DNS, индексацию или реальные фор
 Затем выполнить пилот CAS нового массового диспетчера минимум
 двумя работниками без дублей, открыть word_2027 и перейти
 к реальным English translation results в отдельной staging.
+
+## Worker interface
+
+The new bulk core and remote are independent of the original pilot.
+Worker actions are status, claim, renew, checkpoint, submit, release,
+fail and reap; approve/publish are intentionally unavailable to workers.
+GitHub ref updates use expected_SHA CAS, no force. Immutable v2 results
+require exact Word source provenance or an explicit, evidenced AI gap.
+All source checks compare the current main Git blob with its frozen
+packet before any delivery; changed files are held for remapping.

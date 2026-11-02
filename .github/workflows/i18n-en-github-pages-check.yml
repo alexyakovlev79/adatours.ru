@@ -57,14 +57,24 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.ref_name }}
           path: website
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
       - uses: actions/checkout@v4
         with:
           ref: ab27248954bb71fe6582bf796d73626ea8502d5f
           path: source-preview
+          sparse-checkout: data/i18n/pilot-previews/v1
+          sparse-checkout-cone-mode: false
       - uses: actions/checkout@v4
         with:
           ref: main
           path: production
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24

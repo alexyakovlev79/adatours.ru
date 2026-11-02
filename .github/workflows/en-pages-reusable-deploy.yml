@@ -28,18 +28,28 @@ jobs:
           repository: alexyakovlev79/adatours.ru
           ref: main
           path: website
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/checkout@v4
         with:
           repository: alexyakovlev79/adatours.ru
           ref: ab27248954bb71fe6582bf796d73626ea8502d5f
           path: word-preview
+          sparse-checkout: data/i18n/pilot-previews/v1
+          sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/checkout@v4
         with:
           repository: alexyakovlev79/adatours.ru
           ref: main
           path: canonical-main
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:

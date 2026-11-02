@@ -9,7 +9,8 @@ import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS } from '../..
 import { withBase } from '../../lib/paths';
 import { countryPath, themePath, mainTourCountries } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
-import { pilotCatalogUrl, pilotTourUrl } from '../../lib/i18n/pilot-html.mjs';
+import { pilotCatalogUrl } from '../../lib/i18n/pilot-html.mjs';
+import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
 import { uiText } from '../../lib/i18n/messages.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
 import { buildInterestIndex } from '../../lib/interest-model.mjs';
@@ -29,10 +30,10 @@ const { theme = 'light', privatePreview = false } = Astro.props;
 const previewNav=[
   {href:pilotCatalogUrl(),label:uiText('en','nav.tours')},
   {href:pilotCatalogUrl(),label:uiText('en','nav.excursions')},
-  {href:'/en-pilot-private/country/brazil/',label:'Brazil'},
-  {href:'/en-pilot-private/place/rio-de-janeiro/',label:'Rio de Janeiro'},
-  {href:'/en-pilot-private/country/chile/',label:'Chile'},
-  {href:'/en-pilot-private/country/colombia/',label:'Colombia'},
+  {href:privateRouteForId('country_brazil'),label:'Brazil'},
+  {href:privateRouteForId('country_chile'),label:'Chile'},
+  {href:privateRouteForId('country_colombia'),label:'Colombia'},
+  {href:privateRouteForId('destination_chile_ostrov_pashi'),label:'Easter Island'},
 ];
 const activeNav=privatePreview?previewNav:NAV_LINKS;
 const logoWhite = withBase('/brand/adatours-logo-white.svg');

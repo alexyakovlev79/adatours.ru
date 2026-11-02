@@ -1,22 +1,21 @@
-/** Strict nonpublishing geography overlay for the Brazil/Rio visual pilot.
+/** Strict nonpublishing geography overlays for the three-country pilot.
  * Existing RU facts, IDs and media are the only source of nontranslated values.
  */
 import {readFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {createHash} from 'node:crypto';
 import {pilotMediaUrl} from './pilot-html.mjs';
+import {privateRouteForId} from './locale-entity-routes.mjs';
 const manifestPath='data/i18n/pilot-geography/v1/manifest.json';
 const forbidden=/[\u0400-\u052F]/u;
 const good=s=>typeof s==='string'&&s.trim().length>0&&!forbidden.test(s);
 const fingerprint=b=>createHash('sha1').update('blob '+b.length+'\0').update(b).digest('hex');
 const fail=m=>{throw Error('Private EN geography: '+m);};
-const target=(type,slug)=>type==='country'?'/en-pilot-private/country/'+slug+'/':
-  type==='destination'?'/en-pilot-private/place/'+slug+'/':fail('Unsupported kind');
 export function validateGeoManifest(manifest){
  if(manifest?.schemaVersion!==1||manifest.locale!=='en'||manifest.publicationAuthorized!==false||
-    manifest.status!=='prepared_for_private_visual_pilot'||manifest.items?.length!==4)fail('Manifest gate');
+    manifest.status!=='prepared_for_private_visual_pilot'||manifest.items?.length!==7)fail('Manifest gate');
  const ids=manifest.items.map(x=>x.id);
- if(ids.join('|')!=='country_brazil|country_chile|country_colombia|destination_brazil_rio')fail('Exact four pilot IDs');
+ if(ids.join('|')!=='country_brazil|country_chile|country_colombia|destination_brazil_rio|destination_chile_ostrov_pashi|destination_colombia_bogota|destination_colombia_kartahena')fail('Exact seven pilot IDs');
  for(const m of manifest.items){
   if(!['country','destination'].includes(m.kind)||!good(m.slug)||!good(m.id)||
    !/^[a-f0-9]{40}$/.test(m.sourceBlobSha)||
@@ -50,6 +49,7 @@ export function validateGeoOverlay(m,overlay,source){
   if(!good(t.bestTime))fail('bestTime '+m.id);
  }
  if(m.kind==='destination'){
+  if(!/^country_[a-z0-9_]+$/.test(d.countryId))fail('Destination country ID '+m.id);
   if(!Array.isArray(t.facts)||t.facts.length!==d.facts.length||
      t.facts.some(x=>!good(x.value)||!good(x.label)))fail('Facts '+m.id);
  }
@@ -73,12 +73,12 @@ export function materializePrivateGeo(m,overlay,entry){
   searchAliases:(d.searchAliases??[]).filter(x=>typeof x==='string'&&!forbidden.test(x))
  };
  delete data.body;
- return {id:m.id,kind:m.kind,locale:'en',data,body:t.body,url:target(m.kind,m.slug)};
+ return {id:m.id,kind:m.kind,locale:'en',data,body:t.body,url:privateRouteForId(m.id)};
 }
 export async function readPrivateGeography(root,canonicalEntries){
  const base=resolve(root),m=JSON.parse(await readFile(join(base,manifestPath),'utf8'));
  const manifest=validateGeoManifest(m),map=new Map(canonicalEntries.map(e=>[e.data.id,e]));
- if(map.size!==4||manifest.some(item=>!map.has(item.id)))fail('Four RU geography records required');
+ if(map.size!==7||manifest.some(item=>!map.has(item.id)))fail('Seven RU geography records required');
  const result=[];
  for(const item of manifest){
   const bytes=await readFile(join(base,item.sourcePath));

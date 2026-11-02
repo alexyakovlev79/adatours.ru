@@ -14,6 +14,7 @@ import {readFile} from 'node:fs/promises';
 import {getCollection} from 'astro:content';
 import {readPrivateExcursionOverlays,pilotExcursionUrl} from '../../lib/i18n/private-excursions.mjs';
 import {readPrivateGeography} from '../../lib/i18n/private-geography.mjs';
+import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
 import {resolve,join} from 'node:path';
 import {
  PILOT_TOURS,privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
@@ -29,13 +30,14 @@ export async function getStaticPaths(){
  const records=await Promise.all(PILOT_TOURS.map(t=>json('rendered/'+t.id+'.json')));
  assertPilotRenderSource(records,summary);
  const countryIds=new Set(['country_brazil','country_chile','country_colombia']);
+ const destinationIds=new Set(['destination_brazil_rio','destination_chile_ostrov_pashi','destination_colombia_bogota','destination_colombia_kartahena']);
  const [ruCountries,ruPlaces]=await Promise.all([
   getCollection('countries',({data})=>data.locale==='ru'&&countryIds.has(data.id)),
-  getCollection('destinations',({data})=>data.locale==='ru'&&data.id==='destination_brazil_rio')
+  getCollection('destinations',({data})=>data.locale==='ru'&&destinationIds.has(data.id))
  ]);
  const geography=await readPrivateGeography(process.cwd(),[...ruCountries,...ruPlaces]);
  const geoCards=geography.map(g=>({
-  id:g.id,name:g.data.name,kind:g.kind,url:g.url,image:g.data.hero.src,alt:g.data.hero.alt
+  id:g.id,name:g.data.name,kind:g.kind,countryId:g.data.countryId??g.id,url:privateRouteForId(g.id),image:g.data.hero.src,alt:g.data.hero.alt
  }));
  const referencedIds=new Set(records.flatMap(r=>pilotExcursionDependencies(r.data.itinerary)));
  const ruExcursions=await getCollection('excursions',({data})=>data.locale==='ru'&&referencedIds.has(data.id));
@@ -58,11 +60,12 @@ export async function getStaticPaths(){
    nights:d.durationNights,photo:pilotMediaUrl(d.hero.src),
    alt:d.hero.alt||d.title};
  });
+ const paramForId=id=>privateRouteForId(id).replace(/^\/en-pilot-private\//,'').replace(/\/$/,'');
  return [
   {params:{path:'tours'},props:{kind:'catalog',cards,excursionCards,englishExcursions,geoCards}},
-  ...records.map(record=>({params:{path:'tour/'+record.data.slug},
+  ...records.map(record=>({params:{path:paramForId(record.id)},
    props:{kind:'tour',record,cards,excursionCards,englishExcursions,geoCards}})),
-  ...excursions.map(record=>({params:{path:'excursion/'+record.data.slug},
+  ...excursions.map(record=>({params:{path:paramForId(record.id)},
    props:{kind:'excursion',record,cards,excursionCards,englishExcursions,geoCards}}))
  ];
 }
@@ -75,7 +78,7 @@ interface ExcursionSummary {
  id:string;title:string;slug:string;lead:string;photo:string;alt:string;
  price?:number;currency?:string;duration?:string;tourIds:string[];
 }
-interface GeoSummary {id:string;name:string;kind:string;url:string;image:string;alt:string;}
+interface GeoSummary {id:string;name:string;kind:string;countryId:string;url:string;image:string;alt:string;}
 interface Props {
  kind:'catalog'|'tour'|'excursion';
  cards:TourSummary[];
@@ -120,12 +123,13 @@ const excursionStats=isExcursion ? [
   ...(typeof d.priceFrom==='number'?[{value:formatPilotPrice(d.priceFrom,d.currency),label:'Excursion price'}]:[]),
 ] : [];
 const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id===d.id)?.tourIds.includes(c.id)):[];
-const countryByTourId:Record<string,string>={
- tour_brazil_rio_four_days:'country_brazil',
- tour_chile_easter_island_3_days_2027:'country_chile',
- tour_colombia_essential_5_days:'country_colombia'
-};
-const tourCountry=isTour?geoCards.find(g=>g.id===countryByTourId[record?.id??'']):undefined;
+const mainCountryIds=isTour?(d.routeCountries?.length?d.routeCountries:d.countries):[];
+if(isTour&&(!Array.isArray(mainCountryIds)||mainCountryIds.length!==1))
+ throw Error('Private pilot requires one confirmed main country per Tour');
+const tourCountry=isTour?geoCards.find(g=>g.id===mainCountryIds[0]&&g.kind==='country'):undefined;
+if(isTour&&!tourCountry)throw Error('Missing source-verified EN Country for Tour '+record?.id);
+const routeDestinationIds=isTour?(d.routeDestinations?.length?d.routeDestinations:d.destinations):[];
+const tourPlaces=isTour?geoCards.filter(g=>g.kind==='destination'&&routeDestinationIds.includes(g.id)):[];
 
 ---
 <BaseLayout privatePreview lang="en" noindex title={pageTitle} description={pageDescription} showBreadcrumbs={false}>
@@ -213,7 +217,14 @@ const tourCountry=isTour?geoCards.find(g=>g.id===countryByTourId[record?.id??'']
             <h2 id="pilot-route-title">Places along the way</h2>
             <ul class="pilot-route-tags">{d.route.map((name:string)=><li>{name}</li>)}</ul>
             {tourCountry&&(
-              <p class="pilot-kicker"><a href={tourCountry.url}>Explore {tourCountry.name} <span aria-hidden="true">↗</span></a></p>
+              <p class="pilot-kicker"><a href={privateRouteForId(tourCountry.id)}>Explore {tourCountry.name} <span aria-hidden="true">↗</span></a></p>
+            )}
+            {tourPlaces.length>0&&(
+              <div class="pilot-place-links" data-pilot-tour-destinations={tourPlaces.length}>
+                {tourPlaces.map(place=>(
+                  <a href={privateRouteForId(place.id)}>Discover {place.name} <span aria-hidden="true">↗</span></a>
+                ))}
+              </div>
             )}
           </section>
         )}

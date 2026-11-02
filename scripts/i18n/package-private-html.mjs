@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Package 19 private EN pages including three countries, Rio, Tours and Excursions. */
+/** Package 22 private EN pages including three countries, four places, Tours and Excursions. */
 import fs from 'node:fs';
 import path from 'node:path';
 import {parse} from 'parse5';
@@ -15,7 +15,7 @@ const manifest=JSON.parse(fs.readFileSync('data/i18n/pilot-excursions/v1/manifes
 if(manifest.entries?.length!==11||manifest.publicationAuthorized!==false)
  throw Error('Private EN Excursion manifest missing');
 const geo=JSON.parse(fs.readFileSync('data/i18n/pilot-geography/v1/manifest.json','utf8'));
-if(geo.items?.length!==4||geo.publicationAuthorized!==false)throw Error('Private EN geography manifest missing');
+if(geo.items?.length!==7||geo.publicationAuthorized!==false)throw Error('Private EN geography manifest missing');
 const pages=[
  'en-pilot-private/tours/index.html',
  'en-pilot-private/tour/rio-de-janeiro-four-days/index.html',
@@ -40,14 +40,14 @@ for(const a of assets)copy(a);
 const readme=[
  'Ada Tours — PRIVATE EN HTML PILOT',
  '',
- 'Nineteen Astro-generated private preview HTML pages (3 Tours, 11 Excursions, 4 geography, 1 catalogue).',
+ 'Twenty-two Astro-generated private preview HTML pages (3 Tours, 11 Excursions, 7 geography, 1 catalogue).',
  'These are nonpublic internal preview files, not a live booking site.',
  'Run in this extracted folder (requires Python 3):',
  '',
  '  python3 -m http.server 8123 --directory .',
  '',
  'Open in a browser: http://localhost:8123/en-pilot-private/tours/',
- 'Navigate between all three English Tour pages, eleven Excursions and four geography pages.',
+ 'Navigate between all three English Tour pages, eleven Excursions, three countries and four destination pages.',
  '',
  'Tour images load from the existing https://img.adatours.ru CDN (internet required).',
  'The native enquiry form is disabled; no live POST form is enabled.',

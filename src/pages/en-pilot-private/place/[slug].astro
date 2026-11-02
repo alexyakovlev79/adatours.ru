@@ -7,13 +7,13 @@ export async function getStaticPaths(){
  if(!privatePilotEnabled(process.env))return [];
  const [countries,destinations]=await Promise.all([
   getCollection('countries',({data})=>data.locale==='ru'&&['country_brazil','country_chile','country_colombia'].includes(data.id)),
-  getCollection('destinations',({data})=>data.locale==='ru'&&data.id==='destination_brazil_rio')
+  getCollection('destinations',({data})=>data.locale==='ru'&&['destination_brazil_rio','destination_chile_ostrov_pashi','destination_colombia_bogota','destination_colombia_kartahena'].includes(data.id))
  ]);
  const records=await readPrivateGeography(process.cwd(),[...countries,...destinations]);
  return records.filter(x=>x.kind==='destination').map(record=>({
-  params:{slug:record.data.slug},props:{record}
+  params:{slug:record.data.slug},props:{record,allGeography:records}
  }));
 }
-const {record}=Astro.props;
+const {record,allGeography}=Astro.props;
 ---
-<PrivateGeographyPage record={record} />
+<PrivateGeographyPage record={record} allGeography={allGeography} />

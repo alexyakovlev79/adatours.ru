@@ -45,7 +45,7 @@ jobs:
       - name: Lifecycle and unit tests
         run: |
           node scripts/sync-archives.mjs
-          node --test tests/*.test.mjs tests/i18n/ru-fallback.test.mjs > /tmp/unit-tests.log 2>&1 || { tail -60 /tmp/unit-tests.log; exit 1; }
+          node --test tests/*.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs > /tmp/unit-tests.log 2>&1 || { tail -60 /tmp/unit-tests.log; exit 1; }
           tail -12 /tmp/unit-tests.log
 
       - name: Verify sealed nature/wildlife swarm editorial receipts

@@ -7,15 +7,16 @@ import PrivateGeographyPage from '../../../components/i18n/PrivateGeographyPage.
 export async function getStaticPaths({allowStaging=false}={}){
  if(!privatePilotEnabled(process.env)||(enStagingSiteEnabled(process.env)&&!allowStaging))return [];
  const options={privatePreview:true,root:process.cwd(),env:process.env};
- const [countries,destinations]=await Promise.all([
+ const [countries,destinations,tours]=await Promise.all([
   getAstroLocalizedCollection('countries','en',getCollection,options),
-  getAstroLocalizedCollection('destinations','en',getCollection,options)
+  getAstroLocalizedCollection('destinations','en',getCollection,options),
+  getAstroLocalizedCollection('tours','en',getCollection,options)
  ]);
  const allGeography=[...countries,...destinations];
  return destinations.map(record=>({
-  params:{slug:record.data.slug},props:{record,allGeography}
+  params:{slug:record.data.slug},props:{record,allGeography,allTours:tours}
  }));
 }
-const {record,allGeography}=Astro.props;
+const {record,allGeography,allTours}=Astro.props;
 ---
-<PrivateGeographyPage record={record} allGeography={allGeography} />
+<PrivateGeographyPage record={record} allGeography={allGeography} allTours={allTours} />

@@ -24,7 +24,7 @@ import { excursionHasDestination } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { compareToursForCountry } from '../lib/tour-ranking';
-import { tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
+import { buildDestinationDiscoveryModel } from '../lib/i18n/entity-discovery-model.mjs';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -47,14 +47,9 @@ const [allTourEntries, countryEntries, excursionEntries, destinationEntries] = a
   ),
 ]);
 
-const allRelatedTourEntries = allTourEntries.filter((item) =>
-  item.data.destinations.includes(d.id)
-);
-const mainTourEntries = allRelatedTourEntries.filter((item) =>
-  tourHasMainDestination(item.data, d.id)
-);
-const optionalTourEntries = allRelatedTourEntries.filter((item) =>
-  tourHasOptionalDestination(item.data, d.id)
+const { allRelatedTours: allRelatedTourEntries, mainTours: mainTourEntries,
+  optionalTours: optionalTourEntries, relatedDestinations } = buildDestinationDiscoveryModel(
+  d, { tours: allTourEntries, destinations: destinationEntries }
 );
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
 const destinationTourCounts = buildDestinationTourCounts(allTourEntries);
@@ -62,28 +57,6 @@ const relatedTours = mainTourEntries.sort(compareToursForCountry(d.countryId));
 const optionalTours = optionalTourEntries.sort(compareToursForCountry(d.countryId));
 const relatedExcursions = excursionEntries
   .sort(compareExcursionsByPopularity(excursionTourCounts));
-const destinationTourOverlap = new Map<string, number>();
-
-for (const tour of allRelatedTourEntries) {
-  const uniqueDestinationIds = new Set(
-    tour.data.destinations.filter((destinationId) => destinationId !== d.id)
-  );
-
-  for (const destinationId of uniqueDestinationIds) {
-    destinationTourOverlap.set(
-      destinationId,
-      (destinationTourOverlap.get(destinationId) ?? 0) + 1
-    );
-  }
-}
-
-const relatedDestinations = destinationEntries
-  .filter((item) => item.data.id !== d.id && destinationTourOverlap.has(item.data.id))
-  .sort((a, b) =>
-    (destinationTourOverlap.get(b.data.id) ?? 0) - (destinationTourOverlap.get(a.data.id) ?? 0) ||
-    a.data.name.localeCompare(b.data.name, 'ru')
-  )
-  .slice(0, 10);
 // Compute map and the recommendation block from the same selection/order.
 // Unpublished or unverified neighbors are filtered by the shared GEO index.
 const geoMapData = await (await import('../lib/geo-map-astro')).buildPageGeoMap(

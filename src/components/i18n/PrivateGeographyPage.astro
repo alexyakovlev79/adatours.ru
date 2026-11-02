@@ -10,9 +10,10 @@ import {renderPilotMarkdown} from '../../lib/i18n/pilot-html.mjs';
 import {withBase} from '../../lib/paths';
 import {enStagingSiteEnabled} from '../../lib/i18n/en-staging-site.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
+import {buildCountryDiscoveryModel,buildDestinationDiscoveryModel} from '../../lib/i18n/entity-discovery-model.mjs';
 
-interface Props { record:any; allGeography:any[]; }
-const {record,allGeography}=Astro.props as Props;
+interface Props { record:any; allGeography:any[]; allTours:any[]; }
+const {record,allGeography,allTours}=Astro.props as Props;
 const allowedIds=new Set([
  'country_brazil','country_chile','country_colombia',
  'destination_brazil_rio','destination_chile_ostrov_pashi',
@@ -28,25 +29,14 @@ const countryId=isCountry?record.id:d.countryId;
 const country=allGeography.find(x=>x.kind==='country'&&x.id===countryId);
 if(!country||country.url!==privateRouteForId(countryId))
  throw Error('English geography lacks the exact canonical country');
-const nearby=allGeography.filter(x=>x.kind==='destination'&&
- x.data.countryId===countryId&&x.id!==record.id);
-const featuredTourIds:Record<string,string>={
- country_brazil:'tour_brazil_rio_four_days',
- country_chile:'tour_chile_easter_island_3_days_2027',
- country_colombia:'tour_colombia_essential_5_days',
- destination_brazil_rio:'tour_brazil_rio_four_days',
- destination_chile_ostrov_pashi:'tour_chile_easter_island_3_days_2027',
- destination_colombia_bogota:'tour_colombia_essential_5_days',
- destination_colombia_kartahena:'tour_colombia_essential_5_days'
-};
-const featuredTourTitles:Record<string,string>={
- tour_brazil_rio_four_days:'Rio de Janeiro in four days',
- tour_chile_easter_island_3_days_2027:'Easter Island in three days',
- tour_colombia_essential_5_days:'Colombia in five days'
-};
-const featuredId=featuredTourIds[record.id];
-const featuredTitle=featuredTourTitles[featuredId];
-const featuredHref=privateRouteForId(featuredId);
+// One shared relation model: only verified EN entities can become links.
+const verifiedPlaces=allGeography.filter(x=>x.kind==='destination');
+const discovery=isCountry
+ ? buildCountryDiscoveryModel(d,{tours:allTours,destinations:verifiedPlaces},{strictLocalized:true})
+ : buildDestinationDiscoveryModel(d,{tours:allTours,destinations:verifiedPlaces},{strictLocalized:true});
+const nearby=isCountry?discovery.destinations:discovery.relatedDestinations;
+const featuredTours=isCountry?discovery.tours:
+ discovery.mainTours.length?discovery.mainTours:discovery.optionalTours;
 const body=renderPilotMarkdown(record.body);
 const isStaging=enStagingSiteEnabled(process.env);
 ---
@@ -82,7 +72,7 @@ const isStaging=enStagingSiteEnabled(process.env);
       <div class="container">
         <p class="eyebrow">BUILD YOUR JOURNEY</p>
         <h2>{isCountry?'Explore '+d.name+' with Ada Tours':'Continue exploring '+country.data.name}</h2>
-        <div class="private-geo-links">
+        <div class="private-geo-links" data-pilot-related-tours={featuredTours.length} data-pilot-related-places={nearby.length}>
           {!isCountry&&(
             <a href={withBase(country.url)}>
               <strong>Explore {country.data.name}</strong><span aria-hidden="true">↗</span>
@@ -93,9 +83,11 @@ const isStaging=enStagingSiteEnabled(process.env);
               <strong>Discover {place.data.name}</strong><span aria-hidden="true">↗</span>
             </a>
           ))}
-          <a href={withBase(featuredHref)}>
-            <strong>{featuredTitle}</strong><span aria-hidden="true">↗</span>
-          </a>
+          {featuredTours.map((tour:any)=>(
+            <a href={withBase(privateRouteForId(tour.data.id))}>
+              <strong>{tour.data.title}</strong><span aria-hidden="true">↗</span>
+            </a>
+          ))}
         </div>
       </div>
     </section>

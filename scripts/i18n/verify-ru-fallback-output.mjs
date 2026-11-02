@@ -19,7 +19,7 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
    const robots=find(dom,x=>x.tagName==='meta'&&attr(x,'name')==='robots');
    if(attr(html,'lang')!=='ru'||attr(html,'data-ada-ru-fallback')!=='true'||
      robots.length!==1||attr(robots[0],'content')!=='noindex,nofollow,noarchive,nosnippet'||
-     !find(dom,x=>x.tagName==='aside'&&attr(x,'data-ada-translation-notice')==='ru').length||
+     find(dom,x=>x.tagName==='aside'&&attr(x,'data-ada-translation-notice')!==null).length||
      find(dom,x=>x.tagName==='form'&&(
        attr(x,'data-ada-staging-inert-form')!=='true'||attr(x,'inert')===null||
        attr(x,'data-lead-form')!==null||attr(x,'method')==='post')||

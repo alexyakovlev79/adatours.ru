@@ -48,7 +48,9 @@ fs.writeFileSync(path.join(output,'robots.txt'),'User-agent: *\nDisallow: /\n');
 fs.writeFileSync(path.join(output,'.nojekyll'),'');
 const html=(p)=>fs.readdirSync(p,{withFileTypes:true}).flatMap(x=>x.isDirectory()?html(path.join(p,x.name)):x.name.endsWith('.html')?[path.join(p,x.name)]:[]);
 const siteHtml=html(output);
-if(siteHtml.length!==1+ruFallback.ruFallbackPages||siteHtml.some(p=>!p.startsWith(path.join(output,'en')+path.sep)&&p!==path.join(output,'index.html')))
+if(siteHtml.length!==1+ruFallback.ruFallbackPages+ruFallback.sharedFragments||
+ siteHtml.some(p=>!p.startsWith(path.join(output,'en')+path.sep)&&
+  !p.startsWith(path.join(output,'shared')+path.sep)&&p!==path.join(output,'index.html')))
  fail('Non-EN HTML escaped staging filter');
 if(fs.existsSync(path.join(output,'CNAME'))||fs.existsSync(path.join(output,'sitemap-index.xml')))
  fail('RU Pages configuration leaked');

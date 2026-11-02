@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {enStagingSiteEnabled,EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
+import {stageRussianFallback} from './ru-fallback.mjs';
 const fail=m=>{throw Error('EN Pages deployment staging: '+m)};
 if(!enStagingSiteEnabled(process.env))fail('Not a verified EN GitHub Pages context');
 const dist=path.resolve(process.argv[2]||'dist');
@@ -18,6 +19,7 @@ for(const folder of ['en','_astro','brand']){
  if(!fs.existsSync(read(folder)))fail('Required site asset missing '+folder);
  fs.cpSync(read(folder),path.join(output,folder),{recursive:true});
 }
+const ruFallback=stageRussianFallback({dist,output});
 for(const file of ['favicon.svg','favicon.ico','favicon-48x48.png','favicon-32x32.png','favicon-16x16.png','apple-touch-icon.png']){
  if(fs.existsSync(read(file)))fs.copyFileSync(read(file),path.join(output,file));
 }
@@ -28,9 +30,14 @@ fs.writeFileSync(path.join(output,'robots.txt'),'User-agent: *\nDisallow: /\n');
 fs.writeFileSync(path.join(output,'.nojekyll'),'');
 const html=(p)=>fs.readdirSync(p,{withFileTypes:true}).flatMap(x=>x.isDirectory()?html(path.join(p,x.name)):x.name.endsWith('.html')?[path.join(p,x.name)]:[]);
 const siteHtml=html(output);
-if(siteHtml.length!==23||siteHtml.some(p=>!p.startsWith(path.join(output,'en')+path.sep)&&p!==path.join(output,'index.html')))
+if(siteHtml.length!==23+ruFallback.ruFallbackPages||siteHtml.some(p=>!p.startsWith(path.join(output,'en')+path.sep)&&p!==path.join(output,'index.html')))
  fail('Non-EN HTML escaped staging filter');
 if(fs.existsSync(path.join(output,'CNAME'))||fs.existsSync(path.join(output,'sitemap-index.xml')))
  fail('RU Pages configuration leaked');
+// Keep the artifact inside GitHub Pages' supported 1 GB site limit.
+const bytes=fs.readdirSync(output,{recursive:true,withFileTypes:true})
+ .filter(x=>x.isFile()).reduce((sum,x)=>sum+fs.statSync(path.join(x.parentPath,x.name)).size,0);
+if(bytes>950_000_000)fail('Staging artifact exceeds conservative 950 MB budget: '+bytes);
 console.log(JSON.stringify({status:'ready_for_dedicated_github_pages',htmlPages:siteHtml.length,
- enPages:22,rootRedirect:true,output,sourceFiles:'single Ada Tours repo',liveForms:false}));
+ enPages:22,ruFallback,rootRedirect:true,bytes,output,
+ sourceFiles:'single Ada Tours repo',liveForms:false}));

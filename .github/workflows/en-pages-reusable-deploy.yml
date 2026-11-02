@@ -84,9 +84,11 @@ jobs:
           node --test tests/i18n/en-staging-site.test.mjs
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
+          node --test tests/i18n/ru-fallback.test.mjs
           npx astro build
           node scripts/i18n/verify-en-pages-site.mjs dist
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
+          node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:

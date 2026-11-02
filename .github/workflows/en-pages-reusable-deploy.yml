@@ -28,18 +28,28 @@ jobs:
           repository: alexyakovlev79/adatours.ru
           ref: main
           path: website
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/checkout@v4
         with:
           repository: alexyakovlev79/adatours.ru
           ref: ab27248954bb71fe6582bf796d73626ea8502d5f
           path: word-preview
+          sparse-checkout: data/i18n/pilot-previews/v1
+          sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/checkout@v4
         with:
           repository: alexyakovlev79/adatours.ru
           ref: main
           path: canonical-main
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
@@ -86,7 +96,9 @@ jobs:
           node --check scripts/i18n/prepare-en-pages-site.mjs
           node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs
           npx astro build
+          npx pagefind --site dist
           node scripts/i18n/verify-en-pages-site.mjs dist
+          node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
       - uses: actions/configure-pages@v5

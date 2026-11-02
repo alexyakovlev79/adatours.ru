@@ -19,9 +19,11 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
    const robots=find(dom,x=>x.tagName==='meta'&&attr(x,'name')==='robots');
    if(attr(html,'lang')!=='ru'||attr(html,'data-ada-ru-fallback')!=='true'||
      robots.length!==1||attr(robots[0],'content')!=='noindex,nofollow,noarchive,nosnippet'||
-     !find(dom,x=>x.tagName==='aside'&&attr(x,'data-ada-translation-notice')==='ru').length||
-     find(dom,x=>x.tagName==='form'||x.tagName==='iframe'||x.tagName==='script'&&
-       !attr(x,'src')?.startsWith(EN_STAGING_BASE+'_astro/')).length||
+     find(dom,x=>x.tagName==='aside'&&attr(x,'data-ada-translation-notice')!==null).length||
+     find(dom,x=>x.tagName==='form'&&(
+       attr(x,'data-ada-staging-inert-form')!=='true'||attr(x,'inert')===null||
+       attr(x,'data-lead-form')!==null||attr(x,'method')==='post')||
+       x.tagName==='script'&&!attr(x,'src')?.startsWith(EN_STAGING_BASE+'_astro/')).length||
      find(dom,x=>x.tagName==='link'&&attr(x,'rel')==='canonical').length)
      fail('Fallback security/identity '+name);
    for(const link of find(dom,x=>x.tagName==='a')){
@@ -40,14 +42,32 @@ const visit=p=>{for(const e of fs.readdirSync(p,{withFileTypes:true})){
  }
 }};
 visit(path.join(root,'en'));
-if(count<1000)fail('Missing Russian fallback pages: '+count);
-for(const target of ['en/index.html','en/brazil/index.html','en/about/index.html','en/tours-ru/index.html']){
+if(count<6000)fail('Incomplete canonical RU mirror: '+count);
+if(!fs.existsSync(path.join(root,'pagefind/pagefind.js')))fail('Missing full-site Pagefind search assets');
+for(const target of ['en/index.html','en/brazil/index.html','en/about/index.html','en/tours/index.html','en/country/index.html','en/places/index.html','en/excursions/index.html','en/interests/index.html','en/multi-country/index.html','en/mice/index.html','en/dmc/index.html']){
  const file=path.join(root,target);
  if(!fs.existsSync(file)||!fs.readFileSync(file,'utf8').includes('data-ada-ru-fallback'))
   fail('Missing expected Russian fallback: '+target);
 }
-const english=fs.readFileSync(path.join(root,'en/tours/index.html'),'utf8');
-if(!english.includes('lang="en"')||english.includes('data-ada-ru-fallback'))
- fail('Native EN route was overwritten by RU fallback');
-console.log(JSON.stringify({status:'passed',russianFallbackPages:count,englishPagesRetained:true,
+const fullTours=fs.readFileSync(path.join(root,'en/tours/index.html'),'utf8');
+if(!fullTours.includes('lang="ru"')||fullTours.includes('data-ada-translation-notice'))
+ fail('Limited three-Tour EN showcase displaced full canonical catalogue');
+const homepage=fs.readFileSync(path.join(root,'en/index.html'),'utf8');
+if(!homepage.includes('data-site-shell-src="'+EN_STAGING_BASE+'shared/site-shell-')||
+   !homepage.includes('data-site-shell="search"'))
+ fail('Shared header/search/footer loader missing');
+const shared=path.join(root,'shared');
+const fragments=fs.existsSync(shared)?fs.readdirSync(shared).filter(p=>/^site-shell-[a-f0-9]+\.html$/.test(p)):[];
+if(fragments.length!==1)fail('Expected exactly one copied shared site shell');
+const sharedHtml=fs.readFileSync(path.join(shared,fragments[0]),'utf8');
+if(!sharedHtml.includes('data-search-overlay')||!sharedHtml.includes('data-search-open')||
+   !sharedHtml.includes('data-search-base="'+EN_STAGING_BASE+'en/"'))
+ fail('Shared navigation/search not mirrored for English routes');
+if(/data-lazy-src=|data-lazy-srcset=|data-lazy-style=/.test(homepage))
+ fail('Staged homepage retains unloaded image placeholders');
+if(!homepage.includes('https://img.adatours.ru/media/'))
+ fail('Shared CDN hero/photo assets missing from homepage');
+if(/data-ada-translation-notice|This page is currently available in Russian/i.test(homepage))
+ fail('Unrequested translation banner');
+console.log(JSON.stringify({status:'passed',russianFallbackPages:count,canonicalFullSite:true,
  noindex:true,canonicalSuppressed:true,formsDisabled:true,checkedInternalLinks}));

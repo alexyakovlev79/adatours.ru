@@ -57,14 +57,24 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.ref_name }}
           path: website
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
       - uses: actions/checkout@v4
         with:
           ref: ab27248954bb71fe6582bf796d73626ea8502d5f
           path: source-preview
+          sparse-checkout: data/i18n/pilot-previews/v1
+          sparse-checkout-cone-mode: false
       - uses: actions/checkout@v4
         with:
           ref: main
           path: production
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -98,7 +108,9 @@ jobs:
           node --check scripts/i18n/prepare-en-pages-site.mjs
           node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs
           npx astro build
+          npx pagefind --site dist
           node scripts/i18n/verify-en-pages-site.mjs dist
+          node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022

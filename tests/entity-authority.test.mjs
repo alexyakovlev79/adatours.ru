@@ -121,7 +121,7 @@ test('incidental press mentions remain distinct from interviews and internal evi
 });
 
 test('implemented authority pages activate the seven saved sources while preserving the evidence decisions',()=>{
-  assert.equal(getAuthorityPageSources('/press/').length,15);
+  assert.equal(getAuthorityPageSources('/press/').length,61);
   assert.equal(getAuthorityPageSources('/webinars/').length,7);
   assert.equal(getAuthorityPageSources('/partners/').length,7);
   assert.equal(getAuthorityPageSources('/unregistered/').length,0);
@@ -130,21 +130,40 @@ test('implemented authority pages activate the seven saved sources while preserv
   for (const source of authorityRegistry.sources) assert.ok(source.displayOn.length);
 });
 
-test('press is a collection of fifteen visible articles plus trade-show evidence without turning incidental mentions into subjectOf',()=>{
+test('press lists verified publications and trade-show evidence without turning comparisons into subjectOf',()=>{
   const nodes=graph('/press/',collectionFacts('/press/'));
   const page=entity(nodes,root+'press/#webpage');
   const list=entity(nodes,page.mainEntity['@id']);
   assert.ok(hasType(page,'CollectionPage'));
-  assert.equal(list.numberOfItems,15);
+  assert.equal(list.numberOfItems,61);
   assert.deepEqual(list.itemListElement.map((item)=>item.url),getAuthorityPageSources('/press/').map((source)=>source.url));
-  assert.equal(nodes.filter((node)=>hasType(node,'Article')||hasType(node,'NewsArticle')).length,15);
-  assert.equal(page.citation.length,24);
+  assert.equal(nodes.filter((node)=>hasType(node,'Article')||hasType(node,'NewsArticle')).length,61);
+  assert.equal(page.citation.length,70);
   const photoReport=authorityRegistry.sources.find((source)=>source.id==='anna-me-wtm-2024');
   const report=entity(nodes,photoReport.url+'#article');
   assert.ok(report.mentions.some((item)=>item['@id']===annaId));
   assert.equal(report.about,undefined);
   assert.ok(!entity(nodes,annaId).subjectOf.some((item)=>item['@id']===report['@id']));
   assert.deepEqual(entity(nodes,orgId).sameAs,entity(graph('/about/'),orgId).sameAs);
+});
+
+test('rankings mention Ada Tours while dedicated contractor cases describe the company',()=>{
+  const nodes=graph('/press/',collectionFacts('/press/'));
+  const company=entity(nodes,orgId);
+  const ranking=entity(nodes,'https://www.sostav.ru/blogs/292167/106827#article');
+  const caseStudy=entity(nodes,'https://gaeo.ru/cases/ada-tours-rost-neyrovidimosti-za-2-nedeli/#article');
+  assert.deepEqual(ranking.mentions,[{'@id':orgId}]);
+  assert.equal(ranking.about,undefined);
+  assert.ok(!company.subjectOf.some((item)=>item['@id']===ranking['@id']));
+  assert.deepEqual(caseStudy.about,[{'@id':orgId}]);
+  assert.ok(company.subjectOf.some((item)=>item['@id']===caseStudy['@id']));
+  for(const source of getAuthorityPageSources('/press/').filter((s)=>s.id.startsWith('publication-'))) {
+    assert.ok(!company.sameAs.includes(source.url));
+    const work=entity(nodes,source.url+'#article');
+    assert.equal(work.aggregateRating,undefined);
+    assert.equal(work.reviewRating,undefined);
+  }
+  assert.ok(!nodes.some((n)=>n.url==='https://www.sostav.ru/blogs/292167/107553'));
 });
 
 test('webinar collection lists six events and keeps the visible interview as a separate citation',()=>{

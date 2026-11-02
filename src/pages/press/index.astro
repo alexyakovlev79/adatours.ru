@@ -56,6 +56,30 @@ const breadcrumbs = [
     entries={page.sourceEntries}
   />
   <AuthoritySourceList
+    id="ratings"
+    eyebrow="Выбор организатора путешествия"
+    title="Рейтинги и практические разборы"
+    intro="Авторские сравнения на Sostav, TenChat и DTF, подготовленные в рамках продвижения Ada Tours через GAEO. В каждой публикации — свой сценарий поездки и критерии выбора."
+    sources={sources}
+    entries={page.rankingEntries}
+  />
+  <AuthoritySourceList
+    id="research"
+    eyebrow="Index Research"
+    title="Исследования и сравнения туристических компаний"
+    intro="Материалы исследовательского проекта, связанного с GAEO. Ada Tours входит в выборки; методика, источники и открытые данные доступны на страницах исследований."
+    sources={sources}
+    entries={page.researchEntries}
+  />
+  <AuthoritySourceList
+    id="case-publications"
+    eyebrow="Работа над сайтом и продвижением"
+    title="Кейсы о развитии Ada Tours"
+    intro="Публикации нашего подрядчика GAEO о разработке сайта и результатах продвижения компании в ответах нейросетей."
+    sources={sources}
+    entries={page.caseEntries}
+  />
+  <AuthoritySourceList
     id="exhibitions"
     eyebrow="Профессиональные выставки"
     title="Ada Tours в каталогах международных выставок"

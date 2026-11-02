@@ -112,6 +112,12 @@ jobs:
       - name: Install isolated Astro 7 build dependencies
         working-directory: website
         run: npm install --no-audit --no-fund
+      - name: Fail fast on EN script and shared relation model syntax
+        working-directory: website
+        run: |
+          node --check scripts/i18n/verify-private-html.mjs
+          node --check scripts/i18n/package-private-html.mjs
+          node --check src/lib/i18n/entity-geography-model.mjs
       - name: Run pure private preview gates and HTML renderer unit tests
         working-directory: website
         run: node --test tests/i18n/pilot-html.test.mjs tests/i18n/private-excursions.test.mjs tests/i18n/private-geography.test.mjs tests/i18n/locale-entity-routes.test.mjs tests/i18n/astro-locale-collection.test.mjs tests/i18n/entity-geography-model.test.mjs

@@ -4,7 +4,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {parse} from 'parse5';
 import {PILOT_TOURS,pilotCatalogUrl,pilotTourUrl,formatPilotPrice} from '../../src/lib/i18n/pilot-html.mjs';
-import {privateRouteForId} from '../../src/lib/i18n/locale-entity-routes.mjs';
 import {privatePilotRouteIndex,privateRouteForId} from '../../src/lib/i18n/locale-entity-routes.mjs';
 const root=path.resolve(process.argv[2]||'dist');
 const fail=s=>{throw Error('EN HTML pilot: '+s)};

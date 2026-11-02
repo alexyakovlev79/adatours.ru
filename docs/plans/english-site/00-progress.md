@@ -365,3 +365,20 @@ Extended the source-bound private EN pilot to Chile and Colombia alongside Brazi
 ## Checkpoint 2026-11-02 — 22 private EN HTML pages and stable-ID routes
 
 Three source-bound English Destination overlays were added for Easter Island, Bogotá and Cartagena (26 gallery captions). The closed pilot now has **22 verified HTML pages**: 3 Tour, 11 canonical Excursion, 3 Country, 4 Destination and one catalogue. A portable stable-ID locale route index rejects missing translations and duplicate/unsafe paths; Tour geography links are derived from canonical country/destination IDs. See [24-22-page-private-source-bound-routes.md](24-22-page-private-source-bound-routes.md). Code [`67a99570`](https://github.com/alexyakovlev79/adatours.ru/commit/67a99570a81eecacaf3a7219d7d33dc1df862d81); [foundation CI #41400199246](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41400199246) and [private HTML CI #41400199202](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41400199202) both **success**. Artifact `ada-en-private-visual-22-pages` ID `13121635189` (expires 2026-11-16). Public EN, `main`, live forms, mass translation and pricing remain unchanged; next is production-style common locale collection/layout integration.
+
+
+## Checkpoint 2026-11-02 — private Astro locale collection bridge
+
+Existing strict `getLocalizedCollection()` from `src/lib/i18n/content-adapter.mjs`
+is now connected through `src/lib/i18n/astro-locale-collection.mjs` to the
+22-page nonpublic EN Astro route generators. The adapter reuses RU canonical
+facts and media, verifies the pinned 3 Tour SHA-256 and 11 Excursion plus
+7 geography Git blob fingerprints, retains 21 stable IDs and fails closed
+on missing English or public release. [Code `ef19e29c`](https://github.com/alexyakovlev79/adatours.ru/commit/ef19e29cfd23bca20f11516df8511e83192e5bcc).
+[Foundation #41402962535](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41402962535)
+and [private HTML #41402962545](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41402962545)
+both **success**. Latest 22-page artifact ID `13121709827` expires 2026-11-16.
+Full handoff: [25-astro-locale-collection-bridge.md](25-astro-locale-collection-bridge.md).
+Public `main`, forms, EN DNS, mass translation and release gates remain unchanged.
+Next: actual production-style locale awareness in the full shared
+Tour/Country/Destination/Excursion layouts, then EN SEO/search/forms.

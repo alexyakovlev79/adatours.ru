@@ -68,16 +68,17 @@ export function compactSafeHtml(html) {
     html=html.slice(0,edit.start)+edit.text+html.slice(edit.end);
   return html;
 }
-async function* htmlFiles(dir){for(const e of await f.readdir(dir,{withFileTypes:true})){
+async function* htmlFiles(dir,skipEn=false,atRoot=true){for(const e of await f.readdir(dir,{withFileTypes:true})){
+  if(atRoot&&skipEn&&['en','en-pilot-private'].includes(e.name))continue;
   if(['media','pagefind','shared'].includes(e.name))continue;const p=path.join(dir,e.name);
-  if(e.isDirectory())yield* htmlFiles(p);else if(e.isFile()&&e.name.endsWith('.html'))yield p;
+  if(e.isDirectory())yield* htmlFiles(p,skipEn,false);else if(e.isFile()&&e.name.endsWith('.html'))yield p;
 }}
 async function size(dir){let total=0;for(const e of await f.readdir(dir,{withFileTypes:true})){
   const p=path.join(dir,e.name);total+=e.isDirectory()?await size(p):e.isFile()?(await f.stat(p)).size:0;
 }return total}
-export async function dedupeSiteShell(dir=path.resolve('dist')){
+export async function dedupeSiteShell(dir=path.resolve('dist'),{skipEn=false}={}){
   let common=null,href='',pages=0,redirects=0,saved=0,compacted=0;
-  for await(const file of htmlFiles(dir)){
+  for await(const file of htmlFiles(dir,skipEn)){
     let html=await f.readFile(file,'utf8');if(!html.includes('<header class="site-header')){redirects++;continue}
     // Keep the interactive form in SSR HTML so its country selector, input
     // handlers and modal attach to the actual node without shell hydration.
@@ -110,4 +111,4 @@ export async function dedupeSiteShell(dir=path.resolve('dist')){
   if(bytes>950_000_000)throw Error('Site size target exceeded (950 MB): '+bytes);
   return {pages,redirects,href,saved,bytes};
 }
-if(process.argv[1]&&path.resolve(fileURLToPath(import.meta.url))===path.resolve(process.argv[1]))await dedupeSiteShell(process.argv[2]?path.resolve(process.argv[2]):path.resolve('dist'));
+if(process.argv[1]&&path.resolve(fileURLToPath(import.meta.url))===path.resolve(process.argv[1]))await dedupeSiteShell(process.argv[2]?path.resolve(process.argv[2]):path.resolve('dist'),{skipEn:process.argv.includes('--skip-en')});

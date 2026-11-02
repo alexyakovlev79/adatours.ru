@@ -100,6 +100,7 @@ jobs:
           npx astro build
           npx pagefind --site dist
           node scripts/i18n/verify-en-pages-site.mjs dist
+          node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
           test "$(find ../en-pages-site/en -name index.html | wc -l)" -ge 1022

@@ -53,8 +53,16 @@ const fullTours=fs.readFileSync(path.join(root,'en/tours/index.html'),'utf8');
 if(!fullTours.includes('lang="ru"')||fullTours.includes('data-ada-translation-notice'))
  fail('Limited three-Tour EN showcase displaced full canonical catalogue');
 const homepage=fs.readFileSync(path.join(root,'en/index.html'),'utf8');
-if(!homepage.includes('data-search-overlay')||!homepage.includes('data-search-open'))
- fail('Full-site search controls missing');
+if(!homepage.includes('data-site-shell-src="'+EN_STAGING_BASE+'shared/site-shell-')||
+   !homepage.includes('data-site-shell="search"'))
+ fail('Shared header/search/footer loader missing');
+const shared=path.join(root,'shared');
+const fragments=fs.existsSync(shared)?fs.readdirSync(shared).filter(p=>/^site-shell-[a-f0-9]+\.html$/.test(p)):[];
+if(fragments.length!==1)fail('Expected exactly one copied shared site shell');
+const sharedHtml=fs.readFileSync(path.join(shared,fragments[0]),'utf8');
+if(!sharedHtml.includes('data-search-overlay')||!sharedHtml.includes('data-search-open')||
+   !sharedHtml.includes('data-search-base="'+EN_STAGING_BASE+'en/"'))
+ fail('Shared navigation/search not mirrored for English routes');
 if(/data-lazy-src=|data-lazy-srcset=|data-lazy-style=/.test(homepage))
  fail('Staged homepage retains unloaded image placeholders');
 if(!homepage.includes('https://img.adatours.ru/media/'))

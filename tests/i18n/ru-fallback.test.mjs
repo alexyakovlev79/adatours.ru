@@ -11,7 +11,7 @@ const source=()=>[
  '<link rel="canonical" href="https://adatours.ru/">',
  '<meta property="og:title" content="RU">',
  '<script type="application/ld+json">{"@type":"TouristTrip"}</script>',
- '</head><body><header><button data-search-open>Поиск</button></header>',
+ '</head><body><header data-site-shell-src="/shared/site-shell-123.html"><button data-search-open>Поиск</button></header>',
  '<div data-search-overlay data-pagefind-bundle="/adatours-en/pagefind/" data-search-base="/adatours-en/"></div>',
  '<section class="hero"><img class="hero__media" src="/adatours-en/media/home/hero.webp" fetchpriority="high"></section>',
  '<hero-background-video><template data-static-hero><img src="/adatours-en/media/home/video-hero.webp"></template><video data-src="/adatours-en/media/video/hero.mp4"></video></hero-background-video>',
@@ -43,6 +43,7 @@ test('canonical mirror keeps Hero, videos, lazy images, full search and safe vis
  assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/hero\.webp/);
  assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/bg\.webp/);
  assert.match(html,/data-search-open/);
+ assert.match(html,/data-site-shell-src="\/adatours-en\/shared\/site-shell-123\.html"/);
  assert.match(html,/data-search-overlay/);
  assert.match(html,/data-search-base="\/adatours-en\/en\/"/);
  assert.match(html,/_astro\/site\.js/);
@@ -62,6 +63,8 @@ test('all public canonical RU routes mirror exactly once and old aliases are exc
    const folder=path.join(dist,part);fs.mkdirSync(folder,{recursive:true});
    fs.writeFileSync(path.join(folder,'index.html'),source());
   }
+  fs.mkdirSync(path.join(dist,'shared'),{recursive:true});
+  fs.writeFileSync(path.join(dist,'shared/site-shell-123.html'),source());
   fs.mkdirSync(path.join(dist,'old-brazil'),{recursive:true});
   fs.writeFileSync(path.join(dist,'old-brazil','index.html'),
    '<!doctype html><html lang="ru"><head><meta http-equiv="refresh" content="0;url=/adatours-en/brazil/"></head><body>Redirect</body></html>');
@@ -73,6 +76,8 @@ test('all public canonical RU routes mirror exactly once and old aliases are exc
   assert.equal(r.redirectAliases,1);
   assert.equal(r.ruFallbackPages,3);
   assert.equal(r.fullCatalogueAlias,0);
+  assert.equal(r.sharedFragments,1);
+  assert.ok(fs.existsSync(path.join(out,'shared/site-shell-123.html')));
   const html=fs.readFileSync(path.join(out,'en','index.html'),'utf8');
   assert.match(html,/data-ada-ru-fallback/);
   assert.match(html,/https:\/\/adatours\.ru\/old-brazil\//);

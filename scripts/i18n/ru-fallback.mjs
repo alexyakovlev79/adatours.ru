@@ -62,6 +62,8 @@ export function russianFallbackHtml(source,route,known){
    n.attrs=n.attrs.filter(a=>!['data-lazy-style','data-lazy-background'].includes(a.name));}
   if(n.tagName==='picture')n.attrs=n.attrs.filter(a=>a.name!=='data-lazy-picture');
   if(n.attrs?.some(a=>a.name==='data-search-overlay'))set(n,'data-search-base',EN_STAGING_BASE+'en/');
+  const fragment=get(n,'data-site-shell-src');
+  if(fragment?.startsWith('/shared/'))set(n,'data-site-shell-src',EN_STAGING_BASE+fragment.slice(1));
  }
  const linkTo=href=>{
   if(!href||/^(?:https?:|mailto:|tel:|javascript:)/i.test(href))return href;
@@ -124,6 +126,21 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
   if(bytes>maxBytes)fail('Fallback HTML exceeds Pages size budget');
  }
  if(added+existing+redirects!==pages.length||added<minPages-300)fail('Incomplete fallback');
+ // The deduplicated header/search/footer is one real asset, not optional UI.
+ // Its links and image sources must be rebased just like ordinary pages.
+ const sourceShared=path.join(root,'shared');
+ let sharedFragments=0;
+ if(fs.existsSync(sourceShared)){
+  const outShared=path.join(target,'shared');
+  fs.mkdirSync(outShared,{recursive:true});
+  for(const item of fs.readdirSync(sourceShared,{withFileTypes:true})){
+   if(!item.isFile()||!/^site-shell-[a-f0-9]+\.html$/.test(item.name))continue;
+   const rendered=russianFallbackHtml(fs.readFileSync(path.join(sourceShared,item.name),'utf8'),'/',known);
+   if(!rendered)fail('Invalid shared HTML fragment '+item.name);
+   fs.writeFileSync(path.join(outShared,item.name),rendered);
+   sharedFragments++;bytes+=Buffer.byteLength(rendered);
+  }
+ }
  // The native EN /tours/ contains three translated journeys. A separate
  // first page keeps the full canonical RU catalogue reachable.
  let fullCatalogueAlias=0;
@@ -138,5 +155,5 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  }
  if(bytes>maxBytes)fail('Fallback HTML exceeds Pages budget');
  return {ruSourcePages:pages.length,ruFallbackPages:added+fullCatalogueAlias,
-  englishPrecedence:existing,redirectAliases:redirects,fullCatalogueAlias,bytes};
+  englishPrecedence:existing,redirectAliases:redirects,fullCatalogueAlias,sharedFragments,bytes};
 }

@@ -85,6 +85,13 @@ export function russianFallbackHtml(source,route,known){
   const href=get(a,'href');if(href!==null)set(a,'href',linkTo(href));
   a.attrs=a.attrs?.filter(x=>x.name!=='data-lead-modal')??[];
  }
+ // Script-driven filters navigate through data-href rather than anchor href.
+ // Keep country/interest/VIP selectors in the same complete EN route tree.
+ for(const n of walk(doc,n=>Boolean(n.attrs))){
+  for(const key of ['data-href','data-root-href','data-current-root-href']){
+   const href=get(n,key);if(href?.startsWith('/')&&!href.startsWith('//'))set(n,key,linkTo(href));
+  }
+ }
  const out=serialize(doc).replaceAll(EN_STAGING_BASE+'media/','https://img.adatours.ru/media/');
  if(!out.includes('data-ada-ru-fallback')||!out.includes(ROBOTS))fail('Unsafe transformed output');
  if(/data-ada-translation-notice|This page is currently available in Russian/i.test(out))fail('Unrequested translation notice');

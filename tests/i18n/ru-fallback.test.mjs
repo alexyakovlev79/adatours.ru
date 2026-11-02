@@ -15,7 +15,9 @@ const source=()=>[
  '<div data-search-overlay data-pagefind-bundle="/adatours-en/pagefind/" data-search-base="/adatours-en/"></div>',
  '<section class="hero"><img class="hero__media" src="/adatours-en/media/home/hero.webp" fetchpriority="high"></section>',
  '<hero-background-video><template data-static-hero><img src="/adatours-en/media/home/video-hero.webp"></template><video data-src="/adatours-en/media/video/hero.mp4"></video></hero-background-video>',
- '<a href="/adatours-en/brazil/">Страна</a><a href="/adatours-en/tours/">Туры</a>',
+ '<a href="/adatours-en/brazil/">Страна</a><a href="/adatours-en/tours/">Туры</a><a href="/about/">О нас</a>',
+ '<div data-multi-country-picker data-root-href="/adatours-en/multi-country/" data-current-root-href="/multi-country/"></div>',
+ '<input data-tour-vip-toggle data-href="/adatours-en/vip/">',
  '<a href="#request">Оставить заявку</a><a href="/adatours-en/old-brazil/">Alias</a>',
  '<form data-lead-form action="/live" method="post"><input name="phone"><button type="submit">Submit</button></form>',
  '<script src="https://www.googletagmanager.com/gtag.js"></script>',
@@ -27,11 +29,15 @@ const source=()=>[
 ].join('');
 
 test('canonical mirror keeps Hero, videos, lazy images, full search and safe visible form',()=>{
- const known=new Set(['/','/brazil/','/tours/']),html=russianFallbackHtml(source(),'/',known);
+ const known=new Set(['/','/brazil/','/tours/','/about/','/multi-country/','/vip/']),html=russianFallbackHtml(source(),'/',known);
  assert.match(html,/<html lang="ru" data-ada-ru-fallback="true"/);
  assert.match(html,/noindex,nofollow,noarchive,nosnippet/);
  assert.match(html,/\/adatours-en\/en\/brazil\//);
  assert.match(html,/\/adatours-en\/en\/tours\//);
+ assert.match(html,/\/adatours-en\/en\/about\//);
+ assert.match(html,/data-root-href="\/adatours-en\/en\/multi-country\/"/);
+ assert.match(html,/data-current-root-href="\/adatours-en\/en\/multi-country\/"/);
+ assert.match(html,/data-href="\/adatours-en\/en\/vip\/"/);
  for(const image of ['hero.webp','video-hero.webp','test.webp','phone.webp','other.webp','bg.webp'])
   assert.ok(html.includes('https://img.adatours.ru/media/'),image);
  assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/hero\.webp/);

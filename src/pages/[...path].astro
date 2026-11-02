@@ -26,6 +26,7 @@ import { selectVipTours } from '../lib/vip-tours.mjs';
 import { tourFilterTitle, tourFilterDescription } from '../lib/vip-copy.mjs';
 import { tourHasMainCountry, tourHasMainDestination, tourHasOptionalDestination } from '../lib/tour-relations';
 import { paginateCatalog, type CatalogPagination } from '../lib/catalog-pagination';
+import {enStagingSiteEnabled} from '../lib/i18n/en-staging-site.mjs';
 
 type DetailProps =
   | { mode: 'detail'; kind: 'country'; entry: CollectionEntry<'countries'> }
@@ -45,6 +46,9 @@ type RedirectProps = { mode: 'redirect'; to: string; title: string };
 type Props = DetailProps | CatalogProps | RedirectProps;
 
 export async function getStaticPaths() {
+  // The dedicated EN Pages build must not generate thousands of RU catalogue pages.
+  // RU production and regular local builds remain fully unchanged.
+  if(enStagingSiteEnabled(process.env))return [];
   const [countries, destinations, allTours, allExcursions] = await Promise.all([
     getCollection('countries', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),
     getCollection('destinations', ({ data }) => data.locale === 'ru' && isActiveEntity(data)),

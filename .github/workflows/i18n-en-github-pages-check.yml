@@ -19,6 +19,20 @@ on:
       - '.github/workflows/en-pages-reusable-deploy.yml'
       - 'infra/en-pages-repository/.github/workflows/deploy.yml'
       - '.github/workflows/i18n-en-github-pages-check.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/i18n/**'
+      - 'tests/i18n/**'
+      - 'src/lib/i18n/**'
+      - 'src/components/i18n/**'
+      - 'src/components/tour/Itinerary.astro'
+      - 'src/components/tour/TourPricing.astro'
+      - 'src/pages/en/**'
+      - 'src/pages/en-pilot-private/**'
+      - 'src/layouts/BaseLayout.astro'
+      - '.github/workflows/en-pages-reusable-deploy.yml'
+      - '.github/workflows/i18n-en-github-pages-check.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -41,7 +55,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.ref_name }}
           path: website
       - uses: actions/checkout@v4
         with:

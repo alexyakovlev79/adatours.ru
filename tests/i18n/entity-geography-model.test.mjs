@@ -35,7 +35,8 @@ test('EN Tour links use only explicit English records, never planned RU place na
  assert.equal(out.mainPlaces.length,1);
  assert.equal(out.optionalPlaces.length,0);
  assert.equal(out.mainPlaces[0].href,'/en-pilot-private/place/rio-de-janeiro/');
- assert.throws(()=>buildTourGeographyModel(en,{countries:[country],destinations:[p],strictLocalized:true}),/Unapproved locale/);
+ const wrongLocaleCountry={data:{...country.data,name:'Brazil'}};
+ assert.throws(()=>buildTourGeographyModel(en,{countries:[wrongLocaleCountry],destinations:[p],strictLocalized:true}),/Unapproved locale/);
  assert.throws(()=>buildTourGeographyModel(en,{countries:[],destinations:[p],strictLocalized:true}),/Untranslated main Country/);
 });
 test('RU Excursion retains the exact canonical destination fallback and ordering',()=>{
@@ -62,5 +63,6 @@ test('EN Excursion never publishes a Russian fallback or duplicate translated li
  assert.equal(x.linkedPlaces[0].href,p.url);
  assert.throws(()=>buildExcursionGeographyModel({...enExcursion,destination:'destination_brazil_future',
   destinationName:'Русский'}, {strictLocalized:true}),/Untranslated/);
- assert.throws(()=>buildExcursionGeographyModel(enExcursion,{destinations:[rio],strictLocalized:true}),/Unapproved locale/);
+ const wrongLocaleDestination={data:{...rio.data,name:'Rio de Janeiro'}};
+ assert.throws(()=>buildExcursionGeographyModel(enExcursion,{destinations:[wrongLocaleDestination],strictLocalized:true}),/Unapproved locale/);
 });

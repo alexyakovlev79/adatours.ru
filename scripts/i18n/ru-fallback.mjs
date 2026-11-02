@@ -96,6 +96,8 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  if(root===target||target.startsWith(root+path.sep))fail('Unsafe output');
  const pages=discoverRussianPages(root);
  if(pages.length<minPages)fail('Incomplete RU build: '+pages.length);
+ // Only the old mixed-language pilot needed a second full Tour catalogue.
+ const nativeTourCatalogue=fs.existsSync(path.join(target,'en/tours/index.html'));
  // Build the link allowlist from renderable pages, not from redirect aliases.
  // Otherwise an old RU alias can lead to an EN URL which was never emitted.
  const aliasRoutes=new Set();
@@ -119,7 +121,7 @@ export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000
  // first page keeps the full canonical RU catalogue reachable.
  let fullCatalogueAlias=0;
  const sourceTours=pages.find(x=>x.route==='/tours/');
- if(sourceTours&&fs.existsSync(path.join(target,'en/tours/index.html'))){
+ if(sourceTours&&nativeTourCatalogue){
   const alias=path.join(target,'en/tours-ru/index.html');
   if(fs.existsSync(alias))fail('Full RU Tour catalogue alias already exists');
   const content=russianFallbackHtml(fs.readFileSync(sourceTours.file,'utf8'),'/tours/',known);

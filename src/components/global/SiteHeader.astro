@@ -135,7 +135,7 @@ const nestedGroups = activeNav
 
 <header class:list={['site-header', `site-header--${theme}`]} data-site-header data-ada-preview-header={privatePreview ? 'true' : undefined}>
   <div class="site-header__inner">
-    <a class="brand" href={privatePreview ? pilotCatalogUrl() : withBase('/')} aria-label={privatePreview ? uiText('en','nav.homeAria') : 'Ada Tours, на главную'}>
+    <a class="brand" href={privatePreview ? withBase(pilotCatalogUrl()) : withBase('/')} aria-label={privatePreview ? uiText('en','nav.homeAria') : 'Ada Tours, на главную'}>
       <img class="brand__logo brand__logo--white" src={logoWhite} width="553" height="184" alt="" aria-hidden="true" />
       <img class="brand__logo brand__logo--black" src={logoBlack} width="553" height="184" alt="" aria-hidden="true" />
     </a>

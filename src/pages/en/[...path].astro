@@ -1,0 +1,14 @@
+---
+/** Actual English-language site routes for a separate Pages project.
+ * A normal RU or public EN build never emits these paths.
+ */
+import SitePage,{getStaticPaths as sourcePaths} from '../en-pilot-private/[...path].astro';
+import {enStagingSiteEnabled} from '../../lib/i18n/en-staging-site.mjs';
+
+export async function getStaticPaths(){
+ if(!enStagingSiteEnabled(process.env))return [];
+ return sourcePaths();
+}
+const props=Astro.props;
+---
+<SitePage {...props}/>

@@ -7,6 +7,8 @@ import MediaGallery from '../editorial/MediaGallery.astro';
 import TripStats from '../tour/TripStats.astro';
 import LeadForm from '../forms/LeadForm.astro';
 import {renderPilotMarkdown} from '../../lib/i18n/pilot-html.mjs';
+import {withBase} from '../../lib/paths';
+import {enStagingSiteEnabled} from '../../lib/i18n/en-staging-site.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
 
 interface Props { record:any; allGeography:any[]; }
@@ -46,8 +48,9 @@ const featuredId=featuredTourIds[record.id];
 const featuredTitle=featuredTourTitles[featuredId];
 const featuredHref=privateRouteForId(featuredId);
 const body=renderPilotMarkdown(record.body);
+const isStaging=enStagingSiteEnabled(process.env);
 ---
-<BaseLayout privatePreview lang="en" noindex title={d.name+' | Ada Tours Private English Preview'}
+<BaseLayout privatePreview lang="en" noindex title={d.name+(isStaging?' | Ada Tours':' | Ada Tours Private English Preview')}
   description={d.summary} showBreadcrumbs={false}>
   <main id="content">
     <Hero tour title={d.name} intro={d.summary} image={d.hero.src} imageAlt={d.hero.alt}
@@ -81,16 +84,16 @@ const body=renderPilotMarkdown(record.body);
         <h2>{isCountry?'Explore '+d.name+' with Ada Tours':'Continue exploring '+country.data.name}</h2>
         <div class="private-geo-links">
           {!isCountry&&(
-            <a href={country.url}>
+            <a href={withBase(country.url)}>
               <strong>Explore {country.data.name}</strong><span aria-hidden="true">↗</span>
             </a>
           )}
           {nearby.map((place:any)=>(
-            <a href={privateRouteForId(place.id)}>
+            <a href={withBase(privateRouteForId(place.id))}>
               <strong>Discover {place.data.name}</strong><span aria-hidden="true">↗</span>
             </a>
           ))}
-          <a href={featuredHref}>
+          <a href={withBase(featuredHref)}>
             <strong>{featuredTitle}</strong><span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -100,7 +103,7 @@ const body=renderPilotMarkdown(record.body);
       <div class="container">
         <p class="eyebrow">ADA TOURS · HERE FOR YOU</p>
         <h2>Let us shape your journey.</h2>
-        <p>This design preview does not accept live enquiries.</p>
+        <p>Online enquiries are not available yet. Contact our team by email to discuss your trip.</p>
       </div>
     </section>
     <LeadForm privatePreview locale="en" title="Tell us about the trip you have in mind" />

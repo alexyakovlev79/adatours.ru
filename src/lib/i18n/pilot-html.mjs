@@ -1,7 +1,8 @@
 /** Private, opt-in HTML proof for the three approved Word-first Tour JSON models.
  * This module is deliberately NOT a public EN locale activation mechanism.
  */
-const PILOT_ROOT='/en-pilot-private/';
+import {enStagingSiteEnabled,EN_STAGING_ROUTE} from './en-staging-site.mjs';
+const PILOT_ROOT=enStagingSiteEnabled(process.env)?EN_STAGING_ROUTE:'/en-pilot-private/';
 const ids=[
  {id:'tour_brazil_rio_four_days',slug:'rio-de-janeiro-four-days',price:1255,days:4,pendingExcursions:4},
  {id:'tour_chile_easter_island_3_days_2027',slug:'easter-island-3-days',price:1492,days:3,pendingExcursions:3},
@@ -11,8 +12,9 @@ const forbidden=/[\u0400-\u052F]/u;
 export const PILOT_TOURS=Object.freeze(ids.map(x=>Object.freeze({...x})));
 export const PILOT_ROOT_PATH=PILOT_ROOT;
 export function privatePilotEnabled(env={}){
- return env.EN_PILOT_PREVIEW==='1'&&env.SITE_LOCALE!=='en'&&
-        env.PUBLIC_EN_RELEASE!=='1';
+ return enStagingSiteEnabled(env)||
+  (env.EN_PILOT_PREVIEW==='1'&&env.EN_STAGING_PAGES!=='1'&&
+   env.SITE_LOCALE!=='en'&&env.PUBLIC_EN_RELEASE!=='1');
 }
 export function pilotTourUrl(slug){
  if(!PILOT_TOURS.some(x=>x.slug===slug))throw Error('Non-pilot Tour slug');

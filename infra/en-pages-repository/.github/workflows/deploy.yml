@@ -1,0 +1,97 @@
+name: Ada Tours English — GitHub Pages (separate repository)
+# Install only in the dedicated public repository alexyakovlev79/adatours-en.
+# Do not install this in adatours.ru: that site's Pages deployment serves RU.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * *'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: en-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: alexyakovlev79/adatours.ru
+          ref: feat/english-site-foundation
+          path: website
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: alexyakovlev79/adatours.ru
+          ref: ab27248954bb71fe6582bf796d73626ea8502d5f
+          path: word-preview
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: alexyakovlev79/adatours.ru
+          ref: main
+          path: canonical-main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Pin the approved English source and verify current RU facts
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git -C word-preview rev-parse HEAD)" = "ab27248954bb71fe6582bf796d73626ea8502d5f"
+          mkdir -p website/data/i18n/pilot-previews/v1
+          cp -a word-preview/data/i18n/pilot-previews/v1/. website/data/i18n/pilot-previews/v1/
+          cd website
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import {createHash} from 'node:crypto';
+          for(const id of ['tour_brazil_rio_four_days','tour_chile_easter_island_3_days_2027','tour_colombia_essential_5_days']){
+            const m=JSON.parse(fs.readFileSync('data/i18n/block-maps/tours/'+id+'.json','utf8'));
+            const bytes=fs.readFileSync('../canonical-main/'+m.sourceContentPath);
+            if(createHash('sha256').update(bytes).digest('hex')!==m.ruBlobSha256)
+              throw Error('Canonical RU Tour changed: '+id);
+          }
+          import {verifyPrivateExcursionSourceFiles} from './src/lib/i18n/private-excursions.mjs';
+          import {verifyPrivateGeoSources} from './src/lib/i18n/private-geography.mjs';
+          if(await verifyPrivateExcursionSourceFiles('../canonical-main','.')!==11)throw Error('Excursions changed');
+          if(await verifyPrivateGeoSources('../canonical-main','.')!==7)throw Error('Geography changed');
+          console.log('Canonical source verification passed');
+          NODE
+      - name: Install, verify and build the one canonical Astro site
+        working-directory: website
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+          SITE_LOCALE: en
+          SITE_ORIGIN: https://alexyakovlev79.github.io
+          SITE_BASE: /adatours-en/
+          EN_STAGING_PAGES: '1'
+          PUBLIC_EN_RELEASE: '0'
+          EN_PILOT_PREVIEW: '0'
+          MEDIA_CDN_ORIGIN: https://img.adatours.ru
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund
+          node --test tests/i18n/en-staging-site.test.mjs
+          node --check scripts/i18n/verify-en-pages-site.mjs
+          node --check scripts/i18n/prepare-en-pages-site.mjs
+          npx astro build
+          node scripts/i18n/verify-en-pages-site.mjs dist
+          node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: en-pages-site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - name: Publish English routes only — never the Russian site
+        id: pages
+        uses: actions/deploy-pages@v4

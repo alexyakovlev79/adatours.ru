@@ -2,6 +2,7 @@
 import PhoneField from './PhoneField.astro';
 import { withBase } from '../../lib/paths';
 import { privatePilotEnabled } from '../../lib/i18n/pilot-html.mjs';
+import {enStagingSiteEnabled,EN_STAGING_ROUTE} from '../../lib/i18n/en-staging-site.mjs';
 import { uiText } from '../../lib/i18n/messages.mjs';
 
 interface Props {
@@ -23,8 +24,10 @@ const {
 
 const privacyHref = withBase('/privacy/');
 const personalDataHref = withBase('/personal-data/');
+const stagingRoutePrefix=import.meta.env.BASE_URL.replace(/\/?$/, '/')+EN_STAGING_ROUTE.slice(1);
+const formRoutePrefix=enStagingSiteEnabled(process.env)?stagingRoutePrefix:'/en-pilot-private/';
 if (privatePreview && (!privatePilotEnabled(process.env) || locale!=='en' ||
-     !Astro.url.pathname.startsWith('/en-pilot-private/'))) {
+     !Astro.url.pathname.startsWith(formRoutePrefix))) {
   throw new Error('Private English form preview requires explicit nonpublishing build flags');
 }
 ---

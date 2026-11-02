@@ -1,39 +1,5 @@
-name: ADA EN twenty-two-page source-bound private visual pilot
+name: Legacy EN private source regression (manual, no ZIP)
 on:
-  push:
-    branches: [feat/english-site-foundation]
-    paths:
-      - 'src/pages/en-pilot-private/**'
-      - 'src/lib/i18n/pilot-html.mjs'
-      - 'src/lib/i18n/private-excursions.mjs'
-      - 'src/lib/i18n/private-geography.mjs'
-      - 'src/lib/i18n/locale-entity-routes.mjs'
-      - 'src/lib/i18n/entity-geography-model.mjs'
-      - 'src/lib/i18n/astro-locale-collection.mjs'
-      - 'src/lib/i18n/content-adapter.mjs'
-      - 'data/i18n/pilot-geography/**'
-      - 'src/components/i18n/**'
-      - 'src/components/global/SiteHeader.astro'
-      - 'src/components/global/SiteFooter.astro'
-      - 'src/components/forms/LeadForm.astro'
-      - 'data/i18n/pilot-excursions/**'
-      - 'src/components/tour/Itinerary.astro'
-      - 'src/components/tour/IncludedExcluded.astro'
-      - 'src/components/tour/TourPricing.astro'
-      - 'src/components/editorial/Hero.astro'
-      - 'src/layouts/BaseLayout.astro'
-      - 'src/layouts/TourLayout.astro'
-      - 'src/layouts/ExcursionLayout.astro'
-      - 'tests/i18n/pilot-html.test.mjs'
-      - 'tests/i18n/private-excursions.test.mjs'
-      - 'tests/i18n/private-geography.test.mjs'
-      - 'tests/i18n/locale-entity-routes.test.mjs'
-      - 'tests/i18n/entity-geography-model.test.mjs'
-      - 'tests/i18n/astro-locale-collection.test.mjs'
-      - 'scripts/i18n/verify-private-html.mjs'
-      - 'scripts/i18n/package-private-html.mjs'
-      - 'astro.config.mjs'
-      - '.github/workflows/i18n-en-private-html-pilot.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -132,22 +98,6 @@ jobs:
       - name: Verify twenty-two EN HTML pages, exact source links and private release gates
         working-directory: website
         run: node scripts/i18n/verify-private-html.mjs dist
-      - name: Package twenty-two private English pages with local assets
-        working-directory: website
-        shell: bash
-        run: |
-          set -euo pipefail
-          node scripts/i18n/package-private-html.mjs dist /tmp/ada-en-html-review
-          test "$(find /tmp/ada-en-html-review/en-pilot-private -name index.html | wc -l)" -eq 22
-          tar -czf /tmp/ada-en-private-visual-22-pages.tar.gz -C /tmp/ada-en-html-review .
-          ls -lh /tmp/ada-en-private-visual-22-pages.tar.gz
-      - name: Make private HTML preview downloadable for internal QA only
-        uses: actions/upload-artifact@v4
-        with:
-          name: ada-en-private-visual-22-pages
-          path: /tmp/ada-en-private-visual-22-pages.tar.gz
-          retention-days: 14
-          if-no-files-found: error
       - name: Confirm public Russian repo was not written or deployed
         shell: bash
         run: |

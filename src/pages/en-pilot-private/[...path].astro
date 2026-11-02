@@ -16,7 +16,7 @@ import {readPrivatePilotCollections} from '../../lib/i18n/astro-locale-collectio
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
 import {buildTourGeographyModel,buildExcursionGeographyModel} from '../../lib/i18n/entity-geography-model.mjs';
 import {
- privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
+ privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,PILOT_ROOT_PATH,
  pilotMediaUrl,formatPilotPrice,renderPilotMarkdown,
  pilotExcursionDependencies
 } from '../../lib/i18n/pilot-html.mjs';
@@ -46,7 +46,11 @@ export async function getStaticPaths(){
    nights:d.durationNights,photo:pilotMediaUrl(d.hero.src),
    alt:d.hero.alt||d.title};
  });
- const paramForId=id=>privateRouteForId(id).replace(/^\/en-pilot-private\//,'').replace(/\/$/,'');
+ const paramForId=id=>{
+  const path=privateRouteForId(id);
+  if(!path.startsWith(PILOT_ROOT_PATH))throw Error('EN route is outside selected locale root');
+  return path.slice(PILOT_ROOT_PATH.length).replace(/\/$/,'');
+ };
  return [
   {params:{path:'tours'},props:{kind:'catalog',cards,excursionCards,englishExcursions,geoCards}},
   ...records.map(record=>({params:{path:paramForId(record.id)},

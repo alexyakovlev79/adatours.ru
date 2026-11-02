@@ -4,6 +4,7 @@
  * Astro routes/layouts/search/schema/metadata as of 2026-10-29.
  */
 import { localeSite, validateOrigin, validateBase, assertPublicLocaleRelease } from './locale-site.mjs';
+import {enStagingSiteEnabled} from './en-staging-site.mjs';
 import foundation from '../../../data/i18n/foundation-status.json' with { type: 'json' };
 
 const gates = ['content','ui','metadata','schema','links','search','forms'];
@@ -17,6 +18,11 @@ export function resolveAstroBuildContext(env = {}, status = foundation) {
   const site = validateOrigin(env.SITE_ORIGIN ?? registry.origin);
   const base = validateBase(env.SITE_BASE ?? registry.base);
   if (locale === 'ru' && site === localeSite('en').origin) fail('RU build cannot use the configured English origin');
+  if (locale === 'en' && enStagingSiteEnabled(env)) {
+    // An explicitly noindex, separate-repository Pages staging build, never
+    // a public EN origin or a bypass of its release receipt.
+    return Object.freeze({site,base,locale,staging:true});
+  }
   if (locale === 'en') {
     const needed = [
       'runtimeLocaleAdapterConnected','automaticTextSynchronizationRunning',

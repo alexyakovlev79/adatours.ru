@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+/** Assemble only the EN route tree and shared site assets for deployment by
+ * a dedicated Pages repository, never this source repository's RU Pages.
+ * This is website deployment staging, NOT a user-downloadable ZIP.
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+import {enStagingSiteEnabled,EN_STAGING_BASE} from '../../src/lib/i18n/en-staging-site.mjs';
+const fail=m=>{throw Error('EN Pages deployment staging: '+m)};
+if(!enStagingSiteEnabled(process.env))fail('Not a verified EN GitHub Pages context');
+const dist=path.resolve(process.argv[2]||'dist');
+const output=path.resolve(process.argv[3]||'pages-site');
+if(output===dist||output.startsWith(dist+path.sep))fail('Refusing to deploy into build output');
+const read=(p)=>path.join(dist,p);
+if(!fs.statSync(read('en')).isDirectory()||!fs.existsSync(read('en/tours/index.html')))fail('EN pages missing');
+fs.rmSync(output,{recursive:true,force:true});fs.mkdirSync(output,{recursive:true});
+for(const folder of ['en','_astro','brand']){
+ if(!fs.existsSync(read(folder)))fail('Required site asset missing '+folder);
+ fs.cpSync(read(folder),path.join(output,folder),{recursive:true});
+}
+for(const file of ['favicon.svg','favicon.ico','favicon-48x48.png','favicon-32x32.png','favicon-16x16.png','apple-touch-icon.png']){
+ if(fs.existsSync(read(file)))fs.copyFileSync(read(file),path.join(output,file));
+}
+const target=EN_STAGING_BASE+'en/tours/';
+fs.writeFileSync(path.join(output,'index.html'),
+ '<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow,noarchive,nosnippet"><meta http-equiv="refresh" content="0;url='+target+'"><title>Ada Tours — Latin America</title></head><body><a href="'+target+'">Discover Ada Tours journeys</a></body></html>\n');
+fs.writeFileSync(path.join(output,'robots.txt'),'User-agent: *\nDisallow: /\n');
+fs.writeFileSync(path.join(output,'.nojekyll'),'');
+const html=(p)=>fs.readdirSync(p,{withFileTypes:true}).flatMap(x=>x.isDirectory()?html(path.join(p,x.name)):x.name.endsWith('.html')?[path.join(p,x.name)]:[]);
+const siteHtml=html(output);
+if(siteHtml.length!==23||siteHtml.some(p=>!p.startsWith(path.join(output,'en')+path.sep)&&p!==path.join(output,'index.html')))
+ fail('Non-EN HTML escaped staging filter');
+if(fs.existsSync(path.join(output,'CNAME'))||fs.existsSync(path.join(output,'sitemap-index.xml')))
+ fail('RU Pages configuration leaked');
+console.log(JSON.stringify({status:'ready_for_dedicated_github_pages',htmlPages:siteHtml.length,
+ enPages:22,rootRedirect:true,output,sourceFiles:'single Ada Tours repo',liveForms:false}));

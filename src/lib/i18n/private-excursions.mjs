@@ -4,7 +4,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { createHash } from 'node:crypto';
-import { pilotMediaUrl, renderPilotMarkdown } from './pilot-html.mjs';
+import { pilotMediaUrl, renderPilotMarkdown, PILOT_ROOT_PATH } from './pilot-html.mjs';
 
 const MANIFEST='data/i18n/pilot-excursions/v1/manifest.json';
 const CYRILLIC=/[\u0400-\u052F]/u;
@@ -22,7 +22,7 @@ const safeSlug=v=>typeof v==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(v);
 
 export function pilotExcursionUrl(slug){
  if(!safeSlug(slug))fail('Unsafe Excursion slug');
- return '/en-pilot-private/excursion/'+slug+'/';
+ return PILOT_ROOT_PATH+'excursion/'+slug+'/';
 }
 export function validatePrivateExcursionManifest(manifest){
  if(!manifest||manifest.schemaVersion!==1||manifest.locale!=='en'||manifest.count!==11||

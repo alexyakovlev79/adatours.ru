@@ -20,6 +20,7 @@ import { pageStructuredData } from '../lib/page-schema';
 import { deferImages } from '../lib/lazy-images.mjs';
 import { safeJsonLd, SCHEMA_VERSION } from '../lib/structured-data.mjs';
 import { privatePilotEnabled } from '../lib/i18n/pilot-html.mjs';
+import {enStagingSiteEnabled,EN_STAGING_ROUTE} from '../lib/i18n/en-staging-site.mjs';
 
 await validateSiteContent();
 
@@ -88,8 +89,9 @@ if (normalizedBase !== '/' && logicalPath.startsWith(normalizedBase)) {
   logicalPath = `/${logicalPath.slice(normalizedBase.length)}`;
 }
 if (!logicalPath.startsWith('/')) logicalPath = `/${logicalPath}`;
+const privateRoutePrefix=enStagingSiteEnabled(process.env)?EN_STAGING_ROUTE:'/en-pilot-private/';
 if (privatePreview && (!privatePilotEnabled(process.env) || lang !== 'en' || !noindex ||
-    !logicalPath.startsWith('/en-pilot-private/'))) {
+    !logicalPath.startsWith(privateRoutePrefix))) {
   throw new Error('Closed EN preview requires verified nonpublic Astro build flags and private route');
 }
 const rootUrl = new URL(withBase('/'), Astro.site ?? SITE.url).toString();

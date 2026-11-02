@@ -11,6 +11,9 @@ const get=(n,k)=>n?.attrs?.find(x=>x.name===k)?.value??null;
 const set=(n,k,v)=>{n.attrs??=[];const a=n.attrs.find(x=>x.name===k);if(a)a.value=v;else n.attrs.push({name:k,value:v})};
 const walk=(n,p)=>{const r=[];const v=x=>{if(p(x))r.push(x);for(const c of x.childNodes??[])v(c)};v(n);return r};
 const prune=(n,p)=>{for(const c of [...(n.childNodes??[])]){if(p(c))n.childNodes.splice(n.childNodes.indexOf(c),1);else prune(c,p)}};
+// Redirect aliases are real RU output but must not be advertised as EN pages.
+// Reject an unexpected redirect later in the renderer if this preflight misses one.
+const isSourceRedirect=html=>/<meta\b[^>]*\bhttp-equiv\s*=\s*(?:"refresh"|'refresh'|refresh)(?=[\s/>])/i.test(html);
 const normal=s=>{if(!s||s==='/')return '/';const p=s.split('/').filter(Boolean);if(p.some(x=>x==='.'||x==='..'||x.includes('\\')||x.includes('%')))fail('Unsafe route '+s);return '/'+p.join('/')+'/'};
 export function discoverRussianPages(root){
  const pages=[];
@@ -78,14 +81,22 @@ export function russianFallbackHtml(source,route,known){
 export function stageRussianFallback({dist,output,minPages=1000,maxBytes=950_000_000}={}){
  const root=path.resolve(dist),target=path.resolve(output);
  if(root===target||target.startsWith(root+path.sep))fail('Unsafe output');
- const pages=discoverRussianPages(root),known=new Set(pages.map(p=>p.route));
+ const pages=discoverRussianPages(root);
  if(pages.length<minPages)fail('Incomplete RU build: '+pages.length);
+ // Build the link allowlist from renderable pages, not from redirect aliases.
+ // Otherwise an old RU alias can lead to an EN URL which was never emitted.
+ const aliasRoutes=new Set();
+ for(const row of pages){
+  if(isSourceRedirect(fs.readFileSync(row.file,'utf8')))aliasRoutes.add(row.route);
+ }
+ const known=new Set(pages.filter(row=>!aliasRoutes.has(row.route)).map(row=>row.route));
  let added=0,existing=0,redirects=0,bytes=0;
  for(const row of pages){
+  if(aliasRoutes.has(row.route)){redirects++;continue}
   const filename=path.join(target,'en',row.route.slice(1),'index.html');
   if(fs.existsSync(filename)){existing++;continue}
   const rendered=russianFallbackHtml(fs.readFileSync(row.file,'utf8'),row.route,known);
-  if(rendered===null){redirects++;continue}
+  if(rendered===null)fail('Unclassified RU redirect alias: '+row.route);
   fs.mkdirSync(path.dirname(filename),{recursive:true});fs.writeFileSync(filename,rendered);
   added++;bytes+=Buffer.byteLength(rendered);
   if(bytes>maxBytes)fail('Fallback HTML exceeds Pages size budget');

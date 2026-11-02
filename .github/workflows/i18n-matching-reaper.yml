@@ -1,7 +1,6 @@
 name: Ada EN matching queue reaper
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  # Matching is completed. Re-enable periodic recovery only if a new queue is approved.
   workflow_dispatch:
 permissions:
   contents: write

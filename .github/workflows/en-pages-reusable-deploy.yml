@@ -1,6 +1,6 @@
 name: Ada Tours English — reusable single-source Pages build
-# Install only in the dedicated public repository alexyakovlev79/adatours-en.
-# Do not install this in adatours.ru: that site's Pages deployment serves RU.
+# This reusable workflow lives in the canonical adatours.ru source repository.
+# It may be called only by the minimal deployment workflow in adatours-en.
 on:
   workflow_call:
 permissions:

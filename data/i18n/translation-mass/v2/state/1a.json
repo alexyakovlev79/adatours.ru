@@ -135,7 +135,7 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_rio_four_days:b001",
       "stage": "word_2027",
-      "status": "review",
+      "status": "ready",
       "sourceFingerprint": "b2b3c5beb20c1dffa7a2d2f8750797cd66b13881179d972845b2b47287fa761e",
       "generation": 1,
       "attempts": 0,
@@ -147,7 +147,19 @@
         "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_rio_four_days_b001/en-rio-b001-word-20261102-v1.json",
         "at": "2026-11-02T21:25:39.706Z"
       },
-      "review": null,
+      "review": {
+        "reviewerId": "en-source-qa-rio-20261102",
+        "at": "2026-11-02T21:27:04.327Z",
+        "acceptedBlobSha": "88bd48e9787d9303df2c118a76df826372b10b62",
+        "checks": {
+          "word": true,
+          "meaning": true,
+          "facts": true,
+          "voice": true,
+          "structure": true,
+          "relations": true
+        }
+      },
       "nextAttemptAt": null
     },
     {

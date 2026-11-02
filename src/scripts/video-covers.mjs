@@ -136,6 +136,9 @@ export function initializeVideoCovers(view = window) {
       if (key === this.key) return;
       this.stop();
       this.video.removeAttribute('src');
+      // Expose the selected first frame through the standard video attribute.
+      if (selected?.poster) this.video.setAttribute('poster', selected.poster);
+      else this.video.removeAttribute('poster');
       this.video.load();
       this.querySelector('.hero-video-poster')?.remove();
       for (const node of this.photoNodes) node.remove();

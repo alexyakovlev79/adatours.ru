@@ -13,6 +13,7 @@ import Itinerary from '../../components/tour/Itinerary.astro';
 import {readFile} from 'node:fs/promises';
 import {getCollection} from 'astro:content';
 import {readPrivateExcursionOverlays,pilotExcursionUrl} from '../../lib/i18n/private-excursions.mjs';
+import {readPrivateGeography} from '../../lib/i18n/private-geography.mjs';
 import {resolve,join} from 'node:path';
 import {
  PILOT_TOURS,privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
@@ -27,6 +28,15 @@ export async function getStaticPaths(){
  const summary=await json('summary.json');
  const records=await Promise.all(PILOT_TOURS.map(t=>json('rendered/'+t.id+'.json')));
  assertPilotRenderSource(records,summary);
+ const countryIds=new Set(['country_brazil','country_chile','country_colombia']);
+ const [ruCountries,ruPlaces]=await Promise.all([
+  getCollection('countries',({data})=>data.locale==='ru'&&countryIds.has(data.id)),
+  getCollection('destinations',({data})=>data.locale==='ru'&&data.id==='destination_brazil_rio')
+ ]);
+ const geography=await readPrivateGeography(process.cwd(),[...ruCountries,...ruPlaces]);
+ const geoCards=geography.map(g=>({
+  id:g.id,name:g.data.name,kind:g.kind,url:g.url,image:g.data.hero.src,alt:g.data.hero.alt
+ }));
  const referencedIds=new Set(records.flatMap(r=>pilotExcursionDependencies(r.data.itinerary)));
  const ruExcursions=await getCollection('excursions',({data})=>data.locale==='ru'&&referencedIds.has(data.id));
  const {records:excursions,manifest}=await readPrivateExcursionOverlays(process.cwd(),ruExcursions);
@@ -49,11 +59,11 @@ export async function getStaticPaths(){
    alt:d.hero.alt||d.title};
  });
  return [
-  {params:{path:'tours'},props:{kind:'catalog',cards,excursionCards,englishExcursions}},
+  {params:{path:'tours'},props:{kind:'catalog',cards,excursionCards,englishExcursions,geoCards}},
   ...records.map(record=>({params:{path:'tour/'+record.data.slug},
-   props:{kind:'tour',record,cards,excursionCards,englishExcursions}})),
+   props:{kind:'tour',record,cards,excursionCards,englishExcursions,geoCards}})),
   ...excursions.map(record=>({params:{path:'excursion/'+record.data.slug},
-   props:{kind:'excursion',record,cards,excursionCards,englishExcursions}}))
+   props:{kind:'excursion',record,cards,excursionCards,englishExcursions,geoCards}}))
  ];
 }
 
@@ -65,14 +75,16 @@ interface ExcursionSummary {
  id:string;title:string;slug:string;lead:string;photo:string;alt:string;
  price?:number;currency?:string;duration?:string;tourIds:string[];
 }
+interface GeoSummary {id:string;name:string;kind:string;url:string;image:string;alt:string;}
 interface Props {
  kind:'catalog'|'tour'|'excursion';
  cards:TourSummary[];
  excursionCards:ExcursionSummary[];
  englishExcursions:Record<string, any>;
+ geoCards:GeoSummary[];
  record?:{id:string;locale:string;data:any;body:string};
 }
-const {kind,cards,record,excursionCards,englishExcursions}=Astro.props as Props;
+const {kind,cards,record,excursionCards,englishExcursions,geoCards}=Astro.props as Props;
 const d=record?.data;
 if(kind!=='catalog'&&(!d||record?.locale!=='en'))
  throw Error('Private pilot route requires source-verified English data');
@@ -108,6 +120,12 @@ const excursionStats=isExcursion ? [
   ...(typeof d.priceFrom==='number'?[{value:formatPilotPrice(d.priceFrom,d.currency),label:'Excursion price'}]:[]),
 ] : [];
 const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id===d.id)?.tourIds.includes(c.id)):[];
+const countryByTourId:Record<string,string>={
+ tour_brazil_rio_four_days:'country_brazil',
+ tour_chile_easter_island_3_days_2027:'country_chile',
+ tour_colombia_essential_5_days:'country_colombia'
+};
+const tourCountry=isTour?geoCards.find(g=>g.id===countryByTourId[record?.id??'']):undefined;
 
 ---
 <BaseLayout privatePreview lang="en" noindex title={pageTitle} description={pageDescription} showBreadcrumbs={false}>
@@ -149,22 +167,18 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
         </section>
         <section class="container pilot-index-section" aria-labelledby="private-geography-title">
           <div class="pilot-section-heading">
-            <span class="pilot-kicker">DISCOVER THE DESTINATION</span>
-            <h2 id="private-geography-title">Brazil, beginning in Rio</h2>
-            <p>Find the country, city and journeys together, all using shared Ada Tours media and a consistent English presentation.</p>
+            <span class="pilot-kicker">DISCOVER THE DESTINATIONS</span>
+            <h2 id="private-geography-title">Brazil, Chile and Colombia</h2>
+            <p>Explore the three countries behind these programmes, and discover Rio de Janeiro in more detail. All pages use the same verified Ada Tours locations and media.</p>
           </div>
-          <div class="pilot-geo-tiles">
-            <a href="/en-pilot-private/country/brazil/" class="pilot-geo-tile">
-              <img src={pilotMediaUrl('/media/countries/brazil/hero-src-enhanced-20261001.webp')}
-                alt="Christ the Redeemer above the forested hills of Rio de Janeiro, Brazil"
-                width="900" height="560" loading="lazy" />
-              <span>Brazil <small>Discover the country</small></span>
-            </a>
-            <a href="/en-pilot-private/place/rio-de-janeiro/" class="pilot-geo-tile">
-              <img src={pilotMediaUrl('/media/destinations/rio-de-janeiro/hero-enhanced-20261001.webp')}
-                alt="Rio de Janeiro in the evening" width="900" height="560" loading="lazy" />
-              <span>Rio de Janeiro <small>Explore the city</small></span>
-            </a>
+          <div class="pilot-geo-tiles" data-pilot-geography-count={geoCards.length}>
+            {geoCards.map(item=>(
+              <a href={item.url} class="pilot-geo-tile">
+                <img src={item.image} alt={item.alt}
+                  width="900" height="560" loading="lazy" decoding="async" />
+                <span>{item.name} <small>{item.kind==='country'?'Discover the country':'Explore the city'}</small></span>
+              </a>
+            ))}
           </div>
         </section>
         <section class="container pilot-index-section" aria-labelledby="private-excursions-title">
@@ -198,6 +212,9 @@ const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id==
             <p class="pilot-kicker">AT A GLANCE</p>
             <h2 id="pilot-route-title">Places along the way</h2>
             <ul class="pilot-route-tags">{d.route.map((name:string)=><li>{name}</li>)}</ul>
+            {tourCountry&&(
+              <p class="pilot-kicker"><a href={tourCountry.url}>Explore {tourCountry.name} <span aria-hidden="true">↗</span></a></p>
+            )}
           </section>
         )}
         <Itinerary locale="en" privatePreview sectionId="itinerary"

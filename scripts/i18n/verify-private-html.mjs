@@ -22,6 +22,9 @@ if(geoManifest.items?.length!==4||geoManifest.publicationAuthorized!==false)
  fail('Missing four-record source-bound geography manifest');
 const geoUrl=item=>'/en-pilot-private/'+(item.kind==='country'?'country':'place')+'/'+item.slug+'/';
 const geoRoutes=geoManifest.items.map(geoUrl);
+const countryIdByTour={tour_brazil_rio_four_days:'country_brazil',
+ tour_chile_easter_island_3_days_2027:'country_chile',
+ tour_colombia_essential_5_days:'country_colombia'};
 const geoTourById={country_brazil:'rio-de-janeiro-four-days',
  country_chile:'easter-island-3-days',country_colombia:'colombia-essential-5-days',
  destination_brazil_rio:'rio-de-janeiro-four-days'};
@@ -78,6 +81,9 @@ for(const c of cases){
  const text=textOf(main);
  if(c.kind==='tour'){
   const t=c.spec;
+  const expectedCountry=geoManifest.items.find(x=>x.id===countryIdByTour[t.id]);
+  if(!expectedCountry||!links.some(x=>attr(x,'href')===geoUrl(expectedCountry)))
+   fail('Tour lacks its source-bound country link '+c.file);
   if(!text.includes(formatPilotPrice(t.price))||!tags(main,'h1').length||!tags(main,'h2').length||
    !tags(main,'table').length||
    !find(main,x=>attr(x,'data-ada-i18n-pricing')==='en').length||
@@ -122,6 +128,8 @@ for(const c of cases){
   }
  }else{
   if(!text.includes('Discover the programmes')||
+   attr(find(main,x=>attr(x,'data-pilot-geography-count')!==null)[0],'data-pilot-geography-count')!=='4'||
+   !geoRoutes.every(url=>links.some(x=>attr(x,'href')===url))||
    attr(find(main,x=>attr(x,'data-pilot-tour-count')!==null)[0],'data-pilot-tour-count')!=='3'||
    attr(find(main,x=>attr(x,'data-pilot-excursion-count')!==null)[0],'data-pilot-excursion-count')!=='11'||
    !manifest.entries.every(e=>links.some(x=>attr(x,'href')===excursionPath(e.slug))))

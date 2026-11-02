@@ -20,7 +20,7 @@ import {
 import { buildExcursionTourCounts, compareExcursionsByPopularity } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { compareToursForCountry } from '../lib/tour-ranking';
-import { tourHasMainCountry } from '../lib/tour-relations';
+import { buildCountryDiscoveryModel } from '../lib/i18n/entity-discovery-model.mjs';
 import { getVipCountryIndex } from '../lib/vip-catalog';
 
 const { entry } = Astro.props;
@@ -54,7 +54,7 @@ const [destinationEntries, allTourEntries, excursionEntries, allThemeEntries] = 
   ),
 ]);
 
-const tourEntries = allTourEntries.filter((item) => tourHasMainCountry(item.data, d.id));
+const { tours: tourEntries } = buildCountryDiscoveryModel(d, { tours: allTourEntries });
 const vipCountry = (await getVipCountryIndex()).find((row) => row.entry.data.id === d.id);
 const excursionTourCounts = buildExcursionTourCounts(allTourEntries);
 const destinationTourCounts = buildDestinationTourCounts(allTourEntries);

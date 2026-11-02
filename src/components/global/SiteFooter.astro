@@ -3,7 +3,7 @@ import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS, SITE } from 
 import { withBase } from '../../lib/paths';
 import { ORG } from '../../data/organization/ada-tours';
 import { uiText } from '../../lib/i18n/messages.mjs';
-import { pilotCatalogUrl } from '../../lib/i18n/pilot-html.mjs';
+import { pilotCatalogUrl,PILOT_ROOT_PATH } from '../../lib/i18n/pilot-html.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
 import { pilotExcursionUrl } from '../../lib/i18n/private-excursions.mjs';
 
@@ -11,7 +11,8 @@ interface Props { privatePreview?: boolean; }
 const {privatePreview=false}=Astro.props;
 const previewColumns=[
  {id:'travel',rail:'left',title:'Journeys',primary:[
-   {href:pilotCatalogUrl(),label:'All journeys'},
+   {href:pilotCatalogUrl(),label:'Selected journeys'},
+   {href:PILOT_ROOT_PATH+'tours-ru/',label:'Full catalogue (Russian)'},
    {href:privateRouteForId('country_brazil'),label:'Brazil'},
    {href:privateRouteForId('country_chile'),label:'Chile'},
    {href:privateRouteForId('country_colombia'),label:'Colombia'},

@@ -9,7 +9,7 @@ import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS } from '../..
 import { withBase } from '../../lib/paths';
 import { countryPath, themePath, mainTourCountries } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
-import { pilotCatalogUrl } from '../../lib/i18n/pilot-html.mjs';
+import { pilotCatalogUrl,PILOT_ROOT_PATH } from '../../lib/i18n/pilot-html.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
 import { uiText } from '../../lib/i18n/messages.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
@@ -29,7 +29,7 @@ interface NavChild {
 const { theme = 'light', privatePreview = false } = Astro.props;
 const previewNav=[
   {href:pilotCatalogUrl(),label:uiText('en','nav.tours')},
-  {href:pilotCatalogUrl(),label:uiText('en','nav.excursions')},
+  {href:PILOT_ROOT_PATH+'tours-ru/',label:'Full catalogue (RU)'},
   {href:privateRouteForId('country_brazil'),label:'Brazil'},
   {href:privateRouteForId('country_chile'),label:'Chile'},
   {href:privateRouteForId('country_colombia'),label:'Colombia'},

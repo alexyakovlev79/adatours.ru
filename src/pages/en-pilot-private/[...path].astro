@@ -170,6 +170,11 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
               </article>
             ))}
           </div>
+          <p class="pilot-full-catalogue-link">
+            <a href={withBase(PILOT_ROOT_PATH+'tours-ru/')}>
+              Browse the full Ada Tours catalogue (currently in Russian) <span aria-hidden="true">↗</span>
+            </a>
+          </p>
         </section>
         <section class="container pilot-index-section" aria-labelledby="private-geography-title">
           <div class="pilot-section-heading">
@@ -351,6 +356,8 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
 .pilot-card-content>p:not(.pilot-kicker){font-size:.96rem;line-height:1.55;color:var(--color-text-muted);flex:1}
 .pilot-card-bottom{border-top:1px solid var(--color-line);display:flex;justify-content:space-between;gap:1rem;padding-top:1.2rem;margin-top:1.25rem;align-items:center;flex-wrap:wrap;font-size:.84rem}
 .pilot-card-bottom strong{font-size:1.35rem;font-weight:600}
+.pilot-full-catalogue-link{margin:35px 0 0;font-size:1.05rem}
+.pilot-full-catalogue-link a{display:inline-flex;gap:18px;border-bottom:1px solid var(--color-gold-deep);padding-bottom:7px;font-weight:600}
 .pilot-card-bottom a{color:var(--color-brand-deep);font-weight:700}
 .pilot-route{padding-block:clamp(40px,5vw,75px);border-bottom:1px solid var(--color-line)}
 .pilot-route h2{font-size:clamp(1.8rem,3vw,3rem)}

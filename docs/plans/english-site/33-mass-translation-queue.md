@@ -37,7 +37,7 @@ GitHub Actions i18n-mass-seed.yml сперва проверяет полную �
 offline на зафиксированных SHA main, matching-staging и старого
 translation-staging. На PR он ничего не публикует. После merge
 в main и успешного preflight один раз создается новая ветка
-i18n/translation-mass-staging с 16 CAS shards и immutable jobs.
+i18n/translation-mass-staging с 32 CAS shards и immutable jobs.
 Повторный запуск откажется перезаписывать существующие задания,
 активные leases и сохраненные результаты.
 

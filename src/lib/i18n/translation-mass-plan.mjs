@@ -7,7 +7,7 @@ import {createHash} from 'node:crypto';
 export const MASS_STAGES=Object.freeze(['word_2027','word_2026','ai_only']);
 export const MASS_STATES=Object.freeze(['held','queued','leased','review','ready','retryable',
  'blocked_external','stale_source','failed_final']);
-export const MASS_SHARDS=16;
+export const MASS_SHARDS=32;
 export const MASS_BLOCKS_PER_JOB=8;
 const SHA=/^[a-f0-9]{64}$/,GIT_SHA=/^[a-f0-9]{40}$/;
 const validId=s=>typeof s==='string'&&/^[a-zA-Z0-9_.:-]+$/.test(s);

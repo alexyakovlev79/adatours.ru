@@ -10,6 +10,7 @@ import {resolve,join} from 'node:path';
 import {createHash} from 'node:crypto';
 import {getLocalizedCollection} from './content-adapter.mjs';
 import {resolveAstroBuildContext} from './build-context.mjs';
+import {enStagingSiteEnabled} from './en-staging-site.mjs';
 import {PILOT_TOURS,privatePilotEnabled,assertPilotRenderSource,pilotExcursionDependencies} from './pilot-html.mjs';
 import {readPrivateGeography} from './private-geography.mjs';
 import {readPrivateExcursionOverlays} from './private-excursions.mjs';
@@ -118,7 +119,7 @@ async function buildPrivatePilotSnapshot(readRecords,root) {
 const privateCache=new WeakMap();
 export async function readPrivatePilotCollections(readRecords,{root=process.cwd(),env=process.env}={}){
  if(typeof readRecords!=='function')throw new TypeError('Astro getCollection reader required');
- if(!privatePilotEnabled(env)||env.SITE_LOCALE==='en'||env.PUBLIC_EN_RELEASE==='1')
+ if(!privatePilotEnabled(env)||(env.SITE_LOCALE==='en'&&!enStagingSiteEnabled(env))||env.PUBLIC_EN_RELEASE==='1')
   fail('Private EN content requires closed preview flags');
  const rootPath=resolve(root);
  const cached=privateCache.get(readRecords);

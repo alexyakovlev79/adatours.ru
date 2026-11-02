@@ -9,6 +9,7 @@ import InlineMarkdown from '../global/InlineMarkdown.astro';
 import { excursionBlockContent } from '../../lib/excursion-block-content.mjs';
 import { uiText } from '../../lib/i18n/messages.mjs';
 import { privatePilotEnabled } from '../../lib/i18n/pilot-html.mjs';
+import {enStagingSiteEnabled,EN_STAGING_BASE,EN_STAGING_ROUTE} from '../../lib/i18n/en-staging-site.mjs';
 import { pilotExcursionUrl } from '../../lib/i18n/private-excursions.mjs';
 
 interface MediaItem {
@@ -51,7 +52,11 @@ interface Props {
 const { days, locale = 'ru', privatePreview = false, sectionId, englishExcursions } = Astro.props;
 const privateEnglish = locale === 'en' && privatePreview;
 if (locale === 'en') {
-  if (!privatePreview || !privatePilotEnabled(process.env) || !Astro.url.pathname.startsWith('/en-pilot-private/')) {
+  const staging = enStagingSiteEnabled(process.env);
+  const validPath = staging
+    ? [EN_STAGING_ROUTE, EN_STAGING_BASE+EN_STAGING_ROUTE.slice(1)].some(prefix=>Astro.url.pathname.startsWith(prefix))
+    : Astro.url.pathname.startsWith('/en-pilot-private/');
+  if (!privatePreview || !privatePilotEnabled(process.env) || !validPath) {
     throw new Error('English itinerary is restricted to the private pilot until locale dependencies are ready');
   }
   if (!englishExcursions || typeof englishExcursions !== 'object' ||

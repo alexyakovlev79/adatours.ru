@@ -25,9 +25,10 @@ const {
 const privacyHref = withBase('/privacy/');
 const personalDataHref = withBase('/personal-data/');
 const stagingRoutePrefix=import.meta.env.BASE_URL.replace(/\/?$/, '/')+EN_STAGING_ROUTE.slice(1);
+const validStagingPath=Astro.url.pathname.startsWith(stagingRoutePrefix)||Astro.url.pathname.startsWith(EN_STAGING_ROUTE);
 const formRoutePrefix=enStagingSiteEnabled(process.env)?stagingRoutePrefix:'/en-pilot-private/';
 if (privatePreview && (!privatePilotEnabled(process.env) || locale!=='en' ||
-     !Astro.url.pathname.startsWith(formRoutePrefix))) {
+     !(enStagingSiteEnabled(process.env)?validStagingPath:Astro.url.pathname.startsWith(formRoutePrefix)))) {
   throw new Error('Private English form preview requires explicit nonpublishing build flags');
 }
 ---

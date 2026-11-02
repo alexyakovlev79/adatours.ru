@@ -10,42 +10,27 @@ import LeadForm from '../../components/forms/LeadForm.astro';
 import Hero from '../../components/editorial/Hero.astro';
 import TourPricing from '../../components/tour/TourPricing.astro';
 import Itinerary from '../../components/tour/Itinerary.astro';
-import {readFile} from 'node:fs/promises';
 import {getCollection} from 'astro:content';
-import {readPrivateExcursionOverlays,pilotExcursionUrl} from '../../lib/i18n/private-excursions.mjs';
-import {readPrivateGeography} from '../../lib/i18n/private-geography.mjs';
+import {pilotExcursionUrl} from '../../lib/i18n/private-excursions.mjs';
+import {readPrivatePilotCollections} from '../../lib/i18n/astro-locale-collection.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
-import {resolve,join} from 'node:path';
 import {
- PILOT_TOURS,privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
- assertPilotRenderSource,pilotMediaUrl,formatPilotPrice,renderPilotMarkdown,
+ privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
+ pilotMediaUrl,formatPilotPrice,renderPilotMarkdown,
  pilotExcursionDependencies
 } from '../../lib/i18n/pilot-html.mjs';
 
 export async function getStaticPaths(){
  if(!privatePilotEnabled(process.env))return [];
- const root=resolve(process.cwd(),'data/i18n/pilot-previews/v1');
- const json=async p=>JSON.parse(await readFile(join(root,p),'utf8'));
- const summary=await json('summary.json');
- const records=await Promise.all(PILOT_TOURS.map(t=>json('rendered/'+t.id+'.json')));
- assertPilotRenderSource(records,summary);
- const countryIds=new Set(['country_brazil','country_chile','country_colombia']);
- const destinationIds=new Set(['destination_brazil_rio','destination_chile_ostrov_pashi','destination_colombia_bogota','destination_colombia_kartahena']);
- const [ruCountries,ruPlaces]=await Promise.all([
-  getCollection('countries',({data})=>data.locale==='ru'&&countryIds.has(data.id)),
-  getCollection('destinations',({data})=>data.locale==='ru'&&destinationIds.has(data.id))
- ]);
- const geography=await readPrivateGeography(process.cwd(),[...ruCountries,...ruPlaces]);
+ // Single private locale adapter: verifies all RU source fingerprints,
+ // 21 stable EN identities and the sealed Word-first Tour preview.
+ const {tours:records,countries,destinations,excursions}=
+  await readPrivatePilotCollections(getCollection,{root:process.cwd(),env:process.env});
+ const geography=[...countries,...destinations];
  const geoCards=geography.map(g=>({
-  id:g.id,name:g.data.name,kind:g.kind,countryId:g.data.countryId??g.id,url:privateRouteForId(g.id),image:g.data.hero.src,alt:g.data.hero.alt
+  id:g.id,name:g.data.name,kind:g.kind,countryId:g.data.countryId??g.id,
+  url:privateRouteForId(g.id),image:g.data.hero.src,alt:g.data.hero.alt
  }));
- const referencedIds=new Set(records.flatMap(r=>pilotExcursionDependencies(r.data.itinerary)));
- const ruExcursions=await getCollection('excursions',({data})=>data.locale==='ru'&&referencedIds.has(data.id));
- const {records:excursions,manifest}=await readPrivateExcursionOverlays(process.cwd(),ruExcursions);
- if(excursions.length!==11||new Set(excursions.map(x=>x.id)).size!==11||
-    excursions.some(x=>!referencedIds.has(x.id))||referencedIds.size!==11) {
-   throw Error('The three pilot Tours must have exactly eleven source-bound English Excursions');
- }
  const englishExcursions=Object.fromEntries(excursions.map(x=>[x.id,x]));
  const excursionCards=excursions.map(x=>({
    id:x.id,title:x.data.title,slug:x.data.slug,lead:x.data.lead,

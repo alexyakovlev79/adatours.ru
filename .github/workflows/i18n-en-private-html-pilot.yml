@@ -8,6 +8,8 @@ on:
       - 'src/lib/i18n/private-excursions.mjs'
       - 'src/lib/i18n/private-geography.mjs'
       - 'src/lib/i18n/locale-entity-routes.mjs'
+      - 'src/lib/i18n/astro-locale-collection.mjs'
+      - 'src/lib/i18n/content-adapter.mjs'
       - 'data/i18n/pilot-geography/**'
       - 'src/components/i18n/**'
       - 'src/components/global/SiteHeader.astro'
@@ -23,6 +25,7 @@ on:
       - 'tests/i18n/private-excursions.test.mjs'
       - 'tests/i18n/private-geography.test.mjs'
       - 'tests/i18n/locale-entity-routes.test.mjs'
+      - 'tests/i18n/astro-locale-collection.test.mjs'
       - 'scripts/i18n/verify-private-html.mjs'
       - 'scripts/i18n/package-private-html.mjs'
       - 'astro.config.mjs'
@@ -107,7 +110,7 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Run pure private preview gates and HTML renderer unit tests
         working-directory: website
-        run: node --test tests/i18n/pilot-html.test.mjs tests/i18n/private-excursions.test.mjs tests/i18n/private-geography.test.mjs tests/i18n/locale-entity-routes.test.mjs
+        run: node --test tests/i18n/pilot-html.test.mjs tests/i18n/private-excursions.test.mjs tests/i18n/private-geography.test.mjs tests/i18n/locale-entity-routes.test.mjs tests/i18n/astro-locale-collection.test.mjs
       - name: Build real Astro HTML with explicit private EN flag only
         working-directory: website
         env:

@@ -1,17 +1,18 @@
 ---
 import {getCollection} from 'astro:content';
 import {privatePilotEnabled} from '../../../lib/i18n/pilot-html.mjs';
-import {readPrivateGeography} from '../../../lib/i18n/private-geography.mjs';
+import {getAstroLocalizedCollection} from '../../../lib/i18n/astro-locale-collection.mjs';
 import PrivateGeographyPage from '../../../components/i18n/PrivateGeographyPage.astro';
 export async function getStaticPaths(){
  if(!privatePilotEnabled(process.env))return [];
+ const options={privatePreview:true,root:process.cwd(),env:process.env};
  const [countries,destinations]=await Promise.all([
-  getCollection('countries',({data})=>data.locale==='ru'&&['country_brazil','country_chile','country_colombia'].includes(data.id)),
-  getCollection('destinations',({data})=>data.locale==='ru'&&['destination_brazil_rio','destination_chile_ostrov_pashi','destination_colombia_bogota','destination_colombia_kartahena'].includes(data.id))
+  getAstroLocalizedCollection('countries','en',getCollection,options),
+  getAstroLocalizedCollection('destinations','en',getCollection,options)
  ]);
- const records=await readPrivateGeography(process.cwd(),[...countries,...destinations]);
- return records.filter(x=>x.kind==='destination').map(record=>({
-  params:{slug:record.data.slug},props:{record,allGeography:records}
+ const allGeography=[...countries,...destinations];
+ return destinations.map(record=>({
+  params:{slug:record.data.slug},props:{record,allGeography}
  }));
 }
 const {record,allGeography}=Astro.props;

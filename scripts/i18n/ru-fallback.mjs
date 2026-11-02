@@ -28,7 +28,7 @@ export function discoverRussianPages(root){
  const ids=new Set();for(const item of pages){if(ids.has(item.route))fail('Duplicate route '+item.route);ids.add(item.route)}
  return pages.sort((a,b)=>a.route.localeCompare(b.route,'en'));
 }
-const notice='/** Build a full visual mirror without translation labels or live submissions. */
+/** Build a full visual mirror without translation labels or live submissions. */
 export function russianFallbackHtml(source,route,known){
  if(typeof source!=='string'||!source.includes('<html')||!known?.has(route))fail('Unknown source route '+route);
  const doc=parse(source),root=walk(doc,n=>n.tagName==='html')[0],

@@ -30,12 +30,23 @@ test('known source routes are mirrored once, translated routes take priority',()
   }
   fs.mkdirSync(path.join(out,'en','brazil'),{recursive:true});
   fs.writeFileSync(path.join(out,'en','brazil','index.html'),'<!doctype html><html lang="en">Translated</html>');
+  // RU legacy redirects must never become links to non-existent EN mirrors.
+  fs.mkdirSync(path.join(dist,'old-brazil'),{recursive:true});
+  fs.writeFileSync(path.join(dist,'old-brazil','index.html'),
+   '<!doctype html><html lang="ru"><head><meta http-equiv="refresh" content="0;url=/adatours-en/brazil/"></head><body>Redirect</body></html>');
+  fs.writeFileSync(path.join(dist,'index.html'),source('/').replace('</body>',
+   '<a href="/adatours-en/old-brazil/">Old route</a></body>'));
   const inventory=discoverRussianPages(dist);
-  assert.deepEqual(inventory.map(x=>x.route),['/','/brazil/']);
+  assert.deepEqual(inventory.map(x=>x.route),['/','/brazil/','/old-brazil/']);
   const result=stageRussianFallback({dist,output:out,minPages:2});
-  assert.equal(result.ruSourcePages,2);assert.equal(result.englishPrecedence,1);
+  assert.equal(result.ruSourcePages,3);assert.equal(result.englishPrecedence,1);
+  assert.equal(result.redirectAliases,1);
   assert.equal(result.ruFallbackPages,1);
-  assert.match(fs.readFileSync(path.join(out,'en','index.html'),'utf8'),/data-ada-ru-fallback/);
+  const html=fs.readFileSync(path.join(out,'en','index.html'),'utf8');
+  assert.match(html,/data-ada-ru-fallback/);
+  assert.match(html,/https:\/\/adatours\.ru\/old-brazil\//);
+  assert.doesNotMatch(html,/\/adatours-en\/en\/old-brazil\//);
+  assert.equal(fs.existsSync(path.join(out,'en','old-brazil','index.html')),false);
   assert.match(fs.readFileSync(path.join(out,'en','brazil','index.html'),'utf8'),/Translated/);
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
 });

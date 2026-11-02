@@ -249,3 +249,8 @@ Word → stable block alignment с сохранением точных исто�
 [GitHub Actions #41075627323](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41075627323) и [foundation #41075627376](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41075627376) — `success`. Артефакт `ada-en-three-tour-eleven-excursions-private-html`, ID `12987936006`, содержит 15 HTML (1 каталог + 3 Tour + 11 Excursion), retention 14 дней. Отдельная Windows-копия проверена на локальные ссылки и целостность ZIP. Подробные IDs, QA, сохраненная область работы и блокеры: `docs/plans/english-site/22-shared-excursions-private-preview.md`.
 
 Публичная EN-публикация, `main`, формы, SEO/Schema/hreflang и mass gate остаются закрыты. Готовность HTML-пилота не подтверждает завершения полного `TourLayout`, географических EN-страниц или независимой редакторской оценки.
+
+
+## Checkpoint 2026-11-02 — three-country private EN geography
+
+Extended the source-bound private EN pilot to Chile and Colombia alongside Brazil and Rio. The latest 19-page preview now contains 3 Tours, 11 canonical Excursions, 3 Country pages, one Rio Destination and a catalogue. The country pages and Tours use explicit stable-ID links. First 19-page build [#41397537764](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41397537764) and foundation test [#41397537769](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41397537769) succeeded; latest navigation integration is separately checked by [#41397950430](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41397950430). Full handoff: [23-three-country-private-preview.md](../plans/english-site/23-three-country-private-preview.md). No `main` changes or public EN release; mass translation and tariff synchronization are still gated.

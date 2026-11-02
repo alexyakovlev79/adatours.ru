@@ -11,6 +11,7 @@ import Hero from '../../components/editorial/Hero.astro';
 import TourPricing from '../../components/tour/TourPricing.astro';
 import Itinerary from '../../components/tour/Itinerary.astro';
 import {getCollection} from 'astro:content';
+import {withBase} from '../../lib/paths';
 import {pilotExcursionUrl} from '../../lib/i18n/private-excursions.mjs';
 import {readPrivatePilotCollections} from '../../lib/i18n/astro-locale-collection.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
@@ -153,17 +154,17 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
           <div class="pilot-cards" data-pilot-tour-count={cards.length}>
             {cards.map(card=>(
               <article class="pilot-card">
-                <a href={pilotTourUrl(card.slug)} class="pilot-card-photo" aria-label={'View '+card.title}>
+                <a href={withBase(pilotTourUrl(card.slug))} class="pilot-card-photo" aria-label={'View '+card.title}>
                   <img src={card.photo} alt={card.alt} width="660" height="470" loading="lazy" decoding="async" />
                   <span class="pilot-card-duration">{card.days} days · {card.nights} nights</span>
                 </a>
                 <div class="pilot-card-content">
                   <p class="pilot-kicker">TAILOR-MADE JOURNEY</p>
-                  <h3><a href={pilotTourUrl(card.slug)}>{card.title}</a></h3>
+                  <h3><a href={withBase(pilotTourUrl(card.slug))}>{card.title}</a></h3>
                   <p>{card.lead}</p>
                   <div class="pilot-card-bottom">
                     <span>From <strong>{formatPilotPrice(card.price,card.currency)}</strong> per person</span>
-                    <a href={pilotTourUrl(card.slug)} aria-label={'Explore '+card.title}>Explore journey <span aria-hidden="true">↗</span></a>
+                    <a href={withBase(pilotTourUrl(card.slug))} aria-label={'Explore '+card.title}>Explore journey <span aria-hidden="true">↗</span></a>
                   </div>
                 </div>
               </article>
@@ -178,7 +179,7 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
           </div>
           <div class="pilot-geo-tiles" data-pilot-geography-count={geoCards.length}>
             {geoCards.map(item=>(
-              <a href={item.url} class="pilot-geo-tile">
+              <a href={withBase(item.url)} class="pilot-geo-tile">
                 <img src={item.image} alt={item.alt}
                   width="900" height="560" loading="lazy" decoding="async" />
                 <span>{item.name} <small>{item.kind==='country'?'Discover the country':'Explore the city'}</small></span>
@@ -194,7 +195,7 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
           </div>
           <div class="pilot-excursion-index" data-pilot-excursion-count={excursionCards.length}>
             {excursionCards.map(item=>(
-              <a href={pilotExcursionUrl(item.slug)} class="pilot-excursion-index__link">
+              <a href={withBase(pilotExcursionUrl(item.slug))} class="pilot-excursion-index__link">
                 <span>{item.title}</span>
                 <small>{item.duration??'Excursion'}{typeof item.price==='number'?' · '+formatPilotPrice(item.price,item.currency):''}</small>
               </a>
@@ -218,12 +219,12 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
             <h2 id="pilot-route-title">Places along the way</h2>
             <ul class="pilot-route-tags">{d.route.map((name:string)=><li>{name}</li>)}</ul>
             {tourCountry&&(
-              <p class="pilot-kicker"><a href={privateRouteForId(tourCountry.id)}>Explore {tourCountry.name} <span aria-hidden="true">↗</span></a></p>
+              <p class="pilot-kicker"><a href={withBase(privateRouteForId(tourCountry.id))}>Explore {tourCountry.name} <span aria-hidden="true">↗</span></a></p>
             )}
             {tourPlaces.length>0&&(
               <div class="pilot-place-links" data-pilot-tour-destinations={tourPlaces.length}>
                 {tourPlaces.map(place=>(
-                  <a href={privateRouteForId(place.id)}>Discover {place.name} <span aria-hidden="true">↗</span></a>
+                  <a href={withBase(privateRouteForId(place.id))}>Discover {place.name} <span aria-hidden="true">↗</span></a>
                 ))}
               </div>
             )}
@@ -244,7 +245,7 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
           <div><span class="pilot-kicker">KEEP EXPLORING</span><h2>Beyond this journey</h2></div>
           <div class="pilot-other-tours">
             {cards.filter(c=>c.id!==record!.id).map(c=>(
-              <a href={pilotTourUrl(c.slug)}>
+              <a href={withBase(pilotTourUrl(c.slug))}>
                 <span>{c.title}</span><small>{c.days} days · From {formatPilotPrice(c.price,c.currency)}</small><span aria-hidden="true">↗</span>
               </a>
             ))}
@@ -272,7 +273,7 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
             <p class="pilot-kicker">PLACES TO EXPLORE</p>
             <div class="pilot-place-links">
               {excursionPlaces.map(place=>(
-                <a href={place.href}>Discover {place.name} <span aria-hidden="true">↗</span></a>
+                <a href={withBase(place.href)}>Discover {place.name} <span aria-hidden="true">↗</span></a>
               ))}
             </div>
           </nav>
@@ -302,7 +303,7 @@ const excursionPlaces=excursionGeography?.linkedPlaces??[];
           <div><span class="pilot-kicker">EXPLORE MORE</span><h2>Journeys featuring this excursion</h2></div>
           <div class="pilot-other-tours">
             {relatedTourCards.map(c=>(
-              <a href={pilotTourUrl(c.slug)}>
+              <a href={withBase(pilotTourUrl(c.slug))}>
                 <span>{c.title}</span>
                 <small>{c.days} days · From {formatPilotPrice(c.price,c.currency)}</small>
                 <span aria-hidden="true">↗</span>

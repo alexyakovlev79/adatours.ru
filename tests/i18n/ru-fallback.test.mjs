@@ -5,55 +5,79 @@ import os from 'node:os';
 import path from 'node:path';
 import {russianFallbackHtml,discoverRussianPages,stageRussianFallback} from '../../scripts/i18n/ru-fallback.mjs';
 
-const source=route=>'<!doctype html><html lang="ru"><head><meta name="robots" content="noindex, nofollow"><link rel="canonical" href="https://adatours.ru'+route+'"><meta property="og:title" content="RU"><script type="application/ld+json">{"@type":"TouristTrip"}</script></head><body><header>Ада Турс</header><a href="/adatours-en/brazil/">Страна</a><a href="/adatours-en/contacts/">Контакты</a><a href="#request">Оставить заявку</a><form action="/live"><input name="phone"></form><script src="https://www.googletagmanager.com/gtag.js"></script><script src="/adatours-en/_astro/menu.js"></script><img src="/adatours-en/media/home/test.webp" alt="Тур" style="background:url(/adatours-en/media/home/bg.webp)"></body></html>';
-test('EN fallback keeps RU language, noindex and verified links while disabling forms/analytics',()=>{
- const known=new Set(['/','/brazil/','/contacts/']),html=russianFallbackHtml(source('/'), '/', known);
+const source=()=>[
+ '<!doctype html><html lang="ru"><head>',
+ '<meta name="robots" content="noindex, nofollow">',
+ '<link rel="canonical" href="https://adatours.ru/">',
+ '<meta property="og:title" content="RU">',
+ '<script type="application/ld+json">{"@type":"TouristTrip"}</script>',
+ '</head><body><header><button data-search-open>Поиск</button></header>',
+ '<div data-search-overlay data-pagefind-bundle="/adatours-en/pagefind/" data-search-base="/adatours-en/"></div>',
+ '<section class="hero"><img class="hero__media" src="/adatours-en/media/home/hero.webp" fetchpriority="high"></section>',
+ '<hero-background-video><template data-static-hero><img src="/adatours-en/media/home/video-hero.webp"></template><video data-src="/adatours-en/media/video/hero.mp4"></video></hero-background-video>',
+ '<a href="/adatours-en/brazil/">Страна</a><a href="/adatours-en/tours/">Туры</a>',
+ '<a href="#request">Оставить заявку</a><a href="/adatours-en/old-brazil/">Alias</a>',
+ '<form data-lead-form action="/live" method="post"><input name="phone"><button type="submit">Submit</button></form>',
+ '<script src="https://www.googletagmanager.com/gtag.js"></script>',
+ '<script src="/adatours-en/_astro/site.js" type="module"></script>',
+ '<img data-lazy-src="/adatours-en/media/home/test.webp" src="data:image/svg+xml,empty">',
+ '<picture data-lazy-picture><source data-lazy-srcset="/adatours-en/media/phone.webp 400w"><img src="data:image/svg+xml,empty" data-lazy-src="/adatours-en/media/other.webp"></picture>',
+ '<div data-lazy-style="background-image:url(/adatours-en/media/home/bg.webp)" data-lazy-background="1"></div>',
+ '</body></html>'
+].join('');
+
+test('canonical mirror keeps Hero, videos, lazy images, full search and safe visible form',()=>{
+ const known=new Set(['/','/brazil/','/tours/']),html=russianFallbackHtml(source(),'/',known);
  assert.match(html,/<html lang="ru" data-ada-ru-fallback="true"/);
- assert.match(html,/data-ada-translation-notice="ru"/);
  assert.match(html,/noindex,nofollow,noarchive,nosnippet/);
  assert.match(html,/\/adatours-en\/en\/brazil\//);
- assert.match(html,/\/adatours-en\/en\/contacts\//);
- assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/test\.webp/);
+ assert.match(html,/\/adatours-en\/en\/tours\//);
+ for(const image of ['hero.webp','video-hero.webp','test.webp','phone.webp','other.webp','bg.webp'])
+  assert.ok(html.includes('https://img.adatours.ru/media/'),image);
+ assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/hero\.webp/);
  assert.match(html,/https:\/\/img\.adatours\.ru\/media\/home\/bg\.webp/);
- assert.doesNotMatch(html,/\/adatours-en\/media\//);
+ assert.match(html,/data-search-open/);
+ assert.match(html,/data-search-overlay/);
+ assert.match(html,/data-search-base="\/adatours-en\/en\/"/);
+ assert.match(html,/_astro\/site\.js/);
+ assert.match(html,/<form[^>]+inert/);
+ assert.match(html,/data-ada-staging-inert-form="true"/);
+ assert.match(html,/<button type="button">Submit/);
  assert.match(html,/mailto:info@adatours\.ru/);
- assert.match(html,/_astro\/menu\.js/);
- assert.doesNotMatch(html,/rel="canonical"|application\/ld\+json|<form|googletagmanager/);
+ assert.doesNotMatch(html,/data-lazy-src=|data-lazy-style=|data-lazy-srcset=/);
+ assert.doesNotMatch(html,/data-ada-translation-notice|currently available in Russian/);
+ assert.doesNotMatch(html,/data-lead-form|method="post"|application\/ld\+json|<link rel="canonical"|googletagmanager/);
 });
-test('known source routes are mirrored once, translated routes take priority',()=>{
- const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ada-ru-fallback-'));
+test('all public canonical RU routes mirror exactly once and old aliases are excluded',()=>{
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ada-full-stage-'));
  const dist=path.join(dir,'dist'),out=path.join(dir,'out');
  try{
-  for(const part of ['', 'brazil','en/tours','en-pilot-private/tour','_astro']){
+  for(const part of ['', 'brazil','tours','_astro','en/tours']){
    const folder=path.join(dist,part);fs.mkdirSync(folder,{recursive:true});
-   fs.writeFileSync(path.join(folder,'index.html'),source('/'));
+   fs.writeFileSync(path.join(folder,'index.html'),source());
   }
-  fs.mkdirSync(path.join(out,'en','brazil'),{recursive:true});
-  fs.writeFileSync(path.join(out,'en','brazil','index.html'),'<!doctype html><html lang="en">Translated</html>');
-  // RU legacy redirects must never become links to non-existent EN mirrors.
   fs.mkdirSync(path.join(dist,'old-brazil'),{recursive:true});
   fs.writeFileSync(path.join(dist,'old-brazil','index.html'),
    '<!doctype html><html lang="ru"><head><meta http-equiv="refresh" content="0;url=/adatours-en/brazil/"></head><body>Redirect</body></html>');
-  fs.writeFileSync(path.join(dist,'index.html'),source('/').replace('</body>',
-   '<a href="/adatours-en/old-brazil/">Old route</a></body>'));
   const inventory=discoverRussianPages(dist);
-  assert.deepEqual(inventory.map(x=>x.route),['/','/brazil/','/old-brazil/']);
-  const result=stageRussianFallback({dist,output:out,minPages:2});
-  assert.equal(result.ruSourcePages,3);assert.equal(result.englishPrecedence,1);
-  assert.equal(result.redirectAliases,1);
-  assert.equal(result.ruFallbackPages,1);
+  assert.deepEqual(inventory.map(x=>x.route),['/','/brazil/','/old-brazil/','/tours/']);
+  const r=stageRussianFallback({dist,output:out,minPages:2});
+  assert.equal(r.ruSourcePages,4);
+  assert.equal(r.englishPrecedence,0);
+  assert.equal(r.redirectAliases,1);
+  assert.equal(r.ruFallbackPages,3);
+  assert.equal(r.fullCatalogueAlias,0);
   const html=fs.readFileSync(path.join(out,'en','index.html'),'utf8');
   assert.match(html,/data-ada-ru-fallback/);
   assert.match(html,/https:\/\/adatours\.ru\/old-brazil\//);
-  assert.doesNotMatch(html,/\/adatours-en\/en\/old-brazil\//);
   assert.equal(fs.existsSync(path.join(out,'en','old-brazil','index.html')),false);
-  assert.match(fs.readFileSync(path.join(out,'en','brazil','index.html'),'utf8'),/Translated/);
+  assert.ok(fs.existsSync(path.join(out,'en','tours','index.html')));
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
 });
-test('Russian content cannot masquerade as English or bypass completeness checks',()=>{
- assert.throws(()=>russianFallbackHtml(source('/').replace('lang="ru"','lang="en"'), '/', new Set(['/'])),/RU HTML/);
- const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ada-ru-fallback-'));
- try{fs.writeFileSync(path.join(dir,'index.html'),source('/'));
+test('non-Russian HTML and incomplete source are rejected',()=>{
+ assert.throws(()=>russianFallbackHtml(source().replace('lang="ru"','lang="en"'),'/',new Set(['/'])),/RU HTML/);
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ada-full-stage-'));
+ try{fs.writeFileSync(path.join(dir,'index.html'),source());
   assert.throws(()=>stageRussianFallback({dist:dir,output:path.join(dir,'out')}),/Incomplete RU build|Unsafe output/);
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
 });

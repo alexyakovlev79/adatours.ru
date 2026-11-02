@@ -43,3 +43,25 @@ export function mergeDirectAssetReceipts(ledger, receipt) {
     assets: [...merged.values()].sort((a, b) => a.key.localeCompare(b.key, 'en')),
   };
 }
+
+/**
+ * Deployment-time comparison is local. Previously recorded, immutable S3 keys
+ * were already read back and SHA-256 verified when uploaded; only new receipts
+ * need an additional remote availability check during deployment.
+ */
+export function newlyAddedDirectAssetReceipts(current, baseline) {
+  const latest = validateDirectAssetLedger(current);
+  if (latest.errors.length) throw new Error('Current S3 ledger invalid: ' + latest.errors.join('; '));
+  const previous = validateDirectAssetLedger(baseline);
+  if (previous.errors.length) throw new Error('Baseline S3 ledger invalid: ' + previous.errors.join('; '));
+  for (const [key, oldEntry] of previous.byPath) {
+    const newEntry = latest.byPath.get(key);
+    if (!newEntry) throw new Error('Existing S3 receipt removed: ' + key);
+    for (const field of ['sha256', 'bytes', 'contentType', 'uploadedAt', 'source']) {
+      if (newEntry[field] !== oldEntry[field])
+        throw new Error('Existing S3 receipt changed: ' + key + ' (' + field + ')');
+    }
+  }
+  return [...latest.byPath].filter(([key]) => !previous.byPath.has(key))
+    .map(([, entry]) => entry);
+}

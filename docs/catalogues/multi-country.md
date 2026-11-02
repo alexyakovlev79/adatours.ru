@@ -6,8 +6,8 @@
 
 | Каталог | Страны | Интерес | Туров | Страниц |
 |---|---|---|---:|---:|
-| [Туры: Несколько стран](/multi-country/) |  |  | 93 | 4 |
-| [Туры: Аргентина и Бразилия](/multi-country/argentina_brazil/) | Аргентина, Бразилия |  | 46 | 2 |
+| [Туры: Несколько стран](/multi-country/) |  |  | 90 | 3 |
+| [Туры: Аргентина и Бразилия](/multi-country/argentina_brazil/) | Аргентина, Бразилия |  | 44 | 2 |
 | [Туры: Аргентина и Чили](/multi-country/argentina_chile/) | Аргентина, Чили |  | 31 | 2 |
 | [Туры: Бразилия и Чили](/multi-country/brazil_chile/) | Бразилия, Чили |  | 20 | 1 |
 | [Туры: Боливия и Перу](/multi-country/bolivia_peru/) | Боливия, Перу |  | 15 | 1 |
@@ -30,7 +30,6 @@
 | [Туры: Белиз и Гондурас](/multi-country/belize_honduras/) | Белиз, Гондурас |  | 3 | 1 |
 | [Туры: Коста-Рика и Эль-Сальвадор](/multi-country/costa-rica_el-salvador/) | Коста-Рика, Эль-Сальвадор |  | 3 | 1 |
 | [Туры: Коста-Рика и Гондурас](/multi-country/costa-rica_honduras/) | Коста-Рика, Гондурас |  | 3 | 1 |
-| [Туры: Эквадор и Перу](/multi-country/ecuador_peru/) | Эквадор, Перу |  | 3 | 1 |
 | [Туры: Эль-Сальвадор и Никарагуа](/multi-country/el-salvador_nicaragua/) | Эль-Сальвадор, Никарагуа |  | 3 | 1 |
 | [Туры: Французская Гвиана и Гайана](/multi-country/french-guiana_guyana/) | Французская Гвиана, Гайана |  | 3 | 1 |
 | [Туры: Французская Гвиана и Суринам](/multi-country/french-guiana_suriname/) | Французская Гвиана, Суринам |  | 3 | 1 |
@@ -43,6 +42,7 @@
 | [Туры: Боливия и Уругвай](/multi-country/bolivia_uruguay/) | Боливия, Уругвай |  | 2 | 1 |
 | [Туры: Колумбия и Эквадор](/multi-country/colombia_ecuador/) | Колумбия, Эквадор |  | 2 | 1 |
 | [Туры: Колумбия и Перу](/multi-country/colombia_peru/) | Колумбия, Перу |  | 2 | 1 |
+| [Туры: Эквадор и Перу](/multi-country/ecuador_peru/) | Эквадор, Перу |  | 2 | 1 |
 | [Туры: Эль-Сальвадор и Панама](/multi-country/el-salvador_panama/) | Эль-Сальвадор, Панама |  | 2 | 1 |
 | [Туры: Гватемала и Панама](/multi-country/guatemala_panama/) | Гватемала, Панама |  | 2 | 1 |
 | [Туры: Гондурас и Панама](/multi-country/honduras_panama/) | Гондурас, Панама |  | 2 | 1 |
@@ -326,17 +326,17 @@
 | [Туры: Гватемала, Гондурас, Мексика и Панама](/multi-country/guatemala_honduras_mexico_panama/) | Гватемала, Гондурас, Мексика, Панама |  | 1 | 1 |
 | [Туры: Гватемала, Мексика, Никарагуа и Панама](/multi-country/guatemala_mexico_nicaragua_panama/) | Гватемала, Мексика, Никарагуа, Панама |  | 1 | 1 |
 | [Туры: Гондурас, Мексика, Никарагуа и Панама](/multi-country/honduras_mexico_nicaragua_panama/) | Гондурас, Мексика, Никарагуа, Панама |  | 1 | 1 |
-| [Несколько стран: Природа](/multi-country/interests/nature/) |  | Природа | 91 | 4 |
-| [Несколько стран: Культура и история](/multi-country/interests/culture-and-history/) |  | Культура и история | 90 | 3 |
-| [Несколько стран: Животные и сафари](/multi-country/interests/wildlife/) |  | Животные и сафари | 30 | 1 |
-| [Несколько стран: Приключения](/multi-country/interests/adventure/) |  | Приключения | 20 | 1 |
+| [Несколько стран: Природа](/multi-country/interests/nature/) |  | Природа | 88 | 3 |
+| [Несколько стран: Культура и история](/multi-country/interests/culture-and-history/) |  | Культура и история | 87 | 3 |
+| [Несколько стран: Животные и сафари](/multi-country/interests/wildlife/) |  | Животные и сафари | 29 | 1 |
 | [Несколько стран: Пляжный отдых](/multi-country/interests/beach-holidays/) |  | Пляжный отдых | 20 | 1 |
+| [Несколько стран: Приключения](/multi-country/interests/adventure/) |  | Приключения | 19 | 1 |
 | [Несколько стран: Гастрономия и вино](/multi-country/interests/food-and-wine/) |  | Гастрономия и вино | 19 | 1 |
 | [Несколько стран: События и праздники](/multi-country/interests/events-and-festivals/) |  | События и праздники | 11 | 1 |
-| [Несколько стран: Круизы и экспедиции](/multi-country/interests/cruises-and-expeditions/) |  | Круизы и экспедиции | 9 | 1 |
+| [Несколько стран: Круизы и экспедиции](/multi-country/interests/cruises-and-expeditions/) |  | Круизы и экспедиции | 8 | 1 |
 | [Несколько стран: Кофейные туры](/multi-country/interests/coffee-tours/) |  | Кофейные туры | 2 | 1 |
-| [Аргентина и Бразилия: Культура и история](/multi-country/argentina_brazil/interests/culture-and-history/) | Аргентина, Бразилия | Культура и история | 46 | 2 |
-| [Аргентина и Бразилия: Природа](/multi-country/argentina_brazil/interests/nature/) | Аргентина, Бразилия | Природа | 46 | 2 |
+| [Аргентина и Бразилия: Культура и история](/multi-country/argentina_brazil/interests/culture-and-history/) | Аргентина, Бразилия | Культура и история | 44 | 2 |
+| [Аргентина и Бразилия: Природа](/multi-country/argentina_brazil/interests/nature/) | Аргентина, Бразилия | Природа | 44 | 2 |
 | [Аргентина и Чили: Природа](/multi-country/argentina_chile/interests/nature/) | Аргентина, Чили | Природа | 30 | 1 |
 | [Аргентина и Чили: Культура и история](/multi-country/argentina_chile/interests/culture-and-history/) | Аргентина, Чили | Культура и история | 28 | 1 |
 | [Бразилия и Чили: Культура и история](/multi-country/brazil_chile/interests/culture-and-history/) | Бразилия, Чили | Культура и история | 20 | 1 |
@@ -429,10 +429,6 @@
 | [Коста-Рика и Гондурас: Природа](/multi-country/costa-rica_honduras/interests/nature/) | Коста-Рика, Гондурас | Природа | 3 | 1 |
 | [Коста-Рика и Гондурас: Животные и сафари](/multi-country/costa-rica_honduras/interests/wildlife/) | Коста-Рика, Гондурас | Животные и сафари | 3 | 1 |
 | [Коста-Рика и Панама: Пляжный отдых](/multi-country/costa-rica_panama/interests/beach-holidays/) | Коста-Рика, Панама | Пляжный отдых | 3 | 1 |
-| [Эквадор и Перу: Приключения](/multi-country/ecuador_peru/interests/adventure/) | Эквадор, Перу | Приключения | 3 | 1 |
-| [Эквадор и Перу: Культура и история](/multi-country/ecuador_peru/interests/culture-and-history/) | Эквадор, Перу | Культура и история | 3 | 1 |
-| [Эквадор и Перу: Природа](/multi-country/ecuador_peru/interests/nature/) | Эквадор, Перу | Природа | 3 | 1 |
-| [Эквадор и Перу: Животные и сафари](/multi-country/ecuador_peru/interests/wildlife/) | Эквадор, Перу | Животные и сафари | 3 | 1 |
 | [Эль-Сальвадор и Гватемала: Животные и сафари](/multi-country/el-salvador_guatemala/interests/wildlife/) | Эль-Сальвадор, Гватемала | Животные и сафари | 3 | 1 |
 | [Эль-Сальвадор и Гондурас: Животные и сафари](/multi-country/el-salvador_honduras/interests/wildlife/) | Эль-Сальвадор, Гондурас | Животные и сафари | 3 | 1 |
 | [Эль-Сальвадор и Никарагуа: Культура и история](/multi-country/el-salvador_nicaragua/interests/culture-and-history/) | Эль-Сальвадор, Никарагуа | Культура и история | 3 | 1 |
@@ -480,7 +476,10 @@
 | [Коста-Рика и Эль-Сальвадор: Пляжный отдых](/multi-country/costa-rica_el-salvador/interests/beach-holidays/) | Коста-Рика, Эль-Сальвадор | Пляжный отдых | 2 | 1 |
 | [Коста-Рика и Гондурас: Пляжный отдых](/multi-country/costa-rica_honduras/interests/beach-holidays/) | Коста-Рика, Гондурас | Пляжный отдых | 2 | 1 |
 | [Коста-Рика и Никарагуа: Кофейные туры](/multi-country/costa-rica_nicaragua/interests/coffee-tours/) | Коста-Рика, Никарагуа | Кофейные туры | 2 | 1 |
-| [Эквадор и Перу: Круизы и экспедиции](/multi-country/ecuador_peru/interests/cruises-and-expeditions/) | Эквадор, Перу | Круизы и экспедиции | 2 | 1 |
+| [Эквадор и Перу: Приключения](/multi-country/ecuador_peru/interests/adventure/) | Эквадор, Перу | Приключения | 2 | 1 |
+| [Эквадор и Перу: Культура и история](/multi-country/ecuador_peru/interests/culture-and-history/) | Эквадор, Перу | Культура и история | 2 | 1 |
+| [Эквадор и Перу: Природа](/multi-country/ecuador_peru/interests/nature/) | Эквадор, Перу | Природа | 2 | 1 |
+| [Эквадор и Перу: Животные и сафари](/multi-country/ecuador_peru/interests/wildlife/) | Эквадор, Перу | Животные и сафари | 2 | 1 |
 | [Эль-Сальвадор и Гватемала: Пляжный отдых](/multi-country/el-salvador_guatemala/interests/beach-holidays/) | Эль-Сальвадор, Гватемала | Пляжный отдых | 2 | 1 |
 | [Эль-Сальвадор и Гондурас: Пляжный отдых](/multi-country/el-salvador_honduras/interests/beach-holidays/) | Эль-Сальвадор, Гондурас | Пляжный отдых | 2 | 1 |
 | [Эль-Сальвадор и Никарагуа: Пляжный отдых](/multi-country/el-salvador_nicaragua/interests/beach-holidays/) | Эль-Сальвадор, Никарагуа | Пляжный отдых | 2 | 1 |
@@ -599,6 +598,7 @@
 | [Коста-Рика и Никарагуа: Приключения](/multi-country/costa-rica_nicaragua/interests/adventure/) | Коста-Рика, Никарагуа | Приключения | 1 | 1 |
 | [Коста-Рика и Никарагуа: Гастрономия и вино](/multi-country/costa-rica_nicaragua/interests/food-and-wine/) | Коста-Рика, Никарагуа | Гастрономия и вино | 1 | 1 |
 | [Коста-Рика и Панама: Приключения](/multi-country/costa-rica_panama/interests/adventure/) | Коста-Рика, Панама | Приключения | 1 | 1 |
+| [Эквадор и Перу: Круизы и экспедиции](/multi-country/ecuador_peru/interests/cruises-and-expeditions/) | Эквадор, Перу | Круизы и экспедиции | 1 | 1 |
 | [Эквадор и Уругвай: Приключения](/multi-country/ecuador_uruguay/interests/adventure/) | Эквадор, Уругвай | Приключения | 1 | 1 |
 | [Эквадор и Уругвай: Культура и история](/multi-country/ecuador_uruguay/interests/culture-and-history/) | Эквадор, Уругвай | Культура и история | 1 | 1 |
 | [Эквадор и Уругвай: Природа](/multi-country/ecuador_uruguay/interests/nature/) | Эквадор, Уругвай | Природа | 1 | 1 |

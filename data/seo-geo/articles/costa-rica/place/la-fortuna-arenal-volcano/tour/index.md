@@ -22,13 +22,12 @@ lead: >-
 | [«Классическая Коста-Рика»](/costa-rica/tour/classic-costa-rica-san-jose-monteverde-arenal/) | Каньо-Негро, озеро Ареналь, затем Монтеверде |
 | [«5 чудес Коста-Рики»](/costa-rica/tour/costa-rica-5-wonders/) | Подвесные мосты и тропы у застывшей лавы |
 | [«Короткая, но полная программа»](/costa-rica/tour/costa-rica-short-complete-tour/) | Каньо-Негро, Рио-Селесте, мосты |
-| [«3 шага по Коста-Рике»](/costa-rica/tour/costa-rica-arenal-san-jose-pacific-beach/) | Прогулки по лесу, затем пляжные дни |
 | [Частный тур на 16 дней](/costa-rica/tour/luxury-costa-rica-16-days/) | Термальные источники, лавовые тропы, большая природная программа |
 | [«Гватемала и Коста-Рика»](/multi-country/tour/guatemala-costa-rica/) | Ареналь в сочетании с культурой и наследием майя |
 
 Это краткое сравнение целей, а не полный перечень включенных услуг. Длительность, условия и стоимость действующих программ сравните в таблице:
 
-{{catalog.tourTable:tour_source_klassicheskaya_kosta_rika,tour_source_5_chudes_kosta_riki,tour_source_3_shaga_po_kosta_rike,tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej,tour_source_gvatemala_kosta_rika}}
+{{catalog.tourTable:tour_source_klassicheskaya_kosta_rika,tour_source_5_chudes_kosta_riki,tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej,tour_source_gvatemala_kosta_rika}}
 
 ### Для первого знакомства с Коста-Рикой
 
@@ -40,7 +39,7 @@ lead: >-
 
 [«5 чудес Коста-Рики»](/costa-rica/tour/costa-rica-5-wonders/) выделяют на район Ареналя отдельную экскурсионную часть. В 4-й день маршрут приходит к вулкану после знакомства с культурой народа малеку, на 5-й предусмотрены подвесные мосты и пешеходная прогулка по тропе Los Tucanes в районе застывших лавовых потоков, на 6-й — дорога в Монтеверде через озеро Ареналь.
 
-В [«3 взглядах на Коста-Рику»](/costa-rica/tour/costa-rica-3-perspectives/) прогулка по мостам и лавовым участкам тоже запланирована после прибытия из центральной части страны. Затем путь уходит к пляжам Тихого океана. В [«3 шагах по Коста-Рике»](/costa-rica/tour/costa-rica-arenal-san-jose-pacific-beach/) район Ареналя и прогулки по тропам сочетаются с несколькими свободными днями на северном побережье.
+В [«3 взглядах на Коста-Рику»](/costa-rica/tour/costa-rica-3-perspectives/) прогулка по мостам и лавовым участкам тоже запланирована после прибытия из центральной части страны. Затем путь уходит к пляжам Тихого океана.
 
 ### Для длительного природного путешествия
 

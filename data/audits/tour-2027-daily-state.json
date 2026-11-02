@@ -4,8 +4,18 @@
   "repository": "alexyakovlev79/adatours.ru",
   "driveRootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
   "inventoryPath": "data/audits/tour-inventory-drive-20261009.json",
-  "lastAttempt": "2026-10-28T01:03:18.899Z",
-  "lastCompleteScanAt": "2026-10-28T01:03:18.899Z",
+  "lastAttempt": {
+    "id": "daily-word-2027-20261102-20261102005609039",
+    "startedAt": "2026-11-02T00:56:09.039Z",
+    "at": "2026-11-02T01:08:11Z",
+    "scanStatus": "complete",
+    "status": "REVIEW",
+    "finishedAt": "2026-11-02T01:08:11Z",
+    "foldersScanned": 29,
+    "filesObserved": 222,
+    "openQueueCount": 5
+  },
+  "lastCompleteScanAt": "2026-11-02T01:08:11Z",
   "lastSuccessfulBatchAt": "2026-10-26T11:27:12.655644+00:00",
   "openQueue": [
     {
@@ -26,8 +36,8 @@
       "publicationAllowed": false,
       "detectedAt": "2026-10-17T07:07:13.876Z",
       "reasonForNoPublication": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
-      "lastCheckedAt": "2026-10-28T01:03:18.899Z",
-      "lastCheckedInRun": "daily-word-2027-20261028-20261028010032547",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
       "sourceVersion": {
         "modifiedTime": "2026-10-09T13:30:40.492Z",
         "bytes": 6051218,
@@ -37,11 +47,11 @@
       "textHashMethod": "sha256 of exact UTF-8 connector readable content, no extra terminal newline",
       "resolutionStatus": "unchanged_source_conflict_no_confirmed_replacement",
       "lastCheckEvidence": {
-        "sourceMetadataUnchanged": true,
-        "comparedToSnapshotAt": "2026-10-27T01:03:46.051Z",
-        "annaResolutionsPath": "data/audits/anna-review-resolutions-20261026.json",
+        "baselineMainCommit": "e19be861aaad3da3ebc6cb76135e0c26f2db322f",
+        "driveMetadataUnchanged": true,
         "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
-        "noNewResolutionFound": true
+        "laterRelevantResolutionFound": false,
+        "action": "preserved_exact_existing_review_without_reimport"
       }
     },
     {
@@ -105,8 +115,8 @@
       "sourceEntryBlobSha": "7618151395191483f3b40e5f937ee39949134fd7",
       "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить.",
       "detectedAt": "2026-10-20T02:07:38.331Z",
-      "lastCheckedAt": "2026-10-28T01:03:18.899Z",
-      "lastCheckedInRun": "daily-word-2027-20261028-20261028010032547",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
       "resolutionStatus": "partially_resolved_by_anna",
       "reviewHistory": [
         {
@@ -155,12 +165,13 @@
         "sheetRowsVerified": true
       },
       "lastCheckEvidence": {
-        "sourceMetadataUnchanged": true,
-        "comparedToSnapshotAt": "2026-10-27T01:03:46.051Z",
-        "annaResolutionsPath": "data/audits/anna-review-resolutions-20261026.json",
+        "baselineMainCommit": "e19be861aaad3da3ebc6cb76135e0c26f2db322f",
+        "driveMetadataUnchanged": true,
         "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
-        "noNewResolutionFound": true
-      }
+        "laterRelevantResolutionFound": false,
+        "action": "preserved_exact_existing_review_without_reimport"
+      },
+      "isNewInThisScan": false
     },
     {
       "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
@@ -184,8 +195,8 @@
       "readableTextSha256": "40955683856a1a2a2ea16949d2ba2c9a379bfc362978eecaf7a108c593906d12",
       "textHashMethod": "sha256 of exact UTF-8 connected Drive readable text, no added newline",
       "detectedAt": "2026-10-27T01:03:46.051Z",
-      "lastCheckedAt": "2026-10-28T01:03:18.899Z",
-      "lastCheckedInRun": "daily-word-2027-20261028-20261028010032547",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
       "sourceFacts": {
         "durationDays": 20,
         "nights": 19,
@@ -209,12 +220,541 @@
       "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
       "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия.",
       "lastCheckEvidence": {
-        "sourceMetadataUnchanged": true,
-        "comparedToSnapshotAt": "2026-10-27T01:03:46.051Z",
-        "annaResolutionsPath": "data/audits/anna-review-resolutions-20261026.json",
+        "baselineMainCommit": "e19be861aaad3da3ebc6cb76135e0c26f2db322f",
+        "driveMetadataUnchanged": true,
         "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
-        "noNewResolutionFound": true
-      }
+        "laterRelevantResolutionFound": false,
+        "action": "preserved_exact_existing_review_without_reimport"
+      },
+      "isNewInThisScan": false
+    },
+    {
+      "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+      "name": "Great South America 2027 14d13n RUS 20com.docx",
+      "url": "https://docs.google.com/document/d/1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+      "folderId": "12STRmyL2L-xHLzWjUHZEbS4b79Iyv7Ks",
+      "folderPath": "Peru 2027",
+      "programKey": "P127",
+      "tourId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+      "classification": "new_word_existing_program_conflicting_brochure",
+      "queueType": "source_authority_review",
+      "status": "REVIEW",
+      "stage": "word_and_canonical_source_compared",
+      "identityStatus": "same_14_day_13_night_program_not_new_tour",
+      "publicationAllowed": false,
+      "detectedAt": "2026-10-29T00:59:52.507Z",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
+      "observedModifiedTime": "2026-10-28T13:52:37.357Z",
+      "sourceVersion": {
+        "modifiedTime": "2026-10-28T13:52:37.357Z",
+        "bytes": 1884226,
+        "version": null,
+        "id": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+        "textSha256": "0d8da5b0d44d749f85bc0c7986b899950dfc31e809b40d7f83f5b3ec58d0089a",
+        "docxSha256": "23cda187d1fd12f9ca15203e70de1f814c694d5a2960b7f866ea0aa332cdee6a",
+        "media": {
+          "word/media/image1.jpg": "0222e7b6159b4b8cc1fbb3bff04c3c493e0259d115bff0370e40da3d89f424f0",
+          "word/media/image10.jpg": "6dd8a25e2ba3eeac4d22d0057c340b83c4c801ccf196445daeb676370c556789",
+          "word/media/image11.jpg": "c2fe30058b552ae71595aa4e9e52b57891bc9a937174d84e085ccdc294a22655",
+          "word/media/image12.png": "3af7db65aede0f55c0f7d9e3bd14fbe37dbe2a18381fc008c1f5f74247ca56f8",
+          "word/media/image13.png": "a8f8e32c7b3342a8650ff9799cfcb7b43b9c5e1540d15ff71969639867757eb8",
+          "word/media/image14.png": "1b6052f9bb5298f43ea632a5b10145d90f2fdc33d4f2474f26d5dd67dc425296",
+          "word/media/image2.png": "0e99fe5bcc04232ca49dea3893b361d7352cdf500505c4e205363c2e13890854",
+          "word/media/image3.jpg": "7025324b1fbf2deb7b7aa714de1eb1cacf1b7cbbc28a1334b4a51927c05c32cf",
+          "word/media/image4.jpg": "748b5139f817b03bd24cea049eaad260c22ce2af0d94a6850a3668f673746a59",
+          "word/media/image5.jpg": "767b1516d3d810a43c32a14aa2adba6fdb6dc1689cd177068504acc1fe254184",
+          "word/media/image6.jpg": "a89039848fe08002d4dae81e9a17c31f7713b84d29d49ba9c5c0b2b2586f1525",
+          "word/media/image7.jpg": "7e6908b802e3778da12761bfae6c47b8dc7ec224352ab0a62c4d4a97823faf5b",
+          "word/media/image8.jpg": "fcfff62b3e8a33571f5d11d9ca5ca05a41b99ca5b687b3a79ea0ccce872e5997",
+          "word/media/image9.jpg": "7204e04fcf7a194adc400e4a75d2f0416c96b7e6cf0253473de16fbc162526eb"
+        },
+        "embeddedMediaSha256": "7276d6ce97143101b08eeecd2cc09eba257c7cfcb8993f5539d31d3c4499936b"
+      },
+      "readableTextSha256": "0d8da5b0d44d749f85bc0c7986b899950dfc31e809b40d7f83f5b3ec58d0089a",
+      "textHashMethod": "SHA-256 of exact connected Drive readable UTF-8 text, without added newline; nested textboxes additionally inspected directly in word/document.xml",
+      "comparedWordDriveFileId": "1JI6ZBQtl3Y_LC6hLD-y0Rn8W2M3p5b5h",
+      "comparedWordTextSha256": "af16e0e45d0c7aebc1554815e0f9e065c54724eb5ac1ace0ee06e531984043ae",
+      "canonicalSourceMaterialPath": "data/source-index/materials/tour_source_velikij_tur_po_yuzhnoj_amerike-word-20261011.md",
+      "baselineRef": "435f7fe12a7130d70dd493487a42977d13c18bae",
+      "sameTariffsUSD": [
+        15213,
+        9191,
+        8071,
+        7797,
+        6676,
+        6559
+      ],
+      "tariffColumnOrder": [
+        "1 pax SGL",
+        "2 pax SGL",
+        "2 pax DBL",
+        "3 pax SGL",
+        "3 pax DBL",
+        "3 pax TPL"
+      ],
+      "sameEasterIslandTariffsUSD": [
+        1116,
+        780,
+        754
+      ],
+      "sourceReview": {
+        "all14DaysReviewed": true,
+        "tablesReviewed": 14,
+        "textBoxesInspected": true,
+        "hiddenMainTariffsLocated": true,
+        "mediaCount": 14,
+        "mediaBaseline": "initial_snapshot_no_previous_version_for_this_new_file",
+        "brochureInternalDate": "2026-10-09",
+        "differences": [
+          {
+            "field": "guideLanguage",
+            "canonical": "Russian in Lima, Cusco city, La Paz, Santiago; others English",
+            "newWord": "English guides throughout"
+          },
+          {
+            "field": "Santiago city route",
+            "canonical": "Santa Lucia hill; Vitacura, Las Condes, Providencia",
+            "newWord": "San Cristobal hill; eastern Santiago"
+          },
+          {
+            "field": "Cusco day 3",
+            "canonical": "city centre/Coricancha plus archaeological park in current canonical source",
+            "newWord": "Sacsayhuaman archaeological park with Tambomachay, Qenqo, Puca Pucara; city centre/Coricancha not explicitly promised"
+          },
+          {
+            "field": "Uyuni food",
+            "canonical": "lunch and dinner on first two Uyuni days; lunch on third",
+            "newWord": "included blocks explicitly mention lunch day 9; packed lunch and dinner day 10; day 11 breakfast"
+          },
+          {
+            "field": "Cusco–Puno stops (day 5)",
+            "canonical": "Andahuaylillas, Raqchi, Sicuani, La Raya, Pucara",
+            "newWord": "Pikillacta, Andahuaylillas, Raqchi, Sicuani, La Raya; Pucara not explicitly listed"
+          },
+          {
+            "field": "Lake Titicaca day 6",
+            "canonical": "Uros",
+            "newWord": "Uros and Taquile"
+          }
+        ],
+        "extractionCaution": "Connector readable text and python-docx tables omitted six main prices stored in nested Word textboxes. Prices verified from all w:t nodes in original document.xml; no absent-price blocker asserted."
+      },
+      "reason": "Вновь загруженная брошюра Word соответствует существующему P127 (14д/13н, Перу–Боливия–Чили, одинаковые шесть тарифов и продление Пасхи), но противоречит продолжающему действовать точному Word по языку гидов и маршруту Сантьяго. В самой брошюре дата 09.10.2026; загрузка 28.10 не доказывает, что это замена канонической программы.",
+      "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу.",
+      "lastCheckEvidence": {
+        "baselineMainCommit": "e19be861aaad3da3ebc6cb76135e0c26f2db322f",
+        "driveMetadataUnchanged": true,
+        "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
+        "laterRelevantResolutionFound": false,
+        "action": "preserved_exact_existing_review_without_reimport"
+      },
+      "isNewInThisScan": false
+    },
+    {
+      "driveFileId": "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp",
+      "name": "Best of Argentina 2027 9D8N RUS com 20%.docx",
+      "url": "https://docs.google.com/document/d/1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+      "folderId": "1oEwwXWchjG4Ttrfht4fEiHB5HNjIE8fv",
+      "folderPath": "Argentina 2027",
+      "programKey": null,
+      "tourId": null,
+      "classification": "word_program_identity_review",
+      "queueType": "word_identity_review",
+      "status": "REVIEW",
+      "stage": "word_and_existing_programs_compared",
+      "identityStatus": "new_file_nonidentical_program_identity_unresolved",
+      "publicationAllowed": false,
+      "detectedAt": "2026-11-02T00:56:09.039Z",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
+      "isNewInThisScan": true,
+      "observedModifiedTime": "2026-11-01T17:16:26.952Z",
+      "sourceVersion": {
+        "revisionId": "0B_I4XfNIpwGhNWRvUVlHZ2pOeCtoRWhsU0FRVTVQeC92UzRBPQ",
+        "modifiedTime": "2026-11-01T17:16:26.952Z",
+        "bytes": 4950548,
+        "docxSha256": "b40ab4c22a9da26a5b9b34d2a76c63bcf76e430f304c48b92a87f40d2ffe9e63",
+        "providerVersion": null,
+        "providerChecksum": null
+      },
+      "textSha256": "0f537e5bba497d9ec7b3884fa43c4176ad313c437076046e787e6867f5a6b52f",
+      "embeddedMediaSha256": "64df56892cd604079fd6311fc9a0f5ef96cde049675a40ea4360caaabbc14b3c",
+      "textHashMethod": "DOCX ZIP OOXML paragraphs and ordered table cells, word/media sorted per-file SHA256",
+      "sourceTextSnapshot": "Лучшее в Аргентине — 20279 дней / 8 ночей\nОткройте для себя многогранную красоту Аргентины в незабываемом путешествии, которое познакомит вас с Буэнос-Айресом, величественным ледником Перито-Морено и впечатляющими водопадами Игуасу. Это путешествие объединяет богатство культуры, великолепие природы и яркие эмоции в  самых удивительных уголках Аргентины!\n\nTABLE\nBest of Argentina 2027 9D8N  | 1 PAX | 2 PAX | 3 pax\n474 Buenos Aires Hotel (2n) + Alto Calafate Hotel (2n) + Mercure Iguazu Hotel Iru (3n) + 474 Buenos Aires Hotel (1n) + SERVICES | SGL | DBL | TRP\n | $5.289 | $2.911 | $2.541\n |  |  |  | \n |  |  |  | \n\nДень 1. Прибытие в Буэнос-Айрес\nПрибытие в Буэнос-Айрес. Индивидуальный трансфер из международного аэропорта в отель, расположенный в центре города. Размещение в отеле.\nДень 2. Буэнос-Айрес — обзорная экскурсия и шоу танго\nОткройте для себя Буэнос-Айрес, который часто называют «Парижем Южной Америки». Во время индивидуальной обзорной экскурсии в сопровождении профессионального русскоговорящего  гида, вы познакомитесь с главными достопримечательностями и самыми колоритными районами аргентинской столицы.\nВ программе экскурсии: проспект 9 июля, знаменитый Обелиск, площадь Мая, президентский дворец Каса-Росада, Кафедральный собор, а также исторический район Сан-Тельмо, яркий и самобытный квартал Ла-Бока, элегантные Палермо и Реколета и современный район Пуэрто-Мадеро.\n\n\n\n\nВечером вас ждёт изысканный ужин из трёх блюд и аргентинских вин, после которого вы насладитесь впечатляющим танго шоу в Tango Porteño. На сцене выступят профессиональные танцоры, певцы и музыканты, создавая неповторимую атмосферу настоящего аргентинского танго.\nГрупповой трансфер из отеля к месту проведения шоу и обратно включен в стоимость.\n\n\nДень 3. Буэнос-Айрес — Эль-Калафате\nИндивидуальный трансфер из отеля в аэропорт Буэнос-Айреса для вылета в Эль-Калафате.\nПо прибытии в Эль-Калафате — трансфер из аэропорта в отель, расположенный в центре города. Размещение в отеле.\nДень 4. Эль-Калафате — ледник Перито-Морено и водное сафари (на целый день)\nВас ждёт знакомство с захватывающей красотой ледника Перито-Морено — одного из самых впечатляющих природных чудес Аргентины, включённого в список Всемирного наследия ЮНЕСКО.\nУтром гид заберёт вас из отеля, и вы отправитесь на экскурсию на целый день в Национальный парк Лос-Гласьярес. По пути вы узнаете много интересного о леднике, национальном парке и уникальных природных ландшафтах этого региона.\nПо прибытии вас ждёт прогулка по оборудованным смотровым дорожкам, откуда открываются потрясающие панорамные виды на ледник. Здесь вы сможете стать свидетелями впечатляющего природного явления — откалывания огромных ледяных глыб, которые с грохотом обрушиваются в воды озера Архентино.\nПрограмма также включает прогулку на катере вдоль ледника, которая позволит вблизи рассмотреть его величественные ледяные стены и по-новому ощутить масштаб этого природного чуда.\nПрогулка на катере проводится в составе сборной группы.\n\n\nПо желанию, за дополнительную плату: ледовый треккинг — прогулка по поверхности ледника в сопровождении специалистов. В завершение вас ждёт оригинальный коктейль, приготовленный из льда ледника.\n\n\nДень 5. Эль-Калафате — Пуэрто-Игуасу\nТрансфер из отеля в аэропорт Эль-Калафате для вылета в — Пуэрто-Игуасу.\nПо прибытии в Пуэрто-Игуасу — трансфер из аэропорта в отель. Размещение в отеле.\n\n\nДень 6. Игуасу — экскурсия к водопадам с аргентинской стороны\nВас ждёт знакомство с аргентинской стороной водопадов Игуасу — одним из величайших природных чудес света. Здесь среди пышной зелени субтропического леса низвергаются многочисленные каскады воды, создавая поистине грандиозное зрелище.\nВ сопровождении индивидуального гида, вы исследуете три основных маршрута национального парка: Нижний (Lower Circuit), Верхний (Upper Circuit) и маршрут к знаменитому водопаду «Глотка Дьявола» (Garganta del Diablo).\nКаждый из маршрутов откроет перед вами водопады с новой стороны: от возможности приблизиться к мощным потокам воды до захватывающих панорамных видов на грандиозные каскады.\nЭкскурсия также включает поездку на экологическом поезде, проходящем через тропический лес и доставляющем посетителей к основным достопримечательностям парка.\nВыезд из отеля, в зависимости от его расположения, запланирован в промежутке  07:20-08:20 утра.\n\n\n\nНижний маршрут (Lower Circuit): Пешеходная тропа протяжённостью около 1 700 метров проходит сквозь тропический лес и позволяет приблизиться к нескольким водопадам, в том числе Дос-Эрманас (Dos Hermanas) и Сальто-Босетти (Salto Bosetti). Маршрут открывает возможность увидеть водопады с близкого расстояния и в полной мере ощутить мощь падающих потоков воды.\nПродолжительность прогулки — около 1 часа 45 минут. Сложность — средняя.\nВерхний маршрут (Upper Circuit): Пешеходный маршрут протяжённостью около 1 300 метров (туда и обратно) проходит по оборудованным смотровым дорожкам вдоль верхней части водопадов. С них открываются впечатляющие виды на несколько крупных каскадов и панораму всего водопадного комплекса с высоты.\nПродолжительность прогулки — около 1 часа. Сложность — лёгкая.\nДень 7. Игуасу — экскурсия к водопадам с бразильской стороны\nПосле завтрака вас ждёт экскурсия к водопадам Игуасу с бразильской стороны. Ранним утром вас заберут из отеля. Время отправления — ориентировочно с 07:20 до 08:20, в зависимости от района расположения отеля.\nВы посетите бразильскую часть национального парка Игуасу и прогуляетесь по знаменитой пешеходной тропе протяжённостью около 1 200 метров. С неё открываются захватывающие панорамные виды на величественные водопады и знаменитую «Глотку Дьявола» (Garganta del Diablo).\nПо окончании экскурсии — возвращение в отель.\nДополнительные экскурсии в Фос-ду-Игуасу (за отдельную плату):\nПо желанию можно дополнить путешествие яркими впечатлениями, выбрав одну из дополнительных экскурсий:\nMacuco Safari — захватывающее водное приключение на специальном катере, позволяющее приблизиться к водопадам.\nПарк птиц (Parque das Aves) — знакомство с удивительным миром тропических птиц в окружении пышной растительности.\nПолёт на вертолёте над водопадами Игуасу — возможность полюбоваться грандиозным водопадным комплексом с высоты птичьего полёта.\n\n\n\nДень 8. Игуасу — Буэнос-Айрес\nТрансфер из отеля в аэропорт. Перелёт в Буэнос-Айрес.\nПо прибытии — индивидуальный трансфер в отель. Размещение в отеле.\nДень 9. Буэнос-Айрес — вылет\nИндивидуальный трансфер из отеля в аэропорт для вылета.\nОкончание программы.\nВ стоимость программы включено:\nПроживание в 4*отелях  на базе завтраков и включая местные  налоги.\nИндивидуальные трансферы с водителем (без сопровождения гида).\nИндивидуальные экскурсии в Буэнос-Айресе, Игуасу и Эль-Калафате с гидом.\nВходные билеты в национальные парки.\nВ стоимость программы не включено:\nМеждународные авиаперелёты.\nВнутренние авиаперелёты.\nЧаевые.\nДополнительные экскурсии.\nРаннее заселение и/или поздний выезд из отеля.\nПрограмма может быть изменена без предварительного уведомления. Все услуги предоставляются при наличии мест на момент бронирования.\n\n\n",
+      "sourceVerification": {
+        "fullTextCompared": true,
+        "tablesCompared": true,
+        "embeddedMediaCompared": true,
+        "mediaComparison": "initial_baseline",
+        "embeddedFileCount": 11,
+        "photographicOrIllustrativeFiles": 10,
+        "logoFiles": 1,
+        "individualMediaHashes": [
+          {
+            "path": "word/media/image1.jpeg",
+            "bytes": 262130,
+            "sha256": "90958583db629a7c35197084094ea656e93821bbedc92389f78fd9e73f6da15c"
+          },
+          {
+            "path": "word/media/image10.jpeg",
+            "bytes": 93729,
+            "sha256": "fba5495e62eeedbae2945982431936d2243f6753f576f7de176fee58e29c787d"
+          },
+          {
+            "path": "word/media/image11.png",
+            "bytes": 37155,
+            "sha256": "c24d3b6008ee1d5e2e2d334b78902ab606bde48a39fd29d7db0d1bf3309c123b"
+          },
+          {
+            "path": "word/media/image2.jpg",
+            "bytes": 37175,
+            "sha256": "1a64b8786ba53aefa52ca7bdebdd355fca461d972f5a7dc2e6eb7b6ddf6f74e3"
+          },
+          {
+            "path": "word/media/image3.jpg",
+            "bytes": 76289,
+            "sha256": "9d5854ee1a760a0ab670915c643cf7d23acca6a81bdcccda984ff9ac6da56681"
+          },
+          {
+            "path": "word/media/image4.jpeg",
+            "bytes": 166275,
+            "sha256": "3682b0fb18dc1b9df71c61c42e27f2dca6d5cd73fd41455c22d40623529bee87"
+          },
+          {
+            "path": "word/media/image5.jpg",
+            "bytes": 31672,
+            "sha256": "02bfee79564efa359599beb06ff1ee3efafbc1d7d21feee748d177663990a685"
+          },
+          {
+            "path": "word/media/image6.jpeg",
+            "bytes": 865104,
+            "sha256": "9663fb21b37e3dfed797a9084205dcfe1b2573788c7cf1f301752cdc3a5dc796"
+          },
+          {
+            "path": "word/media/image7.jpeg",
+            "bytes": 65873,
+            "sha256": "f21eef06493a0fa07785646b6bf079104797e89e2472c02b7d11dc12ba5d964e"
+          },
+          {
+            "path": "word/media/image8.jpg",
+            "bytes": 37521,
+            "sha256": "6456f982ca8ea413138ab7222d201e24cf2d75f9855555c02db7e0729b4135b6"
+          },
+          {
+            "path": "word/media/image9.jpeg",
+            "bytes": 112202,
+            "sha256": "dc62dc808afb25698ec94e502cc86119c67f9628fb420b832ccbbf3a9e67d46a"
+          }
+        ],
+        "visualContactSheetViewed": true,
+        "allPhotoIdentitiesAndSlotMappingsValidated": false,
+        "commentsCount": 0,
+        "commentsPaginationComplete": true,
+        "currentRevisionId": "0B_I4XfNIpwGhNWRvUVlHZ2pOeCtoRWhsU0FRVTVQeC92UzRBPQ",
+        "previousRevisionId": null,
+        "providerMetadataNote": "Explicit files.get fields requested version and checksums, but connector normalized response omits them. Current revision and computed DOCX/text/media SHA256 recorded instead."
+      },
+      "sourceFacts": {
+        "title": "Лучшее в Аргентине — 2027",
+        "durationDays": 9,
+        "durationNights": 8,
+        "route": [
+          "Буэнос-Айрес (2 ночи)",
+          "Эль-Калафате (2 ночи)",
+          "Пуэрто-Игуасу (3 ночи)",
+          "Буэнос-Айрес (1 ночь)"
+        ],
+        "hotels": [
+          {
+            "name": "474 Buenos Aires Hotel",
+            "nights": 2
+          },
+          {
+            "name": "Alto Calafate Hotel",
+            "nights": 2
+          },
+          {
+            "name": "Mercure Iguazu Hotel Iru",
+            "nights": 3
+          },
+          {
+            "name": "474 Buenos Aires Hotel",
+            "nights": 1
+          }
+        ],
+        "tariffsUSD": [
+          {
+            "pax": 1,
+            "room": "SGL",
+            "perPerson": 5289
+          },
+          {
+            "pax": 2,
+            "room": "DBL",
+            "perPerson": 2911
+          },
+          {
+            "pax": 3,
+            "room": "TRP",
+            "perPerson": 2541
+          }
+        ],
+        "tariffTableNote": "Raw OOXML table contains one actual tariff row; the repeated numbers in readable conversion arise from merged table cells, not three price seasons.",
+        "included": [
+          "Отели 4* с завтраками и местными налогами.",
+          "Индивидуальные трансферы с водителем без гида.",
+          "Индивидуальные экскурсии с гидом в Буэнос-Айресе, Игуасу и Эль-Калафате.",
+          "Входные билеты в национальные парки.",
+          "Tango Porteño: ужин из трёх блюд, аргентинское вино и групповой трансфер туда/обратно.",
+          "Групповая прогулка на катере у Перито-Морено."
+        ],
+        "notIncluded": [
+          "Международные и внутренние авиаперелёты.",
+          "Чаевые.",
+          "Дополнительные экскурсии.",
+          "Раннее заселение / поздний выезд."
+        ],
+        "guideLanguages": "Русскоговорящий гид явно подтверждён только в день 2; язык гида в Калафате/Игуасу не указан и не наследуется из старого тура.",
+        "optionalUnpriced": [
+          "Ледовый треккинг у Перито-Морено.",
+          "Macuco Safari.",
+          "Parque das Aves.",
+          "Вертолёт над Игуасу."
+        ],
+        "serviceAvailability": "Все услуги при наличии мест на момент бронирования; программа может быть изменена без предварительного уведомления."
+      },
+      "baselineRef": "e19be861aaad3da3ebc6cb76135e0c26f2db322f",
+      "sourceReview": {
+        "candidateRecords": [
+          {
+            "id": "tour_source_argentina_ot_lda_k_vodopadam",
+            "contentPath": "src/content/tours/argentina-ot-lda-k-vodopadam.md",
+            "mdBlobSha": "3c142c9237c730de543172d1b4487fc3c71785c2",
+            "mdSha256": "cc7ace3cd22a6b904cd5e647a614501f038d559e324d8a0ba81ef3b2bcf0be07",
+            "canonicalUrl": "/multi-country/tour/argentina-glaciers-to-iguazu-falls/",
+            "title": "Аргентина: Буэнос-Айрес, ледник Перито-Морено и водопады Игуасу",
+            "status": "approved",
+            "durationDays": 10,
+            "durationNights": 9,
+            "priceFrom": 2563,
+            "route": [
+              "Буэнос-Айрес",
+              "Эль-Калафате",
+              "Игуасу",
+              "Буэнос-Айрес"
+            ],
+            "included": [
+              "Размещение в отелях 4* на базе завтраков.",
+              "Индивидуальные трансферы с водителем по программе.",
+              "Индивидуальные экскурсии с русскоговорящим гидом по программе в Буэнос-Айресе и Игуасу.",
+              "Групповая экскурсия с англоговорящим гидом в Калафате.",
+              "Входные билеты по программе.",
+              "Танго-шоу с ужином в Буэнос-Айресе."
+            ],
+            "source": {
+              "driveId": "1lUNpPSwfe0uvcJDfgWIAkIVgOd-qC5d3",
+              "url": "https://drive.google.com/file/d/1lUNpPSwfe0uvcJDfgWIAkIVgOd-qC5d3/view?usp=drivesdk",
+              "name": "argentina-ot-lda-k-vodopadam__66d3c21c.md",
+              "kind": "rewrite_v2",
+              "folderId": "1-9mtF_QMc3oFgRiwmNU8ZNo8lWFEA0Rs",
+              "folderPath": "page_texts_rewrite_v2",
+              "mimeType": "text/markdown"
+            }
+          },
+          {
+            "id": "tour_source_argentina_buenos_ajres_kalafate_iguasu",
+            "contentPath": "src/content/tours/argentina-buenos-ajres-kalafate-iguasu.md",
+            "mdBlobSha": "e6674e69e67ab012f65ed53289f93c28b2c33d73",
+            "mdSha256": "82321278cf80e0624cea1fd85e1de67bcfec7f17608f57a3c4ffe9d71bedf211",
+            "canonicalUrl": "/multi-country/tour/argentina-buenos-aires-el-calafate-iguazu-10-days/",
+            "title": "Тур в Аргентину на 10 дней: Буэнос-Айрес, Патагония и Игуасу",
+            "status": "archived",
+            "durationDays": 10,
+            "durationNights": 9,
+            "priceFrom": 2675,
+            "route": [
+              "Буэнос-Айрес",
+              "Эль-Калафате",
+              "Игуасу",
+              "Буэнос-Айрес"
+            ],
+            "included": [
+              "Размещение в отелях 4* на базе завтраков.",
+              "Индивидуальные трансферы с водителем по программе.",
+              "Индивидуальные экскурсии с русскоговорящим гидом по программе в Буэнос-Айресе и Игуасу.",
+              "Групповые экскурсии с англоговорящим гидом в Эль-Калафате.",
+              "Входные билеты по программе.",
+              "Танго-шоу с ужином в Буэнос-Айресе."
+            ],
+            "source": {
+              "driveId": "1pHS3I_sB36TbA0IGmkWe8v5qp8KXBAU-",
+              "url": "https://drive.google.com/file/d/1pHS3I_sB36TbA0IGmkWe8v5qp8KXBAU-/view?usp=drivesdk",
+              "name": "argentina-buenos-ajres-kalafate-iguasu__2214ad3f.md",
+              "kind": "rewrite_v2",
+              "folderId": "1-9mtF_QMc3oFgRiwmNU8ZNo8lWFEA0Rs",
+              "folderPath": "page_texts_rewrite_v2",
+              "mimeType": "text/markdown"
+            }
+          },
+          {
+            "id": "tour_argentina_best_14_days",
+            "contentPath": "src/content/tours/best-of-argentina-14-days.md",
+            "mdBlobSha": "30ba0233d75ec9be38d1f1a1dc3b61f849d60487",
+            "mdSha256": "7d5ee226944418a0312b1e7966c3c851b41eed8a915b5dc9406ad07eab20df6a",
+            "canonicalUrl": "/multi-country/tour/best-of-argentina-14-days/",
+            "title": "Лучшее в Аргентине: 14 дней с Барилоче и Игуасу",
+            "status": "published",
+            "durationDays": 14,
+            "durationNights": 13,
+            "priceFrom": 5096,
+            "route": [
+              "Буэнос-Айрес",
+              "Эль-Калафате",
+              "Ушуайя",
+              "Барилоче",
+              "Фоз-ду-Игуасу",
+              "Буэнос-Айрес"
+            ],
+            "included": [
+              "13 ночей в отелях 4* на базе завтраков: 474 Buenos Aires — 4 ночи (3 в начале и 1 в конце), Calafate Parque — 2, Wyndham Garden Ushuaia — 2, Rochester Bariloche — 2, Mercure Iguazu — 3.",
+              "Индивидуальные трансферы с водителем по программе.",
+              "Индивидуальные экскурсии с русскоговорящим гидом в Буэнос-Айресе и Игуасу.",
+              "Групповые экскурсии с англоговорящим гидом в Эль-Калафате, Ушуайе и Барилоче; русскоговорящий гид возможен за дополнительную плату.",
+              "Входные билеты по основной программе.",
+              "Танго-шоу с ужином и вином в Буэнос-Айресе."
+            ],
+            "source": {
+              "driveId": "14AcwXEAKWk0aL6yHNJEb57BumCn0aK19",
+              "url": "https://docs.google.com/document/d/14AcwXEAKWk0aL6yHNJEb57BumCn0aK19/edit",
+              "name": "Best of Argentina Bue Calaf Ushu Bariloche Igu 2026 14d13n RUS com  20 % .docx",
+              "kind": "provided_materials",
+              "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "folderId": "1oEwwXWchjG4Ttrfht4fEiHB5HNjIE8fv",
+              "folderPath": "Argentina 2027"
+            }
+          },
+          {
+            "id": "tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu",
+            "contentPath": "src/content/tours/argentina-buenos-ajres-kalafate-ushuaja-iguasu.md",
+            "mdBlobSha": "028648b3953802007a02979707aeb2dc1caf8c23",
+            "mdSha256": "51d03385efb134f755be2134d8cab467521a99952a148a96620b58f236d88383",
+            "canonicalUrl": "/multi-country/tour/argentina-buenos-aires-el-calafate-ushuaia-iguazu-12-days/",
+            "title": "Тур в Аргентину на 12 дней: Буэнос-Айрес, Патагония, Ушуайя и Игуасу",
+            "status": "approved",
+            "durationDays": 12,
+            "durationNights": 11,
+            "priceFrom": 3578,
+            "route": [
+              "Буэнос-Айрес",
+              "Эль-Калафате",
+              "Ушуайя",
+              "Игуасу",
+              "Буэнос-Айрес"
+            ],
+            "included": [
+              "Проживание в отелях 4* с завтраками и местными налогами.",
+              "Частные трансферы с водителем по программе.",
+              "Экскурсии с англоговорящими гидами: индивидуально в Буэнос-Айресе и Игуасу, в группе в Эль-Калафате и Ушуайе.",
+              "Входные билеты в национальные парки по программе.",
+              "Ужин и танго-шоу в Буэнос-Айресе с групповыми трансферами туда и обратно."
+            ],
+            "source": {
+              "driveId": "1XH94LwW3ziRhm3ueKHR2biMbg97e_PX1",
+              "url": "https://docs.google.com/document/d/1XH94LwW3ziRhm3ueKHR2biMbg97e_PX1/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+              "name": "Argentina Bue Calaf Ushu Igu 12D11N 2027 RUS comm20%.docx",
+              "kind": "provided_materials",
+              "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          },
+          {
+            "id": "tour_source_vlyubites_v_argentinu",
+            "contentPath": "src/content/tours/vlyubites-v-argentinu.md",
+            "mdBlobSha": "ebb08ef6de263851b1a20c44b20a05301075e326",
+            "mdSha256": "df3190bbb6ae19feeae842fe904313cae463c6eb9a74420535e0f60826d58296",
+            "canonicalUrl": "/argentina/tour/argentina-buenos-aires-el-calafate-salta-iguazu/",
+            "title": "Тур в Аргентину: Буэнос-Айрес, Эль-Калафате, Сальта, Игуасу",
+            "status": "published",
+            "durationDays": 15,
+            "durationNights": 14,
+            "priceFrom": 5375,
+            "route": [
+              "Буэнос-Айрес",
+              "Эль-Калафате",
+              "Сальта",
+              "Игуасу"
+            ],
+            "included": [
+              "Проживание в отелях 4-5* на базе завтраков",
+              "Частные трансферы только с водителем",
+              "Частные экскурсии с англоговорящими гидами",
+              "Входные билеты в национальные парки"
+            ],
+            "source": {
+              "driveId": "1mT6CCTXmmiOg8ebri3Yx_FDnwrsczLwz",
+              "url": "https://docs.google.com/document/d/1mT6CCTXmmiOg8ebri3Yx_FDnwrsczLwz/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+              "name": "Fall in love with Argentina 2027  15 d 14n RUS 20%.docx",
+              "kind": "provided_materials",
+              "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          }
+        ],
+        "canonicalInventoryHasExactDriveId": false,
+        "catalogueToursCompared": 397,
+        "exactNineDayRouteMatchFound": false,
+        "activeCandidateId": "tour_source_argentina_ot_lda_k_vodopadam",
+        "archivedDuplicateId": "tour_source_argentina_buenos_ajres_kalafate_iguasu",
+        "archivedDuplicateOf": "tour_source_argentina_ot_lda_k_vodopadam",
+        "excludedCandidates": [
+          {
+            "id": "tour_argentina_best_14_days",
+            "reason": "P118: 14д/13н включает Ушуайю и Барилоче; общий Best of Argentina не доказывает соответствие."
+          },
+          {
+            "id": "tour_source_argentina_buenos_ajres_kalafate_ushuaja_iguasu",
+            "reason": "P114: 12д/11н с Ушуайей; это другой полный маршрут."
+          },
+          {
+            "id": "tour_source_vlyubites_v_argentinu",
+            "reason": "P115: 15д/14н с Сальтой; это другой полный маршрут."
+          }
+        ],
+        "confirmedDifferencesFromTenDayCandidate": [
+          "Word 9д/8н против текущих 10д/9н; отсутствует свободный третий день в Буэнос-Айресе, последующие дни сдвинуты.",
+          "В Word названо Tango Porteño и ужин из трёх блюд; текущий Tour содержит общий танго-блок.",
+          "В Word включены частная экскурсия в Калафате и групповой катер; текущий Tour включает групповую экскурсию с английским гидом и не заявляет катер.",
+          "Word указывает конкретный набор отелей и три тарифа 5289/2911/2541 USD; текущая priceFrom=2563, но прямое сравнение тарифов до выбора идентичности не заявляется.",
+          "Новый Word явно подтверждает русский язык только для обзора Буэнос-Айреса; текущий Tour обещает русский язык также в Игуасу. Это не переносится автоматически.",
+          "Не переносить старые доплаты за Тигре, гаучо, Монтевидео и треккинг: новый Word этих цен не содержит."
+        ]
+      },
+      "reason": "Новый Drive ID и полноценный Word 9д/8н подтверждены, но его связь с действующим 10д/9н tour_source_argentina_ot_lda_k_vodopadam не установлена. Основная последовательность Буэнос-Айрес — Эль-Калафате — Игуасу — Буэнос-Айрес совпадает; в новом Word убран свободный день, названы отели, включён групповой катер у Перито-Морено и индивидуальная экскурсия в Калафате. Это может быть новая редакция существующего продукта либо отдельный 9-дневный вариант. Точного Word→Tour соответствия в описи нет; один факт нового файла/названия не разрешает выбрать между обновлением stable ID и созданием отдельного тура. Архивный 10-дневный дубль имеет активную замену и не восстанавливается.",
+      "nextStep": "Разрешить только идентичность продукта: отдельный 9-дневный вариант или замена действующего tour_source_argentina_ot_lda_k_vodopadam. Затем продолжить полный v2 lifecycle с сохранённого проверенного Word/таблицы/media snapshot и baseline e19be861aaad3da3ebc6cb76135e0c26f2db322f; не повторять обнаружение или считать источник новой программой повторно. Повторное разрешение публикации не требуется.",
+      "reasonForNoPublication": "product_identity_unresolved_before_content_or_media_mutations",
+      "completedWork": [
+        "complete_recursive_discovery",
+        "raw_docx_download_and_sha256",
+        "all_nine_days_and_raw_price_table_reviewed",
+        "eleven_embedded_files_hashed_and_visually_inspected",
+        "active_and_archived_tour_candidates_compared",
+        "source_revision_and_comments_checked"
+      ],
+      "pendingStages": [
+        "identity_resolution",
+        "word_verified_for_exact_tour_id",
+        "relations_ready",
+        "interests_verified",
+        "destinations_classified",
+        "media_ready",
+        "mobile_heroes_ready",
+        "seo_facts_ready",
+        "seo_voice_ready",
+        "catalogues_ready",
+        "content_committed",
+        "actions_deployed",
+        "geo_ready",
+        "sheets_synced"
+      ]
     }
   ],
   "runs": [
@@ -2135,6 +2675,870 @@
         }
       ],
       "nextStep": "Continue full discovery and existing source reviews. Auxiliary ticket price change remains separately recorded; no tour price extrapolation or new Tour creation."
+    },
+    {
+      "id": "daily-word-2027-20261029-20261029005539449",
+      "startedAt": "2026-10-29T00:55:39.449Z",
+      "finishedAt": "2026-10-29T00:59:52.507Z",
+      "scanStatus": "complete",
+      "outcome": "source_correction_no_public_change_and_new_conflicting_P127_word",
+      "foldersScanned": 29,
+      "rootChildren": 27,
+      "filesObserved": 221,
+      "uniqueFilesObserved": 221,
+      "wordFilesObserved": 213,
+      "pdfFilesObserved": 8,
+      "registeredTourWordFiles": 199,
+      "excludedAuxiliaryWordFiles": 13,
+      "unregisteredWordExistingProgramCandidates": 1,
+      "newFileIds": [
+        "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs"
+      ],
+      "newWordFileIds": [
+        "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs"
+      ],
+      "candidateChangedFileIds": [
+        "1lWeAiB-7v8o63YZI4qIOQlpSQL2Zht6R",
+        "1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp"
+      ],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 1,
+      "confirmedChangedWordFileIds": [
+        "1lWeAiB-7v8o63YZI4qIOQlpSQL2Zht6R"
+      ],
+      "confirmedWordChangesAlreadyReflectedOnSite": 1,
+      "metadataOnlyFileIds": [
+        "1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp"
+      ],
+      "missingFileIds": [],
+      "movedFileIds": [],
+      "renamedFileIds": [],
+      "sourceChecks": [
+        {
+          "programKey": "P021",
+          "driveFileId": "1lWeAiB-7v8o63YZI4qIOQlpSQL2Zht6R",
+          "classification": "source_correction_already_reflected_on_site",
+          "sourceVersion": {
+            "id": "1lWeAiB-7v8o63YZI4qIOQlpSQL2Zht6R",
+            "textSha256": "1153d61b4becf33b5e613e248ef4beb47ebb9b6b1fdf694df1192965dd596d03",
+            "docxSha256": "9728714e08fc789459d423b25f11e7e0ee6ff0f2473e56ee74db4d544bc74c25",
+            "media": {
+              "word/media/image1.png": "c24d3b6008ee1d5e2e2d334b78902ab606bde48a39fd29d7db0d1bf3309c123b",
+              "word/media/image2.jpg": "8c6dfa2b70115cefa7d66ed7b7dc6274ed02f3ed858ef6d814bb16d1362d401f",
+              "word/media/image3.jpg": "83ae288904fc35a8ab9026d93ab767761d848fd64d0e1e1f1871b71841f29651",
+              "word/media/image4.png": "fd2146f1a7a602279a1c02ef8a1a7c139de39a3a9481c62cee8f86acc87fc27d",
+              "word/media/image5.jpg": "6e356edba8ede65909ebd089e44a51afc050bd19ded99e103c09d90a22137dfd",
+              "word/media/image6.jpg": "485ef491b71261f0d2415c63fc20645af2c4971c6a00fdfe568bd2aad089e406"
+            },
+            "embeddedMediaSha256": "2a02fd3b9d4c2bdb3b052bceefe16b54f9b88615adb9b8f79291a640277190b7",
+            "modifiedTime": "2026-10-28T13:28:30.203Z"
+          },
+          "stage": "source_text_and_tables_verified",
+          "sourceChanges": [
+            {
+              "before": "Питание согласно программе: завтрак,обед, ужин",
+              "after": "Питание согласно программе"
+            },
+            {
+              "before": "$ 1840 /",
+              "after": "$ 1840",
+              "kind": "stray_slash_removed"
+            }
+          ],
+          "unchangedFacts": "6 days/5 nights, group 2+, all days, hotels, English guide and 1582/1840 USD tariffs unchanged",
+          "publicContentDecision": "verified_unchanged_existing_MD_already_breakfast_only",
+          "publicContentPath": "src/content/tours/luchshee-v-salvadore.md",
+          "publicContentBlobSha": "0895c50c19a2905dc7f7ce2a6c3b708226a3a154",
+          "mediaComparison": "Six embedded-image hashes saved as initial baseline. Prior binary revision/media snapshot unavailable: revisions list returns only current revision. No replacement or unchanged-image claim made.",
+          "siteChanges": 0
+        },
+        {
+          "programKey": "P149",
+          "driveFileId": "1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp",
+          "classification": "metadata_only_text_and_provider_revision_unchanged",
+          "sourceVersion": {
+            "id": "1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp",
+            "textSha256": "f46fdcab1b0c70327fa5ac2d395087c0cdcf92b664f56498b547089bdf9e3016",
+            "docxSha256": "04f7e951731714a962b2c3123d513afe0851a5c3a6a7da74d4ed5346025c83ce",
+            "media": {
+              "word/media/image1.jpg": "69ea5a35cbe7582c3097b528f52e080f2a54d05c9276c4c70e17fb585404e37a",
+              "word/media/image10.jpg": "b04392a50142bd21bbcf142877e6541f96b842d3a6de97fecc9d5b9b97d249f7",
+              "word/media/image2.jpg": "4b45d18487cc8b5f95a9e89705d212c5157166db3c18537dc6295a87c4969b10",
+              "word/media/image3.jpg": "1acaf04461b855620d67890fe47d87409dfdf100c84a25079b34cc2131c34a61",
+              "word/media/image4.jpg": "0bb48c7a50db1a0094d7647fcd976a511ad4e73eebca55c8aeb1f7a88a2fef6c",
+              "word/media/image5.jpg": "b8047d1138d66ef7b8e7190069840d1c828d22b597f4c934b299ebf1b10ff589",
+              "word/media/image6.png": "c24d3b6008ee1d5e2e2d334b78902ab606bde48a39fd29d7db0d1bf3309c123b",
+              "word/media/image7.jpg": "6e215fa9f08529bfea8de220f50823cf5eeeb1c2da3f9009525dfa7a0f4bdf4e",
+              "word/media/image8.jpg": "a657d1d57d48c895770119a630fe1410598752a5593c7a5d7a39cb0b57ce4ef2",
+              "word/media/image9.jpg": "9a0fab23ccc2553d24c502f9f1e8b0d97e202292e04f28c380e1b355b88d8709"
+            },
+            "embeddedMediaSha256": "4b4f32a0eab34f104b9e9937a861bdeae210964b0771178e9024f0fd15abef50",
+            "revisionId": "0B_k3LoMSXqKtSHl6NGk2UUg2eGlVYTQ5LzBmdkluRkl2dlhVPQ",
+            "providerRevisionModifiedTime": "2026-08-17T01:04:16.796Z"
+          },
+          "textComparison": "Exact full readable text equals data/source-index/materials/p149-word-2027.md after terminal whitespace trim; all 9 prices unchanged.",
+          "sourceMaterialBlobSha": "72785ce0e1833e90e0f83172d6998275e634b454",
+          "mediaComparison": "10 image hashes saved as initial baseline. Provider binary revision timestamp/size unchanged from canonical source; folder modifiedTime is not a new binary revision.",
+          "siteChanges": 0
+        },
+        {
+          "programKey": "P127",
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "classification": "new_word_existing_program_conflicting_brochure",
+          "status": "REVIEW",
+          "stage": "word_and_canonical_source_compared"
+        }
+      ],
+      "newSourceReviews": [
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "name": "Great South America 2027 14d13n RUS 20com.docx",
+          "url": "https://docs.google.com/document/d/1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs/edit?usp=drivesdk&ouid=101181833454024238092&rtpof=true&sd=true",
+          "folderId": "12STRmyL2L-xHLzWjUHZEbS4b79Iyv7Ks",
+          "folderPath": "Peru 2027",
+          "programKey": "P127",
+          "tourId": "tour_source_velikij_tur_po_yuzhnoj_amerike",
+          "classification": "new_word_existing_program_conflicting_brochure",
+          "queueType": "source_authority_review",
+          "status": "REVIEW",
+          "stage": "word_and_canonical_source_compared",
+          "identityStatus": "same_14_day_13_night_program_not_new_tour",
+          "publicationAllowed": false,
+          "detectedAt": "2026-10-29T00:59:52.507Z",
+          "lastCheckedAt": "2026-10-29T00:59:52.507Z",
+          "lastCheckedInRun": "daily-word-2027-20261029-20261029005539449",
+          "observedModifiedTime": "2026-10-28T13:52:37.357Z",
+          "sourceVersion": {
+            "modifiedTime": "2026-10-28T13:52:37.357Z",
+            "bytes": 1884226,
+            "version": null,
+            "id": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+            "textSha256": "0d8da5b0d44d749f85bc0c7986b899950dfc31e809b40d7f83f5b3ec58d0089a",
+            "docxSha256": "23cda187d1fd12f9ca15203e70de1f814c694d5a2960b7f866ea0aa332cdee6a",
+            "media": {
+              "word/media/image1.jpg": "0222e7b6159b4b8cc1fbb3bff04c3c493e0259d115bff0370e40da3d89f424f0",
+              "word/media/image10.jpg": "6dd8a25e2ba3eeac4d22d0057c340b83c4c801ccf196445daeb676370c556789",
+              "word/media/image11.jpg": "c2fe30058b552ae71595aa4e9e52b57891bc9a937174d84e085ccdc294a22655",
+              "word/media/image12.png": "3af7db65aede0f55c0f7d9e3bd14fbe37dbe2a18381fc008c1f5f74247ca56f8",
+              "word/media/image13.png": "a8f8e32c7b3342a8650ff9799cfcb7b43b9c5e1540d15ff71969639867757eb8",
+              "word/media/image14.png": "1b6052f9bb5298f43ea632a5b10145d90f2fdc33d4f2474f26d5dd67dc425296",
+              "word/media/image2.png": "0e99fe5bcc04232ca49dea3893b361d7352cdf500505c4e205363c2e13890854",
+              "word/media/image3.jpg": "7025324b1fbf2deb7b7aa714de1eb1cacf1b7cbbc28a1334b4a51927c05c32cf",
+              "word/media/image4.jpg": "748b5139f817b03bd24cea049eaad260c22ce2af0d94a6850a3668f673746a59",
+              "word/media/image5.jpg": "767b1516d3d810a43c32a14aa2adba6fdb6dc1689cd177068504acc1fe254184",
+              "word/media/image6.jpg": "a89039848fe08002d4dae81e9a17c31f7713b84d29d49ba9c5c0b2b2586f1525",
+              "word/media/image7.jpg": "7e6908b802e3778da12761bfae6c47b8dc7ec224352ab0a62c4d4a97823faf5b",
+              "word/media/image8.jpg": "fcfff62b3e8a33571f5d11d9ca5ca05a41b99ca5b687b3a79ea0ccce872e5997",
+              "word/media/image9.jpg": "7204e04fcf7a194adc400e4a75d2f0416c96b7e6cf0253473de16fbc162526eb"
+            },
+            "embeddedMediaSha256": "7276d6ce97143101b08eeecd2cc09eba257c7cfcb8993f5539d31d3c4499936b"
+          },
+          "readableTextSha256": "0d8da5b0d44d749f85bc0c7986b899950dfc31e809b40d7f83f5b3ec58d0089a",
+          "textHashMethod": "SHA-256 of exact connected Drive readable UTF-8 text, without added newline; nested textboxes additionally inspected directly in word/document.xml",
+          "comparedWordDriveFileId": "1JI6ZBQtl3Y_LC6hLD-y0Rn8W2M3p5b5h",
+          "comparedWordTextSha256": "af16e0e45d0c7aebc1554815e0f9e065c54724eb5ac1ace0ee06e531984043ae",
+          "canonicalSourceMaterialPath": "data/source-index/materials/tour_source_velikij_tur_po_yuzhnoj_amerike-word-20261011.md",
+          "baselineRef": "435f7fe12a7130d70dd493487a42977d13c18bae",
+          "sameTariffsUSD": [
+            15213,
+            9191,
+            8071,
+            7797,
+            6676,
+            6559
+          ],
+          "tariffColumnOrder": [
+            "1 pax SGL",
+            "2 pax SGL",
+            "2 pax DBL",
+            "3 pax SGL",
+            "3 pax DBL",
+            "3 pax TPL"
+          ],
+          "sameEasterIslandTariffsUSD": [
+            1116,
+            780,
+            754
+          ],
+          "sourceReview": {
+            "all14DaysReviewed": true,
+            "tablesReviewed": 14,
+            "textBoxesInspected": true,
+            "hiddenMainTariffsLocated": true,
+            "mediaCount": 14,
+            "mediaBaseline": "initial_snapshot_no_previous_version_for_this_new_file",
+            "brochureInternalDate": "2026-10-09",
+            "differences": [
+              {
+                "field": "guideLanguage",
+                "canonical": "Russian in Lima, Cusco city, La Paz, Santiago; others English",
+                "newWord": "English guides throughout"
+              },
+              {
+                "field": "Santiago city route",
+                "canonical": "Santa Lucia hill; Vitacura, Las Condes, Providencia",
+                "newWord": "San Cristobal hill; eastern Santiago"
+              },
+              {
+                "field": "Cusco day 3",
+                "canonical": "city centre/Coricancha plus archaeological park in current canonical source",
+                "newWord": "Sacsayhuaman archaeological park with Tambomachay, Qenqo, Puca Pucara; city centre/Coricancha not explicitly promised"
+              },
+              {
+                "field": "Uyuni food",
+                "canonical": "lunch and dinner on first two Uyuni days; lunch on third",
+                "newWord": "included blocks explicitly mention lunch day 9; packed lunch and dinner day 10; day 11 breakfast"
+              },
+              {
+                "field": "Cusco–Puno stops (day 5)",
+                "canonical": "Andahuaylillas, Raqchi, Sicuani, La Raya, Pucara",
+                "newWord": "Pikillacta, Andahuaylillas, Raqchi, Sicuani, La Raya; Pucara not explicitly listed"
+              },
+              {
+                "field": "Lake Titicaca day 6",
+                "canonical": "Uros",
+                "newWord": "Uros and Taquile"
+              }
+            ],
+            "extractionCaution": "Connector readable text and python-docx tables omitted six main prices stored in nested Word textboxes. Prices verified from all w:t nodes in original document.xml; no absent-price blocker asserted."
+          },
+          "reason": "Вновь загруженная брошюра Word соответствует существующему P127 (14д/13н, Перу–Боливия–Чили, одинаковые шесть тарифов и продление Пасхи), но противоречит продолжающему действовать точному Word по языку гидов и маршруту Сантьяго. В самой брошюре дата 09.10.2026; загрузка 28.10 не доказывает, что это замена канонической программы.",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "existingOpenQueueAtStart": 3,
+      "sourceReviewQueueRemaining": 4,
+      "auxiliaryReviewRemaining": 1,
+      "queueActions": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "unchanged_source_no_new_resolution"
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "programKey": "P153",
+          "status": "REVIEW",
+          "stage": "pdf_and_word_compared",
+          "action": "unchanged_source_no_new_resolution"
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "unchanged_source_no_new_resolution"
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "programKey": "P127",
+          "status": "REVIEW",
+          "stage": "word_and_canonical_source_compared",
+          "action": "new_conflicting_source_review"
+        }
+      ],
+      "comparison": {
+        "baselineMainCommit": "435f7fe12a7130d70dd493487a42977d13c18bae",
+        "workflowVersion": "2.0",
+        "workflowBlobSha": "d35f1f89129469a5142c605598c3d3f9901ae072",
+        "inventoryBlobSha": "144322530e0a3e8069442945cd215e6a2046e2db",
+        "previousSnapshotAt": "2026-10-28T01:03:18.899Z",
+        "method": "Complete recursive ID/name/folder/modifiedTime/size comparison; all 3 candidate Word texts read, original DOCX binaries downloaded and SHA-256 hashed; tables and nested Word textboxes inspected; canonical P127 Word directly reread. All 14 days of new brochure compared; exact P149 text comparison and P021 paragraph/table comparison.",
+        "folderPagination": "29 direct listings top_k=100, all below limit (max59), pending empty; batches <=5 folders.",
+        "versionAndChecksumAvailability": "Provider revision IDs read for P021/P149; previousRevisionId null for both. Binary SHA-256/media hashes locally computed. No prior media snapshot fabricated; current baselines saved."
+      },
+      "publicationStatus": "not_required_source_correction_already_reflected_and_other_source_in_review",
+      "contentCommit": null,
+      "deployRun": null,
+      "siteChanges": {
+        "newTours": 0,
+        "updatedTours": 0,
+        "newDestinations": 0,
+        "updatedDestinations": 0,
+        "newExcursions": 0,
+        "updatedExcursions": 0,
+        "newPhotographs": 0,
+        "replacedPhotographs": 0,
+        "newOtherObjects": 0,
+        "updatedOtherObjects": 0
+      },
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_site_publication",
+      "lifecycleGates": "not_applicable_no_accepted_new_or_substantially_changed_public_tour_content",
+      "emailStatus": "not_required_no_site_changes",
+      "emailReason": "No actual site release in this cycle. Word discovery/REVIEW/source evidence and journal commits do not meet §4.1.",
+      "historicalP172": "Full completion preserved, source metadata unchanged, no repeat import/media/deploy.",
+      "errors": [],
+      "blockers": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "status": "REVIEW",
+          "reason": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "status": "REVIEW",
+          "reason": "Русский язык гидов и включение Уюни–Ла-Пас подтверждены. Открыты только выбор тарифов Word/PDF и музей в Лиме.",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "status": "REVIEW",
+          "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "status": "REVIEW",
+          "reason": "Вновь загруженная брошюра Word соответствует существующему P127 (14д/13н, Перу–Боливия–Чили, одинаковые шесть тарифов и продление Пасхи), но противоречит продолжающему действовать точному Word по языку гидов и маршруту Сантьяго. В самой брошюре дата 09.10.2026; загрузка 28.10 не доказывает, что это замена канонической программы.",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "nextStep": "Continue daily full discovery and exact source reviews; apply P127 only after authority/guide/route conflict resolved. P021 public content already matches corrected meal terms; do not republish unchanged content."
+    },
+    {
+      "id": "daily-word-2027-20261030-20261030010514897",
+      "startedAt": "2026-10-30T01:05:14.897Z",
+      "finishedAt": "2026-10-30T01:07:08.874Z",
+      "scanStatus": "complete",
+      "outcome": "no_source_changes_with_existing_source_reviews",
+      "foldersScanned": 29,
+      "rootChildren": 27,
+      "filesObserved": 221,
+      "uniqueFilesObserved": 221,
+      "wordFilesObserved": 213,
+      "pdfFilesObserved": 8,
+      "registeredTourWordFiles": 199,
+      "excludedAuxiliaryWordFiles": 13,
+      "unregisteredWordExistingProgramCandidates": 1,
+      "newFileIds": [],
+      "newWordFileIds": [],
+      "candidateChangedFileIds": [],
+      "confirmedChangedWordFileIds": [],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 0,
+      "metadataOnlyFileIds": [],
+      "missingFileIds": [],
+      "movedFileIds": [],
+      "renamedFileIds": [],
+      "existingOpenQueueAtStart": 4,
+      "sourceReviewQueueRemaining": 4,
+      "auxiliaryReviewRemaining": 1,
+      "queueActions": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "programKey": "P153",
+          "status": "REVIEW",
+          "stage": "pdf_and_word_compared",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "programKey": "P127",
+          "status": "REVIEW",
+          "stage": "word_and_canonical_source_compared",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "auxiliaryDocumentCheck": {
+        "driveFileId": "17nhqn10KeLv6ydB03qH6Vkq3H5M_dhmI",
+        "status": "REVIEW",
+        "action": "ticket_price_source_unchanged_no_new_resolution",
+        "newTariffChangeDetected": false
+      },
+      "comparison": {
+        "baselineMainCommit": "2ee98bab738f496b3924bd973e1b79b7b91fb7e8",
+        "workflowVersion": "2.0",
+        "workflowBlobSha": "d35f1f89129469a5142c605598c3d3f9901ae072",
+        "inventoryBlobSha": "144322530e0a3e8069442945cd215e6a2046e2db",
+        "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
+        "previousSnapshotAt": "2026-10-29T00:59:52.507Z",
+        "method": "Complete recursive Drive ID/name/folder/modifiedTime/byte-size comparison against canonical inventory identities and previous complete daily snapshot. All 221 files retain the previous metadata. Existing exact text/DOCX/embedded-media hashes preserved; unchanged texts/binaries not reread and no new media verification claimed. Main remains the previous daily audit commit, so no new repository source resolutions exist.",
+        "folderPagination": "All 29 direct listings top_k=100 returned fewer than 100 items (maximum59); six sequential batches of at most5 folders; pending queue empty. No truncated listing.",
+        "versionAndChecksumAvailability": "Normalized folder listings expose no provider version/checksum; preserved prior available source revision and computed hash evidence. No new version/checksum claim."
+      },
+      "publicationStatus": "not_required_no_source_changes_no_resolved_review",
+      "contentCommit": null,
+      "deployRun": null,
+      "siteChanges": {
+        "newTours": 0,
+        "updatedTours": 0,
+        "newDestinations": 0,
+        "updatedDestinations": 0,
+        "newExcursions": 0,
+        "updatedExcursions": 0,
+        "newPhotographs": 0,
+        "replacedPhotographs": 0,
+        "newOtherObjects": 0,
+        "updatedOtherObjects": 0
+      },
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_site_publication",
+      "lifecycleGates": "not_applicable_no_new_or_substantially_changed_accepted_tour_content",
+      "emailStatus": "not_required_no_site_changes",
+      "emailReason": "No site pages/entities published by this cycle. No Gmail send was attempted under §4.1.",
+      "historicalP172": "Full lifecycle completion retained; source unchanged, no repeated import/media/upload/deploy.",
+      "errors": [],
+      "blockers": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "status": "REVIEW",
+          "reason": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "status": "REVIEW",
+          "reason": "Русский язык гидов и включение Уюни–Ла-Пас подтверждены. Открыты только выбор тарифов Word/PDF и музей в Лиме.",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "status": "REVIEW",
+          "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "status": "REVIEW",
+          "reason": "Вновь загруженная брошюра Word соответствует существующему P127 (14д/13н, Перу–Боливия–Чили, одинаковые шесть тарифов и продление Пасхи), но противоречит продолжающему действовать точному Word по языку гидов и маршруту Сантьяго. В самой брошюре дата 09.10.2026; загрузка 28.10 не доказывает, что это замена канонической программы.",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "nextStep": "Continue daily full discovery. Resume exact source-authority review when relevant Word/PDF or confirmed Anna resolution changes; preserve all current queue stages and historical completions."
+    },
+    {
+      "id": "daily-word-2027-20261031-20261031005543821",
+      "startedAt": "2026-10-31T00:55:43.821Z",
+      "finishedAt": "2026-10-31T00:56:53.457Z",
+      "scanStatus": "complete",
+      "outcome": "no_source_changes_with_existing_source_reviews",
+      "foldersScanned": 29,
+      "rootChildren": 27,
+      "filesObserved": 221,
+      "uniqueFilesObserved": 221,
+      "wordFilesObserved": 213,
+      "pdfFilesObserved": 8,
+      "registeredTourWordFiles": 199,
+      "excludedAuxiliaryWordFiles": 13,
+      "unregisteredWordExistingProgramCandidates": 1,
+      "newFileIds": [],
+      "newWordFileIds": [],
+      "candidateChangedFileIds": [],
+      "confirmedChangedWordFileIds": [],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 0,
+      "metadataOnlyFileIds": [],
+      "missingFileIds": [],
+      "movedFileIds": [],
+      "renamedFileIds": [],
+      "existingOpenQueueAtStart": 4,
+      "sourceReviewQueueRemaining": 4,
+      "auxiliaryReviewRemaining": 1,
+      "queueActions": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "programKey": "P153",
+          "status": "REVIEW",
+          "stage": "pdf_and_word_compared",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "programKey": "P127",
+          "status": "REVIEW",
+          "stage": "word_and_canonical_source_compared",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "auxiliaryDocumentCheck": {
+        "driveFileId": "17nhqn10KeLv6ydB03qH6Vkq3H5M_dhmI",
+        "status": "REVIEW",
+        "action": "ticket_price_source_unchanged_no_new_resolution",
+        "newTariffChangeDetected": false
+      },
+      "comparison": {
+        "baselineMainCommit": "0f596fb40dc48a79d0772fd74ef131498327a304",
+        "workflowVersion": "2.0",
+        "workflowBlobSha": "d35f1f89129469a5142c605598c3d3f9901ae072",
+        "inventoryBlobSha": "144322530e0a3e8069442945cd215e6a2046e2db",
+        "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
+        "previousSnapshotAt": "2026-10-30T01:07:08.874Z",
+        "method": "Complete recursive Drive ID/name/folder/modifiedTime/byte-size comparison against canonical inventory identities and previous complete daily snapshot. All 221 files retain previous metadata. Existing exact text/DOCX/embedded-media hashes preserved; unchanged texts/binaries not reread and no new media verification claimed. Read current source resolutions and audited the data/audits directory for later Anna resolutions; no later relevant resolution appeared. Independent repository media/editor updates excluded from this cycle.",
+        "folderPagination": "All 29 direct listings top_k=100 returned fewer than100 items (maximum59); six sequential batches of at most5 folders; pending queue empty. No truncated listing.",
+        "versionAndChecksumAvailability": "Normalized folder listings expose no provider version/checksum; preserved prior available source revision and computed hash evidence. No new version/checksum verification claim."
+      },
+      "publicationStatus": "not_required_no_source_changes_no_resolved_review",
+      "contentCommit": null,
+      "deployRun": null,
+      "siteChanges": {
+        "newTours": 0,
+        "updatedTours": 0,
+        "newDestinations": 0,
+        "updatedDestinations": 0,
+        "newExcursions": 0,
+        "updatedExcursions": 0,
+        "newPhotographs": 0,
+        "replacedPhotographs": 0,
+        "newOtherObjects": 0,
+        "updatedOtherObjects": 0
+      },
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_site_publication",
+      "lifecycleGates": "not_applicable_no_new_or_substantially_changed_accepted_tour_content",
+      "emailStatus": "not_required_no_site_changes",
+      "emailReason": "No site pages/entities published by this cycle. No Gmail send attempted under §4.1; independent media/editor releases excluded.",
+      "historicalP172": "Full lifecycle completion retained; source unchanged, no repeated import/media/upload/deploy.",
+      "errors": [],
+      "blockers": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "status": "REVIEW",
+          "reason": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "status": "REVIEW",
+          "reason": "Русский язык гидов и включение Уюни–Ла-Пас подтверждены. Открыты только выбор тарифов Word/PDF и музей в Лиме.",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "status": "REVIEW",
+          "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "status": "REVIEW",
+          "reason": "Вновь загруженная брошюра Word соответствует существующему P127 (14д/13н, Перу–Боливия–Чили, одинаковые шесть тарифов и продление Пасхи), но противоречит продолжающему действовать точному Word по языку гидов и маршруту Сантьяго. В самой брошюре дата 09.10.2026; загрузка 28.10 не доказывает, что это замена канонической программы.",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "nextStep": "Continue daily full discovery. Resume exact source-authority reviews when relevant Word/PDF or confirmed Anna resolution changes; preserve all current queue stages and historical completions."
+    },
+    {
+      "id": "daily-word-2027-20261101-20261101005829572",
+      "startedAt": "2026-11-01T00:58:29.572Z",
+      "finishedAt": "2026-11-01T00:59:35.418Z",
+      "scanStatus": "complete",
+      "outcome": "no_source_changes_with_existing_source_reviews",
+      "foldersScanned": 29,
+      "rootChildren": 27,
+      "filesObserved": 221,
+      "uniqueFilesObserved": 221,
+      "wordFilesObserved": 213,
+      "pdfFilesObserved": 8,
+      "registeredTourWordFiles": 199,
+      "excludedAuxiliaryWordFiles": 13,
+      "unregisteredWordExistingProgramCandidates": 1,
+      "newFileIds": [],
+      "newWordFileIds": [],
+      "candidateChangedFileIds": [],
+      "confirmedChangedWordFileIds": [],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 0,
+      "metadataOnlyFileIds": [],
+      "missingFileIds": [],
+      "movedFileIds": [],
+      "renamedFileIds": [],
+      "existingOpenQueueAtStart": 4,
+      "sourceReviewQueueRemaining": 4,
+      "auxiliaryReviewRemaining": 1,
+      "queueActions": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "programKey": "P153",
+          "status": "REVIEW",
+          "stage": "pdf_and_word_compared",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "programKey": "P127",
+          "status": "REVIEW",
+          "stage": "word_and_canonical_source_compared",
+          "action": "source_unchanged_no_new_authoritative_resolution_preserved",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "auxiliaryDocumentCheck": {
+        "driveFileId": "17nhqn10KeLv6ydB03qH6Vkq3H5M_dhmI",
+        "status": "REVIEW",
+        "action": "ticket_price_source_unchanged_no_new_resolution",
+        "newTariffChangeDetected": false
+      },
+      "comparison": {
+        "baselineMainCommit": "bb2ba3400a8cc7c7b2fd2bad4fa2160b8170b537",
+        "workflowVersion": "2.0",
+        "workflowBlobSha": "d35f1f89129469a5142c605598c3d3f9901ae072",
+        "inventoryBlobSha": "144322530e0a3e8069442945cd215e6a2046e2db",
+        "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
+        "previousSnapshotAt": "2026-10-31T00:56:53.457Z",
+        "method": "Complete recursive Drive ID/name/folder/modifiedTime/byte-size comparison against canonical inventory identities and previous complete daily snapshot. All 221 files retain previous metadata. Existing exact text/DOCX/embedded-media hashes preserved; unchanged texts/binaries not reread and no new media verification claimed. Current source resolutions and data/audits directory checked; no later relevant resolution appeared. Main remains previous daily audit commit.",
+        "folderPagination": "All 29 direct listings top_k=100 returned fewer than100 items (maximum59); six sequential batches of at most5 folders; pending queue empty. No truncated listing.",
+        "versionAndChecksumAvailability": "Normalized folder listings expose no provider version/checksum; preserved prior available source revision and computed hash evidence. No new version/checksum verification claim."
+      },
+      "publicationStatus": "not_required_no_source_changes_no_resolved_review",
+      "contentCommit": null,
+      "deployRun": null,
+      "siteChanges": {
+        "newTours": 0,
+        "updatedTours": 0,
+        "newDestinations": 0,
+        "updatedDestinations": 0,
+        "newExcursions": 0,
+        "updatedExcursions": 0,
+        "newPhotographs": 0,
+        "replacedPhotographs": 0,
+        "newOtherObjects": 0,
+        "updatedOtherObjects": 0
+      },
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_site_publication",
+      "lifecycleGates": "not_applicable_no_new_or_substantially_changed_accepted_tour_content",
+      "emailStatus": "not_required_no_site_changes",
+      "emailReason": "No site pages/entities published by this cycle. No Gmail send attempted under §4.1.",
+      "historicalP172": "Full lifecycle completion retained; source unchanged, no repeated import/media/upload/deploy.",
+      "errors": [],
+      "blockers": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "status": "REVIEW",
+          "reason": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "status": "REVIEW",
+          "reason": "Русский язык гидов и включение Уюни–Ла-Пас подтверждены. Открыты только выбор тарифов Word/PDF и музей в Лиме.",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "status": "REVIEW",
+          "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "status": "REVIEW",
+          "reason": "Вновь загруженная брошюра Word соответствует существующему P127 (14д/13н, Перу–Боливия–Чили, одинаковые шесть тарифов и продление Пасхи), но противоречит продолжающему действовать точному Word по языку гидов и маршруту Сантьяго. В самой брошюре дата 09.10.2026; загрузка 28.10 не доказывает, что это замена канонической программы.",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        }
+      ],
+      "nextStep": "Continue daily full discovery. Resume exact source-authority reviews when relevant Word/PDF or confirmed Anna resolution changes; preserve all current queue stages and historical completions."
+    },
+    {
+      "id": "daily-word-2027-20261102-20261102005609039",
+      "startedAt": "2026-11-02T00:56:09.039Z",
+      "checkpointAt": "2026-11-02T01:02:02Z",
+      "scanStatus": "complete",
+      "outcome": "new_word_with_unresolved_product_identity_and_existing_reviews",
+      "foldersScanned": 29,
+      "rootChildren": 27,
+      "filesObserved": 222,
+      "uniqueFilesObserved": 222,
+      "wordFilesObserved": 214,
+      "pdfFilesObserved": 8,
+      "newFileIds": [
+        "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp"
+      ],
+      "newWordFileIds": [
+        "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp"
+      ],
+      "confirmedChangedWordFileIds": [],
+      "existingOpenQueueAtStart": 4,
+      "newWordIdentity": "REVIEW",
+      "publicationStatus": "held_product_identity_review_no_site_changes",
+      "contentCommit": null,
+      "deployRun": null,
+      "pendingFolderIds": [],
+      "errors": [],
+      "finishedAt": "2026-11-02T01:08:11Z",
+      "registeredTourWordFiles": 199,
+      "excludedAuxiliaryWordFiles": 13,
+      "unregisteredWordExistingProgramCandidates": 2,
+      "candidateChangedFileIds": [],
+      "confirmedNewPrograms": 0,
+      "confirmedChangedWordPrograms": 0,
+      "newWordIdentityReviewFileIds": [
+        "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp"
+      ],
+      "newNonidenticalWordDocuments": 1,
+      "metadataOnlyFileIds": [],
+      "missingFileIds": [],
+      "movedFileIds": [],
+      "renamedFileIds": [],
+      "sourceReviewQueueRemaining": 5,
+      "auxiliaryReviewRemaining": 6,
+      "queueActions": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_existing_review_preserved",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "programKey": "P153",
+          "status": "REVIEW",
+          "stage": "pdf_and_word_compared",
+          "action": "source_unchanged_existing_review_preserved",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "pdf_text_reviewed",
+          "action": "source_unchanged_existing_review_preserved",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "programKey": "P127",
+          "status": "REVIEW",
+          "stage": "word_and_canonical_source_compared",
+          "action": "source_unchanged_existing_review_preserved",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        },
+        {
+          "driveFileId": "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp",
+          "programKey": null,
+          "status": "REVIEW",
+          "stage": "word_and_existing_programs_compared",
+          "action": "new_nonidentical_word_source_reviewed_identity_held",
+          "nextStep": "Разрешить только идентичность продукта: отдельный 9-дневный вариант или замена действующего tour_source_argentina_ot_lda_k_vodopadam. Затем продолжить полный v2 lifecycle с сохранённого проверенного Word/таблицы/media snapshot и baseline e19be861aaad3da3ebc6cb76135e0c26f2db322f; не повторять обнаружение или считать источник новой программой повторно. Повторное разрешение публикации не требуется."
+        }
+      ],
+      "comparison": {
+        "baselineMainCommit": "e19be861aaad3da3ebc6cb76135e0c26f2db322f",
+        "workflowVersion": "2.0",
+        "workflowBlobSha": "d35f1f89129469a5142c605598c3d3f9901ae072",
+        "inventoryBlobSha": "144322530e0a3e8069442945cd215e6a2046e2db",
+        "annaResolutionsBlobSha": "a48f74e18e76375d0382682ec92f4151cf9eea81",
+        "previousSnapshotAt": "2026-11-01T00:59:35.418Z",
+        "method": "Full recursive Drive ID/name/folder/modifiedTime/size comparison against canonical inventory and previous complete daily snapshot. All 221 previously known files retain their prior metadata/hashes. New DOCX extracted at OOXML paragraph/table-cell level; 11 embedded members SHA256 and contact sheet reviewed. Existing exact candidate MD/entry/catalogue/duplicateOf compared at pinned main. New file is not a metadata-only copy, but new-product vs existing-product revision remains unresolved; no new Tour identity invented.",
+        "folderPagination": "29 folders; root27; maximum direct children59; every listing top_k100 below limit; sequential batches at most5folders, pending empty.",
+        "versionAndChecksumAvailability": "Connector normalized folder/files.get output omits provider version/checksum even when requested. Explicit revisions.list provides current revision for new file; computed DOCX/text/embedded-media hashes recorded. Prior hash evidence preserved, no claim all unchanged binaries rehashed."
+      },
+      "actions": [],
+      "siteChanges": {
+        "newTours": 0,
+        "updatedTours": 0,
+        "newDestinations": 0,
+        "updatedDestinations": 0,
+        "newExcursions": 0,
+        "updatedExcursions": 0,
+        "newPhotographs": 0,
+        "replacedPhotographs": 0,
+        "newOtherObjects": 0,
+        "updatedOtherObjects": 0
+      },
+      "newImages": 0,
+      "s3Uploads": 0,
+      "sheetStatus": "not_required_no_site_publication",
+      "lifecycleGates": "not_started_no_accepted_tour_identity; audit-tour-dependencies/predeploy/final lifecycle gates pending after identity resolution; not claimed passed",
+      "emailStatus": "not_required_no_site_changes",
+      "emailReason": "No pages/entities published by this task; no Gmail send attempted under §4.1.",
+      "historicalP172": "Full completion retained without changes to source/import/media/deploy; 2026/2027 typo not reopened.",
+      "blockers": [
+        {
+          "driveFileId": "1YKWxIBOY5Nru_f-uIXQyVkSpXpqDg7kF",
+          "status": "REVIEW",
+          "reason": "12 days/11 nights, 10–21 February 2027, two guests, Rio–Iguazu–Manaus–Amazonia. P059 is Rio–Iguazu–Salvador–Costa do Sauipe and excludes carnival dates, so it is not this product. Extracted PDF repeatedly mixes Spanish tariff blocks for Brasil y Argentina 9D8N, November 2027, group 9/14+1, with the honeymoon itinerary. Its own honeymoon tariff section says all prices and currency require confirmation. No safe source/price choice can be made from this PDF alone.",
+          "nextStep": "Confirm a clean authoritative source and correct prices; do not import Spanish group tariffs into the honeymoon product or create a duplicate Tour."
+        },
+        {
+          "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
+          "status": "REVIEW",
+          "reason": "Русский язык гидов и включение Уюни–Ла-Пас подтверждены. Открыты только выбор тарифов Word/PDF и музей в Лиме.",
+          "nextStep": "Уточнить только тарифы Word/PDF и музей в Лиме. Подтверждённые услуги уже опубликованы; повторно не вносить."
+        },
+        {
+          "driveFileId": "1byq5LuDgxmjQfw_XNOExp-5D01tEAtlY",
+          "status": "REVIEW",
+          "reason": "Новый самостоятельный PDF на 20 дней/19 ночей (Коста-Рика — Панама — Ямайка, 5–24 июля 2027), USD 27 868 на человека из расчёта 6 взрослых. Сопоставимого Word нет среди всех 212 Word и в канонической описи. §2.4 требует отдельного подтверждения PDF-источника и подходящего процесса импорта; новый Word/Tour не подтверждён.",
+          "nextStep": "Подтвердить авторитетный источник программы и подходящий PDF-процесс либо получить соответствующий Word. До этого не создавать Tour автоматически; сохранить источник и коммерческие условия."
+        },
+        {
+          "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+          "status": "REVIEW",
+          "reason": "Вновь загруженная брошюра Word соответствует существующему P127 (14д/13н, Перу–Боливия–Чили, одинаковые шесть тарифов и продление Пасхи), но противоречит продолжающему действовать точному Word по языку гидов и маршруту Сантьяго. В самой брошюре дата 09.10.2026; загрузка 28.10 не доказывает, что это замена канонической программы.",
+          "nextStep": "Подтвердить, заменяет ли этот Word прежний источник P127, и какой язык гидов/маршрут Сантьяго действуют. До устранения конкретных расхождений сохранять текущие Tour ID/URL/цены/медиа, не создавать новый тур и не применять смешанную программу."
+        },
+        {
+          "driveFileId": "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp",
+          "status": "REVIEW",
+          "reason": "Новый Drive ID и полноценный Word 9д/8н подтверждены, но его связь с действующим 10д/9н tour_source_argentina_ot_lda_k_vodopadam не установлена. Основная последовательность Буэнос-Айрес — Эль-Калафате — Игуасу — Буэнос-Айрес совпадает; в новом Word убран свободный день, названы отели, включён групповой катер у Перито-Морено и индивидуальная экскурсия в Калафате. Это может быть новая редакция существующего продукта либо отдельный 9-дневный вариант. Точного Word→Tour соответствия в описи нет; один факт нового файла/названия не разрешает выбрать между обновлением stable ID и созданием отдельного тура. Архивный 10-дневный дубль имеет активную замену и не восстанавливается.",
+          "nextStep": "Разрешить только идентичность продукта: отдельный 9-дневный вариант или замена действующего tour_source_argentina_ot_lda_k_vodopadam. Затем продолжить полный v2 lifecycle с сохранённого проверенного Word/таблицы/media snapshot и baseline e19be861aaad3da3ebc6cb76135e0c26f2db322f; не повторять обнаружение или считать источник новой программой повторно. Повторное разрешение публикации не требуется."
+        }
+      ],
+      "nextStep": "Preserve complete scan and exact source review. Resolve only product identity of new9day Word, then execute full lifecycle using persisted evidence; continue existing4reviews on authoritative source/resolution changes."
     }
   ],
   "note": "Initialized 2026-10-15. Existing inventory and per-program work status remain authoritative; the scheduler must not treat this empty journal as proof of zero pending inventory items.",
@@ -2675,8 +4079,9 @@
       "isNewInThisScan": false,
       "reviewedAt": "2026-10-17T07:07:13.876Z",
       "extractedTextCharacters": 32883,
-      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
-      "readableTextSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1"
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "readableTextSha256": "cf43c75c53cb1a598bb62cee51b752ecaa1f5eec9f500e84ea2349fc6d32bda1",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039"
     },
     {
       "driveFileId": "1Adh-AOGUci2h9GYP5hybGGbZlPU2vgkl",
@@ -2694,8 +4099,9 @@
       "isNewInThisScan": false,
       "reviewedAt": "2026-10-17T07:07:13.876Z",
       "extractedTextCharacters": 13069,
-      "lastCheckedAt": "2026-10-18T02:06:14.047Z",
-      "readableTextSha256": "baaa907c23fa71f22aff09c492defeeedd93a23ad71d99cf5af6bfaeb4cfb3e4"
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "readableTextSha256": "baaa907c23fa71f22aff09c492defeeedd93a23ad71d99cf5af6bfaeb4cfb3e4",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039"
     },
     {
       "driveFileId": "1IgJJGHOBHSXL8L2WMgLYNz_8pI4yFWtx",
@@ -2715,7 +4121,9 @@
       "firstObservedByDailyRun": "manual-control-2026-10-15",
       "isNewInThisScan": false,
       "reviewedAt": "2026-10-17T07:07:13.876Z",
-      "extractedTextCharacters": 9527
+      "extractedTextCharacters": 9527,
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039"
     },
     {
       "driveFileId": "1Eqj7Anu1CRfUrWOjA8szDlmRm48gsZ_D",
@@ -2779,8 +4187,8 @@
       "sourceEntryBlobSha": "7618151395191483f3b40e5f937ee39949134fd7",
       "nextStep": "Keep this as a reviewed conflicting brochure, not a new product and not an authorised Word replacement. Reconcile authoritative source/terms before any import; preserve current Word and all existing media.",
       "detectedAt": "2026-10-20T02:07:38.331Z",
-      "lastCheckedAt": "2026-10-20T02:07:38.331Z",
-      "lastCheckedInRun": "daily-word-2027-20261020-20261020020253069",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
       "reviewedAt": "2026-10-20T02:07:38.331Z",
       "extractedTextCharacters": 14588
     },
@@ -2806,8 +4214,8 @@
       "readableTextSha256": "40955683856a1a2a2ea16949d2ba2c9a379bfc362978eecaf7a108c593906d12",
       "textHashMethod": "sha256 of exact UTF-8 connected Drive readable text, no added newline",
       "detectedAt": "2026-10-27T01:03:46.051Z",
-      "lastCheckedAt": "2026-10-27T01:03:46.051Z",
-      "lastCheckedInRun": "daily-word-2027-20261027-20261027010037906",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
       "sourceFacts": {
         "durationDays": 20,
         "nights": 19,
@@ -2853,8 +4261,8 @@
       "textSha256": "9180dd5acdf643d455b84b30f76f732ec31e2731e28c9963a2d84a15dd31f16b",
       "textHashMethod": "sha256 of UTF-8 main-story text extracted from MS-DOC CFB WordDocument/1Table CLX piece table; contains Word field control characters; no normalization",
       "detectedAt": "2026-10-28T01:03:18.899Z",
-      "lastCheckedAt": "2026-10-28T01:03:18.899Z",
-      "lastCheckedInRun": "daily-word-2027-20261028-20261028010032547",
+      "lastCheckedAt": "2026-11-02T01:08:11Z",
+      "lastCheckedInRun": "daily-word-2027-20261102-20261102005609039",
       "confirmedChanges": [
         {
           "item": "Champions Parade sector 9",
@@ -2889,11 +4297,15 @@
       "publicationAllowed": false,
       "reason": "Билетный прайс, не самостоятельная программа тура. Новая редакция DOC вместо отсутствующего в текущем дереве DOCX: три тарифа Парада чемпионов повышены; добавлено пояснение о ненумерованных местах в остальных секторах. Изменение общего прайса не доказывает изменение пакетной цены любого тура.",
       "nextStep": "Адресно согласовать применение нового билетного прайса к соответствующему самостоятельному билетному продукту/страницам; не переносить повышение на пакетные туры автоматически. Старый Drive ID и историю сохранить.",
-      "siteChangesInThisRun": 0
+      "siteChangesInThisRun": 0,
+      "lastCheckEvidence": {
+        "sourceMetadataUnchanged": true,
+        "noNewResolutionFound": true
+      }
     }
   ],
   "latestDriveSnapshot": {
-    "at": "2026-10-28T01:03:18.899Z",
+    "at": "2026-11-02T01:08:11Z",
     "rootId": "1J50jX8rfa5bNq8qvo_WNiUYzxJmqs_NK",
     "scanStatus": "complete",
     "folders": [
@@ -2996,7 +4408,7 @@
       {
         "folderId": "12STRmyL2L-xHLzWjUHZEbS4b79Iyv7Ks",
         "path": "Peru 2027",
-        "directChildren": 7,
+        "directChildren": 8,
         "complete": true
       },
       {
@@ -3026,7 +4438,7 @@
       {
         "folderId": "1oEwwXWchjG4Ttrfht4fEiHB5HNjIE8fv",
         "path": "Argentina 2027",
-        "directChildren": 20,
+        "directChildren": 21,
         "complete": true
       },
       {
@@ -3351,12 +4763,24 @@
         "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         "folderId": "1uBAIJh2QmpS3JFnUh8hIB0dIElFlqpEZ",
         "folderPath": "El Salvador 2027",
-        "modifiedTime": "2026-10-13T13:19:52.841Z",
+        "modifiedTime": "2026-10-28T13:28:30.203Z",
         "version": null,
         "checksum": null,
         "programKey": "P021",
         "classification": "registered_program_word",
-        "bytes": 3358984
+        "bytes": 3358876,
+        "textSha256": "1153d61b4becf33b5e613e248ef4beb47ebb9b6b1fdf694df1192965dd596d03",
+        "docxSha256": "9728714e08fc789459d423b25f11e7e0ee6ff0f2473e56ee74db4d544bc74c25",
+        "embeddedMediaSha256": "2a02fd3b9d4c2bdb3b052bceefe16b54f9b88615adb9b8f79291a640277190b7",
+        "embeddedMediaHashes": {
+          "word/media/image1.png": "c24d3b6008ee1d5e2e2d334b78902ab606bde48a39fd29d7db0d1bf3309c123b",
+          "word/media/image2.jpg": "8c6dfa2b70115cefa7d66ed7b7dc6274ed02f3ed858ef6d814bb16d1362d401f",
+          "word/media/image3.jpg": "83ae288904fc35a8ab9026d93ab767761d848fd64d0e1e1f1871b71841f29651",
+          "word/media/image4.png": "fd2146f1a7a602279a1c02ef8a1a7c139de39a3a9481c62cee8f86acc87fc27d",
+          "word/media/image5.jpg": "6e356edba8ede65909ebd089e44a51afc050bd19ded99e103c09d90a22137dfd",
+          "word/media/image6.jpg": "485ef491b71261f0d2415c63fc20645af2c4971c6a00fdfe568bd2aad089e406"
+        },
+        "embeddedMediaHashMethod": "SHA-256 of compact JSON object of sorted word/media/* names to SHA-256; Python json.dumps(sort_keys=True,separators=(',',':'))"
       },
       {
         "driveFileId": "1DMMz4N6h5_STB3gI6GnrKauiAUON10qR",
@@ -3742,8 +5166,8 @@
         "folderId": "1t79vXL8ZMLuLgLwEphaAkYM7Hrdp_GBk",
         "folderPath": "Brazil 2027",
         "modifiedTime": "2026-10-23T15:10:04.000Z",
-        "version": "0B8mCj3IF426yREh5Uzc1bFF4cUdsN0dZVjdLQ3ZlTnV2bWpVPQ",
-        "checksum": "009e0349b15e127f23e3dc674d909bfb2125002de57fcf9df2220c25b613e138",
+        "version": null,
+        "checksum": null,
         "classification": "new_word_existing_tour_commercial_conflict",
         "bytes": 10506009,
         "programKey": "P172"
@@ -4501,6 +5925,39 @@
         "bytes": 42721144
       },
       {
+        "driveFileId": "1jJzbk2uR3V1DOzSnhKMduP57iGj5t3fs",
+        "name": "Great South America 2027 14d13n RUS 20com.docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "folderId": "12STRmyL2L-xHLzWjUHZEbS4b79Iyv7Ks",
+        "folderPath": "Peru 2027",
+        "modifiedTime": "2026-10-28T13:52:37.357Z",
+        "bytes": 1884226,
+        "version": null,
+        "checksum": null,
+        "textSha256": "0d8da5b0d44d749f85bc0c7986b899950dfc31e809b40d7f83f5b3ec58d0089a",
+        "docxSha256": "23cda187d1fd12f9ca15203e70de1f814c694d5a2960b7f866ea0aa332cdee6a",
+        "embeddedMediaSha256": "7276d6ce97143101b08eeecd2cc09eba257c7cfcb8993f5539d31d3c4499936b",
+        "embeddedMediaHashes": {
+          "word/media/image1.jpg": "0222e7b6159b4b8cc1fbb3bff04c3c493e0259d115bff0370e40da3d89f424f0",
+          "word/media/image10.jpg": "6dd8a25e2ba3eeac4d22d0057c340b83c4c801ccf196445daeb676370c556789",
+          "word/media/image11.jpg": "c2fe30058b552ae71595aa4e9e52b57891bc9a937174d84e085ccdc294a22655",
+          "word/media/image12.png": "3af7db65aede0f55c0f7d9e3bd14fbe37dbe2a18381fc008c1f5f74247ca56f8",
+          "word/media/image13.png": "a8f8e32c7b3342a8650ff9799cfcb7b43b9c5e1540d15ff71969639867757eb8",
+          "word/media/image14.png": "1b6052f9bb5298f43ea632a5b10145d90f2fdc33d4f2474f26d5dd67dc425296",
+          "word/media/image2.png": "0e99fe5bcc04232ca49dea3893b361d7352cdf500505c4e205363c2e13890854",
+          "word/media/image3.jpg": "7025324b1fbf2deb7b7aa714de1eb1cacf1b7cbbc28a1334b4a51927c05c32cf",
+          "word/media/image4.jpg": "748b5139f817b03bd24cea049eaad260c22ce2af0d94a6850a3668f673746a59",
+          "word/media/image5.jpg": "767b1516d3d810a43c32a14aa2adba6fdb6dc1689cd177068504acc1fe254184",
+          "word/media/image6.jpg": "a89039848fe08002d4dae81e9a17c31f7713b84d29d49ba9c5c0b2b2586f1525",
+          "word/media/image7.jpg": "7e6908b802e3778da12761bfae6c47b8dc7ec224352ab0a62c4d4a97823faf5b",
+          "word/media/image8.jpg": "fcfff62b3e8a33571f5d11d9ca5ca05a41b99ca5b687b3a79ea0ccce872e5997",
+          "word/media/image9.jpg": "7204e04fcf7a194adc400e4a75d2f0416c96b7e6cf0253473de16fbc162526eb"
+        },
+        "embeddedMediaHashMethod": "SHA-256 of compact JSON object of sorted word/media/* names to SHA-256; Python json.dumps(sort_keys=True,separators=(',',':'))",
+        "programKey": "P127",
+        "classification": "new_word_existing_program_conflicting_brochure"
+      },
+      {
         "driveFileId": "1oY-NYx09AKB4GytwNQwIDs7B0l4OYIDo",
         "name": "The many faces of Peru & Iquitos 2027 15d14n RU com  20%.docx",
         "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -4719,6 +6176,86 @@
         "programKey": "P109",
         "classification": "registered_program_pdf",
         "bytes": 6417641
+      },
+      {
+        "driveFileId": "1dFfL_ZH9QMlNkrsfTbmP0VvL15jfQPOp",
+        "name": "Best of Argentina 2027 9D8N RUS com 20%.docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "folderId": "1oEwwXWchjG4Ttrfht4fEiHB5HNjIE8fv",
+        "folderPath": "Argentina 2027",
+        "modifiedTime": "2026-11-01T17:16:26.952Z",
+        "version": "0B_I4XfNIpwGhNWRvUVlHZ2pOeCtoRWhsU0FRVTVQeC92UzRBPQ",
+        "checksum": null,
+        "bytes": 4950548,
+        "classification": "word_program_identity_review",
+        "sourceEvidence": {
+          "docxSha256": "b40ab4c22a9da26a5b9b34d2a76c63bcf76e430f304c48b92a87f40d2ffe9e63",
+          "textSha256": "0f537e5bba497d9ec7b3884fa43c4176ad313c437076046e787e6867f5a6b52f",
+          "embeddedMediaSha256": "64df56892cd604079fd6311fc9a0f5ef96cde049675a40ea4360caaabbc14b3c",
+          "embeddedMedia": [
+            {
+              "path": "word/media/image1.jpeg",
+              "bytes": 262130,
+              "sha256": "90958583db629a7c35197084094ea656e93821bbedc92389f78fd9e73f6da15c"
+            },
+            {
+              "path": "word/media/image10.jpeg",
+              "bytes": 93729,
+              "sha256": "fba5495e62eeedbae2945982431936d2243f6753f576f7de176fee58e29c787d"
+            },
+            {
+              "path": "word/media/image11.png",
+              "bytes": 37155,
+              "sha256": "c24d3b6008ee1d5e2e2d334b78902ab606bde48a39fd29d7db0d1bf3309c123b"
+            },
+            {
+              "path": "word/media/image2.jpg",
+              "bytes": 37175,
+              "sha256": "1a64b8786ba53aefa52ca7bdebdd355fca461d972f5a7dc2e6eb7b6ddf6f74e3"
+            },
+            {
+              "path": "word/media/image3.jpg",
+              "bytes": 76289,
+              "sha256": "9d5854ee1a760a0ab670915c643cf7d23acca6a81bdcccda984ff9ac6da56681"
+            },
+            {
+              "path": "word/media/image4.jpeg",
+              "bytes": 166275,
+              "sha256": "3682b0fb18dc1b9df71c61c42e27f2dca6d5cd73fd41455c22d40623529bee87"
+            },
+            {
+              "path": "word/media/image5.jpg",
+              "bytes": 31672,
+              "sha256": "02bfee79564efa359599beb06ff1ee3efafbc1d7d21feee748d177663990a685"
+            },
+            {
+              "path": "word/media/image6.jpeg",
+              "bytes": 865104,
+              "sha256": "9663fb21b37e3dfed797a9084205dcfe1b2573788c7cf1f301752cdc3a5dc796"
+            },
+            {
+              "path": "word/media/image7.jpeg",
+              "bytes": 65873,
+              "sha256": "f21eef06493a0fa07785646b6bf079104797e89e2472c02b7d11dc12ba5d964e"
+            },
+            {
+              "path": "word/media/image8.jpg",
+              "bytes": 37521,
+              "sha256": "6456f982ca8ea413138ab7222d201e24cf2d75f9855555c02db7e0729b4135b6"
+            },
+            {
+              "path": "word/media/image9.jpeg",
+              "bytes": 112202,
+              "sha256": "dc62dc808afb25698ec94e502cc86119c67f9628fb420b832ccbbf3a9e67d46a"
+            }
+          ],
+          "textCharacters": 7029,
+          "docxBytes": 4950548,
+          "method": "DOCX ZIP OOXML paragraphs and ordered table cells, word/media sorted per-file SHA256"
+        },
+        "textSha256": "0f537e5bba497d9ec7b3884fa43c4176ad313c437076046e787e6867f5a6b52f",
+        "embeddedMediaSha256": "64df56892cd604079fd6311fc9a0f5ef96cde049675a40ea4360caaabbc14b3c",
+        "docxSha256": "b40ab4c22a9da26a5b9b34d2a76c63bcf76e430f304c48b92a87f40d2ffe9e63"
       },
       {
         "driveFileId": "1XH94LwW3ziRhm3ueKHR2biMbg97e_PX1",
@@ -5434,14 +6971,43 @@
         "bytes": 13689337
       },
       {
+        "driveFileId": "1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp",
+        "name": "Champion Pararde Rio Iguazu Short 7d6n 2027 RUS 20 .docx",
+        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "folderId": "1GxlRe9_8c04IEcSo_t9t2yNS3kA1bTTf",
+        "folderPath": "Carnaval Champions Parade Rio 2027",
+        "modifiedTime": "2026-10-28T13:24:49.684Z",
+        "version": null,
+        "checksum": null,
+        "programKey": "P149",
+        "classification": "registered_program_word",
+        "bytes": 770937,
+        "textSha256": "f46fdcab1b0c70327fa5ac2d395087c0cdcf92b664f56498b547089bdf9e3016",
+        "docxSha256": "04f7e951731714a962b2c3123d513afe0851a5c3a6a7da74d4ed5346025c83ce",
+        "embeddedMediaSha256": "4b4f32a0eab34f104b9e9937a861bdeae210964b0771178e9024f0fd15abef50",
+        "embeddedMediaHashes": {
+          "word/media/image1.jpg": "69ea5a35cbe7582c3097b528f52e080f2a54d05c9276c4c70e17fb585404e37a",
+          "word/media/image10.jpg": "b04392a50142bd21bbcf142877e6541f96b842d3a6de97fecc9d5b9b97d249f7",
+          "word/media/image2.jpg": "4b45d18487cc8b5f95a9e89705d212c5157166db3c18537dc6295a87c4969b10",
+          "word/media/image3.jpg": "1acaf04461b855620d67890fe47d87409dfdf100c84a25079b34cc2131c34a61",
+          "word/media/image4.jpg": "0bb48c7a50db1a0094d7647fcd976a511ad4e73eebca55c8aeb1f7a88a2fef6c",
+          "word/media/image5.jpg": "b8047d1138d66ef7b8e7190069840d1c828d22b597f4c934b299ebf1b10ff589",
+          "word/media/image6.png": "c24d3b6008ee1d5e2e2d334b78902ab606bde48a39fd29d7db0d1bf3309c123b",
+          "word/media/image7.jpg": "6e215fa9f08529bfea8de220f50823cf5eeeb1c2da3f9009525dfa7a0f4bdf4e",
+          "word/media/image8.jpg": "a657d1d57d48c895770119a630fe1410598752a5593c7a5d7a39cb0b57ce4ef2",
+          "word/media/image9.jpg": "9a0fab23ccc2553d24c502f9f1e8b0d97e202292e04f28c380e1b355b88d8709"
+        },
+        "embeddedMediaHashMethod": "SHA-256 of compact JSON object of sorted word/media/* names to SHA-256; Python json.dumps(sort_keys=True,separators=(',',':'))"
+      },
+      {
         "driveFileId": "1hAdDKTlkxET9-5FnjPukSbHpGTwF9JTk",
         "name": "Exotic_Champions_Parade_11D10N_12-22_Feb_2027_Ada_Tours_RU com 20%.docx",
         "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         "folderId": "1GxlRe9_8c04IEcSo_t9t2yNS3kA1bTTf",
         "folderPath": "Carnaval Champions Parade Rio 2027",
         "modifiedTime": "2026-10-23T15:21:59.336Z",
-        "version": "0B6XjLwqoWKp2a0xzdURLWElVdnJDcnRyK01oU3hURURlL21RPQ",
-        "checksum": "bd1cf51c00524d9ece092ac5f570d68bca8460eaab1c94b21ad9c599a3e48fc8",
+        "version": null,
+        "checksum": null,
         "classification": "registered_program_word",
         "bytes": 11024384,
         "programKey": "P150"
@@ -5524,19 +7090,6 @@
         "bytes": 1824079
       },
       {
-        "driveFileId": "1NeP8Lfc-Lm9XtbeNUmWcWLnn9KTvoTYp",
-        "name": "Champion Pararde Rio Iguazu Short 7d6n 2027 RUS 20 .docx",
-        "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-        "folderId": "1GxlRe9_8c04IEcSo_t9t2yNS3kA1bTTf",
-        "folderPath": "Carnaval Champions Parade Rio 2027",
-        "modifiedTime": "2026-08-17T01:04:16.796Z",
-        "version": null,
-        "checksum": null,
-        "programKey": "P149",
-        "classification": "registered_program_word",
-        "bytes": 770937
-      },
-      {
         "driveFileId": "1odj5X6HhIZ5RWzMPdZOVyUTxtmhmdoR4",
         "name": "Exotic Champion Parade Rio,Foz,Mao,Buz 11d10n 2027 RUS 20%.docx",
         "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -5597,8 +7150,8 @@
         "folderId": "1cJHtQp_qoidGorxxau5I3GToal5nrbje",
         "folderPath": "Carnaval Rio 2027",
         "modifiedTime": "2026-10-23T15:21:59.864Z",
-        "version": "0B6XjLwqoWKp2TVdWNExCL2pOaHBMOEt6eGFCcHc5NGQ5RW9RPQ",
-        "checksum": "e6130ee2ced2c3763960c91ea384606ef84b2b02d657811b56945a72beaf8924",
+        "version": null,
+        "checksum": null,
         "classification": "registered_program_word",
         "bytes": 12134970,
         "programKey": "P160"

@@ -16,8 +16,13 @@ jobs:
       MEDIA_LEGACY_CUTOFF: b09b6ba01316e888e871eac399d98eb9915d2bf7
       MEDIA_CDN_ORIGIN: https://img.adatours.ru
     steps:
-      - name: Checkout repository
+      - name: Checkout repository without legacy public/media binaries
         uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
 
       - name: Reject additions to frozen Git media; verify S3 receipt schema
         shell: bash
@@ -77,7 +82,7 @@ jobs:
           cat dist/media-offload-report.json
           test ! -d dist/media
           grep -q 'https://img.adatours.ru/media/' dist/brazil/index.html
-          node --input-type=module -e "import fs from 'node:fs'; const r = JSON.parse(fs.readFileSync('dist/media-offload-report.json')); if (r.excludedBytes < 1000000000 || r.redirectedReferences < 1000) process.exit(1);"
+          node --input-type=module -e "import fs from 'node:fs'; const r = JSON.parse(fs.readFileSync('dist/media-offload-report.json')); if (r.redirectedReferences < 1000 || (r.sourceMediaRetained ? r.excludedBytes < 1000000000 : r.excludedFiles !== 0 || r.excludedBytes !== 0)) process.exit(1);"
 
       - name: Search index smoke checks
         shell: bash

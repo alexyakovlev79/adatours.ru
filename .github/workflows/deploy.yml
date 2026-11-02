@@ -6,6 +6,7 @@ on:
     paths-ignore:
       - data/media/upload-session-request.json
       - data/media/upload-session-requests/**
+      - data/media/person-photo-alias-requests/**
   workflow_dispatch:
   schedule:
     # December 31 at 21:05 UTC = January 1 at 00:05 Moscow time.
@@ -30,7 +31,7 @@ env:
 
 jobs:
   media:
-    name: Verify S3 receipts and enforce no new Git media
+    name: Verify new S3 receipts and enforce no new Git media
     runs-on: ubuntu-latest
     env:
       MEDIA_LEGACY_CUTOFF: b09b6ba01316e888e871eac399d98eb9915d2bf7
@@ -48,11 +49,28 @@ jobs:
           fi
       - name: Verify no binary media was added to Git
         run: node scripts/guard-no-new-git-media.mjs
-      - name: Verify every new direct-S3 object is present and matches its receipt
-        run: node scripts/verify-direct-s3-assets.mjs
+      - name: Resolve previous Git commit for incremental receipt verification
+        shell: bash
+        env:
+          PUSH_BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          base="${PUSH_BEFORE_SHA:-}"
+          if [[ "${GITHUB_EVENT_NAME}" != "push" || ! "${base}" =~ ^[0-9a-f]{40}$ || "${base}" =~ ^0+$ ]]; then
+            # Scheduled/manual builds have no push.before; compare with HEAD's parent.
+            git fetch --no-tags --filter=blob:none --deepen=1 origin main
+            base="$(git rev-parse HEAD^)"
+          fi
+          if ! git cat-file -e "${base}^{commit}" 2>/dev/null; then
+            git fetch --no-tags --filter=blob:none --depth=1 origin "${base}"
+          fi
+          git cat-file -e "${base}^{commit}"
+          echo "MEDIA_RECEIPT_BASE_SHA=${base}" >> "${GITHUB_ENV}"
+      - name: Verify only newly added direct-S3 objects against receipts
+        run: node scripts/verify-direct-s3-assets.mjs --changed-only
 
   build:
-    needs: media
+    # Build and media validation are independent. Both gate Pages deployment.
     runs-on: ubuntu-latest
     env:
       YC_SA_ID: ${{ vars.YC_MEDIA_SA_ID }}
@@ -60,8 +78,13 @@ jobs:
       PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_JS_API_KEY }}
       PUBLIC_GOOGLE_MAP_ID: ${{ vars.GOOGLE_MAPS_MAP_ID }}
     steps:
-      - name: Checkout repository
+      - name: Checkout repository without legacy public/media binaries
         uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            /*
+            !/public/media/
+          sparse-checkout-cone-mode: false
 
       - name: Obtain short-lived IAM token for social preview S3 uploads
         id: social_auth
@@ -91,15 +114,27 @@ jobs:
       - name: Warn when social previews use strict reuse-only mode
         if: steps.social_auth.outcome == 'failure'
         run: echo "::warning::Yandex Cloud IAM unavailable; verify only existing S3 social previews; fail build if any is missing."
+      - name: Select conservative safe-content build mode
+        id: scope
+        env:
+          ADA_PUSH_BEFORE_SHA: ${{ github.event.before }}
+        run: node scripts/select-deploy-build.mjs
       - name: Install, build, and upload Astro site
         uses: withastro/action@v6
         with:
           node-version: 24
           package-manager: npm@latest
+          build-cmd: ${{ steps.scope.outputs.build_cmd }}
 
   deploy:
-    needs: build
+    needs: [media, build]
+    if: ${{ needs.media.result == 'success' && needs.build.result == 'success' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      statuses: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -110,17 +145,28 @@ jobs:
         with:
           # Allow up to 950 MB of final site files to finish deploying.
           timeout: 1200000
+      - name: Confirm exact SHA immediately after successful Pages deployment
+        # Do not wait for independent SEO/catalogue reconciliation jobs.
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state=success -f context=ada/pages-deploy \
+            -f description="S3 receipts, Astro build and Pages deployment confirmed" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
   report:
-    name: Publish deployment result as commit status
-    if: always()
+    name: Report failed deployments only (success recorded in deploy job)
+    if: ${{ always() && (needs.media.result != 'success' || needs.build.result != 'success' || needs.deploy.result != 'success') }}
     needs: [media, build, deploy]
     runs-on: ubuntu-latest
     permissions:
       contents: read
       statuses: write
     steps:
-      - name: Record media, build and Pages result
+      - name: Mirror failed Pages run (best effort; original failure remains authoritative)
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -128,16 +174,12 @@ jobs:
           BUILD_RESULT: ${{ needs.build.result }}
           DEPLOY_RESULT: ${{ needs.deploy.result }}
         run: |
-          if [[ "$MEDIA_RESULT" == "success" && "$BUILD_RESULT" == "success" && "$DEPLOY_RESULT" == "success" ]]; then
-            status="success"
-            note="S3 verification, Astro build and Pages deploy succeeded"
-          else
-            status="failure"
-            note="S3=$MEDIA_RESULT, build=$BUILD_RESULT, Pages=$DEPLOY_RESULT"
+          note="S3=$MEDIA_RESULT, build=$BUILD_RESULT, Pages=$DEPLOY_RESULT"
+          if ! gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
+            -f state=failure -f context="ada/pages-deploy" -f description="$note" \
+            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"; then
+            echo "::warning::Could not mirror failure to commit status; original CI failure remains"
           fi
-          gh api --method POST "repos/${GITHUB_REPOSITORY}/statuses/${GITHUB_SHA}" \
-            -f state="$status" -f context="ada/pages-deploy" -f description="$note" \
-            -f target_url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
   catalog-registries:
     name: Persist multi-country catalogue registries

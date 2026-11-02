@@ -21,7 +21,6 @@ lead: >-
 
 | Тур | Посещение острова |
 |---|---|
-| [Аргентина и Патагония, 14 дней](/argentina/tour/argentina-patagonia-brazil-iguazu-falls/) | День 9, вместе с «Малым кольцом» |
 | [Лучшее в Аргентине, 14 дней](/multi-country/tour/best-of-argentina-14-days/) | День 9, две экскурсии за день |
 | [Чили и Аргентина Делюкс, 14 дней](/multi-country/tour/chile-argentina-deluxe/) | День 8, после перелета в Барилоче |
 | [Аргентина, Чили и Боливия, 18 дней](/multi-country/tour/argentina-chile-bolivia-cruise-tour-18-days/) | Остров упомянут в днях 15 и 16 |
@@ -30,7 +29,6 @@ lead: >-
 
 ### Два 14-дневных маршрута: остров вместе с «Малым кольцом»
 
-В [14-дневном туре по Аргентине и Патагонии](/argentina/tour/argentina-patagonia-brazil-iguazu-falls/) остров включен в 9-й день. Утром проходит автомобильная экскурсия «Малое кольцо» по окрестностям Барилоче протяженностью около 65 км. В программе названы [Плайя-Бонита](/argentina/place/playa-bonita/), вид на остров Уемуль и [Серро-Кампанарио](/argentina/place/cerro-campanario/). Затем путешественники отправляются на катамаране к Виктории и миртовому лесу.
 
 Похожим образом построен день 9 в [туре «Лучшее в Аргентине»](/multi-country/tour/best-of-argentina-14-days/): обзорная поездка по берегам озера и отдельная водная экскурсия. В этой программе обе части проходят **в группе с англоговорящим гидом**, а порядок и возможность выполнить их в один день подтверждаются при бронировании. Это важная конкретная оговорка: два занятия в расписании не следует воспринимать как обещание любой последовательности независимо от работы катамаранов.
 
@@ -78,7 +76,7 @@ lead: >-
 
 Если Барилоче — главная цель, сравните дни именно в этом регионе. Путешественнику, который хочет увидеть остров и основные смотровые площадки за один день, подойдет вариант, где катамаран совмещен с «Малым кольцом». Если важнее спокойный график, ищите программу с отдельным водным днем. А для поездки сразу по нескольким странам прежде всего оцените общую географию и необходимость перелетов.
 
-{{catalog.tourTable:tour_source_tur_v_argentinu_v_patagoniyu,tour_argentina_best_14_days,tour_source_chili_argentina,tour_source_kruiznyj_tur_po_luchshim_mestam_argentiny_chili_i_bolivii,tour_source_vsya_argentina,tour_source_chili_i_argentina_vip}}
+{{catalog.tourTable:tour_argentina_best_14_days,tour_source_chili_argentina,tour_source_kruiznyj_tur_po_luchshim_mestam_argentiny_chili_i_bolivii,tour_source_vsya_argentina,tour_source_chili_i_argentina_vip}}
 
 Эта подборка показывает именно маршруты, в которых остров Виктория входит в основную программу. Подробная география региона есть на страницах [озера Науэль-Уапи](/argentina/place/nahuel-huapi-lake/) и [Барилоче](/argentina/place/bariloche/). Для более широкого выбора можно посмотреть [путешествия по Аргентине](/argentina/tour/).
 

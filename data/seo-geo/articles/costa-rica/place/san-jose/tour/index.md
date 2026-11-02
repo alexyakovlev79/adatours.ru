@@ -22,7 +22,7 @@ lead: >-
 
 Выбирая тур, полезно сначала определить основную цель поездки: [каналы и природные территории Тортугеро](/costa-rica/place/tortuguero/), [вулканические ландшафты Ареналя](/costa-rica/place/la-fortuna-arenal-volcano/), [облачный лес Монтеверде](/costa-rica/place/monteverde-santa-elena/) либо [пляжи Тихого океана](/costa-rica/place/pacific-coast/). Уже после этого сравнивать количество ночей, логистику и то, какие дни остаются в столичном регионе.
 
-{{catalog.tourTable:tour_source_kosta_rika_za_5_dnej,tour_source_kosta_rika_dlya_lyubitelej_prirody,tour_source_klassicheskaya_kosta_rika,tour_source_3_shaga_po_kosta_rike,tour_source_zhemchuzhiny_kosta_riki_za_10_dnej,tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej,tour_source_gvatemala_kosta_rika}}
+{{catalog.tourTable:tour_source_kosta_rika_za_5_dnej,tour_source_kosta_rika_dlya_lyubitelej_prirody,tour_source_klassicheskaya_kosta_rika,tour_source_zhemchuzhiny_kosta_riki_za_10_dnej,tour_source_lyuksovyj_tur_v_kosta_riku_na_16_dnej,tour_source_gvatemala_kosta_rika}}
 
 ## Сан-Хосе в маршруте: ночевка, экскурсионная база или пересадка
 
@@ -54,7 +54,7 @@ lead: >-
 
 ### Десять дней: природа плюс тихоокеанские пляжи
 
-В [туре «Ареналь, Сан-Хосе и пляжный отдых на Тихом океане»](/costa-rica/tour/costa-rica-arenal-san-jose-pacific-beach/) сначала предусмотрено знакомство с Сан-Хосе после прилета. На следующий день маршрут проходит через вулкан Поас и водопады Ла-Пас к Ареналю. После природной части участники отправляются к побережью, где в программу включены свободные дни у моря.
+В [туре «Ареналь, Сан-Хосе и пляжный отдых на Тихом океане»](/costa-rica/tour/costa-rica-3-perspectives/) сначала предусмотрено знакомство с Сан-Хосе после прилета. На следующий день маршрут проходит через вулкан Поас и водопады Ла-Пас к Ареналю. После природной части участники отправляются к побережью, где в программу включены свободные дни у моря.
 
 [«Жемчужины Коста-Рики»](/costa-rica/tour/costa-rica-pearls-10-days/) предлагают другой набор впечатлений. После Сан-Хосе следуют Дока, Поас и Ла-Пас, затем [Тортугеро](/costa-rica/place/tortuguero/), Ареналь и [голубая река Рио-Селесте](/costa-rica/place/rio-celeste/). Этот вариант лучше выбирать тем, кто готов уделить больше внимания природе и переходам между национальными парками.
 
@@ -72,7 +72,7 @@ lead: >-
 |---|---|
 | [5 дней](/costa-rica/tour/costa-rica-5-days/) | Тортугеро, Поас и Ла-Пас |
 | [6 дней: классика](/costa-rica/tour/classic-costa-rica-san-jose-monteverde-arenal/) | Кофе, Ареналь, Монтеверде |
-| [10 дней: океан](/costa-rica/tour/costa-rica-arenal-san-jose-pacific-beach/) | Природа и пляжные дни |
+| [10 дней: океан](/costa-rica/tour/costa-rica-3-perspectives/) | Природа и пляжные дни |
 | [10 дней: жемчужины](/costa-rica/tour/costa-rica-pearls-10-days/) | Тортугеро и Рио-Селесте |
 | [16 дней](/costa-rica/tour/luxury-costa-rica-16-days/) | Корковадо и побережье |
 | [Гватемала + Коста-Рика](/multi-country/tour/guatemala-costa-rica/) | Перелет через Сан-Хосе |

@@ -15,7 +15,12 @@ const sourceMap = new Map(sources.map((source) => [source.id, source]));
 const items = entries.map((copy) => {
   const source = sourceMap.get(copy.sourceId);
   if (!source) throw new Error(`Authority page is missing visible source: ${copy.sourceId}`);
-  return { source, copy, date: authorityDate(source), language: authorityLanguage(source.language) };
+  const relatedLinks = (copy.relatedLinks || []).map((link) => {
+    const related = sourceMap.get(link.sourceId);
+    if (!related) throw new Error(`Authority page is missing related source: ${link.sourceId}`);
+    return { ...link, source: related };
+  });
+  return { source, copy, relatedLinks, date: authorityDate(source), language: authorityLanguage(source.language) };
 });
 ---
 
@@ -29,7 +34,7 @@ const items = entries.map((copy) => {
       {intro && <p class="authority-sources__intro">{intro}</p>}
     </header>
     <ol class="authority-sources__list">
-      {items.map(({ source, copy, date, language }) => (
+      {items.map(({ source, copy, relatedLinks, date, language }) => (
         <li id={copy.anchorId} class="authority-sources__item" data-authority-source={source.id}>
           <div class="authority-sources__meta">
             <p class="authority-sources__publisher">{source.publisher.name}</p>
@@ -62,9 +67,17 @@ const items = entries.map((copy) => {
             <h3>{copy.title}</h3>
             {source.name !== copy.title && <p class="authority-sources__original" lang={source.language}>{source.name}</p>}
             <p class="authority-sources__annotation"><AuthorityInline text={copy.annotationMarkdown} /></p>
-            <a class="authority-sources__link" href={source.url} target="_blank" rel="external noopener noreferrer">
-              <span>{copy.linkLabel}</span><span aria-hidden="true">↗</span>
-            </a>
+            <div class="authority-sources__links">
+              <a class="authority-sources__link" href={source.url} target="_blank" rel="external noopener noreferrer">
+                <span>{copy.linkLabel}</span><span aria-hidden="true">↗</span>
+              </a>
+              {relatedLinks.map((link) => (
+                <a class="authority-sources__link" href={link.source.url} data-authority-source={link.source.id}
+                  target="_blank" rel="external noopener noreferrer">
+                  <span>{link.label}</span><span aria-hidden="true">↗</span>
+                </a>
+              ))}
+            </div>
           </article>
         </li>
       ))}
@@ -114,6 +127,7 @@ const items = entries.map((copy) => {
   h3 { margin: 0 0 12px; font-size: clamp(1.35rem, 1.65vw, 1.75rem); line-height: 1.2; text-wrap: pretty; }
   .authority-sources__original { margin: 0 0 14px; font-size: .82rem; line-height: 1.6; color: var(--color-text-muted); }
   .authority-sources__annotation { margin: 0 0 16px; color: var(--color-text-muted); }
+  .authority-sources__links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
   .authority-sources__link { display: inline-flex; align-items: baseline; gap: 10px; color: var(--color-brand-deep); font-size: .9rem; font-weight: 600; line-height: 1.5; }
   .authority-sources__link span:first-child { text-decoration: underline; text-underline-offset: .2em; text-decoration-color: color-mix(in srgb, var(--color-brand-deep) 35%, transparent); }
   .authority-sources__link:hover span:first-child { text-decoration-color: currentColor; }

@@ -3,7 +3,7 @@ id: tour_source_tur_v_argentinu_na_11dnej
 locale: ru
 title: "VIP-тур по Аргентине на 11 дней: Патагония, Ушуайя и водопады Игуасу"
 slug: argentina-patagonia-vip-11-days
-status: approved
+status: archived
 searchAliases:
   - "Тур в Аргентину и Патагонию на 11 дней"
   - "Люксовый тур в Аргентину"
@@ -309,6 +309,9 @@ sourceSnapshot: page_texts_original/tur-v-argentinu-na-11dnej__b1e0208b.md
 updatedAt: 2026-10-02
 primaryThemes: ["theme_nature", "theme_culture"]
 themes: []
+archivedAt: "2026-10-30"
+archiveReason: "duplicate"
+archiveDuplicateOf: "tour_source_lyuksovyj_tur_v_argentinu_s_buehnos_ajres_patagoniya_iguasu_na_11_dnej"
 ---
 
 Программа собрана в формате VIP-путешествия. В Буэнос-Айресе предусмотрено размещение в Four Seasons Buenos Aires, в Эль-Калафате - Eolo Patagonias Spirit Lodge с полным пансионом, в Ушуайе - Arakur Ushuaia, а у водопадов - Belmond das Cataratas. Включены индивидуальные трансферы, экскурсии с гидом и входные билеты в национальные парки.

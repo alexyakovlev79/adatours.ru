@@ -90,6 +90,19 @@ test('responsive sources activate before img.src and remain untouched outside th
     for (const [key, value] of Object.entries(saved)) value === undefined ? delete globalThis[key] : globalThis[key] = value;
   }
 });
+
+test('adjacent pictures and deferred siblings retain intact fallbacks without live duplicates', () => {
+  const picture = '<picture><source media="(max-width: 479px)" srcset="/phone.webp"><img src="/one.webp" alt="Река" title="Река"></picture>';
+  const second = picture.replaceAll('/one.webp', '/two.webp');
+  for (const sibling of [second, '<img src="/two.webp" alt="Лес" title="Лес">', '<div style="background-image:url(/two.webp)"></div>']) {
+    const output = deferImages(picture + sibling);
+    assert.ok(output.includes(`<noscript>${picture}</noscript>`));
+    if (sibling === second) assert.ok(output.includes(`<noscript>${second}</noscript>`));
+    const images = elements(output).filter((n) => n.tagName === 'img');
+    assert.deepEqual(images.map((n) => attr(n, 'data-lazy-src')), sibling.startsWith('<div') ? ['/one.webp'] : ['/one.webp', '/two.webp']);
+    assert.equal(deferImages(output), output);
+  }
+});
 test('window includes partial second screen and one screen above, excludes boundary and hidden elements', () => {
   const rect = (top, bottom, left = 0, right = 390) => ({ top, bottom, left, right, width: right - left, height: bottom - top });
   assert.ok(isWithinImageWindow(rect(0, 600), 390, 844));

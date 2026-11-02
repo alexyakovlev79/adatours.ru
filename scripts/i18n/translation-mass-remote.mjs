@@ -93,7 +93,7 @@ export async function runEnMassTranslation(tools,core,args={}){
     await read(tools,ROOT+'/jobs/'+sid+'.json',head);
    if(shard.shardId!==sid||sourcePackets&&sourcePackets.shardId!==sid)
     throw Error('Mixed shard snapshots');
-   const nextIndex=structuredClone(index);
+   const nextIndex=JSON.parse(JSON.stringify(index));
    nextIndex.activeOwners=nextIndex.activeOwners||{};
    nextIndex.ownerAssignments=nextIndex.ownerAssignments||{};
    for(const [owner,v] of Object.entries(nextIndex.activeOwners))

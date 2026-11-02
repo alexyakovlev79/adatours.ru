@@ -15,6 +15,9 @@ on:
       - 'scripts/i18n/verify-en-pages-site.mjs'
       - 'scripts/i18n/prepare-en-pages-site.mjs'
       - 'tests/i18n/en-staging-site.test.mjs'
+      - 'tests/i18n/en-pages-one-source.test.mjs'
+      - '.github/workflows/en-pages-reusable-deploy.yml'
+      - 'infra/en-pages-repository/.github/workflows/deploy.yml'
       - '.github/workflows/i18n-en-github-pages-check.yml'
   workflow_dispatch:
 permissions:
@@ -79,7 +82,7 @@ jobs:
           npm install --no-audit --no-fund
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
-          node --test tests/i18n/en-staging-site.test.mjs
+          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs
           npx astro build
           node scripts/i18n/verify-en-pages-site.mjs dist
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site

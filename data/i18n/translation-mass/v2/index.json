@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2411,
-    "leased": 0,
+    "queued": 2410,
+    "leased": 1,
     "review": 0,
     "ready": 0,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2411,
-      "leased": 0,
+      "queued": 2410,
+      "leased": 1,
       "review": 0,
       "ready": 0,
       "retryable": 0,
@@ -662,24 +662,41 @@
       "count": 130,
       "stages": {
         "word_2027": {
-          "queued": 76,
           "held": 0,
-          "leased": 0,
-          "retryable": 0
+          "queued": 75,
+          "leased": 1,
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "word_2026": {
-          "queued": 0,
           "held": 19,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "ai_only": {
-          "queued": 0,
           "held": 35,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         }
-      }
+      },
+      "earliestExpiryAt": "2026-11-02T22:50:48.377Z",
+      "earliestRetryAt": null
     },
     "1b": {
       "count": 139,
@@ -797,7 +814,23 @@
       }
     }
   },
-  "activeOwners": {},
-  "ownerAssignments": {},
-  "maxJobsPerOwner": 60
+  "activeOwners": {
+    "en-smoke-amanda-A-20261102": {
+      "jobId": "en:bulk:tour:tour_brazil_rio_four_days:b001",
+      "token": "en-smoke-token-A-20261102",
+      "expiresAt": "2026-11-02T22:50:48.377Z",
+      "generation": 1
+    }
+  },
+  "ownerAssignments": {
+    "en-smoke-amanda-A-20261102": {
+      "token": "en-smoke-token-A-20261102",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_rio_four_days:b001"
+      ],
+      "completedJobIds": []
+    }
+  },
+  "maxJobsPerOwner": 60,
+  "updatedAt": "2026-11-02T21:20:48.377Z"
 }

@@ -68,3 +68,9 @@ GitHub ref updates use expected_SHA CAS, no force. Immutable v2 results
 require exact Word source provenance or an explicit, evidenced AI gap.
 All source checks compare the current main Git blob with its frozen
 packet before any delivery; changed files are held for remapping.
+
+Independent QA is in scripts/i18n/translation-mass-qa.mjs. It verifies
+immutable review blobs, the matching source and all QA checks, and rejects
+self-approval by the worker. No public publish action exists in that API.
+The reaper runs every 30 minutes on main after merge and only updates expired
+leases and eligible retries in the staging branch with a non-force push.

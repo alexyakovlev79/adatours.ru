@@ -14,9 +14,9 @@ const target=(type,slug)=>type==='country'?'/en-pilot-private/country/'+slug+'/'
   type==='destination'?'/en-pilot-private/place/'+slug+'/':fail('Unsupported kind');
 export function validateGeoManifest(manifest){
  if(manifest?.schemaVersion!==1||manifest.locale!=='en'||manifest.publicationAuthorized!==false||
-    manifest.status!=='prepared_for_private_visual_pilot'||manifest.items?.length!==2)fail('Manifest gate');
+    manifest.status!=='prepared_for_private_visual_pilot'||manifest.items?.length!==4)fail('Manifest gate');
  const ids=manifest.items.map(x=>x.id);
- if(ids.join('|')!=='country_brazil|destination_brazil_rio')fail('Exact two pilot IDs');
+ if(ids.join('|')!=='country_brazil|country_chile|country_colombia|destination_brazil_rio')fail('Exact four pilot IDs');
  for(const m of manifest.items){
   if(!['country','destination'].includes(m.kind)||!good(m.slug)||!good(m.id)||
    !/^[a-f0-9]{40}$/.test(m.sourceBlobSha)||
@@ -78,7 +78,7 @@ export function materializePrivateGeo(m,overlay,entry){
 export async function readPrivateGeography(root,canonicalEntries){
  const base=resolve(root),m=JSON.parse(await readFile(join(base,manifestPath),'utf8'));
  const manifest=validateGeoManifest(m),map=new Map(canonicalEntries.map(e=>[e.data.id,e]));
- if(map.size!==2)fail('Two RU geography records required');
+ if(map.size!==4||manifest.some(item=>!map.has(item.id)))fail('Four RU geography records required');
  const result=[];
  for(const item of manifest){
   const bytes=await readFile(join(base,item.sourcePath));

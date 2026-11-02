@@ -6,7 +6,7 @@ import PrivateGeographyPage from '../../../components/i18n/PrivateGeographyPage.
 export async function getStaticPaths(){
  if(!privatePilotEnabled(process.env))return [];
  const [countries,destinations]=await Promise.all([
-  getCollection('countries',({data})=>data.locale==='ru'&&data.id==='country_brazil'),
+  getCollection('countries',({data})=>data.locale==='ru'&&['country_brazil','country_chile','country_colombia'].includes(data.id)),
   getCollection('destinations',({data})=>data.locale==='ru'&&data.id==='destination_brazil_rio')
  ]);
  const records=await readPrivateGeography(process.cwd(),[...countries,...destinations]);

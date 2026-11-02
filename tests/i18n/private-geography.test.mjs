@@ -4,9 +4,9 @@ import {readFile} from 'node:fs/promises';
 import {validateGeoManifest,validateGeoOverlay,materializePrivateGeo,
  verifyPrivateGeoSources} from '../../src/lib/i18n/private-geography.mjs';
 const m=JSON.parse(await readFile('data/i18n/pilot-geography/v1/manifest.json','utf8'));
-test('only source-bound private Brazil and Rio geography',async()=>{
- assert.equal(validateGeoManifest(m).length,2);
- assert.equal(await verifyPrivateGeoSources('.'),2);
+test('only source-bound private geography for three Tour countries and Rio',async()=>{
+ assert.equal(validateGeoManifest(m).length,4);
+ assert.equal(await verifyPrivateGeoSources('.'),4);
 });
 test('shared geography media paths and stable IDs are never translated',async()=>{
  const item=m.items[0], overlay=JSON.parse(await readFile(item.file,'utf8')),t=overlay.translation;

@@ -22,7 +22,8 @@ import { splitTourIntroHtml } from '../lib/tour-intro-heading.mjs';
 import { withBase } from '../lib/paths';
 import { destinationCatalogById } from '../lib/content-validation';
 import { countryPath, destinationPath, themePath, tourBreadcrumbs, tourPath } from '../lib/routes';
-import { mainTourCountryIds, mainTourDestinationIds, optionalTourDestinationIds } from '../lib/tour-relations';
+import { mainTourCountryIds, mainTourDestinationIds } from '../lib/tour-relations';
+import { buildTourGeographyModel } from '../lib/i18n/entity-geography-model.mjs';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -86,27 +87,25 @@ const [countryEntries, destinationEntries, themeEntries] = await Promise.all([
 
 const themeById = new Map(themeEntries.map((item) => [item.data.id, item.data]));
 const linkedInterests = interestIds.map((id) => themeById.get(id)).filter(Boolean);
-const countryById = new Map(countryEntries.map((item) => [item.data.id, item]));
-const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item]));
-const countryNames = d.countries.map((id) => countryById.get(id)?.data.name).filter(Boolean) as string[];
-const routeDestinations = d.destinations.map((id) => {
-  const destination = destinationById.get(id);
-  const planned = destinationCatalogById.get(id);
-  const country = destination ? countryById.get(destination.data.countryId) : undefined;
-  return {
-    id,
-    name: destination?.data.name ?? planned?.name ?? '',
-    // Keep a future place as text; its link activates when the page is published.
-    href: destination && country ? destinationPath(destination.data) : undefined,
-  };
-}).filter((item) => item.name);
+// The same stable-ID geography projection also powers the EN pilot.
+// RU keeps planned-but-unpublished destinations as unlinked text and uses
+// the original published country/destination URL builders unchanged.
+const geographyModel = buildTourGeographyModel(d, {
+  countries: countryEntries,
+  destinations: destinationEntries,
+  plannedDestinations: destinationCatalogById,
+  countryUrl: (entry) => countryPath(entry.data),
+  destinationUrl: (entry) => destinationPath(entry.data),
+});
+const countryNames = geographyModel.countryNames as string[];
+const routeDestinations = geographyModel.routeDestinations;
 const destinationNames = routeDestinations.map((item) => item.name);
-const mainPlaces = routeDestinations.filter((item) => mainTourDestinationIds(d).includes(item.id));
-const optionalPlaces = routeDestinations.filter((item) => optionalTourDestinationIds(d).includes(item.id));
+const mainPlaces = geographyModel.mainPlaces;
+const optionalPlaces = geographyModel.optionalPlaces;
 const metaDescription = /достопримечательност/iu.test(d.title)
   ? seoAttractionsDescription(d.lead,mainPlaces.filter((place) => place.href).length,'в маршруте')
   : d.lead;
-const mainCountryEntries = mainTourCountryIds(d).map((id) => countryById.get(id)).filter(Boolean);
+const mainCountryEntries = geographyModel.mainCountries.map((item) => item.entry);
 const placeGroups = [
   { label: 'Места маршрута', entries: mainPlaces },
   { label: 'Места дополнительных экскурсий', entries: optionalPlaces },

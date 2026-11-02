@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {parse} from 'parse5';
 import {PILOT_TOURS,pilotCatalogUrl,pilotTourUrl,formatPilotPrice} from '../../src/lib/i18n/pilot-html.mjs';
+import {privateRouteForId} from '../../src/lib/i18n/locale-entity-routes.mjs';
 import {privatePilotRouteIndex,privateRouteForId} from '../../src/lib/i18n/locale-entity-routes.mjs';
 const root=path.resolve(process.argv[2]||'dist');
 const fail=s=>{throw Error('EN HTML pilot: '+s)};
@@ -37,6 +38,15 @@ const geoTourById={country_brazil:'rio-de-janeiro-four-days',
  destination_chile_ostrov_pashi:'easter-island-3-days',
  destination_colombia_bogota:'colombia-essential-5-days',
  destination_colombia_kartahena:'colombia-essential-5-days'};
+// Representative verified Excursion→Destination references, derived from
+// the exact canonical MDs, must be genuine links in the EN body.
+const sourceBoundExcursionPlaces={
+ excursion_rio_sugarloaf_urca_four_hours:'destination_brazil_rio',
+ excursion_easter_island_orongo_rano_kau:'destination_chile_ostrov_pashi',
+ excursion_source_siti_tur_v_bogote:'destination_colombia_bogota',
+ excursion_source_colombia_bogota_zipaquira_con_guatavita:'destination_colombia_bogota',
+ excursion_source_siti_tur_po_kartakhene:'destination_colombia_kartahena'
+};
 const geoPlacesByTour={
  tour_brazil_rio_four_days:['destination_brazil_rio'],
  tour_chile_easter_island_3_days_2027:['destination_chile_ostrov_pashi'],
@@ -126,6 +136,12 @@ for(const c of cases){
    fail('Hero or itinerary image missing '+c.file);
  }else if(c.kind==='excursion'){
   const t=c.spec,source=find(main,x=>attr(x,'data-pilot-excursion')!==null);
+  const placeId=sourceBoundExcursionPlaces[t.id];
+  if(placeId){
+    const found=find(main,x=>attr(x,'data-pilot-excursion-destinations')!==null)[0];
+    if(!found||!tags(found,'a').some(x=>attr(x,'href')===privateRouteForId(placeId)))
+     fail('Missing source-bound EN Excursion→Destination link '+c.file);
+  }
   if(source.length!==1||attr(source[0],'data-pilot-excursion')!==t.id||
     tags(main,'h1').length!==1||!tags(main,'h2').length||
     !find(main,x=>(attr(x,'class')||'').split(' ').includes('hero')).length||

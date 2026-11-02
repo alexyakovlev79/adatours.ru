@@ -23,6 +23,7 @@ import { excursionDestinationIds } from '../lib/destination-links.mjs';
 import { buildExcursionTourCounts, compareExcursionsByPopularity, excursionIdsForTour } from '../lib/excursion-popularity';
 import { buildDestinationTourCounts, compareDestinationsByPopularity } from '../lib/destination-popularity';
 import { compareToursForCountry } from '../lib/tour-ranking';
+import { buildExcursionGeographyModel } from '../lib/i18n/entity-geography-model.mjs';
 
 const { entry } = Astro.props;
 const d = entry.data;
@@ -47,12 +48,14 @@ const [countryEntries, destinationEntries, tourEntries, excursionEntries] = awai
 
 const geography = excursionGeography(d);
 const country = countryEntries.find((item) => item.data.id === geography.country.id);
-const destinationById = new Map(destinationEntries.map((item) => [item.data.id, item]));
-const destination = d.destination ? destinationById.get(d.destination) : undefined;
+// One stable-ID geography projection for both RU and EN Excursion pages.
+const geographyModel = buildExcursionGeographyModel(d, {
+  destinations: destinationEntries,
+  plannedDestinations: destinationCatalogById,
+  destinationUrl: (entry) => destinationPath(entry.data),
+});
 const destinationTourCounts = buildDestinationTourCounts(tourEntries);
-const visibleDestinations = linkedDestinationIds
-  .map((id) => destinationById.get(id))
-  .filter((item) => item !== undefined)
+const visibleDestinations = geographyModel.linkedEntries
   .sort(compareDestinationsByPopularity(destinationTourCounts));
 
 const excursionTourCounts = buildExcursionTourCounts(tourEntries);
@@ -81,10 +84,7 @@ const relatedExcursions = excursionEntries
   )
   .slice(0, 10);
 
-const destinationName =
-  destination?.data.name ??
-  (d.destination ? destinationCatalogById.get(d.destination)?.name : undefined) ??
-  d.destinationName;
+const destinationName = geographyModel.destinationName;
 
 const excursionBreadcrumbs = buildExcursionBreadcrumbs(d);
 

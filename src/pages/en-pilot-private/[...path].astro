@@ -14,6 +14,7 @@ import {getCollection} from 'astro:content';
 import {pilotExcursionUrl} from '../../lib/i18n/private-excursions.mjs';
 import {readPrivatePilotCollections} from '../../lib/i18n/astro-locale-collection.mjs';
 import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
+import {buildTourGeographyModel,buildExcursionGeographyModel} from '../../lib/i18n/entity-geography-model.mjs';
 import {
  privatePilotEnabled,pilotTourUrl,pilotCatalogUrl,
  pilotMediaUrl,formatPilotPrice,renderPilotMarkdown,
@@ -28,7 +29,7 @@ export async function getStaticPaths(){
   await readPrivatePilotCollections(getCollection,{root:process.cwd(),env:process.env});
  const geography=[...countries,...destinations];
  const geoCards=geography.map(g=>({
-  id:g.id,name:g.data.name,kind:g.kind,countryId:g.data.countryId??g.id,
+  id:g.id,name:g.data.name,locale:'en',kind:g.kind,countryId:g.data.countryId??g.id,
   url:privateRouteForId(g.id),image:g.data.hero.src,alt:g.data.hero.alt
  }));
  const englishExcursions=Object.fromEntries(excursions.map(x=>[x.id,x]));
@@ -63,7 +64,7 @@ interface ExcursionSummary {
  id:string;title:string;slug:string;lead:string;photo:string;alt:string;
  price?:number;currency?:string;duration?:string;tourIds:string[];
 }
-interface GeoSummary {id:string;name:string;kind:string;countryId:string;url:string;image:string;alt:string;}
+interface GeoSummary {id:string;name:string;locale:'en';kind:string;countryId:string;url:string;image:string;alt:string;}
 interface Props {
  kind:'catalog'|'tour'|'excursion';
  cards:TourSummary[];
@@ -108,13 +109,23 @@ const excursionStats=isExcursion ? [
   ...(typeof d.priceFrom==='number'?[{value:formatPilotPrice(d.priceFrom,d.currency),label:'Excursion price'}]:[]),
 ] : [];
 const relatedTourCards=isExcursion?cards.filter(c=>excursionCards.find(x=>x.id===d.id)?.tourIds.includes(c.id)):[];
-const mainCountryIds=isTour?(d.routeCountries?.length?d.routeCountries:d.countries):[];
-if(isTour&&(!Array.isArray(mainCountryIds)||mainCountryIds.length!==1))
- throw Error('Private pilot requires one confirmed main country per Tour');
-const tourCountry=isTour?geoCards.find(g=>g.id===mainCountryIds[0]&&g.kind==='country'):undefined;
-if(isTour&&!tourCountry)throw Error('Missing source-verified EN Country for Tour '+record?.id);
-const routeDestinationIds=isTour?(d.routeDestinations?.length?d.routeDestinations:d.destinations):[];
-const tourPlaces=isTour?geoCards.filter(g=>g.kind==='destination'&&routeDestinationIds.includes(g.id)):[];
+// Shared pure relation model powers both actual RU Tour/Excursion layouts
+// and the nonpublic EN pilot. Only already translated geography is linked.
+const geoCountries=geoCards.filter(item=>item.kind==='country');
+const geoDestinations=geoCards.filter(item=>item.kind==='destination');
+const tourGeography=isTour?buildTourGeographyModel(d,{
+ countries:geoCountries,destinations:geoDestinations,strictLocalized:true,
+ countryUrl:entry=>entry.url,destinationUrl:entry=>entry.url
+}):null;
+if(isTour&&tourGeography?.mainCountries.length!==1)
+ throw Error('Private pilot requires one confirmed EN main Country');
+const tourCountry=tourGeography?.mainCountries[0];
+const tourPlaces=tourGeography?.mainPlaces??[];
+const excursionGeography=isExcursion?buildExcursionGeographyModel(d,{
+ destinations:geoDestinations,strictLocalized:true,
+ destinationUrl:entry=>entry.url
+}):null;
+const excursionPlaces=excursionGeography?.linkedPlaces??[];
 
 ---
 <BaseLayout privatePreview lang="en" noindex title={pageTitle} description={pageDescription} showBreadcrumbs={false}>
@@ -249,6 +260,17 @@ const tourPlaces=isTour?geoCards.filter(g=>g.kind==='destination'&&routeDestinat
             <h2>Places along the way</h2>
             <ul class="pilot-route-tags">{d.route.map((name:string)=><li>{name}</li>)}</ul>
           </section>
+        )}
+        {excursionPlaces.length>0&&(
+          <nav class="pilot-route container" aria-label="Places in this excursion"
+            data-pilot-excursion-destinations={excursionPlaces.length}>
+            <p class="pilot-kicker">PLACES TO EXPLORE</p>
+            <div class="pilot-place-links">
+              {excursionPlaces.map(place=>(
+                <a href={place.href}>Discover {place.name} <span aria-hidden="true">↗</span></a>
+              ))}
+            </div>
+          </nav>
         )}
         <section class="pilot-excursion-body section" id="details" data-pilot-excursion={d.id}>
           <div class="container prose">

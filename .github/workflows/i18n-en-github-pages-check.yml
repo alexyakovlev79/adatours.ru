@@ -1,7 +1,7 @@
 name: EN GitHub Pages route and deployment preflight (no upload)
 on:
   push:
-    branches: [feat/english-site-foundation]
+    branches: [main]
     paths:
       - 'src/pages/en/**'
       - 'src/pages/en-pilot-private/**'
@@ -41,7 +41,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: feat/english-site-foundation
+          ref: main
           path: website
       - uses: actions/checkout@v4
         with:

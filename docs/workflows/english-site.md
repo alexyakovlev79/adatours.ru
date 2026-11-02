@@ -295,3 +295,18 @@ Full handoff: [26-shared-geo-model-tour-excursion.md](../plans/english-site/26-s
 This is not the full production EN `TourLayout` or public release;
 `main`, common Word prices, form endpoint and mass translation were
 not changed by this work.
+
+
+## Checkpoint 02.11.2026 — single canonical `main` for RU and EN
+
+Shared-source PR [#59](https://github.com/alexyakovlev79/adatours.ru/pull/59)
+merged into `main` at
+[`fd646513`](https://github.com/alexyakovlev79/adatours.ru/commit/fd64651398429c9b596847b18f060fe96169297e)
+after [RU CI #41421457383](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41421457383)
+passed. The source-compatible 22-page English noindex site passed
+[EN Pages #41421279503](https://github.com/alexyakovlev79/adatours-en/actions/runs/41421279503).
+All code, media references, shared facts/prices and RU/EN overlays now belong
+to `adatours.ru/main`. The second repository must remain a minimal caller shell.
+The dedicated EN caller cutover to `@main` is a separate operation and needs
+its own successful GitHub Pages run. Public English release, translated live
+forms, SEO/Schema/hreflang and mass translation are still not authorized.

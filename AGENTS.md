@@ -26,7 +26,7 @@
 | Раздел интересов, multi-country, каталоги, страницы / формы | `docs/workflows/interests.md`, `docs/workflows/multi-country-interests.md`, `docs/workflows/catalog-pagination.md`, `docs/workflows/forms.md` |
 | Дизайн, интерфейс, скорость, правка шаблонов и механики | `docs/workflows/design-reference.md`, `docs/workflows/performance.md` и текущие `src/`-компоненты / схемы; это задачи изменения кода, а не импорта контента |
 | Новая параллельная работа или действующий рой | `docs/workflows/agent-swarms.md` + **его собственный** актуальный task/runbook, manifest и ветка. Не подменять рабочую очередь общими примерами |
-| Английский сайт / EN-matching | **Только в явно назначенной ветке** `feat/english-site-foundation`: `docs/workflows/english-site.md` и соответствующий актуальный документ `docs/plans/english-site/`; для bulk-matching — `14-matching-bulk.md` в этой папке |
+| Английский сайт / EN-localization | **Единый RU/EN исходный код и тексты находятся в `main` этого репозитория**: `docs/workflows/english-site.md`, `docs/plans/english-site/27-github-pages-one-source-two-deploys.md`. `adatours-en` содержит только вызов публикации и README; очереди перевода и исторический matching имеют отдельные staging-ветки. Завершённое сопоставление не повторять |
 
 Если запрос относится к другой части сайта или backend, найди ее в текущем дереве по URL, идентификатору или точному тексту, прочитай связанный профильный документ и код. **Не создавай новый workflow для каждого объекта**: существующий рабочий процесс должен обслуживать всех людей, туры, фотографии, тексты и другие сущности своего класса.
 

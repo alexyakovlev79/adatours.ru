@@ -1,6 +1,6 @@
 # Ada Tours EN — one source, two GitHub Pages deployments
 
-Date: 2026-11-02. Branch: `feat/english-site-foundation`.
+Date: 2026-11-02. Branch: `main`.
 
 **Owner decision:** No downloaded ZIP, no standalone static-HTML showcase,
 no duplicate source/content in two repositories. English and Russian sites
@@ -19,7 +19,7 @@ Actions** as its publishing source. Its GitHub description:
 > English Ada Tours website deployment only. Shared source code, content, pricing and media are maintained in alexyakovlev79/adatours.ru.
 
 The target's only build workflow must be a **caller**, invoking
-`alexyakovlev79/adatours.ru/.github/workflows/en-pages-reusable-deploy.yml@feat/english-site-foundation`.
+`alexyakovlev79/adatours.ru/.github/workflows/en-pages-reusable-deploy.yml@main`.
 The prepared minimal caller file is
 `infra/en-pages-repository/.github/workflows/deploy.yml` in the source
 repository. After the empty target repository is created, place this
@@ -61,7 +61,7 @@ bases or accidental release flags.
    GitHub agent may perform this once repository creation is confirmed.
 4. Run the target repository's **Actions → Ada Tours EN → Run workflow**.
    The target workflow invokes the canonical reusable workflow and builds
-   from the source repository's `feat/english-site-foundation` branch.
+   from the source repository's `main` branch.
 5. Check the caller's `deploy` receipt, then open the Pages URL.
    Do **not** claim the website is live before its target Pages run succeeds.
 
@@ -82,3 +82,16 @@ Only a separate explicit release decision may change the approved
 English domain or its indexability.
 
 **No more Windows ZIP or HTML-preview package preparation.**
+
+## Source integration — 2 November 2026
+
+Existing [PR #59](https://github.com/alexyakovlev79/adatours.ru/pull/59) was merged into canonical `main` as
+[`fd646513`](https://github.com/alexyakovlev79/adatours.ru/commit/fd64651398429c9b596847b18f060fe96169297e).
+The merged tree passed [RU PR CI #41421457383](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41421457383).
+The source-compatible 22-page staging EN build and Pages deploy passed
+[EN #41421279503](https://github.com/alexyakovlev79/adatours-en/actions/runs/41421279503).
+The reusable workflow and checked-in target caller template now refer to `main`.
+The actual `adatours-en` caller must be switched and its new Pages deployment
+verified independently; the source commit does not by itself confirm that cutover.
+Noindex staging is retained; live English forms, mass translation, public
+SEO/hreflang/schema and DNS release remain gated.

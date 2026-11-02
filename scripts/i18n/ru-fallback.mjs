@@ -66,9 +66,16 @@ export function russianFallbackHtml(source,route,known){
  const linkTo=href=>{
   if(!href||/^(?:https?:|mailto:|tel:|javascript:)/i.test(href))return href;
   if(href==='#request'||href==='#lead-form')return 'mailto:info@adatours.ru';
-  if(href.startsWith('#')||!href.startsWith(EN_STAGING_BASE))return href;
-  const rel=href.slice(EN_STAGING_BASE.length);
-  if(rel.startsWith('en/')||rel.startsWith('_astro/')||rel.startsWith('brand/'))return href;
+  if(href.startsWith('#')||href.startsWith('//')||href.startsWith('?'))return href;
+  // HTML and authored Markdown can contain either withBase links or clean
+  // absolute RU paths. Resolve both from the same canonical route allowlist.
+  const rel=href.startsWith(EN_STAGING_BASE)?href.slice(EN_STAGING_BASE.length):
+    href.startsWith('/')?href.slice(1):null;
+  if(rel===null)return href;
+  if(rel.startsWith('en/'))return EN_STAGING_BASE+rel;
+  if(['_astro/','brand/','pagefind/','data/','phone-flags/'].some(p=>rel.startsWith(p)))
+   return EN_STAGING_BASE+rel;
+  if(rel.startsWith('media/'))return 'https://img.adatours.ru/'+rel;
   const i=rel.search(/[?#]/),pathname=i===-1?rel:rel.slice(0,i),suffix=i===-1?'':rel.slice(i);
   if(suffix==='#request'||suffix==='#lead-form')return 'mailto:info@adatours.ru';
   const target=normal(pathname);

@@ -283,7 +283,93 @@
         "claimedAt": "2026-11-03T23:23:06.976Z",
         "expiresAt": "2026-11-04T00:53:06.976Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-8fc95d0a-009-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-8fc95d0a-20261104",
+        "token": "ada8fc95d0ae0c7-20261104-fixed",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b004",
+          "stableId": "tour_brazil_southern_vip_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7f4c9f2c014ec6dd44854e81b232b4d8d16f6743e51faf07f224bf5cb2df7932",
+          "blocks": [
+            {
+              "text": "Your travel dates will be agreed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-8fc95d0a-20261104",
+                "wordAbsenceReason": "The selected Word 2027 brochure gives numbered itinerary days but no fixed travel dates or equivalent booking-date note; translate the current RU note."
+              },
+              "blockId": "tour:note:df64797515dfd242",
+              "field": "note",
+              "sourceTextSha256": "043806d01c643303f3bec200f4db3f74717c3499e0d9f5b3ecb5e8161117db6a"
+            },
+            {
+              "text": "Vineyards of the Serra Gaúcha",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p67",
+                    "text": "Day 1 · Arrival at Porto Alegre’s Salgado Filho International Airport, where your English-speaking guide meets you for a private transfer by road to Bento Gonçalves, in the heart of Brazil’s renowned wine region. Check in at the elegant Spa do Vinho, set among the vineyards of the Serra Gaúcha: the hotel offers a beautiful introduction to the region’s wine culture, including a scenic walk through the vineyards. Overnight in Bento Gonçalves.",
+                    "textSha256": "5d0448a162b6577c1d2d1e0da020ae9537bcbfebd27f707767978488ff5cdb1b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word phrase vineyards of the Serra Gaúcha as a concise highlight title, capitalising the initial word for its field."
+              },
+              "blockId": "tour:highlight_title:e678a91e71decd64",
+              "field": "highlight.title",
+              "sourceTextSha256": "ae7dab2c7a7b60ffcf23afbb6a87c8b6439b24da6e7f07a9c9975935259848ba"
+            },
+            {
+              "text": "A stay at Spa do Vinho, with an included vineyard walk and quad-bike experience.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p67",
+                    "text": "Day 1 · Arrival at Porto Alegre’s Salgado Filho International Airport, where your English-speaking guide meets you for a private transfer by road to Bento Gonçalves, in the heart of Brazil’s renowned wine region. Check in at the elegant Spa do Vinho, set among the vineyards of the Serra Gaúcha: the hotel offers a beautiful introduction to the region’s wine culture, including a scenic walk through the vineyards. Overnight in Bento Gonçalves.",
+                    "textSha256": "5d0448a162b6577c1d2d1e0da020ae9537bcbfebd27f707767978488ff5cdb1b"
+                  },
+                  {
+                    "ref": "word/document.xml:p69",
+                    "text": "Included: Private transfers with English-speaking guide · Vineyard walk · Quad-bike experience · Breakfast",
+                    "textSha256": "ea9e26b989e39ddce91828dd01f19297a03cf7903f5ab04c04abda1d4392a9cb"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the compact existing highlight from the Word hotel stay and the two explicitly included vineyard activities; retain the Word hotel name and activity terms."
+              },
+              "blockId": "tour:highlight_text:49a27159f4b809dd",
+              "field": "highlight.text",
+              "sourceTextSha256": "ae35cd05fcc434f78b71872fdf3a3e4074ff34677ac3578dc4a9397ac7e4f9e1"
+            },
+            {
+              "text": "A traveller on a quad bike between rows of vines in Bento Gonçalves",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-8fc95d0a-20261104",
+                "wordAbsenceReason": "The selected Word has no image-specific alt text for this media field; translate the current RU image description without modifying the photo."
+              },
+              "blockId": "tour:media_alt:3e59bfe62e551507",
+              "field": "media.alt",
+              "sourceTextSha256": "354edb91450cec414056cfa5d2bc08f0108c0b7f9a5b0b7e3ebe26045858d295"
+            }
+          ]
+        },
+        "at": "2026-11-03T23:24:10.307Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

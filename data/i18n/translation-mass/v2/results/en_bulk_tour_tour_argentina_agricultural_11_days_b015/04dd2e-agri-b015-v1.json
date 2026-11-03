@@ -1,0 +1,112 @@
+{
+  "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b015",
+  "stableId": "tour_argentina_agricultural_11_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "cd01eb248697890fd114ed1429bc6bbcb376a5ef0175d80bb3036ed59331057b",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "26870653cbb0ba666979fa203cee4fa77b92c15fcd511c7260dcd5132d167915",
+      "text": "Shopping and departure from Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+        "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:19",
+            "textSha256": "dfb1b7c79988ff9e6c10e989bb8a856606f881a1b1f732cb519e638d3062863d"
+          },
+          {
+            "ref": "word/document.xml:p:121",
+            "textSha256": "808876852dc3a191536df74d4599eb24f2583078de8dfc55f07e1276c1544a0a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combine the exact shopping-and-departure heading with its Buenos Aires day-location heading to make the standalone itinerary title."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:c0d4b211ad2e50c5",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+        "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p:121",
+            "textSha256": "808876852dc3a191536df74d4599eb24f2583078de8dfc55f07e1276c1544a0a"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the day-location name from the exact Word heading using normal place-name capitalisation."
+      }
+    },
+    {
+      "blockId": "tour:contentBlock_text:f92e8b06b37fef01",
+      "field": "contentBlock.text",
+      "sourceTextSha256": "c1c087d7fd3e04a52a57a2e827939762f98231239677bd58d81671c69ec66b32",
+      "text": "Before you leave, you will have free time to visit Buenos Aires shopping centres, souvenir shops and grocery stores. We then arrange your airport transfer for check-in for your return flight. We will confirm the departure time to fit your flight.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-04dd2e696333-20261104",
+        "wordAbsenceReason": "Word paragraphs 123–126 cover shopping and departure, but lack this RU block's flight-specific transfer-time confirmation. Translate the complete RU field faithfully to retain that operational condition; no new service is added."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:97ae61194ed385bc",
+      "field": "media.alt",
+      "sourceTextSha256": "260fbcd2272616ef56120e7d4cb5d746847a2a2d98862fbbc2bd42aaa4c27250",
+      "text": "The pink Casa Rosada building behind a flower bed in Buenos Aires, Argentina",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-04dd2e696333-20261104",
+        "wordAbsenceReason": "The Word document has no image-alt text for the Casa Rosada photograph; translate the current RU caption without adding visual claims."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:ed5e8b3ba7f1cfc0",
+      "field": "media.hover",
+      "sourceTextSha256": "05afe20b952e8f1856079461e27e2faa9ca6069f46185e58c957b8a5a51e180c",
+      "text": "Buenos Aires: the Casa Rosada façade with flowers in the foreground",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-04dd2e696333-20261104",
+        "wordAbsenceReason": "The selected Word contains no hover caption for the Casa Rosada photograph; translate the exact frozen RU hover text."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:68ebdd10346d3d20",
+      "field": "media.alt",
+      "sourceTextSha256": "613a3b8d888779ff3e0cec63ad5d94a5d1d31221e433760fe7e16e1cb0227cd8",
+      "text": "An agricultural delegation studies soil and no-till farming in a field in the Argentine Pampas: illustration",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-04dd2e696333-20261104",
+        "wordAbsenceReason": "The selected Word contains no hero-image alt text for this illustration; translate the existing RU alt text without changing the image."
+      }
+    },
+    {
+      "blockId": "tour:body:47f6c11f40afc686",
+      "field": "body",
+      "sourceTextSha256": "5a218437b6dcd6884781770db1b1de310a516aca88af30c4869d4c52eedd1f7f",
+      "text": "\n## Explore Argentine agricultural technology in practice\n\nWe invite farm managers, agronomists and agribusiness specialists to [Argentina](/argentina/). This business tour focuses on practical professional questions: how to conserve moisture and soil fertility, choose crop rotations and sowing rates, work with heavy soils and monitor grain quality after harvest.\n\nYou will explore scientific approaches on farms, in trial plots and in meetings with consultants. Agricultural education is another focus, from early learning through professional workforce training.\n\n## We arrange your delegation’s trip\n\nWe take care of accommodation, ground logistics, meals, coordination and specialist interpretation. Between technical visits, we offer a nature day in Sierra de la Ventana, a stop on the Atlantic coast in Mar del Plata and a chance to explore Buenos Aires with a tango show.\n\nSend us your group size and professional interests. We will agree the objectives of your meetings, prepare a schedule and provide an individual quotation for your business tour.\n\n[All B2B programmes](/mice/programmes/) · [Business travel for companies](/mice/)\n",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-04dd2e696333-20261104",
+        "wordAbsenceReason": "The Word overview and services list do not contain this website-specific two-section article, professional invitation, enquiry instructions or B2B internal-link block. Translate the complete frozen RU body, preserving its headings, destinations and link targets."
+      }
+    }
+  ]
+}

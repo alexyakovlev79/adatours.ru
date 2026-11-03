@@ -119,183 +119,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b001",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "49c11d7a7e57602a29af8d982d2e501d7223c9795e46ab26ba4169dd83d6e3b0",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "claimedAt": "2026-11-03T23:07:40.070Z",
-        "expiresAt": "2026-11-04T00:37:40.070Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "submit-98cdd875f4b9-6-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b001",
-          "stableId": "tour_brazil_argentina_peru_14d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "49c11d7a7e57602a29af8d982d2e501d7223c9795e46ab26ba4169dd83d6e3b0",
-          "blocks": [
-            {
-              "blockId": "tour:title:aaf2320646108059",
-              "field": "title",
-              "sourceTextSha256": "25ecde39fef01aa4f11018fac370f0d95d4c09250af344844e0649ef6684f526",
-              "text": "Brazil, Argentina and Peru in 14 Days",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p2",
-                    "textSha256": "4ab27f5fcf68d74a10d12ed127096dbe27bc782bc017afeaec32a0fad0e7b653"
-                  },
-                  {
-                    "ref": "word/document.xml:p6",
-                    "textSha256": "591b58650e09fc8599d88684293fc45cfb15f2cfd520ec4a43cc9746350c264e"
-                  },
-                  {
-                    "ref": "word/document.xml:p20",
-                    "textSha256": "335ff045d96937c7bd1e7b753030ec5dd8128d2419d1ef7226323973dedc020f"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
-              }
-            },
-            {
-              "blockId": "tour:lead:e3456bc1f4d270f4",
-              "field": "lead",
-              "sourceTextSha256": "2e492d733b46256da6cbd476725fb08061d8c8cce779a84bcbcbfeda6e40fe14",
-              "text": "Embark on an extraordinary journey through three of South America’s most captivating countries. From the vibrant beaches and iconic landscapes of Rio de Janeiro to the spectacular Iguazu Falls, the cosmopolitan charm of Buenos Aires and the ancient wonders of Peru, this unforgettable adventure combines culture, nature, history and breathtaking scenery at every turn.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p17",
-                    "textSha256": "2bd066ea3087201825706f72ca7cfbfaf2096dd25964e5ffddf9bdbc045976bb"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
-              "field": "formatLabel",
-              "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
-              "text": "Private",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p10",
-                    "textSha256": "460d2c0a86ffd770a8fd02972630870dcf731b8449a07b489480093d6b16ea5c"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p36",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:b4a101a4607d4777",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-              "text": "Foz do Iguaçu",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p176",
-                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:baf4a32c564902b5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p42",
-                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8137954c6a092cbb",
-              "field": "itinerary.label",
-              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
-              "text": "Lima",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p186",
-                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:10b9affb31d6a916",
-              "field": "itinerary.label",
-              "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
-              "text": "Cusco",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p191",
-                    "textSha256": "03e9cddce95a162c1df10d64aaa171ce27d944edbead5ee01cf14d25e8300f44"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:08:18.043Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-98cdd875f4b9-6",
+        "blobSha": "999b5ba08ecbdeeb8f98cd7147ce1d8b37696f22",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_peru_14d_b001/submit-98cdd875f4b9-6.json",
+        "at": "2026-11-03T23:15:59.891Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

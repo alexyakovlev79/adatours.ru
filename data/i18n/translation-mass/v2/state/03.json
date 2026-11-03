@@ -287,7 +287,90 @@
         "claimedAt": "2026-11-03T23:22:05.434Z",
         "expiresAt": "2026-11-04T00:52:05.434Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-9457ab67-n7-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-9457ab67-20261104",
+        "token": "ada-en-token-9457ab67-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_iguazu_incentive_3_days:b005",
+          "stableId": "tour_iguazu_incentive_3_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "bd609b8ee02cc2429291561e7cc01d7e77cc2d3186b7a1474e957e1c4b631eb1",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "901c6d3cc0659e00655527afc0934bb1a816611825377b09fda4a5f4d5a660f6",
+              "text": "Argentine side of Iguazu Falls and departure",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p43",
+                    "textSha256": "e555446eeedc66ce094140895e7896e5388d3c8369cef2185a843b166cb56ea4"
+                  },
+                  {
+                    "ref": "word/document.xml#p45",
+                    "textSha256": "b141b4cc05c0d37a3876d6ad575c896c112daab4de40dde0203aaf84d3b8c197"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combined the Word Day3 destination and departure statement into the current itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "767dfec3f41a9af4168b5bd434394cee74b7216c172f063b48f0914a7f0a12c8",
+              "text": "After breakfast at the hotel, cross the Iguazu River via the Tancredo Neves Bridge and continue into the Argentine national park. Walkways and viewing platforms above the rushing water bring you close to the cascades. The programme includes the famous Devil’s Throat. After the tour, your driver will take you to the airport for your flight.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "Word paragraphs44–45 cover the same excursion and departure but have no exact equivalent of this concise current RU block. Translated the current RU wording without importing the Word's additional park-area and rhetorical claims."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8a5c5f4039a90fe5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "5b9fa0dc8001808c1d848887ec6d2d744b283e06ecf78068dac9933f8a9d5740",
+              "text": "Puerto Iguazú",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "The selected Word refers to Foz de Iguazu and the Argentine side but does not contain the distinct Puerto Iguazú place label used in the current RU. Translated the current stable place label without substituting Foz."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c0b7165b78b2590c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "59876a6f0ac60145697b9a039c33853a33bf01e2b48f0ccf5c479670a8f445f6",
+              "text": "Devil's Throat",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p44",
+                    "textSha256": "44fab2969ba9c7652552d684af1985e861dde3a4a8342b830d5efecdb23be33a"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact waterfall name from the verified Word Day3 description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:23:10.760Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2368,
-    "leased": 3,
+    "queued": 2367,
+    "leased": 4,
     "review": 39,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2368,
-      "leased": 3,
+      "queued": 2367,
+      "leased": 4,
       "review": 39,
       "ready": 1,
       "retryable": 0,
@@ -380,8 +380,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 75,
-          "leased": 0,
+          "queued": 74,
+          "leased": 1,
           "review": 3,
           "ready": 0,
           "retryable": 0,
@@ -412,7 +412,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:19:57.138Z",
       "earliestRetryAt": null
     },
     "01": {
@@ -1087,6 +1087,12 @@
       "token": "enlease-20261104-c41mns60",
       "expiresAt": "2026-11-03T22:42:58.566Z",
       "generation": 1
+    },
+    "ada-en-20261104-79f7d751": {
+      "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b009",
+      "token": "ada-en-token-79f7d751edf341a6",
+      "expiresAt": "2026-11-03T23:19:57.138Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -1255,8 +1261,15 @@
         "en:bulk:tour:tour_brazil_best_rio_express_six_days:b004"
       ],
       "completedJobIds": []
+    },
+    "ada-en-20261104-79f7d751": {
+      "token": "ada-en-token-79f7d751edf341a6",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_agribusiness_14_days:b009"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T21:37:04.565Z"
+  "updatedAt": "2026-11-03T21:49:57.138Z"
 }

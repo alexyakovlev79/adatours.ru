@@ -95,7 +95,7 @@
         "expiresAt": "2026-11-04T01:02:18.571Z"
       },
       "checkpoint": {
-        "id": "ada-en-a104-da0b8743c7e9:tour_brazil_argentina_peru_14d_b007:cp4",
+        "id": "ada-en-a104-da0b8743c7e9:tour_brazil_argentina_peru_14d_b007:cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-a104-da0b8743c7e9",
         "token": "c0d02798bb754ec6a8504ed642bc5ea4",
@@ -170,13 +170,93 @@
                   "runId": "ada-en-a104-da0b8743c7e9",
                   "wordAbsenceReason": "The selected Word contains no matching Copacabana photograph hover caption; translated the current RU hover text."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+                "field": "itinerary.title",
+                "sourceTextSha256": "876c1b3664b5dd6bcc5eeedff79ee37660e1da7630bea686e463adbe3d05941c",
+                "text": "Rio de Janeiro — Corcovado and Christ the Redeemer",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                  "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    },
+                    {
+                      "ref": "word/document.xml:p69",
+                      "textSha256": "943d662310f051161768de8e5f3dccf63142095f21e749b7830a3b60842f2843"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Combines the exact Word city name and Day 2 Corcovado/Christ the Redeemer destination names for the existing day-title field."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:569e72e117968fcc",
+                "field": "itinerary.text",
+                "sourceTextSha256": "71a02b25212b439cf10ca7a9d743a1731acf2c49e53699e05f08bc3389cb2d16",
+                "text": "Day 2 · Breakfast at the hotel and a half-day excursion to Corcovado. From the station, an environmentally friendly train climbs through the jungle to the summit, with spectacular views on both sides over the Tijuca Forest, home to monkeys and many exotic animals and birds. At 710 metres above sea level stands the symbol of Rio: the 38-metre statue of Christ the Redeemer, inaugurated in 1931, with a breathtaking panorama of the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, Maracanã Stadium and Sugar Loaf.\n\nIncluded: Airport – hotel transfer · Private Corcovado tour with English-speaking guide · Breakfast",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                  "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p69",
+                      "textSha256": "943d662310f051161768de8e5f3dccf63142095f21e749b7830a3b60842f2843"
+                    },
+                    {
+                      "ref": "word/document.xml:p70",
+                      "textSha256": "ed0e47cb5a80921ab5bfcdf892ce9bd51483369be21ec23568c449266072db0f"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                  "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:0aacbf591e8ace21",
+                "field": "itinerary.label",
+                "sourceTextSha256": "374e8eaf7052e9a6ec6d718e7cce6728c5c8d482c6929a5874441302d9187ba2",
+                "text": "Corcovado",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                  "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p69",
+                      "textSha256": "943d662310f051161768de8e5f3dccf63142095f21e749b7830a3b60842f2843"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Extracts the exact Word mountain name from the Day 2 excursion paragraph for its separate place label."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "submissionId": "ada-en-a104-da0b8743c7e9:tour_brazil_argentina_peru_14d_b007"
         },
-        "at": "2026-11-03T23:33:21.194Z"
+        "at": "2026-11-03T23:33:25.296Z"
       },
       "submission": null,
       "review": null,

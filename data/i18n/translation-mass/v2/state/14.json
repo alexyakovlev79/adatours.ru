@@ -289,7 +289,77 @@
         "claimedAt": "2026-11-03T22:21:44.680Z",
         "expiresAt": "2026-11-03T23:51:44.680Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-0912f3ac-b001-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-0912f3ac98f14197",
+        "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b003",
+          "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7ea69b44ffdc8d2879ff1e92062cf88244ada2b8f599de21848eb8647522931e",
+          "blocks": [
+            {
+              "blockId": "tour:notIncluded:90202d6b5b3dd7d7",
+              "field": "notIncluded",
+              "sourceTextSha256": "081df37cd284563e51f4bc66ec10f7196460e59ab6404da5d5ed215c5ec65c1f",
+              "text": "Optional excursions: the Bird Park, Macuco Safari and the Maipo Valley.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The checked Word lists only 'Optional excursions' at p191 and does not provide this RU list of the Bird Park, Macuco Safari and Maipo Valley as a corresponding English block."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:3f2f38ef887433e6",
+              "field": "notIncluded",
+              "sourceTextSha256": "db9f01941ddb159cc962772d24bfd9d9e3f6a9c8dd9fd03faf1c2139714b943c",
+              "text": "A New Year's dinner or party at a hotel in Copacabana.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The Word p46 discusses booking a New Year dinner or hotel party, but contains a longer optional-booking note rather than this standalone excluded-service item."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:5ab414d008490dcf",
+              "field": "notIncluded",
+              "sourceTextSha256": "4d652078553d67b18a7ede529e0458dc7158005a73e39b465b94ae197e3cae84",
+              "text": "Meals & beverages not mentioned",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p192",
+                    "textSha256": "e057fc1aba9b8df2e31968595662c6dbf036b3eeb07bb757b75b1df935fa04a8"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:5f7004d708c653a3",
+              "field": "notIncluded",
+              "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
+              "text": "Tips.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete checked Word has no corresponding exclusion item for tips."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:23:21.087Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

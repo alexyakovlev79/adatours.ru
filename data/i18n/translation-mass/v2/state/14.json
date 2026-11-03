@@ -121,7 +121,7 @@
         "expiresAt": "2026-11-03T23:49:30.235Z"
       },
       "checkpoint": {
-        "id": "champs-b011-4-v1",
+        "id": "champs-b011-8-v1",
         "format": "inline-v1",
         "ownerId": "ada-en-7963199f582c",
         "token": "ada-en-20261104-7963199f582c-stable",
@@ -198,12 +198,79 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:contentBlock_text:458606bfa50b36f8",
+                "field": "contentBlock.text",
+                "sourceTextSha256": "8d52317c0cbb482c2dcf93e74d0ce63c4a7a656c156e70947f0f15170952847e",
+                "text": "Breakfast at the hotel. A 3-hour city tour with an English-speaking guide takes you through La Boca, San Telmo and Plaza Dorrego, Plaza de Mayo with Casa Rosada, the Obelisk on Avenida 9 de Julio, Recoleta with its cemetery and the Basilica of El Pilar, Puerto Madero, Lezama Park and Parque Tres de Febrero.\n\nIn the evening, a tango show with dinner is included, without a guide. The restaurant serves traditional dishes and Argentine wines, while dancers perform on stage.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraphs 100–101 describe the city tour and tango dinner, but omit the current RU route's Lezama and Tres de Febrero parks and do not match this combined block. Translate the frozen RU in full, applying the agreed English-speaking guide adaptation. Reuse the identical translation of the itinerary.text block in this packet; do not translate this duplicate wording again."
+                }
+              },
+              {
+                "blockId": "tour:contentBlock_text:ce14c31ee9a88adf",
+                "field": "contentBlock.text",
+                "sourceTextSha256": "3d234c2198559a601bd065fb3601266552b22bf1ae159f21956fa3f82fc9f7a5",
+                "text": "A 3-hour city tour with an English-speaking guide is included in the tour price.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraphs 100 and 103 state the duration and inclusion separately; this standalone confirmation sentence is absent. Translate the exact RU summary with the owner's English-speaking guide adaptation."
+                }
+              },
+              {
+                "blockId": "tour:contentBlock_text:708e8c523c3dabfd",
+                "field": "contentBlock.text",
+                "sourceTextSha256": "8401cd16c67c5ca2de09ca79a4b285be3f930847443599808089813a84bdfed4",
+                "text": "The tango show with dinner and Argentine wines is included; guide services are not provided at the show.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraphs 101 and 103 cover dinner, wine, no guide and inclusion, but no single standalone sentence matches this current RU service clarification. Translate the frozen RU summary without adding services."
+                }
+              },
+              {
+                "blockId": "tour:contentBlock_title:04844f5e69300fb3",
+                "field": "contentBlock.title",
+                "sourceTextSha256": "5baf587359f4e03ff874feda6eed3597ccf2c32e5895ec81a41dd41feff2b8c1",
+                "text": "Optional trips from Buenos Aires",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p182",
+                      "textSha256": "a0bcbdd72e6f072d03d0eb280121ea9da27ea693515d4c8f7b55351844b9eab1"
+                    },
+                    {
+                      "ref": "word/document.xml:p240",
+                      "textSha256": "d7e761c7f6007eee5c004b75e1bec53a6fc60334b14f6d09ccc1af53ed8a667c"
+                    },
+                    {
+                      "ref": "word/document.xml:p245",
+                      "textSha256": "d5f5f1cb76d554622265d0136e0878ef0e3cbaf2a6156339a0556352956444db"
+                    },
+                    {
+                      "ref": "word/document.xml:p250",
+                      "textSha256": "d01064317965eb32d4adc33ca5abcf2accdd0cc46e4626f19fa2e965dc824b7d"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Compose the contextual heading for the verified optional Buenos Aires trips, preserving their optional status and city context."
+                }
               }
             ]
           },
           "submissionId": "ada-en-7963199f582c-champs-b011-v1"
         },
-        "at": "2026-11-03T22:20:47.518Z"
+        "at": "2026-11-03T22:20:51.834Z"
       },
       "submission": null,
       "review": null,

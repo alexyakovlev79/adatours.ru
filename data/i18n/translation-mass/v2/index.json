@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2208,
-    "leased": 23,
+    "queued": 2207,
+    "leased": 24,
     "review": 179,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2208,
-      "leased": 23,
+      "queued": 2207,
+      "leased": 24,
       "review": 179,
       "ready": 1,
       "retryable": 0,
@@ -745,8 +745,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 3,
           "ready": 0,
           "retryable": 0,
@@ -777,7 +777,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T00:42:50.596Z",
       "earliestRetryAt": null
     },
     "08": {
@@ -1462,6 +1462,12 @@
       "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
       "expiresAt": "2026-11-04T00:42:37.984Z",
       "generation": 1
+    },
+    "ada-en-daf0a8173bbc-20261104": {
+      "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b010",
+      "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
+      "expiresAt": "2026-11-04T00:42:50.596Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2067,7 +2073,8 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b006",
         "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b010",
-        "en:bulk:tour:tour_brazil_gems_14d:b004"
+        "en:bulk:tour:tour_brazil_gems_14d:b004",
+        "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b010"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b006",
@@ -2178,5 +2185,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T23:12:43.774Z"
+  "updatedAt": "2026-11-03T23:12:50.596Z"
 }

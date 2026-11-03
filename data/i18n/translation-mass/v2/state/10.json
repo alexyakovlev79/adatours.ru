@@ -309,140 +309,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b009",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "5ae4066f37b25a7c9241deae118f9bae4728b7e3d2e0f1d129cffbee56ca8ea5",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-35901b4e-translator",
-        "token": "ada-en-35901b4e-20261104",
-        "claimedAt": "2026-11-03T22:12:35.667Z",
-        "expiresAt": "2026-11-03T23:42:35.667Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-35901b4e-p02-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-35901b4e-translator",
-        "token": "ada-en-35901b4e-20261104",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b009",
-            "stableId": "tour_brazil_little_mix_ten_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "5ae4066f37b25a7c9241deae118f9bae4728b7e3d2e0f1d129cffbee56ca8ea5",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
-                "field": "itinerary.title",
-                "sourceTextSha256": "6932c2f492173f5ac90651dd9fb8d58461bdb91e95907db729d72a731de9e4ea",
-                "text": "Praia do Forte: free day",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has a combined leisure-days heading, not this separate day heading or standalone location field."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:fb5db666cae6efb7",
-                "field": "itinerary.text",
-                "sourceTextSha256": "d7fc7e5a421aa96f74b6941b15bddfd3df0f889cff5058ad16689dfdb1122008",
-                "text": "Two days at leisure to relax on the beach, explore the surrounding area or simply enjoy the laid-back atmosphere of Praia do Forte. One of Brazil’s most attractive coastal destinations, it lies about 60 kilometres north of Salvador on the Coconut Coast, with beautiful beaches, tropical surroundings and a relaxed atmosphere, the perfect place to unwind after exploring Salvador.",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
-                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p117",
-                      "textSha256": "43391d8b1deb83d0eaf77122e482f415445e4e3e97eef614675b7d65f4de7b30"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Removed the combined Days 8–9 prefix to fit the existing day text field; remaining Word text preserved."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:d07ef8222c1488c8",
-                "field": "itinerary.label",
-                "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
-                "text": "Praia do Forte",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has a combined leisure-days heading, not this separate day heading or standalone location field."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:1281de51426ee186",
-                "field": "media.alt",
-                "sourceTextSha256": "244842e87e96ec43ac513a5433a6d5d01cdb061ecf1234e2c49def445f6dd637",
-                "text": "Sandy beach at Praia do Forte with palm trees and ocean surf, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word contains no image alternative text or hover caption matching this RU media field."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:b511d52e19487fb1",
-                "field": "media.hover",
-                "sourceTextSha256": "d31421d7209b020d8690e0982ce9a090e63b5dae5ba144ed04c1aa22460d681d",
-                "text": "Praia do Forte: footprints in the sand along a long Atlantic beach",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word contains no image alternative text or hover caption matching this RU media field."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-                "field": "itinerary.title",
-                "sourceTextSha256": "4c7503f3cc3c2bcb54a7329706a8366e95a0c53f4627ff02a5c2d3f2e3565681",
-                "text": "Praia do Forte: time by the sea",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has a combined leisure-days heading, not this separate day heading or standalone location field."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-                "field": "itinerary.text",
-                "sourceTextSha256": "644a849d6f8b65ab8fe1927f5c6ad0530bb3bd4bbde516a5f695df44e51408b8",
-                "text": "A second free day to relax on the beach at your hotel and explore the area around Praia do Forte at your own pace. Stay at Pousada Casa do Forte.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word p117 describes both leisure days jointly; no separate second-day text with hotel placement, so current RU translated."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:5876550dbf14d84f",
-                "field": "itinerary.label",
-                "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
-                "text": "Praia do Forte",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has a combined leisure-days heading, not this separate day heading or standalone location field."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:13:28.986Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-35901b4e-p02-v1",
+        "blobSha": "8dc2ba108bec1bde588e79185fc79bc5beb52590",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_little_mix_ten_days_b009/ada-en-35901b4e-p02-v1.json",
+        "at": "2026-11-03T22:16:30.135Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -457,7 +457,90 @@
         "claimedAt": "2026-11-03T23:15:06.720Z",
         "expiresAt": "2026-11-04T00:45:06.720Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-40d0e44e-006-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-40d0e44eb57848bf",
+        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_cano_cristales_8_days:b006",
+          "stableId": "tour_colombia_cano_cristales_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c32cb4a898a836bc51f70ed640fa18559e44f571f7676622f10f46643ac17432",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "7dbde54c4c81afcfe016cbe07edf17bc44a984a7670a76238cec7772ea035f13",
+              "text": "Arrival at El Dorado International Airport in Bogotá and private transfer to the hotel. Check in and enjoy some free time. Accommodation and a local medical assistance card are included. Lunch and dinner are at an additional cost. Overnight in Bogotá.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "Word p67 supplies the arrival sentence, preserved verbatim without its day prefix, but does not contain the RU day-specific free-time, accommodation, medical-card, meal-exclusion and overnight wording; those gaps are translated from current RU."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:2b7a8bc5ae06d536",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+              "text": "Bogotá",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p66",
+                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Bogotá city heading as the arrival-day place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:990a2296aa2db7fa",
+              "field": "media.alt",
+              "sourceTextSha256": "3fca80995afea14a35b7179b60f253a687b3ede6a4fe79e6ae493a362b64457d",
+              "text": "People in front of the cathedral in a square in Bogotá, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "The verified Word has no image-specific ALT caption corresponding to people outside the cathedral in Bogotá."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f29624f3a039353dc503b24e8cee508b97422c8966d47a2e8ebf875471f6c8b7",
+              "text": "Historic Bogotá and Monserrate",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p64",
+                    "textSha256": "eb6ac37928065c77b3b3f78f85bd1b0c7db25eb588ed295a774a499e4470f744"
+                  },
+                  {
+                    "ref": "word/document.xml:p68",
+                    "textSha256": "ac52652b425f1fcad47a4bf9967dae34c9f60d1981276c3e9c5c576f4ff9e983"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Condense the corresponding Word historic-centre and Monserrate sightseeing into the Russian itinerary heading's scope."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:16:12.035Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

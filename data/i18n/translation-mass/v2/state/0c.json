@@ -456,7 +456,84 @@
         "claimedAt": "2026-11-03T23:13:55.814Z",
         "expiresAt": "2026-11-04T00:43:55.814Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_87f8c5a90488-s008-c004",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f0410042e63344c3",
+        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b016",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "28fe17f845d84a8783085615133f5c007d1be6a7546d327190155f86bbdbb9c2",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:3d62be247bdf335b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+              "text": "Mendoza",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p58",
+                    "textSha256": "9b28918bcb68bc5b2222ce1d9daa034e3ea5b02a206905ffbdfba1de42b6f54f"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e168698ea614eea5",
+              "field": "media.alt",
+              "sourceTextSha256": "e142cd10ed2e7d050abae4a80ba9315c1e005c4e50eec5271646ce71db6f1d59",
+              "text": "A mountain valley with rocky slopes and a snow-capped peak near Mendoza, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The exact verified DOCX describes Mendoza but has no accessibility caption for this particular mountain-valley photograph."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:679e2696ec9d81f4",
+              "field": "media.hover",
+              "sourceTextSha256": "e50dd3205f5f590494d1591bbf61b8a13fac14710632e63bb08e57b62c7c7160",
+              "text": "The Andes near Mendoza: a trail leads into a valley between dry mountain slopes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The exact verified DOCX contains no image hover caption matching this trail and dry Andean valley; translated from the exact RU field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+              "field": "itinerary.title",
+              "sourceTextSha256": "a5e7c93fbb5aa4499f357acb0998a2d1b3bfeaba69f3e535573b91ea0a47c2e9",
+              "text": "Mendoza | Luján Valley",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p63",
+                    "textSha256": "b542dd18221bd36e149e6ccef68b6fc9745e64fadec8800b4b66fd4abc46248e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Removes only the day number and separator from the matching Word day heading to fit the structured itinerary title."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:15:00.441Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

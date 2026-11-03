@@ -88,189 +88,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d0864db17ec1579f9b7977681c7d67b2e28921d4c9903508fb35e0e3e92ae8b7",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-4406908c67fe-1104",
-        "token": "ada-en-token-4406908c67fe",
-        "claimedAt": "2026-11-03T22:03:12.362Z",
-        "expiresAt": "2026-11-03T23:33:12.362Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-4406908c67fe-1104-p2-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-4406908c67fe-1104",
-        "token": "ada-en-token-4406908c67fe",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b002",
-            "stableId": "tour_brazil_best_rio_express_six_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "d0864db17ec1579f9b7977681c7d67b2e28921d4c9903508fb35e0e3e92ae8b7",
-            "blocks": [
-              {
-                "blockId": "tour:included:29ac633833b2ff90",
-                "field": "included",
-                "sourceTextSha256": "981987c7789a96543dd473edfebaeee822fd16e200371bb7578a6159eeaf86f3",
-                "text": "Tours with an English- or Spanish-speaking guide",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p156",
-                      "textSha256": "dd2c2a092060312a08d691a2ca40bc7b8f01533a5714632f0c202c538360f334"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              },
-              {
-                "blockId": "tour:included:03af05589e507316",
-                "field": "included",
-                "sourceTextSha256": "cd77dda546a2da838f51538fc0d10c47654f24fd0f4b5967dae59dfabbee7ec2",
-                "text": "Tickets for all the tours",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p157",
-                      "textSha256": "c42c1fd84f924c63181d993a58be8fa1fb55acc53238bee799ef15545898533a"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              },
-              {
-                "blockId": "tour:included:c5cf580e34ec2a4f",
-                "field": "included",
-                "sourceTextSha256": "86ef837c3d038aff4db2b70ee1507e574c62e6bb90ca19f1db41a5c5707825b4",
-                "text": "Transfers",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p158",
-                      "textSha256": "5eef61e1fdfb43abc44847f9cecd6e8151cf13be73e33d7c6224840ce755ff6f"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              },
-              {
-                "blockId": "tour:included:8159b25687f08563",
-                "field": "included",
-                "sourceTextSha256": "b4c3da6efc3e1ef9c78cb607172e242f833e7ba7d013e3e3c44c245991d1ea4c",
-                "text": "Accommodation in the mentioned hotel or similar",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p159",
-                      "textSha256": "38a46b509b87912f6444388c7b51577b2d2933f002fc1d1f474bda2826e48c50"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              },
-              {
-                "blockId": "tour:included:a624d3585233a933",
-                "field": "included",
-                "sourceTextSha256": "348dc08026e8047ed3144b3b36e9c0184d308dbb32ffb89509e59826f17edce9",
-                "text": "Breakfast at the hotel",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p160",
-                      "textSha256": "de4eaf81f923c0ba515759dbf6ef2e1138ba5c7a41a710c75fa0474017c69a8a"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              },
-              {
-                "blockId": "tour:notIncluded:85e42307b61ca9d2",
-                "field": "notIncluded",
-                "sourceTextSha256": "236047bf5a1673051fe1fd8eaf58445cd44c624b58f3e99bd0fe6ed34fbafdee",
-                "text": "International flights",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p163",
-                      "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              },
-              {
-                "blockId": "tour:notIncluded:5f7004d708c653a3",
-                "field": "notIncluded",
-                "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
-                "text": "Tips",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p164",
-                      "textSha256": "24794f5344f2549c0d4ed6f854a52adb1d37bc862de582ed39226849a44b2d3c"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              },
-              {
-                "blockId": "tour:notIncluded:ffb7360d4975d6b8",
-                "field": "notIncluded",
-                "sourceTextSha256": "402e56ba7da9c1bf2abadd53240c16c7d82f0c81b7a1ff277e6d6c5cf35ed4d3",
-                "text": "Meals not mentioned",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
-                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p165",
-                      "textSha256": "5428c4c6fafa86d8d669eedb05398d27bd52041fd32f4bbf155eb178e2224884"
-                    }
-                  ],
-                  "transformation": "strip_list_marker",
-                  "rationale": "Remove only the leading Word list marker; preserve the approved English wording."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:04:10.796Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-4406908c67fe-1104-p2",
+        "blobSha": "da0d065a24e9923de33261399ae7da2428158243",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_best_rio_express_six_days_b002/ada-en-4406908c67fe-1104-p2.json",
+        "at": "2026-11-03T22:04:14.529Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

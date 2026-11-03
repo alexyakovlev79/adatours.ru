@@ -710,7 +710,117 @@
         "claimedAt": "2026-11-03T23:08:02.777Z",
         "expiresAt": "2026-11-04T00:38:02.777Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-9457ab67-n4-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-9457ab67-20261104",
+        "token": "ada-en-token-9457ab67-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b009",
+          "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "cf3723dd568a6559cbe99d9010bf07909a5084c02c8b95238a5cf8b7ee678372",
+          "priceAmendments": [
+            {
+              "jobId": "en:bulk:tour:tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio:b009",
+              "stableId": "tour_source_3_strany_latinskoj_ameriki_na_karnaval_v_rio",
+              "field": "/itinerary/11/text",
+              "service": "Fiesta Gaucha",
+              "currency": "USD",
+              "currentAmount": 250,
+              "word2027Amount": 350,
+              "occupancy": "group",
+              "basis": "per person",
+              "inclusions": "Traditional Argentine lunch",
+              "sourceFileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+              "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+              "paragraphs": [
+                {
+                  "ref": "word/document.xml#p250",
+                  "textSha256": "d01064317965eb32d4adc33ca5abcf2accdd0cc46e4626f19fa2e965dc824b7d"
+                },
+                {
+                  "ref": "word/document.xml#p251",
+                  "textSha256": "61591deae1cb1de2bfcc0cc57078d0ec7b7daa9f2af6e24bb6c722b35c117c1b"
+                },
+                {
+                  "ref": "word/document.xml#p252",
+                  "textSha256": "c0de4db6a62ab9315866a114fcd69371aa5b7c35624618fd5ca462ce18123a59"
+                },
+                {
+                  "ref": "word/document.xml#p253",
+                  "textSha256": "61bd35deddbcf13c22274faaafedca56fab25e59e41a200972b931467a78a806"
+                },
+                {
+                  "ref": "word/document.xml#p254",
+                  "textSha256": "c4080e2c28227ea831c2d00599b5956cde6cf096f079c844317ce8be4135b8b5"
+                }
+              ],
+              "status": "commercial_master_review",
+              "applied": false
+            }
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+              "field": "itinerary.title",
+              "sourceTextSha256": "fff1e09958d27c0162beb4a7547c9740bb9d48d231c849ae177d3796df76d77d",
+              "text": "Free day in Buenos Aires",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "The selected Word 2027 itinerary has no free day in Buenos Aires: paragraph 102 moves to Santiago on Day 8. Translated this additional current RU itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+              "field": "itinerary.text",
+              "sourceTextSha256": "61f0105bbbe309c0ed93b82786c0bc9c5098081598d347f8198a3390798a9b6c",
+              "text": "There is no scheduled programme today. You can explore San Telmo on your own, return to Recoleta, visit Recoleta Cemetery with Evita Perón’s tomb, or spend time in the city centre.\n\nOptional tours are also available. These must be booked in advance and are payable separately.\n\n**Buenos Aires and Tigre tour in Argentina**\n\nA shared group tour with an English-speaking guide.\n\n**Price:** USD 100 per person.\n\n**Fiesta Gaucha: meet Argentina’s gauchos**\n\nA traditional Argentine lunch, music and dancing are included.\n\nA shared group tour with an English-speaking guide.\n\n**Price:** USD 250 per person.\n\n**Montevideo city tour in Uruguay**\n\nShared group with an English-speaking guide: **USD 500 per person**.\n\nPrivate programme with an English-speaking guide: **USD 850 per person**, minimum 2 participants.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "The Word has optional tours in paragraphs 240–254 but no equivalent free-day block or its full independent-visiting introduction. Translated the current RU structure and retained RU prices unchanged. Fiesta Gaucha is USD350 in Word paragraph252 versus RU USD250; a separate structured amendment is referred to the commercial master. RU-derived private guide language adapted to English under owner decision 03.11.2026."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:67cf36b5051b760f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p99",
+                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:87f55f8c48b643f1",
+              "field": "media.alt",
+              "sourceTextSha256": "260fbcd2272616ef56120e7d4cb5d746847a2a2d98862fbbc2bd42aaa4c27250",
+              "text": "The pink Casa Rosada building behind a flower bed in Buenos Aires, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No image-specific alt text for Casa Rosada in the verified Word; paragraph100 names it as a city-tour stop. Translated the current RU alt text."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:09:32.312Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

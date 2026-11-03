@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2298,
-    "leased": 19,
+    "queued": 2297,
+    "leased": 20,
     "review": 93,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2298,
-      "leased": 19,
+      "queued": 2297,
+      "leased": 20,
       "review": 93,
       "ready": 1,
       "retryable": 0,
@@ -1230,24 +1230,41 @@
       "count": 114,
       "stages": {
         "word_2027": {
-          "queued": 64,
           "held": 0,
-          "leased": 0,
-          "retryable": 0
+          "queued": 63,
+          "leased": 1,
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "word_2026": {
-          "queued": 0,
           "held": 14,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "ai_only": {
-          "queued": 0,
           "held": 36,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         }
-      }
+      },
+      "earliestExpiryAt": "2026-11-03T23:43:55.630Z",
+      "earliestRetryAt": null
     },
     "1f": {
       "count": 120,
@@ -1374,6 +1391,12 @@
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b006",
       "token": "ada8fc95d0ae0c7-20261104-fixed",
       "expiresAt": "2026-11-03T23:43:02.903Z",
+      "generation": 1
+    },
+    "ada-en-e9fc69e2bbe6": {
+      "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b001",
+      "token": "token-e9fc69e2bbe6-20261104",
+      "expiresAt": "2026-11-03T23:43:55.630Z",
       "generation": 1
     }
   },
@@ -1737,7 +1760,8 @@
     "ada-en-e9fc69e2bbe6": {
       "token": "token-e9fc69e2bbe6-20261104",
       "jobIds": [
-        "en:bulk:tour:tour_brazil_dunes_13d:b013"
+        "en:bulk:tour:tour_brazil_dunes_13d:b013",
+        "en:bulk:tour:tour_argentina_agricultural_11_days:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_dunes_13d:b013"
@@ -1825,5 +1849,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:13:48.663Z"
+  "updatedAt": "2026-11-03T22:13:55.630Z"
 }

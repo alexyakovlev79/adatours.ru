@@ -755,7 +755,7 @@
         "expiresAt": "2026-11-04T00:58:05.724Z"
       },
       "checkpoint": {
-        "id": "ada-en-9457ab67-n10-cp4",
+        "id": "ada-en-9457ab67-n10-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-9457ab67-20261104",
         "token": "ada-en-token-9457ab67-20261104",
@@ -827,10 +827,70 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:media_alt:ea34b2f73008e04d",
+              "field": "media.alt",
+              "sourceTextSha256": "6f5e2e13ca03d7a9db0f6aaf75867354ad17f87cded378ce76cb2db724f9573e",
+              "text": "Visitors on a viewing walkway amid Iguazu Falls",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No exact image-specific alt text in the verified Word; translated the current RU alt text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:09e3218e786e0449",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p162",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "6de05f681f31b6aa7accc4eb9a67c6de61026c8227ec91bf8b6cbd474d340b76",
+              "text": "Argentine side of Iguazu Falls – Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1D9b9CT24BvopVtwbWVZClhDY4V-81Q5M",
+                "documentSha256": "08e0d302e63195697d0b6b436bbaa7bd566d75aa46e060ec8fb0006011d8960c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p81",
+                    "textSha256": "8750460a2c6858909960d1c0bc59370720b7b478ac92369760bf8e42b52b52ef"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Composed the itinerary heading from the exact Word Day6 excursion side and onward-flight destination."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "e017c8c7190ff84452597e0de363c0c2cafccbfd9f6d3eb8b7c574b86f2c23e1",
+              "text": "After breakfast, cross the Tancredo Neves Bridge and visit the Argentine section of the national park with an English-speaking guide.\n\nHere, the walkways run much closer to the water: above the river, alongside the cascades and by the Devil’s Throat. The roar of the water and the spray feel more intense than from the panoramic viewpoints on the Brazilian side.\n\nAfter the tour, transfer to the airport, fly to Buenos Aires and transfer to your hotel.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "Word paragraph81 covers the excursion and onward travel but has no exact equivalent for the current RU breakfast, Devil's Throat reference and comparison with the Brazilian viewpoints. Translated the current RU structure, with owner-approved English guide-language adaptation; no price or itinerary changes."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:29:07.621Z"
+        "at": "2026-11-03T23:29:11.600Z"
       },
       "submission": null,
       "review": null,

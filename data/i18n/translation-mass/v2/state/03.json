@@ -55,7 +55,7 @@
         "expiresAt": "2026-11-03T23:20:07.477Z"
       },
       "checkpoint": {
-        "id": "04dd2e-b002-4",
+        "id": "04dd2e-b002-8",
         "format": "inline-v1",
         "ownerId": "ada-en-04dd2e696333-20261104",
         "token": "ada-en-04dd2e696333-a7f39d12",
@@ -120,10 +120,86 @@
                 "runId": "ada-en-04dd2e696333-20261104",
                 "wordAbsenceReason": "The exact RU accommodation list is absent from Word: it specifies Alto Calafate, Los Acebos and Design Suites instead. The worker may not change hotels, so this block translates the frozen RU accommodation list and retains every night count."
               }
+            },
+            {
+              "blockId": "tour:included:ba6c8e94b5d275df",
+              "field": "included",
+              "sourceTextSha256": "8c8a8e354017b469da6f94f196692e136b6e3673374f90665d885b3f971137c0",
+              "text": "Private transfers with driver only",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:240",
+                    "textSha256": "38747e18c3863c2ffc940ed95a5b125e9751c935332b75748c3e0a42df6660a0"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the dash list marker from the exact included-transfer paragraph."
+              }
+            },
+            {
+              "blockId": "tour:included:36615c60728aab2a",
+              "field": "included",
+              "sourceTextSha256": "d6581b6c143d3ca879f46d4c4dd654ee0f2a46b522e563062de8f694a151cfe0",
+              "text": "Private excursions with English-speaking guides in Buenos Aires and Iguazú",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:241",
+                    "textSha256": "ecf9a6df03f0c9cca626c45f9e0aecfcb78d40e936afc96977d1080042cdf6fd"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the private Buenos Aires and Iguazú services from the combined Word guide-inclusions paragraph for this specific inclusion field."
+              }
+            },
+            {
+              "blockId": "tour:included:fabffc622bfdfa4d",
+              "field": "included",
+              "sourceTextSha256": "59c1ad3325f60a438ed83bfb450819f3dcef51f10426a00483ef2fb0776eff04",
+              "text": "Excursions with English-speaking guides: private in El Calafate; regular service in Ushuaia and Bariloche",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:241",
+                    "textSha256": "ecf9a6df03f0c9cca626c45f9e0aecfcb78d40e936afc96977d1080042cdf6fd"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the remaining El Calafate, Ushuaia and Bariloche services from the combined Word paragraph, retaining the approved Word service types."
+              }
+            },
+            {
+              "blockId": "tour:included:f9850412534def53",
+              "field": "included",
+              "sourceTextSha256": "01c5da16851366f3ce1857349117b42c665155687c95755e653a246676f45676",
+              "text": "Entrance fees to national parks",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:242",
+                    "textSha256": "b0cccc4072a74dbe17f24f9ea73664c841b557397f7f56b6bdccfc140c3d0224"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the dash list marker from the exact Word entrance-fee inclusion."
+              }
             }
           ]
         },
-        "at": "2026-11-03T21:51:36.085Z"
+        "at": "2026-11-03T21:52:04.457Z"
       },
       "submission": null,
       "review": null,

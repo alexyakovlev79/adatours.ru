@@ -58,13 +58,28 @@ export async function runEnMassTranslation(tools,core,args={}){
    const index=await read(tools,ROOT+'/index.json',head);
    if(index.schemaVersion!==2||index.pilotOnly!==false||index.publicationEnabled!==false)
     throw Error('Unexpected bulk queue publication gate');
-   if(action==='status')return{status:'snapshot',head,branch:BRANCH,
-    stage:index.stage,enabled:index.dispatcherEnabled,
-    translationMassLaunchAllowed:index.translationMassLaunchAllowed,
-    counts:index.counts,stageCounts:index.stageCounts,
-    activeOwners:Object.keys(index.activeOwners||{}).length,
-    jobCount:index.jobCount,tourCount:index.tourCount,
-    sourceCommit:index.sourceCommit};
+   if(action==='status'){
+    let owner=null;
+    // The worker needs its own confirmed Git progress to enforce a 10-job
+    // chain after a successful submit, including on a replay after timeout.
+    if(args.ownerId!==undefined||args.token!==undefined){
+     if(!valid(args.ownerId)||!valid(args.token))throw Error('Stable ownerId/token required');
+     const assigned=index.ownerAssignments?.[args.ownerId];
+     if(assigned&&assigned.token!==args.token)
+      return{status:'owner_token_conflict',head};
+     owner={completed:assigned?.completedJobIds?.length||0,
+      assigned:assigned?.jobIds?.length||0,
+      activeJobId:index.activeOwners?.[args.ownerId]?.jobId||null,
+      maxJobsPerOwner:index.maxJobsPerOwner};
+    }
+    return{status:'snapshot',head,branch:BRANCH,
+     stage:index.stage,enabled:index.dispatcherEnabled,
+     translationMassLaunchAllowed:index.translationMassLaunchAllowed,
+     counts:index.counts,stageCounts:index.stageCounts,
+     activeOwners:Object.keys(index.activeOwners||{}).length,
+     jobCount:index.jobCount,tourCount:index.tourCount,
+     sourceCommit:index.sourceCommit,...(owner?{owner}:{})};
+   }
    if(index.dispatcherEnabled!==true||index.translationMassLaunchAllowed!==true)
     return{status:'gate_closed',branch:BRANCH,head,stage:index.stage};
    const assignments=index.ownerAssignments||{};

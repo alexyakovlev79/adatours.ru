@@ -152,7 +152,7 @@
         "expiresAt": "2026-11-03T23:50:18.033Z"
       },
       "checkpoint": {
-        "id": "sub-ada-en-20261104-2b52b0aa-5-cp4",
+        "id": "sub-ada-en-20261104-2b52b0aa-5-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-2b52b0aa",
         "token": "tok-2b52b0aa-1135-ada-en",
@@ -265,6 +265,61 @@
                   "transformation": "contextual_label",
                   "rationale": "Extracts the city name from the Word day heading, omitting only its day prefix."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:3e87974e2091eaa3",
+                "field": "itinerary.label",
+                "sourceTextSha256": "d9c710fdc992bbe8a247c75a0354a52020937e688e4b2af09704c4cbb885954d",
+                "text": "Ribeirão Preto",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[22]",
+                      "textSha256": "5ef8e649222ee13694edc8b399d72aaa408619d33f7ff3fb83e764b58a0c69fe"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the city name from the Word day heading, omitting only its day prefix."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:828c540960aed350",
+                "field": "media.alt",
+                "sourceTextSha256": "294594f9fa1ec090bc9ea06897b2074353fadb423a46b98c801a49be44600fae",
+                "text": "Neo-Gothic cathedral among tall palms in a square in São Paulo, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word contains no photograph-specific alt description; translated the current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:4f4b6cf9444d2840",
+                "field": "media.hover",
+                "sourceTextSha256": "7b3b62a9dc029fb7f4a7d4635206e0e0ee6b1ff5c2240aec31bb3cf656d37707",
+                "text": "São Paulo: a cathedral with twin towers and a round window above the entrance",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word contains no photograph-specific hover caption; translated the current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+                "field": "itinerary.title",
+                "sourceTextSha256": "ba195580b0126e2ff124950e5f78c4719260a0d66d1e802bfea199089bb57409",
+                "text": "Ribeirão Preto: first business day",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word heading names Ribeirão Preto but has no current first-business-day heading; the RU correction removed its outdated IFAMA attendance claim. Translated the current RU heading without restoring that event claim."
+                }
               }
             ],
             "sourceEvidence": {
@@ -280,7 +335,7 @@
             }
           }
         },
-        "at": "2026-11-03T22:20:53.254Z"
+        "at": "2026-11-03T22:20:58.051Z"
       },
       "submission": null,
       "review": null,

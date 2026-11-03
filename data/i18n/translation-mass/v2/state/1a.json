@@ -167,188 +167,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b012",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "e69edc1f7b5ed3b8ddbf01dc50df6f97b483539715b4ed6b9874d43945b975e2",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-868ef48df4c8-20261104",
-        "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
-        "claimedAt": "2026-11-03T22:24:51.184Z",
-        "expiresAt": "2026-11-03T23:54:51.184Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-868ef48d-07-08",
-        "format": "inline-v1",
-        "ownerId": "ada-en-868ef48df4c8-20261104",
-        "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b012",
-            "stableId": "tour_brazil_peru_argentina_group_15_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "e69edc1f7b5ed3b8ddbf01dc50df6f97b483539715b4ed6b9874d43945b975e2",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_label:c5596750d0c0ae99",
-                "field": "itinerary.label",
-                "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
-                "text": "Lima",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p50",
-                      "textSha256": "ded2160e04e705aa1b438553e8f337e39113c33606434b57cc4d37b82988535e"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracts the exact place name Lima from the Word Day 7 route heading for its standalone place label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:f88d87d6c07a208b",
-                "field": "itinerary.label",
-                "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
-                "text": "Cusco",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p50",
-                      "textSha256": "ded2160e04e705aa1b438553e8f337e39113c33606434b57cc4d37b82988535e"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracts the exact place name Cusco from the Word Day 7 route heading for its standalone place label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:169313f984c4783b",
-                "field": "itinerary.label",
-                "sourceTextSha256": "f8be62bdaaa80b6d04da49af393d92aabc253c303b9b642797669af6b8eb0ed0",
-                "text": "Sacred Valley",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p50",
-                      "textSha256": "ded2160e04e705aa1b438553e8f337e39113c33606434b57cc4d37b82988535e"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracts the exact place name Sacred Valley from the Word Day 7 route heading for its standalone place label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:2ea6fe9658c60395",
-                "field": "media.alt",
-                "sourceTextSha256": "e5911d732d4f721638b57fc03c0fbc0f6aa85a277a86132ffe979944c99a386f",
-                "text": "Panoramic view of Cusco's main square, with a church and tiled roofs, Peru",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-868ef48df4c8-20261104:p07",
-                  "wordAbsenceReason": "The verified Word contains no matching image-alt caption for this aerial image of Cusco. Translated the exact RU image description without adding facts."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:ccac0005d96d79d0",
-                "field": "media.hover",
-                "sourceTextSha256": "6a79ebf7dd26393b7f0e60e5db61d19ebe94b6c5aeadf24438112225a612acc9",
-                "text": "Cusco: the square, church towers and red roofs viewed from above",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-868ef48df4c8-20261104:p07",
-                  "wordAbsenceReason": "The verified Word contains no matching hover caption for this aerial photograph. Translated the exact RU caption without adding facts."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
-                "field": "itinerary.title",
-                "sourceTextSha256": "f8be62bdaaa80b6d04da49af393d92aabc253c303b9b642797669af6b8eb0ed0",
-                "text": "Sacred Valley",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p54",
-                      "textSha256": "f277502a31d4ffd89d2d45bfe5694c54354ada132ec8f4308ee1d6778cf4967b"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracts the exact Sacred Valley destination name from the Word heading without its day number."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:fb5db666cae6efb7",
-                "field": "itinerary.text",
-                "sourceTextSha256": "b1eb27d77aae0f9264ff5bdbb80138567d3d547bd3ef8ab3e29929d305b62696",
-                "text": "You will visit to Sacred Valley, visit the most outstanding sites of the Sacred Valley of the Incas. We will leave for the town of Chinchero, the most typical and picturesque of the Sacred Valley. This town is also famous for its women weavers, we will make a brief stop in a textile center to appreciate its beautiful fabrics and where they will teach us the ancient Inca techniques for dyeing and spinning with Alpaca wool. In the town of Chinchero we will visit its Inca archaeological complex and its beautiful colonial church enjoying the impressive natural images that surround the town. We will continue to Moray, beautiful and curious Inca archaeological complex composed of colossal concentric terraces simulating a large amphitheater. In Incas times, it served as an agricultural laboratory where diverse microclimates were recreated. Lunch at one of the restaurants in the area. Finally, we end our tour visiting the fabulous archaeological complex of Ollantaytambo important for the Incas as a military, religious and agricultural center. We will visit the Temple of the ten windows, the bathrooms of the ñusta, the Temple of the Sun among other places of interest. The postcards from the heights of Ollantaytambo will close this magical day in the Sacred Valley of the Incas. In the afternoon take the train to Aguas Calientes at the foot of Machu Pichu mountains. Overnight in Aguas Calientes",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p55",
-                      "textSha256": "4e6bbdc6d196a21e62536a75a3276027e88a21581316ec32f481e8ef921c8173"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:bfb51a3a1a5b7562",
-                "field": "itinerary.label",
-                "sourceTextSha256": "046b9e0e001d59ea12f3ae8b7b427dba3f0add7d2d344031d5fddc61389f1939",
-                "text": "Chinchero",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p55",
-                      "textSha256": "4e6bbdc6d196a21e62536a75a3276027e88a21581316ec32f481e8ef921c8173"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracts the exact place name Chinchero from the corresponding Sacred Valley day paragraph for the standalone place label."
-                }
-              }
-            ],
-            "sourceChecks": {
-              "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
-              "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
-              "modifiedTime": "2025-12-30T13:25:54.244Z",
-              "yearFolder": 2027,
-              "checkedOoxml": true,
-              "checkedCommercialTables": true
-            },
-            "unresolvedConflicts": [
-              {
-                "kind": "source_edition_labels",
-                "description": "The selected file belongs to the frozen Word 2027 source. Its opening heading says Group 10-20pax - 2026, and the commercial table heading says 2024. The binary SHA-256 matches exactly. No prices or dates were altered by this translation."
-              }
-            ]
-          },
-          "completedBlocks": 8
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:28:20.506Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-868ef48d-07",
+        "blobSha": "405d58fd85a305cd21030599f8bb97ea56434b71",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_peru_argentina_group_15_days_b012/sub-868ef48d-07.json",
+        "at": "2026-11-03T22:31:29.161Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

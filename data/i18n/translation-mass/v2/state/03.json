@@ -121,7 +121,7 @@
         "expiresAt": "2026-11-03T23:40:22.386Z"
       },
       "checkpoint": {
-        "id": "ada-en-4406908c67fe-1104-p4-4",
+        "id": "ada-en-4406908c67fe-1104-p4-8",
         "format": "inline-v1",
         "ownerId": "ada-en-4406908c67fe-1104",
         "token": "ada-en-token-4406908c67fe",
@@ -199,11 +199,73 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:5204f029aa1c04fe",
+                "field": "itinerary.label",
+                "sourceTextSha256": "69702d03cfa00fd1c739deb2ed162bb573f690ffad3c27627c150024069fa698",
+                "text": "Sugar Loaf",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                  "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "f1814e6401a9673a52ff180317ddedb99818a615ca6b2678e81611a779bb3db2"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Select the relevant place or route from the exact Word itinerary heading and narrative."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:f9d8368f956de890",
+                "field": "media.alt",
+                "sourceTextSha256": "fb4d516fa0201a007cdb73d7b95f32d1f2d1535b01edaea4eb30feaf080a8e40",
+                "text": "Sugar Loaf and a neighbouring green mountain above the calm waters of Guanabara Bay, Rio de Janeiro, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word document contains no corresponding image hover or alternative text."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:cc4ce50aa5129ca6",
+                "field": "media.hover",
+                "sourceTextSha256": "90ef7e856457e9cd30733b903650f485ed57888f4663a577969fe7693f45c09f",
+                "text": "Rio: Sugar Loaf and mountain reflections in the bay",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word document contains no corresponding image hover or alternative text."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+                "field": "itinerary.title",
+                "sourceTextSha256": "193d37e615f81da4f18e2a4af394b7ad9c2b6d41297f908bde6668e092bc085c",
+                "text": "Rio de Janeiro – Foz do Iguaçu",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                  "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p88",
+                      "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Select the relevant place or route from the exact Word itinerary heading and narrative."
+                }
               }
             ]
           }
         },
-        "at": "2026-11-03T22:11:09.276Z"
+        "at": "2026-11-03T22:11:13.674Z"
       },
       "submission": null,
       "review": null,

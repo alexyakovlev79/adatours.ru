@@ -7,6 +7,8 @@ import { SEO, seoFill } from '../lib/seo-meta.mjs';
 import { isActiveEntity } from '../lib/archive.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../lib/country-popularity';
 import { buildInterestIndex, countLabel } from '../lib/interest-model.mjs';
+import { countInEnglish } from '../lib/i18n/messages.mjs';
+import { sharedUiLocale } from '../lib/i18n/shared-ui-locale.mjs';
 import { interestTourCount } from '../lib/interest-copy.mjs';
 import { compareToursBySalesFit } from '../lib/tour-ranking';
 import { countryPath, mainTourCountries, themePath, tourPath } from '../lib/routes';
@@ -37,6 +39,7 @@ const mobileCoverFor = (source?: string, allowLegacy = true) => {
 };
 
 const activeRu = ({ data }) => data.locale === 'ru' && isActiveEntity(data);
+const uiLocale = sharedUiLocale();
 const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionEntries, people] = await Promise.all([
   getCollection('countries', activeRu),
   getCollection('tours', activeRu),
@@ -45,6 +48,9 @@ const [countryEntries, tourEntries, themeEntries, destinationEntries, excursionE
   getCollection('excursions', activeRu),
   getCollection('people', activeRu),
 ]);
+const countryDisplayNames = uiLocale === 'en'
+  ? new Map(countryEntries.map(({ data }) => [data.id, data.name]))
+  : new Map<string, string>();
 
 const tours = [...tourEntries].sort(compareToursBySalesFit);
 const vipTourPaths = await getVipTourPaths();
@@ -74,8 +80,8 @@ for (const entry of tours) {
 const mainTour = featuredTours[0];
 const smallTours = featuredTours.slice(1);
 const tourDescription = (entry: (typeof tours)[number]) => [
-  mainTourCountries(entry.data).map((country) => country.name).join(' · '),
-  entry.data.durationDays ? countLabel(entry.data.durationDays, ['день', 'дня', 'дней']) : '',
+  mainTourCountries(entry.data).map((country) => countryDisplayNames.get(country.id) ?? country.name).join(' · '),
+  entry.data.durationDays ? uiLocale === 'en' ? countInEnglish(entry.data.durationDays, 'day', 'days') : countLabel(entry.data.durationDays, ['день', 'дня', 'дней']) : '',
 ].filter(Boolean).join(' · ');
 
 const placeCover = destinationEntries.find((entry) => entry.data.countryId === 'country_brazil' && entry.data.hero?.src)?.data.hero?.src
@@ -574,4 +580,5 @@ const homeMobileHeroSrc = directS3Uploads.assets.some((asset) =>
     .home-proof-links a { padding: 16px 0; font-size: clamp(.93rem, 3.7vw, 1.1rem); }
   }
 </style>
+
 

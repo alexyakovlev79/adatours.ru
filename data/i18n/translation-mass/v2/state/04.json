@@ -239,7 +239,104 @@
         "claimedAt": "2026-11-03T23:13:32.121Z",
         "expiresAt": "2026-11-04T00:43:32.121Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-daf0a8173bbc-05-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-daf0a8173bbc-20261104",
+        "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b003",
+          "stableId": "tour_brazil_peru_argentina_group_15_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "4092cdadbab70114981a0d7fe666532e546a8566a15ed127f7bb3275e96a7a7c",
+          "blocks": [
+            {
+              "blockId": "tour:included:b62dbf0302ad80fb",
+              "field": "included",
+              "sourceTextSha256": "beb822647ca1ff8a2ff1c508258111bb520fe01347101f7433a7252b86984b80",
+              "text": "All transfers airports/ hotels/ airports in private",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p116",
+                    "textSha256": "5985a321431b31a44c30ddba6dea098e6722f76381bf5376913c4ccd4b92a695"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:f1185c4ee40b032f",
+              "field": "included",
+              "sourceTextSha256": "b09fbfe680464165855c019ab9d4eed27a539735af44b99406cc73164ab03037",
+              "text": "Entrance tickets ",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p117",
+                    "textSha256": "b9eab39383fa0d67d929a2334e9412a0183f66946ba80c8502ad860517b7d92d"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:b3e353085b17f24e",
+              "field": "included",
+              "sourceTextSha256": "2b915fec04698603db63caa3ce87e312363ed8a78de998e1942feacc3f6e7e71",
+              "text": "Dinner in Rio de Janeiro on Day 1 (drinks not included)",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p6",
+                    "textSha256": "15aa5399a390d8f12a0abd0a8154dbd22a39ef70dd471be1793c9a6e5cf385c0"
+                  },
+                  {
+                    "ref": "word/document.xml#p7",
+                    "textSha256": "938a1df4dcce1ae73b2e6f78ba0476de30c338e67ac0e8999641651d8b30f95c"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Day 1 Rio heading and dinner/drinks exclusion passage as the concise included-service label, without adding beverages or another meal."
+              }
+            },
+            {
+              "blockId": "tour:included:6001aa32e8c76485",
+              "field": "included",
+              "sourceTextSha256": "d563791b43a72335ee93692ff71f481363c3a95e9fdda055b9186ac6cb7b4697",
+              "text": "Lunch in the Sacred Valley on Day 8",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p54",
+                    "textSha256": "f277502a31d4ffd89d2d45bfe5694c54354ada132ec8f4308ee1d6778cf4967b"
+                  },
+                  {
+                    "ref": "word/document.xml#p55",
+                    "textSha256": "4e6bbdc6d196a21e62536a75a3276027e88a21581316ec32f481e8ef921c8173"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Express the lunch explicitly present within the Word Day 8 Sacred Valley paragraph as its own included-service label in the existing field."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:14:30.269Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

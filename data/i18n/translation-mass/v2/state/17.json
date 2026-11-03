@@ -5,218 +5,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "64915a6563a142b6ff4e806171d9ed9d3b8ad46a24ae28677ffdd5dd83c2042d",
       "generation": 2,
       "attempts": 1,
-      "lease": {
-        "ownerId": "ada-en-b02e6f-2fa7f9c9aaf0",
-        "token": "tok-2fa7f9c9aaf049e1a7e4ad6097949a9a",
-        "claimedAt": "2026-11-03T21:35:53.944Z",
-        "expiresAt": "2026-11-03T23:05:53.944Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-en-bulk-tour-tour_argentina_agricultural_11_days-b006-ada-en-b02e6f-2fa7f9c9aaf0-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-b02e6f-2fa7f9c9aaf0",
-        "token": "tok-2fa7f9c9aaf049e1a7e4ad6097949a9a",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b006",
-            "stableId": "tour_argentina_agricultural_11_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "64915a6563a142b6ff4e806171d9ed9d3b8ad46a24ae28677ffdd5dd83c2042d",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_label:6e2c17522473fe4c",
-                "field": "itinerary.label",
-                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-                "text": "Buenos Aires",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:32",
-                      "textSha256": "572b575ab414432d0f658fb7d1e45d8db9a3f7c92e62f0ce3671b76436771469"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the place name from the exact dated Word itinerary heading."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:e68513b22c90a8c9",
-                "field": "itinerary.label",
-                "sourceTextSha256": "ff613e91502819738a94c64faee688853a12ceed638bf954915e9fb34b742d48",
-                "text": "Pergamino",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:32",
-                      "textSha256": "572b575ab414432d0f658fb7d1e45d8db9a3f7c92e62f0ce3671b76436771469"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the place name from the exact dated Word itinerary heading."
-                }
-              },
-              {
-                "blockId": "tour:contentBlock_text:79174cfc8dda2a8e",
-                "field": "contentBlock.text",
-                "sourceTextSha256": "45607c4aa2ec6eb578e113242c7df78a4edc29929522224476b4e947b6e291b4",
-                "text": "07:00  ·  Breakfast at the hotel\n07:30  ·  Hotel check-out and departure\nTravel by road to Pergamino.\n11:00–13:00  ·  Visit to ACA – Argentine Cooperatives Association\nIntroduction to one of Argentina’s major agro-industrial organisations, operating as a cooperative of cooperatives.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:34",
-                      "textSha256": "5d5c92f73e13e4f05e97110308b9f2d974f6183ba1018967f3e94e0d405750e0"
-                    },
-                    {
-                      "ref": "word/document.xml:p:35",
-                      "textSha256": "d51753e2a9d0031d7c25a19f436ee5052aa709ff99468c02c08d7904728b0e04"
-                    },
-                    {
-                      "ref": "word/document.xml:p:36",
-                      "textSha256": "8ae7554df9ae305974d9dbbc0b3ace6c375b2876265e4377eb8d28b9291562ff"
-                    },
-                    {
-                      "ref": "word/document.xml:p:37",
-                      "textSha256": "a025772bae5405a8837e83513c8d04af47e1bf1425afe4f32f9742d37826d359"
-                    },
-                    {
-                      "ref": "word/document.xml:p:38",
-                      "textSha256": "98f84f5a6213efa3f3cc5b6ffec2e74d55b54bd78bf3fb6cb9be90ade7da3435"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:contentBlock_text:8cef94398a757a2a",
-                "field": "contentBlock.text",
-                "sourceTextSha256": "cd18f10c41120e7d0ef917984e82c76b146c4f6b17d1ae5401e621d2db7a3eb6",
-                "text": "13:00–14:00  ·  Lunch\nTraditional Argentine meat cooked over charcoal.\n14:30–17:00  ·  Technical visit to INTA\nLearn about the national agricultural research institute’s work on climate change, sustainable agriculture, drought-resistant crops, precision farming and efficient production systems. Presentation on technologies used in Argentine crop and livestock production.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:39",
-                      "textSha256": "80debf41ce52cdbd4676846665ea0cc2c7ff333343fa365ab7945c5a4a8b7561"
-                    },
-                    {
-                      "ref": "word/document.xml:p:40",
-                      "textSha256": "975ee62fbc18fd5241f88f57dc91fd5766eee5eb1555312bd1e4568c305751f5"
-                    },
-                    {
-                      "ref": "word/document.xml:p:41",
-                      "textSha256": "147baf6f1b931cb077ff9e4175a8cc6103455c3833da2963c14acdef95f86ea5"
-                    },
-                    {
-                      "ref": "word/document.xml:p:42",
-                      "textSha256": "9cadb27d90076300b5a5af2a48b979226881aa41c22037f09c026209efd53972"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:contentBlock_text:1a2474e9ac480f38",
-                "field": "contentBlock.text",
-                "sourceTextSha256": "28031b0e955e489031780bd33cbaf2a0fa332341f2f9567b1432af4ddc9fb7a8",
-                "text": "18:00  ·  Hotel check-in and dinner\nRoute: Approx. 300 km   |   Overnight: Pergamino",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:43",
-                      "textSha256": "6e869086cba56e54ac47c011fbcc34404c46d00c39320fa3349f3a085b378d47"
-                    },
-                    {
-                      "ref": "word/document.xml:p:33",
-                      "textSha256": "bd295c7586218d4ad84bdd3331e9b371ce4cdf76954f8b6b53647d59c2b667ab"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:media_alt:dfc40b7458c5941d",
-                "field": "media.alt",
-                "sourceTextSha256": "ed9ebfa8193e92bdab19df3f88b40801ea381079169d26f8082b599cc73ce066",
-                "text": "Laboratory analysis of seeds and soils for precision farming: illustration",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-b02e6f-2fa7f9c9aaf0",
-                  "wordAbsenceReason": "The complete DOCX contains no image alt text or caption describing laboratory analysis of seeds and soils; this illustration label is present only in the current RU media metadata."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:29b299ffc3793f00",
-                "field": "itinerary.label",
-                "sourceTextSha256": "ccf4de014d63d5e68ac4dd0c105722591fd05651451ecc8652e140728c093400",
-                "text": "26 November 2026",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:4",
-                      "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
-                    },
-                    {
-                      "ref": "word/document.xml:p:44",
-                      "textSha256": "fb8efb888b09b277236bd1e0df8e67b25e38215ff17834a300d2086f01387cfb"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Expand the abbreviated day heading using the exact year stated in the Word programme date range."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
-                "field": "itinerary.title",
-                "sourceTextSha256": "fa67f9f834f00a02712c56edcb5b3bd29d82ae224b4763c92d93a58750ba9e16",
-                "text": "No-Till Farming on 14,000 Hectares and a Meeting with AGROCONSULTOR",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p:48",
-                      "textSha256": "d01e34a62c00a85c5795ca6b2778991b4d5b2411ef9cfe0bc763c8ed0450ae65"
-                    },
-                    {
-                      "ref": "word/document.xml:p:50",
-                      "textSha256": "70657e800dc8225d6caadb617b14ca9da152ff94c8a2f8c806b9d82768b1d64f"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Compose a concise day title from the Word farm area and the named afternoon meeting, preserving their meaning."
-                }
-              }
-            ]
-          },
-          "submissionId": "sub-en-bulk-tour-tour_argentina_agricultural_11_days-b006-ada-en-b02e6f-2fa7f9c9aaf0",
-          "completedBlocks": 8
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:14:02.007Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-en-bulk-tour-tour_argentina_agricultural_11_days-b006-ada-en-b02e6f-2fa7f9c9aaf0",
+        "blobSha": "b5ed90389b8237d46523e1010888ae36ff304772",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_agricultural_11_days_b006/sub-en-bulk-tour-tour_argentina_agricultural_11_days-b006-ada-en-b02e6f-2fa7f9c9aaf0.json",
+        "at": "2026-11-03T21:36:00.324Z"
+      },
       "review": null,
       "nextAttemptAt": null,
       "lastFailure": {

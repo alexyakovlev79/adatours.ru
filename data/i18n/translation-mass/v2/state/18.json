@@ -38,7 +38,7 @@
         "expiresAt": "2026-11-03T23:26:31.621Z"
       },
       "checkpoint": {
-        "id": "cp-b018-4",
+        "id": "cp-b018-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-935f-translator",
         "token": "ada-en-935f-bxatc0v89fh-mw180til",
@@ -98,10 +98,65 @@
                 "runId": "ada-en-20261104-935f-translator",
                 "wordAbsenceReason": "The verified Word refers to the falls and national park entrance fees, but has no matching national park place label. Translate the current RU label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:d38e7ddd28cbe67c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "83b10131009589d420b5b7d22bab5260a34e711fddb52dcaa7a27df5e60a9b3b",
+              "text": "Iguazu National Park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word refers to the falls and national park entrance fees, but has no matching national park place label. Translate the current RU label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ba0cbdd9e5d22196",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d927d35f8d150eb5cef45ba7f7df898a46cc81f52f84b424e4ea4e26e46edb18",
+              "text": "Iguazu River",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word does not provide this river label separately; translate the current RU place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fd07612ee3fdd0c6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7aa65fe510b5abedc5fc31d346dc0dd9edeac5a417d1553c9d2a16dd3ff00aa5",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word itinerary describes the Brazilian side of the falls but has no Foz do Iguaçu place label. Translate the RU city name using its established local spelling."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:858483400b799018",
+              "field": "itinerary.label",
+              "sourceTextSha256": "36d8911a3192feb1c049349eedd1561043cdf44ef868f7654ebe54ebf4272587",
+              "text": "Iguazu Falls",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p3",
+                    "textSha256": "e34b23cf1a40092dc35353c6511614a17016dc18dce6929773fa0461a70148f7"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the established falls name from the exact Word subtitle."
+              }
             }
           ]
         },
-        "at": "2026-11-03T21:57:03.992Z"
+        "at": "2026-11-03T21:57:08.344Z"
       },
       "submission": null,
       "review": null,

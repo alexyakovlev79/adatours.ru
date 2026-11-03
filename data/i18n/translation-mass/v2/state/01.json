@@ -377,7 +377,111 @@
         "claimedAt": "2026-11-03T23:11:33.575Z",
         "expiresAt": "2026-11-04T00:41:33.575Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f4e636b296c4-009-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f4e636b296c4",
+        "token": "ada-en-f4e636b296c4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b002",
+          "stableId": "tour_brazil_little_mix_ten_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "86afb728925f29a7a1e12a000a5bb4c40a8c40c1be0e204f31a3995229235d87",
+          "sourceConflicts": [
+            {
+              "blockId": "tour:notIncluded:1d3c338a296fa88e",
+              "kind": "commercial_basis",
+              "ru": "USD800 NET no commission",
+              "word": "USD800 per person; NET/no commission absent",
+              "resolution": "RU-derived qualifier retained; commercial master review, no numeric price changed."
+            },
+            {
+              "blockId": "tour:note:9e1a0390a15ed751",
+              "kind": "outdated_editorial_caveat",
+              "word": "p29 English-speaking guides; p152 Or similar hotels.",
+              "resolution": "RU-derived caveat retained for independent review."
+            },
+            {
+              "blockId": "tour:note:721a708e3fd3b7f0",
+              "kind": "outdated_resort_discrepancy",
+              "word": "p108–109 explicitly Praia do Forte",
+              "resolution": "RU-derived caveat retained for independent review."
+            }
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:included:fbde0343ac06b226",
+              "field": "included",
+              "sourceTextSha256": "ccd4454d9144a422b16ff45281105b12ff30af856259d0a35bb1a0f917ce4b33",
+              "text": "Nine nights in the hotels in the programme table: 2 in São Paulo, 3 in Rio, 1 in Salvador and 3 on the coast.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word gives the nightly distribution in its accommodation table but lacks this exact single-sentence RU included summary."
+              }
+            },
+            {
+              "blockId": "tour:included:89109fb3fd97928d",
+              "field": "included",
+              "sourceTextSha256": "29b8e977a948b1ac2a7bcbd43ca8236f2785d2c35f5def1dc873fe52de30a911",
+              "text": "Transfers according to the programme",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p181",
+                    "textSha256": "9f7cd47e53cb79ff540501d2b0e580ffaf42889a72df6a21a7afbb708f44e5e4"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the list markers and spacing; retain exact approved Word wording for the included services."
+              }
+            },
+            {
+              "blockId": "tour:included:10ab62abd33c369f",
+              "field": "included",
+              "sourceTextSha256": "6d56a16aa356f1cd15d8bb573e79fa63903cb2ab24cccbcde2b945785cc9bc4a",
+              "text": "Private city tours in São Paulo, Rio (Corcovado) and Salvador\nSugar Loaf and city tour in Rio",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p179",
+                    "textSha256": "a8a9617df6389fe3343b29be06a1c57c17f5daca16b2dcfbb79199fb0c69f109"
+                  },
+                  {
+                    "ref": "word/document.xml:p180",
+                    "textSha256": "0729522c186d5f60a96374102307c48b254d604642fa86fe77429bb1c513c7e0"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the list markers and spacing; retain exact approved Word wording for the included services."
+              }
+            },
+            {
+              "blockId": "tour:included:f73e2400e98462c5",
+              "field": "included",
+              "sourceTextSha256": "1397dbe15069bbcc0103acdfe4a20d820862f34405f316a9a5bc452cd2a0c26d",
+              "text": "Breakfasts specified in the daily programme.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word contains breakfast in daily included lines but lacks this exact standalone RU qualification."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:12:25.865Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

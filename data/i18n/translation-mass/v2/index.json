@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2342,
-    "leased": 8,
+    "queued": 2341,
+    "leased": 9,
     "review": 60,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2342,
-      "leased": 8,
+      "queued": 2341,
+      "leased": 9,
       "review": 60,
       "ready": 1,
       "retryable": 0,
@@ -934,8 +934,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 76,
-          "leased": 0,
+          "queued": 75,
+          "leased": 1,
           "review": 2,
           "ready": 0,
           "retryable": 0,
@@ -966,7 +966,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:30:15.597Z",
       "earliestRetryAt": null
     },
     "0e": {
@@ -1287,6 +1287,12 @@
       "token": "ada-en-935f-bxatc0v89fh-mw180til",
       "expiresAt": "2026-11-03T23:30:10.299Z",
       "generation": 1
+    },
+    "ada-en-eaeb603e-translator": {
+      "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b006",
+      "token": "tok-eaeb603e-20261104-831c",
+      "expiresAt": "2026-11-03T23:30:15.597Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -1543,8 +1549,15 @@
         "en:bulk:tour:tour_argentina_experience_6_days:b007"
       ],
       "completedJobIds": []
+    },
+    "ada-en-eaeb603e-translator": {
+      "token": "tok-eaeb603e-20261104-831c",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_little_mix_ten_days:b006"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:00:10.299Z"
+  "updatedAt": "2026-11-03T22:00:15.597Z"
 }

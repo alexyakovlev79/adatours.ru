@@ -226,7 +226,7 @@
         "expiresAt": "2026-11-03T23:40:27.926Z"
       },
       "checkpoint": {
-        "id": "cp-7226-colombia-b004-4",
+        "id": "cp-7226-colombia-b004-8",
         "format": "inline-v1",
         "ownerId": "ada-en-7226a7c037aa-20261104",
         "token": "tok-7226a7c037aa-en-20261104",
@@ -311,10 +311,79 @@
                 "transformation": "contextual_label",
                 "rationale": "Condense the cited Word passage into the corresponding brief contextual field."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "d429b485d07c95f6c52eef98678ba79007fe94f1e6eaf7cd55e4884c9f508acf",
+              "text": "Upon arrival at El Dorado International Airport, you will be welcomed by your private English-speaking guide, who will accompany you throughout your stay in Bogotá. The afternoon begins with a journey into the heart of the capital, exploring the historic district of La Candelaria, with its colonial architecture and atmospheric streets. Visit the Gold Museum, the Casa de la Moneda and the Botero Collection, before continuing to Plaza de Bolívar, surrounded by some of the city’s most important historic buildings.\n\nThe day concludes with an ascent to Monserrate, offering a different perspective of Bogotá, before returning to the hotel.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "p:67",
+                    "textSha256": "206fdcdb1352e3c25f24c5d28f65eb9d233cb4a11aee1be04f9cf9f4cb55ec9b"
+                  },
+                  {
+                    "ref": "p:68",
+                    "textSha256": "d60b58cd650b5c93ba8214c9532076fc9eaaedfd39f58e2782ebc85925f31d33"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word day narrative without its day-number marker, joining the two consecutive source paragraphs."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:2b7a8bc5ae06d536",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+              "text": "Bogotá",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "p:66",
+                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:990a2296aa2db7fa",
+              "field": "media.alt",
+              "sourceTextSha256": "3fca80995afea14a35b7179b60f253a687b3ede6a4fe79e6ae493a362b64457d",
+              "text": "People in front of the cathedral in a square in Bogotá, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "run-7226-colombia-b004",
+                "wordAbsenceReason": "The verified complete Word document contains no image-specific alternative text for this photograph; translate the RU alt."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:887df8db12b3bd7f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+              "text": "Bogotá",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "p:66",
+                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:11:47.995Z"
+        "at": "2026-11-03T22:11:51.692Z"
       },
       "submission": null,
       "review": null,

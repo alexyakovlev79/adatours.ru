@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2381,
-    "leased": 6,
-    "review": 23,
+    "leased": 5,
+    "review": 24,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 0,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2381,
-      "leased": 6,
-      "review": 23,
+      "leased": 5,
+      "review": 24,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 0,
@@ -393,8 +393,8 @@
         "word_2027": {
           "held": 0,
           "queued": 77,
-          "leased": 1,
-          "review": 1,
+          "leased": 0,
+          "review": 2,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -424,7 +424,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-03T22:42:35.239Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "03": {
@@ -1003,12 +1003,6 @@
       "expiresAt": "2026-11-03T22:42:26.607Z",
       "generation": 1
     },
-    "ada-en-20261104-ddc12b513de4": {
-      "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b009",
-      "token": "tok-ddc12b513de4-20261104",
-      "expiresAt": "2026-11-03T22:42:35.239Z",
-      "generation": 1
-    },
     "ada-en-20261104-07fb7ebf72b9": {
       "jobId": "en:bulk:tour:tour_argentina_best_14_days:b010",
       "token": "bbe17f6c889c405385518d328159f001",
@@ -1141,7 +1135,9 @@
       "jobIds": [
         "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b009"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b009"
+      ]
     },
     "ada-en-20261104-07fb7ebf72b9": {
       "token": "bbe17f6c889c405385518d328159f001",
@@ -1159,5 +1155,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T21:14:11.336Z"
+  "updatedAt": "2026-11-03T21:14:28.364Z"
 }

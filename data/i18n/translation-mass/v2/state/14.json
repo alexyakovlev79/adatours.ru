@@ -64,7 +64,7 @@
         "expiresAt": "2026-11-03T23:28:10.253Z"
       },
       "checkpoint": {
-        "id": "grand-b003-4-v1",
+        "id": "grand-b003-8-v1",
         "format": "inline-v1",
         "ownerId": "ada-en-7963199f582c",
         "token": "ada-en-20261104-7963199f582c-stable",
@@ -139,12 +139,74 @@
                   "runId": "ada-en-7963199f582c",
                   "wordAbsenceReason": "The verified Word specifies English-speaking guides separately in the relevant day paragraphs, but has no standalone inclusion matching the RU summary. Translate this RU-derived service label using the owner's 03 November 2026 English-language adaptation rule."
                 }
+              },
+              {
+                "blockId": "tour:included:3e77fc3c3edd6d04",
+                "field": "included",
+                "sourceTextSha256": "11afbfd8b5bcdc3deaab5cd304821dc2610d2b0d5e3834ceb23a8494be13fea1",
+                "text": "Gala Tango with dinner and private transfers",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p11",
+                      "textSha256": "9a4ad10008dd3a4a26309bdebda3b4383f5a90efc92e9223248b576506b12939"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Compose the short inclusion label from the verified dinner and Gala Tango sentence; preserve private transfers and omit the day-specific evening introduction."
+                }
+              },
+              {
+                "blockId": "tour:included:c1153ce1e6b4cb89",
+                "field": "included",
+                "sourceTextSha256": "abb9f793eb0d7e77e1dfdef5bc421482b07dcc432af92cc443c6c358fbbade76",
+                "text": "Park entrance tickets and a shared-group boat safari at Perito Moreno",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraph 50 contains a full-day guided excursion sentence rather than this standalone inclusion label. Translate the current RU label, retaining park tickets and the shared-group boat safari without adding other services."
+                }
+              },
+              {
+                "blockId": "tour:included:7238418a12c6f46d",
+                "field": "included",
+                "sourceTextSha256": "9a555b7489fd93e1ed5ca230916cad33a041200a2a2a181e4d82c7a484007f40",
+                "text": "Winery visits with tastings in Luján de Cuyo and the Uco Valley",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraphs 40 and 43 describe two separate excursions and their tasting activities, not the combined standalone RU inclusion. Translate the frozen RU summary without expanding the included services."
+                }
+              },
+              {
+                "blockId": "tour:included:41d1927fa959719f",
+                "field": "included",
+                "sourceTextSha256": "14b06a01b47bb079a7f2acaa2de62f2d60ba389e5054a7399f8e65aa862bcbde",
+                "text": "Dinner in a cave as part of the Nativo Experience",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p47",
+                      "textSha256": "9b3db0f2c589bfb658c8b4dc246beb5808692f7e2baddff16bba4b518e31e91e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Compose the short contextual service label from the verified Nativo Experience paragraph and its cave-dinner sentence; retain the RU label's limited scope."
+                }
               }
             ]
           },
           "submissionId": "ada-en-7963199f582c-grand-b003-v1"
         },
-        "at": "2026-11-03T21:59:14.970Z"
+        "at": "2026-11-03T21:59:18.752Z"
       },
       "submission": null,
       "review": null,

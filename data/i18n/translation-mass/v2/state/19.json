@@ -330,93 +330,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "81bad6a9166c8a7240be2cd5003660aaae9d4ef1a04ca032fb60248d02e2aacf",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f4e636b296c4",
-        "token": "ada-en-f4e636b296c4-20261104",
-        "claimedAt": "2026-11-03T23:14:27.167Z",
-        "expiresAt": "2026-11-04T00:44:27.167Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f4e636b296c4-010-cp4",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f4e636b296c4",
-        "token": "ada-en-f4e636b296c4-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b005",
-          "stableId": "tour_brazil_foz_iguazu_three_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "81bad6a9166c8a7240be2cd5003660aaae9d4ef1a04ca032fb60248d02e2aacf",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:569e72e117968fcc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "c71616f53e606a080f8a5ee32d846fa99b0f60877b15a55a8d0c4c0fda71b171",
-              "text": "After breakfast, cross the border into Argentina and visit the Argentine side of Iguazu National Park. It has the largest network of visitor trails and walkways in the falls area. The walk takes you to viewpoints beside the cascades, where you can feel the power of the falling water at close range.\n\nThe highlight is the Devil’s Throat, Garganta del Diablo. Torrents plunge into a deep canyon beneath a rising cloud of spray. An English-speaking guide and entrance tickets are included in the tour price. Spend your second night in Foz do Iguaçu.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word p80 describes the same excursion, but no exact complete block includes this RU wording, guide/ticket inclusion and second-night statement; RU-derived service language follows owner instruction."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8692f57bba30dbe3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "dec7b838b75a9aeac039755eb70056d8504594667a6a8a05091385cfe9a1a033",
-              "text": "Argentine Falls",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p46",
-                    "textSha256": "93033b9bf07192d0a9800d7e41492884e67a8239ee211193061be1b137679df0"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:eacc0a65f193be8f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "59876a6f0ac60145697b9a039c33853a33bf01e2b48f0ccf5c479670a8f445f6",
-              "text": "Devil’s Throat",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p49",
-                    "textSha256": "0769bea725a89bb14aa79ccbbf708aa5817eae370624ddaca01fdf960d839db4"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:3f132dd3b5d0783b",
-              "field": "media.alt",
-              "sourceTextSha256": "ac2147c5f5e8deb868353990fc35385f0f12b5734c61694622b7b03394eb1a26",
-              "text": "Powerful Iguazu cascades among rocks and greenery, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-f4e636b296c4",
-                "wordAbsenceReason": "Word lacks the exact standalone image alt/hover caption; translate only the existing RU caption."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:15:10.589Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f4e636b296c4-010",
+        "blobSha": "0710ce6d2b26c16f97c9767b2f9997c8687e8b41",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_foz_iguazu_three_days_b005/ada-en-f4e636b296c4-010.json",
+        "at": "2026-11-03T23:17:24.598Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

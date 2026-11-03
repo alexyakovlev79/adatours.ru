@@ -151,7 +151,87 @@
         "claimedAt": "2026-11-03T22:12:21.928Z",
         "expiresAt": "2026-11-03T23:42:21.928Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-eaeb603e-04-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-eaeb603e-translator",
+        "token": "tok-eaeb603e-20261104-831c",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-en-eaeb603e-04",
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_gems_14d:b008",
+            "stableId": "tour_brazil_gems_14d",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "49ce8c71f5a5e754db205142fcd2bf39bf5f24a290304e67e64fb2925e811ebb",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:c12f8d3cb0052213",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f9638d61817f45d50d040b52a87ec567129101d4db5cae07f76ef5c5174219b6",
+                "text": "Salvador",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                  "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p48",
+                      "textSha256": "5ad4a23bc13eaf92e9c035b1d3edbb92582a99f2dbe64525009755f989eedfb2"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:media_alt:dea113f3a15319b8",
+                "field": "media.alt",
+                "sourceTextSha256": "bd66d2667090f09b58cf7fa60db3fe854dacad4ed17b0b2477f1d9385b1a60ea",
+                "text": "Garden path beside the lake at Inhotim, Brumadinho, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-eaeb603e-04",
+                  "wordAbsenceReason": "The selected Word programme contains no corresponding photo alt or hover caption; translated the current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:66403fad7da2be7a",
+                "field": "media.hover",
+                "sourceTextSha256": "11b2e4d3f825e6f36326878384be17d10e32a40da0efe25bbdd18e6692e416db",
+                "text": "Inhotim, Brazil: palm trees, dense planting and a pavilion by the water",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-eaeb603e-04",
+                  "wordAbsenceReason": "The selected Word programme contains no corresponding photo alt or hover caption; translated the current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+                "field": "itinerary.title",
+                "sourceTextSha256": "d7932d47cdd0b89bd6f53ee1cc950e305d6b28b34f755b3417210011442b84e0",
+                "text": "Salvador – Praia do Forte",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                  "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p112",
+                      "textSha256": "6659574572533038daf96cd41c06a76a6799711b7ce587765ac39cf6ce8020ea"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Compose the itinerary route label from the Salvador visit followed by the transfer to Praia do Forte in the cited Word paragraph."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T22:13:10.303Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

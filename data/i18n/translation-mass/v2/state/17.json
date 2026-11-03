@@ -156,154 +156,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "977a4c3f67604edcce8a4750a90421a0520e27c69ff951d6cf13e948f42a7658",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-821a3075e51e-worker",
-        "token": "ada-en-821a3075e51e-token-20261104",
-        "claimedAt": "2026-11-03T22:30:49.051Z",
-        "expiresAt": "2026-11-04T00:00:49.051Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "en:bulk:tour:tour_brazil_agribusiness_14_days:b004:cp8:821a3075",
-        "format": "inline-v1",
-        "ownerId": "ada-en-821a3075e51e-worker",
-        "token": "ada-en-821a3075e51e-token-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b004",
-          "stableId": "tour_brazil_agribusiness_14_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "977a4c3f67604edcce8a4750a90421a0520e27c69ff951d6cf13e948f42a7658",
-          "blocks": [
-            {
-              "blockId": "tour:note:0f15605b41d6cfe9",
-              "field": "note",
-              "sourceTextSha256": "a015a5657c11578cabd3f6b4e0ba77026704a3d276257b88323e82fa42e85ab0",
-              "text": "Conference registration fees, entrance tickets, the 30-minute helicopter flight and the terms of the dolphin programme are confirmed in your individual quotation.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word mentions the conference, helicopter option and dolphin activity, but does not contain this booking-confirmation note. Translated the current RU conditions without changing their scope."
-              }
-            },
-            {
-              "blockId": "tour:note:af8503009512a576",
-              "field": "note",
-              "sourceTextSha256": "f77d3191648c940d6ac99ec6e91f1203724e299858551d7ebaaff943eb974508",
-              "text": "Guide languages in São Paulo, Rio and Iguaçu are agreed separately; group excursions in Manaus are conducted in English.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word specifies English-speaking group guides in Manaus but gives no guide language for the other cities and no standalone note on agreeing those languages. Translated the current RU note."
-              }
-            },
-            {
-              "blockId": "tour:note:f80ead3f4514ddc3",
-              "field": "note",
-              "sourceTextSha256": "e32890fe07d7ff8a1158ef4b408f1a41670ebe499383a6558fb4e72cbd1e4316",
-              "text": "The Argentine side of the falls is included as a cross-border excursion; Brazil is the main country of the trip.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word includes an Argentine-side visit on day 12 but no equivalent note distinguishing the principal country and cross-border excursion. Translated the current RU note."
-              }
-            },
-            {
-              "blockId": "tour:note:3ac56a81c1285e2c",
-              "field": "note",
-              "sourceTextSha256": "0f2c3d8880bae985e9631bc7e3bfe58b9e9650ecb35d9679e5b0e6e76cce531e",
-              "text": "The excursion rates shown on their individual pages apply to separate bookings. This tour uses the agreed quotation for the complete package.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word contains no note comparing separate excursion-page rates with the agreed full-package quotation. Translated the current RU commercial qualification without adding amounts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "240cf3707848ec8237d5fd13e2eeaaab8f1bf352e1bcc39a0f154ce6168554e8",
-              "text": "Arrival in São Paulo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[6]",
-                    "textSha256": "aa4323749e8e1bb32b2594e643f41b2db2d8b93ab32ac71aa28fa0d0ab75500e"
-                  },
-                  {
-                    "ref": "word/document.xml:p[7]",
-                    "textSha256": "99ea42c186726a6eeb89caa5fe4548d0e808633e7a406c8b0c4fd6f0ae18b864"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Composed the day title from its exact destination heading and opening airport-arrival sentence, retaining the arrival event and city."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a4836cca1208c95",
-              "field": "itinerary.text",
-              "sourceTextSha256": "b566c19da524b2e107a3ce579e65cb3f1972eda73ec4ae2a90c715571cfcd317",
-              "text": "Arrival at São Paulo airport. You will be met by our driver. Transfer to the hotel.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[7]",
-                    "textSha256": "99ea42c186726a6eeb89caa5fe4548d0e808633e7a406c8b0c4fd6f0ae18b864"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:376c86191b98ed7d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
-              "text": "São Paulo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[6]",
-                    "textSha256": "aa4323749e8e1bb32b2594e643f41b2db2d8b93ab32ac71aa28fa0d0ab75500e"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the exact destination name from the verified day heading, omitting the day number and surrounding whitespace."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:5546f48080aaf8f4",
-              "field": "media.alt",
-              "sourceTextSha256": "caf772b41b9cfddb48cd3e15ca429cd3f46e53d729467658035df6ad0098bcdc",
-              "text": "São Paulo at night with illuminated towers and a crescent moon, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word contains no corresponding image alt text. Translated the supplied current RU alt description without changing or inspecting the photograph."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:32:14.130Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "en:bulk:tour:tour_brazil_agribusiness_14_days:b004:821a3075:submission",
+        "blobSha": "1f96e3a5a0d41d2a6aec67d76cc6c692772f358c",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b004/en_bulk_tour_tour_brazil_agribusiness_14_days_b004_821a3075_submission.json",
+        "at": "2026-11-03T22:32:57.302Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

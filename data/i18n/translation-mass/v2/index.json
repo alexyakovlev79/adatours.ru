@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2241,
-    "leased": 26,
-    "review": 143,
+    "leased": 25,
+    "review": 144,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 0,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2241,
-      "leased": 26,
-      "review": 143,
+      "leased": 25,
+      "review": 144,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 0,
@@ -346,8 +346,8 @@
         "word_2027": {
           "held": 0,
           "queued": 67,
-          "leased": 1,
-          "review": 5,
+          "leased": 0,
+          "review": 6,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-04T00:00:49.051Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "18": {
@@ -1445,12 +1445,6 @@
       "expiresAt": "2026-11-04T00:00:36.403Z",
       "generation": 1
     },
-    "ada-en-821a3075e51e-worker": {
-      "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b004",
-      "token": "ada-en-821a3075e51e-token-20261104",
-      "expiresAt": "2026-11-04T00:00:49.051Z",
-      "generation": 1
-    },
     "ada-en-f8019ad86757-translator-20261104": {
       "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b002",
       "token": "ada-en-f8019ad86757-6c94a20bf812",
@@ -2019,7 +2013,8 @@
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_argentina_experience_6_days:b001",
-        "en:bulk:tour:tour_nicaragua_best_10_days:b002"
+        "en:bulk:tour:tour_nicaragua_best_10_days:b002",
+        "en:bulk:tour:tour_brazil_agribusiness_14_days:b004"
       ]
     },
     "ada-en-c88c62b5175a": {
@@ -2125,5 +2120,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:32:50.431Z"
+  "updatedAt": "2026-11-03T22:32:57.302Z"
 }

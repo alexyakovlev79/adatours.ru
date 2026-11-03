@@ -97,146 +97,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_gems_14d:b003",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "02b4a050901a8f83e619671458526e414bd9db8efd9eabe678845bba7b514086",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f8019ad86757-translator-20261104",
-        "token": "ada-en-f8019ad86757-6c94a20bf812",
-        "claimedAt": "2026-11-03T23:16:44.075Z",
-        "expiresAt": "2026-11-04T00:46:44.075Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-f8019ad86757-03-b003-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f8019ad86757-translator-20261104",
-        "token": "ada-en-f8019ad86757-6c94a20bf812",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b003",
-          "stableId": "tour_brazil_gems_14d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "02b4a050901a8f83e619671458526e414bd9db8efd9eabe678845bba7b514086",
-          "blocks": [
-            {
-              "blockId": "tour:notIncluded:da756b777306942e",
-              "field": "notIncluded",
-              "sourceTextSha256": "8aa20f6b3d403b060491185c5c34717a5009ff46c170cb841649ff5440474bad",
-              "text": "Additional meals and drinks.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f8019ad86757",
-                "wordAbsenceReason": "Verified the complete selected Word, including the exclusions at p219–223; it has no separate additional meals and drinks exclusion, so translated the exact current RU item."
-              }
-            },
-            {
-              "blockId": "tour:note:d96f78c9265cf8a6",
-              "field": "note",
-              "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
-              "text": "If necessary, we may replace the hotels with others of the same category.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f8019ad86757",
-                "wordAbsenceReason": "Verified the complete selected Word; p175 and p211 mention similar hotels and availability, but the specific same-category substitution condition is absent, so translated the exact RU note."
-              }
-            },
-            {
-              "blockId": "tour:note:05680faa947baa60",
-              "field": "note",
-              "sourceTextSha256": "13c996687256cf8f9c8b56f58533c646397f6b40a44244e857f789acaa4b3607",
-              "text": "The order of excursions may change, but the full tour programme will be maintained.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f8019ad86757",
-                "wordAbsenceReason": "Verified the complete selected Word; no excursion-order-change condition appears in its programme or conditions, so translated this exact RU note."
-              }
-            },
-            {
-              "blockId": "tour:note:ef83dabc89561ff4",
-              "field": "note",
-              "sourceTextSha256": "b94b115e776b14bb2160fde513dac19a6cdad1eb036aee1a81a884276440b607",
-              "text": "We are not responsible for missed hotel breakfasts when an early departure is required for a flight or excursion.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f8019ad86757",
-                "wordAbsenceReason": "Verified the complete selected Word; it has no missed-breakfast responsibility condition, so translated the exact current RU note."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
-              "field": "itinerary.title",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[37]",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:5a4836cca1208c95",
-              "field": "itinerary.text",
-              "sourceTextSha256": "1508f3091bd6fb57167dff698df2da5e5edfc0cc18ebb51548a114491e3f62dd",
-              "text": "Upon arrival in Rio de Janeiro, transfer to your hotel. Rio is green hills, blue sky, beautiful bays, islands and marvellous beaches: Brazil’s second-largest city after São Paulo and certainly one of the most beautiful in the world.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[67]",
-                    "textSha256": "97d4b3b1e17b0313ed591c2cf0c565518deb25d9b70a10fe89df0e0c80beb785"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7031d5d7774ff6ad",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[37]",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:d70715036fbaf4d9",
-              "field": "media.alt",
-              "sourceTextSha256": "d7e338ddb7f377cba65dce90b8b198aae9aed89e86d7a970ae9a73ec26c24fa3",
-              "text": "Christ the Redeemer statue above Rio de Janeiro, the lagoon and the ocean, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-f8019ad86757",
-                "wordAbsenceReason": "The complete selected Word has no matching Christ the Redeemer photograph alt caption; translated the exact current RU image description."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:18:29.801Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-f8019ad86757-03-b003-v1",
+        "blobSha": "e82bc8e8c1a7c3c5743a8f3f42486383eb2d6887",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_gems_14d_b003/ada-en-f8019ad86757-03-b003-v1.json",
+        "at": "2026-11-03T23:18:43.464Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

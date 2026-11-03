@@ -1,0 +1,130 @@
+{
+  "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b003",
+  "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ca1a7ec72f6b7462d1fc8863b24c0e7442e4507be34b197dba68d61fd688512d",
+  "sourceConflicts": [
+    {
+      "blockId": "tour:note:539b9579a15e7dce",
+      "kind": "accommodation",
+      "ru": "First 14 nights specified; final night confirmed separately.",
+      "word": "Santiago Days 12–16, 4 nights; 15 nights overall.",
+      "wordParagraphs": [
+        "word/document.xml:p202",
+        "word/document.xml:p203",
+        "word/document.xml:p23"
+      ],
+      "resolution": "Independent review required; RU-derived translation retains source."
+    },
+    {
+      "blockId": "tour:note:7f83e100723f6d51",
+      "kind": "altitude",
+      "ru": "Sol de Mañana above 4900 m",
+      "word": "Sol de Mañana about 4850 m",
+      "wordParagraphs": [
+        "word/document.xml:p90"
+      ],
+      "resolution": "Independent review required; RU-derived translation retains source."
+    }
+  ],
+  "blocks": [
+    {
+      "blockId": "tour:note:8a1504d636374cf7",
+      "field": "note",
+      "sourceTextSha256": "93d6575df95c6a1fc47c6e6eb5bd4fe9f3e482390e6209caa3a417fe4a922b51",
+      "text": "29 December – 13 January; the travel year is confirmed when you book.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word gives departure from 29 December but does not contain this complete RU date range and booking-year confirmation note."
+      }
+    },
+    {
+      "blockId": "tour:note:28c9094e5cb7b565",
+      "field": "note",
+      "sourceTextSha256": "0d62ef9f39a5a8c44188e4d5d191a02199bc91f62db06a80e712a42cef817246",
+      "text": "Programme dates: 29 December – 13 January. The departure year and final price are confirmed when you book.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word gives 29 December and final quotation caveat, but not this complete RU editorial note with year confirmation."
+      }
+    },
+    {
+      "blockId": "tour:note:539b9579a15e7dce",
+      "field": "note",
+      "sourceTextSha256": "3b8a5c8f191da8e0eb6550b644b5dcc892153f9603cfcea81ffb5947be3ee494",
+      "text": "The programme is listed as 16 days / 15 nights. Hotels and room categories are specified for the first 14 nights; accommodation for the final night in Santiago is confirmed separately.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "This RU editorial caveat is absent verbatim in Word and conflicts with its updated accommodation table. Preserve RU caveat for independent review; Word p202–203 gives Days 12–16, 4 nights in Santiago."
+      }
+    },
+    {
+      "blockId": "tour:note:6fd465d325035c12",
+      "field": "note",
+      "sourceTextSha256": "f5640241212c199d3afb32b873b4ed0330d8d8471270de8bcae923222d750f94",
+      "text": "BB means accommodation with breakfast. Lunch is explicitly described on the Torres del Paine day and at VIK winery; other meals are clarified in your quotation.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word provides BB and lunches but no equivalent complete editorial note about quotation clarification."
+      }
+    },
+    {
+      "blockId": "tour:note:a0ec32805da5c059",
+      "field": "note",
+      "sourceTextSha256": "39eb3192e9913d0d9b498abd055a342341391d4ee9ada27992ad73d7b686c046",
+      "text": "The itinerary includes flights from La Paz to Uyuni, Calama to Santiago, Santiago to Puerto Natales, Punta Arenas to Balmaceda with DAP Airlines, and Balmaceda to Santiago. Your proposal confirms whether tickets are included in the price, flight schedules, guide languages, entrance tickets and the full list of exclusions.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word describes individual flights and final quotation exclusions, but no exact equivalent of this combined RU clarification note."
+      }
+    },
+    {
+      "blockId": "tour:note:7f83e100723f6d51",
+      "field": "note",
+      "sourceTextSha256": "5ccd97612642a147000c626c7dadf7ad1a6a629e31ef13699660e2298d02f0a2",
+      "text": "La Paz and the Bolivian Altiplano are at high altitude; the journey includes the Sol de Mañana geysers at more than 4,900 m.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word lacks this exact RU altitude warning and instead gives approximately 4850 m for Sol de Mañana in p90. Preserve RU claim for independent review and flag conflict explicitly."
+      }
+    },
+    {
+      "blockId": "tour:note:367885b8759b7270",
+      "field": "note",
+      "sourceTextSha256": "0fd607230a05ead00a7a12a4b05f2b1e87dff15e1bb14489d567e383c11a212b",
+      "text": "A private boat is explicitly included for the Marble Caves. The boat arrangements for San Rafael and the group composition for the standard Torres del Paine day are confirmed when you book.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word gives the private Marble Caves boat but does not include this complete clarification of San Rafael boat and standard day participant composition."
+      }
+    },
+    {
+      "blockId": "tour:note:d0a6fb32c16682fd",
+      "field": "note",
+      "sourceTextSha256": "a422301a3e1850a3d1f594694cf3903b876569d365078f9873a12c94bf03efae",
+      "text": "During the rainy season, Uyuni’s mirror effect and access to Incahuasi depend on water levels and route conditions. Sea and lake excursions are subject to the weather.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word describes Uyuni rain and weather-dependent excursions, but lacks the complete RU caveat about Incahuasi access and route conditions."
+      }
+    }
+  ]
+}

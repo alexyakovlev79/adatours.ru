@@ -98,7 +98,98 @@
         "claimedAt": "2026-11-03T22:22:04.116Z",
         "expiresAt": "2026-11-03T23:52:04.116Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-d492-grand-b004-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-d492a933acd8-20261104",
+        "token": "ada-d492a933acd8-fixed-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "ada-d492-grand-b004-v1",
+          "result": {
+            "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b004",
+            "stableId": "tour_argentina_grand_tour_15_days_2027",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "8f999a358fd9c13d1072b65fa3c7c23d7411eafc0de5a20d2448e7669fb4706b",
+            "blocks": [
+              {
+                "blockId": "tour:note:40313515be7b6bfd",
+                "field": "note",
+                "sourceTextSha256": "17dac01c2f5ca76fdfe3adbf662e54b6144aed668623180be03d43bd1e933706",
+                "text": "The net price is per person, based on 2 travellers. A complete consolidated list of included and excluded services is not provided.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-d492a933acd8-20261104",
+                  "wordAbsenceReason": "The approved DOCX p69 states the net per-person basis for 2 travelers, but contains no standalone explanatory note about the absence of a consolidated services list. Translate the current RU note."
+                }
+              },
+              {
+                "blockId": "tour:note:02fd161bfed24055",
+                "field": "note",
+                "sourceTextSha256": "2abb0273c9d41ad67fb0ec4b50daa592e69fff409fff6ce0e5deb2e0b6a7ea5a",
+                "text": "Day 6 is headed “Cafayate — Guachipas”, while the description covers Cachi, ending in Salta.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-d492a933acd8-20261104",
+                  "wordAbsenceReason": "The approved DOCX p22 and p24 contain the inconsistent day heading and route description, but no explanatory note. Translate the current RU note without resolving the source inconsistency."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+                "field": "itinerary.title",
+                "sourceTextSha256": "117a370fac494437ac78377830449f53e765b96c09f360bca90e03fa9760fc49",
+                "text": "Arrival in Buenos Aires",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p7",
+                      "textSha256": "ee7b0b500cf49e5cf5d55b18a4d677b0f6c358324a058a54cc52ab1991bd2a2f"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Use the approved arrival sentence as a concise itinerary heading without changing the activity."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:5a4836cca1208c95",
+                "field": "itinerary.text",
+                "sourceTextSha256": "ccd457f20b8c52a3f95cc8d709e7b1d354dd4d59f00ce55d8c2b0d0bf3b9a658",
+                "text": "Arrival in Buenos Aires. Private transfer from the airport to the hotel with an English-speaking guide. Check-in at the Four Seasons Buenos Aires (City View Room), free evening.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p7",
+                      "textSha256": "ee7b0b500cf49e5cf5d55b18a4d677b0f6c358324a058a54cc52ab1991bd2a2f"
+                    }
+                  ]
+                }
+              }
+            ],
+            "sourceVerification": {
+              "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+              "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+              "modifiedTime": "2026-09-30T13:49:31.141Z",
+              "yearFolder": 2027,
+              "editionYear": 2027,
+              "verification": "Exact downloaded DOCX binary SHA256 and modifiedTime match frozen job source. All 69 OOXML paragraphs read, including hotel list and net programme price."
+            },
+            "integrationNotes": [
+              "Existing Day 6 Word heading Cafayate — Guachipas conflicts with the paragraph describing Cachi with drop-off in Salta. The current RU note is translated; no source text or route data changed."
+            ]
+          }
+        },
+        "at": "2026-11-03T22:23:08.572Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

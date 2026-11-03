@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2277,
-    "leased": 21,
+    "queued": 2276,
+    "leased": 22,
     "review": 112,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2277,
-      "leased": 21,
+      "queued": 2276,
+      "leased": 22,
       "review": 112,
       "ready": 1,
       "retryable": 0,
@@ -128,8 +128,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 75,
-          "leased": 0,
+          "queued": 74,
+          "leased": 1,
           "review": 3,
           "ready": 0,
           "retryable": 0,
@@ -160,7 +160,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:50:40.922Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1421,6 +1421,12 @@
       "token": "ada-en-35901b4e-20261104",
       "expiresAt": "2026-11-03T23:50:34.079Z",
       "generation": 1
+    },
+    "ada-en-f4e636b296c4": {
+      "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b006",
+      "token": "ada-en-f4e636b296c4-20261104",
+      "expiresAt": "2026-11-03T23:50:40.922Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -1743,7 +1749,8 @@
       "token": "ada-en-f4e636b296c4-20261104",
       "jobIds": [
         "en:bulk:tour:tour_argentina_experience_6_days:b002",
-        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b003"
+        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b003",
+        "en:bulk:tour:tour_brazil_argentina_peru_14d:b006"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_argentina_experience_6_days:b002",
@@ -1928,5 +1935,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:20:34.079Z"
+  "updatedAt": "2026-11-03T22:20:40.922Z"
 }

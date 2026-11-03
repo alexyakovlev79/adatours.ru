@@ -190,7 +190,108 @@
         "claimedAt": "2026-11-03T22:16:06.967Z",
         "expiresAt": "2026-11-03T23:46:06.967Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "en:bulk:tour:tour_argentina_experience_6_days:b001:cp4:821a3075",
+        "format": "inline-v1",
+        "ownerId": "ada-en-821a3075e51e-worker",
+        "token": "ada-en-821a3075e51e-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b001",
+          "stableId": "tour_argentina_experience_6_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "cddc382f805beee47917fd362aef0ac1f414ec42ba9f8181f551427298473478",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "d0c1ab139e708b9e907eb707f097999d4c4b0f6c2e04f1ce1ca4592efc8cc041",
+              "text": "Argentina Experience",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[1]",
+                    "textSha256": "6c95dfed18a8568190a33d932d669e386f59bd3846aa9e60dbb01ab9b3e8b36b"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "ce6a170d0bd7d46c9b4bde9ae899d9081ae61ea9ce90e28b85d92a854bd57eba",
+              "text": "Spend six days in Buenos Aires, with an evening of tango, a trip to the Paraná Delta and an introduction to gaucho traditions at Santa Susana Ranch. You will also spend a day across the Río de la Plata, exploring the historic streets of Colonia del Sacramento in Uruguay.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The verified Word document has day-by-day descriptions but no introductory lead matching this RU overview. Translated the current RU lead, preserving its route and activities."
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "db5e34e2c4d21ee7ddd7de38e9606cbf08b128b16633955e5ee25eae1acba1a3",
+              "text": "Net rate per person based on a group of 80 participants: TWIN — $2,445; SGL — $3,070. Accommodation is not included unless quoted separately.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[3]",
+                    "textSha256": "7f3410451ab335be5d7c4e2d0b48dabf71847d8b6c0e7e08c4b9006ab666ebba"
+                  },
+                  {
+                    "ref": "word/document.xml:p[4]",
+                    "textSha256": "9784a4f08ca1328cf241cf3629c7a7e33eac9844ad3b0a5fcc9cdb20c2d936b6"
+                  },
+                  {
+                    "ref": "word/document.xml:p[6]",
+                    "textSha256": "1b8955cf48d912938cb9c85e0659a889ef0bf23453dde7f17f10c52a8e2fc718"
+                  },
+                  {
+                    "ref": "word/document.xml:p[7]",
+                    "textSha256": "98571be241c22ecb15710e8f851302504e3d9b0924c40ae556d184caf8d62c14"
+                  },
+                  {
+                    "ref": "word/document.xml:p[9]",
+                    "textSha256": "2b695fafebdf2d6ee8c731777284f9bce39af05c2451da7e29043991aab085fd"
+                  },
+                  {
+                    "ref": "word/document.xml:p[10]",
+                    "textSha256": "77b2fa6e47e8b5aef94e7576c9efe64eb19f7afcf058e8d81e07f61e883cd6ca"
+                  },
+                  {
+                    "ref": "word/document.xml:p[41]",
+                    "textSha256": "2ff580301efe7aec913854f467a1e9df16451154ab596696659f34e21d24603e"
+                  }
+                ],
+                "transformation": "compose_tariff_summary",
+                "rationale": "Combined the exact net-rate table for 80 PAX with its SGL/TWIN headings and the separately quoted accommodation exclusion; no tariff values or basis changed."
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
+              "text": "Group tour",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The Word document has an 80-PAX tariff basis but no standalone tour-format label. Translated the current RU format label without adding a service claim."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:17:44.453Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

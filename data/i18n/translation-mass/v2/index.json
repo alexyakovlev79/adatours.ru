@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2313,
-    "leased": 19,
+    "queued": 2312,
+    "leased": 20,
     "review": 78,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2313,
-      "leased": 19,
+      "queued": 2312,
+      "leased": 20,
       "review": 78,
       "ready": 1,
       "retryable": 0,
@@ -408,8 +408,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 75,
-          "leased": 0,
+          "queued": 74,
+          "leased": 1,
           "review": 3,
           "ready": 0,
           "retryable": 0,
@@ -440,7 +440,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:38:49.561Z",
       "earliestRetryAt": null
     },
     "00": {
@@ -1387,6 +1387,12 @@
       "token": "tok-8076a0338bc468337a1c14a9ef98",
       "expiresAt": "2026-11-03T23:38:01.985Z",
       "generation": 1
+    },
+    "ada-en-08f6156f-e882dc059107": {
+      "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b026",
+      "token": "ada-en-token-e882dc0591074d8993f963df06219c37",
+      "expiresAt": "2026-11-03T23:38:49.561Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -1763,7 +1769,8 @@
     "ada-en-08f6156f-e882dc059107": {
       "token": "ada-en-token-e882dc0591074d8993f963df06219c37",
       "jobIds": [
-        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b010"
+        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b010",
+        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b026"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b010"
@@ -1778,5 +1785,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:08:41.027Z"
+  "updatedAt": "2026-11-03T22:08:49.561Z"
 }

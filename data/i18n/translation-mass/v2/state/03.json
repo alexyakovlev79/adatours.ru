@@ -66,146 +66,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b012",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "0e01017310c3e949700843437ad29b1898d63064ead454eb16fb1dfd059cb96f",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-04dd2e696333-20261104",
-        "token": "ada-en-04dd2e696333-a7f39d12",
-        "claimedAt": "2026-11-03T21:56:50.757Z",
-        "expiresAt": "2026-11-03T23:26:50.757Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "04dd2e-bap-b012-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-04dd2e696333-20261104",
-        "token": "ada-en-04dd2e696333-a7f39d12",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b012",
-          "stableId": "tour_brazil_argentina_peru_14d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "0e01017310c3e949700843437ad29b1898d63064ead454eb16fb1dfd059cb96f",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
-              "field": "itinerary.text",
-              "sourceTextSha256": "8d6d54ff07820de59e6acd37f79147b089fdf4561927499b1b5f3b9c91e8fadd",
-              "text": "After breakfast, transfer to Buenos Aires airport for your flight to Lima. The flight has a connection.\n\nOn arrival, meet your driver and transfer to your hotel.\n\nLima marks the transition from South America’s major cities and waterfalls to the high-altitude part of your journey through Peru.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "Word paragraph 122 covers the transfer and flight but omits the connecting-flight condition and the RU transition paragraph. Translate the complete frozen RU block to retain both details without substituting the Word free-time addition."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:fee6a8b6a89f30bf",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-              "text": "Buenos Aires",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:42",
-                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:6291b54bd9baede8",
-              "field": "itinerary.label",
-              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
-              "text": "Lima",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:121",
-                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:e178e0f6c173fade",
-              "field": "media.alt",
-              "sourceTextSha256": "480e01b82ed495acb6df74f40b2290c9e70f88fa6346f6a54177674e2ca9c5be",
-              "text": "Lima Cathedral with its two illuminated towers beneath a pink-orange evening sky, Peru",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "The Word contains no alt caption for this photograph of Lima Cathedral; translate only the exact RU visual description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:848880d708c24d1a",
-              "field": "media.hover",
-              "sourceTextSha256": "7479b5b9cb50b2e0b221c427f110620f545637513f6441c7cb31f9adbc11356b",
-              "text": "Evening sky above Lima Cathedral",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "The selected Word has no matching photo hover caption; translate the frozen RU hover text."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-              "field": "itinerary.title",
-              "sourceTextSha256": "11fe5246ca4d2152d1f35441d5a8121ba36b6d952aed0391dab112121fe5ec17",
-              "text": "Lima — the historic centre, Miraflores and the Larco Museum",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "The Word city-tour heading and paragraph do not mention the Larco Museum; this RU itinerary title has no complete Word equivalent and is translated from the current source."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-              "field": "itinerary.text",
-              "sourceTextSha256": "fdbde40422b61bcaf7703852bbb357ce25cc3e15f6f5016daa77a133b58a8e6b",
-              "text": "After breakfast, explore Lima with an English-speaking guide.\n\nYour route takes you through the historic centre. You will see the Main Square with the Cathedral, the Convent of San Francisco and buildings with carved wooden balconies.\n\nYou then continue through the residential districts. In San Isidro, you will find an olive grove, a golf course and quiet streets of low-rise buildings.\n\nIn Miraflores, you will visit the Park of Love on the cliffs above the Pacific Ocean. The park has mosaics, and its design recalls Park Güell in Barcelona. Your route then continues through the Central Park, the City Hall and Avenida Larco, with its shops and cafés.\n\nThe day also includes a visit to the Larco Museum.\n\nReturn to your hotel after the tour.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "Word paragraph 123 omits the Park of Love, Park Güell comparison, City Hall and Larco Museum details present in the frozen RU block. Translate the complete RU field and adapt guide language to English under the owner's 03.11.2026 service-language decision."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5ad1d72369931877",
-              "field": "itinerary.label",
-              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
-              "text": "Lima",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
-                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:121",
-                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:58:06.223Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "04dd2e-bap-b012-v1",
+        "blobSha": "5614f9ae63a74f10b70fab8b441091726d80545e",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_peru_14d_b012/04dd2e-bap-b012-v1.json",
+        "at": "2026-11-03T21:58:34.682Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

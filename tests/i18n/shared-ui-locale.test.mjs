@@ -17,12 +17,16 @@ test('English shared UI requires both the content switch and the dedicated stagi
 
 test('existing copy is used and unknown content keeps its Russian fallback', () => {
   assert.equal(translateUiText('Туры','en'),'Tours');
+  assert.equal(translateUiText('формат','en'),'Travel style');
+  assert.equal(translateUiText('СТРАНА','en'),'Country');
+  assert.equal(translateUiText('Формат авторского путешествия','en'),'Формат авторского путешествия');
   assert.equal(translateUiText('  Оставить заявку\n','en'),'  Send an enquiry\n');
   assert.equal(translateUiText('Содержательная программа ещё не переведена','en'),'Содержательная программа ещё не переведена');
   assert.equal(translateUiText('от непереведённого содержательного текста','en'),'от непереведённого содержательного текста');
   assert.equal(translateUiText('Маршрут путешествия','en'),'Маршрут путешествия');
   assert.equal(translateUiText('Описание путешествия','en'),'Описание путешествия');
   assert.equal(translateUiText('Туры','ru'),'Туры');
+  assert.equal(translateUiText('формат','ru'),'формат');
 });
 
 test('parameterised interface copy keeps the same counts and only translates known labels', () => {

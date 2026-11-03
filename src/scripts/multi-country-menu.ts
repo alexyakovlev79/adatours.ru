@@ -3,8 +3,11 @@
 import {
   extendMultiCountrySelection, previousMultiCountrySelection, formatMultiCountryNames,
 } from '../lib/multi-country-combinations.mjs';
+import { translateUiText } from '../lib/i18n/shared-ui-locale.mjs';
 // Called by SiteHeader after the shared header has been inserted.
 export function initializeMultiCountryMenus() {
+const locale = document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
+const t = (text: string) => translateUiText(text,locale);
 const menuInstances = [...document.querySelectorAll<HTMLElement>('[data-mc-menu]')];
 const linkSource = menuInstances.map((item) => item.querySelector<HTMLElement>('[data-mc-menu-combinations][data-mc-menu-source]'))
   .find((nav) => nav && nav.children.length > 0);
@@ -40,7 +43,7 @@ for (const menu of menuInstances) {
     const expand = expandTemplate?.content.querySelector('button')?.cloneNode(true) as HTMLButtonElement | undefined;
     if (!expand) continue;
     expand.dataset.mcMenuExpand = slugs.join('_');
-    expand.setAttribute('aria-label', 'Добавить страну к сочетанию ' + (element.querySelector('a')?.textContent?.trim() ?? ''));
+    expand.setAttribute('aria-label', t('Добавить страну к сочетанию ' + (element.querySelector('a')?.textContent?.trim() ?? '')));
     element.append(expand);
   }
   let selected: string[] = [];
@@ -105,9 +108,9 @@ for (const menu of menuInstances) {
     links.hidden = level === 0;
     back.hidden = level === 0;
     heading.hidden = level === 0;
-    heading.textContent = level === 1 ? 'Добавить вторую страну к ' + (names.get(selected[0]) ?? selected[0])
+    heading.textContent = t(level === 1 ? 'Добавить вторую страну к ' + (names.get(selected[0]) ?? selected[0])
       : level === 2 ? 'Добавить третью страну'
-      : level === 3 ? 'Добавить четвертую страну' : '';
+      : level === 3 ? 'Добавить четвертую страну' : '');
     for (const item of combinations) {
       const visible = item.slugs.length === level + 1
         && selected.every((slug) => item.slugs.includes(slug));
@@ -120,7 +123,7 @@ for (const menu of menuInstances) {
       const anchor = item.element.querySelector('a');
       if (anchor) anchor.textContent = label;
       const expand = item.element.querySelector<HTMLButtonElement>('[data-mc-menu-expand]');
-      if (expand) expand.setAttribute('aria-label', 'Добавить страну к сочетанию ' + label);
+      if (expand) expand.setAttribute('aria-label', t('Добавить страну к сочетанию ' + label));
     }
     const scroller = menu.closest<HTMLElement>('.mobile-menu__panel, .desktop-nav__submenu');
     if (scroller) scroller.scrollTop = 0;
@@ -202,3 +205,4 @@ for (const menu of menuInstances) {
   display();
 }
 }
+

@@ -11,6 +11,7 @@ export function sharedUiLocale(env = globalThis.process?.env ?? {}) {
 
 // The existing UI dictionary owns all shared catalogue and interface copy.
 const normalize = value => value.replace(/\s+/gu, ' ').trim();
+const literalKey = value => normalize(value).toLocaleLowerCase('ru');
 const literals = new Map();
 const patterns = [];
 const escape = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -19,7 +20,7 @@ for (const row of Object.values(catalog.messages)) {
   if (!names.length) {
     // Named uiText() callers decide between e.g. navigation Back/Previous.
     // The exact shared renderer keeps the first already-approved equivalent.
-    if (!literals.has(normalize(row.ru))) literals.set(normalize(row.ru), row.en);
+    if (!literals.has(literalKey(row.ru))) literals.set(literalKey(row.ru), row.en);
     continue;
   }
   let offset = 0, expression = '';
@@ -39,7 +40,7 @@ for (const row of Object.values(catalog.messages)) {
 export function translateUiText(text, locale = sharedUiLocale()) {
   if (locale !== 'en' || typeof text !== 'string' || !text.trim()) return text;
   const core = normalize(text);
-  let translated = literals.get(core);
+  let translated = literals.get(literalKey(core));
   if (translated === undefined) {
     for (const item of patterns) {
       const match = core.match(item.pattern);

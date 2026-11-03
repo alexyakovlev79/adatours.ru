@@ -1,12 +1,15 @@
 import { selectHeroVideo } from '../lib/hero-video-selection.mjs';
 import { isWithinImageWindow } from './lazy-images.mjs';
 import { isPlayableVisible, selectCoverVideo, TouchCoverQueue, usesTouchPlayback } from '../lib/cover-playback-policy.mjs';
+import { translateUiText } from '../lib/i18n/shared-ui-locale.mjs';
 
 const managers = new WeakMap();
 
 export function initializeVideoCovers(view = window) {
   if (managers.has(view)) return managers.get(view);
   const doc = view.document;
+  const locale = doc.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
+  const t = text => translateUiText(text,locale);
   const entries = new Set();
   const queue = new TouchCoverQueue();
   let frame;
@@ -195,7 +198,7 @@ export function initializeVideoCovers(view = window) {
 
     updateButton() {
       if (!this.button) return;
-      this.button.setAttribute('aria-label', this.video.paused ? 'Воспроизвести видео' : 'Приостановить видео');
+      this.button.setAttribute('aria-label', t(this.video.paused ? 'Воспроизвести видео' : 'Приостановить видео'));
       this.button.firstElementChild.textContent = this.video.paused ? '▶' : 'Ⅱ';
     }
 
@@ -204,3 +207,4 @@ export function initializeVideoCovers(view = window) {
   if (!view.customElements.get('hero-background-video')) view.customElements.define('hero-background-video', HeroBackgroundVideo);
   return manager;
 }
+

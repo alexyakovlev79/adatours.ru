@@ -1,6 +1,9 @@
 ---
 import { withBase } from '../../lib/paths';
 import { formatMultiCountryNames } from '../../lib/multi-country-combinations.mjs';
+import { getCollection } from 'astro:content';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
+import { uiText } from '../../lib/i18n/messages.mjs';
 
 interface MenuCountry { slug: string; name: string; }
 interface MenuCombination { slugs: string[]; path: string; count: number; }
@@ -9,7 +12,12 @@ interface Props {
   combinations: MenuCombination[];
   serverLinks?: boolean;
 }
-const { countries, combinations, serverLinks = true } = Astro.props;
+const { countries: sourceCountries, combinations, serverLinks = true } = Astro.props;
+const uiLocale = sharedUiLocale();
+const translatedNames = uiLocale === 'en'
+  ? new Map((await getCollection('countries',({data}) => data.locale === 'ru')).map(({data}) => [data.slug,data.name]))
+  : new Map<string,string>();
+const countries = sourceCountries.map(country => ({...country,name:translatedNames.get(country.slug) ?? country.name}));
 const bySlug = new Map(countries.map((country) => [country.slug, country]));
 const existing = new Set(combinations.map((row) => row.slugs.join('_')));
 const items = (serverLinks ? combinations : []).map((row) => ({
@@ -22,8 +30,8 @@ const items = (serverLinks ? combinations : []).map((row) => ({
 ---
 
 <div class="mc-menu" data-mc-menu data-pagefind-ignore="all">
-  <a class="mc-menu__all" href={withBase('/multi-country/')}>Все Multi-country туры</a>
-  <button class="mc-menu__back" type="button" data-mc-menu-back hidden>‹ Назад</button>
+  <a class="mc-menu__all" href={withBase('/multi-country/')}>{uiText(uiLocale,'nav.allMultiCountryTours')}</a>
+  <button class="mc-menu__back" type="button" data-mc-menu-back hidden>‹ {uiText(uiLocale,'nav.back')}</button>
   <p class="mc-menu__heading" data-mc-menu-heading hidden></p>
 
   <div class="mc-menu__countries" data-mc-menu-countries>
@@ -33,7 +41,7 @@ const items = (serverLinks ? combinations : []).map((row) => ({
         type="button"
         data-mc-menu-country={country.slug}
         data-mc-menu-country-name={country.name}
-        aria-label={'Сочетания с ' + country.name}
+        aria-label={uiText(uiLocale,'multi.combinationsWith',{country:country.name})}
       >
         <span class="mc-menu__country-name">
           {country.name === 'Французская Гвиана'
@@ -46,10 +54,10 @@ const items = (serverLinks ? combinations : []).map((row) => ({
   </div>
 
   <template data-mc-menu-expand-template>
-    <button type="button" class="mc-menu__expand" aria-label="Добавить страну">›</button>
+    <button type="button" class="mc-menu__expand" aria-label={uiText(uiLocale,'multi.addCountry')}>›</button>
   </template>
 
-  <nav class="mc-menu__combinations" data-mc-menu-combinations aria-label="Сочетания стран" data-mc-menu-source={serverLinks ? 'true' : undefined}>
+  <nav class="mc-menu__combinations" data-mc-menu-combinations aria-label={uiText(uiLocale,'multi.combinations')} data-mc-menu-source={serverLinks ? 'true' : undefined}>
     {items.map((row) => (
       <div
         class="mcc"
@@ -299,3 +307,4 @@ const items = (serverLinks ? combinations : []).map((row) => ({
     .mc-menu__back { font-size: .92rem; }
   }
 </style>
+

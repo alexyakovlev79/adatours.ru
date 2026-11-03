@@ -367,7 +367,7 @@
         "expiresAt": "2026-11-03T23:49:49.261Z"
       },
       "checkpoint": {
-        "id": "ada-en-e1125a853692-jewish-b002-v1-cp4",
+        "id": "ada-en-e1125a853692-jewish-b002-v1-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-e1125a853692",
         "token": "ada-en-e1125a853692-20261104",
@@ -455,10 +455,86 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the included entrance-ticket label from the Word itinerary services line for this included-services item."
               }
+            },
+            {
+              "blockId": "tour:notIncluded:932e49e702c2e19f",
+              "field": "notIncluded",
+              "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+              "text": "Additional excursions",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p200",
+                    "textSha256": "822af8bd325e6ca76ee0b830291c9a7dc67cf2fd4a5409af4113015b895785c0"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker for the dedicated structured list field."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:0875d2861da95965",
+              "field": "notIncluded",
+              "sourceTextSha256": "b9238261b7f2255894f3f4e0f90ec930c237e907f19d3eb7defea6b987f9f8bb",
+              "text": "Food and beverages",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p201",
+                    "textSha256": "f93728724f28355a671d13400cb7902e21f21846657ed2622129aa13f4e6174b"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker for the dedicated structured list field."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:a262b2c81923f509",
+              "field": "notIncluded",
+              "sourceTextSha256": "0431a0cc3979ad406879b0c7f306c0bb7852e7e2fd6c4910dd2c911997ac5b8d",
+              "text": "International flights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p198",
+                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker for the dedicated structured list field."
+              }
+            },
+            {
+              "blockId": "tour:note:f765edd4fc2f462e",
+              "field": "note",
+              "sourceTextSha256": "0d28e6e7b30a674ecab2996056ff6ef5aa8a1a96de705f5e8f59bc8bc57a4ccd",
+              "text": "Domestic flight Rio de Janeiro – Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p199",
+                    "textSha256": "592c5792ce6c0592250ec6658c738d856e20834268a9f80eeb1c1ccb556e6ab7"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker for the dedicated structured list field."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:20:50.070Z"
+        "at": "2026-11-03T22:21:02.632Z"
       },
       "submission": null,
       "review": null,

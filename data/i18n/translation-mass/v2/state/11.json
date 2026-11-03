@@ -28,7 +28,93 @@
         "claimedAt": "2026-11-03T22:27:58.338Z",
         "expiresAt": "2026-11-03T23:57:58.338Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f8019ad86757-b017-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-translator-20261104",
+        "token": "ada-en-f8019ad86757-6c94a20bf812",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b017",
+          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "77ac8d401c23e1a12dc468fcc5b520211ee37870abaa314954e2e4d790a6bd59",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:30064cb3b987f626",
+              "field": "itinerary.label",
+              "sourceTextSha256": "4fc4889c16d31b3fe3fc244b67706c6ffb177a14074d8ea6d7f099fbf5fe8d7d",
+              "text": "Grey Lake",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[125]",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the standalone place label from the verified Day 9 passage without changing its identity."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1c99dc7d8417bda9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31be506d83b68bcdd8a07f3599fc8d68712cc64048aea9c66f2a6cc40600fe43",
+              "text": "Río Serrano",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[125]",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the standalone place label from the verified Day 9 passage without changing its identity."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4dbe06b857866bfe",
+              "field": "itinerary.label",
+              "sourceTextSha256": "98bc3b0a0b38a0abd060c3deb05b42cb03a3a3b07265672a78752dcc3b19b88d",
+              "text": "Lake Pehoé",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "Verified Word p125 names the Pehoé viewpoint but does not supply this independent lake label; translated the exact RU place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:785de4bf68f5477c",
+              "field": "itinerary.label",
+              "sourceTextSha256": "aaba38a08249a9eb5d3e57b8b509206b7f755800430345a882849a23743e29d4",
+              "text": "Salto Grande waterfall",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[125]",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the standalone place label from the verified Day 9 passage without changing its identity."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:29:43.958Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

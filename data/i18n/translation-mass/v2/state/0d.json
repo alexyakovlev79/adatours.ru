@@ -662,7 +662,93 @@
         "claimedAt": "2026-11-03T22:33:04.352Z",
         "expiresAt": "2026-11-04T00:03:04.352Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "en:bulk:tour:tour_panama_mice_7_days:b007:cp4:821a3075",
+        "format": "inline-v1",
+        "ownerId": "ada-en-821a3075e51e-worker",
+        "token": "ada-en-821a3075e51e-token-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_panama_mice_7_days:b007",
+          "stableId": "tour_panama_mice_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "a3f6e969f4d08808a81a19b23c05383111db0ac9864d893f1b2e7990a28a9e5f",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:a12c549451603421",
+              "field": "itinerary.label",
+              "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
+              "text": "Panama City",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[3]",
+                    "textSha256": "f52912b132d3659fef717d407a825b8713d5ab24f9b76b38bbb8b77924149ecc"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact city name from the verified Word programme heading, retaining its standard capitalisation."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:2b5d156c5f8f1289",
+              "field": "media.alt",
+              "sourceTextSha256": "a31bcc59f0981f7460d8df7f8f45fd4e96cb9cd132bff8b644a848f2279721ba",
+              "text": "Cruise ship in the Panama Canal by the locks",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The verified Word has no corresponding image alt text. Translated the supplied RU alt description without changing the photograph or adding visual details."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:ee1ddcd1d238b00b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2cbc7bf160d9608848ac5e2cbad9eeb431196614fc9fcc6f1fa5760fa4ff3d02",
+              "text": "Panama Canal",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[48]",
+                    "textSha256": "b3a785d7effd374a325acde4994dda1126d9060b137188f64070bd552027a187"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact canal name from the verified Word service heading, omitting the adjacent visitor-centre label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:12e877aa8d9cedc1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c10e9a180ee768228fad951499ef6bbd626fbc8c0a6115feb7836f7c9f01c0fd",
+              "text": "Miraflores Visitor Center",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[48]",
+                    "textSha256": "b3a785d7effd374a325acde4994dda1126d9060b137188f64070bd552027a187"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact visitor-centre name from the verified Word service heading, omitting the adjacent canal label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:02:46.617Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

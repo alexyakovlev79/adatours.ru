@@ -40,183 +40,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_best_14_days:b013",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "14ee45677182bbdf9443c4fa0e11623518616162506d6ecae6eefa60af5e2431",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "claimedAt": "2026-11-03T21:22:01.806Z",
-        "expiresAt": "2026-11-03T22:52:01.806Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-ddc12b513de4-tour_argentina_best_14_days-b013-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "generation": 1,
-        "payload": {
-          "submissionId": "sub-ddc12b513de4-tour_argentina_best_14_days-b013",
-          "result": {
-            "jobId": "en:bulk:tour:tour_argentina_best_14_days:b013",
-            "stableId": "tour_argentina_best_14_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "14ee45677182bbdf9443c4fa0e11623518616162506d6ecae6eefa60af5e2431",
-            "blocks": [
-              {
-                "blockId": "tour:media_alt:cdd7885999531681",
-                "field": "media.alt",
-                "sourceTextSha256": "71e9af34f36b5e2cc5905e1ed4770906453f6d73b075b23a4ea677cdad506639",
-                "text": "Square with stone buildings and a clock tower in Bariloche, Argentina",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "The Word brochure has no corresponding image alt or hover description; translated frozen RU media caption."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:b091e405c6dfa044",
-                "field": "media.hover",
-                "sourceTextSha256": "3c5789ba55b6ee814c90f565c4bd421ce3b6ff6361428ecdd5c5dd2aa0d29dae",
-                "text": "Bariloche: stone buildings and a clock tower beside the square",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "The Word brochure has no corresponding image alt or hover description; translated frozen RU media caption."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-                "field": "itinerary.title",
-                "sourceTextSha256": "c62a23f1ebcf9912e237c6c97c48b773789b11b88a07f82e6ce753f48b2369aa",
-                "text": "Bariloche: Small Circuit, Victoria Island and Arrayanes",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p99",
-                      "textSha256": "b16e5e2127881f390b5c4ba0a6e0bd996c06731fc6fb0f41e1fe22a008aba6cb"
-                    },
-                    {
-                      "ref": "word/document.xml:p104",
-                      "textSha256": "ac1876d826c6ebb39d103dea563fed8ea5053d4b42c6582b5f1e803bc8ed01b9"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the named place or composed the day heading from exact corresponding Word passages."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-                "field": "itinerary.text",
-                "sourceTextSha256": "43a7d07c6af436c3ac612dad473adb0b3c4c91907785fd7da2d7a0dbdcb2e975",
-                "text": "Breakfast at the hotel. Two group excursions with an English-speaking guide are included in the day’s programme. The Small Circuit follows an approximately 65 km route by car around Bariloche, stopping at Playa Bonita with views of Huemul Island and ascending Cerro Campanario, 1,050 m.\n\nFrom the summit, you can see Lakes Moreno and Nahuel Huapi, El Trébol Lagoon, the San Pedro and Llao Llao peninsulas, Victoria Island and the peaks of Otto, López, Goye and Cerro Catedral. Then take a catamaran to Victoria Island and the Arrayanes myrtle forest. Both excursions are listed for the same day; the order is confirmed when booking. Overnight at Rochester Bariloche 4*.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "Word paragraphs 103–105 cover both excursions, but omit the RU booking-order condition and name Design Suites Bariloche in paragraph 146 instead of Rochester; translated frozen RU and flagged hotel discrepancy for master."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:84002093dc56d574",
-                "field": "itinerary.label",
-                "sourceTextSha256": "7cc6a35b73304ba63e4543dce1f9d0a412e692af23e94e33354dca577daf970d",
-                "text": "Bariloche",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p101",
-                      "textSha256": "2f002781e3adeef826724fc2a3d6585ad46f23ac3c327c9bf823d423747ab59b"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the named place or composed the day heading from exact corresponding Word passages."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:f80f4fc188381769",
-                "field": "itinerary.label",
-                "sourceTextSha256": "ae0a59415c2bd38b279282ad402994435c2c914a15c5d9f08b1e7481bd5b9037",
-                "text": "Playa Bonita",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p103",
-                      "textSha256": "c1c49c81b16860ad511a319436d6570d3fb4605835114cb31c337f04876c6431"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the named place or composed the day heading from exact corresponding Word passages."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:24ee48c08b3573d2",
-                "field": "itinerary.label",
-                "sourceTextSha256": "d7ce90a610b95bb02a6cdb74aca3f7c0d244dd149aaf0b14c9f5d714575d702a",
-                "text": "Cerro Campanario",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p103",
-                      "textSha256": "c1c49c81b16860ad511a319436d6570d3fb4605835114cb31c337f04876c6431"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the named place or composed the day heading from exact corresponding Word passages."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:227f1246de3cf14c",
-                "field": "itinerary.label",
-                "sourceTextSha256": "6a61271581d0da8d1eaf717f7c2ec552b80e4afc2904d7f32fdc328620e624f4",
-                "text": "Victoria Island",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p104",
-                      "textSha256": "ac1876d826c6ebb39d103dea563fed8ea5053d4b42c6582b5f1e803bc8ed01b9"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the named place or composed the day heading from exact corresponding Word passages."
-                }
-              }
-            ],
-            "unresolvedConflicts": [
-              {
-                "kind": "hotel_difference",
-                "field": "itinerary.text",
-                "ru": "Rochester Bariloche 4*",
-                "word": "Design Suites Bariloche",
-                "wordParagraph": "word/document.xml:p146",
-                "action": "Preserved frozen RU hotel in translated summary under no-hotel-change worker boundary; master decision required."
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:22:36.059Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ddc12b513de4-tour_argentina_best_14_days-b013",
+        "blobSha": "a3d9ba314fe7cb2bf2d932a439c636808fb7fc2a",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_best_14_days_b013/sub-ddc12b513de4-tour_argentina_best_14_days-b013.json",
+        "at": "2026-11-03T21:22:40.266Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -97,164 +97,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b40585e99027e1f032a71f93be8c06565d7adc4e448269697be55a98ef994b8e",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "claimedAt": "2026-11-03T23:01:29.498Z",
-        "expiresAt": "2026-11-04T00:31:29.498Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "submit-98cdd875f4b9-4-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b008",
-          "stableId": "tour_brazil_agribusiness_14_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "b40585e99027e1f032a71f93be8c06565d7adc4e448269697be55a98ef994b8e",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:cccffb02fe94f93e",
-              "field": "media.alt",
-              "sourceTextSha256": "79b2c2ca1e2a9c06459cf8bef8c617f23292c6622f8df331f4534dbf8e0f66f4",
-              "text": "A river bend amid tropical rainforest, Brazilian Amazon",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word has no matching image alternative text or hover caption; translate the current RU media description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:d3ab7342d0554f32",
-              "field": "media.hover",
-              "sourceTextSha256": "a5bf1ca11e8b11d69358989fc098a741ed9ba0ba574cb398563428c4ba19b1b4",
-              "text": "The Brazilian Amazon: a river meandering through dense tropical rainforest",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word has no matching image alternative text or hover caption; translate the current RU media description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
-              "field": "itinerary.title",
-              "sourceTextSha256": "853eb4ad39b7cb9e586f38bcada64ea1519837ae914ac93bf1e88a424577920b",
-              "text": "The Amazon: rivers, forest and pink dolphins",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p40",
-                    "textSha256": "7d15d43b27dbd7834dbb085135f676177f36dbfdd3752e4cfd06b4e8dc36a13d"
-                  },
-                  {
-                    "ref": "word/document.xml:p41",
-                    "textSha256": "d2bb193b34b46ff8d30634cb213511a18eb0b35449705ebc54174235f83ef218"
-                  },
-                  {
-                    "ref": "word/document.xml:p48",
-                    "textSha256": "5ba7e40e1b65c16a285e438289d365cadb5883560d344e4b74cc4f9e10e734c3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
-              "field": "itinerary.text",
-              "sourceTextSha256": "3ba6422319d74a70f06c2f50674b7331fe46eec61dad241952b517a7972e242e",
-              "text": "After breakfast, take a boat trip along the Amazon River, with piranha fishing, a visit to Caboclo residents and a jungle walk to learn about the flora, fauna and survival skills. A programme with pink river dolphins is also scheduled for this day. Excursions in Manaus are shared tours with an English-speaking guide; the form of contact with animals is confirmed when booking.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word covers this itinerary in paragraphs40,41,48 and guide in101, but lacks the RU booking qualification on animal contact; translate current RU preserving this limitation."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:f8ac6aaa6f521cfe",
-              "field": "itinerary.label",
-              "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
-              "text": "Manaus and the Amazon",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p34",
-                    "textSha256": "e890546d03db07088116d8ebc2f42b26f059c9be125244759fcda3ef1252783d"
-                  },
-                  {
-                    "ref": "word/document.xml:p40",
-                    "textSha256": "7d15d43b27dbd7834dbb085135f676177f36dbfdd3752e4cfd06b4e8dc36a13d"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:e61ba7ca823e0c08",
-              "field": "media.alt",
-              "sourceTextSha256": "48c9ff63991939aaecd060f5d5313b2f05c3aa1cb57914a39f6f462db5c6ee32",
-              "text": "A winding river amid dense Amazon rainforest, Brazil, seen from above",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word has no matching image alternative text or hover caption; translate the current RU media description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:448164e0f0b6c175",
-              "field": "media.hover",
-              "sourceTextSha256": "3ee80b1d2a96871765c14259c645f7f301b5e9294038bf6ca699a9be7788fa66",
-              "text": "The Brazilian Amazon: a river bend amid tropical rainforest",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word has no matching image alternative text or hover caption; translate the current RU media description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
-              "field": "itinerary.title",
-              "sourceTextSha256": "4faedeba3de8ff755231aaa6770498fc374aed14fe4f16dcd4dd389a5d197646",
-              "text": "Manaus – Rio de Janeiro",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p50",
-                    "textSha256": "7ea0dacedff8b82f3c4285c850540f1cf0d91086aaae16d696a4b1679d320303"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:02:11.873Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-98cdd875f4b9-4",
+        "blobSha": "04f60cffac024cc85b5f69c061bf51fa5e803458",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b008/submit-98cdd875f4b9-4.json",
+        "at": "2026-11-03T23:06:29.911Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

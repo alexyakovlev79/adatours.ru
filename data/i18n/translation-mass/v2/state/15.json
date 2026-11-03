@@ -545,7 +545,7 @@
         "expiresAt": "2026-11-03T23:57:05.920Z"
       },
       "checkpoint": {
-        "id": "submit-98cdd875f4b9-2-cp4",
+        "id": "submit-98cdd875f4b9-2-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-98cdd875f4b9",
         "token": "token-98cdd875f4b9-20261104",
@@ -627,10 +627,70 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
               }
+            },
+            {
+              "blockId": "tour:media_alt:66520facba160f20",
+              "field": "media.alt",
+              "sourceTextSha256": "c5624840c12ce774d0e5423f39a771a078ba9c68196bc91ea6dd6654cdd13268",
+              "text": "Sugar Loaf and Guanabara Bay seen from Corcovado, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word has no matching image alternative text; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:6dacb831ca2dae64",
+              "field": "media.hover",
+              "sourceTextSha256": "5d5c33e65c45f9f27a627059d52b622ea93ba2fd31cfdb2754f677f17938de15",
+              "text": "Guanabara: city neighbourhoods and yachts beside green hills",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word has no matching hover caption; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:8f009ba6943f38ac",
+              "field": "highlight.title",
+              "sourceTextSha256": "a11d40e6c8d199a95bfc2a2cff6eaf09b28eff99edbf9ba435b97657f99a0103",
+              "text": "Jewish heritage",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p39",
+                    "textSha256": "7eec80dcb8eee38bee73f1ba1a84121e3b2485f1b77bdb822176d98614663ba5"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:highlight_text:15dd34a7086cbd72",
+              "field": "highlight.text",
+              "sourceTextSha256": "4f0f6821bd950d1af17f3cd0cea5e2360c4f0d13f076c2981b72836364b4bb92",
+              "text": "Synagogues on a route through Rio’s historic centre, alongside churches and colonial architecture.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p77",
+                    "textSha256": "f12b1d9b7d26eb1d543ae302cada86219f8825d0aa2ae9d9fc88d789e51a4cf9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:29:52.357Z"
+        "at": "2026-11-03T22:29:55.981Z"
       },
       "submission": null,
       "review": null,

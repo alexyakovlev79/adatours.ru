@@ -108,7 +108,7 @@
         "expiresAt": "2026-11-03T22:53:26.610Z"
       },
       "checkpoint": {
-        "id": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010-cp4",
+        "id": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-ddc12b513de4",
         "token": "tok-ddc12b513de4-20261104",
@@ -188,6 +188,66 @@
                   "transformation": "contextual_label",
                   "rationale": "Extracted the route or composed the heading using the exact corresponding Word passages."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:cb706626bb0814b2",
+                "field": "itinerary.label",
+                "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
+                "text": "Tijuca National Park",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word paragraph 66 names Tijuca Rainforest but has no equivalent national-park label; translated the exact frozen RU place label."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:de9c412b439489f5",
+                "field": "media.alt",
+                "sourceTextSha256": "06161bc81b2716a0436a69d60151c0687175cf4a0339d0a0b14e1462ddc35d22",
+                "text": "View of Rio de Janeiro from above",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word contains no corresponding image hover or alt caption; translated the frozen RU media description."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:f76823f601bc2496",
+                "field": "itinerary.title",
+                "sourceTextSha256": "49c22ce9ed4f6cb824d329dbd4ecd0c59a6d8ecf2ce3332111f90ac54e04c326",
+                "text": "Rio de Janeiro — Foz do Iguaçu",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p74",
+                      "textSha256": "fcfa04cbd546368bd2960a5a7902f7872882d33550a50eb17a0ba822bdd96c77"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted the route or composed the heading using the exact corresponding Word passages."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+                "field": "itinerary.text",
+                "sourceTextSha256": "3ab12d672b716bd8642475ae4093cd05245a00b870e5126baa80c2f2993cf942",
+                "text": "Transfer to the airport for your flight to Foz do Iguaçu. Upon arrival, transfer to your hotel.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p75",
+                      "textSha256": "2b5e2d26a3fc565d1720277d9479d711fc6cba1f4cc8b3a1f64beafaac02ee2e"
+                    }
+                  ]
+                }
               }
             ],
             "sourceNotes": [
@@ -199,7 +259,7 @@
             ]
           }
         },
-        "at": "2026-11-03T21:24:30.244Z"
+        "at": "2026-11-03T21:24:34.551Z"
       },
       "submission": null,
       "review": null,

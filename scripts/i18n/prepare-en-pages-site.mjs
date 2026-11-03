@@ -27,7 +27,7 @@ for(const folder of ['_astro','brand','pagefind']){
 }
 for(const folder of ['phone-flags','data'])if(fs.existsSync(read(folder)))
  fs.cpSync(read(folder),path.join(output,folder),{recursive:true});
-for(const file of ['search-geo-places.json'])if(fs.existsSync(read(file)))
+for(const file of ['search-geo-places.json',...(sharedContent?['form-config.js']:[])])if(fs.existsSync(read(file)))
  fs.copyFileSync(read(file),path.join(output,file));
 const ruFallback=stageRussianFallback({dist,output,sharedContent,receipt});
 if(receipt)fs.writeFileSync(path.join(output,'translation-receipt.json'),JSON.stringify(receipt,null,2)+'\n');
@@ -65,5 +65,5 @@ const bytes=fs.readdirSync(output,{recursive:true,withFileTypes:true})
 if(bytes>950_000_000)fail('Staging artifact exceeds conservative 950 MB budget: '+bytes);
 console.log(JSON.stringify({status:'ready_for_dedicated_github_pages',htmlPages:siteHtml.length,
  enPages:ruFallback.englishPages,canonicalFullSite:true,sharedContent,translationCounts:receipt?.counts,ruFallback,rootRedirect:true,bytes,output,
- sourceFiles:'single Ada Tours repo',liveForms:false}));
+ sourceFiles:'single Ada Tours repo',liveForms:sharedContent}));
 

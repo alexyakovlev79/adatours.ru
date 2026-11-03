@@ -174,7 +174,7 @@
         "expiresAt": "2026-11-03T23:51:50.428Z"
       },
       "checkpoint": {
-        "id": "cp-daf0a8173bbc-01-4",
+        "id": "cp-daf0a8173bbc-01-8",
         "format": "inline-v1",
         "ownerId": "ada-en-daf0a8173bbc-20261104",
         "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
@@ -249,10 +249,63 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:a82e03a0a82de559",
+              "field": "itinerary.label",
+              "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
+              "text": "Tijuca National Park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "Word p80 names the Tijuca Forest, but the exact National Park place label is absent; translate the current RU label without changing the linked entity."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:97d2ed06fe1199ec",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "395faf2a93b7d3f034a6d1bdb63244d35b532c9676858630c6ac78e228dfab94",
+              "text": "Day 3 · Breakfast, then a 4-hour excursion to Corcovado: an open train climbs through the Tijuca Forest to the statue of Christ the Redeemer (38 m), at about 710 m, inaugurated in 1931, with a breathtaking panorama of the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the Maracanã Stadium and Sugar Loaf. We recommend watching the sunset from the rocks of Arpoador, and seafood at the Marius restaurant in the evening (around USD 130 per person).",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p80",
+                    "textSha256": "ffe644114b7bc0fc8797d9c5bbb041352b1c927afd2aa65ff1b8dcc05e1192bc"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:18bc442fcfcb68ca",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "160e177afe2ef41adae0abc4dd091e5ecbcecdfecd3e2afa242b852d5e94f2f7",
+              "text": "The Corcovado excursion is included in the tour price. Duration: 4 hours, with an English-speaking guide.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "Word p81 confirms the Corcovado tour is included and p80 confirms four hours; no exact combined service note exists. The RU guide-language wording is adapted under editorial 4.1 (03 November 2026)."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_title:d78b11aa8f04da6a",
+              "field": "contentBlock.title",
+              "sourceTextSha256": "ad43cacdf5c7f353b413160a930b3ad32a6dfe7069b4c4730b470671bae8c70c",
+              "text": "Optional excursions in Rio",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "Word p180 gives a general optional-excursions heading covering several cities; it has no Rio-only heading corresponding to this RU content-block title."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:23:32.914Z"
+        "at": "2026-11-03T22:24:23.035Z"
       },
       "submission": null,
       "review": null,

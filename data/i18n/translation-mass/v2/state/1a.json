@@ -397,172 +397,22 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "87f17385164a3fa842a4efff508fdab13007a29e4af4163060d817f2c53f72fe",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-9457ab67-20261104",
-        "token": "ada-en-token-9457ab67-20261104",
-        "claimedAt": "2026-11-03T23:10:10.150Z",
-        "expiresAt": "2026-11-04T00:40:10.150Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-9457ab67-n5-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-9457ab67-20261104",
-        "token": "ada-en-token-9457ab67-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b005",
-          "stableId": "tour_colombia_explorer_9_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "87f17385164a3fa842a4efff508fdab13007a29e4af4163060d817f2c53f72fe",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-              "field": "itinerary.title",
-              "sourceTextSha256": "b0d8a1e40aebd1d16252b4686e4ce6c72378eb49ba51fca54af3ea3aa5ca2d94",
-              "text": "Lake Guatavita, Guatavita town and Zipaquirá",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p69",
-                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
-                  },
-                  {
-                    "ref": "word/document.xml#p70",
-                    "textSha256": "3ce0a02e57075e79d5a268ef922c7da96710b1034a415d5ac14d14c71bd89d70"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Composed the heading from the exact Word Day2 destinations, retaining the distinction between the lake and town."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:569e72e117968fcc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "a882b3cc523c1cf538c095caed00180102f60ea050c59da0fc9c00f56c0f6cf3",
-              "text": "Breakfast at the hotel. Today, embark on a full-day excursion to discover two of the most remarkable destinations near Bogotá: Lake Guatavita and the Salt Cathedral of Zipaquirá. Begin at Lake Guatavita, surrounded by the peaceful landscapes of the Andean highlands and closely associated with the legendary story of El Dorado. Enjoy a scenic walk through the reserve before visiting the picturesque town of Guatavita. Free time for lunch at a local restaurant (lunch not included).\n\nIn the afternoon, continue to Zipaquirá and explore the extraordinary Salt Cathedral, carved approximately 180 metres underground within a former salt mine. Discover its chapels, galleries and monumental chambers before returning to Bogotá.\n\nOvernight at the hotel.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-9457ab67-20261104",
-                "wordAbsenceReason": "Preserved the English wording of Word paragraphs69–70 while removing its Day2 prefix for the current RU itinerary position. The RU explicitly adds the hotel overnight, which has no standalone exact equivalent in those paragraphs; translated that addition."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:d9c35578f29b8796",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
-              "text": "Bogotá",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p66",
-                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:883cfdc63622d98d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c30b0bf8d13409d044851be2a29a0c3abcd9caac81ac4600045f57f4a3424e88",
-              "text": "Lake Guatavita",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p69",
-                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the exact lake name from the verified Word excursion paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:413d3f130786a6da",
-              "field": "itinerary.label",
-              "sourceTextSha256": "92a0e3b8e4cb6b7bbcbc37bc5072cad2414e729ac62652abeea09edcbf0ad82e",
-              "text": "Guatavita",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p69",
-                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the town name from the verified Word phrase 'town of Guatavita', distinguishing it from the lake."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:584532fbdadfef24",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e1f321c4e2a3350b055cb01775ad7309ca31bcc7f91f76d9289f4ef0e1b5144e",
-              "text": "Zipaquirá",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p69",
-                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
-                  },
-                  {
-                    "ref": "word/document.xml#p70",
-                    "textSha256": "3ce0a02e57075e79d5a268ef922c7da96710b1034a415d5ac14d14c71bd89d70"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the exact destination name from the verified Word excursion paragraphs."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:9953d43e00c40fc6",
-              "field": "media.alt",
-              "sourceTextSha256": "2af9441ca991ab22b1569025bee451da250c4f039aac1ebbb9f965241ef987ff",
-              "text": "White houses with wooden balconies on a cobbled street in Guatavita, Colombia",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-9457ab67-20261104",
-                "wordAbsenceReason": "No image-specific alt text for this street occurs in the verified Word. Translated the current RU alt text; paragraph69 covers only the town visit."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:b46038c26e558c83",
-              "field": "media.hover",
-              "sourceTextSha256": "a384c0a8e17c2ae713c7637869d241c9e96d6ab374978423e29a557ce4ba6eda",
-              "text": "Guatavita: tiled roofs and flowers against green hills",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-9457ab67-20261104",
-                "wordAbsenceReason": "The verified Word has no corresponding image-hover caption. Translated the current RU caption without adding details."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:11:02.788Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-9457ab67-n5-v1",
+        "blobSha": "1ed4ebe2b67112a174525a2f15d469b7ebca6c16",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_explorer_9_days_b005/ada-en-9457ab67-n5-v1.json",
+        "at": "2026-11-03T23:11:07.069Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

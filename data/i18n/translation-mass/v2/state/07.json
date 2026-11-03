@@ -53,187 +53,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "3940070d69e31fba3dea7970c0aca8dbce1840b82a079ead8c845b4f58da5d26",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-cd92-cd348eff6f82",
-        "token": "tok-8076a0338bc468337a1c14a9ef98",
-        "claimedAt": "2026-11-03T22:08:01.985Z",
-        "expiresAt": "2026-11-03T23:38:01.985Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-cd92-b002-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-cd92-cd348eff6f82",
-        "token": "tok-8076a0338bc468337a1c14a9ef98",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b002",
-          "stableId": "tour_argentina_grand_tour_15_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "3940070d69e31fba3dea7970c0aca8dbce1840b82a079ead8c845b4f58da5d26",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:a8a39aba8e52fd93",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2feb5bdcb6d69b3f2785a9969628b40b01f132ed97f660fbc96e113e1931b3ca",
-              "text": "Cafayate",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p19",
-                    "textSha256": "eb0bb48731fc65501bcafb722d5c996ee307285354e787d25be96cff2e5a4e11"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:eb9b35d8b806d899",
-              "field": "itinerary.label",
-              "sourceTextSha256": "a04108b56cdf7e3dc5f6efbbb3879b171de69df7611a0360814836f1457d274d",
-              "text": "Cachi",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p24",
-                    "textSha256": "d8862f7717df9f79d2b4eaa5371fdc93206eb6ffa6be103ff80a589e3d42d252"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:af78a1ba9e8b85ee",
-              "field": "itinerary.label",
-              "sourceTextSha256": "907cdc161784f6d12e06ce0449b8d4ee2e00626bcb48c6c3198ca943e01496b6",
-              "text": "Quebrada de Humahuaca",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p28",
-                    "textSha256": "8e26c2eb26093962a944d12243ec30fd42d0786c6e2aadd21b86540e5153d672"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:09d86887ef4455fd",
-              "field": "itinerary.label",
-              "sourceTextSha256": "8695e7516d1267fc65f5d69baa480ddcbb6b6a9ca26cdecdeae75d5e7a420564",
-              "text": "Salinas Grandes",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p34",
-                    "textSha256": "885894a3885ddd007c7ea85188f1ef613e70ef8caf9072ccedff6025a09fe394"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:d528ae90267ce1e5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
-              "text": "Mendoza",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p38",
-                    "textSha256": "6e356c4673ea3c470cf0fe65dfbdf636b278356dcdd5c41388785cb09a3dcd23"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7b6749d81052c0a9",
-              "field": "itinerary.label",
-              "sourceTextSha256": "412b92adedc04f9f26e6090823c2e022dd31a3a191e8db0df696a9f38dc87ac7",
-              "text": "Luján de Cuyo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p40",
-                    "textSha256": "fb9384a85ce8dfc9e96cd6f53172fc60979fbcda04aadf933c443556f985142e"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:e4ebd93db8bd5d35",
-              "field": "itinerary.label",
-              "sourceTextSha256": "66ff5f76d30b94c5fe1fed0365194a8914c248587c2177de32a965bf0cda6ac9",
-              "text": "Uco Valley",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p43",
-                    "textSha256": "a0a5db5d2b5928e8a688928c52a8bc3a2d03a3a960f5554e815b06d9c7cd7d89"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:9b3f87db07393c2f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
-              "text": "El Calafate",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p45",
-                    "textSha256": "6c779242f5117a6e16a501282e835ecab047606115add4d6157e6327af967dad"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the corresponding place name from the verified Word paragraph for the route label, without changing its spelling or adding itinerary facts."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:09:44.570Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-en-bulk-tour-tour_argentina_grand_tour_15_days_2027-b002-cd92-v1",
+        "blobSha": "340a844ed6c78fa50f0b995c674b016591a98c46",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_grand_tour_15_days_2027_b002/sub-en-bulk-tour-tour_argentina_grand_tour_15_days_2027-b002-cd92-v1.json",
+        "at": "2026-11-03T22:14:10.731Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

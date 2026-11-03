@@ -154,199 +154,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b002",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "104cd9cd1ddfe55e6c12bfde0c555c52d87c7452004ca3ce21ec2b5a81035062",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-e9fc69e2bbe6",
-        "token": "token-e9fc69e2bbe6-20261104",
-        "claimedAt": "2026-11-03T22:17:39.231Z",
-        "expiresAt": "2026-11-03T23:47:39.231Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ck-e9fc-foz-b002-08",
-        "format": "inline-v1",
-        "ownerId": "ada-en-e9fc69e2bbe6",
-        "token": "token-e9fc69e2bbe6-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b002",
-          "stableId": "tour_brazil_foz_iguazu_three_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "104cd9cd1ddfe55e6c12bfde0c555c52d87c7452004ca3ce21ec2b5a81035062",
-          "blocks": [
-            {
-              "blockId": "tour:included:86df57f37fa78ea7",
-              "field": "included",
-              "sourceTextSha256": "78466e2f0eb2823b1f822c5967cea28cf60d8b8aca5859462c59fb51f9570402",
-              "text": "Tickets for all the tours",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p135",
-                    "textSha256": "c42c1fd84f924c63181d993a58be8fa1fb55acc53238bee799ef15545898533a"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list dash and spacing because this field is already rendered as a list item."
-              }
-            },
-            {
-              "blockId": "tour:included:a820e474af363ac9",
-              "field": "included",
-              "sourceTextSha256": "3fe358dc63dea24ba2b6ef90305dc9be4423ecd064bd0debfda5274795923a09",
-              "text": "Transfers",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p136",
-                    "textSha256": "5eef61e1fdfb43abc44847f9cecd6e8151cf13be73e33d7c6224840ce755ff6f"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list dash and spacing because this field is already rendered as a list item."
-              }
-            },
-            {
-              "blockId": "tour:included:0a31caf0da6381e3",
-              "field": "included",
-              "sourceTextSha256": "fe94e20aa53440546be7a699d0fbb10f6c6f7f7c827dd0302c03dbde41bc2f90",
-              "text": "2 nights at Vivaz Cataratas (4★), Luxury room, or a similar hotel.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p22",
-                    "textSha256": "365244819b53a7c189461788e17d8689b0353a5a5ca45c43ba4d159af4263afa"
-                  },
-                  {
-                    "ref": "word/document.xml#p94",
-                    "textSha256": "2a44d79d67418fb2360ee338b8601f9d2348aae77bd5373d810430b21b5b5e5a"
-                  },
-                  {
-                    "ref": "word/document.xml#p95",
-                    "textSha256": "b3a681f8c879e2577433fb8f58fd1e36c9704612fe9b5e26df7528fef57241bd"
-                  },
-                  {
-                    "ref": "word/document.xml#p97",
-                    "textSha256": "a2652caa19c67f066f32a59eda9316ef584774354ff3dd7eea59c62fd4a223d8"
-                  }
-                ],
-                "transformation": "compose_tariff_summary",
-                "rationale": "Combine the exact verified accommodation-table conditions and the similar-hotel clause into the existing accommodation inclusion field, without changing the hotel, room or number of nights."
-              }
-            },
-            {
-              "blockId": "tour:included:a624d3585233a933",
-              "field": "included",
-              "sourceTextSha256": "348dc08026e8047ed3144b3b36e9c0184d308dbb32ffb89509e59826f17edce9",
-              "text": "Breakfast at the hotel",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p138",
-                    "textSha256": "de4eaf81f923c0ba515759dbf6ef2e1138ba5c7a41a710c75fa0474017c69a8a"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list dash and spacing because this field is already rendered as a list item."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:85e42307b61ca9d2",
-              "field": "notIncluded",
-              "sourceTextSha256": "236047bf5a1673051fe1fd8eaf58445cd44c624b58f3e99bd0fe6ed34fbafdee",
-              "text": "International flights",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p141",
-                    "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list dash and spacing because this field is already rendered as a list item."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:5f7004d708c653a3",
-              "field": "notIncluded",
-              "sourceTextSha256": "4a7615b623ba4fe58abfbc8aa0d2a17e4435d13a213159c9a0032c2c782119e9",
-              "text": "Tips",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p142",
-                    "textSha256": "24794f5344f2549c0d4ed6f854a52adb1d37bc862de582ed39226849a44b2d3c"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list dash and spacing because this field is already rendered as a list item."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:ffb7360d4975d6b8",
-              "field": "notIncluded",
-              "sourceTextSha256": "402e56ba7da9c1bf2abadd53240c16c7d82f0c81b7a1ff277e6d6c5cf35ed4d3",
-              "text": "Meals not mentioned",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p143",
-                    "textSha256": "5428c4c6fafa86d8d669eedb05398d27bd52041fd32f4bbf155eb178e2224884"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list dash and spacing because this field is already rendered as a list item."
-              }
-            },
-            {
-              "blockId": "tour:notIncluded:e306ce6ca55803d7",
-              "field": "notIncluded",
-              "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
-              "text": "Personal expenses",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p144",
-                    "textSha256": "8da9892be938cd3d10008fa5af97d18cc1f20a7cbe943f9cfd3d5df7372a2972"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Remove only the Word list dash and spacing because this field is already rendered as a list item."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:19:09.604Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-e9fc-foz-b002-003",
+        "blobSha": "b81da25fef8558243e756ef36dc1adcc36cb52b1",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_foz_iguazu_three_days_b002/sub-e9fc-foz-b002-003.json",
+        "at": "2026-11-03T22:25:22.034Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

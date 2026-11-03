@@ -50,7 +50,96 @@
         "claimedAt": "2026-11-03T21:22:01.806Z",
         "expiresAt": "2026-11-03T22:52:01.806Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ddc12b513de4-tour_argentina_best_14_days-b013-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ddc12b513de4",
+        "token": "tok-ddc12b513de4-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ddc12b513de4-tour_argentina_best_14_days-b013",
+          "result": {
+            "jobId": "en:bulk:tour:tour_argentina_best_14_days:b013",
+            "stableId": "tour_argentina_best_14_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "14ee45677182bbdf9443c4fa0e11623518616162506d6ecae6eefa60af5e2431",
+            "blocks": [
+              {
+                "blockId": "tour:media_alt:cdd7885999531681",
+                "field": "media.alt",
+                "sourceTextSha256": "71e9af34f36b5e2cc5905e1ed4770906453f6d73b075b23a4ea677cdad506639",
+                "text": "Square with stone buildings and a clock tower in Bariloche, Argentina",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "The Word brochure has no corresponding image alt or hover description; translated frozen RU media caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:b091e405c6dfa044",
+                "field": "media.hover",
+                "sourceTextSha256": "3c5789ba55b6ee814c90f565c4bd421ce3b6ff6361428ecdd5c5dd2aa0d29dae",
+                "text": "Bariloche: stone buildings and a clock tower beside the square",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "The Word brochure has no corresponding image alt or hover description; translated frozen RU media caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+                "field": "itinerary.title",
+                "sourceTextSha256": "c62a23f1ebcf9912e237c6c97c48b773789b11b88a07f82e6ce753f48b2369aa",
+                "text": "Bariloche: Small Circuit, Victoria Island and Arrayanes",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p99",
+                      "textSha256": "b16e5e2127881f390b5c4ba0a6e0bd996c06731fc6fb0f41e1fe22a008aba6cb"
+                    },
+                    {
+                      "ref": "word/document.xml:p104",
+                      "textSha256": "ac1876d826c6ebb39d103dea563fed8ea5053d4b42c6582b5f1e803bc8ed01b9"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted the named place or composed the day heading from exact corresponding Word passages."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+                "field": "itinerary.text",
+                "sourceTextSha256": "43a7d07c6af436c3ac612dad473adb0b3c4c91907785fd7da2d7a0dbdcb2e975",
+                "text": "Breakfast at the hotel. Two group excursions with an English-speaking guide are included in the day’s programme. The Small Circuit follows an approximately 65 km route by car around Bariloche, stopping at Playa Bonita with views of Huemul Island and ascending Cerro Campanario, 1,050 m.\n\nFrom the summit, you can see Lakes Moreno and Nahuel Huapi, El Trébol Lagoon, the San Pedro and Llao Llao peninsulas, Victoria Island and the peaks of Otto, López, Goye and Cerro Catedral. Then take a catamaran to Victoria Island and the Arrayanes myrtle forest. Both excursions are listed for the same day; the order is confirmed when booking. Overnight at Rochester Bariloche 4*.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word paragraphs 103–105 cover both excursions, but omit the RU booking-order condition and name Design Suites Bariloche in paragraph 146 instead of Rochester; translated frozen RU and flagged hotel discrepancy for master."
+                }
+              }
+            ],
+            "unresolvedConflicts": [
+              {
+                "kind": "hotel_difference",
+                "field": "itinerary.text",
+                "ru": "Rochester Bariloche 4*",
+                "word": "Design Suites Bariloche",
+                "wordParagraph": "word/document.xml:p146",
+                "action": "Preserved frozen RU hotel in translated summary under no-hotel-change worker boundary; master decision required."
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T21:22:32.217Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

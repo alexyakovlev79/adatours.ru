@@ -85,7 +85,96 @@
         "claimedAt": "2026-11-03T22:17:01.968Z",
         "expiresAt": "2026-11-03T23:47:01.968Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f4e636b296c4-002-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f4e636b296c4",
+        "token": "ada-en-f4e636b296c4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b003",
+          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "ca1a7ec72f6b7462d1fc8863b24c0e7442e4507be34b197dba68d61fd688512d",
+          "sourceConflicts": [
+            {
+              "blockId": "tour:note:539b9579a15e7dce",
+              "kind": "accommodation",
+              "ru": "First 14 nights specified; final night confirmed separately.",
+              "word": "Santiago Days 12–16, 4 nights; 15 nights overall.",
+              "wordParagraphs": [
+                "word/document.xml:p202",
+                "word/document.xml:p203",
+                "word/document.xml:p23"
+              ],
+              "resolution": "Independent review required; RU-derived translation retains source."
+            },
+            {
+              "blockId": "tour:note:7f83e100723f6d51",
+              "kind": "altitude",
+              "ru": "Sol de Mañana above 4900 m",
+              "word": "Sol de Mañana about 4850 m",
+              "wordParagraphs": [
+                "word/document.xml:p90"
+              ],
+              "resolution": "Independent review required; RU-derived translation retains source."
+            }
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:note:8a1504d636374cf7",
+              "field": "note",
+              "sourceTextSha256": "93d6575df95c6a1fc47c6e6eb5bd4fe9f3e482390e6209caa3a417fe4a922b51",
+              "text": "29 December – 13 January; the travel year is confirmed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word gives departure from 29 December but does not contain this complete RU date range and booking-year confirmation note."
+              }
+            },
+            {
+              "blockId": "tour:note:28c9094e5cb7b565",
+              "field": "note",
+              "sourceTextSha256": "0d62ef9f39a5a8c44188e4d5d191a02199bc91f62db06a80e712a42cef817246",
+              "text": "Programme dates: 29 December – 13 January. The departure year and final price are confirmed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word gives 29 December and final quotation caveat, but not this complete RU editorial note with year confirmation."
+              }
+            },
+            {
+              "blockId": "tour:note:539b9579a15e7dce",
+              "field": "note",
+              "sourceTextSha256": "3b8a5c8f191da8e0eb6550b644b5dcc892153f9603cfcea81ffb5947be3ee494",
+              "text": "The programme is listed as 16 days / 15 nights. Hotels and room categories are specified for the first 14 nights; accommodation for the final night in Santiago is confirmed separately.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "This RU editorial caveat is absent verbatim in Word and conflicts with its updated accommodation table. Preserve RU caveat for independent review; Word p202–203 gives Days 12–16, 4 nights in Santiago."
+              }
+            },
+            {
+              "blockId": "tour:note:6fd465d325035c12",
+              "field": "note",
+              "sourceTextSha256": "f5640241212c199d3afb32b873b4ed0330d8d8471270de8bcae923222d750f94",
+              "text": "BB means accommodation with breakfast. Lunch is explicitly described on the Torres del Paine day and at VIK winery; other meals are clarified in your quotation.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word provides BB and lunches but no equivalent complete editorial note about quotation clarification."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:18:33.386Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

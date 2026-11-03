@@ -537,7 +537,7 @@
         "expiresAt": "2026-11-04T00:54:53.310Z"
       },
       "checkpoint": {
-        "id": "submit-98cdd875f4b9-10-cp4",
+        "id": "submit-98cdd875f4b9-10-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-98cdd875f4b9",
         "token": "token-98cdd875f4b9-20261104",
@@ -612,10 +612,82 @@
                 "transformation": "contextual_label",
                 "rationale": "Combine the exact Word day-one place heading, arrival and Rafain evening passages into the corresponding concise itinerary title."
               }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a4836cca1208c95",
+              "field": "itinerary.text",
+              "sourceTextSha256": "769f0a03c45d7ff9a5a25839724f78be4805ca1179e8ceda0cc80fefd29b2f97",
+              "text": "Arrival in Iguazu. You are met by a driver with a sign with your names.  Transfer to the hotel.\n\nThe waterfalls of Foz de Iguazu are 275 huge water streams falling from a terrible height. The name of the waterfalls in translation from the language of the Guarani Indians means \"big water\". Iguazu Falls are located on the Iguazu River, on the border of Brazil with Argentina. It is a magnificent, unique sight created by nature. Beautiful landscapes and waterfalls tumbling from a height of 72 m into the gorge called the \"Devil's Throat\" open up in front of you. Numerous paths and passages created by human hands are amazing, allowing you to observe this natural phenomenon from a very close distance and even stand at the \"Devil's Throat\", while billions of splashes of water fall on you. The roar of waterfalls can be heard for several kilometers. From specially equipped platforms, you can watch the mesmerizing waterfalls from both the Brazilian and Argentine sides.\n\nAt night we invite you to the great Rafain show and dinner\n\nRafain Grill Place is a huge restaurant with 1200 seats with air conditioning and parking. The restaurant's menu is very varied, and you can try a variety of meat dishes made from fresh beef and pork. The buffet is presented in abundance with vegetables, fruits and a delicious dessert. Dinner is accompanied by a show of Latin American artists who present both folk chants and modern dances in joyful and happy atmosphere",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p5",
+                    "textSha256": "2337fd7b3d87a54fd3689173c3dc9789a64728aff6e589ae2438f6c7c6de757c"
+                  },
+                  {
+                    "ref": "word/document.xml:p6",
+                    "textSha256": "dd780765bdd82ab3524ed88e6ea8096a3553c7c6b253dc22f0b5915acf154497"
+                  },
+                  {
+                    "ref": "word/document.xml:p8",
+                    "textSha256": "977b8b9578ae67079f335508cfcde06dfb735098d4ccbb1762d98c41c2e0d52d"
+                  },
+                  {
+                    "ref": "word/document.xml:p9",
+                    "textSha256": "8340644b79d48eb7d37286b1fe7912c084fc206bc811ca128dbdf6c53736c7ce"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e56b9cf4f52f98df",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz de Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p4",
+                    "textSha256": "0dd9e392d4803bc64b2da12071a85bb422c29feb2f4e736ce679e36bf2d4bb1f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word day-one place name without the day number as the itinerary place label."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:f7765e14593bcfec",
+              "field": "media.alt",
+              "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+              "text": "Iguazu Falls and a rainbow over the river, surrounded by tropical forest, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The selected Word contains no corresponding image-specific alternative text; translate the existing Russian media description without adding visual details."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:22c90bcd27b33f87",
+              "field": "media.hover",
+              "sourceTextSha256": "f5f9676ddcc3f56387b72434eedfc7a4f0c0940b56cd05ca37f330b911770578",
+              "text": "Iguazu in Brazil: cascading waterfalls, a rainbow and green riverbanks",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The selected Word contains no corresponding image-specific hover caption; translate the existing Russian media description without adding visual details."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:25:50.684Z"
+        "at": "2026-11-03T23:25:54.308Z"
       },
       "submission": null,
       "review": null,

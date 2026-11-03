@@ -189,7 +189,7 @@
         "expiresAt": "2026-11-04T00:31:34.792Z"
       },
       "checkpoint": {
-        "id": "ada_en_87f8c5a90488-s004-c004",
+        "id": "ada_en_87f8c5a90488-s004-c008",
         "format": "inline-v1",
         "ownerId": "ada-en-f0410042e63344c3",
         "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
@@ -269,10 +269,70 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:notIncluded:e306ce6ca55803d7",
+              "field": "notIncluded",
+              "sourceTextSha256": "543fa97c12ddfbaa36803a26f7e5c462396e8b9f20f747f38fb8a110779e4095",
+              "text": "Personal expenses",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p109",
+                    "textSha256": "9f268d269c0181f715666d973721c6ff38de3c837b992bafb4123b201b7cabfa"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:435d25d43f113199",
+              "field": "notIncluded",
+              "sourceTextSha256": "8c506e688384643e8ee9d58e9c1aaedc8bec23df4b06819f2a7fd4b1538b5648",
+              "text": "Private transfers to or from the Amazon lodge for arrivals after 16:00 or departures before 14:30.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p36",
+                    "textSha256": "69008d620cbd82b3828ed892a369b7a81ec0257fa0f0f893dd39d83c1b326c50"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Converts the exact Word arrival/departure restriction and explicitly excluded private transfer into a standalone exclusion label."
+              }
+            },
+            {
+              "blockId": "tour:note:63bc4b33001363af",
+              "field": "note",
+              "sourceTextSha256": "1ff0e7cb2562e9f4ffce42270572c8ec3754f5b5f272f572510895e0b3c580ff",
+              "text": "The event in Ribeirão Preto requires separate confirmation. IFAMA 2027 will take place from 20 to 25 June in Lima, Peru; participation in IFAMA 2027 in Brazil is not included in the price.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The exact selected DOCX has an older IFAMA description in paragraphs 23–30 and contains no current RU corrective note about IFAMA 2027 in Lima or the separate confirmation of the Ribeirão Preto event."
+              }
+            },
+            {
+              "blockId": "tour:note:0c6b22a3b02a3bcc",
+              "field": "note",
+              "sourceTextSha256": "05834842684500275e5032f1e883e8b0f5e1abd8942e3d0dd935e32fe0f7cfc2",
+              "text": "Exact travel dates, hotels and room categories are agreed before booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The verified selected DOCX contains the sample itinerary but no separate note matching the current RU requirement to agree exact dates, hotels and room categories before booking."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:02:09.590Z"
+        "at": "2026-11-03T23:02:23.761Z"
       },
       "submission": null,
       "review": null,

@@ -51,7 +51,7 @@
         "expiresAt": "2026-11-03T23:30:23.241Z"
       },
       "checkpoint": {
-        "id": "04dd2e-best-b012-4",
+        "id": "04dd2e-best-b012-8",
         "format": "inline-v1",
         "ownerId": "ada-en-04dd2e696333-20261104",
         "token": "ada-en-04dd2e696333-a7f39d12",
@@ -130,10 +130,75 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "7fb1107917adbff48b7e6f887451fb7d2f6a09d7810b307a02ccbcedaf55262c",
+              "text": "Ushuaia → Bariloche",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:102",
+                    "textSha256": "3c1a321cbdebc9f44779c973c1a65e52e1122b83dbe9d5db431d026f59f92ccf"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the itinerary route title from the explicit Ushuaia-to-Bariloche flight in the exact Word day paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "field": "itinerary.text",
+              "sourceTextSha256": "9ffd859882a303221f77c358d7a987f3c6b3d55239a0be3092e8580e1dd11a99",
+              "text": "Breakfast at the hotel. Transfer to the airport for your flight to Bariloche. On arrival, transfer to the 4★ Rochester Bariloche hotel. The flight is charged separately.\n\nBariloche stands on the shores of Lake Nahuel Huapi, among the forests and mountains of the Patagonian Andes. The centre has shopping streets, cafés, restaurants and the cathedral, built in 1946. This is your first of two nights in Bariloche.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word paragraph 102 omits Rochester Bariloche, the breakfast and explicit first-of-two-nights statement; its hotel table names a different hotel. The worker must retain hotel identity, so this complete block is translated from frozen RU with its separate-flight condition."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5e25ce154d68bca0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+              "text": "Ushuaia",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:90",
+                    "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:84f98c1c69fa9c63",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7cc6a35b73304ba63e4543dce1f9d0a412e692af23e94e33354dca577daf970d",
+              "text": "Bariloche",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:101",
+                    "textSha256": "2f002781e3adeef826724fc2a3d6585ad46f23ac3c327c9bf823d423747ab59b"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:00:58.054Z"
+        "at": "2026-11-03T22:01:06.857Z"
       },
       "submission": null,
       "review": null,

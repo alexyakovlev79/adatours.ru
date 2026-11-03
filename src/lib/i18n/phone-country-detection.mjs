@@ -1,9 +1,10 @@
-/** Resolve only a valid ISO-2 country code against the shared telephone list.
- * Never retain the caller's IP from the GeoIP response.
+/** Resolve a valid ISO-2 code from supported visitor-side GeoIP responses.
+ * Do not store or use the IP, city, timezone, ASN or other response details.
  */
 export function findCountryForGeoIp(payload, countries) {
-  if (!payload || typeof payload.country !== 'string' ||
-      !/^[A-Za-z]{2}$/.test(payload.country) || !Array.isArray(countries)) return null;
-  const iso2 = payload.country.toLowerCase();
-  return countries.find(country => country.iso2 === iso2) ?? null;
+  if (!payload || payload.success === false || payload.error ||
+      !Array.isArray(countries)) return null;
+  const code = payload.country_code ?? payload.countryCode ?? payload.country;
+  if (typeof code !== 'string' || !/^[A-Za-z]{2}$/.test(code)) return null;
+  return countries.find(country => country.iso2 === code.toLowerCase()) ?? null;
 }

@@ -211,7 +211,7 @@
         "expiresAt": "2026-11-04T00:40:45.037Z"
       },
       "checkpoint": {
-        "id": "ada_en_87f8c5a90488-s007-c004",
+        "id": "ada_en_87f8c5a90488-s007-c008",
         "format": "inline-v1",
         "ownerId": "ada-en-f0410042e63344c3",
         "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
@@ -307,10 +307,76 @@
                 "transformation": "strip_list_marker",
                 "rationale": "Removes only the Word bullet marker for the structured service field."
               }
+            },
+            {
+              "blockId": "tour:included:9d24068c553be8a8",
+              "field": "included",
+              "sourceTextSha256": "263db099ba78f1b9c59de9d7fa3bdc7e706624e594facbf8f17015c2d7a6c9d0",
+              "text": "Transfer on arrival in Rio with an English-speaking guide.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "Word paragraph 67 confirms the Rio arrival transfer but does not specify a guide on this transfer; the precise RU service field supplies that detail, with guide language adapted to English under the owner's 03 November 2026 instruction."
+              }
+            },
+            {
+              "blockId": "tour:included:8a3625b509b7225e",
+              "field": "included",
+              "sourceTextSha256": "68def1fa0c7502f43e14777062db95326678c230b7d315888bd1ea05d9986a04",
+              "text": "Entrance tickets.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The verified Word describes visits to individual sights but contains no standalone general entrance-tickets inclusion matching this exact current RU field."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:932e49e702c2e19f",
+              "field": "notIncluded",
+              "sourceTextSha256": "782a0e5fa45126fa0d9df6c8e7eb4ec4c7e1ddf9a91ae3f0810fbebbd8fb9e7b",
+              "text": "Optional tours",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p222",
+                    "textSha256": "c0d2eea779a57140dc38bf1ac96277ad88ef386777dcb0e18c1894342e3cd27b"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Removes only the Word bullet marker for the structured service field."
+              }
+            },
+            {
+              "blockId": "tour:notIncluded:1237926c81793e74",
+              "field": "notIncluded",
+              "sourceTextSha256": "260952b22585ad0ecd87bd9105b0456ad7acccab5029bfc7964ac3fcfab4c5e8",
+              "text": "Domestic flights Belo Horizonte – Salvador – Foz do Iguaçu.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p115",
+                    "textSha256": "737683fc74ef9b54dfec791a322ac2984234360e2daa48417989562f4775c0c8"
+                  },
+                  {
+                    "ref": "word/document.xml:p141",
+                    "textSha256": "885cb9ce4069dee1256b419930a7140badd52bea66943dfa306e73ef506fa0e9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combines the two explicitly excluded flight legs from the Word day-by-day programme into the existing flight exclusion field."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:11:45.782Z"
+        "at": "2026-11-03T23:12:05.095Z"
       },
       "submission": null,
       "review": null,

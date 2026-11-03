@@ -555,7 +555,90 @@
         "claimedAt": "2026-11-03T22:13:02.903Z",
         "expiresAt": "2026-11-03T23:43:02.903Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-8fc95d0a-002-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-8fc95d0a-20261104",
+        "token": "ada8fc95d0ae0c7-20261104-fixed",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b006",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "5bc888dc0f2e0bbd17342fe94a5c698205fd249c5d02e37003347f1d0449249b",
+          "blocks": [
+            {
+              "text": "After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where you are welcomed and taken to your hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p92",
+                    "text": "Day 4 · After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where you are welcomed and taken to your hotel. The falls, whose name means “big water” in Guarani, are formed by the Iguazu River and consist of some 275 separate falls, surrounded by the rainforest of Iguazu National Park, home to about 2,000 plant species and 400 bird species, including parrots and toucans. The highest, the Devil’s Throat, plunges some 80 metres.",
+                    "textSha256": "37649bdcd9f75ce522dc5ca0a31ad987d898e67098c4b28190a99bde820e898b"
+                  }
+                ]
+              },
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "0c1672cbb346ea6a5658a40ad9e584839331bd3d9e7c03f1f8a05d5afe0fc30c"
+            },
+            {
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p37",
+                    "text": "Rio de Janeiro",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              },
+              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032"
+            },
+            {
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p144",
+                    "text": "Foz do Iguaçu",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              },
+              "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507"
+            },
+            {
+              "text": "Christ the Redeemer above the green hills and bays of Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-8fc95d0a-20261104",
+                "wordAbsenceReason": "The selected Word contains no image-specific alt text for this RU media field. Translate the current RU alt text without changing the photograph."
+              },
+              "blockId": "tour:media_alt:20c55e4255a9751f",
+              "field": "media.alt",
+              "sourceTextSha256": "a58bf70ef06ce07fa9fead9c5eb7182694524b5ecaf0232ceca0e6c33dcad3b0"
+            }
+          ]
+        },
+        "at": "2026-11-03T22:13:58.201Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

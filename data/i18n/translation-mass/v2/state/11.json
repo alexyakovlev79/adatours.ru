@@ -75,192 +75,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b001",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "10158725d3e009d1bc068d25456053f24e1d2dfb317bd2bb56b7126910ebb530",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-f0410042e63344c3",
-        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
-        "claimedAt": "2026-11-03T23:04:07.157Z",
-        "expiresAt": "2026-11-04T00:34:07.157Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada_en_87f8c5a90488-s006-c008",
-        "format": "inline-v1",
-        "ownerId": "ada-en-f0410042e63344c3",
-        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b001",
-          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "10158725d3e009d1bc068d25456053f24e1d2dfb317bd2bb56b7126910ebb530",
-          "blocks": [
-            {
-              "blockId": "tour:title:aaf2320646108059",
-              "field": "title",
-              "sourceTextSha256": "b94235323dd0fcc11f3ca7a53ef4f7aed52ddc1c0e79aab98db04c0b37caf1e9",
-              "text": "Sun, Tango & Wine",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p3",
-                    "textSha256": "dc5a32e7bcfada1cc74b8cf870daafdef5f2ba17f50c243e191a81dbaab0faeb"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:lead:e3456bc1f4d270f4",
-              "field": "lead",
-              "sourceTextSha256": "1035021852679e131435417183c9fbf57c3f68adefb547f0eb0fe059da16e9ea",
-              "text": "Ten days across three countries: the Carnival’s grand finale in Rio de Janeiro, the Parade of Champions, with Sugar Loaf and Christ the Redeemer; the Iguazu Falls from both the Brazilian and Argentine sides; Buenos Aires and its tango; and Santiago de Chile at the foot of the Andes, with an optional visit to the wineries of the Maipo Valley.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p18",
-                    "textSha256": "0d2ac254b8f562adf32d909c6c6a7bdd70b4e68574729fcff26dc1f47aa356d5"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
-              "field": "priceNote",
-              "sourceTextSha256": "4b9106bde5c09c5ecca558b4f03fabcfc9abf7285904d43d6218f8e1347a51e0",
-              "text": "From USD 5,208 per person sharing a triple room in 3-star hotels. All nine SGL/DBL/TPL rates for 3-, 4- and 5-star hotels are listed below. The final price is confirmed at the time of booking.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada_en_87f8c5a90488",
-                "wordAbsenceReason": "Word paragraphs 145–166 confirm all nine tariffs and USD 5,208 for triple occupancy in 3-star hotels, but the complete current RU priceNote also includes a final-price-at-booking condition absent from the Word price summary; this full field is translated from RU without changing any amount."
-              }
-            },
-            {
-              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
-              "field": "formatLabel",
-              "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
-              "text": "Group tour",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p145",
-                    "textSha256": "ee74053323bff31a52c98db3ae13d5dbc0b33bb4765d0d73df53a960df924593"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Uses the exact Word tariff heading's group-tour designation as the structured tour format label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8a2490c091d79367",
-              "field": "itinerary.label",
-              "sourceTextSha256": "9fddfe1f38041e81a74ddf02fbabff0fb437f0044d468ffd437b9ee950df859b",
-              "text": "Rio de Janeiro, 3 nights",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p124",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  },
-                  {
-                    "ref": "word/document.xml:p125",
-                    "textSha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:c8ffbd6fc38d01b3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e571875ec720a5ede2d4198bb255ac215b15ee7139d2cb36d3e04b709cb2383d",
-              "text": "Foz do Iguaçu, 2 nights",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p129",
-                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
-                  },
-                  {
-                    "ref": "word/document.xml:p130",
-                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8711a253902b9244",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c37dce1a30398fdcd836fc1554d450d0496e66b89d03885de1a27a2e194a9d8b",
-              "text": "Buenos Aires, 2 nights",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p134",
-                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
-                  },
-                  {
-                    "ref": "word/document.xml:p135",
-                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:eba01720f03465d0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "0df9632536cc03cad907920e98f41950bdd370cd8f5c2d55f3e2efdc388ceff1",
-              "text": "Santiago de Chile, 2 nights",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p139",
-                    "textSha256": "dd7eb51aa4c73f56ff1aa55502a7e37594af8eb4cabdfc06db3f71675e8b96bd"
-                  },
-                  {
-                    "ref": "word/document.xml:p140",
-                    "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Combines the destination name and its exact night count from the same Word accommodation-table row."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:05:29.967Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada_en_87f8c5a90488-s006",
+        "blobSha": "31a3a06ace267ad3e24f84035a8b82b87b6a8f3e",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b001/ada_en_87f8c5a90488-s006.json",
+        "at": "2026-11-03T23:10:36.900Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -77,7 +77,7 @@
         "expiresAt": "2026-11-03T23:46:55.731Z"
       },
       "checkpoint": {
-        "id": "ada-d492-best-b008-cp4",
+        "id": "ada-d492-best-b008-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-d492a933acd8-20261104",
         "token": "ada-d492a933acd8-fixed-20261104",
@@ -169,6 +169,83 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:media_alt:f74259791c56e971",
+                "field": "media.alt",
+                "sourceTextSha256": "8cf485cfb11ccc2d1d0349c501f2831fbbcc36c980379e0d53a58217e9b6694b",
+                "text": "Patagonia near El Calafate",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-d492a933acd8-20261104",
+                  "wordAbsenceReason": "No matching image alt text in the confirmed Word document; translate the current RU caption as provided."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+                "field": "itinerary.title",
+                "sourceTextSha256": "d0f524fa0463e237e2239f45bcb69dae563dbd298a4ee8145fda57d48c2fbc48",
+                "text": "El Calafate: Perito Moreno",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p77",
+                      "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+                    },
+                    {
+                      "ref": "word/document.xml:p75",
+                      "textSha256": "0cc985c69326670e79c847d810227edf2b661e4a6a7c92fcc429d4bc16d9bbf5"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Combine the approved destination label with the named glacier from the segment heading for a concise itinerary title."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:b04d5d61d358e759",
+                "field": "itinerary.text",
+                "sourceTextSha256": "1fc3a26450ef75a02152a0c9a288727274157c7a40385f9d5e8e80a4c00128ba",
+                "text": "Take in the rare and breathtaking beauty of the Perito Moreno Glacier, one of the jewels of UNESCO’s World Heritage. Your guide picks you up at your hotel in the morning for a full-day tour, sharing details about the glacier and the national park on the way.\n\nThe first stop is a series of walkways with views of the glacier, ideal for photos. The tour then continues through the park’s natural scenery, and you walk along the walkways to watch chunks of ice break off and crash into the water. At the end of the day, return to your hotel.\n\nOptional: ice trekking, a walk on the glacier itself, ending with a cocktail served with glacier ice (see Optional Excursions).",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p79",
+                      "textSha256": "14e7961eedb29c0285611ee4eeee713f90ae8f3906a563c2e8614ca46b0a1e1f"
+                    },
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "1a551a517129e0aa6d79523104cf2c606f6e647debc6360be417da11ff678813"
+                    },
+                    {
+                      "ref": "word/document.xml:p81",
+                      "textSha256": "352b77f152fe6ddf5b03abcfba504cc6f1459e417cdcac4679a349d50a0d4ccb"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:bbc1826c787617ab",
+                "field": "itinerary.label",
+                "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+                "text": "El Calafate",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p77",
+                      "textSha256": "e94938c4f4c6a260af16e77faedc2f6fada7351ec418324633e9602233ce5391"
+                    }
+                  ]
+                }
               }
             ],
             "sourceVerification": {
@@ -185,7 +262,7 @@
             ]
           }
         },
-        "at": "2026-11-03T22:18:17.859Z"
+        "at": "2026-11-03T22:18:45.935Z"
       },
       "submission": null,
       "review": null,

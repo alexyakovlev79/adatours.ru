@@ -107,7 +107,100 @@
         "claimedAt": "2026-11-03T21:23:26.610Z",
         "expiresAt": "2026-11-03T22:53:26.610Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ddc12b513de4",
+        "token": "tok-ddc12b513de4-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ddc12b513de4-tour_brazil_agribusiness_14_days-b010",
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b010",
+            "stableId": "tour_brazil_agribusiness_14_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "d130b2048fb173f8cb878653bf78757e69c6e2352ca7ab96756488edb7e33182",
+            "blocks": [
+              {
+                "blockId": "tour:media_hover:5c2211839f7369cc",
+                "field": "media.hover",
+                "sourceTextSha256": "1f4f8df83d56600321eab9d07cc4389b7c6bfe73d159afd7302bf7b54995703f",
+                "text": "Panoramic view of Rio from the Sugarloaf Mountain viewpoint",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word contains no corresponding image hover or alt caption; translated the frozen RU media description."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+                "field": "itinerary.title",
+                "sourceTextSha256": "73d2700c49434a76bbd5dab861311e233c4a632dbac881232c5ca7678f93f7e1",
+                "text": "Corcovado and a flight over Rio",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p65",
+                      "textSha256": "b7b1a306aa47c2836fff18114deee5875b5c9c16124c3601e9627e1620ba7270"
+                    },
+                    {
+                      "ref": "word/document.xml:p72",
+                      "textSha256": "15b9abb03382c2e0587f7d5b46419db0d0b49a96de4f40ce92766b54dfbc4a4e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted the route or composed the heading using the exact corresponding Word passages."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+                "field": "itinerary.text",
+                "sourceTextSha256": "760c4a1156f73a422a52bbec32a18661f67d8f4ee76e5aee388a6c9589c54365",
+                "text": "After breakfast, a 4-hour excursion to Corcovado, taking the train through the Tijuca Forest to the Christ the Redeemer statue. From the viewing platform, you can see Guanabara Bay, the Niterói Bridge, the Botanical Garden, Maracanã Stadium and Sugarloaf Mountain.\n\nThe programme then lists a **30-minute helicopter flight** over Rio, with a briefing and views of the city, the Christ statue and the beaches. The departure point is listed as Sugarloaf Mountain or Lagoa. The price, whether the flight is included in the quotation and the selected departure point are confirmed when booking.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word paragraphs 65–66 and 72 describe the activities but omit the frozen RU briefing and booking-confirmation conditions; translated the RU summary while preserving flight duration, conditional inclusion and departure alternatives."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:99c0d88290b06bf7",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p64",
+                      "textSha256": "8f84c354dde0e7084eff6125ebf580de6ff5cbd5f0db9d20622f8312cd889c02"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted the route or composed the heading using the exact corresponding Word passages."
+                }
+              }
+            ],
+            "sourceNotes": [
+              {
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "sha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "note": "Used the exact assigned Word in yearFolder 2027; document heading states Agribusiness Program 2026. Matching was not repeated and no edition year or commercial facts were changed."
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T21:24:30.244Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

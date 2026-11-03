@@ -48,6 +48,9 @@ jobs:
           node --test tests/*.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs > /tmp/unit-tests.log 2>&1 || { tail -60 /tmp/unit-tests.log; exit 1; }
           tail -12 /tmp/unit-tests.log
 
+      - name: EN mass translation dispatcher recovery tests
+        run: node --test tests/i18n/translation-mass-core.test.mjs tests/i18n/translation-mass-remote.test.mjs tests/i18n/translation-mass-worker-cycle.test.mjs
+
       - name: Verify sealed nature/wildlife swarm editorial receipts
         if: ${{ github.event_name == 'pull_request' && github.event.pull_request.number == 40 }}
         run: node scripts/interest-split-swarm-finalize.mjs --finalize
@@ -99,3 +102,4 @@ jobs:
 
       - name: Verify canonical routing
         run: node scripts/verify-routing-output.mjs
+

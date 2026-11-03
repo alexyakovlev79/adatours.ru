@@ -9,7 +9,11 @@ const clean=x=>JSON.stringify(x,null,2)+'\n';
 const unwrap=r=>{if(r?.isError)throw Error(JSON.stringify(r));return r?.result||r?.structuredContent||r};
 const valid=s=>typeof s==='string'&&/^[a-zA-Z0-9_.:-]{3,200}$/.test(s);
 const restricted=/rate.?limit|429|retry.?after|secondary limit|too many requests/i;
+const denied=/\b40[13]\b|forbidden|permission denied|unauthori[sz]ed|bad credentials/i;
 const conflict=/non.fast.forward|expected.sha|409|422|reference|conflict|mismatch|changed/i;
+// Connector GraphQL failures and lost replies are transport failures, not
+// evidence that Word/Drive is unavailable. Never turn them into job failures.
+const transient=/GithubGraphQLAPIError|RemoteProtocolError|Server disconnected|Transport closed|internal (?:server )?error|something went wrong|bad gateway|service unavailable|gateway timeout|\b50[0234]\b|ECONNRESET|ETIMEDOUT|fetch failed|network error|response lost/i;
 const safe=s=>s.replace(/[^A-Za-z0-9_.-]/g,'_').slice(0,190);
 const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const nowValue=s=>{if(!Number.isFinite(Date.parse(s)))throw Error('Exact UTC timestamp required');return s};
@@ -35,9 +39,18 @@ async function commitCas(tools,head,files,message){
    ...(f.sha?{sha:f.sha}:{content:clean(f.data)})}))})).sha;
  const next=unwrap(await tools.mcp__GitHub__create_commit({
   repository_full_name:REPO,parent_sha:head,tree_sha:tree,message})).sha;
- const updated=unwrap(await tools.mcp__GitHub__update_ref({
-  repository_full_name:REPO,branch_name:BRANCH,expected_sha:head,sha:next,force:false}));
- if(!updated.success)throw Error('Branch CAS move was not confirmed');
+ try{
+  const updated=unwrap(await tools.mcp__GitHub__update_ref({
+   repository_full_name:REPO,branch_name:BRANCH,expected_sha:head,sha:next,force:false}));
+  if(!updated.success)throw Error('Branch CAS move was not confirmed: response lost');
+ }catch(error){
+  // A mutation can have succeeded even when its response is lost. Confirm
+  // the head before attempting another CAS; later descendants are reconciled
+  // by replaying the same operation against its immutable receipt.
+  if(!restricted.test(String(error))&&transient.test(String(error))&&
+     await getHead(tools)===next)return next;
+  throw error;
+ }
  return next;
 }
 async function currentRu(tools,job){
@@ -50,10 +63,10 @@ export async function runEnMassTranslation(tools,core,args={}){
  const action=args.action;
  if(!['status','claim','renew','checkpoint','submit','release','fail','reap'].includes(action))
   throw Error('Unsupported worker action');
- const time=nowValue(args.now||new Date().toISOString());
  if(action!=='status'&&(!valid(args.ownerId)||!valid(args.token)))
   throw Error('Stable ownerId/token required');
  for(let attempt=0;attempt<LIMIT;attempt++){
+  const time=nowValue(args.now||new Date().toISOString());
   try{
    const head=await getHead(tools);
    const index=await read(tools,ROOT+'/index.json',head);
@@ -106,7 +119,8 @@ export async function runEnMassTranslation(tools,core,args={}){
     if(!valid(args.jobId))throw Error('Exact jobId required');
     sid=core.massShard(args.jobId);
    }
-   if(!sid)return{status:'busy_or_empty',head,counts:index.counts};
+   if(!sid)return{status:'busy_or_empty',head,counts:index.counts,
+    stageCounts:index.stageCounts?.[index.stage]};
    const statePath=ROOT+'/state/'+sid+'.json';
    const stateFile=unwrap(await tools.mcp__GitHub__fetch_file({
     repository_full_name:REPO,path:statePath,ref:head}));
@@ -131,7 +145,10 @@ export async function runEnMassTranslation(tools,core,args={}){
     if(transition.item&&args.jobId&&transition.item.jobId!==args.jobId)
      return{status:'requested_job_not_available',head};
     if(!transition.item){
-     if(!transition.restored)return{status:'busy_or_empty',head,counts:index.counts};
+     if(args.jobId&&!transition.restored)
+      return{status:'requested_job_not_available',head,jobId:args.jobId};
+     if(!transition.restored)return{status:'busy_or_empty',head,counts:index.counts,
+      stageCounts:index.stageCounts?.[index.stage]};
     }else{
      job=sourcePackets.jobs.find(j=>j.jobId===transition.item.jobId);
      if(!job||job.sourceFingerprint!==transition.item.sourceFingerprint)
@@ -222,6 +239,10 @@ export async function runEnMassTranslation(tools,core,args={}){
   }catch(e){
    if(restricted.test(String(e)))return{status:'rate_limited',retryAfterMs:60000,
     reason:String(e).slice(0,180)};
+   if(denied.test(String(e)))throw e;
+   if(!conflict.test(String(e))&&transient.test(String(e)))return{status:'transport_retryable',action,
+    jobId:args.jobId||null,retryable:true,retryAfterMs:5000,
+    reason:String(e).slice(0,250)};
    if(!conflict.test(String(e)))throw e;
    if(attempt===LIMIT-1)
     return{status:'cas_contention',action,jobId:args.jobId||null,
@@ -231,3 +252,4 @@ export async function runEnMassTranslation(tools,core,args={}){
   }
  }
 }
+

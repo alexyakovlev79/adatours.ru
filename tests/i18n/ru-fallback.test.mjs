@@ -118,6 +118,6 @@ test('shared English projection keeps the live lead form and modal triggers',()=
  assert.match(html,/type="submit"/);
  assert.match(html,/data-lead-modal="true"/);
  assert.match(html,/href="#request"/);
- assert.match(html,/form-config\\.js\\?v=1/);
+ assert.ok(html.includes('/adatours-en/form-config.js?v=1'));
  assert.doesNotMatch(html,/data-ada-staging-inert-form|mailto:info@adatours\\.ru/);
 });

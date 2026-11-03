@@ -120,7 +120,91 @@
         "claimedAt": "2026-11-03T22:19:30.235Z",
         "expiresAt": "2026-11-03T23:49:30.235Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "champs-b011-4-v1",
+        "format": "inline-v1",
+        "ownerId": "ada-en-7963199f582c",
+        "token": "ada-en-20261104-7963199f582c-stable",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b011",
+            "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "0161bc8053d8700ca04ece193ae8611228d5a141d63a4f75577f150a9a78b0f6",
+            "blocks": [
+              {
+                "blockId": "tour:media_alt:af1ff7e71aaf30df",
+                "field": "media.alt",
+                "sourceTextSha256": "ac2147c5f5e8deb868353990fc35385f0f12b5734c61694622b7b03394eb1a26",
+                "text": "Powerful Iguazú cascades among rocks and greenery, Argentina",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "The complete verified Word contains no photograph alternative text for this image. Reuse the faithful translation of the identical frozen RU alt from the preceding packet; no new image facts."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+                "field": "itinerary.title",
+                "sourceTextSha256": "f71b02031debd45ab1c83a46b81d7ddb76a3cbeec7c2b9d43f4446bbe2197172",
+                "text": "Buenos Aires and a tango show with dinner",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p99",
+                      "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                    },
+                    {
+                      "ref": "word/document.xml:p101",
+                      "textSha256": "15e5578fe665fe60f5c4072a7e9caab1c7eb55e648dae58e38ae2661292b3574"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Compose the short day title from the verified Buenos Aires heading and evening tango-show-with-dinner description."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:2e780f63f4172747",
+                "field": "itinerary.text",
+                "sourceTextSha256": "8d52317c0cbb482c2dcf93e74d0ce63c4a7a656c156e70947f0f15170952847e",
+                "text": "Breakfast at the hotel. A 3-hour city tour with an English-speaking guide takes you through La Boca, San Telmo and Plaza Dorrego, Plaza de Mayo with Casa Rosada, the Obelisk on Avenida 9 de Julio, Recoleta with its cemetery and the Basilica of El Pilar, Puerto Madero, Lezama Park and Parque Tres de Febrero.\n\nIn the evening, a tango show with dinner is included, without a guide. The restaurant serves traditional dishes and Argentine wines, while dancers perform on stage.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraphs 100–101 describe the city tour and tango dinner, but omit the current RU route's Lezama and Tres de Febrero parks and do not match this combined block. Translate the frozen RU in full, applying the agreed English-speaking guide adaptation."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:7cc4a40a90d0192d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+                "text": "Buenos Aires",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p99",
+                      "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "submissionId": "ada-en-7963199f582c-champs-b011-v1"
+        },
+        "at": "2026-11-03T22:20:47.518Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

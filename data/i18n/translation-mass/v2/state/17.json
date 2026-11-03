@@ -55,166 +55,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b009",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "a7756965322afeac063fcb4610e09466dbd3ce63910141befb7ef54fd7c1c772",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-4406908c67fe-1104",
-        "token": "ada-en-token-4406908c67fe",
-        "claimedAt": "2026-11-03T22:01:54.681Z",
-        "expiresAt": "2026-11-03T23:31:54.681Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-4406908c67fe-1104-p1-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-4406908c67fe-1104",
-        "token": "ada-en-token-4406908c67fe",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b009",
-            "stableId": "tour_argentina_experience_6_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "a7756965322afeac063fcb4610e09466dbd3ce63910141befb7ef54fd7c1c772",
-            "blocks": [
-              {
-                "blockId": "tour:media_hover:0b101615487ab09c",
-                "field": "media.hover",
-                "sourceTextSha256": "d32f715b30fd5a8a763cf31148f4a5b68606d40f239cef15d08316eb741328a3",
-                "text": "Colonia del Sacramento, Uruguay: a wooden door of a historic house surrounded by flowering plants",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-4406908c67fe-1104",
-                  "wordAbsenceReason": "The verified Word document has no image hover descriptions."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:6970ba3bc138da84",
-                "field": "itinerary.label",
-                "sourceTextSha256": "8afb5880f11dcd25e4ec87ffa8a805185cb28b05dd7958b2bcd3533e5092f9e7",
-                "text": "Colonia del Sacramento",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p22",
-                      "textSha256": "a82be26ee07db0b3b26b5299560ad50618aaa05b079faf6864233fdb0a05b588"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact place name from the day heading as the location label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:9d160262ccf40bb8",
-                "field": "itinerary.title",
-                "sourceTextSha256": "6f89d9a604cc47945a60bb05e0b120aeb5c329746a27947aca4da125eb4a9404",
-                "text": "Santa Susana Ranch",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p25",
-                      "textSha256": "9fc8c189fc5b155a6d5d9ac496440d7fed2dca5ed18bb0640866d623830dd286"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact ranch name from the day heading as the itinerary title."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:b04d5d61d358e759",
-                "field": "itinerary.text",
-                "sourceTextSha256": "3c54ba19c760e2f896a870c651a74655c4788c2849dd8cafb3fa1803f4974cee",
-                "text": "Experience Argentina’s gaucho culture during a full-day visit to Santa Susana Ranch, where you will enjoy traditional activities, folklore entertainment, and an authentic Argentine barbecue. This immersive cultural experience offers a glimpse into the country’s rural traditions. In the evening, gather for a farewell dinner at the hotel.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p26",
-                      "textSha256": "4a331ae99700c58f94b79522219876818e7d5ad9bf4fa0aef6955420c0493e41"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:59d10202dfad1e0e",
-                "field": "itinerary.label",
-                "sourceTextSha256": "6f89d9a604cc47945a60bb05e0b120aeb5c329746a27947aca4da125eb4a9404",
-                "text": "Santa Susana Ranch",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p25",
-                      "textSha256": "9fc8c189fc5b155a6d5d9ac496440d7fed2dca5ed18bb0640866d623830dd286"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact ranch name from the day heading as the location label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:a8a102acf2f7cd5d",
-                "field": "media.alt",
-                "sourceTextSha256": "40c08aef98cf6d69bd1ca0bbb11a134bc18b8af11e229e99a7883c045a355798",
-                "text": "A gaucho on horseback raises a red cloth among cattle at an Argentine ranch",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-4406908c67fe-1104",
-                  "wordAbsenceReason": "The verified Word document has no image alternative text."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:1c66b7ec7951434f",
-                "field": "media.hover",
-                "sourceTextSha256": "270661e10c1ebf6b8fcd7d0b160dd6ad70a07c52a3295cb86eff7bf309918a3f",
-                "text": "An Argentine gaucho on horseback among a herd",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-4406908c67fe-1104",
-                  "wordAbsenceReason": "The verified Word document has no image hover descriptions."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:7b17b36c4612ab32",
-                "field": "itinerary.label",
-                "sourceTextSha256": "6f89d9a604cc47945a60bb05e0b120aeb5c329746a27947aca4da125eb4a9404",
-                "text": "Santa Susana Ranch",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p25",
-                      "textSha256": "9fc8c189fc5b155a6d5d9ac496440d7fed2dca5ed18bb0640866d623830dd286"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Use the exact ranch name from the day heading as the location label."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:03:01.150Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-4406908c67fe-1104-p1",
+        "blobSha": "21f9689802540ad5f346a495a8733d1c83e9a170",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_experience_6_days_b009/ada-en-4406908c67fe-1104-p1.json",
+        "at": "2026-11-03T22:03:05.226Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

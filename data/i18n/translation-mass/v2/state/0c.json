@@ -258,7 +258,77 @@
         "claimedAt": "2026-11-03T22:02:18.829Z",
         "expiresAt": "2026-11-03T23:32:18.829Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ck-e9fc-b013-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-e9fc69e2bbe6",
+        "token": "token-e9fc69e2bbe6-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b013",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "7e99334e3f952e55e3b6992512ae699203af1be00c7e604ae7596e597c72b67b",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:173cf987634ed90a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "8ce0dd9578dddcc019df6cbcebb55e61ad3c56b4cb1ee1d8b2eddf9ea05cec98",
+              "text": "Breakfast at the hotel. Transfer to the airport.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-e9fc69e2bbe6",
+                "wordAbsenceReason": "The verified Word 2027 itinerary covers Natal through Day 13 (paragraphs 119–127), but contains no Praia de Pipa extension or its final departure day; translate this Pipa-extension block from current RU."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:9d57231e76d99c93",
+              "field": "itinerary.label",
+              "sourceTextSha256": "cdb91ed371e64bee5fdf854ee745251593ffbbb3ca95762f32897c668f016596",
+              "text": "Praia de Pipa",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-e9fc69e2bbe6",
+                "wordAbsenceReason": "The complete verified Word 2027 document does not mention Praia de Pipa; this route label belongs to the RU-only Pipa extension, not the Natal itinerary in Word."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:505bfa5c834fb0e6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "caca571562c98fddf785ce97bf0cb1c0dee3b063ec94d94414bfe163f0bc3cc9",
+              "text": "Natal",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p122",
+                    "textSha256": "ac6ce12fa95443f9c11680b5a5e5b13437d6a5e3fdf3d010c1f4508af6b51e41"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:6267a267787302ea",
+              "field": "media.alt",
+              "sourceTextSha256": "660632f11b98bd8d4e07624e83bda9e6c036a64b5ea0aafef018545b75e04763",
+              "text": "A white minibus on a coastal street in Praia de Pipa, among palm trees and houses, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-e9fc69e2bbe6",
+                "wordAbsenceReason": "The verified Word 2027 has no caption describing the RU page photograph of a white minibus in Praia de Pipa; translate the existing image alt text without changing media."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:03:43.313Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

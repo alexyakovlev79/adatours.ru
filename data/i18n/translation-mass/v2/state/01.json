@@ -55,7 +55,7 @@
         "expiresAt": "2026-11-03T23:34:30.926Z"
       },
       "checkpoint": {
-        "id": "ada-d492-b013-cp4",
+        "id": "ada-d492-b013-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-d492a933acd8-20261104",
         "token": "ada-d492a933acd8-fixed-20261104",
@@ -155,6 +155,97 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:contentBlock_text:975691efdaea6b8a",
+                "field": "contentBlock.text",
+                "sourceTextSha256": "5938acb2d742c7c8bee5764db6a5261869414e28615ee7a3cf53a2d858770d0e",
+                "text": "13:00–14:00  ·  Lunch\n\n15:00–19:00  ·  Visit to an agricultural and seed-potato producer\n\nExamine farming on heavy clay soils and challenging terrain, including soybeans, sorghum, sunflower, maize, wheat and potatoes.\n\n20:00  ·  Return to the hotel\n\n20:30  ·  Dinner\n\nRoute: Approx. 230 km   |   Overnight: Mar del Plata",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p110",
+                      "textSha256": "80debf41ce52cdbd4676846665ea0cc2c7ff333343fa365ab7945c5a4a8b7561"
+                    },
+                    {
+                      "ref": "word/document.xml:p111",
+                      "textSha256": "a483d698dd161169ff996860a4808d7ac4b669b9e9b33b9f29e301ebdf1974d0"
+                    },
+                    {
+                      "ref": "word/document.xml:p112",
+                      "textSha256": "6a40832a1f4dfdb2778bc94ce8e710120060827c64fc91f475492e799f122e96"
+                    },
+                    {
+                      "ref": "word/document.xml:p113",
+                      "textSha256": "d03ef69e2ec895023fa649b12530019b849b577c6d33de3577d9ff3747dff310"
+                    },
+                    {
+                      "ref": "word/document.xml:p114",
+                      "textSha256": "14b4ffb74f71410e729e1e4ce8e83c10a22a07744f705eddb6dfa8da466edb12"
+                    },
+                    {
+                      "ref": "word/document.xml:p105",
+                      "textSha256": "2279594013fff2f440abc5cdb2245d674fb9705c4cdd9066369e516f66479df2"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:media_alt:87f1e895f69372ff",
+                "field": "media.alt",
+                "sourceTextSha256": "b894d0e4f279473bdff09d4b4e2b49c9c654ca48c09461eb23ee9156ef329661",
+                "text": "Plastic silo bags for grain storage in an Argentine field: illustration",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-d492a933acd8-20261104",
+                  "wordAbsenceReason": "The approved DOCX has no image alt text or illustration captions; translate the current RU media.alt field without adding details."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:61ae0cc104ccff02",
+                "field": "itinerary.label",
+                "sourceTextSha256": "273f56a0a9ccb820abb61f2422713df97929880e61860930ab4f7bcaf7662664",
+                "text": "3 December 2026",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p115",
+                      "textSha256": "c739826e31f4ab1fb795e0fa3a85c53f346ae9a3d37cd9cef44778c09c868d37"
+                    },
+                    {
+                      "ref": "word/document.xml:p5",
+                      "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Expand the approved 03 DEC calendar label using the year established by the document date range."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:f76823f601bc2496",
+                "field": "itinerary.title",
+                "sourceTextSha256": "2ab09e44610b3d2b4985715400bbfddbe1e693ba3d6cd6151519e94c1a63351d",
+                "text": "Buenos Aires city tour and tango show",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p19",
+                      "textSha256": "e3269e839b196ab90fbb940f240dfc0c506c621a363f3209f54bb601013281fa"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the approved day heading after its calendar prefix for the itinerary title."
+                }
               }
             ],
             "sourceVerification": {
@@ -167,7 +258,7 @@
             }
           }
         },
-        "at": "2026-11-03T22:05:55.315Z"
+        "at": "2026-11-03T22:06:34.215Z"
       },
       "submission": null,
       "review": null,

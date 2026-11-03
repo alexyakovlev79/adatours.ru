@@ -151,7 +151,100 @@
         "claimedAt": "2026-11-03T23:08:38.716Z",
         "expiresAt": "2026-11-04T00:38:38.716Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-8fc95d0a-006-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-8fc95d0a-20261104",
+        "token": "ada8fc95d0ae0c7-20261104-fixed",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b002",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "20275d76ec95a10015ba5dc17cd48dc26da730e6eb6cae05ea2b9bdb8596d62d",
+          "blocks": [
+            {
+              "text": "Puno",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p197",
+                    "text": "Puno",
+                    "textSha256": "eaa2b06926bcdcab6d01ec90c9eefd7a4cf618005067226766455ed2570f7b01"
+                  }
+                ]
+              },
+              "blockId": "tour:itinerary_label:45638e9b08a604d1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8"
+            },
+            {
+              "text": "Accommodation in the hotels listed, with breakfast",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p251",
+                    "text": "–   Accommodation in the hotels listed, with breakfast",
+                    "textSha256": "72e9bace628f05242a143e3137644887001cd7b5964db625372c1323dbe65714"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the selected Word 2027 included-services item."
+              },
+              "blockId": "tour:included:636dccb3fb9a00fa",
+              "field": "included",
+              "sourceTextSha256": "d0962e61ff6cf28aa4b44437d712fe684c5356a8d28e5ffcc266c094070ba658"
+            },
+            {
+              "text": "Tours according to the programme, on a private basis with an English-speaking guide",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p252",
+                    "text": "–   Tours according to the programme, on a private basis with an English-speaking guide",
+                    "textSha256": "e61db0057b92dd1b04104439f9c6aeacb9eaec8d9c3d0a6d3299303ed90f9b3d"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the leading list marker from the selected Word 2027 included-services item."
+              },
+              "blockId": "tour:included:9f08e164ce8ed597",
+              "field": "included",
+              "sourceTextSha256": "4afab422daab820554451616ef8b028278c715279e279cb6fee49d6d05f7712d"
+            },
+            {
+              "text": "English-speaking guides",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p12",
+                    "text": "English-speaking guides",
+                    "textSha256": "afffd37e59d888699e625f2723859965707bcd0762c1e9c46c5068633af5c2b7"
+                  }
+                ]
+              },
+              "blockId": "tour:included:da30136091a54cab",
+              "field": "included",
+              "sourceTextSha256": "d56f579b7d2bc1245f7d67a4af61220118f15747fe99acd6f9bddabe1621dcfc"
+            }
+          ]
+        },
+        "at": "2026-11-03T23:09:34.660Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

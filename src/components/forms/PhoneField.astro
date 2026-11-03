@@ -203,31 +203,25 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
       input.value = formatNational(input.value, mask, countryDial);
       countryHidden.value = iso2;
       dialHidden.value = countryDial;
-      toggle.setAttribute('aria-label', `Выбрать страну: ${name} ${countryDial}`);
+      toggle.setAttribute('aria-label', document.documentElement.dataset.adaSharedLocale === 'en'
+        ? `Choose a country: ${name} ${countryDial}` : `Выбрать страну: ${name} ${countryDial}`);
       closeMenu();
 
       if (focusInput) input.focus();
     };
 
 
-    // A country suggestion for EN from the visitor's public IP. Manual input wins.
+
+    // Resolve the visitor's country only when they reach the form, not on every page view.
+    // The public IP is read by ipapi.co; neither IP nor city is stored by Ada Tours.
     if (document.documentElement.dataset.adaSharedLocale === 'en') {
       let manuallySelected = false;
+      let geoStarted = false;
       menu.addEventListener('click', event => {
         if (event.target instanceof Element && event.target.closest('[data-phone-option]')) manuallySelected = true;
       });
       input.addEventListener('input', () => { manuallySelected = true; });
-      const geoController = new AbortController();
-      const geoTimeout = window.setTimeout(() => geoController.abort(), 3500);
-      fetch('https://ipapi.co/json/', {
-        signal: geoController.signal,
-        credentials: 'omit',
-        referrerPolicy: 'no-referrer',
-      }).then(response => {
-        if (!response.ok) throw new Error('GeoIP unavailable');
-        return response.json();
-      }).then(result => {
-        const iso = typeof result.country_code === 'string' ? result.country_code.toLowerCase() : '';
+      const selectSuggestedCountry = iso => {
         const country = PHONE_COUNTRIES.find(item => item.iso2 === iso);
         if (!country || manuallySelected || input.value.trim() || document.activeElement === input) return;
         const option = document.createElement('button');
@@ -236,8 +230,43 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
         option.dataset.mask = country.mask;
         option.dataset.name = country.name;
         applyCountry(option, false);
-      }).catch(() => { /* Keep the selectable initial country. */ })
-        .finally(() => window.clearTimeout(geoTimeout));
+      };
+      const detectCountry = () => {
+        if (geoStarted) return;
+        geoStarted = true;
+        let stored = '';
+        try { stored = window.sessionStorage.getItem('adatours-phone-country-iso2') || ''; } catch (_) {}
+        if (/^[a-z]{2}$/.test(stored)) {
+          selectSuggestedCountry(stored);
+          return;
+        }
+        const controller = new AbortController();
+        const timeout = window.setTimeout(() => controller.abort(), 3500);
+        fetch('https://ipapi.co/json/', {
+          signal: controller.signal,
+          credentials: 'omit',
+          referrerPolicy: 'no-referrer',
+        }).then(response => {
+          if (!response.ok) throw new Error('GeoIP unavailable');
+          return response.json();
+        }).then(result => {
+          const iso = typeof result.country_code === 'string' ? result.country_code.toLowerCase() : '';
+          if (!/^[a-z]{2}$/.test(iso)) return;
+          try { window.sessionStorage.setItem('adatours-phone-country-iso2', iso); } catch (_) {}
+          selectSuggestedCountry(iso);
+        }).catch(() => { /* Keep the selectable initial country. */ })
+          .finally(() => window.clearTimeout(timeout));
+      };
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+          if (!entries.some(entry => entry.isIntersecting)) return;
+          observer.disconnect();
+          detectCountry();
+        }, { rootMargin: '200px 0px' });
+        observer.observe(field);
+      } else {
+        field.addEventListener('focusin', detectCountry, { once: true });
+      }
     }
 
     let flagObserver;

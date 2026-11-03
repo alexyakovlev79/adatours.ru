@@ -211,181 +211,22 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "22d35a7c7941836d7dadce3fc7f9f882d0318143618194301a839e03e4ac5f3c",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-79f7d751",
-        "token": "ada-en-token-79f7d751edf341a6",
-        "claimedAt": "2026-11-03T23:12:16.432Z",
-        "expiresAt": "2026-11-04T00:42:16.432Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-79f7d751-b008-explorer-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-79f7d751",
-        "token": "ada-en-token-79f7d751edf341a6",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_colombia_explorer_9_days:b008",
-          "stableId": "tour_colombia_explorer_9_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "22d35a7c7941836d7dadce3fc7f9f882d0318143618194301a839e03e4ac5f3c",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:2289c68d4a1f8279",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2ddfb00db2ab9c93e5c2d1e4c29d29ef3e1fecaf08864ae854b32d00f3997249",
-              "text": "Salento",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p79",
-                    "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "The place label is extracted unchanged from the exact named location in the selected Word itinerary paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7d113655fc4f524d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "776bc4849d26fa0e84efe400cb20469509ac3ef66b4f63c069edf6875e31f5f1",
-              "text": "El Ocaso Coffee Farm",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p79",
-                    "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "The place label is extracted unchanged from the exact named location in the selected Word itinerary paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:48ec6e33e09121ff",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
-              "text": "Bogotá",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p66",
-                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:2ecc58243c16a60a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "3965881d320ae4c55210d6007df809c3d4643adf396828125b38dfb95503e398",
-              "text": "Pereira",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p88",
-                    "textSha256": "0ddf4be72fce5c84fdc579597bcc34c6213e8c8b8d51616d1e3644803da42239"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:45296dd357be3cf3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "bf8cba7476ef70f7569cf75f53af0d18024f196022eb783173bd448ecb770348",
-              "text": "Cocora Valley",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p43",
-                    "textSha256": "d1c4215f34af51b3613b116ec785531c5bb3d76fbf2fe9c0ba0bfd3c9f915635"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:ad06e39d61e4305a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2ddfb00db2ab9c93e5c2d1e4c29d29ef3e1fecaf08864ae854b32d00f3997249",
-              "text": "Salento",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p79",
-                    "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "The place label is extracted unchanged from the exact named location in the selected Word itinerary paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:870263904223761d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "776bc4849d26fa0e84efe400cb20469509ac3ef66b4f63c069edf6875e31f5f1",
-              "text": "El Ocaso Coffee Farm",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p79",
-                    "textSha256": "4b8d5d29ccde9818c70624a9eb3e24a983d01939c52a3186013b697794d8d5f3"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "The place label is extracted unchanged from the exact named location in the selected Word itinerary paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-              "field": "itinerary.title",
-              "sourceTextSha256": "2937f5b91731667fd0e904b4bb89a839296e4264d264bcadc2b41b79d511af2f",
-              "text": "Canopy adventure and horseback ride",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
-                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p86",
-                    "textSha256": "449c553121ed8795000dc0194bea948070a07ac7a54529c52978533d9b08b442"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Only the Day 4 heading marker is removed; the source Word activity heading is preserved without rewriting."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:13:11.150Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-79f7d751-b008-explorer",
+        "blobSha": "59897f9e0bdcae1369dcbc4296ade8eee0eaccbd",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_explorer_9_days_b008/ada-en-79f7d751-b008-explorer.json",
+        "at": "2026-11-03T23:13:39.591Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

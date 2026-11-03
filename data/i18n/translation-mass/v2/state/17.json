@@ -77,172 +77,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b011",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "6221835ef1406cd9e3ae590fd7cc5e640058063071dbd0d461828b2abbd0bafd",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-04dd2e696333-20261104",
-        "token": "ada-en-04dd2e696333-a7f39d12",
-        "claimedAt": "2026-11-03T22:09:40.743Z",
-        "expiresAt": "2026-11-03T23:39:40.743Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "04dd2e-grand-b011-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-04dd2e696333-20261104",
-        "token": "ada-en-04dd2e696333-a7f39d12",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b011",
-          "stableId": "tour_argentina_grand_tour_15_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "6221835ef1406cd9e3ae590fd7cc5e640058063071dbd0d461828b2abbd0bafd",
-          "blocks": [
-            {
-              "blockId": "tour:media_hover:41c2a133c80a3d14",
-              "field": "media.hover",
-              "sourceTextSha256": "747f34a7d6068058493168773536108348474f73be5c20b577b7d6921b6743b4",
-              "text": "Salinas Grandes: the salt flat with distant Andean mountains",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "The Word has no matching photograph hover caption; translate the frozen RU image caption without adding new visual information."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
-              "field": "itinerary.title",
-              "sourceTextSha256": "a4e9fead457bf99193be9425cf8db3d70f001a8e953d1fac36e2b16ec2a88353",
-              "text": "Flight from Salta to Mendoza",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:36",
-                    "textSha256": "f92b8e3cdb6078e591a13d1c1a2a793d68983bfb037082624e6c8cf818d721c0"
-                  },
-                  {
-                    "ref": "word/document.xml:p:37",
-                    "textSha256": "6e356c4673ea3c470cf0fe65dfbdf636b278356dcdd5c41388785cb09a3dcd23"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Compose the flight-day title from the exact Salta–Mendoza day heading and the explicitly stated flight in the following paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
-              "field": "itinerary.text",
-              "sourceTextSha256": "c88a7012dbf22d83f272e820923d6eae1342359bd8311e5c9c260610a0c91273",
-              "text": "Transfer to Salta airport (driver only) and flight to Mendoza — the capital of Argentine winemaking at the foot of the Andes. Meet and transfer to the hotel with an English-speaking guide. Check-in at Entre Cielos (Superior Room).",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:37",
-                    "textSha256": "6e356c4673ea3c470cf0fe65dfbdf636b278356dcdd5c41388785cb09a3dcd23"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:cea2c5e7e10bcad8",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6269b6b6909c4fe6a61adefe06d132c769df935fa9a35fd438c04b03ed604c74",
-              "text": "Salta",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:36",
-                    "textSha256": "f92b8e3cdb6078e591a13d1c1a2a793d68983bfb037082624e6c8cf818d721c0"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact departure city name from the Word day-route heading."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:26a28d4e9a446499",
-              "field": "itinerary.label",
-              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
-              "text": "Mendoza",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:36",
-                    "textSha256": "f92b8e3cdb6078e591a13d1c1a2a793d68983bfb037082624e6c8cf818d721c0"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the exact destination city name from the Word day-route heading."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:d48765b1243cfafb",
-              "field": "media.alt",
-              "sourceTextSha256": "e142cd10ed2e7d050abae4a80ba9315c1e005c4e50eec5271646ce71db6f1d59",
-              "text": "A mountain valley with rocky slopes and a snow-covered peak near Mendoza, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "The selected Word contains no image-alt passage for this Mendoza mountain photograph; translate the exact RU visual description."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:f1696b81bddef6d7",
-              "field": "media.hover",
-              "sourceTextSha256": "e50dd3205f5f590494d1591bbf61b8a13fac14710632e63bb08e57b62c7c7160",
-              "text": "The Andes near Mendoza: a trail leads into a valley between dry mountain slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-04dd2e696333-20261104",
-                "wordAbsenceReason": "The selected Word contains no matching image hover caption; translate the frozen RU description without changing the media."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:f76823f601bc2496",
-              "field": "itinerary.title",
-              "sourceTextSha256": "373c4526861686089f6186337e22c7e28cafd4fc36cae8404199c5d6499fc0b4",
-              "text": "Wineries of Luján de Cuyo",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:38",
-                    "textSha256": "997a0e16f7168fce4063797039892c4d43471aab7b29c41128a249d41aea6366"
-                  },
-                  {
-                    "ref": "word/document.xml:p:39",
-                    "textSha256": "fb9384a85ce8dfc9e96cd6f53172fc60979fbcda04aadf933c443556f985142e"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose the concise winery-visit title using the exact Luján de Cuyo destination and winery activity in the Word heading and paragraph."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:10:45.606Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "04dd2e-grand-b011-v1",
+        "blobSha": "fbdf4e6b500e0f53a4cc93a2b9bdb8e0a7241c23",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_grand_tour_15_days_2027_b011/04dd2e-grand-b011-v1.json",
+        "at": "2026-11-03T22:15:39.188Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

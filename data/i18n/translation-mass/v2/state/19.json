@@ -296,7 +296,80 @@
         "claimedAt": "2026-11-03T22:33:16.023Z",
         "expiresAt": "2026-11-04T00:03:16.023Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f4e636b296c4-004-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f4e636b296c4",
+        "token": "ada-en-f4e636b296c4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b009",
+          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "ffbc4d081aa0c2ce3d4f1e9909deda1c81cf3435fecd149c68fd139b3d553cc3",
+          "sourceConflicts": [
+            {
+              "blockId": "tour:contentBlock_text:1fe86620531b47a8",
+              "ru": "Appendix pricing basis unspecified",
+              "word": "USD250 per person, p237; min3, p238",
+              "resolution": "Current RU caveat retained for independent review; no price modification."
+            }
+          ],
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:b04d5d61d358e759",
+              "field": "itinerary.text",
+              "sourceTextSha256": "bbad4b9b2a3d23e365a5a1a2594fd095f02db4a1fbd4467e8672ab64ef1260ab",
+              "text": "Breakfast. Explore the Brazilian side of Iguazu Falls with an English-speaking guide. Viewpoints in the national park overlook the cascades and forested banks. The name Iguazu means “big water”: the calm river above the falls gives way to torrents plunging into the gorge.\n\nYou can add the Macuco Safari, Bird Park or a helicopter flight at an additional cost. Prices differ between the day description and the appendix; the final rate is confirmed before payment.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word Day5 p91 gives the activity but lacks this full RU restructured block and price-clarification caveat; service language follows owner instruction."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:8e423711fb104e1d",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word uses Foz do Iguaçu in place listings; this standalone itinerary label is translated from RU."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:aafcea3ba572f1a2",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "bbad4b9b2a3d23e365a5a1a2594fd095f02db4a1fbd4467e8672ab64ef1260ab",
+              "text": "Breakfast. Explore the Brazilian side of Iguazu Falls with an English-speaking guide. Viewpoints in the national park overlook the cascades and forested banks. The name Iguazu means “big water”: the calm river above the falls gives way to torrents plunging into the gorge.\n\nYou can add the Macuco Safari, Bird Park or a helicopter flight at an additional cost. Prices differ between the day description and the appendix; the final rate is confirmed before payment.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word Day5 p91 gives the activity but lacks this full RU restructured block and price-clarification caveat; service language follows owner instruction."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:4ce99f2ad2ede6c2",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "ea836e91341013084b7f8c68f1f70d9d87d5a5147b460f1f5d7508493525ab56",
+              "text": "The Brazilian side of the falls with an English-speaking guide is included in this Carnival tour.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word Day5 p91 gives the activity but lacks this full RU restructured block and price-clarification caveat; service language follows owner instruction."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:01:10.135Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

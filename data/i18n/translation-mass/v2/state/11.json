@@ -142,7 +142,122 @@
         "claimedAt": "2026-11-03T23:23:59.152Z",
         "expiresAt": "2026-11-04T00:53:59.152Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f8019ad86757-05-b004-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-translator-20261104",
+        "token": "ada-en-f8019ad86757-6c94a20bf812",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b004",
+          "stableId": "tour_brazil_peru_argentina_group_15_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "78d5633002f69686af8ff5a5b7f62dc074f968f0820a6f1bb67d352b7c5fc813",
+          "sourceEditionNote": {
+            "stage": "word_2027",
+            "yearFolder": 2027,
+            "selectedEditionYear": null,
+            "observations": [
+              {
+                "ref": "word/document.xml:p[2]",
+                "text": "           Group 10-20pax - 2026",
+                "textSha256": "f65752ff23261c73ce35214e1ccf55a2ce7d2443cca3f19d3a15b0917dd675f8",
+                "observedYear": 2026
+              },
+              {
+                "ref": "word/document.xml:p[97]",
+                "text": "Brazil, Peru & Argentina 10-20 PAX 2024",
+                "textSha256": "e9b64067b8f66b9740446a84bb27e565b4dee45423f603b051e5d56a76d03753",
+                "observedYear": 2024
+              }
+            ],
+            "disposition": "Use exact frozen matching fileId and verified document SHA without rematching or changing dates/prices; retain for independent review."
+          },
+          "blocks": [
+            {
+              "blockId": "tour:note:444574cca500ead1",
+              "field": "note",
+              "sourceTextSha256": "2df5ae2844101d3c9260500fe2fae200c46166c0f11eb885ab42a7dc695fbe02",
+              "text": "Prices are PER PAX in USD",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[110]",
+                    "textSha256": "24792f997313290dacd0fd4daf504bd11f704b8419cc5aad64b3fde18f9aa0f5"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove the leading asterisk from the approved per-person USD note."
+              }
+            },
+            {
+              "blockId": "tour:note:2e9d5818bdccd790",
+              "field": "note",
+              "sourceTextSha256": "7e77289c23275c3144a7c673097f706c887ef652d32c3f964d69915f28f5fbca",
+              "text": "Optional excursions: Great Adventure Boat Trip — USD 125; Bird park — USD 60; Perito Moreno ice-trekking — USD 300 per person.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[30]",
+                    "textSha256": "809bce4ca9abae0d86d9488911e1cdec5b0a64a5e5ec6204faaa2a5ed6c148bf"
+                  },
+                  {
+                    "ref": "word/document.xml:p[36]",
+                    "textSha256": "d5ad99911249f2469380907370d32b6a123bbe21f7dbfb0c1ae126420d8ab303"
+                  },
+                  {
+                    "ref": "word/document.xml:p[73]",
+                    "textSha256": "74ec86aecfd700d6919350049c4c243126aa1e840c24a868afdbe309c0c92d5c"
+                  },
+                  {
+                    "ref": "word/document.xml:p[77]",
+                    "textSha256": "8fed392c5b80ab89a007251afae0ccb9b463a92edcd65df346b534db75bd1492"
+                  },
+                  {
+                    "ref": "word/document.xml:p[110]",
+                    "textSha256": "24792f997313290dacd0fd4daf504bd11f704b8419cc5aad64b3fde18f9aa0f5"
+                  }
+                ],
+                "transformation": "compose_tariff_summary",
+                "rationale": "Combine the three verified optional excursion tariffs and the per-person USD basis without changing any amounts."
+              }
+            },
+            {
+              "blockId": "tour:note:6227935e5044cba3",
+              "field": "note",
+              "sourceTextSha256": "d1446be7a351ac13b7f4e51033b4dabdcd85f7374f210a1d03c92288c0540fe2",
+              "text": "Day 11: arrival in El Calafate and transfer from the airport to your hotel. Flights are not included.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "The Word has Day 11 arrival/transfer at p69–70 and flights exclusion at p122, but no single compact note combining them; translated the exact RU note."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:1478e05705e4a80e",
+              "field": "highlight.title",
+              "sourceTextSha256": "1383f6f3a8d91f1eac3c1bacad5382b727a830f51078215b7e00e6f8fd78ac9a",
+              "text": "Rio from above",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "The selected Word has no standalone Rio-from-above highlight title; p14 and p18 describe the corresponding mountain views, so translated the exact RU title."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:25:38.863Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

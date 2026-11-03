@@ -178,7 +178,7 @@
         "expiresAt": "2026-11-03T23:38:55.241Z"
       },
       "checkpoint": {
-        "id": "cp-b3a5215d42b7-001-4",
+        "id": "cp-b3a5215d42b7-001-8",
         "format": "inline-v1",
         "ownerId": "ada-en-b3a5215d42b7",
         "token": "ada-en-b3a5215d42b7-20261104",
@@ -266,10 +266,72 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:5e6f380dbc2a895a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c20fdd4de8a05ec5b1b42927f7f97a550ac0ffeb3f5549f0c4de6905c919815a",
+              "text": "Church of San Lucas and Toconao Bell Tower",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:78",
+                    "textSha256": "b0a7997e39f68dd7e15f85b3743ead35f50f20bbfb063bfc870ac11d38568e18"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:b0b8f01574d3a037",
+              "field": "media.alt",
+              "sourceTextSha256": "efe10526ac7ed2aa1ad3e71028bbbb8779aa9945a57b742aef319f1ce77118f1",
+              "text": "The blue Miñiques Lagoon amid arid mountain slopes, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-b3a5215d42b7-b008",
+                "wordAbsenceReason": "Verified DOCX contains itinerary prose but no corresponding image alt or hover caption; translated this current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:1d4ad3a525cd8ad6",
+              "field": "media.hover",
+              "sourceTextSha256": "b6ff6a333ef900e857a347e1d4f5aa004cd2fdfaf029e604b330c3b79f741273",
+              "text": "Miñiques in Chile: a lake below mountains with a snow-covered summit",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-b3a5215d42b7-b008",
+                "wordAbsenceReason": "Verified DOCX contains itinerary prose but no corresponding image alt or hover caption; translated this current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+              "text": "San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:140",
+                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the named place from the exact Word passage for the corresponding route label; preserve its identity."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:09:59.380Z"
+        "at": "2026-11-03T22:10:09.798Z"
       },
       "submission": null,
       "review": null,

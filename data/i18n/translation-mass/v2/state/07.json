@@ -120,7 +120,88 @@
         "claimedAt": "2026-11-03T23:12:50.596Z",
         "expiresAt": "2026-11-04T00:42:50.596Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-daf0a8173bbc-04-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-daf0a8173bbc-20261104",
+        "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b010",
+          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c73a1dc9801ae1991dfa17a3bc67ac3638eb3715529a1f9f3d13dcbde3bbab29",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:80ba047123020f04",
+              "field": "media.alt",
+              "sourceTextSha256": "ed19081d32a374221263889930ae22993f07a513e5c6b5ffbef054e94c5ae5bd",
+              "text": "Iguazu Falls and a rainbow over the river, surrounded by tropical forest, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "The selected Word describes the falls but has no alt caption identifying this photograph and its rainbow composition. Translate the current RU image metadata."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "b932872d4bd0b9c020f596cd579c4bc59aa500bc772e3616617618bf6989e3f4",
+              "text": "Argentine falls and flight to Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p87",
+                    "textSha256": "9959dd7bc782d41d61af807a9b2c7c33cf2146c90ad81c59155ee9250d4d7f73"
+                  },
+                  {
+                    "ref": "word/document.xml#p92",
+                    "textSha256": "355bec409cc93202a87aa39fbec6bd4b3ddcd44404eb33f40cdd07b67338dc0d"
+                  }
+                ],
+                "transformation": "condense_route_label",
+                "rationale": "Use the Argentine-side excursion and onward Buenos Aires flight described in Word Day 6 as a concise title for the existing day field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+              "field": "itinerary.text",
+              "sourceTextSha256": "cf230956c01b8dd83b133b06cf877132faf61d2edcacf88fa1bd40dd0ba5dabe",
+              "text": "Day 6 · Guided excursion to the Argentine side. Across the Tancredo Neves Bridge, walkways lead through the national park right above and beneath the falls, to the Devil’s Throat, the most powerful of all, and to viewpoints high above the water, where rainbows hang over the cascades. After the tour, transfer to the airport and flight to Buenos Aires; a driver meets you and takes you to the hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p92",
+                    "textSha256": "355bec409cc93202a87aa39fbec6bd4b3ddcd44404eb33f40cdd07b67338dc0d"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e62e231e47de68d8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "5b9fa0dc8001808c1d848887ec6d2d744b283e06ecf78068dac9933f8a9d5740",
+              "text": "Puerto Iguazú",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "The selected Word names the Argentine side of the national park but does not name Puerto Iguazu as this place label. Translate the current stable place label without adding a new stop."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:13:15.151Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

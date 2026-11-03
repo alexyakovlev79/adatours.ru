@@ -189,7 +189,7 @@
         "expiresAt": "2026-11-04T00:34:43.676Z"
       },
       "checkpoint": {
-        "id": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b007:cp4:821a3075",
+        "id": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b007:cp8:821a3075",
         "format": "inline-v1",
         "ownerId": "ada-en-821a3075e51e-worker",
         "token": "ada-en-821a3075e51e-token-20261104",
@@ -277,6 +277,73 @@
                 "transformation": "compose_tariff_summary",
                 "rationale": "Combined the exact Word duration, private format, minimum participation, English-speaking guide, per-person tariff and Colombo food-and-drink exclusion into the existing tariff-note field, without reproducing the separate excursion description."
               }
+            },
+            {
+              "blockId": "tour:contentBlock_text:8e5068ea209ef89a",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "5f17b7eb1644f206f9a0db01e58170f61088972ef9e7d05d8d750fdd0e27ea74",
+              "text": "Optional: a 6–13-minute helicopter flight over Rio. The route depends on the flight duration; price on request.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The verified Word supplies the 6–13-minute duration and price-on-request entry but no statement that the route depends on the duration. Translated the complete current RU note, retaining that qualification."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:7dab5b05255618a8",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "81d367e4b3711ebe4274911bd22e9a14f97b4d5a0c17483a0fdf11c8d98d8aca",
+              "text": "Optional: private Botanical Garden tour with an English-speaking guide, minimum 2 people, USD 200 per person. See avenues of palms, orchids, pau-brasil and the giant water lilies of Frei Leandro Lake.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[205]",
+                    "textSha256": "fe99028983435008000b1f151faeb9703716cea2e290a54f6d1b42ae98a2d56c"
+                  },
+                  {
+                    "ref": "word/document.xml:p[207]",
+                    "textSha256": "f2d8d6a5911da01f17e66840101d78d9be85222d68357b72ac3d96ba06f57105"
+                  },
+                  {
+                    "ref": "word/document.xml:p[208]",
+                    "textSha256": "b3660b0fd3b343a85dba164c1a5ea29dc33c9be1d6a1c93899429630dce944db"
+                  },
+                  {
+                    "ref": "word/document.xml:p[209]",
+                    "textSha256": "11bf0a862e9d6ed127b60b42635ac9760295f4080323f1118468a48875e9cbc8"
+                  }
+                ],
+                "transformation": "compose_tariff_summary",
+                "rationale": "Combined the Word optional-excursion name, tariff, minimum participation, private English-guided format and the named garden features into the existing concise tariff note, without adding features or changing rates."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:2376e037c1e519da",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "8b8a3970cb1f6ae2e2062fcd217cd5b0e3ab79f3c7d88924df9f212f631e1cc3",
+              "text": "Optional: explore Rocinha by jeep. Join a group with an English-speaking guide for $90 per person, or book privately with an English-speaking guide for $170 per person, minimum 2 people. Return to the hotel after the trip.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The verified Word favela row gives group/private rates and a local guide but omits the distinct guide-language promises and hotel-return statement present in current RU. Translated the RU note with the owner's 03 November 2026 English-service adaptation for the RU-derived private-guide language."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:c3629b96fbf116e6",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "0806a4f7a121dc1de68e3fb378a55bb80184cf451d9e894670db69e7e00839bd",
+              "text": "Optional: $390 per person. Take off from Pedra Bonita in Tijuca Forest and land on Pepino Beach. An English-speaking instructor gives you a briefing, provides the equipment and flies with you; transfers and GoPro recording are included.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The verified Word confirms the tandem instructor, locations, rate, transfers and GoPro, but has no explicit briefing or equipment-provision wording. Translated the current RU service note, preserving those stated services and the original amount."
+              }
             }
           ],
           "commercialAmendments": [
@@ -309,7 +376,7 @@
             }
           ]
         },
-        "at": "2026-11-03T23:06:12.843Z"
+        "at": "2026-11-03T23:06:47.385Z"
       },
       "submission": null,
       "review": null,

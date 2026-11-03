@@ -50,7 +50,91 @@
         "claimedAt": "2026-11-03T22:00:23.241Z",
         "expiresAt": "2026-11-03T23:30:23.241Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "04dd2e-best-b012-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-04dd2e696333-20261104",
+        "token": "ada-en-04dd2e696333-a7f39d12",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_best_14_days:b012",
+          "stableId": "tour_argentina_best_14_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "fc38486662fb84185971c75b09c3c2ac605c16f0a49ec553459a7e6f6684a194",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:9237a54cafc28af1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7261faeb5c8925b6c0f28319bfcf393058d456f59c2d8071f9aa71bdefa2a549",
+              "text": "Lake Roca (Acigami)",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The Word names Lake Roca in paragraph 92 but does not include its Acigami alias. Translate the complete frozen RU place label to retain the alternate name."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:37673b78d7c5e513",
+              "field": "itinerary.label",
+              "sourceTextSha256": "77c9757642f7644ccdb9441dc89598bcdea48f02fa342e5619df815d1bcf6320",
+              "text": "Lapataia Bay",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:92",
+                    "textSha256": "78f6ea298b07f78de86eaefdc302a151ae77832e46750e007f9f7acd704d4803"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Lapataia Bay name from the Tierra del Fuego day paragraph for its standalone place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a50fc82a8f09f5e0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "9a280ad0003c72a72aa738840c0d464e3b4a82c80532461772f0b25b05579fa5",
+              "text": "Martillo Island",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:93",
+                    "textSha256": "3c33f953c7e4b694aba175cf5d5befe23a040ad63e9ec92e504f23fce2c4e341"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Martillo Island name from the optional penguin-colony paragraph for its place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cdb307f278cccfeb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+              "text": "Ushuaia",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:90",
+                    "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:00:58.054Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

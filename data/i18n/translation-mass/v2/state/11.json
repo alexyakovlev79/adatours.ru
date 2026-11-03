@@ -164,7 +164,98 @@
         "claimedAt": "2026-11-03T23:33:37.231Z",
         "expiresAt": "2026-11-04T01:03:37.231Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f8019ad86757-09-b006-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-translator-20261104",
+        "token": "ada-en-f8019ad86757-6c94a20bf812",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b006",
+          "stableId": "tour_brazil_recife_porto_noronha_10d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "bae8029132fb3ed4590034d34f1451ed0fd703fe911ad8656ea46a8f6bfb52da",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "bae18d190799207cf02bcf621f6944239b903d524a9bf574e522b400faef9604",
+              "text": "Recife and Olinda: a full-day tour",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[66]",
+                    "textSha256": "6cfe6c8badd3287f0026145fa170775a84065b914977c92590e2157cd7ab11ae"
+                  },
+                  {
+                    "ref": "word/document.xml:p[68]",
+                    "textSha256": "fc57611971bd91e6e8199e13048eab19e7fdea561a7fd216551adfe9bcd7b7f7"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the verified Recife and Olinda destination heading with the full-day tour duration in the Day 2 passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "ba6ba42ba0f57fa7998908d8a3d01288886df52b5a2e92dc45af764465da6a33",
+              "text": "Day 2 · After breakfast, a full-day tour of Recife and Olinda. Discover the three districts of the centre, Recife, Santo Antônio and Boa Vista: the Maurício de Nassau Bridge, the Praça da República, surrounded by the Governor’s Palace, the Santa Isabel Theatre and the Palace of Justice, and the Casa da Cultura, a 19th-century former prison that is now a centre of regional culture with craft and food shops. Then Olinda, a charming town of colourful houses, artists’ studios and history, once known as “little Lisbon” and a UNESCO World Heritage Site since 1982: the Church of Mercy, the São Bento Monastery and the Cathedral of the Sé on the Alto da Sé hill, with stunning views over the coast. Olinda is also famous for its Carnival and its Giant Puppets (Bonecos Gigantes).",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[68]",
+                    "textSha256": "fc57611971bd91e6e8199e13048eab19e7fdea561a7fd216551adfe9bcd7b7f7"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c1061da84688cada",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
+              "text": "Recife",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[37]",
+                    "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:00f4ded33ad31a77",
+              "field": "itinerary.label",
+              "sourceTextSha256": "9334a42a0963f8fd149dbbd4e6273f85f5920a3e5816b3e62192280dfa0a147a",
+              "text": "Olinda",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[40]",
+                    "textSha256": "ccd283adbccf955cc9906442aed7100ffb7b1449813d3faa2344177587c8c723"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:34:21.819Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -29,7 +29,7 @@
         "expiresAt": "2026-11-03T23:28:58.784Z"
       },
       "checkpoint": {
-        "id": "cp-b002-4",
+        "id": "cp-b002-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-935f-translator",
         "token": "ada-en-935f-bxatc0v89fh-mw180til",
@@ -117,10 +117,79 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:baf4a32c564902b5:2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p2",
+                    "textSha256": "b6ac57f330d528533cfac73d58120e3e4a9b63fc804370fae5d8381152fdcbfe"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:note:c286a144e0dda28c",
+              "field": "note",
+              "sourceTextSha256": "5417beae5265f88da2a87937152b62564ee3cd82dfed857d4b7e9088ebcf5a75",
+              "text": "24 November – 4 December 2026",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p4",
+                    "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "EXACT"
+              }
+            },
+            {
+              "blockId": "tour:included:606ccfe450bfeefd",
+              "field": "included",
+              "sourceTextSha256": "0e351fe8d8a39292c3cfe289fb51e9fb7880677422b54e75de5079eae1675978",
+              "text": "–  Hotel accommodation throughout the programme.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p130",
+                    "textSha256": "6f13cac3d7c0066c864a9b2467b27eaf8ee456a4fc1008b5fb8eaaddab1fda41"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "EXACT"
+              }
+            },
+            {
+              "blockId": "tour:included:4ef8b608b1bc9df5",
+              "field": "included",
+              "sourceTextSha256": "74b52d4d4b9392319d9a6c784ff0e5d3c2242b747741b082f479bfd95784a779",
+              "text": "Breakfast, lunch and dinner",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word paragraph 131 combines the meal inclusion and spirits exclusion; translate the current RU meal-only item, leaving the separate exclusion unchanged."
+              }
             }
           ]
         },
-        "at": "2026-11-03T21:59:30.392Z"
+        "at": "2026-11-03T21:59:34.234Z"
       },
       "submission": null,
       "review": null,

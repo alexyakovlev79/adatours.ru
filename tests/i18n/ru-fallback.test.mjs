@@ -19,10 +19,11 @@ const source=()=>[
  '<a href="/adatours-en/brazil/">Страна</a><a href="/adatours-en/tours/">Туры</a><a href="/about/">О нас</a>',
  '<div data-multi-country-picker data-root-href="/adatours-en/multi-country/" data-current-root-href="/multi-country/"></div>',
  '<input data-tour-vip-toggle data-href="/adatours-en/vip/">',
- '<a href="#request">Оставить заявку</a><a href="/adatours-en/old-brazil/">Alias</a>',
+ '<a href="#request" data-lead-modal="true">Оставить заявку</a><a href="/adatours-en/old-brazil/">Alias</a>',
  '<form data-lead-form action="/live" method="post"><input name="phone"><button type="submit">Submit</button></form>',
  '<script src="https://www.googletagmanager.com/gtag.js"></script>',
  '<script src="/adatours-en/_astro/site.js" type="module"></script>',
+ '<script src="/adatours-en/form-config.js?v=test"></script>',
  '<img data-lazy-src="/adatours-en/media/home/test.webp" src="data:image/svg+xml,empty">',
  '<picture data-lazy-picture><source data-lazy-srcset="/adatours-en/media/phone.webp 400w"><img src="data:image/svg+xml,empty" data-lazy-src="/adatours-en/media/other.webp"></picture>',
  '<div data-lazy-style="background-image:url(/adatours-en/media/home/bg.webp)" data-lazy-background="1"></div>',
@@ -56,6 +57,18 @@ test('canonical mirror keeps Hero, videos, lazy images, full search and safe vis
  assert.doesNotMatch(html,/data-ada-translation-notice|currently available in Russian/);
  assert.doesNotMatch(html,/data-lead-form|method="post"|application\/ld\+json|<link rel="canonical"|googletagmanager/);
 });
+test('complete shared English pages retain one working form, modal CTA and first-party config',()=>{
+ const english=source().replace('<html lang="ru"', '<html lang="en" data-ada-shared-locale="en"');
+ const html=russianFallbackHtml(english,'/',new Set(['/','/brazil/','/tours/','/about/','/multi-country/','/vip/']),{sharedContent:true});
+ assert.match(html,/<html lang="en" data-ada-shared-locale="en" data-ada-en-content="true"/);
+ assert.match(html,/<form data-lead-form="" action="\/live" method="post">/);
+ assert.match(html,/<button type="submit">Submit/);
+ assert.match(html,/href="#request" data-lead-modal="true"/);
+ assert.match(html,/\/adatours-en\/form-config\.js\?v=test/);
+ assert.doesNotMatch(html,/mailto:info@adatours\.ru|data-ada-staging-inert-form|<form[^>]+inert/);
+ assert.doesNotMatch(html,/googletagmanager|application\/ld\+json|rel="canonical"/);
+});
+
 test('route-map popups reuse canonical EN links without cloning or changing geographic data',()=>{
  const payload={points:[{id:'rio',href:'/adatours-en/brazil/',coordinates:[-43.2,-22.9],image:'https://img.adatours.ru/media/rio.webp'}],route:['rio'],center:[-43.2,-22.9],zoom:8};
  const input=source().replace('</body>',`<section data-geo-map-payload='${JSON.stringify(payload)}'></section></body>`);

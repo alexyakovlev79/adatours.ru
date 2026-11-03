@@ -130,7 +130,12 @@ def _valid_page_url(value: str) -> bool:
         return True
 
     if host == "alexyakovlev79.github.io":
-        return parsed.path == "/adatours.ru" or parsed.path.startswith("/adatours.ru/")
+        # Same GitHub Pages origin, separate, explicitly approved EN project.
+        # Both the live URL (/en/) and the build-time canonical (without /en/)
+        # must be accepted; unrelated GitHub Pages projects stay rejected.
+        return (parsed.path == "/adatours.ru" or parsed.path.startswith("/adatours.ru/")
+                or parsed.path == "/adatours-en"
+                or parsed.path.startswith("/adatours-en/"))
 
     return False
 

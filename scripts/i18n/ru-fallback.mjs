@@ -29,7 +29,7 @@ export function discoverRussianPages(root){
  const ids=new Set();for(const item of pages){if(ids.has(item.route))fail('Duplicate route '+item.route);ids.add(item.route)}
  return pages.sort((a,b)=>a.route.localeCompare(b.route,'en'));
 }
-/** Build a full visual mirror without translation labels or live submissions. */
+/** Build full shared EN pages; legacy nonshared fallback still blocks submissions. */
 export function russianFallbackHtml(source,route,known,{sharedContent=false,entityLabels=new Map()}={}){
  if(typeof source!=='string'||!source.includes('<html')||!known?.has(route))fail('Unknown source route '+route);
  const doc=parse(source),root=walk(doc,n=>n.tagName==='html')[0],
@@ -43,14 +43,15 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  if(sharedContent)localizeSharedUiDocument(doc,{entityLabels});
  // Keep search, first-party JS, hero video and all shared editorial components.
  prune(doc,n=>
-  (n.tagName==='script'&&!get(n,'src')?.startsWith(EN_STAGING_BASE+'_astro/'))||
+  (n.tagName==='script' && !get(n,'src')?.startsWith(EN_STAGING_BASE+'_astro/') &&
+   !(sharedContent && get(n,'src')?.startsWith(EN_STAGING_BASE+'form-config.js')))||
   (n.tagName==='noscript'&&/mc\.yandex\.ru|googletagmanager/i.test(serialize(n)))||
   (n.tagName==='link'&&['canonical','alternate'].includes((get(n,'rel')||'').toLowerCase()))||
   (n.tagName==='meta'&&['og:','twitter:'].some(x=>(get(n,'name')||get(n,'property')||'').startsWith(x))));
  const robots=walk(head,n=>n.tagName==='meta'&&get(n,'name')==='robots');
  if(robots.length!==1)fail('Robots meta invalid '+route);
  set(robots[0],'content',ROBOTS);
- for(const form of walk(doc,n=>n.tagName==='form')){
+ if(!sharedContent)for(const form of walk(doc,n=>n.tagName==='form')){
   set(form,'inert','');set(form,'aria-disabled','true');
   set(form,'data-ada-staging-inert-form','true');
   form.attrs=form.attrs.filter(a=>!['data-lead-form','method','action','onsubmit'].includes(a.name));
@@ -72,7 +73,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  }
  const linkTo=href=>{
   if(!href||/^(?:https?:|mailto:|tel:|javascript:)/i.test(href))return href;
-  if(href==='#request'||href==='#lead-form')return 'mailto:info@adatours.ru';
+  if(href==='#request'||href==='#lead-form')return sharedContent ? '#request' : 'mailto:info@adatours.ru';
   if(href.startsWith('#')||href.startsWith('//')||href.startsWith('?'))return href;
   // HTML and authored Markdown can contain either withBase links or clean
   // absolute RU paths. Resolve both from the same canonical route allowlist.
@@ -84,13 +85,13 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
    return EN_STAGING_BASE+rel;
   if(rel.startsWith('media/'))return 'https://img.adatours.ru/'+rel;
   const i=rel.search(/[?#]/),pathname=i===-1?rel:rel.slice(0,i),suffix=i===-1?'':rel.slice(i);
-  if(suffix==='#request'||suffix==='#lead-form')return 'mailto:info@adatours.ru';
+  if((suffix==='#request'||suffix==='#lead-form')&&!sharedContent)return 'mailto:info@adatours.ru';
   const target=normal(pathname);
   return known.has(target)?EN_STAGING_BASE+'en/'+target.slice(1)+suffix:'https://adatours.ru/'+rel;
  };
  for(const a of walk(doc,n=>n.tagName==='a')){
   const href=get(a,'href');if(href!==null)set(a,'href',linkTo(href));
-  a.attrs=a.attrs?.filter(x=>x.name!=='data-lead-modal')??[];
+  if(!sharedContent)a.attrs=a.attrs?.filter(x=>x.name!=='data-lead-modal')??[];
  }
  // Script-driven filters navigate through data-href rather than anchor href.
  // Keep country/interest/VIP selectors in the same complete EN route tree.

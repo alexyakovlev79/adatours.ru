@@ -72,7 +72,84 @@
         "claimedAt": "2026-11-03T22:03:30.693Z",
         "expiresAt": "2026-11-03T23:33:30.693Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-868ef48d-05-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-868ef48df4c8-20261104",
+        "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b007",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "71d08ac7d071c9f7066b9c2fc376de599598eb33f70210acb69a9ab1a9d117a0",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:0b7e02720403c28f",
+              "field": "media.alt",
+              "sourceTextSha256": "e8d52f3c34251f546ae4212f68243cf2cff1b4c806ea4f454258dba7da5db24f",
+              "text": "Viewing platform with visitors beside the powerful Iguazu Falls, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The selected Word has no corresponding image-specific alt text; translated the exact current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:5077acfaaf268f91",
+              "field": "media.hover",
+              "sourceTextSha256": "5f97b1715a13044b68bef23070e006a8082f5bf2208edd05ed86c7705e6f7918",
+              "text": "Iguazu from the Brazilian side: a viewing platform above the falling water",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-868ef48df4c8-20261104",
+                "wordAbsenceReason": "The selected Word has no corresponding image-hover caption; translated the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:09e3218e786e0449",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+              "text": "Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p144",
+                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "dec7b838b75a9aeac039755eb70056d8504594667a6a8a05091385cfe9a1a033",
+              "text": "The Argentine side of Iguazu Falls",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p94",
+                    "textSha256": "f3dd355412814b13e69810adb7a3299588361a89b0a5a7beb0db73e1b78eafbb"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Composes the existing itinerary title from the verified Word day's Argentine-side visit, using its established Iguazu Falls name."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:04:21.590Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

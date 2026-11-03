@@ -215,7 +215,7 @@
         "expiresAt": "2026-11-04T00:41:49.696Z"
       },
       "checkpoint": {
-        "id": "ada-en-a104-da0b8743c7e9:tour_brazil_rio_iguazu_jewish_heritage_8_days_b001:cp4",
+        "id": "ada-en-a104-da0b8743c7e9:tour_brazil_rio_iguazu_jewish_heritage_8_days_b001:cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-a104-da0b8743c7e9",
         "token": "c0d02798bb754ec6a8504ed642bc5ea4",
@@ -336,13 +336,89 @@
                   "transformation": "contextual_label",
                   "rationale": "The Word specifies shared guided tours and private driver-only transfers and Brazilian Falls services; this short field labels that documented mixed format."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:d40b6321bc1ef50d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                  "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p194",
+                      "textSha256": "d32b94e2f397feacee3a794afbf60c26aff66586aa53f3e65714c74f1534557c"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Extracts the city name from the exact Word included-service paragraph for the route label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:b4a101a4607d4777",
+                "field": "itinerary.label",
+                "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+                "text": "Foz do Iguaçu",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                  "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p8",
+                      "textSha256": "644316e2355999ae677325183aef7836ffd7d2cf5dd8b6fde441c9dd33df5fc0"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Extracts the destination name from the exact Word route and overnight summary without the night-count suffix."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:682bc978fc6cd924",
+                "field": "itinerary.label",
+                "sourceTextSha256": "1c26f0bb98450328b796ed86b80cf94bdfa4e9a3ea498b27d81a725f0acd0e9e",
+                "text": "Argentine side of Iguazu",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                  "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p21",
+                      "textSha256": "1bc2687061d210658efb87f8c75230bd515995c583728e496c9f7bda0bf2b543"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Extracts the exact named Argentine-side destination from the Word destination summary, omitting the surrounding country and parentheses."
+                }
+              },
+              {
+                "blockId": "tour:included:158fd0039d6fc4e7",
+                "field": "included",
+                "sourceTextSha256": "d9b17ecdb9b0d4e4a77c739209253b52b6014ba29104a584523ee30705a49931",
+                "text": "Accommodation in the hotels stated in the programme, with breakfast, or similar",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                  "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p193",
+                      "textSha256": "e16b833469a8fcb7b76c6227ed1791b58865963e1cea124af33a635f88e30979"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the printed dash and following spaces from the exact Word inclusion paragraph; wording and service scope are preserved."
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "submissionId": "ada-en-a104-da0b8743c7e9:tour_brazil_rio_iguazu_jewish_heritage_8_days_b001"
         },
-        "at": "2026-11-03T23:13:13.438Z"
+        "at": "2026-11-03T23:13:17.288Z"
       },
       "submission": null,
       "review": null,

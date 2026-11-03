@@ -142,7 +142,95 @@
         "claimedAt": "2026-11-03T23:18:35.054Z",
         "expiresAt": "2026-11-04T00:48:35.054Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-daf0a8173bbc-06-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-daf0a8173bbc-20261104",
+        "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b002",
+          "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c72172b0dcdbd038808c92184f9c2c55d29cbc3f44776d3cf81b9f2635188f19",
+          "blocks": [
+            {
+              "blockId": "tour:note:be9088d517b5bb02",
+              "field": "note",
+              "sourceTextSha256": "9e6e2ccd02867cc3c79f6a725e2e4189ee014b9d16fd9c838044a46836021c3c",
+              "text": "30 December 2026 – 9 January 2027",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p4",
+                    "textSha256": "b47dd9dfd7aeb04588ab40f56f87afb35393b706cd860e726c514509695b549b"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Render the exact Word numeric start and end dates with named months so the date range is unambiguous to an English-speaking reader."
+              }
+            },
+            {
+              "blockId": "tour:included:d0cdffe63ae11c88",
+              "field": "included",
+              "sourceTextSha256": "65ffc0e38ef3fe11b6728118e8a746731c47e1e0a58a929afe411232bc42c7ae",
+              "text": "10 nights in the suggested hotels or similar",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p6",
+                    "textSha256": "578c4dc93b34b5da08bab57ce1389c5ae489c1d2ed47e8a9602341b115b46b5d"
+                  },
+                  {
+                    "ref": "word/document.xml#p184",
+                    "textSha256": "c598f826a79ec7db385319430c2f6c7de29049ed1d18ede453e35e16f2c64071"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the exact ten-night duration with the approved hotel-accommodation inclusion to fit the existing nights-and-hotels service field."
+              }
+            },
+            {
+              "blockId": "tour:included:9871cdb588dfaddb",
+              "field": "included",
+              "sourceTextSha256": "61827ddc25c651871acdcf02c36f7cb3658d39421d03fc77ececab2c5957d254",
+              "text": "Tours according to the Program in group with English-speaking guide (Russian-speaking available on request)",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p186",
+                    "textSha256": "53857d510d2df1d5e75af02f48fb40b8483b1a08d07f2ab62ad31e8c8cb62e88"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:included:053b0e1c83383627",
+              "field": "included",
+              "sourceTextSha256": "c4178f173d2fb58a24aefcdeb187e7c2ef176ca5d0ac5fcfb484371874bb5b0f",
+              "text": "Group transfers with a driver according to the programme.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "Word paragraphs57,91 and106 describe driver transfers and p7 identifies the group tour, but there is no exact group-transfer inclusion sentence corresponding to this RU field. Translate its current service scope."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:19:09.850Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

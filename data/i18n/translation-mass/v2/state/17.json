@@ -131,7 +131,98 @@
         "claimedAt": "2026-11-03T22:21:31.138Z",
         "expiresAt": "2026-11-03T23:51:31.138Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "04dd2e-hidden-b028-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-04dd2e696333-20261104",
+        "token": "ada-en-04dd2e696333-a7f39d12",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b028",
+          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "779ee43f9814ca6b72fb7c6fd8651971d14b36e73f7f24cadf1253c49b39d199",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:b8dc1a9ea4cb3d2b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "87fe574bd51f17d5205651d78ebdd2145a78f6fd10f8d39d01b4fadbc57f4cb6",
+              "text": "Valparaíso and Viña del Mar",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:158",
+                    "textSha256": "3ba0b9671cd8f4a42d9d40c3ac8c1360b09903b780f92975bb7b9729cdabae43"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact two coastal destination names from the Word excursion paragraph for the combined place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0262dfd7fd020126",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:111",
+                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:c023ff35c9198da6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "305a1cbe1ba0e15b7bba98fcd8d4595f1415aeb0f97e2eb91b704785448f0918",
+              "text": "Curacaví Valley",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:158",
+                    "textSha256": "3ba0b9671cd8f4a42d9d40c3ac8c1360b09903b780f92975bb7b9729cdabae43"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract Curacaví from the exact paired-valleys phrase and express the shared valleys noun in the singular for this standalone place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7c5c468e65dd046b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f7fc74b7c8aa30b74f31cb26fb2ff7337bcf6459a3c8ef09bdff01e8e88db556",
+              "text": "Casablanca Valley",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:158",
+                    "textSha256": "3ba0b9671cd8f4a42d9d40c3ac8c1360b09903b780f92975bb7b9729cdabae43"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract Casablanca from the exact paired-valleys phrase and express the shared valleys noun in the singular for this standalone place label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:22:34.812Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2256,
-    "leased": 21,
+    "queued": 2255,
+    "leased": 22,
     "review": 133,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2256,
-      "leased": 21,
+      "queued": 2255,
+      "leased": 22,
       "review": 133,
       "ready": 1,
       "retryable": 0,
@@ -1008,8 +1008,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 79,
-          "leased": 0,
+          "queued": 78,
+          "leased": 1,
           "review": 5,
           "ready": 0,
           "retryable": 0,
@@ -1040,7 +1040,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:57:44.591Z",
       "earliestRetryAt": null
     },
     "0f": {
@@ -1432,6 +1432,12 @@
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
       "token": "tkn-6b8358141bab-20261104",
       "expiresAt": "2026-11-03T23:57:28.551Z",
+      "generation": 1
+    },
+    "ada-en-40d0e44eb57848bf": {
+      "jobId": "en:bulk:tour:tour_brazil_gems_14d:b011",
+      "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
+      "expiresAt": "2026-11-03T23:57:44.591Z",
       "generation": 1
     }
   },
@@ -2008,7 +2014,8 @@
     "ada-en-40d0e44eb57848bf": {
       "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
       "jobIds": [
-        "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b005"
+        "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b005",
+        "en:bulk:tour:tour_brazil_gems_14d:b011"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b005"
@@ -2037,5 +2044,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:27:37.460Z"
+  "updatedAt": "2026-11-03T22:27:44.591Z"
 }

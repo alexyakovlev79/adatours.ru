@@ -40,7 +40,8 @@ test('lost update_ref response confirms committed head without a second mutation
 });
 test('GitHub transport and internal GraphQL errors are resumable, not external job blockers',async()=>{
  for(const message of ['GithubGraphQLAPIError: Something went wrong executing query',
-  'Transport closed','503 Service unavailable','ECONNRESET']){
+  'Transport closed','RemoteProtocolError: Server disconnected without sending a response.',
+  '503 Service unavailable','ECONNRESET']){
   const out=await runEnMassTranslation({mcp__GitHub__fetch:async()=>{throw Error(message)}},
    {},{action:'claim',ownerId:'worker_one',token:'stable_token'});
   assert.equal(out.status,'transport_retryable');assert.equal(out.retryable,true);

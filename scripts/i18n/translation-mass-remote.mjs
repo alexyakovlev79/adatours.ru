@@ -13,7 +13,7 @@ const denied=/\b40[13]\b|forbidden|permission denied|unauthori[sz]ed|bad credent
 const conflict=/non.fast.forward|expected.sha|409|422|reference|conflict|mismatch|changed/i;
 // Connector GraphQL failures and lost replies are transport failures, not
 // evidence that Word/Drive is unavailable. Never turn them into job failures.
-const transient=/GithubGraphQLAPIError|Transport closed|internal (?:server )?error|something went wrong|bad gateway|service unavailable|gateway timeout|\b50[0234]\b|ECONNRESET|ETIMEDOUT|fetch failed|network error|response lost/i;
+const transient=/GithubGraphQLAPIError|RemoteProtocolError|Server disconnected|Transport closed|internal (?:server )?error|something went wrong|bad gateway|service unavailable|gateway timeout|\b50[0234]\b|ECONNRESET|ETIMEDOUT|fetch failed|network error|response lost/i;
 const safe=s=>s.replace(/[^A-Za-z0-9_.-]/g,'_').slice(0,190);
 const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const nowValue=s=>{if(!Number.isFinite(Date.parse(s)))throw Error('Exact UTC timestamp required');return s};

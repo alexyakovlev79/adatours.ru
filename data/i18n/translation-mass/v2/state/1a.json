@@ -546,168 +546,22 @@
     {
       "jobId": "en:bulk:tour:tour_colombia_cano_cristales_8_days:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "26a8eb2eca72034a2d8a73dee6f88cd4dc0203193cb2b5c18ebecd7ce2042a11",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-9457ab67-20261104",
-        "token": "ada-en-token-9457ab67-20261104",
-        "claimedAt": "2026-11-03T23:05:34.028Z",
-        "expiresAt": "2026-11-04T00:35:34.028Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-9457ab67-n3-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-9457ab67-20261104",
-        "token": "ada-en-token-9457ab67-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_colombia_cano_cristales_8_days:b010",
-          "stableId": "tour_colombia_cano_cristales_8_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "26a8eb2eca72034a2d8a73dee6f88cd4dc0203193cb2b5c18ebecd7ce2042a11",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:8ee6b48f33e3c4fa",
-              "field": "itinerary.label",
-              "sourceTextSha256": "722e1d0c7ce4c3c1fa9fc0498a9c756e0ffe9ad94ee250556d716ca49e3d6486",
-              "text": "Caño Cristales",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
-                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p76",
-                    "textSha256": "8fa7c269dc2c7e821555bc0cc5ddec37c29ebf6523346f75dff79d196abe885a"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:6d4dd95cd4c77184",
-              "field": "media.alt",
-              "sourceTextSha256": "6370204633133dc74cb3adc94da211a863c3368cee1036f147d048c93548e6fd",
-              "text": "Pink aquatic plants in the clear waters of Caño Cristales",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-9457ab67-20261104",
-                "wordAbsenceReason": "No image-specific alt text appears in the verified Word; the itinerary describes the coloured river in paragraphs 77–79. Translated the exact RU image description."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
-              "field": "itinerary.title",
-              "sourceTextSha256": "6b3e07130575377f6875ddfde0d7b81a4d244fbaadd2678ddbc9d501da765ae8",
-              "text": "Sunrise on the Guayabero River and return to Bogotá",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
-                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p84",
-                    "textSha256": "bfa8a98e07f110fd468d1adbed50b571b8688a69e24f295e1d7bf27d5b47699c"
-                  },
-                  {
-                    "ref": "word/document.xml#p87",
-                    "textSha256": "245f7e0fe760f28c11b37eb12ff07fb5cc347e80a0b6c8bc128d11631e3797cd"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Composed the itinerary heading from the Word sunrise heading and the exact Day 7 return destination, without adding a new visit."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:2e780f63f4172747",
-              "field": "itinerary.text",
-              "sourceTextSha256": "c742fe7bfc7c8f6341b42dcc21429cedec964457f074889bb9ba9b03cae58b95",
-              "text": "Before dawn, a peaceful canoe journey about an hour upriver on the Guayabero as first light reaches the jungle, then drift back with the current; with luck, you may spot pink river dolphins, known locally as “toninas”. Watch for birds and other animals along the way. Breakfast at the lodge, a last canoe ride to La Macarena and the flight back to Bogotá; depending on the schedule, time for a final lunch. Private transfer to the hotel. Pack your belongings after breakfast at La Manigua and transfer to the airport in La Macarena. Private transport, accommodation in Bogotá and a local medical assistance card are included; dinner is not included. Overnight in Bogotá.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-9457ab67-20261104",
-                "wordAbsenceReason": "The current RU Day 7 has details absent from Word paragraph 87: bird/animal watching, packing, airport transfer and the explicit accommodation, medical-card and dinner conditions. Preserved paragraph 87's English wording and translated those additional RU details; not claimed as word_exact."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:0db4f4118b540903",
-              "field": "itinerary.label",
-              "sourceTextSha256": "7e2a8dffa0bf2e9b2555561e5ffb98193487c8c8d4ee36625ab8e4ca12aa645f",
-              "text": "La Macarena",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
-                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p21",
-                    "textSha256": "a42e17e47bd7d13cc8766879f309cc0473d32b41af153267e3494e5b6591c165"
-                  },
-                  {
-                    "ref": "word/document.xml#p87",
-                    "textSha256": "245f7e0fe760f28c11b37eb12ff07fb5cc347e80a0b6c8bc128d11631e3797cd"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extracted the exact destination name from Word destination and Day 7 paragraphs as the place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:9b75cb156aca6e72",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e624958247a4886c51337c7346cf3ba7e9c77c6f40b3bc309396298b052baf87",
-              "text": "Guayabero River",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
-                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p52",
-                    "textSha256": "020d74e92f8985f0009de10b7b97667feb8561d60f682ee0b2634be9db337df2"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:7343e8aba3dfd053",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
-              "text": "Bogotá",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
-                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p66",
-                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:5c9b98b64c9665c1",
-              "field": "media.alt",
-              "sourceTextSha256": "7d4f7df0f97fc0bb27a3aff5039777b49792ed54474284da62d7acdce8799c21",
-              "text": "The bow of a boat on the Guayabero River amid rocky banks and tropical forest, Colombia",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-9457ab67-20261104",
-                "wordAbsenceReason": "No image-specific alt text in the Word Day 7 paragraph 87. Translated the current RU image description without adding identification."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:06:07.174Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-9457ab67-n3-v1",
+        "blobSha": "62e7e4d53f2ef7450930b2430bf62562a4082815",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_colombia_cano_cristales_8_days_b010/ada-en-9457ab67-n3-v1.json",
+        "at": "2026-11-03T23:07:54.789Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

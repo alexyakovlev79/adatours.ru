@@ -119,90 +119,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "931677bd41e7d25084df692e1c6fa27da1f3589cd6dd39fc25a3b22b126d7510",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-79f7d751",
-        "token": "ada-en-token-79f7d751edf341a6",
-        "claimedAt": "2026-11-03T22:00:03.255Z",
-        "expiresAt": "2026-11-03T23:30:03.255Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-20261104-79f7d751-b006-tour_brazil_foz_iguazu_three_days-cp4",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-79f7d751",
-        "token": "ada-en-token-79f7d751edf341a6",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b006",
-          "stableId": "tour_brazil_foz_iguazu_three_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "931677bd41e7d25084df692e1c6fa27da1f3589cd6dd39fc25a3b22b126d7510",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "2d8d021e23fdbdaaf4e586a472ba3e27b90d33c00374955e8654fd8debbc207c",
-              "text": "After breakfast, private transfer to Foz do Iguaçu International Airport, or continue your journey to your next destination. End of services.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1f-s5PVE55Y7O2HVcliOid_NuetKLc8Bi",
-                "documentSha256": "e5f2b52b7f03c7e3a1266f09c3dc742fe8ee71a85520bbe560d2be148588f3cd",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p81",
-                    "textSha256": "c4f02f7d0b3e681a3c2de5004096d78f967e3aa3d1c0ab907d19f33c4d4c91e7"
-                  }
-                ],
-                "transformation": "strip_list_marker",
-                "rationale": "Removed the Day 3 label from the exact Word paragraph; retained the complete service wording."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5a6309c87d048154",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-              "text": "Foz do Iguaçu",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-79f7d751",
-                "wordAbsenceReason": "The selected Word was read and SHA-verified. This exact RU field, image caption or condensed wording is not present as a standalone English passage; translated from the frozen RU block without adding Word-only details."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:3e1549c731669458",
-              "field": "media.alt",
-              "sourceTextSha256": "b10d4ad28a907e46a50edf11f0938bf5ddf61951b10ffe3a5765e92e095ad736",
-              "text": "Iguazú Falls with a cloud of spray and wooded riverbanks",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-79f7d751",
-                "wordAbsenceReason": "The selected Word was read and SHA-verified. This exact RU field, image caption or condensed wording is not present as a standalone English passage; translated from the frozen RU block without adding Word-only details."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:642ca9d21aa9058b",
-              "field": "media.hover",
-              "sourceTextSha256": "c9b511cd3d6da682ecb3ea9c274faae85de8c78d16feed0f4ccbb8444830af28",
-              "text": "Iguazú: a panorama of waterfalls amid green slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-20261104-79f7d751",
-                "wordAbsenceReason": "The selected Word was read and SHA-verified. This exact RU field, image caption or condensed wording is not present as a standalone English passage; translated from the frozen RU block without adding Word-only details."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:01:00.266Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-20261104-79f7d751-b006-tour_brazil_foz_iguazu_three_days",
+        "blobSha": "e90dc8ec6c38597bfdc3f676a949b0285c6549e5",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_foz_iguazu_three_days_b006/ada-en-20261104-79f7d751-b006-tour_brazil_foz_iguazu_three_days.json",
+        "at": "2026-11-03T22:05:59.588Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

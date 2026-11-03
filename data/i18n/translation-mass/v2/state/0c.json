@@ -63,7 +63,93 @@
         "claimedAt": "2026-11-03T21:52:22.834Z",
         "expiresAt": "2026-11-03T23:22:22.834Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-b018-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-935f-translator",
+        "token": "ada-en-935f-bxatc0v89fh-mw180til",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b018",
+          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "2933e6fef3d60477c6c252f146261e23432d0df52f175a3d42b4612cea407888",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:b4fa34c84376a72e",
+              "field": "media.hover",
+              "sourceTextSha256": "65ee4cd937d6a79cf783b42b91b034545c1727da291f11fbcdd743efc5697224",
+              "text": "Torres del Paine, Chile: a guanaco against towering rocky peaks",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:97177df0563dac22",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+              "text": "Puerto Natales & Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p123",
+                    "textSha256": "9f43d83d52c343ec312fbee4e87d67a9531b8978d78cd8c399d047ede0562abe"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:56114310a9641f92",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c1396b57b2ffab559eac79f8b05dccf894edd995996ea11e7096f982e546aa05",
+              "text": "Milodón Cave",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p124",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:cfeac5a79e456be7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "52913d1f3b8db35a873a05452fba25a6c4b75308b736ebf5b6536882c397570a",
+              "text": "Sofía Lagoon",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p124",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:53:26.249Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

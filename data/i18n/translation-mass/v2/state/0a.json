@@ -64,7 +64,7 @@
         "expiresAt": "2026-11-03T23:27:31.146Z"
       },
       "checkpoint": {
-        "id": "cp-b012-4",
+        "id": "cp-b012-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-935f-translator",
         "token": "ada-en-935f-bxatc0v89fh-mw180til",
@@ -138,10 +138,76 @@
                 "runId": "ada-en-20261104-935f-translator",
                 "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
               }
+            },
+            {
+              "blockId": "tour:media_hover:822cc673b73e6830",
+              "field": "media.hover",
+              "sourceTextSha256": "6d3ca72ab2bc8818a0b1c03803f22bd58612f26fa3caa12e014ccd3d8d41b43d",
+              "text": "Luján de Cuyo: vineyards at the foot of the snow-capped Andes",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:359c7c25395d1837",
+              "field": "itinerary.title",
+              "sourceTextSha256": "33cd1ffaed60d859a889d8ac5caef51c568c403b14d6b4439e804894adfa4ff4",
+              "text": "Uco Valley wineries",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p41",
+                    "textSha256": "eea2f59735a34d80a9af4e90bd3b567a26117e8b5b7e79acbf6f01faff15e285"
+                  },
+                  {
+                    "ref": "word/document.xml#p42",
+                    "textSha256": "a0a5db5d2b5928e8a688928c52a8bc3a2d03a3a960f5554e815b06d9c7cd7d89"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose the itinerary title from the valley and wineries explicitly named in Word."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+              "field": "itinerary.text",
+              "sourceTextSha256": "49d75bf8597d29718dadd42551ee7efa9a932c57e14526464dc6748b1e9fdcdf",
+              "text": "Visit boutique wineries in the Uco Valley with an English-speaking guide and taste high-altitude wines. Overnight at Entre Cielos, Superior Room.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "Word paragraph 42 describes the excursion but does not contain this condensed itinerary block with its overnight accommodation. Translate the full RU block, applying the owner's English service-language adaptation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3d62be247bdf335b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+              "text": "Mendoza",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p36",
+                    "textSha256": "f92b8e3cdb6078e591a13d1c1a2a793d68983bfb037082624e6c8cf818d721c0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
             }
           ]
         },
-        "at": "2026-11-03T21:58:42.764Z"
+        "at": "2026-11-03T21:58:46.896Z"
       },
       "submission": null,
       "review": null,

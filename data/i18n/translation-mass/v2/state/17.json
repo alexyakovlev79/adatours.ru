@@ -211,7 +211,7 @@
         "expiresAt": "2026-11-04T00:38:31.604Z"
       },
       "checkpoint": {
-        "id": "ada-en-4406908c67fe-1104-p9-4",
+        "id": "ada-en-4406908c67fe-1104-p9-8",
         "format": "inline-v1",
         "ownerId": "ada-en-4406908c67fe-1104",
         "token": "ada-en-token-4406908c67fe",
@@ -327,11 +327,109 @@
                     ]
                   }
                 }
+              },
+              {
+                "blockId": "tour:contentBlock_text:021e960518bb4f4f",
+                "field": "contentBlock.text",
+                "sourceTextSha256": "fc85329c4b91ec3ffdcfdc7fafa39766bd806726f60cb2c4d650ee93ead5e24b",
+                "text": "Breakfast at the hotel. Join a group city tour of Santiago with an English-speaking guide, visiting the historic centre, Santa Lucía Hill and modern neighbourhoods.\n\nFor an additional charge, you can visit wineries in the Maipo Valley with a tasting. The cost is $230 per person, with a minimum of 2 participants.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word day112 does not include the current RU Maipo option price of $230 or the two-participant minimum. Translate the complete current RU block retaining these existing terms and apply English service-language rule.",
+                  "wordEvidence": {
+                    "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                    "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p112",
+                        "textSha256": "185d67ce26587d7e6754447ff924883cc7dc5b5f91f33df6e05ff6d9a86fe5d5"
+                      },
+                      {
+                        "ref": "word/document.xml:p115",
+                        "textSha256": "ceaafb26073aa7ff3188a12dcac7594bb8f9e5fe9d6036b7f3135802b6bb357a"
+                      },
+                      {
+                        "ref": "word/document.xml:p116",
+                        "textSha256": "207c535960a24c55d6c6db8466c4b3f6919042f16ea1877d68d77c130f9b0d23"
+                      },
+                      {
+                        "ref": "word/document.xml:p117",
+                        "textSha256": "ee1f63ff5765ba6dcecd135dede5a24b2e31dcfbadac0f31652582a077da87d8"
+                      },
+                      {
+                        "ref": "word/document.xml:p186",
+                        "textSha256": "53857d510d2df1d5e75af02f48fb40b8483b1a08d07f2ab62ad31e8c8cb62e88"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "tour:media_alt:5fce48d567cc5627",
+                "field": "media.alt",
+                "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
+                "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word document has no corresponding image alternative description."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:359c7c25395d1837",
+                "field": "itinerary.title",
+                "sourceTextSha256": "704c586404f6bcbbe741df877140fa28f2f37f241226c14cee89ddcb9ffbcc84",
+                "text": "9 January 2027: departure from Santiago",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The current RU departure heading is more explicit than the Word day121 heading; preserve the exact current RU date and action.",
+                  "wordEvidence": {
+                    "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                    "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p121",
+                        "textSha256": "86c1918baeb3db0c16d843485b604c28ba8c64e2fa8b719b93fb62da6b352dec"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+                "field": "itinerary.text",
+                "sourceTextSha256": "205fef215806a72d6c30c6231526ab79c5a57b90b5e1cb6ff4f5f848ced9c2a8",
+                "text": "Breakfast at the hotel. At the scheduled time, transfer with a driver to Santiago Airport for your flight home. The international flight is charged separately.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The current RU specifies a scheduled driver transfer and separately paid international flight beyond the Word departure sentence; translate those existing RU details without changing terms.",
+                  "wordEvidence": {
+                    "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                    "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p122",
+                        "textSha256": "b71b7c1af8286fe39ed724e5c3682e7c1c7b6b882600f77dca48976ba3c896d4"
+                      },
+                      {
+                        "ref": "word/document.xml:p193",
+                        "textSha256": "451e4f1debd3c46b08c1d6c34c79a7ae42ba4b5b91e971c981554d99b82ba0e9"
+                      }
+                    ]
+                  }
+                }
               }
             ]
           }
         },
-        "at": "2026-11-03T23:09:24.348Z"
+        "at": "2026-11-03T23:09:27.776Z"
       },
       "submission": null,
       "review": null,

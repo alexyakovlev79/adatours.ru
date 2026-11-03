@@ -28,7 +28,108 @@
         "claimedAt": "2026-11-03T21:52:55.202Z",
         "expiresAt": "2026-11-03T23:22:55.202Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "04dd2e-agri-b009-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-04dd2e696333-20261104",
+        "token": "ada-en-04dd2e696333-a7f39d12",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b009",
+          "stableId": "tour_argentina_agricultural_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "1db0db50f7df83106bde18000989faaeb82f9c3bea2535ec43014f02ba91fb27",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:3eb766028af08dbb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "147553dd2e7096254044641e1a2da00602a3f8a7c6276240ba95a28d9edd60b0",
+              "text": "Trenque Lauquen",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:64",
+                    "textSha256": "885613752c49f3e9d87eb225cb96ff46461e297cde426beb35e3a1b5acbebabf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the first city from the exact day route heading; use standard place-name capitalisation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0b4168d1a47fb28f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "b6259e0ee3b46944fbb4951f3c009713142a132afd3f261e49d83033d27d5432",
+              "text": "Coronel Suárez",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:64",
+                    "textSha256": "885613752c49f3e9d87eb225cb96ff46461e297cde426beb35e3a1b5acbebabf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the second city from the exact day route heading; retain its Spanish accent."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:08268b3f7825b6f9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "843faac5a44494db03fc854c56438586278d013f190ea40f2f4e3e33a5fe2cdb",
+              "text": "Sierra de la Ventana",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:64",
+                    "textSha256": "885613752c49f3e9d87eb225cb96ff46461e297cde426beb35e3a1b5acbebabf"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the final city from the exact day route heading; use standard place-name capitalisation."
+              }
+            },
+            {
+              "blockId": "tour:contentBlock_text:cef619bb77dd414a",
+              "field": "contentBlock.text",
+              "sourceTextSha256": "b313a9a517b3af6a1f6554c89e79d8b162ef69936a0f0c42a15c62b04b8192bd",
+              "text": "Visit a working agricultural enterprise using precision farming techniques.\n\nLate morning  ·  Travel to Coronel Suárez\n\n13:00–14:00  ·  Lunch",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:68",
+                    "textSha256": "a05bd059eebdb667f68f307c4d678fcd26d2ef7fd9bc576205544eb82ccd5564"
+                  },
+                  {
+                    "ref": "word/document.xml:p:69",
+                    "textSha256": "e063dab499929780e7d9da946873415497d5b1a6fa766e3f8f8bdd7ba2adf575"
+                  },
+                  {
+                    "ref": "word/document.xml:p:70",
+                    "textSha256": "80debf41ce52cdbd4676846665ea0cc2c7ff333343fa365ab7945c5a4a8b7561"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the exact farm visit, travel and lunch passages corresponding to this morning-and-lunch content block without adding facts."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:54:04.890Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -63,7 +63,89 @@
         "claimedAt": "2026-11-03T21:58:10.253Z",
         "expiresAt": "2026-11-03T23:28:10.253Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "grand-b003-4-v1",
+        "format": "inline-v1",
+        "ownerId": "ada-en-7963199f582c",
+        "token": "ada-en-20261104-7963199f582c-stable",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b003",
+            "stableId": "tour_argentina_grand_tour_15_days_2027",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "78b3c10505dc43c3d2462b012d64d88bf0b4fb06259bc42138d145ee3285d68d",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:2fd4a75b8b01499f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7c23851037d843547ded8c51de18c116fa84d8466693ce6f636296ce52b1e596",
+                "text": "Perito Moreno",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p49",
+                      "textSha256": "42d79a7b9d0b2978aac472cca96c905574bd6305821c0e4b056dc70f2168beb2"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the glacier's proper name from the verified Day 13 heading, preserving the shorter RU route label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:baf4a32c564902b5:2",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+                "text": "Buenos Aires",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p53",
+                      "textSha256": "a0329013c1efa6e57a90481cb72bd48cb50b075e69e409a92f3efb156825bf39"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the arrival city from the verified Day 14 route heading."
+                }
+              },
+              {
+                "blockId": "tour:included:da3bac7a94b8d2be",
+                "field": "included",
+                "sourceTextSha256": "54ed9c5a8630f1f3bf82312d245e6846557f76485557028e358ce85c94635eb1",
+                "text": "Accommodation in the listed hotels and room categories, 14 nights, with breakfast (BB)",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraphs 3 and 58–66 specify the total nights and individual hotel/room/BB entries; there is no single standalone aggregate inclusion sentence matching this RU block. Translate the current RU summary without changing hotels or nights."
+                }
+              },
+              {
+                "blockId": "tour:included:19b4d5aab2dd8407",
+                "field": "included",
+                "sourceTextSha256": "4d4a70b9507e78a12bcd20288c07057195d1cce988619b223aa0a639b73b8dbd",
+                "text": "English-speaking guides on the days indicated in the programme",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "The verified Word specifies English-speaking guides separately in the relevant day paragraphs, but has no standalone inclusion matching the RU summary. Translate this RU-derived service label using the owner's 03 November 2026 English-language adaptation rule."
+                }
+              }
+            ]
+          },
+          "submissionId": "ada-en-7963199f582c-grand-b003-v1"
+        },
+        "at": "2026-11-03T21:59:14.970Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

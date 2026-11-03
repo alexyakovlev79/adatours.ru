@@ -95,7 +95,7 @@
         "expiresAt": "2026-11-03T23:34:49.656Z"
       },
       "checkpoint": {
-        "id": "04dd2e-jewish-b007-4",
+        "id": "04dd2e-jewish-b007-8",
         "format": "inline-v1",
         "ownerId": "ada-en-04dd2e696333-20261104",
         "token": "ada-en-04dd2e696333-a7f39d12",
@@ -176,10 +176,94 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact Itacuruçá village name from the tropical-islands excursion paragraph, preserving Portuguese diacritics."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:696f370bdf2bbd56",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:62",
+                    "textSha256": "91f712745250e85e1c0796a68926711c5deab1204211a4d1d21567d6b8f55e0d"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Rio de Janeiro place name from the day heading, using normal place-name capitalisation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:db7c603f6232325b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "58abf2a1ebd4efe4c0e8d0c25a9543b82a4b326b6788db043ffe5182570e47cf",
+              "text": "Petrópolis",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:180",
+                    "textSha256": "3f30e3e54d1c1465fef768cf7fcd538980f2932f2d1db37363319e2c7b5ffe44"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact city name from the Imperial Petrópolis excursion title, retaining its accent."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "576912e7dc0947971ddb36ca2d2d017f167d78c757d73b841e97d9895d0f11a3",
+              "text": "Flight from Rio de Janeiro to Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:96",
+                    "textSha256": "63ba157cd8cee4f73dd01da60ed0c417640b32faef0fd7abb381f87573634c1b"
+                  },
+                  {
+                    "ref": "word/document.xml:p:100",
+                    "textSha256": "72c4223a7860a6d55e9eaf76efaaf5eecd5e51068554f187ab2f83a0950de279"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the flight-day title from the exact departure and arrival locations in the route heading and Day 5 paragraph."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:b04d5d61d358e759",
+              "field": "itinerary.text",
+              "sourceTextSha256": "4b53bc7137891774e2c509414395de988d766f70ac797034a4f7b5cd8f90738d",
+              "text": "Breakfast at the hotel and transfer to the airport for your flight to Foz do Iguaçu; transfer to your hotel. Free day.\n\nYou will spend 3 nights in Foz do Iguaçu.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:100",
+                    "textSha256": "72c4223a7860a6d55e9eaf76efaaf5eecd5e51068554f187ab2f83a0950de279"
+                  },
+                  {
+                    "ref": "word/document.xml:p:7",
+                    "textSha256": "644316e2355999ae677325183aef7836ffd7d2cf5dd8b6fde441c9dd33df5fc0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Remove the Day 5 prefix from the exact itinerary paragraph and append the explicitly confirmed Foz do Iguaçu three-night stay from the route summary."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:05:53.715Z"
+        "at": "2026-11-03T22:06:02.826Z"
       },
       "submission": null,
       "review": null,

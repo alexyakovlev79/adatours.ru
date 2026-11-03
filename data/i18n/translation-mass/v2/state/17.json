@@ -5,7 +5,7 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b006",
       "stage": "word_2027",
-      "status": "blocked_external",
+      "status": "queued",
       "sourceFingerprint": "64915a6563a142b6ff4e806171d9ed9d3b8ad46a24ae28677ffdd5dd83c2042d",
       "generation": 1,
       "attempts": 1,
@@ -220,7 +220,15 @@
         "generation": 1,
         "failureStatus": "blocked_external",
         "at": "2026-11-03T21:15:24.069Z"
-      }
+      },
+      "recoveries": [
+        {
+          "at": "2026-11-03T21:35:16.100Z",
+          "reason": "Coordinator correction: GitHub update_ref transport failure incorrectly classified as external source blocker; retain complete checkpoint and original submissionId",
+          "fromStatus": "blocked_external",
+          "failureCommit": "f0f1b2090bf5c721f675bc4cf4f3e9a56c75acd7"
+        }
+      ]
     },
     {
       "jobId": "en:bulk:tour:tour_argentina_brazil_pipa_11d:b006",

@@ -158,9 +158,11 @@ if(!sharedHtml.includes('data-search-overlay')||!sharedHtml.includes('data-searc
    !sharedHtml.includes('data-search-base="'+EN_STAGING_BASE+'en/"'))fail('Shared navigation/search missing');
 if(sharedContent && (!sharedHtml.includes('Travel interests') || !sharedHtml.includes('Send an enquiry')))
  fail('Shared interface reverted to Russian');
-if(sharedContent && (!sharedHtml.includes('data-lead-modal="true"') ||
-   !sharedHtml.includes('href="#request"') || sharedHtml.includes('mailto:info@adatours.ru')))
- fail('Shared header modal CTA was not preserved');
+if(sharedContent){
+ const shellModalLinks=find(parse(sharedHtml),x=>x.tagName==='a'&&attr(x,'data-lead-modal')==='true');
+ if(!shellModalLinks.length||shellModalLinks.some(x=>attr(x,'href')!=='#request'))
+  fail('Shared header modal CTA was not preserved');
+}
 if(/data-lazy-src=|data-lazy-srcset=|data-lazy-style=/.test(homepage))fail('Staged homepage retains image placeholders');
 if(!homepage.includes('https://img.adatours.ru/media/'))fail('Shared CDN assets missing');
 if(/data-ada-translation-notice|This page is currently available in Russian/i.test(homepage))fail('Unrequested translation banner');

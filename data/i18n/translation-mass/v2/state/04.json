@@ -151,7 +151,137 @@
         "claimedAt": "2026-11-03T22:20:18.033Z",
         "expiresAt": "2026-11-03T23:50:18.033Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ada-en-20261104-2b52b0aa-5-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-2b52b0aa",
+        "token": "tok-2b52b0aa-1135-ada-en",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ada-en-20261104-2b52b0aa-5",
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b005",
+            "stableId": "tour_brazil_agribusiness_14_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "aef65a5540986416271114fa89f616d5efcca3f6c11d63d93c90775879d374a4",
+            "blocks": [
+              {
+                "blockId": "tour:media_hover:a769b9de92fa6516",
+                "field": "media.hover",
+                "sourceTextSha256": "e7575ecea601b7cbe84fea7bdd768def07d333297067c8beb5d31695ce755332",
+                "text": "São Paulo, Brazil: city lights beneath the evening sky",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word contains no photograph-specific hover caption; translated the current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+                "field": "itinerary.title",
+                "sourceTextSha256": "7e580262f84aa3dfee883800cb1bcdb60cf9d6db8c18de9cb2fededc5e79f3a4",
+                "text": "São Paulo and transfer to Ribeirão Preto",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[9]",
+                      "textSha256": "d3b9e0ac39cab4905deee02439c733f0df1c5d5a3ec07f9cabc8a9b56d520434"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[17]",
+                      "textSha256": "e5206cd615d843b33d1c0a9ac955c20b3a5b5842345ecd8ada2504651958908c"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Combines the Word Day 2 cities and its stated transfer after the city tour as the existing itinerary heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:569e72e117968fcc",
+                "field": "itinerary.text",
+                "sourceTextSha256": "6ab0fbeeb9b91bcae13bb02bd015c9bd53c3735dfff4036e797b6bf1ec7f389a",
+                "text": "After breakfast at the hotel, enjoy a guided city tour of São Paulo. We will begin with the historical center of the city. Highlights include:  Praça da Sé (Sé Square); The magnificent São Paulo Cathedral; The largest Japanese district in the world; Praça da Fundação (Foundation Square.\n\nA drive across the Cha Bridge. Visits to the Municipal Opera and Ballet Theatre, Estação Square, the Municipal Market, República Square, and the Italian Terrace building.\n\nNext, we will explore the modern side of São Paulo: Paulista Avenue, the city’s central artery\n\nIbirapuera Park, a vast green space with water channels, lakes, sprawling trees, playgrounds, and bike paths.\n\nKey landmarks in the park include: The Obelisk, a monument honoring the heroes of the 1932 Revolution.\n\nThe Bandeiras Monument, commemorating the expeditions that searched for gold and gemstones during the first century after Brazil's discovery.\n\nTo conclude the tour, we’ll visit São Paulo’s elite neighborhoods, showcasing modern architecture, and explore the vibrant graffiti district.\n\nAfter the city tour, you will be transferred to Ribeirão Preto.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[10]",
+                      "textSha256": "6a1d0f0fe4bfb705191f44868cfd20b9319c54fe1c94782e7c4702233a0e03ac"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[11]",
+                      "textSha256": "437c7fe91d773aa3626f7c72b2cb68fb10233658c4a2092904fd582585c3d548"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[12]",
+                      "textSha256": "3e1786122ed933c7c488c7057b886e5609a56437d224cbde0e64a433c1cb7cce"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[13]",
+                      "textSha256": "90e2dc4f30b64dd6c0f6b74974826b03cc40718026b5647199d64c2d8e75da83"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[14]",
+                      "textSha256": "ba6e07ea67e8d4ec10ecfdf90fb7d3b623cbdd87d20affcf8ee6f072365c25ea"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[15]",
+                      "textSha256": "645e1b8580306ab9c8bb1245fc252817be88696ab5bb1adb0bfa705885c04fdf"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[16]",
+                      "textSha256": "2a30b0f4765d94d4c8ef27dd3e7199b4c863e17179e3adad85578c5821d6067b"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[17]",
+                      "textSha256": "e5206cd615d843b33d1c0a9ac955c20b3a5b5842345ecd8ada2504651958908c"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:5f3250371c406893",
+                "field": "itinerary.label",
+                "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+                "text": "São Paulo",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[6]",
+                      "textSha256": "aa4323749e8e1bb32b2594e643f41b2db2d8b93ab32ac71aa28fa0d0ab75500e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the city name from the Word day heading, omitting only its day prefix."
+                }
+              }
+            ],
+            "sourceEvidence": {
+              "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+              "sha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+              "yearFolder": 2027,
+              "editionYear": null,
+              "modifiedTime": "2025-12-30T13:19:36.498Z",
+              "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+              "observedModifiedTime": "2025-12-30T13:19:36.498Z",
+              "ooxmlPath": "ada-en-session/word2-paragraphs.json",
+              "commercialTable": "No price table in verified OOXML."
+            }
+          }
+        },
+        "at": "2026-11-03T22:20:53.254Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

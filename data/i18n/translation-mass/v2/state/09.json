@@ -155,7 +155,72 @@
         "claimedAt": "2026-11-03T22:07:55.160Z",
         "expiresAt": "2026-11-03T23:37:55.160Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "04dd2e-chile-b006-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-04dd2e696333-20261104",
+        "token": "ada-en-04dd2e696333-a7f39d12",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b006",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "d69656b9f804ad137b5c46aee44e85375c6655799e59d7bc52741f342fda9d73",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "7931b3a4ba6a490441c134b99db357d3ac893ed1c15214859d4f25a3090ec571",
+              "text": "A wine day in central Chile: private tastings in exclusive winery cellars, horseback rides through the vineyards and private dinners among the barrels. Transfer from Santiago by helicopter, approximately 1 hour, or by private car. The wine-day proposal names Maipo, Colchagua and Casablanca; the exact wineries and valleys will be agreed before your trip. VIK Chile is in Millahue, in the Cachapoal Valley. The dinner arrangements and whether they are included in your quotation will be confirmed separately, as the meal summary lists only breakfast and meals specified in the programme. Overnight at VIK Chile, Master Suite. Breakfast is included in your accommodation (BB).",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word wine-day passages omit the current RU Millahue/Cachapoal geographic correction, confirmation of the final winery/valley selection and the clarification that dinner inclusion must be confirmed separately. Translate the complete corrected RU block, retaining VIK Chile, Master Suite, the one-hour transfer and BB."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fcbe5d4ee2cfeb63",
+              "field": "itinerary.label",
+              "sourceTextSha256": "20ec60955ddc2511f62b870a49934250c362a4cf3d2c33bf465528f2b4c459f6",
+              "text": "Millahue Valley",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The selected Word does not contain the corrected Millahue Valley place name; its hotel list labels VIK as Colchagua. Translate the current frozen RU geographic label rather than reintroducing the outdated location."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:bd58dd63e0efbbef",
+              "field": "media.alt",
+              "sourceTextSha256": "755020ea2d56e7d5104ac59ef98bf55e4d21fd6820902e042998675d0ed535a9",
+              "text": "Rows of vineyards on the gentle hills of the Millahue Valley in evening light, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The selected Word has no corresponding vineyard-photograph alt caption; translate the exact RU image description without changing the photo."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:9bf9bc6f1590385f",
+              "field": "media.hover",
+              "sourceTextSha256": "c08bb1be33b8fbaf1e5916fab7a7faab2787a5976484a57333bc15a57aba8279",
+              "text": "Millahue: vineyard-covered slopes near the mountains at sunset",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The selected Word contains no matching image hover caption; translate the frozen RU text, retaining its corrected Millahue location."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:09:08.545Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

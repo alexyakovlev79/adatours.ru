@@ -141,174 +141,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "5bc888dc0f2e0bbd17342fe94a5c698205fd249c5d02e37003347f1d0449249b",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-8fc95d0a-20261104",
-        "token": "ada8fc95d0ae0c7-20261104-fixed",
-        "claimedAt": "2026-11-03T22:13:02.903Z",
-        "expiresAt": "2026-11-03T23:43:02.903Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-8fc95d0a-002-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-8fc95d0a-20261104",
-        "token": "ada8fc95d0ae0c7-20261104-fixed",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b006",
-          "stableId": "tour_brazil_dunes_13d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "5bc888dc0f2e0bbd17342fe94a5c698205fd249c5d02e37003347f1d0449249b",
-          "blocks": [
-            {
-              "text": "After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where you are welcomed and taken to your hotel.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p92",
-                    "text": "Day 4 · After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where you are welcomed and taken to your hotel. The falls, whose name means “big water” in Guarani, are formed by the Iguazu River and consist of some 275 separate falls, surrounded by the rainforest of Iguazu National Park, home to about 2,000 plant species and 400 bird species, including parrots and toucans. The highest, the Devil’s Throat, plunges some 80 metres.",
-                    "textSha256": "37649bdcd9f75ce522dc5ca0a31ad987d898e67098c4b28190a99bde820e898b"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_text:ec46e3209ab74818",
-              "field": "itinerary.text",
-              "sourceTextSha256": "0c1672cbb346ea6a5658a40ad9e584839331bd3d9e7c03f1f8a05d5afe0fc30c"
-            },
-            {
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p37",
-                    "text": "Rio de Janeiro",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032"
-            },
-            {
-              "text": "Foz do Iguaçu",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p144",
-                    "text": "Foz do Iguaçu",
-                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507"
-            },
-            {
-              "text": "Christ the Redeemer above the green hills and bays of Rio de Janeiro, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-8fc95d0a-20261104",
-                "wordAbsenceReason": "The selected Word contains no image-specific alt text for this RU media field. Translate the current RU alt text without changing the photograph."
-              },
-              "blockId": "tour:media_alt:20c55e4255a9751f",
-              "field": "media.alt",
-              "sourceTextSha256": "a58bf70ef06ce07fa9fead9c5eb7182694524b5ecaf0232ceca0e6c33dcad3b0"
-            },
-            {
-              "text": "Rio de Janeiro: a panorama of the city with the statue on Corcovado",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-8fc95d0a-20261104",
-                "wordAbsenceReason": "The selected Word contains no image-specific hover caption for this RU media field. Translate the current RU caption without changing the photograph."
-              },
-              "blockId": "tour:media_hover:4f7eeff6ad99a351",
-              "field": "media.hover",
-              "sourceTextSha256": "0bce34a31bb6e54e3eee23c35add5f132b0f6c60892991781ecf60dc19851238"
-            },
-            {
-              "text": "Brazilian side of Iguazu Falls",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p93",
-                    "text": "Day 5 · After breakfast, the Brazilian side of the falls along the canyon of the Iguazu River, where walkways and viewing platforms bring you close to the Devil’s Throat amid clouds of spray. Then the Macuco Safari, by off-road vehicle through the jungle and by boat close under the falls, and finally the Bird Park, where birds of extraordinary colours fly freely in large aviaries. Return to the hotel.",
-                    "textSha256": "2c5f01e4cd8a670daa6e7f81d98e55595c3c7da2e8ce8da5adae5bbfc50909d7"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Compose only the day title from the Brazilian-side visit explicitly described in the selected Word 2027 Day 5 paragraph."
-              },
-              "blockId": "tour:itinerary_title:9d160262ccf40bb8",
-              "field": "itinerary.title",
-              "sourceTextSha256": "337b4fbdb94ee769b975fb8b7311e0d8d4806fd28f146cfd91ac2aa0b465272c"
-            },
-            {
-              "text": "Foz do Iguaçu",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p144",
-                    "text": "Foz do Iguaçu",
-                    "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:8e423711fb104e1d",
-              "field": "itinerary.label",
-              "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507"
-            },
-            {
-              "text": "The falls, whose name means “big water” in Guarani, are formed by the Iguazu River and consist of some 275 separate falls, surrounded by the rainforest of Iguazu National Park, home to about 2,000 plant species and 400 bird species, including parrots and toucans. The highest, the Devil’s Throat, plunges some 80 metres.\n\nAfter breakfast, the Brazilian side of the falls along the canyon of the Iguazu River, where walkways and viewing platforms bring you close to the Devil’s Throat amid clouds of spray.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p92",
-                    "text": "Day 4 · After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where you are welcomed and taken to your hotel. The falls, whose name means “big water” in Guarani, are formed by the Iguazu River and consist of some 275 separate falls, surrounded by the rainforest of Iguazu National Park, home to about 2,000 plant species and 400 bird species, including parrots and toucans. The highest, the Devil’s Throat, plunges some 80 metres.",
-                    "textSha256": "37649bdcd9f75ce522dc5ca0a31ad987d898e67098c4b28190a99bde820e898b"
-                  },
-                  {
-                    "ref": "word/document.xml:p93",
-                    "text": "Day 5 · After breakfast, the Brazilian side of the falls along the canyon of the Iguazu River, where walkways and viewing platforms bring you close to the Devil’s Throat amid clouds of spray. Then the Macuco Safari, by off-road vehicle through the jungle and by boat close under the falls, and finally the Bird Park, where birds of extraordinary colours fly freely in large aviaries. Return to the hotel.",
-                    "textSha256": "2c5f01e4cd8a670daa6e7f81d98e55595c3c7da2e8ce8da5adae5bbfc50909d7"
-                  }
-                ]
-              },
-              "blockId": "tour:contentBlock_text:061d88fa200e9dc2",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "406be4c68cab9ff18f7351a39610bfebab55ef0a108b6d68ecbd8e04874352ef"
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:14:24.050Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-8fc95d0a-002",
+        "blobSha": "983e9895adf6aacc5d1f7d0ec039b43a126a6db6",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_dunes_13d_b006/ada-8fc95d0a-002.json",
+        "at": "2026-11-03T22:22:39.663Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

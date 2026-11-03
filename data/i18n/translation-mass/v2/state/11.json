@@ -165,7 +165,7 @@
         "expiresAt": "2026-11-04T01:03:37.231Z"
       },
       "checkpoint": {
-        "id": "ada-en-f8019ad86757-09-b006-cp4",
+        "id": "ada-en-f8019ad86757-09-b006-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-f8019ad86757-translator-20261104",
         "token": "ada-en-f8019ad86757-6c94a20bf812",
@@ -251,10 +251,78 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:media_alt:32f8eecedc3ce95c",
+              "field": "media.alt",
+              "sourceTextSha256": "49764136a25e7b5772c64d922c06dc60b4e1f559fe4ab0149e802234cb1958d2",
+              "text": "Houses with red tiled roofs and rows of dormer windows",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "The complete selected Word contains no matching tiled-roof photograph alt/hover caption; translated the exact current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:41273dfc31a8b3b6",
+              "field": "media.hover",
+              "sourceTextSha256": "1074840a31c516470674ae8e49b0b80f5426759503d2bb15815d80bb4661279f",
+              "text": "Tiled roofs above yellow and pale city façades",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "The complete selected Word contains no matching tiled-roof photograph alt/hover caption; translated the exact current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "7b2f04996348d6a9d6ad4ac3885b512350a0ea29a6171b96856d43c994c31c60",
+              "text": "Porto de Galinhas: beaches and natural pools",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[43]",
+                    "textSha256": "660462991187fe099319662bccd0418970a8ad3aade279bfff8b658fa960fbc5"
+                  },
+                  {
+                    "ref": "word/document.xml:p[44]",
+                    "textSha256": "c461e7e671fcc0303b717627c3ed0eeb6a91a357461d8ab62dd40296ab427e2c"
+                  },
+                  {
+                    "ref": "word/document.xml:p[76]",
+                    "textSha256": "1476bc9897eb2a10612972152a9c7390207a627814d66b53f66feb8aa86a1e05"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the verified Porto de Galinhas destination, beaches and natural-pools wording into the existing Day 3 itinerary title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "eb3b9eabbbcd944203c5fdd50878397e2d47e4f0298fb56795eed1bfc306a907",
+              "text": "Day 3 · Breakfast and transfer to your hotel in Porto de Galinhas, about 60 km south of Recife. This former fishing village is known for its magnificent beaches, among the most beautiful in Brazil: clear turquoise water, white sand and coconut palms along the shore. Time to rest.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
+                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[76]",
+                    "textSha256": "1476bc9897eb2a10612972152a9c7390207a627814d66b53f66feb8aa86a1e05"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:34:21.819Z"
+        "at": "2026-11-03T23:34:39.499Z"
       },
       "submission": null,
       "review": null,

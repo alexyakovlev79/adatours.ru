@@ -53,88 +53,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b013",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "d38de86916675d43cccd7307e5ef5555a8f29ea978882d9bc76fdf0145200cd3",
       "generation": 2,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261103-a391-translator",
-        "token": "ada-en-a391-20261103-2147-stable",
-        "claimedAt": "2026-11-03T21:36:58.019Z",
-        "expiresAt": "2026-11-03T23:06:58.019Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-a391-b013-four-inline-20261103",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261103-a391-translator",
-        "token": "ada-en-a391-20261103-2147-stable",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b013",
-          "stableId": "tour_brazil_agribusiness_14_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "d38de86916675d43cccd7307e5ef5555a8f29ea978882d9bc76fdf0145200cd3",
-          "blocks": [
-            {
-              "blockId": "tour:media_alt:6157ef4dd4220eff",
-              "field": "media.alt",
-              "sourceTextSha256": "9997bd0b44f0551c0ea2f5428ea1408b82273993942f3bd91a5e01283a2bef62",
-              "text": "A shaded sidewalk and a busy street among the high-rise buildings of São Paulo, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-20261103-a391-translator",
-                "wordAbsenceReason": "The exact source DOCX contains itinerary prose and photographs but no text equivalent to this current RU image alt/hover field."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:e8577d53e590ecb2",
-              "field": "media.hover",
-              "sourceTextSha256": "43c56eddcc86cd59a19f17d476f2dbd9e396fcc37e526f44eb7fcff023caf64a",
-              "text": "São Paulo: trees, pedestrians and cars beside the city's high-rise buildings",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-20261103-a391-translator",
-                "wordAbsenceReason": "The exact source DOCX contains itinerary prose and photographs but no text equivalent to this current RU image alt/hover field."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
-              "field": "itinerary.title",
-              "sourceTextSha256": "6eaf51211d2bba5d0cb626983e992eb89bdc51969d4592e055bdc6e4ea1a0296",
-              "text": "Departure from São Paulo",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-20261103-a391-translator",
-                "wordAbsenceReason": "The exact source DOCX has only 'Day 14: São Paulo'; the departure heading is a current RU editorial label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:936a34ccc6e7c635",
-              "field": "itinerary.text",
-              "sourceTextSha256": "f4a74fbf9976234878bdb43fb8b227664d5598e2d02598aa3535ffcef8f407c5",
-              "text": "Breakfast at the hotel. Transfer to the airport for your departure flight home.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
-                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p95",
-                    "textSha256": "0077f6ebdd3d58cc707e5e42b484db70cafb5c90a09455d8677a9b14e661b284"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:02:03.696Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-a391-b013-v1",
+        "blobSha": "843ec2d28f2da3e9abe04d00ff9e10737e363645",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_agribusiness_14_days_b013/ada-a391-b013-v1.json",
+        "at": "2026-11-03T21:37:04.565Z"
+      },
       "review": null,
       "nextAttemptAt": null,
       "lastRelease": {

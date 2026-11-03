@@ -31,162 +31,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_best_14_days:b011",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "3efecb8ba95c09d92539e0d8ee7dc3b954f674f36ca0bc7610ed4a48525c4414",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "claimedAt": "2026-11-03T22:00:29.082Z",
-        "expiresAt": "2026-11-03T23:30:29.082Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-98cdd875f4b9-b011-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_best_14_days:b011",
-          "stableId": "tour_argentina_best_14_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "3efecb8ba95c09d92539e0d8ee7dc3b954f674f36ca0bc7610ed4a48525c4414",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:a2d4bab58281ef11",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
-              "text": "Ushuaia",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p42",
-                    "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:36f5fade85450933",
-              "field": "itinerary.label",
-              "sourceTextSha256": "489ca4713982f2d158f7c6f308fa7aceb48ee9f740d1dd0216192fdb5806a09b",
-              "text": "Tierra del Fuego",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p88",
-                    "textSha256": "7c93d86c569a0a4ce2dafb1063cc60c75e3e99142cc88e9e41479fde751c8da4"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the matching place name from the exact itinerary paragraph for this route label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:5d81ef06e5f8c8e3",
-              "field": "media.alt",
-              "sourceTextSha256": "40ae02563deab1f688e175acff04f145d4100b145d0930f8f5e45aa16a46ac73",
-              "text": "Ushuaia waterfront with piers, boats and colourful houses against a mountain backdrop, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word contains itinerary prose but no corresponding image alternative text or hover caption."
-              }
-            },
-            {
-              "blockId": "tour:media_hover:d2aad8f2721cdcce",
-              "field": "media.hover",
-              "sourceTextSha256": "6b17677759f9ae9f073c6602a64e0f87297a81771690801e616c942881574fcc",
-              "text": "Ushuaia: the port and city rooftops beneath mountain slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word contains itinerary prose but no corresponding image alternative text or hover caption."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8d638f38fdee4763",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
-              "text": "Ushuaia",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p42",
-                    "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:3025737cfa2ddede",
-              "field": "itinerary.label",
-              "sourceTextSha256": "04a5c4fed1aa08b7d24e5afb0849f3a2ae98f0fa262d9aff59bace154463df3b",
-              "text": "Tierra del Fuego National Park",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p88",
-                    "textSha256": "7c93d86c569a0a4ce2dafb1063cc60c75e3e99142cc88e9e41479fde751c8da4"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the matching place name from the exact itinerary paragraph for this route label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:1a6502285e383b4a",
-              "field": "itinerary.label",
-              "sourceTextSha256": "0c36a58368a46dfd9e9d5841f30df6c4bd398a4c7d31de535be867206e1ea03d",
-              "text": "Pipo River",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
-                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p92",
-                    "textSha256": "78f6ea298b07f78de86eaefdc302a151ae77832e46750e007f9f7acd704d4803"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Extract the matching place name from the exact itinerary paragraph for this route label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:087c021bd08ccaac",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1ce4317d2aa5ab49bbea93579fbfdb6c4a0095681b2949cf3cedef6bafd6321e",
-              "text": "Ensenada-Saratiegui Bay",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word calls this Ensenada Bay without the Saratiegui qualifier; preserve the current RU label in full."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:02:51.713Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-98cdd875f4b9-b011",
+        "blobSha": "56355f5200bf11a9e00fb96800512b0a106fc900",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_best_14_days_b011/submit-98cdd875f4b9-b011.json",
+        "at": "2026-11-03T22:26:58.840Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

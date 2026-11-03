@@ -1,0 +1,120 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b003",
+  "stableId": "tour_brazil_argentina_peru_14d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "896c9ba6085a9a01b44a08a90b5ed715d99183a688f7fee57aa2709413a9f27b",
+  "blocks": [
+    {
+      "blockId": "tour:notIncluded:85e42307b61ca9d2",
+      "field": "notIncluded",
+      "sourceTextSha256": "236047bf5a1673051fe1fd8eaf58445cd44c624b58f3e99bd0fe6ed34fbafdee",
+      "text": "International flights",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+        "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p258",
+            "textSha256": "e513628cd3a743f15c74b09d424a0981bcafcf23c0baa3684bf9070dbc3b5fe5"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the dash list marker and its following spacing from the exact approved Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:note:5aa2c628beab8b85",
+      "field": "note",
+      "sourceTextSha256": "16325d852ea731c2980b3017e8caff80a9c3d9702853d7403f1f63258221925f",
+      "text": "All hotels can be substituted by a hotel of a similar class; programme availability and prices will be confirmed upon booking.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+        "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p223",
+            "textSha256": "297310e3bf79f106ecf1e3b5c54221856956467f49c46550b3f618d69ce6388d"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the dash list marker and its following spacing from the exact approved Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:note:eeb2832b5b22895b",
+      "field": "note",
+      "sourceTextSha256": "05c7ec663a3193acbebd1bc1bd009ffff1b5c7055788a0c60dc32eddf5f368c5",
+      "text": "If necessary, we may change the order of excursions while keeping the tour programme.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word lacks the specific RU clause allowing excursion reordering while preserving the programme."
+      }
+    },
+    {
+      "blockId": "tour:note:116ab96902d7828a",
+      "field": "note",
+      "sourceTextSha256": "e78bdc0d130871fcc2469eac9068ffa9c50b44768324e4a1f7beea7b41c41c9f",
+      "text": "Ada Tours is not responsible for missed hotel breakfasts when early check-out is required for an early flight or excursion.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word lacks the RU clause about missed breakfasts and early check-out; preserve the current RU condition."
+      }
+    },
+    {
+      "blockId": "tour:highlight_title:997e839e6a21ae92",
+      "field": "highlight.title",
+      "sourceTextSha256": "b4f32fc1cecf1c6bd813da09b0d77594a22315551879b17a8f1ba966dca7f5d2",
+      "text": "Rio from two heights",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word describes Corcovado and Sugar Loaf separately but lacks this exact comparative RU highlight title or paragraph."
+      }
+    },
+    {
+      "blockId": "tour:highlight_text:62849fe7b205a15f",
+      "field": "highlight.text",
+      "sourceTextSha256": "a03971344614868a7373c8dca3a5731705323ddf46187c910aed59baeb64a98b",
+      "text": "Corcovado and Sugar Loaf reveal different sides of Rio. From Corcovado, you can see the bay, beaches, city neighbourhoods and granite peaks. From Sugar Loaf, the Atlantic feels closer, with views of Niterói, the bridge across the bay and Corcovado itself, topped by the statue of Christ.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word describes Corcovado and Sugar Loaf separately but lacks this exact comparative RU highlight title or paragraph."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:d271e95d1d58e233",
+      "field": "media.alt",
+      "sourceTextSha256": "4329fc2e61971038481b2c5292405fcde3f449cbe97933400d160fe196b094e7",
+      "text": "A panorama of Rio de Janeiro with Corcovado, Sugar Loaf and the city’s beaches, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word has no corresponding exact image alt/hover caption; translate the existing RU caption only."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:27e6e1e1bfe913d2",
+      "field": "media.hover",
+      "sourceTextSha256": "8acda5bf227e4372dce872aa475d58561f840e5deea7a4eed17a7c624eebddad",
+      "text": "Rio de Janeiro: bays and green peaks in the evening light",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-f4e636b296c4",
+        "wordAbsenceReason": "Word has no corresponding exact image alt/hover caption; translate the existing RU caption only."
+      }
+    }
+  ]
+}

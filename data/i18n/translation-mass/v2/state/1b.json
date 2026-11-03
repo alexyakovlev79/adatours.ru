@@ -108,7 +108,7 @@
         "expiresAt": "2026-11-04T01:01:13.439Z"
       },
       "checkpoint": {
-        "id": "ada-en-a104-da0b8743c7e9:tour_bolivia_chile_hidden_treasures_16_days_b006:cp4",
+        "id": "ada-en-a104-da0b8743c7e9:tour_bolivia_chile_hidden_treasures_16_days_b006:cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-a104-da0b8743c7e9",
         "token": "c0d02798bb754ec6a8504ed642bc5ea4",
@@ -188,13 +188,86 @@
                   "runId": "ada-en-a104-da0b8743c7e9",
                   "wordAbsenceReason": "The exact selected Word has no image-specific alternative text for the La Paz cable-car photograph; translated the current RU alt text."
                 }
+              },
+              {
+                "blockId": "tour:media_hover:3e095a96c923ddf7",
+                "field": "media.hover",
+                "sourceTextSha256": "5d1aecd9bdaa22be4067ba5ca59e52033ab58718ac2c0565b5b4e979cb16c299",
+                "text": "La Paz: a cable car above city neighbourhoods and mountain slopes",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-a104-da0b8743c7e9",
+                  "wordAbsenceReason": "The exact selected Word contains no matching cable-car photograph hover caption; translated the current RU hover text."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+                "field": "itinerary.title",
+                "sourceTextSha256": "05a3c0a70e3ad749421c40fb7aac497fe54518b9b604de177df4f988d8327870",
+                "text": "La Paz — city tour and Moon Valley (about 4 hours)",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p66",
+                      "textSha256": "cb6a0d8131c88e79f3b421059a6c669460f6fe8bd200026cd261e338f26a0374"
+                    },
+                    {
+                      "ref": "word/document.xml:p68",
+                      "textSha256": "42099228701bc0693d20d70f674fa28fc5abcfaf519c4ce887bc1a9155d63b51"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Condenses the Word Day 2 city-tour and Moon Valley description into the existing day title, retaining its approximate four-hour duration."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:569e72e117968fcc",
+                "field": "itinerary.text",
+                "sourceTextSha256": "0c6f634a5e363b30b2c2dd261b2aa3a777cac1cfd86a03a6fa5db77f1b748456",
+                "text": "Day 2 · After breakfast, a city tour of about 4 hours: viewpoints over the city and Mount Illimani, the historic centre and the famous Witches’ Market (Mercado de las Brujas). Then an excursion to the Moon Valley (Valle de la Luna), a striking landscape of eroded clay peaks and spires on the outskirts of La Paz.\n\nAccommodation: Casa Grande Suites, Presidential Suite, breakfast",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p68",
+                      "textSha256": "42099228701bc0693d20d70f674fa28fc5abcfaf519c4ce887bc1a9155d63b51"
+                    },
+                    {
+                      "ref": "word/document.xml:p69",
+                      "textSha256": "3424eaadf31236f62fa8829a92129aa47412d21d04a8848e0cca79a79d428456"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:c01b4e6e5de8f523",
+                "field": "itinerary.label",
+                "sourceTextSha256": "72da86964b748cd13f9aa0c5b2fc5640ab61783e2e7870c3c5a6c3fbdd8b589a",
+                "text": "La Paz",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p66",
+                      "textSha256": "cb6a0d8131c88e79f3b421059a6c669460f6fe8bd200026cd261e338f26a0374"
+                    }
+                  ]
+                }
               }
             ]
           },
-          "completedBlocks": 4,
+          "completedBlocks": 8,
           "submissionId": "ada-en-a104-da0b8743c7e9:tour_bolivia_chile_hidden_treasures_16_days_b006"
         },
-        "at": "2026-11-03T23:31:51.135Z"
+        "at": "2026-11-03T23:31:57.026Z"
       },
       "submission": null,
       "review": null,

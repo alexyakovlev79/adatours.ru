@@ -339,7 +339,7 @@
         "expiresAt": "2026-11-03T23:32:12.670Z"
       },
       "checkpoint": {
-        "id": "ada-8fc95d0a-001-cp4",
+        "id": "ada-8fc95d0a-001-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-8fc95d0a-20261104",
         "token": "ada8fc95d0ae0c7-20261104-fixed",
@@ -423,10 +423,77 @@
               "blockId": "tour:note:0a7869b30b65297f",
               "field": "note",
               "sourceTextSha256": "acd9298cac3616a82827273c6057598f9515355c12186a33bd6aa1477f36b705"
+            },
+            {
+              "text": "Airfare is not included, including the Calama – Santiago flight.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p93",
+                    "text": "Not included: Flight Calama – Santiago",
+                    "textSha256": "76b4a73df49b5a76a733306a88b538d2bf4470c80e10b94d12a45541d2ab5350"
+                  },
+                  {
+                    "ref": "word/document.xml:p207",
+                    "text": "–   Airfare, including the DAP flight Balmaceda – Punta Arenas",
+                    "textSha256": "82f3ef986c0c4968357ffc6e25baafb02942428ead2c451344f073587bd5ec96"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "The selected Word 2027 explicitly excludes the Day 4 Calama–Santiago flight and airfare generally; replace the older RU contradiction note with the controlling Word exclusion."
+              },
+              "blockId": "tour:note:c38f56982a1828df",
+              "field": "note",
+              "sourceTextSha256": "68094b20e50134828b298dbbf0957a27ff4c7addfcfe5f16cadac3b1be025692"
+            },
+            {
+              "text": "DAP Airlines: April–November — Tuesdays; December–February — Tuesdays and Thursdays. During this period, flights depart Punta Arenas at 13:30 and Balmaceda at 15:30. Schedules may change; small regional airlines apply strict baggage limits.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-8fc95d0a-20261104",
+                "wordAbsenceReason": "Word paragraphs 162–171 confirm operating days and paragraph 192 confirms baggage restrictions, but departure times and the reverse-route detail are absent from Word; translate this current RU schedule note."
+              },
+              "blockId": "tour:note:4e525000acb50e73",
+              "field": "note",
+              "sourceTextSha256": "6651f6d1d41ec4f599cf6d0fc9b5bd6cb693cf97b670a391f8b48f0627fd6508"
+            },
+            {
+              "text": "The overall package includes guided tours in groups. The boat trip to the Marble Caves and the final transfer from Puerto Natales are private. The language of guided tours will be confirmed when you book.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-8fc95d0a-20261104",
+                "wordAbsenceReason": "The Word confirms group tours and the private Marble Caves boat and final transfer (paragraphs 113, 123, 126); it has no equivalent of the RU booking-time language-confirmation note, so translate the complete current RU note."
+              },
+              "blockId": "tour:note:d51a87510465922d",
+              "field": "note",
+              "sourceTextSha256": "d323b0a68df67942c86d7ab8fb16059808bb21da8668eb60abee043e50f1a2de"
+            },
+            {
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1JhUcfwm8nluzG9BG57eKadVF8jagmfmU",
+                "documentSha256": "7a87775c7dacf8099a1e26805ff24af33c179cd8f269efc62f31b996d820adb0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p136",
+                    "text": "Santiago",
+                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                  }
+                ]
+              },
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf"
             }
           ]
         },
-        "at": "2026-11-03T22:03:42.019Z"
+        "at": "2026-11-03T22:04:20.777Z"
       },
       "submission": null,
       "review": null,

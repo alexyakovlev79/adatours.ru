@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2287,
-    "leased": 18,
+    "queued": 2286,
+    "leased": 19,
     "review": 105,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2287,
-      "leased": 18,
+      "queued": 2286,
+      "leased": 19,
       "review": 105,
       "ready": 1,
       "retryable": 0,
@@ -928,8 +928,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 63,
-          "leased": 0,
+          "queued": 62,
+          "leased": 1,
           "review": 5,
           "ready": 0,
           "retryable": 0,
@@ -960,7 +960,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:47:39.231Z",
       "earliestRetryAt": null
     },
     "0d": {
@@ -1403,6 +1403,12 @@
       "token": "ada-en-c88c62b5175a-20261104",
       "expiresAt": "2026-11-03T23:47:10.266Z",
       "generation": 1
+    },
+    "ada-en-e9fc69e2bbe6": {
+      "jobId": "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b002",
+      "token": "token-e9fc69e2bbe6-20261104",
+      "expiresAt": "2026-11-03T23:47:39.231Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -1777,7 +1783,8 @@
       "token": "token-e9fc69e2bbe6-20261104",
       "jobIds": [
         "en:bulk:tour:tour_brazil_dunes_13d:b013",
-        "en:bulk:tour:tour_argentina_agricultural_11_days:b001"
+        "en:bulk:tour:tour_argentina_agricultural_11_days:b001",
+        "en:bulk:tour:tour_brazil_foz_iguazu_three_days:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_dunes_13d:b013",
@@ -1892,5 +1899,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:17:31.602Z"
+  "updatedAt": "2026-11-03T22:17:39.231Z"
 }

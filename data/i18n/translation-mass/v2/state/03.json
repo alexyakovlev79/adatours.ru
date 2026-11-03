@@ -120,7 +120,91 @@
         "claimedAt": "2026-11-03T22:10:22.386Z",
         "expiresAt": "2026-11-03T23:40:22.386Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-4406908c67fe-1104-p4-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-4406908c67fe-1104",
+        "token": "ada-en-token-4406908c67fe",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b005",
+            "stableId": "tour_brazil_dunes_13d",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "6af0e5c9d4a543b4b4bdfa02325292b3de5079a7d448ee11da7ba293fc7ee369",
+            "blocks": [
+              {
+                "blockId": "tour:media_hover:9358d97c9b519b9a",
+                "field": "media.hover",
+                "sourceTextSha256": "cb7ea4592fc63e0b6e744018ee95392f4ab3a3ed91fc54c5f9e604959a07df54",
+                "text": "Rio: the Selarón Steps with their colourful tile mosaic",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word document contains no corresponding image hover or alternative text."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+                "field": "itinerary.title",
+                "sourceTextSha256": "5031c1869d6a05109a4ec254ee5961a2f59797c4da9101e1496afa16e5a5f8af",
+                "text": "Sugar Loaf and historic Rio",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                  "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "f1814e6401a9673a52ff180317ddedb99818a615ca6b2678e81611a779bb3db2"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Select the relevant place or route from the exact Word itinerary heading and narrative."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+                "field": "itinerary.text",
+                "sourceTextSha256": "01d33aba6370bc6078cdeec8db3acb762040301d8d23688dbf4c0c8af61f0da7",
+                "text": "Day 3 · After breakfast, discover Sugar Loaf, rising abruptly from the edge of the bay. A cable car takes you to Urca Hill, between ground level and the summit, where you can enjoy a cocktail or sample Brazilian specialities. From the top of Sugar Loaf, Copacabana Beach stretches away to your left, with the outlines of the Two Brothers and Gávea mountains on the horizon; below lies the small Red Beach, and to your right Guanabara Bay, Niterói, Botafogo and the centre, beneath the silhouette of Christ the Redeemer. Then a city tour of Rio.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                  "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "f1814e6401a9673a52ff180317ddedb99818a615ca6b2678e81611a779bb3db2"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:b2f0e19acda78198",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                  "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T22:11:09.276Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

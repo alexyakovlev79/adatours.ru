@@ -268,7 +268,7 @@
         "expiresAt": "2026-11-03T23:37:23.016Z"
       },
       "checkpoint": {
-        "id": "ada-en-eaeb603e-03-4",
+        "id": "ada-en-eaeb603e-03-8",
         "format": "inline-v1",
         "ownerId": "ada-en-eaeb603e-translator",
         "token": "tok-eaeb603e-20261104-831c",
@@ -358,11 +358,78 @@
                   "transformation": "contextual_label",
                   "rationale": "Compose a concise place or day label from the named attraction or free-day activity in this exact Word paragraph."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:59d0ff6b4eab2887",
+                "field": "itinerary.label",
+                "sourceTextSha256": "bd112c828af7c168b6f94477ad28b38d9d09895287efc033e2a9e9f706c85d21",
+                "text": "La Sebastiana House Museum",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p158",
+                      "textSha256": "3ba0b9671cd8f4a42d9d40c3ac8c1360b09903b780f92975bb7b9729cdabae43"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Compose a concise place or day label from the named attraction or free-day activity in this exact Word paragraph."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:02b05f9c4c806e6e",
+                "field": "itinerary.title",
+                "sourceTextSha256": "e378f99c39a6fbc96c27662cb188246dc0a01ff74e9d68d860229ba36cf1932e",
+                "text": "Santiago — free day",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p159",
+                      "textSha256": "068c14dcc9241689587c4b3e426ef50029274b603e2f5fc596f0a4051709692f"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Compose a concise place or day label from the named attraction or free-day activity in this exact Word paragraph."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:25152ad0c634f823",
+                "field": "itinerary.text",
+                "sourceTextSha256": "0bf333f9379e5013ddea07239800a66572810c80d84d50fe5352d4b6ff84e510",
+                "text": "A free day in Santiago to spend as you wish: take a leisurely walk around the city, visit museums or parks, go shopping, or relax at the hotel before your flight home. We can offer additional excursions or activities on request.\n\nThe hotel and category for the final night are confirmed at the time of booking.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-eaeb603e-03",
+                  "wordAbsenceReason": "Word paragraph 159 covers the free day but does not contain the RU final-night confirmation caveat; translated the complete current RU block to preserve that condition."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:528eb13d1fc0ed1b",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+                "text": "Santiago",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p111",
+                      "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                    }
+                  ]
+                }
               }
             ]
           }
         },
-        "at": "2026-11-03T22:08:13.929Z"
+        "at": "2026-11-03T22:08:26.578Z"
       },
       "submission": null,
       "review": null,

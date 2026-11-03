@@ -399,7 +399,83 @@
         "claimedAt": "2026-11-03T23:00:37.541Z",
         "expiresAt": "2026-11-04T00:30:37.541Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-9457ab67-n2-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-9457ab67-20261104",
+        "token": "ada-en-token-9457ab67-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b007",
+          "stableId": "tour_colombia_highlights_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "e524edee7ee5257e027c92951039203ed4245f16f268e3af0a6c7ffbdbf0a034",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:5db6106898a9173a",
+              "field": "media.alt",
+              "sourceTextSha256": "91951a6510c8a1b1e609559207836a9ce186a6c570938437bb8d6baa62d68849",
+              "text": "A cobbled square with a white church and colourful houses in Medellín, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No image-specific alt text in the verified Word document; translated the current RU image description. Word paragraphs 78–80 describe the city tour, not this image."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:59c012cc7e86237f",
+              "field": "media.hover",
+              "sourceTextSha256": "19665e9180f76cce35583682b0a537ffdde1cf9586c4829a16bd9213bab69281",
+              "text": "Medellín: a church, a fountain and brightly coloured houses around a small square",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "The Word city-tour paragraphs 78–80 have no image-hover caption for this square. Translated the exact current RU caption without identifying an additional landmark."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "9eea902a396e8c94a51d1cdcfad04e7619d65d3a79dcd46653d63404d0681a84",
+              "text": "Guatapé and El Peñol Rock",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p86",
+                    "textSha256": "d0fbba64096379834fd5e371f88e4b85da98d234eef71995c3ad029d9007411d"
+                  },
+                  {
+                    "ref": "word/document.xml#p89",
+                    "textSha256": "8ef2bb2b470236ce7b55f53ebbf308eabf3a24aab87c2527531746052b2077d7"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Removed the Word day-number label and used its exact landmark name from Day 4 to form the corresponding itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "7430b708eb857d5746b9fca7dfcfc2ab4f31bcf218cdb5b1432723d360763d47",
+              "text": "Breakfast at the hotel. Travel to Guatapé to visit El Peñol Rock and walk through the town; the visits are described in the excursion section below. Return to Medellín. Overnight in Medellín.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "Word Day 4 paragraphs 89–90 include the full activity description; the RU day is a short wrapper delegating it to a separate excursion block. Translated the wrapper to preserve that structure and avoid duplicating the excursion."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:02:01.160Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

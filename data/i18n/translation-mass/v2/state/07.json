@@ -177,7 +177,87 @@
         "claimedAt": "2026-11-03T23:24:36.776Z",
         "expiresAt": "2026-11-04T00:54:36.776Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-daf0a8173bbc-08-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-daf0a8173bbc-20261104",
+        "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b009",
+          "stableId": "tour_brazil_dunes_13d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "ab39c8dedec990f0bcb5c751e1f608e69999cc7780b39a301491f396e6add9bb",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:a524f3781263b238",
+              "field": "itinerary.label",
+              "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+              "text": "São Luís",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p43",
+                    "textSha256": "596e5276fb7f990fd0eb42abf59f5c449cb55a59128b8a6a8b19744d920364c6"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6393e85524f928b4",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6e667fb5a9e887789091966d624a2699b5d59d30110d7cf750f4f74b79565fb0",
+              "text": "Barreirinhas",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p154",
+                    "textSha256": "fd74233577dcd6d14d91668feb61af13788591c1addc509d29db50ec36cbf16b"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:03487e88fa774a7b",
+              "field": "itinerary.label",
+              "sourceTextSha256": "91507cdf9e954c2ed542902141c676f62fea4fca6189ef6ea6814582f61ccf01",
+              "text": "Lençóis Maranhenses",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p46",
+                    "textSha256": "45f08b2146e897e47b0d389106fb6d872232bb25acfcd937a2d0390bd66524b8"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:289d0b1b0d05dbe3",
+              "field": "media.alt",
+              "sourceTextSha256": "57b1a0a2788febc5ff49a2d8e426e224999faca4796c299308f84f16bdfb9281",
+              "text": "Turquoise lagoons between the white dunes of Lençóis Maranhenses, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "The selected Word describes the dunes and lagoons but contains no matching alt caption for this specific photograph. Translate the current RU media description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:26:04.433Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

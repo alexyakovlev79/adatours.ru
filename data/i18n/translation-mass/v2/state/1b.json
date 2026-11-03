@@ -75,182 +75,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b006",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "795e12d28bafd39aa1ec003b11497ec00962503df3c76af64f3cb95d0af0bea6",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-a104-da0b8743c7e9",
-        "token": "c0d02798bb754ec6a8504ed642bc5ea4",
-        "claimedAt": "2026-11-03T23:19:30.070Z",
-        "expiresAt": "2026-11-04T00:49:30.070Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-a104-da0b8743c7e9:tour_argentina_grand_tour_15_days_2027_b006:cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-a104-da0b8743c7e9",
-        "token": "c0d02798bb754ec6a8504ed642bc5ea4",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b006",
-            "stableId": "tour_argentina_grand_tour_15_days_2027",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "795e12d28bafd39aa1ec003b11497ec00962503df3c76af64f3cb95d0af0bea6",
-            "blocks": [
-              {
-                "blockId": "tour:media_alt:6a922ed40eb0959f",
-                "field": "media.alt",
-                "sourceTextSha256": "2abb407f525349edbeeee59e38dc4cea835da3946b762b2ce72a804a1ac44458",
-                "text": "Obelisk of Buenos Aires",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-a104-da0b8743c7e9",
-                  "wordAbsenceReason": "The selected Word programme lists city-tour landmarks but does not contain an Obelisk photograph caption or alt text; translated this current RU image label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
-                "field": "itinerary.title",
-                "sourceTextSha256": "4aa5907f5889baf74d5ddf99cb895ae33da42c105f56a18f054d2447d40b670b",
-                "text": "Iguazú: Argentine side",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p13",
-                      "textSha256": "1bade8e62020f78db1d17a6f023b2c82910842d98815ca30669118075c0653bc"
-                    },
-                    {
-                      "ref": "word/document.xml:p15",
-                      "textSha256": "7e29f8310a4ad6ad06ee4162a5bdb4e10a330218cc006e006a618ad69c675d85"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Combines the Word destination heading with the Argentine-side excursion description to form the existing day-title field without adding itinerary facts."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
-                "field": "itinerary.text",
-                "sourceTextSha256": "458d23cae3ac8db6799945cb5c90b7d47be996665d6a70434e6b72c50364f6d9",
-                "text": "Transfer to the airport in Buenos Aires, flight to Iguazú. Check-in at the Gran Meliá Iguazú Hotel (Deluxe Room).\n\nExcursion to the Argentine side of the falls with an English-speaking guide. The Argentine side differs from the Brazilian one — here you'll walk directly above and below the falls, feeling the power of the falling water up close while enjoying the natural park surrounding this magnificent beauty. You'll witness the birth of the \"Devil's Throat.\" The network of man-made walkways and bridges is remarkable, allowing you to observe this natural phenomenon at very close range.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p14",
-                      "textSha256": "6c7ba691b0327fb54c347035e052603acb02f1ab52e4911caa26ae705518a3bd"
-                    },
-                    {
-                      "ref": "word/document.xml:p15",
-                      "textSha256": "7e29f8310a4ad6ad06ee4162a5bdb4e10a330218cc006e006a618ad69c675d85"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:748f34e8bf39d193",
-                "field": "itinerary.label",
-                "sourceTextSha256": "df887b79e5746f6aba25efaa6972c571e6f21b4822e27ddd898b0b461b3b2244",
-                "text": "Puerto Iguazú",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-a104-da0b8743c7e9",
-                  "wordAbsenceReason": "The selected Word names Iguazú and the hotel but does not contain the exact Puerto Iguazú city label; translated the current RU place label without altering its identity."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:9e10a4a0728653ce",
-                "field": "itinerary.label",
-                "sourceTextSha256": "76f0e1f604783cecbb439e92c20f7dca834fa131ec7f785c8e76af2744c30ab9",
-                "text": "Devil's Throat at Iguazú",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p13",
-                      "textSha256": "1bade8e62020f78db1d17a6f023b2c82910842d98815ca30669118075c0653bc"
-                    },
-                    {
-                      "ref": "word/document.xml:p15",
-                      "textSha256": "7e29f8310a4ad6ad06ee4162a5bdb4e10a330218cc006e006a618ad69c675d85"
-                    }
-                  ],
-                  "transformation": "compose_route_label",
-                  "rationale": "Extracts the named Devil's Throat landmark from the exact Word paragraph and adds its Iguazú context from the day heading for this place label."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:1b79266a8b3ac9d8",
-                "field": "media.alt",
-                "sourceTextSha256": "dec7b838b75a9aeac039755eb70056d8504594667a6a8a05091385cfe9a1a033",
-                "text": "Argentine side of Iguazú Falls",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-a104-da0b8743c7e9",
-                  "wordAbsenceReason": "The selected Word describes the Argentine-side visit but contains no image-specific caption or alternative text for this itinerary photograph; translated the current RU alt label."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-                "field": "itinerary.title",
-                "sourceTextSha256": "e3882bbcb051653dce1640f08416111fdc7b84e3a3b6edd6f2921bd6ec38f08c",
-                "text": "Iguazú: Brazilian side",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p13",
-                      "textSha256": "1bade8e62020f78db1d17a6f023b2c82910842d98815ca30669118075c0653bc"
-                    },
-                    {
-                      "ref": "word/document.xml:p16",
-                      "textSha256": "6b9a850382d173d16fe00de21bfd52e610b96587512b95c56f12425587ad9a63"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Combines the exact Word destination heading with the Brazilian-side excursion description to label this itinerary day without changing its programme."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:ec46e3209ab74818",
-                "field": "itinerary.text",
-                "sourceTextSha256": "fe1df719a92b7385b4207513eb3a2140e2a8094925b0af9989d72152a63a7258",
-                "text": "The following day — excursion to the Brazilian side of the falls with an English-speaking guide: a panoramic view of the entire cascade, impossible to see from the Argentine side.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                  "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p16",
-                      "textSha256": "6b9a850382d173d16fe00de21bfd52e610b96587512b95c56f12425587ad9a63"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          "completedBlocks": 8,
-          "submissionId": "ada-en-a104-da0b8743c7e9:tour_argentina_grand_tour_15_days_2027_b006"
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:20:39.980Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-a104-da0b8743c7e9:tour_argentina_grand_tour_15_days_2027_b006",
+        "blobSha": "4ec7a88ae566f985f1bca80abf101f7791c58d09",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_grand_tour_15_days_2027_b006/ada-en-a104-da0b8743c7e9_tour_argentina_grand_tour_15_days_2027_b006.json",
+        "at": "2026-11-03T23:21:20.488Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

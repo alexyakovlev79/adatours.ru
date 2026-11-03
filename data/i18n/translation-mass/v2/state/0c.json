@@ -120,7 +120,72 @@
         "claimedAt": "2026-11-03T22:00:10.299Z",
         "expiresAt": "2026-11-03T23:30:10.299Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-b004-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-935f-translator",
+        "token": "ada-en-935f-bxatc0v89fh-mw180til",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b004",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "a925be708155fba203eb57f6e5f262557ab3154d2591c19478d4391b970e73bb",
+          "blocks": [
+            {
+              "blockId": "tour:highlight_title:b6126034bf83ea82",
+              "field": "highlight.title",
+              "sourceTextSha256": "d1beec59aec4ce52f0839a0a751b9c998bbddf612098f2c360420cc9b6f88db9",
+              "text": "Iguazu from both sides",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "Word paragraphs 90 and 99 describe the two sides but have no corresponding highlight title; translate the current RU title."
+              }
+            },
+            {
+              "blockId": "tour:highlight_text:e1627956a0034843",
+              "field": "highlight.text",
+              "sourceTextSha256": "01dad2cae91f6d137c32688ba8a9ff10a56ba7048c2766def7ad7c77b518da53",
+              "text": "The Brazilian side offers a sweeping panorama of the waterfalls, while the Argentine side lets you walk above the cascades and right beside the water. Over 2 days, the route reveals Iguazu from its upper and lower trails and leads to the complex's main torrent, the Devil's Throat.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "Word paragraphs 90 and 99 contain detailed day descriptions, not this combined two-day highlight; translate the current RU summary, retaining all its distinctions."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:0ad40c8d39500c16",
+              "field": "media.alt",
+              "sourceTextSha256": "54f9f68902d2e9f1e64c6502168491709c992adc17bde63b848a0f11c6f1b032",
+              "text": "Visitors on a walkway beside a powerful Iguazu cascade",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:e2eabb6df99ac751",
+              "field": "media.hover",
+              "sourceTextSha256": "56af510596a19b11902f0ad88caecf89c1bf7f2f5fb0debda12a7f87da60ed02",
+              "text": "Iguazu: a walkway along the rock face beside the waterfalls and river",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:00:45.673Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

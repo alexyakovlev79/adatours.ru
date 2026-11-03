@@ -290,7 +290,7 @@
         "expiresAt": "2026-11-03T23:51:44.680Z"
       },
       "checkpoint": {
-        "id": "cp-0912f3ac-b001-4",
+        "id": "cp-0912f3ac-b001-8",
         "format": "inline-v1",
         "ownerId": "ada-en-0912f3ac98f14197",
         "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
@@ -355,10 +355,65 @@
                 "runId": "ada-en-0912f3ac98f14197",
                 "wordAbsenceReason": "The complete checked Word has no corresponding exclusion item for tips."
               }
+            },
+            {
+              "blockId": "tour:notIncluded:f33169ed00481ef7",
+              "field": "notIncluded",
+              "sourceTextSha256": "e924e89bb68f57d6240bb579908e80ea7e2e006d184c0b9f4343977ff62b9a77",
+              "text": "Laundry services.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete checked Word has no corresponding exclusion item for laundry services."
+              }
+            },
+            {
+              "blockId": "tour:note:f1129997ec97e0f3",
+              "field": "note",
+              "sourceTextSha256": "f73ce670d0259ea1ab47f7bef071d8b69e721fd94fbdd39591e8f66e26b76d31",
+              "text": "All the hotels can be substituted by a similar class hotel",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p195",
+                    "textSha256": "c98b25388045fb677eb2cbd7821cda15cbab874bc334648ee72bcaa8c5371561"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Removed only the leading asterisk used as a note marker; preserved the exact Word sentence."
+              }
+            },
+            {
+              "blockId": "tour:note:7adc79798dbadb95",
+              "field": "note",
+              "sourceTextSha256": "964e7077de116de25efb1110498e9295dcf35b9d9ffe81129c93d8a7906a3b31",
+              "text": "The order of excursions may change, provided that the tour programme is followed.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete checked Word has no equivalent note preserving that excursions can be reordered while retaining the programme."
+              }
+            },
+            {
+              "blockId": "tour:note:883ab5ad7e12a93d",
+              "field": "note",
+              "sourceTextSha256": "8782fb813e60e5ff89ed2342cf74dde6d66ead3b53a49ca0ede84df40912d7fd",
+              "text": "Prices are subject to change; the final cost is confirmed after all services and flight prices have been checked for the booking date.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The Word p196 only says availability and prices will be confirmed upon booking; it does not contain this RU condition of checking all services and flight prices on the booking date."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:23:21.087Z"
+        "at": "2026-11-03T22:23:35.837Z"
       },
       "submission": null,
       "review": null,

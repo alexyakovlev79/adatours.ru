@@ -325,7 +325,85 @@
         "claimedAt": "2026-11-03T22:18:01.388Z",
         "expiresAt": "2026-11-03T23:48:01.388Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-33c6be7dc0f7453f.s003.c04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-33c6be7dc0f7453f",
+        "token": "217cfc0e8d7c4209ac5aeee7ea2c8d35",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b006",
+          "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "32a96b4e87bf64e0a22f59b3231ce274ca6fd64c69a3221c93984cef504c475f",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "d59dce6f63b1763c409758474eeff35c45d415cef4329106687619415d41cf31",
+              "text": "After breakfast, a shared tour through the city to the station, where an eco-friendly train climbs through the Tijuca Forest, home to monkeys and exotic birds, to the top of Corcovado. At 710 metres above sea level stands the symbol of Rio, the 38-metre statue of Christ the Redeemer, built in 1931, with a breathtaking panorama of the city and its surroundings: the Rio–Niterói Bridge, Guanabara Bay, the Botanical Garden, the Maracanã Stadium and Sugar Loaf.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p79",
+                    "textSha256": "da50011c8162af39620f015e8672d4b17652d1c3a0b2ae55f09cc744c074d052"
+                  }
+                ],
+                "excerpts": [
+                  {
+                    "ref": "word/document.xml:p79",
+                    "start": 43,
+                    "end": 503,
+                    "reason": "Day heading is stored separately in the Tour; retain the body verbatim."
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b2f0e19acda78198",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-33c6be7dc0f7453f",
+                "wordAbsenceReason": "The Word contains Rio de Janeiro within route and prose passages, but no standalone full city label for this place slot; translate the existing RU place label using that established spelling."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a82e03a0a82de559",
+              "field": "itinerary.label",
+              "sourceTextSha256": "596f297b37e73a3724fea880bfdabc5b54885ca464395732999777177f12b79b",
+              "text": "Tijuca National Park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-33c6be7dc0f7453f",
+                "wordAbsenceReason": "The Word refers to Tijuca Forest within the Corcovado passage, but does not provide the standalone national-park place label required here; translate the exact current RU place name."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:effd613e700ce7f8",
+              "field": "media.alt",
+              "sourceTextSha256": "7a5051979a13716c111454fdbb7e60065d869569b0ac89173c8181082f119ffc",
+              "text": "Rocky shoreline and sailboats in Guanabara Bay, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-33c6be7dc0f7453f",
+                "wordAbsenceReason": "The verified Word does not contain this image alt caption. Translate the provided RU visual description without adding or changing photo details."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:19:06.219Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

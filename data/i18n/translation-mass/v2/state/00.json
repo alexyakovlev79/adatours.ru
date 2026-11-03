@@ -141,161 +141,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_gems_14d:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "49ce8c71f5a5e754db205142fcd2bf39bf5f24a290304e67e64fb2925e811ebb",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-eaeb603e-translator",
-        "token": "tok-eaeb603e-20261104-831c",
-        "claimedAt": "2026-11-03T22:12:21.928Z",
-        "expiresAt": "2026-11-03T23:42:21.928Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-eaeb603e-04-8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-eaeb603e-translator",
-        "token": "tok-eaeb603e-20261104-831c",
-        "generation": 1,
-        "payload": {
-          "submissionId": "ada-en-eaeb603e-04",
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_gems_14d:b008",
-            "stableId": "tour_brazil_gems_14d",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "49ce8c71f5a5e754db205142fcd2bf39bf5f24a290304e67e64fb2925e811ebb",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_label:c12f8d3cb0052213",
-                "field": "itinerary.label",
-                "sourceTextSha256": "f9638d61817f45d50d040b52a87ec567129101d4db5cae07f76ef5c5174219b6",
-                "text": "Salvador",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                  "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p48",
-                      "textSha256": "5ad4a23bc13eaf92e9c035b1d3edbb92582a99f2dbe64525009755f989eedfb2"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:media_alt:dea113f3a15319b8",
-                "field": "media.alt",
-                "sourceTextSha256": "bd66d2667090f09b58cf7fa60db3fe854dacad4ed17b0b2477f1d9385b1a60ea",
-                "text": "Garden path beside the lake at Inhotim, Brumadinho, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-eaeb603e-04",
-                  "wordAbsenceReason": "The selected Word programme contains no corresponding photo alt or hover caption; translated the current RU caption."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:66403fad7da2be7a",
-                "field": "media.hover",
-                "sourceTextSha256": "11b2e4d3f825e6f36326878384be17d10e32a40da0efe25bbdd18e6692e416db",
-                "text": "Inhotim, Brazil: palm trees, dense planting and a pavilion by the water",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-eaeb603e-04",
-                  "wordAbsenceReason": "The selected Word programme contains no corresponding photo alt or hover caption; translated the current RU caption."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
-                "field": "itinerary.title",
-                "sourceTextSha256": "d7932d47cdd0b89bd6f53ee1cc950e305d6b28b34f755b3417210011442b84e0",
-                "text": "Salvador – Praia do Forte",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                  "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p112",
-                      "textSha256": "6659574572533038daf96cd41c06a76a6799711b7ce587765ac39cf6ce8020ea"
-                    }
-                  ],
-                  "transformation": "compose_route_label",
-                  "rationale": "Compose the itinerary route label from the Salvador visit followed by the transfer to Praia do Forte in the cited Word paragraph."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:2e780f63f4172747",
-                "field": "itinerary.text",
-                "sourceTextSha256": "c3948a86557ee3da1778095c79f8cc53e55ac822c3d247a4f426eed24024a540",
-                "text": "Day 7 · After breakfast, a half-day private city tour of Salvador: the UNESCO-listed Pelourinho, the heart of the historic centre, with its colourful colonial buildings and lively streets; the magnificent Church of São Francisco, with its richly decorated Baroque interior; and the Lacerda Elevator, with spectacular views over the bay and the Lower City. Then continue along the coast to Praia do Forte, a charming seaside village north of Salvador, and check in at your hotel.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                  "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p112",
-                      "textSha256": "6659574572533038daf96cd41c06a76a6799711b7ce587765ac39cf6ce8020ea"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:179afc5b619ea227",
-                "field": "itinerary.label",
-                "sourceTextSha256": "f9638d61817f45d50d040b52a87ec567129101d4db5cae07f76ef5c5174219b6",
-                "text": "Salvador",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                  "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p48",
-                      "textSha256": "5ad4a23bc13eaf92e9c035b1d3edbb92582a99f2dbe64525009755f989eedfb2"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:f593e8098afbf224",
-                "field": "itinerary.label",
-                "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
-                "text": "Praia do Forte",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
-                  "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p124",
-                      "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:media_alt:14755d46b6f87dd3",
-                "field": "media.alt",
-                "sourceTextSha256": "11df269f59fe577fac0821e7c243b3a9bb72c283203347bfe69a3f5f8ad22e8e",
-                "text": "Colourful colonial façades and a yellow church on a street in Salvador, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-eaeb603e-04",
-                  "wordAbsenceReason": "The selected Word programme contains no corresponding photo alt or hover caption; translated the current RU caption."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:13:14.146Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-eaeb603e-04",
+        "blobSha": "a159b3e86b7d23475a10c3e7b78e6f0c42d39896",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_gems_14d_b008/ada-en-eaeb603e-04.json",
+        "at": "2026-11-03T22:18:08.389Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

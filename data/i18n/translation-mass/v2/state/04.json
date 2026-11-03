@@ -217,7 +217,93 @@
         "claimedAt": "2026-11-03T23:03:09.387Z",
         "expiresAt": "2026-11-04T00:33:09.387Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-daf0a8173bbc-03-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-daf0a8173bbc-20261104",
+        "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b004",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "cbdd67c4ac2d82423efccdafa1002e4ae7d36d17c45d953da5870d04a351ccdd",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:4f36fed1c9f93ca7",
+              "field": "media.hover",
+              "sourceTextSha256": "05465945ec2c80744b24ef058ad97e404d7e2351eebe0b395af983a4aaeaf2d2",
+              "text": "Rio from above: Christ the Redeemer overlooking the city and coastal mountains",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "The selected Word describes the Rio sights but does not contain the hover caption for this specific aerial photograph. Translate the existing RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "3ddaf263585671a320e72ed9f7135f6bc3163bde0ce03a1132022a42d9b84de9",
+              "text": "Rio de Janeiro: Sugar Loaf",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p37",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  },
+                  {
+                    "ref": "word/document.xml#p75",
+                    "textSha256": "0d73c76fa66b939c32988c5586f835f74b30d4f1d54ff0cc7b56204644e89b18"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the documented city name with the Day 2 attraction, retaining the Word spelling Sugar Loaf and the existing city-and-attraction title structure."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "bfa5ace59d558edbb1277a24be1c90baafc276b0380407fdfe7d3dadef3d591c",
+              "text": "Day 2 · After breakfast, a half-day excursion to Sugar Loaf. The first stop is Urca Hill, with a wide viewing area and a restaurant; from Sugar Loaf, enjoy a beautiful view of Rio, Copacabana Beach, the bay, the surrounding mountains, the islands in the ocean, the Rio–Niterói Bridge and the statue of Christ on Corcovado. After the cable car ride down, the tour continues by car to the old centre of Rio, with its churches, monasteries, cathedral and colonial-style buildings. Your guide can take you to a local restaurant to taste the delicious dishes of the local cuisine.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p78",
+                    "textSha256": "1ee73cecdc2497aee4520766e512c6736d0e453647b6f64d41b869a2e47eed0a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p37",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:03:58.424Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

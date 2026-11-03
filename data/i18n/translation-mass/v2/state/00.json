@@ -85,7 +85,89 @@
         "claimedAt": "2026-11-03T21:22:47.740Z",
         "expiresAt": "2026-11-03T22:52:47.740Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ddc12b513de4-tour_bolivia_chile_hidden_treasures_16_days-b025-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-ddc12b513de4",
+        "token": "tok-ddc12b513de4-20261104",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ddc12b513de4-tour_bolivia_chile_hidden_treasures_16_days-b025",
+          "result": {
+            "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b025",
+            "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "59a3f412abbc94d04c437a66629883d02e71e6c067b60da66c46effd83899ed0",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:4986fdcfdc640867",
+                "field": "itinerary.label",
+                "sourceTextSha256": "8f22fdb8ebff8f5caa68046b3da0d1a5b3c411941f76288531fa7d5db9eef0d8",
+                "text": "Cachapoal Valley",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p147",
+                      "textSha256": "d22150e0b23bc45d7e1a3128ab2d85cca586dcaafd627c893e3898861538dadc"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted or localized a place label from the exact matching Word day and route context."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:10a3d9e6a51f0d50",
+                "field": "media.alt",
+                "sourceTextSha256": "ed971025758f3f3158c03c02d8ee64c6ef43087de36ced407f0ea97fc759ec7b",
+                "text": "Red and blue cable car cabins above Santiago, Chile",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word does not provide the corresponding cable-car photo alt or hover caption; translated the frozen RU caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:0be2c28ad1d12e86",
+                "field": "media.hover",
+                "sourceTextSha256": "58fea5a52c19c7dc3078413e458e3c3a5d44938b867668a8225a38d281f92243",
+                "text": "Santiago: cable car cabins against a backdrop of high-rise buildings and mountains",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-ddc12b513de4",
+                  "wordAbsenceReason": "Word does not provide the corresponding cable-car photo alt or hover caption; translated the frozen RU caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:d62b56b4c22fba29",
+                "field": "itinerary.label",
+                "sourceTextSha256": "1bebcbe9a408af2c12ecaf9d8beeb951f7eeaf5ee54bcf1c34c8e2995b852ff7",
+                "text": "Vik Winery",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p147",
+                      "textSha256": "d22150e0b23bc45d7e1a3128ab2d85cca586dcaafd627c893e3898861538dadc"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted or localized a place label from the exact matching Word day and route context."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T21:23:09.938Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -178,207 +178,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b007",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "568ccb7a80cd81d7e90e4aeed7eded48aa8172b2f2fcb9a89d40b3593199a6bd",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-821a3075e51e-worker",
-        "token": "ada-en-821a3075e51e-token-20261104",
-        "claimedAt": "2026-11-03T23:04:43.676Z",
-        "expiresAt": "2026-11-04T00:34:43.676Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b007:cp8:821a3075",
-        "format": "inline-v1",
-        "ownerId": "ada-en-821a3075e51e-worker",
-        "token": "ada-en-821a3075e51e-token-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b007",
-          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "568ccb7a80cd81d7e90e4aeed7eded48aa8172b2f2fcb9a89d40b3593199a6bd",
-          "blocks": [
-            {
-              "blockId": "tour:contentBlock_text:72f4b2f4264ff59b",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "6d5a46489c9985bf305890853f6a9f757631187979236271e843c867a8ac2b69",
-              "text": "All the services below are available at an additional cost. Choose an excursion for your free time; the day and time will be arranged around the main programme and the Carnival schedule.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word has an additional-cost heading but no equivalent note on arranging optional excursions around the main programme and Carnival schedule. Translated the current RU scheduling note."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:82be7d7c68a56161",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "5fa9f3d415c77e693043d66aa84511c23f2b3cc8b8f2633d3448ca6838e117a5",
-              "text": "USD 120 per person\nShow only; transfers on request",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[188]",
-                    "textSha256": "5b8c92641ac016df650c0b531efcb6c18268a294a5bf4529f024b768256983d3"
-                  },
-                  {
-                    "ref": "word/document.xml:p[189]",
-                    "textSha256": "662a1c591bd3df6d996c2c537c23d7ab4bbbec52ac559d4439f8ca14038497cf"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:c6c6c7252bfa1952",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "5b2b228e1775ac575e26e25b214ffdc5b9f672c1a842a0303044be3227a3536f",
-              "text": "Optional: group boat trip with a guide, minimum 2 people; transfers included. The programme lists a $230 rate marked “z/z”; the pricing basis is confirmed when you book.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word says USD 230 per person, whereas the current RU explicitly leaves the tariff basis unconfirmed and marks it z/z. Preserved the current RU amount and qualification pending a separate commercial-master basis amendment; did not silently change the tariff basis."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:1ffcf79ed9a0fd90",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "ab7d9b60e5ec19d4d3685ce6e1eacdb4aa540bbe53e6580e493afdef3850c090",
-              "text": "Optional: private 4-hour tour with an English-speaking guide, minimum 2 people, USD 170 per person. Food and drinks at Confeitaria Colombo are not included.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[197]",
-                    "textSha256": "11a9397570b6ddea975e19a157d9807dd163e5268194ea9fad343ec28e29abf5"
-                  },
-                  {
-                    "ref": "word/document.xml:p[198]",
-                    "textSha256": "5074c59e5b70836faf5b4ef9160a7302e05a9aea7bb191a40d97cdf7df9b9b32"
-                  },
-                  {
-                    "ref": "word/document.xml:p[199]",
-                    "textSha256": "b3660b0fd3b343a85dba164c1a5ea29dc33c9be1d6a1c93899429630dce944db"
-                  },
-                  {
-                    "ref": "word/document.xml:p[200]",
-                    "textSha256": "f94f8b3078827390df3f3b699544862ad96b8cb6753bb66279a1f99e32f0d4c6"
-                  }
-                ],
-                "transformation": "compose_tariff_summary",
-                "rationale": "Combined the exact Word duration, private format, minimum participation, English-speaking guide, per-person tariff and Colombo food-and-drink exclusion into the existing tariff-note field, without reproducing the separate excursion description."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:8e5068ea209ef89a",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "5f17b7eb1644f206f9a0db01e58170f61088972ef9e7d05d8d750fdd0e27ea74",
-              "text": "Optional: a 6–13-minute helicopter flight over Rio. The route depends on the flight duration; price on request.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word supplies the 6–13-minute duration and price-on-request entry but no statement that the route depends on the duration. Translated the complete current RU note, retaining that qualification."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:7dab5b05255618a8",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "81d367e4b3711ebe4274911bd22e9a14f97b4d5a0c17483a0fdf11c8d98d8aca",
-              "text": "Optional: private Botanical Garden tour with an English-speaking guide, minimum 2 people, USD 200 per person. See avenues of palms, orchids, pau-brasil and the giant water lilies of Frei Leandro Lake.",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[205]",
-                    "textSha256": "fe99028983435008000b1f151faeb9703716cea2e290a54f6d1b42ae98a2d56c"
-                  },
-                  {
-                    "ref": "word/document.xml:p[207]",
-                    "textSha256": "f2d8d6a5911da01f17e66840101d78d9be85222d68357b72ac3d96ba06f57105"
-                  },
-                  {
-                    "ref": "word/document.xml:p[208]",
-                    "textSha256": "b3660b0fd3b343a85dba164c1a5ea29dc33c9be1d6a1c93899429630dce944db"
-                  },
-                  {
-                    "ref": "word/document.xml:p[209]",
-                    "textSha256": "11bf0a862e9d6ed127b60b42635ac9760295f4080323f1118468a48875e9cbc8"
-                  }
-                ],
-                "transformation": "compose_tariff_summary",
-                "rationale": "Combined the Word optional-excursion name, tariff, minimum participation, private English-guided format and the named garden features into the existing concise tariff note, without adding features or changing rates."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:2376e037c1e519da",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "8b8a3970cb1f6ae2e2062fcd217cd5b0e3ab79f3c7d88924df9f212f631e1cc3",
-              "text": "Optional: explore Rocinha by jeep. Join a group with an English-speaking guide for $90 per person, or book privately with an English-speaking guide for $170 per person, minimum 2 people. Return to the hotel after the trip.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word favela row gives group/private rates and a local guide but omits the distinct guide-language promises and hotel-return statement present in current RU. Translated the RU note with the owner's 03 November 2026 English-service adaptation for the RU-derived private-guide language."
-              }
-            },
-            {
-              "blockId": "tour:contentBlock_text:c3629b96fbf116e6",
-              "field": "contentBlock.text",
-              "sourceTextSha256": "0806a4f7a121dc1de68e3fb378a55bb80184cf451d9e894670db69e7e00839bd",
-              "text": "Optional: $390 per person. Take off from Pedra Bonita in Tijuca Forest and land on Pepino Beach. An English-speaking instructor gives you a briefing, provides the equipment and flies with you; transfers and GoPro recording are included.",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-821a3075e51e-worker",
-                "wordAbsenceReason": "The verified Word confirms the tandem instructor, locations, rate, transfers and GoPro, but has no explicit briefing or equipment-provision wording. Translated the current RU service note, preserving those stated services and the original amount."
-              }
-            }
-          ],
-          "commercialAmendments": [
-            {
-              "status": "for_commercial_master",
-              "kind": "price_basis_clarification",
-              "blockId": "tour:contentBlock_text:c6c6c7252bfa1952",
-              "currency": "USD",
-              "amount": 230,
-              "basis": "per_person",
-              "occupancy": null,
-              "minimumParticipants": 2,
-              "currentRuBasis": "unconfirmed z/z",
-              "proposedWordBasis": "per person",
-              "source": {
-                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p[193]",
-                    "textSha256": "3dd84812e6daa3ebb4be487859f667d16bbf5803e4b7340bf98fd70d5276bf7c"
-                  },
-                  {
-                    "ref": "word/document.xml:p[194]",
-                    "textSha256": "e8d1bf22c28db4790c617f6cc28d1996b7ec49932e859a6f9d0c9e642c6b6870"
-                  }
-                ]
-              },
-              "changesApplied": false
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:06:47.385Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b007:821a3075:submission",
+        "blobSha": "7ab2a166d462dc9a4dc6285ec8b1e6632322a3d2",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b007/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b007_821a3075_submission.json",
+        "at": "2026-11-03T23:06:51.234Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

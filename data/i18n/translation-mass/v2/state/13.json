@@ -42,7 +42,7 @@
         "expiresAt": "2026-11-03T23:30:29.082Z"
       },
       "checkpoint": {
-        "id": "cp-98cdd875f4b9-b011-4",
+        "id": "cp-98cdd875f4b9-b011-8",
         "format": "inline-v1",
         "ownerId": "ada-en-98cdd875f4b9",
         "token": "token-98cdd875f4b9-20261104",
@@ -114,10 +114,77 @@
                 "runId": "ada-en-98cdd875f4b9",
                 "wordAbsenceReason": "The verified Word contains itinerary prose but no corresponding image alternative text or hover caption."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:8d638f38fdee4763",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2676cbfc0f409e974eb9bb0b70a0b4eedf718fc5681e982062b6e73fa5146eb2",
+              "text": "Ushuaia",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p42",
+                    "textSha256": "49a938fe0bf8aa1b0608d7a47adc2a72edfd9ae8049516324dd76aefb717c8e1"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3025737cfa2ddede",
+              "field": "itinerary.label",
+              "sourceTextSha256": "04a5c4fed1aa08b7d24e5afb0849f3a2ae98f0fa262d9aff59bace154463df3b",
+              "text": "Tierra del Fuego National Park",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p88",
+                    "textSha256": "7c93d86c569a0a4ce2dafb1063cc60c75e3e99142cc88e9e41479fde751c8da4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the matching place name from the exact itinerary paragraph for this route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1a6502285e383b4a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0c36a58368a46dfd9e9d5841f30df6c4bd398a4c7d31de535be867206e1ea03d",
+              "text": "Pipo River",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p92",
+                    "textSha256": "78f6ea298b07f78de86eaefdc302a151ae77832e46750e007f9f7acd704d4803"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the matching place name from the exact itinerary paragraph for this route label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:087c021bd08ccaac",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1ce4317d2aa5ab49bbea93579fbfdb6c4a0095681b2949cf3cedef6bafd6321e",
+              "text": "Ensenada-Saratiegui Bay",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word calls this Ensenada Bay without the Saratiegui qualifier; preserve the current RU label in full."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:02:31.530Z"
+        "at": "2026-11-03T22:02:51.713Z"
       },
       "submission": null,
       "review": null,

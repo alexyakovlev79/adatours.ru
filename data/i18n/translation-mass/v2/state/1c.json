@@ -479,7 +479,7 @@
         "expiresAt": "2026-11-04T00:33:43.139Z"
       },
       "checkpoint": {
-        "id": "ada-en-f4e636b296c4-005-cp4",
+        "id": "ada-en-f4e636b296c4-005-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-f4e636b296c4",
         "token": "ada-en-f4e636b296c4-20261104",
@@ -557,10 +557,79 @@
                 "runId": "ada-en-f4e636b296c4",
                 "wordAbsenceReason": "Word describes private transport and premium accommodation but has no exact Private VIP format label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:05d7c958b87212c3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p6",
+                    "textSha256": "fb571b27e2bf5ac8384164fa2bc664cec1d3c0e6c09941eac9b8cccf94e8a8e3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract only the exact destination name from the Word day heading; remove day number and activity label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:faf3ddc061ca61af",
+              "field": "itinerary.label",
+              "sourceTextSha256": "440dbe6aeb68271cbbab8c04ba7cd7f24cebfff38d3ba42f463d4546ad0affb6",
+              "text": "Millahue",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "Word has VIK Chile and Colchagua but does not include the precise Millahue itinerary-place label; translate current RU label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:72647e923e0b6976",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e41062add057645e926bf42391b44b831d40619296fa430b370f4633481e7939",
+              "text": "Easter Island",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p17",
+                    "textSha256": "0e2965cf449c748aa8eab9048b6dfe6746add54959b9428bfe2102fcf96589f4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract only the exact destination name from the Word day heading; remove day number and activity label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:05d7c958b87212c3:2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2774f3423618e407a13d56e5b3474aa639c0bf7b15cf791572c280a2c3fd9bbf",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p6",
+                    "textSha256": "fb571b27e2bf5ac8384164fa2bc664cec1d3c0e6c09941eac9b8cccf94e8a8e3"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract only the exact destination name from the Word day heading; remove day number and activity label."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:04:32.728Z"
+        "at": "2026-11-03T23:04:37.117Z"
       },
       "submission": null,
       "review": null,

@@ -1,0 +1,159 @@
+{
+  "jobId": "en:bulk:tour:tour_colombia_cano_cristales_8_days:b007",
+  "stableId": "tour_colombia_cano_cristales_8_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "4458f287d566e57baa27efb27f505df880e157d0021eeed6923a4ff5cc92ffb8",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+      "field": "itinerary.text",
+      "sourceTextSha256": "f980791fc9a775905f0f9c192e036ea85c69f528bd28eaa632917dea0516e7a7",
+      "text": "A private excursion (6 hours) to the Chicaque Natural Park, a majestic cloud forest just outside Bogotá, with more than 18 km of trails among mountains, waterfalls and viewpoints, and seven types of forest home to over 300 bird species and 20 mammals. A specialised guide accompanies the walk to the refuge, followed by a traditional lunch. Uneven terrain; not suitable for people with reduced mobility.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+        "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p69",
+            "textSha256": "d1f44c79221918072ad0a4e2c6f570999d5b6e936ce58846555eff04d5a54a48"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Only the Day 3 list marker is removed from the exact Word paragraph; its English wording is retained."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:592d9bf6f24904d0",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+        "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:66d696f63233efc6",
+      "field": "itinerary.label",
+      "sourceTextSha256": "97de5c2529f59a08d0bf79f399a22709b41e4f9ad7eeeb839936b6caa3afc1a3",
+      "text": "Chicaque Natural Park",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+        "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p69",
+            "textSha256": "d1f44c79221918072ad0a4e2c6f570999d5b6e936ce58846555eff04d5a54a48"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The park name is extracted unchanged from the selected Word day-three paragraph as a place label."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:8bedfaf554f98424",
+      "field": "media.alt",
+      "sourceTextSha256": "86302fb6509998855a3d5998127106c4123fdabc1b24268338dc19a014a86a8b",
+      "text": "Panoramic view of Bogotá with high-rise buildings and mountain slopes",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-20261104-79f7d751",
+        "wordAbsenceReason": "The selected Word programme contains no photographic alt text for this RU image; translated the current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+      "field": "itinerary.title",
+      "sourceTextSha256": "2d693010274de33518db9afdd0569842983cacacd377f5175e3ac5b4432900ff",
+      "text": "La Macarena, El Mirador and Caño Cristalitos",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+        "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p74",
+            "textSha256": "33f7339c4a594cf4b0d3e32a01bccdad03300a97ccb71c9019e973bf1b6e54ac"
+          },
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "1bcc8806cc04119b8c485a2fe045c5161361eedf1274b7979cfe17e3bc0365f6"
+          }
+        ],
+        "transformation": "condense_route_label",
+        "rationale": "The itinerary heading uses only the day-four place names attested by the selected Word heading and paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:ec46e3209ab74818",
+      "field": "itinerary.text",
+      "sourceTextSha256": "303b796abd69f7ef028f2ca4f7d40cb7b9ad164634a9921d644de6254877f951",
+      "text": "Charter flight to La Macarena, where your local guide welcomes you with a brief introduction to the national park. A 20-minute canoe ride on the Guayabero River, then a 45-minute walk to El Mirador, a viewpoint over the Guiana Shield, and a 45-minute hike to Caño Cristalitos, with its crystal-clear water and Macarenia clavigera: time for a swim and lunch. About 50 minutes back to the river and 15 minutes by canoe to La Manigua Lodge, where monkeys may be seen from the cabins. Dinner at the lodge.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+        "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "1bcc8806cc04119b8c485a2fe045c5161361eedf1274b7979cfe17e3bc0365f6"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Only the Day 4 list marker is removed from the exact Word paragraph; its English wording is retained."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:62c21ddd71763742",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+      "text": "Bogotá",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+        "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:b5f2795c8e8882da",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7e2a8dffa0bf2e9b2555561e5ffb98193487c8c8d4ee36625ab8e4ca12aa645f",
+      "text": "La Macarena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+        "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p8",
+            "textSha256": "692c69a485a31aaae9426ceae8139047e565d96bcdeb412b8b09c73a9fe98751"
+          },
+          {
+            "ref": "word/document.xml:p77",
+            "textSha256": "1bcc8806cc04119b8c485a2fe045c5161361eedf1274b7979cfe17e3bc0365f6"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "The destination name is extracted unchanged from the Word itinerary and day-four paragraph as a place label."
+      }
+    }
+  ]
+}

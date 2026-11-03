@@ -343,7 +343,7 @@
         "expiresAt": "2026-11-03T23:54:16.413Z"
       },
       "checkpoint": {
-        "id": "ada-en-35901b4e-p6-cp4",
+        "id": "ada-en-35901b4e-p6-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-35901b4e-translator",
         "token": "ada-en-35901b4e-20261104",
@@ -432,11 +432,73 @@
                   "transformation": "contextual_label",
                   "rationale": "Extracted the Word landmark name and made a standalone route label with the existing Santiago context."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_label:494cec915f017714",
+                "field": "itinerary.label",
+                "sourceTextSha256": "905541956c69026e9d88b89d0176a688bbc76c9a99355ac093ca0a400c5ecf96",
+                "text": "Santa Lucía Hill",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p8",
+                      "textSha256": "2d005928a5a0f7758103c7f43e245aef5358b02242003fc8b66e993e50ff226a"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracted the Word landmark name and made a standalone route label with the existing Santiago context."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:7df89c58a57bc384",
+                "field": "media.alt",
+                "sourceTextSha256": "85d37f62bda71fdc423253c12c695e0b681b8132864715097f7284092f7554c0",
+                "text": "Santiago skyscrapers against mountains and a pink sunset, Chile",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-35901b4e",
+                  "wordAbsenceReason": "Word contains no corresponding image alternative text or hover caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:5700790e188f9814",
+                "field": "media.hover",
+                "sourceTextSha256": "85d37f62bda71fdc423253c12c695e0b681b8132864715097f7284092f7554c0",
+                "text": "Santiago skyscrapers against mountains and a pink sunset, Chile",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-35901b4e",
+                  "wordAbsenceReason": "Word contains no corresponding image alternative text or hover caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+                "field": "itinerary.title",
+                "sourceTextSha256": "e1bd4239968920c40e73a66b476fbb75822ec63e367aa187d74aff98beb73984",
+                "text": "Santiago | Central Valley: Wine Excellence",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                  "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p11",
+                      "textSha256": "c20dd81fa509b02f7eb7090b0faf1866538d2e771a41cb01340f460114cd4712"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removed the Day 02 prefix from the exact Word heading to fit the existing itinerary title field."
+                }
               }
             ]
           }
         },
-        "at": "2026-11-03T22:25:05.332Z"
+        "at": "2026-11-03T22:25:10.152Z"
       },
       "submission": null,
       "review": null,

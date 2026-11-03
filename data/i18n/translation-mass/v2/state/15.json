@@ -479,7 +479,72 @@
         "claimedAt": "2026-11-03T23:16:56.593Z",
         "expiresAt": "2026-11-04T00:46:56.593Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-40d0e44e-007-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-40d0e44eb57848bf",
+        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_colombia_complete_11_days:b010",
+          "stableId": "tour_colombia_complete_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "c71e68b9469a8bbc8f704969b0f6a1e9630a48131f707a6d9622ce9091aa84ba",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:a1512d5ba6fdc673",
+              "field": "media.alt",
+              "sourceTextSha256": "e0bce14c85223d62e6f890dc737a8f3b9e2c555a27f5322c2d95dabb50384a8f",
+              "text": "Palm trees and a sandy beach on San Andrés beside the clear turquoise sea, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "The verified Word contains no image-specific ALT or hover caption corresponding to this Russian beach image description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:e75cbc0bf7787334",
+              "field": "media.hover",
+              "sourceTextSha256": "8414c9914338ad829b652f595e556d55e028054c5f510861adcbc02910c1dd55",
+              "text": "San Andrés: leaning palm trees over pale sand and the surf",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "The verified Word contains no image-specific ALT or hover caption corresponding to this Russian beach image description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "67ae409f0725d859cfeba37710116263994a45fbf0376c3d0fd29321315dcad7",
+              "text": "San Andrés: first day by the Caribbean Sea",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "Word p109 and p112–113 combine days 7–8 in one two-day narrative; there is no separate matching Word text for this individual day. Translate only the current RU day block, retaining its day-specific details without duplicating the combined two-day Word passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:2e780f63f4172747",
+              "field": "itinerary.text",
+              "sourceTextSha256": "778742409d87dd6ab8a5e94be826ac0365eabae1a8725d58f7b6ec343c6719cd",
+              "text": "Your first full day at leisure on San Andrés. Enjoy the beaches, the clear waters of the Sea of Seven Colours and the resort facilities. No excursions are scheduled today: you choose how to spend your day. Optional excursions and activities can be arranged at an additional cost. All-inclusive accommodation at the island resort. Overnight on San Andrés.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "Word p109 and p112–113 combine days 7–8 in one two-day narrative; there is no separate matching Word text for this individual day. Translate only the current RU day block, retaining its day-specific details without duplicating the combined two-day Word passage."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:18:00.560Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -1,0 +1,143 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b003",
+  "stableId": "tour_brazil_little_mix_ten_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "ad3c723651d1605e05dd6351f38fe50724e69d26da0d1b02a42670ff1fb3026f",
+  "blocks": [
+    {
+      "blockId": "tour:note:4c8e583e0764f4e9",
+      "field": "note",
+      "sourceTextSha256": "224b346e2420027bb01726c72ecc7ef0b822b15b54a7a472c67eb1f798e8f98b",
+      "text": "The programme includes flights from São Paulo to Rio de Janeiro to Salvador. The Word note on domestic flight costs lists a different order: Rio de Janeiro to São Paulo to Salvador; the flight itinerary and cost must be confirmed.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "The verified selected Word p60 and p173 actually list São Paulo–Rio–Salvador; this RU discrepancy note has no matching Word passage. Translate the current RU note faithfully and flag its contradiction for independent review."
+      }
+    },
+    {
+      "blockId": "tour:note:02a5407e5008c8fd",
+      "field": "note",
+      "sourceTextSha256": "b92b09dcb01d27846b5ae821d5fd4e9289ead9d14a3c60d02f172a5002e518aa",
+      "text": "Domestic flights are not included. The indicative Word price is from $800 per person, NET (net), with no commission.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "Word p170/p173/p185 confirm from $800 per person and exclusion, but the current selected Word does not state NET or no commission; these qualifications exist only in the RU note."
+      }
+    },
+    {
+      "blockId": "tour:note:c71cddee461c267f",
+      "field": "note",
+      "sourceTextSha256": "6dd607645f68e2d252add96b19ed5563ec0bc2de00abd71d0797cbe876463730",
+      "text": "The tours on days 2, 4, 5 and 7 are included in the tour programme. The terms for this particular tour are determined by its programme and booking confirmation.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "Word p70/p82/p95/p109 list the included sightseeing, but the RU-specific note about booking confirmation is not a corresponding English Word paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+      "field": "itinerary.title",
+      "sourceTextSha256": "240cf3707848ec8237d5fd13e2eeaaab8f1bf352e1bcc39a0f154ce6168554e8",
+      "text": "Arrival in São Paulo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p64",
+            "textSha256": "29a68626e61a1eecf03ba3840643eb5b6e4ad4d135c047500b61ebd574d497ea"
+          },
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "f51e3a9e9a9cfc62068aa664f18e678050b1d826ae9a2615115dc7faa9cd1eb3"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose a concise arrival heading using the Word Days 1–2 heading and the Day 1 São Paulo arrival paragraph."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a4836cca1208c95",
+      "field": "itinerary.text",
+      "sourceTextSha256": "51d0a43522a7b8fbe8f4327515c9ecbed57e9a828d9aa1e2e082b76952e3cbbc",
+      "text": "Upon arrival at São Paulo International Airport, your guide welcomes you and accompanies you to your hotel. After check-in, the rest of the day is at leisure to relax or begin exploring the vibrant energy of Brazil’s largest city at your own pace.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p67",
+            "textSha256": "f51e3a9e9a9cfc62068aa664f18e678050b1d826ae9a2615115dc7faa9cd1eb3"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 1 list prefix because the itinerary entry already supplies the day number."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:376c86191b98ed7d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+      "text": "São Paulo",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+        "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p66",
+            "textSha256": "f00fd81daee53caeb98c10457637170f397caf1a97e48e0d2bdcb4cc2639faa4"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Use the exact São Paulo heading as the place label for this arrival day."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:0e581c37eac96102",
+      "field": "media.alt",
+      "sourceTextSha256": "b7c8c36c199c1676ad134fc7ab8b6300c543f1fa06fe761a4ddafd01567c6821",
+      "text": "A cable-stayed bridge and high-rise towers in São Paulo in the evening light, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "The selected Word has no corresponding image-specific ALT caption about the São Paulo bridge and towers at evening."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:1314a8473e7935ed",
+      "field": "media.hover",
+      "sourceTextSha256": "56c13627f323fefed5f4e17c86e37dc35308782d0c11fae8913591d6f6e2c52f",
+      "text": "São Paulo: a bridge with intersecting supports beside the city's high-rise buildings",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "The selected Word has no corresponding image-specific hover caption about the bridge with intersecting supports."
+      }
+    }
+  ],
+  "unresolvedConflicts": [
+    {
+      "blockId": "tour:note:4c8e583e0764f4e9",
+      "kind": "ru_note_word_conflict",
+      "detail": "Current RU note alleges a different Word flight order. Verified selected Word paragraphs 60 and 173 state São Paulo–Rio de Janeiro–Salvador, matching the programme. RU note translated without silently correcting canonical content."
+    },
+    {
+      "blockId": "tour:note:02a5407e5008c8fd",
+      "kind": "ru_commercial_qualifier_absent_in_word",
+      "detail": "NET and no commission are present in the RU note but absent from the verified selected Word; unchanged amount $800. Requires commercial-master confirmation."
+    }
+  ]
+}

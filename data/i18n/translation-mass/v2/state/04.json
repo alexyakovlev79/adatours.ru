@@ -94,7 +94,86 @@
         "claimedAt": "2026-11-03T22:06:38.414Z",
         "expiresAt": "2026-11-03T23:36:38.414Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-e882dc059107-b010-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-08f6156f-e882dc059107",
+        "token": "ada-en-token-e882dc0591074d8993f963df06219c37",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b010",
+            "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "59426483541bdbc066575bdde9ce332a45782fae08d0226ce47da3a901ffb922",
+            "blocks": [
+              {
+                "blockId": "tour:media_alt:be31185c39374c0c",
+                "field": "media.alt",
+                "sourceTextSha256": "f12461bf5762c47a234294cec06c33b4f615bc62dd2241307dd8005f82873fd4",
+                "text": "Reddish waters of Laguna Colorada and a multicoloured shore against a mountain backdrop, Bolivia",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-run-e882dc0591074d8993f963df06219c37",
+                  "wordAbsenceReason": "The verified Word 2027 document contains no image alt or hover captions for this photograph; translated the exact current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:ee781abe5d331aaa",
+                "field": "media.hover",
+                "sourceTextSha256": "3440e09ef7909e9b2a6b3a8418d55370106cd7fd19773dc70459dc3b6d1b353d",
+                "text": "Laguna Colorada in Bolivia: colourful shores and mountain slopes",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-run-e882dc0591074d8993f963df06219c37",
+                  "wordAbsenceReason": "The verified Word 2027 document contains no image alt or hover captions for this photograph; translated the exact current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:8a9350ad85d153ba",
+                "field": "itinerary.label",
+                "sourceTextSha256": "da1eb150ed67b377bf160e5ccd2ff403d5419f7f5304bf95ca5c19c8c311c26f",
+                "text": "Uyuni",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "62362f693568eff2b84906d5e5a162eb0cd32b7210b27217af1338a4442321ac"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:3a6a0c883db72248",
+                "field": "itinerary.label",
+                "sourceTextSha256": "a2437ad64a13f47651a346701797464bd6dafd1f56db4b5797abe9678f100546",
+                "text": "Laguna Colorada",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p41",
+                      "textSha256": "4265af6a9871e13cb271814129df6425b1cba1ceb1f56ec47edf8d1c2f3eb943"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the named Laguna Colorada from the combined programme-highlight caption."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T22:08:08.403Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

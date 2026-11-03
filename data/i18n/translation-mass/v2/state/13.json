@@ -108,7 +108,7 @@
         "expiresAt": "2026-11-04T00:31:29.498Z"
       },
       "checkpoint": {
-        "id": "submit-98cdd875f4b9-4-cp4",
+        "id": "submit-98cdd875f4b9-4-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-98cdd875f4b9",
         "token": "token-98cdd875f4b9-20261104",
@@ -183,10 +183,76 @@
                 "runId": "ada-en-98cdd875f4b9",
                 "wordAbsenceReason": "The verified Word covers this itinerary in paragraphs40,41,48 and guide in101, but lacks the RU booking qualification on animal contact; translate current RU preserving this limitation."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:f8ac6aaa6f521cfe",
+              "field": "itinerary.label",
+              "sourceTextSha256": "18fd24812412a432a4ec869caf8fd1da7b251ec2011e325bf3bf0136c27dd3cd",
+              "text": "Manaus and the Amazon",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p34",
+                    "textSha256": "e890546d03db07088116d8ebc2f42b26f059c9be125244759fcda3ef1252783d"
+                  },
+                  {
+                    "ref": "word/document.xml:p40",
+                    "textSha256": "7d15d43b27dbd7834dbb085135f676177f36dbfdd3752e4cfd06b4e8dc36a13d"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e61ba7ca823e0c08",
+              "field": "media.alt",
+              "sourceTextSha256": "48c9ff63991939aaecd060f5d5313b2f05c3aa1cb57914a39f6f462db5c6ee32",
+              "text": "A winding river amid dense Amazon rainforest, Brazil, seen from above",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word has no matching image alternative text or hover caption; translate the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:448164e0f0b6c175",
+              "field": "media.hover",
+              "sourceTextSha256": "3ee80b1d2a96871765c14259c645f7f301b5e9294038bf6ca699a9be7788fa66",
+              "text": "The Brazilian Amazon: a river bend amid tropical rainforest",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word has no matching image alternative text or hover caption; translate the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "4faedeba3de8ff755231aaa6770498fc374aed14fe4f16dcd4dd389a5d197646",
+              "text": "Manaus – Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p50",
+                    "textSha256": "7ea0dacedff8b82f3c4285c850540f1cf0d91086aaae16d696a4b1679d320303"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:02:07.884Z"
+        "at": "2026-11-03T23:02:11.873Z"
       },
       "submission": null,
       "review": null,

@@ -319,7 +319,7 @@
         "expiresAt": "2026-11-03T23:45:32.338Z"
       },
       "checkpoint": {
-        "id": "sub-ada-en-20261104-2b52b0aa-4-cp4",
+        "id": "sub-ada-en-20261104-2b52b0aa-4-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-2b52b0aa",
         "token": "tok-2b52b0aa-1135-ada-en",
@@ -407,6 +407,71 @@
                     }
                   ]
                 }
+              },
+              {
+                "blockId": "tour:media_alt:c8e3a80e2c678b92",
+                "field": "media.alt",
+                "sourceTextSha256": "3198e756ab69d3b0c1c4cee52a2aca359874bdfc581ab4522269fec54c0b46ef",
+                "text": "Panorama of Rio de Janeiro with the bay, Sugar Loaf Mountain and city buildings, Brazil",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word contains no photograph-specific alt description; translated the current RU caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:6eee82a2b72a1a8c",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+                "text": "Rio de Janeiro",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[8]",
+                      "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:fad087100c51e11d",
+                "field": "itinerary.label",
+                "sourceTextSha256": "bbba7ba154e490b062cee03e8dcb16b0bd5e7eb94f09c1f351f75a9a19dd8189",
+                "text": "Urca Hill",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[85]",
+                      "textSha256": "6fb1ec40cbd1808d33b595da4f800015c60e4ca6c42eb7d1e6046a654e7a0089"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the exact named stop Urca Hill from the Word cable-car description for the existing place label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:c2bdac36630388b5",
+                "field": "itinerary.label",
+                "sourceTextSha256": "c20fa275ecbe6a0d6c918b2133e0ffc8929360be9e40d9e18c29cdf8fd581bcf",
+                "text": "Sugar Loaf Mountain",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                  "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[84]",
+                      "textSha256": "add1dc8c52b3984d141d5e995b41d64362753de9362a4bb51c8de51204f3e540"
+                    }
+                  ]
+                }
               }
             ],
             "sourceEvidence": {
@@ -459,7 +524,7 @@
             }
           }
         },
-        "at": "2026-11-03T22:16:21.023Z"
+        "at": "2026-11-03T22:16:25.466Z"
       },
       "submission": null,
       "review": null,

@@ -41,7 +41,98 @@
         "claimedAt": "2026-11-03T21:56:08.898Z",
         "expiresAt": "2026-11-03T23:26:08.898Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "best-b007-4-v1",
+        "format": "inline-v1",
+        "ownerId": "ada-en-7963199f582c",
+        "token": "ada-en-20261104-7963199f582c-stable",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_argentina_best_14_days:b007",
+            "stableId": "tour_argentina_best_14_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "3c8611bbce9bcfcfbf1c4c33256da84b921128de2bb2f4a4a12114504637bd68",
+            "blocks": [
+              {
+                "blockId": "tour:media_hover:f01a16204c048491",
+                "field": "media.hover",
+                "sourceTextSha256": "30ad26d94adac1353efe8a73d69b599b52f525f9694f1db837285ef88f2178ff",
+                "text": "Buenos Aires: a broad avenue and tall buildings on a sunny day",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "The complete verified Word contains no photograph hover caption corresponding to this sunny avenue image; translate the frozen RU caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:52be276909d6dec7",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+                "text": "Buenos Aires",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p37",
+                      "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:a15d8fb847c70a7e",
+                "field": "itinerary.label",
+                "sourceTextSha256": "5c47d7068c59878b8bfe69628a1c791f4222b40897399eeb2aa5668dabbaae93",
+                "text": "San Isidro",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p207",
+                      "textSha256": "06ce07d4b0fba294136ac9dae85da59b1346cf7b9c265d8df06dfddf4e433c17"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the exact place name from the verified optional Tigre excursion paragraph."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:2c28aaecea19bb2f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "439dfdc2a7dd325b9a1ee456e3e2daa3ba41457aa1490abfd67c8656d4d53c6c",
+                "text": "Tigre",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                  "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p204",
+                      "textSha256": "9a288059231df29677aeaeda5ba79ed374b2f496ad75b47544936b154a8f8d3d"
+                    },
+                    {
+                      "ref": "word/document.xml:p207",
+                      "textSha256": "06ce07d4b0fba294136ac9dae85da59b1346cf7b9c265d8df06dfddf4e433c17"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the exact destination name from the verified optional excursion title and description."
+                }
+              }
+            ]
+          },
+          "submissionId": "ada-en-7963199f582c-best-b007-v1"
+        },
+        "at": "2026-11-03T21:57:17.743Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

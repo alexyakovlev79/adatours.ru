@@ -263,7 +263,7 @@
         "expiresAt": "2026-11-03T23:37:07.321Z"
       },
       "checkpoint": {
-        "id": "ada-en-a2d69b03d72ad4e9-s03-c04",
+        "id": "ada-en-a2d69b03d72ad4e9-s03-c08",
         "format": "inline-v1",
         "ownerId": "ada-en-a2d69b03d72ad4e9",
         "token": "token-a2d69b03d72ad4e9-20261104",
@@ -280,7 +280,7 @@
               "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
               "field": "itinerary.text",
               "sourceTextSha256": "cbf894ac4c911e398313733cfcad5b4201ca91266017f790644548a554462e19",
-              "text": "Day 12 · At 07:00, a private boat excursion (2.5 hours) to the famous Marble Caves (Catedrales de Mármol), shaped over thousands of years by the waters of Lake General Carrera: their blue-and-white chambers and winding stone forms are among the most photographed sights in Patagonia. Transfer to Balmaceda Airport for the flight back to Santiago (about 2.5 hours) and transfer to the hotel by minivan (driver only).\\n\\nAccommodation: Mandarin Oriental Santiago, Club Room, breakfast",
+              "text": "Day 12 · At 07:00, a private boat excursion (2.5 hours) to the famous Marble Caves (Catedrales de Mármol), shaped over thousands of years by the waters of Lake General Carrera: their blue-and-white chambers and winding stone forms are among the most photographed sights in Patagonia. Transfer to Balmaceda Airport for the flight back to Santiago (about 2.5 hours) and transfer to the hotel by minivan (driver only).\n\nAccommodation: Mandarin Oriental Santiago, Club Room, breakfast",
               "provenance": {
                 "kind": "word_exact",
                 "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
@@ -351,10 +351,72 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact destination name from the verified Word route paragraph or hotel table for the matching itinerary place label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:13055a1dfbbff87f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "64c4271b5935c18354fd4e46002f72b14e5a2ee1532bdf378cafdca889ffd527",
+              "text": "Balmaceda",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:146",
+                    "textSha256": "d9dd50b1ab9310be3dabd4f5a30a4d1b9aeeca042b872690a5872dbf9d94a5e4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact city name from the verified Word itinerary as this route label; this is the same stable destination."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7f68434554416cd0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7f56d3f37ddeccc327d8a5f5d768333919184ce5ce7f82f2680e2bc1a90153d4",
+              "text": "Santiago",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:111",
+                    "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:cb9d10126f666f53",
+              "field": "media.alt",
+              "sourceTextSha256": "410d062818a92595c2b99ef00cd496f6d1c02aae81162319715aecb76558474e",
+              "text": "Marble arches above the clear turquoise waters of Lake General Carrera, Chile",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-a2d69b03d72ad4e9",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The verified Word 2027 describes the Marble Caves excursion, but contains no equivalent to this RU image caption; translated the current visual description.",
+                "wordDocumentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009"
+              }
+            },
+            {
+              "blockId": "tour:media_hover:1c6f00bb51023dc1",
+              "field": "media.hover",
+              "sourceTextSha256": "3a9aefdefddc9f2f0c44ae4a93e46b526298430f98d8f0a5ce555aeabbd47f8e",
+              "text": "Chile's Marble Caves: arches and banded rock walls beside the water",
+              "provenance": {
+                "kind": "ai_translation",
+                "runId": "ada-en-a2d69b03d72ad4e9",
+                "model": "GPT-6",
+                "wordAbsenceReason": "The verified Word 2027 describes the Marble Caves excursion, but contains no equivalent to this RU image caption; translated the current visual description.",
+                "wordDocumentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009"
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:08:22.405Z"
+        "at": "2026-11-03T22:08:45.071Z"
       },
       "submission": null,
       "review": null,

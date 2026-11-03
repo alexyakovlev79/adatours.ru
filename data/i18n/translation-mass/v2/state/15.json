@@ -423,7 +423,7 @@
         "expiresAt": "2026-11-04T00:34:57.458Z"
       },
       "checkpoint": {
-        "id": "cp-40d0e44e-005-04",
+        "id": "cp-40d0e44e-005-08",
         "format": "inline-v1",
         "ownerId": "ada-en-40d0e44eb57848bf",
         "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
@@ -523,10 +523,87 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the Mendoza destination name from the corresponding Word day heading."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:487386541596ba40",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e1099186262fe02dd314c18f61614cd0301f32281829810c49041bf8e7deddf1",
+              "text": "Iguazú: Brazil and Argentina",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p72",
+                    "textSha256": "1a78b324e67d851ad1905917eac10dc28a71b6c25eac8a8c609a66447ad7e9f8"
+                  },
+                  {
+                    "ref": "word/document.xml:p79",
+                    "textSha256": "6c18f5be3d3c0b6c06b7d07b76aea76573208918aeca0266c6eef243ae83fd2b"
+                  },
+                  {
+                    "ref": "word/document.xml:p81",
+                    "textSha256": "5dd994b6bcaef6e65f7e5ac09b2eb0043d2881ad76a175bb00fe697078287baf"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Condense the Word Brazilian and Argentine sides of Iguazú into the two-country itinerary label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:baf4a32c564902b5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p86",
+                    "textSha256": "cb7936133f0feeb2da8e4d7f28b0b370818e4bfe977be0ce8d5d27e275146904"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the Buenos Aires city name from the corresponding Word day heading."
+              }
+            },
+            {
+              "blockId": "tour:included:b14fd23a7d3e1797",
+              "field": "included",
+              "sourceTextSha256": "138275035a1bc0d0a52dbcb6d2f6603f11b8157aca728f3fd21dd10102b4cc10",
+              "text": "16 nights in the specified hotels and room categories, with breakfast (BB).",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "Word p3 specifies 16 nights, p95–104 list hotel room categories and BB, and p106 includes accommodation; the exact combined Russian inclusion sentence is absent from Word."
+              }
+            },
+            {
+              "blockId": "tour:included:d9aaf8e16655e5c5",
+              "field": "included",
+              "sourceTextSha256": "0ccfd5d05dad18accfc7d03b60e576b1bcbe6747645c116ca4c6ce303e3da106",
+              "text": "All excursions and activities listed in the program, with an English-speaking guide;",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p107",
+                    "textSha256": "6525ac9b9865334811c6669977edfd65d0e82cbe4d26e6d657776be760b2241a"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the bullet and following spacing from the exact Word included-services line; retain its English-speaking guide wording."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:05:56.701Z"
+        "at": "2026-11-03T23:06:05.379Z"
       },
       "submission": null,
       "review": null,

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2198,
-    "leased": 24,
+    "queued": 2197,
+    "leased": 25,
     "review": 188,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2198,
-      "leased": 24,
+      "queued": 2197,
+      "leased": 25,
       "review": 188,
       "ready": 1,
       "retryable": 0,
@@ -345,8 +345,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 65,
-          "leased": 0,
+          "queued": 64,
+          "leased": 1,
           "review": 8,
           "ready": 0,
           "retryable": 0,
@@ -377,7 +377,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T00:46:15.709Z",
       "earliestRetryAt": null
     },
     "18": {
@@ -1468,6 +1468,12 @@
       "token": "token-98cdd875f4b9-20261104",
       "expiresAt": "2026-11-04T00:46:07.083Z",
       "generation": 1
+    },
+    "ada-en-821a3075e51e-worker": {
+      "jobId": "en:bulk:tour:tour_brazil_gems_14d:b005",
+      "token": "ada-en-821a3075e51e-token-20261104",
+      "expiresAt": "2026-11-04T00:46:15.709Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2046,7 +2052,8 @@
         "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b007",
         "en:bulk:tour:tour_colombia_highlights_7_days:b006",
         "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b015",
-        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b014"
+        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b014",
+        "en:bulk:tour:tour_brazil_gems_14d:b005"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_argentina_experience_6_days:b001",
@@ -2203,5 +2210,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T23:16:07.083Z"
+  "updatedAt": "2026-11-03T23:16:15.709Z"
 }

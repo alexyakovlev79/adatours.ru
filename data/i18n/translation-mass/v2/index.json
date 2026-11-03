@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2337,
-    "leased": 11,
-    "review": 62,
+    "leased": 10,
+    "review": 63,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 0,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2337,
-      "leased": 11,
-      "review": 62,
+      "leased": 10,
+      "review": 63,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 0,
@@ -952,8 +952,8 @@
         "word_2027": {
           "held": 0,
           "queued": 75,
-          "leased": 1,
-          "review": 2,
+          "leased": 0,
+          "review": 3,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -983,7 +983,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-03T23:30:15.597Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "0e": {
@@ -1299,12 +1299,6 @@
       "expiresAt": "2026-11-03T23:30:10.299Z",
       "generation": 1
     },
-    "ada-en-eaeb603e-translator": {
-      "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b006",
-      "token": "tok-eaeb603e-20261104-831c",
-      "expiresAt": "2026-11-03T23:30:15.597Z",
-      "generation": 1
-    },
     "ada-en-98cdd875f4b9": {
       "jobId": "en:bulk:tour:tour_argentina_best_14_days:b011",
       "token": "token-98cdd875f4b9-20261104",
@@ -1588,7 +1582,9 @@
       "jobIds": [
         "en:bulk:tour:tour_brazil_little_mix_ten_days:b006"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_brazil_little_mix_ten_days:b006"
+      ]
     },
     "ada-en-98cdd875f4b9": {
       "token": "token-98cdd875f4b9-20261104",
@@ -1613,5 +1609,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:01:33.948Z"
+  "updatedAt": "2026-11-03T22:01:41.350Z"
 }

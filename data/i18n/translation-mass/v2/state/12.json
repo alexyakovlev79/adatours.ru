@@ -107,7 +107,72 @@
         "claimedAt": "2026-11-03T22:20:40.922Z",
         "expiresAt": "2026-11-03T23:50:40.922Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f4e636b296c4-003-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f4e636b296c4",
+        "token": "ada-en-f4e636b296c4-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b006",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "f6672629e87f46f0d8bccf8fe751c6e54c7537b97a835c7a1728eaf1002dfaaa",
+          "blocks": [
+            {
+              "blockId": "tour:highlight_text:5ac605dc17452b5a",
+              "field": "highlight.text",
+              "sourceTextSha256": "54430935b1a3750c54e17a43609931faa55e44869394aaabb096a2bc650af4d6",
+              "text": "The train follows the Urubamba River between steep green slopes, then a bus takes you up to Machu Picchu. Stone terraces, stairways and walls follow the contours of the mountain, with deep valleys and Andean peaks all around.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "The Word Machu Picchu programme covers the train and bus journey but lacks this distinct RU landscape highlight paragraph."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:6fed3d4346f9b6f9",
+              "field": "media.alt",
+              "sourceTextSha256": "10cae7e87600eea3ed8139f91c671662ba3bc46935d895d04b2752a5369fb62b",
+              "text": "Stone terraces at Machu Picchu beneath a green mountain and low clouds, Peru",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "The Word has no equivalent of this exact RU image alt text; translate only the existing caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:690f98c7e2f919eb",
+              "field": "media.hover",
+              "sourceTextSha256": "ccdc3a074c522a9775836c2eb77df26c56d3166493e84c5f951d8a246203ccf2",
+              "text": "Machu Picchu in Peru: an ancient city on a mountain ridge among the clouds",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "The Word has no equivalent of this exact RU image hover text; translate only the existing caption."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:b5caf96e73357cfd",
+              "field": "highlight.title",
+              "sourceTextSha256": "10fe8aa2f36895748e053b2c4729ecc2f365671e0329a315533469b2897415a7",
+              "text": "The Altiplano and Lake Titicaca",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-f4e636b296c4",
+                "wordAbsenceReason": "The Word has separate Altiplano and Titicaca references but no exact equivalent combined highlight heading."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:21:56.867Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

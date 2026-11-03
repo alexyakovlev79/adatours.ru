@@ -1,0 +1,156 @@
+{
+  "jobId": "en:bulk:tour:tour_brazil_gems_14d:b011",
+  "stableId": "tour_brazil_gems_14d",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "d5a58ea6794252749aed658deaf70ad31114ae3805c9865d5161bd86c4d494b7",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:359c7c25395d1837",
+      "field": "itinerary.title",
+      "sourceTextSha256": "847e1ec33fb2dcb1705f1c39ddf483aff5a1f5edaf6692b2f7976f6d02c7862b",
+      "text": "Praia do Forte – Salvador – Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p132",
+            "textSha256": "bac996f98c263ab40272ee5e4c28b646d71df8e555993fa715cd35eec21d723d"
+          },
+          {
+            "ref": "word/document.xml:p136",
+            "textSha256": "98512296d588a986d7bf178f71dd4faf22401bedea64123a92c60f933c771037"
+          },
+          {
+            "ref": "word/document.xml:p141",
+            "textSha256": "885cb9ce4069dee1256b419930a7140badd52bea66943dfa306e73ef506fa0e9"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Compose the route heading from the Word day section and its stated Salvador to Foz do Iguaçu flight."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+      "field": "itinerary.text",
+      "sourceTextSha256": "c65583e87a847470077283786a7437b14e2d8568516f0aabf81a31d462ee1184",
+      "text": "After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where your driver meets you for the transfer to your hotel; the rest of the day is at leisure.",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p136",
+            "textSha256": "98512296d588a986d7bf178f71dd4faf22401bedea64123a92c60f933c771037"
+          }
+        ],
+        "transformation": "strip_list_marker",
+        "rationale": "Remove only the Day 11 list prefix because this field already belongs to itinerary day 11."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2590b971f5e6cec1",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+      "text": "Praia do Forte",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p132",
+            "textSha256": "bac996f98c263ab40272ee5e4c28b646d71df8e555993fa715cd35eec21d723d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Praia do Forte place name from the Word itinerary section heading."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:dd3d5ad5a79da557",
+      "field": "itinerary.label",
+      "sourceTextSha256": "f9638d61817f45d50d040b52a87ec567129101d4db5cae07f76ef5c5174219b6",
+      "text": "Salvador",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p141",
+            "textSha256": "885cb9ce4069dee1256b419930a7140badd52bea66943dfa306e73ef506fa0e9"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Salvador place name from the Word flight exclusion for this itinerary section."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:51dd03be73520c36",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p132",
+            "textSha256": "bac996f98c263ab40272ee5e4c28b646d71df8e555993fa715cd35eec21d723d"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the exact Foz do Iguaçu place name from the Word itinerary section heading."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:114da89230a70fcd",
+      "field": "media.alt",
+      "sourceTextSha256": "ba76397280f2f35087801e909f97133c4dee106e0ffca7c38f40755d711f888d",
+      "text": "A sandy beach with black rocks below a tall reddish cliff, Brazil",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "The verified Word itinerary has no image-specific ALT text corresponding to the Russian beach and reddish-cliff caption."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:35b72a7fb0983c35",
+      "field": "media.hover",
+      "sourceTextSha256": "3640b994fa3a0b924290d47e2caf5b5e8acc654466ab801119ef8e4d89bb8bfb",
+      "text": "Brazilian coastline: surf around rocks beneath a high coastal cliff",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "GPT-6",
+        "runId": "ada-en-40d0e44eb57848bf",
+        "wordAbsenceReason": "The verified Word itinerary has no image-specific hover text corresponding to this Russian coastline caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+      "field": "itinerary.title",
+      "sourceTextSha256": "eefa4c79e12d85f26e721152aaa4c5fbe3f75c31a3e41af99c3da2fcb113ebf4",
+      "text": "Brazilian side of Iguazu Falls",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+        "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p137",
+            "textSha256": "002710aa2cc5a7ec5e4818c47653a132831399087296590f3efcad9ab2924f02"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Condense the Word Day 12 opening about the Brazilian side of the falls into the corresponding itinerary heading."
+      }
+    }
+  ]
+}

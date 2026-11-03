@@ -28,7 +28,87 @@
         "claimedAt": "2026-11-03T23:17:39.354Z",
         "expiresAt": "2026-11-04T00:47:39.354Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_87f8c5a90488-s009-c004",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f0410042e63344c3",
+        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b004",
+          "stableId": "tour_argentina_agricultural_11_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "54e26bf1340053f654214aabd6b358069f8f55c0eb3011bdd04a25f045a60c06",
+          "blocks": [
+            {
+              "blockId": "tour:note:fc3e723785d94e1b",
+              "field": "note",
+              "sourceTextSha256": "e650461d3929ba8035ae5c054205cb27c5a18db9ea522b8f3cbf94af13185974",
+              "text": "We will agree the technical visits and exact schedule with the host organisations as we prepare your trip.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "Word p137 states that arrangements and timings remain subject to confirmation, but does not contain the specific current RU promise of agreeing technical visits with host organisations during preparation."
+              }
+            },
+            {
+              "blockId": "tour:note:9980212de8ca950c",
+              "field": "note",
+              "sourceTextSha256": "e52f81d07f6aa9876cf130125a7ab14201ced78b970def68a51ccf910b43cc27",
+              "text": "We will discuss hotel categories, international flights and the final price when preparing your trip quotation.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The exact selected Word has no hotel-category, international-airfare and final-quotation note matching this current RU field; no price is supplied or inferred."
+              }
+            },
+            {
+              "blockId": "tour:note:ea2fa309e8cf4c56",
+              "field": "note",
+              "sourceTextSha256": "a3cb6cfb832a7b4fb68f20177089311b93cf41d357d8371c545030d1f477987c",
+              "text": "For the walk in the park, we will choose a route suited to the group's fitness, the weather and access regulations.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "Word p79 describes guided walks in Tornquist National Park but has no matching conditions about group fitness, weather or access regulations; these are translated from the current RU note."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:049781505a7b9cf7",
+              "field": "highlight.title",
+              "sourceTextSha256": "efe8393e6662e2be2f8803450e71ea17430ad924f6b64c3138077ea42a0ed470",
+              "text": "From research to a working farm",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
+                "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p38",
+                    "textSha256": "a025772bae5405a8837e83513c8d04af47e1bf1425afe4f32f9742d37826d359"
+                  },
+                  {
+                    "ref": "word/document.xml:p42",
+                    "textSha256": "147baf6f1b931cb077ff9e4175a8cc6103455c3833da2963c14acdef95f86ea5"
+                  },
+                  {
+                    "ref": "word/document.xml:p48",
+                    "textSha256": "21b387c7c02dcad7cb71779f7bed2629be479edab220a389f80644004cc7d73a"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Creates a contextual highlight label for the exact Word sequence of research-institute and working-farm visits."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:18:50.626Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

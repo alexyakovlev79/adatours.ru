@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2269,
-    "leased": 24,
-    "review": 117,
+    "leased": 23,
+    "review": 118,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 0,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2269,
-      "leased": 24,
-      "review": 117,
+      "leased": 23,
+      "review": 118,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 0,
@@ -1272,8 +1272,8 @@
         "word_2027": {
           "held": 0,
           "queued": 69,
-          "leased": 1,
-          "review": 1,
+          "leased": 0,
+          "review": 2,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -1303,7 +1303,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-03T23:46:06.967Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     }
   },
@@ -1336,12 +1336,6 @@
       "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b008",
       "token": "ada-en-token-4406908c67fe",
       "expiresAt": "2026-11-03T23:45:07.844Z",
-      "generation": 1
-    },
-    "ada-en-821a3075e51e-worker": {
-      "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b001",
-      "token": "ada-en-821a3075e51e-token-20261104",
-      "expiresAt": "2026-11-03T23:46:06.967Z",
       "generation": 1
     },
     "ada-en-c88c62b5175a": {
@@ -1958,7 +1952,9 @@
       "jobIds": [
         "en:bulk:tour:tour_argentina_experience_6_days:b001"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_argentina_experience_6_days:b001"
+      ]
     },
     "ada-en-c88c62b5175a": {
       "token": "ada-en-c88c62b5175a-20261104",
@@ -1997,5 +1993,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:23:05.840Z"
+  "updatedAt": "2026-11-03T22:23:13.747Z"
 }

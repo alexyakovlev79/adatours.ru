@@ -106,3 +106,18 @@ test('non-Russian HTML and incomplete source are rejected',()=>{
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
 });
 
+
+test('shared English projection keeps the live lead form and modal triggers',()=>{
+ const known=new Set(['/','/brazil/','/tours/','/about/','/multi-country/','/vip/']);
+ const input=source().replace('lang="ru"','lang="en" data-ada-shared-locale="en"')
+   .replace('<script src="/adatours-en/_astro/site.js"', '<script src="/adatours-en/form-config.js?v=1"></script><script src="/adatours-en/_astro/site.js"')
+   .replace('<a href="#request">','<a href="#request" data-lead-modal="true">');
+ const html=russianFallbackHtml(input,'/',known,{sharedContent:true});
+ assert.match(html,/data-lead-form/);
+ assert.match(html,/method="post"/);
+ assert.match(html,/type="submit"/);
+ assert.match(html,/data-lead-modal="true"/);
+ assert.match(html,/href="#request"/);
+ assert.match(html,/form-config\\.js\\?v=1/);
+ assert.doesNotMatch(html,/data-ada-staging-inert-form|mailto:info@adatours\\.ru/);
+});

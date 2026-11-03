@@ -40,167 +40,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "9e47f6b7c60ccfe2334cfe90725985a2d33fe56d47d54575df4d1b306151cd41",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "claimedAt": "2026-11-03T21:19:14.374Z",
-        "expiresAt": "2026-11-03T22:49:14.374Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-ddc12b513de4-tour_argentina_experience_6_days-b008-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "generation": 1,
-        "payload": {
-          "submissionId": "sub-ddc12b513de4-tour_argentina_experience_6_days-b008",
-          "result": {
-            "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b008",
-            "stableId": "tour_argentina_experience_6_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "9e47f6b7c60ccfe2334cfe90725985a2d33fe56d47d54575df4d1b306151cd41",
-            "blocks": [
-              {
-                "blockId": "tour:media_alt:6a0d3e66c5cf52d7",
-                "field": "media.alt",
-                "sourceTextSha256": "90fcc2d1ad7e76b89d939f65534e7ffe460b64598bdf18e894f6acf17fafec45",
-                "text": "Building with a tower and half-timbered façades beside a lawn and palm trees, Tigre, Argentina",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "The Word itinerary has no corresponding image alt or hover caption; translated the frozen RU image description."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:f2068a13fb0fedf4",
-                "field": "media.hover",
-                "sourceTextSha256": "2236e8ba62acd2792efafb83661b77aaebfb9ea6c8b1b1b958d528364464c10c",
-                "text": "Tigre, Argentina: a façade with a tower beyond a green lawn",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "The Word itinerary has no corresponding image alt or hover caption; translated the frozen RU image description."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:046be559a0d315e4",
-                "field": "itinerary.label",
-                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-                "text": "Buenos Aires",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p15",
-                      "textSha256": "58eb2c2f45cfa79dfc8cc5bbed0bac7bd0936301ff5172fae2d41d31ac4f9566"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:fc3c8a80425de1dc",
-                "field": "itinerary.label",
-                "sourceTextSha256": "439dfdc2a7dd325b9a1ee456e3e2daa3ba41457aa1490abfd67c8656d4d53c6c",
-                "text": "Tigre",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p18",
-                      "textSha256": "e6c1272bce908043f47e7b50422c151f185183f48dc3d9fe1e4b3fcffd6fa675"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-                "field": "itinerary.title",
-                "sourceTextSha256": "eb67f94116d2c0188eb4b02e4d2286d7017daba39d0499d45603546fe7a43f4a",
-                "text": "Colonia del Sacramento, Uruguay",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p21",
-                      "textSha256": "a82be26ee07db0b3b26b5299560ad50618aaa05b079faf6864233fdb0a05b588"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:ec46e3209ab74818",
-                "field": "itinerary.text",
-                "sourceTextSha256": "8c6a271fd5b10bd03726710c9f2fb6486d18dcf88cb4ad6e4fe753b4144813a0",
-                "text": "Today you will cross the Río de la Plata for a full-day excursion to Colonia del Sacramento in Uruguay. Transfers and ferry tickets are included, allowing you to explore this UNESCO World Heritage town known for its cobblestone streets, colonial architecture, and charming historic center. In the evening, dinner will be served at the hotel.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p23",
-                      "textSha256": "1e5cbbf1a6579ff10a2e1052bc2c88a26a3f9ff1a872899dbcbac14ea3cf9d8c"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:2ac997c5efa5cf13",
-                "field": "itinerary.label",
-                "sourceTextSha256": "8afb5880f11dcd25e4ec87ffa8a805185cb28b05dd7958b2bcd3533e5092f9e7",
-                "text": "Colonia del Sacramento",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
-                  "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p21",
-                      "textSha256": "a82be26ee07db0b3b26b5299560ad50618aaa05b079faf6864233fdb0a05b588"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted a place or day title from the exact corresponding Word day heading."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:ef578518087206e8",
-                "field": "media.alt",
-                "sourceTextSha256": "15302f6f4b33a28f58674d28adf4cbd953cc2b783e385230fc42f6c3a1e52cb3",
-                "text": "Wooden door of a historic house among flowering plants, Colonia del Sacramento, Uruguay",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "The Word itinerary has no corresponding image alt or hover caption; translated the frozen RU image description."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:20:08.788Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ddc12b513de4-tour_argentina_experience_6_days-b008",
+        "blobSha": "38bac1293a03d1d80875504ade0956fd110a6ed9",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_experience_6_days_b008/sub-ddc12b513de4-tour_argentina_experience_6_days-b008.json",
+        "at": "2026-11-03T21:20:12.540Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

@@ -77,7 +77,7 @@
         "expiresAt": "2026-11-03T23:26:50.757Z"
       },
       "checkpoint": {
-        "id": "04dd2e-bap-b012-4",
+        "id": "04dd2e-bap-b012-8",
         "format": "inline-v1",
         "ownerId": "ada-en-04dd2e696333-20261104",
         "token": "ada-en-04dd2e696333-a7f39d12",
@@ -147,10 +147,63 @@
                 "runId": "ada-en-04dd2e696333-20261104",
                 "wordAbsenceReason": "The Word contains no alt caption for this photograph of Lima Cathedral; translate only the exact RU visual description."
               }
+            },
+            {
+              "blockId": "tour:media_hover:848880d708c24d1a",
+              "field": "media.hover",
+              "sourceTextSha256": "7479b5b9cb50b2e0b221c427f110620f545637513f6441c7cb31f9adbc11356b",
+              "text": "Evening sky above Lima Cathedral",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The selected Word has no matching photo hover caption; translate the frozen RU hover text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+              "field": "itinerary.title",
+              "sourceTextSha256": "11fe5246ca4d2152d1f35441d5a8121ba36b6d952aed0391dab112121fe5ec17",
+              "text": "Lima — the historic centre, Miraflores and the Larco Museum",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The Word city-tour heading and paragraph do not mention the Larco Museum; this RU itinerary title has no complete Word equivalent and is translated from the current source."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+              "field": "itinerary.text",
+              "sourceTextSha256": "fdbde40422b61bcaf7703852bbb357ce25cc3e15f6f5016daa77a133b58a8e6b",
+              "text": "After breakfast, explore Lima with an English-speaking guide.\n\nYour route takes you through the historic centre. You will see the Main Square with the Cathedral, the Convent of San Francisco and buildings with carved wooden balconies.\n\nYou then continue through the residential districts. In San Isidro, you will find an olive grove, a golf course and quiet streets of low-rise buildings.\n\nIn Miraflores, you will visit the Park of Love on the cliffs above the Pacific Ocean. The park has mosaics, and its design recalls Park Güell in Barcelona. Your route then continues through the Central Park, the City Hall and Avenida Larco, with its shops and cafés.\n\nThe day also includes a visit to the Larco Museum.\n\nReturn to your hotel after the tour.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word paragraph 123 omits the Park of Love, Park Güell comparison, City Hall and Larco Museum details present in the frozen RU block. Translate the complete RU field and adapt guide language to English under the owner's 03.11.2026 service-language decision."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5ad1d72369931877",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+              "text": "Lima",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:121",
+                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T21:57:57.167Z"
+        "at": "2026-11-03T21:58:06.223Z"
       },
       "submission": null,
       "review": null,

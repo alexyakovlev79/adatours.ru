@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2245,
-    "leased": 26,
+    "queued": 2244,
+    "leased": 27,
     "review": 139,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2245,
-      "leased": 26,
+      "queued": 2244,
+      "leased": 27,
       "review": 139,
       "ready": 1,
       "retryable": 0,
@@ -1065,8 +1065,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 82,
-          "leased": 0,
+          "queued": 81,
+          "leased": 1,
           "review": 6,
           "ready": 0,
           "retryable": 0,
@@ -1097,7 +1097,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T00:01:14.133Z",
       "earliestRetryAt": null
     },
     "1a": {
@@ -1480,6 +1480,12 @@
       "token": "ada-en-f8019ad86757-6c94a20bf812",
       "expiresAt": "2026-11-04T00:01:08.553Z",
       "generation": 1
+    },
+    "ada-en-a104-da0b8743c7e9": {
+      "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b001",
+      "token": "c0d02798bb754ec6a8504ed642bc5ea4",
+      "expiresAt": "2026-11-04T00:01:14.133Z",
+      "generation": 2
     }
   },
   "ownerAssignments": {
@@ -2055,7 +2061,8 @@
     "ada-en-a104-da0b8743c7e9": {
       "token": "c0d02798bb754ec6a8504ed642bc5ea4",
       "jobIds": [
-        "en:bulk:tour:tour_brazil_best_rio_express_six_days:b006"
+        "en:bulk:tour:tour_brazil_best_rio_express_six_days:b006",
+        "en:bulk:tour:tour_brazil_dunes_13d:b001"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_best_rio_express_six_days:b006"
@@ -2116,5 +2123,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:31:08.553Z"
+  "updatedAt": "2026-11-03T22:31:14.133Z"
 }

@@ -76,7 +76,82 @@
         "claimedAt": "2026-11-03T21:56:50.757Z",
         "expiresAt": "2026-11-03T23:26:50.757Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "04dd2e-bap-b012-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-04dd2e696333-20261104",
+        "token": "ada-en-04dd2e696333-a7f39d12",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_peru_14d:b012",
+          "stableId": "tour_brazil_argentina_peru_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "0e01017310c3e949700843437ad29b1898d63064ead454eb16fb1dfd059cb96f",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "field": "itinerary.text",
+              "sourceTextSha256": "8d6d54ff07820de59e6acd37f79147b089fdf4561927499b1b5f3b9c91e8fadd",
+              "text": "After breakfast, transfer to Buenos Aires airport for your flight to Lima. The flight has a connection.\n\nOn arrival, meet your driver and transfer to your hotel.\n\nLima marks the transition from South America’s major cities and waterfalls to the high-altitude part of your journey through Peru.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word paragraph 122 covers the transfer and flight but omits the connecting-flight condition and the RU transition paragraph. Translate the complete frozen RU block to retain both details without substituting the Word free-time addition."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fee6a8b6a89f30bf",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:42",
+                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6291b54bd9baede8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+              "text": "Lima",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:121",
+                    "textSha256": "aaf2d054d5f750cbf297a4ecd8c58f861a34a48ff7159ce6cd08f986f6a0c0eb"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:e178e0f6c173fade",
+              "field": "media.alt",
+              "sourceTextSha256": "480e01b82ed495acb6df74f40b2290c9e70f88fa6346f6a54177674e2ca9c5be",
+              "text": "Lima Cathedral with its two illuminated towers beneath a pink-orange evening sky, Peru",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The Word contains no alt caption for this photograph of Lima Cathedral; translate only the exact RU visual description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:57:57.167Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

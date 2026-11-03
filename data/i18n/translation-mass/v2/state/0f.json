@@ -249,7 +249,108 @@
         "claimedAt": "2026-11-03T23:29:02.131Z",
         "expiresAt": "2026-11-04T00:59:02.131Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a104-da0b8743c7e9:tour_colombia_cano_cristales_8_days_b004:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-a104-da0b8743c7e9",
+        "token": "c0d02798bb754ec6a8504ed642bc5ea4",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_colombia_cano_cristales_8_days:b004",
+            "stableId": "tour_colombia_cano_cristales_8_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "bf717c7ca0d1b04386c0431113be52b888a075a635a8c89dd8a351e0b152e217",
+            "blocks": [
+              {
+                "blockId": "tour:notIncluded:0af608cddcc82bdf",
+                "field": "notIncluded",
+                "sourceTextSha256": "f0635d7c4f2ed5b57c24dea4b1393efcf25c6cf7f0705bfa7d417ea641b31dc1",
+                "text": "Personal expenses (telephone, laundry, room service…)",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                  "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p167",
+                      "textSha256": "ddbf5bc74ed43740b94c3c256e0897f692b55ac83449abc8b287ece467991502"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the printed dash and following spaces from the exact Word exclusion item."
+                }
+              },
+              {
+                "blockId": "tour:notIncluded:bd8cadaf373b6218",
+                "field": "notIncluded",
+                "sourceTextSha256": "9b7498bbc358cd132f91fdcf5e9a43bcfb944f71a67b120955876a824212c361",
+                "text": "Visa or consular fees (when required)",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                  "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p168",
+                      "textSha256": "74b98b8fdbb8e971695d8bb34bd821444bbfff1d16b06a9b03a69223a73ad75b"
+                    }
+                  ],
+                  "transformation": "strip_list_marker",
+                  "rationale": "Removes only the printed dash and following spaces from the exact Word exclusion item."
+                }
+              },
+              {
+                "blockId": "tour:note:fc3e1c1e237a47fb",
+                "field": "note",
+                "sourceTextSha256": "6a9080535402e5d4d256596e866ba2b51a46615006f9f4639c72b1c4a47484fb",
+                "text": "Departures: Mon – Thu, 1 Jun – 30 Nov 2027. Flight schedules depend on weather and aviation permits.",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                  "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p31",
+                      "textSha256": "57da22de2ceea9e25c8834e5dd1a7755e337b261dd646dda79d4dc2df25987c0"
+                    },
+                    {
+                      "ref": "word/document.xml:p60",
+                      "textSha256": "852a7d75049fad3cec7f1142601719516c9dc4d825512784ebada8ebbaa5384e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Combines the exact Word departures value and flight-schedule condition into the existing practical note; dates, departure days and restrictions are preserved."
+                }
+              },
+              {
+                "blockId": "tour:note:b36d3aae1dd0e4eb",
+                "field": "note",
+                "sourceTextSha256": "190026c064e5c126376afc62cc288d822e3c26a98fba46f23374ccb78e0a50ea",
+                "text": "Trails in Caño Cristales are assigned by the environmental authorities and may change",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                  "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p60",
+                      "textSha256": "852a7d75049fad3cec7f1142601719516c9dc4d825512784ebada8ebbaa5384e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the complete trail-allocation condition from the mixed Word practical-information paragraph for its dedicated note."
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4,
+          "submissionId": "ada-en-a104-da0b8743c7e9:tour_colombia_cano_cristales_8_days_b004"
+        },
+        "at": "2026-11-03T23:30:20.492Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -312,16 +312,11 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b009",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "blocked_external",
       "sourceFingerprint": "71c254e229c555308034ca3df857a039aa98196a03f9074f7491f8a0efef98a4",
       "generation": 1,
-      "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-0912f3ac98f14197",
-        "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
-        "claimedAt": "2026-11-03T23:12:37.984Z",
-        "expiresAt": "2026-11-04T00:42:37.984Z"
-      },
+      "attempts": 1,
+      "lease": null,
       "checkpoint": {
         "id": "cp-0912f3ac-b004-source-blocker",
         "format": "inline-v1",
@@ -442,7 +437,14 @@
       },
       "submission": null,
       "review": null,
-      "nextAttemptAt": null
+      "nextAttemptAt": null,
+      "lastFailure": {
+        "ownerId": "ada-en-0912f3ac98f14197",
+        "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
+        "generation": 1,
+        "failureStatus": "blocked_external",
+        "at": "2026-11-03T23:17:33.154Z"
+      }
     },
     {
       "jobId": "en:bulk:tour:tour_brazil_three_ecosystems_8_days:b009",

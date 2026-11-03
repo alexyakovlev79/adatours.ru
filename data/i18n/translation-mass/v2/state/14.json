@@ -325,7 +325,7 @@
         "expiresAt": "2026-11-04T00:56:43.591Z"
       },
       "checkpoint": {
-        "id": "cp-40d0e44e-010-04",
+        "id": "cp-40d0e44e-010-08",
         "format": "inline-v1",
         "ownerId": "ada-en-40d0e44eb57848bf",
         "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
@@ -414,6 +414,80 @@
                 "transformation": "contextual_label",
                 "rationale": "Extract the exact São Luís place name from the Word highlights and itinerary heading."
               }
+            },
+            {
+              "blockId": "tour:media_alt:7e422e528d566f9c",
+              "field": "media.alt",
+              "sourceTextSha256": "1405f6298d88cb3410e3be59ecad6677de24ea686ebae3dac98457fef8a52069",
+              "text": "Journey from Iguazu to São Luís",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "The verified Word has no corresponding image-specific ALT caption describing the journey from Iguazu to São Luís."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3ce1dbef55470fc5",
+              "field": "itinerary.label",
+              "sourceTextSha256": "9d17aa184ab22e6191099dec63dde5be5d5e0225c3d4eab8d54bad27f46770a2",
+              "text": "São Luís",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p43",
+                    "textSha256": "596e5276fb7f990fd0eb42abf59f5c449cb55a59128b8a6a8b19744d920364c6"
+                  },
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact São Luís place name from the Word highlights and itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "59098011da46b6f58a938371079efe10cf78b9f5648ee2ae1a9d6c7adb075775",
+              "text": "São Luís – Barreirinhas and Lençóis Maranhenses",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p99",
+                    "textSha256": "a65ede0ae0b1318e18a353945be55d71549baf0267e9ba8b93d6fcf47758813f"
+                  },
+                  {
+                    "ref": "word/document.xml:p102",
+                    "textSha256": "a3a853d45ec8943ea352fae043f67fce06f36073099173bf9c2a47abd7e00411"
+                  },
+                  {
+                    "ref": "word/document.xml:p104",
+                    "textSha256": "dabe8900323886750f6b833dffab611128cd2c14c8ed75e9a4cd5d63ce94286d"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the Word São Luís, Barreirinhas and Lençóis Maranhenses destination names into the same route heading as RU."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
+              "field": "itinerary.text",
+              "sourceTextSha256": "a0a7754ee5dbc2e9ac2b8246096049604afa35b10b7ada062e44a690152c95b3",
+              "text": "After breakfast, travel to Barreirinhas, a journey of around 3.5 hours. On arrival, you will set out with an English-speaking guide for Lençóis Maranhenses National Park.\n\nLençóis Maranhenses National Park covers around 1,000 square kilometres. Its white sand dunes reach 40 metres in height, with clear freshwater lakes between them. At first glance, the landscape resembles a desert, although it receives considerably more rainfall. After the rains, water collects between the dunes, forming blue-green lagoons. The white sand and water create a landscape unlike almost any other part of Brazil. This scenery has earned Lençóis Maranhenses the name “Sheets of Maranhão”.\n\nThe sense of space here is unusual: the line of dunes constantly changes, individual ridges hide the horizon, and new lagoons appear unexpectedly beyond them. On a sunny day, the water contrasts sharply with the white sand, so even a short walk in the park offers a completely different view of the country after Rio and Iguazu.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "Word p104 has a different transfer duration (about 4 hours), fixed departure times and a shorter park description. It lacks the RU 1,000 square kilometres, 40-metre dunes and final landscape paragraphs. Translate current RU exactly in scope and flag the duration discrepancy for independent review; do not silently replace RU facts."
+              }
             }
           ],
           "unresolvedConflicts": [
@@ -424,7 +498,7 @@
             }
           ]
         },
-        "at": "2026-11-03T23:27:50.688Z"
+        "at": "2026-11-03T23:27:59.706Z"
       },
       "submission": null,
       "review": null,

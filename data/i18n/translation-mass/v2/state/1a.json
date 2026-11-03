@@ -408,7 +408,7 @@
         "expiresAt": "2026-11-04T00:40:10.150Z"
       },
       "checkpoint": {
-        "id": "ada-en-9457ab67-n5-cp4",
+        "id": "ada-en-9457ab67-n5-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-9457ab67-20261104",
         "token": "ada-en-token-9457ab67-20261104",
@@ -491,10 +491,76 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracted the exact lake name from the verified Word excursion paragraph."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:413d3f130786a6da",
+              "field": "itinerary.label",
+              "sourceTextSha256": "92a0e3b8e4cb6b7bbcbc37bc5072cad2414e729ac62652abeea09edcbf0ad82e",
+              "text": "Guatavita",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p69",
+                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the town name from the verified Word phrase 'town of Guatavita', distinguishing it from the lake."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:584532fbdadfef24",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e1f321c4e2a3350b055cb01775ad7309ca31bcc7f91f76d9289f4ef0e1b5144e",
+              "text": "Zipaquirá",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1POJ0kaE_FfL5uOjYGqzW_buDi_q_RefP",
+                "documentSha256": "8eadcc6b3fc4ef53c041dcec14ed0b0f1c444c6952d0f57c0dceefe766f63ff3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p69",
+                    "textSha256": "7ef4bb083558834203b81b8a64f7012e12afe7e8aeaad9bf0b50d0b1131c0a1a"
+                  },
+                  {
+                    "ref": "word/document.xml#p70",
+                    "textSha256": "3ce0a02e57075e79d5a268ef922c7da96710b1034a415d5ac14d14c71bd89d70"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact destination name from the verified Word excursion paragraphs."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:9953d43e00c40fc6",
+              "field": "media.alt",
+              "sourceTextSha256": "2af9441ca991ab22b1569025bee451da250c4f039aac1ebbb9f965241ef987ff",
+              "text": "White houses with wooden balconies on a cobbled street in Guatavita, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No image-specific alt text for this street occurs in the verified Word. Translated the current RU alt text; paragraph69 covers only the town visit."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:b46038c26e558c83",
+              "field": "media.hover",
+              "sourceTextSha256": "a384c0a8e17c2ae713c7637869d241c9e96d6ab374978423e29a557ce4ba6eda",
+              "text": "Guatavita: tiled roofs and flowers against green hills",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "The verified Word has no corresponding image-hover caption. Translated the current RU caption without adding details."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:10:58.332Z"
+        "at": "2026-11-03T23:11:02.788Z"
       },
       "submission": null,
       "review": null,

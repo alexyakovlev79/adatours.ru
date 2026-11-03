@@ -142,7 +142,102 @@
         "claimedAt": "2026-11-03T22:15:07.844Z",
         "expiresAt": "2026-11-03T23:45:07.844Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-4406908c67fe-1104-p7-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-4406908c67fe-1104",
+        "token": "ada-en-token-4406908c67fe",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b008",
+            "stableId": "tour_brazil_little_mix_ten_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "b110a25961261b7ab2e53e1909f94507f40b6ab39ab146b2260f5676f2634d7e",
+            "unresolvedConflicts": [
+              {
+                "kind": "resort_mismatch",
+                "word": "Praia do Forte / Pousada Casa do Forte",
+                "ru": "Costa do Sauipe in day narrative; Praia do Forte in route and hotel table",
+                "resolution": "Preserved current RU confirmation requirement; no shared facts changed."
+              }
+            ],
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+                "field": "itinerary.title",
+                "sourceTextSha256": "e0ea7320880d7c9465ffa8007628c436aa4f3217c3e8f80256868fbdfdf2278b",
+                "text": "Salvador → the Bahia coast",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The broad Bahia coast heading is not present as a standalone Word heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:2e780f63f4172747",
+                "field": "itinerary.text",
+                "sourceTextSha256": "4c98c6901af9c29e723e374ae4ee81b7f629deae53607a14218f3a2fc1dff4cf",
+                "text": "Day 7 · After breakfast, a private half-day city tour tracing the city’s development from its beginnings to the vibrant cultural capital it is today: towards the mouth of the immense bay, along elegant tree-lined avenues, to the Pelourinho, a UNESCO World Heritage Site and one of the largest ensembles of colonial architecture in South America. From the Municipal Square, beside the towering Lacerda Elevator, with views across the bay to the Lower City, stroll through narrow, lively streets of colourful buildings to the Church of São Francisco, with its exuberant gilded Baroque interior, and the Pelourinho square, discovering capoeira, acarajé and the living traditions of Candomblé. After the tour, transfer to Praia do Forte and check in for your beach stay.\n\nThe itinerary and hotel table list Praia do Forte, Pousada Casa do Forte. The current Russian day description names Costa do Sauípe instead. The resort and beach hotel require confirmation before booking.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The selected Word names Praia do Forte; the current RU unresolved Costa do Sauipe hotel clarification is absent from Word and must be retained for review.",
+                  "wordEvidence": {
+                    "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                    "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p108",
+                        "textSha256": "033408aaa6fe18e124eb21b87748cd46102b6f1a8de3d7ff34bf4dd57518e115"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:31b756db71fa0d11",
+                "field": "itinerary.label",
+                "sourceTextSha256": "278845a92734b4b9ff11da938e2e193a3a98bb421649aacb9c9b740fc9dec4ed",
+                "text": "Salvador",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p46",
+                      "textSha256": "5ad4a23bc13eaf92e9c035b1d3edbb92582a99f2dbe64525009755f989eedfb2"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:f593e8098afbf224",
+                "field": "itinerary.label",
+                "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+                "text": "Praia do Forte",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                  "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p49",
+                      "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T22:15:58.808Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

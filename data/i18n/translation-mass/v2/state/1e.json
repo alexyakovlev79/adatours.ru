@@ -246,7 +246,7 @@
         "expiresAt": "2026-11-04T00:49:59.245Z"
       },
       "checkpoint": {
-        "id": "ada_en_87f8c5a90488-s010-c004",
+        "id": "ada_en_87f8c5a90488-s010-c008",
         "format": "inline-v1",
         "ownerId": "ada-en-f0410042e63344c3",
         "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
@@ -328,10 +328,74 @@
                 "transformation": "contextual_label",
                 "rationale": "Creates the contextual highlight heading from the exact Word visits to the Brazilian Falls and Perito Moreno Glacier."
               }
+            },
+            {
+              "blockId": "tour:highlight_text:fe4be218591170bd",
+              "field": "highlight.text",
+              "sourceTextSha256": "dfb169af0549d4a81fb61736474f29b2c8b12e70d8927bf222eafaa0d8e1f547",
+              "text": "The Brazilian side of Iguazu Falls and a full-day tour to Perito Moreno Glacier.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p26",
+                    "textSha256": "cf1fae42263214059275f795f6e05ebd1cc86340d60dd776dffb8891d833ba7d"
+                  },
+                  {
+                    "ref": "word/document.xml:p73",
+                    "textSha256": "74ec86aecfd700d6919350049c4c243126aa1e840c24a868afdbe309c0c92d5c"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Condenses the explicitly stated Brazilian Falls visit and full-day Perito Moreno excursion into the corresponding highlight text."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:02a49d0378a71843",
+              "field": "media.alt",
+              "sourceTextSha256": "e5c2ff94cc0a01e1ffd03a0ae4654ac96f9ffde660fc1303d66bddb136d8c3b6",
+              "text": "The blue Perito Moreno Glacier beside a lake, with snow-covered mountains beyond, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The verified selected Word describes the Perito Moreno visit but has no accessibility caption matching this individual glacier, lake and mountain photograph."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:1da00f496bee3711",
+              "field": "media.hover",
+              "sourceTextSha256": "195bb629f5fbcd76973d7f7560e69599e1657b68975c9f2e44b5e0c533e22712",
+              "text": "Perito Moreno: the ice wall and a viewing platform by the water",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "The verified selected Word has no image hover caption matching this specific ice-wall and viewing-platform photograph; translated from the current RU image field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p6",
+                    "textSha256": "15aa5399a390d8f12a0abd0a8154dbd22a39ef70dd471be1793c9a6e5cf385c0"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:21:14.939Z"
+        "at": "2026-11-03T23:21:36.357Z"
       },
       "submission": null,
       "review": null,

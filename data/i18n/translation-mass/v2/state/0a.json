@@ -63,7 +63,86 @@
         "claimedAt": "2026-11-03T21:57:31.146Z",
         "expiresAt": "2026-11-03T23:27:31.146Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-b012-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-935f-translator",
+        "token": "ada-en-935f-bxatc0v89fh-mw180til",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b012",
+          "stableId": "tour_argentina_grand_tour_15_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "a0e26518f3137a65a3a054396d2010584987262a58e2512e07efb7e0ff30802d",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "937321b26d6db090e84ab3ba380315f2147f4abfef061dba1bc715d73b724da1",
+              "text": "A guided tour of Luján de Cuyo, the birthplace of Malbec. Visit a winery and enjoy a tasting with an English-speaking guide. Overnight at Entre Cielos, Superior Room.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "Word paragraph 39 describes the excursion but does not contain this condensed itinerary block with its overnight accommodation. Translate the full RU block, applying the owner's English service-language adaptation."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:fe6807dea6dc70aa",
+              "field": "itinerary.label",
+              "sourceTextSha256": "82e4e4f3664863763bacb3023f6de08d99e522bd6007284ca9cc90828885caaa",
+              "text": "Mendoza",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p36",
+                    "textSha256": "f92b8e3cdb6078e591a13d1c1a2a793d68983bfb037082624e6c8cf818d721c0"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a3d498f81da6d121",
+              "field": "itinerary.label",
+              "sourceTextSha256": "412b92adedc04f9f26e6090823c2e022dd31a3a191e8db0df696a9f38dc87ac7",
+              "text": "Luján de Cuyo",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p38",
+                    "textSha256": "997a0e16f7168fce4063797039892c4d43471aab7b29c41128a249d41aea6366"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:58e6eb1e61b75511",
+              "field": "media.alt",
+              "sourceTextSha256": "a26209b726c3a1dba8f0d79f9492a99fd81b060eb52398f9ff10ad6c83abb2e9",
+              "text": "Rows of vineyards and a dirt road with the snow-capped Andes in the background, Luján de Cuyo, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word document does not contain a corresponding image alt or hover caption; translate the current RU image description."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:58:42.764Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

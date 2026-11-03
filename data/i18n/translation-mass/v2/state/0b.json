@@ -51,7 +51,7 @@
         "expiresAt": "2026-11-04T00:55:27.159Z"
       },
       "checkpoint": {
-        "id": "ada-en-9457ab67-n9-cp4",
+        "id": "ada-en-9457ab67-n9-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-9457ab67-20261104",
         "token": "ada-en-token-9457ab67-20261104",
@@ -127,10 +127,70 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:208366df5b21a36f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p66",
+                    "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:fbf7e167406934ee",
+              "field": "media.alt",
+              "sourceTextSha256": "2a20f4bd03ba124f29df710fde305cb3a212a84f1a9b8c34617e0a9e138960f7",
+              "text": "Powerful streams of Iguazu Falls plunging over a rocky cliff",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No corresponding image-specific alt text exists in the verified Word. Translated the current RU alt text."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:6770cb544f414080",
+              "field": "media.hover",
+              "sourceTextSha256": "6cb2360dd113894373796ce56cda7ff13f79f8c5880940c408de5b4dbdf18d52",
+              "text": "Iguazu Falls: broad streams of water and spray above the gorge",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No exact image-hover caption in the verified Word; translated the current RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+              "field": "itinerary.title",
+              "sourceTextSha256": "a96433c9549f2c193dd94c0681e6012de98d67667d9c23a8268b87d4da8c76e2",
+              "text": "Buenos Aires: departure",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+                "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p118",
+                    "textSha256": "06a55e240abc6ed34d93af52333b5aa15fe53df925848e03e22de29e200b431c"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Used the exact Word final-day Buenos Aires departure statement as a concise current itinerary heading."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:26:35.148Z"
+        "at": "2026-11-03T23:26:38.710Z"
       },
       "submission": null,
       "review": null,

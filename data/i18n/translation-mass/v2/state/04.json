@@ -62,171 +62,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b010",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "e2fcb1e143c6aaaff7df1c75985c6ef154e8131260d45205a5709d6dcc028bcf",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-a2d69b03d72ad4e9",
-        "token": "token-a2d69b03d72ad4e9-20261104",
-        "claimedAt": "2026-11-03T22:05:08.366Z",
-        "expiresAt": "2026-11-03T23:35:08.366Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-a2d69b03d72ad4e9-s02-c08",
-        "format": "inline-v1",
-        "ownerId": "ada-en-a2d69b03d72ad4e9",
-        "token": "token-a2d69b03d72ad4e9-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b010",
-          "stableId": "tour_argentina_grand_tour_15_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "e2fcb1e143c6aaaff7df1c75985c6ef154e8131260d45205a5709d6dcc028bcf",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:07dd486553887187",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6bae1851dae7a2d184d0869def3d09ab1c4f62dbb020c1dc1676fc73b77e7af0",
-              "text": "Inca Cueva",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:30",
-                    "textSha256": "29642b29edc94f3799639073b96ef57655961f442d21537c11b8aaf96861c6bb"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact place name appearing within the Word paragraph as the label of the same itinerary location."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:5d3b28cff8a671a4",
-              "field": "media.alt",
-              "sourceTextSha256": "8482ba3fb5435599291dc781358964308ad3e5f49039eef7dac4b719ea38dabc",
-              "text": "A path leads to the multicoloured mountain slopes of Purmamarca, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "runId": "ada-en-a2d69b03d72ad4e9",
-                "model": "GPT-6",
-                "wordAbsenceReason": "The verified Word 2027 contains the itinerary and hotels but no equivalent text for the RU photo alt/hover caption; translated the current RU caption.",
-                "wordDocumentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952"
-              }
-            },
-            {
-              "blockId": "tour:media_hover:90c765157018df18",
-              "field": "media.hover",
-              "sourceTextSha256": "5a516a0659e9228fd7aed4311c28538b8f675ba30782eddd8d4fd2387f291f6f",
-              "text": "Purmamarca: pink and grey bands on dry mountain slopes",
-              "provenance": {
-                "kind": "ai_translation",
-                "runId": "ada-en-a2d69b03d72ad4e9",
-                "model": "GPT-6",
-                "wordAbsenceReason": "The verified Word 2027 contains the itinerary and hotels but no equivalent text for the RU photo alt/hover caption; translated the current RU caption.",
-                "wordDocumentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952"
-              }
-            },
-            {
-              "blockId": "tour:itinerary_title:2fb5525f94c7ffcd",
-              "field": "itinerary.title",
-              "sourceTextSha256": "8695e7516d1267fc65f5d69baa480ddcbb6b6a9ca26cdecdeae75d5e7a420564",
-              "text": "Salinas Grandes",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:32",
-                    "textSha256": "5251c15bb8f5d7f86c2eae0815896d2c9955a7d743ddf3a33c80e15e5069729c"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the named salt flat from the Word day heading as the short title, excluding the day prefix and feature descriptor."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_text:fb5db666cae6efb7",
-              "field": "itinerary.text",
-              "sourceTextSha256": "49fd8df55866c15aa8054164d6964c8805f9553e2b40e2826d2c48c878134a5f",
-              "text": "Full day — journey to the Salinas Grandes salt flat along Route 9 with an English-speaking guide, including national park entrance fees, dropping off in Salta. The dazzling white salt plain stretches to the horizon, creating the sensation of walking across an endless mirror.\n\nAfter the excursion — return to Salta. Check-in at Hotel Alejandro I, Affiliated by Meliá (Premium Room).",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:33",
-                    "textSha256": "885894a3885ddd007c7ea85188f1ef613e70ef8caf9072ccedff6025a09fe394"
-                  },
-                  {
-                    "ref": "word/document.xml:p:35",
-                    "textSha256": "1ecb17ce88826628725341c670938e916a754ea636bf2af51a03b099c5b5ac4d"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:1156bad94fe8c961",
-              "field": "itinerary.label",
-              "sourceTextSha256": "8695e7516d1267fc65f5d69baa480ddcbb6b6a9ca26cdecdeae75d5e7a420564",
-              "text": "Salinas Grandes",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:32",
-                    "textSha256": "5251c15bb8f5d7f86c2eae0815896d2c9955a7d743ddf3a33c80e15e5069729c"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the named salt flat from the Word day heading as the short location label, excluding the day prefix and feature descriptor."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:210a59a6ad907003",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6269b6b6909c4fe6a61adefe06d132c769df935fa9a35fd438c04b03ed604c74",
-              "text": "Salta",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
-                "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p:35",
-                    "textSha256": "1ecb17ce88826628725341c670938e916a754ea636bf2af51a03b099c5b5ac4d"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact destination name from the verified Word return-to-Salta paragraph as the itinerary place label."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:687821441a1a4aa3",
-              "field": "media.alt",
-              "sourceTextSha256": "7d60b74c1c7dc35e5803f3bfc855b259eacee9e493584630e1cc851fe40184c0",
-              "text": "A rectangular pool of blue water amid the white salt of Salinas Grandes, Argentina",
-              "provenance": {
-                "kind": "ai_translation",
-                "runId": "ada-en-a2d69b03d72ad4e9",
-                "model": "GPT-6",
-                "wordAbsenceReason": "The verified Word 2027 contains the salt-flat excursion text but no equivalent alt caption describing this rectangular pool; translated the current RU photo caption.",
-                "wordDocumentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952"
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:06:29.366Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-a2d69b03d72ad4e9-s02",
+        "blobSha": "8329c7bc200084dd0a218daccbb70d8af5dcac36",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_grand_tour_15_days_2027_b010/ada-en-a2d69b03d72ad4e9-s02.json",
+        "at": "2026-11-03T22:07:00.279Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

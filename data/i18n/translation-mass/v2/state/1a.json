@@ -557,7 +557,7 @@
         "expiresAt": "2026-11-04T00:35:34.028Z"
       },
       "checkpoint": {
-        "id": "ada-en-9457ab67-n3-cp4",
+        "id": "ada-en-9457ab67-n3-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-9457ab67-20261104",
         "token": "ada-en-token-9457ab67-20261104",
@@ -633,10 +633,79 @@
                 "runId": "ada-en-9457ab67-20261104",
                 "wordAbsenceReason": "The current RU Day 7 has details absent from Word paragraph 87: bird/animal watching, packing, airport transfer and the explicit accommodation, medical-card and dinner conditions. Preserved paragraph 87's English wording and translated those additional RU details; not claimed as word_exact."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:0db4f4118b540903",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7e2a8dffa0bf2e9b2555561e5ffb98193487c8c8d4ee36625ab8e4ca12aa645f",
+              "text": "La Macarena",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p21",
+                    "textSha256": "a42e17e47bd7d13cc8766879f309cc0473d32b41af153267e3494e5b6591c165"
+                  },
+                  {
+                    "ref": "word/document.xml#p87",
+                    "textSha256": "245f7e0fe760f28c11b37eb12ff07fb5cc347e80a0b6c8bc128d11631e3797cd"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact destination name from Word destination and Day 7 paragraphs as the place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:9b75cb156aca6e72",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e624958247a4886c51337c7346cf3ba7e9c77c6f40b3bc309396298b052baf87",
+              "text": "Guayabero River",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p52",
+                    "textSha256": "020d74e92f8985f0009de10b7b97667feb8561d60f682ee0b2634be9db337df2"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7343e8aba3dfd053",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f657d29235b71e006b9fb621ea50e703abe60f5c68b531a6b9b8fb865ae63e1c",
+              "text": "Bogotá",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "18AJRGrEML9R-2T4lAQGHNUyfZJrlgJms",
+                "documentSha256": "4dfb4ac2254bc4f0ea7dcbd1704ba105a69bdff0675e0e475a63b1d1149f7e80",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p66",
+                    "textSha256": "e5640e0407cc38c3acbb70812b97d23948c1c3adc059c3e9c38fb30f0afd1559"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:5c9b98b64c9665c1",
+              "field": "media.alt",
+              "sourceTextSha256": "7d4f7df0f97fc0bb27a3aff5039777b49792ed54474284da62d7acdce8799c21",
+              "text": "The bow of a boat on the Guayabero River amid rocky banks and tropical forest, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-9457ab67-20261104",
+                "wordAbsenceReason": "No image-specific alt text in the Word Day 7 paragraph 87. Translated the current RU image description without adding identification."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:06:02.820Z"
+        "at": "2026-11-03T23:06:07.174Z"
       },
       "submission": null,
       "review": null,

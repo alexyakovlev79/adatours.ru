@@ -152,7 +152,7 @@
         "expiresAt": "2026-11-03T23:33:36.826Z"
       },
       "checkpoint": {
-        "id": "ada-en-e1125a853692-b015-cp4",
+        "id": "ada-en-e1125a853692-b015-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-e1125a853692",
         "token": "ada-en-e1125a853692-20261104",
@@ -227,10 +227,79 @@
                 "runId": "ada-en-e1125a853692",
                 "wordAbsenceReason": "Word has no text describing this specific photograph or its alt field; translated from the frozen RU media caption."
               }
+            },
+            {
+              "blockId": "tour:media_hover:a29337b436d50136",
+              "field": "media.hover",
+              "sourceTextSha256": "18f7f9c631bc15fd72015c698e3a8db01e95172bae8a3909378a13a4383a0fe4",
+              "text": "Machu Picchu: terraces and mountains seen through a stone window",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6.1",
+                "runId": "ada-en-e1125a853692",
+                "wordAbsenceReason": "Word has no text for this photograph hover caption; translated from the frozen RU caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+              "field": "itinerary.title",
+              "sourceTextSha256": "ede0eccf968f3d73dbe4d336f0442c2b141f34d68163905b97f777348943d0da",
+              "text": "Lake Titicaca, Uros and Taquile",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p155",
+                    "textSha256": "c5fcb2ab783fae42bfb14a3ea436b668e9a795f313a252e2983ed947a4126cd6"
+                  },
+                  {
+                    "ref": "word/document.xml:p52",
+                    "textSha256": "18b852c0def23bd527805c8dc16dff5423a0dcb7862f1808ab6b010905e1aac7"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combine the Word Lake Titicaca heading and Uros and Taquile island names into the itinerary heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:173cf987634ed90a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "873cd910eac7cae1d5c529c734e720141067d4f21833d033e07dbb444e1533e8",
+              "text": "Day 13 · In the morning, a short boat ride takes you to the Uros Islands, the famous floating islands of Lake Titicaca, made entirely of totora reeds, the same material the Uros people use to build their boats and which they even eat; although fishing is still important, handicrafts and tourism are today a major source of income. Continue to Taquile Island, known for the kindness of its residents, their ancestral weaving skills, its pre-Columbian constructions and lovely countryside. Then transfer to Juliaca airport for your flight to Lima; arrival and transfer to the hotel.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p157",
+                    "textSha256": "343c0bf58368da7d12182294ba7862933d8b949b5aa7eac58fa644fe51a20dd2"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:40bc8cf0ccdcd402",
+              "field": "itinerary.label",
+              "sourceTextSha256": "45eca161371500acf73701e4110f84d9604dad51a1d8beedc2a5ea00fb777cc8",
+              "text": "Puno",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1N2kcDJbiDL9FELOEvRvwkyBTsx1GPbmE",
+                "documentSha256": "6555ff2370a1bd7d48f8123863fe760b669c4ddbe04a1efb1f684ec251e680a4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p196",
+                    "textSha256": "eaa2b06926bcdcab6d01ec90c9eefd7a4cf618005067226766455ed2570f7b01"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:05:03.352Z"
+        "at": "2026-11-03T22:05:22.522Z"
       },
       "submission": null,
       "review": null,

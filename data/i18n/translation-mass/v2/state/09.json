@@ -156,7 +156,7 @@
         "expiresAt": "2026-11-03T23:37:55.160Z"
       },
       "checkpoint": {
-        "id": "04dd2e-chile-b006-4",
+        "id": "04dd2e-chile-b006-8",
         "format": "inline-v1",
         "ownerId": "ada-en-04dd2e696333-20261104",
         "token": "ada-en-04dd2e696333-a7f39d12",
@@ -216,10 +216,94 @@
                 "runId": "ada-en-04dd2e696333-20261104",
                 "wordAbsenceReason": "The selected Word contains no matching image hover caption; translate the frozen RU text, retaining its corrected Millahue location."
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:8fa505c430bf2bb8",
+              "field": "itinerary.title",
+              "sourceTextSha256": "d3e422d4cce65d2930179676ca0823d5522b0d939743a02a71fe954f0d1dbe12",
+              "text": "Santiago → Easter Island",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:16",
+                    "textSha256": "0e2965cf449c748aa8eab9048b6dfe6746add54959b9428bfe2102fcf96589f4"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Remove only the Day 03 prefix from the exact Word flight-day heading to produce the standalone route title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:4b5ff9b4a37f43cc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "e35a6b782357a5cb382e8ec360de2f08b40737a923e250d3c96b8146f5f3bb21",
+              "text": "Private charter flight, ~5.5 hours\n\nA private charter flight carries you thousands of kilometers into the Pacific Ocean — to the most remote island on the itinerary. Upon arrival — meet and greet, a private car to the hotel, and the first excursion: an ascent up the slopes of Rano Kau volcano to the crater-rim viewpoint, overlooking a picturesque lake with distinctive vegetation, followed by the ceremonial village of Orongo, where once a year the island's clans competed for the right of one of them to become Tangata Manu — the birdman, chosen as chief for the year.\n\nHotel: Nayara Hangaroa, Kainga, BB.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:17",
+                    "textSha256": "82bdf9fad73d1352f67f5b5485c1d91d86e171b6b60688c223bf660328a0a040"
+                  },
+                  {
+                    "ref": "word/document.xml:p:18",
+                    "textSha256": "970be83b143899eb7d0f478057d8bcbdbc8721d58defa9417eee4b9613760e9e"
+                  },
+                  {
+                    "ref": "word/document.xml:p:96",
+                    "textSha256": "39399562c87ea7891fbe7f8bc5b8dc659c41aa3051ef6a6dedf235dc74efaa16"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Combine the exact charter duration and arrival/excursion narrative with the hotel, room and BB components of the exact accommodation-list entry, without changing the service details."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:bb8a734263d47a06",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e41062add057645e926bf42391b44b831d40619296fa430b370f4633481e7939",
+              "text": "Easter Island",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:16",
+                    "textSha256": "0e2965cf449c748aa8eab9048b6dfe6746add54959b9428bfe2102fcf96589f4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact arrival island name from the Word route heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3c742b7ab0dfcf61",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1485459e1d7b4d922aebb70badb8d0d9a37fec8a2da949d7e13bacc2d184aa8a",
+              "text": "Rano Kau volcano",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1mOARKNZLOOQPZyTGrV3uBkY-3ghv2rI9",
+                "documentSha256": "8d5e55918593b84b955f2ecabf1d9458182d13a7982344017b95ff6a4513e08b",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:18",
+                    "textSha256": "970be83b143899eb7d0f478057d8bcbdbc8721d58defa9417eee4b9613760e9e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Rano Kau volcano name from the Word arrival-day excursion paragraph."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:09:08.545Z"
+        "at": "2026-11-03T22:09:17.582Z"
       },
       "submission": null,
       "review": null,

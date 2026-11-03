@@ -107,7 +107,72 @@
         "claimedAt": "2026-11-03T23:16:44.075Z",
         "expiresAt": "2026-11-04T00:46:44.075Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f8019ad86757-03-b003-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-translator-20261104",
+        "token": "ada-en-f8019ad86757-6c94a20bf812",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b003",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "02b4a050901a8f83e619671458526e414bd9db8efd9eabe678845bba7b514086",
+          "blocks": [
+            {
+              "blockId": "tour:notIncluded:da756b777306942e",
+              "field": "notIncluded",
+              "sourceTextSha256": "8aa20f6b3d403b060491185c5c34717a5009ff46c170cb841649ff5440474bad",
+              "text": "Additional meals and drinks.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "Verified the complete selected Word, including the exclusions at p219–223; it has no separate additional meals and drinks exclusion, so translated the exact current RU item."
+              }
+            },
+            {
+              "blockId": "tour:note:d96f78c9265cf8a6",
+              "field": "note",
+              "sourceTextSha256": "9ed2c54dfad96944bdf9c5730b8ac0c103653dddac9ff8bd779c2822f292e80a",
+              "text": "If necessary, we may replace the hotels with others of the same category.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "Verified the complete selected Word; p175 and p211 mention similar hotels and availability, but the specific same-category substitution condition is absent, so translated the exact RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:05680faa947baa60",
+              "field": "note",
+              "sourceTextSha256": "13c996687256cf8f9c8b56f58533c646397f6b40a44244e857f789acaa4b3607",
+              "text": "The order of excursions may change, but the full tour programme will be maintained.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "Verified the complete selected Word; no excursion-order-change condition appears in its programme or conditions, so translated this exact RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:ef83dabc89561ff4",
+              "field": "note",
+              "sourceTextSha256": "b94b115e776b14bb2160fde513dac19a6cdad1eb036aee1a81a884276440b607",
+              "text": "We are not responsible for missed hotel breakfasts when an early departure is required for a flight or excursion.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "Verified the complete selected Word; it has no missed-breakfast responsibility condition, so translated the exact current RU note."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:18:07.752Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

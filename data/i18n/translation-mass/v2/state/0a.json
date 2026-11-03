@@ -86,7 +86,7 @@
         "expiresAt": "2026-11-04T00:54:27.857Z"
       },
       "checkpoint": {
-        "id": "ada-en-9457ab67-n8-cp4",
+        "id": "ada-en-9457ab67-n8-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-9457ab67-20261104",
         "token": "ada-en-token-9457ab67-20261104",
@@ -158,10 +158,92 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:bb02e6bc469ac6ec",
+              "field": "itinerary.label",
+              "sourceTextSha256": "94a3c52897619740b9151654a93c10280ad3be618fcf4dfb6bc91ce3ff16d513",
+              "text": "Moon Valley (Atacama)",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p99",
+                    "textSha256": "01d4ef34d419f5a7872cf63a9bc114e4e0d2eae16382d2986c5554c9388986bc"
+                  },
+                  {
+                    "ref": "word/document.xml#p103",
+                    "textSha256": "301d66d3d60ed1095c9b30c870db14b1e21eb6be8a1c51f47e288733ab955ba8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Used the Word Moon Valley name with the current RU Atacama disambiguator, which the Word Atacama section establishes."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:0bc544d6f8b6db46",
+              "field": "itinerary.label",
+              "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
+              "text": "San Pedro de Atacama",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p181",
+                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:87c990cbf3ae34cc",
+              "field": "itinerary.label",
+              "sourceTextSha256": "fdeb82224988222216997ad3f9bb33fec8fabac5ec01fc60d0072d64c4fb9d8f",
+              "text": "Los Flamencos National Reserve",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p103",
+                    "textSha256": "301d66d3d60ed1095c9b30c870db14b1e21eb6be8a1c51f47e288733ab955ba8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact reserve name from the verified Word Moon Valley description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:e1dddf681303f0bd",
+              "field": "itinerary.title",
+              "sourceTextSha256": "29ccc3eaacc1d3b4b79908d9ed111a2b88dd16f920493ef03c30265e581cf7a6",
+              "text": "San Pedro de Atacama – Calama – Santiago",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p181",
+                    "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+                  },
+                  {
+                    "ref": "word/document.xml#p113",
+                    "textSha256": "776070984de5d4ef79b58c9f752a8bb0c6f89f07ef1468ddbc69afb285abacfa"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Composed the transfer heading from the Word departure city and exact airport/arrival city names in Day6."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:25:09.663Z"
+        "at": "2026-11-03T23:25:14.373Z"
       },
       "submission": null,
       "review": null,

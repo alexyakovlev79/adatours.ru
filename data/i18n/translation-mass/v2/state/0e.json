@@ -255,165 +255,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_rio_four_days:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "c591cf43e9e892e12273e688b56051ae43b1bf2a96877d4cbf291ae09fd7a3ef",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "claimedAt": "2026-11-03T23:16:07.083Z",
-        "expiresAt": "2026-11-04T00:46:07.083Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "submit-98cdd875f4b9-7-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-98cdd875f4b9",
-        "token": "token-98cdd875f4b9-20261104",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_rio_four_days:b005",
-          "stableId": "tour_brazil_rio_four_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "c591cf43e9e892e12273e688b56051ae43b1bf2a96877d4cbf291ae09fd7a3ef",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_label:8d9329b584bf954f",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
-                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p7",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:e8b0a037049855e2",
-              "field": "itinerary.label",
-              "sourceTextSha256": "6bd9c9bdf78249ddedfce16a21e31ea680bc435d97b101570c48662cb29177b0",
-              "text": "Tijuca Forest",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
-                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p45",
-                    "textSha256": "20503504dd1f770e34b2a8a7ace6f9ad394208e229361f5e0b4e7fdad28957c9"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:1dbdee6071cd2065",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
-              "text": "Corcovado",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
-                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p88",
-                    "textSha256": "46cd6d0366323a016d0154471f6176288226504a207dcf44826393e8652bb95b"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:5fd3758c41bef2c8",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
-                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p7",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a597bd40dafaf878",
-              "field": "itinerary.label",
-              "sourceTextSha256": "5aa9aa4604e906ece67469262f0e90160f3be7a97894813d76ed000b12f40587",
-              "text": "Rocinha",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
-                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p157",
-                    "textSha256": "1fb44f4e07b3c06c092878811e8f2805d5befcc6933cd030072fcfeaf12e32f8"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
-                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p7",
-                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:media_alt:74dbac8fcac564bb",
-              "field": "media.alt",
-              "sourceTextSha256": "7a5051979a13716c111454fdbb7e60065d869569b0ac89173c8181082f119ffc",
-              "text": "A rocky shore and sailboats in Guanabara Bay, Rio de Janeiro, Brazil",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word has no corresponding image alternative text; translate the current RU media description."
-              }
-            },
-            {
-              "blockId": "tour:media_alt:68ebdd10346d3d20",
-              "field": "media.alt",
-              "sourceTextSha256": "75f3b12b5aa186002e975a581c834aa3a21752f32afc0e50571a34900ceac0ce",
-              "text": "The Sugar Loaf cable car above Guanabara Bay — illustration",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-98cdd875f4b9",
-                "wordAbsenceReason": "The verified Word has no corresponding image alternative text; translate the current RU media description."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:16:39.515Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-98cdd875f4b9-7",
+        "blobSha": "ece06edcd1236314928d5276da97a9e0af7f971b",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_rio_four_days_b005/submit-98cdd875f4b9-7.json",
+        "at": "2026-11-03T23:19:04.534Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

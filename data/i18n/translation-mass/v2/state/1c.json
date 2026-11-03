@@ -285,7 +285,94 @@
         "claimedAt": "2026-11-03T22:31:22.060Z",
         "expiresAt": "2026-11-04T00:01:22.060Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "adaen-ce889297dd8d-002-cp4",
+        "format": "inline-v1",
+        "ownerId": "adaen-ce889297dd8d-20261104",
+        "token": "adaen-ce889297dd8d-stable-token-01",
+        "generation": 1,
+        "payload": {
+          "submissionId": "adaen-ce889297dd8d-002",
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b018",
+            "stableId": "tour_brazil_peru_argentina_group_15_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "6aea2baff6e34059c3fbc365f485c3401135a39e5a12a4264e55da26fbb0d0a5",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_text:173cf987634ed90a",
+                "field": "itinerary.text",
+                "sourceTextSha256": "141bec94060e1531011bc1651672b12d4074a0268125a1782e94a36256fd98ed",
+                "text": "Transfer to the airport to take your flight back to Buenos Aires.Transfer to your hotel",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p81",
+                      "textSha256": "272ac5cf9275bc8c3f421a4432a7881764f44a5a10a21129530fb94d304a0016"
+                    }
+                  ]
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:294cc25a4eafe564",
+                "field": "itinerary.label",
+                "sourceTextSha256": "79fee6720832848ccbefe5b53da088925e628bef78bb5a740bce2f3e74fa31df",
+                "text": "El Calafate",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "350433d65adfa9fc97492206cb2d903b82f03bd1b6d152f9f2ce93c185a0ed54"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the departure place from the exact Day 13 Word heading for this place label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:208366df5b21a36f",
+                "field": "itinerary.label",
+                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+                "text": "Buenos Aires",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p80",
+                      "textSha256": "350433d65adfa9fc97492206cb2d903b82f03bd1b6d152f9f2ce93c185a0ed54"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the arrival place from the exact Day 13 Word heading for this place label."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:dcb5e47b12fcf932",
+                "field": "media.alt",
+                "sourceTextSha256": "260fbcd2272616ef56120e7d4cb5d746847a2a2d98862fbbc2bd42aaa4c27250",
+                "text": "The pink Casa Rosada building behind a flower bed in Buenos Aires, Argentina",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "adaen-ce889297dd8d-20261104",
+                  "wordAbsenceReason": "Full exact Word e45cd1f7 inspected, including p80–87: website-specific image alt descriptions are absent; translate current RU image metadata."
+                }
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T22:32:18.838Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

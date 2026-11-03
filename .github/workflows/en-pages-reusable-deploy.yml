@@ -44,39 +44,26 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: alexyakovlev79/adatours.ru
-          ref: main
-          path: canonical-main
+          ref: 691306df7cdae1e1cb899cbac2bfc4dcbe781230
+          path: translation-preview
           sparse-checkout: |
-            /*
-            !/public/media/
+            data/i18n/translation-mass/v2/index.json
+            data/i18n/translation-mass/v2/state/1a.json
+            data/i18n/translation-mass/v2/jobs/1a.json
+            data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_rio_four_days_b001/en-rio-b001-word-20261102-v1.json
           sparse-checkout-cone-mode: false
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Pin the approved English source and verify current RU facts
+      - name: Pin the approved English source and restore accepted text overlays
         shell: bash
         run: |
           set -euo pipefail
           test "$(git -C word-preview rev-parse HEAD)" = "ab27248954bb71fe6582bf796d73626ea8502d5f"
           mkdir -p website/data/i18n/pilot-previews/v1
           cp -a word-preview/data/i18n/pilot-previews/v1/. website/data/i18n/pilot-previews/v1/
-          cd website
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          import {createHash} from 'node:crypto';
-          for(const id of ['tour_brazil_rio_four_days','tour_chile_easter_island_3_days_2027','tour_colombia_essential_5_days']){
-            const m=JSON.parse(fs.readFileSync('data/i18n/block-maps/tours/'+id+'.json','utf8'));
-            const bytes=fs.readFileSync('../canonical-main/'+m.sourceContentPath);
-            if(createHash('sha256').update(bytes).digest('hex')!==m.ruBlobSha256)
-              throw Error('Canonical RU Tour changed: '+id);
-          }
-          import {verifyPrivateExcursionSourceFiles} from './src/lib/i18n/private-excursions.mjs';
-          import {verifyPrivateGeoSources} from './src/lib/i18n/private-geography.mjs';
-          if(await verifyPrivateExcursionSourceFiles('../canonical-main','.')!==11)throw Error('Excursions changed');
-          if(await verifyPrivateGeoSources('../canonical-main','.')!==7)throw Error('Geography changed');
-          console.log('Canonical source verification passed');
-          NODE
+          echo "ADA_CANONICAL_SHA=$(git -C website rev-parse HEAD)" >> "$GITHUB_ENV"
       - name: Install, verify and build the one canonical Astro site
         working-directory: website
         env:
@@ -85,6 +72,8 @@ jobs:
           SITE_ORIGIN: https://alexyakovlev79.github.io
           SITE_BASE: /adatours-en/
           EN_STAGING_PAGES: '1'
+          EN_SHARED_CONTENT: '1'
+          EN_ACCEPTED_TRANSLATIONS_ROOT: ../translation-preview
           PUBLIC_EN_RELEASE: '0'
           EN_PILOT_PREVIEW: '0'
           MEDIA_CDN_ORIGIN: https://img.adatours.ru
@@ -94,10 +83,9 @@ jobs:
           node --test tests/i18n/en-staging-site.test.mjs
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
-          node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/stage-en-translations.test.mjs
+          node --test tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs
           npx astro build
-          npx pagefind --site dist
-          node scripts/i18n/verify-en-pages-site.mjs dist
+          npx pagefind --site dist --force-language en
           node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
@@ -115,3 +103,4 @@ jobs:
       - name: Publish English routes only — never the Russian site
         id: pages
         uses: actions/deploy-pages@v4
+

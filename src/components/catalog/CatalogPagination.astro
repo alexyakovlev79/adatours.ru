@@ -1,39 +1,49 @@
 ---
 import { withBase } from '../../lib/paths';
+import { uiText } from '../../lib/i18n/messages.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 import { catalogPagePath, paginationNumbers, type CatalogPagination } from '../../lib/catalog-pagination';
 
 interface Props { pagination: CatalogPagination; }
 const { pagination: p } = Astro.props;
 const numbers = paginationNumbers(p.currentPage, p.totalPages);
+const uiLocale = sharedUiLocale();
+const clientMessages = {
+  loading: uiText(uiLocale,'pagination.loading'),
+  showing: uiText(uiLocale,'pagination.showing',{from:'{from}',to:'{to}',total:'{total}'}),
+  added: uiText(uiLocale,'pagination.added',{count:'{count}'}),
+  complete: uiText(uiLocale,'pagination.complete'),
+  error: uiText(uiLocale,'pagination.error'),
+};
 ---
 
-<div class="catalog-pagination container" data-catalog-controls>
-  <p class="catalog-pagination__count" data-catalog-count>Показано {p.from}–{p.to} из {p.totalItems}</p>
+<div class="catalog-pagination container" data-catalog-controls data-catalog-messages={JSON.stringify(clientMessages)}>
+  <p class="catalog-pagination__count" data-catalog-count>{uiText(uiLocale,'pagination.showing',{from:p.from,to:p.to,total:p.totalItems})}</p>
   {p.nextPath && (
     <a
       class="catalog-pagination__more"
       href={withBase(p.nextPath)}
       data-catalog-load-more
       aria-controls="catalog-items"
-    >Показать еще <span aria-hidden="true">+</span></a>
+    >{uiText(uiLocale,'pagination.more')} <span aria-hidden="true">+</span></a>
   )}
   <p class="catalog-pagination__status" data-catalog-status role="status" aria-live="polite" aria-atomic="true"></p>
   {p.totalPages > 1 && (
-    <nav class="catalog-pagination__nav" aria-label="Страницы каталога">
-      {p.previousPath && <a class="catalog-pagination__direction" href={withBase(p.previousPath)} rel="prev">← Назад</a>}
+    <nav class="catalog-pagination__nav" aria-label={uiText(uiLocale,'pagination.pagesAria')}>
+      {p.previousPath && <a class="catalog-pagination__direction" href={withBase(p.previousPath)} rel="prev">← {uiText(uiLocale,'pagination.previous')}</a>}
       <div class="catalog-pagination__numbers">
         {numbers.map((page) => page === 'gap'
           ? <span class="catalog-pagination__gap" aria-hidden="true">…</span>
           : page === p.currentPage
-            ? <span class="catalog-pagination__number is-current" aria-current="page" aria-label={`Страница ${page}, текущая`}>{page}</span>
-            : <a class="catalog-pagination__number" href={withBase(catalogPagePath(p.rootPath, page))} aria-label={`Страница ${page}`}>{page}</a>
+            ? <span class="catalog-pagination__number is-current" aria-current="page" aria-label={uiText(uiLocale,'pagination.currentAria',{page})}>{page}</span>
+            : <a class="catalog-pagination__number" href={withBase(catalogPagePath(p.rootPath, page))} aria-label={uiText(uiLocale,'pagination.pageAria',{page})}>{page}</a>
         )}
       </div>
-      {p.nextPath && <a class="catalog-pagination__direction" href={withBase(p.nextPath)} rel="next">Далее →</a>}
+      {p.nextPath && <a class="catalog-pagination__direction" href={withBase(p.nextPath)} rel="next">{uiText(uiLocale,'pagination.next')} →</a>}
     </nav>
   )}
   {p.currentPage > 1 && (
-    <a class="catalog-pagination__first" href={withBase(p.rootPath)}>На первую страницу каталога</a>
+    <a class="catalog-pagination__first" href={withBase(p.rootPath)}>{uiText(uiLocale,'pagination.first')}</a>
   )}
 </div>
 
@@ -108,3 +118,4 @@ const numbers = paginationNumbers(p.currentPage, p.totalPages);
     .catalog-pagination__more { transition: none; }
   }
 </style>
+

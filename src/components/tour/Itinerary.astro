@@ -1,4 +1,5 @@
 ---
+import {sharedUiLocale} from '../../lib/i18n/shared-ui-locale.mjs';
 import HeroImage from '../editorial/HeroImage.astro';
 import { isActiveEntity, activeReplacementId } from '../../lib/archive.mjs';
 import { getCollection } from 'astro:content';
@@ -49,9 +50,10 @@ interface Props {
   /** Source-verified localized Excursion records. No RU fallback is allowed. */
   englishExcursions?: Record<string, any>;
 }
-const { days, locale = 'ru', privatePreview = false, sectionId, englishExcursions } = Astro.props;
+const sharedEnglish = sharedUiLocale() === 'en';
+const { days, locale = sharedEnglish ? 'en' : 'ru', privatePreview = false, sectionId, englishExcursions } = Astro.props;
 const privateEnglish = locale === 'en' && privatePreview;
-if (locale === 'en') {
+if (locale === 'en' && !sharedEnglish) {
   const staging = enStagingSiteEnabled(process.env);
   const validPath = staging
     ? [EN_STAGING_ROUTE, EN_STAGING_BASE+EN_STAGING_ROUTE.slice(1)].some(prefix=>Astro.url.pathname.startsWith(prefix))
@@ -199,11 +201,11 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
 });
 ---
 
-<section class="itinerary section" id={sectionId} data-ada-i18n-itinerary={privateEnglish ? 'en' : undefined}>
+<section class="itinerary section" id={sectionId} data-ada-i18n-itinerary={locale === 'en' ? 'en' : undefined}>
   <div class="container itinerary__container">
     <div class="itinerary__heading">
-      <p class="eyebrow">{privateEnglish ? uiText(locale, 'tour.route') : 'Маршрут'}</p>
-      <h2>{privateEnglish ? `${itineraryDayCount} ${itineraryDayCount === 1 ? 'day' : 'days'} of travel` : `${itineraryDayCount} ${itineraryDayLabel} путешествия`}</h2>
+      <p class="eyebrow">{uiText(locale, 'tour.route')}</p>
+      <h2>{locale === 'en' ? `${itineraryDayCount} ${itineraryDayCount === 1 ? 'day' : 'days'} of travel` : `${itineraryDayCount} ${itineraryDayLabel} путешествия`}</h2>
     </div>
 
     <div class="itinerary__days">
@@ -932,3 +934,4 @@ const resolvedDays = days.filter((day) => !day.excursionRef || activeReplacement
     }
   }
 </style>
+

@@ -2,6 +2,7 @@
 import { withBase } from '../../lib/paths';
 import SearchResults from './SearchResults.astro';
 import SearchPlacesMap from './SearchPlacesMap.astro';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 
 const pagefindBundle = withBase('/pagefind/');
 const pagefindBase = import.meta.env.BASE_URL || '/';
@@ -17,6 +18,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
   aria-hidden="true"
   hidden
   data-search-overlay
+  data-ui-locale={sharedUiLocale()}
   data-pagefind-bundle={pagefindBundle}
   data-search-base={pagefindBase}
   data-pagefind-ignore="all"
@@ -62,9 +64,12 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
 </div>
 
 <script>
+  import { translateUiText } from '../../lib/i18n/shared-ui-locale.mjs';
   import { ensureSharedSiteShell } from '../../scripts/shared-site-shell';
   await ensureSharedSiteShell();
   const MAX_SEARCH_RESULTS = 100;
+  const locale = document.documentElement.dataset.adaSharedLocale === 'en' ? 'en' : 'ru';
+  const t = (value: string) => translateUiText(value, locale);
   const overlay = document.querySelector('[data-search-overlay]');
   const openButtons = Array.from(document.querySelectorAll('[data-search-open]'));
   const closeButton = overlay?.querySelector('[data-search-close]');
@@ -142,7 +147,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         const state = placesMapRoot?.querySelector('[data-search-map-status]');
         if (state instanceof HTMLElement) {
           state.hidden = false;
-          state.textContent = 'Карта временно недоступна. Список мест работает.';
+          state.textContent = t('Карта временно недоступна. Список мест работает.');
         }
       }
     };
@@ -269,7 +274,7 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
         a.index - b.index;
     };
 
-    const setStatus = (message: string) => { status.textContent = message; };
+    const setStatus = (message: string) => { status.textContent = t(message); };
     const clearResults = () => { list.replaceChildren(); };
 
     const createResult = (data: any) => {
@@ -281,8 +286,8 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
       const summary = fragment.querySelector('[data-result-summary]');
 
       if (link instanceof HTMLAnchorElement) link.href = data.url;
-      if (title instanceof HTMLElement) title.textContent = data.meta?.title ?? 'Без названия';
-      if (type instanceof HTMLElement) type.textContent = data.meta?.type_label ?? '';
+      if (title instanceof HTMLElement) title.textContent = data.meta?.title ?? t('Без названия');
+      if (type instanceof HTMLElement) type.textContent = t(data.meta?.type_label ?? '');
       if (metaTail instanceof HTMLElement) {
         const subtitle = String(data.meta?.subtitle ?? '').trim();
         metaTail.textContent = subtitle ? ` · ${subtitle}` : '';
@@ -572,3 +577,4 @@ const logoBlack = withBase('/brand/adatours-logo-black.svg');
   }
   @media(max-width:640px){.search-overlay__content{padding-top:20px}.search-overlay__input{padding-bottom:16px;font-size:clamp(2rem,10vw,3.2rem)}.search-overlay__input::placeholder{font-size:clamp(.94rem,3.8vw,1.125rem)}.search-filters{gap-inline:18px}}
 </style>
+

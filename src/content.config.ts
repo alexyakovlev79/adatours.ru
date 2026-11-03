@@ -3,12 +3,13 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { contentIdentity } from './lib/content-identity.mjs';
 import { DESTINATION_TYPES, NAVIGATION_ROLES } from './lib/destination-taxonomy.mjs';
+import { withSharedEnglishContent } from './lib/i18n/shared-content-loader.mjs';
 
-const contentLoader = (collection: string) => glob({
+const contentLoader = (collection: string) => withSharedEnglishContent(glob({
   base: `./src/content/${collection}`,
   pattern: '**/*.{md,mdx}',
   generateId: contentIdentity,
-});
+}), collection);
 
 const locale = z.enum(['ru', 'en', 'cn']);
 const status = z.enum(['draft', 'review', 'approved', 'published', 'archived']);
@@ -45,6 +46,15 @@ const heroVideo = z.object({
 
 const common = {
   id: z.string(),
+  _i18n: z.object({
+    contentLanguage: z.enum(['ru', 'en']),
+    translatedFields: z.number().int().nonnegative(),
+    sourceId: z.string(),
+    sourceName: z.string().optional(),
+    sourceFingerprint: z.string(),
+    fallbackReason: z.string().optional(),
+    formatLabel: z.string().optional(),
+  }).optional(),
   heroVideo,
   locale,
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'Use the approved lowercase English URL slug.'),
@@ -302,4 +312,5 @@ export const collections = {
   people,
   articles,
 };
+
 

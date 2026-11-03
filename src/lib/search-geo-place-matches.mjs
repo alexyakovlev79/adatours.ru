@@ -1,10 +1,19 @@
 // Join the existing Pagefind result order to published GEO destination points.
 // No search-triggered geocoding, extra lookup APIs, or per-page JSON duplicates.
+import {EN_STAGING_BASE,EN_STAGING_ROUTE} from './i18n/en-staging-site.mjs';
+const stagingPrefix=EN_STAGING_BASE+EN_STAGING_ROUTE.slice(1);
 export function canonicalGeoSearchPath(value) {
   const bare = String(value || '').split(/[?#]/,1)[0]
     .replace(/^https?:\/\/[^/]+/i,'');
   if(!bare.startsWith('/'))return '';
-  try{return decodeURIComponent(bare).replace(/\/+$/,'')+'/';}
+  try{
+    const pathname=decodeURIComponent(bare);
+    // Search results use the staged EN namespace; the shared GEO index keeps
+    // its canonical paths. Normalize only the matching key, never result hrefs.
+    const canonical=pathname.startsWith(stagingPrefix)
+      ? '/'+pathname.slice(stagingPrefix.length) : pathname;
+    return canonical.replace(/\/+$/,'')+'/';
+  }
   catch{return '';}
 }
 
@@ -38,3 +47,4 @@ export function searchGeoPoints(results,index) {
   }
   return points;
 }
+

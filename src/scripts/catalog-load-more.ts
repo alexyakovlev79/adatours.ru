@@ -16,6 +16,19 @@ export function initializeCatalogLoadMore(): void {
     const firstItem = Number(root.dataset.catalogFrom);
     const totalItems = Number(root.dataset.catalogTotal);
     const originalLabel = more.innerHTML;
+    const defaults = {
+      loading: 'Загружаем…', showing: 'Показано {from}–{to} из {total}',
+      added: 'Добавлено: {count}.', complete: 'Все оставшиеся объекты загружены.',
+      error: 'Не удалось подгрузить список. Попробуйте еще раз или перейдите по номеру страницы.',
+    };
+    let messages = defaults;
+    try {
+      const source = root.querySelector<HTMLElement>('[data-catalog-messages]')?.dataset.catalogMessages;
+      const parsed = source ? JSON.parse(source) : null;
+      if (parsed && Object.keys(defaults).every(key => typeof parsed[key] === 'string')) messages = parsed;
+    } catch { /* Existing Russian pages retain their normal copy. */ }
+    const message = (key: keyof typeof defaults, values: Record<string, number | string> = {}) =>
+      messages[key].replace(/\{([a-z]+)\}/g, (token, name) => Object.hasOwn(values,name) ? String(values[name]) : token);
 
     more.addEventListener('click', async (event) => {
       if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -24,7 +37,7 @@ export function initializeCatalogLoadMore(): void {
       loading = true;
       more.setAttribute('aria-disabled', 'true');
       items.setAttribute('aria-busy', 'true');
-      more.textContent = 'Загружаем…';
+      more.textContent = message('loading');
       status.textContent = '';
       const controller = new AbortController();
       const timeout = window.setTimeout(() => controller.abort(), 15000);
@@ -67,15 +80,15 @@ export function initializeCatalogLoadMore(): void {
         items.append(...additions);
         loadedPage += 1;
         loadedTo = Number(nextRoot.dataset.catalogTo);
-        count.textContent = `Показано ${firstItem}–${nextRoot.dataset.catalogTo} из ${totalItems}`;
+        count.textContent = message('showing',{from:firstItem,to:loadedTo,total:totalItems});
         if (subsequentURL) more.href = subsequentURL.href;
         else more.hidden = true;
-        status.textContent = subsequentURL ? `Добавлено: ${additions.length}.` : 'Все оставшиеся объекты загружены.';
+        status.textContent = subsequentURL ? message('added',{count:additions.length}) : message('complete');
         // Keep the document URL, canonical and numbered navigation unchanged.
         // Keyboard users continue from the newly inserted objects, not past them.
         additions[0]?.querySelector<HTMLAnchorElement>('a[href]')?.focus({ preventScroll: true });
       } catch {
-        status.textContent = 'Не удалось подгрузить список. Попробуйте еще раз или перейдите по номеру страницы.';
+        status.textContent = message('error');
       } finally {
         window.clearTimeout(timeout);
         loading = false;
@@ -89,3 +102,4 @@ export function initializeCatalogLoadMore(): void {
 
 initializeCatalogLoadMore();
 document.addEventListener('astro:page-load', initializeCatalogLoadMore);
+

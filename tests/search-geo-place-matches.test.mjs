@@ -30,3 +30,27 @@ test('empty and non-GEO search results do not create markers',()=>{
   assert.deepEqual(searchGeoPoints([{url:'/x/'}],new Map()),[]);
   assert.equal(indexSearchGeoPlaces([{url:'/a/',coordinates:[1,NaN]}]).size,0);
 });
+
+test('staged English search matches the canonical GEO index and keeps English destination links',()=>{
+  const canonical='/brazil/place/rio-de-janeiro/';
+  const english='/adatours-en/en/brazil/place/rio-de-janeiro/';
+  const coordinates=[-43.2,-22.9];
+  const index=indexSearchGeoPlaces([{url:canonical,coordinates}]);
+  assert.equal(canonicalGeoSearchPath('https://alexyakovlev79.github.io'+english+'?from=search'),canonical);
+  assert.equal(canonicalGeoSearchPath(canonical),canonical);
+  assert.equal(canonicalGeoSearchPath('/another-project/en/brazil/place/rio-de-janeiro/'),
+    '/another-project/en/brazil/place/rio-de-janeiro/');
+  const points=searchGeoPoints([
+    {url:english,meta:{title:'Rio de Janeiro',summary:'City on the coast',image:'/media/rio.webp'}},
+    {url:canonical,meta:{title:'Duplicate canonical match'}},
+  ],index);
+  assert.equal(points.length,1);
+  assert.equal(points[0].id,canonical);
+  assert.equal(points[0].href,english);
+  assert.equal(points[0].name,'Rio de Janeiro');
+  assert.equal(points[0].description,'City on the coast');
+  assert.equal(points[0].image,'/media/rio.webp');
+  assert.deepEqual(points[0].coordinates,coordinates);
+  assert.equal(points[0].position,1);
+});
+

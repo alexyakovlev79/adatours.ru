@@ -9,9 +9,9 @@ import { ABOUT_NAV_LINKS, DMC_NAV_LINKS, MICE_NAV_LINKS, NAV_LINKS } from '../..
 import { withBase } from '../../lib/paths';
 import { countryPath, themePath, mainTourCountries } from '../../lib/routes';
 import { isActiveEntity } from '../../lib/archive.mjs';
-import { pilotCatalogUrl,PILOT_ROOT_PATH } from '../../lib/i18n/pilot-html.mjs';
-import {privateRouteForId} from '../../lib/i18n/locale-entity-routes.mjs';
-import { uiText,localizedNavigation } from '../../lib/i18n/messages.mjs';
+import { PILOT_ROOT_PATH } from '../../lib/i18n/pilot-html.mjs';
+import { uiText } from '../../lib/i18n/messages.mjs';
+import { sharedUiLocale, translateUiText, sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
 import { buildCountryTourCounts, compareCountriesByPopularity } from '../../lib/country-popularity';
 import { buildInterestIndex } from '../../lib/interest-model.mjs';
 import { getVipCountryIndex } from '../../lib/vip-catalog';
@@ -27,12 +27,13 @@ interface NavChild {
 }
 
 const { theme = 'light', privatePreview = false } = Astro.props;
-const enNavLabels=new Map(localizedNavigation('en').primary.map(item=>[item.href,item.label]));
-// One navigation hierarchy in both languages; an unlocalized destination
-// remains available at its canonical RU-derived EN fallback route.
+const uiLocale = privatePreview ? 'en' : sharedUiLocale();
+const translate = (text: string) => translateUiText(text, uiLocale);
+const translateLink = (link: { href: string; label: string }) => ({ ...link, label: translate(link.label) });
+// Keep the current common navigation hierarchy for the legacy preview too.
 const previewNav=NAV_LINKS.map(item=>({href:PILOT_ROOT_PATH+item.href.slice(1),
- label:enNavLabels.get(item.href)??item.label}));
-const activeNav=privatePreview?previewNav:NAV_LINKS;
+  label:translate(item.label)}));
+const activeNav=privatePreview?previewNav:NAV_LINKS.map(translateLink);
 const logoWhite = withBase('/brand/adatours-logo-white.svg');
 const logoBlack = withBase('/brand/adatours-logo-black.svg');
 
@@ -53,7 +54,7 @@ const countryChildLinks: NavChild[] = countryEntries
 const interestChildLinks: NavChild[] = buildInterestIndex(themeEntries, tourEntries)
   .map(({ entry }) => ({
     href: themePath(entry.data),
-    label: entry.data.name,
+    label: sharedInterestName(entry.data.id, entry.data.name, uiLocale),
   }));
 
 // Independent columns keep a two-line interest label from stretching
@@ -62,11 +63,11 @@ const interestMenuColumns = [0, 1].map((column) =>
   interestChildLinks.filter((_, index) => index % 2 === column)
 );
 
-const miceChildLinks: NavChild[] = MICE_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
+const miceChildLinks: NavChild[] = MICE_NAV_LINKS.slice(1).map(translateLink);
 const vipChildLinks: NavChild[] = (await getVipCountryIndex())
   .map(({ href, entry }) => ({ href, label: entry.data.name }));
-const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
-const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(({ href, label }) => ({ href, label }));
+const dmcChildLinks: NavChild[] = DMC_NAV_LINKS.slice(1).map(translateLink);
+const aboutChildLinks: NavChild[] = ABOUT_NAV_LINKS.slice(1).map(translateLink);
 
 // Build the full index once per static render, from active routes only.
 const multiCountryIndex = await getMultiCountryCatalog();
@@ -125,25 +126,25 @@ const nestedGroups = activeNav
     ...link,
     groupId: groupIdFor(link.href),
     children: childLinksFor(link.href),
-    overviewLabel: overviewLabelFor(link.href, link.label),
+    overviewLabel: translate(overviewLabelFor(link.href, link.label)),
   }))
   .filter((group) => group.children.length > 0 || group.groupId === 'multi-country');
 ---
 
-<header class:list={['site-header', `site-header--${theme}`]} data-site-header data-ada-preview-header={privatePreview ? 'true' : undefined}>
+<header class:list={['site-header', `site-header--${theme}`]} data-site-header data-ui-locale={uiLocale} data-ada-preview-header={privatePreview ? 'true' : undefined}>
   <div class="site-header__inner">
-    <a class="brand" href={privatePreview ? withBase(PILOT_ROOT_PATH) : withBase('/')} aria-label={privatePreview ? uiText('en','nav.homeAria') : 'Ada Tours, на главную'}>
+    <a class="brand" href={privatePreview ? withBase(PILOT_ROOT_PATH) : withBase('/')} aria-label={uiText(uiLocale,'nav.homeAria')}>
       <img class="brand__logo brand__logo--white" src={logoWhite} width="553" height="184" alt="" aria-hidden="true" />
       <img class="brand__logo brand__logo--black" src={logoBlack} width="553" height="184" alt="" aria-hidden="true" />
     </a>
 
-    <nav class="desktop-nav" aria-label={privatePreview ? uiText('en','nav.mainAria') : 'Основная навигация'}>
+    <nav class="desktop-nav" aria-label={uiText(uiLocale,'nav.mainAria')}>
       {activeNav.map((link) => {
         const children = childLinksFor(link.href);
         return link.href === '/multi-country/' ? (
           <div class="desktop-nav__group">
             <a class="desktop-nav__parent" href={withBase(link.href)}>{link.label}</a>
-            <div class="desktop-nav__submenu desktop-nav__submenu--multi-country" aria-label="Сочетания стран">
+            <div class="desktop-nav__submenu desktop-nav__submenu--multi-country" aria-label={uiText(uiLocale,'multi.combinations')}>
               <MultiCountryMenu countries={multiCountryCountries} combinations={multiCountryCombinations} serverLinks={false} />
             </div>
           </div>
@@ -182,19 +183,21 @@ const nestedGroups = activeNav
 
     <div class="desktop-cta">
       {privatePreview ? <span class="preview-search-placeholder" title="Search is coming soon" aria-label="Search unavailable in preview">Search</span> : <SearchTrigger compact />}
-      <PrimaryCTA href={privatePreview ? '#enquiry' : '/contacts/'} label={privatePreview ? 'Plan your journey' : 'Оставить заявку'} />
+      <PrimaryCTA href={privatePreview ? '#enquiry' : '/contacts/'} label={privatePreview ? 'Plan your journey' : uiText(uiLocale,'cta.enquire')} />
     </div>
 
     {!privatePreview && <div class="mobile-search"><SearchTrigger compact /></div>}
 
     <div class="mobile-cta">
-      <PrimaryCTA href={privatePreview ? '#enquiry' : '/contacts/'} label={privatePreview ? 'Enquire' : 'Оставить заявку'} />
+      <PrimaryCTA href={privatePreview ? '#enquiry' : '/contacts/'} label={privatePreview ? 'Enquire' : uiText(uiLocale,'cta.enquire')} />
     </div>
 
     <button
       class="menu-toggle"
       type="button"
-      aria-label={privatePreview ? uiText('en','nav.openMenu') : 'Открыть меню'}
+      aria-label={uiText(uiLocale,'nav.openMenu')}
+      data-open-label={uiText(uiLocale,'nav.openMenu')}
+      data-close-label={uiText(uiLocale,'nav.closeMenu')}
       aria-expanded="false"
       aria-controls="mobile-menu"
       data-menu-toggle
@@ -208,7 +211,7 @@ const nestedGroups = activeNav
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
     <div class="mobile-menu__stage">
       <section class="mobile-menu__panel mobile-menu__panel--main" data-mobile-panel="main">
-        <nav aria-label={privatePreview ? uiText('en','nav.mobileAria') : 'Мобильная навигация'}>
+        <nav aria-label={uiText(uiLocale,'nav.mobileAria')}>
           {activeNav.map((link) => {
             const children = childLinksFor(link.href);
             const groupId = groupIdFor(link.href);
@@ -231,7 +234,7 @@ const nestedGroups = activeNav
         </nav>
 
         <div class="mobile-menu__contact">
-          <PrimaryCTA href={privatePreview ? '#enquiry' : '/contacts/'} label={privatePreview ? 'Plan your journey' : 'Оставить заявку'} />
+          <PrimaryCTA href={privatePreview ? '#enquiry' : '/contacts/'} label={privatePreview ? 'Plan your journey' : uiText(uiLocale,'cta.enquire')} />
           {!privatePreview && <ContactActions />}
         </div>
       </section>
@@ -245,7 +248,7 @@ const nestedGroups = activeNav
         >
           <button class="mobile-menu__back" type="button" data-submenu-back>
             <span aria-hidden="true">‹</span>
-            Назад
+            {uiText(uiLocale,'nav.back')}
           </button>
 
           <p class="mobile-menu__title">{group.label}</p>
@@ -336,8 +339,8 @@ const nestedGroups = activeNav
 
     const setOpen = (open: boolean) => {
       toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', header.hasAttribute('data-ada-preview-header')
-        ? (open ? 'Close menu' : 'Open menu') : (open ? 'Закрыть меню' : 'Открыть меню'));
+      toggle.setAttribute('aria-label', (open ? toggle.getAttribute('data-close-label') : toggle.getAttribute('data-open-label'))
+        ?? (open ? 'Закрыть меню' : 'Открыть меню'));
       menu.setAttribute('aria-hidden', String(!open));
       document.body.classList.toggle('menu-open', open);
       header.classList.toggle('is-open', open);
@@ -957,3 +960,4 @@ const nestedGroups = activeNav
     }
   }
 </style>
+

@@ -1,5 +1,7 @@
 // Keep offscreen maps lazy, but load immediately after first-screen readiness when visible.
 import {canMountGeoMap, isMapVisible, movedDown, nearViewport} from '../lib/geo-map-lazy.mjs';
+import {translateUiText} from '../lib/i18n/shared-ui-locale.mjs';
+const t = text => translateUiText(text,document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru');
 const scriptLoads = new Map();
 
 export function loadProviderScript(id, url) {
@@ -62,7 +64,7 @@ export function createPin(point, onSelect) {
   if (point.isPrimary) button.classList.add('geo-map__pin--primary');
   else if (point.isRelated) button.classList.add('geo-map__pin--related');
   button.textContent = String(point.position);
-  button.setAttribute('aria-label', point.name + ': показать описание');
+  button.setAttribute('aria-label', t(point.name + ': показать описание'));
   button.addEventListener('click', e => {
     e.preventDefault();
     e.stopPropagation();
@@ -110,14 +112,14 @@ async function mount(root) {
   const retry = root.querySelector('[data-geo-map-retry]');
   if (!element || !status) return;
   status.hidden = false;
-  status.textContent = 'Загружаем карту…';
+  status.textContent = t('Загружаем карту…');
   if (retry) retry.hidden = true;
 
   let payload;
   try {
     payload = JSON.parse(root.dataset.geoMapPayload || '{}');
   } catch {
-    status.textContent = 'Ошибка данных карты (GEO_DATA).';
+    status.textContent = t('Ошибка данных карты (GEO_DATA).');
     return;
   }
   if (!payload.points?.length) return;
@@ -161,11 +163,11 @@ async function mount(root) {
       (lastProvider === 'google' ? 'GOOGLE_INIT' : 'YANDEX_IMPORT');
     root.dataset.mapError = code;
     const debug = new URLSearchParams(window.location.search).get('mapdebug') === '1';
-    status.textContent = 'Карта временно недоступна. Код: ' + code +
-      (debug ? '. ' + safeDetail(lastError) : '.');
+    status.textContent = t('Карта временно недоступна. Код: ' + code +
+      (debug ? '. ' + safeDetail(lastError) : '.'));
     if (retry) retry.hidden = false;
   } else {
-    status.textContent = 'Картографический API еще не настроен.';
+    status.textContent = t('Картографический API еще не настроен.');
   }
 }
 
@@ -261,3 +263,4 @@ function initMaps() {
 if (document.readyState === 'loading')
   document.addEventListener('DOMContentLoaded', initMaps, {once: true});
 else initMaps();
+

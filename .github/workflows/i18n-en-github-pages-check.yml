@@ -49,6 +49,8 @@ jobs:
       SITE_ORIGIN: https://alexyakovlev79.github.io
       SITE_BASE: /adatours-en/
       EN_STAGING_PAGES: '1'
+      EN_SHARED_CONTENT: '1'
+      EN_ACCEPTED_TRANSLATIONS_ROOT: ../translation-preview
       PUBLIC_EN_RELEASE: '0'
       EN_PILOT_PREVIEW: '0'
       MEDIA_CDN_ORIGIN: https://img.adatours.ru
@@ -69,36 +71,27 @@ jobs:
           sparse-checkout-cone-mode: false
       - uses: actions/checkout@v4
         with:
-          ref: main
-          path: production
+          repository: alexyakovlev79/adatours.ru
+          ref: 691306df7cdae1e1cb899cbac2bfc4dcbe781230
+          path: translation-preview
           sparse-checkout: |
-            /*
-            !/public/media/
+            data/i18n/translation-mass/v2/index.json
+            data/i18n/translation-mass/v2/state/1a.json
+            data/i18n/translation-mass/v2/jobs/1a.json
+            data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_rio_four_days_b001/en-rio-b001-word-20261102-v1.json
           sparse-checkout-cone-mode: false
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Restore immutable EN Tour text and verify all canonical sources
+      - name: Restore immutable EN Tour text and preserve canonical source identity
         shell: bash
         run: |
           set -euo pipefail
           test "$(git -C source-preview rev-parse HEAD)" = "ab27248954bb71fe6582bf796d73626ea8502d5f"
           mkdir -p website/data/i18n/pilot-previews/v1
           cp -a source-preview/data/i18n/pilot-previews/v1/. website/data/i18n/pilot-previews/v1/
-          cd website
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          import {createHash} from 'node:crypto';
-          for(const id of ['tour_brazil_rio_four_days','tour_chile_easter_island_3_days_2027','tour_colombia_essential_5_days']){
-            const map=JSON.parse(fs.readFileSync('data/i18n/block-maps/tours/'+id+'.json','utf8'));
-            if(createHash('sha256').update(fs.readFileSync('../production/'+map.sourceContentPath)).digest('hex')!==map.ruBlobSha256)
-              throw Error('Public RU Tour changed since EN translation: '+id);
-          }
-          import {verifyPrivateExcursionSourceFiles} from './src/lib/i18n/private-excursions.mjs';
-          import {verifyPrivateGeoSources} from './src/lib/i18n/private-geography.mjs';
-          if(await verifyPrivateExcursionSourceFiles('../production','.')!==11)throw Error('Outdated Excursion');
-          if(await verifyPrivateGeoSources('../production','.')!==7)throw Error('Outdated geography');
-          NODE
+          echo "ADA_CANONICAL_SHA=$(git -C website rev-parse HEAD)" >> "$GITHUB_ENV"
       - name: Build EN route tree at dedicated GitHub project base
         working-directory: website
         run: |
@@ -106,10 +99,9 @@ jobs:
           npm install --no-audit --no-fund
           node --check scripts/i18n/verify-en-pages-site.mjs
           node --check scripts/i18n/prepare-en-pages-site.mjs
-          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs
+          node --test tests/i18n/en-staging-site.test.mjs tests/i18n/en-pages-one-source.test.mjs tests/i18n/ru-fallback.test.mjs tests/i18n/progressive-locale.test.mjs tests/i18n/shared-*.test.mjs
           npx astro build
-          npx pagefind --site dist
-          node scripts/i18n/verify-en-pages-site.mjs dist
+          npx pagefind --site dist --force-language en
           node scripts/dedupe-site-shell.mjs dist --skip-en
           node scripts/i18n/prepare-en-pages-site.mjs dist ../en-pages-site
           node scripts/i18n/verify-ru-fallback-output.mjs ../en-pages-site
@@ -119,3 +111,12 @@ jobs:
           test ! -e en-pages-site/CNAME
           test ! -e en-pages-site/tours/index.html
           echo "Deployment is owned by the separate adatours-en Pages repository."
+
+
+      - name: Save actual shared translation and route coverage receipt
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: en-shared-translation-receipt
+          path: en-pages-site/translation-receipt.json
+          if-no-files-found: error

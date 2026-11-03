@@ -2,9 +2,10 @@
 import PlacePage,{getStaticPaths as sourcePaths} from '../../en-pilot-private/place/[slug].astro';
 import {enStagingSiteEnabled} from '../../../lib/i18n/en-staging-site.mjs';
 export async function getStaticPaths(){
- if(!enStagingSiteEnabled(process.env))return [];
+ if(!enStagingSiteEnabled(process.env) || process.env.EN_SHARED_CONTENT==='1')return [];
  return sourcePaths({allowStaging:true});
 }
 const props=Astro.props;
 ---
 <PlacePage {...props}/>
+

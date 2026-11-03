@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import {parse} from 'parse5';
 import {russianFallbackHtml,discoverRussianPages,stageRussianFallback} from '../../scripts/i18n/ru-fallback.mjs';
 
 const source=()=>[
@@ -55,6 +56,18 @@ test('canonical mirror keeps Hero, videos, lazy images, full search and safe vis
  assert.doesNotMatch(html,/data-ada-translation-notice|currently available in Russian/);
  assert.doesNotMatch(html,/data-lead-form|method="post"|application\/ld\+json|<link rel="canonical"|googletagmanager/);
 });
+test('route-map popups reuse canonical EN links without cloning or changing geographic data',()=>{
+ const payload={points:[{id:'rio',href:'/adatours-en/brazil/',coordinates:[-43.2,-22.9],image:'https://img.adatours.ru/media/rio.webp'}],route:['rio'],center:[-43.2,-22.9],zoom:8};
+ const input=source().replace('</body>',`<section data-geo-map-payload='${JSON.stringify(payload)}'></section></body>`);
+ const html=russianFallbackHtml(input,'/',new Set(['/','/brazil/','/tours/','/about/','/multi-country/','/vip/']));
+ let encoded;
+ const walk=node=>{const a=node.attrs?.find(a=>a.name==='data-geo-map-payload');if(a)encoded=a.value;for(const child of node.childNodes??[])walk(child)};
+ walk(parse(html));
+ const actual=JSON.parse(encoded);
+ assert.equal(actual.points[0].href,'/adatours-en/en/brazil/');
+ actual.points[0].href=payload.points[0].href;
+ assert.deepEqual(actual,payload);
+});
 test('all public canonical RU routes mirror exactly once and old aliases are excluded',()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ada-full-stage-'));
  const dist=path.join(dir,'dist'),out=path.join(dir,'out');
@@ -92,3 +105,4 @@ test('non-Russian HTML and incomplete source are rejected',()=>{
   assert.throws(()=>stageRussianFallback({dist:dir,output:path.join(dir,'out')}),/Incomplete RU build|Unsafe output/);
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
 });
+

@@ -1,5 +1,6 @@
 ---
 import { withBase } from '../../lib/paths';
+import { translateUiText } from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface Props {
   href?: string;
@@ -23,7 +24,7 @@ const resolvedHref = opensLeadModal ? '#request' : withBase(href);
   href={resolvedHref}
   data-lead-modal={opensLeadModal ? 'true' : undefined}
 >
-  <span>{label}</span>
+  <span>{translateUiText(label)}</span>
   <span aria-hidden="true">↗</span>
 </a>
 
@@ -86,3 +87,4 @@ const resolvedHref = opensLeadModal ? '#request' : withBase(href);
     background: var(--cta-fill-photo-hover);
   }
 </style>
+

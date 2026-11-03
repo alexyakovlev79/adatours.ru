@@ -2,6 +2,9 @@
 import { withBase } from '../../lib/paths';
 import { countLabel } from '../../lib/interest-model.mjs';
 import { nextMultiCountryOptions } from '../../lib/multi-country-combinations.mjs';
+import { getCollection } from 'astro:content';
+import { sharedUiLocale,translateUiText,sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
+import { uiText,countInEnglish } from '../../lib/i18n/messages.mjs';
 
 import { getMultiCountryCatalog } from '../../lib/multi-country-catalog.ts';
 import { multiCountryPickerOptions, multiCountryCatalogPath } from '../../lib/multi-country-catalog.mjs';
@@ -9,8 +12,15 @@ import { multiCountryPickerOptions, multiCountryCatalogPath } from '../../lib/mu
 interface CountryOption { slug: string; name: string; }
 interface Props { selected?: string[]; themeId?: string; }
 const { selected = [], themeId } = Astro.props;
+const uiLocale = sharedUiLocale();
+const t = (text: string) => translateUiText(text,uiLocale);
 const index = await getMultiCountryCatalog();
-const { countries, combinations, interests, allInterestsHref } = multiCountryPickerOptions(index, selected, themeId);
+const { countries: sourceCountries, combinations, interests: sourceInterests, allInterestsHref } = multiCountryPickerOptions(index, selected, themeId);
+const translatedNames = uiLocale === 'en'
+  ? new Map((await getCollection('countries',({data}) => data.locale === 'ru')).map(({data}) => [data.slug,data.name]))
+  : new Map<string,string>();
+const countries = sourceCountries.map(country => ({...country,name:translatedNames.get(country.slug) ?? country.name}));
+const interests = sourceInterests.map(interest => ({...interest,label:sharedInterestName(interest.id,t(interest.label),uiLocale)}));
 const selectedInterest = interests.find((option) => option.id === themeId);
 const themeSlug = selectedInterest?.slug;
 const countryBySlug = new Map(countries.map((country) => [country.slug, country]));
@@ -23,12 +33,13 @@ const steps = [0, 1, 2, 3].map((index) => ({
     ? nextOptions(selected.slice(0, index)) : [],
   value: selected[index] ?? '',
 }));
-const descriptions = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна'];
+const descriptions = ['multi.firstCountry','multi.secondCountry','multi.thirdCountry','multi.fourthCountry']
+  .map(key => uiText(uiLocale,key));
 ---
 
 <section
   class="mc-picker container"
-  aria-label="Выбор сочетания стран"
+  aria-label={uiText(uiLocale,'multi.selectAria')}
   data-multi-country-picker
   data-root-href={withBase('/multi-country/')}
   data-countries={JSON.stringify(countries)}
@@ -39,8 +50,8 @@ const descriptions = ['Первая страна', 'Вторая страна', 
   data-current-root-href={withBase(multiCountryCatalogPath([], themeSlug))}
 >
   <div class="mc-picker__intro">
-    <p class="eyebrow">Страны маршрута</p>
-    <h3>Выберите сочетание стран</h3>
+    <p class="eyebrow">{uiText(uiLocale,'multi.routeCountries')}</p>
+    <h3>{uiText(uiLocale,'multi.choose')}</h3>
   </div>
   <div class="mc-picker__fields">
     {steps.map((step) => (
@@ -68,7 +79,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
               type="button"
               class="mc-picker__remove"
               data-mc-remove={step.index}
-              aria-label={'Убрать выбранную страну: ' + descriptions[step.index]}
+              aria-label={uiText(uiLocale,'multi.remove',{position:descriptions[step.index]})}
               hidden={!step.value}
             ><span aria-hidden="true">×</span></button>
           )}
@@ -77,7 +88,7 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     ))}
   </div>
   <div class="mc-picker__interest" data-filter-context="multi-country">
-    <label class="mc-picker__interest-label" for="mc-interest">Интерес</label>
+    <label class="mc-picker__interest-label" for="mc-interest">{uiText(uiLocale,'filter.interest')}</label>
     <div class="mc-picker__select-wrap">
       <select
         id="mc-interest"
@@ -85,32 +96,34 @@ const descriptions = ['Первая страна', 'Вторая страна', 
         data-mc-interest-select
         autocomplete="off"
       >
-        <option value="" disabled selected={!themeId} data-mc-interest-placeholder>Выбрать интерес</option>
-        <option value="all" data-href={withBase(allInterestsHref)} data-mc-interest-reset>Все интересы</option>
+        <option value="" disabled selected={!themeId} data-mc-interest-placeholder>{uiText(uiLocale,'filter.chooseInterest')}</option>
+        <option value="all" data-href={withBase(allInterestsHref)} data-mc-interest-reset>{uiText(uiLocale,'nav.allInterests')}</option>
         {interests.map((interest) => (
           <option
             value={interest.id}
             selected={interest.id === themeId}
             data-filter-option={interest.id}
             data-href={withBase(interest.href)}
-          >{interest.label} · {countLabel(interest.count)}</option>
+          >{interest.label} · {uiLocale === 'en' ? countInEnglish(interest.count,'tour','tours') : countLabel(interest.count)}</option>
         ))}
       </select>
-      <span class="mc-picker__placeholder-text" aria-hidden="true">{selectedInterest?.label ?? 'Выбрать интерес'}</span>
+      <span class="mc-picker__placeholder-text" aria-hidden="true">{t(selectedInterest?.label ?? 'Выбрать интерес')}</span>
       <svg class="mc-picker__select-arrow" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
         <path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
       </svg>
     </div>
     <noscript>
-      <nav class="mc-picker__interest-fallback" aria-label="Подобрать по интересу">
-        <a href={withBase(allInterestsHref)}>Все интересы</a>
+      <nav class="mc-picker__interest-fallback" aria-label={uiText(uiLocale,'multi.byInterest')}>
+        <a href={withBase(allInterestsHref)}>{uiText(uiLocale,'nav.allInterests')}</a>
         {interests.map((interest) => <a href={withBase(interest.href)}>{interest.label}</a>)}
       </nav>
     </noscript>
   </div>
     <a class="mc-picker__reset" href={withBase('/multi-country/')} data-mc-reset hidden={!selected.length && !themeId}>
-      <span>Сбросить и показать</span>
-      <span>все мультистрановые туры</span>
+      {uiLocale === 'en' ? <span>{uiText(uiLocale,'multi.reset')}</span> : <>
+        <span>Сбросить и показать</span>
+        <span>все мультистрановые туры</span>
+      </>}
     </a>
 
 </section>
@@ -295,3 +308,4 @@ const descriptions = ['Первая страна', 'Вторая страна', 
     .mc-picker__reset { width: min(100%, 480px); font-size: .9rem; }
   }
 </style>
+

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { uiText } from '../src/lib/i18n/messages.mjs';
 
 const source = (path) => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
 
@@ -76,7 +77,9 @@ test('footer puts Contacts before About and stays two-column on phones', () => {
 
 test('footer uses compact accessible WhatsApp and Telegram icons instead of text links', () => {
   const footer = source('src/components/global/SiteFooter.astro');
-  assert.match(footer, /class="footer__messengers" role="group" aria-label="Мессенджеры"/);
+  assert.match(footer, /class="footer__messengers" role="group" aria-label=\{uiText\(uiLocale,'contact.messaging'\)\}/);
+  assert.equal(uiText('ru','contact.messaging'),'Мессенджеры');
+  assert.equal(uiText('en','contact.messaging'),'Messaging apps');
   for (const platform of ['whatsapp', 'telegram']) {
     const label = platform === 'whatsapp' ? 'WhatsApp' : 'Telegram';
     assert.match(footer, new RegExp(`href=\\{ORG\\.${platform}Href\\}[^>]*aria-label="${label}"`));
@@ -103,3 +106,4 @@ test('footer messenger icons keep WhatsApp green and Telegram blue, including on
   assert.match(hovered, /border-color: var\(--messenger-color\);/);
   assert.doesNotMatch(hovered, /var\(--color-brand-deep\)/);
 });
+

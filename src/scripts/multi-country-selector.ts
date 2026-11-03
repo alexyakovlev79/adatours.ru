@@ -1,10 +1,12 @@
 // Progressive selection of 2–4 main countries.
 // Every completed selection resolves to an already generated static catalogue.
 import { removeMultiCountrySelection } from '../lib/multi-country-combinations.mjs';
+import { translateUiText } from '../lib/i18n/shared-ui-locale.mjs';
 
 interface CountryOption { slug: string; name: string; }
 
 for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country-picker]')) {
+  const locale = document.documentElement?.dataset?.adaSharedLocale === 'en' ? 'en' : 'ru';
   const countries = JSON.parse(picker.dataset.countries ?? '[]') as CountryOption[];
   const known = new Set(JSON.parse(picker.dataset.combinations ?? '[]') as string[]);
   const rootHref = picker.dataset.rootHref ?? '/multi-country/';
@@ -19,7 +21,8 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
   const fields = [...picker.querySelectorAll<HTMLElement>('[data-mc-field]')];
   const selects = [...picker.querySelectorAll<HTMLSelectElement>('[data-mc-select]')];
   const removeButtons = [...picker.querySelectorAll<HTMLButtonElement>('[data-mc-remove]')];
-  const placeholders = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна'];
+  const placeholders = ['Первая страна', 'Вторая страна', 'Третья страна', 'Четвертая страна']
+    .map(text => translateUiText(text,locale));
   const firstCountryState = 'adatours:multi-country-first';
   const pickerScrollState = 'adatours:multi-country-return-to-picker';
   let selected = JSON.parse(picker.dataset.selected ?? '[]') as string[];
@@ -189,3 +192,4 @@ for (const picker of document.querySelectorAll<HTMLElement>('[data-multi-country
     try { window.sessionStorage.removeItem(firstCountryState); } catch { /* Ignore. */ }
   });
 }
+

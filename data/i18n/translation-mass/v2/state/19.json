@@ -85,7 +85,86 @@
         "claimedAt": "2026-11-03T21:59:03.813Z",
         "expiresAt": "2026-11-03T23:29:03.813Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "en:bulk:tour:tour_argentina_experience_6_days:b007:cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-9f352bc9-20261104",
+        "token": "ada-en-token-9f352bc9f677-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_argentina_experience_6_days:b007",
+          "stableId": "tour_argentina_experience_6_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "056608f81bbbe30ac01d7de74959e39fc58dd2568bfe7bae0c91917d78583650",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:568cbf0e76ae4834",
+              "field": "media.alt",
+              "sourceTextSha256": "a0198587116fb012c4f3ace77dbe0e86731358f540b37b90aa31b7f2875a9206",
+              "text": "A city intersection and building facades in Buenos Aires, Argentina",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-9f352bc9-20261104",
+                "wordAbsenceReason": "The exact Word document contains itinerary and commercial text but no website image alt text or hover caption."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:913c2c51dca14b3c",
+              "field": "media.hover",
+              "sourceTextSha256": "30ad26d94adac1353efe8a73d69b599b52f525f9694f1db837285ef88f2178ff",
+              "text": "Buenos Aires: a broad avenue and tall buildings on a sunny day",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-9f352bc9-20261104",
+                "wordAbsenceReason": "The exact Word document contains itinerary and commercial text but no website image alt text or hover caption."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:69859f430c4109d6",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p14",
+                    "textSha256": "ed1ae5682b3c30d825d5cd9d5ca8ff50d2569dc83bd255604c720c0f64b4dda2"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the destination or activity label from the exact itinerary passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a252662a94c65d47",
+              "field": "itinerary.label",
+              "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+              "text": "Buenos Aires",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1DqJEzPdGv10lZLxmcdmkL5DytyR_OCgC",
+                "documentSha256": "7cb999c6c57177637722a6bca864e37b1c36ffeeb1ce09cd7a5cd7e8208ae469",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p14",
+                    "textSha256": "ed1ae5682b3c30d825d5cd9d5ca8ff50d2569dc83bd255604c720c0f64b4dda2"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the destination or activity label from the exact itinerary passage."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:00:42.714Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

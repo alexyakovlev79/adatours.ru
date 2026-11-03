@@ -200,7 +200,7 @@
         "expiresAt": "2026-11-03T23:53:43.757Z"
       },
       "checkpoint": {
-        "id": "sub-ada-en-20261104-2b52b0aa-6-cp4",
+        "id": "sub-ada-en-20261104-2b52b0aa-6-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-2b52b0aa",
         "token": "tok-2b52b0aa-1135-ada-en",
@@ -294,6 +294,54 @@
                   "transformation": "compose_tariff_summary",
                   "rationale": "Combines the Word group size, one FOC place, Batch 1 and per-pax USD basis as a tariff note without changing any price."
                 }
+              },
+              {
+                "blockId": "tour:note:4541ade74590048e",
+                "field": "note",
+                "sourceTextSha256": "b1ade7dd1bcf44b010440f4ed122f4730d8ab751120eeb44de665bfb1a6a2f66",
+                "text": "The package combines 5★ hotels and services. The general exclusions list treats accommodation as excluded unless it is quoted separately. Your individual quotation will confirm the package contents, specific hotels and accommodation terms.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The Word has a 5-star hotels-and-services table (p7) and a conditional accommodation exclusion (p56), but no reconciliation note explaining their relationship. Translated the current RU explanatory note and preserved the need for confirmation."
+                }
+              },
+              {
+                "blockId": "tour:note:e251152d423f5d8b",
+                "field": "note",
+                "sourceTextSha256": "0e8948ea7aff77bbdd152dffd822aae00e0cf80f3c69e47da9672955be526fbc",
+                "text": "Exact travel dates and hotel names have not been specified.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word provides neither exact travel dates nor hotel names and contains no sentence for this website note; translated the current RU note."
+                }
+              },
+              {
+                "blockId": "tour:note:9e55c6317995964a",
+                "field": "note",
+                "sourceTextSha256": "bb76080a2e245666d2908c2d8d4174ece2529b90ec591cd59d386b7da3ec514e",
+                "text": "Your meal plan includes additional lunches, dinners and Theme Party 1 in Rio / Theme Party 2 in Foz do Iguaçu that are not fully assigned to individual days. The dates and format of the themed dinners will be confirmed when you book.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word meal list p52 includes these meals and themed dinners, but contains no equivalent note about their incomplete allocation by day or booking confirmation; translated the current RU explanatory note."
+                }
+              },
+              {
+                "blockId": "tour:note:952f5361da522e4d",
+                "field": "note",
+                "sourceTextSha256": "185137d549478eb63b5da32325dcca8a8b970d197a53da92468c82a886e9d70d",
+                "text": "English-speaking assistance is provided for all listed transfers and excursions. Drinks with meals are charged separately.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word lists assistance at p54 and drinks as excluded at p56 but has no combined explanatory sentence corresponding to this RU website note; translated that note without changing either condition."
+                }
               }
             ],
             "sourceEvidence": {
@@ -326,7 +374,7 @@
             }
           }
         },
-        "at": "2026-11-03T22:24:56.558Z"
+        "at": "2026-11-03T22:25:01.010Z"
       },
       "submission": null,
       "review": null,

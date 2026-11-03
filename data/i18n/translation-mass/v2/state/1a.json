@@ -430,7 +430,7 @@
         "expiresAt": "2026-11-04T00:50:29.430Z"
       },
       "checkpoint": {
-        "id": "en:bulk:tour:tour_colombia_highlights_7_days:b009:cp4:821a3075",
+        "id": "en:bulk:tour:tour_colombia_highlights_7_days:b009:cp8:821a3075",
         "format": "inline-v1",
         "ownerId": "ada-en-821a3075e51e-worker",
         "token": "ada-en-821a3075e51e-token-20261104",
@@ -511,6 +511,61 @@
                 "runId": "ada-en-821a3075e51e-worker",
                 "wordAbsenceReason": "The exact Word names Isla Majagua for Day 6 but does not contain the current RU place label Isla Grande; preserve that label in translation and flag the naming difference for master review."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:1a90ec047faff93e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "620adb15945e5f918c51b0be668a32316a1b3de518e93b6e40e7df0ca136640e",
+              "text": "San Pedro de Majagua",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The assigned Word describes Isla Majagua but does not name San Pedro de Majagua, the current RU place label. Translate this explicit RU label and flag the naming difference for master review."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:efc6b37eb9dba5b9",
+              "field": "media.alt",
+              "sourceTextSha256": "22737ad02ce98683a80672b79e8a3ac29aef7f91b2aa44aa0b4618b64855ac9c",
+              "text": "The bow of a boat above clear water between green islets in the Rosario Islands, Colombia",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The assigned Word provides the island itinerary but no matching caption describing the boat bow and green islets in this website image."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:85b0fb0b66312bc2",
+              "field": "media.hover",
+              "sourceTextSha256": "777232ea21f02dbb574f1462fc209c44500a3103fa421ac2f6299d7df30dff65",
+              "text": "Rosario Islands, Colombia: the bow of a boat above clear water between green islets",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The assigned Word has no matching hover caption for the website photograph showing a boat bow and green islets."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+              "field": "itinerary.title",
+              "sourceTextSha256": "7dcb0589e8aa3840176a188da735e3a716c586c146b5f7a22301a6fba89a6a18",
+              "text": "Departure from Cartagena",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+                "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[112]",
+                    "textSha256": "c7236ea05729d7975a66dff36600364c089a849714da3e896f2f1579ef68f8de"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Form a concise departure-day title using the explicit Cartagena location and departure-flight context of the exact Word Day 7 passage."
+              }
             }
           ],
           "notes": [
@@ -528,7 +583,7 @@
             }
           ]
         },
-        "at": "2026-11-03T23:21:28.170Z"
+        "at": "2026-11-03T23:21:44.712Z"
       },
       "submission": null,
       "review": null,

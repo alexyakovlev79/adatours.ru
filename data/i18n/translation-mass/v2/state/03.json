@@ -195,7 +195,72 @@
         "claimedAt": "2026-11-03T22:32:23.619Z",
         "expiresAt": "2026-11-04T00:02:23.619Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "04dd2e-chile-b004-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-04dd2e696333-20261104",
+        "token": "ada-en-04dd2e696333-a7f39d12",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_argentina_private_grand_tour_17_days:b004",
+          "stableId": "tour_chile_argentina_private_grand_tour_17_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "41b86e2d6117708fcf065b003e71d4e5b7054038d3acef5d41a724f5f515d96d",
+          "blocks": [
+            {
+              "blockId": "tour:note:2976ddb6f7bad27a",
+              "field": "note",
+              "sourceTextSha256": "e82b2acdb9374f411c9c220920822f1a25277643bffc921169d4d05278eec637",
+              "text": "Specific dates, SGL/TPL rates and group size are not specified in the programme; prices for these options and travel dates are confirmed on request.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "The Word gives a double-occupancy starting price but contains no equivalent note covering unspecified dates, SGL/TPL rates and group size. Translate the frozen RU clarification without inventing rates or availability."
+              }
+            },
+            {
+              "blockId": "tour:note:031b859561996889",
+              "field": "note",
+              "sourceTextSha256": "d11e6c8013ecee65ddffa826f2816c037b6435148fcaaf8b8c91b18e13168f70",
+              "text": "VIK Chile is in Millahue, in the Cachapoal Valley. Maipo, Colchagua and Casablanca are named in the wine-day proposal; visiting all 3 valleys is not guaranteed until the itinerary is agreed.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word omits the corrected Millahue/Cachapoal location and the explicit condition that all three suggested wine valleys are not guaranteed. Translate the current RU clarification rather than repeating the outdated hotel-location entry."
+              }
+            },
+            {
+              "blockId": "tour:note:c371bd7e25e095cd",
+              "field": "note",
+              "sourceTextSha256": "456eee94f91fef04d4766e84b5e4fbcd366a3f873297f19c0cd81e6621b05b78",
+              "text": "The cost and inclusion of helicopter transfers, private wine-day dinners, access before parks open and other services beyond the summary list will be confirmed in your individual quotation. Private jet flights are expressly excluded from the base price.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word has optional-service descriptions and excludes private jets, but no complete equivalent of this cross-service confirmation condition. Translate the current RU note preserving its distinction between proposed extras and the base price."
+              }
+            },
+            {
+              "blockId": "tour:note:83d8f73b2e8141e9",
+              "field": "note",
+              "sourceTextSha256": "4ec80f614ebded1028a0c191eb285e5baa0af768805a99eb719bd62173cc757a",
+              "text": "Day 7 includes both sunset in the Valley of the Moon and an afternoon flight to Patagonia. The order and timing of these services will be agreed before booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-04dd2e696333-20261104",
+                "wordAbsenceReason": "Word describes the sunset excursion and afternoon flight but contains no explicit scheduling-reconciliation note. Translate the exact current RU clarification without resolving the timing by assumption."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:33:19.841Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

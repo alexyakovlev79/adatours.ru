@@ -119,138 +119,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b008",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "fa79708df2a97bcfb592748a752df3e4447714ec7fa504704e248ebf02f8b113",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-35901b4e-translator",
-        "token": "ada-en-35901b4e-20261104",
-        "claimedAt": "2026-11-03T22:18:50.152Z",
-        "expiresAt": "2026-11-03T23:48:50.152Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-35901b4e-p03-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-35901b4e-translator",
-        "token": "ada-en-35901b4e-20261104",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b008",
-            "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "fa79708df2a97bcfb592748a752df3e4447714ec7fa504704e248ebf02f8b113",
-            "blocks": [
-              {
-                "blockId": "tour:media_alt:f5626ccf77b16d53",
-                "field": "media.alt",
-                "sourceTextSha256": "333f54b4f515d39bd51743e4aa30a103312ee7c1b0d89675d9e664dfd866faac",
-                "text": "The statue of Christ the Redeemer on Corcovado above the green slopes of Rio, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has no corresponding image alternative text or hover caption."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:605960b45988818e",
-                "field": "media.hover",
-                "sourceTextSha256": "183d7a19a4488ca39d44e11c1028cc339651699149cc08e1ad0b4cdfacc09eea",
-                "text": "Corcovado: the statue of Christ and the viewing platform on the mountaintop",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has no corresponding image alternative text or hover caption."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
-                "field": "itinerary.title",
-                "sourceTextSha256": "2041a5d84c1658eab64dca52cca57b75505efdc303bf7dc4e9c4da694a8f9a1c",
-                "text": "Flight from Rio to Iguazu Falls",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word groups days and uses broader headings; this standalone RU title or place field has no matching dedicated Word block."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:ec46e3209ab74818",
-                "field": "itinerary.text",
-                "sourceTextSha256": "e647658fb6b515749bfe6ff230d60f95672f51fbadeaf982308faf9668930ada",
-                "text": "Day 4 · Breakfast and transfer to the airport for your flight to Foz do Iguaçu. Meeting and transfer to your hotel.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
-                  "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p90",
-                      "textSha256": "174d43ba5f300e60787aaa4d2c9a813518b3049beecdd84d23dc44803796ce72"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
-                "field": "itinerary.label",
-                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-                "text": "Rio de Janeiro",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word groups days and uses broader headings; this standalone RU title or place field has no matching dedicated Word block."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:4db8bacfd58af1c5",
-                "field": "itinerary.label",
-                "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
-                "text": "Foz do Iguaçu",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word groups days and uses broader headings; this standalone RU title or place field has no matching dedicated Word block."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:4bac385a0108d3d8",
-                "field": "media.alt",
-                "sourceTextSha256": "d0b1499feb786d9a583329b7fae971bbf4efa5447ad4236bc1179bf674516030",
-                "text": "Iguazu Falls from the Brazilian side",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has no corresponding image alternative text or hover caption."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:9d160262ccf40bb8",
-                "field": "itinerary.title",
-                "sourceTextSha256": "eefa4c79e12d85f26e721152aaa4c5fbe3f75c31a3e41af99c3da2fcb113ebf4",
-                "text": "The Brazilian side of Iguazu",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word groups days and uses broader headings; this standalone RU title or place field has no matching dedicated Word block."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:19:59.391Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-35901b4e-p03-v1",
+        "blobSha": "c654a06ea56676051594b86e832b3e2a4d178849",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_champions_parade_10_days_2027_b008/ada-en-35901b4e-p03-v1.json",
+        "at": "2026-11-03T22:20:03.200Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

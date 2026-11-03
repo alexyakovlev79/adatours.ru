@@ -31,159 +31,22 @@
     {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b014",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "f555c6e7a8820fe52db98abbcc0aef96a240efb362aae18ee1adca4135ed9a11",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-7963199f582c",
-        "token": "ada-en-20261104-7963199f582c-stable",
-        "claimedAt": "2026-11-03T21:50:15.898Z",
-        "expiresAt": "2026-11-03T23:20:15.898Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "agri-b014-8-v1",
-        "format": "inline-v1",
-        "ownerId": "ada-en-7963199f582c",
-        "token": "ada-en-20261104-7963199f582c-stable",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b014",
-            "stableId": "tour_argentina_agricultural_11_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "f555c6e7a8820fe52db98abbcc0aef96a240efb362aae18ee1adca4135ed9a11",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_label:b4a8fb07a9874860",
-                "field": "itinerary.label",
-                "sourceTextSha256": "c8e3c079cc71af8ca754de687e4749d84e091b2a89873851c8ad791c3789fc09",
-                "text": "Mar del Plata",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p115",
-                      "textSha256": "c739826e31f4ab1fb795e0fa3a85c53f346ae9a3d37cd9cef44778c09c868d37"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the departure place from the verified day heading and apply normal title case."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:ffe3d969b9d1dcee",
-                "field": "itinerary.label",
-                "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
-                "text": "Buenos Aires",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p115",
-                      "textSha256": "c739826e31f4ab1fb795e0fa3a85c53f346ae9a3d37cd9cef44778c09c868d37"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extract the arrival place from the verified day heading and apply normal title case."
-                }
-              },
-              {
-                "blockId": "tour:contentBlock_text:4f1154b6b47d6449",
-                "field": "contentBlock.text",
-                "sourceTextSha256": "329f68a6515a8467f87401f2902fbce536e524bfd23bf1cc5ecaff8d635e1980",
-                "text": "After breakfast, we will leave Mar del Plata for Buenos Aires, stopping for lunch along the way. The drive is approximately 410 km; the second part of the day is devoted to the capital and its cultural programme.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "Verified Word paragraphs 115–120 contain separate timed entries, not the current RU narrative combining the drive, lunch stop and allocation of the second part of the day; translate the frozen RU block."
-                }
-              },
-              {
-                "blockId": "tour:contentBlock_text:7c16661167e44cfb",
-                "field": "contentBlock.text",
-                "sourceTextSha256": "c062964d4707eda1aded438dce88b30af2efeb0d174428da7fb3e1961fc1b712",
-                "text": "We will introduce your group to the historic and modern neighbourhoods of Buenos Aires. We will arrange the order of stops and the length of the city tour around your arrival time from Mar del Plata.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "Verified Word paragraph 121 mentions historic and modern neighbourhoods, but does not contain the current RU operational commitment to agree the order and duration around arrival from Mar del Plata."
-                }
-              },
-              {
-                "blockId": "tour:contentBlock_text:c344f6845d8cb675",
-                "field": "contentBlock.text",
-                "sourceTextSha256": "74b97657b0aabdb2f6ec779e5cdc470ecffcbe391239c3076f2a6c3b1833ea20",
-                "text": "In the evening, we invite your group to a tango show in Buenos Aires. We will agree the venue and performance time when preparing your trip.",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "Verified Word paragraphs 120–121 mention a tango show but omit the current RU wording about agreeing the venue and performance time during trip preparation."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:037a0ef47dfb593a",
-                "field": "media.alt",
-                "sourceTextSha256": "f1f956fc29087bb1b28000cba9e3aab4e6ac08ac4c5c531fcf4ecd979092dc48",
-                "text": "The metal Floralis Genérica flower above a circular pool in Buenos Aires, Argentina",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "The complete verified Word document contains no image alternative text or description of the Floralis Genérica photograph; translate the frozen RU media.alt."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:0f442f6de3738a20",
-                "field": "media.hover",
-                "sourceTextSha256": "7606b750cbbb77fd6534a51d426c35a3816d2e46880d8ed8b7f40e4cd079a7d7",
-                "text": "Buenos Aires: the open steel petals of Floralis Genérica",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "ChatGPT",
-                  "runId": "ada-en-7963199f582c",
-                  "wordAbsenceReason": "The complete verified Word document contains no photograph hover caption for Floralis Genérica; translate the frozen RU media.hover."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:f4ed884c587c4b01",
-                "field": "itinerary.label",
-                "sourceTextSha256": "9d69b221d7332fdcf8a11a9b8d046d15960ef024d1a289170389db763a2f2ff2",
-                "text": "4 December 2026",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1tQCbdVLTHvEb_FFUpe9Bu8dVM_A1auiT",
-                  "documentSha256": "41d3a981abb90dec78476695a0b164ade2dc83337e294ca2b3e84069c216083b",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p5",
-                      "textSha256": "82df9efa747c8f08978e2392e3ef79e4db2dc286447ce7da5560bcd683f13ed4"
-                    },
-                    {
-                      "ref": "word/document.xml:p122",
-                      "textSha256": "808876852dc3a191536df74d4599eb24f2583078de8dfc55f07e1276c1544a0a"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Combine the verified 04 DEC day heading with the explicit 2026 programme date range; preserve the source year."
-                }
-              }
-            ]
-          },
-          "submissionId": "ada-en-7963199f582c-agri-b014-v1"
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:52:00.326Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-7963199f582c-agri-b014-v1",
+        "blobSha": "4e39b2cd51128fb157c0a2cca7d23ff8afe3c285",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_argentina_agricultural_11_days_b014/ada-en-7963199f582c-agri-b014-v1.json",
+        "at": "2026-11-03T21:56:01.086Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

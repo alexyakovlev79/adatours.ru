@@ -16,8 +16,8 @@
   "counts": {
     "held": 1595,
     "queued": 2354,
-    "leased": 7,
-    "review": 49,
+    "leased": 6,
+    "review": 50,
     "ready": 1,
     "retryable": 0,
     "blocked_external": 0,
@@ -28,8 +28,8 @@
     "word_2027": {
       "held": 0,
       "queued": 2354,
-      "leased": 7,
-      "review": 49,
+      "leased": 6,
+      "review": 50,
       "ready": 1,
       "retryable": 0,
       "blocked_external": 0,
@@ -192,8 +192,8 @@
         "word_2027": {
           "held": 0,
           "queued": 78,
-          "leased": 1,
-          "review": 0,
+          "leased": 0,
+          "review": 1,
           "ready": 0,
           "retryable": 0,
           "blocked_external": 0,
@@ -223,7 +223,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": "2026-11-03T23:20:15.898Z",
+      "earliestExpiryAt": null,
       "earliestRetryAt": null
     },
     "15": {
@@ -1224,12 +1224,6 @@
       "expiresAt": "2026-11-03T22:42:58.566Z",
       "generation": 1
     },
-    "ada-en-7963199f582c": {
-      "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b014",
-      "token": "ada-en-20261104-7963199f582c-stable",
-      "expiresAt": "2026-11-03T23:20:15.898Z",
-      "generation": 1
-    },
     "ada-en-04dd2e696333-20261104": {
       "jobId": "en:bulk:tour:tour_argentina_agricultural_11_days:b015",
       "token": "ada-en-04dd2e696333-a7f39d12",
@@ -1445,7 +1439,9 @@
       "jobIds": [
         "en:bulk:tour:tour_argentina_agricultural_11_days:b014"
       ],
-      "completedJobIds": []
+      "completedJobIds": [
+        "en:bulk:tour:tour_argentina_agricultural_11_days:b014"
+      ]
     },
     "ada-en-20261104-935f-translator": {
       "token": "ada-en-935f-bxatc0v89fh-mw180til",
@@ -1476,5 +1472,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T21:55:47.903Z"
+  "updatedAt": "2026-11-03T21:56:01.086Z"
 }

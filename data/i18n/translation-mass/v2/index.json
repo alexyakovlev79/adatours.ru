@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2242,
-    "leased": 26,
+    "queued": 2241,
+    "leased": 27,
     "review": 142,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2242,
-      "leased": 26,
+      "queued": 2241,
+      "leased": 27,
       "review": 142,
       "ready": 1,
       "retryable": 0,
@@ -105,8 +105,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 61,
-          "leased": 0,
+          "queued": 60,
+          "leased": 1,
           "review": 1,
           "ready": 0,
           "retryable": 0,
@@ -137,7 +137,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T00:02:30.271Z",
       "earliestRetryAt": null
     },
     "12": {
@@ -1480,6 +1480,12 @@
       "token": "ada-en-04dd2e696333-a7f39d12",
       "expiresAt": "2026-11-04T00:02:23.619Z",
       "generation": 1
+    },
+    "ada-en-f0410042e63344c3": {
+      "jobId": "en:bulk:tour:tour_brazil_agribusiness_14_days:b002",
+      "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
+      "expiresAt": "2026-11-04T00:02:30.271Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2090,7 +2096,8 @@
       "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
       "jobIds": [
         "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b009",
-        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b016"
+        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b016",
+        "en:bulk:tour:tour_brazil_agribusiness_14_days:b002"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b009",
@@ -2123,5 +2130,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:32:23.619Z"
+  "updatedAt": "2026-11-03T22:32:30.271Z"
 }

@@ -62,183 +62,22 @@
     {
       "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b009",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "b59b0cee2fc92e8cc8d899ff874ebf0340dfd771e12b2a53b6d949d70ba22de2",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "claimedAt": "2026-11-03T21:18:08.771Z",
-        "expiresAt": "2026-11-03T22:48:08.771Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "sub-ddc12b513de4-tour_bolivia_chile_hidden_treasures_16_days-b009-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-20261104-ddc12b513de4",
-        "token": "tok-ddc12b513de4-20261104",
-        "generation": 1,
-        "payload": {
-          "submissionId": "sub-ddc12b513de4-tour_bolivia_chile_hidden_treasures_16_days-b009",
-          "result": {
-            "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b009",
-            "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "b59b0cee2fc92e8cc8d899ff874ebf0340dfd771e12b2a53b6d949d70ba22de2",
-            "blocks": [
-              {
-                "blockId": "tour:itinerary_text:ec46e3209ab74818",
-                "field": "itinerary.text",
-                "sourceTextSha256": "456772f12b5e47ed9ff924e714a328fa178ed2f651079d6a49133d18de10c566",
-                "text": "1 January. Early departure in 4x4 vehicles, Lexus or similar. The journey across the Altiplano and the Chilean border to San Pedro de Atacama takes approximately 8–9 hours. Transfer to the hotel on arrival. In the evening, an astronomical tour lasting 1.5–2 hours.\n\nAccommodation: Nayara Alto Atacama, Tilo Suite, breakfast (BB)",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-20261104-ddc12b513de4",
-                  "wordAbsenceReason": "Word paragraphs 89–91 contain the detailed crossing and accommodation but no equivalent short dated summary; translated the frozen RU summary, retaining its date, timings and hotel."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:e7b2affdd6e9f0e2",
-                "field": "itinerary.label",
-                "sourceTextSha256": "da1eb150ed67b377bf160e5ccd2ff403d5419f7f5304bf95ca5c19c8c311c26f",
-                "text": "Uyuni",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p36",
-                      "textSha256": "62362f693568eff2b84906d5e5a162eb0cd32b7210b27217af1338a4442321ac"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the exact named location from the Word Altiplano itinerary and accommodation table."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:601dd0d50c7642d7",
-                "field": "itinerary.label",
-                "sourceTextSha256": "a2437ad64a13f47651a346701797464bd6dafd1f56db4b5797abe9678f100546",
-                "text": "Laguna Colorada",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p89",
-                      "textSha256": "c37054502e1512f309332e3e57b50720d34f7a0cdeedd8d756f72c00597f261c"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the exact named location from the Word Altiplano itinerary and accommodation table."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:222f9977a260bce6",
-                "field": "itinerary.label",
-                "sourceTextSha256": "7ba2245c1d20bfc0221f7b8fe414e0ef19bf64cbc040112a68bee8b43e75ee63",
-                "text": "Sol de Mañana Geysers",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p89",
-                      "textSha256": "c37054502e1512f309332e3e57b50720d34f7a0cdeedd8d756f72c00597f261c"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the exact named location from the Word Altiplano itinerary and accommodation table."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:1542e80256ab44c5",
-                "field": "itinerary.label",
-                "sourceTextSha256": "7fadc62d04f941fe742fccb6bbea3e830542b53a1190d20ca79a58653c355624",
-                "text": "Polques Hot Springs",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p89",
-                      "textSha256": "c37054502e1512f309332e3e57b50720d34f7a0cdeedd8d756f72c00597f261c"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the exact named location from the Word Altiplano itinerary and accommodation table."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:a73db0fdcb4b4c77",
-                "field": "itinerary.label",
-                "sourceTextSha256": "52e673c576b561408a6a20bff59c245cb4348fc49a4e51776ed4a8d216942f46",
-                "text": "Laguna Blanca",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p89",
-                      "textSha256": "c37054502e1512f309332e3e57b50720d34f7a0cdeedd8d756f72c00597f261c"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the exact named location from the Word Altiplano itinerary and accommodation table."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:cd14d4588f87ea65",
-                "field": "itinerary.label",
-                "sourceTextSha256": "74f2893f4c7859605ce1e1795d0443cc6e335542a7afcf1a66a37852ed1f4bb5",
-                "text": "Laguna Verde",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p89",
-                      "textSha256": "c37054502e1512f309332e3e57b50720d34f7a0cdeedd8d756f72c00597f261c"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the exact named location from the Word Altiplano itinerary and accommodation table."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:abb70811b9c09917",
-                "field": "itinerary.label",
-                "sourceTextSha256": "fd8adf20dd0e63ebdd9bac344859f1179034492e7d4ab1a14ede04f52a3d4c09",
-                "text": "San Pedro de Atacama",
-                "provenance": {
-                  "kind": "word_aligned",
-                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p180",
-                      "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
-                    }
-                  ],
-                  "transformation": "contextual_label",
-                  "rationale": "Extracted the exact named location from the Word Altiplano itinerary and accommodation table."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T21:19:03.320Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-ddc12b513de4-tour_bolivia_chile_hidden_treasures_16_days-b009",
+        "blobSha": "3f660b8a91874ebd8462aa3dd6d68951e91168f7",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_bolivia_chile_hidden_treasures_16_days_b009/sub-ddc12b513de4-tour_bolivia_chile_hidden_treasures_16_days-b009.json",
+        "at": "2026-11-03T21:19:07.041Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

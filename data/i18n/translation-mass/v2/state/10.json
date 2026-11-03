@@ -287,138 +287,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b004",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "bc2e6a54a9c8447660cf22bfdb05863569d2093d1383c811a38ab70161bcc5de",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-35901b4e-translator",
-        "token": "ada-en-35901b4e-20261104",
-        "claimedAt": "2026-11-03T22:09:12.794Z",
-        "expiresAt": "2026-11-03T23:39:12.794Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-en-35901b4e-b004-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-35901b4e-translator",
-        "token": "ada-en-35901b4e-20261104",
-        "generation": 1,
-        "payload": {
-          "result": {
-            "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b004",
-            "stableId": "tour_brazil_dunes_13d",
-            "locale": "en",
-            "status": "review",
-            "releaseEligible": false,
-            "sourceFingerprint": "bc2e6a54a9c8447660cf22bfdb05863569d2093d1383c811a38ab70161bcc5de",
-            "blocks": [
-              {
-                "blockId": "tour:media_alt:578fa16908febc84",
-                "field": "media.alt",
-                "sourceTextSha256": "39188741e64f969225aab1b9095d24d879da2d03c45fd99402627b1794e309db",
-                "text": "A broad city beach in Rio de Janeiro beside a waterfront lined with high-rise buildings, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has no corresponding image alternative text or hover caption."
-                }
-              },
-              {
-                "blockId": "tour:media_hover:62c5dcfa8d22adea",
-                "field": "media.hover",
-                "sourceTextSha256": "05d9d2e474a16f35f2beaeb79fafaaccac15393c411e5f15915d00111c93a770",
-                "text": "Rio de Janeiro: sandy coastline between the ocean and city neighbourhoods",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has no corresponding image alternative text or hover caption."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_title:ca0a4d6daf445776",
-                "field": "itinerary.title",
-                "sourceTextSha256": "481c16acf49479894e742c378894d6b04ef077cf73b381c6ad098309cf07196e",
-                "text": "Corcovado and Tijuca Forest",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word combines Days 2–3 under a different heading; no standalone Corcovado and Tijuca Forest title."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_text:569e72e117968fcc",
-                "field": "itinerary.text",
-                "sourceTextSha256": "4425b0f6eb96e635e8b9ee036050acfdb14fa3ba2e9d42f90a45ec4deaf079c7",
-                "text": "Day 2 · After a tropical breakfast, head out to the world-famous statue of Christ the Redeemer on Corcovado. A specially designed train climbs from the foot of the mountain through the Tijuca rainforest, where you may spot toucans, monkeys and other tropical wildlife. At the summit, 710 metres above sea level, stands the iconic 38-metre statue, with a stunning panorama of the whole city, so high up that you seem to fly with the birds: from Guanabara Bay and Maracanã Stadium to Sugar Loaf, Copacabana, Ipanema and Gávea Mountain.",
-                "provenance": {
-                  "kind": "word_exact",
-                  "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
-                  "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
-                  "paragraphs": [
-                    {
-                      "ref": "word/document.xml:p79",
-                      "textSha256": "1fbf988062ffab4a3e63b7f5edfe70a722fdd323bdda4d46a79b1337bd8e1996"
-                    }
-                  ]
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:a2054c0b08f050b3",
-                "field": "itinerary.label",
-                "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-                "text": "Rio de Janeiro",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Standalone RU place label; Word provides no separate corresponding place-label field."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:0aacbf591e8ace21",
-                "field": "itinerary.label",
-                "sourceTextSha256": "374e8eaf7052e9a6ec6d718e7cce6728c5c8d482c6929a5874441302d9187ba2",
-                "text": "Corcovado",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Standalone RU place label; Word provides no separate corresponding place-label field."
-                }
-              },
-              {
-                "blockId": "tour:itinerary_label:8efa37692dad81c5",
-                "field": "itinerary.label",
-                "sourceTextSha256": "21f46b8ec047bab4c066136eab21526012e247b693a2fc209cc4b18c6b40d271",
-                "text": "Tijuca",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Standalone RU place label; Word provides no separate corresponding place-label field."
-                }
-              },
-              {
-                "blockId": "tour:media_alt:5ad7b01f20974747",
-                "field": "media.alt",
-                "sourceTextSha256": "3a4544dfe5fd5f005dd6ba2cc90f2425a02964dc421a527e30674ef64d189a46",
-                "text": "A man in red clothing sits on the colourful Selarón Steps in Rio de Janeiro, Brazil",
-                "provenance": {
-                  "kind": "ai_translation",
-                  "model": "GPT-6",
-                  "runId": "ada-en-35901b4e",
-                  "wordAbsenceReason": "Word has no corresponding image alternative text or hover caption."
-                }
-              }
-            ]
-          }
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:10:33.152Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-en-35901b4e-b004-v1",
+        "blobSha": "30f0790100d9d6ad8bed4d273938a4d01e3284e8",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_dunes_13d_b004/ada-en-35901b4e-b004-v1.json",
+        "at": "2026-11-03T22:10:49.753Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

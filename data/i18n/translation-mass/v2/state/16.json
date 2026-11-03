@@ -283,7 +283,7 @@
         "expiresAt": "2026-11-03T23:40:56.296Z"
       },
       "checkpoint": {
-        "id": "ada-en-33c6be7dc0f7453f.s001.c04",
+        "id": "ada-en-33c6be7dc0f7453f.s001.c08",
         "format": "inline-v1",
         "ownerId": "ada-en-33c6be7dc0f7453f",
         "token": "217cfc0e8d7c4209ac5aeee7ea2c8d35",
@@ -432,10 +432,98 @@
                 "runId": "ada-en-33c6be7dc0f7453f",
                 "wordAbsenceReason": "The Word has '3 excursions' but no standalone product-format field; this exact RU format label is translated without adding a count."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:4a164ba69a23450a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "645da6888d53e61714344efe96cc144d93ead86e4ce0624aaccaea44a622dd5c",
+              "text": "Rio de Janeiro — 5 nights",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p8",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  },
+                  {
+                    "ref": "word/document.xml:p23",
+                    "textSha256": "319234cb461d022f28a1e0e3badce32a7b1d1a2a01195275b2ad04715d212d75"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the route stop from the Word destination and five-night duration without changing either value."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6f6cfcf8368aee17",
+              "field": "itinerary.label",
+              "sourceTextSha256": "647385bae542a2702b1f7086c35748435b1beab1877346f50655d54101e44796",
+              "text": "Corcovado and Tijuca rainforest",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p75",
+                    "textSha256": "46cd6d0366323a016d0154471f6176288226504a207dcf44826393e8652bb95b"
+                  },
+                  {
+                    "ref": "word/document.xml:p76",
+                    "textSha256": "2f5533b1d70b2b135a2bbfd2ca009554217f3210b14af415fccaaa56dae79964"
+                  }
+                ],
+                "transformation": "condense_route_label",
+                "rationale": "Condense the verified Corcovado day passage into the existing route label, retaining both named places."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:e3ccca1ec98da297",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d1d6ad3d93c84ab81a1e10135223a832dc756c803aaa2e29fb8510a789f796c1",
+              "text": "Sugar Loaf Mountain and Urca Hill",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p84",
+                    "textSha256": "add1dc8c52b3984d141d5e995b41d64362753de9362a4bb51c8de51204f3e540"
+                  },
+                  {
+                    "ref": "word/document.xml:p85",
+                    "textSha256": "6fb1ec40cbd1808d33b595da4f800015c60e4ca6c42eb7d1e6046a654e7a0089"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the route label from the Word mountain heading and cable-car stop at Urca Hill."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:9b532bb1c3c2ffeb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "29ad432564cd69d3c0eb5aaa928363a110bebfa13f0b0471f0818f31bb143e52",
+              "text": "Angra dos Reis and Ilha Grande",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p96",
+                    "textSha256": "8322a3f2a8edaadce62406900c54bc04b9d23561e4db634fbc2630446d5bb32b"
+                  }
+                ],
+                "transformation": "condense_route_label",
+                "rationale": "Condense the Word Day 4 passage to the two named route destinations without adding activities."
+              }
             }
           ]
         },
-        "at": "2026-11-03T22:12:52.639Z"
+        "at": "2026-11-03T22:13:27.220Z"
       },
       "submission": null,
       "review": null,

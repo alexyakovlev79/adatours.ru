@@ -457,7 +457,7 @@
         "expiresAt": "2026-11-04T00:44:19.857Z"
       },
       "checkpoint": {
-        "id": "ada-en-4406908c67fe-1104-p10-4",
+        "id": "ada-en-4406908c67fe-1104-p10-8",
         "format": "inline-v1",
         "ownerId": "ada-en-4406908c67fe-1104",
         "token": "ada-en-token-4406908c67fe",
@@ -584,11 +584,87 @@
                   "transformation": "contextual_label",
                   "rationale": "Compose the concise itinerary title or place label from the exact Word headings for this day."
                 }
+              },
+              {
+                "blockId": "tour:contentBlock_text:e25987390ed18f4b",
+                "field": "contentBlock.text",
+                "sourceTextSha256": "b5cdfc15204a41dffba0857e20ac9f13327471691b40b3fbc517d158e2257fdb",
+                "text": "After Macuco Safari, enjoy lunch at a restaurant inside the park. A video recording of the boat excursion can be ordered on request.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "Word mentions lunch in the park and ordering a DVD, but the current RU restaurant and video-booking formulation has no exact Word block; preserve the existing RU details.",
+                  "wordEvidence": {
+                    "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                    "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p18",
+                        "textSha256": "7e9ebb436a93c38132fd5ab9a1428df0af7ff2840b913f1e02a9835133db9544"
+                      },
+                      {
+                        "ref": "word/document.xml:p21",
+                        "textSha256": "ad87bbcf9842defb44481dbf06011c3c9a2a0d1a7fca0de4fe00b4ec2b4bd96d"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "tour:contentBlock_text:13abd949f2f5716f",
+                "field": "contentBlock.text",
+                "sourceTextSha256": "f33e99226d9e7e592abf424e3b4b1c6721356849a58ba45aa9f71a91b8127a98",
+                "text": "You can also book a 10-minute helicopter flight over the falls, canyon and tropical rainforest. The flight conditions and price are confirmed separately.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "Word confirms a 10-minute helicopter flight but omits the current RU separate confirmation of flight conditions and price and the full landscape label; retain those existing RU conditions.",
+                  "wordEvidence": {
+                    "fileId": "1OjRiPSPoTQYsE0qMkwMdfU1322Y8i9al",
+                    "documentSha256": "8aff49617df11225648e7bdef48d69b4fd25c7b7a713b3372743dbefa27d1df0",
+                    "paragraphs": [
+                      {
+                        "ref": "word/document.xml:p34",
+                        "textSha256": "3dfac3f36be44c884db8f45818f514f2cba9f38a431fad147a354f65c0248d9f"
+                      },
+                      {
+                        "ref": "word/document.xml:p35",
+                        "textSha256": "9375c9759aef2e71e0260099c1cc9d734510748aeda3e0f585719fe72d8cd1fb"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "blockId": "tour:media_alt:4da0f5dcad21642a",
+                "field": "media.alt",
+                "sourceTextSha256": "6f5e2e13ca03d7a9db0f6aaf75867354ad17f87cded378ce76cb2db724f9573e",
+                "text": "Visitors on a viewing walkway among the Iguazu Falls",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word document has no corresponding image alternative text."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:73860420aaee4069",
+                "field": "media.hover",
+                "sourceTextSha256": "96c290069d9ae49afbd0a974217c19fa142fe7659861ed13feffc6677bf46cbf",
+                "text": "Iguazu: a viewing walkway above cascades of falling water",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-4406908c67fe-1104",
+                  "wordAbsenceReason": "The verified Word document has no corresponding image hover description."
+                }
               }
             ]
           }
         },
-        "at": "2026-11-03T23:15:15.441Z"
+        "at": "2026-11-03T23:15:25.358Z"
       },
       "submission": null,
       "review": null,

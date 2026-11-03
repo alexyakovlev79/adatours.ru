@@ -73,7 +73,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
  }
  const linkTo=href=>{
   if(!href||/^(?:https?:|mailto:|tel:|javascript:)/i.test(href))return href;
-  if(href==='#request'||href==='#lead-form')return sharedContent?href:'mailto:info@adatours.ru';
+  if(href==='#request'||href==='#lead-form')return sharedContent?'#request':'mailto:info@adatours.ru';
   if(href.startsWith('#')||href.startsWith('//')||href.startsWith('?'))return href;
   // HTML and authored Markdown can contain either withBase links or clean
   // absolute RU paths. Resolve both from the same canonical route allowlist.
@@ -85,7 +85,7 @@ export function russianFallbackHtml(source,route,known,{sharedContent=false,enti
    return EN_STAGING_BASE+rel;
   if(rel.startsWith('media/'))return 'https://img.adatours.ru/'+rel;
   const i=rel.search(/[?#]/),pathname=i===-1?rel:rel.slice(0,i),suffix=i===-1?'':rel.slice(i);
-  if(suffix==='#request'||suffix==='#lead-form')return sharedContent?EN_STAGING_BASE+'en/'+normal(pathname).slice(1)+suffix:'mailto:info@adatours.ru';
+  if(suffix==='#request'||suffix==='#lead-form')return sharedContent?EN_STAGING_BASE+'en/'+normal(pathname).slice(1)+'#request':'mailto:info@adatours.ru';
   const target=normal(pathname);
   return known.has(target)?EN_STAGING_BASE+'en/'+target.slice(1)+suffix:'https://adatours.ru/'+rel;
  };

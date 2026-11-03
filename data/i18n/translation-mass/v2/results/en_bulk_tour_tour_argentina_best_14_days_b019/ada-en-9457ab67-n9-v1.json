@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_argentina_best_14_days:b019",
+  "stableId": "tour_argentina_best_14_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "10ce15582b73949b88f1f9dd3617502a4c27c0ada0a32cfb6f4c6183f05afa35",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+      "field": "itinerary.title",
+      "sourceTextSha256": "712c08f89621dde92bbc02b05ab79b49cc107ee3c55ca60e40d3b1b2b2cbc58a",
+      "text": "Iguazú → Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+        "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p113",
+            "textSha256": "0978a05c651db94a57ec538b102e6bcf667c170c187a9a514f1e2839a8f34715"
+          },
+          {
+            "ref": "word/document.xml#p118",
+            "textSha256": "06a55e240abc6ed34d93af52333b5aa15fe53df925848e03e22de29e200b431c"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Composed the transfer heading using the exact Word Iguazú label and return-flight destination."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_text:173cf987634ed90a",
+      "field": "itinerary.text",
+      "sourceTextSha256": "1d2835750ad2d3231a9fbd22418f507f5a8f86fa121533d34949932c3b834a95",
+      "text": "Breakfast at the hotel. At the scheduled time, transfer to Argentina’s IGR airport for your flight to Buenos Aires. On arrival, transfer to the 4-star 474 Buenos Aires Hotel. The flight is payable separately. Spend your final night in the capital.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-9457ab67-20261104",
+        "wordAbsenceReason": "Word paragraph118 combines Days13–14 and omits the current RU breakfast, scheduled-time and IGR details. The hotel and final night are in paragraphs154–157, and flight exclusion in120; translated the current RU transfer wrapper with those facts unchanged."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2e9aae17d0a7d02c",
+      "field": "itinerary.label",
+      "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+      "text": "Foz do Iguaçu",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-9457ab67-20261104",
+        "wordAbsenceReason": "The verified Word refers to the Brazilian side of Iguazú but does not contain this distinct Brazilian city label; translated the current RU place label without substituting Puerto Iguazú."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1f678393a30d3f1e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "5b9fa0dc8001808c1d848887ec6d2d744b283e06ecf78068dac9933f8a9d5740",
+      "text": "Puerto Iguazú",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+        "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p149",
+            "textSha256": "2e20689ae9b945b78658eff381b2cd70db74d13021c9c1b55dfd20091415dbb1"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:208366df5b21a36f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+        "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p66",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:media_alt:fbf7e167406934ee",
+      "field": "media.alt",
+      "sourceTextSha256": "2a20f4bd03ba124f29df710fde305cb3a212a84f1a9b8c34617e0a9e138960f7",
+      "text": "Powerful streams of Iguazu Falls plunging over a rocky cliff",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-9457ab67-20261104",
+        "wordAbsenceReason": "No corresponding image-specific alt text exists in the verified Word. Translated the current RU alt text."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:6770cb544f414080",
+      "field": "media.hover",
+      "sourceTextSha256": "6cb2360dd113894373796ce56cda7ff13f79f8c5880940c408de5b4dbdf18d52",
+      "text": "Iguazu Falls: broad streams of water and spray above the gorge",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-9457ab67-20261104",
+        "wordAbsenceReason": "No exact image-hover caption in the verified Word; translated the current RU caption."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:d514d6f2e1b0214a",
+      "field": "itinerary.title",
+      "sourceTextSha256": "a96433c9549f2c193dd94c0681e6012de98d67667d9c23a8268b87d4da8c76e2",
+      "text": "Buenos Aires: departure",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1KbvQKYTq3UYSQuBCRbvjvxv0-kAx0igy",
+        "documentSha256": "0612abba285db9917be89860efc045fe68dda196030c4a038b47b2a55e27d3a2",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p118",
+            "textSha256": "06a55e240abc6ed34d93af52333b5aa15fe53df925848e03e22de29e200b431c"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Used the exact Word final-day Buenos Aires departure statement as a concise current itinerary heading."
+      }
+    }
+  ]
+}

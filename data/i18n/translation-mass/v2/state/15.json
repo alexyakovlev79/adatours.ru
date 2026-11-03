@@ -544,7 +544,94 @@
         "claimedAt": "2026-11-03T22:27:05.920Z",
         "expiresAt": "2026-11-03T23:57:05.920Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "submit-98cdd875f4b9-2-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-98cdd875f4b9",
+        "token": "token-98cdd875f4b9-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_jewish_heritage_8_days:b003",
+          "stableId": "tour_brazil_rio_iguazu_jewish_heritage_8_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "0dafed288a1b6ea42c80acfb1ea386cf3466f54ae96048a5e56be8a1f20bdc41",
+          "blocks": [
+            {
+              "blockId": "tour:note:ddcc0fd7f17cd110",
+              "field": "note",
+              "sourceTextSha256": "ab64c2db4bef5e8f5d5d29a9af111947da441b5cdf9ff44cc163fcf1bcdf4f7f",
+              "text": "Specific departure dates and group size are not stated in the programme.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word gives the programme year but no fixed departure dates or specific group size; this is an editorial RU note."
+              }
+            },
+            {
+              "blockId": "tour:note:d34ce2524e7c0033",
+              "field": "note",
+              "sourceTextSha256": "ae394e20d933b441b49d7f7517a8af0c18f8e42310a03180b186dd73795fcdf9",
+              "text": "SGL, 2 SGL, DBL and TRP rates are retained in separate columns. The designation 2 SGL is reproduced as it appears in the source table.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word table has SGL, 2 SGL, DBL and TRP columns, but contains no corresponding explanatory prose; translate the RU editorial note."
+              }
+            },
+            {
+              "blockId": "tour:highlight_title:a54c21c6d69bb0d2",
+              "field": "highlight.title",
+              "sourceTextSha256": "e20e1bf71d719907411f0e2f0deaa1b9b28771514b5a9082837d8a750d5e783b",
+              "text": "Rio from two summits",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p77",
+                    "textSha256": "f12b1d9b7d26eb1d543ae302cada86219f8825d0aa2ae9d9fc88d789e51a4cf9"
+                  },
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "da50011c8162af39620f015e8672d4b17652d1c3a0b2ae55f09cc744c074d052"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
+              }
+            },
+            {
+              "blockId": "tour:highlight_text:c7b270410b677f5c",
+              "field": "highlight.text",
+              "sourceTextSha256": "efd34949c8a1a1e5d3990b89d3fe454fa875eb4691c0d33cb67a400a01b0a038",
+              "text": "A cable car ride up Sugar Loaf and a train through Tijuca Forest to the statue of Christ the Redeemer.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZK21WEdaOaTY1ngD9oMcSJPCe2GGAeZ3",
+                "documentSha256": "2de202444701bf30940afc31a6a18da4c3664a6869798953170c9a33b8ca48e1",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p77",
+                    "textSha256": "f12b1d9b7d26eb1d543ae302cada86219f8825d0aa2ae9d9fc88d789e51a4cf9"
+                  },
+                  {
+                    "ref": "word/document.xml:p78",
+                    "textSha256": "da50011c8162af39620f015e8672d4b17652d1c3a0b2ae55f09cc744c074d052"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:29:52.357Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2295,
-    "leased": 19,
+    "queued": 2294,
+    "leased": 20,
     "review": 96,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2295,
-      "leased": 19,
+      "queued": 2294,
+      "leased": 20,
       "review": 96,
       "ready": 1,
       "retryable": 0,
@@ -1270,24 +1270,41 @@
       "count": 120,
       "stages": {
         "word_2027": {
-          "queued": 71,
           "held": 0,
-          "leased": 0,
-          "retryable": 0
+          "queued": 70,
+          "leased": 1,
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "word_2026": {
-          "queued": 0,
           "held": 17,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         },
         "ai_only": {
-          "queued": 0,
           "held": 32,
+          "queued": 0,
           "leased": 0,
-          "retryable": 0
+          "review": 0,
+          "ready": 0,
+          "retryable": 0,
+          "blocked_external": 0,
+          "stale_source": 0,
+          "failed_final": 0
         }
-      }
+      },
+      "earliestExpiryAt": "2026-11-03T23:44:54.037Z",
+      "earliestRetryAt": null
     }
   },
   "activeOwners": {
@@ -1391,6 +1408,12 @@
       "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b008",
       "token": "217cfc0e8d7c4209ac5aeee7ea2c8d35",
       "expiresAt": "2026-11-03T23:44:47.951Z",
+      "generation": 1
+    },
+    "ada-en-7226a7c037aa-20261104": {
+      "jobId": "en:bulk:tour:tour_argentina_best_14_days:b015",
+      "token": "tok-7226a7c037aa-en-20261104",
+      "expiresAt": "2026-11-03T23:44:54.037Z",
       "generation": 1
     }
   },
@@ -1831,7 +1854,8 @@
       "token": "tok-7226a7c037aa-en-20261104",
       "jobIds": [
         "en:bulk:tour:tour_colombia_explorer_9_days:b004",
-        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b002"
+        "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b002",
+        "en:bulk:tour:tour_argentina_best_14_days:b015"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_colombia_explorer_9_days:b004",
@@ -1850,5 +1874,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:14:47.951Z"
+  "updatedAt": "2026-11-03T22:14:54.037Z"
 }

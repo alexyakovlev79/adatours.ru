@@ -178,7 +178,7 @@
         "expiresAt": "2026-11-04T00:54:36.776Z"
       },
       "checkpoint": {
-        "id": "cp-daf0a8173bbc-08-4",
+        "id": "cp-daf0a8173bbc-08-8",
         "format": "inline-v1",
         "ownerId": "ada-en-daf0a8173bbc-20261104",
         "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
@@ -253,10 +253,86 @@
                 "runId": "ada-en-daf0a8173bbc-20261104",
                 "wordAbsenceReason": "The selected Word describes the dunes and lagoons but contains no matching alt caption for this specific photograph. Translate the current RU media description."
               }
+            },
+            {
+              "blockId": "tour:media_hover:b06ac1fb9c3114f7",
+              "field": "media.hover",
+              "sourceTextSha256": "d12b197fc95cc33c50693fd373a30f6bd50fcdb697d830374ebc281f1aeff5b7",
+              "text": "Lençóis Maranhenses, Brazil: an aerial pattern of sand ridges and lagoons",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "The selected Word contains no hover caption for the aerial arrangement of dune ridges and lagoons in this photo. Translate the current RU hover text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ab3fd6cac362f6b0",
+              "field": "itinerary.title",
+              "sourceTextSha256": "c5e101ac42cbff6e3fbc9fc150b821d101583b65882f7e03a5f499417e5bef93",
+              "text": "Barreirinhas – Vassouras – Atins",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p154",
+                    "textSha256": "fd74233577dcd6d14d91668feb61af13788591c1addc509d29db50ec36cbf16b"
+                  },
+                  {
+                    "ref": "word/document.xml#p115",
+                    "textSha256": "1a444a8ff6c7bd6cea0ef2051e3f37b415ebce0b81838e4da783cc65a4584bbf"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the existing three-stop route label from the Word town name and its Preguicas River itinerary, retaining Vassouras and Atins as documented stops."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+              "field": "itinerary.text",
+              "sourceTextSha256": "6a609cf4ee02cb42e2e5b9ff5f69e96a6f249b92cb5768f14b6e4655d5481be7",
+              "text": "After breakfast, at 08:30, a motorboat trip down the Preguiças River. Stop at Vassouras, the “Pequenos Lençóis”, for coconut water and photos of the monkeys that live there, then visit a small fishing village and climb the 160 steps of the Mandacaru lighthouse for beautiful views over the dunes, the river, the ocean and the local vegetation. Continue to the village of Atins; the rest of the day is free.\n\nOn arrival, check in. Overnight at the Jura guesthouse.\n\nToday you see Lençóis Maranhenses from the water. The route follows the river past riverside vegetation and small settlements instead of crossing the sand on foot. From the lighthouse you can see the river, dunes and the Atlantic Ocean together.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-daf0a8173bbc-20261104",
+                "wordAbsenceReason": "Word p115 provides the river itinerary and is retained verbatim after removing its Day 9 presentation prefix. The current RU Jura-guesthouse overnight and closing landscape paragraph are absent from the Word and translated as explicit gaps; no hotel is changed.",
+                "wordEvidence": {
+                  "kind": "word_exact",
+                  "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                  "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml#p115",
+                      "textSha256": "1a444a8ff6c7bd6cea0ef2051e3f37b415ebce0b81838e4da783cc65a4584bbf"
+                    }
+                  ]
+                },
+                "transformation": "strip_day_marker_and_append_ru_gaps"
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7911ba75e3896d54",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6e667fb5a9e887789091966d624a2699b5d59d30110d7cf750f4f74b79565fb0",
+              "text": "Barreirinhas",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1cXyYulnCISJMfY5PoktYUUhgPEkhHl69",
+                "documentSha256": "415eba81b797a74a6ceecfc98f207526f0f696d5225b7100f4ae8620d4db57f4",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p154",
+                    "textSha256": "fd74233577dcd6d14d91668feb61af13788591c1addc509d29db50ec36cbf16b"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:26:04.433Z"
+        "at": "2026-11-03T23:26:08.688Z"
       },
       "submission": null,
       "review": null,

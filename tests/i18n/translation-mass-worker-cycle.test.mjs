@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {MAX_AUTOMATIC_CYCLES,runEnMassWorkerCycle}
+import {MAX_AUTOMATIC_CYCLES,MAX_INLINE_RETRIES,runEnMassWorkerCycle}
  from '../../scripts/i18n/translation-mass-worker-cycle.mjs';
 
 const identity={ownerId:'one_translator',token:'stable_token'};
@@ -58,6 +58,70 @@ test('one translator claims the next job only after commit and stops after exact
  assert.equal((await runEnMassWorkerCycle({}, {},f.runner,{
   action:'start',...identity})).status,'cycle_limit_reached');
 });
+
+test('more than three temporary failures still acquire work, without changing identity',async()=>{
+ const f=fake(),waits=[];let attempts=0;
+ const runner=async(t,c,a)=>{
+  if(a.action==='claim'&&attempts++<5){
+   assert.equal(a.ownerId,identity.ownerId);assert.equal(a.token,identity.token);
+   return{status:attempts%2?'transport_retryable':'cas_contention',retryAfterMs:5000};
+  }
+  return f.runner(t,c,a);
+ };
+ const out=await runEnMassWorkerCycle({}, {},runner,{action:'start',...identity},
+  {sleep:async ms=>waits.push(ms),random:()=>0});
+ assert.equal(out.status,'next_claimed');assert.equal(attempts,6);
+ assert.equal(waits.length,5);assert.ok(waits.every(ms=>ms>=5000));
+});
+
+test('retry budget yields a continuation; the next call can submit the same result once',async()=>{
+ const f=fake(),first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
+ const args={action:'finish',...identity,jobId:first.next.jobId,generation:1,
+  submissionId:'unchanged_submission',result:{blocks:[{text:'Saved English'}]}};
+ let attempts=0;
+ const runner=async(t,c,a)=>{
+  if(a.action==='submit'&&attempts++<MAX_INLINE_RETRIES){
+   assert.equal(a.submissionId,args.submissionId);assert.equal(a.result,args.result);
+   return{status:'transport_retryable',retryAfterMs:5000};
+  }
+  return f.runner(t,c,a);
+ };
+ const pending=await runEnMassWorkerCycle({}, {},runner,args,{sleep:async()=>{}});
+ assert.equal(pending.status,'retry_pending');assert.equal(pending.resume.action,'finish');
+ assert.equal(f.state.submitCount,0);assert.equal(f.state.claimCount,1);
+ const saved=await runEnMassWorkerCycle({}, {},runner,args,{sleep:async()=>{}});
+ assert.equal(saved.submission.status,'saved_for_review');assert.equal(f.state.submitCount,1);
+});
+
+test('busy queue is retried while stage drain requires confirmed zero counts',async()=>{
+ const f=fake();let claims=0;
+ const runner=async(t,c,a)=>a.action==='claim'&&claims++<4
+  ?{status:'busy_or_empty',stageCounts:{queued:1,leased:5,retryable:0}}
+  :f.runner(t,c,a);
+ const out=await runEnMassWorkerCycle({}, {},runner,{action:'start',...identity},{sleep:async()=>{}});
+ assert.equal(out.status,'next_claimed');assert.equal(claims,5);
+ const drained=await runEnMassWorkerCycle({}, {},async(t,c,a)=>a.action==='claim'
+  ?{status:'busy_or_empty',stageCounts:{queued:0,leased:0,retryable:0}}
+  :f.runner(t,c,a),{action:'start',...identity},{sleep:async()=>assert.fail('No polling drained stage')});
+ assert.equal(drained.status,'next_unavailable');assert.equal(drained.reason.status,'stage_drained');
+});
+
+test('rate limits return timed continuation and never sleep or retry immediately',async()=>{
+ const f=fake();let claims=0;
+ const out=await runEnMassWorkerCycle({}, {},async(t,c,a)=>a.action==='claim'
+  ?(claims++,{status:'rate_limited',retryAfterMs:120000}):f.runner(t,c,a),
+  {action:'start',...identity},{sleep:async()=>assert.fail('No hot rate-limit retry')});
+ assert.equal(out.status,'retry_pending');assert.equal(out.retryAfterMs,120000);
+ assert.equal(claims,1);assert.equal(out.resume.action,'start');
+});
+
+test('temporary status read failures are retried before a claim',async()=>{
+ const f=fake();let reads=0;
+ const out=await runEnMassWorkerCycle({}, {},async(t,c,a)=>a.action==='status'&&reads++<4
+  ?{status:'transport_retryable'}:f.runner(t,c,a),
+  {action:'start',...identity},{sleep:async()=>{}});
+ assert.equal(out.status,'next_claimed');assert.equal(reads,5);
+});
 test('failed submit never claims another packet',async()=>{
  const f=fake();
  const first=await runEnMassWorkerCycle({}, {},f.runner,{action:'start',...identity});
@@ -65,7 +129,8 @@ test('failed submit never claims another packet',async()=>{
  const out=await runEnMassWorkerCycle({}, {},f.runner,{
   action:'finish',...identity,jobId:first.next.jobId,
   generation:first.next.generation,submissionId:'submission_1',result:{}});
- assert.equal(out.status,'submit_not_confirmed');
+ assert.equal(out.status,'retry_pending');
+ assert.equal(out.resume.action,'finish');
  assert.equal(f.state.claimCount,1);
  assert.equal(f.state.completed,0);
 });
@@ -76,7 +141,8 @@ test('lost next-claim leaves committed receipt and start resumes without resubmi
  const out=await runEnMassWorkerCycle({}, {},f.runner,{
   action:'finish',...identity,jobId:first.next.jobId,
   generation:1,submissionId:'submission_1',result:{}});
- assert.equal(out.status,'next_unavailable');
+ assert.equal(out.status,'retry_pending');
+ assert.equal(out.resume.action,'start');
  assert.equal(out.submission.status,'saved_for_review');
  assert.equal(f.state.submitCount,1);
  f.state.failClaim=false;
@@ -137,3 +203,4 @@ test('start reclaims the same unfinished assigned packet and exposes its saved c
  assert.equal(resumed.next.checkpoint.payload.blocks[0].text,'partial EN');
  assert.equal(f.state.claimCount,1);
 });
+

@@ -1,6 +1,59 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {runEnMassTranslation} from '../../scripts/i18n/translation-mass-remote.mjs';
+import * as core from '../../scripts/i18n/translation-mass-core.mjs';
+
+test('lost update_ref response confirms committed head without a second mutation',async()=>{
+ const jobId='en:bulk:tour:test:b001',sid=core.massShard(jobId);
+ const ownerId='worker_one',token='stable_token',time='2026-11-03T21:00:00Z';
+ const shard={schemaVersion:2,shardId:sid,items:[{jobId,stage:'word_2027',
+  status:'leased',sourceFingerprint:'fingerprint',generation:1,attempts:0,
+  lease:{ownerId,token,expiresAt:'2026-11-03T22:00:00Z'}}]};
+ const index={schemaVersion:2,pilotOnly:false,publicationEnabled:false,
+  dispatcherEnabled:true,translationMassLaunchAllowed:true,stage:'word_2027',
+  jobCount:1,shards:{[sid]:core.massShardSummary(shard)},
+  activeOwners:{[ownerId]:{jobId,token,expiresAt:'2026-11-03T22:00:00Z'}}};
+ let head='a'.repeat(40),mutations=0,files;
+ const next='b'.repeat(40);
+ const ok=x=>({result:x});
+ const mock={
+  mcp__GitHub__fetch:async({url})=>ok({content:JSON.stringify(url.includes('/git/commits/')
+   ?{tree:{sha:'c'.repeat(40)}}:{object:{sha:head}})}),
+  mcp__GitHub__fetch_file:async({path})=>ok(path.startsWith('src/content/')
+   ?{sha:'d'.repeat(40),content:'RU'}:{content:JSON.stringify(path.endsWith('/index.json')
+    ?index:path.includes('/state/')?shard:{shardId:sid,jobs:[{jobId,
+     sourceFingerprint:'fingerprint',source:{contentPath:'src/content/tours/test.md',
+      sourceBlobSha:'d'.repeat(40)}}]})}),
+  mcp__GitHub__create_tree:async a=>{files=a.tree_elements;return ok({sha:'e'.repeat(40)})},
+  mcp__GitHub__create_commit:async()=>ok({sha:next}),
+  mcp__GitHub__update_ref:async a=>{
+   assert.equal(a.force,false);assert.equal(a.expected_sha,head);
+   mutations++;head=next;throw Error('GithubGraphQLAPIError: internal server error');
+  }
+ };
+ const out=await runEnMassTranslation(mock,core,{action:'renew',ownerId,token,
+  jobId,generation:1,now:time});
+ assert.equal(out.status,'renewed');assert.equal(out.commit,next);assert.equal(mutations,1);
+ assert.equal(files.length,2);
+ assert.equal(JSON.parse(files.find(x=>x.path.endsWith('/index.json')).content)
+  .activeOwners[ownerId].expiresAt,'2026-11-03T22:30:00.000Z');
+});
+test('GitHub transport and internal GraphQL errors are resumable, not external job blockers',async()=>{
+ for(const message of ['GithubGraphQLAPIError: Something went wrong executing query',
+  'Transport closed','503 Service unavailable','ECONNRESET']){
+  const out=await runEnMassTranslation({mcp__GitHub__fetch:async()=>{throw Error(message)}},
+   {},{action:'claim',ownerId:'worker_one',token:'stable_token'});
+  assert.equal(out.status,'transport_retryable');assert.equal(out.retryable,true);
+ }
+});
+test('permission failures are not silently retried and 429 is a timed continuation',async()=>{
+ const mock=message=>({mcp__GitHub__fetch:async()=>{throw Error(message)}});
+ await assert.rejects(runEnMassTranslation(mock('403 Forbidden: permission denied'),{},
+  {action:'claim',ownerId:'worker_one',token:'stable_token'}),/permission denied/);
+ const limited=await runEnMassTranslation(mock('429 too many requests'),{},
+  {action:'claim',ownerId:'worker_one',token:'stable_token'});
+ assert.equal(limited.status,'rate_limited');assert.equal(limited.retryAfterMs,60000);
+});
 test('bulk connector rejects any QA/publish action without touching GitHub',async()=>{
  await assert.rejects(runEnMassTranslation({}, {},{action:'approve'}),/Unsupported worker action/);
  await assert.rejects(runEnMassTranslation({}, {},{action:'publish'}),/Unsupported worker action/);
@@ -85,3 +138,4 @@ test('checkpoint survives a lost GitHub reply via one-file shard CAS, without re
  assert.equal(treeWrites,0);
  assert.equal(JSON.parse(stateText).items[0].checkpoint.payload.blocks[0].text,'Recovered');
 });
+

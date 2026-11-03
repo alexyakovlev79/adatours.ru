@@ -177,7 +177,108 @@
         "claimedAt": "2026-11-03T22:27:44.591Z",
         "expiresAt": "2026-11-03T23:57:44.591Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-40d0e44e-002-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-40d0e44eb57848bf",
+        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_gems_14d:b011",
+          "stableId": "tour_brazil_gems_14d",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "d5a58ea6794252749aed658deaf70ad31114ae3805c9865d5161bd86c4d494b7",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_title:359c7c25395d1837",
+              "field": "itinerary.title",
+              "sourceTextSha256": "847e1ec33fb2dcb1705f1c39ddf483aff5a1f5edaf6692b2f7976f6d02c7862b",
+              "text": "Praia do Forte – Salvador – Foz do Iguaçu",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p132",
+                    "textSha256": "bac996f98c263ab40272ee5e4c28b646d71df8e555993fa715cd35eec21d723d"
+                  },
+                  {
+                    "ref": "word/document.xml:p136",
+                    "textSha256": "98512296d588a986d7bf178f71dd4faf22401bedea64123a92c60f933c771037"
+                  },
+                  {
+                    "ref": "word/document.xml:p141",
+                    "textSha256": "885cb9ce4069dee1256b419930a7140badd52bea66943dfa306e73ef506fa0e9"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Compose the route heading from the Word day section and its stated Salvador to Foz do Iguaçu flight."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:5a8704e80dc128a8",
+              "field": "itinerary.text",
+              "sourceTextSha256": "c65583e87a847470077283786a7437b14e2d8568516f0aabf81a31d462ee1184",
+              "text": "After breakfast, transfer to the airport for your flight to Foz do Iguaçu, where your driver meets you for the transfer to your hotel; the rest of the day is at leisure.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p136",
+                    "textSha256": "98512296d588a986d7bf178f71dd4faf22401bedea64123a92c60f933c771037"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Remove only the Day 11 list prefix because this field already belongs to itinerary day 11."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:2590b971f5e6cec1",
+              "field": "itinerary.label",
+              "sourceTextSha256": "d2d9b935b8fc39e0f02e4699d868bf8453c6fee3968649832a8a948a8c185c71",
+              "text": "Praia do Forte",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p132",
+                    "textSha256": "bac996f98c263ab40272ee5e4c28b646d71df8e555993fa715cd35eec21d723d"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Praia do Forte place name from the Word itinerary section heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:dd3d5ad5a79da557",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f9638d61817f45d50d040b52a87ec567129101d4db5cae07f76ef5c5174219b6",
+              "text": "Salvador",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p141",
+                    "textSha256": "885cb9ce4069dee1256b419930a7140badd52bea66943dfa306e73ef506fa0e9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact Salvador place name from the Word flight exclusion for this itinerary section."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:28:53.567Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

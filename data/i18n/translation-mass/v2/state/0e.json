@@ -266,7 +266,7 @@
         "expiresAt": "2026-11-04T00:46:07.083Z"
       },
       "checkpoint": {
-        "id": "submit-98cdd875f4b9-7-cp4",
+        "id": "submit-98cdd875f4b9-7-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-98cdd875f4b9",
         "token": "token-98cdd875f4b9-20261104",
@@ -348,10 +348,70 @@
                   }
                 ]
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:a597bd40dafaf878",
+              "field": "itinerary.label",
+              "sourceTextSha256": "5aa9aa4604e906ece67469262f0e90160f3be7a97894813d76ed000b12f40587",
+              "text": "Rocinha",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p157",
+                    "textSha256": "1fb44f4e07b3c06c092878811e8f2805d5befcc6933cd030072fcfeaf12e32f8"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the exact Word itinerary evidence to express the corresponding concise heading or summary."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1hHW-AYy4WdTIjIgU3WOQCdzy9KHpcFKU",
+                "documentSha256": "1e4cc3f3dd2684b4c9684fb3561525413a2484cb2df0bf809e62515222b5949e",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p7",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:74dbac8fcac564bb",
+              "field": "media.alt",
+              "sourceTextSha256": "7a5051979a13716c111454fdbb7e60065d869569b0ac89173c8181082f119ffc",
+              "text": "A rocky shore and sailboats in Guanabara Bay, Rio de Janeiro, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word has no corresponding image alternative text; translate the current RU media description."
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "75f3b12b5aa186002e975a581c834aa3a21752f32afc0e50571a34900ceac0ce",
+              "text": "The Sugar Loaf cable car above Guanabara Bay — illustration",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The verified Word has no corresponding image alternative text; translate the current RU media description."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:16:35.210Z"
+        "at": "2026-11-03T23:16:39.515Z"
       },
       "submission": null,
       "review": null,

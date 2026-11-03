@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2233,
-    "leased": 25,
+    "queued": 2232,
+    "leased": 26,
     "review": 152,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2233,
-      "leased": 25,
+      "queued": 2232,
+      "leased": 26,
       "review": 152,
       "ready": 1,
       "retryable": 0,
@@ -625,8 +625,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 70,
-          "leased": 0,
+          "queued": 69,
+          "leased": 1,
           "review": 8,
           "ready": 0,
           "retryable": 0,
@@ -657,7 +657,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T00:33:09.387Z",
       "earliestRetryAt": null
     },
     "05": {
@@ -1468,6 +1468,12 @@
       "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
       "expiresAt": "2026-11-04T00:32:35.411Z",
       "generation": 1
+    },
+    "ada-en-daf0a8173bbc-20261104": {
+      "jobId": "en:bulk:tour:tour_brazil_gems_14d:b004",
+      "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
+      "expiresAt": "2026-11-04T00:33:09.387Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2040,7 +2046,8 @@
       "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
       "jobIds": [
         "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b006",
-        "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b010"
+        "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b010",
+        "en:bulk:tour:tour_brazil_gems_14d:b004"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b006",
@@ -2131,5 +2138,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T23:03:02.823Z"
+  "updatedAt": "2026-11-03T23:03:09.387Z"
 }

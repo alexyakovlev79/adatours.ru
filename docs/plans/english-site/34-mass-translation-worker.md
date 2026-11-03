@@ -58,6 +58,14 @@ translationMassLaunchAllowed=true при publicationEnabled=false.
    Для части, которой реально нет в Word, перевести текущий RU
    без выдуманных фактов; provenance=ai_translation с
    wordAbsenceReason. В AI-only не искать похожий Word заново.
+   **Обязательное решение владельца от 03.11.2026:** в RU-derived
+   блоках Tour и самостоятельных Excursion язык оказания услуги
+   «на русском языке» / «русскоговорящий» / «русский гид» передавать как
+   `English` / `English-speaking guide` и соответствующие естественные
+   EN-формулировки. Правило не действует на дословный утверждённый
+   Word 2027-блок и на гражданство, визы, культуру, личность и названия.
+   Точные примеры, обработка Word 2026 и provenance — §4.1
+   `docs/plans/english-site/03-translation-editorial.md`.
 3. Не изменять цену, валюту, отель, количество дней,
    опубликованный русский Tour MD, общий Hero или медиа.
    Точное изменение Word 2027 тарифа передать отдельным
@@ -76,6 +84,10 @@ translationMassLaunchAllowed=true при publicationEnabled=false.
    Независимый reviewer читает точный immutable result
    и сверяет Word, смысл, факты, голос Ada Tours, структуру
    и связи. QA API: scripts/i18n/translation-mass-qa.mjs.
+   В смысловую QA входит проверка специального правила языка
+   гида/экскурсии: в RU-derived частях `Russian-speaking` не
+   сохраняется, в дословных Word 2027-блоках ничего не подменяется;
+   `Russian` о гражданстве, России или культуре не считается ошибкой.
 8. Если Word или Drive недоступен, помечать blocked_external
    (не фантазировать исходник). При изменении RU — stale_source.
    При 429 уважать Retry-After и не делать горячие повторы.

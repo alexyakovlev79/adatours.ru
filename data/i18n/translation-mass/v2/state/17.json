@@ -246,7 +246,7 @@
         "expiresAt": "2026-11-04T00:46:15.709Z"
       },
       "checkpoint": {
-        "id": "en:bulk:tour:tour_brazil_gems_14d:b005:cp4:821a3075",
+        "id": "en:bulk:tour:tour_brazil_gems_14d:b005:cp8:821a3075",
         "format": "inline-v1",
         "ownerId": "ada-en-821a3075e51e-worker",
         "token": "ada-en-821a3075e51e-token-20261104",
@@ -325,10 +325,79 @@
                 "runId": "ada-en-821a3075e51e-worker",
                 "wordAbsenceReason": "The assigned Word document has no text describing this website image or its beach-volleyball alt caption."
               }
+            },
+            {
+              "blockId": "tour:media_hover:397280d43e917380",
+              "field": "media.hover",
+              "sourceTextSha256": "85b1233a1eab69092686acfa881560ecb9492a18c4447be9a56cb46e950638f9",
+              "text": "Rio de Janeiro: a volleyball court on the sand beside green mountains",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The exact assigned Word document has no caption for this beach-volleyball photograph or the website hover text."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "c12824af46fcca25c27e09ae170ca466e9b624957f98b4769678f96435b26e78",
+              "text": "Rio de Janeiro – Petrópolis – Ouro Preto",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[86]",
+                    "textSha256": "42eff331c99a2202f0d9a4ad36589a0bfc89ee1b9b7c3b2b97f36c02376553fb"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Remove the DAY BY DAY section prefix and restore title case for the matching three-place route heading."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "c568be9fa68989f964887b38d1c5c4ab7f4e4be604591f6e8197f788f28abb59",
+              "text": "After breakfast, leave Rio de Janeiro for Petrópolis, a historic mountain town about 60 km from the city. Known as the Imperial City, Petrópolis was chosen by Emperor Pedro II as the summer residence of the imperial family, a cooler retreat from Rio’s tropical climate.\n\nOn a guided visit, explore the Imperial Museum, housed in the former summer palace, with its remarkable collection of royal furnishings, personal belongings and precious objects, including the imperial crown, and the beautiful Gothic cathedral, where members of the imperial family are buried. Then continue to Minas Gerais and the historic town of Ouro Preto, where you spend the night.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[90]",
+                    "textSha256": "ed3e5aac9f4c2dab68534c2e626b7e720cb81ac1eb6c9547d7a604ce811406a7"
+                  },
+                  {
+                    "ref": "word/document.xml:p[91]",
+                    "textSha256": "1c75e4a94a5d259121c13f2fec92c10d26a95e617ba358c6c1e3b1cc595fe6df"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:1b7ac15bbf82b0ae",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "16NqiEGIeCV-f-TajYQA5HsQ7SXiaszyI",
+                "documentSha256": "eff683625139b7fb68f7a8e6a81c50760fcb53071ab959f47fb27cffbdf7a8c9",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[37]",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:19:00.621Z"
+        "at": "2026-11-03T23:19:17.344Z"
       },
       "submission": null,
       "review": null,

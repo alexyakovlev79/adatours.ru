@@ -64,7 +64,7 @@
         "expiresAt": "2026-11-03T23:29:42.093Z"
       },
       "checkpoint": {
-        "id": "agro-b012-4-v1",
+        "id": "agro-b012-8-v1",
         "format": "inline-v1",
         "ownerId": "ada-en-7963199f582c",
         "token": "ada-en-20261104-7963199f582c-stable",
@@ -125,12 +125,81 @@
                   "runId": "ada-en-7963199f582c",
                   "wordAbsenceReason": "The complete verified Word contains no photograph hover caption for this waterfall image; translate the frozen RU media.hover."
                 }
+              },
+              {
+                "blockId": "tour:itinerary_title:2db7ac1630ae3e02",
+                "field": "itinerary.title",
+                "sourceTextSha256": "ad97dc4a1e5fdc6659d604122dd46cd62a80a1b2186ad83941e7579d59e53d52",
+                "text": "Foz do Iguaçu — São Paulo",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p91",
+                      "textSha256": "c0c8c526940a63356a61089051b4ecc9758b6c010e2a6d0e23c617560f7d14f5"
+                    }
+                  ],
+                  "transformation": "compose_route_label",
+                  "rationale": "Remove the day number from the verified Day 13 heading and format its unchanged route with an em dash."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:173cf987634ed90a",
+                "field": "itinerary.text",
+                "sourceTextSha256": "fd9716c19a3778df932a0c0a33ae523cd5e459093d529c5dad184035a2f42672",
+                "text": "After breakfast, transfer to the airport for your flight to São Paulo. On arrival, transfer to the hotel and check in.",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-7963199f582c",
+                  "wordAbsenceReason": "Verified Word paragraph 92 contains breakfast and both transfers but omits the explicit hotel check-in in this current RU block; translate the complete current RU wording without adding flight inclusion."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:2e9aae17d0a7d02c",
+                "field": "itinerary.label",
+                "sourceTextSha256": "25c6586a1d4a1e1936bb6c06455c208035612c9ea9ab7f372286d6daa9df6507",
+                "text": "Foz do Iguaçu",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p91",
+                      "textSha256": "c0c8c526940a63356a61089051b4ecc9758b6c010e2a6d0e23c617560f7d14f5"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the exact departure city from the verified Day 13 route heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:48a726eca2626128",
+                "field": "itinerary.label",
+                "sourceTextSha256": "23f31c0033acb824ecf53cd40a02291bcebe4d9eec803f4ecf7a9b3d6b9cbaca",
+                "text": "São Paulo",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1Ot3vZZKbdw7lpVeOZQjbZXvCNHM3B0BN",
+                  "documentSha256": "b9d3a30497469b04e78a903e25519bb40bc8765ec58b4bc33cda035770689a66",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p91",
+                      "textSha256": "c0c8c526940a63356a61089051b4ecc9758b6c010e2a6d0e23c617560f7d14f5"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extract the exact arrival city from the verified Day 13 route heading."
+                }
               }
             ]
           },
           "submissionId": "ada-en-7963199f582c-agro-b012-v1"
         },
-        "at": "2026-11-03T22:00:43.744Z"
+        "at": "2026-11-03T22:00:52.225Z"
       },
       "submission": null,
       "review": null,

@@ -86,7 +86,7 @@
         "expiresAt": "2026-11-03T23:25:21.504Z"
       },
       "checkpoint": {
-        "id": "cp-b021-4",
+        "id": "cp-b021-8",
         "format": "inline-v1",
         "ownerId": "ada-en-20261104-935f-translator",
         "token": "ada-en-935f-bxatc0v89fh-mw180til",
@@ -160,10 +160,79 @@
                 "transformation": "contextual_label",
                 "rationale": "EXACT"
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:dadc52e055e4d25a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "954656520655cd56d5945d22b55541ee93f3abbb260f5e21a093ca4d4a69e1b2",
+              "text": "Exploradores Valley",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p136",
+                    "textSha256": "68b8afe0371ab7ec63a4774e591704673da0d0a0a21fdc274c07072d3c3ae3ba"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:f177def0aac5e557",
+              "field": "itinerary.label",
+              "sourceTextSha256": "b7010392a8e76f4b1d1b778cbfd815e7b622bf64c9c9d37e701305e319ad6308",
+              "text": "Exploradores Bay",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p136",
+                    "textSha256": "68b8afe0371ab7ec63a4774e591704673da0d0a0a21fdc274c07072d3c3ae3ba"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3aefe86d64240724",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e6e494f410ffb4eaec51ba4ffd85cb79a8543b1e3de3089db9f7a4b22963ce5d",
+              "text": "San Rafael National Park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-20261104-935f-translator",
+                "wordAbsenceReason": "The verified Word paragraph 136 names Laguna San Rafael and the glacier, but not the national park label; translate the current RU place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:4d1cc1cb3ccce2a0",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c35802742692df6ad768c86b4f214cfdd06c2b1041750eae0d9fa93aea967d4f",
+              "text": "San Rafael Glacier",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p136",
+                    "textSha256": "68b8afe0371ab7ec63a4774e591704673da0d0a0a21fdc274c07072d3c3ae3ba"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the verified Word place name as the concise itinerary label, preserving its meaning."
+              }
             }
           ]
         },
-        "at": "2026-11-03T21:56:16.927Z"
+        "at": "2026-11-03T21:56:20.605Z"
       },
       "submission": null,
       "review": null,

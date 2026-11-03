@@ -4,6 +4,18 @@ Updated: 2026-11-03 (Europe/Moscow). Canonical source branch: `main`.
 
 ## Current checkpoint — 2026-11-03
 
+**Published and verified; the current task is complete.** PR #80 merged as
+`3af8c2e314940dbe5d5b23086ca1b51776e2dd34`; final RU and EN CI succeeded.
+[EN Pages #41599028191](https://github.com/alexyakovlev79/adatours-en/actions/runs/41599028191)
+completed **success** on 2026-11-03 at 10:57:52 Europe/Moscow
+(build job `125793194391`), caller
+`509bd465f0fc6f7a6f34781606d24d4d7821ab62`.
+The live receipt matches the final source and verified counts. Targeted
+browser checks passed for the original catalogue, combinations/interests,
+VIP and homepage. Continue the existing translation queue only on a separate
+owner request; do not restart the swarm, matching, audit or publication.
+The following paragraphs retain the implementation history.
+
 Read `docs/workflows/english-site.md` v1.8 and
 `35-shared-approved-content.md` before the historical checkpoints below.
 The current owner instruction is to display every existing valid English
@@ -16,14 +28,108 @@ commit `3c3f1f873d56a7bad8bfd5f8e01363083ec2a824`, mass staging head
 353 Tour, 4,006 jobs, 2,410 queued, one ready, 1,595 held, no active leases;
 Word 2027 dispatch is open, publication remains disabled.
 Thirty previously accepted blocks were excluded from duplicate work.
-The exact new Rio b001 result and its separate QA receipt remain preserved;
-its inclusion in this site release is not claimed.
+The exact new Rio b001 result and its separate QA receipt remain preserved.
+Its eight blocks were read from the pinned accepted snapshot and applied in
+the successful full EN preflight build; four texts changed. No queue write
+or gate change was required. A read-only final check confirmed the staging
+HEAD is still `691306df7cdae1e1cb899cbac2bfc4dcbe781230`.
 
-Current work connects source-bound English fields and shared UI copy to
-the canonical Astro content loader and complete layouts, retaining the one
-set of facts, media, routes and relations. Implementation checks and actual
-CI/Pages evidence are recorded separately in plan 35. At this checkpoint
-the new CI and EN deployment are still pending.
+The shared content loader and complete layouts retain one set of facts,
+media, routes and relations while applying source-bound English fields and
+shared UI copy. Dynamic menu, selector, video and form labels use that
+same dictionary, including case-insensitive exact known labels.
+
+[PR #78](https://github.com/alexyakovlev79/adatours.ru/pull/78) merged as
+`3125e0db702c1c0bc21ee8f1f1a281eb46f991c3`. Checked head:
+`fbaf184aafabe5494c2eb2eca5ac28f5eaad3b92`.
+[RU CI #41591749440](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41591749440)
+and [EN preflight #41591749489](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41591749489)
+succeeded. The generated receipt confirms 547 fields in 21 translated
+entities, zero partial/stale/invalid within this set, 6,149 canonical pages
+and 404,906 checked internal links. Other content retains Russian fallback.
+
+EN caller `cc4a4c98964988c165572a96276298fc0720acfb` triggered
+[Pages #41592607214](https://github.com/alexyakovlev79/adatours-en/actions/runs/41592607214),
+completed **success**. The live receipt confirms canonical source
+`3125e0db702c1c0bc21ee8f1f1a281eb46f991c3` and the same 547/21/6,149/404,906
+counts. Browser checks passed for the English catalogue H1/nine menu labels,
+353 tours, Brazil filtering (146 results), Show more 30 → 60, Rio search
+and English programme/price/CDN images, Easter Island body, Russian
+Guatemala fallback with English UI, and Multi-country selectors/navigation.
+
+### Follow-up — composite card labels and related interests
+
+Browser QA found composite card metadata still consuming Russian
+`country.name` from the old `mainTourCountries` route index.
+[PR #79](https://github.com/alexyakovlev79/adatours.ru/pull/79), head
+`4204711fec1392f2d7fc50e4a59d930a62648194`, uses display names from the one
+prepared countries collection by stable ID across Multi-country landing/
+pagination, VIP and destination surfaces. Related interests use shared
+`ui-copy` and `countInEnglish`; unknown translations stay Russian.
+Programme sources, prices, IDs, order, relations and media remain shared.
+The output verifier now covers landing/page-2 metadata and known related
+interest labels site-wide; affected paths are included in the EN CI trigger.
+
+[RU CI #41594489146](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41594489146)
+and [EN preflight #41594489226](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41594489226)
+completed **success** for head `4204711fec1392f2d7fc50e4a59d930a62648194`.
+PR #79 merged as `08c51a27a807e9f9e2473d088c8655142f7d998a`.
+The added verifier confirmed `multiCountryCardPages=2` and
+`relatedCatalogueLabels=20017`; the previous 547/21/6,149/404,906 counts
+were unchanged. The report is retained in artifact `13211509045`.
+
+Second-release caller `4dd24b16b3b55cfb23bab2b9ed60c25f11c38f87` triggered
+[Pages #41595744614](https://github.com/alexyakovlev79/adatours-en/actions/runs/41595744614),
+which completed **success** for source
+`08c51a27a807e9f9e2473d088c8655142f7d998a`. Its live receipt confirms
+547/21/6,149/404,906 plus two MC card pages and 20,017 related labels.
+However, live combination cards still had Russian labels from a separate
+catch-all generator that bypassed the corrected common layout.
+
+### Current follow-up — the three remaining generators, PR #80
+
+An independent audit of shared pages, 69 components and nine layouts found
+exactly three remaining metadata generators: `src/pages/multi-country/[...selection].astro`,
+`src/pages/vip/index.astro` and `homepage tourDescription`. All three are
+fixed in [PR #80](https://github.com/alexyakovlev79/adatours.ru/pull/80),
+head `8152d87099f00ed812d3c17205f26b609b5f4249`. The verifier now scans every
+MC/VIP catalogue page and homepage metadata, retaining related-label checks.
+Unknown translations remain Russian; programme sources, prices, IDs,
+ordering, relations and media are unchanged.
+
+[EN preflight #41597793948](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41597793948)
+completed **success** (job `125789133319`). Final verifier counts:
+`canonicalPages=6149`, `translatedEntities=21`, `translatedFields=547`,
+`checkedInternalLinks=404906`, `multiCountryCardPages=1752`,
+`vipCardPages=159`, `homeTourCardLabels=3`, `relatedCatalogueLabels=20017`.
+[RU CI #41597793856](https://github.com/alexyakovlev79/adatours.ru/actions/runs/41597793856)
+also completed **success** (job `125789132888`). PR #80 merged as
+`3af8c2e314940dbe5d5b23086ca1b51776e2dd34`.
+Final EN caller `509bd465f0fc6f7a6f34781606d24d4d7821ab62` changed only
+its dispatch comment and started deployment of the common source.
+[Final Pages #41599028191](https://github.com/alexyakovlev79/adatours-en/actions/runs/41599028191)
+completed **success** at 10:57:52 Europe/Moscow, build job `125793194391`.
+The live browser-read receipt confirms source
+`3af8c2e314940dbe5d5b23086ca1b51776e2dd34`, 547 fields / 21 entities,
+zero partial/stale/invalid, 6,149 pages / 404,906 links, 1,752 MC card pages,
+159 VIP card pages, three homepage labels and 20,017 related labels.
+
+Final browser QA confirmed `Journeys through Latin America`, nine English
+navigation labels, English Hero/filters, 353 full catalogue entries and a
+loaded CDN Hero image at `/en/tours/`. Brazil + Chile and culture-and-history
+cards now show `Аргентина + Brazil + Chile · 13 days`; related text reads
+`Brazil + Chile: Culture and history · 20 tours`. VIP displays labels such as
+`Brazil · 16 days · от $28 245` and `Chile + Аргентина · 26 days…`;
+three homepage labels use prepared English names, e.g. `Brazil · 13 days`.
+Untranslated words deliberately remain Russian. These observed results
+close the outstanding metadata paths from the earlier deployments.
+
+The task is complete. Any continuation of the saved translation queue
+requires a separate owner request; no automatic worker launch, new queue,
+repeat matching/audit or repeat publication is part of this completion.
+A read-only final branch check again confirmed unchanged mass queue HEAD
+`691306df7cdae1e1cb899cbac2bfc4dcbe781230`, so its contents were not reread
+and no worker was started. Plan 35 retains the full evidence.
 
 Everything below is the historical record of preparation and subsequent
 checkpoints. Old branch names and disabled-gate statements describe their

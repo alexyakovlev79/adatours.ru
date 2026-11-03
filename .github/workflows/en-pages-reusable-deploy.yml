@@ -41,6 +41,18 @@ jobs:
           sparse-checkout: data/i18n/pilot-previews/v1
           sparse-checkout-cone-mode: false
           persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          repository: alexyakovlev79/adatours.ru
+          ref: 691306df7cdae1e1cb899cbac2bfc4dcbe781230
+          path: translation-preview
+          sparse-checkout: |
+            data/i18n/translation-mass/v2/index.json
+            data/i18n/translation-mass/v2/state/1a.json
+            data/i18n/translation-mass/v2/jobs/1a.json
+            data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_rio_four_days_b001/en-rio-b001-word-20261102-v1.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 24
@@ -61,6 +73,7 @@ jobs:
           SITE_BASE: /adatours-en/
           EN_STAGING_PAGES: '1'
           EN_SHARED_CONTENT: '1'
+          EN_ACCEPTED_TRANSLATIONS_ROOT: ../translation-preview
           PUBLIC_EN_RELEASE: '0'
           EN_PILOT_PREVIEW: '0'
           MEDIA_CDN_ORIGIN: https://img.adatours.ru

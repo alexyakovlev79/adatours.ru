@@ -71,7 +71,7 @@
 | `src/lib/i18n/shared-ui-locale.mjs` | Общий выбор языка интерфейса и точные известные RU/EN подписи |
 | `src/lib/i18n/shared-ui-html.mjs` | Применение известного UI-словаря к общему HTML, включая запасную оболочку |
 | `scripts/i18n/prepare-en-pages-site.mjs`, `ru-fallback.mjs` | Полная общая EN staging-сборка без подмены каталога демонстратором |
-| `scripts/i18n/verify-ru-fallback-output.mjs`, `verify-en-pages-site.mjs` | Проверка полных маршрутов, переводов, assets и staging-ограничений |
+| `scripts/i18n/verify-ru-fallback-output.mjs` | Проверка полных маршрутов, переводов, assets и staging-ограничений |
 | `tests/i18n/shared-*.test.mjs` | Адресные проверки проекции/UI, сохранности общих данных и fallback |
 | `.github/workflows/en-pages-reusable-deploy.yml`, `i18n-en-github-pages-check.yml` | Один build-контракт `EN_SHARED_CONTENT=1`, проверки и receipts |
 
@@ -88,11 +88,22 @@ translated/partial/stale/invalid и причины fallback. CI сохраняе
 тексты; существование исходного перевода само по себе не доказывает его
 публикацию.
 
-Read-only подключение принятого snapshot массового Rio b001 к этой
-проекции рассматривается отдельно от изменения очереди. На этой
-контрольной точке его публикация не подтверждена. `ready` в массовой
-staging не равно опубликованной странице; её `publicationEnabled=false`
-не меняется данным исправлением.
+Принятый массовый Rio b001 подключён к этой проекции только для чтения:
+workflow выбирает immutable snapshot `691306df7cdae1e1cb899cbac2bfc4dcbe781230`
+в соседний `translation-preview`, читая только индекс, `state/1a.json`,
+`jobs/1a.json` и exact result JSON. `EN_ACCEPTED_TRANSLATIONS_ROOT`
+указывает на этот временный checkout; новые копии переводов в основном
+репозитории не создаются.
+
+Проверяются detached SHA, состояние ready, все шесть независимых QA checks,
+acceptedBlobSha и фактический Git blob результата, исходные SHA256/Git blob,
+тот же выбранный Word и его revision. Восемь готовых блоков имеют приоритет
+над прежним пилотом; четыре формулировки обновлены, уникальное покрытие Rio
+остаётся 52 поля. Receipt сохраняет `acceptedMassSnapshot` и per-entry
+`acceptedMass` с количеством применённых блоков и изменённых текстов.
+`ready` в массовой staging не равно опубликованной странице: фактическая
+публикация ещё ожидает CI/deploy. `publicationEnabled=false`, `releaseEligible`,
+очередь и результаты не меняются данным исправлением.
 
 ## 4. Приёмка и подтверждение публикации
 

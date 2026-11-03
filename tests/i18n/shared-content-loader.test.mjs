@@ -4,10 +4,12 @@ import {mkdtemp,mkdir,writeFile,readFile,rm} from 'node:fs/promises';
 import {join,dirname} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {tmpdir} from 'node:os';
+import {createHash} from 'node:crypto';
 import {createStableBlockMap} from '../../src/lib/i18n/block-map.mjs';
 import {sourceFromContentEntry} from '../../src/lib/i18n/content-adapter.mjs';
 import {sourceBlockEvidence,translationApprovalHash} from '../../src/lib/i18n/content-overlay.mjs';
-import {sharedEnglishContentEnabled,projectSharedEnglishEntry,withSharedEnglishContent} from '../../src/lib/i18n/shared-content-loader.mjs';
+import {sharedEnglishContentEnabled,projectSharedEnglishEntry,withSharedEnglishContent,
+  verifyAcceptedMassPacket,ACCEPTED_MASS_SNAPSHOT_SHA} from '../../src/lib/i18n/shared-content-loader.mjs';
 
 const env={SITE_LOCALE:'en',SITE_ORIGIN:'https://alexyakovlev79.github.io',SITE_BASE:'/adatours-en/',
   EN_STAGING_PAGES:'1',EN_SHARED_CONTENT:'1',PUBLIC_EN_RELEASE:'0',EN_PILOT_PREVIEW:'0',
@@ -41,6 +43,32 @@ function approved(entry=fixture()) {
       return block;
     })};
   return {entityId:entry.data.id,entityType:'tour',overlay,wordSources:{},sourceFingerprint:'sha256:fixture',map};
+}
+
+const digest=value=>createHash('sha256').update(value).digest('hex');
+const gitBlob=bytes=>createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex');
+function acceptedMassFixture(source=fixture()) {
+  const sourceBytes=Buffer.from('canonical source bytes');
+  const block=approved(source).overlay.blocks.find(block=>block.field==='title');
+  const job={schemaVersion:2,jobId:'en:bulk:tour:'+source.data.id+':b001',stableId:source.data.id,
+    entityType:'tour',locale:'en',stage:'word_2027',sourceFingerprint:'a'.repeat(64),
+    source:{contentPath:source.filePath,contentSha256:digest(sourceBytes),sourceBlobSha:gitBlob(sourceBytes),
+      selectedWord:{fileId:'word-rio',sha256:'b'.repeat(64),modifiedTime:'2026-10-21T20:19:00.892Z'}},
+    blocks:[{blockId:block.blockId,path:'/title',field:block.field,ruText:source.data.title,
+      ruTextSha256:block.sourceTextHash.slice(7),dependsOn:[]}]};
+  const result={jobId:job.jobId,stableId:job.stableId,locale:'en',status:'review',releaseEligible:false,
+    sourceFingerprint:job.sourceFingerprint,blocks:[{blockId:block.blockId,field:block.field,
+      text:'Rio de Janeiro: four days',sourceTextSha256:block.sourceTextHash.slice(7),
+      provenance:{kind:'word_aligned',fileId:'word-rio',documentSha256:'b'.repeat(64),
+        paragraphs:[{ref:'word/document.xml#p0002',textSha256:'c'.repeat(64)}],
+        transformation:'contextual_label',rationale:'The exact approved Word title is displayed as a route label.'}}]};
+  const resultBytes=Buffer.from(JSON.stringify(result,null,2)+'\n'),hash=gitBlob(resultBytes);
+  const row={jobId:job.jobId,status:'ready',sourceFingerprint:job.sourceFingerprint,
+    submission:{blobSha:hash,resultPath:'data/i18n/translation-mass/v2/results/en_bulk_tour_rio_b001/accepted.json'},
+    review:{acceptedBlobSha:hash,reviewerId:'independent-reviewer',at:'2026-11-02T21:27:04.327Z',
+      checks:{word:true,meaning:true,facts:true,voice:true,structure:true,relations:true}}};
+  const wordSources={'word-rio':{revision:job.source.selectedWord.modifiedTime,documentHash:'sha256:'+'b'.repeat(64),blocks:{}}};
+  return {job,row,resultBytes,sourceBytes,wordSources};
 }
 
 test('the shared projection requires the exact closed English staging gate',()=>{
@@ -137,6 +165,40 @@ test('geography projection never imports pilot hrefs, images, identities or comm
   for(const key of ['id','locale','slug','currency','featuredTours'])assert.deepEqual(result.entry.data[key],source.data[key]);
 });
 
+test('latest accepted mass text supersedes the pilot without forging approval or changing source facts',()=>{
+  const source=fixture(),input=acceptedMassFixture(source),before=JSON.stringify(input);
+  const packet=verifyAcceptedMassPacket(input);
+  const result=projectSharedEnglishEntry(source,'tours',{...approved(source),acceptedMass:[packet]});
+  assert.equal(result.entry.data.title,'Rio de Janeiro: four days');
+  assert.equal(result.entry.data.priceFrom,source.data.priceFrom);
+  assert.equal(result.entry.data.hero.src,source.data.hero.src);
+  assert.equal(result.applied,approved(source).map.paths.length,'replacement is counted once');
+  assert.equal(result.acceptedMass[0].appliedBlocks,1);
+  assert.equal(result.acceptedMass[0].changedTexts,1);
+  assert.equal(result.acceptedMass[0].resultBlobSha,input.row.review.acceptedBlobSha);
+  assert.equal(input.row.status,'ready');
+  assert.equal(JSON.parse(input.resultBytes).releaseEligible,false);
+  assert.equal(JSON.stringify(input),before);
+});
+
+test('mass projection rejects changed result bytes, missing independent QA and another Word document',()=>{
+  const input=acceptedMassFixture();
+  assert.throws(()=>verifyAcceptedMassPacket({...input,resultBytes:Buffer.from(input.resultBytes.toString().replace('four days','five days'))}),/blob changed/);
+  assert.throws(()=>verifyAcceptedMassPacket({...input,row:{...input.row,status:'review'}}),/Unaccepted/);
+  const review={...input.row.review,checks:{...input.row.review.checks,facts:false}};
+  assert.throws(()=>verifyAcceptedMassPacket({...input,row:{...input.row,review}}),/Unaccepted/);
+  assert.throws(()=>verifyAcceptedMassPacket({...input,wordSources:{'word-rio':{revision:input.wordSources['word-rio'].revision,documentHash:'sha256:'+'d'.repeat(64)}}}),/Word source differs/);
+});
+
+test('changed canonical source skips only the accepted mass packet',()=>{
+  const input=acceptedMassFixture();
+  const packet=verifyAcceptedMassPacket({...input,sourceBytes:Buffer.from('new canonical source bytes')});
+  assert.equal(packet.status,'stale');assert.deepEqual(packet.blocks,[]);
+  const source=fixture(),result=projectSharedEnglishEntry(source,'tours',{...approved(source),acceptedMass:[packet]});
+  assert.equal(result.entry.data.title,'4 Days in Rio de Janeiro');
+  assert.equal(result.status,'translated');
+});
+
 test('glob wrapper recompiles translated Markdown and records the actual canonical source receipt',async()=>{
   const root=await mkdtemp(join(tmpdir(),'ada-en-loader-'));
   try {
@@ -148,16 +210,24 @@ test('glob wrapper recompiles translated Markdown and records the actual canonic
       reports:[{entityId:original.data.id,approved:true,state:'ready',issues:0}],failures:[]});
     await put('data/i18n/block-maps/tours/'+original.data.id+'.json',{...prepared.map,sourceContentPath:original.filePath});
     await put('data/i18n/pilot-previews/v1/overlays/'+original.data.id+'.json',prepared.overlay);
-    await put('data/i18n/pilot-previews/v1/word-sources/'+original.data.id+'.json',{});
+    const mass=acceptedMassFixture(original);
+    await put('data/i18n/pilot-previews/v1/word-sources/'+original.data.id+'.json',mass.wordSources);
     await put('data/i18n/pilot-excursions/v1/manifest.json',{schemaVersion:1,locale:'en',publicationAuthorized:false,status:'prepared_for_private_preview',entries:[]});
     await put('data/i18n/pilot-geography/v1/manifest.json',{schemaVersion:1,locale:'en',publicationAuthorized:false,status:'prepared_for_private_visual_pilot',items:[]});
+    await put('accepted/.git/HEAD',ACCEPTED_MASS_SNAPSHOT_SHA+'\n');
+    const massRoot='accepted/data/i18n/translation-mass/v2/';
+    await put(massRoot+'index.json',{schemaVersion:2,publicationEnabled:false,counts:{ready:1},shards:{'1a':{stages:{word_2027:{ready:1}}}}});
+    await put(massRoot+'state/1a.json',{schemaVersion:2,items:[mass.row]});
+    await put(massRoot+'jobs/1a.json',{schemaVersion:2,jobs:[mass.job]});
+    await put('accepted/'+mass.row.submission.resultPath,mass.resultBytes.toString());
     const records=new Map(),rendered=[];
     const store={values:()=>records.values(),set:entry=>{records.set(entry.id,entry);return true;}};
     const loader={name:'glob',async load(){store.set(structuredClone(original));}};
-    await withSharedEnglishContent(loader,'tours',{env,root}).load({store,config:{root:pathToFileURL(root+'/')},
+    await withSharedEnglishContent(loader,'tours',{env:{...env,EN_ACCEPTED_TRANSLATIONS_ROOT:'accepted'},root}).load({store,config:{root:pathToFileURL(root+'/')},
       parseData:async({data})=>data,generateDigest:JSON.stringify,
       async renderMarkdown(body,options){rendered.push({body,options});return {html:'<p>English Markdown rendered</p>'};}});
     const result=records.get(original.id);
+    assert.equal(result.data.title,'Rio de Janeiro: four days');
     assert.equal(result.body,'## Prices\n\nFrom USD 1,255.');
     assert.equal(result.rendered.html,'<p>English Markdown rendered</p>');
     assert.equal(rendered.length,1);
@@ -167,5 +237,9 @@ test('glob wrapper recompiles translated Markdown and records the actual canonic
     assert.equal(receipt.canonicalSourceSha,env.ADA_CANONICAL_SHA);
     assert.equal(receipt.counts.translated,1);
     assert.equal(receipt.entries[0].sourceId,original.data.id);
+    assert.equal(receipt.acceptedMassSnapshot.sha,ACCEPTED_MASS_SNAPSHOT_SHA);
+    assert.equal(receipt.entries[0].acceptedMass[0].appliedBlocks,1);
+    const before=await readFile(join(root,'accepted/'+mass.row.submission.resultPath),'utf8');
+    assert.equal(before,mass.resultBytes.toString(),'reading the snapshot never rewrites worker output');
   } finally {await rm(root,{recursive:true,force:true});}
 });

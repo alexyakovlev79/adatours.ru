@@ -12,6 +12,14 @@ import {enStagingSiteEnabled} from './en-staging-site.mjs';
 import {visibleLocalizationSlots, sourceFromContentEntry} from './content-adapter.mjs';
 import {createStableBlockMap} from './block-map.mjs';
 import {assessOverlay} from './content-overlay.mjs';
+import {validateMassResult} from '../../../scripts/i18n/translation-mass-core.mjs';
+
+// An immutable, independently reviewed snapshot; reading it does not change
+// worker queues, publicationEnabled or releaseEligible. Only noindex staging
+// calls this module's loader. No translated text is copied into this module.
+export const ACCEPTED_MASS_SNAPSHOT_SHA='691306df7cdae1e1cb899cbac2bfc4dcbe781230';
+const MASS_ROOT='data/i18n/translation-mass/v2';
+const MASS_QA=['word','meaning','facts','voice','structure','relations'];
 
 const TYPES = Object.freeze({tours:'tour', excursions:'excursion', countries:'country', destinations:'destination'});
 const CYRILLIC = /[\u0400-\u052f]/u;
@@ -25,6 +33,62 @@ const fail = message => {throw new Error('Shared EN content: '+message);};
 
 export function sharedEnglishContentEnabled(env=process.env) {
   return env?.EN_SHARED_CONTENT === '1' && enStagingSiteEnabled(env);
+}
+
+/** Validate the exact immutable output accepted by the separate QA process. */
+export function verifyAcceptedMassPacket({job,row,resultBytes,sourceBytes,wordSources}) {
+  if(row?.status!=='ready' || row.jobId!==job?.jobId || row.sourceFingerprint!==job.sourceFingerprint ||
+     !row.submission?.blobSha || row.review?.acceptedBlobSha!==row.submission.blobSha ||
+     !MASS_QA.every(key=>row.review?.checks?.[key]===true) || !row.review?.reviewerId ||
+     !Number.isFinite(Date.parse(row.review.at)))fail('Unaccepted mass translation receipt');
+  if(gitBlob(resultBytes)!==row.submission.blobSha)fail('Accepted mass result blob changed');
+  const result=JSON.parse(resultBytes.toString('utf8'));
+  validateMassResult(job,result);
+  if(!allowedSource(job.source?.contentPath,'tours') || job.entityType!=='tour')fail('Unsafe mass source path');
+  if(sha256(sourceBytes)!==job.source.contentSha256 || gitBlob(sourceBytes)!==job.source.sourceBlobSha)
+    return {status:'stale',jobId:job.jobId,reason:'canonical_source_changed',blocks:[]};
+  const word=job.source.selectedWord;
+  const existing=word && wordSources?.[word.fileId];
+  if(job.stage!=='word_2027' || !existing || existing.documentHash!=='sha256:'+word.sha256 ||
+     existing.revision!==word.modifiedTime)fail('Accepted mass Word source differs from verified English source');
+  // validateMassResult verifies ownership/source hashes, the selected Word
+  // identity, paragraph-evidence shape and allowed transformations. The
+  // independent six-check receipt is the acceptance authority for their
+  // meaning and paragraph content; do not forge legacy approval records.
+  return {status:'ready',jobId:job.jobId,blocks:result.blocks,
+    receipt:{snapshotSha:ACCEPTED_MASS_SNAPSHOT_SHA,jobId:job.jobId,resultBlobSha:row.submission.blobSha,
+      reviewedAt:row.review.at,reviewerId:row.review.reviewerId,
+      wordFileId:word.fileId,wordSha256:word.sha256}};
+}
+
+async function attachAcceptedMass(records,base,snapshotRoot) {
+  const head=(await readFile(join(snapshotRoot,'.git/HEAD'),'utf8')).trim();
+  if(head!==ACCEPTED_MASS_SNAPSHOT_SHA)fail('Accepted mass checkout is not the pinned immutable commit');
+  const index=await readJson(join(snapshotRoot,MASS_ROOT,'index.json'));
+  if(index.schemaVersion!==2 || index.publicationEnabled!==false || index.counts?.ready!==1)
+    fail('Pinned mass snapshot acceptance count/gate changed');
+  const snapshots=[];
+  for(const [sid,summary] of Object.entries(index.shards)) {
+    if(!Object.values(summary.stages??{}).some(counts=>counts.ready>0))continue;
+    if(!/^[a-f0-9]{2}$/.test(sid))fail('Invalid accepted mass shard');
+    const [state,packets]=await Promise.all([
+      readJson(join(snapshotRoot,MASS_ROOT,'state',sid+'.json')),
+      readJson(join(snapshotRoot,MASS_ROOT,'jobs',sid+'.json')),
+    ]);
+    for(const row of state.items.filter(item=>item.status==='ready')) {
+      const job=packets.jobs.find(item=>item.jobId===row.jobId);
+      const prepared=job && records.get(job.stableId);
+      if(!prepared || !job || !/^data\/i18n\/translation-mass\/v2\/results\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_.-]+\.json$/.test(row.submission?.resultPath??''))
+        fail('Unresolved accepted mass source/result');
+      const packet=verifyAcceptedMassPacket({job,row,
+        resultBytes:await readFile(join(snapshotRoot,row.submission.resultPath)),
+        sourceBytes:await readFile(join(base,job.source.contentPath)),wordSources:prepared.wordSources});
+      snapshots.push({jobId:packet.jobId,status:packet.status,blocks:packet.blocks.length,...(packet.reason?{reason:packet.reason}:{})});
+      if(packet.status==='ready')prepared.acceptedMass=[...(prepared.acceptedMass??[]),packet];
+    }
+  }
+  if(snapshots.length!==index.counts.ready)fail('Accepted mass snapshot is incomplete');
+  records.massSnapshot={sha:ACCEPTED_MASS_SNAPSHOT_SHA,packets:snapshots};
 }
 
 function pointerParts(path) {
@@ -72,6 +136,7 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   const metadata={contentLanguage:'ru',translatedFields:0,sourceId,sourceFingerprint,
     sourceName:entry.data.name??entry.data.title??''};
   let translated=0;
+  const appliedPaths=new Set();
   const missing=[];
   let sourceKind;
   if(prepared.overlay) {
@@ -92,7 +157,7 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
     for(const slot of map.paths) {
       const block=target.get(slot.blockId);
       if(!rejected.has(slot.blockId) && block?.state==='approved' && safeText(block.text)) {
-        applyText(root,slot.path,block.text,metadata); translated++;
+        applyText(root,slot.path,block.text,metadata); translated++; appliedPaths.add(slot.path);
       } else missing.push(slot.path);
     }
     sourceKind='approved-blocks';
@@ -102,10 +167,30 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
     const target={...prepared.translation,__body:prepared.translation?.body??''};
     for(const slot of slots) {
       const text=getAt(target,slot.path);
-      if(safeText(text)) {applyText(root,slot.path,text,metadata); translated++;}
+      if(safeText(text)) {applyText(root,slot.path,text,metadata); translated++; appliedPaths.add(slot.path);}
       else missing.push(slot.path);
     }
     sourceKind='prepared-overlay';
+  }
+  const acceptedMass=[];
+  if(prepared.acceptedMass?.length) {
+    const current=new Map(createStableBlockMap(entry,type).paths.map(slot=>[slot.blockId,slot]));
+    const raw={...entry.data,__body:entry.body??''};
+    for(const packet of prepared.acceptedMass) {
+      if(packet.status!=='ready' || packet.receipt?.snapshotSha!==ACCEPTED_MASS_SNAPSHOT_SHA)continue;
+      let appliedBlocks=0,changedTexts=0;
+      for(const block of packet.blocks) {
+        const slot=current.get(block.blockId),sourceText=slot && getAt(raw,slot.path);
+        if(!slot || slot.field!==block.field || !safeText(block.text) || typeof sourceText!=='string' ||
+           sha256(sourceText)!==block.sourceTextSha256)continue;
+        const prior=slot.path==='/format'?metadata.formatLabel:getAt(root,slot.path);
+        if(prior!==block.text)changedTexts++;
+        applyText(root,slot.path,block.text,metadata);appliedBlocks++;
+        if(!appliedPaths.has(slot.path)){appliedPaths.add(slot.path);translated++;}
+        const missingAt=missing.indexOf(slot.path);if(missingAt>=0)missing.splice(missingAt,1);
+      }
+      acceptedMass.push({...packet.receipt,appliedBlocks,changedTexts});
+    }
   }
   if(!translated)return {entry,applied:0,status:'untranslated',sourceId,sourceFingerprint};
   const body=root.__body; delete root.__body;
@@ -116,13 +201,15 @@ export function projectSharedEnglishEntry(entry,collection,prepared) {
   // entry.id, data.id, slug, locale, relationships and every nontext value stay
   // canonical. The old demo materializers must not rewrite featureBand hrefs.
   return {entry:{...entry,data:root,body},applied:translated,status:missing.length?'partial':'translated',
-    sourceId,sourceFingerprint,sourceKind,missing};
+    sourceId,sourceFingerprint,sourceKind,missing,...(acceptedMass.length?{acceptedMass}:{})};
 }
 
 const preparedByRoot=new Map();
-async function readPreparedEnglish(root) {
+async function readPreparedEnglish(root,env) {
   const base=resolve(root);
-  if(preparedByRoot.has(base))return preparedByRoot.get(base);
+  const snapshotRoot=env.EN_ACCEPTED_TRANSLATIONS_ROOT?resolve(base,env.EN_ACCEPTED_TRANSLATIONS_ROOT):null;
+  const cacheKey=base+'\0'+(snapshotRoot??'');
+  if(preparedByRoot.has(cacheKey))return preparedByRoot.get(cacheKey);
   const promise=(async()=>{
     const records=new Map();
     const summary=await readJson(join(base,'data/i18n/pilot-previews/v1/summary.json'));
@@ -176,15 +263,16 @@ async function readPreparedEnglish(root) {
           ...(actual!==meta.sourceBlobSha?{reason:'canonical_source_changed'}:{})});
       }
     }
+    if(snapshotRoot)await attachAcceptedMass(records,base,snapshotRoot);
     return records;
   })();
-  preparedByRoot.set(base,promise);
-  try {return await promise;} catch(error) {preparedByRoot.delete(base); throw error;}
+  preparedByRoot.set(cacheKey,promise);
+  try {return await promise;} catch(error) {preparedByRoot.delete(cacheKey); throw error;}
 }
 
 const receiptState=new Map();
 let receiptWrite=Promise.resolve();
-async function saveReceipt(root,collection,rows,env) {
+async function saveReceipt(root,collection,rows,env,massSnapshot) {
   const key=resolve(root);
   const collections=receiptState.get(key)??new Map();
   collections.set(collection,rows); receiptState.set(key,collections);
@@ -198,7 +286,7 @@ async function saveReceipt(root,collection,rows,env) {
       counts:{translated:entries.filter(x=>x.status==='translated').length,
         partial:entries.filter(x=>x.status==='partial').length,stale:entries.filter(x=>x.status==='stale').length,
         invalid:entries.filter(x=>x.status==='invalid').length,translatedFields:entries.reduce((n,x)=>n+x.applied,0)},
-      entries};
+      entries,...(massSnapshot?{acceptedMassSnapshot:massSnapshot}:{})};
     const file=join(key,'.astro/ada-en-shared-content.json');
     await mkdir(dirname(file),{recursive:true});
     await writeFile(file,JSON.stringify(receipt,null,2)+'\n');
@@ -212,7 +300,7 @@ export function withSharedEnglishContent(loader,collection,{env=process.env,root
   return {...loader,name:loader.name+'-shared-english',async load(context) {
     await loader.load(context);
     const base=resolve(root??fileURLToPath(context.config.root));
-    const prepared=await readPreparedEnglish(base);
+    const prepared=await readPreparedEnglish(base,env);
     const report=[];
     // store.set is synchronous. Project after glob finished, then await the
     // supported Markdown renderer before writing each new digest.
@@ -223,6 +311,7 @@ export function withSharedEnglishContent(loader,collection,{env=process.env,root
       report.push({collection,sourceId:original.data.id,status:result.status,applied:result.applied,
         sourceName:original.data.name??original.data.title??'',displayName:result.entry.data.name??result.entry.data.title??'',
         sourceFingerprint:result.sourceFingerprint??translation.sourceFingerprint,
+        ...(result.acceptedMass?{acceptedMass:result.acceptedMass}:{}),
         ...(result.reason?{reason:result.reason}:{}),...(result.missing?.length?{fallbackFields:result.missing}:{})});
       if(!result.applied)continue;
       const projected=result.entry;
@@ -232,7 +321,7 @@ export function withSharedEnglishContent(loader,collection,{env=process.env,root
       context.store.set({...original,data,body:projected.body,rendered,
         digest:context.generateDigest({data,body:projected.body,localeProjection:'shared-en-v1'})});
     }
-    await saveReceipt(base,collection,report,env);
+    await saveReceipt(base,collection,report,env,prepared.massSnapshot);
     context.logger?.info?.('Shared EN '+collection+': '+report.filter(x=>x.applied).length+' translated entities, '+report.filter(x=>x.status==='stale').length+' stale fallbacks');
   }};
 }

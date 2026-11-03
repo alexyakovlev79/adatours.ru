@@ -9,29 +9,9 @@ export function sharedUiLocale(env = globalThis.process?.env ?? {}) {
   return env.EN_SHARED_CONTENT === '1' && enStagingSiteEnabled(env) ? 'en' : 'ru';
 }
 
-// These short catalogue labels belong to the common interface, not to a
-// translated Tour/Excursion. They never contain independent facts or media.
-const catalogueCopy = [
-  ['Путешествия по Латинской Америке', 'Journeys through Latin America'],
-  ['Готовые маршруты Ada Tours можно взять за основу и изменить под ваши даты, длительность, отели и состав программы.', 'Use an Ada Tours itinerary as a starting point and adapt the dates, duration, hotels and programme to suit you.'],
-  ['Выберите основу', 'Choose your starting point'],
-  ['От короткой поездки по Бразилии до большого маршрута по нескольким странам. Каждый вариант можно доработать под вас.', 'From a short trip in Brazil to a longer journey across several countries. Every itinerary can be adapted to you.'],
-  ['Места, ради которых летят в Латинскую Америку', 'Places worth travelling to Latin America for'],
-  ['Рио, Игуасу, Амазония, Патагония, Куско и десятки других мест. Выберите точку на карте, мы свяжем ее с подходящим маршрутом.', 'Rio, Iguazu, the Amazon, Patagonia, Cusco and many more places. Choose a place on the map and we will find an itinerary to include it.'],
-  ['Выбирайте по месту', 'Choose a place'],
-  ['Одно место может стать центром путешествия или частью большого маршрута по нескольким странам.', 'A place can be the focus of your trip or part of a longer journey across several countries.'],
-  ['Экскурсии по Латинской Америке', 'Excursions in Latin America'],
-  ['Город, природа, вода, гастрономия или день за пределами столицы. Выберите программу, а Ada Tours поможет встроить ее в путешествие.', 'Explore a city, nature, the water or local food, or spend a day beyond the capital. Choose an excursion and Ada Tours will help fit it into your journey.'],
-  ['Multi-country туры по Латинской Америке', 'Multi-country tours in Latin America'],
-  ['VIP и Luxury туры по Латинской Америке', 'VIP and luxury tours in Latin America'],
-  ['Латинская Америка', 'Latin America'],
-  ['Связанные разделы', 'Related sections'],
-  ['О стране', 'About the country'],
-  ['Дополнительное посещение страны', 'Optional country visit'],
-  ['Мессенджеры', 'Messaging apps'],
-];
+// The existing UI dictionary owns all shared catalogue and interface copy.
 const normalize = value => value.replace(/\s+/gu, ' ').trim();
-const literals = new Map(catalogueCopy.map(([ru, en]) => [normalize(ru), en]));
+const literals = new Map();
 const patterns = [];
 const escape = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 for (const row of Object.values(catalog.messages)) {

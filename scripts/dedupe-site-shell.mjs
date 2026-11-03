@@ -3,8 +3,10 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {parse} from 'parse5';
 import {fileURLToPath} from 'node:url';
+import {sharedUiLocale,translateUiText} from '../src/lib/i18n/shared-ui-locale.mjs';
+const uiLocale=sharedUiLocale();
 const parts=[['header','header','<header class="site-header'],['search','div','<div class="search-overlay"'],['footer','footer','<footer class="footer"'],['cookie','div','<div class="cookie-notice"']];
-const navigation=[['/country/','Страны'],['/tours/','Туры'],['/multi-country/','Multi-country'],['/interests/','По интересам'],['/vip/','VIP'],['/mice/','MICE'],['/dmc/','Для агентств'],['/about/','О нас'],['/contacts/','Контакты']].map(([href,label])=>`<a href="${href}">${label}</a>`).join('');
+const navigation=[['/country/','Страны'],['/tours/','Туры'],['/multi-country/','Multi-country'],['/interests/','По интересам'],['/vip/','VIP'],['/mice/','MICE'],['/dmc/','Для агентств'],['/about/','О нас'],['/contacts/','Контакты']].map(([href,label])=>`<a href="${href}">${translateUiText(label,uiLocale)}</a>`).join('');
 function element(html,tag,prefix){
   const start=html.indexOf(prefix);if(start<0)return null;
   const re=new RegExp(`</?${tag}(?=[\\s>/])[^>]*>`,'gi');re.lastIndex=start;
@@ -21,10 +23,10 @@ function stub(key,raw,url){
     const desktop=inner&&element(inner.raw,'nav','<nav class="desktop-nav"');const mobile=element(raw,'div','<div class="mobile-menu"');
     if(!inner||!desktop||!mobile)throw Error('Header changed');
     const scope=(first.match(/data-astro-cid-[a-z0-9]+/)||[''])[0];const attr=scope?' '+scope:'';
-    const replacement=`<nav class="desktop-nav" aria-label="Основная навигация"${attr}>${navigation}</nav>`;
+    const replacement=`<nav class="desktop-nav" aria-label="${translateUiText('Основная навигация',uiLocale)}"${attr}>${navigation}</nav>`;
     const compact=inner.raw.slice(0,desktop.start)+replacement+inner.raw.slice(desktop.end);
     const mobStart=mobile.raw.slice(0,mobile.raw.indexOf('>'));
-    const mob=`${mobStart}><div class="mobile-menu__stage"${attr}><section class="mobile-menu__panel mobile-menu__panel--main" data-mobile-panel="main"${attr}><nav aria-label="Мобильная навигация"${attr}>${navigation}</nav></section></div></div>`;
+    const mob=`${mobStart}><div class="mobile-menu__stage"${attr}><section class="mobile-menu__panel mobile-menu__panel--main" data-mobile-panel="main"${attr}><nav aria-label="${translateUiText('Мобильная навигация',uiLocale)}"${attr}>${navigation}</nav></section></div></div>`;
     return `${first} data-site-shell="header" data-pagefind-ignore="all" data-site-shell-src="${url}">`+raw.slice(0,inner.start).replace(/^.*?>/,'')+compact+raw.slice(inner.end,mobile.start)+mob+raw.slice(mobile.end);
   }
   if(key==='search')return '<div id="site-search" data-site-shell="search" hidden></div>';
@@ -35,7 +37,7 @@ function stub(key,raw,url){
     const legal=element(raw,'div','<div class="footer__legal"');
     const credit=element(raw,'div','<div class="footer__credit"');
     if(!contact||!legal||!credit)throw Error('Footer contact, legal or credit markup changed');
-    return `<footer class="footer" data-site-shell="footer" data-pagefind-ignore="all"><nav aria-label="Навигация в подвале">${navigation}</nav>${contact.raw}${legal.raw}${credit.raw}</footer>`;
+    return `<footer class="footer" data-site-shell="footer" data-pagefind-ignore="all"><nav aria-label="${uiLocale==='en'?'Footer navigation':'Навигация в подвале'}">${navigation}</nav>${contact.raw}${legal.raw}${credit.raw}</footer>`;
   }
   if(key==='cookie')return '<div data-site-shell="cookie" hidden></div>';
   throw Error('Unknown shared site-shell part: '+key);
@@ -95,7 +97,7 @@ export async function dedupeSiteShell(dir=path.resolve('dist'),{skipEn=false}={}
     if(!common){common=new Map([...found].map(([name,block])=>[name,block.raw]));
       const markup=[...common.values()].join('\n');href='/shared/site-shell-'+createHash('sha256').update(markup).digest('hex').slice(0,16)+'.html';
       await f.mkdir(path.join(dir,'shared'),{recursive:true});
-      await f.writeFile(path.join(dir,href.slice(1)),'<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"></head><body>'+markup+'</body></html>');
+      await f.writeFile(path.join(dir,href.slice(1)),'<!doctype html><html lang="'+uiLocale+'"'+(uiLocale==='en'?' data-ada-shared-locale="en"':'')+'><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"></head><body>'+markup+'</body></html>');
     }
     const before=Buffer.byteLength(html);for(const [name,block] of [...found].sort((a,b)=>b[1].start-a[1].start))
       html=html.slice(0,block.start)+stub(name,block.raw,href)+html.slice(block.end);
@@ -112,3 +114,4 @@ export async function dedupeSiteShell(dir=path.resolve('dist'),{skipEn=false}={}
   return {pages,redirects,href,saved,bytes};
 }
 if(process.argv[1]&&path.resolve(fileURLToPath(import.meta.url))===path.resolve(process.argv[1]))await dedupeSiteShell(process.argv[2]?path.resolve(process.argv[2]):path.resolve('dist'),{skipEn:process.argv.includes('--skip-en')});
+

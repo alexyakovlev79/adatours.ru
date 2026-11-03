@@ -1,25 +1,29 @@
 ---
 import { countLabel } from '../../lib/interest-model.mjs';
 import { withBase } from '../../lib/paths';
+import { countInEnglish } from '../../lib/i18n/messages.mjs';
+import { sharedUiLocale, translateUiText, sharedInterestName } from '../../lib/i18n/shared-ui-locale.mjs';
 interface Props {
   label: string; placeholder: string; selected?: string;
   options: Array<{ id: string; label: string; href: string; count: number }>;
   reset?: string; resetHref?: string; context?: string;
 }
 const { label, placeholder, selected, options, reset, resetHref, context } = Astro.props;
+const uiLocale = sharedUiLocale();
+const localizedOptions = options.map(option => ({ ...option, label: sharedInterestName(option.id, translateUiText(option.label,uiLocale),uiLocale) }));
 ---
 <div class="tour-filters__field" data-catalog-filter-menu data-filter-context={context}>
   <span class="tour-filters__label">{label}</span>
   <details class="tour-filters__menu">
     <summary>
-      <span>{options.find((option) => option.id === selected)?.label ?? placeholder}</span>
+      <span>{localizedOptions.find((option) => option.id === selected)?.label ?? translateUiText(placeholder,uiLocale)}</span>
       <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
     </summary>
     <ul aria-label={label}>
       {resetHref && <li><a href={withBase(resetHref)} aria-current={!selected ? 'page' : undefined} data-filter-reset>{reset}</a></li>}
-      {options.map((option) => (
+      {localizedOptions.map((option) => (
         <li data-filter-option={option.id}><a href={withBase(option.href)} aria-current={option.id === selected ? 'page' : undefined}>
-          <span>{option.label}</span><small>{countLabel(option.count)}</small>
+          <span>{option.label}</span><small>{uiLocale === 'en' ? countInEnglish(option.count,'tour','tours') : countLabel(option.count)}</small>
         </a></li>
       ))}
     </ul>
@@ -59,3 +63,4 @@ const { label, placeholder, selected, options, reset, resetHref, context } = Ast
   ul small { flex-shrink: 0; }
   li[hidden] { display: none; }
 </style>
+

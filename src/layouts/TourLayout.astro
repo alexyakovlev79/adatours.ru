@@ -1,4 +1,5 @@
 ---
+import {sharedUiLocale} from '../lib/i18n/shared-ui-locale.mjs';
 import HorizontalLinkList from '../components/editorial/HorizontalLinkList.astro';
 import { themeIds } from '../lib/interest-model.mjs';
 import { getVipTourPaths } from '../lib/vip-catalog';
@@ -27,6 +28,7 @@ import { buildTourGeographyModel } from '../lib/i18n/entity-geography-model.mjs'
 
 const { entry } = Astro.props;
 const d = entry.data;
+const uiLocale = sharedUiLocale();
 const b2b = d.audiences.includes('b2b');
 // One shared map component for every active tour with verified published GEO points.
 const geoMapData = await (await import('../lib/geo-map-astro')).buildPageGeoMap('tour', d);
@@ -39,6 +41,11 @@ const money = roundedPrice && d.currency
   : 'По запросу';
 
 const pluralRu = (value: number, one: string, few: string, many: string) => {
+  if (uiLocale === 'en') {
+    const words: Record<string,[string,string]> = {'день':['day','days'],'ночь':['night','nights'],'точка маршрута':['stop','stops']};
+    const pair=words[one];
+    if(pair)return value===1?pair[0]:pair[1];
+  }
   const n = Math.abs(value) % 100;
   const n1 = n % 10;
   if (n >= 11 && n <= 19) return many;
@@ -61,7 +68,7 @@ const stats = [
     value: String(routePointCount),
     label: pluralRu(routePointCount, 'точка маршрута', 'точки маршрута', 'точек маршрута'),
   },
-  d.format ? { value: d.format, label: 'формат', kind: 'format' as const } : null,
+  d.format ? { value: d._i18n?.formatLabel ?? d.format, label: 'формат', kind: 'format' as const } : null,
 ].filter(Boolean);
 
 // Media QA status must never silently remove a source image from the page.
@@ -127,7 +134,7 @@ const { introHeadingHtml, descriptionHtml } = splitTourIntroHtml(tourBodyHtml);
 const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
 ---
 
-<BaseLayout breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : b2b ? "Рассчитать программу для нашей группы" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={metaDescription} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
+<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} breadcrumbsInHero leadTourId={archived ? undefined : d.id} leadTitle={archived ? "Подобрать другую поездку" : b2b ? "Рассчитать программу для нашей группы" : "Получить расчет и адаптировать маршрут под ваши даты"} leadEntityId={archived ? "" : d.id} headerTheme={archived ? 'dark' : 'light'} noindex={archived} title={seoTourTitle(d)} description={metaDescription} image={d.hero?.src} canonical={tourPath(d)} breadcrumbs={tourBreadcrumbs(d)}>
   {!archived && <SearchIndexRecord
     title={d.title}
     summary={d.lead}
@@ -279,7 +286,9 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
         text.classList.toggle('is-collapsed', long && !expanded);
         toggle.hidden = !long;
         toggle.setAttribute('aria-expanded', String(expanded));
-        label.textContent = expanded ? 'Свернуть' : 'Подробнее о путешествии';
+        label.textContent = document.documentElement.dataset.adaSharedLocale === 'en'
+          ? expanded ? 'Show less' : 'More about the journey'
+          : expanded ? 'Свернуть' : 'Подробнее о путешествии';
       };
 
       toggle.addEventListener('click', () => {
@@ -417,3 +426,4 @@ const hasTourDescription = Boolean(d.lead?.trim() || tourBodyHtml.trim());
     .tour-links__label { margin: 0; }
   }
 </style>
+

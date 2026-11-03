@@ -1,5 +1,37 @@
 # Ada Tours: English site — progress and resume point
 
+Updated: 2026-11-03 (Europe/Moscow). Canonical source branch: `main`.
+
+## Current checkpoint — 2026-11-03
+
+Read `docs/workflows/english-site.md` v1.8 and
+`35-shared-approved-content.md` before the historical checkpoints below.
+The current owner instruction is to display every existing valid English
+text in the complete shared site, keeping Russian only where no translation
+is available. Do not replace the full layouts with the older 22-page demo.
+
+The previous translation preparation is preserved: PR #77, canonical code
+commit `3c3f1f873d56a7bad8bfd5f8e01363083ec2a824`, mass staging head
+`691306df7cdae1e1cb899cbac2bfc4dcbe781230`. Live index:
+353 Tour, 4,006 jobs, 2,410 queued, one ready, 1,595 held, no active leases;
+Word 2027 dispatch is open, publication remains disabled.
+Thirty previously accepted blocks were excluded from duplicate work.
+The exact new Rio b001 result and its separate QA receipt remain preserved;
+its inclusion in this site release is not claimed.
+
+Current work connects source-bound English fields and shared UI copy to
+the canonical Astro content loader and complete layouts, retaining the one
+set of facts, media, routes and relations. Implementation checks and actual
+CI/Pages evidence are recorded separately in plan 35. At this checkpoint
+the new CI and EN deployment are still pending.
+
+Everything below is the historical record of preparation and subsequent
+checkpoints. Old branch names and disabled-gate statements describe their
+dates; they must not restart completed matching or overwrite the current
+mass queue.
+
+## Historical baseline — 2026-10-29
+
 Updated: 2026-10-29 (Europe/Moscow). Working branch: `feat/english-site-foundation`.
 Baseline: `b1b14ed3a8abab9773053f836fed28c2ff77204f`.
 Status: architecture/source preparation and isolated foundation verification
@@ -401,3 +433,4 @@ Full handoff: [26-shared-geo-model-tour-excursion.md](26-shared-geo-model-tour-e
 This is not the full production EN `TourLayout` or public release;
 `main`, common Word prices, form endpoint and mass translation were
 not changed by this work.
+

@@ -22,6 +22,7 @@ import { safeJsonLd, SCHEMA_VERSION } from '../lib/structured-data.mjs';
 import { privatePilotEnabled } from '../lib/i18n/pilot-html.mjs';
 import {enStagingSiteEnabled,EN_STAGING_ROUTE} from '../lib/i18n/en-staging-site.mjs';
 
+const sharedEnglishContent = enStagingSiteEnabled(process.env) && process.env.EN_SHARED_CONTENT === '1';
 await validateSiteContent();
 
 interface Props {
@@ -110,7 +111,7 @@ const breadcrumbLabels: Record<string, string> = {
 const pageTitle = title.replace(/\s*[|–—-]\s*Ada Tours.*$/i, '').trim();
 // Only published, canonical first pages receive an additional SEO/GEO article.
 // Articles are compiled into HTML at build time, without client-side fetching.
-const seoGeoArticle = !noindex && lang === 'ru' && logicalPath !== '/' &&
+const seoGeoArticle = !noindex && (lang === 'ru' || sharedEnglishContent) && logicalPath !== '/' &&
   !/\/page\/[0-9]+\/?$/.test(logicalPath)
   ? await loadSeoGeoArticle(logicalPath, pageTitle)
   : null;
@@ -140,7 +141,7 @@ const breadcrumbSchemas = !noindex && showBreadcrumbs && (segments.length > 0 ||
 
 // Render exactly once. The graph describes this same HTML, including current card slices.
 // Legacy child JSON-LD is consumed and removed, preventing duplicate Person/Trip graphs.
-const schema = privatePreview
+const schema = privatePreview || sharedEnglishContent
   ? { metaTitle: fullTitle, metaDescription: description, html: renderedBody, graph: null }
   : await pageStructuredData({
       root: rootUrl, html: renderedBody, path: logicalPath,
@@ -151,7 +152,7 @@ const metaTitle = schema.metaTitle;
 const metaDescription = schema.metaDescription;
 ---
 <!doctype html>
-<html lang={lang} data-ada-en-pilot={privatePreview ? 'true' : undefined} data-public-release={privatePreview ? 'false' : undefined} data-ada-shell={privatePreview ? 'BaseLayout' : undefined}>
+<html lang={lang} data-ada-entity-id={sharedEnglishContent ? (leadTourId || leadEntityId) : undefined} data-ada-shared-locale={sharedEnglishContent ? 'en' : undefined} data-ada-en-pilot={privatePreview ? 'true' : undefined} data-public-release={privatePreview || sharedEnglishContent ? 'false' : undefined} data-ada-shell={privatePreview ? 'BaseLayout' : undefined}>
   <head>
     <!-- Google Analytics 4: Ada Tours -->
     {!privatePreview && <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-FM6ZVZH2ZX"></script>}
@@ -189,7 +190,7 @@ const metaDescription = schema.metaDescription;
     <noscript><style is:inline>img[data-lazy-src], picture[data-lazy-picture] { display: none !important; }</style></noscript>
     <meta name="theme-color" content="#fffcf8" />
     {!privatePreview && <script is:inline src={withBase('/form-config.js?v=20261022-postbox-1')}></script>}
-    {!privatePreview && <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />}
+    {!privatePreview && !sharedEnglishContent && <script type="application/ld+json" data-schema-version={SCHEMA_VERSION} set:html={safeJsonLd(schema.graph)} />}
     <!-- Yandex.Metrika: Ada Tours, counter 113586792 -->
 
   </head>
@@ -232,3 +233,4 @@ const metaDescription = schema.metaDescription;
   .ada-preview-skip { position:absolute; top:0; left:12px; z-index:1000; background:white; padding:12px 18px; transform:translateY(-150%); }
   .ada-preview-skip:focus { transform:translateY(0); }
 </style>
+

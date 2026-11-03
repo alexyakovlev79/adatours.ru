@@ -79,7 +79,7 @@ const featureBandImageTextAlign = (href: string) => {
 };
 ---
 
-<BaseLayout leadTitle={`Собрать путешествие по стране: ${d.name}`} leadEntityId={d.id}
+<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={`Собрать путешествие по стране: ${d.name}`} leadEntityId={d.id}
   title={seoCountryTitle(d.name,destinationEntries.length,excursionEntries.length,tourEntries.length)}
   description={seoAttractionsDescription(d.summary,destinationEntries.length,seoCountryCase(d.id,'genitive'))}
   image={d.hero?.src}
@@ -211,7 +211,7 @@ const featureBandImageTextAlign = (href: string) => {
           <DestinationBand
             eyebrow={[
               item.data.durationDays ? `${item.data.durationDays} дней` : '',
-              item.data.format ?? '',
+              item.data._i18n?.formatLabel ?? item.data.format ?? '',
             ].filter(Boolean).join(' · ')}
             title={item.data.title}
             image={item.data.hero?.src}
@@ -249,7 +249,7 @@ const featureBandImageTextAlign = (href: string) => {
       <div class="country-linked__grid">
           {excursionEntries.slice(0, previewLimits.excursions).map((item, index) => {
             const image = item.data.hero?.src ? withBase(item.data.hero.src) : undefined;
-            const meta = [item.data.duration ?? '', item.data.format ?? ''].filter(Boolean).join(' · ');
+            const meta = [item.data.duration ?? '', item.data._i18n?.formatLabel ?? item.data.format ?? ''].filter(Boolean).join(' · ');
             return (
               <a
                 class:list={['entity-poster', { 'entity-poster--wide': index % 5 === 0 }]}
@@ -804,3 +804,4 @@ const featureBandImageTextAlign = (href: string) => {
     }
   }
 </style>
+

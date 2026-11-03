@@ -1,5 +1,7 @@
 ---
 import { destinationTypeLabel } from '../lib/destination-taxonomy.mjs';
+import { uiText, countInEnglish } from '../lib/i18n/messages.mjs';
+import { sharedUiLocale, translateUiText } from '../lib/i18n/shared-ui-locale.mjs';
 import catalogHeroOverrides from '../data/media/catalog-hero-overrides.json';
 import { countLabel, countryMembership } from '../lib/interest-model.mjs';
 import { seoPaginatedTitle } from '../lib/seo-page.mjs';
@@ -47,6 +49,8 @@ interface Props {
 }
 
 const { leadTitle, leadEntityId, kind, entries, title, h1Title = title, description, canonical, breadcrumbs, hero: defaultHero, pagination: p, catalogVersion, variant, countryContextId, themeContextId, navigationLabel, navigationLinks = [], countryOverview } = Astro.props;
+const uiLocale = sharedUiLocale();
+const translate = (text: string) => translateUiText(text,uiLocale);
 // Catalogue covers are page-specific, including pagination, and never alter card images.
 const heroOverrides: Record<string, { src: string }> = catalogHeroOverrides.covers;
 const hero = heroOverrides[canonical]?.src ?? defaultHero;
@@ -55,8 +59,8 @@ const isVipCatalog = variant === 'vip-tours' || variant === 'vip-country-tours';
 const showTourFilters = kind === 'tour' && (isVipCatalog || variant === 'global-tours'
   || /^\/[a-z0-9-]+\/tour\/$/.test(p.rootPath)
   || /^\/interests\/[^/]+\/tours\/(?:[^/]+\/)?$/.test(p.rootPath));
-const eyebrow = isVipCatalog ? 'VIP / Luxury' : kind === 'tour' ? 'Туры' : kind === 'excursion' ? 'Экскурсии' : kind === 'theme' ? 'По интересам' : 'Направления';
-const pageSuffix = p.currentPage > 1 ? ` — страница ${p.currentPage}` : '';
+const eyebrow = isVipCatalog ? 'VIP / Luxury' : uiText(uiLocale, kind === 'tour' ? 'nav.tours' : kind === 'excursion' ? 'nav.excursions' : kind === 'theme' ? 'nav.interests' : 'nav.places');
+const pageSuffix = p.currentPage > 1 ? uiLocale === 'en' ? ` — page ${p.currentPage}` : ` — страница ${p.currentPage}` : '';
 const multiCountryPageCountries = variant === 'multi-country-tours'
   ? [...new Map(entries.flatMap((entry) => mainTourCountries((entry as CollectionEntry<'tours'>).data)).map((country) => [country.id, country])).values()]
   : [];
@@ -69,19 +73,19 @@ const vipPageCountries = variant === 'vip-tours'
 const vipCountryText = vipPageCountries.length
   ? `${vipPageCountries.slice(0, 6).map((country) => country.name).join(', ')}${vipPageCountries.length > 6 ? ' и другие' : ''}`
   : 'Латинская Америка';
-const metaTitle = variant === 'multi-country-tours' || variant === 'vip-tours'
+const sourceMetaTitle = variant === 'multi-country-tours' || variant === 'vip-tours'
   ? `${title} — страница ${p.currentPage} из ${p.totalPages}`
   : variant === 'vip-country-tours'
     ? `${seoPaginatedTitle(`${title}: ${countLabel(p.totalItems, ['маршрут', 'маршрута', 'маршрутов'])} и цены`, p.currentPage)} | Ada Tours`
   : seoPaginatedTitle(title,p.currentPage);
-const metaDescription = variant === 'multi-country-tours'
+const sourceMetaDescription = variant === 'multi-country-tours'
   ? `Multi-country туры Ada Tours — страница ${p.currentPage} из ${p.totalPages}. Маршруты ${p.from}–${p.to} из ${p.totalItems}; страны на этой странице: ${multiCountryCountryText}.`
   : variant === 'vip-tours'
     ? `VIP и Luxury туры Ada Tours — страница ${p.currentPage} из ${p.totalPages}. Маршруты ${p.from}–${p.to} из ${p.totalItems}; страны на этой странице: ${vipCountryText}. Частный формат и персональная адаптация программы.`
     : p.currentPage > 1
       ? `${description} Страница ${p.currentPage} из ${p.totalPages}, ${kind==='tour' && /^\/[a-z0-9-]+\/tour\/$/.test(p.rootPath) ? 'туры' : 'объекты'} ${p.from}–${p.to} из ${p.totalItems}.`
       : description;
-const presentation = variant === 'global-tours' ? {
+const sourcePresentation = variant === 'global-tours' ? {
   title: 'Путешествия по Латинской Америке',
   intro: 'Готовые маршруты Ada Tours можно взять за основу и изменить под ваши даты, длительность, отели и состав программы.',
   editorial: { eyebrow: 'Выберите основу', text: 'От короткой поездки по Бразилии до большого маршрута по нескольким странам. Каждый вариант можно доработать под вас.' },
@@ -102,9 +106,24 @@ const presentation = variant === 'global-tours' ? {
   intro: `Маршруты ${p.from}–${p.to} из ${p.totalItems}. На этой странице представлены поездки по направлениям: ${vipCountryText}.`,
   editorial: undefined,
 } : { title: h1Title, intro: description, editorial: undefined };
+const presentation = {
+  ...sourcePresentation,
+  title: translate(sourcePresentation.title),
+  intro: translate(sourcePresentation.intro),
+  editorial: sourcePresentation.editorial ? {
+    eyebrow: translate(sourcePresentation.editorial.eyebrow),
+    text: translate(sourcePresentation.editorial.text),
+  } : undefined,
+};
+const translatedGlobalCatalogue = uiLocale === 'en' && ['global-tours','global-places','global-excursions'].includes(variant ?? '');
+const metaTitle = translatedGlobalCatalogue ? `${presentation.title} — ${p.totalItems}${pageSuffix}` : translate(sourceMetaTitle);
+const metaDescription = translatedGlobalCatalogue ? `${presentation.intro}${p.currentPage > 1 ? ` Page ${p.currentPage} of ${p.totalPages}.` : ''}` : translate(sourceMetaDescription);
+const localizedBreadcrumbs = breadcrumbs.map(item => 'links' in item
+  ? {...item,links:item.links.map(link=>({...link,label:translate(link.label)}))}
+  : {...item,label:translate(item.label)});
 const pageBreadcrumbs: BreadcrumbItem[] = p.currentPage > 1
-  ? [...breadcrumbs, { label: `Страница ${p.currentPage}`, href: canonical }]
-  : breadcrumbs;
+  ? [...localizedBreadcrumbs, { label: uiText(uiLocale,'pagination.pageAria',{page:p.currentPage}), href: canonical }]
+  : localizedBreadcrumbs;
 const cards = entries.map((entry) => {
   if (kind === 'theme') {
     const d = (entry as CollectionEntry<'themes'>).data;
@@ -125,16 +144,16 @@ const cards = entries.map((entry) => {
                 .sort((a, b) => a.slug.localeCompare(b.slug, 'en')).map((country) => country.name))
             : mainTourCountries(d).map((country) => country.name).join(' + ')
           : '',
-        d.durationDays ? countLabel(d.durationDays, ['день', 'дня', 'дней']) : '',
+        d.durationDays ? uiLocale === 'en' ? countInEnglish(d.durationDays,'day','days') : countLabel(d.durationDays, ['день', 'дня', 'дней']) : '',
         isVipCatalog ? vipTourPriceLabel(d) : '',
-        d.format,
-        countryContextId && countryMembership(d, countryContextId) < 1 ? 'Дополнительное посещение страны' : '',
+        d._i18n?.formatLabel ?? d.format,
+        countryContextId && countryMembership(d, countryContextId) < 1 ? translate('Дополнительное посещение страны') : '',
       ].filter(Boolean).join(' · '),
     };
   }
   if (kind === 'excursion') {
     const d = (entry as CollectionEntry<'excursions'>).data;
-    return { data: d, title: d.title, text: d.lead, href: excursionPath(d), meta: [d.duration, d.format].filter(Boolean).join(' · ') };
+    return { data: d, title: d.title, text: d.lead, href: excursionPath(d), meta: [d.duration, d._i18n?.formatLabel ?? d.format].filter(Boolean).join(' · ') };
   }
   const d = (entry as CollectionEntry<'destinations'>).data;
   return { data: d, title: d.name, text: d.summary, href: destinationPath(d), meta: [variant === 'global-places' ? countryRoute(d.countryId).name : '', destinationTypeLabel(d.destinationType)].filter(Boolean).join(' · ') };
@@ -154,7 +173,7 @@ const listSchema = {
 };
 ---
 
-<BaseLayout leadTitle={leadTitle} leadEntityId={leadEntityId} title={metaTitle} description={metaDescription} canonical={canonical} breadcrumbs={pageBreadcrumbs} image={hero} pageSchema={listSchema}>
+<BaseLayout lang={translatedGlobalCatalogue ? 'en' : 'ru'} leadTitle={leadTitle} leadEntityId={leadEntityId} title={metaTitle} description={metaDescription} canonical={canonical} breadcrumbs={pageBreadcrumbs} image={hero} pageSchema={listSchema}>
   <Hero
     eyebrow={eyebrow}
     title={`${presentation.title}${pageSuffix}`}
@@ -166,12 +185,12 @@ const listSchema = {
   {variant === 'multi-country-tours' && <MultiCountrySelector />}
   {showTourFilters && <TourFilters countryId={countryContextId} themeId={themeContextId} vip={isVipCatalog} />}
   {navigationLinks.length > 0 && (
-    <nav class="catalog-navigation container" aria-label={navigationLabel ?? 'Связанные разделы'}>
+    <nav class="catalog-navigation container" aria-label={translate(navigationLabel ?? 'Связанные разделы')}>
       <ul>
         {navigationLinks.map((link) => (
           <li>
             <a href={withBase(link.href)}>
-              <span>{link.label}</span>
+              <span>{translate(link.label)}</span>
               <span class="catalog-navigation__arrow" aria-hidden="true">↗</span>
             </a>
           </li>
@@ -180,9 +199,9 @@ const listSchema = {
     </nav>
   )}
   {countryOverview && (
-    <section class="catalog-country" aria-label={`О стране: ${countryOverview.name}`}>
+    <section class="catalog-country" aria-label={`${translate('О стране')}: ${countryOverview.name}`}>
       <DestinationBand
-        eyebrow="О стране"
+        eyebrow={translate('О стране')}
         title={countryOverview.name}
         href={countryOverview.href}
         image={countryOverview.image}
@@ -197,8 +216,8 @@ const listSchema = {
   )}
   {p.currentPage > 1 && (
     <div class="catalog-start container">
-      <a href={withBase(p.rootPath)}>← На первую страницу каталога</a>
-      <span>Страница {p.currentPage} из {p.totalPages}</span>
+      <a href={withBase(p.rootPath)}>← {uiText(uiLocale,'pagination.first')}</a>
+      <span>{uiLocale === 'en' ? `Page ${p.currentPage} of ${p.totalPages}` : `Страница ${p.currentPage} из ${p.totalPages}`}</span>
     </div>
   )}
   <div
@@ -292,4 +311,5 @@ const listSchema = {
   .catalog-start a { color: var(--color-ink); text-underline-offset: .25em; }
   .catalog-start span { font-size: .95rem; }
 </style>
+
 

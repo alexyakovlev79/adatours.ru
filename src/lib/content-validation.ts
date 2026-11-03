@@ -136,7 +136,7 @@ async function validateContent(): Promise<void> {
     else if (planned.countryId !== d.countryId || planned.slug !== d.slug) errors.push(`${d.id}: countryId/slug не совпадает с закреплённым каталогом.`);
     if (destinationReservations.entries.some((item) => item.id === d.id)) {
       if (!d.summary.trim() || !d.hero?.src?.trim()) errors.push(`${d.id}: заполненный резерв требует описания и фотографии в самой странице места.`);
-      if (planned && d.name !== planned.name) errors.push(`${d.id}: название заполненного места должно совпадать с резервом.`);
+      if (planned && (d._i18n?.sourceName ?? d.name) !== planned.name) errors.push(`${d.id}: название заполненного места должно совпадать с резервом.`);
     }
   }
 
@@ -268,3 +268,4 @@ async function validateContent(): Promise<void> {
 
   if (errors.length) throw new Error(`Ошибки контента (${errors.length}):\n${errors.sort().join('\n')}`);
 }
+

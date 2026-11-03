@@ -3,20 +3,23 @@ import { getTourFilterIndex } from '../../lib/tour-filter-catalog';
 import { tourFilterOptions } from '../../lib/tour-filters.mjs';
 import CatalogFilterMenu from './CatalogFilterMenu.astro';
 import { withBase } from '../../lib/paths';
+import { uiText } from '../../lib/i18n/messages.mjs';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 
 interface Props { countryId?: string; themeId?: string; vip?: boolean; countryOverview?: boolean; }
 const { countryId, themeId, vip = false, countryOverview = false } = Astro.props;
+const uiLocale = sharedUiLocale();
 const index = await getTourFilterIndex();
 const options = tourFilterOptions(index.regular, index.vip, { countryId, themeId, vip, countryOverview });
 const menus = [
-  { label: 'Страна', placeholder: 'Выбрать страну', selected: countryId,
-    options: options.countries, reset: 'Все страны', resetHref: options.allCountriesHref },
-  { label: 'Интерес', placeholder: 'Выбрать интерес', selected: themeId,
-    options: options.themes, reset: 'Все интересы', resetHref: options.allThemesHref },
+  { label: uiText(uiLocale,'filter.country'), placeholder: uiText(uiLocale,'filter.chooseCountry'), selected: countryId,
+    options: options.countries, reset: uiText(uiLocale,'nav.allCountries'), resetHref: options.allCountriesHref },
+  { label: uiText(uiLocale,'filter.interest'), placeholder: uiText(uiLocale,'filter.chooseInterest'), selected: themeId,
+    options: options.themes, reset: uiText(uiLocale,'nav.allInterests'), resetHref: options.allThemesHref },
 ];
 ---
 
-<nav class="tour-filters container" aria-label={vip ? 'Подбор VIP-туров' : 'Подбор туров'} data-tour-filters>
+<nav class="tour-filters container" aria-label={uiText(uiLocale,vip ? 'filter.vipAria' : 'filter.toursAria')} data-tour-filters>
   {menus.map((menu) => <CatalogFilterMenu {...menu} />)}
   <div class="tour-filters__vip-field">
     <label class:list={['tour-filters__vip', { 'tour-filters__vip--unavailable': !options.toggleHref }]}>
@@ -25,8 +28,8 @@ const menus = [
         aria-describedby={!options.toggleHref ? 'tour-filter-vip-note' : undefined} />
       <span>VIP</span>
     </label>
-    {!options.toggleHref && <small id="tour-filter-vip-note" class="tour-filters__note">Для этой подборки пока нет VIP-туров.</small>}
-    {options.toggleHref && <noscript><a class="tour-filters__fallback" href={withBase(options.toggleHref)}>{vip ? 'Все туры этой подборки' : 'VIP-туры этой подборки'}</a></noscript>}
+    {!options.toggleHref && <small id="tour-filter-vip-note" class="tour-filters__note">{uiText(uiLocale,'filter.noVip')}</small>}
+    {options.toggleHref && <noscript><a class="tour-filters__fallback" href={withBase(options.toggleHref)}>{uiText(uiLocale,vip ? 'filter.allSelection' : 'filter.vipSelection')}</a></noscript>}
   </div>
 </nav>
 
@@ -51,3 +54,4 @@ const menus = [
   .tour-filters__fallback { display: inline-block; margin-top: 8px; color: var(--color-ink); text-underline-offset: .2em; }
   @media (max-width: 600px) { .tour-filters { grid-template-columns: 1fr; gap: 16px; } .tour-filters__vip-field { padding-top: 0; } .tour-filters__note { max-width: none; } }
 </style>
+

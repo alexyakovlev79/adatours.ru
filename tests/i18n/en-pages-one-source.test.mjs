@@ -11,5 +11,8 @@ test('dedicated EN Pages repo contains only an invocation of the single-source w
  assert.match(source,/alexyakovlev79\/adatours-en/);
  assert.match(source,/ref: main\s+path: website/);
  assert.doesNotMatch(source,/schedule:/);
- assert.match(source,/ref: main\s+path: canonical-main/);
+ assert.doesNotMatch(source,/path: canonical-main/);
+ assert.match(source,/git -C website rev-parse HEAD/);
+ assert.match(source,/EN_SHARED_CONTENT: '1'/);
 });
+

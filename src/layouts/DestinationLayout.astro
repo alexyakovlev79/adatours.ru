@@ -101,7 +101,7 @@ const firstHeadingHtml = firstHeadingMatch?.[1] ?? '';
 const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstHeadingHtml.length) : descriptionHtml;
 ---
 
-<BaseLayout leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
+<BaseLayout lang={d._i18n?.contentLanguage ?? 'ru'} leadTitle={`Собрать поездку: ${d.name}`} leadEntityId={d.id}
   title={seoDestinationTitle(d.name,d.countryId,relatedExcursions.length,allRelatedTourEntries.length)}
   description={seoRelatedToursDescription(`Достопримечательности и экскурсии: ${d.name}. ${d.summary}`,allRelatedTourEntries.length,'destination')}
   image={d.hero?.src}
@@ -167,7 +167,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
       <EditorialStatement eyebrow="Маршруты" text={`Туры через ${d.name}`} />
       {relatedTours.slice(0, previewLimits.tours).map((tour, index) => (
         <DestinationBand
-          eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
+          eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data._i18n?.formatLabel ?? tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}
           image={tour.data.hero?.src}
           imageTextAlign={tour.data.imageTextAlign}
@@ -188,7 +188,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
       <EditorialStatement eyebrow="Можно добавить" text={`К этим турам можно добавить экскурсию в ${d.name}`} />
       {optionalTours.slice(0, previewLimits.optionalTours).map((tour, index) => (
         <DestinationBand
-          eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data.format ?? ''].filter(Boolean).join(' · ')}
+          eyebrow={[tour.data.durationDays ? `${tour.data.durationDays} дней` : '', tour.data._i18n?.formatLabel ?? tour.data.format ?? ''].filter(Boolean).join(' · ')}
           title={tour.data.title}
           image={tour.data.hero?.src}
           imageTextAlign={tour.data.imageTextAlign}
@@ -215,7 +215,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
       <EditorialStatement eyebrow="Экскурсии" text={`Экскурсии: ${d.name}`} />
       {relatedExcursions.slice(0, previewLimits.excursions).map((excursion, index) => (
         <DestinationBand
-          eyebrow={[excursion.data.duration ?? '', excursion.data.format ?? ''].filter(Boolean).join(' · ')}
+          eyebrow={[excursion.data.duration ?? '', excursion.data._i18n?.formatLabel ?? excursion.data.format ?? ''].filter(Boolean).join(' · ')}
           title={excursion.data.title}
           text={excursion.data.lead}
           image={excursion.data.hero?.src}
@@ -425,6 +425,7 @@ const remainingDescriptionHtml = firstHeadingHtml ? descriptionHtml.slice(firstH
     .destination-copy__toggle { display: none; }
   }
 </style>
+
 
 
 

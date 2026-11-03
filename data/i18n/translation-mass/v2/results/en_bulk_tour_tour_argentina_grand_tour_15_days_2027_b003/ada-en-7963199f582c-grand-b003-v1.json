@@ -1,0 +1,134 @@
+{
+  "jobId": "en:bulk:tour:tour_argentina_grand_tour_15_days_2027:b003",
+  "stableId": "tour_argentina_grand_tour_15_days_2027",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "78b3c10505dc43c3d2462b012d64d88bf0b4fb06259bc42138d145ee3285d68d",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_label:2fd4a75b8b01499f",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7c23851037d843547ded8c51de18c116fa84d8466693ce6f636296ce52b1e596",
+      "text": "Perito Moreno",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+        "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p49",
+            "textSha256": "42d79a7b9d0b2978aac472cca96c905574bd6305821c0e4b056dc70f2168beb2"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the glacier's proper name from the verified Day 13 heading, preserving the shorter RU route label."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:baf4a32c564902b5:2",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b42ff9a3989d4629eec9484e53b062fd49f521cde7014ee62be06fbe6eb775f",
+      "text": "Buenos Aires",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+        "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p53",
+            "textSha256": "a0329013c1efa6e57a90481cb72bd48cb50b075e69e409a92f3efb156825bf39"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the arrival city from the verified Day 14 route heading."
+      }
+    },
+    {
+      "blockId": "tour:included:da3bac7a94b8d2be",
+      "field": "included",
+      "sourceTextSha256": "54ed9c5a8630f1f3bf82312d245e6846557f76485557028e358ce85c94635eb1",
+      "text": "Accommodation in the listed hotels and room categories, 14 nights, with breakfast (BB)",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-7963199f582c",
+        "wordAbsenceReason": "Verified Word paragraphs 3 and 58–66 specify the total nights and individual hotel/room/BB entries; there is no single standalone aggregate inclusion sentence matching this RU block. Translate the current RU summary without changing hotels or nights."
+      }
+    },
+    {
+      "blockId": "tour:included:19b4d5aab2dd8407",
+      "field": "included",
+      "sourceTextSha256": "4d4a70b9507e78a12bcd20288c07057195d1cce988619b223aa0a639b73b8dbd",
+      "text": "English-speaking guides on the days indicated in the programme",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-7963199f582c",
+        "wordAbsenceReason": "The verified Word specifies English-speaking guides separately in the relevant day paragraphs, but has no standalone inclusion matching the RU summary. Translate this RU-derived service label using the owner's 03 November 2026 English-language adaptation rule."
+      }
+    },
+    {
+      "blockId": "tour:included:3e77fc3c3edd6d04",
+      "field": "included",
+      "sourceTextSha256": "11afbfd8b5bcdc3deaab5cd304821dc2610d2b0d5e3834ceb23a8494be13fea1",
+      "text": "Gala Tango with dinner and private transfers",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+        "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p11",
+            "textSha256": "9a4ad10008dd3a4a26309bdebda3b4383f5a90efc92e9223248b576506b12939"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the short inclusion label from the verified dinner and Gala Tango sentence; preserve private transfers and omit the day-specific evening introduction."
+      }
+    },
+    {
+      "blockId": "tour:included:c1153ce1e6b4cb89",
+      "field": "included",
+      "sourceTextSha256": "abb9f793eb0d7e77e1dfdef5bc421482b07dcc432af92cc443c6c358fbbade76",
+      "text": "Park entrance tickets and a shared-group boat safari at Perito Moreno",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-7963199f582c",
+        "wordAbsenceReason": "Verified Word paragraph 50 contains a full-day guided excursion sentence rather than this standalone inclusion label. Translate the current RU label, retaining park tickets and the shared-group boat safari without adding other services."
+      }
+    },
+    {
+      "blockId": "tour:included:7238418a12c6f46d",
+      "field": "included",
+      "sourceTextSha256": "9a555b7489fd93e1ed5ca230916cad33a041200a2a2a181e4d82c7a484007f40",
+      "text": "Winery visits with tastings in Luján de Cuyo and the Uco Valley",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-7963199f582c",
+        "wordAbsenceReason": "Verified Word paragraphs 40 and 43 describe two separate excursions and their tasting activities, not the combined standalone RU inclusion. Translate the frozen RU summary without expanding the included services."
+      }
+    },
+    {
+      "blockId": "tour:included:41d1927fa959719f",
+      "field": "included",
+      "sourceTextSha256": "14b06a01b47bb079a7f2acaa2de62f2d60ba389e5054a7399f8e65aa862bcbde",
+      "text": "Dinner in a cave as part of the Nativo Experience",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1QkTe_ZNywIecx29otLIyGHjhNP_KgAhn",
+        "documentSha256": "658d28ef6440ba90d2b71eaa4473f9c03585ab1da92957aee5deaf15c7f25952",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p47",
+            "textSha256": "9b3db0f2c589bfb658c8b4dc246beb5808692f7e2baddff16bba4b518e31e91e"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Compose the short contextual service label from the verified Nativo Experience paragraph and its cave-dinner sentence; retain the RU label's limited scope."
+      }
+    }
+  ]
+}

@@ -313,7 +313,99 @@
         "claimedAt": "2026-11-03T23:24:44.583Z",
         "expiresAt": "2026-11-04T00:54:44.583Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-40d0e44e-009-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-40d0e44eb57848bf",
+        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_southern_vip_7_days:b011",
+          "stableId": "tour_brazil_southern_vip_7_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "ccc6f9fcbb7fc63987d2e7466517de2d936768559b6809ed50078a2b4107e9ff",
+          "blocks": [
+            {
+              "blockId": "tour:media_hover:d80f3675091ff0c4",
+              "field": "media.hover",
+              "sourceTextSha256": "c5c53a326d2e1b4aa949af6f06cacaa2686888ebbee35e03c5d06741eb4335bf",
+              "text": "Florianópolis, Brazil: a blue fountain pool and the arcades of a yellow building",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "The verified Word has no corresponding image-specific ALT or hover caption; translate only the current Russian description."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:00a9533259c2b087",
+              "field": "itinerary.label",
+              "sourceTextSha256": "31078d7ff208026ecc9f265bc7eefd315224141c28415f9efaa371365100f575",
+              "text": "Florianópolis",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "15xqDgjW57k5FWWwaZbXCBhEKIR75cD3S",
+                "documentSha256": "2319bd3f1c856c366cadeaced7e1d2328de47e9dcfb397f1fa1ef0c2a2b10601",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p124",
+                    "textSha256": "35b757f7bc7167a2ebc19a605b56abae1b4372bafd056029adbcd9774658c481"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:68ebdd10346d3d20",
+              "field": "media.alt",
+              "sourceTextSha256": "4778ed01024b76c85deb25d1e60c1f44dfa461c47cabe5c737f716e2ad04558f",
+              "text": "A light-coloured multistorey building with decorative façades, balconies and steep roofs",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "The verified Word has no corresponding image-specific ALT or hover caption; translate only the current Russian description."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:77871c8f58bdcbc6",
+              "field": "media.hover",
+              "sourceTextSha256": "ca7206c1493f17c0a68970d476570ffaacaa32eca1c25f1a5a1fc95bc9707ff6",
+              "text": "A building with balconies and tall pointed roofs",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-40d0e44eb57848bf",
+                "wordAbsenceReason": "The verified Word has no corresponding image-specific ALT or hover caption; translate only the current Russian description."
+              }
+            }
+          ],
+          "commercialComparison": {
+            "status": "unchanged",
+            "currency": "USD",
+            "amount": 10043,
+            "basis": "per passenger",
+            "partySize": 2,
+            "occupancy": "No separate SGL/DBL/TPL rates in source programme",
+            "wordEvidence": [
+              {
+                "ref": "word/document.xml:p136",
+                "textSha256": "fbf32ceee52021b06ef7312ccd2ff64c36887f6359090bf592da89214406c974"
+              },
+              {
+                "ref": "word/document.xml:p137",
+                "textSha256": "9e1b922aca344404760e9d528d1fbe4b5edb13eba0c25931a7350320f599db15"
+              },
+              {
+                "ref": "word/document.xml:p140",
+                "textSha256": "4c6a45befce6b41a053ec4dac1486cf5077242e22f5677b36a5ed7dd31822539"
+              }
+            ]
+          }
+        },
+        "at": "2026-11-03T23:25:44.818Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

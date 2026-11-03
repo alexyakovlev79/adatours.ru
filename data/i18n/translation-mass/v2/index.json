@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2257,
-    "leased": 21,
+    "queued": 2256,
+    "leased": 22,
     "review": 132,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2257,
-      "leased": 21,
+      "queued": 2256,
+      "leased": 22,
       "review": 132,
       "ready": 1,
       "retryable": 0,
@@ -128,8 +128,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 74,
-          "leased": 0,
+          "queued": 73,
+          "leased": 1,
           "review": 4,
           "ready": 0,
           "retryable": 0,
@@ -160,7 +160,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-03T23:57:28.551Z",
       "earliestRetryAt": null
     },
     "13": {
@@ -1433,6 +1433,12 @@
       "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
       "expiresAt": "2026-11-03T23:57:13.531Z",
       "generation": 1
+    },
+    "ada-en-6b8358141bab": {
+      "jobId": "en:bulk:tour:tour_brazil_dunes_13d:b011",
+      "token": "tkn-6b8358141bab-20261104",
+      "expiresAt": "2026-11-03T23:57:28.551Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -2025,8 +2031,15 @@
         "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b009"
       ],
       "completedJobIds": []
+    },
+    "ada-en-6b8358141bab": {
+      "token": "tkn-6b8358141bab-20261104",
+      "jobIds": [
+        "en:bulk:tour:tour_brazil_dunes_13d:b011"
+      ],
+      "completedJobIds": []
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T22:27:13.531Z"
+  "updatedAt": "2026-11-03T22:27:28.551Z"
 }

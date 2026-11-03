@@ -251,98 +251,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b001",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "818bf7a0433eedc68bd226501687103fd9eaf9097a13320358a797a99f81c2e4",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-daf0a8173bbc-20261104",
-        "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
-        "claimedAt": "2026-11-03T23:21:33.951Z",
-        "expiresAt": "2026-11-04T00:51:33.951Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-daf0a8173bbc-07-4",
-        "format": "inline-v1",
-        "ownerId": "ada-en-daf0a8173bbc-20261104",
-        "token": "ada-daf0a8173bbc-b27a8c6319f24e0a",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b001",
-          "stableId": "tour_brazil_recife_porto_noronha_10d",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "818bf7a0433eedc68bd226501687103fd9eaf9097a13320358a797a99f81c2e4",
-          "blocks": [
-            {
-              "blockId": "tour:title:aaf2320646108059",
-              "field": "title",
-              "sourceTextSha256": "0daa23f09fa33592e5aa748cc087dae45893236d67ff49aac4fda2ba89d822c4",
-              "text": "Recife, Porto de Galinhas & Fernando de Noronha",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p3",
-                    "textSha256": "272deb195a998cd0507387aa2b23c1a91e627389bb4d2025a86368da5680ac48"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:lead:e3456bc1f4d270f4",
-              "field": "lead",
-              "sourceTextSha256": "d2aa8dfd9fed388122f73e372cf4cf0b7b2891073665982576413ca437a08031",
-              "text": "To enjoy some of Brazil’s most beautiful beaches, head to the state of Pernambuco, in the northeast, where turquoise water, white sand and palm trees await, and resorts such as Porto de Galinhas line the coast. Off the coast, the islands of Fernando de Noronha form a national marine park of extraordinary natural beauty, whose Sancho Beach has repeatedly been voted among the best in the world; their remarkably clear water and rich marine life have made the archipelago a mecca for divers.",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p18",
-                    "textSha256": "7da4ac9028f4274901f923ee83ebb4206671c4622e5f87924c4f019ce1fdc9bf"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
-              "field": "formatLabel",
-              "sourceTextSha256": "74fa21cc0cc7aea4a23cedaf74df691fa6b7d4423cc5fb6ca5dc05dc6ab7f3de",
-              "text": "Private",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "ChatGPT",
-                "runId": "ada-en-daf0a8173bbc-20261104",
-                "wordAbsenceReason": "The selected Word specifies guided tours and driver transfers but does not contain an explicit private-format label for this field. Translate the existing RU format without inferring a new group size."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:90181325e8875b12",
-              "field": "itinerary.label",
-              "sourceTextSha256": "31520ef6d4c0f1e0274f869000368b7d8ad256558a3d556c4a2c00c65e41c664",
-              "text": "Recife",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1roO5ygYW6Uj2YWUW29c_bW1wKk94NrUv",
-                "documentSha256": "bfe99dc269be3622ba20fcacae1e8bdfd7de0adc077d0bb09c1a5e01fb56a227",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml#p37",
-                    "textSha256": "0384bff73f7cfcc0955185ef3e18a7f47977c0df94ad2f52e46af1fadae88690"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:22:15.915Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "submit-daf0a8173bbc-07",
+        "blobSha": "072c804391b34e2600ab1d145c6368b87c352553",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_recife_porto_noronha_10d_b001/submit-daf0a8173bbc-07.json",
+        "at": "2026-11-03T23:22:48.856Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

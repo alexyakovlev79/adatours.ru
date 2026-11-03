@@ -1,0 +1,195 @@
+{
+  "jobId": "en:bulk:tour:tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god:b001",
+  "stableId": "tour_source_5_stran_latinskoj_ameriki_na_16_dnej_na_novyj_god",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "575c4cf9275c733caa7f6cff1bcdc5966f915d2fa3e407b8caae5c09a07a4b1d",
+  "blocks": [
+    {
+      "blockId": "tour:title:aaf2320646108059",
+      "field": "title",
+      "sourceTextSha256": "2adf79d3c84381cfa28e1ee526d797b609031f5e375caab5d4c807a508380fb4",
+      "text": "19-Day New Year Tour of 5 Latin American Countries",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p1",
+            "textSha256": "d1689b149b5c964bb990745dc075097bf5ba0110bcdec44d46c69bd8b72ea7e1"
+          },
+          {
+            "ref": "word/document.xml#p2",
+            "textSha256": "f24fa4b804fdc560819ee398cfaab481036c440ddd868b77667596d5e1f2ddd7"
+          },
+          {
+            "ref": "word/document.xml#p4",
+            "textSha256": "7dee384959ede0837f15b74b241d5362710f62b49d83b1ac73e3ad6c05a03065"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Combined the Word title, five-country list and exact19-day duration into the current RU title structure."
+      }
+    },
+    {
+      "blockId": "tour:lead:e3456bc1f4d270f4",
+      "field": "lead",
+      "sourceTextSha256": "19ae2b691f28e4fa04901236bc260b4718b5ae8399fc84669441f3142cf9fdd7",
+      "text": "Spend 19 days travelling through Brazil, Argentina, Chile, Bolivia and Peru. Welcome the New Year on Copacabana Beach in Rio de Janeiro, then see Iguazu Falls from both sides, visit Buenos Aires and Santiago, cross the Atacama Desert and the Bolivian Altiplano in 4x4 jeeps, travel across the Uyuni Salt Flat, and continue to Lake Titicaca, Cusco and Machu Picchu before finishing in Lima.",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-9457ab67-20261104",
+        "wordAbsenceReason": "The verified Word has a route list in paragraph6 and individual programme days but no equivalent combined lead paragraph. Translated the current RU summary; all listed destinations and activities are covered by Word paragraphs28–168."
+      }
+    },
+    {
+      "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+      "field": "formatLabel",
+      "sourceTextSha256": "060a3c4965f4b9efcfc02cb4572658ca7a6b722c942283abc8edb751c984f28e",
+      "text": "Group tour",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p8",
+            "textSha256": "15d38673d70ec436bcac4d5916fc00b3eb2a9f1f5ff65c5255691a06c988723b"
+          },
+          {
+            "ref": "word/document.xml#p277",
+            "textSha256": "bb902d621693694a2af7fdcefc60bd86cf7169fecb472db63b99c9939fe43faa"
+          },
+          {
+            "ref": "word/document.xml#p278",
+            "textSha256": "f2ebf899ec5e29b0774718d88b4c70a441ee722dba25d9b0de7aa12c26fdeddb"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Expanded the Word's NYgroup product label into the public format label; the programme separately specifies private and shared services."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:0010141711c9f59d",
+      "field": "itinerary.label",
+      "sourceTextSha256": "302d421f3d7bdfc284b1efc0d13dee118beded26e3bc3c09362ecdfc9cf46ef2",
+      "text": "Rio de Janeiro (4 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p180",
+            "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+          },
+          {
+            "ref": "word/document.xml#p181",
+            "textSha256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the exact Word hotel-table city and nights cells as the route label, preserving4nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:da44029d6e030002",
+      "field": "itinerary.label",
+      "sourceTextSha256": "26aaac1b66ce5ddc04aa321d9b5b1f7beaf242ffa9ed3078102d68210a322498",
+      "text": "Foz do Iguaçu (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p184",
+            "textSha256": "6f99cc7eac3c3e139df1f311e26772857326e46bd79676a5b4b1248b798990c9"
+          },
+          {
+            "ref": "word/document.xml#p185",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the exact Word hotel-table city and nights cells as the route label, preserving2nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:3874728e73e17549",
+      "field": "itinerary.label",
+      "sourceTextSha256": "ed7a56fa3a44af67a5e2d7f3ad6329352e635c0bb96eb660d0afaaf912596b8a",
+      "text": "Buenos Aires (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p188",
+            "textSha256": "abae768240354770b732e87de24a76aa3123c0abbe7f4ebe6110c090d30eae98"
+          },
+          {
+            "ref": "word/document.xml#p189",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the exact Word hotel-table city and nights cells as the route label, preserving2nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:48d0a9c7d265e7c7",
+      "field": "itinerary.label",
+      "sourceTextSha256": "a5eb74ec4345f278a8ce120bcfb4ade91291f80d1a60c0d4f651fba47c067e69",
+      "text": "Santiago de Chile (2 nights)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p6",
+            "textSha256": "4388bc62f4ac89469f20f3c7942ced05cc1ce7b156e8e14f77540cdd96faca3f"
+          },
+          {
+            "ref": "word/document.xml#p192",
+            "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+          },
+          {
+            "ref": "word/document.xml#p193",
+            "textSha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the full city name from the Word route with its hotel-table nights count, preserving2nights."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:9afff49ef1440829",
+      "field": "itinerary.label",
+      "sourceTextSha256": "d62347e75589b06b157cba55eb59b4a2244de39e7f0ba681084520277cdce62b",
+      "text": "San Pedro de Atacama (1 night)",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1_2CgalLCI_e-m5DrGzaGrwAEVyfOj-ZB",
+        "documentSha256": "df6ba762bd199c041d682fd4e499d6a38c7af3af7cc6f87818fbd8d7122f93f0",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml#p196",
+            "textSha256": "0576442ccb45a6888749ca4345938384c789d3c13a6f487367f58544521b0901"
+          },
+          {
+            "ref": "word/document.xml#p197",
+            "textSha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+          }
+        ],
+        "transformation": "compose_route_label",
+        "rationale": "Combined the exact Word hotel-table city and nights cells as the route label, preserving1night."
+      }
+    }
+  ]
+}

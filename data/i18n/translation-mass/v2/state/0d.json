@@ -663,7 +663,7 @@
         "expiresAt": "2026-11-04T00:03:04.352Z"
       },
       "checkpoint": {
-        "id": "en:bulk:tour:tour_panama_mice_7_days:b007:cp4:821a3075",
+        "id": "en:bulk:tour:tour_panama_mice_7_days:b007:cp8:821a3075",
         "format": "inline-v1",
         "ownerId": "ada-en-821a3075e51e-worker",
         "token": "ada-en-821a3075e51e-token-20261104",
@@ -744,10 +744,89 @@
                 "transformation": "contextual_label",
                 "rationale": "Extracted the exact visitor-centre name from the verified Word service heading, omitting the adjacent canal label."
               }
+            },
+            {
+              "blockId": "tour:itinerary_label:a8dc35086cb8797a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "0c7d42ec92cb882aa0abf4732ce61493693409d0f020c55d6275f4573f4e6442",
+              "text": "15 September · sample programme",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The Word operational schedule has a fixed 15 SEP heading but does not label this public-facing date as a sample programme. Translated the current RU sample-date qualification."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ce8fa4f4df9e3974",
+              "field": "itinerary.title",
+              "sourceTextSha256": "6c6a61223cae774b23f1188f4805e6a8d2992a11bcb4952534435ff46f7b3b39",
+              "text": "Transport services · dinner · airport movements",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[13]",
+                    "textSha256": "c85a5f747402ba6bc4cc33d6c54a72d44b47494c4b135d6f74b52879e725f9a9"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact service summary from the 15 SEP overview line, removing the date prefix to form the day title."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceTextSha256": "b5e8c58600d3f3c02b7585b8ba0ed6c9077f80a615e19caed43d9b3d87c51d61",
+              "text": "Multiple Chevrolet Suburban premium SUVs and Mercedes-Benz Vito standard SUVs available for up to 14 hours, 08:00–22:00, from Hyatt Regency Panama City. Dedicated 45-seat motor coach available for up to 13 hours, 08:00–21:00, including dinner and hotel transfers.\n\nGroup buffet dinner at Mystic India Restaurant; menu options pending discussion with the client. Additional à la carte consumption available separately.\n\nIndividual departure transfer from Hyatt Regency Panama City to PTY Airport for flight KL 758 at 18:50, with approximate hotel pick-up at 15:00. Mercedes-Benz Vito private vehicle.\n\nEnglish-speaking transportation coordinator, bottled water (three bottles per person per day), and two bouquets of roses and chocolate cake as separately scheduled services.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[56]",
+                    "textSha256": "046490f50e7fbf3c9c8b2af8b36c627f0fed7d22d664fac14bc7ccecf99658ca"
+                  },
+                  {
+                    "ref": "word/document.xml:p[58]",
+                    "textSha256": "bcf46fc6a1268e571f8b54fecb4dad8eb5e41eaee7fa50b9fec4763059cba94a"
+                  },
+                  {
+                    "ref": "word/document.xml:p[60]",
+                    "textSha256": "ee8f3440adfa38da861dc08ccb6fc50751ce1b3407df11ba9802382a49cb0b70"
+                  },
+                  {
+                    "ref": "word/document.xml:p[62]",
+                    "textSha256": "2498f05037bc11bf9981120c68246cacdfc5161901abe6dd208a536d2b8c137a"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:5c1e0c5dd408a6fb",
+              "field": "itinerary.label",
+              "sourceTextSha256": "73d4f69ea00705ad97b533f09dae91f75c8e72e514bb6ba4c05f96a6a7b59659",
+              "text": "Panama City",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1ZLk8EFn9_3C6hoqSwkbljoU12jpQkhQ-",
+                "documentSha256": "7e6c94a3ed77565c4a84d4b103af65348fc82ea15d4e6ec78fcbb0c8147fa01d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[3]",
+                    "textSha256": "f52912b132d3659fef717d407a825b8713d5ab24f9b76b38bbb8b77924149ecc"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact city name from the verified Word programme heading, retaining its standard capitalisation."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:02:46.617Z"
+        "at": "2026-11-03T23:03:13.009Z"
       },
       "submission": null,
       "review": null,

@@ -348,7 +348,89 @@
         "claimedAt": "2026-11-03T23:31:46.326Z",
         "expiresAt": "2026-11-04T01:01:46.326Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-f8019ad86757-08-b005-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f8019ad86757-translator-20261104",
+        "token": "ada-en-f8019ad86757-6c94a20bf812",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_chile_marble_caves_san_rafael_three_days:b005",
+          "stableId": "tour_chile_marble_caves_san_rafael_three_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "438190494d66dc73224cfacb53c4edc4e4a6b38c44882da16b9c6f0c411a2333",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:8747940dd2cea9ea",
+              "field": "itinerary.label",
+              "sourceTextSha256": "954656520655cd56d5945d22b55541ee93f3abbb260f5e21a093ca4d4a69e1b2",
+              "text": "Valle Exploradores",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[43]",
+                    "textSha256": "01699291418883ede59ab34d008e603c25d5c11132f460d1433cf7b0195782cd"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:9374d3ec6163fcc8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "b7010392a8e76f4b1d1b778cbfd815e7b622bf64c9c9d37e701305e319ad6308",
+              "text": "Bahía Exploradores",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[78]",
+                    "textSha256": "b52e882b33cf3c788f6c9b63d16c838419d5f647f474f509eb0050971b8bd9bb"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the unchanged Bahía Exploradores place name from the verified Day 2 itinerary passage."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7458278e4fb1f572",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e6e494f410ffb4eaec51ba4ffd85cb79a8543b1e3de3089db9f7a4b22963ce5d",
+              "text": "San Rafael National Park",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-f8019ad86757",
+                "wordAbsenceReason": "The complete selected Word names Laguna San Rafael and San Rafael Glacier but provides no standalone national-park label; translated the exact current RU park label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:10442f8dabdd2d77",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c35802742692df6ad768c86b4f214cfdd06c2b1041750eae0d9fa93aea967d4f",
+              "text": "San Rafael Glacier",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1EsjAPL89p5K0ulIjNEmwtzhfOu1wwmSx",
+                "documentSha256": "dc32658a1aadb3bcf945b6471efc98ba5ba85fda5c20da99ae40d056457594d0",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[46]",
+                    "textSha256": "0025e92bffc16034d9bf3d2803e52cd85d5300086c47f7aaa67c109e1188c691"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:32:55.701Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

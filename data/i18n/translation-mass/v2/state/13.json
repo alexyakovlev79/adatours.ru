@@ -200,7 +200,7 @@
         "expiresAt": "2026-11-04T00:52:35.333Z"
       },
       "checkpoint": {
-        "id": "submit-98cdd875f4b9-9-cp4",
+        "id": "submit-98cdd875f4b9-9-cp8",
         "format": "inline-v1",
         "ownerId": "ada-en-98cdd875f4b9",
         "token": "token-98cdd875f4b9-20261104",
@@ -286,10 +286,77 @@
                 "transformation": "contextual_label",
                 "rationale": "Use the place name from the exact day heading as the itinerary place label."
               }
+            },
+            {
+              "blockId": "tour:media_alt:811954bc04965188",
+              "field": "media.alt",
+              "sourceTextSha256": "d1c39b693b4021c90f73f8552aa746e23dd110e72000af3fd2cf000873c8e5f4",
+              "text": "Rio de Janeiro in the evening",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-98cdd875f4b9",
+                "wordAbsenceReason": "The selected Word contains no image-specific alternative text for this photograph; translate the Russian media description without adding visual details."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:ca0a4d6daf445776",
+              "field": "itinerary.title",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p18",
+                    "textSha256": "8dc9b677456b30bd33c8ad7b4346dc38696d9031f54bda47f014fbe3099430a5"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the place name from the exact day heading without its day number."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:569e72e117968fcc",
+              "field": "itinerary.text",
+              "sourceTextSha256": "82b57a26c011af3476e9972dbdb0fdc28861628e3650a084a65967bcf73d4161",
+              "text": "Today you will discover Rio during a half-day Sugarloaf and City Tour accompanied by your English-speaking guide. Tickets and lunch are included. Ascend the famous Sugarloaf Mountain to admire spectacular views over Guanabara Bay before exploring some of the city’s most iconic neighborhoods",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p19",
+                    "textSha256": "71d4ac1526b342adb4278698ec88ff69dc362e5e02e48725e431368221443467"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1PmzcBgufhbeKGNeLMzdZSg-LT_Tl0b8J",
+                "documentSha256": "10fb294901e072d35c513e3fff8eafc968fb8f0b45c6a2e6b98d5524159f4375",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p18",
+                    "textSha256": "8dc9b677456b30bd33c8ad7b4346dc38696d9031f54bda47f014fbe3099430a5"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the place name from the exact day heading as the itinerary place label."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:23:14.968Z"
+        "at": "2026-11-03T23:23:34.289Z"
       },
       "submission": null,
       "review": null,

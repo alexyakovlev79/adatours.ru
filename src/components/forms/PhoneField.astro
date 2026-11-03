@@ -1,8 +1,9 @@
 ---
 import { PHONE_COUNTRIES } from '../../data/phone-countries';
 import { withBase } from '../../lib/paths';
+import { sharedUiLocale } from '../../lib/i18n/shared-ui-locale.mjs';
 
-const DEFAULT_ISO = 'ru';
+const DEFAULT_ISO = sharedUiLocale() === 'en' ? 'us' : 'ru';
 const defaultCountry = PHONE_COUNTRIES.find((country) => country.iso2 === DEFAULT_ISO) ?? PHONE_COUNTRIES[0];
 const flagUrl = (iso2: string) => withBase(`/phone-flags/${iso2 === 'mb' ? 'mx' : iso2}.png`);
 const defaultIndex = PHONE_COUNTRIES.findIndex((country) => country.iso2 === DEFAULT_ISO);
@@ -207,6 +208,37 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
 
       if (focusInput) input.focus();
     };
+
+
+    // A country suggestion for EN from the visitor's public IP. Manual input wins.
+    if (document.documentElement.dataset.adaSharedLocale === 'en') {
+      let manuallySelected = false;
+      menu.addEventListener('click', event => {
+        if (event.target instanceof Element && event.target.closest('[data-phone-option]')) manuallySelected = true;
+      });
+      input.addEventListener('input', () => { manuallySelected = true; });
+      const geoController = new AbortController();
+      const geoTimeout = window.setTimeout(() => geoController.abort(), 3500);
+      fetch('https://ipapi.co/json/', {
+        signal: geoController.signal,
+        credentials: 'omit',
+        referrerPolicy: 'no-referrer',
+      }).then(response => {
+        if (!response.ok) throw new Error('GeoIP unavailable');
+        return response.json();
+      }).then(result => {
+        const iso = typeof result.country_code === 'string' ? result.country_code.toLowerCase() : '';
+        const country = PHONE_COUNTRIES.find(item => item.iso2 === iso);
+        if (!country || manuallySelected || input.value.trim() || document.activeElement === input) return;
+        const option = document.createElement('button');
+        option.dataset.iso2 = country.iso2;
+        option.dataset.dial = country.dial;
+        option.dataset.mask = country.mask;
+        option.dataset.name = country.name;
+        applyCountry(option, false);
+      }).catch(() => { /* Keep the selectable initial country. */ })
+        .finally(() => window.clearTimeout(geoTimeout));
+    }
 
     let flagObserver;
     const loadOptionFlag = (image) => {

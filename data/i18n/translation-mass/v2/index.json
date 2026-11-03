@@ -15,8 +15,8 @@
   "reusedReadyBlocks": 30,
   "counts": {
     "held": 1595,
-    "queued": 2183,
-    "leased": 19,
+    "queued": 2182,
+    "leased": 20,
     "review": 207,
     "ready": 1,
     "retryable": 0,
@@ -27,8 +27,8 @@
   "stageCounts": {
     "word_2027": {
       "held": 0,
-      "queued": 2183,
-      "leased": 19,
+      "queued": 2182,
+      "leased": 20,
       "review": 207,
       "ready": 1,
       "retryable": 0,
@@ -185,8 +185,8 @@
       "stages": {
         "word_2027": {
           "held": 0,
-          "queued": 74,
-          "leased": 0,
+          "queued": 73,
+          "leased": 1,
           "review": 6,
           "ready": 0,
           "retryable": 0,
@@ -217,7 +217,7 @@
           "failed_final": 0
         }
       },
-      "earliestExpiryAt": null,
+      "earliestExpiryAt": "2026-11-04T00:52:35.333Z",
       "earliestRetryAt": null
     },
     "14": {
@@ -1455,6 +1455,12 @@
       "token": "ada-en-token-9457ab67-20261104",
       "expiresAt": "2026-11-04T00:52:05.434Z",
       "generation": 1
+    },
+    "ada-en-98cdd875f4b9": {
+      "jobId": "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b007",
+      "token": "token-98cdd875f4b9-20261104",
+      "expiresAt": "2026-11-04T00:52:35.333Z",
+      "generation": 1
     }
   },
   "ownerAssignments": {
@@ -1783,7 +1789,8 @@
         "en:bulk:tour:tour_brazil_recife_porto_noronha_10d:b010",
         "en:bulk:tour:tour_brazil_argentina_peru_14d:b001",
         "en:bulk:tour:tour_brazil_rio_four_days:b005",
-        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b012"
+        "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b012",
+        "en:bulk:tour:tour_brazil_rio_iguazu_sao_paulo_group_9d:b007"
       ],
       "completedJobIds": [
         "en:bulk:tour:tour_argentina_best_14_days:b011",
@@ -2224,5 +2231,5 @@
     }
   },
   "maxJobsPerOwner": 60,
-  "updatedAt": "2026-11-03T23:22:28.189Z"
+  "updatedAt": "2026-11-03T23:22:35.333Z"
 }

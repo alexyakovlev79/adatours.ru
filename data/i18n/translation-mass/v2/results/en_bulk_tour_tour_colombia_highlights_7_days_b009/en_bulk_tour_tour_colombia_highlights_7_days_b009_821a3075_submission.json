@@ -1,0 +1,148 @@
+{
+  "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b009",
+  "stableId": "tour_colombia_highlights_7_days",
+  "locale": "en",
+  "status": "review",
+  "releaseEligible": false,
+  "sourceFingerprint": "14b01db1d2f6a1b956ad62adcd1efc8df2225acc19ccc6a324b707882ac5de5b",
+  "blocks": [
+    {
+      "blockId": "tour:itinerary_text:b9ad3e14216c2f08",
+      "field": "itinerary.text",
+      "sourceTextSha256": "e89a655229a5f49906d9d7b99f71a6c12a8de5dd9f60e4032fcbe8e202ce95d4",
+      "text": "Day 6 · Breakfast at the hotel. Today, escape Cartagena for a full-day experience in the Rosario Islands, travelling by private transfer to the marina and then by shared speedboat to Isla Majagua, one of the islands of this beautiful Caribbean archipelago. Surrounded by crystal-clear waters, coral beaches and lush tropical scenery, Isla Majagua offers the perfect setting to enjoy a day by the sea, away from the bustle of Cartagena. Take time to swim, relax and savour the tranquil atmosphere of the island, surrounded by the vibrant colours of the Colombian Caribbean.\n\nThe experience includes private hotel–marina transfers, shared speedboat transportation, a traditional Caribbean lunch, dessert, coffee or tea, and the marina tax. In the afternoon, return by shared speedboat to Cartagena, followed by your private transfer back to the hotel. A private boat experience can also be arranged as an optional upgrade, offering greater flexibility and exclusivity throughout the day.",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[110]",
+            "textSha256": "9c149a1bb3d6f1acb64565cded9c00f7d25cbde71946ff290738ced9d8a391ac"
+          },
+          {
+            "ref": "word/document.xml:p[111]",
+            "textSha256": "ad144baeeb51b28e799c6942e630dd86645049de64ba90c9ee8014aefd9e1ff6"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:439aaee09724aa06",
+      "field": "itinerary.label",
+      "sourceTextSha256": "7b53f51ae13806e153ee277720de6af1111f020f913daed7efdb37150e3fae71",
+      "text": "Cartagena",
+      "provenance": {
+        "kind": "word_exact",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[49]",
+            "textSha256": "8a04522386c18360cfac4265d1db3b38be1131962023e49f42d329a37ff01913"
+          }
+        ]
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:bb7c0fbca56181dc",
+      "field": "itinerary.label",
+      "sourceTextSha256": "2c71183f80becb0100c9d0ca6f975661a7dcb2d992668d01ecc41d188da02003",
+      "text": "Rosario Islands",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[53]",
+            "textSha256": "7e00cec41f8aa8c0c9f011297061a2487ebb8b50efd8bf6a7bb7e87a43e9ef61"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Extract the Rosario Islands place name from the exact Word section heading for the corresponding day."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:2c7499e638ae2267",
+      "field": "itinerary.label",
+      "sourceTextSha256": "3584a22b6edcb23ea2752efb0353fa1a2343497fd54a1b35ba595b9acc52b1c5",
+      "text": "Isla Grande",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-821a3075e51e-worker",
+        "wordAbsenceReason": "The exact Word names Isla Majagua for Day 6 but does not contain the current RU place label Isla Grande; preserve that label in translation and flag the naming difference for master review."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_label:1a90ec047faff93e",
+      "field": "itinerary.label",
+      "sourceTextSha256": "620adb15945e5f918c51b0be668a32316a1b3de518e93b6e40e7df0ca136640e",
+      "text": "San Pedro de Majagua",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-821a3075e51e-worker",
+        "wordAbsenceReason": "The assigned Word describes Isla Majagua but does not name San Pedro de Majagua, the current RU place label. Translate this explicit RU label and flag the naming difference for master review."
+      }
+    },
+    {
+      "blockId": "tour:media_alt:efc6b37eb9dba5b9",
+      "field": "media.alt",
+      "sourceTextSha256": "22737ad02ce98683a80672b79e8a3ac29aef7f91b2aa44aa0b4618b64855ac9c",
+      "text": "The bow of a boat above clear water between green islets in the Rosario Islands, Colombia",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-821a3075e51e-worker",
+        "wordAbsenceReason": "The assigned Word provides the island itinerary but no matching caption describing the boat bow and green islets in this website image."
+      }
+    },
+    {
+      "blockId": "tour:media_hover:85b0fb0b66312bc2",
+      "field": "media.hover",
+      "sourceTextSha256": "777232ea21f02dbb574f1462fc209c44500a3103fa421ac2f6299d7df30dff65",
+      "text": "Rosario Islands, Colombia: the bow of a boat above clear water between green islets",
+      "provenance": {
+        "kind": "ai_translation",
+        "model": "ChatGPT",
+        "runId": "ada-en-821a3075e51e-worker",
+        "wordAbsenceReason": "The assigned Word has no matching hover caption for the website photograph showing a boat bow and green islets."
+      }
+    },
+    {
+      "blockId": "tour:itinerary_title:ed497b2a669f6ce4",
+      "field": "itinerary.title",
+      "sourceTextSha256": "7dcb0589e8aa3840176a188da735e3a716c586c146b5f7a22301a6fba89a6a18",
+      "text": "Departure from Cartagena",
+      "provenance": {
+        "kind": "word_aligned",
+        "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+        "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+        "paragraphs": [
+          {
+            "ref": "word/document.xml:p[112]",
+            "textSha256": "c7236ea05729d7975a66dff36600364c089a849714da3e896f2f1579ef68f8de"
+          }
+        ],
+        "transformation": "contextual_label",
+        "rationale": "Form a concise departure-day title using the explicit Cartagena location and departure-flight context of the exact Word Day 7 passage."
+      }
+    }
+  ],
+  "notes": [
+    {
+      "jobId": "en:bulk:tour:tour_colombia_highlights_7_days:b009",
+      "fileId": "1a1j7qTB7eTKPjKIXgEHhmKHj6fwCoi1P",
+      "documentSha256": "003f69a09a52656e17a133180927828f70b02d2c97543745888baffc77f4a06c",
+      "issue": "The exact assigned Word p110 names Isla Majagua; current RU place labels name Isla Grande and San Pedro de Majagua. Word narrative is retained verbatim. Those two labels are AI-translated from current RU because no matching wording exists in the Word; the place-name difference requires master review before release.",
+      "paragraphs": [
+        {
+          "ref": "word/document.xml:p[110]",
+          "textSha256": "9c149a1bb3d6f1acb64565cded9c00f7d25cbde71946ff290738ced9d8a391ac"
+        }
+      ]
+    }
+  ]
+}

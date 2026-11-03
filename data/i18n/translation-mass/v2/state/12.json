@@ -323,7 +323,7 @@
         "expiresAt": "2026-11-04T00:42:37.984Z"
       },
       "checkpoint": {
-        "id": "cp-0912f3ac-b004-4",
+        "id": "cp-0912f3ac-b004-source-blocker",
         "format": "inline-v1",
         "ownerId": "ada-en-0912f3ac98f14197",
         "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
@@ -384,9 +384,61 @@
                 "wordAbsenceReason": "The verified DOCX has no equivalent website image alt/hover caption for this photograph; translated the current immutable RU media description while preserving the photograph and its location."
               }
             }
+          ],
+          "sourceIssues": [
+            {
+              "kind": "edition_mismatch",
+              "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+              "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+              "selectedYearFolder": 2027,
+              "manifestEditionYear": null,
+              "paragraphs": [
+                {
+                  "ref": "word/document.xml#p2",
+                  "text": "           Group 10-20pax - 2026",
+                  "textSha256": "f65752ff23261c73ce35214e1ccf55a2ce7d2443cca3f19d3a15b0917dd675f8"
+                },
+                {
+                  "ref": "word/document.xml#p97",
+                  "text": "Brazil, Peru & Argentina 10-20 PAX 2024",
+                  "textSha256": "e9b64067b8f66b9740446a84bb27e565b4dee45423f603b051e5d56a76d03753"
+                }
+              ]
+            },
+            {
+              "kind": "confirmed_fact_conflict",
+              "blockId": "tour:itinerary_text:ec46e3209ab74818",
+              "field": "itinerary.text",
+              "sourceRuTextSha256": "f8abdfa7e3be42580eb7c06903ed3ad05a6ef370794ea71032d49a571ce1032e",
+              "wordParagraph": {
+                "ref": "word/document.xml#p32",
+                "text": "It all starts with a wonderful track by the Iguazú National Park. A walk six miles through the fully motorized Yacaratiá Sendero, which will take you from a subtropical vegetation, where flora and fauna coexist in harmony. Multilingual guides pass information about the curiosities of the jungle.",
+                "textSha256": "0eb84f888d1c1555aa312fe62214dbfbd0e4440432ffde5777f0bf47a882f8e2"
+              },
+              "approvedRuFact": "About 6 km along the Yacaratiá trail; the current Tour also identifies Great Adventure as on the Argentine side.",
+              "evidence": {
+                "mainSha": "31b11f1ba36460fc0eac99f6546b958f5a6a24d5",
+                "materialPath": "data/source-index/materials/tour_brazil_peru_argentina_group_15_days.md",
+                "materialBlobSha": "3b34619129a43465bdc2689eb1fca41cfc1d7df3",
+                "sourceIndexPath": "data/source-index/entries/tour_brazil_peru_argentina_group_15_days.json",
+                "sourceIndexBlobSha": "b8847a3c32402c306d08919fb0831b1ff2cf0b89",
+                "originCommit": "6a3d958e6680c1f52155ce6c9d56f7b44b168e5e",
+                "verifiedAt": "2026-10-10",
+                "method": "fresh_anna_docx_full_program_and_price_table",
+                "sourceDocxId": "1EhJfFowYPCXzDd-TML5lKRjvl2G0Kk0E",
+                "modifiedTime": "2026-10-02T12:45:00.279Z",
+                "docxSha256": "ade3ed9f723a3f306251f292a9237fd3daec67e9aca328fd4c4711f64b44c63c"
+              },
+              "rule": "03-translation-editorial.md §7: Word priority does not transfer contradictory facts; confirmed Anna corrections retain their decision record. §6 editorial Word changes require explicit master permission; do not relabel a conflicting existing passage as an AI absence.",
+              "requiredResolution": "Confirm the designated EN source edition and authorize exact editorial treatment/provenance for the 6 km fact, preserving the approved RU Word correction. No rematching, Word modification or tariff change was performed."
+            }
+          ],
+          "unresolvedConflicts": [
+            "Assigned EN Word has legacy 2026/2024 edition labels despite selected yearFolder 2027.",
+            "EN Word p32 says six miles; approved Anna RU Word 2027 and current frozen RU block say about 6 km. Editorial amendment authorization/provenance is required."
           ]
         },
-        "at": "2026-11-03T23:14:38.350Z"
+        "at": "2026-11-03T23:16:32.243Z"
       },
       "submission": null,
       "review": null,

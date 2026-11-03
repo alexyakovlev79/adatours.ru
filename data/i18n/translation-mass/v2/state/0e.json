@@ -145,117 +145,22 @@
     {
       "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b005",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "11ab236d970462d114637fe9a16663203adc765658e14a5b2eff86be8bc8b9a1",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-40d0e44eb57848bf",
-        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
-        "claimedAt": "2026-11-03T22:25:47.353Z",
-        "expiresAt": "2026-11-03T23:55:47.353Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "cp-40d0e44e-001-04",
-        "format": "inline-v1",
-        "ownerId": "ada-en-40d0e44eb57848bf",
-        "token": "token-40d0e44eb57848bfb42bb8ad93fc704b",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b005",
-          "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "11ab236d970462d114637fe9a16663203adc765658e14a5b2eff86be8bc8b9a1",
-          "blocks": [
-            {
-              "blockId": "tour:itinerary_text:569e72e117968fcc",
-              "field": "itinerary.text",
-              "sourceTextSha256": "033628d4772b36b42ce045938d74b22362d79c56baffd520fbddc1edd47839a9",
-              "text": "After breakfast you have the chance to go on a half-day excursion to the Corcovado Mountain. Arriving at the station, the environmentally friendly train will take us through the jungle to the top of Corcovado. On both sides of the railway you will have spectacular views of Tijuca forest, inhabited by monkeys and other exotic animals and birds. On top of Corcovado, at an altitude of 700 m above sea level, you will stand in front of the symbol of Rio de Janeiro- Statue of Christ the Savior (38m) that was built in 1931. From top of Corcovado, you have a breathtaking panoramic view of the city and its surroundings like the Bridge Niteroi, Guanabara Bay, the Botanical Garden, the Maracana stadium and the Sugar Loaf.\n\nYour driver will take you back to your hotel for a  rest before you begin the New Year festivities. Walking onto Copacabana beach you will experience a New Year’s party like no other. A huge stage occupies one section of the beach, while millions (yes, millions!) of partygoers take to the sands dressed all in white to witness a spectacular fireworks display, and tributes are paid to the water goddess Lemanjá and sent into the ocean on small boats. The magical party atmosphere, it goes without saying, continues long into the night. \n\n* * * If you wish, you can book a New Year dinner or a ticket for a party in one of the hotels in Copacabana. Prices available on request  ***",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p42",
-                    "textSha256": "e69ad80f042d381fd30c8174c19a7a9741749f58936950cff00e6a984dd5dcbb"
-                  },
-                  {
-                    "ref": "word/document.xml:p45",
-                    "textSha256": "4e7ad64702a55c80d952fbfaff41ca8f94446c39806b9b37a8ef8648df3e9142"
-                  },
-                  {
-                    "ref": "word/document.xml:p46",
-                    "textSha256": "2d53007c1e2d6b51c4caeede1c52a883d1462b1877a1ad28391ad620e158b2b1"
-                  }
-                ]
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
-              "field": "itinerary.label",
-              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
-              "text": "Rio de Janeiro",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p41",
-                    "textSha256": "8fa72a646c1f99c5c6e60682fc4eee412b789fda490e7f90e7e497211b329be8"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the exact city name from the corresponding Word day heading as the itinerary place label."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:0aacbf591e8ace21",
-              "field": "itinerary.label",
-              "sourceTextSha256": "374e8eaf7052e9a6ec6d718e7cce6728c5c8d482c6929a5874441302d9187ba2",
-              "text": "Corcovado",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p42",
-                    "textSha256": "e69ad80f042d381fd30c8174c19a7a9741749f58936950cff00e6a984dd5dcbb"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the named Corcovado destination from the corresponding Word sightseeing paragraph."
-              }
-            },
-            {
-              "blockId": "tour:itinerary_label:8d58545fa2c684c0",
-              "field": "itinerary.label",
-              "sourceTextSha256": "c1e12f487c822fe88df6274ce2d6fef64645ff9d61d370b2f91c830a847effcf",
-              "text": "Copacabana",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
-                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p45",
-                    "textSha256": "4e7ad64702a55c80d952fbfaff41ca8f94446c39806b9b37a8ef8648df3e9142"
-                  }
-                ],
-                "transformation": "contextual_label",
-                "rationale": "Use the named Copacabana beach from the corresponding Word New Year festivities paragraph."
-              }
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T22:27:24.282Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "sub-40d0e44e-001",
+        "blobSha": "8dee0cb28f2096b70227962c7cadae8870b60ca7",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_brazil_argentina_chile_new_year_11_days_2027_b005/sub-40d0e44e-001.json",
+        "at": "2026-11-03T22:27:37.460Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

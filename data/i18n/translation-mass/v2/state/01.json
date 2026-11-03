@@ -238,7 +238,77 @@
         "claimedAt": "2026-11-03T22:22:25.109Z",
         "expiresAt": "2026-11-03T23:52:25.109Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-4d8682-003-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-4d8682-20261104",
+        "token": "token-4d8682-6f3d8b274a594985ac",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_new_year_11_days_2027:b004",
+          "stableId": "tour_brazil_argentina_chile_new_year_11_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "17346fb724028e121dacff22d0f29ffd993bc0975f67627b6ba0aea40ae4f9ec",
+          "blocks": [
+            {
+              "blockId": "tour:note:6d0622129c9889ef",
+              "field": "note",
+              "sourceTextSha256": "6076e04b8b1143aafc49d1535a7db8f4c5f31057753ad7d29807709810e7347e",
+              "text": "If you leave early for a flight or excursion, the local host is not responsible for any hotel breakfast you miss.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-4d8682-20261104",
+                "wordAbsenceReason": "The complete verified Word has no clause assigning responsibility for missed hotel breakfast after early departures."
+              }
+            },
+            {
+              "blockId": "tour:note:80196a03a5fd1623",
+              "field": "note",
+              "sourceTextSha256": "5e4f9c5cd1460d780162aae466529fb5cde980c6cb3cbc61b94096e21c313592",
+              "text": "The 5-star hotel table lists 2 nights at NH Plaza Santiago, but gives the dates as 7–8 January. Departure is scheduled for 9 January 2027; the length of stay for this option will be clarified when the booking is confirmed.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-4d8682-20261104",
+                "wordAbsenceReason": "The verified Word table at paragraphs 176–177 lists two nights with dates 07.01–08.01, while departure at paragraphs 120–121 is 09/01; no matching explanatory discrepancy note appears."
+              }
+            },
+            {
+              "blockId": "tour:note:875cdaf40986a3b7",
+              "field": "note",
+              "sourceTextSha256": "d19b37e62221df5dfea5a6755533902adee0a836189840d279ff5d4bf837487d",
+              "text": "The 3-star hotels are not named in the original programme; specific hotels will be confirmed when booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "GPT-6",
+                "runId": "ada-en-4d8682-20261104",
+                "wordAbsenceReason": "The verified Word lists 3-star prices at paragraphs 17–20, but its hotel-name tables cover only 4-star and 5-star accommodation, with no corresponding 3-star confirmation note."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:5cd7a3d146d31311",
+              "field": "itinerary.title",
+              "sourceTextSha256": "cb5118e706bb24705f11383f6e3644c4e12c5efb6a1e42841f10066bf3c76352",
+              "text": "Day 1: 30/12 - Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1VCW8zrPr4Inu3DKOa4FKpk3HcXQVLh6j",
+                "documentSha256": "44355f86a17eccb5be2b7118971653ba5bc939786f519e79354672270521f509",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:34",
+                    "textSha256": "def8639b7ae4e06ba4eba8b6e5d0502b0595e23676db3f0993fbeb37fd448dfa"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:23:28.165Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

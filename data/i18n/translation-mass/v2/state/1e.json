@@ -153,7 +153,102 @@
         "claimedAt": "2026-11-03T22:30:23.435Z",
         "expiresAt": "2026-11-04T00:00:23.435Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_87f8c5a90488-s002-c004",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f0410042e63344c3",
+        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b016",
+          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "3cec93ac6cbf7f84950931ad7da3fef11ea38101fd8224905a018b15ea84fe5f",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:c3205ac1e20a266d",
+              "field": "itinerary.text",
+              "sourceTextSha256": "44b583b11776786d10812d8fbb326ac2b29c76a8bee1cb80558d0d190125b384",
+              "text": "Day 9 · Full-day excursion. At 07:00, departure for the Milodón Cave Natural Monument, where the prehistoric Mylodon lived some 12,000 years ago, then the landscapes of Sofía Lagoon, the Prat range, Lake Porteño, Cerro Mesa and Lake Toro. Stop at the Grey viewpoint and the village of Río Serrano, then walk through a lenga forest to the shore of Grey Lake, with its drifting icebergs. Lunch at a local restaurant. Visit the Pehoé viewpoint and walk to the 18-metre Salto Grande waterfall, then the Nordenskjöld Lake, Laguna Amarga and Sarmiento viewpoints. Return to Puerto Natales around 18:45.\n\nAccommodation: The Singular Patagonia, Singular Room King, breakfast",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p125",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  },
+                  {
+                    "ref": "word/document.xml:p126",
+                    "textSha256": "95dc7a7fb12c99bf73c0dfcdaa2bcee544b7bb1d974a0f5a52a87483a80d572f"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b36321b4c85268f2",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700",
+              "text": "Puerto Natales & Torres del Paine",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p191",
+                    "textSha256": "35f7f0daf1d2d6cbcb8071525b7c295d11dd0a7ef798f7bf743cb1dbf9aa37a5"
+                  },
+                  {
+                    "ref": "word/document.xml:p123",
+                    "textSha256": "4fc895bfa8edd50c842a33a73744f54e867f8c471d98c3efa795fcafff29dcc3"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Combines the exact Word destination names into the route label corresponding to the current RU field."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:b0024b1a493c2cd9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "c1396b57b2ffab559eac79f8b05dccf894edd995996ea11e7096f982e546aa05",
+              "text": "Milodón Cave",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p125",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:34892da911bbce0f",
+              "field": "itinerary.label",
+              "sourceTextSha256": "52913d1f3b8db35a873a05452fba25a6c4b75308b736ebf5b6536882c397570a",
+              "text": "Sofía Lagoon",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p125",
+                    "textSha256": "4c7008ce427554ec5d1bfae18dd9047091de1ac81d1b215b4ef3e94430fe7697"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:31:18.271Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -50,7 +50,111 @@
         "claimedAt": "2026-11-03T22:01:48.312Z",
         "expiresAt": "2026-11-03T23:31:48.312Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "sub-ada-en-20261104-2b52b0aa-1-cp4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-2b52b0aa",
+        "token": "tok-2b52b0aa-1135-ada-en",
+        "generation": 1,
+        "payload": {
+          "submissionId": "sub-ada-en-20261104-2b52b0aa-1",
+          "result": {
+            "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b030",
+            "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "3236d3f6b1fb747e353344e35e3b9c7b00befa5a719e5f4dde2cd252779d1b88",
+            "blocks": [
+              {
+                "blockId": "tour:media_alt:e2a8087f5a3cadb2",
+                "field": "media.alt",
+                "sourceTextSha256": "31ef918d61c76a6d2857f04de76a3df753f875e8d979521e581d7fbcd155c3ce",
+                "text": "Historic buildings with towers and pedestrians on a street in Santiago, Chile",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word document contains no photograph-specific alt description; translated the current RU media caption."
+                }
+              },
+              {
+                "blockId": "tour:media_hover:7a44c63a973236f2",
+                "field": "media.hover",
+                "sourceTextSha256": "5084dab861df00e485150fec1919fc08b6f4e00eb30e3e6b695827b8a8f8f4d0",
+                "text": "Santiago: historic façades, towers and a busy intersection",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "GPT-6",
+                  "runId": "ada-en-20261104-2b52b0aa",
+                  "wordAbsenceReason": "The verified Word document contains no photograph-specific hover caption; translated the current RU media caption."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_title:bc85cd73333c2baf",
+                "field": "itinerary.title",
+                "sourceTextSha256": "48b0926529adc0b3d620c32d2e0ee7fec9bd8f391f5660543621a9a73528547c",
+                "text": "Santiago — departure",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[112]",
+                      "textSha256": "30362306091ef8d489fd8e92de49e5a40f3a2ffb6bda952f178fe394d8492fd9"
+                    },
+                    {
+                      "ref": "word/document.xml:w:p[161]",
+                      "textSha256": "4b6517a58008c6bf3bf86b83c51f2ade34e410630c8199b91956466ee172ed45"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Combines the Word city name Santiago with its Day 16 departure transfer for the existing day heading."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_text:99d4ebb0270da8fa",
+                "field": "itinerary.text",
+                "sourceTextSha256": "97040ac9db99c29bc424eccb78f03fd2333710d2a652397382b92eafc5b67b5c",
+                "text": "Day 16 · Breakfast and transfer to the airport (minivan, about 30 minutes) for your international flight home.",
+                "provenance": {
+                  "kind": "word_exact",
+                  "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                  "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:w:p[161]",
+                      "textSha256": "4b6517a58008c6bf3bf86b83c51f2ade34e410630c8199b91956466ee172ed45"
+                    }
+                  ]
+                }
+              }
+            ],
+            "sourceEvidence": {
+              "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+              "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+              "modifiedTime": "2026-10-22T14:05:36.417Z",
+              "yearFolder": 2027,
+              "folderSource": "immutable selectedWord from confirmed matching result",
+              "ooxmlPath": "ada-en-session/word1-paragraphs.json",
+              "commercialTable": {
+                "currency": "USD",
+                "occupancy": "DBL",
+                "basis": "per person",
+                "price": 31980,
+                "sourceRefs": [
+                  "word/document.xml:w:p[208]",
+                  "word/document.xml:w:p[210]",
+                  "word/document.xml:w:p[214]",
+                  "word/document.xml:w:p[217]"
+                ]
+              }
+            }
+          }
+        },
+        "at": "2026-11-03T22:03:19.065Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -262,7 +262,100 @@
         "claimedAt": "2026-11-03T22:07:07.321Z",
         "expiresAt": "2026-11-03T23:37:07.321Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada-en-a2d69b03d72ad4e9-s03-c04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-a2d69b03d72ad4e9",
+        "token": "token-a2d69b03d72ad4e9-20261104",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b023",
+          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "37d3ff6a3f211893966ff7d810ea1b940e291c78a0054f82cb8ecd8eaf854075",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+              "field": "itinerary.text",
+              "sourceTextSha256": "cbf894ac4c911e398313733cfcad5b4201ca91266017f790644548a554462e19",
+              "text": "Day 12 · At 07:00, a private boat excursion (2.5 hours) to the famous Marble Caves (Catedrales de Mármol), shaped over thousands of years by the waters of Lake General Carrera: their blue-and-white chambers and winding stone forms are among the most photographed sights in Patagonia. Transfer to Balmaceda Airport for the flight back to Santiago (about 2.5 hours) and transfer to the hotel by minivan (driver only).\\n\\nAccommodation: Mandarin Oriental Santiago, Club Room, breakfast",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:146",
+                    "textSha256": "d9dd50b1ab9310be3dabd4f5a30a4d1b9aeeca042b872690a5872dbf9d94a5e4"
+                  },
+                  {
+                    "ref": "word/document.xml:p:148",
+                    "textSha256": "1fc28b97ae89ebf2e4d847ad8b141efb7a92cbe3c7d4a45390de786a2d38c2b7"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7260e386811ccf7e",
+              "field": "itinerary.label",
+              "sourceTextSha256": "2bcb3e19d83c4cba1d16f0cb73102d0c334b4b161f06b6ba156b40f8ea18ce84",
+              "text": "Puerto Río Tranquilo",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:195",
+                    "textSha256": "c68744724179f2c71cf89e20164605827e32cfd0eb972b4823aaeb629fd2490f"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:3c76c6afbbfe41a8",
+              "field": "itinerary.label",
+              "sourceTextSha256": "e3a34387f20a4c2514690c2bddb5f925e2d243be1e944629d70553c45bc960c4",
+              "text": "Marble Caves",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:146",
+                    "textSha256": "d9dd50b1ab9310be3dabd4f5a30a4d1b9aeeca042b872690a5872dbf9d94a5e4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact destination name from the verified Word route paragraph or hotel table for the matching itinerary place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:7fe1b272dbb887c7",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1f84b7eda8f68078cf52b0ea3cd9110d4b6006d76b0072f1a8b18560df1f4746",
+              "text": "Lake General Carrera",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
+                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p:146",
+                    "textSha256": "d9dd50b1ab9310be3dabd4f5a30a4d1b9aeeca042b872690a5872dbf9d94a5e4"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extract the exact destination name from the verified Word route paragraph or hotel table for the matching itinerary place label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T22:08:22.405Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

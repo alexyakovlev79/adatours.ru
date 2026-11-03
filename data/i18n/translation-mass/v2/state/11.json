@@ -85,7 +85,89 @@
         "claimedAt": "2026-11-03T23:04:07.157Z",
         "expiresAt": "2026-11-04T00:34:07.157Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "ada_en_87f8c5a90488-s006-c004",
+        "format": "inline-v1",
+        "ownerId": "ada-en-f0410042e63344c3",
+        "token": "tok-dcf5dd50402f4106b6c4dd34716d1ade",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_argentina_chile_champions_parade_10_days_2027:b001",
+          "stableId": "tour_brazil_argentina_chile_champions_parade_10_days_2027",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "10158725d3e009d1bc068d25456053f24e1d2dfb317bd2bb56b7126910ebb530",
+          "blocks": [
+            {
+              "blockId": "tour:title:aaf2320646108059",
+              "field": "title",
+              "sourceTextSha256": "b94235323dd0fcc11f3ca7a53ef4f7aed52ddc1c0e79aab98db04c0b37caf1e9",
+              "text": "Sun, Tango & Wine",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p3",
+                    "textSha256": "dc5a32e7bcfada1cc74b8cf870daafdef5f2ba17f50c243e191a81dbaab0faeb"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:lead:e3456bc1f4d270f4",
+              "field": "lead",
+              "sourceTextSha256": "1035021852679e131435417183c9fbf57c3f68adefb547f0eb0fe059da16e9ea",
+              "text": "Ten days across three countries: the Carnival’s grand finale in Rio de Janeiro, the Parade of Champions, with Sugar Loaf and Christ the Redeemer; the Iguazu Falls from both the Brazilian and Argentine sides; Buenos Aires and its tango; and Santiago de Chile at the foot of the Andes, with an optional visit to the wineries of the Maipo Valley.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p18",
+                    "textSha256": "0d2ac254b8f562adf32d909c6c6a7bdd70b4e68574729fcff26dc1f47aa356d5"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:priceNote:9b6b7f5cf7b1e557",
+              "field": "priceNote",
+              "sourceTextSha256": "4b9106bde5c09c5ecca558b4f03fabcfc9abf7285904d43d6218f8e1347a51e0",
+              "text": "From USD 5,208 per person sharing a triple room in 3-star hotels. All nine SGL/DBL/TPL rates for 3-, 4- and 5-star hotels are listed below. The final price is confirmed at the time of booking.",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada_en_87f8c5a90488",
+                "wordAbsenceReason": "Word paragraphs 145–166 confirm all nine tariffs and USD 5,208 for triple occupancy in 3-star hotels, but the complete current RU priceNote also includes a final-price-at-booking condition absent from the Word price summary; this full field is translated from RU without changing any amount."
+              }
+            },
+            {
+              "blockId": "tour:formatLabel:e904c9ccfa425ff0",
+              "field": "formatLabel",
+              "sourceTextSha256": "33258aba1b86284a3adfe907d92aa782f1b9d9a36188bb9aa9cd934b46bf53b3",
+              "text": "Group tour",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1d3a-V3HTXPYj9WSqN6SPQ2WJ4ayn7PVy",
+                "documentSha256": "52562eb4cd4b09ad82d6a68222d72030e18332e96c85abc34bcb1fdc5b13b7c3",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p145",
+                    "textSha256": "ee74053323bff31a52c98db3ae13d5dbc0b33bb4765d0d73df53a960df924593"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Uses the exact Word tariff heading's group-tour designation as the structured tour format label."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:05:09.842Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

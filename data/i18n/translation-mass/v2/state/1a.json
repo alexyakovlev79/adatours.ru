@@ -177,7 +177,96 @@
         "claimedAt": "2026-11-03T22:24:51.184Z",
         "expiresAt": "2026-11-03T23:54:51.184Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-868ef48d-07-04",
+        "format": "inline-v1",
+        "ownerId": "ada-en-868ef48df4c8-20261104",
+        "token": "tok-868ef48df4c8-wj282nochhovyefn9vvha",
+        "generation": 1,
+        "payload": {
+          "result": {
+            "jobId": "en:bulk:tour:tour_brazil_peru_argentina_group_15_days:b012",
+            "stableId": "tour_brazil_peru_argentina_group_15_days",
+            "locale": "en",
+            "status": "review",
+            "releaseEligible": false,
+            "sourceFingerprint": "e69edc1f7b5ed3b8ddbf01dc50df6f97b483539715b4ed6b9874d43945b975e2",
+            "blocks": [
+              {
+                "blockId": "tour:itinerary_label:c5596750d0c0ae99",
+                "field": "itinerary.label",
+                "sourceTextSha256": "a59a00e0ea9fa2d793eddbc90221b4556afa002651d45fd654d30a0ac0d034af",
+                "text": "Lima",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p50",
+                      "textSha256": "ded2160e04e705aa1b438553e8f337e39113c33606434b57cc4d37b82988535e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the exact place name Lima from the Word Day 7 route heading for its standalone place label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:f88d87d6c07a208b",
+                "field": "itinerary.label",
+                "sourceTextSha256": "95814ac59c8ef680defd784726c8cf6bf807b0fe40575d2e38e2841e7cd5eed7",
+                "text": "Cusco",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p50",
+                      "textSha256": "ded2160e04e705aa1b438553e8f337e39113c33606434b57cc4d37b82988535e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the exact place name Cusco from the Word Day 7 route heading for its standalone place label."
+                }
+              },
+              {
+                "blockId": "tour:itinerary_label:169313f984c4783b",
+                "field": "itinerary.label",
+                "sourceTextSha256": "f8be62bdaaa80b6d04da49af393d92aabc253c303b9b642797669af6b8eb0ed0",
+                "text": "Sacred Valley",
+                "provenance": {
+                  "kind": "word_aligned",
+                  "fileId": "1IfK7Yqdp2NvQuUMhAml6qXMElJUT9stK",
+                  "documentSha256": "e45cd1f7abda8aac5f69026ae55de2359e27673b229a8e68be2a888e9cb964c8",
+                  "paragraphs": [
+                    {
+                      "ref": "word/document.xml:p50",
+                      "textSha256": "ded2160e04e705aa1b438553e8f337e39113c33606434b57cc4d37b82988535e"
+                    }
+                  ],
+                  "transformation": "contextual_label",
+                  "rationale": "Extracts the exact place name Sacred Valley from the Word Day 7 route heading for its standalone place label."
+                }
+              },
+              {
+                "blockId": "tour:media_alt:2ea6fe9658c60395",
+                "field": "media.alt",
+                "sourceTextSha256": "e5911d732d4f721638b57fc03c0fbc0f6aa85a277a86132ffe979944c99a386f",
+                "text": "Panoramic view of Cusco's main square, with a church and tiled roofs, Peru",
+                "provenance": {
+                  "kind": "ai_translation",
+                  "model": "ChatGPT",
+                  "runId": "ada-en-868ef48df4c8-20261104:p07",
+                  "wordAbsenceReason": "The verified Word contains no matching image-alt caption for this aerial image of Cusco. Translated the exact RU image description without adding facts."
+                }
+              }
+            ]
+          },
+          "completedBlocks": 4
+        },
+        "at": "2026-11-03T22:27:53.013Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

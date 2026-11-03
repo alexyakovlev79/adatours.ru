@@ -287,7 +287,90 @@
         "claimedAt": "2026-11-03T23:06:00.658Z",
         "expiresAt": "2026-11-04T00:36:00.658Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "cp-0912f3ac-b003-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-0912f3ac98f14197",
+        "token": "ada-en-token-1cd19e461f1c430e85b30db47e5748c7",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_little_mix_ten_days:b010",
+          "stableId": "tour_brazil_little_mix_ten_days",
+          "locale": "en",
+          "status": "review",
+          "releaseEligible": false,
+          "sourceFingerprint": "e850bd2d720d3343ac26c8dbe51a6d7161cda502e00dfc7ee5c19b458bcba3d7",
+          "blocks": [
+            {
+              "blockId": "tour:media_alt:80a0c6dde93a35b3",
+              "field": "media.alt",
+              "sourceTextSha256": "798f343dc36f82d73bf9143c7c44fee99cb059fd562d8b0292100591749c83e1",
+              "text": "A sandy beach with palm trees by the sea in Praia do Forte, Brazil",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete verified Word contains itinerary prose but no corresponding website image alt/hover caption describing this exact photograph; translated the immutable RU media description without changing the image."
+              }
+            },
+            {
+              "blockId": "tour:media_hover:0f25e3f130637c5a",
+              "field": "media.hover",
+              "sourceTextSha256": "1824e741e6acd5f6d2b9d3d9547a836720fb4379fc4719a557363e7a22b3ddb1",
+              "text": "Praia do Forte: waves along a sandy, palm-lined shore",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-0912f3ac98f14197",
+                "wordAbsenceReason": "The complete verified Word contains itinerary prose but no corresponding website image alt/hover caption describing this exact photograph; translated the immutable RU media description without changing the image."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_title:f76823f601bc2496",
+              "field": "itinerary.title",
+              "sourceTextSha256": "969e9a593e7dc0bb68dc9678e2b1ac2f001acf0554eecf4a338e8900809175b5",
+              "text": "Praia do Forte → airport",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p116",
+                    "textSha256": "706b9acbbd22386db8c56aaae8e4d3b586c5c318cbb783b77e25fa504ae043a7"
+                  },
+                  {
+                    "ref": "word/document.xml#p118",
+                    "textSha256": "43e4147ed734f40961e4f94f641fd9d905a08f94ddb905f2018ed5ff067fb9d8"
+                  }
+                ],
+                "transformation": "compose_route_label",
+                "rationale": "Composed the short route title from the exact Praia do Forte place heading and its airport-departure paragraph, preserving both endpoints."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
+              "field": "itinerary.text",
+              "sourceTextSha256": "2206842125dc9af4e8d59fc055301ffde4a42a98e519b875964f25d7dd2eca70",
+              "text": "After breakfast, transfer to the airport in time for your flight home. End of services.",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1VRxTdaTAXuLNr6Qa0LgMfAW_EJXzU0VG",
+                "documentSha256": "9e80f6aef459fccf12e1b6bb4cec632877988c9f74f35be7fd8b63df2104087d",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml#p118",
+                    "textSha256": "43e4147ed734f40961e4f94f641fd9d905a08f94ddb905f2018ed5ff067fb9d8"
+                  }
+                ],
+                "transformation": "strip_list_marker",
+                "rationale": "Removed only the leading Day 10 bullet label because the website itinerary node owns the day heading; preserved the Word departure sentences verbatim."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T23:07:16.488Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -84,180 +84,22 @@
     {
       "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b020",
       "stage": "word_2027",
-      "status": "leased",
+      "status": "review",
       "sourceFingerprint": "0beafc40de300764e5dabfc1a9a91f0cf0229b52d26118358519904b6a85c319",
       "generation": 1,
       "attempts": 0,
-      "lease": {
-        "ownerId": "ada-en-8fc95d0a-20261104",
-        "token": "ada8fc95d0ae0c7-20261104-fixed",
-        "claimedAt": "2026-11-03T23:17:14.212Z",
-        "expiresAt": "2026-11-04T00:47:14.212Z"
-      },
+      "lease": null,
       "checkpoint": {
         "id": "ada-8fc95d0a-008-cp8",
-        "format": "inline-v1",
-        "ownerId": "ada-en-8fc95d0a-20261104",
-        "token": "ada8fc95d0ae0c7-20261104-fixed",
-        "generation": 1,
-        "payload": {
-          "jobId": "en:bulk:tour:tour_bolivia_chile_hidden_treasures_16_days:b020",
-          "stableId": "tour_bolivia_chile_hidden_treasures_16_days",
-          "locale": "en",
-          "status": "review",
-          "releaseEligible": false,
-          "sourceFingerprint": "0beafc40de300764e5dabfc1a9a91f0cf0229b52d26118358519904b6a85c319",
-          "blocks": [
-            {
-              "text": "Breakfast and transfer to Punta Arenas Airport (about 3 hours) for the regional DAP Airlines flight to Balmaceda (about 2 hours). On arrival, meet your local driver-guide and set off along the legendary Carretera Austral, through the endless Patagonian steppe and the wide valleys of the Aysén region, as arid plains give way to forested slopes and the bright turquoise waters of Lake General Carrera. Arrival in Puerto Río Tranquilo after about 5 hours.\n\nAccommodation: Mallín Colorado Ecolodge or similar, Cabaña Coigüe, breakfast",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p136",
-                    "text": "Day 10 · Breakfast and transfer to Punta Arenas Airport (about 3 hours) for the regional DAP Airlines flight to Balmaceda (about 2 hours). On arrival, meet your local driver-guide and set off along the legendary Carretera Austral, through the endless Patagonian steppe and the wide valleys of the Aysén region, as arid plains give way to forested slopes and the bright turquoise waters of Lake General Carrera. Arrival in Puerto Río Tranquilo after about 5 hours.",
-                    "textSha256": "374bfc9d1f03d34b1dfa50cd05504008afbb092f7a8a301741cbe9cfe8aa19f7"
-                  },
-                  {
-                    "ref": "word/document.xml:p138",
-                    "text": "Accommodation: Mallín Colorado Ecolodge or similar, Cabaña Coigüe, breakfast",
-                    "textSha256": "6060ffcb7aa6485cd9139515a86f705810df45427e7712b0432ba7750ad3e591"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_text:d1bf136a4a3c936a",
-              "field": "itinerary.text",
-              "sourceTextSha256": "2344e96c582578ebb8b7b6f4bada2dd5e75aa164a5202f36690c0d6767ae9343"
-            },
-            {
-              "text": "Puerto Natales & Torres del Paine",
-              "provenance": {
-                "kind": "word_aligned",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p124",
-                    "text": "Day 8 · Breakfast and transfer to Santiago Airport for the flight to Puerto Natales, gateway to Torres del Paine (about 3 hours 20 minutes). On arrival, transfer to the hotel by SUV (Subaru Outback or similar, about 20 minutes). Free evening.",
-                    "textSha256": "9f43d83d52c343ec312fbee4e87d67a9531b8978d78cd8c399d047ede0562abe"
-                  }
-                ],
-                "transformation": "compose_route_label",
-                "rationale": "Compose the existing combined place label from the exact Puerto Natales and Torres del Paine names in the Word route paragraph."
-              },
-              "blockId": "tour:itinerary_label:dc533ff110a00eb7",
-              "field": "itinerary.label",
-              "sourceTextSha256": "e4a94ba58e107f276005b0b9ebbd8452de8b4e604bba1d77e4dcd292f3b37700"
-            },
-            {
-              "text": "Punta Arenas",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p136",
-                    "text": "Day 10 · Breakfast and transfer to Punta Arenas Airport (about 3 hours) for the regional DAP Airlines flight to Balmaceda (about 2 hours). On arrival, meet your local driver-guide and set off along the legendary Carretera Austral, through the endless Patagonian steppe and the wide valleys of the Aysén region, as arid plains give way to forested slopes and the bright turquoise waters of Lake General Carrera. Arrival in Puerto Río Tranquilo after about 5 hours.",
-                    "textSha256": "374bfc9d1f03d34b1dfa50cd05504008afbb092f7a8a301741cbe9cfe8aa19f7"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:7d2d7a0ee890d895",
-              "field": "itinerary.label",
-              "sourceTextSha256": "832e77c5b0c4e0c74296c334a94b4e4cdbc2f8874f4896c6d7fba4604bd4dd64"
-            },
-            {
-              "text": "Balmaceda",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p136",
-                    "text": "Day 10 · Breakfast and transfer to Punta Arenas Airport (about 3 hours) for the regional DAP Airlines flight to Balmaceda (about 2 hours). On arrival, meet your local driver-guide and set off along the legendary Carretera Austral, through the endless Patagonian steppe and the wide valleys of the Aysén region, as arid plains give way to forested slopes and the bright turquoise waters of Lake General Carrera. Arrival in Puerto Río Tranquilo after about 5 hours.",
-                    "textSha256": "374bfc9d1f03d34b1dfa50cd05504008afbb092f7a8a301741cbe9cfe8aa19f7"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:6bbdc8d1a0a123de",
-              "field": "itinerary.label",
-              "sourceTextSha256": "64c4271b5935c18354fd4e46002f72b14e5a2ee1532bdf378cafdca889ffd527"
-            },
-            {
-              "text": "Carretera Austral",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p136",
-                    "text": "Day 10 · Breakfast and transfer to Punta Arenas Airport (about 3 hours) for the regional DAP Airlines flight to Balmaceda (about 2 hours). On arrival, meet your local driver-guide and set off along the legendary Carretera Austral, through the endless Patagonian steppe and the wide valleys of the Aysén region, as arid plains give way to forested slopes and the bright turquoise waters of Lake General Carrera. Arrival in Puerto Río Tranquilo after about 5 hours.",
-                    "textSha256": "374bfc9d1f03d34b1dfa50cd05504008afbb092f7a8a301741cbe9cfe8aa19f7"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:05532375d23067ab",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1053ff70c863619237b21bf402b98ab447fc19a837f8fd58579f4ea995187289"
-            },
-            {
-              "text": "Lake General Carrera",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p136",
-                    "text": "Day 10 · Breakfast and transfer to Punta Arenas Airport (about 3 hours) for the regional DAP Airlines flight to Balmaceda (about 2 hours). On arrival, meet your local driver-guide and set off along the legendary Carretera Austral, through the endless Patagonian steppe and the wide valleys of the Aysén region, as arid plains give way to forested slopes and the bright turquoise waters of Lake General Carrera. Arrival in Puerto Río Tranquilo after about 5 hours.",
-                    "textSha256": "374bfc9d1f03d34b1dfa50cd05504008afbb092f7a8a301741cbe9cfe8aa19f7"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:fe8ac6a0764a27b4",
-              "field": "itinerary.label",
-              "sourceTextSha256": "1f84b7eda8f68078cf52b0ea3cd9110d4b6006d76b0072f1a8b18560df1f4746"
-            },
-            {
-              "text": "Puerto Río Tranquilo",
-              "provenance": {
-                "kind": "word_exact",
-                "fileId": "1iDDWJn3nE4yuEwxneW1nVevFt5fD4-Vw",
-                "documentSha256": "b3681c6cfba3e05282c7d13869add977e657b7c580b6adacb7f2e831f9a1e009",
-                "paragraphs": [
-                  {
-                    "ref": "word/document.xml:p196",
-                    "text": "Puerto Río Tranquilo",
-                    "textSha256": "c68744724179f2c71cf89e20164605827e32cfd0eb972b4823aaeb629fd2490f"
-                  }
-                ]
-              },
-              "blockId": "tour:itinerary_label:e854ebc40782768c",
-              "field": "itinerary.label",
-              "sourceTextSha256": "2bcb3e19d83c4cba1d16f0cb73102d0c334b4b161f06b6ba156b40f8ea18ce84"
-            },
-            {
-              "text": "Colourful houses on the waterfront of Puerto Natales, with mountains in the background, Chile",
-              "provenance": {
-                "kind": "ai_translation",
-                "model": "GPT-6",
-                "runId": "ada-en-8fc95d0a-20261104",
-                "wordAbsenceReason": "The Word contains no image-specific alt text corresponding to this current RU media field; translate the RU caption without changing or reinterpreting the photograph."
-              },
-              "blockId": "tour:media_alt:07ec27d08b762297",
-              "field": "media.alt",
-              "sourceTextSha256": "934333c91631dfd058910f3114a2f6c92212e1bec61bcb2ee383c2046cef7b61"
-            }
-          ]
-        },
+        "format": "submitted-v1",
         "at": "2026-11-03T23:18:50.111Z"
       },
-      "submission": null,
+      "submission": {
+        "id": "ada-8fc95d0a-008",
+        "blobSha": "85f8fe077317c9a22985753d693ffbf99549c59b",
+        "resultPath": "data/i18n/translation-mass/v2/results/en_bulk_tour_tour_bolivia_chile_hidden_treasures_16_days_b020/ada-8fc95d0a-008.json",
+        "at": "2026-11-03T23:18:54.440Z"
+      },
       "review": null,
       "nextAttemptAt": null
     },

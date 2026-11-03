@@ -215,24 +215,40 @@ const placeholderFromMask = (country: { mask: string; dial: string }) => {
     // Russian pages always remain Russia/+7 and do not contact GeoIP.
     let manuallySelected = false;
     if (document.documentElement.dataset.adaSharedLocale === 'en') {
-      const controller = new AbortController();
-      const deadline = window.setTimeout(() => controller.abort(), 3000);
-      fetch('https://api.country.is/', {
-        method: 'GET', mode: 'cors', credentials: 'omit',
-        referrerPolicy: 'no-referrer', signal: controller.signal,
-      }).then((response) => {
-        if (!response.ok) throw new Error('GeoIP unavailable');
-        return response.json();
-      }).then((payload) => {
-        const country = findCountryForGeoIp(payload, PHONE_COUNTRIES);
-        if (!country || manuallySelected || input.value.trim() ||
-            document.activeElement === input || menu.classList.contains('is-open')) return;
-        const option = document.createElement('button');
-        Object.assign(option.dataset, country);
-        applyCountry(option, false);
-      }).catch(() => {
-        // GeoIP/network/VPN failures must never block the form or country dropdown.
-      }).finally(() => window.clearTimeout(deadline));
+      // The country request is lazy: visiting an EN catalogue page alone never
+      // sends the visitor's IP to the third-party service.
+      const lookupGeoIp = () => {
+        const controller = new AbortController();
+        const deadline = window.setTimeout(() => controller.abort(), 3000);
+        fetch('https://api.country.is/', {
+          method: 'GET', mode: 'cors', credentials: 'omit',
+          referrerPolicy: 'no-referrer', signal: controller.signal,
+        }).then((response) => {
+          if (!response.ok) throw new Error('GeoIP unavailable');
+          return response.json();
+        }).then((payload) => {
+          const country = findCountryForGeoIp(payload, PHONE_COUNTRIES);
+          if (!country || manuallySelected || input.value.trim() ||
+              document.activeElement === input || menu.classList.contains('is-open')) return;
+          const option = document.createElement('button');
+          Object.assign(option.dataset, country);
+          applyCountry(option, false);
+        }).catch(() => {
+          // GeoIP/network/VPN failures never block the form or country dropdown.
+        }).finally(() => window.clearTimeout(deadline));
+      };
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          observer.disconnect();
+          lookupGeoIp();
+        }, { rootMargin: '160px 0px' });
+        observer.observe(field);
+      } else {
+        // No observer? Resolve when the user actually interacts with the form.
+        (field.closest('form') || field).addEventListener('focusin', lookupGeoIp, { once: true });
+      }
     }
 
     let flagObserver;

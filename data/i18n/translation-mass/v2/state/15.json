@@ -195,7 +195,96 @@
         "claimedAt": "2026-11-03T21:12:58.566Z",
         "expiresAt": "2026-11-03T22:42:58.566Z"
       },
-      "checkpoint": null,
+      "checkpoint": {
+        "id": "checkpoint-20261104-b004-4",
+        "format": "inline-v1",
+        "ownerId": "ada-en-20261104-k77x2vp9",
+        "token": "enlease-20261104-c41mns60",
+        "generation": 1,
+        "payload": {
+          "jobId": "en:bulk:tour:tour_brazil_best_rio_express_six_days:b004",
+          "sourceFingerprint": "12de98b9177a2f0f5bf12800216503f84bf15a5de686a89c4d692d271806e8eb",
+          "blocks": [
+            {
+              "blockId": "tour:itinerary_label:a2054c0b08f050b3",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f2d8007c43e0fad10b5d1b64bc838a8b27c3af1fa1bfe7d5cf852eb01e082032",
+              "text": "Rio de Janeiro",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "table:1:r0:c0:p1",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:6d260908f7e1e7c9",
+              "field": "itinerary.label",
+              "sourceTextSha256": "6bd9c9bdf78249ddedfce16a21e31ea680bc435d97b101570c48662cb29177b0",
+              "text": "Tijuca Rainforest",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "p:25",
+                    "textSha256": "2f5533b1d70b2b135a2bbfd2ca009554217f3210b14af415fccaaa56dae79964"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Use the Word's 'Tijuca rainforest' as the natural English place label."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:414302ad85ede9fd",
+              "field": "itinerary.label",
+              "sourceTextSha256": "1721d90202999a1c354b8969187c0effab89bde3e5ee04766200dd5a0128d3cf",
+              "text": "Corcovado",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "p:24",
+                    "textSha256": "46cd6d0366323a016d0154471f6176288226504a207dcf44826393e8652bb95b"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:media_alt:fefb297ce23dc5ed",
+              "field": "media.alt",
+              "sourceTextSha256": "e4151dd4cc22725c56258aba76b318ef8337f47c1d448e7df3860290dc212f8c",
+              "text": "View of Rio de Janeiro and Corcovado",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1bCjBuBYn6VNl3i6exZJlKKM_n7Fvw79P",
+                "documentSha256": "438ad21fad4b49b1d0cae36a802b0c360bae9a938444c6eb2ccab610a9097400",
+                "paragraphs": [
+                  {
+                    "ref": "table:1:r0:c0:p1",
+                    "textSha256": "a188a64fb6b392833db7697673b3cc5df6d8409935e71588a3591218e0fd5e61"
+                  },
+                  {
+                    "ref": "p:26",
+                    "textSha256": "dde5859fc9d7762c10e90222bf68b86431adf3300b4a164359a9797be9407e8f"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Compose a descriptive image alt label from the Word's named city and Corcovado summit panorama."
+              }
+            }
+          ]
+        },
+        "at": "2026-11-03T21:16:05.776Z"
+      },
       "submission": null,
       "review": null,
       "nextAttemptAt": null

@@ -266,7 +266,7 @@
         "expiresAt": "2026-11-04T00:44:05.653Z"
       },
       "checkpoint": {
-        "id": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b014:cp4:821a3075",
+        "id": "en:bulk:tour:tour_guatemala_belize_maya_world_12_days:b014:cp8:821a3075",
         "format": "inline-v1",
         "ownerId": "ada-en-821a3075e51e-worker",
         "token": "ada-en-821a3075e51e-token-20261104",
@@ -336,10 +336,75 @@
                 "runId": "ada-en-821a3075e51e-worker",
                 "wordAbsenceReason": "The verified Word has no corresponding image hover caption. Translated the exact current RU caption without changing the photograph or adding details."
               }
+            },
+            {
+              "blockId": "tour:itinerary_title:6c840bbfa53b5077",
+              "field": "itinerary.title",
+              "sourceTextSha256": "658a48d9775b8061962276d4463289e050c917faf2a3515672b4035e6820517b",
+              "text": "Farewell to the Maya world and the Caribbean",
+              "provenance": {
+                "kind": "ai_translation",
+                "model": "ChatGPT",
+                "runId": "ada-en-821a3075e51e-worker",
+                "wordAbsenceReason": "The verified Word groups Days 11–12 under an island-and-departure heading and has no corresponding farewell title. Translated the current RU day title without adding a service or destination."
+              }
+            },
+            {
+              "blockId": "tour:itinerary_text:49b18e3fb3f9ec7b",
+              "field": "itinerary.text",
+              "sourceTextSha256": "58ce2678e54a2a0f6dd989d56762f6fcb99a1b48a86dcaca3a0c8405e1a79831",
+              "text": "Day 12 · Breakfast. Transfer to the airport to board the return flight to Belize City, connecting with your international flight. End of our services.",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[125]",
+                    "textSha256": "2d8f68b41f07234a739bd2a645bb4e3109fd2015945fc63e7c62917d0b28584e"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:81fda4489a115645",
+              "field": "itinerary.label",
+              "sourceTextSha256": "25fbdfdf37c7c142b06d2b2885e7b784d760b93c2ef546c086f3fb85635a11fb",
+              "text": "Ambergris Caye",
+              "provenance": {
+                "kind": "word_exact",
+                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[123]",
+                    "textSha256": "564168fb4a32558dcd951496be5fbff21c1f9d4509408cc3d2a59523f832f463"
+                  }
+                ]
+              }
+            },
+            {
+              "blockId": "tour:itinerary_label:23ee8f8d18d8574a",
+              "field": "itinerary.label",
+              "sourceTextSha256": "f620218cdd77b2ad60567710712d6da201d3153494d15437fde9773420ec1211",
+              "text": "Belize City",
+              "provenance": {
+                "kind": "word_aligned",
+                "fileId": "1SFMrsSLCcDQDvsSHBzcvrKK1-cw12VzD",
+                "documentSha256": "55ef96ebf9b9225892c082f7ee196d5ae52f75a35b2b2d5b895188eb6c7bd4e6",
+                "paragraphs": [
+                  {
+                    "ref": "word/document.xml:p[125]",
+                    "textSha256": "2d8f68b41f07234a739bd2a645bb4e3109fd2015945fc63e7c62917d0b28584e"
+                  }
+                ],
+                "transformation": "contextual_label",
+                "rationale": "Extracted the exact return-flight destination name from the verified Word departure paragraph for its route label."
+              }
             }
           ]
         },
-        "at": "2026-11-03T23:14:47.507Z"
+        "at": "2026-11-03T23:15:09.543Z"
       },
       "submission": null,
       "review": null,
